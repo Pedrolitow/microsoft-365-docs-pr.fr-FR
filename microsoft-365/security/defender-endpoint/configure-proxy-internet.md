@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: caefcd7ce19073a10139a9f4d6d84c49e93c392f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53338714"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623347"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -32,7 +32,7 @@ ms.locfileid: "53338714"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 Le capteur Defender pour point de terminaison nécessite que Microsoft Windows HTTP (WinHTTP) signale les données du capteur et communique avec le service Defender for Endpoint.
 
@@ -41,12 +41,10 @@ Le capteur Defender for Endpoint incorporé s’exécute dans le contexte systè
 > [!TIP]
 > Pour les organisations qui utilisent des proxies de transfert comme passerelle vers l'Internet, vous pouvez utiliser la protection du réseau pour enquêter derrière un proxy. Pour plus d'informations, voir [Enquêter sur les événements de connexion qui se produisent derrière les procurations](investigate-behind-proxy.md).
 
-Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows Internet (WinINet) et ne peut découvrir un serveur proxy qu’à l’aide des méthodes de découverte suivantes :
+Le paramètre de configuration WinHTTP est indépendant des paramètres proxy de navigation Internet Windows Internet (WinINet) et ne peut découvrir un serveur proxy qu’à l’aide des méthodes de découverte suivantes :
 
 - Méthodes de découverte automatique :
-
   - Proxy transparent
-
   - Protocole WPAD (Web Proxy Auto-Discovery Protocol)
 
     > [!NOTE]
@@ -55,28 +53,27 @@ Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy
 - Configuration manuelle du proxy statique :
 
   - Configuration basée sur le registre
-
-  - WinHTTP configuré à l'aide de la commande netsh – Convient uniquement aux ordinateurs de bureau à topologie stable (par exemple : un ordinateur de bureau dans un réseau d'entreprise derrière le même proxy)
+  - WinHTTP configuré à l’aide de la commande netsh : convient uniquement aux ordinateurs de bureau dans une topologie stable (par exemple : un bureau dans un réseau d’entreprise derrière le même proxy)
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurer le serveur proxy manuellement en utilisant un proxy statique basé sur le registre
 
 Configurez un proxy statique basé sur le Registre pour autoriser uniquement le capteur Defender for Endpoint à signaler les données de diagnostic et à communiquer avec Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet.
 
 > [!NOTE]
-> Lors de l’utilisation de cette option sur Windows 10 ou Windows Server 2019, il est recommandé d’avoir la build (ou version ultérieure) suivante et le cumul des mises à jour cumulatives :
+> Lorsque vous utilisez cette option sur Windows 10 ou Windows Server 2019, il est recommandé d’avoir la version suivante (ou ultérieure) et le cumul des mises à jour cumulatives :
 >
-> - Windows 10, version 1809 ou Windows Server 2019 -https://support.microsoft.com/kb/5001384
-> - Windows 10, version 1909 -https://support.microsoft.com/kb/4601380
-> - Windows 10, version 2004 -https://support.microsoft.com/kb/4601382
-> - Windows 10, version 20H2 -https://support.microsoft.com/kb/4601382
+> - Windows 10, version 1809 ou Windows Server 2019 -<https://support.microsoft.com/kb/5001384>
+> - Windows 10, version 1909 -<https://support.microsoft.com/kb/4601380>
+> - Windows 10, version 2004 -<https://support.microsoft.com/kb/4601382>
+> - Windows 10, version 20H2 -<https://support.microsoft.com/kb/4601382>
 >
 > Ces mises à jour améliorent la connectivité et la fiabilité du canal CnC (Commande et contrôle).
 
 Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
 
-- **Modèles d’administration > Windows composants > collecte de données et builds d’aperçu > configurer l’utilisation du proxy authentifié pour le service Expériences des utilisateurs connectés et télémétrie**
+- **Modèles d’administration > Windows composants > collecte de données et builds d’aperçu > Configurer l’utilisation du proxy authentifié pour le service Expériences des utilisateurs connectés et télémétrie**
 
-  Définissez-le **sur Activé et** sélectionnez Désactiver l’utilisation du proxy **authentifié.**
+  Définissez-le **sur Activé et** sélectionnez Désactiver **l’utilisation du proxy authentifié.**
 
   ![Image du paramètre de stratégie de groupe1](images/atp-gpo-proxy1.png)
 
@@ -108,9 +105,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 > - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionneront pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
 
 1. Ouvrir une ligne de commandes avec élévation de privilèges :
-
    1. Accéder à **Démarrer** et taper **cmd**.
-
    1. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
 2. Entrez la commande suivante et appuyez sur **Entrée** :
@@ -135,9 +130,13 @@ Si un proxy ou un pare-feu bloque tout le trafic par défaut et n'autorise le pa
 
 La feuille de calcul téléchargeable suivante répertorie les services et les URL associées à qui votre réseau doit pouvoir se connecter. Vous devez vous assurer qu’il n’existe aucune règle de pare-feu ou de  filtrage réseau qui refuserait l’accès à ces URL, ou que vous devrez peut-être créer une règle d’autoriser spécifiquement pour eux.
 
-| Liste de feuilles de calcul de domaines | Description |
-|:-----|:-----|
-|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison](images/mdatp-urls.png)<br/>  | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <br><br>[Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+<br>
+
+**** 
+|Liste de feuilles de calcul de domaines|Description|
+|---|---|
+|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|
 
 Si l’analyse HTTPS (inspection SSL) est activée pour un proxy ou un pare-feu, excluez les domaines répertoriés dans le tableau ci-dessus de l’analyse HTTPS.
 
@@ -154,31 +153,35 @@ Si un proxy ou un pare-feu bloque le trafic anonyme, comme le capteur Defender f
 
 Les informations ci-dessous répentent les informations de configuration du proxy et du pare-feu requises pour communiquer avec l’agent d’analyse des journaux (souvent appelé Microsoft Monitoring Agent) pour les versions précédentes de Windows telles que Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 et Windows Server 2016.
 
-|Ressource d'agent|Ports |Direction |Contournement de l’inspection HTTPS|
-|------|---------|--------|--------|
-|*.ods.opinsights.azure.com |Port 443 |Sortant|Oui |  
-|*.oms.opinsights.azure.com |Port 443 |Sortant|Oui |  
-|*.blob.core.windows.net |Port 443 |Sortant|Oui |
-|*.azure-automation.net |Port 443 |Sortant|Oui |  
+<br>
+
+****
+
+|Ressource d'agent|Ports|Direction|Contournement de l’inspection HTTPS|
+|---|---|---|---|
+|*.ods.opinsights.azure.com|Port 443|Sortant|Oui|
+|*.oms.opinsights.azure.com|Port 443|Sortant|Oui|
+|*.blob.core.windows.net|Port 443|Sortant|Oui|
+|*.azure-automation.net|Port 443|Sortant|Oui|
 
 > [!NOTE]
 > En tant que solution informatique, la plage d’adresses IP peut changer. Il est recommandé de passer au paramètre de résolution DNS.
 
 ## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Confirmer la Microsoft Monitoring Agent’URL du service (MMA) 
 
-Consultez les instructions suivantes pour éliminer les caractères génériques (*) requis pour votre environnement spécifique lors de l’utilisation du Microsoft Monitoring Agent (MMA) pour les versions précédentes de Windows.
+Consultez les instructions suivantes pour éliminer les caractères génériques (*) requis pour votre environnement spécifique lors de l’utilisation de la Microsoft Monitoring Agent (MMA) pour les versions précédentes de Windows.
 
 1. Intégrer un système d’exploitation précédent avec l’Microsoft Monitoring Agent (MMA) dans Defender pour endpoint (pour plus d’informations, voir Intégrer les versions précédentes de Windows sur les serveurs [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) et [Onboard Windows.](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)
 
-2. Assurez-vous que l’ordinateur est correctement signalé dans Microsoft 365 Defender portail.
+2. Assurez-vous que l’ordinateur a correctement des rapports dans le Microsoft 365 Defender web.
 
 3. Exécutez l’outil TestCloudConnection.exe à partir de « C:\Program Files\Microsoft Monitoring Agent\Agent » pour valider la connectivité et voir les URL requises pour votre espace de travail spécifique.
 
-4. Consultez la liste des URL de point de terminaison Microsoft Defender pour obtenir la liste complète des conditions requises pour votre région (reportez-vous à la feuille de calcul URL [de](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)service).
+4. Consultez la liste des URL des points de terminaison De Microsoft Defender pour obtenir la liste complète des conditions requises pour votre région (reportez-vous à la feuille de calcul URL [de](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)service).
 
     ![Image de l’administrateur dans Windows PowerShell](images/admin-powershell.png)
 
-Les caractères génériques ( ) utilisés dans les points de terminaison \* \* d’URL .ods.opinsights.azure.com, .oms.opinsights.azure.com et .agentsvc.azure-automation.net peuvent être remplacés par votre ID d’espace de travail \* \* spécifique. L’ID d’espace de travail est spécifique à votre environnement et espace de travail et se trouve dans la section Intégration de votre client dans Microsoft 365 Defender portail.
+Les caractères génériques ( ) utilisés dans les points de terminaison \* \* d’URL .ods.opinsights.azure.com, .oms.opinsights.azure.com et .agentsvc.azure-automation.net peuvent être remplacés par votre ID d’espace de travail \* \* spécifique. L’ID d’espace de travail est spécifique à votre environnement et à votre espace de travail et se trouve dans la section Intégration de votre client dans le portail Microsoft 365 Defender.
 
 Le point de terminaison de l’URL .blob.core.windows.net peut être remplacé par les URL affichées dans la section « Règle de pare-feu : .blob.core.windows.net » des résultats \* \* du test.
 
@@ -189,33 +192,31 @@ Le point de terminaison de l’URL .blob.core.windows.net peut être remplacé p
 
 Vérifier que la configuration du proxy a été effectuée avec succès, que WinHTTP peut découvrir et communiquer par le biais du serveur proxy dans votre environnement, et que le serveur proxy permet le trafic vers les URL du service Defender for Endpoint.
 
-1. Téléchargez [l’outil Analyseur de client MDATP](https://aka.ms/mdatpanalyzer) sur le PC sur lequel le capteur Defender for Endpoint est en cours d’exécution.
+1. Téléchargez [l’outil Micrsofot Defender for Endpoint Client Analyzer](https://aka.ms/mdeanalyzer) sur le PC sur lequel le capteur Defender for Endpoint est en cours d’exécution.
 
-2. Extraire le contenu de MDATPClientAnalyzer.zip sur l’appareil.
+2. Extrayez le contenu des MDEClientAnalyzer.zip sur l’appareil.
 
 3. Ouvrir une ligne de commandes avec élévation de privilèges :
-
    1. Accéder à **Démarrer** et taper **cmd**.
-
    1. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
 4. Entrez la commande suivante et appuyez sur **Entrée** :
 
     ```PowerShell
-    HardDrivePath\MDATPClientAnalyzer.cmd
+    HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
-    Remplacez *HardDrivePath* par le chemin d’accès où l’outil MDATPClientAnalyzer a été téléchargé, par exemple :
+    Remplacez *HardDrivePath* par le chemin d’accès où l’outil MDEClientAnalyzer a été téléchargé, par exemple :
 
     ```PowerShell
-    C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
+    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 
-5. *ExtrayezMDATPClientAnalyzerResult.zip* fichier créé par l’outil dans le dossier utilisé dans *HardDrivePath*.
+5. *ExtrayezMDEClientAnalyzerResult.zip* fichier créé par l’outil dans le dossier utilisé dans *HardDrivePath*.
 
-6. Open *MDATPClientAnalyzerResult.txt* et vérifiez que vous avez effectué les étapes de configuration du proxy pour permettre la découverte du serveur et l'accès aux URL des services.
+6. Ouvrez *MDEClientAnalyzerResult.txt* et vérifiez que vous avez effectué les étapes de configuration du proxy pour activer la découverte de serveur et l’accès aux URL du service.
 
-   L'outil vérifie la connectivité des URL du service Defender for Endpoint avec lesquelles le client Defender for Endpoint est configuré pour interagir. Il imprime ensuite les résultats dans le fichier *MDATPClientAnalyzerResult.txt* pour chaque URL pouvant être utilisée pour communiquer avec Defender pour les services Endpoint. Par exemple :
+   L'outil vérifie la connectivité des URL du service Defender for Endpoint avec lesquelles le client Defender for Endpoint est configuré pour interagir. Il imprime ensuite les résultats dans le *fichierMDEClientAnalyzerResult.txt* pour chaque URL pouvant potentiellement être utilisée pour communiquer avec les services Defender for Endpoint. Par exemple :
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -231,7 +232,7 @@ Si au moins une des options de connectivité renvoie un état (200), le client D
 Toutefois, si les résultats du contrôle de la connectivité indiquent un échec, une erreur HTTP est affichée (voir Codes d'état HTTP). Vous pouvez ensuite utiliser les URL dans le tableau indiqué dans Activer l’accès aux URL de [service Defender for Endpoint dans le serveur proxy.](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) Les URL que vous utiliserez dépendent de la région sélectionnée au cours de la procédure d’intégration.
 
 > [!NOTE]
-> L'outil de l'analyseur de connectivité n'est pas compatible avec les créations de [processus de bloc de règles ASR provenant de PSExec et de commandes WMI](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Vous devrez désactiver temporairement cette règle pour exécuter l'outil de connectivité.
+> Les vérifications de connectivité cloud de l’outil Analyseur de connectivité ne sont pas compatibles avec les créations de processus de blocage de règles de réduction de la surface d’attaque provenant des commandes [PSExec et WMI.](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands) Vous devrez désactiver temporairement cette règle pour exécuter l'outil de connectivité. Vous pouvez également ajouter temporairement des [exclusions DE LAS](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) lors de l’exécution de l’analyseur.
 >
 > Lorsque telemetryProxyServer est défini, dans le Registre ou via la stratégie de groupe, Defender pour le point de terminaison revient à direct s’il ne peut pas accéder au proxy défini.
 

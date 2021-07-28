@@ -1,7 +1,7 @@
 ---
 title: Requêtes OData avec Microsoft Defender pour le point de terminaison
 ms.reviewer: ''
-description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour endpoint.
+description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour Endpoint.
 keywords: api, api pris en charge, odata, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 03867b4da450bc2b2522b637d54e824e1ccb89e6
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d89cc00b55e32ad30a70283baf11bee560c3c308
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543496"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621978"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour le point de terminaison
 
@@ -31,7 +31,7 @@ ms.locfileid: "53543496"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -448,7 +448,7 @@ json{
 
 ### <a name="example-7"></a>Exemple 7
 
-Obtenir le nombre d’alertes ouvertes pour un appareil spécifique :
+Obtenez le nombre d’alertes ouvertes pour un appareil spécifique :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'

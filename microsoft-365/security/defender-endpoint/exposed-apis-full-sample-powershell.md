@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: ef6d05bb27018bb72f731da2e8b7837c9d9f0127
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 263dfe8f85c74425513d9033a1fdd6a0c19a55e6
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842061"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624427"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API Microsoft Defender pour point de terminaison à l’aide de PowerShell
 
@@ -30,13 +30,13 @@ ms.locfileid: "52842061"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Scénario complet utilisant plusieurs API de Microsoft Defender pour le point de terminaison.
 
@@ -62,7 +62,7 @@ Pour plus d’informations, [voir la documentation PowerShell](/powershell/modul
 Exécutez la commande suivante :
 
 - $tenantId : ID du client pour le compte duquel vous souhaitez exécuter la requête (c’est-à-dire, la requête sera exécuté sur les données de ce client)
-- $appId : ID de votre application AAD (l’application doit avoir l’autorisation « Exécuter des requêtes avancées » sur Defender pour le point de terminaison)
+- $appId : ID de votre application AAD (l’application doit avoir l’autorisation « Exécuter des requêtes avancées » sur Defender for Endpoint)
 - $appSecret : secret de votre application Azure AD
 
 - $suspiciousUrl : URL

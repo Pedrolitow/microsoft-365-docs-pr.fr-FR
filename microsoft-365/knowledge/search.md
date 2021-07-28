@@ -1,5 +1,5 @@
 ---
-title: Utiliser Recherche Microsoft pour rechercher des rubriques dans les rubriques microsoft
+title: Utilisez Recherche Microsoft pour rechercher des rubriques dans Sujets Microsoft Viva
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
-description: Découvrez comment rechercher des rubriques dans Microsoft Microsoft Microsoft.
-ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: Découvrez comment rechercher des rubriques dans Sujets Microsoft Viva.
+ms.openlocfilehash: 0a29bb4578ead314c362959a4e410665114c7fbb
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287256"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624343"
 ---
-# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utiliser Recherche Microsoft pour rechercher des rubriques dans les rubriques microsoft
+# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utilisez Recherche Microsoft pour rechercher des rubriques dans Sujets Microsoft Viva
 
 Bien que les utilisateurs de rubriques Topics trouvent des rubriques par le biais des points forts de ces rubriques dans leurs sites SharePoint, ils peuvent également les trouver par le biais de Recherche Microsoft. 
 

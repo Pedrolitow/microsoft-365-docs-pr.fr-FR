@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63400295061cd7adc58a4ddebf73f4c82b0cc969
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: dfc2dc56e01ad08aea33ba11e4af5f8c94421ef8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845233"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624307"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Obtenir les ko manquants par ID d’appareil
 
@@ -29,7 +29,7 @@ ms.locfileid: "52845233"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,15 +39,15 @@ Récupère les ko manquants (mises à jour de sécurité) par ID d’appareil
 
 ## <a name="http-request"></a>Requête HTTP
 
-```
+```http
 GET /api/machines/{machineId}/getmissingkbs
 ```
 
-## <a name="request-header"></a>En-tête de demande
+## <a name="request-header"></a>En-tête de requête
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -63,7 +63,7 @@ Si elle réussit, cette méthode renvoie 200 OK, avec les données kb du périph
 
 Voici un exemple de demande.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93dfa2550136057bff96/getmissingkbs 
 ```
 

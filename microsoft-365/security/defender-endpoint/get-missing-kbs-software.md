@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bbb3e5dfe94d5efb026e21a4cbd94fac45f36594
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 963cc32a8fcf5022d5960d04309a50aaac7c5e45
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845221"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624103"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Obtenir les ko manquants par ID logiciel
 
@@ -29,7 +29,7 @@ ms.locfileid: "52845221"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,15 +48,15 @@ Déléguée (compte professionnel ou scolaire) | Software.Read |   « Lire les i
 
 ## <a name="http-request"></a>Requête HTTP
 
-```
+```http
 GET /api/Software/{Id}/getmissingkbs
 ```
 
 ## <a name="request-header"></a>En-tête de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -72,7 +72,7 @@ Si elle réussit, cette méthode renvoie 200 OK, avec les données kb du logicie
 
 Voici un exemple de demande.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/getmissingkbs
 ```
 

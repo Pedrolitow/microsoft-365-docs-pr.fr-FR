@@ -9,28 +9,16 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4ac12c4ec340bd6bb73418dae75774198190094b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: de608fa58d0267050b510ef8308d716b608f8e37
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544684"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624439"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Prévisualiser et tester Windows 11 avec Microsoft Managed Desktop
 
  Comment s’inscrire et participer au programme de test de compatibilité Windows 11 au sein de votre environnement Microsoft Manged Desktop. Pour plus d’informations Windows 11 et Microsoft Manged Desktop en général, voir [Windows 11 et Microsoft Manged Desktop](../intro/win11-overview.md). 
-
-## <a name="check-device-eligibility"></a>Vérifier l’éligibilité de l’appareil
-
-À ce jour, plus de 95 % des appareils Microsoft Manged Desktop répondent aux critères [d’éligibilité Windows 11](/windows/whats-new/windows-11-requirements). Vous pouvez demander des détails sur l’état d’éligibilité de vos appareils Microsoft Manged Desktop. Pour déposer la demande, suivez les étapes suivantes :
-
-1. Ouvrez une nouvelle demande de service avec l Microsoft Manged Desktop d’ingénierie de service. Si vous avez besoin d’informations supplémentaires sur la façon de déposer la demande, consultez le [support de l’administrateur.](admin-support.md)
-2. Utilisez ces valeurs pour les champs :
-    - Titre : éligibilité Windows appareil 11
-    - Type de demande : demande d’informations
-    - Catégorie : Appareils
-    - Sous-catégorie : Autre
-
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>Ajouter des appareils au groupe de test Windows 11
 

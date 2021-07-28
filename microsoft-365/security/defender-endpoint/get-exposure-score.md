@@ -16,22 +16,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 071b0e7597d334fe06d5045e06a5c4d82dd65609
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 99aa5a74daf183788f42cd39765f39eda50472a3
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845389"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621918"
 ---
 # <a name="get-exposure-score"></a>Obtenir un score d'exposition
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -53,15 +53,15 @@ Déléguée (compte professionnel ou scolaire) | Score.Read | « Lire le score d
 
 ## <a name="http-request"></a>Requête HTTP
 
-```
+```http
 GET /api/exposureScore
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -100,4 +100,4 @@ Voici un exemple de réponse.
 ## <a name="see-also"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Niveau d’exposition & vulnérabilité des menaces](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Score d& exposition des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: 18566025d79f02281c1d2c1509dd98f1e57879c2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b23dfc899d33858baf93c337471470b710426c57
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932774"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621894"
 ---
 # <a name="get-kb-collection-api"></a>API Obtenir une collection de ko
 
@@ -30,7 +30,7 @@ ms.locfileid: "51932774"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,7 +43,8 @@ Récupère une collection de groupes d’appareils RBAC.
 L’utilisateur a besoin d’autorisations de lecture.
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 GET /testwdatppreview/machinegroups
 ```
 
@@ -55,23 +56,25 @@ Autorisation | Porteur {token}. **Obligatoire**.
 Type de contenu | application/json
 
 ## <a name="request-body"></a>Corps de la demande
+
 Vide
 
 ## <a name="response"></a>Réponse
+
 En cas de réussite : 200 - OK.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request"></a>Demande
 
 Voici un exemple de demande.
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/machinegroups
 Content-type: application/json
 ```
 
-**Réponse**
+### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de réponse.
 L’ID de champ contient **l’ID** du groupe d’appareils et est égal au champ **rbacGroupId** dans les informations des appareils. Le **champ non regroupé** n’est vrai que pour un seul groupe pour tous les appareils qui n’ont été affectés à aucun groupe. Comme d’habitude, ce groupe a le nom « UnassignedGroup ».
@@ -88,6 +91,6 @@ Content-type: application/json
             "name":"UnassignedGroup",
             "description":"",
             "ungrouped":true},
-        …
+        ...
 }
 ```

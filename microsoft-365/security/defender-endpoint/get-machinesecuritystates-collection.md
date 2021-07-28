@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9dab4bdccc1fead5bc2cc5b9bdff8f2a45b6c8db
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6784d1cf6716a1f7d76c7660ff5bbf24e2aa5594
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200364"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623215"
 ---
 # <a name="get-machines-security-states-collection-api"></a>API obtenir la collection d’états de sécurité des ordinateurs
 
@@ -29,7 +29,7 @@ ms.locfileid: "51200364"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,43 +38,48 @@ ms.locfileid: "51200364"
 Récupère une collection d’états de sécurité des appareils.
 
 ## <a name="permissions"></a>Autorisations
+
 L’utilisateur a besoin d’autorisations de lecture.
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 GET /testwdatppreview/machinesecuritystates
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-En-tête | Valeur 
+En-tête|Valeur
 :---|:---
-Autorisation | Porteur {token}. **Obligatoire**.
-Type de contenu | application/json
+Autorisation|Porteur {token}. **Obligatoire**.
+Type de contenu|application/json
 
 ## <a name="request-body"></a>Corps de la demande
+
 Vide
 
 ## <a name="response"></a>Réponse
+
 En cas de réussite : 200 - OK.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request-example"></a>Exemple de requête
 
 Voici un exemple de demande.
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
 Content-type: application/json
 ```
 
-**Réponse**
+### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de réponse.
-*L’ID de* champ contient l’ID de l’appareil et est égal à l’ID *de* champ * dans les informations sur les appareils. 
 
-```
+*L’ID de* champ contient l’ID de l’appareil et est égal à l’ID *de* champ * dans les informations sur les appareils.
+
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
@@ -93,7 +98,7 @@ Content-type: application/json
                 "EdrImpairedCommunications"
             ]
         },
-        …
+        ...
     ]
 }
 ```

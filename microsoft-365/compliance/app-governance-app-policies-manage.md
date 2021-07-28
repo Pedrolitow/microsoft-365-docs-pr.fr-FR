@@ -2,8 +2,8 @@
 title: Gérer les stratégies d’application
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gérez vos stratégies de gouvernance des applications.
-ms.openlocfilehash: 756402f86d6b65d48afb02c49b3e5bfc4e73fe3d
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: d5133a9702d54607a0eb3d3886402fd93d1ab7d8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420207"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624067"
 ---
 # <a name="manage-app-policies"></a>Gérer les stratégies d’application
 

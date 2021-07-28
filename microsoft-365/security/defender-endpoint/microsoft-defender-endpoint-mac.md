@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b809cc82ef6fda3d4153dbf19871801ec59ae75
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2c2c0ff1cfa84689215272d1fcf5a1f7476ca4d9
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543424"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621846"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -34,7 +34,7 @@ ms.locfileid: "53543424"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Defender pour endpoint sur Mac.
 
@@ -50,11 +50,11 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 > [!TIP]
 > Si vous avez des commentaires que vous souhaitez partager, envoyez-le en ouvrant Microsoft Defender pour Point de terminaison sur Mac sur votre appareil et en naviguant vers l’aide pour envoyer  >  **des commentaires.**
 
-Pour obtenir les fonctionnalités les plus récentes, y compris les fonctionnalités de prévisualisation (telles que protection évolutive des points de terminaison pour vos appareils Mac), configurez votre appareil macOS exécutant Microsoft Defender pour endpoint en tant qu’appareil « Insider ».
+Pour obtenir les dernières fonctionnalités, y compris les fonctionnalités de prévisualisation (telles que protection évolutive des points de terminaison pour vos appareils Mac), configurez votre appareil macOS exécutant Microsoft Defender pour endpoint comme un appareil « Insider ».
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour endpoint sur Mac
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 - Abonnement Defender for Endpoint et accès au portail Microsoft 365 Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH
@@ -109,13 +109,12 @@ Microsoft Defender pour endpoint sur Mac nécessite l’une des offres de licenc
 
 La feuille de calcul téléchargeable suivante répertorie les services et les URL associées à qui votre réseau doit pouvoir se connecter. Vous devez vous assurer qu’il n’existe aucune règle de pare-feu ou de  filtrage réseau qui refuserait l’accès à ces URL, ou que vous devrez peut-être créer une règle d’autoriser spécifiquement pour eux.
 
-
-
-|**Liste de feuilles de calcul de domaines**|**Description**|
-|:-----|:-----|
-|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison](images/mdatp-urls.png)<br/>  | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <br><br>Téléchargez la feuille de calcul [ ici :mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
+|Liste de feuilles de calcul de domaines|Description|
+|---|---|
+|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> Téléchargez la feuille de calcul [ ici :mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 
 Microsoft Defender pour le point de terminaison peut découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
+
 - Proxy autoconfig (PAC)
 - Protocole WPAD (Web Proxy Auto-Discovery Protocol)
 - Configuration manuelle du proxy statique
@@ -127,7 +126,7 @@ Si un proxy ou un pare-feu bloque le trafic anonyme, assurez-vous que le trafic 
 >
 > L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy afin de transmettre directement les données de Microsoft Defender for Endpoint sur macOS aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
 
-Pour vérifier qu’une connexion n’est pas bloquée, [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) ouvrez-la [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) et dans un navigateur.
+Pour vérifier qu’une connexion n’est pas bloquée, <https://x.cp.wd.microsoft.com/api/report> ouvrez-la <https://cdn.x.cp.wd.microsoft.com/ping> et dans un navigateur.
 
 Si vous préférez la ligne de commande, vous pouvez également vérifier la connexion en exécutant la commande suivante dans Terminal :
 
@@ -142,14 +141,15 @@ La sortie de cette commande doit être similaire à celle-ci :
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> Nous vous recommandons de conserver la [Protection de l’intégrité](https://support.apple.com/en-us/HT204899) du système (SIP) activée sur les appareils clients. SIP est une fonctionnalité de sécurité macOS intégrée qui empêche toute falsification de bas niveau avec le système d’exploitation et est activée par défaut.
+> Nous vous recommandons de conserver la [Protection de l’intégrité](https://support.apple.com/HT204899) du système (SIP) activée sur les appareils clients. SIP est une fonctionnalité de sécurité macOS intégrée qui empêche toute falsification de bas niveau avec le système d’exploitation et est activée par défaut.
 
 Une fois Que Microsoft Defender pour le point de terminaison est installé, la connectivité peut être validée en exécutant la commande suivante dans Terminal :
+
 ```bash
 mdatp connectivity test
 ```
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>Comment mettre à jour Microsoft Defender pour endpoint sur Mac
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>Comment mettre à jour Microsoft Defender pour le point de terminaison sur Mac
 
 Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités. Pour mettre à jour Microsoft Defender pour endpoint sur Mac, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Pour plus d’informations, voir [Déployer les mises à jour de Microsoft Defender pour Endpoint sur Mac.](mac-updates.md)
 
@@ -164,5 +164,4 @@ En adéquation avec l’évolution de macOS, nous préparons une mise à jour de
 ## <a name="resources"></a>Ressources
 
 - Pour plus d’informations sur la journalisation, la désinstallation ou d’autres rubriques, voir [Resources for Microsoft Defender for Endpoint on Mac](mac-resources.md).
-
 - [Confidentialité pour Microsoft Defender pour point de terminaison sur Mac.](mac-privacy.md)

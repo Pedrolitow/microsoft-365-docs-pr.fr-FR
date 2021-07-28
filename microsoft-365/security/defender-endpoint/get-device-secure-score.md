@@ -16,52 +16,51 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dd9def688619b6079d947cb76069aa0f77d768de
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 927ba5934a95d20943397a778c74efa081501b3c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772304"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623323"
 ---
 # <a name="get-device-secure-score"></a>Obtenir un score sécurisé d’appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
-Récupère votre score [de sécurité Microsoft pour les appareils.](tvm-microsoft-secure-score-devices.md) Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. 
+Récupère votre score [de sécurité Microsoft pour les appareils.](tvm-microsoft-secure-score-devices.md) Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité.
 
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   Score.Read.Alll |   « Lire le score de gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire) | Score.Read | « Lire le score de gestion des menaces et des vulnérabilités »
+Application|Score.Read.All|« Lire le score de gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Score.Read|« Lire le score de gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
 
-```
+```http
 GET /api/configurationScore
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -73,7 +72,7 @@ Si elle réussit, cette méthode renvoie 200 OK, avec les données de score de s
 
 ## <a name="example"></a>Exemple
 
-### <a name="request"></a>Demande
+### <a name="request-example"></a>Exemple de requête
 
 Voici un exemple de demande.
 
@@ -81,12 +80,12 @@ Voici un exemple de demande.
 GET https://api.securitycenter.microsoft.com/api/configurationScore
 ```
 
-### <a name="response"></a>Réponse
+### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de réponse.
 
->[!NOTE]
->La liste de réponses présentée ici peut être tronquée à des raisons de concision. 
+> [!NOTE]
+> La liste de réponses présentée ici peut être tronquée à des raisons de concision.
 
 ```json
 {

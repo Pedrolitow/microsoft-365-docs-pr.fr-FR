@@ -10,18 +10,20 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: d29b9d6bdc30d981b273d95925ba740bc92304c4
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 2c1878dc9095fc4c4cfbd307154097cc6ff572f1
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694244"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623995"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Conditions préalables pour les comptes invité
 
-Bureau géré Microsoft nécessite les paramètres suivants dans votre organisation Azure AD pour l’accès au compte invité. Vous pouvez ajuster ces paramètres sur le portail [Azure](https://portal.azure.com) sous **Identités externes /Paramètres de collaboration externe**:
+## <a name="external-collaboration-settings"></a>Paramètres de collaboration externe
 
--   Pour les **restrictions d’invitation d’invité définies** pour les utilisateurs membres et les utilisateurs affectés à des rôles d’administrateur spécifiques peuvent inviter des utilisateurs invités, y compris des invités avec des **autorisations de membre**
+Microsoft Manged Desktop nécessite les paramètres suivants dans votre organisation Azure AD pour l’accès au compte invité. Vous pouvez ajuster ces paramètres sur le portail [Azure](https://portal.azure.com) sous **Identités externes /Paramètres de collaboration externe**:
+
+-   Pour **les restrictions d’invitation d’invité définies** sur les utilisateurs membres et les utilisateurs affectés à des rôles d’administrateur spécifiques peuvent inviter des utilisateurs invités, y compris des invités avec des **autorisations de membre**
 -   Pour **les restrictions de collaboration,** choisissez l’une des options ci-après :
     -   Si vous **sélectionnez Autoriser l’envoi d’invitations** à un domaine (le plus inclus), aucune autre configuration n’est requise.
     -   Si vous sélectionnez Refuser les invitations aux domaines **spécifiés,** assurez-vous Microsoft.com n’est pas répertorié dans les domaines cibles.
@@ -29,6 +31,20 @@ Bureau géré Microsoft nécessite les paramètres suivants dans votre organisat
 
 Si vous définissez des restrictions qui interagissent avec ces paramètres, veillez à exclure les Azure Active Directory des comptes de **service Workplace modernes.** Par exemple, si vous avez une stratégie d’accès conditionnel qui empêche les comptes invités d’accéder au portail Intune, excluez le groupe Comptes de **service** Workplace modernes de cette stratégie.
 
+## <a name="unlicensed-intune-admin"></a>Administrateur Intune sans permis
+
+Le **paramètre Autoriser l’accès aux administrateurs** sans permis doit être activé. Si ce paramètre n’est pas activé, des erreurs peuvent se produire lorsque nous essayons d’accéder à votre organisation Azure AD pour le service. Vous pouvez activer ce paramètre en toute sécurité sans vous soucier des implications en matière de sécurité, car l’étendue de l’accès est définie par les rôles attribués aux utilisateurs, y compris le personnel opérationnel.
+
+Pour activer ce paramètre, suivez les étapes suivantes :
+
+1. Go to the Microsoft Endpoint Manager [admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Accédez à **gestion des licences Administrateur**  >  **de rôles**  >  **d’administration des locataires.**
+3. Dans **Autoriser l’accès aux administrateurs** sans permis, sélectionnez **Oui.**
+
+> [!IMPORTANT]
+> Vous ne pouvez pas annuler ce paramètre après avoir sélectionné **Oui.**
+
+Pour plus d’informations, [voir Administrateurs](/mem/intune/fundamentals/unlicensed-admins)sans Microsoft Intune .
 ## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
 
 1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).

@@ -17,22 +17,22 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2884ffc695abc1c6b4b5be9bbd7c9ad37ad05439
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: c9814513049f06a6525c80cc922789f60bf39e44
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651295"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622855"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft s’engage à vous fournir les informations et les contrôles dont vous avez besoin pour faire des choix sur la façon dont vos données sont collectées et utilisées lorsque vous utilisez Microsoft Defender pour Endpoint sur macOS.
 
@@ -94,7 +94,7 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 | hostname                | Nom de l’appareil local (sans suffixe DNS). Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés. |
 | product_guid            | Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes gammes du produit. |
 | app_version             | Version de Microsoft Defender pour point de terminaison sur l’application macOS. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
-| sig_version             | Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’il puisse être correctement hiérarchisé. |
+| sig_version             | Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’elle puisse être correctement hiérarchisées. |
 | supported_compressions  | Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application. |
 | release_ring            | Sonner à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé. |
 
@@ -109,7 +109,7 @@ Les données de diagnostic requises permettent d’identifier les problèmes ave
 
 **Installation/désinstallation de Microsoft Defender for Endpoint**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -119,9 +119,9 @@ Les champs suivants sont collectés :
 | code             | Code qui décrit l’opération. |
 | text             | Informations supplémentaires associées à l’installation du produit. |
 
-**Configuration de Microsoft Defender pour point de terminaison**
+**Configuration de Microsoft Defender pour point de terminaison**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ                                               | Description |
 | --------------------------------------------------- | ----------- |
@@ -143,13 +143,13 @@ Les champs suivants sont collectés :
 
 **Rapport de mise à jour des informations de sécurité**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
 | from_version     | Version d’origine de l’intelligence de sécurité. |
 | to_version       | Nouvelle version de l’intelligence de la sécurité. |
-| status           | État de la mise à jour indiquant la réussite ou l’échec. |
+| statut           | État de la mise à jour indiquant la réussite ou l’échec. |
 | using_proxy      | Si la mise à jour a été effectuée sur un proxy. |
 | error            | Code d’erreur en cas d’échec de la mise à jour. |
 | reason (Raison)           | Message d’erreur si la mise à jour a été classée. |
@@ -160,7 +160,7 @@ Les champs suivants sont collectés :
 
 Collecte les informations système et l’état d’une application lorsqu’une application se quitte de façon inattendue.
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ                          | Description |
 | ------------------------------ | ----------- |
@@ -170,7 +170,7 @@ Les champs suivants sont collectés :
 
 **Statistiques d’extension du noyau**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -204,9 +204,9 @@ Les données de diagnostic facultatives collectées par Microsoft sur la configu
 
 #### <a name="software-setup-and-inventory-data-events"></a>Événements de données liés à l’inventaire et à la configuration des logiciels
 
-**Configuration de Microsoft Defender pour point de terminaison**
+**Configuration de Microsoft Defender pour point de terminaison**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ                                              | Description |
 | -------------------------------------------------- | ----------- |
@@ -228,7 +228,7 @@ Les champs suivants sont collectés :
 
 **Configuration de la mise à jour automatique Microsoft**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ                       | Description |
 | --------------------------- | ----------- |
@@ -241,18 +241,18 @@ Les champs suivants sont collectés :
 
 #### <a name="diagnostic-log-upload-started-report"></a>Rapport de chargement démarré du journal de diagnostic
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
 | sha256           | Identificateur SHA256 du journal de support. |
-| size             | Taille du journal de prise en charge. |
+| taille             | Taille du journal de prise en charge. |
 | original_path    | Chemin d’accès au journal de support (toujours sous */Library/Application Support/Microsoft/Defender/wdavdiag/*). |
 | format           | Format du journal de prise en charge. |
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Rapport de chargement terminé du journal de diagnostic
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -268,7 +268,7 @@ Sorties inattendues de l’application et état de celle-ci lorsque cela se prod
 
 **Statistiques d’extension du noyau**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ                          | Description |
 | ------------------------------ | ----------- |

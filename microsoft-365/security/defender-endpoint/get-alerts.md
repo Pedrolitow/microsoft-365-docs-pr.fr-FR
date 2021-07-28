@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7a508815ca584f28f0a52768ac10a556c3ef621b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8410788bb635a4df6f7565c3d169196ea61fc568
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543316"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624331"
 ---
 # <a name="list-alerts-api"></a>API d’alertes de liste
 
@@ -31,7 +31,7 @@ ms.locfileid: "53543316"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -57,6 +57,7 @@ Récupère une collection d’alertes.
 
 
 ## <a name="permissions"></a>Autorisations
+
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
@@ -80,9 +81,9 @@ GET /api/alerts
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

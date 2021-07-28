@@ -1,6 +1,6 @@
 ---
 title: La gestion des menaces et des vulnérabilités
-description: Cette nouvelle fonctionnalité utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiérquage et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
+description: Cette nouvelle fonctionnalité utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiér doncisation et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
 keywords: threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, gestion des vulnérabilités, vulnerability assessment, threat and vulnerability scanning, secure configuration assessment, Microsoft Defender for Endpoint, endpoint vulnerabilities, next generation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,23 +16,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 474b8f032d32668eaea3a477da013c2b8e74019b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db213da7c1859c9f4c9871aea508b225fd9b7b44
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934164"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623155"
 ---
 # <a name="threat-and-vulnerability-management"></a>La gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 L’identification, l’évaluation et la correction efficaces des faiblesses des points de terminaison sont essentielles à l’exécution d’un programme de sécurité sain et à la réduction des risques organisationnels. La gestion des menaces et des vulnérabilités sert d’infrastructure pour réduire l’exposition de l’organisation, renforcer la surface de point de terminaison et augmenter la résilience de l’organisation.
 
@@ -40,24 +40,24 @@ Découvrez les vulnérabilités et les mauvaises configurations en temps réel a
 
 Regardez cette vidéo pour obtenir une vue d’ensemble rapide Gestion des menaces et des vulnérabilités.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
 
 ## <a name="bridging-the-workflow-gaps"></a>Pontage des lacunes de flux de travail
 
-Les menaces et gestion des vulnérabilités sont intégrés, en temps réel et optimisés pour le cloud. Il est entièrement intégré à la pile de sécurité des points de terminaison Microsoft, à la sécurité intelligente de Microsoft Graph et à la base de connaissances d’analyse des applications.  
+Les menaces et gestion des vulnérabilités sont intégrés, en temps réel et optimisés pour le cloud. Il est entièrement intégré à la pile de sécurité des points de terminaison Microsoft, à la sécurité intelligente de Microsoft Graph et à la base de connaissances d’analyse des applications.
 
 La gestion des vulnérabilités est la première solution dans le secteur pour combler l’écart entre l’administration de la sécurité et l’administration informatique pendant le processus de correction. Créez une tâche ou un ticket de sécurité en intégrant des Microsoft Intune et Microsoft Endpoint Configuration Manager.
 
 ### <a name="real-time-discovery"></a>Découverte en temps réel
 
-Pour découvrir les vulnérabilités et les erreurs de configuration des points de terminaison, Gestion des menaces et des vulnérabilités utilise le même capteur Defender intégré sans agent pour les points de terminaison pour réduire les analyses réseau fastidieuses et la surcharge informatique.
+Pour découvrir les vulnérabilités et les problèmes de configuration des points de terminaison, Gestion des menaces et des vulnérabilités utilise les mêmes capteurs Defender intégrés sans agent pour les points de terminaison pour réduire les analyses réseau fastidieuses et la surcharge informatique.
 
 Il fournit également :
 
-- **Inventaire des appareils en** temps réel : les appareils intégrés à Defender for Endpoint signalent et signalent automatiquement les données de configuration de la vulnérabilité et de la sécurité dans le tableau de bord.
-- **Visibilité des logiciels et** des vulnérabilités : optique dans l’inventaire logiciel de l’organisation et modifications logicielles telles que les installations, les désinstallations et les correctifs. Les vulnérabilités nouvellement découvertes sont signalées avec des recommandations d’atténuation actionnables pour les applications tierces et les applications tierces.
-- **Contexte d’runtime d’application** : visibilité sur les modèles d’utilisation des applications pour une meilleure hiérérisation et prise de décision.
-- **Posture de configuration** : visibilité de la configuration de la sécurité organisationnelle ou des mauvaises configurations. Des problèmes sont signalés dans le tableau de bord avec des recommandations de sécurité actionnables.
+- **Inventaire des appareils en temps réel** : les appareils intégrés à Defender pour point de terminaison signalent et envoient automatiquement des données de configuration de sécurité et de vulnérabilité au tableau de bord.
+- **Visibilité des logiciels et des vulnérabilités** : intègre l’inventaire logiciel de l’organisation et les modifications logicielles telles que les installations, les désinstallations et les correctifs. Les vulnérabilités récemment découvertes sont signalées avec des recommandations d’atténuation actionnables pour les applications de premier rang et les applications tierces.
+- **Contexte d’exécution d’application** : visibilité sur les modèles d’utilisation des applications pour une meilleure hiérarchisation et prise de décision.
+- **Posture de configuration** : visibilité de la configuration de la sécurité organisationnelle ou des configurations incorrectes. Les problèmes sont signalés dans le tableau de bord avec des recommandations de sécurité actionnables.
 
 ### <a name="intelligence-driven-prioritization"></a>Priorisation pilotée par l’intelligence
 
@@ -83,10 +83,10 @@ Regardez cette vidéo pour une présentation complète des Gestion des menaces e
 
 ## <a name="navigation-pane"></a>Volet de navigation 
 
-Domaine | Description
+Zone | Description
 :---|:---
 **Tableau de bord**   | Obtenez une vue d’ensemble du score d’exposition de l’organisation, du Degré de sécurisation Microsoft pour les appareils, de la distribution de l’exposition des appareils, des principales recommandations en matière de sécurité, des logiciels les plus vulnérables, des principales activités de correction et des données d’appareils les plus exposées.
-[**Recommandations de sécurité**](tvm-security-recommendation.md) | Consultez la liste des recommandations de sécurité et des informations sur les menaces associées. Lorsque vous sélectionnez un élément dans la liste, un panneau volant s’ouvre avec des détails sur la vulnérabilité, un lien pour ouvrir la page logicielle, ainsi que des options de correction et d’exception. Vous pouvez également ouvrir un ticket dans Intune si vos appareils sont joints via Azure Active Directory et que vous avez activé vos connexions Intune dans Defender for Endpoint.
+[**Recommandations en matière de sécurité**](tvm-security-recommendation.md) | Consultez la liste des recommandations de sécurité et des informations sur les menaces associées. Lorsque vous sélectionnez un élément dans la liste, un panneau volant s’ouvre avec des détails sur la vulnérabilité, un lien pour ouvrir la page logicielle, ainsi que des options de correction et d’exception. Vous pouvez également ouvrir un ticket dans Intune si vos appareils sont joints via Azure Active Directory et que vous avez activé vos connexions Intune dans Defender for Endpoint.
 [**Correction**](tvm-remediation.md) | Consultez les activités de correction que vous avez créées et les exceptions de recommandation.
 [**Inventaire des logiciels**](tvm-software-inventory.md) | Consultez la liste des logiciels vulnérables de votre organisation, ainsi que les informations sur les faiblesses et les menaces.
 [**Faiblesses**](tvm-weaknesses.md) | Consultez la liste des vulnérabilités et des exposition courantes dans votre organisation.
@@ -94,11 +94,11 @@ Domaine | Description
 
 ## <a name="apis"></a>API
 
-Exécutez Gestion des menaces et des vulnérabilités d’API associées pour automatiser gestion des vulnérabilités flux de travail. En savoir plus sur ce [billet de blog Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
+Exécutez Gestion des menaces et des vulnérabilités’API associées pour automatiser gestion des vulnérabilités flux de travail. En savoir plus sur ce [billet de blog Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
 
 Consultez les articles suivants pour les API associées :
 
-- [API prises en charge Microsoft Defender pour point de terminaison](exposed-apis-list.md).
+- [API prises en charge Microsoft Defender pour point de terminaison](exposed-apis-list.md)
 - [API de l’ordinateur](machine.md)
 - [API de recommandation](vulnerability.md)
 - [API de score](score.md)

@@ -1,7 +1,7 @@
 ---
 title: Examiner microsoft Defender pour les alertes de point de terminaison
 description: Utilisez les options d’examen pour obtenir des détails sur les alertes qui affectent votre réseau, ce qu’elles signifient et comment les résoudre.
-keywords: examiner, examen, appareils, périphérique, file d’attente d’alertes, tableau de bord, adresse IP, fichier, envoyer, soumissions, analyse approfondie, chronologie, recherche, domaine, URL, IP
+keywords: examiner, examen, appareils, périphérique, file d’attente des alertes, tableau de bord, adresse IP, fichier, soumettre, envois, analyse approfondie, chronologie, recherche, domaine, URL, IP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,22 +19,22 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 626be9e949170fcda1f0bcf2a88e1b9780bbe764
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 53a00625e50081a1af7ba78fbd8fce604ad3ed9c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841089"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623755"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Examiner les alertes dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink)
 
 Examinez les alertes qui affectent votre réseau, comprenez ce qu’elles signifient et comment les résoudre.
 
@@ -44,11 +44,11 @@ Dans la page d’alerte, commencez votre enquête en sélectionnant les biens af
 
 ## <a name="investigate-using-the-alert-story"></a>Examiner l’utilisation de l’article d’alerte
 
-L’article d’alerte explique pourquoi l’alerte a été déclenchée, les événements connexes qui se sont produits avant et après, ainsi que d’autres entités connexes.
+L’article d’alerte explique pourquoi l’alerte a été déclenchée, les événements connexes qui se sont produits avant et après, ainsi que d’autres entités associées.
 
 Les entités sont cliquables et chaque entité qui n’est pas une alerte peut être étendue à l’aide de l’icône développer sur le côté droit de la carte de cette entité. L’entité en cours d’utilisation est indiquée par une bande bleue sur le côté gauche de la carte de cette entité, avec l’alerte dans le titre en cours de mise au point au premier abord.
 
-Développez les entités pour afficher les détails en un coup d’œil. La sélection d’une entité bascule le contexte du volet d’informations vers cette entité et vous permet de passer en revue d’autres informations, ainsi que de gérer cette entité. La sélection *de...* à droite de la carte d’entité révélera toutes les actions disponibles pour cette entité. Ces mêmes actions apparaissent dans le volet d’informations lorsque cette entité est en focus.
+Développez les entités pour afficher les détails en un coup d’œil. La sélection d’une entité basculera le contexte du volet d’informations sur cette entité et vous permettra de passer en revue d’autres informations, ainsi que de gérer cette entité. La sélection *de...* à droite de la carte d’entité révélera toutes les actions disponibles pour cette entité. Ces mêmes actions apparaissent dans le volet d’informations lorsque cette entité est en focus.
 
 > [!NOTE]
 > La section de l’article sur l’alerte peut contenir plusieurs alertes, avec des alertes supplémentaires liées à la même arborescence d’exécution apparaissant avant ou après l’alerte que vous avez sélectionnée.
@@ -59,7 +59,7 @@ Développez les entités pour afficher les détails en un coup d’œil. La sél
 
 Une fois que vous avez sélectionné une entité d’intérêt, le volet d’informations change pour afficher les informations sur le  type d’entité sélectionné, les informations historiques lorsqu’elle est disponible et proposer aux contrôles d’agir sur cette entité directement à partir de la page d’alerte.
 
-Une fois que vous avez terminé d’examiner, revenir à l’alerte que vous avez commencée, marquez l’état de l’alerte comme résolu et classez-le comme alerte **False** ou **Alerte True**.  La classification des alertes permet d’affiner cette fonctionnalité pour fournir davantage d’alertes vraies et moins de fausses alertes.
+Une fois que vous avez terminé d’examiner, revenir à l’alerte que vous avez commencée, marquez l’état de l’alerte comme résolu et classez-le comme alerte **False** ou **Alerte True**.  La classification des alertes permet d’affiner cette fonctionnalité pour fournir plus d’alertes vraies et moins de fausses alertes.
 
 Si vous la classez comme une alerte réelle, vous pouvez également sélectionner une détermination, comme illustré dans l’image ci-dessous.
 
@@ -74,7 +74,7 @@ Si vous rencontrez une fausse alerte avec une application métier, créez une r�
 
 
 ## <a name="related-topics"></a>Voir aussi
-- [Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison](alerts-queue.md)
+- [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner un fichier associé à une alerte Defender for Endpoint](investigate-files.md)
 - [Examiner les appareils dans la liste Defender pour les appareils de point de terminaison](investigate-machines.md)

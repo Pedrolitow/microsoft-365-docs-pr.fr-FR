@@ -21,23 +21,23 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d58fc87d16bb58199c95933d85752008a08a0e81
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: d5152940bee3637352d61fea6f251144644ca3ae
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879732"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621906"
 ---
 #  <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,16 +49,16 @@ Récupère un résultat de commande de réponse en direct spécifique par son in
 
 ## <a name="limitations"></a>Limites
 
-1.  Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La mise en place.](apis-intro.md)
 
-| Type d’autorisation                    | Autorisation           | Nom d’affichage de l’autorisation                   |
-|------------------------------------|----------------------|-------------------------------------------|
-| Application                        | Machine.LiveResponse | Exécuter une réponse en direct sur un ordinateur spécifique |
-| Déléguée (compte professionnel ou scolaire) | Machine.LiveResponse | Exécuter une réponse en direct sur un ordinateur spécifique |
+|Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation|
+|---|---|---|
+|Application|Machine.LiveResponse|Exécuter une réponse en direct sur un ordinateur spécifique|
+|Déléguée (compte professionnel ou scolaire)|Machine.LiveResponse|Exécuter une réponse en direct sur un ordinateur spécifique|
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -69,9 +69,9 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-| Nom      | Type | Description               |
-|---------------|----------|-------------------------------|
-| Autorisation | String   | Porteur {token}. Obligatoire. |
+|Nom|Type|Description|
+|---|---|---|
+|Autorisation|Chaîne|Porteur {token}. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -83,25 +83,24 @@ Si elle réussit, cette méthode renvoie un code de réponse 200, Ok avec un obj
 
 *Propriétés de transcription Runscript :*
 
-| Propriété  | Description                       |
-|---------------|---------------------------------------|
-| name          | Nom du script exécuté                  |
-| exit_code     | Code de sortie de script exécuté             |
-| script_output | Sortie standard du script exécuté       |
-| script_error  | Sortie d’erreur standard du script exécuté |
+|Propriété|Description|
+|---|---|
+|name|Nom du script exécuté|
+|exit_code|Code de sortie de script exécuté|
+|script_output|Sortie standard du script exécuté|
+|script_error|Sortie d’erreur standard du script exécuté|
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request-example"></a>Exemple de requête
 
 Voici un exemple de demande.
 
 ```HTTP
-GET
-https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/GetLiveResponseResultDownloadLink(index=0)
+GET https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/GetLiveResponseResultDownloadLink(index=0)
 ```
 
-**Réponse**
+### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de réponse.
 
@@ -116,7 +115,7 @@ Content-type: application/json
 }
 ```
 
-*Contenu du fichier :* 
+*Contenu du fichier :*
 
 ```JSON
 {
@@ -132,4 +131,4 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 
 - [API Obtenir l’action de l’ordinateur](get-machineaction-object.md)
 - [Annuler l’action de l’ordinateur](cancel-machine-action.md)
-- [Exécuter une réponse en direct](run-live-response.md) 
+- [Exécuter la réponse en direct](run-live-response.md) 

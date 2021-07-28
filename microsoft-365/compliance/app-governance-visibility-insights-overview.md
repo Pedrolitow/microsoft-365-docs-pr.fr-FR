@@ -2,8 +2,8 @@
 title: En savoir plus sur la visibilité et les insights
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur la visibilité et les insights.
-ms.openlocfilehash: eac4cd67591d261843f0d3efe476db027c58db91
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a106dd948bb220a22862cce60cd90e7f5a980205
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541084"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624055"
 ---
 # <a name="learn-about-visibility-and-insights"></a>En savoir plus sur la visibilité et les insights
 

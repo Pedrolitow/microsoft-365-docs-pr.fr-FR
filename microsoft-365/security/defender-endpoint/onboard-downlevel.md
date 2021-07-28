@@ -1,6 +1,6 @@
 ---
 title: Intégrer les versions précédentes de Windows sur Microsoft Defender for Endpoint
-description: Intégrer des versions antérieures de Windows pris en charge afin qu’ils peuvent envoyer des données de capteur au capteur Microsoft Defender pour endpoint
+description: Intégrer les versions antérieures des appareils Windows pris en charge afin qu’ils peuvent envoyer des données de capteur au capteur Microsoft Defender for Endpoint
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1809969d37d2e3cfb9279eb8266a65ba098b3c6
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a336ca847b8244c023fb8228c6405a363e7550aa
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542104"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622831"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Intégrer des versions antérieures de Windows
 
@@ -39,11 +39,12 @@ ms.locfileid: "53542104"
 - Windows 8.1 Entreprise
 
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint étend la prise en charge pour inclure des systèmes d’exploitation de bas niveau, fournissant des fonctionnalités avancées de détection d’attaques et d’investigation sur les versions Windows pris en charge.
 
 Pour intégrer des points de terminaison Windows client de niveau inférieur à Defender for Endpoint, vous devez :
+
 - Configurez et mettez à jour System Center Endpoint Protection clients.
 - Installez et configurez Microsoft Monitoring Agent (MMA) pour signaler les données de capteur à Defender for Endpoint comme indiqué ci-dessous.
 
@@ -54,21 +55,24 @@ Pour intégrer des points de terminaison Windows client de niveau inférieur à 
 > [!IMPORTANT]
 > Cette étape est requise uniquement si votre organisation utilise System Center Endpoint Protection (SCEP).
 
-Defender pour le point de terminaison s’intègre à System Center Endpoint Protection pour fournir une visibilité aux détections de programmes malveillants et pour arrêter la propagation d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects. 
+Defender pour le point de terminaison s’intègre à System Center Endpoint Protection pour fournir une visibilité aux détections de programmes malveillants et pour arrêter la propagation d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects.
 
-Les étapes suivantes sont nécessaires pour activer cette intégration : 
-- Installer la mise à jour de la plateforme anti-programme malveillant de janvier [2017 Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
+Les étapes suivantes sont nécessaires pour activer cette intégration :
+
+- Installer la mise à jour de la plateforme anti-programme malveillant de janvier [2017 pour Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configurer l’appartenance au service protection cloud client SCEP sur le **paramètre** Avancé
 - Configurez votre réseau pour autoriser les connexions au Antivirus Microsoft Defender cloud. Pour plus d’informations, voir [Autoriser les connexions au Antivirus Microsoft Defender cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>Installer et configurer Microsoft Monitoring Agent (MMA) pour signaler les données de capteur à Microsoft Defender pour le point de terminaison
 
 ### <a name="before-you-begin"></a>Avant de commencer
+
 Examinez les détails suivants pour vérifier la minimale requise :
+
 - Installer le rapport de mise à jour mensuelle de [février 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
   > [!NOTE]
-  > Applicable uniquement pour Windows 7 SP1 Enterprise et Windows 7 SP1 Pro. 
+  > Applicable uniquement pour Windows 7 SP1 Enterprise et Windows 7 SP1 Pro.
 
 - Installer la mise [à jour pour la télémétrie d’expérience client et de diagnostic](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
@@ -80,8 +84,6 @@ Examinez les détails suivants pour vérifier la minimale requise :
 
 - Respectez la taille minimale requise de l’agent Azure Log Analytics. Pour plus d’informations, voir [Collecter des données à partir d’ordinateurs](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)de votre environnement avec Log Analytics.
 
-
-
 1. Téléchargez le fichier d’installation de l Windows [agent 64 bits](https://go.microsoft.com/fwlink/?LinkId=828603) [ou Windows agent 32 bits.](https://go.microsoft.com/fwlink/?LinkId=828604)
 
 2. Obtenez l’ID d’espace de travail :
@@ -90,24 +92,27 @@ Examinez les détails suivants pour vérifier la minimale requise :
    - Copier l’ID d’espace de travail et la clé d’espace de travail
 
 3. À l’aide de l’ID d’espace de travail et de la clé d’espace de travail, choisissez l’une des méthodes d’installation suivantes pour installer l’agent :
-    - [Installez manuellement l’agent à l’aide du programme d’installation.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) <br>
+    - [Installer manuellement l’agent à l’aide du programme d’installation.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)
+
       Dans la page **Options de configuration** de l’agent, **sélectionnez Connecter l’agent dans Azure Log Analytics (OMS)**
+
     - [Installez l’agent à l’aide de la ligne de commande.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)
     - [Configurez l’agent à l’aide d’un script.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)
 
    > [!NOTE]
-   > Si vous êtes un client du gouvernement [américain,](gov.md)sous « Azure Cloud », vous devez choisir « Azure US Government » si vous utilisez l’Assistant Installation, ou si vous utilisez une ligne de commande ou un script , définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1.
+   > Si vous [](gov.md)êtes un client du gouvernement des États-Unis, sous « Azure Cloud », vous devez choisir « Azure US Government » si vous utilisez l’Assistant Installation, ou si vous utilisez une ligne de commande ou un script , définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1.
 
 4. Si vous utilisez un proxy pour vous connecter à Internet, consultez la section Configurer les paramètres du proxy.
 
 Une fois terminé, vous devriez voir les points de terminaison intégrés dans le portail dans un délai d’une heure.
 
 ### <a name="configure-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy et de connectivité Internet
- 
+
 - Chaque Windows point de terminaison doit pouvoir se connecter à Internet à l’aide du protocole HTTPS. Cette connexion peut être directe, à l’aide d’un proxy ou via la [passerelle OMS.](/azure/log-analytics/log-analytics-oms-gateway)
-- Si un proxy ou un pare-feu bloque tout le trafic par défaut et n’autorise que des domaines spécifiques ou que l’analyse HTTPS (inspection SSL) est activée, assurez-vous d’activer l’accès aux URL du [service Defender for Endpoint.](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)
+- Si un proxy ou un pare-feu bloque l’ensemble du trafic par défaut et n’autorise que des domaines spécifiques ou que l’analyse HTTPS (inspection SSL) est activée, assurez-vous d’activer l’accès aux URL du [service Defender for Endpoint.](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)
 
 ## <a name="offboard-client-endpoints"></a>Points de terminaison du client de hors-carte
-Pour désinstaller, vous pouvez désinstaller l’agent MMA du point de terminaison ou le détacher des rapports à votre espace de travail Defender for Endpoint. Après l’arrêt de l’agent, le point de terminaison n’envoie plus de données de capteur à Defender for Endpoint. 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)
+Pour désinstaller, vous pouvez désinstaller l’agent MMA du point de terminaison ou le détacher des rapports à votre espace de travail Defender for Endpoint. Après l’arrêt de l’agent, le point de terminaison n’envoie plus de données de capteur à Defender for Endpoint.
+
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)

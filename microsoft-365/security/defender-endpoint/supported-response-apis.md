@@ -15,23 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 36ed1f624fda7ae413ffbbf807925cf00e0a23ca
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dc5f55f760f4cb291050962fdb493ddd135c0df0
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933768"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623083"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>API de requête Microsoft Defender pour point de terminaison prise en charge 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!TIP]
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-supported-response-apis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-supported-response-apis-abovefoldlink)
 
 Découvrez les appels d’API liés à la réponse pris en charge que vous pouvez exécuter, ainsi que des détails tels que les en-têtes de requête requis et la réponse attendue des appels.
 
@@ -53,4 +53,4 @@ Obtenir un objet MachineAction | Exécutez cette API pour obtenir l’objet Mach
 Obtenir la collection MachineActions | Exécutez cette action pour obtenir la collection MachineAction.
 Obtenir une collection FileActions | Exécutez cette API pour obtenir la collection FileActions.
 Obtenir un objet FileMachineAction | Exécutez cette API pour obtenir l’objet FileMachineAction.
-Obtenir une collection FileMachineActions | Exécutez cette API pour obtenir la collection FileMachineAction.
+Obtenir la collection FileMachineActions | Exécutez cette API pour obtenir la collection FileMachineAction.

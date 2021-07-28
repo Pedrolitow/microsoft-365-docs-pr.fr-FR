@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7d0e38789cfc576c0c3f1a8be352796e674ac13a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f6ec85feff74ebab54e9ca17d912097937109c60
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845005"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621858"
 ---
 # <a name="list-software-version-distribution"></a>Répertorier la distribution de versions du logiciel 
 
@@ -29,7 +29,7 @@ ms.locfileid: "52845005"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,42 +40,45 @@ ms.locfileid: "52845005"
 Extrait la liste de la distribution des versions des logiciels de votre organisation. 
 
 ## <a name="permissions"></a>Autorisations
+
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application | Software.Read.All | « Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire) | Software.Read | « Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
+Application|Software.Read.All|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Software.Read|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 GET /api/Software/{Id}/distributions
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-| Nom        | Type | Description
-|:--------------|:-------|:--------------|
-| Autorisation | String | Porteur {token}. **Obligatoire**.
+|Nom|Type|Description
+|---|---|---|
+|Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
+
 Vide
 
 ## <a name="response"></a>Réponse
-Si elle réussit, cette méthode renvoie 200 OK avec une liste de données de distribution de logiciels dans le corps. 
 
+Si elle réussit, cette méthode renvoie 200 OK avec une liste de données de distribution de logiciels dans le corps. 
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request-example"></a>Exemple de requête
 
 Voici un exemple de demande.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/distributions
 ```
 
-**Réponse**
+### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de réponse.
 
@@ -100,5 +103,6 @@ Voici un exemple de réponse.
 ```
 
 ## <a name="related-topics"></a>Voir aussi
+
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

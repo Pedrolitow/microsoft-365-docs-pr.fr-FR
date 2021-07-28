@@ -16,66 +16,68 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 01e14be20cee2b8644ebe5d1d1212f921a2fb9b5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 1e7e1734b1f016e8b8850f3684bf2c934608d494
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841521"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621930"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>Répertorier les vulnérabilités par ordinateur et logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Récupère une liste de toutes les vulnérabilités affectant l’organisation par [ordinateur et](machine.md) [par logiciel.](software.md)
+
 - Si la vulnérabilité a une ko de réparation, elle apparaît dans la réponse.
 - Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
 - OData est ```$filter``` pris en charge sur toutes les propriétés.
 
->[!Tip]
->Il s’agit d’une EXCELLENTE API [pour Power BI’intégration.](api-power-bi.md)
+> [!TIP]
+> Il s’agit d’une EXCELLENTE API [pour Power BI’intégration.](api-power-bi.md)
 
 ## <a name="permissions"></a>Autorisations
+
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   Vulnerability.Read.All |    « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire) | Vulnerability.Read |   « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
+Application|Vulnerability.Read.All|« Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|« Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 GET /api/vulnerabilities/machinesVulnerabilities
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
-
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
+
 Vide
 
 ## <a name="response"></a>Réponse
-Si elle réussit, cette méthode renvoie 200 OK avec la liste des vulnérabilités dans le corps.
 
+Si elle réussit, cette méthode renvoie 200 OK avec la liste des vulnérabilités dans le corps.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request-example"></a>Exemple de requête
 
 Voici un exemple de demande.
 
@@ -83,10 +85,9 @@ Voici un exemple de demande.
 GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnerabilities
 ```
 
-**Réponse**
+### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de la réponse.
-
 
 ```json
 {
@@ -121,4 +122,4 @@ Voici un exemple de la réponse.
 ## <a name="see-also"></a>Voir aussi
 
 - [Gestion des risques Gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnérabilités de votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Vulnérabilités dans votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

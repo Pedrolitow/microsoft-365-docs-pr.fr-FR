@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ead0558bfff90c29ec8717fbb39876afda5c42af
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 430c43636e4db1eb6973b8d8059f53c044b9cb6e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229454"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622903"
 ---
 # <a name="get-user-related-machines-api"></a>API Obtenir les ordinateurs liés à l’utilisateur
 
@@ -31,7 +31,7 @@ ms.locfileid: "53229454"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -49,7 +49,7 @@ Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 app
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation |Autorisation|Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
 Application |Machine.Read.All|« Lire tous les profils d’ordinateur »
 Application |Machine.ReadWrite.All |« Lire et écrire toutes les informations sur l’ordinateur »
@@ -72,9 +72,9 @@ GET /api/users/{id}/machines
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

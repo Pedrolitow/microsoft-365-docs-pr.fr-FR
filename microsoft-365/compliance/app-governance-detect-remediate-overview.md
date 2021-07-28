@@ -2,8 +2,8 @@
 title: En savoir plus sur la détection et la correction des menaces d’application
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur la détection et la correction des menaces d’application.
-ms.openlocfilehash: 574688e67b7562c8df6aec7d2242e68485239479
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 70f39ac3506ff6962ab028009cab54dfb83cd47b
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438047"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624223"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>En savoir plus sur la détection et la correction des menaces d’application
 
@@ -51,10 +51,6 @@ En partageant des informations sur la gouvernance des applications, les Azure AD
 - Informations de connexion d’application dans la gouvernance des applications :
 
   Dans le portail de gouvernance des applications, vous pouvez voir l’activité de connexion agrégée pour chaque application et créer un lien vers le centre d’administration Azure Active Directory pour obtenir les détails des événements de connexion.
-
-- Informations sur l’utilisation de l’API d’application dans le centre d’administration Azure Active Directory :
-
-  Dans le centre d’administration Azure Active Directory, vous pouvez voir les informations agrégées sur l’utilisation des applications et le lien vers le portail de gouvernance des applications pour plus d’informations sur l’utilisation des applications.
 
 - Informations sur l’utilisation de l’API dans le portail Microsoft Cloud App Security : 
 

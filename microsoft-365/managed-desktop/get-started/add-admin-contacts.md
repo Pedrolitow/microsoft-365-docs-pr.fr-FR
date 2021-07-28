@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a95ab526d43e6eb243cb3de3a7b7c75e1e82b07f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286920"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624199"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
@@ -22,17 +22,6 @@ Il existe plusieurs façons Microsoft Manged Desktop service communique avec les
 
 > [!IMPORTANT]
 > Vous avez peut-être déjà ajouté ces contacts dans le portail d’administration. Si c’est le cas, prenez le temps de vérifier que  la liste des contacts est exacte, Microsoft Manged Desktop être en mesure de les joindre en cas d’incident grave.
-
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory’accès au Microsoft Manged Desktop d’administration
-
-Microsoft Manged Desktop Le portail d’administration exige que les personnes accédant au portail ont l’un des rôles Azure Active Directory (AD) ci-après :
-
-- Administrateur général
-- Administrateur de service Intune
-- Lecteur général
-- Administrateur du support technique
-
-L’administrateur général doit être celui qui inscrit votre organisation dans Microsoft Manged Desktop. Les cinq rôles ont le même accès au sein du portail d’administration pour lancer et afficher les tâches. Pour plus d’informations sur l’attribution de ces rôles dans Azure AD, voir [autorisations](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)de rôle d’administrateur dans Azure Active Directory .
 
 ## <a name="admin-contact-areas-of-focus"></a>Domaines de contact de l’administrateur
 
@@ -44,11 +33,11 @@ Empaquetage d’application | Résolution des problèmes d’empaquetage d’app
 Appareils | État de l’appareil, résolution des problèmes Microsoft Manged Desktop appareils
 Sécurité | Résolution des problèmes de sécurité avec Microsoft Manged Desktop appareils
 Service d’aide à l’information | dans les cas où notre personnel de support remet des tickets d’utilisateur en dehors des Microsoft Manged Desktop de support 
-Autre | Pour les problèmes non couverts par d’autres domaines
+Autres | Pour les problèmes non couverts par d’autres domaines
 
 **Toute personne que vous choisissez pour ces contacts doit avoir les connaissances et l’autorité nécessaires pour prendre des décisions pour Microsoft Manged Desktop environnement.** Lorsque vous intégrerez votre environnement Microsoft Manged Desktop, vous êtes invité à ajouter des contacts pour votre aide et sécurité locales. 
 
-Les contacts d’administrateur sont requis lorsque vous [envoyez une demande de support.](../service-description/support.md) Vous devez avoir un contact d’administrateur pour la zone de focus de la demande de support.
+Les contacts d’administrateur sont requis lorsque vous [envoyez une demande de support.](../service-description/support.md) Vous devez avoir un contact d’administrateur pour le domaine de focus de la demande de support.
 
 **Pour ajouter des contacts d’administrateur**
 

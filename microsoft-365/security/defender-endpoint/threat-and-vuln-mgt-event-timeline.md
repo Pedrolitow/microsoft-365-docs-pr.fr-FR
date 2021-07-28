@@ -18,30 +18,30 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 64362598ff4b0512eb110917071e6d32abb8ede9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fbcdad37eb76ca871d2b50a2146ba8a4b3b3d115
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933480"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622783"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements - Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 La chronologie des événements est un flux d’actualités sur les risques qui vous permet d’interpréter la façon dont le risque est introduit dans l’organisation par le biais de nouvelles vulnérabilités ou de nouvelles exploitations. Vous pouvez afficher les événements qui peuvent avoir un impact sur les risques de votre organisation. Par exemple, vous pouvez trouver de nouvelles vulnérabilités qui ont été introduites, des vulnérabilités qui sont devenues exploitables, des exploits ajoutés à un kit d’exploitation, et bien plus encore.
 
-La chronologie des événements indique également l’histoire de votre [score](tvm-exposure-score.md) d’exposition et du score de sécurité [Microsoft](tvm-microsoft-secure-score-devices.md) pour les appareils afin que vous pouvez déterminer la cause des modifications importantes. Les événements peuvent avoir un impact sur vos appareils ou votre score pour les appareils. Réduisez votre exposition en adressant ce qui doit être corrigé en fonction des recommandations de sécurité [prioritaires.](tvm-security-recommendation.md)
+La chronologie des événements indique également l’histoire de votre [score](tvm-exposure-score.md) d’exposition et du score de sécurité [Microsoft](tvm-microsoft-secure-score-devices.md) pour les appareils afin que vous pouvez déterminer la cause des modifications importantes. Les événements peuvent avoir un impact sur vos appareils ou votre score pour les appareils. Réduisez votre exposition en résribuant ce qui doit être corrigé en fonction des recommandations de sécurité [prioritaires.](tvm-security-recommendation.md)
 
 >[!TIP]
->Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
+>Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-event-timeline-page"></a>Accéder à la page Chronologie des événements
 
@@ -62,7 +62,7 @@ Si aucun événement n’affecte vos appareils ou votre score pour les appareils
 
 ### <a name="drill-down-to-events-from-that-day"></a>Descendre dans les événements de ce jour
 
-Si vous **sélectionnez Afficher tous les** événements de ce jour, vous pouvez vous rendre sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
+La sélection **d’Afficher tous** les événements de ce jour vous place sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
 
 ![Chronologie des événements : plage de dates personnalisée sélectionnée](images/tvm-event-timeline-drilldown.png)
 
@@ -110,7 +110,7 @@ Les icônes suivantes s’affiche en plus des événements :
 
 ### <a name="drill-down-to-a-specific-event"></a>Accès à un événement spécifique
 
-Une fois que vous avez sélectionné un événement, un volant s’affiche avec une liste des détails et des CV actuels qui affectent vos appareils. Vous pouvez afficher d’autres CV ou consulter la recommandation associée.
+Une fois que vous avez sélectionné un événement, un flyout s’affiche avec une liste des détails et des CV actuels qui affectent vos appareils. Vous pouvez afficher d’autres CV ou consulter la recommandation associée.
 
 La flèche sous « tendance de score » vous permet de déterminer si cet événement a potentiellement augmenté ou réduit le score d’exposition de votre organisation. Un score d’exposition plus élevé signifie que les appareils sont plus vulnérables à l’exploitation.
 
@@ -122,7 +122,7 @@ La flèche sous « tendance de score » vous permet de déterminer si cet évén
 
 Pour ouvrir une page de logiciels, sélectionnez un > sélectionnez le nom du logiciel avec lien hypertexte (comme Visual Studio 2017) dans la section intitulée « Composant associé » dans le volant. [En savoir plus sur les pages logicielles](tvm-software-inventory.md#software-pages)
 
-Une page complète s’affiche avec tous les détails d’un logiciel spécifique. Pointez avec la souris sur le graphique pour voir la chronologie des événements pour ce logiciel spécifique.
+Une page complète s’affiche avec tous les détails d’un logiciel spécifique. Pointez sur le graphique pour voir la chronologie des événements pour ce logiciel spécifique.
 
 ![Page de logiciels avec un graphique de chronologie des événements](images/tvm-event-timeline-software2.png)
 

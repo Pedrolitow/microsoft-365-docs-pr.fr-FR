@@ -16,23 +16,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c2b7afef2c090df709f9209f450d8d3aab0424bf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9d26c3db7f358bf13ed59e50617bf5f1a606e5ed
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772148"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622927"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Obtenir une activité de correction par ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -54,43 +54,43 @@ Renvoie des informations pour l’activité de correction spécifiée. Présente
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
 
-Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application | RemediationTask.Read.All | \'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
-Déléguée (compte professionnel ou scolaire) | RemediationTask.Read.Read | \'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Application|RemediationTask.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Déléguée (compte professionnel ou scolaire)|RemediationTask.Read.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 
 ## <a name="properties"></a>Propriétés
 
-Propriété (id) | Type de données | Description | Exemple de valeur renvoyée
+Propriété (id)|Type de données|Description|Exemple de valeur renvoyée
 :---|:---|:---|:---
-category | String | Catégorie de l’activité de correction (configuration logicielle/sécurité) | Logiciels
-completerEmail | String | Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son courrier électronique | null
-completerId | String | Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son ID d’objet | null
-completionMethod | String | Une activité de correction peut être effectuée « automatiquement » (si tous les appareils sont corrigés) ou « manuellement » par une personne qui sélectionne « marquer comme terminé » | Automatique
-createdOn | Date/heure | Heure de création de cette activité de correction | 2021-01-12T18:54:11.5499478Z
-description | String | Description de cette activité de correction | Mettez à jour Microsoft Silverlight vers une version ultérieure pour atténuer les vulnérabilités connues affectant vos appareils.
-dueOn | Date/heure | Date d’échéance définie par le créateur pour cette activité de correction | 2021-01-13T00:00:00Z
-fixedDevices |  | Nombre d’appareils qui ont été corrigés | 2
-id | String | ID de cette activité de correction | 097d9735-5479-4899-b1b7-77398899df92
-nameId | String | Nom du produit associé | Microsoft Silverlight
-priorité | String | Priorité définie par le créateur pour cette activité de correction (High\Medium\Low) | Élevé
-productId | String | ID de produit associé | microsoft-_-silverlight
-productivityImpactRemediationType | String | Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ». | AllExposedAssets
-rbacGroupNames | String | Noms de groupes d’appareils associés | [ « Windows Serveurs », « Windows 10 » ]
-recommendedProgram | String | Programme recommandé pour la mise à niveau vers | null
-recommendedVendor | String | Fournisseur recommandé pour la mise à niveau vers | null
-recommendedVersion | String | Version recommandée pour la mise à jour/mise à niveau vers | null
-relatedComponent | String | Composant connexe de cette activité de correction (similaire au composant associé pour une recommandation de sécurité) | Microsoft Microsoft Silverlight
-requesterEmail | String | Adresse de messagerie du créateur | globaladmin@UserName.contoso.com
-requesterId | String | ID d’objet Creator | r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes | String | Notes (texte libre) ajoutées par le créateur pour cette activité de correction | null
-scid | String | SCID de la recommandation de sécurité associée | null
-status | String | État de l’activité de correction (actif/terminé) | Actif
-statusLastModifiedOn | Date/heure | Date de mise à jour du champ d’état | 2021-01-12T18:54:11.5499487Z
-targetDevices | Entier long | Nombre d’appareils exposés à appliquer à cette correction | 43
-title | String | Titre de cette activité de correction | Microsoft Silverlight
-type | String | Type de correction | Update
-vendorId | String | Nom du fournisseur associé | Microsoft
+category|String|Catégorie de l’activité de correction (configuration logicielle/sécurité)|Logiciels
+completerEmail|Chaîne|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son courrier électronique|null
+completerId|Chaîne|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son ID d’objet|null
+completionMethod|Chaîne|Une activité de correction peut être effectuée « automatiquement » (si tous les appareils sont corrigés) ou « manuellement » par une personne qui sélectionne « marquer comme terminé »|Automatic
+createdOn|Date/heure|Heure de création de cette activité de correction|2021-01-12T18:54:11.5499478Z
+description|Chaîne|Description de cette activité de correction|Mettez à jour Microsoft Silverlight vers une version ultérieure pour atténuer les vulnérabilités connues affectant vos appareils.
+dueOn|Date/heure|Date d’échéance définie par le créateur pour cette activité de correction|2021-01-13T00:00:00Z
+fixedDevices||Nombre d’appareils qui ont été corrigés|2
+id|Chaîne|ID de cette activité de correction|097d9735-5479-4899-b1b7-77398899df92
+nameId|Chaîne|Nom du produit associé|Microsoft Silverlight
+priorité|Chaîne|Priorité définie par le créateur pour cette activité de correction (Haute\Moyenne\Faible)|Élevé
+productId|Chaîne|ID de produit associé|microsoft-_-silverlight
+productivityImpactRemediationType|Chaîne|Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ».|AllExposedAssets
+rbacGroupNames|Chaîne|Noms de groupes d’appareils associés|[ « Windows Servers », « Windows 10 » ]
+recommendedProgram|Chaîne|Programme recommandé pour la mise à niveau vers|null
+recommendedVendor|Chaîne|Fournisseur recommandé pour la mise à niveau vers|null
+recommendedVersion|Chaîne|Version recommandée pour la mise à jour/mise à niveau vers|null
+relatedComponent|Chaîne|Composant connexe de cette activité de correction (similaire au composant associé pour une recommandation de sécurité)|Microsoft Microsoft Silverlight
+requesterEmail|Chaîne|Adresse de messagerie du créateur|globaladmin@UserName.contoso.com
+requesterId|Chaîne|ID d’objet Creator|r647211f-2e16-43f2-a480-16ar3a2a796r
+requesterNotes|Chaîne|Notes (texte libre) ajoutées par le créateur pour cette activité de correction|null
+scid|Chaîne|SCID de la recommandation de sécurité associée|null
+status|Chaîne|État de l’activité de correction (actif/terminé)|Actif
+statusLastModifiedOn|Date/heure|Date de mise à jour du champ d’état|2021-01-12T18:54:11.5499487Z
+targetDevices|Entier long|Nombre d’appareils exposés pour qui cette correction s’applique|43
+title|Chaîne|Titre de cette activité de correction|Microsoft Silverlight
+type|Chaîne|Type de correction|Update
+vendorId|Chaîne|Nom du fournisseur associé|Microsoft
 
 ## <a name="example"></a>Exemple
 
@@ -142,11 +142,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 ## <a name="see-also"></a>Voir aussi
 
 - [Méthodes et propriétés de correction](get-remediation-methods-properties.md)
-
 - [Répertorier toutes les activités de correction](get-remediation-all-activities.md)
-
 - [Répertorier les appareils exposés d’une activité de correction](get-remediation-exposed-devices-activities.md)
-
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)

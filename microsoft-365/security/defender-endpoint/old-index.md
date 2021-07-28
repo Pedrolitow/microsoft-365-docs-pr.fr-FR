@@ -14,14 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3db1517d87a47aae254d36cfb28f6c057830ef3e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3c49575e7a1d88c15907fdd7c118b71071949b23
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840993"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622843"
 ---
 # <a name="threat-protection"></a>Protection contre les menaces
+
 [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) est une plateforme de sécurité unifiée pour la protection préventive, la détection après effraction, l’examen automatisé et la réponse. Defender for Endpoint protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité.
 
 > [!TIP]
@@ -32,7 +33,7 @@ ms.locfileid: "52840993"
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Menaces & gestion des vulnérabilités</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="attack surface reduction icon"> <br><b>Réduction de la surface d’attaque</b></center></a></td>
-<td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="next generation protection icon"><br> <b>Protection nouvelle génération</b></a></center></td>
+<td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="next generation protection icon"><br> <b>Protection de nouvelle génération</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="endpoint detection and response icon"><br> <b>Détection et réponse des points de terminaison</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png" alt="automated investigation and remediation icon"><br> <b>Examen et correction automatisés</b></a></center></td>
 <td><center><a href="#mte"><img src="images/mte-icon.png" alt="microsoft threat experts icon"><br> <b>Spécialistes des menaces Microsoft</b></a></center></td>
@@ -49,16 +50,15 @@ ms.locfileid: "52840993"
 
 <a name="tvm"></a>
 
-
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4obJq]
 
 **[Menaces & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)**<br>
-Cette fonctionnalité intégrée utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiér doncisation et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
+Cette fonctionnalité intégrée utilise une approche basée sur le risque qui change la donne pour découvrir, hiérarchiser et corriger les vulnérabilités et erreurs de configuration des points de terminaison.
 
-- [Vue d’ensemble & gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
+- [Vue d’ensemble & gestion des vulnérabilités menace](next-gen-threat-and-vuln-mgt.md)
 - [Prise en main](tvm-prerequisites.md)
 - [Accéder à votre posture de sécurité](tvm-dashboard-insights.md)
-- [Améliorer votre posture de sécurité et réduire les risques](tvm-security-recommendation.md)
+- [Améliorer votre état de la sécurité et réduire les risques](tvm-security-recommendation.md)
 - [Comprendre les vulnérabilités sur vos appareils](tvm-software-inventory.md)
 
 <a name="asr"></a>
@@ -70,7 +70,7 @@ L’ensemble de fonctionnalités de réduction de la surface d’attaque fournit
 - [Contrôle d’application](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 - [Contrôle des appareils](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Exploit Protection](exploit-protection.md)
-- [Protection du réseau,](network-protection.md) [protection web](web-protection-overview.md)
+- [Protection réseau](network-protection.md), [protection web](web-protection-overview.md)
 - [Accès contrôlé aux dossiers](controlled-folders.md)
 - [Pare-feu réseau](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [Règles de réduction de la surface d’attaque](attack-surface-reduction.md)
@@ -78,17 +78,17 @@ L’ensemble de fonctionnalités de réduction de la surface d’attaque fournit
 <a name="ngp"></a>
 
 **[Protection de nouvelle génération](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
-Pour renforcer davantage le périmètre de sécurité de votre réseau, Microsoft Defender pour Endpoint utilise une protection nouvelle génération conçue pour capturer tous les types de menaces émergentes.
+Pour renforcer davantage le périmètre de sécurité de votre réseau, Microsoft Defender pour point de terminaison fait appel à une protection nouvelle génération conçue pour intercepter tous les types de menaces émergentes.
 
 - [Surveillance du comportement](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 - [Protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
 - [Apprentissage automatique](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Protection d’URL](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+- [URL Protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
 - [Service bac à sable automatisé](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
 
-**[Détection et réponse du point de terminaison](overview-endpoint-detection-response.md)**<br>
+**[Détection et réponse des points de terminaison](overview-endpoint-detection-response.md)**<br>
 Des fonctionnalités de détection et de réponse de point de terminaison sont mises en place pour détecter, examiner et répondre aux tentatives d’intrusion et aux violations actives. Avec le repérage avancé, vous avez un outil de repérage de menaces basé sur une requête qui vous permet de rechercher de manière proactive les violations et de créer des détections personnalisées.
 
 - [Alertes](alerts-queue.md)
@@ -116,12 +116,12 @@ Le nouveau service de recherche contre les menaces gérées de Microsoft Defende
 
 - [Notification d’attaque ciblée](microsoft-threat-experts.md)
 - [Experts à la demande](microsoft-threat-experts.md)
-- [Configurer votre service de Microsoft 365 de recherche géré Defender](configure-microsoft-threat-experts.md)
+- [Configurer votre service de Microsoft 365 Defender de recherche géré](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 
 **[Configuration et administration centralisées, API](management-apis.md)**<br>
-Intégrez Microsoft Defender for Endpoint à vos flux de travail existants.
+Intégrez Microsoft Defender pour point de terminaison à vos flux de travail existants.
 - [Intégration](onboard-configure.md)
 - [Intégration API et SIEM](configure-siem.md)
 - [API exposées](apis-intro.md)
@@ -130,7 +130,7 @@ Intégrez Microsoft Defender for Endpoint à vos flux de travail existants.
 
 <a name="integration"></a>
 **[Intégration aux solutions Microsoft](threat-protection-integration.md)** <br>
- Microsoft Defender pour point de terminaison s’intègre directement à différentes solutions Microsoft, notamment :
+ Microsoft Defender pour le point de terminaison s’intègre directement à différentes solutions Microsoft, notamment :
 - Intune
 - Microsoft Defender pour Office 365
 - Microsoft Defender pour l’identité
@@ -140,4 +140,4 @@ Intégrez Microsoft Defender for Endpoint à vos flux de travail existants.
 
 <a name="mtp"></a>
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
- Avec Microsoft 365 Defender, Microsoft Defender pour le point de terminaison et diverses solutions de sécurité Microsoft forment une suite de défense d’entreprise unifiée avant et après la violation qui s’intègre en mode natif à travers le point de terminaison, l’identité, le courrier électronique et les applications pour détecter, empêcher, examiner et répondre automatiquement aux attaques sophistiquées.
+ Avec Microsoft 365 Defender, Microsoft Defender pour point de terminaison et diverses solutions de sécurité Microsoft forment une suite de défense d’entreprise unifiée avant et après la violation qui s’intègre en mode natif à travers le point de terminaison, l’identité, le courrier électronique et les applications pour détecter, empêcher, examiner et répondre automatiquement aux attaques sophistiquées.

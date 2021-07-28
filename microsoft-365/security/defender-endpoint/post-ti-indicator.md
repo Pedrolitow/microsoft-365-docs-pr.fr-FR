@@ -16,22 +16,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ce0dc0ce255e9717082687bd1f8bf5941739261d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 03235435028b9e30adc6ffd39fa512af05fd3ee3
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771704"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622795"
 ---
 # <a name="submit-or-update-indicator-api"></a>API d’indicateur d’soumission ou de mise à jour
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -39,60 +39,64 @@ ms.locfileid: "52771704"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Description de l’API
+
 Envoie ou met à jour une nouvelle [entité d’indicateur.](ti-indicator.md)
-<br>La notation CIDR pour les IPs n’est pas prise en charge.
+
+La notation CIDR pour les IPs n’est pas prise en charge.
 
 ## <a name="limitations"></a>Limites
-1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
-2. Il existe une limite de 15 000 indicateurs actifs par client. 
 
+1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+2. Il existe une limite de 15 000 indicateurs actifs par client.
 
 ## <a name="permissions"></a>Autorisations
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La](apis-intro.md) mise en place
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez La mise [en place](apis-intro.md)
+
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   Ti.ReadWrite |  « Lire et écrire des indicateurs »
-Application |   Ti.ReadWrite.All |  « Lire et écrire tous les indicateurs »
-Déléguée (compte professionnel ou scolaire) |    Ti.ReadWrite |  « Lire et écrire des indicateurs »
-
+Application|Ti.ReadWrite|« Lire et écrire des indicateurs »
+Application|Ti.ReadWrite.All|« Lire et écrire tous les indicateurs »
+Déléguée (compte professionnel ou scolaire)|Ti.ReadWrite|« Lire et écrire des indicateurs »
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/indicators
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
-Content-Type | string | application/json. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
+
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Paramètre | Type    | Description
+Parameter|Type|Description
 :---|:---|:---
-indicatorValue | String | Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
-indicatorType | Énum | Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
-action | Énum | Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
-application | String | Application associée à l’indicateur. **Optional**
-title | String | Titre de l’alerte de l’indicateur. **Obligatoire**
-description | String | Description de l’indicateur. **Obligatoire**
-expirationTime | DateTimeOffset | Heure d’expiration de l’indicateur. **Optional**
-Sévérité  | Énum | Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions | String | Actions recommandées pour l’alerte d’indicateur TI. **Optional**
-rbacGroupNames | String | Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
-
+indicatorValue|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
+indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
+action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
+application|Chaîne|Application associée à l’indicateur. **Optional**
+title|Chaîne|Titre de l’alerte de l’indicateur. **Obligatoire**
+description|Chaîne|Description de l’indicateur. **Obligatoire**
+expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur. **Optional**
+Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
+recommendedActions|Chaîne|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
+rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
 
 ## <a name="response"></a>Réponse
+
 - Si elle réussit, cette méthode renvoie le code de réponse [](ti-indicator.md) 200 - OK et l’entité d’indicateur créée/mise à jour dans le corps de la réponse.
 - Si elle ne réussit pas : cette méthode retourne 400 - Demande non bonne. Une demande incorrecte indique généralement un corps incorrect.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request"></a>Demande
 
 Voici un exemple de demande.
 
@@ -116,4 +120,5 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 ```
 
 ## <a name="related-topic"></a>Rubrique connexe
+
 - [Gérer des indicateurs](manage-indicators.md)

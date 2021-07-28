@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b31ae48c4defaa0061bef4b13522dd62b8058150
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 77d5cb27a4cb52136bb35aa6ffa40561cb0124d6
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543460"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621954"
 ---
 # <a name="find-devices-by-tag-api"></a>Rechercher des appareils par API de balise
 
@@ -30,7 +30,7 @@ ms.locfileid: "53543460"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -74,21 +74,22 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-uri-parameters"></a>Paramètres d’URI de demande
 
 Nom|Type|Description
 :---|:---|:---
-tag|String|Nom de la balise. **Obligatoire**.
-useStartsWithFilter|Boolean|Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
+tag|Chaîne|Nom de la balise. **Obligatoire**.
+useStartsWithFilter|Valeur booléenne|Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 
 Vide
 
 ## <a name="response"></a>Réponse
-En cas de réussite - 200 OK avec la liste des ordinateurs dans le corps de la réponse.
+
+En cas de réussite : 200 - OK avec la liste des ordinateurs dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

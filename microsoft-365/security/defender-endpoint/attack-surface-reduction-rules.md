@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 9c55ca17f4d0fe8cd5911e1d42d1b20588da28ef
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d0dd39197835574a5982d50486026b713f71e8d5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542514"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624187"
 ---
 # <a name="attack-surface-reduction-rules"></a>Règles de réduction des surfaces d'attaque
 
@@ -36,7 +36,7 @@ Cet article fournit des informations sur les règles de réduction des attaques 
 
 ## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge 
 
-Les liens vers des informations sur les versions du système d’exploitation référencés dans ce tableau sont répertoriés sous ce tableau.
+Le tableau suivant répertorie les règles de réduction de la surface d’attaque par ordre alphabétique. Une coche indique que la règle est prise en charge par le système d’exploitation répertorié dans cette colonne.
 
 > [!Note]
 >
@@ -63,18 +63,6 @@ Les liens vers des informations sur les versions du système d’exploitation r�
 |[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | ![Pris en charge](images/checkmark.png) <br><br> version 1803 ou ultérieure | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
 | **Nom de la règle** |  **&nbsp;Windows 10** | **&nbsp;Windows Server 2019** | **&nbsp;Windows Serveur** | **&nbsp;Windows Server 2016** | **&nbsp;Windows Server 2012 R2** |
-
-### <a name="operating-system-version"></a>Version du système d'exploitation
-
-- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 Professionnel, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 Entreprise, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-
-- [Windows Serveur, version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="supported-configuration-management-systems"></a>Systèmes de gestion de la configuration pris en charge
 
@@ -119,7 +107,7 @@ La règle bloquer l’utilisation abusive des pilotes **signés vulnérables exp
 >
 > Vous pouvez également configurer cette règle à [l’aide de PowerShell.](enable-attack-surface-reduction.md#powershell)
 >
-> Pour examiner un pilote, utilisez ce site Web pour soumettre [un pilote pour analyse.](https://www.microsoft.com/en-us/wdsi/driversubmission)
+> Pour examiner un pilote, utilisez ce site Web pour soumettre [un pilote pour analyse.](https://www.microsoft.com/wdsi/driversubmission)
 
 Nom Intune : `Block abuse of exploited vulnerable signed drivers`
 
@@ -141,7 +129,7 @@ GUID : `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 Cette règle empêche Office applications de créer des processus enfants. Office applications incluent Word, Excel, PowerPoint, OneNote et Access.
 
-La création de processus enfants malveillants est une stratégie anti-programme malveillant courante. Les programmes malveillants qui utilisent Office comme vecteur exécutent souvent des macros VBA et exploitent du code pour télécharger et essayer d’exécuter davantage de charges utiles. Toutefois, certaines applications métier légitimes peuvent également générer des processus enfants à des fins médicales ; par exemple, la création d’une invite de commandes ou l’utilisation de PowerShell pour configurer les paramètres de Registre.
+La création de processus enfants malveillants est une stratégie anti-programme malveillant courante. Les programmes malveillants qui utilisent Office comme vecteur exécutent souvent des macros VBA et exploitent du code pour télécharger et essayer d’exécuter davantage de charges utiles. Toutefois, certaines applications métier légitimes peuvent également générer des processus enfants à des fins non médicales ; par exemple, la création d’une invite de commandes ou l’utilisation de PowerShell pour configurer les paramètres de Registre.
 
 Nom Intune : `Office apps launching child processes`
 
@@ -153,7 +141,7 @@ GUID : `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 Cette règle empêche le vol d’informations d’identification en verrouilleant le service LSASS (Local Security Authority Subsystem Service).
 
-LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Microsoft Defender Credential Guard dans Windows 10 normalement les tentatives d’extraction des informations d’identification de LSASS. Toutefois, certaines organisations ne peuvent pas activer Credential Guard sur tous leurs ordinateurs en raison de problèmes de compatibilité avec les pilotes de carte à puce personnalisés ou d’autres programmes chargés dans l’autorité de sécurité locale (LSA). Dans ce cas, les attaquants peuvent utiliser des outils de piratage tels que Mimikatz pour supprimer des mots de passe en texte clair et des hages NTLM à partir de LSASS.
+LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Microsoft Defender Credential Guard dans Windows 10 normalement les tentatives d’extraction d’informations d’identification à partir de LSASS. Toutefois, certaines organisations ne peuvent pas activer Credential Guard sur tous leurs ordinateurs en raison de problèmes de compatibilité avec les pilotes de carte à puce personnalisés ou d’autres programmes chargés dans l’autorité de sécurité locale (LSA). Dans ce cas, les attaquants peuvent utiliser des outils de piratage tels que Mimikatz pour supprimer des mots de passe en texte clair et des hages NTLM à partir de LSASS.
 
 > [!NOTE]
 > Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
@@ -166,7 +154,7 @@ GUID : `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Bloquer le contenu exécutable du client de messagerie et de la messagerie web
 
-Cette règle empêche le lancement des types de fichiers suivants à partir du courrier électronique ouvert dans l’application Microsoft Outlook, ou de Outlook.com et d’autres fournisseurs de messagerie web populaires :
+Cette règle empêche le lancement des types de fichiers suivants à partir du courrier électronique ouvert dans l’application Microsoft Outlook ou Outlook.com et d’autres fournisseurs de messagerie web populaires :
 
 - Fichiers exécutables (tels que .exe, .dll ou .scr)
 - Fichiers de script (tels qu’un fichier .ps PowerShell, Visual Basic .vbs ou javascript .js fichier)
@@ -178,11 +166,11 @@ Microsoft Endpoint Manager nom de l’Microsoft Endpoint Manager :`Block executa
 GUID : `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 > [!NOTE]
-> La règle Bloquer **le contenu exécutable à** partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
+> La règle Bloquer **le contenu exécutable** à partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
 >
 > - Intune (Profils de configuration) : exécution du contenu exécutable (exe, dll, ps, js, vbs, etc.) supprimé de la messagerie électronique (webmail/client de messagerie) (aucune exception).
 > - Endpoint Manager : bloquer le téléchargement de contenu exécutable à partir des clients de messagerie et de messagerie web.
-> - Stratégie de groupe : bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web.
+> - Stratégie de groupe : bloquer le contenu exécutable du client de messagerie et de la messagerie web.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance
 
@@ -263,7 +251,7 @@ GUID : `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 Cette règle empêche les Outlook de créer des processus enfants, tout en permettant des fonctions Outlook légitimes.
 
-Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les Outlook et les attaques par [formulaires](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) que les attaquants peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
+Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les Outlook et les attaques par formulaires que les [attaquants](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
 
 > [!NOTE]
 > Cette règle bloque les conseils de stratégie DLP et les infos-bulles dans Outlook. Cette règle s’applique Outlook et Outlook.com uniquement.
@@ -294,7 +282,7 @@ GUID : `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 Cette règle empêche l’exécution des processus créés via [PsExec](/sysinternals/downloads/psexec) [et WMI.](/windows/win32/wmisdk/about-wmi) PsExec et WMI peuvent exécuter du code à distance. Il existe donc un risque que des programmes malveillants abusent de cette fonctionnalité à des fins de commande et de contrôle, ou qu’ils propagent une infection dans le réseau d’une organisation.
 
 > [!WARNING]
-> Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution MDM. Cette règle n’est pas compatible avec la gestion par [Microsoft Endpoint Configuration Manager](/configmgr) car elle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
+> Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution MDM. Cette règle n’est [](/configmgr) pas compatible avec la gestion Microsoft Endpoint Configuration Manager car elle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
 
 Nom Intune : `Process creation from PSExec and WMI commands`
 

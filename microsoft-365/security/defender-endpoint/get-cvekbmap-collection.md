@@ -17,22 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 85c4d82f07354193fb1e997abb98dbdaa02dc8ef
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: afb3e689c33b7d6d314bc23b19869824b3666c00
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166582"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623947"
 ---
 # <a name="get-cve-kb-map-api"></a>API de carte Get CVE-KB
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,29 +41,33 @@ ms.locfileid: "51166582"
 Extrait une carte de CVE vers les détails de la ko et de la CVE.
 
 ## <a name="permissions"></a>Autorisations
+
 L’utilisateur a besoin d’autorisations de lecture.
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 GET /testwdatppreview/cvekbmap
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-En-tête | Valeur 
+En-tête|Valeur
 :---|:---
-Autorisation | Porteur {token}. **Obligatoire**.
-Type de contenu | application/json
+Autorisation|Porteur {token}. **Obligatoire**.
+Type de contenu|application/json
 
 ## <a name="request-body"></a>Corps de la demande
+
 Vide
 
 ## <a name="response"></a>Réponse
+
 En cas de réussite et si la carte existe : 200 - OK.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request-example"></a>Exemple de requête
 
 Voici un exemple de demande.
 
@@ -71,7 +75,7 @@ Voici un exemple de demande.
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 ```
 
-**Réponse**
+### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de réponse.
 
@@ -87,7 +91,6 @@ Voici un exemple de réponse.
             "title": "Cumulative Security Update for Internet Explorer",
             "severity": "Critical"
         },
-    …
+    ...
 }
-
 ```

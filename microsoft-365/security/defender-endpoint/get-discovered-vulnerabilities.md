@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cd3b1343711a5bed9ad606a6b8dc754f223ed279
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: fffe4332b0c84feae54fbed4f21542cfb95eb1a5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430779"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623311"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Obtenir les vulnérabilités découvertes
 
@@ -31,7 +31,7 @@ ms.locfileid: "53430779"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -54,15 +54,15 @@ Déléguée (compte professionnel ou scolaire) | Vulnerability.Read | « Lire le
 
 ## <a name="http-request"></a>Requête HTTP
 
-```
+```http
 GET /api/machines/{machineId}/vulnerabilities
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -112,4 +112,4 @@ Voici un exemple de réponse.
 ## <a name="see-also"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnérabilités dans votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Vulnérabilités de votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

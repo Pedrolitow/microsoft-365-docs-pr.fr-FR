@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83a011e649a7289f62acd6a8d985f020b27b1e10
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7a08ecd8b0086596e27a7accbadedf649a353ec2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290014"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621966"
 ---
 # <a name="file-resource-type"></a>Type de ressource Fichier
 
@@ -30,7 +30,7 @@ ms.locfileid: "53290014"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,22 +52,22 @@ Méthode|Type renvoyé |Description
 
 |Propriété | Type | Description |
 |:---|:---|:---|
-|sha1 | String | Hachage Sha1 du contenu du fichier |
-|sha256 | String | Hachage Sha256 du contenu du fichier |
+|sha1 | Chaîne | Hachage Sha1 du contenu du fichier |
+|sha256 | Chaîne | Hachage Sha256 du contenu du fichier |
 |globalPrevalence | Nullable long | Prévalence des fichiers au sein de l’organisation |
 |globalFirstObserved | DateTimeOffset | Première observation du fichier |
 |globalLastObserved | DateTimeOffset | Dernière observation du fichier |
 |taille | Nullable long | Taille du fichier |
-|fileType | String | Type du fichier |
-|isPeFile | Booléen | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
-|filePublisher | String | Éditeur de fichiers |
-|fileProductName | String | Nom du produit |
-|signataire | String | Signataire de fichiers |
-|émetteur | String | Émetteur de fichier |
-|signerHash | String | Hachage du certificat de signature |
-|isValidCertificate | Booléen | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
-|determinationType | String | Type de détermination du fichier |
-|determinationValue | String | Valeur de détermination |
+|fileType | Chaîne | Type du fichier |
+|isPeFile | Valeur booléenne | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
+|filePublisher | Chaîne | Éditeur de fichiers |
+|fileProductName | Chaîne | Nom du produit |
+|signataire | Chaîne | Signataire de fichiers |
+|émetteur | Chaîne | Émetteur de fichier |
+|signerHash | Chaîne | Hachage du certificat de signature |
+|isValidCertificate | Valeur booléenne | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
+|determinationType | Chaîne | Type de détermination du fichier |
+|determinationValue | Chaîne | Valeur de détermination |
 
 ## <a name="json-representation"></a>Représentation Json
 

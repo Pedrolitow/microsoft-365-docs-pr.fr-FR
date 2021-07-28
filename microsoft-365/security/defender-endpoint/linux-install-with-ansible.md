@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f3ec3552e10fa0b25c75644c7c37c63afb81902b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ea82fba7273371c9262e5f154160c762a797e4ae
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542661"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622891"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
 
@@ -34,7 +34,7 @@ ms.locfileid: "53542661"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article explique comment déployer Defender pour endpoint sur Linux à l’aide d’Ansible. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
@@ -55,7 +55,7 @@ En outre, pour le déploiement Ansible, vous devez être familiarisé avec les t
   - sous-président
   - python-apt
 
-- Tous les nodes gérés doivent être répertoriés au format suivant dans le `/etc/ansible/hosts` fichier ou dans le fichier approprié :
+- Tous les nodes gérés doivent être répertoriés au format suivant dans le `/etc/ansible/hosts` fichier ou le fichier approprié :
 
     ```bash
     [servers]
@@ -74,10 +74,10 @@ En outre, pour le déploiement Ansible, vous devez être familiarisé avec les t
 Téléchargez le package d’intégration à partir Microsoft 365 Defender portail :
 
 1. Dans Microsoft 365 Defender portail, go to **Paramètres > Endpoints > Device management > Onboarding**.
-2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez Votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
+2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![capture d Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux-2.png)
+    ![capture d’écran Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux-2.png)
 
 4. À partir d’une invite de commandes, vérifiez que vous avez le fichier. Extrayons le contenu de l’archive :
 

@@ -16,28 +16,28 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4be0960e8ba868df2acb313b171a08f667c287a7
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 3eb4ebbf9da14e90e812eb28f58ba262a218b207
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651331"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622879"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft s’engage à vous fournir les informations et les contrôles dont vous avez besoin pour faire des choix sur la façon dont vos données sont collectées et utilisées lorsque vous utilisez Defender pour Endpoint sur Linux.
 
 Cette rubrique décrit les contrôles de confidentialité disponibles dans le produit, comment gérer ces contrôles avec des paramètres de stratégie et plus d’informations sur les événements de données collectés.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour Point de terminaison sur Linux
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour Endpoint sur Linux
 
 Cette section décrit les contrôles de confidentialité pour les différents types de données collectées par Defender pour Endpoint sur Linux.
 
@@ -68,7 +68,7 @@ Des exemples de données sont utilisés pour améliorer les fonctionnalités de 
 Il existe trois niveaux pour contrôler l’envoi d’échantillons :
 
 - **Aucun**: aucun échantillon suspect n’est envoyé à Microsoft.
-- **Sécurisé**: seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.
+- **Coffre**: seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.
 - **Tous**: tous les échantillons suspects sont envoyés à Microsoft.
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>Gérer les Contrôles de protection des données avec des paramètres de stratégie
@@ -99,11 +99,11 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 | app_version             | Version du defender pour point de terminaison sur l’application Linux. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
 | sig_version             | Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’elle puisse être correctement hiérarchisées. |
 | supported_compressions  | Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application. |
-| release_ring            | Sonner à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé. |
+| release_ring            | Sonnerie à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé. |
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
 
-**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et les résultats attendus de Defender for Endpoint sur l’appareil sur qui il est installé.
+**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la mise à jour de Defender for Endpoint sur l’appareil sur laquelle il est installé.
 
 Les données de diagnostic requises permettent d’identifier les problèmes avec Microsoft Defender pour point de terminaison qui peuvent être liés à une configuration d’appareil ou de logiciel. Par exemple, il peut aider à déterminer si une fonctionnalité De Defender pour point de terminaison se crashe plus fréquemment sur une version de système d’exploitation particulière, avec les fonctionnalités nouvellement introduites ou lorsque certaines fonctionnalités de Defender pour le point de terminaison sont désactivées. Les données de diagnostic requises aident Microsoft à détecter, diagnostiquer et résoudre ces problèmes plus rapidement afin de réduire l’impact sur les utilisateurs ou les organisations.
 
@@ -111,7 +111,7 @@ Les données de diagnostic requises permettent d’identifier les problèmes ave
 
 **Installation/désinstallation de Microsoft Defender for Endpoint**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -121,9 +121,9 @@ Les champs suivants sont collectés :
 | code             | Code qui décrit l’opération. |
 | text             | Informations supplémentaires associées à l’installation du produit. |
 
-**Configuration de Microsoft Defender pour point de terminaison**
+**Configuration de Microsoft Defender pour point de terminaison**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ                                               | Description |
 | --------------------------------------------------- | ----------- |
@@ -135,7 +135,7 @@ Les champs suivants sont collectés :
 | cloud_service.service_uri                           | URI utilisé pour communiquer avec le cloud. |
 | cloud_service.diagnostic_level                      | Niveau de diagnostic de l’appareil (obligatoire, facultatif). |
 | cloud_service.automatic_sample_submission           | Niveau d’envoi automatique d’échantillons de l’appareil (aucun, sécurisé, tout). |
-| cloud_service.automatic_definition_update_enabled   | Si la mise à jour automatique des définitions est ou non allumée. |
+| cloud_service.automatic_definition_update_enabled   | Si la mise à jour automatique des définitions est ou non. |
 | edr.early_preview                                   | Si l’appareil doit s’PEPT fonctionnalités de prévisualisation anticipée. |
 | edr.group_id                                        | Identificateur de groupe utilisé par le composant de détection et de réponse. |
 | edr.tags                                            | Balises définies par l’utilisateur. |
@@ -143,15 +143,15 @@ Les champs suivants sont collectés :
 
 #### <a name="product-and-service-usage-data-events"></a>Événements de données liés à l'utilisation des produits et services
 
-**Rapport de mise à jour des informations de sécurité**
+**Rapport de mise à jour de l’intelligence de la sécurité**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
 | from_version     | Version d’origine de l’intelligence de sécurité. |
 | to_version       | Nouvelle version de l’intelligence de la sécurité. |
-| status           | État de la mise à jour indiquant la réussite ou l’échec. |
+| statut           | État de la mise à jour indiquant la réussite ou l’échec. |
 | using_proxy      | Si la mise à jour a été effectuée sur un proxy. |
 | error            | Code d’erreur en cas d’échec de la mise à jour. |
 | reason (Raison)           | Message d’erreur en cas d’échec de la mise à jour. |
@@ -160,7 +160,7 @@ Les champs suivants sont collectés :
 
 **Statistiques d’extension du noyau**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -192,9 +192,9 @@ Les données de diagnostic facultatives collectées par Microsoft sur la configu
 
 #### <a name="software-setup-and-inventory-data-events"></a>Événements de données liés à l’inventaire et à la configuration des logiciels
 
-**Configuration de Microsoft Defender pour point de terminaison**
+**Configuration de Microsoft Defender pour point de terminaison**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ                                              | Description |
 | -------------------------------------------------- | ----------- |
@@ -207,7 +207,7 @@ Les champs suivants sont collectés :
 | antivirus_engine.exclusions[].name                 | Nom du fichier exclu de l’analyse. |
 | antivirus_engine.scan_cache_maximum                | Taille du cache du produit. |
 | antivirus_engine.maximum_scan_threads              | Nombre maximal de threads utilisés pour l’analyse. |
-| antivirus_engine.threat_restoration_exclusion_time | Délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté. |
+| antivirus_engine.threat_restoration_exclusion_time | Délai d’délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté. |
 | antivirus_engine.threat_type_settings              | Configuration de la façon dont les différents types de menaces sont gérés par le produit. |
 | filesystem_scanner.full_scan_directory             | Répertoire d’analyse complet. |
 | filesystem_scanner.quick_scan_directories          | Liste des répertoires utilisés dans l’analyse rapide. |
@@ -216,11 +216,11 @@ Les champs suivants sont collectés :
 
 **Configuration de la mise à jour automatique Microsoft**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ                       | Description |
 | --------------------------- | ----------- |
-| how_to_check                | Détermine la façon dont les mises à jour du produit sont vérifiées (par exemple, automatiques ou manuelles). |
+| how_to_check                | Détermine la façon dont les mises à jour des produits sont vérifiées (par exemple, automatiques ou manuelles). |
 | channel_name                | Canal de mise à jour associé à l’appareil. |
 | manifest_server             | Serveur utilisé pour télécharger les mises à jour. |
 | update_cache                | Emplacement du cache utilisé pour stocker les mises à jour. |
@@ -229,18 +229,18 @@ Les champs suivants sont collectés :
 
 #### <a name="diagnostic-log-upload-started-report"></a>Rapport de chargement démarré du journal de diagnostic
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
 | sha256           | Identificateur SHA256 du journal de support. |
-| size             | Taille du journal de prise en charge. |
+| taille             | Taille du journal de prise en charge. |
 | original_path    | Chemin d’accès au journal de support (toujours sous */var/opt/microsoft/mdatp/wdavdiag/*). |
 | format           | Format du journal de prise en charge. |
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Rapport de chargement terminé du journal de diagnostic
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ            | Description |
 | ---------------- | ----------- |
@@ -256,7 +256,7 @@ Sorties inattendues de l’application et état de celle-ci lorsque cela se prod
 
 **Statistiques d’extension du noyau**
 
-Les champs suivants sont collectés :
+Les champs suivants sont affichés :
 
 | Champ                          | Description |
 | ------------------------------ | ----------- |

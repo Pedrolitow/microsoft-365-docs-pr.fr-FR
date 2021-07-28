@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a73d40e7569f934580b28976b5278b2a972066aa
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 4b9fd7a450ffd52554751cac058a95c938f7ed79
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544600"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622771"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
@@ -33,19 +33,18 @@ ms.locfileid: "53544600"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Le service Defender for Endpoint est constamment mis à jour pour inclure de nouvelles améliorations et fonctionnalités.
 
 Découvrez les nouvelles fonctionnalités de la version d’évaluation de Defender for Endpoint et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
 
->[!TIP]
->Recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux : `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+> [!TIP]
+> Recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux : `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
-Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Point de terminaison.](whats-new-in-microsoft-defender-atp.md)
+Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Endpoint.](whats-new-in-microsoft-defender-atp.md)
 
- ## <a name="what-you-need-to-know"></a>Ce que vous devez savoir
+## <a name="what-you-need-to-know"></a>Ce que vous devez savoir
 
 Lorsque vous travaillez avec des fonctionnalités en prévisualisation publique, ces fonctionnalités :
 
@@ -56,25 +55,27 @@ Lorsque vous travaillez avec des fonctionnalités en prévisualisation publique,
 - Les fonctionnalités individuelles en prévisualisation peuvent avoir davantage de restrictions d’utilisation et de prise en charge. Si tel est le cas, ces informations sont généralement notées dans la documentation des fonctionnalités.
 - Les versions d’aperçu sont fournies avec un niveau de prise en charge standard et peuvent être utilisées pour les environnements de production. 
 
-
-
 ## <a name="turn-on-preview-features"></a>Activer les fonctionnalités d’aperçu
 
 Vous aurez accès aux fonctionnalités à venir sur qui vous pourrez nous faire part de vos commentaires afin d’améliorer l’expérience globale avant que les fonctionnalités ne soient généralement disponibles.
 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres fonctionnalités avancées Des points de terminaison  >    >    >  **prévisualisation.**
+1. Dans le volet de navigation, **sélectionnez** Paramètres fonctionnalités avancées Des points de  >    >    >  **terminaison prévisualisation.**
 
-2. Basculez le paramètre entre **« Sur** » et « **Hors** » et sélectionnez Enregistrer **les préférences.**
+2. Basculez le paramètre entre **Sur** et **Hors et** sélectionnez Enregistrer **les préférences.**
 
 ## <a name="preview-features"></a>Fonctionnalités de préversion
 
 Les fonctionnalités suivantes sont incluses dans la version préliminaire :
 
-- [Filtrage de contenu Web](web-content-filtering.md) <br> Le filtrage de contenu Web fait partie des fonctionnalités de protection web de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+- [Filtrage de contenu Web](web-content-filtering.md)
 
-- [Rapport d’intégrité et de conformité des appareils](machine-reports.md) <br/> Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
+  Le filtrage de contenu Web fait partie des fonctionnalités de protection web de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
-> [!TIP] 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
+- [Rapport d’intégrité et de conformité des appareils](machine-reports.md)
+
+  Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
+
+> [!TIP]
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

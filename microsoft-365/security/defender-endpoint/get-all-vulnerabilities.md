@@ -16,22 +16,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6def1b64430ad70dc4b4898ba2b914288826873e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: e57270345c0d87a9fcbc25ef7d9a7598bb8b0226
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861490"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624163"
 ---
 # <a name="list-vulnerabilities"></a>Répertorier des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,35 +42,37 @@ ms.locfileid: "52861490"
 Récupère une liste de toutes les vulnérabilités.
 
 ## <a name="permissions"></a>Autorisations
+
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   Vulnerability.Read.All |    « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire) | Vulnerability.Read |   « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
+Application|Vulnerability.Read.All|« Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|« Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 GET /api/vulnerabilities
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
-
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
+
 Vide
 
 ## <a name="response"></a>Réponse
-Si elle réussit, cette méthode renvoie 200 OK avec la liste des vulnérabilités dans le corps.
 
+Si elle réussit, cette méthode renvoie 200 OK avec la liste des vulnérabilités dans le corps.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request-example"></a>Exemple de requête
 
 Voici un exemple de demande.
 
@@ -78,10 +80,9 @@ Voici un exemple de demande.
 GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 ```
 
-**Réponse**
+### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de la réponse.
-
 
 ```json
 {
@@ -109,5 +110,6 @@ Voici un exemple de la réponse.
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnérabilités dans votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
