@@ -26,18 +26,18 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Afficher l’état d’intégrité des services Microsoft 365 avant de contacter le support technique pour vérifier qu’aucune interruption de service n’est en cours.
-ms.openlocfilehash: 2b856b7851f569324d1cccabb6b2da2d098b2fbe
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: fd54e888ffa1522e43c5e798ada855f9ca9f7785
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543448"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596253"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Comment vérifier l’intégrité du service Microsoft 365
 
 [![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
-Vous pouvez afficher l’intégrité de vos services Microsoft, notamment Office sur le web, Yammer, Microsoft Dynamics CRM et les services cloud de gestion des appareils mobiles, sur la page **intégrité du service** dans le[Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
+Vous pouvez afficher l’intégrité de vos services Microsoft, notamment Office sur le web, Yammer, Microsoft Dynamics CRM et les services cloud de gestion des appareils mobiles, sur la page **intégrité du service** dans le [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
 Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pouvez utiliser la [page d’état du service ](https://status.office365.com) pour vérifier si des problèmes connus vous empêchent de vous connecter à votre locataire.  Inscrivez-vous également pour nous suivre à [@MSFT365status](https://twitter.com/MSFT365Status) sur Twitter pour afficher des informations sur certains événements.
 
@@ -102,7 +102,7 @@ Le récapitulatif de l’avis ou de l’incident fournit les informations suivan
 
 ### <a name="translate-service-health-details"></a>Traduire les détails d’état du service
 
-Nous utilisons la traduction automatique pour afficher automatiquement les messages dans votre langue préférée. Pour plus d’informations sur la définition de votre langue, lisez [Traduction de langue pour les billets du Centre de messages](/microsoft-365/admin/manage/language-translation-for-message-center-posts).
+Nous utilisons la traduction automatique pour afficher automatiquement les messages dans votre langue préférée. Pour plus d’informations sur la définition de votre langue, lisez [Traduction de langue pour le tableau de bord d’intégrité des services](lang-service-health.md).
 
 ### <a name="definitions"></a>Définitions
 
