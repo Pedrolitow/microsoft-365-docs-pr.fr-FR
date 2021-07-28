@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a031a35929f319e87a9ad1a9ca48d6bf95a3ef72
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 87d9d768a81d8e6ddd72753fe7372f18c13254e1
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861574"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542948"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Afficher et organiser la liste Microsoft Defender pour les appareils de point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,7 +51,7 @@ Pendant le processus d’intégration, la liste **Appareils** est progressivemen
 >[!NOTE]
 > Si vous exportez la liste des appareils, elle contiendra tous les appareils de votre organisation. Le téléchargement peut prendre beaucoup de temps, en fonction de la taille de votre organisation. L’exportation de la liste au format CSV affiche les données de manière non filtrée. Le fichier CSV inclut tous les appareils de l’organisation, quel que soit le filtrage appliqué dans l’affichage lui-même.
 
-![Image de la liste des appareils avec liste d’appareils](images/device-list.png)
+![Image de la liste des appareils avec liste d’appareils](images/device-inventory.png)
 
 ## <a name="sort-and-filter-the-device-list"></a>Trier et filtrer la liste des appareils
 
@@ -67,8 +67,8 @@ Le niveau d’exposition reflète l’exposition actuelle de l’appareil en fon
 
 Si le niveau d’exposition indique « Aucune donnée disponible », il existe plusieurs raisons pour lesquelles cela peut être le cas :
 
-- L’appareil a cessé de signaler pendant plus de 30 jours. Dans ce cas, il est considéré comme inactif et l’exposition n’est pas calculée
-- Le système d’exploitation de l’appareil n’est [pas pris en charge : voir les conditions minimales requises pour Microsoft Defender pour endpoint](minimum-requirements.md)
+- L’appareil a cessé de signaler pendant plus de 30 jours. Dans ce cas, il est considéré comme inactif et l’exposition n’est pas calculée.
+- Le système d’exploitation de l’appareil n’est [pas pris en charge : voir la conditions minimales requises pour Microsoft Defender pour endpoint](minimum-requirements.md)
 - Appareil avec agent obsolète (très peu probable)
 
 ### <a name="os-platform"></a>Plateforme du système d’exploitation
@@ -81,7 +81,7 @@ Filtrez selon les états d’état d’état d’appareil suivants :
 
 - **Actif** : appareils qui rapportent activement des données de capteur au service.
 - **Inactif** : appareils qui ont complètement cessé d’envoyer des signaux pendant plus de 7 jours.
-- **Mal configuré : périphériques** dont les communications avec le service sont réduites ou qui ne peuvent pas envoyer de données de capteur. Les appareils mal configurés peuvent également être classés sur :
+- **Mal configuré : appareils** dont les communications avec le service sont réduites ou qui ne sont pas en mesure d’envoyer des données de capteur. Les appareils mal configurés peuvent également être classés sur :
   - Aucune donnée de capteur
   - Communications compromises
 
@@ -103,7 +103,7 @@ Pour afficher les appareils qui peuvent être affectés par une certaine menace,
 
 Pour en savoir plus sur certaines menaces, consultez [l’analyse des menaces.](threat-analytics.md) Pour plus d’informations sur l’atténuation, [voir Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md).
 
-### <a name="windows-10-version"></a>Windows 10 version
+### <a name="windows-10-version"></a>Version Windows 10
 
 Sélectionnez uniquement les Windows 10 versions que vous souhaitez examiner.
 

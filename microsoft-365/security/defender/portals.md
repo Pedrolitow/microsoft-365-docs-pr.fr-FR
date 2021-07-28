@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 5b723f4faef891c04dc78a18de09a469d703c492
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 182d44c8ad46b8c711705c46aabba3393f4e0801
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228890"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595965"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portails de sécurité Microsoft et centres d’administration
 
@@ -57,6 +57,6 @@ Bien que ces portails ne soient pas spécifiquement dédiés à la gestion de la
 |---|---|---| 
 | Portail Azure | Afficher et gérer [les Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) et toutes vos [ressources Azure](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Centre de conformité Microsoft 365 | Gérer les stratégies de gestion des données et garantir [la conformité avec les réglementations](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
-| Centre d’administration Microsoft 365 | Configurer les services Microsoft 365 de sécurité ; gérer les rôles, les licences et suivre les mises à jour de Microsoft 365 services | [admin.microsoft.com](https://admin.microsoft.com/) |
+| Centre d’administration Microsoft 365 | Configurer les services Microsoft 365 de sécurité ; gérer les rôles, les licences et suivre les mises à jour de Microsoft 365 services | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
 | Centre d’administration Microsoft Endpoint Manager | Utiliser [Microsoft Endpoint Manager](/mem/configmgr/) pour gérer et sécuriser des appareils à l’aide des fonctionnalités combinées d’Intune et de Configuration Manager | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | Microsoft Intune portail | Utiliser [](/intune/fundamentals/what-is-intune) Microsoft Intune pour déployer des stratégies d’appareil et surveiller la conformité des appareils | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9a21c5d067a0ec27b00ff4b4c9aae90bbb65a062
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4d44fef395ad7da336e55f4cd0ca6eed46e9393d
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289870"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596289"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
@@ -120,7 +120,7 @@ Les types d’action suivants ont également été ajoutés :
 
 Vous pouvez essayer cette requête d’exemple :
 
-```
+```text
 DeviceNetworkEvents
 | where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"
 | take 10

@@ -9,33 +9,61 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d4e8285bb4d589bc527db8d979a0223d3f64b8ec
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 31446b7f2afd316929443a3aa36cb73addbf9a2c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287842"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542008"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Aide administrateur pour le Bureau géré Microsoft
 
 Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Microsoft à l’aide Microsoft Manged Desktop portail d’administration. Les demandes de support sont toujours prioritaires sur les soumissions de commentaires. Les demandes de support sont triés et gérés en fonction de la gravité, comme indiqué dans le tableau de [définition de gravité](#sev). Les commentaires sont examinés et une réponse est fournie lorsque cela est demandé. 
 
-> [!IMPORTANT]
-> Veillez à configurer [un contact](../get-started/add-admin-contacts.md) d’administration pour l’empaquetage d’application, les appareils, la sécurité et d’autres demandes. Vous ne pourrez pas envoyer de demande de support dans l’un de ces domaines si vous ne fournissez pas de contact d’administrateur.
 
-**Pour envoyer une demande de support**
+## <a name="open-a-new-support-request"></a>Ouvrir une nouvelle demande de support
 
 1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **d’administration du** client.
 2. Recherchez la section Microsoft Manged Desktop, puis sélectionnez **Demande de service.**
 3. Sur **les demandes de support,** **sélectionnez + Nouveau ticket de support.**
 4. Sélectionnez le **type de demande de support** qui correspond à l’aide dont vous avez besoin. Le tableau suivant présente les options. 
-5. Sélectionnez **le niveau de gravité.** Pour plus d’informations, voir [définitions de gravité des demandes de support.](#sev) 
+5. Sélectionnez **le niveau de gravité.** Pour plus d’informations, voir [définitions de gravité des demandes de support.](#sev)
+6. Fournissez autant d’informations que possible sur la demande pour aider l’équipe à répondre rapidement. En fonction du type de demande, vous pouvez être tenu de fournir des détails différents.
+7. Examinez toutes les informations que vous avez fournies pour plus d’informations. 
+8. Quand vous êtes prêt, sélectionnez **Créer**.
+ 
 
 Type de demande de support | Champs d’utilisation
 --- | ---
 Incident | Vous devez demander à l Microsoft Manged Desktop des opérations d’examiner, par exemple, un impact étendu d’une modification ou d’une panne de service.
 Demande d’informations | Vous planifiez une modification de la mise en réseau, de la configuration du proxy, des systèmes VPN, de l’expiration des certificats ou vous avez simplement besoin d’informations sur le service. Une réponse de l’équipe Microsoft Manged Desktop Operations est recommandée lors de la communication d’un changement au sein de votre organisation.
 Demande de modification | Vous avez besoin de l Microsoft Manged Desktop des opérations pour apporter une modification, par exemple le déplacement d’appareils entre des groupes de mise à jour.
+
+> [!IMPORTANT]
+> Lorsque vous créez une demande de support, vous devez ré répertorié un contact principal, responsable de la collaboration avec nos ingénieurs de service pour résoudre le problème ou répondre aux questions sur une modification demandée. Nous exigeons également que vous avez préalablement mis en place un [contact](../get-started/add-admin-contacts.md) administrateur qui sera copié sur toutes les notifications de cas pour leur domaine de travail pertinent et que vous soyez invité à prendre en compte un cas si le contact principal d’un cas est inaccessible.
+
+## <a name="manage-an-active-support-request"></a>Gérer une demande de support active
+Le contact principal d’un cas (et tout [contact](../get-started/add-admin-contacts.md) administrateur pour ce domaine de  travail) reçoit des notifications par courrier électronique lorsqu’un cas est **créé,** affecté à un ingénieur de service pour examiner et **résolu.** Si, à un moment donné, vous avez une question sur le cas, la meilleure façon d’entrer en contact avec notre équipe consiste à répondre directement à l’un de ces messages électroniques. Si nous avons des questions sur votre demande ou si nous avons besoin de plus de détails pour prendre des mesures, nous envoyerons un e-mail au contact principal répertorié sur les demandes de support (en copiant tous les contacts d’administration appropriés).
+
+### <a name="view-all-your-active-cases"></a>Afficher tous vos cas actifs
+Bien que la messagerie électronique soit l’approche recommandée pour interagir avec notre équipe, vous souhaitez peut-être voir l’état récapitulatif de toutes vos demandes de support. À tout moment, vous pouvez utiliser le portail pour voir toutes les demandes de support actives au cours des six derniers mois.
+
+1.  Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Administration des** locataires.
+2.  Recherchez la section *Microsoft Manged Desktop,* sélectionnez **Demande de service.**
+3.  À partir de cet affichage, vous pouvez exporter l’affichage récapitulatif ou cliquer sur n’importe quel cas pour afficher les détails
+
+### <a name="edit-case-details"></a>Modifier les détails d’un cas
+Si vous devez modifier les détails d’un cas, par exemple la mise à jour du contact de cas principal, vous devez suivre les étapes suivantes :
+1.  Dans le menu Administration  des clients de [Microsoft Endpoint Manager,](https://endpoint.microsoft.com/)dans le menu Demande de **service,** utilisez la barre de recherche ou les filtres pour rechercher le cas qui vous intéresse.
+2.  Sélectionnez le cas pour ouvrir les détails de la demande 
+3.  Faites défiler jusqu’au bas des détails de la demande et sélectionnez **Modifier.**
+4.  Mettez à jour les informations modifiables, ajoutez des pièces jointes au cas ou ajoutez une note pour l’équipe d’ingénierie de service, puis sélectionnez **Enregistrer**.
+
+### <a name="provide-feedback"></a>Envoyer des commentaires
+
+Nous vous remercions de vos commentaires et nous l’utilisons pour améliorer l’expérience de support de l’administrateur.
+
+Lorsque vous êtes le contact principal pour une demande de support, vous recevez un courrier électronique de Microsoft Manged Desktop Operations vous demandant votre expérience une fois votre problème résolu. Les commentaires sont activement surveillés et partagés avec les ingénieurs pour améliorer le service et hiérarchiser les fonctionnalités futures. N’oubliez pas de vous concentrer sur votre expérience et de ne pas inclure d’informations personnelles dans le formulaire de commentaires. Pour plus d’informations sur la confidentialité, voir la [déclaration de confidentialité Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 <span id="sev" />
 
@@ -48,22 +76,15 @@ Le délai de réponse initial est la période entre le moment où vous envoyez v
 
 Niveau de gravité | Situation | Temps de réponse initial | Réponse attendue de votre part
 --- | --- | --- | ---
-**Gravité A : impact critique** | **Impact critique sur l’entreprise**<br><br>Votre entreprise a une perte ou une dégradation significative des services et nécessite une attention immédiate.<br><br>**Impact majeur sur la compatibilité des applications**<br><br>L’ensemble de votre entreprise subit un impact financier en raison de la non-réponse des appareils ou de la perte de fonctionnalités critiques | Initial : < 1 heure<br>Mise à jour : 60 minutes<br>Une prise en charge de 24 heures tous les jours est disponible | Lorsque vous sélectionnez Gravité A, vous confirmez que le problème a un impact critique sur l’entreprise, avec une perte grave et une dégradation des services. <br><br>Le problème nécessite une réponse immédiate et vous vous engagez à un engagement continu tous les jours avec l’équipe Microsoft jusqu’à la résolution. Sinon, Microsoft peut, à sa discrétion, réduire la gravité au niveau B.<br><br> Vous vous assurez également que Microsoft dispose de vos coordonnées exactes. 
+**Gravité A : impact critique** | **Impact critique sur l’entreprise**<br><br>Votre entreprise a une perte ou une dégradation significative des services et nécessite une attention immédiate.<br><br>**Impact majeur sur la compatibilité des applications**<br><br>L’ensemble de votre entreprise subit un impact financier en raison de la non-réponse des appareils ou de la perte de fonctionnalités critiques | Initiale : < 1 heure<br>Mise à jour : 60 minutes<br>Une assistance 24 heures sur 24 est disponible tous les jours | Lorsque vous sélectionnez Gravité A, vous confirmez que le problème a un impact critique sur l’entreprise, avec une perte grave et une dégradation des services. <br><br>Le problème nécessite une réponse immédiate et vous vous engagez à un engagement continu tous les jours avec l’équipe Microsoft jusqu’à la résolution. Dans le cas contraire, Microsoft peut, à sa discrétion, réduire la gravité au niveau B.<br><br> Vous vous assurez également que Microsoft dispose de vos coordonnées exactes. 
 **Gravité B : impact modéré** | **Impact modéré sur l’activité**<br><br>Votre entreprise a une perte ou une dégradation modérée des services, mais le travail peut raisonnablement continuer de manière dégradée.<br><br>**Impact modéré sur la compatibilité des applications**<br><br>Un groupe d’entreprise spécifique n’est plus productif, en raison de la non-réponse des appareils ou de la perte de fonctionnalités critiques. | Initial : < 4 heures<br>Mise à jour : 12 heures<br>24 heures sur 24 pendant les heures de support de l’administrateur (du lundi au vendredi). | Lorsque vous sélectionnez gravité B, vous confirmez que le problème a un impact modéré sur votre entreprise avec la perte et la dégradation des services, mais les solutions de contournement permettent une continuité d’activité raisonnable, bien que temporaire. <br><br>Le problème nécessite une réponse urgente. Si vous avez choisi le support tous les jours lorsque vous envoyez la demande de support, vous vous engagez à un engagement continu tous les jours avec l’équipe Microsoft jusqu’à la résolution. Sinon, Microsoft peut, à sa discrétion, réduire la gravité au niveau C. Si vous avez choisi le support technique pendant les heures d’assistance de l’administrateur lorsque vous soumettez un incident de gravité B, Microsoft vous contactera uniquement pendant les heures de support de l’administrateur.<br><br>Vous vous assurez également que Microsoft dispose de vos coordonnées exactes.
 **Gravité C – Impact minimal** | **Impact minimal sur l’activité**<br><br> Votre entreprise fonctionne avec des problèmes mineurs de services.<br><br>**Impact sur la compatibilité des applications mineures**<br><br>Les utilisateurs potentiellement non liés font l’expérience de problèmes de compatibilité mineurs qui n’empêchent pas la productivité | Initial : < 8 heures<br>Mise à jour : 24 heures<br>Support 24 heures sur 24 pendant les heures de support de l’administrateur (du lundi au vendredi)  | Lorsque vous sélectionnez gravité C, vous confirmez que le problème a un impact minimal sur votre entreprise avec une gêne mineure du service.<br><br>Pour un incident de gravité C, Microsoft vous contactera uniquement pendant les heures de support de l’administrateur.<br><br>Vous vous assurez également que Microsoft dispose de vos coordonnées exactes.
 
 - **Langues de support** : toutes les langues sont fournies en anglais.
 - **Modifications de niveau de gravité** : Microsoft peut rétrograder le niveau de gravité si vous n’êtes pas en mesure de fournir des ressources ou des réponses adéquates pour nous permettre de poursuivre les efforts de résolution des problèmes. 
 -  Compatibilité des applications : pour qu’un problème de compatibilité d’application soit pris en compte, il doit y avoir une erreur reproductible, de la même version de l’application, entre la version précédente et la version actuelle de Windows ou Applications Microsoft 365 pour les grandes entreprises. Pour résoudre les problèmes de compatibilité des applications, nous avons besoin d’un point de contact dans votre organisation pour travailler avec. Le contact doit travailler directement avec notre équipe Fast Track pour examiner et résoudre le problème.
-- **Temps de réponse du client** Si vous ne répondez pas aux exigences de réponse attendues, nous rétrogradons la demande d’un niveau de gravité, à un niveau de gravité C minimum. Si vous ne répondez pas aux demandes d’action, nous atténuerons et fermerons la demande de support dans les 48 heures qui s’approchent de la dernière demande.
+- **Temps de réponse du client** Si vous ne répondez pas aux exigences de réponse attendues, nous rétrograderons la demande d’un niveau de gravité, à un niveau de gravité C minimum. Si vous ne répondez pas aux demandes d’action, nous atténuerons et fermerons la demande de support dans les 48 heures qui s’approchent de la dernière demande.
 
-## <a name="provide-feedback"></a>Envoyer des commentaires
-
-Nous vous remercions de vos commentaires et nous l’utilisons pour améliorer l’expérience de support de l’administrateur.
-
-Une fois qu’un ticket  est dans l’état **Atténué** ou Résolu, vous pouvez partager vos commentaires sur votre expérience avec ce problème particulier. Pour partager vos commentaires, allez à la page Demandes de **service** dans le menu Dépannage **+ support** du portail Microsoft Endpoint Manager service. Sélectionnez le ticket spécifique. Les détails du ticket s’affichent dans le fly-in sur le côté droit. Sélectionnez **l’onglet** Commentaires et fournissez les informations demandées. N’incluez pas d’informations personnelles dans le formulaire de commentaires. Pour plus d’informations sur la confidentialité, voir la [déclaration de confidentialité Microsoft.](https://privacy.microsoft.com/privacystatement)
-
-:::image type="content" alt-text="Exemple de formulaire de commentaires." source="../../media/feedback_form.png" lightbox="../../media/feedback_form.png":::
 
 ## <a name="more-resources"></a>Plus de ressources
 

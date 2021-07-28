@@ -18,21 +18,21 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ajouter et gérer des alertes d’activité dans le Centre de sécurité & conformité afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques
-ms.openlocfilehash: b48093de66fdefa9a298b6cdc0f0324ee720fbbf
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 5ca3b7d49490b3bd43eb82e2f230e804ad769386
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341603"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542056"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 
 Vous pouvez créer une alerte d’activité qui vous enverra une notification par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques dans Office 365. Les alertes d’activité sont similaires à la recherche d’événements dans le journal d’audit, sauf qu’un message électronique vous est envoyé lorsqu’un événement pour une activité pour qui vous avez créé une alerte se produit.
 
- **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activité ou d’activité effectués par des utilisateurs spécifiques que vous voulez vraiment connaître. Au lieu d’avoir à rechercher ces activités dans le journal d’audit, vous pouvez utiliser des alertes d’activité pour Microsoft 365 vous envoyer un message électronique lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte d’activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de sa boîte aux lettres. La notification par courrier électronique qui vous est envoyée inclut des informations sur l’activité qui a été effectuée et l’utilisateur qui l’a effectuée.
+ **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activité ou d’activité effectués par des utilisateurs spécifiques que vous voulez vraiment connaître. Au lieu d’avoir à rechercher ces activités dans le journal d’audit, vous pouvez utiliser des alertes d’activité pour Microsoft 365 vous envoyer un message électronique lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte d’activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint, ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de sa boîte aux lettres. La notification par courrier électronique qui vous est envoyée inclut des informations sur l’activité qui a été effectuée et l’utilisateur qui l’a effectuée.
 
 > [!NOTE]
-> Les alertes d’activité sont en cours d’precaté. Nous vous recommandons de commencer à utiliser des stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer de nouvelles alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités d’ajout telles que la possibilité de créer une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifiée, et d’afficher des alertes sur la page Afficher les **alertes** dans le Centre de sécurité et conformité. Pour plus d’informations, voir [Stratégies d’alerte.](alert-policies.md)
+> Les alertes d’activité sont en cours d’precaté. Nous vous recommandons de commencer à utiliser des stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer de nouvelles alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités supplémentaires, telles que la possibilité de créer une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifiée, et d’afficher des alertes sur la page Afficher les **alertes** dans le centre de sécurité et conformité. Pour plus d’informations, voir [Stratégies d’alerte.](alert-policies.md)
 
 ## <a name="confirm-roles-and-configure-audit-logging"></a>Confirmer les rôles et configurer la journalisation d’audit
 
@@ -42,7 +42,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
 
 - Vous pouvez créer des alertes pour les mêmes activités que vous pouvez rechercher dans le journal d’audit. Consultez la section [Plus](#more-information) d’informations pour obtenir la liste des scénarios courants (et l’activité spécifique à surveiller) pour qui vous pouvez créer des alertes.
 
-- Vous pouvez utiliser la page **Alertes** d’activité dans le Centre de sécurité & conformité pour créer des alertes uniquement pour les activités effectuées par les utilisateurs répertoriés dans le carnet d’adresses de votre organisation. Vous ne pouvez pas utiliser cette page pour créer des alertes pour l’activité effectuée par des utilisateurs externes qui ne sont pas répertoriés dans le carnet d’adresses.
+- Vous pouvez utiliser la page **Alertes** d’activité dans le Centre de sécurité & conformité pour créer des alertes uniquement pour les activités effectuées par les utilisateurs répertoriés dans le carnet d’adresses de votre organisation. Vous ne pouvez pas utiliser cette page pour créer des alertes pour les activités effectuées par des utilisateurs externes qui ne sont pas répertoriés dans le carnet d’adresses.
 
 ## <a name="create-an-activity-alert"></a>Créer une alerte d’activité
 
@@ -59,19 +59,19 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
 
 4. Complétez les champs suivants pour créer une alerte d’activité :
 
-    a. **Nom** : tapez un nom pour l’alerte. Les noms des alertes doivent être uniques au sein de votre organisation.
+    1. **Nom** : tapez un nom pour l’alerte. Les noms des alertes doivent être uniques au sein de votre organisation.
 
-    b. **Description** (facultatif) : décrivez l’alerte, telle que les activités et les utilisateurs suivis, ainsi que les utilisateurs vers qui les notifications par courrier électronique sont envoyées. Les descriptions permettent de décrire rapidement et facilement l’objectif de l’alerte aux autres administrateurs.
+    1. **Description** (facultatif) : décrire l’alerte, telle que les activités et les utilisateurs suivis et les utilisateurs vers qui les notifications par courrier électronique sont envoyées. Les descriptions permettent de décrire rapidement et facilement l’objectif de l’alerte aux autres administrateurs.
 
-    c. **Type d’alerte** : **assurez-vous que l’option** Personnalisée est sélectionnée.
+    1. **Type d’alerte** : **assurez-vous que l’option** Personnalisée est sélectionnée.
 
-    d. **Envoyez cette alerte lorsque** - Cliquez sur **Envoyer cette** alerte quand puis configurez ces deux champs :
+    1. **Envoyez cette alerte lorsque** - Cliquez sur **Envoyer cette** alerte quand puis configurez ces deux champs :
 
-    - **Activités :** cliquez sur la liste liste de listes pour afficher les activités pour qui vous pouvez créer une alerte. Il s’agit de la même liste d’activités que celle qui s’affiche lorsque vous recherchez le journal d’audit. Vous pouvez sélectionner une ou plusieurs activités spécifiques ou cliquer sur le nom du groupe d’activités pour sélectionner toutes les activités du groupe. Pour obtenir une description de ces activités, consultez la section « Activités auditées » dans le journal [d’audit.](search-the-audit-log-in-security-and-compliance.md#audited-activities) Lorsqu’un utilisateur effectue l’une des activités que vous avez ajoutées à l’alerte, une notification par courrier électronique est envoyée.
+       - **Activités :** cliquez sur la liste liste de listes pour afficher les activités pour qui vous pouvez créer une alerte. Il s’agit de la même liste d’activités que celle qui s’affiche lorsque vous recherchez le journal d’audit. Vous pouvez sélectionner une ou plusieurs activités spécifiques ou cliquer sur le nom du groupe d’activités pour sélectionner toutes les activités du groupe. Pour obtenir une description de ces activités, consultez la section « Activités auditées » dans le journal [d’audit.](search-the-audit-log-in-security-and-compliance.md#audited-activities) Lorsqu’un utilisateur effectue l’une des activités que vous avez ajoutées à l’alerte, une notification par courrier électronique est envoyée.
 
-     - **Utilisateurs** - Cliquez sur cette zone, puis sélectionnez un ou plusieurs utilisateurs. Si les utilisateurs de cette zone effectuent les activités que vous avez ajoutées à la zone **Activités,** une alerte est envoyée. Laissez la **zone Utilisateurs** vide pour envoyer une alerte lorsqu’un utilisateur de votre organisation effectue les activités spécifiées par l’alerte.
+       - **Utilisateurs** - Cliquez sur cette zone, puis sélectionnez un ou plusieurs utilisateurs. Si les utilisateurs de cette zone effectuent les activités que vous avez ajoutées à la zone **Activités,** une alerte est envoyée. Laissez la **zone Utilisateurs** vide pour envoyer une alerte lorsqu’un utilisateur de votre organisation effectue les activités spécifiées par l’alerte.
 
-    e. Envoyez cette alerte à - Cliquez sur Envoyer cette alerte, puis cliquez dans la zone **Destinataires** et tapez un  nom pour ajouter un utilisateur qui  recevra une notification par courrier électronique lorsqu’un utilisateur (spécifié dans la zone Utilisateurs) effectue une activité (spécifiée dans la zone Activités).   Notez que vous êtes ajouté à la liste des destinataires par défaut. Vous pouvez supprimer votre nom de cette liste.
+    1. Envoyez cette alerte à - Cliquez sur Envoyer cette **alerte,** puis cliquez dans la zone Destinataires et tapez  un nom pour ajouter les **utilisateurs** qui recevront une notification par courrier électronique lorsqu’un utilisateur (spécifié dans la zone Utilisateurs) effectue une activité (spécifiée dans la zone **Activités).**  Notez que vous êtes ajouté à la liste des destinataires par défaut. Vous pouvez supprimer votre nom de cette liste.
 
 5. Cliquez **sur Enregistrer** pour créer l’alerte.
 
@@ -79,7 +79,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
 
     ![Une liste d’alertes s’affiche sur la page Alertes d’activité](../media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
 
-    L’état de l’alerte est définie sur **On**. Notez que les destinataires qui reçoivent une notification par courrier électronique lorsqu’une alerte est envoyée sont également répertoriés.
+    L’état de l’alerte est définie sur **On**. Notez que les destinataires qui recevront une notification par courrier électronique lors de l’envoi d’une alerte sont également répertoriés.
 
 ## <a name="turn-off-an-activity-alert"></a>Désactiver une alerte d’activité
 
@@ -101,29 +101,29 @@ Pour ré-activer une alerte d’activité,  répétez simplement ces étapes et 
 
 - Voici un exemple de notification par courrier électronique envoyée aux utilisateurs spécifiés dans le champ Envoyé à cette alerte (et répertorié sous **Destinataires** sur la page **Alertes** d’activité) dans le Centre de sécurité & conformité.
 
-    ![Exemple de notifcation de courrier électronique envoyée pour une alerte d’activité](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
+    ![Exemple de notification par courrier électronique envoyée pour une alerte d’activité](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 
-- Voici quelques activités courantes de document et de messagerie pour qui vous pouvez créer des alertes d’activité. Les tableaux décrivent l’activité, le nom de l’activité pour qui créer une alerte et  le nom du groupe d’activités sous qui l’activité est répertoriée dans la liste de listes listes des activités. Pour consulter la liste complète des activités pour qui vous pouvez créer des alertes d’activité, consultez la section « Activités auditées » dans le journal [d’audit.](search-the-audit-log-in-security-and-compliance.md#audited-activities)
+- Voici quelques activités courantes de document et de messagerie pour qui vous pouvez créer des alertes d’activité. Les tableaux décrivent l’activité, le nom de l’activité pour qui créer une alerte  et le nom du groupe d’activités sous qui l’activité est répertoriée dans la liste de listes des activités. Pour consulter la liste complète des activités pour qui vous pouvez créer des alertes d’activité, consultez la section « Activités auditées » dans le journal [d’audit.](search-the-audit-log-in-security-and-compliance.md#audited-activities)
 
     > [!TIP]
     > Vous pouvez créer une alerte d’activité pour une seule activité effectuée par n’importe quel utilisateur. Vous pouvez également créer une alerte d’activité qui effectue le suivi de plusieurs activités effectuées par un ou plusieurs utilisateurs.
 
     Le tableau suivant répertorie certaines activités courantes liées aux documents SharePoint ou OneDrive Entreprise.
 
-    |**Lorsqu’un utilisateur fait cela...**|**Créer une alerte pour cette activité**|**Groupe d’activités**|
+    | Lorsqu’un utilisateur fait cela... | Créer une alerte pour cette activité | Groupe d’activités |
     |:-----|:-----|:-----|
-    |Affichage d’un document sur un site.  <br/> |Fichier consulté  <br/> |Activités de fichiers et de dossiers  <br/> |
-    |Modifie ou modifie un document.  <br/> |Fichier modifié  <br/> |Activités de fichiers et de dossiers  <br/> |
-    |Partage un document avec un utilisateur extérieur à votre organisation.  <br/> |Partager un fichier, un dossier ou un site  <br/> And  <br/> Invitation de partage créée  <br/> Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit](use-sharing-auditing.md).  <br/> |Activités de demande d’accès et de partage  <br/> |
-    |Télécharge ou télécharge un document.  <br/> |Fichier téléchargé  <br/> Et/ou  <br/> Fichier téléchargé  <br/> |Activités de fichiers et de dossiers  <br/> |
-    |Modifie les autorisations d’accès à un site.  <br/> |Autorisations de site modifiées  <br/> |Activités d’administration des sites  <br/> |
+    |Affichage d’un document sur un site.  |Fichier consulté  |Activités de fichiers et de dossiers  |
+    |Modifie ou modifie un document.  |Fichier modifié  |Activités de fichiers et de dossiers  |
+    |Partage un document avec un utilisateur extérieur à votre organisation.  |Partager un fichier, un dossier ou un site  <br/> And  <br/> Invitation de partage créée  <br/> Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit](use-sharing-auditing.md).  |Activités de demande d’accès et de partage  |
+    |Télécharge ou télécharge un document.  |Fichier téléchargé  <br/> Et/ou  <br/> Fichier téléchargé  |Activités de fichiers et de dossiers  |
+    |Modifie les autorisations d’accès à un site.  |Autorisations de site modifiées  |Activités d’administration des sites  |
 
     Le tableau suivant répertorie certaines activités courantes liées à la messagerie dans Exchange Online.
 
-    |**Lorsqu’un utilisateur fait cela...**|**Créer une alerte pour cette activité**|**Groupe d’activités**|
+    | Lorsqu’un utilisateur fait cela... | Créer une alerte pour cette activité | Groupe d’activités |
     |:-----|:-----|:-----|
-    |Supprime définitivement (purge) un message électronique de sa boîte aux lettres.  <br/> |Messages purgés de la boîte aux lettres  <br/> | Activités de la boîte aux lettres Exchange  <br/> |
-    |Envoie un message électronique à partir d’une boîte aux lettres partagée.  <br/> |Message envoyé à l’aide d’autorisations Envoyer en tant que  <br/> And  <br/> Message envoyé à l’aide d’autorisations Envoyer de la part de  <br/> | Activités de la boîte aux lettres Exchange  <br/> |
+    |Supprime définitivement (purge) un message électronique de sa boîte aux lettres.  |Messages purgés de la boîte aux lettres  | Activités de la boîte aux lettres Exchange  |
+    |Envoie un message électronique à partir d’une boîte aux lettres partagée.  |Message envoyé à l’aide d’autorisations Envoyer en tant que  <br/> And  <br/> Message envoyé à l’aide d’autorisations Envoyer de la part de  | Activités de la boîte aux lettres Exchange  |
 
 - Vous pouvez également utiliser les cmdlets **New-ActivityAlert** et **Set-ActivityAlert** dans le Centre de sécurité & conformité PowerShell pour créer et modifier des alertes d’activité. Gardez les points suivants à l’esprit si vous utilisez ces cmdlets pour créer ou modifier des alertes d’activité :
 

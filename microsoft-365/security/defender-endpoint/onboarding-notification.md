@@ -16,22 +16,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5dfdfc6d14add33154ed4c2370bca458e752125d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a143ddbbd12ea4d4df03087ea2d6d2bdfaaf396e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187231"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542920"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Créer une règle de notification lorsqu’un script d’intégration ou de mise hors-carte local est utilisé
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -40,21 +39,22 @@ ms.locfileid: "51187231"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Créez une règle de notification afin que, lorsqu’un script d’intégration ou de déclassage local soit utilisé, vous soyez averti. 
+Créez une règle de notification afin que, lorsqu’un script d’intégration ou de déclassage local soit utilisé, vous soyez averti.
 
 ## <a name="before-you-begin"></a>Avant de commencer
+
 Vous devez avoir accès à :
- - Microsoft Flow (Flow plan 1 au minimum). Pour plus d’informations, [voir Flow page de tarification.](https://flow.microsoft.com/pricing/)
- - Liste ou bibliothèque azure SharePoint ou bibliothèque/SQL DB
+
+- Microsoft Flow (Flow plan 1 au minimum). Pour plus d’informations, [voir Flow page de tarification.](https://flow.microsoft.com/pricing/)
+- Tableau ou SharePoint Liste ou bibliothèque /SQL DB Azure.
 
 ## <a name="create-the-notification-flow"></a>Créer le flux de notification
 
 1. Dans [flow.microsoft.com](https://flow.microsoft.com/).
 
-2. Accédez **à Mes flux > Nouveau > programmé - à partir d’un espace vide.** 
+2. Accédez **à Mes flux > Nouveau > programmé - à partir d’un espace vide.**
 
     ![Image du flux](images/new-flow.png)
-
 
 3. Créez un flux programmé.
    1. Entrez un nom de flux.
@@ -63,24 +63,22 @@ Vous devez avoir accès à :
 
     ![Image du flux de notification](images/build-flow.png)
 
-4. Sélectionnez le bouton + pour ajouter une nouvelle action. La nouvelle action sera une demande HTTP à l’API du centre de sécurité Defender for Endpoint. Vous pouvez également le remplacer par le « connecteur WDATP » prédéfait (action : « Ordinateurs - Obtenir la liste des ordinateurs »). 
+4. Sélectionnez le bouton + pour ajouter une nouvelle action. La nouvelle action sera une demande HTTP à l’API du centre de sécurité Defender for Endpoint. Vous pouvez également le remplacer par le « connecteur WDATP » prédéfait (action : « Ordinateurs - Obtenir la liste des ordinateurs »).
 
     ![Image de la récurrence et ajout d’une action](images/recurrence-add.png)
-
 
 5. Entrez les champs HTTP suivants :
 
    - Méthode : « GET » comme valeur pour obtenir la liste des appareils.
    - URI : Entrez `https://api.securitycenter.microsoft.com/api/machines` .
    - Authentification : sélectionnez « Active Directory OAuth ».
-   - Client : connectez-vous et accédez à Azure Active Directory > inscriptions d’application et obtenez la valeur https://portal.azure.com de l’ID de client. 
+   - Client : connectez-vous et accédez à Azure Active Directory >'inscription de l’application et obtenez la valeur https://portal.azure.com de l’ID de client. 
    - Public : `https://securitycenter.onmicrosoft.com/windowsatpservice\`
    - ID client : connectez-vous et accédez à Azure Active Directory >'inscription de l’application et obtenez la valeur https://portal.azure.com de l’ID client. 
    - Type d’informations d’identification : sélectionnez « Secret ».
-   - Secret : connectez-vous et accédez à https://portal.azure.com **Azure Active Directory > inscriptions d’application** et obtenez la valeur de l’ID de client.
+   - Secret : connectez-vous et accédez à Azure Active Directory > inscriptions d’application et obtenez la valeur https://portal.azure.com de l’ID de client. 
 
     ![Image des conditions HTTP](images/http-conditions.png)
-
 
 6. Ajoutez une nouvelle étape en sélectionnant Ajouter une **nouvelle action,** puis recherchez opérations de **données** et sélectionnez Analyse **JSON**.
 
@@ -96,7 +94,7 @@ Vous devez avoir accès à :
 
 9. Copiez et collez l’extrait de code JSON suivant :
 
-    ```
+    ```json
     {
         "type": "object",
         "properties": {
@@ -176,40 +174,41 @@ Vous devez avoir accès à :
 
     ```
 
-10.  Extrayez les valeurs de l’appel JSON et vérifiez si le ou les appareils intégrés sont / sont déjà inscrits dans la liste SharePoint par exemple :
-- Si oui, aucune notification ne sera déclenchée
-- Si non, enregistre le ou les nouveaux appareils intégrés dans la liste SharePoint et une notification est envoyée à l’administrateur de Defender for Endpoint
+10. Extrayez les valeurs de l’appel JSON et vérifiez si le ou les appareils intégrés sont / sont déjà inscrits dans la liste SharePoint par exemple :
 
-    ![Image d’application à chaque](images/flow-apply.png)
+    - Si oui, aucune notification ne sera déclenchée
+    - Si non, enregistre le ou les nouveaux appareils intégrés dans la liste SharePoint et une notification est envoyée à l’administrateur de Defender for Endpoint
+
+    ![Image de l’application à chaque](images/flow-apply.png)
 
     ![Image de s’appliquer à chacun avec obtenir des éléments](images/apply-to-each.png)
 
 11. Under **Condition**, add the following expression: « length(body('Get_items')?[' value']) » et définissez la condition sur 0.
 
-    ![Image d’application à chaque condition](images/apply-to-each-value.png)  
-    ![Image de condition1 ](images/conditions-2.png) 
-     ![ Image de condition2](images/condition3.png)  
-    ![Image de l’envoi d’un message électronique](images/send-email.png)
+    ![Image d’application à chaque condition ](images/apply-to-each-value.png)
+     ![ Image de condition1 ](images/conditions-2.png)
+     ![ Image de condition2 ](images/condition3.png)
+     ![ Image d’envoi de courrier électronique](images/send-email.png)
 
 ## <a name="alert-notification"></a>Notification d’alerte
+
 L’image suivante est un exemple de notification par courrier électronique.
 
 ![Image de la notification par courrier électronique](images/alert-notification.png)
 
-
 ## <a name="tips"></a>Conseils
 
 - Vous pouvez filtrer ici à l’aide de lastSeen uniquement :
-    - Toutes les 60 min :
-      - Prenez tous les appareils vus pour la dernière fois au cours des 7 derniers jours. 
+  - Toutes les 60 min :
+    - Prenez tous les appareils vus pour la dernière fois au cours des 7 derniers jours.
 
-- Pour chaque appareil : 
-    - Si la dernière propriété vue se trouve sur l’intervalle d’une heure de [-7 jours, -7days + 60 minutes] -> alerte pour la possibilité d’interruption de l’utilisation.
-    - Si le premier aperçu a lieu au cours de l’heure >'alerte d’intégration.
+- Pour chaque appareil :
+  - Si la dernière propriété vue se trouve sur l’intervalle d’une heure de [-7 jours, -7days + 60 minutes] -> alerte pour la possibilité d’interruption de l’utilisation.
+  - Si le premier aperçu a lieu au cours de l’heure >'alerte d’intégration.
 
 Dans cette solution, vous n’aurez pas d’alertes en double : il existe des locataires qui ont de nombreux appareils. L’obtention de tous ces appareils peut être très coûteuse et nécessiter une pagination.
 
-Vous pouvez le fractionner en deux requêtes : 
-1.  Pour laboarding, prenez uniquement cet intervalle à l’aide de la $filter OData et notifiez uniquement si les conditions sont remplies.
-2.  Prenez tous les appareils vus pour la dernière fois au cours de l’heure passée et vérifiez leur première propriété vue (si la première propriété vue se trouve au cours de l’heure passée, la dernière vue doit également être là). 
+Vous pouvez le fractionner en deux requêtes :
 
+1. Pour laboarding, prenez uniquement cet intervalle à l’aide de la $filter OData et notifiez uniquement si les conditions sont remplies.
+2. Prenez tous les appareils vus pour la dernière fois au cours de l’heure passée et vérifiez leur première propriété vue (si la première propriété vue se trouve au cours de l’heure passée, la dernière vue doit également être là).

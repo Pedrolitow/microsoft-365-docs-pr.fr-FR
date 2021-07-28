@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/13/2021
+ms.date: 07/20/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 1915a57becb1cba14605f4512ff123c1bca846bb
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: b5c2694437333f197f3c9b04fd1f10fb581cd4d2
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415598"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596109"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse des points de terminaison (PEPT) en mode blocage
 
@@ -35,11 +35,11 @@ ms.locfileid: "53415598"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>Qu’est-ce PEPT en mode bloc ?
 
-[La](overview-endpoint-detection-response.md) détection et la réponse des points de terminaison (PEPT) en mode bloc offrent une protection supplémentaire contre les artefacts malveillants lorsque Antivirus Microsoft Defender n’est pas le produit antivirus principal et s’exécute en mode passif. PEPT en mode blocage permet de corriger les artefacts malveillants détectés à l’aide de PEPT. Ces artefacts ont peut-être été manqués par le produit antivirus principal non Microsoft. PEPT en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés, après une violation, sur un appareil. 
+[La](overview-endpoint-detection-response.md) détection et la réponse des points de terminaison (PEPT) en mode bloc offrent une protection supplémentaire contre les artefacts malveillants lorsque Antivirus Microsoft Defender n’est pas le produit antivirus principal et s’exécute en mode passif. PEPT en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés par PEPT fonctionnalités. Ces artefacts ont peut-être été manqués par le produit antivirus principal non Microsoft. 
 
 > [!IMPORTANT]
 > PEPT en mode bloc ne fournit pas toute la protection disponible lorsque Antivirus Microsoft Defender protection en temps réel est activée. Toutes les fonctionnalités qui dépendent Antivirus Microsoft Defender être la solution antivirus active ne fonctionneront pas, y compris les exemples clés suivants : 
@@ -74,7 +74,8 @@ L’image suivante montre une instance des logiciels indésirables détectés et
 
 2. Choose **Paramètres**  >  **Endpoints**  >  **General**  >  **Advanced features**.
 
-3. Faites défiler vers le bas, puis urn sur **Activer PEPT en mode bloc.**
+3. Faites défiler vers le bas, puis activez **Activer PEPT en mode bloc.**
+
 
 > [!NOTE]
 > PEPT en mode bloc ne peut être allumé que dans le portail Microsoft 365 Defender ( ) ou [https://security.microsoft.com](https://security.microsoft.com) l’ancien Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). Vous ne pouvez pas utiliser les clés de Registre, les Microsoft Intune ou la stratégie de groupe pour activer ou désactiver les PEPT en mode blocage.

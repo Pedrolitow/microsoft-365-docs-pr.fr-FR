@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: d7c319e37fb804ee4dac3b6bff402942bbc2fa79
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 2a89a47adee900118e281d40799a65278af31d04
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339657"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596193"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Intégrer les appareils Windows 10 à l’aide de Configuration Manager
 
@@ -35,7 +35,7 @@ ms.locfileid: "53339657"
 - Microsoft Endpoint Configuration Manager branche actuelle
 - Gestionnaire de configuration de System Center 2012 R2
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## <a name="supported-client-operating-systems"></a>Systèmes d’exploitation clients pris en charge
 
@@ -70,7 +70,6 @@ En fonction de la version de Configuration Manager que vous exécutez, les syst�
 Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [ou Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Microsoft Defender pour Endpoint. 
 
 
-
 1. Ouvrez le fichier de package de configuration Configuration Manager .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
 
     1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **Endpoints**  >  **Device Management**  >  **Onboarding**.
@@ -88,14 +87,14 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
     a. Choisissez une collection d’appareils prédéfiny pour déployer le package.
 
 > [!NOTE]
-> Defender pour le point de terminaison ne prend pas en charge l’intégration pendant la phase [OOBE (Out-Of-Box Experience).](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Assurez-vous que les utilisateurs ont terminé la OOBE après Windows’installation ou de mise à niveau.
+> Defender pour le point de terminaison ne prend pas en charge l’intégration pendant la phase [OOBE (Out-Of-Box Experience).](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Assurez-vous que les utilisateurs ont terminé la OOBE après Windows’installation ou de mise à niveau.
 
->[!TIP]
+> [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Defender for Endpoint nouvellement intégré.](run-detection-test.md)
 >
 > Notez qu’il est possible de créer une règle de détection sur une application Configuration Manager pour vérifier en permanence si un appareil a été intégré. Une application est un type d’objet différent d’un package et d’un programme.
 > Si un appareil n’est pas encore intégré (en raison de l’exécution de la OOBE en attente ou d’une autre raison), Configuration Manager réessaye d’intégrer l’appareil jusqu’à ce que la règle détecte le changement d’état.
-> 
+>
 > Ce comportement peut être réalisé en créant une règle de détection vérifiant si la valeur de Registre « OnboardingState » (de type REG_DWORD) = 1.
 > Cette valeur de Registre se trouve sous « HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status ».
 Pour plus d’informations, [voir Configure Detection Methods in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
@@ -104,24 +103,23 @@ Pour plus d’informations, [voir Configure Detection Methods in System Center 2
 
 Pour chaque appareil, vous pouvez définir une valeur de configuration pour déterminer si des échantillons peuvent être collectés à partir de l’appareil lorsqu’une demande est faite via Microsoft 365 Defender pour soumettre un fichier pour analyse approfondie.
 
->[!NOTE]
->Ces paramètres de configuration sont généralement effectués via Configuration Manager.
+> [!NOTE]
+> Ces paramètres de configuration sont généralement effectués via Configuration Manager.
 
 Vous pouvez définir une règle de conformité pour l’élément de configuration dans Configuration Manager afin de modifier le paramètre de partage d’exemples sur un appareil.
 
-Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d’une clé de Registre sur les appareils ciblés afin de s’assurer qu’ils sont conformes.
+Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d’une clé de Registre sur les appareils ciblés pour s’assurer qu’ils sont conformes.
 
 La configuration est définie par le biais de l’entrée de clé de Registre suivante :
 
-```console
+```text
 Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-Où :<br>
-Le type de clé est un D-WORD. <br>
-Les valeurs possibles sont les suivantes :
+Où Type de clé est un D-WORD. Les valeurs possibles sont les suivantes :
+
 - 0 : n’autorise pas le partage d’exemples à partir de cet appareil
 - 1 : autorise le partage de tous les types de fichiers à partir de cet appareil
 
@@ -129,42 +127,47 @@ La valeur par défaut au cas où la clé de Registre n’existe pas est 1.
 
 Pour plus d’informations sur System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-
 ## <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
+
 Une fois les appareils intégrés au service, il est important de tirer parti des fonctionnalités de protection contre les menaces incluses en les activant avec les paramètres de configuration recommandés suivants.
 
 ### <a name="device-collection-configuration"></a>Configuration de la collection d’appareils
+
 Si vous utilisez Endpoint Configuration Manager, version 2002 ou ultérieure, vous pouvez choisir d’élargir le déploiement pour inclure des serveurs ou des clients de bas niveau.
 
-
 ### <a name="next-generation-protection-configuration"></a>Configuration de la protection nouvelle génération
+
 Les paramètres de configuration suivants sont recommandés :
 
-**Analyser** <br>
+#### <a name="scan"></a>Analyser
+
 - Analyser les périphériques de stockage amovibles tels que les lecteurs USB : Oui
 
-**Protection en temps réel** <br>
+#### <a name="real-time-protection"></a>Protection en temps réel
+
 - Activer la surveillance comportementale : Oui
 - Activer la protection contre les applications potentiellement indésirables au téléchargement et avant l’installation : Oui
 
-**Cloud Protection Service**
+#### <a name="cloud-protection-service"></a>Cloud Protection Service
+
 - Type d’appartenance au service Cloud Protection : appartenance avancée
 
-**Réduction de la surface d’attaque** Configurez toutes les règles disponibles pour auditer.
+#### <a name="attack-surface-reduction"></a>Réduction de la surface d’attaque
 
->[!NOTE]
+Configurez toutes les règles disponibles pour auditer.
+
+> [!NOTE]
 > Le blocage de ces activités peut interrompre les processus d’entreprise légitimes. La meilleure approche consiste à définir tous les paramètres à auditer, à identifier ceux qui sont sûrs à activer, puis à activer ces paramètres sur les points de terminaison qui n’ont pas de détections de faux positifs.
 
+#### <a name="network-protection"></a>Protection réseau
 
-**Protection du réseau** <br>
-Avant d’activer la protection réseau en mode audit ou blocage, assurez-vous que vous avez installé la mise à jour de la plateforme anti-programme malveillant, qui peut être obtenue à partir de la [page de support.](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)
+Avant d’activer la protection réseau en mode audit ou blocage, assurez-vous que vous avez installé la mise à jour de la plateforme anti-programme malveillant, qui peut être obtenue à partir de la [page de support.](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)
 
+#### <a name="controlled-folder-access"></a>Accès contrôlé aux dossiers
 
-**Accès contrôlé aux dossiers**<br>
 Activez la fonctionnalité en mode audit pendant au moins 30 jours. Après cette période, examinez les détections et créez une liste d’applications autorisées à écrire dans des répertoires protégés.
 
 Pour plus d’informations, voir [Évaluer l’accès contrôlé aux dossiers.](evaluate-controlled-folder-access.md)
-
 
 ## <a name="offboard-devices-using-configuration-manager"></a>Hors-carte des appareils à l’aide de Configuration Manager
 
@@ -179,31 +182,27 @@ Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fic
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage System Center 2012 R2 Configuration Manager
 
+
 1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
-
     1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils  >  **endpoints.**  >    >   
-
     1. Sélectionnez Windows 10 comme système d’exploitation.
-
     1. Dans le champ Méthode **de** déploiement, **sélectionnez System Center Configuration Manager 2012/2012 R2/1511/1602**.
-    
     1. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
 
 2. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Déployez le package en suivant les étapes de l’article Packages et programmes [System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
 
-    a. Choisissez une collection d’appareils prédéfiny pour déployer le package.
+   Choisissez une collection d’appareils prédéfiny pour déployer le package.
 
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
-
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
 Si vous utilisez la Microsoft Endpoint Manager actuelle, utilisez le tableau de bord Defender for Endpoint intégré dans la console Configuration Manager. Pour plus d’informations, [voir Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-Si vous utilisez System Center Configuration Manager 2012 R2, la surveillance se compose de deux parties :
+Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
 
 1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou s’est exécuté correctement) sur les appareils de votre réseau.
 
@@ -240,6 +239,7 @@ Value: "1"
 Pour plus d’informations, voir Introduction aux paramètres de conformité [dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="related-topics"></a>Voir aussi
+
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows 10 utilisant un script local](configure-endpoints-script.md)

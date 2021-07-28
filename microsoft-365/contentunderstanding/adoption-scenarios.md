@@ -1,5 +1,5 @@
 ---
-title: Scénarios et cas d’utilisation pour Microsoft SharePoint Syntex
+title: Scénarios et cas d’usage pour Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,17 +14,17 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-description: Recherchez des scénarios sur l’utilisation SharePoint Syntex dans votre organisation.
-ms.openlocfilehash: b28239a304c8fab209436c12e6cdbffe160b7981
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+description: Trouvez des scénarios sur l’utilisation des SharePoint Syntex dans votre organisation.
+ms.openlocfilehash: 4714af4c4182c3c57625a82dff0cfdc1d5260785
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52697060"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543208"
 ---
-# <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Scénarios et cas d’utilisation pour Microsoft SharePoint Syntex
+# <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Scénarios et cas d’usage pour Microsoft SharePoint Syntex
 
-Utilisez les exemples de scénarios suivants pour vous faire des idées sur la façon d’utiliser SharePoint Syntex dans votre organisation.
+Utilisez les exemples de scénarios suivants pour vous faire des idées sur la façon dont vous pouvez SharePoint Syntex dans votre organisation.
 
 - [Scénario : suivre les données des factures avec le traitement du formulaire](adoption-scenarios.md#scenario-track-data-from-invoices-with-form-processing)
 - [Scénario : suivre les informations des contrats avec la compréhension des documents](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
@@ -36,7 +36,7 @@ Utilisez les exemples de scénarios suivants pour vous faire des idées sur la f
 
 ## <a name="scenario-track-data-from-invoices-with-form-processing"></a>Scénario : suivre les données des factures avec le traitement du formulaire
 
-Par exemple, vous pouvez configurer un processus à l’aide SharePoint fonctionnalités Syntex et Power Automate pour suivre et surveiller les factures.
+Par exemple, vous pouvez configurer un processus à l’aide SharePoint Syntex et Power Automate pour suivre et surveiller les factures.
 
 1. Configurer une bibliothèque pour stocker les documents de facture.
 1. Formez le modèle pour reconnaître les champs dans les documents.
@@ -44,14 +44,14 @@ Par exemple, vous pouvez configurer un processus à l’aide SharePoint fonction
 1. Configurer un flux pour vous notifier d’événements spécifiques, tels que :
     - Une nouvelle facture est ajoutée.
     - La date d’échéance d’une facture est passée.
-    - Une facture représente un montant supérieur à votre montant d’approbation automatique.
+    - Une facture est pour un montant supérieur à votre montant d’approbation automatique.
 
 ![Suivre et surveiller les factures à l’SharePoint Syntex et Power Automate](../media/content-understanding/process-invoices-flow.png)
 
 Lorsque vous automatisez ce scénario, vous pouvez :
 
 - Gagnez du temps et de l’argent en extrayant automatiquement les données des factures au lieu de les faire manuellement.
-- Réduisez les erreurs potentielles et assurez-vous d’une meilleure conformité à l’aide de flux de travail pour vérifier les factures et vous informer de tout problème.
+- Réduisez les erreurs potentielles et assurez-vous d’une meilleure conformité à l’aide de flux de travail pour vérifier les factures et vous informer des problèmes éventuels.
 
 ## <a name="scenario-track-information-from-contracts-with-document-understanding"></a>Scénario : suivre les informations des contrats avec la compréhension des documents
 
@@ -63,7 +63,7 @@ Par exemple, vous pouvez configurer un processus pour identifier les contrats qu
 1. Une fois le modèle terminé, appliquez-le à une bibliothèque dans laquelle vous pouvez télécharger des contrats.
 1. Appliquez une étiquette de rétention au champ date, afin que les contrats soient conservés dans la bibliothèque pendant la durée requise.
 
-![Suivre et surveiller les contrats avec SharePoint syntex et les étiquettes de rétention](../media/content-understanding/process-contracts-flow.png)
+![Suivre et surveiller les contrats avec les étiquettes SharePoint Syntex rétention](../media/content-understanding/process-contracts-flow.png)
 
 Lorsque vous automatisez ce scénario, vous pouvez :
 
@@ -79,7 +79,7 @@ La réduction des risques est un objectif commun pour la plupart des entreprises
 - Pour auditer les reçus, les contrats, etc., afin de garantir la conformité avec les stratégies de l’entreprise.
 - Pour vous assurer que les projets ont toute la documentation requise pour la conformité.
 
-Configurer certains processus de conformité avec SharePoint Syntex pour capturer et classer, auditer et indicateurr correctement les documents et formulaires qui ont besoin d’une meilleure gouvernance. Vous pouvez vous appuyer sur SharePoint Syntex pour classer automatiquement le contenu au lieu de compter sur les utilisateurs finaux pour baliser manuellement, ou sur l’équipe de conformité pour appliquer manuellement les règles de gouvernance et l’archivage. Vous pouvez également activer une expérience de recherche simplifiée, gérer les volumes de données, appliquer des stratégies de gestion et de rétention des enregistrements, garantir la conformité, ainsi que les pratiques d’archivage et de purge des meilleures pratiques.
+Configurer certains processus de conformité avec les SharePoint Syntex pour capturer et classer, auditer et indicateurr correctement les documents et formulaires qui ont besoin d’une meilleure gouvernance. Vous pouvez vous appuyer sur SharePoint Syntex pour classer automatiquement le contenu au lieu de compter sur les utilisateurs finaux pour baliser manuellement, ou sur l’équipe de conformité pour appliquer manuellement les règles de gouvernance et l’archivage. Vous pouvez également activer une expérience de recherche simplifiée, gérer les volumes de données, appliquer des stratégies de gestion et de rétention des enregistrements, garantir la conformité, ainsi que les pratiques d’archivage et de purge des meilleures pratiques.
 
 Lorsque vous automatisez ce scénario, vous pouvez être sûr que :
 
@@ -99,14 +99,14 @@ Lorsque vous automatisez ce scénario, vous pouvez :
 - Déverrouillez les connaissances du contenu numérique.
 - Classifier les stratégies RH, cv, documents commerciaux, plans techniques, plans de compte et extraire des informations.
 - Recherchez rapidement les informations ou le document que vous recherchez.
-- Accédez instantanément aux dernières informations.
+- Obtenez un accès instantané aux dernières informations.
 - Réduisez les temps de recherche.
 
 ## <a name="scenario-improve-data-processing-to-provide-insights-and-analytics"></a>Scénario : améliorer le traitement des données pour fournir des informations et des analyses
 
-Par exemple, une société de production peut utiliser SharePoint Syntex pour extraire des informations de documents FDA afin de répondre aux questions de leurs responsables. Le fait d’avoir les réponses plus facilement accessibles peut réduire le temps nécessaire pour produire ces réponses et augmenter la disponibilité des données afin de générer des réponses plus précises aux questions de direction.
+Par exemple, une société de petite entreprise peut utiliser SharePoint Syntex pour extraire des informations à partir de documents FDA afin de répondre aux questions de leurs responsables. Le fait d’avoir les réponses plus facilement accessibles peut réduire le temps nécessaire pour produire ces réponses et augmenter la disponibilité des données afin de générer des réponses plus précises aux questions de direction.
 
-Par exemple, un responsable de projet doit fournir rapidement des réponses aux questions relatives aux produits de mon équipe de direction. Ils doivent trouver des informations et des mesures relatives aux requêtes dans un tableau de bord consolidé. Ils recherchent une solution qui extrait les informations dont ils ont besoin à partir d’étiquettes de produits, de publications de produits et d’autres documents, et génère un rapport consolidé qu’ils peuvent utiliser lorsqu’ils font des rapports à leur équipe de direction.
+Par exemple, un responsable de projet doit fournir rapidement des réponses aux questions relatives aux produits de mon équipe de direction. Ils doivent trouver des informations et des mesures relatives aux requêtes dans un tableau de bord consolidé. Ils recherchent une solution qui extrait les informations dont ils ont besoin à partir d’étiquettes de produits, de publications de produits et d’autres documents, et génère un rapport consolidé qu’ils peuvent utiliser lorsqu’ils reviennent à leur équipe de direction.
 
 Lorsque vous automatisez ce scénario, vous pouvez :
 
@@ -129,7 +129,7 @@ Lorsque vous automatisez ce scénario, vous pouvez vous assurer que :
 
 ## <a name="scenario-simplify-visa-renewal-process"></a>Scénario : simplifier le processus de renouvellement du visa
 
-SharePoint Syntex peut vous aider à automatiser les rappels et les renouvellements pour les informations de contrat clé. Par exemple, un directeur RH doit s’assurer que les visas des employés sont à jour et/ou renouvelés à temps. Ils souhaitent offrir aux utilisateurs un processus simple et intuitif pour la mise à jour de leur visa. Ils ont besoin d’une solution qui extrait les dates de renouvellement des contrats et envoie automatiquement des rappels aux employés lorsque leurs dates de renouvellement approchent.
+SharePoint Syntex pouvez vous aider à automatiser les rappels et les renouvellements pour les informations clés du contrat. Par exemple, un directeur RH doit s’assurer que les visas des employés sont à jour et/ou renouvelés à temps. Ils souhaitent offrir aux utilisateurs un processus simple et intuitif pour la mise à jour de leur visa. Ils ont besoin d’une solution qui extrait les dates de renouvellement des contrats et envoie automatiquement des rappels aux employés lorsque leurs dates de renouvellement approchent.
 
 Lorsque vous automatisez ce scénario, vous pouvez vous assurer que :
 
@@ -139,4 +139,4 @@ Lorsque vous automatisez ce scénario, vous pouvez vous assurer que :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Adoption de Microsoft SharePoint Syntex : commencer](adoption-getstarted.md)
+[Adoption SharePoint Syntex Microsoft : commencer](adoption-getstarted.md)

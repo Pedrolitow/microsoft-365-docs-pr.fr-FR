@@ -20,12 +20,12 @@ description: Les administrateurs peuvent apprendre à activer Coffre pièces joi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b64b3cfb29b3be999c9e26804e35dc4d02e48fbb
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 80c35b91de046642a7b4ff4c66d1a42f76976c5b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083091"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543244"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
@@ -47,13 +47,13 @@ Cet article contient les étapes permettant d’activer et de configurer Coffre 
 
 - Pour utiliser SharePoint Online PowerShell afin d’empêcher les personnes de télécharger [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) des fichiers malveillants, vous devez être membre des rôles Administrateur général ou Administrateur [SharePoint](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) dans Azure AD.
 
-- Vérifiez que la journalisation d’audit est activée pour votre organisation. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
+- Vérifiez que la journalisation d’audit est activée pour votre organisation. Pour plus d’informations, voir [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 
 - Laissez jusqu’à 30 minutes pour que les paramètres prennent effet.
 
 ## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Étape 1 : utiliser le portail Microsoft 365 Defender pour activer Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies & rules** Threat \> **policies** \> **section** \> **Coffre Attachments**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies & rules** Threat \> **policies** section \>  Coffre \> **Attachments**.
 
 2. Dans la page **Coffre pièces jointes,** cliquez **sur Paramètres globaux.**
 
@@ -94,7 +94,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [v
 
 ## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>Étape 3 (recommandé) Utiliser le portail Microsoft 365 Defender pour créer une stratégie d’alerte pour les fichiers détectés
 
-Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi que d’autres administrateurs, lorsque Coffre Pièces jointes pour SharePoint, OneDrive et Microsoft Teams détecte un fichier malveillant. Pour en savoir plus sur les alertes, voir Créer des [alertes d’activité](../../compliance/create-activity-alerts.md)dans Microsoft 365 Defender portail.
+Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d’autres administrateurs, lorsque Coffre Attachments for SharePoint, OneDrive et Microsoft Teams détecte un fichier malveillant. Pour en savoir plus sur les alertes, consultez stratégies [d’alerte.](../../compliance/alert-policies.md)
 
 1. Dans le portail Microsoft 365 Defender, allez à **Stratégies &** \> **Stratégies** d’alerte ou ouvrez <https://security.microsoft.com/alertpolicies> .
 
@@ -104,25 +104,25 @@ Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi que d’aut
    - **Nom**: tapez un nom unique et descriptif. Par exemple, fichiers malveillants dans les bibliothèques.
    - **Description**: tapez une description facultative. Par exemple, avertit les administrateurs lorsque des fichiers malveillants sont détectés dans SharePoint Online, OneDrive ou Microsoft Teams.
    - **Gravité :** sélectionnez **Faible,** **Moyen** ou **Élevé** dans la liste de listes.
-   - **Catégorie :** sélectionnez **La gestion des menaces** dans la liste liste.
+   - **Catégorie :** sélectionnez **Gestion des menaces** dans la liste de listes.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 4. Dans la page **Créer des paramètres d’alerte,** configurez les paramètres suivants :
    - **Sur quoi voulez-vous alerter ?** \> **l’activité de section** consiste à sélectionner les programmes \> **malveillants détectés dans le fichier** dans la liste de listes.
-   - **Comment voulez-vous que l’alerte soit déclenchée ?** section : laissez la valeur par défaut **Chaque fois qu’une activité correspond à la règle** sélectionnée.
+   - **Comment voulez-vous que l’alerte soit déclenchée ?** section : laissez la valeur par défaut **chaque fois qu’une activité correspond à la règle** sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 5. Dans la page **Définir vos destinataires,** configurez les paramètres suivants :
-   - Vérifiez **que les notifications d’envoi** par courrier électronique sont sélectionnées. Dans la zone **Destinataires du courrier** électronique, sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
+   - Vérifiez **que les notifications d’envoi** par courrier électronique sont sélectionnées. Dans la zone **Destinataires de** l’e-mail, sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
    - **Limite de notification quotidienne**: laissez la valeur par défaut **Aucune** limite sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 6. Dans la page **Examiner vos paramètres,** examinez vos paramètres. Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section. Vous pouvez également cliquer sur **Précédent** ou sélectionner la page spécifique dans l’Assistant.
 
-   Dans la section **Voulez-vous activer** la stratégie immédiatement ? Laissez la valeur par défaut Oui, l’activer **immédiatement** sélectionnée.
+   Dans la section **Voulez-vous activer** la stratégie immédiatement ? Laissez la valeur par défaut **Oui,** l’activer immédiatement.
 
    Lorsque vous avez terminé, cliquez sur **Terminer**.
 
@@ -136,7 +136,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 **Remarque**: la valeur _gravité par défaut_ est Faible. Pour spécifier Medium ou High, incluez le paramètre _Severity_ et la valeur dans la commande.
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ActivityAlert](/powershell/module/exchange/new-activityalert).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir New-ActivityAlert.](/powershell/module/exchange/new-activityalert)
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
@@ -161,7 +161,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
   Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 - Pour vérifier que vous avez correctement configuré une stratégie d’alerte pour les fichiers détectés, utilisez l’une des étapes suivantes :
-  - Dans le portail Microsoft 365 Defender, sélectionnez Stratégies **&** Stratégie d’alerte Sélectionnez la stratégie d’alerte et vérifiez \>  \> les paramètres.
+  - Dans le portail Microsoft 365 Defender, sélectionnez **Stratégies &** Stratégie d’alerte Sélectionnez la stratégie d’alerte et vérifiez \>  \> les paramètres.
   - Dans Microsoft 365 Defender portail PowerShell, remplacez par le nom de la stratégie d’alerte, exécutez la commande suivante et vérifiez les valeurs \<AlertPolicyName\> des propriétés :
 
     ```powershell

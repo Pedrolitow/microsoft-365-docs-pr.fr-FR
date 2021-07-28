@@ -1,6 +1,6 @@
 ---
 title: Intégration à l'aide de Microsoft Endpoint Configuration Manager
-description: Découvrez comment intégrer Microsoft Defender pour point de terminaison à l’aide de Microsoft Endpoint Configuration Manager
+description: Découvrez comment intégrer Microsoft Defender pour le point de terminaison à l’aide de Microsoft Endpoint Configuration Manager
 keywords: intégration, configuration, déploiement, déploiement, gestionnaire de configuration de point de terminaison, Microsoft Defender pour le point de terminaison, création de collection, réponse de détection de point de terminaison, protection nouvelle génération, réduction de la surface d’attaque, gestionnaire de configuration de point de terminaison Microsoft
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,18 +18,18 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eab23ddeb9011e80cf2835b8d38b2d3fad4b7089
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e04535268c94478c862998cfd91df1680eb22fc0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843505"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542092"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l'aide de Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -82,7 +82,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
     ![Image de Microsoft Endpoint Configuration Manager Wizard2](images/configmgr-create-device-collection.png)
 
-3. Fournissez un **nom** et **limitez la collection,** puis sélectionnez **Suivant**.
+3. Fournissez **un nom** et **limitez la collection,** puis sélectionnez **Suivant**.
 
     ![Image de l’Assistant Microsoft Endpoint Configuration Manager 3](images/configmgr-limiting-collection.png)
 
@@ -117,16 +117,16 @@ Après avoir effectué cette tâche, vous avez maintenant une collection d’app
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Étape 2 : Configurer Microsoft Defender pour les fonctionnalités de point de terminaison 
 Cette section vous guide dans la configuration des fonctionnalités suivantes à l’aide Microsoft Endpoint Configuration Manager sur Windows appareils :
 
-- [**Détection et réponse du point de terminaison**](#endpoint-detection-and-response)
+- [**Détection et réponse des points de terminaison**](#endpoint-detection-and-response)
 - [**Protection de nouvelle génération**](#next-generation-protection)
 - [**Réduction de la surface d’attaque**](#attack-surface-reduction)
 
 
-### <a name="endpoint-detection-and-response"></a>Détection et réponse du point de terminaison
+### <a name="endpoint-detection-and-response"></a>Détection et réponse au point de terminaison
 #### <a name="windows-10"></a>Windows 10
-À partir de la Centre de sécurité Microsoft Defender il est possible de télécharger la stratégie « .onboarding » qui peut être utilisée pour créer la stratégie dans System Center Configuration Manager et déployer cette stratégie sur Windows 10 appareils.
+À partir du portail Microsoft 365 Defender il est possible de télécharger la stratégie « .onboarding » qui peut être utilisée pour créer la stratégie dans System Center Configuration Manager et déployer cette stratégie sur Windows 10 appareils.
 
-1. À partir d Centre de sécurité Microsoft Defender portail, [sélectionnez Paramètres puis Intégration.](https://securitycenter.windows.com/preferences2/onboarding)
+1. À partir d Microsoft 365 Defender portail, [sélectionnez Paramètres puis l’intégration.](https://security.microsoft.com/preferences2/onboarding)
 
 
 
@@ -139,9 +139,9 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
     ![Image de l’Assistant Intégration de Microsoft Defender pour les points de terminaison11](images/mdatp-download-package.png)
 
 4. Enregistrez le package dans un emplacement accessible.
-5. Dans Microsoft Endpoint Configuration Manager, accédez à : **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
+5. In Microsoft Endpoint Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
 
-6. Cliquez avec le bouton **droit Microsoft Defender ATP stratégies et** **sélectionnez Créer Microsoft Defender ATP stratégie.**
+6. Cliquez avec le bouton **droit sur Stratégies Microsoft Defender ATP** et **sélectionnez Créer une stratégie Microsoft Defender ATP.**
 
     ![Image de l Microsoft Endpoint Configuration Manager 12](images/configmgr-create-policy.png)
 
@@ -181,7 +181,7 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 #### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>Versions précédentes de Windows Client (Windows 7 et Windows 8.1)
 Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defender pour le point de terminaison et la clé d’espace de travail, qui seront requis pour l’intégration des versions précédentes de Windows.
 
-1. Dans un portail Centre de sécurité Microsoft Defender, sélectionnez **Paramètres >'intégration.**
+1. Dans un portail Microsoft 365 Defender, **sélectionnez** Paramètres l’intégration des points de  >    >   terminaison (sous Gestion **des appareils).**
 
 2. Sous le système **d’exploitation, Windows 7 SP1 et 8.1**.
 
@@ -200,13 +200,13 @@ Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defen
 
     -   Windows 8.1
 
-    -   Windows 7
+    -   Windows 7
 
-    -   Windows Server 2016
+    -   Windows Server 2016
 
-    -   Windows Server 2012 R2
+    -   Windows Server 2012 R2
 
-    -   Windows Server 2008 R2
+    -   Windows Server 2008 R2
 
     Plus précisément, pour Windows 7 SP1, les correctifs suivants doivent être installés :
 
@@ -240,7 +240,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
   
     ![Image du volet de protection nouvelle génération2](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
-    ![Image du volet de protection nouvelle génération3](images/36c7c2ed737f2f4b54918a4f20791d4b.png)
+    ![Image du volet de protection nouvelle génération 3](images/36c7c2ed737f2f4b54918a4f20791d4b.png)
 
     ![Image du volet de protection nouvelle génération 4](images/a28afc02c1940d5220b233640364970c.png)
 
@@ -254,7 +254,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
     ![Image du volet de protection nouvelle génération9](images/3876ca687391bfc0ce215d221c683970.png)
 
-3. Cliquez avec le bouton droit sur la stratégie anti-programme malveillant nouvellement créée et sélectionnez **Déployer.**
+3. Cliquez avec le bouton droit sur la stratégie de logiciel anti-programme malveillant nouvellement créée et sélectionnez **Déployer.**
 
     ![Image du volet de protection nouvelle génération10](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
@@ -264,10 +264,10 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
 Après avoir terminé cette tâche, vous avez configuré Antivirus Windows Defender.
 
-### <a name="attack-surface-reduction"></a>Réduction de la surface d'attaque
+### <a name="attack-surface-reduction"></a>Réduction de la surface d’attaque
 Le pilier de réduction de la surface d’attaque de Defender pour le point de terminaison inclut l’ensemble de fonctionnalités disponible sous Exploit Guard. Règles de réduction de la surface d’attaque (ASR), Accès contrôlé aux dossiers, Protection du réseau et Exploit Protection. 
 
-Toutes ces fonctionnalités fournissent un mode audit et un mode bloc. En mode audit, il n’y a pas d’impact sur l’utilisateur final. Tout ce qu’il fait, c’est collecter des données de télémétrie supplémentaires et les rendre disponibles dans le Centre de sécurité Microsoft Defender. L’objectif d’un déploiement est de déplacer pas à pas les contrôles de sécurité en mode blocage.
+Toutes ces fonctionnalités fournissent un mode audit et un mode bloc. En mode audit, il n’y a pas d’impact sur l’utilisateur final. Tout ce qu’il fait, c’est collecter des données de télémétrie supplémentaires et les rendre disponibles dans Microsoft 365 Defender portail. L’objectif d’un déploiement est de déplacer pas à pas les contrôles de sécurité en mode blocage.
 
 Pour définir des règles de récupération de l’accès en mode Audit :
 
@@ -308,7 +308,7 @@ Après avoir effectué cette tâche, vous avez correctement configuré les règl
 Vous trouverez ci-dessous des étapes supplémentaires pour vérifier si les règles de réponse aux erreurs sont correctement appliquées aux points de terminaison. (Cela peut prendre quelques minutes)
 
 
-1. À partir d’un navigateur web, accédez à <https://securitycenter.windows.com> .
+1. À partir d’un navigateur web, accédez à <https://security.microsoft.com> .
 
 2.  Sélectionnez **Gestion de la configuration** dans le menu gauche.
 
@@ -320,7 +320,7 @@ Vous trouverez ci-dessous des étapes supplémentaires pour vérifier si les rè
 
     ![Capture d’écran des règles de réduction de la surface d’attaque reports1](images/f91f406e6e0aae197a947d3b0e8b2d0d.png)
 
-5. Cliquez sur chaque appareil pour obtenir les détails de configuration des règles de la asr.
+5. Cliquez sur chaque appareil pour obtenir les détails de configuration des règles asr.
 
     ![Capture d’écran des règles de réduction de la surface d’attaque rapports2](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
@@ -356,7 +356,7 @@ Pour [plus d’informations, voir Optimiser](/microsoft-365/security/defender-en
 
 
 
-Après avoir effectué cette tâche, vous avez configuré correctement la Protection du réseau en mode audit.
+Après avoir effectué cette tâche, vous avez correctement configuré la Protection du réseau en mode audit.
 
 #### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>Pour définir des règles d’accès contrôlé aux dossiers en mode Audit :
 

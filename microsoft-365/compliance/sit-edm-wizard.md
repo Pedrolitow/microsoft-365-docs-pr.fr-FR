@@ -17,19 +17,16 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5fdf289c403d8c09342a1eac1434c4219bb7b13c
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 1cbbb02528e898f775d63bf023b641bdaaeeb07e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861658"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543604"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
 La [Création d’un type d’informations sensibles personnalisé à l’aide d’une classification de correspondance exacte des données (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) implique de nombreuses étapes.  Vous pouvez utiliser cet Assistant pour créer votre schéma et vos fichiers de modèle de type d’informations sensibles (SIT) (package de règles) pour simplifier le processus.
-
-> [!NOTE]
-> L’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles est disponible uniquement pour les nuages mondiaux et GCC.
 
 Cet Assistant peut être utilisé à la place des étapes suivantes :
 
@@ -42,7 +39,7 @@ dans [Partie 1 : configurer la classification EDM](create-custom-sensitive-inf
 
 1. Familiarisez-vous avec les étapes de création d’un type d’informations sensibles personnalisées avec le [flux de travail EDM en un clin d’œil](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).
 
-2. Suivez les étapes décrites dans la section [Enregistrer des données sensibles au format. csv](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format).
+2. Effectuez les étapes de [l’étape Enregistrer les données sensibles .csv au format .tsv](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format).
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
@@ -96,7 +93,7 @@ Après avoir vérifié que votre table d’informations sensibles a été correc
 
 1. Ouvrez **le Centre de conformité** Types  >  **d’informations**  >  **sensibles de classification des données.**
 2. Sélectionnez votre sit EDM dans la liste, puis **sélectionnez Tester** dans le volet volant. 
-3. Télécharger un élément qui contient les données que vous souhaitez détecter, par exemple, créez un élément qui contient certaines des données de votre table d’informations sensibles. Si vous avez utilisé la fonctionnalité de correspondance configurable dans votre schéma pour définir des délimiteur ignorés, assurez-vous que l’élément inclut des exemples avec et sans ces délimiteurs.
+3. Télécharger un élément qui contient des données que vous souhaitez détecter, par exemple, créez un élément qui contient certaines des données de votre table d’informations sensibles. Si vous avez utilisé la fonctionnalité de correspondance configurable dans votre schéma pour définir des délimiteur ignorés, assurez-vous que l’élément inclut des exemples avec et sans ces délimiteur.
 4. Une fois le fichier téléchargé et analysé, recherchez les correspondances avec votre sit EDM.
 5. Si la **fonction Test** dans la fonction SIT détecte une correspondance, vérifiez qu’elle ne le coupe pas ou ne l’extrait pas de manière incorrecte. Par exemple, en extrayant uniquement une sous-chaîne de la chaîne complète qu’elle est supposée détecter, ou en sélectionnant uniquement le premier mot d’une chaîne à plusieurs mots, ou en incluant des symboles ou des caractères supplémentaires dans l’extraction. Voir [Langage des expressions régulières - Référence rapide pour](/dotnet/standard/base-types/regular-expression-language-quick-reference) la référence du langage d’expression régulière. 
 

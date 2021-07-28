@@ -1,8 +1,9 @@
 ---
-title: Appliquer une étiquette de rétention à un modèle
-ms.author: efrene
-author: efrene
+title: Application d’une étiquette de rétention à un modèle dans SharePoint Syntex.
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Normal
-description: Cet article décrit l’application d’une étiquette de rétention à un modèle dans SharePoint Syntex
-ms.openlocfilehash: 00a8d255b3274af3cd96527e0dcd2ae2644226ac
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+description: Découvrez comment appliquer une étiquette de rétention à un modèle dans SharePoint Syntex.
+ms.openlocfilehash: 5fa028664f0f981c9a95c31eac256f3a149a250a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861610"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543184"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Application d’une étiquette de rétention à un modèle dans SharePoint Syntex.
 

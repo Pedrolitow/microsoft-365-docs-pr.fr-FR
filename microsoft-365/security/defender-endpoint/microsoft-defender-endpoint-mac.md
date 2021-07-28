@@ -19,18 +19,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 9b809cc82ef6fda3d4153dbf19871801ec59ae75
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301775"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543424"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -56,7 +56,7 @@ Pour obtenir les fonctionnalités les plus récentes, y compris les fonctionnali
 
 ### <a name="prerequisites"></a>Configuration requise
 
-- Abonnement Defender for Endpoint et accès au portail Centre de sécurité Microsoft Defender
+- Abonnement Defender for Endpoint et accès au portail Microsoft 365 Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH
 - Privilèges d’administration sur l’appareil (en cas de déploiement manuel)
 
@@ -77,7 +77,7 @@ Vous pouvez utiliser plusieurs méthodes et outils de déploiement pour installe
 Les trois plus récentes publication majeures de macOS sont pris en charge.
 
 > [!IMPORTANT]
-> Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés dans les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
+> Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
 
 > [!IMPORTANT]
 > La prise en charge de macOS 10.13 (High Sierra) n’est plus prise en charge depuis le 15 février 2021.
@@ -96,7 +96,7 @@ Après avoir activé le service, vous devrez peut-être configurer votre réseau
 Microsoft Defender pour endpoint sur Mac nécessite l’une des offres de licence en volume Microsoft suivantes :
 
 - Microsoft 365 E5 (M365 E5)
-- Microsoft 365 E5 Sécurité
+- Microsoft 365 E5 Sécurité
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Entreprise E5
 - Microsoft Defender pour point de terminaison
@@ -117,7 +117,7 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 Microsoft Defender pour le point de terminaison peut découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
 - Proxy autoconfig (PAC)
-- WPAD (Web Proxy Autodiscovery Protocol)
+- Protocole WPAD (Web Proxy Auto-Discovery Protocol)
 - Configuration manuelle du proxy statique
 
 Si un proxy ou un pare-feu bloque le trafic anonyme, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées précédemment.

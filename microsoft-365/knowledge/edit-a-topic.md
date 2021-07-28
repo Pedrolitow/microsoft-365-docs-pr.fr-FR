@@ -1,7 +1,7 @@
 ---
-title: Modifier une rubrique existante dans les rubriques microsoft
-author: chuckedmonson
+title: Modifier une rubrique existante dans Sujets Microsoft Viva
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: cjtan
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-description: Découvrez comment modifier une rubrique existante dans Microsoft Topics.
-ms.openlocfilehash: 6e1f85737298736a3aafcb30cfe103c28654d1c1
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+description: Découvrez comment modifier une rubrique existante dans Sujets Microsoft Viva.
+ms.openlocfilehash: 47c9254c91e08cda6dc33c40768689d94e5ceeef
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053204"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596229"
 ---
-# <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Modifier une rubrique existante dans les rubriques microsoft 
+# <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Modifier une rubrique existante dans Sujets Microsoft Viva 
 
 </br>
 
@@ -34,7 +34,7 @@ Dans Rubriques de Rubriques, vous pouvez modifier une rubrique existante. Vous d
 > [!Note] 
 > Alors que les informations d’une rubrique qui sont rassemblées par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)la description de la rubrique et les informations de personnes que vous ajoutez manuellement lors de la modification d’une rubrique existante sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher les rubriques. 
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour modifier une rubrique existante, vous devez :
 - avoir une licence Rubriques Viva.
@@ -107,43 +107,9 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
 
     Vous pouvez modifier un site suggéré en site épinglé en sélectionnant l’icône épinglée.
 
-
-<!---
-
-7.  The <b>Related sites</b> section shows sites that have information about the topic. 
-
-    ![Related sites section](../media/knowledge-management/related-sites.png)</br>
-
-    You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</br>
-    
-    ![Select a site](../media/knowledge-management/sites.png)</br>
-
-8. The <b>Related topics</b> section shows connections that exists between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
-
-   ![Related topics section](../media/knowledge-management/related-topic.png)</br>  
-
-    You can then give a description of how the topics are related, and select <b>Update</b>.</br>
-
-   ![Related topics description](../media/knowledge-management/related-topics-update.png)</br> 
-
-   The related topic you added will display as a connected topic.
-
-   ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
-
-   To remove a related topic, select the topic you want to remove, then select the <b>Remove topic</b> icon.</br>
- 
-   ![Remove related topic](../media/knowledge-management/remove-related.png)</br>  
-
-   Then select <b>Remove</b>.</br>
-
-   ![Confirm remove](../media/knowledge-management/remove-related-confirm.png)</br> 
-
---->
-
-9. Vous pouvez également ajouter des éléments statiques à la page (tels que du texte, des images ou des liens) en sélectionnant l’icône de la zone de dessin, que vous trouverez sous la courte description. Si vous la sélectionnez, SharePoint boîte à outils dans laquelle vous pouvez choisir l’élément que vous souhaitez ajouter à la page.
+9. Vous pouvez également ajouter des éléments statiques à la page, tels que du texte, des images ou des liens, en sélectionnant l’icône de zone de dessin, que vous trouverez sous la brève description. Si vous la sélectionnez, SharePoint boîte à outils dans laquelle vous pouvez choisir l’élément que vous souhaitez ajouter à la page.
 
    ![Capture d’écran montrant l’icône Canvas.](../media/knowledge-management/webpart-library.png)
-
 
 10. Sélectionnez **Publier** ou **Republier** pour enregistrer vos modifications. **La publication sera** votre option disponible si la rubrique a été publiée précédemment.
 

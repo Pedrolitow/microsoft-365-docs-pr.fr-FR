@@ -18,19 +18,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaf9c0a8eef4e050ca034d1aee69d24c5adb909d
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 9fe35f5bac942cc5a4e9fa95a5eaf9759072d832
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930366"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542188"
 ---
 # <a name="resources"></a>Ressources
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -53,7 +53,7 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
 
 2. Reproduisez le problème.
 
-3. Exécutez la commande suivante pour back up Defender for Endpoint’s logs. Les fichiers sont stockés dans une archive .zip de données.
+3. Exécutez la commande suivante pour enregistrer Defender pour les journaux du point de terminaison. Les fichiers sont stockés dans une archive .zip de données.
 
    ```bash
    sudo mdatp diagnostic create
@@ -75,9 +75,9 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
    Log level configured successfully
    ```
 
-## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
+## <a name="log-installation-issues"></a>Journal des problèmes d’installation
 
-Si une erreur se produit pendant l’installation, le programme d’installation signale uniquement un échec général.
+Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
 
 Le journal détaillé sera enregistré dans `/var/log/microsoft/mdatp/install.log` .
 Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
@@ -88,7 +88,7 @@ Il existe plusieurs façons de désinstaller Defender pour Endpoint sur Linux. S
 
 ### <a name="manual-uninstallation"></a>Désinstallation manuelle
 
-- `sudo yum remove mdatp` pour RHEL et les variantes (CentOS et Oracle Linux).
+- `sudo yum remove mdatp` pour RHEL et ses variantes (CentOS et Oracle Linux).
 - `sudo zypper remove mdatp` pour SLES et les variantes.
 - `sudo apt-get purge mdatp` pour les systèmes Ubuntu et Debian.
 
@@ -130,7 +130,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Protection            |Faire une analyse rapide                                         |`mdatp scan quick`                                                     |
 |Protection            |Faire une analyse complète                                          |`mdatp scan full`                                                      |
 |Protection            |Annuler une analyse à la demande en cours                        |`mdatp scan cancel`                                                    |
-|Protection            |Demander une mise à jour de l’intelligence de la sécurité                  |`mdatp definitions update`                                             |
+|Protection            |Demander une mise à jour des informations de sécurité                  |`mdatp definitions update`                                             |
 |Historique de la protection    |Imprimer l’historique complet de la protection                       |`mdatp threat list`                                                    |
 |Historique de la protection    |Obtenir les détails sur les menaces                                      |`mdatp threat get --id [threat-id]`                                    |
 |Gestion de la mise en quarantaine |Liste de tous les fichiers mis en quarantaine                              |`mdatp threat quarantine list`                                         |
@@ -164,10 +164,10 @@ Dans le portail Defender pour points de terminaison, deux catégories d’inform
   - Architecture du processeur
   - Si l’appareil est une machine virtuelle
 
-### <a name="known-issues"></a>Problèmes connus
+### <a name="known-issues"></a>Problèmes détectés
 
-- Vous pouvez voir « Aucune donnée de capteur, communications altérées » dans la page d’informations de l’ordinateur du portail Centre de sécurité Microsoft Defender, même si le produit fonctionne comme prévu. Nous travaillons à la résoudre.
-- Les utilisateurs connectés n’apparaissent pas sur le Centre de sécurité Microsoft Defender web.
+- Vous pouvez voir « Aucune donnée de capteur, communications altérées » dans la page d’informations de l’ordinateur du portail Microsoft 365 Defender, même si le produit fonctionne comme prévu. Nous travaillons à la résoudre.
+- Les utilisateurs connectés n’apparaissent pas sur le Microsoft 365 Defender web.
 - Dans les distributions SUSE, si l’installation de *libatomic1* échoue, vous devez vérifier que votre système d’exploitation est enregistré :
 
    ```bash

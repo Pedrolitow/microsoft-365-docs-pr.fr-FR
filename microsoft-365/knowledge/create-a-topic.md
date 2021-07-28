@@ -1,8 +1,7 @@
 ---
-title: Créer une rubrique dans rubriques microsoft
-description: Comment créer une rubrique dans rubriques Microsoft Topics.
-author: efrene
-ms.author: efrene
+title: Créer une rubrique dans Sujets Microsoft Viva
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,14 +13,15 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 7d1dc1af6e845ccfe2fb0e8f5701a2cd3018c308
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+description: Découvrez comment créer une rubrique dans Sujets Microsoft Viva.
+ms.openlocfilehash: 5b275741cad759348bc42ebb6bc7fe0d04199ea5
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687530"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596301"
 ---
-# <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Créer une rubrique dans rubriques microsoft
+# <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Créer une rubrique dans Sujets Microsoft Viva
 
 Dans Rubriques de Topics, vous pouvez créer une rubrique si une rubrique n’est pas découverte par le biais de l’indexation ou si la technologie d’IA n’a pas trouvé suffisamment de preuves pour l’établir en tant que rubrique.
 
@@ -29,7 +29,7 @@ Dans Rubriques de Topics, vous pouvez créer une rubrique si une rubrique n’es
 > Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations sur les personnes dans une rubrique créée manuellement sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher la rubrique. 
 
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour créer une rubrique, vous devez :
 - avoir une licence Rubriques Viva.
@@ -86,7 +86,7 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
 
     ![Section Sites associés](../media/knowledge-management/related-sites.png)
 
-    Vous pouvez ajouter un site  associé en sélectionnant Ajouter, puis en recherchant le site ou en le sélectionnant dans votre liste de sites fréquents ou récents.
+    Vous pouvez ajouter un site  associé en sélectionnant Ajouter, puis en recherchant le site, ou en le sélectionnant dans votre liste de sites fréquents ou récents.
     
     ![Sélectionner un site](../media/knowledge-management/sites.png)
 
@@ -116,7 +116,7 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
 
 9. Sélectionnez **Enregistrer** pour enregistrer vos modifications. 
 
-Après la publication de la page, le nom de la rubrique, l’autre nom, la description et les contacts épinglés s’affichent à tous les utilisateurs titulaires d’une licence qui affichent la rubrique. Des fichiers, pages et sites spécifiques apparaissent uniquement sur la page de rubrique si l’utilisateur dispose des autorisations Office 365 sur l’élément. 
+Après la publication de la page, le nom de la rubrique, l’autre nom, la description et les contacts épinglés s’affichent à tous les utilisateurs titulaires d’une licence qui affichent la rubrique. Des fichiers, pages et sites spécifiques apparaissent uniquement sur la page de rubrique si l’utilisateur dispose des autorisations Office 365 sur l’élément. 
 
 
 

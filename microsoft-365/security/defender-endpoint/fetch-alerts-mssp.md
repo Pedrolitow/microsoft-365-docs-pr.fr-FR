@@ -1,5 +1,5 @@
 ---
-title: Récupérer des alertes à partir du client MSSP
+title: Récupérer des alertes à partir du client MSSP client
 description: Découvrez comment récupérer des alertes à partir d’un client
 keywords: fournisseur de services de sécurité géré, mssp, configurer, intégration
 search.product: eADQiWindows 10XVcnh
@@ -17,18 +17,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 456507533265bc085adc1008f3264e123569a6ca
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c1695729a12f9cce74663c35f6a9cd537ac468b6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770768"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543484"
 ---
-# <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP
+# <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP client
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
@@ -49,8 +49,8 @@ Pour récupérer des alertes dans votre système SIEM, vous devez suivre les ét
 
 Étape 2 : Obtenir des jetons d’accès et d’actualisation à partir du client de votre client
  
-Étape 3 : autoriser votre application sur Centre de sécurité Microsoft Defender
- 
+Étape 3 : autoriser votre application sur Microsoft 365 Defender
+
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>Étape 1 : Créer une application dans Azure Active Directory (Azure AD)
  
 Vous devez créer une application et lui accorder des autorisations pour récupérer des alertes à partir du client Microsoft Defender for Endpoint de votre client.
@@ -160,14 +160,14 @@ Après avoir fourni vos informations d’identification, vous devez donner votre
 
 8. Dans la fenêtre PowerShell, vous recevrez un jeton d’accès et un jeton d’actualisation. Enregistrez le jeton d’actualisation pour configurer votre connecteur SIEM. 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>Étape 3 : Autoriser votre application sur Centre de sécurité Microsoft Defender
-Vous devez autoriser l’application que vous avez créée dans Centre de sécurité Microsoft Defender.
+### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>Étape 3 : Autoriser votre application sur Microsoft 365 Defender
+Vous devez autoriser l’application que vous avez créée dans Microsoft 365 Defender.
  
 Vous devez avoir l’autorisation Gérer les **paramètres système** du portail pour autoriser l’application. Dans le cas contraire, vous devrez demander à votre client d’autoriser l’application pour vous.
 
-1. Go to `https://securitycenter.windows.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
+1. Go to `https://security.microsoft.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
 
-2. Cliquez **Paramètres**  >  **SIEM.** 
+2. Cliquez **Paramètres**  >  **LES API de points de**  >  **terminaison**  >  **SIEM.** 
 
 3. Sélectionnez **l’onglet MSSP.**
 
@@ -184,7 +184,7 @@ Vous pouvez maintenant télécharger le fichier de configuration approprié pour
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>Récupérer des alertes à partir du client MSSP client à l’aide des API
  
-Pour plus d’informations sur la récupération d’alertes à l’aide de l’API REST, voir [Extraire des alertes à l’aide de l’API REST.](pull-alerts-using-rest-api.md)
+Pour plus d’informations sur la récupération des alertes à l’aide de l’API REST, voir [Extraire des alertes à l’aide de l’API REST.](pull-alerts-using-rest-api.md)
 
 
 ## <a name="see-also"></a>Voir aussi

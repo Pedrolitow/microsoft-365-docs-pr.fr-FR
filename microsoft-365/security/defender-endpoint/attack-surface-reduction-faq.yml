@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: 8088e1bfb8cbaa2d9c7b094b03a56b54c01f8f69
-  ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+  ms.openlocfilehash: e393ff27b5bd918559346959fda65a057205e29d
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53062379"
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53543736"
 title: 'Réduction de la surface d’attaque : forum aux questions (FAQ)'
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -43,10 +43,10 @@ sections:
   - question: >
       Ai-je besoin d’une licence d’entreprise pour exécuter des règles de R ASR ?
     answer: >
-      L’ensemble complet des règles et des fonctionnalités de la fonctionnalité de r asr est pris en charge uniquement si vous disposez d’une licence d’entreprise pour Windows 10. Un nombre limité de règles peut fonctionner sans licence d’entreprise. Si vous avez Microsoft 365 Entreprise, définissez Antivirus Microsoft Defender comme solution de sécurité principale et activez les règles via PowerShell. L’utilisation de la fonctionnalité asr sans licence d’entreprise n’est pas officiellement prise en charge et vous ne pourrez pas utiliser toutes les fonctionnalités de la asr.
+      L’ensemble complet des règles et des fonctionnalités de la fonctionnalité de r asr est pris en charge uniquement si vous disposez d’une licence d’entreprise pour Windows 10. Un nombre limité de règles peut fonctionner sans licence d’entreprise. Si vous avez Microsoft 365 Entreprise, définissez Antivirus Microsoft Defender comme solution de sécurité principale et activez les règles via PowerShell. L’utilisation de la fonctionnalité de RSA sans licence d’entreprise n’est pas officiellement prise en charge et vous ne pourrez pas utiliser toutes les fonctionnalités de la asr.
 
 
-      Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [Licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+      Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
   - question: >
       La RSA est-elle prise en charge si j’ai une licence E3 ?
     answer: "Oui. La RSA est prise en charge pour Windows Enterprise E3 et les niveaux supérieurs. \n"
@@ -68,7 +68,7 @@ sections:
   - question: >
       Comment fonctionnent les exclusions de règles asr ?
     answer: >
-      Pour les règles de la asr, si vous ajoutez une exclusion, elle affectera chaque règle de asr.
+      Pour les règles de la asr, si vous ajoutez une exclusion, elle affecte toutes les règles de la asr.
 
       Les deux règles spécifiques suivantes ne prisent pas en charge les exclusions :
 
@@ -116,7 +116,7 @@ sections:
       :::image type="content" source="images/asrfaq1.png" alt-text="bloquer le vol d’informations d’identification LSASS":::
 
 
-      En regardant l’exemple ci-dessus, si vous deviez vraiment créer une exception pour le processus de blocage du droit d’accès, l’ajout du nom de fichier avec le chemin d’accès complet l’exclurait du blocage et après avoir été autorisé à accéder à la mémoire du processus LSASS. La valeur 0 signifie que les règles asr ignoreront ce fichier/processus et ne le bloqueront pas/l’auditeront.
+      En regardant l’exemple ci-dessus, si vous deviez vraiment créer une exception pour le processus de blocage du droit d’accès, l’ajout du nom de fichier avec le chemin d’accès complet l’exclurait du blocage et après avoir été autorisé à accéder à la mémoire du processus LSASS. La valeur 0 signifie que les règles de asr ignorent ce fichier/processus et ne le bloquent pas/l’auditent.
 
 
       :::image type="content" source="images/asrfaq2.png" alt-text="exclure des fichiers asr":::
@@ -131,35 +131,37 @@ sections:
       couvrant plusieurs piliers de la protection, tels que Office, informations d’identification, scripts, courrier électronique, etc. Toutes les règles asr, à l’exception de la persistance de blocage via l’abonnement aux événements WMI, sont Windows 1709 et ultérieures :
 
 
-      * [Bloquer le contenu exécutable du client de messagerie et de la messagerie web](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
+      * [Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 
-      * [Empêcher toutes les applications Office de créer des processus enfants](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
+      * [Bloquer le contenu exécutable du client de messagerie et de la messagerie web](attack-surface-reduction-rules.md#block-executable-content-from-email-client-and-webmail)
 
-      * [Empêcher Office applications de créer du contenu exécutable](attack-surface-reduction.md#block-office-applications-from-creating-executable-content)
+      * [Empêcher toutes les applications Office de créer des processus enfants](attack-surface-reduction-rules.md#block-all-office-applications-from-creating-child-processes)
 
-      * [Empêcher Office applications d’injecter du code dans d’autres processus](attack-surface-reduction.md#block-office-applications-from-injecting-code-into-other-processes)
+      * [Empêcher Office applications de créer du contenu exécutable](attack-surface-reduction-rules.md#block-office-applications-from-creating-executable-content)
 
-      * [Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](attack-surface-reduction.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+      * [Empêcher Office applications d’injecter du code dans d’autres processus](attack-surface-reduction-rules.md#block-office-applications-from-injecting-code-into-other-processes)
 
-      * [Bloquer l’exécution de scripts potentiellement obscurcis](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
+      * [Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](attack-surface-reduction-rules.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
 
-      * [Bloquer les appels d’API Win32 à partir Office macro](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
+      * [Bloquer l’exécution de scripts potentiellement obscurcis](attack-surface-reduction-rules.md#block-execution-of-potentially-obfuscated-scripts)
 
-      * [Utiliser la protection avancée contre les ransomware](attack-surface-reduction.md#use-advanced-protection-against-ransomware)
+      * [Bloquer les appels d’API Win32 à partir Office macro](attack-surface-reduction-rules.md#block-win32-api-calls-from-office-macros)
 
-      * [Bloquer le vol d’informations d’identification Windows sous-système d’autorité](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) de sécurité locale (lsass.exe)
+      * [Utiliser la protection avancée contre les ransomware](attack-surface-reduction-rules.md#use-advanced-protection-against-ransomware)
 
-      * [Bloquer les créations de processus provenant de commandes PSExec et WMI](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+      * [Bloquer le vol d’informations d’identification Windows sous-système d’autorité](attack-surface-reduction-rules.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) de sécurité locale (lsass.exe)
 
-      * [Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+      * [Bloquer les créations de processus provenant de commandes PSExec et WMI](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 
-      * [Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à des critères de prévalence, d’âge ou de listes fiables](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+      * [Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](attack-surface-reduction-rules.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
 
-      * [Empêcher Office applications de communication de créer des processus enfants](attack-surface-reduction.md#block-office-communication-application-from-creating-child-processes)
+      * [Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à des critères de prévalence, d’âge ou de listes fiables](attack-surface-reduction-rules.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
 
-      * [Empêcher Adobe Reader de créer des processus enfants](attack-surface-reduction.md#block-adobe-reader-from-creating-child-processes)
+      * [Empêcher Office applications de communication de créer des processus enfants](attack-surface-reduction-rules.md#block-office-communication-application-from-creating-child-processes)
 
-      * [Bloquer la persistance via un abonnement à des événements WMI](attack-surface-reduction.md#block-persistence-through-wmi-event-subscription)
+      * [Empêcher Adobe Reader de créer des processus enfants](attack-surface-reduction-rules.md#block-adobe-reader-from-creating-child-processes)
+
+      * [Bloquer la persistance via un abonnement à des événements WMI](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription)
   - question: >
       Quelles sont les bonnes recommandations pour la mise en place de la R ASR ?
     answer: >
@@ -187,7 +189,7 @@ sections:
     answer: >
       La asr utilise Antivirus Microsoft Defender pour bloquer les applications. Il n’est pas possible de configurer la asr pour qu’elle utilise une autre solution de sécurité pour le blocage pour le moment.
   - question: >
-      J’ai une licence E5 et j’ai activé certaines règles asr en association avec Defender pour endpoint. Est-il possible qu’un événement ASR ne s’affiche pas du tout dans la chronologie des événements de Defender for Endpoint ?
+      J’ai une licence E5 et j’ai activé certaines règles asr en association avec Defender for Endpoint. Est-il possible qu’un événement ASR ne s’affiche pas du tout dans la chronologie des événements de Defender for Endpoint ?
     answer: >
       Chaque fois qu’une notification est déclenchée localement par une règle asr, un rapport sur l’événement est également envoyé au portail Defender for Endpoint. Si vous avez des difficultés à trouver l’événement, vous pouvez filtrer la chronologie des événements à l’aide de la zone de recherche. Vous pouvez également afficher les événements asr en visitant Go **to attack surface management**, à partir de l’icône Gestion de la **configuration** dans la barre des tâches du Centre de sécurité. La page de gestion de la surface d’attaque inclut un onglet pour les détections de rapports, qui inclut la liste complète des événements de règle de la surface d’attaque signalés à Defender pour le point de terminaison.
   - question: >
@@ -210,14 +212,14 @@ sections:
       Cette règle repose sur la réputation connue de chaque application, telle que mesurée par la prévalence, l’âge ou l’inclusion dans une liste d’applications de confiance. La décision de la règle de bloquer ou d’autoriser une application est déterminée par l’évaluation de ces critères par la protection cloud de Microsoft.
 
 
-      En règle générale, la protection cloud peut déterminer qu’une nouvelle version d’une application est suffisamment similaire aux versions précédentes qu’elle n’a pas besoin d’être réévaluée longuement. Toutefois, la construction de la réputation de l’application après le changement de version peut prendre un certain temps, en particulier après une mise à jour majeure. En attendant, vous pouvez ajouter l’application à la liste d’exclusions, afin d’empêcher cette règle de bloquer les applications importantes. Si vous êtes fréquemment mis à jour et que vous travaillez avec de nouvelles versions d’applications, vous pouvez choisir d’exécuter cette règle en mode audit.
+      En règle générale, la protection cloud peut déterminer qu’une nouvelle version d’une application est suffisamment similaire aux versions précédentes qu’elle n’a pas besoin d’être réévaluée en longueur. Toutefois, la construction de la réputation de l’application après le changement de version peut prendre un certain temps, en particulier après une mise à jour majeure. En attendant, vous pouvez ajouter l’application à la liste d’exclusions, afin d’empêcher cette règle de bloquer les applications importantes. Si vous êtes fréquemment mis à jour et que vous travaillez avec de nouvelles versions d’applications, vous pouvez choisir d’exécuter cette règle en mode audit.
   - question: >
       J’ai récemment activé la règle asr, « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité Windows locale (lsass.exe) » et j’ai reçu un grand nombre de notifications. Que se passe-t-il?
     answer: >
       Une notification générée par cette règle n’indique pas nécessairement une activité malveillante ; toutefois, cette règle est toujours utile pour bloquer les activités malveillantes, car les programmes malveillants ciblent souvent lsass.exe pour obtenir un accès illicite aux comptes. Le processus lsass.exe stocke les informations d’identification de l’utilisateur en mémoire après qu’un utilisateur s’est connecté. Windows utilise ces informations d’identification pour valider les utilisateurs et appliquer des stratégies de sécurité locales.
 
 
-      Étant donné que de nombreux processus légitimes tout au long d’une journée classique appelleront lsass.exe informations d’identification, cette règle peut être particulièrement bruyante. Si une application légitime connue génère un nombre excessif de notifications pour cette règle, vous pouvez l’ajouter à la liste d’exclusions. La plupart des autres règles asr génèrent un nombre de notifications relativement plus petit, par rapport à celle-ci, étant donné que l’appel sur lsass.exe est caractéristique du fonctionnement normal de nombreuses applications.
+      Étant donné que de nombreux processus légitimes tout au long d’une journée classique appelleront lsass.exe d’informations d’identification, cette règle peut être particulièrement bruyante. Si une application légitime connue génère un nombre excessif de notifications pour cette règle, vous pouvez l’ajouter à la liste d’exclusions. La plupart des autres règles asr génèrent un nombre de notifications relativement plus petit, par rapport à celle-ci, étant donné que l’appel sur lsass.exe est caractéristique du fonctionnement normal de nombreuses applications.
   - question: >
       Est-il bon d’activer la règle « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité Windows locale (lsass.exe) » avec la protection LSA ?
     answer: >

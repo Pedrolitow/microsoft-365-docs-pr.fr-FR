@@ -14,24 +14,24 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 342e471c897c6722e9a7d67578e10b85719d5bd8
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985455"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595989"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Examinez les événements de réduction de la surface d’attaque dans l’Observateur d’événements pour surveiller les règles ou paramètres qui fonctionnent. Vous pouvez également déterminer si des paramètres sont trop « bruyants » ou ont un impact sur votre flux de travail quotidien.
 
@@ -148,42 +148,42 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 
    ![Animation montrant l’utilisation de l’Observateur d’événements](images/event-viewer.gif)
 
-Fonctionnalité | Fournisseur/source | ID de l'événement | Description
+Fonctionnalité | Fournisseur/source | ID d’événement | Description
 :-|:-|:-:|:-
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 1 | Audit ACG
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 2 | Appliquer ACG
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 2 | Forcer ACG
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 3 | Ne pas autoriser l’audit des processus enfants
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 4  | Ne pas autoriser le blocage des processus enfants
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 5  | Bloquer l’audit des images à faible intégrité
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 6  | Bloquer le bloc d’images à faible intégrité
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 7  | Bloquer l’audit des images distantes
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 8  | Bloquer le bloc d’images distantes
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 9  | Désactiver l’audit des appels système win32k
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 10 | Désactiver le bloc d’appels système win32k
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 11 | Audit de protection de l’intégrité du code
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 12  | Bloc de protection de l’intégrité du code
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 5  | Bloquer l’audit des images à faible intégrité
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 6  | Bloquer le blocage des images à faible intégrité
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 7  | Bloquer l’audit des images distantes
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 8  | Bloquer le blocage des images distantes
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 9  | Désactiver l’audit des appels système win32k
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 10  | Désactiver le blocage des appels système win32k
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 11 | Audit de la protection d’intégrité du code
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 12  | Blocage de la protection d’intégrité du code
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 13 | Audit EAF
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 14  | Appliquer EAF
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 14  | Forcer EAF
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 15 | Audit EAF+
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 16  | Appliquer EAF+
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 16  | Forcer EAF+
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 17  | Audit IAF
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 18  | Application IAF
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 19 | Audit StackPivot ROP
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 20 | Appliquer StackPivot ROP
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) |  21 | Audit ROP CallerCheck
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 22 | ROP CallerCheck enforce
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 23 | Audit SimExec ROP
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 24 | Appliquer SimExec ROP
-Exploit Protection | WER-Diagnostics | 5  | Bloc CFG
-Exploit Protection | Win32K (opérationnel) | 260 | Police nontrusted
-Protection du réseau | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
-Protection du réseau | Windows Defender (opérationnel) | 1125 | Événement lorsque la protection du réseau se déclenche en mode Audit
-Protection du réseau | Windows Defender (opérationnel) | 1126 | Événement lorsque la protection du réseau se déclenche en mode blocage
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 18  | Forcer IAF
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 19 | Audit de StackPivot ROP
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 20 | Forcer StackPivot ROP
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) |  21 | Audit de CallerCheck ROP
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 22 | Forcer CallerCheck ROP
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 23 | Audit de SimExec ROP
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 24 | Forcer SimExec ROP
+Exploit Protection | WER-Diagnostics | 5  | Bloquer CFG
+Exploit Protection | Win32K (opérationnel) | 260 | Police non approuvée
+Protection réseau | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
+Protection réseau | Windows Defender (opérationnel) | 1125 | Événement lorsque la protection du réseau se déclenche en mode Audit
+Protection réseau | Windows Defender (opérationnel) | 1126 | Événement lorsque la protection du réseau se déclenche en mode blocage
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1124 | Événement d’accès contrôlé aux dossiers audité
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1123 | Événement d’accès contrôlé aux dossiers bloqué
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1127 | Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers bloqué
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1128 | Événement de bloc d’écriture de secteur d’accès contrôlé aux dossiers audité
-Réduction de la surface d'attaque | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
-Réduction de la surface d'attaque | Windows Defender (opérationnel) | 1122 | Événement lorsque la règle se déclenche en mode audit
-Réduction de la surface d'attaque | Windows Defender (opérationnel) | 1121 | Événement lorsque la règle se déclenche en mode blocage
+Réduction de la surface d’attaque | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
+Réduction de la surface d’attaque | Windows Defender (opérationnel) | 1122 | Événement lorsque la règle se déclenche en mode audit
+Réduction de la surface d’attaque | Windows Defender (opérationnel) | 1121 | Événement lorsque la règle se déclenche en mode blocage

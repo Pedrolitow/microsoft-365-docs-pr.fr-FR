@@ -13,12 +13,12 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: 47eb80af58c948db5997dc9f5edfa5737a796837
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2edd4503e25b4ef2ddf4225716a152609c1022b3
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772364"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596313"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>Protéger les données de votre organisation avec le contrôle d’appareil
 
@@ -60,22 +60,22 @@ La page fournit un tableau de bord avec un nombre agrégé d’événements par 
 Lorsque vous sélectionnez un événement, un flyout s’affiche pour vous fournir plus d’informations :
 
 - **Détails généraux :** Date, mode Action et stratégie de cet événement.
-- **Informations multimédias :** Les informations multimédias incluent le nom du média, le nom de classe, le GUID de classe, l’ID de périphérique, l’ID du fournisseur, le volume, le numéro de série et le type de bus.
-- **Détails de l’emplacement :** Nom de l’appareil et MDATP’appareil.
+- **Informations multimédias :** Les informations multimédias incluent le nom du média, le nom de la classe, le GUID de classe, l’ID de l’appareil, l’ID du fournisseur, le volume, le numéro de série et le type de bus.
+- **Détails de l’emplacement :** Nom de l’appareil et ID de l’appareil MDATP.
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)
 
-Pour voir l’activité en temps réel de ce média au sein de l’organisation, sélectionnez le **bouton Ouvrir le chasse** avancé. Cela inclut une requête prédéfinie incorporée.
+Pour voir l’activité en temps réel de ce média au sein de l’organisation, sélectionnez le bouton de recherche **Open Advanced.** Cela inclut une requête prédéfinie incorporée.
 
 > [!div class="mx-imgBorder"]
 > ![QueryOnDeviceControlReport](images/Devicecontrolreportquery.png)
 
-Pour voir la sécurité de l’appareil, sélectionnez le bouton Ouvrir la page de **l’appareil** dans le volant. Ce bouton ouvre la page d’entité de l’appareil.
+Pour voir la sécurité de l’appareil, sélectionnez le bouton Ouvrir la **page** de l’appareil dans le volant. Ce bouton ouvre la page d’entité de l’appareil.
 
 > [!div class="mx-imgBorder"]
 > ![DeviceEntityPage](images/Devicesecuritypage.png)
 
-## <a name="reporting-delays"></a>Rapports de retards
+## <a name="reporting-delays"></a>Signalement des retards
 
 Le rapport de contrôle d’appareil peut avoir un délai de 12 heures entre le moment où une connexion multimédia se produit et le moment où l’événement est reflété dans la carte ou dans la liste des domaines.

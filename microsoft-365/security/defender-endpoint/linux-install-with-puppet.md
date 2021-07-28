@@ -1,7 +1,7 @@
 ---
 title: Déployer Microsoft Defender pour le point de terminaison sur Linux avec l’ment
 ms.reviewer: ''
-description: Décrit comment déployer Microsoft Defender pour point de terminaison sur Linux à l’aide de Laso.
+description: Décrit comment déployer Microsoft Defender pour le point de terminaison sur Linux à l’aide de L’Atelier.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,25 +18,25 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d54732134e91b87b2639634c365556beda5312b0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f935815f7830b8697e1870bde89af8fa056534ff
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934572"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543304"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux avec l’ment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Cet article explique comment déployer Defender pour point de terminaison sur Linux à l’aide de L’Atelier. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
+Cet article explique comment déployer Defender pour point de terminaison sur Linux à l’aide de Latra. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
 - [Télécharger le package d’intégration](#download-the-onboarding-package)
 - [Créer un manifeste d’atelier](#create-a-puppet-manifest)
@@ -47,17 +47,17 @@ Cet article explique comment déployer Defender pour point de terminaison sur Li
 
  Pour obtenir une description des conditions préalables et de la condition système requise pour la version logicielle actuelle, voir la page principale de [Defender for Endpoint sur Linux.](microsoft-defender-endpoint-linux.md)
 
-En outre, pour le déploiement de Manière générale, vous devez être familiarisé avec les tâches d’administration de la charge de travail, configurer Configure et savoir comment déployer des packages. Il existe de nombreuses façons d’effectuer la même tâche. Ces instructions supposent la disponibilité des modules De jeu pris en charge, par exemple pour *vous* aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d’informations, [reportez-vous](https://puppet.com/docs) à la documentation de Documentation.
+En outre, pour le déploiement de Manière générale, vous devez être familiarisé avec les tâches d’administration de la charge de travail, configurer Configure et savoir comment déployer des packages. Il existe de nombreuses façons d’effectuer la même tâche. Ces instructions supposent la disponibilité des modules De jeu pris en charge, par exemple *pour* vous aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d’informations, [reportez-vous](https://puppet.com/docs) à la documentation de Documentation.
 
 ## <a name="download-the-onboarding-package"></a>Télécharger le package d’intégration
 
-Téléchargez le package d’intégration à partir Centre de sécurité Microsoft Defender :
+Téléchargez le package d’intégration à partir Microsoft 365 Defender portail :
 
-1. In Centre de sécurité Microsoft Defender, go to **Paramètres > Device Management > Onboarding**.
+1. Dans Microsoft 365 Defender portail, go to **Paramètres > Endpoints > Device management > Onboarding**.
 2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez Votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Centre de sécurité Microsoft Defender capture d’écran](images/atp-portal-onboarding-linux-2.png)
+    ![capture d Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux-2.png)
 
 4. À partir d’une invite de commandes, vérifiez que vous avez le fichier. 
 
@@ -79,9 +79,9 @@ Téléchargez le package d’intégration à partir Centre de sécurité Microso
 
 ## <a name="create-a-puppet-manifest"></a>Créer un manifeste de jeu
 
-Vous devez créer un manifeste de Manifest pour le déploiement de Defender for Endpoint sur Linux sur des appareils gérés par un serveur De jeu. Cet exemple utilise les modules *apt* et *yumrepo* disponibles à partir delabs, et part du principe que les modules ont été installés sur votre serveur Dupont.
+Vous devez créer un manifeste Pour déployer Defender pour Point de terminaison sur Linux sur des appareils gérés par un serveur De jeu. Cet exemple utilise les modules *apt* et *yumrepo* disponibles à partir delabs, et part du principe que les modules ont été installés sur votre serveur Dupont.
 
-Créez les dossiers *install_mdatp/fichiers* et *install_mdatp/manifestes* sous le dossier modules de votre installation de Latre. Ce dossier se trouve généralement dans */etc/spamlabs/code/environments/production/modules* sur votre serveur Der. Copiez le mdatp_onboard.jssur le fichier créé ci-dessus dans *le dossier install_mdatp/fichiers.* Créer *un init.pp* qui contient les instructions de déploiement :
+Créez les dossiers *install_mdatp/fichiers* et *install_mdatp/manifestes* sous le dossier modules de votre installation de Latre. Ce dossier se trouve généralement dans */etc/spamlabs/code/environnements/production/modules* sur votre serveur Der. Copiez le mdatp_onboard.jssur le fichier créé ci-dessus dans *le dossier install_mdatp/fichiers.* Créer *un init.pp* qui contient les instructions de déploiement :
 
 ```bash
 pwd
@@ -103,7 +103,7 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>Contenu de `install_mdatp/manifests/init.pp`
 
-Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
+Defender for Endpoint sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
@@ -194,7 +194,7 @@ node "default" {
 }
 ```
 
-Les appareils d’agent inscrits sondent périodiquement le serveur de contrôle d’accès et installent de nouveaux profils et stratégies de configuration dès qu’ils sont détectés.
+Les périphériques d’agent inscrits sondent périodiquement le serveur de contrôle d’accès et installent de nouveaux profils et stratégies de configuration dès qu’ils sont détectés.
 
 ## <a name="monitor-puppet-deployment"></a>Surveiller le déploiement de l’écran de surveillance
 

@@ -1,7 +1,7 @@
 ---
 title: Nouveautés du score de sécurité Microsoft
 description: Décrit les nouvelles modifications apportées au Niveau de sécurité Microsoft dans le centre Microsoft 365 sécurité.
-keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Centre de sécurité Microsoft 365
+keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, Centre de sécurité Microsoft 365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2f02de4b738d9d61ef9f98cd03d15bd91709339e
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 8d16d4640a926697363e7bb7588d80a8c28439df
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314427"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541984"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés du score de sécurité Microsoft
 
@@ -36,27 +36,55 @@ Pour que le Niveau de sécurité Microsoft soit mieux représentatif de votre po
 
 Microsoft Secure Score se trouve dans https://security.microsoft.com/securescore le centre de sécurité [Microsoft 365.](overview-security-center.md)
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="july-2021"></a>Juillet 2021
 
-### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>Supprimer l’action d’amélioration liée à Microsoft Cloud App Security
+### <a name="added-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Ajout d’une action d’amélioration liée à Microsoft Defender pour le point de terminaison
+- Corriger microsoft Defender pour la collecte de données de capteur de point de terminaison pour macOS
+- Résoudre les problèmes de communications de Microsoft Defender pour les points de terminaison pour macOS
+- Définir la longueur minimale du mot de passe sur 15 caractères ou plus dans macOS
+- Définir « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus » dans macOS
+- Définir « Âge maximal du mot de passe » sur « 90 jours ou moins, mais pas 0 » dans macOS
+- Définir le seuil de verrouillage du compte sur 5 ou moins dans macOS
+- Activer le pare-feu sur macOS
+- Activer Gatekeeper
+- Activer la Protection de l’intégrité du système (SIP)
+- Activer le chiffrement de disque FileVault
+- Définir l’écran pour le verrouillage lorsque le sériaver démarre dans macOS
+- S’assurer que le écran de veille est prêt à démarrer dans 20 minutes ou moins dans macOS
+- Dossiers d’accueil sécurisés
+- Activer la Antivirus Microsoft Defender protection en temps réel pour macOS
+- Activer Antivirus Microsoft Defender protection PUA en mode bloc pour macOS
+- Activer Antivirus Microsoft Defender protection cloud pour macOS
+- Mettre à jour Antivirus Microsoft Defender définitions de données pour macOS
+- Corriger la collecte de données du capteur Microsoft Defender pour les points de terminaison pour Linux
+- Résoudre les problèmes de communications de Microsoft Defender pour les points de terminaison pour Linux
+- Comptes d’accès non restreint
+- Activer Antivirus Microsoft Defender protection en temps réel pour Linux
+- Activer Antivirus Microsoft Defender protection PUA en mode bloc pour Linux
+- Activer Antivirus Microsoft Defender protection cloud pour Linux
+- Mettre à jour Antivirus Microsoft Defender définitions d’utilisateurs pour Linux
+
+## <a name="june-2021"></a>Juin 2021
+
+### <a name="removed-improvement-action-related-to-microsoft-cloud-app-security"></a>Suppression de l’action d’amélioration liée à Microsoft Cloud App Security
 
 - Utilisez Sécurité des applications cloud pour détecter un comportement anormal.
 
-## <a name="february-2021"></a>Février 2021
+## <a name="february-2021"></a>Février 2021
 
 ### <a name="compatibility-with-graph-api"></a>Compatibilité avec l’API Graph de connexion
 
 Les recommandations de Niveau de sécurité Microsoft Graph api auront l’apparence et seront pondérées de la même manière que les recommandations que vous voyez actuellement dans le Centre de sécurité Microsoft 365 de sécurité Microsoft.
 
-## <a name="january-2021"></a>Janvier 2021
+## <a name="january-2021"></a>Janvier 2021
 
 ### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Ajout de notre première recommandation de sécurité pour Microsoft Teams
 
 Microsoft Teams clients voient « Empêcher les utilisateurs anonymes de participer à des réunions » comme nouvelle action d’amélioration du score de sécurité.
 
-## <a name="december-2020"></a>Décembre 2020
+## <a name="december-2020"></a>Décembre 2020
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de six actions d’amélioration liées aux comptes pour Microsoft Defender for Endpoint :
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de six actions d’amélioration liées aux comptes pour Microsoft Defender pour Endpoint :
 
 - Définir « Longueur minimale du mot de passe » sur « 14 caractères ou plus »
 - Définir « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus »
@@ -65,25 +93,25 @@ Microsoft Teams clients voient « Empêcher les utilisateurs anonymes de partici
 - Désactiver le compte Administrateur intégré
 - Désactiver le compte invité intégré
 
-## <a name="november-2020"></a>Novembre 2020
+## <a name="november-2020"></a>Novembre 2020
 
 ### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Suppression de la possibilité de créer des tickets ServiceNow via secure score 
 
-La possibilité de créer des tickets ServiceNow via secure score en allant sur **Share > ServiceNow** n’est plus disponible. Merci de vos commentaires et de votre support continu pendant que nous déterminons les étapes suivantes.
+La possibilité de créer des tickets ServiceNow via Secure Score en allant sur **Share > ServiceNow** n’est plus disponible. Merci de vos commentaires et de votre support continu pendant que nous déterminons les étapes suivantes.
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de trois actions d’amélioration liées aux services pour Microsoft Defender for Endpoint :
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de trois actions d’amélioration liées aux services pour Microsoft Defender pour Endpoint :
 
 - Corriger le chemin d’accès au service sans Windows services
 - Modifier le chemin d’accès exécutable du service à un emplacement protégé commun
 - Modifier le compte de service pour éviter le mot de passe mis en cache dans le Registre Windows
 
-## <a name="october-2020"></a>Octobre 2020
+## <a name="october-2020"></a>Octobre 2020
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Supprimer l’action d’amélioration liée à Microsoft Defender pour le point de terminaison
+### <a name="removed-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Suppression de l’action d’amélioration liée à Microsoft Defender pour le point de terminaison
 
 - Configurer la vérification Microsoft Defender SmartScreen Windows contenu web d’application du Store pour avertir
 
-## <a name="august-2020"></a>Août 2020
+## <a name="august-2020"></a>Août 2020
 
 ### <a name="updated-improvement-action-for-azure-active-directory"></a>Action d’amélioration mise à jour pour Azure Active Directory
 
@@ -91,9 +119,9 @@ La possibilité de créer des tickets ServiceNow via secure score en allant sur 
 
 ## <a name="incompatibility-with-identity-secure-score"></a>Incompatibilité avec identity secure score
 
-Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié. Ces modifications permettent une vue plus souple et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score.
+Dans la version récente de Microsoft Secure Score, un modèle de notation amélioré a été publié. Ces modifications permettent une vue plus flexible et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score.
 
-Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En attendant, les clients voient des différences dans les scores signalés par le Score de sécurité Microsoft et le score de sécurité d’identité. Nous vous excusons de tout désagrément causé par cette situation et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
+Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En attendant, les clients voient des différences dans les scores signalés par le Score de sécurité Microsoft et le score de sécurité d’identité. Nous vous excusons pour les désagréments que cela provoque et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
 
 ## <a name="updated-improvement-actions"></a>Actions d’amélioration mises à jour
 
@@ -104,7 +132,7 @@ Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En at
 
 ## <a name="updated-interface-and-functionality"></a>Interface et fonctionnalités mises à jour
 
-* Toutes les nouvelles vues de mesures et de tendances pour les discussions ciso et au niveau des responsables
+* Toutes les nouvelles vues de mesures et de tendances pour les discussions CISO et au niveau des responsables
 * Nouvelles méthodes de suivi et d’évaluation de votre score
 * Amélioration du suivi et de la compréhension des régressions de score
 * Filtrer, baliser, rechercher et grouper vos actions d’amélioration
@@ -113,10 +141,10 @@ Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En at
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 
-Si vous avez des problèmes, faites-le nous savoir en publiant dans la communauté sécurité, confidentialité [& conformité.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Nous surveillons la communauté et fournirons de l’aide.
+Si vous rencontrez des problèmes, faites-le nous savoir en publiant dans la communauté [Sécurité, confidentialité et conformité](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous supervisons la communauté et vous fournirons de l’aide.
 
 ## <a name="related-resources"></a>Ressources connexes
 
 - [Évaluer votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
-- [Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
-- [Nouveautés](microsoft-secure-score-whats-coming.md)
+- [Suivez votre historique de score de sécurité Microsoft et répondez aux objectifs](microsoft-secure-score-history-metrics-trends.md)
+- [Ce qui est à venir](microsoft-secure-score-whats-coming.md)
