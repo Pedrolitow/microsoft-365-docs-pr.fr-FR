@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de fidélisation pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ?
-ms.openlocfilehash: bd3ed5e354ee80831cb1af073b6da6f277418b51
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: a58b50aeea2cfd223e54d1dd4d2c4aa91026afe8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689036"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624019"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -56,9 +56,7 @@ Les membres de votre équipe de conformité, appelés à créer et gérer des st
 
 Au lieu d'utiliser ce rôle par défaut, vous pouvez créer un nouveau groupe de rôles et y ajouter le rôle **Gestion de la rétention**. Pour un rôle en lecture seule, utilisez la **Gestion de rétention en lecture seule**. 
 
-Pour plus d’informations sur les groupes de rôles et les rôles, consultez [Autorisations dans le Centre de Sécurité et de Conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
-
-Pour obtenir des instructions sur l’ajout d’utilisateurs aux groupes de rôles et l’attribution de rôles, consultez [Autoriser l’accès au Centre de Sécurité et de Conformité aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour obtenir des instructions pour ajouter des utilisateurs aux rôles par défaut ou créer vos propres groupes de rôles, consultez [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md).
 
 Ces autorisations ne sont nécessaires que pour créer, configurer et appliquer des politiques de rétention et des étiquettes de rétention. La personne qui configure ces stratégies et étiquettes n’a pas besoin d’avoir un accès au contenu.
 

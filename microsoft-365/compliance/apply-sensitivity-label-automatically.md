@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 2f873482dc351050a87993420e718f6de87ac218
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3f1d3a7ee191377a22f5411578f5e267c8e7d345
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227530"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624235"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -85,7 +85,7 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 
 |Fonctionnalité ou comportement|Paramètre de l’étiquette : étiquetage automatique des fichiers et des e-mails  |Stratégie : étiquetage automatique|
 |:-----|:-----|:-----|
-|Dépendance de l’application|[Oui](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Non \* |
+|Dépendance de l’application|Oui ([versions minimales](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |Non \* |
 |Limiter par emplacement|Non |Oui |
 |Conditions : classifieurs formés|Oui |Non |
 |Conditions : options de partage et options supplémentaires pour le courrier électronique|Non |Oui |
@@ -142,33 +142,17 @@ Vous pouvez en savoir plus sur ces options de configuration dans la documentatio
 De même, de même que la configuration de stratégie DLP, vous pouvez choisir si une condition doit détecter tous les types d’informations sensibles ou seulement l’un d’eux. Pour améliorer la flexibilité ou la complexité de vos conditions, vous pouvez ajouter [des groupes et utiliser des opérateurs logiques entre les groupes](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 > [!NOTE]
-> Les stratégies d’étiquetage automatique basées sur des types d’informations sensibles personnalisés s’appliquent uniquement au contenu nouvellement créé ou modifié dans OneDrive et SharePoint, et non au contenu existant.
+> L’étiquetage automatique basé sur des types d’informations sensibles personnalisés s’applique uniquement au contenu nouvellement créé ou modifié dans OneDrive et SharePoint ; pas au contenu existant. Cette limitation s’applique également aux stratégies d’étiquetage automatique.
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configuration des classifieurs pouvant être formés pour une étiquette
 
-Cette option est actuellement en préversion. Si vous utilisez cette option, assurez-vous d’avoir publié dans votre client au moins une autre étiquette de confidentialité configurée pour l’étiquetage automatique et [l’option Types d’informations sensibles](#configuring-sensitive-info-types-for-a-label).
+Si vous utilisez cette option, assurez-vous d’avoir publié dans votre client au moins une autre étiquette de confidentialité configurée pour l’étiquetage automatique et [l’option Types d’informations sensibles](#configuring-sensitive-info-types-for-a-label).
 
 Lorsque vous sélectionnez l’option **Classifieurs pouvant être formés**, sélectionnez un ou plusieurs classifieurs pouvant être formés prédéfinis. Si vous avez créé vos propres classifieurs pouvant être formés personnalisés, vous pouvez également les sélectionner :
 
 ![Options pour les classifieurs pouvant être formés et les étiquettes de confidentialité](../media/sensitivity-labels-classifers.png)
 
-> [!CAUTION]
-> Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. N’utilisez pas ce classifieur intégré et si vous l’utilisez actuellement, vous devez déplacer vos processus métier. Nous vous recommandons d’utiliser les classifieurs intégrés de **Harcèlement ciblée** , de **blasphème** et de **Menace** à la place.
-
 Pour plus d’informations sur ces classifieurs, voir [En savoir plus sur les classifieurs de formation](classifier-learn-about.md).
-
-Pendant la période de préversion pour cette option, les applications suivantes prennent en charge les classifieurs pouvant être formés pour les étiquettes de confidentialité :
-
-- Les applications Microsoft 365 pour les entreprises ([anciennement Office 365 ProPlus](/deployoffice/name-change)) pour Windows, actuellement en cours de déploiement sur le [Canal actuel](/deployoffice/overview-update-channels#current-channel-overview) dans la version 2006 et les versions ultérieures :
-    - Word
-    - Excel
-    - PowerPoint
-
-- Office pour les applications Web, lorsque vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) :
-    - Word
-    - Excel
-    - PowerPoint
-    - Outlook
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Recommander que l’utilisateur applique une étiquette de critère de sensibilité
 
@@ -219,7 +203,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
     - Lors de l’exécution de la stratégie d’étiquetage automatique, le fichier ne doit pas être ouvert par un autre processus ni un autre utilisateur. Un fichier examiné pour la modification est inclus dans cette catégorie.
 
 - Si vous envisagez d’utiliser des [types d’informations sensibles personnalisés](sensitive-information-type-learn-about.md) plutôt que les types de sensibilité prédéfinis :
-    - Les types d’informations de confidentialité personnalisées s’appliquent uniquement au contenu ajouté ou modifié dans SharePoint ou OneDrive une fois les types d’informations de confidentialité personnalisés appliqués.
+    - Les types d’informations de confidentialité personnalisées s’appliquent uniquement au contenu ajouté ou modifié dans SharePoint ou OneDrive une fois les types d’informations de confidentialité personnalisés créés.
     - Pour tester de nouveaux types d’informations sensibles personnalisés, créez-les avant de créer votre stratégie d’étiquetage automatique, puis créez de nouveaux documents avec des exemples de données pour pouvoir les tester.
 
 - Une ou plusieurs étiquettes de confidentialité [créées et publiées](create-sensitivity-labels.md) (à au moins un utilisateur) que vous pouvez sélectionner pour vos stratégies d’étiquetage automatique. Pour ces étiquettes :

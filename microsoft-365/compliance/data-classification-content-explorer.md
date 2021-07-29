@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: b39dd09012e7cde6c19ea88a0915154da84c712a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ad08bc1435f950b2c97ae13112b1d5b0b3aa6f83
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114214"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624043"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -33,21 +33,21 @@ L’Explorateur de contenu de la classification des données vous permet d’aff
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-Chaque compte qui accède et utilise la classification de données doit posséder une licence pour l’un des abonnements suivants :
+Chaque compte qui accède et utilise la classification de données doit posséder une licence pour l’un des abonnements suivants :
 
-- Microsoft 365 (E5)
-- Office 365 (E5)
+- Microsoft 365 (E5)
+- Office 365 (E5)
 - Complément Conformité avancée (E5)
 - Complément Threat Intelligence avancé (E5)
-- Microsoft 365 E5/A5, Protection des informations et gouvernance
-- Conformité Microsoft 365 E5/A5
+- Microsoft 365 E5/A5, Protection des informations et gouvernance
+- Conformité Microsoft 365 E5/A5
 
 
 ### <a name="permissions"></a>Autorisations
 
 Pour accéder à l’onglet Explorateur de contenu, un compte doit être affecté à une appartenance dans l’un de ces rôles ou groupes de rôles. 
 
-**Groupes de rôles Microsoft 365**
+**Groupes de rôles Microsoft 365**
 
 - Administrateur général
 - Administrateur de conformité
@@ -64,11 +64,11 @@ L’accès à l’explorateur de contenu est fortement restreint, car il vous pe
 > [!IMPORTANT]
 > Ces autorisations remplacent les autorisations attribuées localement aux éléments, ce qui permet d’afficher le contenu. 
 
-Il existe deux rôles qui octroient l’accès à l’Explorateur de contenu et l’accès à celui-ci à l’aide du [Centre de sécurité et de conformité Microsoft](https://protection.office.com/permissions):
+Il existe deux rôles qui accordent l’accès à l’Explorateur de contenu et il est accordé à l’aide du [Centre de conformité](https://compliance.microsoft.com/permissions) :
 
-- **Visionneuse de liste de l’explorateur de contenu** : l’appartenance à ce groupe de rôle vous permet d’afficher chaque élément et son emplacement dans la liste. Le rôle `data classification list viewer` a été pré-attribué à ce groupe de rôles.
+- **Visionneuse de liste de l’explorateur de contenu** : l’appartenance à ce groupe de rôle vous permet d’afficher chaque élément et son emplacement dans la liste. Le rôle `data classification list viewer` a été pré-attribué à ce groupe de rôles.
 
-- **Visionneuse de contenu de l’Explorateur de contenu** : l’appartenance à ce groupe de rôles vous permet d’afficher le contenu de chaque élément de la liste. Le rôle `data classification content viewer` a été pré-attribué à ce groupe de rôles.
+- **Visionneuse de contenu de l’Explorateur de contenu** : l’appartenance à ce groupe de rôles vous permet d’afficher le contenu de chaque élément de la liste. Le rôle `data classification content viewer` a été pré-attribué à ce groupe de rôles.
 
 Le compte que vous utilisez pour accéder à l’Explorateur de contenu doit se trouver dans l’un des groupes de rôles ou les deux. Il s’agit de groupes de rôles indépendants qui ne sont pas cumulatifs. Par exemple, si vous voulez accorder à un compte la possibilité d’afficher les éléments et leur emplacement uniquement, attribuez des droits à la visionneuse de liste de l’Explorateur de contenu. Si vous souhaitez que ce même compte puisse également afficher le contenu des éléments de la liste, vous pouvez également octroyer des droits de visionneuse de contenu dans l’Explorateur de contenu.
 
@@ -82,10 +82,10 @@ L’Explorateur de contenu présente un instantané actuel des éléments qui on
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
-Une [stratégie DLP](dlp-learn-about-dlp.md) peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut des [définitions pour de nombreux types d’informations sensibles courants](sensitive-information-type-entity-definitions.md) provenant de nombreuses régions différentes qui sont prêtes à l’emploi. Par exemple, un numéro de carte bancaire, des numéros de compte bancaire, des numéros d’identification nationaux et des numéros de service Windows Live ID.
+Une [stratégie DLP](dlp-learn-about-dlp.md) peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut des [définitions pour de nombreux types d’informations sensibles courants](sensitive-information-type-entity-definitions.md) provenant de nombreuses régions différentes qui sont prêtes à l’emploi. Par exemple, un numéro de carte bancaire, des numéros de compte bancaire, des numéros d’identification nationaux et des numéros de service Windows Live ID.
 
 > [!NOTE]
-> Actuellement, l’explorateur de contenu n’analyse pas les types d’informations sensibles dans Exchange Online.
+> Actuellement, l’explorateur de contenu n’analyse pas les types d’informations sensibles dans Exchange Online.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -127,13 +127,13 @@ Lorsque **SharePoint** ou **OneDrive** sont les emplacement sélectionnés, l’
 > [!NOTE]
 > **OneDrive** Nous avons écouté vos précieux commentaires sur l’intégration de OneDrive pendant notre programme d’évaluation. Sur la base de ces commentaires, la fonctionnalité OneDrive restera en préversion jusqu’à ce que tous les correctifs soient en place. En fonction de votre client, certains utilisateurs peuvent ne pas voir OneDrive comme un emplacement. Nous apprécions votre soutien sans faille sur ce projet.
 
-Vous pouvez effectuer une recherche sur les éléments suivants :
+Vous pouvez effectuer une recherche sur les éléments suivants :
 
 
 |valeur|exemple  |
 |---------|---------|
 |nom complet du site    |`https://contoso.onmicrosoft.com/sites/sitename`    |
-|nom du dossier racine : obtient tous les sous-dossiers    | `/sites`        |
+|nom du dossier racine : obtient tous les sous-dossiers    | `/sites`        |
 |nom du fichier    |    `RES_Resume_1234.txt`     |
 |texte au début du nom de fichier| `RES`|
 |texte après un caractère de soulignement (_) dans le nom de fichier|`Resume` ou `1234`| 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 2a7330cff56f053f7714a88d8d3519cb0cd3cbaa
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878123"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621666"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -49,7 +49,7 @@ Pour accéder à l’onglet **Destruction** dans le Centre de conformité Micros
 
 Pour accorder aux utilisateurs uniquement les autorisations dont ils ont besoin pour les révisions avant destruction sans leur permettre d'afficher et de configurer d'autres fonctionnalités pour la conservation et la gestion des documents, créez un groupe de rôles personnalisé (par exemple, appelé « Réviseurs avant destruction ») et attribuez à ce groupe le rôle de **Gestion des destructions**.
 
-Pour obtenir des instructions pour configurer ces autorisations, reportez-vous à la rubrique [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour obtenir des instructions pour ajouter des utilisateurs aux rôles par défaut ou créer vos propres groupes de rôles, consultez [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md).
 
 En outre :
 

@@ -2,8 +2,8 @@
 title: Créer des stratégies d’application
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des stratégies d’application.
-ms.openlocfilehash: 66d8dda7c9cd768d6971e2b58dca4c9c5437e5bb
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 317254714188bd1118a5ba285c5cc91f050abd28
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438059"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619170"
 ---
 # <a name="create-app-policies"></a>Créer des stratégies d’application
 
@@ -63,13 +63,13 @@ La gouvernance des applications inclut ces modèles pour générer des alertes p
 | Nouvelle application avec des autorisations à privilèges élevés | Met en évidence toutes les nouvelles applications disposant d’autorisations à privilèges élevés pour identifier les applications potentielles à encombrement élevé qui peuvent nécessiter une investigation plus approfondie. <br><br> Par défaut, cette stratégie signalera toutes les applications enregistrées au cours des sept derniers jours qui disposent d’autorisations étendues. |
 |||
 
-### <a name="app-certification"></a>Certification des applications
+### <a name="m365-certification"></a>Certification M365
 
-La gouvernance des applications inclut ces modèles pour générer des alertes pour la certification des applications.
+La gouvernance des applications inclut ces modèles pour générer des alertes pour la certification M365.
 
 | Nom du modèle | Description |
 |:-------|:-----|
-| Nouvelle application non certifiée | Met en évidence les nouvelles applications qui n’ont pas fait l’objet du processus de certification des applications pour s’assurer qu’elles sont attendues dans le client. <br><br> Par défaut, cette stratégie signale toutes les applications qui ont été inscrites au cours des 7 derniers jours et qui ne sont pas certifiées. |
+| Nouvelle application non certifiée | Met en évidence les nouvelles applications qui n’ont pas fait l’objet du processus de certification M365 pour s’assurer qu’elles sont attendues dans le client. <br><br> Par défaut, cette stratégie signale toutes les applications qui ont été inscrites au cours des 7 derniers jours et qui ne sont pas certifiées. |
 |||
 
 ## <a name="custom-app-policies"></a>Stratégies d’application personnalisées
@@ -109,7 +109,7 @@ Voici les conditions disponibles pour une stratégie d’application personnalis
 |Condition | Valeurs de condition acceptées | Plus d’informations |
 |:-------|:-----|:-------|
 | Âge de l’inscription de l’application | Au cours des X derniers jours |  |
-| Certification des applications | Conformité de base, conformité MCAS ou N/A | [Certification Microsoft 365](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
+| Certification M365 | Conformité de base, conformité MCAS ou N/A | [Certification Microsoft 365](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
 | Vérification de l’éditeur | Oui ou Non | [Vérification de l’éditeur](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
 | Autorisation de l’application | Sélectionnez une ou plusieurs entrées dans la liste. | [Référence des autorisations de Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference) |
 | Autorisation déléguée | Sélectionnez une ou plusieurs entrées dans la liste. | [Référence des autorisations de Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference) |
@@ -127,11 +127,7 @@ Voici les conditions disponibles pour une stratégie d’application personnalis
 | Taux d’erreur | Le taux d’erreur est supérieur à X% au cours des 7 derniers jours, où X est une valeur définie par l’administrateur |  |
 ||||
 
-<!--
-NOTE TO WRITER: Replace X in the above table with correct values.
--->
-
-Toutes les conditions spécifiées doivent être remplies pour que cette stratégie d’application s’applique.
+Toutes les conditions spécifiées doivent être remplies pour que cette stratégie d’application génère une alerte.
 
 Lorsque vous avez terminé de spécifier les conditions, sélectionnez **Enregistrer**, puis sélectionnez **Suivant**.
 

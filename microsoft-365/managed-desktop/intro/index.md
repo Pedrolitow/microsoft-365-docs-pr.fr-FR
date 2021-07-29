@@ -1,5 +1,5 @@
 ---
-title: Microsoft Managed Desktop est-il fait pour vous ?
+title: Qu’est-ce que Microsoft Managed Desktop ?
 description: Orientation du service et raccourcis vers les articles pour les différents publics
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e70a67f9472dff155b8554d5d6ae26c79d49a67a
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8748426b18bb488c1d2ad7c78e88a26ee7617120
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362616"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621534"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
 
