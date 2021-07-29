@@ -17,31 +17,31 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
 ms.technology: mde
-ms.openlocfilehash: 71215c4988351644cfa4d79503c097c932caf9d6
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0c69b5287551f731a68701d5dbcbb461974598e3
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164757"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591114"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>Attribuer à l’utilisateur l’accès Centre de sécurité Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Azure Active Directory
 - Office 365
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender pour le point de terminaison prend en charge deux méthodes de gestion des autorisations :
 
 - **Gestion des autorisations de base**: définissez les autorisations en accès total ou en lecture seule.
-- Contrôle d’accès basé sur un rôle **(RBAC)**: définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations sur le contrôle d’accès basé sur un rôle, voir Gérer l’accès au portail à l’aide du contrôle [d’accès basé sur un rôle.](rbac.md)
+- Contrôle d’accès basé sur les rôles **:** définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations sur le contrôle d’accès basé sur un rôle, voir Gérer l’accès au portail à l’aide du contrôle [d’accès basé sur un rôle.](rbac.md)
 
 > [!NOTE]
 > Si vous avez déjà attribué des autorisations de base, vous pouvez basculer vers RBAC à tout moment. Prenez en compte les considérations suivantes avant d’effectuer le basculement :

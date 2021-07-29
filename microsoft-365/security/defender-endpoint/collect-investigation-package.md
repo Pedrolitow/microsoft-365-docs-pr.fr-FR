@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4cf60ea73ea907be9c10b2dd9562a0ea60127f2d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2b0b987f12888de6c04d33f711112bf2e400d448
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289894"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591294"
 ---
 # <a name="collect-investigation-package-api"></a>API collecter un package d’examen
 
@@ -32,12 +32,11 @@ ms.locfileid: "53289894"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## <a name="api-description"></a>Description de l’API
 
@@ -51,10 +50,10 @@ Collecter un package d’examen à partir d’un appareil.
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application | Machine.CollectForensics | « Collecter les enquêtes légales »
-Déléguée (compte professionnel ou scolaire) | Machine.CollectForensics | « Collecter les enquêtes légales »
+Application|Machine.CollectForensics|« Collecter les enquêtes légales »
+Déléguée (compte professionnel ou scolaire)|Machine.CollectForensics|« Collecter les enquêtes légales »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
@@ -70,18 +69,18 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
-Content-Type | string | application/json. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
+Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Paramètre | Type | Description
+Parameter|Type|Description
 :---|:---|:---
-Commentaire | Chaîne | Commentaire à associer à l’action. **Obligatoire**.
+Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 

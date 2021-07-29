@@ -16,26 +16,26 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 21d17ee789a4757df10e99514f23cfc26b186405
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3d52e9d2d6fc10cfd58a6d658bb01f5b7bfa1c83
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166196"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591306"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>Activer l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
 
 L’accès conditionnel est une fonctionnalité qui vous permet de mieux protéger vos utilisateurs et les informations d’entreprise en vous assurez que seuls les appareils sécurisés ont accès aux applications.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4byD1]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4byD1]
 
 Avec l’accès conditionnel, vous pouvez contrôler l’accès aux informations d’entreprise en fonction du niveau de risque d’un appareil. Cela permet de conserver les utilisateurs de confiance sur des appareils de confiance à l’aide d’applications fiables.
 
@@ -63,9 +63,9 @@ Pour résoudre le risque trouvé sur un appareil, vous devez le remettre à l’
 Il existe trois façons de résoudre un risque :
 1. Utilisez la correction manuelle ou automatisée.
 2. Résoudre les alertes actives sur l’appareil. Cela permet de supprimer le risque de l’appareil.
-3. Vous pouvez supprimer l’appareil des stratégies actives et, par conséquent, l’accès conditionnel ne sera pas appliqué à l’appareil. 
+3. Vous pouvez supprimer l’appareil des stratégies actives et, par conséquent, l’accès conditionnel ne sera pas appliqué sur l’appareil. 
 
-La correction manuelle nécessite qu’un administrateur secops examine une alerte et adresse le risque visible sur l’appareil. La correction automatisée est configurée par le biais des paramètres de configuration fournis dans la section suivante, [Configurer l’accès conditionnel](configure-conditional-access.md).
+La correction manuelle nécessite qu’un administrateur secops examine une alerte et adresse le risque visible sur l’appareil. La correction automatisée est configurée par le biais des paramètres de configuration fournis dans la section suivante, [Configurer l’accès conditionnel.](configure-conditional-access.md)
 
 Lorsque le risque est supprimé par le biais d’une correction manuelle ou automatisée, l’appareil revient à un état conforme et l’accès aux applications est accordé.
 

@@ -1,5 +1,5 @@
 ---
-title: Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison
+title: Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 description: Découvrez comment fonctionnent les files d’attente des alertes Microsoft Defender pour les points de terminaison, et comment trier et filtrer des listes d’alertes.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
 search.product: eADQiWindows 10XVcnh
@@ -17,21 +17,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4570e04b53f5469242f1c05d808e6aae80663b6d
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934332"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591270"
 ---
-# <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison
+# <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Defender pour le point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink)
 
 La **file d’attente Alertes** affiche la liste des alertes qui ont été signalées à partir d’appareils de votre réseau. Par défaut, la file d’attente affiche les alertes visibles au cours des 30 derniers jours dans un affichage groupé. Les alertes les plus récentes sont affichés en haut de la liste pour vous aider à voir les alertes les plus récentes en premier.
 
@@ -59,7 +59,7 @@ Vous pouvez appliquer les filtres suivants pour limiter la liste des alertes et 
 Gravité de l’alerte | Description
 :---|:---
 Élevé </br>(Rouge) | Alertes couramment associées à des menaces avancées persistantes (APT). Ces alertes indiquent un risque élevé en raison de la gravité des dommages qu’elles peuvent causer sur les appareils. Voici quelques exemples : activités des outils de vol d’informations d’identification, activités de ransomware non associées à un groupe, falsification des capteurs de sécurité ou toute activité malveillante indiquant un adversaire humain.
-Moyenne </br>(Orange) | Les alertes provenant protection évolutive des points de terminaison comportements post-violation qui peuvent faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
+Moyen </br>(Orange) | Alertes provenant protection évolutive des points de terminaison comportements post-violation susceptibles de faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
 Faible </br>(Jaune) | Alertes sur les menaces associées à des programmes malveillants répandus. Par exemple, les outils de piratage, les outils de piratage non malveillants, tels que l’exécution de commandes d’exploration, l’effacement des journaux, etc., qui n’indiquent souvent pas de menace avancée ciblant l’organisation. Elle peut également être le fait d’un outil de sécurité isolé testé par un utilisateur de votre organisation.
 Informatif </br>(Gris) | Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent sensibiliser l’organisation à des problèmes de sécurité potentiels.
 
@@ -90,7 +90,7 @@ Le tableau ci-dessous répertorie les catégories actuelles et la façon dont el
 | Commande et contrôle  | CommandAndControl   | Connexion à une infrastructure réseau contrôlée par des personnes malveillantes pour relayer des données ou recevoir des commandes                                          |
 | Accès aux informations d’identification    | CredentialAccess    | Obtention d’informations d’identification valides pour étendre le contrôle sur les appareils et les autres ressources du réseau                                       |
 | Défense      | DefenseEvasion      | Éviter les contrôles de sécurité en désinserrant, par exemple, les applications de sécurité, en supprimant des contrôles de sécurité et en exécutant des rootkits                        |
-| Discovery            | Discovery           | Collecte d’informations sur les appareils et les ressources importants, tels que les ordinateurs d’administrateur, les contrôleurs de domaine et les serveurs de fichiers  |
+| Découverte            | Découverte           | Collecte d’informations sur les appareils et les ressources importants, tels que les ordinateurs d’administrateur, les contrôleurs de domaine et les serveurs de fichiers  |
 | Exécution            | Exécution           | Lancement d’outils malveillants et de code malveillant, y compris les rats et les backdoors                                                             |
 | Exfiltration         | Exfiltration        | Extraction de données du réseau vers un emplacement externe contrôlé par l’attaquant                                                         |
 | Exploit              | Exploit             | Code d’exploitation et activité d’exploitation possible                                                                                       |
@@ -121,7 +121,7 @@ Vous pouvez choisir entre l’affichage des alertes qui vous sont affectées ou 
 
 ### <a name="detection-source"></a>Source de détection
 
-Sélectionnez la source qui a déclenché la détection d’alerte. Spécialistes des menaces Microsoft participants peuvent désormais filtrer et voir les détections à partir du nouveau service de repérage géré par des experts en menaces.
+Sélectionnez la source qui a déclenché la détection d’alerte. Spécialistes des menaces Microsoft prévisualisation des participants peuvent désormais filtrer et voir les détections à partir du nouveau service de repérage géré par des experts en menaces.
 
 >[!NOTE]
 >Le filtre Antivirus s’affiche uniquement si les appareils utilisent Antivirus Microsoft Defender comme produit anti-programme malveillant de protection en temps réel par défaut.

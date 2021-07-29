@@ -16,27 +16,27 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97a64c8537ff2a6f9948ed6ed056b8aa7379ce69
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 23940fc05e08dec6074dbdc420d529425cec0027
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222334"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595821"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>Tirer les détections vers vos outils SIEM
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="pull-detections-using-security-information-and-events-management-siem-tools"></a>Détections de pull à l’aide des outils de gestion des événements et des informations de sécurité (SIEM)
 
 >[!NOTE]
->- [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) se compose d’une ou de plusieurs détections.
+>- [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) est composé d’une ou plusieurs détections.
 >- [Microsoft Defender pour la détection des points](api-portal-mapping.md) de terminaison est composé de l’événement suspect qui s’est produit sur l’appareil et de ses détails d’alerte associés.
 >-The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. Pour plus d’informations, voir [Méthodes et propriétés d’alerte et](alerts.md) Liste des [alertes.](get-alerts.md)
 
@@ -47,7 +47,7 @@ Defender pour le point de terminaison prend actuellement en charge les outils de
 - IBM QRadar
 - Micro Focus ArcSight
 
-D’autres solutions SIEM (telles que Splunk, RSA NetWitness) sont pris en charge via un modèle d’intégration différent basé sur la nouvelle API d’alerte. Pour plus d’informations, consultez la page [Application](https://securitycenter.microsoft.com/interoperability/partners) partenaire et sélectionnez la section Informations sur la sécurité et Analyse pour plus d’informations.
+D’autres solutions SIEM (telles que Splunk, RSA NetWitness) sont pris en charge via un modèle d’intégration différent basé sur la nouvelle API d’alerte. Pour plus d’informations, consultez la page [Application](https://securitycenter.microsoft.com/interoperability/partners) partenaire et sélectionnez la section Informations sur la sécurité et analyse pour plus d’informations.
 
 Pour utiliser l’un de ces outils SIEM pris en charge, vous devez :
 

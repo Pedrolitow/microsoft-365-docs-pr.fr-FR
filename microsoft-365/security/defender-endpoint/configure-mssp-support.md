@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d82bffd6eea54256f2c6773f843030a19e27275d
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: de6b3168736811859d29df7e725b3e6eb821deec
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339357"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595841"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>Configurer l’intégration des fournisseurs de services de sécurité gérés
 
@@ -31,7 +31,7 @@ ms.locfileid: "53339357"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
  
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -39,7 +39,7 @@ Vous devez suivre les étapes de configuration suivantes pour activer l’intég
 
 >[!NOTE]
 >Les termes suivants sont utilisés dans cet article pour faire la distinction entre le fournisseur de services et le consommateur de services :
-> - MSSP : organisations de sécurité qui offrent de surveiller et de gérer les appareils de sécurité d’une organisation.
+> - MSSP : organisations de sécurité qui offrent la surveillance et la gestion des périphériques de sécurité pour une organisation.
 > - Clients MSSP : organisations qui engagent les services des MSSP.
 
 L’intégration permettra aux MSSP d’agir comme suit :
@@ -51,7 +51,7 @@ L’intégration permettra aux MSSP d’agir comme suit :
 Avant que les MSSP ne prennent ces mesures, le client MSSP doit accorder l’accès à son client Defender for Endpoint afin que le MSSP puisse accéder au portail. 
  
 
-En règle générale, les clients MSSP prennent les étapes de configuration initiales pour accorder aux MSSP l’accès à Windows Defender client central de sécurité. Une fois l’accès accordé, d’autres étapes de configuration peuvent être réalisées par le client MSSP ou le MSSP.
+En règle générale, les clients MSSP prennent les étapes de configuration initiales pour accorder aux MSSP l’accès Windows Defender client central de sécurité. Une fois l’accès accordé, d’autres étapes de configuration peuvent être réalisées par le client MSSP ou le MSSP.
 
 
 En règle générale, les étapes de configuration suivantes doivent être prises :

@@ -1,7 +1,7 @@
 ---
 title: Blocage et confinement comportementaux
 description: En savoir plus sur les fonctionnalités de blocage du comportement et de blocage de contenu dans Microsoft Defender pour point de terminaison
-keywords: Microsoft Defender pour le point de terminaison, PEPT en mode blocage, blocage du mode passif
+keywords: Microsoft Defender pour le point de terminaison, PEPT en mode bloc, blocage en mode passif
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 02502269c1f33a0aba6ef0102a87116020026411
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 241cb48a42d7e5dfe27fbe38110e19bbf9cc69ab
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567379"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591018"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocage et confinement comportementaux
 
@@ -32,13 +32,13 @@ ms.locfileid: "53567379"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Présentation
 
 Aujourd’hui, le paysage [](/windows/security/threat-protection/intelligence/fileless-threats) des menaces est dépassé par les programmes malveillants sans fichier et qui se trouvent en dehors de la région, les menaces hautement polymorphes qui mutent plus rapidement que les solutions traditionnelles peuvent suivre et les attaques gérées par l’homme qui s’adaptent à ce que les adversaires trouvent sur des appareils compromis. Les solutions de sécurité traditionnelles ne sont pas suffisantes pour arrêter ces attaques ; vous avez besoin de fonctionnalités d’intelligence artificielle (IA) et d’apprentissage des appareils (ML), telles que le blocage du comportement et le contenu, inclus dans Defender pour point de [terminaison.](/windows/security)
 
-Les fonctionnalités de blocage du comportement et de blocage du contenu peuvent aider à identifier et à arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. Les composants et fonctionnalités de protection, PEPT et Defender for Endpoint nouvelle génération fonctionnent ensemble dans le blocage du comportement et les fonctionnalités de blocage du contenu.
+Les fonctionnalités de blocage comportemental et de contenu peuvent aider à identifier et à arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. Les composants et fonctionnalités de protection, PEPT et Defender for Endpoint nouvelle génération fonctionnent ensemble dans le blocage du comportement et les fonctionnalités de blocage du contenu.
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Blocage et confinement comportementaux":::
 
@@ -48,7 +48,7 @@ Les fonctionnalités de blocage du comportement et de blocage du contenu fonctio
 
 - [La détection et la réponse](overview-endpoint-detection-response.md) des points de terminaison (PEPT) reçoivent des signaux de sécurité sur le réseau, les appareils et le comportement du noyau. Lorsque des menaces sont détectées, des alertes sont créées. Plusieurs alertes du même type sont regroupées en incidents, ce qui permet à votre équipe des opérations de sécurité d’examiner et de répondre plus facilement.
 
-- [Defender pour](overview-endpoint-detection-response.md) le point de terminaison dispose d’une large gamme d’optiques entre les identités, le courrier électronique, les données et les applications, en plus des signaux de comportement réseau, de point de terminaison et de noyau reçus par le biais de PEPT. Un composant de [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender for Endpoint traite et met en corrélation ces signaux, lève des alertes de détection et connecte les alertes associées dans les incidents.
+- [Defender pour](overview-endpoint-detection-response.md) le point de terminaison dispose d’une large gamme d’optiques entre les identités, le courrier électronique, les données et les applications, en plus des signaux de comportement réseau, de point de terminaison et de noyau reçus via PEPT. Un composant de [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender for Endpoint traite et met en corrélation ces signaux, lève des alertes de détection et connecte les alertes associées dans les incidents.
 
 Avec ces fonctionnalités, d’autres menaces peuvent être évitées ou bloquées, même si elles commencent à s’exécutent. Chaque fois qu’un comportement suspect est détecté, la menace est contenue, des alertes sont créées et des menaces sont arrêtées dans leurs pistes.
 
@@ -105,7 +105,7 @@ Cet exemple montre comment les modèles d’apprentissage des appareils basés s
 
 Comme décrit dans le dernier billet de blog, Blocage et contenu comportementaux : transformation de l’optique en [protection,](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection)en janvier 2020, Defender for Endpoint a détecté une activité d’escalade de privilèges sur un appareil d’une organisation. Une alerte appelée « Escalade de privilèges possible à l’aide du relais NTLM » a été déclenchée.
 
-:::image type="content" alt-text="Alerte NTLM pour les programmes malveillants de la sécurité" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
+:::image type="content" alt-text="Alerte NTLM pour les programmes malveillants de la logiciel malveillant NTLM" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
 
 La menace s’est transformée en programme malveillant . Il s’agissait d’une variante nouvelle, qui n’a pas été vue avant, d’un outil de piratage d’ordinateurs, appeléSySerring, qui est utilisé par les attaquants pour obtenir une escalade de privilèges sur un appareil.
 
@@ -119,7 +119,7 @@ Cet exemple montre qu’avec les fonctionnalités de blocage du comportement et 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [En savoir plus sur Defender pour le point de terminaison](overview-endpoint-detection-response.md)
+- [En savoir plus sur Defender pour point de terminaison](overview-endpoint-detection-response.md)
 
 - [Configurer vos règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 

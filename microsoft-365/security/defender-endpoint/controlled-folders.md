@@ -17,22 +17,22 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: c60620d2a589c8473764b810d1fcb0e24f674451
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 82cc897cf8ae2289c83111a27bb8d82b401a86c9
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904055"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595749"
 ---
-# <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec un accès contrôlé aux dossiers
+# <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>Qu’est-ce que l’accès contrôlé aux dossiers ?
 
@@ -58,7 +58,7 @@ Les applications peuvent également être ajoutées manuellement à la liste de 
 
 ## <a name="why-controlled-folder-access-is-important"></a>Pourquoi l’accès contrôlé aux dossiers est-il important ?
 
-L’accès contrôlé aux dossiers est particulièrement utile pour protéger vos documents et informations contre les [ransomware.](https://www.microsoft.com/wdsi/threats/ransomware) Dans le cas d’une attaque par ransomware, vos fichiers peuvent être chiffrés et maintenus en maison d’amis. Une fois l’accès contrôlé aux dossiers en place, une notification s’affiche sur l’ordinateur sur lequel une application a tenté d’apporter des modifications à un fichier dans un dossier protégé. Vous pouvez [personnaliser la notification avec](customize-attack-surface-reduction.md#customize-the-notification) les détails et les coordonnées de votre entreprise. Vous pouvez également activer les règles individuellement pour personnaliser les techniques que la fonctionnalité surveille.
+L’accès contrôlé aux dossiers est particulièrement utile pour protéger vos documents et informations contre les [ransomware.](https://www.microsoft.com/wdsi/threats/ransomware) Dans le cas d’une attaque par ransomware, vos fichiers peuvent être chiffrés et maintenus en maison d’amis. Une fois l’accès contrôlé aux dossiers en place, une notification s’affiche sur l’ordinateur sur lequel une application a tenté d’apporter des modifications à un fichier dans un dossier protégé. Vous pouvez [personnaliser la notification](customize-attack-surface-reduction.md#customize-the-notification) avec les informations et les coordonnées de l’entreprise. Vous pouvez également activer les règles individuellement pour personnaliser les techniques analysées par la fonctionnalité.
 
 Les [dossiers protégés incluent les dossiers](#review-controlled-folder-access-events-in-windows-event-viewer) système courants (y compris les secteurs de démarrage) et vous pouvez [ajouter d’autres dossiers.](customize-controlled-folders.md#protect-additional-folders) Vous pouvez également [autoriser les applications](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) à leur donner accès aux dossiers protégés.
 
@@ -89,9 +89,9 @@ Windows système sont protégés par défaut, ainsi que plusieurs autres dossier
 
 L’accès contrôlé aux dossiers [nécessite l’activation Antivirus Microsoft Defender protection en temps réel.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans le portail Microsoft 365 Defender
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Microsoft 365 Defender portail
 
-Defender for Endpoint fournit des rapports détaillés sur les événements et les blocages dans le cadre de ses [scénarios](investigate-alerts.md) d’investigation d’alerte dans le portail Microsoft 365 Defender. (Voir [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender.)](../defender/microsoft-365-security-center-mde.md)
+Defender for Endpoint fournit des rapports détaillés sur les événements et les blocages dans le cadre de ses [scénarios](investigate-alerts.md) d’investigation d’alerte dans Microsoft 365 Defender portail. (Voir [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender.)](../defender/microsoft-365-security-center-mde.md)
 
 Vous pouvez interroger Microsoft Defender pour obtenir des données de point de terminaison à l’aide du [recherche avancée.](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection) Si vous utilisez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour voir comment les paramètres d’accès contrôlé aux dossiers auraient une incidence sur votre environnement s’ils étaient activés. [](advanced-hunting-overview.md)
 
@@ -107,14 +107,14 @@ DeviceEvents
 Vous pouvez consulter le journal Windows événements pour voir les événements créés lorsque l’accès contrôlé aux dossiers bloque (ou audite) une application :
 
 1. Téléchargez le [package d’évaluation](https://aka.ms/mp7z2w) et *extrayez* le fichiercfa-events.xmlun emplacement facilement accessible sur l’appareil.
-2. Tapez **Observateur d’événements** dans le menu Démarrer pour ouvrir l Windows’observateur d’événements.
+2. Tapez **l’Observateur** d’événements menu Démarrer pour ouvrir l Windows’observateur d’événements.
 3. Dans le panneau gauche, sous **Actions,** **sélectionnez Importer un affichage personnalisé...**.
 4. Accédez à l’endroit où *vous avezcfa-events.xml* et sélectionnez-le. Vous pouvez également [copier le XML directement.](event-views.md)
 5. Sélectionnez **OK**.
 
 Le tableau suivant indique les événements liés à l’accès contrôlé aux dossiers :
 
-|ID de l'événement | Description |
+|ID d’événement | Description |
 |:---|:---|
 |5007 | Événement lorsque les paramètres sont modifiés |
 |1124 | Événement d’accès contrôlé aux dossiers audité | 

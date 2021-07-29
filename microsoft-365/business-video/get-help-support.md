@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous devez être administrateur d’un abonnement professionnel pour obtenir de l’aide sur l’administrateur ou un support en ligne ou par téléphone dans Microsoft 365 Business Premium.
-ms.openlocfilehash: c33506a17ea7c99902025b613e27168606e7ff03
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 982c36ba5c941b2269fbdc59a66fa65e1baa903c
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394820"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595017"
 ---
 # <a name="get-support"></a>Obtenir une assistance
 
@@ -46,15 +46,11 @@ Commencez par [vérifier l’état d’intégrité actuel de vos services](../en
 
 Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons à trouver une solution, ou vous connecterons avec un spécialiste qui vous contactera par e-mail ou téléphone.
 
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. (Pour plus d’informations, consultez [Au sein de mon entreprise, qui dispose d’autorisations d’administration ?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. (Pour plus d’informations, consultez [Au sein de mon entreprise, qui dispose d’autorisations d’administration ?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
 
-2. Sélectionnez le bouton **Vous avez besoin d’aide ?**
+1. Si les résultats ne vous satisfont pas, sélectionnez **Contacter le support**.
 
-3. Dans le volet **Vous avez besoin d’aide ?**, indiquez-nous en quoi vous avez besoin d’aide, puis appuyez sur **Entrer**.
-
-4. Si les résultats ne vous satisfont pas, sélectionnez **Contacter le support**.
-
-5. Entrez une description de votre problème, confirmez le numéro auquel vous contacter et votre adresse de courrier, sélectionnez votre méthode de contact préférée, puis sélectionnez **Me contacter**. Le temps d’attente prévu est indiqué dans le volet **Vous avez besoin d’aide ?**.
+1. Entrez une description de votre problème, confirmez le numéro auquel vous contacter et votre adresse de courrier, sélectionnez votre méthode de contact préférée, puis sélectionnez **Me contacter**. Le temps d’attente prévu est indiqué dans le volet **Vous avez besoin d’aide ?**.
 
 ## <a name="phone-support"></a>Support téléphonique
 

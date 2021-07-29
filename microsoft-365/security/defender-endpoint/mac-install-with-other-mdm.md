@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f980c7121a8796f2cf48cc85c401ed499b4b581b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: f998a39a1e6407e0f14530b6bb237bc8b6aba6fd
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542284"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591078"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur macOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "53542284"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
@@ -52,7 +52,7 @@ Si votre organisation utilise une solution de gestion des périphériques mobile
 Microsoft Defender pour le point de terminaison sur macOS ne dépend d’aucune fonctionnalité propre au fournisseur. Il peut être utilisé avec n’importe quelle solution DE GESTION DES SOLUTIONS QUI prend en charge les fonctionnalités suivantes :
 
 - Déployez un .pkg macOS sur des appareils gérés.
-- Déployer des profils de configuration système macOS sur des appareils gérés.
+- Déployez les profils de configuration système macOS sur les appareils gérés.
 - Exécutez un outil/script arbitraire configuré par l’administrateur sur des appareils gérés.
 
 La plupart des solutions mdm modernes incluent ces fonctionnalités, mais elles peuvent les appeler différemment.
@@ -68,7 +68,7 @@ La plupart des solutions MDM utilisent le même modèle pour la gestion des appa
 
 ### <a name="package"></a>Package
 
-Configurez le déploiement d’un [package d’application](mac-install-with-jamf.md) [requis,](mac-install-with-jamf.md)avec le package d’installation (wdav.pkg) téléchargé à partir Centre de sécurité Microsoft Defender .
+Configurez le déploiement d’un [package d’application](mac-install-with-jamf.md)requis, avec le package d’installation (wdav.pkg) téléchargé à partir [Microsoft 365 Defender portail.](mac-install-with-jamf.md)
 
 Pour déployer le package dans votre entreprise, utilisez les instructions associées à votre solution MDM.
 
@@ -78,7 +78,7 @@ Configurer un [profil de configuration système.](mac-install-with-jamf.md)
 
 Votre solution MDM peut l’appeler « Profil Paramètres personnalisé », car Microsoft Defender pour endpoint sur macOS ne fait pas partie de macOS.
 
-Utilisez la liste des propriétés, jamf/WindowsDefenderATPOnboarding.plist, qui peut être extraite d’un package d’intégration téléchargé à partir [Centre de sécurité Microsoft Defender](mac-install-with-jamf.md).
+Utilisez la liste des propriétés, jamf/WindowsDefenderATPOnboarding.plist, qui peut être extraite d’un package d’intégration téléchargé à partir Microsoft 365 Defender [portail.](mac-install-with-jamf.md)
 Votre système peut prendre en charge une liste de propriétés arbitraire au format XML. Vous pouvez télécharger le fichier jamf/WindowsDefenderATPOnboarding.plist tel qu’il est dans ce cas.
 Vous pouvez également avoir besoin de convertir d’abord la liste des propriétés dans un autre format.
 
@@ -116,7 +116,7 @@ Accordez un accès disque total aux composants suivants :
 
 ### <a name="network-extension-policy"></a>Stratégie d’extension réseau
 
-Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender for Endpoint sur macOS inspecte le trafic de socket et signale ces informations au portail du centre de sécurité Microsoft 365. La stratégie suivante permet à l’extension réseau d’effectuer cette fonctionnalité.
+Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender for Endpoint sur macOS inspecte le trafic de socket et signale ces informations au portail Microsoft 365 Defender. La stratégie suivante permet à l’extension réseau d’effectuer cette fonctionnalité.
 
 - Type de filtre : Plug-in
 - Identificateur de l’ensemble de plug-ins : `com.microsoft.wdav`

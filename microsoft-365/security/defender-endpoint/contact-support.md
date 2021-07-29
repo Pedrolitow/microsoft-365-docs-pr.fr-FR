@@ -1,6 +1,6 @@
 ---
 title: Contacter le support Microsoft Defender pour point de terminaison
-description: Découvrez comment contacter le support microsoft Defender pour le point de terminaison
+description: Découvrez comment contacter microsoft Defender pour la prise en charge des points de terminaison
 keywords: support, contact, support premier, solutions, problèmes, cas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b4954906ace6e2171a18e23a4eb64c66e1cf844
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 1c65b4b617ce0d1f156f7bf078ebac1f03706f88
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543385"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595785"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter le support Microsoft Defender pour point de terminaison
 
@@ -32,9 +32,9 @@ ms.locfileid: "53543385"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender pour le point de terminaison a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
+Defender for Endpoint a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
 
 Le nouveau widget permet aux clients de :
 - Trouver des solutions aux problèmes courants
@@ -43,7 +43,7 @@ Le nouveau widget permet aux clients de :
 ## <a name="prerequisites"></a>Configuration requise
 Il est important de connaître les rôles spécifiques qui sont autorisés à ouvrir des cas de support.
 
-Au minimum, vous devez avoir un rôle d’administrateur du support technique **ou** d’administrateur du support technique.
+Au minimum, vous devez avoir un rôle d’administrateur du support technique **OU** d’administrateur du support technique.
 
 
 Pour plus d’informations sur les rôles qui ont des autorisations, voir les [autorisations d’administrateur de sécurité.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Les rôles qui incluent l’action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
@@ -83,15 +83,16 @@ Découvrez comment ouvrir des tickets de support en contactant le support de Def
 > Si vous avez un contrat de support permier avec Microsoft, vous verrez la balise premier sur le widget. Si ce n’est pas le cas, contactez votre gestionnaire de comptes Microsoft.
 
 ### <a name="contact-support"></a>Contacter le support technique
-Cette option est disponible en cliquant sur l’icône qui ressemble à un casque. Vous recevez ensuite la page suivante pour soumettre votre dossier de support : :::image type="content" source="../../media/contactsupport2.png" alt-text="contactez le support technique 2":::
+Cette option est disponible en cliquant sur l’icône qui ressemble à un casque. Vous recevez ensuite la page suivante pour soumettre votre dossier de support : </br>
 
-![Image du widget ouvrir une demande de service](images/contact-support-screen.png)
+:::image type="content" source="../../media/contactsupport2.png" alt-text="contacter le support technique 2"::: </br>
+
 
 1. Remplissez un titre et une description du problème auquel vous êtes confronté, ainsi qu’un numéro de téléphone et une adresse de messagerie où nous pouvons vous joindre.
 
 2. (Facultatif) Inclure jusqu’à cinq pièces jointes pertinentes pour le problème afin de fournir un contexte supplémentaire pour le cas de support. 
 
-3. Sélectionnez votre fuseau horaire et une autre langue, le cas échéant. La demande est envoyée à l’équipe de support Technique Microsoft. L’équipe répondra prochainement à votre demande de service.
+3. Sélectionnez votre fuseau horaire et une autre langue, le cas échéant. La demande est envoyée à l’équipe de support technique Microsoft. L’équipe répondra prochainement à votre demande de service.
 
 
 ## <a name="related-topics"></a>Voir aussi

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples positifs et négatifs à examiner. Une fois que le classifieur est formé, vous confirmez que ses résultats sont exacts. Ensuite, vous l’utilisez pour rechercher le contenu de votre organisation et le classer pour appliquer des étiquettes de rétention ou de confidentialité ou l’inclure dans des stratégies de protection contre la perte de données (DLP) ou de rétention.
-ms.openlocfilehash: 1881e4de87fd41f21bb1f2236d46391b3a1ed785
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu pour le labling ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
+ms.openlocfilehash: 2a98d3d889b1f2d51c795a8668c46ef4e0d7d93e
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114050"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53594945"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -38,15 +38,15 @@ Cette méthode nécessite un juge humain et une action. Un administrateur peut u
 Cette catégorie de mécanismes de classification inclut la recherche de contenu par :
 
 - Mots clés ou valeurs de métadonnées (langage de requête de mot clé).
-- À l’aide de modèles précédemment identifiés d’informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire (définitions d’entité [de type d’informations sensibles)](sensitive-information-type-entity-definitions.md).
+- En utilisant des modèles précédemment identifiés d’informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire (définitions d’entité de [type d’informations sensibles)](sensitive-information-type-entity-definitions.md).
 - Reconnaissance d’un élément, car il s’agit d’une variante d’un modèle [(impression avec le doigt du document).](document-fingerprinting.md)
-- Utilisation de la présence de chaînes exactes [(correspondance exacte des données)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- En utilisant la présence de chaînes exactes [(correspondance exacte des données).](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 Les étiquettes de sensibilité et de rétention peuvent ensuite être appliquées automatiquement pour rendre le contenu disponible pour utilisation dans En savoir plus sur la protection contre la perte de données [)](dlp-learn-about-dlp.md)et appliquer automatiquement des stratégies pour les [étiquettes de rétention.](apply-retention-labels-automatically.md)
 
 ## <a name="classifiers"></a>Classifieurs
 
-Cette méthode de classification est particulièrement adaptée au contenu qui n’est pas facilement identifié par les méthodes manuelles ou automatisées de correspondance de modèle. Cette méthode de classification consiste davantage à former un classifieur à identifier un élément en fonction de ce qu’il est, et non par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en regardant des centaines d’exemples de contenu que vous souhaitez classer. Commencez par lui donner des exemples qui sont certainement dans la catégorie. Une fois qu’il les traite, vous le testez en lui donnant un mélange d’exemples correspondants et non correspondants. Le classifieur effectue ensuite des prédictions quant à l’entrée d’un élément donné dans la catégorie que vous construisez. Vous confirmez ensuite ses résultats, en triant les vrais positifs, les vrais négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prédictions. 
+Cette méthode de classification est particulièrement adaptée au contenu qui n’est pas facilement identifié par les méthodes manuelles ou automatisées de correspondance de modèle. Cette méthode de classification consiste davantage à former un classifieur à identifier un élément en fonction de ce qu’il est, et non par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en regardant des centaines d’exemples du contenu que vous souhaitez classer. Commencez par lui donner des exemples qui sont certainement dans la catégorie. Une fois qu’il les traite, vous le testez en lui donnant un mélange d’exemples correspondants et non correspondants. Le classifieur effectue ensuite des prédictions quant à l’entrée d’un élément donné dans la catégorie que vous construisez. Vous confirmez ensuite ses résultats, en triant les vrais positifs, les vrais négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prédictions. 
 
 Lorsque vous publiez le classifieur, il trie les éléments dans des emplacements tels que SharePoint Online, Exchange et OneDrive, et classifie le contenu. Après avoir publié le classificateur, vous pouvez continuer à l’entraîner à l’aide d’un processus de commentaires semblable au processus de formation initial.
 
@@ -61,7 +61,7 @@ Les étiquettes de sensibilité peuvent utiliser des classifieurs comme conditio
 ## <a name="types-of-classifiers"></a>Types de classifieurs
 
 - **Classifieurs pré-formés** : Microsoft a créé et pré-formé un certain nombre de classifieurs que vous pouvez commencer à utiliser sans les former. Ces classifieurs apparaissent avec l’état `Ready to use` de .
-- **classifieurs personnalisés** : si vous avez des besoins de classification qui s’étendent au-delà de ce que couvrent les classifieurs pré-formés, vous pouvez créer et former vos propres classifieurs.
+- **classifieurs personnalisés** : si vous avez des besoins de classification qui étendent au-delà de ce que couvrent les classifieurs pré-formés, vous pouvez créer et former vos propres classifieurs.
 
 ### <a name="pre-trained-classifiers"></a>Classifieurs pré-formés
 
@@ -70,7 +70,7 @@ Microsoft 365 est livré avec cinq classifieurs pré-formés :
 > [!CAUTION]
 > Nous déprécions  le classificateur de langage choquant pré-entraîné, car il a produit un grand nombre de faux positifs. Ne l’utilisez pas et si vous l’utilisez actuellement, vous devez en déplacer vos processus d’entreprise. Nous vous recommandons plutôt **d’utiliser** les classifieurs pré-formés contre les menaces, les blasphémités et le harcèlement.  
 
-- Cv : détecte les éléments qui sont des comptes textuels des **qualifications** personnelles, pédagogiques, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
+- **Cv :** détecte les éléments qui sont des comptes textuels de qualifications personnelles, pédagogiques, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
 - **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 langages de programmation informatique les plus utilisés sur GitHub
     - ActionScript
     - C
@@ -101,14 +101,19 @@ Microsoft 365 est livré avec cinq classifieurs pré-formés :
 
 - **Harcèlement**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés à une conduite choquante ciblant un ou plusieurs individus en fonction des caractéristiques suivantes : course, ancienneté, genre, origine nationale, sexe, orientation sexuelle, âge, handicap/invalidité
 - **Blasphémité**: détecte une catégorie spécifique d’éléments de texte de langage choquant qui contiennent des expressions qui gênent la plupart des personnes
-- **Menace**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés aux menaces de violence ou d’atteinte physique à une personne ou à une propriété
+- **Menace**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés aux menaces de violence ou d’atteinte physique ou de dommages à une personne ou à une propriété
+- **Discrimination**: détecte un langage explicite de discrimination et est particulièrement sensible au langage de discrimination à l’encontre des communautés américaine/noire d’Afrique par rapport aux autres communautés.
 
-Ceux-ci apparaissent dans **l Microsoft 365 de classification** des données du centre de conformité avec l’état de  >    >   `Ready to use` .
+> [!IMPORTANT]
+> Le classifieur ne peut être formé qu’en tant que prévisualisation publique pour les clients dont Microsoft 365 clients sont hébergements dans des centres de données en Amérique du Nord. Pour voir où votre client Microsoft 365 est Administration Microsoft 365, ouvrez le centre Administration Microsoft 365 et accédez à l’emplacement des données de profil d’organisation Paramètres  >  **l’organisation.**  >    >   
+
+Ceux-ci apparaissent dans **la vue Centre de conformité Microsoft 365** classification des données avec  >    >   l’état de `Ready to use` .
 
 ![classifieurs-pré-formés-classifieurs](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> Veuillez noter que le langage choquant, le harcèlement, la blasphémité et les classifieurs de menaces fonctionnent uniquement avec du texte utilisable dans une recherche et ne sont pas exhaustifs ou complets.  En outre, les normes linguistiques et culturelles changent continuellement et, à la lumière de ces exigences, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Bien que les classifieurs peuvent aider votre organisation à surveiller les langages choquants et autres utilisés, ils ne répondent pas aux conséquences de ce langage et ne sont pas destinés à fournir l’unique moyen de surveillance ou de réponse de votre organisation à l’utilisation de ce langage. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’application, au blocage, à la suppression et à la rétention de tout contenu identifié par un classificateur pré-formé.
+> Veuillez noter que le langage choquant, le harcèlement, la blasphémité, la discrimination et les classifieurs de menaces fonctionnent uniquement avec du texte utilisable dans une recherche et ne sont pas une liste exhaustive ou complète de termes ou de langues dans ces domaines. En outre, les normes linguistiques et culturelles changent continuellement et, à la lumière de ces exigences, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Bien que les classifieurs aident votre organisation à détecter ces domaines, ils ne sont pas destinés à fournir l’unique moyen de détecter ou d’adresser l’utilisation de ce langage dans votre organisation. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’analyse, au blocage, à la suppression et à la rétention de tout contenu identifié par un classifieur pré-formé, y compris la conformité avec la confidentialité locale et d’autres lois applicables. Microsoft encourage les conseils juridiques avant le déploiement et l’utilisation.
+
 
 ### <a name="custom-classifiers"></a>Classifieurs personnalisés
 
@@ -116,7 +121,7 @@ Lorsque les classifieurs pré-formés ne répondent pas à vos besoins, vous pou
 
 Par exemple, vous pouvez créer des classifieurs entraisables pour :
  
-- Documents juridiques : par exemple, privilège client avocat, jeux de fermeture, déclaration de travail
+- Documents juridiques : par exemple, privilège client avocat, ensembles de fermeture, déclaration de travail
 - Documents d’entreprise stratégiques : communiqués de presse, fusion et acquisition, transactions, plans commerciaux ou commerciaux, propriété intellectuelle, brevets, documents de conception
 - Informations tarifaires : par exemple, factures, devis, commandes de travail, documents d’auteur 
 - Informations financières , telles que les investissements organisationnels, les résultats trimestrielles ou annuels    
@@ -138,6 +143,6 @@ Vous pouvez améliorer la précision de tous les classifieurs personnalisés et 
 - [Étiquettes de rétention](retention.md)
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Étiquettes de confidentialité](sensitivity-labels.md)
-- [Définitions des entités de type information sensible](sensitive-information-type-entity-definitions.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [Impression des doigts du document](document-fingerprinting.md)
 - [Correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
