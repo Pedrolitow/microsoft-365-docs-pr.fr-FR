@@ -1,7 +1,7 @@
 ---
-title: Trimming de sécurité des rubriques Microsoft
-ms.author: efrene
-author: efrene
+title: Le trimming de sécurité dans Sujets Microsoft Viva
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -11,19 +11,19 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: None
-description: Vue d’ensemble de l’utilisation de la sécurité pour afficher les rubriques.
-ms.openlocfilehash: a7146592edb356b4d46a5a178b5754dc0de6a7c0
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+description: Découvrez comment la sécurité est utilisée pour afficher les rubriques dans rubriques Topics.
+ms.openlocfilehash: 4edf66a16546766a1738090cabf5ede3a5951fc3
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939622"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622123"
 ---
-# <a name="microsoft-viva-topics-security-trimming"></a>Trimming de sécurité des rubriques Microsoft 
+# <a name="security-trimming-in-microsoft-viva-topics"></a>Le trimming de sécurité dans Sujets Microsoft Viva
 
 Les utilisateurs de rubriques Topics ne peuvent pas afficher les informations dans les rubriques que leurs autorisations Office 365 existantes les empêchent de voir. Tout ce qu'un utilisateur voit sur une page thématique (par exemple, sites SharePoint, documents, fichiers) sera une information qu'il est déjà autorisé à consulter. Rubriques Viva n’a apporté aucune modification aux autorisations existantes.
 
-## <a name="why-two-users-may-have-different-views-of-the-same-topic"></a>Pourquoi deux utilisateurs peuvent avoir des vues différentes de la même rubrique
+## <a name="why-two-users-might-have-different-views-of-the-same-topic"></a>Pourquoi deux utilisateurs peuvent avoir des vues différentes de la même rubrique
 
 Lorsqu’une rubrique est créée via l’IA ou le traitement manuel, elle peut contenir une description de la rubrique, des autres noms, des personnes associées à la rubrique, ainsi que des sites, pages et fichiers associés à la rubrique. Lorsque ces informations sont visualées sur une page de rubrique, il est possible que deux utilisateurs qui visualisent la même rubrique ne voient pas les mêmes informations.
   
@@ -53,13 +53,13 @@ Les rubriques peuvent contenir des informations générées par l’IA et des in
 
  - Les informations d’une rubrique ajoutée par l’IA ne sont visibles que pour les personnes ayant accès au contenu source.
  - La description de la rubrique et les informations sur les personnes qui ont été manuellement ajoutées ou modifiées par un collaborateur de rubrique ou un gestionnaire de connaissances sont visibles par tous les utilisateurs qui peuvent consulter cette rubrique.
- - Les fichiers, pages et sites sont visibles uniquement pour les utilisateurs qui ont des autorisations sur le contenu source, qu’ils soient ajoutés ou ajoutés manuellement par l’IA.
+ - Les fichiers, les pages et les sites sont visibles uniquement par les utilisateurs qui disposent d’autorisations sur le contenu source, qu’ils soient ajoutés manuellement ou ajoutés par l’IA.
 
 Le tableau suivant décrit ce que les utilisateurs (visiteurs de rubriques, collaborateurs et gestionnaires de connaissances) peuvent voir dans une rubrique donnée en fonction de leurs autorisations.
 
 |Élément de rubrique|Ce que voient les utilisateurs|
 |:---------|:------------------|
-|Nom de la rubrique|Les utilisateurs peuvent voir le nom des rubriques dans le centre de rubriques. Certaines rubriques peuvent ne pas être visibles si les utilisateurs n’ont pas d’autorisations sur le contenu source ou ont une faible pertinence pour l’utilisateur.|
+|Nom de la rubrique|Les utilisateurs peuvent voir le nom des rubriques dans le centre de rubriques. Certaines rubriques peuvent ne pas être visibles si les utilisateurs n’ont pas d’autorisations pour le contenu source ou ont une faible pertinence pour l’utilisateur.|
 |Description de la rubrique|Les descriptions générées par l’intelligence artificielle ne sont visibles que pour les utilisateurs qui ont des autorisations sur le contenu source. Les descriptions entrées ou modifiées manuellement sont visibles par tous les utilisateurs.|
 |Personnes|Les contacts épinglés sont visibles par tous les utilisateurs. Les contacts suggérés ne sont visibles que pour les utilisateurs qui ont des autorisations sur le contenu source.|
 |Fichiers|Les fichiers ne sont visibles que pour les utilisateurs qui ont des autorisations sur le contenu source.|

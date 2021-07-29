@@ -258,6 +258,7 @@
 #### [Protection par le cloud et antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 ##### [Activer la protection par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 ##### [Spécifier le niveau de protection pour le cloud](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Protection fournie par le cloud Microsoft Defender Antivirus soumission d'échantillons](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Configurer et valider les connexions réseau à un antivirus Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)
 #### [Protéger les paramètres de sécurité avec la protection contre la falsifiation](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [ Activer le bloquage à première vue](configure-block-at-first-sight-microsoft-defender-antivirus.md)
@@ -483,6 +484,7 @@
 ####### [Obtenir les informations des IP liées à l’alerte](get-alert-related-ip-info.md)
 ####### [Obtenir les informations de l’appareil lié à l’alerte](get-alert-related-machine-info.md)
 ####### [Obtenir les informations de l’utilisateur lié à l’alerte](get-alert-related-user-info.md)
+####### [File d’attente des alertes dans Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
 
 ###### [Évaluations des vulnérabilités et configurations sécurisées]()
 ####### [Exporter des méthodes et propriétés d’évaluation](get-assessment-methods-properties.md)

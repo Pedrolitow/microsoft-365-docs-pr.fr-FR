@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 05c103cba051c7d5e7f45e5dd3feb288013ee367
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 1d1e001bd90592d51bf144908caf8afebdbaa80d
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454816"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622531"
 ---
 # <a name="manage-automation-folder-exclusions"></a>Gérer les exclusions du dossier d’automatisation 
 
@@ -32,7 +32,7 @@ ms.locfileid: "53454816"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
 Les exclusions de dossiers Automation vous permettent de spécifier les dossiers que l’examen automatisé ignorera. 
 
@@ -65,7 +65,7 @@ Vous pouvez spécifier les noms de fichiers que vous souhaitez exclure dans un r
 
 3. Entrez les détails du dossier :
 
-    - Dossier
+    - Folder
     - Extensions
     - Noms de fichiers
     - Description

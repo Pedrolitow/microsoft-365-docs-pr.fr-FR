@@ -1,7 +1,7 @@
 ---
 title: Découverte et découverte de périphériques réseau gestion des vulnérabilités
 description: Les recommandations de sécurité et la détection des vulnérabilités sont désormais disponibles pour les systèmes d’exploitation des commutateurs, routeurs, contrôleurs WLAN et pare-feu.
-keywords: périphériques réseau, détection de vulnérabilité des périphériques réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
+keywords: périphériques réseau, détection des vulnérabilités des périphériques réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d1ba87687f5650310b3b94e5827181510b3834c3
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 87bcfaababa0007b5d56c8eed8b391d7519fc001
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543652"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622063"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Découverte et découverte de périphériques réseau gestion des vulnérabilités
 
@@ -35,16 +35,16 @@ ms.locfileid: "53543652"
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]  
-> Le [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) blog sur les évaluations de la vulnérabilité et de la détection des périphériques réseau publié le \( 13/04/2021 fournit des informations sur les nouvelles fonctionnalités de découverte de périphériques réseau dans Defender pour le point de \) terminaison.  Cet article fournit une vue  d’ensemble du défi que la découverte de périphériques réseau est conçue pour résoudre, ainsi que des informations détaillées sur la façon de commencer à utiliser ces nouvelles fonctionnalités.
+> Le [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) blog sur les évaluations de la vulnérabilité et de la détection des périphériques réseau publié le \( 13/04/2021 fournit des informations sur les nouvelles fonctionnalités de découverte de périphériques réseau dans Defender pour le point de \) terminaison.  Cet article fournit une vue  d’ensemble du défi que la découverte de périphériques réseau est conçue pour répondre, ainsi que des informations détaillées sur la façon de commencer à utiliser ces nouvelles fonctionnalités.
 
 Les fonctionnalités de découverte de réseau sont disponibles dans la **section** Inventaire des appareils du centre de sécurité Microsoft 365 et des consoles Microsoft 365 Defender réseau.  
 
 Un appareil Microsoft Defender for Endpoint désigné sera utilisé sur chaque segment réseau pour effectuer des analyses authentifiées périodiques des périphériques réseau préconfigurés. Une fois découvertes, les fonctionnalités Gestion des menaces et des vulnérabilités de Defender for Endpoint fournissent des flux de travail intégrés pour sécuriser les commutateurs découverts, les routeurs, les contrôleurs WLAN, les pare-feu et les passerelles VPN.  
 
-Une fois que les périphériques réseau ont été découverts et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
+Une fois les périphériques réseau détectés et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
 
 ## <a name="approach"></a>Approche
 
@@ -57,7 +57,7 @@ Il y aura deux types d’appareils à garder à l’esprit :
 
 ### <a name="vulnerability-management-for-network-devices"></a>Gestion des vulnérabilités pour les périphériques réseau 
 
-Une fois que les périphériques réseau ont été découverts et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.  
+Une fois les périphériques réseau détectés et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.  
 
 ## <a name="operating-systems-that-are-supported"></a>Systèmes d’exploitation pris en charge
 
@@ -100,7 +100,7 @@ La première étape consiste à sélectionner un appareil qui effectuera les ana
 
 ## <a name="permissions"></a>Autorisations
 
-Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : Gérer les **paramètres de sécurité dans le Centre de sécurité.** Vous pouvez trouver l’autorisation en allant à **Paramètres**  >  **rôles**. Pour plus d’informations, voir Créer et gérer des rôles pour le contrôle [d’accès basé sur les rôles.](user-roles.md)
+Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : Gérer les **paramètres de sécurité dans le Centre de sécurité.** Vous pouvez trouver l’autorisation en allant à **Paramètres**  >  **rôles**. Pour plus d’informations, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles.](user-roles.md)
 
 ## <a name="install-the-network-scanner"></a>Installer le scanneur réseau
 
@@ -125,7 +125,7 @@ Pour terminer le processus d’inscription du scanneur réseau :
 
 2. Entrez le code et connectez-vous à l’aide d’un compte Microsoft qui dispose de l’autorisation Defender pour le point de terminaison appelée « Gérer les paramètres de sécurité dans le Centre de sécurité ».
 
-3. Lorsque vous avez terminé, vous devez voir un message vous confirmant que vous êtes bien inscrit.
+3. Lorsque vous avez terminé, vous devriez voir un message vous confirmant que vous vous êtes déjà inscrit.
 
 ## <a name="configure-a-new-assessment-job"></a>Configurer un nouveau travail d’évaluation  
 
@@ -170,11 +170,11 @@ Les appareils nouvellement découverts s’afficheront sous le nouvel onglet **P
 
 ### <a name="network-scanner-installation-has-failed"></a>Échec de l’installation du scanneur réseau
 
-Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans vos paramètres de pare-feu. Assurez-vous également que les paramètres de proxy sont configurés comme décrit dans Configurer les [paramètres de proxy](configure-proxy-internet.md)d’appareil et de connectivité Internet.
+Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans vos paramètres de pare-feu. Assurez-vous également que les paramètres proxy sont configurés comme décrit dans Configurer les [paramètres de proxy](configure-proxy-internet.md)d’appareil et de connectivité Internet.
 
 ### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>La page Microsoft.com/devicelogin web de l’application n’a pas été
 
-Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans votre pare-feu. Assurez-vous également que les paramètres de proxy sont configurés comme décrit dans Configurer les [paramètres de proxy](configure-proxy-internet.md)d’appareil et de connectivité Internet.
+Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans votre pare-feu. Assurez-vous également que les paramètres proxy sont configurés comme décrit dans Configurer les [paramètres de proxy](configure-proxy-internet.md)d’appareil et de connectivité Internet.
 
 ### <a name="network-devices-are-not-shown-in-the-device-inventory-after-several-hours"></a>Les périphériques réseau ne sont pas affichés dans l’inventaire des appareils après plusieurs heures
 

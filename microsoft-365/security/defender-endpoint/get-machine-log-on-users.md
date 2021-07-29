@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les utilisateurs de connexion de l’ordinateur
-description: Découvrez comment utiliser l’API Obtenir les utilisateurs de connexion de l’ordinateur pour récupérer une collection d’utilisateurs connectés sur un appareil dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir une connexion des utilisateurs de l’ordinateur pour récupérer une collection d’utilisateurs connectés sur un appareil dans Microsoft Defender pour endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, appareil, se connecter, utilisateurs
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 634a381ca862dc7580d82168a4b9540acc0cd394
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c789e48e1902253b66b1b54bab4432f1d42aecbd
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229022"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622651"
 ---
 # <a name="get-machine-logon-users-api"></a>API Obtenir les utilisateurs de connexion de l’ordinateur
 
@@ -30,7 +30,7 @@ ms.locfileid: "53229022"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -45,9 +45,10 @@ Récupère une collection d’utilisateurs connectés sur un appareil spécifiqu
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
+
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation |Autorisation|Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
 Application |User.Read.All |« Lire les profils utilisateur »
 Déléguée (compte professionnel ou scolaire) | User.Read.All | « Lire les profils utilisateur »
@@ -66,9 +67,9 @@ GET /api/machines/{id}/logonusers
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

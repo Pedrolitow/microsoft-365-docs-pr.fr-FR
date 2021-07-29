@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: En savoir plus sur Microsoft 365 catalogue de solutions, y compris ce qu’il contient, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5118cf6ef80513f5c276f5635ab380bdc979db46
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d98684fd7f839cb0340cce4126e1c45b43b107b8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288298"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622014"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
 
@@ -82,17 +82,11 @@ Pour visiter le catalogue Microsoft 365 solutions, connectez-vous en tant qu’a
 
 **Pourquoi le catalogue de solutions Microsoft 365 ne s’Microsoft 365-il pas ?**
 
-Tout d’abord, assurez-vous que vous avez les licences et autorisations appropriées. Ensuite, connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données [https://compliance.microsoft.com](https://compliance.microsoft.com) de conformité.
-
-**Certaines des fonctionnalités de conformité répertoriées dans la page du catalogue de solutions ne sont pas disponibles dans le Centre de conformité Microsoft 365. Que dois-je faire ?**
-
-Nous travaillons toujours pour ajouter de nouvelles fonctionnalités au Centre de conformité Microsoft 365 catalogue de solutions. Si vous ne trouvez pas de solution spécifique dans la zone de navigation, elle sera accessible lorsque la solution sera disponible dans votre abonnement.
-
-Si vous recherchez une solution de conformité existante et qu’elle n’est pas encore disponible dans le Centre de conformité Microsoft 365, vous pouvez toujours accéder aux solutions dans le Centre de conformité de sécurité existant en accédant &amp; à [https://protection.office.com](https://protection.office.com) . Vous pouvez également cliquer  sur l’onglet Plus de ressources dans le navigation de gauche du Centre de conformité Microsoft 365 et sélectionner la carte du Centre de sécurité et conformité Office 365 l’utilisateur.  
+Tout d’abord, assurez-vous que vous avez les licences et autorisations appropriées. Ensuite, connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données [https://compliance.microsoft.com](https://compliance.microsoft.com) de conformité. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- **Visitez le Gestionnaire de conformité Microsoft,** qui vous aide à comprendre l’état de conformité de votre organisation avec les principales normes et réglementations. Il fournit des actions recommandées que vous pouvez effectuer pour renforcer votre posture de conformité globale et fournit des fonctionnalités de flux de travail pour vous aider à effectuer efficacement ces actions. Pour en savoir plus, [consultez le Gestionnaire de conformité.](compliance-manager.md)
+- **Visitez le Gestionnaire de conformité Microsoft,** qui vous aide à comprendre l’état de conformité de votre organisation avec les principales normes et réglementations. Il fournit des actions recommandées que vous pouvez prendre pour renforcer votre posture de conformité globale et fournit des fonctionnalités de flux de travail pour vous aider à effectuer efficacement ces actions. Pour en savoir plus, [consultez le Gestionnaire de conformité.](compliance-manager.md)
 
 - **Configurez les stratégies** de gestion des risques internes pour réduire les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque dans votre organisation. Consultez [La gestion des risques internes.](insider-risk-management.md)
 

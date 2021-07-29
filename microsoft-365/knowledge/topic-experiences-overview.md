@@ -13,17 +13,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-description: Présentation de Rubriques Viva.
-ms.openlocfilehash: 785fddb7c951bb6f7c170971f0af4eb7ac8f9a83
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+description: Découvrez comment utiliser Rubriques Dans votre organisation.
+ms.openlocfilehash: 943b257750c11bb280fa864a1f8f49a2fb291fc2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984903"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622435"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
-Rubriques utilise la technologie Microsoft AI, Microsoft 365, Microsoft Graph, recherche et autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par SharePoint pages modernes, Recherche Microsoft et recherche dans Word, PowerPoint, Outlook et Excel.
+Rubriques utilise la technologie Microsoft AI, les Microsoft 365, Microsoft Graph, la recherche et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par SharePoint pages modernes, Recherche Microsoft et recherche dans Word, PowerPoint, Outlook et Excel.
 
 <br/>
 

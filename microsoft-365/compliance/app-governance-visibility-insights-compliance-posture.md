@@ -2,8 +2,8 @@
 title: Déterminer la posture de conformité de votre application
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Déterminez la posture de conformité de votre application.
-ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: c991c1eb513184c2dd2a64d85f64fc6190f0320f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438023"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622459"
 ---
 # <a name="determine-your-app-compliance-posture"></a>Déterminer la posture de conformité de votre application
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-La gouvernance des applications Microsoft vous permet d’évaluer rapidement la posture de conformité des applications tierces et leur accès aux données de votre client Microsoft 365 à partir de la page Vue d’ensemble de la gouvernance des applications du [Centre de conformité Microsoft 365](https://aka.ms/appgovernance).
+La gouvernance des applications Microsoft vous permet d’évaluer rapidement la posture de conformité des applications tierces et leur accès aux données de votre client Microsoft 365 à partir de la page Vue d’ensemble de la gouvernance des applications du Centre de conformité Microsoft 365.
 
 ![Page vue d’ensemble de la gouvernance des applications dans le Centre de conformité Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 

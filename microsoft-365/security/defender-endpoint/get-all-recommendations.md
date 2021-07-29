@@ -16,23 +16,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: eb009a01e36739ab5e9ec009d053a7bd4e177907
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c43a118b722cb4c42f434c097dab2b313dfddbb2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841533"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622687"
 ---
 # <a name="list-all-recommendations"></a>Répertorier toutes les actions d’amélioration
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,35 +43,37 @@ ms.locfileid: "52841533"
 Récupère la liste de toutes les recommandations de sécurité affectant l’organisation.
 
 ## <a name="permissions"></a>Autorisations
+
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   SecurityRecommendation.Read.All |   « Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire) | SecurityRecommendation.Read |  « Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
+Application|SecurityRecommendation.Read.All|« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|SecurityRecommendation.Read |« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 GET /api/recommendations
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
-
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
+
 Vide
 
 ## <a name="response"></a>Réponse
-Si elle réussit, cette méthode renvoie 200 OK avec la liste des recommandations de sécurité dans le corps.
 
+Si elle réussit, cette méthode renvoie 200 OK avec la liste des recommandations de sécurité dans le corps.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request"></a>Demande
 
 Voici un exemple de demande.
 
@@ -79,10 +81,9 @@ Voici un exemple de demande.
 GET https://api.securitycenter.microsoft.com/api/recommendations
 ```
 
-**Réponse**
+### <a name="response"></a>Réponse
 
-Voici un exemple de la réponse.
-
+Voici un exemple de réponse.
 
 ```json
 {
@@ -120,7 +121,8 @@ Voici un exemple de la réponse.
      ]
 }
 ```
+
 ## <a name="see-also"></a>Voir aussi
+
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Recommandations & sécurité des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
-

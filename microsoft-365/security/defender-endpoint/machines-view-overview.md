@@ -1,6 +1,6 @@
 ---
 title: Afficher et organiser la liste des appareils Microsoft Defender pour les points de terminaison
-description: Découvrez les fonctionnalités disponibles que vous pouvez utiliser dans la liste Appareils, telles que le tri, le filtrage et l’exportation de la liste pour améliorer les investigations.
+description: Découvrez les fonctionnalités disponibles que vous pouvez utiliser dans la liste Appareils, telles que le tri, le filtrage et l’exportation de la liste pour améliorer les examens.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87d9d768a81d8e6ddd72753fe7372f18c13254e1
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d70825f8bdcd47f17d2f61834f4353c537a033ed
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542948"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622567"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Afficher et organiser la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -32,8 +32,7 @@ ms.locfileid: "53542948"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
-
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 La **liste Appareils affiche** la liste des appareils de votre réseau sur lequel des alertes ont été générées. Par défaut, la file d’attente affiche les appareils visibles au cours des 30 derniers jours.  
 
@@ -67,8 +66,8 @@ Le niveau d’exposition reflète l’exposition actuelle de l’appareil en fon
 
 Si le niveau d’exposition indique « Aucune donnée disponible », il existe plusieurs raisons pour lesquelles cela peut être le cas :
 
-- L’appareil a cessé de signaler pendant plus de 30 jours. Dans ce cas, il est considéré comme inactif et l’exposition n’est pas calculée.
-- Le système d’exploitation de l’appareil n’est [pas pris en charge : voir la conditions minimales requises pour Microsoft Defender pour endpoint](minimum-requirements.md)
+- L’appareil a cessé de signaler pendant plus de 30 jours. Dans ce cas, il est considéré comme inactif et l’exposition n’est pas calculée
+- Le système d’exploitation de l’appareil n’est [pas pris en charge : voir les conditions minimales requises pour Microsoft Defender pour endpoint](minimum-requirements.md)
 - Appareil avec agent obsolète (très peu probable)
 
 ### <a name="os-platform"></a>Plateforme du système d’exploitation
@@ -79,9 +78,9 @@ Sélectionnez uniquement les plateformes de système d’exploitation qui vous i
 
 Filtrez selon les états d’état d’état d’appareil suivants :
 
-- **Actif** : appareils qui rapportent activement des données de capteur au service.
-- **Inactif** : appareils qui ont complètement cessé d’envoyer des signaux pendant plus de 7 jours.
-- **Mal configuré : appareils** dont les communications avec le service sont réduites ou qui ne sont pas en mesure d’envoyer des données de capteur. Les appareils mal configurés peuvent également être classés sur :
+- **Actif**: appareils qui rapportent activement des données de capteur au service.
+- **Inactif**: appareils qui ont complètement cessé d’envoyer des signaux pendant plus de 7 jours.
+- **Mal configuré : appareils** dont les communications avec le service sont réduites ou qui ne peuvent pas envoyer de données de capteur. Les appareils mal configurés peuvent également être classés sur :
   - Aucune donnée de capteur
   - Communications compromises
 

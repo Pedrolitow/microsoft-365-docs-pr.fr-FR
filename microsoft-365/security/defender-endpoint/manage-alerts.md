@@ -16,23 +16,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f03c2209b369e6fb9e001452c53073daeb5fe1c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1885d508b26e517fde4dd2ba45a562f9393ffd75
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187000"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622555"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Gérer les alertes microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Defender pour le point de terminaison vous avertit des événements malveillants, attributs et informations contextuelles possibles par le biais d’alertes. Un résumé des nouvelles alertes s’affiche dans le tableau de bord Opérations de sécurité **et** vous pouvez accéder à toutes les alertes dans la file **d’attente des alertes.**
 
@@ -50,7 +50,7 @@ Si une alerte n’est pas encore attribuée, vous pouvez sélectionner Affecter 
 
 
 ## <a name="suppress-alerts"></a>Supprimer des alertes
-Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans Centre de sécurité Microsoft Defender. Defender pour le point de terminaison vous permet de créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation.
+Il peut y avoir des scénarios dans lequel vous devez supprimer l’apparition d’alertes dans Centre de sécurité Microsoft Defender. Defender pour le point de terminaison vous permet de créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation.
 
 Les règles de suppression peuvent être créées à partir d’une alerte existante. Elles peuvent être désactivées et réactivées si nécessaire.
 
@@ -71,9 +71,9 @@ Vous pouvez utiliser les exemples du tableau suivant pour vous aider à choisir 
 | **Supprimer une alerte dans mon organisation** | Les alertes avec le même titre d’alerte sur n’importe quel appareil seront supprimées.                                                                                         | <ul><li>Un outil d’administration anodin est utilisé par tous les membres de votre organisation.</li></ul>                                                                                                                               |
 
 ### <a name="suppress-an-alert-and-create-a-new-suppression-rule"></a>Supprimez une alerte et créez une règle de suppression :
-Créez des règles personnalisées pour contrôler quand les alertes sont supprimées ou résolues. Vous pouvez contrôler le contexte de suppression d’une alerte en spécifiant le titre de l’alerte, l’indicateur de compromis et les conditions. Après avoir spécifié le contexte, vous serez en mesure de configurer l’action et l’étendue de l’alerte. 
+Créez des règles personnalisées pour contrôler quand les alertes sont supprimées ou résolues. Vous pouvez contrôler le contexte de suppression d’une alerte en spécifiant le titre de l’alerte, l’indicateur de compromis et les conditions. Après avoir spécifié le contexte, vous pourrez configurer l’action et l’étendue de l’alerte. 
 
-1. Sélectionnez l’alerte que vous souhaitez supprimer. Le volet Gestion  des alertes s’en charge.
+1. Sélectionnez l’alerte que vous souhaitez supprimer. Le volet gestion  des alertes s’en charge.
 
 2.  Sélectionnez **Créer une règle de suppression.**
 
@@ -114,8 +114,8 @@ Le responsable de l’équipe peut  également affecter l’alerte à la file d�
 
 
 
-## <a name="alert-classification"></a>Classification des alertes
-Vous pouvez choisir de ne pas définir de classification ou de spécifier si une alerte est une alerte vraie ou une fausse alerte. Il est important de fournir la classification du vrai positif/faux positif. Cette classification permet de surveiller la qualité des alertes et d’améliorer la précision des alertes. Le champ « détermination » définit une fidélité supplémentaire pour une classification « vrai positif ». 
+## <a name="alert-classification"></a>Classification de l’alerte
+Vous pouvez choisir de ne pas définir de classification ou de spécifier si une alerte est une alerte vraie ou une fausse alerte. Il est important de fournir la classification du vrai positif/faux positif. Cette classification est utilisée pour surveiller la qualité des alertes et améliorer la précision des alertes. Le champ « détermination » définit une fidélité supplémentaire pour une classification « vrai positif ». 
 
 ## <a name="add-comments-and-view-the-history-of-an-alert"></a>Ajouter des commentaires et afficher l’historique d’une alerte
 Vous pouvez ajouter des commentaires et afficher des événements historiques sur une alerte pour voir les modifications précédentes apportées à l’alerte.
@@ -127,7 +127,7 @@ Les commentaires ajoutés apparaissent instantanément dans le volet.
 
 ## <a name="related-topics"></a>Voir aussi
 - [Gérer des règles de suppression](manage-suppression-rules.md)
-- [Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison](alerts-queue.md)
+- [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)
 - [Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison](investigate-files.md)
 - [Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison](investigate-machines.md)

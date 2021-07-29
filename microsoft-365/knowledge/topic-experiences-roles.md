@@ -1,7 +1,7 @@
 ---
-title: Rôles des rubriques de Microsoft Viva
-ms.author: efrene
-author: efrene
+title: Rôles dans Sujets Microsoft Viva
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,14 +14,14 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez les rôles d’utilisateur dans Rubriques.
-ms.openlocfilehash: 9f1d3667ee9eeb05201613c15dc360b2b006cecb
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: e26f47e5826ac6db6c41e1b0648dd23398f51c43
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288070"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622291"
 ---
-# <a name="microsoft-viva-topics-roles"></a>Rôles des rubriques de Microsoft Viva 
+# <a name="roles-in-microsoft-viva-topics"></a>Rôles dans Sujets Microsoft Viva
 
 Lorsque vous utilisez Topics dans votre environnement Microsoft 365, vos utilisateurs peuvent avoir les rôles suivants :
 
@@ -54,9 +54,9 @@ Pour créer et modifier une rubrique, l’utilisateur doit :
 
 ## <a name="knowledge-managers"></a>Responsables d’informations
 
-Les responsables d’informations sont des utilisateurs qui gèrent des rubriques dans votre organisation.  La gestion des rubriques est effectuée via la page Gérer les rubriques du centre thématique. Elle est visible uniquement par les responsables d’informations.
+Les responsables d’informations sont des utilisateurs qui gèrent des rubriques dans votre organisation.  La gestion des rubriques est effectuée via la page Gérer **les rubriques** dans le centre de rubriques et elle est visible uniquement par les gestionnaires de connaissances.
 
-Dans la page Gérer les rubriques, les responsables d’informations peuvent effectuer les tâches suivantes :
+Dans la page **Gérer les rubriques,** les gestionnaires de connaissances peuvent effectuer les tâches suivantes :
 
 - Afficher les rubriques suggérées par l’IA.
 - Examinez les rubriques pour vérifier qu’elles sont valides.
@@ -69,11 +69,11 @@ Pour gérer les rubriques, l’utilisateur doit :
 - [Se faire attribuer une licence Topics par](./set-up-topic-experiences.md#assign-licenses) son Microsoft 365 administrateur.
 - [Des autorisations doivent être attribuées pour gérer les rubriques.](./topic-experiences-user-permissions.md) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques Dans la Centre d’administration Microsoft 365.
 
-Les utilisateurs qui ont une bonne connaissance globale de votre entreprise peuvent être de bons candidats au rôle de gestionnaire de connaissances. Ces personnes peuvent non seulement avoir la connaissance de savoir si les rubriques sont valides ou non, mais peuvent également connaître les personnes au sein de l’entreprise qui sont liées à ces rubriques.
+Les utilisateurs qui ont une bonne connaissance globale de votre entreprise peuvent être de bons candidats pour le rôle de gestionnaire de connaissances. Ces personnes peuvent non seulement avoir la connaissance de savoir si les rubriques sont valides ou non, mais peuvent également connaître les personnes au sein de l’entreprise qui sont liées à ces rubriques.
 
 ## <a name="knowledge-admins"></a>Administrateurs d’informations
 
-Les administrateurs du savoir sont des administrateurs qui configurent et configurent Topics dans votre environnement Microsoft 365 de gestion. Ils gèrent également les paramètres De La Rubriques Une fois la configuration terminée. Le rôle d’administrateur du savoir nécessite que vous soyez un administrateur Microsoft 365 ou un administrateur SharePoint, car la configuration et la gestion sont réalisées dans le Centre d’administration Microsoft 365.
+Les administrateurs du savoir sont des administrateurs qui configurent et configurent Des rubriques Dans votre environnement Microsoft 365 de connaissances. Ils gèrent également les paramètres De Rubriques à l’issue de la configuration. Le rôle d’administrateur du savoir nécessite que vous soyez un administrateur Microsoft 365 ou un administrateur SharePoint, car la configuration et la gestion sont réalisées dans le Centre d’administration Microsoft 365.
 Lors de l’installation, les administrateurs du savoir peuvent configurer Topics pour :
 
 - Sélectionnez les sites SharePoint à analyser pour les rubriques.

@@ -1,7 +1,7 @@
 ---
 title: Créer et gérer des groupes d’appareils dans Microsoft Defender pour le point de terminaison
-description: Créer des groupes d’appareils et définir des niveaux de correction automatisés en confirmant les règles qui s’appliquent au groupe
-keywords: groupes d’appareils, groupes, correction, niveau, règles, groupe aad, rôle, attribuer, rang
+description: Créer des groupes d’appareils et définir des niveaux de correction automatisés sur ces derniers en confirmant les règles qui s’appliquent au groupe
+keywords: groupes d’appareils, groupes, correction, niveau, règles, groupe aad, rôle, attribuer, classement
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49bd90d8a082f55622e54976cc8fc78229d8c646
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 33d3cf5d8f42f21f62f3542342092a0330c17ee5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453536"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622579"
 ---
 # <a name="create-and-manage-device-groups"></a>Créer et gérer des groupes d’appareils
 
@@ -32,7 +32,7 @@ ms.locfileid: "53453536"
 - Azure Active Directory
 - Office 365
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 Dans un scénario d’entreprise, un ensemble d’appareils est généralement affecté aux équipes chargées des opérations de sécurité. Ces appareils sont regroupés en fonction d’un ensemble d’attributs tels que leurs domaines, noms d’ordinateur ou balises désignées.
@@ -50,7 +50,7 @@ Vous pouvez créer des groupes d’appareils dans le contexte de l’accès bas�
 
 Dans le cadre du processus de création d’un groupe d’appareils, vous devez :
 - Définissez le niveau de correction automatisé pour ce groupe. Pour plus d’informations sur les niveaux de correction, voir [Utiliser l’examen automatisé pour examiner et corriger les menaces.](automated-investigations.md)
-- Spécifiez la règle correspondante qui détermine quel groupe d’appareils appartient au groupe en fonction du nom de l’appareil, du domaine, des balises et de la plateforme du système d’exploitation. Si un appareil est également en correspondance avec d’autres groupes, il est ajouté uniquement au groupe d’appareils le mieux classé.
+- Spécifiez la règle correspondante qui détermine quel groupe d’appareils appartient au groupe en fonction du nom de l’appareil, du domaine, des balises et de la plateforme du système d’exploitation. Si un appareil est également en correspondance avec d’autres groupes, il est ajouté uniquement au groupe d’appareils le plus élevé.
 - Sélectionnez le groupe d’utilisateurs Azure AD qui doit avoir accès au groupe d’appareils.
 - Classer le groupe d’appareils par rapport aux autres groupes après sa création.
 
@@ -105,7 +105,7 @@ Les définitions de groupe d’appareils peuvent également inclure plusieurs va
 > Utilisez l’opérateur « OR » entre les lignes du même type de condition, qui autorise plusieurs valeurs par propriété.
 > Vous pouvez ajouter jusqu’à 10 lignes (valeurs) pour chaque type de propriété : balise, nom de l’appareil, domaine.
 
-Pour plus d’informations sur la liaison aux définitions de groupes d’appareils, voir Groupes d’appareils [- Microsoft 365 sécurité.](https://sip.security.microsoft.com/homepage)
+Pour plus d’informations sur la liaison aux définitions de groupes d’appareils, voir [Groupes d’appareils - Microsoft 365 sécurité.](https://sip.security.microsoft.com/homepage)
 
 ## <a name="related-topics"></a>Voir aussi
 
