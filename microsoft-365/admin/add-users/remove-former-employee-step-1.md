@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services.
-ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 69108539a87e9db4aa72851e5622a5f3856d3a45
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177116"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541624"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Étape 1 : empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services
 
@@ -46,7 +47,7 @@ Si vous devez empêcher immédiatement l’accès à la signature d’un utilisa
 Dans l’heure qui s’affiche( ou après avoir quitté la page de Microsoft 365 en cours), ils sont invités à se ré-inscrire. Un jeton d’accès est bon pendant une heure, donc la chronologie dépend du temps qui reste sur ce jeton et de la façon dont il quitte la page web actuelle.
   
 > [!IMPORTANT]
-> Si l’utilisateur est Outlook sur le web, il se peut qu’il ne soit pas immédiatement mis hors de la boîte aux lettres en cliquant dessus. Dès qu’ils sélectionnent une autre vignette, telle que OneDrive, ou actualisent leur navigateur, la signature est lancée.
+> Si l’utilisateur est Outlook sur le web, il se peut qu’il ne soit pas immédiatement mis hors de la boîte aux lettres en cliquant dessus. Dès qu’ils sélectionnent une autre vignette, OneDrive, ou actualisent leur navigateur, la signature est lancée.
   
 Pour utiliser PowerShell pour décrémenter un utilisateur immédiatement, consultez l’cmdlet [Revoke-AzureADUserAllRefreshToken.](/powershell/module/azuread/revoke-azureaduserallrefreshtoken)
   
@@ -68,4 +69,9 @@ Si vous avez des messages électroniques dans le cadre de votre abonnement Micro
 1. Accédez au <a href="https://admin.exchange.microsoft.com/" target="_blank">Centre d’administration Exchange</a>.
 2. Dans le Centre d'administration Exchange, accédez à **Destinataires** \> **Boîtes aux lettres**.
 3. Double-cliquez sur l’utilisateur et cliquez sur **Gérer les paramètres des applications de messagerie sous** Applications de **messagerie.** Désactiver **le** curseur pour toutes les options ; **Mobile (Exchange ActiveSync)**, **Outlook sur le web**, **Outlook bureau (MAPI)**, **Exchange services web,** **POP3** et **IMAP**.
-4. Sélectionnez **Enregistrer**.
+4. Cliquez sur **Enregistrer**.
+
+## <a name="related-content"></a>Contenu associé
+
+[Exchange centre d’administration dans Exchange Online](/exchange/exchange-admin-center) 
+ [Restaurer un utilisateur](restore-user.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment créer et gérer des stratégies de gestion des données personnelles de votre organisation dans Microsoft 365, répondre aux alertes et résoudre les problèmes.
-ms.openlocfilehash: f9df027d01ffe4629654db1ddd006d141d57e387
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 9597d0f55f6dc21004fd23ff94d53bf3838ef177
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378512"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541792"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>Créer et gérer des stratégies dans la gestion de la confidentialité (aperçu)
 
@@ -47,10 +47,10 @@ La gestion de la confidentialité peut vous aider à détecter et gérer les sit
 
 ### <a name="data-transfer"></a>Transfert de données
 
-Le transfert de données entre départements ou frontières régionales peut augmenter le risque d’exposition des données, par exemple s’ils sont envoyés via des e-mails non chiffrés ou à des destinataires non autorisés. De telles actions peuvent avoir un impact réglementaire ou aller à l’encontre des pratiques établies en matière de confidentialité. L’utilisation du modèle de transfert de données pour créer des stratégies de gestion de la confidentialité peut repérer et limiter ces transferts.
+Le transfert de données entre départements ou frontières régionales peut augmenter le risque d’exposition des données, par exemple si elles sont envoyées via des e-mails non chiffrés ou à des destinataires non autorisés. De telles actions peuvent avoir un impact réglementaire ou aller à l’encontre des pratiques établies en matière de confidentialité. L’utilisation du modèle de transfert de données pour créer des stratégies de gestion de la confidentialité peut repérer et limiter ces transferts.
 
 > [!NOTE]
-> Pendant la prévisualisation publique, certains clients exécutant des stratégies de transfert de données pour détecter les transferts entre régions peuvent rencontrer des problèmes de synchronisation qui ont un impact sur la visibilité des correspondances de stratégie dans les données Exchange et Teams données. Nous vous recommandons de vous concentrer sur SharePoint et OneDrive données lors de l’aperçu de ce type de stratégie. Une mise à jour de ce problème est prévue à l’automne 2021.
+> Pendant la prévisualisation publique, certains clients exécutant des stratégies de transfert de données pour détecter les transferts entre régions peuvent rencontrer des problèmes de synchronisation qui ont un impact sur la visibilité des correspondances de stratégie dans les données Exchange et Teams données. Nous vous recommandons de vous concentrer sur SharePoint et OneDrive données lors de l’aperçu de ce type de stratégie.
 
 ### <a name="data-minimization"></a>Réduction des données
 
@@ -72,7 +72,7 @@ Lorsque vous créez une stratégie directement à partir d’un modèle, de nomb
 
 ### <a name="create-custom-policy"></a>Créer une stratégie personnalisée
 
-Pour prendre un contrôle granulaire des paramètres d’une stratégie, vous pouvez créer une stratégie personnalisée à l’aide de l’un des modèles existants comme base de référence. La gestion de la confidentialité fournit un Assistant pour vous guider tout au long de ces étapes.
+Pour prendre un contrôle granulaire des paramètres d’une stratégie, vous pouvez créer une stratégie personnalisée à l’aide de l’un des modèles existants comme base. La gestion de la confidentialité fournit un Assistant pour vous guider tout au long de ces étapes.
 
 Les propriétés personnalisables sont les suivantes :
 
@@ -153,11 +153,11 @@ Les onglets suivants fournissent des détails supplémentaires sur les alertes e
 
 #### <a name="share-the-issue"></a>Partager le problème
 
-L’ajout de personnes en tant que collaborateurs vous permet de partager le problème avec d’autres membres de votre entreprise via un canal Microsoft Teams sécurisé, un courrier électronique de l’entreprise ou en partageant un lien directement vers la page du problème dans la gestion de la confidentialité. Ces options sont disponibles sous le **bouton** Partager. Lors du partage via Teams, vous serez invité à sélectionner les équipes disponibles dans votre organisation, à sélectionner le canal spécifique et à laisser un message sur le problème, qui sera partagé avec le canal spécifié.
+L’ajout de personnes en tant que collaborateurs vous permet de partager le problème avec d’autres membres de votre entreprise via un canal Microsoft Teams sécurisé, un courrier électronique d’entreprise ou en partageant un lien directement vers la page du problème dans la gestion de la confidentialité. Ces options sont disponibles sous le **bouton** Partager. Lors du partage via Teams, vous serez invité à sélectionner les équipes disponibles dans votre organisation, à sélectionner le canal spécifique et à laisser un message sur le problème, qui sera partagé avec le canal spécifié.
 
 #### <a name="review-content-and-remediate"></a>Examiner le contenu et corriger
 
-Pour examiner le contenu associé à  un problème, choisissez l’action Examiner le contenu si vous y êtes invité ou ouvrez l’onglet Contenu. Sélectionnez n’importe quel fichier de la liste pour l’afficher dans son intégralité. Vous pouvez voir ici des détails sur le fichier, les activités sur l’enregistrement et son historique de correction, si des étapes précédentes ont été prises pour gérer ce fichier.
+Pour examiner le contenu associé à  un problème, choisissez l’action Examiner le contenu si vous y êtes invité ou ouvrez l’onglet Contenu. Sélectionnez n’importe quel fichier de la liste pour l’afficher dans son intégralité. Vous pouvez y voir des détails sur le fichier, les activités sur l’enregistrement et son historique de correction, si des étapes précédentes ont été prises pour gérer ce fichier.
 
 Utilisez le **bouton Corriger** pour prendre vos propres décisions de gestion des données pour ce contenu. La sélection du bouton vous permet de choisir parmi une ou plusieurs actions de correction. Les options suivantes sont disponibles : 
 

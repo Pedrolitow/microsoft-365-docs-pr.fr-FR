@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: ca689b846589ffcb1b8aa4d85ea8a0312f8d9d51
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: 053ee63d80f37753b3737d834c9e79e4001f8a79
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463972"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541804"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Préparation de TLS 1.2 dans Office 365 et Office 365 GCC
 
@@ -77,6 +77,7 @@ Les ressources suivantes fournissent des conseils pour vous assurer que vos clie
 - [La nouvelle fonctionnalité IIS](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) facilite la recherche de clients sur [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) et [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) qui se connectent au service en utilisant des protocoles de sécurité faibles.
 - Obtenez plus d’informations sur la résolution du problème [TLS 1.0.](https://www.microsoft.com/download/details.aspx?id=55266)
 - Pour plus d’informations sur notre approche de la sécurité, accédez au [Centre de gestion de la confidentialité d'Office 365](https://www.microsoft.com/trustcenter/cloudservices/office365).
+- Pour identifier la version TLS utilisée par les clients SMTP, consultez l’aperçu des [clients SMTP Auth](../security/office-365-security/mfi-smtp-auth-clients-report.md)et un rapport dans le Centre de sécurité & conformité.
 - [Preparing for TLS 1.0/1.1 Deprecation - Office 365 Skype for Business](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Preparing-for-TLS-1-0-1-1-Deprecation-O365-Skype-for-Business/ba-p/222247) (en anglais uniquement)
 - [Exchange Server TLS guidance, part 1: Getting Ready for TLS 1.2](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649) (en anglais uniquement)
 - [Directives concernant le protocole TLS dans Exchange Server, Partie 2 : Enabling TLS 1.2 and Identifying Clients Not Using It](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761) (en anglais uniquement)

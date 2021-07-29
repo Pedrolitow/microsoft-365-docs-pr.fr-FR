@@ -18,26 +18,44 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender Office 365
-ms.openlocfilehash: 50060e36a0dd6d82ccbdf6d2bb8a00b2bf5e9d6d
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 9bd762f60dac6e9a0cf88890c5cf5bfd313733ac
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195008"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567787"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de la version d’Office 365 Microsoft Defender
 
-Microsoft Defender for Office 365 protège votre organisation contre les menaces malveillantes qui sont posées par les messages électroniques, les liens (URL) et les outils de collaboration. Defender pour Office 365 inclut :
+Microsoft Defender pour Office 365 votre organisation contre les menaces malveillantes qui sont posées par les messages électroniques, les liens (URL) et les outils de collaboration. Defender pour Office 365 inclut :
 
 - **Stratégies de protection contre les menaces** : définissez des stratégies de protection contre les menaces pour définir le niveau de protection approprié pour votre organisation.
 - **Rapports**: affichez des rapports en temps réel pour surveiller Defender Office 365 performances au niveau de votre organisation.
 - **Fonctionnalités de recherche et de réponse aux menaces** : utilisez des outils de pointe pour étudier, comprendre, simuler et prévenir les menaces.
 - **Fonctionnalités automatisées d’investigation et de réponse** : gagnez du temps pour investiguer et atténuer les menaces.
 
-Une version d’essai de Microsoft Defender pour Office 365 est le moyen le plus simple d’essayer les fonctionnalités de Defender pour Office 365, et sa configuration ne prend que quelques clics. Une fois la configuration de la version d’essai terminée, toutes les fonctionnalités de Defender for Office 365 Plan 1 et Plan 2 sont disponibles dans l’organisation pendant 90 jours au plus.
+Une version d’essai de Microsoft Defender pour Office 365 est le moyen le plus simple d’essayer les fonctionnalités de Defender pour Office 365, et sa configuration ne prend que quelques clics. Une fois la configuration de la version d’essai terminée, toutes les fonctionnalités de Defender for Office 365 Plan 1 et Plan 2 sont disponibles dans l’organisation pendant 90 jours au plus. Ces fonctionnalités de haut niveau sont décrites dans la liste suivante :
+
+<br>
+
+****
+
+|Fonctionnalité|Description|
+|---|---|
+|[Paramètres exclusifs dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Obtenir la protection contre l’emprunt d’identité d’utilisateur, la protection contre l’usurpation d’identité de domaine, l’intelligence des boîtes aux lettres et les seuils de hameçonnage avancés.|
+|[Pièces jointes fiables](safe-attachments.md)|Inspectez les pièces jointes des e-mails et d’autres fichiers dans un environnement de détonation contrôlé pour capturer les programmes malveillants nouveaux et évitent.|
+|[Liens fiables](safe-links.md)|Effectuez des vérifications au moment du clic pour vous assurer que les URL qui ont réussi l’inspection initiale n’ont pas été localisées.|
+|[Suivis des menaces](threat-trackers.md)<sup>\*</sup>|Utilisez des widgets et des affichages informatifs pour identifier les problèmes de cybersécurité qui peuvent avoir un impact sur votre organisation.|
+|[Explorateur de menaces](threat-explorer.md)<sup>\*</sup>|Recherchez des informations en temps quasi réel sur les menaces dans votre Office 365 courrier électronique.|
+|[Examen et réponse automatisés (AIR)](office-365-air.md)<sup>\*</sup>|Recherchez et remédiez automatiquement aux objets de menace lorsque des alertes sont déclenchées.|
+|[Formation à la simulation d’attaques](attack-simulation-training.md)<sup>\*</sup>|Formez vos utilisateurs à identifier les attaques par hameçonnage et à répondre de manière appropriée.|
+|[Affichages des campagnes](campaigns.md)<sup>\*</sup>|Examiner et répondre à une activité de courrier malveillant à grande échelle.|
+|[Rapports utilisant Defender pour Office 365 fonctionnalités](view-reports-for-mdo.md)|Afficher des rapports, notamment l’état de la protection contre les menaces, la protection contre les menaces d’URL, la latence du courrier, etc.|
+
+<sup>\*</sup>Defender for Office 365 Plan 2 features that are available as part of the trial.
 
 > [!NOTE]
-> La configuration automatisée décrite dans cet article est actuellement en prévisualisation publique et peut ne pas être disponible à votre emplacement.
+> La configuration automatisée décrite dans cet article est actuellement en prévisualisation publique et peut ne pas être disponible dans votre organisation.
 
 ## <a name="terms-and-conditions"></a>Conditions générales
 
@@ -51,7 +69,7 @@ Par défaut, ces stratégies sont limitées à tous les utilisateurs de l’orga
 
 Lors de l’installation, la fonctionnalité de réponse de Defender Office 365 (dans Defender pour Office 365 P2 ou équivalent) est également configurée pour l’ensemble de l’organisation. Aucune portée de stratégie n’est requise.
 
-## <a name="licensing"></a>Licence
+## <a name="licensing"></a>Licences
 
 Dans le cadre de la configuration de la version d’essai, les licences Defender pour Office 365 sont automatiquement appliquées à l’organisation. Les licences sont gratuites pour les 90 premiers jours.
 
@@ -112,7 +130,7 @@ Des fonctionnalités de simulation et de formation enrichies, ainsi que des exp�
 
 - [Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)
 
-### <a name="secure-posture"></a>Posture sécurisée
+### <a name="security-posture"></a>Posture de sécurité
 
 Les modèles recommandés et les informations de configuration aident les clients à obtenir et à rester sécurisés.
 

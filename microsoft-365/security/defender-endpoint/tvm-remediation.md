@@ -1,7 +1,7 @@
 ---
 title: Corriger les vulnérabilités à l’Gestion des menaces et des vulnérabilités
 description: Corriger les faiblesses de sécurité découvertes par le biais de recommandations de sécurité et créer des exceptions si nécessaire, Gestion des menaces et des vulnérabilités.
-keywords: Correction tvm De Microsoft Defender pour point de terminaison, Microsoft Defender pour tvm de point de terminaison, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités contre les menaces, correction des menaces & gestion des vulnérabilités, correction tvm intune, sccm de correction tvm
+keywords: Correction tvm de Microsoft Defender for Endpoint, Microsoft Defender for Endpoint tvm, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités threat & gestion des vulnérabilités remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,23 +18,23 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 602a38d8ad27505e81628db265681ac89218e593
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ebd1ef10f0ea9a6fbedf9aea1e13237e45dd6ee3
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840909"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567635"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Corriger les vulnérabilités à l’Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="request-remediation"></a>Demander la correction
 
@@ -42,7 +42,7 @@ La Gestion des menaces et des vulnérabilités microsoft Defender pour point de 
 
 ### <a name="enable-microsoft-intune-connection"></a>Activer Microsoft Intune connexion
 
-Pour utiliser cette fonctionnalité, activez vos Microsoft Intune connexions. Dans la Centre de sécurité Microsoft Defender, accédez **à Paramètres**  >  **fonctionnalités**  >  **générales avancées.** Faites défiler vers le bas et **recherchez Microsoft Intune connexion.** Par défaut, le basculement est désactivé. Activer votre **Microsoft Intune de** **connexion.**
+Pour utiliser cette fonctionnalité, activez vos Microsoft Intune connexions. Dans le portail Microsoft 365 Defender, accédez **à Paramètres**  >  **fonctionnalités**  >  **générales avancées.** Faites défiler vers le bas et **recherchez Microsoft Intune connexion.** Par défaut, le basculement est désactivé. Activer votre **Microsoft Intune de** **connexion.**
 
 **Remarque**: si la connexion Intune est activée, vous pouvez créer une tâche de sécurité Intune lors de la création d’une demande de correction. Cette option n’apparaît pas si la connexion n’est pas définie.
 
@@ -50,9 +50,9 @@ Pour [plus d’informations, voir Utiliser Intune](/intune/atp-manage-vulnerabil
 
 ### <a name="remediation-request-steps"></a>Étapes de la demande de correction
 
-1. Go to the Gestion des menaces et des vulnérabilités navigation menu in the Centre de sécurité Microsoft Defender, and select [**Security recommendations**](tvm-security-recommendation.md).
+1. Go to the threat and **Vulnerability management** navigation menu in the Microsoft 365 Defender portal, and select **Recommandations** [**Security recommendations**](tvm-security-recommendation.md).
 
-2. Sélectionnez une recommandation de sécurité pour qui vous souhaitez demander des corrections, puis sélectionnez **Options de correction.**
+2. Sélectionnez une recommandation de sécurité pour la demande de correction, puis sélectionnez **Options de correction.**
 
 3. Remplissez le formulaire, y compris ce pour quoi vous demandez des corrections, les groupes d’appareils applicables, la priorité, la date d’échéance et les notes facultatives.
     1. Si vous choisissez l’option de correction « Attention requise », la sélection d’une date d’échéance n’est pas disponible, car il n’existe aucune action spécifique.
@@ -79,7 +79,8 @@ Lorsque vous envoyez une demande de correction à partir de la page Recommandati
 Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller.
 
 Une fois que vous êtes dans la page Correction, sélectionnez l’activité de correction à afficher. Vous pouvez suivre les étapes de correction, suivre l’avancement, afficher la recommandation associée, exporter vers CSV ou marquer comme terminé.
-![Exemple de page de correction, avec une activité de correction sélectionnée, et le volant de cette activité répertoriant la description, les outils de gestion des services informatiques et des appareils, ainsi que la progression de la correction des périphériques.](images/remediation_flyouteolsw.png)
+
+:::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="Exemple de page de correction, avec une activité de correction sélectionnée, et le volant de cette activité répertoriant la description, les outils de gestion des services informatiques et des appareils, et la correction des périphériques":::
 
 >[!NOTE]
 > Il existe une période de rétention de 180 jours pour les activités de correction terminées. Pour que la page de correction continue de s’exécuter de façon optimale, l’activité de correction sera supprimée 6 mois après sa fin.
@@ -92,11 +93,11 @@ Suivre qui a fermé l’activité de correction avec la colonne « Terminé par 
 - **Confirmation du** système : la tâche a été effectuée automatiquement (tous les appareils corrigés)
 - **N/A**: les informations ne sont pas disponibles, car nous ne savons pas comment cette tâche plus ancienne a été achevée
 
-![Créé par et terminé par des colonnes de deux lignes. Une ligne terminée par un exemple de message électronique, l’autre ligne indique la confirmation du système.](images/tvm-completed-by.png)
+:::image type="content" alt-text="Créé par et terminé par des colonnes de deux lignes. Une ligne terminée par un exemple de message électronique, l’autre ligne indique la confirmation du système." source="images/tvm-completed-by.png":::
 
 ### <a name="top-remediation-activities-in-the-dashboard"></a>Principales activités de correction dans le tableau de bord
 
-Afficher **les principales activités de correction** dans le tableau Gestion des menaces et des vulnérabilités tableau de [bord.](tvm-dashboard-insights.md) Sélectionnez l’une des entrées pour aller à la page **Correction.** Vous pouvez marquer l’activité de correction comme terminée une fois que l’équipe d’administration informatique a corrigé la tâche.
+Afficher les **principales activités de correction dans** le tableau de bord de gestion des menaces et des [ **vulnérabilités.**](tvm-dashboard-insights.md) Sélectionnez l’une des entrées pour aller à la page **Correction.** Vous pouvez marquer l’activité de correction comme terminée une fois que l’équipe d’administration informatique a corrigé la tâche.
 
 ![Exemple de carte d’activités de correction supérieure avec un tableau répertoriant les principales activités générées à partir des recommandations de sécurité.](images/tvm-remediation-activities-card.png)
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13307d3205818d41e7b2219b4e3a4ed6e9f2d5bb
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: bddd635506f5a37585bc8c06fb44e1c2fbffd721
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454775"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567943"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Niveau de sécurité Microsoft pour les appareils
 
@@ -32,16 +32,16 @@ ms.locfileid: "53454775"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 >[!NOTE]
 > Le score de configuration fait désormais partie Gestion des menaces et des vulnérabilités comme score de sécurité Microsoft pour les appareils.
 
-Votre score pour les appareils est visible dans le tableau [Gestion des menaces et des vulnérabilités de](tvm-dashboard-insights.md) bord du Microsoft 365 Defender web. Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. Il reflète l’état de configuration de sécurité collective de vos appareils dans les catégories suivantes :
+Votre score pour les appareils est visible dans le tableau [Gestion des menaces et des vulnérabilités de bord](tvm-dashboard-insights.md) du Microsoft 365 Defender web. Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. Il reflète l’état de configuration de sécurité collective de vos appareils dans les catégories suivantes :
 
 - Application
 - Système d’exploitation
@@ -53,9 +53,10 @@ Sélectionnez une catégorie pour aller à la page [**Recommandations de sécuri
 
 ## <a name="turn-on-the-microsoft-secure-score-connector"></a>Activer le connecteur Score de sécurité Microsoft
 
-Avancer les signaux de Microsoft Defender pour les points de terminaison, ce qui permet à Microsoft Secure Score de voir la posture de sécurité de l’appareil. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
+Avancez les signaux de Microsoft Defender pour les points de terminaison, ce qui permet à Microsoft Secure Score de se rendre compte de la posture de sécurité de l’appareil. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
 
 La réflexion des modifications dans le tableau de bord peut prendre jusqu’à quelques heures.
+
 
 1. Dans le volet de navigation, go to **Paramètres**  >  **Endpoints**  >  **General**  >  **Advanced features** 
 
@@ -63,7 +64,7 @@ La réflexion des modifications dans le tableau de bord peut prendre jusqu’à 
 
 3. Sélectionnez **Enregistrer les préférences.**
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Comment ça marche
 
 >[!NOTE]
 > Le score de sécurité Microsoft pour les appareils prend actuellement en charge les configurations définies via la stratégie de groupe. En raison de la prise en charge partielle actuelle d’Intune, les configurations qui ont peut-être été définies via Intune peuvent s’afficher comme mal configurées. Contactez votre administrateur informatique pour vérifier l’état réel de la configuration au cas où votre organisation utiliserait Intune pour la gestion de la configuration sécurisée.
@@ -87,7 +88,7 @@ Améliorez votre configuration de la sécurité en remédiant aux problèmes de 
 
 3. Lisez la description pour comprendre le contexte du problème et ce qu’il faut faire ensuite. Sélectionnez une date d’échéance, ajoutez des notes et sélectionnez Exporter toutes les données d’activité de correction vers **CSV** afin de pouvoir les joindre à un e-mail pour le suivi.
 
-4. **Envoyer une demande**. Un message de confirmation vous confirmera que la tâche de correction a été créée.
+4. **Envoyer une demande**. Vous verrez un message de confirmation vous confirmant que la tâche de correction a été créée.
 
    :::image type="content" alt-text="Confirmation de la création de la tâche de correction." source="images/remediation-task-created.png":::
 
@@ -97,7 +98,7 @@ Améliorez votre configuration de la sécurité en remédiant aux problèmes de 
 
 6. Envoyez un courrier électronique de suivi à votre administrateur informatique et laissez le temps que vous avez alloué à la correction de se propager dans le système.
 
-7. Re review the **Microsoft Secure Score for Devices** card again on the dashboard. Le nombre de recommandations en matière de contrôles de sécurité va diminuer. Lorsque vous sélectionnez **les contrôles** de sécurité pour revenir à la page **Recommandations** de sécurité, l’élément que vous avez traité n’y figure plus. Votre score de sécurité Microsoft pour les appareils doit augmenter.
+7. Re review the **Microsoft Secure Score for Devices** card again on the dashboard. Le nombre de recommandations en matière de contrôles de sécurité va diminuer. Lorsque vous **sélectionnez les contrôles** de sécurité pour revenir à la page **Recommandations** de sécurité, l’élément que vous avez traité n’y figure plus. Votre score de sécurité Microsoft pour les appareils doit augmenter.
 
 >[!IMPORTANT]
 >Pour augmenter les taux de détection de l’évaluation des vulnérabilités, téléchargez les mises à jour de sécurité obligatoires suivantes et déployez-les sur votre réseau :

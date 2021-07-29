@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment définir des exigences de mot de passe strictes pour vos utilisateurs, à l’aide Windows PowerShell.
-ms.openlocfilehash: 87ba9e0323c379d8c2589dbb82c38c531dd9d047
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: f1384704435307c8ba872a5d59dc8841bb761444
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286266"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541528"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>Désactiver les exigences de mot de passe strictes pour les utilisateurs
 
@@ -47,7 +47,7 @@ Vous devez également vous connecter à Microsoft 365 avec PowerShell.
     ```powershell
     Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
 
-3. You can turn of strong password requirements for specific users with this command:
+3. You can turn **OFF** strong password requirements for specific users with this command:
 
     ```powershell
     Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false

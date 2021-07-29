@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Suivez ces étapes pour supprimer le compte d’utilisateur d’un ancien employé.
-ms.openlocfilehash: e2e1b234eaee3818321761af8f737bad8d131b62
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 3db2eb7fd4c73854a759ee4026d6f9b9c12dfa82
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286320"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541552"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Étape 7 : supprimer le compte d’utilisateur d’un ancien employé
 
@@ -52,7 +53,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 ## <a name="does-your-organization-use-active-directory"></a>Votre organisation utilise Active Directory ?
 
-Si votre organisation synchronise les comptes d’utilisateur avec Microsoft 365 à partir d’un environnement Active Directory local, vous devez supprimer et restaurer ces comptes d’utilisateurs dans votre service Active Directory local. Vous ne pouvez pas les supprimer et les restaurer dans Office 365.
+Si votre organisation synchronise les comptes d’utilisateurs avec Microsoft 365 à partir d’un environnement Active Directory local, vous devez supprimer et restaurer ces comptes d’utilisateurs dans votre service Active Directory local. Vous ne pouvez pas les supprimer et les restaurer dans Office 365.
 
 Pour découvrir comment supprimer et restaurer un compte d’utilisateur dans Active Directory, voir [Supprimer un compte d’utilisateur.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
   

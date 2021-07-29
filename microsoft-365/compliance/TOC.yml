@@ -558,7 +558,7 @@
 - name: Gestion de la gouvernance des applications
   items:
     - name: Protéger et gouverner vos applications
-      href: app-governance-manage-app-protection-governance.md
+      href: app-governance-manage-app-governance.md
     - name: Démarrer avec la gouvernance des applications
       href: app-governance-get-started.md
     - name: Envoyer des commentaires sur la gouvernance des applications
@@ -730,8 +730,14 @@
           href: overview-ediscovery-20.md
         - name: Configurer Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Créer et gérer un cas
-          href: create-and-manage-advanced-ediscoveryv2-case.md
+        - name: Créer des cas eDiscovery avancés
+          items:
+            - name: Créer et gérer un cas
+              href: create-and-manage-advanced-ediscoveryv2-case.md
+            - name: Utiliser des cas volumineux (préversion)
+              href: advanced-ediscovery-large-cases.md
+        - name: Flux de travail eDiscovery avancé pour le contenu Teams (préversion)
+          href: teams-workflow-in-advanced-ediscovery.md
         - name: Gérer des sources de données consignataires et non consignataires
           href: managing-custodians.md
           items:

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment utiliser et gérer des modèles pour la création d’évaluations dans le Gestionnaire de conformité Microsoft. Créez et modifiez des modèles à l’aide d’un fichier Excel formaté.
-ms.openlocfilehash: 4386f5be67d01d3d6961ccc4bd51ecf729bc8a38
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 60b453faf44ae80a8bd066e93f759cd23413ce3b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419582"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541864"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Utiliser des modèles d’évaluation dans le Gestionnaire de conformité
 
@@ -30,7 +30,11 @@ ms.locfileid: "53419582"
 
 ## <a name="templates-overview"></a>Vue d’ensemble des modèles
 
-Un modèle est une infrastructure de contrôles permettant de créer une évaluation dans le Gestionnaire de conformité. Notre ensemble complet de modèles peut aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données. Nous faisons référence à des modèles du même nom que leur certification ou réglementation sous-jacente, comme le modèle R GDPR de l’UE et le modèle ISO/IEC 27701:2019. Étant donné que le gestionnaire de conformité peut être utilisé pour évaluer différents types de produits, chaque modèle est livré en deux versions : une qui s’applique à Microsoft 365 et une version universelle qui peut être adaptée à votre produit choisi.
+Un modèle est une infrastructure de contrôles permettant de créer une évaluation dans le Gestionnaire de conformité. Notre ensemble complet de modèles peut aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
+
+Nous faisons référence à des modèles du même nom que leur certification ou réglementation sous-jacente, comme le modèle R GDPR de l’UE et le modèle ISO/IEC 27701:2019. Étant donné que le gestionnaire de conformité peut être utilisé pour évaluer différents types de produits, chaque modèle est livré en deux versions : une qui s’applique à Microsoft 365 et une version universelle qui peut être adaptée à votre produit choisi.
+
+Notez que les clients modérés, Cloud de la communauté du secteur public élevés et du département de la Défense (DoD) du gouvernement des États-Unis Community (Cloud de la communauté du secteur public) peuvent actuellement utiliser les versions du modèle Microsoft 365, mais pas universels.
 
 ## <a name="template-availability-and-licensing"></a>Disponibilité et gestion des licences des modèles
 
@@ -121,7 +125,7 @@ Lorsque vous remplissez votre feuille de calcul avec des données de modèle, la
 - **implementationType**: dans ce champ obligatoire, listez l’un des trois types d’implémentation ci-dessous :
     - **Opérationnel** : actions implémentées par les personnes et les processus pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes organisationnels, des ressources, des données et du personnel (exemple : sensibilisation et formation en matière de sécurité)
     - **Technique** : actions effectuées à l’aide de la technologie et des mécanismes contenus dans le matériel, les logiciels ou les composants du microprogramme du système d’information pour protéger la confidentialité, l’intégrité et la disponibilité des données et des systèmes organisationnels (exemple : authentification multifacteur)
-    - **Documentation** : actions implémentées par le biais de stratégies et de procédures documentées établissant et définissant les contrôles requis pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes organisationnels, des biens, des données et du personnel (par exemple, une stratégie de sécurité des informations)
+    - **Documentation** : actions implémentées par le biais de stratégies et de procédures documentées établissant et définissant les contrôles requis pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes organisationnels, des biens, des données et du personnel (exemple : une stratégie de sécurité des informations)
 
 - **actionScore**: dans ce champ obligatoire, fournissez une valeur de score numérique pour votre action. La valeur doit être un nombre entier compris entre 1 et 99 ; il ne peut pas être 0, null ou vide. Plus le nombre est élevé, plus sa valeur est grande pour améliorer votre posture de conformité. L’image ci-dessous montre comment le Gestionnaire de conformité contrôle les scores :
 
@@ -188,7 +192,7 @@ Après avoir formaté votre feuille de calcul, suivez les étapes ci-dessous.
 
 5. Une fois que vous avez localisé votre modèle, sélectionnez la radio à gauche de son nom, puis sélectionnez **Enregistrer**.
 
-6. L’écran suivant montre le modèle que vous avez sélectionné. Si la réponse est correcte, sélectionnez **Suivant.** (Si ce n’est pas le cas, **sélectionnez Sélectionner** un autre modèle à choisir à nouveau.)
+6. L’écran suivant montre le modèle que vous avez sélectionné. Si la réponse est correcte, sélectionnez **Suivant.** (Si ce n’est pas le cas, **sélectionnez Sélectionner un autre** modèle à choisir à nouveau.)
 
 7. Dans le **Télécharger** de fichiers,  sélectionnez Parcourir pour rechercher et télécharger votre fichier Excel formaté contenant toutes les données de modèle requises.
 

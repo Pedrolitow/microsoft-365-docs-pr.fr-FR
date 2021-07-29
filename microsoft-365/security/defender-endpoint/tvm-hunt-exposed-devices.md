@@ -1,7 +1,7 @@
 ---
 title: Repérer des appareils exposés
 description: Découvrez comment Gestion des menaces et des vulnérabilités peuvent être utilisés pour aider les administrateurs de sécurité, les administrateurs informatiques et SecOps à collaborer.
-keywords: Scénarios Microsoft Defender pour endpoint-tvm, Microsoft Defender pour le point de terminaison, tvm, scénarios tvm, réduire l’exposition aux vulnérabilités & menaces, réduire les menaces et vulnérabilités, améliorer la configuration de la sécurité, augmenter le Degré de sécurisation Microsoft pour les appareils, augmenter le niveau de sécurité Microsoft pour les appareils, augmenter la vulnérabilité & Degré de sécurité Microsoft pour les appareils, Degré de sécurisation Microsoft pour les appareils, score d’exposition, contrôles de sécurité
+keywords: Scénarios Microsoft Defender pour endpoint-tvm, Microsoft Defender pour le point de terminaison, tvm, scénarios tvm, réduire l’exposition aux vulnérabilités & menaces, réduire les menaces et vulnérabilités, améliorer la configuration de la sécurité, augmenter le Degré de sécurité Microsoft pour les appareils, augmenter le niveau de sécurité Microsoft & vulnérabilité Microsoft Secure Score pour les appareils, Degré de sécurisation Microsoft pour les appareils, score d’exposition, contrôles de sécurité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,24 +18,24 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9a8ebcc89c3009cd93fbb42f2a74bbb9ffcc31b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c47d11bd1afe247b687b8736b4cad8fa4e906bb1
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934092"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567991"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Recherche des appareils exposés - Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="use-advanced-hunting-to-find-devices-with-vulnerabilities"></a>Utiliser le recherche avancée pour rechercher des appareils avec des vulnérabilités
 
@@ -55,7 +55,7 @@ Le repérage avancé est un outil de repérage de menaces basé sur des requête
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>Vérifier les appareils impliqués dans les alertes de gravité élevée
 
-1. Go to **Advanced hunting** from the left-hand navigation pane of the Centre de sécurité Microsoft Defender.
+1. Go to **Hunting**  >  **Advanced hunting** from the left-hand navigation pane of the Microsoft 365 Defender portal.
 
 2. Faites défiler vers le bas jusqu’aux schémas de recherche avancée TVM pour vous familiariser avec les noms des colonnes.
 

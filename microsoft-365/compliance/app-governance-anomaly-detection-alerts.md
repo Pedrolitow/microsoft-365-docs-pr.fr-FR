@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Examinez les alertes de détection d’anomalies.
-ms.openlocfilehash: 6797cdcbfd2a2d3c32768a158a5f8cd0fc579d56
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 41dd60de86d7583169845ae185f9f715011ea3e4
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420243"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541372"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Examiner les alertes de détection d’anomalie
 
@@ -27,9 +27,9 @@ ms.locfileid: "53420243"
 
 ## <a name="mitre-attck"></a>MITRE ATT&CK
 
-Pour faciliter la mise en correspondance de la relation entre les alertes de gouvernance des applications Microsoft et la matrice MITRE ATT&CK familière, nous avons classé les alertes par tactique MITRE ATT&CK correspondante. Cette référence supplémentaire facilite la compréhension de la technique d’attaques suspectes potentiellement utilisée lorsque l’alerte de sécurité et de gouvernance des applications Microsoft est déclenchée.
+Pour faciliter la mise en correspondance de la relation entre les alertes de gouvernance des applications Microsoft et la matrice MITRE ATT&CK familière, nous avons classé les alertes par tactique MITRE ATT&CK correspondante. Cette référence supplémentaire facilite la compréhension de la technique d’attaques suspectes potentiellement utilisée lorsque l’alerte de gouvernance des applications est déclenchée.
 
-Ce guide fournit des informations sur l’examen et la correction des alertes de gouvernance des applications Microsoft dans les catégories suivantes.
+Ce guide fournit des informations sur l’examen et la correction des alertes de gouvernance des applications dans les catégories suivantes.
 
 - Accès initial
 - Exécution
@@ -41,6 +41,7 @@ Ce guide fournit des informations sur l’examen et la correction des alertes de
 - Exfiltration
 - Impact
 
+<!-->
 ## <a name="security-alert-classifications"></a>Classifications des alertes de sécurité
 
 Après examen correct, toutes les alertes de gouvernance des applications Microsoft peuvent être classées comme l’un des types d’activités suivants :
@@ -48,6 +49,7 @@ Après examen correct, toutes les alertes de gouvernance des applications Micros
 - Vrai positif (TP) : alerte sur une activité malveillante confirmée.
 - Vrai positif sans gravité (B-TP) : alerte en cas d’activité suspecte mais non malveillante, telle qu’un test d’intrusion ou toute autre action suspecte autorisée.
 - Faux positif (FP) : alerte sur une activité non malveillante.
+-->
 
 ## <a name="general-investigation-steps"></a>Étapes d’investigation générales
 

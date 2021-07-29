@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Suivez ces étapes pour supprimer la licence Microsoft 365 d’un ancien employé.
-ms.openlocfilehash: ed86eb28cc6d4996f7def8cb567f0e4085e67624
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7303c881e93d3ecb0c6637936ad12d8da227392c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244179"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541564"
 ---
 # <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>Étape 6 : Supprimer la licence Microsoft 365 d’un ancien employé
 
@@ -61,4 +62,4 @@ Si l'utilisateur appartient à un groupe de files d'attente, il ne sera plus une
 
 ## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Configurer le forwarding d’appel vers des personnes de votre organisation
 
-Si vous devez configurer le transfert d’appel pour le numéro de téléphone de l’employé licencié, le paramètre de transfert d’appel sous stratégies d’appel peut configurer le transfert dans lequel les appels entrants peuvent être transmis à d’autres utilisateurs ou sonner en même temps. Pour plus d’informations, voir [Stratégies d’appel dans Microsoft Teams](/microsoftteams/teams-calling-policy).
+Si vous devez configurer le transfert d’appel pour le numéro de téléphone de l’employé licencié, le paramètre de transfert d’appel sous stratégies d’appel peut configurer le transfert dans lequel les appels entrants peuvent être transmis à d’autres utilisateurs ou faire sonner une autre personne en même temps. Pour plus d’informations, voir [Stratégies d’appel dans Microsoft Teams](/microsoftteams/teams-calling-policy).

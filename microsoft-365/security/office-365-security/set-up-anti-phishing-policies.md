@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9abed7f9601872eeb14ceb294c54a1cb54f63c2f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: d214692e5511e7fcb10f2d1c79c9a8797ec04fff
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229106"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568135"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -86,11 +86,11 @@ Les paramètres de stratégie suivants sont disponibles dans les stratégies ant
 
   - **Exclure ces utilisateurs, groupes et domaines**: exceptions pour la stratégie. Les paramètres et le comportement sont exactement comme les conditions :
     - **Utilisateurs**
-    - **Groups**
+    - **Groupes**
     - **Domaines**
 
   > [!NOTE]
-  > Au moins une sélection dans les **paramètres Utilisateurs,** groupes et domaines est requise dans les stratégies anti-hameçonnage personnalisées pour identifier les **destinataires** du message que la stratégie s’applique. <u></u> Les stratégies anti-hameçonnage dans Defender pour Office 365 ont également des [paramètres](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) d’emprunt d’identité dans lequel vous pouvez spécifier des adresses de messagerie d’expéditeur ou des domaines d’expéditeur individuels qui bénéficieront d’une <u>protection</u> contre l’emprunt d’identité, comme décrit plus loin dans cet article.
+  > Au moins une sélection est requise dans les **paramètres Utilisateurs,** groupes et domaines dans les stratégies anti-hameçonnage personnalisées pour identifier les **destinataires** du message que la stratégie s’applique. <u></u> Les stratégies anti-hameçonnage dans Defender pour Office 365 ont également des [paramètres](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) d’emprunt d’identité dans lequel vous pouvez spécifier des adresses de messagerie d’expéditeur ou des domaines d’expéditeur individuels qui bénéficieront d’une <u>protection</u> contre l’emprunt d’identité, comme décrit plus loin dans cet article.
 
 ## <a name="spoof-settings"></a>Paramètres d’usurpation d’une usurpation
 
@@ -100,7 +100,7 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies an
 
 - **Activer la veille contre l’usurpation** d’informations : active ou non la veille contre l’usurpation d’informations. Nous vous recommandons de laisser ce dernier allumé.
 
-  Lorsque la veille contre l’usurpation d’adresse est activée, les informations sur l’usurpation d’informations montrent des expéditeurs usurpés qui ont été automatiquement détectés et autorisés ou bloqués par la veille contre l’usurpation d’adresses.  Vous pouvez remplacer manuellement le verdict de veille contre l’usurpation d’adresse pour autoriser ou bloquer les expéditeurs usurpés détectés dans l’insight. Mais lorsque vous le faites, l’expéditeur usurpé disparaît de l’aperçu de l’usurpation d’intelligence et n’est désormais visible que sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer.  Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés dans la liste d’adresses client autoriser/bloquer. Pour plus d’informations, voir les articles suivants :
+  Lorsque la veille contre l’usurpation d’adresse est activée, la veille contre l’usurpation d’informations affiche les expéditeurs usurpés qui ont été automatiquement détectés et autorisés ou bloqués par la veille contre l’usurpation d’adresses.  Vous pouvez remplacer manuellement le verdict de veille contre l’usurpation d’adresse pour autoriser ou bloquer les expéditeurs usurpés détectés dans l’insight. Mais lorsque vous le faites, l’expéditeur usurpé disparaît de l’aperçu de l’usurpation d’intelligence et n’est désormais visible que sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer.  Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés dans la liste d’adresses client autoriser/bloquer. Pour plus d’informations, voir les articles suivants:
 
   - [Informations sur l’usurpation d’intelligence dans EOP](learn-about-spoof-intelligence.md)
   - [Gérer la liste d’adresses client autoriser/bloquer dans EOP](tenant-allow-block-list.md)
@@ -111,13 +111,13 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies an
   > - Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’Microsoft 365 ; vous activez plutôt le filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   > - La désactivation de la protection contre  l’usurpation d’identité désactive uniquement la protection implicite contre l’usurpation d’identité contre les vérifications [d’authentification composite.](email-validation-and-authentication.md#composite-authentication) Si l’expéditeur  échoue aux vérifications [DMARC](use-dmarc-to-validate-email.md) explicites où la stratégie est définie sur mise en quarantaine ou rejet, le message est toujours mis en quarantaine ou rejeté.
 
-- **Notifications** d’expéditeur non authentifié : ces notifications sont disponibles uniquement lorsque la veille contre l’usurpation d’adresse est désactivée. Consultez les informations de la section suivante.
+- **Notifications d’expéditeur** non authentifié : ces notifications sont disponibles uniquement lorsque la veille contre l’usurpation d’adresse est allumée. Consultez les informations de la section suivante.
 - **Actions**: pour les messages provenant d’expéditeurs usurpés bloqués (automatiquement bloqués par la veille contre l’usurpation d’adresse ou bloqués manuellement dans la liste d’adresses client bloquées), vous pouvez également spécifier l’action à prendre sur les messages :
   - **Déplacez les messages vers les dossiers Courrier** indésirable des destinataires : il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier Courrier indésirable si la règle de courrier indésirable est activée sur la boîte aux lettres (activée par défaut). Pour plus d’informations, voir [Configurer les paramètres](configure-junk-email-settings-on-exo-mailboxes.md)de courrier indésirable Exchange Online boîtes aux lettres dans Microsoft 365 .
   - **Mettre le message en** quarantaine : envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d’informations sur la mise en quarantaine, consultez les articles suivants :
     - [Mise en quarantaine dans Microsoft 365](quarantine-email-messages.md)
-    - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [Rechercher et libérer les messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Gérer les fichiers et les messages mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Rechercher et libérer des messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
 ### <a name="unauthenticated-sender"></a>Expéditeur non authentifié
 
@@ -153,7 +153,7 @@ Le premier conseil de sécurité de contact remplace également la nécessité d
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres exclusifs dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
-Cette section décrit les paramètres de stratégie disponibles uniquement dans les stratégies anti-hameçonnage dans Defender for Office 365.
+Cette section décrit les paramètres de stratégie disponibles uniquement dans les stratégies anti-hameçonnage dans Defender pour Office 365.
 
 > [!NOTE]
 > La stratégie anti-hameçonnage par défaut dans [](set-up-anti-phishing-policies.md#spoof-settings) Defender pour Office 365 protection contre l’usurpation d’adresses et l’intelligence des boîtes aux lettres pour tous les destinataires. Toutefois, les autres fonctionnalités disponibles de [protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) contre l’emprunt d’identité et les paramètres avancés ne sont pas [configurés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ou activés dans la stratégie par défaut. Pour activer toutes les fonctionnalités de protection, modifiez la stratégie anti-hameçonnage par défaut ou créez des stratégies anti-hameçonnage supplémentaires.
@@ -175,7 +175,7 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 
   > [!NOTE]
   >
-  > - Dans chaque stratégie anti-hameçonnage, vous pouvez spécifier un maximum de 350 utilisateurs protégés (adresses e-mail de l’expéditeur). Vous ne pouvez pas spécifier le même utilisateur protégé dans plusieurs stratégies. Ainsi, quel que soit le nombre de stratégies appliquées à un destinataire, le nombre maximal d’utilisateurs protégés (adresses e-mail de l’expéditeur) pour chaque destinataire individuel est de 350. Pour plus d’informations sur la priorité de stratégie et la façon dont le traitement des stratégies s’arrête après l’application de la première stratégie, voir Ordre et priorité [de la protection du courrier électronique.](how-policies-and-protections-are-combined.md)
+  > - Dans chaque stratégie anti-hameçonnage, vous pouvez spécifier un maximum de 350 utilisateurs protégés (adresses e-mail de l’expéditeur). Vous ne pouvez pas spécifier le même utilisateur protégé dans plusieurs stratégies. Ainsi, quel que soit le nombre de stratégies appliquées à un destinataire, le nombre maximal d’utilisateurs protégés (adresses e-mail de l’expéditeur) pour chaque destinataire individuel est de 350. Pour plus d’informations sur la priorité de stratégie et la façon dont le traitement de stratégie s’arrête après l’application de la première stratégie, voir Ordre et priorité de la [protection de la messagerie.](how-policies-and-protections-are-combined.md)
   > - La protection contre l’emprunt d’identité d’utilisateur ne fonctionne pas si l’expéditeur et le destinataire ont précédemment communiqué par courrier électronique. Si l’expéditeur et le destinataire n’ont jamais communiqué par courrier électronique, le message est identifié comme une tentative d’emprunt d’identité.
 
   Par défaut, aucune adresse de messagerie de l’expéditeur n’est configurée pour la protection contre l’emprunt d’identité dans **Les utilisateurs à protéger.** Par conséquent, par défaut, aucune adresse de messagerie de l’expéditeur n’est couverte par la protection contre l’emprunt d’identité, que ce soit dans la stratégie par défaut ou dans les stratégies personnalisées.
@@ -203,7 +203,7 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
   - **Supprimez le message avant qu’il ne soit** remis : supprime silencieusement l’intégralité du message, y compris toutes les pièces jointes.
 
 - **Conseils de sécurité** pour l’emprunt d’identité : activer ou désactiver les conseils de sécurité d’emprunt d’identité suivants qui s’affichent pour les messages qui échouent aux vérifications d’emprunt d’identité :
-  - **Afficher un conseil pour les utilisateurs dont** l’identité a été usurpée : l’adresse De contient un **enable users to protect** user. Disponible uniquement si **activer la protection des utilisateurs** est activé et configuré.
+  - **Afficher un conseil pour les utilisateurs dont** l’identité a été usurpée : l’adresse De contient **un enable users to protect** user. Disponible uniquement si **activer la protection des** utilisateurs est activé et configuré.
   - **Afficher un conseil pour les domaines dont l’identité a** été usurpée : l’adresse De contient un **domaine Activer pour protéger le** domaine. Disponible uniquement si **activer les domaines à protéger** est activé et configuré.
   - Afficher la conseil pour les caractères inhabituels : l’adresse De contient des jeux de **caractères inhabituels** (par exemple, des symboles mathématiques et du texte ou un mélange de lettres majuscules et minuscules) dans un enable **users to protect** sender or an Enable domains to protect sender domain.  Disponible uniquement si **Activer les utilisateurs pour protéger ou**  Activer les **domaines à** protéger est activé et configuré.
 
@@ -221,14 +221,14 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
   - **Remettre le message et ajouter d’autres adresses à la ligne Bcc**
   - **Supprimer le message avant sa livraison**
 
-- **Ajouter des expéditeurs et des domaines de confiance**: exceptions aux paramètres de protection contre l’emprunt d’identité. Les messages provenant des domaines des expéditeurs et des expéditeurs spécifiés ne sont jamais classés comme attaques basées sur l’emprunt d’identité par la stratégie. En d’autres termes, l’action pour les expéditeurs protégés, les domaines protégés ou la protection de l’intelligence des boîtes aux lettres n’est pas appliquée à ces expéditeurs ou domaines d’expéditeurs fiables. La limite maximale pour ces listes est d’environ 1 000 entrées.
+- **Ajouter des expéditeurs et des domaines de confiance**: exceptions aux paramètres de protection contre l’emprunt d’identité. Les messages provenant des domaines des expéditeurs et des expéditeurs spécifiés ne sont jamais classés comme attaques basées sur l’emprunt d’identité par la stratégie. En d’autres termes, l’action pour les expéditeurs protégés, les domaines protégés ou la protection de l’intelligence des boîtes aux lettres n’est pas appliquée à ces expéditeurs ou domaines d’expéditeurs fiables. La limite maximale pour ces listes est de 1 024 entrées.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Seuils de hameçonnage avancés dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
 Les seuils de hameçonnage avancés suivants sont disponibles uniquement dans les stratégies anti-hameçonnage dans Defender pour Office 365. Ces seuils contrôlent la sensibilité à l’application de modèles d’apprentissage automatique aux messages pour déterminer un verdict de hameçonnage :
 
 - **1 - Standard**: il s’agit de la valeur par défaut. La gravité de l’action entreprise sur le message dépend du degré de confiance que le message est un hameçonnage (faible, moyen, élevé ou très élevé). Par exemple, les messages identifiés comme étant du hameçonnage avec un très haut degré de confiance ont les actions les plus graves appliquées, tandis que les messages identifiés comme étant du hameçonnage avec un faible degré de confiance ont des actions moins graves appliquées.
-- **2 - Agressif**: les messages identifiés comme du hameçonnage avec un haut degré de confiance sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
+- **2 - Agressif**: les messages identifiés comme étant du hameçonnage avec un haut degré de confiance sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
 - **3 - Plus** agressif : les messages identifiés comme du hameçonnage avec un niveau de confiance moyen ou élevé sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
 - **4 -** Plus agressif : les messages identifiés comme étant du hameçonnage avec un niveau de confiance faible, moyen ou élevé sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
 

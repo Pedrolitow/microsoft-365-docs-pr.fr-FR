@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aa653b7f40be232c345f21ec00f7fadb60a4af0a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 28de961d49953af1a8e90a7cc411cd598368954f
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544648"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590977"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
 
@@ -34,7 +34,7 @@ ms.locfileid: "53544648"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article explique comment déployer Microsoft Defender pour Endpoint sur Linux manuellement. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
@@ -58,7 +58,7 @@ Avant de commencer, consultez [Microsoft Defender pour Endpoint sur Linux](micro
 
 ## <a name="configure-the-linux-software-repository"></a>Configurer le référentiel de logiciels Linux
 
-Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
+Defender for Endpoint sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
@@ -279,7 +279,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez **Script local** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![capture d Microsoft 365 Defender portail d’entreprise](images/atp-portal-onboarding-linux.png)
+    ![capture d’écran Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux.png)
 
 4. À partir d’une invite de commandes, vérifiez que vous avez le fichier.
     Extrayons le contenu de l’archive :
@@ -356,7 +356,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
         curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - Le fichier doit avoir été mis en quarantaine par Defender pour point de terminaison sur Linux. Utilisez la commande suivante pour lister toutes les menaces détectées :
+    - Le fichier doit avoir été mis en quarantaine par Defender for Endpoint sur Linux. Utilisez la commande suivante pour lister toutes les menaces détectées :
 
         ```bash
         mdatp threat list

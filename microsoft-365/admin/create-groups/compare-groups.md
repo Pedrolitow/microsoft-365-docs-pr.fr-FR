@@ -23,22 +23,31 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Les membres du groupe Microsoft 365 disposent d'une messagerie de groupe et d'un espace de travail partagé pour les conversations, les fichiers et les événements du calendrier, du flux et du planificateur.
-ms.openlocfilehash: 12da954beb4d019b7652ef4df2e18cb30ff542ed
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: c043a1cd796789e9da51cbb6c1f59d7a7c8df07d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393258"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541648"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
 Dans la section **Groupes** du Centre d’administration Microsoft 365, vous pouvez créer et gérer les types de groupes suivants : 
 
-- **Microsoft 365 Groups** (anciennement groupes Office 365) est utilisé pour la collaboration entre les utilisateurs, à l’intérieur et à l’extérieur de votre entreprise.
+- Les **Groupes Microsoft 365** sont utilisés pour la collaboration entre utilisateurs, aussi bien à l’intérieur qu’à l’extérieur de votre entreprise. Ils incluent des services de collaboration tels que SharePoint et le Planificateur.
 - **Les groupes de distribution** sont utilisés pour envoyer des notifications par courrier électronique à un groupe de personnes.
 - Les **Groupes de sécurité** sont utilisés pour accorder l’accès aux ressources telles que les sites SharePoint.
 - Les **Groupes de sécurité à extension courrier** sont utilisés pour accorder l’accès aux ressources telles que SharePoint et envoyer par e-mail des notifications à ces utilisateurs.
 - Les **Boîtes aux lettres partagées** sont utilisées lorsque plusieurs personnes doivent accéder à la même boîte aux lettres, par exemple, une information d’entreprise ou une adresse de courrier du support technique.
+
+Certains groupes autorisent l’appartenance ou l’e-mail dynamique.
+
+||Groupes Microsoft 365|Groupes de distribution|Groupes de sécurité|Groupes de sécurité à extension messagerie|Boîtes aux lettres partagées|
+|:----|:----|:----|:----|:----|:----|
+|**Mail-enabled**|Oui|Oui|Non|Oui|Oui|
+|**Appartenance dynamique à Azure AD**|Oui|Non|Oui|Non|Non|
+
+Tous ces types de groupes peuvent être utilisés avec Power Automate.
 
 ## <a name="microsoft-365-groups"></a>Groupes Microsoft 365
 

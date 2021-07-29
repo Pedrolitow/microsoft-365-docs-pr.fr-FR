@@ -1,6 +1,6 @@
 ---
 title: Gérer Microsoft Defender pour le point de terminaison à l’aide de PowerShell, WMI et MPCmdRun.exe
-description: Découvrez comment gérer Microsoft Defender for Endpoint avec PowerShell, WMI et MPCmdRun.exe
+description: Découvrez comment gérer Microsoft Defender pour endpoint avec PowerShell, WMI et MPCmdRun.exe
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 063870c58377d7327f621ec49855b684065f436b
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2c9cbff0a1637636e310ca83523319dd6fe236f2
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286764"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541708"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Gérer Microsoft Defender pour le point de terminaison avec PowerShell, WMI et MPCmdRun.exe
 
@@ -80,9 +80,9 @@ Sur un appareil individuel, vous pouvez exécuter une analyse, démarrer le suiv
 |---|---|
 |**Gérer les Antivirus Microsoft Defender**|[Configurer et gérer les Antivirus Microsoft Defender avec mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)|
 
-## <a name="configure-your-microsoft-defender-security-center"></a>Configurer votre Centre de sécurité Microsoft Defender
+## <a name="configure-your-microsoft-365-defender-portal"></a>Configurer votre portail Microsoft 365 Defender client
 
-Si ce n’est pas déjà fait, configurez votre **Centre de sécurité Microsoft Defender (** ) pour afficher les alertes, configurer les fonctionnalités de protection contre les menaces et afficher des informations détaillées sur la posture de sécurité globale de votre [https://securitycenter.windows.com](https://securitycenter.windows.com) organisation.
+Si vous ne l’avez pas déjà fait, configurez votre portail [Microsoft 365 Defender](https://security.microsoft.com/) pour afficher les alertes, configurer les fonctionnalités de protection contre les menaces et afficher des informations détaillées sur la posture de sécurité globale de votre organisation.
 
 Vous pouvez également configurer si les fonctionnalités que les utilisateurs finaux peuvent voir dans le Centre de sécurité Microsoft Defender.
 
@@ -90,7 +90,7 @@ Vous pouvez également configurer si les fonctionnalités que les utilisateurs f
 
 - [Protection des points de terminaison : Centre de sécurité Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Obtenir une vue d’ensemble de la gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 

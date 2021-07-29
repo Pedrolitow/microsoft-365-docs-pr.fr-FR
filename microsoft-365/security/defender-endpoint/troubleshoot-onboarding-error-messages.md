@@ -1,6 +1,6 @@
 ---
 title: Résoudre les problèmes d’intégration et les messages d’erreur
-description: Résoudre les problèmes d’intégration et le message d’erreur lors de la configuration de Microsoft Defender pour le point de terminaison.
+description: Résoudre les problèmes d’intégration et le message d’erreur lors de la configuration de Microsoft Defender pour endpoint.
 keywords: résolution des problèmes, dépannage, Azure Active Directory, intégration, message d’erreur, messages d’erreur, microsoft defender pour le point de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,30 +16,30 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b8e15f27ffe4babe730870fb576980c62cb0fd59
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 03d102ec116b9f5507c3eaa869231a9197d3041c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844033"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568075"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Résoudre des problèmes d’abonnement et de portail d’accès
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
 
 Cette page fournit des étapes détaillées pour résoudre les problèmes qui peuvent se produire lors de la configuration de votre service Microsoft Defender for Endpoint.
 
-Si vous recevez un message d’erreur, Centre de sécurité Microsoft Defender fournit une explication détaillée du problème et des liens pertinents sont fournis.
+Si vous recevez un message d’erreur, Microsoft 365 Defender fournit une explication détaillée du problème et des liens pertinents sont fournis.
 
 ## <a name="no-subscriptions-found"></a>Aucun abonnement trouvé
 
-Si, lors de l’accès à Centre de sécurité Microsoft Defender vous obtenez un **message** aucun abonnement trouvé, cela signifie que le Azure Active Directory (Azure AD) utilisé pour se connecter à l’utilisateur sur le portail, n’a pas de licence Microsoft Defender pour endpoint.
+Si, lors de l’accès à Microsoft 365 Defender vous obtenez un **message** aucun abonnement trouvé, cela signifie que le Azure Active Directory (Azure AD) utilisé pour se connecter à l’utilisateur sur le portail, n’a pas de licence Microsoft Defender pour le point de terminaison.
 
 Raisons potentielles :
 - Les licences Windows E5 et Office E5 sont des licences distinctes.
@@ -53,12 +53,12 @@ Dans les deux cas, vous devez contacter le support Microsoft à l’aide du supp
 
 ## <a name="your-subscription-has-expired"></a>Votre abonnement a expiré
 
-Si, lors de l’Centre de sécurité Microsoft Defender vous obtenez un **message** votre abonnement a expiré, votre abonnement de service en ligne a expiré. L’abonnement Microsoft Defender pour les points de terminaison, comme tout autre abonnement de service en ligne, a une date d’expiration. 
+Si, lors de l’Microsoft 365 Defender vous obtenez un **message** votre abonnement a expiré, votre abonnement de service en ligne a expiré. L’abonnement Microsoft Defender pour les points de terminaison, comme tout autre abonnement de service en ligne, a une date d’expiration. 
 
 Vous pouvez choisir de renouveler ou de prolonger la licence à tout moment. Lorsque vous accédez au portail après la date d’expiration, un **message** votre abonnement a expiré se présente avec une option pour télécharger le package de la sortie de l’appareil, si vous choisissez de ne pas renouveler la licence.
 
 > [!NOTE]
-> Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
+> Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
 ![Image de l’abonnement expiré](images/atp-subscription-expired.png)
 
@@ -74,7 +74,7 @@ Si le tableau de bord du portail et d’autres sections indiquent un message d�
 
 ![Image des données actuellement non disponible](images/atp-data-not-available.png)
 
-Vous devez autoriser le sous-domaine et tous ses `securitycenter.windows.com` sous-domaine. Par exemple, `*.securitycenter.windows.com`.
+Vous devez autoriser le sous-domaine et tous ses `security.windows.com` sous-domaine. Par exemple, `*.security.windows.com`.
 
 
 ## <a name="portal-communication-issues"></a>Problèmes de communication du portail
