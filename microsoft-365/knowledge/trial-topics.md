@@ -1,5 +1,5 @@
 ---
-title: Exécuter une version d’essai des rubriques microsoft
+title: Exécuter une version d’Sujets Microsoft Viva
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 ms.custom: ''
 search.appverid: ''
 localization_priority: Normal
-description: Découvrez comment planifier et exécuter un programme pilote d’essai pour Microsoft Topics dans votre organisation.
-ms.openlocfilehash: 128e82e7664a76baa55d37e983319c9f344624fd
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+description: Découvrez comment planifier et exécuter un programme pilote d’essai pour Sujets Microsoft Viva votre organisation.
+ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327112"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649622"
 ---
-# <a name="run-a-trial-of-microsoft-viva-topics"></a>Exécuter une version d’essai des rubriques microsoft
+# <a name="run-a-trial-of-microsoft-viva-topics"></a>Exécuter une version d’Sujets Microsoft Viva
 
 Cet article explique comment configurer et exécuter un programme pilote d’essai pour déployer Topics dans votre organisation. Cet article recommande également les meilleures pratiques pour la version d’essai.
 
@@ -30,12 +30,12 @@ Les essais sont disponibles publiquement à partir de l’une des sources suivan
 - Page [Du produit Rubriques](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 - Le [Centre d’administration Microsoft 365](https://admin.microsoft.com)
-    1.  Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
-    2.  Go to **Billing**  >  **Purchase Services**.
-    3.  Faites défiler la page vers le bas jusqu’à la section **Modules complémentaires**.
-    4.  Dans la vignette **Expériences des** **rubriques, sélectionnez Détails.**
-    5.  Sélectionnez **Obtenir un essai gratuit**.
-    6.  Suivez les étapes restantes de l’Assistant pour confirmer la version d’essai.
+    1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+    2. Go to **Billing**  >  **Purchase Services**.
+    3. Faites défiler la page vers le bas jusqu’à la section **Modules complémentaires**.
+    4. Dans la vignette **Expériences des** **rubriques, sélectionnez Détails.**
+    5. Sélectionnez **Obtenir un essai gratuit**.
+    6. Suivez les étapes restantes de l’Assistant pour confirmer la version d’essai.
 
 Vous devez être un administrateur Microsoft 365 général ou un administrateur de facturation pour activer une version d’essai.
 
@@ -44,25 +44,25 @@ Vous devez être un administrateur Microsoft 365 général ou un administrateur 
 
 ### <a name="who-should-be-involved-in-a-trial"></a>Qui doivent être impliquées dans une version d’essai
 
-|Rôle  |Activité  |
-|---------|---------|
-|Microsoft 365 administrateur global ou administrateur de facturation  |   Activer la version d’essai et attribuer des licences      |
-|Microsoft 365 administrateur global ou administrateur SharePoint administrateur    |       Configurer des rubriques Et créer des centres de rubriques  |
-|Utilisateur commercial     |   Effectuer des rôles de gestionnaire de connaissances, de collaborateur de rubriques et de consommateur de rubriques      |
+|Rôle|Activité|
+|---|---|
+|Microsoft 365 administrateur global ou administrateur de facturation|Activer la version d’essai et attribuer des licences|
+|Microsoft 365 administrateur global ou administrateur SharePoint administrateur|Configurer des rubriques Et créer des centres de rubriques|
+|Utilisateur commercial|Effectuer des rôles de gestionnaire de connaissances, de collaborateur de rubriques et de consommateur de rubriques|
 
 ### <a name="before-you-activate-a-trial"></a>Avant d’activer une version d’essai
 
 La planification est essentielle pour une version d’essai efficace de Topics. La période d’essai est limitée et doit inclure la découverte et l’exploration de la qualité, de la gestion et des expériences des utilisateurs finux.
 
-#### <a name="discovery"></a>Discovery
+#### <a name="discovery"></a>Découverte
 
 Il existe deux options de stratégie de haut niveau pour la configuration de la découverte de sujets au cours d’une version d’essai :
 
 - Indexez l’ensemble ou la majeure partie SharePoint contenu en ligne.
-   - L’indexation complète des locataires importants peut prendre jusqu’à deux semaines. Bien que les rubriques soient générées de manière incrémentielle tout au long de cette période, l’indexation complète peut consommer jusqu’à la moitié de la période d’essai.
-   - Pour les clients avec un volume important de données, cette option peut produire un très grand nombre de rubriques, voire des dizaines de milliers.
+  - L’indexation complète des locataires importants peut prendre jusqu’à deux semaines. Bien que les rubriques soient générées de manière incrémentielle tout au long de cette période, l’indexation complète peut consommer jusqu’à la moitié de la période d’essai.
+  - Pour les clients avec un volume important de données, cette option peut produire un très grand nombre de rubriques, voire des dizaines de milliers.
 
-- Identifiez un sous-ensemble de vos sites SharePoint à indexer.
+- Identifiez un sous-ensemble de vos sites SharePoint pour l’indexation.
 
 Le choix de ces stratégies est un équilibre entre les deux facteurs suivants :
 
@@ -72,17 +72,17 @@ Le choix de ces stratégies est un équilibre entre les deux facteurs suivants :
 Pour la plupart des organisations, la deuxième stratégie produit le meilleur résultat.
 
 > [!NOTE]
-> En raison du nombre de documents requis par l’IA, nous vous recommandons d’exécuter des essais de Rubriques Dans le cas d’un client de production. Il n’y a aucun impact sur les performances du client pendant cette période. Seuls les utilisateurs titulaires d’une licence d’essai peuvent accéder à l’expérience utilisateur de Topics.
+> En raison du nombre de documents requis par l’IA, nous vous recommandons d’exécuter des essais de Rubriques Dans le cas d’un client de production. Il n’y a aucun impact sur les performances du client pendant cette période. Seuls les utilisateurs titulaires d’une licence d’essai peuvent accéder aux expériences des utilisateurs de Topics.
 
 #### <a name="roles"></a>Rôles
 
 Au cours de la version d’essai, trois rôles doivent être actifs, qui sont décrits dans le tableau suivant.
 
-|Rôle  |Activité  |
-|---------|---------|
-|Gestionnaire des connaissances     |   Contrôler les étapes du cycle de vie des rubriques ; confirmer et supprimer des rubriques ; agir en tant que gestionnaire de communauté pour les contributeurs de rubriques ;      |
-|Contributeur de rubrique    |      Experts techniques du contenu, qui peuvent :<br> Examiner les rubriques pour évaluer la qualité du contenu défini par l’IA<br>Organiser des rubriques découvertes avec du contenu supplémentaire<br>Créer des rubriques supplémentaires qui n’ont pas été découvertes par l’IA   |
-|Consommateur de rubriques    |     Utiliser des rubriques par le biais des points forts de la page et de la recherche<br>Fournir des commentaires sur la valeur des rubriques présentées    |
+|Rôle|Activité|
+|---|---|
+|Gestionnaire des connaissances|Contrôler les étapes du cycle de vie des rubriques ; confirmer et supprimer des rubriques ; agir en tant que gestionnaire de communauté pour les contributeurs de rubriques ;|
+|Contributeur de rubrique|Experts techniques du contenu, qui peuvent :<br> Examiner les rubriques pour évaluer la qualité du contenu défini par l’IA<br>Organiser des rubriques découvertes avec du contenu supplémentaire<br>Créer des rubriques supplémentaires qui n’ont pas été découvertes par l’IA|
+|Consommateur de rubriques|Utiliser des rubriques par le biais des points forts de la page et de la recherche<br>Fournir des commentaires sur la valeur des rubriques présentées|
 
 #### <a name="expected-topics"></a>Rubriques attendues
 
@@ -115,7 +115,7 @@ Tenez compte de ces facteurs :
 
 - Pour que Topics offre la valeur maximale, le contenu des rubriques doit être une combinaison de contenu défini par l’IA et de contenu organisé par l’être humain.
 - Toutes les expériences utilisateur sont « découpées en autorisations » (y compris l’affichage du gestionnaire de connaissances sur la page Gérer **les rubriques).** Les utilisateurs ne voient une rubrique que s’ils sont autorisés à afficher certaines des ressources qui ont été utilisées pour générer la rubrique. Cela signifie que différents utilisateurs peuvent voir un contenu différent sur la même page de rubrique.
-- Les utilisateurs peuvent voir plusieurs rubriques qui ont le même nom dans la page **Gérer les rubriques.** Ces rubriques ne sont pas nécessairement des doublons, mais peuvent être dues à un seul terme utilisé dans plusieurs contextes dans les données, comme un nom de code de projet utilisé par deux projets distincts.
+- Les utilisateurs peuvent voir plusieurs rubriques qui ont le même nom dans la page **Gérer les rubriques.** Ces rubriques ne sont pas nécessairement des doublons, mais peuvent être dues à un seul terme utilisé dans plusieurs contextes dans les données, tel qu’un nom de code de projet utilisé par deux projets distincts.
 
 ## <a name="after-a-trial"></a>Après une version d’essai
 
@@ -123,7 +123,7 @@ En fonction du résultat de la version d’essai, vous pouvez décider s’il fa
 
 ### <a name="proceed-to-production-use"></a>Passer à l’utilisation de la production
 
-Pour garantir la continuité du service, vous devez acheter le nombre requis de licences et les attribuer aux utilisateurs. Les utilisateurs de la version d’essai qui ne sont pas titulaires d’une licence complète à la fin de la période d’essai ne pourront accéder à aucune expérience Topics.
+Pour garantir la continuité du service, vous devez acheter le nombre requis de licences et les attribuer aux utilisateurs. Les utilisateurs avec une version d’évaluation qui ne disposent pas d’une licence complète à la fin de la période d’essai ne pourront accéder à aucune expérience Rubriques Viva.
 
 ### <a name="dont-proceed-to-production-use"></a>Ne pas passer à l’utilisation en production
 
@@ -137,5 +137,4 @@ Si vous n’achetez pas de licences à la suite de la version d’essai :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Commencer à piloter l’adoption des rubriques microsoft](topics-adoption-getstarted.md)
-
+[Commencer à piloter l’adoption de Sujets Microsoft Viva](topics-adoption-getstarted.md)

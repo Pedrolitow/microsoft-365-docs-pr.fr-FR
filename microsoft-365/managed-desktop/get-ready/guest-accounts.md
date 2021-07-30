@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 2c1878dc9095fc4c4cfbd307154097cc6ff572f1
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 6cd7b69d154444bb6b39e61bc3446ea01d54321a
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623995"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663850"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Conditions préalables pour les comptes invité
 
@@ -45,6 +45,7 @@ Pour activer ce paramètre, suivez les étapes suivantes :
 > Vous ne pouvez pas annuler ce paramètre après avoir sélectionné **Oui.**
 
 Pour plus d’informations, [voir Administrateurs](/mem/intune/fundamentals/unlicensed-admins)sans Microsoft Intune .
+
 ## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
 
 1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).

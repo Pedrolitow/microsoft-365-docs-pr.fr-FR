@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5f65712fb3d1148d53361b97c75817792bedc198
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 352eada90d8d351cf953205bd2afd2abcfadbb72
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567055"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648842"
 ---
 # <a name="web-protection"></a>Protection Web
 
@@ -32,7 +32,7 @@ ms.locfileid: "53567055"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 La protection web dans Microsoft Defender pour le point de terminaison est une fonctionnalité de [protection contre](web-threat-protection.md) les menaces Web et de filtrage de [contenu Web.](web-content-filtering.md) La protection Web vous permet de sécuriser vos appareils contre les menaces web et de contrôler le contenu indésirable. Vous pouvez trouver des rapports de protection Web dans le portail Microsoft 365 Defender en allant à **Rapports > protection Web.**
 
@@ -43,6 +43,7 @@ La protection web dans Microsoft Defender pour le point de terminaison est une f
 Les cartes qui font la protection contre les menaces web sont les détections de **menaces Web** au fil du temps et le résumé **des menaces Web.**
 
 La protection contre les menaces web inclut :
+
 - Visibilité complète des menaces web affectant votre organisation
 - Fonctionnalités d’investigation sur l’activité des menaces liées au web par le biais d’alertes et de profils complets d’URL et des appareils qui accèdent à ces URL
 - Un ensemble complet de fonctionnalités de sécurité qui s’y rapportent pour suivre les tendances générales d’accès aux sites web malveillants et indésirables
@@ -52,13 +53,14 @@ La protection contre les menaces web inclut :
 Les cartes qui comprennent le filtrage de contenu web sont l’activité **Web** par catégorie, le résumé du filtrage de contenu **Web** et le résumé des **activités Web.**
 
 Le filtrage de contenu Web inclut :
+
 - Les utilisateurs ne peuvent pas accéder aux sites web dans les catégories bloquées, qu’ils naviguent en local ou en de suite
 - Vous pouvez déployer des stratégies variées sur différents ensembles d’utilisateurs à l’aide des groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les [rôles Microsoft Defender](/microsoft-365/security/defender-endpoint/rbac) pour Endpoint
 - Vous pouvez accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web
 
 ## <a name="in-this-section"></a>Dans cette section
 
-Rubrique | Description
-:---|:---
+Rubrique|Description
+---|---
 [Protection contre les menaces web](web-threat-protection.md) | Arrêtez l’accès aux sites d’hameçonnage, aux vecteurs de programmes malveillants, aux sites d’exploitation, aux sites nontrus ou à faible réputation, ainsi qu’aux sites que vous avez bloqués.
 [Filtrage du contenu web](web-content-filtering.md) | Suivre et contrôler l’accès aux sites web en fonction de leurs catégories de contenu.

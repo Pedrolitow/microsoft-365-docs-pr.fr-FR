@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 78ca10d5da8d9cfb6e40764162b7161a61b6993a
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: d2919bb6fa20870eb0de1361b9674df2a74e8ea1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596001"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649374"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Passer en revue les événements et les erreurs à l’aide de l’Observateur d’événements
 
@@ -34,7 +34,7 @@ ms.locfileid: "53596001"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Vous pouvez passer en revue les ID d’événement dans [l’Observateur d’événements](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) sur des appareils individuels.
 
@@ -59,16 +59,16 @@ Par exemple, si les appareils n’apparaissent pas dans la liste **Appareils,** 
 
    |ID de l'événement|Message|Description|Action|
    |---|---|---|---|
-   |1|Service Microsoft Defender pour point de terminaison démarré `variable` (version).|Se produit lors du démarrage, de l’arrêt et de l’intégration du système.|Notification de fonctionnement normal ; aucune action n’est requise.|
-   |2|Arrêt du service Microsoft Defender pour point de terminaison.|Se produit lorsque l’appareil est arrêté ou déboardé.|Notification de fonctionnement normal ; aucune action n’est requise.|
+   |1|Service Microsoft Defender pour point de terminaison démarré (version `variable` ).|Se produit lors du démarrage, de l’arrêt et de l’intégration du système.|Notification de fonctionnement normal ; aucune action n’est requise.|
+   |2|Arrêt du service Microsoft Defender for Endpoint.|Se produit lorsque l’appareil est arrêté ou déboardé.|Notification de fonctionnement normal ; aucune action n’est requise.|
    |3|Le service Microsoft Defender for Endpoint n’a pas réussi à démarrer. Code d’échec `variable` : .|Le service n’a pas commencé.|Examinez les autres messages pour déterminer la cause possible et les étapes de résolution des problèmes.|
    |4 |Microsoft Defender for Endpoint service contacted the server at `variable` .|Variable = URL des serveurs de traitement Defender pour les points de terminaison. <p> Cette URL correspond à celle qui s’est vue dans l’activité du pare-feu ou du réseau.|Notification de fonctionnement normal ; aucune action n’est requise.|
    |5 |Le service Microsoft Defender for Endpoint n’a pas réussi à se connecter au serveur à l’emplacement `variable` .|Variable = URL des serveurs de traitement Defender pour les points de terminaison. <p> Le service n’a pas pu contacter les serveurs de traitement externes à cette URL.|Vérifiez la connexion à l’URL. Voir [Configurer le proxy et la connectivité Internet.](configure-proxy-internet.md)|
-   |6 |Le service Microsoft Defender for Endpoint n’est pas intégré et aucun paramètre d’intégration n’a été trouvé.|L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.|L’intégration doit être exécuté avant de démarrer le service. <p> Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Voir [Appareils Windows 10 intégrés.](configure-endpoints.md)|
-   |7 |Le service Microsoft Defender for Endpoint n’a pas réussi à lire les paramètres d’intégration. Échec : `variable` .|Variable = description détaillée de l’erreur. L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.|Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Voir [Appareils Windows 10 intégrés.](configure-endpoints.md)|
+   |6 |Le service Microsoft Defender for Endpoint n’est pas intégré et aucun paramètre d’intégration n’a été trouvé.|L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.|L’intégration doit être exécuté avant de démarrer le service. <p> Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Voir [Appareils Windows 10 intégrés.](configure-endpoints.md)|
+   |7 |Le service Microsoft Defender for Endpoint n’a pas réussi à lire les paramètres d’intégration. Échec : `variable` .|Variable = description détaillée de l’erreur. L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.|Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Voir [Appareils Windows 10 intégrés.](configure-endpoints.md)|
    |8 |Le service Microsoft Defender for Endpoint n’a pas réussi à nettoyer sa configuration. Code d’échec `variable` : .|**Lors de l’intégration :** Le service n’a pas réussi à nettoyer sa configuration pendant l’intégration. Le processus d’intégration se poursuit. <p> **Lors de laboarding :** Le service n’a pas réussi à nettoyer sa configuration pendant le déboardage. Le processus deboarding est terminé, mais le service continue de s’exécute.|**Intégration :** Aucune action n’est requise. <p> **Pare-papiers :** Redémarrez le système. <p> Voir [Appareils Windows 10 intégrés.](configure-endpoints.md)|
-   |9 |Le service Microsoft Defender for Endpoint n’a pas réussi à modifier son type de démarrage. Code d’échec `variable` : .|**Lors de l’intégration :** L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail. <p>**Lors de laboarding :** Échec de la modification du type de démarrage du service. Le processus deboarding se poursuit. |Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Voir [Appareils Windows 10 intégrés.](configure-endpoints.md)|
-   |10 |Le service Microsoft Defender for Endpoint n’a pas réussi à rendre persistantes les informations d’intégration. Code d’échec `variable` : .|L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.|Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Voir [Appareils Windows 10 intégrés.](configure-endpoints.md)|
+   |9 |Le service Microsoft Defender for Endpoint n’a pas réussi à modifier son type de démarrage. Code d’échec `variable` : .|**Lors de l’intégration :** L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail. <p>**Lors de laboarding :** Échec de la modification du type de démarrage du service. Le processus deboarding se poursuit. |Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Voir [Appareils Windows 10 intégrés.](configure-endpoints.md)|
+   |10 |Le service Microsoft Defender for Endpoint n’a pas réussi à rendre persistantes les informations d’intégration. Code d’échec `variable` : .|L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.|Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration. <p> Voir [Appareils Windows 10 intégrés.](configure-endpoints.md)|
    |11|Intégration ou ré-intégration du service Defender for Endpoint terminée.|L’appareil est correctement intégré.|Notification de fonctionnement normal ; aucune action n’est requise. <p> L’apparition de l’appareil sur le portail peut prendre plusieurs heures.|
    |12 |Microsoft Defender for Endpoint n’a pas réussi à appliquer la configuration par défaut.|Le service n’a pas pu appliquer la configuration par défaut.|Cette erreur doit être résolue après un court moment.|
    |13|ID d’appareil Microsoft Defender pour point de terminaison calculé : `variable` .|Processus de fonctionnement normal.|Notification de fonctionnement normal ; aucune action n’est requise.|
@@ -112,7 +112,7 @@ Par exemple, si les appareils n’apparaissent pas dans la liste **Appareils,** 
    |59|Commande de démarrage : %1|Démarrage de l’exécution de la commande de réponse.|Notification de fonctionnement normal ; aucune action n’est requise.|
    |60|Échec d’exécuter la commande %1, erreur : %2.|Échec de l’exécution de la commande de réponse.|Si cette erreur persiste, contactez le support technique.|
    |61|Les paramètres de commande de collecte de données ne sont pas valides : SasUri : %1, compressionLevel : %2.|Échec de la lecture ou de l’analyse des arguments de commande de collecte de données (arguments non valides).|Si cette erreur persiste, contactez le support technique.|
-   |62|Échec du démarrage du service Expériences des utilisateurs connectés et télémétrie. Code d’échec : %1|Le service Expériences des utilisateurs connectés et télémétrie (diagtrack) n’a pas réussi à démarrer. La télémétrie de point de terminaison autre que Microsoft Defender ne sera pas envoyée à partir de cet ordinateur.|Recherchez d’autres conseils de dépannage dans le journal des événements : Microsoft-Windows-UniversalTelemetryClient/Operational.|
+   |62|Échec du démarrage du service Expériences des utilisateurs connectés et télémétrie. Code d’échec : %1|Le service Expériences des utilisateurs connectés et télémétrie (diagtrack) n’a pas réussi à démarrer. La télémétrie d’un point de terminaison autre que Microsoft Defender ne sera pas envoyée à partir de cet ordinateur.|Recherchez d’autres conseils de dépannage dans le journal des événements : Microsoft-Windows-UniversalTelemetryClient/Operational.|
    |63|Mise à jour du type de démarrage du service externe. Nom : %1, type de démarrage réel : %2, type de démarrage attendu : %3, code de sortie : %4|Type de démarrage mis à jour du service externe.|Notification de fonctionnement normal ; aucune action n’est requise.|
    |64|Démarrage du service externe arrêté. Nom : %1, code de sortie : %2|Démarrage d’un service externe.|Notification de fonctionnement normal ; aucune action n’est requise.|
    |65|Échec du chargement du pilote minifilter du composant Événements de sécurité Microsoft. Code d’échec : %1|Échec du chargement du MsSecFlt.sys du système de fichiers.|Redémarrez l’appareil. Si cette erreur persiste, contactez le support technique.|
@@ -123,7 +123,7 @@ Par exemple, si les appareils n’apparaissent pas dans la liste **Appareils,** 
    |71|Réussi à exécuter la commande : %1|La commande a été exécutée avec succès.|Notification de fonctionnement normal ; aucune action n’est requise.|
    |72|Nous avons essayé d’envoyer le premier rapport de profil d’ordinateur complet. Code de résultat : %1|Informations uniquement.|Notification de fonctionnement normal ; aucune action n’est requise.|
    |73|Sense starting for platform: %1|Informations uniquement.|Notification de fonctionnement normal ; aucune action n’est requise.|
-   |74|La balise d’appareil dans le Registre dépasse la limite de longueur. Nom de la balise : %2. Limite de longueur : %1.|La balise d’appareil dépasse la limite de longueur.|Utilisez une balise d’appareil plus courte.|
+   |74|La balise de périphérique dans le Registre dépasse la limite de longueur. Nom de la balise : %2. Limite de longueur : %1.|La balise d’appareil dépasse la limite de longueur.|Utilisez une balise d’appareil plus courte.|
    |81|Échec de la création dugger automatique Microsoft Defender for Endpoint ETW. Code d’échec : %1|Échec de la création de la session ETW.|Redémarrez l’appareil. Si cette erreur persiste, contactez le support technique.|
    |82|Échec de la suppression dugger automatique Microsoft Defender for Endpoint ETW. Code d’échec : %1|Échec de la suppression de la session ETW.|Contactez le support technique.|
    |84|Définissez Antivirus Windows Defender mode en cours d’exécution. Forcer le mode passif : %1, code de résultat : %2.|Définir le mode d’exécution de Defender (actif ou passif).|Notification de fonctionnement normal ; aucune action n’est requise.|
@@ -147,7 +147,7 @@ Par exemple, si les appareils n’apparaissent pas dans la liste **Appareils,** 
    |103|L’exécutable de détection et de réponse réseau microsoft Defender pour points de terminaison a pris fin|L’exécutable SenseNdr a pris fin.|Notification de fonctionnement normal ; aucune action n’est requise.|
    |
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## <a name="related-topics"></a>Voir aussi
 

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment planifier la Sujets Microsoft Viva
-ms.openlocfilehash: bd732edf9d206f6d62ed0cb3040b1d077b1948ca
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8f02d917a6a977dfcd8fdca6745abcdc66142aaa
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542392"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649646"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planifier les Sujets Microsoft Viva
 
@@ -23,7 +23,7 @@ Vous contrôlez la façon dont les sujets sont abordés dans votre organisation.
 
 Dans cet article, nous examinerons les décisions de planification ci-après :
 
-- Les SharePoint sites que vous souhaitez analyser pour les rubriques
+- Quels SharePoint sites que vous souhaitez analyser pour les rubriques
 - Rubriques, le cas caser, que vous souhaitez exclure des expériences de rubrique
 - Utilisateurs pour lesquels vous souhaitez rendre les rubriques visibles
 - Utilisateurs que vous souhaitez autoriser à gérer les rubriques dans le centre de rubriques
@@ -54,6 +54,8 @@ Lorsque vous définissez Rubriques, vous pouvez choisir l’une des options suiv
 - **Tous, sauf les sites sélectionnés** : tous les sites à l’exception de ceux que vous spécifiez. Les sites créés à l’avenir seront inclus en tant que sources pour la découverte de rubriques. 
 - **Uniquement les sites sélectionnés**: uniquement les sites que vous spécifiez. Les sites créés dans le futur ne seront pas inclus comme sources pour la découverte de rubriques.
 - **Aucun site** : n’incluez aucun site SharePoint.
+
+Nous vous recommandons de sélectionner suffisamment de sites pour inclure au moins 20 000 documents afin d’obtenir les meilleurs résultats de Rubriques.
 
 Si vous choisissez **Tous, à** l’exception des sites sélectionnés ou uniquement des **sites** sélectionnés, vous pouvez télécharger un fichier .csv avec une liste de sites. Ces options sont utiles si vous faites un projet pilote et que vous souhaitez inclure un nombre limité de sites à démarrer.
 
@@ -98,7 +100,7 @@ Vous pouvez choisir de ne permettre à personne de contribuer à des rubriques, 
 
 *Visionneuses de rubriques*
 
-Les visiteurs peuvent voir des informations sur les pages de rubriques, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillez dans le contenu tel que SharePoint pages. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
+Les visiteurs peuvent voir des informations sur les pages de rubriques, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillables dans le contenu comme SharePoint pages. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
 
 Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parmi :
 
@@ -106,7 +108,7 @@ Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parm
 - **Personnes ou groupes de sécurité sélectionnés uniquement**
 - **Personne**
 
-Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les personnes à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
+Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les utilisateurs à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
 
 ## <a name="knowledge-rules"></a>Règles de connaissance
 
@@ -117,7 +119,7 @@ Si vous souhaitez exclure des rubriques au niveau de l’administrateur, vous de
 Le .csv doit contenir les paramètres suivants :
 
 - **Nom** : tapez le nom de la rubrique à exclure. Il existe deux méthodes pour y parvenir :
-- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
+- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exacte* *ou* partielle.
     - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
     - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
 - **Signifie (facultatif)**: (également appelé *expansion)* Si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8397731941a3344638edb0b57e77272f4fae930
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: b052bc0c02bbf71791b6c0a96767bc75d7d546bd
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590994"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649574"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>Configurer Micro Focus ArcSight pour tirer Defender pour les détections de points de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "53590994"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configurearcsight-abovefoldlink)
 
 Vous devez installer et configurer certains fichiers et outils pour utiliser Micro Focus ArcSight afin qu’il puisse tirer Defender pour les détections de points de terminaison.
 
@@ -82,7 +82,7 @@ Les étapes suivantes supposent que vous avez effectué toutes les étapes requi
 
    Vous pouvez conserver les valeurs par défaut pour chacune de ces tâches ou modifier la sélection en fonction de vos besoins.
 
-3. Ouvrez l’Explorateur de fichiers et recherchez les deux fichiers de configuration que vous avez enregistrés lorsque vous avez activé la fonctionnalité d’intégration SIEM. Placez les deux fichiers à l’emplacement d’installation de FlexConnector, par exemple :
+3. Ouvrez l’Explorateur de fichiers et recherchez les deux fichiers de configuration que vous avez enregistrés lorsque vous avez activé la fonctionnalité d’intégration SIEM. Placez les deux fichiers à l’emplacement d’installation FlexConnector, par exemple :
 
    - WDATP-connector.jsonparser.properties : C: \\ *folder_location*\current\user\agent\flexagent\
 
@@ -103,10 +103,10 @@ Les étapes suivantes supposent que vous avez effectué toutes les étapes requi
 
    |Champ|Valeur|
    |---|---|
-   |Fichier de configuration|Tapez le nom du fichier de propriétés client. Le nom doit correspondre au fichier fourni dans la .zip que vous avez téléchargée. <p> Par exemple, si le fichier de configuration dans le répertoire « flexagent » est nommé « WDATP-Connector.jsonparser.properties », vous devez taper « WDATP-Connector » comme nom du fichier de propriétés du client.|
+   |Fichier de configuration|Tapez le nom du fichier de propriétés du client. Le nom doit correspondre au fichier fourni dans la .zip que vous avez téléchargée. <p> Par exemple, si le fichier de configuration dans le répertoire « flexagent » est nommé « WDATP-Connector.jsonparser.properties », vous devez taper « WDATP-Connector » comme nom du fichier de propriétés du client.|
    |URL des événements|Selon l’emplacement de votre centre de données, sélectionnez l’URL de l’UE ou des États-Unis : <ul><li>**Pour l’UE**:  `https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Pour les États-Unis**: `https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Pour le Royaume-Uni**: `https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
    |Type d’authentification|OAuth 2|
-   |Fichier de propriétés du client OAuth 2|Accédez à l’emplacement du *fichier wdatp-connector.properties.* Le nom doit correspondre au fichier fourni dans la .zip que vous avez téléchargée.|
+   |Fichier de propriétés du client OAuth 2|Accédez à l’emplacement *du fichier wdatp-connector.properties.* Le nom doit correspondre au fichier fourni dans la .zip que vous avez téléchargée.|
    |Jeton d’actualisation|Vous pouvez obtenir un jeton d’actualisation de deux manières : en générant un jeton d’actualisation à partir de la page des **paramètres SIEM** ou en utilisant l’outil restutil. <p> Pour plus d’informations sur la génération d’un jeton d’actualisation à partir de la configuration **préférences,** voir Activer l’intégration [SIEM dans Defender for Endpoint](enable-siem-integration.md). <p> **Obtenez votre jeton d’actualisation à l’aide de l’outil restutil**: <ol><li>Ouvrez une invite de commandes. Accédez à C: \\ *emplacement \_ du* dossier \current\bin où *\_ l’emplacement* du dossier représente l’emplacement où vous avez installé l’outil.</li><li>Type : `arcsight restutil token -config` à partir du répertoire bin. Par exemple : **arcsight restutil boxtoken -proxy proxy.location.hp.com:8080**. Une fenêtre de navigateur Web s’ouvre.</li><li>Tapez vos informations d’identification, puis cliquez sur le champ mot de passe pour que la page soit redirigée. Dans l’invite de connexion, entrez vos informations d’identification.</li><li>Un jeton d’actualisation est affiché dans l’invite de commandes.</li><li>Copiez-le et collez-le dans **le champ Jeton d’actualisation.**|
    |
 
@@ -124,7 +124,7 @@ Les étapes suivantes supposent que vous avez effectué toutes les étapes requi
 
 11. Tapez un nom pour le connecteur dans le formulaire de détails du connecteur. Toutes les autres valeurs du formulaire sont facultatives et peuvent être laissées vides. Cliquez sur **Suivant**.
 
-12. La fenêtre d’importation du certificat esM Manager s’affiche. Sélectionnez **Importer le certificat vers le connecteur à partir de la destination,** puis cliquez sur **Suivant.** La **fenêtre Résumé du connecteur d’ajout** s’affiche et le certificat est importé.
+12. La fenêtre d’importation du certificat esM Manager s’affiche. Sélectionnez **Importer le certificat vers le connecteur à partir de la destination,** puis cliquez sur **Suivant.** La **fenêtre Résumé du connecteur** d’ajout s’affiche et le certificat est importé.
 
 13. Vérifiez que les détails dans la fenêtre Résumé du **connecteur** d’ajout sont corrects, puis cliquez sur **Suivant**.
 
@@ -148,7 +148,7 @@ Les étapes suivantes supposent que vous avez effectué toutes les étapes requi
 
 2. Cliquez sur **Installer**. Une fois l’installation terminée, l’Assistant Configuration de la console ArcSight s’ouvre.
 
-3. Tapez localhost dans **le nom d’hôte** du gestionnaire et 8443 dans le port du **gestionnaire,** puis cliquez sur **Suivant**.
+3. Tapez localhost dans **le nom d’hôte** du gestionnaire et 8443 dans **le port du gestionnaire,** puis cliquez sur **Suivant**.
 
 4. Sélectionnez **Utiliser la connexion directe,** puis cliquez sur **Suivant.**
 
