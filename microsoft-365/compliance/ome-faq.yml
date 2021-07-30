@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 809f31682fbcb690aaaf2483ec8b72c766282cf5
-  ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+  ms.openlocfilehash: 2e59d4b4d2d077921e1c6c9496d14e59bae2317a
+  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/15/2021
-  ms.locfileid: "53453824"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "53657014"
 title: FAQ sur le chiffrement des messages
 summary: >
   Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici. En outre, jetez un œil aux questions fréquemment posées sur la protection des données dans [Azure Information Protection](/information-protection/get-started/faqs-rms) pour obtenir des réponses aux questions sur le service de protection des données, Azure Rights Management, dans Azure Information Protection.
@@ -40,11 +40,11 @@ sections:
       Puis-je utiliser Exchange Online avec votre propre clé (BYOK) dans Azure Information Protection ?
     answer: "Oui. Microsoft vous recommande d’effectuer les étapes de la mise en place de BYOK avant de configurer OME.\n  \nPour plus d’informations sur BYOK, voir Planification et mise en œuvre de votre clé [de client Azure Information Protection.](/information-protection/plan-design/plan-implement-tenant-key)\n  \n"
   - question: >
-      OME et BYOK avec Azure Information Protection modifient-ils l’approche de Microsoft pour les demandes de données tierces, telles que les demandes d’accès ?
+      Est-ce que OME et BYOK avec Azure Information Protection modifient l’approche de Microsoft pour les demandes de données tierces, telles que les réceptions ?
     answer: "Non. OME et l’option de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d’Azure Information Protection n’ont pas été conçues pour répondre aux forces de l’ordre. OME, avec BYOK pour Azure Information Protection, a été conçu pour les organisations axées sur la conformité. Microsoft prend au sérieux les demandes tierces pour les données client. En tant que fournisseur de services cloud, nous prônons toujours la confidentialité de vos données. Dans le cas où nous obtenons une autorisation, nous essayons toujours de rediriger directement le tiers vers vous pour obtenir les informations. (Lisez le blog de Brad Smith : Protection des données client contre [les espions du gouvernement).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d’informations sur les [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) demandes de données tierces, voir Répondre aux demandes gouvernementales et d’application de la loi pour accéder aux données client sur le Centre de gestion de la confiance Microsoft. Voir également « Divulgation des données client » dans les [conditions d’utilisation des services en ligne (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)\n  \n"
   - question: >
       En quoi cette fonctionnalité est-elle liée aux fonctionnalités chiffrement de messages Office 365 héritées (OME) et gestion des droits relatifs à l’information (IRM) ?
-    answer: "Les nouvelles fonctionnalités pour chiffrement de messages Office 365 sont une évolution des solutions IRM et OME héritées existantes. Le tableau suivant fournit plus de détails.\n  \n**Comparaison des fonctionnalités OME, IRM et nouvelles fonctionnalités OME héritées**\n\n| Fonctionnalité | Versions précédentes d’OME | IRM | Nouvelles fonctionnalités OME |\n|:-----|:-----|:-----|:-----|\n|**Envoi d’un e-mail chiffré**|Uniquement par le biais Exchange règles de flux de messagerie|l’utilisateur final initié à partir Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou par le biais Exchange règles de flux de messagerie|l’utilisateur final initié à partir Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou via des règles de flux de messagerie|\n|**Gestion des droits**|-|Option Ne pas forwarder et modèles personnalisés|Option Ne pas forwarder, option chiffrer uniquement, modèles par défaut et personnalisés|\n|**Type de destinataire pris en charge**|Destinataires externes uniquement|Destinataires internes uniquement|Destinataires internes et externes|\n|**Expérience du destinataire**|Les destinataires externes ont reçu un message HTML qu’ils ont téléchargé et ouvert dans un navigateur ou une application mobile téléchargée.|Les destinataires internes n’ont reçu que des messages chiffrés Outlook pour Windows, Outlook pour Mac et Outlook sur le web.|Les destinataires internes et externes reçoivent des messages électroniques dans Outlook pour Windows, Outlook pour Mac, Outlook sur le web, Outlook pour Android et Outlook pour iOS, ou via un portail web, qu’ils soient ou non dans la même organisation ou dans n’importe quelle organisation. Le portail OME ne nécessite aucun téléchargement distinct.|\n|**Prise en charge de l’apportez votre propre clé**|Non disponible|Non disponible| BYOK pris en charge|\n"
+    answer: "Les nouvelles fonctionnalités pour chiffrement de messages Office 365 sont une évolution des solutions IRM et OME héritées existantes. Le tableau suivant fournit plus de détails.\n  \n**Comparaison des fonctionnalités OME, IRM et nouvelles fonctionnalités OME héritées**\n\n| Fonctionnalité | Versions précédentes d’OME | IRM | Nouvelles fonctionnalités OME |\n|:-----|:-----|:-----|:-----|\n|**Envoi d’un e-mail chiffré**|Uniquement par le biais Exchange règles de flux de messagerie|l’utilisateur final initié à partir Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou par le biais Exchange règles de flux de messagerie|l’utilisateur final initié à partir Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou via des règles de flux de messagerie|\n|**Gestion des droits**|-|Option Ne pas forwarder et modèles personnalisés|Option Ne pas forwarder, option chiffrer uniquement, modèles par défaut et personnalisés|\n|**Type de destinataire pris en charge**|Destinataires externes uniquement|Destinataires internes uniquement|Destinataires internes et externes|\n|**Expérience du destinataire**|Les destinataires externes ont reçu un message HTML qu’ils ont téléchargé et ouvert dans un navigateur ou une application mobile téléchargée.|Les destinataires internes recevaient uniquement des messages chiffrés Outlook pour Windows, Outlook pour Mac et Outlook sur le web.|Les destinataires internes et externes reçoivent des messages électroniques dans Outlook pour Windows, Outlook pour Mac, Outlook sur le web, Outlook pour Android et Outlook pour iOS, ou via un portail web, qu’ils soient ou non dans la même organisation ou dans n’importe quelle organisation. Le portail OME ne nécessite aucun téléchargement distinct.|\n|**Prise en charge de l’apportez votre propre clé**|Non disponible|Non disponible| BYOK pris en charge|\n"
   - question: >
       Comment activer les nouvelles fonctionnalités OME pour mon organisation ?
     answer: "Voir [Configurer de nouvelles fonctionnalités chiffrement de messages Office 365 de gestion.](set-up-new-message-encryption-capabilities.md)\n  \n"
@@ -131,19 +131,15 @@ sections:
     answer: "Oui. Pour plus d’informations sur la personnalisation des messages électroniques et du portail OME, voir Ajouter la marque de votre organisation à vos messages chiffrés. Voir [Ajouter la marque de votre organisation à vos messages chiffrés.](add-your-organization-brand-to-encrypted-messages.md)\n  \n"
   - question: >
       Existe-t-il des fonctionnalités de rapport ou des informations pour les e-mails chiffrés ?
-    answer: "Il existe un rapport de chiffrement dans le Centre de sécurité et conformité. Voir afficher les rapports de sécurité du courrier électronique dans le [Centre de sécurité & conformité.](../security/office-365-security/view-email-security-reports.md)\n  \n"
+    answer: "Il existe un rapport de chiffrement dans le Centre de sécurité et conformité. Consultez [les rapports de sécurité du courrier électronique dans le Centre de sécurité & conformité.](../security/office-365-security/view-email-security-reports.md)\n  \n"
   - question: >
-      Puis-je utiliser le chiffrement des messages avec des fonctionnalités de conformité telles qu’eDiscovery ?
+      Puis-je utiliser le chiffrement de messages avec des fonctionnalités de conformité telles qu’eDiscovery ?
     answer: >
-      Oui. Microsoft 365 de conformité peuvent découvrir tous les messages électroniques chiffrés. Pour plus d’informations, voir les activités [eDiscovery](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) qui la prise en charge des éléments chiffrés.
+      Oui. Microsoft 365 fonctionnalités de conformité peuvent découvrir tous les messages électroniques chiffrés. Pour plus d’informations, voir les activités [eDiscovery](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) qui la prise en charge des éléments chiffrés.
   - question: >
       Puis-je supprimer le chiffrement du courrier électronique ?
     answer: >
       Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement. Vous ne pouvez pas supprimer le chiffrement à l’aide d’une règle de flux de messagerie appliquée par une autre organisation, sauf si le courrier est chiffré à l’aide d’une protection de chiffrement uniquement.
-  - question: >
-      L’accès délégué est-il pris en charge ?
-    answer: >
-      Non, ce n’est actuellement pas possible.
   - question: >
       Puis-je envoyer en tant que boîte aux lettres partagée et chiffrer des e-mails ?
     answer: >
@@ -186,7 +182,7 @@ sections:
       - Vous ne pouvez pas ouvrir les pièces jointes aux messages électroniques que vous recevez sur des appareils mobiles à l’aide Outlook mobile.
 
 
-      - L’affectation n’est pas prise en charge par le biais d’un groupe de sécurité à messagerie. Nous 5 000 utilisateurs ne donnent accès qu’à l’affectation directe de l’utilisateur à la boîte aux lettres partagée et le mappage automatique est activé pour Exchange Online. Le mappage automatique est activé par défaut pour les Exchange Online.
+      - L’affectation n’est pas prise en charge par le biais d’un groupe de sécurité à messagerie. Nous 5 000 utilisateurs ne donnent accès qu’à l’affectation directe de l’utilisateur à la boîte aux lettres partagée et le mappage automatique est activé pour Exchange Online. Le mappage automatique est activé par défaut pour Exchange Online.
 
 
       **Pour affecter un utilisateur à la boîte aux lettres partagée**
@@ -201,9 +197,9 @@ sections:
          Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
          ```
   - question: >
-      Puis-je ouvrir des messages chiffrés envoyés à la boîte aux lettres d’un autre utilisateur avec Fullaccess ?
+      L’accès délégué est-il pris en charge avec l’ouverture de messages chiffrés ? Même si un délégué dispose d’un accès total à la boîte aux lettres d’un autre utilisateur ?
     answer: >
-      Non. Vous pouvez uniquement ouvrir des messages chiffrés dans une boîte aux lettres partagée.
+      L’accès délégué au courrier chiffré est pris en charge dans Outlook sur le web, Outlook pour Mac, Outlook pour iOS et Outlook pour Android.  Outlook pour Windows ne prend pas en charge l’accès délégué.
   - question: >
       Que faire si je ne reçois pas le code de passe à temps partiel après l’avoir demandé ?
     answer: >-

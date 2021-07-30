@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 7a5aa5e049159761c46e2103f7b1ecdd1499f3cd
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: e005da97a668581e453aa5da162574755ff40d8f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061641"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656978"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Termes du contrat de licence de l’application Microsoft Defender pour Endpoint sur Android
 
@@ -33,7 +33,7 @@ ms.locfileid: "53061641"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 ## <a name="microsoft-application-license-terms-microsoft-defender-for-endpoint"></a>TERMES DU CONTRAT DE LICENCE D’APPLICATION MICROSOFT : MICROSOFT DEFENDER POUR LE POINT DE TERMINAISON
