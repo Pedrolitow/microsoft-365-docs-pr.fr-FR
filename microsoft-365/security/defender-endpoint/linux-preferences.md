@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 17915741485919ae85d5e16fbee8de5108b7f2eb
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 6d39316b4377665b8269e352c853742a744dc517
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543292"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657098"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "53543292"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!IMPORTANT]
 > Cette rubrique contient des instructions sur la façon de définir des préférences pour Defender pour Endpoint sur Linux dans les environnements d’entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources.](linux-resources.md#configure-from-the-command-line)
@@ -61,7 +61,7 @@ La *section antivirusEngine* du profil de configuration est utilisée pour gére
 
 |Description|Valeur|
 |---|---|
-|**Key**|antivirusEngine|
+|**Clé**|antivirusEngine|
 |**Type de données**|Dictionnaire (préférence imbriée)|
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |
@@ -76,7 +76,7 @@ Détermine si la protection en temps réel (analyser les fichiers à mesure qu�
 
 |Description|Valeur|
 |---|---|
-|**Key**|enableRealTimeProtection|
+|**Clé**|enableRealTimeProtection|
 |**Type de données**|Valeur booléenne|
 |**Valeurs possibles**|true (par défaut) <p> false|
 |
@@ -97,7 +97,7 @@ Détermine si le moteur antivirus s’exécute en mode passif ou non. En mode pa
 
 |Description|Valeur|
 |---|---|
-|**Key**|passiveMode|
+|**Clé**|passiveMode|
 |**Type de données**|Valeur booléenne|
 |**Valeurs possibles**|false (par défaut) <p> true|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.67.60 ou supérieure.|
@@ -113,9 +113,9 @@ Spécifie la stratégie de fusion pour les exclusions. Il peut s’agit d’une 
 
 |Description|Valeur|
 |---|---|
-|**Key**|exclusionsMergePolicy|
+|**Clé**|exclusionsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
@@ -130,7 +130,7 @@ Entités exclues de l’analyse. Les exclusions peuvent être spécifiées par d
 
 |Description|Valeur|
 |---|---|
-|**Key**|exclusions|
+|**Clé**|exclusions|
 |**Type de données**|Dictionnaire (préférence imbriée)|
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |
@@ -145,7 +145,7 @@ Spécifie le type de contenu exclu de l’analyse.
 
 |Description|Valeur|
 |---|---|
-|**Key**|$type|
+|**Clé**|$type|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 |
@@ -160,7 +160,7 @@ Utilisé pour exclure le contenu de l’analyse par chemin d’accès complet au
 
 |Description|Valeur|
 |---|---|
-|**Key**|chemin|
+|**Clé**|chemin|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|chemins d’accès valides|
 |**Comments**|Applicable uniquement si *$type* est *excluPath*|
@@ -176,7 +176,7 @@ Indique si la propriété *de chemin d’accès* fait référence à un fichier 
 
 |Description|Valeur|
 |---|---|
-|**Key**|isDirectory|
+|**Clé**|isDirectory|
 |**Type de données**|Valeur booléenne|
 |**Valeurs possibles**|false (par défaut) <p> true|
 |**Comments**|Applicable uniquement si *$type* est *excluPath*|
@@ -192,7 +192,7 @@ Utilisé pour exclure le contenu de l’analyse par extension de fichier.
 
 |Description|Valeur|
 |---|---|
-|**Key**|extension|
+|**Clé**|extension|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|extensions de fichier valides|
 |**Comments**|Applicable uniquement si *$type* est *excluFileExtension*|
@@ -208,7 +208,7 @@ Spécifie un processus pour lequel toute l’activité de fichier est exclue de 
 
 |Description|Valeur|
 |---|---|
-|**Key**|name|
+|**Clé**|name|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|n’importe quelle chaîne|
 |**Comments**|Applicable uniquement *si $type* est *excluFileName*|
@@ -224,7 +224,7 @@ Liste des menaces (identifiées par leur nom) qui ne sont pas bloquées par le p
 
 |Description|Valeur|
 |---|---|
-|**Key**|allowedThreats|
+|**Clé**|allowedThreats|
 |**Type de données**|Tableau de chaînes|
 |
 
@@ -238,7 +238,7 @@ Limite les actions que l’utilisateur local d’un appareil peut prendre lorsqu
 
 |Description|Valeur|
 |---|---|
-|**Key**|disallowedThreatActions|
+|**Clé**|disallowedThreatActions|
 |**Type de données**|Tableau de chaînes|
 |**Valeurs possibles**|autoriser (empêche les utilisateurs d’autoriser les menaces) <p> restaurer (empêche les utilisateurs de restaurer les menaces de la quarantaine)|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
@@ -254,7 +254,7 @@ La *préférence threatTypeSettings dans* le moteur antivirus est utilisée pour
 
 |Description|Valeur|
 |---|---|
-|**Key**|threatTypeSettings|
+|**Clé**|threatTypeSettings|
 |**Type de données**|Dictionnaire (préférence imbriée)|
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |
@@ -269,7 +269,7 @@ Type de menace pour lequel le comportement est configuré.
 
 |Description|Valeur|
 |---|---|
-|**Key**|clé|
+|**Clé**|clé|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|potentially_unwanted_application <p> archive_bomb|
 |
@@ -279,7 +279,7 @@ Type de menace pour lequel le comportement est configuré.
 Action à prendre en cas de menace du type spécifié dans la section précédente. Peut être :
 
 - **Audit**: l’appareil n’est pas protégé contre ce type de menace, mais une entrée sur la menace est enregistrée.
-- **Bloc**: l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
+- **Bloquer**: l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
 - **Off**: l’appareil n’est pas protégé contre ce type de menace et rien n’est enregistré.
 
 <br>
@@ -288,7 +288,7 @@ Action à prendre en cas de menace du type spécifié dans la section précéden
 
 |Description|Valeur|
 |---|---|
-|**Key**|valeur|
+|**Clé**|valeur|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|audit (par défaut) <p> block <p> off|
 |
@@ -303,7 +303,7 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 
 |Description|Valeur|
 |---|---|
-|**Key**|threatTypeSettingsMergePolicy|
+|**Clé**|threatTypeSettingsMergePolicy|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
@@ -319,7 +319,7 @@ Spécifiez le nombre de jours pendant combien de jours les résultats sont conse
 
 |Description|Valeur|
 |---|---|
-|**Key**|scanResultsRetentionDays|
+|**Clé**|scanResultsRetentionDays|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|90 (valeur par défaut). Les valeurs autorisées sont de 1 jour à 180 jours.|
 |**Comments**|Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure.|
@@ -335,7 +335,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 
 |Description|Valeur|
 |---|---|
-|**Key**|scanHistoryMaximumItems|
+|**Clé**|scanHistoryMaximumItems|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments.|
 |**Comments**|Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure.|
@@ -351,7 +351,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 
 |Description|Valeur|
 |---|---|
-|**Key**|cloudService|
+|**Clé**|cloudService|
 |**Type de données**|Dictionnaire (préférence imbriée)|
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |
@@ -366,12 +366,12 @@ Détermine si la protection cloud est activée ou non sur l’appareil. Pour am�
 
 |Description|Valeur|
 |---|---|
-|**Key**|activé|
+|**Clé**|activé|
 |**Type de données**|Valeur booléenne|
 |**Valeurs possibles**|true (par défaut) <p> false|
 |
 
-#### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
+#### <a name="diagnostic-collection-level"></a>Niveau de collection de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
 
@@ -381,7 +381,7 @@ Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Def
 
 |Description|Valeur|
 |---|---|
-|**Key**|diagnosticLevel|
+|**Clé**|diagnosticLevel|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|facultatif (par défaut) <p> obligatoire|
 |
@@ -400,7 +400,7 @@ Détermine si des échantillons suspects (susceptibles de contenir des menaces) 
 
 |Description|Valeur|
 |---|---|
-|**Key**|automaticSampleSubmissionConsent|
+|**Clé**|automaticSampleSubmissionConsent|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|aucune <p> safe (par défaut) <p> all|
 |
@@ -415,7 +415,7 @@ Détermine si les mises à jour d’informations de sécurité sont installées 
 
 |Description|Valeur|
 |---|---|
-|**Key**|automaticDefinitionUpdateEnabled|
+|**Clé**|automaticDefinitionUpdateEnabled|
 |**Type de données**|Valeur booléenne|
 |**Valeurs possibles**|true (par défaut) <p> false|
 |
@@ -428,7 +428,7 @@ Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA)** sont bloquées
+  - **Les applications potentiellement indésirables (PUA) sont** bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques des informations de sécurité
 - Protection fournie par le cloud

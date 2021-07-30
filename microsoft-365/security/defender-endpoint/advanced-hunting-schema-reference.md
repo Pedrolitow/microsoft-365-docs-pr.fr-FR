@@ -17,25 +17,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 821588fa1c3350d5845a99391e410cffc6a7631d
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: cca337bf6eaf0dd0c44ffc030a86b3c9e9cf8e6b
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590718"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651566"
 ---
-# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprendre le schéma de recherche avancé dans Microsoft Defender pour le point de terminaison
+# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprendre le schéma de recherche avancé dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Le [schéma de recherche](advanced-hunting-overview.md) avancé est composé de plusieurs tables qui fournissent des informations sur les événements ou sur les appareils et d’autres entités. Pour créer des requêtes qui couvrent efficacement sur plusieurs tableaux, vous devez comprendre les tableaux et les colonnes du schéma de repérage avancé.
+Le [schéma de recherche](advanced-hunting-overview.md) avancée est composé de plusieurs tables qui fournissent des informations sur les événements ou des informations sur les appareils et d’autres entités. Pour créer des requêtes qui couvrent efficacement sur plusieurs tableaux, vous devez comprendre les tableaux et les colonnes du schéma de repérage avancé.
 
 ## <a name="get-schema-information-in-the-security-center"></a>Obtenir des informations de schéma dans le centre de sécurité
 
@@ -85,7 +85,7 @@ Les noms de table et de colonne sont également répertoriés dans le Centre de 
 > [!TIP]
 > Utilisez la recherche avancée [dans Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) pour la recherche de menaces à l’aide des données de Defender pour endpoint, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité. [Activer Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
-En savoir plus sur la façon de déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender dans Migrer des requêtes de recherche avancée à partir de [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
+En savoir plus sur la façon de déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender dans Migrer des requêtes de recherche avancée à partir de [Microsoft Defender pour point de terminaison.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="related-topics"></a>Voir aussi
 

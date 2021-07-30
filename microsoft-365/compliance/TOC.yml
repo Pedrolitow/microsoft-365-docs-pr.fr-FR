@@ -58,6 +58,8 @@
           href: insider-risk-management-activities.md
         - name: Agir sur les cas de risques internes
           href: insider-risk-management-cases.md
+        - name: Apprenez comment faire et configurez la détection du signal du navigateur
+          href: insider-risk-management-browser-support.md
         - name: Passer en revue des activités avec le journal d’audit des risques Insider
           href: insider-risk-management-audit-log.md
         - name: Examiner les données à l’aide de l’explorateur de contenu des risques internes

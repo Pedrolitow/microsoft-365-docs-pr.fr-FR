@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: d32bcdb3e17ccc7b94d47dd67f12c04d115da550
-  ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+  ms.openlocfilehash: bb03140622cc848f9c668bdaa72e833fe35c5b37
+  ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/26/2021
-  ms.locfileid: "53591090"
+  ms.lasthandoff: 07/30/2021
+  ms.locfileid: "53664107"
 title: 'Réduction de la surface d’attaque : forum aux questions (FAQ)'
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -77,7 +77,7 @@ sections:
 
       |:--|:--|:--|
 
-      |Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé|D3E037E1-3EB8-44C8-A917-57927947596D|Non pris en charge|
+      |Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé|d3e037e1-3eb8-44c8-a917-57927947596d|Non pris en charge|
 
       |Bloquer la persistance via un abonnement à des événements WMI|e6db77e5-3df2-4cf1-b95a-636979351e5b|Non pris en charge|
 
@@ -128,7 +128,7 @@ sections:
 
       Nous vous recommandons vivement de lire chaque information spécifique à la règle et/ou avertissements, qui sont disponibles dans notre [documentation publique.](/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
-      couvrant plusieurs piliers de la protection, tels que Office, informations d’identification, scripts, courrier électronique, etc. Toutes les règles asr, à l’exception de la persistance de blocage via l’abonnement aux événements WMI, sont Windows 1709 et ultérieures :
+      couvrant plusieurs piliers de la protection, tels que les Office, les informations d’identification, les scripts, le courrier électronique, etc. Toutes les règles asr, à l’exception de la persistance de blocage via l’abonnement aux événements WMI, sont Windows 1709 et ultérieures :
 
 
       * [Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers)
@@ -189,9 +189,9 @@ sections:
     answer: >
       La asr utilise Antivirus Microsoft Defender pour bloquer les applications. Il n’est pas possible de configurer la asr pour qu’elle utilise une autre solution de sécurité pour le blocage pour le moment.
   - question: >
-      J’ai une licence E5 et j’ai activé certaines règles asr en association avec Defender pour endpoint. Est-il possible qu’un événement ASR ne s’affiche pas du tout dans la chronologie des événements de Defender for Endpoint ?
+      J’ai une licence E5 et j’ai activé certaines règles asr en association avec Defender for Endpoint. Est-il possible qu’un événement ASR ne s’affiche pas du tout dans la chronologie des événements de Defender for Endpoint ?
     answer: >
-      Chaque fois qu’une notification est déclenchée localement par une règle asr, un rapport sur l’événement est également envoyé au portail Defender for Endpoint. Si vous avez des difficultés à trouver l’événement, vous pouvez filtrer la chronologie des événements à l’aide de la zone de recherche. Vous pouvez également afficher les événements asr en visitant Go **to attack surface management**, à partir de l’icône Gestion de la **configuration** dans la barre des tâches du Centre de sécurité. La page de gestion de la surface d’attaque inclut un onglet pour les détections de rapports, qui inclut la liste complète des événements de règle de la surface d’attaque signalés à Defender pour le point de terminaison.
+      Chaque fois qu’une notification est déclenchée localement par une règle asr, un rapport sur l’événement est également envoyé au portail Defender for Endpoint. Si vous avez des difficultés à trouver l’événement, vous pouvez filtrer la chronologie des événements à l’aide de la zone de recherche. Vous pouvez également afficher les événements de la surface d’attaque en visitant La gestion de la **surface** d’attaque, à partir de l’icône Gestion de la **configuration** dans la barre des tâches du Centre de sécurité. La page de gestion de la surface d’attaque inclut un onglet pour les détections de rapports, qui inclut la liste complète des événements de règle de la surface d’attaque signalés à Defender pour le point de terminaison.
   - question: >
       J’ai appliqué une règle à l’aide d’un GPO. Maintenant, lorsque j’essaie de vérifier les options d’indexation de la règle dans Microsoft Outlook, je reçois un message indiquant « Accès refusé ».
     answer: >
@@ -203,7 +203,7 @@ sections:
 
       1. Entrez **les options d’indexation** dans la zone de recherche.
   - question: >
-      Les critères utilisés par la règle « Bloquer l’exécution des fichiers exécutables sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance » peuvent-ils être configurés par un administrateur ?
+      Les critères utilisés par la règle« Bloquer l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance », peuvent-ils être configurés par un administrateur ?
     answer: >
       Non. Les critères utilisés par cette règle sont tenus à jour par la protection cloud de Microsoft, afin de maintenir la liste de confiance constamment à jour avec les données recueillies dans le monde entier. Les administrateurs locaux n’ont pas accès en écriture pour modifier ces données. Si vous cherchez à configurer cette règle pour l’adapter à votre entreprise, vous pouvez ajouter certaines applications à la liste d’exclusions pour empêcher le déclenchement de la règle.
   - question: >
@@ -212,7 +212,7 @@ sections:
       Cette règle repose sur la réputation connue de chaque application, telle que mesurée par la prévalence, l’âge ou l’inclusion dans une liste d’applications de confiance. La décision de la règle de bloquer ou d’autoriser une application est déterminée par l’évaluation de ces critères par la protection cloud de Microsoft.
 
 
-      En règle générale, la protection cloud peut déterminer qu’une nouvelle version d’une application est suffisamment similaire aux versions précédentes qu’elle n’a pas besoin d’être réévaluée longuement. Toutefois, la construction de la réputation de l’application après le changement de version peut prendre un certain temps, en particulier après une mise à jour majeure. En attendant, vous pouvez ajouter l’application à la liste d’exclusions, afin d’empêcher cette règle de bloquer les applications importantes. Si vous êtes fréquemment mis à jour et que vous travaillez avec de nouvelles versions d’applications, vous pouvez choisir d’exécuter cette règle en mode audit.
+      En règle générale, la protection cloud peut déterminer qu’une nouvelle version d’une application est suffisamment similaire aux versions précédentes qu’elle n’a pas besoin d’être réévaluée en longueur. Toutefois, la construction de la réputation de l’application après le changement de version peut prendre un certain temps, en particulier après une mise à jour majeure. En attendant, vous pouvez ajouter l’application à la liste d’exclusions, afin d’empêcher cette règle de bloquer les applications importantes. Si vous êtes fréquemment mis à jour et que vous travaillez avec de nouvelles versions d’applications, vous pouvez choisir d’exécuter cette règle en mode audit.
   - question: >
       J’ai récemment activé la règle asr, « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité Windows locale (lsass.exe) » et j’ai reçu un grand nombre de notifications. Que se passe-t-il?
     answer: >

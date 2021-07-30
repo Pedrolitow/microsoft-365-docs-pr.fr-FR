@@ -21,23 +21,23 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 490ee91d5f2d2c02174be94c52fc83fd0ec0fc5e
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 966ed7356024bcc3dedf149024d55171805a3af5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879755"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657362"
 ---
-#   <a name="cancel-machine-action-api"></a>API Annuler l’action de l’ordinateur 
+# <a name="cancel-machine-action-api"></a>API Annuler l’action de l’ordinateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,16 +49,16 @@ Annuler une action de l’ordinateur déjà lancée qui n’est pas encore dans 
 
 ## <a name="limitations"></a>Limites
 
-1.  Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La mise en place.](apis-intro.md)
 
-|     Type d’autorisation     |     Autorisation     |    Nom d’affichage de l’autorisation     |
-|-|-|-|
-|    <br>Application    |    <br>Machine.CollectForensic<br>   Machine.Isolate   <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantine<br>   Machine.LiveResponse    |    Collecter des données d’investigation   <br>Isoler l’ordinateur<br>Restreindre l’exécution du code<br>  Ordinateur d’analyse<br>  Appareil hors-carte<br>   Arrêter et mettre en quarantaine<br>   Exécuter une réponse en direct sur un ordinateur spécifique    |
-|    <br>Délégué (compte scolaire ou scolaire)    |    Machine.CollectForensic<br>   Machine.Isolate    <br>Machine.RestrictExecution<br>   Machine.Scan<br>   Machine.Offboard<br>   Machine.StopAndQuarantineMachine.LiveResponse    |    Collecter des données d’investigation<br>   Isoler l’ordinateur<br>  Restreindre l’exécution du code<br> Ordinateur d’analyse<br>Appareil hors-carte<br> Arrêter et mettre en quarantaine<br> Exécuter une réponse en direct sur un ordinateur spécifique    |
+|Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation|
+|---|---|---|
+|Application|Machine.CollectForensic <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Collecter des données d’investigation <br>Isoler l’ordinateur<br>Restreindre l’exécution du code<br>  Ordinateur d’analyse<br>  Retirer un ordinateur<br> Arrêter et mettre en quarantaine<br> Exécuter une réponse en direct sur un ordinateur spécifique|
+|Déléguée (compte professionnel ou scolaire)|Machine.CollectForensic<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Collecter des données d’investigation<br> Isoler l’ordinateur<br>  Restreindre l’exécution du code<br> Ordinateur d’analyse<br>Retirer un ordinateur<br> Arrêter et mettre en quarantaine<br> Exécuter une réponse en direct sur un ordinateur spécifique|
 
 
 ## <a name="http-request"></a>Requête HTTP
@@ -70,16 +70,16 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-| Nom      | Type | Description                 |
-|---------------|----------|---------------------------------|
-| Autorisation | String   | Porteur {token}. Obligatoire.   |
-| Content-Type  | string   | application/json. Obligatoire. |
+|Nom|Type|Description|
+|---|---|---|
+|Autorisation|Chaîne|Porteur {token}. Obligatoire.|
+|Content-Type|string|application/json. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande
 
-| Parameter | Type | Description                        |
-|---------------|----------|----------------------------------------|
-| Commentaire       | Chaîne   | Commentaire à associer à l’action d’annulation.  |
+|Parameter|Type|Description|
+|---|---|---|
+|Commentaire|Chaîne|Commentaire à associer à l’action d’annulation.|
 
 ## <a name="response"></a>Réponse
 
@@ -87,7 +87,7 @@ Si elle réussit, cette méthode renvoie le code de réponse 200, Ok avec une en
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request"></a>Demande
 
 Voici un exemple de demande.
 
@@ -95,7 +95,6 @@ Voici un exemple de demande.
 POST
 https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/cancel
 ```
-
 
 ```JSON
 {

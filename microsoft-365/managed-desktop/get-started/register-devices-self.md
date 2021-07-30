@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a66ad53faf1b38c3db4ab4446dbc1d175fbd99e4
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a6071a8cb13fc7c785a1b3914f65cd8eca27f28f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289534"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651614"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
@@ -44,7 +44,7 @@ Microsoft Manged Desktop identifie chaque appareil de manière unique en référ
 
 - Demandez à votre fournisseur OEM le fichier d’inscription AutoPilot, qui inclut les h biens matériels.
 - Exécutez [un script Windows PowerShell sur](#powershell-script-method) chaque appareil et collectez les résultats dans un fichier.
-- Démarrez chaque appareil(mais ne terminez pas l’Windows de configuration) et collectez les hages sur un [lecteur flash amovible.](#flash-drive-method)
+- Démarrez chaque appareil (mais ne terminez pas l’Windows de configuration) et collectez les hages sur un [disque mémoire flash amovible.](#flash-drive-method)
 
 #### <a name="powershell-script-method"></a>Méthode de script PowerShell
 
@@ -75,6 +75,9 @@ Vous pouvez utiliser le script [ PowerShellGet-WindowsAutoPilotInfo.ps1](https:/
 Les données des fichiers CSV doivent être combinées en un seul fichier pour terminer l’inscription. Voici un exemple de script PowerShell pour faciliter l’accès :
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
+
+> [!NOTE]
+> Les colonnes supplémentaires ne sont pas pris en charge. Les guillemets ne sont pas pris en charge. Seuls les fichiers texte au format ANSI peuvent être utilisés (et non Unicode). Les en-têtes sont sensibles à la cas. La modification du fichier dans Excel et son enregistrement en tant que fichier CSV ne génèreront pas de fichier utilisable en raison de ces exigences. N’oubliez pas de conserver les zéros non élevés dans les numéros de série de l’appareil.
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>Inscrire des appareils à l’aide du portail d’administration
 

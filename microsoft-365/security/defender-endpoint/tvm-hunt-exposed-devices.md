@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c47d11bd1afe247b687b8736b4cad8fa4e906bb1
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: c927d8b6ca563f889abe5fcf39a9deb93efd9d47
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567991"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650750"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Recherche des appareils exposés - Gestion des menaces et des vulnérabilités
 
@@ -35,7 +35,7 @@ ms.locfileid: "53567991"
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="use-advanced-hunting-to-find-devices-with-vulnerabilities"></a>Utiliser le recherche avancée pour rechercher des appareils avec des vulnérabilités
 
@@ -51,7 +51,7 @@ Le repérage avancé est un outil de repérage de menaces basé sur des requête
 
 - [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) : événements d’évaluation des menaces gestion des vulnérabilités, indiquant l’état de différentes configurations de sécurité sur les appareils.
 
-- [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) : base de connaissances sur les différentes configurations de sécurité utilisées par la gestion des menaces & des vulnérabilités pour évaluer les appareils ; inclut des mappages à différentes normes et critères
+- [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) : base de connaissances de différentes configurations de sécurité utilisées par la gestion des menaces & des vulnérabilités pour évaluer les appareils ; inclut des mappages à différentes normes et critères
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>Vérifier les appareils impliqués dans les alertes de gravité élevée
 

@@ -15,21 +15,21 @@ manager: dansimp
 ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: e12368b6241a2c79eead66ed77b30b7864af3955
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d8db481c06df22592897389656601be2dc9ab0c4
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326537"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657302"
 ---
 # <a name="customize-controlled-folder-access"></a>Personnaliser l’accès contrôlé aux dossiers
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 L’accès contrôlé aux dossiers vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers est pris en charge Windows Server 2019 et Windows 10 clients. Cet article explique comment personnaliser les fonctionnalités d’accès contrôlé aux dossiers et comprend les sections suivantes :
 
@@ -43,17 +43,17 @@ L’accès contrôlé aux dossiers vous permet de protéger les données précie
 
 ## <a name="protect-additional-folders"></a>Protéger des dossiers supplémentaires
 
-L’accès contrôlé aux dossiers s’applique à de nombreux dossiers système et emplacements par défaut, y compris aux dossiers tels que **Documents,** **Images** et **Films.** Vous pouvez ajouter d’autres dossiers à protéger, mais vous ne pouvez pas supprimer les dossiers par défaut dans la liste par défaut.
+L’accès contrôlé aux dossiers s’applique à de nombreux dossiers système et emplacements par défaut, y compris les dossiers tels que **Documents,** **Images** et **Films.** Vous pouvez ajouter d’autres dossiers à protéger, mais vous ne pouvez pas supprimer les dossiers par défaut dans la liste par défaut.
 
 L’ajout d’autres dossiers à l’accès contrôlé aux dossiers peut être utile dans les cas où vous ne stockez pas de fichiers dans les bibliothèques Windows par défaut ou lorsque vous avez modifié l’emplacement par défaut de vos bibliothèques.
 
 Vous pouvez également spécifier des partages réseau et des lecteurs mappés. Les variables d’environnement et les caractères génériques sont pris en charge. Pour plus d’informations sur l’utilisation de caractères génériques, voir Utiliser des caractères génériques dans les listes d’exclusions de nom de fichier et de dossier ou [d’extension.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe, les cmdlets PowerShell ou les fournisseurs de services de configuration de gestion des appareils mobiles pour ajouter et supprimer des dossiers protégés.
+Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe, les cmdlets PowerShell ou les fournisseurs de services de configuration de gestion des périphériques mobiles pour ajouter et supprimer des dossiers protégés.
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>Utiliser l’Sécurité Windows pour protéger des dossiers supplémentaires
 
-1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant la sécurité *dans* le menu Démarrer.
+1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans  la barre des tâches ou en recherchant la sécurité dans le menu Démarrer.
 
 2. Sélectionnez **Virus & protection contre les** menaces, puis faites défiler vers le bas jusqu’à la section Protection contre les **ransomware.**
 
@@ -69,11 +69,11 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true). 
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
 
 3. Dans votre Éditeur **de gestion des stratégies de** groupe, allez aux modèles d’administration des stratégies de **configuration**  >    >  **ordinateur.**
 
-4. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender Windows Defender’accès contrôlé aux  >    >    >  **dossiers** Exploit Guard. <br/>**REMARQUE**: sur les versions antérieures Windows, vous pouvez voir Antivirus Windows Defender **au** lieu de **Antivirus Microsoft Defender**.
+4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** Windows Defender’accès contrôlé aux  >    >    >  **dossiers** Exploit Guard. <br/>**REMARQUE**: sur les versions antérieures Windows, vous pouvez voir Antivirus Windows Defender **au** lieu de **Antivirus Microsoft Defender**.
 
 5. Double-cliquez **sur Dossiers protégés configurés,** puis définissez l’option **sur Activé.** Sélectionnez **Afficher** et spécifiez chaque dossier à protéger.
 
@@ -81,7 +81,7 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>Utiliser PowerShell pour protéger des dossiers supplémentaires
 
-1. Tapez **PowerShell dans** le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
+1. Tapez **PowerShell dans** le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
 
 2. Tapez l’cmdlet PowerShell suivante, en remplaçant par le chemin d’accès du dossier `<the folder to be protected>` (par exemple : `"c:\apps\"`
 
@@ -104,9 +104,9 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 Vous pouvez spécifier si certaines applications sont toujours considérées comme sûres et accorder un accès en écriture aux fichiers dans les dossiers protégés. Autoriser les applications peut être utile si une application particulière que vous connaissez et que vous faites confiance est bloquée par la fonctionnalité d’accès contrôlé aux dossiers.
 
 > [!IMPORTANT]
-> Par défaut, Windows ajoute des applications qui sont considérées comme conviviales à la liste autorisée. Ces applications ajoutées automatiquement ne sont pas enregistrées dans la liste affichée dans l’application Sécurité Windows ou à l’aide des cmdlets PowerShell associées. Il n’est pas nécessaire d’ajouter la plupart des applications. Ajoutez uniquement des applications si elles sont bloquées et que vous pouvez vérifier leur fiabilité.
+> Par défaut, Windows ajoute des applications qui sont considérées comme conviviales à la liste autorisée. Ces applications ajoutées automatiquement ne sont pas enregistrées dans la liste affichée dans l’application Sécurité Windows ou à l’aide des cmdlets PowerShell associées. Vous ne devriez pas avoir besoin d’ajouter la plupart des applications. Ajoutez uniquement des applications si elles sont bloquées et que vous pouvez vérifier leur fiabilité.
 
-Lorsque vous ajoutez une application, vous devez spécifier son emplacement. Seule l’application à cet emplacement sera autorisée à accéder aux dossiers protégés. Si l’application (du même nom) se trouve à un autre emplacement, elle n’est pas ajoutée à la liste d’applications et peut être bloquée par un accès contrôlé aux dossiers.
+Lorsque vous ajoutez une application, vous devez spécifier son emplacement. Seule l’application à cet emplacement sera autorisée à accéder aux dossiers protégés. Si l’application (avec le même nom) se trouve à un autre emplacement, elle n’est pas ajoutée à la liste d’applications et peut être bloquée par l’accès contrôlé aux dossiers.
 
 Une application ou un service autorisé dispose uniquement d’un accès en écriture à un dossier contrôlé après son démarrage. Par exemple, un service de mise à jour continue de déclencher des événements une fois autorisé jusqu’à ce qu’il soit arrêté et redémarré.
 
@@ -128,13 +128,13 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender Windows Defender’accès contrôlé aux  >    >    >  **dossiers** Exploit Guard.
+3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** Windows Defender’accès contrôlé aux  >    >    >  **dossiers** Exploit Guard.
 
 4. Double-cliquez sur le **paramètre Configurer les applications autorisées** et définissez l’option sur **Activé.** Sélectionnez **Afficher** et entrez chaque application.
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>Utiliser PowerShell pour autoriser des applications spécifiques
 
-1. Tapez **PowerShell dans** le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
+1. Tapez **PowerShell dans** le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
 2. Entrez l’cmdlet suivante :
 
     ```PowerShell
@@ -147,7 +147,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
     Add-MpPreference -ControlledFolderAccessAllowedApplications "c:\apps\test.exe"
     ```
 
-   Continuez à `Add-MpPreference -ControlledFolderAccessAllowedApplications` l’utiliser pour ajouter d’autres applications à la liste. Les applications ajoutées à l’aide de cette cmdlet s’affichent dans l Sécurité Windows applet.
+   Continuez à utiliser `Add-MpPreference -ControlledFolderAccessAllowedApplications` pour ajouter d’autres applications à la liste. Les applications ajoutées à l’aide de cette cmdlet s’affichent dans l Sécurité Windows applet.
 
    :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Cmdlet PowerShell pour autoriser une application":::
 
@@ -171,6 +171,6 @@ Pour plus d’informations sur la personnalisation de la notification lorsqu’u
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md)
+- [Protéger les dossiers importants avec accès contrôlé aux dossiers](controlled-folders.md)
 - [Activer l’accès contrôlé aux dossiers](enable-controlled-folders.md)
 - [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)

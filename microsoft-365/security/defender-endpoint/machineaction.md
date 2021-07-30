@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b72454bd345df31485759c5978f34eb11db5feca
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2af9f7988e25b9f6e74f65593a4524cba25e476c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542272"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651002"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 
@@ -30,7 +30,7 @@ ms.locfileid: "53542272"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "53542272"
 |---|---|---|
 |[List MachineActions](get-machineactions-collection.md)|[Action de l’ordinateur](machineaction.md)|Liste des [entités d’action](machineaction.md) de l’ordinateur.|
 |[Obtenir MachineAction](get-machineaction-object.md)|[Action de l’ordinateur](machineaction.md)|Obtenir une seule [entité d’action](machineaction.md) de l’ordinateur.|
-|[Collecter un package d’examen](collect-investigation-package.md)|[Action de l’ordinateur](machineaction.md)|Collecter un package d’examen à partir [d’un ordinateur.](machine.md)|
+|[Collecter un package d’examen](collect-investigation-package.md)|[Action de l’ordinateur](machineaction.md)|Collecter un package d’examen à partir d’un [ordinateur.](machine.md)|
 |[Obtenir SAS de l’URI du package d’examen](get-package-sas-uri.md)|[Action de l’ordinateur](machineaction.md)|Obtenez l’URI pour télécharger le package d’enquête.|
 |[Isoler l’ordinateur](isolate-machine.md)|[Action de l’ordinateur](machineaction.md)|Isoler [l’ordinateur](machine.md) du réseau.|
 |[Libérer la machine de l’isolation](unisolate-machine.md)|[Action de l’ordinateur](machineaction.md)|Libérer [l’ordinateur](machine.md) de l’isolation.|
@@ -66,11 +66,11 @@ ms.locfileid: "53542272"
 |ID|Guid|Identité de [l’entité Action](machineaction.md) de l’ordinateur.|
 |type|Énum|Type de l’action. Les valeurs possibles sont : « RunAntiVirusScan », « Offboard », « CollectRandigationPackage », « Isolate », « Unisolate », « StopAndQuarantineFile », « RestrictCodeExecution » et « IsolaterictCodeExecution »|
 |étendue|string|Étendue de l’action. « Complète » ou « Sélective » pour l’isolation, « Rapide » ou « Complète » pour l’analyse antivirus.|
-|demandeur|String|Identité de la personne qui a exécuté l’action.|
-|requestorComment|String|Commentaire écrit lors de l’émission de l’action.|
+|demandeur|Chaîne|Identité de la personne qui a exécuté l’action.|
+|requestorComment|Chaîne|Commentaire écrit lors de l’émission de l’action.|
 |statut|Énum|État actuel de la commande. Les valeurs possibles sont : « Pending », « InProgress », « Succeeded », « Failed », « TimeOut » et « Canceled ».|
-|machineId|String|ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
-|machineId|String|Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
+|machineId|Chaîne|ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
+|machineId|Chaîne|Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
 |creationDateTimeUtc|DateTimeOffset|Date et heure de création de l’action.|
 |lastUpdateTimeUtc|DateTimeOffset|Date et heure de la dernière mise à jour de l’état de l’action.|
 |relatedFileInfo|Classe|Contient deux propriétés. chaîne `fileIdentifier` , Enum `fileIdentifierType` avec les valeurs possibles : « Sha1 », « Sha256 » et « Md5 ».|

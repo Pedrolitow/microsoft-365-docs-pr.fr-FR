@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/20/2021
+ms.date: 07/29/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 064cc66dfa273209bea5dc14c0e8cf0f39d7c6ac
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9106ee8a89ca0a42fc3a010fb790816ff9871b52
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655790"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664110"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse des points de terminaison (PEPT) en mode blocage
 
@@ -44,14 +44,14 @@ ms.locfileid: "53655790"
 > [!IMPORTANT]
 > PEPT en mode bloc ne fournit pas toute la protection disponible lorsque Antivirus Microsoft Defender protection en temps réel est activée. Toutes les fonctionnalités qui dépendent Antivirus Microsoft Defender être la solution antivirus active ne fonctionneront pas, y compris les exemples clés suivants : 
 > 
-> - La protection en temps réel, y compris l’analyse sur accès, n’est pas disponible lorsque Antivirus Microsoft Defender est en mode passif. Pour en savoir plus sur les paramètres de stratégie de protection en temps réel, voir Activer et **[configurer Antivirus Microsoft Defender protection toujours active.](configure-real-time-protection-microsoft-defender-antivirus.md)**
+> - La protection en temps réel, y compris l’analyse à l’accès, n’est pas disponible lorsque Antivirus Microsoft Defender est en mode passif. Pour en savoir plus sur les paramètres de stratégie de protection en temps réel, voir Activer et **[configurer Antivirus Microsoft Defender protection toujours active.](configure-real-time-protection-microsoft-defender-antivirus.md)**
 > - Les fonctionnalités telles **[que les règles de protection](network-protection.md)** du réseau et de réduction de la **[surface](attack-surface-reduction.md)** d’attaque sont disponibles uniquement lorsque Antivirus Microsoft Defender est en cours d’exécution en mode actif. 
 > 
 > Votre solution antivirus non-Microsoft devrait fournir ces fonctionnalités. 
 
 PEPT en mode bloc est intégré aux [menaces](next-gen-threat-and-vuln-mgt.md)& gestion des vulnérabilités . L’équipe de sécurité de [](tvm-security-recommendation.md) votre organisation reçoit une recommandation de sécurité pour activer PEPT en mode blocage s’il n’est pas déjà activé. 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommandation pour activer l’PEPT en mode blocage":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recommandation pour activer l’PEPT en mode bloc":::
 
 > [!TIP]
 > Pour obtenir la meilleure protection possible, veillez à déployer Microsoft Defender pour les lignes de base **[de point de terminaison.](configure-machines-security-baseline.md)**
@@ -60,15 +60,15 @@ PEPT en mode bloc est intégré aux [menaces](next-gen-threat-and-vuln-mgt.md)& 
 
 Lorsque PEPT en mode bloc est allumé et qu’un artefact malveillant est détecté, Microsoft Defender pour le point de terminaison bloque et remédie à cet artefact. Votre équipe des opérations  de  sécurité verra l’état de détection bloqué ou interdit dans le centre de gestion [des](respond-machine-alerts.md#check-activity-details-in-action-center)actions, répertorié comme des actions terminées.
 
-L’image suivante montre une instance des logiciels indésirables détectés et bloqués par PEPT en mode blocage :
+L’image suivante montre une instance de logiciel indésirable qui a été détectée et bloquée par PEPT en mode blocage :
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="PEPT en mode blocage a détecté quelque chose":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="PEPT en mode bloc a détecté quelque chose":::
 
 
 ## <a name="enable-edr-in-block-mode"></a>Activer PEPT en mode bloc
 
 > [!TIP]
-> Assurez-vous que [les conditions](#requirements-for-edr-in-block-mode) requises sont remplies avant d’PEPT en mode bloc.
+> Assurez-vous que [les conditions requises](#requirements-for-edr-in-block-mode) sont remplies avant d’PEPT en mode bloc.
 
 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com/](https://security.microsoft.com/) ) and sign in. 
 
@@ -78,14 +78,14 @@ L’image suivante montre une instance des logiciels indésirables détectés et
 
 
 > [!NOTE]
-> PEPT en mode bloc ne peut être allumé que dans le portail Microsoft 365 Defender ( ) ou [https://security.microsoft.com](https://security.microsoft.com) l’ancien Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). Vous ne pouvez pas utiliser les clés de Registre, les Microsoft Intune ou la stratégie de groupe pour activer ou désactiver les PEPT en mode blocage.
+> PEPT en mode bloc ne peut être allumé que dans le portail Microsoft 365 Defender ( ) ou [https://security.microsoft.com](https://security.microsoft.com) l’ancien Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). Vous ne pouvez pas utiliser les clés de Registre, les Microsoft Intune ou la stratégie de groupe pour activer ou désactiver PEPT en mode blocage.
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Conditions requises pour PEPT en mode bloc
 
 | Conditions requises  | Détails  |
 |---------|---------|
 | Autorisations | Le rôle Administrateur général ou Administrateur de la sécurité doit être attribué [dans Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Pour plus d’informations, voir [Autorisations de base.](basic-permissions.md) |
-| Système d’exploitation     | Les appareils doivent être en cours d’exécution dans l’une des versions Windows : <br/>- Windows 10 (toutes les releases) <br/>- Windows Server, version 1803 ou plus récente <br/>- Windows Server 2019 <br/>- Windows Server 2016 (uniquement lorsque Antivirus Microsoft Defender est en mode actif)     |
+| Système d’exploitation     | Les appareils doivent être en cours d’exécution dans l’une des versions Windows : <br/>- Windows 10 (toutes les publications) <br/>- Windows Server, version 1803 ou plus récente <br/>- Windows Server 2019 <br/>- Windows Server 2016 (uniquement lorsque Antivirus Microsoft Defender est en mode actif)     |
 | Microsoft Defender pour point de terminaison     | Les appareils doivent être intégrés à Defender for Endpoint. Voir [conditions minimales requises pour Microsoft Defender pour le point de terminaison.](minimum-requirements.md)       |
 | Antivirus Microsoft Defender  | Les appareils doivent être Antivirus Microsoft Defender et s’exécutent en mode actif ou passif. [Confirmez Antivirus Microsoft Defender est en mode actif ou passif.](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode) |
 | Protection fournie par le cloud | Antivirus Microsoft Defender doivent être configurées de telle manière que la protection cloud [soit activée.](enable-cloud-protection-microsoft-defender-antivirus.md) |
@@ -99,7 +99,7 @@ L’image suivante montre une instance des logiciels indésirables détectés et
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>Ai-je besoin d’activer PEPT en mode blocage si j’ai Antivirus Microsoft Defender en cours d’exécution sur des appareils ?
 
-L’objectif principal des PEPT en mode blocage est de corriger les détections post-violation qui ont été manquées par un produit antivirus non-Microsoft. Toutefois, nous vous recommandons de PEPT en mode bloc, que Antivirus Microsoft Defender s’exécute en mode passif ou actif. 
+L’objectif principal des PEPT en mode blocage est de corriger les détections post-violation qui ont été manquées par un produit antivirus non Microsoft. Toutefois, nous vous recommandons de PEPT en mode bloc, que Antivirus Microsoft Defender s’exécute en mode passif ou actif. 
 
 - Lorsque Antivirus Microsoft Defender est en mode passif, PEPT en mode bloc fournit une autre couche de défense avec Microsoft Defender pour le point de terminaison. 
 - Lorsque Antivirus Microsoft Defender est en mode actif, PEPT en mode blocage ne fournit pas d’analyse supplémentaire, mais il permet à Defender for Endpoint d’agir automatiquement sur les détections de PEPT comportement après violation.

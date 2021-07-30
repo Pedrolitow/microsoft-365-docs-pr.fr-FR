@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 9d204c7ad9aaecd077f2bce462d650a4cfdbf06e
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: e2c1cbc82d0fe1604622b1eb2f9f3583f0125c69
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53619542"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651170"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner une adresse IP associée à une alerte Microsoft Defender pour le point de terminaison
 
@@ -36,13 +36,13 @@ ms.locfileid: "53619542"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Examinez les communications possibles entre vos appareils et les adresses IP externes.
 
 L’identification de tous les appareils de l’organisation ayant communiqué avec une adresse IP malveillante suspectée ou connue, telle que les serveurs de commande et de contrôle (C2), permet de déterminer l’étendue potentielle de la violation, des fichiers associés et des appareils infectés.
 
-Vous trouverez des informations dans les sections suivantes dans l’affichage d’adresse IP :
+Vous trouverez des informations dans les sections suivantes dans l’affichage des adresses IP :
 
 - IP dans le monde entier
 - Noms DNS inversés

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 594adb952f9c5f98a5c51a176f3fe7f0ac56692c
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: e3c97151adac40e457439e07c1cb1c7dbcc84632
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624271"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652706"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle
 
@@ -31,7 +31,7 @@ ms.locfileid: "53624271"
 - Azure Active Directory
 - Office 365
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-rbac-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
 À l’aide du contrôle d’accès basé sur un rôle (RBAC), vous pouvez créer des rôles et des groupes au sein de votre équipe des opérations de sécurité pour accorder un accès approprié au portail. En fonction des rôles et des groupes que vous créez, vous avez un contrôle fin sur ce que les utilisateurs ayant accès au portail peuvent voir et faire. 
 
@@ -52,7 +52,7 @@ Defender for Endpoint RBAC est conçu pour prendre en charge votre modèle de ch
 - **Contrôler qui peut voir les informations sur un ou plusieurs groupes d’appareils spécifiques**
   - [Créez](machine-groups.md) des groupes d’appareils en fonction de critères spécifiques tels que des noms, des balises, des domaines et d’autres, puis accordez-leur l’accès au rôle à l’aide d’un groupe d’utilisateurs Azure Active Directory (Azure AD).
 
-Pour implémenter l’accès basé sur les rôles, vous devez définir des rôles d’administrateur, attribuer des autorisations correspondantes et affecter des groupes d’utilisateurs Azure AD affectés aux rôles.
+Pour implémenter l’accès basé sur les rôles, vous devez définir des rôles d’administrateur, attribuer les autorisations correspondantes et affecter des groupes d’utilisateurs Azure AD affectés aux rôles.
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
@@ -68,7 +68,7 @@ Une personne ayant un rôle d’administrateur général Defender pour point de 
 > [!WARNING]
 > Initialement, seules les personnes ayant des droits d’administrateur général Azure AD ou d’administrateur de sécurité pourront créer et attribuer des rôles dans le portail Microsoft 365 Defender. Par conséquent, il est important que les groupes soient prêts dans Azure AD.
 >
-> **Si vous lisez le contrôle d’accès basé sur un rôle, les utilisateurs ayant des autorisations en lecture seule (par exemple, les utilisateurs affectés au rôle lecteur Azure AD Security) perdent l’accès jusqu’à ce qu’ils soient affectés à un rôle.** 
+> **L’turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.** 
 >
 >Le rôle d’administrateur général Defender for Endpoint intégré par défaut est automatiquement attribué aux utilisateurs ayant des autorisations d’administrateur avec des autorisations complètes. Après avoir choisi d’utiliser le contrôle d’accès en fonction du rôle, vous pouvez affecter d’autres utilisateurs qui ne sont pas des administrateurs globaux ou de sécurité Azure AD au rôle d’administrateur général Defender for Endpoint. 
 >

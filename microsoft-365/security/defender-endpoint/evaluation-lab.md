@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2362f5c3e0dc9e54421b608e337d00dbb3437f5c
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 941fb38cf790e8c77a9ea5a6b9187e89846304c9
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591061"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657314"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d’évaluation de Microsoft Defender for Endpoint
 
@@ -32,7 +32,7 @@ ms.locfileid: "53591061"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 La conduite d’une évaluation complète du produit de sécurité peut être un processus complexe nécessitant une configuration fastidieuse de l’environnement et de l’appareil avant qu’une simulation d’attaque de bout en bout puisse réellement être effectuée. L’ajout de la complexité est la difficulté de suivre l’endroit où les activités de simulation, les alertes et les résultats sont reflétés au cours de l’évaluation.
 
@@ -65,7 +65,7 @@ Si vous avez activé le contrôle d’accès basé sur un rôle (RBAC) et créé
 
 Pour plus d’informations, voir [Créer et gérer des rôles.](user-roles.md)
 
-Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
+Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
 
 ## <a name="get-started-with-the-lab"></a>Mise en place de l’atelier
 
@@ -126,7 +126,7 @@ Les composants de sécurité suivants sont pré-configurés dans les périphéri
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Antivirus Microsoft Defender sera en cours (pas en mode audit). Si Antivirus Microsoft Defender vous empêche d’utiliser votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, [voir Configure always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
+> Antivirus Microsoft Defender sera en cours (pas en mode audit). Si Antivirus Microsoft Defender vous empêche d’utiliser votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, [voir Configurer la protection toujours en place.](configure-real-time-protection-microsoft-defender-antivirus.md)
 
 Les paramètres d’examen automatisé dépendent des paramètres du client. Elle sera configurée pour être semi-automatisée par défaut. Pour plus d’informations, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
 
@@ -151,7 +151,7 @@ Les paramètres d’examen automatisé dépendent des paramètres du client. Ell
 
 4. La mise en place de l’appareil commence. Cela peut prendre jusqu’à 30 minutes environ.
 
-5. Consultez l’état des périphériques de test, les niveaux de risque et d’exposition, ainsi que l’état des installations de simulateur en sélectionnant l’onglet **Appareils.**
+5. Consultez l’état des périphériques de test, les niveaux de risque et d’exposition, ainsi que l’état des installations de simulateur en sélectionnant **l’onglet Appareils.**
 
     ![Image de l’onglet Appareils](images/machines-tab.png)
 

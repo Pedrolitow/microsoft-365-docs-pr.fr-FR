@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les statistiques sur les fichiers
-description: Découvrez comment utiliser l’API Obtenir des statistiques de fichier pour récupérer les statistiques du fichier donné dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir des statistiques de fichier pour récupérer les statistiques pour le fichier donné dans Microsoft Defender for Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, fichier, statistiques
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a835cece9f80c8124ce3c4b4ae950c658a29009d
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 25417a883ef281c2c5104046b016446c9d89707e
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624139"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657206"
 ---
 # <a name="get-file-statistics-api"></a>API Obtenir les statistiques sur les fichiers
 
@@ -31,7 +31,7 @@ ms.locfileid: "53624139"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -75,7 +75,7 @@ Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 Nom|Type|Description
 :---|:---|:---
-lookBackHours|Int32|Définit les heures que nous allons rechercher pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
+lookBackHours|Int32|Définit les heures pendant les recherches pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -83,7 +83,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si le fichier existe : 200 - OK avec des données statistiques dans le corps. Si le fichier n’existe pas - 404 - In trouvé.
+En cas de réussite et si le fichier existe - 200 OK avec des données statistiques dans le corps. Si le fichier n’existe pas - 404 - In trouvé.
 
 ## <a name="example"></a>Exemple
 

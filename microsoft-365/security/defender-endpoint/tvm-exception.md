@@ -18,25 +18,25 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1af8e5ec9d3aef560c739de5212e8118cf89cd7a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: de458eed2b52b6043a4f5aaa5f8593b6136f9d37
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933744"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650810"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Créer et afficher des exceptions pour les recommandations de sécurité - Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 En remplacement d’une demande de correction lorsqu’une recommandation n’est pas pertinente pour le moment, vous pouvez créer des exceptions pour les recommandations. Si votre organisation dispose de groupes d’appareils, vous serez en mesure d’étenduer l’exception à des groupes d’appareils spécifiques. Des exceptions peuvent être créées pour les groupes d’appareils sélectionnés ou pour tous les groupes d’appareils passés et présents.  
 
@@ -78,7 +78,7 @@ Si votre organisation compte plus de 20 groupes d’appareils, sélectionnez **M
 
 ![Montrant comment modifier un grand nombre de groupes.](images/tvm-exception-edit-groups.png)
 
-Un volant s’affiche où vous pouvez rechercher et choisir les groupes d’appareils que vous souhaitez inclure. Sélectionnez l’icône de coche sous Recherche pour vérifier/décocher tout.
+Un volant s’affiche où vous pouvez rechercher et choisir les groupes d’appareils que vous souhaitez inclure. Sélectionnez l’icône de coche sous Recherche pour tout vérifier/décocher.
 
 ![Affichage du volant de groupe d’appareils de grande taille.](images/tvm-exception-device-group-flyout-400.png)
 
@@ -99,7 +99,7 @@ Sélectionnez votre justification pour l’exception que vous devez déposer au 
 
 La liste suivante détaille les justifications des options d’exception :
 
-- **Contrôle tiers** - Un produit ou un logiciel tiers répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre score de sécurité car votre risque est réduit
+- **Contrôle tiers** : un produit ou un logiciel tiers répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre niveau de sécurité, car votre risque est réduit
 - **Atténuation de remplacement** : un outil interne répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre score de sécurité car votre risque est réduit
 - **Risque accepté :** pose un risque faible et/ou l’implémentation de la recommandation est trop coûteuse
 - **Correction planifiée (grâce)** : déjà planifiée mais en attente d’exécution ou d’autorisation

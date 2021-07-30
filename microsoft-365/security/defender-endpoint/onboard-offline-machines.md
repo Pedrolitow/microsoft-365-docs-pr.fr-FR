@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73110d89c39319825cc8dc8e347d137de52a510a
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: d8e509aee364c54d1231c1a58115f65777022afb
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028378"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652718"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Appareils intégrés sans accès à Internet à Microsoft Defender pour le point de terminaison
 
@@ -33,13 +33,13 @@ ms.locfileid: "53028378"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 Pour intégrer des appareils sans accès à Internet, vous devez suivre les étapes générales suivantes :
 
 > [!IMPORTANT] 
-> Les étapes ci-dessous s’appliquent uniquement aux appareils exécutant des versions antérieures de Windows tels que : Windows Server 2016 et versions antérieures ou antérieures ou Windows 8.1 et versions antérieures.
+> Les étapes ci-dessous s’appliquent uniquement aux appareils exécutant des versions antérieures de Windows tels que : Windows Server 2016 et versions antérieures ou antérieures ou Windows 8.1 versions antérieures.
 
 > [!NOTE]
 > - Un serveur de passerelle OMS ne peut pas être utilisé comme proxy pour les appareils Windows 10 ou Windows Server 2019 déconnectés lorsqu’ils sont configurés via le Registre ou l’GPO « TelemetryProxyServer ».

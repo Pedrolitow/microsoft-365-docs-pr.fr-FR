@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 82cc897cf8ae2289c83111a27bb8d82b401a86c9
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 5f339d999f45cdd756e8d9170b2ac784062c003c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595749"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657326"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
@@ -32,7 +32,7 @@ ms.locfileid: "53595749"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>Qu’est-ce que l’accès contrôlé aux dossiers ?
 
@@ -64,7 +64,7 @@ Les [dossiers protégés incluent les dossiers](#review-controlled-folder-access
 
 Vous pouvez utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de l’accès contrôlé aux dossiers sur votre organisation s’il était activé. Vous pouvez également visiter le site web Windows Defender test au [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
 
-L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes Windows :
+L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes de Windows :
 - [Windows 10, version 1709 et](/windows/whats-new/whats-new-windows-10-version-1709) ultérieures
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 

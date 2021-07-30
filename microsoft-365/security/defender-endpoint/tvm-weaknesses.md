@@ -1,6 +1,6 @@
 ---
 title: 'Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités'
-description: Répertorie les vulnérabilités courantes et l’ID d’exposition (CVE) des faiblesses trouvées dans le logiciel en cours d’exécution dans votre organisation. Découvert par Microsoft Defender pour endpoint Gestion des menaces et des vulnérabilités fonctionnalité.
+description: Répertorie les vulnérabilités courantes et l’ID d’exposition (CVE) des faiblesses trouvées dans le logiciel en cours d’exécution dans votre organisation. Détecté par Microsoft Defender pour endpoint Gestion des menaces et des vulnérabilités fonctionnalité.
 keywords: Microsoft Defender for Endpoint threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 072118551ec64f0b399e27f16d630e89d30342c7
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 30e1229db1af93c74731678723b60d7d20640f9b
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567139"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650798"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités
 
@@ -34,7 +34,7 @@ ms.locfileid: "53567139"
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Les menaces et gestion des vulnérabilités utilisent les mêmes signaux dans Defender pour la protection des points de terminaison pour analyser et détecter les vulnérabilités.
 
@@ -44,7 +44,7 @@ La page **Faiblesses** répertorie les vulnérabilités logicielles que vos appa
 >Si aucun ID CVE officiel n’est affecté à une vulnérabilité, le nom de la vulnérabilité est attribué par Gestion des menaces et des vulnérabilités.
 
 >[!TIP]
->Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
+>Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-weaknesses-page"></a>Accéder à la page Faiblesses
 
@@ -97,7 +97,7 @@ Si vous sélectionnez un contrôle CVE, un panneau volant s’ouvre avec plus d�
 
 ### <a name="software-that-isnt-supported"></a>Logiciel non pris en charge
 
-Les VC pour les logiciels qui ne sont actuellement pas pris en charge par les menaces & gestion des vulnérabilités sont toujours présents dans la page Faiblesses. Étant donné que le logiciel n’est pas pris en charge, seules des données limitées seront disponibles.
+Les cves pour les logiciels qui ne sont actuellement pas pris en charge par les menaces & gestion des vulnérabilités sont toujours présents dans la page Faiblesses. Étant donné que le logiciel n’est pas pris en charge, seules des données limitées seront disponibles.
 
 Les informations sur l’appareil exposé ne seront pas disponibles pour les VC avec des logiciels non pris en cas de non-gestion. Filtrez en sélectionnant l’option « Non disponible » dans la section « Appareils exposés ».
 
@@ -123,7 +123,7 @@ Les informations sur l’appareil exposé ne seront pas disponibles pour les VC 
 
 Afficher les informations sur les faiblesses associées dans la page de l’appareil.
 
-1. Go to the Microsoft 365 Defender navigation menu bar, then select the device icon. La page **d’inventaire des** appareils s’ouvre.
+1. Go to the Microsoft 365 Defender navigation menu bar, then select the device icon. La page **Inventaire des** appareils s’ouvre.
 
 2. Dans la page **Inventaire des** appareils, sélectionnez le nom de l’appareil que vous souhaitez examiner.
 

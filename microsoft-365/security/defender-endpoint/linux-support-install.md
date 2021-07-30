@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 33d4504d6d49eee0170d9250e241f1d6bfb63e91
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: d735a7c0a52ac75f1e714f7f458b779f56b04bc9
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621582"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657086"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "53621582"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="verify-if-installation-succeeded"></a>Vérifier si l’installation a réussi
 
@@ -150,7 +150,7 @@ Essayez maintenant de redémarrer le service mdatp à l’aide de l’étape 2. 
 
 ## <a name="if-mdatp-service-is-running-but-eicar-text-file-detection-doesnt-work"></a>Si le service mdatp est en cours d’exécution, mais que la détection de fichier texte EICAR ne fonctionne pas
 
-1. Vérifiez le type de système de fichiers en utilisant :
+1. Vérifiez le type de système de fichiers à l’aide des :
 
     ```bash
     findmnt -T <path_of_EICAR_file>

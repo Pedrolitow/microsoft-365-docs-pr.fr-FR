@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ff885980f784e9f4a56b737ddf0bc6b7109ee5f6
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 1f303bd129bc1cea62375b56e4b535907440f191
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591246"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650654"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>API Ajouter ou supprimer des balises d’ordinateur
 
@@ -31,7 +31,7 @@ ms.locfileid: "53591246"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -72,7 +72,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -81,7 +81,7 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 
 Parameter|Type|Description
 :---|:---|:---
-Valeur|String|Nom de la balise. **Obligatoire**.
+Valeur|Chaîne|Nom de la balise. **Obligatoire**.
 Action|Énum|Ajouter ou supprimer. Les valeurs autorisées sont : « Ajouter » ou « Supprimer ». **Obligatoire**.
 
 ## <a name="response"></a>Réponse

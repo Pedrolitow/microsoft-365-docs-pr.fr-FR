@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d0dd39197835574a5982d50486026b713f71e8d5
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b79fc88c7e69b27c6af47065ef02ada98fad4821
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624187"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664056"
 ---
 # <a name="attack-surface-reduction-rules"></a>Règles de réduction des surfaces d'attaque
 
@@ -42,7 +42,7 @@ Le tableau suivant répertorie les règles de réduction de la surface d’attaq
 >
 > - Sauf indication contraire, la version Windows 10 minimale est la &nbsp; version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows Server est &nbsp; la version 1809 ou ultérieure.
 >
-> - \* Toutes les règles assurent la prise en charge des exclusions de fichiers et de dossiers, sauf indication contraire.
+> - \* Toutes les règles prisent en charge les exclusions de fichiers et de dossiers, sauf indication contraire.
 
 | Nom de la règle |  &nbsp;Windows 10 | &nbsp;Windows Server 2019 | &nbsp;Windows Serveur | &nbsp;Windows Server 2016 | &nbsp;Windows Server 2012 R2 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -57,7 +57,7 @@ Le tableau suivant répertorie les règles de réduction de la surface d’attaq
 |[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
 |[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
 |[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_Exclusions de fichiers et de dossiers non pris en charge._ | ![Pris en charge](images/checkmark.png) <br><br> version 1903 (build 18362) ou version ultérieure| ![Pris en charge](images/checkmark.png) | ![Pris en charge](images/checkmark.png) <br><br> version 1903 (build 18362) ou version ultérieure |  |  |
+|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_Les exclusions de fichiers et de dossiers ne sont pas pris en charge._ | ![Pris en charge](images/checkmark.png) <br><br> version 1903 (build 18362) ou version ultérieure| ![Pris en charge](images/checkmark.png) | ![Pris en charge](images/checkmark.png) <br><br> version 1903 (build 18362) ou version ultérieure |  |  |
 |[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![Pris en charge](images/checkmark.png) <br><br> version 1803 ou ultérieure | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br>  |  |  |
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
 |[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
@@ -135,7 +135,7 @@ Nom Intune : `Office apps launching child processes`
 
 Nom du Gestionnaire de configuration : `Block Office application from creating child processes`
 
-GUID : `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
+GUID : `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquer le vol d’informations d’identification Windows sous-système de l’autorité de sécurité locale
 
@@ -144,7 +144,7 @@ Cette règle empêche le vol d’informations d’identification en verrouillean
 LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Microsoft Defender Credential Guard dans Windows 10 normalement les tentatives d’extraction d’informations d’identification à partir de LSASS. Toutefois, certaines organisations ne peuvent pas activer Credential Guard sur tous leurs ordinateurs en raison de problèmes de compatibilité avec les pilotes de carte à puce personnalisés ou d’autres programmes chargés dans l’autorité de sécurité locale (LSA). Dans ce cas, les attaquants peuvent utiliser des outils de piratage tels que Mimikatz pour supprimer des mots de passe en texte clair et des hages NTLM à partir de LSASS.
 
 > [!NOTE]
-> Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
+> Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais qui n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
 
 Nom Intune : `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -154,7 +154,7 @@ GUID : `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Bloquer le contenu exécutable du client de messagerie et de la messagerie web
 
-Cette règle empêche le lancement des types de fichiers suivants à partir du courrier électronique ouvert dans l’application Microsoft Outlook ou Outlook.com et d’autres fournisseurs de messagerie web populaires :
+Cette règle empêche le lancement des types de fichiers suivants à partir du courrier électronique ouvert dans l’application Microsoft Outlook, ou de Outlook.com et d’autres fournisseurs de messagerie web populaires :
 
 - Fichiers exécutables (tels que .exe, .dll ou .scr)
 - Fichiers de script (tels qu’un fichier .ps PowerShell, Visual Basic .vbs ou javascript .js fichier)
@@ -163,14 +163,14 @@ Nom Intune : `Execution of executable content (exe, dll, ps, js, vbs, etc.) drop
 
 Microsoft Endpoint Manager nom de l’Microsoft Endpoint Manager :`Block executable content from email client and webmail`
 
-GUID : `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
+GUID : `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 > [!NOTE]
 > La règle Bloquer **le contenu exécutable** à partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
 >
 > - Intune (Profils de configuration) : exécution du contenu exécutable (exe, dll, ps, js, vbs, etc.) supprimé de la messagerie électronique (webmail/client de messagerie) (aucune exception).
 > - Endpoint Manager : bloquer le téléchargement de contenu exécutable à partir des clients de messagerie et de messagerie web.
-> - Stratégie de groupe : bloquer le contenu exécutable du client de messagerie et de la messagerie web.
+> - Stratégie de groupe : bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance
 
@@ -205,7 +205,7 @@ Nom Intune : `Obfuscated js/vbs/ps/macro code`
 
 Nom du Gestionnaire de configuration : `Block execution of potentially obfuscated scripts`
 
-GUID : `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
+GUID : `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé
 
@@ -217,11 +217,11 @@ Nom Intune : `js/vbs executing payload downloaded from Internet (no exceptions)`
 
 Nom du Gestionnaire de configuration : `Block JavaScript or VBScript from launching downloaded executable content`
 
-GUID : `D3E037E1-3EB8-44C8-A917-57927947596D`
+GUID : `d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher Office applications de créer du contenu exécutable
 
-Cette règle empêche Office applications, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant, en bloquant l’écriture de code malveillant sur le disque.
+Cette règle empêche les applications Office, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant, en bloquant l’écriture de code malveillant sur le disque.
 
 Les programmes malveillants qui utilisent Office comme vecteur peuvent tenter de sortir de Office et d’enregistrer des composants malveillants sur le disque. Ces composants malveillants survivraient au redémarrage d’un ordinateur et persisteraient sur le système. Par conséquent, cette règle se défendre contre une technique de persistance courante.
 
@@ -229,7 +229,7 @@ Nom Intune : `Office apps/macros creating executable content`
 
 Nom SCCM : `Block Office applications from creating executable content`
 
-GUID : `3B576869-A4EC-4529-8536-B80A7769E899`
+GUID : `3b576869-a4ec-4529-8536-b80a7769e899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Empêcher Office applications d’injecter du code dans d’autres processus
 
@@ -245,7 +245,7 @@ Nom Intune : `Office apps injecting code into other processes (no exceptions)`
 
 Nom du Gestionnaire de configuration : `Block Office applications from injecting code into other processes`
 
-GUID : `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
+GUID : `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher Office application de communication de créer des processus enfants
 
@@ -282,7 +282,7 @@ GUID : `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 Cette règle empêche l’exécution des processus créés via [PsExec](/sysinternals/downloads/psexec) [et WMI.](/windows/win32/wmisdk/about-wmi) PsExec et WMI peuvent exécuter du code à distance. Il existe donc un risque que des programmes malveillants abusent de cette fonctionnalité à des fins de commande et de contrôle, ou qu’ils propagent une infection dans le réseau d’une organisation.
 
 > [!WARNING]
-> Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution MDM. Cette règle n’est [](/configmgr) pas compatible avec la gestion Microsoft Endpoint Configuration Manager car elle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
+> Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution MDM. Cette règle n’est pas compatible avec la gestion par [Microsoft Endpoint Configuration Manager](/configmgr) car elle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
 
 Nom Intune : `Process creation from PSExec and WMI commands`
 
@@ -317,7 +317,7 @@ Nom Intune : `Win32 imports from Office macro code`
 
 Nom du Gestionnaire de configuration : `Block Win32 API calls from Office macros`
 
-GUID : `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
+GUID : `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Utiliser la protection avancée contre les ransomware
 
