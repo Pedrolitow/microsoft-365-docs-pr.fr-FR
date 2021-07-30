@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans Exchange Online boîtes aux lettres. Bon nombre de ces paramètres sont disponibles pour les utilisateurs Outlook ou Outlook sur le web.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5a401321645530d3d66ebcccd6b8aea27ce21d6e
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 7c9a787c02273eeaf9e3db5174607f1b65a3c65a
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624800"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652478"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres du courrier indésirable dans les boîtes aux lettres Exchange Online
 
@@ -41,16 +41,16 @@ Toutefois, il existe également des paramètres anti-courrier indésirable spéc
 
   - Déplacez les messages vers le dossier Courrier indésirable en fonction des stratégies **anti-courrier** indésirable : lorsqu’une stratégie anti-courrier indésirable est configurée avec l’action Déplacer **le message** vers le dossier Courrier indésirable pour un verdict de filtrage du courrier indésirable, la règle de filtrage du courrier indésirable déplace le message vers le dossier Courrier indésirable une fois le message remis à la boîte aux lettres. Pour plus d’informations sur les verdicts de filtrage du courrier indésirable dans les stratégies anti-courrier indésirable, voir [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md). De même, si la purge automatique d’heure zéro (ZAP) détermine qu’un message remis est un courrier indésirable ou un hameçonnage, la règle de filtrage du courrier indésirable déplace le message vers le dossier Courrier indésirable pour déplacer le **message** vers les actions de filtrage du courrier indésirable du dossier Courrier indésirable. Pour plus d’informations sur ZAP, voir la purge automatique d’heure zéro [(ZAP) dans Exchange Online](zero-hour-auto-purge.md).
 
-  - Paramètres de courrier indésirable que les utilisateurs configurent eux-mêmes dans Outlook ou Outlook sur le web : la _collection_ de **listes** sécurisées est la liste des expéditeurs sûrs, la liste des destinataires sûrs et la liste des expéditeurs bloqués sur chaque boîte aux lettres. Les entrées de ces listes déterminent si la règle de courrier indésirable déplace le message vers la boîte de réception ou le dossier Courrier indésirable. Les utilisateurs peuvent configurer la collection de listes sécurisées pour leur propre boîte aux lettres dans Outlook ou Outlook sur le web (anciennement Outlook Web App). Les administrateurs peuvent configurer la collection de listes sécurisées sur la boîte aux lettres de n’importe quel utilisateur.
+  - Paramètres de courrier indésirable que les utilisateurs configurent eux-mêmes dans Outlook ou Outlook sur le web : la _collection_ de **listes** sécurisées est la liste des expéditeurs Coffre, la liste des destinataires Coffre et la liste des expéditeurs bloqués sur chaque boîte aux lettres. Les entrées de ces listes déterminent si la règle de courrier indésirable déplace le message vers la boîte de réception ou le dossier Courrier indésirable. Les utilisateurs peuvent configurer la collection de listes sécurisées pour leur propre boîte aux lettres dans Outlook ou Outlook sur le web (anciennement Outlook Web App). Les administrateurs peuvent configurer la collection de listes sécurisées sur la boîte aux lettres de n’importe quel utilisateur.
 
-Lorsque la règle de courrier indésirable est activée sur la boîte aux lettres, EOP peut déplacer des messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la liste des expéditeurs bloqués de la boîte aux lettres, et empêcher la livraison des messages dans le dossier Courrier indésirable (en fonction de la liste des expéditeurs sûrs de la boîte aux lettres).
+Lorsque la règle de courrier indésirable est activée sur la boîte aux lettres, EOP peut déplacer des messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la liste des expéditeurs bloqués de la boîte aux lettres, et empêcher la livraison des messages dans le dossier Courrier indésirable (en fonction de la liste des expéditeurs Coffre de la boîte aux lettres).
 
  Lorsque la règle de courrier indésirable est désactivée sur la boîte aux lettres, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la collection de listes sécurisées de la boîte aux lettres.
 
-Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver, activer et afficher l’état de la règle de courrier indésirable sur les boîtes aux lettres. Les administrateurs peuvent également utiliser Exchange Online PowerShell pour configurer les entrées de la collection de listes sécurisées sur les boîtes aux lettres (la liste des expéditeurs sûrs, la liste des destinataires sûrs et la liste des expéditeurs bloqués).
+Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver, activer et afficher l’état de la règle de courrier indésirable sur les boîtes aux lettres. Les administrateurs peuvent également utiliser Exchange Online PowerShell pour configurer les entrées de la collection de listes sécurisées sur les boîtes aux lettres (la liste des expéditeurs Coffre, la liste des destinataires Coffre et la liste des expéditeurs bloqués).
 
 > [!NOTE]
-> Les messages provenant d’expéditeurs que les utilisateurs ont ajoutés à leurs propres listes d’expéditeurs sûrs ignorent le filtrage des connexions dans le cadre d’EOP (le SCL est -1). Pour empêcher les utilisateurs d’ajouter des entrées à leur liste des expéditeurs sûrs dans Outlook, utilisez la stratégie de groupe comme mentionné dans la section à propos des [paramètres](#about-junk-email-settings-in-outlook) du courrier indésirable dans Outlook plus loin dans cet article. Le filtrage des stratégies, le filtrage du contenu et defender pour Office 365 contrôles de stratégie seront toujours appliqués aux messages.
+> Messages provenant d’expéditeurs que les utilisateurs ont ajoutés à leur propre Coffre Les listes des expéditeurs ignorent le filtrage des connexions dans le cadre d’EOP (le SCL est -1). Pour empêcher les utilisateurs d’ajouter des entrées à leur liste des expéditeurs Coffre dans Outlook, utilisez la stratégie de groupe comme mentionné dans la section à propos des [paramètres](#about-junk-email-settings-in-outlook) du courrier indésirable dans Outlook plus loin dans cet article. Le filtrage des stratégies, le filtrage du contenu et defender pour Office 365 contrôles de stratégie seront toujours appliqués aux messages.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -60,7 +60,7 @@ Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver
 
 - Dans les environnements hybrides où Exchange Online Protection protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable Exchange Online Protection de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer Exchange Online Protection (EOP) pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
-- Les expéditeurs sûrs pour les boîtes aux lettres partagées ne sont pas synchronisés par conception avec Azure AD et EOP.
+- Coffre Les expéditeurs des boîtes aux lettres partagées ne sont pas synchronisés par conception avec Azure AD et EOP.
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Utiliser Exchange Online PowerShell pour activer ou désactiver la règle de courrier indésirable dans une boîte aux lettres
 
@@ -109,19 +109,19 @@ La collection de listes fiables d'une boîte aux lettres comprend la liste des e
 
 ****
 
-|Paramètre sur Set-MailboxJunkEmailConfiguration|Outlook sur le web|
+|Paramètre sur Set-MailboxJunkEmailConfiguration|Outlook sur le web paramètre|
 |---|---|
 |_BlockedSendersAndDomains_|**Déplacer les messages de ces expéditeurs ou domaines vers mon dossier Courrier indésirable**|
 |_ContactsTrusted_|**Approuver le courrier en provenance de mes contacts**|
-|_TrustedListsOnly_|**Ne faire confiance qu’aux e-mails provenant d’adresses dans ma liste des expéditeurs et des domaines sûrs et des listes de diffusion sécurisée**|
+|_TrustedListsOnly_|**Ne faire confiance qu’aux e-mails provenant d’adresses Coffre mes expéditeurs et listes de domaines et Coffre listes de publipostage**|
 |_TrustedSendersAndDomains_<sup>\*</sup>|**Ne pas déplacer le courrier de ces expéditeurs vers mon dossier Courrier indésirable**|
 |
 
 <sup>\*</sup>**Remarques**:
 
-- Dans **Exchange Online,** les entrées de domaine dans la liste des expéditeurs fiables ou le paramètre _TrustedSendersAndDomains_ ne sont pas reconnues. Utilisez donc uniquement les adresses e-mail. Dans EOP autonome avec synchronisation d’annuaires, les entrées de domaine ne sont pas synchronisées par défaut, mais vous pouvez activer la synchronisation pour les domaines. Pour plus d’informations, [voir KB 3019657.](https://support.microsoft.com/help/3019657)
+- Dans **Exchange Online,** les entrées de domaine dans la liste des expéditeurs Coffre ou le paramètre _TrustedSendersAndDomains_ ne sont pas reconnues. Utilisez donc uniquement des adresses de messagerie. Dans EOP autonome avec synchronisation d’annuaires, les entrées de domaine ne sont pas synchronisées par défaut, mais vous pouvez activer la synchronisation pour les domaines. Pour plus d’informations, [voir KB3019657.](https://support.microsoft.com/help/3019657)
 
-- Vous ne pouvez pas modifier directement la liste des destinataires fiables à l’aide de la cmdlet **Set-MailboxJunkEmailConfiguration** (le paramètre _TrustedRecipientsAndDomains_ ne fonctionne pas). Vous devez modifier la liste des expéditeurs approuvés qui est ensuite synchronisée avec la liste des destinataires approuvés.
+- Vous ne pouvez pas modifier directement la liste des destinataires Coffre à l’aide de la cmdlet **Set-MailboxJunkEmailConfiguration** (le paramètre _TrustedRecipientsAndDomains_ ne fonctionne pas). Vous devez modifier la liste des expéditeurs approuvés qui est ensuite synchronisée avec la liste des destinataires approuvés.
 
 Pour configurer la collection de listes fiables sur une boîtes aux lettres, utilisez la syntaxe suivante :
 
@@ -135,7 +135,7 @@ Cet exemple configure les paramètres suivants pour la collection de listes fiab
 
 - Ajoutez la valeur shopping@fabrikam.com à la liste des expéditeurs bloqués.
 
-- Supprimez la valeur chris@fourthcoffee.com de la liste des expéditeurs sûrs et de la liste des destinataires sûrs.
+- Supprimez la valeur chris@fourthcoffee.com de la liste Coffre expéditeurs et de la liste Coffre destinataires.
 
 - Configure les contacts du dossier Contacts pour qu'ils soient traités comme des expéditeurs approuvés.
 
@@ -157,7 +157,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 >
 > - Même si la règle de courrier indésirable est désactivée sur la boîte aux lettres, vous pouvez toujours configurer la collection de listes sécurisées et le filtre de courrier indésirable Outlook est en mesure de déplacer des messages vers la boîte de réception ou le dossier Courrier indésirable. Pour plus d’informations, voir la section à propos des [paramètres](#about-junk-email-settings-in-outlook) du courrier indésirable Outlook dans cet article.
 >
-> - Le Outlook de courrier indésirable a des paramètres de collection de listes sécurisées supplémentaires (par exemple, ajouter automatiquement les personnes que j’envoie à la liste des expéditeurs **sûrs).** Pour plus d'informations, voir [Utiliser les filtres de courrier indésirable pour contrôler les messages affichés](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
+> - Le Outlook de courrier indésirable a des paramètres de collection de listes sécurisées supplémentaires (par exemple, ajouter automatiquement les personnes que j’envoie à la **Coffre liste des expéditeurs).** Pour plus d'informations, voir [Utiliser les filtres de courrier indésirable pour contrôler les messages affichés](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
@@ -177,9 +177,9 @@ Pour vérifier que vous avez bien configuré la collection de listes fiables d�
 
 ## <a name="about-junk-email-settings-in-outlook"></a>À propos des paramètres de courrier indésirable dans Outlook
 
-Pour activer, désactiver et configurer les paramètres de filtrage du courrier indésirable côté client disponibles dans Outlook, utilisez la stratégie de groupe. Pour plus d’informations, voir Fichiers de modèles d’administration [(ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) et outil de personnalisation Office pour Applications Microsoft 365 pour les grandes entreprises, Office 2019 et Office 2016 et comment déployer des paramètres de courrier indésirable, tels que la liste des [expéditeurs sûrs,](https://support.microsoft.com/help/2252421)à l’aide de la stratégie de groupe.
+Pour activer, désactiver et configurer les paramètres de filtrage du courrier indésirable côté client disponibles dans Outlook, utilisez la stratégie de groupe. Pour plus d’informations, voir Fichiers de modèles d’administration [(ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) et Outil de personnalisation Office pour Applications Microsoft 365 pour les grandes entreprises, Office 2019 et Office 2016 et Comment déployer des paramètres de courrier indésirable, tels que la liste des [expéditeurs Coffre,](https://support.microsoft.com/help/2252421)à l’aide de la stratégie de groupe .
 
-Lorsque le filtre de courrier indésirable Outlook est  définie sur  la valeur par défaut Aucun filtrage automatique dans options d’options du courrier indésirable à la maison, Outlook ne tente pas de classer les courriers indésirables, mais utilise toujours la collection de listes sécurisées (liste des expéditeurs sûrs, liste des destinataires sûrs et \>  \>  \> expéditeurs bloqués) pour déplacer les messages vers le dossier Courrier indésirable après la remise. Pour plus d’informations sur ces paramètres, voir [Vue d’ensemble du filtre de courrier indésirable.](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)
+Lorsque le filtre de courrier indésirable Outlook  est définie sur  la valeur par défaut Aucun filtrage automatique dans options d’options du courrier indésirable à la maison, Outlook ne tente pas de classer les messages comme courrier indésirable, mais utilise toujours la collection de listes sécurisées (liste des expéditeurs Coffre, liste des destinataires Coffre et liste des \>  \>  \> expéditeurs bloqués) pour déplacer les messages vers le dossier Courrier indésirable après la remise. Pour plus d’informations sur ces paramètres, voir [Vue d’ensemble du filtre de courrier indésirable.](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)
 
 Lorsque le filtre de courrier indésirable Outlook est défini sur **Faible** ou **Élevé**, le filtre de courrier indésirable Outlook utilise sa propre technologie de filtrage SmartScreen pour identifier et déplacer le courrier indésirable vers le dossier Courrier indésirable. Cette classification du courrier indésirable est distincte du niveau de confiance du courrier indésirable (SCL) déterminé par EOP. En fait, Outlook ignore le SCL d’EOP (sauf si EOP a marqué le message pour ignorer le filtrage du courrier indésirable) et utilise ses propres critères pour déterminer s’il s’agit d’un courrier indésirable. Bien entendu, il est possible que le verdict de courrier indésirable d’EOP Outlook soit le même. Pour plus d’informations sur ces paramètres, voir Modifier le niveau [de protection dans le filtre de courrier indésirable.](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
 
@@ -188,11 +188,11 @@ Lorsque le filtre de courrier indésirable Outlook est défini sur **Faible** ou
 
 Ainsi, le filtre de courrier indésirable Outlook peut utiliser la collection de listes sécurisées de la boîte aux lettres et sa propre classification de courrier indésirable pour déplacer les messages vers le dossier Courrier indésirable, même si la règle de courrier indésirable est désactivée dans la boîte aux lettres.
 
-Outlook et Outlook sur le web les deux prise en charge de la collection de listes sécurisées. La collection de listes sécurisées est enregistrée dans la boîte aux lettres Exchange Online, de sorte que les modifications apportées à la collection de listes sécurisées dans Outlook apparaissent dans Outlook sur le web, et inversement.
+Outlook et Outlook sur le web la collection de listes sécurisées. La collection de listes sécurisées est enregistrée dans la boîte aux lettres Exchange Online, de sorte que les modifications apportées à la collection de listes sécurisées dans Outlook apparaissent dans Outlook sur le web, et inversement.
 
 ## <a name="limits-for-junk-email-settings"></a>Limites pour les paramètres de courrier indésirable
 
-La collection de listes sécurisées (liste des expéditeurs sûrs, liste des destinataires sûrs et expéditeurs bloqués) stockée dans la boîte aux lettres de l’utilisateur est également synchronisée avec EOP. Avec la synchronisation d’annuaires, la collection de listes sécurisées est synchronisée avec Azure AD.
+La collection de listes sécurisées (la liste des expéditeurs Coffre, la liste des destinataires Coffre et la liste des expéditeurs bloqués) stockée dans la boîte aux lettres de l’utilisateur est également synchronisée avec EOP. Avec la synchronisation d’annuaires, la collection de listes sécurisées est synchronisée avec Azure AD.
 
 - La collection de listes sécurisées dans la boîte aux lettres de l’utilisateur a une limite de 510 Ko, qui inclut toutes les listes, ainsi que des paramètres de filtre de courrier indésirable supplémentaires. Si un utilisateur dépasse cette limite, il reçoit une erreur Outlook qui ressemble à ceci :
 
@@ -202,7 +202,7 @@ La collection de listes sécurisées (liste des expéditeurs sûrs, liste des de
 
 - La collection de listes sécurisées synchronisées dans EOP présente les limites de synchronisation suivantes :
 
-  - 1 024 entrées au total dans la liste des expéditeurs sûrs, la liste des destinataires sûrs et les contacts externes si le courrier électronique d’confiance provenant de mes **contacts** est activé.
+  - 1 024 entrées au total dans la liste des expéditeurs Coffre, la liste des destinataires Coffre et les contacts externes si le courrier électronique d’Coffre de mes **contacts** est activé.
   - 500 entrées au total dans la liste des expéditeurs bloqués et la liste Domaines bloqués.
 
   Lorsque la limite d’entrée 1024 est atteinte, les choses suivantes se produisent :
@@ -214,13 +214,13 @@ La collection de listes sécurisées (liste des expéditeurs sûrs, liste des de
 - Avec la synchronisation d’annuaires, les entrées sont synchronisées avec Azure AD dans l’ordre suivant :
 
   1. Contacts de messagerie si **les messages d’confiance provenant de** mes contacts sont activés.
-  2. La liste des expéditeurs sûrs et la liste des destinataires sûrs sont combinées, dépliquées et triées par ordre alphabétique chaque fois qu’une modification est faite pour les 1 024 premières entrées.
+  2. La liste Coffre expéditeurs et la liste des destinataires Coffre sont combinées, dépliquées et triées par ordre alphabétique chaque fois qu’une modification est faite pour les 1 024 premières entrées.
 
   Les 1 024 premières entrées sont utilisées et les informations pertinentes sont estampillées dans les en-têtes de message.
 
   Les entrées de plus de 1024 qui n’ont pas été synchronisées avec Azure AD sont traitées par Outlook (et non par Outlook sur le web) et aucune information n’est estampillée dans les en-têtes de message.
 
-Comme vous pouvez le voir, l’activation du courrier d’confiance à partir de mes **paramètres de contacts** réduit le nombre d’expéditeurs et de destinataires sûrs qui peuvent être synchronisés. Si cela est un problème, nous vous recommandons d’utiliser la stratégie de groupe pour désactiver cette fonctionnalité :
+Comme vous pouvez le voir, l’activation du message d’Coffre à partir de mes **contacts** réduit le nombre d’expéditeurs et de destinataires Coffre qui peuvent être synchronisés. Si cela est un problème, nous vous recommandons d’utiliser la stratégie de groupe pour désactiver cette fonctionnalité :
 
 - Nom de fichier : outlk16.opax
 - Paramètre de stratégie : **faire confiance au courrier électronique des contacts**

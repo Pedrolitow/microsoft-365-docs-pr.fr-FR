@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ea9f0ee4c178bf36bf3102076e39bf19201594e8
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 1ece9618ea84209f25ebc4f1626932f03cc7eb40
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567607"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652598"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle
 
@@ -31,7 +31,7 @@ ms.locfileid: "53567607"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-roles-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -76,10 +76,10 @@ Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365
     > [!NOTE]
     > Ce paramètre est uniquement disponible dans le rôle d’administrateur Microsoft Defender pour point de terminaison (par défaut).
 
-- **Gérer les paramètres** de sécurité dans le Centre de sécurité : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-bord, et gérer les notifications par courrier électronique, gérer le laboratoire d’évaluation
+- **Gérer les paramètres** de sécurité dans le Centre de sécurité : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-carte, et gérer les notifications par courrier électronique, gérer le laboratoire d’évaluation
 
 - **Fonctionnalités de réponse en direct**
-    - **Commandes** de base :
+    - **Commandes de** base :
         - Démarrer une session de réponse en direct
         - Exécuter des commandes de réponse en direct en lecture seule sur un appareil distant (à l’exception de la copie et de l’exécution des fichiers)
     - **Commandes** avancées :

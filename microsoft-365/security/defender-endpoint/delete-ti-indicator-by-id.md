@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e2a674f156b5300fac22673e33c07c9b5532b42
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: fb023ab3d4ec4115411b1c8d12ef1c2ef1b1eece
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595665"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652334"
 ---
 # <a name="delete-indicator-api"></a>API Supprimer l’indicateur
 
@@ -31,7 +31,7 @@ ms.locfileid: "53595665"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,7 +48,7 @@ Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 app
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez La mise [en place](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La](apis-intro.md) mise en place
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -67,7 +67,7 @@ Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -77,7 +77,7 @@ Vide
 
 Si l’indicateur existe et a été supprimé avec succès - 204 OK sans contenu.
 
-If Indicator with the specified id was not found - 404 Not Found.
+Si l’indicateur avec l’ID spécifié est in trouvé - 404 - In trouvé.
 
 ## <a name="example"></a>Exemple
 

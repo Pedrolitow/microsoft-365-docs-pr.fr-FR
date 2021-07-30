@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment enregistrer le contenu de la boîte aux lettres d’un ancien employé.
-ms.openlocfilehash: b6030c0231339cb77c2d91ba5e118da8be14780f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8638dddb217f369e222f0f4188f2ee736040f2f7
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541612"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648650"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Étape 2 : enregistrer le contenu de la boîte aux lettres d’un ancien employé
 
@@ -54,5 +54,6 @@ Une fois que vous avez empêché un utilisateur de se connecter à votre organis
 
 ## <a name="related-content"></a>Contenu associé
 
-[Exchange centre d’administration dans Exchange Online](/exchange/exchange-admin-center) 
- [Restaurer un utilisateur](restore-user.md)
+[Centre d’administration Exchange dans Exchange Online](/exchange/exchange-admin-center)
+
+[Restaurer un utilisateur](restore-user.md)

@@ -1,7 +1,7 @@
 ---
 title: Recommandations en matière de sécurité Gestion des menaces et des vulnérabilités
 description: Obtenez des recommandations de sécurité actionnables prioritaires par menace, probabilité de violation et valeur, Gestion des menaces et des vulnérabilités.
-keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation sur la cybersécurité, recommandation de sécurité actionnable
+keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation en matière de cybersécurité, recommandation de sécurité actionnable
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6243444c6dca31608512dbe9e6183cc7355ef55a
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 9855a7aa8af9d380f192285ddbdb5c30a7a734d4
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53588016"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53647966"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recommandations en matière de sécurité : Gestion des menaces et des vulnérabilités
 
@@ -35,7 +35,7 @@ ms.locfileid: "53588016"
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Les faiblesses de cybersécurité identifiées dans votre organisation sont mappées à des recommandations de sécurité actionnables et hiérarchisées par leur impact. Les recommandations hiérarchisées permettent de raccourcir le temps d’atténuation ou de correction des vulnérabilités et de stimuler la conformité.
 
@@ -68,7 +68,7 @@ Affichez les recommandations de sécurité associées aux endroits suivants :
 
 Go to the **Vulnerability management** navigation menu and select **Recommandations**. La page contient une liste de recommandations de sécurité pour les menaces et les vulnérabilités trouvées dans votre organisation.
 
-### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>Principales recommandations en matière de sécurité dans le tableau de bord Gestion des menaces et des vulnérabilités tableau de bord
+### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>Principales recommandations en matière de sécurité dans le tableau Gestion des menaces et des vulnérabilités de bord
 
 Dans un jour donné en tant qu’administrateur de la sécurité, vous pouvez consulter le tableau de bord [Gestion des menaces et des vulnérabilités](tvm-dashboard-insights.md) pour voir votre [score](tvm-exposure-score.md) d’exposition côte à côte avec votre score de sécurité [Microsoft pour les appareils.](tvm-microsoft-secure-score-devices.md) L’objectif est **de** réduire l’exposition  de votre organisation contre les vulnérabilités et d’augmenter la sécurité des appareils de votre organisation afin d’être plus résiliente contre les attaques contre les menaces de cybersécurité. La liste des recommandations de sécurité les plus importantes peut vous aider à atteindre cet objectif.
 
@@ -78,7 +78,7 @@ Les principales recommandations en matière de sécurité présentent les opport
 
 ## <a name="security-recommendations-overview"></a>Vue d’ensemble des recommandations de sécurité
 
-Afficher les recommandations, le nombre de faiblesses trouvées, les composants associés, les informations sur les menaces, le nombre d’appareils exposés, l’état, le type de correction, les activités de correction, l’impact sur votre score d’exposition et le score de sécurité Microsoft pour les appareils, ainsi que les balises associées.
+Afficher les recommandations, le nombre de faiblesses trouvées, les composants associés, les informations sur les menaces, le nombre d’appareils exposés, l’état, le type de correction, les activités de correction, l’impact sur votre score d’exposition et le score de sécurité Microsoft pour les appareils et les balises associées.
 
 La couleur du graphique **des appareils exposés** change à mesure que la tendance change. Si le nombre d’appareils exposés augmente, la couleur passe en rouge. En cas de diminution du nombre d’appareils exposés, la couleur du graphique change en vert.
 

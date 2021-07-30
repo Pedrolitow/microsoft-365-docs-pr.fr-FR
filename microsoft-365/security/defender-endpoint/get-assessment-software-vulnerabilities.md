@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5037c52dc29556dbe732389209c1029ad348de07
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b92f649c255d919b3dfb7c5d703f485367c4289c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624151"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652202"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exporter l’évaluation des vulnérabilités logicielles par appareil
 
@@ -32,7 +32,7 @@ ms.locfileid: "53624151"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Renvoie toutes les vulnérabilités logicielles connues et leurs détails pour tous les appareils, par appareil.
 
@@ -51,14 +51,14 @@ L’API tire les données de votre organisation en tant que réponses Json. La r
 
    Étant donné que l’appel de l’API de réponse JSON d’exportation delta pour les vulnérabilités logicielles renvoie des données uniquement pour une plage de dates ciblée, il n’est pas considéré comme _une exportation complète._
 
-Les données collectées (à l’aide de la réponse _Json_ ou _via_ des fichiers) sont l’instantané actuel de l’état actuel et ne contiennent pas de données historiques. Pour collecter des données historiques, les clients doivent les enregistrer dans leurs propres stockages de données.
+Les données collectées (à l’aide d’une réponse _Json_ ou _de_ fichiers) sont l’instantané actuel de l’état actuel et ne contiennent pas de données historiques. Pour collecter des données historiques, les clients doivent les enregistrer dans leurs propres stockages de données.
 
 > [!NOTE]
 > Sauf indication contraire, toutes les méthodes **** d’évaluation d’exportation répertoriées sont l’exportation complète et par appareil **_(également_** appelé **_par appareil)._**
 
-## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. Exporter l’évaluation des vulnérabilités logicielles (réponse JSON)
+## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. Exportation de l’évaluation des vulnérabilités logicielles (réponse JSON)
 
-### <a name="11-api-method-description"></a>1.1 Description de la méthode d’API
+### <a name="11-api-method-description"></a>1.1 Description de la méthode API
 
 Cette réponse API contient toutes les données des logiciels installés par appareil. Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
@@ -91,7 +91,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 > [!NOTE]
 >
-> - Chaque enregistrement représente environ 1 Ko de données. Vous devez en tenir compte lors du choix du paramètre pageSize approprié pour vous.
+> - Chaque enregistrement représente environ 1 Ko de données. Vous devez prendre cela en compte lors du choix du paramètre pageSize approprié pour vous.
 > - Certaines colonnes supplémentaires peuvent être renvoyées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez uniquement les colonnes documentées.
 > - Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété.  Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement renvoyée dans le même ordre que celui répertorié dans ce tableau.
 
@@ -108,10 +108,10 @@ DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.euro
 DiskPaths|Chaîne de \[ tableau\]|Preuve disque que le produit est installé sur l’appareil.|[ « C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe » ]
 ExploitabilityLevel|string|Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
 FirstSeenTimestamp|string|Première fois que la CVE de ce produit a été vue sur l’appareil.|2020-11-03 10:13:34.8476880
-ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp !
+ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp!
 LastSeenTimestamp|string|Dernière fois que la CVE a été vue sur l’appareil.|2020-11-03 10:13:34.8476880
 OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cette propriété indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10
-RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».|Serveurs
+RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
 RecommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.|va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (facultatif)|string|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.|Mises à jour de sécurité d’avril 2020
 RecommendedSecurityUpdateId (facultatif)|string|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants|4550961
@@ -396,7 +396,7 @@ FirstSeenTimestamp|string|Première fois que la CVE de ce produit a été vue su
 ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp!  
 LastSeenTimestamp|string|Dernière fois que la CVE a été vue sur l’appareil.|2020-11-03 10:13:34.8476880  
 OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10  
-RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».|Serveurs  
+RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs  
 RecommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.|va--microsoft--silverlight  
 RecommendedSecurityUpdate |string|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.|Mises à jour de sécurité d’avril 2020  
 RecommendedSecurityUpdateId |string|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants|4550961  

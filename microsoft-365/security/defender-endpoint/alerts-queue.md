@@ -1,6 +1,6 @@
 ---
 title: Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
-description: Découvrez comment fonctionnent les files d’attente des alertes Microsoft Defender pour les points de terminaison, et comment trier et filtrer des listes d’alertes.
+description: Découvrez le fonctionnement des files d’attente d’alertes Microsoft Defender pour les points de terminaison, ainsi que le tri et le filtrage des listes d’alertes.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 4570e04b53f5469242f1c05d808e6aae80663b6d
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 1c45bec7e38a849160a14adb3011a303085b00e6
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591270"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648446"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 
@@ -31,7 +31,7 @@ ms.locfileid: "53591270"
 **S’applique à :**
 - [Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)
 
 La **file d’attente Alertes** affiche la liste des alertes qui ont été signalées à partir d’appareils de votre réseau. Par défaut, la file d’attente affiche les alertes visibles au cours des 30 derniers jours dans un affichage groupé. Les alertes les plus récentes sont affichés en haut de la liste pour vous aider à voir les alertes les plus récentes en premier.
 
@@ -59,7 +59,7 @@ Vous pouvez appliquer les filtres suivants pour limiter la liste des alertes et 
 Gravité de l’alerte | Description
 :---|:---
 Élevé </br>(Rouge) | Alertes couramment associées à des menaces avancées persistantes (APT). Ces alertes indiquent un risque élevé en raison de la gravité des dommages qu’elles peuvent causer sur les appareils. Voici quelques exemples : activités des outils de vol d’informations d’identification, activités de ransomware non associées à un groupe, falsification des capteurs de sécurité ou toute activité malveillante indiquant un adversaire humain.
-Moyen </br>(Orange) | Alertes provenant protection évolutive des points de terminaison comportements post-violation susceptibles de faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
+Moyen </br>(Orange) | Les alertes provenant protection évolutive des points de terminaison comportements post-violation qui peuvent faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
 Faible </br>(Jaune) | Alertes sur les menaces associées à des programmes malveillants répandus. Par exemple, les outils de piratage, les outils de piratage non malveillants, tels que l’exécution de commandes d’exploration, l’effacement des journaux, etc., qui n’indiquent souvent pas de menace avancée ciblant l’organisation. Elle peut également être le fait d’un outil de sécurité isolé testé par un utilisateur de votre organisation.
 Informatif </br>(Gris) | Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent sensibiliser l’organisation à des problèmes de sécurité potentiels.
 
@@ -76,7 +76,7 @@ Par exemple :
 - La gravité d’une alerte Defender pour point de terminaison concernant une menace détectée par l’Antivirus Microsoft Defender qui a été complètement évitée et qui n’a pas infecté l’appareil est classée comme « Informationnelle », car il n’y a pas eu de dommages réels.
 - Une alerte concernant un programme malveillant commercial a été détectée lors de l’exécution, mais bloquée et corrigé par Microsoft Defender AV, est classée comme « Faible », car elle a peut-être endommagé l’appareil, mais ne pose aucune menace pour l’organisation.
 - Une alerte concernant les programmes malveillants détectés lors de l’exécution, qui peuvent représenter une menace non seulement pour l’appareil individuel, mais aussi pour l’organisation, même si elle a été finalement bloquée, peut être classée comme « Moyenne » ou « Élevée ».
-- Les alertes comportementales suspectes, qui n’ont pas été bloquées ou corrigés, seront classées « Faible », « Moyenne » ou « Élevée » en fonction des mêmes considérations sur les menaces organisationnelles.
+- Les alertes de comportement suspectes, qui n’ont pas été bloquées ou corrigés, seront classées « Faible », « Moyenne » ou « Élevée » en fonction des mêmes considérations sur les menaces organisationnelles.
 
 #### <a name="understanding-alert-categories"></a>Comprendre les catégories d’alertes
 
@@ -101,9 +101,9 @@ Le tableau ci-dessous répertorie les catégories actuelles et la façon dont el
 | Escalade de privilèges | PrivilegeEscalation | Obtention de niveaux d’autorisation supérieurs pour le code en l’exécutant dans le contexte d’un processus ou d’un compte privilégié                         |
 | Ransomware           | Ransomware          | Programme malveillant qui chiffre le paiement des fichiers et des extorts pour restaurer l’accès                                                                     |
 | Activité suspecte  | SuspiciousActivity  | Activité non normale qui pourrait être une activité de programmes malveillants ou une partie d’une attaque                                                                 |
-| Logiciels indésirables    | UnwantedSoftware    | Applications de faible réputation et applications qui ont une incidence sur la productivité et l’expérience utilisateur ; détecté comme applications potentiellement indésirables (PUA) |
+| Logiciels indésirables    | UnwantedSoftware    | applications à faible réputation et applications qui ont une incidence sur la productivité et l’expérience utilisateur ; détecté comme applications potentiellement indésirables (PUA) |
 
-### <a name="status"></a>Statut
+### <a name="status"></a>État
 
 Vous pouvez choisir de limiter la liste des alertes en fonction de leur état.
 

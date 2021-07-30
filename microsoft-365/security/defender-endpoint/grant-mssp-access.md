@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 31540cd4412615ba6abd56c41b1bd82255d5da0a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8db0a8bb2c48077921b40b010656b52850f68ec0
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544672"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648374"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Accorder un accès au fournisseur de services de sécurité gérés (MSSP) (prévisualisation)
 
@@ -32,7 +32,7 @@ ms.locfileid: "53544672"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
@@ -41,7 +41,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
 1. Activez [le contrôle d’accès basé sur](rbac.md) les rôles dans Defender pour le point de terminaison et connectez-vous aux groupes Active Directory (AD).
 
-2. Configurer des [packages d’accès de gouvernance pour](/azure/active-directory/governance/identity-governance-overview) la demande d’accès et la mise en service.
+2. Configurer des [packages d’accès de gouvernance pour](/azure/active-directory/governance/identity-governance-overview) la demande d’accès et l’approvisionnement.
 
 3. Gérer les demandes d’accès et les audits [dans Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
@@ -57,7 +57,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
 2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint.
 
-    Pour activer RBAC dans l’Centre de sécurité Microsoft Defender client, accédez aux **autorisations Paramètres > > Rôles** et « Activer les rôles », à partir d’un compte d’utilisateur ayant des droits d’administrateur général ou d’administrateur de sécurité.
+    Pour activer RBAC dans l’Centre de sécurité Microsoft Defender client, accédez à **Paramètres > Permissions > Roles** et « Activer les rôles », à partir d’un compte d’utilisateur ayant des droits d’administrateur général ou d’administrateur de sécurité.
 
     ![Image de l’accès MSSP](images/mssp-access.png)
 
@@ -71,7 +71,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     - **Analystes de niveau 2**
 
-      Fonctionnalités de niveau 1 avec l’ajout de la [réponse en direct](live-response.md)
+      Fonctionnalités de niveau 1 avec ajout à la [réponse en direct](live-response.md)
 
     Pour plus d’informations, voir [Utiliser le contrôle d’accès basé sur un rôle.](rbac.md)
 
@@ -87,7 +87,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     Les catalogues de ressources sont une collection logique de packages d’accès, créés dans le client Client AD.
 
-    Pour ce faire, dans le client AD client, accédez à La gouvernance des identités : catalogues et ajoutez **nouveau catalogue**. Dans notre exemple, nous l’appeller **MSSP Accesses**.
+    Pour ce faire, dans le client AD client, accédez à Gouvernance des identités : catalogues et ajoutez **nouveau catalogue**. Dans notre exemple, nous l’appeller **MSSP Accesses**.
 
     ![Image du nouveau catalogue](images/goverance-catalog.png)
 

@@ -1,10 +1,9 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|Clients|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Applications modernes|
+|Clients|Android|iOS|Mac|Windows 10<br>Bureau|Windows 10<br>Applications modernes|
 |:-|:-|:-|:-|:-|:-|
-|ACCESS|N/A|N/A|N/A|✔|S/O|
-|PORTAIL D’ENTREPRISE|S/O|✔|Planifié|S/O|✔|
+|ACCESS|N/A|N/A|N/A|✔|N/A|
+|PORTAIL D’ENTREPRISE|N/A|✔|Planifié|N/A|✔|
 |CORTANA|N/A|N/A|N/A|N/A|✔|
-|DELVE|✔|✔|N/A|N/A|N/A|
 |EXCEL|✔|✔|✔|✔|✔|
 |KAIZALA|✔|Planifié|N/A|N/A|N/A|
 |SALLES MICROSOFT|Planifié|Planifié|N/A|N/A|N/A|
@@ -17,18 +16,18 @@
 |PLANNER|✔|✔|N/A|N/A|N/A|
 |POWER APPS|✔|✔|N/A|N/A|Planifié|
 |POWER AUTOMATE|✔|✔|N/A|N/A|N/A|
-|POWER BI|✔|✔|S/O|Planifié|✔|
+|POWER BI|✔|✔|N/A|Planifié|✔|
 |POWERPOINT|✔|✔|✔|✔|✔|
-|PROJECT|N/A|N/A|N/A|✔|S/O|
-|PUBLISHER|N/A|N/A|N/A|✔|S/O|
+|PROJECT|N/A|N/A|N/A|✔|N/A|
+|PUBLISHER|N/A|N/A|N/A|✔|N/A|
 |SHAREPOINT|✔|✔|N/A|N/A|N/A|
 |SKYPE ENTREPRISE|Planifié|Planifié|N/A|N/A|N/A|
 |NOTES QUI COLLENT|N/A|N/A|N/A|N/A|✔|
 |STREAM|Planifié|Planifié|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|✔|
-|TEAMS|✔|✔|✔|✔|S/O|
+|TEAMS|✔|✔|✔|✔|N/A|
 |TO-DO|✔|✔|N/A|N/A|✔|
-|VISIO|S/O|✔|S/O|✔|S/O|
+|VISIO|N/A|✔|N/A|✔|N/A|
 |TABLEAU BLANC|✔|✔|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
-|YAMMER|✔|✔|S/O|Planifié|S/O|
+|YAMMER|✔|✔|N/A|Planifié|S/O|

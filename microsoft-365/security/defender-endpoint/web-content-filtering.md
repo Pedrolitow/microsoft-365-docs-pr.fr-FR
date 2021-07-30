@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 19423b1a52bc02768236e56a73ccefe71cfd7672
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: a24797d39ece34d615dde26811da8b7d7d2b9a6d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567079"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53647894"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -37,13 +37,13 @@ ms.locfileid: "53567079"
 > Pour plus d’informations, consultez [fonctionnalités en préversion de Microsoft Defender pour point de terminaison](preview.md).
 
 > [!TIP]
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Le filtrage de contenu Web fait partie des fonctionnalités [de protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+Le filtrage de contenu Web fait partie des fonctionnalités [de protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 Configurez des stratégies sur vos groupes d’appareils pour bloquer certaines catégories. Le blocage d’une catégorie empêche les utilisateurs au sein de groupes d’appareils spécifiés d’accéder aux URL associées à la catégorie. Pour toute catégorie qui n’est pas bloquée, les URL sont automatiquement auditées. Vos utilisateurs peuvent accéder aux URL sans interruption, et vous allez collecter des statistiques d’accès pour vous aider à créer une décision de stratégie plus personnalisée. Vos utilisateurs voient une notification de blocage si un élément de la page qu’ils voient appelle une ressource bloquée.
 
-Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations sur la prise en charge du navigateur, consultez la section des conditions préalables.
+Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations sur la prise en charge des navigateurs, consultez la section conditions préalables.
 
 Récapitulatif des avantages :
 
@@ -67,15 +67,15 @@ Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des cond
 
 ## <a name="data-handling"></a>Traitement des données
 
-Les données sont stockées dans la région sélectionnée dans le cadre de vos paramètres de gestion des données [de Microsoft Defender for Endpoint.](data-storage-privacy.md) Vos données ne quitteront pas le centre de données dans cette région. En outre, vos données ne seront pas partagées avec des tiers, y compris nos fournisseurs de données.
+Les données sont stockées dans la région sélectionnée dans le cadre de vos paramètres de gestion des données [de Microsoft Defender for Endpoint.](data-storage-privacy.md) Vos données ne quitteront pas le centre de données dans cette région. En outre, vos données ne seront partagées avec aucun tiers, y compris nos fournisseurs de données.
 
 ## <a name="turn-on-web-content-filtering"></a>Activer le filtrage de contenu web
 
-Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison  >  **fonctionnalités**  >    >  **générales avancées.** Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculez sur Les préférences **d’on** et **d’enregistrer.**
+Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison  >  **fonctionnalités**  >    >  **générales avancées.** Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculer le bouton bascule sur **Sur** et **Enregistrer les préférences**.
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurer des stratégies de filtrage de contenu web
 
-Les stratégies de filtrage de contenu Web spécifient les catégories de site bloquées pour les groupes d’appareils. Pour gérer les stratégies, go to **Paramètres**  >  **Endpoints**  >  **Web content filtering** (under **Rules**).
+Les stratégies de filtrage de contenu Web spécifient les catégories de site bloquées sur les groupes d’appareils. Pour gérer les stratégies, go to **Paramètres**  >  **Endpoints**  >  **Web content filtering** (under **Rules**).
 
 Utilisez le filtre pour localiser les stratégies qui contiennent certaines catégories bloquées ou qui sont appliquées à des groupes d’appareils spécifiques.
 
@@ -162,7 +162,7 @@ Utilisez le filtre de plage de temps en haut à gauche de la page pour sélectio
 
 - Les appareils non signés auront des données incorrectes affichées dans le rapport. Dans le tableau croisé dynamique Groupes d’appareils **détails** du rapport, vous pouvez voir  >   une ligne avec un champ Groupe de périphériques vide. Ce groupe contient vos appareils non signés avant qu’ils ne sont placés dans votre groupe spécifié. Le rapport de cette ligne peut ne pas contenir un nombre précis d’appareils ou de nombres d’accès.
 
-- Les rapports de filtrage de contenu web sont actuellement limités à l’affichage des 5 000 premiers enregistrements. Par exemple, le rapport Domaines affiche uniquement un maximum des 5 000 principaux domaines pour une requête de filtre donnée, le cas échéant. 
+- Les rapports de filtrage de contenu Web sont actuellement limités à l’affichage des 5 000 premiers enregistrements. Par exemple, le rapport Domaines affiche uniquement un maximum des 5 000 principaux domaines pour une requête de filtre donnée, le cas échéant. 
 
 
 

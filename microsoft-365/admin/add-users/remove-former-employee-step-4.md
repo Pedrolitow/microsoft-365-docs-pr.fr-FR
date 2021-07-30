@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez les étapes de cet article pour accorder à un autre employé l’accès aux données de OneDrive et Outlook de l’ancien employé.
-ms.openlocfilehash: 67ec651361aac2b687fa1b0f851271ced5e634ed
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0051f9c20508f0682d34ad3ad17d3e4d8cccf60f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541588"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648686"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Étape 4 : donner à un autre employé l’accès OneDrive données Outlook données
 
@@ -39,7 +39,7 @@ Lorsqu’un employé quitte votre organisation, vous pouvez accéder à ses donn
   
 ## <a name="access-a-former-users-onedrive-documents"></a>Accéder aux documents d’un ancien OneDrive utilisateur
 
-Si vous supprimez la licence d’un utilisateur, mais que vous ne supprimez pas le compte, vous pouvez vous accorder l’accès au contenu dans le compte de l’OneDrive. Si vous supprimez le compte de l’utilisateur, vous avez 30 jours par défaut pour accéder aux données de l’OneDrive utilisateur. [Découvrez comment définir la rétention OneDrive rétention des utilisateurs supprimés.](/onedrive/set-retention) Si vous ne [restituerez pas de](/office365/admin/add-users/restore-user) compte d’utilisateur dans ce délai, son OneDrive contenu est supprimé.
+Si vous supprimez la licence d’un utilisateur, mais que vous ne supprimez pas le compte, vous pouvez vous accorder l’accès au contenu dans le compte de l’OneDrive. Si vous supprimez le compte de l’utilisateur, vous avez 30 jours par défaut pour accéder aux données de l’OneDrive utilisateur. [Découvrez comment définir la rétention OneDrive rétention des utilisateurs supprimés.](/onedrive/set-retention) Si vous ne [restituerez pas de](/office365/admin/add-users/restore-user) compte d’utilisateur dans ce délai, son contenu OneDrive est supprimé.
 
 Pour conserver les fichiers OneDrive d’un ancien utilisateur, donnez-vous d’abord accès à leurs OneDrive, puis déplacez les fichiers que vous souhaitez conserver.
 
@@ -49,7 +49,7 @@ Pour conserver les fichiers OneDrive d’un ancien utilisateur, donnez-vous d’
 
 3. Dans le volet droit, sélectionnez **OneDrive**. Sous **Obtenir l’accès aux fichiers,** **sélectionnez Créer un lien vers des fichiers.**
 
-4. Sélectionnez le lien pour ouvrir l’emplacement du fichier. Téléchargez les fichiers sur  votre ordinateur  ou sélectionnez Déplacer vers ou Copier pour les déplacer ou les copier dans votre propre OneDrive ou dans une bibliothèque partagée.
+4. Sélectionnez le lien pour ouvrir l’emplacement du fichier. Téléchargez les fichiers sur  votre ordinateur, ou sélectionnez Déplacer vers ou Copier pour les déplacer ou les copier dans votre propre OneDrive ou dans une bibliothèque partagée. 
 
 > [!NOTE]
 > Vous pouvez déplacer ou copier jusqu’à 500 Mo de fichiers et de dossiers à la fois.<br/>
@@ -77,7 +77,7 @@ Vous pouvez également accorder l’accès à un autre utilisateur pour accéder
 
 9. Ajoutez l’utilisateur aux **administrateurs de collection de sites** et sélectionnez **OK.**
 
-10. L’utilisateur peut désormais accéder au compte de l’ancien employé OneDrive l’URL OneDrive’utilisateur. 
+10. L’utilisateur peut désormais accéder à l’adresse de l’ancien employé OneDrive l’URL OneDrive’utilisateur. 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>Révoquer l’accès administrateur au compte d’un OneDrive
 
@@ -128,7 +128,7 @@ Pour enregistrer les messages électroniques, le calendrier, les tâches et les 
     > [!NOTE]
     > Vous pouvez exporter un compte à la fois. Si vous souhaitez exporter plusieurs comptes, une fois qu’un compte est exporté, répétez ces étapes.
   
-    ![Exporter Outlook boîte de dialogue Fichier de données avec le dossier supérieur sélectionné et Inclure les sous-dossiers sélectionnés](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![Boîte de dialogue Exporter Outlook fichier de données avec le dossier supérieur sélectionné et Inclure les sous-dossiers sélectionnés](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. Sélectionnez **Suivant**.
 
@@ -185,8 +185,14 @@ Pour accorder à un autre employé l’accès aux messages électroniques, au ca
 > Les étapes restent les mêmes pour accéder aux données de messagerie OneDrive d’un utilisateur existant.
 
 > [!TIP]
-> Si vous souhaitez importer ou restaurer uniquement quelques éléments à partir d’un fichier de données Outlook (.pst), vous pouvez ouvrir le Outlook de données. Ensuite, dans le volet de navigation, faites glisser les éléments de Outlook fichiers de données vers vos dossiers Outlook existants. 
+> Si vous souhaitez importer ou restaurer uniquement quelques éléments à partir d’un fichier de données Outlook (.pst), vous pouvez ouvrir le Outlook de données. Ensuite, dans le volet de navigation, faites glisser les éléments de Outlook fichiers de données vers vos dossiers Outlook existants.
 
 ## <a name="related-content"></a>Contenu associé
 
-Ajouter et supprimer des [administrateurs](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) sur un compte OneDrive [(article)](/onedrive/restore-deleted-onedrive) Restaurer un OneDrive supprimé (article) [OneDrive](/onedrive/retention-and-deletion) rétention et suppression (article) Partager des fichiers et des [dossiers](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07) OneDrive
+[Ajouter et supprimer des administrateurs sur un compte OneDrive (article)](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
+
+[Restaurer une OneDrive](/onedrive/restore-deleted-onedrive) supprimée (article)
+
+[OneDrive rétention et suppression (article)](/onedrive/retention-and-deletion)
+
+[Partager des fichiers et des dossiers OneDrive](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)

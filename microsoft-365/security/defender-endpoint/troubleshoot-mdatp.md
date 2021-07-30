@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: e5eda862f253f1df2fd4b2d394601b99258ce446
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: a487148601f9565a82f8046019fcf6cb4c2825c1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587884"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652646"
 ---
 # <a name="troubleshoot-service-issues"></a>Résoudre des problèmes de service
 
@@ -31,7 +31,7 @@ ms.locfileid: "53587884"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Cette section traite des problèmes qui peuvent survenir lorsque vous utilisez le service Microsoft Defender for Endpoint.
 
@@ -81,7 +81,7 @@ Les formats de date et d’heure suivants ne sont actuellement pas pris en charg
 
 La prise en charge de l’utilisation de la virgule comme séparateur dans les nombres n’est pas prise en charge. Les régions où un nombre est séparé par une virgule pour indiquer un millier ne voient que l’utilisation d’un point comme séparateur. Par exemple, 15 500 000 sont affichés en tant que 15,5 000.
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Le client Microsoft Defender pour point de terminaison a été créé automatiquement en Europe
 

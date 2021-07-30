@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Comment utiliser PowerShell pour bloquer et débloquer l’accès Microsoft 365 comptes.
-ms.openlocfilehash: 90d712cdb6eb34d0588fc262e3a02673accfbd9e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d6ccedf68772d6774ed327e75f080f9200eb5684
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287220"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648614"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquer Microsoft 365 comptes d’utilisateurs avec PowerShell
 
@@ -67,7 +67,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-Cet exemple affiche l’UPN du compte d’utilisateur pour  *l’utilisateur Caleb Sills*.
+Cet exemple affiche l’UPN du compte d’utilisateur  *pour l’utilisateur Caleb Sills*.
 
 ```powershell
 $userName="Caleb Sills"
@@ -85,7 +85,7 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 Pour vérifier l’état bloqué d’un compte d’utilisateur, utilisez la commande suivante :
 
 ```powershell
-Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
+Get-AzureADUser  -ObjectID <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
 ### <a name="block-multiple-user-accounts"></a>Bloquer plusieurs comptes d’utilisateurs
@@ -116,7 +116,7 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach {Set-AzureADUser -ObjectID 
 
 Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-### <a name="block-individual-user-accounts"></a>Bloquer des comptes d’utilisateur individuels
+### <a name="block-individual-user-accounts"></a>Bloquer des comptes d’utilisateurs individuels
 
 Utilisez la syntaxe suivante pour bloquer l’accès à un compte d’utilisateur individuel :
 

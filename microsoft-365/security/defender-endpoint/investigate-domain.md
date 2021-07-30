@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 98e4c781f28f1a89eb3ba9878b65ef57d0e40ea8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 0571197882c32f6cf591106de4e5221fdebaf786
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53619554"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648362"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un domaine associé à une alerte Microsoft Defender pour le point de terminaison
 
@@ -34,7 +34,7 @@ ms.locfileid: "53619554"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatedomain-abovefoldlink)
 
 Examinez un domaine pour voir si les appareils et les serveurs de votre réseau d’entreprise communiquent avec un domaine malveillant connu.
 
@@ -57,13 +57,13 @@ La **carte Incident** affiche un graphique à barres de toutes les alertes activ
 
 ## <a name="prevalence"></a>Prévalence
 
-La **carte prévalence** fournit des détails sur la prévalence de l’URL au sein de l’organisation, sur une période spécifiée.
+La **carte de** prévalence fournit des détails sur la prévalence de l’URL au sein de l’organisation, sur une période spécifiée.
 
 Bien que la période par défaut soit les 30 derniers jours, vous pouvez personnaliser la plage en sélectionnant la flèche pointant vers le bas dans le coin de la carte. La plage la plus courte disponible est pour la prévalence au cours du dernier jour, tandis que la plage la plus longue se trouve sur les 6 derniers mois.
 
 ## <a name="alerts"></a>Alertes
 
-**L’onglet Alertes** fournit une liste des alertes associées à l’URL. Le tableau présenté ici est une version filtrée des alertes visible sur l’écran de file d’attente des alertes, affichant uniquement les alertes associées au domaine, leur gravité, leur état, l’incident associé, la classification, l’état de l’enquête, etc.
+**L’onglet Alertes** fournit une liste des alertes associées à l’URL. Le tableau présenté ici est une version filtrée des alertes visibles sur l’écran de file d’attente des alertes, affichant uniquement les alertes associées au domaine, leur gravité, leur état, l’incident associé, la classification, l’état de l’enquête, etc.
 
 L’onglet Alertes peut être ajusté pour afficher plus  ou moins d’informations, en sélectionnant Personnaliser les colonnes dans le menu Actions au-dessus des en-têtes de colonne. Le nombre d’éléments affichés peut également être ajusté en sélectionnant des **éléments par page** dans le même menu.
 

@@ -1,6 +1,6 @@
 ---
 title: API Obtenir un incident
-description: Découvrez comment utiliser l’API Obtenir des incidents pour obtenir un incident unique dans Microsoft 365 Defender.
+description: Découvrez comment utiliser l’API Obtenir des incidents pour obtenir un seul incident dans Microsoft 365 Defender.
 keywords: api, api de graphique, api pris en charge, obtenir, fichier, hachage
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,26 +16,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e051803a4cd228e3b455ec08b30e5c2197ca9a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6f1e59dd653ef0718797a4b71e67c3607b39824c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289606"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652586"
 ---
 # <a name="get-incident-information-api"></a>API Obtenir des informations sur l’incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## <a name="api-description"></a>Description de l’API
 
@@ -45,17 +44,16 @@ Récupère un incident spécifique par son ID
 
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
-
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. 
+L’une des autorisations suivantes est nécessaire pour appeler cette API.
 
-Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
-:---|:---|:---
-Application | Incident.Read.All | « Lire tous les incidents »
-Application | Incident.ReadWrite.All | « Lire et écrire tous les incidents »
-Déléguée (compte professionnel ou scolaire) | Incident.Read | ' Read Incidents'
-Déléguée (compte professionnel ou scolaire) | Incident.ReadWrite | « Lire et écrire des incidents »
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+---|---|---
+Application|Incident.Read.All|« Lire tous les incidents »
+Application|Incident.ReadWrite.All|« Lire et écrire tous les incidents »
+Déléguée (compte professionnel ou scolaire)|Incident.Read|' Read Incidents'
+Déléguée (compte professionnel ou scolaire)|Incident.ReadWrite|« Lire et écrire des incidents »
 
 > [!NOTE]
 >
@@ -67,14 +65,14 @@ Déléguée (compte professionnel ou scolaire) | Incident.ReadWrite | « Lire et
 ## <a name="http-request"></a>Requête HTTP
 
 ```console
-GET .../api/incidents/{id} 
+GET .../api/incidents/{id}
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
-:---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Nom|Type|Description
+---|---|---
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -82,11 +80,12 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK et l’entité d’incident dans le corps de la réponse. Si l’incident avec l’ID spécifié n’a pas été trouvé - 404 - In trouvé.
+Si elle réussit, cette méthode renvoie 200 OK et l’entité d’incident dans le corps de la réponse.
+Si l’incident avec l’ID spécifié n’a pas été trouvé - 404 - In trouvé.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request"></a>Demande
 
 Voici un exemple de demande.
 

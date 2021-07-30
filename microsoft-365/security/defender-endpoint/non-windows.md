@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e5bb710598e13a47f11a4392985276525760dca
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 942d27b2010f93116678868b5f695364e51f337a
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542116"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53647918"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender pour point de terminaison pour les plateformes non Windows
 
@@ -33,7 +33,7 @@ ms.locfileid: "53542116"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft est en train d’étendre ses principales fonctionnalités de sécurité de point de terminaison au-delà de Windows et Windows Server vers macOS, Linux, Android et iOS.
 
@@ -56,7 +56,7 @@ Pour plus d’informations sur la mise en place, consultez la [documentation](mi
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
-Microsoft Defender pour point de terminaison sur Linux offre des fonctionnalités préventives, protection évolutive des points de terminaison (PEPT) et gestion des vulnérabilités pour les serveurs Linux. Cela inclut une expérience de ligne de commande complète pour configurer et gérer l’agent, lancer des analyses et gérer les menaces. Nous groupons les versions récentes des six distributions linux server les plus courantes : RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS ou version ultérieure LTS, SLES 12+, Debian 9+ et Oracle Linux 7.2. Microsoft Defender pour point de terminaison sur Linux peut être déployé et configuré à l’aide de l’outil de gestion de la configuration Linux existant, ansible ou à l’aide de votre outil de gestion de la configuration Linux existant. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
+Microsoft Defender pour point de terminaison sur Linux offre des fonctionnalités préventives (AV), protection évolutive des points de terminaison (PEPT) et gestion des vulnérabilités pour les serveurs Linux. Cela inclut une expérience de ligne de commande complète pour configurer et gérer l’agent, lancer des analyses et gérer les menaces. Nous groupons les versions récentes des six distributions linux server les plus courantes : RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS ou version ultérieure LTS, SLES 12+, Debian 9+ et Oracle Linux 7.2. Microsoft Defender pour point de terminaison sur Linux peut être déployé et configuré à l’aide de l’outil de gestion de la configuration Linux existant, Enfiché, Ansible ou. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
 
 Pour plus d’informations sur la mise en place, consultez la [documentation](microsoft-defender-endpoint-linux.md)de Microsoft Defender pour Endpoint sur Linux.
 

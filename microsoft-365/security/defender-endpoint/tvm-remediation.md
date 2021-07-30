@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebd1ef10f0ea9a6fbedf9aea1e13237e45dd6ee3
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 3bedc28f6af13d91c73dca7f8512379989f2d0e2
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567635"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53647990"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Corriger les vulnérabilités à l’Gestion des menaces et des vulnérabilités
 
@@ -34,7 +34,7 @@ ms.locfileid: "53567635"
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="request-remediation"></a>Demander la correction
 
@@ -66,7 +66,7 @@ Pour [plus d’informations, voir Utiliser Intune](/intune/atp-manage-vulnerabil
 Si vous souhaitez vérifier la façon dont le ticket s’affiche dans Intune, voir Utiliser [Intune](/intune/atp-manage-vulnerabilities) pour corriger les vulnérabilités identifiées par Microsoft Defender pour endpoint pour plus d’informations.
 
 >[!NOTE]
->Si votre demande implique la correction de plus de 10 000 appareils, nous ne pouvons envoyer que 10 000 appareils pour correction à Intune.
+>Si votre demande implique de corriger plus de 10 000 appareils, nous ne pouvons envoyer que 10 000 appareils pour correction à Intune.
 
 Une fois les faiblesses de cybersécurité de votre organisation identifiées et mappées aux [recommandations](tvm-security-recommendation.md)de sécurité actionnables, commencez à créer des tâches de sécurité. Vous pouvez créer des tâches par le biais de l’intégration Microsoft Intune où les tickets de correction sont créés.
 
@@ -74,13 +74,13 @@ Diminuez l’exposition de votre organisation contre les vulnérabilités et aug
 
 ## <a name="view-your-remediation-activities"></a>Afficher vos activités de correction
 
-Lorsque vous envoyez une demande de correction à partir de la page Recommandations en matière de sécurité, une activité de correction est lancé. Une tâche de sécurité qui peut être suivi dans la **page** de correction Gestion des menaces et des vulnérabilités et un ticket de correction est créé dans Microsoft Intune.
+Lorsque vous envoyez une demande de correction à partir de la page Recommandations en matière de sécurité, une activité de correction démarre. Une tâche de sécurité qui peut être suivi dans la **page** de correction Gestion des menaces et des vulnérabilités et un ticket de correction est créé dans Microsoft Intune.
 
 Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller.
 
 Une fois que vous êtes dans la page Correction, sélectionnez l’activité de correction à afficher. Vous pouvez suivre les étapes de correction, suivre l’avancement, afficher la recommandation associée, exporter vers CSV ou marquer comme terminé.
 
-:::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="Exemple de page de correction, avec une activité de correction sélectionnée, et le volant de cette activité répertoriant la description, les outils de gestion des services informatiques et des appareils, et la correction des périphériques":::
+:::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="Exemple de page de correction, avec une activité de correction sélectionnée, et le volant de cette activité répertoriant la description, les outils de gestion des services informatiques et des appareils, ainsi que la correction des périphériques":::
 
 >[!NOTE]
 > Il existe une période de rétention de 180 jours pour les activités de correction terminées. Pour que la page de correction continue de s’exécuter de façon optimale, l’activité de correction sera supprimée 6 mois après sa fin.

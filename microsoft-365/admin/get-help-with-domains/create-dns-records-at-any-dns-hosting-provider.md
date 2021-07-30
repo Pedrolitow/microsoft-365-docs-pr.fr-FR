@@ -21,12 +21,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
-ms.openlocfilehash: 4b4c09ce6a4161c713490daef46157b5555e124b
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 22eb8ff47ac3dd25eb143ccb567e75b9179395b9
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393918"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652454"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -48,12 +48,13 @@ Vous devez tout d’abord prouver que vous êtes le propriétaire du domaine que
 2. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur, connectez-vous à votre fournisseur d’hébergement DNS, puis recherchez l’emplacement où vous gérez vos paramètres DNS (par exemple, Paramètres de fichier de zone, Gérer les domaines, Gestionnaire de domaine, Gestionnaire DNS).
 3. Accédez à la page Gestionnaire DNS de votre fournisseur et ajoutez à votre domaine l’enregistrement TXT indiqué dans le centre d’administration.
 
-L’ajout de cet enregistrement n’affecte pas votre e-mail ou les autres services existants, et vous pouvez le supprimer de façon sécurisée une fois que votre domaine est connecté à Microsoft 365.
+   L’ajout de cet enregistrement n’affecte pas votre e-mail ou les autres services existants, et vous pouvez le supprimer de façon sécurisée une fois que votre domaine est connecté à Microsoft 365.
 
-Exemple :
-- Nom TXT : `@`
-- Valeur TXT : MS = MS # # # # # # # # (ID unique du centre d’administration)
-- TTL : `3600‎` (ou votre fournisseur par défaut)
+   Exemple :
+
+   - Nom TXT : `@`
+   - Valeur TXT : MS = MS # # # # # # # # (ID unique du centre d’administration)
+   - TTL : `3600` (ou votre fournisseur par défaut)
 
 4. Sauvegardez l’enregistrement, revenez au centre d’administration, puis sélectionnez **Vérifier**. Il faut généralement 15 minutes pour que les modifications apportées aux enregistrements soient enregistrées, mais cela peut prendre plus de temps. Accordez un peu de temps et quelques tentatives pour récupérer la modification.
 
@@ -75,7 +76,7 @@ Vérifiez que les champs sont définis par les valeurs suivantes :
 - Priorité : sélectionnez la valeur la plus élevée disponible, généralement `0`.
 - Nom de l’hôte : `@`
 - Adresse de pointage : copiez la valeur à partir du centre d’administration et collez-la ici.
-- TTL : `3600‎` (ou votre fournisseur par défaut)
+- TTL : `3600` (ou votre fournisseur par défaut)
 
 Lorsque Microsoft trouve l’enregistrement MX approprié, votre domaine est vérifié.
 
@@ -83,9 +84,10 @@ Lorsque Microsoft trouve l’enregistrement MX approprié, votre domaine est vé
 
 Dans un nouvel onglet ou une nouvelle fenêtre de navigateur, connectez-vous à votre fournisseur d’hébergement DNS, puis recherchez l’emplacement où vous gérez vos paramètres DNS (par exemple, Paramètres de fichier de zone, Gérer les domaines, Gestionnaire de domaine, Gestionnaire DNS).
 
-Vous pourrez ajouter plusieurs types d’enregistrements DNS selon les services que vous voulez activer. 
+Vous pourrez ajouter plusieurs types d’enregistrements DNS selon les services que vous voulez activer.
 
 ### <a name="add-an-mx-record-for-email-outlook-exchange-online"></a>Ajouter un enregistrement MX pour la messagerie électronique (Outlook, Exchange Online)
+
 **Avant de commencer :** si les utilisateurs disposent déjà d’une adresse de messagerie avec votre domaine (par exemple, utilisateur@votredomaine.com), créez leur compte dans le centre d’administration avant de configurer vos enregistrements MX. Ainsi, ils continueront à recevoir du courrier électronique. Lorsque vous mettez à jour l’enregistrement MX de votre domaine, tout nouveau message électronique adressé à une personne utilisant votre domaine mène désormais vers Microsoft 365. Un courrier électronique que vous avez déjà reste chez votre hôte de courrier actuel, sauf si vous décidez de [migrer les courriers électroniques et contacts vers Microsoft 365.](../setup/migrate-email-and-contacts-admin.md)
 
 Vous obtiendrez les informations relatives à l’enregistrement MX à partir de l’Assistant Configuration du domaine du centre d’administration.
@@ -97,11 +99,12 @@ Vérifiez que les champs sont définis par les valeurs suivantes :
 - Priorité : sélectionnez la valeur la plus élevée disponible, généralement `0`.
 - Nom de l’hôte : `@`
 - Adresse de pointage : copiez la valeur à partir du centre d’administration et collez-la ici.
-- TTL : `3600‎` (ou votre fournisseur par défaut)
+- TTL : `3600` (ou votre fournisseur par défaut)
 
 Sauvegardez l’enregistrement et supprimez tous les autres enregistrements MX.
 
 ### <a name="add-cname-records-to-connect-other-services-teams-exchange-online-aad-mdm"></a>Ajouter des enregistrements CNAME pour connecter d’autres services (Teams, Exchange Online, AAD, MDM)
+
 Vous obtiendrez les informations relatives aux enregistrements CNAME à partir de l’Assistant Configuration du domaine du centre d’administration.
 
 Sur le site Web de votre fournisseur d’hébergement, ajoutez les enregistrements CNAME pour chaque service auquel vous voulez vous connecter.
@@ -110,10 +113,10 @@ Dans le nouvel enregistrement, vérifiez que chacun des champs sont définis par
 - Type d’enregistrement : `CNAME (Alias)`
 - Hôte : collez les valeurs que vous copiez à partir du centre d’administration ici.
 - Adresse de pointage : copiez la valeur à partir du centre d’administration et collez-la ici.
-- TTL : `3600‎` (ou votre fournisseur par défaut)
-
+- TTL : `3600` (ou votre fournisseur par défaut)
 
 ### <a name="add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online"></a>Ajouter ou modifier un enregistrement TXT SPF afin d’éviter les courriers indésirables (Outlook, Exchange Online)
+
 **Avant de commencer :** Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft 365. Ajoutez plutôt les valeurs Microsoft 365 requises à l’enregistrement actuel sur le site Web de votre fournisseur d’hébergement de manière à n’avoir qu’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs.
 
 Sur le site web de votre fournisseur d’hébergement, modifiez l'enregistrement SPF existant ou créez un enregistrement SPF.
@@ -122,13 +125,13 @@ Vérifiez que les champs sont définis par les valeurs suivantes :
 - Type d’enregistrement : `TXT (Text)`
 - Hôte : `@`
 - Valeur TXT :`v=spf1 include:spf.protection.outlook.com -all`
-- TTL : `3600‎` (ou votre fournisseur par défaut)
+- TTL : `3600` (ou votre fournisseur par défaut)
 
 Enregistrez l'enregistrement.
 
 Validez votre enregistrement SPF en utilisant l'un des [Outils de validation SPF](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) suivants
 
-SPF est conçu pour lutter contre l’usurpation d’adresse, mais il existe des techniques d’usurpation d’adresse contre lesquelles SPF ne peut rien faire. Pour vous protéger contre ces techniques, une fois que vous avez configuré votre SPF, vous devez également configurer DKIM et DMARC pour Microsoft 365. 
+SPF est conçu pour lutter contre l’usurpation d’adresse, mais il existe des techniques d’usurpation d’adresse contre lesquelles SPF ne peut rien faire. Pour vous protéger contre ces techniques, une fois que vous avez configuré votre SPF, vous devez également configurer DKIM et DMARC pour Microsoft 365.
 
 Pour commencer, consultez la rubrique [Utilisation du DKIM pour valider les e-mails sortants envoyés à partir de votre domaine dans Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) et [Utilisation du DMARC pour valider les e-mails dans Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
@@ -145,25 +148,29 @@ Dans le nouvel enregistrement, vérifiez que chacun des champs sont définis par
 - Priorité : `100`
 - Poids : `1`
 - Port : copiez la valeur à partir du centre d’administration et collez-la ici.
-- TTL : `3600‎` (ou votre fournisseur par défaut)
+- TTL : `3600` (ou votre fournisseur par défaut)
 
 Enregistrez l'enregistrement.
 
 #### <a name="srv-record-field-restrictions-and-workarounds"></a>Restrictions relatives aux champs d’enregistrement SRV et solutions de contournement
+
 Certains fournisseurs d’hébergement imposent des restrictions sur les valeurs de champs dans les enregistrements SRV. Voici quelques solutions de contournement courantes pour ces restrictions.
 
 ##### <a name="name"></a>Nom
+
 Si votre fournisseur d’hébergement n’autorise pas la définition de ce champ sur **@**, laissez ce champ vide. Utilisez cette approche *uniquement* lorsque votre fournisseur d’hébergement utilise des champs distincts pour les valeurs Service et Protocole. Dans le cas contraire, consultez les notes sur les valeurs Service et Protocole ci-dessous.
 
 ##### <a name="service-and-protocol"></a>Service et Protocole
-Si votre fournisseur d’hébergement ne fournit pas ces champs pour les enregistrements SRV, vous devez spécifier les valeurs de **Service** et **Protocole** dans le champ **Nom** de l’enregistrement. Remarque : suivant votre fournisseur d’hébergement, le champ **Nom** peut avoir une autre appellation, comme **Hôte**, **Nom de l’hôte** ou **Sous-domaine**. Pour ajouter ces valeurs, vous devez créer une seule chaîne, en séparant les valeurs par un point. 
+
+Si votre fournisseur d’hébergement ne fournit pas ces champs pour les enregistrements SRV, vous devez spécifier les valeurs de **Service** et **Protocole** dans le champ **Nom** de l’enregistrement. Remarque : suivant votre fournisseur d’hébergement, le champ **Nom** peut avoir une autre appellation, comme **Hôte**, **Nom de l’hôte** ou **Sous-domaine**. Pour ajouter ces valeurs, vous devez créer une seule chaîne, en séparant les valeurs par un point.
 
 Exemple : `_sip._tls`
 
-##### <a name="priority-weight-and-port-br"></a>Priorité, Poids, et Port <br>
-Si votre fournisseur d’hébergement ne fournit pas ces champs pour les enregistrements SRV, vous devez spécifier ces valeurs dans le champs **Cible** de l’enregistrement. Remarque : selon votre fournisseur d’hébergement, le champ **Cible** peut être appelé différemment, comme **Contenu**, **Adresse IP** ou **Hôte cible**. 
+##### <a name="priority-weight-and-port"></a>Priorité, Poids, et Port
 
-Pour ajouter ces valeurs, créez une seule chaîne, en séparant les valeurs par des espaces, *ou parfois par un point*. Si vous n’êtes pas sûr, consultez votre fournisseur. Les valeurs doivent être incluses dans l’ordre suivant : Priority (Priorité), Weight (Poids), Port (Port), Target (Cible). 
+Si votre fournisseur d’hébergement ne fournit pas ces champs pour les enregistrements SRV, vous devez spécifier ces valeurs dans le champs **Cible** de l’enregistrement. Remarque : selon votre fournisseur d’hébergement, le champ **Cible** peut être appelé différemment, comme **Contenu**, **Adresse IP** ou **Hôte cible**.
+
+Pour ajouter ces valeurs, créez une seule chaîne, en séparant les valeurs par des espaces, *ou parfois par un point*. Si vous n’êtes pas sûr, consultez votre fournisseur. Les valeurs doivent être incluses dans l’ordre suivant : Priority (Priorité), Weight (Poids), Port (Port), Target (Cible).
 
 - Exemple 1 : `100 1 443 sipdir.online.lync.com.`
 - Exemple 2 : `100 1 443 sipdir.online.lync.com`

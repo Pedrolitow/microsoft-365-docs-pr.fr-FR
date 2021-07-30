@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes d’installation de Microsoft Defender pour Endpoint sur Mac
+title: Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur Mac
 description: Résolution des problèmes d’installation dans Microsoft Defender pour point de terminaison sur Mac.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, install
 search.product: eADQiWindows 10XVcnh
@@ -18,25 +18,25 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5166de3a7c7017979a93ac7026636ba24671892e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 776cd18146fa4f726ef5d25433c564510b8a0e67
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935148"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651966"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="installation-failed"></a>Échec de l’installation
 
@@ -58,9 +58,9 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 Dans cet exemple, la raison réelle est précédée du `[ERROR]` préfixe .
 L’installation a échoué car une mise à niveau vers une version antérieure entre ces versions n’est pas prise en charge.
 
-## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP journal d’installation manquant ou non mis à jour
+## <a name="mdatp-install-log-missing-or-not-updated"></a>Journal d’installation MDATP manquant ou non mis à jour
 
-Dans de rares cas, l’installation ne laisse aucune trace dans MDATP fichier /Library/Logs/Microsoft/mdatp/install.log.
+Dans de rares cas, l’installation ne laisse aucune trace dans le fichier /Library/Logs/Microsoft/mdatp/install.log de MDATP.
 Vous pouvez vérifier qu’une installation s’est produite et analyser les erreurs possibles en interrogeant les journaux macOS (cela est utile dans le déploiement mdm, lorsqu’il n’y a pas d’interface utilisateur client). Nous vous recommandons d’utiliser une fenêtre de temps étroite pour exécuter une requête et de filtrer par nom de processus de journalisation, car il y aura une quantité considérable d’informations.
 
 ```bash

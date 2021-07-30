@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 814eea3a4c24b5706b288840436022a3cecaa6b1
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b0164200fdce2483a96256bc71bfbb9067c0cfc2
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623107"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651782"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers vos Hubs d’événements Azure
 
@@ -33,7 +33,7 @@ ms.locfileid: "53623107"
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -55,7 +55,7 @@ ms.locfileid: "53623107"
 
 6. Tapez le **nom de vos Hubs d’événements** et votre ID de ressource Event **Hubs.**
 
-   Pour obtenir votre ID de ressource **Event Hubs,** rendez-vous sur votre page d’espace de noms Azure Event Hubs sous l’onglet Des propriétés [Azure](https://ms.portal.azure.com/) > copiez le texte sous \> **L’ID** de ressource :
+   Pour obtenir votre ID de ressource **Event Hubs,** rendez-vous sur votre page d’espace de noms Azure Event Hubs sous l’onglet Propriétés [Azure](https://ms.portal.azure.com/) > copiez le texte sous \> **L’ID** de ressource :
 
    ![Image de l’ID1 de ressource du hub d’événements](images/event-hub-resource-id.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "53623107"
 
 - Chaque message de hub d’événements dans Azure Event Hubs contient la liste des enregistrements.
 
-- Chaque enregistrement contient le nom de l’événement, le moment où Microsoft Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous recevez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée **«** properties ».
+- Chaque enregistrement contient le nom de l’événement, le moment où Microsoft Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous obtenez uniquement des événements de votre client) et l’événement au format JSON dans une propriété appelée **«** properties ».
 
 - Pour plus d’informations sur le schéma des événements De Microsoft Defender pour point de [terminaison, voir vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
 

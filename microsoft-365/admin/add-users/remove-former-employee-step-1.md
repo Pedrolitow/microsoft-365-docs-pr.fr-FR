@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services.
-ms.openlocfilehash: 69108539a87e9db4aa72851e5622a5f3856d3a45
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: da1ad9236a8380dd3ce5bdebb86675b7c6e09cbd
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541624"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648674"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Étape 1 : empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services
 
@@ -59,7 +59,7 @@ Pour plus d'informations sur le temps nécessaire pour supprimer l'accès d'un u
  > Le blocage d’un compte peut prendre jusqu’à 24 heures. Si vous devez empêcher immédiatement l’accès à la signature d’un utilisateur, suivez les étapes ci-dessus et réinitialisez son mot de passe.
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole bloquer **cet utilisateur.**
+2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole Bloquer **cet utilisateur.**
 3. Sélectionnez **Bloquer la signature de l’utilisateur,** puis sélectionnez **Enregistrer.**
 
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>Bloquer l'accès d'un ancien employé aux courriers (Exchange Online)
@@ -68,10 +68,11 @@ Si vous avez des messages électroniques dans le cadre de votre abonnement Micro
   
 1. Accédez au <a href="https://admin.exchange.microsoft.com/" target="_blank">Centre d’administration Exchange</a>.
 2. Dans le Centre d'administration Exchange, accédez à **Destinataires** \> **Boîtes aux lettres**.
-3. Double-cliquez sur l’utilisateur et cliquez sur **Gérer les paramètres des applications de messagerie sous** Applications de **messagerie.** Désactiver **le** curseur pour toutes les options ; **Mobile (Exchange ActiveSync)**, **Outlook sur le web**, **Outlook bureau (MAPI)**, **Exchange services web,** **POP3** et **IMAP**.
+3. Sélectionnez la boîte aux lettres utilisateur dans la liste, puis, dans le volet d’informations *(à* droite), sélectionnez Gérer les **paramètres** des applications de messagerie sous Applications de **messagerie.** Désactiver **le** curseur pour toutes les options ; **Mobile (Exchange ActiveSync)**, **Outlook sur le web**, **Outlook bureau (MAPI)**, **Exchange services web,** **POP3** et **IMAP**.
 4. Cliquez sur **Enregistrer**.
 
 ## <a name="related-content"></a>Contenu associé
 
-[Exchange centre d’administration dans Exchange Online](/exchange/exchange-admin-center) 
- [Restaurer un utilisateur](restore-user.md)
+[Centre d’administration Exchange dans Exchange Online](/exchange/exchange-admin-center)
+
+[Restaurer un utilisateur](restore-user.md)

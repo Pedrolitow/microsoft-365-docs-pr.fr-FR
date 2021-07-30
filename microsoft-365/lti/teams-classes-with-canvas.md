@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams classes à Canvas
-ms.openlocfilehash: e8ab45de84fe8325f6d5b349deb96aa831d54e36
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9baf4f3607673e48472e297ce42a1ad461df5b84
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454684"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652430"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Utiliser Microsoft Teams classes avec Canvas
 
@@ -62,9 +62,9 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 Configurer l’Microsoft Teams’intégration LTI 1.3.
 
-En tant qu’administrateur de zone de dessin, vous devez ajouter l’application Microsoft Teams classes LTI dans votre environnement. Notez l’ID client LTI de l’application.
+En tant qu’administrateur de zone de dessin, vous devez ajouter l’application Microsoft Teams classes LTI dans votre environnement. Accédez à la liste des clés du développeur dans le compte principal, basculez vers les clés héritées et activez l’outil Teams LTI. Notez l’ID client LTI de l’application.
 
- - Microsoft Teams classes - 17000000000570
+ - Microsoft Teams classes - 170000000000570
 
 1. Access **Admin settings**  >  **Apps**.
 
@@ -84,7 +84,7 @@ En tant qu’administrateur de zone de dessin, vous devez ajouter l’applicatio
 
    L Microsoft Teams’application LTI des classes sera ajoutée à la liste des applications externes.
    
-## <a name="enabling-the-lti-app-for-canvas-courses"></a>Activation de l’application LTI pour les cours canvas
+## <a name="enabling-the-lti-app-for-canvas-courses"></a>Activation de l’application LTI pour les cours Canvas
 
 Pour utiliser l’application LTI dans un cours, un instructeur du cours Canvas doit activer la synchronisation des intégrations. Chaque cours doit être activé par un instructeur pour qu’une équipe correspondante soit créée . Il n’existe pas de mécanisme global pour la création d’équipes. Il s’agit d’une mesure de précaution pour empêcher la création d’équipes indésirables.
 

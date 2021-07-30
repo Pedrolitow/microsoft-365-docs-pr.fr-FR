@@ -1,7 +1,7 @@
 ---
-title: Déployer des mises à jour pour Microsoft Defender pour point de terminaison sur Mac
+title: Déployer des mises à jour pour Microsoft Defender pour endpoint sur Mac
 description: Contrôler les mises à jour de Microsoft Defender pour Endpoint sur Mac dans les environnements d’entreprise.
-keywords: microsoft, defender, Microsoft Defender pour endpoint, mac, mises à jour, déployer
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, mises à jour, déployer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 154d9abcbf4a2d37cd852b91412a076c22cb6c47
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 3c7a861e5cf342bbf1e6705729ac36dde0ae9c81
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622591"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651967"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Déployer les mises à jour de Microsoft Defender pour endpoint sur macOS
 
@@ -36,11 +36,11 @@ ms.locfileid: "53622591"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités.
 
-Pour mettre à jour Microsoft Defender pour endpoint sur macOS, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Par défaut, MAU recherche automatiquement les mises à jour quotidiennes, mais vous pouvez la modifier en une fois par semaine, par mois ou manuellement.
+Pour mettre à jour Microsoft Defender pour endpoint sur macOS, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Par défaut, MAU recherche automatiquement les mises à jour quotidiennes, mais vous pouvez la modifier de manière hebdomadaire, mensuelle ou manuelle.
 
 ![Capture d’écran MAU](images/MDATP-34-MAU.png)
 
@@ -74,7 +74,7 @@ Le `Current` canal contient la version la plus stable du produit.
 > - `Current` a été nommé `Production`
 
 >[!TIP]
->Pour afficher un aperçu des nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise sur `Beta` ou `Preview` .
+>Pour prévisualiser les nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise sur `Beta` ou `Preview` .
 
 |Section|Valeur|
 |---|---|
@@ -85,7 +85,7 @@ Le `Current` canal contient la version la plus stable du produit.
 |||
 
 >[!WARNING]
->Ce paramètre modifie le canal pour toutes les applications qui sont mises à jour via La mise à jour automatique Microsoft. Pour modifier le canal uniquement pour Microsoft Defender pour le point de terminaison sur macOS, exécutez la commande suivante après le remplacement par `[channel-name]` le canal souhaité :
+>Ce paramètre modifie le canal pour toutes les applications qui sont mises à jour via la mise à jour automatique Microsoft. Pour modifier le canal uniquement pour Microsoft Defender pour le point de terminaison sur macOS, exécutez la commande suivante après le remplacement par `[channel-name]` le canal souhaité :
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
@@ -113,7 +113,7 @@ Modifier la façon dont MAU recherche les mises à jour.
 |**Clé**|HowToCheck|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|Manual <p> AutomaticCheck <p> AutomaticDownload|
-|**Commentaire**|Notez que AutomaticDownload est téléchargé et installé en mode silencieux si possible.|
+|**Commentaire**|Notez que AutomaticDownload télécharge et installe en mode silencieux si possible.|
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Indique si le bouton « Vérifier les mises à jour » est activé.
 
@@ -128,7 +128,7 @@ Indiquez si les utilisateurs locaux pourront cliquer sur l’option « Vérifier
 
 ### <a name="disable-insider-checkbox"></a>Désactiver la case à cocher Insider
 
-Définissez la valeur sur True pour que le programme « Rejoindre le programme Office Insider... » case à cocher non disponible/grisée pour les utilisateurs.
+Définissez la valeur sur True pour que le programme « Rejoindre Office Programme Insider... » case à cocher non disponible/grisée pour les utilisateurs.
 
 |Section|Valeur|
 |---|---|
@@ -161,7 +161,7 @@ Le profil de configuration suivant est utilisé pour :
 > La configuration ci-dessous est un exemple de configuration et ne doit pas être utilisée en production sans une révision appropriée des paramètres et une adaptation des configurations.
 
 > [!TIP]
-> Pour afficher un aperçu des nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise sur `Beta` ou `Preview` .
+> Pour prévisualiser les nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise sur `Beta` ou `Preview` .
 
 ### <a name="jamf"></a>JAMF
 

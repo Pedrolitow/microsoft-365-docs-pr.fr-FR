@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287818"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652514"
 ---
-# <a name="update-incidents-api"></a>API mettre à jour les incidents
+# <a name="update-incidents-api"></a>API de mise à jour des incidents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "53287818"
 
 ## <a name="api-description"></a>Description de l’API
 
-Met à jour les propriétés d’un incident existant. Les propriétés updatables ```status``` sont : , , , , et ```determination``` ```classification``` ```assignedTo``` ```tags``` ```comments``` .
+Met à jour les propriétés d’un incident existant. Les propriétés updatables `status` sont : , , , , et `determination` `classification` `assignedTo` `tags` `comments` .
 
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>Quotas, allocation de ressources et autres contraintes
 
@@ -53,10 +53,10 @@ Si votre demande est limitée, elle retourne un `429` code de réponse. Le corps
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir [Access the Microsoft 365 Defender API](api-access.md).
 
-Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
--|-|-
-Application | Incident.ReadWrite.All | Lire et écrire tous les incidents
-Déléguée (compte professionnel ou scolaire) | Incident.ReadWrite | Lire et écrire des incidents
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+---|---|---
+Application|Incident.ReadWrite.All|Lire et écrire tous les incidents
+Déléguée (compte professionnel ou scolaire)|Incident.ReadWrite|Lire et écrire des incidents
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur, l’utilisateur doit être autorisé à mettre à jour l’incident dans le portail.
@@ -69,23 +69,23 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
--|-|-
-Autorisation | String | Porteur {token}. **Obligatoire**.
-Content-Type | String | application/json. **Obligatoire**.
+Nom|Type|Description
+---|---|---
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Content-Type|String|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
 Dans le corps de la demande, fournissons les valeurs des champs qui doivent être mis à jour. Les propriétés existantes qui ne sont pas incluses dans le corps de la demande conserveront leurs valeurs, sauf si elles doivent être recalculées en raison de modifications apportées aux valeurs associées. Pour de meilleures performances, vous devez omettre les valeurs existantes qui n’ont pas changé.
 
-Propriété | Type | Description
--|-|-
-statut | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibles ```Active``` sont : , et ```Resolved``` ```Redirected``` .
-assignedTo | string | Propriétaire de l’incident.
-classification | Énum | Spécification de l’incident. Les valeurs possibles sont les suivantes : ```Unknown```, ```FalsePositive``` et ```TruePositive```.
-détermination | Énum | Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
-balises | liste de chaînes | Liste des balises d’incident.
-comment | string | Commentaire à ajouter à l’incident.
+Propriété|Type|Description
+---|---|---
+statut|Énum|Spécifie l’état actuel de l’incident. Les valeurs possibles `Active` sont : , et `Resolved` `Redirected` .
+assignedTo|string|Propriétaire de l’incident.
+classification|Énum|Spécification de l’incident. Les valeurs possibles sont les suivantes : `Unknown`, `FalsePositive` et `TruePositive`.
+détermination|Énum|Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware` et `Other`.
+étiquettes|liste de chaînes|Liste des balises d’incident.
+comment|string|Commentaire à ajouter à l’incident.
 
 ## <a name="response"></a>Réponse
 
@@ -93,7 +93,7 @@ Si elle réussit, cette méthode renvoie `200 OK` . Le corps de la réponse cont
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request-example"></a>Exemple de requête
 
 Voici un exemple de la demande.
 
@@ -101,7 +101,7 @@ Voici un exemple de la demande.
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
 
-**Réponse**
+### <a name="response-example"></a>Exemple de réponse
 
 ```json
 {

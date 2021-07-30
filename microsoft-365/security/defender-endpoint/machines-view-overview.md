@@ -1,7 +1,7 @@
 ---
 title: Afficher et organiser la liste des appareils Microsoft Defender pour les points de terminaison
 description: Découvrez les fonctionnalités disponibles que vous pouvez utiliser dans la liste Appareils, telles que le tri, le filtrage et l’exportation de la liste pour améliorer les examens.
-keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
+keywords: trier, filtrer, exporter, csv, nom de l’appareil, domaine, dernière vue, IP interne, état d’état, alertes actives, détections de programmes malveillants actifs, catégorie de menace, passer en revue les alertes, réseau, connexion, programme malveillant, type, programme malveillant, programme malveillant, ransomware, attaque, menace, programme malveillant général, logiciel indésirable
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d70825f8bdcd47f17d2f61834f4353c537a033ed
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 88219c7a2bd8b5170df11d5b0853a3e16c3f2463
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622567"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651950"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Afficher et organiser la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "53622567"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 La **liste Appareils affiche** la liste des appareils de votre réseau sur lequel des alertes ont été générées. Par défaut, la file d’attente affiche les appareils visibles au cours des 30 derniers jours.  
 
@@ -88,7 +88,7 @@ Filtrez selon les états d’état d’état d’appareil suivants :
 
 ### <a name="antivirus-status"></a>État de l’antivirus
 
-Filtrez les appareils par état antivirus. S’applique uniquement aux Windows 10 actifs.
+Filtrer les appareils par état antivirus. S’applique uniquement aux Windows 10 actifs.
 
 - **Désactivé :** la protection contre & virus est désactivée.
 - **Not reporting** : la protection contre & contre les virus n’est pas un rapport.

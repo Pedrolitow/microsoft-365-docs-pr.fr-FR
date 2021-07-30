@@ -18,23 +18,23 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0fa0db3ba85ff003d91b43d06c709ab66c37ce02
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3907c52e4cae7dedba38c893ee34b0b857316d08
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933096"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652022"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Inscrire Microsoft Defender pour endpoint sur les appareils macOS dans Jamf Pro 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="enroll-macos-devices"></a>Inscrire des appareils macOS
 
@@ -58,7 +58,7 @@ Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordin
 
     ![Fermeture d’une description de logo générée automatiquement](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
-3. Dans **Spécifier les destinataires de l'>** sous Adresses de messagerie, entrez les **adresses** de messagerie des destinataires.
+3. Dans **Spécifier les destinataires de l'>** sous **Adresses** de messagerie, entrez l’adresse de messagerie des destinataires.
 
     ![Image des paramètres de configuration2](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 
@@ -78,9 +78,9 @@ Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordin
 
     ![Image des paramètres de configuration8](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
 
-## <a name="enrollment-method-2-prestage-enrollments"></a>Enrollment Method 2: Prestage Enrollments
+## <a name="enrollment-method-2-prestage-enrollments"></a>Méthode d’inscription 2 : pré-étape des inscriptions
 
-1. Dans le tableau de bord Pro Jamf, accédez à **Pré-étapes d’inscription.**
+1. Dans le tableau de bord Pro Jamf, accédez **à Pré-étapes d’inscription.**
 
     ![Image des paramètres de configuration9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 

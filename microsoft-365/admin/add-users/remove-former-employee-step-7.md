@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour supprimer le compte d’utilisateur d’un ancien employé.
-ms.openlocfilehash: 3db2eb7fd4c73854a759ee4026d6f9b9c12dfa82
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 6f1f307a7029bcf1cbf71a2ce85908b9ccb28ba5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541552"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648638"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Étape 7 : supprimer le compte d’utilisateur d’un ancien employé
 
@@ -95,4 +95,6 @@ Les opérations ci-dessus peuvent être réalisées à trois endroits :
   
 ## <a name="related-content"></a>Contenu associé
 
-[Restaurer un utilisateur](restore-user.md) (article)/ [Réinitialiser les mots de passe](reset-passwords.md) (article)
+[Restaurer un utilisateur](restore-user.md) (article)
+
+[Réinitialiser les mots de passe](reset-passwords.md) (article)

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 91e57b9941764d5f26ae47e137f584cd9f2c5f5d
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 9543ef45e568e742e6fd660a2408462de4874e57
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595761"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652346"
 ---
 # <a name="create-alert-api"></a>CRÉER une API d’alerte
 
@@ -31,7 +31,7 @@ ms.locfileid: "53595761"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -65,7 +65,7 @@ Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et é
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Enquête sur les alertes » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -77,7 +77,7 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 Content-Type | String | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -87,12 +87,12 @@ Dans le corps de la demande, fournissons les valeurs suivantes (toutes sont obli
 Propriété | Type | Description
 :---|:---|:---
 eventTime | DateTime(UTC) | Heure précise de l’événement en tant que chaîne, tel qu’obtenu à partir d’un chasse avancée. Par exemple, ```2018-08-03T16:45:21.7115183Z``` **obligatoire**.
-reportId | String | ReportId de l’événement, tel qu’obtenu à partir d’un chasse avancée. **Obligatoire**.
-machineId | String | ID de l’appareil sur lequel l’événement a été identifié. **Obligatoire**.
-Sévérité  | String | Gravité de l’alerte. Les valeurs de propriété sont : « Low » (faible), « Medium » (moyen) et « High » (élevé). **Obligatoire**.
-title | String | Titre de l’alerte. **Obligatoire**.
-description | String | Description de l’alerte. **Obligatoire**.
-recommendedAction| String | Action recommandée par le responsable de la sécurité lors de l’analyse de l’alerte. **Obligatoire**.
+reportId | Chaîne | ReportId de l’événement, tel qu’obtenu à partir d’un chasse avancée. **Obligatoire**.
+machineId | Chaîne | ID de l’appareil sur lequel l’événement a été identifié. **Obligatoire**.
+Sévérité  | Chaîne | Gravité de l’alerte. Les valeurs de propriété sont : « Low » (faible), « Medium » (moyen) et « High » (élevé). **Obligatoire**.
+title | Chaîne | Titre de l’alerte. **Obligatoire**.
+description | Chaîne | Description de l’alerte. **Obligatoire**.
+recommendedAction| Chaîne | Action recommandée par le responsable de la sécurité lors de l’analyse de l’alerte. **Obligatoire**.
 category| String | Catégorie de l’alerte. Les valeurs de propriété sont : « General », « CommandAndControl », « Collection », « CredentialAccess », « DefenseEvasion », « Discovery », « Exfiltration », « Exploit », « Execution », « InitialAccess », « LateralMovement », « Malware », « Persistence », « PrivilegeEscalation », « Ransomware », « SuspiciousActivity » **Required**.
 
 ## <a name="response"></a>Réponse

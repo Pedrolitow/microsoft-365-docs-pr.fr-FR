@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e21407ada85dbed1395f4be9cb943835d563ae8a
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 905f1bc317d2cf2aa639edd1362d216e8d91413b
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624079"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648134"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour endpoint sur macOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "53624079"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 La fonctionnalité de protection des applications potentiellement indésirables (PUA) dans Microsoft Defender for Endpoint sur macOS peut détecter et bloquer les fichiers PUA sur les points de terminaison de votre réseau.
@@ -46,7 +46,7 @@ Ces applications peuvent augmenter le risque d’infection de votre réseau par 
 
 Microsoft Defender pour le point de terminaison sur macOS peut détecter et signaler des fichiers PUA. Lorsqu’ils sont configurés en mode de blocage, les fichiers PUA sont placés en quarantaine.
 
-Lorsqu’une puA est détectée sur un point de terminaison, Microsoft Defender pour Endpoint sur macOS présente une notification à l’utilisateur, sauf si les notifications ont été désactivées. Le nom de la menace contient le mot « Application ».
+Lorsqu’une puA est détectée sur un point de terminaison, Microsoft Defender for Endpoint sur macOS présente une notification à l’utilisateur, sauf si les notifications ont été désactivées. Le nom de la menace contient le mot « Application ».
 
 ## <a name="configure-pua-protection"></a>Configurer la protection PUA
 
