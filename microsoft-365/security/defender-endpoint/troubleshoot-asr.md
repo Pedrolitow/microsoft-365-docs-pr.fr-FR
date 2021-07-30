@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 580a0ff1921c8c947b4a41f3571c367b26e86493
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c10505dc84b6f05055f7bc4bed2f32a581fe03bd
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624247"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650870"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Résoudre les problèmes de règles de réduction de la surface d’attaque
 
@@ -33,7 +33,7 @@ ms.locfileid: "53624247"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 
 Lorsque vous utilisez des [règles de réduction de la surface](attack-surface-reduction.md) d’attaque, vous pouvez être face à des problèmes, tels que :
@@ -84,9 +84,9 @@ Le mode audit a peut-être été activé pour tester une autre fonctionnalité, 
 
 Si vous avez testé la règle avec l’outil de démonstration et avec le mode audit, et que les règles de réduction de la surface d’attaque fonctionnent sur des scénarios pré-configurés, mais que la règle ne fonctionne pas comme prévu, vous devez passer à l’une des sections suivantes en fonction de votre situation :
 
-1. Si la règle de réduction de la surface d’attaque bloque quelque chose qu’elle ne doit pas bloquer (également appelé faux positif), vous pouvez d’abord ajouter une exclusion de règle de réduction de la [surface d’attaque.](#add-exclusions-for-a-false-positive)
+1. Si la règle de réduction de la surface d’attaque bloque un contrôle qu’elle ne doit pas bloquer (également appelé faux positif), vous pouvez d’abord ajouter une exclusion de règle de réduction de la [surface d’attaque.](#add-exclusions-for-a-false-positive)
 
-2. Si la règle de réduction de la surface d’attaque ne bloque pas quelque chose qu’elle doit bloquer (également appelé faux négatif), vous pouvez passer immédiatement à la dernière étape, en collectant les données de [diagnostic](#collect-diagnostic-data-for-file-submissions)et en nous envoyant le problème.
+2. Si la règle de réduction de la surface d’attaque ne bloque pas quelque chose qu’elle doit bloquer (également appelé faux négatif), vous pouvez passer immédiatement à la dernière étape, en collectant des données de [diagnostic](#collect-diagnostic-data-for-file-submissions)et en nous envoyant le problème.
 
 ## <a name="add-exclusions-for-a-false-positive"></a>Ajouter des exclusions pour un faux positif
 

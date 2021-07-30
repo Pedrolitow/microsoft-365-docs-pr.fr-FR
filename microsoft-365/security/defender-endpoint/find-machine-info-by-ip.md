@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 440eb0d44d1faa0589e1c7315528d68c6c5dc1a5
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 0802b702f735a1105407477d20c553e694f423cf
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53619626"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657266"
 ---
 # <a name="find-device-information-by-internal-ip-api"></a>Rechercher des informations sur l’appareil par API IP interne
 
@@ -28,7 +28,7 @@ ms.locfileid: "53619626"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -84,7 +84,7 @@ Content-type: application/json
 
 Voici un exemple de réponse.
 
-La réponse retourne la liste de tous les appareils qui ont signalé cette adresse IP dans les 16 minutes qui s’viennent avant et après l’heure.
+La réponse retourne la liste de tous les appareils qui ont signalé cette adresse IP dans les 16 minutes qui s’viennent avant et après l’timestamp.
 
 ```json
 HTTP/1.1 200 OK

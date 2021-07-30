@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7997a1367126cd22417683b22409e6254204e1bf
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: fbce67602006a86c71bf3b802d8b69e2cd367104
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567127"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664068"
 ---
 # <a name="configure-device-discovery"></a>Configurer la découverte d’appareils
 
@@ -38,7 +38,7 @@ ms.locfileid: "53567127"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-La découverte peut être configurée pour être en mode standard ou de base. Utilisez l’option standard pour rechercher activement des appareils dans votre réseau, ce qui garantit mieux la découverte des points de terminaison et fournit une classification plus riche des appareils. 
+La découverte peut être configurée pour être en mode standard ou de base. Utilisez l’option standard pour rechercher activement des appareils dans votre réseau, ce qui garantit mieux la découverte des points de terminaison et fournit une classification d’appareil plus riche. 
 
 Vous pouvez personnaliser la liste des appareils utilisés pour effectuer une découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement - appareils Windows 10 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil.
 
@@ -84,11 +84,11 @@ Le choix de la classification de découverte initiale implique l’application d
 1. Sélectionnez **Paramètres > détection d’appareil.**
 2. Sélectionnez **Réseaux surveillés.**
 3. Afficher la liste des réseaux.
-4. Sélectionnez les trois points en côté du nom du réseau.
+4. Sélectionnez les trois points à côté du nom du réseau.
 5. Choisissez si vous souhaitez surveiller, ignorer ou utiliser la classification de découverte initiale.
 
     > [!WARNING]
-    > - Le choix de surveiller un réseau qui n’a pas été identifié par Microsoft Defender pour Endpoint comme réseau d’entreprise peut entraîner la découverte d’appareils en dehors de votre réseau d’entreprise et peut donc détecter des appareils d’entreprise ou d’autres appareils. 
+    > - Choisir de surveiller un réseau qui n’a pas été identifié par Microsoft Defender pour Endpoint comme réseau d’entreprise peut entraîner la découverte d’appareils en dehors de votre réseau d’entreprise, et par conséquent détecter des appareils d’entreprise ou d’autres appareils. 
     > - Choisir d’ignorer un réseau arrête la surveillance et la découverte d’appareils dans ce réseau. Les appareils qui ont déjà été découverts ne seront pas supprimés de l’inventaire, mais ne seront plus mis à jour et les détails seront conservés jusqu’à l’expiration de la période de rétention des données de Defender for Endpoint.
     > - Avant de choisir de surveiller les réseaux non professionnels, vous devez vous assurer que vous êtes autorisé à le faire. <br>
 
@@ -108,6 +108,19 @@ DeviceNetworkInfo
 | extend NetworkName = tostring(ConnectedNetworks ["Name"]), Description = tostring(ConnectedNetworks ["Description"]), NetworkCategory = tostring(ConnectedNetworks ["Category"])
 | where NetworkName == "<your network name here>"
 ```
+
+## <a name="get-information-on-device"></a>Obtenir des informations sur l’appareil
+
+Vous pouvez utiliser la requête de recherche avancée suivante pour obtenir les dernières informations complètes sur un appareil spécifique.
+
+```kusto
+DeviceInfo
+| where DeviceName == "<device name here>" and isnotempty(OSPlatform)
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
+
+
+
 
 ## <a name="see-also"></a>Voir aussi
 

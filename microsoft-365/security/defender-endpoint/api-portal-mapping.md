@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81f4280e86ec2e914cff5c713bf71c1c3bd03ec2
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 0f3b33335eb331cfebdfbeb358b74b8b5275e704
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587992"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650582"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Champs de l’API microsoft Defender pour les détections de points de terminaison
 
@@ -31,7 +31,7 @@ ms.locfileid: "53587992"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
 Comprendre les champs de données qui sont exposés dans le cadre de l’API de détections et la façon dont ils sont map Microsoft 365 Defender.
 
@@ -82,7 +82,7 @@ Les numéros de champ correspondent aux numéros dans les images ci-dessous.
 ||LinkToMTP|Aucun mappage|`https://securitycenter.windows.com/alert/da637370718981685665_16349121`|Valeur disponible pour chaque détection.
 ||IncidentLinkToMTP|Aucun mappage|`"https://securitycenter.windows.com/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM`|Valeur disponible pour chaque détection.
 ||IncidentLinkToWDATP|Aucun mappage|`https://securitycenter.windows.com/preferences2/integration/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM`|Valeur disponible pour chaque détection.
-> |Champ interne|LastProcessedTimeUtc|Aucun mappage|2017-05-07T01:56:58.9936648Z|Heure à quel moment l’événement est arrivé au niveau du back-end. Ce champ peut être utilisé lors de la définition du paramètre de demande pour la période de récupération des détections.|
+> |Champ interne|LastProcessedTimeUtc|Aucun mappage|2017-05-07T01:56:58.9936648Z|Heure à quel moment l’événement est arrivé au niveau du back-end. Ce champ peut être utilisé lors de la définition du paramètre de demande pour la durée de récupération des détections.|
 > ||Ne fait pas partie du schéma|deviceVendor||Valeur statique dans le mappage ArcSight : « Microsoft ».|
 > ||Ne fait pas partie du schéma|deviceProduct||Valeur statique dans le mappage ArcSight : « Microsoft Defender ATP ».|
 > ||Ne fait pas partie du schéma|deviceVersion||Valeur statique dans le mappage ArcSight - « 2.0 » utilisé pour identifier les versions de mappage.|

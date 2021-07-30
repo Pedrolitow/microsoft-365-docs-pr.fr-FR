@@ -18,34 +18,34 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment gérer les paramètres Office scripts pour les utilisateurs de votre organisation.
-ms.openlocfilehash: fea50838cf1089b73a6af5bbf86d490293831085
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 17a243c8eaa31be82b956967acb75c1f1001492e
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392670"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650738"
 ---
 # <a name="manage-office-scripts-settings"></a>Gérer les paramètres de Office Scripts
 
-[Office Scripts](/office/dev/scripts)permet aux utilisateurs d’automatiser des tâches en enregistrant, en éditant et en exécutant des scripts dans Excel sur le web. Office Les scripts fonctionnent avec Power Automate, et les utilisateurs exécutent des scripts sur des workbooks à l’aide du connecteur Excel Online (Entreprise). Microsoft 365 administrateurs peuvent gérer les paramètres Office scripts à partir du Centre d’administration Microsoft 365.
+[Office scripts permet](/office/dev/scripts) aux utilisateurs d’automatiser les tâches en enregistrant, en éditant et en exécutant des scripts dans Excel sur le Web. Office Les scripts fonctionnent avec Power Automate, et les utilisateurs exécutent des scripts sur des workbooks à l’aide du connecteur Excel Online (Entreprise). Microsoft 365 administrateurs peuvent gérer les paramètres Office scripts à partir du Centre d’administration Microsoft 365.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour gérer Office de scripts, vous devez être administrateur global. Pour plus d’informations, voir [à propos des rôles d’administrateur.](../add-users/about-admin-roles.md)
+- Pour gérer Office scripts, vous devez être administrateur global. Pour plus d’informations, voir [à propos des rôles d’administrateur.](../add-users/about-admin-roles.md)
 
 - Assurez-vous que les utilisateurs de votre organisation ont une licence valide pour un plan Microsoft 365 ou Office 365 commercial ou EDU qui inclut l’accès aux applications de bureau Office, telles que l’un des plans suivants :
 
-    - Office 365 Business Premium
-    - Microsoft 365 Apps for business
-    - Microsoft 365 Apps for enterprise
-    - Office 365 E3
-    - Office 365 E5
-    - Office 365 A3
-    - Office 365 A5
+- Office 365 Business Premium
+- Microsoft 365 Apps for business
+- Microsoft 365 Apps for enterprise
+- Office 365 E3
+- Office 365 E5
+- Office 365 A3
+- Office 365 A5
 
 ## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>Gérer la disponibilité des Office scripts et le partage des scripts
 
-1. Dans la Centre d’administration Microsoft 365, go to the **Paramètres** \> **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services</a> tab.
+1. Dans la Centre d’administration Microsoft 365, go to the **Paramètres** \> **Org settings** \> **[Services](https://go.microsoft.com/fwlink/p/?linkid=2053743)** tab.
 
 2. Sélectionnez **Office scripts.**
 
@@ -55,21 +55,21 @@ ms.locfileid: "53392670"
 
     - Pour autoriser tous les utilisateurs de votre organisation à accéder et à utiliser Office scripts, laissez Tout le monde **(par** défaut) sélectionné.
 
-    - Pour autoriser uniquement les membres d’un groupe spécifique à accéder aux scripts Office et à les utiliser, sélectionnez **Groupe** spécifique, puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste d’adresses. Vous ne pouvez ajouter qu’un seul groupe à la liste d’utilisateurs et il doit s’agit de l’un des types suivants :
+    - Pour autoriser uniquement les membres d’un groupe spécifique à accéder aux scripts Office et à les utiliser, sélectionnez Un groupe **spécifique,** puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste d’adresses. Vous ne pouvez ajouter qu’un seul groupe à la liste d’utilisateurs et il doit s’agit de l’un des types suivants :
         - Microsoft 365 groupe
         - Groupe de distribution
         - Groupe de sécurité
         - Groupe de sécurité à extension messagerie
-    
+
         Pour en savoir plus sur les différents types de groupes, voir [Comparer les groupes.](../create-groups/compare-groups.md)
 
 5. Pour permettre aux utilisateurs ayant accès à Office Scripts de partager leurs scripts avec d’autres membres de votre organisation, sélectionnez Autoriser les utilisateurs à accéder à **Office Les scripts** partagent leurs scripts avec d’autres membres de l’organisation. Le partage de scripts en dehors d’une organisation n’est pas autorisé.
- 
+
     > [!NOTE]
     > Si vous désactiverez ultérieurement le partage de scripts pour votre organisation, les utilisateurs pourront toujours exécuter des scripts précédemment partagés.
- 
+
 6. Spécifiez les utilisateurs ayant accès Office scripts peuvent partager leurs scripts :
-    
+
     - Pour autoriser tous les utilisateurs à accéder Office scripts pour partager leurs scripts, laissez **Tout** le monde (par défaut) sélectionné.
 
     - Pour autoriser uniquement les membres d’un groupe spécifique ayant accès à Office Scripts à partager leurs scripts, sélectionnez Groupe **spécifique,** puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste d’adresses. Vous ne pouvez ajouter qu’un seul groupe à la liste d’utilisateurs et il doit s’agit de l’un des types suivants :
@@ -77,10 +77,10 @@ ms.locfileid: "53392670"
         - Groupe de distribution
         - Groupe de sécurité
         - Groupe de sécurité à extension messagerie
-    
+
         Pour en savoir plus sur les différents types de groupes, voir [Comparer les groupes.](../create-groups/compare-groups.md)
 
-7. Pour permettre aux utilisateurs d’exécuter leurs scripts Office à l’intérieur de flux Power Automate, sélectionnez Autoriser les utilisateurs à accéder à **Office Scripts** exécutent leurs scripts avec Power Automate . Cela permet aux utilisateurs d’ajouter des étapes de flux [à l’Excel script](/connectors/excelonlinebusiness) Run du connecteur d’entreprise en ligne. 
+7. Pour permettre aux utilisateurs d’exécuter leurs scripts Office à l’intérieur de flux Power Automate, sélectionnez Autoriser les utilisateurs à accéder à **Office Les scripts** exécutent leurs scripts avec Power Automate . Cela permet aux utilisateurs d’ajouter des étapes de flux [à l’Excel script d’Excel Online (Entreprise) Connector run.](/connectors/excelonlinebusiness) 
 
     - Pour permettre à tous les utilisateurs ayant accès Office scripts d’utiliser leurs scripts dans les flux, laissez Tout le monde **(par** défaut) sélectionné.
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 843fe093a2cfb8c328c51676e55f15ae732f7869
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: f1ebb1d476f58109a32e367581f764774b894670
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286020"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650606"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API Microsoft Defender pour point de terminaison - Hello World
 
@@ -33,7 +33,7 @@ ms.locfileid: "53286020"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -66,11 +66,11 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
    - **Remarque**: WindowsDefenderATP n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
 
-   ![Image de l’accès à l’API et de la sélection de l’API1](images/add-permission.png)
+   ![Image de l’accès à l’API et de la sélection d’API1](images/add-permission.png)
 
    - Choose **Application permissions**  >  **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image de l’accès à l’API et sélection de l’API2](images/application-permissions.png)
+   ![Image de l’accès à l’API et de la sélection de l’API2](images/application-permissions.png)
 
    **Remarque importante**: vous devez sélectionner les autorisations pertinentes. « Lire toutes les alertes » n’est qu’un exemple !
 
@@ -86,7 +86,7 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
    ![Image de l’octroi d’autorisations](images/grant-consent.png)
 
-6. Ajoutez un secret à l’application.
+6. Ajoutez une secret à l’application.
 
    - Cliquez **sur Certificats & secrets,** ajoutez une description à la secret, puis cliquez sur **Ajouter**.
 

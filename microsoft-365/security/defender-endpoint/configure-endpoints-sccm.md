@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 2a89a47adee900118e281d40799a65278af31d04
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 011008d5c8976e056cacfdba344e8ef0f1a45406
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596193"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651458"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Intégrer les appareils Windows 10 à l’aide de Configuration Manager
 
@@ -35,7 +35,7 @@ ms.locfileid: "53596193"
 - Microsoft Endpoint Configuration Manager branche actuelle
 - Gestionnaire de configuration de System Center 2012 R2
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## <a name="supported-client-operating-systems"></a>Systèmes d’exploitation clients pris en charge
 
@@ -202,9 +202,9 @@ Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fic
 
 Si vous utilisez la Microsoft Endpoint Manager actuelle, utilisez le tableau de bord Defender for Endpoint intégré dans la console Configuration Manager. Pour plus d’informations, [voir Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
+Si vous utilisez System Center Configuration Manager 2012 R2, la surveillance se compose de deux parties :
 
-1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou s’est exécuté correctement) sur les appareils de votre réseau.
+1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou qu’il s’est correctement exécuté) sur les appareils de votre réseau.
 
 2. Vérification de la conformité des appareils avec le service Defender for Endpoint (cela garantit que l’appareil peut terminer le processus d’intégration et continuer à signaler des données au service).
 
@@ -218,7 +218,7 @@ Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se
 
 4. Examinez les indicateurs d’état sous **Statistiques d’achèvement** et **État du contenu.**
 
-    En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les [points de terminaison.](troubleshoot-onboarding.md)
+    En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les points [de terminaison.](troubleshoot-onboarding.md)
 
     ![Configuration Manager affichant un déploiement réussi sans erreur](images/sccm-deployment.png)
 

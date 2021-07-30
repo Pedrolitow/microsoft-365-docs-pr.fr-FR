@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: fa9592dccd806ad14e609df073c855170dcb2c76
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 68b627c7cdc215317d737a637316e5edf0971322
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53391446"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650918"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison
 
@@ -35,7 +35,7 @@ ms.locfileid: "53391446"
 - Windows Server 2016
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Vous devrez peut-être résoudre les problèmes du processus d’intégration de Microsoft Defender for Endpoint si vous rencontrez des problèmes.
 Cette page fournit des étapes détaillées pour résoudre les problèmes d’intégration qui peuvent se produire lors du déploiement avec l’un des outils de déploiement et les erreurs courantes qui peuvent se produire sur les appareils.
@@ -74,7 +74,7 @@ Si l’intégration s’est correctement terminée,  mais que les appareils n’
 
 2. Go to **Windows Logs**  >  **Application**.
 
-3. Recherchez un événement à partir de la source de l’événement **WDATPOnboarding.**
+3. Recherchez un événement à partir de la source **d’événement WDATPOnboarding.**
 
 Si le script échoue et que l’événement est une erreur, vous pouvez vérifier l’ID d’événement dans le tableau suivant pour vous aider à résoudre le problème.
 
@@ -85,7 +85,7 @@ ID d’événement | Type d’erreur | Étapes de résolution
 :---:|:---|:---
  `5` | Des données de désintboarding ont été trouvées, mais n’ont pas pu être supprimées | Vérifier les autorisations sur le Registre, plus précisément<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 `10` | Les données d’intégration n’ont pas pu être écrites dans le Registre |  Vérifier les autorisations sur le Registre, plus précisément<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.<br>Vérifiez que le script a été exécuté en tant qu’administrateur.
-`15` |  Échec du démarrage du service SENSE |Vérifiez l’état du service `sc query sense` (commande). Assurez-vous qu’il n’est pas dans un état intermédiaire ( '*Pending_Stopped '*, *' Pending_Running*' ) et essayez d’exécuter le script à nouveau (avec des droits d’administrateur). <br> <br> Si l’appareil s’Windows 10, version 1607 et que la commande est en cours d’exécution, `sc query sense` `START_PENDING` redémarrez l’appareil. Si le redémarrage de l’appareil ne permet pas de résoudre le problème, mettre à niveau vers KB4015217 et réessayer l’intégration.
+`15` |  Échec du démarrage du service SENSE |Vérifiez l’état du service `sc query sense` (commande). Assurez-vous qu’il n’est pas dans un état intermédiaire ( '*Pending_Stopped '*, *' Pending_Running*' ) et essayez d’exécuter le script à nouveau (avec des droits d’administrateur). <br> <br> Si l’appareil s’Windows 10, version 1607 et que la commande est en cours d’exécution, `sc query sense` `START_PENDING` redémarrez l’appareil. Si le redémarrage de l’appareil ne permet pas de résoudre le problème, faites une mise à niveau vers KB4015217 et tentez à nouveau l’intégration.
 `15` | Échec du démarrage du service SENSE | Si le message de l’erreur est le suivant : erreur système 577 ou erreur 1058 s’est produite, vous devez activer le pilote ELAM Antivirus Microsoft Defender, voir Vérifier que [Antivirus Microsoft Defender](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) n’est pas désactivé par une stratégie pour obtenir des instructions.
 `30` |  Le script n’a pas réussi à attendre le démarrage de l’exécution du service | Le service a peut-être mis plus de temps à démarrer ou a rencontré des erreurs lors de la tentative de démarrage. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les erreurs à l’aide de [l’Observateur d’événements.](event-error-codes.md)
 `35` |  Le script n’a pas trouvé la valeur de Registre d’état d’intégration nécessaire | Lorsque le service SENSE démarre pour la première fois, il écrit l’état d’intégration à l’emplacement du Registre<br>`HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`.<br> Le script n’a pas réussi à le trouver après plusieurs secondes. Vous pouvez le tester manuellement et vérifier s’il est là. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les erreurs à l’aide de [l’Observateur d’événements.](event-error-codes.md)
@@ -101,7 +101,7 @@ Si vous avez configuré des stratégies dans Intune et qu’elles ne sont pas pr
 Utilisez les tableaux suivants pour comprendre les causes possibles des problèmes lors de l’intégration :
 
 - Microsoft Intune codes d’erreur et OMA-URIs tableau
-- Problèmes connus avec la table de non-conformité
+- Tableau des problèmes connus de non-conformité
 - Tableau des journaux des événements de gestion des périphériques mobiles (MDM)
 
 Si aucun des journaux des événements et des étapes de dépannage ne fonctionne, téléchargez le script local à partir de la **section** Gestion des périphériques du portail, puis exécutez-le dans une invite de commandes avec élévation de niveaux.
@@ -113,8 +113,8 @@ Code d’erreur hexadentographique | Code d’erreur déc | Description de l’e
 0x87D1FDE8 | -2016281112 | Échec de la correction | Intégration <br> Offboarding | **Cause possible :** L’intégration ou la déboarding a échoué sur un blob erroné : signature erronée ou champs PreviousOrgIds manquants. <br><br> **Étapes de résolution des problèmes :** <br> Vérifiez les ID d’événement dans les erreurs d’intégration de l’agent d’affichage dans la section journal des [événements de l’appareil.](#view-agent-onboarding-errors-in-the-device-event-log) <br><br> Consultez les journaux des événements MDM dans le tableau suivant ou suivez les instructions dans Diagnostiquer les échecs [de](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)la gestion des Windows 10 .
  | | | | Intégration <br> Offboarding <br> SampleSharing | **Cause possible :** La clé de Registre microsoft Defender pour la stratégie de point de terminaison n’existe pas ou le client DM OMA n’est pas autorisé à y écrire. <br><br> **Étapes de résolution des problèmes :** Assurez-vous que la clé de Registre suivante existe : `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> S’il n’existe pas, ouvrez une commande avec élévation de élévation de niveaux et ajoutez la touche.
  | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Cause possible :** Une tentative de correction par propriété en lecture seule. L’intégration a échoué. <br><br> **Étapes de résolution des problèmes :** Vérifiez les étapes de dépannage dans [Résoudre les problèmes d’intégration sur l’appareil.](#troubleshoot-onboarding-issues-on-the-device) <br><br> Consultez les journaux des événements MDM dans le tableau suivant ou suivez les instructions dans Diagnostiquer les échecs [de](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)la gestion des Windows 10 .
- | | | | tous | **Cause possible :** Essayez de déployer Microsoft Defender pour le point de terminaison sur une plateforme/référence SKU non prise en charge, en particulier SKU holographique. <br><br> Plateformes actuellement prise en charge :<br> Enterprise, Éducation et Professional.<br> Le serveur n’est pas pris en charge.
- 0x87D101A9 | -2016345687 |SyncML(425) : la commande demandée a échoué car l’expéditeur ne peut pas avoir les autorisations de contrôle d’accès (ACL) adéquates sur le destinataire. | tous |  **Cause possible :** Essayez de déployer Microsoft Defender pour le point de terminaison sur une plateforme/référence SKU non prise en charge, en particulier SKU holographique.<br><br> Plateformes actuellement prise en charge :<br>  Enterprise, Éducation et Professional.
+ | | | | Tous | **Cause possible :** Essayez de déployer Microsoft Defender pour le point de terminaison sur une plateforme/référence SKU non prise en charge, en particulier SKU holographique. <br><br> Plateformes actuellement prise en charge :<br> Enterprise, Éducation et Professional.<br> Le serveur n’est pas pris en charge.
+ 0x87D101A9 | -2016345687 |SyncML(425) : la commande demandée a échoué car l’expéditeur ne peut pas avoir les autorisations de contrôle d’accès (ACL) adéquates sur le destinataire. | Tous |  **Cause possible :** Essayez de déployer Microsoft Defender pour le point de terminaison sur une plateforme/référence SKU non prise en charge, en particulier SKU holographique.<br><br> Plateformes actuellement prise en charge :<br>  Enterprise, Éducation et Professional.
 
 #### <a name="known-issues-with-non-compliance"></a>Problèmes connus de non-conformité
 
@@ -136,7 +136,7 @@ Nom du canal : Admin
 
 ID | Severity | Description de l’événement | Étapes de résolution des problèmes
 :---|:---|:---|:---
-1819 | Error | Microsoft Defender for Endpoint CSP: Failed to Set Node’s Value. NodeId : (%1), TokenName : (%2), Résultat : (%3). | Téléchargez [la mise à jour cumulative Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
+1819 | Erreur | Microsoft Defender for Endpoint CSP: Failed to Set Node’s Value. NodeId : (%1), TokenName : (%2), Résultat : (%3). | Téléchargez [la mise à jour cumulative Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>Résoudre les problèmes d’intégration sur l’appareil
 
@@ -161,9 +161,9 @@ Si les outils de déploiement utilisés n’indiquent pas une erreur dans le pro
 
 4. Dans le **volet Action,** cliquez sur **Filtrer le journal actuel.**
 
-5. Sous **l’onglet Filtre,** sous **Niveau d’événement :** sélectionnez **Critique,** **Avertissement** et **Erreur,** puis cliquez sur **OK.**
+5. Sous **l’onglet Filtre,** sous **Niveau d’événement :** sélectionnez **Critique,** **Avertissement** et **Erreur,** puis cliquez sur **OK**.
 
-   ![Image du filtre du journal de l’Observateur d’événements](images/filter-log.png)
+   ![Image du filtre de journal de l’Observateur d’événements](images/filter-log.png)
 
 6. Les événements qui peuvent indiquer des problèmes s’affichent dans le **volet** opérationnel. Vous pouvez essayer de les résoudre en fonction des solutions du tableau suivant :
 
@@ -182,7 +182,7 @@ ID de l'événement | Message | Étapes de résolution
 `30` | Échec de la désactivation du mode $(build.sense.productDisplayName) dans Microsoft Defender pour Endpoint. Code d’échec : %1 | Contactez le support technique.
 `32` | Le service $(build.sense.productDisplayName) n’a pas réussi à demander à s’arrêter après le processus de déboardage. Code d’échec : %1 | Vérifiez que le type de démarrage du service est manuel et redémarrez l’appareil.
 `55` | Échec de la création dulogger automatique ETW sécurisé. Code d’échec : %1 | Redémarrez l’appareil.
-`63` | Mise à jour du type de démarrage du service externe. Nom : %1, type de démarrage réel : %2, type de démarrage attendu : %3, code de sortie : %4 | Identifiez ce qui provoque des modifications dans le type de démarrage du service mentionné. Si le code de sortie n’est pas 0, corrigez le type de démarrage manuellement pour le type de démarrage attendu.
+`63` | Mise à jour du type de démarrage du service externe. Nom : %1, type de démarrage réel : %2, type de démarrage attendu : %3, code de sortie : %4 | Identifiez ce qui provoque des modifications dans le type de démarrage du service mentionné. Si le code de sortie n’est pas 0, corrigez manuellement le type de démarrage pour le type de démarrage attendu.
 `64` | Démarrage du service externe arrêté. Nom : %1, code de sortie : %2 | Contactez le support technique si l’événement continue à apparaître.
 `68` | Le type de démarrage du service est inattendu. Nom du service : %1, type de démarrage réel : %2, type de démarrage attendu : %3 | Identifiez ce qui provoque des modifications dans le type de démarrage. Correction du type de démarrage du service mentionné.
 `69` | Le service est arrêté. Nom du service : %1 | Démarrez le service mentionné. Contactez le support technique s’il est persistant.
@@ -306,7 +306,7 @@ Si la vérification échoue et que votre environnement utilise un proxy pour se 
 Si vous rencontrez des problèmes lors de l’intégration d’un serveur, vous devez suivre les étapes de vérification suivantes pour résoudre les problèmes possibles.
 
 - [Vérifier Microsoft Monitoring Agent (MMA) est installé et configuré pour signaler les données du capteur au service](configure-server-endpoints.md)
-- [S’assurer que les paramètres de proxy serveur et de connectivité Internet sont correctement configurés](configure-server-endpoints.md)
+- [S’assurer que les paramètres de proxy serveur et de connectivité Internet sont configurés correctement](configure-server-endpoints.md)
 
 Vous devrez peut-être également vérifier les choses suivantes :
 
@@ -392,7 +392,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration12](images/mecm-12.png)
 
-13. In **Requirements**, select **Next**.
+13. Dans **Les conditions requises,** **sélectionnez Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration13](images/mecm-13.png)
 
@@ -461,7 +461,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
     ![Image de Microsoft Endpoint Configuration Manager configuration30](images/mecm-30.png)
 
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Voir aussi
 
 - [Résoudre des problèmes avec Microsoft Defender pour point de terminaison](troubleshoot-mdatp.md)
 - [Intégration des appareils](onboard-configure.md)

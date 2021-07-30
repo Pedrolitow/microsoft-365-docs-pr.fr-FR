@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 39cb57d4e3886b4e5458cfd7522600758ca088a6
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: ed2322a602541f0144669f5567302bb8a603738d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53588100"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650714"
 ---
 # <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Accéder au portail Microsoft 365 Defender client MSSP
 
@@ -36,18 +36,18 @@ ms.locfileid: "53588100"
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 > [!NOTE]
 > Ces étapes sont dirigées vers le MSSP.
 
-Par défaut, les clients MSSP accèdent à Microsoft 365 Defender client via l’URL suivante `https://securitycenter.windows.com/` :
+Par défaut, les clients MSSP accèdent à Microsoft 365 Defender client via l’URL suivante : `https://securitycenter.windows.com/` .
 
 Toutefois, les MSSP doivent utiliser une URL propre au client au format suivant : pour accéder au portail client  `https://securitycenter.windows.com?tid=customer_tenant_id` MSSP.
 
 En règle générale, les MSSP doivent être ajoutés à chaque azure AD du client MSSP qu’il a l’intention de gérer.
 
-Utilisez les étapes suivantes pour obtenir l’ID de client MSSP client, puis utilisez l’ID pour accéder à l’URL propre au client :
+Utilisez les étapes suivantes pour obtenir l’ID de client MSSP, puis utilisez l’ID pour accéder à l’URL propre au client :
 
 1. En tant que MSSP, connectez-vous à Azure AD avec vos informations d’identification.
 

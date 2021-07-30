@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 14c06cbfe8913f24082bccc6e0f607f871043425
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 4303385f115c9e315c3e8d52d9d13c18e8b530c6
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591162"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651518"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (anciennement Microsoft Flow) et Azure Functions
 
@@ -33,7 +33,7 @@ ms.locfileid: "53591162"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 L’automatisation des procédures de sécurité est une exigence standard pour chaque centre d’opérations de sécurité moderne. L’absence de cyber-défenseurs professionnels force SOC à fonctionner de la manière la plus efficace et l’automatisation est une chose à faire. Microsoft Power Automate prend en charge différents connecteurs qui ont été créés exactement pour cela. Vous pouvez créer une automatisation de procédure de bout en bout en quelques minutes.
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4b9fd7a450ffd52554751cac058a95c938f7ed79
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 43a086475eb9a052d86c1ef2ac7d2b4de96ef758
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622771"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652730"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
@@ -33,16 +33,16 @@ ms.locfileid: "53622771"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Le service Defender for Endpoint est constamment mis à jour pour inclure de nouvelles améliorations et fonctionnalités.
+Le service Defender for Endpoint est constamment mis à jour pour inclure de nouvelles fonctionnalités et améliorations.
 
 Découvrez les nouvelles fonctionnalités de la version d’évaluation de Defender for Endpoint et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
 
 > [!TIP]
 > Recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux : `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
-Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Endpoint.](whats-new-in-microsoft-defender-atp.md)
+Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Point de terminaison.](whats-new-in-microsoft-defender-atp.md)
 
 ## <a name="what-you-need-to-know"></a>Ce que vous devez savoir
 
@@ -61,7 +61,7 @@ Vous aurez accès aux fonctionnalités à venir sur qui vous pourrez nous faire 
 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres fonctionnalités avancées Des points de  >    >    >  **terminaison prévisualisation.**
+1. Dans le volet de navigation, **sélectionnez** Paramètres fonctionnalités avancées Des points de terminaison  >    >    >  **prévisualisation.**
 
 2. Basculez le paramètre entre **Sur** et **Hors et** sélectionnez Enregistrer **les préférences.**
 
@@ -71,11 +71,11 @@ Les fonctionnalités suivantes sont incluses dans la version préliminaire :
 
 - [Filtrage de contenu Web](web-content-filtering.md)
 
-  Le filtrage de contenu Web fait partie des fonctionnalités de protection web de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+  Le filtrage de contenu Web fait partie des fonctionnalités de protection web de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 - [Rapport d’intégrité et de conformité des appareils](machine-reports.md)
 
   Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
 
 > [!TIP]
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)  

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78d1f1eab2138fb53452d777027596dce12cb76a
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 261a1253076791e7f507c38b543a80d6f2eb8993
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53618822"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650942"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
@@ -33,7 +33,7 @@ ms.locfileid: "53618822"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Répondez rapidement aux attaques détectées en arrêtant et en bloquant des fichiers ou en bloquant un fichier. Après avoir pris des mesures sur les fichiers, vous pouvez vérifier les détails de l’activité dans le centre de l’action.
 
@@ -81,13 +81,13 @@ L’action Arrêter **et mettre en** quarantaine le fichier inclut l’arrêt de
 Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieure, où le fichier a été observé au cours des 30 derniers jours.
 
 > [!NOTE]
-> Vous pourrez restaurer le fichier à partir de la quarantaine à tout moment.
+> Vous pourrez restaurer le fichier de quarantaine à tout moment.
 
 ### <a name="stop-and-quarantine-files"></a>Arrêter et mettre en quarantaine des fichiers
 
 1. Sélectionnez le fichier que vous souhaitez arrêter et mettre en quarantaine. Vous pouvez sélectionner un fichier dans l’un des affichages suivants ou utiliser la zone de recherche :
 
-   - **Alertes :** cliquez sur les liens correspondants dans la description ou les détails de la chronologie de l’alerte
+   - **Alertes :** cliquez sur les liens correspondants à partir de la description ou des détails dans la chronologie de l’article sur l’alerte
    - **Zone de recherche** : **sélectionnez Fichier** dans le menu déroulant et entrez le nom du fichier
 
    > [!NOTE]
@@ -116,7 +116,7 @@ Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieu
 
 Lorsque le fichier est supprimé d’un appareil, la notification suivante s’affiche :
 
-![Image de la notification sur l’utilisateur de l’appareil](images/atp-notification-file.png)
+![Image de notification sur l’utilisateur de l’appareil](images/atp-notification-file.png)
 
 Dans la chronologie de l’appareil, un nouvel événement est ajouté pour chaque appareil où un fichier a été arrêté et mis en quarantaine.
 
@@ -124,7 +124,7 @@ Un avertissement s’affiche avant l’implémentation de l’action pour les fi
 
 ## <a name="restore-file-from-quarantine"></a>Restaurer un fichier à partir de la mise en quarantaine
 
-Vous pouvez revenir en quarantaine et supprimer un fichier si vous avez déterminé qu’il est propre après un examen. Exécutez la commande suivante sur chaque appareil sur lequel le fichier a été mis en quarantaine.
+Vous pouvez récupérer et supprimer un fichier de la quarantaine si vous avez déterminé qu’il est propre après un examen. Exécutez la commande suivante sur chaque appareil sur lequel le fichier a été mis en quarantaine.
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
 
@@ -158,7 +158,7 @@ Par défaut, vous devez être en mesure de télécharger les fichiers en quarant
 
 Les fichiers qui ont été mis en quarantaine par Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés conformément à vos [exemples de configurations d’envoi.](enable-cloud-protection-microsoft-defender-antivirus.md) Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité d’aperçu est « allumée » par défaut.**
 
-L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. En savoir plus sur la protection des données de Microsoft à partir du portail d’confiance des services sur https://aka.ms/STP .
+L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. En savoir plus sur la protection des données de Microsoft à partir du portail d’confiance des services à https://aka.ms/STP l’aide de .
 
 Si ce paramètre est allumé, les équipes de sécurité peuvent examiner les fichiers potentiellement dangereux et examiner les incidents rapidement et de manière moins risquée. Toutefois, si vous devez désactiver ce paramètre, Paramètres les fonctionnalités avancées des points de terminaison téléchargent les fichiers mis en quarantaine pour  >    >    >   ajuster le paramètre. [En savoir plus sur les fonctionnalités avancées](advanced-features.md)
 
@@ -178,7 +178,7 @@ Cette fonctionnalité ne fonctionne pas si l’envoi d’exemples est désactiv�
 
 ### <a name="collect-files"></a>Collecter des fichiers
 
-Si un fichier n’est pas déjà stocké par Microsoft Defender pour le point de terminaison, vous ne pouvez pas le télécharger. Au lieu de cela, vous verrez un bouton Collecter **le** fichier au même emplacement. Si un fichier n’a pas été vu dans l’organisation au cours des 30 derniers **jours,** le fichier de collecte est désactivé.
+Si un fichier n’est pas déjà stocké par Microsoft Defender pour le point de terminaison, vous ne pouvez pas le télécharger. Au lieu de cela, vous verrez un **bouton** Collecter le fichier au même emplacement. Si un fichier n’a pas été vu dans l’organisation au cours des 30 derniers **jours,** le fichier de collecte est désactivé.
 > [!Important]
 > Il est possible qu’un fichier mis en quarantaine comme menace réseau ne soit pas récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
 
@@ -188,7 +188,7 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 
 > [!IMPORTANT]
 >
-> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender protection cloud est activée. Pour plus d’informations, voir Gérer la [protection cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
+> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender protection cloud est activée. Pour plus d’informations, [voir Gérer la protection cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 >
 > - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure.
 > - Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables( PE), notamment les fichiers _.exe_ et _.dll_ portables. La couverture sera étendue au fil du temps.
@@ -202,7 +202,7 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 
 ### <a name="enable-the-block-file-feature"></a>Activer la fonctionnalité bloquer le fichier
 
-Pour commencer à bloquer les fichiers, vous devez d’abord [activer  ](advanced-features.md) la fonctionnalité Bloquer ou autoriser dans Paramètres.
+Pour commencer à bloquer des fichiers, vous devez d’abord [activer  ](advanced-features.md) la fonctionnalité Bloquer ou autoriser dans Paramètres.
 
 ### <a name="allow-or-block-file"></a>Autoriser ou bloquer un fichier
 

@@ -21,12 +21,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 9429a4fc5adc3447a0238a3e8aa84ab39585fc50
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2ea5db8cbd68a6c0dd600730fac408dc4bb75e2a
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394520"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664039"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
@@ -88,6 +88,7 @@ Les entreprises des pays suivants peuvent fournir leur numéro de TVA ou un équ
 - Suède
 - Suisse
 - Taïwan
+- Thaïlande
 - Turquie
 - Émirats arabes unis
 - Royaume-Uni
@@ -119,7 +120,7 @@ Vous pouvez être éligible à la TVA avec un taux de tva nul si :
 
 ## <a name="asia-pacific-countries-apac"></a>Pays d'Asie-Pacifique (APAC)
 
-Si vous êtes facturé par le bureau des ventes régionales de Microsoft, « Microsoft Regional Sales Pte. Ltd. » apparaît sur votre facture et vous pouvez être facturé pour toute valeur ajoutée, ventes ou taxes similaires applicables.
+Si vous êtes facturé par le bureau des ventes régionales de Microsoft, « Microsoft Regional Sales Pte. Ltd. » apparaît sur votre facture et vous pouvez être facturé pour toute valeur ajoutée applicable, ventes ou taxes similaires.
   
 Si vous êtes facturé à partir de l’un des emplacements suivants, la taxe locale actuelle est appliquée. L’emplacement est inclus [sur votre facture](view-your-bill-or-invoice.md):
   
@@ -155,7 +156,7 @@ Par exemple :
 
 >(1,29 $ X 0,095) X 100 = 12,25 $
 
-## <a name="apply-for-tax-exempt-status"></a>Demander l’exonération fiscale
+## <a name="apply-for-tax-exempt-status"></a>Demander l’état d’exonération fiscale
 
 Si vous êtes éligible à l’exonération fiscale sur votre marché, démarrez une demande de [service](../../business-video/get-help-support.md) pour établir le statut d’exonération fiscale pour votre organisation.
 
