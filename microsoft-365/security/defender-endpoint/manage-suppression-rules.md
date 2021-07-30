@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74b89d86b770cb47a0855b45d457ea8ce5fb9802
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: e55e4c78290d84393c06f0a58ef425bad5eb4dcc
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454756"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655946"
 ---
 # <a name="manage-suppression-rules"></a>Gérer des règles de suppression
 
@@ -32,10 +32,10 @@ ms.locfileid: "53454756"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans le portail. Vous pouvez créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation. Pour plus d’informations sur la suppression des alertes, voir [Supprimer des alertes.](manage-alerts.md)
+Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans le portail. Vous pouvez créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant anodins, telles que des outils ou des processus connus dans votre organisation. Pour plus d’informations sur la suppression des alertes, voir [Supprimer des alertes.](manage-alerts.md)
 
 Vous pouvez afficher la liste de toutes les règles de suppression et les gérer au même endroit. Vous pouvez également activer ou désactiver une règle de suppression d’alerte.
 

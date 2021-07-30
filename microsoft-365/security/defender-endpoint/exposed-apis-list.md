@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3f0f7a2b6a10c3469f0689419934fd8d19070999
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8154c144e82a38665f18ec35fdc8d49247ad75ca
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228626"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655742"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API prises en charge Microsoft Defender pour point de terminaison
 
@@ -30,7 +30,7 @@ ms.locfileid: "53228626"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="endpoint-uri-and-versioning"></a>URI et version des points de terminaison
 
@@ -64,8 +64,8 @@ Rubrique | Description
 [Méthodes et propriétés de l’alerte](alerts.md) | Exécutez des appels d’API tels \- que obtenir des alertes, créer une alerte, mettre à jour une alerte, etc.
 [Exporter les méthodes et propriétés d’évaluation par appareil](get-assessment-methods-properties.md) | Exécutez des appels d’API pour collecter des évaluations des vulnérabilités par appareil, telles que : exporter l’évaluation de la configuration sécurisée, exporter l’évaluation de l’inventaire logiciel, exporter l’évaluation des vulnérabilités logicielles et exporter delta l’évaluation des vulnérabilités \- logicielles.
 [Méthodes et propriétés d’investigation automatisée](investigation.md) | Exécutez des appels d’API tels \- que obtenir la collection d’examens.
-[Obtenir des alertes liées au domaine](get-domain-related-alerts.md) | Exécutez des appels d’API tels \- que l’get domain-related devices, domain statistics and more.
-[Soumettre des méthodes et propriétés](files.md) | Exécutez des appels d’API tels que obtenir des informations sur les fichiers, des alertes liées aux fichiers, des périphériques liés \- aux fichiers et des statistiques sur les fichiers.
+[Obtenir des alertes liées au domaine](get-domain-related-alerts.md) | Exécutez des appels d’API comme obtenir des appareils liés \- au domaine, des statistiques de domaine, etc.
+[Soumettre des méthodes et propriétés](files.md) | Exécutez des appels d’API tels que obtenir des informations sur les fichiers, des alertes liées aux fichiers, des \- périphériques liés aux fichiers et des statistiques sur les fichiers.
 [Méthodes et propriétés des indicateurs](ti-indicator.md) | Exécutez un appel d’API tel que obtenir des indicateurs, créer un \- indicateur et supprimer des indicateurs.
 [Obtenir des alertes liées à l’IP](get-ip-related-alerts.md) | Exécutez des appels d’API tels \- que l’get IP-related alerts and get IP statistics.
 [Méthodes et propriétés de l’ordinateur](machine.md) | Exécutez des appels d’API tels que obtenir des appareils, obtenir des appareils par ID, des informations sur les utilisateurs connectés, modifier des \- balises, etc.

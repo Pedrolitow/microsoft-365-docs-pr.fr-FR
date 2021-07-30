@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: af21b0ae3e03ebacae9412fc48693d57f32c81e6
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 15611500ae45f2406daf033d27b49de0e2cc3070
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568003"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656222"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Score d’exposition : Gestion des menaces et des vulnérabilités
 
@@ -35,7 +35,7 @@ ms.locfileid: "53568003"
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Votre score d’exposition est visible dans le tableau de bord Gestion des vulnérabilités [menaces](tvm-dashboard-insights.md) du portail Microsoft 365 Defender web. Il reflète la vulnérabilité de votre organisation aux menaces de cybersécurité. Un faible score d’exposition signifie que vos appareils sont moins vulnérables à l’exploitation.
 
@@ -47,13 +47,13 @@ La carte vous donne une vue générale de la tendance de votre score d’exposit
 
 ![Carte de score d’exposition](images/tvm_exp_score.png)
 
-## <a name="how-it-works"></a>Comment ça marche
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Le score d’exposition est décomposé selon les niveaux suivants :
 
-- 0 à 29 : score d’exposition faible
+- 0-29 : score d’exposition faible
 - 30-69 : score d’exposition moyen
-- 70–100 : score d’exposition élevé
+- 70-100 : score d’exposition élevé
 
 Vous pouvez résoudre les problèmes en vous basant sur des [recommandations](tvm-security-recommendation.md) de sécurité prioritaires pour réduire le score d’exposition. Chaque logiciel présente des faiblesses qui sont transformées en recommandations et hiérarchisées en fonction des risques pour l’organisation.
 

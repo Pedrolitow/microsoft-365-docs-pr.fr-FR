@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 21e44090cf21ac8bba29885a2f97242faf3e2164
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: 3b96bc33763ded81a760e3d0d0ba6459fa2b5857
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363966"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655586"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>Exemples de stratégies de contrôle d’appareil pour JAMF
 
@@ -33,13 +33,13 @@ ms.locfileid: "53363966"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Ce document contient des exemples de stratégies de contrôle d’appareil que vous pouvez personnaliser pour votre propre organisation. Ces exemples s’appliquent si vous utilisez JAMF pour gérer les appareils de votre entreprise.
 
 ## <a name="restrict-access-to-all-removable-media"></a>Restreindre l’accès à tous les médias amovibles
 
-L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations `none` sur les fichiers seront interdites.
+L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations sur `none` les fichiers seront interdites.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 

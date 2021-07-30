@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c471f2b0d88219ac04a1c64343c950604fec2183
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 4792489abf721993fe55dc642f132c51442c21a5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622507"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655538"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des appareils au service Microsoft Defender for Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "53622507"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Vous devez passer à la section d’intégration du portail Defender for Endpoint pour intégrer l’un des appareils pris en charge. En fonction de l’appareil, vous serez guidé avec les étapes appropriées et des options d’outils de gestion et de déploiement adaptées à l’appareil.
 
@@ -65,9 +65,9 @@ Rubrique|Description
 [Intégrer des versions antérieures de Windows](onboard-downlevel.md)|Intégrer Windows 7 et Windows 8.1 à Defender for Endpoint.
 [Intégrer des appareils Windows 10](configure-endpoints.md)|Vous devez intégrer des appareils pour qu’il signale au service Defender for Endpoint. Découvrez les outils et méthodes que vous pouvez utiliser pour configurer des appareils dans votre entreprise.
 [Serveurs intégrés](configure-server-endpoints.md)|Intégrer Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) version 1803 et ultérieures, Windows Server 2019 et versions ultérieures, et Windows Server 2019 core edition à Defender pour endpoint.
-[Intégrer des appareils non Windows](configure-endpoints-non-windows.md)|Defender pour le point de terminaison offre une expérience centralisée des opérations de sécurité pour Windows et les plateformes non Windows réseau. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Centre de sécurité Microsoft Defender et mieux protéger le réseau de votre organisation. Cette expérience tire parti des données de capteur d’un produit de sécurité tiers.
+[Intégrer des appareils non Windows](configure-endpoints-non-windows.md)|Defender pour le point de terminaison offre une expérience d’opérations de sécurité centralisée pour les Windows et les plateformes non Windows réseau. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Centre de sécurité Microsoft Defender et mieux protéger le réseau de votre organisation. Cette expérience tire parti des données de capteur d’un produit de sécurité tiers.
 [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md)|Exécutez un script sur un appareil nouvellement intégré pour vérifier qu’il est correctement signalé au service Defender for Endpoint.
 [Configurer les paramètres proxy et Internet](configure-proxy-internet.md)|Activez la communication avec le service cloud Defender for Endpoint en configurant les paramètres de proxy et de connectivité Internet.
 [Résoudre des problèmes d’intégration](troubleshoot-onboarding.md)|Découvrez comment résoudre les problèmes qui peuvent survenir lors de l’intégration.
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

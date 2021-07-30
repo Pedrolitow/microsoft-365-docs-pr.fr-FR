@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 2882ac239dd272839917ceae8de5fa31d07af3da
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 22c3235c5d381bc14bd40e474ef0b8a6452db7c2
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53663814"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656114"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personnaliser les règles de réduction de la surface d’attaque
 
@@ -54,7 +54,7 @@ Vous pouvez choisir d’exclure les fichiers et dossiers de l’évaluation par 
 
 Par exemple, prenons la règle de ransomware :
 
-La règle de ransomware est conçue pour aider les clients d’entreprise à réduire les risques d’attaques par ransomware tout en assurant la continuité de l’activité. Par défaut, les erreurs de règle de ransomware sont du côté de la précaution et protègent contre les fichiers qui n’ont pas encore atteint une réputation et une confiance suffisantes. Pour reéphaser, la règle de ransomware se déclenche uniquement sur les fichiers qui n’ont pas acquis une réputation et une prévalence positives suffisantes, en fonction des mesures d’utilisation de millions de nos clients. En règle générale, les blocs sont auto-résolus, car les valeurs « réputation et confiance » de chaque fichier sont mises à niveau de manière incrémentielle à mesure que l’utilisation non problématique augmente.
+La règle de ransomware est conçue pour aider les clients d’entreprise à réduire les risques d’attaques par ransomware tout en assurant la continuité de l’activité. Par défaut, les erreurs de règle de ransomware du côté de la prudence et la protection contre les fichiers qui n’ont pas encore atteint une réputation et une confiance suffisantes. Pour reéphaser, la règle de ransomware se déclenche uniquement sur les fichiers qui n’ont pas acquis une réputation et une prévalence positives suffisantes, en fonction des mesures d’utilisation de millions de nos clients. En règle générale, les blocs sont auto-résolus, car les valeurs « réputation et confiance » de chaque fichier sont mises à niveau de manière incrémentielle à mesure que l’utilisation non problématique augmente.
 
 Dans les cas où les blocs ne sont pas résolus en temps voulu, les clients peuvent, à leurs propres risques, utiliser le mécanisme en libre-service ou une fonctionnalité de « liste d’autoriser » basée sur l’indicateur de compromis (IOC) pour débloquer les fichiers eux-mêmes.   
 
@@ -72,19 +72,19 @@ Si vous rencontrez des problèmes avec des règles détectant des fichiers qui, 
 |:----|:----|
 | Bloquer l’utilisation abusive des pilotes signés vulnérables exploités | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
 | Empêcher Adobe Reader de créer des processus enfants | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| Empêcher toutes les applications Office de créer des processus enfants | `d4f940ab-401b-4efc-aadc-ad5f3c50688a` |
+| Empêcher toutes les applications Office de créer des processus enfants | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
-| Bloquer le contenu exécutable du client de messagerie et de la messagerie web | `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550` |
+| Bloquer le contenu exécutable du client de messagerie et de la messagerie web | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
 | Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à des critères de prévalence, d’âge ou de listes fiables | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| Bloquer l’exécution de scripts potentiellement obscurcis | `5beb7efe-fd9a-4556-801d-275e5ffc04cc` |
-| Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé | `d3e037e1-3eb8-44c8-a917-57927947596d` |
-| Empêcher Office applications de créer du contenu exécutable | `3b576869-a4ec-4529-8536-b80a7769e899` |
-| Empêcher Office applications d’injecter du code dans d’autres processus | `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84` |
+| Bloquer l’exécution de scripts potentiellement obscurcis | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
+| Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| Empêcher Office applications de créer du contenu exécutable | `3B576869-A4EC-4529-8536-B80A7769E899` |
+| Empêcher Office applications d’injecter du code dans d’autres processus | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
 | Empêcher Office applications de communication de créer des processus enfants | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
 | Bloquer la persistance via un abonnement à des événements WMI | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 | Bloquer les créations de processus provenant de commandes PSExec et WMI | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
 | Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| Bloquer les appels d’API Win32 à partir Office macro | `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b` |
+| Bloquer les appels d’API Win32 à partir Office macro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
 | Utiliser la protection avancée contre les ransomware | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
 
 Consultez la rubrique [réduction de la surface](attack-surface-reduction.md) d’attaque pour plus d’informations sur chaque règle.

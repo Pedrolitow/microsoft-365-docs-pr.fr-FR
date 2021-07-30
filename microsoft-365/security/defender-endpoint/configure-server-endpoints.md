@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73a602f9a8fbf9387708b1d0343315b7bc82617c
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: bb4a7a132cb096f53dcd0fa0f14d90dfb6dfbc39
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595869"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656126"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs d’accès au service Microsoft Defender for Endpoint
 
@@ -33,10 +33,10 @@ ms.locfileid: "53595869"
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server (SAC) version 1803 et ultérieure
-- Windows Server 2019 et ultérieur
+- Windows Server 2019 et les ultérieures
 - Windows Server 2019 Core Edition
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
 
 Defender for Endpoint étend la prise en charge pour inclure également le Windows d’exploitation Server. Cette prise en charge offre des fonctionnalités avancées de détection d’attaques et d’examens en toute transparence via Microsoft 365 Defender console.
 
@@ -61,7 +61,7 @@ Après avoir effectué les étapes d’intégration à l’aide de l’une des o
 
 Vous devez installer et configurer MMA pour que les serveurs Windows rapportent les données de capteur à Defender for Endpoint. Pour plus d’informations, voir [Collecter les données du journal avec l’agent Azure Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)
 
-Si vous utilisez déjà System Center Operations Manager (SCOM) ou Azure Monitor (anciennement Operations Management Suite (OMS), attachez le Microsoft Monitoring Agent (MMA) pour signaler à votre espace de travail Defender for Endpoint par le biais de la prise en charge multi-homing.
+Si vous utilisez déjà System Center Operations Manager (SCOM) ou Azure Monitor (anciennement Operations Management Suite (OMS), attachez le Microsoft Monitoring Agent (MMA) pour signaler à votre espace de travail Defender for Endpoint par le biais de la prise en charge de l’homing multiple.
 
 En règle générale, vous devez suivre les étapes suivantes :
 

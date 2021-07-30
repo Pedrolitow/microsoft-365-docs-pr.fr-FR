@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9f8d8fed0abd6140d7cddf46621dde82da0752e
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 8bca8fa3446bc3e078c992b537b30dfe70e73f65
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623143"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650018"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applications partenaires dans Microsoft Defender pour point de terminaison
 
@@ -33,7 +33,7 @@ ms.locfileid: "53623143"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender pour le point de terminaison prend en charge des applications tierces pour améliorer les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme.
 
@@ -103,7 +103,7 @@ Logo|Nom du partenaire|Description
 ![Image du logo Bitdefender](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone est une plateforme de protection de point de terminaison nouvelle génération en couches offrant une protection complète contre la gamme complète des cybermenaces sophistiquées
 ![Image du logo Better Mobile](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|Solution MTD basée sur l’IA pour arrêter les menaces mobiles & hameçonnage. Navigation internet privée pour protéger la confidentialité des utilisateurs
 ![Image du logo Corrata](images/corrata-logo.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|Solution mobile : protéger vos appareils mobiles avec une visibilité et un contrôle granulaires de Corrata
-![Image du logo De la recherche](images/lookout-logo.png)|[Point d’observation](https://go.microsoft.com/fwlink/?linkid=866935)|Obtenir la télémétrie Protection mobile contre les menaces de recherche pour les appareils mobiles Android et iOS
+![Image du logo De Point de garde](images/lookout-logo.png)|[Point d’observation](https://go.microsoft.com/fwlink/?linkid=866935)|Obtenir la télémétrie Protection mobile contre les menaces de recherche pour les appareils mobiles Android et iOS
 ![Image du logo Symantec Endpoint Protection Mobile](images/symantec-logo.png)|[Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)|SEP Mobile permet aux entreprises de prévoir, détecter et prévenir les menaces et vulnérabilités de sécurité sur les appareils mobiles
 ![Image du logo Zimperium](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Étendre votre defender pour point de terminaison à iOS et Android avec Machine Learning protection contre les menaces mobiles basée sur Machine Learning mobile
 
@@ -117,11 +117,11 @@ Logo|Nom du partenaire|Description
 
 ## <a name="siem-integration"></a>Intégration SIEM
 
-Defender pour point de terminaison prend en charge l’intégration SIEM par le biais de différentes méthodes. Cela peut inclure une interface système SIEM spécialisée avec des connecteurs standard, une API d’alerte générique activant des implémentations personnalisées et une API d’action activant la gestion de l’état des alertes.  Pour plus d’informations, voir [Activer l’intégration SIEM.](enable-siem-integration.md)
+Defender pour le point de terminaison prend en charge l’intégration SIEM par le biais de différentes méthodes. Cela peut inclure une interface système SIEM spécialisée avec des connecteurs standard, une API d’alerte générique activant des implémentations personnalisées et une API d’action activant la gestion de l’état des alertes.  Pour plus d’informations, voir [Activer l’intégration SIEM.](enable-siem-integration.md)
 
 ## <a name="ticketing-and-it-service-management"></a>Gestion des tickets et du service it
 
-L’intégration de solutions de gestion des tickets permet d’implémenter des processus de réponse manuelle et automatique. Defender pour le point de terminaison peut vous aider à créer automatiquement des tickets lorsqu’une alerte est générée et à résoudre les alertes lorsque les tickets sont fermés à l’aide de l’API d’alertes.
+L’intégration de solutions de gestion des tickets permet d’implémenter des processus de réponse manuelle et automatique. Defender for Endpoint peut vous aider à créer automatiquement des tickets lorsqu’une alerte est générée et à résoudre les alertes lorsque les tickets sont fermés à l’aide de l’API d’alertes.
 
 ## <a name="security-orchestration-and-automation-response-soar-integration"></a>Intégration de l’orchestration de sécurité et de la réponse d’automatisation (CASER)
 

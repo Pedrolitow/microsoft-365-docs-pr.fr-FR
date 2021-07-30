@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cdd188a58bd80885c90b87e3d42c999a2afd14c1
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 629bcd89fab59039f576d01d80f2ba3ef6f8ef78
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622819"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656378"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Intégration à l'aide de Microsoft Endpoint Manager
 
@@ -34,7 +34,7 @@ ms.locfileid: "53622819"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Cet article fait partie du guide de déploiement et agit comme un exemple de méthode d’intégration.
 
@@ -359,7 +359,7 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
     > [!div class="mx-imgBorder"]
     > [![Image du panneau Services2](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. Une fois que les services sont en cours d’exécution sur l’appareil, l’appareil apparaît dans le Centre de sécurité Microsoft Defender.
+3. Une fois que les services sont en cours d’exécution sur l’appareil, celui-ci apparaît dans le Centre de sécurité Microsoft Defender.
 
     > [!div class="mx-imgBorder"]
     > [![Image de la Centre de sécurité Microsoft Defender](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)

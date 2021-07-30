@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d18ff1a9e060bcc668dd5c52ffd67283539d29b6
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 408f28ab9e0b866d604ee43b303e3072f9c0bb77
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542200"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655622"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour Endpoint sur Linux
 
@@ -33,7 +33,7 @@ ms.locfileid: "53542200"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 La fonctionnalité de protection des applications potentiellement indésirables dans Defender for Endpoint sur Linux peut détecter et bloquer les fichiers PUA sur les points de terminaison de votre réseau.
 
@@ -41,11 +41,11 @@ Ces applications ne sont pas considérées comme des virus, des programmes malve
 
 Ces applications peuvent augmenter le risque d’infection de votre réseau par des programmes malveillants, rendre l’identification des programmes malveillants plus difficile et entraîner une perte de ressources informatiques lors du nettoyage des applications.
 
-## <a name="how-it-works"></a>Comment ça marche
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Defender pour le point de terminaison sur Linux peut détecter et signaler des fichiers PUA. Lorsqu’ils sont configurés en mode de blocage, les fichiers PUA sont placés en quarantaine.
 
-Lorsqu’une puA est détectée sur un point de terminaison, Defender for Endpoint sur Linux conserve un enregistrement de l’infection dans l’historique des menaces. L’historique peut être visualisé à partir du Microsoft 365 Defender centre de gestion ou via l’outil `mdatp` en ligne de commande. Le nom de la menace contient le mot « Application ».
+Lorsqu’une puA est détectée sur un point de terminaison, Defender for Endpoint sur Linux conserve un enregistrement de l’infection dans l’historique des menaces. L’historique peut être visualisé à partir du portail Microsoft 365 Defender ou via l’outil `mdatp` en ligne de commande. Le nom de la menace contient le mot « Application ».
 
 ## <a name="configure-pua-protection"></a>Configurer la protection PUA
 
@@ -70,7 +70,7 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>Utilisez la console de gestion pour configurer la protection PUA :
 
-Dans votre entreprise, vous pouvez configurer la protection PUA à partir d’une console de gestion, telle qu’Unetem ou Ansible, de la même manière que d’autres paramètres de produit sont configurés. Pour plus d’informations, voir la section [Paramètres du type](linux-preferences.md#threat-type-settings) de menace de l’article Définir les préférences de [Defender pour Endpoint sur Linux.](linux-preferences.md)
+Dans votre entreprise, vous pouvez configurer la protection PUA à partir d’une console de gestion, telle qu’Unetem ou Ansible, de la même manière que d’autres paramètres de produit sont configurés. Pour plus d’informations, voir la section [Paramètres](linux-preferences.md#threat-type-settings) du type de menace de l’article Définir les préférences de [Defender pour Endpoint sur Linux.](linux-preferences.md)
 
 ## <a name="related-articles"></a>Articles connexes
 

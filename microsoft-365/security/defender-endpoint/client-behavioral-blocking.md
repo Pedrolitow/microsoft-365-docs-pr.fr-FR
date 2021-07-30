@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 9a2fa36d7902c66e1ac40f0ecd07c0db38752e8d
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 890367fad441cf068ecd17f992075695dc035ec7
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567499"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656174"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 
@@ -32,11 +32,11 @@ ms.locfileid: "53567499"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Présentation
 
-Le blocage du comportement client est un composant [des](behavioral-blocking-containment.md) fonctionnalités de blocage et de blocage du comportement dans Defender pour point de terminaison. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement. 
+Le blocage du comportement client est un composant des fonctionnalités de blocage du comportement et de blocage [de](behavioral-blocking-containment.md) contenu dans Defender for Endpoint. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement. 
 
 :::image type="content" alt-text="Protection du cloud et du client" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
@@ -62,7 +62,7 @@ Les détections basées sur le comportement sont nommées en fonction de la matr
 |Réaffectation des privilèges | `Behavior:Win32/PrivilegeEscalation.*!ml` |
 |Fraude à la défense | `Behavior:Win32/DefenseEvasion.*!ml` |
 |Accès informations d'identification | `Behavior:Win32/CredentialAccess.*!ml` |
-|Discovery | `Behavior:Win32/Discovery.*!ml` |
+|Découverte | `Behavior:Win32/Discovery.*!ml` |
 |Mouvement latéral | `Behavior:Win32/LateralMovement.*!ml` |
 |Collection | `Behavior:Win32/Collection.*!ml` |
 |Commande et contrôle | `Behavior:Win32/CommandAndControl.*!ml` |

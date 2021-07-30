@@ -1,6 +1,6 @@
 ---
 title: Ressources pour Microsoft Defender pour point de terminaison sur Mac
-description: Ressources pour Microsoft Defender pour le point de terminaison sur Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
+description: Ressources pour Microsoft Defender pour point de terminaison sur Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,23 +18,23 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fa5d5b4470644e1ff50af46a8dd3f035cd9b3184
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2a4d588e869fed684c4424578025a50d36a2280e
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842865"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650414"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="collecting-diagnostic-information"></a>Collecte d’informations de diagnostic
 
@@ -77,7 +77,7 @@ Si vous pouvez reproduire un problème, augmentez le niveau de journalisation, e
 
 ## <a name="logging-installation-issues"></a>Journalisation des problèmes d’installation
 
-Si une erreur se produit pendant l’installation, le programme d’installation signale uniquement un échec général.
+Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
 
 Le journal détaillé sera enregistré dans `/Library/Logs/Microsoft/mdatp/install.log` . Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
 
@@ -105,7 +105,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Configuration|Activer/désactiver l’envoi automatique d’échantillons    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
 |Configuration|Ajouter un nom de menace à la liste autorisée      |`mdatp threat allowed add --name [threat-name]`                                   |
 |Configuration|Supprimer un nom de menace de la liste autorisée |`mdatp threat allowed remove --name [threat-name]`                                |
-|Configuration|Liste de tous les noms de menaces autorisés              |`mdatp threat allowed list`                                                       |
+|Configuration|Liste de tous les noms de menace autorisés              |`mdatp threat allowed list`                                                       |
 |Configuration|Activer la protection PUA                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
 |Configuration|Désactiver la protection PUA                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
 |Configuration|Activer le mode audit pour la protection PUA      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
@@ -118,7 +118,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Protection   |Faire une analyse rapide                            |`mdatp scan quick`                                                                |
 |Protection   |Faire une analyse complète                             |`mdatp scan full`                                                                 |
 |Protection   |Annuler une analyse à la demande en cours           |`mdatp scan cancel`                                                               |
-|Protection   |Demander une mise à jour des informations de sécurité     |`mdatp definitions update`                                                        |
+|Protection   |Demander une mise à jour de l’intelligence de la sécurité     |`mdatp definitions update`                                                        |
 |PEPT          |Ajouter une balise de groupe à l’appareil. PEPT balises sont utilisées pour gérer les groupes d’appareils. Pour plus d’informations, visitez /microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |PEPT          |Supprimer une balise de groupe de l’appareil               |`mdatp edr tag remove --tag-name [name]`                                          |
 |PEPT          |Ajouter un ID de groupe                               |`mdatp edr group-ids --group-id [group]`                                          |
@@ -160,4 +160,4 @@ Pour activer lacompletion automatique dans zsh :
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Informations du portail Microsoft Defender pour les points de terminaison
 
-PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sont désormais arrivées, sur le blog Microsoft Defender pour point de terminaison, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans Microsoft Defender pour le Centre de sécurité des points de terminaison.
+PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sont désormais arrivées, sur le blog Microsoft Defender pour endpoint, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans le Centre de sécurité Microsoft Defender pour Endpoint.

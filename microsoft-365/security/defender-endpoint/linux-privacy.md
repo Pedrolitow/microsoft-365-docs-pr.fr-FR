@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3eb4ebbf9da14e90e812eb28f58ba262a218b207
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 81b4ba1982f44a4161b187bfd9a57832e0b3bcb5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622879"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656402"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -31,13 +31,13 @@ ms.locfileid: "53622879"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft s’engage à vous fournir les informations et les contrôles dont vous avez besoin pour faire des choix sur la façon dont vos données sont collectées et utilisées lorsque vous utilisez Defender pour Endpoint sur Linux.
 
 Cette rubrique décrit les contrôles de confidentialité disponibles dans le produit, comment gérer ces contrôles avec des paramètres de stratégie et plus d’informations sur les événements de données collectés.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour Endpoint sur Linux
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour Point de terminaison sur Linux
 
 Cette section décrit les contrôles de confidentialité pour les différents types de données collectées par Defender pour Endpoint sur Linux.
 
@@ -135,7 +135,7 @@ Les champs suivants sont affichés :
 | cloud_service.service_uri                           | URI utilisé pour communiquer avec le cloud. |
 | cloud_service.diagnostic_level                      | Niveau de diagnostic de l’appareil (obligatoire, facultatif). |
 | cloud_service.automatic_sample_submission           | Niveau d’envoi automatique d’échantillons de l’appareil (aucun, sécurisé, tout). |
-| cloud_service.automatic_definition_update_enabled   | Si la mise à jour automatique des définitions est ou non. |
+| cloud_service.automatic_definition_update_enabled   | Si la mise à jour automatique des définitions est ou non allumée. |
 | edr.early_preview                                   | Si l’appareil doit s’PEPT fonctionnalités de prévisualisation anticipée. |
 | edr.group_id                                        | Identificateur de groupe utilisé par le composant de détection et de réponse. |
 | edr.tags                                            | Balises définies par l’utilisateur. |
@@ -143,7 +143,7 @@ Les champs suivants sont affichés :
 
 #### <a name="product-and-service-usage-data-events"></a>Événements de données liés à l'utilisation des produits et services
 
-**Rapport de mise à jour de l’intelligence de la sécurité**
+**Rapport de mise à jour des informations de sécurité**
 
 Les champs suivants sont affichés :
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4e95cd275b1bcc5629619c948e56680b73bc7336
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 7f12c49d42b957549552cf05bb811c20de0418bb
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596241"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655802"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Indicateurs d’événement de chronologie de l’appareil microsoft Defender pour point de terminaison
 
@@ -30,7 +30,7 @@ ms.locfileid: "53596241"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Les indicateurs d’événement dans la chronologie de l’appareil Defender for Endpoint vous aident à filtrer et à organiser des événements spécifiques lorsque vous examinez des attaques potentielles.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 48cfbd3b895579ccf92cb7e9f21dbedf87d599d4
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: d04ce84d49b1ba059c1bd9550a2894ba13296525
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595905"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655838"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Obtenir des appareils intégrés à Microsoft Defender pour le point de terminaison
 
@@ -31,7 +31,7 @@ ms.locfileid: "53595905"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Chaque appareil intégré ajoute un capteur protection évolutive des points de terminaison (PEPT) et augmente la visibilité sur l’activité de violation dans votre réseau. L’intégration garantit également qu’un appareil peut être vérifié pour les composants vulnérables ainsi que les problèmes de configuration de sécurité et peut recevoir des actions de correction critiques pendant les attaques.
 
@@ -62,7 +62,7 @@ Defender pour le point de terminaison fournit plusieurs options pratiques pour [
 *Page de conformité des appareils Microsoft Defender for Endpoint sur la gestion des appareils Intune*
 
 > [!TIP]
-> Vous pouvez également accéder à la page de conformité d’intégration defender pour point de terminaison dans le portail [Microsoft Azure](https://portal.azure.com/) à partir de Tous les **services > Intune > Conformité** des appareils > Microsoft Defender ATP .
+> Vous pouvez également accéder à la page de conformité de l’intégration de Defender for Endpoint dans le portail [Microsoft Azure](https://portal.azure.com/) à partir de Tous les **services > Intune > Conformité** des appareils > Microsoft Defender ATP .
 
 > [!NOTE]
 > Si vous souhaitez afficher les données d’appareil les plus récentes, cliquez sur Liste des appareils sans **capteur ATP.**
@@ -74,7 +74,7 @@ Defender pour le point de terminaison fournit plusieurs options pratiques pour [
 
 Pour plus d’informations, découvrez l’utilisation des profils de configuration d’appareil Intune pour intégrer des [appareils à Defender for Endpoint.](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>Voir aussi
 

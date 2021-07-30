@@ -18,22 +18,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a93ea3427c72eb5529715b92cb18d01462493cc6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9ec708ee24d33765203730412ddfc7eea5cc2e37
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842853"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650354"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Planifier des analyses avec Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Bien que vous pouvez démarrer une analyse des menaces à tout moment avec Microsoft Defender pour le point de terminaison, votre entreprise peut bénéficier d’analyses programmées ou programmées. Par exemple, vous pouvez planifier une analyse à exécuter au début de chaque jour ou semaine de travail. 
 
@@ -41,9 +41,13 @@ Bien que vous pouvez démarrer une analyse des menaces à tout moment avec Micro
 
 Vous pouvez créer une planification d’analyse à l’aide du *daemon* lancé sur un appareil macOS.
 
-1. Le code suivant montre le schéma que vous devez utiliser pour planifier une analyse. Ouvrez un éditeur de texte et utilisez cet exemple comme guide pour votre propre fichier d’analyse programmé.
+Pour plus d’informations sur le format [](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) de fichier *.plist* utilisé ici, voir à propos des fichiers de liste de propriétés d’informations sur le site web officiel du développeur Apple.
 
-    Pour plus d’informations sur le format [](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) de fichier *.plist* utilisé ici, voir à propos des fichiers de liste de propriétés d’informations sur le site web officiel du développeur Apple.
+### <a name="schedule-a-quick-scan"></a>Planifier une analyse rapide
+
+Le code suivant montre le schéma que vous devez utiliser pour planifier une analyse rapide. 
+
+1. Ouvrez un éditeur de texte et utilisez cet exemple comme guide pour votre propre fichier d’analyse programmé.
 
     ```XML
     <?xml version="1.0" encoding="UTF-8"?>
@@ -80,18 +84,56 @@ Vous pouvez créer une planification d’analyse à l’aide du *daemon* lancé 
 
 2. Enregistrez le fichier *sous com.microsoft.wdav.schedquickscan.plist*.
 
-    > [!TIP]
-    > Pour exécuter une analyse complète au lieu d’une analyse rapide, modifiez la ligne 12, pour utiliser l’option au lieu (c’est-à-dire) et enregistrez le fichier sous le nom `<string>/usr/local/bin/mdatp scan quick</string>` `full` `quick` `<string>/usr/local/bin/mdatp scan full</string>` *com.microsoft.wdav.sched **full** scan.plist* au lieu de *com.microsoft.wdav.sched **quick** scan.plist*.
+### <a name="schedule-a-full-scan"></a>Planifier une analyse complète
 
-3. Ouvrez **terminal**.
-4. Entrez les commandes suivantes pour charger votre fichier :
+1. Ouvrez un éditeur de texte et utilisez cet exemple pour une analyse complète.
+
+    ```XML
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+      "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>com.microsoft.wdav.schedfullscan</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>sh</string>
+            <string>-c</string>
+            <string>/usr/local/bin/mdatp scan full</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>StartCalendarInterval</key>
+        <dict>
+            <key>Day</key>
+            <integer>3</integer>
+            <key>Hour</key>
+            <integer>2</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+            <key>Weekday</key>
+            <integer>5</integer>
+        </dict>
+        <key>WorkingDirectory</key>
+        <string>/usr/local/bin/</string>
+    </dict>
+    </plist>
+     ```
+
+2. Enregistrez le fichier *sous com.microsoft.wdav.schedfullscan.plist*.
+ 
+### <a name="load-your-file"></a>Charger votre fichier
+
+1. Ouvrez **terminal**.
+2. Entrez les commandes suivantes pour charger votre fichier :
 
     ```bash
     launchctl load /Library/LaunchDaemons/<your file name.plist>
     launchctl start <your file name>
     ```
 
-5. Votre analyse programmée s’exécutera à la date, à l’heure et à la fréquence que vous avez définies dans votre liste p. Dans l’exemple, l’analyse s’exécute à 02:00 tous les vendredis. 
+3. Votre analyse programmée s’exécutera à la date, à l’heure et à la fréquence que vous avez définies dans votre liste p. Dans les exemples ci-dessus, l’analyse s’exécute à 02:00 tous les vendredis. 
 
     La `Weekday` valeur `StartCalendarInterval` d’utilise un nombre integer pour indiquer le cinquième jour de la semaine ou le vendredi.
 
@@ -102,6 +144,6 @@ Vous pouvez créer une planification d’analyse à l’aide du *daemon* lancé 
 
 ## <a name="schedule-a-scan-with-intune"></a>Planifier une analyse avec Intune
 
-Vous pouvez également planifier des analyses avec Microsoft Intune. Le [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible dans [scripts pour Microsoft Defender pour](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) le point de terminaison est persistant lorsque l’appareil reprend le mode veille. 
+Vous pouvez également planifier des analyses avec Microsoft Intune. Le [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible dans [scripts pour Microsoft Defender pour le](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) point de terminaison est persistant lorsque l’appareil reprend du mode veille. 
 
 Voir Utiliser des scripts shell sur les appareils macOS dans [Intune](/mem/intune/apps/macos-shell-scripts) pour obtenir des instructions plus détaillées sur l’utilisation de ce script dans votre entreprise.

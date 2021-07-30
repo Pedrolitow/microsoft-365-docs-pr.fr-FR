@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents d’un jeu à réviser dans un cas Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: e1c81a572e74b965842d9b6888c9242b73a822c5
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 4c9fe8713d1953719f614dfa4b8b85ec64a63eab
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543640"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655490"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 
@@ -31,42 +31,46 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 
 - **Nom du champ utilisable dans une recherche :** Nom de la propriété que vous pouvez rechercher lors de l’exécution d’une requête [de jeu à réviser.](review-set-search.md) Une cellule vide signifie que vous ne pouvez pas rechercher le champ dans une requête de jeu à réviser.
 
-- **Nom du champ exporté :** Nom du champ de métadonnées inclus lors de l’exportation des documents.  Une cellule vide signifie que le champ n’est pas inclus dans les métadonnées exportées.
+- **Nom du champ exporté :** Nom du champ de métadonnées inclus lors de l’exportation des documents.  Une cellule vide signifie que le champ n’est pas inclus avec les métadonnées exportées.
 
 - **Description :** Description du champ de métadonnées.
 
 > [!NOTE]
-> Le **champ Mots clés dans** la recherche de jeu à [réviser](./review-set-search.md) utilise le langage KQL (Keyword Query Language). Les champs répertoriés  dans la colonne Nom de  champ utilisable dans une recherche peuvent être utilisés dans le champ Mots clés d’une recherche de jeu à réviser pour former des requêtes complexes sans que vous n’avez à utiliser le générateur de requêtes. Pour plus d’informations sur KQL, consultez la référence de syntaxe du langage de [requête de mot clé.](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+> Le **champ Mots clés dans** la recherche de jeu à [réviser](./review-set-search.md) utilise le langage KQL (Keyword Query Language). Les champs répertoriés  dans la colonne Nom de  champ utilisable dans une recherche peuvent être utilisés dans le champ Mots clés d’une recherche de jeu à réviser pour former des requêtes complexes sans que vous n’avez à utiliser le générateur de requêtes. Pour plus d’informations sur KQL, consultez la référence [de la syntaxe du langage](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)de requête de mot clé.
 
-|**Nom du champ** et **nom de champ d’affichage**|**Nom du champ utilisable dans une recherche**|**Nom du champ exporté**|**Description**|
-|:-----|:-----|:-----|:-----|
+<br>
+
+****
+
+|Nom du champ et nom du champ d’affichage|Nom du champ utilisable dans une recherche|Nom du champ exporté|Description|
+|---|---|---|---|
 |ID de contenu de pièce jointe|AttachmentContentId||ID de contenu de pièce jointe de l’élément.|
 |Score de privilège client avocat|AttorneyClientPrivilegeScore||Score de contenu du modèle de privilège client-avocat.|
 |Auteur|Auteur|Doc_authors|Auteur à partir des métadonnées du document.|
-|Cci|Cci|Email_bcc|Champ Bcc pour les types de messages. Le format **est \<SMTPAddress> DisplayName**.|
-|Cc|Cc|Email_cc|Champ Cc pour les types de messages. Le format **est \<SMTPAddress> DisplayName**.|
+|Cci|Cci|Email_bcc|Champ Bcc pour les types de messages. Le format **est \<SMTPAddress\> DisplayName**.|
+|Cc|Cc|Email_cc|Champ Cc pour les types de messages. Le format **est \<SMTPAddress\> DisplayName**.|
 |Étiquettes de conformité|ComplianceLabels|Compliance_labels|[Étiquettes de rétention](retention.md) appliquées au contenu Office 365.|
 |Chemin composé|CompoundPath|Compound_path|Chemin lisible par l’homme qui décrit la source de l’élément.|
 |Content*|Contenu||Texte extrait de l’élément.|
 |Corps de la conversation|Corps de la conversation||Corps de conversation de l’élément.|
-|Conversation ID|ConversationId|Conversation_ID|ID de conversation du message. Pour Teams 1:1 et les conversations de groupe, tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même ID de conversation. Pour plus d’informations, [voir Advanced eDiscovery flux de travail pour le contenu Microsoft Teams](teams-workflow-in-advanced-ediscovery.md). |
+|Conversation ID|ConversationId|Conversation_ID|ID de conversation du message. Pour Teams 1:1 et les conversations de groupe, tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même ID de conversation. Pour plus d’informations, [voir Advanced eDiscovery flux de travail pour le contenu Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Conversation Index||Conversation_index|Index de conversation du message.|
-|Nom de la conversation | |ConversationName|Nom du canal dans Teams. Le format du nom dépend du type de canal : <br/>Teams conversations de canal privé et de canal privé : <d’équipe, nom du canal> <br/>Teams 1:1 et conversations de groupe : nom d’affichage et adresse e-mail de tous les participants à la conversation<br/>Yammer communauté : Community nom + 120 premiers chars d’un billet<br/>Yammer privé : nom de l’expéditeur et adresse e-mail + 120 premiers chars d’un message|
+|Nom de la conversation||ConversationName|Nom du canal dans Teams. Le format du nom dépend du type de canal : <br>Teams conversations de canal privé et de canal privé :\<Name of team, name of channel\> <br>Teams 1:1 et conversations de groupe : nom d’affichage et adresse e-mail de tous les participants à la conversation<br>Yammer communauté : Community nom + 120 premiers chars d’un billet<br>Yammer privé : nom de l’expéditeur et adresse e-mail + 120 premiers chars d’un message|
 |Heure pdf de la conversation|ConversationPdfTime||Date de création de la version PDF de la conversation.|
 |Temps de redéaction de conversation|ConversationRedaction PleinTime||Date à laquelle la version PDF de la conversation a été créée pour la conversation.|
 |Conversation Topic|Conversation Topic||Rubrique de conversation de l’élément.|
-|Conversation Type| ConversationType|ConversationType| Type de conversation. Les valeurs sont les suivantes : <br/> Teams 1:1 et les conversations de groupe et toutes les conversations Yammer: **Groupe** pour<br/>Teams et les canaux privés : **Canal**|
-|Contient un message modifié |ContainsEditedMessage|ContainsEditedMessage|Indique si la transcription Teams conversation inclut un message modifié
+|Conversation Type|ConversationType|ConversationType|Type de conversation. Les valeurs sont les suivantes : <br> Teams 1:1 et les conversations de groupe et toutes les conversations Yammer: **Groupe** pour<br>Teams et les canaux privés : **Canal**|
+|Contient un message modifié|ContainsEditedMessage|ContainsEditedMessage|Indique si la transcription Teams conversation inclut un message modifié
 |||Converted_file_path|Chemin d’accès du fichier d’exportation converti. Pour une utilisation interne à Microsoft uniquement.|
 |Consignataire|Consignataire|Consignataire|Nom du dépositaire à qui l’élément a été associé.|
-|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<br /><br />Courrier électronique : date d’envoi<br />Pièces jointes : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br />Documents incorporés : date de la dernière modification du document ; si elle n’est pas disponible, date de la dernière modification du parent<br />Documents SPO (pièces jointes modernes) : SharePoint date de dernière modification ; si non disponible, date de la dernière modification des documents<br />Documents non Office 365 : Date de la dernière modification<br />Réunions : date de début de la réunion<br />Messagerie vocale : date d’envoi<br />Messagerie instantanée : date d’envoi<br />Teams : date d’envoi|
+|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>Courrier électronique : date d’envoi<br>Pièces jointes : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>Documents incorporés : date de la dernière modification du document ; si elle n’est pas disponible, date de la dernière modification du parent<br>Documents SPO (pièces jointes modernes) : SharePoint date de dernière modification ; si elle n’est pas disponible, date de la dernière modification des documents<br>Documents non Office 365 : date de dernière modification<br>Réunions : date de début de la réunion<br>Messagerie vocale : date d’envoi<br>Messagerie instantanée : date d’envoi<br>Teams : date d’envoi|
 |Commentaires sur le document|DocComments|Doc_comments|Commentaires des métadonnées du document.|
 |Société de documents||Doc_company|Société à partir des métadonnées du document.|
 |Date de création du document|CreatedTime|Doc_date_created|Créer une date à partir des métadonnées du document.|
 |DocIndex*|||Index de la famille. **-1 ou** **0 signifie** qu’il s’agit de la racine.|
 |Mots clés de document||Doc_keywords|Mots clés des métadonnées du document.|
 |Document modifié par||Doc_modified_by|Date de la dernière modification à partir des métadonnées du document.|
-|Révision de document|Doc_Version|Doc_Version|Révision à partir des métadonnées du document.|
+|Révision du document|Doc_Version|Doc_Version|Révision à partir des métadonnées du document.|
 |Objet du document||Doc_subject|Objet des métadonnées du document.|
 |Modèle de document||Doc_template|Modèle à partir des métadonnées du document.|
 |DocLastSavedBy||Doc_last_saved_by|Nom de l’utilisateur qui a enregistré le document pour la dernière fois.|
@@ -83,15 +87,15 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Sécurité du courrier électronique|EmailSecurity|Email_security|Paramètre de sécurité du message : **0** - Aucun ; **1** - Signé ; **2** : chiffré ; **3** : chiffré et signé.|
 |Sensibilité de l’e-mail|EmailSensitivity|email_sensitivity|Paramètre de sensibilité du message : **0** - Aucun ; **1** Personnel ; **2** - Privé ; **3** - CompanyConfidential.|
 |Ensemble de messages électroniques|EmailSet|Email_set|ID de groupe pour tous les messages dans le même ensemble de messages électroniques.|
-|EmailThread*||Email_thread|Position du message dans l’ensemble de messages électroniques ; se compose d’ID de nœud de la racine au message actuel et est séparé par des point (.).|
+|EmailThread*||Email_thread|Position du message dans l’ensemble de messages électroniques ; se compose d’ID de nœud de la racine au message actuel et est séparé par des périodes (.).|
 |||Export_native_path|Chemin d’accès du fichier exporté.|
 |Type de contenu extrait||Native_type|Type de contenu extrait, sous la forme de type mime ; par exemple, **image/jpeg**|
 |||Extracted_text_path|Chemin d’accès au fichier texte extrait dans l’exportation.|
 |ExtractedTextLength*||Extracted_text_length|Nombre de caractères dans le texte extrait.|
 |FamilyDuplicateSet*||Family_duplicate_set|Identificateur numérique pour les familles qui sont des doublons exacts les uns des autres (même contenu et toutes les mêmes pièces jointes).|
-|ID de famille|FamilyId|Family_ID|Rassemble les pièces jointes et les éléments extraits des e-mails et des conversations avec son élément parent. Cela inclut la conversation ou l’e-mail, ainsi que toutes les pièces jointes et éléments extraits.|
+|ID de famille|FamilyId|Family_ID|Rassemble les pièces jointes et les éléments extraits des e-mails et conversations avec son élément parent. Cela inclut la conversation ou l’e-mail, ainsi que toutes les pièces jointes et éléments extraits.|
 |Taille de la famille||Family_size|Nombre de documents de la famille.|
-|Classe de fichier|FileClass|File_class|Pour le contenu de SharePoint et OneDrive : **Document**. <br/>Pour le contenu de Exchange : **e-mail** ou **pièce jointe**. <br/>Pour le contenu de Teams ou Yammer : **Conversations**. |
+|Classe de fichier|FileClass|File_class|Pour le contenu de SharePoint et OneDrive : **Document**. <br>Pour le contenu de Exchange : **e-mail** ou **pièce jointe**. <br>Pour le contenu de Teams ou Yammer : **Conversations**.|
 |ID de fichier|FileId|File_ID|Identificateur de document unique dans le cas.|
 |Date de création du système de fichiers||File_system_date_created|Date de création à partir du système de fichiers (s’applique uniquement aux données non Office 365 données).|
 |Date de modification du système de fichiers||File_system_date_modified|Date de modification à partir du système de fichiers (s’applique uniquement aux données Office 365 non modifiées).|
@@ -105,28 +109,28 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |In Reply To Id||In_reply_to_ID|En réponse à l’ID du message.|
 |InputFileExtension||Original_file_extension|Extension de fichier d’origine du fichier.|
 |InputFileID||Input_file_ID|ID de fichier de l’élément de niveau supérieur dans le jeu à réviser. Pour une pièce jointe, cet ID sera l’ID du parent. Cela peut être utilisé pour grouper des familles.|
-|Pièce jointe moderne| IsModernAttachment|  |Ce fichier est une pièce jointe moderne ou un fichier lié.|
-|Est à partir de la version du document | IsFromDocumentVersion |  |Le document actuel est issu d’une version différente d’un autre document.|
-|Est-ce que la pièce jointe est un e- | IsEmailAttachment|  |Cet élément est issu d’une pièce jointe à un e-mail qui apparaît comme un élément joint au message.|
-|Pièce jointe inline| IsInlineAttachment|  |Cette ligne a été jointe et apparaît dans le corps du message.|
+|Pièce jointe moderne|IsModernAttachment||Ce fichier est une pièce jointe moderne ou un fichier lié.|
+|Est à partir de la version du document|IsFromDocumentVersion||Le document actuel est issu d’une version différente d’un autre document.|
+|Est-ce que la pièce jointe est un e-|IsEmailAttachment||Cet élément est issu d’une pièce jointe à un e-mail qui apparaît comme un élément joint au message.|
+|Pièce jointe inline|IsInlineAttachment||Cette ligne a été jointe et apparaît dans le corps du message.|
 |Est représentatif|IsRepresentative|Is_representative|Un document dans chaque ensemble de doublons exacts est marqué comme représentant.|
 |Classe de l’élément|ItemClass|Item_class|Classe d’élément fournie par le serveur Exchange ; par exemple, **IPM. Remarque**|
 |Dernière modification|LastModifiedDate|Doc_date_modified|Date de la dernière modification à partir des métadonnées du document.|
 |ID de chargement|LoadId|Load_ID|ID du jeu de chargement dans lequel l’élément a été ajouté à un jeu à réviser.|
-|Emplacement|Emplacement|Emplacement|Chaîne qui indique le type d’emplacement d’origine des documents.<br /><br />**Données importées** : données non Office 365 données<br />**Teams** - Microsoft Teams<br />**Exchange** - boîtes aux lettres Exchange boîtes aux lettres<br />**SharePoint** - SharePoint sites<br />**OneDrive** - OneDrive comptes|
+|Emplacement|Emplacement|Emplacement|Chaîne qui indique le type d’emplacement d’origine des documents.<p>**Données importées** : données non Office 365 données<br>**Teams** - Microsoft Teams<br>**Exchange** - boîtes aux lettres Exchange boîtes aux lettres<br>**SharePoint** - SharePoint sites<br>**OneDrive** - OneDrive comptes|
 |Nom de l’emplacement|LocationName|Location_name|Chaîne qui identifie la source de l’élément. Pour exchange, il s’adressera à l’adresse SMTP de la boîte aux lettres . pour SharePoint et OneDrive, l’URL de la collection de sites.|
 |||Marked_as_pivot|Ce fichier est le tableau croisé dynamique d’un jeu quasiment en double.|
 |Marqué comme représentant|MarkAsRepresentative||Un document de chaque ensemble de doublons exacts est marqué comme représentant.|
 |Date de fin de réunion|MeetingEndDate|Meeting_end_date|Date de fin de réunion pour les réunions.|
 |Date de début de la réunion|MeetingStartDate|Meeting_start_date|Date de début de réunion pour les réunions.|
-|Type de message|MessageKind|Message_kind|Type de message à rechercher. Valeurs possibles : documents de contacts e-mail **<br /> <br /> <br /> <br /> <br /> externaldata <br /> faxes <br /> im <br /> journals <br /> meetings <br /> microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br /> notes posts <br /> <br /> rssfeeds <br /> tasks <br /> voicemail**| 
+|Type de message|MessageKind|Message_kind|Type de message à rechercher. Valeurs possibles : documents contacts e-mail **<p> <br> <br> <br> externaldata <br> faxes <br> im <br> <br> journals meetings <br> microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br> notes posts <br> <br> rssfeeds <br> tasks <br> voicemail**|
 |ID parent de pièce jointe moderne||ModernAttachment_ParentId|ID non permutable du parent du document.|
 |Native Extension|NativeExtension|Native_extension|Extension native de l’élément.|
 |Nom de fichier natif|NativeFileName|Native_file_name|Nom de fichier natif de l’élément.|
 |NativeMD5||Native_MD5|Hachage MD5 (valeur de hachage 128 bits) du flux de fichier.|
 |NativeSHA256||Native_SHA_256|Hachage SHA256 (valeur de hachage 256 bits) du flux de fichier.|
 |Tri ND/ET : exclusion des pièces jointes|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concaténation de l’ensemble de threads de messagerie (ET) et du jeu de quasi-doublons (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET.|
-|Tri ND/ET : y compris les pièces jointes|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’un ensemble de threads de messagerie (ET) et d’un jeu de threads quasi-dupliqués (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET. Chaque élément de courrier électronique d’un ensemble ET est suivi de ses pièces jointes appropriées.|
+|Tri ND/ET : inclure les pièces jointes|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’un ensemble de threads de messagerie (ET) et d’un jeu de threads quasi-dupliqués (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET. Chaque élément de courrier électronique d’un ensemble ET est suivi de ses pièces jointes appropriées.|
 |Jeu de quasi-doublons||ND_set|Les éléments similaires au document pivot partagent la même ND_set.|
 |Auteurs O365||O365_authors|Auteur à partir SharePoint.|
 |O365 créé par||O365_created_by|Créé à partir de SharePoint.|
@@ -158,12 +162,12 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Expéditeur|Expéditeur|Email_sender|Champ Expéditeur (De) pour les types de messages. Le format **est \<SmtpAddress> DisplayName**.|
 |Sender/Author|SenderAuthor||Champ calculé composé de l’expéditeur ou de l’auteur de l’élément.|
 |Domaine de l’expéditeur|SenderDomain|Email_sender_domain|Domaine de l’expéditeur.|
-|Sent|Sent|Email_date_sent|Date d’envoi du message.<br/>Conversations : date de début à partir de la transcription|
+|Sent|Sent|Email_date_sent|Date d’envoi du message.<br>Conversations : date de début à partir de la transcription|
 |Définir l’ordre : premier inclus|SetOrderInclusivesFirst|Set_order_inclusives_first|Champ de tri - courrier électronique et pièces jointes : contre-chronologique ; documents : s’pivoter d’abord en descendant le score de similarité.|
 |Définir l’ID||Set_ID|Les documents de contenu similaire (ND_set) ou de courrier électronique dans le même thread de messagerie (Email_set) partagent la même Set_ID.|
 |SimilarityPercent||Similarity_percent|Indique à quel point un document est similaire au tableau croisé dynamique du jeu en double proche.|
 |Taille de fichier native|Size|Native_size|Nombre d’octets de l’élément natif.|
-|Subject|Subject|Email_subject|Objet du message.|
+|Sujet|Sujet|Email_subject|Objet du message.|
 |Objet/Titre|SubjectTitle||Champ calculé composé de l’objet ou du titre de l’élément.|
 |Balises|Balises|Balises|Balises appliquées dans un jeu à réviser.|
 |Teams Nom du canal|TeamsChannel|Channel_Name|Nom du canal dans Microsoft Teams.|

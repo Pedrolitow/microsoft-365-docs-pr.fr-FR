@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: abcfa00f13857fa5b3fcd83a2e4ee073c6143540
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621834"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656306"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>Configurer les Centre de sécurité Microsoft Defender de configuration
 
@@ -31,7 +31,7 @@ ms.locfileid: "53621834"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
 Utilisez le menu **Paramètres** pour modifier les paramètres généraux, les fonctionnalités avancées, activer l’expérience d’aperçu, les notifications par courrier électronique et la fonctionnalité d’intelligence contre les menaces personnalisée.
 
@@ -43,5 +43,5 @@ Paramètres généraux | Modifiez vos paramètres généraux précédemment déf
 Autorisations | Gérer l’accès au portail à l’aide de RBAC ainsi que des groupes d’appareils.
 API | Activez l’intégration intel contre les menaces et SIEM.
 Rules | Configurez les règles de suppression et les paramètres d’automatisation.
-Gestion des périphériques | Appareils intégrés et hors intégration.
+Gestion des appareils | Appareils intégrés et hors intégration.
 Évaluations réseau | Choisissez les appareils à scanner régulièrement et ajoutés à l’inventaire des appareils.

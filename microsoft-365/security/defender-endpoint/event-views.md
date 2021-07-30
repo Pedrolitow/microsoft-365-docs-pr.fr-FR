@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 342e471c897c6722e9a7d67578e10b85719d5bd8
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 081808a99f7ea18216107f22ff2912cd022eab82
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595989"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655754"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
@@ -31,7 +31,7 @@ ms.locfileid: "53595989"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Examinez les événements de réduction de la surface d’attaque dans l’Observateur d’événements pour surveiller les règles ou paramètres qui fonctionnent. Vous pouvez également déterminer si des paramètres sont trop « bruyants » ou ont un impact sur votre flux de travail quotidien.
 
@@ -45,9 +45,9 @@ Obtenez des rapports détaillés sur les événements, les blocs et les avertiss
 
 Créez des affichages personnalisés dans Windows’observateur d’événements pour voir uniquement les événements pour des fonctionnalités et des paramètres spécifiques. Le moyen le plus simple consiste à importer un affichage personnalisé en tant que fichier XML. Vous pouvez copier le XML directement à partir de cette page.
 
-Vous pouvez également accéder manuellement à la zone d’événement correspondant à la fonctionnalité.
+Vous pouvez également accéder manuellement à la zone d’événement qui correspond à la fonctionnalité.
 
-### <a name="import-an-existing-xml-custom-view"></a>Importer une vue personnalisée XML existante
+### <a name="import-an-existing-xml-custom-view"></a>Importer un affichage personnalisé XML existant
 
 1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt à .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
@@ -177,7 +177,7 @@ Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 24 | F
 Exploit Protection | WER-Diagnostics | 5  | Bloquer CFG
 Exploit Protection | Win32K (opérationnel) | 260 | Police non approuvée
 Protection réseau | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
-Protection réseau | Windows Defender (opérationnel) | 1125 | Événement lorsque la protection du réseau se déclenche en mode Audit
+Protection réseau | Windows Defender (opérationnel) | 1125 | Événement lorsque la protection du réseau se déclenche en mode audit
 Protection réseau | Windows Defender (opérationnel) | 1126 | Événement lorsque la protection du réseau se déclenche en mode blocage
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1124 | Événement d’accès contrôlé aux dossiers audité

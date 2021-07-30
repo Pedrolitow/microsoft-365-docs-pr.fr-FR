@@ -1,7 +1,7 @@
 ---
 title: Détection et réponse des points de terminaison en mode blocage
 description: En savoir plus sur protection évolutive des points de terminaison en mode bloc
-keywords: Microsoft Defender pour le point de terminaison, mde, PEPT en mode bloc, blocage du mode passif
+keywords: Microsoft Defender pour le point de terminaison, mde, PEPT en mode bloc, blocage en mode passif
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 2754303163e608596cb554dfdb44113c6684fcfe
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 064cc66dfa273209bea5dc14c0e8cf0f39d7c6ac
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543556"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655790"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse des points de terminaison (PEPT) en mode blocage
 
@@ -35,7 +35,7 @@ ms.locfileid: "53543556"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>Qu’est-ce PEPT en mode bloc ?
 
@@ -44,7 +44,7 @@ ms.locfileid: "53543556"
 > [!IMPORTANT]
 > PEPT en mode bloc ne fournit pas toute la protection disponible lorsque Antivirus Microsoft Defender protection en temps réel est activée. Toutes les fonctionnalités qui dépendent Antivirus Microsoft Defender être la solution antivirus active ne fonctionneront pas, y compris les exemples clés suivants : 
 > 
-> - La protection en temps réel, y compris l’analyse à l’accès, n’est pas disponible lorsque Antivirus Microsoft Defender est en mode passif. Pour en savoir plus sur les paramètres de stratégie de protection en temps réel, voir Activer et **[configurer Antivirus Microsoft Defender protection toujours active.](configure-real-time-protection-microsoft-defender-antivirus.md)**
+> - La protection en temps réel, y compris l’analyse sur accès, n’est pas disponible lorsque Antivirus Microsoft Defender est en mode passif. Pour en savoir plus sur les paramètres de stratégie de protection en temps réel, voir Activer et **[configurer Antivirus Microsoft Defender protection toujours active.](configure-real-time-protection-microsoft-defender-antivirus.md)**
 > - Les fonctionnalités telles **[que les règles de protection](network-protection.md)** du réseau et de réduction de la **[surface](attack-surface-reduction.md)** d’attaque sont disponibles uniquement lorsque Antivirus Microsoft Defender est en cours d’exécution en mode actif. 
 > 
 > Votre solution antivirus non-Microsoft devrait fournir ces fonctionnalités. 
@@ -68,13 +68,14 @@ L’image suivante montre une instance des logiciels indésirables détectés et
 ## <a name="enable-edr-in-block-mode"></a>Activer PEPT en mode bloc
 
 > [!TIP]
-> Assurez-vous que [les conditions requises](#requirements-for-edr-in-block-mode) sont remplies avant d’PEPT en mode bloc.
+> Assurez-vous que [les conditions](#requirements-for-edr-in-block-mode) requises sont remplies avant d’PEPT en mode bloc.
 
 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com/](https://security.microsoft.com/) ) and sign in. 
 
 2. Choose **Paramètres**  >  **Endpoints**  >  **General**  >  **Advanced features**.
 
 3. Faites défiler vers le bas, puis activez **Activer PEPT en mode bloc.**
+
 
 > [!NOTE]
 > PEPT en mode bloc ne peut être allumé que dans le portail Microsoft 365 Defender ( ) ou [https://security.microsoft.com](https://security.microsoft.com) l’ancien Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). Vous ne pouvez pas utiliser les clés de Registre, les Microsoft Intune ou la stratégie de groupe pour activer ou désactiver les PEPT en mode blocage.
@@ -84,7 +85,7 @@ L’image suivante montre une instance des logiciels indésirables détectés et
 | Conditions requises  | Détails  |
 |---------|---------|
 | Autorisations | Le rôle Administrateur général ou Administrateur de la sécurité doit être attribué [dans Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Pour plus d’informations, voir [Autorisations de base.](basic-permissions.md) |
-| Système d’exploitation     | Les appareils doivent être en cours d’exécution dans l’une des versions Windows : <br/>- Windows 10 (toutes les publications) <br/>- Windows Server, version 1803 ou plus récente <br/>- Windows Server 2019 <br/>- Windows Server 2016 (uniquement lorsque Antivirus Microsoft Defender est en mode actif)     |
+| Système d’exploitation     | Les appareils doivent être en cours d’exécution dans l’une des versions Windows : <br/>- Windows 10 (toutes les releases) <br/>- Windows Server, version 1803 ou plus récente <br/>- Windows Server 2019 <br/>- Windows Server 2016 (uniquement lorsque Antivirus Microsoft Defender est en mode actif)     |
 | Microsoft Defender pour point de terminaison     | Les appareils doivent être intégrés à Defender for Endpoint. Voir [conditions minimales requises pour Microsoft Defender pour le point de terminaison.](minimum-requirements.md)       |
 | Antivirus Microsoft Defender  | Les appareils doivent être Antivirus Microsoft Defender et s’exécutent en mode actif ou passif. [Confirmez Antivirus Microsoft Defender est en mode actif ou passif.](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode) |
 | Protection fournie par le cloud | Antivirus Microsoft Defender doivent être configurées de telle manière que la protection cloud [soit activée.](enable-cloud-protection-microsoft-defender-antivirus.md) |
@@ -131,7 +132,7 @@ Pour vérifier si Antivirus Microsoft Defender est en cours d’exécution en mo
 |Méthode  |Procedure  |
 |---------|---------|
 | PowerShell     | 1. Sélectionnez le menu Démarrer, commencez à taper, puis `PowerShell` ouvrez Windows PowerShell dans les résultats. <p>2. `Get-MpComputerStatus` Tapez . <p>3. Dans la liste des résultats, dans la ligne **AMRunningMode,** recherchez l’une des valeurs suivantes : <br/>- `Normal` <br/>- `Passive Mode` <p>Pour plus d’informations, [voir Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).        |
-|Invite de commandes     | 1. Sélectionnez le menu Démarrer, commencez à taper, puis Windows invite de commandes `Command Prompt` dans les résultats. <p>2. `sc query windefend` Tapez . <p>3. Dans la liste des résultats, dans la ligne **STATE,** confirmez que le service est en cours d’exécution.         |
+|Invite de commandes     | 1. Sélectionnez le menu Démarrer, commencez à taper, puis Windows invite de commandes `Command Prompt` dans les résultats. <p>2. `sc query windefend` Tapez . <p>3. Dans la liste des résultats, dans la **ligne STATE,** confirmez que le service est en cours d’exécution.         |
 
 ### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>Comment puis-je confirmer que PEPT en mode bloc est Antivirus Microsoft Defender en mode passif ?
 

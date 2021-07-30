@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fd8e1e007031a19a0520e11c8b2497e64e721a74
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 551eddb42f7b0bdbbd84f6294f3413b4435c1dc1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595941"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655766"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Évaluer Microsoft Defender pour point de terminaison 
 
@@ -32,13 +32,13 @@ ms.locfileid: "53595941"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037) est une plateforme de sécurité unifiée pour la protection préventive, la détection après effraction, l’examen automatisé et la réponse.
 
-Vous pouvez évaluer Microsoft Defender pour endpoint dans votre organisation en commençant [votre version d’évaluation gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
+Vous pouvez évaluer Microsoft Defender pour endpoint dans votre organisation en commençant [votre version d’évaluation gratuite.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial)
 
-Vous pouvez également évaluer les différentes fonctionnalités de sécurité dans Microsoft Defender pour Point de terminaison à l’aide des instructions suivantes.
+Vous pouvez également évaluer les différentes fonctionnalités de sécurité dans Microsoft Defender pour point de terminaison en suivant les instructions suivantes.
 
 ## <a name="evaluate-attack-surface-reduction"></a>Évaluer la réduction de la surface d’attaque
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 243d29f460f0454d88c65baa0a9ed6bef9821733
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 11c5a8dde11b09f56a89af4815a06a57d3cbaeed
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622663"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655694"
 ---
 # <a name="list-exposure-score-by-device-group"></a>Liste du score d’exposition par groupe d’appareils
 
@@ -31,7 +31,7 @@ ms.locfileid: "53622663"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -68,7 +68,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK, avec une liste de score d’exposition par groupe d’appareils dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 200 OK, avec une liste de score d’exposition par données de groupe d’appareils dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 
@@ -106,4 +106,4 @@ Voici un exemple de réponse.
 ## <a name="related-topics"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Score d& exposition des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Niveau d’exposition & vulnérabilité des menaces](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

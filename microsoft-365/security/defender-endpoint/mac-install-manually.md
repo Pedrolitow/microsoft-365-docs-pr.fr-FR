@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3d09f293924003ea8bf3df0079b31b633e1cc23
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8c4af97ed6ef6e14ed1aeede655ab48f04998d3d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544629"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655598"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "53544629"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à une version d’essai gratuite.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cette rubrique décrit comment déployer Manuellement Microsoft Defender pour Endpoint sur macOS. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
 
@@ -55,7 +55,7 @@ Téléchargez les packages d’installation et d’intégration à partir Micros
 3. Dans la section 2 de la page, sélectionnez **Télécharger le package d’installation.** Enregistrez-le sous wdav.pkg dans un répertoire local.
 4. Dans la section 2 de la page, **sélectionnez Télécharger le package d’intégration.** Enregistrez-le WindowsDefenderATPOnboardingPackage.zip dans le même répertoire.
 
-    ![capture d Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-macos.png)
+    ![capture d’écran Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-macos.png)
 
 5. À partir d’une invite de commandes, vérifiez que vous avez les deux fichiers.
 
@@ -83,7 +83,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
    L’installation se poursuit.
 
    > [!CAUTION]
-   > Si vous ne sélectionnez pas **Autoriser,** l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations](mac-support-kext.md) sur la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
+   > Si vous ne sélectionnez pas **Autoriser,** l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations sur](mac-support-kext.md) la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
 
 > [!NOTE]
 > MacOS peut demander à redémarrer l’appareil lors de la première installation de Microsoft Defender pour Endpoint. La protection en temps réel n’est pas disponible tant que l’appareil n’est pas redémarrage.
@@ -146,7 +146,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 ## <a name="how-to-allow-full-disk-access"></a>Comment autoriser l’accès disque total
 
 > [!CAUTION]
-> macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
+> macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
 
 1. Pour accorder le consentement, **ouvrez La** sécurité des préférences système  >  **&**  >  **confidentialité** confidentialité accès disque  >  **total**. Cliquez sur l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue). Sélectionnez Microsoft Defender pour le point de terminaison.
 
@@ -191,7 +191,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
    > Si vous double-cliquez, vous recevez le message suivant :
    >
    > > **« MDATP MacOS VERIFIE » ne peut pas être ouvert, car le développeur ne peut pas être vérifié.**<br/>
-   > > MacOS ne peut pas vérifier que cette application est exempt de programmes malveillants.<br/>
+   > > macOS ne peut pas vérifier que cette application est exempt de programmes malveillants.<br/>
    > > **\[ Déplacer vers \] annuler la corbeille** **\[ \]**
 
 7. Cliquez sur **Annuler**.
