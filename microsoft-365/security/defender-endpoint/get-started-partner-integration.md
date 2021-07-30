@@ -16,12 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 10482cf13784234d0a73b761f2d06e4a72c6802a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8597cc951c5a6d9cc587eaee957beb304fb35311
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542692"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53653186"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Devenir un partenaire Microsoft Defender pour point de terminaison
 
@@ -31,11 +31,11 @@ ms.locfileid: "53542692"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Pour devenir un partenaire de solution Defender pour Endpoint, vous devez suivre et effectuer les étapes suivantes.
 
-## <a name="step-1-subscribe-to-a-microsoft-defender-for-endpoint-developer-license"></a>Étape 1 : s’abonner à une licence Microsoft Defender pour les développeurs de points de terminaison
+## <a name="step-1-subscribe-to-a-microsoft-defender-for-endpoint-developer-license"></a>Étape 1 : s’abonner à une licence Microsoft Defender pour endpoint Developer
 
 Abonnez-vous [à la licence Microsoft Defender for Endpoint Developer](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9). L’abonnement vous permet d’utiliser un client Microsoft Defender pour Endpoint avec jusqu’à 10 appareils pour développer des solutions qui s’intègrent à Microsoft Defender pour Endpoint.
 
@@ -43,7 +43,7 @@ Abonnez-vous [à la licence Microsoft Defender for Endpoint Developer](https://w
 
 La meilleure façon pour les partenaires technologiques de certifier que leur intégration fonctionne consiste  à faire en sorte qu’un client commun approuve la conception d’intégration suggérée (le client peut utiliser l’option Recommander un partenaire dans la [page](https://securitycenter.microsoft.com/interoperability/partners) Application partenaire de l’Centre de sécurité Microsoft Defender) et faire en sorte qu’elle soit testée et rétrogradée à l’équipe Microsoft Defender pour le point de terminaison.
 
-Une fois que l’équipe Microsoft Defender pour le point de terminaison a examiné et approuvé l’intégration, nous vous dirigeons vers l’intégration en tant que partenaire auprès de l’Association de sécurité intelligente de Microsoft.
+Une fois que l’équipe Microsoft Defender pour le point de terminaison a examiné et approuvé l’intégration, nous vous dirigerons vers l’intégration en tant que partenaire auprès de l’Association de sécurité intelligente de Microsoft.
 
 ## <a name="step-3-become-a--microsoft-intelligent-security-association-member"></a>Étape 3 : devenir membre de l’Association de sécurité intelligente Microsoft
 

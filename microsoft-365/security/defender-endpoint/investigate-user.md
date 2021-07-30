@@ -1,6 +1,6 @@
 ---
 title: Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
-description: Examiner un compte d’utilisateur à la recherche d’informations d’identification potentiellement compromises ou pivoter sur le compte d’utilisateur associé au cours d’une enquête.
+description: Examiner un compte d’utilisateur à la recherche d’informations d’identification compromises ou pivoter sur le compte d’utilisateur associé au cours d’une enquête.
 keywords: examiner, compte, utilisateur, entité utilisateur, alerte, Microsoft Defender pour le point de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 90e15fbd28d8b7a57b9d65c2f7ea46e625a42038
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: cda1a2fb4840e072fa4523ae4d0b2c0475035976
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622627"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53653225"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
 
@@ -35,11 +35,11 @@ ms.locfileid: "53622627"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
 
 ## <a name="investigate-user-account-entities"></a>Examiner les entités de compte d’utilisateur
 
-Identifiez les comptes d’utilisateurs avec les alertes les plus actives (affichées sur le tableau de bord sous la forme « Utilisateurs à risque ») et examinez les cas d’informations d’identification potentiellement compromises, ou faites pivoter le compte d’utilisateur associé lors de l’examen d’une alerte ou d’un appareil afin d’identifier les éventuels mouvements latérals entre les appareils avec ce compte d’utilisateur.
+Identifiez les comptes d’utilisateurs avec les alertes les plus actives (affichées dans le tableau de bord sous la forme « Utilisateurs à risque ») et examinez les cas d’informations d’identification potentiellement compromises, ou pivotez sur le compte d’utilisateur associé lors de l’examen d’une alerte ou d’un appareil afin d’identifier les éventuels mouvements latérals entre les appareils avec ce compte d’utilisateur.
 
 Les informations de compte d’utilisateur sont disponibles dans les affichages suivants :
 
@@ -60,14 +60,14 @@ Lorsque vous examinez une entité de compte d’utilisateur, vous voyez :
 
 ### <a name="user-details"></a>Détails de l’utilisateur
 
-Le  volet d’informations Utilisateur de gauche fournit des informations sur l’utilisateur, telles que les incidents d’ouverture connexes, les alertes actives, le nom SAM, le SID, les alertes Microsoft Defender pour l’identité, le nombre d’appareils avec qui l’utilisateur est connecté, le moment où l’utilisateur a été vu pour la première fois, le rôle et les types d’ouverture de session. Selon les fonctionnalités d’intégration que vous avez activées, vous verrez d’autres détails. Par exemple, si vous activez l’Skype pour l’intégration d’entreprise, vous pourrez contacter l’utilisateur à partir du portail. La section **Alertes Azure ATP** contient un lien qui vous permet d’accès à la page Microsoft Defender pour l’identité, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et que des alertes sont associées à l’utilisateur. La page Microsoft Defender pour l’identité fournit plus d’informations sur les alertes.
+Le  volet d’informations Utilisateur de gauche fournit des informations sur l’utilisateur, telles que les incidents d’ouverture connexes, les alertes actives, le nom SAM, le SID, les alertes Microsoft Defender pour l’identité, le nombre d’appareils avec qui l’utilisateur est connecté, la première fois que l’utilisateur a été vu pour la première fois, le rôle et les types d’ouverture de session. Selon les fonctionnalités d’intégration que vous avez activées, vous verrez d’autres détails. Par exemple, si vous activez l’Skype pour l’intégration d’entreprise, vous pourrez contacter l’utilisateur à partir du portail. La section **Alertes Azure ATP** contient un lien qui vous permet d’accès à la page Microsoft Defender pour l’identité, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et que des alertes sont associées à l’utilisateur. La page Microsoft Defender pour l’identité fournit plus d’informations sur les alertes.
 
 >[!NOTE]
->Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
+>Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
 
 La vue d’ensemble, les alertes et les observations dans l’organisation sont des onglets différents qui affichent différents attributs sur le compte d’utilisateur.
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Présentation
 
 **L’onglet** Vue d’ensemble affiche les détails des incidents et une liste des appareils sur qui l’utilisateur s’est connecté. Vous pouvez les développer pour voir les détails des événements de connexion pour chaque appareil.
 
@@ -79,11 +79,11 @@ La vue d’ensemble, les alertes et les observations dans l’organisation sont 
 
 L’onglet Observé dans l’organisation vous permet de spécifier une plage de dates pour voir la liste des appareils sur lequel cet utilisateur a été connecté, le compte d’utilisateur connecté le plus fréquent et le moins fréquent pour chacun de ces appareils et le nombre total d’utilisateurs observés sur chaque appareil. 
 
-La sélection d’un élément dans le tableau Observé dans l’organisation développera l’élément, révélant plus de détails sur l’appareil. La sélection directe d’un lien au sein d’un élément vous enverra à la page correspondante.
+La sélection d’un élément dans le tableau Observé dans l’organisation développera l’élément, révélant plus de détails sur l’appareil. La sélection directe d’un lien dans un élément vous enverra à la page correspondante.
 
 ## <a name="search-for-specific-user-accounts"></a>Rechercher des comptes d’utilisateurs spécifiques
 
-1. Sélectionnez **Utilisateur** dans le menu déroulant **de la** barre de recherche.
+1. Sélectionnez **Utilisateur** dans le menu déroulant **de** la barre de recherche.
 2. Entrez le compte d’utilisateur dans le **champ** Recherche.
 3. Cliquez sur l’icône de recherche ou appuyez sur **Entrée.**
 

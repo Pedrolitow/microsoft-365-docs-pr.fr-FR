@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9fe35f5bac942cc5a4e9fa95a5eaf9759072d832
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 7fff23a0dca7e365a9580ff5a72a61d97a7671fe
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542188"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53653174"
 ---
 # <a name="resources"></a>Ressources
 
@@ -35,7 +35,7 @@ ms.locfileid: "53542188"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="collect-diagnostic-information"></a>Collecter des informations de diagnostic
 
@@ -89,7 +89,7 @@ Il existe plusieurs façons de désinstaller Defender pour Endpoint sur Linux. S
 ### <a name="manual-uninstallation"></a>Désinstallation manuelle
 
 - `sudo yum remove mdatp` pour RHEL et ses variantes (CentOS et Oracle Linux).
-- `sudo zypper remove mdatp` pour SLES et les variantes.
+- `sudo zypper remove mdatp` pour SLES et variantes.
 - `sudo apt-get purge mdatp` pour les systèmes Ubuntu et Debian.
 
 ## <a name="configure-from-the-command-line"></a>Configurer à partir de la ligne de commande
@@ -119,7 +119,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Configuration         |Liste de toutes les exclusions antivirus                           |`mdatp exclusion list`                                                 |
 |Configuration         |Ajouter un nom de menace à la liste autorisée                   |`mdatp threat allowed add --name [threat-name]`                        |
 |Configuration         |Supprimer un nom de menace de la liste autorisée              |`mdatp threat allowed remove --name [threat-name]`                     |
-|Configuration         |Liste de tous les noms de menaces autorisés                           |`mdatp threat allowed list`                                            |
+|Configuration         |Liste de tous les noms de menace autorisés                           |`mdatp threat allowed list`                                            |
 |Configuration         |Activer la protection PUA                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
 |Configuration         |Désactiver la protection PUA                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |Configuration         |Activer le mode audit pour la protection PUA                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
@@ -130,7 +130,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Protection            |Faire une analyse rapide                                         |`mdatp scan quick`                                                     |
 |Protection            |Faire une analyse complète                                          |`mdatp scan full`                                                      |
 |Protection            |Annuler une analyse à la demande en cours                        |`mdatp scan cancel`                                                    |
-|Protection            |Demander une mise à jour des informations de sécurité                  |`mdatp definitions update`                                             |
+|Protection            |Demander une mise à jour de l’intelligence de la sécurité                  |`mdatp definitions update`                                             |
 |Historique de la protection    |Imprimer l’historique complet de la protection                       |`mdatp threat list`                                                    |
 |Historique de la protection    |Obtenir les détails sur les menaces                                      |`mdatp threat get --id [threat-id]`                                    |
 |Gestion de la mise en quarantaine |Liste de tous les fichiers mis en quarantaine                              |`mdatp threat quarantine list`                                         |
@@ -167,7 +167,7 @@ Dans le portail Defender pour points de terminaison, deux catégories d’inform
 ### <a name="known-issues"></a>Problèmes détectés
 
 - Vous pouvez voir « Aucune donnée de capteur, communications altérées » dans la page d’informations de l’ordinateur du portail Microsoft 365 Defender, même si le produit fonctionne comme prévu. Nous travaillons à la résoudre.
-- Les utilisateurs connectés n’apparaissent pas sur le Microsoft 365 Defender web.
+- Les utilisateurs connectés n’apparaissent pas dans le Microsoft 365 Defender web.
 - Dans les distributions SUSE, si l’installation de *libatomic1* échoue, vous devez vérifier que votre système d’exploitation est enregistré :
 
    ```bash

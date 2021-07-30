@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d1c5c1ffa12b300a7a28ad7d38cbda3be24828f
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: cc7b2929a3860e60b8e06abe151b7736a57d79a1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53619566"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53653294"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -34,7 +34,7 @@ ms.locfileid: "53619566"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 Examinez les détails d’une alerte sur un appareil spécifique pour identifier d’autres comportements ou événements qui peuvent être liés à l’alerte ou à l’étendue potentielle de la violation.
 
@@ -91,7 +91,7 @@ Pour plus d’informations, voir [Examiner les entités utilisateur.](investigat
 
 Les onglets fournissent des informations pertinentes sur la sécurité et la prévention des menaces relatives à l’appareil. Dans chaque onglet, vous pouvez personnaliser les  colonnes affichées en sélectionnant Personnaliser les colonnes dans la barre au-dessus des en-têtes de colonne.
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Présentation
 **L’onglet** Vue d’ensemble affiche les [cartes](#cards) pour les alertes actives, les utilisateurs connectés et l’évaluation de la sécurité.
 
 ![Image de l’onglet Vue d’ensemble sur la page de l’appareil](images/overview-device.png)

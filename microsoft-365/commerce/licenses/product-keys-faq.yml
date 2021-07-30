@@ -14,12 +14,12 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: 'Clés de produit : questions fréquemment posées'
-  ms.openlocfilehash: 472b49dbd105c50658270e9ffa6e0ab73570bbca
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: 4ab699c56eaa9c7676104989f14450f4d1f8487a
+  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53542470"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "53656546"
 title: 'Clés de produit : questions fréquemment posées'
 summary: ''
 sections:
@@ -34,10 +34,10 @@ sections:
       Une clé OSA (Online Service Activation) est une clé de produit à usage unique utilisée pour activer Microsoft Online Services abonnements.
 
 
-      Pour plus d’informations, consultez [la faq sur l’activation](/licensing/online-service-activation-faq)de service en ligne pour les programmes ouverts.
+      Pour plus d’informations, voir [online service activation for Open programs FAQ](/licensing/online-service-activation-faq).
   - question: >
       Comment trouver des clés de produit dans le Centre d’administration Microsoft 365 ?
-    answer: "1.  Connectez-vous au Centre d’administration Microsoft 365. \n2.  Go to **Billing**  >  **Your products** Volume  >  **licensing**  >  **Downloads & keys** > hover on product and select View **keys**.\n\nVous trouverez des informations sur la clé de produit pour chaque produit, le type de licence (clé de licence en volume, Service de gestion de clés (KMS) et clé d’activation multiple (MAK) et le nombre d’activations MAK utilisées et disponibles.\n\nSélectionnez **Télécharger toutes les clés de** produit pour télécharger les clés affichées pour une licence sur un lecteur local.\n"
+    answer: "1. Connectez-vous au Centre d’administration Microsoft 365. \n2. Go to **Billing**  >  **Your products** Volume  >  **licensing**  >  **Downloads & keys** > hover on product and select View **keys**.\n\nVous trouverez des informations sur la clé de produit pour chaque produit, le type de licence (clé de licence en volume, Service de gestion de clés (KMS) et clé d’activation multiple (MAK) et le nombre d’activations MAK utilisées et disponibles.\n\nSélectionnez **Télécharger toutes les clés de** produit pour télécharger les clés affichées pour une licence sur un lecteur local.\n"
   - question: >
       Comment trouver des clés SQL Server produit ?
     answer: >
@@ -47,7 +47,7 @@ sections:
       Vous pouvez également trouver la clé en téléchargeant le fichier ISO SQL à partir du centre d’administration > .. \x64 folder > DefaultSetup.ini file. Veillez à la back up n’importe quelle version existante avant d’installer ou de mettre à niveau SQL éditions. Si vous avez besoin d’aide pour résoudre les problèmes techniques lors de l’installation du produit ou de l’activation du service en ligne, contactez le support technique Microsoft en envoyant une demande [de support technique.](https://support.microsoft.com/oas)
   - question: >
       Comment trouver une clé de produit pour l’achat de licences en volume ?
-    answer: "Si votre contrat autorise l’accès à un produit nécessitant une clé, vous pouvez trouver ces clés en accédant à Facturation Vos produits Licences en  >    >  **volume**  >  **Téléchargements**& clés . \n\nToutefois, certains produits ne nécessitent pas de clé de produit. Ces informations sont répertoriées dans la description du produit dans le catalogue Téléchargements et clés.\n\nPour déterminer si votre produit nécessite une clé, allez à [l’activation du produit et aux informations de clé.](https://licensingapps.microsoft.com/product-activation) Sous Rechercher des produits, choisissez un produit ou recherchez votre nom de produit.\n"
+    answer: "Si votre contrat autorise l’accès à un produit nécessitant une clé, vous pouvez trouver ces clés en accédant à Facturation Vos produits Licences en  >    >  **volume**  >  **Téléchargements**& clés . \n\nToutefois, certains produits ne nécessitent pas de clé de produit. Ces informations sont répertoriées dans la description du produit dans le catalogue Téléchargements et clés.\n\nPour déterminer si votre produit nécessite une clé, allez à [l’activation du produit et aux informations de clé.](https://licensingapps.microsoft.com/product-activation) Sous Rechercher des produits, choisissez un produit ou recherchez le nom de votre produit.\n"
   - question: >
       Qu’est-ce qu’une clé d’installation ?
     answer: >
@@ -58,7 +58,7 @@ sections:
   - question: >
       Qu’est-ce qui détermine quelles clés de produit sont associées à mes contrats ?
     answer: >
-      Les clés de produit de licence en volume sont fournies pour chaque ID de licence répertorié dans votre résumé [des relations Microsoft.](/licensing/license-faq) Ce résumé des relations se trouve dans le Centre de gestion des licences en volume. Pour plus d’informations, [voir Qu’est-ce qu’un ID de licence](/licensing/license-faq#what-is-a-licensing-id). Vous pouvez avoir plusieurs ID de licence :
+      Les clés de produit de licence en volume sont fournies pour chaque ID de licence répertorié dans votre résumé [des relations Microsoft.](/licensing/license-faq) Ce résumé des relations se trouve dans le Centre de gestion des licences en volume. Pour plus d’informations, voir [Qu’est-ce qu’un ID de licence](/licensing/license-faq#what-is-a-licensing-id). Vous pouvez avoir plusieurs ID de licence :
 
         - Accord Entreprise clients (EA) et Select Plus reçoivent les clés de produit par pool de produits (systèmes, serveurs et applications).
         - Select Agreement customers receive product keys per product pool (Systems, Servers, and Applications) based on their purchasing forecasts.
@@ -73,7 +73,7 @@ sections:
   - question: >
       Qu’est-ce que l’activation en volume ?
     answer: >
-      L’activation en volume est une solution configurable qui permet d’automatiser et de gérer le processus d’activation du produit sur les ordinateurs exécutant Windows systèmes d’exploitation sous licence dans le cadre d’un programme de licence en volume. L’activation en volume est également utilisée avec d’autres logiciels de Microsoft, notamment les suites Office, vendues dans le cadre de contrats de licence en volume et qui la prise en charge de l’activation en volume. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+      L’activation en volume est une solution configurable qui permet d’automatiser et de gérer le processus d’activation du produit sur les ordinateurs exécutant Windows systèmes d’exploitation sous licence dans le cadre d’un programme de licence en volume. L’activation en volume est également utilisée avec d’autres logiciels de Microsoft, notamment les suites Office, vendues dans le cadre de contrats de licence en volume et qui la prise en charge de l’activation en volume. Pour plus d’informations, voir :
         - [Outils permettant de gérer l’activation en volume des Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
         - [Activation en volume pour Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 
@@ -89,7 +89,7 @@ sections:
       KMS est un service d’activation qui permet aux organisations d’activer des systèmes au sein de leur propre réseau en éliminant la nécessité pour les ordinateurs individuels de se connecter à Microsoft pour l’activation du produit. Il ne nécessite pas de système dédié et peut être co-hébergé sur un système qui fournit d’autres services.
 
 
-      KMS nécessite un nombre minimal d’ordinateurs physiques ou virtuels dans un environnement réseau. Ces seuils minimaux, appelés seuils d’activation, sont fixés de sorte qu’ils soient facilement atteints par Enterprise clients.
+      KMS nécessite un nombre minimal d’ordinateurs physiques ou virtuels dans un environnement réseau. Ces seuils minimaux, appelés seuils d’activation, sont fixés de sorte qu’ils soient Enterprise clients.
 
         - Seuils d’activation pour Windows
           - Votre organisation doit avoir au moins 5 ordinateurs pour activer les serveurs exécutant Windows Server.
@@ -104,7 +104,7 @@ sections:
       Une clé KMS permet d’activer l’ordinateur hôte KMS avec un serveur d’activation Microsoft et peut activer jusqu’à 6 hôtes KMS avec 10 activations par hôte. Chaque KMS hôte peut activer un nombre illimité d’ordinateurs.
   - question: >
       Pourquoi aucune clé d’KMS n’est affichée sur Centre d’administration Microsoft 365 pour les clients Open License ?
-    answer: "KMS clés ne sont plus préalablement affectées aux accords d’ouverture, car l’utilisation de la clé d’activation multiple (MAK) est la méthode préférée pour l’activation.\n\nLes clés KSM peuvent être attribuées, par exception, aux clients Open qui répondent au seuil d’activation KMS minimal pour Windows Server, OS et Office. Pour demander une exception, envoyez une demande de formulaire web au Support Microsoft.\n\nPour demander une exception, vous devez avoir des autorisations d’administrateur vlsc, d’administrateur de clé ou de visionneuse de clés et fournir les informations suivantes :\n  \n  - Numéro d’inscription/ contrat ou ID de licence et autorisation.\n  - Nom du produit (y compris la version et l’édition).\n  - 5 derniers caractères de la clé de produit.\n  - Nombre d’activations d’hôtes requises.\n  - Justification professionnelle ou raison du déploiement.\n"
+    answer: "KMS clés ne sont plus préalablement affectées aux accords d’ouverture, car l’utilisation de la clé d’activation multiple (MAK) est la méthode d’activation préférée.\n\nLes clés KSM peuvent être attribuées, par exception, aux clients Open qui répondent au seuil d’activation KMS minimal pour Windows Server, OS et Office. Pour demander une exception, envoyez une demande de formulaire web au Support Microsoft.\n\nPour demander une exception, vous devez avoir des autorisations d’administrateur vlsc, d’administrateur de clé ou de visionneuse de clés et fournir les informations suivantes :\n  \n  - Numéro d’inscription/ contrat ou ID de licence et autorisation.\n  - Nom du produit (y compris la version et l’édition).\n  - 5 derniers caractères de la clé de produit.\n  - Nombre d’activations d’hôtes requises.\n  - Justification professionnelle ou raison du déploiement.\n"
   - question: >
       Que se passe-t-il si j’ai besoin d’hôtes KMS supplémentaires ?
     answer: "Si vous avez besoin d’activations KMS pour activer plus de 6 hôtes KMS, envoyez une demande de formulaire web à Centre d’administration Microsoft 365 prise en charge. \n\nPour demander une exception, vous devez avoir des autorisations d’administrateur vlsc, d’administrateur de clé ou de visionneuse de clés et fournir les informations suivantes :\n  \n  - Numéro d’inscription/ contrat ou ID de licence et autorisation.\n  - Nom du produit (y compris la version et l’édition).\n  - 5 derniers caractères de la clé de produit.\n  - Nombre d’activations d’hôtes requises.\n  - Justification professionnelle ou raison du déploiement.\n"
@@ -118,7 +118,7 @@ sections:
   - question: >
       Pourquoi le nombre d’activations MAK fournies ne correspond-il pas au nombre de licences que nous avons achetées ?
     answer: >
-      Nous recommandons aux clients d’KMS pour activer plusieurs clés d’activation (MAK). KMS est la méthode d’activation préférée pour les déploiements à grande échelle. De nombreux facteurs déterminent le nombre d’activations associées à chaque clé MAK, y compris les licences achetées, le niveau de prix d’achat du client et son programme de licence en volume.
+      Nous recommandons aux clients d’KMS pour activer plusieurs clés d’activation (MAK). KMS est la méthode d’activation préférée pour les déploiements à grande échelle. De nombreux facteurs déterminent le nombre d’activations associées à chaque clé MAK, notamment les licences achetées, le niveau de prix d’achat du client et son programme de licence en volume.
 
 
       Le nombre d’activations disponibles pour un produit ne correspond pas toujours au nombre de licences achetées. En règle générale, vous recevez davantage d’activations au cas où vous devrez réinstaller et activer certains de vos produits. Consultez la section Résumé des licences de votre contrat pour afficher le nombre de licences.
@@ -145,7 +145,7 @@ sections:
         - Télécharger [Outil Gestion de l’activation en volume (Outil Gestion de l’activation en volume)](https://www.microsoft.com/download/details.aspx?id=11936)
   - question: >
       Que dois-je savoir sur l’utilisation Windows Server en tant qu’hôte KMS pour activer Windows clients ?
-    answer: "Si vous déployez Windows en utilisant Service de gestion de clés (KMS) comme méthode d’activation, notez que :\n  \n  - Windows Le serveur n’est pas pris en charge en tant qu’hôte KMS pour activer Windows.\n  - Une clé Windows serveur KMS est nécessaire pour obtenir un correctif afin d’autoriser l’activation Windows ordinateurs clients. Pour le dernier correctif, voir Configurer un ordinateur KMS pour activer les versions sous [licence en volume](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office)de Office . \n\nSi vous utilisez Windows Server en tant qu’hôte KMS, vous pouvez :\n  \n  - Mettre à niveau KMS’ordinateur hôte vers Windows Server.\n  - Rétrogradez l’ordinateur Windows Server 2003.\n  - Exécutez l KMS sur un ordinateur Windows édition en volume.\n  - Exécutez une machine virtuelle Windows Server.\n"
+    answer: "Si vous déployez Windows en utilisant Service de gestion de clés (KMS) comme méthode d’activation, notez que :\n  \n  - Windows Le serveur n’est pas pris en charge en tant qu’hôte KMS pour activer Windows.\n  - Une clé Windows serveur KMS est nécessaire pour obtenir un correctif pour permettre l’activation de Windows ordinateurs clients. Pour le dernier correctif, voir Configurer un ordinateur KMS pour activer les versions sous [licence en volume](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office)de Office . \n\nSi vous utilisez Windows Server en tant qu’hôte KMS, vous pouvez :\n  \n  - Mettre à niveau KMS’ordinateur hôte vers Windows Server.\n  - Rétrogradez l’ordinateur Windows Server 2003.\n  - Exécutez l KMS sur un ordinateur Windows édition en volume.\n  - Exécutez une machine virtuelle Windows Server.\n"
   - question: >
       Que dois-je savoir sur l’activation en volume pour Office, Project et Visio ?
     answer: >
@@ -160,7 +160,7 @@ sections:
       Si vous utilisez Windows Server 2008 comme hôte KMS serveur, vous pouvez :
         - Mettre à niveau KMS’ordinateur hôte vers Windows Server.
         - Rétrogradez l’ordinateur vers une version antérieure de Windows Server.
-        - Exécutez l KMS sur un PC Windows ordinateur.
+        - Exécutez l’KMS’hôte sur Windows PC.
         - Exécutez une machine virtuelle Windows Server sur une version plus récente de Windows Server.
   - question: >
       Comment activer Terminal Windows Server et RDS (Remote Desktop Service) ?
@@ -171,14 +171,14 @@ sections:
       Pour commencer, attribuez un rôle de licence Bureau à distance pour le serveur **(** Démarrez le Gestionnaire de serveur outils d’administration), puis activez le service RDS à partir de votre Gestionnaire de licences Bureau à  >    >  distance. Sélectionnez **Démarrer les** services Bureau à distance des outils d’administration, puis sélectionnez  >    >  Bureau à **distance/Gestionnaire de licences Terminal.**
 
 
-      Pendant l’activation, vous êtes invité à sélectionner le programme de licence et le numéro de contrat. Pour les clients Open License, entrez votre numéro d’autorisation. Pour MPSA, entrez votre numéro de compte d’achat (et non le numéro du contrat MPSA). Si vous n’êtes pas sûr du type de programme pour l’ID de licence utilisé pour acheter vos licences cal, consultez le résumé des relations **VLSC** et reportez-vous à la colonne **Programme parent.**
+      Pendant l’activation, vous êtes invité à sélectionner le programme de licence et le numéro de contrat. Pour les clients Open License, entrez votre numéro d’autorisation. Pour MPSA, entrez votre numéro de compte d’achat (et non le numéro du contrat MPSA). Si vous n’êtes pas sûr du type de programme pour l’ID de licence utilisé pour acheter vos licences d’accès client, consultez le résumé des relations **VLSC** et reportez-vous à la colonne **Programme parent.**
 
 
       Pour plus d’informations sur la gestion des licences Terminal Server, voir [Licences Terminal Server.](/troubleshoot/windows-server/remote/terminal-server-licensing) Pour plus d’informations sur l’installation du rôle de licence bureau à distance et l’activation du serveur de licences, voir Activer le serveur de licences des [services](/windows-server/remote/remote-desktop-services/rds-activate-license-server) Bureau à distance et ne peut pas se connecter à  [RDS,](/troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server)car aucun serveur de gestion des licences bureau à distance n’est disponible.
   - question: >
       Les organisations au sein de la même structure de propriété peuvent-ils utiliser la même clé pour déployer un produit ?
     answer: >
-      La conformité des licences et la gestion des biens sont indépendantes de l’activation de clé. Les clients n’ont pas besoin d’utiliser les clés fournies sous un ID de licence spécifique (contrat, inscription, affilié ou licence). Si une organisation parente dispose d’un contrat individuel, elle peut utiliser la même clé pour déployer un produit au sein d’organisations parentes et enfants. Cette flexibilité permet aux clients de gérer de manière centralisée leur image de déploiement à l’aide de clés spécifiques aux contrats/licences ou d’un ensemble de clés pour tous.
+      La conformité des licences et la gestion des biens sont indépendantes de l’activation clé. Les clients n’ont pas besoin d’utiliser les clés fournies sous un ID de licence spécifique (contrat, inscription, affilié ou licence). Si une organisation parente dispose d’un contrat individuel, elle peut utiliser la même clé pour déployer un produit au sein d’organisations parentes et enfants. Cette flexibilité permet aux clients de gérer de manière centralisée leur image de déploiement à l’aide de clés spécifiques aux contrats/licences ou d’un ensemble de clés pour tous.
   - question: >
       Puis-je utiliser mes clés de licence en volume pour exercer mes droits de ré-imagerie ?
     answer: >
@@ -191,7 +191,7 @@ sections:
       Pour plus d’informations sur les droits de ré-imagerie, voir les informations [de licence produit.](/licensing/learn-more/volume-licensing-briefs)
   - question: >
       Comment télécharger mes clés dans un fichier local ?
-    answer: "Le Centre d’administration Microsoft 365 offre la possibilité de télécharger les clés de produit dans un fichier local pour une utilisation ultérieure. Lorsque vous téléchargez des clés de produit à partir de la page Téléchargements et clés, le fichier contient toutes les clés de licence en volume associées aux contrats dans votre profil du Centre d’administration. Toutefois, si vous téléchargez des clés à partir de l’affichage ID de licence sur la page Résumé des relations, le fichier contient uniquement les clés associées à l’ID de licence que vous visualisez.\n\nUn fichier de clé de produit téléchargeable est dans un format délimité par des tabulations et peut être ouvert dans Excel ou un éditeur de texte pour trier et afficher les clés. Voici les colonnes incluses dans le fichier : **ID** de licence, **programme parent,** **organisation,** **produit,** clé de **produit,** **type** et **mak activations utilisées/disponibles, sièges** et état OSA . \n\nPour ouvrir un fichier téléchargé dans Excel, complétez les étapes suivantes :\n  1.    Ouvrez Microsoft Excel.\n  2.    Sélectionnez   >  **Ouvrir** le fichier, puis sélectionnez le fichier CSV téléchargé.\n  3.    Sélectionnez **Délimité** (valeur par défaut), puis sélectionnez Séparés par des tabulations **(pour** empêcher l’affichage de toutes les données dans une seule colonne).\n  4.    Sélectionnez **Terminer**. \n\nLe .CSV s’ouvre en Excel et les données sont affichées dans des colonnes distinctes.\n"
+    answer: "Le Centre d’administration Microsoft 365 offre la possibilité de télécharger les clés de produit dans un fichier local pour une utilisation ultérieure. Lorsque vous téléchargez des clés de produit à partir de la page Téléchargements et clés, le fichier contient toutes les clés de licence en volume associées aux contrats dans votre profil du Centre d’administration. Toutefois, si vous téléchargez des clés à partir de l’affichage ID de licence sur la page Résumé des relations, le fichier contient uniquement les clés associées à l’ID de licence que vous visualisez.\n\nUn fichier de clé de produit téléchargeable est dans un format délimité par des tabulations et peut être ouvert dans Excel ou un éditeur de texte pour trier et afficher les clés. Voici les colonnes incluses dans le fichier : **ID** de licence, **programme parent,** **organisation,** **produit,** clé de **produit,** **type** et **mak activations utilisées/disponibles, sièges** et état OSA . \n\nPour ouvrir un fichier téléchargé dans Excel, complétez les étapes suivantes :\n  1. Ouvrez Microsoft Excel.\n  2. Sélectionnez   >  **Ouvrir** le fichier, puis sélectionnez le fichier CSV téléchargé.\n  3. Sélectionnez **Délimité** (valeur par défaut), puis sélectionnez Séparés par des tabulations **(pour** empêcher l’affichage de toutes les données dans une seule colonne).\n  4. Sélectionnez **Terminer**. \n\nLe .CSV s’ouvre en Excel et les données sont affichées dans des colonnes distinctes.\n"
 - name: Support
   questions:
   - question: >

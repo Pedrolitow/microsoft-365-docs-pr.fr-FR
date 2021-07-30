@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3b58a40ffe7ee3f2c1153803434c51684fd6270d
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 39949e7a6c51cbad9ea0a34180fde729802f63f3
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624259"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656618"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>Rapport d’analyste dans l’analyse des menaces
 
@@ -32,7 +32,7 @@ ms.locfileid: "53624259"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Chaque [rapport d’analyse des](threat-analytics.md) menaces inclut des sections dynamiques et une section écrite complète appelée rapport _d’analyste._ Pour accéder à cette section, ouvrez le rapport sur la menace de suivi et sélectionnez **l’onglet Rapport d’analyste.**
 
@@ -52,7 +52,7 @@ Chaque section du rapport d’analyste est conçue pour fournir des informations
 |---|---|
 |Résumé exécutif|Vue d’ensemble de la menace, y compris la première fois qu’elle a été vue, ses motivations, les événements notables, les cibles principales et des outils et techniques distincts. Vous pouvez utiliser ces informations pour évaluer plus en détail comment hiérarchiser la menace dans le contexte de votre secteur, de votre emplacement géographique et de votre réseau.|
 |Analyse|Informations techniques sur les menaces, y compris les détails d’une attaque et la façon dont les attaquants peuvent utiliser une nouvelle technique ou une nouvelle surface d’attaque|
-|Techniques MITRE ATT&CK observées|Comment les techniques observées sont m maprées à l’infrastructure d&[ATT MITRE](https://attack.mitre.org/)|
+|Techniques MITRE ATT&CK observées|Mapilation des techniques observées avec l’infrastructure [d’attaque CK&ATT MITRE](https://attack.mitre.org/)|
 |[Atténuations](#apply-additional-mitigations)|Recommandations qui peuvent arrêter ou réduire l’impact de la menace. Cette section inclut également les atténuations qui ne sont pas suivis dynamiquement dans le cadre du rapport d’analyse des menaces.|
 |[Détails de la détection](#understand-how-each-threat-can-be-detected)|Détections spécifiques et génériques fournies par les solutions de sécurité Microsoft qui peuvent faire surface de l’activité ou des composants associés à la menace.|
 |[Repérage avancé](#find-subtle-threat-artifacts-using-advanced-hunting)|[Requêtes de recherche avancées pour](advanced-hunting-overview.md) identifier de manière proactive l’activité potentielle des menaces. La plupart des requêtes sont fournies pour compléter les détections, en particulier pour localiser des composants ou des comportements potentiellement malveillants qui n’ont pas pu être évalués dynamiquement comme malveillants.|
@@ -75,7 +75,7 @@ Bien que vous pouvez utiliser l’onglet **Atténuations** pour évaluer votre p
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Comprendre comment chaque menace peut être détectée
 
-Le rapport d’analyste fournit également les détections provenant de l’antivirus Microsoft Defender pour endpoint et des fonctionnalités _protection évolutive des points de terminaison_ (PEPT).
+Le rapport d’analyste fournit également les détections à partir de l’antivirus Microsoft Defender pour Endpoint et des fonctionnalités _protection évolutive des points de terminaison_ (PEPT).
 
 ### <a name="antivirus-detections"></a>Détections antivirus
 
@@ -86,7 +86,7 @@ Ces détections sont disponibles sur les appareils [sur](/windows/security/threa
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Alertes de détection et de réponse (PEPT) de point de terminaison
 
-PEPT alertes sont élevées pour les [appareils intégrés à Microsoft Defender pour point de terminaison.](onboard-configure.md) Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender for Endpoint et d’autres fonctionnalités de point de terminaison (antivirus, protection réseau, protection contre la falsification) qui servent de sources de signal puissantes.
+PEPT alertes sont élevées pour les appareils [intégrés à Microsoft Defender pour le point de terminaison.](onboard-configure.md) Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender for Endpoint et d’autres fonctionnalités de point de terminaison (antivirus, protection réseau, protection contre la falsification) qui servent de sources de signal puissantes.
 
 À l’exemple de la liste des détections antivirus, certaines alertes PEPT sont conçues pour indicateur générique d’un comportement suspect qui n’est peut-être pas associé à la menace détectée. Dans ce cas, le rapport identifie clairement l’alerte comme « générique » et n’influence aucun graphique du rapport.
 

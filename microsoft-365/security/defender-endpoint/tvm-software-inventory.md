@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9c31d62933ecb34d75e048101891fa7fa7b4256d
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 333cacf1bce50463fdfbac4023ae724a7564809c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587692"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656582"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventaire logiciel : Gestion des menaces et des vulnérabilités
 
@@ -34,7 +34,7 @@ ms.locfileid: "53587692"
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 L’inventaire logiciel dans Gestion des menaces et des vulnérabilités liste des logiciels connus de votre organisation avec les [énumérations officielles de plateforme commune (CPE)](https://nvd.nist.gov/products/cpe). Les produits logiciels sans CPE officiel n’ont pas de vulnérabilités publiées. Il inclut également des détails tels que le nom du fournisseur, le nombre de faiblesses, les menaces et le nombre d’appareils exposés.
 
@@ -98,7 +98,7 @@ Sélectionnez un nom de logiciel pour ouvrir le volant et recherchez la section 
 
 Vous pouvez afficher les pages logicielles de différentes manières :
 
-- Page d’inventaire > sélectionnez un nom de logiciel > **page** Sélectionner un logiciel ouvert dans le volant
+- Page Inventaire logiciel > sélectionner un nom de logiciel > **page** Sélectionner un logiciel ouvert dans le volant
 - [Page Recommandations en matière](tvm-security-recommendation.md) de sécurité > sélectionner une recommandation > **page** Sélectionner un logiciel ouvert dans le volant
 - Page chronologie des [événements](threat-and-vuln-mgt-event-timeline.md) > Sélectionnez un > Sélectionnez le nom du logiciel avec lien hypertexte (comme Visual Studio 2017) dans la section intitulée « Composant associé » dans le volant
 
@@ -114,7 +114,7 @@ Vous pouvez afficher les pages logicielles de différentes manières :
 
     :::image type="content" alt-text="Page d’exemples de logiciels Visual Studio 2017 avec les détails logiciels, les faiblesses, les appareils exposés, etc." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
-## <a name="report-inaccuracy"></a>Report inaccuracy
+## <a name="report-inaccuracy"></a>Inaccuracy de rapport
 
 Signalez un faux positif lorsque vous voyez des informations vagues, inexactes ou incomplètes. Vous pouvez également signaler les recommandations de sécurité qui ont déjà été corrigés.
 

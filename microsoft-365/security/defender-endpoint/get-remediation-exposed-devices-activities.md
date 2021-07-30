@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1d421de1bcdc926fa05fae626c0474d2dce54e41
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c4da7eb20a465829f9bf7049bd8df3a0ed01bf8b
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621870"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656714"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Répertorier les appareils exposés d’une activité de correction
 
@@ -32,7 +32,7 @@ ms.locfileid: "53621870"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -48,7 +48,7 @@ Retourne des informations sur les appareils exposés pour la tâche de correctio
 
 ## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>Liste des appareils exposés associés à une tâche de correction (ID)
 
-**URL :** GET : /api/remediationTasks/ \{ id \} /machineReferences
+**URL :** GET: /api/remediationTasks/ \{ id \} /machineReferences
 
 ## <a name="permissions"></a>Autorisations
 
@@ -120,4 +120,4 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [Obtenir une activité de correction par son ID](get-remediation-one-activity.md)
 - [Répertorier toutes les activités de correction](get-remediation-all-activities.md)
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

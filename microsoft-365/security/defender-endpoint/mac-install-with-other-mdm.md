@@ -1,7 +1,7 @@
 ---
 title: Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur Mac
 description: Installez Microsoft Defender pour point de terminaison sur Mac sur d’autres solutions de gestion.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, installation, déployer, macos, principal, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, installation, déployer, macos, magasin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f998a39a1e6407e0f14530b6bb237bc8b6aba6fd
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 26c7e53a6dd28264374d19acb68fd27e27507b0f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591078"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652958"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur macOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "53591078"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
@@ -49,10 +49,10 @@ Avant de commencer, consultez la page principale de Microsoft Defender pour poin
 
 Si votre organisation utilise une solution de gestion des périphériques mobiles (MDM) qui n’est pas officiellement prise en charge, cela ne signifie pas que vous ne pouvez pas déployer ou exécuter Microsoft Defender pour endpoint sur macOS.
 
-Microsoft Defender pour le point de terminaison sur macOS ne dépend d’aucune fonctionnalité propre au fournisseur. Il peut être utilisé avec n’importe quelle solution DE GESTION DES SOLUTIONS QUI prend en charge les fonctionnalités suivantes :
+Microsoft Defender pour le point de terminaison sur macOS ne dépend d’aucune fonctionnalité propre au fournisseur. Il peut être utilisé avec n’importe quelle solution MDM qui prend en charge les fonctionnalités suivantes :
 
 - Déployez un .pkg macOS sur des appareils gérés.
-- Déployez les profils de configuration système macOS sur les appareils gérés.
+- Déployer des profils de configuration système macOS sur des appareils gérés.
 - Exécutez un outil/script arbitraire configuré par l’administrateur sur des appareils gérés.
 
 La plupart des solutions mdm modernes incluent ces fonctionnalités, mais elles peuvent les appeler différemment.

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: acd6a20fa0ba1fd7d005854f980421d19644752a
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 73935cad9372676a6711a575e157c24ce4955dc4
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623719"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656738"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Vue d’ensemble du portail Microsoft 365 Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "53623719"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Enterprise équipes de sécurité peuvent utiliser Microsoft 365 Defender pour surveiller et aider à répondre aux alertes de menaces avancées persistantes ou de violations de données.
 
@@ -73,7 +73,7 @@ Zone|Description
 **Intégrité des services**|Fournit des informations sur l’état actuel du service Defender for Endpoint. Vous serez en mesure de vérifier que l’état du service est sain ou s’il existe des problèmes actuels.
 **Gestion de la configuration**|Affiche les appareils connectés, la ligne de base de sécurité de votre organisation, l’analyse prédictive, la couverture de la protection web et vous permet d’effectuer la gestion de la surface d’attaque sur vos appareils.
 **Paramètres**|Affiche les paramètres que vous avez sélectionnés lors de l’intégration et vous permet de mettre à jour vos préférences du secteur et la période de stratégie de rétention. Vous pouvez également définir d’autres paramètres de configuration tels que les autorisations, les API, les règles, la gestion des appareils, la gestion des services informatiques et les évaluations réseau.
-**(2) Recherche, centre Community, localisation, aide et support, commentaires**|**Recherche** : recherche par appareil, fichier, utilisateur, URL, ADRESSE IP, vulnérabilité, logiciel et recommandation. <p> **Community -** Accédez au centre Community pour découvrir, collaborer et partager des expériences sur le produit. <p> **Localisation :** définir des fuseaux horaires. <p> Aide **et support** : accédez au guide Defender pour point de terminaison, au support Microsoft et Microsoft Premier, aux informations de licence, aux simulations & didacticiels, au laboratoire d’évaluation de Defender for Endpoint, consultez un expert en menaces. <p> **Commentaires** : fournissez des commentaires sur ce que vous aimez ou ce que nous pouvons faire de mieux.
+**(2) Recherche, centre Community, localisation, aide et support, commentaires**|**Recherche** : recherche par appareil, fichier, utilisateur, URL, ADRESSE IP, vulnérabilité, logiciel et recommandation. <p> **Community -** Accédez au centre Community pour découvrir, collaborer et partager des expériences sur le produit. <p> **Localisation :** définir des fuseaux horaires. <p> Aide **et support** : accédez au guide De Defender pour point de terminaison, au support Microsoft et Microsoft Premier, aux informations de licence, aux simulations & didacticiels, au laboratoire d’évaluation de Defender for Endpoint, consultez un expert en menaces. <p> **Commentaires** : fournissez des commentaires sur ce que vous aimez ou ce que nous pouvons faire de mieux.
 
 > [!NOTE]
 > Pour les appareils avec des problèmes de mise à l’échelle DPI haute résolution, consultez Windows problèmes de mise à l’échelle pour les appareils haute résolution [pour](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) les solutions possibles.
