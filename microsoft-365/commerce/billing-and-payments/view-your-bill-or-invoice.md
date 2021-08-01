@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 07/31/2020
-ms.openlocfilehash: 463b1b1a34a14c1283ad31fb2e1236ba913b0594
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 319d8469ebdf1500f5f10e7fb84f69b9d87bed7c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394484"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650090"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -81,6 +81,12 @@ Vous pouvez soumettre votre demande Fapiao à notre [système de gestion Fapiao]
 > Un compte enregistré est nécessaire pour accéder au [système de gestion Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465). Si vous n’avez pas encore configuré de compte, consultez [Demander un fapiao pour Office 365 géré par 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end
+
+> [!NOTE]
+> 
+> Microsoft 365 services ne fournissent pas de reçus de paiement.
+> Pour les paiements par carte de crédit, utilisez le relevé de facturation de la facture et de la carte de crédit pour faire correspondre votre paiement.
+
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Recevoir une copie de votre relevé de facturation par courrier électronique
 

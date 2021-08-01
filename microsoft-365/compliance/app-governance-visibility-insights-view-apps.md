@@ -2,8 +2,8 @@
 title: Afficher vos applications
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Affichez vos applications.
-ms.openlocfilehash: 48a1a2140a3b59091796ca013a12eeefb8a284b9
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 5a11e161fb7b37405b61866599a616874ad4a190
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420129"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623015"
 ---
 # <a name="view-your-apps"></a>Afficher vos applications
 
@@ -32,7 +32,7 @@ La gouvernance des applications Microsoft vous permet d’obtenir rapidement des
 
 ## <a name="getting-a-list-of-all-the-apps-in-your-tenant"></a>Obtention d’une liste de toutes les applications de votre client
 
-Pour obtenir un résumé des applications de votre client, accédez à **Centre de conformité Microsoft 365 > Protection & gouvernance des applications > Applications**.
+Pour obtenir un résumé des applications de votre client, accédez à **Centre de conformité Microsoft 365 > Gouvernance des applications > Applications**.
 
 ![Page récapitulative de l’application MAPG dans le Centre de conformité Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
@@ -44,7 +44,7 @@ Vous verrez une liste d’applications et cette information :
 
 - Nom de l'application
 - Éditeur
-- Certification des applications
+- Certification M365
 
   Indique si l’application est compatible avec les technologies Microsoft, conforme aux meilleures pratiques de sécurité des applications cloud et prise en charge par Microsoft.
 
@@ -74,12 +74,12 @@ Le volet détails de l’application fournit des informations supplémentaires s
 | Nom de l’onglet | Description |
 |:-------|:-----|
 | Détails | Consultez des données supplémentaires sur l’application, telles que la date du premier consentement et l’ID d’application. Pour afficher les propriétés de l’application telles qu’inscrites dans Azure AD, sélectionnez **Afficher l’application dans Azure AD**. |
-| Utilisation | Consultez les données consultées par l’application dans le client, tracez l’utilisation des données et affichez l’utilisation par les utilisateurs \<x> principaux avec [comptes prioritaires](/microsoft-365/admin/setup/priority-accounts). |
+| Utilisation |Consultez les données auxquelles l’application accède dans le locataire et tracez l’utilisation des données pour les ressources Sharepoint et Exchange. |
 | Utilisateurs | Consultez la liste des utilisateurs qui utilisent l’application, s’il s’agit d’un compte prioritaire et la quantité de données téléchargées et chargées. |
 | Autorisations | Consultez un résumé des autorisations accordées et utilisées par l’application, ainsi que la liste des autorisations spécifiques. Pour plus d’informations, consultez la [référence des autorisations Microsoft Graph](/graph/permissions-reference). |
 |||
 
-Pour une application activée, il existe également un contrôle **Désactiver l’application** pour désactiver l’utilisation de l’application sélectionnée et un contrôle **Activer l’application** pour activer l’utilisation de l’application désactivée. Ces actions nécessitent ces [rôles d’administrateur](app-governance-get-started.md#administrator-roles):
+Pour une application activée, il existe également un contrôle **Désactiver l’application** pour désactiver l’utilisation de l’application sélectionnée et un contrôle **Activer l’application** pour activer l’utilisation de l’application désactivée. Ces actions nécessitent ces rôles d’administrateur :
 
 - Administrateur de conformité
 - Administrateur général

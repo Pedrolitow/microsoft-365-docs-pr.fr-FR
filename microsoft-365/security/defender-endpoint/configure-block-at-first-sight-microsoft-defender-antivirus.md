@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/17/2021
+ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: ef0805644112552c3ee9faf21f43decdfa42eeab
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007396"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664080"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 

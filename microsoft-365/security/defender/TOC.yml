@@ -116,8 +116,16 @@
               href: microsoft-secure-score-whats-new.md
         - name: Protéger vos identités
           items:
+            - name: Paramètres et intégrité du capteur
+              href: ../defender-identity/sensor-health.md
+            - name: Intégration VPN
+              href: ../defender-identity/vpn-integration.md
+            - name: Définir des balises d’entité
+              href: ../defender-identity/entity-tags.md
             - name: Gérer les alertes de sécurité
               href: ../defender-identity/manage-security-alerts.md
+            - name: Notifications par e-mail et syslog
+              href: ../defender-identity/notifications.md
     - name: Examiner les menaces et y répondre
       items:
         - name: Incidents
@@ -152,6 +160,22 @@
                       href: first-incident-path-phishing.md
                     - name: Identité
                       href: first-incident-path-identity.md
+            - name: Intégrer Microsoft 365 Defender à vos opérations de sécurité
+              items:
+                - name: Introduction
+                  href: integrate-microsoft-365-defender-secops.md
+                - name: Étape 1. La préparation des opérations.
+                  href: integrate-microsoft-365-defender-secops-plan.md
+                - name: Étape 2. Évaluation de la préparation à l’aide de la confiance zéro
+                  href: integrate-microsoft-365-defender-secops-readiness.md
+                - name: 'Étape 3 : Intégration à vos services SOC'
+                  href: integrate-microsoft-365-defender-secops-services.md
+                - name: 'Étape 4. Rôles, responsabilités et supervision'
+                  href: integrate-microsoft-365-defender-secops-roles.md
+                - name: Étape 5. Cas d’utilisation de test
+                  href: integrate-microsoft-365-defender-secops-use-cases.md
+                - name: Étape 6. Tâches de maintenance SOC
+                  href: integrate-microsoft-365-defender-secops-tasks.md
             - name: Playbooks de réponse aux incidents
               href: /security/compass/incident-response-playbooks
             - name: Notifications par e-mail

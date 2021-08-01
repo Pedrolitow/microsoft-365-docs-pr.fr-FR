@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Nous publions de nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365. Nous mettons également remplacé deux stratégies d’alerte existantes qui ont été mises hors service.
-ms.openlocfilehash: 5791c909cc9cb94abab5d0dd013d250939fae160
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d9515c4a6b4fead11f0b8f8b2eeb82d19b8dbf34
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289186"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621990"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365
 
@@ -99,7 +99,7 @@ Les nouvelles alertes seront lancées et déclencheront les Enquêtes et répons
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Ce que vous devez faire pour vous préparer à ces changements
 
-La façon dont votre organisation utilise ces alertes déterminera ce que vous devez effectuer pour vous préparer. Si vous avez mis en œuvre des alertes et que vous les utilisez ou les consommez via une API, une notification d’alerte par courrier ou dans le Centre de sécurité et conformité Office 365 (`https://protection.office.com/viewalerts`) ou le Centre de sécurité Microsoft (`https://security.microsoft.com/viewalerts`), vous devez modifier votre flux de travail.
+La façon dont votre organisation utilise ces alertes déterminera ce que vous devez effectuer pour vous préparer. Si vous avez mis en œuvre des alertes et que vous les utilisez ou les consommez via une API, une notification d’alerte par courrier ou dans le Centre de conformité Microsoft 365 (`https://compliance.mmicrosoft.com/viewalerts`) ou le Centre de sécurité Microsoft (`https://security.microsoft.com/viewalerts`), vous devez modifier votre flux de travail.
 
 **Si vous n’avez pas mis en œuvre ces alertes, vous pouvez effectuer l’une des opérations suivantes :**
 

@@ -1,5 +1,5 @@
 ---
-title: Utilisation du scanneur local de protection contre la perte de données Microsoft 365 (préversion)
+title: Utiliser le scanner local de prévention des pertes de données Microsoft 365
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment utiliser le scanneur de protection contre la perte de données Microsoft 365 en local pour analyser les données au repos, puis implémenter des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint locales.
-ms.openlocfilehash: b2512c47b82ab3624d892d349611dd3f1e5aed3c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 3d7c2e30092eee022fc0ed2a7ef6a8be7b82e3f1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289174"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657374"
 ---
-# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Utilisation du scanneur local de protection contre la perte de données Microsoft 365 (préversion)
+# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Utiliser le scanner local de prévention des pertes de données Microsoft 365 
 
 Pour vous familiariser avec les fonctionnalités locales DLP et la manière dont elles se trouvent dans les stratégies DLP, nous avons rassemblé certains scénarios que vous pouvez suivre.
 
@@ -48,7 +48,7 @@ Les données du scanneur local DLP apparaissent dans plusieurs zones
 
 #### <a name="microsoft-365-audit-log"></a>Journal d’audit Microsoft 365
 
-Dans la préversion publique, les correspondances de règle DLP sont disponibles dans l’interface utilisateur du journal d’audit. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Rechercher le journal d'audit dans le centre de conformité](search-the-audit-log-in-security-and-compliance.md). Elles sont également accessibles via [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
+Les correspondances de règle DLP sont disponibles dans l'interface utilisateur du journal d'audit, voir [Rechercher le journal d'audit dans le centre de conformité](search-the-audit-log-in-security-and-compliance.md) ou accessible par [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) dans PowerShell.
 
 #### <a name="aip"></a>AIP
 
@@ -80,8 +80,8 @@ Si vous souhaitez appliquer des règles DLP aux fichiers analysés, vous devez a
 
 ## <a name="see-also"></a>Voir aussi
 
-- [En savoir plus sur le scanneur local de protection contre la perte de données (préversion)](dlp-on-premises-scanner-learn.md)
-- [Prise en main du scanner local de protection contre la perte de données (préversion)](dlp-on-premises-scanner-get-started.md)
+- [En savoir plus sur le scanneur local de protection contre la perte de données](dlp-on-premises-scanner-learn.md)
+- [Prise en main du scanner local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md)
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
