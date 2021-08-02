@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Examinez les alertes de détection d’anomalies.
-ms.openlocfilehash: 41dd60de86d7583169845ae185f9f715011ea3e4
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: fd596e087bda442a36aa1fcf7d7b2ddafccfb106
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541372"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649730"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Examiner les alertes de détection d’anomalie
 
@@ -27,7 +27,7 @@ ms.locfileid: "53541372"
 
 ## <a name="mitre-attck"></a>MITRE ATT&CK
 
-Pour faciliter la mise en correspondance de la relation entre les alertes de gouvernance des applications Microsoft et la matrice MITRE ATT&CK familière, nous avons classé les alertes par tactique MITRE ATT&CK correspondante. Cette référence supplémentaire facilite la compréhension de la technique d’attaques suspectes potentiellement utilisée lorsque l’alerte de gouvernance des applications est déclenchée.
+Pour faciliter la cartographie de la relation entre les alertes de gouvernance des applications et la matrice familière MITRE ATT&CK, nous avons classé les alertes par leur tactique MITRE ATT&CK correspondante. Cette référence supplémentaire facilite la compréhension de la technique d’attaques suspectes potentiellement utilisée lorsque l’alerte de gouvernance des applications est déclenchée.
 
 Ce guide fournit des informations sur l’examen et la correction des alertes de gouvernance des applications dans les catégories suivantes.
 
@@ -41,21 +41,19 @@ Ce guide fournit des informations sur l’examen et la correction des alertes de
 - Exfiltration
 - Impact
 
-<!-->
 ## <a name="security-alert-classifications"></a>Classifications des alertes de sécurité
 
-Après examen correct, toutes les alertes de gouvernance des applications Microsoft peuvent être classées comme l’un des types d’activités suivants :
+Après une enquête appropriée, toutes les alertes de gouvernance d'application peuvent être classées dans l'un des types d'activité suivants :
 
 - Vrai positif (TP) : alerte sur une activité malveillante confirmée.
 - Vrai positif sans gravité (B-TP) : alerte en cas d’activité suspecte mais non malveillante, telle qu’un test d’intrusion ou toute autre action suspecte autorisée.
 - Faux positif (FP) : alerte sur une activité non malveillante.
--->
 
 ## <a name="general-investigation-steps"></a>Étapes d’investigation générales
 
 Utilisez les instructions générales suivantes lors de l’examen d’un type d’alerte pour mieux comprendre la menace potentielle avant d’appliquer l’action recommandée.
 
-- Passez en revue le niveau de gravité de l’application et comparez-le au reste de l’application dans votre client. Cette révision vous aidera à identifier les applications de votre client qui présentent le plus de risques.
+- Examinez le niveau de gravité de l'application et comparez-le avec le reste des applications de votre client. Cette révision vous aidera à identifier les applications de votre client qui présentent le plus de risques.
 - Si vous identifiez un TP, passez en revue toutes les activités de l’application pour mieux comprendre l’impact. Par exemple, passez en revue les informations d’application suivantes :
 
   - Étendues d’accès accordées
@@ -70,11 +68,11 @@ Cette section décrit les alertes indiquant qu’une application malveillante te
 
 **Gravité :** moyen
 
-**Description**: cette détection identifie les applications OAuth avec des caractères, tels que des caractères Unicode ou encodés, demandés pour les étendues de consentement suspectes et qui ont accédé aux dossiers de messagerie des utilisateurs via le API Graph. Cette alerte peut indiquer une tentative d’étiquetage d’une application malveillante en tant qu’application connue et approuvée afin que les adversaires puissent induire les utilisateurs en erreur en consentant à l’application malveillante.
+**Description**: cette détection identifie les applications OAuth avec des caractères, tels que des caractères Unicode ou codés, demandés pour des étendues de consentement suspectes et qui ont accédé aux dossiers de messagerie des utilisateurs via l'API Graph. Cette alerte peut indiquer une tentative d’étiquetage d’une application malveillante en tant qu’application connue et approuvée afin que les adversaires puissent induire les utilisateurs en erreur en consentant à l’application malveillante.
 
 **TP ou FP ?**
 
-- **TP**: si vous pouvez confirmer que l’application OAuth a encodé le nom complet avec des étendues suspectes fournies à partir d’une source inconnue, un vrai positif est indiqué.  
+- **TP**: si vous pouvez confirmer que l'application OAuth a encodé le nom d'affichage avec des étendues suspectes fournies par une source inconnue, un vrai positif est indiqué.  
 
   **Action recommandée**: vérifiez le niveau d’autorisation demandé par cette application et les utilisateurs auxquels l’accès a été accordé. En fonction de votre enquête, vous pouvez choisir d’interdire l’accès à cette application.
 
@@ -84,7 +82,7 @@ Cette section décrit les alertes indiquant qu’une application malveillante te
 
   **Action recommandée**: ignorer l’alerte.
 
-#### <a name="understand-the-scope-of-the-breach"></a>Comprendre l’étendue de la violation
+**Comprendre l’étendue de la violation**
 
 Suivez le didacticiel sur la façon d’[examiner les applications OAuth à risque](/cloud-app-security/investigate-risky-oauth).
 
@@ -106,7 +104,7 @@ Suivez le didacticiel sur la façon d’[examiner les applications OAuth à risq
 
   **Action recommandée**: ignorer l’alerte.
 
-#### <a name="understand-the-scope-of-the-breach"></a>Comprendre l’étendue de la violation 
+**Comprendre l’étendue de la violation**
 
 1. Passez en revue toutes les activités effectuées par l’application.
 1. Si vous pensez qu’une application est suspecte, nous vous recommandons d’examiner le nom et l’URL de réponse de l’application dans différents magasins d’applications. Lors de la vérification des magasins d’applications, concentrez-vous sur les types d’applications suivants :
@@ -114,6 +112,34 @@ Suivez le didacticiel sur la façon d’[examiner les applications OAuth à risq
    - Applications avec une URL de réponse suspecte
    - Applications qui n’ont pas été récemment mises à jour. L’absence de mises à jour peut indiquer que l’application n’est plus prise en charge.
 1. Si vous pensez toujours qu’une application est suspecte, vous pouvez rechercher le nom de l’application, le nom de l’éditeur et l’URL de réponse en ligne  
+
+### <a name="app-with-unusual-display-name-and-unusual-tld-inreply-domain"></a>Application avec un nom d’affichage inhabituel et un TLD inhabituel dans le Domaine de réponse  
+
+**Sévérité**: moyenne  
+
+**Description**
+
+Cette détection identifie l'application avec un nom d'affichage inhabituel et une redirection vers un domaine de réponse suspect avec un domaine de premier niveau inhabituel (TLD) via GraphAPI. Cela peut indiquer une tentative d’étiquetage d’une application malveillante ou risquée en tant qu'application connue et approuvée afin que les adversaires puissent induire les utilisateurs en consentant à l’application malveillante ou risquée.  
+
+**TP ou FP ?**
+
+- **TP**: si vous êtes en mesure de confirmer que l'application avec un nom d'affichage inhabituel provient d'une source inconnue et redirige vers un domaine suspect ayant un domaine de premier niveau inhabituel  
+
+    **action recommandée**: vérifiez le nom complet et le Domaine de réponse de l’application. En fonction de votre investigation, vous pouvez choisir d’interdire l’accès à cette application. Examinez le niveau d’autorisation demandé par cette application et les utilisateurs qui ont accordé l’accès.
+
+- **FP**: Si, après investigation, vous pouvez confirmer que l'application a une utilisation commerciale légitime dans l'organisation.
+
+    **Action recommandée**: ignorer l’alerte.
+
+**Comprendre l’étendue de la violation**
+
+Passez en revue toutes les activités effectuées par l’application. Si vous pensez qu'une application est suspecte, nous vous recommandons d'enquêter sur le nom et le domaine de réponse de l'application dans différents magasins d'applications. Lors de la vérification des magasins d’applications, concentrez-vous sur les types d’applications suivants :
+
+- Applications qui ont été créées récemment.
+- Application avec un nom d’affichage inhabituel
+- Applications avec une Domaine de réponse suspecte
+
+Si vous pensez toujours qu'une application est suspecte, vous pouvez rechercher le nom d'affichage de l'application et le domaine de réponse.
 
 ## <a name="persistence-alerts"></a>Alertes de persistance
 
@@ -139,11 +165,59 @@ Cette détection identifie une application OAuth qui a accepté des étendues su
 
   **Action recommandée**: ignorer l’alerte.
 
-#### <a name="understand-the-scope-of-the-breach"></a>Comprendre l’étendue de la violation
+**Comprendre l’étendue de la violation**
 
 1. Passez en revue toutes les activités effectuées par l’application.
 1. Passez en revue les étendues accordées par l’application.
 1. Passez en revue l’action et la condition de règle de boîte de réception créées par l’application.
+
+### <a name="app-accessed-from-unusual-location-post-certificate-update"></a>Application consultée à partir d’un emplacement inhabituel après la mise à jour du certificat
+
+**Sévérité**: faible
+
+**MITRE ID**: T1098
+
+Cette détection déclenche une alerte lorsqu'une application métier (LOB) a mis à jour le certificat/secret et quelques jours après la mise à jour du certificat, l'application a été consultée à partir d'un emplacement inhabituel qui n'a pas été vu récemment ou n'a jamais accédé dans le passé.
+
+**TP ou FP ?**
+
+- **TP**: si vous pouvez vérifier que l’application métier a accédé à partir d’un emplacement inhabituel et a effectué des activités inhabituelles via API Graph.
+
+    **Actions recommandée**: désactivez temporairement l’application et réinitialisez le mot de passe, puis réactivez l’application.
+
+- **FP**: si vous pouvez confirmer que l’application métier a accédé à partir d’un emplacement inhabituel à des fins légitimes et qu’aucune activité inhabituelle n’a été effectuée.
+
+    **Action recommandée**: ignorer l’alerte.
+
+**Comprendre l’étendue de la violation**
+
+1. Passez en revue toutes les activités effectuées par cette application.
+1. Passez en revue les étendues accordées par l’application.
+1. Examinez l'activité de l'utilisateur associée à cette application.
+
+### <a name="app-accessed-from-unusual-location-made-anomalous-graph-calls-post-certificate-update"></a>Application consultée à partir d’un emplacement inhabituel a fait des Appels graphiques anormaux après la mise à jour du certificat
+
+**Sévérité**: moyenne
+
+**MITRE ID**: T1098
+
+Cette détection déclenche une alerte lorsqu'une application métier (LOB) a mis à jour le certificat/secret et, quelques jours après la mise à jour du certificat, l'application a été consultée à partir d'un emplacement inhabituel qui n'a pas été vu récemment ou n'a jamais accédé dans le passé et a observé des activités ou utilisations inhabituelles via l'API Graph à l'aide d'un algorithme d'apprentissage automatique.
+
+**TP ou FP ?**
+
+- **TP**: si vous pouvez confirmer que des activités/utilisations inhabituelles ont été effectuées par l’application métier via API Graph à partir d’un emplacement inhabituel.
+
+    **Actions recommandée**: désactivez temporairement l’application et réinitialisez le mot de passe, puis réactivez l’application.
+
+- **FP**: si vous pouvez confirmer que l’application métier a accédé à partir d’un emplacement inhabituel à des fins légitimes et qu’aucune activité inhabituelle n’a été effectuée.
+
+    **Action recommandée**: ignorer l’alerte.
+
+**Comprendre l’étendue de la violation**
+
+1. Passez en revue toutes les activités effectuées par cette application.
+1. Passez en revue les étendues accordées par l’application.
+1. Examinez l'activité de l'utilisateur associée à cette application.
 
 ## <a name="collection-alerts"></a>Alertes de collecte
 
@@ -161,15 +235,38 @@ Cette détection identifie le moment où l’application OAuth métier accède �
 
 - **TP**: si vous pouvez confirmer que l’activité de graphe inhabituelle a été effectuée par l’application OAuth métier, un vrai positif est indiqué.
 
-  **Actions recommandées**: désactivez temporairement l’application et réinitialisez le mot de passe, puis réactivez l’application.
-
-  Suivez le didacticiel sur la réinitialisation d’un mot de passe à l’aide de Azure Active Directory.
+  **Actions recommandées**: désactivez temporairement l’application et réinitialisez le mot de passe, puis réactivez l’application. Suivez le didacticiel sur la réinitialisation d’un mot de passe à l’aide de Azure Active Directory.
 
 - **FP**: si vous pouvez confirmer que l’application est destinée à effectuer un volume anormalement élevé d’appels de graphe.
 
   **Action recommandée**: ignorer l’alerte.
 
-#### <a name="understand-the-scope-of-the-breach"></a>Comprendre l’étendue de la violation
+**Comprendre l’étendue de la violation**
 
 1. Consultez le journal d’activité des événements effectués par cette application pour mieux comprendre les autres activités Graph afin de lire les e-mails et de tenter de collecter les informations sensibles des utilisateurs.
 1. Recherchez les informations d’identification inattendues ajoutées à l’application.
+
+### <a name="app-creates-inbox-rule-and-made-unusual-email-searches-activities"></a>L’application crée une règle de boîte de réception et effectue des activités de recherche de courrier inhabituelles
+
+**Sévérité**: moyenne
+
+**MITRE IDs**: T1137 , T1114  
+
+Cette détection identifie l’application qui a accepté des étendues de privilèges élevés, crée une règle de boîte de réception suspecte et a effectué des activités de recherche d'e-mails inhabituelles dans les dossiers de messagerie des utilisateurs via l'API Graph. Cela peut indiquer une tentative de violation de votre organisation, par exemple des adversaires qui tentent de rechercher et de collecter des e-mails spécifiques de votre organisation via API Graph.
+
+**TP ou FP ?**
+
+- **TP**: si vous pouvez confirmer la recherche et la collecte d’e-mails spécifiques effectuées via API Graph par une application OAuth avec une étendue de privilèges élevés, et que l’application est fournie à partir d’une source inconnue.
+
+    **Action recommandée**: désactivez et supprimez l’application, réinitialisez le mot de passe et supprimez la règle de boîte de réception.
+
+- **fp**: si vous pouvez confirmer que l’application a effectué une recherche et une collecte de courriers spécifiques via API Graph et a créé une règle de boîte de réception dans un compte de messagerie externe nouveau ou personnel pour des raisons légitimes.
+
+    **Action recommandée**: ignorer l’alerte.
+
+**Comprendre l’étendue de la violation**
+
+1. Passez en revue toutes les activités effectuées par l’application.
+1. Passez en revue les étendues accordées par l’application.
+1. Examinez toute action de règle de boîte de réception créée par l'application.
+1. Passez en revue toutes les activités de recherche de courrier effectuées par l’application.

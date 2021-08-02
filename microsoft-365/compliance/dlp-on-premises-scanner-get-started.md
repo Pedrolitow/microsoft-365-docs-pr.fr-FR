@@ -1,5 +1,5 @@
 ---
-title: Prise en main du scanner local de protection contre la perte de données Microsoft 365 (préversion)
+title: Prise en main du scanner local de protection contre la perte de données Microsoft 365
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,26 +19,26 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurer un scanneur local de protection contre la perte de données Microsoft 365
-ms.openlocfilehash: 0390ac48b351b30b75109a3e3a5d18c80847c9d2
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: fbaf28c1a88f1654154cc53ce731d2f56bfae382
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289198"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657398"
 ---
-# <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Prise en main du scanneur local de protection contre la perte de données (préversion)
+# <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Prise en main du scanneur local de protection contre la perte de données(préversion)
 
-Cet article décrit les conditions préalables et la configuration du scanneur de protection contre la perte de données Microsoft 365.
+Cet article décrit les conditions préalables et la configuration du scanneur de protection contre la perte de données Microsoft 365.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 ### <a name="skusubscriptions-licensing"></a>Licences SKU/abonnements
 
-Avant de commencer à utiliser le scanneur local de DLP, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) et tous les modules complémentaires. Pour participer à la préversion du compte d’administrateur qui définit les règles DLP, une des licences suivantes doit être attribuée :
+Avant de commencer à utiliser le scanneur local de DLP, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) et tous les modules complémentaires. Le compte administrateur qui configure les règles DLP doit disposer de l'une des licences suivantes :
 
-- Microsoft 365 E5
-- Microsoft 365 E5 Conformité
-- Microsoft 365 E5, Protection des informations et gouvernance 
+- Microsoft 365 E5
+- Microsoft 365 E5 Conformité
+- Microsoft 365 E5, Protection des informations et gouvernance 
 
 
 Pour plus d’informations sur les licences, consultez [instructions relatives aux licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
@@ -70,7 +70,7 @@ Les données du scanneur local de protection contre la perte de données peuvent
 
 4. Connectez-vous à [Extension Azure Information Protection dans le Portail Azure](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) et ajoutez vos référentiels à la tâche d’analyse de contenu qui effectuera l’analyse.
 
-5. Pour exécuter votre analyse, exécutez l’une des analyses suivantes :
+5. Pour exécuter votre analyse, exécutez l’une des analyses suivantes :
     1. définir le planning du scanneur
     1. utiliser l’option manuel **Analyser maintenant** dans le portail
     1. ou exécuter l’applet de commande PowerShell **Start-AIPScan**
@@ -78,11 +78,11 @@ Les données du scanneur local de protection contre la perte de données peuvent
    > [!IMPORTANT]
    > N'oubliez pas que le scanneur effectue par défaut une analyse delta du référentiel et que les fichiers qui ont déjà été analysés lors du cycle d'analyse précédent seront ignorés, sauf si le fichier a été modifié ou si vous avez lancé une nouvelle analyse complète. La nouvelle analyse complète peut être lancée en utilisant l'option **Relancer l’analyse de tous les fichiers** dans l'interface utilisateur ou en exécutant **Start-AIPScan-Reset**.
 
-6.  Ouvrez la page de [Protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies) dans le Centre de conformité Microsoft 365.
+6.  Ouvrez la page de [Protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies) dans le Centre de conformité Microsoft 365.
 
-7. Choisissez **Créer une stratégie** et créez une stratégie DLP de test. Consultez [Créer une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md) si vous avez besoin d’aide pour créer une stratégie. N’oubliez pas de l’exécuter à l’essai jusqu’à ce que vous soyez à l’aise avec cette fonctionnalité. Utilisez les paramètres suivants pour votre stratégie :
+7. Choisissez **Créer une stratégie** et créez une stratégie DLP de test. Consultez [Créer une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md) si vous avez besoin d’aide pour créer une stratégie. N’oubliez pas de l’exécuter à l’essai jusqu’à ce que vous soyez à l’aise avec cette fonctionnalité. Utilisez les paramètres suivants pour votre stratégie :
     1. Limitez la règle du scanneur local de protection contre la perte de données à des emplacements spécifiques si nécessaire. Si vous définissez les **emplacements** comme **Tous**, tous les fichiers analysés par le scanneur seront soumis à la règle de correspondance et d'application du DLP.
-    1. Lorsque vous spécifiez les emplacements, vous pouvez utiliser une liste d’exclusion ou d’inclusion. Pendant la préversion publique, vous ne pouvez pas définir les deux. Vous pouvez soit définir que la règle ne s'applique qu'aux chemins d'accès correspondant à l'un des modèles figurant dans la liste d'inclusion, soit à tous les fichiers, à l'exception des fichiers correspondant au modèle figurant dans la liste d'inclusion. Aucun chemin d’accès local n’est pris en charge. Voici quelques exemples de chemins d’accès valides :
+    1. Lorsque vous spécifiez les emplacements, vous pouvez utiliser une liste d’exclusion ou d’inclusion. Vous pouvez soit définir que la règle ne s'applique qu'aux chemins d'accès correspondant à l'un des modèles figurant dans la liste d'inclusion, soit à tous les fichiers, à l'exception des fichiers correspondant au modèle figurant dans la liste d'inclusion. Aucun chemin d’accès local n’est pris en charge. Voici quelques exemples de chemins d’accès valides :
       - \\\server\share
       - \\\server\share\folder1\subfolderabc
       - \*\\dossier1
@@ -90,7 +90,7 @@ Les données du scanneur local de protection contre la perte de données peuvent
       - \*secret\*.\*
       - https:// sp2010.local/sites/HR
       - https://\*/HR 
-    3. Voici quelques exemples d'utilisation de valeurs inacceptables :
+    3. Voici quelques exemples d'utilisation de valeurs inacceptables :
       - \*
       - \*\\a
       - Aaa
@@ -102,32 +102,32 @@ Les données du scanneur local de protection contre la perte de données peuvent
 
 ### <a name="viewing-dlp-on-premises-scanner-alerts-in-dlp-alerts-management-dashboard"></a>Affichage des alertes du scanneur local de protection contre la perte de données dans le tableau de bord de Gestion des alertes DLP
 
-1. Ouvrez la page de [Protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies) dans le Centre de conformité Microsoft 365, puis sélectionnez **Alertes**.
+1. Ouvrez la page de [Protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies) dans le Centre de conformité Microsoft 365, puis sélectionnez **Alertes**.
 
 2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
 
 ### <a name="viewing-dlp-on-premises-scanner-in-activity-explorer-and-audit-log"></a>Affichage du scanneur local de protection contre la perte de données dans l’Explorateur d’activités et le journal d’audit
 
 > [!NOTE]
-> Le scanneur local nécessite que l’audit soit activé. L’audit Microsoft 365 est activé par défaut.
+> Le scanneur local nécessite que l’audit soit activé. L’audit Microsoft 365 est activé par défaut.
 
-1. Ouvrez la [Page classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le centre de conformité Microsoft 365, puis sélectionnez Explorateur d’activités.
+1. Ouvrez la [Page classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le centre de conformité Microsoft 365, puis sélectionnez Explorateur d’activités.
 
 2. Reportez-vous aux procédures décrites dans [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) pour accéder aux données de vos emplacements de scanneur local.
 
-3. Ouvrir le [Journal d'audit dans le Centre de conformité](https://security.microsoft.com/auditlogsearch). Pendant la préversion publique, les correspondances de règle DLP sont disponibles dans l’interface utilisateur du journal d’audit ou accessibles par [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell 
+3. Ouvrir le [Journal d'audit dans le Centre de conformité](https://security.microsoft.com/auditlogsearch). Les correspondances de règle DLP sont disponibles dans l'interface utilisateur du journal d'audit ou accessibles par [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell 
 
 
 ## <a name="next-steps"></a>Étapes suivantes
 Maintenant que vous avez déployé une stratégie de test pour les emplacements locaux de protection contre la perte de données et que vous pouvez afficher les données d’activité dans l’Explorateur d’activités, vous êtes prêt à passer à l’étape suivante dans laquelle vous créez des stratégies DLP qui protègent vos éléments sensibles.
 
-- [Utilisation de DLP en local (préversion)](dlp-on-premises-scanner-use.md)
+- [Utilisation de DLP en local](dlp-on-premises-scanner-use.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [En savoir plus sur le scanneur local de protection contre la perte de données (préversion)](dlp-on-premises-scanner-learn.md)
-- [Utiliser le scanneur local de protection contre la perte de données (préversion)](dlp-on-premises-scanner-use.md)
-- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
+- [En savoir plus sur le scanneur local de protection contre la perte de données](dlp-on-premises-scanner-learn.md)
+- [utiliser le scanneur local DLP](dlp-on-premises-scanner-use.md)
+- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
-- [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
+- [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

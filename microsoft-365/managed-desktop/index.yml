@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Documentation sur Microsoft Managed Desktop
-summary: Microsoft Managed Desktop est une solution ITaaS unique qui associe la gestion des points de terminaison et la surveillance de la sécurité de manière à offrir aux utilisateurs une expérience d’appareil sécurisée et productive qui mérite la confiance des professionnels de l’informatique.
+summary: Microsoft Managed Desktop est une solution ITaaS unique qui associe la gestion des points de terminaison et la surveillance de la sécurité de manière à offrir aux utilisateurs une expérience d’appareil sécurisée et productive digne de la confiance des professionnels de l’informatique.
 metadata:
   title: Documentation sur Microsoft Managed Desktop
   description: Microsoft Managed Desktop réunit Microsoft 365 Enterprise, la gestion des appareils basée sur le Cloud par Microsoft et la surveillance de la sécurité, ce qui vous permet de libérer vos équipes informatiques afin de vous concentrer sur les besoins fondamentaux de l’entreprise.
@@ -10,18 +10,18 @@ metadata:
   author: jaimeo
   ms.author: jaimeo
   ms.date: 12/04/2020
-  ms.openlocfilehash: b2feb587c93d9bc6f0bc208ad48f3bfff8266d5a
-  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+  ms.openlocfilehash: 20780ee49f9e43872a9c02c22714e2451522672f
+  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/19/2021
-  ms.locfileid: "50920631"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "53648434"
 landingContent:
 - title: À propos de bureau géré Microsoft
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que le bureau géré Microsoft ?
+    - text: Qu’est-ce que le bureau géré Microsoft ?
       url: ./intro/index.md
     - text: Description du service
       url: ./service-description/index.md
