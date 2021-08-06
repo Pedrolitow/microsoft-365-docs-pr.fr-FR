@@ -19,19 +19,19 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment importer du courrier électronique dans Microsoft 365 entreprise.
-ms.openlocfilehash: 7049642d071ff6b16a489a89c9355b35667a1e58
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment importer du courrier vers Microsoft 365 entreprise.
+ms.openlocfilehash: a40a51773dc62d11272eb02102c421aecf70f2b5a6c02a2867c94b47177668e6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578890"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843526"
 ---
 # <a name="import-email-to-microsoft-365-for-business"></a>Importer du courrier électronique Microsoft 365 entreprise 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 
-Après vous être Microsoft 365, il se peut que le courrier électronique soit toujours envoyé vers un ancien compte. par exemple, si vous avez utilisé un compte Gmail ou Outlook pour le travail. Vous pouvez continuer à utiliser les nouveaux et anciens comptes, ou vous pouvez importer les données de l’ancien compte dans votre nouveau.
+Après vous être Microsoft 365, il se peut que le courrier électronique soit toujours envoyé vers un ancien compte . par exemple, si vous avez utilisé un compte Gmail ou Outlook pour le travail. Vous pouvez continuer à utiliser les nouveaux et anciens comptes, ou vous pouvez importer les données de l’ancien compte dans votre nouveau.
 
 ## <a name="try-it"></a>Essayez !
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 088dbd16c3667331843ff934c80f85aa8d3a837f
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: ba3e607b54294a8aa61fd0a6c9c0d13e07f873035b0b98d336328b4c1e858bcf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430815"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799261"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender fonctionnalités d’aperçu
 

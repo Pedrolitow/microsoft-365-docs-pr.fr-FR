@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez les exigences et les considérations à prendre en compte pour effectuer le déplacement vers Microsoft 365 entreprise.
-ms.openlocfilehash: b4d2b5d500b73b62c67d3f8126b6313484e2bc78
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 5fc2d62eeeab21721c2e78d946a9e3afcb1b63f641823a27567f40208cbbb161
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297031"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821566"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier votre configuration de Microsoft 365 entreprise
 
@@ -62,7 +62,7 @@ Si vous êtes bloqué à un moment quelconque, contactez-nous. [Nous sommes là 
 
 Il existe quelques scénarios qui incluent la migration de données ou d’utilisateurs à partir d’environnements locaux ou la configuration d’un système hybride qui inclut la synchronisation d’annuaires. Si vous êtes dans l’une ou l’autre catégorie, suivez les instructions des articles suivants :
   
-- Pour configurer la synchronisation d’annuaires avec votre annuaire Active Directory local, voir Configurer la synchronisation d’annuaires pour [Microsoft 365](../../enterprise/set-up-directory-synchronization.md)et pour comprendre les différents modèles d’identité dans Microsoft 365, lisez Comprendre l’identité Microsoft 365 et [les Azure Active Directory](../../enterprise/about-microsoft-365-identity.md).
+- Pour configurer la synchronisation d’annuaires avec votre annuaire Active Directory local, consultez Configurer la synchronisation d’annuaires pour [Microsoft 365](../../enterprise/set-up-directory-synchronization.md)et pour comprendre les différents modèles d’identité dans Microsoft 365, lisez Comprendre l’identité Microsoft 365 et les [Azure Active Directory](../../enterprise/about-microsoft-365-identity.md).
 
 - Pour configurer un déploiement Exchange hybride, les instructions relatives aux différentes étapes (dont la configuration des enregistrements DNS) sont disponibles ici : [Assistant de déploiement Exchange Server](/exchange/exchange-deployment-assistant)
 
@@ -115,7 +115,7 @@ Si vous comptez utiliser Microsoft 365 pour votre compte de messagerie, vous pou
 
 ## <a name="plan-for-file-storage-and-migration"></a>Planifier le stockage et la migration de fichiers
 
-Microsoft 365 offre un stockage cloud pour les individus, les petites organisations et les entreprises. Pour obtenir des instructions sur les l’endroit où stocker, voir [Où stocker des documents dans Microsoft 365](../../business-video/store-files.md).
+Microsoft 365 offre un stockage cloud pour les individus, les petites organisations et les entreprises. Pour obtenir des instructions sur les l’endroit où stocker, voir Où stocker [des documents dans Microsoft 365](../../business-video/store-files.md).
   
 - **Vous pouvez déplacer des centaines de fichiers vers** [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) ou vers un [site d SharePoint’équipe.](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242) Vous pouvez charger jusqu'à 100 fichiers à la fois. Évitez de charger des fichiers d'une taille supérieure à 2 Go, soit la taille de fichier maximale par défaut.
   
@@ -123,7 +123,7 @@ Microsoft 365 offre un stockage cloud pour les individus, les petites organisati
   
 ## <a name="plan-for-teams"></a>Planifier les Teams
 
-Vous pouvez utiliser Microsoft Teams pour appeler d’autres personnes de votre organisation qui font appel à votre abonnement. Par exemple, si votre organisation compte 10 personnes, vous pouvez vous appeler et vous instantanér à l’aide de Teams sans configuration spéciale. Pour plus d’informations, [consultez La mise en Microsoft Teams](/MicrosoftTeams/get-started-with-teams-quick-start).
+Vous pouvez utiliser Microsoft Teams pour appeler d’autres personnes de votre organisation qui font appel à votre abonnement. Par exemple, si votre organisation compte 10 personnes, vous pouvez vous appeler et vous instantanér à l’aide Teams sans configuration spéciale. Pour plus d’informations, [consultez La mise en Microsoft Teams](/MicrosoftTeams/get-started-with-teams-quick-start).
 
 Pour les grandes organisations ou si vous débutez à partir de déploiements Skype Entreprise, locaux ou hybrides, voir comment déployer [Microsoft Teams](/MicrosoftTeams/how-to-roll-out-teams).
   
@@ -131,7 +131,7 @@ Pour les grandes organisations ou si vous débutez à partir de déploiements Sk
 
 - **Vous voulez opérer une intégration avec votre Active Directory en local ?** Vous pouvez intégrer votre annuaire Active Directory local à Microsoft 365 à l’aide Azure Active Directory Connecter. Pour obtenir des instructions, voir Configurer la synchronisation [d’annuaires pour Microsoft 365](../../enterprise/set-up-directory-synchronization.md).
   
-- **Souhaitez-vous intégrer des Microsoft 365 logiciels d’autres entreprises ?** Si vous devez intégrer des Microsoft 365 à d’autres logiciels de votre organisation, nous vous recommandons d’envisager d’engager un [partenaire](https://go.microsoft.com/fwlink/?linkid=391089) pour vous aider dans votre déploiement.
+- **Souhaitez-vous intégrer des Microsoft 365 logiciels d’autres entreprises ?** Si vous devez intégrer des Microsoft 365 à d’autres logiciels de votre organisation, nous vous recommandons d’envisager d’engager un partenaire pour vous aider dans votre déploiement. [](https://go.microsoft.com/fwlink/?linkid=391089)
   
 ## <a name="do-you-want-someone-to-help-you-set-up-microsoft-365"></a>Voulez-vous que quelqu’un vous aide à configurer Microsoft 365 ?
 

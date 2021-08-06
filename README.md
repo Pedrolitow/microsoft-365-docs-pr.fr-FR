@@ -1,8 +1,8 @@
-# <a name="overview"></a>Vue d’ensemble
+# <a name="overview"></a>Présentation
 
 ## <a name="learn-how-to-contribute"></a>Découvrez comment contribuer
 
-Toute personne intéressée peut contribuer aux rubriques. Lorsque vous contribuez, votre travail est directement placé dans l’ensemble de contenu après la fusion. Il s’affiche ensuite sur docs.microsoft.com et vous êtes répertorié en tant que collaborateur à <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors> l':.
+Toute personne intéressée peut contribuer aux rubriques. Lorsque vous contribuez, votre travail est directement placé dans l’ensemble de contenu après avoir été fusionné. Il s’affiche ensuite sur docs.microsoft.com et vous êtes répertorié en tant que collaborateur à <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors> l':.
 
 ### <a name="quickly-update-an-article-using-githubcom"></a>Mettre à jour rapidement un article à l’GitHub.com
 
@@ -42,7 +42,7 @@ Les collaborateurs qui ne font que des mises à jour rares ou de petite taille p
 
 Le rédacteur identifié dans les métadonnées de la rubrique sera averti et révisera et approuvera vos modifications afin que la rubrique soit mise à jour docs.microsoft.com. Si vous avez des questions ou des problèmes avec les mises à jour, le rédacteur vous contactera.
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite Open Source de Microsoft
+## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite Open Source de Microsoft
 
 Ce projet a adopté le [code de conduite Open Source de Microsoft](https://opensource.microsoft.com/codeofconduct/).
 

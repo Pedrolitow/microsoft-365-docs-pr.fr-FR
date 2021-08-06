@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 995f684d9bbc492ba63dadbc6394e1195a288d5416214de61d87b12bf3fdb16c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788354"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798685"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 

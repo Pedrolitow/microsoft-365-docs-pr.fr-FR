@@ -16,12 +16,12 @@ description: Utilisez l’Explorateur de menaces ou les détections en temps ré
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0ad5d73abae71cc7cc00e12665d96b2020da0c41
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 5d35478c81dc939e7c2cad686db638004e260e00b40ed185c92b8f07bae081ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798984"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Recherche de menaces dans l’Explorateur de menaces pour Microsoft Defender Office 365
 
@@ -59,7 +59,7 @@ Dans Microsoft Defender pour Office 365, il existe deux plans d’abonnement : P
 
 Defender pour Office 365 Plan 1 utilise les détections en temps réel, qui est un *sous-ensemble* de l’outil de repérage de l’Explorateur de menaces *(également* appelé *Explorateur)* dans le Plan 2. Dans cette série d’articles, la plupart des exemples ont été créés à l’aide de l’Explorateur de menaces complet. Les administrateurs doivent tester les étapes des détections en temps réel pour voir où elles s’appliquent.
 
-Une fois que vous êtes passé à l’Explorateur, par  défaut, vous arrivez sur la **page** Programmes malveillants, mais utilisez la page d’affichage pour vous familiariser avec vos options.  Si vous recherchez du hameçonnage ou si vous êtes en train d’entrer dans une campagne contre les menaces, choisissez ces affichages.
+Une fois que vous êtes dans l’Explorateur, par défaut,  vous arrivez sur la **page** Programmes malveillants, mais utilisez la page d’affichage pour vous familiariser avec vos options.  Si vous recherchez du hameçonnage ou si vous êtes en train d’entrer dans une campagne contre les menaces, choisissez ces affichages.
 
 > [!div class="mx-imgBorder"]
 > ![Afficher la vue dans l’Explorateur de menaces](../../media/view-drop-down.png)
@@ -79,7 +79,7 @@ Les affinements peuvent être effectués sur des plages de dates à l’aide des
 > [!div class="mx-imgBorder"]
 > ![Filtre avancé dans l’Explorateur de menaces](../../media/advanced-filter.png)
 
-Le fait **de** cliquer sur le filtre avancé fait apparaître un panneau qui permet aux chercheurs sec Ops de créer eux-mêmes des requêtes, ce qui leur permet d’inclure ou d’exclure les informations dont ils ont besoin. Le graphique et le tableau de la page Explorateur reflètent leurs résultats.
+Le fait **de** cliquer sur le filtre avancé fait apparaître un panneau qui permet aux chercheurs de Sec Ops de créer eux-mêmes des requêtes, ce qui leur permet d’inclure ou d’exclure les informations qu’ils ont besoin de voir. Le graphique et le tableau de la page Explorateur reflètent leurs résultats.
 
 > [!div class="mx-imgBorder"]
 > ![Résultats d’une requête](../../media/threat-explorer-chart-table.png)
@@ -169,7 +169,7 @@ Lorsque les analystes voient la colonne **Balises** dans la grille de courrier, 
 
 #### <a name="filtering"></a>Filtrage
 
-Les balises peuvent être utilisées comme filtres. Recherchez parmi les comptes prioritaires uniquement, ou utilisez des scénarios de balises utilisateur spécifiques de cette façon. Vous pouvez également exclure les résultats qui ont certaines balises. Combinez les balises avec d’autres filtres et plages de dates pour affiner votre portée d’examen.
+Les balises peuvent être utilisées comme filtres. Recherchez parmi les comptes prioritaires uniquement, ou utilisez des scénarios de balises utilisateur spécifiques de cette façon. Vous pouvez également exclure les résultats qui ont certaines balises. Combinez les balises avec d’autres filtres et plages de dates pour affiner votre portée d’enquête.
 
 [![Balises de filtre](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
@@ -178,7 +178,7 @@ Les balises peuvent être utilisées comme filtres. Recherchez parmi les comptes
 
 #### <a name="email-detail-flyout"></a>Flyout des détails des e-mails
 
-Pour afficher les balises individuelles de l’expéditeur et du destinataire, sélectionnez un e-mail pour ouvrir le volant des détails du message. Sous **l’onglet Résumé,** les balises de l’expéditeur et du destinataire sont affichées séparément. Les informations relatives aux balises individuelles pour l’expéditeur et le destinataire peuvent être exportées en tant que données CSV.
+Pour afficher les balises individuelles de l’expéditeur et du destinataire, sélectionnez un e-mail pour ouvrir le volant des détails du message. Sous **l’onglet Résumé,** les balises de l’expéditeur et du destinataire sont affichées séparément. Les informations relatives aux balises individuelles de l’expéditeur et du destinataire peuvent être exportées en tant que données CSV.
 
 > [!div class="mx-imgBorder"]
 > ![Balises de détails du courrier électronique](../../media/tags-flyout.png)
@@ -205,7 +205,7 @@ Les opérations de sécurité peuvent exporter la liste des utilisateurs ciblés
 
 ### <a name="exchange-transport-rules"></a>Exchange transport
 
-L’équipe des opérations de sécurité pourra voir toutes les règles de transport Exchange (ou règles de flux de messagerie) appliquées à un message, dans l’affichage Grille de messagerie. Sélectionnez **les options Colonne** dans la grille, puis Exchange règle de transport **à** partir des options de colonne. L Exchange des règles de transport est également visible dans le volant **Détails** de l’e-mail.
+L’équipe des opérations de sécurité pourra voir toutes les règles de transport Exchange (ou règles de flux de messagerie) appliquées à un message, dans l’affichage Grille de messagerie. Sélectionnez **les options Colonne** dans la grille, puis **ajoutez Exchange de transport à** partir des options de colonne. L Exchange des règles de transport est également visible dans le volant **Détails** de l’e-mail.
 
 Les noms et les GUID des règles de transport appliquées au message s’affichent. Les analystes pourront rechercher des messages à l’aide du nom de la règle de transport. Il s’agit d’une recherche CONTAINS, ce qui signifie que vous pouvez également effectuer des recherches partielles.
 
@@ -259,7 +259,7 @@ Pour en savoir plus sur les rôles et les autorisations, consultez les ressource
 - [Autorisations des fonctionnalités dans Exchange Online](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - [Rechercher et d’examiner l’e-mail malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
 - [Afficher les fichiers malveillants détectés dans SharePoint Online, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)

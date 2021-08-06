@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Migrez vos Windows, Office applications clientes et Office serveurs d’Microsoft 365 client.
-ms.openlocfilehash: 336dee2e62c6d0917c437252ba1d741c304998fa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9bef3b3128a43c75f5f465d22c82b0bc4431b53b7a86059dfc09ba982e4f94fd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798545"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 4. Migration de vos Microsoft 365 pour les locataires d’entreprise
 
 La plupart des organisations d’entreprise ont un environnement hétérogène qui inclut plusieurs sorties de systèmes d’exploitation, de logiciels clients et de logiciels serveur. Microsoft 365 entreprise inclut les versions les plus sécurisées des composants clés de votre infrastructure informatique. Il inclut également des fonctionnalités de productivité conçues pour tirer parti des technologies cloud.
 
-Pour optimiser la valeur commerciale de la Microsoft 365 pour la suite intégrée de produits d’entreprise, commencez à planifier et implémenter une stratégie pour migrer ces produits :
+Pour optimiser la valeur commerciale de la Microsoft 365 pour la suite intégrée de produits d’entreprise, commencez à planifier et à implémenter une stratégie pour migrer ces mises à jour :
 
 | De | À |
 |:-------|:-----|
@@ -68,7 +68,7 @@ Utilisez les ressources suivantes pour plus d’informations sur la migration de
 
 Pour obtenir une meilleure image de la façon de déplacer l’ensemble de votre organisation vers les produits et services Microsoft 365 entreprise, téléchargez cette affiche de transition :
 
-[![Image montrant l’affiche Transition vers Microsoft 365'affichage.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![Image montrant l’affiche Transition vers Microsoft 365 projet.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 Cette affiche de deux pages est un moyen rapide d'inventorier vos infrastructures existantes. Utilisez-le pour obtenir des conseils pour passer à un produit ou un service Microsoft 365 entreprise. Il présente les produits Windows et Office, ainsi que d’autres éléments d’infrastructure et de sécurité tels que la gestion des appareils, la protection des identités et des menaces, ainsi que la protection et la conformité des informations.
 

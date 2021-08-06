@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e3481b8adab6e5c777f6ba3eb4ad46a92a838a2d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: e29456631dc8401d1d805d0fae46c32a6c2575225d2b5d0d102553d68a2e4b08
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296682"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832690"
 ---
 # <a name="contact-support-for-aland-islands"></a>Contacter le support technique pour les îles Aland
 
@@ -31,8 +31,8 @@ ms.locfileid: "52296682"
 
 Anglais : Mon-Fri 10h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Frais d’appel local applicables

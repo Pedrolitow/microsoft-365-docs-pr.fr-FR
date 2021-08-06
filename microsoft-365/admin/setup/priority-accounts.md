@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Surveiller les messages électroniques ayant échoué et retardés envoyés vers ou depuis des comptes ayant un impact important sur l’entreprise.
-ms.openlocfilehash: 86e01e591823c94d8279f975ed7de24cc65776dc
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 63c394055f94370a09ea76cc8125a71f7061b2f3d6b66ff8106c76c2571f90cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286140"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821542"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Gérer et surveiller les comptes de priorité
 
@@ -91,6 +91,6 @@ Ajoutez des comptes de priorité à partir de la page Utilisateurs actifs.
 
 4. Dans la page **Comptes prioritaires,** sélectionnez l’utilisateur ou les utilisateurs que vous souhaitez supprimer de la liste, puis choisissez Supprimer **des comptes.**
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Utilisation de comptes prioritaires dans Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)

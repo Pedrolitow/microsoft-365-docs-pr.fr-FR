@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment participer à une Teams réunion avec des invités.
-ms.openlocfilehash: 781e1aa242270588ba50a025ca0dd71c06354ad0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6ebbd88e47423e12f5a1e118e274c1a8d24db9e30ab9c69ad4b23ee435bf547b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843538"
 ---
 # <a name="join-a-teams-meeting-with-guests"></a>Rejoindre une réunion Teams avec des invités
 
@@ -36,8 +36,8 @@ Avec Microsoft Teams, vous pouvez facilement participer à des réunions avec de
 ## <a name="try-it"></a>Essayez !
 
 1. Dans Microsoft Teams, choisissez **Calendrier** et recherchez votre réunion.
-1. Sélectionnez **Rejoindre,** décidez si vous souhaitez que votre caméra et votre microphone soient ou non sur ou non, puis **sélectionnez Rejoindre maintenant.**
-1. Si vous êtes un invité externe, ouvrez le courrier électronique que vous avez reçu à propos de la réunion et **sélectionnez Rejoindre Microsoft Teams réunion.**
+1. **Sélectionnez** Rejoindre, décidez si vous souhaitez que votre caméra et votre microphone soient ou non sur ou non, puis **sélectionnez Rejoindre maintenant.**
+1. Si vous êtes un invité externe, ouvrez le courrier électronique que vous avez reçu à propos de la réunion et sélectionnez **Rejoindre Microsoft Teams réunion.**
 
     Si vous ne souhaitez pas télécharger l’application, choisissez **Rejoindre sur le web** à la place.
 1. Entrez votre nom et sélectionnez **Rejoindre maintenant.**

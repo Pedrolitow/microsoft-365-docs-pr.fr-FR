@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment installer des Outlook et d’autres Office sur les appareils Android.
-ms.openlocfilehash: d474f8abed48844bbe8e92be62ede6da5056fe9a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ddbbdd156a603bb15172ad272b861ae0542a884e4851b45e01d27899f6be94c1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843550"
 ---
 # <a name="install-outlook-and-office-apps-on-android-devices"></a>Installer Outlook et Office applications sur les appareils Android
 
@@ -40,7 +40,7 @@ Si votre appareil Android est géré par Microsoft 365 Business Premium, vous po
 3. On the Outlook welcome screen, choose **Get started**.
 4. Dans la page **Ajouter un** compte, entrez votre adresse Microsoft 365 de messagerie, puis choisissez **Continuer.**
 5. Sous **Entrer votre mot de** passe, tapez votre mot de passe, puis choisissez Se **connectez.**
-6. Sur la page suivante,  **sélectionnez Continuer**  si vous souhaitez ajouter un autre compte. Dans le cas contraire, **sélectionnez Ignorer.**
-7. When prompted to add the Portail d’entreprise Intune app, choose **Go to store**.
+6. Sur la page suivante,  **sélectionnez Continuer**  si vous souhaitez ajouter un autre compte. Dans le cas contraire, choisissez  **Skip**.
+7. Lorsque vous y invitez l’Portail d’entreprise Intune’application, choisissez **Go to store**.
 8. Installez et ouvrez l’application portail d’entreprise Intune, puis choisissez  **OK**  lorsque vous voyez le message que votre organisation protège les données dans cette application.
-9. Si vous êtes invité à entrer un code confidentiel, entrez un code confidentiel à 4 chiffres que vous&#39;utiliserez pour déverrouiller votre téléphone, choisissez  **Envoyer,** confirmez votre code confidentiel, puis choisissez Envoyer  **à**  nouveau.
+9. Si vous êtes invité à entrer un code confidentiel, entrez un code confidentiel à 4 chiffres que vous&#39;utiliserez pour déverrouiller votre téléphone, choisissez **Envoyer,** confirmez votre code confidentiel, puis choisissez Envoyer à **nouveau.**

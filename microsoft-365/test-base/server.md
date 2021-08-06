@@ -14,26 +14,26 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 38e20e1eae61236c35c6e4783702e8e87ec02e56
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 70ad9d19fac15f7fb0b996a5afc759a0c3e69279d79bea406da9d22d314a4f56
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798497"
 ---
 # <a name="windows-server-application-testing"></a>Windows Test des applications serveur
 
-Avec Test Base for Microsoft 365, vous pouvez désormais valider vos applications par rapport à Windows Server 2016 2019, y compris Server Core !
+Avec Test Base for Microsoft 365, vous pouvez désormais valider vos applications par rapport à Windows Server 2016 et 2019, y compris Server Core !
 
 Pour commencer à valider vos applications téléchargées par rapport aux mises à jour de pré-publication pour les systèmes d’exploitation Windows Server 2016 et 2019 sur la base de test pour Microsoft 365, respectez les étapes suivantes :
 
-1. Connectez-vous à notre portail d’intégration en libre-service. Dans le menu de navigation de gauche, `Upload new package` sélectionnez sous `Package catalogue` et remplissez les détails du test.
+1. Connectez-vous à notre portail d’intégration en libre-service. Dans le menu de navigation de gauche, sélectionnez `Upload new package` sous `Package catalogue` et remplissez les détails du test.
 
 2. Sélectionnez `Security updates` le type de mise à jour du système d’exploitation :
 
    ![Sélectionner les mises à jour de sécurité](Media/selecting-security-updates.png)
 
-3. Sous les versions de système d’exploitation à tester, sélectionnez les versions de système d’exploitation applicables. Vous pouvez sélectionner Windows versions du système d’exploitation du serveur ou une combinaison de versions de serveur et de système d’exploitation client.
+3. Sous les versions du système d’exploitation à tester, sélectionnez les versions de système d’exploitation applicables. Vous pouvez sélectionner Windows versions du système d’exploitation du serveur ou une combinaison de versions de serveur et de système d’exploitation client.
 
    ![Sélectionner la version du système d’exploitation](Media/selecting-OS-versions.png)
 

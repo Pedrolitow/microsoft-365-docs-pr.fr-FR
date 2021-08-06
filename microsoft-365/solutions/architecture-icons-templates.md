@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 507d0162002a93b26d3eea1c427128f35bd3ec4e
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 2aa3cab705b8ed872c0f06c3f215fe8fde713322d9bfa45a0123b0ca5fbcb682
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688731"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53777717"
 ---
 # <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365 et modèles d’architecture
 

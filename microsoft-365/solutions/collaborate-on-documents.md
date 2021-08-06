@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Dans cet article, vous allez découvrir comment collaborer avec des invités sur un document SharePoint et OneDrive.
-ms.openlocfilehash: 338c7f32944bccb766ed923c12a9fceee4d81db8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 725e500990697a54b1892c428353790f2aaf9091d2789e0d20f648eb7af87266
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810133"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborer avec des invités sur un document
 
@@ -37,7 +37,7 @@ Cette vidéo décrit les étapes de configuration décrites dans ce document.</b
 
 ## <a name="azure-external-collaboration-settings"></a>Paramètres de collaboration externe Azure
 
-Le partage dans Microsoft 365 est régi à son niveau le plus élevé par les [paramètres de collaboration externe B2B dans Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
+Le partage dans Microsoft 365 est régi à son niveau le plus élevé par les [paramètres de collaboration externe B2B dans Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
 
 Vérifiez les paramètres de collaboration externe B2B pour vous assurer que le partage avec des invités n’est pas bloqué.
 
@@ -62,7 +62,7 @@ Pour que les personnes extérieures à votre organisation ont accès à un docum
 
 Les paramètres au niveau de l’SharePoint déterminent les paramètres qui seront disponibles pour les sites SharePoint individuels. Les paramètres de site ne peuvent pas être plus permissifs que les paramètres au niveau de l’organisation. Le paramètre au niveau de l’OneDrive détermine le niveau de partage qui sera disponible dans les bibliothèques OneDrive utilisateurs.
 
-Pour SharePoint et OneDrive, si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifiés, choisissez Tout le **monde.** Si vous souhaitez vous assurer que les personnes extérieures à votre organisation doivent s’authentifier, choisissez Invités nouveaux **et existants.** *Les* liens tout le monde sont le moyen le plus simple de partager : les personnes extérieures à votre organisation peuvent ouvrir le lien sans authentification et sont libres de le transmettre à d’autres personnes.
+Pour SharePoint et OneDrive, si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifiés, choisissez Tout le **monde.** Si vous souhaitez vous assurer que les personnes extérieures à votre organisation doivent s’authentifier, choisissez Invités nouveaux **et existants.** *Tout* le monde est le moyen le plus simple de partager : les personnes extérieures à votre organisation peuvent ouvrir le lien sans authentification et sont libres de le transmettre à d’autres personnes.
 
 Pour SharePoint, choisissez le paramètre le plus permissif qui sera nécessaire à n’importe quel site de votre organisation.
 
@@ -71,7 +71,7 @@ Pour SharePoint, choisissez le paramètre le plus permissif qui sera nécessaire
 
 Pour définir les paramètres de partage SharePoint au niveau de l’organisation
 
-1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation gauche, sous **Centres d’administration**, cliquez sur **SharePoint**.
+1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation gauche, sous **Centres d’administration**, cliquez sur **SharePoint**.
 2. Dans le SharePoint d’administration, dans le volet de navigation de gauche, sous **Stratégies,** cliquez sur **Partage.**
 3. Assurez-vous que le partage externe pour SharePoint ou OneDrive est définie sur **Tout** le monde ou Nouveau **et les invités existants.** (Notez que le paramètre OneDrive ne peut pas être plus permissif que le SharePoint paramètre.)
 4. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
@@ -85,8 +85,8 @@ N’oubliez pas que ce paramètre affecte SharePoint sites de votre organisation
 Choisissez un lien parmi les types suivants, qui est ensuite sélectionné par défaut lorsque les utilisateurs partagent des fichiers et des dossiers :
 
 - **Toute personne partageant le lien** : choisissez cette option si vous prévoyez d’avoir un grand nombre de partages de fichiers et de dossiers non authentifiés. Si vous souhaitez autoriser les liens à *Tout le monde* mais que vous craignez un partage accidentel non authentifié, envisagez l'une des autres options comme valeur par défaut. Ce type de lien n’est disponible que si vous avez activé le partage **Tout le monde**.
-- **Uniquement les personnes de votre organisation** : choisissez cette option si vous souhaitez que la plupart des partages de fichiers et de dossiers soient avec des personnes de votre organisation.
-- **Personnes spécifiques** : envisagez cette option si vous prévoyez de partager beaucoup de fichiers et de dossiers avec vos invités. Ce type de lien fonctionne avec les invités et exige leur authentification.
+- **Uniquement les personnes de votre organisation** : choisissez cette option si vous souhaitez que la plupart des partages de fichiers et de dossiers soient avec des personnes de votre organisation.
+- **Personnes spécifiques** : envisagez cette option si vous prévoyez de partager beaucoup de fichiers et de dossiers avec vos invités. Ce type de lien fonctionne avec les invités et exige leur authentification.
  
 ![Capture d’écran des paramètres de partage de fichiers et dossiers au niveau de l’organisation dans SharePoint](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -132,7 +132,7 @@ Pour définir les paramètres au niveau du site
 
 ## <a name="invite-users"></a>Inviter des utilisateurs
 
-Les paramètres de partage d’invités sont désormais configurés ; afin que les utilisateurs peuvent désormais partager des fichiers et des dossiers avec des personnes extérieures à votre organisation. Pour [plus d OneDrive,](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) voir Partager des fichiers et des dossiers et Partager SharePoint fichiers ou [dossiers.](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)
+Les paramètres de partage d’invités sont désormais configurés ; afin que les utilisateurs peuvent désormais partager des fichiers et des dossiers avec des personnes extérieures à votre organisation. Pour [plus d OneDrive, voir](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) Partager des fichiers et des dossiers et Partager SharePoint fichiers ou [dossiers.](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)
 
 ## <a name="see-also"></a>Voir aussi
 

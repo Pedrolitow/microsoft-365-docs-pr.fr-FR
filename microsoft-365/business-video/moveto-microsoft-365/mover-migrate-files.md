@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment migrer des fichiers Google vers Microsoft 365 entreprise à l’aide de Mover.
-ms.openlocfilehash: 6feabff7e36e84f7dba56e74333648325cf43920
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6791655f5ee8a9fc867266d5fe153cde6ec9adaa6148191c4c0eb3aedbfe0141
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843490"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Migrer des fichiers Google vers Microsoft 365 entreprise 
 
@@ -35,7 +35,7 @@ ms.locfileid: "50913573"
 Lorsque vous migrez vers Microsoft 365 entreprise, vous souhaiterez migrer vos fichiers à partir de Google Drive. Vous pouvez utiliser l’application Mover pour déplacer des fichiers à partir de lecteurs personnels et partagés. Pour plus d’informations, [voir Migration cloud de Mover.](/sharepointmigration/mover-plan-migration)
 
 > [!NOTE]
-> Mover effectuera une copie des fichiers et déplacera les copies vers Microsoft 365 entreprise. Les fichiers d’origine resteront également dans Google Drives.
+> Mover effectuera une copie des fichiers et déplacera les copies vers Microsoft 365 entreprise. Les fichiers d’origine restent également dans Google Drives.
 
 ## <a name="before-you-start"></a>Avant de commencer
 
@@ -45,7 +45,7 @@ Tous les utilisateurs doivent s’être Microsoft 365 pour les entreprises et co
 
 ### <a name="install-mover"></a>Installer Mover
 
-1. Connectez-vous à votre console d’administration Google Workspace [à l’admin.google.com](https://admin.google.com).
+1. Connectez-vous à votre console d’administration Google Workspace [admin.google.com](https://admin.google.com).
 
 1. Choose **Apps**  >  **Google Workspace Marketplace apps** Add app to Domain Install  >  **list**.
 
@@ -73,7 +73,7 @@ Tous les utilisateurs doivent s’être Microsoft 365 pour les entreprises et co
 1. Choose **Properties** and verify that **User assignment required?** is turned on.
 1. Revenir à l’application Mover, modifier le nom **complet,** si vous le souhaitez, choisissez **Autoriser,** puis sélectionnez un compte d’administrateur Microsoft.
 
-    Mover vous informe du nombre de sites SharePoint Online (ou SPO) et d’utilisateurs qu’il a découverts.
+    Mover vous informe du nombre de sites et d’utilisateurs SharePoint Online (ou SPO) qu’il a découverts.
 1. Choisissez **Continuer le programme d’installation de** la migration, **sélectionnez Ajouter des** utilisateurs, puis découvrir et ajouter automatiquement des **utilisateurs.**
 
     L’application Mover tentera de maser les lecteurs du chemin d’accès source dans Google au chemin d’accès de destination dans Microsoft 365. 
@@ -85,7 +85,7 @@ Tous les utilisateurs doivent s’être Microsoft 365 pour les entreprises et co
 
     Pour plus [d’informations, voir aka.ms/movercsv](/sharepointmigration/mover-create-migration-csv).
 
-    Lorsque vous ajoutez l’URL du chemin d’accès de destination, supprimez tout le texte après documents partagés. Par exemple, cette URL complète ne fonctionnera pas : `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
+    Lorsque vous ajoutez l’URL du chemin d’accès de destination, supprimez tout le texte après documents partagés. Par exemple, cette URL complète ne fonctionnera pas : `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
 
     Remplacez-la par : `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents`
 

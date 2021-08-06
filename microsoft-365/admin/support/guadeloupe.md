@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 65c99efd51ebe79eac04301765c78a94f16d01d7
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: d905216b7532dfe4ee36e389c41c9ed25c79687c38e1bed54ab457c342d9828a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809921"
 ---
 # <a name="contact-support-for-guadeloupe"></a>Contacter le support technique dePérs
 
@@ -33,10 +33,10 @@ Français : Mon-Fri 6 h à midi
 
 Anglais : Mon-Fri 6 h-13 h
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Français : Mon-Fri 18h00 à 13h00
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5fd2406c4619616e3460fe6afe63cc2cd25ab6c8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 35b93728f4c7f68b6892e2ebbde8f29b11e8b3984055500506a0b82044fbfeba
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297439"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843754"
 ---
 # <a name="contact-support-for-venezuela"></a>Contacter le support pour le Venezuela
 
@@ -31,6 +31,6 @@ ms.locfileid: "52297439"
 
 Espagnol : Mon-Fri 9 h à 17 h
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Espagnol : 24 heures sur 24, 7 jours sur 7

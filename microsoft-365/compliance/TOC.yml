@@ -968,8 +968,6 @@
           href: compliance-manager-mcca.md
         - name: Forum aux questions (FAQ)
           href: compliance-manager-faq.yml
-        - name: Gestionnaire de conformité (classique)
-          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Portail d’approbation de services Microsoft
       href: get-started-with-service-trust-portal.md
     - name: Conseils spécifiques par secteurs

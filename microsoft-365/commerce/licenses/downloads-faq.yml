@@ -14,16 +14,16 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: Questions fréquemment posées sur Centre d’administration Microsoft 365 téléchargements.
-  ms.openlocfilehash: 2ed0caddf9333dba8eaa9ec03d63cf6039287c6e
-  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+  ms.openlocfilehash: 9b487a4b6fdb517267a9af2d65112bee4af715260ef6e53a82823dd7929c64e8
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/29/2021
-  ms.locfileid: "53651626"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53843346"
 title: Télécharge les questions fréquemment posées
 summary: ''
 sections:
-- name: Généralités
+- name: Général
   questions:
   - question: >
       Quelles sont les conditions requises pour télécharger des logiciels à partir du Centre d’administration Microsoft 365 ?
@@ -68,7 +68,7 @@ sections:
         - Le [package Office pour Mac’installation .](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) Les fichiers de package du programme d’installation pour des applications individuelles sont également disponibles sur le Centre d’administration Microsoft 365. Office pour Mac ne nécessite pas de clé de produit, car le sérialisateur VL est utilisé pour activer une version avec licence en volume de Office pour Mac.
   - question: >
       Comment télécharger des produits dans le Centre d’administration ?
-    answer: "Pour télécharger des produits dans le Centre d’administration :\n1. Sélectionnez **licences** en volume, puis sélectionnez le produit ou **afficher les téléchargements**.\n2. Sous **Télécharger,** sélectionnez un composant et sélectionnez une action de téléchargement ou l’icône de téléchargement. \n\nPour accéder aux téléchargements dans le Centre d’administration, un administrateur VLSC de votre organisation peut fournir l’accès en vous attribuant l’un des rôles ci-après :\n  - Administrateur\n  - Télécharger\n  - Software Assurance Manager\n"
+    answer: "Pour télécharger des produits dans le Centre d’administration :\n1. Sélectionnez **licences** en volume, puis sélectionnez le produit ou **afficher les téléchargements**.\n2. Sous **Télécharger,** sélectionnez un composant et sélectionnez une action de téléchargement ou l’icône de téléchargement. \n\nPour accéder aux téléchargements dans le Centre d’administration, un administrateur VLSC de votre organisation peut fournir l’accès en vous attribuant l’un des rôles ci-après :\n  - Administrateur\n  - Télécharger\n  - Gestionnaire Software Assurance\n"
   - question: >
       Comment modifier mes paramètres de téléchargement ?
     answer: >
@@ -104,7 +104,7 @@ sections:
   - question: >
       Où puis-je trouver de l’aide pour les rubriques couvertes dans ce FAQ ?
     answer: >
-      Pour plus de ressources de formation, y compris des vidéos, voir la formation et les ressources du Centre de gestion des [licences en volume Microsoft.](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)
+      Pour plus de ressources de formation, y compris des vidéos, voir la formation et les ressources du Centre de gestion des licences [en volume Microsoft.](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)
   - question: >
       Comment puis-je contacter le Support Microsoft ?
     answer: >

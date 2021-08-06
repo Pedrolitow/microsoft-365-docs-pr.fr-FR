@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment héberger des réunions en ligne pour votre entreprise.
-ms.openlocfilehash: 9874e22724dd04255fb6109b5fb268ac2dcd3f95
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7b744410f8553a6da384142d6edc9a2377a8d8d74539dcb62d8011fdc045e988
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244895"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843506"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Héberger des réunions en ligne pour votre entreprise
 
@@ -47,8 +47,8 @@ Pour planifier des réunions avec vos employés, clients et autres invités, uti
 
 1. In Microsoft Teams, in the left navigation, choose **Meetings**.
 1. Choisissez **Planifier une réunion.**
-1. Dans la **zone Nouvelle réunion,** entrez un **titre et** un **emplacement** pour la réunion.
-1. Entrez une **heure et** **une** date de début et de fin.
+1. Dans la **zone Nouvelle réunion,** entrez un titre **et** un **emplacement** pour la réunion.
+1. Entrez une heure et **une** date **de** début et de fin.
 1. Dans la **zone Détails,** entrez une description de la réunion et tous les autres détails que vous souhaitez ajouter, tels qu’un ordre du jour de la réunion.
 1. Sous **Inviter des personnes,** entrez les noms des employés ou des clients que vous voulez inviter.
 1. Si vous voyez **Provisoire** ou **Occupé** sous  n’importe quel nom, choisissez l’une des heures gratuites fournies ou cliquez sur Assistant Planification **pour** plus d’options.
@@ -69,7 +69,7 @@ Utilisez Microsoft Teams pour participer à des réunions avec des employés de 
  
 ## <a name="3-have-an-impromptu-meeting"></a>3. Avoir une réunion impromptue
 
-Vous pouvez facilement convertir une conversation dans Microsoft Teams en réunion. Il vous suffit **de choisir le** bouton d’appel vidéo ou le bouton :::image type="icon" source="../media/video-call-icon.png" border="false"::: **d’appel audio** pour démarrer un :::image type="icon" source="../media/audio-call-icon.png" border="false"::: appel. Vous pouvez également ajouter des personnes à l’appel s’il doit se transformer en discussion de groupe.
+Vous pouvez facilement convertir une conversation dans Microsoft Teams réunion. Il vous suffit **de choisir le** bouton d’appel vidéo ou le bouton :::image type="icon" source="../media/video-call-icon.png" border="false"::: **d’appel audio** pour démarrer un :::image type="icon" source="../media/audio-call-icon.png" border="false"::: appel. Vous pouvez également ajouter des personnes à l’appel s’il doit se transformer en discussion de groupe.
 
 Vous avez besoin d’aide ? Voir [Démarrer un appel à partir d’une conversation dans Teams](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798).
 

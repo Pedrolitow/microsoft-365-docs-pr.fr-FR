@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 396611563f40fb52ddd58f0c6f99af9e25c97c1c
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f92a586ae44c926193132fb7a994895579cbfe0f049abcd96547f29f5922a9f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295529"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809885"
 ---
 # <a name="contact-support-for-puerto-rico"></a>Contacter le support de Porto Rico
 
@@ -37,4 +37,4 @@ Anglais : Lun.-ven. 9H-17h
 
 Espagnol : 24 heures sur 24, 7 jours sur 7
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7

@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes Microsoft 365 Defender service
 description: Trouver des solutions et des solutions de contournement pour les problèmes Microsoft 365 Defender connus
-keywords: résoudre Microsoft 365 Defender, résoudre les problèmes, Microsoft Defender pour l’identité, problèmes, module add-on, page de paramètres
+keywords: résoudre les Microsoft 365 Defender, résoudre les problèmes, Microsoft Defender pour l’identité, problèmes, modules, page de paramètres
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7891d61de7581a896a6599004eae91a4e47e1581
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 9b60adc266de6b99f61712d2d8303fc22c4cb9e1bf44d99bdc66f16c2a5a09d0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53792604"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Résoudre les problèmes Microsoft 365 Defender service
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez la différence entre l’Assistant Installation et la page Installation.
-ms.openlocfilehash: 5e081df7800b5e1f3400f1525afddf2c230a13e4
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 18dd1e6cd2aae0c1222bc0a63025c413946dbd8619231c307ec5a938c97a1bef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579109"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821690"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Différence entre l’Assistant Installation et la page Installation
 
@@ -62,10 +62,10 @@ Vous verrez la liste complète des tâches d’installation organisées en caté
 
 Choisissez  Afficher pour toute tâche afin d’obtenir des informations rapides, telles que la description de la tâche, l’impact sur l’utilisateur, les conditions préalables, l’effort à implémenter et les statistiques de sécurité et d’adoption pour vous aider à comprendre les conséquences et l’impact avant de poursuivre.
 
-Vous verrez également l’état de la tâche (**démarrée,** pas **encore** démarrée ou **terminée).** Si vous travaillez à plusieurs tâches, que vous travaillez sur des tâches sur plusieurs jours ou si plusieurs administrateurs travaillent sur des tâches, vous pouvez effectuer le suivi en un coup d’œil des tâches qui ont été effectuées et de ceux qui nécessitent encore une attention particulière. 
+Vous verrez également l’état de la tâche (**démarrée,** pas **encore** démarrée ou **terminée).** Si vous travaillez sur plusieurs tâches, si vous travaillez sur des tâches sur plusieurs jours ou si plusieurs administrateurs travaillent sur des tâches, vous pouvez effectuer le suivi en un coup d’œil des tâches qui ont été achevées et de ceux qui nécessitent encore une attention particulière. 
 
 Pour accéder à des articles complets sur les fonctionnalités que vous êtes en train de définir, sélectionnez l’un des liens En **savoir plus.** La collection de tâches est toujours là, afin que vous pouvez revenir à la page **d’installation** à tout moment pour explorer davantage les ressources.
 
-Lorsque vous êtes prêt à effectuer une tâche, sélectionnez **Commencer** à parcourir le processus de configuration. Une fois que vous  avez terminé une  tâche, le bouton Démarrer se transforme en bouton Gérer, ce qui vous permet de gérer la tâche, selon vos besoins.
+Lorsque vous êtes prêt à effectuer une tâche, sélectionnez **Commencer** à parcourir le processus de configuration. Une fois que vous  avez terminé une  tâche, le bouton Démarrer se transforme en bouton Gérer, ce qui vous permet de gérer la tâche, si nécessaire.
 
 ![Affichage des tâches affichant des informations d’un coup d’œil](../../media/o365b-at-a-glance.png)

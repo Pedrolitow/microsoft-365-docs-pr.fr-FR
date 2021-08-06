@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un site de communication pour votre campagne ou votre entreprise.
-ms.openlocfilehash: c79f51e43bf3828826adbe25396132d28902722c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d34ab2f5360db1d756cb97a66bb87e443b86605f4864b1f8fdd827504c8829c1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843461"
 ---
 # <a name="create-a-communications-site"></a>Créer un site de communication
 
@@ -42,7 +42,7 @@ Incluez les éléments suivants dans votre site de communications :
 2. Dirigez votre stratégie, votre message, vos documents importants, un répertoire et votre FAQ dans **un élément Web Part Hero.**
 3. Incluez une déclaration de PDG ou de candidat à l’équipe dans un **partie Web De texte**.
 4. Ajoutez des événements à un volet **Web** Événements afin que tout le monde puisse voir ce qui arrive.
-5. Ajoutez des photos que les personnes peuvent utiliser ou partager dans un partie **Web De galerie d’images**.
+5. Ajoutez des photos que les personnes peuvent utiliser ou partager dans un partie **web de la galerie d’images.**
 
 ![Diagramme d’une page SharePoint communications avec espace pour les éléments communs nécessaires à une campagne](../media/m365-democracy-comms-site.png)
 
