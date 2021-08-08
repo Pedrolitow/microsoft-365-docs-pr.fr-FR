@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 155686b79129e42be3858f9a77cfbd9fad86a0ec
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 5c208440287723367b875f3278fc69425a03b80d93a8f8b1ec4c574a31efb7ec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844289"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Intégration VPN De Defender pour l’identité dans Microsoft 365 Defender
 
@@ -24,7 +24,7 @@ ms.locfileid: "53544136"
 Cet article explique comment intégrer un VPN à [Microsoft Defender pour l’identité](/defender-for-identity) [dans Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
->Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender pour l’identité. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
+>Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender for Identity. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
 
 [!INCLUDE [Product long](includes/product-long.md)] peut collecter des informations de comptabilité à partir de solutions VPN. Lorsque la page de profil de l’utilisateur est configurée, elle inclut les informations des connexions VPN, telles que les adresses IP et les emplacements d’origine des connexions. Ce processus complète l’examen en fournissant des informations supplémentaires sur l’activité des utilisateurs, ainsi qu’une nouvelle détection des connexions VPN anormales. L’appel de résolution d’une adresse IP externe à un emplacement est anonyme. Aucun identificateur personnel n’est envoyé dans cet appel.
 
@@ -35,7 +35,7 @@ Cet article explique comment intégrer un VPN à [Microsoft Defender pour l’id
 - Point de contrôle
 - Cisco ASA
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour activer l’intégration VPN, veillez à définir les paramètres suivants :
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: acc75a931cb14a7aab729c09a7b835fb9f26d1d1
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: db3f9f7b54e14fbe198a7ae2dd06b76541d0c141322840cb2c91c575147d6195
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890454"
 ---
 # <a name="investigate-agent-health-issues"></a>Rechercher les problèmes d’état d’intégrité de l’agent
 
@@ -37,8 +37,8 @@ Le tableau suivant fournit des informations sur les valeurs renvoyées lorsque v
 | Valeur | Description |
 |-|-|
 | automatic_definition_update_enabled | True si les mises à jour automatiques des définitions antivirus sont activées, false dans le cas contraire. |
-|  cloud_automatic_sample_submission_consent | Niveau d’envoi actuel de l’exemple. Peut être l’une des valeurs suivantes :     <br><br>  - **Aucun**: aucun échantillon suspect n’est envoyé à Microsoft.  <br> <br>     - **Sécurisé**: seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.    <br> <br>   - **Tous**: tous les échantillons suspects sont envoyés à Microsoft.   |
-| cloud_diagnostic_enabled | True si la collecte de données de diagnostic facultative est activée, false dans le cas contraire. Pour plus d’informations sur Defender for Endpoint et d’autres produits et services tels que Antivirus Microsoft Defender et Windows 10, voir déclaration de [confidentialité Microsoft.](https://go.microsoft.com/fwlink/?linkid=827576) |
+|  cloud_automatic_sample_submission_consent | Niveau d’envoi actuel de l’exemple. Peut être l’une des valeurs suivantes :     <br><br>  - **Aucun**: aucun échantillon suspect n’est envoyé à Microsoft.  <br> <br>     - **Coffre**: seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.    <br> <br>   - **Tous**: tous les échantillons suspects sont envoyés à Microsoft.   |
+| cloud_diagnostic_enabled | True si la collecte de données de diagnostic facultative est activée, false dans le cas contraire. Pour plus d’informations sur Defender for Endpoint et d’autres produits et services tels que Antivirus Microsoft Defender et Windows 10, voir déclaration de confidentialité [Microsoft.](https://go.microsoft.com/fwlink/?linkid=827576) |
 | cloud_enabled | True si la protection cloud est activée, false dans le cas contraire. |
 | conflicting_applications | Liste des applications qui peuvent être en conflit avec Microsoft Defender pour le point de terminaison. Cette liste inclut, sans s’y limiter, d’autres produits de sécurité et autres applications connues pour provoquer des problèmes de compatibilité. |
 | definitions_status | État des définitions antivirus. |

@@ -18,11 +18,11 @@ description: Les administrateurs peuvent apprendre à utiliser des stratégies d
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 96dc1e2158787457884ca6a3c6f27bf76e83a369
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055217"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757221"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -101,7 +101,7 @@ Vous créez et affectez des stratégies de mise en quarantaine dans le portail M
 
 5. Dans la page **Examiner la stratégie** qui s’affiche, examinez vos paramètres. Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section. Vous pouvez également cliquer sur **Précédent** ou sélectionner la page spécifique dans l’Assistant.
 
-   Lorsque vous avez terminé, cliquez sur **Envoyer.**
+   Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
 6. Dans la page de confirmation qui s’affiche, cliquez sur **Terminé**.
 
@@ -166,7 +166,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour créer une stratégie de mise en quarantaine à l’aide du paramètre _EndUserQuarantinePermissionsValue,_ utilisez les étapes suivantes :
 
-A. Stockez un objet d’autorisations de mise en quarantaine dans une variable à l’aide de la cmdlet **New-QuarantinePermissions.**
+R : Stockez un objet d’autorisations de mise en quarantaine dans une variable à l’aide de la cmdlet **New-QuarantinePermissions.**
 
 <p>
 

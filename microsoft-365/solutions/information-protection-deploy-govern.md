@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez Microsoft 365 étiquettes et stratégies de rétention pour gérer les données personnelles dans votre environnement Microsoft 365 de rétention.
-ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06d3c19918d7e2963bffbb0f663971bbbbb209891f62ee9c83ebcc59b74e16d1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928435"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843874"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Régir les informations soumises à la réglementation sur la confidentialité des données
 
@@ -45,7 +45,7 @@ Voici un exemple de liste des réglementations de confidentialité des données 
 - HIPAA-HITECH (45 CFR 164.316(b)(1)(ii))
 - LGPD Article 46
 
-Pour plus d’informations sur ces réglementations, consultez l’article sur l’évaluation des risques de confidentialité des données [et l’identification des informations sensibles.](information-protection-deploy-assess.md)
+Pour plus d’informations sur ces réglementations, consultez l’article d’évaluation des risques de confidentialité des données [et d’identification des informations sensibles.](information-protection-deploy-assess.md)
 
 Pour la gouvernance des informations, les réglementations en matière de confidentialité des données appellent généralement les règles suivantes :
 
@@ -62,7 +62,7 @@ Pour la gouvernance des informations, les réglementations en matière de confid
 
 Une question clé à se poser est la suivante : 
 
-- Combien de temps les informations contenant des données personnelles doivent-elles être conservées pour des raisons professionnelles valides afin d’éviter les pratiques de « conserver indéfiniment » ? Cela doit être équilibré avec les besoins de rétention pour la continuité de l’activité.
+- Combien de temps les informations contenant des données personnelles doivent-elles être conservées pour des raisons professionnelles valides afin d’éviter de « les conserver indéfiniment » ? Cela doit être équilibré avec les besoins de rétention pour la continuité de l’activité.
 
 Quelles que soient les raisons juridiques et professionnelles de conserver des informations personnelles ou de les supprimer, Microsoft fournit un certain nombre de fonctionnalités pour implémenter votre modèle de gouvernance des données dans Microsoft 365.
 
@@ -84,7 +84,7 @@ Gardez les éléments suivants à l’esprit :
 
 ### <a name="retention-policies-and-retention-labels"></a>Stratégies de rétention et étiquettes de rétention.
 
-Utilisez des [stratégies de rétention et des étiquettes](../compliance/retention.md) de rétention pour conserver ou supprimer du contenu Microsoft 365 contenant ou devant contenir des données personnelles.
+Utilisez des [stratégies de rétention et](../compliance/retention.md) des étiquettes de rétention pour conserver ou supprimer du contenu Microsoft 365 contenant ou devant contenir des données personnelles.
 
 ### <a name="records-management"></a>Gestion des enregistrements
 

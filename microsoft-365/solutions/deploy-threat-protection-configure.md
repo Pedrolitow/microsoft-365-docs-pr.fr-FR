@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 48a51b8ec880726bdd2121f2eaf0d78f5cd6b3e0
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 4b2775bfe94eb53851e108ed7b7d436f233beea267b3485385801534748ef16c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083463"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844062"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurer les fonctionnalités de protection contre les menaces dans Microsoft 365
 
@@ -31,10 +31,10 @@ Suivez ces étapes pour configurer la protection contre les menaces dans Microso
 
 [L’authentification multifacteur](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) exige que les utilisateurs vérifient leur identité avec un appel téléphonique ou une application d’authentification. [Les stratégies d’accès](/azure/active-directory/conditional-access/overview) conditionnel définissent certaines exigences qui doivent être remplies pour que les utilisateurs accèdent aux applications et aux données dans Microsoft 365. Les stratégies mfa et d’accès conditionnel fonctionnent ensemble pour protéger votre organisation. Par exemple, si quelqu’un tente de se connecte à partir d’un appareil mobile à l’aide d’un compte qui n’est pas activé pour l' usage de l’mf et qu’une stratégie d’accès conditionnel exige que l' usage de l’mf soit en vigueur, l’utilisateur ne peut pas se connecter.  
 
-Microsoft a testé et recommandé un ensemble spécifique d’accès conditionnel et de stratégies associées pour protéger l’accès à toutes vos applications SaaS, en particulier Microsoft 365. Les stratégies sont recommandées pour la protection de base, sensible et hautement réglementée. Commencez par implémenter les stratégies pour la protection de référence.
+Microsoft a testé et recommandé un ensemble spécifique d’accès conditionnel et de stratégies associées pour protéger l’accès à toutes vos applications SaaS, en particulier Microsoft 365. Les stratégies sont recommandées pour la protection de référence, sensible et hautement réglementée. Commencez par implémenter les stratégies de protection de référence.
 
-[ ![ Stratégies courantes pour la configuration de l’identité et de l’accès aux](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)appareils 
- [Voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
+[ ![ Stratégies courantes pour la configuration de l’identité et de l’accès aux appareils](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)Voir une version plus grande de cette 
+ [image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>Pour implémenter la protection de référence pour Microsoft 365
 
@@ -103,7 +103,7 @@ Microsoft 365 Defender unifie les alertes, les incidents, l’examen et la répo
 
 |Fonctionnalités de configuration, de protection et de détection|Fonctionnalités d’automatisation, d’examen, de correction et d’éducation|
 |---|---|
-|[Pièces jointes fiables](../security/office-365-security/safe-attachments.md) <p> [Liens fiables](../security/office-365-security/safe-links.md) <p> [Documents sécurisés](../security/office-365-security/safe-docs.md) <p> [Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [Protection anti-hameçonnage dans Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[Suivi des menaces](../security/office-365-security/threat-trackers.md) <p> [Threat Explorer](../security/office-365-security/threat-explorer.md) <p> [Examen et réponse automatisés](../security/office-365-security/office-365-air.md) <p> [Formation à la simulation d’attaques](../security/office-365-security/attack-simulation-training.md)|
+|[Pièces jointes fiables](../security/office-365-security/safe-attachments.md) <p> [Liens fiables](../security/office-365-security/safe-links.md) <p> [Documents sécurisés](../security/office-365-security/safe-docs.md) <p> [Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [Protection anti-hameçonnage dans Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[Suivi des menaces](../security/office-365-security/threat-trackers.md) <p> [Threat Explorer](../security/office-365-security/threat-explorer.md) <p> [Examen et réponse automatisés](../security/office-365-security/office-365-air.md) <p> [Formation à la simulation d'attaque](../security/office-365-security/attack-simulation-training.md)|
 |
 
 Avec Microsoft Defender pour Office 365, les membres de votre organisation peuvent communiquer et collaborer plus en toute sécurité, avec une protection contre les menaces pour leur contenu de messagerie et leurs documents Office documents.
@@ -125,7 +125,7 @@ Avec Microsoft Defender pour Office 365, les membres de votre organisation peuve
 
 [Microsoft Defender pour le point](/windows/security/threat-protection) de terminaison protège les appareils de votre organisation (également appelés points de terminaison) contre les cybermenaces, les attaques avancées et les violations de données. Les équipes de sécurité peuvent être plus efficaces dans la gestion de la sécurité de leurs points de terminaison. Des outils robustes aident les organisations à suivre les systèmes non mis en place à l’aide de la détection des vulnérabilités avec la gestion [des menaces et des vulnérabilités.](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) Les fonctionnalités automatisées de détection et de correction, telles que [](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) la réduction de la [surface](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)d’attaque, la [protection](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)nouvelle [génération, protection évolutive des points de terminaison](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)et les examens et corrections automatisés contribuent à protéger vos appareils contre les programmes malveillants. En plus de ces fonctionnalités, les clients peuvent recevoir des notifications proactives et consulter les Spécialistes des menaces Microsoft à la demande, dans le cadre du service de recherche géré par l’utilisateur.
 
-### <a name="set-up-microsoft-defender-for-endpoint"></a>Configurer Microsoft Defender pour le point de terminaison
+### <a name="set-up-microsoft-defender-for-endpoint"></a>Configurer Microsoft Defender pour point de terminaison
 
 ![Processus de déploiement de Microsoft Defender pour le point de terminaison](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
@@ -154,7 +154,7 @@ Avec Microsoft Defender pour Office 365, les membres de votre organisation peuve
 
 ### <a name="more-information-about-microsoft-cloud-app-security"></a>Rubrique relative aux informations supplémentaires concernant Microsoft Cloud App Security
 
-- [Passer en revue les nouvelles fonctionnalités.](/cloud-app-security/release-notes)
+- [Passer en revue les nouvelles fonctionnalités et fonctionnalités.](/cloud-app-security/release-notes)
 - [En savoir plus sur Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
 ## <a name="step-7-monitor-status-and-take-actions"></a>Étape 7 : Surveiller l’état et prendre des mesures

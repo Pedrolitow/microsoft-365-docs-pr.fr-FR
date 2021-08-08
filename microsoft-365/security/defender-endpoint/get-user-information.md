@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6d42161a947fd3ad619a775ec925236f148d2a24
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 91a9ed478ad44d71612ae4a4c7bb7ec727ce65514514089e052c64be943db329
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648422"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800281"
 ---
 # <a name="get-user-information-api"></a>API Obtenir les informations utilisateur
 

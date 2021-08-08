@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8ffa04492f42f7e1ee5f3fc7fadad963e6bb7fbe
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3403e8282ae8d1cbcd46a7f8a09cb8d8a70488c08c3f44549694b2d695ddfd15
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844258"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>Créer une application pour accéder à Microsoft 365 Defender sans utilisateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -40,20 +40,20 @@ ms.locfileid: "51066758"
 
 Cette page décrit comment créer une application pour obtenir un accès par programme à Microsoft 365 Defender sans utilisateur défini, par exemple, si vous créez un daemon ou un service d’arrière-plan.
 
-Si vous avez besoin d’un accès par programme à Microsoft 365 Defender pour le compte d’un ou de plusieurs utilisateurs, voir Créer une application pour accéder aux [API Microsoft 365 Defender](api-create-app-user-context.md) au nom d’un utilisateur et Créer une application avec un accès partenaire aux API Microsoft 365 [Defender.](api-partner-access.md) If you’re not sure which kind of access you need, see [Get started](api-access.md).
+Si vous avez besoin d’un accès par programme à Microsoft 365 Defender pour le compte d’un ou de plusieurs utilisateurs, voir Créer une application pour accéder aux API [Microsoft 365 Defender](api-create-app-user-context.md) au nom d’un utilisateur et Créer une application avec un accès partenaire aux API [Microsoft 365 Defender](api-partner-access.md). If you’re not sure which kind of access you need, see [Get started](api-access.md).
 
-Microsoft 365 Defender expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous aident à automatiser les flux de travail et à utiliser Microsoft 365 fonctionnalités de Defender. Cet accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous aident à automatiser les flux de travail et à utiliser Microsoft 365 Defender fonctionnalités de l’utilisateur. Cet accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser ces API :
 
 - Créez une Azure Active Directory application (Azure AD).
 - Obtenez un jeton d’accès à l’aide de cette application.
-- Utilisez le jeton pour accéder à Microsoft 365 API Defender.
+- Utilisez le jeton pour accéder à Microsoft 365 Defender API.
 
 Cet article explique comment :
 
 - Créer une application Azure AD
-- Obtenir un jeton d’accès à Microsoft 365 Defender
+- Obtenir un jeton d’accès pour Microsoft 365 Defender
 - Validez le jeton.
 
 ## <a name="create-an-app"></a>Créer une application
@@ -66,10 +66,10 @@ Cet article explique comment :
 
 3. Dans le formulaire, choisissez un nom pour votre application, puis sélectionnez **Enregistrer**.
 
-4. Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon organisation utilise  >    >   >, tapez **Protection Microsoft contre les menaces** et sélectionnez **Protection Microsoft contre les menaces**. Votre application peut désormais accéder à Microsoft 365 Defender.
+4. Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon organisation utilise >, tapez Protection Microsoft contre les menaces, puis sélectionnez  >    >   Protection **Microsoft contre les menaces.**  Votre application peut désormais accéder à Microsoft 365 Defender.
 
    > [!TIP]
-   > *Protection Microsoft contre les menaces* est un ancien nom de Microsoft 365 Defender et n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
+   > *La Protection Microsoft contre les* menaces est un ancien nom Microsoft 365 Defender et n’apparaîtra pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
 
    ![Image de la sélection des autorisations d’API](../../media/apis-in-my-org-tab.PNG)
 
@@ -97,13 +97,13 @@ Cet article explique comment :
 
    ![Image de l’ID d’application créé](../../media/app-and-tenant-ids.png)
 
-9. Pour les partenaires **Microsoft 365 Defender** uniquement : suivez ces [instructions](./api-partner-access.md) pour l’accès des partenaires via les API Microsoft 365 Defender, définissez votre application comme multi-clients, afin qu’elle puisse être disponible dans tous les clients une fois que vous avez reçu le consentement de l’administrateur. L’accès  des partenaires est requis pour les applications tierces, par exemple, si vous créez une application destinée à s’exécuter dans les clients de plusieurs clients. Il **n’est** pas nécessaire si vous créez un service que vous souhaitez exécuter uniquement dans votre client, par exemple une application pour votre propre utilisation qui interagit uniquement avec vos propres données. Pour définir votre application comme multi-locataire :
+9. Pour **les** partenaires Microsoft 365 Defender uniquement : suivez ces [instructions](./api-partner-access.md) pour l’accès des partenaires via les API Microsoft 365 Defender, définissez votre application comme multi-client, afin qu’elle puisse être disponible dans tous les clients une fois que vous avez reçu le consentement de l’administrateur. L’accès  des partenaires est requis pour les applications tierces, par exemple, si vous créez une application destinée à s’exécuter dans plusieurs clients. Il **n’est** pas nécessaire si vous créez un service que vous souhaitez exécuter uniquement dans votre client, par exemple une application pour votre propre utilisation qui interagit uniquement avec vos propres données. Pour définir votre application comme multi-locataire :
 
     - Go to **Authentication**, and add https://portal.azure.com as the Redirect **URI**.
 
     - En bas de la page, sous **Types** de comptes pris en charge, sélectionnez les comptes dans n’importe quel consentement d’application  d’annuaire d’organisation pour votre application multi-locataire.
 
-    Étant donné que votre application interagit avec Microsoft 365 Defender pour le compte de vos utilisateurs, elle doit être approuvée pour chaque client sur lequel vous avez l’intention de l’utiliser.
+    Étant donné que votre application interagit avec Microsoft 365 Defender de la part de vos utilisateurs, elle doit être approuvée pour chaque client sur lequel vous avez l’intention de l’utiliser.
 
     L’administrateur général Active Directory pour chaque client doit sélectionner le lien de consentement et approuver votre application.
 
@@ -215,13 +215,13 @@ aadToken = jsonResponse["access_token"]
 ### <a name="get-an-access-token-using-curl"></a>Obtenir un jeton d’accès à l’aide de l’outil
 
 > [!NOTE]
-> Le Préinstallé est préinstallé Windows 10, versions 1803 et ultérieures. Pour les autres versions de Windows, téléchargez et installez l’outil directement à partir du site [web officiel de l’équipe.](https://curl.haxx.se/windows/)
+> Le Préinstallé est préinstallé Windows 10, versions 1803 et ultérieures. Pour les autres versions de Windows, téléchargez et installez l’outil directement à partir du site web [officiel de l’équipe.](https://curl.haxx.se/windows/)
 
 1. Ouvrez une invite de commandes et définissez CLIENT_ID sur votre ID d’application Azure.
 
 1. Définissez CLIENT_SECRET sur votre secret d’application Azure.
 
-1. Définissez TENANT_ID sur l’ID de client Azure du client qui souhaite utiliser votre application pour accéder à Microsoft 365 Defender.
+1. Définissez TENANT_ID sur l’ID de locataire Azure du client qui souhaite utiliser votre application pour accéder à Microsoft 365 Defender.
 
 1. Exécutez la commande suivante :
 
@@ -247,7 +247,7 @@ aadToken = jsonResponse["access_token"]
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Utiliser le jeton pour accéder à l’API Microsoft 365 Defender
 
-1. Choisissez l’API que vous souhaitez utiliser (incidents ou recherche avancée). Pour plus d’informations, [consultez la Microsoft 365 API Defender.](api-supported.md)
+1. Choisissez l’API que vous souhaitez utiliser (incidents ou recherche avancée). Pour plus d’informations, [voir API Microsoft 365 Defender pris en charge.](api-supported.md)
 
 2. Dans la requête http que vous êtes sur le point d’envoyer, définissez l’en-tête d’autorisation sur `"Bearer" <token>` , *bearer* étant le schéma d’autorisation, et le jeton étant votre jeton validé. 
 
@@ -266,11 +266,11 @@ L’exemple suivant montre comment envoyer une demande pour obtenir une liste d�
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Microsoft 365 Vue d’ensemble des API Defender](api-overview.md)
-- [Accéder aux API Microsoft 365 Defender](api-access.md)
+- [Microsoft 365 Defender Vue d’ensemble des API](api-overview.md)
+- [Accéder aux API Microsoft 365 Defender de données](api-access.md)
 - [Créer une application « Hello World »](api-hello-world.md)
-- [Créer une application pour accéder Microsoft 365 API Defender au nom d’un utilisateur](api-create-app-user-context.md)
-- [Créer une application avec un accès partenaire multi-locataire aux API Microsoft 365 Defender](api-partner-access.md)
+- [Créer une application pour accéder Microsoft 365 Defender API au nom d’un utilisateur](api-create-app-user-context.md)
+- [Créer une application avec un accès partenaire multi-locataire aux API Microsoft 365 Defender client](api-partner-access.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)
 - [Comprendre les codes d’erreur](api-error-codes.md)
 - [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)

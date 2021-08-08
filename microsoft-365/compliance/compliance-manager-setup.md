@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft et configurez des tests automatisés des actions. Gérer l’historique des utilisateurs et filtrer l’affichage de votre tableau de bord.
-ms.openlocfilehash: 4791948f6fe3ca6df620a0e93851dbf4e11edd98
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9b6885d101529d18201084b3364c6412bbbc4f4d
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454016"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725827"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -41,7 +41,7 @@ L Microsoft 365 général de votre organisation sera probablement le premier uti
 1. Go to the [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global administrator account.
 2. Sélectionnez **gestionnaire de conformité** dans le volet de navigation de gauche. Vous arrivez à votre tableau de [bord du Gestionnaire de conformité.](#understand-the-compliance-manager-dashboard)
 
-Le lien direct pour accéder au Gestionnaire de conformité est [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) .
+Le lien direct vers le Gestionnaire de conformité est [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) .
 
 ## <a name="set-user-permissions-and-assign-roles"></a>Définir des autorisations utilisateur et attribuer des rôles
 
@@ -52,7 +52,7 @@ Le Gestionnaire de conformité utilise un modèle d’autorisation de contrôle 
 La personne détenant le rôle d’administrateur général de votre organisation peut définir des autorisations utilisateur pour le Gestionnaire de conformité. Les autorisations peuvent être définies dans le Centre de conformité Microsoft 365 ainsi que dans Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Les clients des environnements Community (Cloud de la communauté du secteur public) et Département de la Défense (DoD) du gouvernement des États-Unis peuvent uniquement définir des autorisations et des rôles utilisateur pour le Gestionnaire de conformité dans Azure AD. Voir ci-dessous pour obtenir des instructions Azure AD et des définitions de type de rôle.
+> Les clients des environnements Community (Cloud de la communauté du secteur public) pour le gouvernement américain et le Département de la Défense (DoD) peuvent uniquement définir des autorisations et des rôles utilisateur pour le Gestionnaire de conformité dans Azure AD. Voir ci-dessous pour obtenir des instructions Azure AD et des définitions de type de rôle.
 
 Pour définir des autorisations et attribuer des rôles dans le Centre de conformité Microsoft 365, suivez les étapes ci-dessous :
 
@@ -70,11 +70,9 @@ Pour définir des autorisations et attribuer des rôles dans le Centre de confor
 
 7. Cochez la case en regard des noms que vous souhaitez ajouter, puis sélectionnez le bouton **Ajouter** en bas.
 
-8. Lorsque vous avez terminé d’affecter des utilisateurs, sélectionnez **Terminé,** puis **Enregistrer,** puis **Fermer**.
+8. Lorsque vous avez terminé d’affecter des utilisateurs, sélectionnez **Terminé,** puis **Sélectionnez Enregistrer,** puis **Fermer**.
 
-Si vous avez besoin d’accéder à la version classique du Gestionnaire de conformité dans le portail d’confiance des services Microsoft, les paramètres d’administration dans le portail d’affectation de services offrent une autre façon d’attribuer des rôles (afficher les[instructions).](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users) N’ignorez pas que les fonctionnalités de ces rôles sont plus limitées.
-
-##### <a name="more-about-azure-ad"></a>En savoir plus sur Azure AD
+#### <a name="more-about-azure-ad"></a>En savoir plus sur Azure AD
 
 Pour attribuer des rôles et définir des autorisations dans Azure AD, voir Attribuer des rôles d’administrateur et non administrateur aux utilisateurs [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
@@ -102,9 +100,9 @@ Les paramètres du Gestionnaire de conformité du Centre de conformité Microsof
 
 ### <a name="set-up-automated-testing"></a>Configurer des tests automatisés
 
-Certaines actions d’amélioration dans le Gestionnaire de conformité sont également surveillées par [le Score de sécurité Microsoft.](../security/defender/microsoft-secure-score.md) Vous pouvez configurer des tests automatisés des actions qui sont surveillées conjointement, ce qui signifie que lorsqu’une action est testée et mise à jour dans le Score de sécurité, ces résultats sont synchronisés avec les mêmes actions dans le Gestionnaire de conformité et comptent dans votre score de conformité.
+Certaines actions d’amélioration dans le Gestionnaire de conformité sont également surveillées par [le Niveau de sécurité Microsoft.](../security/defender/microsoft-secure-score.md) Vous pouvez configurer des tests automatisés des actions qui sont surveillées conjointement, ce qui signifie que lorsqu’une action est testée et mise à jour dans le Score de sécurité, ces résultats sont synchronisés avec les mêmes actions dans le Gestionnaire de conformité et comptent dans votre score de conformité.
 
-Les tests automatiques sont désactivés par défaut pour les organisations qui ont été nouvelles dans le Gestionnaire de conformité. Lorsque vous déployez Microsoft 365 ou Office 365, le score de sécurité met environ sept jours à collecter entièrement les données et à les factorisation dans votre score de conformité.  Lorsque le test automatisé est allumé, la date de test de l’action n’est pas mise à jour, mais son état de test est mis à jour. Lorsque de nouvelles évaluations sont créées, les scores incluent automatiquement les scores de contrôle Microsoft et l’intégration du score de sécurité.
+Les tests automatiques sont désactivés par défaut pour les organisations nouvelles dans le Gestionnaire de conformité. Lorsque vous déployez Microsoft 365 ou Office 365, le score de sécurité met environ sept jours à collecter entièrement les données et à les factorisation dans votre score de conformité.  Lorsque le test automatisé est allumé, la date de test de l’action n’est pas mise à jour, mais son état de test est mis à jour. Lorsque de nouvelles évaluations sont créées, les scores incluent automatiquement les scores de contrôle Microsoft et l’intégration du score de sécurité.
 
 L’administrateur général de votre organisation peut modifier les paramètres des tests automatisés à tout moment. Vous pouvez désactiver le test automatisé pour les actions d’amélioration courantes ou l’activer pour des actions individuelles. Suivez les instructions ci-dessous pour modifier vos paramètres de test automatisés.
 
@@ -187,7 +185,7 @@ Vous pouvez réaffecter des actions d’amélioration d’un utilisateur à un a
 La nouvelle personne affectée reçoit un e-mail qui lui a été affecté à une action d’amélioration. L’e-mail contient un lien direct vers la page de détails de l’action d’amélioration.
 
  > [!NOTE]
-> Si vous réaffectez une action qui a une mise à jour en attente, le lien direct vers l’action dans l’e-mail de réaffectation s’romprea si la mise à jour est acceptée après la réaffectation. Vous pouvez résoudre ce problème en ré assignant l’action à l’utilisateur une fois la mise à jour acceptée. En savoir plus sur les [mises à jour des actions d’amélioration.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
+> Si vous réaffectez une action qui a une mise à jour en attente, le lien direct vers l’action dans l’e-mail de réaffectation s' pause si la mise à jour est acceptée après la réaffectation. Vous pouvez résoudre ce problème en ré assignant l’action à l’utilisateur une fois la mise à jour acceptée. En savoir plus sur les [mises à jour des actions d’amélioration.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
 
 #### <a name="delete-user-history"></a>Supprimer l’historique des utilisateurs
 
@@ -286,7 +284,7 @@ La page Actions d’amélioration affiche les points de données suivants pour c
     - **Hors de portée :** l’action n’est pas dans l’étendue de l’évaluation et n’a pas d’impact sur votre score
     - **À détecter : pour** un test manuel, indique qu’une action a été implémentée, mais qu’elle n’a pas été testée ; pour un test automatisé, indique qu’une action attend un résultat d’automatisation
     - **Non détecté : l’état** automatisé ne peut pas être déterminé
-    - **Partiellement testé : score** automatisé qui accorde des points partiels
+    - **Partiellement testé : score** automatisé qui contrôle les points partiels
 
 **En savoir plus : découvrez** comment affecter et effectuer des tâches sur les actions [d’amélioration.](compliance-manager-improvement-actions.md)
 
@@ -302,7 +300,7 @@ Pour filtrer votre vue des solutions :
 
 1. Sélectionnez **Filtre** dans le coin supérieur gauche de votre liste d’évaluations.
 2. Dans le volet volant **Filtres,** placez une vérification en regard des critères souhaités (normes et réglementations, solution, type d’action, groupe Gestionnaire de conformité, catégorie).
-3. Sélectionnez le **bouton** Appliquer. Le volet de filtre se ferme et votre affichage filtré s’affiche.
+3. Sélectionnez le **bouton** Appliquer. Le volet filtre se ferme et votre affichage filtré s’affiche.
 
 Vous pouvez également modifier votre affichage pour afficher les évaluations par groupe, produit  ou réglementation en sélectionnant le type de regroupement dans le menu déroulant Groupe au-dessus de votre liste d’évaluations.
 
@@ -314,11 +312,11 @@ Il existe deux façons d’agir à partir de cet écran :
 
 1. Sur la ligne de votre solution prévue, sous la colonne **Actions** restantes, sélectionnez le numéro de lien hypertexte. Vous verrez une vue filtrée de l’écran actions d’amélioration affichant les actions d’amélioration non testées pour cette solution.
 
-2. Sur la ligne de votre solution prévue, sous la colonne **Ouvrir la solution,** sélectionnez **Ouvrir**. Vous verrez la solution ou l’emplacement dans les centres Microsoft 365 et Office 365 de sécurité et de conformité où vous pouvez prendre l’action recommandée.
+2. Sur la ligne de votre solution prévue, sous la colonne **Ouvrir la solution,** sélectionnez **Ouvrir**. Vous verrez la solution ou l’emplacement dans les centres de sécurité et de conformité Microsoft 365 et Office 365 où vous pouvez prendre l’action recommandée.
 
 ## <a name="assessments-page"></a>Page Évaluations
 
-La page Évaluations répertorie toutes les [évaluations](compliance-manager-assessments.md) que vous avez définies pour votre organisation. Votre dénominateur de score de conformité est déterminé par toutes vos évaluations. À mesure que vous ajoutez d’autres évaluations, vous verrez d’autres actions d’amélioration répertoriées sur votre page d’actions d’amélioration et le dénominateur de votre score de conformité augmente.
+La page évaluations répertorie toutes les [évaluations](compliance-manager-assessments.md) que vous avez définies pour votre organisation. Votre dénominateur de score de conformité est déterminé par toutes vos évaluations. À mesure que vous ajoutez d’autres évaluations, vous verrez d’autres actions d’amélioration répertoriées sur votre page d’actions d’amélioration et le dénominateur de votre score de conformité augmente.
 
 Le compteur de **modèles activés** situé en haut de la page indique le nombre de modèles d’évaluation actifs actuellement utilisés par rapport au nombre total de modèles disponibles pour votre organisation. Pour plus [d’informations, voir](compliance-manager-templates.md#template-availability-and-licensing) Disponibilité des modèles et licences.
 
@@ -334,7 +332,7 @@ La page Évaluations récapitule les informations clés sur chaque évaluation :
 - **Vos actions d’amélioration**: nombre d’actions terminées pour satisfaire l’implémentation de vos contrôles
 - **Actions Microsoft**: nombre d’actions terminées pour satisfaire l’implémentation des contrôles Microsoft
 - **Groupe**: nom du groupe à qui appartient l’évaluation
-- **Product**: associated Microsoft 365 service
+- **Produit**: service Microsoft 365 associé
 - **Réglementation**: norme, stratégie ou loi réglementaire qui s’applique à l’évaluation
 
 ### <a name="filtering-your-assessments-view"></a>Filtrage de l’affichage de vos évaluations

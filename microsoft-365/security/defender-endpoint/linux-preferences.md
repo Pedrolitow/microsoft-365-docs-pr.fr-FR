@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d39316b4377665b8269e352c853742a744dc517
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b8fff1c53575b7de7d3c627c5bc79d00f97d6e39
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657098"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757329"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -305,7 +305,7 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 |---|---|
 |**Clé**|threatTypeSettingsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
@@ -371,7 +371,7 @@ Détermine si la protection cloud est activée ou non sur l’appareil. Pour am�
 |**Valeurs possibles**|true (par défaut) <p> false|
 |
 
-#### <a name="diagnostic-collection-level"></a>Niveau de collection de diagnostics
+#### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
 
@@ -428,7 +428,7 @@ Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA) sont** bloquées
+  - **Les applications potentiellement indésirables (PUA)** sont bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques des informations de sécurité
 - Protection fournie par le cloud
@@ -470,6 +470,7 @@ Le profil de configuration suivant contient des entrées pour tous les paramètr
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
+      "maximumOnDemandScanThreads":1,
       "passiveMode":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[

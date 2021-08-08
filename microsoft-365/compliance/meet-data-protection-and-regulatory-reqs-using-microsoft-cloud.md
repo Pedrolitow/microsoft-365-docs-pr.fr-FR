@@ -2,8 +2,8 @@
 title: Répondre aux exigences sur la protection des données et aux réglementations avec le Gestionnaire de conformité pour les services de cloud Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,17 +16,18 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Découvrez comment utiliser le Gestionnaire de conformité dans le portail d’approbation de services Microsoft pour satisfaire les exigences en matière de protection des données et de réglementation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bb7e05a211c35f2b707e7282c6975b0049dce93
-ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
+ROBOTS: NOINDEX
+ms.openlocfilehash: beea1f9008b8196fb39fe928cc317899bc6fcf8d
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53330988"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725959"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Gestionnaire de conformité Microsoft (classique)
 
 > [!IMPORTANT]
-> **Le Gestionnaire de conformité (classique) sera bientôt supprimé du portail de confiance du service Microsoft.** Nous vous recommandons de passer au nouveau Gestionnaire de conformité [dans le Centre de conformité Microsoft 365](https://compliance.microsoft.com/), qui offre une expérience utilisateur améliorée et un mappage des contrôles mis à jour. Les clients ayant des évaluations dans la version classique doivent créer de nouvelles évaluations dans le nouveau Gestionnaire de conformité. Les données existantes, y compris vos évaluations, contrôles et autres données, ne seront pas transférées vers le nouveau Gestionnaire de conformité. [En savoir plus sur la transition](compliance-manager-faq.yml#what-s-happening-to-compliance-manager--classic--in-the-service-trust-portal-).
+> **Le Gestionnaire de conformité (classique) sera bientôt supprimé du portail de confiance du service Microsoft.** Nous vous recommandons de passer au nouveau Gestionnaire de conformité [dans le Centre de conformité Microsoft 365](https://compliance.microsoft.com/), qui offre une expérience utilisateur améliorée et un mappage des contrôles mis à jour. Les clients ayant des évaluations dans la version classique doivent créer de nouvelles évaluations dans le nouveau Gestionnaire de conformité. Les données existantes, y compris vos évaluations, contrôles et autres données, ne seront pas transférées vers le nouveau Gestionnaire de conformité.
 
 *Le Gestionnaire de conformité n’est pas disponible dans Office 365 géré par 21Vianet, Office 365 Germany, Office 365 U.S. GCC High ou Office 365 Department of Defense.*
 
@@ -77,7 +78,7 @@ Une évaluation est constituée de plusieurs composants :
 
      - **Description** : texte de la norme ou de la réglementation qui renvoie au contrôle géré par Microsoft sélectionné.
 
-  1. Score de conformité pour le contrôle, qui indique le niveau de risque (en raison d’une non-conformité ou d’une défaillance du contrôle) associé à chaque contrôle géré par Microsoft. Voir [Compréhension du score de conformité](#understanding-the-compliance-score) pour plus d’informations. Notez que les scores de conformité sont classés de 1 à 10 avec code de couleur. Le jaune indique les contrôles à faible risque, l’orange les contrôles à risque intermédiaire et le rouge les contrôles à risque élevé.
+  1. Le score de conformité du contrôle, qui indique le degré de risque (dû à la non-conformité ou échec du contrôle) associé à chaque contrôle géré par Microsoft. Voir [Compréhension du score de conformité](#understanding-the-compliance-score) pour plus d’informations. Notez que les scores de conformité sont classés de 1 à 10 avec code de couleur. Le jaune indique les contrôles à faible risque, l’orange les contrôles à risque moyen et le rouge indique les contrôles à risque élevé.
 
   1. Informations sur le statut de mise en œuvre d’un contrôle, la date de test d’un contrôle, la personne qui a réalisé le test et le résultat du test.
 
@@ -405,7 +406,7 @@ Une fois le compte d’utilisateur identifié, vous souhaiterez peut-être gén�
 
  Pour générer et exporter un rapport :
 
-1. Cliquez sur **Exporter** pour générer et télécharger un rapport sur les éléments d’action de contrôle du Gestionnaire de conformité actuellement attribués au compte d’utilisateur renvoyé, ainsi que la liste des documents chargés par cet utilisateur. En l’absence d’actions attribuées ou de documents chargés, un message d’erreur indique « Aucune données pour cet utilisateur ».
+1. Cliquez sur **Exporter** pour générer et télécharger un rapport des éléments d’action d’un contrôle du Gestionnaire de conformité actuellement affectés au compte d’utilisateur retourné, et la liste des documents chargés par cet utilisateur. S’il n’y a aucune action affectée ni aucun document téléchargé, un message d’erreur indiquera « Aucune donnée liée à cet utilisateur ».
 
 2. Le rapport est téléchargé en arrière-plan de la fenêtre active du navigateur. Si aucune fenêtre de téléchargement n’apparaît, vérifiez l’historique de téléchargement de votre navigateur.
 
@@ -505,7 +506,7 @@ Pour ajouter une évaluation au Gestionnaire de conformité :
 
 2. Dans la fenêtre **Ajouter une évaluation**, vous pouvez créer un groupe auquel ajouter l’évaluation ou vous pouvez l’ajouter à un groupe existant (le groupe intégré est intitulé « Groupe initial »). Selon l’option choisie, soit vous tapez le nom d’un nouveau groupe, soit vous sélectionnez un groupe existant dans la liste déroulante. Pour en savoir plus, consultez la section [Regroupement des évaluations](#grouping-assessments).
 
-   Si vous créez un groupe, vous avez également la possibilité de copier les informations d’un groupe existant vers la nouvelle analyse. Ainsi, les informations ajoutées dans les champs Détails de mise en œuvre, Plan du test et Réponse de gestion des contrôles gérés par le client des analyses du groupe à partir duquel vous effectuez la copie sont copiées vers les mêmes contrôles gérés par le client (ou associés) dans la nouvelle analyse. Si vous ajoutez une nouvelle analyse à un groupe existant, les informations courantes des analyses de ce groupe sont copiées vers la nouvelle analyse. Pour plus d’informations, voir [Copie d’informations à partir d’analyse existantes](#copying-information-from-existing-assessments).
+   Si vous créez un groupe, vous pouvez également copier l’information d’un groupe existant dans la nouvelle évaluation. Ça signifie que toute l’information ajoutée aux champs Détails de l’implémentation, Plan de test et Réponse de la direction des contrôles gérés par le client des évaluations du groupe copié sont copiés dans les contrôles gérés par le client identiques (ou associés) de la nouvelle évaluation. Si vous ajoutez une nouvelle évaluation à un groupe existant, les informations communes des évaluations de ce groupe seront copiées dans la nouvelle évaluation. Pour plus d’information, voir la [section Copie des informations des évaluations existants](#copying-information-from-existing-assessments).
 
 3. Cliquez sur **Suivant**, puis :
 
@@ -553,11 +554,11 @@ De même, les informations des contrôles gérés par le client partagés au sei
 
 6. Cette section contient des contrôles gérés par le client, qui sont également organisés par famille de contrôles. Cliquez sur une famille de contrôles pour la développer et afficher des contrôles individuels.
 
-7. Affiche le nombre total de contrôles de la famille de contrôles ainsi que le nombre de contrôles analysés. Le suivi de la progression de votre organisation en matière d’analyse des contrôles gérés par le client constitue une fonctionnalité clé du Gestionnaire de conformité. Pour plus d’informations, voir [Compréhension du score de conformité](#understanding-the-compliance-score).
+7. Affiche le nombre total de contrôles dans la famille de contrôles, et le nombre de contrôles évalués dans cette famille. Une fonctionnalité clé du Gestionnaire de conformité consiste à suivre la progression de votre organisation dans l’évaluation des contrôles gérés par le client. Pour plus d’informations, voir la section [Présentation du Score de conformité](#understanding-the-compliance-score).
 
 ## <a name="managing-the-assessment-process"></a>Gestion du processus d’évaluation
 
-Le créateur d’une analyse est dans un premier temps le seul utilisateur de l’analyse. Pour chaque contrôle géré par le client, vous pouvez attribuer un élément d’action à une membre de votre organisation pour permettre à ce membre de devenir utilisateur de l’analyse, d’effectuer les actions du client recommandées, de collecter et de charger des preuves. Lorsque vous attribuez un élément d’action, vous pouvez choisir d’envoyer un e-mail contenant les détails à une personne, notamment les actions du client recommandées ainsi que l’élément d’action prioritaire. La notification par e-mail comprend un lien vers le tableau de bord **Éléments d’action**, qui répertorie tous les éléments d’action attribués à cette personne.
+Au départ, le créateur de l’évaluation est le seul utilisateur de l’évaluation. Pour chaque contrôle géré par le client, vous pouvez affecter un élément d’action à une personne de votre organisation. Elle devient alors un utilisateur de l’évaluation et peut effectuer les actions du client recommandées, collecter et charger des preuves. Quand vous affectez un élément d’action, vous pouvez choisir d’envoyer un e-mail à la personne en l’informant des actions du client recommandées et de la priorité de l’élément d’action. La notification de l’e-mail contient un lien vers le tableau de bord des **éléments d’action**, qui répertorie tous les éléments d’action affectés à cette personne.
 
 Voici une liste des tâches que vous pouvez effectuer à l’aide des fonctionnalités de flux de travail du Gestionnaire de conformité.
 
@@ -565,7 +566,7 @@ Voici une liste des tâches que vous pouvez effectuer à l’aide des fonctionna
 
 1. **Utilisez les options de filtrage pour trouver des contrôles d’évaluation spécifiques** : le Gestionnaire de conformité propose des **Options de filtrage** qui vous permettent d’afficher des contrôles d’évaluation selon des critères de sélection très précis et de concentrer vos efforts de mise en conformité sur des points spécifiques.
 
-   L’icône d’entonnoir du côté droit de la page permet d’afficher ou de masquer les contrôles **Options de filtre**. Ces contrôles vous permettent de spécifier des critères de filtre de façon à ce que seul les contrôles d’analyse correspondant à ceux-ci s’affichent en dessous. ![Contrôles de filtre des analyses du Gestionnaire de conformité](../media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
+   Cliquez sur l’icône d’entonnoir situé à droite de la page pour afficher ou masquer les **Options de filtrage** des contrôles. Ces contrôles vous permettent de spécifier les critères de filtrage. Seuls les contrôles d’évaluation qui correspondent à ces critères seront affichés. ![Contrôles de filtre des évaluations du Gestionnaire de conformité](../media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
 
    - **Articles** : filtre le nom de l’article et retourne les contrôles d’évaluation associés à cet article. Par exemple, la saisie dans « Article (5) » renvoie une liste de sélection d’articles dont le nom inclut cette chaîne, c’est-à-dire l’article (5)(1)(a), l’article (5)(1)(b), l’article (5)(1)(c), etc. La sélection de l’article (5)(1)(c) retourne les contrôles associés à l’article (5)(1)(c). Il s’agit d’un champ multisélection qui utilise un opérateur OR avec plusieurs valeurs. Par exemple, si vous sélectionnez Article (5)(1)(a), puis ajoutez Article (5)(1)(c), le filtre retourne les contrôles associés à l’article (5)(1)(a) ou à l’article (5)(1)(c).
 
@@ -589,17 +590,17 @@ Voici une liste des tâches que vous pouvez effectuer à l’aide des fonctionna
 
 3. **Affecter un élément d’action à un utilisateur** : vous pouvez affecter un élément d’action à une personne pour implémenter les exigences d’une certification/réglementation, ou pour tester, vérifier et documenter les exigences d’implémentation de votre organisation. Quand vous affectez un élément d’action, vous pouvez choisir d’envoyer un e-mail à cette personne en l’informant des actions du client recommandées et de la priorité de l’élément d’action. Vous pouvez également désaffecter ou réaffecter un élément d’action à une autre personne.
 
-4. **Gérer les documents** Les contrôles gérés par le client permettent aussi de gérer les documents associés afin d’effectuer des tâches de mise en œuvre, ainsi que des tâches de test et de validation. Toute personne disposant des autorisations requises pour modifier les données dans le Gestionnaire de conformité peut charger des documents en cliquant sur **Gérer les documents**. Une fois le document chargé, cliquez sur **Gérer les documents** pour afficher et télécharger les fichiers.
+4. **Gérer les documents**: les contrôles gérés par le client disposent également d’un emplacement pour gérer les documents liés aux tâches d’implémentation, de test et de validation. Toute personne ayant l’autorisation de modifier les données dans le Gestionnaire de conformité peut charger des documents en cliquant sur **Gérer les documents**. Une fois qu’un document est chargé, vous pouvez cliquer sur **Gérer les documents** pour afficher et télécharger les fichiers.
 
 5. **Fournir des détails sur l’implémentation et le test** : tous les contrôles gérés par le client contiennent un champ modifiable où les utilisateurs peuvent ajouter des détails sur l’implémentation qui documentent les tâches effectuées par votre organisation pour répondre aux exigences de la certification/réglementation, et pour valider et documenter les actions effectuées par votre organisation pour y répondre.
 
 6. **Définir l’état** : permet de définir l’état de chaque élément dans le cadre du processus d’évaluation. Les états disponibles sont **Implémenté**, **Implémentation alternative**, **Planifié** et **Non inclus**.
 
-7. **Entrer la date du test et les résultats du test** La personne dotée du rôle Analyste du Gestionnaire de conformité peut vérifier la bonne exécution du test, revoir les détails de mise en œuvre, du plan du test, des résultats du test et toute autre preuve chargée, puis définir la Date du test et les Résultats du test. Les valeurs de résultat de test disponibles sont les suivantes : **Réussi**, **Échec avec faible risque**, **Échec avec risque intermédiaire** et **Échec avec risque élevé**.
+7. **Entrer la date du test et le résultat de test**: la personne ayant le rôle d’Évaluateur du Gestionnaire de conformité peut vérifier que les tests appropriés sont réalisés, consulter les détails de l’implémentation, le plan de test, les résultats de test et les preuves chargées, puis définir la Date du test et le Résultat de test. Les valeurs disponibles pour le résultat de test sont **Réussite**, **Échec Risque faible**, **Échec risque modéré** et **Échec risque élevé**.
 
 ## <a name="managing-action-items"></a>Gestion des éléments d’action
 
-Les employés impliqués dans le processus d’analyse de votre organisation peuvent utiliser le Gestionnaire de conformité pour examiner les contrôles gérés par le client de toutes les analyses pour lesquelles il existe des utilisateurs. Lorsqu’un utilisateur se connecte au Gestionnaire de conformité et ouvre le tableau de bord **Éléments d’action**, la liste des éléments d’action qui lui sont attribués s’affiche. Selon le rôle du Gestionnaire de conformité attribué à l’utilisateur, il peut fournir les détails de mise en œuvre et de test, mettre à jour l’état ou attribuer des éléments d’action.
+Les personnes participant au processus d’évaluation dans votre organisation peuvent utiliser le Gestionnaire de conformité pour examiner les contrôles gérés par le client de toutes les évaluations dont ils sont utilisateurs. Quand un utilisateur se connecte au Gestionnaire de conformité et ouvre le tableau de bord **Éléments d’action**, la liste des éléments d’action qui leur sont assignés s’affiche. Selon le rôle du Gestionnaire de conformité affecté à l’utilisateur, ils peuvent fournir des informations sur l’implémentation ou le test, mettre à jour l’état ou affecter des éléments d’action.
 
 Comme les contrôles des certifications sont généralement implémentés par une seule personne et testés par une autre, l’élément d’action du contrôle peut être affecté dès le départ au responsable de l’implémentation. Une fois cette opération terminée, cette personne peut réaffecter l’élément d’action du contrôle à une autre personne pour tester le contrôle et charger les preuves. Tout utilisateur ayant un rôle dans le Gestionnaire de conformité et les autorisations requises peut affecter/réaffecter les actions du contrôle, ce qui lui permet de centraliser la gestion des affectations ou de décentraliser le routage des éléments d’action du contrôle, du responsable de l’implémentation au testeur selon le contexte.
 

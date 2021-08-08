@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef81785c1f0395091c3207ca4da22e70bb0c411d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ca0eeba9fb8678a4b71e8fdaefb05acb0ec55978
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648734"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757281"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -45,6 +45,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 ## <a name="july-2021"></a>Juillet 2021
 
 - [Améliorations apportées à l’analyse du courrier électronique dans les enquêtes automatisées](email-analysis-investigations.md)
+- [Coffre Liens pour Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
 
 
 ## <a name="june-2021"></a>Juin 2021
@@ -83,7 +84,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 - [Vérifier vos stratégies à l’aide de l’Analyseur de configuration](configuration-analyzer-for-security-policies.md)
 - Fonctionnalités étendues dans l’Explorateur de [menaces,](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) y compris les utilisateurs les plus ciblés, les règles de transport et les connecteurs (defender pour les informations de Office 365 dans l’Explorateur de menaces [(le](threat-explorer.md) courrier électronique a été autorisé/bloqué par la stratégie client/utilisateur) (Defender pour Office 365 Plan 2)
 - Surfacing URL threats in [Threat Explorer](threat-explorer.md#threats-in-urls) (malware, phish, spam, or none) (Defender for Office 365 Plan 2)
-- [Améliorations apportées à l’Explorateur](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) de menaces d’expérience de recherche avec des mises à jour autour des menaces, des actions supplémentaires, des emplacements de remise et une vue chronologique mise à jour (Defender pour Office 365 Plan 2)
+- [Améliorations apportées à l’Explorateur](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) de menaces d’expérience de recherche avec les mises à jour autour des menaces, des actions supplémentaires, des emplacements de remise et de la chronologie mise à jour (Defender pour Office 365 Plan 2)
 
 ## <a name="julyaugust-2020"></a>Juillet/août 2020
 
@@ -97,7 +98,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 ## <a name="januaryfebruary-2020"></a>Janvier/février 2020
 
 - [Disponibilité générale des affichages campagne](campaigns.md) dans Microsoft Defender pour Office 365 (Microsoft Defender pour Office 365 Plan 2)
-- Améliorations apportées à [l’Explorateur](threat-explorer.md) de menaces pour [](investigate-malicious-email-that-was-delivered.md)permettre aux équipes d’opérations de sécurité de rechercher et de filtrer sur plusieurs champs lors de l’étude de la messagerie électronique : (Microsoft Defender pour Office 365 Plan 2)
+- Améliorations apportées à l’Explorateur de menaces pour [](investigate-malicious-email-that-was-delivered.md)permettre aux équipes d’opérations de sécurité de rechercher et de filtrer sur plusieurs champs lors de l’étude de la messagerie électronique : (Microsoft Defender pour Office 365 Plan 2) [](threat-explorer.md)
   - Emplacement de remise et actions spéciales
   - Direction (entrant, sortant ou intra-organisationnel)
   - Filtres NOT avancés (il s’agit d’options de filtrage avancées qui incluent ne contient pas, n’inclut pas, etc.)
@@ -105,7 +106,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 
 - Le widget **Incidents** est désormais le widget **Centre de l’action.** (Pour afficher vos widgets de sécurité dans le Centre de sécurité & conformité, consultez La gestion **des menaces** \> **Review**.) (Microsoft Defender pour Office 365 Plan 2)
 
-- [Coffre documents en Microsoft 365](safe-docs.md) **(prévisualisation)**
+- [Coffre documents dans Microsoft 365](safe-docs.md) **(prévisualisation)**
 
 ## <a name="december-2019"></a>Décembre 2019
 
@@ -113,11 +114,11 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 
 - [Utiliser les affichages campagne dans Microsoft Defender pour Office 365 **(prévisualisation)**](campaigns.md) (Microsoft Defender pour Office 365 Plan 2)
 
-## <a name="november-2019"></a>Novembre 2019
+## <a name="november-2019"></a>Novembre 2019
 
 - [Découvrez les nouvelles fonctionnalités de](address-compromised-users-quickly.md) détection et de réponse utilisateur compromises **(prévisualisation)**(Microsoft Defender pour Office 365 Plan 2)
 
-## <a name="september-2019"></a>Septembre 2019
+## <a name="september-2019"></a>Septembre 2019
 
 - [Utiliser des fonctionnalités automatisées](automated-investigation-response-office.md) d’examen et de réponse (Microsoft Defender pour Office 365 Plan 2)
 
@@ -125,7 +126,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 
 - [Afficher les en-têtes de courrier électronique et télécharger](investigate-malicious-email-that-was-delivered.md) le corps de l’e-mail (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Afficher la chronologie du courrier](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) électronique (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 

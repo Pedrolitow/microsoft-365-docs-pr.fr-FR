@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Scheduler for Microsoft 365 FAQs
-ms.openlocfilehash: 423660785e51a61cbff9fa2849b9466feddfc1c1
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: bcbfd6431216f9c9d7d1e0c16de9bafddbfa8276af13b514f0107f6369e6c759
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289666"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800425"
 ---
 # <a name="scheduler-for-microsoft-365-faqs"></a>Scheduler for Microsoft 365 FAQs
 
@@ -38,10 +38,10 @@ Outlook n’a pas besoin d’être ouvert en arrière-plan. Il vous suffit d’e
 Le programme de planification utilise Scheduling Intelligence (IA) enrichi d’assistants humains. Si les modèles d’IA génèrent un besoin de prise en charge dans le langage naturel de communication avec Cortana, la demande de réunion passe à l’état humain pour révision et achèvement.
 
 **Question : Qui** les humains qui examinent les demandes réexamorées ? </br>
-Les assistants de planification sont des fournisseurs Microsoft Security and Privacy Assurance (SSPA) certifiés pour les informations personnelles et hautement confidentielles.
+Les assistants de planification sont la SSPA (Microsoft Supplier Security and Privacy Assurance) certifiée pour les informations personnelles et hautement confidentielles.
 
 **Question :** Que peuvent afficher les Assistants SSPA ?</br>
-Le programmeur et les assistants de la SSPA peuvent afficher les messages électroniques adressés à Cortana. Dans un échange de courriers électroniques à thread, seuls les messages électroniques qui incluent l’adresse de messagerie de Cortana seront traitées, et non les e-mails précédents dans le thread avant l’ajout Cortana'
+Le programmeur et les assistants de la SSPA peuvent afficher les messages électroniques adressés aux Cortana. Dans un échange de courriers électroniques à thread, seuls les messages électroniques qui incluent l’adresse de messagerie de Cortana seront traitées, et non les e-mails précédents dans le thread avant l’ajout Cortana'
 
 **Question :** Les données client sont-elles conservées dans la base de données du Flow ? </br>
 Le programme de planification stocke tout le contenu client dans les limites du client et conserve les données conformément aux directives du R GDPR, aux stratégies de confidentialité Microsoft 365 & de confiance et aux stratégies de messagerie du client.

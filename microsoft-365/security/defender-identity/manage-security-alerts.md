@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: cc7fc87a4c9d8bcdcb6c80db6d8725ecb62f24a2
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: dac11b5a2284a15965fd4305968dd6f3961b3df1b7dbc8932f7fec7944714353
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542820"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844371"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Alertes de sécurité Defender for Identity dans Microsoft 365 Defender
 
@@ -23,7 +23,7 @@ ms.locfileid: "53542820"
 
 Cet article explique les principes de base de l’utilisation des alertes de sécurité [Microsoft Defender pour](/defender-for-identity) l’identité dans [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-Les alertes Defender for Identity sont intégrées en natif dans [Microsoft 365 Defender](https://security.microsoft.com) avec un format de page d’alerte d’identité dédié. Il s’agit de la première étape du parcours d’introduction de l’expérience [Microsoft Defender pour l’identité](/defender-for-identity/defender-for-identity-in-microsoft-365-defender)complète dans Microsoft 365 Defender .
+Les alertes Defender for Identity sont intégrées en natif dans [Microsoft 365 Defender](https://security.microsoft.com) avec un format de page d’alerte d’identité dédié. Il s’agit de la première étape du parcours d’introduction de l’expérience [Microsoft Defender pour l’identité complète dans Microsoft 365 Defender](/defender-for-identity/defender-for-identity-in-microsoft-365-defender).
 
 La nouvelle page d’alerte d’identité offre aux clients Microsoft Defender for Identity un meilleur enrichissement de signal entre domaines et de nouvelles fonctionnalités de réponse automatisée aux identités. Il vous permet de rester sécurisé et d’améliorer l’efficacité de vos opérations de sécurité.
 
@@ -32,7 +32,7 @@ L’un des avantages de l’examen des alertes via [Microsoft 365 Defender](/mic
 Les alertes provenant de Defender for Identity peuvent désormais déclencher les fonctionnalités d’investigation et de réponse automatisée [(AIR)](/microsoft-365/security/defender/m365d-autoir) de Microsoft 365 Defender, notamment la correction automatique des alertes et l’atténuation des outils et processus qui peuvent contribuer à l’activité suspecte.
 
 > [!IMPORTANT]
-> Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender pour l’identité. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
+> Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender for Identity. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
 
 ## <a name="review-security-alerts"></a>Passer en revue les alertes de sécurité
 
@@ -56,7 +56,7 @@ Si vous cliquez sur le nom **de** l’alerte pour l’une des alertes, vous alle
 
 ![Ce qui s’est passé dans l’alerte](../../media/defender-identity/what-happened.png)
 
-Au-dessus de la zone Ce **qui s’est** passé se sont des boutons pour les **comptes,** l’hôte **de destination** et l’hôte **source** de l’alerte. Pour d’autres alertes, vous pouvez voir des boutons pour plus d’informations sur les hôtes supplémentaires, les comptes, les adresses IP, les domaines et les groupes de sécurité. Sélectionnez l’une d’elles pour obtenir plus de détails sur les entités impliquées.
+Au-dessus de la zone Ce **qui s’est** passé se sont des boutons pour les **comptes,** l’hôte **de destination** et l’hôte **source** de l’alerte. Pour d’autres alertes, vous pouvez voir des boutons pour plus d’informations sur des hôtes, des comptes, des adresses IP, des domaines et des groupes de sécurité supplémentaires. Sélectionnez l’une d’elles pour obtenir plus de détails sur les entités impliquées.
 
 Dans le volet droit, vous verrez les détails de **l’alerte.** Vous pouvez y voir plus de détails et effectuer plusieurs tâches :
 
@@ -86,7 +86,7 @@ Dans le volet droit, vous verrez les détails de **l’alerte.** Vous pouvez y v
     ![Gérer l’alerte](../../media/defender-identity/manage-alert.png)
 
     > [!NOTE]
-    > Dans le Excel, deux liens sont désormais disponibles : Afficher dans **Microsoft Defender** pour l’identité et **l’affichage dans Microsoft 365 Defender**. Chaque lien vous permet d’être sur le portail approprié et d’y fournir des informations sur l’alerte.
+    > Dans le Excel, deux liens sont désormais disponibles : Afficher dans **Microsoft Defender** pour l’identité et Affichage **dans Microsoft 365 Defender**. Chaque lien vous permet d’être sur le portail approprié et d’y fournir des informations sur l’alerte.
 
 ## <a name="see-also"></a>Voir aussi
 

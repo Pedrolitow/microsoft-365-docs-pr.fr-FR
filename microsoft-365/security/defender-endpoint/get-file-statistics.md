@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 25417a883ef281c2c5104046b016446c9d89707e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a2e4e01ebb90389f02b7e141a7412927319135e94b63536f19ec0dea8754a262
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657206"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800365"
 ---
 # <a name="get-file-statistics-api"></a>API Obtenir les statistiques sur les fichiers
 

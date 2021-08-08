@@ -10,6 +10,12 @@
           href: ../commerce/try-or-buy-microsoft-365.md
         - name: Planifier votre installation
           href: setup/plan-your-setup.md
+        - name: Planifier Windows 365 Business
+          items:
+            - name: Démarrage avec les PC Windows 365 Business et Cloud
+              href: setup/get-started-windows-365-business.md
+            - name: Options de dimensionnement de Windows 365 Business
+              href: setup/windows-365-business-sizing.md
         - name: Configurer votre organisation avec l’Assistant Installation
           items:
             - name: Microsoft 365 Business Basic

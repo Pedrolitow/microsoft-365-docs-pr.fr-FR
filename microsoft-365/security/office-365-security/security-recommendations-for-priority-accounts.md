@@ -20,12 +20,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans Microsoft 365 organisations.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1cf813706a5fc0180ed36943c6bc7ae54e35ae346aba3d2b0251489e05cc715b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844095"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations en matière de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -123,7 +123,7 @@ Microsoft 365 fournit les ressources suivantes pour aider à informer les utilis
 |Microsoft 365|[Parcours d’apprentissage personnalisables](/office365/customlearning/)|Ces ressources peuvent vous aider à mettre en place une formation pour les utilisateurs de votre organisation.|
 |Sécurité Microsoft 365|[Learning module : sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365)|Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
 |Authentification multifacteur|[Vérification en deux étapes : quelle est la page de vérification supplémentaire ?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Cet article aide les utilisateurs finaux à comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée au niveau de votre organisation.|
-|Formation à la simulation d’attaques|[Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)|La formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2 permet aux administrateurs de configurer, de lancer et de suivre les attaques par hameçonnage simulées contre des groupes d’utilisateurs spécifiques.|
+|Formation à la simulation d'attaque|[Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)|La formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2 permet aux administrateurs de configurer, de lancer et de suivre les attaques par hameçonnage simulées contre des groupes d’utilisateurs spécifiques.|
 
 En outre, Microsoft recommande aux utilisateurs d’agir comme décrit dans cet article : Protéger votre compte et vos appareils contre les pirates [informatiques et les programmes malveillants.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Ces actions incluent :
 

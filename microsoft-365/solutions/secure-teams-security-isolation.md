@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: 4ed8b3a7476e11cdf2341b0a98af690ed3f33c7e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ba929dad3fa7797db736907d085d9beb28835332ba79e3a02ce1363fdb129d4a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843886"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
 
@@ -109,7 +109,7 @@ Si vous avez un partenaire interne ou un groupe des parties prenantes devant pou
 
 
 Pour créer une étiquette de confidentialité
-1. Ouvrez [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
+1. Ouvrez [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
 2. Sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur **Créer une étiquette**.
 4. Entrez un nom pour l’étiquette. Nous vous suggérons de donner le même nom que l’équipe avec qui vous allez l’utiliser.
@@ -129,7 +129,7 @@ Pour créer une étiquette de confidentialité
 14. Dans la page *Étiquetage automatique des fichiers et messages électroniques**, cliquez sur **Suivant**.
 15. Dans la page **Définir les paramètres de protection pour les groupes et sites**, sélectionnez **Paramètres de confidentialité et d’accès des utilisateurs externes**, et **Accès appareil et paramètres de partage externe**, puis cliquez sur **Suivant**.
 16. Dans la page **Définir les paramètres de confidentialité et d’accès des utilisateurs externes**, sous **Confidentialité**, sélectionnez l’option **Privé** .
-17. Si vous souhaitez autoriser l’accès invité, sous **Accès des utilisateurs externes**, sélectionnez **Autoriser les propriétaires de groupe Microsoft 365 à ajouter des personnes externes à votre organisation au groupe comme invités**.
+17. Si vous souhaitez autoriser l’accès invité, sous **Accès des utilisateurs externes**, sélectionnez **Autoriser les propriétaires de groupe Microsoft 365 à ajouter des personnes externes à votre organisation au groupe comme invités**.
 18. Cliquez sur **Suivant**.
 19. Dans la page **Définir les paramètres de partage externe et d’accès aux appareils**, sélectionnez **Contrôler le partage externe dans les sites étiquetés SharePoint**.
 20. Sous **Le contenu peut être partagé avec**, sélectionnez **Invités nouveaux et existants** si vous autorisez l’accès invité ou **Uniquement les membres de votre organisation** si ce n’est pas le cas.
@@ -179,8 +179,8 @@ Le paramètre de partage d’invités que vous avez choisi lors de la création 
 
 |Paramètre d’étiquette|Paramètre du site SharePoint|
 |:------------|:----------------------|
-|**Permettre aux propriétaires du groupe Office 365 d’ajouter au groupe des personnes en dehors de l’organisation** sélectionné.|**Invités nouveaux et existants** (par défaut pour les nouvelles équipes)|
-|**Permettre aux propriétaires du groupe Office 365 d’ajouter au groupe des personnes en dehors de l’organisation** non sélectionné.|**Uniquement les personnes de votre organisation**|
+|**Permettre aux propriétaires du groupe Office 365 d’ajouter au groupe des personnes en dehors de l’organisation** sélectionné.|**Invités nouveaux et existants** (par défaut pour les nouvelles équipes)|
+|**Permettre aux propriétaires du groupe Office 365 d’ajouter au groupe des personnes en dehors de l’organisation** non sélectionné.|**Uniquement les personnes de votre organisation**|
 
 Nous mettrons également à jour le type de lien de partage par défaut pour réduire le risque de partager accidentellement des fichiers et des dossiers avec un public plus large que prévu.
 

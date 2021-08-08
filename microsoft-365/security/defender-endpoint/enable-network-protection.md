@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 ms.topic: conceptual
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 06d59cd1b5d2d41c06ef7867e5b0174946cecfb0
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a4052802c8a5d7db165ae9589fb9fe0db3f1b0fb
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656102"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757305"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -86,7 +86,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (anciennement Intune)
 
-1. Connectez-vous au Microsoft Endpoint Manager’administration centrale (https://endpoint.microsoft.com)
+1. Connectez-vous au Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com)
 
 2. Créer ou modifier un profil [de configuration de la protection des points de terminaison](/mem/intune/protect/endpoint-protection-configure)
 
@@ -111,7 +111,7 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
 
 4. Double-cliquez sur le paramètre Empêcher les utilisateurs **et les applications d’accéder** au paramètre sites web dangereux et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
     * **Bloquer** : les utilisateurs ne peuvent pas accéder aux domaines et aux adresses IP malveillants
-    * **Désactiver (par défaut)** : la fonctionnalité de protection du réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants
+    * **Désactiver (par défaut)** : la fonctionnalité de protection réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants
     * **Mode audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal Windows’événements malveillants. Toutefois, l’utilisateur ne sera pas empêché de visiter l’adresse.
 
 > [!IMPORTANT]
@@ -121,7 +121,7 @@ Confirmez que la protection réseau est activée sur un ordinateur local à l’
 
 1. Sélectionnez **Démarrer** et tapez **regedit** pour ouvrir **l’Éditeur du Registre.**
 
-2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
+2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. Sélectionnez **EnableNetworkProtection et** confirmez la valeur :
    * 0=Off

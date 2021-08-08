@@ -17,41 +17,31 @@ search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft permet aux organisations de simplifier et d’automatiser les évaluations des risques, et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: 536a1c02a820b0ea36fc4fe39ca1d0d31f7bc994
-ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
+ms.openlocfilehash: c19655e3cd509d141878e8d917d248cc2ce42aa5
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53330940"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757245"
 ---
 # <a name="microsoft-compliance-manager"></a>Gestionnaire de conformité Microsoft
 
 **Dans cet article :** Découvrez ce qu’est le Gestionnaire de conformité, comment il contribue à simplifier la conformité et à réduire les risques, ainsi que ses composants clés.
 
-## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Nouveautés : la version GA du Gestionnaire de conformité
+## <a name="what-is-compliance-manager"></a>Qu’est-ce que le Gestionnaire de conformité ?
 
-Le Gestionnaire de conformité est désormais généralement disponible en tant que solution de gestion de la conformité de bout en bout dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md). Avec cette version, le Gestionnaire de conformité termine la transition à partir de son emplacement précédent dans le portail d’confiance des services Microsoft. Le Gestionnaire de conformité est également disponible pour les clients modérés, Cloud de la communauté du secteur public et du département de la Défense (DoD) du gouvernement américain Community (Cloud de la communauté du secteur public).
-
-Ce qui a commencé par la prévisualisation publique du Score de conformité est devenu un outil centralisé avec des fonctionnalités de gestion de la conformité améliorées et une plus grande facilité d’utilisation.  La version GA apporte une collection plus importante d’évaluations pré-conçues pour vous aider à mettre à l’échelle vos activités de conformité.
-
-**En savoir plus sur la version GA :**
-- Nos [questions fréquemment posées](compliance-manager-faq.yml) vous viennent en détail sur l’évolution.
-- Découvrez les améliorations apportées aux fonctionnalités ga dans [ce billet de blog.](https://aka.ms/compliancemanager/GAblog)
+[Le Gestionnaire de conformité Microsoft](https://compliance.microsoft.com/compliancemanager) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) qui vous permet de gérer les exigences de conformité de votre organisation avec plus de simplicité et de commodité. Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire de vos risques de protection des données à la gestion des complexités de l’implémentation des contrôles, à la mise à jour des réglementations et des certifications et à la gestion des rapports aux auditeurs.
 
 Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conformité peut simplifier la gestion de la conformité par votre organisation :
 <br>
 <br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
 
-## <a name="what-is-compliance-manager"></a>Qu’est-ce que le Gestionnaire de conformité ?
-
-[Le Gestionnaire de conformité Microsoft](https://compliance.microsoft.com/compliancemanager) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) qui vous permet de gérer les exigences de conformité de votre organisation avec plus de simplicité et de commodité. Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire de vos risques de protection des données à la gestion des complexités de l’implémentation des contrôles, à la mise à jour des réglementations et des certifications et à la gestion des rapports aux auditeurs.
-
 Le Gestionnaire de conformité simplifie la conformité et réduit les risques en fournissant :
 
 - Évaluations pré-conçues pour les normes et réglementations régionales et industrielles courantes, ou évaluations personnalisées pour répondre à vos besoins de conformité uniques (les évaluations disponibles dépendent de votre contrat de licence ; [en savoir plus](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)).
 
-- Fonctionnalités de flux de travail pour vous aider à effectuer efficacement vos évaluations des risques par le biais d’un seul outil.
+- Fonctionnalités de flux de travail pour vous aider à effectuer efficacement vos évaluations des risques à l’aide d’un seul outil.
 
 - Recommandations détaillées détaillées sur les suggestions d’actions d’amélioration pour vous aider à vous conformer aux normes et réglementations les plus pertinentes pour votre organisation. Pour les actions gérées par Microsoft, vous verrez les détails de l’implémentation et les résultats de l’audit.
 
@@ -59,13 +49,13 @@ Le Gestionnaire de conformité simplifie la conformité et réduit les risques e
 
 Votre tableau de bord du Gestionnaire de conformité affiche votre score de conformité actuel, vous aide à voir ce qui nécessite une attention particulière et vous guide vers les actions d’amélioration clés. Voici un exemple de ce à quoi ressemblera votre tableau de bord du Gestionnaire de conformité :
 
-![Gestionnaire de conformité - tableau de bord](../media/compliance-manager-dashboard.png "Tableau de bord du Gestionnaire de conformité")
+![Gestionnaire de conformité - Tableau de bord](../media/compliance-manager-dashboard.png "Tableau de bord du Gestionnaire de conformité")
 
 ## <a name="understanding-your-compliance-score"></a>Comprendre votre score de conformité
 
 Le Gestionnaire de conformité vous indique que vous avez terminé les actions d’amélioration prises pour se conformer à une réglementation, une norme ou une stratégie, et combine ces points dans un score de conformité global. Chaque action a un impact différent sur votre score en fonction des risques potentiels impliqués. Votre score de conformité peut vous aider à hiérarchiser l’action sur laquelle vous concentrer pour améliorer votre posture de conformité globale.
 
-Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base Microsoft 365 protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés pour la protection des données et la gouvernance générale des données.
+Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base Microsoft 365 protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés en matière de protection des données et de gouvernance générale des données.
 
 ##### <a name="learn-more"></a>En savoir plus
 
@@ -113,7 +103,7 @@ Lorsque vous créez des évaluations, vous les affectez à un groupe. Vous pouve
 
 ### <a name="templates"></a>Modèles
 
-Le Gestionnaire de conformité fournit des modèles pour vous aider à créer rapidement des évaluations. Vous pouvez modifier ces modèles pour créer une évaluation optimisée pour vos besoins. Vous pouvez également créer une évaluation personnalisée en créant un modèle avec vos propres contrôles et actions. Par exemple, vous souhaitez peut-être qu’un modèle couvre un contrôle de processus d’entreprise interne ou une norme de protection des données régionale qui n’est pas couverte par l’un de nos modèles d’évaluation pré-créés plus de 325.
+Le Gestionnaire de conformité fournit des modèles pour vous aider à créer rapidement des évaluations. Vous pouvez modifier ces modèles pour créer une évaluation optimisée pour vos besoins. Vous pouvez également créer une évaluation personnalisée en créant un modèle avec vos propres contrôles et actions. Par exemple, vous souhaitez peut-être qu’un modèle couvre un contrôle de processus d’entreprise interne ou une norme de protection des données régionale qui n’est pas couverte par l’un de nos modèles d’évaluation pré-créés 325+.
 
 ##### <a name="learn-more"></a>En savoir plus
 
@@ -146,8 +136,8 @@ Le Gestionnaire de conformité est disponible dans les langues suivantes :
 - Finnois
 - Français
 - Allemand
-- Hébreu
-- Hongrois
+- Hebrew
+- Hungarian
 - Italien
 - Japonais
 - Coréen

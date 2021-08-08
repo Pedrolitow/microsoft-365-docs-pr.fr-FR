@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Licence et conditions d’utilisation des API Defender
+title: Microsoft 365 Defender Licence et conditions d’utilisation des API
 description: Description de la licence et des conditions d’utilisation des API dans Microsoft 365 Defender
 keywords: api, api, licence, termes, api, juridique, avis, code de conduite
 search.product: eADQiWindows 10XVcnh
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b70311726b6c1c5bedf34a18ee1763255c93ba3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e40910defa4fba006cdfdd02f6eeebe53ce7006db2f2c99de88397027869237e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062033"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844246"
 ---
-# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Licence et conditions d’utilisation des API Defender
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender Licence et conditions d’utilisation des API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "51062033"
 
 ## <a name="official-terms"></a>Termes officiels
 
-Microsoft 365 Les API Defender sont régies par la licence et les conditions [d’utilisation](/legal/microsoft-apis/terms-of-use)des API Microsoft.
+Microsoft 365 Defender Les API sont régies par la licence et les conditions [d’utilisation](/legal/microsoft-apis/terms-of-use)des API Microsoft.
 
 ## <a name="legal-notices"></a>Avis juridiques
 
@@ -63,7 +63,7 @@ L’API de recherche avancée présente certaines limitations sur le nombre de r
 
 ### <a name="quotas-and-resource-allocation"></a>Quotas et allocation de ressources
 
-Les MICROSOFT 365 Defender ont des seuils de limitation.
+Les Microsoft 365 Defender api de limitation ont des seuils de limitation.
 
 - **API Incidents :** jusqu’à 50 appels par minute ou 1 500 appels par heure.
 - **API de recherche avancée**: jusqu’à 15 appels par minute, 10 minutes d’exécution par heure et 4 heures d’exécution par jour.
@@ -74,6 +74,6 @@ Si votre demande a été limitée, le corps de la réponse indique le moment où
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Microsoft 365 Vue d’ensemble des API Defender](api-overview.md)
-- [API Microsoft 365 Defender prises en charge](api-supported.md)
-- [Accéder aux API Microsoft 365 Defender](api-access.md)
+- [Microsoft 365 Defender Vue d’ensemble des API](api-overview.md)
+- [API Microsoft 365 Defender prises en charge](api-supported.md)
+- [Accéder aux API Microsoft 365 Defender de données](api-access.md)

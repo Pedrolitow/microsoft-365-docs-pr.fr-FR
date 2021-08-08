@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9a4505ec4609dc42ec75159c2d905d16e01b559
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 216aff09435a6bb9280761c2a0895f86c4d4b0d07b0efb49993646576e00417c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890475"
 ---
 # <a name="get-alert-information-by-id-api"></a>Obtenir des informations d’alerte par API d’ID
 
@@ -80,4 +80,4 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK et l’entité [d’alerte](alerts.md) dans le corps de la réponse. Si l’alerte avec l’ID spécifié est in trouvée - 404 - In trouvé.
+Si elle réussit, cette méthode renvoie 200 OK et l’entité d’alerte dans le corps de la réponse. [](alerts.md) Si l’alerte avec l’ID spécifié est in trouvée - 404 - In trouvé.

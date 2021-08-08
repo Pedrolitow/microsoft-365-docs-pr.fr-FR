@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7fb0a37eed8eaa58ee8a102f66abe1fdc20591c5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8f67b1dcc560a3529da6bb146a121d1adde0850715d862fe3c0b4da00b7156f7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800537"
 ---
 # <a name="deployment-phases"></a>Phases de déploiement
 

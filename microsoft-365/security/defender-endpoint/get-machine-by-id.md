@@ -1,6 +1,6 @@
 ---
 title: API Obtenir l’ordinateur par ID
-description: Découvrez comment utiliser l’API Obtenir un ordinateur par ID pour récupérer un ordinateur par son ID d’appareil ou son nom d’ordinateur dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Get machine by ID pour récupérer un ordinateur par son ID d’appareil ou son nom d’ordinateur dans Microsoft Defender for Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, appareils, entité, ID
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ce90523430ce1d9602609820221b9aca49efa4db
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 28d3728b7fdd3fb6f43ac282fe21572ecd6ecfc7b9749dade260caff3c0bc744
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800341"
 ---
 # <a name="get-machine-by-id-api"></a>API Obtenir l’ordinateur par ID
 

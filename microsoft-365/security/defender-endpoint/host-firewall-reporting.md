@@ -14,18 +14,18 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0289d6f920fd6ff35fd446f9c2b8c5516883a4d2
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 23986024db239da6c8a69792ff8abbd01adc54d87354146d7c3847ee3a9dd539
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809251"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800269"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -35,7 +35,7 @@ Si vous êtes un administrateur, vous pouvez désormais héberger des rapports d
 
 - Vous devez être en cours Windows 10 ou Windows Server 2019.
 - Pour intégrer des appareils au service Microsoft Defender for Endpoint, voir [ici.](onboard-configure.md) 
-- Pour que Microsoft 365 centre de sécurité commence à recevoir les données, vous devez activer les événements **d’audit** Pare-feu Windows Defender avec Fonctions avancées de sécurité : 
+- Pour que Microsoft 365 centre de sécurité commence à recevoir les données, vous devez activer les événements **d’audit** pour Windows Defender pare-feu avec fonctions avancées de sécurité : 
     - [Auditer le drop de paquets de plateforme de filtrage](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
     - [Auditer la connexion de plateforme de filtrage](/windows/security/threat-protection/auditing/audit-filtering-platform-connection) 
 - Activez ces événements à l’aide de l’Éditeur d’objets de stratégie de groupe, de la stratégie de sécurité locale ou auditpol.exe commandes. Pour plus d’informations, voir [ici.](/windows/win32/fwp/auditing-and-logging) 
@@ -50,7 +50,7 @@ Si vous êtes un administrateur, vous pouvez désormais héberger des rapports d
 - Une fois les événements Microsoft 365, le centre de sécurité commence à surveiller les données.
     - Adresse IP distante, port distant, port local, adresse IP locale, nom de l’ordinateur, processus entre les connexions entrantes et sortantes.
 - Les administrateurs peuvent désormais voir Windows activité de pare-feu [hôte ici.](https://security.microsoft.com/firewall)
-    - La création de rapports supplémentaires peut être facilitée en téléchargeant le [script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) de création de rapports personnalisé pour surveiller les activités Pare-feu Windows Defender à l’aide Power BI. 
+    - La création de rapports supplémentaires peut être facilitée en téléchargeant le [script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) de création de rapports personnalisé pour surveiller les activités du pare-feu Windows Defender à l’aide Power BI. 
     - La réflexion des données peut prendre jusqu’à 12 heures.
 
 ## <a name="supported-scenarios"></a>Scénarios pris en charge
@@ -88,6 +88,6 @@ Les rapports de pare-feu  prendre en charge l’exploration à partir de la cart
 
 La requête peut maintenant être exécutée et tous les événements de pare-feu associés des 30 derniers jours peuvent être explorer. 
 
-Pour des rapports supplémentaires ou des modifications personnalisées, la requête peut être exportée dans Power BI pour une analyse plus approfondie. La création de rapports personnalisés peut être facilitée en téléchargeant le [script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) de création de rapports personnalisés pour surveiller les activités Pare-feu Windows Defender l’aide Power BI. 
+Pour des rapports supplémentaires ou des modifications personnalisées, la requête peut être exportée dans Power BI pour une analyse plus approfondie. La création de rapports personnalisés peut être facilitée en téléchargeant le [script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) de création de rapports personnalisé pour surveiller les activités du pare-feu Windows Defender à l’aide de Power BI. 
 
  
