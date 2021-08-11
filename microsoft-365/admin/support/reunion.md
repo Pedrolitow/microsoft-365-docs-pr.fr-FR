@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c4ee22bdcd297dc8dad7a819303b9c17879ee2a2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 390312c397cec67b603ea43643ca797093904bdbfc4459e961f1e6aed745b723
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797463"
 ---
 # <a name="contact-support-for-reunion"></a>Contacter le support pour la Réunion
 
@@ -31,12 +31,12 @@ ms.locfileid: "52295510"
 
 Français : Mon-Fri midi à 20 h
 
-Anglais : Mon-Fri midi-20h00
+Anglais : Mon-Fri midi à 20 h
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Français : Mon-Fri 23:00-23:00
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Frais d’appel local applicables

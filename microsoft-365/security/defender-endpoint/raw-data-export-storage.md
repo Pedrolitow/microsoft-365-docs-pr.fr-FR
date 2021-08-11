@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3d98a914a919057cf73d2b603ddf1da39f3278b2
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a403cfa7e4e2348827a9ff7f127a815c5ec4fdca0a239716dfc8453e16d116d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793045"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers Stockage compte
 
@@ -38,7 +38,7 @@ ms.locfileid: "53649850"
 
 1. Créez [un Stockage dans](/azure/storage/common/storage-account-overview) votre client.
 
-2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> s’inscrire à Microsoft.insights**.
+2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources > s’inscrire à **Microsoft.insights**.
 
 ## <a name="enable-raw-data-streaming"></a>Activer la diffusion en continu des données brutes
 
@@ -79,7 +79,7 @@ ms.locfileid: "53649850"
 
 - Chaque ligne contient le nom de l’événement, le moment où Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous recevez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée « properties ».
 
-- Pour plus d’informations sur le schéma des événements De Microsoft Defender pour point de [terminaison, voir vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
+- Pour plus d’informations sur le schéma des événements Microsoft Defender for Endpoint, consultez [la vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
 
 - Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne. Pour plus [d’informations,](machine-groups.md) voir Groupes d’appareils.
 
@@ -101,7 +101,7 @@ Pour obtenir les types de données pour nos propriétés d’événements, vous 
 
   ![Image de l’ID3 de ressource du hub d’événements](images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [API de diffusion en continu microsoft Defender pour point de terminaison](raw-data-export.md)
 - [Diffuser des événements Microsoft Defender for Endpoint vers votre compte de stockage Azure](raw-data-export-storage.md)

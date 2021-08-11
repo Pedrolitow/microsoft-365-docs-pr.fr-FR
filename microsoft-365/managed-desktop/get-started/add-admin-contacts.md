@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a95ab526d43e6eb243cb3de3a7b7c75e1e82b07f
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 99a2d6d5a5617c66143df2a4f91d80abdafd5f90005ad5401c86bcfd669dd1cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819114"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
@@ -37,7 +37,7 @@ Autres | Pour les problèmes non couverts par d’autres domaines
 
 **Toute personne que vous choisissez pour ces contacts doit avoir les connaissances et l’autorité nécessaires pour prendre des décisions pour Microsoft Manged Desktop environnement.** Lorsque vous intégrerez votre environnement Microsoft Manged Desktop, vous êtes invité à ajouter des contacts pour votre aide et sécurité locales. 
 
-Les contacts d’administrateur sont requis lorsque vous [envoyez une demande de support.](../service-description/support.md) Vous devez avoir un contact d’administrateur pour le domaine de focus de la demande de support.
+Les contacts d’administrateur sont requis lorsque vous [envoyez une demande de support.](../service-description/support.md) Vous devez avoir un contact d’administrateur pour la zone de focus de la demande de support.
 
 **Pour ajouter des contacts d’administrateur**
 
@@ -45,7 +45,7 @@ Les contacts d’administrateur sont requis lorsque vous [envoyez une demande de
 
 2. Sous **Administration du client,** recherchez la section **Microsoft Manged Desktop** puis sélectionnez **Contacts d’administration.**
 
-3. Sélectionnez **Ajouter**.
+3. Cliquez sur **Ajouter**.
 
 4. Sélectionnez **une zone de focus** et entrez les informations du contact. 
 

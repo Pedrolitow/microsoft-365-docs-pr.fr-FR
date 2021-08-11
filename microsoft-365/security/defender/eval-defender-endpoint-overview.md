@@ -1,5 +1,5 @@
 ---
-title: Évaluez la vue d’ensemble de Microsoft Defender for Endpoint, y compris la révision de l’architecture, l’activation ou l’activation de l’environnement d’évaluation et la création d’un projet pilote.
+title: Évaluation de la vue d’ensemble de Microsoft Defender for Endpoint, y compris la révision de l’architecture
 description: Étapes de la mise en place d’un laboratoire d Microsoft 365 Defender d’essai ou d’un environnement pilote. Testez et découvrez comment la solution de sécurité est conçue pour protéger les appareils, l’identité, les données et les applications de votre organisation.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f4f66c6a7bd5f375ffedc822a3ad5bb5a4f5a431
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: f3ec24e4d73ac9297e4ca0bec5659b987f9e33d7bae182a1f7f1853ee72d6876
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457812"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833209"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Vue d’ensemble de l’évaluation de Microsoft Defender for Endpoint
 

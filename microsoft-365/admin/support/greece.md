@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cb1c6611a35683fe321c76a550db710be4fab0f4
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: e61d2bd88000f808b287546013d74d2294b05e550489293af50b734e7ce50c1a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298793"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797493"
 ---
 # <a name="contact-support-for-greece"></a>Contacter le support pour la Grèce
 
@@ -33,4 +33,4 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7

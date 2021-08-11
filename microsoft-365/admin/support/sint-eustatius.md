@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 68402aac0d704151a2252a096314383d5b726d91
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 15ea816770e45575ee60b4c2bfed433d86e3e9d0fe6539503e9d0d3b7a22cdfb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797421"
 ---
 # <a name="contact-support-for-sint-eustatius"></a>Contacter le support pour Sint Eustatius
 
@@ -33,6 +33,6 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

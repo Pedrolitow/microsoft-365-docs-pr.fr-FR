@@ -1,5 +1,5 @@
 ---
-title: Découvrir le langage de requête de recherche avancée dans Microsoft 365 Defender
+title: Découvrez le langage de requête de recherche avancée dans Microsoft 365 Defender
 description: Créez votre première requête de repérage de menace et découvrez les opérateurs communs et les autres aspects du langage de requête de repérage avancé
 keywords: repérage avancé, repérage de menace, repérage de cybermenace, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, langue, apprendre, première requête, télémétrie, événements, télémétrie, détections personnalisées, schéma, kusto, opérateurs, types de données, téléchargement powershell, exemple de requête
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 14287fb6dea9dda8accb580246b383f0427c3b3f
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 4b31a47ecfa887185673d75947fbab89332caa2a156bed8a35b158b63c2e8b95
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952619"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805587"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -148,7 +148,7 @@ Le recherche avancée prend en charge les types de données Kusto, y compris les
 | Type de données | Description et implications dans les requêtes |
 |--|--|
 | `datetime` | Les données et les informations d’heure représentent généralement des timestamps d’événement. [Voir les formats de date/heure pris en charge](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
-| `string` | Chaîne de caractères en UTF-8 entre guillemets simples ( ) ou `'` guillemets doubles ( `"` ). [En savoir plus sur les chaînes](/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `string` | Chaîne de caractères en UTF-8 entre guillemets simples ( `'` ) ou guillemets doubles ( `"` ). [En savoir plus sur les chaînes](/azure/data-explorer/kusto/query/scalar-data-types/string) |
 | `bool` | Ce type de données prend en charge `true` ou `false` indique. [Voir les opérateurs et les littéraux pris en charge](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
 | `int` | Integer 32 bits  |
 | `long` | Integer 64 bits |
@@ -183,9 +183,9 @@ La section **Prise en main** fournit quelques requêtes simples utilisant des op
 Pour plus d’informations sur le langage de requête Kusto et les opérateurs pris en charge, voir [documentation sur le langage de requête Kusto](/azure/kusto/query/).
 
 >[!NOTE]
->Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender pour qu’il](m365d-enable.md) recherche les menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
+>Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 69c9201dbc3458cd4ad09a72f2ea0d7ea3bb2d2a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ffb6e60652a8c4dced7e1fc04a55f4f2afab7ca8e54e93edb0ac976bd0641210
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833302"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 
@@ -52,7 +52,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DetectionSource` | string | Technologie ou capteur de détection qui a identifié le composant ou l’activité notable |
 | `AttackTechniques` | string | MITRE ATT&techniques CK associées à l’activité ayant déclenché l’alerte |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

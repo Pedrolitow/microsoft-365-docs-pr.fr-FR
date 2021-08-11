@@ -1,5 +1,5 @@
 ---
-title: Fonction AssignedIPAddresses() dans le recherche avancée de Microsoft 365 Defender
+title: Fonction AssignedIPAddresses() dans le recherche avancée d’Microsoft 365 Defender
 description: Découvrez comment utiliser la fonction AssignedIPAddresses() pour obtenir les dernières adresses IP attribuées à un appareil
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
@@ -20,32 +20,32 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d3ebd301d6c79bf5286d9293e04e4073b99d1e35
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7160a05111ffa9085a2d7b146e6258ba6c4fd2388a1c8898bbc480c16195c7ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934908"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833314"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement les dernières `AssignedIPAddresses()` adresses IP attribuées à [](advanced-hunting-overview.md) un appareil. Si vous spécifiez un argument d’timestamp, cette fonction obtient les adresses IP les plus récentes à l’heure spécifiée. 
+Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement les dernières adresses IP qui ont été `AssignedIPAddresses()` attribuées à un appareil. [](advanced-hunting-overview.md) Si vous spécifiez un argument d’timestamp, cette fonction obtient les adresses IP les plus récentes à l’heure spécifiée. 
 
 Cette fonction renvoie un tableau avec les colonnes suivantes :
 
-| Column | Type de données | Description |
+| Colonne | Type de données | Description |
 |------------|-------------|-------------|
 | `Timestamp` | DateHeure | Heure de la dernière observation de l’appareil à l’aide de l’adresse IP |
 | `IPAddress` | string | Adresse IP utilisée par l’appareil |
 | `IPType` | string | Indique si l’adresse IP est une adresse publique ou privée |
-| `NetworkAdapterType` | entier | Type de carte réseau utilisé par l’appareil à qui l’adresse IP a été attribuée. Pour les valeurs possibles, reportez-vous [à cette éumération](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `ConnectedNetworks` | entier | Réseaux à qui l’adaptateur avec l’adresse IP affectée est connectée. Chaque tableau JSON contient le nom du réseau, la catégorie (public, privé ou domaine), une description et un indicateur indiquant s’il est connecté publiquement à Internet |
+| `NetworkAdapterType` | int | Type de carte réseau utilisé par l’appareil à qui l’adresse IP a été attribuée. Pour les valeurs possibles, reportez-vous [à cette éumération](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | int | Réseaux à qui la carte avec l’adresse IP affectée est connectée. Chaque tableau JSON contient le nom du réseau, la catégorie (public, privé ou domaine), une description et un indicateur indiquant s’il est connecté publiquement à Internet |
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -81,7 +81,7 @@ AssignedIPAddresses(DeviceName, Date)
 | where Timestamp between ((AssignedTime - 1h) .. (AssignedTime + 1h))
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

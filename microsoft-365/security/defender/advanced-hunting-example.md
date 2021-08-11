@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d3ac49b4afde0951e7a034c5c11114afbc52c293
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 91bd008d44495e4c304b353fcbc22785915501e7cfbe000e5cc70eebe5842b7b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52965143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833329"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Exemple de recherche avancée pour Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Souhaitez-vous commencer à rechercher des menaces d’e-mail à l’aide de la fonctionnalité de repérage avancé ? Essayez ceci :
@@ -43,7 +43,7 @@ La section [Prise en main](/microsoft-365/security/office-365-security/defender-
    - Anti-programme malveillant
    - Anti-hameçonnage
    - Anti-spam
-2. Tout configurer avec « Safe » dans le nom.
+2. Tout configurer avec « Coffre » dans le nom.
    - Liens sûrs
    - Pièces jointes fiables
 3. Protégez les charges de travail (par exemple, SharePoint En ligne, OneDrive et Teams).

@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 47b25ba541264d79216748753e9f41fb7435fc10
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b9f73150d858efc8eecf7a027035011d88098e9359ab87c9ce5c2f992cd8857e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805693"
 ---
 # <a name="device-profile-page"></a>Page de profil d’appareil
 
@@ -52,7 +52,7 @@ Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison
 
 La barre latérale répertorie le nom complet et le niveau d’exposition de l’appareil. Il fournit également des informations de base importantes dans les petites sous-sections qui peuvent être ouvertes ou fermées, telles que :
 
-* **Balises** : tout Microsoft Defender pour point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées à l’appareil. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
+* **Balises** : tout Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées à l’appareil. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
 * **Informations de sécurité** : ouvrir les incidents et les alertes actives. Les appareils inscrits dans Microsoft Defender pour le point de terminaison affichent également le niveau d’exposition et le niveau de risque.
 
 > [!TIP]
@@ -168,7 +168,7 @@ La sélection d’un élément dans cette liste ouvre un volant qui décrit la C
 
 ### <a name="missing-kbs"></a>Ko manquants
 
-**L’onglet Ko manquant répertorie** toutes les mises à jour Microsoft qui n’ont pas encore été appliquées à l’appareil. Les « bases de connaissances » en question sont des articles de [la Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) de connaissances qui décrivent ces mises à jour . par exemple, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
+**L’onglet Ko manquant répertorie** toutes les mises à jour Microsoft qui n’ont pas encore été appliquées à l’appareil. Les « ko » en question sont des articles de [la Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) de connaissances qui décrivent ces mises à jour . par exemple, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
 ![Image de l’onglet kbs manquant pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
 
@@ -178,7 +178,7 @@ Le nombre d’éléments affichés par page et les colonnes affichées peuvent �
 
 La sélection d’un élément ouvre un volant qui relie la mise à jour.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 * [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 * [Activer Microsoft 365 Defender](m365d-enable.md)

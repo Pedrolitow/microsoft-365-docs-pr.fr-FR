@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 21b2f8b4766cd4596774a7e42a44de561686e7605ff12fe31fc5e571bc29b510
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7395e7fb22c8ad090ab35868d385fa240700505c
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844673"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757356"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 

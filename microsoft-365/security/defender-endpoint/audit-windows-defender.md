@@ -16,18 +16,18 @@ manager: dansimp
 ms.topic: article
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: 23de13e9a2b0fb02b95c9bb367c3fd99e11e89c8
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 470b123045d2f63b6dbf6aa681762892bfd529d95ef08918689f7429f4fbcdd6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839890"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>Tester la réduction de la surface d’attaque dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -36,7 +36,7 @@ Dans le cadre de l’équipe de sécurité de votre organisation, vous pouvez co
 
 - Règles de réduction des surfaces d'attaque
 - Exploit Protection
-- Protection du réseau
+- Protection réseau
 - Accès contrôlé aux dossiers en mode audit
 
 Le mode audit vous permet  d’enregistrer ce qui se serait passé si vous aviez activé la fonctionnalité.
