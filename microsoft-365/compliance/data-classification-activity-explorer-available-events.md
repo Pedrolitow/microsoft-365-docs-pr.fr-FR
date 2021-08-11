@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: liste des activités d’étiquetage disponibles dans l’Explorateur d’activités.
-ms.openlocfilehash: d4f6884ad39b16aeb0345f0c976d6ad87f03c05a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6dbfe8341e714c49795d8aaf7991988bec901496bf28b2bbd4d4711bdbd81c23
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532253"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520482"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Activités d’étiquetage disponibles dans l’Explorateur d’activités
 
@@ -32,21 +32,21 @@ ms.locfileid: "52532253"
 Cet événement est généré chaque fois qu’un document non étiqueté est étiqueté ou qu’un message électronique est envoyé avec une étiquette de sensibilité. 
 
 - Elle est capturée au moment de l’Office applications natives et web. 
-- Elle est capturée au moment de l’occurrence dans les modules complémentaires Azure Information Protection. 
-- Les actions de mise à niveau et de rétrogradation des étiquettes peuvent également être surveillées via le champ et le filtre du type d’événement *Label.*   
+- Elle est capturée au moment de l’occurrence dans les add-ins Azure Information Protection. 
+- Les actions de mise à niveau et de rétrogradation des étiquettes peuvent également être surveillées via le champ et le filtre de type d’événement *Label.*   
 
 
 |Source  |Signalé dans l’Explorateur d’activités | Remarque  |
 |---------|---------|---------|
 | Word, Excel, PowerPoint|oui |
-|Outlook| oui |à partir de Win 32 |
+|Outlook| oui | |
 |SharePoint en ligne, OneDrive|oui | |
 |Exchange        |oui         | |
 |Client unifié Azure Information Protection (AIP) et scanneur unifié AIP |oui |l’action nouvelle *étiquette* AIP est mappée sur l’étiquette *appliquée dans* l’Explorateur d’activités   |
-|Microsoft information protection (MIP) SDK         |oui|l’action nouvelle *étiquette* AIP est mappée sur l’étiquette *appliquée dans* l’Explorateur d’activités|
+|SDK Protection des données Microsoft (MIP)         |oui|l’action nouvelle *étiquette* AIP est mappée sur l’étiquette *appliquée dans* l’Explorateur d’activités|
 |Rights Management Service (RMS)         |non applicable         | |
-|Power BI bureau et web        | non| accessibles dans les journaux Microsoft 365 audit         |
-|Microsoft Cloud App Security (MCAS)         |non|         |
+|Power BI bureau et web        | Non| accessibles dans les journaux Microsoft 365 audit         |
+|Microsoft Cloud App Security (MCAS)         |Non|         |
 
 ## <a name="sensitivity-label-changed"></a>Étiquette de sensibilité modifiée
 
@@ -56,43 +56,43 @@ Cet événement est généré chaque fois qu’une étiquette de niveau de sensi
 
 - Elle est capturée au moment de l’Office applications natives et web. 
 - Elle est capturée au moment de l’occurrence dans les application de scanneurs et les add-ins client unifiés Azure Information Protection
-- Les actions de mise à niveau et de rétrogradation des étiquettes peuvent également être surveillées via le champ et le filtre du type d’événement *Label.* Le *texte de justification* est également capturé à l’exception de SharePoint Online et OneDrive.
+- Les actions de mise à niveau et de rétrogradation des étiquettes peuvent également être surveillées via le champ et le filtre de type d’événement *Label.* Le *texte de justification* est également capturé à l’exception de SharePoint Online et OneDrive.
 - L’étiquetage de la sensibilité effectué dans Office applications natives sur Outlook collecte la dernière action générée avant les actions d’envoi d’e-mail/d’enregistrer des fichiers. Par exemple, si l’utilisateur modifie plusieurs fois l’étiquette d’un e-mail avant de l’envoyer, la dernière étiquette trouvée dans l’e-mail lors de son envoi est capturée dans le journal d’audit, puis signalée dans l’Explorateur d’activités. 
 
 
 |Source  |Signalé dans l’Explorateur d’activités|Remarque  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |oui         |
-|Outlook         |oui         |Win 32|
+|Outlook         |oui         |
 |SharePoint En ligne, OneDrive         |oui         |
 |Exchange         |oui         |
 |Client unifié AIP         |oui         |
 |Scanneur unifié AIP         |oui         |
 |MIP SDK         |oui         |
 |Service RMS         |non applicable         |
-|Power BI bureau et Web         |non         |accessibles dans les journaux Microsoft 365 audit |
-|MCAS     |non         |         |
+|Power BI bureau et Web         |Non         |accessibles dans les journaux Microsoft 365 audit |
+|MCAS     |Non         |         |
 
 ## <a name="sensitivity-label-removed"></a>Étiquette de sensibilité supprimée
 
 Cet événement est généré chaque fois qu’une étiquette de niveau de sensibilité est supprimée d’un fichier ou d’un document.
 
 - Cet événement est capturé au moment de l’Office applications natives et web.
-- Elle est capturée au moment de l’occurrence dans les modules complémentaires Azure Information Protection. 
-- L’étiquetage de la sensibilité, avec Office d’étiquette MIP native, sur Outlook collecte le dernier événement d’étiquetage généré avant les actions d’envoi d’e-mail/d’enregistrer un fichier.
+- Elle est capturée au moment de l’occurrence dans les add-ins Azure Information Protection. 
+- L’étiquetage de la sensibilité, avec Office d’étiquette MIP native, sur Outlook collecte le dernier événement d’étiquetage qui a été généré avant les actions d’envoi d’e-mail/d’enregistrer un fichier.
 
 |Source  |Signalé dans l’Explorateur d’activités | Remarque  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |oui         |
-|Outlook         |oui         |Win 32|
+|Outlook         |oui         ||
 |SharePoint En ligne, OneDrive         |oui         |
 |Exchange         |oui         |
 |Client unifié AIP         |oui         |L’action supprimer *l’étiquette* AIP est mappée sur *l’action* supprimée d’étiquette dans l’Explorateur d’activités|
 |Scanneur unifié AIP         |oui         |L’action supprimer *l’étiquette* AIP est mappée sur *l’action* supprimée d’étiquette dans l’Explorateur d’activités |
 |MIP SDK         |oui         |L’action supprimer *l’étiquette* AIP est mappée sur *l’action* supprimée d’étiquette dans l’Explorateur d’activités |
 |Service RMS         |non applicable         |
-|Power BI bureau et Web         |non         |accessibles dans les journaux Microsoft 365 audit |
-|MCAS     |non         |         |
+|Power BI bureau et Web         |Non         |accessibles dans les journaux Microsoft 365 audit |
+|MCAS     |Non         |         |
  
 
 ## <a name="sensitivity-label-file-read"></a>Fichier d’étiquette de niveau de sensibilité lu
@@ -102,20 +102,20 @@ Cet événement est généré chaque fois qu’un document protégé ou étiquet
 |Source  |Signalé dans l’Explorateur d’activités | Remarque  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |oui         |
-|Outlook         |non         |
-|SharePoint En ligne, OneDrive         |non         |
-|Exchange         |non         |
+|Outlook         |Non         |
+|SharePoint En ligne, OneDrive         |Non         |
+|Exchange         |Non         |
 |Client unifié AIP         |oui         |l’action *d’accès* AIP est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités|
 |Scanneur unifié AIP         |oui         |l’action *d’accès* AIP est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités|
 |MIP SDK         |oui         |l’action *d’accès* AIP est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités|
 |Service RMS         |oui         |*l’action d’accès* est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités |
-|Power BI bureau et Web         |non         |accessible dans les journaux Microsoft 365 audit |
-|MCAS     |non         |         |
+|Power BI bureau et Web         |Non         |accessibles dans les journaux Microsoft 365 audit |
+|MCAS     |Non         |         |
 
 
 ## <a name="files-discovered"></a>Fichiers découverts
 
-Cet événement est généré chaque fois que des fichiers sont détectés lorsque le scanneur AIP est utilisé pour analyser des données sensibles à différents emplacements et trouve des fichiers.
+Cet événement est généré chaque fois que des fichiers sont découverts lorsque le scanneur AIP est utilisé pour analyser des données sensibles à différents emplacements et trouve des fichiers.
 
 |Source  |Signalé dans l’Explorateur d’activités | Remarque  |
 |---------|---------|---------| 
@@ -139,14 +139,14 @@ Cet événement est généré chaque fois qu’un document avec une étiquette d
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |oui         |
 |Outlook         |non applicable         |
-|SharePoint En ligne, OneDrive         |non        |
+|SharePoint En ligne, OneDrive         |Non        |
 |Exchange         |non applicable         |
-|Client unifié AIP         |non         |
-|Scanneur unifié AIP         |non         |
-|MIP SDK         |non         |
-|Service RMS         |non      |
-|Power BI bureau et Web         |non         |
-|MCAS     |non         |         |
+|Client unifié AIP         |Non         |
+|Scanneur unifié AIP         |Non         |
+|MIP SDK         |Non         |
+|Service RMS         |Non      |
+|Power BI bureau et Web         |Non         |
+|MCAS     |Non         |         |
 
 
 ## <a name="file-removed"></a>Fichier supprimé
@@ -172,10 +172,10 @@ Cet événement est généré la première fois que la protection est ajoutée m
 
 |Source  |Signalé dans l’Explorateur d’activités | Remarque  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |non         |
-|Outlook         |non         |
+|Word, Excel, PowerPoint         |Non         |
+|Outlook         |Non         |
 |SharePoint En ligne, OneDrive         |non applicable           |
-|Exchange         |non       |
+|Exchange         |Non       |
 |Client unifié AIP         |oui            |
 |Scanneur unifié AIP         |non applicable         |
 |MIP SDK         |oui            |
@@ -189,10 +189,10 @@ Cet événement est généré chaque fois que la protection sur un document non 
 
 |Source  |Signalé dans l’Explorateur d’activités |
 |---------|---------| 
-|Word, Excel, PowerPoint         |non         |
-|Outlook         |non         |
+|Word, Excel, PowerPoint         |Non         |
+|Outlook         |Non         |
 |SharePoint En ligne, OneDrive         |non applicable           |
-|Exchange         |non       |
+|Exchange         |Non       |
 |Client unifié AIP         |oui            |
 |Scanneur unifié AIP         |non applicable         |
 |MIP SDK         |oui            |
@@ -206,10 +206,10 @@ Cet événement est généré chaque fois que la protection sur un document non 
 
 |Source  |Signalé dans l’Explorateur d’activités |
 |---------|---------| 
-|Word, Excel, PowerPoint         |non         |
-|Outlook         |non         |
+|Word, Excel, PowerPoint         |Non         |
+|Outlook         |Non         |
 |SharePoint En ligne, OneDrive         |non applicable           |
-|Exchange         |non       |
+|Exchange         |Non       |
 |Client unifié AIP         |oui            |
 |Scanneur unifié AIP         |non applicable         |
 |MIP SDK         |oui            |
@@ -227,10 +227,10 @@ Cet événement est généré chaque fois qu’une stratégie DLP est en corresp
 |SharePoint Online|oui          |
 |OneDrive |oui|
 |Teams |oui   |
-|Appareils Windows 10         |oui |
-|MAC         |non     |
-|local         |non|
-|MCAS     |non        | 
+|appareils Windows 10         |oui |
+|MAC         |Non     |
+|local         |Non|
+|MCAS     |Non        | 
 
 Les événements pour Windows 10 périphériques de terminaison (DLP de point de terminaison) sont les :
 
@@ -253,7 +253,7 @@ Cet événement est généré chaque fois qu’un document non étiqueté est é
 
 |Source  |Signalé dans l’Explorateur d’activités |
 |---------|---------| 
-|Exchange         |non       |
+|Exchange         |Non       |
 |SharePoint Online|oui          |
 |OneDrive |oui|
 
@@ -265,7 +265,7 @@ Cet événement est généré chaque fois qu’une étiquette est mise à jour s
 
 |Source  |Signalé dans l’Explorateur d’activités |
 |---------|---------| 
-|Exchange         |non       |
+|Exchange         |Non       |
 |SharePoint Online|oui          |
 |OneDrive |oui|
  
@@ -277,7 +277,7 @@ Cet événement est généré chaque fois qu’une étiquette est supprimée d�
 
 |Source  |Signalé dans l’Explorateur d’activités |
 |---------|---------| 
-|Exchange         |non       |
+|Exchange         |Non       |
 |SharePoint Online|oui          |
 |OneDrive |oui|
 

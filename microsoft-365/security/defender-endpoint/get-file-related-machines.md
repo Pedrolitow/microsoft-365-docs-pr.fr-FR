@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les ordinateurs liés aux fichiers
-description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés à un fichier pour obtenir une collection d’ordinateurs liés à un hachage de fichier dans Microsoft Defender for Endpoint.
+description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés à un fichier pour obtenir une collection d’ordinateurs liés à un hachage de fichier dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, appareils, hachage
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 99a0cab51c7e083817d521833be8d21832587784
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 432f8e640d8bbc0f2464af2c2476c57bcd9539f38c23ae2c91b864afd585e6f7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890490"
 ---
 # <a name="get-file-related-machines-api"></a>API Obtenir les ordinateurs liés aux fichiers
 
@@ -39,7 +39,7 @@ ms.locfileid: "53651410"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère une collection [d’ordinateurs](machine.md) associés à un hachage de fichier donné.
+Récupère une collection [d’ordinateurs liés](machine.md) à un hachage de fichier donné.
 
 ## <a name="limitations"></a>Limites
 
@@ -80,7 +80,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si le fichier existe : 200 - OK avec la liste des entités [de l’ordinateur](machine.md) dans le corps. Si le fichier n’existe pas - 404 - In trouvé.
+En cas de réussite et si le fichier existe : 200 - OK avec la liste des entités de [l’ordinateur](machine.md) dans le corps. Si le fichier n’existe pas - 404 - In trouvé.
 
 ## <a name="example"></a>Exemple
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Feuille de route de l’identité pour Microsoft 365.
-ms.openlocfilehash: c79b7babbfbd97a13979de1ed23052ac572d9ded
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 555f0ceba66280f1142b0af492eb61acf37e34d5a4b8d1db6333e7da01ff968c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "51051305"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801016"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Feuille de route relative à l’identité pour Microsoft 365
 

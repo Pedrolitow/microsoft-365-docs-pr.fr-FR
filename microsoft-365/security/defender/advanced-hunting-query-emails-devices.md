@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: aacd0745ff507356035f8f460ed2b4307e9da6ed
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 98a3b85f5abab5319b6259961d999c7e1ae67cb8eb4c9cc46862b5739e59f165
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964872"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520374"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Repérer des menaces sur les appareils, les e-mails, les applications, et les identités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 [Le recherche avancée](advanced-hunting-overview.md) dans Microsoft 365 Defender vous permet de chercher de manière proactive les menaces dans :
@@ -235,7 +235,7 @@ EmailAttachmentInfo
 | join (
 //Check devices for any activity involving the attachments
 DeviceFileEvents
-| project FileName, SHA256
+| project FileName, SHA256, DeviceName, DeviceId
 ) on SHA256
 | project Timestamp, FileName , SHA256, DeviceName, DeviceId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
 ```
@@ -282,7 +282,7 @@ DeviceProcessEvents
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

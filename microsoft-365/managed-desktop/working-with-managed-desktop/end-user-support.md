@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2eea02b0a891f65ccd7e4e993ca719b0f3aa1b8b
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 237c6e944669a2041a46465296af71f14851598351f51738d7f3c7f096414247
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800665"
 ---
 # <a name="getting-help-for-users"></a>Obtenir de l’aide pour les utilisateurs
 
@@ -31,7 +31,7 @@ Avant de demander un accès élevé à un appareil, il est préférable de passe
     - Élévation des niveaux des dépannages du système intégrés, de l’invite de commandes ou des Windows PowerShell
     - Résolution des problèmes des applications métier
     - Utilisation d’une solution de contournement pour corriger quelque chose qui doit fonctionner par conception (par exemple, l’activation de BitLocker ou le temps système non mis à jour)
-    - Élévation de la fonction Gestionnaire de périphériques pour faire des opérations telles que les pilotes de mise à jour, désinstaller un appareil ou analyser les nouvelles modifications
+    - Élévation de la fonction Gestionnaire de périphériques pour qu’il recherche de nouvelles modifications, telles que la mise à jour des pilotes, la désinstallation d’un appareil ou l’analyse des nouvelles modifications
 
 - **Les actions qui ne sont pas recommandées sont** les suivantes :
     - Installation de logiciels ou de navigateurs

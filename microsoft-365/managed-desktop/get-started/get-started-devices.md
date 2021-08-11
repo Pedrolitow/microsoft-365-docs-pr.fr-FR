@@ -11,12 +11,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8a20a7103be799826cb848c71cb285b0884e9540
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 3b4b46d124f1ebdee926e7ce05e2a280725dafc6dca234dec0c15800c794a9c8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800713"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Préparer vos utilisateurs à l’utilisation des appareils
 
@@ -28,7 +28,7 @@ Pour faciliter encore cette tâche, nous proposons un guide qui guide vos utilis
 
 1. Téléchargez le guide [: Microsoft Manged Desktop - Commencer à utiliser votre appareil.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)
 2. Utilisez n’importe quelle application capable d’ouvrir des fichiers PDF pour compléter les détails pertinents pour votre organisation :
-    - Nom du réseau à qui vos utilisateurs doivent se connecter pour poursuivre l’installation (étape 3 du guide)
+    - Nom du réseau avec qui vos utilisateurs doivent se connecter pour poursuivre l’installation (étape 3 du guide)
     - Nom du compte client Azure de votre organisation (étape 4 du guide)
     - Coordonnées du support technique interne de votre organisation (en haut de la deuxième page)
 3. Enregistrez le fichier PDF modifié, puis distribuez-le à vos utilisateurs. 

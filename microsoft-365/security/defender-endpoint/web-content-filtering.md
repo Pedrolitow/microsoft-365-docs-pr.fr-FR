@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a24797d39ece34d615dde26811da8b7d7d2b9a6d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 21b2f8b4766cd4596774a7e42a44de561686e7605ff12fe31fc5e571bc29b510
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844673"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -39,7 +39,7 @@ ms.locfileid: "53647894"
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Le filtrage de contenu Web fait partie des fonctionnalités [de protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+Le filtrage de contenu Web fait partie des fonctionnalités [de protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 Configurez des stratégies sur vos groupes d’appareils pour bloquer certaines catégories. Le blocage d’une catégorie empêche les utilisateurs au sein de groupes d’appareils spécifiés d’accéder aux URL associées à la catégorie. Pour toute catégorie qui n’est pas bloquée, les URL sont automatiquement auditées. Vos utilisateurs peuvent accéder aux URL sans interruption, et vous allez collecter des statistiques d’accès pour vous aider à créer une décision de stratégie plus personnalisée. Vos utilisateurs voient une notification de blocage si un élément de la page qu’ils voient appelle une ressource bloquée.
 
@@ -51,10 +51,6 @@ Récapitulatif des avantages :
 - Votre équipe de sécurité peut déployer facilement des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les [rôles Microsoft Defender](/microsoft-365/security/defender-endpoint/rbac) for Endpoint
 - Votre équipe de sécurité peut accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web
 
-## <a name="user-experience"></a>Expérience utilisateur
-
-L’expérience de blocage pour les navigateurs tiers pris en charge est fournie par la Protection du réseau, qui fournit un toast au niveau du système pour avertir l’utilisateur d’une connexion bloquée. Pour une expérience plus conviviale dans le navigateur, envisagez d’utiliser Microsoft Edge.
-
 ## <a name="prerequisites"></a>Conditions préalables
 
 Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des conditions suivantes :
@@ -62,8 +58,11 @@ Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des cond
 - Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 + Microsoft 365 E5 Sécurité ou la licence autonome Microsoft Defender pour endpoint. 
 - Accès à Microsoft 365 Defender portail ( https://security.microsoft.com) .
 - Appareils exécutant Windows 10 mise à jour anniversaire (version 1607) ou version ultérieure avec la dernière mise à jour MoCAMP.
-- Windows Defender SmartScreen et protection réseau activées.
+- Windows Defender SmartScreen et protection du réseau activés.
 
+## <a name="user-experience"></a>Expérience utilisateur
+
+L’expérience de blocage pour les navigateurs tiers pris en charge est fournie par la Protection du réseau, qui fournit un toast au niveau du système pour avertir l’utilisateur d’une connexion bloquée. Pour une expérience plus conviviale dans le navigateur, envisagez d’utiliser Microsoft Edge.
 
 ## <a name="data-handling"></a>Traitement des données
 
@@ -71,11 +70,11 @@ Les données sont stockées dans la région sélectionnée dans le cadre de vos 
 
 ## <a name="turn-on-web-content-filtering"></a>Activer le filtrage de contenu web
 
-Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison  >  **fonctionnalités**  >    >  **générales avancées.** Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculer le bouton bascule sur **Sur** et **Enregistrer les préférences**.
+Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison  >  **fonctionnalités**  >    >  **générales avancées**. Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculez sur Les préférences **d’on** et **d’enregistrer.**
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurer des stratégies de filtrage de contenu web
 
-Les stratégies de filtrage de contenu Web spécifient les catégories de site bloquées sur les groupes d’appareils. Pour gérer les stratégies, go to **Paramètres**  >  **Endpoints**  >  **Web content filtering** (under **Rules**).
+Les stratégies de filtrage de contenu Web spécifient les catégories de site bloquées pour les groupes d’appareils. Pour gérer les stratégies, go to **Paramètres**  >  **Endpoints**  >  **Web content filtering** (under **Rules**).
 
 Utilisez le filtre pour localiser les stratégies qui contiennent certaines catégories bloquées ou qui sont appliquées à des groupes d’appareils spécifiques.
 
@@ -94,7 +93,7 @@ Pour ajouter une nouvelle stratégie :
 5. Examinez le résumé et enregistrez la stratégie. L’actualisation de la stratégie peut prendre jusqu’à 2 heures pour s’appliquer à vos appareils sélectionnés.
 
 > [!NOTE]
-> - Vous pouvez déployer une stratégie sans sélectionner de catégorie sur un groupe d’appareils. Cette action crée une stratégie d’audit uniquement, pour vous aider à comprendre le comportement des utilisateurs avant de créer une stratégie de blocage.
+> - Vous pouvez déployer une stratégie sans sélectionner de catégorie sur un groupe d’appareils. Cette action crée une stratégie d’audit uniquement pour vous aider à comprendre le comportement des utilisateurs avant de créer une stratégie de blocage.
 > - Si vous supprimez une stratégie ou modifiez des groupes d’appareils en même temps, cela peut entraîner un retard dans le déploiement de la stratégie.
 > - Le blocage de la catégorie « Non catégorisé » peut entraîner des résultats inattendus et inattendus.  
 
@@ -108,13 +107,19 @@ Il est possible de remplacer la catégorie bloquée dans le filtrage de contenu 
 
 3. Définissez l’action de stratégie sur **Autoriser**.  
 
-### <a name="reporting-inaccuracies"></a>Inaccuracies de rapports
+### <a name="dispute-categories"></a>Catégories de litige
 
-Si vous rencontrez un domaine qui a été classé de manière incorrecte, vous pouvez signaler des inexactitudes directement à partir de la page rapports de filtrage de contenu Web. Cette fonctionnalité est disponible uniquement dans le nouveau centre Microsoft 365 de sécurité (security.microsoft.com).
+Si vous rencontrez un domaine qui a été classé de manière incorrecte, vous pouvez la disputer directement à partir du portail. 
 
-Pour signaler une imprécision, accédez à **Reports**  >  **Web Protection** Web Content  >  **Filtering Details**  >  **Domains**. Sous l’onglet Domaines de nos rapports de filtrage de contenu Web, vous verrez des ellipses à côté de chacun des domaines. Pointez sur ces ellipses et **sélectionnez Report Inaccuracy**.
+Pour disputer la catégorie d’un domaine, accédez à **Reports**  >  **Web Protection** Web Content  >  **Filtering Details**  >  **Domains**. Sous l’onglet Domaines des rapports de filtrage de contenu Web, vous verrez des ellipses à côté de chacun des domaines. Pointez sur ces ellipses et sélectionnez **Catégorie litige.**
 
 Un panneau s’ouvre où vous pouvez sélectionner la priorité et ajouter des détails supplémentaires, tels que la catégorie suggérée pour la recatégorisation. Une fois que vous avez terminé le formulaire, sélectionnez **Envoyer.** Notre équipe examine la demande dans un jour ou deux. Pour un déblocage immédiat, créez un [indicateur d’autoriser personnalisé.](indicator-ip-domain.md)
+
+### <a name="url-category-lookup"></a>Recherche de catégorie d’URL
+
+Pour déterminer la catégorie d’un site web, vous pouvez utiliser la fonction de recherche d’URL disponible sur le portail Microsoft 365 Defender ( https://security.microsoft.com) . Dans les résultats de recherche d’URL, la catégorie de filtrage de contenu web apparaît sous **URL/Détails du domaine.** Les administrateurs peuvent également s’en prendre à la catégorie du domaine directement à partir de cette page, comme illustré dans l’image ci-dessous. Si le résultat de catégorie n’est pas affiché, l’URL n’est pas actuellement affectée à une catégorie de filtrage de contenu web existante.
+
+![Image des résultats de recherche de catégorie de filtrage de contenu web](../../media/web-content-filtering-category-lookup.png)
 
 ## <a name="web-content-filtering-cards-and-details"></a>Cartes et détails de filtrage de contenu Web
 

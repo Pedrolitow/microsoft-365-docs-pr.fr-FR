@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 API de recherche avancée Defender
-description: Découvrez comment exécuter des requêtes de recherche avancée à l’aide Microsoft 365'API de recherche avancée de Defender
+title: Microsoft 365 Defender API de recherche avancée
+description: Découvrez comment exécuter des requêtes de recherche avancées à l’aide Microsoft 365 Defender’API de recherche avancée de l’utilisateur
 keywords: Recherche avancée, API, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4064a2d4469fb842a6446c1a869de44a48f2b627cdb25ae4f7999a255c3d04f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769584"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53792913"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 API de recherche avancée Defender
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de recherche avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Les conditions suivantes concernent toutes les requêtes.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler l’API de recherche avancée. Pour plus d’informations, notamment sur le choix des autorisations, consultez [la Microsoft 365 API Protection de Defender](api-access.md)
+L’une des autorisations suivantes est nécessaire pour appeler l’API de recherche avancée. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir Les API [Access Microsoft 365 Defender Protection](api-access.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 -|-|-
@@ -86,7 +86,7 @@ Content-Type | application/json
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Paramètre | Type | Description
+Parameter | Type | Description
 -|-|-
 Requête | Texte | Requête à exécuter. **Remarque : obligatoire**
 
@@ -98,7 +98,7 @@ L’objet de réponse contient trois propriétés de niveau supérieur :
 
 1. Statistiques : dictionnaire des statistiques de performances des requêtes.
 2. Schéma : schéma de la réponse, liste des Name-Type pour chaque colonne.
-3. Résultats : liste des événements de recherche avancée.
+3. Résultats : liste des événements de recherche avancés.
 
 ## <a name="example"></a>Exemple
 
@@ -179,7 +179,7 @@ Dans l’exemple suivant, un utilisateur envoie la requête ci-dessous et reçoi
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Accéder aux API Microsoft 365 Defender](api-access.md)
+- [Accéder aux API Microsoft 365 Defender de données](api-access.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)
 - [Comprendre les codes d’erreur](api-error-codes.md)
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

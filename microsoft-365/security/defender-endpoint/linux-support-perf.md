@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: edad9446575ae1165f9268de1bb61ed7cc2f4893
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 362e0f20b23068027e65199f3800bd4f315ec2a0
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653018"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757377"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur Linux
 
@@ -36,7 +36,7 @@ ms.locfileid: "53653018"
 
 Cet article fournit quelques étapes générales qui peuvent être utilisées pour affiner les problèmes de performances liés à Defender pour Endpoint sur Linux.
 
-La protection en temps réel (RTP) est une fonctionnalité de Defender for Endpoint sur Linux qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus et d’autres heuristiques.
+La protection en temps réel (RTP) est une fonctionnalité de Defender for Endpoint sur Linux qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus, ainsi que d’autres heuristiques.
 
 Selon les applications que vous exécutez et les caractéristiques de votre appareil, vous pouvez obtenir des performances sous-optimales lors de l’exécution de Defender pour Endpoint sur Linux. En particulier, les applications ou les processus système qui accèdent à de nombreuses ressources sur un court laps de temps peuvent entraîner des problèmes de performances dans Defender pour Endpoint sur Linux.
 
@@ -44,7 +44,7 @@ Avant de commencer, assurez-vous que les autres produits de sécurité ne sont p
 
 Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces problèmes :
 
-1. Désactivez la protection en temps réel à l’aide de l’une des méthodes suivantes et observez si les performances sont améliorées. Cette approche permet de déterminer si Defender for Endpoint sur Linux contribue aux problèmes de performances.
+1. Désactivez la protection en temps réel à l’aide de l’une des méthodes suivantes et observez si les performances s’améliorent. Cette approche permet de déterminer si Defender for Endpoint sur Linux contribue aux problèmes de performances.
 
     Si votre appareil n’est pas géré par votre organisation, la protection en temps réel peut être désactivée à partir de la ligne de commande :
 
@@ -59,7 +59,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
 
     Si le problème de performances persiste alors que la protection en temps réel est éteinte, l’origine du problème peut être protection évolutive des points de terminaison composant. Dans ce cas, contactez le support technique pour obtenir des instructions supplémentaires et des mesures de prévention.
 
-2. Pour rechercher les applications qui déclenchent le plus d’analyses, vous pouvez utiliser des statistiques en temps réel recueillies par Defender pour Endpoint sur Linux.
+2. Pour rechercher les applications qui déclenchent le plus grand nombre d’analyses, vous pouvez utiliser des statistiques en temps réel recueillies par Defender pour Endpoint sur Linux.
 
     > [!NOTE]
     > Cette fonctionnalité est disponible dans la version 100.90.70 ou une version plus récente.
@@ -123,7 +123,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
     ```
 
-      La sortie de ce qui précède est une liste des principaux contributeurs aux problèmes de performances. La première colonne est l’identificateur de processus (PID), la deuxième colonne est le nom du processus te et la dernière colonne le nombre de fichiers analysés, triés par impact.
+      La sortie de ce qui précède est une liste des principaux contributeurs aux problèmes de performances. La première colonne est l’identificateur de processus (PID), la deuxième colonne est le nom du processus et la dernière colonne le nombre de fichiers analysés, triés par impact.
     Par exemple, la sortie de la commande ressemblera à ce qui suit : 
 
     ```Output

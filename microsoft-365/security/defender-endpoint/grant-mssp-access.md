@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8db0a8bb2c48077921b40b010656b52850f68ec0
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e14188a797a99b506e3714ab3f0974e5d9f0c4578c495ae1c620db96180807f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648374"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890518"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Accorder un accès au fournisseur de services de sécurité gérés (MSSP) (prévisualisation)
 
@@ -39,9 +39,9 @@ ms.locfileid: "53648374"
 
 Pour implémenter une solution d’accès délégué multi-locataire, prenez les mesures suivantes :
 
-1. Activez [le contrôle d’accès basé sur](rbac.md) les rôles dans Defender pour le point de terminaison et connectez-vous aux groupes Active Directory (AD).
+1. Activez [le contrôle d’accès basé sur](rbac.md) les rôles dans Defender pour le point de terminaison et connectez-vous à des groupes Active Directory (AD).
 
-2. Configurer des [packages d’accès de gouvernance pour](/azure/active-directory/governance/identity-governance-overview) la demande d’accès et l’approvisionnement.
+2. Configurer des [packages d’accès de gouvernance pour](/azure/active-directory/governance/identity-governance-overview) la demande d’accès et la mise en service.
 
 3. Gérer les demandes d’accès et les audits [dans Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
@@ -53,11 +53,11 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     - Analyste de niveau 1
     - Analyste de niveau 2
-    - Approbations d’analyste MSSP
+    - Approuveurs d’analyste MSSP
 
 2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint.
 
-    Pour activer RBAC dans l’Centre de sécurité Microsoft Defender client, accédez à **Paramètres > Permissions > Roles** et « Activer les rôles », à partir d’un compte d’utilisateur ayant des droits d’administrateur général ou d’administrateur de sécurité.
+    Pour activer RBAC dans l’Centre de sécurité Microsoft Defender client, accédez aux **autorisations Paramètres > > Rôles** et « Activer les rôles », à partir d’un compte d’utilisateur ayant des droits d’administrateur général ou d’administrateur de sécurité.
 
     ![Image de l’accès MSSP](images/mssp-access.png)
 
@@ -71,7 +71,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     - **Analystes de niveau 2**
 
-      Fonctionnalités de niveau 1 avec ajout à la [réponse en direct](live-response.md)
+      Fonctionnalités de niveau 1 avec l’ajout de la [réponse en direct](live-response.md)
 
     Pour plus d’informations, voir [Utiliser le contrôle d’accès basé sur un rôle.](rbac.md)
 
@@ -87,7 +87,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     Les catalogues de ressources sont une collection logique de packages d’accès, créés dans le client Client AD.
 
-    Pour ce faire, dans le client AD client, accédez à Gouvernance des identités : catalogues et ajoutez **nouveau catalogue**. Dans notre exemple, nous l’appeller **MSSP Accesses**.
+    Pour ce faire, dans le client AD client, accédez à La gouvernance des identités : catalogues et ajoutez **nouveau catalogue**. Dans notre exemple, nous l’appeller **MSSP Accesses**.
 
     ![Image du nouveau catalogue](images/goverance-catalog.png)
 
@@ -101,13 +101,13 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     - Nécessite un membre du groupe AD **MSSP Analyst Approvers** pour autoriser les nouvelles demandes
     - Possède des révisions d’accès annuel, où les analystes SOC peuvent demander une extension d’accès
-    - Peut uniquement être demandé par les utilisateurs du client SOC MSSP
+    - Peut uniquement être demandé par les utilisateurs dans le client SOC MSSP
     - L’accès automatique expire après 365 jours
 
     > [!div class="mx-imgBorder"]
     > ![Image du nouveau package d’accès](images/new-access-package.png)
 
-    Pour plus d’informations, [voir Créer un package d’accès.](/azure/active-directory/governance/entitlement-management-access-package-create)
+    Pour plus d’informations, voir [Créer un package d’accès.](/azure/active-directory/governance/entitlement-management-access-package-create)
 
 4. **Fournir un lien de demande d’accès aux ressources MSSP à partir de Customer AAD: Identity Governance**
 
@@ -132,7 +132,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     À ce stade, l’accès analyste a été mis en service et chaque analyste doit pouvoir accéder aux informations du client Centre de sécurité Microsoft Defender :`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Accéder au portail client MSSP](access-mssp-portal.md)
 - [Configurer des notifications d’alerte](configure-mssp-notifications.md)

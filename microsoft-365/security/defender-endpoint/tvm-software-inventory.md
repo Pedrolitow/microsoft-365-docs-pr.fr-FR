@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 333cacf1bce50463fdfbac4023ae724a7564809c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4c35ce53c28beb83232edb5c1cb805b6f6e51ce1c92f10e21ecb0d6b655e76c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53792996"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventaire logiciel : Gestion des menaces et des vulnérabilités
 
@@ -46,7 +46,7 @@ Dans la mesure où il s’agit d’un temps réel, en quelques minutes, vous ver
 
 ## <a name="navigate-to-the-software-inventory-page"></a>Accéder à la page Inventaire logiciel
 
-Accédez à la page  Inventaire logiciel en sélectionnant Inventaire logiciel dans le menu de navigation Gestion des menaces et des vulnérabilités dans le [portail Microsoft 365 Defender.](portal-overview.md)
+Accédez à la page  Inventaire logiciel en sélectionnant Inventaire logiciel dans le menu Gestion des menaces et des vulnérabilités navigation dans le [portail Microsoft 365 Defender.](portal-overview.md)
 
 Afficher les logiciels sur des appareils spécifiques dans les pages des appareils individuels à partir de la [liste des appareils.](machines-view-overview.md)
 
@@ -98,7 +98,7 @@ Sélectionnez un nom de logiciel pour ouvrir le volant et recherchez la section 
 
 Vous pouvez afficher les pages logicielles de différentes manières :
 
-- Page Inventaire logiciel > sélectionner un nom de logiciel > **page** Sélectionner un logiciel ouvert dans le volant
+- Page d’inventaire > sélectionnez un nom de logiciel > **page** Sélectionner un logiciel ouvert dans le volant
 - [Page Recommandations en matière](tvm-security-recommendation.md) de sécurité > sélectionner une recommandation > **page** Sélectionner un logiciel ouvert dans le volant
 - Page chronologie des [événements](threat-and-vuln-mgt-event-timeline.md) > Sélectionnez un > Sélectionnez le nom du logiciel avec lien hypertexte (comme Visual Studio 2017) dans la section intitulée « Composant associé » dans le volant
 
@@ -114,7 +114,7 @@ Vous pouvez afficher les pages logicielles de différentes manières :
 
     :::image type="content" alt-text="Page d’exemples de logiciels Visual Studio 2017 avec les détails logiciels, les faiblesses, les appareils exposés, etc." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
-## <a name="report-inaccuracy"></a>Inaccuracy de rapport
+## <a name="report-inaccuracy"></a>Report inaccuracy
 
 Signalez un faux positif lorsque vous voyez des informations vagues, inexactes ou incomplètes. Vous pouvez également signaler les recommandations de sécurité qui ont déjà été corrigés.
 

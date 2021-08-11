@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment déployer des Microsoft 365 Lighthouse de référence.
-ms.openlocfilehash: f329993443b4bd3003a3e8460d77f9b73ac10fc6
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 70dae3e86cd5f559d0afd65406cf72835af81ebb6bd209fb1d68038b9c1be5e0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409103"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800800"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer les Microsoft 365 Lighthouse base de référence 
 
@@ -59,7 +59,7 @@ Sélectionnez **Lignes de base** dans le volet de navigation gauche pour ouvrir 
 
 5. Sélectionnez **Appliquer** pour appliquer l’étape de déploiement sélectionnée au client. Si l’étape de déploiement indique « Cette action nécessite une étape manuelle », veillez à effectuer l’étape manuelle afin que l’étape de déploiement soit appliquée correctement.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble de l’utilisation des lignes de base pour déployer](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) des configurations client standard (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

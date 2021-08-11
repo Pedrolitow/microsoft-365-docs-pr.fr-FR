@@ -1,7 +1,7 @@
 ---
 title: Questions fréquemment posées sur la découverte d’appareils
 description: Trouvez des réponses aux questions fréquemment posées sur la découverte d’appareils
-keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils non utilisés
+keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils nonmanagés
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ac2643adaa2e0a30e94434a0fe34e4d6ec2b3b1d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: cc13c14f2e85dd2f217001be24a6b94a0d8426ea03dc09129200afd94700314c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890622"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Questions fréquemment posées sur la découverte d’appareils
 
@@ -84,7 +84,7 @@ Oui, vous pouvez appliquer des filtres pour exclure les appareils nonmanagés de
  L’analyse active peut générer jusqu’à 50 000 go de trafic entre l’appareil intégré et l’appareil sondé, chaque tentative d’analyse
 
 ## <a name="why-is-there-a-discrepancy-between-can-be-onboarded-devices-in-the-device-inventory-and-the-number-of-devices-to-onboard-in-the-dashboard-tile"></a>Pourquoi existe-t-il une différence entre les appareils « peuvent être intégrés » dans l’inventaire des appareils et le nombre d’appareils à intégrer dans la vignette du tableau de bord ?
-Vous remarquerez peut-être des différences entre le nombre d’appareils répertoriés sous « peut être intégré » dans l’inventaire des appareils, la recommandation de sécurité « intégration à Microsoft Defender pour point de terminaison » et le widget de tableau de bord « appareils à intégrer ».
+Vous remarquerez peut-être des différences entre le nombre d’appareils répertoriés sous « Peut être intégré » dans l’inventaire des appareils, la recommandation de sécurité « intégration à Microsoft Defender pour point de terminaison » et le widget de tableau de bord « appareils à intégrer ».
 
  La recommandation de sécurité et le widget de tableau de bord sont pour les appareils stables dans le réseau ; à l’exclusion des appareils éphémères, des appareils invités et d’autres. L’idée est de recommander sur les appareils persistants, ce qui implique également le score de sécurité global de l’organisation.
 

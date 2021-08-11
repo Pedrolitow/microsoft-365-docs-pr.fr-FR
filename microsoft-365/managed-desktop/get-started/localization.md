@@ -12,16 +12,16 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a1a042047e3203d8c401f5435e87bafa20aa952ca9e32a051b47ea3a038b7aad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023260"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800689"
 ---
 # <a name="localize-the-user-experience"></a>Localiser l’expérience utilisateur
 
-Les utilisateurs Bureau géré Microsoft peuvent sélectionner la langue de leur choix pendant le processus d’installation (expérience « out of box experience ») ou par la suite.
+Les utilisateurs Microsoft Manged Desktop peuvent sélectionner la langue de leur choix pendant le processus d’installation (expérience « out-of-box experience ») ou par la suite.
 
 ## <a name="during-setup-the-out-of-box-experience"></a>Lors de l’installation (expérience « out-of-box »)
 
@@ -60,7 +60,7 @@ Pour les nouveaux appareils, votre fabricant doit fournir des images d’apparei
 
 Si vous réutilisez des appareils existants, vous devrez peut-être travailler avec votre représentant de compte Microsoft pour obtenir les images appropriées. Pour plus d’informations, voir [Images d’appareil.](../service-description/device-images.md)
 
-[L’image universelle](../service-description/device-images.md#universal-image) fournie par Bureau géré Microsoft inclut ces langues et pour Windows 10 :
+[L’image universelle](../service-description/device-images.md#universal-image) fournie par Microsoft Manged Desktop inclut ces langues et pour les Windows 10 :
 
 - Arabe
 - Bulgare
@@ -106,12 +106,12 @@ Si vos utilisateurs ont besoin d’une langue autre que celle répertoriée ici,
 
 ## <a name="languages-for-support-and-operations"></a>Langues pour la prise en charge et les opérations
 
-### <a name="user-support"></a>Support des utilisateurs
-Bureau géré Microsoft prise en charge uniquement en anglais. Si les utilisateurs choisissent une autre langue dans l’application Aide, ils obtiennent le support des canaux de support microsoft généraux, plutôt que d’être directement Bureau géré Microsoft. Pour plus d’informations, voir [Obtenir de l’aide pour les utilisateurs.](../working-with-managed-desktop/end-user-support.md)
+### <a name="user-support"></a>Support pour les utilisateurs
+Microsoft Manged Desktop ne fournit une prise en charge qu’en anglais. Si les utilisateurs choisissent une autre langue dans l’application Aide, ils obtiennent le support des canaux de support microsoft généraux, au lieu d’être directement Microsoft Manged Desktop. Pour plus d’informations, voir [Obtenir de l’aide pour les utilisateurs.](../working-with-managed-desktop/end-user-support.md)
 
 Si vos utilisateurs ont besoin d’une prise en charge dans d’autres langues, vous devrez le fournir via des sources de support non-Microsoft ou à partir de votre propre organisation.
 
 ### <a name="admin-support-and-operations"></a>Support et opérations de l’administrateur
-Bureau géré Microsoft prise en charge de l’administrateur uniquement en anglais. Cela inclut le portail d’administration et toutes les communications avec Bureau géré Microsoft opérations. Vous devez supposer que toutes les interactions et interfaces liées à l’administrateur seront en anglais, sauf indication contraire.
+Microsoft Manged Desktop prise en charge de l’administrateur uniquement en anglais. Cela inclut le portail d’administration et toutes les communications avec Microsoft Manged Desktop opérations. Vous devez supposer que toutes les interactions et interfaces liées à l’administrateur seront en anglais, sauf indication contraire.
 
 
