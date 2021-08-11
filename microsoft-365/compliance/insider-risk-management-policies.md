@@ -380,7 +380,7 @@ Pour commencer manuellement l’activité d’attribution de scores pour les uti
 7. Pour importer une liste d’utilisateurs à ajouter aux stratégies, sélectionnez **Importer** pour importer un fichier .csv (valeurs séparées par une virgule). Le fichier doit être dans le format ci-après et vous devez répertorier les noms de principal de l’utilisateur dans le fichier :
 
     ```csv
-    user principal name
+    nom d'utilisateur principal
     user1@domain.com
     user2@domain.com
     ```
