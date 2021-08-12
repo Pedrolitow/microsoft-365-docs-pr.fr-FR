@@ -24,12 +24,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: Créez des groupes de distribution ou des listes dans le Centre d’administration Microsoft 365 de sorte que vous pouvez envoyer des courriers électroniques à un groupe sans taper le nom de chaque destinataire.
-ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2aa7ded4fe29a43d2b1f0d3282467e8eaba6484d2ab40df99bd81f4bbe348bb6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393570"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822150"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre d’administration Microsoft 365
   
@@ -75,7 +75,7 @@ Découvrez comment utiliser le groupe dans Outlook 2016 et Outlook sur le web da
   
 Consultez les [problèmes de groupe de](/office365/troubleshoot/groups/distribution-list-issues) distribution pour obtenir de l’aide sur les problèmes de liste de distribution. 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)\
 [Créer, modifier ou supprimer un groupe de sécurité dans](../email/create-edit-or-delete-a-security-group.md) le Centre d’administration Microsoft 365 (article)\

@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: Découvrez les éléments nonndex dans Exchange et SharePoint que vous pouvez inclure dans une recherche de découverte électronique que vous exécutez dans le centre de conformité Microsoft 365.
-ms.openlocfilehash: e1730959cd3177fe1f7bce1f0315c871b5a57598
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Découvrez les éléments nonndex dans Exchange et SharePoint que vous pouvez inclure dans une recherche de découverte électronique que vous exécutez dans le Centre de conformité Microsoft 365.
+ms.openlocfilehash: a43873b52ad4cf76c694b4666761b6904ab4126c5c7b79a6ca530ef00af5c688
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835750"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Éléments partiellement indexés dans eDiscovery
 
-Une recherche de découverte électronique que vous exécutez à partir du centre de conformité Microsoft 365 inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont des Exchange de boîtes aux lettres et des documents sur des sites SharePoint et OneDrive Entreprise qui, pour une raison quelconque, n’ont pas été complètement indexés pour la recherche. Dans Exchange, un élément partiellement indexé contient généralement un fichier (d’un type de fichier qui ne peut pas être indexé) joint à un message électronique. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche de découverte électronique :
+Une recherche de découverte électronique que vous exécutez à partir du Centre de conformité Microsoft 365 inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont des Exchange de boîtes aux lettres et des documents sur des sites SharePoint et OneDrive Entreprise qui, pour une raison quelconque, n’ont pas été complètement indexés pour la recherche. Dans Exchange, un élément partiellement indexé contient généralement un fichier (d’un type de fichier qui ne peut pas être indexé) joint à un message électronique. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche de découverte électronique :
   
 - Le type de fichier n’est paspris en charge ou est désactivé pour l’indexation.
 
@@ -53,7 +53,7 @@ Pour les enquêtes juridiques, votre organisation peut être tenue de réviser l
   
 ## <a name="file-types-not-indexed-for-search"></a>Types de fichier non indexés pour la recherche
 
-Certains types de fichier, tels que les fichiers Bitmap ou MP3, ne comportent pas de contenu pouvant être indexé. Par conséquent, les serveurs d’indexation de recherche dans Exchange et SharePoint n’effectuent pas d’indexation en texte intégral sur ces types de fichiers. Ces types de fichier sont considérés comme non pris en charge. Il existe également des types de fichier pour lesquels l’indexation de texte intégral a été désactivée, soit par défaut, soit par un administrateur. Les types de fichiers non pris en place et désactivés sont étiquetés en tant qu’éléments nonndex dans les recherches de contenu. Comme indiqué précédemment, les éléments partiellement indexés peuvent être inclus dans l’ensemble des résultats de recherche lorsque vous exécutez une recherche, que vous exportez les résultats de la recherche sur un ordinateur local ou que vous préparez les résultats de recherche pour Advanced eDiscovery.
+Certains types de fichier, tels que les fichiers Bitmap ou MP3, ne comportent pas de contenu pouvant être indexé. Par conséquent, les serveurs d’indexation de recherche dans Exchange et SharePoint n’effectuent pas d’indexation en texte intégral sur ces types de fichiers. Ces types de fichier sont considérés comme non pris en charge. Il existe également des types de fichier pour lesquels l’indexation de texte intégral a été désactivée, soit par défaut, soit par un administrateur. Les types de fichiers non pris en mesure et désactivés sont étiquetés en tant qu’éléments nonndex dans les recherches de contenu. Comme indiqué précédemment, les éléments partiellement indexés peuvent être inclus dans l’ensemble des résultats de recherche lorsque vous exécutez une recherche, que vous exportez les résultats de la recherche vers un ordinateur local ou que vous préparez les résultats de recherche pour Advanced eDiscovery.
   
 Pour obtenir une liste de formats de fichier pris en charge et désactivés, consultez les rubriques suivantes :
   
@@ -106,7 +106,7 @@ Pour obtenir la liste des limites d’indexation pour SharePoint documents, voir
   
 |**Limite d’indexation**|**Commentaires**|**Description**|
 |:-----|:-----|:-----|
-|Taille maximale des pièces jointes (à l’Excel fichiers)  <br/> |150 Mo  <br/> |Taille maximale d’une pièce jointe de courrier électronique qui sera l’indexation. Les pièces jointes dont la taille est supérieure à cette limite ne seront pas indexées et le message avec la pièce jointe sera marqué comme partiellement indexé.  <br/><br/> **Remarque :** L’examen est le processus dans lequel le service d’indexation extrait le texte de la pièce jointe, supprime les caractères inutiles tels que les signes de ponctuation et les espaces, puis divise le texte en mots (dans un processus appelé tokenization), qui sont ensuite stockés dans l’index.           |
+|Taille maximale des pièces jointes (à l’Excel fichiers)  <br/> |150 Mo  <br/> |Taille maximale d’une pièce jointe de courrier électronique qui sera l’indexation. Les pièces jointes dont la taille est supérieure à cette limite ne seront pas indexées et le message avec la pièce jointe sera marqué comme partiellement indexé.  <br/><br/> **Remarque :** L’examen est le processus dans lequel le service d’indexation extrait le texte de la pièce jointe, supprime les caractères inutiles tels que les signes de ponctuation et les espaces, puis divise le texte en mots (dans un processus appelé tokenization), qui sont ensuite stockés dans l’index.           |
 |Taille maximale des fichiers Excel fichiers  <br/> |4 Mo  <br/> |Taille maximale d’un Excel situé sur un site ou joint à un message électronique qui sera indexé. Tout fichier Excel qui est supérieur à cette limite n’est pas en cours d’examen et le fichier ou l’e-mail du message avec la pièce jointe est marqué comme non indexé.  <br/> |
 |Nombre maximal de pièces jointes  <br/> |250  <br/> |Nombre maximal de fichiers joints à un message électronique qui seront à l’indexation. Si un message a plus de 250 pièces jointes, les 250 premières pièces jointes sont parées et indexées, et le message est marqué comme partiellement indexé car il avait des pièces jointes supplémentaires qui n’ont pas été l’ont été.  <br/> |
 |Profondeur maximale des pièces jointes  <br/> |30  <br/> |Nombre maximal de pièces jointes imbrmbrées qui sont parsées. Par exemple, si un message électronique est joint à un autre message et que le message joint contient un document Word joint, le document Word et le message joint sont indexés. Ce comportement se poursuit pour jusqu’à 30 pièces jointes imbrmbrées.  <br/> |
@@ -115,7 +115,7 @@ Pour obtenir la liste des limites d’indexation pour SharePoint documents, voir
 |Sortie maximale de l’parseur  <br/> |2 millions de caractères  <br/> |Quantité maximale de texte provenant de l’indexeur indexé. Par exemple, si l’utilisateur a extrait 8 millions de caractères d’un document, seuls les 2 premiers millions de caractères sont indexés.  <br/> |
 |Nombre maximal de jetons d’annotation  <br/> |2 millions  <br/> |Lorsqu’un message électronique est indexé, chaque mot est annoté avec différentes instructions de traitement qui spécifient comment ce mot doit être indexé. Chaque ensemble d’instructions de traitement est appelé jeton d’annotation. Pour maintenir la qualité de service dans Office 365, il existe une limite de 2 millions de jetons d’annotation pour un message électronique.  <br/> |
 |Taille maximale du corps dans l’index  <br/> |67 millions de caractères  <br/> |Nombre total de caractères dans le corps d’un message électronique et toutes ses pièces jointes. Lorsqu’un message électronique est indexé, tout le texte du corps du message et de toutes les pièces jointes est concaté en une seule chaîne. La taille maximale de cette chaîne indexée est de 67 millions de caractères.  <br/> |
-|Nombre maximal de jetons uniques dans le corps  <br/> |1 million  <br/> |Comme indiqué précédemment, les jetons sont le résultat de l’extraction de texte à partir du contenu, de la suppression des signes de ponctuation et des espaces, puis de sa division en mots (appelés jetons) stockés dans l’index. Par exemple, l’expression  `"cat, mouse, bird, dog, dog"` contient 5 jetons. Mais seuls 4 d’entre eux sont des jetons uniques. Il existe une limite de 1 million de jetons uniques par message électronique, ce qui permet d’éviter que l’index ne soit trop grand avec des jetons aléatoires.  <br/> |
+|Nombre maximal de jetons uniques dans le corps  <br/> |1 million  <br/> |Comme indiqué précédemment, les jetons sont le résultat de l’extraction de texte à partir du contenu, de la suppression des signes de ponctuation et des espaces, puis de sa division en mots (appelés jetons) stockés dans l’index. Par exemple, l’expression  `"cat, mouse, bird, dog, dog"` contient 5 jetons. Mais seuls 4 d’entre eux sont des jetons uniques. Il existe une limite de 1 million de jetons uniques par message électronique, ce qui permet d’éviter que l’index ne soit trop grand avec des jetons aléatoires.  <br/> |
 ||||
 
 ## <a name="more-information-about-partially-indexed-items"></a>Plus d’informations sur les éléments partiellement indexés

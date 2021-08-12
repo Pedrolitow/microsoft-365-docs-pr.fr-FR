@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 405f63c849c33680ff221dd752899682df5d62e7
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 0a465458026c7da21ff60d62c7566d01e77d3e584ba487adf842074578066662
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726163"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801584"
 ---
 # <a name="insider-risk-management-cases"></a>Cas de gestion des risques internes
 
@@ -60,7 +60,7 @@ Utilisez le **contrôle de** recherche pour rechercher des noms de cas pour du t
 
 ## <a name="filter-cases"></a>Filtrer des cas
 
-Selon le nombre et le type de stratégies de gestion des risques internes actives dans votre organisation, l’examen d’une file d’attente de cas importante peut être difficile. L’utilisation de filtres de cas permet aux analystes et aux enquêteurs de trier les cas par plusieurs attributs. Pour filtrer les alertes dans le tableau de bord **Cas,** sélectionnez **le contrôle** Filtre. Vous pouvez filtrer les cas par un ou plusieurs attributs :
+Selon le nombre et le type de stratégies actives de gestion des risques internes dans votre organisation, l’examen d’une file d’attente de cas importante peut être difficile. L’utilisation de filtres de cas permet aux analystes et aux enquêteurs de trier les cas par plusieurs attributs. Pour filtrer les alertes dans le tableau de bord **Cas,** sélectionnez **le contrôle** Filtre. Vous pouvez filtrer les cas par un ou plusieurs attributs :
 
 - **État**: sélectionnez une ou plusieurs valeurs d’état pour filtrer la liste des cas. Les options sont *Active* et *Closed*.
 - **Cas d’heure ouvert**: sélectionnez les dates de début et de fin de l’ouverture du cas.
@@ -258,6 +258,6 @@ Pour résoudre un cas :
 
 1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis sélectionnez le **bouton Résoudre** le cas dans la barre d’outils d’action de cas.
-3. Dans la **boîte de dialogue Résoudre le cas,** sélectionnez le contrôle **Résoudre** en tant que la boîte de dialogue pour sélectionner la classification de résolution pour le cas. Les options possibles sont une violation **de** la stratégie anodin **ou confirmée.**
+3. Dans la **boîte de dialogue Résoudre le cas,** sélectionnez **résoudre** en tant que contrôle de la boîte de dialogue pour sélectionner la classification de résolution pour le cas. Les options possibles sont une violation **de** la stratégie anodin **ou confirmée.**
 4. Dans la **boîte de dialogue Résoudre le cas,** entrez les raisons de la classification de résolution dans le champ de texte **Action** prise.
 5. Sélectionnez **Résoudre** pour fermer le cas ou **annuler** la boîte de dialogue sans résoudre le cas.

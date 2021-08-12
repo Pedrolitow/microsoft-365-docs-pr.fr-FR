@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le flux de travail de communications Advanced eDiscovery pour suivre l’état de vos notifications de mise en attente légale et, si nécessaire, les mettre à jour et les renvoyer.
-ms.openlocfilehash: 8852bfd1651e1855d276b60ba6fac35c378d4631
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 88dd3ef8e74dd67b196f574b1cfe8ba5c33a1a63afeac8701f19e36476e56767
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842133"
 ---
 # <a name="manage-hold-notifications"></a>Gérer les notifications de conservation
 
@@ -41,7 +41,7 @@ La liste des dépositaires associés à la communication sélectionnée s’affi
 
 ## <a name="re-send-a-hold-notice"></a>Renvoyer un avis de non-attente
 
-Parfois, les dépositaires perdent le suivi des messages électroniques dans leur travail quotidien. Ou dans le cas d’un litige de longue durée, un dépositaire peut vous contacter ou d’autres personnes et vous demander de renvoyer une notification. Lorsque vous gérez le flux de travail de communications pour les notifications de non-droit, vous devrez peut-être renvoyer une notification pour la renvoyer à la « partie supérieure de la boîte aux lettres d’un utilisateur ».
+Parfois, les dépositaires perdent le suivi des messages électroniques dans leur travail quotidien. Ou dans le cas d’un litige de longue durée, un dépositaire peut vous contacter ou d’autres personnes et vous demander de renvoyer une notification. Lorsque vous gérez le flux de travail de communications pour les notifications de non-accès pour raisons juridiques, vous devrez peut-être renvoyer un avis pour le renvoyer dans la « partie supérieure de la boîte aux lettres d’un utilisateur ».
 
 Pour renvoyer une notification de conservation à un dépositaire :
 
@@ -68,11 +68,11 @@ Pour mettre à jour le contenu de l’avis de mise en attente initiale :
 
 1. Dans Advanced eDiscovery, sélectionnez un cas, puis cliquez sur **l’onglet Communications.**
 
-2. Sélectionnez l’avis de mise en attente à mettre à jour, puis cliquez sur **Modifier** dans la page de **communication** du dépositaire.
+2. Sélectionnez l’avis de conservation à mettre à jour, puis cliquez sur **Modifier** dans la page de **communication** du dépositaire.
 
-3. Dans **l’Assistant Modifier la communication,** cliquez sur Définir le contenu du portail dans le volet gauche de l’Assistant et mettez à jour le contenu de l’avis. 
+3. Dans **l’Assistant Modifier la communication,** cliquez sur Définir le contenu du portail dans le volet gauche de l’Assistant, puis mettez à jour le contenu de l’avis. 
 
-4. Cliquez sur **Enregistrer**.
+4. Cliquez sur **Save (Enregistrer)**.
 
 L’avis de réé émission est envoyé à tous les dépositaires affectés à la notification de conservation légale. En outre, si l’avis de rappel ou d’escalade est activé, les flux de travail pour ces types de notifications redémarrent.
 

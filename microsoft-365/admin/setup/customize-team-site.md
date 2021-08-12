@@ -24,19 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: Découvrez comment personnaliser, organiser et gérer SharePoint site d’équipe avec des bibliothèques de documents, des listes et des hubs.
-ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Découvrez comment personnaliser, organiser et gérer votre site d SharePoint d’équipe avec des bibliothèques de documents, des listes et des hubs.
+ms.openlocfilehash: 27eeed7b6826ea3ba145cbbfea367ab70173dfdefd77d0d0639dbf47f67f9188
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706345"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822022"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personnaliser votre site d’équipe pour le stockage et le partage de fichiers
 
 Si vous avez une petite entreprise avec quelques employés, l’une des meilleures façons de configurer et de faciliter le partage de fichiers et la collaboration en ligne consiste à utiliser OneDrive et un site d’équipe SharePoint ensemble. Nous vous recommandons de créer un site d’équipe connecté à Microsoft 365 groupe. Si vous souhaitez utiliser la conversation, vous pouvez créer ce site en créant une équipe dans Microsoft Teams. Pour plus d’informations Teams, voir [Vidéo : Qu’est-ce Microsoft Teams ?](https://support.microsoft.com/office/b98d533f-118e-4bae-bf44-3df2470c2b12). Si vous ne souhaitez pas utiliser Teams, vous pouvez créer un site d’équipe à partir de la page SharePoint de démarrage. 
   
-[Qu'est-ce qu'un site d'équipe SharePoint ?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)
+[Qu'est-ce qu'un site d'équipe SharePoint ?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)
   
 [Créer un site d’équipe dans SharePoint](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)
   
@@ -53,17 +53,17 @@ Améliorez la navigation sur votre site avec [personnaliser la navigation sur Sh
   
 Pour améliorer la découverte d’un site, ajoutez-le en tant que lien à l’SharePoint page d’accueil. Pour plus d’informations, [voir Ajouter des liens à la SharePoint page d’accueil.](/sharepoint/change-links-list-on-sharepoint-home-page)
   
-Pour ajouter une image à une page de démarrage de site d’équipe, voir Ajouter une image ou un fichier [image à SharePoint page.](https://support.microsoft.com/office/4a9b0e98-c89a-4a41-8adb-b7750dccca16)
+Pour ajouter une image à la page de démarrage d’un site d’équipe, voir Ajouter une image ou un fichier image à [SharePoint page.](https://support.microsoft.com/office/4a9b0e98-c89a-4a41-8adb-b7750dccca16)
   
 Pour ajouter des pages à votre site, voir [Ajouter une page à un site.](https://support.microsoft.com/office/b3d46deb-27a6-4b1e-87b8-df851e503dec)
   
-Pour en savoir plus sur les paramètres du site d’équipe, [voir Gérer SharePoint de site d’équipe.](https://support.microsoft.com/office/8376034D-D0C7-446E-9178-6AB51C58DF42)
+Pour en savoir plus sur les paramètres du site d’équipe, consultez La [SharePoint de votre site d’équipe.](https://support.microsoft.com/office/8376034D-D0C7-446E-9178-6AB51C58DF42)
   
 ## <a name="work-with-document-libraries"></a>Travailler avec des bibliothèques de documents
 
 Un site d’équipe inclut une bibliothèque de documents que vous pouvez commencer à utiliser immédiatement pour le stockage de fichiers et la gestion des documents.
 
-Pour commencer le chargement, [voir Télécharger dossier ou fichiers dans une bibliothèque de documents](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
+Pour commencer le chargement, voir [Télécharger dossier ou fichiers dans une bibliothèque de documents](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
    
 Découvrez comment modifier, supprimer, consulter des fichiers, etc. Pour plus d’informations, voir [Travailler avec des fichiers dans une bibliothèque de documents.](https://support.microsoft.com/office/a9d89171-1673-4892-9dd2-1ca52037dea2)
   
@@ -93,7 +93,7 @@ Pour découvrir comment ajouter des sites à un site hub, voir Associer un site 
   
 ## <a name="sharing-files-with-the-team"></a>Partage de fichiers avec l’équipe
 
-Bien que le stockage de fichiers et la gestion des documents constitue un début, le partage avec votre équipe et les clients externes est également important. Les articles suivants vous aideront à gérer les utilisateurs et à partager vos données :
+Bien que le stockage de fichiers et la gestion des documents soit un point de départ, le partage avec votre équipe et les clients externes est également important. Les articles suivants vous aideront à gérer les utilisateurs et à partager vos données :
   
 - Pour le partage de fichiers avec votre équipe, voir Partager SharePoint fichiers ou [dossiers dans Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   

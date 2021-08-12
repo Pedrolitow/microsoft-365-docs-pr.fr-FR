@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents d’un jeu à réviser dans un cas Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 4c9fe8713d1953719f614dfa4b8b85ec64a63eab
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4e5a4e60a5788c93f9ba0407616c4417c47ed46bfe20880d067ffa04a5a42dd1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655490"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842314"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 
@@ -36,13 +36,13 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 - **Description :** Description du champ de métadonnées.
 
 > [!NOTE]
-> Le **champ Mots clés dans** la recherche de jeu à [réviser](./review-set-search.md) utilise le langage KQL (Keyword Query Language). Les champs répertoriés  dans la colonne Nom de  champ utilisable dans une recherche peuvent être utilisés dans le champ Mots clés d’une recherche de jeu à réviser pour former des requêtes complexes sans que vous n’avez à utiliser le générateur de requêtes. Pour plus d’informations sur KQL, consultez la référence [de la syntaxe du langage](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)de requête de mot clé.
+> Le **champ Mots clés dans** la recherche de jeu à [réviser](./review-set-search.md) utilise le langage KQL (Keyword Query Language). Les champs répertoriés  dans la colonne Nom de  champ utilisable dans une recherche peuvent être utilisés dans le champ Mots clés d’une recherche de jeu à réviser pour former des requêtes complexes sans que vous n’avez à utiliser le générateur de requêtes. Pour plus d’informations sur KQL, consultez la référence de syntaxe du langage de [requête de mot clé.](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 <br>
 
 ****
 
-|Nom du champ et nom du champ d’affichage|Nom du champ utilisable dans une recherche|Nom du champ exporté|Description|
+|Nom du champ et nom de champ d’affichage|Nom du champ utilisable dans une recherche|Nom du champ exporté|Description|
 |---|---|---|---|
 |ID de contenu de pièce jointe|AttachmentContentId||ID de contenu de pièce jointe de l’élément.|
 |Score de privilège client avocat|AttorneyClientPrivilegeScore||Score de contenu du modèle de privilège client-avocat.|
@@ -63,7 +63,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Contient un message modifié|ContainsEditedMessage|ContainsEditedMessage|Indique si la transcription Teams conversation inclut un message modifié
 |||Converted_file_path|Chemin d’accès du fichier d’exportation converti. Pour une utilisation interne à Microsoft uniquement.|
 |Consignataire|Consignataire|Consignataire|Nom du dépositaire à qui l’élément a été associé.|
-|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>Courrier électronique : date d’envoi<br>Pièces jointes : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>Documents incorporés : date de la dernière modification du document ; si elle n’est pas disponible, date de la dernière modification du parent<br>Documents SPO (pièces jointes modernes) : SharePoint date de dernière modification ; si elle n’est pas disponible, date de la dernière modification des documents<br>Documents non Office 365 : date de dernière modification<br>Réunions : date de début de la réunion<br>Messagerie vocale : date d’envoi<br>Messagerie instantanée : date d’envoi<br>Teams : date d’envoi|
+|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>Courrier électronique : date d’envoi<br>Pièces jointes : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>Documents incorporés : date de la dernière modification du document ; si elle n’est pas disponible, date de la dernière modification du parent<br>Documents SPO (pièces jointes modernes) : SharePoint date de dernière modification ; si non disponible, date de la dernière modification des documents<br>Documents non Office 365 : Date de la dernière modification<br>Réunions : date de début de la réunion<br>Messagerie vocale : date d’envoi<br>Messagerie instantanée : date d’envoi<br>Teams : date d’envoi|
 |Commentaires sur le document|DocComments|Doc_comments|Commentaires des métadonnées du document.|
 |Société de documents||Doc_company|Société à partir des métadonnées du document.|
 |Date de création du document|CreatedTime|Doc_date_created|Créer une date à partir des métadonnées du document.|
@@ -130,7 +130,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |NativeMD5||Native_MD5|Hachage MD5 (valeur de hachage 128 bits) du flux de fichier.|
 |NativeSHA256||Native_SHA_256|Hachage SHA256 (valeur de hachage 256 bits) du flux de fichier.|
 |Tri ND/ET : exclusion des pièces jointes|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concaténation de l’ensemble de threads de messagerie (ET) et du jeu de quasi-doublons (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET.|
-|Tri ND/ET : inclure les pièces jointes|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’un ensemble de threads de messagerie (ET) et d’un jeu de threads quasi-dupliqués (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET. Chaque élément de courrier électronique d’un ensemble ET est suivi de ses pièces jointes appropriées.|
+|Tri ND/ET : y compris les pièces jointes|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’un ensemble de threads de messagerie (ET) et d’un jeu de threads quasi-dupliqués (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET. Chaque élément de courrier électronique d’un ensemble ET est suivi de ses pièces jointes appropriées.|
 |Jeu de quasi-doublons||ND_set|Les éléments similaires au document pivot partagent la même ND_set.|
 |Auteurs O365||O365_authors|Auteur à partir SharePoint.|
 |O365 créé par||O365_created_by|Créé à partir de SharePoint.|

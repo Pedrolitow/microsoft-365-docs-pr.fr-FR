@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lisez les recommandations pour configurer l’entraînement Pertinence dans Advanced eDiscovery pour qu’il note les fichiers selon leur pertinence et génère des résultats.
-ms.openlocfilehash: 8ba09babc91f233514cd0195c3e1da08b07ccb3c
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 9a6dd5cee08ea795d8f7b2381145d2b7303ae2fb61dde395974dfc7aa6f00cdf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842170"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestion de la configuration de Pertinence dans Advanced eDiscovery (classique)
 

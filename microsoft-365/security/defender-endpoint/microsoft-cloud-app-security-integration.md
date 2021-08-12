@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de l’intégration de Microsoft Cloud App Security
 ms.reviewer: ''
-description: Microsoft Defender pour le point de terminaison s’intègre Sécurité des applications cloud en axant toutes les activités de mise en réseau des applications cloud.
+description: Microsoft Defender pour le point de terminaison s’intègre à Sécurité des applications cloud en 100 % des activités de mise en réseau des applications cloud.
 keywords: cloud, application, réseau, visibilité, utilisation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: 5d00c95323f0c2cebb030fd454df0073588ed39f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2e55070cfc8f5ee138f93ca7ae254655fabcdc9867ba3fd2056f9bbc35f3d099
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652790"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800071"
 ---
 # <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Microsoft Cloud App Security vue d’ensemble de Defender for Endpoint
 
@@ -38,7 +38,7 @@ ms.locfileid: "53652790"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Cloud App Security (Sécurité des applications cloud) est une solution complète qui offre une visibilité sur les applications et services cloud en vous permettant de contrôler et de limiter l’accès aux applications cloud, tout en appliquant des exigences de conformité sur les données stockées dans le cloud. Pour plus d’informations, [voir Sécurité des applications cloud](/cloud-app-security/what-is-cloud-app-security).
+Microsoft Cloud App Security (Sécurité des applications cloud) est une solution complète qui offre une visibilité sur les services et applications cloud en vous permettant de contrôler et de limiter l’accès aux applications cloud, tout en appliquant des exigences de conformité sur les données stockées dans le cloud. Pour plus d’informations, [voir Sécurité des applications cloud](/cloud-app-security/what-is-cloud-app-security).
 
 > [!NOTE]
 > Cette fonctionnalité est disponible avec [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) une licence E5 Enterprise Mobility + Security sur les appareils exécutant Windows 10 version 1809 ou ultérieure.
@@ -57,7 +57,7 @@ L’intégration apporte les améliorations majeures suivantes à la découverte
 
 - Contexte de périphérique : les journaux de trafic cloud n’ont pas de contexte de périphérique. L’activité réseau de Defender for Endpoint est signalée avec le contexte de périphérique (quel appareil a accédé à l’application cloud), afin que vous compreniez exactement où (appareil) l’activité réseau a eu lieu, en plus de la personne (utilisateur) qui l’a effectuée.
 
-Pour plus d’informations sur la découverte cloud, voir [Working with discovered apps](/cloud-app-security/discovered-apps).
+Pour plus d’informations sur la découverte dans le cloud, voir [Working with discovered apps](/cloud-app-security/discovered-apps).
 
 ## <a name="related-topic"></a>Rubrique connexe
 

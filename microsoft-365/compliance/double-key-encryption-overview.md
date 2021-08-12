@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: ed07361f8c433a318342ae3c8ad750549992c285
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: df6d0e98eae9c66d1fc366014f94ff6aeb479e4b36a7f0825982872ce416b6f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922048"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842302"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>Double key Encryption frequently asked questions
 
@@ -65,7 +65,7 @@ Vous pouvez stocker des documents chiffrés à double clé en local ou dans le c
 
 ## <a name="what-regions-and-languages-is-double-key-encryption-available-in-is-double-key-encryption-available-worldwide"></a>Dans quelles régions et langues le chiffrement à double clé est-il disponible ? Le chiffrement à double clé est-il disponible dans le monde entier ?
 
-Les étiquettes DKE sont localisées dans les mêmes langues que les autres étiquettes de sensibilité dans Microsoft Information Protection. Le chiffrement à double clé est disponible dans le monde entier.
+Les étiquettes DKE sont localisées dans les mêmes langues que les autres étiquettes de niveau de Protection des données Microsoft. Le chiffrement à double clé est disponible dans le monde entier.
 
 ## <a name="can-i-convert-a-non-dke-label-to-a-dke-label"></a>Puis-je convertir une étiquette non DKE en étiquette DKE ?
 
@@ -77,4 +77,4 @@ Pour obtenir des instructions sur le déploiement (également appelé rotation o
 
 Pour [plus d’informations](double-key-encryption.md#tenant-and-key-settings) sur la création d’une clé pour le service DKE, voir paramètres de client et de clé.
 
-Lorsque vous créez une clé, vous définissez un nom et un GUID. Ensuite, si vous faites pivoter une clé, vous conservez l’ancien enregistrement avec le nom et le GUID, mais vous ajoutez un nouvel enregistrement avec le même nom mais un GUID différent. La nouvelle clé est définie comme étant active afin que l’API de clé publique commence à la renvoyer pour le nouveau chiffrement. Les deux clés sont disponibles pour le déchiffrement afin que le nouveau contenu et l’ancien contenu soient déchiffrés.
+Lorsque vous créez une clé, vous définissez un nom et un GUID. Ensuite, si vous faites pivoter une clé, vous conservez l’ancien enregistrement avec le nom et le GUID, mais ajoutez un nouvel enregistrement avec le même nom mais un GUID différent. La nouvelle clé est définie comme étant active afin que l’API de clé publique commence à la renvoyer pour le nouveau chiffrement. Les deux clés sont disponibles pour le déchiffrement afin que le nouveau contenu et l’ancien contenu soient déchiffrés.

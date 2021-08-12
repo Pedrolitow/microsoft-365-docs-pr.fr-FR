@@ -1,6 +1,6 @@
 ---
 title: API de carte Get CVE-KB
-description: Découvrez comment utiliser l’API obtenir le plan CVE-KB pour récupérer une carte de CVE vers les détails de la base de données et CVE dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API obtenir un mapca CVE-KB pour récupérer une carte de CVE vers les détails de la base de données et CVE dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, cve, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 04191c2f4ce4a640878596d0eba810cc8351cfa6
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 1c17d0b5a51dfa800590bcd76c061fe6f7413933a243a5398945bf5d464952ce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656798"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793855"
 ---
 # <a name="get-cve-kb-map-api"></a>API de carte Get CVE-KB
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 24022d71802bdaa299547b4885bcb0d23ddd0c57
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 265763b237109071bfa0237aa6919381882334557006fc0cf56c82d61247ee16
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800069"
 ---
 # <a name="configure-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>Configurer les Microsoft Cloud App Security dans Microsoft Defender pour le point de terminaison
 
@@ -52,10 +52,10 @@ Une fois activé, Microsoft Defender pour le point de terminaison démarre immé
 
 ## <a name="view-the-data-collected"></a>Afficher les données collectées
 
-Pour afficher et accéder aux données du point de terminaison Microsoft Defender dans Microsoft Cloud Apps Security, voir Examiner les appareils [dans Sécurité des applications cloud](/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security).
+Pour afficher et accéder aux données de point de terminaison Microsoft Defender dans Microsoft Cloud Apps Security, voir Examiner les appareils [dans Sécurité des applications cloud](/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security).
 
 
-Pour plus d’informations sur la découverte cloud, voir [Working with discovered apps](/cloud-app-security/discovered-apps).
+Pour plus d’informations sur la découverte dans le cloud, voir [Working with discovered apps](/cloud-app-security/discovered-apps).
 
 Si vous souhaitez essayer d’Microsoft Cloud App Security, voir [Microsoft Cloud App Security Trial](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1).
 

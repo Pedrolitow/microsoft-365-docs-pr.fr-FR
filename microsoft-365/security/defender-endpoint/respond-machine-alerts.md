@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dce9f77e7c45aba8a49322348d0cb16d9a7e48f72c9972b973589b01d2b4a10c
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 01f9e286c785defa2cc182685be300e695ee181ea9f51de71c821b2290a665ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520734"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829012"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
@@ -84,10 +84,6 @@ Pour plus d’informations sur la réponse en direct, voir [Examiner les entité
 ## <a name="collect-investigation-package-from-devices"></a>Collecter un package d’examen à partir d’appareils
 
 Dans le cadre du processus d’examen ou de réponse, vous pouvez collecter un package d’enquête à partir d’un appareil. En collectant le package d’examen, vous pouvez identifier l’état actuel de l’appareil et mieux comprendre les outils et techniques utilisés par l’attaquant.
-
-> [!IMPORTANT]
->
-> - Ces actions de réponse sont uniquement disponibles pour les appareils Windows 10, version 1703 ou ultérieure.
 
 Pour télécharger le package (fichier Zip) et examiner les événements qui se sont produits sur un appareil
 

@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer des messages à l’aide chiffrement de messages Office 365.
-ms.openlocfilehash: 5274c2368de9825bd0568b7abd4e060e22fe9c70
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 1acd670e2faf2fbb2ebd6e6df51569e983bf4090818a604242a20b0fbb8c5e76
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430455"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808199"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Définir des règles de flux de messagerie pour chiffrer les messages électroniques
 
@@ -48,7 +48,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
 
-4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et sélectionnez Nouvelle icône \>  Créer une  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
+4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et \>  **sélectionnez Nouvelle** icône Créer une ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
@@ -60,7 +60,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
       - Pour sélectionner un nom existant, sélectionnez-le dans la liste et cliquez sur **OK**.
 
-      - Pour entrer un nouveau nom, tapez une adresse de messagerie dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
+      - Pour entrer un nouveau nom, tapez une adresse e-mail dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
 
 7. Pour ajouter d’autres conditions, sélectionnez **Plus d’options,** puis ajoutez **une condition** et sélectionnez-la dans la liste.
 
@@ -90,7 +90,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
    Vous pouvez choisir **d’ajouter une action** si vous souhaitez spécifier une autre action.
 
-7. Dans la **liste Faire la liste** suivante, supprimez toutes les actions affectées à Modifier la sécurité du **message** Appliquer la version précédente \> **d’OME**.
+7. Dans la **liste Faire,** supprimez toutes les actions affectées à Modifier la sécurité **des messages** Appliquer la version \> **précédente d’OME**.
 
 8. Cliquez sur **Enregistrer**.
 
@@ -108,7 +108,7 @@ Vous pouvez supprimer le chiffrement appliqué par votre organisation.
 
 3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
 
-4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et sélectionnez Nouvelle icône \>  Créer une  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
+4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et \>  **sélectionnez Nouvelle** icône Créer une ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
 5. In **Name**, type a name for the rule, such as Remove encryption from outgoing mail.
 

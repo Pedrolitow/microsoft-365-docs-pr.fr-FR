@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 942d27b2010f93116678868b5f695364e51f337a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a59490c4005288a10520a1b29867b59a401680388d2378cfe3eb8b7fea143b01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647918"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829098"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender pour point de terminaison pour les plateformes non Windows
 
@@ -56,7 +56,7 @@ Pour plus d’informations sur la mise en place, consultez la [documentation](mi
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
-Microsoft Defender pour point de terminaison sur Linux offre des fonctionnalités préventives (AV), protection évolutive des points de terminaison (PEPT) et gestion des vulnérabilités pour les serveurs Linux. Cela inclut une expérience de ligne de commande complète pour configurer et gérer l’agent, lancer des analyses et gérer les menaces. Nous groupons les versions récentes des six distributions linux server les plus courantes : RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS ou version ultérieure LTS, SLES 12+, Debian 9+ et Oracle Linux 7.2. Microsoft Defender pour point de terminaison sur Linux peut être déployé et configuré à l’aide de l’outil de gestion de la configuration Linux existant, Enfiché, Ansible ou. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
+Microsoft Defender pour point de terminaison sur Linux offre des fonctionnalités préventives, protection évolutive des points de terminaison (PEPT) et gestion des vulnérabilités pour les serveurs Linux. Cela inclut une expérience de ligne de commande complète pour configurer et gérer l’agent, lancer des analyses et gérer les menaces. Nous groupons les versions récentes des six distributions linux server les plus courantes : RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS ou version ultérieure LTS, SLES 12+, Debian 9+ et Oracle Linux 7.2. Microsoft Defender pour point de terminaison sur Linux peut être déployé et configuré à l’aide de l’outil de gestion de la configuration Linux existant, Enfiché, Ansible ou. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
 
 Pour plus d’informations sur la mise en place, consultez la [documentation](microsoft-defender-endpoint-linux.md)de Microsoft Defender pour Endpoint sur Linux.
 
@@ -70,7 +70,7 @@ Pour plus d’informations sur la mise en place, consultez la [documentation](mi
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison Android
 
-Microsoft Defender pour point de terminaison sur Android est notre solution de défense contre les menaces mobiles pour les appareils exécutant Android 6.0 et version supérieure. Les modes Enterprise Android (Profil de travail) et Administrateur d’appareil sont pris en charge. Sur Android, nous proposons une protection web, qui inclut l’anti-hameçonnage, le blocage des connexions non sécurisées et la définition d’indicateurs personnalisés. La solution recherche les programmes malveillants et les applications potentiellement indésirables (PUA) et offre des fonctionnalités supplémentaires de prévention des violations grâce à l’intégration avec Microsoft Endpoint Manager et l’accès conditionnel. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)
+Microsoft Defender pour point de terminaison sur Android est notre solution de défense contre les menaces mobiles pour les appareils exécutant Android 6.0 et version supérieure. Les modes Enterprise Android (Profil de travail) et Administrateur d’appareil sont pris en charge. Sur Android, nous proposons une protection web, qui inclut l’anti-hameçonnage, le blocage des connexions non sécurisées et la définition d’indicateurs personnalisés. La solution recherche les programmes malveillants et les applications potentiellement indésirables (PUA) et offre des fonctionnalités supplémentaires de protection contre les violations grâce à l’intégration avec Microsoft Endpoint Manager et l’accès conditionnel. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)
 
 Pour plus d’informations sur la mise en place, consultez la [documentation](microsoft-defender-endpoint-android.md)de Microsoft Defender for Endpoint sur Android.
 

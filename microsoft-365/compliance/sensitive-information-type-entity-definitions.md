@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: 200 types d’informations sensibles sont prêts à être utilisés dans vos stratégies DLP. Cet article répertorie tous ces types d’informations sensibles et indique ce qu’une stratégie DLP recherche lorsqu’elle détecte chaque type.
-ms.openlocfilehash: 614649367e72766d8df210fccbb4e3cdc9cdb4b6
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 46e4f3ee360a69475cbfed98f6800970216b7bee0486d51b4fe05fcfdc480ccd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842155"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -73,7 +73,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 ```
 
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
@@ -129,7 +129,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
@@ -184,7 +184,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_argentina_unique_tax_key"></a>Keyword_Argentina_Unique_Tax_Key
 
@@ -272,7 +272,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
  </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_australia_bank_account_number"></a>Keyword_australia_bank_account_number
 
@@ -340,7 +340,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
 
@@ -400,7 +400,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
@@ -459,7 +459,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_australia_drivers_license_number"></a>Keyword_australia_drivers_license_number
 
@@ -599,7 +599,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_australia_medical_account_number"></a>Keyword_Australia_Medical_Account_Number
 
@@ -651,7 +651,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
@@ -710,7 +710,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_australia_tax_file_number"></a>Keyword_australia_tax_file_number
 
@@ -758,7 +758,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -931,7 +931,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
@@ -992,7 +992,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -1066,7 +1066,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
@@ -1136,7 +1136,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_austria_eu_tax_file_number"></a>Keywords_austria_eu_tax_file_number
 
@@ -1213,7 +1213,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
@@ -1270,7 +1270,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -1330,7 +1330,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1390,7 +1390,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1441,7 +1441,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1496,7 +1496,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1590,7 +1590,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1650,7 +1650,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
@@ -1734,7 +1734,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
@@ -1916,7 +1916,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
@@ -2028,7 +2028,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -2114,7 +2114,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
     </Version>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
 
@@ -2177,7 +2177,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_brazil_cpf"></a>Keyword_brazil_cpf
 
@@ -2240,7 +2240,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_brazil_cnpj"></a>Keyword_brazil_cnpj
 
@@ -2311,7 +2311,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_brazil_rg"></a>Keyword_brazil_rg
 
@@ -2358,7 +2358,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -2541,7 +2541,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_bulgaria_eu_national_id_card"></a>Keywords_bulgaria_eu_national_id_card
 
@@ -2637,7 +2637,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -2710,7 +2710,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_canada_bank_account_number"></a>Keyword_canada_bank_account_number
 
@@ -2824,7 +2824,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
 
@@ -2997,7 +2997,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_canada_health_service_number"></a>Keyword_canada_health_service_number
 
@@ -3045,7 +3045,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_canada_passport_number"></a>Keyword_canada_passport_number
 
@@ -3113,7 +3113,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_canada_phin"></a>Keyword_canada_phin
 
@@ -3205,7 +3205,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_sin"></a>Keyword_sin
 
@@ -3280,7 +3280,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
@@ -3362,7 +3362,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 ### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
@@ -3423,7 +3423,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
@@ -3714,7 +3714,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -3875,7 +3875,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
@@ -3957,7 +3957,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -4018,7 +4018,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
@@ -4084,7 +4084,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -4250,7 +4250,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
@@ -4311,7 +4311,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -4392,7 +4392,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
@@ -4461,7 +4461,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -4641,7 +4641,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -4720,7 +4720,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Version>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
 
@@ -4803,7 +4803,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -4982,7 +4982,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -5051,7 +5051,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
@@ -5174,7 +5174,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_dea_number"></a>Keyword_dea_number
 
@@ -5220,7 +5220,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -5402,7 +5402,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
@@ -5487,7 +5487,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -5554,7 +5554,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_eu_debit_card"></a>Keyword_eu_debit_card
 
@@ -5884,7 +5884,7 @@ Ces entités sont dans le numéro de permis de conduire de l’UE et sont des ty
 - [Bulgarie](#bulgaria-drivers-license-number)
 - [Croatie](#croatia-drivers-license-number)
 - [Chypre](#cyprus-drivers-license-number)
-- [Tchèque](#czech-drivers-license-number)
+- [Czech](#czech-drivers-license-number)
 - [Danemark](#denmark-drivers-license-number)
 - [Estonie](#estonia-drivers-license-number)
 - [Finlande](#finland-drivers-license-number)
@@ -5918,7 +5918,7 @@ Ces entités sont dans le numéro d’identification national de l’UE et sont 
 - [Bulgarie](#bulgaria-uniform-civil-number)
 - [Croatie](#croatia-identity-card-number)
 - [Chypre](#cyprus-identity-card)
-- [Tchèque](#czech-personal-identity-number)
+- [Czech](#czech-personal-identity-number)
 - [Danemark](#denmark-personal-identification-number)
 - [Estonie](#estonia-personal-identification-code)
 - [Finlande](#finland-national-id)
@@ -5951,7 +5951,7 @@ Ces entités sont dans le numéro de passeport de l’UE et sont des types d’i
 - [Bulgarie](#bulgaria-passport-number)
 - [Croatie](#croatia-passport-number)
 - [Chypre](#cyprus-passport-number)
-- [Tchèque](#czech-passport-number)
+- [Czech](#czech-passport-number)
 - [Danemark](#denmark-passport-number)
 - [Estonie](#estonia-passport-number)
 - [Finlande](#finland-passport-number)
@@ -5983,7 +5983,7 @@ Ces entités qui sont dans le numéro de sécurité sociale de l’UE ou une ide
 - [Autriche](#austria-social-security-number)
 - [Belgique](#belgium-national-number)
 - [Croatie](#croatia-personal-identification-oib-number)
-- [Tchèque](#czech-personal-identity-number)
+- [Czech](#czech-personal-identity-number)
 - [Danemark](#denmark-personal-identification-number)
 - [Finlande](#finland-national-id)
 - [France](#france-social-security-number-insee)
@@ -6004,7 +6004,7 @@ Ces entités sont du type d’informations sensibles numéro d’identification 
 - [Bulgarie](#bulgaria-uniform-civil-number)
 - [Croatie](#croatia-identity-card-number)
 - [Chypre](#cyprus-tax-identification-number)
-- [Tchèque](#czech-personal-identity-number)
+- [Czech](#czech-personal-identity-number)
 - [Danemark](#denmark-personal-identification-number)
 - [Estonie](#estonia-personal-identification-code)
 - [Finlande](#finland-national-id)
@@ -6067,7 +6067,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -6243,7 +6243,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_finland_european_health_insurance_number"></a>Keyword_finland_european_health_insurance_number
 
@@ -6306,7 +6306,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 - repairutlaatuinen henkilökohtainen tunnus
 - henkilökohtainen tunnus
@@ -6407,7 +6407,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -6469,7 +6469,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
@@ -6641,7 +6641,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
 
@@ -6680,7 +6680,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
@@ -6751,7 +6751,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -6833,7 +6833,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_fr_insee"></a>Keyword_fr_insee
 
@@ -6920,7 +6920,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_france_eu_tax_file_number"></a>Keywords_france_eu_tax_file_number
 
@@ -6994,7 +6994,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
 
@@ -7048,7 +7048,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
@@ -7237,7 +7237,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
@@ -7308,7 +7308,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_german_passport"></a>Keyword_german_passport
 
@@ -7381,7 +7381,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_germany_eu_tax_file_number"></a>Keywords_germany_eu_tax_file_number
 
@@ -7460,7 +7460,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
 
@@ -7508,7 +7508,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -7684,7 +7684,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
@@ -7747,7 +7747,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -7813,7 +7813,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
 
@@ -7864,7 +7864,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_greece_eu_tax_file_number"></a>Keywords_greece_eu_tax_file_number
 
@@ -7937,7 +7937,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
@@ -8016,7 +8016,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -8200,7 +8200,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
@@ -8261,7 +8261,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -8326,7 +8326,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_hungary_eu_ssn_or_equivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
@@ -8401,7 +8401,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_hungary_eu_tax_file_number"></a>Keywords_hungary_eu_tax_file_number
 
@@ -8478,7 +8478,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
 
@@ -8539,7 +8539,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
@@ -8590,7 +8590,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
   </Pattern>
 </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
 - aadhaar
@@ -8638,7 +8638,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
 
@@ -8743,9 +8743,9 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
-Aucune
+Néant
 
 
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Classification internationale des maladie (ICD-10-CM)
@@ -8784,7 +8784,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 Tout terme issu du dictionnaire Dictionary_icd_10_updated de mots clés, basé sur la classification internationale des maladie, la dixième révision, la modification de la santé [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Ce type recherche uniquement le terme, et non les codes d’assurance.
 
@@ -8825,7 +8825,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 Tout terme du dictionnaire de mots clés Dictionary_icd_9_updated, qui est basé sur la classification internationale des maladie, la neuvième révision, la modification génétique [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Ce type recherche uniquement le terme, et non les codes d’assurance.
 
@@ -8885,7 +8885,7 @@ Pour IPv6, une stratégie DLP a une confiance élevée qu’elle a détecté ce 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
@@ -8932,7 +8932,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -9113,7 +9113,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -9193,7 +9193,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
@@ -9201,7 +9201,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 - numéro d’identification
 - numéro d’ID personnel
 - numéro de service public personnel
-- non de service personnel
+- service personnel non
 - phearsanta seirbhíse poiblí
 - pps no
 - nombre pps
@@ -9281,7 +9281,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_israel_bank_account_number"></a>Keyword_israel_bank_account_number
 
@@ -9323,7 +9323,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
@@ -9384,7 +9384,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -9565,7 +9565,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
@@ -9655,7 +9655,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -9733,7 +9733,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
 
@@ -9796,7 +9796,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_jp_bank_account"></a>Keyword_jp_bank_account
 
@@ -9877,7 +9877,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
@@ -9963,7 +9963,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
 
@@ -10027,7 +10027,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_japan_my_number_personal"></a>Keyword_japan_my_number_personal
 
@@ -10073,7 +10073,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
@@ -10126,7 +10126,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
@@ -10167,7 +10167,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
@@ -10225,7 +10225,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_jp_sin"></a>Keyword_jp_sin
 
@@ -10285,7 +10285,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -10481,7 +10481,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
@@ -10598,7 +10598,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
@@ -10661,7 +10661,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -10842,7 +10842,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
@@ -10928,7 +10928,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -10988,7 +10988,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -11167,7 +11167,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
@@ -11241,7 +11241,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -11328,7 +11328,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_luxemburg_eu_tax_file_number"></a>Keywords_luxemburg_eu_tax_file_number
 
@@ -11408,7 +11408,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_malaysia_id_card_number"></a>Keyword_malaysia_id_card_number
 
@@ -11476,7 +11476,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -11651,7 +11651,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
@@ -11717,7 +11717,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -11798,7 +11798,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_malta_eu_tax_file_number"></a>Keywords_malta_eu_tax_file_number
 
@@ -11880,7 +11880,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_mbi_card"></a>Keyword_mbi_card
 
@@ -11935,7 +11935,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_mexico_population_registry_code"></a>Keyword_mexico_population_registry_code
 
@@ -11995,7 +11995,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
@@ -12054,7 +12054,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -12234,7 +12234,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -12298,7 +12298,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
@@ -12389,7 +12389,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
 
@@ -12452,7 +12452,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
@@ -12508,7 +12508,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_new_zealand_drivers_license_number"></a>Keyword_new_zealand_drivers_license_number
 
@@ -12626,7 +12626,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
 
@@ -12678,7 +12678,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_nz_terms"></a>Keyword_nz_terms
 
@@ -12744,7 +12744,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Version>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
@@ -12796,7 +12796,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_norway_id_number"></a>Keyword_norway_id_number
 
@@ -12843,7 +12843,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_philippines_id"></a>Keyword_philippines_id
 
@@ -12891,7 +12891,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -13051,7 +13051,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
@@ -13105,7 +13105,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_pesel_identification_number"></a>Keyword_pesel_identification_number
 
@@ -13176,7 +13176,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -13254,7 +13254,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
 
@@ -13311,7 +13311,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_poland_eu_tax_file_number"></a>Keywords_poland_eu_tax_file_number
 
@@ -13374,7 +13374,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
@@ -13443,7 +13443,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -13632,7 +13632,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -13706,7 +13706,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_portugal_eu_tax_file_number"></a>Keywords_portugal_eu_tax_file_number
 
@@ -13769,7 +13769,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -13947,7 +13947,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
@@ -14049,7 +14049,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -14116,7 +14116,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
@@ -14176,7 +14176,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
@@ -14228,7 +14228,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_saudi_arabia_national_id"></a>Keyword_saudi_arabia_national_id
 
@@ -14279,7 +14279,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_singapore_nric"></a>Keyword_singapore_nric
 
@@ -14302,7 +14302,7 @@ un caractère suivi de sept chiffres
 
 un caractère suivi de sept chiffres
 
-- une lettre (ne sensible pas à la cas) ou un chiffre
+- une lettre (ne sensible à la cas) ou un chiffre
 - sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -14328,7 +14328,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -14505,7 +14505,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Version>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
@@ -14603,7 +14603,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -14665,7 +14665,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -14844,7 +14844,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
@@ -14927,7 +14927,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -15001,7 +15001,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
@@ -15064,7 +15064,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
@@ -15116,7 +15116,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_south_korea_resident_number"></a>Keyword_south_korea_resident_number
 
@@ -15178,7 +15178,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -15371,7 +15371,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
@@ -15450,7 +15450,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -15530,7 +15530,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
@@ -15617,7 +15617,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_spain_eu_tax_file_number"></a>Keywords_spain_eu_tax_file_number
 
@@ -15693,7 +15693,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
@@ -15764,7 +15764,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -15945,7 +15945,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_swedish_national_identifier"></a>Keywords_swedish_national_identifier
 
@@ -16016,7 +16016,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -16112,7 +16112,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_sweden_eu_tax_file_number"></a>Keywords_sweden_eu_tax_file_number
 
@@ -16175,7 +16175,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_swift"></a>Keyword_swift
 
@@ -16264,7 +16264,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
 
@@ -16329,7 +16329,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_taiwan_national_id"></a>Keyword_taiwan_national_id
 
@@ -16383,7 +16383,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_taiwan_passport"></a>Keyword_taiwan_passport
 
@@ -16428,7 +16428,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_taiwan_resident_certificate"></a>Keyword_taiwan_resident_certificate
 
@@ -16482,7 +16482,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
@@ -16529,7 +16529,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
@@ -16581,7 +16581,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
@@ -16737,7 +16737,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_uk_electoral"></a>Keyword_uk_electoral
 
@@ -16790,7 +16790,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
@@ -16867,7 +16867,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
@@ -16929,7 +16929,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_uk_eu_tax_file_number"></a>Keywords_uk_eu_tax_file_number
 
@@ -16981,7 +16981,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_usa_bank_account"></a>Keyword_usa_Bank_Account
 
@@ -17060,7 +17060,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
@@ -17225,7 +17225,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
@@ -17306,7 +17306,7 @@ Une stratégie DLP a peu de confiance qu’elle a détecté ce type d’informat
   </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
@@ -17369,7 +17369,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
@@ -17426,7 +17426,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
@@ -17476,7 +17476,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 

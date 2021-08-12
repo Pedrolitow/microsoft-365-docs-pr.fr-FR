@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment afficher et interpréter l’état et les résultats de l’entraînement Pertinence pour les problèmes de Advanced eDiscovery.
-ms.openlocfilehash: 224337969b5e662d45c5b804fa5a0ee045f4fb84
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: f0c0ab94b328a715739c7c8aec32ac041b6dc97f6fd998865a5b2e282bff42eb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769179"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801706"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery"></a>Suivre l’analyse de pertinence dans Advanced eDiscovery
   
-Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité calculée de la formation Pertinence effectuée dans l’onglet Balise et indique l’étape suivante à effectuer dans le processus de formation itérative en Pertinence. 
+Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité calculée de l’entraînement Pertinence effectué dans l’onglet Balise et indique l’étape suivante à effectuer dans le processus de formation itérative en Pertinence. 
   
-## <a name="tracking-relevance-training-status"></a>Suivi de l’état d’entraînement Pertinence
+## <a name="tracking-relevance-training-status"></a>Suivi de l’état de l’entraînement Pertinence
 
 1. Consultez les détails suivants dans suivi de pertinence pour les problèmes de cas, comme illustré dans l’exemple suivant d’une boîte de dialogue Nom **du** problème ci-dessous.
 
@@ -44,7 +44,7 @@ Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité ca
   
     ![Formation de suivi de pertinence étape 1](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
-    La vue étendue affiche des informations et des options supplémentaires. La marge d’erreur actuelle affichée est la marge d’erreur du rappel dans l’état actuel de l’évaluation, compte tenu des fichiers d’évaluation existants (déjà balisé).
+    La vue étendue affiche des informations et des options supplémentaires. La marge d’erreur actuelle affichée est la marge d’erreur du rappel dans l’état actuel de l’évaluation, étant donné les fichiers d’évaluation existants (déjà marqués).
   
     > [!NOTE]
     >  L’étape d’évaluation peut  être contourné en effanant la case à cocher Évaluation par problème, puis pour « tous les problèmes ». Toutefois, il n’y aura donc pas de statistiques pour ce problème. > la case à cocher **d’évaluation** ne peut être effectuée qu’avant l’évaluation. Lorsque plusieurs problèmes existent dans un cas, l’évaluation est contourné uniquement si la case à cocher est effacée pour chaque problème 
@@ -79,7 +79,7 @@ Si vous souhaitez importer de nouveaux fichiers après le calcul par lots, l’a
   
 ### <a name="assessing-tagging-consistency"></a>Évaluation de la cohérence du marquage
 
-S’il existe des incohérences dans le marquage de fichiers, cela peut affecter l’analyse. Le Advanced eDiscovery de cohérence de marquage peut être utilisé lorsque les résultats ne sont pas optimaux ou que la cohérence est en doute. Une liste des fichiers marqués incohérents possibles est renvoyée, et ils peuvent être révisés et retardés, si nécessaire.
+S’il existe des incohérences dans le marquage de fichiers, cela peut affecter l’analyse. Le Advanced eDiscovery de cohérence de marquage peut être utilisé lorsque les résultats ne sont pas optimaux ou lorsque la cohérence est en doute. Une liste des fichiers marqués incohérents possibles est renvoyée, et ils peuvent être révisés et retardés, si nécessaire.
   
 > [!NOTE]
 > Après sept séries d’entraînements ou plus après  l’évaluation, la cohérence du marquage peut être vue dans la progression de formation détaillée des résultats du suivi de \>  \>  \>  \> **pertinence.** Cette révision est effectuée pour un problème à la fois.
@@ -88,7 +88,7 @@ S’il existe des incohérences dans le marquage de fichiers, cela peut affecter
   
 2. À droite de **l’étape suivante,** cliquez sur **Modifier.**
   
-3. Sélectionnez **incohérences de balise comme** option de **l’étape** suivante, après sept exemples de formation et cliquez sur **OK**.
+3. Sélectionnez **incohérences de balise comme** **option** de l’étape suivante, après sept exemples de formation et cliquez sur **OK**.
   
 4. Sélectionner **les incohérences de balise**. **L’onglet** Balise s’ouvre et affiche une liste des incohérences à retager si nécessaire.
   
@@ -96,27 +96,27 @@ S’il existe des incohérences dans le marquage de fichiers, cela peut affecter
   
 ## <a name="viewing-and-using-relevance-results"></a>Affichage et utilisation des résultats de pertinence
 
-Dans **l’onglet Suivi \>** de pertinence, développez la ligne d’un problème, puis en regard des résultats détaillés, cliquez sur **Afficher.** Les volets de résultats détaillés sont affichés, comme indiqué et décrit ci-dessous.
+Dans **l’onglet Suivi de \>** pertinence, développez la ligne d’un problème, puis en regard des résultats détaillés, cliquez sur **Afficher.** Les volets de résultats détaillés sont affichés, comme indiqué et décrit ci-dessous.
   
 ![Résultats détaillés de la formation de pertinence](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Résumé du marquage
 
- Dans l’exemple ci-dessous, **le** résumé de marquage affiche les totaux de chacun des processus de marquage des fichiers d’évaluation, de formation et de rattrapage.
+ Dans l’exemple ci-dessous, **le** résumé du marquage affiche les totaux de chacun des processus de marquage des fichiers d’évaluation, de formation et de rattrapage.
   
 ![Résumé du marquage du suivi de pertinence](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 Un mot clé est une chaîne, un mot, une expression ou une séquence de mots uniques dans un fichier identifié par Advanced eDiscovery comme un indicateur significatif de la pertinence d’un fichier. Les colonnes « Inclure » répertorient les mots clés et les poids dans les fichiers marqués comme pertinents, et les colonnes « Exclure » répertorient les mots clés et les pondérations dans les fichiers marqués comme non pertinents.
   
-Advanced eDiscovery attribue des valeurs négatives ou positives de poids de mot clé. Plus le poids est élevé, plus la probabilité qu’un fichier dans lequel le mot clé apparaît soit attribuée à un score de pertinence plus élevé lors du calcul par lot est élevée.
+Advanced eDiscovery attribue des valeurs négatives ou positives de poids de mot clé. Plus le poids est élevé, plus la probabilité qu’un fichier dans lequel le mot clé apparaît soit affecté d’un score de pertinence plus élevé lors du calcul par lot est élevée.
   
 La Advanced eDiscovery de mots clés peut être utilisée pour compléter une liste conçue par un expert ou comme une vérification de l’insérezation indirecte à tout moment dans le processus de révision de fichier.
   
 ### <a name="training-progress"></a>Progression de la formation
 
-Le **volet Progression** de l’entraînement inclut un graphique de progression de la formation et un indicateur de qualité, comme illustré dans l’exemple ci-dessous.
+Le **volet Progression de** l’entraînement inclut un graphique de progression de la formation et un indicateur de qualité, comme illustré dans l’exemple ci-dessous.
   
 ![Avancement de la formation de suivi de pertinence](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
@@ -128,7 +128,7 @@ Le **volet Progression** de l’entraînement inclut un graphique de progression
 
 - **Avertissement**: de nombreux fichiers peuvent être marqués de manière incohérente. (Lumière rouge affichée)
 
-**Graphique de progression de l’entraînement**: indique le degré de stabilité de l’entraînement Pertinence après de nombreux cycles d’entraînement Pertinence par rapport à la valeur de mesure F. À mesure que nous allons de gauche à droite sur le graphique, l’intervalle de confiance est réduit et utilisé, avec la mesure F, par Advanced eDiscovery Pertinence pour déterminer la stabilité lorsque les résultats de l’entraînement Pertinence sont optimisés.
+**Graphique de progression de l’entraînement**: indique le degré de stabilité de l’entraînement Pertinence après de nombreux cycles d’entraînement Pertinence par rapport à la valeur de mesure F. Lorsque nous allons de gauche à droite sur le graphique, l’intervalle de confiance est réduit et utilisé, avec la mesure F, par Advanced eDiscovery Pertinence pour déterminer la stabilité lorsque les résultats de l’entraînement Pertinence sont optimisés.
   
 > [!NOTE]
 > La pertinence utilise F2, une mesure F dans laquelle le rappel reçoit deux fois plus de poids que la précision. Pour les cas avec une richesse élevée (plus de 25 %) la pertinence utilise F1 (rapport 1:1). Le rapport de mesure F peut être configuré dans les **paramètres** avancés d’installation \> **de pertinence.**
@@ -160,9 +160,9 @@ Cet affichage présente les exemples suivants :
   
 - **Taux de révision/rappel :** comparaison des résultats en fonction des scores de pertinence dans une révision hypothétiquement linéaire. Le rappel est estimé en raison de la taille du jeu à réviser.
   
-- **Paramètres :** statistiques calculées cumulatives relatives au jeu à réviser par rapport à la population de fichiers pour l’ensemble du cas.
+- **Paramètres**: statistiques calculées cumulées relatives au jeu à réviser par rapport à la population de fichiers pour l’ensemble du cas.
   
-- **Révision**: pourcentage de fichiers à réviser en fonction de ce cutoff.
+- **Révision**: Pourcentage de fichiers à réviser en fonction de ce cutoff.
   
 - **Rappel**: pourcentage de fichiers pertinents dans le jeu à réviser. 
   

@@ -3,7 +3,7 @@ title: Prise en main
 summary: Consultez ces ressources pour aider les administrateurs à effectuer des tâches courantes ou consultez le volet de navigation situé à gauche pour afficher une liste complète.
 metadata:
   title: Prise en main
-  description: Configurez votre abonnement et votre e-mail. Ajouter des utilisateurs et installer des applications
+  description: Configurez votre abonnement et votre e-mail, ajoutez des utilisateurs, puis installez les applications.
   ms.service: O365-administration
   ms.topic: landing-page
   author: efrene
@@ -11,18 +11,18 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 554749b06d35e31c0b4bed9a80c5157b15fc909e
-  ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+  ms.openlocfilehash: b7b5b9416e072cd4ae69fb03a2d798149561e0135ce78e551cc1566732891ab7
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/02/2021
-  ms.locfileid: "51580821"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53821878"
 landingContent:
 - title: S’inscrire
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Choisir un plan et s’inscrire à Microsoft 365
+    - text: Choisir un plan et s’inscrire à Microsoft 365
       url: ../admin-overview/sign-up-for-office-365.md
   - linkListType: video
     links:
@@ -62,5 +62,5 @@ landingContent:
       url: https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
     - text: Former les utilisateurs
       url: https://support.microsoft.com/training
-    - text: Connecter des PC à Microsoft 365 Business Premium
+    - text: Connecter des PC à Microsoft 365 Business Premium
       url: https://support.microsoft.com/office/cd5716f6-05de-430b-ac94-662d5ee71d07

@@ -23,22 +23,22 @@ search.appverid:
 - MBS150
 - GEA150
 - BCS160
-description: "Découvrez comment ajouter plusieurs utilisateurs à Microsoft 365 entreprise à partir d’une liste dans une feuille de calcul ou un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Microsoft 365. À la fin de ce processus, chaque utilisateur ayant un compte aura une boîte aux lettres Microsoft 365'utilisateur. "
-ms.openlocfilehash: 6b3e8d885466e44a4aa23427a54cfc98b2eebdf3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 'Découvrez comment ajouter plusieurs utilisateurs à Microsoft 365 entreprise à partir d’une liste dans une feuille de calcul ou un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Microsoft 365. À la fin de ce processus, chaque utilisateur ayant un compte aura une boîte Microsoft 365 aux lettres. '
+ms.openlocfilehash: bb0ed6212cde61693024bcd2fdca9f1d6c3f42dbb063f67324be3d87219f46cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905619"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835406"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Ajouter plusieurs utilisateurs en même temps à Microsoft 365 - Aide de l’administrateur
 
-Chaque membres de votre équipe a besoin d’un compte d’utilisateur avant de se Microsoft 365 et d’accéder à des services de messagerie et de Office. Si votre équipe compte de nombreux membres, vous pouvez ajouter tous leurs comptes simultanément à partir d'une feuille de calcul Excel ou d'un autre fichier enregistré au format CSV. [Vous ne savez pas quel est le format CSV](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
+Chaque personne de votre équipe a besoin d’un compte d’utilisateur pour pouvoir se Microsoft 365 services de messagerie et d’Office. Si votre équipe compte de nombreux membres, vous pouvez ajouter tous leurs comptes simultanément à partir d'une feuille de calcul Excel ou d'un autre fichier enregistré au format CSV. [Vous ne savez pas quel est le format CSV](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
   
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Ajouter plusieurs utilisateurs dans le centre d Microsoft 365'administration
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Ajouter plusieurs utilisateurs dans le Centre d’administration Microsoft 365
 
 1. Connectez-vous à Microsoft 365 à l’aide de votre compte professionnel ou scolaire.
 
@@ -48,7 +48,7 @@ Chaque membres de votre équipe a besoin d’un compte d’utilisateur avant de 
 
 4. Dans le panneau **Importer plusieurs utilisateurs**, vous pouvez éventuellement télécharger un exemple de fichier CSV avec ou sans exemple de données inclus.
 
-    Votre feuille de calcul doit inclure exactement les mêmes en-tête de colonne **que** l’exemple (nom d’utilisateur, prénom, et ainsi de suite). Si vous utilisez le modèle, ouvrez-le dans un outil d’édition de texte, tel que Bloc-notes, et envisagez de laisser toutes les données de la ligne 1 seule et d’entrer uniquement les données des lignes 2 et suivantes.
+    Votre feuille de calcul doit inclure exactement les mêmes en-tête de colonne **que** l’exemple (nom d’utilisateur, prénom, et ainsi de suite). Si vous utilisez le modèle, ouvrez-le dans un outil d’édition de texte, tel que Bloc-notes, et envisagez de laisser seules toutes les données de la ligne 1 et d’entrer uniquement les données des lignes 2 et suivantes.
 
     Votre feuille de calcul doit également inclure des valeurs pour le nom d'utilisateur (tel que alexandre@contoso.com) et un nom complet (tel que Alexandre Chauvin) pour chaque utilisateur.
 
@@ -70,7 +70,7 @@ Chaque membres de votre équipe a besoin d’un compte d’utilisateur avant de 
 
 7. Dans la boîte de dialogue **Affichez vos résultats**, vous pouvez choisir d'envoyer les résultats à vous-même ou à d'autres utilisateurs (les mots de passe seront au format texte brut). En outre, vous pouvez voir combien d'utilisateurs ont été créés et si vous avez besoin d'acheter des licences supplémentaires pour les attribuer à certains des nouveaux utilisateurs.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - Maintenant que ces personnes ont des comptes, elles doivent télécharger et installer ou [réinstaller Microsoft 365 ou Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)sur un PC ou Mac . Chaque personne de votre équipe peut installer Microsoft 365 sur 5 PC ou Mac au plus.
 
@@ -84,7 +84,7 @@ Chaque membres de votre équipe a besoin d’un compte d’utilisateur avant de 
 
 Un fichier CSV inclut des valeurs séparées par des virgules. Vous pouvez créer ou modifier un fichier comme celui-ci avec un éditeur de texte ou un tableur comme Excel.
   
-Vous pouvez télécharger [cet exemple de feuille de calcul](https://www.microsoft.com/download/details.aspx?id=45485) pour commencer. N’oubliez Microsoft 365 nécessite des en-tête de colonne dans la première ligne, ne les remplacez donc pas par autre chose. 
+Vous pouvez télécharger [cet exemple de feuille de calcul](https://www.microsoft.com/download/details.aspx?id=45485) pour commencer. N’oubliez Microsoft 365 nécessite des en-tête de colonne dans la première ligne, donc ne les remplacez pas par autre chose. 
   
 Enregistrez le fichier avec un nouveau nom et spécifiez le format CSV.
   
@@ -130,7 +130,7 @@ Une fois le fichier enregistré, il est probable qu'un message indiquant que cer
 
 - **Vérifiez que la feuille de calcul est correctement mise en forme.** Examinez les en-têtes des colonnes pour vous assurer qu'ils correspondent à ceux de l'exemple de fichier. Veillez à respecter le nombre de caractères autorisés et assurez-vous que chaque champ est séparé par une virgule.
 
-- **Si les nouveaux utilisateurs ne s’Microsoft 365 immédiatement, patientez quelques minutes.** L’accès à tous les services dans le Microsoft 365 peut prendre un certain temps. 
+- **Si les nouveaux utilisateurs ne s’Microsoft 365 immédiatement, patientez quelques minutes.** Les modifications apportées à tous les services de l’Microsoft 365 peuvent prendre un certain temps. 
 
 ## <a name="related-articles"></a>Articles connexes
 

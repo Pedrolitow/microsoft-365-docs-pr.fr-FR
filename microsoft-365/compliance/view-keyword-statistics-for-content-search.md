@@ -14,18 +14,18 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment utiliser la fonctionnalité statistiques de recherche pour afficher des statistiques pour les recherches de contenu et les recherches associées à un cas eDiscovery principal dans le centre de conformité Microsoft 365 de recherche.
+description: Découvrez comment utiliser la fonctionnalité statistiques de recherche pour afficher des statistiques pour les recherches de contenu et les recherches associées à un cas eDiscovery principal dans le Centre de conformité Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a0e543c89b91560520a4e4bf31feb8471c91da4a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 25884f0b450c1bc90cb6487e64fe636ef5f8af16dd30ad7bb4e7ed28402da03f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835525"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Afficher des statistiques pour les résultats de recherche eDiscovery
 
-Après avoir créé et exécuté une recherche de contenu ou une recherche associée à un cas core eDiscovery, vous pouvez afficher des statistiques sur les résultats de recherche estimés. Cela inclut un résumé des résultats de recherche (semblable au résumé des résultats de recherche estimés affichés sur la page volante de recherche), les statistiques de requête telles que le nombre d’emplacements de contenu avec des éléments qui correspondent à la requête de recherche et l’identité des emplacements de contenu qui ont le plus d’éléments correspondants.
+Après avoir créé et exécuté une recherche de contenu ou une recherche associée à un cas core eDiscovery, vous pouvez afficher des statistiques sur les résultats de recherche estimés. Cela inclut un résumé des résultats de la recherche (semblable au résumé des résultats de recherche estimés affichés sur la page volante de recherche), les statistiques de requête telles que le nombre d’emplacements de contenu avec des éléments qui correspondent à la requête de recherche et l’identité des emplacements de contenu qui ont le plus d’éléments correspondants.
   
 En outre, vous pouvez utiliser la liste de mots clés pour configurer une recherche afin de renvoyer des statistiques pour chaque mot clé dans une requête de recherche. Cela vous permet de comparer le nombre de résultats renvoyés par chaque mot clé dans une requête.
   
@@ -35,7 +35,7 @@ Vous pouvez également télécharger des statistiques de recherche dans un fichi
 
 Pour afficher des statistiques pour une recherche de contenu ou une recherche associée à un cas de découverte électronique principale :
   
-1. Dans le centre Microsoft 365 conformité, cliquez sur **Afficher tout,** puis faites l’une des choses suivantes :
+1. Dans la Centre de conformité Microsoft 365, cliquez sur **Afficher tout,** puis faites l’une des choses suivantes :
 
    - Cliquez **sur Recherche de** contenu, puis sélectionnez une recherche pour afficher la page volante.
 
@@ -73,7 +73,7 @@ Cette section affiche des statistiques sur la requête de recherche et le nombre
 
 - **Condition**: composant réel (mot clé ou condition) de la requête de recherche qui a renvoyé les statistiques affichées dans la ligne correspondante.
 
-- **Emplacements** avec accès : nombre d’emplacements de contenu (spécifiés par la colonne **Type** d’emplacement) qui contiennent des éléments qui correspondent à la requête principale ou de mot clé répertoriée dans la colonne **Condition.**
+- **Emplacements** avec accès : nombre d’emplacements  de contenu (spécifiés par la colonne Type d’emplacement) qui contiennent des éléments qui correspondent à la requête principale ou de mot clé répertoriée dans la colonne **Condition.**
 
 - **Éléments**: nombre d’éléments (à partir de l’emplacement de contenu spécifié) qui correspondent à la requête répertoriée dans la **colonne Condition.** Comme indiqué précédemment, si un élément contient plusieurs instances d’un mot clé recherché, il n’est compté qu’une seule fois dans cette colonne.
 
@@ -97,7 +97,7 @@ Comme expliqué précédemment, la section **Rapport de condition** affiche la r
 
 Pour créer une liste de mots clés et afficher des statistiques de mots clés pour une recherche :
   
-1. Dans le centre Microsoft 365 conformité, créez une recherche de contenu ou une recherche associée à un cas eDiscovery principal.
+1. Dans la Centre de conformité Microsoft 365, créez une recherche de contenu ou une recherche associée à un cas core eDiscovery.
 
 2. Dans la page **Conditions** de l’Assistant Recherche. cochez la **case Afficher la liste des** mots clés.
 
@@ -126,4 +126,4 @@ Pour créer une liste de mots clés et afficher des statistiques de mots clés p
 
     - Requête et résultats de recherche réels  pour chaque mot clé (identifié comme mot clé dans la colonne **Part),** qui inclut toutes les conditions de la requête de recherche.
 
-    - Requête de recherche complète  (identifiée comme principale dans la colonne **Partie)** et statistiques de la requête complète pour chaque type d’emplacement. Notez que ces statistiques sont les mêmes que celles affichées sous **l’onglet** Résumé.
+    - Requête de recherche complète  (identifiée comme principale dans la colonne **Part)** et statistiques de la requête complète pour chaque type d’emplacement. Notez que ces statistiques sont les mêmes que celles affichées sous **l’onglet** Résumé.

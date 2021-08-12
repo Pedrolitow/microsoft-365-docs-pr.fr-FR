@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Découvrez comment gérer le service d’identité d’utilisateur Azure AD dans Microsoft 365 à l’aide de modèles d’identité cloud uniquement ou hybrides.
-ms.openlocfilehash: 93a37f39a4d96d7c2e434ed6edf4df588e672a0f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 659546d6138591bc0b3db04bb4a77f1eab4edf665513fbf1b4df4e2109c71dcf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228494"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835474"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 modèles d’identité et Azure Active Directory
 

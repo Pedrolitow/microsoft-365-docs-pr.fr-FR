@@ -15,13 +15,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: La gestion de la confidentialité Microsoft offre des solutions pour l’évaluation des données personnelles que votre organisation stocke dans Microsoft 365 et vous aide à identifier et à corriger les risques de confidentialité.
-ms.openlocfilehash: df3fa07271321d6bc1fedb4e0d06b40b3483b238
-ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
+description: La gestion de la confidentialité Microsoft offre des solutions pour l’évaluation des données personnelles que votre organisation stocke dans Microsoft 365 et vous aide à identifier et à résoudre les risques de confidentialité.
+ms.openlocfilehash: f4beecb0c9249c9eba530526e835bd2958be8cfab4c409365dc536f64b1b2caf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53455384"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835738"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Gestion de la confidentialité Microsoft (prévisualisation)
 
@@ -48,7 +48,7 @@ La gestion de la confidentialité vous fournit des outils pour vous aider à nav
 
 Grâce à la gestion de la confidentialité, vous pouvez obtenir des informations sur l’ensemble du paysage Microsoft 365 confidentialité de votre organisation. La solution évalue vos données pour obtenir des informations personnelles, vous donne une vue claire de ce que vous stockez et offre la possibilité d’examiner des domaines d’intérêt essentiels.
 
-Ces informations sont présentées  dans votre tableau de bord Vue d’ensemble, qui fournit des mises à jour dynamiques sur vos données et tendances importantes, ainsi que sur le profil de **données,** ce qui vous permet d’explorer les analyses en cours. Les résultats et les alertes ci-après peuvent informer vos actions suivantes pour la gestion des données.
+Ces informations sont présentées  dans votre tableau de bord Vue d’ensemble, qui fournit des mises à jour dynamiques sur vos données et tendances importantes, ainsi que sur le profil de **données,** qui vous permet d’explorer les analyses en cours. Les résultats et les alertes ci-après peuvent informer vos actions suivantes pour la gestion des données.
 
 Pour en savoir plus, voir [Rechercher et visualiser vos données personnelles.](privacy-management-data-profile.md)
 
@@ -56,11 +56,11 @@ Pour en savoir plus, voir [Rechercher et visualiser vos données personnelles.](
 
 Les environnements de données complexes peuvent présenter des scénarios potentiellement risqués pour les données personnelles. La gestion de la confidentialité permet de détecter facilement les risques dans les domaines suivants et d’établir des processus continus pour la gestion de ces scénarios.
 
-- **Données personnelles surexposées**: les sociétés peuvent collecter différents types d’informations qui peuvent être utilisés pour identifier des clients ou des employés individuels. Les droits d’accès à ces données doivent être correctement gérés pour protéger la confidentialité et empêcher toute utilisation inappropriée.
+- **Données personnelles surexposées**: les sociétés peuvent collecter différents types d’informations qui peuvent être utilisés pour identifier des clients ou des employés individuels. Les droits d’accès à ces données doivent être gérés correctement pour protéger la confidentialité et empêcher toute utilisation inappropriée.
 - Transferts **de** données : le transfert de données personnelles entre les services de votre organisation ou au-delà des frontières nationales ou régionales peut augmenter le risque d’exposition des données ou de ne pas respecter les réglementations et lois en matière de confidentialité.
 - **Réduction des données**: les sociétés peuvent collecter des informations superflues ou les conserver plus longtemps que nécessaire, ce qui entraîne le stockage des données personnelles inutilisées. Ces données doivent être réduites pour éviter les risques de confidentialité.
 
-La gestion de la confidentialité fournit des modèles intégrés pour la configuration des stratégies de gestion des données dans ces domaines. Ces stratégies peuvent évaluer vos Microsoft 365 données de manière continue, vous alerter contre les problèmes potentiels et vous aider à résoudre ces problèmes. Par conséquent, vos employés peuvent mieux suivre les meilleures pratiques en matière de confidentialité et rester informés des actions recommandées à prendre. Les modèles peuvent être utilisés en tant que fournis ou personnalisés pour répondre aux besoins spécifiques de votre entreprise.
+La gestion de la confidentialité fournit des modèles intégrés pour la configuration des stratégies de gestion des données dans ces domaines. Ces stratégies peuvent évaluer vos données Microsoft 365 données de manière continue, vous alerter contre les problèmes potentiels et vous aider à résoudre ces problèmes. Par conséquent, vos employés peuvent mieux suivre les meilleures pratiques en matière de confidentialité et rester informés des actions recommandées à prendre. Les modèles peuvent être utilisés en tant que fournis ou personnalisés pour répondre aux besoins spécifiques de votre entreprise.
 
 Pour plus d’informations, voir [Créer et gérer des stratégies.](privacy-management-policies.md)
 
@@ -70,15 +70,13 @@ Conformément à certaines réglementations en matière de confidentialité, par
 
 La gestion de la confidentialité Microsoft 365 peut vous aider à gérer ces demandes par le biais de la solution de demande de droits d’objet. Il fournit des fonctionnalités d’automatisation et de flux de travail pour vous aider à rechercher les données du sujet que vous avez stockées dans Microsoft 365, examiner les résultats, sélectionner les fichiers appropriés et produire des rapports. En cours de route, vous pouvez collaborer en toute sécurité avec d’autres experts de votre organisation pour finalisation de la demande.
 
-Notez que cette solution de demande de droits d’objet fournit des fonctionnalités au-delà de la solution DSR d’origine dans le centre de conformité et qu’il n’existe aucune connexion ou partage de flux de travail entre les deux.
-
 Pour plus d’informations, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)
 
 ## <a name="how-we-evaluate-your-data"></a>Comment nous évaluons vos données
 
 Pour afficher des informations personnelles dans votre environnement Microsoft 365 et fournir des fonctionnalités pour gérer ces données et corriger les problèmes, la gestion de la confidentialité évalue les données dans l’étendue suivante.
 
-### <a name="what-privacy-management-evaluates"></a>Évaluation de la gestion de la confidentialité
+### <a name="what-privacy-management-evaluates"></a>Ce que la gestion de la confidentialité évalue
 
 - Informations sensibles, que nous appelons données personnelles et qui sont les données pris en charge par la classification des données Microsoft, par exemple, nom, adresse ou numéro de sécurité sociale
 - Données personnelles des personnes connectées à votre organisation, telles que les clients et les employés

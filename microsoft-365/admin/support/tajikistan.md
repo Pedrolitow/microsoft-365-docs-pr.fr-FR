@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1ce0b30788647b807f6f6349337e4086a64432ff
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 063c31bb8393624d7dc004d68324bb4a334e0bf095c2cdfeea87a76761f40c1c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815430"
 ---
 # <a name="contact-support-for-tajikistan"></a>Contacter le support technique pour le Kirghizistan
 
@@ -33,10 +33,10 @@ Russe : Mon-Fri 10h00-19h00
 
 Anglais : Mon-Fri 9h00 à 17h00 à Londres
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Russe : Mon-Fri 7h00-20h00 à Russie
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

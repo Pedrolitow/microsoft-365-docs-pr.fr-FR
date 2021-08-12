@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Les Office 365 Cloud de la communauté du secteur public Élevé et DoD ont des exigences de sécurité réseau supplémentaires'
 hideEdit: true
-ms.openlocfilehash: f4c03d364e84d89a1b12e4d858ab46eb3be6ae5e
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 393a581043531165aa9339e1435660431c593408f16c49f5229cd6415a9a67ef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926558"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835390"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Autres exigences de sécurité réseau pour Office 365 GCC High et DoD
 
@@ -56,7 +56,7 @@ Le corps de votre message doit inclure les données suivantes :
 * Une liste de distribution de courrier électronique avec qui Microsoft communiquera pour les communications en cours liées aux modifications du réseau et/ou le suivi des sous-réseaux non valides
 * Indiquez si vous prévoyez d’Microsoft Teams la coexistence hybride avec vos déploiements locaux
 * URL accessible en externe du système d’identité fédérée (par exemple, sts.contoso.com) et plage d’adresses IP en notation CIDR (par exemple, 10.1.1.0/28)
-* URL et plage d’adresses IP de liste de révocation de certificats PKI sur site en notation CIDR
+* URL et plage d’adresses IP de la liste de révocation de certificats PKI sur site en notation CIDR
 * URL et plage d’adresses IP accessibles en externe pour Exchange Server déploiement local en notation CIDR
 * URL et plage d’adresses IP accessibles en externe pour Skype Entreprise déploiement local en notation CIDR
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9311844bbe7bffa0d22d064f4a285af755d0432
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 4c09d3a9caa59a8fb6f24f93fb0cb5883d4ca06ad19eaae40a9057f8ed5522de
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726187"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800101"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -355,7 +355,7 @@ Gérez les préférences pour l’interface utilisateur de Microsoft Defender po
 |**Type de données**|Dictionnaire (préférence imbriée)|
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 
-#### <a name="show--hide-status-menu-icon"></a>Afficher/masquer l’icône du menu d’état
+#### <a name="show--hide-status-menu-icon"></a>Afficher/masquer l’icône du menu État
 
 Spécifiez s’il faut afficher ou masquer l’icône du menu d’état dans le coin supérieur droit de l’écran.
 
