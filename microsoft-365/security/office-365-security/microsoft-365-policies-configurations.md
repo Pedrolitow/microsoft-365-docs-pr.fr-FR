@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: aa12cc4ad885c3d4b9d1c35fba9f38747f24077d
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 50898cf6062719b81b75de07ffab6b9a8c58cd8759d92c7cccc330a1389feb5c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828160"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -36,7 +36,7 @@ Le périmètre de sécurité moderne de votre organisation s’étend désormais
 
 Cette détermination doit être basée sur le compte d’utilisateur de la connectez-vous, l’appareil utilisé, l’application que l’utilisateur utilise pour l’accès, l’emplacement à partir duquel la demande d’accès est faite et une évaluation du risque de la demande. Cela permet de s’assurer que seuls les utilisateurs et les appareils approuvés ont accès aux ressources critiques de l’entreprise.
 
-Cette série d’articles décrit un ensemble de configurations requises pour l’accès aux identités et aux appareils, ainsi qu’un ensemble de stratégies d’accès conditionnel, d’Microsoft Intune et d’Azure Active Directory (Azure AD) pour sécuriser l’accès aux Microsoft 365 pour les applications et services cloud d’entreprise, d’autres services SaaS et les applications sur site publiées avec le proxy d’application Azure AD.
+Cette série d’articles décrit un ensemble de configurations requises pour l’accès aux identités et aux appareils, ainsi qu’un ensemble d’accès conditionnel, de Microsoft Intune et d’autres stratégies de Azure Active Directory pour sécuriser l’accès à Microsoft 365 pour les applications et services cloud d’entreprise, d’autres services SaaS et des applications sur site publiées avec le proxy d’application Azure AD.
 
 Les paramètres et stratégies d’accès aux identités et appareils sont recommandés en trois niveaux : protection de référence, protection sensible et protection pour les environnements avec des données hautement réglementées ou classifiées. Ces niveaux de protection et les configurations correspondantes apportent des niveaux de protection cohérents selon les données, les identités et les appareils.
 
@@ -59,13 +59,13 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide des configuration
 
 ## <a name="intended-audience"></a>Public cible
 
-Ces recommandations sont destinées aux architectes d’entreprise et aux professionnels de l’informatique qui connaissent les services de productivité et de sécurité du cloud Microsoft 365, notamment Azure AD (identité), Microsoft Intune (gestion des appareils) et Microsoft Information Protection (protection des données).
+Ces recommandations sont destinées aux architectes d’entreprise et aux professionnels de l’informatique qui connaissent les services de productivité et de sécurité du cloud Microsoft 365, notamment Azure AD (identité), Microsoft Intune (gestion des appareils) et Protection des données Microsoft (protection des données).
 
 ### <a name="customer-environment"></a>Environnement client
 
 Les stratégies recommandées s’appliquent aux organisations d’entreprise qui opèrent entièrement dans le cloud Microsoft et aux clients avec une infrastructure d’identité hybride, qui est une forêt AD DS (Active Directory Domain Services) locale synchronisée avec un client Azure AD.
 
-Bon nombre des recommandations fournies reposent sur les services disponibles uniquement avec les licences Microsoft 365 E5, Microsoft 365 E3 avec le module de sécurité E5, EMS E5 ou Azure AD Premium P2.
+Bon nombre des recommandations fournies s’appuient sur les services disponibles uniquement avec Microsoft 365 E5, Microsoft 365 E3 avec le module de sécurité E5, EMS E5 ou Azure AD Premium P2 licences.
 
 Pour les organisations qui ne sont pas titulaires de ces licences, Microsoft vous recommande d’implémenter au moins les [paramètres](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)de sécurité par défaut, qui sont inclus dans tous les plans Microsoft 365 de sécurité.
 
@@ -101,9 +101,9 @@ En outre, consultez la solution Déployer la protection des informations pour [l
 
 L’implémentation d’une stratégie de sécurité nécessite des compromis entre sécurité et productivité. Il est utile d’évaluer l’impact de chaque décision sur l’équilibre de la sécurité, des fonctionnalités et de la facilité d’utilisation.
 
-![Équilibrage de la sécurité, des fonctionnalités et de la facilité d’utilisation.](../../media/microsoft-365-policies-configurations/security-triad.png)
+![Équilibrage de sécurité, fonctionnalités et facilité d’utilisation.](../../media/microsoft-365-policies-configurations/security-triad.png)
 
-Les recommandations fournies sont basées sur les principes suivants :
+Les recommandations fournies reposent sur les principes suivants :
 
 - Connaissez vos utilisateurs et soyez flexible à leurs exigences fonctionnelles et de sécurité.
 - Appliquez une stratégie de sécurité juste à temps et assurez-vous qu’elle est significative.
@@ -120,11 +120,11 @@ Azure AD fournit une suite complète de fonctionnalités de gestion des identit�
 
 |Fonctionnalité|Description|Licence|
 |---|---|---|
-|[Authentification multifacteur (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|L’appelez mappé exige que les utilisateurs fournissent deux formes de vérification, telles qu’un mot de passe d’utilisateur, ainsi qu’une notification de l’application Microsoft Authenticator ou un appel téléphonique. L' portable réduit considérablement le risque que les informations d’identification volées soient utilisées pour accéder à votre environnement. Microsoft 365 utilise le service Azure AD Multi-Factor Authentication pour les authentifications basées sur l’authentification multifacteur.|Microsoft 365 E3 ou E5|
+|[Authentification multifacteur (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|L’appelez mappé exige que les utilisateurs fournissent deux formes de vérification, telles qu’un mot de passe utilisateur, ainsi qu’une notification de l’application Microsoft Authenticator ou un appel téléphonique. L' portable réduit considérablement le risque que les informations d’identification volées soient utilisées pour accéder à votre environnement. Microsoft 365 utilise le service Azure AD Multi-Factor Authentication pour les authentifications basées sur l’authentification multifacteur.|Microsoft 365 E3 ou E5|
 |[Accès conditionnel](/azure/active-directory/conditional-access/overview)|Azure AD évalue les conditions de la connectez-vous de l’utilisateur et utilise des stratégies d’accès conditionnel pour déterminer l’accès autorisé. Par exemple, dans ces instructions, nous vous montrons comment créer une stratégie d’accès conditionnel pour exiger la conformité de l’appareil pour l’accès aux données sensibles. Cela réduit considérablement le risque qu’un pirate informatique avec son propre appareil et des informations d’identification volées puisse accéder à vos données sensibles. Elle protège également les données sensibles sur les appareils, car ces derniers doivent répondre à des exigences spécifiques en matière d’état de santé et de sécurité.|Microsoft 365 E3 ou E5|
 |[Groupes Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|Les stratégies d’accès conditionnel, la gestion des appareils avec Intune et même les autorisations sur les fichiers et les sites de votre organisation reposent sur l’affectation à des comptes d’utilisateurs ou à des groupes Azure AD. Nous vous recommandons de créer des groupes Azure AD qui correspondent aux niveaux de protection que vous implémentez. Par exemple, vos cadres sont probablement des cibles de plus grande valeur pour les pirates informatiques. Par conséquent, il est logique d’ajouter les comptes d’utilisateur de ces employés à un groupe Azure AD et d’affecter ce groupe à des stratégies d’accès conditionnel et à d’autres stratégies qui appliquent un niveau de protection plus élevé pour l’accès.|Microsoft 365 E3 ou E5|
 |[Inscription des appareils](/azure/active-directory/devices/overview)|Vous inscrivez un appareil dans Azure AD pour créer une identité pour l’appareil. Cette identité permet d’authentifier l’appareil lorsqu’un utilisateur se connecté et d’appliquer des stratégies d’accès conditionnel qui nécessitent des PC joints à un domaine ou conformes. Pour ce faire, nous utilisons l’inscription des appareils pour inscrire automatiquement les ordinateurs Windows joints au domaine. L’inscription des appareils est une condition préalable à la gestion des appareils avec Intune.|Microsoft 365 E3 ou E5|
-|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Vous permet de détecter les vulnérabilités potentielles affectant les identités de votre organisation et de configurer une stratégie de correction automatisée en cas de risque de communication faible, moyen et élevé, ainsi que de risque pour l’utilisateur. Ces instructions s’appuient sur cette évaluation des risques pour appliquer des stratégies d’accès conditionnel pour l’authentification multifacteur. Ces instructions incluent également une stratégie d’accès conditionnel qui oblige les utilisateurs à modifier leur mot de passe si une activité à risque élevé est détectée pour leur compte.|Microsoft 365 E5, Microsoft 365 E3 avec le module de sécurité E5, EMS E5 ou Azure AD Premium licences P2|
+|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Vous permet de détecter les vulnérabilités potentielles affectant les identités de votre organisation et de configurer une stratégie de correction automatisée en cas de risque de communication faible, moyen et élevé, ainsi que de risque pour l’utilisateur. Ces instructions s’appuient sur cette évaluation des risques pour appliquer des stratégies d’accès conditionnel pour l’authentification multifacteur. Ces instructions incluent également une stratégie d’accès conditionnel qui oblige les utilisateurs à modifier leur mot de passe si une activité à risque élevé est détectée pour leur compte.|Microsoft 365 E5, Microsoft 365 E3 avec le module de sécurité E5, EMS E5 ou Azure AD Premium P2 licences|
 |[Réinitialisation du mot de passe en libre-service (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Autorisez vos utilisateurs à réinitialiser leurs mots de passe en toute sécurité et sans intervention du service d’aide, en fournissant la vérification de plusieurs méthodes d’authentification que l’administrateur peut contrôler.|Microsoft 365 E3 ou E5|
 |[Protection par mot de passe Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)|Détectez et bloquez les mots de passe faibles connus, leurs variantes et d’autres termes faibles propres à votre organisation. Les listes générales par défaut de mots de passe interdits sont automatiquement appliquées à tous les utilisateurs d’un client Azure AD. Vous pouvez définir d’autres entrées dans une liste personnalisée de mots de passe interdits. Lorsque les utilisateurs modifient ou réinitialisent leurs mots de passe, ces listes sont vérifiées de façon à garantir l’utilisation de mots de passe forts.|Microsoft 365 E3 ou E5|
 |
@@ -157,7 +157,7 @@ Ce guide vous montre comment implémenter un ensemble de stratégies pour proté
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 et Microsoft 365 Apps for enterprise
 
-Windows 10 avec Applications Microsoft 365 pour les grandes entreprises est l’environnement client recommandé pour les PC. Nous vous recommandons Windows 10, car Azure est conçu pour fournir l’expérience la plus fluide possible à la fois sur site et Azure AD. Windows 10 inclut également des fonctionnalités de sécurité avancées qui peuvent être gérées via Intune. Applications Microsoft 365 pour les grandes entreprises inclut les dernières versions de Office applications. Celles-ci utilisent l’authentification moderne, qui est plus sécurisée et qui est requise pour l’accès conditionnel. Ces applications incluent également des outils de conformité et de sécurité améliorés.
+Windows 10'Applications Microsoft 365 pour les grandes entreprises est l’environnement client recommandé pour les PC. Nous vous recommandons Windows 10 car Azure est conçu pour fournir l’expérience la plus fluide possible à la fois sur site et Azure AD. Windows 10 inclut également des fonctionnalités de sécurité avancées qui peuvent être gérées via Intune. Applications Microsoft 365 pour les grandes entreprises inclut les dernières versions de Office applications. Celles-ci utilisent l’authentification moderne, qui est plus sécurisée et qui est requise pour l’accès conditionnel. Ces applications incluent également des outils de conformité et de sécurité améliorés.
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>Application de ces fonctionnalités sur les trois niveaux de protection
 
@@ -173,7 +173,7 @@ Le tableau suivant récapitule nos recommandations pour l’utilisation de ces f
 
 ## <a name="device-ownership"></a>Propriété des appareils
 
-Le tableau ci-dessus reflète la tendance pour de nombreuses organisations à prendre en charge un mélange d’appareils dont l’organisation est propriétaire, ainsi que des appareils personnels ou byoD pour permettre la productivité mobile au sein du personnel. Les stratégies de protection des applications Intune garantissent que le courrier électronique est protégé contre l’exfiltrament de l’application mobile Outlook et d’autres applications mobiles Office, à la fois sur les appareils de l’organisation et les BYOD.
+Le tableau ci-dessus reflète la tendance pour de nombreuses organisations à prendre en charge un mélange d’appareils d’entreprise, ainsi que des appareils personnels ou BYOD pour permettre la productivité mobile au sein du personnel. Les stratégies de protection des applications Intune garantissent que le courrier électronique est protégé contre l’exfiltrament de l’application mobile Outlook et d’autres applications mobiles Office, à la fois sur les appareils de l’organisation et les BYOD.
 
 Nous vous recommandons de gérer les appareils gérés par l’organisation par Intune ou joints à un domaine pour appliquer des protections et un contrôle supplémentaires. Selon la sensibilité des données, votre organisation peut choisir de ne pas autoriser les BYOD pour des populations d’utilisateurs spécifiques ou des applications spécifiques.
 
@@ -201,9 +201,9 @@ Microsoft recommande de ne pas créer de jeux de stratégies qui s’appliquent 
 ![Étapes de configuration de l’accès aux identités et aux appareils.](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. Configurez les fonctionnalités d’identité prérequises et leurs paramètres.
-2. Configurez les stratégies communes d’accès conditionnel aux identités et aux accès.
+2. Configurez les stratégies d’accès conditionnel d’accès et d’identité courantes.
 3. Configurer des stratégies d’accès conditionnel pour les utilisateurs invités et externes.
-4. Configurez les stratégies d’accès conditionnel Microsoft 365 applications cloud, telles que les stratégies Microsoft Teams, Exchange Online et SharePoint et Microsoft Cloud App Security cloud.
+4. Configurez des stratégies d’accès conditionnel pour Microsoft 365 applications cloud, telles que les stratégies Microsoft Teams, Exchange Online et SharePoint et Microsoft Cloud App Security cloud.
 
 Une fois que vous avez configuré l’accès aux identités et aux appareils, consultez le guide de déploiement des fonctionnalités [Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) pour obtenir une liste de contrôle progressive des fonctionnalités supplémentaires à prendre en compte et la gouvernance d’identité [Azure AD](/azure/active-directory/governance/) pour protéger, surveiller et auditer l’accès.
 

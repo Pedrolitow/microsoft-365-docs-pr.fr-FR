@@ -11,12 +11,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 45064584b622c313fee66c0699ab6495353342edad39948e8f8dabcd68911547
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287974"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807191"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
@@ -61,9 +61,9 @@ Microsoft Manged Desktop définit une échéance de mise à jour de sept [jours]
 
 ### <a name="pausing-or-rolling-back-an-update"></a>Interruption ou interruption d’une mise à jour
 
-Si vous devez suspendre ou Microsoft 365 mise à jour de [](../working-with-managed-desktop/admin-support.md) l’application pour une raison quelconque, déposez une demande de support administrateur par le biais Microsoft Manged Desktop portail.
+Si vous devez suspendre ou Microsoft 365 mise à jour de [](../working-with-managed-desktop/admin-support.md) l’application pour une raison quelconque, déposez une demande de support administrateur via Microsoft Manged Desktop portail.
 
-Au cours d’une publication, Microsoft Manged Desktop les taux d’erreur de tous les Microsoft 365 Apps. Si nous notons une différence significative de qualité entre la nouvelle version et son prédécesseur, nous pouvons vous contacter via Microsoft Manged Desktop portail d’administration. En fonction de la gravité, nous vous demandons si vous souhaitez suspendre la publication ou nous vous informons que nous avons pris des mesures pour atténuer un problème. 
+Lors d’une publication, Microsoft Manged Desktop les taux d’erreur de tous les Microsoft 365 Apps. Si nous notons une différence significative de qualité entre la nouvelle version et son prédécesseur, nous pouvons vous contacter via Microsoft Manged Desktop portail d’administration. En fonction de la gravité, nous vous demandons si vous souhaitez suspendre la publication ou nous vous informons que nous avons pris des mesures pour atténuer un problème. 
 
 ### <a name="delivery-optimization"></a>Optimisation de la distribution
 
@@ -83,7 +83,7 @@ Microsoft Manged Desktop tous les paramètres de mise à jour des appareils [gé
 
 **Valeur par défaut**: Activé
 
-Cette stratégie est configurée afin de garantir que tous les appareils Office peuvent être tenus à jour à partir du cloud. 
+Cette stratégie est configurée pour garantir que tous les appareils Office peuvent être tenus à jour à partir du cloud. 
 
 ### <a name="set-a-deadline-when-updates-have-to-be-applied"></a>Définir une échéance lorsque des mises à jour doivent être appliquées
 

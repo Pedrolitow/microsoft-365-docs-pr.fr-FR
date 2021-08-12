@@ -10,16 +10,16 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 31cc897fe28f557a65cba9c99e5dcecbf7c2b0e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0a0072cbc5738ae78c151650d8186eb34f952602015b7068909a2d276664684a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807149"
 ---
 # <a name="work-with-app-control"></a>Utiliser le contrôle d’application
 
-Une fois que le contrôle d’application a été déployé dans votre environnement, vous et Bureau géré Microsoft opérations ont des responsabilités en cours. Par exemple, vous pouvez ajouter une nouvelle application dans l’environnement ou ajouter (ou supprimer) un signataire approuvé. Pour améliorer la sécurité, toutes les applications doivent être signées par code avant de les publier pour les utilisateurs. Les détails de l’éditeur d’une application incluent des informations sur le signataire.
+Une fois que le contrôle d’application a été déployé dans votre environnement, vous et Microsoft Manged Desktop des opérations ont des responsabilités en cours. Par exemple, vous pouvez ajouter une nouvelle application dans l’environnement ou ajouter (ou supprimer) un signataire approuvé. Pour améliorer la sécurité, toutes les applications doivent être signées par code avant de les publier pour les utilisateurs. Les détails de l’éditeur d’une application incluent des informations sur le signataire.
 
 
 ## <a name="add-a-new-app"></a>Ajout d’une nouvelle application
@@ -30,14 +30,14 @@ Pour ajouter une nouvelle application, suivez les étapes suivantes :
 2. Déployez l’application sur n’importe quel appareil de l’anneau Test. 
 3. Testez votre application en fonction de vos processus d’entreprise standard. 
 4. Consultez l’Observateur d’événements sous Journaux des applications et des **services\Microsoft\Windows\AppLocker**, à la recherche d’événements **8003** ou **8006.** Ces événements indiquent que l’application sera bloquée. Pour plus d’informations sur tous les événements App Locker et leurs significations, voir Utilisation de l’Observateur d’événements [avec AppLocker.](/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)
-5. Si vous trouvez l’un de ces événements, ouvrez une demande de signataire avec Bureau géré Microsoft Operations.
+5. Si vous trouvez l’un de ces événements, ouvrez une demande de signataire avec Microsoft Manged Desktop Operations.
 
 ## <a name="add-or-remove-a-trusted-signer"></a>Ajouter (ou supprimer) un signataire approuvé
 
 Lorsque vous ouvrez une demande de signataire, vous devez d’abord fournir des détails importants sur l’éditeur. Ensuite, suivez les étapes suivantes :
 
 1. [Rassemblez les détails de l’éditeur.](#gather-publisher-details)
-2. Ouvrez un ticket avec Bureau géré Microsoft Operations pour demander la règle du signataire et inclure les détails suivants :  
+2. Ouvrez un ticket avec Microsoft Manged Desktop Operations pour demander la règle du signataire et inclure les détails suivants :  
     - Nom de l’application 
     - Version de l’application 
     - Description 
@@ -45,7 +45,7 @@ Lorsque vous ouvrez une demande de signataire, vous devez d’abord fournir des 
     - Publisher détails détaillés (par exemple : « O= <publisher name> ,L= <location> ,S=State,C=Country ») 
 
 > [!NOTE]
-> Pour supprimer l’confiance pour une application, suivez les mêmes étapes, mais définissez **le type de modification** à *supprimer.*
+> Pour supprimer l’confiance d’une application, suivez les mêmes étapes, mais définissez **le type de modification** à *supprimer.*
 
 Les opérations déploieront progressivement des stratégies dans des groupes de déploiement en suivant cette planification :
 
@@ -67,7 +67,7 @@ Vous pouvez suspendre ou revenir en arrière le déploiement à tout moment pend
 
 Pour accéder aux données d’éditeur d’une application, suivez les étapes suivantes :
 
-1. Recherchez un Bureau géré Microsoft de test sur l’anneau test sur la stratégie du mode Audit appliquée. 
+1. Recherchez un Microsoft Manged Desktop de test sur l’anneau test sur la stratégie du mode Audit appliquée. 
 2. Essayez d’installer l’application sur l’appareil.
 3. Ouvrez l’Observateur d’événements sur cet appareil. 
 4. Dans l’Observateur d’événements, accédez à Journaux des applications et des **services\Microsoft\Windows,** puis sélectionnez **AppLocker.** 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation matérielle. Empêcher les attaques actuelles et émergentes telles que les attaques ou les liens malveillants de perturber la productivité des employés et la sécurité de l’entreprise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 39d6a9c3a3c3a5e2c736025a26c22588f9f08bb0
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 6eabad2b52dc83c65b6a36ea4bb057573ce83e5d4dfc18b298ba1e287a8a696d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055267"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828270"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard pour les Office administrateurs
 
@@ -230,7 +230,7 @@ Lorsque cette heuristique est remplie, Office pré-crée un conteneur Applicatio
 > [!NOTE]
 > Les conseils nécessaires à l’heuristique pour pré-créer le conteneur sont générés par les applications Office qu’un utilisateur les utilise. Si un utilisateur installe Office sur un nouveau système où Application Guard est activé, Office ne pré-crée pas le conteneur avant la première ouverture d’un document nontrus sur le système. L’utilisateur observe que l’ouverture de ce premier fichier dans Application Guard est plus longue.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 * La sélection de liens web `http` (ou `https` ) n’ouvre pas le navigateur.
 * Le paramètre par défaut de la stratégie de protection contre le copier-coller consiste à activer l’accès du Presse-papiers au texte uniquement.

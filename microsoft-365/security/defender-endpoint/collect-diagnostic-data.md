@@ -16,19 +16,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7686f28646135986a78b4c269e41e2fc3a70dff9
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: caf2e81d45e302b986753e641fb3704167fb092e033534869fdd48fabbdf3aac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904043"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834278"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Collecter les données de diagnostic de l’Antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 

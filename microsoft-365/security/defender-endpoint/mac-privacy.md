@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 580663a2644ff19ff580cfd0b13ac60e2ef233bb
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 082884e6230c37c65c88ddaec9a24ef05f22e75e853065be4c70ec23266dac2c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793360"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -38,7 +38,7 @@ Microsoft s’engage à vous fournir les informations et les contrôles dont vou
 
 Cette rubrique décrit les contrôles de confidentialité disponibles dans le produit, comment gérer ces contrôles avec des paramètres de stratégie et plus d’informations sur les événements de données collectés.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-macos"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour endpoint sur macOS
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-macos"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour point de terminaison sur macOS
 
 Cette section décrit les contrôles de confidentialité pour les différents types de données collectées par Microsoft Defender pour Endpoint sur macOS.
 
@@ -133,7 +133,7 @@ Les champs suivants sont affichés :
 | cloud_service.service_uri                           | URI utilisé pour communiquer avec le cloud. |
 | cloud_service.diagnostic_level                      | Niveau de diagnostic de l’appareil (obligatoire, facultatif). |
 | cloud_service.automatic_sample_submission           | Si l’envoi automatique d’échantillons est allumé ou non. |
-| cloud_service.automatic_definition_update_enabled   | Si la mise à jour automatique des définitions est ou non allumée. |
+| cloud_service.automatic_definition_update_enabled   | Si la mise à jour automatique des définitions est ou non. |
 | edr.early_preview                                   | Si l’appareil doit s’PEPT fonctionnalités de prévisualisation anticipée. |
 | edr.group_id                                        | Identificateur de groupe utilisé par le composant de détection et de réponse. |
 | edr.tags                                            | Balises définies par l’utilisateur. |
@@ -219,7 +219,7 @@ Les champs suivants sont affichés :
 | antivirus_engine.exclusions[].name                 | Nom du fichier exclu de l’analyse. |
 | antivirus_engine.scan_cache_maximum                | Taille du cache du produit. |
 | antivirus_engine.maximum_scan_threads              | Nombre maximal de threads utilisés pour l’analyse. |
-| antivirus_engine.threat_restoration_exclusion_time | Délai d’délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté. |
+| antivirus_engine.threat_restoration_exclusion_time | Délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté. |
 | antivirus_engine.threat_type_settings              | Configuration de la façon dont les différents types de menaces sont gérés par le produit. |
 | filesystem_scanner.full_scan_directory             | Répertoire d’analyse complet. |
 | filesystem_scanner.quick_scan_directories          | Liste des répertoires utilisés dans l’analyse rapide. |

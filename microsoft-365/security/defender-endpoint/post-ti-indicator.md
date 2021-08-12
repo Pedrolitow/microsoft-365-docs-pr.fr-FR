@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 42d6ed79868b9f32f8ea3cfe77bb78f1a86a8bea
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 464ed75474256e62ccb75756b3949441aae24d04483ccc4ca653db1439d0015b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793309"
 ---
 # <a name="submit-or-update-indicator-api"></a>API d’indicateur d’soumission ou de mise à jour
 
@@ -40,7 +40,7 @@ ms.locfileid: "53656690"
 
 ## <a name="api-description"></a>Description de l’API
 
-Envoie ou met à jour la nouvelle [entité d’indicateur.](ti-indicator.md)
+Envoie ou met à jour une nouvelle [entité d’indicateur.](ti-indicator.md)
 
 La notation CIDR pour les IPs n’est pas prise en charge.
 
@@ -51,7 +51,7 @@ La notation CIDR pour les IPs n’est pas prise en charge.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La](apis-intro.md) mise en place
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez La mise [en place](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---

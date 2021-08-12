@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c15e68a74c9bf518822fce211d6c7d5c4dbc3f2c
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 0de5817d4eb741885be6e43133b0886e90488bd4af04699a8c9dd970fbae8491
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793325"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows de messagerie
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -96,7 +96,7 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
 
-3. Sous les **paramètres Gérer,** sélectionnez Paramètres de protection contre & virus et **menaces.**
+3. Sous les **paramètres Gérer,** sélectionnez **Paramètres de protection contre & virus.**
 
 4. Sous le **paramètre Exclusions,** **sélectionnez Ajouter ou supprimer des exclusions.** 
 

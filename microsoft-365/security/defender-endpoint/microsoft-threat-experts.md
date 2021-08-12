@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 162130c73a24ad5a7d3f45f353b13ba57a5cd362
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: bd839d77ebc835416d38bf1daa4c799d40bdeb27a7b7aa4f7da8ab3540c51238
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655574"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793431"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
@@ -51,10 +51,10 @@ Pour vous inscrire à Spécialistes des menaces Microsoft - Avantages des notifi
 
 Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents auxquels votre organisation est confrontée.
 
-Pour [plus d’Spécialistes des menaces Microsoft, voir](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) Configurer les fonctionnalités de gestion des données. 
+Pour [plus d’informations, Spécialistes des menaces Microsoft configurer les](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) fonctionnalités d’analyse. 
 
 ## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Spécialistes des menaces Microsoft - Notification d’attaque ciblée 
-Spécialistes des menaces Microsoft - La notification d’attaques ciblées permet de cibler de manière proactive les menaces les plus importantes pour votre réseau, notamment les intrusions de l’adversaire humain, les attaques au clavier ou les attaques avancées telles que le cyber-espionnage. Ces notifications s’affiche sous la forme d’une nouvelle alerte. Le service de recherche géré inclut :  
+Spécialistes des menaces Microsoft - La notification d’attaque ciblée permet de cibler de manière proactive les menaces les plus importantes pour votre réseau, y compris les intrusions de l’adversaire humain, les attaques par clavier ou les attaques avancées telles que le cyber-espionnage. Ces notifications s’affiche sous la forme d’une nouvelle alerte. Le service de recherche géré inclut :  
 - Analyse et analyse des menaces, ce qui réduit le temps d’activité et les risques pour l’entreprise 
 - Intelligence artificielle entraînée pour découvrir et hiérarchiser les attaques connues et inconnues  
 - Identification des risques les plus importants, aider les socs à optimiser le temps et l’énergie 

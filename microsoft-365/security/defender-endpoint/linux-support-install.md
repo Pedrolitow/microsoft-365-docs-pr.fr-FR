@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d735a7c0a52ac75f1e714f7f458b779f56b04bc9
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 05a2c4e29b56d973f0a0a924390fa5b4209f346a6cdf390fa480e88764860f2f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793363"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur Linux
 
@@ -123,7 +123,7 @@ systemctl status mdatp
     où `<systemd_path>` est pour les distributions Ubuntu et Debian et pour `/lib/systemd/system` `/usr/lib/systemd/system` Rhel, CentOS, Oracle et SLES.
    Réexécutez ensuite l’étape 2.
 
-4. Si les étapes ci-dessus ne fonctionnent pas, vérifiez si SELinux est installé et en mode d’application. Si c’est le cas, essayez de le définir sur le mode permissif (de préférence) ou désactivé. Pour ce faire, vous pouvez définir le paramètre sur « permissif » ou « désactivé » dans le fichier, puis par `SELINUX` `/etc/selinux/config` redémarrage. Pour plus d’informations, consultez la page d’homme du sélinux.
+4. Si les étapes ci-dessus ne fonctionnent pas, vérifiez si SELinux est installé et en mode d’application. Si c’est le cas, essayez de le définir sur le mode permissif (de préférence) ou désactivé. Pour ce faire, vous pouvez définir le paramètre sur « permissif » ou « désactivé » dans le fichier, puis par `SELINUX` `/etc/selinux/config` redémarrage. Pour plus d’informations, consultez la page de l’homme du sélinux.
 Essayez maintenant de redémarrer le service mdatp à l’aide de l’étape 2. Revert the configuration change immediately though for security reasons after trying it andboot.
 
 5. Si `/opt` le répertoire est un lien symbolique, créez un montage de liaison pour `/opt/microsoft` .
@@ -150,7 +150,7 @@ Essayez maintenant de redémarrer le service mdatp à l’aide de l’étape 2. 
 
 ## <a name="if-mdatp-service-is-running-but-eicar-text-file-detection-doesnt-work"></a>Si le service mdatp est en cours d’exécution, mais que la détection de fichier texte EICAR ne fonctionne pas
 
-1. Vérifiez le type de système de fichiers à l’aide des :
+1. Vérifiez le type de système de fichiers en utilisant :
 
     ```bash
     findmnt -T <path_of_EICAR_file>
@@ -178,4 +178,4 @@ Essayez maintenant de redémarrer le service mdatp à l’aide de l’étape 2. 
     Diagnostic file created: <path to file>
     ```
 
-    Le chemin d’accès à un fichier zip qui contient les journaux s’affiche en tant que sortie. Connectez-vous à notre support client à l’aide de ces journaux.
+    Le chemin d’accès à un fichier zip qui contient les journaux s’affiche en tant que sortie. À l’aide de ces journaux, connectez-vous au support technique.
