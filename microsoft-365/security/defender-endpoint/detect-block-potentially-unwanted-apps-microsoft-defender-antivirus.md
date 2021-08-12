@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/02/2021
-ms.openlocfilehash: d7f411c81e839d3929d4aa1a52fda29399c59dca
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3115695bb9c73dbff0c24f677e9e6151de82feba0695eebbb3b2078f01ab8ad8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772376"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794137"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 

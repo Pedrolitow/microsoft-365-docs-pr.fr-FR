@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1be1cbcb7e5bb1cef670b5c189341be53cf739c4
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 5ca8aecbc83513949a72be356c57651c46ba1a6087cca8ea6201c9a6dcc86587
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806284"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Gérer le calendrier de téléchargement et d’application des mises à jour de protection
 
@@ -44,19 +44,19 @@ Vous pouvez également aléatoirer le moment où chaque point de terminaison vé
 
 ## <a name="use-configuration-manager-to-schedule-protection-updates"></a>Utiliser Configuration Manager pour planifier des mises à jour de protection
 
-1. Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans le volet de navigation à gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies**  >    >  **anti-programme** malveillant)
+1. Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans le volet de navigation sur la gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies**  >    >  **anti-programme** malveillant)
 
 2. Go to the **Security intelligence updates** section.
 
 3. Pour vérifier et télécharger les mises à jour à un moment certain :
       1. Définissez **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.
-      2. Définissez La vérification Endpoint Protection mises à jour de l’intelligence de sécurité **quotidiennement à...** au moment où les mises à jour doivent être vérifiées.
+      2. Définissez **Check for Endpoint Protection security intelligence updates daily at... to** the time when updates should be checked.
       3
 4. Pour vérifier et télécharger les mises à jour sur un intervalle continu, définissez vérifier les mises à jour de l’intelligence de sécurité Endpoint Protection à un intervalle **spécifique...** sur le nombre d’heures qui doivent se produire entre les mises à jour.
 
 5. [Déployez la stratégie mise à jour comme d’habitude.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 
-## <a name="use-group-policy-to-schedule-protection-updates"></a>Utiliser une stratégie de groupe pour planifier des mises à jour de la protection
+## <a name="use-group-policy-to-schedule-protection-updates"></a>Utiliser la stratégie de groupe pour planifier des mises à jour de la protection
 
 > [!IMPORTANT]
 > Par défaut, Antivirus Microsoft Defender recherche une mise à jour 15 minutes avant l’heure des analyses programmées. L’activation de ces paramètres remplace cette valeur par défaut.
@@ -103,7 +103,7 @@ Pour plus d’informations et les paramètres autorisés, voir les informations 
 
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

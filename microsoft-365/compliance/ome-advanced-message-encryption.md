@@ -16,18 +16,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: Le chiffrement de messages avancé aide les organisations à respecter leurs obligations de conformité en permettant aux administrateurs d’en faire encore plus avec les messages protégés.
-ms.openlocfilehash: 8c650c47c1853102e4e2d142040e49724ef707e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d1021d4d424a1ecb984bfd5afa176e9ae3a3451c006df0dd307a5b59d9e4d0e7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923954"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813654"
 ---
 # <a name="advanced-message-encryption"></a>Chiffrement de messages avancé
 
-Chiffrement avancé de messages Office 365 est inclus dans [Microsoft 365 Entreprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (tarifs du personnel pour les associations), Office 365 Entreprise E5 (prix du personnel pour les associations) et Office 365 Éducation A5. Si votre organisation dispose d’un abonnement qui n’inclut pas de Chiffrement avancé de messages Office 365, vous pouvez l’acheter avec le module complémentaire SKU Microsoft 365 E5 Conformité pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou le module complémentaire SKU Conformité avancée Office 365 pour Microsoft 365 E3, Microsoft 365 E3 (tarification du personnel à but non lucratif), les références Office 365 ou la référence SKU Microsoft 365 E5/A5 Information Protection and Governance module Microsoft 365 A3/E3.
+Chiffrement avancé de messages Office 365 est inclus dans [Microsoft 365 Entreprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (tarifs pour le personnel à but non lucratif), Office 365 Entreprise E5 (tarifs pour le personnel à but non lucratif) et Office 365 Éducation A5. Si votre organisation dispose d’un abonnement qui n’inclut pas de Chiffrement avancé de messages Office 365, vous pouvez l’acheter avec le module complémentaire SKU Microsoft 365 E5 Conformité pour Microsoft 365 E3, Microsoft 365 E3 (tarification du personnel à but non lucratif) ou le module complémentaire SKU Conformité avancée Office 365 pour Microsoft 365 E3, Microsoft 365 E3 (tarification du personnel à but non lucratif), les références Office 365 ou la référence SKU Microsoft 365 E5/A5 Information Protection and Governance module Microsoft 365 A3/E3.
 
-Le chiffrement de messages avancé aide les clients à respecter les obligations de conformité qui nécessitent des contrôles plus souples sur les destinataires externes et leur accès aux messages électroniques chiffrés. Avec le chiffrement de messages avancé Office 365, vous pouvez contrôler les e-mails sensibles partagés à l’extérieur de l’organisation à l’aide de stratégies automatiques. Vous configurez ces stratégies pour identifier les types d’informations sensibles tels que les données personnelles, les identifiants financiers ou les ID d’état de santé, ou vous pouvez utiliser des mots clés pour améliorer la protection. Une fois que vous avez configuré les stratégies, associez les stratégies à des modèles de courrier personnalisés, puis ajoutez une date d’expiration pour un contrôle supplémentaire des e-mails qui correspondent à la stratégie. En outre, les administrateurs peuvent contrôler davantage les e-mails chiffrés accessibles en externe via un portail web sécurisé en révoquer l’accès au courrier électronique à tout moment.
+Le chiffrement de messages avancé permet aux clients de respecter les obligations de conformité qui nécessitent des contrôles plus souples sur les destinataires externes et leur accès aux e-mails chiffrés. Avec le chiffrement de messages avancé Office 365, vous pouvez contrôler les e-mails sensibles partagés à l’extérieur de l’organisation avec des stratégies automatiques. Vous configurez ces stratégies pour identifier les types d’informations sensibles tels que les données personnelles, les identifiants financiers ou les ID d’état de santé, ou vous pouvez utiliser des mots clés pour améliorer la protection. Une fois que vous avez configuré les stratégies, associez les stratégies à des modèles de courrier personnalisés, puis ajoutez une date d’expiration pour un contrôle supplémentaire des e-mails qui correspondent à la stratégie. En outre, les administrateurs peuvent contrôler davantage les e-mails chiffrés accessibles en externe via un portail web sécurisé en révoquer l’accès au courrier électronique à tout moment.
 
 Vous pouvez uniquement révoquer et définir une date d’expiration pour les messages électroniques envoyés à des destinataires externes.
 
@@ -35,7 +35,7 @@ Vous pouvez uniquement révoquer et définir une date d’expiration pour les me
 
 Les articles suivants décrivent comment configurer et utiliser le chiffrement de messages avancé.
 
-Votre organisation doit avoir un abonnement qui inclut Chiffrement avancé de messages Office 365. Pour plus d’informations sur les abonnements pris en charge, voir la description du service de conformité et de [stratégie de message.](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+Votre organisation doit avoir un abonnement qui inclut Chiffrement avancé de messages Office 365. Pour plus d’informations sur les abonnements pris en charge, voir la description du service de stratégie [de message et de conformité.](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
 
 Si vous n’avez pas encore chiffrement de messages Office 365, voir Configurer de nouvelles fonctionnalités [chiffrement de messages Office 365 de gestion.](set-up-new-message-encryption-capabilities.md)
 

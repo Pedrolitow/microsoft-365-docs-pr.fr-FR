@@ -15,16 +15,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Découvrez les actions de correction dans les fonctionnalités d’examen et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
+description: Découvrez les actions de correction dans les fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 91b1af53f69cc464726bb6040f6d9af2bb11566804898db85dedc658704e8a4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828342"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Examiner et gérer les actions de correction dans Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "53108534"
 
 Comme des enquêtes automatisées sur & de collaboration  entraînent des verdicts, tels que malveillants ou suspects, certaines actions de correction sont créées. Dans Microsoft Defender pour Office 365, les actions de correction peuvent inclure :
 
-- Suppression de messages électroniques ou de clusters
+- Suppression de messages électroniques ou de clusters de suppression (soft)
 - Turning off external mail forwarding
 
 Ces mesures correctives ne sont prises que si votre équipe en charge des opérations de sécurité ne les approuve pas. Nous vous recommandons d’examiner et d’approuver les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu. Dans certains cas, vous pouvez reconsidérer les actions envoyées.  Vous devez faire partie du rôle De recherche & purge avant d’effectuer des actions.
@@ -58,7 +58,7 @@ Il existe quatre façons de rechercher et d’agir sur des enquêtes automatique
 ## <a name="investigation-queue"></a>File d’attente d’examen
 
 1. Ouvrez le Microsoft 365 Defender <https://security.microsoft.com> () et connectez-vous.
-2. Accédez à la page alertes/incident.
+2. Naviguez à partir de la page alertes/incident.
 3. Dans la page Examen, allez dans **l’onglet Actions en** attente.
 4. Sélectionnez un élément dans la liste. Son volet latéral s’ouvre.
 5. Dans le volet latéral, prenez des mesures d’approbation ou de rejet.
@@ -87,7 +87,7 @@ Il existe deux façons de reconsidérer les actions envoyées :
 - Via le centre [de l’action unifiée.](https://security.microsoft.com/action-center)
 - Bien que le [centre Office actions .](https://security.microsoft.com/threatincidents)
 
-## <a name="change-or-undo-through-the-unified-action-center"></a>Modifier ou annuler par le biais du centre de l’action unifiée
+## <a name="change-or-undo-through-the-unified-action-center"></a>Modifier ou annuler via le centre de l’action unifiée
 
 1. Go to the [unified action center](https://security.microsoft.com/action-center) and sign in.
 2. Sous **l’onglet** Historique, sélectionnez une action que vous souhaitez modifier ou annuler.
@@ -101,7 +101,7 @@ Il existe deux façons de reconsidérer les actions envoyées :
 4. Attendez que le bouton Action en haut s’active et sélectionnez le bouton Action pour modifier le type d’action.
 5. Cela crée les actions appropriées.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Utiliser l’Explorateur de menaces](threat-explorer.md)
 - [Actions d’administration /manuelles](remediate-malicious-email-delivered-office-365.md)

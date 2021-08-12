@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Utilisez la recherche de contenu et le script de cet article pour rechercher les boîtes aux lettres et OneDrive Entreprise sites pour un groupe d’utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 51e668438c6016a0c5f2c914dc2b2e86cc56f49e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01014f991ba832b54b703458ca1eac7cc40902a49bf18d2b79e4e6e89d37d49e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813666"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et OneDrive Entreprise
 
@@ -66,7 +66,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
     
 - **Nom de votre domaine Mon site** : le domaine Mon site est le domaine qui contient tous les sites OneDrive Entreprise de votre organisation. Par exemple, si l’URL de votre domaine Mon site est , vous devez entrer lorsque le script vous invite à entrer le nom de votre **https://contoso-my.sharepoint.com**  `contoso` domaine Mon site. 
     
-- **Nom du fichier texte de** l’étape 2 : nom du fichier texte que vous avez créé à l’étape 2. Si le fichier texte et le script se trouvent dans le même dossier, entrez le nom du fichier texte. Dans le cas contraire, entrez le chemin d’accès complet du fichier texte. 
+- **Chemin d’accès du fichier texte** de l’étape 2 : nom du fichier texte que vous avez créé à l’étape 2. Si le fichier texte et le script se trouvent dans le même dossier, entrez le nom du fichier texte. Dans le cas contraire, entrez le chemin d’accès complet du fichier texte. 
     
 - **Nom de la recherche de** contenu : nom de la recherche de contenu qui sera créée par le script. 
     
@@ -187,4 +187,4 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
     
     - Requête de recherche (laissez ce vide pour renvoyer tous les éléments dans les emplacements de contenu).
     
-    Le script obtient les URL de chaque OneDrive Entreprise site, puis crée et démarre la recherche. Vous pouvez exécuter la cmdlet **Get-ComplianceSearch** dans le Centre de sécurité & conformité PowerShell pour afficher les statistiques et les résultats de la recherche, ou vous pouvez aller à la **page** de recherche de contenu dans le Centre de sécurité & conformité pour afficher des informations sur la recherche.
+    Le script obtient les URL de chaque site OneDrive Entreprise, puis crée et démarre la recherche. Vous pouvez exécuter la cmdlet **Get-ComplianceSearch** dans le Centre de sécurité & conformité PowerShell pour afficher les statistiques et les résultats de la recherche, ou vous pouvez aller à la **page** de recherche de contenu dans le Centre de sécurité & conformité pour afficher des informations sur la recherche.

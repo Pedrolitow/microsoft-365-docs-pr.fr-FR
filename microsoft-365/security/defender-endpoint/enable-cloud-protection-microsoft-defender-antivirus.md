@@ -15,18 +15,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 694c09c5136f874550fa4a47586f3268ee2d0833
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: ed8fd13aa84fc807c75db99f7ed06fab8dcfbf65631c51bf51afcf295f66c965
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007180"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794161"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>Activer la protection par le cloud
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -38,7 +38,7 @@ Antivirus Microsoft Defender utilise plusieurs technologies de détection et de 
 Vous pouvez activer ou désactiver Antivirus Microsoft Defender protection cloud de plusieurs manières :
 
 - Microsoft Intune
-- Microsoft Endpoint Manager
+- Gestionnaire de point de terminaison Microsoft
 - Stratégie de groupe
 - Cmdlets PowerShell.
 
@@ -144,11 +144,11 @@ Pour plus d’informations sur les paramètres autorisés, [voir Windows Defende
 
 1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
-2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis l’étiquette des **paramètres** de protection contre & virus :
+2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis l’étiquette **paramètres** de protection contre & virus :
 
     :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Capture d’écran des paramètres de protection contre & virus":::
 
-3. Confirmez que **la protection basée sur le cloud** et **l’envoi automatique** d’échantillons sont **activés.**
+3. Confirmez que **la protection basée sur le cloud et** **l’envoi** automatique d’échantillons sont **activés.**
 
 > [!NOTE]
 > Si l’envoi automatique d’échantillons a été configuré avec la stratégie de groupe, le paramètre est grisé et indisponible.
@@ -162,4 +162,4 @@ Pour plus d’informations sur les paramètres autorisés, [voir Windows Defende
 - [Cmdlets Defender](/powershell/module/defender/)
 - [Utiliser la protection microsoft cloud dans Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 - [Comment créer et déployer des stratégies de logiciel anti-programme malveillant : service de protection cloud](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

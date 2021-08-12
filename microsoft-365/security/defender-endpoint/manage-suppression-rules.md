@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e55e4c78290d84393c06f0a58ef425bad5eb4dcc
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 938c8b8764961930e80de562bdf9fc82f622da5d5b5793ca35c9e5a40a37ea09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655946"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806290"
 ---
 # <a name="manage-suppression-rules"></a>Gérer des règles de suppression
 
@@ -35,7 +35,7 @@ ms.locfileid: "53655946"
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans le portail. Vous pouvez créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant anodins, telles que des outils ou des processus connus dans votre organisation. Pour plus d’informations sur la suppression des alertes, voir [Supprimer des alertes.](manage-alerts.md)
+Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans le portail. Vous pouvez créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation. Pour plus d’informations sur la suppression des alertes, voir [Supprimer des alertes.](manage-alerts.md)
 
 Vous pouvez afficher la liste de toutes les règles de suppression et les gérer au même endroit. Vous pouvez également activer ou désactiver une règle de suppression d’alerte.
 
@@ -53,6 +53,6 @@ Vous pouvez afficher la liste de toutes les règles de suppression et les gérer
 
 2. Cliquez sur un nom de règle. Les détails de la règle s’affichent. Vous verrez les détails de la règle tels que l’état, l’étendue, l’action, le nombre d’alertes correspondantes, créés par et la date de création de la règle. Vous pouvez également afficher les alertes associées et les conditions de règle.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Gérer des alertes](manage-alerts.md)

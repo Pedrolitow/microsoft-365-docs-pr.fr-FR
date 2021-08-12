@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez la compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 631afa9379b3c902c140c25aee4de493e49ab47f
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: b44058c1825ab2f4daae49c409ae0116894253268c7918cc3a806ae6e685b797
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813425"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble de la compréhension de document dans Microsoft SharePoint Syntex
 

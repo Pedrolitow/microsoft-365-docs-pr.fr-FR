@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez les étapes à suivre pour baliser, puis travailler avec un exemple de formation de 40 fichiers pendant la phase de formation Pertinence de Advanced eDiscovery.
-ms.openlocfilehash: ae4a9f2e9fd87fdd0679bbfd8f287b6eaa98e41f
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: a510d331da39cfec7e861148a20200c6f3a1239f7ca0fc6387ffc7de56fa38fd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769219"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813598"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Formation sur le marquage et la pertinence dans Advanced eDiscovery
   
@@ -77,7 +77,7 @@ Une fois l’évaluation Advanced eDiscovery terminée et que vous entrez dans l
 
 La liste des exemples de fichiers vous permet d’afficher une liste des fichiers d’un exemple de formation et d’effectuer différentes actions sur un ou plusieurs fichiers. Dans **l’onglet** Balise de pertinence, le volet gauche des exemples de fichiers affiche une liste d’exemples de fichiers à traiter avec des processus d’évaluation, de formation, de rattrapage et \> d’incohérences.  
   
-1. Dans **l’onglet \> Balise de** pertinence, sélectionnez les exemples de fichiers dans la liste de listes de listes listes de gauche du volet. Les exemples de fichiers sont répertoriés dans le volet gauche.
+1. Dans **l’onglet \> Balise de** pertinence, sélectionnez les exemples de fichiers dans la liste de listes de listes de gauche du volet. Les exemples de fichiers sont répertoriés dans le volet gauche.
 
     ![Liste d’exemples de fichiers de balise de pertinence](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
@@ -87,7 +87,7 @@ La liste des exemples de fichiers vous permet d’afficher une liste des fichier
 
    - Un clic sur une ligne de fichier affiche son contenu dans le volet droit.
 
-   - Naviguez entre les fichiers de l’exemple actuel à l’aide des options de la barre de menus inférieure. En outre, des raccourcis clavier de navigation sont disponibles :
+   - Naviguez entre les fichiers de l’exemple actuel à l’aide des options de barre de menus inférieure. En outre, des raccourcis clavier de navigation sont disponibles :
   
      - Pour aller au premier fichier de l’exemple : `Shift + Ctrl + <`
 

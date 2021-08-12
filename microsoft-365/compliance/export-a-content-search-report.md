@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le Centre de sécurité & conformité dans Office 365, vous pouvez exporter un rapport de résultats de recherche. Le rapport contient un résumé des résultats de la recherche et un document contenant des informations détaillées sur chaque élément qui serait exporté.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 094e67812b45ab1544d629ba6ddabcd86c70c633
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 0eae866625c9fd2424263ebfa6bff03ecc5c09a820017ffde5dad6d66f1c2164
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819981"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 
@@ -69,7 +69,7 @@ Lorsque vous exportez un rapport, les fichiers de rapport sont téléchargés da
 
 La première étape consiste à préparer le rapport pour le téléchargement vers l’exportation de votre ordinateur. Lorsque vous exportez le rapport, les documents de rapport sont téléchargés vers une stockage Azure dans le cloud Microsoft.
   
-1. Dans le centre Microsoft 365 conformité, sélectionnez la recherche de contenu à partir de celle à partir de qui vous souhaitez exporter le rapport.
+1. Dans la Centre de conformité Microsoft 365, sélectionnez la recherche de contenu à partir de qui vous souhaitez exporter le rapport.
   
 2. Dans le menu **Actions** en bas de la page de menu volant de recherche, cliquez sur **Exporter le rapport.**
 
@@ -81,9 +81,9 @@ La première étape consiste à préparer le rapport pour le téléchargement ve
   
    ![Exporter les options de sortie](../media/ExportOutputOptions.png)
 
-    - **Tous les éléments, à l’exception** de ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons. Cette option exporte uniquement les informations sur les éléments indexés.
+    - Tous les éléments, à l’exception de ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été **indexés pour d’autres raisons.** Cette option exporte uniquement les informations sur les éléments indexés.
   
-    - Tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres raisons.** Cette option exporte des informations sur les éléments indexés et non indexés.
+    - Tous les éléments, y compris ceux qui ont un format non reconnu, sont chiffrés ou n’ont pas été **indexés pour d’autres raisons.** Cette option exporte des informations sur les éléments indexés et non indexés.
   
     - Seuls les éléments qui ont un format non reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres raisons.** Cette option exporte uniquement les informations sur les éléments nonndex.
 
@@ -105,7 +105,7 @@ Consultez la section suivante pour obtenir des instructions sur le téléchargem
 
 L’étape suivante consiste à télécharger le rapport à partir de la stockage Azure sur votre ordinateur local.
 
-1. Dans la page **recherche de** contenu dans le centre Microsoft 365 conformité, sélectionnez **l’onglet** Exportation
+1. Dans la page **recherche de** contenu de la Centre de conformité Microsoft 365, sélectionnez **l’onglet** Exportation
   
    Vous de devez peut-être cliquer sur **Actualiser** pour mettre à jour la liste des tâches d’exportation afin qu’elle affiche la tâche d’exportation que vous avez créée. Les travaux de rapport d’exportation ont le même nom que la recherche correspondante avec **_ReportsOnly** au nom de recherche.
   
@@ -140,7 +140,7 @@ Lorsque vous générez et exportez un rapport sur les résultats d’une recherc
 
    Si vous incluez des éléments nonndes lors de l’exportation du rapport, le nombre d’éléments nonndex est inclus dans le nombre total de résultats de recherche estimés et dans le nombre total de résultats de recherche téléchargés (si vous de étiez pour exporter les résultats de recherche) répertoriés dans le rapport récapitulatif d’exportation. En d’autres termes, le nombre total d’éléments à télécharger est égal au nombre total de résultats estimés et au nombre total d’éléments nonndex.
   
-- **Manifeste :** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Si vous avez activé l’option de dédoplication, les messages en double ne sont pas inclus dans le fichier manifeste.
+- **Manifeste :** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Si vous avez activé l’option de déplication, les messages en double ne sont pas inclus dans le fichier manifeste.
 
 - **Résultats :** Un Excel qui contient une ligne contenant des informations sur chaque élément indexé qui serait exporté avec les résultats de la recherche. Pour le courrier électronique, le journal des résultats contient des informations sur chaque message, y compris : 
 
@@ -167,4 +167,4 @@ Lorsque vous générez et exportez un rapport sur les résultats d’une recherc
   
 - **Trace.log :** journal de suivi qui contient des informations de journalisation détaillées sur le processus d’exportation et peut vous aider à découvrir les problèmes pendant l’exportation. Si vous ouvrez un ticket avec le Support Microsoft à propos d’un problème lié à l’exportation de rapports de recherche, vous pouvez être invité à fournir ce journal de suivi.
 
-- **Éléments nonndexés :** Un Excel qui contient des informations sur les éléments nonndex inclus dans les résultats de la recherche. Si vous n’incluez pas d’éléments nonndex lorsque vous générez le rapport de résultats de recherche, ce rapport sera toujours téléchargé, mais il sera vide.
+- **Éléments nonndexés :** Un Excel qui contient des informations sur les éléments non nonndes inclus dans les résultats de la recherche. Si vous n’incluez pas d’éléments nonndex lorsque vous générez le rapport de résultats de recherche, ce rapport sera toujours téléchargé, mais il sera vide.

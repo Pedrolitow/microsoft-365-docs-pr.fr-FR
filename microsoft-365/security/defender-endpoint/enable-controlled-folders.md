@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 286ccc9efa44d3afdf4e11c4d7652288fd693713
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 36bd812bfe41ca5113fe9ceb5710de3ded15210ca5e4eda4a9065fc1c1a11cdf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657290"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794113"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -81,7 +81,7 @@ Pour plus d’informations sur la désactivation de la fusion de listes locales,
 
 7.  Sélectionnez **la liste des applications qui ont accès aux dossiers** protégés et ajoutez les applications qui ont accès aux dossiers protégés.
 
-8.  Sélectionnez **Exclure les fichiers et les** chemins d’accès des règles de réduction de la surface d’attaque et ajoutez les fichiers et les chemins d’accès qui doivent être exclus des règles de réduction de la surface d’attaque.
+8.  Sélectionnez **Exclure des fichiers et des** chemins d’accès des règles de réduction de la surface d’attaque et ajoutez les fichiers et les chemins d’accès qui doivent être exclus des règles de réduction de la surface d’attaque.
 
 9.  Sélectionnez les **affectations de profil,** affectez à tous les utilisateurs **& tous** les appareils, puis sélectionnez **Enregistrer**.
 
@@ -100,13 +100,13 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 2. Sélectionnez **Home**  >  **Create Exploit Guard Policy**.
 
-3. Entrez un nom et une description, sélectionnez **Accès contrôlé aux** dossiers, puis sélectionnez **Suivant**.
+3. Entrez un nom et une description, sélectionnez **Accès contrôlé aux** dossiers, puis **sélectionnez Suivant**.
 
 4. Choisissez si bloquer ou auditer les modifications, autoriser d’autres applications ou ajouter d’autres dossiers, puis sélectionnez **Suivant**.
    > [!NOTE]
    > Wilcard est pris en charge pour les applications, mais pas pour les dossiers. Les sous-foldeurs ne sont pas protégés. Les applications autorisées continueront à déclencher des événements jusqu’à leur redémarrage.
 
-5. Examinez les paramètres et **sélectionnez Suivant** pour créer la stratégie.
+5. Examinez les paramètres et sélectionnez **Suivant** pour créer la stratégie.
 
 6. Une fois la stratégie créée, **fermez**.
 
@@ -120,8 +120,8 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 4. Double-cliquez sur **le paramètre Configurer l’accès contrôlé aux** dossiers et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
     * **Activer** : les applications malveillantes et suspectes ne seront pas autorisées à apporter des modifications aux fichiers des dossiers protégés. Une notification sera fournie dans le journal Windows événements.
-    * **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers dans les dossiers protégés.
-    * **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal Windows événements dans lequel vous pourrez évaluer l’impact sur votre organisation.
+    * **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers des dossiers protégés.
+    * **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal Windows événements dans lequel vous pouvez évaluer l’impact sur votre organisation.
     * **Bloquer la modification du disque** uniquement : les tentatives d’écriture d’applications nontrues dans les secteurs de disque sont enregistrées dans Windows journal des événements. Ces journaux se trouvent dans les **Journaux** des applications et des services > Microsoft > Windows > Windows Defender > Operational > ID 1123.
     * **Auditer** la modification du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés sont **enregistrées** dans le journal des événements Windows (sous Journaux des applications et des services  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >  **Operational**  >  **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
 

@@ -20,12 +20,12 @@ ms.custom: ''
 localization_priority: Priority
 recommendations: false
 description: Découvrez les options pour limiter ou désactiver le partage dans Microsoft 365.
-ms.openlocfilehash: f237df883bb401342a3a5c93432beeb5028cfce6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fbbf5630938c89d71a0b09c21cb1f1b2360faa510109796b44b354daa4b878cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539190"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827933"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limiter le partage dans Microsoft 365
 

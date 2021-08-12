@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a7dc187409182cfc9db58444f5e798669ea02804
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 159ab57dd1a2358fc73bae289d0e8de31f8747985bcf48bff10ddaecd20daab5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796729"
 ---
 # <a name="payment-information-for-lithuania"></a>Informations de paiement pour la Lituanie
 
