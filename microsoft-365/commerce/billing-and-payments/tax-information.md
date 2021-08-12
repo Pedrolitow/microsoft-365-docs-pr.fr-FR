@@ -21,12 +21,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 2ea5db8cbd68a6c0dd600730fac408dc4bb75e2a
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 2327e889bbe0d4101f6f92b003dbee21902e9a403ec74c2e8527227bd6074766
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664039"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797121"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
@@ -110,9 +110,9 @@ Lorsque vous achetez Microsoft 365 services dans la région EMEA, cet achat peut
 
 - Pour les clients de l’UE, avant de pouvoir valider votre numéro de TVA, celui-ci doit être disponible pour vérification dans le système d’informations sur la TVA Exchange (VIES). Si votre numéro de TVA ne peut pas être vérifié, contactez votre autorité fiscale locale.
 
-Vous pouvez être éligible à la TVA avec un taux de tva nul si :
+Vous pouvez bénéficier d’une tva à taux zéro si :
   
-- **Vous êtes dans un État membre de l’Union européenne en dehors de l’Irlande :** Vous pouvez fournir votre numéro de TVA local valide. Cela permet à Microsoft Ireland Operations Ltd. de tvar la transaction. Toutefois, vous pouvez avoir une obligation de comptabilité de TVA locale. Si vous avez des préoccupations, consultez vos conseillers fiscaux. Pour obtenir des instructions, voir [Ajouter votre numéro de TVA.](#add-your-vat-id)
+- Vous êtes dans un État membre **de l’Union européenne en dehors de l’Irlande :** Vous pouvez fournir votre numéro de TVA local valide. Cela permet à Microsoft Ireland Operations Ltd. de tvar la transaction. Toutefois, vous pouvez avoir une obligation de comptabilité de TVA locale. Si vous avez des préoccupations, consultez vos conseillers fiscaux. Pour obtenir des instructions, voir [Ajouter votre numéro de TVA.](#add-your-vat-id)
 
 - **Vous êtes en Irlande et vous avez la certification d’exonération de TVA valide :** Microsoft Ireland Operations Ltd. peut être autorisé à exempter la transaction de la TVA. Si ce n’est pas le cas, Microsoft Ireland Operations Ltd. applique le taux actuel de TVA en Irlande, que vous fournissiez ou non un numéro de TVA.
 
@@ -120,7 +120,7 @@ Vous pouvez être éligible à la TVA avec un taux de tva nul si :
 
 ## <a name="asia-pacific-countries-apac"></a>Pays d'Asie-Pacifique (APAC)
 
-Si vous êtes facturé par le bureau des ventes régionales de Microsoft, « Microsoft Regional Sales Pte. Ltd. » apparaît sur votre facture et vous pouvez être facturé pour toute valeur ajoutée applicable, ventes ou taxes similaires.
+Si vous êtes facturé par le bureau des ventes régionales de Microsoft, « Microsoft Regional Sales Pte. Ltd. » apparaît sur votre facture et vous pouvez être facturé pour toute valeur ajoutée, ventes ou taxes similaires applicables.
   
 Si vous êtes facturé à partir de l’un des emplacements suivants, la taxe locale actuelle est appliquée. L’emplacement est inclus [sur votre facture](view-your-bill-or-invoice.md):
   
@@ -156,7 +156,7 @@ Par exemple :
 
 >(1,29 $ X 0,095) X 100 = 12,25 $
 
-## <a name="apply-for-tax-exempt-status"></a>Demander l’état d’exonération fiscale
+## <a name="apply-for-tax-exempt-status"></a>Demander l’exonération fiscale
 
 Si vous êtes éligible à l’exonération fiscale sur votre marché, démarrez une demande de [service](../../business-video/get-help-support.md) pour établir le statut d’exonération fiscale pour votre organisation.
 
@@ -170,7 +170,7 @@ Si vous êtes éligible à l’exonération fiscale sur votre marché, démarrez
 | États-Unis | Certificat d’exonération fiscale |
 | Porto Rico | Certificado de Compras Exentas |
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
   
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
 [Comprendre votre facture](understand-your-invoice.md) (article)

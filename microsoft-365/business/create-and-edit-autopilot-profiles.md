@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Apprenez à créer un profil AutoPilot et à l’appliquer à un appareil, ainsi qu’à modifier ou supprimer un profil ou à supprimer un profil d’un appareil.
-ms.openlocfilehash: 414243da88fb6f39f8e6067d19d49ffe955f725f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d2a3038346b7879006dc2eb50ebe2e70cc6fae92c020a38465cec9d468c638b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580251"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797211"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils AutoPilot
 
@@ -40,7 +40,7 @@ ms.locfileid: "51580251"
 
 Un profil s'applique à un appareil ou à un groupe d'appareils,
   
-1. Dans le centre Microsoft 365'administration, sélectionnez **Appareils** \> **AutoPilot**.
+1. In the Centre d’administration Microsoft 365, choose **Devices** \> **AutoPilot**.
   
 2. Dans la page **AutoPilot,** sélectionnez **l’onglet Profils** \> **Créer un profil.**
     
@@ -74,7 +74,7 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Profils**. 
     
-2. Cochez la case en regard d’un nom d’appareil, puis, dans le panneau Profil, **sélectionnez Supprimer enregistrer le**  \> **profil.**
+2. Cochez la case en regard d’un nom d’appareil, puis, dans le panneau Profil,  **sélectionnez Supprimer enregistrer le** \> **profil.**
     
     Lorsque vous supprimez un profil, il est supprimé de l'appareil ou du groupe d'appareils auquel il a été affecté.
     

@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation en obtenant le rapport Microsoft Teams’utilisation des applications à partir Microsoft 365 rapports.
-ms.openlocfilehash: 096954ad246f3b10369dfbf683d04b6c81950b5e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6691520f7fc2f05f58d83ea97ab07f1f0bfeb144fc6b6bd9036e0773be10bb78
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797773"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation Microsoft Teams appareil
 
 Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Utilisation des applications Microsoft Teams, vous pouvez obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation.
   
 > [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.  
+> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Accéder au rapport Utilisation des applications Microsoft Teams
 
@@ -44,9 +44,9 @@ Le tableau de bord Microsoft 365 **rapports de** gestion des données vous prés
 
 Vous pouvez afficher l’utilisation de l’appareil dans Teams rapport en choisissant l’onglet **Utilisation de l’appareil.**<br/>![Microsoft 365 rapports : Microsoft Teams’utilisation de l’appareil.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
 
-Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Teams rapport d’appareil de l’utilisateur : choisir des colonnes](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Teams rapport d’appareil de l’utilisateur : choisir des colonnes](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
 Le rapport **Utilisation de Microsoft Teams sur des appareils** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   

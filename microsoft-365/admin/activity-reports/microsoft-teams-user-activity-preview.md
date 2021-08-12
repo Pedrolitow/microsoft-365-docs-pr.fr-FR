@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir le rapport d Microsoft Teams’activité de l’utilisateur et obtenir des informations sur l Teams de votre organisation.
-ms.openlocfilehash: a4f8cd995d1559da3846fbb38cc5a9441358da72
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 945cc48b442a521a0e755e5bebf4b5a36b7eccfb696b3506a793eba0ae5de647
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797737"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité des utilisateurs Microsoft Teams
 
@@ -40,7 +40,7 @@ Le tableau de bord Microsoft 365 **rapports de** gestion des données vous prés
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpréter le rapport Activité de l'utilisateur sur Microsoft Teams
 
-Vous pouvez afficher l’activité de l’utilisateur dans Teams rapport en choisissant **l’onglet Activité de l’utilisateur.** <br/>![Microsoft 365 rapports : Microsoft Teams l’activité de l’utilisateur.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
+Vous pouvez afficher l’activité de l’utilisateur dans Teams rapport en choisissant l’onglet **Activité de l’utilisateur.** <br/>![Microsoft 365 rapports : Microsoft Teams l’activité de l’utilisateur.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Teams user activity report - choose columns](../../media/6d3c013e-2c5e-4d66-bb41-998aa4bd1c20.png)
 
@@ -68,6 +68,6 @@ Pour garantir la qualité des données, nous apportons quotidiennement des véri
 |Participations prévues à une seule fois  <br/> |Nombre de réunions prévues à une seule heure pour un utilisateur au cours de la période spécifiée.  <br/> |
 |Réunions ayant participé à des réunions périodiques  <br/> |Nombre de réunions périodiques pendant la période spécifiée.  <br/> |
 |Est titulaire d’une licence  <br/> |Sélectionné si l’utilisateur est titulaire d’une licence d’utilisation Teams. <br/>|
-|Autre activité  <br/>|L’utilisateur est actif, mais a effectué d’autres activités que les types d’action exposés proposés dans le rapport (envoi ou réponse aux messages de canal et aux messages de conversation, planification ou participation à des appels et réunions en une fois). Exemples d’actions : lorsqu’un utilisateur modifie l’état Teams ou le message d’état Teams ou ouvre un billet de message de canal, mais ne répond pas.  <br/>|
-|réunions non classifiées <br/>|Celui qui ne peut pas être classé comme planning, périodique ou ad hoc. Ce nombre est court et ne peut principalement pas être identifié en raison d’informations de télémétrie falsifiées. |
+|Autre activité  <br/>|L’utilisateur est actif, mais a effectué d’autres activités que les types d’actions exposés proposés dans le rapport (envoi ou réponse aux messages de canal et aux messages de conversation, planification ou participation à des appels et réunions en une fois). Exemples d’actions : lorsqu’un utilisateur modifie l’état Teams ou le message d’état Teams ou ouvre un billet de message de canal, mais ne répond pas.  <br/>|
+|réunions non classifiées <br/>|Celui qui ne peut pas être classé comme planning, périodique ou ad hoc. Leur nombre est court et ne peuvent principalement pas être identifiés en raison d’informations de télémétrie falsifiées. |
 |||

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c3da180bbcedeb9b56cbc028294d7b1d3b7846b3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9154d977830c311401f7b81146aaa43c2138e38ec1424aa66940024a4525b672
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797109"
 ---
 # <a name="payment-information-for-bangladesh"></a>Informations de paiement pour le Bangladesh
 

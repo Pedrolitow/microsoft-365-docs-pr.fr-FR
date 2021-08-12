@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1fdd37e75f3d7ee77f1f702303024a3345bc1d50
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 0e5e177bebfed1fe5c181e14267e418a1aeb726e4627afc9b2ab32bb1f8264b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656366"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806759"
 ---
 # <a name="manage-automation-file-uploads"></a>Gérer les chargements du fichier d’automatisation
 
@@ -37,7 +37,7 @@ Activez la fonctionnalité d’analyse de contenu afin que certains fichiers et 
 
 Identifiez les fichiers et les pièces jointes en spécifiant les noms d’extension de fichier et les noms d’extension de pièce jointe de courrier électronique. 
 
-Par exemple, si vous ajoutez *exe* et *bat* en tant que noms d’extension de fichier ou de pièce jointe, tous les fichiers ou pièces jointes avec ces extensions seront automatiquement envoyés dans le cloud pour une inspection supplémentaire au cours de l’examen automatisé. 
+Par exemple, si vous ajoutez *exe* et *bat* en tant que noms d’extension de fichier ou de pièce jointe, tous les fichiers ou pièces jointes avec ces extensions seront automatiquement envoyés dans le cloud pour une inspection supplémentaire pendant l’examen automatisé. 
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>Ajoutez des noms d’extension de fichier et des noms d’extension de pièce jointe.
 
@@ -49,5 +49,5 @@ Par exemple, si vous ajoutez *exe* et *bat* en tant que noms d’extension de fi
    - **Noms d’extension de fichier** : les fichiers suspects, à l’exception des pièces jointes, seront envoyés pour inspection supplémentaire
   
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Gérer les exclusions du dossier d’automatisation](manage-automation-folder-exclusions.md)

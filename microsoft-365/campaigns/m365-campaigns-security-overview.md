@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment protéger votre campagne ou entreprise en augmentant votre sécurité avec Microsoft 365.
-ms.openlocfilehash: d2486f7160bef57a91d76fba756ff75ba319b8fa
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+description: Découvrez comment protéger votre campagne ou votre entreprise en augmentant votre sécurité avec Microsoft 365.
+ms.openlocfilehash: 4c520e0557db72ea742c81c578050a87faab4c7d35729e05ed85325cb25ecc0f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797157"
 ---
 # <a name="bump-up-security-protection-for-your-campaign-or-business"></a>Protection renforcée de la sécurité pour votre campagne ou votre entreprise
 
 
-## <a name="overview"></a>Vue d’ensemble 
+## <a name="overview"></a>Présentation 
 Regardez cette vidéo pour voir comment protéger votre campagne ou votre entreprise :
 
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 21a62e8e58d201515bfe3df18d4aff5a423b0813
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e469bc9d9ce3de8cd1425231f4b4b90247da2317a6ffc90ded86f5e4880563cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806747"
 ---
 # <a name="manage-automation-folder-exclusions"></a>Gérer les exclusions du dossier d’automatisation 
 
@@ -59,7 +59,7 @@ Vous pouvez spécifier les noms de fichiers que vous souhaitez exclure dans un r
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>Ajouter une exclusion de dossier d’automatisation
-1. Dans le volet de navigation, sélectionnez **Paramètres** des exclusions de  >  **dossiers Endpoints**  >  **Rules**  >  **Automation.**  
+1. Dans le volet de navigation, **sélectionnez** Paramètres exclusions de  >  **dossiers Endpoints**  >  **Rules**  >  **Automation.**  
 
 2. Cliquez **sur Exclusion de nouveau dossier.**  
 
@@ -70,23 +70,23 @@ Vous pouvez spécifier les noms de fichiers que vous souhaitez exclure dans un r
     - Noms de fichiers
     - Description
 
-4. Cliquez sur **Enregistrer**.
+4. Cliquez sur **Save (Enregistrer)**.
 
 >[!NOTE]
 > Les commandes Live Response pour collecter ou examiner les fichiers exclus échouent avec l’erreur : « Le fichier est exclu ». En outre, les examens automatisés ignorent les éléments exclus.
 
 ## <a name="edit-an-automation-folder-exclusion"></a>Modifier une exclusion de dossier d’automatisation 
-1. Dans le volet de navigation, sélectionnez **Paramètres** des exclusions de  >  **dossiers Endpoints**  >  **Rules**  >  **Automation.** 
+1. Dans le volet de navigation, **sélectionnez** Paramètres exclusions de  >  **dossiers Endpoints**  >  **Rules**  >  **Automation.** 
 
 2. Cliquez **sur Modifier** sur l’exclusion de dossier.  
 
 3. Mettez à jour les détails de la règle et cliquez sur **Enregistrer.**
 
 ## <a name="remove-an-automation-folder-exclusion"></a>Supprimer une exclusion de dossier d’automatisation 
-1. Dans le volet de navigation, sélectionnez **Paramètres** des exclusions de  >  **dossiers Endpoints**  >  **Rules**  >  **Automation.**  
+1. Dans le volet de navigation, **sélectionnez** Paramètres exclusions de  >  **dossiers Endpoints**  >  **Rules**  >  **Automation.**  
 2. Cliquez sur **Supprimer l’exclusion.** 
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Gérer les listes d’automatisation autorisées/bloquées](manage-indicators.md)
 - [Gérer les chargements du fichier d’automatisation](manage-automation-file-uploads.md)

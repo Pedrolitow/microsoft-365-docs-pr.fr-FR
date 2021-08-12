@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 04/02/2021
-ms.openlocfilehash: 73acb6a12499953e56eda7d4274160c6e79ee440
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 1d820f2d44719caf254b07aee279f1b8121106009e014afddd8fc121bd5d1cc6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331981"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797133"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Comment payer votre abonnement avec un profil de facturation
 
@@ -219,7 +219,7 @@ Si votre profil de facturation est dosé par une facture, vous recevez un e-mail
 
 ## <a name="can-i-pay-my-invoice-online"></a>Puis-je payer ma facture en ligne ?
 
-Si la facturation périodique est désactivée pour votre profil de facturation, vous pouvez utiliser une carte de crédit pour payer votre facture en ligne. Pour effectuer un paiement, utilisez le bouton Payer **maintenant** sur votre facture dans Microsoft 365'administration. Pour trouver votre facture, [consultez Consulter votre facture.](view-your-bill-or-invoice.md)
+Si la facturation périodique est désactivée pour votre profil de facturation, vous pouvez utiliser une carte de crédit pour payer votre facture en ligne. Pour effectuer un paiement, utilisez le **bouton Payer maintenant** sur votre facture dans le Centre d’administration Microsoft 365. Pour trouver votre facture, [consultez Consulter votre facture.](view-your-bill-or-invoice.md)
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Puis-je changer le mode de paiement actuel pour régler par facture ?
 
