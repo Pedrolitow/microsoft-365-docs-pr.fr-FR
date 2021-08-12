@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 81b4ba1982f44a4161b187bfd9a57832e0b3bcb5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 023eb7a08180f20f108a7a1ba686abbc4f13123a9ff56f10ef510c1802812498
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793561"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -37,7 +37,7 @@ Microsoft s’engage à vous fournir les informations et les contrôles dont vou
 
 Cette rubrique décrit les contrôles de confidentialité disponibles dans le produit, comment gérer ces contrôles avec des paramètres de stratégie et plus d’informations sur les événements de données collectés.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour Point de terminaison sur Linux
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour Endpoint sur Linux
 
 Cette section décrit les contrôles de confidentialité pour les différents types de données collectées par Defender pour Endpoint sur Linux.
 
@@ -99,11 +99,11 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 | app_version             | Version du defender pour point de terminaison sur l’application Linux. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
 | sig_version             | Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’elle puisse être correctement hiérarchisées. |
 | supported_compressions  | Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application. |
-| release_ring            | Sonnerie à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé. |
+| release_ring            | Sonner à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé. |
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
 
-**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la mise à jour de Defender for Endpoint sur l’appareil sur laquelle il est installé.
+**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et les résultats attendus de Defender for Endpoint sur l’appareil sur qui il est installé.
 
 Les données de diagnostic requises permettent d’identifier les problèmes avec Microsoft Defender pour point de terminaison qui peuvent être liés à une configuration d’appareil ou de logiciel. Par exemple, il peut aider à déterminer si une fonctionnalité De Defender pour point de terminaison se crashe plus fréquemment sur une version de système d’exploitation particulière, avec les fonctionnalités nouvellement introduites ou lorsque certaines fonctionnalités de Defender pour le point de terminaison sont désactivées. Les données de diagnostic requises aident Microsoft à détecter, diagnostiquer et résoudre ces problèmes plus rapidement afin de réduire l’impact sur les utilisateurs ou les organisations.
 
@@ -135,7 +135,7 @@ Les champs suivants sont affichés :
 | cloud_service.service_uri                           | URI utilisé pour communiquer avec le cloud. |
 | cloud_service.diagnostic_level                      | Niveau de diagnostic de l’appareil (obligatoire, facultatif). |
 | cloud_service.automatic_sample_submission           | Niveau d’envoi automatique d’échantillons de l’appareil (aucun, sécurisé, tout). |
-| cloud_service.automatic_definition_update_enabled   | Si la mise à jour automatique des définitions est ou non allumée. |
+| cloud_service.automatic_definition_update_enabled   | Si la mise à jour automatique des définitions est ou non. |
 | edr.early_preview                                   | Si l’appareil doit s’PEPT fonctionnalités de prévisualisation anticipée. |
 | edr.group_id                                        | Identificateur de groupe utilisé par le composant de détection et de réponse. |
 | edr.tags                                            | Balises définies par l’utilisateur. |
@@ -207,7 +207,7 @@ Les champs suivants sont affichés :
 | antivirus_engine.exclusions[].name                 | Nom du fichier exclu de l’analyse. |
 | antivirus_engine.scan_cache_maximum                | Taille du cache du produit. |
 | antivirus_engine.maximum_scan_threads              | Nombre maximal de threads utilisés pour l’analyse. |
-| antivirus_engine.threat_restoration_exclusion_time | Délai d’délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté. |
+| antivirus_engine.threat_restoration_exclusion_time | Délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté. |
 | antivirus_engine.threat_type_settings              | Configuration de la façon dont les différents types de menaces sont gérés par le produit. |
 | filesystem_scanner.full_scan_directory             | Répertoire d’analyse complet. |
 | filesystem_scanner.quick_scan_directories          | Liste des répertoires utilisés dans l’analyse rapide. |

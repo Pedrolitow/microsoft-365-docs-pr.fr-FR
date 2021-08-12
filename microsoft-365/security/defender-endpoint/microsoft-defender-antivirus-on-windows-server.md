@@ -14,19 +14,19 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/13/2021
-ms.openlocfilehash: 1a1083d15698eb5bbdf2f6080b152b6f326c689a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 08/05/2021
+ms.openlocfilehash: 851ce116f878ec77aa55f789748f665384adb26b080f215887c32ccb4fd541bd
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539274"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520578"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus Microsoft Defender sur Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -51,7 +51,7 @@ Le processus de configuration et d’exécution de Antivirus Microsoft Defender 
 4. [Mettez à jour votre intelligence de sécurité anti-programme malveillant.](#update-antimalware-security-intelligence)
 5. (Selon les besoins) [Envoyer des exemples.](#submit-samples)
 6. (Selon les besoins) [Configurer les exclusions automatiques.](#configure-automatic-exclusions)
-7. (Uniquement si nécessaire) [Définissez Antivirus Microsoft Defender en mode passif.](#need-to-set-microsoft-defender-antivirus-to-passive-mode)
+7. (Uniquement si nécessaire) Définissez [Windows server en mode passif.](#passive-mode-and-windows-server)
 
 ## <a name="enable-the-user-interface-on-windows-server"></a>Activer l’interface utilisateur sur Windows Server
 
@@ -85,9 +85,9 @@ Si vous devez installer ou réinstaller Antivirus Microsoft Defender sur Windows
 
 ### <a name="use-the-add-roles-and-features-wizard-to-install-microsoft-defender-antivirus"></a>Utiliser l’Assistant Ajout de rôles et de fonctionnalités pour installer Antivirus Microsoft Defender
 
-1. [Reportez-vous à cet article](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard)et utilisez l’Assistant Ajout **de rôles et de fonctionnalités.**
+1. Reportez-vous [à cet article](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard)et utilisez l’Assistant Ajout de **rôles et de fonctionnalités.**
 
-2. Lorsque vous arrivez à l’étape **Fonctionnalités** de l’Assistant, sélectionnez Antivirus Microsoft Defender option. Sélectionnez également **l’interface graphique graphique Windows Defender** option.
+2. Lorsque vous arrivez à l’étape **Fonctionnalités** de l’Assistant, sélectionnez Antivirus Microsoft Defender option. Sélectionnez également **l’interface graphique graphique pour Windows Defender** option.
 
 ### <a name="use-powershell-to-install-microsoft-defender-antivirus"></a>Utiliser PowerShell pour installer des Antivirus Microsoft Defender
 
@@ -131,7 +131,7 @@ Par défaut, Windows Update ne télécharge pas et n’installe pas automatiquem
 
 |Méthode  |Description  |
 |---------|---------|
-|**Windows jour dans** le Panneau de contrôle     | **L’installation des mises à** jour entraîne automatiquement l’installation automatique de toutes les mises à jour, y Windows Defender mises à jour de l’intelligence de sécurité. <p>**Téléchargez les** mises à jour, mais laissez-moi choisir de les installer, ce qui permet à Windows Defender de télécharger et d’installer automatiquement les mises à jour security intelligence, mais les autres mises à jour ne sont pas installées automatiquement.       |
+|**Windows jour dans** le Panneau de contrôle     | **L’installation des mises à** jour entraîne automatiquement l’installation automatique de toutes les mises à jour, Windows Defender mises à jour d’informations de sécurité. <p>**Téléchargez les** mises à jour, mais laissez-moi choisir de les installer, ce qui permet à Windows Defender de télécharger et d’installer automatiquement les mises à jour security intelligence, mais les autres mises à jour ne sont pas installées automatiquement.       |
 |**Stratégie de groupe**     | Vous pouvez configurer et gérer Windows Update en utilisant les paramètres disponibles dans la stratégie de groupe, dans le chemin d’accès suivant : **Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates**         |
 |Clé de Registre **AUOptions**     | Les deux valeurs suivantes permettent à Windows Update de télécharger et d’installer automatiquement les mises à jour security intelligence : <p>**4**  -  **Installez automatiquement les mises à jour.** Cette valeur entraîne l’installation automatique de toutes les mises à jour, y Windows Defender mises à jour de l’intelligence de sécurité. <p>**3**  -  **Téléchargez les mises à jour, mais laissez-moi choisir s’il faut les installer.**  Cette valeur permet Windows Defender télécharger et installer automatiquement les mises à jour security intelligence, mais les autres mises à jour ne sont pas installées automatiquement.         |
 
@@ -147,7 +147,7 @@ Le tableau suivant répertorie les services pour Antivirus Microsoft Defender et
 |--------|---------|--------|
 |Windows Defender Service (WinDefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|Il s’agit du service Antivirus Microsoft Defender principal qui doit être en cours d’exécution en permanence.|
 |Rapport d'erreurs Windows Service (Wersvc)|`C:\WINDOWS\System32\svchost.exe -k WerSvcGroup`|Ce service renvoie des rapports d’erreur à Microsoft.|
-|Pare-feu Windows Defender (MpsSvc)|`C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork`|Nous vous recommandons de laisser le service Pare-feu Windows Defender activé.|
+|Windows Defender Pare-feu (MpsSvc)|`C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork`|Nous vous recommandons de laisser le service Windows Defender pare-feu activé.|
 |Windows Update (Wuauserv)|`C:\WINDOWS\system32\svchost.exe -k netsvcs`|Windows Une mise à jour est nécessaire pour obtenir des mises à jour de l’intelligence de sécurité et des mises à jour du moteur anti-programme malveillant|
 
 ## <a name="submit-samples"></a>Envoyer des exemples
@@ -167,7 +167,7 @@ Pour activer la soumission automatique d’échantillons, démarrez une console 
 
 |Paramètre  |Description  |
 |---------|---------|
-|**0**  -  **Toujours invite**     |Le service Antivirus Microsoft Defender vous invite à confirmer l’envoi de tous les fichiers requis. Il s’agit du paramètre par Antivirus Microsoft Defender, mais il n’est pas recommandé pour les installations sur Windows Server 2016 ou 2019 sans interface graphique graphique.         |
+|**0**  -  **Toujours invite**     |Le service Antivirus Microsoft Defender vous invite à confirmer l’envoi de tous les fichiers requis. Il s’agit du paramètre par défaut pour Antivirus Microsoft Defender, mais il n’est pas recommandé pour les installations sur Windows Server 2016 ou 2019 sans interface graphique graphique.         |
 |**1**   -  **Envoyer automatiquement des échantillons sécurisés**     |Le service Antivirus Microsoft Defender envoie tous les fichiers marqués comme « sûrs » et demande le reste des fichiers.         |
 |**2**  -  **Ne jamais envoyer**      |Le service Antivirus Microsoft Defender n’invite pas et n’envoie aucun fichier.         |
 |**3**  -  **Envoyer tous les échantillons automatiquement**     |Le service Antivirus Microsoft Defender envoie tous les fichiers sans invite de confirmation.         |
@@ -178,23 +178,27 @@ Pour garantir la sécurité et les performances, certaines exclusions sont autom
 
 Voir [Configurer les exclusions dans Antivirus Microsoft Defender sur Windows Server.](configure-server-exclusions-microsoft-defender-antivirus.md) 
 
-## <a name="need-to-set-microsoft-defender-antivirus-to-passive-mode"></a>Vous devez définir Antivirus Microsoft Defender en mode passif ?
+## <a name="passive-mode-and-windows-server"></a>Mode passif et serveur Windows serveur
 
 Si vous utilisez un produit antivirus non Microsoft comme solution antivirus principale sur Windows Server, vous devez définir Antivirus Microsoft Defender sur le mode passif ou désactivé.
 
-- Sur Windows Server, version 1803 ou plus récente, ou Windows Server 2019, vous pouvez définir Antivirus Microsoft Defender en mode passif.  
+- Sur Windows Server, version 1803 ou plus récente, ou Windows Server 2019, vous pouvez définir Antivirus Microsoft Defender en mode passif.  Consultez les sections suivantes :
+   
+   - [Définir Antivirus Microsoft Defender mode passif à l’aide d’une clé de Registre](#set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key)
+   - [Désactiver la Antivirus Microsoft Defender l’assistant Suppression de rôles et de fonctionnalités](#disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard)
+   - [Désactiver l’interface Antivirus Microsoft Defender’utilisateur à l’aide de PowerShell](#turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell) 
 
-- Sur Windows Server 2016, Antivirus Microsoft Defender n’est pas pris en charge avec un produit antivirus/anti-programme malveillant non-Microsoft. Dans ce cas, vous devez définir Antivirus Microsoft Defender le mode désactivé.
+- Sur Windows Server 2016, Antivirus Microsoft Defender n’est pas pris en charge avec un produit antivirus/anti-programme malveillant non-Microsoft. Dans ce cas, vous devez définir Antivirus Microsoft Defender le mode désactivé. Voir [Désinstallation ou désactivation des Antivirus Microsoft Defender sur Windows Server 2016](#uninstalling-or-disabling-microsoft-defender-antivirus-on-windows-server-2016)
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>Définir Antivirus Microsoft Defender mode passif à l’aide d’une clé de Registre
 
 Si vous utilisez Windows Server, version 1803 ou Windows Server 2019, vous pouvez définir Antivirus Microsoft Defender en mode passif en réglant la clé de Registre suivante :
 - Chemin d’accès : `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Nom : `ForceDefenderPassiveMode`
+- Nom : `ForceDefenderPassiveMode`
 - Type : `REG_DWORD`
 - Valeur : `1`
 
-### <a name="disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard"></a>Désactiver la Antivirus Microsoft Defender à l’aide de l’Assistant Suppression de rôles et de fonctionnalités
+### <a name="disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard"></a>Désactiver la Antivirus Microsoft Defender l’assistant Suppression de rôles et de fonctionnalités
 
 1. Voir [Installer ou désinstaller des rôles, des services de rôles](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard)ou des fonctionnalités, et utiliser l’Assistant Suppression de rôles **et de fonctionnalités.** 
 
@@ -212,26 +216,18 @@ Pour désactiver l’interface Antivirus Microsoft Defender graphique graphique,
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-### <a name="are-you-using-windows-server-2016"></a>Utilisez-vous Windows Server 2016 ?
+### <a name="uninstalling-or-disabling-microsoft-defender-antivirus-on-windows-server-2016"></a>Désinstallation ou désactivation de Antivirus Microsoft Defender sur Windows Server 2016
 
-Si vous utilisez Windows Server 2016 et un logiciel anti-programme malveillant/antivirus tiers qui n’est pas proposé ou développé par Microsoft, vous devez désactiver/désinstaller Antivirus Microsoft Defender. 
+Si vous utilisez Windows Server 2016 un logiciel anti-programme malveillant/antivirus non Microsoft, vous devez désactiver ou désinstaller Antivirus Microsoft Defender. Vous pouvez utiliser l’une des méthodes ci-après :
 
-> [!NOTE]
-> Vous ne pouvez pas désinstaller Sécurité Windows’application, mais vous pouvez désactiver l’interface avec ces instructions.
-
-L’cmdlet PowerShell suivante désinstalle Antivirus Microsoft Defender sur Windows Server 2016 :
-
-```PowerShell
-Uninstall-WindowsFeature -Name Windows-Defender
-```
-
-Pour désactiver la Antivirus Microsoft Defender sur Windows Server 2016, utilisez l’cmdlet PowerShell suivante :
-
-```PowerShell
-Set-MpPreference -DisableRealtimeMonitoring $true
-```
+| Procedure  | Description  |
+|---------|---------|
+| Désactiver l’Antivirus Microsoft Defender à l’aide de la stratégie de groupe     | Dans votre Éditeur de stratégie de groupe local, accédez **à Windows Defender,** puis sélectionnez Désactiver **Antivirus Windows Defender**.        |
+| Désactiver la Antivirus Microsoft Defender à l’aide d’une clé de Registre     | Pour utiliser la clé de Registre [DisableAntiSpyware,](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) accédez à , et définissez ou créez une entrée `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` DWORD appelée `DisableAntiSpyware` . Définissez sa valeur sur (qui définit la valeur de la clé de `1` Registre sur *true*).         |
+| Désactiver la Antivirus Microsoft Defender à l’aide de PowerShell | Utilisez l’cmdlet PowerShell suivante : `Set-MpPreference -DisableRealtimeMonitoring $true` |
+| Désinstaller Antivirus Microsoft Defender à l’aide de PowerShell | Utilisez l’cmdlet PowerShell suivante : `Uninstall-WindowsFeature -Name Windows-Defender` |
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Antivirus Microsoft Defender compatibilité](microsoft-defender-antivirus-compatibility.md)

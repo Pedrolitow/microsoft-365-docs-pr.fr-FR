@@ -16,12 +16,12 @@ ms.topic: conceptual
 ms.author: macapara
 ms.date: 09/07/2018
 ms.technology: mde
-ms.openlocfilehash: 0aefbc0ed39a7749ad5456b1bee4be80905f8e03
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b572f3bbd01af437abcb82052b9da8744980fb1ec91d5286abc28f0f890a7625
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649970"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845062"
 ---
 # <a name="hardware-based-isolation-in-windows-10"></a>Isolation basée sur le matériel dans Windows 10
 

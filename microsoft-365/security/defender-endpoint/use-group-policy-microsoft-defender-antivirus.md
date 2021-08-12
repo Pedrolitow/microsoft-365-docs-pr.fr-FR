@@ -16,19 +16,19 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: ff5a2277edc820ee03cb7c545595bd456aed27d86e41723347cce8d80d25af19
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844894"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -90,11 +90,11 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 | Protection en temps réel | Activer l’analyse du comportement | [Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | Protection en temps réel | Activer l’analyse des processus chaque fois que la protection en temps réel est activée | [Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | Protection en temps réel | Activer les notifications d’écriture de volume brut | [Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Protection en temps réel | Configurer la surveillance de l’activité des fichiers et des programmes entrants et sortants | [Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protection en temps réel | Configurer la surveillance pour l’activité des fichiers et des programmes entrants et sortants | [Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | Correction | Configurer le remplacement de paramètre local pour l’heure de la journée afin d’exécuter une analyse complète programmée pour terminer la correction | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Correction | Spécifier le jour de la semaine pour exécuter une analyse complète programmée afin de terminer la correction | [Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Correction | Spécifier l’heure de la journée pour exécuter une analyse complète programmée afin de terminer la correction | [Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Reporting | Désactiver les notifications améliorées | [Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
+| Rapports | Désactiver les notifications améliorées | [Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
 | Root | Désactiver la Antivirus Microsoft Defender | Non utilisé (ce paramètre  doit être configuré sur Non configuré pour s’assurer que les applications antivirus tierces installées fonctionnent correctement)
 | Root | Définir des adresses pour contourner le serveur proxy | Inutilisé |
 | Root | Définir la connexion automatique du proxy (.pac) pour la connexion au réseau | Inutilisé |
@@ -139,13 +139,13 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 | Mises à jour de l’intelligence de la sécurité | Autoriser les mises à jour d’informations de sécurité en temps réel basées sur des rapports à Microsoft MAPS | [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Recherchez les dernières définitions de virus et de logiciels espions au démarrage | [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Définir des partages de fichiers pour le téléchargement des mises à jour d’informations de sécurité | [Gérer les mises à jour Antivirus Microsoft Defender protection et d’intelligence de la sécurité](manage-protection-updates-microsoft-defender-antivirus.md) |
-| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours après lesquels une mise à jour de l’intelligence de sécurité de rattrapage est requise | [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
-| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours avant que les définitions de logiciels espions soient considérées comme non à jour | [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
-| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours avant que les définitions de virus soient considérées comme non à jour | [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
+| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours après lesquels une mise à jour de l’intelligence de sécurité de rattrapage est requise | [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
+| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours avant que les définitions de logiciels espions ne soient considérées comme non à jour | [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
+| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours avant que les définitions de virus soient considérées comme non à jour | [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Définir l’ordre des sources pour le téléchargement des mises à jour de l’intelligence de la sécurité | [Gérer les mises à jour Antivirus Microsoft Defender protection et d’intelligence de la sécurité](manage-protection-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Lancer la mise à jour des informations de sécurité au démarrage | [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Spécifier le jour de la semaine pour vérifier les mises à jour des informations de sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
-| Mises à jour de l’intelligence de la sécurité | Spécifier l’intervalle pour vérifier les mises à jour de l’intelligence de la sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
+| Mises à jour de l’intelligence de la sécurité | Spécifier l’intervalle pour vérifier les mises à jour des informations de sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Spécifier l’heure de recherche des mises à jour de l’intelligence de la sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Activer l’analyse après la mise à jour des informations de sécurité | [Configurer des analyses programmées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Menaces | Spécifier les niveaux d’alerte contre les menaces pour lesquels aucune action par défaut ne doit être prise lorsqu’elle est détectée | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |
@@ -154,4 +154,4 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 ## <a name="see-also"></a>Voir aussi
 
 - [Rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,6 +1,6 @@
 ---
 title: Accéder au Centre de la communauté Microsoft Defender pour point de terminaison
-description: Accédez au Centre d’Community Microsoft Defender pour endpoint pour partager des expériences, impliquer et en savoir plus sur le produit.
+description: Accédez au Centre d’Community Microsoft Defender pour vous aider à partager des expériences, à vous impliquer et à en savoir plus sur le produit.
 keywords: communauté, centre communautaire, communauté technique, conversation, annonces
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 54b57cb70c0c9eecc1e77e717998bc4cdac89f68
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8b082a45913a8a4b1df30b6c420f1b33ca456dfb6e0f996e90fe23858156e50d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890730"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Accéder au Centre de la communauté Microsoft Defender pour point de terminaison
 
@@ -41,9 +41,9 @@ Vous pouvez explorer plusieurs espaces pour en savoir plus sur des informations 
 - Nouveautés
 - Intelligence des menaces
 
-Vous pouvez accéder au Centre d’Community de plusieurs façons :
+Vous pouvez accéder au centre de Community de plusieurs façons :
 - Dans le Microsoft 365 Defender de navigation du portail, sélectionnez **Community centre.**  Un nouvel onglet de navigateur s’ouvre et vous permet d’ouvrir la page d’Community de Defender for Endpoint. 
-- Accéder à la communauté via la page De [l’Community Microsoft Defender pour endpoint](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)
+- Accéder à la communauté via la page [Microsoft Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)
 
 
 Vous pouvez instantanément afficher et lire les conversations qui ont été publiées dans la communauté. 

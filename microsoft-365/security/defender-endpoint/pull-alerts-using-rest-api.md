@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a72c7d363ab57c8c108279c71a3e1424e88a577
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2bf5d76b0f5f9638105870a872fdc4efa38157b6df4a694b1610ff3e21964257
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845026"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Détecter Microsoft Defender pour les points de terminaison à l’aide de l’API REST SIEM
 
@@ -62,7 +62,7 @@ Le _flux d’informations d’identification_ du client utilise les informations
 Utilisez la méthode suivante dans l’API Microsoft Defender for Endpoint pour tirer les détections au format JSON.
 
 >[!NOTE]
->Centre de sécurité Microsoft Defender fusionne des détections d’alertes similaires en une seule alerte. Cette API tire les détections d’alertes dans sa forme brute en fonction des paramètres de requête que vous définissez, ce qui vous permet d’appliquer vos propres regroupements et filtrages. 
+>Centre de sécurité Microsoft Defender fusionne des détections d’alertes similaires en une seule alerte. Cette API tire les détections d’alertes dans sa forme brute en fonction des paramètres de requête que vous avez définies, ce qui vous permet d’appliquer votre propre regroupement et filtrage. 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 - Avant d’appeler le point de terminaison Microsoft Defender pour point de terminaison pour tirer les détections, vous devez activer l’application d’intégration SIEM dans Azure Active Directory (AAD). Pour plus d’informations, voir [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md).
@@ -76,7 +76,7 @@ Utilisez la méthode suivante dans l’API Microsoft Defender for Endpoint pour 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 Avant de créer des appels au point de terminaison, vous devez obtenir un jeton d’accès.
 
-Vous utiliserez le jeton d’accès pour accéder à la ressource protégée, c’est-à-dire les détections dans Microsoft Defender pour le point de terminaison.
+Vous utiliserez le jeton d’accès pour accéder à la ressource protégée, c’est-à-dire les détections dans Microsoft Defender pour point de terminaison.
 
 Pour obtenir un jeton d’accès, vous devez faire une demande POST au point de terminaison émettant le jeton. Voici un exemple de requête :
 
@@ -101,7 +101,7 @@ La réponse inclura un jeton d’accès et des informations sur l’expiration.
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
 ```
-Vous pouvez désormais utiliser la valeur dans le *champ access_token* dans une demande à l’API Defender for Endpoint.
+Vous pouvez désormais utiliser la valeur du *champ access_token* dans une demande à l’API Defender for Endpoint.
 
 ## <a name="request"></a>Demande
 Avec un jeton d’accès, votre application peut effectuer des demandes authentifiées à l’API Microsoft Defender for Endpoint. Votre application doit ajouter le jeton d’accès à l’en-tête Authorization de chaque demande.
@@ -123,7 +123,7 @@ Utilisez des paramètres de requête facultatifs pour spécifier et contrôler l
 Nom | Valeur| Description
 :---|:---|:---
 sinceTimeUtc | Date/heure | Définit les alertes liées au temps inférieur à partir de, en fonction du champ : <br> `LastProcessedTimeUtc` <br> L’intervalle de temps sera : de l’heure sinceTimeUtc à l’heure actuelle. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, toutes les alertes générées au cours des deux dernières heures sont récupérées.
-untilTimeUtc | Date/heure | Définit les alertes liées au temps supérieur qui sont récupérées. <br> L’plage de temps est : de `sinceTimeUtc` temps en `untilTimeUtc` temps. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, la valeur par défaut est l’heure actuelle.
+untilTimeUtc | Date/heure | Définit les alertes liées au temps supérieur qui sont récupérées. <br> La plage de temps sera : de `sinceTimeUtc` temps en `untilTimeUtc` temps. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, la valeur par défaut est l’heure actuelle.
 ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> La valeur doit être définie selon le format de durée **ISO 8601** <br> Exemple : `ago=PT10M` tirera les alertes reçues au cours des 10 dernières minutes.
 limit | int | Définit le nombre d’alertes à récupérer. Les alertes les plus récentes sont récupérées en fonction du nombre défini.<br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, toutes les alertes disponibles dans l’plage de temps sont récupérées.
 machinegroups | string | Spécifie les groupes d’appareils à partir des appareils à partir des alertes. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, les alertes de tous les groupes d’appareils sont récupérées. <br><br> Exemple : <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
@@ -335,7 +335,7 @@ Code d’erreur HTTP | Description
 403 | Exception non autorisée : l’un des domaines n’est pas géré par l’administrateur client ou l’état du client est supprimé.
 500 | Erreur dans le service.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Activer l’intégration SIEM dans Microsoft Defender pour le point de terminaison](enable-siem-integration.md)
 - [Configurer ArcSight pour tirer Microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)
 - [Tirer les détections vers vos outils SIEM](configure-siem.md)

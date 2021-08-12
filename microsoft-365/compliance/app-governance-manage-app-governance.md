@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Implémentez les fonctionnalités de gouvernance des applications Microsoft pour régir vos applications.
-ms.openlocfilehash: 87ca62f6543b4fd9a768554085796b14aa6cf209
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 79dcf99dcedb075615085b207ec3284e3d1bf287202d69c8fd503d66b51ed14f
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622471"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520554"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Module complémentaire de gouvernance des applications pour Microsoft Cloud App Security (en préversion)
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
 > [!NOTE]
-> Pour vous inscrire à la gouvernance des applications, consultez [Démarrage avec la gouvernance des applications (en préversion)](app-governance-get-started.md).
+> Pour vous inscrire à la gouvernance des applications, consultez [Démarrage avec la gouvernance des applications (en préversion)](app-governance-get-started.md#sign-up-for-free-trial-of-app-governance).
 
 Les cyberattaques sont de plus en plus sophistiquées dans la façon dont elles exploitent les applications que vous avez déployées dans vos infrastructures locales et cloud, en établissant un point de départ pour l’escalade de privilèges, le déplacement latéral et l’exfiltration de vos données. Pour comprendre les risques potentiels et arrêter ces types d’attaques, vous devez obtenir une visibilité claire de la posture de conformité des applications de votre organisation afin d’identifier rapidement quand une application présente des comportements anormaux et de répondre quand ces comportements présentent des risques pour votre environnement, vos données et vos utilisateurs.
 

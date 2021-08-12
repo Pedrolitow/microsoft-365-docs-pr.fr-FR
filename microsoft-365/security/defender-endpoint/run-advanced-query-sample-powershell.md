@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e207978dbb65863764c66c5afc5c467552100461
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7f8a25f73726eaa7f8d10c1e6b9719d38ea42dcfb5d457da2d9282d8e266e585
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845014"
 ---
 # <a name="advanced-hunting-using-powershell"></a>Repérage avancé à l’aide de PowerShell
 
@@ -104,7 +104,7 @@ $schema = $response.Schema
 
 ### <a name="complex-queries"></a>Requêtes complexes
 
-Si vous souhaitez exécuter des requêtes complexes (ou des requêtes multilignes), enregistrez votre requête dans un fichier et, au lieu de la première ligne de l’exemple ci-dessus, exécutez la commande ci-dessous :
+Si vous souhaitez exécuter des requêtes complexes (ou des requêtes multilignes), enregistrez votre requête dans un fichier et, au lieu de la première ligne de l’exemple ci-dessus, exécutez la commande suivante :
 
 ```
 $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to your file

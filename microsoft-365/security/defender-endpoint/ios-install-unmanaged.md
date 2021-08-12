@@ -1,7 +1,7 @@
 ---
 title: Déployer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS
 description: Décrit comment déployer Microsoft Defender pour Endpoint sur des appareils iOS non inscrits.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, ios, configurer, fonctionnalités, ios
+keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f8caa7fa5379c32333ccdab807cca453cf49567
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a95544debbb2ce40abdee70d3907ef85038d23bcb56eb2c53c6ea10549699cc6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656414"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845110"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Déployer Microsoft Defender pour endpoint sur des appareils iOS non inscrits
 
@@ -44,7 +44,7 @@ Microsoft Defender pour le point de terminaison peut être configuré pour envoy
 Les étapes de configuration des stratégies de protection des applications avec Microsoft Defender pour Endpoint sont les suivantes :
 
 1. Configurer la connexion de votre client Microsoft Endpoint Manager microsoft Defender pour le point de terminaison. Dans le Centre d’administration [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)sélectionnez Connecteurs d’administration des clients et jetons Microsoft Defender pour le point de terminaison (sous Plateforme croisée) ou  >    >   **Endpoint Security** Microsoft Defender for Endpoint (sous Programme d’installation) et activer les boutons bascule sous App Protection Policy Paramètres pour  >   **iOS.**
-1. Sélectionnez **Enregistrer**. Vous devriez voir **que l’état de** la connexion est désormais **activé.**
+1. Sélectionnez **Enregistrer**. Vous devriez voir que **l’état de** la connexion est désormais **activé.**
 1. Créez la stratégie de protection des applications : une fois la configuration de votre connecteur Microsoft Defender pour point de terminaison terminée, accédez aux stratégies de protection des applications (sous Stratégie) pour créer une stratégie ou mettre à jour une stratégie  >   existante.
 1. Sélectionnez les paramètres de plateforme, **d’applications, de protection** des données et d’accès requis par votre organisation pour votre stratégie.
 1. Dans **les conditions de lancement**  >  **conditionnel de** l’appareil, vous trouverez le paramètre Niveau de menace maximum autorisé de **l’appareil.** Il doit être configuré sur Faible, Moyen, Élevé ou Sécurisé. Les actions à votre disposition seront **Bloquer** l’accès ou Effacer **les données.** Vous pouvez voir une boîte de dialogue d’information pour vous assurer que votre connecteur est bien installé avant que ce paramètre prenne effet. Si votre connecteur est déjà installé, vous pouvez ignorer cette boîte de dialogue.

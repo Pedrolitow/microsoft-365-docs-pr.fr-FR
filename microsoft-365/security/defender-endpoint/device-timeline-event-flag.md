@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7f12c49d42b957549552cf05bb811c20de0418bb
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ca9a0c814ba41d5d0272966b879d23a766ff6d002d142a7c7725ec87afff9fff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890642"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Indicateurs d’événement de chronologie de l’appareil microsoft Defender pour point de terminaison
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9fde7ed4c7a3b621730e2b6cd73370d87ea9c92c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: fc138d3f4aea65cdddb2425c34c06f3fd33227e431ca4f1260ee784c46a25ccf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845002"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Conditions préalables & autorisations - Gestion des menaces et des vulnérabilités
 
@@ -30,7 +30,7 @@ ms.locfileid: "53651686"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)

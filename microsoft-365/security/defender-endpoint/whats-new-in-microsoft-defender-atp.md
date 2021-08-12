@@ -1,7 +1,7 @@
 ---
 title: Nouveautés dans Microsoft Defender pour point de terminaison
 description: Découvrez les fonctionnalités généralement disponibles dans la dernière version de Microsoft Defender pour Endpoint, ainsi que les fonctionnalités de sécurité dans Windows 10 et Windows Server.
-keywords: nouveautés de Microsoft Defender pour point de terminaison, ga, généralement disponibles, fonctionnalités, disponibles, nouvelles
+keywords: nouveautés de Microsoft Defender pour point de terminaison, ga, généralement disponibles, fonctionnalités, disponible, nouveau
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 33bd21cb338d5c792e6241ac61f75712ecc1ad45
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6b1d5496d6476353cfe16acebc43de498547465fab3a8ea245b410de632aadb2
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656066"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520566"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -43,14 +43,14 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 > Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux :
 >
 > ```https
-> /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
+> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
 ## <a name="june-2021"></a>Juin 2021
 
 - [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exporter les évaluations des vulnérabilités et des [configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
 
-- [Exporter les évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) API <br> Ajoute une collection d’API qui Gestion des menaces et des vulnérabilités données par appareil. Il existe différents appels d’API pour obtenir différents types de données : évaluation de la configuration sécurisée, évaluation de l’inventaire logiciel et évaluation des vulnérabilités logicielles. Chaque appel d’API contient les données requises pour les appareils de votre organisation.
+- [Exporter des évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) API <br> Ajoute une collection d’API qui Gestion des menaces et des vulnérabilités données par appareil. Il existe différents appels d’API pour obtenir différents types de données : évaluation de la configuration sécurisée, évaluation de l’inventaire logiciel et évaluation des vulnérabilités logicielles. Chaque appel d’API contient les données requises pour les appareils de votre organisation.
 
 - [Activité de correction](get-remediation-methods-properties.md) API <br>  Ajoute une collection d’API avec des réponses qui contiennent des Gestion des menaces et des vulnérabilités de correction qui ont été créées dans votre client. Les types d’informations de réponse incluent une activité de correction par ID, toutes les activités de correction et les périphériques exposés d’une activité de correction.
 
@@ -102,13 +102,13 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Informations de fin de vie & l’application de gestion des vulnérabilités et de la version de l’application](tvm-security-recommendation.md) <BR>Les applications et les versions d’applications qui ont atteint leur fin de vie sont marquées ou étiquetées en tant que telles. Vous savez donc qu’elles ne seront plus prises en charge et qu’elles peuvent prendre des mesures pour désinstaller ou remplacer. Cela permet de réduire les risques liés à diverses expositions de vulnérabilités dues à des applications non associées.
 
-- [Schémas de & de recherche avancée de gestion des menaces et des vulnérabilités](advanced-hunting-schema-reference.md) <BR>Utilisez les tables gestion des menaces & des vulnérabilités dans le schéma de recherche avancé pour interroger sur l’inventaire logiciel, la base de connaissances sur les vulnérabilités, l’évaluation de la configuration de la sécurité et la base de connaissances sur la configuration de la sécurité.
+- [Schémas de & de recherche avancée de gestion des menaces et des vulnérabilités](advanced-hunting-schema-reference.md) <BR>Utilisez les tables gestion des menaces & des vulnérabilités dans le schéma de recherche avancé pour interroger sur l’inventaire logiciel, la base de connaissances des vulnérabilités, l’évaluation de la configuration de la sécurité et la base de connaissances sur la configuration de la sécurité.
 
- - [Contrôles d’accès basés sur les rôles de gestion des & des menaces](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Utilisez les nouvelles autorisations pour permettre une flexibilité maximale pour créer des rôles orientés SecOps, des rôles orientés gestion des vulnérabilités de & menaces ou des rôles hybrides afin que seuls les utilisateurs autorisés accèdent à des données spécifiques pour accomplir leur tâche. Vous pouvez également atteindre une granularité encore plus grande en spécifiant si un rôle gestion des menaces & des vulnérabilités peut uniquement afficher les données liées aux vulnérabilités, ou créer et gérer des corrections et des exceptions.
+ - [Contrôles d& d’accès basés sur les rôles gestion des menaces et vulnérabilités](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Utilisez les nouvelles autorisations pour permettre une flexibilité maximale pour créer des rôles orientés SecOps, des rôles orientés gestion des vulnérabilités de & menaces ou des rôles hybrides afin que seuls les utilisateurs autorisés accèdent à des données spécifiques pour accomplir leur tâche. Vous pouvez également atteindre une granularité encore plus grande en spécifiant si un rôle gestion des menaces & des vulnérabilités peut uniquement afficher les données liées aux vulnérabilités, ou créer et gérer des corrections et des exceptions.
 
 - [Rapport d’intégrité et de conformité des appareils](machine-reports.md) <br/> Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
 
-## <a name="october-2019"></a>Octobre 2019
+## <a name="october-2019"></a>Octobre 2019
 
 - [Indicateurs pour les adresses IP, url/domaines](manage-indicators.md) <BR> Vous pouvez désormais autoriser ou bloquer des URL/domaines à l’aide de votre propre intelligence des menaces.
 
@@ -116,9 +116,9 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Applications Azure AD connectées](connected-applications.md)<br> La page Applications connectées fournit des informations sur les applications Azure AD connectées à Microsoft Defender pour endpoint dans votre organisation.
 
-- [Explorateur d’API](api-explorer.md)<br> L’Explorateur d’API facilite la construction et l’application de requêtes API, teste et envoie des demandes pour tout point de terminaison de l’API Microsoft Defender pour endpoint disponible.
+- [Explorateur d’API](api-explorer.md)<br> L’Explorateur d’API facilite la construction et l’application de requêtes API, teste et envoie des demandes pour tout point de terminaison de l’API Microsoft Defender pour Endpoint disponible.
 
-## <a name="september-2019"></a>Septembre 2019
+## <a name="september-2019"></a>Septembre 2019
 
 - [Paramètres de protection contre la falsification à l’aide d’Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Vous pouvez désormais activer (ou désactiver) la protection contre les falsifications pour votre organisation dans le Microsoft 365 Device Management Portal (Intune).
 
@@ -152,7 +152,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 ## <a name="february-2019"></a>Février 2019
 
-- [Incidents](view-incidents-queue.md) <BR> L’incident est une nouvelle entité dans Microsoft Defender pour point de terminaison qui regroupe toutes les alertes pertinentes et les entités associées pour mettre en avant l’ensemble des attaques, offrant ainsi aux analystes une meilleure perspective sur le point de vue des menaces complexes.
+- [Incidents](view-incidents-queue.md) <BR> L’incident est une nouvelle entité dans Microsoft Defender pour point de terminaison qui regroupe toutes les alertes pertinentes et les entités associées pour donner un point de vue plus large aux attaques, offrant ainsi aux analystes une meilleure perspective du point de vue des menaces complexes.
 
 - [Intégrer des versions antérieures de Windows](onboard-downlevel.md)<BR> Intégrer des versions de Windows afin qu’ils peuvent envoyer des données de capteur au capteur Microsoft Defender for Endpoint.
 
@@ -162,7 +162,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Accès contrôlé aux dossiers](enable-controlled-folders.md)<BR> L’accès contrôlé aux dossiers est désormais pris en charge Windows Server 2019.
 
-- [Détection personnalisée](manage-indicators.md)<BR>Avec les détections personnalisées, vous pouvez créer des requêtes personnalisées pour surveiller les événements pour tout type de comportement, comme les menaces suspectes ou émergentes. Pour ce faire, vous pouvez tirer parti de la puissance du repérage avancé via la création de règles de détection personnalisées.
+- [Détection personnalisée](manage-indicators.md)<BR>Avec les détections personnalisées, vous pouvez créer des requêtes personnalisées pour surveiller les événements pour tout type de comportement, tel que les menaces suspectes ou émergentes. Pour ce faire, vous pouvez tirer parti de la puissance du repérage avancé via la création de règles de détection personnalisées.
 
 - [Intégration à Azure Defender](configure-server-endpoints.md)<BR> Microsoft Defender pour point de terminaison s’intègre à Azure Defender pour fournir une solution de protection serveur complète. Avec cette intégration, Azure Defender peut tirer parti de la puissance de Microsoft Defender for Endpoint pour fournir une détection améliorée des menaces pour Windows serveurs.
 
