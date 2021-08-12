@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour créer des stratégies d’appareil qui protègent les informations de votre organisation.
-ms.openlocfilehash: 5c8794b53dc11d1cee2fc13c8fbc4933e18dd9a3
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 8c6731b6f206b8c30f0d2abfa0d61d251658c3401ab37042a1b6ba31f0df00c4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827001"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Créer des stratégies de sécurité des appareils dans Basic Mobility and Security
 
@@ -149,7 +149,7 @@ La stratégie est supprimée de l’appareil mobile pour chaque utilisateur que 
 
 Vous pouvez également effacer complètement un appareil ou effacer de manière sélective les informations organisationnelles de l’appareil. Pour plus d’informations, voir [Effacer un appareil mobile dans Basic Mobility and Security](wipe-mobile-device.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble de Basic Mobility and Security](overview.md) (article)\
 [Fonctionnalités de la mobilité et de la sécurité de](capabilities.md) base (article)

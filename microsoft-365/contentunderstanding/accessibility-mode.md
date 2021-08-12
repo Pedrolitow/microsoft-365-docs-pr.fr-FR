@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Normal
 description: Découvrez comment utiliser le mode d’accessibilité lors de la formation d’un modèle SharePoint Syntex.
-ms.openlocfilehash: 168b64563ef720d659996d1093c8b181b145046d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 349c9ff2fee37e4f40185c4d61592eb379d83382d373961980bfb615db7040c3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543220"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795449"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>Mode d’accessibilité Syntex de SharePoint
 
-Dans [SharePoint Syntex,](index.md)les utilisateurs peuvent activer le mode accessibilité à toutes les étapes de la formation au modèle (étiquette, formation, test) lors de l’utilisation d’exemples de documents. L’utilisation du mode d’accessibilité permet aux utilisateurs à faible vue d’avoir plus facilement accès au clavier à mesure qu’ils naviguent et étiquetent des éléments dans la visionneuse de documents.
+Dans [SharePoint Syntex,](index.md)les utilisateurs peuvent activer le mode accessibilité à toutes les étapes de la formation au modèle (étiquette, formation, test) lorsque vous travaillez avec des exemples de documents. L’utilisation du mode d’accessibilité permet aux utilisateurs à faible vue d’avoir plus facilement accès au clavier à mesure qu’ils naviguent et étiquetent des éléments dans la visionneuse de documents.
 
 Cela permet aux utilisateurs d’utiliser leur clavier pour parcourir du texte dans la visionneuse de documents et écouter une narration non seulement des valeurs sélectionnées, mais aussi des actions (telles que l’étiquetage ou la suppression de l’étiquetage du texte sélectionné) ou des valeurs d’étiquette prévues lorsque vous formez le modèle avec des exemples de documents supplémentaires. 
 
@@ -53,7 +53,7 @@ Lorsque vous parcourez les exemples de documents et les valeurs de chaîne d’�
 
 - Lorsque vous utilisez le clavier pour naviguer dans la visionneuse de documents, le son du Narrateur indique la chaîne sélectionnée.
 - Dans une chaîne sélectionnée, l’audio du Narrateur indique chaque caractère de la chaîne lorsque vous les sélectionnez à l’aide des touches de direction gauche ou droite.
-- Si vous sélectionnez une chaîne qui a été étiquetée, le Narrateur indique la valeur, puis « étiquetée ».  Par exemple, si la valeur de l’étiquette est « Contoso », elle indique « Labeled Costoso ». 
+- Si vous sélectionnez une chaîne qui a été étiquetée, le Narrateur indique la valeur, puis « étiquetée ».  Par exemple, si la valeur de l’étiquette est « Contoso », elle indique « Costoso étiqueté ». 
 - Dans l’onglet formation, si vous sélectionnez une chaîne dans la visionneuse de documents qui a été uniquement prévue, le son du Narrateur indique la valeur, puis est « prévisible ». Cela se produit lorsque la formation prévoit une valeur dans le fichier qui ne correspond pas à ce qui a été étiqueté par l’utilisateur.
 - Dans l’onglet formation, si vous sélectionnez une chaîne dans la visionneuse de documents qui a été étiquetée et prévue, l’audio du Narrateur indique la valeur, puis « étiqueté et prévu ». Cela se produit lorsque la formation réussit et qu’il existe une correspondance entre une valeur prévue et l’étiquette de l’utilisateur.
 

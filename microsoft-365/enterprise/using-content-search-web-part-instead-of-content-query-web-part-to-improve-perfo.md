@@ -21,16 +21,16 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Découvrez comment améliorer les performances en remplaçant le partie Web De requête de contenu par le partie Web De recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
-ms.openlocfilehash: e5f57e59a421d79302f447e229091fdfc96f1237
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1fbddb662d87f135d90dfb1303ba75097da4650eefdf57dfe2f9ca50fcf186a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690217"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840782"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Utilisation du service Web De recherche de contenu au lieu du partie Web De requête de contenu pour améliorer les performances dans SharePoint Online
 
-Cet article explique comment améliorer les performances en remplaçant le partie Web Part de requête de contenu par le partie Web Part de recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
+Cet article explique comment améliorer les performances en remplaçant le volet Web De requête de contenu par le service Web De recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
   
 L’une des nouvelles fonctionnalités les plus puissantes de SharePoint Server 2013 et SharePoint Online est le service Web De recherche de contenu (CSWP). Ce partie Web Part utilise l’index de recherche pour récupérer rapidement les résultats qui sont affichés à l’utilisateur. Utilisez le partie Web Part de recherche de contenu au lieu du partie Web De requête de contenu (CQWP) dans vos pages pour améliorer les performances pour vos utilisateurs.
   
@@ -68,7 +68,7 @@ L’ajout d’un élément Web Part de recherche de contenu est très similaire 
   
 ## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Création de la requête de recherche pour votre partie Web De recherche de contenu
 
-Une fois que vous avez ajouté un élément Web Part de recherche de contenu, vous pouvez affiner la recherche et renvoyer les éléments que vous souhaitez. Pour obtenir des instructions détaillées sur la façon d’effectuer cette opération, voir la section « Afficher le contenu en configurant une requête avancée dans un élément *Web* Part de recherche de contenu » dans [Configure a Content Search Web Part in SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+Une fois que vous avez ajouté un élément Web Part de recherche de contenu, vous pouvez affiner la recherche et renvoyer les éléments que vous souhaitez. Pour obtenir des instructions détaillées sur la façon de le faire, voir la section « Afficher le contenu en configurant une requête avancée dans un élément *Web* Part de recherche de contenu » dans [Configure a Content Search Web Part in SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
 ## <a name="query-building-and-testing-tool"></a>Outil de création et de test de requête
 

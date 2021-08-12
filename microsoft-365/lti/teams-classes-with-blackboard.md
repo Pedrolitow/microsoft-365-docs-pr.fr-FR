@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
-ms.openlocfilehash: fc2bb1fa222dd47917d14c5c055c8f52fcbe7390
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 2ec017c331c722e199c1347b2c65b4ca04d71a4d0778695c0c9504560b3c29f5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819334"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
 

@@ -14,22 +14,22 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 8a5442fcf8dd50cdee6be97ba7c9bbf5e21408a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: aec8eeeacb520c8ac035a099639e8f788c4cf1c96f8d42588cda8d992fb9d2f3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288154"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795382"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adoption SharePoint Syntex Microsoft : commencer
 
 Pensez aux services de contenu intelligents disponibles dans SharePoint Syntex comme ayant trois parties :
 
 - **Compréhension du contenu :** Créez des modèles d’IA sans code pour classifier et extraire des informations du contenu afin d’appliquer automatiquement les métadonnées pour la découverte et la réutilisation des connaissances. En savoir plus sur [la compréhension du contenu.](document-understanding-overview.md)
-- **Traitement de contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et simplifiez les processus centrées sur le contenu à l’aide Power Automate. En savoir plus sur [le traitement du contenu.](form-processing-overview.md)
+- **Traitement de contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et rationalisez les processus centrées sur le contenu à l’aide Power Automate. En savoir plus sur [le traitement de contenu.](form-processing-overview.md)
 - **Conformité du contenu :** Contrôler et gérer le contenu pour améliorer la sécurité et la gouvernance avec l’intégration Protection des données Microsoft.
 
-Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification du contenu directement dans le flux de gestion de contenu à l’aide SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation :
+Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification de contenu directement dans le flux de gestion de contenu à l’aide SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation :
 
 | Traitement des formulaires | Compréhension de document |
 |:-------|:-------|
@@ -70,7 +70,7 @@ Utilisez les [exemples de scénarios](adoption-scenarios.md) et les cas d’util
 
 Déterminer qui dans votre organisation créera et gérera les modèles ? Les rôles suivants peuvent être impliqués :
 
-| SharePoint/Administrateur de connaissances | Administrateur Power Platform | Gestionnaire des connaissances | Propriétaire du modèle |
+| Administrateur/SharePoint d’informations | Administrateur Power Platform | Responsables d’informations | Propriétaire du modèle |
 |:-------|:-------|:-------|:-------|
 | Rôle AAD| Rôle AAD | Rôle AAD | Champions |
 | Configurer le traitement des formulaires | Configurer l’environnement de service de données courant pour le traitement des formulaires | Recueillir des cas d’utilisation | Recueillir des cas d’utilisation professionnelle |
@@ -123,7 +123,7 @@ Pour vous préparer à l’SharePoint Syntex, vous devez :
 1. Planifier l’état final
     - Les modèles de compréhension de document sont les moyens, et non la fin.
     - Planifiez l’exploitation de la valeur des métadonnées extraites avec :
-      - Recherche
+      - Rechercher
       - Filtrage et mise en forme de l’affichage
       - Conformité
       - Automation
@@ -146,4 +146,4 @@ Pour vous préparer à l’SharePoint Syntex, vous devez :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Scénarios et cas d’utilisation pour SharePoint Syntex](adoption-scenarios.md)
+[Scénarios et cas d’usage pour SharePoint Syntex](adoption-scenarios.md)

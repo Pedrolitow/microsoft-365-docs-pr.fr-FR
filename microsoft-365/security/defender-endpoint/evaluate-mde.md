@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 551eddb42f7b0bdbbd84f6294f3413b4435c1dc1
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b9c2127895c90929c6755bc76e34f8d5f238dc76c24653e214799db1959c840f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833921"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Évaluer Microsoft Defender pour point de terminaison 
 
@@ -38,7 +38,7 @@ ms.locfileid: "53655766"
 
 Vous pouvez évaluer Microsoft Defender pour endpoint dans votre organisation en commençant [votre version d’évaluation gratuite.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial)
 
-Vous pouvez également évaluer les différentes fonctionnalités de sécurité dans Microsoft Defender pour point de terminaison en suivant les instructions suivantes.
+Vous pouvez également évaluer les différentes fonctionnalités de sécurité dans Microsoft Defender pour Point de terminaison à l’aide des instructions suivantes.
 
 ## <a name="evaluate-attack-surface-reduction"></a>Évaluer la réduction de la surface d’attaque
 

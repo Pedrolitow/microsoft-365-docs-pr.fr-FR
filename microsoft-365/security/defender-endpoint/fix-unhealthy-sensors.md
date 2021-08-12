@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 737a0e4b7e75b24bde486b79667da8e7771bbefa
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 73c63374b980eea272d8940b7c6e62827788075c3827341dfe1ff039d4c6fa58
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649322"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833890"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corriger les capteurs défectueux dans Microsoft Defender pour le point de terminaison
 
@@ -84,7 +84,7 @@ Suivez ces actions pour corriger les problèmes connus liés à un appareil mal 
   Vérifiez que la configuration du proxy s’est correctement terminée, que WinHTTP peut découvrir et communiquer via le serveur proxy dans votre environnement, et que le serveur proxy autorise le trafic vers les URL du service Microsoft Defender for Endpoint.
 
 - [Vérifier que le service de données de diagnostic est activé](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
-Si les appareils ne sont pas correctement signalés, vous devrez peut-être vérifier que le service de données de diagnostic Windows 10 est automatiquement mis en service et qu’il est en cours d’exécution sur le point de terminaison.
+Si les appareils ne sont pas correctement signalés, vous devrez peut-être vérifier que le service de données de diagnostic Windows 10 est automatiquement mis en service et qu’il s’exécute sur le point de terminaison.
 
 - [S’assurer que Antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
 Si vos appareils exécutent un client de logiciel anti-programme malveillant tiers, l’agent Defender for Endpoint a besoin du pilote ELAM (Antivirus Microsoft Defender Early Launch Antimalware) pour être activé.

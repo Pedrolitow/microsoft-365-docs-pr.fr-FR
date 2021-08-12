@@ -19,12 +19,12 @@ metadata:
   search.appverid:
   - MET150
   description: Questions fréquemment posées sur basic Mobility and Security.
-  ms.openlocfilehash: 4d57b1fce05329b294aade2806400e343f7f6ad7
-  ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+  ms.openlocfilehash: f899aecd313ffd4fbc1d94d44f2a1b9c41780984a9c8eb8383a51da661d80be8
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 06/29/2021
-  ms.locfileid: "53177659"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53826758"
 title: Questions fréquemment posées sur la mobilité et la sécurité de base (FAQ)
 summary: Cet article contient des questions fréquemment posées sur Basic Mobility and Security, une fonctionnalité qui vous aide à gérer et sécuriser les appareils mobiles dans Microsoft 365. Si vous ne trouvez pas de réponse à votre question, faites-le nous savoir en laissant un commentaire sur la page afin que nous pouvons envisager d’ajouter votre question à cet article.
 sections:
@@ -46,7 +46,7 @@ sections:
       La préparation du service peut prendre un certain temps. Une fois l’approvisionnement terminé, vous verrez la page Mobilité et sécurité de base. Si vous avez attendu 24 heures et que l’état est toujours en cours d’approvisionnement, contactez le support technique et nous vous aiderons à déterminer le problème.
   - question: >
       Que puis-je faire en cas d’échec de l’inscription des appareils ?
-    answer: "Si vous avez des difficultés à obtenir l’enregistrement d’un appareil, vérifiez d’abord les étapes suivantes :\n\n- Assurez-vous que l’appareil n’est pas déjà inscrit auprès d’un autre fournisseur de gestion d’appareils mobiles, tel qu’Intune.\n\n- Assurez-vous que la date et l’heure de l’appareil sont correctes.\n\n- Basculez vers un autre réseau WIFI ou cellulaire sur l’appareil.\n\n- Pour les appareils Android ou iOS, désinstallez et réinstallez l’Portail d’entreprise Intune sur l’appareil.\n    \nSi l’inscription ne fonctionne toujours pas, voir [Résoudre les problèmes de mobilité et de sécurité de base.](troubleshoot.md)\n"
+    answer: "Si vous avez des difficultés à obtenir l’enregistrement d’un appareil, vérifiez d’abord les étapes suivantes :\n\n- Assurez-vous que l’appareil n’est pas déjà inscrit auprès d’un autre fournisseur de gestion d’appareils mobiles, tel qu’Intune.\n\n- Assurez-vous que la date et l’heure de l’appareil sont correctes.\n\n- Basculez vers un autre réseau WIFI ou cellulaire sur l’appareil.\n\n- Pour les appareils Android ou iOS, désinstallez et réinstallez l’application Portail d’entreprise Intune sur l’appareil.\n    \nSi l’inscription ne fonctionne toujours pas, voir [Résoudre les problèmes de mobilité et de sécurité de base.](troubleshoot.md)\n"
   - question: >
       Quelle est la différence entre Intune et Basic Mobility and Security ?
     answer: >
@@ -64,7 +64,7 @@ sections:
   - question: >
       Puis-je passer de la gestion Exchange ActiveSync des appareils à la mobilité et à la sécurité de base pour Microsoft 365 ?
     answer: >
-      Si vous utilisez déjà des stratégies Exchange ActiveSync pour gérer les appareils mobiles, vous pouvez commencer à utiliser Basic Mobility and Security en suivant les étapes de la procédure de mise en place de Basic Mobility and Security. Pour plus d’informations, voir [Protéger l’accès](../../compliance/protect-access-to-data-and-services.md) des utilisateurs et des appareils et [Configurer la mobilité et la sécurité de base.](set-up.md)
+      Si vous utilisez déjà des stratégies Exchange ActiveSync pour gérer les appareils mobiles, vous pouvez commencer à utiliser Basic Mobility and Security en suivant les étapes de mise en place de Basic Mobility and Security. Pour plus d’informations, voir [Protéger l’accès](../../compliance/protect-access-to-data-and-services.md) des utilisateurs et des appareils et [Configurer la mobilité et la sécurité de base.](set-up.md)
 
 
       Lorsque vous appliquez les stratégies que vous créez dans Basic Mobility and Security à des groupes d’utilisateurs Exchange ActiveSync, ces stratégies remplacent les stratégies de boîte aux lettres d’appareil mobile et les règles d’accès aux appareils que vous avez précédemment créées dans le Centre d’administration Exchange pour ces utilisateurs.

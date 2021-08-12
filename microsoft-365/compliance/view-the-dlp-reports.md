@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Utilisez les rapports DLP dans Office 365 pour afficher le nombre de correspondances, remplacements ou faux positifs de stratégie DLP et voir s’ils sont à la hausse ou à la baisse au fil du temps.
-ms.openlocfilehash: 742f0ef0334e714c7f31cbc2f97559993454f6b7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 936c8aaba7d50cbb775c98babe751b357738e617d55ea8a8517a86c4f7cdb188
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928388"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795485"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
 
@@ -58,7 +58,7 @@ Après avoir créé vos stratégies de protection contre la perte de données (D
     
 Tous les rapports DLP peuvent afficher les données de la période de quatre mois la plus récente. Les données les plus récentes peuvent nécessiter jusqu'à 24 heures avant de s’afficher dans les rapports.
   
-Vous trouverez ces rapports dans le tableau de bord des rapports du Centre de &amp; \> **conformité** \> **de sécurité.**
+Vous trouverez ces rapports dans le tableau de bord des rapports du Centre de conformité &amp; \> **de** \> **sécurité.**
   
 ![Rapport sur les correspondances de stratégie DLP](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
@@ -78,9 +78,9 @@ Les rapports peuvent afficher des informations et des recommandations dans le ca
 
 Pour afficher les rapports DLP dans le Centre de sécurité & conformité, vous devez avoir :
 
-- **Rôle lecteur sécurité** dans le centre d Exchange’administration. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Lecteur de sécurité dans Exchange’administration centrale.
+- **Rôle lecteur de** sécurité dans le centre d Exchange’administration. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Lecteur de sécurité dans Exchange’administration centrale.
 
-- **Rôle de gestion de la conformité DLP** en affichage seul dans le Centre de sécurité & conformité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité, Gestion de l’organisation, Administrateur de la sécurité et Lecteur sécurité dans le Centre de sécurité & conformité.
+- **Rôle de gestion de la conformité DLP** en affichage seul dans le Centre de sécurité & conformité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité, Gestion de l’organisation, Administrateur de la sécurité et Lecteur Sécurité dans le Centre de sécurité & conformité.
 
 - **Rôle Destinataires en affichage** seul dans le centre Exchange’administration. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité, Gestion de l’organisation View-Only Gestion de l’organisation dans Exchange d’administration.
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Découvrez comment restaurer (ou fusionner) le contenu d’une boîte aux lettres inactive vers une boîte aux lettres existante dans Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bc9039d21f76affce7f58f1f83597dd9e5eb4ecf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19d54f239fb092f8dc29b986461028b990b8e4446bc506440d15ff704f5c3618
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795785"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Restaurer une boîte aux lettres inactive
 
@@ -112,7 +112,7 @@ Si une boîte aux lettres inactive possède une boîte aux lettres d'archivage, 
 
 - **Utilisez une conservation pour litige ou une stratégie Microsoft 365 rétention pour conserver le contenu de boîte aux lettres inactive.** Si vous souhaitez conserver l’état d’une boîte aux lettres inactive [](create-a-litigation-hold.md) après sa restauration, vous pouvez placer la boîte aux lettres cible en conservation pour litige ou appliquer une stratégie de rétention [Microsoft 365](retention.md) avant de restaurer la boîte aux lettres inactive. Cela empêche la suppression définitive des éléments provenant de la boîte aux lettres inactive après leur restauration dans la boîte aux lettres cible.
 
-- **Activez le blocage de rétention pour la boîte aux lettres cible avant de restaurer une boîte aux lettres inactive.** Comme les éléments provenant d'une boîte aux lettres inactive peuvent être anciens, vous pouvez envisager d'activer le blocage de rétention pour la boîte aux lettres cible avant de restaurer une boîte aux lettres inactive. Lorsque vous placez une boîte aux lettres en blocage de rétention, la stratégie de rétention qui lui est affectée n'est pas traitée jusqu'à ce que le blocage de rétention soit supprimé ou jusqu'à ce que la période de blocage de rétention soit écoulée. Ainsi, le propriétaire de la boîte aux lettres cible dispose d'un certain temps pour gérer les anciens messages de la boîte aux lettres inactive. Sinon, la stratégie de rétention risque de supprimer d'anciens éléments (ou de déplacer des éléments vers la boîte aux lettres d'archivage, si elle est activée) qui ont expiré d'après les paramètres de rétention configurés pour la boîte aux lettres cible. Pour plus d’informations, voir [Placer une boîte aux lettres en conservation de](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)rétention dans Exchange Online .
+- **Activez le blocage de rétention pour la boîte aux lettres cible avant de restaurer une boîte aux lettres inactive.** Comme les éléments provenant d'une boîte aux lettres inactive peuvent être anciens, vous pouvez envisager d'activer le blocage de rétention pour la boîte aux lettres cible avant de restaurer une boîte aux lettres inactive. Lorsque vous placez une boîte aux lettres en blocage de rétention, la stratégie de rétention qui lui est affectée n'est pas traitée jusqu'à ce que le blocage de rétention soit supprimé ou jusqu'à ce que la période de blocage de rétention soit écoulée. Ainsi, le propriétaire de la boîte aux lettres cible dispose d'un certain temps pour gérer les anciens messages de la boîte aux lettres inactive. Sinon, la stratégie de rétention risque de supprimer d'anciens éléments (ou de déplacer des éléments vers la boîte aux lettres d'archivage, si elle est activée) qui ont expiré d'après les paramètres de rétention configurés pour la boîte aux lettres cible. Pour plus d’informations, voir [Placer une boîte aux lettres en conservation de rétention dans Exchange Online](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
 
 - **Que fait le commutateur AllowLegacyDNMismatch ?** Dans les précédents exemples pour restaurer une boîte aux lettres inactive, le commutateur **AllowLegacyDNMismatch** sert à autoriser la restauration de la boîte aux lettres inactive vers une boîte aux lettres cible différente. Dans un scénario de restauration classique, l'objectif consiste à restaurer du contenu pour lequel les boîtes aux lettres source et cible sont la même boîte aux lettres. Par défaut, la cmdlet **New-MailboxRestoreRequest** vérifie que la valeur de la propriété **LegacyExchangeDN** sur les boîtes aux lettres source et cible est identique. Cette vérification vous empêche de restaurer accidentellement une boîte aux lettres source vers la mauvaise boîte aux lettres cible. Si vous essayez de restaurer une boîte aux lettres inactive sans utiliser le commutateur **AllowLegacyDNMismatch**, la commande peut échouer si les boîtes aux lettres source et cible ont des valeurs différentes pour la propriété **LegacyExchangeDN**.
 

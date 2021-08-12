@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: Au cours d’un examen, vous pouvez utiliser le bouton Nouvelle tentative pour résoudre les recherches de contenu qui ont des erreurs d’emplacement de contenu.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb85a882ef111aa38a73dbe155a9ad0ef57dd3de
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: a67702e7c9d3c307ed44fe52c86c8b080f8d1e01e7cf9dcdc9dfb3929c638bf6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311819"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795676"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Réessayer une recherche de contenu pour résoudre une erreur d’emplacement de contenu
 
@@ -42,7 +42,7 @@ Ces erreurs (avec des codes d’erreur de CS001-002, CS003-002, CS008-009, CS012
 
 ## <a name="cause-of-content-location-errors"></a>Cause des erreurs d’emplacement de contenu
 
-Lorsque vous recherchez un grand nombre de boîtes aux lettres, la recherche est distribuée sur des milliers de serveurs dans un centre de données Microsoft. À tout moment, des serveurs spécifiques peuvent être en état de redémarrage ou en cours de rerouillage vers des copies redondantes. Dans l’un ou l’autre de ces cas, la demande de récupération des données par la recherche de contenu prendra du temps. Dans l’exemple précédent, les erreurs des boîtes aux lettres qui ont échoué étaient le résultat du délai d’insétion de la recherche.
+Lorsque vous recherchez un grand nombre de boîtes aux lettres, la recherche est distribuée sur des milliers de serveurs dans un centre de données Microsoft. À tout moment, des serveurs spécifiques peuvent être en état de redémarrage ou en cours de rerouillage vers des copies redondantes. Dans l’un ou l’autre de ces cas, la demande de la recherche de contenu pour récupérer des données va prendre du temps. Dans l’exemple précédent, les erreurs des boîtes aux lettres qui ont échoué étaient le résultat du délai d’insétion de la recherche.
 
 ## <a name="resolving-content-location-errors"></a>Résolution des erreurs d’emplacement de contenu
 

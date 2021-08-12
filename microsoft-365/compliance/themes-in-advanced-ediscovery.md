@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez les thèmes Advanced eDiscovery pour organiser les ensembles de révision en trouvant le thème dominant dans chaque document.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3dfc0dca0c6ed62e3ce8384efa2fd3ea407c3ce8
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 342984d2482ea0027b9f6a77bdba911ede2404a6428f7b6bf4fb7a397c8c65a7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285530"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795433"
 ---
 # <a name="themes-in-advanced-ediscovery"></a>Thèmes dans Advanced eDiscovery
 
-Comment une personne écrit-elle un document ? Ils commencent généralement par une ou plusieurs idées qu’ils souhaitent transmettre dans le document et composent à l’aide de mots qui s’alignent sur les idées. Plus une idée est répandue, plus les mots associés à cette idée sont fréquents. Cela vous informe également sur la façon dont les personnes utilisent les documents. L’élément important à comprendre lors de la lecture d’un document est les idées que le document tente de transmettre, les idées qui apparaissent où et quelles sont les relations entre les idées.
+Comment une personne écrit-elle un document ? Ils commencent généralement par une ou plusieurs idées qu’ils souhaitent transmettre dans le document et composent à l’aide de mots qui s’alignent sur les idées. Plus une idée est répandue, plus les mots associés à cette idée sont fréquents. Cela vous informe également sur la façon dont les personnes utilisent des documents. L’élément important à comprendre lors de la lecture d’un document est les idées que le document tente de transmettre, les idées qui apparaissent où et quelles sont les relations entre elles.
 
 Cela peut être étendu à la façon dont une personne souhaite consommer un ensemble de documents. Ils souhaitent voir quelles idées sont présentes dans les ensembles et quels documents les présentent. En outre, s’ils trouvent un document particulier intéressant, ils souhaitent être en mesure de voir des documents qui discutent d’idées similaires.
 

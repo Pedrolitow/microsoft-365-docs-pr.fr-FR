@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base font partie des plans Microsoft 365 de sécurité.
-ms.openlocfilehash: 4da5175ece5da0e6e2f5aaadb26a177835d90fcf39f727b748b83685c1c355d7
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 69d1c285d234d0884400cfc6325fcecfbff5a2d3bb62769682ec974b53a85f7e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834505"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827034"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Choisir entre Basic Mobility and Security ou Intune
 
@@ -63,7 +63,7 @@ Basic Mobility and Security et Intune sont inclus dans une variété de plans, d
 Microsoft Intune la mobilité et la sécurité de base intégrées vous donnent la possibilité de gérer les appareils mobiles au sein de votre organisation, mais il existe des différences clés en matière de fonctionnalités, décrites dans le tableau suivant.
 
 > [!NOTE]
-> Vous pouvez gérer les utilisateurs et leurs appareils mobiles à l’aide d’Intune et de Basic Mobility and Security dans la même organisation Microsoft 365 Business Standard en mettant d’abord en place basic *Mobility and Security,* puis en ajoutant Microsoft Intune . Cela vous permet de choisir la mobilité et la sécurité de base ou la solution Intune plus riche en fonctionnalités. Attribuez une licence Intune pour activer les fonctionnalités Intune.
+> Vous pouvez gérer les utilisateurs et leurs appareils mobiles à l’aide d’Intune et de Basic Mobility and Security dans la même organisation Microsoft 365 Business Standard en mettant tout d’abord en place la mobilité et la sécurité de *base,* puis en ajoutant Microsoft Intune . Cela vous permet de choisir la mobilité et la sécurité de base ou la solution Intune plus riche en fonctionnalités. Attribuez une licence Intune pour activer les fonctionnalités Intune.
 
 | Fonctionnalité | Points forts des fonctionnalités | Mobility + Security de Base | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
@@ -71,6 +71,7 @@ Microsoft Intune la mobilité et la sécurité de base intégrées vous donnent 
 |Conformité des appareils|Définir et gérer des stratégies de sécurité, telles que la détection de verrouillage du code confidentiel et de jailbreak au niveau de l’appareil. |Limitations sur les appareils Android 9 et ultérieurs. Voir [les détails.](capabilities.md) |Oui|
 |Accès conditionnel basé sur la conformité des appareils |Empêcher les appareils non conformes d’accéder à la messagerie électronique et aux données d’entreprise à partir du cloud. |Non pris en charge sur Windows 10.<br/>Limité au contrôle de l’accès Exchange Online, SharePoint Online et Outlook. |Oui |
 |Configuration des appareils  |Configurer les paramètres de l’appareil (par exemple, désactivation de l’appareil photo)|Ensemble limité de paramètres.|Oui|
+|Conformité des appareils  |Définir et gérer des stratégies de sécurité, telles que la détection de verrouillage du code confidentiel et de jailbreak au niveau de l’appareil. |Limitations sur les appareils Android 9 et ultérieurs. Voir [les détails.](capabilities.md) |Oui|
 |Profils de messagerie  |Provisionne un profil de messagerie natif sur l’appareil. |Oui|Oui|
 |Profils WiFi |Approvisionnement d’un profil WiFi natif sur l’appareil. |Non|Oui|
 |Profils VPN |Provisionne un profil VPN natif sur l’appareil. |Non|Oui|
@@ -82,7 +83,7 @@ Microsoft Intune la mobilité et la sécurité de base intégrées vous donnent 
 
 Outre les fonctionnalités répertoriées dans le tableau précédent, Basic Mobility and Security et Intune incluent un ensemble d’actions à distance qui envoient des commandes à des appareils sur Internet. Par exemple, vous pouvez supprimer des données Office de l’appareil d’un employé tout en laissant des données personnelles en place (mise en retrait), supprimer des applications Office de l’appareil d’un employé (réinitialisation) ou réinitialiser un appareil à ses paramètres d’usine (réinitialisation complète).
 
-Les actions à distance de mobilité et de sécurité de base incluent l’abandon, l’effacement et la effacement complet. Pour plus d’informations sur les actions de mobilité et de sécurité de base, voir les fonctionnalités [de Basic Mobility and Security](capabilities.md).
+Les actions à distance de mobilité et de sécurité de base incluent la retrait, l’effacement et la effacement complet. Pour plus d’informations sur les actions de mobilité et de sécurité de base, voir les fonctionnalités [de Basic Mobility and Security](capabilities.md).
 
 Avec Intune, vous avez l’ensemble d’actions suivant :
 
@@ -97,7 +98,7 @@ Avec Intune, vous avez l’ensemble d’actions suivant :
 - [Télécommande pour Android](/mem/intune/remote-actions/teamviewer-support)
 - [Verrouiller à distance](/mem/intune/remote-actions/device-remote-lock)
 - [Renommer l’appareil](/mem/intune/remote-actions/device-rename)
--  [Réinitialiser le redémarrage](/mem/intune/remote-actions/device-passcode-reset) [](/mem/intune/remote-actions/device-restart)du code   secret (Windows uniquement)
+-  [Réinitialiser le redémarrage](/mem/intune/remote-actions/device-passcode-reset) [](/mem/intune/remote-actions/device-restart)   du code secret (Windows uniquement)
 -  Mettre à jour Windows Defender Security Intelligence (Windows uniquement)
 -  Windows 10 Réinitialisation du code confidentiel (Windows uniquement)
 -  [Envoyer des notifications personnalisées](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android, iOS, iPad OS)

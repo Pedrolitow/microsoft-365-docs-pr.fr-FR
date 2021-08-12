@@ -20,19 +20,19 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Découvrez comment utiliser différents modules dans PowerShell pour supprimer Microsoft 365 comptes d’utilisateurs.
-ms.openlocfilehash: 32081d1ce0cbc7aac89b337cf8b5d08bc8e43dfa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 33a5a8d79413549d98bc0289dc1239e88cbc7c109334245cb6a7fa536477a89d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919139"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819426"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Supprimer Microsoft 365 comptes d’utilisateurs avec PowerShell
 
 Vous pouvez utiliser PowerShell pour Microsoft 365 pour supprimer et restaurer des comptes d’utilisateurs.
 
 >[!Note]
->Découvrez comment restaurer [un compte d’utilisateur à l’aide](../admin/add-users/restore-user.md) Microsoft 365'administration centrale.
+>Découvrez comment restaurer [un compte d’utilisateur à l’aide](../admin/add-users/restore-user.md) du Centre d’administration Microsoft 365.
 >
 >Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
 >   
@@ -54,7 +54,7 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> Le *paramètre -ObjectID* dans la cmdlet **Remove-AzureADUser** accepte le nom de la signature du compte, également appelé nom d’utilisateur principal ou ID d’objet du compte.
+> Le *paramètre -ObjectID* dans la cmdlet **Remove-AzureADUser** accepte soit le nom de la signature du compte, également appelé nom d’utilisateur principal, soit l’ID d’objet du compte.
   
 Pour afficher le nom du compte à partir du nom de l’utilisateur, utilisez les commandes suivantes :
   

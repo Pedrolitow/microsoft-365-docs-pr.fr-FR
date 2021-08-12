@@ -1,7 +1,7 @@
 ---
 title: Requêtes OData avec Microsoft Defender pour le point de terminaison
 ms.reviewer: ''
-description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour Endpoint.
+description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour endpoint.
 keywords: api, api pris en charge, odata, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f006a91a54af22292b5702736ea171518eb482da
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e88371ed141b54d873193df075313d2aed9786385ac4fbc07d5fe579d7bff59f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657278"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793993"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour le point de terminaison
 
@@ -195,7 +195,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 
 ### <a name="example-2"></a>Exemple 2
 
-Obtenez toutes les alertes de la dernière mise à jour après le 11-11-22 00:00:00 :
+Obtenez toutes les alertes de la dernière mise à jour après 2019-11-22 00:00:00 :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
@@ -448,7 +448,7 @@ json{
 
 ### <a name="example-7"></a>Exemple 7
 
-Obtenez le nombre d’alertes ouvertes pour un appareil spécifique :
+Obtenir le nombre d’alertes ouvertes pour un appareil spécifique :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'

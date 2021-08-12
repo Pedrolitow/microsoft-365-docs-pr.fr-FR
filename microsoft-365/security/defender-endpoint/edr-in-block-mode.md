@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/20/2021
+ms.date: 07/29/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 822d0cb12aa42d62fde3df1ec3632e400019d2e1
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: ee163b8a32bde00fe247dcc4f570ce7768c33a55e1c4c8ffc88ad7fbe08dc080
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591222"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833917"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse des points de terminaison (PEPT) en mode blocage
 
@@ -35,7 +35,7 @@ ms.locfileid: "53591222"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>Qu’est-ce PEPT en mode bloc ?
 
@@ -95,7 +95,7 @@ L’image suivante montre une instance des logiciels indésirables détectés et
 > [!IMPORTANT]
 > Pour obtenir la meilleure valeur de protection, assurez-vous que votre solution antivirus est configurée pour recevoir des mises à jour régulières et des fonctionnalités essentielles, et que vos [exclusions sont configurées.](configure-exclusions-microsoft-defender-antivirus.md) PEPT en mode bloc respecte les exclusions définies pour Antivirus Microsoft Defender, [](manage-indicators.md) mais pas les indicateurs définis pour Microsoft Defender pour endpoint.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées 
+## <a name="frequently-asked-questions"></a>Foire aux questions 
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>Ai-je besoin d’activer PEPT en mode blocage si j’ai Antivirus Microsoft Defender en cours d’exécution sur des appareils ?
 
@@ -153,7 +153,7 @@ Si Antivirus Microsoft Defender est en cours d’exécution en mode actif ou pas
 
 - Windows 10 (toutes les publications)
 - Windows Serveur, version 1803 ou plus récente 
-- Windows Server 2019 
+- Windows Server 2019 
 
 #### <a name="what-about-windows-server-2016"></a>Qu’en est-il Windows Server 2016 ? 
 

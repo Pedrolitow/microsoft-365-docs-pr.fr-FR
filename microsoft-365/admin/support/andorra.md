@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 02308bda163702560152f8641812bc15f1fde864
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ef4e0f84800ca8e2d5637efc53ab6f67b7fdf682c970f9bd55bb90df09f9d744
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804323"
 ---
 # <a name="contact-support-for-andorra"></a>Contacter le support technique de l’Andorre
 
@@ -33,10 +33,10 @@ Espagnol : Mon-Fri 10h00 à 18h00
 
 Anglais : Mon-Fri 10h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Espagnol : Mon-Fri 9 h à 22 h
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

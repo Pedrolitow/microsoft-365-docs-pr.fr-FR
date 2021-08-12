@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams réunions avec Canvas
-ms.openlocfilehash: 54dd3cc2709933ffb7b7d5fecdd181fad2abb42b
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 5ba812ba2f5694dd7860131479f01fceaba9ab2a040d1ba828306aa022665f74
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819284"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Utiliser Microsoft Teams réunions avec Canvas
 
@@ -46,7 +46,7 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 7. Sélectionnez **Accepter**.
 
-8. Activez la synchronisation Microsoft Teams l’utilisateur en activé le basculement.
+8. Activez la synchronisation Microsoft Teams l’utilisateur en activer le basculement.
 
    ![teams-sync](media/teams-sync.png)
 

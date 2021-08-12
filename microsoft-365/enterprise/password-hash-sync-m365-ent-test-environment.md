@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer la connexion et la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 9c61745fe322dce4cb2b537b18963634a97c697a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d6fdeb6391d452aee310ae9f2eecfec0e177ae4fdd76b71dcbe7a987144067dc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921503"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840930"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -118,11 +118,11 @@ Tout d’abord, installez et configurez Azure AD Connecter sur APP1.
     
 13. Sélectionnez **le compte Utilisateur1,** puis sélectionnez **Licences et applications.**
     
-14. Dans **les licences de produit,** **sélectionnez** votre emplacement (si nécessaire), désactivez la licence **Office 365 E5,** puis activez la Microsoft 365 E5 licence. 
+14. Dans **les licences de produit,** sélectionnez votre emplacement (si nécessaire), désactivez la licence **Office 365 E5,** puis activez la **licence Microsoft 365 E5** licence. 
 
 15. Sélectionnez **Enregistrer** en bas de la page, puis **Fermez.**
     
-Ensuite, testez la possibilité de vous inscrire à votre abonnement à **l’user1@testlab.< >** votre nom de domaine du compte User1 :
+Ensuite, testez la possibilité de vous inscrire à votre abonnement à **l’user1@testlab.< >** nom d’utilisateur de votre nom de domaine du compte User1 :
 
 1. Dans APP1, déconnectez-vous, puis reconnectez-vous avec un compte différent.
 
@@ -136,7 +136,7 @@ La configuration qui en résulte ressemble à ceci :
 
 Cette configuration se compose des éléments suivants :  
   
-- Microsoft 365 E5 ou Office 365 abonnements payants ou d’essai E5 avec le domaine DNS TESTLAB.<votre nom de *domaine*> enregistré.
+- Microsoft 365 E5 ou Office 365 E5 d’essai ou payants avec le domaine DNS TESTLAB.<votre nom de *domaine*> enregistré.
 - Un intranet d’organisation simplifié connecté à Internet, constitué des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connecter s’exécute sur APP1 pour synchroniser régulièrement le domaine TESTLAB AD DS avec le client Azure AD de votre abonnement Microsoft 365 client.
 - Le compte Utilisateur1 dans le domaine TESTLAB  AD DS a été synchronisé avec le client Azure AD.
 

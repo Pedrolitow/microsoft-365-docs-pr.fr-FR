@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configurer la mobilité et la sécurité de base pour sécuriser et gérer les appareils mobiles de vos utilisateurs en faisant des actions telles que la wiping à distance d’un appareil.
-ms.openlocfilehash: d878569c691fc25c8c91c5a5a29215e6284a5d71
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 9068594bdc4049336e87e3ed87ede9c4277f83fb0921d84b0b66099701aad91e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826785"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
 
@@ -128,7 +128,7 @@ Une fois que vous avez créé et déployé une stratégie de gestion des apparei
 
 Les utilisateurs avec des appareils Android ou iOS doivent installer l’application Portail d’entreprise dans le cadre du processus d’inscription.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Fonctionnalités de la mobilité et de la sécurité de](capabilities.md) base (article)\
 [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md) (article)
