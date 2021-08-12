@@ -13,16 +13,16 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: Découvrez comment créer un groupe Microsoft 365 avec un emplacement de données préféré spécifié dans un environnement multigéogé.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41984dc24e0f30e5e7b7eb0f9672c75b6d65388f
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 1a3f878e17a6d3956458be8705b43cb8e4b8fc4b843499c4ebab5998fb57eede
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086822"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53812972"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>Créer un groupe Microsoft 365 avec un emplacement de données préféré spécifique
 
-Lorsque les utilisateurs d’un environnement multigé géographique créent un groupe Microsoft 365, l’emplacement de données par favori du groupe (PDL) est automatiquement définie sur celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
+Lorsque les utilisateurs d’un environnement multigéogéal créent un groupe Microsoft 365, l’emplacement de données par favori du groupe (PDL) est automatiquement réglé sur celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
 
 Si vous devez créer un groupe avec un emplacement par défaut des données spécifique, vous le faire à l’aide de l’applet de commande Microsoft PowerShell New-UnifiedGroup d’Exchange Online ou à partir du Centre d’administration SharePoint. Lorsque vous procédez de la sorte, la boîte aux lettres de groupe et le site SharePoint associé à celui-ci sont configurés dans l’emplacement par défaut des données spécifié.
 
@@ -55,6 +55,6 @@ Notez que l’approvisionnement du site du groupe SharePoint est à la demande. 
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)

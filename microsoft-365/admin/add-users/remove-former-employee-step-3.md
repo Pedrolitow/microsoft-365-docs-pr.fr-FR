@@ -1,5 +1,5 @@
 ---
-title: 'Étape 3 : forward a former employee’s email to another employee or convert to a shared mailbox'
+title: 'Étape 3 : Forward a former employee’s email to another employee or convert to a shared mailbox'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,20 +25,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour envoyer le courrier électronique d’un ancien employé à un autre employé ou convertir en boîte aux lettres partagée.
-ms.openlocfilehash: f9d5cefd761d95a3df03864aa14de1bcfb608d04
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 07973e47dd7f79ad4adc9121c9a2f6d368bb699e22d6d2cbacb91d3b8fce4fbf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827358"
 ---
-# <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Étape 3 : forward a former employee’s email to another employee or convert to a shared mailbox
+# <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Étape 3 : Forward a former employee’s email to another employee or convert to a shared mailbox
 
 Dans cette étape, vous affectez l’adresse de messagerie de l’ancien employé à un autre employé ou convertissez la boîte aux lettres de l’utilisateur en boîte aux lettres partagée.
 
 ## <a name="convert-former-employees-mailbox-to-a-shared-mailbox"></a>Convertir la boîte aux lettres d’un ancien employé en boîte aux lettres partagée
 
-Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux lettres partagée, l’ensemble du courrier électronique et du calendrier existants est conservé. Ce n’est que maintenant que dans une boîte aux lettres partagée que plusieurs personnes pourront y accéder au lieu d’une seule personne. Vous pouvez reconverti une boîte aux lettres partagée en boîte aux lettres utilisateur (privée) à une date ultérieure si vous le souhaitez.
+Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux lettres partagée, l’ensemble du courrier électronique et du calendrier existants est conservé. Ce n’est que maintenant que dans une boîte aux lettres partagée que plusieurs personnes pourront y accéder au lieu d’une seule personne. Si vous le souhaitez, vous pouvez reconverti une boîte aux lettres partagée en boîte aux lettres utilisateur (privée).
 
 - La création d'une boîte aux lettres partagée est la solution la plus économique car aucune licence payante n'est requise **tant que la boîte aux lettres ne dépasse pas les 50 Go**. Au-delà de 50 Go, vous devrez acheter une licence.
 - Si vous convertissez la boîte aux lettres en boîte aux lettres partagée, les anciens courriers seront également disponibles. Ceux-ci peuvent occuper beaucoup d'espace.
@@ -58,7 +58,7 @@ Suivez ces étapes pour convertir la boîte aux lettres de [l’utilisateur en b
 5. Sélectionnez **Enregistrer**.
 6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ouvrir et utiliser une boîte aux lettres partagée dans Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
 

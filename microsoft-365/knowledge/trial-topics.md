@@ -12,12 +12,12 @@ ms.custom: ''
 search.appverid: ''
 localization_priority: Normal
 description: Découvrez comment planifier et exécuter un programme pilote d’essai pour Sujets Microsoft Viva votre organisation.
-ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 529d201203c45a5b3f39d1c6ac0f1a3a7f691aaba23098dafc32a42911247aca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649622"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834682"
 ---
 # <a name="run-a-trial-of-microsoft-viva-topics"></a>Exécuter une version d’Sujets Microsoft Viva
 
@@ -62,7 +62,7 @@ Il existe deux options de stratégie de haut niveau pour la configuration de la 
   - L’indexation complète des locataires importants peut prendre jusqu’à deux semaines. Bien que les rubriques soient générées de manière incrémentielle tout au long de cette période, l’indexation complète peut consommer jusqu’à la moitié de la période d’essai.
   - Pour les clients avec un volume important de données, cette option peut produire un très grand nombre de rubriques, voire des dizaines de milliers.
 
-- Identifiez un sous-ensemble de vos sites SharePoint pour l’indexation.
+- Identifiez un sous-ensemble de vos sites SharePoint à indexer.
 
 Le choix de ces stratégies est un équilibre entre les deux facteurs suivants :
 
@@ -80,7 +80,7 @@ Au cours de la version d’essai, trois rôles doivent être actifs, qui sont d�
 
 |Rôle|Activité|
 |---|---|
-|Gestionnaire des connaissances|Contrôler les étapes du cycle de vie des rubriques ; confirmer et supprimer des rubriques ; agir en tant que gestionnaire de communauté pour les contributeurs de rubriques ;|
+|Gestionnaire des connaissances|Contrôler les étapes du cycle de vie des rubriques ; confirmer et supprimer des rubriques ; agir en tant que gestionnaire de communauté pour les collaborateurs de rubriques ;|
 |Contributeur de rubrique|Experts techniques du contenu, qui peuvent :<br> Examiner les rubriques pour évaluer la qualité du contenu défini par l’IA<br>Organiser des rubriques découvertes avec du contenu supplémentaire<br>Créer des rubriques supplémentaires qui n’ont pas été découvertes par l’IA|
 |Consommateur de rubriques|Utiliser des rubriques par le biais des points forts de la page et de la recherche<br>Fournir des commentaires sur la valeur des rubriques présentées|
 
@@ -99,8 +99,8 @@ Vous aurez toujours besoin d’une combinaison de rubriques définies par l’IA
 
 Lorsque vous lancez une version d’essai, vous devez :
 
-- Attribuer des licences aux utilisateurs concernés.
-- Effectuez [une configuration](set-up-topic-experiences.md) supplémentaire de Rubriques Sous-programme.
+- Attribuez des licences aux utilisateurs concernés.
+- Effectuez [une configuration](set-up-topic-experiences.md) supplémentaire de Rubriques.
 
 Lorsque la version d’évaluation est activée, le processus de découverte de sujet commence.
 
@@ -115,7 +115,7 @@ Tenez compte de ces facteurs :
 
 - Pour que Topics offre la valeur maximale, le contenu des rubriques doit être une combinaison de contenu défini par l’IA et de contenu organisé par l’être humain.
 - Toutes les expériences utilisateur sont « découpées en autorisations » (y compris l’affichage du gestionnaire de connaissances sur la page Gérer **les rubriques).** Les utilisateurs ne voient une rubrique que s’ils sont autorisés à afficher certaines des ressources qui ont été utilisées pour générer la rubrique. Cela signifie que différents utilisateurs peuvent voir un contenu différent sur la même page de rubrique.
-- Les utilisateurs peuvent voir plusieurs rubriques qui ont le même nom dans la page **Gérer les rubriques.** Ces rubriques ne sont pas nécessairement des doublons, mais peuvent être dues à un seul terme utilisé dans plusieurs contextes dans les données, tel qu’un nom de code de projet utilisé par deux projets distincts.
+- Les utilisateurs peuvent voir plusieurs rubriques qui ont le même nom dans la page **Gérer les rubriques.** Ces rubriques ne sont pas nécessairement des doublons, mais peuvent être dues à un seul terme utilisé dans plusieurs contextes dans les données, comme un nom de code de projet utilisé par deux projets distincts.
 
 ## <a name="after-a-trial"></a>Après une version d’essai
 
@@ -133,7 +133,7 @@ Si vous n’achetez pas de licences à la suite de la version d’essai :
 - Les utilisateurs ne voient plus les points forts ou les cartes des rubriques.
 - Le centre de rubriques ne sera pas supprimé, mais les rubriques suggérées et les expériences de gestion des rubriques ne seront pas disponibles.
 - Toutes les rubriques définies par l’IA seront perdues.
-- Les rubriques qui ont été modifiées par un collaborateur de rubrique resteront dans la bibliothèque de pages du centre de rubriques. Seul le contenu fourni manuellement reste sur ces pages, pas sur le contenu suggéré par l’IA.
+- Les rubriques qui ont été modifiées par un collaborateur de rubrique resteront dans la bibliothèque de pages du centre de rubriques. Seul le contenu fourni manuellement reste sur ces pages, pas sur tout contenu suggéré par l’IA.
 
 ## <a name="see-also"></a>Voir aussi
 

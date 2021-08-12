@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: Découvrez comment réinitialiser le mot de passe et envoyer un message électronique à un nouvel Microsoft 365 utilisateur.
-ms.openlocfilehash: 916ac2f92f8cd6a7236525c733d4b5061368b0ef
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: edf6adb8c0485e094d13c2ec0cde3b9ae1f537fb91f0b86cd5d8b213ecb6bd62
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827370"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur
 

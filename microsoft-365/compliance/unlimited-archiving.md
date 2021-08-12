@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez l’archivage à extension automatique, qui fournit un stockage d’archivage illimité pour Exchange Online boîtes aux lettres.
-ms.openlocfilehash: d61d3649ed65a93298928cced21180bbeca6aa95
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 20be08209bbd4bad3bf0bdb0e7de4d602ee995a2873116981a9f7d892ffd1e46
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476265"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841262"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Vue d’ensemble de l’archivage illimité
 
@@ -74,7 +74,7 @@ Les captures d’écran suivantes montrent une liste de dossiers avant et après
 ![Liste de dossiers de boîte aux lettres d’archivage après la mise en service de l’archive à extension automatique](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
-> Comme décrit précédemment, Microsoft 365 déplace les éléments vers des sous-documents (et les nomme à l’aide de la convention d’attribution de noms décrite ci-dessus) pour faciliter la distribution du contenu vers une archive auxiliaire. Toutefois, le déplacement d’éléments vers des sous-dossiers peut ne pas toujours être le cas. Parfois, un dossier entier peut être déplacé vers une archive auxiliaire. Dans ce cas, le dossier conserve son nom d’origine.  Il n’apparaît pas dans la liste des dossiers Outlook que le dossier a été déplacé vers une archive auxiliaire.
+> Comme décrit précédemment, Microsoft 365 déplace les éléments vers des sous-documents (et les nomme à l’aide de la convention d’attribution de noms décrite ci-dessus) pour aider à distribuer le contenu vers une archive auxiliaire. Toutefois, le déplacement d’éléments vers des sous-dossiers peut ne pas toujours être le cas. Parfois, un dossier entier peut être déplacé vers une archive auxiliaire. Dans ce cas, le dossier conserve son nom d’origine.  Il n’apparaît pas dans la liste des dossiers Outlook que le dossier a été déplacé vers une archive auxiliaire.
 
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Outlook’accès aux éléments dans une archive à extension automatique
 
@@ -92,9 +92,9 @@ Voici quelques éléments à prendre en compte lorsque vous utilisez Outlook ou 
 
 - La recherche d’archivage à extension automatique est disponible dans Outlook pour le web (OWA). À l’exemple de l’archive en ligne, vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire. Lorsque l’archive est sélectionnée en tant qu’étendue de recherche dans OWA, toutes les archives (y compris les archives à extension automatique) et leurs sous-documents correspondants sont recherchés.
 
-- La recherche d’archives à extension automatique est disponible dans Outlook bureau dans le canal actuel (prévisualisation). Dans cet aperçu, l’étendue Boîte aux lettres actuelle est disponible, ce qui vous permet d’effectuer des recherches dans l’archive à extension automatique. Pour plus d’informations sur cette fonctionnalité et d’autres fonctionnalités de support microsoft Search, voir Comment Outlook pour Windows connecté à Exchange Online utilise Microsoft Search ( recherche [Microsoft).](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045) 
+- La recherche d’archives à extension automatique est disponible dans Outlook bureau dans le canal actuel (prévisualisation). Dans cet aperçu, l’étendue Boîte aux lettres actuelle est disponible, ce qui vous permet d’effectuer des recherches dans l’archive à extension automatique. Pour plus d’informations sur cette fonctionnalité et d’autres [fonctionnalités](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)Recherche Microsoft prise en charge, voir Comment Outlook pour Windows connecté à Exchange Online utilise Recherche Microsoft . 
 
-- Le nombre d’éléments dans Outlook et le nombre de lecture/non lus (dans Outlook et Outlook sur le web) dans une archive à extension automatique peuvent ne pas être exacts.
+- Le nombre d’éléments Outlook et le nombre de lecture/non lus (en Outlook et Outlook sur le web) dans une archive à extension automatique peuvent ne pas être exacts.
 
 - Vous pouvez supprimer des éléments dans un sous-dossier qui pointe vers une zone de stockage à extension automatique, mais le dossier lui-même ne peut pas être supprimé.
 
@@ -112,6 +112,6 @@ Cette section explique la fonctionnalité entre l’archivage à extension autom
 
 - **Service d’importation :** Vous pouvez utiliser le service d Office 365 pour importer des fichiers PST dans l’archive à extension automatique d’un utilisateur. Vous pouvez importer jusqu’à 100 Go de données à partir de fichiers PST dans la boîte aux lettres d’archivage de l’utilisateur.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Pour plus d’informations techniques sur l’archivage à extension automatique, voir [Microsoft 365: Auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).

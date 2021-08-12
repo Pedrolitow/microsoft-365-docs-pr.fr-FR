@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b98ee3bfb4c7bc8cb3c8c098215d53eddd6c99db
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8116d5d1caaa24951ad9baf9e291bf3fd850abfbe7ae2402022f8fafcf883673
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834598"
 ---
 # <a name="work-with-reports"></a>Utiliser les rapports
 
@@ -27,14 +27,14 @@ Sous **l’onglet Résumé,** vous trouverez des mesures rapides sur les mises �
 
 Lorsque vous sélectionnez **l’onglet Rapports,** vous verrez des descriptions pour les rapports détaillés disponibles. Ces rapports sont plus complets et permettent de visualiser et de filtrer les données dans le portail, ainsi que d’exporter les données sous-jacentes pour l’analyse ou la distribution hors connexion. Les rapports suivants sont disponibles aujourd’hui :
 - L’état *de l’appareil (aperçu)* indique votre utilisation du service Microsoft Manged Desktop en fonction de l’activité et de l’utilisation de l’appareil.  
-- Vous pouvez utiliser la **tendance de l’état** de l’appareil *(prévisualisation)* pour surveiller les tendances de l’état de l’appareil au cours des 60 derniers jours pour Microsoft Manged Desktop appareils. Les tendances peuvent vous aider à associer l’état de l’appareil à d’autres modifications au fil du temps, par exemple de nouveaux déploiements. 
+- Vous pouvez utiliser la **tendance de l’état** de l’appareil *(prévisualisation)* pour surveiller les tendances de l’état de l’appareil au cours des 60 derniers jours pour Microsoft Manged Desktop appareils mobiles. Les tendances peuvent vous aider à associer l’état de l’appareil à d’autres modifications au fil du temps, par exemple de nouveaux déploiements. 
 - Le **Windows** des mises à jour de sécurité *(prévisualisation)* montre comment Windows mises à jour de sécurité sont publiées sur Microsoft Manged Desktop appareils.
 
 > [!NOTE]
 > Les rapports dans *(prévisualisation)* peuvent changer avec une notification limitée lorsque nous a apportées des améliorations en fonction des commentaires que nous recevons lors de la prévisualisation publique.
 
 ## <a name="endpoint-analytics"></a>Analyse des points de terminaison
-Microsoft Manged Desktop est désormais intégré à [l’analyse des points de terminaison.](/mem/analytics/overview) Ces rapports vous donnent des informations sur la mesure du fonctionnement de votre organisation et de la qualité de l’expérience qu’elle offre à vos utilisateurs. L’analyse des points de terminaison se trouve **dans le** menu Rapports [de Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Pour faire pivoter un score afin d’inclure uniquement les  appareils gérés par Microsoft Manged Desktop allez à n’importe quel rapport, sélectionnez le filtre de la baisse, puis sélectionnez **Microsoft Manged Desktop appareils.**
+Microsoft Manged Desktop est désormais intégré à [l’analyse des points de terminaison.](/mem/analytics/overview) Ces rapports vous donnent des informations sur la mesure du fonctionnement de votre organisation et de la qualité de l’expérience qu’elle offre à vos utilisateurs. L’analyse des points de terminaison se trouve **dans le** menu Rapports [de Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Pour faire pivoter un score afin d’inclure uniquement les  appareils gérés par Microsoft Manged Desktop allez à n’importe quel rapport, sélectionnez le filtre de la baisse, puis sélectionnez Microsoft Manged Desktop **appareils.**
 
 Si l’analyse des points de terminaison n’a pas été configurée automatiquement pour votre organisation Azure AD (« client ») lors de l’inscription, vous pouvez le faire vous-même. Pour plus d’informations, [voir Intégrer dans le portail d’analyse des points de terminaison.](/mem/analytics/enroll-intune#bkmk_onboard) Vous pouvez inscrire tous vos appareils ou, si vous souhaitez inclure  uniquement des appareils Microsoft Manged Desktop, sélectionnez les groupes d’appareils d’espace de travail modernes pour Test, Premier, Rapide et Large. Ces rapports peuvent nécessiter des autorisations différentes. Pour plus d’informations, [voir Autorisations](/mem/analytics/overview#permissions) pour vous assurer que des rôles sont correctement attribués.
 

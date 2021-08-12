@@ -1,5 +1,5 @@
 ---
-title: Configurer Les rubriques microsoft
+title: Configurer Sujets Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Découvrez comment configurer les rubriques microsoft
-ms.openlocfilehash: 42f84b9b792907d7fe118e0b15c3767674ddf19b
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: Découvrez comment configurer Sujets Microsoft Viva
+ms.openlocfilehash: 65c679889c60b69ae60a4649b64224f7970f57e58feb5f40a391e0acc257966c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834843"
 ---
-# <a name="set-up-microsoft-viva-topics"></a>Configurer Les rubriques microsoft
+# <a name="set-up-microsoft-viva-topics"></a>Configurer Sujets Microsoft Viva
 
 Vous pouvez utiliser la Centre d’administration Microsoft 365 pour configurer des [rubriques.](topic-experiences-overview.md) 
 
-Il est important de planifier la meilleure façon de configurer des rubriques dans votre environnement. Veillez à lire [les rubriques planifier microsoft avant](plan-topic-experiences.md) de commencer les procédures de cet article.
+Il est important de planifier la meilleure façon de configurer des rubriques dans votre environnement. Veillez à lire [La Sujets Microsoft Viva](plan-topic-experiences.md) avant de commencer les procédures de cet article.
 
 Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d’administration Microsoft 365 et configurer Rubriques.
 
@@ -37,7 +37,7 @@ Cette vidéo montre le processus de configuration des rubriques dans Microsoft 3
 
 <br>
 
-## <a name="assign-licenses"></a>Attribuer les licences
+## <a name="assign-licenses"></a>Attribuer des licences
 
 Vous devez attribuer des licences pour les utilisateurs qui utiliseront Rubriques. Seuls les utilisateurs disposant d’une licence peuvent voir des informations sur les sujets, notamment les points forts, les cartes de rubriques, les pages de rubriques et le centre thématique. 
 
@@ -52,7 +52,7 @@ Pour attribuer des licences :
 4. Sous **Applications,** assurez-vous **que Graph connectors search with Index (Topics)** et **Topics Topics sont** tous deux sélectionnés.
 
    > [!div class="mx-imgBorder"]
-   > ![Licences Microsoft Topics dans le Centre d’administration Microsoft 365](../media/topic-experiences-licenses.png)
+   > ![Sujets Microsoft Viva licences dans le Centre d’administration Microsoft 365](../media/topic-experiences-licenses.png)
 
 5. Cliquez sur **Enregistrer les modifications**.
 
@@ -153,10 +153,10 @@ Pour configurer des rubriques
 
 Une fois que vous avez configuré Rubriques, vous pouvez modifier les paramètres que vous avez choisis lors de l’installation dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement). Si vous souhaitez en savoir plus, veuillez consulter les références suivantes :
 
-- [Gérer la découverte de rubriques dans les rubriques microsoft](topic-experiences-discovery.md)
-- [Gérer la visibilité des rubriques dans les rubriques microsoft](topic-experiences-knowledge-rules.md)
-- [Gérer les autorisations des rubriques dans les rubriques microsoft](topic-experiences-user-permissions.md)
-- [Modifier le nom du centre de rubriques dans Rubriques microsoft](topic-experiences-administration.md)
+- [Gérer la découverte de rubriques dans Sujets Microsoft Viva](topic-experiences-discovery.md)
+- [Gérer la visibilité des rubriques dans Sujets Microsoft Viva](topic-experiences-knowledge-rules.md)
+- [Gérer les autorisations de rubrique dans Sujets Microsoft Viva](topic-experiences-user-permissions.md)
+- [Modifier le nom du centre de rubriques dans Sujets Microsoft Viva](topic-experiences-administration.md)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment utiliser le Centre de conformité pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
-ms.openlocfilehash: 72aa3f194197140cd86463598a17ab07fbbd647a
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 7a65a8347c1da2baf08c135a1818cf0d60dc13838e6acf858a6e0e70a10fcf97
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341687"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796081"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre conformité
 
@@ -68,7 +68,7 @@ Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez ê
 
 Vous pouvez également utiliser la page **Archive** dans le Centre de sécurité et conformité pour désactiver la boîte aux lettres d’archivage d’un utilisateur. Si vous désactivez la boîte aux lettres d’un utilisateur, vous pouvez la reconnecter à la boîte aux lettres principale de l’utilisateur dans les 30 jours qui suivent sa désactivation. Dans ce cas, le contenu d’origine de la boîte aux lettres d’archivage est restauré. Au bout de 30 jours, le contenu de la boîte aux lettres d’archivage d’origine est supprimé définitivement et ne peut pas être récupéré. Par conséquent, si vous réactivez l’archive plus de 30 jours après l’avoir désactivée, une nouvelle boîte aux lettres d’archivage est créée.
 
-La stratégie d’archivage par défaut affectée aux boîtes aux lettres des utilisateurs déplace les éléments vers la boîte aux lettres d’archivage deux ans après leur date de remise. Si vous désactivez la boîte aux lettres d’archivage d’un utilisateur, aucune action n’est effectuée sur les éléments de boîte aux lettres et ceux-ci restent dans la boîte aux lettres principale de l’utilisateur.
+La stratégie d’archivage par défaut affectée aux boîtes aux lettres des utilisateurs déplace les éléments dans la boîte aux lettres d’archivage deux ans après la date de remise de l’élément. Si vous désactivez la boîte aux lettres d’archivage d’un utilisateur, aucune action n’est effectuée sur les éléments de boîte aux lettres et ceux-ci resteront dans la boîte aux lettres principale de l’utilisateur.
 
 Pour désactiver une boîte aux lettres d’archivage :
 
@@ -96,7 +96,7 @@ Pour désactiver une boîte aux lettres d’archivage :
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Utiliser Exchange Online PowerShell pour activer ou désactiver les boîtes aux lettres d’archivage
 
-Vous pouvez également utiliser Exchange Online PowerShell pour activer les boîtes aux lettres d’archivage. La principale raison d’utiliser PowerShell est que vous pouvez activer rapidement la boîte aux lettres d’archivage pour tous les utilisateurs au sein de votre organisation.
+Vous pouvez également utiliser Exchange Online PowerShell pour activer les boîtes aux lettres d’archivage. La principale raison d'utiliser PowerShell est que vous pouvez activer rapidement la boîte aux lettres d'archivage pour tous les utilisateurs de votre organisation.
 
 La première étape consiste à se connecter à Exchange Online PowerShell. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 

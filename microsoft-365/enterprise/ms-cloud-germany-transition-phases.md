@@ -17,17 +17,17 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Résumé : Comprendre les actions et les impacts des phases de migration du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: eefc1f54f20d1d59a8732cdd75356039bc434f91
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+description: 'Résumé : Comprendre les actions et les impacts des phases de migration du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers des services Office 365 dans la nouvelle région de centres de données allemands.'
+ms.openlocfilehash: 93b243f60b485d1dfbcca62219cf510c006fdbbc20fc264b179720f9ad2a9bcc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726271"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813029"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Actions et impacts des phases de migration pour la migration à partir de Microsoft Cloud Deutschland
 
-Les migrations de clients de Microsoft Cloud Deutschland (MCD) vers la région « Allemagne » des services globaux Office 365 de Microsoft sont exécutées en tant qu’ensemble de phases et leurs actions configurées pour chaque charge de travail. Cette figure montre les dix phases de migration vers les nouveaux centres de données allemands.
+Les migrations de clients de Microsoft Cloud Deutschland (MCD) vers la région « Allemagne » des services globaux Office 365 de Microsoft sont exécutées sous la forme d’un ensemble de phases et de leurs actions configurées pour chaque charge de travail. Cette figure montre les dix phases de migration vers les nouveaux centres de données allemands.
 
 [![Les dix phases de migration vers les nouveaux centres de données allemands ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
@@ -47,23 +47,23 @@ Le processus de migration s’achèvera sur plusieurs semaines en fonction de la
 |Azure Active Directory (Azure AD)|1 à 2 jours|Microsoft|Migrez l’organisation Azure AD vers le monde entier.|
 |Azure|Semaines|Client|Créez des abonnements Azure dans le monde entier et [transition des services Azure.](/azure/azure-resource-manager/management/move-resource-group-and-subscription)|
 |Transition de licence & abonnement|1 à 2 jours|Microsoft|Acheter des abonnements dans le monde entier, annuler des abonnements Microsoft Cloud Deutschland et passer des licences utilisateur.|
-|SharePoint et OneDrive|15+ jours|Microsoft|Migrer du contenu SharePoint et OneDrive Entreprise, en sharepoint.de URL.|
-|Exchange Online|15+ jours|Microsoft|Migrez le contenu Exchange Online et migrez vers des URL dans le monde entier.|
+|SharePoint et OneDrive|15+ jours|Microsoft|Migrez SharePoint et OneDrive Entreprise contenu, en sharepoint.de URL.|
+|Exchange Online|15+ jours|Microsoft|Migrez Exchange Online contenu et migrez vers des URL dans le monde entier.|
 |Sécurité et conformité|1 à 2 jours|Microsoft|Transition de la sécurité & stratégies de conformité et du contenu.|
-|Skype Entreprise|1 à 2 jours|Microsoft|Transition de Skype Entreprise vers Microsoft Teams.|
-|Power BI & Dynamics 365|15+ jours|Microsoft|Migrez le contenu Power BI et Dynamics 365.|
+|Skype Entreprise|1 à 2 jours|Microsoft|Passer d’Skype Entreprise à Microsoft Teams.|
+|Power BI & Dynamics 365|15+ jours|Microsoft|Migrez Power BI contenu Dynamics 365.|
 |Finaliser Azure AD|1 à 2 jours|Microsoft|Effectuer un cutover client dans le monde entier.|
-|Clean-Up|1 à 2 jours|Client|Nettoyez les connexions héritées à Microsoft Cloud Deutschland, telles que l’confiance de partie de confiance AD FS (Active Directory Federation Services), Azure AD Connect et les redémarrages du client Office.|
-|Points de terminaison désactivés|30 jours|Microsoft|30 jours après la finalisation d’Azure AD, le service Microsoft Cloud Deutschland Azure AD arrêtera l’accès au point de terminaison pour l’organisation en transition. Les demandes de point de terminaison telles que l’authentification échoueront à partir de là par rapport au service Microsoft Cloud Deutschland. Les clients exécutant des charges de travail Azure dans l’instance liée aux services Office 365 dans Microsoft Cloud Deutschland seront déplacés vers la phase de migration finale ultérieurement.|
+|Clean-Up|1 à 2 jours|Client|Nettoyez les connexions héritées à Microsoft Cloud Deutschland, telles que l’confiance de partie de confiance des services AD FS (Active Directory Federation Services), azure AD Connecter et le client Office redémarrage.|
+|Points de terminaison désactivés|30 jours|Microsoft|30 jours après la finalisation d’Azure AD, le service Microsoft Cloud Deutschland Azure AD arrêtera l’accès au point de terminaison pour l’organisation en transition. Les demandes de point de terminaison telles que l’authentification échoueront à partir de là par rapport au service Microsoft Cloud Deutschland. Les clients exécutant des charges de travail Azure dans l’instance liée aux services Office 365 Microsoft Cloud Deutschland seront déplacés ultérieurement vers la phase de migration finale.|
 |
 
-Les phases et leurs actions garantissent que les données et expériences critiques sont migrées vers les services globaux Office 365. Une fois que votre client est ajouté à la file d’attente de migration, chaque charge de travail est exécutée en tant qu’ensemble d’étapes exécutées sur le service backend. Certaines charges de travail peuvent nécessiter des actions de l’administrateur (ou de l’utilisateur) ou la migration peut affecter l’utilisation des phases exécutées et abordées dans Comment la migration est-elle [organisée ?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
+Les phases et leurs actions garantissent que les données et expériences critiques sont migrées vers Office 365 services globaux. Une fois que votre client est ajouté à la file d’attente de migration, chaque charge de travail est exécutée en tant qu’ensemble d’étapes exécutées sur le service backend. Certaines charges de travail peuvent nécessiter des actions de l’administrateur (ou de l’utilisateur) ou la migration peut affecter l’utilisation des phases exécutées et abordées dans Comment la migration est-elle [organisée ?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
-Les sections suivantes contiennent des actions et des effets pour les charges de travail au fil de différentes phases de la migration. Examinez les tableaux et déterminez les actions ou effets applicables à votre organisation. Assurez-vous que vous êtes prêt à exécuter les étapes des phases respectives, le cas échéant. L’échec des étapes nécessaires peut entraîner une panne du service et retarder l’achèvement de la migration vers les services Office 365.
+Les sections suivantes contiennent des actions et des effets pour les charges de travail au fil de différentes phases de la migration. Examinez les tableaux et déterminez les actions ou effets applicables à votre organisation. Assurez-vous que vous êtes prêt à exécuter les étapes des phases respectives, le cas échéant. L’échec de la réalisation des étapes nécessaires peut entraîner une panne du service et retarder l’achèvement de la migration vers les services Office 365 services.
 
 ## <a name="phase-opt-in"></a>Phase : Opt-In
 
-S’applique à **:** tous les clients avec un client Office 365 hébergé dans Microsoft Cloud Deutschland (MCD) Microsoft ne peuvent pas migrer les clients Office 365 hébergés dans mcd sans le consentement.
+S’applique à **:** tous les clients avec un client Office 365 hébergé dans Microsoft Cloud Deutschland (MCD) Microsoft ne peuvent pas migrer les clients Office 365 hébergés dans mcd sans consentement.
 
 <br>
 
@@ -71,8 +71,8 @@ S’applique à **:** tous les clients avec un client Office 365 hébergé dans 
 
 |Étapes|Description|Impact|
 |---|---|---|
-|**Tâche du client**: accorder le consentement pour la migration|Le client donne son consentement pour la migration afin que Microsoft obtient le droit de migrer et d’orchestrer la transition des données et des services vers l’instance des services globaux Office 365. Il existe deux façons : <ol><li>L’administrateur client Office 365 choisit la migration pilotée par Microsoft.</li><li>Les clients ont renouvelé tous les abonnements dans leur client McD Office 365 après le 1er mai 2020. Microsoft informe ces clients du droit de migration chaque mois, attend 30 jours pour donner aux clients la possibilité d’annuler, puis d’y opter directement.</li></ol>|<ul><li>Le client est marqué comme étant accepté pour la migration et le Centre d’administration affiche la confirmation.</li><li>L’accusé de réception est publié dans le centre de messages du client Office 365. La configuration du service se poursuit à partir des points de terminaison Microsoft Cloud Deutschland.</li></ul>
-|**Administrateur client :** surveiller les messages|L’administrateur client doit surveiller le Centre de messages Office 365 pour les mises à jour sur l’état de la phase de migration à partir de cette heure.|Le client peut exécuter les tâches nécessaires dans le temps.
+|**Tâche du client**: accorder le consentement pour la migration|Le client donne son consentement pour la migration afin que Microsoft obtient le droit de migrer et d’orchestrer la transition des données et des services vers l’instance Office 365 services globaux. Il existe deux façons : <ol><li>L Office 365 de client choisit la migration pilotée par Microsoft.</li><li>Les clients ont renouvelé tous les abonnements dans leur Office 365 client MCD après le 1er mai 2020. Microsoft informe ces clients du droit de migration chaque mois, attend 30 jours pour donner aux clients la possibilité d’annuler, puis d’y opter directement.</li></ol>|<ul><li>Le client est marqué comme étant accepté pour la migration et le Centre d’administration affiche la confirmation.</li><li>L’accusé de réception est publié dans Office 365 de messages du client. La configuration du service se poursuit à partir des points de terminaison Microsoft Cloud Deutschland.</li></ul>
+|**Administrateur client :** surveiller les messages|L’administrateur client doit surveiller le centre Office 365 messages pour les mises à jour sur l’état de la phase de migration à partir de cette heure.|Le client peut exécuter les tâches nécessaires dans le temps.
 |
 
 ## <a name="phase-1-before-the-migration-starts"></a>Phase 1 : Avant le début de la migration
@@ -81,7 +81,7 @@ Assurez-vous que vous êtes familiarisé avec les étapes de préparation de [la
 
 Si vous avez définie un DNS CNAME appelé _msoid_ dans un ou plusieurs espaces de noms DNS que vous possédez, vous devez supprimer le CNAME jusqu’à la fin de la phase 8 au plus tard. Vous pouvez supprimer le _msoid_ CNAME à tout moment avant la fin de la phase 8. Consultez [les prétravails pour DNS.](ms-cloud-germany-transition-add-pre-work.md#dns-entries-for-custom-domains)
 
-Si vous utilisez l' sign on unique pour Office 365 et Azure dans l’instance Microsoft Cloud Deutschland, vous devez préparer et planifier votre migration d’abonnement Azure en conséquence. Assurez-vous de bien comprendre [les prétravails de Microsoft Azure.](ms-cloud-germany-transition-add-pre-work.md#microsoft-azure)
+Si vous utilisez l' sign on unique pour Office 365 et Azure dans l’instance Microsoft Cloud Deutschland, vous devez préparer et planifier votre migration d’abonnement Azure en conséquence. Assurez-vous que vous comprenez [les prétravails pour Microsoft Azure](ms-cloud-germany-transition-add-pre-work.md#microsoft-azure).
 
 ### <a name="azure-ad-connect-with-ad-fs-federation"></a>Azure AD Connecter fédération AD FS
 

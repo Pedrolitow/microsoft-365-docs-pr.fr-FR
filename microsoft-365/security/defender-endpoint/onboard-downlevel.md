@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5924b564cbde200619366a26766772997104f2ce
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 70ef9aabd86169cd64f252f26a792a380dc6fe44ddb7060bd6c7a8f19d3c6c22
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651866"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806195"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Intégrer des versions antérieures de Windows
 
@@ -84,15 +84,15 @@ Examinez les détails suivants pour vérifier la minimale requise :
 
 - Respectez la taille minimale requise de l’agent Azure Log Analytics. Pour plus d’informations, voir [Collecter des données à partir d’ordinateurs](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)de votre environnement avec Log Analytics.
 
-1. Téléchargez le fichier d’installation de l Windows [agent 64 bits](https://go.microsoft.com/fwlink/?LinkId=828603) [ou Windows agent 32 bits.](https://go.microsoft.com/fwlink/?LinkId=828604)
+1. Téléchargez le fichier de configuration de [l’agent : Windows agent 64 bits](https://go.microsoft.com/fwlink/?LinkId=828603) ou Windows agent [32 bits.](https://go.microsoft.com/fwlink/?LinkId=828604)
 
-2. Obtenez l’ID d’espace de travail :
+2. Obtenez l’ID de l’espace de travail :
    - Dans le volet de navigation Defender pour les points de terminaison, sélectionnez Paramètres > points de terminaison > gestion des > **l’intégration**
    - Sélectionnez **Windows 7 SP1 et 8.1 comme** système d’exploitation
    - Copier l’ID d’espace de travail et la clé d’espace de travail
 
 3. À l’aide de l’ID d’espace de travail et de la clé d’espace de travail, choisissez l’une des méthodes d’installation suivantes pour installer l’agent :
-    - [Installer manuellement l’agent à l’aide du programme d’installation.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)
+    - [Installez manuellement l’agent à l’aide du programme d’installation.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)
 
       Dans la page **Options de configuration** de l’agent, **sélectionnez Connecter l’agent dans Azure Log Analytics (OMS)**
 
@@ -109,7 +109,7 @@ Une fois terminé, vous devriez voir les points de terminaison intégrés dans l
 ### <a name="configure-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy et de connectivité Internet
 
 - Chaque Windows point de terminaison doit pouvoir se connecter à Internet à l’aide du protocole HTTPS. Cette connexion peut être directe, à l’aide d’un proxy ou via la [passerelle OMS.](/azure/log-analytics/log-analytics-oms-gateway)
-- Si un proxy ou un pare-feu bloque l’ensemble du trafic par défaut et n’autorise que des domaines spécifiques ou que l’analyse HTTPS (inspection SSL) est activée, assurez-vous d’activer l’accès aux URL du [service Defender for Endpoint.](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)
+- Si un proxy ou un pare-feu bloque tout le trafic par défaut et n’autorise que des domaines spécifiques ou que l’analyse HTTPS (inspection SSL) est activée, assurez-vous d’activer l’accès aux URL du [service Defender for Endpoint.](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)
 
 ## <a name="offboard-client-endpoints"></a>Points de terminaison du client de hors-carte
 

@@ -1,6 +1,6 @@
 ---
-title: Commencer à piloter l’adoption des rubriques microsoft
-description: Découvrez comment stimuler l’adoption de Rubriques Microsoft Dans votre organisation.
+title: Commencer à piloter l’adoption de Sujets Microsoft Viva
+description: Découvrez comment stimuler l’adoption des Sujets Microsoft Viva dans votre organisation.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: e8d7ca4786893fb5eb39090d9a271ace1c62d321
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 591b83823aac1679209ed6cdd0069d559e9fe3e7adfbf7a3f24f0730f37ce912
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834698"
 ---
-# <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Commencer à piloter l’adoption des rubriques microsoft
+# <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Commencer à piloter l’adoption de Sujets Microsoft Viva
 
 Avant de commencer l’adoption, vous devez comprendre les concepts impliqués dans la gestion des connaissances et rubriques. Le diagramme suivant illustre ce qui se produit lors de la découverte et de la curation des rubriques :
 
@@ -41,7 +41,7 @@ Gardez à l’esprit que :
 Pour vous aider à vous préparer, réfléchissez à ces questions :
 
 - Quel contenu doit être utilisé pour la découverte de sujets ?
-- Qui gérera les rubriques ?
+- Qui gérera les rubriques ?
 - Qui verra les cartes de sujets et les points forts ?
 - Quels sont les sujets attendus ?
 
@@ -50,7 +50,7 @@ Examinez cette liste de conditions préalables pour tirer le meilleur parti de S
 |Produit ou fonctionnalité |Description |
 |:-------|:--------|
 |SharePoint Online avec des pages SharePoint modernes |L’exploration de rubriques inclut uniquement le contenu SharePoint sites web, et les cartes de sujet ne peuvent être pointées que sur des pages modernes.|
-|Microsoft Graph |Vous pouvez contrôler l'inclusion ou l'exclusion des sujets dans la recherche ou la Delve à l'aide des paramètres Microsoft Graph. |
+|Microsoft Graph |Vous pouvez contrôler l'inclusion ou l'exclusion des sujets dans la recherche ou la Delve à l'aide des paramètres Microsoft Graph. |
 
 ## <a name="plan-for-adoption"></a>Planifier l’adoption
 
@@ -63,13 +63,13 @@ Pour planifier l’adoption de Topics, vous devez :
     - Réfléchissez aux [parties prenantes](#identify-stakeholders) et aux membres de l’équipe du projet que vous devez impliquer.  
     - Déterminer l’impact sur l’entreprise que vous souhaitez atteindre et la façon dont vous allez mesurer [la réussite.](#create-a-success-plan)
 
-2. Impliquez votre organisation :
+2. Impliquez votre organisation :
     - Identifiez les groupes d’entreprise et les équipes d’entreprise qui doivent être impliqués et alignez-les sur ceux-ci et les scénarios que vous planifiez.
     - Commencez à réfléchir à la façon de faire participer certains utilisateurs précoces pour obtenir des commentaires critiques en avant-première afin d’itérer et d’obtenir la meilleure solution.
     - Commencez à créer la communauté et réfléchissez à la façon dont Topics peut être utilisé au sein de votre organisation par ces différents groupes.
 
 3. Formez votre organisation : la plupart des personnes comprendront intuitivement le concept des rubriques et la façon dont les fiches de rubrique compilent les informations pertinentes, comprennent et voient la valeur. Toutefois, vous souhaitez peut-être créer une formation adaptée à votre propre culture et organisation, afin de montrer comment vous souhaitez utiliser Topics. Ressources de formation :
-    - [Project centre de ressources Dans le centre de ressources.](https://aka.ms/projectcortex) Inclut des vues d’ensemble et des informations sur les fonctionnalités, des vidéos et des présentations d’heures bureau enregistrées, ainsi que des informations sur les partenaires et leurs offres.
+    - [Projet Cortex de ressources.](https://aka.ms/projectcortex) Inclut des vues d’ensemble et des informations sur les fonctionnalités, des vidéos et des présentations d’heures bureau enregistrées, ainsi que des informations sur les partenaires et leurs offres.
     - Bientôt disponible, des vidéos de formation et de l’aide pour les utilisateurs finaux.
 
 4. [Créez un réseau champion](#build-a-champion-network):
@@ -155,7 +155,7 @@ Utilisez ces indicateurs pour mesurer la réussite de Rubriques Dans votre organ
       - Quantité de rubriques (confirmées et non confirmées dans votre liste de rubriques organisées).
       - Nombre de pages de rubriques publiées.
 1. Commentaires des utilisateurs finaux depuis des cartes de rubriques.
-1. Faites des enquêtes sur la satisfaction des employés. Ces rubriques doivent améliorer la capacité des employés à trouver des informations. Trouvez donc des moyens de recueillir leurs commentaires et leurs commentaires sur cette expérience.
+1. Faites des enquêtes sur la satisfaction des employés. Les rubriques Rubriques doivent améliorer la capacité des employés à trouver des informations. Trouvez donc des moyens de recueillir leurs commentaires et leurs commentaires sur cette expérience.
 1. Impact positif sur l’analyse de la recherche. Étant donné que les rubriques apparaissent dans l’expérience de recherche, au fil du temps, vous pouvez voir des taux réduit de recherches abandonnées, car les utilisateurs sont plus facilement en mesure de trouver les rubriques dans la recherche. 
 
 ### <a name="build-a-champion-network"></a>Créer un réseau champion
@@ -180,9 +180,9 @@ Maintenant que vous êtes prêt à déployer, vous souhaitez vous assurer que vo
 - Hébergez régulièrement des événements d’engagement pour partager des articles ou introduire de nouvelles fonctionnalités.
 - Définissez des défis pour les personnes et exécutez des concurrences.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-Lorsque vous êtes prêt à déployer Rubriques Microsoft Viva, vous devez impliquer les contacts concernés.
+Lorsque vous êtes prêt à déployer Rubriques Microsoft Viva, vous devez impliquer les contacts concernés.
 
 - Commencez à présenter l’ensemble de fonctionnalités et à les aider à réfléchir à leurs scénarios.
 - Rassemblez les parties prenantes et créez des scénarios.

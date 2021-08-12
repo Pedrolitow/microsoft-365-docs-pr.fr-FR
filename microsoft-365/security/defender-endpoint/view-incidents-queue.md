@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b9a146d2dd66222d405243ea5db66486c2678412
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f709d0929b12d6f19121c6ca6c653f6484bab6c2ba2d3df52fda446b675deca5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806174"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Afficher et organiser la file d’attente d’incidents Microsoft Defender pour point de terminaison
 
@@ -66,7 +66,7 @@ Informatif </br>(Gris) | Les incidents d’information peuvent ne pas être cons
 Vous pouvez choisir de filtrer la liste en sélectionnant ceux qui vous sont affectés ou ceux qui vous sont affectés.
 
 ### <a name="category"></a>Catégorie
-Les incidents sont classés en fonction de la description de l’étape à laquelle se trouve la chaîne de fin de la cybersécurité. Cette vue permet à l’analyste de menaces de déterminer la priorité, l’urgence et la stratégie de réponse correspondante à déployer en fonction du contexte.
+Les incidents sont classés en fonction de la description de l’étape à laquelle se trouve la chaîne de mise à jour de la cybersécurité. Cette vue permet à l’analyste de menaces de déterminer la priorité, l’urgence et la stratégie de réponse correspondante à déployer en fonction du contexte.
 
 ### <a name="status"></a>Statut
 Vous pouvez choisir de limiter la liste des incidents affichés en fonction de leur état pour identifier ceux qui sont actifs ou résolus.

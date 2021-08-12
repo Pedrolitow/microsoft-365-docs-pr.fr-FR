@@ -1,5 +1,5 @@
 ---
-title: Configurer SharePoint comme source de contenu d’apprentissage pour Microsoft Learning (Prévisualisation)
+title: Configurer SharePoint comme source de contenu d’apprentissage pour Apprentissage Microsoft Viva (aperçu)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: Découvrez comment configurer SharePoint comme source de contenu d’apprentissage pour Microsoft Learning (Prévisualisation).
-ms.openlocfilehash: 96dc12f8c69281f420b339198222f9f918ebc5b4
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: Découvrez comment configurer SharePoint en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva (prévisualisation).
+ms.openlocfilehash: a7f4b41bb515fbd8c1ffde98f29da1ff13cc30df5eb36f07ae4ab35c0eb4f229
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834670"
 ---
-# <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>Configurer SharePoint comme source de contenu d’apprentissage pour Microsoft Learning (Prévisualisation)
+# <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>Configurer SharePoint comme source de contenu d’apprentissage pour Apprentissage Microsoft Viva (aperçu)
 
 > [!NOTE]
 > Cette fonctionnalité n’est pas encore disponible dans la prévisualisation du produit.

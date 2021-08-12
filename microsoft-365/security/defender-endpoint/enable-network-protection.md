@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a4052802c8a5d7db165ae9589fb9fe0db3f1b0fb
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 3f3ee0590fcbbbbcdb58680e13d154ddc4b2918e48a0c494f8ebdbdf70757bc7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726319"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794029"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -109,17 +109,17 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
 > [!NOTE]
 > Sur les versions antérieures Windows, le chemin d’accès de la stratégie de groupe peut dire « Antivirus Windows Defender » au lieu de « Antivirus Microsoft Defender ».
 
-4. Double-cliquez sur le paramètre Empêcher les utilisateurs **et les applications d’accéder** au paramètre sites web dangereux et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
+4. Double-cliquez sur le paramètre Empêcher les utilisateurs et **les applications d’accéder** au paramètre sites web dangereux et définissez l’option **sur Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
     * **Bloquer** : les utilisateurs ne peuvent pas accéder aux domaines et aux adresses IP malveillants
-    * **Désactiver (par défaut)** : la fonctionnalité de protection réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants
+    * **Désactiver (par défaut)** : la fonctionnalité de protection du réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants
     * **Mode audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal Windows’événements malveillants. Toutefois, l’utilisateur ne sera pas empêché de visiter l’adresse.
 
 > [!IMPORTANT]
-> Pour activer entièrement la protection réseau,  vous devez définir  l’option stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
+> Pour activer entièrement la protection réseau,  vous devez définir  l’option de stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
 
 Confirmez que la protection réseau est activée sur un ordinateur local à l’aide de l’éditeur du Registre :
 
-1. Sélectionnez **Démarrer** et tapez **regedit** pour ouvrir **l’Éditeur du Registre.**
+1. Sélectionnez **Démarrer** et **tapez regedit** pour ouvrir **l’Éditeur du Registre.**
 
 2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 

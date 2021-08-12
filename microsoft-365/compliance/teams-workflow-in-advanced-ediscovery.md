@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment conserver, collecter, réviser et exporter du contenu à partir de Microsoft Teams dans Advanced eDiscovery.
-ms.openlocfilehash: fc6fcc7973d9582714106506a41058bb2a905372
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: e5e899b3ee6268c0214dbcfe6b53566072fc75ed045e728a0f7845f25354e552
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543884"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841321"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscovery flux de travail pour le contenu Microsoft Teams à l’aide de grands cas (aperçu)
 
@@ -31,7 +31,7 @@ Il existe quatre catégories de contenu Teams que vous pouvez collecter et trait
 
 - **Teams conversations de groupe.** Messages de conversation, publications et pièces jointes partagés dans Teams conversation entre trois personnes ou plus. Également *appelées conversations 1:N* ou *conversations de groupe.*
 
-- **Teams canaux.** Messages de conversation, publications, réponses et pièces jointes partagés dans un Teams de conversation.
+- **Teams canaux.** Messages de conversation, publications, réponses et pièces jointes partagés dans un canal Teams de conversation.
 
 - **Canaux Teams privés.** Messages, réponses et pièces jointes partagés dans un canal Teams privé.
 
@@ -43,7 +43,7 @@ Une condition préalable à la gestion du contenu Teams dans Advanced eDiscovery
 |:---------|:---------|:---------|
 |Teams conversations 1:1     |Les messages des conversations 1:1 sont stockés dans la boîte aux lettres Exchange Online tous les participants de la conversation. |Les fichiers partagés dans une conversation 1:1 sont stockés dans le compte OneDrive Entreprise de la personne qui a partagé le fichier. |
 |Teams de groupe     |Les messages des conversations de groupe sont stockés dans la boîte Exchange Online de tous les participants à la conversation. |Les fichiers partagés dans les conversations de groupe sont stockés dans le OneDrive Entreprise de la personne qui a partagé le fichier. |
-|Équipes et canaux     |Tous les messages et publications de canal sont stockés dans Exchange Online boîte aux lettres associée à l’équipe.|Les fichiers partagés dans un canal sont stockés dans le site SharePoint Online associé à l’équipe.           |
+|Équipes et canaux     |Tous les messages et publications de canal sont stockés dans la boîte Exchange Online boîte aux lettres associée à l’équipe.|Les fichiers partagés dans un canal sont stockés dans le site SharePoint Online associé à l’équipe.           |
 |Canaux Teams privés     |Les messages envoyés dans un canal privé sont stockés dans Exchange Online boîtes aux lettres de tous les membres du canal privé.|Les fichiers partagés dans un canal privé sont stockés dans un site SharePoint Online dédié associé au canal privé.|
 ||||
 
@@ -57,7 +57,7 @@ La première étape de la gestion Teams contenu Advanced eDiscovery consiste à 
 
 - Des collections d’une taille de 1 To peuvent être ajoutées aux ensembles de révision, ce qui vous permet de collecter et d’obtenir de grandes quantités de Teams contenu dans un cas.
 
-Pour plus d’informations sur l’augmentation des limites de cas pour les cas de grande [taille,](advanced-ediscovery-large-cases.md)voir Utiliser les cas importants dans Advanced eDiscovery .
+Pour plus d’informations sur l’augmentation des limites de cas pour les cas de grande [taille,](advanced-ediscovery-large-cases.md)voir Utiliser les cas importants Advanced eDiscovery .
 
 Pour créer un cas important :
 
@@ -75,7 +75,7 @@ Pour créer un cas important :
 
 ## <a name="add-teams-custodial-data-sources-and-preserve-teams-content"></a>Ajouter Teams sources de données de conservation et conserver Teams contenu  
 
-L’étape suivante consiste à identifier les utilisateurs qui sont les dépositaires de données dans votre enquête et à les ajouter, ainsi que leurs emplacements de contenu, en tant que dépositaires au cas que vous avez créé dans la section précédente. Lorsque vous ajoutez des dépositaires, vous pouvez spécifier leur boîte aux lettres et leur compte OneDrive comme sources de données de conservation. Vous pouvez également spécifier Teams de contenu en tant que sources de données de dépositaire pour placer rapidement ces emplacements en conservation légale afin de conserver le contenu au cours de votre enquête. Il facilite également la collecte de contenu et son ajout à un jeu à réviser.
+L’étape suivante consiste à identifier les utilisateurs qui sont les dépositaires de données dans votre enquête et à les ajouter, ainsi que leurs emplacements de contenu, en tant que dépositaires au cas que vous avez créé dans la section précédente. Lorsque vous ajoutez des dépositaires, vous pouvez spécifier leur boîte aux lettres OneDrive compte en tant que sources de données de conservation. Vous pouvez également spécifier Teams de contenu en tant que sources de données de dépositaire pour placer rapidement ces emplacements en conservation légale afin de conserver le contenu pendant votre enquête. Il facilite également la collecte de contenu et son ajout à un jeu à réviser.
 
 Pour ajouter des dépositaires à un cas et conserver les sources de données conservées :
 
@@ -106,7 +106,7 @@ Pour ajouter des dépositaires à un cas et conserver les sources de données co
 
    Une liste des dépositaires s’affiche et  la case à cocher dans la colonne Conservation est sélectionnée par défaut. Cela indique qu’une conservation sera placée sur les sources de données que vous avez associées à chaque dépositaire. Laissez ces case à cocher sélectionnées pour conserver ces données.
 
-7. Dans la page **Paramètres de conservation,** cliquez **sur Suivant** pour passer en revue les paramètres des dépositaires. Cliquez **sur Envoyer** pour ajouter les dépositaires au cas.
+7. Dans la page **Paramètres de conservation,** cliquez sur **Suivant** pour passer en revue les paramètres des dépositaires. Cliquez **sur Envoyer** pour ajouter les dépositaires au cas.
 
 Pour plus d’informations sur l’ajout et la conservation de sources de données dans Advanced eDiscovery cas, voir :
 
@@ -148,7 +148,7 @@ Pour créer une collection de Teams contenu :
 
    - Désélectionne la case  à cocher dans la colonne Site supplémentaire pour supprimer les sites SharePoint contenant des fichiers partagés dans des canaux privés. Cela permet d’éliminer la collecte des fichiers en double joints aux conversations de canal privé, car les pièces jointes au cloud jointes aux conversations de canal privé sont automatiquement ajoutées à l’ensemble de révision lorsque vous validerez la collection de brouillons et regroupées dans les conversations qui ont été partagées.
 
-6. Si vous avez précédemment suivi les étapes d’ajout Teams contenu en tant que sources de données de dépositaire, vous pouvez ignorer cette étape et sélectionner **Suivant**. Dans le cas contraire, dans la page Assistant Sources de données non privatives, vous pouvez choisir des sources de données qui ne contiennent pas de Teams contenu que vous avez **peut-être** ajouté au cas pour effectuer une recherche dans la collection.
+6. Si vous avez précédemment suivi les étapes d’ajout Teams contenu en tant que sources de données de dépositaire, vous pouvez ignorer cette étape et sélectionner **Suivant**. Dans le cas contraire, dans la page De l’Assistant Sources de données non privatives, vous pouvez choisir des sources de données qui ne contiennent pas de Teams contenu que vous avez **peut-être** ajouté au cas pour effectuer une recherche dans la collection.
 
 7. Si vous avez précédemment suivi les étapes d’ajout Teams contenu en tant que sources de données de dépositaire, vous pouvez ignorer cette étape et sélectionner **Suivant**. Dans le cas contraire, dans la page **De l’Assistant** Emplacements supplémentaires, vous pouvez ajouter d’autres sources de données pour effectuer des recherches dans la collection. Par exemple, vous pouvez ajouter la boîte aux lettres et le site d’une équipe qui n’a pas été ajouté en tant que source de données de garde ou non. Dans le cas contraire, **sélectionnez Suivant** et ignorez cette étape.
 
@@ -172,7 +172,7 @@ Pour créer une collection de Teams contenu :
 
 ## <a name="review-teams-content-in-a-review-set"></a>Examiner le Teams contenu d’un jeu à réviser
 
-Une fois que vous avez ajouté des collections de contenu Teams à un groupe de révision, l’étape suivante consiste à examiner le contenu pour en déterminer la pertinence par rapport à votre enquête et à l’annuler si nécessaire. Une condition préalable importante à la révision du contenu Teams consiste à comprendre comment Advanced eDiscovery processus Teams conversations et pièces jointes lors de leur ajout à un groupe de révision. Ce traitement de Teams contenu se traduit par les trois éléments suivants :
+Une fois que vous avez ajouté des collections de contenu Teams à un groupe de révision, l’étape suivante consiste à examiner le contenu pour en déterminer la pertinence par rapport à votre enquête et à l’annuler si nécessaire. Une condition préalable importante à la révision du contenu Teams consiste à comprendre comment Advanced eDiscovery traite Teams conversations et pièces jointes lors de leur ajout à un jeu à réviser. Ce traitement de Teams contenu se traduit par les trois éléments suivants :
 
 - **[Regroupement.](#grouping)** Comment les messages, les publications et les réponses Teams conversations sont regroupés et présentés dans le jeu à réviser. Cela inclut également les pièces jointes dans les conversations de conversation sont extraites et regroupées dans la conversation.
 
@@ -186,14 +186,14 @@ Comprendre les métadonnées de regroupement, de thread de conversation, de déd
 
 ### <a name="grouping"></a>Regroupement
 
-Lorsque le contenu de Teams conversations est ajouté à un jeu à réviser, les messages, les publications et les réponses des conversations sont regroupés dans des fichiers de transcription HTML. Une conversation unique peut avoir plusieurs fichiers de transcription. Une fonction importante de ces fichiers de transcription consiste à présenter Teams contenu sous forme de conversations continues et non en tant que messages individuels (ou distincts). Cela permet de fournir du contexte pour les éléments qui correspondent aux critères de recherche de vos collections à l’étape précédente et de réduire le nombre d’éléments collectés dans le jeu à réviser. Les transcriptions et les éléments associés peuvent être regroupés par *famille ou* *conversation.* Les éléments de la même famille auront la même valeur pour la **propriété de métadonnées FamilyId.** Les éléments de la même conversation auront la même valeur pour la propriété de métadonnées **ConversationId.**
+Lorsque le contenu de Teams conversations est ajouté à un groupe de révision, les messages, les publications et les réponses des conversations sont regroupés dans des fichiers de transcription HTML. Une conversation unique peut avoir plusieurs fichiers de transcription. Une fonction importante de ces fichiers de transcription consiste à présenter Teams contenu sous forme de conversations continues et non en tant que messages individuels (ou distincts). Cela permet de fournir du contexte pour les éléments qui correspondent aux critères de recherche de vos collections à l’étape précédente et de réduire le nombre d’éléments collectés dans le jeu à réviser. Les transcriptions et les éléments associés peuvent être regroupés par *famille ou* *conversation.* Les éléments de la même famille auront la même valeur pour la **propriété de métadonnées FamilyId.** Les éléments de la même conversation auront la même valeur pour la propriété de métadonnées **ConversationId.**
 
 Le tableau suivant décrit comment les différents types de Teams de conversation sont regroupés par famille et conversation.
 
 | Teams type de contenu|Grouper par famille  |Grouper par conversation  |
 |:---------|:---------|:---------|
 |Teams 1:1 et conversations de groupe   | Une transcription et toutes ses pièces jointes et éléments extraits partagent le **même FamilyId**. Chaque transcription possède un **FamilyId** unique. |Tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même **ConversationId**. Cela inclut les éléments suivants :<br/><br/>  - Tous les éléments et pièces jointes extraits de toutes les transcriptions qui partagent le même **ConversationId**. <br/> - Toutes les transcriptions d’une même conversation<br/> - Toutes les copies de dépositaire de chaque transcription<br/> - Transcriptions des collections suivantes de la même conversation de conversation <br/><br/>  Pour Teams 1:1 et les conversations de groupe, vous pouvez avoir plusieurs fichiers de transcription, chacun correspondant à une période différente dans la conversation. Étant donné que ces fichiers de transcription sont issus de la même conversation avec les mêmes participants, ils partagent le même **ConversationId**.|
-|Teams de canal privé et privé    | Chaque billet et toutes les réponses et pièces jointes sont enregistrés dans sa propre transcription. Cette transcription et toutes ses pièces jointes et éléments extraits partagent le **même FamilyId**.         |Chaque billet et ses pièces jointes et éléments extraits ont un **ConversationId** unique. S’il existe des collections ultérieures ou de nouvelles réponses à partir du même billet, les transcriptions delta résultant de ces collections auront également le même **ConversationId**.|
+|Teams canal privé et les conversations de canal privé    | Chaque billet et toutes les réponses et pièces jointes sont enregistrés dans sa propre transcription. Cette transcription et toutes ses pièces jointes et éléments extraits partagent le **même FamilyId**.         |Chaque billet et ses pièces jointes et éléments extraits ont un **ConversationId** unique. S’il existe des collections ultérieures ou de nouvelles réponses à partir du même billet, les transcriptions delta résultant de ces collections auront également le même **ConversationId**.|
 ||||
 
 Utilisez le **contrôle Groupe** dans la barre de commandes d’un jeu à réviser pour afficher Teams contenu groupé par famille ou conversation.
@@ -205,7 +205,7 @@ Utilisez le **contrôle Groupe** dans la barre de commandes d’un jeu à révis
 - Sélectionnez **groupe Teams ou Yammer conversations** pour afficher Teams contenu regroupé par conversation. Chaque conversation s’affiche sur une ligne de la liste des éléments de révision. Les fichiers et pièces jointes de transcription sont imbrmbrés dans la conversation de niveau supérieur.
 
 > [!NOTE]
-> Les pièces jointes cloud sont regroupées avec les conversations dans qui elles apparaissent. Ce regroupement s’accomplit en attribuant le **même ID** de famille que le fichier de transcription du message à qui le fichier a été joint et le même **ConversationId** que la conversation dans la conversation dans qui le message est apparu. Cela signifie que plusieurs copies de pièces jointes cloud peuvent être ajoutées au jeu à réviser si elles ont été jointes à différentes conversations.
+> Les pièces jointes dans le cloud sont regroupées avec les conversations dans qui elles apparaissent. Ce regroupement s’accomplit en attribuant le **même ID** de famille que le fichier de transcription du message à qui le fichier a été joint et le même **ConversationId** que la conversation dans la conversation dans qui le message est apparu. Cela signifie que plusieurs copies de pièces jointes cloud peuvent être ajoutées au jeu à réviser si elles ont été jointes à différentes conversations.
 
 #### <a name="viewing-transcript-files-for-conversations"></a>Affichage des fichiers de transcription pour les conversations
 
@@ -223,7 +223,7 @@ Les captures d’écran suivantes montrent un exemple de conversation dans le cl
 
 ### <a name="transcript-conversation-threading"></a>Threads de conversation transcription
 
-La fonctionnalité de thread de conversation dans le format de grande Advanced eDiscovery vous permet d’identifier le contenu contextuel lié aux éléments qui peuvent être pertinents pour votre enquête. Cette fonctionnalité produit des affichages de conversation distincts qui incluent des messages de conversation qui précèdent et suivent les éléments qui correspondent à la requête de recherche pendant la collecte. Cette fonctionnalité vous permet de passer en revue efficacement et rapidement les conversations de conversation complètes (appelées *conversations* threadées) dans Microsoft Teams. Comme expliqué précédemment, les conversations de conversation sont reconstruites dans des fichiers de transcription HTML lorsque Advanced eDiscovery ajoute Teams contenu à un jeu à réviser.
+La fonctionnalité de thread de conversation dans le format grand cas dans Advanced eDiscovery vous permet d’identifier le contenu contextuel lié aux éléments qui peuvent être pertinents pour votre examen. Cette fonctionnalité produit des affichages de conversation distincts qui incluent des messages de conversation qui précèdent et suivent les éléments qui correspondent à la requête de recherche pendant la collecte. Cette fonctionnalité vous permet de passer en revue efficacement et rapidement les conversations de conversation complètes (appelées *conversations* threadées) dans Microsoft Teams. Comme expliqué précédemment, les conversations de conversation sont reconstruites dans des fichiers de transcription HTML lorsque Advanced eDiscovery ajoute Teams contenu à un jeu à réviser.
 
 Voici la logique utilisée par Advanced eDiscovery pour inclure des fichiers de transcription de messages et de réponses supplémentaires qui fournissent un contexte autour des éléments qui correspondent à la requête de collection (appelée éléments réactifs) que vous avez utilisée lors de la collecte de Teams contenu. Différents comportements de thread sont basés sur les types de conversations et la requête de recherche utilisée pour collecter les éléments réactifs. Il existe deux scénarios de collection courants :
 
@@ -239,7 +239,7 @@ Voici la logique utilisée par Advanced eDiscovery pour inclure des fichiers de 
 
 ### <a name="deduplication-of-teams-content"></a>Déduplication du contenu Teams contenu
 
-La liste suivante décrit le comportement de déduplication (et duplication) lors de la collecte de Teams contenu dans un jeu à réviser.
+La liste suivante décrit le comportement de déduplication (et de duplication) lors de la collecte de Teams contenu dans un jeu à réviser.
 
 - Chaque fichier de transcription ajouté à un jeu à réviser doit être un mappage un-à-un au contenu stocké dans des emplacements de données. Cela signifie Advanced eDiscovery ne collecte aucun contenu Teams qui a déjà été ajouté au jeu à réviser. Si un message de conversation est déjà collecté dans un jeu à réviser, Advanced eDiscovery n’ajoute pas le même message à partir du même emplacement de données au jeu à réviser dans les collections suivantes.
 
@@ -257,14 +257,14 @@ La liste suivante décrit le comportement de déduplication (et duplication) lor
 
 ### <a name="metadata-for-teams-content"></a>Métadonnées pour Teams contenu
 
-Dans les grands ensembles de révision avec des milliers ou des millions d’éléments, il peut être difficile de restreindre l’étendue de votre révision Teams contenu. Pour vous aider à concentrer votre examen sur Teams contenu, il existe des propriétés de métadonnées spécifiques à Teams contenu. Vous pouvez utiliser ces propriétés pour organiser [](review-set-search.md) les colonnes dans la liste de révision et configurer des filtres et des requêtes afin d’optimiser la révision Teams contenu. Ces propriétés de métadonnées sont également incluses lorsque vous exportez du contenu Teams à partir de Advanced eDiscovery, pour vous aider à organiser et à afficher le contenu après l’exportation ou dans des outils eDiscovery tiers.
+Dans les grands ensembles de révision avec des milliers ou des millions d’éléments, il peut être difficile de restreindre l’étendue de votre révision Teams contenu. Pour vous aider à vous concentrer sur Teams contenu, il existe des propriétés de métadonnées spécifiques à Teams contenu. Vous pouvez utiliser ces propriétés pour organiser [](review-set-search.md) les colonnes dans la liste de révision et configurer des filtres et des requêtes afin d’optimiser la révision Teams contenu. Ces propriétés de métadonnées sont également incluses lorsque vous exportez du contenu Teams à partir de Advanced eDiscovery, pour vous aider à organiser et à afficher le contenu après l’exportation ou dans des outils eDiscovery tiers.
 
 Le tableau suivant décrit les propriétés de métadonnées pour Teams contenu.
 
 |Propriété de métadonnées  |Description  |
 |:---------|:---------|
 |ContainsEditedMessage      | Indique si un fichier de transcription contient un message modifié. Les messages modifiés sont identifiés lors de l’affichage du fichier de transcription.|
-|ConversationId|GUID qui identifie la conversation à qui l’élément est associé. Les fichiers de transcription et les pièces jointes de la même conversation ont la même valeur pour cette propriété.|
+|ConversationId|GUID qui identifie la conversation à qui l’élément est associé. Les fichiers et pièces jointes de transcription de la même conversation ont la même valeur pour cette propriété.|
 |Nom de la conversation     | Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants de la conversation sont concatenés. Par exemple, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams canal privé et les conversations de canal privé utilisent le format suivant pour le nom de la conversation : `<Team name>,<Channel name>` .Par exemple, `eDiscovery vNext, General`.          |
 |ConversationType     | Indique le type de conversation d’équipe. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est `Group` . Pour Teams de canal privé et privé, la valeur est `Channel` .|
 |Date | Horodaté du premier message dans le fichier de transcription.|

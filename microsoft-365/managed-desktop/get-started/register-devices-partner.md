@@ -1,6 +1,6 @@
 ---
 title: Procédure permettant aux partenaires d’inscrire des appareils
-description: Comment les partenaires peuvent inscrire des appareils afin qu’ils soient gérés par Microsoft Manged Desktop
+description: Comment les partenaires peuvent inscrire des appareils afin qu’ils soient gérés Microsoft Manged Desktop
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 64686f84d8e4cc7dca40a875d8b54508ea9a1fc9
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 37e6559e0fbdf6ceef853b4587fee61d622f4905f7e4be0ab524f076791e9fb5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648470"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834622"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Procédure permettant aux partenaires d’inscrire des appareils
 
@@ -57,7 +57,7 @@ Une fois que vous avez établi la relation avec vos clients, vous pouvez utilise
 
 Si vous obtenez un message d’erreur lors de la tentative de chargement .csv fichier, vérifiez le format du fichier. Assurez-vous que l’ordre des colonnes correspond à ce qui est décrit dans Utiliser les profils Autopilot Windows sur les nouveaux appareils pour personnaliser l’expérience pré-encadrée [d’un client.](/partner-center/autopilot#add-devices-to-a-customers-account) Vous pouvez également utiliser l’exemple .csv fichier fourni à partir du lien en dessous d’Ajouter des appareils **pour** créer une liste d’appareils. 
 
-Pour plus d’informations sur Autopilot dans les scénarios partenaires, voir Ajouter des [appareils au compte d’un client.](/partner-center/autopilot#add-devices-to-a-customers-account)
+Pour plus d’informations sur Autopilot dans les scénarios partenaires, voir Ajouter des appareils au [compte d’un client.](/partner-center/autopilot#add-devices-to-a-customers-account)
 
 
 ## <a name="register-devices-by-using-the-oem-api"></a>Inscrire des appareils à l’aide de l’API OEM

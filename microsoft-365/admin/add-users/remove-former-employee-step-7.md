@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour supprimer le compte d’utilisateur d’un ancien employé.
-ms.openlocfilehash: 6f1f307a7029bcf1cbf71a2ce85908b9ccb28ba5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: be7f46ebae50c078ab90b4eb00fd658e3dbe0c008bd1862fa88162b76c5e07cb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827346"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Étape 7 : supprimer le compte d’utilisateur d’un ancien employé
 
@@ -53,7 +53,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 ## <a name="does-your-organization-use-active-directory"></a>Votre organisation utilise Active Directory ?
 
-Si votre organisation synchronise les comptes d’utilisateurs avec Microsoft 365 à partir d’un environnement Active Directory local, vous devez supprimer et restaurer ces comptes d’utilisateurs dans votre service Active Directory local. Vous ne pouvez pas les supprimer et les restaurer dans Office 365.
+Si votre organisation synchronise les comptes d’utilisateur avec Microsoft 365 à partir d’un environnement Active Directory local, vous devez supprimer et restaurer ces comptes d’utilisateurs dans votre service Active Directory local. Vous ne pouvez pas les supprimer et les restaurer dans Office 365.
 
 Pour découvrir comment supprimer et restaurer un compte d’utilisateur dans Active Directory, voir [Supprimer un compte d’utilisateur.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
   
@@ -93,7 +93,7 @@ Les opérations ci-dessus peuvent être réalisées à trois endroits :
   
 **Plus rapide pour un utilisateur ayant une présence locale et dans le centre de données Exchange**: clôturez la session via le centre d'administration Azure Active Directory/Exchange ET apportez la modification aussi dans l'environnement local. À défaut, la modification dans le centre d'administration Azure Active Directory/Exchange est remplacée par DirSync.
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Restaurer un utilisateur](restore-user.md) (article)
 

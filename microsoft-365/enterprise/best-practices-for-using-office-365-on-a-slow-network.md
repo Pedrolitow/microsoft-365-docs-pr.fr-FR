@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Cet article vous guide à travers les meilleures pratiques que vous pouvez adopter pour l’utilisation de Office 365 sur un réseau lent.
-ms.openlocfilehash: d217ee8bb40898716844717e84db112f356f6672
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b09fe2a38cd98a09e7d6375abccb0486b59c34c092f60c78144ebc695453f7c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226022"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819597"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Meilleures pratiques pour l’utilisation Office 365 sur un réseau lent
 
@@ -181,8 +181,8 @@ Microsoft améliore continuellement les performances globales de Office 365 en s
 
 [Planification réseau et optimisation des performances pour Office 365](network-planning-and-performance.md)
 
-[Principes de connectivité réseau Office 365](microsoft-365-network-connectivity-principles.md)
+[Principes de connectivité réseau Office 365](microsoft-365-network-connectivity-principles.md)
 
-[Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
 
-[Points de terminaison Office 365 - FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Points de terminaison Office 365 - FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

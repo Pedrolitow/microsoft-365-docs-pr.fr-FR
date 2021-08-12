@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment fournir des commentaires à un classifieur entraidable dans l’Explorateur de contenu.
-ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: fddb25bb1ebf702d19767c13f65df4f925fcfc78a7036eb769b96241b271471c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793063"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796337"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Comment reformer un classificateur en explorateur de contenu
 
@@ -50,7 +50,7 @@ Vous aurez besoin de comptes avec ces autorisations pour utiliser des classifieu
 ## <a name="overall-workflow"></a>Flux de travail global
 
 > [!IMPORTANT]
-> Vous fournissez des commentaires dans l’Explorateur de contenu pour appliquer automatiquement des stratégies d’étiquette de rétention Exchange éléments et vous devez utiliser le classifieur comme condition. **Si vous n’avez pas de stratégie de rétention qui applique automatiquement une étiquette de rétention à Exchange éléments et utilise un classificateur comme condition, arrêtez-vous ici.**
+> Vous fournissez des commentaires dans l’Explorateur de contenu pour appliquer automatiquement des stratégies d’étiquette de rétention Exchange les éléments et utilise le classifieur comme condition. **Si vous n’avez pas de stratégie de rétention qui applique automatiquement une étiquette de rétention à Exchange éléments et utilise un classifieur comme condition, arrêtez-vous ici.**
 
 Lorsque vous utilisez vos classifieurs, vous souhaitez peut-être augmenter la précision des classifications qu’ils sont en train d’effectuer. Pour ce faire, vous devez évaluer la qualité des classifications des éléments qu’il a identifiés comme étant une correspondance ou non. Une fois que vous avez fait 30 évaluations pour un classificateur, il prend ce retour d’expérience et se réévalue automatiquement.
 
@@ -61,7 +61,7 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Comment reformer un classificateur en explorateur de contenu
 
-1. Connectez-vous au centre Microsoft 365 conformité avec l’accès au rôle d’administrateur de conformité ou d’administrateur de sécurité et ouvrez **Microsoft 365'explorateur** de contenu de classification des données du centre  >    >  **de conformité.** 
+1. Connectez-vous Centre de conformité Microsoft 365 avec l’accès au rôle d’administrateur de conformité ou d’administrateur de sécurité **et ouvrez**  >  **Centre de conformité Microsoft 365'explorateur** de contenu de classification  >  **des données.** 
 2. Sous le filtre **sur les étiquettes, les types d’informations** ou la liste des catégories, développez **classifieurs Avec formation.**
 
 > [!IMPORTANT]
@@ -80,15 +80,15 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 5. Choose **Provide feedback**.
 6. Dans le **volet commentaires détaillés,** si l’élément est un vrai positif, choisissez, **Match**.  Si l’élément est un faux positif, c’est-à-dire qu’il a été inclus de manière incorrecte dans la catégorie, **sélectionnez Ne pas correspondre.**
 7. S’il existe un autre classificateur qui serait plus approprié pour l’élément, vous pouvez le choisir dans la liste Suggérer d’autres **classifieurs entra nessifiables.** Cela déclenchera l’évaluation de l’élément par l’autre classificateur.
-8. Choose **Send feedback** to send your evaluation of the , `match` `not a match` classifications and suggest other trainable classifiers. Une fois que vous avez fourni 30 instances de commentaires à un classifieur, il se formera automatiquement. La formation peut prendre entre une et quatre heures. Les classifieurs ne peuvent être formés que deux fois par jour.
+8. Sélectionnez **Envoyer des commentaires** pour envoyer votre évaluation des `match` classifications et suggérer `not a match` d’autres classifieurs entraintables. Lorsque vous avez fourni 30 instances de commentaires à un classifieur, il se formera automatiquement. La formation peut prendre entre une et quatre heures. Les classifieurs ne peuvent être formés que deux fois par jour.
 
 > [!IMPORTANT]
 > Ces informations sont ensuite données au classifieur de votre client, elles ne sont **pas revenir à Microsoft.**
 
-9. Ouvrez **les classifieurs Entraisables.**
+9. Ouvrez **les classifieurs Avec formation.**
 10. Le classificateur qui a été utilisé dans votre stratégie de conformité des communications s’affiche sous **l’en-tête Nouvelle** formation.
 
-![classifieur dans l’état de la formation](../media/classifier-retraining.png)
+![classifieur en état de formation](../media/classifier-retraining.png)
 
 11. Une fois la nouvelle formation terminée, choisissez le classificateur pour ouvrir la vue d’ensemble de la nouvelle formation.
 
@@ -107,7 +107,7 @@ Après une nouvelle formation, nous évaluons les performances du classificateur
 - Pour les modèles intégrés, les éléments utilisés pour former le classifieur sont les éléments utilisés par Microsoft pour créer le modèle.
 - Pour les modèles personnalisés, les éléments utilisés dans la formation d’origine du classifieur sont issus des sites que vous avez ajoutés pour le test et la révision.
 
-Nous comparons les nombres de performances sur les deux ensembles d’éléments pour le classifieur réécrit et publié afin de fournir une recommandation quant à l’amélioration de la republier. 
+Nous comparons les nombres de performances sur les deux ensembles d’éléments pour le classifieur réécrit et publié afin de fournir une recommandation sur l’amélioration de la publication. 
 
 ## <a name="see-also"></a>Voir aussi
 
