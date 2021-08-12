@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Résoudre les erreurs liées aux conservations légales appliquées aux dépositaires et aux sources de données qui ne sont pas en conservation dans core eDiscovery.
-ms.openlocfilehash: 3e5cc6351d5026feda560bee646a1e6a03475ee2
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: a1e53397b4a0b18aa5c110a0499e239b51e24bd587fa8b04351d930d684c7e8d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813930"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>Résoudre les erreurs de mise en suspens de la découverte électronique
 
@@ -66,13 +66,13 @@ Pour réduire le nombre d’erreurs liées aux conserves eDiscovery, nous vous r
 
    Dans l’exemple incorrect précédent, la cmdlet est exécuté cinq fois distinctement pour effectuer la tâche. Pour plus d’informations sur les pratiques recommandées pour ajouter des utilisateurs à une stratégie de attente, consultez la section [Plus d’informations.](#more-information)
 
-- Avant de contacter le Support Microsoft à propos des problèmes de la découverte électronique, suivez les étapes de la section [Erreur/problème](#errorissue-holds-dont-sync) : Les attentes ne sont pas synchronisées pour réessayer la distribution de la attente. Ce processus résout souvent des problèmes temporaires, notamment des erreurs de serveur interne.
+- Avant de contacter le Support Microsoft concernant les problèmes de la découverte électronique, suivez les étapes de la section [Erreur/problème](#errorissue-holds-dont-sync) : Les attentes ne sont pas synchronisées pour réessayer la distribution de la attente. Ce processus résout souvent des problèmes temporaires, notamment des erreurs de serveur interne.
 
 ## <a name="errorissue-holds-dont-sync"></a>Erreur/problème : les holds ne sont pas synchronisés
 
 Si vous voyez l’un des messages d’erreur suivants lors de la mise en attente des dépositaires et des sources de données, utilisez les étapes de résolution pour résoudre le problème.
 
-> Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état de déploiement final peut prendre 2 heures supplémentaires. Vérifiez donc dans quelques heures.
+> Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état de déploiement final peut prendre 2 heures supplémentaires. Vérifiez-le dans quelques heures.
 
 > La stratégie ne peut pas être déployée sur la source de contenu en raison d’un problème Office 365 de centre de données temporaire. La stratégie actuelle n’est appliquée à aucun contenu de la source, donc le déploiement bloqué n’a aucun impact. Pour résoudre ce problème, essayez de redéployer la stratégie.
 
@@ -88,7 +88,7 @@ Si vous voyez l’un des messages d’erreur suivants lors de la mise en attente
 
 2. Examinez la valeur dans le *paramètre DistributionDetail.* Recherchez les erreurs suivantes :
 
-   > Erreur : Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état de déploiement final peut prendre 2 heures supplémentaires. Vérifiez donc dans quelques heures.
+   > Erreur : Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état de déploiement final peut prendre 2 heures supplémentaires. Vérifiez-le dans quelques heures.
 
 3. Essayez d’exécution de la commande **Set-CaseHoldPolicy -RetryDistribution** sur la stratégie de mise en attente en question ; par exemple :
 
@@ -104,7 +104,7 @@ Si vous voyez le message d’erreur suivant lors de la mise en attente des dépo
 
 ### <a name="resolution"></a>Résolution
 
-Déverrouillez le site (ou demandez à un administrateur de le déverrouiller) pour résoudre ce problème. Pour en savoir plus sur la façon de modifier l’état de verrouillage d’un site, voir [Verrouiller et déverrouiller des sites.](/sharepoint/manage-lock-status)
+Déverrouillez le site (ou demandez à un administrateur de le déverrouiller) pour résoudre ce problème. Pour en savoir plus sur la modification de l’état de verrouillage d’un site, voir [Verrouiller et déverrouiller des sites.](/sharepoint/manage-lock-status)
 
 ## <a name="error-the-mailbox-or-sharepoint-site-may-not-exist"></a>Erreur : la boîte aux lettres ou SharePoint site n’existe peut-être pas
 

@@ -1,6 +1,6 @@
 ---
 title: Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
-description: Découvrez le fonctionnement des files d’attente d’alertes Microsoft Defender pour les points de terminaison, ainsi que le tri et le filtrage des listes d’alertes.
+description: Découvrez comment fonctionnent les files d’attente des alertes Microsoft Defender pour les points de terminaison, et comment trier et filtrer des listes d’alertes.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 1c45bec7e38a849160a14adb3011a303085b00e6
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 478495601673a92075366d4497ac35f40c84172468b44926546d05c7b3b02edb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794464"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 
@@ -36,7 +36,7 @@ ms.locfileid: "53648446"
 La **file d’attente Alertes** affiche la liste des alertes qui ont été signalées à partir d’appareils de votre réseau. Par défaut, la file d’attente affiche les alertes visibles au cours des 30 derniers jours dans un affichage groupé. Les alertes les plus récentes sont affichés en haut de la liste pour vous aider à voir les alertes les plus récentes en premier.
 
 > [!NOTE]
-> La file d’attente des alertes est considérablement réduite grâce à des examens et des corrections automatisés, ce qui permet aux experts en matière d’opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Lorsqu’une alerte contient une entité prise en charge pour l’examen automatisé (par exemple, un fichier) sur un appareil qui dispose d’un système d’exploitation pris en charge, une investigation et une correction automatisées peuvent démarrer. Pour plus d’informations sur les enquêtes automatisées, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
+> La file d’attente des alertes est considérablement réduite grâce à des examens et des corrections automatisés, ce qui permet aux experts en matière d’opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Lorsqu’une alerte contient une entité prise en charge pour une investigation automatisée (par exemple, un fichier) sur un appareil qui dispose d’un système d’exploitation pris en charge, une investigation et une correction automatisées peuvent commencer. Pour plus d’informations sur les enquêtes automatisées, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
 
 Vous pouvez choisir parmi plusieurs options pour personnaliser l’affichage de file d’attente des alertes. 
 
@@ -59,7 +59,7 @@ Vous pouvez appliquer les filtres suivants pour limiter la liste des alertes et 
 Gravité de l’alerte | Description
 :---|:---
 Élevé </br>(Rouge) | Alertes couramment associées à des menaces avancées persistantes (APT). Ces alertes indiquent un risque élevé en raison de la gravité des dommages qu’elles peuvent causer sur les appareils. Voici quelques exemples : activités des outils de vol d’informations d’identification, activités de ransomware non associées à un groupe, falsification des capteurs de sécurité ou toute activité malveillante indiquant un adversaire humain.
-Moyen </br>(Orange) | Les alertes provenant protection évolutive des points de terminaison comportements post-violation qui peuvent faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
+Moyen </br>(Orange) | Alertes provenant protection évolutive des points de terminaison comportements post-violation susceptibles de faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
 Faible </br>(Jaune) | Alertes sur les menaces associées à des programmes malveillants répandus. Par exemple, les outils de piratage, les outils de piratage non malveillants, tels que l’exécution de commandes d’exploration, l’effacement des journaux, etc., qui n’indiquent souvent pas de menace avancée ciblant l’organisation. Elle peut également être le fait d’un outil de sécurité isolé testé par un utilisateur de votre organisation.
 Informatif </br>(Gris) | Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent sensibiliser l’organisation à des problèmes de sécurité potentiels.
 
@@ -76,7 +76,7 @@ Par exemple :
 - La gravité d’une alerte Defender pour point de terminaison concernant une menace détectée par l’Antivirus Microsoft Defender qui a été complètement évitée et qui n’a pas infecté l’appareil est classée comme « Informationnelle », car il n’y a pas eu de dommages réels.
 - Une alerte concernant un programme malveillant commercial a été détectée lors de l’exécution, mais bloquée et corrigé par Microsoft Defender AV, est classée comme « Faible », car elle a peut-être endommagé l’appareil, mais ne pose aucune menace pour l’organisation.
 - Une alerte concernant les programmes malveillants détectés lors de l’exécution, qui peuvent représenter une menace non seulement pour l’appareil individuel, mais aussi pour l’organisation, même si elle a été finalement bloquée, peut être classée comme « Moyenne » ou « Élevée ».
-- Les alertes de comportement suspectes, qui n’ont pas été bloquées ou corrigés, seront classées « Faible », « Moyenne » ou « Élevée » en fonction des mêmes considérations sur les menaces organisationnelles.
+- Les alertes comportementales suspectes, qui n’ont pas été bloquées ou corrigés, seront classées « Faible », « Moyenne » ou « Élevée » en fonction des mêmes considérations sur les menaces organisationnelles.
 
 #### <a name="understanding-alert-categories"></a>Comprendre les catégories d’alertes
 
@@ -96,12 +96,12 @@ Le tableau ci-dessous répertorie les catégories actuelles et la façon dont el
 | Exploit              | Exploit             | Code d’exploitation et activité d’exploitation possible                                                                                       |
 | Accès initial       | InitialAccess       | Obtenir une entrée initiale sur le réseau cible, impliquant généralement une estimation de mot de passe, des attaques ou des e-mails de hameçonnage                      |
 | Mouvement latéral     | LateralMovement     | Déplacement entre les appareils du réseau cible pour atteindre des ressources critiques ou obtenir la persistance du réseau                                |
-| Programme malveillant              | Programme malveillant             | Backdoors, chevaux de France et autres types de code malveillant                                                                                 |
-| Persistance          | Persistance         | Création de points d’extensibilité de démarrage automatique (ASEP) pour rester actif et résister aux redémarrages du système                                        |
+| Programme malveillant              | Programme malveillant             | Backdoors, trojans, and other types of malicious code                                                                                 |
+| Persistance          | Persistance         | Création de points d’extensibilité de démarrage automatique pour rester actif et résister aux redémarrages du système                                        |
 | Escalade de privilèges | PrivilegeEscalation | Obtention de niveaux d’autorisation supérieurs pour le code en l’exécutant dans le contexte d’un processus ou d’un compte privilégié                         |
 | Ransomware           | Ransomware          | Programme malveillant qui chiffre le paiement des fichiers et des extorts pour restaurer l’accès                                                                     |
 | Activité suspecte  | SuspiciousActivity  | Activité non normale qui pourrait être une activité de programmes malveillants ou une partie d’une attaque                                                                 |
-| Logiciels indésirables    | UnwantedSoftware    | applications à faible réputation et applications qui ont une incidence sur la productivité et l’expérience utilisateur ; détecté comme applications potentiellement indésirables (PUA) |
+| Logiciels indésirables    | UnwantedSoftware    | Applications de faible réputation et applications qui ont une incidence sur la productivité et l’expérience utilisateur ; détecté comme applications potentiellement indésirables (PUA) |
 
 ### <a name="status"></a>État
 
@@ -151,7 +151,7 @@ Si vous avez des groupes d’appareils spécifiques que vous souhaitez vérifier
 
 Utilisez ce filtre pour vous concentrer sur les alertes liées aux menaces de profil élevé. Vous pouvez voir la liste complète des menaces de haut niveau dans [l’analyse des menaces.](threat-analytics.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 411ccc69d8ec08734080b0b6769ae94359fc4162
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 98801958375ff5d11e5fa4e842f61f452de4a2d5777f89b25fbd2717a14602d2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536873"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796909"
 ---
 # <a name="payment-information-for-czech-republic"></a>Informations de paiement pour la République tchèque
 

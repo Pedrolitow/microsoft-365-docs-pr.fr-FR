@@ -10,16 +10,16 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Découvrez comment rechercher des rubriques dans Sujets Microsoft Viva.
-ms.openlocfilehash: 0a29bb4578ead314c362959a4e410665114c7fbb
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c73cfba29aaa95463e75e46b81bcfc464ae9a64782d5fb7a7fc76dd6c9144393
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794632"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utilisez Recherche Microsoft pour rechercher des rubriques dans Sujets Microsoft Viva
 
-Bien que les utilisateurs de rubriques Topics trouvent des rubriques par le biais des points forts de ces rubriques dans leurs sites SharePoint, ils peuvent également les trouver par le biais de Recherche Microsoft. 
+Bien que les utilisateurs de Rubriques Desy trouvent des rubriques par le biais des points forts de ces rubriques dans leurs sites SharePoint, ils peuvent également les trouver par le biais de Recherche Microsoft. 
 
 ## <a name="topic-answer"></a>Réponse à la rubrique
 
@@ -55,7 +55,7 @@ Pour les utilisateurs qui recherchent des informations sur la réservation d’u
 
 - Pour les utilisateurs qui recherchent généralement « voyage », créez une rubrique sur « Voyage » avec les informations qu’ils s’attendent à voir. Envisagez d’ajouter un lien vers le site externe Concur dans la description de la rubrique. Si le lien est plutôt vers un site de réservation de voyage interne hébergé sur le client Microsoft 365, vous pouvez l’ajouter aux « ressources épinglées ».
  
-### <a name="search-results-priority"></a>Priorité des résultats de recherche 
+### <a name="search-results-priority"></a>Priorité des résultats de la recherche 
 
 Dans l’expérience de recherche de l’utilisateur, lorsqu’un utilisateur recherche un terme comme « voyage », un signet apparaît à la place d’une rubrique, si un signet est disponible.
 

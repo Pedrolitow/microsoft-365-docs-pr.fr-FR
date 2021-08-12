@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: Cet article contient des conseils généraux et des liens vers d’autres ressources qui vous indiquent comment améliorer les performances des Exchange Online.
-ms.openlocfilehash: a7d3268f9f3cf1922319b03cf69d3f044272b27f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0f1a55648b90cfc07a81928f3e30196f9d928bd5271073828500e58138a4007c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909441"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794653"
 ---
 # <a name="tune-exchange-online-performance"></a>Optimisation des performances Exchange Online
 
@@ -29,7 +29,7 @@ Cet article contient des conseils généraux et des liens vers d’autres ressou
    
 ## <a name="things-to-consider-in-order-to-improve-exchange-online-performance"></a>Éléments à prendre en compte afin d’améliorer Exchange Online performances
 
-Pour améliorer la vitesse de migration et réduire les contraintes de bande passante de votre organisation pour Exchange Online, prenez en compte les considérations suivantes :
+Pour améliorer la vitesse de migration et réduire les contraintes de bande passante de votre organisation pour Exchange Online, prenons en compte les considérations suivantes :
   
 - **Réduisez la taille des boîtes aux lettres.** Une taille de boîte aux lettres plus petite améliore la vitesse de migration. 
     
@@ -37,7 +37,7 @@ Pour améliorer la vitesse de migration et réduire les contraintes de bande pas
     
 - **Planifier des déplacements de boîtes aux lettres pendant les périodes de faible trafic Internet et de faible Exchange’utilisation.** Lors de la planification des déplacements, les demandes de migration sont envoyées au proxy de réplication de boîte aux lettres et peuvent ne pas avoir lieu immédiatement. 
     
-- **Utilisez des fenêtres pop-out légères pour Outlook sur le web.** Les fenêtres pop-out allégées fournissent des versions plus petites et moins intensives en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer en rendant certains composants sur le serveur. Pour plus d’informations, voir [Utiliser des fenêtres publicitaires légères pour réduire la mémoire utilisée lors de la lecture des messages électroniques.](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf)
+- **Utilisez des fenêtres popouts légères pour Outlook sur le web.** Les fenêtres pop-out allégées fournissent des versions plus petites et moins intensives en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer en rendant certains composants sur le serveur. Pour plus d’informations, voir [Utiliser des fenêtres publicitaires légères pour réduire la mémoire utilisée lors de la lecture des messages électroniques.](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf)
 
 
 ## <a name="general-advice"></a>Conseils généraux

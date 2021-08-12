@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 63c12d4174e0ed3ad031735fd73e17f4625c5671
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c3ef97f98eb4ab0aea7964391bb84b2451315b6002fd979d7ac8caeb7d2c9d2e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796945"
 ---
 # <a name="payment-information-for-bosnia-and-herzegovina"></a>Informations de paiement pour la Bosnie-Herzégovine
 

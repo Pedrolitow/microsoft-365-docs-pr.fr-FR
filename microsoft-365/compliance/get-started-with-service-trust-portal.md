@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Découvrez comment accéder au portail d’confiance des services Microsoft et l’utiliser pour vous aider avec les pratiques de sécurité, de confidentialité et de conformité.
-ms.openlocfilehash: a3a46884a41be31779b82a74bc2b6750dea697c5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 38a5295d225df1ec04fba756b0e88639ab5c3dad7a67e8597456ca318f004d09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814065"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Mise en place du portail d’confiance des services Microsoft
 
@@ -36,7 +36,7 @@ Le Portail d’approbation de services contient des informations sur l’implém
 Les clients existants peuvent accéder au portail d’confiance des services avec l’un des <https://aka.ms/STP> abonnements en ligne suivants (d’essai ou payants) :
 
 - Microsoft 365
-- Dynamics 365
+- Dynamics 365
 - Azure
 
  > [!NOTE]
@@ -69,11 +69,11 @@ Le **lien Portail d’confiance des** services affiche la page d’accueil. Il o
 ### <a name="compliance-manager"></a>Gestionnaire de conformité
 
 > [!IMPORTANT]
-> Le Gestionnaire de conformité a été déplacé du portail d’confiance des services vers son nouvel emplacement dans [le centre Microsoft 365 conformité.](https://compliance.microsoft.com/) Toutes les données client ont été déplacées vers le nouvel emplacement, de sorte que vous pouvez continuer à utiliser le Gestionnaire de conformité sans interruption. Reportez-vous [à la documentation du Gestionnaire de conformité](compliance-manager.md) pour obtenir des informations sur l’installation et pour en savoir plus sur les nouvelles fonctionnalités. Bien que la version classique du Gestionnaire de conformité reste dans le portail d’confiance des services, tous les utilisateurs sont encouragés à utiliser le Gestionnaire de conformité dans le centre Microsoft 365 conformité.
+> Le Gestionnaire de conformité a été déplacé du portail d’confiance des services vers son nouvel emplacement dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Toutes les données client ont été déplacées vers le nouvel emplacement, vous pouvez donc continuer à utiliser le Gestionnaire de conformité sans interruption. Reportez-vous [à la documentation du Gestionnaire de conformité](compliance-manager.md) pour obtenir des informations sur l’installation et pour en savoir plus sur les nouvelles fonctionnalités. Bien que la version classique du Gestionnaire de conformité reste dans le portail d’confiance des services, tous les utilisateurs sont encouragés à utiliser le Gestionnaire de conformité dans le Centre de conformité Microsoft 365.
 
 ### <a name="trust-documents"></a>Documents approuvés
 
-Fournit une multitude d’informations de conception et d’implémentation de sécurité dans le but de vous aider à atteindre plus facilement les objectifs de conformité réglementaire en comprenant comment les services Microsoft Cloud assurent la sécurité de vos données. Pour consulter le contenu, sélectionnez l'une des options suivantes dans le menu déroulant **Documents de référence**.
+Fournit une multitude d’informations de conception et d’implémentation de sécurité dans le but de vous aider à atteindre plus facilement les objectifs de conformité réglementaire en comprenant la façon dont les services Microsoft Cloud assurent la sécurité de vos données. Pour consulter le contenu, sélectionnez l'une des options suivantes dans le menu déroulant **Documents de référence**.
 
 - **Rapports d’audit :** Une liste de rapports d’audit et d’évaluation indépendants sur les services Cloud de Microsoft s’affiche. Ces rapports fournissent des informations sur la conformité des services Microsoft Cloud aux normes de protection des données et aux exigences réglementaires, telles que :
 
@@ -101,7 +101,7 @@ Liens vers le [Centre de confidentialité Microsoft,](https://www.microsoft.com/
 
 ### <a name="my-library"></a>Ma bibliothèque
 
-Cette nouvelle fonctionnalité vous permet d’enregistrer *(ou* d’épingler) des documents afin d’y accéder rapidement sur votre page Ma bibliothèque. Vous pouvez également configurer des notifications de telle sorte que Microsoft vous envoie un courrier électronique lorsque les documents de votre bibliothèque sont mis à jour. Pour plus d’informations, voir la section [Ma bibliothèque](#my-library-1) dans cet article.
+Cette nouvelle fonctionnalité vous permet d’enregistrer *(ou* d’épingler) des documents afin de pouvoir y accéder rapidement sur votre page Ma bibliothèque. Vous pouvez également configurer des notifications de telle sorte que Microsoft vous envoie un courrier électronique lorsque les documents de votre bibliothèque sont mis à jour. Pour plus d’informations, voir la section [Ma bibliothèque](#my-library-1) dans cet article.
 
 ### <a name="more"></a>Plus
 
@@ -111,7 +111,7 @@ Accédez **à Plus > administrateur pour** accéder aux fonctions d’administra
 
 - **Confidentialité de l’Paramètres :** Cette page vous permet d’exporter un rapport qui contient les affectations d’éléments d’action dans le Gestionnaire de conformité (classique) pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer tout élément d’action affecté de l’utilisateur spécifié.
 
-### <a name="search"></a>Recherche
+### <a name="search"></a>Rechercher
 
 Cliquez sur la loupe dans le coin supérieur droit de la page Portail d’confiance des services pour développer la zone, entrez vos termes de recherche, puis appuyez sur **Entrée**. La page **De** recherche s’affiche, avec le terme de recherche affiché dans la zone de recherche et les résultats de recherche répertoriés ci-dessous.
 
@@ -130,7 +130,7 @@ Pour lister les contrôles des évaluations dans le Gestionnaire de conformité 
 
 Utilisez la fonctionnalité Ma bibliothèque pour ajouter des documents et des ressources sur le portail d’confiance des services à votre page Ma bibliothèque. Cela vous permet d’accéder aux documents qui vous sont pertinents en un seul endroit.  Pour ajouter un document à votre bibliothèque My Library, cliquez sur le menu **...** à droite d’un document, puis **sélectionnez Enregistrer dans la bibliothèque.** Vous pouvez ajouter plusieurs documents à votre bibliothèque My Library en cliquant sur  la case à cocher en regard d’un ou plusieurs documents, puis en cliquant sur Enregistrer dans la bibliothèque en haut de la page.
 
-En outre, la fonctionnalité de notifications vous permet de configurer votre bibliothèque My Library afin qu’un message électronique vous soit envoyé chaque fois que Microsoft met à jour un document que vous avez ajouté à votre bibliothèque My Library. Pour configurer des notifications, go to your My Library and click **Notification Paramètres**. Vous pouvez choisir la fréquence des notifications et spécifier une adresse de messagerie dans votre organisation à laquelle envoyer des notifications. Les notifications par courrier électronique incluent des liens vers les documents qui ont été mis à jour et une brève description de la mise à jour.
+En outre, la fonctionnalité de notifications vous permet de configurer votre bibliothèque My Library afin qu’un message électronique vous soit envoyé chaque fois que Microsoft met à jour un document que vous avez ajouté à votre bibliothèque My Library. Pour configurer les notifications, go to your My Library and click **Notification Paramètres**. Vous pouvez choisir la fréquence des notifications et spécifier une adresse de messagerie dans votre organisation à laquelle envoyer des notifications. Les notifications par courrier électronique incluent des liens vers les documents qui ont été mis à jour et une brève description de la mise à jour.
 
 Notez également que nous identifions tous les documents de votre bibliothèque My Library qui ont été mis à jour au cours des 30 derniers jours, que vous turniez ou non les notifications. Une brève description de la mise à jour est également affichée dans une info-conseil.
 
@@ -142,7 +142,7 @@ Les starter packs sont un ensemble de documentation organisée par Microsoft sur
 
 - **Pack de démarrage de l’évaluation :** Après l’évaluation, utilisez les listes de contrôle et autres conseils de ce pack de démarrage pour aider votre organisation à évaluer les risques liés à la sécurité, la conformité et la confidentialité.
 
-- **Audit starter pack :** Utilisez ce pack de démarrage pour obtenir des conseils sur l’utilisation des contrôles d’audit et d’autres outils pour vous aider à mettre en œuvre les services Microsoft Cloud d’une manière qui permet de réduire l’exposition de votre organisation aux risques.
+- **Audit Starter Pack :** Utilisez ce pack de démarrage pour obtenir des conseils sur l’utilisation des contrôles d’audit et d’autres outils pour vous aider à mettre en œuvre les services Microsoft Cloud d’une manière qui permet de réduire l’exposition de votre organisation aux risques.
 
 Pour accéder à ces starter packs, accédez à **Service Trust Portal > Industries & Regions > Industry Solutions > Financial Services**. Vous pouvez ouvrir ou télécharger des documents à partir d’un starter pack ou les enregistrer dans votre bibliothèque My Library.
 

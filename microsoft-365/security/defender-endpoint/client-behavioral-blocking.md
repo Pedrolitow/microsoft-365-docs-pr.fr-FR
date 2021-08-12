@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 890367fad441cf068ecd17f992075695dc035ec7
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 60898f85825efab44aea59c4eb8de9b8927f1c1f5c99d077bd54f830f22a5b37
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656174"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794404"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 

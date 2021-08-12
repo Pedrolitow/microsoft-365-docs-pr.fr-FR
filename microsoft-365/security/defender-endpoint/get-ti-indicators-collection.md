@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 124b59e6ce83e5a9416cfa299425ab4f64a03225
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b69de3add4ca159793eada07ff6c121e7e29690a751be682285ffea24ee46ff5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829302"
 ---
 # <a name="list-indicators-api"></a>API d’indicateurs de liste
 
@@ -41,7 +41,7 @@ Extrait une collection de tous les indicateurs [actifs.](ti-indicator.md)
 
 Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
 
-La requête OData est prise en charge sur `$filter` : , , et les `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` `action` `severity` propriétés.
+La requête OData est prise en charge sur `$filter` : , , , et les `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` `action` `severity` propriétés.
 
 Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
@@ -80,7 +80,7 @@ Vide
 Si elle réussit, cette méthode renvoie le code de réponse 200, Ok avec une collection [d’entités Indicator.](ti-indicator.md)
 
 > [!NOTE]
-> Si l’application dispose de l’autorisation « Ti.ReadWrite.All » , elle est exposée à tous les indicateurs. Sinon, il sera exposé uniquement aux indicateurs qu’il a créés.
+> Si l’application dispose de l’autorisation « Ti.ReadWrite.All », elle sera exposée à tous les indicateurs. Sinon, il sera exposé uniquement aux indicateurs qu’il a créés.
 
 ## <a name="example-1"></a>Exemple 1
 

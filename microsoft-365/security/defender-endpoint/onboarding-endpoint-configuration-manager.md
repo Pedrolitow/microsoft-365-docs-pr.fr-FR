@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e8cb3b843ce3f8bbbec6d1dc96bf2aa237eaa2a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3274e3e4b2992ad6d7309b01bc7ed8b7113302fc6fbbb4e706cb1365ae58821b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845463"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l'aide de Microsoft Endpoint Configuration Manager
 
@@ -82,7 +82,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
     ![Image de l Microsoft Endpoint Configuration Manager Wizard2](images/configmgr-create-device-collection.png)
 
-3. Fournissez **un nom** et **limitez la collection,** puis sélectionnez **Suivant**.
+3. Fournissez un **nom** et **limitez la collection,** puis sélectionnez **Suivant**.
 
     ![Image de l’Assistant Microsoft Endpoint Configuration Manager 3](images/configmgr-limiting-collection.png)
 
@@ -90,7 +90,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
     ![Image de l Microsoft Endpoint Configuration Manager Wizard4](images/configmgr-query-rule.png)
 
-5.  Cliquez **sur Suivant** dans **l’Assistant Adhésion** directe et cliquez sur Modifier **l’instruction de requête.**
+5.  Cliquez **sur Suivant** dans **l’Assistant Adhésion directe** et cliquez sur Modifier **l’instruction de requête.**
 
      ![Image de l’Assistant Microsoft Endpoint Configuration Manager 5](images/configmgr-direct-membership.png)
 
@@ -115,7 +115,7 @@ Après avoir effectué cette tâche, vous avez maintenant une collection d’app
 
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Étape 2 : Configurer Microsoft Defender pour les fonctionnalités de point de terminaison 
-Cette section vous guide dans la configuration des fonctionnalités suivantes à l’aide de Microsoft Endpoint Configuration Manager sur Windows appareils :
+Cette section vous guide dans la configuration des fonctionnalités suivantes à l’aide Microsoft Endpoint Configuration Manager sur Windows appareils :
 
 - [**Détection et réponse des points de terminaison**](#endpoint-detection-and-response)
 - [**Protection de nouvelle génération**](#next-generation-protection)
@@ -145,7 +145,7 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
     ![Image de l Microsoft Endpoint Configuration Manager 12](images/configmgr-create-policy.png)
 
-7. Entrez le nom et la description, vérifiez que **l’intégration** est sélectionnée, puis sélectionnez **Suivant**.
+7. Entrez le nom et la description, vérifiez **que l’intégration** est sélectionnée, puis sélectionnez **Suivant**.
 
     ![Image de l Microsoft Endpoint Configuration Manager 13](images/configmgr-policy-name.png)
 
@@ -204,7 +204,7 @@ Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defen
 
     -   Windows Server 2016
 
-    -   Windows Server 2012 R2
+    -   Windows Server 2012 R2
 
     -   Windows Server 2008 R2
 
@@ -254,7 +254,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
     ![Image du volet de protection nouvelle génération9](images/3876ca687391bfc0ce215d221c683970.png)
 
-3. Cliquez avec le bouton droit sur la stratégie anti-programme malveillant nouvellement créée et sélectionnez **Déployer.**
+3. Cliquez avec le bouton droit sur la stratégie de logiciel anti-programme malveillant nouvellement créée et sélectionnez **Déployer.**
 
     ![Image du volet de protection nouvelle génération10](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
@@ -264,7 +264,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
 Après avoir terminé cette tâche, vous avez configuré Antivirus Windows Defender.
 
-### <a name="attack-surface-reduction"></a>Réduction de la surface d’attaque
+### <a name="attack-surface-reduction"></a>Réduction de la surface d'attaque
 Le pilier de réduction de la surface d’attaque de Defender pour le point de terminaison inclut l’ensemble de fonctionnalités disponible sous Exploit Guard. Règles de réduction de la surface d’attaque (ASR), Accès contrôlé aux dossiers, Protection du réseau et Exploit Protection. 
 
 Toutes ces fonctionnalités fournissent un mode audit et un mode bloc. En mode audit, il n’y a pas d’impact sur l’utilisateur final. Tout ce qu’il fait, c’est collecter des données de télémétrie supplémentaires et les rendre disponibles dans le Microsoft 365 Defender web. L’objectif d’un déploiement est de déplacer pas à pas les contrôles de sécurité en mode blocage.
@@ -320,14 +320,14 @@ Vous trouverez ci-dessous des étapes supplémentaires pour vérifier si les rè
 
     ![Capture d’écran des règles de réduction de la surface d’attaque reports1](images/f91f406e6e0aae197a947d3b0e8b2d0d.png)
 
-5. Cliquez sur chaque appareil pour obtenir les détails de configuration des règles de la asr.
+5. Cliquez sur chaque appareil pour obtenir les détails de configuration des règles asr.
 
     ![Capture d’écran des règles de réduction de la surface d’attaque rapports2](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
-Pour [plus d’informations, voir](/microsoft-365/security/defender-endpoint/configure-machines-asr)   Optimiser le déploiement et les détections de règles asr.  
+Pour [plus d’informations, voir Optimiser](/microsoft-365/security/defender-endpoint/configure-machines-asr)   le déploiement et les détections de règles asr.  
 
 
-#### <a name="set-network-protection-rules-in-audit-mode"></a>Définir des règles de protection du réseau en mode audit :
+#### <a name="set-network-protection-rules-in-audit-mode"></a>Définissez des règles de protection réseau en mode audit :
 1. Dans la console Microsoft Endpoint Configuration Manager, accédez à La vue d’ensemble des ressources et de la **conformité Endpoint Protection Windows Defender Exploit \> \> \> Guard** et choisissez Créer une stratégie **Exploit Guard.**
 
     ![Capture d’écran System Center Configuration Manager1](images/728c10ef26042bbdbcd270b6343f1a8a.png)
