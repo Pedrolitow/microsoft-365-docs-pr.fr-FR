@@ -23,7 +23,7 @@ ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/04/2021
-ms.locfileid: "53757377"
+ms.locfileid: "53726464"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur Linux
 

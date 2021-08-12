@@ -3,7 +3,7 @@ title: Démarrer avec la gouvernance des applications
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
-author: v-tophillips
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -14,60 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec des fonctionnalités de gouvernance des applications pour régir vos applications.
-ms.openlocfilehash: 12c90a2caea7d27713cc9dad0be11894d84b19b3245e07046a8ed7b2451db601
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: dc07acab3d58f8449f01f09f45c3bc78b66d0e3e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520427"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541204"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Démarrage avec la gouvernance des applications (en préversion)
 
 Pour commencer à utiliser le module complémentaire de gouvernance des applications de Microsoft Cloud App Security :
 
-1. Vérifiez que votre compte dispose du [niveau de licence approprié](#licensing-for-app-governance). La gouvernance des applications est une fonctionnalité complémentaire pour Microsoft Cloud App Security (MCAS). Par conséquent, MCAS doit être présent dans votre compte en tant que produit autonome ou dans le cadre des différents packages de licences.
-1. Vous devez avoir l’un des [rôles d’administrateur](#administrator-roles) répertoriés ci-dessous pour accéder aux pages de gouvernance des applications dans le portail.
-1. L'adresse de facturation de votre organisation doit se trouver dans l'une[ des zones prises en charge en Amérique du Nord, en Europe ou en Afrique](app-governance-countries.md) afin d'activer l'essai gratuit.
-
-## <a name="sign-up-for-free-trial-of-app-governance"></a>Inscrivez-vous à un essai gratuit de la gouvernance des applications
-
-Pour les nouveaux clients Microsoft 365 :
-
-1. En haut de cette page, sélectionnez le bouton  **Compte gratuit** .
-1. Sous  **Essayez Microsoft 365 pour les entreprises** sélectionnez **Essai gratuit d’un mois**.
-1. Effectuez les étapes de l’inscription.
-1. Poursuivez les étapes pour les clients Microsoft 365 existants.
-
-Pour les clients Microsoft 365 existants :
-
-1. Accédez à la [page d’inscription pour version d’évaluation gratuite](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc). 
-1. Effectuez les étapes pour ajouter la gouvernance des applications. L’inscription est simple, comme illustré dans le graphique suivant.
-
-:::image type="content" source="../media/manage-app-protection-governance/app-governance-signup2.gif" alt-text="Étapes simples pour ajouter la gouvernance des applications à votre compte":::
-
-## <a name="add-integration-with-mcas"></a>Ajouter une intégration à MCAS
-
-Conditions préalables :
-
-- Office 365 est connecté dans Sécurité des applications cloud
-- Les applications office 365 Azure AD sont activées
-
-Pour activer la synchronisation de la gouvernance des applications avec Sécurité des applications cloud, procédez comme suit :
-
-1. Accédez à votre portail Microsoft Cloud App Security : [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
-1. Sélectionnez l’icône d’engrenage (coin supérieur droit), puis sélectionnez **Paramètres**.
-1. Sous **Protection contre les menaces**, sélectionnez **Gouvernance des applications**.
-1. Sélectionnez **Activer l’intégration de la gouvernance des applications**, puis sélectionnez **Enregistrer**.
-
-Ensuite, passez en revue les stratégies nouvellement activées dans MCAS. L’affichage des nouvelles stratégies peut prendre quelques minutes une fois l’intégration activée.
-
-- Réputation de l’application OAuth Microsoft 365
-- Détection de l'hameçonnage de OAuth Microsoft 365
-- Gouvernance des applications OAuth Microsoft 365
-- Examiner le widget Gouvernance des applications dans le tableau de bord MCAS
-- Examinez les alertes de gouvernance d'applications nouvellement générées dans les alertes MCAS.
-- Examinez les stratégies OAuth MCAS Microsoft 365 dans la liste des stratégies de gouvernance des applications.
-- Examinez les alertes OAuth MCAS Microsoft 365 nouvellement générées dans les alertes de gouvernance des applications
+1. Vérifiez que votre compte dispose du niveau de licence approprié. La gouvernance des applications est une fonctionnalité complémentaire de Microsoft Cloud App Security (MCAS), et MCAS doit donc être présent dans votre compte en tant que produit autonome ou dans le cadre des différents packs de licences énumérés ci-dessous.
+1. Vous devez avoir l’un des rôles d’administrateur répertoriés ci-dessous pour accéder aux pages de gouvernance des applications dans le portail.
+1. L’inscription de client de votre organisation doit se trouver dans l’une des [zones prises en charge d’Amérique du Nord, d’Europe ou d’Afrique](app-governance-countries.md).
 
 ## <a name="licensing-for-app-governance"></a>Licences pour la gouvernance des applications
 
@@ -97,9 +57,6 @@ Avant de vous lancer dans la gouvernance des applications, vous devez confirmer 
 - Avantages de l’utilisation de Microsoft 365 A5 pour les étudiants sans Audioconférence
 
 ## <a name="administrator-roles"></a>Rôles d'administrateur
-
-> [!NOTE]
-> Seul un rôle d’administrateur global peut activer l'essai gratuit de la gouvernance de l'application.
 
 L'un des rôles d'administrateur suivants est requis pour voir les pages de gouvernance des applications ou gérer les stratégies et les paramètres :
 
@@ -135,6 +92,57 @@ Voici les fonctionnalités de chaque rôle.
 
 Pour plus d’informations sur chaque rôle, consultez [Autorisations de rôle Administrateur](/azure/active-directory/roles/permissions-reference).
 
+## <a name="add-app-governance-to-your-microsoft-365-account"></a>Ajouter la gouvernance des applications à votre compte Microsoft 365
+
+Pour les clients Microsoft 365 existants :
+
+1. Dans votre [Centre d’administration Microsoft 365](https://admin.microsoft.com), accédez à **Facturation - Acheter des services** et cliquez sur **modules complémentaires**.
+1. Dans la carte de gouvernance des applications, cliquez sur **Détails**.
+1. Cliquez sur **Démarrer l’essai gratuit**.
+1. Renseignez les informations demandées pour ajouter la gouvernance des applications à votre client sélectionné. Si vous êtes un nouveau client, vous devez d’abord fournir des informations pour établir un compte et créer un client pour votre période d’essai. Une fois cette opération effectuée, vous pouvez ajouter la gouvernance des applications à la version d’évaluation.
+
+Pour les nouveaux clients Microsoft 365 :
+
+1. En haut de cette page, cliquez sur le bouton **Compte gratuit** .
+1. Sous **Essayez Microsoft 365 pour les entreprises** cliquez sur **Essai gratuit d’un mois**.
+
+Pour les deux :
+
+1. Dans le portail d’inscription, indiquez votre adresse e-mail à utiliser pour la version d’évaluation. Si vous êtes un client existant, utilisez l’e-mail associé à votre compte. Cliquez sur **Suivant**.
+1. Une fois que vous êtes connecté, cliquez sur **Essayez maintenant** pour obtenir l’essai gratuit.
+1. Cliquez sur **Continuer** pour fermer la page et commencer la configuration de la version d’évaluation. Pour les nouveaux clients de gouvernance des applications, la mise à disposition de votre instance de gouvernance des applications peut prendre jusqu’à deux heures. Pour les clients existants, il n’y aura aucune interruption des services existants.
+
+  > [!NOTE]
+  Si vous n’avez pas encore de compte, vous serez invité à configurer un nouveau compte avant de poursuivre l’essai.
+
+1. Entrez un nom de domaine disponible pour votre client AAD, puis cliquez sur **Vérifier la disponibilité**. Vous recevrez automatiquement un rôle d’administrateur (si vous n’avez pas de rôle existant pour la gouvernance des applications) et pourrez toujours modifier le nom de domaine et/ou acheter d’autres clients ultérieurement via le Centre d’administration Microsoft 365.
+1. Entrez le nom d’utilisateur et le mot de passe que vous souhaitez utiliser pour vous connecter à votre compte. Cliquez sur **S’inscrire**.
+1. Cliquez sur **Démarrage** pour accéder au portail de gouvernance des applications ou **Gérer votre abonnement** pour accéder au Centre d’administration Microsoft 365.
+
+## <a name="add-integration-with-mcas"></a>Ajouter une intégration à MCAS 
+
+Conditions préalables :
+
+- Office 365 est connecté dans Sécurité des applications cloud
+- Les applications office 365 Azure AD sont activées
+
+Pour activer la synchronisation de la gouvernance des applications avec Sécurité des applications cloud, procédez comme suit :
+
+1. Accédez à votre portail Microsoft Cloud App Security : [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
+1. Cliquez sur l’icône d’engrenage (coin supérieur droit), puis sélectionnez **Paramètres**.
+1. Sous **Protection contre les menaces**, sélectionnez **Gouvernance des applications**.
+1. Cliquez sur **Activer l’intégration de la gouvernance des applications**, puis sélectionnez **Enregistrer**.
+
+Ensuite, passez en revue les stratégies nouvellement activées dans MCAS. L’affichage des nouvelles stratégies peut prendre quelques minutes une fois l’intégration activée.
+
+- Réputation de l’application OAuth Microsoft 365
+- Détection de l'hameçonnage de OAuth Microsoft 365
+- Gouvernance des applications OAuth Microsoft 365
+- Examiner le widget Gouvernance des applications dans le tableau de bord MCAS
+- Examinez les alertes de gouvernance d'applications nouvellement générées dans les alertes MCAS.
+- Examinez les stratégies OAuth MCAS M365 dans la liste des stratégies de gouvernance des applications.
+- Examinez les alertes OAuth MCAS M365 nouvellement générées dans les alertes de gouvernance des applications
+
 ## <a name="canceling-your-trial"></a>Annulation de votre version d'évaluation
 
 Si vous n'avez pas participé à la préversion privée et que vous souhaitez annuler votre version d'évaluation de la gouvernance des applications, vous pouvez communiquer avec votre contact CXE ou suivre les étapes suivantes :
@@ -143,9 +151,3 @@ Si vous n'avez pas participé à la préversion privée et que vous souhaitez an
 1. Accédez à la version d’évaluation de la gouvernance des applications, cliquez sur les trois points, puis sélectionnez **Annuler l’abonnement**.
 1. Dans le volet volant qui en résulte, indiquez la raison de l’annulation, les commentaires supplémentaires, puis sélectionnez **Annuler l’abonnement**.
 1. Sélectionnez **Annuler l’abonnement** dans l’écran contextuel qui en résulte. Votre version d'évaluation est annulée, vous perdez l'accès à la gouvernance des applications et vos données de gouvernance des applications sont supprimées (données de journal utilisées pour créer les aperçus et les détections de gouvernance des applications, aucun courriel ou autre fichier n'est affecté).
-
-## <a name="known-issues-for-the-public-preview"></a>Problèmes connus dans la préversion publique
-
-L’équipe de gouvernance des applications a identifié les problèmes connus suivants pour la préversion : 
-
-- Synchronisation bidirectionnelle entre Microsoft Defender et les alertes de gouvernance des applications : actuellement, les alertes résolues dans Defender doivent également être résolues manuellement dans la gouvernance des applications.

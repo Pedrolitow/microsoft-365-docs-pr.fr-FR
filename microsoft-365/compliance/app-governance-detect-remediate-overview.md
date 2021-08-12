@@ -2,8 +2,8 @@
 title: En savoir plus sur la détection et la correction des menaces d’application
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur la détection et la correction des menaces d’application.
-ms.openlocfilehash: 70f39ac3506ff6962ab028009cab54dfb83cd47b
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 89db65cc8115a20bac0e8790d511c036127d6921
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624223"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541216"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>En savoir plus sur la détection et la correction des menaces d’application
 

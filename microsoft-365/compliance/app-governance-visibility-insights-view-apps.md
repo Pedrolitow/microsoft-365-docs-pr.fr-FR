@@ -2,8 +2,8 @@
 title: Afficher vos applications
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Affichez vos applications.
-ms.openlocfilehash: 5a11e161fb7b37405b61866599a616874ad4a190
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 448ca4cd7fab13ce25c3bcc18c350d227461ee45
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623015"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541104"
 ---
 # <a name="view-your-apps"></a>Afficher vos applications
 
@@ -32,7 +32,7 @@ La gouvernance des applications Microsoft vous permet d’obtenir rapidement des
 
 ## <a name="getting-a-list-of-all-the-apps-in-your-tenant"></a>Obtention d’une liste de toutes les applications de votre client
 
-Pour obtenir un résumé des applications de votre client, accédez à **Centre de conformité Microsoft 365 > Gouvernance des applications > Applications**.
+Pour obtenir un résumé des applications de votre client, accédez à **Centre de conformité Microsoft 365 > Protection & gouvernance des applications > Applications**.
 
 ![Page récapitulative de l’application MAPG dans le Centre de conformité Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
@@ -74,7 +74,7 @@ Le volet détails de l’application fournit des informations supplémentaires s
 | Nom de l’onglet | Description |
 |:-------|:-----|
 | Détails | Consultez des données supplémentaires sur l’application, telles que la date du premier consentement et l’ID d’application. Pour afficher les propriétés de l’application telles qu’inscrites dans Azure AD, sélectionnez **Afficher l’application dans Azure AD**. |
-| Utilisation |Consultez les données auxquelles l’application accède dans le locataire et tracez l’utilisation des données pour les ressources Sharepoint et Exchange. |
+| Utilisation | Consultez les données consultées par l’application dans le client, tracez l’utilisation des données et affichez l’utilisation par les utilisateurs \<x> principaux avec [comptes prioritaires](/microsoft-365/admin/setup/priority-accounts). |
 | Utilisateurs | Consultez la liste des utilisateurs qui utilisent l’application, s’il s’agit d’un compte prioritaire et la quantité de données téléchargées et chargées. |
 | Autorisations | Consultez un résumé des autorisations accordées et utilisées par l’application, ainsi que la liste des autorisations spécifiques. Pour plus d’informations, consultez la [référence des autorisations Microsoft Graph](/graph/permissions-reference). |
 |||

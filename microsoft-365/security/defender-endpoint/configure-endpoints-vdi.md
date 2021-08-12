@@ -1,6 +1,6 @@
 ---
 title: Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
-description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu’ils soient intégrés au service Microsoft Defender for Endpoint.
+description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service Microsoft Defender for Endpoint.
 keywords: configurer l’infrastructure de bureau virtuel (VDI), vdi, gestion des appareils, configurer Microsoft Defender pour les points de terminaison, points de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 999363676c18ba2d24e2b35fa03081eb292ab650
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9d976ee46cc6feb7897e67294077b8a1fbaa0f12
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655418"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567847"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>Intégration d’appareils d’infrastructure de bureau virtuel non persistants
 
@@ -35,7 +35,7 @@ ms.locfileid: "53655418"
 - Périphériques VDI (Virtual Desktop Infrastructure)
 - Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
@@ -89,13 +89,13 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 4. Selon la méthode que vous souhaitez implémenter, suivez les étapes appropriées :
 
-    - Pour une entrée unique pour chaque appareil :
+   - Pour une entrée unique pour chaque appareil :
    
-         Sélectionnez **l’onglet Scripts PowerShell,** puis cliquez sur Ajouter **(Windows** Explorer s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment). Accédez au script PowerShell `Onboard-NonPersistentMachine.ps1` d’intégration. Il n’est pas nécessaire de spécifier l’autre fichier, car il sera déclenché automatiquement.
+     Sélectionnez **l’onglet Scripts PowerShell,** puis cliquez sur Ajouter **(Windows** Explorer s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment). Accédez au script PowerShell `Onboard-NonPersistentMachine.ps1` d’intégration. Il n’est pas nécessaire de spécifier l’autre fichier, car il sera déclenché automatiquement.
    
-    - Pour plusieurs entrées pour chaque appareil :
+   - Pour plusieurs entrées pour chaque appareil :
    
-         Sélectionnez **l’onglet Scripts,** puis cliquez sur Ajouter **(Windows** Explorer s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment). Accédez au script Bash `WindowsDefenderATPOnboardingScript.cmd` d’intégration.
+     Sélectionnez **l’onglet Scripts,** puis cliquez sur Ajouter **(Windows** Explorer s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment). Accédez au script Bash `WindowsDefenderATPOnboardingScript.cmd` d’intégration.
 
 5. Testez votre solution :
 
@@ -109,18 +109,17 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
       
    1. Selon la méthode que vous souhaitez implémenter, suivez les étapes appropriées :
 
-   - Pour une entrée unique pour chaque appareil : 
+        - Pour une entrée unique pour chaque appareil : 
 
-     Vérifiez une seule entrée dans Microsoft 365 Defender portail.
+            Vérifiez une seule entrée dans Microsoft 365 Defender portail.
 
-   - Pour plusieurs entrées pour chaque appareil : 
+        - Pour plusieurs entrées pour chaque appareil : 
 
-     Vérifiez plusieurs entrées dans Microsoft 365 Defender portail.
-
+            Vérifiez plusieurs entrées dans Microsoft 365 Defender portail.
 
 6. Cliquez **sur La liste Appareils** dans le volet de navigation.
 
-7. Utilisez la fonction de recherche en entrant le nom de l’appareil et **sélectionnez Appareil** comme type de recherche.
+7. Utilisez la fonction de recherche en entrant le nom de l’appareil et sélectionnez **Appareil** comme type de recherche.
 
 
 ## <a name="for-downlevel-skus"></a>Pour les SSO de niveau bas
@@ -178,7 +177,7 @@ Si la maintenance hors connexion n’est pas une option viable pour votre enviro
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 

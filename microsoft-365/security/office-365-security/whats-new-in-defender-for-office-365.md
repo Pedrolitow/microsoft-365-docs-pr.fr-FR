@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 79483956fe15cc3aacaaae90f23968efbd317a80a64c1bd7f0e6862c66580988
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: ca0eeba9fb8678a4b71e8fdaefb05acb0ec55978
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520385"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726295"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -45,25 +45,16 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 ## <a name="july-2021"></a>Juillet 2021
 
 - [Améliorations apportées à l’analyse du courrier électronique dans les enquêtes automatisées](email-analysis-investigations.md)
-- [Remise avancée](configure-advanced-delivery.md): introduction d’une nouvelle fonctionnalité de configuration de la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés aux boîtes aux lettres d’opération de sécurité.
 - [Coffre Liens pour Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
-- Nouvelles stratégies d’alerte pour les scénarios suivants : boîtes aux lettres compromises, hameçonnage de formulaires, messages malveillants remis en raison de remplacements et de l’arrondi zap
-  - Activité suspecte de transfert d’e-mail
-  - Utilisateur restreint au partage de formulaires et à la collecte de réponses
-  - Formulaire bloqué en raison d’une tentative de hameçonnage potentielle
-  - Formulaire marqué et confirmé comme hameçonnage
-  - [Nouvelles stratégies d’alerte pour ZAP](../../compliance/new-defender-alert-policies.md)
-- Les alertes Microsoft Defender pour Office 365 sont désormais intégrées dans Microsoft 365 Defender - Microsoft 365 Defender de la file d’attente des alertes unifiées et de la file d’attente des [alertes unifiées](../defender/investigate-alerts.md)
-- [](user-tags.md) Les balises utilisateur sont désormais intégrées aux expériences d’alerte de Microsoft Defender pour Office 365, notamment : la file d’attente des alertes et les détails dans Office 365 Security & Compliance, et l’application de stratégies d’alerte personnalisées aux balises utilisateur pour créer des stratégies d’alerte ciblées. 
-  - Les balises sont également disponibles dans la file d’attente des alertes unifiées dans le centre Microsoft 365 Defender (Microsoft Defender pour Office 365 Plan 2)
 
 
 ## <a name="june-2021"></a>Juin 2021
 
 - Le nouveau premier contact conseil de sécurité dans les stratégies anti-hameçonnage. Cette conseil de sécurité s’affiche lorsque les destinataires reçoivent pour la première fois un message électronique d’un expéditeur ou ne reçoivent pas souvent de courriers électroniques d’un expéditeur. Pour plus d’informations sur ce paramètre et comment le configurer, consultez les articles suivants :
-  - [Premier contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-  - [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
-  - [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)
+
+- [Premier contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
+- [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>Avril/mai 2021
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c35ce53c28beb83232edb5c1cb805b6f6e51ce1c92f10e21ecb0d6b655e76c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b2d4817849d3008c231015b805b13b0a1abdb4af
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792996"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567655"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventaire logiciel : Gestion des menaces et des vulnérabilités
 
@@ -34,11 +34,11 @@ ms.locfileid: "53792996"
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-L’inventaire logiciel dans Gestion des menaces et des vulnérabilités liste des logiciels connus de votre organisation avec les [énumérations officielles de plateforme commune (CPE)](https://nvd.nist.gov/products/cpe). Les produits logiciels sans CPE officiel n’ont pas de vulnérabilités publiées. Il inclut également des détails tels que le nom du fournisseur, le nombre de faiblesses, les menaces et le nombre d’appareils exposés.
+L’inventaire logiciel dans Gestion des menaces et des vulnérabilités liste des logiciels connus de votre organisation avec les [énumérations officielles de plateforme commune (CPE)](https://nvd.nist.gov/products/cpe). Les produits logiciels sans CPE officielles n'ont pas de vulnérabilités publiées. Il inclut également des détails tels que le nom du fournisseur, le nombre de faiblesses, les menaces et le nombre d’appareils exposés.
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Comment ça marche
 
 Dans le domaine de la découverte, nous tirent parti du même ensemble de signaux qui est responsable de l’évaluation de la détection et de la vulnérabilité dans Microsoft Defender pour les fonctionnalités de détection et de réponse des points de [terminaison.](overview-endpoint-detection-response.md)
 
@@ -46,7 +46,7 @@ Dans la mesure où il s’agit d’un temps réel, en quelques minutes, vous ver
 
 ## <a name="navigate-to-the-software-inventory-page"></a>Accéder à la page Inventaire logiciel
 
-Accédez à la page  Inventaire logiciel en sélectionnant Inventaire logiciel dans le menu Gestion des menaces et des vulnérabilités navigation dans le [portail Microsoft 365 Defender.](portal-overview.md)
+Accédez à la page  Inventaire logiciel en sélectionnant Inventaire logiciel dans le menu de navigation Gestion des menaces et des vulnérabilités dans le [portail Microsoft 365 Defender.](portal-overview.md)
 
 Afficher les logiciels sur des appareils spécifiques dans les pages des appareils individuels à partir de la [liste des appareils.](machines-view-overview.md)
 
@@ -98,7 +98,7 @@ Sélectionnez un nom de logiciel pour ouvrir le volant et recherchez la section 
 
 Vous pouvez afficher les pages logicielles de différentes manières :
 
-- Page d’inventaire > sélectionnez un nom de logiciel > **page** Sélectionner un logiciel ouvert dans le volant
+- Page Inventaire logiciel > sélectionner un nom de logiciel > **page** Sélectionner un logiciel ouvert dans le volant
 - [Page Recommandations en matière](tvm-security-recommendation.md) de sécurité > sélectionner une recommandation > **page** Sélectionner un logiciel ouvert dans le volant
 - Page chronologie des [événements](threat-and-vuln-mgt-event-timeline.md) > Sélectionnez un > Sélectionnez le nom du logiciel avec lien hypertexte (comme Visual Studio 2017) dans la section intitulée « Composant associé » dans le volant
 
@@ -107,14 +107,15 @@ Vous pouvez afficher les pages logicielles de différentes manières :
 - Panneau latéral avec des informations sur le fournisseur, la prévalence du logiciel dans l’organisation (y compris le nombre d’appareils sur lesquels il est installé et les appareils exposés qui ne sont pas corrigés), si et exploit est disponible et impact sur votre score d’exposition.
 - Visualisations de données montrant le nombre et la gravité des vulnérabilités et des mauvaises configurations. En outre, les graphiques avec le nombre d’appareils exposés.
 - Onglets affichant des informations telles que :
-  - Recommandations de sécurité correspondantes pour les faiblesses et vulnérabilités identifiées.
-  - Cv nommés des vulnérabilités découvertes.
-  - Les appareils sur qui le logiciel est installé (ainsi que le nom de l’appareil, le domaine, le système d’exploitation, et bien plus encore).
-  - Liste des versions des logiciels (y compris le nombre d’appareils sur lesquels la version est installée, le nombre de vulnérabilités découvertes et les noms des appareils installés).
+    - Recommandations de sécurité correspondantes pour les faiblesses et vulnérabilités identifiées.
+    - Cv nommés des vulnérabilités découvertes.
+    - Les appareils sur qui le logiciel est installé (ainsi que le nom de l’appareil, le domaine, le système d’exploitation, et bien plus encore).
+    - Liste des versions des logiciels (y compris le nombre d’appareils sur lesquels la version est installée, le nombre de vulnérabilités découvertes et les noms des appareils installés).
 
+    ![Page d’exemples de logiciels Visual Studio 2017 avec les détails logiciels, les faiblesses, les appareils exposés, etc.](images/tvm-software-page-example.png)
     :::image type="content" alt-text="Page d’exemples de logiciels Visual Studio 2017 avec les détails logiciels, les faiblesses, les appareils exposés, etc." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
-## <a name="report-inaccuracy"></a>Report inaccuracy
+## <a name="report-inaccuracy"></a>Inaccuracy de rapport
 
 Signalez un faux positif lorsque vous voyez des informations vagues, inexactes ou incomplètes. Vous pouvez également signaler les recommandations de sécurité qui ont déjà été corrigés.
 

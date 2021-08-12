@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 493273f9827680205714cd53ef12ea327b15ddf993c2ba8e58d31bbca83f1cdd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1386732325b831d176c662d821a2bb13d5e96739
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890696"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595857"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -139,7 +139,6 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 |
 
 Si l’analyse HTTPS (inspection SSL) est activée pour un proxy ou un pare-feu, excluez les domaines répertoriés dans le tableau ci-dessus de l’analyse HTTPS.
-Dans votre pare-feu, ouvrez toutes les URL où la colonne de géographie est WW. Pour les lignes où la colonne de géographie n’est pas WW, ouvrez les URL vers votre emplacement de données spécifique. Pour vérifier votre paramètre d’emplacement de données, voir Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données [pour Microsoft Defender pour le point de terminaison.](/microsoft-365/security/defender-endpoint/data-retention-settings)
 
 > [!NOTE]
 > settings-win.data.microsoft.com est nécessaire uniquement si vous avez des Windows 10 exécutant la version 1803 ou une version antérieure.<br>
@@ -193,9 +192,9 @@ Le point de terminaison de l’URL .blob.core.windows.net peut être remplacé p
 
 Vérifier que la configuration du proxy a été effectuée avec succès, que WinHTTP peut découvrir et communiquer par le biais du serveur proxy dans votre environnement, et que le serveur proxy permet le trafic vers les URL du service Defender for Endpoint.
 
-1. Téléchargez [l’outil Analyseur de client Microsoft Defender](https://aka.ms/mdeanalyzer) pour point de terminaison sur le PC sur lequel le capteur Defender for Endpoint est en cours d’exécution.
+1. Téléchargez [l’outil Analyseur de client MDATP](https://aka.ms/mdatpanalyzer) sur le PC sur lequel le capteur Defender for Endpoint est en cours d’exécution.
 
-2. Extrayez le contenu des MDEClientAnalyzer.zip sur l’appareil.
+2. Extraire le contenu de MDATPClientAnalyzer.zip sur l’appareil.
 
 3. Ouvrir une ligne de commandes avec élévation de privilèges :
    1. Accéder à **Démarrer** et taper **cmd**.
@@ -204,20 +203,20 @@ Vérifier que la configuration du proxy a été effectuée avec succès, que Win
 4. Entrez la commande suivante et appuyez sur **Entrée** :
 
     ```PowerShell
-    HardDrivePath\MDEClientAnalyzer.cmd
+    HardDrivePath\MDATPClientAnalyzer.cmd
     ```
 
-    Remplacez *HardDrivePath* par le chemin d’accès où l’outil MDEClientAnalyzer a été téléchargé, par exemple :
+    Remplacez *HardDrivePath* par le chemin d’accès où l’outil MDATPClientAnalyzer a été téléchargé, par exemple :
 
     ```PowerShell
-    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
+    C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
     ```
 
-5. *ExtrayezMDEClientAnalyzerResult.zip* fichier créé par l’outil dans le dossier utilisé dans *HardDrivePath*.
+5. *ExtrayezMDATPClientAnalyzerResult.zip* fichier créé par l’outil dans le dossier utilisé dans *HardDrivePath*.
 
-6. Ouvrez *MDEClientAnalyzerResult.txt* et vérifiez que vous avez effectué les étapes de configuration du proxy pour activer la découverte de serveur et l’accès aux URL du service.
+6. Open *MDATPClientAnalyzerResult.txt* et vérifiez que vous avez effectué les étapes de configuration du proxy pour permettre la découverte du serveur et l'accès aux URL des services.
 
-   L'outil vérifie la connectivité des URL du service Defender for Endpoint avec lesquelles le client Defender for Endpoint est configuré pour interagir. Il imprime ensuite les résultats dans le *fichierMDEClientAnalyzerResult.txt* pour chaque URL pouvant potentiellement être utilisée pour communiquer avec les services Defender for Endpoint. Par exemple :
+   L'outil vérifie la connectivité des URL du service Defender for Endpoint avec lesquelles le client Defender for Endpoint est configuré pour interagir. Il imprime ensuite les résultats dans le fichier *MDATPClientAnalyzerResult.txt* pour chaque URL pouvant être utilisée pour communiquer avec Defender pour les services Endpoint. Par exemple :
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -233,11 +232,11 @@ Si au moins une des options de connectivité renvoie un état (200), le client D
 Toutefois, si les résultats du contrôle de la connectivité indiquent un échec, une erreur HTTP est affichée (voir Codes d'état HTTP). Vous pouvez ensuite utiliser les URL dans le tableau indiqué dans Activer l’accès aux URL de [service Defender for Endpoint dans le serveur proxy.](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) Les URL que vous utiliserez dépendent de la région sélectionnée au cours de la procédure d’intégration.
 
 > [!NOTE]
-> Les vérifications de connectivité cloud de l’outil Analyseur de connectivité ne sont pas compatibles avec les créations de processus de blocage des règles de réduction de la surface d’attaque provenant des commandes [PSExec et WMI.](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands) Vous devrez désactiver temporairement cette règle pour exécuter l'outil de connectivité. Vous pouvez également ajouter temporairement des [exclusions DE LAS](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) lors de l’exécution de l’analyseur.
+> L'outil de l'analyseur de connectivité n'est pas compatible avec les créations de [processus de bloc de règles ASR provenant de PSExec et de commandes WMI](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Vous devrez désactiver temporairement cette règle pour exécuter l'outil de connectivité.
 >
 > Lorsque telemetryProxyServer est défini, dans le Registre ou via la stratégie de groupe, Defender pour le point de terminaison revient à direct s’il ne peut pas accéder au proxy défini.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

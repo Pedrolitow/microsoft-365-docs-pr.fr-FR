@@ -1,7 +1,7 @@
 ---
 title: Planification d’une mise à jour de Microsoft Defender pour Endpoint (Linux)
 description: Découvrez comment planifier une mise à jour de Microsoft Defender pour Endpoint (Linux) pour mieux protéger les ressources de votre organisation.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0bfc88d7d3f03ba4022353a22617b4404643e2c7
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 1545a44087347544337ca40dee5e95ef7ca6d57d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53619518"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541744"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Planifier une mise à jour de Microsoft Defender pour point de terminaison (Linux)
 
@@ -32,86 +32,66 @@ Linux (et Unix) ont un outil appelé **crontab** (semblable au Programmeur des t
 ## <a name="pre-requisite"></a>Conditions préalables
 
 > [!NOTE]
-> Pour obtenir la liste de tous les fuseaux horaires, exécutez la commande suivante : `timedatectl list-timezones`
->
-> Exemples pour les fuseaux horaires :
->
+> Pour obtenir la liste de tous les fuseaux horaires, exécutez la commande suivante : `timedatectl list-timezones`<br>
+> Exemples pour les fuseaux horaires : <br>
 > - `America/Los_Angeles`
 > - `America/New_York`
 > - `America/Chicago`
 > - `America/Denver`
 
 ## <a name="to-set-the-cron-job"></a>Pour définir le travail Cron
-
 Utilisez les commandes suivantes :
 
-### <a name="backup-crontab-entries"></a>Entrées de crontab de sauvegarde
+**Pour sauvegarder les entrées de crontab**
 
-```bash
-sudo crontab -l > /var/tmp/cron_backup_201118.dat
-```
+`sudo crontab -l > /var/tmp/cron_backup_201118.dat`
 
 > [!NOTE]
 > Où 201118 == AAMMMMDD
 
 > [!TIP]
-> Faites-le avant de modifier ou de supprimer.
+> Faites-le avant de modifier ou de supprimer. <br>
 
-Pour modifier le crontab et ajouter un nouveau travail en tant qu’utilisateur racine :
-
-```bash
-sudo crontab -e
-```
+Pour modifier le crontab et ajouter un nouveau travail en tant qu’utilisateur racine : <br>
+`sudo crontab -e`
 
 > [!NOTE]
 > L’éditeur par défaut est VIM.
 
 Vous pouvez voir :
 
-```output
 0****/etc/opt/microsoft/mdatp/logrorate.sh
-```
 
 And
 
-```output
 02**sat /bin/mdatp scan quick>~/mdatp_cron_job.log
-```
 
-Voir [Analyses de planification avec Microsoft Defender pour Endpoint (Linux)](linux-schedule-scan-atp.md)
+Voir [Analyses de planification avec Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-atp.md)
 
 Appuyez sur « Insérer »
 
 Ajoutez les entrées suivantes :
 
-```bash
-CRON_TZ=America/Los_Angeles
-```
+CRON_TZ=Amérique/Los_Angeles
 
 > #<a name="rhel-and-variants-centos-and-oracle-linux"></a>! RHEL et variantes (CentOS et Oracle Linux)
->
-> ```bash
-> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp >> ~/mdatp_cron_job.log
-> ```
+
+`0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp >> ~/mdatp_cron_job.log`
 
 > #<a name="sles-and-variants"></a>! SLES et variantes
->
-> ```bash
-> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo zypper update mdatp >> ~/mdatp_cron_job.log
-> ```
+
+`0 6 * * sun [ $(date +%d) -le 15 ] && sudo zypper update mdatp >> ~/mdatp_cron_job.log`
 
 > #<a name="ubuntu-and-debian-systems"></a>! Systèmes Ubuntu et Debian
->
-> ```bash
-> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo apt-get install --only-upgrade mdatp >> ~/mdatp_cron_job.log
-> ```
+
+`0 6 * * sun [ $(date +%d) -le 15 ] && sudo apt-get install --only-upgrade mdatp >> ~/mdatp_cron_job.log`
 
 > [!NOTE]
 > Dans les exemples ci-dessus, nous la fixons à 00 minutes, 6 heures (heure au format 24 heures), n’importe quel jour du mois, n’importe quel mois, le dimanche. [$(date + d) -le 15] == Ne s’exécute pas, sauf s’il est égal ou inférieur au \% 15e jour (3e semaine). Cela signifie qu’il s’exécutera tous les 3e dimanche (7) du mois à 6 h 00. Pacifique (UTC -8).
 
 Appuyez sur « Échap »
 
-Tapez `:wq` " w/o les guillemets doubles.
+Tapez « :wq » avec les guillemets doubles.
 
 > [!NOTE]
 > w == write, q == quit
@@ -120,120 +100,86 @@ Pour afficher vos travaux cron, tapez `sudo crontab -l`
 
 :::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="mettre à jour Defender pour le point de terminaison sur Linux":::
 
-Pour inspecter les séries de travail de recherche :
+Pour inspecter les séries de travail de recherche : `sudo grep mdatp /var/log/cron`
 
-```bash
-sudo grep mdatp /var/log/cron
-```
-
-Pour inspecter le fichier mdatp_cron_job.log
-
-```bash
-sudo nano mdatp_cron_job.log
-```
+Pour inspecter le fichier mdatp_cron_job.log `sudo nano mdatp_cron_job.log`
 
 ## <a name="for-those-who-use-ansible-chef-or-puppet"></a>Pour les personnes qui utilisent Ansible, Chef ou Autres
 
 Utilisez les commandes suivantes :
-
 ### <a name="to-set-cron-jobs-in-ansible"></a>Pour définir des travaux de cron dans Ansible
 
-```bash
-cron - Manage cron.d and crontab entries
-```
+`cron – Manage cron.d and crontab entries`
 
-Si vous souhaitez plus d’informations, consultez <https://docs.ansible.com/ansible/latest/modules/cron_module.html>.
+Pour plus d’informations, voir [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html).
 
 ### <a name="to-set-crontabs-in-chef"></a>Pour définir des crontabs dans chef
+`cron resource`
 
-```bash
-cron resource
-```
-
-Si vous souhaitez plus d’informations, consultez <https://docs.chef.io/resources/cron/>.
+Pour plus d’informations, voir [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/).
 
 ### <a name="to-set-cron-jobs-in-puppet"></a>Pour définir des travaux de cron dans l’ombre
-
 Type de ressource : cron
 
-Si vous souhaitez plus d’informations, consultez <https://puppet.com/docs/puppet/5.5/types/cron.html>.
+Pour plus d’informations, voir [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html).
 
 Automatisation avec l’annexe : tâches Cron et tâches programmées
 
-Si vous souhaitez plus d’informations, consultez <https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/>.
+Pour plus d’informations, voir [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/).
 
 ## <a name="additional-information"></a>Informations supplémentaires
 
-### <a name="to-get-help-with-crontab"></a>Pour obtenir de l’aide sur crontab
+**Pour obtenir de l’aide sur crontab**
 
-```bash
-man crontab
-```
+`man crontab`
 
-### <a name="to-get-a-list-of-crontab-file-of-the-current-user"></a>Pour obtenir la liste du fichier crontab de l’utilisateur actuel
+**Pour obtenir la liste du fichier crontab de l’utilisateur actuel**
 
-```bash
-crontab -l
-```
+`crontab -l`
 
-### <a name="to-get-a-list-of-crontab-file-of-another-user"></a>Pour obtenir la liste du fichier crontab d’un autre utilisateur
+**Pour obtenir la liste du fichier crontab d’un autre utilisateur**
 
-```bash
-crontab -u username -l
-```
+`crontab -u username -l`
 
-### <a name="to-backup-crontab-entries"></a>Pour sauvegarder les entrées de crontab
+**Pour sauvegarder les entrées de crontab**
 
-```bash
-crontab -l > /var/tmp/cron_backup.dat
-```
+`crontab -l > /var/tmp/cron_backup.dat`
 
 > [!TIP]
-> Faites-le avant de modifier ou de supprimer.
+> Faites-le avant de modifier ou de supprimer. <br>
 
-### <a name="to-restore-crontab-entries"></a>Pour restaurer des entrées de crontab
+**Pour restaurer des entrées crontab**
 
-```bash
-crontab /var/tmp/cron_backup.dat
-```
+`crontab /var/tmp/cron_backup.dat`
 
-### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>Pour modifier le crontab et ajouter un nouveau travail en tant qu’utilisateur racine
+**Pour modifier le crontab et ajouter un nouveau travail en tant qu’utilisateur racine**
 
-```bash
-sudo crontab -e
-```
+`sudo crontab -e`
 
-### <a name="to-edit-the-crontab-and-add-a-new-job"></a>Pour modifier le crontab et ajouter un nouveau travail
+**Pour modifier le crontab et ajouter un nouveau travail**
 
-```bash
-crontab -e
-```
+`crontab -e`
 
-### <a name="to-edit-other-users-crontab-entries"></a>Pour modifier les entrées de crontab d’autres utilisateurs
+**Pour modifier les entrées de crontab d’autres utilisateurs**
 
-```bash
-crontab -u username -e
-```
+`crontab -u username -e`
 
-### <a name="to-remove-all-crontab-entries"></a>Pour supprimer toutes les entrées crontab
+**Pour supprimer toutes les entrées crontab**
 
-```bash
-crontab -r
-```
+`crontab -r`
 
-### <a name="to-remove-other-users-crontab-entries"></a>Pour supprimer les entrées de crontab d’autres utilisateurs
+**Pour supprimer les entrées de crontab d’autres utilisateurs**
 
-```bash
-crontab -u username -r
-```
+`crontab -u username -r`
 
-### <a name="explanation"></a>Explication
+**Explication**
 
 <pre>
-+—————- minute (values: 0 - 59) (special characters: , - * /)  <br>
-| +————- hour (values: 0 - 23) (special characters: , - * /) <br>
-| | +———- day of month (values: 1 - 31) (special characters: , - * / L W C)  <br>
-| | | +——- month (values: 1 - 12) (special characters: ,- * / )  <br>
-| | | | +—- day of week (values: 0 - 6) (Sunday=0 or 7) (special characters: , - * / L W C) <br>
++—————- minute (values: 0 – 59) (special characters: , – * /)  <br>
+| +————- hour (values: 0 – 23) (special characters: , – * /) <br>
+| | +———- day of month (values: 1 – 31) (special characters: , – * / L W C)  <br>
+| | | +——- month (values: 1 – 12) (special characters: ,- * / )  <br>
+| | | | +—- day of week (values: 0 – 6) (Sunday=0 or 7) (special characters: , – * / L W C) <br>
 | | | | |*****command to be executed
 </pre>
+

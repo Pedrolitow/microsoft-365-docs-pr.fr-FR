@@ -1,6 +1,6 @@
 ---
 title: Configurer des fonctionnalités avancées dans Microsoft Defender pour le point de terminaison
-description: Activer les fonctionnalités avancées telles que bloquer un fichier dans Microsoft Defender pour le point de terminaison.
+description: Activer des fonctionnalités avancées telles que bloquer un fichier dans Microsoft Defender pour le point de terminaison.
 keywords: fonctionnalités avancées, paramètres, bloquer un fichier, examen automatisé, résolution automatique, skype, microsoft defender pour l’identité, office 365, azure information protection, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2b9914c67ba9e98d68e053b8c3613c7d883f82a5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 165130eeb5cfa8616c2256eb390ac669b466500c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649634"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567695"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurer des fonctionnalités avancées dans Defender pour le point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "53649634"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 Selon les produits de sécurité Microsoft que vous utilisez, certaines fonctionnalités avancées peuvent vous être disponibles pour intégrer Defender for Endpoint.
 
@@ -42,7 +42,7 @@ Selon les produits de sécurité Microsoft que vous utilisez, certaines fonction
 2. Sélectionnez la fonctionnalité avancée que vous souhaitez configurer et basculez le paramètre entre **Le** et **Le.**
 3. Cliquez **sur Enregistrer les préférences.**
 
-Utilisez les fonctionnalités avancées suivantes pour être mieux protégés contre les fichiers potentiellement malveillants et obtenir une meilleure compréhension lors des enquêtes de sécurité.
+Utilisez les fonctionnalités avancées suivantes pour être mieux protégés contre les fichiers potentiellement malveillants et obtenir de meilleures informations pendant les enquêtes de sécurité.
 
 ## <a name="automated-investigation"></a>Examen automatisé
 
@@ -65,7 +65,7 @@ Pour plus d’informations sur les attributions de rôles, voir [Créer et gére
 L’activation de cette fonctionnalité vous permet d’exécuter des scripts non signés dans une session de réponse en direct.
 
 ## <a name="always-remediate-pua"></a>Toujours corriger puA
-Les applications potentiellement indésirables (PUA) sont une catégorie de logiciels qui peuvent ralentir votre ordinateur, afficher des publicités inattendues ou, au pire, installer d’autres logiciels, ce qui peut être inattendu ou indésirable. 
+Les applications potentiellement indésirables (PUA) sont une catégorie de logiciels qui peut ralentir votre ordinateur, afficher des publicités inattendues ou, au pire, installer d’autres logiciels, ce qui peut être inattendu ou indésirable. 
 
 Activer cette fonctionnalité afin que les applications potentiellement indésirables (PUA) soient corrigés sur tous les appareils de votre client, même si la protection PUA n’est pas configurée sur les appareils. Cela permet de protéger les utilisateurs contre l’installation accidentelle d’applications indésirables sur leur appareil. Lorsqu’elle est désactivée, la correction dépend de la configuration de l’appareil. 
 
@@ -89,16 +89,16 @@ Pour les locataires créés sur ou après Windows 10, version 1809, la fonctionn
 > [!NOTE]
 >
 > - Le résultat de l’action de résolution automatique peut influencer le calcul du niveau de risque de l’appareil, qui est basé sur les alertes actives trouvées sur un appareil.
-> - Si un analyste d’opérations de sécurité définit manuellement l’état d’une alerte sur « En cours » ou « Résolu », la fonctionnalité de résolution automatique ne l’est pas.
+> - Si un analyste des opérations de sécurité définit manuellement l’état d’une alerte sur « En cours » ou « Résolu », la fonctionnalité de résolution automatique ne l’est pas.
 
 ## <a name="allow-or-block-file"></a>Autoriser ou bloquer un fichier
 
-Le blocage n’est disponible que si votre organisation remplit les conditions ci-après :
+Le blocage n’est disponible que si votre organisation répond aux exigences ci-après :
 
 - Utilise Antivirus Microsoft Defender comme solution anti-programme malveillant active et,
 - La fonctionnalité de protection basée sur le cloud est activée
 
-Cette fonctionnalité vous permet de bloquer les fichiers potentiellement malveillants dans votre réseau. Le blocage d’un fichier empêche sa lecture, son écriture ou son exécution sur les appareils de votre organisation.
+Cette fonctionnalité vous permet de bloquer les fichiers potentiellement malveillants dans votre réseau. Le blocage d’un fichier l’empêchera d’être lu, écrit ou exécuté sur les appareils de votre organisation.
 
 Pour activer **ou bloquer les fichiers** :
 
@@ -114,7 +114,7 @@ Après avoir mis en place cette  fonctionnalité, vous pouvez bloquer [des](resp
 
 ## <a name="custom-network-indicators"></a>Indicateurs réseau personnalisés
 
-L’personnalisation de cette fonctionnalité vous permet de créer des indicateurs pour les adresses IP, les domaines ou les URL, qui déterminent s’ils seront autorisés ou bloqués en fonction de votre liste d’indicateurs personnalisés.
+Cette fonctionnalité vous permet de créer des indicateurs pour les adresses IP, les domaines ou les URL, qui déterminent s’ils seront autorisés ou bloqués en fonction de votre liste d’indicateurs personnalisée.
 
 Pour utiliser cette fonctionnalité, les appareils doivent s’Windows 10 version 1709 ou ultérieure. Ils doivent également avoir une protection réseau en mode blocage et la version 4.18.1906.3 ou ultérieure de la plateforme anti-programme malveillant. Consultez la 4052623 [.](https://go.microsoft.com/fwlink/?linkid=2099834)
 
@@ -167,7 +167,7 @@ Lorsque vous activerez cette fonctionnalité, vous serez en mesure d’incorpore
 > [!NOTE]
 > Vous devez avoir la licence appropriée pour activer cette fonctionnalité.
 
-Pour recevoir l’intégration d’appareils contextuels dans Office 365 Threat Intelligence, vous devez activer les paramètres Defender pour le point de terminaison dans le tableau de bord de sécurité & conformité. Pour plus d’informations, voir [Examen des menaces et réponse.](/microsoft-365/security/office-365-security/office-365-ti)
+Pour recevoir l’intégration d’appareils contextuels dans Office 365 Threat Intelligence, vous devez activer les paramètres Defender pour le point de terminaison dans le tableau de bord sécurité & conformité. Pour plus d’informations, voir [Examen des menaces et réponse.](/microsoft-365/security/office-365-security/office-365-ti)
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Spécialistes des menaces Microsoft - Notifications d’attaque ciblée
 
@@ -220,7 +220,7 @@ Defender pour le point de terminaison peut être intégré [à Microsoft Intune]
 Cette fonctionnalité est disponible uniquement si vous disposez des fonctionnalités suivantes :
 
 - Un client sous licence pour Enterprise Mobility + Security E3 et Windows E5 (ou Microsoft 365 Entreprise E5)
-- Un environnement Microsoft Intune actif, avec des appareils gérés par Intune Windows 10 [joints à Azure AD.](/azure/active-directory/devices/concept-azure-ad-join/)
+- Un environnement Microsoft Intune, avec des appareils gérés par Intune Windows 10 [joints à Azure AD.](/azure/active-directory/devices/concept-azure-ad-join/)
 
 
 ### <a name="conditional-access-policy"></a>Stratégie d’accès conditionnel
@@ -230,8 +230,8 @@ Lorsque vous activez l’intégration Intune, Intune crée automatiquement une s
 > [!NOTE]
 > La stratégie d’ac classique créée par Intune est distincte des stratégies d’accès conditionnel [modernes,](/azure/active-directory/conditional-access/overview/)qui sont utilisées pour configurer les points de terminaison.
 
-## <a name="device-discovery"></a>Découverte d’appareils
 
+## <a name="device-discovery"></a>Découverte d’appareils
 Vous permet de trouver des appareils non utilisés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses. À l’aide d’appareils intégrés, vous pouvez rechercher des appareils non utilisés dans votre réseau et évaluer les vulnérabilités et les risques. Pour plus d’informations, voir [Détection d’appareils.](device-discovery.md)
 
 > [!NOTE]
@@ -239,13 +239,9 @@ Vous permet de trouver des appareils non utilisés connectés à votre réseau d
 
 ## <a name="preview-features"></a>Fonctionnalités en préversion
 
-Découvrez les nouvelles fonctionnalités de la version préliminaire de Defender for Endpoint. Essayez les fonctionnalités à venir en allumer l’expérience d’aperçu.
+Découvrez les nouvelles fonctionnalités de la version préliminaire de Defender for Endpoint. Essayez les fonctionnalités à venir en retournant l’expérience d’aperçu.
 
 Vous aurez accès aux fonctionnalités à venir, sur lesquelles vous pourrez nous faire part de vos commentaires afin d’améliorer l’expérience globale avant que les fonctionnalités ne soient généralement disponibles.
-
-## <a name="download-quarantined-files"></a>Télécharger les fichiers mis en quarantaine
-
-Sauvegardez les fichiers mis en quarantaine dans un emplacement sécurisé et conforme afin qu’ils soient téléchargés directement à partir de la quarantaine. Le **bouton Télécharger** le fichier sera toujours disponible dans la page du fichier. Ce paramètre est allumé par défaut. [En savoir plus sur les conditions requises](respond-file-alerts.md#download-quarantined-files)
 
 ## <a name="related-topics"></a>Voir aussi
 

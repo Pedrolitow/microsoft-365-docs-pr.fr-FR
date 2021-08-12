@@ -23,7 +23,7 @@ ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/04/2021
-ms.locfileid: "53757341"
+ms.locfileid: "53726283"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour Endpoint sur Linux
 
