@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 36bd812bfe41ca5113fe9ceb5710de3ded15210ca5e4eda4a9065fc1c1a11cdf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb5efb5bd001a2659b0c3780af5f195b77b3103b2e8a7d0c7d1eee6915a6e303
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794113"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523337"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -36,25 +36,25 @@ ms.locfileid: "53794113"
 
 Vous pouvez activer l’accès contrôlé aux dossiers à l’aide de l’une des méthodes ci-après :
 
-* [Sécurité Windows application](#windows-security-app)
-* [Microsoft Endpoint Manager](#endpoint-manager)
-* [Gestion des périphériques mobiles (MDM)](#mobile-device-management-mdm)
-* [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
-* [Stratégie de groupe](#group-policy)
-* [PowerShell](#powershell)
+- [Sécurité Windows application](#windows-security-app)
+- [Microsoft Endpoint Manager](#endpoint-manager)
+- [Gestion des périphériques mobiles (MDM)](#mobile-device-management-mdm)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Stratégie de groupe](#group-policy)
+- [PowerShell](#powershell)
 
 [Le mode audit](evaluate-controlled-folder-access.md) vous permet de tester le fonctionnement de la fonctionnalité (et de passer en revue les événements) sans impact sur l’utilisation normale de l’appareil.
 
 Les paramètres de stratégie de groupe qui désactivent la fusion de listes d’administrateurs locaux remplacent les paramètres d’accès contrôlé aux dossiers. Ils remplacent également les dossiers protégés et les applications autorisées définies par l’administrateur local par le biais d’un accès contrôlé aux dossiers. Ces stratégies sont les suivantes :
 
-* Antivirus Microsoft Defender configurer **le comportement de fusion de l’administrateur local pour les listes**
-* System Center Endpoint Protection autoriser **les utilisateurs à ajouter des exclusions et des remplacements**
+- Antivirus Microsoft Defender configurer **le comportement de fusion de l’administrateur local pour les listes**
+- System Center Endpoint Protection autoriser **les utilisateurs à ajouter des exclusions et des remplacements**
 
 Pour plus d’informations sur la désactivation de la fusion de listes locales, voir Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie de [Microsoft Defender AV.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus)
 
 ## <a name="windows-security-app"></a>Sécurité Windows application
 
-1. Ouvrez l Sécurité Windows’application en sélectionnant l’icône de bouclier dans la barre des tâches. Vous pouvez également rechercher Defender dans le menu **Démarrer.**
+1. Ouvrez l Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches. Vous pouvez également rechercher Defender dans le menu **Démarrer.**
 
 2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis sélectionnez Protection contre les **ransomware.**
 
@@ -119,13 +119,13 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 3. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender > Windows Defender Exploit Guard > accès contrôlé aux dossiers.**
 
 4. Double-cliquez sur **le paramètre Configurer l’accès contrôlé aux** dossiers et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
-    * **Activer** : les applications malveillantes et suspectes ne seront pas autorisées à apporter des modifications aux fichiers des dossiers protégés. Une notification sera fournie dans le journal Windows événements.
-    * **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers des dossiers protégés.
-    * **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal Windows événements dans lequel vous pouvez évaluer l’impact sur votre organisation.
-    * **Bloquer la modification du disque** uniquement : les tentatives d’écriture d’applications nontrues dans les secteurs de disque sont enregistrées dans Windows journal des événements. Ces journaux se trouvent dans les **Journaux** des applications et des services > Microsoft > Windows > Windows Defender > Operational > ID 1123.
-    * **Auditer** la modification du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés sont **enregistrées** dans le journal des événements Windows (sous Journaux des applications et des services  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >  **Operational**  >  **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
+   - **Activer** : les applications malveillantes et suspectes ne seront pas autorisées à apporter des modifications aux fichiers des dossiers protégés. Une notification sera fournie dans le journal Windows événements.
+   - **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers des dossiers protégés.
+   - **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal Windows événements dans lequel vous pouvez évaluer l’impact sur votre organisation.
+   - **Bloquer la modification du disque** uniquement : les tentatives d’écriture d’applications nontrues dans les secteurs de disque sont enregistrées dans Windows journal des événements. Ces journaux se trouvent dans **les journaux des applications** et des services de Microsoft Windows Windows Defender \> \> \> \> \> ID opérationnel 1123.
+   - **Auditer** la modification du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés sont **enregistrées** dans le journal des événements Windows (sous Journaux des applications et des services  >  **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
 
-      ![Capture d’écran de l’option de stratégie de groupe Activée et mode Audit sélectionnée dans la baisse](/microsoft-365/security/defender-endpoint/images/cfa-gp-enable)
+      ![Capture d’écran de l’option de stratégie de groupe Activée et mode Audit sélectionnée dans la baisse](../../media/cfa-gp-enable.png)
 
 > [!IMPORTANT]
 > Pour activer entièrement l’accès contrôlé aux dossiers, vous  devez définir l’option de stratégie de groupe sur Activé et sélectionner Bloquer dans le menu déroulant Options. 
@@ -146,6 +146,6 @@ Permet `Disabled` de désactiver la fonctionnalité.
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Protéger les dossiers importants avec accès contrôlé aux dossiers](controlled-folders.md)
-* [Personnaliser l’accès contrôlé aux dossiers](customize-controlled-folders.md)
-* [Évaluer Microsoft Defender pour point de terminaison](evaluate-mde.md)
+- [Protéger les dossiers importants avec accès contrôlé aux dossiers](controlled-folders.md)
+- [Personnaliser l’accès contrôlé aux dossiers](customize-controlled-folders.md)
+- [Évaluer Microsoft Defender pour point de terminaison](evaluate-mde.md)

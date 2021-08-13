@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5c7bc0a7378225d027e42ddfc1d08f946ad5046
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 7b2a03cac1f81af4d55f3eb1d79de114abe9599094dbbf484c44dc204f0e8290
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595773"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523428"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour le point de terminaison
 
@@ -66,7 +66,6 @@ Le tableau suivant décrit les façons dont Microsoft Defender pour point de ter
 |[Autoriser l’installation et l’utilisation de périphériques approuvés spécifiquement avec des ID d’instance d’appareil correspondants](#allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids)|Vous pouvez uniquement installer et utiliser des périphériques approuvés qui correspondent à l’un de ces ID d’instance d’appareil.|
 |[Empêcher l’installation et l’utilisation de périphériques spécifiquement interdits avec des ID d’instance d’appareil correspondants](#prevent-installation-and-usage-of-specifically-prohibited-peripherals-with-matching-device-instance-ids)|Vous ne pouvez pas installer ou utiliser des périphériques interdits qui correspondent à l’un de ces ID d’instance d’appareil.|
 |[Limiter les services qui utilisent Bluetooth](#limit-services-that-use-bluetooth)|Vous pouvez limiter les services qui peuvent utiliser Bluetooth.|
-|[Utiliser les paramètres de ligne de base de Microsoft Defender pour les points de terminaison](#use-microsoft-defender-for-endpoint-baseline-settings)|Vous pouvez définir la configuration recommandée pour LAP à l’aide de la ligne de base de sécurité defender pour point de terminaison.|
 |
 
 ### <a name="restrict-usb-drives-and-other-peripherals"></a>Restreindre les lecteurs USB et les autres périphériques
@@ -160,7 +159,7 @@ Pour plus d’informations sur les formats d’ID d’appareil, voir [Identifica
 
 Pour plus d’informations sur les ID de fournisseur, voir [les membres USB.](https://www.usb.org/members)
 
-Voici un exemple pour la recherche d’un ID de fournisseur d’appareils ou d’un ID de produit (qui fait partie de l’ID d’appareil) à l’aide de PowerShell : 
+Voici un exemple pour la recherche d’un ID fournisseur d’appareils ou d’un ID de produit (qui fait partie de l’ID d’appareil) à l’aide de PowerShell : 
 
 ```powershell
 Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property * 
@@ -238,12 +237,6 @@ Vous pouvez empêcher l’installation des périphériques interdits avec des ID
 > [!div class="mx-imgBorder"]
 > ![Capture d’écran de la page Bluetooth paramètres d’utilisation](images/bluetooth.png)
 
-### <a name="use-microsoft-defender-for-endpoint-baseline-settings"></a>Utiliser les paramètres de ligne de base de Microsoft Defender pour les points de terminaison
-
-Les paramètres de référence de Microsoft Defender pour point de terminaison représentent la configuration recommandée pour la protection contre les menaces. Les paramètres de configuration de la ligne de base se trouvent dans la page modifier le profil des paramètres de configuration.
-
-> [!div class="mx-imgBorder"]
-> ![Lignes de base dans MEM](images/baselines.png)
 
 ## <a name="prevent-threats-from-removable-storage"></a>Empêcher les menaces du stockage amovible
   
@@ -365,7 +358,7 @@ Vous pouvez créer des alertes personnalisées et des actions de réponse automa
 
 Par exemple, à l’aide de l’une ou l’autre des approches, vous pouvez exécuter Antivirus Microsoft Defender automatiquement lorsqu’un périphérique USB est monté sur un ordinateur.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Configurer la protection en temps réel pour Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
 - [Defender/AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)

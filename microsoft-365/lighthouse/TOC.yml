@@ -15,7 +15,7 @@
 - name: Protéger les clients avec des lignes de base
   items:
     - name: Vue d’ensemble de l’utilisation des lignes de base pour déployer des configurations client standard
-      href: m365-lighthouse-deploying-standard-tenant-configurations-overview.md
+      href: m365-lighthouse-deploy-standard-tenant-configurations-overview.md
     - name: Déployer les lignes de base
       href: m365-lighthouse-deploy-baselines.md
 - name: Gérer les locataires
@@ -30,6 +30,8 @@
   items:
     - name: Vue d’ensemble de la page de conformité des appareils
       href: m365-lighthouse-device-compliance-page-overview.md
+    - name: vue d Windows la page 365 (Pc cloud)
+      href: m365-lighthouse-win365-page-overview.md
 - name: Gestion des menaces
   items:
     - name: Vue d’ensemble de la page Gestion des menaces

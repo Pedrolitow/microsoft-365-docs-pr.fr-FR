@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test léger pour les tests Microsoft 365 entreprise.
-ms.openlocfilehash: 2de0760cef7339f62229575b1e0a54b3c67a4e9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e6ead4dd5c8e0d127b7fc2674111272bffade2f55935b391709a305dca996394
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909705"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803487"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuration de base légère
 
@@ -71,7 +71,7 @@ Pour démarrer votre abonnement d’évaluation Microsoft 365 E5, vous avez be
 
 1. Dans votre navigateur, allez à [https://aka.ms/e5trial](https://aka.ms/e5trial) .
     
-2. À l’étape 1 de la page Merci d’avoir choisi **Office 365 E5,** entrez votre nouvelle adresse de compte de messagerie.
+2. À l’étape 1 de la page Merci d’avoir choisi **Office 365 E5** page, entrez votre nouvelle adresse de compte de messagerie.
 3. À l’étape 2 du processus d’abonnement de piste, entrez les informations demandées, puis effectuez la vérification.
 4. À l’étape 3, entrez un nom d’organisation, puis un nom de compte qui sera l’administrateur global de l’abonnement.
 5. À l’étape 4, enregistrer l’URL de la page de connexion ici (sélectionnez-la et copiez-la) : ![Trait](../media/Common-Images/TableLine.png)
@@ -100,29 +100,17 @@ $commonPW="<common user account password>"
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password=$commonPW
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
 $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
 $LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
 $LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+for($i=2;$i -le 4; $i++) {
+    $userUPN= "user$($i)@$($orgName).onmicrosoft.com"
+    New-AzureADUser -DisplayName "User $($i)" -GivenName User -SurName $i -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user$($i)"
+    $userObjectID = (Get-AzureADUser -SearchString $userupn).ObjectID
+    Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
+}
 ```
 > [!NOTE]
 > L’utilisation ici d’un mot de passe courant est destinée à l’automatisation et à la simplification de la configuration pour un environnement de test. Bien évidemment, cela est hautement déconseillé pour les abonnements de production. 
@@ -157,7 +145,7 @@ Si vous n’avez pas encore enregistré ces valeurs, enregistrez-les maintenant 
    
 ### <a name="using-an-office-365-test-environment"></a>Utilisation d’un environnement de test Office 365
 
-Si vous n’avez besoin Office 365 environnement de test, vous n’avez pas besoin de lire le reste de cet article.
+Si vous n’avez besoin que d Office 365 de test, vous n’avez pas besoin de lire le reste de cet article.
 
 Pour obtenir des guides de laboratoire de test supplémentaires qui s’appliquent à Office 365 et Microsoft 365, voir Microsoft 365 guides de laboratoire de test pour [entreprise.](m365-enterprise-test-lab-guides.md)
   
@@ -167,9 +155,9 @@ Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation Micros
   
 Tout d’abord, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attribuez une licence Microsoft 365 à votre compte d’administrateur général.
   
-1. Dans une fenêtre privée de navigateur Internet, utilisez vos informations d’identification de compte d’administrateur général pour vous Microsoft 365 centre d’administration à l’adresse [https://admin.microsoft.com](https://admin.microsoft.com) .
+1. Dans une fenêtre privée de navigateur Internet, utilisez vos informations d’identification de compte d’administrateur général pour vous Centre d’administration Microsoft 365 à [https://admin.microsoft.com](https://admin.microsoft.com) l’Centre d’administration Microsoft 365.
     
-2. Dans la page **Microsoft 365 centre d’administration,** dans le navigation de gauche, sélectionnez **Facturation > acheter des services.**
+2. Dans la page **Centre d’administration Microsoft 365,** dans le navigation de gauche, sélectionnez **Facturation > Acheter des services.**
     
 3. Dans la page **Acheter des services,** **sélectionnez Microsoft 365 E5,** puis **sélectionnez Obtenir une version d’essai gratuite.**
 
@@ -179,7 +167,7 @@ Tout d’abord, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attr
 
 6. Dans la page **Reçu de** commande, sélectionnez **Continuer.**
 
-7. Dans le centre Microsoft 365' administration, sélectionnez **Utilisateurs > utilisateurs actifs.**
+7. Dans la Centre d’administration Microsoft 365, **sélectionnez Utilisateurs > utilisateurs actifs.**
 
 8. Dans **les utilisateurs actifs,** sélectionnez votre compte d’administrateur.
 
@@ -288,11 +276,11 @@ Lorsque l’ordinateur physique ou la machine virtuelle avec Windows 10 Entrep
   
 Ensuite, associez l’ordinateur WIN10 au client Azure AD de votre abonnement Microsoft 365 E5.
   
-1. Sur le bureau de l’ordinateur WIN10, sélectionnez Démarrer > Paramètres > Comptes > Accès au travail **ou à l'> Connecter .**
+1. Sur le bureau de l’ordinateur WIN10, sélectionnez Démarrer > Paramètres > Comptes > accès au travail ou à **l'> Connecter .**
     
 2. Dans la **boîte de dialogue Configurer un compte** scolaire ou scolaire, sélectionnez Joindre cet appareil à **Azure Active Directory**.
     
-3. Dans **le compte scolaire ou de travail,** entrez le nom du compte d’administrateur général de votre abonnement Microsoft 365 E5, puis sélectionnez **Suivant.**
+3. Dans **le compte scolaire ou scolaire,** entrez le nom du compte d’administrateur général de votre abonnement Microsoft 365 E5, puis sélectionnez **Suivant.**
     
 4. Dans **Entrer le mot de** passe, entrez le mot de passe de votre compte d’administrateur général, puis sélectionnez Se **connectez.**
     
@@ -302,7 +290,7 @@ Ensuite, associez l’ordinateur WIN10 au client Azure AD de votre abonnement
     
 Ensuite, installez Applications Microsoft 365 pour les grandes entreprises sur l’ordinateur WIN10 :
   
-1. Ouvrez le Microsoft Edge et connectez-vous au Centre [d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification de compte d’administrateur général.
+1. Ouvrez le Microsoft Edge navigateur et connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification de compte d’administrateur général.
     
 2. Sous **l’Microsoft Office Accueil,** **sélectionnez Installer Office**.
     

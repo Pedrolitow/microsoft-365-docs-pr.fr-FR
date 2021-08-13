@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, de l’abonnement, à l’ajout d’un domaine et des utilisateurs, à la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 008a5c51698589667acc0d01649f67dab33b4c58
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7c09dca354781bf92f6bbecca0f3fb9875fb654515fe35c2f96cc780a894a764
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803219"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
 
@@ -55,8 +55,8 @@ La plupart des étapes de configuration peuvent être réalisées dans l’insta
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Étape 2 : Configurer des stratégies de sécurité et des appareils 
 
   - Utilisez la [configuration guidée pour](set-up.md#protect-your-organization) configurer les stratégies d’appareil. 
-  - Vous pouvez également en ajouter ou les modifier ultérieurement dans le [Centre](view-policies-and-devices.md) d’administration et dans le [portail Intune.](/intune/tutorial-walkthrough-intune-portal)
-  - L’Assistant Installation configurera également les paramètres de protection contre les menaces de base et de protection contre la perte de données.
+  - Vous pouvez également en ajouter ou les modifier ultérieurement dans le Centre d’administration [et](view-policies-and-devices.md) dans le [portail Intune.](/intune/tutorial-walkthrough-intune-portal)
+  - L’Assistant Installation configurera également des paramètres de protection contre les menaces de base et de protection contre la perte de données.
   
   Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez renforcer votre sécurité en ajoutant les paramètres suivants :
 
@@ -95,4 +95,4 @@ Lorsque vous joignez un Windows 10 à Azure AD, les stratégies que vous défini
 
 ## <a name="related-content"></a>Contenu associé
 
-[Microsoft 365 vidéos de formation pour les entreprises](../business-video/index.yml) (page de liens)
+[Vidéos de formation Microsoft 365 Entreprise](../business-video/index.yml) (page de liens)

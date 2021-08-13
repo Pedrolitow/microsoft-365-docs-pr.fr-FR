@@ -1,5 +1,5 @@
 ---
-title: Configurez l’authentification multifacteur.
+title: Configurez l’authentification multi-facteurs.
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer l’authentification multifacteur.
-ms.openlocfilehash: 2a0c8b8fb8451d3d8868c493ad5e1f65adc30b6c
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 43ab127d6e3c38ca72d778c94f85997769981bb32bb80c9de5227ea6146f32df
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398204"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803145"
 ---
-# <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multifacteur.
+# <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multi-facteurs.
 
 L’authentification multifacteur offre une sécurité renforcée pour votre entreprise. Une fois que votre administrateur vous a demandé d’utiliser l’mfmf, vous pouvez configurer l’application Microsoft Authenticator pour vous aider à vous connecter à des applications clés en toute sécurité avec votre téléphone. 
 

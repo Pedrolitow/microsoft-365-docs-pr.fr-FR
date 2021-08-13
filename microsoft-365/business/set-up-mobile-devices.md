@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installez Office sur un téléphone iPhone ou Android, et vos fichiers de travail dans Office applications seront protégés par Microsoft 365 entreprise.
-ms.openlocfilehash: 477f0ee63b045ca8fd6d3cfc3023f4122661a3b6
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 940f70f26a698c05aa1786b49e7a7584b647c6164c1717354b537398988ff4a7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393396"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803340"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour les Microsoft 365 pour les utilisateurs professionnels
 
@@ -105,7 +105,7 @@ Ouvrez Outlook à nouveau, et entrez et confirmez un code confidentiel. Vous pou
   
 ![Set  PIN for Outlook app in Android](../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vidéos de formation Microsoft 365 Entreprise](../business-video/index.yml)
 

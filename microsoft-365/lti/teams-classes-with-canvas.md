@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams classes à Canvas
-ms.openlocfilehash: 9baf4f3607673e48472e297ce42a1ad461df5b84
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7743e7064bf31d87513c8c274f0ef8d0f70e7e8b9f97f530a2ad2f1826dd0542
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652430"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803619"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Utiliser Microsoft Teams classes avec Canvas
 
@@ -28,7 +28,7 @@ Microsoft Teams classes est une application Learning Tools Interoperability (LTI
 
 > [!NOTE]
 > La classe actuelle Teams LTI prend uniquement en charge la synchronisation des utilisateurs canvas avec Microsoft Azure Active Directory (AAD) dans une étendue limitée. 
-> - Votre client doit avoir une correspondance exacte entre un champ Canvas (e-mail, ID utilisateur ou ID SIS) et l’UPN dans Microsoft AAD. Nous travaillons à accroître la flexibilité de la fonctionnalité de synchronisation, mais en attendant, tous les utilisateurs de Canvas qui ne correspondent pas à un UPN dans AAD ne seront pas ajoutés à la classe Teams synchronisée avec Canvas. 
+> - Votre client doit avoir une licence Microsoft Éducation.
 > - Un seul client Microsoft peut être utilisé pour le mappage d’utilisateurs entre Canvas et Microsoft.
 > - Vous devez désactiver SDS avant d’utiliser la classe Teams LTI afin d’éviter la duplication des groupes.
 
@@ -40,15 +40,18 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 2. Sélectionnez **le lien** Administrateur dans la navigation globale, puis sélectionnez votre compte.
 
-3. Dans la navigation de l’administrateur, sélectionnez **Paramètres** lien, puis l’onglet **Intégrations.**
+3. Dans la navigation de l’administrateur, **sélectionnez Paramètres** lien, puis l’onglet **Intégrations.**
 
-4. Activez Microsoft Teams synchronisation en activé le basculement.
+4. Activez Microsoft Teams synchronisation en activer le basculement.
+   
+   ![Canvas Teams Sync Updated png](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
 
-   ![teams-sync](media/teams-sync.png)
+5. Entrez le nom de votre client Microsoft, l’attribut de connexion, le suffixe de domaine et l’attribut de recherche AAD.
 
-5. Entrez le nom de votre client Microsoft et l’attribut de connexion.
-
-   L’attribut de connexion sera utilisé pour associer l’utilisateur Canvas à un Azure Active Directory utilisateur.
+   Ces champs seront utilisés pour faire correspondre les utilisateurs de Canvas aux utilisateurs Microsoft Azure Active Directory. 
+   * L’attribut de connexion est l’attribut utilisateur Canvas utilisé pour la correspondance.
+   * Le champ Suffix est facultatif et vous permet de spécifier un domaine lorsqu’il n’existe pas de mappage exact entre les attributs canvas et les champs Microsoft AAD. Par exemple, si votre e-mail Canvas est « name@example.edu » alors que l’UPN dans Microsoft AAD est « nom » , vous pouvez faire correspondre les utilisateurs en entrant « example.edu » dans le champ de suffixe.
+   * L’attribut de recherche Active Directory est le champ du côté Microsoft auquel les attributs Canvas sont en correspondance. Sélectionnez l’UPN, l’adresse de messagerie principale ou l’alias de messagerie.
 
 6. Sélectionnez **Mettre à jour Paramètres** une fois terminé.
 

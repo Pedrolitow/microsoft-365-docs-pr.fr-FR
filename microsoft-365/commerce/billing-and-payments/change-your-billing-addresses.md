@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment mettre à jour vos adresses de facturation ou l’adresse de messagerie utilisée pour recevoir des notifications de facturation Microsoft 365 entreprise.
 ms.date: 04/07/2021
-ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: eb2b50bb5032b30961a14d38bbdb6c04a04a1105ce7000adde8edc1e10a16cb4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802933"
 ---
 # <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
 
@@ -118,7 +118,7 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 3. Dans la page détails de l’abonnement, dans la section **Adresse d’utilisation du service,** **sélectionnez Modifier l’adresse d’utilisation du service.**
 
-4. Dans le **volet Modifier l’adresse d’utilisation** du service, mettez à jour votre adresse, puis sélectionnez **Enregistrer.**
+4. Dans le **volet Modifier l’adresse d’utilisation du service,** mettez à jour votre adresse, puis sélectionnez **Enregistrer.**
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Modifier l'adresse de messagerie de secours à laquelle les notifications de facturation sont envoyées
 
@@ -128,7 +128,7 @@ Par défaut, les notifications de facturation de votre organisation sont envoyé
 
 2. Sélectionnez **l’icône Utilisateur,** puis **Mon compte.**
   
-3. Sélectionnez **Informations personnelles**.
+3. Sélectionnez **Informations personnelles.**
   
 4. Dans la **zone Détails du contact,** sélectionnez **Modifier.**
 
@@ -160,7 +160,7 @@ Vous pouvez également modifier l'adresse de messagerie de secours d'autres admi
 
 3. Dans le **volet Modifier les rôles** d’utilisateur, tapez l’adresse de messagerie de remplacement que vous souhaitez utiliser, puis sélectionnez **Enregistrer.**
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
 [Comprendre votre facture](understand-your-invoice2.md) (article)\

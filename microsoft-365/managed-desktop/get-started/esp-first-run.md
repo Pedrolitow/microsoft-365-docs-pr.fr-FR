@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 99bfaf40ab2bce2878af76650f92dda9f528be59
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c9cbcd9ef9e4557e30409cd471d80cbcca5a2947438ef988c7892c18eddd8a2d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890975"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Expérience de première exécution avec le pilote automatique et la page état d’inscription
 
@@ -75,7 +75,7 @@ L’expérience page État de l’inscription se produit en trois phases. Pour p
 L’expérience se déroule comme suit :
 
 1. L’expérience Autopilot démarre et l’utilisateur entre ses informations d’identification.
-2. L’appareil ouvre la page État de l’inscription et passe par les phases de préparation et de configuration de l’appareil. La troisième étape (configuration  du compte) est actuellement ignorée dans la configuration Microsoft Manged Desktop car l’esp utilisateur est désactivée. L’appareil redémarre.
+2. L’appareil ouvre la page État de l’inscription et passe par les phases de préparation et de configuration de l’appareil. La troisième étape (configuration  du compte) est actuellement ignorée dans la configuration Microsoft Manged Desktop,car l’esp utilisateur est désactivée. L’appareil redémarre.
 3. Après le redémarrage, l’appareil ouvre Windows page de Windows avec **un autre utilisateur.**
 4. Les utilisateurs entrent à nouveau leurs informations d’identification et le Bureau s’ouvre.
 
@@ -90,7 +90,7 @@ L’expérience se déroule comme suit :
 - L’appareil doit avoir une connexion réseau câblé.
 - Si vous avez des appareils qui ont été enregistrés à l’aide du portail Microsoft Manged Desktop d’août 2020, désins inscrivez-les et inscrivez-les à nouveau.
 - Les appareils doivent avoir une image d’usine qui inclut la mise à jour cumulative [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) ou [20H1 2020.11C de novembre 2020,](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) si nécessaire, installée ou doit être réinventée avec la dernière image Microsoft Manged Desktop.
-- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise Windows auto-déploiement Autopilot, le TPM 2.0 est donc requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode auto-déploiement Autopilot et au déploiement pré-mis en service d’Autopilot dans Windows conditions requises pour la mise en réseau [Autopilot.](/mem/autopilot/networking-requirements#tpm)
+- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise Windows auto-déploiement Autopilot, le TPM 2.0 est donc requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode auto-déploiement Autopilot et au déploiement autopilot pré-mis en service dans Windows conditions requises pour la mise en réseau [Autopilot.](/mem/autopilot/networking-requirements#tpm)
 
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>Séquence d’événements dans Autopilot pour le déploiement pré-provisioné
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: deacfafbc16c2b04b3dad8a4e9c49ffe07fdf165792c7360a31419a821c52c22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea9e1acb96de32565c4d49529af75fd0224db7885fd6431b8de8bc287969c970
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835597"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834534"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
@@ -41,9 +41,13 @@ Pour les autres charges de travail, consultez:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
-Les éléments Yammer suivants peuvent être conservés et supprimés à l’aide des stratégies de rétention Yammer: Messages de la communauté et messages des utilisateurs.
+Les messages des utilisateurs de Yammer et les messages de la communauté peuvent être supprimés en utilisant les politiques de conservation pour Yammer. En plus du texte des messages, les éléments suivants peuvent être conservés pour des raisons de conformité : Les liens hypertextes et les liens vers d'autres messages Yammer.
 
-Les réactions des autres personnes sous la forme d’émoticônes ne sont pas incluses dans ces messages.
+Les messages de l'utilisateur comprennent tous les noms des personnes présentes dans la conversation, et les messages de la communauté comprennent le nom de la communauté et le titre du message (s'il est fourni).
+
+Les réactions des autres sous forme d'émoticônes ne sont pas conservées lorsque vous utilisez les politiques de conservation pour Yammer.
+
+Les fichiers que vous utilisez avec Yammer ne sont pas inclus dans les règles de conservation pour Yammer. Ces éléments ont leurs propres règles de conservation.
 
 ## <a name="how-retention-works-with-yammer"></a>Fonctionnement de la rétention pour Yammer
 

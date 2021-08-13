@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f5a857e2cf9c20f9c31503bb74cbac33bd79a64e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 1d1652a866d8d3cfd7b1270a09abead8a27507a7d7ec7dde2a5a5dceb465677e
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649598"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523392"
 ---
 # <a name="collect-investigation-package-api"></a>API collecter un package d’examen
 
@@ -45,6 +45,10 @@ Collecter un package d’examen à partir d’un appareil.
 ## <a name="limitations"></a>Limites
 
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+
+> [!IMPORTANT]
+>
+> - Ces actions de réponse sont uniquement disponibles pour les appareils Windows 10, version 1703 ou ultérieure.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -78,13 +82,13 @@ Content-Type|string|application/json. **Obligatoire**.
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 201 : code de réponse créé et action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

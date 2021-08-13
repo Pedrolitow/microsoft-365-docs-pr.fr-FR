@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: ed254234109bc5ff9865ff49ed3fa0fff8770ab0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6e5db8d641c4b38f6b660479be451ddaa5a23aac440e8d98757cac99f2160fb1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286908"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890946"
 ---
 # <a name="register-existing-devices-yourself"></a>Inscrivez vous-même les appareils existant
 
@@ -45,7 +45,7 @@ Microsoft Manged Desktop identifie chaque appareil de manière unique en référ
 - Demandez à votre fournisseur OEM le fichier d’inscription AutoPilot, qui inclut les hages matériels.
 - Collectez des informations [dans Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager).
 - Exécutez un Windows PowerShell script (à l’aide [](#manual-powershell-script-method) [d’Active Directory](#active-directory-powershell-script-method) ou manuellement sur chaque appareil) et collectez les résultats dans un fichier.
-- Démarrez chaque appareil(mais ne terminez pas l’Windows de configuration) et collectez les hages sur un [lecteur flash amovible.](#flash-drive-method)
+- Démarrez chaque appareil (mais ne terminez pas l’Windows de configuration) et collectez les hages sur un [disque mémoire flash amovible.](#flash-drive-method)
 
 #### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
@@ -68,20 +68,20 @@ Pour plus [d’informations, voir Inscrire](#register-devices-by-using-the-admin
 
 #### <a name="active-directory-powershell-script-method"></a>Méthode de script PowerShell Active Directory
 
-Dans un environnement Active Directory, vous pouvez utiliser l’applet de commande PowerShell pour collecter à distance les informations des appareils des groupes Active Directory à l’aide de `Get-WindowsAutoPilotInfo` WinRM. Vous pouvez également utiliser l’cmdlet et obtenir des résultats filtrés pour un nom de modèle matériel spécifique `Get-AD Computer` inclus dans le catalogue. Avant de poursuivre, confirmez d’abord ces conditions préalables, puis procédez comme vous le souhaitez :
+Dans un environnement Active Directory, vous pouvez utiliser l’applet de commande PowerShell pour collecter à distance les informations des appareils des groupes Active Directory à l’aide de `Get-WindowsAutoPilotInfo` WinRM. Vous pouvez également utiliser l’cmdlet et obtenir des résultats filtrés pour un nom de modèle matériel spécifique `Get-AD Computer` inclus dans le catalogue. Avant de continuer, confirmez d’abord ces conditions préalables, puis procédez comme il se peut :
 
 - WinRM est activé.
 - Les appareils que vous souhaitez inscrire sont actifs sur le réseau (c’est-à-dire qu’ils ne sont pas déconnectés ou désactivés).
 - Assurez-vous que vous disposez d’un paramètre d’informations d’identification de domaine autorisé à s’exécuter à distance sur les appareils.
 - Assurez-vous que Windows pare-feu autorise l’accès à WMI. Pour ce faire, procédez comme suit :
 
-    1. Ouvrez le **panneau de Windows Defender pare-feu** et sélectionnez Autoriser une application ou une fonctionnalité **à l’Windows Defender pare-feu.**
+    1. Ouvrez le **panneau Windows Defender pare-feu** et sélectionnez Autoriser une application ou une fonctionnalité **via Windows Defender pare-feu.**
 
     2. Recherchez **Windows Management Instrumentation (WMI)** dans la liste, activez pour privé et **public,** puis sélectionnez **OK**.
 
 1. Ouvrez une invite PowerShell avec des droits d’administration.
 
-2. Exécutez *l’un* de ces scripts :
+2. Exécutez *l’un* des scripts suivants :
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -94,7 +94,7 @@ Dans un environnement Active Directory, vous pouvez utiliser l’applet de comma
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. Accéder aux répertoires où il peut y avoir des entrées pour les appareils. Supprimez les entrées de chaque appareil de tous *les* répertoires, Windows Server Active Directory services de domaine et Azure Active Directory. N’ignorez pas que le processus de suppression peut prendre quelques heures.
+3. Accéder aux répertoires où il peut y avoir des entrées pour les appareils. Supprimez les entrées de chaque appareil *de* tous les répertoires, y Windows Server Active Directory services de domaine et Azure Active Directory. N’ignorez pas que le processus de suppression peut prendre quelques heures.
 
 4. Accéder aux services de gestion où il peut y avoir des entrées pour les appareils. Supprimez les entrées de chaque appareil de tous les services de gestion, y compris Microsoft Endpoint Configuration Manager, Microsoft Intune et Windows Autopilot.  N’ignorez pas que le processus de suppression peut prendre quelques heures.
 
@@ -145,7 +145,7 @@ Procédez comme suit :
 
 1. Dans **le chargement de** fichier, fournissez un chemin d’accès au fichier CSV que vous avez créé précédemment.
 2. Sélectionnez [un profil d’appareil](../service-description/profiles.md) dans le menu déroulant.
-3. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur le blade **Devices**, marqué comme **Étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et attend qu’un utilisateur commence à l’utiliser. 
+3. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur le blade **Devices**, marqué comme **étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et en attente qu’un utilisateur commence à l’utiliser. 
 
 > [!NOTE]
 > Si vous modifiez manuellement l’appartenance au groupe Azure Active Directory (AAD) d’un appareil, il sera automatiquement réassigné au groupe pour son profil d’appareil et supprimé des groupes en conflit.

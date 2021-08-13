@@ -1,5 +1,5 @@
 ---
-title: Configurer Microsoft Learning (prévisualisation) dans le Centre d Teams’administration Microsoft
+title: Configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: Découvrez comment configurer Microsoft Learning (Prévisualisation) dans le centre d Teams’administration.
-ms.openlocfilehash: 99e63210e8f8c10e3721c35fb69df7880c7e1929
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: Découvrez comment configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration.
+ms.openlocfilehash: 01c3ac59b1f40ba0eb743a4b14bd9c02711cb050724057544a2d6238696015ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891146"
 ---
-# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurer Microsoft Learning (prévisualisation) dans le Centre d Teams’administration Microsoft
+# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration
 
 > [!NOTE]
 > Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. 

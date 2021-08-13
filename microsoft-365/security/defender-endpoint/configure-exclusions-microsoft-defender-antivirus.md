@@ -15,23 +15,20 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: c6daa760dcec7c170cba15619eea380b6a1b882ff5baa7c3fc74c2b88f90ee62
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f3c44ba70debfdf4ecebb089f2015214e92f4b2cef037da5bdf5f7ad0e99c40
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854134"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803631"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurer et valider des exclusions pour Antivirus Microsoft Defender analyses
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par des processus Antivirus Microsoft Defender analyses. Ces exclusions s’appliquent aux analyses [programmées,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la protection et à la surveillance en temps réel toujours en [temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Les exclusions pour les fichiers ouverts par le processus s’appliquent uniquement à la protection en temps réel.
+Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par le processus de Antivirus Microsoft Defender analyses. Ces exclusions s’appliquent [aux analyses programmées,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la protection et à la surveillance en temps réel toujours en [temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Les exclusions pour les fichiers ouverts par le processus s’appliquent uniquement à la protection en temps réel.
 
 ## <a name="configure-and-validate-exclusions"></a>Configurer et valider des exclusions
 
@@ -50,15 +47,15 @@ Pour configurer et valider des exclusions, consultez les procédures suivantes :
 
 Gardez les points suivants à l’esprit lorsque vous définissez des exclusions :  
 
-- Les exclusions sont techniquement un écart de protection. Envisagez toujours les atténuations lors de la définition d’exclusions. D’autres atténuations peuvent être aussi simples que de s’assurer que l’emplacement exclu dispose des listes de contrôle d’accès (ACA) appropriées, de la stratégie d’audit, est traitée par un logiciel à jour, etc.
+- Les exclusions sont techniquement un écart de protection. Prenez en compte toutes vos options lors de la définition d’exclusions. D’autres options peuvent être aussi simples que de s’assurer que l’emplacement exclu dispose des listes de contrôle d’accès appropriées ou de définir des stratégies en mode audit au début.
 
-- Examinez régulièrement les exclusions. Revérifiez et appliquez de nouveau les atténuations dans le cadre du processus de révision.
+- Examinez régulièrement les exclusions. Revérifiez et appliquez de nouveau les atténuations dans le cadre de votre processus de révision.
 
-- Dans l’idéal, évitez de définir des exclusions qui doivent être proactives. Par exemple, n’excluez pas quelque chose simplement parce que vous pensez qu’il pourrait s’agir d’un problème à l’avenir. Utilisez des exclusions uniquement pour des problèmes spécifiques, tels que ceux relatifs aux performances ou à la compatibilité des applications que les exclusions peuvent atténuer.
+- Dans l’idéal, évitez de définir des exclusions afin d’être proactives. Par exemple, n’excluez pas quelque chose simplement parce que vous pensez qu’il pourrait s’agir d’un problème à l’avenir. Utilisez des exclusions uniquement pour des problèmes spécifiques, tels que ceux relatifs aux performances ou à la compatibilité des applications que les exclusions peuvent atténuer.
 
-- Auditez les modifications apportées à la liste d’exclusions. L’administrateur de sécurité doit conserver suffisamment de contexte sur la raison pour laquelle une certaine exclusion a été ajoutée. Vous devriez être en mesure de fournir une réponse avec un raisonnement spécifique quant à la raison pour laquelle un certain chemin d’accès a été exclu.
+- Examiner et auditer les modifications apportées à votre liste d’exclusions. Votre équipe de sécurité doit conserver le contexte sur la raison pour laquelle une certaine exclusion a été ajoutée afin d’éviter toute confusion ultérieurement. Votre équipe de sécurité doit être en mesure de fournir des réponses spécifiques aux questions sur la raison de l’existence d’exclusions.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="see-also"></a>Voir aussi
 
 - [Antivirus Microsoft Defender exclusions sur Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Erreurs courantes à éviter lors de la définition d’exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)

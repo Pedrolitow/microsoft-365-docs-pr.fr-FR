@@ -1,6 +1,6 @@
 ---
 title: Conformité
-description: Cet article répertorie les normes de conformité applicables aux Bureau géré Microsoft.
+description: Cet article répertorie les normes de conformité applicables aux Microsoft Manged Desktop.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,20 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cf17b631f8c9f4b6c332fe147ca14d126b8c0146
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f4b619ff72aa1f4bdd62cd760df0857912d7a3cb3afb3959283e4b15a6dca8ff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890922"
 ---
 # <a name="compliance"></a>Conformité
 
-Lorsque vous utilisez Bureau géré Microsoft, Microsoft vous propose un ensemble complet d’offres de conformité. Cet effort permet à votre organisation de se conformer aux différentes exigences de conformité.
+Lorsque vous utilisez Microsoft Manged Desktop, Microsoft vous propose un ensemble complet d’offres de conformité. Cet effort permet à votre organisation de se conformer aux différentes exigences de conformité.
 
 ## <a name="compliance-coverage"></a>Couverture de conformité
 
-Bureau géré Microsoft a obtenu les certifications suivantes :
+Microsoft Manged Desktop a obtenu les certifications suivantes :
 
 - [NORMES ISO 27001 Gestion de la sécurité des informations (ISMS)](/compliance/regulatory/offering-ISO-27001)
 - [Iso 27701 Privacy Information Management System (PIMS)](/compliance/regulatory/offering-iso-27701)
@@ -42,11 +42,11 @@ Bureau géré Microsoft a obtenu les certifications suivantes :
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Rapports des auditeurs et certificats de conformité
 
-Vous trouverez des informations pertinentes, notamment des exigences techniques et de contrôle, dans le portail d’confiance des services [(STP),](https://servicetrust.microsoft.com/)le référentiel central pour obtenir des informations sur les offres Microsoft Cloud Service client. Vous pouvez télécharger des rapports d’auditeur, des certificats de conformité et bien plus encore à partir de la section [Rapports d’audit](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) du STP.
+Vous trouverez des informations pertinentes, y compris des exigences techniques et de contrôle, dans le portail d’confiance des services [(STP),](https://servicetrust.microsoft.com/)le référentiel central pour obtenir des informations sur les offres Microsoft Cloud Service client. Vous pouvez télécharger des rapports d’auditeur, des certificats de conformité et bien plus encore à partir de la section [Rapports d’audit](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) du STP.
 
 > [!NOTE]
-> Comme Bureau géré Microsoft s’exécute sur Azure, les documents pertinents ont généralement des noms de fichiers tels que « Microsoft Azure, Dynamics 365 et d’autres services en ligne ». Dans ces documents, vous trouverez généralement des Bureau géré Microsoft sous la catégorie « Microsoft Online Services » ou « Analyse + Gestion ».
+> Comme Microsoft Manged Desktop s’exécute sur Azure, les documents pertinents ont généralement des noms de fichiers tels que « Microsoft Azure, Dynamics 365 et d’autres services en ligne ». Dans ces documents, vous trouverez généralement des Microsoft Manged Desktop sous la catégorie « Microsoft Online Services » ou « Analyse + Gestion ».
 
-## <a name="shared-responsibility"></a>Responsabilité partagée
+## <a name="shared-responsibility"></a>Rsponsabilité partagée
 
 La conformité des services cloud est une responsabilité partagée entre les fournisseurs de services cloud et leurs clients. Pour plus d’informations, voir [Responsabilité partagée dans le cloud.](/azure/security/fundamentals/shared-responsibility)

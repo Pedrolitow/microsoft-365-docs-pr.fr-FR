@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 128107630580bb1594d61313c6469bb83a4adfc1
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 8298cbda4d0f9d038e6142ac7bbb858c603704501974fdae8254433d8d4745e9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394604"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802921"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -36,7 +36,7 @@ ms.locfileid: "53394604"
 
 Les cartes de débit, de crédit et les informations bancaires sont acceptées pour régler votre abonnement. Dans certains cas, vous pouvez régler votre facture par chèque ou transfert électronique de fonds (TEF). Si vous disposez d’un profil de facturation, vous avez des options légèrement différentes. Pour plus d’informations, consultez la rubrique [Comment régler un abonnement avec un profil de facturation](pay-for-subscription-billing-profile.md). Si vous ne savez pas si votre compte dispose d’un profil de facturation, consultez la rubrique [Comprendre les profils de facturation](manage-billing-profiles.md).
 
-**Vous souhaitez savoir où envoyer votre règlement de facture ?** Si vous réglez votre facture par chèque ou transfert électronique de fonds (TEF), consultez la rubrique [Où envoyer mon chèque ou règlement TEF ?](#where-do-i-send-my-check-or-eft-payment)
+**Vous souhaitez savoir où envoyer votre règlement de facture ?** Si vous réglez votre facture par chèque ou transfert électronique de fonds (TEF), consultez la rubrique [Où envoyer mon chèque ou règlement TEF ?](#where-do-i-send-my-check-or-eft-payment)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -52,22 +52,22 @@ Vous pouvez payer votre abonnement par carte de crédit, carte de débit, ou com
 
 ## <a name="paying-by-invoice"></a>Payer par facture
 
-Dans certains cas, vous pouvez régler la facture de votre abonnement par chèque ou TEF. Pour disposer de cette option, vous devez :
+Dans certains cas, vous pouvez régler la facture de votre abonnement par chèque ou TEF. Pour disposer de cette option, vous devez :
 
 - Être un client établi
 - Devoir régler un abonnement dont le coût dépasse un montant qui varie en fonction de l’emplacement du service
 - Satisfaire à une vérification de solvabilité
 
-Si une vérification de solvabilité est nécessaire, vous recevrez une notification lors de l'achat de votre abonnement. Si vous acceptez d'être contacté, vous recevrez un e-mail qui inclut davantage d'informations sur la demande d’approbation de crédit. Deux jours ouvrables sont généralement nécessaires pour effectuer les vérifications de solvabilité.
+Si une vérification du crédit est nécessaire, vous en êtes informé lors de l'achat de votre abonnement. Si vous acceptez d'être contacté, vous recevez un courriel contenant de plus amples informations sur la demande d'approbation de crédit. Les vérifications de crédit sont généralement effectuées dans les deux jours ouvrables.
 
 > [!NOTE]
-> Les clients vivant au Brésil peuvent régler un abonnement avec un Boleto Bancario. Si vous avez sélectionné cette option, la demande de paiement est envoyée à l'adresse de courrier, fournie au moment de l'achat de l’abonnement, dans les 10 jours ouvrés suivant la date de la commande. La date d’échéance est de 30 jours après la date de commande. Si vous ne recevez pas votre Boleto par courrier électronique, vérifiez votre dossier de courrier indésirable ou contactez le support technique.
+> Les clients vivant au Brésil peuvent régler un abonnement avec un Boleto Bancario. Si vous avez sélectionné cette option, la demande de paiement est envoyée à l'adresse de courrier, fournie au moment de l'achat de l’abonnement, dans les 10 jours ouvrés suivant la date de la commande. La date d’échéance est de 30 jours après la date de commande. Si vous ne recevez pas votre Boleto par courrier électronique, vérifiez votre dossier de courrier indésirable ou contactez le support technique.
 >
 > Si vous le préférez, vous pouvez régler par virement électronique entre les deux comptes. L'Agence et le numéro de compte figure au bas de votre facture. Vous devez entrer votre numéro de facture dans le champ identification du Virement.
 
 Si vous payez votre abonnement par facture, vous recevrez un e-mail vous avertissant de la disponibilité de votre relevé de facturation. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir l’option [Recevoir une copie de votre relevé de facturation par e-mail](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande lors de l’achat d’un abonnement, ce numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
 
-## <a name="what-if-i-have-an-outstanding-balance"></a>Que se passe-t-il s'il me reste un solde impayé ?
+## <a name="what-if-i-have-an-outstanding-balance"></a>Que se passe-t-il s'il me reste un solde impayé ?
 
 Si nous ne parvenons pas à vous facturer par le mode de paiement enregistré, nous vous envoyons un courrier électronique pour vous signaler le problème. Ce courrier établit brièvement le problème et inclut un lien où vous pouvez vérifier le solde impayé. Nous retentons ensuite d’effectuer la transaction tous les quelques jours sur la période de grâce de 30 jours de l’abonnement. Pour chaque échec de transaction, vous recevez une nouvelle alerte par courrier.
 
@@ -80,7 +80,7 @@ Si vous avez ajouté personnellement un mode de paiement ayant un montant impay�
 
 Si vous n’avez pas ajouté le mode de paiement actuellement utilisé pour le règlement de l’abonnement, remplacez-le par un mode que vous avez précédemment ajouté, ou ajoutez-en un autre.
 
-## <a name="where-do-i-send-my-check-or-eft-payment"></a>Où envoyer mon chèque ou mon paiement par TEF ?
+## <a name="where-do-i-send-my-check-or-eft-payment"></a>Où envoyer mon chèque ou mon paiement par TEF ?
 
 [Consultez votre relevé de facturation](view-your-bill-or-invoice.md) pour trouver les instructions de paiement. Vous pouvez également utiliser le menu déroulant en-dessous pour trouver les instructions relatives à votre pays ou région. Si vous ne connaissez pas le montant que vous devez régler, vous pouvez consulter votre facture et votre historique de facturation en ligne dans l’onglet **Factures** de la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturation et paiements</a>.
 
@@ -244,15 +244,15 @@ Si vous n’avez pas ajouté le mode de paiement actuellement utilisé pour le r
 > - [Zambie](../pay/zambia.md)
 > - [Zimbabwe](../pay/zimbabwe.md)
 
-## <a name="can-i-pay-my-invoice-online"></a>Puis-je payer ma facture en ligne ?
+## <a name="can-i-pay-my-invoice-online"></a>Puis-je payer ma facture en ligne ?
 
 Vous ne pouvez pas payer votre facture en ligne. Vous pouvez effectuer le paiement par chèque ou par TEF.
 
-## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Puis-je changer le mode de paiement actuel pour régler par facture ?
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Puis-je changer le mode de paiement actuel pour régler par facture ?
 
 Vous ne pouvez passer au règlement par facture que pour un abonnement dont le coût dépasse un certain montant. Vous devez d’abord régler tout solde impayé lié à la carte de débit ou de crédit ou le compte bancaire avant de pouvoir changer le mode de paiement pour régler par facture. Pour apprendre comment changer de mode de paiement, consultez [Changer le mode de paiement d’un seul abonnement](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription).
 
-## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Puis-je changer le mode de paiement pour cesser de régler par facture ?
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Puis-je changer le mode de paiement pour cesser de régler par facture ?
 
 Vous ne pouvez pas passer automatiquement du mode de paiement par facturation à un autre mode de paiement. Au lieu de cela, vous devez [Acheter un autre abonnement](../try-or-buy-microsoft-365.md#buy-a-different-subscription) payé par carte de crédit, carte de débit, ou compte bancaire, [Passer tous les utilisateurs au nouvel abonnement](../subscriptions/move-users-different-subscription.md), puis [Annuler l’ancien abonnement](../subscriptions/cancel-your-subscription.md).
 

@@ -18,17 +18,16 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e23b701fc64a24a6befe4fea1769e31092288729
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 59a9ae07b6d8073bd46a36a803abda3b419cc4cb33e3739250474a2217fbbf8a
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655605"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523368"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurer Microsoft Defender pour le point de terminaison sur Linux pour la découverte de proxy statique
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -49,17 +48,17 @@ Lors de l’installation, `HTTPS_PROXY` la variable d’environnement doit être
   ```
 
 - La `HTTPS_PROXY` variable est définie dans la configuration globale du gestionnaire de packages. Par exemple, dans Ubuntu 18.04, vous pouvez ajouter la ligne suivante à `/etc/apt/apt.conf.d/proxy.conf` :
-  
+
   ```bash
   Acquire::https::Proxy "http://proxy.server:port/";
   ```
 
   > [!CAUTION]
   > Notez que deux méthodes ci-dessus peuvent définir le proxy à utiliser pour d’autres applications sur votre système. Utilisez cette méthode avec précaution, ou uniquement s’il s’agit d’une configuration globale.
-  
-- La variable est précédée des commandes `HTTPS_PROXY` d’installation ou de désinstallation. Par exemple, avec le gestionnaire de package APT, prédépender la variable comme suit lors de l’installation de Microsoft Defender pour Endpoint : 
 
-  ```bash  
+- La variable est précédée des commandes `HTTPS_PROXY` d’installation ou de désinstallation. Par exemple, avec le gestionnaire de package APT, prédépender la variable comme suit lors de l’installation de Microsoft Defender pour Endpoint :
+
+  ```bash
   HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
   ```
 
@@ -71,22 +70,20 @@ La `HTTPS_PROXY` variable d’environnement peut être définie de la même mani
 Notez que l’installation et la désinstallation ne échouent pas nécessairement si un proxy est requis mais non configuré. Toutefois, la télémétrie n’est pas envoyée et l’opération peut prendre beaucoup plus de temps en raison de délai d’accès réseau.
 
 ## <a name="post-installation-configuration"></a>Configuration post-installation
-  
-Après l’installation, `HTTPS_PROXY` la variable d’environnement doit être définie dans le fichier de service Defender for Endpoint. Pour ce faire, ouvrez dans `/lib/systemd/system/mdatp.service` un éditeur de texte lors de l’exécution en tant qu’utilisateur racine. Vous pouvez ensuite propager la variable au service de deux manières :
 
-> [!NOTE]
-> Sur les distributions CentOS ou RedHat Linux, l’emplacement du fichier de service de point de terminaison est `/usr/lib/systemd/system/mdatp.service` .
+Après l’installation, `HTTPS_PROXY` la variable d’environnement doit être définie dans le fichier de service Defender for Endpoint. Pour ce faire, exécutez `sudo systemctl edit --full mdatp.service` .
+Vous pouvez ensuite propager la variable au service de deux manières :
 
 - Décompressez la ligne `#Environment="HTTPS_PROXY=http://address:port"` et spécifiez votre adresse proxy statique.
 
 - Ajoutez une ligne `EnvironmentFile=/path/to/env/file` . Ce chemin d’accès peut pointer vers ou un fichier personnalisé, lequel doit `/etc/environment` ajouter la ligne suivante :
-  
+
   ```bash
   HTTPS_PROXY="http://proxy.server:port/"
   ```
 
-Après avoir modifié le `mdatp.service` fichier, enregistrez-le et fermez-le. Redémarrez le service afin que les modifications soient appliquées. Dans Ubuntu, cela implique deux commandes :  
+Après avoir modifié , enregistrez le fichier et redémarrez le service afin que les modifications soient appliquées à `mdatp.service` l’aide des commandes suivantes :
 
 ```bash
-systemctl daemon-reload; systemctl restart mdatp
+sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment configurer et protéger vos comptes d’administrateur.
-ms.openlocfilehash: 0d687407fad1cec5da49dbc33ffeb84366f1c309
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: d66ce47886a1743ea39be23df4c9b5d4977bb675e1c835c421bcb61205c1f4fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398240"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803037"
 ---
 # <a name="protect-your-administrator-accounts"></a>Protéger vos comptes d’administrateur
 
@@ -57,7 +57,7 @@ Pour créer des comptes d’administrateur supplémentaires :
 
     ![Choisir le rôle d’administrateur](../media/adminroles.png)
 
- 4. Dans la section **Licences de** produits, déplacez le  sélecteur **de Microsoft 365 Business** sur Off et l’utilisateur Créer sans licence **de** produit sur **On**.
+ 4. Dans la section **Licences de produits,** déplacez le  **sélecteur de l’Microsoft 365 Entreprise** vers L’Entreprise et l’utilisateur Créer sans licence **de** produit sur **Le**.
 
     ![Choisir la licence de produit](../media/productlicense.png)
 
@@ -74,7 +74,7 @@ Pour créer un compte d’utilisateur :
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">admin center</a> and then choose **Users** \> **Active users** in the left nav.
 2. Dans la page **Utilisateurs** actifs, sélectionnez Ajouter un utilisateur  en haut de la page, puis, dans le panneau Nouvel utilisateur, entrez le nom et d’autres informations. 
 3. Développez la section **Rôles,** puis choisissez **Utilisateur (pas d’accès administratif).**
-4. Dans la section **Licences de produits,** déplacez le sélecteur **de Microsoft 365 Business** sur **Sur**.
+4. Dans la section **Licences de produits,** déplacez le sélecteur **de Microsoft 365 Entreprise** sur **On**.
 
 ## <a name="turn-on-security-defaults"></a>Activer les paramètres de sécurité par défaut
 

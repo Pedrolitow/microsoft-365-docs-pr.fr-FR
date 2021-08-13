@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 470b33ca3201151fb164640eeb93c50daf7bb458
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: e7941297ea523cb395ab0ac36707bd7d224ea60a0bfeadfae9f28e5df6d3c70a
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322364"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523347"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>En savoir plus sur la conformité des communications dans Microsoft 365
 
@@ -47,6 +47,8 @@ Pour les dernières présentations Ignite pour la conformité des communications
 - [Une meilleure Microsoft Teams - En savoir plus sur les dernières fonctionnalités intégrées Teams en matière de conformité des communications](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 Pour obtenir une vue d’ensemble rapide de la conformité des communications, consultez la vidéo Détecter le harcèlement au travail et répondre à la conformité des communications dans [Microsoft 365](https://youtu.be/z33ji7a7Zho) vidéo sur le canal [Microsoft Mechanics.](https://www.youtube.com/user/OfficeGarageSeries)
+
+Découvrez comment [les valeurs TD Securities utilisent](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) la conformité des communications pour répondre à leurs obligations réglementaires et répondre à leurs besoins de sécurité et de stabilité.
 
 ## <a name="scenarios-for-communication-compliance"></a>Scénarios de conformité des communications
 
@@ -93,9 +95,9 @@ Les flux de travail de correction intégrés vous permettent d’identifier et d
 - Reconnaissance optique de **caractères (OCR) (aperçu)**: analyser, détecter et examiner le texte imprimé et manuscrit dans les images incorporées ou jointes à des messages électroniques ou Microsoft Teams messages de conversation.
 - **Nouveaux filtres**: examinez et remédiez plus rapidement aux alertes de stratégie à l’aide de filtres de messages pour plusieurs champs, y compris l’expéditeur, le destinataire, la date, les domaines et bien plus encore.
 - **Affichages améliorés des messages**: les actions d’investigation et de correction sont désormais plus rapides avec les nouvelles vues de source de message, de texte et d’annotation. Les pièces jointes de message sont désormais consultables pour fournir un contexte complet lors de la prise de mesures correctives.
-- **Affichage de l’historique des utilisateurs** : affichage historique de toutes les activités de conversion de messages utilisateur, telles que les notifications passées et les réaffectations pour les correspondances de stratégie, fournit désormais aux réviseurs plus de contexte pendant le processus de flux de travail de correction. Les premières occurrences ou répétitions de correspondances de stratégie pour les utilisateurs sont désormais archivées et facilement consultables.
+- **Historique** des utilisateurs : l’affichage historique de toutes les activités de correction des messages utilisateur, telles que les notifications passées et les escalades pour les correspondances de stratégie, fournit désormais aux réviseurs davantage de contexte pendant le processus de flux de travail de correction. Les premières occurrences ou répétitions de correspondances de stratégie pour les utilisateurs sont désormais archivées et facilement consultables.
 - **Notification de modèle détectée**: de nombreuses actions d’harcèlement et d’agresseur ont lieu au fil du temps et impliquent la récurration d’instances du même comportement par un utilisateur. Le nouveau modèle détecté de notification affichée dans les détails de l’alerte permet d’attirer l’attention sur ces alertes et ce type de comportement.
-- **Afficher la vue Traduire :** examiner rapidement les détails des messages dans huit langues à l’aide de la prise en charge de la traduction dans le flux de travail de correction. Les messages dans d’autres langues sont automatiquement convertis en langue d’affichage du réviseur.
+- **Traduction :** examinez rapidement les détails des messages dans huit langues à l’aide de la prise en charge de la traduction dans le flux de travail de correction. Les messages dans d’autres langues sont automatiquement convertis en langue d’affichage du réviseur.
 
 ### <a name="actionable-insights"></a>Informations exploitables
 

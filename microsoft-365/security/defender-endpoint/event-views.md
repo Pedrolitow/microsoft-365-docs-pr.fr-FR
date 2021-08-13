@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 081808a99f7ea18216107f22ff2912cd022eab82
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f6db2ade256710e1972635a6b4cc9bfab20dae37c887a67cf635ece97d4eafdc
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655754"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803463"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
@@ -49,18 +49,18 @@ Vous pouvez également accéder manuellement à la zone d’événement qui corr
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importer un affichage personnalisé XML existant
 
-1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt à .xml) :
+1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
     - Vue personnalisée des événements Exploit Protection *:ep-events.xml*
-    - Vue personnalisée des événements de réduction de la surface *d’attaque :asr-events.xml*
+    - Affichage personnalisé des événements de réduction de la surface *d’attaque :asr-events.xml*
     - Affichage personnalisé des événements réseau/protection *:np-events.xml*
 
 2. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez **l’Observateur d’événements.**
 
 3. Sélectionner **l’affichage**  >  **personnalisé d’importation d’action...**
 
-  > [!div class="mx-imgBorder"]
-  > ![Animation mettant en surbrillance l’importation d’une vue personnalisée à gauche de la fenêtre visionneuse even](images/events-import.gif)
+   > [!div class="mx-imgBorder"]
+   > ![Animation mettant en surbrillance l’importation d’un affichage personnalisé à gauche de la fenêtre visionneuse even](images/events-import.gif)
 
 4. Accédez à l’endroit où vous avez extrait le fichier XML pour l’affichage personnalisé que vous souhaitez, puis sélectionnez-le.
 
@@ -68,14 +68,14 @@ Vous pouvez également accéder manuellement à la zone d’événement qui corr
 
 6. Il crée un affichage personnalisé qui filtre pour afficher uniquement les événements liés à cette fonctionnalité.
 
-### <a name="copy-the-xml-directly"></a>Copier directement le XML
+### <a name="copy-the-xml-directly"></a>Copier le XML directement
 
-1. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez l’observateur Windows **événements.**
+1. Tapez **l’Observateur** d’événements dans menu Démarrer et ouvrez l Windows’observateur **d’événements.**
 
 2. Dans le panneau gauche, sous **Actions,** **sélectionnez Créer un affichage personnalisé...**
 
-  > [!div class="mx-imgBorder"]
-  > ![Animation mettant en surbrillance l’option créer un affichage personnalisé dans la fenêtre de l’Observateur d’événements](images/events-create.gif)
+   > [!div class="mx-imgBorder"]
+   > ![Animation mettant en surbrillance l’option créer un affichage personnalisé dans la fenêtre de l’Observateur d’événements](images/events-create.gif)
 
 3. Go to the XML tab and select **Edit query manually**. Vous verrez un avertissement vous signalant que vous  ne pouvez pas modifier la requête à l’aide de l’onglet Filtre si vous utilisez l’option XML. Sélectionnez **Oui**.
 
@@ -148,42 +148,47 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 
    ![Animation montrant l’utilisation de l’Observateur d’événements](images/event-viewer.gif)
 
-Fonctionnalité | Fournisseur/source | ID d’événement | Description
-:-|:-|:-:|:-
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 1 | Audit ACG
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 2 | Forcer ACG
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 3 | Ne pas autoriser l’audit des processus enfants
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 4  | Ne pas autoriser le blocage des processus enfants
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 5  | Bloquer l’audit des images à faible intégrité
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 6  | Bloquer le blocage des images à faible intégrité
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 7  | Bloquer l’audit des images distantes
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 8  | Bloquer le blocage des images distantes
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 9  | Désactiver l’audit des appels système win32k
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 10  | Désactiver le blocage des appels système win32k
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 11 | Audit de la protection d’intégrité du code
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 12  | Blocage de la protection d’intégrité du code
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 13 | Audit EAF
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 14  | Forcer EAF
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 15 | Audit EAF+
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 16  | Forcer EAF+
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 17  | Audit IAF
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 18  | Forcer IAF
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 19 | Audit de StackPivot ROP
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 20 | Forcer StackPivot ROP
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) |  21 | Audit de CallerCheck ROP
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 22 | Forcer CallerCheck ROP
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 23 | Audit de SimExec ROP
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 24 | Forcer SimExec ROP
-Exploit Protection | WER-Diagnostics | 5  | Bloquer CFG
-Exploit Protection | Win32K (opérationnel) | 260 | Police non approuvée
-Protection réseau | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
-Protection réseau | Windows Defender (opérationnel) | 1125 | Événement lorsque la protection du réseau se déclenche en mode audit
-Protection réseau | Windows Defender (opérationnel) | 1126 | Événement lorsque la protection du réseau se déclenche en mode blocage
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1124 | Événement d’accès contrôlé aux dossiers audité
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1123 | Événement d’accès contrôlé aux dossiers bloqué
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1127 | Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers bloqué
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1128 | Événement de bloc d’écriture de secteur d’accès contrôlé aux dossiers audité
-Réduction de la surface d’attaque | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
-Réduction de la surface d’attaque | Windows Defender (opérationnel) | 1122 | Événement lorsque la règle se déclenche en mode audit
-Réduction de la surface d’attaque | Windows Defender (opérationnel) | 1121 | Événement lorsque la règle se déclenche en mode blocage
+<br>
+
+****
+
+|Fonctionnalité|Fournisseur/source|ID d’événement|Description|
+|---|---|:---:|---|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|1|Audit ACG|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|2|Forcer ACG|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|3|Ne pas autoriser l’audit des processus enfants|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|4 |Ne pas autoriser le blocage des processus enfants|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|5 |Bloquer l’audit des images à faible intégrité|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|6 |Bloquer le blocage des images à faible intégrité|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|7 |Bloquer l’audit des images distantes|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|8 |Bloquer le blocage des images distantes|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|9 |Désactiver l’audit des appels système win32k|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|10 |Désactiver le blocage des appels système win32k|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|11|Audit de la protection d’intégrité du code|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|12 |Blocage de la protection d’intégrité du code|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|13|Audit EAF|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|14 |Forcer EAF|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|15|Audit EAF+|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|16 |Forcer EAF+|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|17 |Audit IAF|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|18 |Forcer IAF|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|19|Audit de StackPivot ROP|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|20|Forcer StackPivot ROP|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)| 21|Audit de CallerCheck ROP|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|22|Forcer CallerCheck ROP|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|23|Audit de SimExec ROP|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|24|Forcer SimExec ROP|
+|Exploit Protection|WER-Diagnostics|5 |Bloquer CFG|
+|Exploit Protection|Win32K (opérationnel)|260|Police non approuvée|
+|Protection réseau|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
+|Protection réseau|Windows Defender (opérationnel)|1125|Événement lorsque la protection du réseau se déclenche en mode audit|
+|Protection réseau|Windows Defender (opérationnel)|1126|Événement lorsque la protection du réseau se déclenche en mode blocage|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1124|Événement d’accès contrôlé aux dossiers audité|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1123|Événement d’accès contrôlé aux dossiers bloqué|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1127|Événement bloqué de bloc d’écriture de secteur d’accès contrôlé aux dossiers|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1128|Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers audité|
+|Réduction de la surface d'attaque|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
+|Réduction de la surface d'attaque|Windows Defender (opérationnel)|1122|Événement lorsque la règle se déclenche en mode audit|
+|Réduction de la surface d'attaque|Windows Defender (opérationnel)|1121|Événement lorsque la règle se déclenche en mode blocage|
+|
