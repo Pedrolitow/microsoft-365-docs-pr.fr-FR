@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Découvrez comment faire si vous avez un domaine non routable associé à vos comptes d’utilisateurs locaux avant de les synchroniser avec Microsoft 365 client.
-ms.openlocfilehash: e4d0e020c5792c610d501c33e8f3d5131b7a1ff0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 97e4a0b634b66a439d96496b3e742659b9d99496271fddd8db2ddf7c6ee7cee9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794859"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparation d’un domaine non routable pour la synchronisation d’annuaires
 
@@ -39,7 +39,7 @@ Si vous utilisez actuellement un domaine « .local » pour vos comptes d’utili
 
 Vous utilisez Azure AD Connecter pour synchroniser vos AD DS avec le client Azure AD de Microsoft 365 client. Pour plus d’informations, voir Intégration de vos [identités locales à Azure AD.](/azure/architecture/reference-architectures/identity/azure-ad)
   
-Azure AD Connecter synchronise l’UPN et le mot de passe de vos utilisateurs afin que les utilisateurs se connectent avec les mêmes informations d’identification qu’ils utilisent en local. Toutefois, Azure AD Connecter synchronise uniquement les utilisateurs avec les domaines qui sont vérifiés par Microsoft 365. Cela signifie que le domaine est également vérifié par Azure AD, car les identités Microsoft 365 sont gérées par Azure AD. En d’autres termes, le domaine doit être un domaine Internet valide (par exemple, .com, .org, .net, .us). Si votre AD DS interne utilise uniquement un domaine non routable (par exemple, « .local »), cela ne peut pas correspondre au domaine vérifié dont vous avez besoin pour votre client Microsoft 365. Vous pouvez résoudre ce problème en modifiant votre domaine principal dans votre AD DS local ou en ajoutant un ou plusieurs suffixes UPN.
+Azure AD Connecter l’UPN et le mot de passe de vos utilisateurs afin que les utilisateurs se connectent avec les mêmes informations d’identification qu’ils utilisent en local. Toutefois, Azure AD Connecter synchronise uniquement les utilisateurs avec les domaines qui sont vérifiés par Microsoft 365. Cela signifie que le domaine est également vérifié par Azure AD, car les identités Microsoft 365 sont gérées par Azure AD. En d’autres termes, le domaine doit être un domaine Internet valide (par exemple, .com, .org, .net, .us). Si votre AD DS interne utilise uniquement un domaine non routable (par exemple, « .local »), cela ne peut pas correspondre au domaine vérifié dont vous avez besoin pour votre client Microsoft 365. Vous pouvez résoudre ce problème en modifiant votre domaine principal dans votre AD DS local ou en ajoutant un ou plusieurs suffixes UPN.
   
 ### <a name="change-your-primary-domain"></a>Modifier votre domaine principal
 
@@ -99,4 +99,4 @@ Par exemple, vous pouvez exécuter les commandes PowerShell suivantes pour mettr
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("@contoso.local","@contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
 
-Consultez [le module Windows PowerShell Active Directory](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10)) pour en savoir plus sur l Windows PowerShell dans AD DS.
+Voir [active Directory Windows PowerShell module pour](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10)) en savoir plus sur l’utilisation Windows PowerShell dans AD DS.

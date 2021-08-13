@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: Découvrez comment appliquer un modèle publié à une bibliothèque SharePoint documents.
-ms.openlocfilehash: 0e1591f5aeb0db0a3cf2ab1aa9e7f6e36633aa1d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 9eed1fe6c209a4d89ea3c4114856c994fa283e340880332ecaa84a9a33bdb8ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841481"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Appliquer un modèle de présentation de document dans Microsoft SharePoint Syntex
 

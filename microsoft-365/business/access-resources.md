@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un Azure Active Directory joint Windows 10 appareil.
-ms.openlocfilehash: 71d60e0187c917dffb7390afcedf22dc73f44008
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 49d7150adb8bcb0dd611e7dce10ee92d3de1755dbe8662e454c9afcca2055e69
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809467"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources sur site à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 
@@ -56,9 +56,9 @@ Si votre organisation n’est pas prête à déployer dans la configuration d’
 
 ### <a name="considerations-when-you-join-windows-devices-to-azure-ad"></a>Considérations à prendre en compte lorsque vous joignez Windows appareils à Azure AD
 
-Si le Windows que vous avez joint à Azure-AD était précédemment joint au domaine ou dans un groupe de travail, prenons en compte les limitations suivantes :
+Si l Windows que vous avez joint à Azure-AD était précédemment joint au domaine ou dans un groupe de travail, prenons en compte les limitations suivantes :
 
-- Lorsqu’un appareil Joint Azure AD, il crée un utilisateur sans référencer un profil existant. Les profils doivent être migrés manuellement. Un profil utilisateur contient des informations telles que les favoris, les fichiers locaux, les paramètres de navigateur et menu Démarrer paramètres. Une meilleure approche consiste à trouver un outil tiers pour ma map les fichiers et paramètres existants au nouveau profil.
+- Lorsqu’un appareil Joint Azure AD, il crée un utilisateur sans référencer un profil existant. Les profils doivent être migrés manuellement. Un profil utilisateur contient des informations telles que les favoris, les fichiers locaux, les paramètres de navigateur et menu Démarrer paramètres. Une meilleure approche consiste à trouver un outil tiers pour ma map page des fichiers et paramètres existants au nouveau profil.
 
 - Si l’appareil utilise des objets de stratégie de groupe (GPO), certains objets de stratégie de groupe peuvent ne pas avoir de fournisseur de services de [configuration](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) comparable dans Intune. Exécutez [l’outil MMAT](https://www.microsoft.com/download/details.aspx?id=45520) pour rechercher des CSP comparables pour les GME existants.
 

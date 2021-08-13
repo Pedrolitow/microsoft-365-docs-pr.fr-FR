@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7fc5e0a37f57928b2ee1318d01e2a10b95a36108
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 025a46bd08122362e27338d7fe6287aa15bb997155fb4bd94a9a20588fd6f87c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341663"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833434"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -61,14 +61,14 @@ Utilisez cette référence pour créer des requêtes qui renvoient des informati
 |`AlternateSignInName`|string|Nom d’utilisateur principal (UPN) local de l’utilisateur se signant à Azure AD|
 |`LastPasswordChangeTimestamp`|DateHeure|Date et heure de la dernière fois où l’utilisateur qui s’est inscrit a modifié son mot de passe|
 |`ResourceDisplayName`|string|Nom d’affichage de la ressource accessible|
-|`ResourceId`|string|Identificateur unique de la ressource à accès|
+|`ResourceId`|string|Identificateur unique de la ressource accessible|
 |`ResourceTenantId`|string|Identificateur unique du client de la ressource à accès|
 |`DeviceName`|string|Nom de domaine complet (FQDN) de la machine|
 |`AadDeviceId`|string|Identificateur unique de l’appareil dans Azure AD|
 |`OSPlatform`|string|Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7.|
 |`DeviceTrustType`|string|Indique le type d’confiance de l’appareil qui s’est connecté. Pour les scénarios d’appareil géré uniquement. Les valeurs possibles sont Workplace, AzureAd et ServerAd.|
 |`IsManaged`|int|Indique si l’appareil à l’origine de la connectez-vous est un appareil géré (1) ou non un appareil géré (0)|
-|`IsCompliant`|int|Indique si l’appareil à l’origine de la signature est conforme (1) ou non conforme (0)|
+|`IsCompliant`|int|Indique si l’appareil à l’origine de la signature est conforme (1) ou non (0)|
 |`AuthenticationProcessingDetails`|string|Détails sur le processeur d’authentification|
 |`AuthenticationRequirement`|string|Type d’authentification requis pour la signature. Valeurs possibles : multiFactorAuthentication (l’authentification multifacteur était requise) et singleFactorAuthentication (aucune authentification multifacteur n’était requise).|
 |`TokenIssuerType`|int|Indique si l’émetteur de jeton est Azure Active Directory (0) ou les services de fédération Active Directory (1)|

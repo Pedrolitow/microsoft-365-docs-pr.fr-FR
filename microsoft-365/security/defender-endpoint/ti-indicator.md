@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 22ba0539233923224d920489b9e5bf04f65c692b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 836f3974da913dc27010cbc8d3162f35618e123e1c596dac42d9bf5e24863da3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817206"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource Indicateur
 

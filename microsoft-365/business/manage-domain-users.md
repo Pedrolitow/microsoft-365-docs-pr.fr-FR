@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Synchronisez les utilisateurs contrôlés par domaine avec Microsoft 365 entreprise.
-ms.openlocfilehash: b477b8a1f35a790d6c49937c973c141ad9f90ad4
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 468fa943df55b12573f0a4f595294e39a146b1850f3c430ac2088a30991c0e60
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809309"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Synchroniser les utilisateurs de domaine avec Microsoft 365
 
@@ -42,7 +42,7 @@ Avant de synchroniser vos utilisateurs et ordinateurs à partir du domaine Activ
    
    - Si le domaine Active Directory se termine par un suffixe non routable tel que *.local* ou *.lan,* au lieu d’un suffixe routable Internet tel *que .com* ou *.org,* ajustez d’abord le suffixe UPN des comptes d’utilisateurs locaux, comme décrit dans Préparer un domaine [non routable](../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md)pour la synchronisation d’annuaires. 
 
-**L’IdFix** d’exécuter à l’étape quatre (4) ci-dessous permet également de s’assurer que votre annuaire Active Directory local est prêt pour la synchronisation d’annuaires.
+**L’IdFix** d’exécuter à l’étape 4 (4) ci-dessous permet également de s’assurer que votre annuaire Active Directory local est prêt pour la synchronisation d’annuaires.
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. Installer et configurer Azure AD Connecter
 
@@ -61,7 +61,7 @@ Pour synchroniser vos utilisateurs, groupes et contacts à partir d’Active Dir
 
 Voir [Configurer la synchronisation d’annuaires pour Microsoft 365](../enterprise/set-up-directory-synchronization.md) pour en savoir plus.
 
-Lorsque vous configurez vos options pour Azure AD Connecter, nous vous recommandons d’activer la  synchronisation de mot de **passe,** l' **sign-on** unique transparente et la fonctionnalité d’écriture/écriture de mot de passe, qui est également prise en charge dans Microsoft 365 entreprise.
+Lorsque vous configurez vos options pour Azure AD Connecter, nous vous recommandons d’activer la  synchronisation de mot de **passe,** l’personnalisation transparente et la fonctionnalité d’écriture écriture par mot de passe, qui est également prise en charge dans Microsoft 365 entreprise.
 
 > [!NOTE]
 > Il existe quelques étapes supplémentaires pour l’écriture de mot de passe au-delà de la case à cocher dans Azure AD Connecter. Pour plus d’informations, [voir How-to: configure password writeback](/azure/active-directory/authentication/howto-sspr-writeback). 

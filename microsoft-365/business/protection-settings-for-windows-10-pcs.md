@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Découvrez les paramètres disponibles dans Microsoft 365 entreprise pour sécuriser Windows 10 appareils.
-ms.openlocfilehash: 4859681d5e71a61b8a5dd58114bce899f485967a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: b246a0caeb34bac8b9ccbecc9e1008992a700f9e16083a78c98e780605c5af01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809277"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modifier ou créer des paramètres de protection des appareils pour Windows 10 PC
 
@@ -38,7 +38,7 @@ Une fois que vous avez configuré les paramètres de protection Windows par déf
 
 ## <a name="create-protection-settings-for-windows-10-devices"></a>Créer des paramètres de protection pour Windows 10 appareils
 
-Regardez une vidéo sur la façon de sécuriser Windows 10 appareils à l’Microsoft 365 Business Premium :
+Regardez une vidéo sur la sécurisation des Windows 10 avec les Microsoft 365 Business Premium :
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
@@ -78,7 +78,7 @@ Pour plus d’informations, voir Comment les fonctionnalités [de protection Mic
 |Empêcher l'accès réseau à du contenu potentiellement malveillant sur Internet  <br/> |Utilisez ce paramètre pour bloquer les connexions des utilisateurs sortants à des emplacements Internet de faible réputation qui peuvent héberger des tentatives d’hameçonnage, des attaques ou d’autres contenus malveillants. Ce paramètre n’est disponible que si Antivirus Windows Defender est définie sur **On**. Pour plus d’informations, [voir Protéger votre réseau.](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)  <br/> |
 |Protéger les fichiers et dossiers sur PC contre un accès non autorisé avec BitLocker  <br/> |Bitlocker protège les données en chiffrant les disques durs de l'ordinateur, et protège contre l'exposition des données en cas de perte ou de vol. Pour plus d’informations, consultez la FAQ [sur Bitlocker.](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)  <br/> |
 |Autoriser les utilisateurs à télécharger des applications à partir du Microsoft Store  <br/> |Permet aux utilisateurs de télécharger et d'installer des applications à partir du Microsoft Store. Il peut s'agir de jeux ou d'outils de productivité, c'est pourquoi nous laissons ce paramètre **activé**, mais vous pouvez le désactiver pour plus de sécurité.  <br/> |
-|Autoriser les utilisateurs à accéder à Cortana  <br/> |Cortana peut être très utile ! Cortana peut activer ou désactiver les paramètres pour vous, donner des instructions et vous assurer que vous êtes à l’heure pour les rendez-vous, donc nous tenez ce paramètre activé **par** défaut.  <br/> |
+|Autoriser les utilisateurs à accéder à Cortana  <br/> |Cortana peut être très utile ! Cortana pouvez activer ou désactiver les paramètres pour vous, donner des instructions et vous assurer que  vous êtes à l’heure pour les rendez-vous. Par défaut, nous tenez ce paramètre en place.  <br/> |
 |Autoriser les utilisateurs à recevoir des conseils de Windows et des annonces de Microsoft  <br/> |Les conseils Windows peuvent être très pratiques et aident les utilisateurs lors du lancement de nouvelles fonctionnalités.  <br/> |
 |Maintenir les appareils Windows 10 à jour automatiquement  <br/> |Permet d'assurer que les appareils Windows 10 reçoivent automatiquement les dernières mises à jour.  <br/> |
 |Désactiver l'écran d'un appareil resté inactif pendant  <br/> |Permet d'assurer la protection des données d'entreprise lorsqu'un utilisateur est inactif. Il est possible qu'un utilisateur travaille dans un lieu public, par exemple un café, et s'éloigne ou soit distrait pendant un instant, laissant son appareil à la vue de tous. Ce paramètre vous permet de contrôler la durée pendant laquelle l'utilisateur peut être inactif avant l'extinction de l'écran.  <br/> |

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6aa709fe4534bf049c6f8c097bc4bd85a9d6793b
-ms.sourcegitcommit: 93eeaefc0d509c75e4c2210029155298ecca7583
+ms.openlocfilehash: b1cb2b9f7a9f3feddc86fdd5eda5323f5459b427412e334044433f589a85f594
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53347906"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833386"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -34,11 +34,11 @@ ms.locfileid: "53347906"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de faire la recherche dans les événements de signature d’identité gérée et de principal de `AADSpnSignInEventsBeta` service Azure Active Directory (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.
+> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de chercher des événements de signature d’identité gérée et de principal de `AADSpnSignInEventsBeta` service Azure Active Directory (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.
 
 
 
-Le tableau du schéma de recherche avancée contient des informations sur Azure Active Directory principal de service et les `AADSpnSignInEventsBeta` sign-ins d’identité gérée. Vous pouvez en savoir plus sur les différents types de Azure Active Directory dans les rapports d’activité de Azure Active Directory de la signature [- aperçu](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+Le tableau dans le schéma de recherche avancée contient des informations sur Azure Active Directory principal de service et les `AADSpnSignInEventsBeta` sign-ins d’identité gérée. Vous pouvez en savoir plus sur les différents types de Azure Active Directory dans les rapports d’activité de Azure Active Directory de la signature [- aperçu.](/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 
@@ -59,11 +59,11 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ServicePrincipalName` | string        | Nom du principal de service à l’origine de la signature  |
 | `ServicePrincipalId`   | string        | Identificateur unique du principal de service à l’origine de la signature  |
 | `ResourceDisplayName`  | string        | Nom d’affichage de la ressource accessible  |
-| `ResourceId`           | string        | Identificateur unique de la ressource accessible  |
+| `ResourceId`           | string        | Identificateur unique de la ressource à accès  |
 | `ResourceTenantId`     | string        | Identificateur unique du client de la ressource à accès |
 | `IPAddress`            | string        | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées  |
 | `Country`          | string        | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé |
-| `State`                | string        | État où la se connecte s’est produite, si disponible |
+| `State`                | string        | État où la connectez-vous s’est produite, si disponible |
 | `City`                 | string        | Ville où se trouve l’utilisateur du compte  |
 | `Latitude`             | string        | Coordonnées nord à sud de l’emplacement de la signature |
 | `Longitude`            | string        | Coordonnées est à ouest de l’emplacement de la signature |

@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Fournissez à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation.
-ms.openlocfilehash: dedc39d9c82f66d64660f66be8e77ba954246e09
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: ccb2c944fb9f3a68d0670aa86acb0095362516dcad98069defe2aba1ec97dc97
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392838"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825154"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités du secteur
 

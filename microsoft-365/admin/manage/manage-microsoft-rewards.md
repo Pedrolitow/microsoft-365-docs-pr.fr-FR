@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les utilisateurs qui disposent de comptes Microsoft personnels peuvent gagner des points Microsoft Rewards dans le cadre de leurs recherches de travail si la fonctionnalité Lien AAD avec des primes est activée.
-ms.openlocfilehash: 581a7a044ef1b3508591778c9da416ffc3afac2e
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 682bfb9e26ca81ac76f147ce53f3ff92bae1ec47e3b91babcdfde6bf6acab4fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779661"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825078"
 ---
 # <a name="manage-microsoft-rewards"></a>Gérer Microsoft Rewards
 
@@ -34,9 +34,9 @@ Pour les administrateurs d’organisations éducatives avec des enfants mineurs,
 
 Cette fonctionnalité n’est pas disponible pour les utilisateurs du gouvernement. Les administrateurs doivent s’assurer que les stratégies de conformité de leur organisation autorisent l’utilisation de comptes Microsoft Rewards personnels avec des recherches de travail.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
-[Configurer Microsoft Search](/microsoftsearch/setup-microsoft-search) (article)
+[Configurer Recherche Microsoft](/microsoftsearch/setup-microsoft-search) (article)
 
 [12 tâches principales pour les équipes de sécurité pour prendre en charge le travail à](../../security/top-security-tasks-for-remote-work.md) domicile (article)
 

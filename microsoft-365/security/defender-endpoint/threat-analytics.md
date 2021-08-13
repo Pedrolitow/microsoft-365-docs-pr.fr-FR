@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 184190e57e5f1478dd40e64f4291fa55eb49768f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 211d8071d0b8fcf8c650acb15f2fa29ac9bed456b0c8eed8829a0c4502817d8d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817294"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Suivre les menaces émergentes et y répondre par le biais de l’analyse des menaces
 
@@ -84,7 +84,7 @@ La section **Vue d’ensemble** fournit un aperçu du rapport d’analyste déta
 Chaque rapport inclut des graphiques conçus pour fournir des informations sur l’impact organisationnel d’une menace :
 
 - **Appareils avec alertes**: indique le nombre actuel d’appareils distincts qui ont été touchés par la menace. Un appareil est classé comme **actif** s’il existe au  moins  une alerte associée à cette menace et résolu si toutes les alertes associées à la menace sur l’appareil ont été résolues.
-- **Appareils avec des alertes au fil** du temps  : indique le nombre d’appareils distincts avec des alertes **actives** et résolues au fil du temps. Le nombre d’alertes résolues indique la rapidité de réponse de votre organisation aux alertes associées à une menace. Dans l’idéal, le graphique doit afficher les alertes résolues dans un délai de quelques jours.
+- **Appareils avec des alertes** au fil du temps : affiche le nombre d’appareils distincts avec des alertes **actives** **et** résolues au fil du temps. Le nombre d’alertes résolues indique la rapidité de réponse de votre organisation aux alertes associées à une menace. Dans l’idéal, le graphique doit afficher les alertes résolues dans un délai de quelques jours.
 
 #### <a name="review-security-resilience-and-posture"></a>Passer en revue la résilience et la posture de sécurité
 
@@ -93,7 +93,7 @@ Chaque rapport inclut des graphiques qui fournissent une vue d’ensemble de la 
 - **État de la configuration** de la sécurité : indique le nombre d’appareils qui ont appliqué les paramètres de sécurité recommandés qui peuvent aider à atténuer la menace. Les appareils sont considérés **comme sécurisés** s’ils ont _appliqué tous_ les paramètres suivis.
 - **État de correction des** vulnérabilités : indique le nombre d’appareils qui ont appliqué des mises à jour de sécurité ou des correctifs qui adressent les vulnérabilités exploitées par la menace.
 
-### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en matière de sécurité Microsoft
+### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en sécurité Microsoft
 
 Go to the **Analyst report** section to read through the detailed expert write-up. La plupart des rapports fournissent des descriptions détaillées des chaînes d’attaques, notamment des tactiques et des [](advanced-hunting-overview.md) techniques mappées à l’infrastructure CK MITRE ATT&, des listes exhaustives de recommandations et de puissants conseils de recherche de menaces.
 
@@ -110,7 +110,7 @@ Dans la section **Atténuations,** examinez la liste des recommandations actionn
   - Protection des applications potentiellement indésirables (PUA)
   - Protection en temps réel
 
-Les informations d’atténuation de cette section intègrent des données de [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md), qui fournissent également des informations détaillées d’analyse à partir de différents liens dans le rapport.
+Les informations d’atténuation de cette section intègrent des données de [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md), qui fournit également des informations détaillées sur l’analyse à partir de différents liens du rapport.
 
 ![Image de la section préventions d’un rapport d’analyse des menaces](images/ta-mitigations.png)
 
@@ -126,7 +126,7 @@ Lorsque vous utilisez les rapports, gardez les informations suivantes à l’esp
 - Les appareils sont comptés comme « indisponibles » s’ils n’ont pas transmis de données au service.
 - Les statistiques antivirus sont basées sur Antivirus Microsoft Defender paramètres. Les appareils avec des solutions antivirus tierces peuvent apparaître comme « exposés ».
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Rechercher de manière proactive les menaces avec le recherche avancée](advanced-hunting-overview.md)
 - [Comprendre la section rapport d’analyste](threat-analytics-analyst-reports.md)

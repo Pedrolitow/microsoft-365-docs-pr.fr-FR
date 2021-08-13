@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ecab217a6181096e4689d78fa2bdddc0a767d0d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eb5358e3751ab10fcad0f4a162fc3e43c0dba61427f710632732893413b6ea7e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833350"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Le tableau du schéma de recherche avancée contient des informations sur différentes `AlertEvidence` entités (fichiers, adresses IP, URL, utilisateurs ou appareils) associées aux alertes de Microsoft Defender pour point de terminaison, Microsoft Defender pour [](advanced-hunting-overview.md) Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
@@ -51,7 +51,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `FolderPath` | string | Dossier contenant le fichier à lequel l’action enregistrée a été appliquée |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
 | `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli ; utilisez la colonne SHA1 lorsqu’elle est disponible. |
-| `FileSize` | entier | Taille du fichier en octets |
+| `FileSize` | int | Taille du fichier en octets |
 | `ThreatFamily` | string | Famille de programmes malveillants sous qui le fichier ou processus suspect ou malveillant a été classé |
 | `RemoteIP` | string | Adresse IP à laquelle la connexion était en cours |
 | `RemoteUrl` | string | URL ou nom de domaine complet (FQDN) à laquelle/auquel la connexion était en cours |
@@ -73,7 +73,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `RegistryValueName` |string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueData` |string | Données de la valeur de Registre à l’application de l’action enregistrée |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

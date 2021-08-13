@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Formez vos utilisateurs et veillez à ce que les problèmes soient traités rapidement.
-ms.openlocfilehash: b6581533983c2e00ab8b29d73326deebda52599f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 6343a4193a78462d843d808246dcc95126661f02a3037d3c1502fa9b8ef9a33a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788822"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833170"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Étape 6 : former vos employés et répondre aux commentaires sur l’utilisation
 

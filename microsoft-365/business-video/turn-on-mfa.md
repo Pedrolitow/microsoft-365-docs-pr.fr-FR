@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment activer l’authentification multifacteur, parfois appelée authentification à deux facteurs.
-ms.openlocfilehash: ec9edd8664f35d3731f1f3c90ff2c60e8b2d2e3d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 7c53417cc4ba8591a5b928c25ee4f0152b4b4fd946657b368ce7aa2a4618824e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394784"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809464"
 ---
 # <a name="turn-on-multifactor-authentication"></a>Activer l’authentification multifacteur
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 567916e9e1a1d96d77bc6c187b384a1ec3be72a5
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: a9d8d2fe7fe26b90719502fffebaa96526a26d24207b49136e52373fc058d94b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799348"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -55,7 +55,7 @@ Dans la file d’attente des alertes par défaut, vous pouvez sélectionner **Fi
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
 - Severity
-- Statut
+- État
 - Catégorie
 - Source de détection
 - Balises
@@ -87,7 +87,7 @@ Microsoft 365 Defender alertes peuvent être issues de solutions telles que Micr
 > - Le caractère précédé ne modifie pas le GUID de l’alerte. La seule modification du GUID est le composant prédépendant.<br>
 
 
-Source de l’alerte | Caractère prédépendé 
+Source de l’alerte | Caractère en prédépendant 
 :---|:---
 Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender pour point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> 
@@ -151,7 +151,7 @@ Une fois que vous avez terminé l’analyse d’une  alerte et qu’elle peut ê
 
 La classification des alertes et la spécification de leur détermination permettent d’Microsoft 365 Defender pour fournir plus d’alertes vraies et moins de fausses alertes.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête.](investigate-incidents.md)
 

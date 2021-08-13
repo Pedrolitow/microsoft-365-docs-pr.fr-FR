@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Feuille de route pour configurer vos locataires pour Microsoft 365.
-ms.openlocfilehash: 4b94540293b86bd922ce4b29f970e52eb1245a01
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: d96d6246bfe38c9e3a5f3aadf04bf5cfe19ccd2f54697141a7c5463c72a6aea2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53464032"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794713"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Feuille de route du client pour Microsoft 365
 
@@ -27,13 +27,13 @@ Votre Microsoft 365 client est l’ensemble des services affectés à votre orga
 
 Lorsque vous créez un Microsoft 365 client, vous l’affectez à un emplacement géographique spécifique. Vous pouvez également avoir un client avec plusieurs emplacements géographiques et déplacer votre client d’un emplacement à un autre.
 
-Pour préparer votre client pour les utilisateurs, les groupes, les licences et les applications cloud, il est essentiel de planifier et d’exécuter avec soin la configuration de votre client.
+Pour préparer votre client pour les utilisateurs, les groupes, les licences et les applications cloud, il est essentiel de planifier et d’exécuter avec soin votre configuration client.
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Configurer votre client Microsoft 365
 
-Après vous être assuré que votre réseau est optimisé pour l’accès à Microsoft 365 pour les travailleurs locaux et distants, vos tâches importantes suivantes sont la planification et la configuration de votre client Microsoft 365 pour les noms de domaine DNS, les services communs et pour cette infrastructure d’identité qui prend en charge la connectez-vous utilisateur sécurisée.
+Après vous être assuré que votre réseau est optimisé pour l’accès à Microsoft 365 pour les travailleurs locaux et distants, vos prochaines tâches importantes sont la planification et la configuration de votre client Microsoft 365 pour les noms de domaine DNS, les services communs et pour cette infrastructure d’identités qui prend en charge la connectez-vous utilisateur sécurisée.
 
-### <a name="plan"></a>Prévision
+### <a name="plan"></a>Planification
 
 Pour planifier l’implémentation de votre client :
 
@@ -55,9 +55,9 @@ Pour déployer votre client :
 
 ### <a name="move-a-tenants-geographic-locations"></a>Déplacer les emplacements géographiques d’un client
 
-Microsoft continue d’ouvrir de nouveaux emplacements géographiques de centres de données (Microsoft 365 services). Ces nouvelles géos de centres de données ajoutent de la capacité et des ressources de calcul pour prendre en charge la demande des clients et la croissance de l’utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles.
+Microsoft continue d’ouvrir de nouveaux emplacements géographiques de centre de données (Microsoft 365 services). Ces nouvelles géos de centres de données ajoutent de la capacité et des ressources de calcul pour prendre en charge la demande des clients et la croissance de l’utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles.
 
-Pour plus d’informations, voir Déplacement de données principales vers [de nouvelles Microsoft 365 de centres de données.](moving-data-to-new-datacenter-geos.md)
+Pour plus d’informations, voir [Déplacement de données principales vers de nouvelles Microsoft 365 de centres de données.](moving-data-to-new-datacenter-geos.md)
 
 
 ## <a name="deploy-microsoft-365-multi-geo"></a>Déployer Microsoft 365 multigéogé
@@ -68,7 +68,7 @@ Pour en savoir plus, consultez [Microsoft 365 Multigéographie](microsoft-365-mu
 
 ## <a name="manage-multiple-microsoft-365-tenants"></a>Gérer plusieurs Microsoft 365 client 
 
-Bien qu’il soit idéal d’avoir un seul client pour votre oganisation, vous pouvez être l’une des nombreuses organisations qui ont plusieurs locataires. Les raisons peuvent inclure des fusions et acquisitions, une isolation administrative ou une administration décentralisée.
+Bien qu’il soit idéal d’avoir un seul client pour votre oganisation, vous pouvez être l’une des nombreuses organisations qui ont plusieurs locataires. Les raisons peuvent inclure des fusions et des acquisitions, une isolation administrative ou une administration décentralisée.
 
 Si vous avez plusieurs Microsoft 365 client, consultez les articles suivants pour plus d’informations sur :
 
@@ -78,4 +78,4 @@ Si vous avez plusieurs Microsoft 365 client, consultez les articles suivants pou
 
 ## <a name="next-step"></a>Étape suivante
 
-Commencez la planification de votre client [avec des abonnements, des licences, des comptes et des locataires.](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+Démarrez la planification de votre client [avec des abonnements, des licences, des comptes et des locataires.](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)

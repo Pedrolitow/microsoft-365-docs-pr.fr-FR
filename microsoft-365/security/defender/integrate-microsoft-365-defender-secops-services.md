@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0fc4d68cba89c3ee372baf17c303b21422eb441e
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: a790d81d1e8c97ffad85be921abf5fc0efb87ad2aaaddb72629eac9b5d9d392b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623837"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799297"
 ---
-# <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Étape 3. Planifier l’intégration Microsoft 365 Defender avec votre catalogue de services SOC
+# <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Étape 3 : Planifier l’intégration Microsoft 365 Defender avec votre catalogue de services SOC
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -48,7 +48,7 @@ Un centre d’opérations de sécurité (SOC) établi doit avoir un catalogue de
 - Computer Security Incident Response Team (CSIRT) (qui peut être séparé de SOC) 
 - Tests de conformité
 - Surveillance des menaces internes & fraude
-- Analyse des incidents de sécurité & événements 
+- Surveillance des incidents de sécurité & événements 
 - Analyse des vulnérabilités
 - Détection et réponse étendues (XDR)/Orchestration de sécurité, automation et réponse (CASER)
 - Hameçonnage
@@ -61,7 +61,7 @@ Les composants de Microsoft 365 Defender sont les Microsoft 365 Defender :
 
 - **Microsoft Defender pour** l’identité (anciennement Azure Advanced Threat Protection, également appelé Azure ATP) est une solution de sécurité basée sur le cloud qui utilise les signaux des services de domaine Active Directory (AD DS) pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre les organisations.
 
-- **Microsoft Defender** pour point de terminaison est une solution globale de sécurité de point de terminaison dans le cloud pour les appareils, qui inclut des gestion des vulnérabilités et une évaluation basées sur les risques, la réduction de la surface d’attaque, une protection de nouvelle génération basée sur le comportement et basée sur le cloud, des protection évolutive des points de terminaison (PEPT), des examens et des corrections automatiques, des services de recherche gérés, des API enrichies et une gestion unifiée de la sécurité.
+- **Microsoft Defender** pour point de terminaison est une solution globale de sécurité de point de terminaison dans le cloud pour les appareils qui inclut des gestion des vulnérabilités et une évaluation basées sur les risques, la réduction de la surface d’attaque, une protection de nouvelle génération basée sur le comportement et basée sur le cloud, des protection évolutive des points de terminaison (PEPT), des recherches et des corrections automatiques, des services de recherche gérés, des API enrichies et une gestion unifiée de la sécurité.
 
  - **Microsoft Defender pour Office 365** est un service de filtrage de courrier électronique basé sur le cloud qui permet de protéger les organisations contre les programmes malveillants et les virus inconnus en offrant une protection zero-day robuste et inclut des fonctionnalités permettant de protéger les organisations contre les liens dangereux en temps réel. Il offre également une gamme complète d’investigation et de recherche, de réponse et de correction, de sensibilisation et de formation, ainsi que de fonctionnalités de posture sécurisée.
 
