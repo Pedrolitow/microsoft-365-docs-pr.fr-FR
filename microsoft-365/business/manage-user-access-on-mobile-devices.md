@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: Découvrez les stratégies de protection qui vous permettent de gérer la façon dont les utilisateurs accèdent Office applications et les fichiers de travail à partir d’appareils mobiles.
-ms.openlocfilehash: 7602b712f2dfc3ba369fd76979baaaa8d5da5c5c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6e48ef857de8046854a94d470b28ba5db96b373bc8b190dc1062d4f408a9802c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809249"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>Gérer les accès des utilisateurs aux documents Office sur appareils mobiles
 
@@ -50,6 +50,6 @@ Les paramètres suivants sont disponibles pour gérer la manière dont les utili
 |Réinitialiser le code confidentiel en cas d'échecs successifs de la connexion  <br/> |Afin d'empêcher un utilisateur non autorisé de deviner un code confidentiel de façon aléatoire, le code confidentiel est réinitialisé après le nombre d'entrées incorrectes que vous spécifiez.  <br/> |
 |Demander aux utilisateurs de se reconnecter à l'issue d'une période d'inactivité des applications Office  <br/> |Ce paramètre détermine la durée pendant combien de temps un utilisateur peut être inactif avant d’être invité à se ré-inscrire.  <br/> |
 |Refuser l'accès aux fichiers de travail sur les appareils « jailbreakés » ou débridés  <br/> |Les utilisateurs intelligents peuvent avoir un appareil jailbreaké ou rooté. Cela signifie que l’utilisateur peut modifier le système d’exploitation, ce qui peut rendre l’appareil plus susceptible d’être malveillant. Ces appareils sont bloqués lorsque ce paramètre est **activé**.  <br/> |
-|Ne pas autoriser les utilisateurs à copier le contenu de Office applications dans des applications personnelles  <br/> |Lorsque le paramètre est **sur ,** l’utilisateur ne peut pas copier les informations d’un fichier de travail dans un fichier personnel. Si le paramètre est **Éteint,** l’utilisateur peut copier les informations d’un fichier de travail vers une application personnelle ou un compte personnel.  <br/> |
+|Ne pas autoriser les utilisateurs à copier le contenu de Office applications dans des applications personnelles  <br/> |Lorsque le paramètre est **Sur,** l’utilisateur ne peut pas copier les informations d’un fichier de travail dans un fichier personnel. Si le paramètre est **Éteint,** l’utilisateur peut copier des informations à partir d’un fichier de travail vers une application personnelle ou un compte personnel.  <br/> |
    
 

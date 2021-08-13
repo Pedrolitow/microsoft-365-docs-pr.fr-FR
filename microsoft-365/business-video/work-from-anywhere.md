@@ -20,22 +20,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de Microsoft 365 vous aide à travailler n’importe où.
-ms.openlocfilehash: 1b8bfe4f452b1a7d9501ba7b92554f86492a36e6
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d2a11f4094e85e2514c1016c3fb7566359d32bce843e2d8070c39f41591cb437
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244883"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803596"
 ---
 # <a name="work-from-anywhere---overview"></a>Travailler n’importe où : vue d’ensemble
 
 Vous n’avez pas de bureau ? Plus de batterie d’ordinateur portable ? Pas de problème! Traitez votre travail de n’importe où Office sur votre téléphone ou tablette.
 
-**Pro conseil :** Maintenez votre équilibre entre vie professionnelle et vie privée en tenez compte des notifications pour vos applications de travail sur vos appareils personnels.
+**Pro conseil :** Maintenez votre équilibre entre vie professionnelle et vie privée en cocher les notifications pour vos applications de travail sur vos appareils personnels.
 
-Utilisez les quatre conseils ci-dessous pour travailler où que vous vous trouvez.
+Utilisez les quatre conseils ci-dessous pour travailler où que vous vous trouveriez.
 
-Téléchargez une infographie pour obtenir des conseils pour travailler n’importe où : 
+Téléchargez une infographie pour obtenir des conseils pour travailler où que vous soyez : 
 
 [PDF](https://go.microsoft.com/fwlink/?linkid=2079451)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
@@ -102,7 +102,7 @@ Vous pouvez également créer et modifier des documents directement à partir de
 
 À partir de votre ordinateur portable :
 
-- Dans Microsoft Teams, cliquez  sur le bouton Réunions sur le côté gauche de l’application et vous verrez une liste de toutes vos réunions :::image type="icon" source="../media/meetings-icon.png" border="false"::: de la semaine. Recherchez la réunion de votre souhaitez, puis cliquez sur Participer.
+- Dans Microsoft Teams, cliquez  sur le bouton Réunions sur le côté gauche de l’application et vous verrez une liste de toutes vos réunions :::image type="icon" source="../media/meetings-icon.png" border="false"::: pour la semaine. Recherchez la réunion de votre souhaitez, puis cliquez sur Participer.
 
 À partir de votre téléphone :
 

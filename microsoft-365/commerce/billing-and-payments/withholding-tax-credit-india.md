@@ -21,12 +21,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: b588f95309fcaa16bcee1ad71eaaf21ef053eadcd897bc0955eb58c2fc950b9e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694220"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809087"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Demander un crédit pour la retenue d’impôt sur votre compte (clients en Inde)
 
@@ -36,7 +36,7 @@ ms.locfileid: "52694220"
 
 Les clients en Inde reçoivent des factures Web Direct (Azure et Microsoft 365) facturées par Microsoft Regional Sales Pte Ltd. Singapore (MRS) et vers Singapour pour régler la facture. Si vous avez retenu des taxes lors du versement du paiement, cet article explique le processus de revendication d’un crédit pour la retenue d’impôt sur le revenu (WHT) dans votre compte avec MRS.
 
-## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Pour les clients de paiement par facture qui paient par chèque ou par virement
+## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Pour les clients payant par facture qui paient par chèque ou par virement
 
 Si vous avez retenu des taxes lors du versement du paiement à MRS et déposé l’impôt sur le revenu auprès du service d’impôt sur le revenu, vous devez soumettre une demande WHT pour régler le montant d’impôt retenu dans votre compte.
 
@@ -49,7 +49,7 @@ Envoyez la demande WHT en ouvrant un ticket avec le support Microsoft.
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>Pour les clients qui paient par carte de crédit
 
-Si votre mode de paiement est une carte de crédit et que vous avez effectué un paiement complet au service MRS et que vous avez également payé l’IFF au service d’impôt sur le revenu, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
+Si votre mode de paiement est une carte bancaire et que vous avez effectué un paiement complet au service MRS et que vous avez également payé wht au service fiscal du revenu, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
 
 Votre requête WHT doit inclure les éléments suivants :
 
@@ -72,7 +72,7 @@ Le tableau suivant indique les dates d’échéance et les chronologies pour env
 > [!IMPORTANT]
 >
 > - Les clients peuvent uniquement soumettre une demande de remboursement du montant wht après avoir payé la facture.
-> - Le montant de la facture du formulaire de crédit d’impôt à la source doit correspondre au montant de la facture identifié dans le certificat TDS. Si le montant de la facture est différent entre les deux formulaires, vous devez spécifier la raison de la différence dans le formulaire de retenue d’impôt. Ces informations sont vérifiées par l’équipe de révision, qui peut poser des questions de clarification, le cas échéant.
+> - Le montant de la facture du formulaire de retenue d’impôt doit correspondre au montant de la facture identifié dans le certificat TDS. Si le montant de la facture est différent entre les deux formulaires, vous devez spécifier la raison de la différence dans le formulaire de retenue d’impôt. Ces informations sont vérifiées par l’équipe de révision, qui peut poser des questions de clarification, le cas échéant.
 > - Les fichiers de certificat TDS doivent être dans l’un des formats de fichier suivants : .PDF ou Image uniquement (. JPEG, .PNG ou .GIF). En outre, les noms de fichiers ne doivent pas contenir d’espaces ni de caractères spéciaux. La taille du fichier ne peut pas dépasser 1 Mo.
 
 Une fois que vous avez envoyé la demande, elle passe au processus d’approbation où elle est approuvée pour exécution ou vous est renvoyée pour correction.

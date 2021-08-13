@@ -26,12 +26,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 8c9598215b5f5da7b4a62ca89bbc0fa5a94fe12d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 00745f4d936c0ee7f0a16270720fc87cb5dab2b179de4ce48b7628764152ab6a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827106"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - Aide de l’administrateur
 

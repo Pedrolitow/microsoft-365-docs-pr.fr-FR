@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer les appareils mobiles.
-ms.openlocfilehash: 5619ce6a8fa2c705acc6be08e3af8ad6f90a6d99
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: e69ad327add8ced4f3bacfa47c5b9424f3601b63a18360983e20c9a68ea83b53
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827062"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités Mobility + Security de Base
 
@@ -142,8 +142,8 @@ L’option suivante peut empêcher les utilisateurs d’accéder à Microsoft 36
 |Bloquer la sauvegarde sur le cloud |Oui|Non|Non|
 |Bloquer la synchronisation de documents |Oui|Non|Non|
 |Bloquer la synchronisation de photos  |Oui|Non|Non|
-|Autoriser la sauvegarde Google  |S/O|Non|Oui|
-|Autoriser la synchronisation automatique des comptes Google  |S/O|Non|Oui|
+|Autoriser la sauvegarde Google  |N/A|Non|Oui|
+|Autoriser la synchronisation automatique des comptes Google  |N/A|Non|Oui|
 
 ## <a name="system-settings"></a>Paramètres système
 
@@ -240,7 +240,7 @@ Si un appareil est perdu ou volé, vous pouvez supprimer des données organisati
 
 Pour plus d’informations, voir [Effacer un appareil mobile dans Basic Mobility and Security](wipe-mobile-device.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble de basic Mobility and Security for Microsoft 365](overview.md) (article)\
 [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md) (article)

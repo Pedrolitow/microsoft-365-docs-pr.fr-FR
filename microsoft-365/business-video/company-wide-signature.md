@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer une signature électronique à l’échelle de l’entreprise.
-ms.openlocfilehash: 669c61d17784641d1ecc88ac0952a46575c7898b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2fa201a8c01aa69046a3e126a4ff774b728fa49d0631129f109bcf6a1cc7e6fe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706261"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803617"
 ---
 # <a name="create-a-company-wide-email-signature"></a>Créer une signature électronique à l’échelle de l’entreprise
 
@@ -34,11 +34,11 @@ ms.locfileid: "52706261"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 
-Une signature électronique à l’échelle de l’entreprise apparaît sur chaque message électronique envoyé par des personnes de votre organisation. Vous pouvez l’utiliser pour afficher des détails importants, tels que les informations de contact de votre entreprise ou une clause d’exclusion de responsabilité légale. 
+Une signature électronique à l’échelle de l’entreprise apparaît sur chaque courrier électronique envoyé par des personnes de votre organisation. Vous pouvez l’utiliser pour afficher des détails importants, tels que les informations de contact de votre entreprise ou une clause d’exclusion de responsabilité légale. 
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le centre Microsoft 365'administration, **sélectionnez Exchange**.
+1. Dans la Centre d’administration Microsoft 365, sélectionnez **Exchange**.
 1. Sélectionnez **Flux de messagerie.**
 1. Sélectionnez **Ajouter +**, puis appliquer **les clauses d’exclusion de responsabilité.**
 1. Dans la page **Nouvelle règle** :

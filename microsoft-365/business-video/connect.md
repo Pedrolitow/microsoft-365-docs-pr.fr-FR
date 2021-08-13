@@ -19,20 +19,20 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment connecter votre PC à Microsoft 365 Business.
-ms.openlocfilehash: 7afbf3a1a515b1f023d660e72a77144b93d66a89
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment connecter votre PC à Microsoft 365 Entreprise.
+ms.openlocfilehash: ef504bf6a0b6e3f4c97135c073862ffcd2be953104c91fbbdf57efa77cbcb33e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580653"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803581"
 ---
 # <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Connecter pc à Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3?autoplay=false]
 
 ## <a name="try-it"></a>Essayez !
-Une fois que vous avez Microsoft 365 Business Premium (anciennement appelé Microsoft 365 Business), vous et vos employés devez effectuer quelques étapes pour tirer pleinement parti de ses fonctionnalités de sécurité et de gestion. Voici&#39;comment faire.
+Après avoir installé Microsoft 365 Business Premium (anciennement Microsoft 365 Business), vous et vos employés devez effectuer quelques étapes pour tirer pleinement parti de ses fonctionnalités de sécurité et de gestion. Voici&#39;comment faire.
 
 Tout d’abord, vérifiez que vous avez Windows 10 Professionnel installé :
 
@@ -41,17 +41,17 @@ Tout d’abord, vérifiez que vous avez Windows 10 Professionnel installé :
 
 Ensuite, connectez-vous Microsoft 365 Business :
 
-1. Sélectionnez **Démarrer,** puis sélectionnez **l’Paramètres’icône.**
+1. Sélectionnez Démarrer, puis sélectionnez **l’icône** Paramètres’icône. 
 2. Select **Accounts**  >   **Access work or school**   >   **Connecter**.
 3. Sélectionnez **Joindre cet appareil à Azure Active Directory**.
 4. Entrez l’adresse e-mail de votre Microsoft 365, puis sélectionnez **Suivant**.
 5. Entrez votre mot de passe,  **sélectionnez Se connectez,** puis vérifiez que vous rejoignez l’organisation correcte.
 6. Sélectionnez  **Rejoindre,** puis  **Terminé**.
 
-Selon la façon dont votre entreprise a Microsoft 365 Business, vous pouvez voir une notification de chiffrement de votre PC. Pour chiffrer votre PC :
+Selon la façon dont votre entreprise a Microsoft 365 Entreprise, vous pouvez voir une notification de chiffrement de votre PC. Pour chiffrer votre PC :
 
 1. Sélectionnez le message  **de chiffrement**  nécessaire.
-2. Sélectionnez  **I don&#39;'aucun** autre logiciel de chiffrement de disque n’est installé, chiffrez tous mes disques, puis sélectionnez  **Oui**. Vous verrez une fenêtre de démarrage **BitLocker** avec une barre de progression.
+2. Sélectionnez  **I don&#39;'aucun** autre logiciel de chiffrement de disque n’est installé, chiffrez tous mes disques, puis sélectionnez  **Oui**. Vous verrez une fenêtre  **BitLocker de démarrage**  avec une barre de progression.
 3. Dans la **fenêtre Choisir comment déverrouiller votre lecteur au** démarrage, sélectionnez Entrer un code confidentiel **(recommandé).**
 4. Entrez votre code confidentiel, puis entrez-le à nouveau pour le vérifier. Sélectionnez  **Définir le code confidentiel**.
 5. Choisissez une méthode pour enregistrer une clé de récupération de chiffrement, puis sélectionnez  **Suivant**.

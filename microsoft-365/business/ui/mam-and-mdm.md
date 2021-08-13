@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les différences entre la gestion des appareils mobiles et la gestion des applications mobiles, ou mdm et MAM.
-ms.openlocfilehash: 44ac5ebf66f4d4e0b057692902f9bc3804aa2e03
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e070f3aa253bf7881f0fb4efd97d84394c3d263ec57cac2643e08c668b8e4257
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809137"
 ---
 # <a name="difference-between-mdm-and-mam"></a>Différence entre LAM et MAM
 
@@ -38,6 +38,6 @@ Microsoft 365 Business Premium offre plusieurs façons de protéger vos données
 
 Microsoft 365 Business Premium vous permet de configurer des stratégies qui protègent les données sur Windows 10 appareils. Lorsqu’un appareil est sous gestion des appareils mobiles, vous contrôlez l’intégralité de l’appareil, vous pouvez effacer les données de celui-ci et les réinitialiser aux paramètres d’usine. Pour plus d’informations, voir [Définir les paramètres de protection](../protection-settings-for-windows-10-pcs.md)des appareils Windows 10 PC.
 
-## <a name="mobile-application-management-or-mam"></a>Gestion des applications mobiles ou gestion des applications mobiles
+## <a name="mobile-application-management-or-mam"></a>Gestion des applications mobiles ou GESTION DES APPLICATIONS MOBILES
 
 La gestion des applications mobiles vous permet de contrôler vos données métiers sur les appareils personnels de vos utilisateurs, tels que les iPhone et android, ainsi que sur leurs ordinateurs Win 10 personnels. Vous pouvez utiliser des stratégies de gestion des applications pour empêcher vos utilisateurs de copier des données métiers à partir de Office applications vers leurs applications personnelles. Vous pouvez également supprimer toutes les données des applications Office sur leurs appareils personnels. Pour plus d’informations, voir Définir les [paramètres](../app-protection-settings-for-android-and-ios.md) de protection des applications pour les appareils Android ou iOS et Définir les paramètres de protection des applications [pour Windows 10 appareils mobiles.](../protection-settings-for-windows-10-devices.md)

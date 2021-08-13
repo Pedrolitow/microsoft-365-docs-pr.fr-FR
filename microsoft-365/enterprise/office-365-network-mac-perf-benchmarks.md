@@ -14,11 +14,11 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 et comparaisons de score réseau
-ms.openlocfilehash: e84a6dd63376c55c7da0abd4c414577c94f760d4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b57055155505423118a9f51bca328add29dc8fdaa9a1c804acf222689209f6a9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858446"
 ---
 # <a name="office-365-network-score-benchmarks-and-comparisons"></a>Office 365 et comparaisons de score réseau

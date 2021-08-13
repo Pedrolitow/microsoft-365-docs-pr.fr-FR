@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: En savoir plus sur Office 365 Allemagne.
-ms.openlocfilehash: e08d3b72e8a87fa9cd5e5a1cc25d8178e4bd2183
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 4b266a0bce35da5abf73c85fb4028ac3650bd85582d4b7479a78359bbc89a3e0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297115"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827118"
 ---
 # <a name="learn-about-office-365-germany"></a>En savoir plus sur Office 365 Germany
 
@@ -61,7 +61,7 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
     
 - Microsoft 365 Vidéo
     
-- Project for the web
+- Project pour le web
     
 - Visio pour le web
     

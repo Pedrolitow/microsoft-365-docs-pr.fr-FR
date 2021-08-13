@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment modifier le nom ou l’adresse e-mail d’un utilisateur en modifiant un nom d’affichage, un alias ou une adresse e-mail.
-ms.openlocfilehash: c7d960daa8b1b83149db90b10b7af4236d535a9d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 238d4a81853a490fcc92858480e841aeb7aaa8b7c054ae4bd39e5caee11b91d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394832"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803629"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Modifier le nom ou l’adresse e-mail d’un utilisateur
 
@@ -64,7 +64,7 @@ Parfois, vous devrez peut-être modifier le nom ou l’adresse e-mail d’un uti
 
     Suite à cette modification, l’utilisateur doit se Microsoft 365 avec ce nouveau nom d’utilisateur et ajouter le nouveau compte de messagerie à Outlook.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Accorder des autorisations de boîte aux lettres à un autre utilisateur](../admin/add-users/give-mailbox-permissions-to-another-user.md) (article)\
 [Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (article)\

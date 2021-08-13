@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e7941297ea523cb395ab0ac36707bd7d224ea60a0bfeadfae9f28e5df6d3c70a
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 35db4a7728fff40e6bf81b2c7992db229048964f60fc1ed2db829cf2c86b0749
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835882"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>En savoir plus sur la conformité des communications dans Microsoft 365
 
@@ -47,8 +47,6 @@ Pour les dernières présentations Ignite pour la conformité des communications
 - [Une meilleure Microsoft Teams - En savoir plus sur les dernières fonctionnalités intégrées Teams en matière de conformité des communications](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 Pour obtenir une vue d’ensemble rapide de la conformité des communications, consultez la vidéo Détecter le harcèlement au travail et répondre à la conformité des communications dans [Microsoft 365](https://youtu.be/z33ji7a7Zho) vidéo sur le canal [Microsoft Mechanics.](https://www.youtube.com/user/OfficeGarageSeries)
-
-Découvrez comment [les valeurs TD Securities utilisent](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) la conformité des communications pour répondre à leurs obligations réglementaires et répondre à leurs besoins de sécurité et de stabilité.
 
 ## <a name="scenarios-for-communication-compliance"></a>Scénarios de conformité des communications
 

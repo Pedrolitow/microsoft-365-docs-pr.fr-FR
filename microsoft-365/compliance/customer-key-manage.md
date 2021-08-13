@@ -12,32 +12,32 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir installé la clé client, découvrez comment la gérer en restaurant des clés AKV, en gérant les autorisations et en créant et en attribuant des stratégies de chiffrement de données.
-ms.openlocfilehash: da806ec9dcf1327ec5fdd6b0a0c9e7f22c89584e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 263f5d13a554ab06c140101595e39c98ae1bc9488dbeff13da0eda9c02d334fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345057"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835834"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
 Une fois que vous avez installé la clé client pour Office 365, vous devez créer et affecter une ou plusieurs stratégies de chiffrement de données (DEP). Une fois que vous avez affecté vos dep, vous pouvez gérer vos clés comme décrit dans cet article. En savoir plus sur la clé client dans les rubriques connexes.
 
-## <a name="create-a-dep-for-use-with-multiple-workloads-for-all-tenant-users"></a>Créer une PD DEP pour une utilisation avec plusieurs charges de travail pour tous les utilisateurs clients
+## <a name="create-a-dep-for-use-with-multiple-workloads-for-all-tenant-users"></a>Créer un PD DEP pour une utilisation avec plusieurs charges de travail pour tous les utilisateurs clients
 
 Avant de commencer, assurez-vous d’avoir effectué les tâches requises pour configurer le client. Pour plus d’informations, [voir Configurer la clé client.](customer-key-set-up.md) Pour créer le PED, vous avez besoin des URIs de coffre de clés que vous avez obtenus lors de l’installation. Pour plus d’informations, [voir Obtenir l’URI de chaque clé Azure Key Vault.](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key)
 
 Pour créer une PD DEP à charges multiples, suivez les étapes suivantes :
   
-1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
+1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
 
-2. Pour créer un dep, utilisez l'New-M365DataAtRestEncryptionPolicy cmdlet.
+2. Pour créer une dep, utilisez l'New-M365DataAtRestEncryptionPolicy cmdlet.
 
    ```powershell
    New-M365DataAtRestEncryptionPolicy -Name <PolicyName> -AzureKeyIDs <KeyVaultURI1, KeyVaultURI2> [-Description <String>]
    ```
 
-   Où :
+   Où :
 
    - *PolicyName est* le nom que vous souhaitez utiliser pour la stratégie. Les noms ne peuvent pas contenir d’espaces. Par exemple, Contoso_Global.
 
@@ -87,7 +87,7 @@ Pour créer un deP à utiliser avec une boîte aux lettres, suivez les étapes s
    New-DataEncryptionPolicy -Name <PolicyName> -Description "Policy Description" -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
    ```
 
-   Où :
+   Où :
 
    - *PolicyName est* le nom que vous souhaitez utiliser pour la stratégie. Les noms ne peuvent pas contenir d’espaces. Par exemple, USA_mailboxes.
 
@@ -157,17 +157,17 @@ Pour afficher la liste de tous les dep que vous avez créés pour les boîtes au
 
 1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. Pour retourner tous les DDP de votre organisation, exécutez l'Get-DataEncryptionPolicy cmdlet sans aucun paramètre.
+2. Pour retourner tous les DDP de votre organisation, exécutez la cmdlet Get-DataEncryptionPolicy sans aucun paramètre.
 
    ```powershell
    Get-DataEncryptionPolicy
    ```
 
-   Pour plus d’informations sur la cmdlet Get-DataEncryptionPolicy, voir [Get-DataEncryptionPolicy](/powershell/module/exchange/get-dataencryptionpolicy).
+   Pour plus d’informations sur Get-DataEncryptionPolicy cmdlet, voir [Get-DataEncryptionPolicy](/powershell/module/exchange/get-dataencryptionpolicy).
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Affecter un dep avant de migrer une boîte aux lettres vers le cloud
 
-Lorsque vous affectez le deP, Microsoft 365 chiffre le contenu de la boîte aux lettres à l’aide de la dep affectée lors de la migration. Ce processus est plus efficace que la migration de la boîte aux lettres, l’affectation du dep, puis l’attente du chiffrement, ce qui peut prendre des heures, voire des jours.
+Lorsque vous affectez le deP, Microsoft 365 chiffre le contenu de la boîte aux lettres à l’aide de la PD DEP affectée pendant la migration. Ce processus est plus efficace que la migration de la boîte aux lettres, l’affectation du dep, puis l’attente du chiffrement, ce qui peut prendre des heures, voire des jours.
 
 Pour affecter un dep à une boîte aux lettres avant de la migrer vers Office 365, exécutez la cmdlet Set-MailUser dans Exchange Online PowerShell :
 
@@ -217,9 +217,9 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 La propriété IsEncrypted renvoie la valeur **true** si la boîte aux lettres est chiffrée et la valeur **false** si la boîte aux lettres n’est pas chiffrée. Le temps de déplacement des boîtes aux lettres dépend du nombre de boîtes aux lettres à laquelle vous attribuez une dep pour la première fois et de la taille des boîtes aux lettres. Si les boîtes aux lettres n’ont pas été chiffrées après une semaine à partir de l’heure à partir de la PED, contactez Microsoft.
 
-La cmdlet New-MoveRequest n’est plus disponible pour les déplacements de boîtes aux lettres locales. Pour plus [d’informations,](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) reportez-vous à cette annonce.
+La cmdlet New-MoveRequest n’est plus disponible pour les déplacements de boîtes aux lettres locaux. Pour plus [d’informations,](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) reportez-vous à cette annonce.
 
-### <a name="verify-encryption-completes-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Vérifier que le chiffrement est terminé pour SharePoint en ligne, OneDrive Entreprise et Teams fichiers
+### <a name="verify-encryption-completes-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Vérifier que le chiffrement est terminé pour SharePoint online, OneDrive Entreprise et Teams fichiers
 
 Vérifiez l’état du chiffrement en exécutant la cmdlet Get-SPODataEncryptionPolicy comme suit :
 
@@ -239,7 +239,7 @@ Le résultat de cette cmdlet inclut :
 
   - **Inscription :** Le chiffrement de la clé client a été appliqué et vos fichiers sont en cours de chiffrement. Si la clé de la géo est inscrite, des informations sur le pourcentage de sites de la géo sont également affichées, ce qui vous permet de surveiller la progression du chiffrement.
 
-  - **Inscrit :** Le chiffrement de la clé client a été appliqué et tous les fichiers de tous les sites ont été chiffrés.
+  - **Inscrit :** Le chiffrement de clé client a été appliqué et tous les fichiers de tous les sites ont été chiffrés.
 
   - **Déploiement :** Un roulis de touches est en cours. Si la clé de la géo est en cours de déploiement, vous verrez également des informations sur le pourcentage de sites qui ont terminé l’opération de déploiement de clé afin de pouvoir surveiller la progression.
 
@@ -255,7 +255,7 @@ Pour obtenir des détails sur tous les dep que vous avez créés pour utiliser p
         Get-M365DataAtRestEncryptionPolicy
      ```
 
-   - Pour renvoyer des détails sur un deP spécifique, exécutez cette commande. Cet exemple renvoie des informations détaillées sur le PED nommé « Contoso_Global ».
+   - Pour renvoyer des détails sur un deP spécifique, exécutez cette commande. Cet exemple renvoie des informations détaillées sur la PED nommée « Contoso_Global ».
 
      ```powershell
         Get-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global"
@@ -307,11 +307,11 @@ Par exemple :
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
-Si le coffre de clés contient déjà une clé du même nom, l’opération de restauration échoue. Restore-AzKeyVaultKey restaure toutes les versions clés et toutes les métadonnées de la clé, y compris le nom de la clé.
+Si le coffre de clés contient déjà une clé du même nom, l’opération de restauration échoue. Restore-AzKeyVaultKey toutes les versions clés et toutes les métadonnées de la clé, y compris le nom de la clé.
   
 ## <a name="manage-key-vault-permissions"></a>Gérer les autorisations de coffre de clés
 
-Plusieurs cmdlets sont disponibles qui vous permettent d’afficher et, si nécessaire, de supprimer les autorisations de coffre de clés. Vous devrez peut-être supprimer des autorisations, par exemple, lorsqu’un employé quitte l’équipe. Pour chacune de ces tâches, vous utiliserez Azure PowerShell. Pour plus d’informations Azure PowerShell, voir [Vue d’ensemble Azure PowerShell](/powershell/azure/).
+Plusieurs cmdlets sont disponibles pour vous permettre d’afficher et, si nécessaire, de supprimer les autorisations de coffre de clés. Vous devrez peut-être supprimer des autorisations, par exemple, lorsqu’un employé quitte l’équipe. Pour chacune de ces tâches, vous utiliserez Azure PowerShell. Pour plus d’informations Azure PowerShell, voir [Vue d’ensemble Azure PowerShell](/powershell/azure/).
 
 Pour afficher les autorisations de coffre de clés, exécutez Get-AzKeyVault cmdlet.
 
@@ -325,7 +325,7 @@ Par exemple :
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
 
-Pour supprimer les autorisations d’un administrateur, exécutez Remove-AzKeyVaultAccessPolicy cmdlet :
+Pour supprimer les autorisations d’un administrateur, exécutez l'Remove-AzKeyVaultAccessPolicy cmdlet :
   
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
@@ -346,7 +346,7 @@ Si vous devez revenir aux clés gérées par Microsoft, vous pouvez le faire. Lo
 
 Si vous décidez de ne plus utiliser la clé client pour affecter des depx de travail multiples, vous devrez joindre le support Microsoft avec une demande de « désintégration » à partir de la clé client. Demandez à l’équipe de support de déposer une demande de service auprès Microsoft 365'équipe de clé client. Si vous avez des questions, m365-ck@service.microsoft.com posent des questions.
 
-Si vous ne souhaitez plus chiffrer des boîtes aux lettres individuelles à l’aide de deps au niveau de la boîte aux lettres, vous pouvez désattribuer les DPS de niveau boîte aux lettres de toutes vos boîtes aux lettres.
+Si vous ne souhaitez plus chiffrer des boîtes aux lettres individuelles à l’aide de DEP au niveau de la boîte aux lettres, vous pouvez désattribuer les DPS de niveau boîte aux lettres de toutes vos boîtes aux lettres.
 
 Pour désattribuer des DPS de boîte aux lettres, utilisez Set-Mailbox cmdlet PowerShell.
 
@@ -385,7 +385,7 @@ Pour lancer le chemin d’accès de la purge des données, effectuer les étapes
 
 1. Supprimez les autorisations wrap et unwrap pour « O365 Exchange Online » des coffres de clés Azure.
 
-2. À l’aide d’un compte professionnel ou scolaire qui dispose de privilèges d’administrateur général dans votre organisation, connectez-vous [Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+2. À l’aide d’un compte professionnel ou scolaire qui dispose de privilèges d’administrateur général dans votre [organisation, connectez-vous Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 3. Pour chaque PDE qui contient des boîtes aux lettres à supprimer, exécutez la cmdlet [Set-DataEncryptionPolicy](/powershell/module/exchange/set-dataencryptionpolicy) comme suit.
 
@@ -397,7 +397,7 @@ Pour lancer le chemin d’accès de la purge des données, effectuer les étapes
 
 4. Contactez le support Microsoft et demandez l’eDocument de purge des données.
 
-    À votre demande, Microsoft vous envoie un document juridique pour accusé de réception et autoriser la suppression des données. La personne de votre organisation qui s’est inscrite en tant qu’approuveur dans l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre supérieur ou d’une autre personne désignée dans votre entreprise qui est légalement autorisé à signer les formalités au nom de votre organisation.
+    À votre demande, Microsoft vous envoie un document juridique pour accusé de réception et autoriser la suppression des données. La personne de votre organisation qui s’est inscrite en tant qu’approuveur dans l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre supérieur ou d’une autre personne désignée de votre entreprise qui est légalement autorisé à signer les formalités au nom de votre organisation.
 
 5. Une fois que votre représentant a signé le document juridique, renvoyez-le à Microsoft (généralement via une signature eDoc).
 

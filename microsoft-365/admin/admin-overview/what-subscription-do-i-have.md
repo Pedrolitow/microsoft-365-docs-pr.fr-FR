@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment vérifier les abonnements de votre organisation en allant sur la page Vos produits.
 ms.date: 01/21/2021
-ms.openlocfilehash: bb11ab4fc8933e2e199998992f0c12ea8de0d23a
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 4db973a3817638e3c41f5e73989052e26f66c0af08eceeada74cc47728d5094c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827094"
 ---
 # <a name="what-subscription-do-i-have"></a>Quel abonnement ai-je ?
 
@@ -40,7 +40,7 @@ Si vous êtes un administrateur, vous pouvez vérifier les abonnements de votre 
 3. Si vous souhaitez modifier les colonnes qui apparaissent dans la liste, sélectionnez **Sélectionner des colonnes.** Modifiez la sélection des colonnes, puis sélectionnez **Enregistrer.**
 4. Pour plus d’informations sur un abonnement unique, sélectionnez cet abonnement.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
   
 [Abonnements et facturation](../../commerce/index.yml) (page de lien)\
 [Consulter votre facture](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\

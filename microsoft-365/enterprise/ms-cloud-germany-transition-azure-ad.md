@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Informations supplémentaires Azure Active Directory lors du déplacement de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: 88a151b61a93b4b65e16bbd100a126d44282e513
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: 07273a12ffe0150714db100da6a4862e4715a6e3f203f9d673f202b9b5e27a13
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858506"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations Azure Active Directory supplémentaires pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -83,7 +83,7 @@ Si vous publiez une application disponible pour les utilisateurs extérieurs à 
 
 **Qu’en est-il de l’ajout de nouvelles applications multi-locataires lors de la migration ?**
 
-Si vous souhaitez utiliser une nouvelle application publiée par une autre organisation (application multi-client), vous ne pourz pas ajouter cette application pendant le processus de migration (phases 2 à 9).  Vous pouvez exécuter cette tâche lorsque votre organisation termine la phase 9 et est entièrement transition vers l’instance publique Azure.
+Si vous souhaitez utiliser une nouvelle application publiée par une autre organisation (application multi-client), vous ne pourront pas ajouter cette application pendant le processus de migration (phases 2 à 9).  Vous pouvez exécuter cette tâche lorsque votre organisation termine la phase 9 et est entièrement transition vers l’instance publique Azure.
 
 ## <a name="additional-considerations"></a>Considérations supplémentaires
 
@@ -104,7 +104,7 @@ Voici quelques considérations supplémentaires pour Azure AD :
 
 - Pour l’accès conditionnel : 
 
-  - Les stratégies d’accès conditionnel avec les contrôles d’octroi suivants ne sont pas pris en charge tant que la migration vers Office 365 services n’est pas terminée (après la phase finaliser la migration [d’Azure AD)](ms-cloud-germany-transition.md#how-is-the-migration-organized) :
+  - Les stratégies d’accès conditionnel avec les contrôles d’octroi suivants ne sont pas pris en charge tant que la migration vers Office 365 services est terminée (après la phase finaliser la migration [d’Azure AD)](ms-cloud-germany-transition.md#how-is-the-migration-organized) :
 
     - Exiger un appareil conforme
     - Exiger une application approuvée
@@ -114,16 +114,16 @@ Voici quelques considérations supplémentaires pour Azure AD :
 
 - Les scénarios Intune sont pris en charge uniquement par rapport aux points de terminaison internationaux une fois la migration des clients terminée, y compris toutes les migrations de charges de travail Office.
 
-- Les utilisateurs de Microsoft Cloud Deutschland qui utilisent la méthode de notification d’application mobile pour les demandes MFA voient l’ObjectId (un GUID) de l’utilisateur au lieu du nom d’utilisateur principal (UPN) dans l’application Microsoft Authenticator. Une fois la migration du client Azure AD terminée et hébergée dans les services Office 365, les nouvelles activations Microsoft Authenticator afficheront les UPN des utilisateurs. Les comptes Microsoft Authenticator existants continueront d’afficher l’ObjectId de l’utilisateur, mais ils continueront à fonctionner pour les notifications d’application mobile. 
+- Les utilisateurs de Microsoft Cloud Deutschland qui utilisent la méthode de notification d’application mobile pour les demandes MFA voient l’ObjectId de l’utilisateur (guid) au lieu du nom d’utilisateur principal (UPN) dans l’application Microsoft Authenticator. Une fois la migration du client Azure AD terminée et hébergée dans les services Office 365, les nouvelles activations Microsoft Authenticator afficheront les UPN des utilisateurs. Les comptes Microsoft Authenticator existants continueront d’afficher l’ObjectId de l’utilisateur, mais ils continueront à fonctionner pour les notifications d’application mobile. 
 
 - Pour les clients créés après le 22 octobre 2019, les paramètres de sécurité par défaut peuvent être activés automatiquement pour le client lors de sa migration vers le service Office 365. Les administrateurs client peuvent choisir de laisser les paramètres de sécurité par défaut activés et de s’inscrire à l’mf, ou ils peuvent désactiver la fonctionnalité. Pour plus d’informations, voir [Désactiver les paramètres de sécurité par défaut.](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults) 
 
   > [!NOTE]
   > Les organisations qui ne sont pas activées automatiquement lors de la migration peuvent toujours être inscrites automatiquement à l’avenir, car la fonctionnalité permettant d’activer les paramètres de sécurité par défaut est déployée dans le service Office 365. Les administrateurs qui choisissent de désactiver ou d’activer explicitement les paramètres de sécurité par défaut peuvent le faire en mettant à jour la fonctionnalité **sous Azure Active Directory > propriétés.** Une fois que la fonctionnalité est explicitement activée par l’administrateur, elle ne sera pas activée automatiquement.
 
-- Un avertissement s’est produit sur la version d’Azure AD Connecter sur le portail Office 365 Germany, ainsi que sur le portail Office 365 une fois que le client est en migration. Cela peut être ignoré si l’avertissement de version n’affiche plus l’avertissement une fois la migration terminée. En cas d’avertissement, avant ou après la migration, dans l’un ou l’autre portail, Azure AD Connecter être mis à jour. Le message d’avertissement indique : « Nous avons détecté que vous utilisez un outil de synchronisation d’annuaires obsolète. Nous vous recommandons d’aller au Centre de téléchargement Microsoft pour obtenir la dernière version d’Azure AD Connecter. »
+- Un avertissement s’est produit sur la version d’Azure AD Connecter sur le portail Office 365 Germany, ainsi que sur le portail Office 365 une fois que le client est en migration. Cela peut être ignoré si l’avertissement de version n’affiche plus l’avertissement une fois la migration terminée. En cas d’avertissement, avant ou après la migration, dans l’un des portails, Azure AD Connecter être mis à jour. Le message d’avertissement indique : « Nous avons détecté que vous utilisez un outil de synchronisation d’annuaires obsolète. Nous vous recommandons d’aller au Centre de téléchargement Microsoft pour obtenir la dernière version d’Azure AD Connecter. »
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en place :
 
