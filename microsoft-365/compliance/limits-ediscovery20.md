@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, d’indexation et de recherche en vigueur pour la solution Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 335e40c6918fc33acc12082546b98f28c319c814
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ba4abe52c668799f379780221b46042c8f515393ecd6f395cb45a49bad9295e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807971"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -33,8 +33,8 @@ Le tableau suivant répertorie les limites pour les cas et les ensembles de rév
 
 | Description de la limite | Limite |
 |:-----|:-----|
-|Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).  <br/> |3 millions <br/> |
-|Taille totale du fichier par jeu de chargement. Cela inclut le chargement de non-Office 365 dans un jeu à réviser.  <br/> |300 Go <br/> |
+|Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).  <br/> |3 millions <br/> |
+|Taille totale de fichier par jeu de chargement. Cela inclut le chargement de non-Office 365 dans un jeu à réviser.  <br/> |300 Go <br/> |
 |Quantité totale de données chargées dans tous les ensembles de révision de l’organisation par jour.<br/> |2 To <br/> |
 |Nombre maximal d’ensembles de charge par cas.  <br/> |200 <br/> |
 |Nombre maximal d’ensembles de révision par cas.  <br/> |20 <br/> |
@@ -55,7 +55,7 @@ Le tableau suivant répertorie les limites pour les Advanced eDiscovery cas.
 
 ## <a name="indexing-limits"></a>Limites d’indexation
 
-Le tableau suivant répertorie les limites d’indexation dans Advanced eDiscovery.
+Le tableau suivant répertorie les limites d’indexation Advanced eDiscovery.
 
 | Description de la limite | Limite |
 |:-----|:-----|
@@ -74,19 +74,19 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |:-----|:-----|
 |Nombre maximal de boîtes aux lettres ou de sites qui peuvent être recherchés en une seule recherche. |Sans limite|
 |Nombre maximal de recherches qui peuvent s’exécuter en même temps. |Sans limite |
-|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. |10 | 
+|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. |10  | 
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions). |10 000 &nbsp; <sup>2</sup>|
-|Nombre maximal de caractères pour une requête de recherche pour SharePoint et OneDrive Entreprise sites (y compris les opérateurs et les conditions). |10 000<br>4 000 avec caractères génériques &nbsp; <sup>2</sup>|
+|Nombre maximal de caractères pour une requête de recherche pour SharePoint et OneDrive Entreprise sites (y compris les opérateurs et les conditions). |10 000<br>4 000 avec caractères génériques &nbsp; <sup>2</sup>|
 |Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **un \* *_ ou _* set \***.|3 |  
 |Variantes maximales renvoyées lorsque vous utilisez un caractère générique de préfixe pour rechercher une expression exacte ou lorsque vous utilisez un caractère générique de préfixe et **l’opérateur booléen NEAR.** |10 000 &nbsp; <sup>3</sup>|
 |Nombre maximal d’éléments par boîte aux lettres d’utilisateur qui sont affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés. |100|
 |Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.|1 000|
 |Nombre maximal de boîtes aux lettres qui peuvent être prévisualiser pour les résultats de la recherche.  Si plus de 1 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche, seules les 1 000 boîtes aux lettres ayant le plus grand nombre de résultats sont disponibles en prévisualisation.|1 000|
 |Nombre maximal d’éléments provenant SharePoint sites OneDrive Entreprise affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés. |200|
-|Nombre maximal de sites SharePoint et OneDrive Entreprise qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 200 sites contiennent des éléments qui correspondent à la requête de recherche, seuls les 200 premiers sites avec le plus de résultats sont disponibles en prévisualisation.|200|
+|Nombre maximal de sites SharePoint et OneDrive Entreprise qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 200 sites contiennent des éléments qui correspondent à la requête de recherche, seuls les 200 premiers sites ayant le plus de résultats sont disponibles en prévisualisation.|200|
 |Nombre maximal d’éléments par boîte aux lettres de dossiers publics affichés sur la page d’aperçu pour les recherches. |100|
 |Nombre maximal d’éléments trouvés dans tous les éléments de boîte aux lettres de dossiers publics affichés sur la page d’aperçu pour les recherches. |200|
-|Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 500 boîtes aux lettres de dossiers publics contiennent des éléments qui correspondent à la requête de recherche, seules les 500 premières boîtes aux lettres ayant le plus de résultats sont disponibles en prévisualisation.|500|
+|Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 500 boîtes aux lettres de dossiers publics contiennent des éléments qui correspondent à la requête de recherche, seules les 500 boîtes aux lettres ayant le plus grand nombre de résultats sont disponibles en prévisualisation.|500|
 |||
 
 ## <a name="search-times"></a>Temps de recherche
@@ -117,7 +117,7 @@ Les limites décrites dans cette section sont liées à l’exportation de docum
 | Description de la limite | Limite |
 |:-----|:-----|
 |Taille maximale d’une exportation unique.|5 millions de documents ou 500 Go, selon la taille la plus petite|
-|Nombre maximal d’exportations simultanées par groupe de révision. | 1 |
+|Nombre maximal d’exportations simultanées par ensemble de révision. | 1 |
 |||
 
 ## <a name="review-set-download-limits"></a>Examiner les limites de téléchargement définies
@@ -139,7 +139,7 @@ Les limites décrites dans cette section sont liées à l’exportation de docum
 > - Caractères de toutes les propriétés d’emplacement dans la recherche ; cela inclut ExchangeLocation,PublicFolderLocation,SharPointLocation,ExchangeLocationExclusion,PublicFolderLocationExclusion,SharePointLocationExclusion, OneDriveLocationExclusion.
 >   Par exemple, inclure tous les sites SharePoint et les comptes OneDrive dans la recherche comptera six caractères, car le mot « ALL » apparaîtra pour les champs SharePointLocation et OneDriveLocation.
 >
-> <sup>3 Pour</sup> les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela nous indique qu’un mot se trouve dans un document, mais pas là où il se trouve dans le document. Pour faire une requête d’expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position des mots dans l’expression dans le document. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expressions. Dans ce cas, nous étendons la requête en interne avec tous les mots possibles que le préfixe développe ; par exemple, **time _ peut se développer vers \* *_*« time OR timer OR times OR timex OR timeboxed OR ... »**. La limite de 10 000 correspond au nombre maximal de variantes que le mot peut développer, et non au nombre de documents correspondant à la requête. Il n’existe aucune limite supérieure pour les termes autres que des expressions.
+> <sup>3 Pour</sup> les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela nous indique qu’un mot se trouve dans un document, mais pas là où il se trouve dans le document. Pour faire une requête d’expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position des mots dans l’expression dans le document. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expressions. Dans ce cas, nous développeons la requête en interne avec tous les mots possibles que le préfixe développe ; par exemple, **time _ peut se développer vers \* *_*« time OR timer OR times OR timex OR timeboxed OR ... »**. La limite de 10 000 correspond au nombre maximal de variantes que le mot peut développer, et non au nombre de documents correspondant à la requête. Il n’existe aucune limite supérieure pour les termes autres que des expressions.
 >
 > <sup>4</sup> Cette limite est partagée avec l’exportation de contenu dans d’autres outils eDiscovery. Cela signifie que les exportations simultanées dans la recherche de contenu et la découverte électronique principale (et l’ajout de contenu à des jeux de révision dans Advanced eDiscovery) sont toutes appliquées par rapport à cette limite.
 >

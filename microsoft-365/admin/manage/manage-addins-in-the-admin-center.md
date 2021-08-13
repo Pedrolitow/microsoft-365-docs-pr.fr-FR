@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: ade5699425c8dc69428fc39898fb0934fb1cd3f1
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: a6eb234f9911b13616483456ef67866b99b4dee39fca90c2b16b272de2a85d62
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825374"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
@@ -39,7 +39,7 @@ Pour plus d’informations sur l’installation des modules complémentaires à 
   
 ## <a name="add-in-states"></a>États de complément
 
-Un add-in peut être à **l’état « On** » ou « **Off** ».
+Un add-in peut être à **l’état On** ou **Off.**
   
 | État | Comment l’état se produit | Impact |
 |:-----|:-----|:-----|
@@ -56,7 +56,7 @@ Vous pouvez également supprimer un module qui a été déployé.
 1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
 
     > [!NOTE]
-    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
 2. Sélectionnez le add-in déployé.
 
@@ -71,7 +71,7 @@ Après le déploiement, les administrateurs peuvent également gérer l’accès
 1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
 
     > [!NOTE]
-    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
 
 2. Sélectionnez le add-in déployé.
@@ -80,7 +80,7 @@ Après le déploiement, les administrateurs peuvent également gérer l’accès
 
 4. Enregistrez les modifications.
 
-## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de add-ins en Office store sur tous les clients (sauf Outlook)
+## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de Office sur tous les clients (sauf Outlook)
 
 > [!NOTE]
 > Outlook’installation du module est gérée par [un processus différent.](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)
@@ -92,7 +92,7 @@ En tant qu’organisation, vous pouvez empêcher le téléchargement de nouveaux
 1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> [Services &amp; Compléments](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
     > [!NOTE]
-    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
     
 3. Sélectionnez **Applications et services appartenant aux utilisateurs**.
@@ -136,7 +136,7 @@ Pour empêcher un utilisateur de se signer avec un compte Microsoft, vous pouvez
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les add-ins
 
-Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office.](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
+Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
   
 Si le complément prend en charge les commandes de complément, celles-ci apparaissent sur le ruban Office. Dans l'exemple suivant, la commande **Search Citation** (Rechercher une citation) apparaît pour le complément **Citations**. 
 
@@ -162,7 +162,7 @@ Si le add-in déployé ne prend pas en charge les commandes de ce dernier ou si 
   
 2. Sélectionnez **Géré par l’administrateur** dans le volet de navigation gauche. 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Déployer des add-ins dans le Centre d’administration](./manage-deployment-of-add-ins.md) (article)\
 En savoir plus sur la création et la [création de Office de développement](/office/dev/add-ins/overview/office-add-ins) (article)\

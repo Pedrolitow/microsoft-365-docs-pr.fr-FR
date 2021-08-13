@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: Découvrez ce à quoi vous pouvez vous attendre une fois que l’installation de Business Cloud Suite est terminée et que vos stratégies d’appareil par défaut sont en place et prêtes à être appliquées.
-ms.openlocfilehash: d3e47247197f2688388ed50057b16fde53e7e830
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 62e5654deb3807a7a436fb2c4587c2e2614feb3e9812f6ecb269eed1cab7bfbb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856552"
 ---
 # <a name="help-users-connect-to-microsoft-365-business-premium"></a>Aider les utilisateurs à se connecter Microsoft 365 Business Premium
 

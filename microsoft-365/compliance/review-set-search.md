@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer et exécuter une requête dans un jeu à réviser pour organiser le contenu pour une révision plus efficace dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 64dbeb8ad68f4188e5768a0a7e0e80ca6c22760b
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: 40a7c7ecaa222f2c2974352446cb2f71bc8c13b27663a28f4d792127f848f768
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850655"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Interroger et filtrer du contenu dans un jeu à réviser
 
@@ -32,7 +32,7 @@ Dans la plupart des cas, il est utile d’approfondir le contenu d’un jeu à r
 
 Dans un jeu à réviser, il existe cinq filtres par défaut qui sont pré-chargés dans le jeu à réviser :
 
-- Mots clés
+- Mots-clés
 - Date
 - Sender/Author
 - Objet/Titre

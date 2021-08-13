@@ -17,25 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour créer et publier des étiquettes de rétention afin de pouvoir les appliquer dans les applications afin de conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: 7c13158d9ce2857c01cad60c77b6f27bce6d3b6b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 27b41c9992c0d7aecb3195dd7319b78f282345311f3d699b0a2016d1a2298908
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107646"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808326"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Créer des étiquettes de rétention et les appliquer dans les applications
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Ce scénario est pris en charge pour toutes les configurations d’étiquette de rétention, y compris [les enregistrements réglementaires](records-management.md#records).
 
 Utilisez les informations suivantes pour vous aider à créer et publier des [étiquettes de rétention](retention.md), puis à les appliquer aux documents et messages électroniques.
 
-Les étiquettes de rétention vous permettent de conserver les éléments dont vous avez besoin et de supprimer ce dont vous n’avez pas besoin au niveau de l’élément (document ou courrier électronique). Elles s’utilisent également pour déclarer un élément en tant qu’enregistrement dans le cadre d’une [gestion des enregistrements](records-management.md) pour vos données Microsoft 365.
+Les étiquettes de rétention vous permettent de conserver les éléments dont vous avez besoin et de supprimer ce dont vous n’avez pas besoin au niveau de l’élément (document ou courrier électronique). Elles s’utilisent également pour déclarer un élément en tant qu’enregistrement dans le cadre d’une [gestion des enregistrements](records-management.md) pour vos données Microsoft 365.
 
-La mise à disposition des étiquettes de rétention aux membres de votre organisation afin qu’ils puissent classer le contenu est un processus en deux étapes : 
+La mise à disposition des étiquettes de rétention aux membres de votre organisation afin qu’ils puissent classer le contenu est un processus en deux étapes : 
 
 1. Créez les étiquettes de rétention.
 
@@ -55,19 +55,19 @@ Tout d’abord, créez vos étiquettes de rétention. Créez ensuite une straté
 
 L’emplacement dans lequel vous créez et configurez vos étiquettes de rétention dépend de votre utilisation ou non de la gestion des enregistrements.
 
-### <a name="step-1-create-retention-labels"></a>Étape 1 : créer des étiquettes de rétention
+### <a name="step-1-create-retention-labels"></a>Étape 1 : créer des étiquettes de rétention
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
     
-    - Si vous utilisez la gestion des enregistrements :
+    - Si vous utilisez la gestion des enregistrements :
         - **Solutions** > **Gestion des enregistrements** > **Plan de fichiers** onglet > **+ Créer une étiquette** > **Étiquette de rétention**
         
-    - Si vous n’utilisez pas la gestion des enregistrements :
+    - Si vous n’utilisez pas la gestion des enregistrements :
        - **Solutions** > **Gouvernance d’informations** > **Étiquettes** onglet > + **Créer une étiquette**
     
-    Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
+    Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
 
-2. Suivez les invites de l’Assistant. Si vous utilisez la gestion des enregistrements :
+2. Suivez les invites de l’Assistant. Si vous utilisez la gestion des enregistrements :
     
     - Pour plus d’informations sur les descripteurs de plan de fichier, voir [Utiliser le plan de gestion des fichiers pour gérer les étiquettes de rétention](file-plan-manager.md).
     
@@ -79,19 +79,19 @@ L’emplacement dans lequel vous créez et configurez vos étiquettes de rétent
 
 Pour modifier une étiquette existante, sélectionnez-la, puis sélectionnez **Modifier l’étiquette** pour démarrer l’assistant à l’édition de rétention qui vous permet de modifier les descriptions d’étiquettes et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
 
-### <a name="step-2-publish-retention-labels"></a>Étape 2 : Publier des étiquettes de rétention
+### <a name="step-2-publish-retention-labels"></a>Étape 2 : Publier des étiquettes de rétention
 
 Publiez des étiquettes de rétention pour qu’elles puissent être appliquées par les utilisateurs dans les applications, telles que SharePoint et Outlook.
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
     
-    - Si vous utilisez la gestion des enregistrements :
+    - Si vous utilisez la gestion des enregistrements :
         - **Solutions** > **Gestion des enregistrements** > > **Stratégies d’étiquette** onglet > **Publier des étiquettes**
     
-    - Si vous n’utilisez pas la gestion des enregistrements :
+    - Si vous n’utilisez pas la gestion des enregistrements :
         - **Solutions** > **Gouvernance d’informations** > **Stratégies d’étiquette** onglet > **Publier des étiquettes**
     
-    Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
+    Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
 
 2. Suivez les invites de l’Assistant.
     
@@ -106,16 +106,16 @@ Si vous publiez des étiquettes de rétention sur SharePoint ou OneDrive, celles
 
 Si vous publiez des étiquettes de rétention sur Exchange, l’affichage des étiquettes de rétention pour les utilisateurs finaux peut prendre jusqu’à sept jours, et la boîte aux lettres doit contenir au moins 10 Mo de données.
 
-Par exemple :
+Par exemple :
   
 ![Diagramme de la date d’effet des étiquettes manuelles](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-Si les étiquettes n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’étiquette en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si l’état de **Désactivé (erreur)** s’affiche, ainsi qu’un message dans les détails des emplacements indiquant que le déploiement de la stratégie (SharePoint) ou le redéploiement de la stratégie (OneDrive) prend plus de temps que prévu, exécutez une commande PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
+Si les étiquettes n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’étiquette en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si l’état de **Désactivé (erreur)** s’affiche, ainsi qu’un message dans les détails des emplacements indiquant que le déploiement de la stratégie (SharePoint) ou le redéploiement de la stratégie (OneDrive) prend plus de temps que prévu, exécutez une commande PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell)
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
     
     ``` PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -123,11 +123,11 @@ Si les étiquettes n’apparaissent pas après sept jours, consultez l’**État
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Vérifier l’état des étiquettes de rétention publiées dans Exchange
 
-Dans Exchange Online, les étiquettes de rétention deviennent disponibles pour les utilisateurs finaux à l’issue d’un processus qui s’exécute tous les sept jours. Powershell vous permet de voir quand ce processus a été exécuté pour la dernière fois et donc de connaître sa prochaine exécution.
+Dans Exchange Online, les étiquettes de rétention deviennent disponibles pour les utilisateurs finals par l’intermédiaire d’un processus qui s’exécute tous les sept jours. À l’aide de Visual de Windows PowerShell, vous pouvez découvrir la date de la dernière exécution du processus et déterminer la date de sa prochaine exécution.
   
 1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
-2. Exécutez les commandes suivantes :
+2. Exécutez les commandes suivantes :
     
    ```powershell
    $logProps = Export-MailboxDiagnosticLogs <user> -ExtendedProperties
@@ -179,7 +179,7 @@ To label an item in the Outlook desktop client, select the item. On the **Home**
   
 ![Assign Policy button](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
-You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. 
+You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to assign the same retention label to multiple items at once.
 
 After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email has a retention label applied that has an associated retention period, you can see at a glance when the email expires.
 
@@ -205,7 +205,7 @@ When labels are applied that aren't standard retention labels but mark items as 
 
 #### Applying retention labels in Outlook on the web
 
-To label an item in Outlook on the web, right-click the item \> **Assign policy** \> choose the retention label. 
+To label an item in Outlook on the web, right-click the item \> **Assign policy** \> choose the retention label. Unlike Outlook desktop, you can't use this method if you multi-select items.
   
 ![Assign policy menu in Outlook on the web](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
   

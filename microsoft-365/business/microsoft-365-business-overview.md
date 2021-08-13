@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: En savoir plus sur Microsoft 365 Business Premium, un service d’abonnement qui inclut des applications Office et une protection avancée contre les cybermenaces.
-ms.openlocfilehash: 96b915924013c29c8f30dd22c85ed389cb66a772
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 3c90cec65147e448ea01884f03d80c7f3c116ba938ba0a8106211806ed4baa53
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394188"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856526"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Vue d’ensemble de la sécurité de Microsoft 365 Business Premium
 
@@ -112,6 +112,6 @@ Pour découvrir la liste complète des fonctionnalités de sécurité, consultez
 
 - Si vous n’avez pas de partenaire et que vous voulez bénéficier de Microsoft 365 Business Premium, vous pouvez [l’acheter ici](https://www.microsoft.com/microsoft-365/business) et suivre les instructions d’[inscription](sign-up.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365 Business Premium vidéos de formation](../business-video/index.yml) (page de liens)

@@ -1,6 +1,6 @@
 ---
 title: 'Stratégies d’accès aux identités et appareils courantes : Microsoft 365 pour les | Documents Microsoft'
-description: Décrit les configurations et stratégies courantes d’accès aux identités et appareils recommandées.
+description: Décrit les stratégies et configurations courantes d’accès aux identités et appareils recommandées.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: e82f18b129963b254bf2120d444ce81e4e53e89d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 564747e31f7ab412d14790e42e6c8e901e382de4e08834b9a5b2f7c775454c74
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544504"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816966"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 
@@ -46,7 +46,7 @@ Le diagramme suivant illustre l’ensemble recommandé de stratégies. Il indiqu
 
 Voici un résumé PDF d’une page avec des liens vers les stratégies individuelles :
 
-[![Image miniature de la protection des identités et des appareils pour Microsoft 365 de données](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Affichage au format PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Téléchargement au format PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Image miniature de la protection des identités et des appareils pour le Microsoft 365 de données](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Affichage au format PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Téléchargement au format PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 Le reste de cet article explique comment configurer ces stratégies.
 
@@ -55,9 +55,9 @@ Le reste de cet article explique comment configurer ces stratégies.
 
 Pour vous donner le temps d’effectuer ces tâches, nous vous recommandons d’implémenter les stratégies de référence dans l’ordre répertorié dans ce tableau. Toutefois, les stratégies mfa pour les niveaux de protection sensibles et hautement réglementés peuvent être implémentées à tout moment.
 
-|Niveau de protection|Politiques|Plus d’informations|Licences|
+|Niveau de protection|Politiques|Plus d’informations|Licence|
 |---|---|---|---|
-|**Baseline**|[Exiger une mfmf lorsque le risque de se connecte *est moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 ou Microsoft 365 E3 avec le module de sécurité E5|
+|**Baseline**|[Exiger l’mf lorsque le risque de se connecte *est moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 ou Microsoft 365 E3 avec le module de sécurité E5|
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-multi-factor)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les stratégies d’accès conditionnel, il est donc important de les bloquer.|Microsoft 365 E3 ou E5|
 ||[Les utilisateurs à risque élevé doivent modifier leur mot de passe](#high-risk-users-must-change-password)|Oblige les utilisateurs à modifier leur mot de passe lors de la signature si une activité à risque élevé est détectée pour leur compte.|Microsoft 365 E5 ou Microsoft 365 E3 avec le module de sécurité E5|
 ||[Appliquer la protection des données APP (Application Protection Policies)](#apply-app-data-protection-policies)|Une stratégie Intune App Protection par plateforme (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 ou E5|
@@ -83,7 +83,7 @@ Voici les résultats :
 
 - Tous les utilisateurs sont tenus d’utiliser l’mfmf lorsque le risque de se connecte est moyen ou élevé.
 
-- Les membres du groupe Personnel exécutif sont tenus d’utiliser l’mfmf lorsque le risque de se connecte est faible, moyen ou élevé.
+- Les membres du groupe Personnel de direction sont tenus d’utiliser l’mfmf lorsque le risque de se connecte est faible, moyen ou élevé.
 
   Dans ce cas, les membres du groupe Personnel exécutif correspondent à la fois aux stratégies d’accès conditionnel de référence et sensibles. Les contrôles d’accès pour les deux stratégies sont combinés, ce qui, dans ce cas, équivaut à la stratégie d’accès conditionnel sensible.
 
@@ -99,9 +99,9 @@ Tous les groupes Azure AD créés dans le cadre de ces recommandations doivent �
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Exiger l’mf en fonction du risque de la sign-in
 
-Vous devez demander à vos utilisateurs de s’inscrire à l’ation MFA avant d’en exiger l’utilisation. Si vous avez des licences Microsoft 365 E5, Microsoft 365 E3 avec le module de sécurité E5, des Office 365 avec EMS E5 ou des licences Azure AD Premium P2 individuelles, vous pouvez utiliser la stratégie d’inscription MFA avec Azure AD Identity Protection pour exiger que les utilisateurs s’inscrivent à l’mf. Le [travail prérequis](identity-access-prerequisites.md) inclut l’inscription de tous les utilisateurs avec l’ation MFA.
+Vous devez demander à vos utilisateurs de s’inscrire à l’ation MFA avant d’en exiger l’utilisation. Si vous avez des licences Microsoft 365 E5, Microsoft 365 E3 avec le module de sécurité E5, des Office 365 avec EMS E5 ou des licences Azure AD Premium P2 individuelles, vous pouvez utiliser la stratégie d’inscription MFA avec Azure AD Identity Protection pour exiger que les utilisateurs s’inscrivent à l’mf. Le [travail prérequis](identity-access-prerequisites.md) inclut l’inscription de tous les utilisateurs avec mfa.
 
-Une fois que vos utilisateurs sont inscrits, vous pouvez exiger l' approbation de l’mf pour vous inscrire avec une nouvelle stratégie d’accès conditionnel.
+Une fois que vos utilisateurs sont inscrits, vous pouvez exiger l' approbation de l' approbation de l’mf pour vous inscrire avec une nouvelle stratégie d’accès conditionnel.
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification.
 2. Dans la liste des services Azure, choisissez **Azure Active Directory**.
@@ -112,7 +112,7 @@ Les tableaux suivants décrivent les paramètres de stratégie d’accès condit
 
 Dans la section **Affectations** :
 
-|Setting|Propriétés|Valeurs|Remarques|
+|Paramètre|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionnez utilisateurs et groupes > utilisateurs et groupes**: sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateurs pilotes.|
 ||Exclure|**Utilisateurs et groupes**: sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée selon les besoins, de manière temporaire.|
@@ -125,7 +125,7 @@ Dans la section **Affectations** :
 
 Appliquez les paramètres de niveau de risque en fonction du niveau de protection que vous ciblez.
 
-|Niveau de protection|Valeurs de niveau de risque requises|Action|
+|Niveau de protection|Valeurs de niveau de risque requises|Opération|
 |---|---|---|
 |Baseline|Élevé, moyen|Vérifiez les deux.|
 |Sensible|Élevé, moyen, faible|Vérifiez les trois.|
@@ -134,10 +134,10 @@ Appliquez les paramètres de niveau de risque en fonction du niveau de protectio
 
 Dans la section **Contrôles d’accès** :
 
-|Setting|Propriétés|Valeurs|Action|
+|Paramètre|Propriétés|Valeurs|Opération|
 |---|---|---|---|
 |Accorder|**Grant access**||Sélectionner|
-|||**Exiger l’authentification multifacteur**|Chèque|
+|||**Exiger une authentification multifacteur**|Chèque|
 ||**Demander tous les contrôles sélectionnés**||Sélectionner|
 |
 
@@ -155,7 +155,7 @@ Consultez [cet article pour](../../enterprise/microsoft-365-client-support-multi
 
 Dans la section **Affectations** :
 
-|Setting|Propriétés|Valeurs|Remarques|
+|Paramètre|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionnez utilisateurs et groupes > utilisateurs et groupes**: sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateurs pilotes.|
 ||Exclure|**Utilisateurs et groupes**: sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée selon les besoins, de manière temporaire.|
@@ -165,7 +165,7 @@ Dans la section **Affectations** :
 
 Dans la section **Contrôles d’accès** :
 
-|Setting|Propriétés|Valeurs|Action|
+|Paramètre|Propriétés|Valeurs|Opération|
 |---|---|---|---|
 |Accorder|**Bloquer l’accès**||Sélectionner|
 ||**Demander tous les contrôles sélectionnés**||Sélectionner|
@@ -187,7 +187,7 @@ Connectez-vous au [portail Microsoft Azure (https://portal.azure.com)](https://p
 
 Dans la section **Affectations** :
 
-|Type|Propriétés|Valeurs|Action|
+|Type|Propriétés|Valeurs|Opération|
 |---|---|---|---|
 |Utilisateurs|Inclure|**Tous les utilisateurs**|Sélectionner|
 |Risque de l’utilisateur|**High**||Sélectionner|
@@ -195,7 +195,7 @@ Dans la section **Affectations** :
 
 Dans la deuxième section **Affectations** :
 
-|Type|Propriétés|Valeurs|Action|
+|Type|Propriétés|Valeurs|Opération|
 |---|---|---|---|
 |Access|**Autoriser l’accès**||Sélectionner|
 |||**Exiger le changement du mot de passe**|Chèque|
@@ -219,7 +219,7 @@ L’infrastructure de protection des données APP est organisée en trois niveau
 - **Enterprise protection améliorée des** données (niveau 2) introduit des mécanismes de prévention des fuites de données d’APPLICATION et des exigences minimales du système d’exploitation. Il s’agit de la configuration applicable à la plupart des utilisateurs mobiles accédant aux données scolaires ou professionnels.
 - **Enterprise protection élevée des** données (niveau 3) introduit des mécanismes de protection des données avancés, une configuration améliorée du code confidentiel et la protection contre les menaces app Mobile. Cette configuration est souhaitable pour les utilisateurs qui accèdent à des données à risque élevé.
 
-Pour voir les recommandations spécifiques pour chaque niveau de configuration et les applications minimales qui doivent être protégées, consultez l’infrastructure de protection des données à l’aide des stratégies [de protection des applications.](/mem/intune/apps/app-protection-framework)
+Pour voir les recommandations spécifiques pour chaque niveau de configuration et les applications minimales qui doivent être protégées, consultez l’infrastructure de protection des données à l’aide de stratégies [de protection des applications.](/mem/intune/apps/app-protection-framework)
 
 En utilisant les principes décrits dans les configurations d’identité et d’accès aux appareils, les [niveaux](microsoft-365-policies-configurations.md)de protection de base et sensibles sont étroitement mapés avec les paramètres de protection des données améliorées d’entreprise de niveau 2. Le niveau de protection hautement réglementé est étroitement mapré avec les paramètres de protection des données élevées d’entreprise de niveau 3.
 
@@ -299,7 +299,7 @@ L’infrastructure de configuration de la sécurité iOS/iPadOS est organisée e
 
 Pour les appareils personnels :
 
-- Sécurité de base (niveau 1) : Microsoft recommande cette configuration comme configuration de sécurité minimale pour les appareils personnels où les utilisateurs accèdent aux données scolaires ou professionnels. Pour ce faire, appliquez des stratégies de mot de passe, des caractéristiques de verrouillage de l’appareil et désactivez certaines fonctions d’appareil (par exemple, des certificats non sécurisés).
+- Sécurité de base (niveau 1) : Microsoft recommande cette configuration en tant que configuration de sécurité minimale pour les appareils personnels où les utilisateurs accèdent aux données scolaires ou professionnels. Pour ce faire, appliquez des stratégies de mot de passe, des caractéristiques de verrouillage de l’appareil et désactivez certaines fonctions d’appareil (par exemple, des certificats non sécurisés).
 - Sécurité renforcée (niveau 2) : Microsoft recommande cette configuration pour les appareils où les utilisateurs accèdent à des informations sensibles ou confidentielles. Cette configuration permet d’adopter des contrôles de partage de données. Cette configuration s’applique à la plupart des utilisateurs mobiles accédant à des données scolaires ou de travail sur un appareil.
 - Haute sécurité (niveau 3) : Microsoft recommande cette configuration pour les appareils utilisés par des utilisateurs ou des groupes spécifiques à risque élevé (les utilisateurs qui gèrent des données hautement sensibles lorsque la divulgation non autorisée entraîne une perte matérielle considérable pour l’organisation). Cette configuration permet de renforcer les stratégies de mot de passe, de désactiver certaines fonctions d’appareil et d’appliquer des restrictions de transfert de données supplémentaires.
 
@@ -326,7 +326,7 @@ Android Enterprise plusieurs scénarios d’inscription, dont deux sont couverts
 - [Profil Enterprise](/intune/android-work-profile-enroll) travail Android : ce modèle d’inscription est généralement utilisé pour les appareils personnels, où le service juridique souhaite fournir une frontière de séparation claire entre les données personnelles et les données personnelles. Les stratégies contrôlées par le personnel de l’information garantissent que les données de travail ne peuvent pas être transférées dans le profil personnel.
 - [Android Enterprise](/intune/android-fully-managed-enroll) entièrement gérés : ces appareils sont gérés par l’entreprise, associés à un seul utilisateur et utilisés exclusivement à des usages personnels et non à des usages personnels.
 
-L’infrastructure Enterprise de configuration de la sécurité Android est organisée en plusieurs scénarios de configuration distincts, fournissant des conseils pour les scénarios de profil de travail et de gestion complète.
+L’infrastructure Enterprise de configuration de la sécurité Android est organisée en plusieurs scénarios de configuration distincts, fournissant des conseils pour les scénarios de profil de travail et les scénarios entièrement gérés.
 
 Pour les appareils Enterprise profils de travail Android :
 
@@ -359,7 +359,7 @@ Les paramètres suivants sont recommandés pour les PC exécutant Windows 10 et 
 
 Pour plus **d'> Windows d’évaluation du service d’attestation** d’état d'> Windows, consultez ce tableau.
 
-|Propriétés|Valeur|Action|
+|Propriétés|Valeur|Opération|
 |---|---|---|
 |Exiger BitLocker|Require (Rendre obligatoire)|Sélectionner|
 |Exiger que le démarrage sécurisé soit activé sur l’appareil|Require (Rendre obligatoire)|Sélectionner|
@@ -372,9 +372,9 @@ Pour la **conformité configuration Manager,** sélectionnez **Exiger**.
 
 Pour **la sécurité du** système, consultez ce tableau.
 
-|Type|Propriétés|Valeur|Action|
+|Type|Propriétés|Valeur|Opération|
 |---|---|---|---|
-|Password|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)|Sélectionner|
+|Mot de passe|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)|Sélectionner|
 ||Mots de passe simples|Bloquer|Sélectionner|
 ||Type de mot de passe|Par défaut de l’appareil|Sélectionner|
 ||Longueur minimale du mot de passe|6 |Type|
@@ -385,7 +385,7 @@ Pour **la sécurité du** système, consultez ce tableau.
 |Chiffrement|Chiffrement du stockage des données sur l’appareil|Require (Rendre obligatoire)|Sélectionner|
 |Sécurité des appareils|Pare-feu|Require (Rendre obligatoire)|Sélectionner|
 ||Antivirus|Require (Rendre obligatoire)|Sélectionner|
-||Antispyware|Require (Rendre obligatoire)|Sélectionner <p> Ce paramètre nécessite une solution anti-espion inscrite auprès du Sécurité Windows.|
+||Antispyware|Require (Rendre obligatoire)|Sélectionner <p> Ce paramètre nécessite une solution anti-logiciel espion inscrite auprès Sécurité Windows Center.|
 |Defender|Logiciel anti-programme malveillant Microsoft Defender|Require (Rendre obligatoire)|Sélectionner|
 ||Version minimale du logiciel anti-programme malveillant Microsoft Defender||Type <p> Uniquement pris en charge pour Windows 10 bureau. Microsoft recommande de ne pas avoir plus de cinq versions en retard par rapport à la version la plus récente.|
 ||Signature du logiciel anti-programme malveillant Microsoft Defender à jour|Require (Rendre obligatoire)|Sélectionner|
@@ -394,7 +394,7 @@ Pour **la sécurité du** système, consultez ce tableau.
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
-|Type|Propriétés|Valeur|Action|
+|Type|Propriétés|Valeur|Opération|
 |---|---|---|---|
 |Règles Microsoft Defender pour les points de terminaison dans le Centre d Microsoft Endpoint Manager’administration Microsoft Defender|[Exiger que l’appareil soit au niveau ou sous le score de risque de l’ordinateur](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Moyen|Sélectionner|
 |

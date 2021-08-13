@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Attribuez les autorisations requises pour effectuer des tâches liées à eDiscovery à l’aide du Centre de conformité Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06e75a18c338d2634ae3be93514ee518d9e91860
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 080514ba2d802ca0aa3438e00966cc84df59f32149ff9392a180344949d9ec26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808463"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Attribuer des autorisations eDiscovery dans le Centre de conformité Microsoft 365
 
@@ -35,7 +35,7 @@ Le groupe de rôles principal lié à eDiscovery dans Centre de conformité Micr
   
 - **Administrateurs eDiscovery** : ils sont membre du groupe de rôles Gestionnaire eDiscovery et peuvent effectuer la même recherche de contenu et les mêmes tâches liées à la gestion des cas que les gestionnaires eDiscovery. De plus, un administrateur de découverte électronique peut :
   
-  - Accéder à tous les cas répertoriés dans les pages **core eDiscovery** **et Advanced eDiscovery** dans la Centre de conformité Microsoft 365.
+  - Accédez à tous les cas répertoriés dans les pages **core eDiscovery** **et Advanced eDiscovery** dans la Centre de conformité Microsoft 365.
 
   - Accéder à des données dans Advanced eDiscovery pour tout cas au sein de l’organisation.
   
@@ -64,7 +64,7 @@ Le groupe de rôles principal lié à eDiscovery dans Centre de conformité Micr
   
 5. Dans la page volant **eDiscovery Manager,** faites l’une des opérations suivantes en fonction des autorisations eDiscovery que vous souhaitez attribuer.
   
-    **Pour faire d’un utilisateur un gestionnaire eDiscovery :** En plus **du Gestionnaire eDiscovery,** sélectionnez **Modifier.** Dans la page **Choisir l’Assistant Gestionnaire eDiscovery,** cliquez sur ![ Ajouter une ](../media/ITPro-EAC-AddIcon.gif) **icône.** Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis sélectionnez **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **Terminé**. Ensuite, dans la page Modifier l’Assistant Choisir le gestionnaire **eDiscovery,** sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance au gestionnaire eDiscovery.
+    **Pour faire d’un utilisateur un gestionnaire eDiscovery :** En plus **du Gestionnaire eDiscovery,** sélectionnez **Modifier.** Dans la page **Choisir l’Assistant Gestionnaire eDiscovery,** cliquez sur ![ Ajouter une ](../media/ITPro-EAC-AddIcon.gif) **icône.** Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis sélectionnez **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **Terminé**. Ensuite, dans la page Modifier l’Assistant Choisir  le gestionnaire **eDiscovery,** sélectionnez Enregistrer pour enregistrer les modifications apportées à l’appartenance au gestionnaire eDiscovery.
   
     **Pour faire d’un utilisateur un administrateur eDiscovery :** En plus **de l’administrateur eDiscovery,** sélectionnez **Modifier.** Dans la page **Choisir un administrateur de découverte électronique,** cliquez sur Ajouter une ![ ](../media/ITPro-EAC-AddIcon.gif) **icône.** Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant qu’administrateur **eDiscovery,** puis  **ajoutez**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **Terminé**. Ensuite, dans la page Modifier l’Assistant Choisir  l’administrateur **eDiscovery,** sélectionnez Enregistrer pour enregistrer les modifications apportées à l’appartenance à l’administrateur eDiscovery.
   
@@ -75,9 +75,9 @@ Dans la page Autorisations de la Centre de conformité Microsoft 365, vous pouve
 
 ## <a name="rbac-roles-related-to-ediscovery"></a>Rôles RBAC liés à eDiscovery
 
-Le tableau suivant répertorie les rôles RBAC liés à eDiscovery dans le Centre de conformité Microsoft 365 et indique les groupes de rôles intégrés qui sont attribués par défaut à chaque rôle.
+Le tableau suivant répertorie les rôles RBAC liés à eDiscovery dans le Centre de conformité Microsoft 365 et indique les groupes de rôles intégrés affectés par défaut à chaque rôle.
   
-| Role | Administrateur de conformité | Gestionnaire eDiscovery & administrateur | Gestion de l’organisation | Relecteur |
+| Rôle | Administrateur de conformité | Gestionnaire eDiscovery & administrateur | Gestion de l’organisation | Relecteur |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Gestion des cas <br/> |![Coche](../media/checkmark.png) <br/> |![Coche](../media/checkmark.png) <br/> |![Coche](../media/checkmark.png) <br/> | <br/> |
 |Communication <br/> | <br/> |![Coche](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -121,7 +121,7 @@ La période de grâce de deux semaines pour l’aperçu et l’exportation des r
 
 ### <a name="custodian"></a>Consignataire
 
-Ce rôle permet aux utilisateurs d’identifier et de gérer les dépositaires pour les cas Advanced eDiscovery et d’utiliser les informations provenant de Azure Active Directory et d’autres sources pour rechercher des sources de données associées aux dépositaires. L’utilisateur peut associer d’autres sources de données telles que des boîtes aux lettres, SharePoint sites et Teams des dépositaires dans un cas. L’utilisateur peut également placer en conservation légale les sources de données associées aux dépositaires pour conserver le contenu dans le contexte d’un cas.
+Ce rôle permet aux utilisateurs d’identifier et de gérer les dépositaires des cas Advanced eDiscovery et d’utiliser les informations de Azure Active Directory et d’autres sources pour rechercher des sources de données associées aux dépositaires. L’utilisateur peut associer d’autres sources de données telles que des boîtes aux lettres, SharePoint sites et Teams des dépositaires dans un cas. L’utilisateur peut également placer en conservation légale les sources de données associées aux dépositaires pour conserver le contenu dans le contexte d’un cas.
 
 Pour plus d’informations, [voir Travailler avec les dépositaires dans Advanced eDiscovery](managing-custodians.md).
 
@@ -171,7 +171,7 @@ Ce rôle permet aux utilisateurs d’effectuer une suppression en bloc de donné
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange groupes de distribution et Microsoft 365 de distribution ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à messagerie, que vous pouvez créer dans Exchange Online PowerShell en exécutant `New-DistributionGroup -Type Security` . Vous pouvez également créer un groupe de sécurité à messagerie (et ajouter des membres) dans le Centre d’administration Exchange ou dans le Centre d’administration Microsoft 365. L’ajout d’une nouvelle sécurité à messagerie au groupe de rôles gestionnaires eDiscovery peut prendre jusqu’à 60 minutes après sa création. 
+    Exchange groupes de distribution et Microsoft 365 groupes de distribution ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à messagerie, que vous pouvez créer dans Exchange Online PowerShell en exécutant `New-DistributionGroup -Type Security` . Vous pouvez également créer un groupe de sécurité à messagerie (et ajouter des membres) dans le Centre d’administration Exchange ou dans le Centre d’administration Microsoft 365. L’ajout d’une nouvelle sécurité à messagerie au groupe de rôles gestionnaires eDiscovery peut prendre jusqu’à 60 minutes après sa création. 
 
     Comme indiqué précédemment, vous ne pouvez pas faire d’un groupe de sécurité à messagerie un administrateur eDiscovery à l’aide de la cmdlet **Add-eDiscoveryCaseAdmin** dans le Centre de sécurité & conformité PowerShell. Vous pouvez uniquement ajouter des utilisateurs individuels en tant qu’administrateurs eDiscovery.
 

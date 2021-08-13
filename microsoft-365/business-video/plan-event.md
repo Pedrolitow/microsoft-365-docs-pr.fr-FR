@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment planifier un événement avec le planificateur Microsoft.
-ms.openlocfilehash: a1fe282b7edc9d52db643b47a5dc15a214588e10
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 22a0970e586e3240da20e8fa21ce20bbc15b69c6bfe3a0378c6ba6d636c33658
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578722"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856582"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Utiliser le Planificateur Microsoft pour planifier un événement
 
@@ -64,4 +64,4 @@ Utilisez  **l’affichage**  **Graphiques**  et Tableau pour surveiller l’avan
 - Sélectionnez  **Graphiques,** **puis Groupez par** et enfin **date d’échéance**  pour voir quelle tâche arrive à échéance.
 - Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression**  pour trier les tâches par progression.
 
-**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  pour vous faire savoir quand vous êtes prêt à lancer votre produit.
+**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  afin de savoir quand vous êtes prêt à lancer votre produit.

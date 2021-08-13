@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment importer des données non Microsoft 365 dans un groupe de révision pour analyse dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9f705080ad5a769032581a1517b2daee8e822b2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 169b7438ced3d34f31cd793cd615ae189af52322ba67497dcc3eee950e9724ec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903500"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807878"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un groupe de révision
 
@@ -31,7 +31,7 @@ Tous les documents que vous devez analyser dans Advanced eDiscovery sont pas sit
 
 L’utilisation de la fonctionnalité de chargement non Microsoft 365 décrite dans cet article nécessite que vous disposez des éléments suivants :
 
-- Tous les dépositaires à qui vous souhaitez associer du contenu non Microsoft 365 doivent se voir attribuer la licence appropriée. Pour plus d’informations, [consultez La](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)mise en Advanced eDiscovery .
+- Tous les dépositaires à qui vous souhaitez associer du contenu non Microsoft 365 doivent se voir attribuer la licence appropriée. Pour plus d’informations, [voir La mise en Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
 - Un cas de Advanced eDiscovery existant.
 
@@ -53,7 +53,7 @@ L’utilisation de la fonctionnalité de chargement non Microsoft 365 décrite d
 
 - Compte affecté au groupe de rôles Gestionnaire eDiscovery (et ajouté en tant qu’administrateur eDiscovery).
 
-- L’outil AzCopy v8.1 installé sur un ordinateur qui a accès à la structure de dossiers de contenu Microsoft 365 non complet. Pour installer AzCopy, voir Transférer des données avec [AzCopy v8.1 sur Windows](/previous-versions/azure/storage/storage-use-azcopy). Assurez-vous d’installer AzCopy à l’emplacement par défaut, à savoir **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. Vous devez utiliser AzCopy v8.1. D’autres versions d’AzCopy peuvent ne pas fonctionner lors du chargement de données non Microsoft 365 dans Advanced eDiscovery.
+- L’outil AzCopy v8.1 installé sur un ordinateur qui a accès à la structure de dossiers de contenu non Microsoft 365 de contenu. Pour installer AzCopy, voir Transférer des données avec [AzCopy v8.1 sur Windows](/previous-versions/azure/storage/storage-use-azcopy). Assurez-vous d’installer AzCopy à l’emplacement par défaut, à savoir **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. Vous devez utiliser AzCopy v8.1. D’autres versions d’AzCopy peuvent ne pas fonctionner lors du chargement de données non Microsoft 365 dans Advanced eDiscovery.
 
 
 ## <a name="upload-non-microsoft-365-content-into-advanced-ediscovery"></a>Télécharger contenu non Microsoft 365 contenu dans Advanced eDiscovery

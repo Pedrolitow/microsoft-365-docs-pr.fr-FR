@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur Mac
+title: Résoudre les problèmes d’installation de Microsoft Defender pour Endpoint sur Mac
 description: Résolution des problèmes d’installation dans Microsoft Defender pour point de terminaison sur Mac.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, install
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 776cd18146fa4f726ef5d25433c564510b8a0e67
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a0de3e0d910e2e410df0f057a389451db98ff017569faf854152088729b5f165
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651966"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833548"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur macOS
 
@@ -61,7 +61,7 @@ L’installation a échoué car une mise à niveau vers une version antérieure 
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>Journal d’installation MDATP manquant ou non mis à jour
 
 Dans de rares cas, l’installation ne laisse aucune trace dans le fichier /Library/Logs/Microsoft/mdatp/install.log de MDATP.
-Vous pouvez vérifier qu’une installation s’est produite et analyser les erreurs possibles en interrogeant les journaux macOS (cela est utile dans le déploiement mdm, lorsqu’il n’y a pas d’interface utilisateur client). Nous vous recommandons d’utiliser une fenêtre de temps étroite pour exécuter une requête et de filtrer par nom de processus de journalisation, car il y aura une quantité considérable d’informations.
+Vous pouvez vérifier qu’une installation s’est produite et analyser les erreurs possibles en interrogeant les journaux macOS (cela est utile dans le déploiement mdm, en l’absence d’interface utilisateur client). Nous vous recommandons d’utiliser une fenêtre de temps étroite pour exécuter une requête et de filtrer par nom de processus de journalisation, car il y aura une quantité considérable d’informations.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

@@ -14,18 +14,18 @@ ms.reviewer: krowley
 ms.author: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 16a02985107c5f578d6d6c21bf2efc6e80297951
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3c31f0945bfca39545d6bb841d02e4c559ad6be0d3e75a530c32ce2cac22b366
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919340"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850566"
 ---
 # <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>Désactivation de TLS 1.0 et 1.1 dans Microsoft 365 Cloud de la communauté du secteur public High et DoD
 
 ## <a name="summary"></a>Résumé
 
-Afin de se conformer aux dernières normes de conformité pour le Programme de gestion des risques et d’autorisations (FedRAMP), nous désactivons les versions 1.1 et 1.0 de Transport Layer Security (TLS) dans Microsoft 365 pour les environnements Cloud de la communauté du secteur public High et DoD. Cette modification a été annoncée précédemment par le biais du Support Microsoft lors de la préparation de l’utilisation obligatoire de [TLS 1.2 dans Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+Pour se conformer aux dernières normes de conformité du programme fedramp (Federal Risk and Authorization Management Program), nous désactivons les versions 1.1 et 1.0 de Transport Layer Security (TLS) dans Microsoft 365 pour les environnements Cloud de la communauté du secteur public High et DoD. Cette modification a été annoncée précédemment par le biais du Support Microsoft lors de la préparation de l’utilisation obligatoire de [TLS 1.2 dans Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
 
 La sécurité de vos données est importante et nous nous engageons à assurer la transparence des modifications qui pourraient affecter votre utilisation du service.
 
@@ -33,7 +33,7 @@ Bien que [l’implémentation de Microsoft TLS 1.0](https://support.microsoft.co
 
 [Résolution du problème TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 À compter du 15 janvier 2020, Microsoft 365 dans les environnements Cloud de la communauté du secteur public High et DoD désactiveront TLS 1.1 et 1.0.
 

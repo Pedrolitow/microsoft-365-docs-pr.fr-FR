@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Les publications du centre de messages sont en anglais uniquement, mais peuvent être affichées automatiquement dans la langue que vous spécifiez pour Microsoft 365.
-ms.openlocfilehash: feec4a0a48960303ac0c2231b43e125caa901283
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: ab0819b22e6f046af401ced778a8f9c06f43e4569f42f0ca7caef62130a154a3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825330"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traduction pour les publications du Centre de messagerie
 
@@ -48,7 +48,7 @@ Lorsque votre langue par défaut n'est pas l'anglais, les options de traduction 
   
 Pour configurer la traduction automatique des publications du Centre de messages et leur affichage dans la langue de votre choix, accédez à **État d'intégrité** \> **Centre de messages**. Un commutateur apparaîtra en haut de l'affichage de liste des messages pour activer ou désactiver la traduction automatique. Lorsque ce paramètre est désactivé, les publications sont affichées en anglais. Lorsque ce paramètre est activé, les messages s'affichent dans la langue de votre choix. Le paramètre choisi sera conservé pour chaque visite dans le Centre de messages. 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble Centre d’administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)\
 [Quel abonnement ai-je ?](../admin-overview/what-subscription-do-i-have.md) (article)\

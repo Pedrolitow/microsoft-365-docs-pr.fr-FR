@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Découvrez comment déployer des modules pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
-ms.openlocfilehash: 9d9c8319161fdc97a0cf2f93bef692097ce519d3
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+description: Découvrez comment déployer des add-ins pour des utilisateurs et des groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
+ms.openlocfilehash: cc2051bf28dca082c3468fd2c292eff23c4e857e4b896ccfd03f78e5bb53552e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567427"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825294"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Déployer des compléments dans le centre d’administration
 
@@ -55,18 +55,18 @@ Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des éta
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Déploiement d’un complément Office à l’aide du centre d’administration
 
-Avant de commencer, voir Déterminer si le déploiement centralisé des modules est efficace [pour votre organisation.](centralized-deployment-of-add-ins.md)
+Avant de commencer, voir Déterminer si le déploiement centralisé de vos modules de déploiement [fonctionne pour votre organisation.](centralized-deployment-of-add-ins.md)
   
 1. Dans le Centre d’administration, Paramètres la page  \> **Des modules.** Si vous ne voyez pas la page de l’application, **rendez-vous** sur la page **Paramètres** applications \>  \> **intégrées.**
 
 2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
 
     > [!NOTE]
-    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles uniquement pour les administrateurs globaux, tandis que pour d’autres, l’ancienne expérience existe toujours. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
 3. Sélectionnez une option et suivez les instructions.
   
-4. Si vous avez sélectionné l’option d’ajout d’un Office Store, faites votre choix. </br>
+4. Si vous avez sélectionné l’option d’ajout d’un Office Store, faites votre sélection. </br>
 
     Vous pouvez afficher les add-ins disponibles par catégories : Suggéré pour **vous,** **Évaluation** ou **Nom**. Seuls les add-ins gratuits sont disponibles dans Office Store. Les compléments payants ne sont pas pris en charge pour le moment. Une fois que vous avez sélectionné un module, acceptez les conditions générales pour continuer. <br/> 
 
@@ -76,11 +76,11 @@ Avant de commencer, voir Déterminer si le déploiement centralisé des modules 
 5. Sur la page suivante, sélectionnez **Tout le monde**, **Utilisateurs/groupes spécifiques** ou **Moi uniquement** pour spécifier les personnes vers lesquelles le complément est déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. <br/>
 
     > [!NOTE]
-    > Pour en savoir plus sur les autres états qui s’appliquent à un add-in, consultez [États de l’application.](./manage-addins-in-the-admin-center.md)
+    > Pour en savoir plus sur les autres états qui s’appliquent à un add-in, voir [États de l’application.](./manage-addins-in-the-admin-center.md)
   
 6. Sélectionnez **Déployer**.
   
-7. Une coche verte s’affiche lorsque le add-in est déployé. Suivez les instructions de la page pour tester le add-in.
+7. Une coche verte s’affiche lorsque le module est déployé. Suivez les instructions de la page pour tester le add-in.
 
     > [!NOTE]
     > Les utilisateurs devront peut-être redémarrer Office pour afficher l’icône de la application sur le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application.
@@ -130,9 +130,9 @@ Les mises à jour des compléments se produisent comme suit :
 
 - **Complément de l'Office Store :** lorsqu'un administrateur a sélectionné un complément à partir de l'Office Store, si un complément est mis à jour dans l'Office Store, le complément sera mis à jour plus tard dans le déploiement centralisé. Le complément est mis à jour au démarrage suivant des applications Office concernées. L'application web peut changer à tout moment.
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Gérer les add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md) (article)\
 [Créer votre premier add-in de](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) volet de tâches Word (article\
-[Mineurs et acquisition de add-ins](minors-and-acquiring-addins-from-the-store.md) à partir du Store (article)\ Utilisez les [cmdlets PowerShell](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) de déploiement centralisé pour gérer les add-ins (article)\  
+[Mineurs et acquisition](minors-and-acquiring-addins-from-the-store.md) de modules dans le Store (article)\ Utilisez les [cmdlets PowerShell](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) de déploiement centralisé pour gérer les modules (article)\  
 [Résolution des problèmes : l’utilisateur ne voit pas les modules (article)](/office365/troubleshoot/access-management/user-not-seeing-add-ins)

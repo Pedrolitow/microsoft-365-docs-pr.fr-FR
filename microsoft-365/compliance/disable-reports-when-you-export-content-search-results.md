@@ -17,12 +17,12 @@ ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
 description: Modifiez Windows registre local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du Centre de sécurité & conformité.
-ms.openlocfilehash: 0eaf9c9d1f70e03481b00d38d2e487709329c4cd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 6424f1763a297cd2fee0e6c8b5b1b06236b95ad0173bc6e117bedd2da5502ed9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807995"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 
@@ -62,7 +62,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exp
     
     L’Éditeur du Registre affiche un message vous disant que le paramètre a été correctement ajouté au Registre.
   
-## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Modifier les paramètres de Registre pour ré-activer les rapports d’exportation
+## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Modifier les paramètres du Registre pour ré-activer les rapports d’exportation
 
 Si vous avez désactivé les rapports Results.csv et Manifest.xml en créant les fichiers .reg dans la procédure précédente, vous pouvez modifier ces fichiers pour réactiver un rapport afin qu’il soit exporté avec les résultats de la recherche. Là encore, effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exporter les résultats d’une recherche de contenu.
   

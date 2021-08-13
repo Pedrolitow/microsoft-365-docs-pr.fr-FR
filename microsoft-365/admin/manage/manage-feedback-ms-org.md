@@ -19,34 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérez les commentaires que vos utilisateurs peuvent envoyer à Microsoft concernant les produits Microsoft.
-ms.openlocfilehash: 990ae811145d9586307cd3181724866198063a1b
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 517a8ebc080c33399a018e666de9b7f81d50b98d075cc6e67891123611cdacda
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105295"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825226"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Gérer les commentaires de Microsoft pour votre organisation
 
-En tant qu’administrateur d’une organisation Microsoft 365, il existe désormais plusieurs stratégies pour vous aider à gérer la collecte de commentaires et l’expérience d’engagement client de vos utilisateurs lors de l’utilisation d Microsoft 365 applications. Vous pouvez créer et utiliser des groupes Azure Active Directory existants dans votre organisation pour chacune de ces stratégies. Grâce à ces politiques, vous pouvez contrôler la façon dont les différents services de votre organisation peuvent envoyer des commentaires à Microsoft. Microsoft examine tous les commentaires envoyés par les clients et utilise ces commentaires pour améliorer le produit. La conservation des  expériences de commentaires vous permet de voir ce que vos utilisateurs pensent des produits Microsoft qu’ils utilisent. Les commentaires que nous collectons auprès de vos utilisateurs seront bientôt disponibles dans le Centre d’administration Microsoft 365.
+En tant qu’administrateur d’une organisation Microsoft 365, il existe désormais plusieurs stratégies pour vous aider à gérer la collecte de commentaires et l’expérience d’engagement client de vos utilisateurs lors de l’utilisation d Microsoft 365 applications. Vous pouvez créer et utiliser des groupes Azure Active Directory existants dans votre organisation pour chacune de ces stratégies. Grâce à ces politiques, vous pouvez contrôler la façon dont les différents services de votre organisation peuvent envoyer des commentaires à Microsoft. Microsoft examine tous les commentaires envoyés par les clients et utilise ces commentaires pour améliorer le produit. La conservation des expériences **de** commentaires vous permet de voir ce que vos utilisateurs pensent des produits Microsoft qu’ils utilisent. Les commentaires que nous collectons auprès de vos utilisateurs seront bientôt disponibles dans le Centre d’administration Microsoft 365.
 
 Pour en savoir plus sur les types de commentaires et sur la façon dont Microsoft utilise les commentaires des utilisateurs, voir En savoir plus sur les commentaires [de Microsoft pour votre organisation.](../misc/feedback-user-control.md)
 
 Le tableau ci-dessous représente les applications et services actuellement connectés aux stratégies de commentaires indiquées dans le tableau des stratégies de commentaires ci-dessous. Voir ci-dessous le tableau pour obtenir des exemples de capture d’écran.
 
-|**Applications & Services**|**Commentaires sur le produit** <br> |**Enquêtes sur le produit** <br> |**Collection de métadonnées** <br> |**Engagement du client** <br> |
+|**Applications & Services**|**Commentaires sur le produit** <br> |**Enquêtes sur le produit** <br> |**Collection de métadonnées** <br> |**Implication des clients** <br> |
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**|Oui|Oui|Oui|Oui|
 |**Excel**|Oui|Oui|Oui|Oui|
 |**Office.com**|Bientôt disponible|Bientôt disponible|Bientôt disponible|Bientôt disponible|
 |**OneNote**|Oui|Oui|Oui|Oui|
-|**OneDrive**|[Certains paramètres actuellement gérés par d’autres contrôles.](/onedrive/disable-contact-support-send-feedback)||||
+|**OneDrive**|[Certains paramètres sont actuellement gérés par d’autres contrôles.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook**|Bientôt disponible|Bientôt disponible|Bientôt disponible|Bientôt disponible|
 |**PowerPoint**|Oui|Oui|Oui|Oui|
 |**Project**|Bientôt disponible|Bientôt disponible|Bientôt disponible|Bientôt disponible|
 |**Éditeur**|Oui|Oui|Oui|Oui|
-|**SharePoint**|[Certains paramètres actuellement gérés par d’autres contrôles.](/powershell/module/sharepoint-online/set-spotenant)||||
-|**Teams**|[Certains paramètres actuellement gérés par d’autres contrôles.](/microsoftteams/manage-feedback-policies-in-teams)||||
+|**SharePoint**|[Certains paramètres sont actuellement gérés par d’autres contrôles.](/powershell/module/sharepoint-online/set-spotenant)||||
+|**Teams**|[Certains paramètres sont actuellement gérés par d’autres contrôles.](/microsoftteams/manage-feedback-policies-in-teams)||||
 |**Word**|Oui|Oui|Oui|Oui|
 |**Visio**|Oui|Oui|Oui|Oui|
 |**Yammer**|Oui|Oui|Oui|Oui|
@@ -57,7 +57,7 @@ Le tableau ci-dessous représente les applications et services actuellement conn
 
 :::image type="content" source="../../media/feedback-metadata2.png" alt-text="Capture d’écran : page de commentaires montrant l’exemple de métadonnées":::
 
-**Engagement du client**
+**Implication des clients**
 
 :::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="Screenshot: In-product customer research question example":::
 

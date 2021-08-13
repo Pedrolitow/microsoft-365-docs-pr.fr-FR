@@ -13,13 +13,13 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service de protection contre la perte de données Microsoft 365 point de terminaison.
-ms.openlocfilehash: 1e4987ba2d261c715395ed1869f597da91b5cfed
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+description: Déployez le package de configuration sur un appareil vDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service de protection contre la perte de données Microsoft 365 point de terminaison.
+ms.openlocfilehash: d86046f474ce0afe3a21354bd36f9ed433b627384aec314f129702bc43480b4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567319"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807983"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>Intégrer des périphériques d’infrastructure de bureau virtuel non persistants
 
@@ -56,7 +56,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 1. Ouvrez le fichier de package de configuration VDI .zip (*DeviceCompliancePackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration de**  >  **l’appareil.**
+2. Dans le volet de navigation, sélectionnez **Paramètres** intégration de  >    >  **l’appareil.**
 
 3. Dans le **champ Méthode de** déploiement, sélectionnez les **scripts d’intégration VDI pour les** points de terminaison non persistants.
 
@@ -96,7 +96,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 11. Cliquez **sur La liste Appareils** dans le volet de navigation.
 
-12. Utilisez la fonction de recherche en entrant le nom de l’appareil et sélectionnez **Appareil** comme type de recherche.
+12. Utilisez la fonction de recherche en entrant le nom de l’appareil et **sélectionnez Appareil** comme type de recherche.
 
 ## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images VDI (Virtual Desktop Infrastructure) non persistantes
 
@@ -140,7 +140,7 @@ Si la maintenance hors connexion n’est pas une option viable pour votre enviro
 
 5. Rescellez l’image de premier plan comme vous le feriez normalement.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](dlp-configure-endpoints-gp.md)
 - [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
