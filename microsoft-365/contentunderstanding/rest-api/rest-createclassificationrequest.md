@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Utiliser l’API REST pour créer une demande pour classifier un ou plusieurs fichiers à l’aide d’un modèle formé de compréhension de document.
-ms.openlocfilehash: b1022787d6e11ebe36c88ecd29936a777289dd74
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 99b4893ace64f802baf8642bf08f916c183e6a3844894561a9e756521599087c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891306"
 ---
 # <a name="create-classification-request"></a>Créer une demande de classification
 

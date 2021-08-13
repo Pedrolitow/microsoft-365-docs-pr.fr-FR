@@ -14,12 +14,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le rapport de non-remise dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller les codes d’erreur les plus fréquemment rencontrés dans les rapports de non-remise (également appelés rapports de non-remise ou de non-remise) des expéditeurs de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01d25f11051606139c2ee8b88cade18963de599d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d2ac4d55557165c3f6cf327bcff529edc3dc16ad1fc08eb2a5a30828b7a57661
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56770293"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Rapport de non-remise dans le Centre de conformité & sécurité
 
@@ -30,13 +30,13 @@ ms.locfileid: "51204545"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Le rapport d’absence [](mail-flow-insights-v2.md) de remise dans le tableau de bord de flux de messagerie dans le Centre de sécurité [&](https://protection.office.com) conformité affiche les codes d’erreur les plus rencontrés dans les rapports de **non-remise** (également appelés rapports de non-remise) pour les utilisateurs de votre organisation. Ce rapport présente les détails des rapports de non-remise pour vous aider à résoudre les problèmes de remise des e-mails.
+Le rapport d’absence [](mail-flow-insights-v2.md) de remise dans le tableau de bord de flux de messagerie du Centre de sécurité [&](https://protection.office.com) conformité affiche les codes d’erreur les plus rencontrés dans les rapports de **non-remise** (également appelés rapports de non-remise) pour les utilisateurs de votre organisation. Ce rapport présente les détails des rapports de non-remise pour vous aider à résoudre les problèmes de remise des e-mails.
 
 ![Widget de rapport de non-remise dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-non-delivery-report-widget.png)
 
 ## <a name="report-view-for-the-non-delivery-report"></a>Affichage du rapport de non-remise
 
-Cliquez sur le widget de rapport de **non-remise** pour vous rendre dans la rapport **d’absence de remise.**
+Un clic sur le widget de rapport de **non-remise** vous permet d’être en état **de non-remise.**
 
 Par défaut, l’activité de tous les codes d’erreur s’affiche. Si vous cliquez **sur Afficher les données pour**, vous pouvez sélectionner un code d’erreur spécifique dans ladown.
 
@@ -60,12 +60,12 @@ Pour envoyer par courrier électronique le rapport pour une plage de dates spéc
 Lorsque vous sélectionnez une ligne dans le tableau, un flyout s’affiche avec les informations suivantes :
 
 - **Date**
-- Code de rapport de **non-remise**: vous pouvez cliquer sur le lien pour obtenir plus d’informations sur les causes et solutions pour le code d’erreur spécifique.
+- Code de rapport de **non-remise**: vous pouvez cliquer sur le lien pour obtenir plus d’informations sur les causes et solutions du code d’erreur spécifique.
 - **Count**
 - **Exemples de messages**: vous pouvez cliquer sur Afficher les **exemples de messages** pour afficher les résultats du [suivi](message-trace-scc.md) des messages pour un échantillon des messages concernés.
 
-![Volant détails après sélection d’une ligne dans l’affichage Tableau Détails dans le rapport de non-remise](../../media/mfi-non-delivery-report-details-flyout.png)
+![Volant de détails après sélection d’une ligne dans l’affichage De la table Détails dans le rapport de non-remise](../../media/mfi-non-delivery-report-details-flyout.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

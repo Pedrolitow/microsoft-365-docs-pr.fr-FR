@@ -13,26 +13,26 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez les meilleures pratiques pour gérer les nombreuses rubriques de votre organisation à l’aide de Topics.
-ms.openlocfilehash: 96580df486195af991e446ae6f1bbb4b08013947
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 92a8dd3e53a14bc0bbf5e2d5570930e3bdc860b5d2cee1ea7bd576c4e1cd871a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624355"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891379"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Gérer les rubriques à grande échelle dans Sujets Microsoft Viva
 
-Lorsque vous indexez vos sites SharePoint sites web ou toute votre organisation pour Les Rubriques, de nombreuses rubriques peuvent être générées. Lorsque cela se produit et que vous voyez des milliers de rubriques suggérées sur la page Gérer les **rubriques,** il peut être difficile de savoir par où commencer. Cet article explique comment Topics vous aide à optimiser les rubriques et les informations qui sont présentées aux utilisateurs qui recherchent des informations, même dans les grandes organisations avec un grand nombre de rubriques.
+Lorsque vous indexez vos sites SharePoint sites web ou toute votre organisation pour Les Rubriques, de nombreuses rubriques peuvent être générées. Lorsque cela se produit et que vous voyez des milliers de rubriques suggérées sur la page Gérer les **rubriques,** il peut être difficile de savoir où commencer. Cet article explique comment Topics vous aide à optimiser les rubriques et les informations qui sont présentées aux utilisateurs qui recherchent des informations, même dans les grandes organisations avec un grand nombre de rubriques.
 
 Tout d’abord, un rappel des [quatre étapes pour les rubriques](manage-topics.md#topic-stages):
 
 - **Suggérée** : une rubrique a été identifiée par l’IA et dispose de ressources de prise en charge, de connexions et de propriétés suffisantes. (Ils sont marqués comme **sujet suggéré dans** l’interface utilisateur.)
 
-- **Confirmé :** une rubrique qui a été découverte par l’IA et qui a été validée. La validation de rubrique se produit dans les cas suivants :
+- **Confirmé :** rubrique qui a été découverte par l’IA et qui a été validée. La validation de rubrique se produit dans les cas suivants :
 
    - Un gestionnaire de connaissances confirme une rubrique. Un gestionnaire de [connaissances confirme une rubrique dans](manage-topics.md#confirmed-topics) la page Gérer les **rubriques.**
 
-   - Plusieurs utilisateurs confirment une rubrique. Il doit y avoir un net de deux votes positifs reçus des utilisateurs qui ont voter à l’aide du mécanisme de commentaires sur la carte de sujet. Par exemple, si un utilisateur a exprimé un vote positif et un utilisateur a exprimé un vote négatif pour une rubrique particulière, vous aurez toujours besoin de deux autres votes positifs pour que la rubrique soit confirmée.
+   - Plusieurs utilisateurs confirment une rubrique. Il doit y avoir un net de deux votes positifs reçus des utilisateurs qui ont voter à l’aide du mécanisme de commentaires sur la carte de sujet. Par exemple, si un utilisateur a exprimé un vote positif et un utilisateur a exprimé un vote négatif pour une rubrique particulière, vous aurez besoin de deux autres votes positifs pour que la rubrique soit confirmée.
  
 - **Publié**: une rubrique qui a été organisée. Des modifications manuelles ont été réalisées pour améliorer sa qualité ou ont été créées par un utilisateur.
 
@@ -46,21 +46,21 @@ Tout d’abord, un rappel des [quatre étapes pour les rubriques](manage-topics.
 
 ## <a name="knowledge-manager-role"></a>Rôle du gestionnaire de connaissances 
 
-Lorsque vous configurez Topics, vous ajoutez un groupe d’utilisateurs qui se voient accorder des autorisations pour voir la page Gérer les rubriques dans le centre de **rubriques.** Elle s’affiche uniquement pour ces utilisateurs qui ont le rôle de curseur principal pour les rubriques. Ils auront accès aux données sur les rubriques et pourront voir les listes de toutes les rubriques dont ils ont accès pour passer en revue et organiser.
+Lorsque vous configurez Topics, vous ajoutez un groupe d’utilisateurs qui se voient accorder des autorisations pour voir la page Gérer les rubriques dans le centre de **rubriques.** Elle s’affiche uniquement pour ces utilisateurs qui détiennent le rôle de curation principale pour les rubriques. Ils auront accès aux données sur les rubriques et pourront voir les listes de toutes les rubriques dont ils ont accès pour passer en revue et organiser.
 
-Les employés de ce rôle doivent avoir de larges autorisations pour afficher un large éventail de rubriques. Ou si les autorisations sont segmentées, vous pouvez sélectionner un groupe d’utilisateurs qui représentent différents secteurs de l’entreprise et qui peuvent s’organiser pour leurs propres domaines.
+Les employés de ce rôle doivent avoir de larges autorisations pour afficher un large éventail de rubriques. Ou si les autorisations sont segmentées, vous pouvez sélectionner un groupe d’utilisateurs qui représentent différents secteurs de l’entreprise et peuvent s’organiser pour leurs propres domaines.
 
 Lorsque vous examinez pour la première fois des rubriques dans le centre de rubriques, les rubriques suggérées sont purement définies par l’IA. Les gestionnaires de connaissances peuvent passer en revue chacun d’eux avant de déployer Topics dans une large communauté d’utilisateurs. Lorsque vous travaillez à grande échelle, cette approche est rarement pratique en raison des milliers de rubriques.
 
 L’approche recommandée consiste à trouver un équilibre entre les rubriques les plus pertinentes ou les plus importantes pour votre ensemble initial d’utilisateurs et à vous concentrer sur la curation de ces rubriques avant le déploiement de Rubriques. Commencez à recueillir les commentaires des utilisateurs et autorisez les utilisateurs à déterminer les modèles d’utilisation et de contribution de vos utilisateurs pour informer les stratégies suggérées dans cet article.
 
-Il est important de reconnaître que le système identifiera et affichera les rubriques publiées suggérées par l’IA et organisées par l’utilisateur à tous les utilisateurs. Toutefois, cela ne signifie pas que chaque rubrique suggérée s’affiche pour tous les utilisateurs finaux. Les paramètres de sécurité en place afficheront uniquement les rubriques accessibles par chaque employé en fonction des autorisations définies sur le contenu lui-même.
+Il est important de reconnaître que le système identifiera et affichera les rubriques publiées suggérées par l’IA et organisées par l’utilisateur à tous les utilisateurs. Toutefois, cela ne signifie pas que chaque rubrique suggérée s’affiche pour tous les utilisateurs finaux. Les paramètres de sécurité en place afficheront uniquement les rubriques accessibles à chaque employé en fonction des autorisations définies sur le contenu lui-même.
 
-En tant que gestionnaire de connaissances ayant des autorisations pour afficher la page Gérer les **rubriques,** vous pouvez voir un plus grand nombre de rubriques répertoriées en raison de vos propres autorisations élevées, en fonction de votre rôle dans l’organisation et du niveau d’accès. Vous aurez également accès à des affichages qui vous permettent de voir les rubriques répertoriées dans un emplacement unique au lieu d’y accéder à l’aide de points forts ou de recherche.
+En tant que gestionnaire de connaissances ayant les autorisations d’afficher la page Gérer les **rubriques,** vous pouvez voir un plus grand nombre de rubriques répertoriées en raison de vos propres autorisations élevées, en fonction de votre rôle dans l’organisation et du niveau d’accès. Vous aurez également accès à des affichages qui vous permettent de voir les rubriques répertoriées dans un seul emplacement au lieu d’y accéder à l’aide de surlaux ou de recherche.
 
 En outre, il y a probablement un plus petit pourcentage de rubriques qui seront visibles par la plupart des utilisateurs et un plus grand nombre de rubriques qui seront visibles beaucoup moins fréquemment en raison des autorisations. Par conséquent, il est bon de concentrer d’abord les tâches de curation sur les sujets les plus importants pour votre organisation et ceux qui sont les plus susceptibles d’être vus plus largement.
 
-Cet article décrit quelques stratégies de curation. Ces stratégies peuvent signifier que les rubriques moins fréquentes ou moins courantes peuvent ne pas être entièrement organisées par les gestionnaires de connaissances. Toutefois, ces rubriques suggérées restent utiles et peuvent fournir des informations ou un pointeur vers une personne, ce qui permet à un employé de gagner des heures à chercher un point de départ. Il est utile d’autoriser les mises à jour de rubriques en nombre et de fournir davantage de contenu et de couverture pour les rubriques les moins courantes.
+Cet article décrit quelques stratégies de curation. Ces stratégies peuvent signifier que les rubriques moins fréquentes ou moins courantes peuvent ne pas être entièrement organisées par les gestionnaires de connaissances. Toutefois, ces rubriques suggérées restent utiles et peuvent fournir des informations ou un pointeur vers une personne, ce qui permet à un employé de gagner des heures à chercher un point de départ. Il est utile d’autoriser les mises à jour de rubriques en nombre de rubriques et de fournir davantage de contenu et de couverture pour les rubriques moins courantes.
 
 Cet article fournit des conseils et des meilleures pratiques pour aborder la gestion et la curation des sujets.
 
@@ -72,7 +72,7 @@ Dans une carte de rubrique ou une page, nous utilisons différents signaux pour 
 
 - Les étiquettes indiquent qu’une rubrique est suggérée et qu’elle a été découverte par Topics.  
 
-   ![Exemple de carte montrant une rubrique suggérée et inclut des suggestions de personnes et des ressources suggérées.](../media/knowledge-management/scale-topics-sample-card-suggested-topic.png)
+   ![Exemple de carte montrant une rubrique suggérée et inclut des personnes suggérées et des ressources suggérées.](../media/knowledge-management/scale-topics-sample-card-suggested-topic.png)
 
 - Les informations sur la carte indiquent d’où vient une définition en spécifiant sa source.
 
@@ -112,7 +112,7 @@ Lorsque vous autorisez un large éventail de rubriques, vous devez prendre en co
 
 -   Certains **composants** Web Parts de rubrique suggérée ne peuvent pas être supprimés. Le nom de la rubrique, les autres noms, la définition, les personnes suggérées et les ressources suggérées ne peuvent pas être supprimés.
 
--   La publication d’une rubrique suggérée ou confirmée vers la liste  Publiée sur la page Gérer **les rubriques** peut prendre un certain temps.
+-   La publication d’une rubrique suggérée ou confirmée vers la liste  Publiée de la page Gérer **les rubriques** peut prendre un certain temps.
 
     -   La durée d’apparition estimée d’une rubrique dans la recherche, les surlaux, les hashtags ou les annotations est de 2 heures.
 
@@ -146,7 +146,7 @@ Cette approche peut également être prise à un niveau de service ou fonctionne
 
 Les termes de recherche courants sont souvent découverts en tant que rubriques. En utilisant les [principaux rapports de](/sharepoint/view-search-usage-reports)requête dans Recherche Microsoft , vous pouvez identifier les termes de recherche les plus fréquents dans votre organisation. Si des rubriques ont été découvertes pour ces termes, elles sont de bons candidats pour la curation. Ces rubriques peuvent être présentées en tant que cartes de réponse Recherche Microsoft.
 
-Si vous utilisez actuellement des [signets Recherche Microsoft,](/microsoftsearch/manage-bookmarks)pensez à savoir lequel d’entre eux peut être remplacé par une rubrique. Une carte de réponse de signet contient un titre, une description et une URL. Dans certains cas, une carte de sujet peut être plus utile pour un utilisateur, et une carte de sujet affiche également des ressources et des personnes.
+Si vous utilisez actuellement des [signets Recherche Microsoft,](/microsoftsearch/manage-bookmarks)pensez à savoir lequel d’entre eux peut être remplacé par une rubrique. Une carte de réponse de signet contient un titre, une description et une URL. Dans certains cas, une carte de sujet peut être plus utile pour un utilisateur et une carte de sujet affiche également des ressources et des personnes.
 
 Dans l’expérience de recherche de l’utilisateur, lorsqu’un utilisateur recherche un terme tel qu’un *voyage,* les résultats de la recherche sont affichés dans l’ordre de priorité suivant dans Recherche Microsoft :
 

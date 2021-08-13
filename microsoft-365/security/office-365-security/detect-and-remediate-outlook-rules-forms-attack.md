@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les règles de Outlook 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0846051b65b34ec26358f87bb4ca49302573e6e7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 33fc889b2ddb42dcbbacb1e2b6030e3bf1b409fc07970927e99e06a2747bc21d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204394"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56800381"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et corriger les Outlook et les attaques par injection de formulaires personnalisés
 
@@ -49,7 +49,7 @@ Les attaques suivent généralement les modèles ci-après :
 
 1. L’attaquant volera les informations d’identification d’un utilisateur.
 
-2. L’attaquant se permet de se Exchange boîte aux lettres de l’utilisateur (Exchange Online ou en local Exchange).
+2. L’attaquant se permet de se Exchange boîte aux lettres de l’utilisateur (Exchange Online ou local Exchange).
 
 3. L’attaquant crée une règle de boîte de réception de forwarding dans la boîte aux lettres. La règle de forwarding est déclenchée lorsque la boîte aux lettres reçoit un message spécifique de l’attaquant qui correspond aux conditions de la règle. Les conditions de règle et le format des messages sont personnalisés les uns pour les autres.
 
@@ -65,7 +65,7 @@ Les attaques suivent généralement les modèles ci-après :
 
 1. L’attaquant volera les informations d’identification d’un utilisateur.
 
-2. L’attaquant se permet de se Exchange boîte aux lettres de l’utilisateur (Exchange Online ou en local Exchange).
+2. L’attaquant se permet de se Exchange boîte aux lettres de l’utilisateur (Exchange Online ou local Exchange).
 
 3. L’attaquant insère un modèle de formulaire de courrier personnalisé dans la boîte aux lettres de l’utilisateur. Le formulaire personnalisé est déclenché lorsque la boîte aux lettres reçoit un message spécifique de l’attaquant qui exige que la boîte aux lettres charge le formulaire personnalisé. Le formulaire personnalisé et le format de message sont personnalisés les uns pour les autres.
 
@@ -84,7 +84,7 @@ Ces mécanismes de persistance sont peu susceptibles d’être remarqués par vo
 - **Indicateurs de compromission des règles**:
   - L’action de la règle consiste à démarrer une application.
   - La règle fait référence à un FICHIER EXE, ZIP ou URL.
-  - Sur l’ordinateur local, recherchez les nouveaux démarrages de processus qui proviennent du piD Outlook’ordinateur local.
+  - Sur l’ordinateur local, recherchez les nouveaux processus qui proviennent du piD Outlook de l’ordinateur local.
 
 - **Indicateurs de compromission des formulaires personnalisés**:
   - Les formulaires personnalisés présents sont enregistrés en tant que classe de message.
@@ -104,7 +104,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour confirmer l’attaque 
 
 1. Ouvrez les utilisateurs Outlook client en tant qu’utilisateur. L’utilisateur peut avoir besoin de votre aide pour examiner les règles de sa boîte aux lettres.
 
-2. Reportez-vous [à l’article](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) Gérer les messages électroniques à l’aide de l’article règles pour les procédures d’ouverture de l’interface de règles dans Outlook.
+2. [Reportez-vous à l’article](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) Gérer les messages électroniques à l’aide de l’article règles pour les procédures d’ouverture de l’interface de règles dans Outlook.
 
 3. Recherchez les règles que l’utilisateur n’a pas créés, ou les règles ou règles inattendues avec des noms suspects.
 
@@ -128,7 +128,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour confirmer l’attaque 
 
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>Étapes de confirmation de l’attaque par règles et formulaires à l’aide de PowerShell
 
-Le moyen le plus simple de vérifier une attaque par des règles ou des formulaires personnalisés consiste à exécuter [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) script PowerShell. Ce script se connecte à chaque boîte aux lettres de votre client et vide toutes les règles et formulaires dans deux .csv.
+Le moyen le plus simple de vérifier une attaque par des règles ou des formulaires personnalisés consiste à exécuter [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) script PowerShell. Ce script se connecte à chaque boîte aux lettres de votre client et vide toutes les règles et tous les formulaires dans deux .csv fichiers.
 
 #### <a name="pre-requisites"></a>Conditions préalables
 
@@ -154,7 +154,7 @@ Vous devez avoir des droits d’administrateur général pour exécuter le scrip
 
 - **MailboxFormsExport-*yyyy-mm-dd*.csv**: en règle générale, l’utilisation de formulaires personnalisés est rare. Si vous en trouvez dans ce workbook, vous ouvrez la boîte aux lettres de cet utilisateur et examinez le formulaire lui-même. Si votre organisation ne l’a pas placé intentionnellement, il est probablement malveillant.
 
-## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Comment arrêter et corriger l’attaque Outlook règles et formulaires
+## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Comment arrêter et corriger les attaques Outlook règles et formulaires
 
 Si vous trouvez des preuves de l’une de ces attaques, la correction est simple, supprimez simplement la règle ou le formulaire de la boîte aux lettres. Vous pouvez le faire avec le client Outlook ou à l’aide de PowerShell à distance pour supprimer des règles.
 
@@ -166,7 +166,7 @@ Si vous trouvez des preuves de l’une de ces attaques, la correction est simple
 
 3. Si vous n’êtes pas sûr de la présence d’autres programmes malveillants, vous pouvez formater et réinstaller tous les logiciels sur l’appareil. Pour les appareils mobiles, vous pouvez suivre les étapes des fabricants pour réinitialiser l’appareil à l’image d’usine.
 
-4. Installez les versions les plus récentes de Outlook. N’oubliez pas que la version actuelle Outlook bloque les deux types d’attaque par défaut.
+4. Installez les versions les plus récentes de Outlook. N’oubliez pas que la version actuelle de Outlook bloque les deux types d’attaque par défaut.
 
 5. Une fois toutes les copies hors connexion de la boîte aux lettres supprimées, réinitialisez le mot de passe de l’utilisateur (utilisez une copie de haute qualité) et suivez les étapes de l’authentification [multifacteur](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) du programme d’installation pour les utilisateurs si l’authentification multifacteur n’a pas encore été activée. Cela garantit que les informations d’identification de l’utilisateur ne sont pas exposées par d’autres moyens (par exemple, hameçonnage ou nouvelle utilisation du mot de passe).
 
@@ -204,7 +204,7 @@ La meilleure façon de protéger vos comptes d’utilisateur, et en particulier 
 
   - **Voyage impossible**: cette stratégie profile votre environnement et déclenche des alertes lorsque des activités sont détectées par le même utilisateur à différents emplacements dans une période plus courte que le temps de déplacement prévu entre les deux emplacements. Cela peut indiquer qu’un autre utilisateur utilise les mêmes informations d’identification. La détection de ce comportement anormal nécessite une période d’apprentissage initiale de sept jours au cours de laquelle elle apprend le modèle d’activité d’un nouvel utilisateur.
 
-  - Activité d’emprunt d’identité inhabituelle **(par utilisateur)**: cette stratégie profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités usurpées d’identité dans une seule session par rapport à la ligne de base acquise, ce qui peut indiquer une tentative de violation.
+  - Activité d’emprunt d’identité inhabituelle **(par utilisateur)**: cette stratégie profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités usurpées d’identité dans une même session en respectant la ligne de base acquise, ce qui peut indiquer une tentative de violation.
 
 - Utilisez un outil tel que [Office 365 Secure Score](https://securescore.office.com/) pour gérer les configurations et comportements de sécurité des comptes.
 
@@ -234,19 +234,19 @@ Vous pouvez voir si « Démarrer l’application » a été ré-activé via une 
 
 - **Outlook 2013**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
-Recherchez la clé EnableUnsafeClientMailRules. S’il est là et est définie sur 1, le correctif de sécurité Outlook a été bas de ligne de compte et l’ordinateur est vulnérable à l’attaque par formulaire/règles. Si la valeur est 0, l’action « Démarrer l’application » est désactivée. Si la version mise à jour et corrigé de Outlook est installée et que cette clé de Registre n’est pas présente, un système n’est pas vulnérable à ces attaques.
+Recherchez la clé EnableUnsafeClientMailRules. S’il est là et est définie sur 1, le correctif de sécurité Outlook a été mis en place et l’ordinateur est vulnérable à l’attaque par formulaire/règles. Si la valeur est 0, l’action « Démarrer l’application » est désactivée. Si la version mise à jour et corrigé de Outlook est installée et que cette clé de Registre n’est pas présente, un système n’est pas vulnérable à ces attaques.
 
 Les clients qui disposent d’installations Exchange sur site doivent envisager de bloquer les versions antérieures de Outlook qui ne disposent pas de correctifs. Pour plus d’informations sur ce processus, voir l’article [Configure Outlook client blocking](/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
 
-Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la [Feuille de route du Centre de sécurité Microsoft 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Microsoft 365.
+Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la [Feuille de route du Centre de sécurité Microsoft 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours. Celles-ci ont un effet immédiat et ont un faible impact sur vos utilisateurs.
 
-- Tâches à accomplir dans les 90 premiers jours. Ces tâches prennent un peu plus de temps à planifier et à implémenter, mais augmentent considérablement votre sécurité.
+- Tâches à accomplir en 90 jours. Celles-ci prennent un peu plus de temps à planifier et à implémenter, mais améliorent considérablement votre posture de sécurité.
 
-- Au-delà de 90 jours. Ces améliorations sont à mettre en place pendant les 90 premiers jours.
+- Au-delà de 90 jours. Ces améliorations s’appuient sur vos 90 premiers jours de travail.
 
 ## <a name="see-also"></a>Voir aussi :
 

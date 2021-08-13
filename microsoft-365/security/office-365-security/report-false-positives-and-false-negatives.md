@@ -13,12 +13,12 @@ ms.collection:
 description: Découvrez comment signaler les faux positifs et les faux négatifs dans Outlook à l’aide de la fonctionnalité Signaler un message.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 458e7d16e2614e7bac3a0aac5a4310e6353ab569
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: ac0dbb205e6205a9c92cc56922b7399c6dd2c65cde276854b2901edf89b29503
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082923"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56799421"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Signaler les faux positifs et les faux négatifs dans Outlook
 
@@ -45,13 +45,13 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Onli
 
 - Si vous êtes un administrateur d’une organisation Exchange Online boîtes aux lettres, utilisez le portail Soumissions dans Microsoft 365 Defender portail. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
-- Vous pouvez configurer pour envoyer des messages directement à Microsoft, une boîte aux lettres que vous spécifiez, ou les deux. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)
+- Vous pouvez configurer pour envoyer des messages directement à Microsoft, une boîte aux lettres que vous spécifiez ou les deux. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)
 
-- Pour plus d’informations sur la façon d’obtenir et d’activer le message de rapport ou les add-ins Signaler le hameçonnage, voir Activer le message de rapport ou les [add-ins](enable-the-report-message-add-in.md)Signaler le hameçonnage.
+- Pour plus d’informations sur la façon d’obtenir et d’activer le message de rapport ou les add-ins De hameçonnage de rapport, voir Activer le [message](enable-the-report-message-add-in.md)de rapport ou les rapports de hameçonnage.
 
 - Pour plus d’informations sur la notification des messages à Microsoft, voir [Signaler des messages et des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
-## <a name="use-the-report-message-feature"></a>Utiliser la fonctionnalité Signaler un message
+## <a name="use-the-report-message-feature"></a>Utiliser la fonctionnalité Message de rapport
 
 ### <a name="report-junk-and-phishing-messages"></a>Signaler les messages de courrier indésirable et de hameçonnage
 

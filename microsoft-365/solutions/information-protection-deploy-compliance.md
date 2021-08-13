@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Découvrez comment utiliser le Score de conformité et le Gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
-ms.openlocfilehash: 26e9f54ce77869f4f6ef07c18147483628ddc223
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: ad9ac81d6427e4cb698ad80d5a5621daaf490f6203def774b5aea91fc2418ba5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804959"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Utiliser le Gestionnaire de conformité pour gérer les actions d’amélioration
 
@@ -49,11 +49,11 @@ Affichez [la liste complète des modèles d’évaluation](../compliance/complia
 
 **Score de conformité en temps réel**
 
-Le Gestionnaire de conformité vous fournit également un score de conformité qui mesure votre progression dans l’exécution des actions d’amélioration recommandées au sein des contrôles. Vous pouvez utiliser ce score pour surveiller votre progression et hiérarchiser les actions en fonction de leur capacité à réduire les risques.
+Le Gestionnaire de conformité vous fournit également un score de conformité qui mesure votre progression dans l’exécution des actions d’amélioration recommandées au sein des contrôles. Vous pouvez utiliser ce score pour surveiller votre progression et hiérarchiser les actions en fonction de leur potentiel pour réduire les risques.
 
 #### <a name="use-the-compliance-manager-quickstart-guide"></a>Utiliser le guide de démarrage rapide du Gestionnaire de conformité
 
-Le guide [de démarrage rapide du Gestionnaire de conformité](../compliance/compliance-manager-quickstart.md) fournit des étapes et des liens vers des ressources clés pour vous aider à travailler avec le Gestionnaire de conformité :
+Le guide de démarrage rapide [du Gestionnaire de conformité](../compliance/compliance-manager-quickstart.md) fournit des étapes et des liens vers des ressources clés pour vous aider à travailler avec le Gestionnaire de conformité :
 
 - [Première visite : familiarisez-vous avec le Gestionnaire de conformité](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Travailler avec votre tableau de bord du Gestionnaire de conformité

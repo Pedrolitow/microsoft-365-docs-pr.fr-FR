@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Définir les heures de travail et la disponibilité des employés dans Microsoft Bookings.
-ms.openlocfilehash: 140ab5732b051931666824cd4290a38c0b11fd65
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 04e6d3e079fec1c75536f3ac30dbab12026dabe2207f985b87410af77a7b832f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803777"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Heures de travail des employés dans Microsoft Bookings
 
@@ -36,7 +36,7 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour définir les heures 
 
    ![Image de l’écran du personnel Bookings avec le nom mis en évidence](../media/bookings-staff-name-highlight.png)
 
-1. Sous heures de travail, cochez la case Utiliser **les heures** d’ouverture.
+1. Sous les heures de travail, cochez la case Utiliser **les heures** d’ouverture.
 
 1. Utilisez les dropdowns pour sélectionner les heures de début et de fin de chaque jour. Les heures sont disponibles par incréments de 15 minutes.
 
@@ -57,4 +57,4 @@ Lorsque vous programmez un jour de congé pour un employé, celui-ci apparaît i
 1. Si vous souhaitez planifier un jour précédemment marqué comme un jour de congé, sélectionnez le signe en dehors du jour que **+** vous souhaitez planifier.
 
 > [!TIP]
-> Si vous planifier des congés pour les employés ou d’autres grands blocs de congés, consultez la section « Planifier les congés des employés » dans Planifier les [fermetures d’entreprise,](schedule-closures-time-off-vacation.md#schedule-employee-time-off)les congés et les congés.
+> Si vous avez prévu des congés pour les employés ou d’autres grands blocs de congés, consultez la section « Planifier les congés des employés » dans Planifier les [fermetures d’entreprise,](schedule-closures-time-off-vacation.md#schedule-employee-time-off)les congés et les congés.

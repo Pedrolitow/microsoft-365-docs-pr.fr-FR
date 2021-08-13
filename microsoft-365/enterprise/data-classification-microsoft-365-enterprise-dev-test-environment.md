@@ -14,16 +14,16 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour créer et utiliser des étiquettes de rétention sur les documents de votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: 613aa3713b4d72eed1bc0b2d88f70a817d0e7cff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 79002397be7c44c5c160d80288d3fea6e9c1f9594a024f5aa4dc501f86dda886
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919187"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891318"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Classification des données pour votre environnement de test Microsoft 365 entreprise
 
-*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
+*Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
 
 Cet article explique comment configurer la classification des données à l’aide d’étiquettes de rétention dans votre Microsoft 365 environnement de test d’entreprise.
 
@@ -78,7 +78,7 @@ Dans cette phase, vous découvrez le comportement des étiquettes de rétention 
 
 Tout d’abord, créez un site d’équipe SharePoint Online de niveau sensible :
   
-1. À l’aide d’une instance privée de votre navigateur, connectez-vous [Microsoft 365 centre](https://admin.microsoft.com) d’administration à l’aide de votre compte d’administrateur global.
+1. À l’aide d’une instance privée de votre navigateur, connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de votre compte d’administrateur global.
 1. Dans la liste des vignettes, **sélectionnez SharePoint**.
 1. Sous le nouvel **onglet SharePoint** dans votre navigateur, sélectionnez Créer **un site.**
 1. Sur la page **Créer un site**, sélectionnez **Site d’équipe**.

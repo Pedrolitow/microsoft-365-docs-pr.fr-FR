@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: Cet article vous montre comment diagnostiquer des problèmes courants avec votre site SharePoint Online à l’aide des outils de développement Internet Explorer.
-ms.openlocfilehash: 6a29b8b2df54d74d8237418828a7aa89efdbcfaf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ff552963923fd6b3fe8d482a5892e8e4ad2779a41c08c0c554a65b98be5a408f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927611"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891482"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnostic des problèmes de performances avec SharePoint Online
 
 Cet article vous montre comment diagnostiquer des problèmes courants avec votre site SharePoint Online à l’aide des outils de développement Internet Explorer.
   
-Il existe trois façons différentes d’identifier qu’une page d’un site SharePoint Online présente un problème de performances avec les personnalisations.
+Il existe trois façons différentes d’identifier qu’une page sur un site SharePoint Online présente un problème de performances avec les personnalisations.
   
 - Moniteur réseau de la barre d’outils F12
 
@@ -66,7 +66,7 @@ Cela vous donne une représentation visuelle de la durée de chargement du fichi
 ## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>Configuration d’une planification non personnalisée pour SharePoint Online
 <a name="F12ToolInfo"> </a>
 
-La meilleure façon de déterminer les points faibles en terme de performances de votre site consiste à configurer une collection de sites entièrement prêt à l’SharePoint Online. De cette façon, vous pouvez comparer tous les différents aspects de votre site avec ce que vous obtenez sans personnalisation sur la page. La OneDrive Entreprise page d’accueil est un bon exemple d’une collection de sites distincte qui n’a probablement pas de personnalisations.
+La meilleure façon de déterminer les points faibles en terme de performances de votre site consiste à configurer une collection de sites complète dans SharePoint Online. De cette façon, vous pouvez comparer tous les différents aspects de votre site avec ce que vous obtenez sans personnalisation sur la page. La OneDrive Entreprise page d’accueil est un bon exemple d’une collection de sites distincte qui n’a probablement pas de personnalisations.
   
 ## <a name="viewing-sharepoint-response-header-information"></a>Affichage des SharePoint d’en-tête de réponse
 <a name="F12ToolInfo"> </a>
@@ -94,4 +94,4 @@ L’article Options de navigation pour [SharePoint Online](navigation-options-fo
   
 Une fois que vous avez identifié qu’un problème spécifique à votre site est identifié, la meilleure façon de déterminer ce qui provoque des performances médiocres consiste à éliminer toutes les causes possibles, telles que les personnalisations de page, puis à les rajouter un par un au site. Une fois que vous avez supprimé suffisamment de personnalisations pour que la page s’exécute bien, vous pouvez rajouter des personnalisations spécifiques une par une.
   
-Par exemple, si vous avez une navigation très complexe, essayez de modifier la navigation pour ne pas afficher les sous-sites, puis vérifiez les outils de développement pour voir si cela fait une différence. Ou si vous avez une grande quantité de roll-ups de contenu, essayez de les supprimer de votre page et de voir si cela améliore les choses. Si vous éliminez toutes les causes possibles et que vous les ajoutez une par une, vous pouvez facilement identifier les fonctionnalités qui sont le problème le plus important, puis travailler à une solution.
+Par exemple, si vous avez une navigation très complexe essayez de modifier la navigation pour ne pas afficher les sous-sites, vérifiez les outils de développement pour voir si cela fait une différence. Ou si vous avez une grande quantité de roll-ups de contenu, essayez de les supprimer de votre page et de voir si cela améliore les choses. Si vous éliminez toutes les causes possibles et que vous les ajoutez une par une, vous pouvez facilement identifier les fonctionnalités qui sont le problème le plus important, puis travailler à une solution.

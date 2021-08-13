@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instructions pour entrer des informations sur les offres de services, notamment le nom du service, la description, l’emplacement, la durée et la tarification. Vous pouvez également marquer les employés qualifiés pour fournir le service.
-ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 8a287e08a64fd2f7ca94e83f7b99c277f9e0124673697b202eda9ad86b0ff9e4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962536"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804004"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Définir vos offres de services dans Bookings
 
@@ -76,7 +76,7 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
     :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Exemple de définition du nombre maximal de participants dans Bookings":::
 
-10. **Prix par défaut**  Il s’agit du prix qui s’affiche sur Self-Service page. Si **le prix non définie** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaîtra.
+10. **Prix par défaut**  Il s’agit du prix qui s’affiche sur Self-Service page. Si **le prix non fixé** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaît.
 
 11. **Remarques** Ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que dans l’événement qui apparaît sous l’onglet Calendrier dans l’application web Bookings.
 
@@ -86,7 +86,7 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
     - Vous pouvez ajouter une question à choix multiple ou à une réponse texte en sélectionnant **Ajouter une question.**
 
-        Les champs personnalisés peuvent être utiles lors de la collecte d’informations nécessaires chaque fois que le rendez-vous spécifique est réservé. Il peut s’agir, par exemple, d’un fournisseur d’assurance avant une visite à Titres, d’un type de prêt pour les demandes de prêt, d’études principales pour les conseils scolaires ou d’un ID de candidat à un entretien.
+        Les champs personnalisés peuvent être utiles lors de la collecte d’informations nécessaires chaque fois que le rendez-vous spécifique est réservé. Il peut s’agir, par exemple, d’un fournisseur d’assurance avant une visite à l’emploi, d’un type de prêt pour les prêts, d’études principales pour les conseils scolaires ou d’un ID de candidat à un entretien.
 
 13. **Rappels et confirmations** Les deux types d’e-mails sont envoyés aux clients, aux membres du personnel ou aux deux, à une période spécifiée avant le rendez-vous. Plusieurs messages peuvent être créés pour chaque rendez-vous, selon vos préférences.
 
@@ -94,17 +94,17 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
         :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Un e-mail de confirmation de Bookings":::
 
-    - Si vous le souhaitez, vous pouvez inclure tout texte supplémentaire que vous souhaitez ici, par exemple des informations sur la planification ou ce que les clients doivent apporter pour le rendez-vous. Voici un exemple de texte personnalisé ajouté à l’e-mail de confirmation d’origine, visible dans le champ Informations supplémentaires pour la **confirmation du** courrier électronique :
+    - Si vous le souhaitez, vous pouvez inclure tout texte supplémentaire que vous souhaitez ici, par exemple des informations sur la planification ou ce que les clients doivent apporter pour le rendez-vous. Voici un exemple de texte personnalisé ajouté à l’e-mail de confirmation d’origine, visible dans le champ Informations supplémentaires pour la **confirmation du courrier** électronique :
 
         :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Informations supplémentaires dans un e-mail Bookings":::
 
-14. **Activer les notifications par SMS pour votre client** S’il est sélectionné, SMS messages sont envoyés au client, mais uniquement s’ils y sont abonnés.
+14. **Activer les notifications par SMS pour votre client** S’il est sélectionné, les messages SMS sont envoyés au client, mais uniquement s’il l’a choisi.
 
     - Zone d’inscription sur la page de réservation Self-Service manuelle :
 
         :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Zone d’inscription dans Bookings":::
 
-    - Les notifications par SMS ressembleront à ce qui suit (notez que SMS notifications sont actuellement uniquement disponibles en Amérique du Nord) :
+    - Les notifications par SMS ressemblent à ce qui suit (notez que les notifications par SMS sont actuellement uniquement disponibles en Amérique du Nord) :
 
         :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Une notification texte de Bookings":::
 
@@ -122,7 +122,7 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
     - Désactivé :
 
-        Les clients qui effectuent une réservation via la page Self-Service peuvent sélectionner un service, ainsi qu’une heure et une date. Le personnel disponible sera réservé au hasard. Notez que des membres du personnel spécifiques peuvent toujours être sélectionnés lors de la réservation via l’onglet Calendrier dans l’application Web Bookings.
+        Les clients qui effectuent une réservation via la page Self-Service peuvent sélectionner un service, ainsi qu’une heure et une date. Le personnel disponible sera réservé de manière aléatoire. Notez que des membres du personnel spécifiques peuvent toujours être sélectionnés lors de la réservation via l’onglet Calendrier dans l’application Web Bookings.
 
 19. **Disponibilité** Les options suivantes déterminent quand le service peut être réservé :
 

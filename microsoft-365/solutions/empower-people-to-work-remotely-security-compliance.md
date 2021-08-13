@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez les services de sécurité et de conformité Microsoft 365 pour protéger vos applications, données et appareils destinés aux travailleurs hybrides.
-ms.openlocfilehash: 30df9210cf1f154551b64451ec4ebd22ffe410a8
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7c3d57dbe1783ff487ec40fa5deea29899c54f696d6cb653f2f2320a41916aba
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805115"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Étape 3 : déployer la sécurité et la conformité pour les travailleurs hybrides
 

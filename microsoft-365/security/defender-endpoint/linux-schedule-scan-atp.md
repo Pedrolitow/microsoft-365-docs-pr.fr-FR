@@ -1,7 +1,7 @@
 ---
 title: Planifier des analyses avec Microsoft Defender pour Endpoint (Linux)
 description: Découvrez comment planifier un temps d’analyse automatique pour Microsoft Defender pour Endpoint (Linux) afin de mieux protéger les ressources de votre organisation.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d8b7bbd2a5f1050b7897af3b208346330172ef94
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b74843982c115753a2cd050f7b2813a33d3e6825bc8d4f679694b2659fd94c65
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623203"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523589"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Planifier des analyses avec Microsoft Defender pour Endpoint (Linux)
 
@@ -93,7 +93,7 @@ Type " `:wq` " sans guillemets doubles.
 
 Pour afficher vos travaux cron, tapez `sudo crontab -l`
 
-:::image type="content" source="/microsoft-365/security/defender-endpoint/images/linux-mdatp-1" alt-text="linux mdatp":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp":::
 
 #### <a name="to-inspect-cron-job-runs"></a>Pour inspecter les séries de travail de cron
 

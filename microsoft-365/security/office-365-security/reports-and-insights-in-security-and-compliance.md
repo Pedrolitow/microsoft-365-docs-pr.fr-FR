@@ -19,12 +19,12 @@ description: Découvrez les rapports intelligents et les informations disponible
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9408f99b72821e6510927755a9fe6f3aa525a5e0
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 360151fa68309d53f788c18637aa95d61374b62be4815669dc22a6325caa1283
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56800348"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
 
@@ -55,19 +55,19 @@ De nombreux rapports sont disponibles dans le Centre de sécurité & conformité
 
 |Type d’information|Comment y accéder|Où aller pour en savoir plus|
 |---|---|---|
-|**Rapports du Centre & conformité de sécurité** (tous) <p> Informations et recommandations les plus importantes, et liens vers les rapports de sécurité et de conformité &, y compris les rapports de protection contre la perte de données, les étiquettes, les rapports de sécurité du courrier électronique, les rapports Defender pour Office 365, et bien plus encore|Dans le Centre de sécurité & conformité, go to **Reports** \> **Dashboard**|[Rapports dans le Centre de conformité et sécurité](../../compliance/reports-in-security-and-compliance.md)|
-|**Protection contre la perte de données** <p> Détection grâce aux politiques de prévention des pertes de données, faux positifs et dérogations, et liens pour créer ou modifier des politiques.|Dans le Centre de sécurité & conformité, allez à Stratégie de protection contre la **perte de** \> **données**|[Voir les rapports pour la prévention des pertes de données](../../compliance/view-the-dlp-reports.md)|
+|**Rapports du Centre & conformité et sécurité** (tous) <p> Informations et recommandations les plus importantes, et liens vers les rapports de sécurité et de conformité &, y compris les rapports de protection contre la perte de données, les étiquettes, les rapports de sécurité du courrier électronique, les rapports Defender pour Office 365, et bien plus encore|Dans le Centre de sécurité & conformité, go to **Reports** \> **Dashboard**|[Rapports dans le Centre de conformité et sécurité](../../compliance/reports-in-security-and-compliance.md)|
+|**Protection contre la perte de données** <p> Détection grâce aux politiques de prévention des pertes de données, faux positifs et dérogations, et liens pour créer ou modifier des politiques.|Dans le Centre de sécurité & conformité, allez à Stratégie de protection contre la **perte de** \> **données**|[Afficher les rapports pour la protection contre la perte de données](../../compliance/view-the-dlp-reports.md)|
 |**Gouvernance des données** <p> Informations sur l’application des étiquettes, les étiquettes considérées comme des enregistrements, les tendances d’étiquette et bien plus encore|Dans le Centre de sécurité & conformité, allez au Tableau **de bord de gouvernance des** \> **informations**|[Afficher les rapports de gouvernance des données](../../compliance/view-the-data-governance-reports.md)|
 |**Tableau de bord de gestion des** menaces (également appelé tableau de bord de sécurité) <p> Détections de menaces, tendances des programmes malveillants, utilisateurs les plus ciblés, détails sur les messages électroniques envoyés et reçus, et bien plus encore|Dans le Centre de sécurité & conformité, allez au **Tableau de bord de gestion des** \> **vulnérabilités**|[Afficher des rapports pour Defender pour Office 365](view-reports-for-mdo.md)|
 |**Détections** de l’Explorateur (également appelées Explorateur de **menaces)** ou en temps réel <p> Programmes malveillants suspects détectés dans les e-mails et les fichiers Microsoft 365|Dans le Centre de sécurité & conformité, allez à **l’Explorateur** de gestion des \>  vulnérabilités ou **aux détections en temps réel**<br> |[Threat Explorer (et détections en temps réel)](threat-explorer.md)|
 |**Defender for Office 365 et des rapports de sécurité de messagerie** <p> Rapports sur la sécurité du courrier électronique et la protection contre les menaces (notamment les programmes malveillants, le courrier indésirable, le hameçonnage et les rapports d’usurpation d’adresses)|Dans le Centre de sécurité & conformité, go to **Reports**  >  **Email & collaboration** Email & collaboration  >  **[reports](https://security.microsoft.com/emailandcollabreport)**|[Afficher des rapports pour Defender pour Office 365](view-reports-for-mdo.md) <p> [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)|
 |**Flux de messagerie** <p> Informations sur les messages électroniques envoyés et reçus, les alertes récentes, les expéditeurs et destinataires les plus fréquents, les rapports de transfert de courrier et plus encore|Dans le Centre de sécurité & conformité, go to **Mail flow** \> **Dashboard** and **Reports** \> **Dashboard**|[Informations sur le flux de messagerie dans le centre de sécurité et conformité](mail-flow-insights-v2.md) <p> [Afficher les rapports de flux de messagerie dans le Centre de sécurité & conformité](view-mail-flow-reports.md)|
 |**Mise en conformité GDPR** <p> Informations sur la conformité R GDPR, y compris les liens vers les personnes en question, les tendances des étiquettes et les & cas fermés|Dans le Centre de sécurité & conformité, go to **Data privacy** \> **GDPR dashboard**|[Sythèse du règlement général sur la protection des données](/compliance/regulatory/gdpr)|
-|**Journal d’audit** <p> Informations sur les activités Microsoft 365, les utilisateurs, les fichiers ou les dossiers, etc.|Dans le Centre de sécurité & conformité, recherche dans le journal d’audit & **recherche** \> |[Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
+|**Journal d’audit** <p> Informations sur les activités Microsoft 365, les utilisateurs, les fichiers ou les dossiers, etc.|Dans le Centre de sécurité & conformité, recherche dans le journal d’audit & **recherche** \> |[Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**Rapports de conformité** <p> Rapports FedRAMP, rapports sur la gouvernance, sur les risques et sur la conformité, rapports de gestion de la sécurité de l'information ISO et rapports d'audit et d'évaluation des contrôles de la société de services.|Dans le Centre de sécurité & conformité, allez aux rapports de **conformité de** \> **l’assurance service**|[Planifier la conformité des & sécurité dans Office 365](../../compliance/plan-for-security-and-compliance.md)|
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
-[Microsoft 365 Defender portail](../defender/overview-security-center.md)
+[Portail Microsoft 365 Defender](../defender/overview-security-center.md)
 
 [Se protéger contre les menaces dans Office 365](protect-against-threats.md)

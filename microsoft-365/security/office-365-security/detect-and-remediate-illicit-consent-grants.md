@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les attaques par consen
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 1f2e5139ed9c16026ec49eab9318588b7704a0fb7f690fef5ea6cc4ce3274fde
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56769968"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et corriger les octrois de consentement illicites
 
@@ -96,7 +96,7 @@ Cela vous indique les applications qui sont affectées à l’utilisateur et les
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Étapes pour que vos utilisateurs émanent l’accès à leur application
 
-Demande à vos utilisateurs d’y accéder et de consulter <https://myapps.microsoft.com> leur propre accès aux applications. Ils doivent être en mesure d’afficher toutes les applications avec accès, d’afficher les détails les concernant (y compris l’étendue de l’accès) et de révoquer des privilèges pour des applications suspectes ou illicites.
+Demande à vos utilisateurs <https://myapps.microsoft.com> d’y accéder et de consulter leur propre accès à l’application. Ils doivent être en mesure d’afficher toutes les applications avec accès, d’afficher les détails les concernant (y compris l’étendue de l’accès) et de révoquer des privilèges pour des applications suspectes ou illicites.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Étapes à suivre pour ce faire avec PowerShell
 
@@ -105,7 +105,7 @@ Le moyen le plus simple de vérifier l’attaque par consentement illicite consi
 #### <a name="pre-requisites"></a>Conditions préalables
 
 - La bibliothèque Azure AD PowerShell est installée.
-- Droits d’administrateur général sur le client sur le client sur qui le script sera exécuté.
+- Droits d’administrateur général sur le client sur qui le script sera exécuté.
 - Administrateur local sur l’ordinateur à partir duquel exécuter les scripts.
 
 > [!IMPORTANT]
@@ -162,15 +162,15 @@ Une fois que vous avez identifié une application avec des autorisations illicit
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
 
-Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la [Feuille de route du Centre de sécurité Microsoft 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Microsoft 365.
+Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la [Feuille de route du Centre de sécurité Microsoft 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours. Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
-- Tâches à accomplir dans les 90 premiers jours. Ces tâches prennent un peu plus de temps à planifier et à implémenter, mais augmentent considérablement votre sécurité.
-- Au-delà de 90 jours. Ces améliorations sont à mettre en place pendant les 90 premiers jours.
+- Tâches à accomplir en 90 jours. Celles-ci prennent un peu plus de temps à planifier et à implémenter, mais améliorent considérablement votre posture de sécurité.
+- Au-delà de 90 jours. Ces améliorations s’appuient sur vos 90 premiers jours de travail.
 
 ## <a name="see-also"></a>Voir aussi
 
-- Une application inattendue dans ma liste [d’applications](/azure/active-directory/application-access-unexpected-application) permet aux administrateurs d’accéder aux différentes actions qu’ils souhaitent peut-être réaliser après avoir réalisé qu’il existe des applications inattendues ayant accès aux données.
+- [Une application inattendue dans la](/azure/active-directory/application-access-unexpected-application) liste des applications permet aux administrateurs d’accéder aux différentes actions qu’ils souhaitent peut-être réaliser après avoir réalisé qu’il existe des applications inattendues ayant accès aux données.
 - [L’intégration d’applications Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) est une vue d’ensemble générale du consentement et des autorisations.
 - [Les problèmes liés au développement de mon application](/azure/active-directory/active-directory-application-dev-development-content-map) fournissent des liens vers différents articles relatifs au consentement.
 - Les objets principaux d’application et de service dans [Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) offrent une vue d’ensemble des objets principaux d’application et de service qui sont essentiels au modèle d’application.

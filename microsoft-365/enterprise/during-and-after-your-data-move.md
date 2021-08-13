@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations de base qui se produisent lorsque Microsoft déplace les services et les données associées de votre client vers une nouvelle géo de centres de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c0ea94a80de993d4d1341b8f9b19850d7149583f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 10ea0e40a56c9f86d3563fca2e435d1a97b06fa6feb790591e40d41cafe94526
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891294"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -85,7 +85,7 @@ Une fois que nous aurons déplacé vos données SharePoint Online, vous pourrez 
     
 - Nous supprimons les copies transcodées du centre de données précédent et les transcodons à nouveau dans le nouveau centre de données.
     
-### <a name="search"></a>Recherche
+### <a name="search"></a>Rechercher
 
 Dans le cadre du déplacement de vos données SharePoint Online, nous migrons vos paramètres de recherche et d'index vers un nouvel emplacement. Jusqu'à la **fin** du déplacement de vos données SharePoint Online, nous continuons de desservir vos utilisateurs depuis l'index situé dans l'emplacement d'origine. Dans le nouvel emplacement, la fonction recherche démarre automatiquement une analyse de votre contenu une fois le déplacement de vos données SharePoint Online terminé. À ce moment-là, nous desservirons vos utilisateurs depuis l'index migré. Les modifications apportées à votre contenu après la migration ne sont pas prises en compte dans l'index migré tant que l'analyse ne les a pas récupérées. La plupart des clients ne remarquent pas que les résultats proposent des contenus moins récents immédiatement après la migration de leurs données SharePoint Online, mais certains peuvent s'en apercevoir au cours des 24-48 premières heures d'utilisation. 
   
@@ -112,13 +112,13 @@ En plus de Exchange Online, SharePoint Online et OneDrive Entreprise, Microsoft 
 - Teams messages de conversation, y compris les messages privés et les messages de canal.
 - Teams images utilisées dans les conversations.
 
-Teams fichiers sont stockés dans SharePoint Online et Teams de conversation sont stockés dans OneDrive Entreprise. La messagerie vocale, le calendrier, l’historique de conversation et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive Entreprise sont déjà utilisés par le client dans la région du centre de données local et font également partie du programme de migration Microsoft 365 pour les pays clients éligibles.
+Teams fichiers sont stockés dans SharePoint Online et Teams de conversation sont stockés dans OneDrive Entreprise. La messagerie vocale, le calendrier, l’historique des conversation et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive Entreprise sont déjà utilisés par le client dans la région du centre de données local et font également partie du programme de migration Microsoft 365 pour les pays clients éligibles.
 
 ## <a name="skype-for-business"></a>Skype Entreprise
 
 Skype Entreprise déplacements ne sont plus disponibles.  [Skype Entreprise Online sera retiré](/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cette période, le service n’est plus accessible. 
   
-## <a name="related-topics"></a>Voir aussi 
+## <a name="related-topics"></a>Sujets connexes 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

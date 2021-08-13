@@ -15,12 +15,12 @@ ms.custom:
 description: Découvrez comment Exchange Online Protection (EOP) peut vous aider à protéger votre organisation de messagerie sur site dans des environnements autonomes et hybrides.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 8214e4b64dbd1c89f9b393e9e88cd57e6b72dde73740874b46e4118b9916411a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930162"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56799436"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d’ensemble d’Exchange Online Protection
 
@@ -44,11 +44,11 @@ Le reste de cet article explique le fonctionnement d’EOP et les fonctionnalit�
 
 Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier entrant est traité :
 
-:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphique du courrier électronique provenant d’Internet ou des commentaires des clients passant dans EOP et via la connexion, la protection contre les programmes malveillants, le filtrage des règles de flux de messagerie et la stratégie de contenu, avant le verdict de courrier indésirable ou de mise en quarantaine, ou la remise du courrier de l’utilisateur final.":::
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphique du courrier électronique provenant d’Internet ou des commentaires des clients transitant dans EOP et via la connexion, la protection contre les programmes malveillants, le filtrage de stratégie de barre oblique de flux de messagerie et le filtrage de contenu, avant le verdict de courrier indésirable ou de mise en quarantaine, ou de remise du courrier de l’utilisateur final.":::
 
 1. Lorsqu’un message entrant entre dans EOP, il passe initialement par le filtrage des connexions, qui vérifie la réputation de l’expéditeur. La majorité du courrier indésirable est arrêté à ce stade et rejeté par EOP. Pour plus d’informations, consultez [Configuration du filtrage des connexions](configure-the-connection-filter-policy.md).
 
-2. Le message est ensuite inspecté à la recherche de programmes malveillants. Si un programme malveillant est détecté dans le message ou la ou les pièces jointes, le message est acheminé vers une mise en quarantaine de l’administrateur uniquement. Pour en savoir plus sur la protection contre les programmes malveillants, consultez la [protection contre les programmes malveillants dans EOP.](anti-malware-protection.md)
+2. Le message est ensuite inspecté à la recherche de programmes malveillants. Si un programme malveillant est détecté dans le message ou les pièces jointes, le message est acheminé vers une mise en quarantaine de l’administrateur uniquement. Pour en savoir plus sur la protection contre les programmes malveillants, consultez la [protection anti-programme malveillant dans EOP.](anti-malware-protection.md)
 
 3. Le message continue par le filtrage des stratégies, où il est évalué par rapport aux règles de flux de messagerie (également appelées règles de transport) que vous avez créées. Par exemple, une règle peut envoyer une notification à un responsable lorsqu’un message arrive d’un expéditeur spécifique.
 
@@ -100,10 +100,10 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |Courrier indésirable sortant|[Protection contre le courrier indésirable sortant dans EOP](outbound-spam-controls.md) <p> [Configurer le filtrage du courrier indésirable sortant dans EOP](configure-the-outbound-spam-policy.md) <p> [Contrôler le forwarding automatique du courrier externe dans Microsoft 365](external-email-forwarding.md)|
 |Filtrage des connexions|[Configuration du filtrage des connexions](configure-the-connection-filter-policy.md)|
 |Anti-hameçonnage|[Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)|
-|Protection contre l’usurpation d’identité|[Informations sur l’intelligence contre l’usurpation d’adresse dans EOP](learn-about-spoof-intelligence.md) <p> [Gérer la liste Autoriser/Bloquer du client](tenant-allow-block-list.md)|
+|Protection contre l’usurpation d’identité|[Informations sur l’usurpation d’intelligence dans EOP](learn-about-spoof-intelligence.md) <p> [Gérer la liste Autoriser/Bloquer du client](tenant-allow-block-list.md)|
 |Purge automatique sans heure (ZAP) pour les programmes malveillants, le courrier indésirable et les messages de hameçonnage remis|[ZAP dans Exchange Online](zero-hour-auto-purge.md)|
 |Stratégies de sécurité prédéfinies|[Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md) <p> [Analyseur de configuration des stratégies de protection dans EOP et Microsoft Defender pour Office 365](configuration-analyzer-for-security-policies.md)|
-|Liste d’locataires autoriser/bloquer|[Gérer la liste Autoriser/Bloquer du client](tenant-allow-block-list.md)|
+|Liste Autoriser/Bloquer du client|[Gérer la liste Autoriser/Bloquer du client](tenant-allow-block-list.md)|
 |Listes de blocage pour les expéditeurs de messages|[Créer des listes d’expéditeurs bloqués dans EOP](create-block-sender-lists-in-office-365.md)|
 |Autoriser les listes pour les expéditeurs de messages|[Créer des listes d’expéditeurs sûrs dans EOP](create-safe-sender-lists-in-office-365.md)|
 |Directory Based Edge Blocking (DBEB)|[Utiliser le blocage du périmètre basé sur l'annuaire pour rejeter les messages envoyés à des destinataires non valides](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|
@@ -113,7 +113,7 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |Quarantaine : administrateurs|[Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell](manage-quarantined-messages-and-files.md) <p> [FAQ sur les messages mis en quarantaine](quarantine-faq.yml) <p> [Signaler les messages et fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) <p> [En-têtes de message anti-courrier indésirable dans Microsoft 365](anti-spam-message-headers.md) <p> Vous pouvez analyser les en-têtes de message des messages mis en quarantaine à l’aide de l’analyseur [d’en-tête de message sur](https://mha.azurewebsites.net/).|
 |Quarantaine : utilisateurs finaux|[Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Exchange Online PowerShell](find-and-release-quarantined-messages-as-a-user.md) <p> [Utiliser les notifications de courrier indésirable de l’utilisateur pour libérer et signaler les messages mis en quarantaine](use-spam-notifications-to-release-and-report-quarantined-messages.md)|
 |**Flux de messagerie**||
-|Règles de flux de messagerie|[Règles de flux de messagerie (règles de transport) dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Conditions de règle de flux de messagerie et exceptions (prédicats) dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Actions de règle de flux de courrier dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Gérer les règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procédures de règle de flux de messagerie Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
+|Règles de flux de messagerie|[Règles de flux de messagerie (règles de transport) dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Conditions de règle de flux de messagerie et exceptions (prédicats) dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Actions de règle de flux de courrier dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Gérer les règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procédures de règle de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
 |Domaines acceptés|[Gestion des domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)|
 |Connecteurs|[Configurer le flux de messagerie à l’aide de connecteurs dans Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)|
 |Filtrage amélioré pour les connecteurs|[Filtrage amélioré pour les connecteurs dans Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)|
@@ -121,7 +121,7 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |Suivi des messages|[Suivi des messages](message-trace-scc.md) <p> [Suivi des messages dans le centre d Exchange’administration de l’utilisateur](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
 |Envoyer des & rapports de collaboration|[Afficher les rapports sur la sécurité des e-mails](view-email-security-reports.md)|
 |Rapports de flux de messagerie|[Afficher les rapports sur les flux de courrier](view-mail-flow-reports.md) <p> [Rapports de flux de messagerie dans le centre d Exchange’administration de l’utilisateur](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|Informations sur le flux de messagerie|[Informations sur le flux de messagerie](mail-flow-insights-v2.md) <p> [Informations sur le flux de messagerie dans le centre d Exchange’administration de l’utilisateur](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
+|Informations sur le flux de messagerie|[Informations sur le flux de messagerie](mail-flow-insights-v2.md) <p> [Informations sur le flux de messagerie dans le Centre d Exchange de messagerie](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
 |Rapports d’audit|[Rapports d’audit dans le centre d Exchange’administration de l’utilisateur](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
 |Stratégies d’alerte|[Stratégies d’alerte](../../compliance/alert-policies.md)|
 |**Contrats de niveau de service (SLA) et prise en charge**||
@@ -132,6 +132,6 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |Support technique par téléphone ou par Internet 24 heures sur 24, 7 jours sur 7|[Aide et support pour EOP](help-and-support-for-eop.md).|
 |**Autres fonctionnalités**||
 |Réseau de serveurs mondial géo-redondant|EOP s'exécute sur un réseau mondial de centres de données conçus pour contribuer à offrir une disponibilité optimale. Pour plus d’informations, consultez la section des centres de données [EOP](#eop-datacenters) plus tôt dans cet article.|
-|Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages en attente restent dans nos files d’attente pendant un jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.yml).|
+|Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages de report restent dans nos files d’attente pendant un jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.yml).|
 |chiffrement de messages Office 365 disponible en tant qu’modules|Pour plus d'informations, voir [Chiffrement dans Office 365](../../compliance/encryption.md).|
 |||

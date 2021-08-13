@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8eb8d01b9bdee78720daf18fb60d680e0a10ec01
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 9e3d9854fea08042c8a06344fc132ee7cf56e20271d43f2f623881555ce25f47
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52294946"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803893"
 ---
 # <a name="contact-support-for-zambia"></a>Contacter le support technique pour la Tanzanie
 
@@ -33,6 +33,6 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

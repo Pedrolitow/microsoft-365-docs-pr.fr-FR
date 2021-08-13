@@ -1,5 +1,5 @@
 ---
-title: Configurer des sources de contenu d’apprentissage pour Microsoft Learning (prévisualisation) dans le Centre d’administration Microsoft 365
+title: Configurer des sources de contenu d’apprentissage Apprentissage Microsoft Viva (prévisualisation) dans le Centre d’administration Microsoft 365
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: Découvrez comment configurer des sources de contenu d’apprentissage pour Microsoft Learning (prévisualisation) dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: ac9ec6196f758d3ed02d3a102fef80b8a7adeeaa
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: Découvrez comment configurer des sources de contenu d’apprentissage pour Apprentissage Microsoft Viva (prévisualisation) dans le Centre d’administration Microsoft 365.
+ms.openlocfilehash: f7a712d2b7d4fa2635a27f4d1e36893c75c6f9b120503efba676bdd37e0ab1d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891230"
 ---
-# <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurer des sources de contenu d’apprentissage pour Microsoft Learning (prévisualisation) dans le Centre d’administration Microsoft 365
+# <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurer des sources de contenu d’apprentissage Apprentissage Microsoft Viva (prévisualisation) dans le Centre d’administration Microsoft 365
 
 > [!NOTE]
 > Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. 
@@ -115,4 +115,4 @@ Vous devez travailler avec le fournisseur du service non-Microsoft pour accéder
 
 ## <a name="next-step"></a>Étape suivante
 
-[Configurer SharePoint comme source de contenu d’apprentissage pour Microsoft Learning (Prévisualisation)](configure-sharepoint-content-source.md)
+[Configurer SharePoint comme source de contenu d’apprentissage pour Apprentissage Microsoft Viva (aperçu)](configure-sharepoint-content-source.md)

@@ -17,12 +17,12 @@ ms.collection:
 description: Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour protéger nos utilisateurs contre les courriers électroniques abusifs, indésirables ou malveillants.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f1a71b891829a2c9ea31502342c855db4126a6b5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 436c7d86ceea6a95d95e8787ea651012c43dfe314e35f146ef3cf1e1215bc2ed
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56799346"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
 
@@ -35,11 +35,11 @@ ms.locfileid: "51204339"
 
 Microsoft s'engage à vous fournir l'expérience utilisateur la plus fiable sur le web. Par conséquent, Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour aider à protéger ses utilisateurs contre les messages abusifs, indésirables ou malveillants. Les expéditeurs qui tentent d’envoyer des courriers électroniques aux utilisateurs doivent s’assurer qu’ils comprennent parfaitement et suivent les instructions de cet article pour vous aider dans cet effort et éviter les problèmes de remise potentiels.
 
-Si vous ne respectez pas ces instructions et stratégies, il se peut que notre équipe de support ne puisse pas vous assister. Si les problèmes de livraison basés sur votre adresse IP d'envoi persistent bien que vous suiviez les instructions, pratiques et stratégies présentées dans cet article, suivez la procédure d'envoi d'une demande de retrait de la liste. Pour obtenir des instructions, voir Utiliser le portail Supprimer de la liste pour vous supprimer de la [liste des expéditeurs bloqués.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
+Si vous ne respectez pas ces instructions et stratégies, il se peut que notre équipe de support ne puisse pas vous assister. Si les problèmes de livraison basés sur votre adresse IP d'envoi persistent bien que vous suiviez les instructions, pratiques et stratégies présentées dans cet article, suivez la procédure d'envoi d'une demande de retrait de la liste. Pour obtenir des instructions, voir Utiliser le portail Supprimer de la liste pour vous supprimer de la liste des [expéditeurs bloqués.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
 
 ## <a name="general-microsoft-policies"></a>Stratégies générales Microsoft
 
-Les courriers électroniques envoyés Microsoft 365 utilisateurs doivent se conformer à toutes les stratégies Microsoft régissant la transmission et l’utilisation des Microsoft 365.
+Les messages électroniques envoyés Microsoft 365 utilisateurs doivent se conformer à toutes les stratégies Microsoft régissant la transmission et l’utilisation des Microsoft 365.
 
 - Conditions d’utilisation applicables aux Microsoft 365 ; en particulier, l’interdiction d’utiliser le service pour le courrier indésirable ou la distribution de programmes malveillants.
 
