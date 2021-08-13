@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Recherchez Microsoft 365 références de cmdlet PowerShell pour Azure AD, Exchange Online, SharePoint Online, Skype Entreprise Online et sécurité & conformité.
-ms.openlocfilehash: 9f47b5d1aecfad59c920d2af8d8fdecc420f76d0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 8dbff4261ae3403b1851b30c817277d4838be5ee3455fa5027a070e80ace229e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830370"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Références de cmdlet pour les services Microsoft 365
 

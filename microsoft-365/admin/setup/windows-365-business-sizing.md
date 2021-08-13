@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Découvrez les options recommandées de resserrement de PC cloud pour Windows 365 Entreprise.
-ms.openlocfilehash: 5ee54c47db697ab0cbd3e1f24e5af4897a3ac93b
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 9119148b7b698b65de8d619e6598558b83d6b2e5624487648dae9aff21b35753
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726563"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838438"
 ---
 # <a name="windows-365-business-sizing-options"></a>Windows 365 Business
 

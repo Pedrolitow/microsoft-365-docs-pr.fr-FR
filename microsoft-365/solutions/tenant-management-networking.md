@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimisez l’accès réseau à vos Microsoft 365 client.
-ms.openlocfilehash: cf9591d2ec027c42f5ef9e7abac6dc9b06744a81
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6741c47fac4cadab8a6c5df7febc07250219072a4429abe15bf6ba97e41cbeeb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229178"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804518"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
 
@@ -64,7 +64,7 @@ Si vous implémentez ces principes, vous obtenez un réseau d’entreprise optim
 
 ![Un réseau d’entreprise optimisé pour Microsoft 365](../media/tenant-management-overview/tenant-management-networking-optimized.png)
 
-Dans cette illustration, les succursales ont leur propre connexion Internet via un périphérique wan (SDWAN) défini par logiciel, qui envoie le trafic Microsoft 365 approuvé vers la porte d’entrée la plus proche au niveau régional. Au siège social, le trafic Microsoft 365 de confiance contourne le périphérique de sécurité ou de proxy et les périphériques intermédiaires ne sont plus utilisés.
+Dans cette illustration, les succursales ont leur propre connexion Internet via un périphérique wan (SDWAN) défini par logiciel, qui envoie le trafic Microsoft 365 approuvé vers la porte frontale la plus proche au niveau régional. Au siège social, le trafic Microsoft 365 de confiance contourne le périphérique de sécurité ou de proxy et les périphériques intermédiaires ne sont plus utilisés.
 
 Voici comment la configuration optimisée résout les problèmes de latence d’un réseau d’entreprise traditionnel :
 
@@ -84,7 +84,7 @@ Dans cette illustration, le trafic Microsoft 365 doit prendre un itinéraire ind
 
 La segmentation de tunnel vous permet de configurer votre client VPN pour empêcher l’envoi de certains types de trafic sur la connexion VPN vers le réseau de l’organisation.
 
-Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos clients VPN avec la segmentation de tunnel afin d’exclure le trafic vers la catégorie **Optimiser** des points de terminaison Microsoft 365 sur la connexion VPN. Pour plus d’informations, voir Office 365 [](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) [catégories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) de points de terminaison et les listes des points de terminaison de catégorie Optimiser pour la tunnellation fractionner.
+Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos clients VPN avec la segmentation de tunnel afin d’exclure le trafic vers la catégorie **Optimiser** des points de terminaison Microsoft 365 sur la connexion VPN. Pour plus d’informations, voir Office 365 [](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) [catégories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) de points de terminaison et les listes des points de terminaison de catégorie Optimiser pour la tunnellation fractionner.
 
 Voici le flux de trafic résultant pour le tunneling fractionné, dans lequel la plupart du trafic vers Microsoft 365 applications cloud contournent la connexion VPN.
 
@@ -92,7 +92,7 @@ Voici le flux de trafic résultant pour le tunneling fractionné, dans lequel la
 
 Dans cette illustration, le client VPN envoie et reçoit un trafic de service cloud Microsoft 365 essentiel directement via Internet et vers la porte d’accès la plus proche dans le réseau global Microsoft.
 
-Pour plus d’informations et de conseils, voir [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel de VPN](../enterprise/microsoft-365-vpn-split-tunnel.md).
+Pour plus d’informations et de conseils, voir [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel de VPN](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
 ## <a name="using-network-insights-preview"></a>Utilisation de la Informations réseau (prévisualisation)
 
@@ -145,7 +145,7 @@ Le processus de base est :
 
 Pour plus d’informations, [voir Office 365'adresse IP et le service web d’URL.](../enterprise/microsoft-365-ip-web-service.md)
 
-## <a name="results-of-step-2"></a>Résultats de l’étape 2
+## <a name="results-of-step-2"></a>Résultats de l’étape 2
 
 Pour votre client Microsoft 365 avec une mise en réseau optimale, vous avez déterminé :
 

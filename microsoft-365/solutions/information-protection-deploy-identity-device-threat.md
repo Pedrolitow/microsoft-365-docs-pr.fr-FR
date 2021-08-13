@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Empêcher les violations de données personnelles avec des services de protection contre les identités, appareils et menaces Microsoft 365.
-ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2f5c131a079804ed1884a4a86d759b232f5305f1cc14272b290844fe5872067
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199464"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804719"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Utiliser la protection des identités, des appareils et des menaces pour la réglementation sur la confidentialité des données
 
 Microsoft 365 offre un certain nombre de fonctionnalités de protection contre les menaces, les appareils et les identités que les organisations peuvent utiliser pour se conformer aux réglementations de conformité liées à la confidentialité des données. Cet article décrit les exigences des réglementations en matière de confidentialité des données dans ces domaines et fournit une liste des fonctionnalités et services Microsoft 365 connexes avec des liens vers des informations supplémentaires pour vous aider à répondre aux exigences d’implémentation.
 
-## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>Relation entre l’identité, l’appareil et la protection contre les menaces par rapport à la réglementation sur la confidentialité des données
+## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>Lien entre l’identité, l’appareil et la protection contre les menaces par rapport à la réglementation sur la confidentialité des données
 
 Bien que les réglementations en matière de confidentialité des données varient en fonction de leur spécificité, la nature de ce qu’elles appellent est incorporée dans l’article 5(1)(f) du R GDPR, qui stipule que :
 
@@ -74,8 +74,8 @@ Utilisez [Exchange Online Protection et Microsoft Defender pour Office 365](../s
 
 - Activer l’authentification de l’expéditeur (SPF, DMARC et DKIM).
 - Configurer Microsoft Defender pour Office 365 stratégies anti-hameçonnage.
-- Implémenter les pièces jointes sécurisées.
-- Implémenter des liens sécurisés.
+- Implémentez Coffre pièces jointes.
+- Implémentez Coffre liens de mise en œuvre.
 - Implémenter des stratégies de détection et de réponse aux programmes malveillants.
 - Implémenter des stratégies de courrier indésirable sortant et entrant.
 

@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 5aaaa0ae3c36e04a73f65df114c8927e59b6a259
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 952916fe3f27a9aa8519682f88de5ee1a3838b0e97f97ece519b6f906c016dc7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838450"
 ---
 # <a name="test-package-guidelines"></a>Recommandations en matière de package de test
 
@@ -27,7 +27,7 @@ ms.locfileid: "53650102"
 
 Lorsque vous téléchargez un .zip sur le portail, nous dézipons tout le contenu de ce fichier dans un dossier racine. Vous n’avez pas besoin d’écrire de code pour cette opération de dézipage initiale. Vous pouvez également référencer n’importe quel fichier dans le .zip en utilisant le chemin d’accès relatif au fichier zip téléchargé.
 
-Dans l’exemple ci-dessous, nous montrons comment vous pouvez référencer vos binaires/scripts à partir du champ d’entrée dans l’onglet Tâches. Le texte en bleu doit être entré dans le champ de chemin **d’accès** script **sans les guillemets.**
+Dans l’exemple ci-dessous, nous montrons comment vous pouvez référencer vos binaires/scripts à partir du champ d’entrée dans l’onglet Tâches. Le texte en bleu doit être entré dans le champ de chemin **d’accès script** **sans les guillemets.**
 
 Il est important de connaître le contenu de votre fichier zip avant de le télécharger. Souvent, lorsque vous compressez un dossier, votre ordinateur local crée un dossier principal sous le fichier zip. Dans ce cas, le référencement sera affiché en **gras** ci-dessous :
 
@@ -93,7 +93,7 @@ Chaque script doit vérifier qu’il a été correctement lancé. Par exemple, l
 La validation est nécessaire pour diagnostiquer correctement l’endroit où des erreurs se produisent au cours d’une analyse. Par exemple, si le script ne parvient pas à installer l’application ou ne peut pas la lancer.
 
 > [!IMPORTANT]
-> **Évitez les problèmes suivants :** Les scripts ne doivent pas redémarrer l’ordinateur, si un redémarrage est nécessaire, veuillez le spécifier lors du chargement de vos scripts.
+> **Évitez les problèmes suivants :** Les scripts ne doivent pas redémarrer l’ordinateur, si un redémarrage est nécessaire, veuillez le spécifier pendant le chargement de vos scripts.
 
 ## <a name="3-log-collection"></a>3. Collection de journaux
 

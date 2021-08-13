@@ -1,5 +1,5 @@
 ---
-title: 'Mise en réseau (vers le cloud) : l’œuvre d’un architecte'
+title: 'Mise en réseau (vers le cloud) : une architecture se fait une place'
 description: Découvrez comment optimiser votre réseau pour la connectivité cloud en évitant les pièges les plus courants.
 ms.author: bcarter
 author: brendacarter
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7de9aec29b0a57e85e3539fc2e99384de545c52a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f1d3bcf269211dc00702c08c22ff0c6f6055b1b63f6bfd351d5aba7679b82978
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804755"
 ---
-# <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>Mise en réseau (vers le cloud) : l’œuvre d’un architecte
+# <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>Mise en réseau (vers le cloud) : une architecture se fait une place
 
 Dans cet article, [Ed Fisher,](https://www.linkedin.com/in/edfisher/)architecte de sécurité & conformité chez Microsoft, explique comment optimiser votre réseau pour la connectivité cloud en évitant les pièges les plus courants. 
 
@@ -28,7 +28,7 @@ Dans cet article, [Ed Fisher,](https://www.linkedin.com/in/edfisher/)architecte 
 
 ![Photo Ed Fisher](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
 
-Je suis actuellement spécialiste technique principal dans la région Sud-Est et je me concentre sur la sécurité & conformité. J’ai travaillé avec des clients qui sont passés à Office 365 au cours des 10 dernières années. J’ai travaillé avec des boutiques de petite taille avec quelques emplacements pour les agences gouvernementales et les entreprises avec des millions d’utilisateurs répartis dans le monde entier, et de nombreux autres clients entre eux, la majorité ayant des dizaines de milliers d’utilisateurs, plusieurs emplacements dans différentes régions du monde, le besoin d’un niveau de sécurité plus élevé et une multitude d’exigences de conformité. J’ai aidé des centaines d’entreprises et des millions d’utilisateurs à se déplacer vers le cloud en toute sécurité.
+Je suis actuellement spécialiste technique principal dans la région Sud-Est et je me concentre sur la sécurité & conformité. J’ai travaillé avec des clients qui Office 365 depuis 10 ans. J’ai travaillé avec des boutiques de petite taille avec quelques emplacements pour les agences gouvernementales et les entreprises avec des millions d’utilisateurs répartis dans le monde entier, et de nombreux autres clients entre eux, la majorité ayant des dizaines de milliers d’utilisateurs, plusieurs emplacements dans différentes régions du monde, le besoin d’un niveau de sécurité plus élevé et une multitude d’exigences de conformité. J’ai aidé des centaines d’entreprises et des millions d’utilisateurs à se déplacer vers le cloud en toute sécurité.
 
 Avec une expérience au cours des 25 dernières années qui inclut la sécurité, l’infrastructure et l’ingénierie réseau, et ayant déplacé deux de mes précédents employeurs vers Office 365 avant de rejoindre Microsoft, j’ai été de votre côté du tableau à de nombreuses reprises et ne vous souvenez pas de ce que c’est. Même si deux clients ne sont jamais identiques, la plupart ont des besoins similaires et lorsque vous consommez un service standardisé tel que n’importe quelle plateforme SaaS ou PaaS, les meilleures approches ont tendance à être les mêmes.
 
@@ -42,13 +42,13 @@ Lorsque ce genre de chose est resserrée pour moi, j’accepte généralement de
 
 Commençons par quelques règles de base relatives à ce que nous faisons ici. Nous abordons la façon de se connecter en toute sécurité aux services cloud pour garantir la complexité minimale et les performances maximales, tout en conservant une sécurité réelle. Rien de ce qui suit n’est contredessant tout cela, même si vous ou votre client, n’êtes pas en mesure d’utiliser votre serveur proxy favori pour tout.
 
-- **Ce n’est pas** parce que vous le pouvez que vous devez : Ou pour parrasser Dr. Dr. Films à partir du film Parcage De Park « ... Oui, oui, mais votre équipe de sécurité était si préoccupé par le fait qu’elle pouvait ou non ne pas s’arrêter de penser s’il le devrait. »
+- **Ce n’est pas** parce que vous le pouvez que vous devez : ou pour parrasesser Dr. Dr. Dr. ContrôleSe à partir du film Parcage De Park « ... Oui, oui, mais votre équipe de sécurité était si préoccupé par le fait qu’il pouvait ou non ne pas s’arrêter de penser s’il le devrait. »
 - **La sécurité ne signifie pas de** la complexité : vous n’êtes pas plus sécurisé simplement parce que vous dépensez plus d’argent, que vous passez par plusieurs appareils ou que vous cliquez sur d’autres boutons.
 - **Office 365 est accessible sur Internet**: mais ce n’est pas la même chose qu’Office 365'internet. Il s’agit d’un service SaaS géré par Microsoft et géré par vous. Contrairement aux sites web que vous visitez sur Internet, vous êtes en réalité en train de jeter un œil à la réalité et vous pouvez appliquer les contrôles dont vous avez besoin pour respecter vos stratégies et vos normes de conformité, tant que vous comprenez que même si vous pouvez atteindre vos objectifs, vous devrez peut-être simplement les faire d’une autre manière.
 - Les points de terminaison sont mauvais, les **coupures localisées** sont bonnes : tout le monde veut toujours retourner tout son trafic Internet pour tous ses utilisateurs vers un point central, généralement pour pouvoir la surveiller et appliquer la stratégie, mais souvent parce qu’il est moins coûteux que de mettre en service l’accès à Internet à tous ses emplacements, ou c’est simplement la façon dont ils le font. Mais ces points de terminaison sont exactement comme cela... points où le trafic se pointe. Il n’y a rien de mal à empêcher vos utilisateurs de naviguer vers Streaming ou de diffuser en continu des vidéos cat, mais ne traitez pas votre trafic d’application métier critique de la même manière.
 - Si **DNS n’est pas satisfait, il n’est** pas satisfait : le réseau le mieux conçu peut être mis en cache par un DNS médiocre, que ce soit en récursant des demandes à des serveurs dans d’autres régions du monde ou en utilisant les serveurs DNS de votre isp ou d’autres serveurs DNS publics qui cachent les informations de résolution DNS.
 - Le simple fait que vous utilisiez cette technique ne signifie pas que vous devez le faire maintenant : la technologie change constamment et Office 365 **n’est** pas une exception. L’application de mesures de sécurité développées et déployées pour des services locaux ou pour contrôler la sécurité web ne fournira pas le même niveau d’assurance de sécurité et peut avoir un impact négatif significatif sur les performances.
-- **Office 365 a été conçu pour être accessible sur Internet**: il s’agit d’un résumé. Quelle que soit la relation entre vos utilisateurs et votre périphérie, le trafic passe toujours par Internet une fois qu’il quitte votre réseau et avant d’être sur le notre. Même si vous utilisez Azure ExpressRoute pour router du trafic sensible de latence de votre réseau directement vers le notre, la connectivité Internet est absolument nécessaire. Acceptez-le. Ne le suressoyez pas.
+- **Office 365 a été conçu pour être accessible sur Internet**: il s’agit d’un résumé. Quelle que soit la relation entre vos utilisateurs et votre périphérie, le trafic passe toujours par Internet une fois qu’il quitte votre réseau et avant d’être sur le notre. Même si vous utilisez Azure ExpressRoute pour router du trafic sensible de latence de votre réseau directement vers le notre, la connectivité Internet est absolument nécessaire. Acceptez-le. Ne le sursessoyez pas.
 
 ## <a name="where-bad-choices-are-often-made"></a>L’endroit où les choix sont souvent effectués
 
@@ -62,7 +62,7 @@ La bande passante est toujours un problème, mais les périphériques NAT peuven
 
 ### <a name="localized-breakout"></a>Breakout localisée
 
-Tout le reste de cette liste revient à une chose : sortir de votre réseau et sur le notre aussi rapidement que possible. La rétrogradation du trafic de vos utilisateurs vers un point de sortie central, en particulier lorsque ce point de sortie se trouve dans une autre région que celle de vos utilisateurs, introduit une latence inutile et a un impact à la fois sur l’expérience client et les vitesses de téléchargement. Microsoft dispose de points de présence dans le monde entier avec des serveurs frontaux pour tous nos services  et l’peering établi avec pratiquement tous les principaux isP, de sorte que le routage du trafic de vos utilisateurs localement garantit qu’il arrive rapidement sur notre réseau avec une latence minimale.
+Tout le reste de cette liste revient à une chose : sortir de votre réseau et sur le notre aussi rapidement que possible. La rétrogradation du trafic de vos utilisateurs vers un point de sortie central, en particulier lorsque ce point de sortie se trouve dans une autre région que les utilisateurs, introduit une latence inutile et a un impact à la fois sur l’expérience client et les vitesses de téléchargement. Microsoft dispose de points de présence dans le monde entier avec des serveurs frontaux pour tous nos services  et l’peering établi avec pratiquement tous les principaux isp isp, de sorte que le routage du trafic de vos utilisateurs localement garantit qu’il arrive rapidement dans notre réseau avec une latence minimale.
 
 ### <a name="dns-resolution-traffic-should-follow-the-internet-egress-path"></a>Le trafic de résolution DNS doit suivre le chemin de sortie Internet
 
@@ -70,7 +70,7 @@ Bien entendu, pour qu’un client trouve un point de terminaison, il doit utilis
 
 ### <a name="to-proxy-or-not-to-proxy-that-is-the-question"></a>Pour proxyer ou non proxy, c’est la question
 
-L’une des premières choses à prendre en compte est de savoir s’il faut proxyer les connexions des utilisateurs Office 365. Celui-ci est facile ; ne pas proxy. Office 365 est accessible via Internet, mais il ne s’agit pas d’Internet. Il s’agit d’une extension de vos services principaux et doit être traitée comme telle. Tout ce que vous souhaitez peut-être qu’un proxy, comme la DLP, le logiciel anti-programme malveillant ou l’inspection du contenu, soit déjà disponible dans le service, soit utilisé à grande échelle et sans avoir à déchiffrer les connexions chiffrées par TLS. Mais si vous souhaitez vraiment proxy trafic que vous ne pouvez pas autrement contrôler, faites attention à nos conseils et les [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) catégories de trafic à [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) . Nous avons trois catégories de trafic pour Office 365. Optimiser et autoriser doit vraiment aller directement et contourner votre proxy. La valeur par défaut peut être resserée par proxi. Les détails sont dans ces documents... lisez-les.
+L’une des premières choses à prendre en compte est de savoir s’il faut proxyer les connexions des utilisateurs Office 365. Celui-ci est facile ; ne pas proxy. Office 365 est accessible via Internet, mais il ne s’agit pas d’Internet. Il s’agit d’une extension de vos services principaux et doit être traitée comme telle. Tout ce que vous souhaitez peut-être qu’un proxy, comme la DLP, le logiciel anti-programme malveillant ou l’inspection du contenu, soit déjà disponible dans le service, soit utilisé à grande échelle et sans avoir à déchiffrer les connexions chiffrées par TLS. Mais si vous souhaitez vraiment proxy trafic que vous ne pouvez pas autrement contrôler, faites attention à nos conseils et les [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) catégories de trafic à [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) . Nous avons trois catégories de trafic pour Office 365. Optimiser et autoriser doit vraiment aller directement et contourner votre proxy. La valeur par défaut peut être parxied. Les détails sont dans ces documents... lisez-les.
 
 La plupart des clients qui demandent l’utilisation d’un proxy, lorsqu’ils voient réellement ce qu’ils font, se rendent compte que lorsque le client effectue une demande HTTP CONNECT au proxy, le proxy n’est plus qu’un routeur supplémentaire coûteux. Les protocoles utilisés tels que MAPI et RTC ne sont même pas des protocoles que les proxies web comprennent. Ainsi, même avec la fissuration TLS, vous n’êtes pas vraiment en mesure d’obtenir une sécurité supplémentaire. Vous *avez une* latence supplémentaire. Pour [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) plus d’informations, notamment sur les catégories Optimiser, Autoriser et Par défaut, Microsoft 365 trafic.
 
@@ -88,7 +88,7 @@ Lorsque vous n’autorisez pas le trafic UDP sortant des clients vers le service
 
 Mais ce n’est pas le cas. Toutes les connexions à Office 365 sont sur TLS. Nous proposons TLS 1.2 depuis un certain temps et nous allons bientôt désactiver les versions antérieures, car les clients hérités les utilisent toujours et c’est un risque.
 
-Le fait de forcer une connexion TLS, ou 32 d’entre elles, à passer par un VPN avant de passer au service n’ajoute pas de sécurité. Elle ajoute de la latence et réduit le débit global. Dans certaines solutions VPN, cela force même UDP à tunneler via TCP, ce qui aura à nouveau un impact très négatif sur le trafic de diffusion en continu. Et, sauf si vous faites une inspection TLS, il n’y a aucun inconvénient, c’est tout l’inconvénient. L’un des thèmes les plus courants chez les clients, maintenant que la plupart de leurs employés sont distants, est qu’ils voient un impact significatif sur la bande passante et les performances en faisant en sorte que tous leurs utilisateurs se connectent à l’aide d’un VPN, au lieu de configurer le tunneling fractionnel pour l’accès aux points de terminaison de catégorie [optimiser Office 365.](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)
+Le fait de forcer une connexion TLS, ou 32 d’entre elles, à passer par un VPN avant de passer au service n’ajoute pas de sécurité. Elle ajoute de la latence et réduit le débit global. Dans certaines solutions VPN, cela force même UDP à tunneler via TCP, ce qui aura à nouveau un impact très négatif sur le trafic de diffusion en continu. Et, sauf si vous faites une inspection TLS, il n’y a aucun inconvénient, c’est tout l’inconvénient. L’un des thèmes les plus courants chez les clients, maintenant que la plupart de leurs employés sont distants, est qu’ils voient un impact significatif sur la bande passante et les performances en faisant en sorte que tous leurs utilisateurs se connectent à l’aide d’un VPN, au lieu de configurer un tunneling fractionnel pour l’accès aux points de terminaison de la catégorie [Optimiser Office 365.](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)
 
 Il s’agit d’un correctif simple pour la tunnellation fractionner et c’est l’une des choses que vous devez faire. Pour plus d’informations, veillez à consulter Optimiser la Office 365 pour les utilisateurs distants à l’aide de [la tunneling fractionnement VPN.](../enterprise/microsoft-365-vpn-split-tunnel.md)
 
@@ -96,13 +96,13 @@ Il s’agit d’un correctif simple pour la tunnellation fractionner et c’est 
 
 Bien souvent, les mauvaises décisions proviennent d’une combinaison (1) de non-connaissance du fonctionnement du service, (2) d’une tentative d’adhésion aux stratégies d’entreprise écrites avant l’adoption du cloud et (3) d’équipes de sécurité qui ne sont peut-être pas faciles à comprendre qu’il existe plusieurs façons d’atteindre leurs objectifs. Nous espérons que les liens ci-dessus vous aideront pour la première. Le soutien exécutif peut être requis pour passer au-delà de la seconde. La protection des objectifs des stratégies de sécurité, plutôt que leurs méthodes, est utile avec le troisième. De l’accès conditionnel à la modération de contenu, de la protection contre la protection des informations, de la validation des points de terminaison aux menaces zero-day, tout objectif final qu’une stratégie de sécurité raisonnable peut avoir peut être atteint avec ce qui est disponible dans Office 365 et sans dépendance vis-à-vis de l’engrenage réseau local, des tunnel VPN forcés et des coupures et inspections TLS.
 
-D’autres fois, le matériel qui a été dimensionnée et achetée avant que l’organisation ne commence à passer au cloud ne peut simplement pas être mis à l’échelle pour gérer les nouveaux modèles et charges de trafic. Si vous devez véritablement router tout le trafic via un point de sortie unique et/ou le proxy, soyez prêt à mettre à niveau l’équipement réseau et la bande passante en conséquence. Surveillez attentivement l’utilisation sur les deux, car l’expérience ne diminue pas lentement à mesure que de plus en plus d’utilisateurs sont intégrés. Tout se passera bien jusqu’à ce que le point de conseil soit atteint, tout le monde en sera atteint.
+D’autres fois, le matériel qui a été dimensionnée et achetée avant que l’organisation ne commence à passer au cloud ne peut simplement pas être mis à l’échelle pour gérer les nouveaux modèles et charges de trafic. Si vous devez véritablement router tout le trafic via un point de sortie unique et/ou le proxy, soyez prêt à mettre à niveau l’équipement réseau et la bande passante en conséquence. Surveillez attentivement l’utilisation sur les deux, car l’expérience ne diminue pas lentement à mesure que de plus en plus d’utilisateurs sont intégrés. Tout se passera bien jusqu’à ce que le point d’adage soit atteint, tout le monde en sera atteint.
 
 ## <a name="exceptions-to-the-rules"></a>Exceptions aux règles
 
 Si votre organisation nécessite des [restrictions](/azure/active-directory/manage-apps/tenant-restrictions)de client, vous devez utiliser un proxy avec une coupure TLS et une inspection pour forcer un certain trafic via le proxy, mais vous n’avez pas à forcer tout le trafic à le traverser.  Il ne s’agit pas d’une proposition tout ou rien. Soyez donc attentif aux modifications que doit modifier le proxy.
 
-Si vous comptez autoriser la tunnelisation fractionnée, mais également utiliser un proxy pour le trafic web général, assurez-vous que votre fichier PAC définit ce qui doit être directement défini, ainsi que la façon dont vous définissez le trafic intéressant pour ce qui passe par le tunnel VPN. Nous proposons des exemples de fichiers PAC [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) qui facilitent cette gestion.
+Si vous comptez autoriser la tunnellisation fractionnée, mais également utiliser un proxy pour le trafic web général, assurez-vous que votre fichier PAC définit ce qui doit être direct, ainsi que la façon dont vous définissez le trafic intéressant pour ce qui passe par le tunnel VPN. Nous proposons des exemples de fichiers PAC [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) qui facilitent cette gestion.
 
 ## <a name="conclusion"></a>Conclusion
 
@@ -114,9 +114,9 @@ Quels que soient les objectifs de sécurité que vous avez en jeu, il existe des
 
 [Principes Office 365 la connectivité réseau](../enterprise/microsoft-365-network-connectivity-principles.md)
 
-[URL et plages d’adresses IP Office 365](../enterprise/urls-and-ip-address-ranges.md)
+[URL et plages d’adresses IP Office 365](../enterprise/urls-and-ip-address-ranges.md)
 
-[Gestion des points de terminaison Office 365](../enterprise/managing-office-365-endpoints.md)
+[Gestion des points de terminaison Office 365](../enterprise/managing-office-365-endpoints.md)
 
 [Service web URL et adresses IP Office 365](../enterprise/microsoft-365-ip-web-service.md)
 
@@ -124,9 +124,9 @@ Quels que soient les objectifs de sécurité que vous avez en jeu, il existe des
 
 [Paramétrage des performances et du réseau Office 365](../enterprise/network-planning-and-performance.md)
 
-[Évaluation de la connectivité réseau Office 365](../enterprise/assessing-network-connectivity.md)
+[Évaluation de la connectivité réseau Office 365](../enterprise/assessing-network-connectivity.md)
 
-[Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](../enterprise/performance-tuning-using-baselines-and-history.md)
+[Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](../enterprise/performance-tuning-using-baselines-and-history.md)
 
 [Plan de résolution des problèmes de performances pour Office 365](../enterprise/performance-troubleshooting-plan.md)
 
