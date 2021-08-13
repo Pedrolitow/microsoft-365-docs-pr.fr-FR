@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Les administrateurs peuvent découvrir comment administrer SharePoint et OneDrive services dans un environnement multigéogé.
-ms.openlocfilehash: 9ef22a34881ef5c9c2ed72835bc88c1dbfe835b5
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: e1c608425c25c018eddebe14023537b2739694d110d3683829c861dd96a61c73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795205"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
@@ -40,7 +40,7 @@ BCS, le service Banque d’informations sécurisé et les applications ont des i
 
 ## <a name="compliance-admin-center"></a>Centre d’administration de la conformité
 
-Il existe un centre central de conformité pour un client multigéogé : [Microsoft 365'administration de la conformité.](https://compliance.microsoft.com/)
+Il existe un centre central de conformité pour un client multigéogé : [Microsoft 365 d’administration de la conformité.](https://compliance.microsoft.com/)
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -94,4 +94,4 @@ Pour plus de détails et pour obtenir des instructions de développement, voir [
 
 ## <a name="yammer"></a>Yammer
 
-Yammer n’est pas une charge de travail Multi-Géo. Yammer threads stockés dans Yammer seront placés dans l’emplacement central du client. Yammer est en cours de déploiement d’une modification de stockage de fichiers qui stockera Yammer fichiers dans SharePoint. Yammer fichiers stockés dans SharePoint seront placés sur le site SharePoint associé au groupe Yammer web. SharePoint sites de groupe sont basés sur la logique PDL décrite dans SharePoint [Sites et groupes.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)
+Yammer n’est pas une charge de travail Multi-Géo. Yammer threads stockés dans Yammer seront placés dans l’emplacement central du client. Yammer est en cours de déploiement d’une modification de stockage de fichiers qui stockera Yammer fichiers dans SharePoint. Yammer fichiers stockés dans SharePoint seront placés sur le site SharePoint associé au groupe Yammer web. SharePoint sites de groupe sont basés sur une logique PDL comme indiqué dans SharePoint [Sites et groupes.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)

@@ -22,12 +22,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer une stratégie de gestion des informations pour contrôler la durée de la gestion des informations et suivre les personnes qui utilisent ces informations.
-ms.openlocfilehash: 626549401f463ca7a28a0cdd8948f710a5128f08
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 94a97aed83f2b0b7b68ba1fb1bb1533718a00b44c1e02df565f8762dd941a013
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802353"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Créer et appliquer des stratégies de gestion des informations
 
@@ -94,7 +94,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
    1. Choisissez **Ajouter une étape de rétention pour les enregistrements.**
 
    2. Sélectionnez une option de période de rétention pour spécifier la date d’expiration des documents ou des éléments. Effectuez l’une des étapes suivantes :
-      - Pour définir la date d’expiration  en fonction d’une propriété de date, sous Événement Cette étape est basée sur une propriété de date sur l’élément, puis sélectionnez l’action de document ou d’élément (par exemple, Créé ou Modifié) et l’incrément de temps après cette action (par exemple, le nombre de jours, mois ou années) lorsque vous souhaitez que l’élément \> expire.
+      - Pour définir la date d’expiration  en fonction d’une propriété de date, sous Événement Cette étape est basée sur une propriété de date sur l’élément, puis sélectionnez l’action de document ou d’élément (par exemple, Créé ou modifié) et l’incrément de temps après cette action (par exemple, le nombre de jours, mois ou années) lorsque vous souhaitez que l’élément \> expire.
       - Pour utiliser une formule de rétention personnalisée pour déterminer l’expiration, choisissez Définir par une formule de rétention personnalisée **installée sur ce serveur.**
 
         > [!NOTE]
@@ -203,9 +203,9 @@ Vous avez besoin au moins de l’autorisation Gérer les listes pour modifier le
 
    Notez que sous Enregistrements, vous pouvez choisir de définir différentes stratégies de rétention pour les enregistrements en sélectionnant l’option Définir différentes étapes de rétention pour les enregistrements.
 
-7. Dans la boîte de dialogue Propriétés de l’étape, sélectionnez une option de période de rétention pour spécifier le moment où les documents ou les éléments doivent expirer. Effectuez l’une des opérations suivantes :
+7. Dans la boîte de dialogue Propriétés de l’étape, sélectionnez une option de période de rétention pour spécifier le moment où les documents ou les éléments doivent expirer. Effectuez l'une des opérations suivantes :
 
-   - Pour définir la date d’expiration  en fonction d’une propriété de date, sous Événement Cette étape est basée sur une propriété de date sur l’élément, puis sélectionnez l’action de document ou d’élément (par exemple, Créé ou Modifié) et l’incrément de temps après cette action (par exemple, le nombre de jours, mois ou années) lorsque vous souhaitez que l’élément \> expire.
+   - Pour définir la date d’expiration  en fonction d’une propriété de date, sous Événement Cette étape est basée sur une propriété de date sur l’élément, puis sélectionnez l’action de document ou d’élément (par exemple, Créé ou modifié) et l’incrément de temps après cette action (par exemple, le nombre de jours, mois ou années) lorsque vous souhaitez que l’élément \> expire.
 
    - Pour utiliser une formule de rétention personnalisée pour déterminer l’expiration, choisissez Définir par une formule de rétention personnalisée **installée sur ce serveur.**
 
@@ -228,7 +228,7 @@ Vous avez besoin au moins de l’autorisation Gérer les listes pour modifier le
 
 Si des stratégies de gestion des informations ont déjà été créées pour votre site en tant que stratégies de collection de sites, vous pouvez appliquer l’une de ces stratégies à un type de contenu. En faisant cela, vous pouvez appliquer la même stratégie à plusieurs types de contenu dans une collection de sites qui ne partagent pas le même type de contenu parent.
 
- Si vous souhaitez appliquer des stratégies à plusieurs types de contenu dans une collection de sites et que vous avez configuré un service de métadonnées gérées, vous pouvez utiliser la publication de types de contenu pour publier des stratégies de gestion des informations sur plusieurs collections de sites. Pour plus d’informations, voir la section Appliquer une stratégie entre [les collections](#apply-a-policy-across-site-collections) de sites.
+ Si vous souhaitez appliquer des stratégies à plusieurs types de contenu dans une collection de sites et que vous avez configuré un service de métadonnées gérées, vous pouvez utiliser la publication de types de contenu pour publier des stratégies de gestion des informations sur plusieurs collections de sites. Pour plus d’informations, voir la section Appliquer une stratégie dans les [collections](#apply-a-policy-across-site-collections) de sites.
 
 1. Accédez à la liste ou à la bibliothèque qui contient le type de contenu auquel vous souhaitez appliquer une stratégie.
 
@@ -296,7 +296,7 @@ L’importation d’une stratégie de gestion des informations vous permet de l�
 
 4. Sélectionnez le fichier XML dans lequel la stratégie a été enregistrée \> **Ouverte.**
 
-5. Dans la page Importer une stratégie de collection de \> **sites, importez** pour ajouter la stratégie à la collection de sites.
+5. Dans la page Importer une stratégie de collection de \> **sites, importez** la stratégie pour ajouter la stratégie à la collection de sites.
 
 Votre stratégie importée peut désormais être appliquée à un ou plusieurs types de contenu au niveau du site ou de la liste.
 

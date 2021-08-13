@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Découvrez comment obtenir un rapport d’activation Office pour savoir quels utilisateurs ont activé leur abonnement Office et identifier les utilisateurs qui peuvent avoir besoin d’une aide supplémentaire.
-ms.openlocfilehash: 1247b3ce9b055a3e7dc9f75bee6a072787c1a890
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: ee803dece4e66ede794677b99b3d27de29b53aed11ab590486b1a7bcd1a6c78b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611891"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797879"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365 Rapports dans le Centre d’administration : activations Microsoft Office utilisateurs
 
@@ -53,13 +53,13 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur.  <br/> |
 |Nom d’affichage  <br/> |Nom complet de l’utilisateur.  <br/> |
-|Licences de produit  <br/> |Produits affectés à cet utilisateur.  <br/> |
+|Licences de produits  <br/> |Produits affectés à cet utilisateur.  <br/> |
 |Date de la dernière activation (UTC)  <br/> |Date à laquelle l’utilisateur a Office sur un ordinateur de bureau ou un appareil.  <br/> |
 |Activation sur Windows ordinateurs  <br/> |Nombre de bureaux Windows qu’un utilisateur a Office activés.  <br/> |
 |Activation sur les ordinateurs Mac <br/> |Nombre de bureaux Mac sur Office utilisateur.|
 |Activation sur Windows 10 et tablettes  <br/> |Nombre d’Windows 10 mobiles activés par un utilisateur Office activés.  <br/> |
 |Activation sur les téléphones et tablettes iOS  <br/> |Nombre d’appareils iOS sur Office activés par un utilisateur.|
 |Activation sur les téléphones et tablettes Android  <br/> |Nombre d’appareils Android sur Office activés.  <br/> |
-|Activation d’ordinateurs partagés utilisée |Cela est vrai si l’utilisateur a utilisé Office via l’activation d’ordinateurs partagés.|
+|Activation d’ordinateurs partagés utilisée |Cela est vrai si l’utilisateur a utilisé Office l’activation d’ordinateurs partagés.|
 |||
    

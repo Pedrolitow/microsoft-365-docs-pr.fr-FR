@@ -19,17 +19,17 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Découvrez comment obtenir un rapport d’activité Microsoft Dynamics 365 Customer Voice à l’aide du tableau de bord des rapports Microsoft 365 microsoft Dynamics 365 dans Microsoft 365'administration centrale.
-ms.openlocfilehash: 7975db1f3681ab0823e222f017f6addb514dafd7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Découvrez comment obtenir un rapport d’activité Microsoft Dynamics 365 Customer Voice à l’aide du tableau de bord Microsoft 365 rapports dans le Centre d’administration Microsoft 365.
+ms.openlocfilehash: 3b7e326a8661523865235880b0d0affd98c8836f531908943670caab0ad4fec4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242059"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797963"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365 Rapports dans le Centre d’administration - Activité voix client Dynamics 365
 
-Le tableau Microsoft 365 **de rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer des rapports au niveau de chaque produit afin d'obtenir des informations plus précises sur les activités au sein de chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
+Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer des rapports au niveau de chaque produit afin d'obtenir des informations plus précises sur les activités au sein de chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
 Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulaire d’une licence d’utilisation de Microsoft Dynamics 365 Customer Voice en regardant leurs interactions avec Dynamics 365 Customer Voice. Il vous permet également de comprendre le niveau de collaboration en cours en regardant le nombre d’enquêtes Pro créées et d’enquêtes Pro à laquelle les utilisateurs ont répondu. 
   

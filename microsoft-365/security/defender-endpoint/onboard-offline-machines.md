@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8e509aee364c54d1231c1a58115f65777022afb
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9e5ed8830050dc2f36c6945bbe7570d2ee417ac9aa3210801eaae2f1c89c55d6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652718"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799801"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Appareils intégrés sans accès à Internet à Microsoft Defender pour le point de terminaison
 
@@ -39,11 +39,11 @@ ms.locfileid: "53652718"
 Pour intégrer des appareils sans accès à Internet, vous devez suivre les étapes générales suivantes :
 
 > [!IMPORTANT] 
-> Les étapes ci-dessous s’appliquent uniquement aux appareils exécutant des versions antérieures de Windows tels que : Windows Server 2016 et versions antérieures ou antérieures ou Windows 8.1 versions antérieures.
+> Les étapes ci-dessous s’appliquent uniquement aux appareils exécutant des versions antérieures de Windows tels que : Windows Server 2016 et versions antérieures ou antérieures ou Windows 8.1 et versions antérieures.
 
 > [!NOTE]
 > - Un serveur de passerelle OMS ne peut pas être utilisé comme proxy pour les appareils Windows 10 ou Windows Server 2019 déconnectés lorsqu’ils sont configurés via le Registre ou l’GPO « TelemetryProxyServer ».
-> - Pour Windows 10 ou Windows Server 2019 , alors que vous pouvez utiliser TelemetryProxyServer, il doit pointer vers un périphérique proxy ou une appliance standard.
+> - Pour Windows 10 ou Windows Server 2019 , alors que vous pouvez utiliser TelemetryProxyServer, il doit pointer vers un périphérique proxy standard ou une appliance.
 > - En outre, Windows 10 ou Windows Server 2019 dans les environnements déconnectés doivent être en mesure de mettre à jour les listes d’autorisation de certificat hors connexion via un fichier interne ou un serveur web.
 > - Pour plus d’informations sur la mise à jour des fichiers CTL hors connexion, voir Configurer un fichier ou un serveur web pour [télécharger les fichiers CTL.](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)
 
@@ -66,7 +66,7 @@ Pour plus d’informations sur les méthodes d’intégration, consultez les art
 ## <a name="azure-virtual-machines"></a>Machines virtuelles Azure
 - Configurer et activer [l’espace de travail Azure Log Analytics](/azure/azure-monitor/platform/gateway)
 
-    - Configurer Azure Log Analytics Gateway (anciennement appelé passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
+    - Configurer Azure Log Analytics Gateway (anciennement passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
       - [Passerelle Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
       - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) vers la clé d’espace de travail Defender for Endpoint & ID
     - Ordinateurs VM Azure hors connexion dans le même réseau de passerelle OMS

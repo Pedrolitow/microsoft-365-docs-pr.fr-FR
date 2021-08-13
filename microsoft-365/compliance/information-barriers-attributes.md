@@ -13,16 +13,16 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 79247ad0018f8bfb08e58254870fd510ca6fb0ad291a72b2bee4d16b9113ac4a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919730"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795853"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attributs pour les stratégies d’obstacle aux informations
 
-Certains attributs de Azure Active Directory peuvent être utilisés pour segmenter les utilisateurs. Une fois les segments définis, ces segments peuvent être utilisés comme filtres pour les stratégies d’obstacle à l’information. Par exemple, vous pouvez utiliser **Service** pour définir des segments d’utilisateurs par service au sein de votre organisation (en supposant qu’aucun employé ne travaille pour deux services en même temps).
+Certains attributs dans Azure Active Directory peuvent être utilisés pour segmenter les utilisateurs. Une fois les segments définis, ces segments peuvent être utilisés comme filtres pour les stratégies d’obstacle à l’information. Par exemple, vous pouvez utiliser **Service** pour définir des segments d’utilisateurs par service au sein de votre organisation (en supposant qu’aucun employé ne travaille pour deux services en même temps).
 
 Cet article explique comment utiliser des attributs avec des obstacles à l’information et fournit une liste d’attributs qui peuvent être utilisés. Pour en savoir plus sur les obstacles aux informations, consultez les ressources suivantes :
 
@@ -83,7 +83,7 @@ Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les o
 | MSExchExtensionCustomAttribute4 | ExtensionCustomAttribute4 |
 | MSExchExtensionCustomAttribute5 | ExtensionCustomAttribute5 |
 | MailNickname | Alias |
-| PhysicalDeliveryOfficeName | Office |
+| PhysicalDeliveryOfficeName | Bureau |
 | PostalCode | PostalCode |
 | ProxyAddresses | EmailAddresses |
 | StreetAddress | StreetAddress |

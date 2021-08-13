@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Affichez la liste complète des certificats DOD et Cloud de la communauté du secteur public autorités de certification et de certificat racine élevés dans Microsoft 365.
-ms.openlocfilehash: ae8954ecb80cdcef0a62cbf4f928f7ffe6b8c4d7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 4e12f98e2f9949fc108807f3915c52136287bebe8894e36816d8b00ae2d64713
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795877"
 ---
 # <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 de chiffrement - DOD et Cloud de la communauté du secteur public High
 
@@ -33,11 +33,11 @@ Les informations de certificat suivantes s’appliquent **à tous les clients DO
 Last updated: **16/10/2020**
 
 > [!NOTE]
-> Pour plus d’informations sur les certificats qui s’appliquent aux **clients** internationaux, [voir Microsoft 365 de chiffrement.](encryption-office-365-certificate-chains.md)
+> Pour plus d’informations sur les certificats qui **s’appliquent** aux clients internationaux, voir Microsoft 365 de [chiffrement.](encryption-office-365-certificate-chains.md)
 
 | **Type de certificat** | **Téléchargement P7b** | **Points de terminaison de la CRL** | **Points de terminaison OCSP** |
 | --- | --- | --- | --- | --- |
-| Certificats racines et intermédiaires publiquement fiables | [Microsoft 365 Offre groupée de certificats ITAR (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
+| Certificats racines et intermédiaires publiquement fiables | [Microsoft 365 Ensemble de certificats ITAR (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
 
 Développez les sections racine et intermédiaire ci-dessous pour voir des détails supplémentaires sur les fournisseurs de certificats.
 
@@ -218,7 +218,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Autorité de certification racine de la resserrement - G2**
 
-| **Subject** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Subject** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **Numéro de série** | 4A:53:8C:28 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -283,7 +283,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Autorité de certification de confiance - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. - pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Issuer** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Issuer** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **Numéro de série** | 0E:E9:4C:C3:00:00:00:00:51:D3:77:85 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -301,7 +301,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Autorité de certification de confiance - L1M, OU= &quot; (c) 2014 , Inc. - pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Issuer** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Issuer** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **Numéro de série** | 61:A1:E7:D2:00:00:00:00:51:D3:66:A6 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil Communications dans Advanced eDiscovery cas pour envoyer, collecter et suivre des notifications de mise en attente légale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 026670b9ed45f366ff3d711d8f2b2d0274be5a19
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8b33165e6d39a1829f99e0a0194bc7938b95b9600e2977dec920e0dbb97c56d9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802420"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notification de non-droit
 
@@ -49,14 +49,14 @@ La première étape consiste à spécifier les détails appropriés pour les not
     - **Responsable de l’émission**: la liste de listes listes affiche la liste des membres de cas. Pour plus d’informations sur l’ajout de nouveaux membres à un cas, voir [Créer un Advanced eDiscovery cas.](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) Chaque avis envoyé aux dépositaires sera envoyé au nom du responsable de l’émission spécifié.
 
 > [!NOTE]
-> Le responsable de l’émission doit avoir une boîte **aux lettres active** pour s’afficher dans la boîte aux lettres du responsable de l’émission.
+> Le responsable de l’émission doit avoir une boîte **aux lettres active** pour s’afficher dans la boîte aux lettres du responsable de l’émission
 
 
 4. Cliquez sur **Suivant**.
 
 ## <a name="step-2-define-the-portal-content"></a>Étape 2 : Définir le contenu du portail
 
-Ensuite, vous pouvez créer et ajouter le contenu de l’avis de attente. Dans la page **Définir le contenu du portail** dans l’Assistant Créer une **communication,** spécifiez le contenu de l’avis de attente. Ce contenu est automatiquement intégré aux notifications d’émission, de ré émission, de rappel et d’escalade. En outre, ce contenu s’affiche dans le portail de conformité du dépositaire.
+Ensuite, vous pouvez créer et ajouter le contenu de l’avis de attente. Dans la page **Définir le contenu du portail** dans l’Assistant Créer une **communication,** spécifiez le contenu de l’avis de attente. Ce contenu est automatiquement appendé aux notifications d’émission, de ré-émission, de rappel et d’escalade. En outre, ce contenu s’affiche dans le portail de conformité du dépositaire.
 
 ![Page de contenu du portail](../media/PortalContent.PNG)
 
@@ -91,11 +91,11 @@ Pour créer une notification d’émission :
 
 4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis d’émission.
 
-5. Cliquez sur **Enregistrer**.
+5. Cliquez sur **Save (Enregistrer)**.
 
 ### <a name="re-issuance-notification"></a>Re-Issuance notification
 
-Au fur et à mesure de la progression du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Une fois que vous avez mis à jour le contenu du portail, la notification de nouvelle émission est envoyée et avertit les dépositaires des modifications apportées à leurs obligations de conservation.
+Au fur et à mesure de l’avancement du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Une fois que vous avez mis à jour le contenu du portail, la notification de nouvelle émission est envoyée et avertit les dépositaires des modifications apportées à leurs obligations de conservation.
 
 Pour créer une notification de nouvelle émission :
 
@@ -107,7 +107,7 @@ Pour créer une notification de nouvelle émission :
 
 4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de nouvelle émission.
 
-5. Cliquez sur **Enregistrer**.
+5. Cliquez sur **Save (Enregistrer)**.
 
 > [!NOTE]
 > Si le contenu du portail est modifié (dans la **page** Définir le contenu du portail dans l’Assistant Modifier la **communication),** la notification de rééd émission est automatiquement envoyée à tous les dépositaires affectés à l’avis. Une fois la notification envoyée, les dépositaires sont invités à ré-accusé de réception de leur notification de conservation. Si vous avez mis en place des flux de travail de rappel ou d’escalade, ceux-ci seront également ré-démarrer. Pour plus d’informations sur les autres événements de gestion de cas qui déclenchent des communications, voir [Événements qui déclenchent des notifications.](#events-that-trigger-notifications)
@@ -144,7 +144,7 @@ Pour planifier des rappels :
 
 2. Activez le **flux de** travail Rappel en **activé** le basculement d’état (obligatoire).
 
-3. Spécifiez **l’intervalle de rappel (en jours)** (obligatoire). Il s’agit du nombre de jours à attendre avant d’envoyer la première notification de rappel et de suivi. Par exemple, si vous définissez l’intervalle de rappel sur sept jours, le premier rappel sera envoyé sept jours après l’émission initiale de la notification de mise en attente. Tous les rappels suivants sont également envoyés tous les sept jours.
+3. Spécifiez **l’intervalle de rappel (en jours)** (obligatoire). Il s’agit du nombre de jours d’attente avant l’envoi de la première notification de rappel et du suivi. Par exemple, si vous définissez l’intervalle de rappel sur sept jours, le premier rappel sera envoyé sept jours après l’émission initiale de la notification de mise en attente. Tous les rappels suivants sont également envoyés tous les sept jours.
 
 4. Spécifiez **le nombre de rappels** (obligatoire). Ce champ spécifie le nombre de rappels à envoyer aux dépositaires qui ne répond pas. Par exemple, si vous définissez le nombre de rappels sur 3, un dépositaire reçoit un maximum de trois rappels. Une fois qu’un dépositaire a reconnu la notification de conservation, les rappels ne sont plus envoyés à cet utilisateur.
 

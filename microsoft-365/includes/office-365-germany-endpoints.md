@@ -7,9 +7,9 @@
 
 ID | Catégorie | ER | Adresses | Ports
 -- | -------------------- | -- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------
-1  | Optimiser<BR>Obligatoire | Non | `outlook.office.de`<BR>`51.4.64.0/23, 51.5.64.0/23` | **TCP :** 443, 80
-2  | Par défaut<BR>Obligatoire | Non | `r1.res.office365.com` | **TCP :** 443, 80
-3  | Par défaut<BR>Obligatoire | Non | `outlook.office.de` | **TCP :** 143, 25, 587, 993, 995
+1 | Optimiser<BR>Obligatoire | Non | `outlook.office.de`<BR>`51.4.64.0/23, 51.5.64.0/23` | **TCP :** 443, 80
+2 | Par défaut<BR>Obligatoire | Non | `r1.res.office365.com` | **TCP :** 443, 80
+3 | Par défaut<BR>Obligatoire | Non | `outlook.office.de` | **TCP :** 143, 25, 587, 993, 995
 4  | Par défaut<BR>Obligatoire | Non | `attachments.office365-net.de, autodiscover-s.outlook.de` | **TCP :** 443, 80
 5  | Autoriser<BR>Obligatoire | Non | `*.protection.outlook.de`<BR>`51.4.72.0/24, 51.4.80.0/27, 51.5.72.0/24, 51.5.80.0/27, 2a01:4180:4050:400::/64, 2a01:4180:4050:800::/64, 2a01:4180:4051:400::/64, 2a01:4180:4051:800::/64` | **TCP :** 25, 443
 
@@ -20,9 +20,9 @@ ID | Catégorie | ER | Adresses | Ports
 8  | Optimiser<BR>Obligatoire | Non | `<tenant>.sharepoint.de`<BR>`51.4.66.0/23, 51.5.66.0/23, 2a01:4180:4030::/44` | **TCP :** 443, 80
 9  | Par défaut<BR>Obligatoire | Non | `odc.osi.office.de` | **TCP :** 443, 80
 10  | Par défaut<BR>Obligatoire | Non | `*.wns.windows.com` | **TCP :** 443, 80
-11  | Par défaut<BR>Obligatoire | Non | `officeapps.live.com` | **TCP :** 443, 80
+11 | Par défaut<BR>Obligatoire | Non | `officeapps.live.com` | **TCP :** 443, 80
 12  | Par défaut<BR>Obligatoire | Non | `shellprod.msocdn.de, spoprod-a.akamaihd.net, static.sharepointonline.com` | **TCP :** 443, 80
-13  | Par défaut<BR>Obligatoire | Non | `*.search.production.de.azuretrafficmanager.de` | **TCP :** 443
+13 | Par défaut<BR>Obligatoire | Non | `*.search.production.de.azuretrafficmanager.de` | **TCP :** 443
 14  | Par défaut<BR>Obligatoire | Non | `odc.officeapps.live.com, officeclient.microsoft.com` | **TCP :** 443, 80
 15 | Par défaut<BR>Obligatoire | Non | `mobile.pipe.aria.microsoft.com, ssw.live.com, watson.telemetry.microsoft.com` | **TCP :** 443, 80
 16  | Par défaut<BR>Obligatoire | Non | `oneclient.sfx.ms` | **TCP :** 443, 80

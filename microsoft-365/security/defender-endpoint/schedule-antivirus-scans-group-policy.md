@@ -1,6 +1,6 @@
 ---
-title: Planifier des analyses antivirus à l’aide de la stratégie de groupe
-description: Utiliser la stratégie de groupe pour configurer des analyses antivirus
+title: Planifier des analyses antivirus à l’aide de stratégie de groupe
+description: Utiliser une stratégie de groupe pour configurer des analyses antivirus
 keywords: analyse rapide, analyse complète, planification, stratégie de groupe, antivirus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,16 +16,16 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 6f6018ec8b514234ab4f98e3d5416b472ff88739
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 413f003150b41cea0fb63e4ecd486b7ea230d1a06c2a0d4890deb8b7c209dfcc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799717"
 ---
-# <a name="schedule-antivirus-scans-using-group-policy"></a>Planifier des analyses antivirus à l’aide de la stratégie de groupe
+# <a name="schedule-antivirus-scans-using-group-policy"></a>Planifier des analyses antivirus à l’aide de stratégie de groupe
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -52,7 +52,7 @@ Cet article explique comment configurer des analyses programmées à l’aide de
 |:---|:---|:---|:---|
 | Analyser | Spécifier le type d’analyse à utiliser pour une analyse programmée | Analyse rapide |
 | Analyser | Spécifier le jour de la semaine pour exécuter une analyse programmée | Spécifiez le jour (ou jamais) d’exécuter une analyse. | Jamais |
-| Analyser | Spécifier l’heure de la journée pour exécuter une analyse programmée | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 h). | 2 h 00 |
+| Analyser | Spécifier l’heure de la journée pour exécuter une analyse programmée | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 heure du matin). | 2 h 00 |
 | Root | Randomize scheduled task times |In Antivirus Microsoft Defender, randomize the start time of the scan to any interval from 0 to 4 hours. <p>Dans [SCEP](/mem/intune/protect/certificates-scep-configure), rendre aléatoires les analyses à n’importe quel intervalle plus ou moins 30 minutes. Cela peut être utile dans les machines virtuelles ou les déploiements VDI. | Activé |
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>Paramètres de stratégie de groupe pour la planification des analyses lorsqu’un point de terminaison n’est pas utilisé

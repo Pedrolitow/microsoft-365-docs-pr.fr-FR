@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’utilisation du navigateur Microsoft à l’aide du tableau de bord Microsoft 365 rapports microsoft dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 2f6f287e5a8642d94c9581fc73525b7bfaafb41b
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 7225b3b1d2c86dd917bc4cb69d2cf3ca398221619710e9f0268e9d861d8d261b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377204"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798208"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation du navigateur Microsoft
 
@@ -41,7 +41,7 @@ Le tableau de bord Microsoft 365 **rapports d’entreprise** vous présente une 
 
 ![Rapport d’utilisation du navigateur Microsoft](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
 
-|Élément|Description|
+|Item|Description|
  |:-----|:-----|
  |1. <br/> |Le **rapport d’utilisation** du navigateur Microsoft permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours.  <br/> |
  |2. <br/> |Les données de chaque rapport couvrent généralement jusqu’aux sept derniers jours. <br/> |

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: aae2912949cb53a8adf2db31f9244de64fa12373
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e62195582183f24078a2755b1773a00ceee06613f141403fe8399f798f2eb411
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799876"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Créer une règle de notification lorsqu’un script d’intégration ou de mise hors-carte local est utilisé
 
@@ -76,15 +76,15 @@ Vous devez avoir accès à :
    - Public : `https://securitycenter.onmicrosoft.com/windowsatpservice\`
    - ID client : connectez-vous et accédez à Azure Active Directory >'inscription de l’application et obtenez la valeur https://portal.azure.com de l’ID client. 
    - Type d’informations d’identification : sélectionnez « Secret ».
-   - Secret : connectez-vous et accédez à https://portal.azure.com **Azure Active Directory > inscriptions d’application** et obtenez la valeur de l’ID de client.
+   - Secret : connectez-vous et accédez à Azure Active Directory > inscriptions d’application et obtenez la valeur https://portal.azure.com de l’ID de client. 
 
     ![Image des conditions HTTP](images/http-conditions.png)
 
-6. Ajoutez une nouvelle étape en sélectionnant Ajouter une **nouvelle action,** puis recherchez opérations de **données** et sélectionnez Analyse **JSON**.
+6. Ajoutez une nouvelle étape en sélectionnant Ajouter **une nouvelle action,** puis recherchez Opérations de **données** et **sélectionnez Analyse JSON**.
 
     ![Image des opérations de données](images/data-operations.png)
 
-7. Ajouter le corps dans **le champ** Contenu.
+7. Ajouter le corps dans le **champ** Contenu.
 
     ![Image de l’utilisation du JSON d’une parse](images/parse-json.png)
 
@@ -203,7 +203,7 @@ L’image suivante est un exemple de notification par courrier électronique.
     - Prenez tous les appareils vus pour la dernière fois au cours des 7 derniers jours.
 
 - Pour chaque appareil :
-  - Si la dernière propriété vue se trouve sur l’intervalle d’une heure de [-7 jours, -7days + 60 minutes] -> alerte pour la possibilité d’interruption de l’utilisation.
+  - Si la propriété vue pour la dernière fois est sur l’intervalle d’une heure de [-7 jours, -7days + 60 minutes] -> alerte pour la possibilité de retentation.
   - Si le premier aperçu a lieu au cours de l’heure >'alerte d’intégration.
 
 Dans cette solution, vous n’aurez pas d’alertes en double : il existe des locataires qui ont de nombreux appareils. L’obtention de tous ces appareils peut être très coûteuse et nécessiter une pagination.

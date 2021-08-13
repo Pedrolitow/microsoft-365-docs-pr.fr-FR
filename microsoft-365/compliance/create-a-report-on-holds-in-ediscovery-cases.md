@@ -20,16 +20,16 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment générer un rapport qui contient des informations sur toutes les actuellement en cours associées à des cas eDiscovery.
-ms.openlocfilehash: 04282f6f2481d892fa16d685936efeec55feae77
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 70895e07b652054e27cb382267da003c99d2e7a2a1d6a6c0c557e0bbc25ce635
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802501"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Créer un rapport sur les conservations définies dans les cas eDiscovery 
 
-Le script de cet article permet aux administrateurs eDiscovery et aux responsables eDiscovery de générer un rapport qui contient des informations sur toutes les obligations associées aux cas eDiscovery dans le centre de conformité dans Office 365 ou Microsoft 365. Le rapport contient des informations telles que le nom du cas où une mise en attente est associée, les emplacements de contenu qui sont placés en attente et si la mise en attente est basée sur une requête. S’il existe des cas qui n’ont aucune attente, le script crée un rapport supplémentaire avec une liste de cas sans attente.
+Le script de cet article permet aux administrateurs eDiscovery et aux responsables eDiscovery de générer un rapport qui contient des informations sur toutes les obligations associées aux cas eDiscovery dans le centre de conformité dans Office 365 ou Microsoft 365. Le rapport contient des informations telles que le nom du cas où une mise en attente est associée, les emplacements de contenu placés en attente et si la mise en attente est basée sur une requête. S’il existe des cas qui n’ont aucune attente, le script crée un rapport supplémentaire avec une liste de cas sans attente.
 
 Consultez la section [Plus](#more-information) d’informations pour obtenir une description détaillée des informations incluses dans le rapport.
 
@@ -45,7 +45,7 @@ Consultez la section [Plus](#more-information) d’informations pour obtenir une
 
 L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2 : Exécuter le script pour signaler les cas de découverte électronique associés
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2 : Exécuter le script pour signaler les cas de découverte électronique
 
 Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShell, l’étape suivante consiste à créer et exécuter le script qui collecte des informations sur les cas eDiscovery dans votre organisation.
 
@@ -156,7 +156,7 @@ Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShe
 
    Le script commence à collecter des informations sur tous les cas eDiscovery de votre organisation. N’accédez pas au fichier de rapport pendant l’exécution du script. Une fois le script terminé, un message de confirmation s’affiche dans la session Windows PowerShell session. Une fois ce message affiché, vous pouvez accéder au rapport dans le dossier que vous avez spécifié à l’étape 4. Le nom de fichier du rapport est `CaseHoldsReport<DateTimeStamp>.csv` .
 
-   Par ailleurs, le script crée également un rapport avec une liste de cas qui ne sont pas en attente. Le nom de fichier de ce rapport est `CaseswithNoHolds<DateTimeStamp>.csv` .
+   Par ailleurs, le script crée également un rapport avec une liste de cas qui n’ont aucune attente. Le nom de fichier de ce rapport est `CaseswithNoHolds<DateTimeStamp>.csv` .
 
    Voici un exemple d’exécution du script CaseHoldsReport.ps1 script.
 
@@ -184,4 +184,4 @@ Le rapport de cas qui est créé lorsque vous exécutez le script dans cet artic
 
 - Heure et date de création de la attente et de la personne qui l’a créée.
 
-- Heure et date de la dernière changement de la date et de la personne qui l’a modifiée.
+- L’heure et la date de la dernière date et la personne qui l’a modifiée.

@@ -22,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Dans cet article, découvrez comment intégrer des Microsoft 365 à vos services d’annuaire et environnements locaux existants.
-ms.openlocfilehash: c0453b7685254ccbbb301a17749fe48549fae78d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 48d7066ea51647cc0e7594dd774201d736471369b6158550cb1a238b65fa0d0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923965"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795125"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365'intégration aux environnements locaux
 
@@ -62,17 +62,17 @@ Si vous souhaitez que les utilisateurs puissent se connecter à Microsoft 365 av
 
 ### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication-pta"></a>Synchronisation d’annuaires avec ou sans synchronisation de hachage de mot de passe ou authentification directe (PTA)
 
-Un utilisateur se connecte à son environnement local avec son compte d’utilisateur (domaine \nom d’utilisateur). Lorsqu’il Microsoft 365, il doit se connecter à nouveau avec son compte scolaire ou scolaire (user@domain.com). Le nom d’utilisateur est le même dans les deux environnements. Lorsque vous ajoutez phs ou PTA, l’utilisateur a le même mot de passe pour les deux environnements, mais devra fournir à nouveau ces informations d’identification lors de la connexion à Microsoft 365. La synchronisation d’annuaires avec PHS est la synchronisation d’annuaires la plus couramment utilisée.
+Un utilisateur se connecte à son environnement local avec son compte d’utilisateur (domaine \nom d’utilisateur). Lorsqu’ils Microsoft 365, ils doivent se connecter à nouveau avec leur compte scolaire ou scolaire (user@domain.com). Le nom d’utilisateur est le même dans les deux environnements. Lorsque vous ajoutez phs ou PTA, l’utilisateur a le même mot de passe pour les deux environnements, mais devra fournir à nouveau ces informations d’identification lors de la connexion à Microsoft 365. La synchronisation d’annuaires avec PHS est la synchronisation d’annuaires la plus couramment utilisée.
 
 Pour configurer la synchronisation d’annuaires, utilisez Azure AD Connecter. Pour obtenir des instructions, voir Configurer la synchronisation d’annuaires [pour Microsoft 365](set-up-directory-synchronization.md) et [Azure AD Connecter avec des paramètres express.](/azure/active-directory/hybrid/how-to-connect-install-express)
 
-En savoir plus [sur la préparation de la synchronisation d’annuaires Microsoft 365](prepare-for-directory-synchronization.md).
+En savoir plus sur la préparation de la synchronisation [d’annuaires Microsoft 365](prepare-for-directory-synchronization.md).
 
 ### <a name="directory-synchronization-with-sso"></a>Synchronisation d’annuaires avec sso
 
 Un utilisateur se connecte à son environnement local avec son compte d’utilisateur. Lorsqu’ils se connectent à Microsoft 365, ils sont connectés automatiquement ou ils se connectent à l’aide des mêmes informations d’identification qu’ils utilisent pour leur environnement local (domaine \nom d’utilisateur).
 
-Pour configurer l' sso, vous utilisez également Azure AD Connecter. Pour obtenir des instructions, voir [Installation personnalisée d’Azure AD Connecter](/azure/active-directory/hybrid/how-to-connect-install-custom).
+Pour configurer l' ssO, vous utilisez également Azure AD Connecter. Pour obtenir des instructions, voir [Installation personnalisée d’Azure AD Connecter](/azure/active-directory/hybrid/how-to-connect-install-custom).
 
 Pour plus d’informations, [voir l' sign-on unique.](/azure/active-directory/manage-apps/what-is-single-sign-on)
 
