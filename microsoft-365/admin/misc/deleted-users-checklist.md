@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
 description: Suivez cette liste de vérification lors de la suppression du compte Microsoft 365 utilisateur.
-ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5ea562e45b16a47272c4dfffcd4d30d135e191c195f2b3a8b8d1f70beeb9849d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824154"
 ---
 # <a name="quick-help-deleted-users-checklist"></a>Aide rapide : liste de contrôle utilisateurs supprimés
 
@@ -34,7 +34,7 @@ Vous avez donc décidé de supprimer un utilisateur de votre organisation. Par e
   
 ## <a name="remove-the-microsoft-365-license-from-the-user"></a>Supprimer la licence Microsoft 365 de l’utilisateur
 
-Vous pouvez supprimer une licence d’un utilisateur en le recherchant sur la page d’accueil ou dans la **page** Utilisateurs actifs, puis en le sélectionnant. Sous **l’onglet Licences et** applications, cochez la case de la licence que vous souhaitez supprimer de l’utilisateur. [Lire l'intégralité de l'article](../manage/remove-licenses-from-users.md)
+Vous pouvez supprimer une licence d’un utilisateur en le recherchant sur la page d’accueil ou à partir de la **page** Utilisateurs actifs, puis en le sélectionnant. Sous **l’onglet Licences et** applications, cochez la case de la licence que vous souhaitez supprimer de l’utilisateur. [Lire l'intégralité de l'article](../manage/remove-licenses-from-users.md)
   
 ## <a name="block-sign-in"></a>Bloquer la signature
 

@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour le Sénégal
+title: Informations de support pour le Mali
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4c0e3a80eb4233501a57206c761bb4285dc851a8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 51a9427e51e7dfe8a6259a555bf9750005e913407282e5a82ee15327447e9d64
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832450"
 ---
 # <a name="contact-support-for-mali"></a>Contacter le support technique pour le Sénégal
 
@@ -33,10 +33,10 @@ Français : Mon-Fri 8 h à 16 h
 
 Anglais : Mon-Fri 8 h à 16 h
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
-Français : Mon-Fri 7h-20h
+Français : Mon-Fri 7h00 à 20h00
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

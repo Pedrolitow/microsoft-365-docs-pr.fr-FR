@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: Découvrez comment faire un fichier CSV pour AutoPilot dans Microsoft 365 entreprise.
-ms.openlocfilehash: 13d7fbffd8d6fbe1af0dde55a4e98688060d9da8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: bc67e32d834ec8fde13386fb02ef1368ca3757cef47e78575d00a3e3d2fc6db3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579217"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824118"
 ---
 # <a name="device-list-csv-file"></a>Fichier CSV de liste d’appareils
 

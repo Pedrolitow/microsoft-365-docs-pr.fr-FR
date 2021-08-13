@@ -16,20 +16,20 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez le programme Business Assist et comment il peut aider votre organisation à améliorer l’aide et l’utilisation Microsoft 365 entreprise.
-ms.openlocfilehash: 3715fcfcc24c647266bab36a764b3c8711e08bdd
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 806f73af526b23e32740e0a1c1a8fe9d3854acd1724a030b31985faa040f2735
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53338600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824217"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Aide pour les entreprises pour Microsoft 365
 
 Obtenez le meilleur de votre abonnement avec les conseils d’experts des petites entreprises.
 
-**Business Assist for Microsoft 365** est conçu pour les entreprises de moins de 5 utilisateurs afin de vous permettre, ainsi qu’à vos employés, d’accéder 24 heures sur 24 aux spécialistes des petites entreprises au cours de l’expansion de votre entreprise, de l’intégration à l’utilisation quotidienne.
+**Aide aux PME avec Microsoft 365** est conçu pour les entreprises de moins de 5 utilisateurs afin de vous permettre, ainsi qu’à vos employés, d’accéder 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
-### <a name="watch-business-assist-for-microsoft-365"></a>Regardez : Aide à la Microsoft 365
+### <a name="watch-business-assist-for-microsoft-365"></a>Regardez : Aide aux PME avec Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFTQl]
 
@@ -37,8 +37,8 @@ Obtenez le meilleur de votre abonnement avec les conseils d’experts des petite
 
 |&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
-|Travaillez en équipe avec un spécialiste en petite entreprise pour configurer Microsoft 365 fonctionnalités qui protègent votre entreprise et lui donnent une apparence professionnelle. |Tous vos employés, et pas seulement la personne responsable de l’informatique, peuvent passer directement aux experts Microsoft pour obtenir un support continu plus rapide. |Découvrez les fonctionnalités sous-utilisées et obtenez des conseils sur les façons d’obtenir plus de valeur de votre abonnement. |
-|**Accélérer votre migration dans le cloud** <br> Obtenez une aide personnalisée pour déplacer tous vos fichiers actuels (e-mail, stockage, documents et communication) vers Microsoft 365. |**Spécialistes d’accès en toute simplicité** <br> Notre équipe reprendra la conversation là où vous l’avez laissée en dernier. Aucun ticket à suivre, aucun robot, aucun délai d’attente long. |**Restez à jour** <br> Des vérifications régulières qui vous aident à rester à jour à mesure que de nouvelles fonctionnalités de service sont ajoutées et que les besoins de votre entreprise évoluent. |
+|Travaillez avec un spécialiste en petite entreprise pour configurer des fonctionnalités Microsoft 365 qui protègent votre entreprise et lui donnent une apparence professionnelle. |Tous vos employés, et pas seulement la personne responsable de l’informatique, peuvent passer directement aux experts Microsoft pour obtenir un support continu plus rapide. |Découvrez les fonctionnalités sous-utilisées et obtenez des conseils sur les façons d’obtenir plus de valeur de votre abonnement. |
+|**Accélérer votre migration dans le cloud** <br> Obtenez une aide personnalisée pour déplacer tous vos fichiers actuels (e-mail, stockage, documents et communication) vers Microsoft 365. |**Spécialistes d’accès en toute simplicité** <br> Notre équipe reprendra la conversation là où vous l’avez laissée en dernier. Pas de tickets à suivre, pas de robots, pas de longs temps d’attente. |**Restez à jour** <br> Des vérifications régulières qui vous aident à rester à jour à mesure que de nouvelles fonctionnalités de service sont ajoutées et que les besoins de votre entreprise évoluent. |
 | | | |
 
 > [!div class="nextstepaction"]
@@ -57,7 +57,7 @@ Seules les organisations éligibles pourront acheter Business Assist. Business A
 
 1. Dans la vue simplifiée de la Centre d’administration Microsoft 365, sélectionnez Ajouter des produits dans l’onglet **Abonnements.** 
 
-2. Dans la page Acheter des services, sélectionnez **Détails** sur **Business Assist pour Microsoft 365** et terminez votre achat.
+2. Dans la page Acheter des services, sélectionnez **détails** **sur Aide aux PME avec Microsoft 365** et terminez votre achat.
 
 :::image type="content" source="../../media/business-assist-april.png" alt-text="Screeenshot: Purchase Business Assist from the Add-ons section on the Purchase services page":::
 

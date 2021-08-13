@@ -24,20 +24,20 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenez Microsoft 365 campagnes pour protéger votre campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
-ms.openlocfilehash: 3d70fef721417dd823dc272bbb7b08c04c037f98
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: a26d58a56167fd3147664e7867ba20090f881fa616f78a6cf439a11407efb561
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856390"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Obtenir des Microsoft 365 campagnes
 
-Toute personne Microsoft 365 Business Premium peut utiliser ces conseils pour configurer une sécurité supplémentaire pour la messagerie électronique et la collaboration. Toutefois, les campagnes et les parties politiques aux États-Unis peuvent bénéficier de tarifs spéciaux pour Microsoft 365. Actuellement, cette tarification spéciale est disponible pour :
+Toute personne Microsoft 365 Business Premium peut utiliser ces conseils pour configurer une sécurité supplémentaire pour la messagerie électronique et la collaboration. Toutefois, les campagnes et les parties politiques aux États-Unis sont éligibles à des tarifs spéciaux pour Microsoft 365. Actuellement, cette tarification spéciale est disponible pour :
 
 - Les parties politiques au niveau national aux États-Unis, au Canada et en Nouvelle-Zélande
 - Campagnes électorales nationales ou fédérales aux États-Unis et en Nouvelle-Zélande
-- Campagnes électorales à l’échelle de l’État des États-Unis (par exemple: campagnes de recherche de poste pour le gouverneur, le siège d’un État ou le avocat général)*
+- Campagnes électorales à l’échelle de l’État américain (par exemple: campagnes de recherche d’un poste pour le gouverneur, le siège d’un État ou un avocat général)*
 
     *En raison des réglementations locales, nous ne pouvons pas proposer de Microsoft 365 pour les campagnes dans les états suivants pour le moment : CO, DE, IL, OK, WI & WY. Nous encourageons les campagnes dans ces états à explorer d’autres offres [Microsoft 365 entreprise.](https://www.office.com/business)
 
@@ -61,8 +61,8 @@ Cette configuration de Microsoft 365 Business Premium inclut des contrôles simp
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>Quel est le coût, qui en a besoin et quel est l’engagement ?
 
 Si votre campagne est éligible à des tarifs spéciaux Microsoft 365 campagnes coûte 5 dollars par utilisateur et par mois.
-Pour protéger votre campagne, nous vous recommandons une licence pour le candidat, le responsable de campagne, tous les cadres supérieurs qui font partie de la campagne ou du parti, et généralement tous les employés à plein temps. Certains employés volontaires peuvent également avoir besoin d’une licence. En règle générale, attribuez une licence à toute personne de votre campagne qui a besoin d’appareils et de courriers électroniques protégés.
-Il n’y a pas d’engagement de temps minimal lorsque vous vous inscrivez à Microsoft 365 campagnes. Vous pouvez payer mensuellement les licences dont vous avez besoin et arrêter d’utiliser le service à tout moment.
+Pour protéger votre campagne, nous vous recommandons une licence pour le candidat, le responsable de la campagne, tous les cadres supérieurs qui font partie de la campagne ou du parti, et généralement tous les employés à plein temps. Certains employés volontaires peuvent également avoir besoin d’une licence. En règle générale, attribuez une licence à toute personne de votre campagne qui a besoin d’appareils et de courriers électroniques protégés.
+Il n’y a pas d’engagement de temps minimal lorsque vous vous inscrivez pour Microsoft 365 campagnes. Vous pouvez payer mensuellement les licences dont vous avez besoin et arrêter d’utiliser le service à tout moment.
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>Comment puis-je bénéficier d’une tarification spéciale ?
 

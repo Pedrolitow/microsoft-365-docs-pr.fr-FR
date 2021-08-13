@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: "Apprenez comment un administrateur global Microsoft 365 peut modifier l'adresse électronique et le nom d'affichage d'un utilisateur lorsque son nom change. "
-ms.openlocfilehash: 29e2e57327550de13359106e7ba820204598f691
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0f9d2e5cf817e5d3f5535122f0a7475d78e6d0a90edf8309acfeb15515d9756f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815850"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
 

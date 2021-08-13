@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Découvrez comment supprimer un compte d’utilisateur et que faire avec le courrier électronique et le contenu OneDrive utilisateur et s’il faut conserver la licence de produit.
-ms.openlocfilehash: 81dc71c6734340146e1dd13bcd59696eed5be202
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 8fe01b286f59ea43f1e810f4e70422aeda140db803c76f8b7dafe04fa06953b1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815742"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Supprimer un utilisateur de votre organisation
   
@@ -48,7 +48,7 @@ Si vous êtes un administrateur général, lorsque vous supprimez un utilisateur
 
 Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier électronique et le contenu OneDrive de l’utilisateur, et si vous souhaitez conserver la licence ou arrêter de payer pour elle.
   
-|Élément | Description |
+|Item | Description |
 |:-----|:-----|
 |Licences de produits  <br/> |Vous pouvez supprimer la licence de l’utilisateur et la supprimer de vos abonnements pour arrêter de payer pour cette licence. Si vous sélectionnez cette option, la licence sera automatiquement supprimée de vos abonnements.  <br/><br/> **Vous ne pouvez pas supprimer la licence si** vous l’avez achetée via un partenaire ou une licence en volume. Si vous payez pour une offre annuelle ou si vous êtes au milieu d’un cycle de facturation, vous ne pourrez pas supprimer la licence de votre abonnement tant que votre engagement n’est pas terminé.  <br/> |
 |OneDrive contenu  <br/> |Si l’utilisateur a enregistré ses fichiers OneDrive, vous pouvez accorder à un autre utilisateur l’accès à ces fichiers.  <br/><br/> Vous devez déplacer les fichiers que vous souhaitez conserver pendant la période de rétention définie pour OneDrive fichiers. **Par défaut, la période de rétention est de 30 jours.** Si vous ne déplacez pas les fichiers au cours de la période de rétention après la suppression de l’utilisateur, le OneDrive contenu sera définitivement supprimé. Pour augmenter le nombre de jours pendant OneDrive fichiers de rétention pour les comptes supprimés, voir Définir la OneDrive rétention des utilisateurs [supprimés.](/onedrive/set-retention)  <br/><br/> **Important !** Si l’utilisateur supprimé a utilisé un ordinateur personnel pour télécharger des fichiers à partir de SharePoint et OneDrive, vous ne pouvez pas effacer les fichiers qu’il a stockés sur son ordinateur. Ils continueront d’avoir accès à tous les fichiers qui ont été synchronisés à partir OneDrive.           |
@@ -152,7 +152,7 @@ Voici les problèmes les plus courants rencontrés par les utilisateurs lors de 
 
 **Voulez-vous supprimer des Microsoft 365 de votre ordinateur ? Go to [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).**
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Restaurer un utilisateur](restore-user.md) (article)\
 [Supprimer définitivement une boîte aux lettres](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (article)\

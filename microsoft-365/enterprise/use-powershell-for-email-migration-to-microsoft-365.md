@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: Découvrez comment migrer le courrier électronique de votre système existant vers Microsoft 365 à l’aide de PowerShell.
-ms.openlocfilehash: 0ba090db6c5e7fd617f3b50b21dfd08605f84594
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6feb2ef9b1e1b1a3a2a1e58053a55b4dd636bf98549cd57d7c7c86bc52cb78d6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807395"
 ---
 # <a name="how-to-use-powershell-to-migrate-email-to-microsoft-365"></a>Comment utiliser PowerShell pour migrer la messagerie vers Microsoft 365
 
@@ -35,7 +35,7 @@ Les administrateurs migrent souvent le courrier électronique à partir de syst�
     
 - [Utilisation de PowerShell pour effectuer une migration intermédiaire vers Microsoft 365](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md)
     
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   

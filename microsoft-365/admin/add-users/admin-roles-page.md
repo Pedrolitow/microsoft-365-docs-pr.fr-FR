@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les rôles d’administrateur sont map faits avec les fonctions métiers et fournissent des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: 20ba46c94f94267df7117d4baf020bbdc21cad7c
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 5e1555d022801eb59bf4a4996c12c95e25037efbde9314e1157b06fa793a1ae2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394386"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815926"
 ---
 # <a name="get-started-with-the-roles-page"></a>Mise en place de la page rôles
 
@@ -61,7 +61,7 @@ Il ne s’agit pas d’une liste exhaustive de toutes les autorisations dont ces
 
 Attribuez le Exchange administrateur principal aux utilisateurs qui ont besoin d’afficher et de gérer les boîtes aux lettres de messagerie, les groupes Microsoft 365 utilisateurs et les Exchange Online. Ils peuvent également ouvrir et gérer les demandes de service au support Microsoft. [En savoir plus](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
-### <a name="global-admin"></a>Administrateur général
+### <a name="global-admin"></a>Administrateur global
 
 Attribuez le rôle d’administrateur global aux utilisateurs qui ont besoin d’un accès global à la plupart des fonctionnalités et données de gestion dans les services en ligne Microsoft. Le fait de donner un accès global à un grand nombre d’utilisateurs représente un risque pour la sécurité et nous vous recommandons de n’avoir que 2 à 4 administrateurs généraux. Seuls les administrateurs globaux peuvent réinitialiser les mots de passe de tous les utilisateurs et ajouter et gérer des domaines. Ils peuvent également ouvrir et gérer les demandes de service au support Microsoft. La personne qui s’est inscrite aux services en ligne Microsoft devient automatiquement un administrateur global. En [savoir plus](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
@@ -101,5 +101,5 @@ Dans le Centre d’administration :
 
 ## <a name="related-content"></a>Contenu associé
 
-[À propos Microsoft 365 rôles d’administrateur](about-admin-roles.md) (article)\
+[À propos des rôles d’administrateur Microsoft 365](about-admin-roles.md) (article)\
 [Attribuer des rôles administrateur](assign-admin-roles.md) (article)

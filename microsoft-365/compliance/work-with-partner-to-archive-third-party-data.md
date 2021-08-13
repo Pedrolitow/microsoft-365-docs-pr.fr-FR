@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer un connecteur personnalisé pour importer des données tierces à partir de sources de données telles que Salesforce Messenger, Yahoo Messenger ou Yammer.
-ms.openlocfilehash: 2026e3c584cb0bc467a2db3903c51b7ed50e51e1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e388ab360ccd82b6391272e01a36b78fca99971d0f43ab20b447e33113eef282
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807575"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire pour archiver des données tierces
 
@@ -58,7 +58,7 @@ L’illustration et la description suivantes expliquent le fonctionnement du pro
 
    1. **Éléments dont l’ID d’utilisateur correspond à un compte d’utilisateur :** Si le connecteur partenaire peut ma cartographier l’ID utilisateur de l’élément de la source de données tierce sur un ID utilisateur spécifique dans Microsoft 365, l’élément est copié dans le dossier **Purges** du dossier Éléments récupérables de l’utilisateur. Les utilisateurs ne peuvent pas accéder aux éléments du dossier Purges. Toutefois, vous pouvez utiliser les outils eDiscovery pour rechercher des éléments dans le dossier Purges.
 
-   1. **Éléments qui n’ont pas d’ID d’utilisateur correspondant à un compte d’utilisateur :** Si le connecteur partenaire ne peut pas ma cartographier l’ID utilisateur d’un  élément sur un ID utilisateur spécifique, l’élément est copié dans le dossier Boîte de réception de la boîte aux lettres de données tierce. L’importation d’éléments dans la boîte de réception permet à un membre de votre organisation ou à vous-même de vous connecter à la boîte aux lettres tierce pour visualiser et gérer ces éléments, et de voir si des ajustements doivent être effectués dans la configuration du connecteur partenaire.
+   1. **Éléments qui n’ont pas d’ID d’utilisateur correspondant à un compte d’utilisateur :** Si le connecteur partenaire ne peut pas macher l’ID d’utilisateur d’un  élément sur un ID d’utilisateur spécifique, l’élément est copié dans le dossier Boîte de réception de la boîte aux lettres de données tierce. L’importation d’éléments dans la boîte de réception permet à un membre de votre organisation ou à vous-même de vous connecter à la boîte aux lettres tierce pour visualiser et gérer ces éléments, et de voir si des ajustements doivent être effectués dans la configuration du connecteur partenaire.
 
 ## <a name="step-1-find-a-third-party-data-partner"></a>Étape 1 : trouver un partenaire de données tierces
 
@@ -557,11 +557,11 @@ Une fois que votre organisation a accepté la demande d’autorisations pour ins
 
 Pour révoquer le consentement d’un connecteur de données tiers, vous pouvez supprimer l’application (en supprimant le principal de service correspondant) de Azure Active Directory à l’aide du portail **d’applications Enterprise** dans le portail Azure ou à l’aide de [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal) dans Microsoft 365 PowerShell. Vous pouvez également utiliser [l’cmdlet Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) dans Azure Active Directory PowerShell.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - Comme indiqué précédemment, les éléments des sources de données tierces sont importés vers les boîtes aux lettres Exchange en tant que messages électroniques. Le connecteur partenaire importe l’élément à l’aide d’un schéma requis par Microsoft 365 API. Le tableau suivant décrit les propriétés de message d’un élément d’une source de données tierces après son importation vers une boîte aux lettres Exchange en tant que message électronique. Le tableau indique également si la propriété de message est obligatoire. Les propriétés obligatoires doivent être renseignées. Si une propriété obligatoire est manquante, un élément n’est pas importé dans Microsoft 365. Le processus d’importation renvoie un message d’erreur expliquant pourquoi un élément n’a pas été importé et quelle propriété est manquante.<br/><br/>
 
-    |**Propriété de message**|**Obligatoire ?**|**Description**|**Exemple de valeur**|
+    |**Propriété de message**|**Obligatoire ?**|**Description**|**Exemple de valeur**|
     |:-----|:-----|:-----|:-----|
     |**FROM** <br/> |Oui  <br/> |Utilisateur qui a initialement créé ou envoyé l’élément dans la source de données tierces. Le connecteur partenaire tente de ma cartographier l’ID utilisateur de l’élément source (par exemple, un handle Twitter) à un compte d’utilisateur pour tous les participants (utilisateurs dans les champs FROM et TO). Une copie du message sera importée dans la boîte aux lettres de chaque participant. Si aucun des participants de l’élément ne peut être mappé à un compte d’utilisateur, l’élément est importé dans la boîte aux lettres d’archivage tierce dans Microsoft 365.  <br/> <br/> Le participant identifié comme expéditeur de l’élément doit avoir une boîte aux lettres active dans l’organisation dans qui l’élément est importé. Si l’expéditeur ne dispose pas d’une boîte aux lettres active, l’erreur suivante est renvoyée :<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |Oui  <br/> |Utilisateur qui a reçu un élément, le cas échéant, pour un élément dans la source de données.  <br/> | `bob@contoso.com` <br/> |

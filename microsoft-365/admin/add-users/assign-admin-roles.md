@@ -28,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Découvrez comment attribuer des rôles d’administrateur à un ou plusieurs utilisateurs de votre entreprise afin qu’ils peuvent effectuer des tâches spécifiques dans le Centre d’administration.
-ms.openlocfilehash: 575d1d8c6b0ffce40877fb41d28df82c24e84d04
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0b959dd9349a032d6825d010d103bfd74d080a595b072be950a61e98f3765dbb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393774"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815862"
 ---
 # <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur
 
@@ -106,7 +106,7 @@ Vous pouvez vérifier les autorisations de rôle d’administrateur de 2 manièr
 
 ## <a name="related-content"></a>Contenu associé
 
-[À propos Microsoft 365 rôles d’administrateur](about-admin-roles.md) (article)\
+[À propos des rôles d’administrateur Microsoft 365](about-admin-roles.md) (article)\
 [Autorisations de rôle d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (article)\
 [Attribuer des rôles à des comptes d’utilisateur avec PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)\
 [Autoriser ou supprimer des relations de partenaires](../misc/add-partner.md) (article)

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Chaque membre de l’équipe a besoin d’un compte d’utilisateur avant de pouvoir se connecter et accéder à Microsoft 365 pour les entreprises. Apprenez comment ajouter des utilisateurs et attribuer des licences.
 ms.date: 07/01/2020
-ms.openlocfilehash: aaba152e73fc7284f54a9f307783a66fb055a55c
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 5d18bfbd396bc13496cc06c80dcb5cc6fbf7f84e9432936c1d745877f0074141
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815898"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 

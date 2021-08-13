@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: bee35191e7e80313521891a1efc1780489902ae8
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 21618a078a3104af39727439c6690e31f75fbc93518e534e6759d3a914c414fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815658"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Rôles d'administration Intune dans le Centre d’administration Microsoft 365
 

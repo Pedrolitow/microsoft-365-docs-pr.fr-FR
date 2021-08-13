@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Les utilisateurs ayant des comptes professionnels ou scolaires valides peuvent Cortana des expériences Microsoft 365 qui répondent Office 365 promesses de sécurité au niveau de l’entreprise.
-ms.openlocfilehash: 06df3e6cbb700971f8429dd99ed1dc9f9c247949
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f81fd357ec69a8cf50c2f55875a65b61b0f7d9348662f8c0c1f8f11864419630
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824193"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 
@@ -181,7 +181,7 @@ Désactiver l Cortana accès aux données hébergées par Microsoft de votre org
 
 Pour les services régis par le contrat [de services Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=2109174) et la Déclaration de confidentialité [Microsoft,](https://privacy.microsoft.com/privacystatement)Microsoft est le contrôleur des données. En tant que contrôleur de données, Microsoft utilise les données pour améliorer les produits et services conformément à la déclaration de confidentialité [de Microsoft.](https://privacy.microsoft.com/privacystatement)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Cortana’assistance vocale dans Teams](/microsoftteams/cortana-in-teams) (article)\
 [Configurer les Cortana dans Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)\

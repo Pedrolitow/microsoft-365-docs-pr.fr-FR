@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La solution de demande de droits de l’objet dans la gestion de la confidentialité Microsoft vous permet de rechercher des données personnelles et de collaborer sur la révision de contenu et la création de rapports.
-ms.openlocfilehash: b266708c97ee4b81af6ba61dfa6716c57ff6026e
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 4db9c744468cd75fb09bc8ff45ef9f15d26684a7c2b446557914be9e26b45ccc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419774"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807683"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Gérer les demandes de droits de l’objet dans la gestion de la confidentialité (aperçu)
 
@@ -29,7 +29,7 @@ Dans cet article : découvrez comment utiliser la  solution de demande de droits
 
 ## <a name="purpose-of-subject-rights-requests"></a>Objectif des demandes de droits d’objet
 
-La gestion de la confidentialité offre de puissantes fonctionnalités de demandes de droits d’objet pour vous aider à gérer les demandes des personnes cherchant à gérer leurs données personnelles au sein de votre organisation. Ces demandes sont parfois également appelées demandes d’objet de données (DSR), demandes d’accès de la personne aux données (DSAR) ou demandes de droits du consommateur. La gestion de la confidentialité permet au personnel responsable de la réalisation des demandes de droits de l’objet d’identifier facilement les personnes qui y sont soumises et de trouver leurs informations personnelles parmi les données de votre organisation dans Exchange, SharePoint, OneDrive et Teams.
+La gestion de la confidentialité offre de puissantes fonctionnalités de demandes de droits d’objet pour vous aider à gérer les demandes des personnes cherchant à gérer leurs données personnelles au sein de votre organisation. Ces demandes sont parfois également appelées demandes d’objet de données (DSR), demandes d’accès de la personne à la personne de données (DSAR) ou demandes de droits du consommateur. La gestion de la confidentialité permet au personnel responsable de la réalisation des demandes de droits de l’objet d’identifier facilement les personnes responsables des données et de trouver leurs informations personnelles parmi les données de votre organisation dans Exchange, SharePoint, OneDrive et Teams.
 
 La gestion de la confidentialité est unique pour vous aider à hiérarchiser les éléments à réviser dans les données que vous collectez pour ces demandes. La solution est sensible aux étiquettes Protection des données Microsoft de confidentialité, qui indiquent le contenu potentiellement confidentiel et qui peuvent nécessiter une révision spéciale, et signale les éléments avec ces étiquettes. Pour plus d’informations sur les étiquettes de sensibilité, voir [En savoir plus sur les étiquettes de sensibilité.](sensitivity-labels.md) En outre, la gestion de la confidentialité peut détecter et indicateur des éléments contenant les données de plusieurs personnes, où vous devrez peut-être redacter le contenu avant de le fournir à la personne à l’objet de données.
 
@@ -41,7 +41,7 @@ La gestion de la confidentialité fournit un hub central pour vos administrateur
 
 Pour commencer à gérer un nouveau cas de demande ou pour travailler sur une demande en cours, visitez la page principale des demandes **de droits de l’objet.** Il fournit une vue d’ensemble visuelle des cas que votre équipe a créés au sein de la gestion de la confidentialité, de leur état (actif, fermé ou en retard), ainsi que des types de demandes, ainsi qu’une liste filtrable de toutes les demandes. Cette page vous permet également d’ouvrir une nouvelle demande.
 
-Pour afficher des détails sur les cas d’ouverture, sélectionnez n’importe quelle demande dans la liste et choisissez **Go to request details**. Pour plus d’informations, voir [Examiner et prendre des mesures sur les demandes.](#review-and-take-action-on-requests)
+Pour afficher des détails sur les cas ouverts, sélectionnez n’importe quelle demande dans la liste et choisissez **Go to request details**. Pour plus d’informations, voir [Examiner et prendre des mesures sur les demandes.](#review-and-take-action-on-requests)
 
 Pour ouvrir une nouvelle demande, voir [Créer une demande.](#create-a-request)
 
@@ -61,7 +61,7 @@ Choisissez un type de demande en fonction de ce que la personne à qui vous souh
 
 - **Access**: fournit un résumé des informations personnelles de la sujet de données détenues par votre organisation dans Microsoft 365.
 - **Export**: fournit un résumé et une exportation des informations personnelles de la sujet de données, telles que collectées et annotées lors de la révision.
-- **Liste marquée pour le suivi**: génère un résumé des fichiers qui peuvent nécessiter une action supplémentaire en dehors de la gestion de la confidentialité. Un exemple de scénario peut être si vous avez besoin de faciliter la suppression des informations personnelles de la personne objet de données selon leur demande.
+- **Liste marquée pour le suivi**: génère un résumé des fichiers qui peuvent nécessiter une action supplémentaire en dehors de la gestion de la confidentialité. Un exemple de scénario peut être si vous devez faciliter la suppression des informations personnelles de la personne objet de données selon leur demande.
 
 ### <a name="confirm-the-request-name"></a>Confirmer le nom de la demande
 
@@ -81,7 +81,7 @@ Les vignettes de cette page sont les suivantes :
 
 - **Détails :** détails principaux sur la demande, y compris son échéance et sa date de demande, sa description et la réglementation de confidentialité associée.
 - **Progression**: chronologie indiquant les étapes terminées et les tâches à terminer.
-- **Résumé des estimations de données**: Vue d’ensemble des données évaluées dans votre recherche. Pour en savoir plus sur ces informations, voir Afficher et modifier les requêtes de recherche.
+- **Résumé des estimations de données**: vue d’ensemble des données évaluées dans votre recherche. Pour en savoir plus sur ces informations, voir Afficher et modifier les requêtes de recherche.
 - Éléments de priorité à réviser : le cas échéant, cela affiche des informations sur les éléments importants que la gestion de la confidentialité a détectés pour vous, y compris les informations confidentielles portant déjà une étiquette de confidentialité Microsoft, ou les éléments avec des données sur plusieurs personnes qui peuvent nécessiter une action. Les éléments de priorité se trouvent sous Données collectées en filtrant par la colonne « Types de priorité ».
 
 ### <a name="monitor-progress-and-complete-requests"></a>Surveiller l’avancement et les demandes terminées
@@ -105,7 +105,7 @@ Cette étape indique que la gestion de la confidentialité est en cours de récu
 À ce stade, vos collaborateurs doivent passer en revue les résultats sous l’onglet Données collectées. Les étapes essentielles sont les suivantes :
 
 - Choisissez d’inclure les éléments identifiés dans vos résumés et/ou d’exporter. Si une correspondance signalée n’est pas requise dans l’exportation ou le rapport, sélectionnez l’option « Exclure ». Si le contenu semble être un faux positif, vous pouvez choisir « Ne correspond pas » pour exclure le fichier de vos rapports finals et pointer l’élément comme un élément qui n’aurait pas dû être choisi par la demande. Pour définir l’état d’un élément, utilisez le menu d’action (ellipses verticales) en dehors de son nom et sélectionnez le choix souhaité. Si vous y êtes invité, ajoutez une note de référence interne pour expliquer votre décision. Les remarques sont requises lors de l’exclusion de fichiers.
-- Utilisez l’option **Appliquer des balises** pour vous aider à identifier les éléments qui ont besoin d’attention. Les balises disponibles incluent les options fournies par le système, par exemple le marquage d’un élément pour le suivi, et peuvent inclure des balises personnalisées telles que définies sous Paramètres.
+- Utilisez **l’option Appliquer des balises** pour vous aider à identifier les éléments qui doivent être à l’attention. Les balises disponibles incluent les options fournies par le système, par exemple le marquage d’un élément pour le suivi, et peuvent inclure des balises personnalisées telles que définies sous Paramètres.
 - Utilisez **Annotate pour** créer des marques ou des actions en ligne sur un fichier sélectionné. Par exemple, si vous avez besoin d’inclure un fichier pour un individu qui contient également les informations personnelles d’autres personnes, vous pouvez utiliser l’action de zone **(sous** le bouton Dessin dans la barre de commandes) pour noircir toutes les informations qui ne concernent pas la personne qui a effectué la demande. Lorsque vos modifications sont terminées, sélectionnez Inclure pour ajouter le fichier rédigé à la demande. Notez que l’annotation crée une copie du fichier, de sorte que rien dans le fichier d’origine ne soit modifié et reste à son emplacement d’origine. La copie est stockée dans votre objet blob Azure et restera pendant toute la période de rétention des données. Pour plus d’informations, voir [Rétention des données ci-dessous.](#data-retention)
 - Pour passer en revue les notes d’un élément, sélectionnez-le et sélectionnez l’onglet Notes de fichier. Vous pouvez également utiliser l’option Ajouter une note de fichier pour créer un commentaire. Pour passer en revue ou ajouter des notes à un niveau de cas global, allez dans l’onglet Notes principal ci-dessus et utilisez **ajouter une note de cas.** Ces notes sont visibles pour les utilisateurs qui travaillent sur la demande, mais ne sont pas incluses dans le rapport final ou partagées avec la sujet des données.
 
@@ -133,7 +133,7 @@ Les rapports générés par le biais de cet outil et les données associées, te
 
 ## <a name="collaborate-on-requests-with-teams"></a>Collaborer sur des demandes avec Teams
 
-La gestion de la confidentialité prend en charge la collaboration Microsoft Teams pour permettre à votre groupe de collaborer sur des demandes de droits d’objet. Lorsque vous créez une demande, un canal Teams est automatiquement créé et associé à votre demande par défaut. Ici, vous pouvez discuter de la demande et partager en toute sécurité les entrées et les contributions à mesure qu’elle se déplace vers l’achèvement. Pour participer à la conversation, ouvrez votre demande et utilisez l’option **Conversation avec des** collaborateurs. Cela vous ouvre Microsoft Teams et vous place dans le canal Général pour le site d’équipe de votre demande de droits d’objet.
+La gestion de la confidentialité prend en charge la collaboration Microsoft Teams pour permettre à votre groupe de travailler ensemble sur des demandes de droits d’objet. Lorsque vous créez une demande, un canal Teams est automatiquement créé et associé à votre demande par défaut. Ici, vous pouvez discuter de la demande et partager en toute sécurité les entrées et les contributions à mesure qu’elle se déplace vers l’achèvement. Pour participer à la conversation, ouvrez votre demande et utilisez l’option **Conversation avec des** collaborateurs. Cela vous ouvre Microsoft Teams et vous place dans le canal Général pour le site d’équipe de votre demande de droits d’objet.
 
 Pour consulter la liste des collaborateurs actifs qui peuvent afficher et contribuer à votre site d’équipe, dans votre demande de droits d’objet, ouvrez **l’onglet** Collaborateurs. Pour ajouter des utilisateurs supplémentaires afin de collaborer sur cette demande, sélectionnez l’option Ajouter un collaborateur.
 
@@ -172,7 +172,7 @@ Pour supprimer entièrement le flux, utilisez **l’option Supprimer.** Il suppr
 
 ## <a name="data-matching"></a>Correspondance de données
 
-Grâce à la correspondance des données, les organisations peuvent activer la solution de gestion de la confidentialité pour identifier les personnes liées aux données en fonction des valeurs de données exactes fournies. Cela peut vous aider à améliorer la précision de la localisation du contenu de la sujet des données à la fois pour votre personnel interne et pour les utilisateurs externes avec qui vous interagissez. Il simplifie également la nécessité de fournir manuellement des champs lors de la création d’une demande de droits d’objet, et fournit du contexte dans les demandes de droits d’objet et pour la vignette Vue d’ensemble qui présente vos éléments avec le contenu de la personne ayant le plus de données. Pour en savoir plus sur cette vue, voir [Rechercher et visualiser vos données.](privacy-management-data-profile.md#items-with-the-most-data-subject-content)
+Grâce à la correspondance des données, les organisations peuvent activer la solution de gestion de la confidentialité pour identifier les personnes liées aux données en fonction des valeurs de données fournies exactes. Cela peut vous aider à améliorer la précision de la localisation du contenu de la sujet des données à la fois pour votre personnel interne et pour les utilisateurs externes avec qui vous interagissez. Il simplifie également la nécessité de fournir manuellement des champs lors de la création d’une demande de droits d’objet, et fournit du contexte dans les demandes de droits d’objet et pour la vignette Vue d’ensemble qui présente vos éléments avec le contenu de la personne ayant le plus de données. Pour en savoir plus sur cette vue, voir [Rechercher et visualiser vos données.](privacy-management-data-profile.md#items-with-the-most-data-subject-content)
 
 Pour utiliser la fonctionnalité de correspondance de données, vous devez être membre du groupe de rôles Gestion de la confidentialité. Sélectionnez l’icône d’engrenage des paramètres dans le coin supérieur droit de la page principale des demandes de droits de l’objet, puis sélectionnez **Correspondance de données.** À partir de là, vous devrez définir le schéma de données personnelles et fournir un téléchargement de données personnelles, comme illustré ci-dessous. Notez que vous pouvez ajouter des éléments et supprimer des éléments que vous ajoutez via l’interface utilisateur. Toutefois, vous ne pouvez pas modifier un élément en place à partir de l’interface utilisateur pour le moment.
 
@@ -182,7 +182,7 @@ Avant de définir le schéma ou de télécharger des données, vous devez identi
 
 ### <a name="define-the-personal-data-schema"></a>Définir le schéma de données personnelles
 
-Le schéma de données personnelles décrit les attributs de vos sujets de données. Télécharger ce schéma sur le premier onglet de la zone des paramètres de correspondance de données. Les fichiers requis incluent un fichier XML **de** schéma de données personnelles et un fichier XML **de package** de règles.
+Le schéma de données personnelles décrit les attributs de vos sujets de données. Télécharger ce schéma sur le premier onglet de la zone des paramètres de correspondance de données. Les fichiers requis incluent un **fichier** XML de schéma de données personnelles et un fichier XML **de package** de règles.
 
 #### <a name="personal-data-schema-xml"></a>XML de schéma de données personnelles
 
@@ -228,7 +228,7 @@ Lorsque vous définissez votre package de règles, veillez à référencer corre
   - **idRef**: fournir un GUID pour l’ID ExactMatch.
   - **Nom & descriptions :** personnaliser selon les besoins.
 
-Dans notre exemple de fichier XML de package de règles ci-dessous, nous faisons référence au fichier pdm.xml exemple de fichier de l’étape précédente qui crée le fichier XML de schéma de données personnelles :
+Dans notre exemple de fichier XML de package de règles ci-dessous, nous faisons référence à l’exemple de fichier pdm.xml de l’étape précédente qui crée le fichier XML de schéma de données personnelles :
 
 - **Datastore**: le nom de dataStore fait référence au fichier de schéma que nous avons créé précédemment : dataStore = « PatientRecords ».
 - **idMatch**: la valeur idMatch fait référence à un champ utilisable dans une recherche répertorié dans le fichier pdm.xml que nous avons créé précédemment : idMatch correspond à = « SSN ».

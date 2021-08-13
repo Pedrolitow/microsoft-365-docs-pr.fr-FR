@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Ajoutez de nouveaux employés à Microsoft 365 entreprise pour la messagerie, Skype et Office applications.
-ms.openlocfilehash: 24b31e22423fe7f0d51da5a71c4c14b54f1525f0
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 56b38d19b67fd6437b968455d9462d1ba16fcf947fb13844d52216e72f8dd41e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394110"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815874"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Ajouter un nouvel employé à Microsoft 365
 
@@ -77,7 +77,7 @@ Partagez avec eux la configuration rapide [de l’Microsoft 365](../../business-
   
 Et voici une référence rapide pour les aider à démarrer :
   
-|**Task**|**Rechercher les détails**|
+|**Tâche**|**Rechercher les détails**|
 |:-----|:-----|
 |Se connecter à Office  <br/> |Go to [https://www.office.com](https://www.office.com) , select **Sign in,** and then enter your user ID and password.  <br/> |
 |Installez Office applications sur votre ordinateur.  <br/><br/> |Lorsque vous vous connectez, la page d’accueil possède un lien pour télécharger et installer des applications telles que Word et Outlook.  Sélectionnez **Installer Office**.         Pour obtenir des instructions, [voir Comment installer Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).  <br/> |
@@ -87,7 +87,7 @@ Et voici une référence rapide pour les aider à démarrer :
 |Complétez OneDrive Entreprise formation pour apprendre à stocker et organiser vos documents, présentations et feuilles de calcul dans le cloud.  <br/> |Conservez vos documents liés à l’entreprise dans le cloud à l’aide OneDrive Entreprise. Vous pouvez toujours obtenir votre contenu, même si vous êtes Microsoft 365 sur un autre ordinateur. [Regardez une vidéo pour découvrir comment utiliser votre OneDrive Entreprise](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Formation : OneDrive Entreprise** [formation](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (sélectionnez OneDrive Entreprise).  <br/> |
 |Complétez la formation SharePoint Online pour collaborer avec vos collègues et partager du contenu.  <br/> |Le meilleur endroit pour conserver les documents accessibles par vos collègues est SharePoint Online.  <br/> <br/>**Formation : Vidéo** [: Collaborer avec du contenu d’équipe à l’aide SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Découvrez :** Comment votre organisation utilise-t-SharePoint Online et quel type de documents y sont stockés . En outre, quels documents sont stockés dans OneDrive Entreprise.  <br/> |
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Supprimer un ancien employé de Microsoft 365](remove-former-employee.md) (article)\
 [Ajouter des utilisateurs et attribuer des licences en même temps65](add-users.md) (article)

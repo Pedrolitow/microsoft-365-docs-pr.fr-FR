@@ -14,12 +14,12 @@ ms.service: ''
 search.appverid: ''
 localization_priority: Normal
 description: Découvrez comment créer une rubrique dans Sujets Microsoft Viva.
-ms.openlocfilehash: 5b275741cad759348bc42ebb6bc7fe0d04199ea5
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 4f6ae1444770f26cdb2aff9c6b7516dc2b9e14f0126bf2833e825f05c75dc779
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840600"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Créer une rubrique dans Sujets Microsoft Viva
 
@@ -92,7 +92,7 @@ Vous pouvez créer une rubrique à partir de deux emplacements :
 
 7. La **section Rubriques connexes** présente les connexions qui existent entre les rubriques. Vous pouvez ajouter une connexion à une autre rubrique en sélectionnant le **Connecter** à un bouton de rubrique associé, puis en tapant le nom de la rubrique associée et en le sélectionnant dans les résultats de la recherche. 
 
-   ![Voir aussi](../media/knowledge-management/related-topic.png)  
+   ![Sujets connexes](../media/knowledge-management/related-topic.png)  
 
     Vous pouvez ensuite donner une description de la façon dont les rubriques sont liées, puis sélectionner **Mettre à jour.**
 

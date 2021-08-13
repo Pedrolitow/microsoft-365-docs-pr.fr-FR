@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Achetez des produits ou services professionnels auprès de Microsoft en utilisant une méthode de paiement existante ou en ajoutant une nouvelle dans le centre d'administration de Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: e944547e69ea8774690852d1b3123578d40bd3c0
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 6996108fa3a1a9f945be1e1e26c574cd559054dbcb5998d94ba09299c93e5c7c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856378"
 ---
 # <a name="manage-payment-methods"></a>Gérer les modes de paiement
 

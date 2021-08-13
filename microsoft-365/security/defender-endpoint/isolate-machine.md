@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 66fc3bcf0820d098303ce1a05a98c18cfd8a3cf0
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7c881402a90c8e858d05556f5d8ed7f1be581581c78b5b084838b4dfb6181255
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806951"
 ---
 # <a name="isolate-machine-api"></a>API Isoler l’ordinateur
 
@@ -49,6 +49,12 @@ Isole un appareil de l’accès au réseau externe.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
+> [!IMPORTANT]
+>
+> - L’isolation complète est disponible pour les appareils Windows 10, version 1703.
+> - L’isolation sélective est disponible pour les appareils Windows 10, version 1709 ou ultérieure.
+> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionnée pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
+
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
@@ -61,7 +67,7 @@ Déléguée (compte professionnel ou scolaire)|Machine.Isolate|« Isoler l’ord
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (pour plus d’informations, voir Créer et gérer [des](user-roles.md) rôles)
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
@@ -88,12 +94,12 @@ IsolationType|Chaîne|Type de l’isolation. Les valeurs autorisées sont : « F
 
 **IsolationType** contrôle le type d’isolation à effectuer et peut être l’une des suivantes :
 
-- Complète : isolation complète
+- Complet : isolation complète
 - Sélective : empêcher uniquement un ensemble limité d’applications d’accéder au réseau (voir [Isoler](respond-machine-alerts.md#isolate-devices-from-the-network) les appareils du réseau pour plus d’informations)
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 201 : code de réponse créé et action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

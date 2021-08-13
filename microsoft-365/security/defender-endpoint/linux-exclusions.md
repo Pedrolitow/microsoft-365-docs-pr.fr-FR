@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 269f74b0df2b0c51217d44bdb0cc2001d0f8a34d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e6a77dd2ef76a93a09670f18bad649cdc0dc0e1b393313efdbc5c9d5ecdbc681
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806891"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Configurer et valider des exclusions pour Microsoft Defender pour endpoint sur Linux
 
@@ -171,7 +171,7 @@ Exemples :
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d’exclusions avec le fichier de test EICAR
 
-Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide `curl` du téléchargement d’un fichier de test.
+Vous pouvez vérifier que vos listes d’exclusions fonctionnent en téléchargeant `curl` un fichier de test.
 
 Dans l’extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter la commande dans ce chemin d’accès.
 
@@ -187,7 +187,7 @@ Si vous n’avez pas accès à Internet, vous pouvez créer votre propre fichier
 echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > test.txt
 ```
 
-Vous pouvez également copier la chaîne dans un fichier texte vide et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
+Vous pouvez également copier la chaîne dans un fichier texte vierge et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
 
 ## <a name="allow-threats"></a>Autoriser les menaces
 

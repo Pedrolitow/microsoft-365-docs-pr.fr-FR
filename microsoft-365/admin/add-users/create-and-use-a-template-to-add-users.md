@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les paramètres lorsque vous ajoutez plusieurs utilisateurs.
-ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ff111850cf0dabda464653bc7503622d92e8468a430eb27a3dd2843f6ec5ade5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579385"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815838"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Créer et utiliser un modèle pour ajouter des utilisateurs
 
@@ -43,7 +43,7 @@ Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs 
 - Emplacement de la licence
 - Choix de licence
 - Choix de l’application
-- Role
+- Rôle
 - La plupart des informations de profil, telles que profil **de** travail, **service,** **Office,** **Office téléphone** et adresse **de rue** 
 
 Les informations suivantes sont propres à l’utilisateur et ne sont pas enregistrées dans le modèle :
@@ -84,12 +84,12 @@ Vous pouvez uniquement supprimer des modèles dont vous n’avez plus besoin et 
 
 3. Une liste de modèles s’affiche. Vous pouvez supprimer un modèle en faisant l’une des choses suivantes :
     - Sélectionnez un ou plusieurs modèles, puis sélectionnez **Supprimer.** 
-    - Sélectionnez les trois points à droite du nom du modèle, puis sélectionnez **Supprimer.**
+    - Sélectionnez les trois points à droite du nom du modèle, puis sélectionnez **Supprimer**.
     - Sélectionnez le nom du modèle. Lorsque les détails du modèle apparaissent sur le côté droit de votre écran, sélectionnez **Supprimer le modèle.**
 
 ## <a name="related-articles"></a>Articles connexes
 
 [Ajouter des utilisateurs et attribuer des licences simultanément](add-users.md)
 
-[Supprimer un ancien employé de Microsoft 365](remove-former-employee.md)
+[Supprimer un ancien employé de l’Microsoft 365](remove-former-employee.md)
   

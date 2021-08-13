@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 14b3bebab8b73b7b45c79a34903fed5d0f6ec9ca
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 8643ebf742cff0597e02b19e0db93f88b871ac0abc47a7b71e383dd644f4a687
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807719"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 

@@ -19,12 +19,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Décrit les causes fréquentes des problèmes de synchronisation d’annuaires dans Office 365 et fournit plusieurs méthodes de résolution.
-ms.openlocfilehash: c6d810bd2f98df2c8df1c0e7fc942502c32d07f8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 006691ed099b5e5eb1bec22654429905550d8f0411a3605f2e1ca82e414f8284
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922435"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807491"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Résoudre les problèmes de synchronisation d’annuaires pour Microsoft 365
 
