@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: En savoir plus sur Office 365 21Vianet conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: c8d43c385f44434e9ed4832a094ea4909bf505a4
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 3d91c452ddaca7b8214bffcfa7764515f12fac9ebee07fc6d3749767148a652a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822330"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 géré par 21Vianet
 
@@ -125,10 +125,10 @@ Pour les organisations exécutant des versions plus anciennes ou mixtes de Excha
 
 |**Version Exchange local**|**Exchange Version du serveur hybride**|**Assistant Configuration hybride pris en charge ?**|**Fonctionnalités hybrides prise en charge**|
 |:-----|:-----|:-----|:-----|
-| 2016  <br/> | N/D  <br/> | Oui  <br/> | tous  <br/> |
-| CU5 2013  <br/> | N/D  <br/> | Oui  <br/> | tous  <br/> |
-| 2013 SP1  <br/> | CU5 2013  <br/> | Oui  <br/> | tous  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | Oui  <br/> | tous  <br/> |
+| 2016  <br/> | N/D  <br/> | Oui  <br/> | Tous  <br/> |
+| CU5 2013  <br/> | N/D  <br/> | Oui  <br/> | Tous  <br/> |
+| 2013 SP1  <br/> | CU5 2013  <br/> | Oui  <br/> | Tous  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | Oui  <br/> | Tous  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | CU5 2013  <br/> | Oui  <br/> | Tous, à l’exception de la découverte électronique/archivage sur place, OWA’accès (voir le tableau ci-dessous)  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Oui  <br/> | Uniquement configuré manuellement la libre/occupé(s)  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
@@ -236,7 +236,7 @@ Le R GDPR accorde à des personnes (ou à des personnes ayant des données) cert
     
 Pour plus d’informations et d’instructions, voir Demandes des personnes qui ont des données [(DSR) concernant le R GDPR.](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Essayer ou acheter un abonnement Microsoft 365 entreprise](../../commerce/try-or-buy-microsoft-365.md) (article)\
 [Prise en charge d’Azure Information Protection Office 365 géré par 21Vianet](parity-between-azure-information-protection.md) (article)\

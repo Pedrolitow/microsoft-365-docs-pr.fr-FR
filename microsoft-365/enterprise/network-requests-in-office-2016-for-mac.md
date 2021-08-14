@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Cet article décrit les points de terminaison et les URL que Office pour Mac applications tentent d’atteindre, ainsi que les services fournis.
-ms.openlocfilehash: b777b4ea7e03495cb6389be8fe05e96a26fd9664
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 48a2dd266e0ed9379651e62ad835f4d27a5228b726b5f0e6da03ed8a55e23606
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848482"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Requêtes réseau dans Office pour Mac
 
@@ -52,7 +52,7 @@ Le type d’URL est défini comme suit :
   
 Les points de terminaison réseau suivants sont utilisés pour télécharger le programme d Office pour Mac d’installation à partir de Microsoft réseau de distribution de contenu (CDN).
   
-|**URL**|**Type (Type)**|**Description**|
+|**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |```https://go.microsoft.com/fwlink/```  <br/> |ST  <br/> |Microsoft 365 Service de liaison de l’avant du portail d’installation vers les packages d’installation les plus récents.  <br/> |
 |```https://officecdn-microsoft-com.akamaized.net/```  <br/> |SS  <br/> |Emplacement des packages d’installation sur le réseau de distribution de contenu.  <br/> |
@@ -63,7 +63,7 @@ Les points de terminaison réseau suivants sont utilisés pour télécharger le 
   
 Les points de terminaison réseau suivants sont contactés lors du premier lancement d’une application Office. Ces points de terminaison fournissent des fonctionnalités de Office améliorées pour les utilisateurs, et les URL sont contactées quel que soit le type de licence (y compris les installations avec licence en volume).
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://config.edge.skype.com/```  <br/> |WXPON  <br/> |ST  <br/> |Configuration de « flighting » : autorise l’éclairage et l’expérimentation des fonctionnalités.  <br/> |
 |```https://ocos-office365-s2s.msedge.net/```  <br/> |WXPON  <br/> |ST  <br/> |Test de configuration réseau « Flighting »  <br/> |
@@ -92,7 +92,7 @@ Les points de terminaison réseau suivants sont contactés lors du premier lance
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |ST  <br/> |Icônes pour Outlook de recherche.  <br/> |
    
 > [!NOTE]
-> Le Office Configuration Service agit comme un service de découverte automatique pour tous les clients Microsoft Office, pas seulement pour Mac. Les points de terminaison renvoyés dans la réponse sont semi-statiques, car la modification est très rare, mais toujours possible. 
+> Le Office Configuration Service agit comme un service de découverte automatique pour tous les clients Microsoft Office, et pas seulement pour Mac. Les points de terminaison renvoyés dans la réponse sont semi-statiques, car la modification est très rare, mais toujours possible. 
   
  **Connexion**
   
@@ -102,7 +102,7 @@ Les points de terminaison réseau suivants sont contactés lors de la signature 
     
 - **OrgID : Compte d’organisation** - généralement utilisé pour les scénarios commerciaux 
     
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |ST  <br/> |Windows Service d’autorisation  <br/> |
 |```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ST  <br/> |Microsoft 365 Login Service (OrgID)  <br/> |
@@ -113,13 +113,13 @@ Les points de terminaison réseau suivants sont contactés lors de la signature 
 |```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Dernier service de document utilisé (MRU)  <br/> |
    
 > [!NOTE]
-> Pour les licences basées sur un abonnement et la vente au détail, la signature active le produit et permet d’accéder à des ressources cloud telles que OneDrive. Pour les installations de licence en volume, les utilisateurs sont toujours invités à se connecter (par défaut), mais cela n’est requis que pour l’accès aux ressources cloud, car le produit est déjà activé. 
+> Pour les licences basées sur un abonnement et la vente au détail, la signature active le produit et permet d’accéder à des ressources cloud telles que OneDrive. Pour les installations avec licence en volume, les utilisateurs sont toujours invités à se connecter (par défaut), mais cela n’est requis que pour l’accès aux ressources cloud, car le produit est déjà activé. 
   
  **Activation du produit**
   
 Les points de terminaison réseau suivants s’appliquent Microsoft 365 activations d’abonnements et de licences au détail. Plus précisément, cela ne s’applique PAS aux installations de licence en volume.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://ols.officeapps.live.com/```  <br/> |WXPON  <br/> |CS  <br/> |Service de gestion des licences Office  <br/> |
    
@@ -127,7 +127,7 @@ Les points de terminaison réseau suivants s’appliquent Microsoft 365 activati
   
 Les points de terminaison réseau suivants s’appliquent Microsoft 365 abonnement uniquement.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |SS  <br/> |Contenu de la page JSON nouveautés.  <br/> |
    
@@ -135,9 +135,9 @@ Les points de terminaison réseau suivants s’appliquent Microsoft 365 abonneme
   
 Les points de terminaison réseau suivants s’appliquent Microsoft 365 abonnement uniquement.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
-|```https://entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Service Web De recherche  <br/> |
+|```https://entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Service Web Recherche  <br/> |
 |```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Contenu statique De la recherche  <br/> |
 |```https://www.bing.com/```  <br/> |W  <br/> |CS  <br/> |Fournisseur de contenu Recherche  <br/> |
    
@@ -145,27 +145,27 @@ Les points de terminaison réseau suivants s’appliquent Microsoft 365 abonneme
   
 Les points de terminaison réseau suivants s’appliquent aux activations Microsoft 365 abonnement et aux activations de licence en volume/détail.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
-|```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Insights Web Service  <br/> |
+|```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Informations Web Service  <br/> |
 |```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |CS  <br/> |Bibliothèque JQuery  <br/> |
 |```https://cdnjs.cloudflare.com/```  <br/> |WXPN  <br/> |CS  <br/> |Prise en charge de la bibliothèque JavaScript  <br/> |
-|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |Fournisseur de contenu Insights  <br/> |
-|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |Fournisseur de contenu Insights  <br/> |
+|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |Informations Fournisseur de contenu  <br/> |
+|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |Informations Fournisseur de contenu  <br/> |
    
  **Concepteur PowerPoint**
   
 Les points de terminaison réseau suivants s’appliquent Microsoft 365 abonnement uniquement.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
-|```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |Concepteur PowerPoint web  <br/> |
+|```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint Service web concepteur  <br/> |
    
  **Aide au démarrage de PowerPoint**
   
 Les points de terminaison réseau suivants s’appliquent Microsoft 365 abonnement uniquement.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://pptcts.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint Service web QuickStarter  <br/> |
    
@@ -173,7 +173,7 @@ Les points de terminaison réseau suivants s’appliquent Microsoft 365 abonneme
   
 Les points de terminaison réseau suivants s’appliquent aux activations Microsoft 365 abonnement et aux activations de licence en volume/détail.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |CS  <br/> |Envoyer un service de souris  <br/> |
    
@@ -181,7 +181,7 @@ Les points de terminaison réseau suivants s’appliquent aux activations Micros
   
 Les points de terminaison réseau suivants s’appliquent aux activations Microsoft 365 abonnement et aux activations de licence en volume/détail.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://powerlift-frontdesk.acompli.net/```  <br/> |O  <br/> |CS  <br/> |Contacter le service de support technique  <br/> |
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |CS  <br/> |Service de support dans l’application  <br/> |
@@ -190,7 +190,7 @@ Les points de terminaison réseau suivants s’appliquent aux activations Micros
   
 Les points de terminaison réseau suivants s’appliquent aux activations Microsoft 365 abonnement et aux activations de licence en volume/détail.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://wordcs.officeapps.live.com/```  <br/> |W  <br/> |CS  <br/> |Service de conversion de documents Word (PDF)  <br/> |
    
@@ -198,7 +198,7 @@ Les points de terminaison réseau suivants s’appliquent aux activations Micros
   
 Les points de terminaison réseau suivants s’appliquent aux activations d’abonnement Microsoft 365 et de licence en volume/Office lorsque les compléments d’application Office sont fiables.
   
-|**URL**|**Applications**|**Type (Type)**|**Description**|
+|**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://store.office.com/```  <br/> |WXPO  <br/> |CS  <br/> |application Office de la boutique d’ordinateurs  <br/> |
 |```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |SS  <br/> |Ressources d’application Wikipedia  <br/> |
@@ -226,20 +226,20 @@ Les points de terminaison réseau suivants s’appliquent aux activations d’ab
    
  **Liens fiables**
   
-Le point de terminaison réseau suivant s’applique à toutes les applications Office pour Microsoft 365 abonnement uniquement.
+Le point de terminaison réseau suivant s’applique à toutes Office applications pour Microsoft 365 abonnement uniquement.
   
-|**URL**|**Type (Type)**|**Description**|
+|**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|```https://*.oscs.protection.outlook.com/```  <br/> |CS  <br/> |Service de liens sécurisés Microsoft  <br/> |
+|```https://*.oscs.protection.outlook.com/```  <br/> |CS  <br/> |Service de liens Coffre Microsoft  <br/> |
    
  **Rapports d’incident**
   
-Le point de terminaison réseau suivant s’applique à toutes les applications Office pour les activations d’abonnement Microsoft 365 et de licences commerciales/en volume. Lorsqu’un processus se crashe de façon inattendue, un rapport est généré et envoyé au service Watson.
+Le point de terminaison réseau suivant s’applique à toutes les applications Office pour les activations Microsoft 365 abonnement et les activations de licence en volume/au détail. Lorsqu’un processus se crashe de façon inattendue, un rapport est généré et envoyé au service Watson.
   
-|**URL**|**Type (Type)**|**Description**|
+|**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |```https://watson.microsoft.com/```  <br/> |ST  <br/> |Service de rapport d’erreurs Microsoft  <br/> |
-|```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |Office Collaborative Insights Service  <br/> |
+|```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |Office Service Informations collaboration  <br/> |
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>Options de réduction des demandes réseau et du trafic
 
@@ -276,7 +276,7 @@ Pour rétablir toutes les fonctionnalités pour l’utilisateur, définissez la 
   
 ### <a name="telemetry"></a>Télémétrie
   
-Office pour Mac des informations de télémétrie à Microsoft à intervalles réguliers. Les données sont téléchargées vers le point de terminaison « Nexus ». Les données de télémétrie permettent à l’équipe d’ingénierie d’évaluer l’état d’application Office. Il existe deux catégories de télémétrie :
+Office pour Mac des informations de télémétrie à Microsoft à intervalles réguliers. Les données sont téléchargées vers le point de terminaison « Nexus ». Les données de télémétrie aident l’équipe d’ingénierie à évaluer l’état d’application Office. Il existe deux catégories de télémétrie :
   
 - **Heartbeat contient** des informations sur la version et la licence. Ces données sont envoyées immédiatement au lancement de l’application. 
     
@@ -304,7 +304,7 @@ La télémétrie pulsation est toujours envoyée et ne peut pas être désactiv�
   
 Lorsqu’une erreur d’application fatale se produit, l’application se termine et charge inopinément un rapport d’incident vers le service « Watson ». Le rapport d’incident se compose d’une pile d’appels, qui est la liste des étapes que l’application a traitées avant le crash. Ces étapes aident l’équipe d’ingénierie à identifier la fonction exacte qui a échoué et pourquoi.
   
-Dans certains cas, le contenu d’un document entraîne le crash de l’application. Si l’application identifie le document comme cause, elle demande à l’utilisateur s’il est possible d’envoyer également le document avec la pile d’appels. Les utilisateurs peuvent faire un choix informé à cette question. Les administrateurs informatiques peuvent avoir des exigences strictes en matière de transmission des documents et décider au nom de l’utilisateur de ne jamais envoyer de documents. La préférence suivante peut être définie pour empêcher l’envoi de documents et pour supprimer l’invite à l’utilisateur :
+Dans certains cas, le contenu d’un document entraîne le crash de l’application. Si l’application identifie le document comme cause, elle demande à l’utilisateur s’il est possible d’envoyer également le document avec la pile d’appels. Les utilisateurs peuvent faire un choix informé à cette question. Les administrateurs informatiques peuvent avoir des exigences strictes en matière de transmission des documents et décider de la part de l’utilisateur de ne jamais envoyer de documents. La préférence suivante peut être définie pour empêcher l’envoi de documents et pour supprimer l’invite à l’utilisateur :
   
 ```defaults write com.microsoft.errorreporting IsAttachFilesEnabled -bool FALSE```
 

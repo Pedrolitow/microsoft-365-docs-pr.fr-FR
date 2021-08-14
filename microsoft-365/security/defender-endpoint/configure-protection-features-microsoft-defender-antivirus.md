@@ -15,17 +15,17 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: d8ce2ded8fd3270bcb095022c714f07d8030e1f7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 0e91a48d41aded93974b47745869e5ab220170d4e41ed82726aeb9e50c1aa075
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834058"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Configurer la protection comportementale, heuristique et en temps réel.
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -39,7 +39,7 @@ Vous pouvez configurer la façon dont Antivirus Microsoft Defender utilise ces m
 
 Cette section couvre la configuration de l’analyse toujours en ligne, notamment la détection et le blocage des applications qui sont considérées comme non sûres, mais qui peuvent ne pas être détectées comme des programmes malveillants.
 
-Voir [Utiliser les technologies de Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) nouvelle génération via la protection cloud pour savoir comment activer et configurer Antivirus Microsoft Defender protection cloud.
+Voir [Utiliser des technologies de Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) nouvelle génération via la protection cloud pour savoir comment activer et configurer Antivirus Microsoft Defender protection cloud.
 
 ## <a name="in-this-section"></a>Dans cette section
 

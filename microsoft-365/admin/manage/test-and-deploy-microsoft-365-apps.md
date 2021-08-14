@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Recherchez, testez et déployez des applications partenaires Microsoft et Microsoft pour les utilisateurs et les groupes de votre organisation à partir du portail Des applications intégrées dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: dcd4a91d9e43c0a740094615cd3dca0b0e8bc0f6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 7a4daff76262e2fc08b5d205eba81bd8016718f8b7461c930a5967454cdaa2eb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824530"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Tester et déployer des Microsoft 365 Apps par des partenaires dans le portail applications intégrées
 
@@ -141,24 +141,24 @@ Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une de
 
 Pour Outlook, vos utilisateurs doivent utiliser l’une des utilisations suivantes : 
 - Version 1701 ou ultérieure des licences Microsoft 365 Entreprise (E3/E5/F3) ou Microsoft 365 Business (Business Basic, Business Standard, Business Premium). 
-- Version 1808 ou ultérieure Office Professionnel Plus 2019 ou Office Standard 2019. 
-- Version 16.0.4494.1000 ou ultérieure de Office Professionnel Plus 2016 (MSI) ou Office Standard 2016 (MSI).
+- Version 1808 ou ultérieure de Office Professionnel Plus 2019 ou Office Standard 2019. 
+- Version 16.0.4494.1000 ou ultérieure de Office Professionnel Plus 2016 (MSI) ou de Office Standard 2016 (MSI).
     > [!NOTE]
-    > Les versions MSI d’Outlook montrent les add-ins installés par l’administrateur dans le ruban Outlook approprié, et non dans la section « Mes add-ins ».  
+    > Les versions MSI de Outlook les add-ins installés par l’administrateur dans le ruban Outlook approprié, et non dans la section « Mes modules ».  
 - Version 15.0.4937.1000 ou ultérieure de Office Professionnel Plus 2013 (MSI) ou Office Standard 2013 (MSI).
-- Version 16.0.9318.1000 ou ultérieure d’Office 2016 pour Mac. 
-- Version 2.75.0 ou ultérieure d’Outlook Mobile pour iOS. 
-- Version 2.2.145 ou ultérieure d’Outlook Mobile pour Android. 
+- Version 16.0.9318.1000 ou ultérieure de Office 2016 pour Mac. 
+- Version 2.75.0 ou ultérieure de Outlook mobile pour iOS. 
+- Version 2.2.145 ou ultérieure de Outlook mobile pour Android. 
 
 
 
-### <a name="exchange-online-requirements"></a>Conditions requises pour Exchange Online 
-Microsoft Exchange stocke les manifestes du add-in dans le client de votre organisation. L’administrateur déployant des applications et les utilisateurs qui les reçoivent doivent se trouver sur une version d’Exchange Online qui prend en charge l’authentification OAuth. 
+### <a name="exchange-online-requirements"></a>Exchange Online requise 
+Microsoft Exchange les manifestes de votre organisation. L’administrateur déployant des applications et les utilisateurs qui les reçoivent doivent se trouver sur une version de Exchange Online qui prend en charge l’authentification OAuth. 
 
 Pour connaître la configuration utilisée, consultez l'administrateur Exchange de votre organisation. La connectivité OAuth par utilisateur peut être vérifiée à l’aide de l’cmdlet [PowerShell Test-OAuthConnectivity.](/powershell/module/exchange/test-oauthconnectivity)   
 
 ### <a name="user-and-group-assignments"></a>Affectations à des utilisateurs et groupes
-Le déploiement d’un module est actuellement pris en charge pour la majorité des groupes pris en charge par Azure Active Directory, y compris les groupes Microsoft 365, les listes de distribution et les groupes de sécurité. Le déploiement prend en charge les utilisateurs des groupes de niveau supérieur ou des groupes sans groupes parents, mais pas les utilisateurs de groupes imbrmbrés ou de groupes qui ont des groupes parents. 
+Le déploiement du module de mise en œuvre est actuellement pris en charge pour la majorité des groupes pris en charge par Azure Active Directory, notamment les groupes Microsoft 365, les listes de distribution et les groupes de sécurité. Le déploiement prend en charge les utilisateurs des groupes de niveau supérieur ou des groupes sans groupes parents, mais pas les utilisateurs de groupes imbrmbrés ou de groupes qui ont des groupes parents. 
 
 > [!NOTE]
 > Les groupes de sécurité sans extension messagerie ne sont pas actuellement pas pris en charge. 
@@ -169,15 +169,15 @@ Dans l’exemple suivant, le groupe Service des ventes est affecté à un module
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Déterminer si un groupe contient des groupes imbriqués
 
-La manière la plus simple de détecter si un groupe contient des groupes imbriqués consiste à afficher la carte de visite du groupe dans Outlook. Si vous entrez le nom du groupe dans le champ **À** d’un e-mail, puis sélectionnez le nom du groupe lorsqu’il est résolu, il vous indique s’il contient des utilisateurs ou des groupes   imbrmbrés. Dans l’exemple ci-dessous, l’onglet **Membres** de la carte de visite Outlook pour le groupe de test n’affiche aucun utilisateur   et seulement deux sous-groupes. 
+La manière la plus simple de détecter si un groupe contient des groupes imbriqués consiste à afficher la carte de visite du groupe dans Outlook. Si vous entrez le nom du groupe dans le champ **À** d’un e-mail, puis sélectionnez le nom du groupe lorsqu’il est résolu, il vous indique s’il contient des utilisateurs ou des groupes   imbrmbrés. Dans l’exemple **** ci-dessous, l’onglet Membres de Outlook carte de visite du groupe de test n’affiche aucun utilisateur   et seulement deux sous-groupes. 
 
-![Onglet Membres de la carte de visite Outlook](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Onglet Membres de la carte Outlook contact](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il est membre d'un groupe. Dans l’exemple ci-dessous, <b></b>vous pouvez voir sous l’onglet Appartenance de la carte de visite Outlook que le sous-groupe 1 est   membre du groupe de test. 
+Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il est membre d'un groupe. Dans l’exemple ci-dessous, <b></b>vous pouvez voir sous l’onglet Appartenance de la carte de visite Outlook que le sous-groupe 1 est membre   du groupe de test. 
 
-![Onglet Appartenance à la carte de visite Outlook](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Onglet Appartenance de la carte Outlook contact](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Notez que vous pouvez utiliser l’API Graph Azure Active Directory pour exécuter des requêtes afin de trouver la liste des groupes au sein d’un groupe. Pour plus d’informations, voir [Opérations sur les groupes | Référence de l’API Graph.](/previous-versions/azure/ad/graph/api/groups-operations) 
+Notez que vous pouvez utiliser l’API Azure Active Directory Graph pour exécuter des requêtes afin de trouver la liste des groupes au sein d’un groupe. Pour plus d’informations, voir [Opérations sur les groupes | Graph Référence d’API](/previous-versions/azure/ad/graph/api/groups-operations). 
 
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approche recommandée pour le déploiement de compléments Office 
 Pour déployer des add-ins à l’aide d’une approche par phases, nous vous recommandons les étapes suivantes : 
@@ -199,20 +199,20 @@ Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des éta
 
 4.  **Sélectionnez** Tout le **monde, Utilisateurs/groupes** spécifiques ou Simplement **moi** pour spécifier vers qui le module est   déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. Si vous testez le module, sélectionnez **Est-ce qu’il s’agit d’un déploiement de test**. 
 
-5. Sélectionnez **Suivant**. Toutes les fonctionnalités et autorisations de l’application sont affichées dans un seul volet avec des informations de certification si l’application dispose de la certification Microsoft 365. La sélection du logo de certification permet à l’utilisateur d’obtenir plus de détails sur la certification.  
+5. Sélectionnez **Suivant**. Toutes les fonctionnalités et autorisations de l’application sont affichées dans un seul volet avec des informations de certification si l’application Microsoft 365 certification. La sélection du logo de certification permet à l’utilisateur d’obtenir plus de détails sur la certification.  
 
 6. Examinez, puis sélectionnez **Terminer le déploiement.**  
 
 7. Une icône verte « tick » s’affiche lorsque le module est déployé. Suivez les instructions de la page pour tester le add-in. 
 
 > [!NOTE]
-> Il se peut que les utilisateurs doivent redémarrer Office pour afficher l’icône de l’application sur le ruban de l’application. L’apparition des applications dans les rubans d’application peut prendre jusqu’à 24 heures. 
+> Les utilisateurs devront peut-être redémarrer Office pour afficher l’icône de la application sur le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application. 
 
 Il est bon d’informer les utilisateurs et les groupes que le add-in déployé est disponible. Envisagez d’envoyer un e-mail qui décrit quand et comment utiliser le add-in. Inclure ou lier du contenu d’aide ou des FAQ qui peuvent aider les utilisateurs en cas de problèmes avec le module. 
 
 ## <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Points à considérer lors de l'affectation d'un complément à des utilisateurs et groupes 
 
-Les administrateurs globaux et les administrateurs Exchange peuvent affecter un add-in à tout le monde ou à des utilisateurs et groupes spécifiques. Chaque option a des conséquences spécifiques : 
+Les administrateurs globaux et Exchange administrateurs peuvent affecter un module à tout le monde ou à des utilisateurs et groupes spécifiques. Chaque option a des conséquences spécifiques : 
 
 - **Tout le monde**   Cette option affecte le add-in à tous les utilisateurs de l’organisation. Utilisez-la avec parcimonie et uniquement pour les compléments qui sont réellement universels pour l'ensemble de votre organisation. 
 
@@ -224,25 +224,25 @@ Les administrateurs globaux et les administrateurs Exchange peuvent affecter un 
 
 L’option la plus efficace pour votre organisation dépend de votre configuration. Toutefois, nous vous recommandons d’effectuer des affectations à l’aide de groupes. En tant qu’administrateur, il peut être plus facile de gérer les modules en utilisant des groupes et en contrôlant l’appartenance à ces groupes plutôt que d’affecter des utilisateurs individuels à chaque fois. Dans certains cas, vous pouvez restreindre l’accès à un petit groupe d’utilisateurs en attribuant des affectations à des utilisateurs spécifiques en attribuant manuellement des utilisateurs. 
 
-### <a name="more-about-office-add-ins-security"></a>En savoir plus sur la sécurité des add-ins Office 
+### <a name="more-about-office-add-ins-security"></a>En savoir plus Office sécurité des add-ins 
 Les compléments Office combinent un fichier manifeste XML qui inclut certaines métadonnées sur le complément, mais surtout qui pointe vers une application web contenant tout le code et la logique. Les fonctionnalités des compléments peuvent varier. Par exemple, les compléments peuvent :
 - afficher des données. 
 - lire le document d'un utilisateur pour fournir des services contextuels. 
 - lire et écrire des données vers le document d'un utilisateur et à partir de celui-ci pour fournir une valeur à cet utilisateur.  
 
-Pour plus d’informations sur les types et les fonctionnalités des add-ins Office, voir vue d’ensemble de la plateforme des [add-ins Office,](/office/dev/add-ins/overview/office-add-ins)en particulier la section « Anatomie d’un add-in Office ». 
+Pour plus d’informations sur les types et fonctionnalités des Office, voir vue d’ensemble de la plateforme des Office [Add-ins,](/office/dev/add-ins/overview/office-add-ins)en particulier la section « Anatomie d’un Office ». 
 
-Pour interagir avec le document de l’utilisateur, le add-in doit déclarer l’autorisation dont il a besoin dans le manifeste. Un modèle d’autorisations d’accès de l’API JavaScript à cinq niveaux constitue la base de la confidentialité et de la sécurité pour les utilisateurs de modules de développement de volet de tâches. La plupart des add-ins dans l’Office Store sont de niveau ReadWriteDocument avec presque tous les modules qui écrivent au moins le niveau ReadDocument. Pour plus d’informations sur les niveaux d’autorisation, voir Demande [d’autorisations](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)pour l’utilisation des API dans les modules complémentaires de contenu et du volet Des tâches. 
+Pour interagir avec le document de l’utilisateur, le add-in doit déclarer l’autorisation dont il a besoin dans le manifeste. Un modèle d’autorisations d’accès de l’API JavaScript à cinq niveaux constitue la base de la confidentialité et de la sécurité pour les utilisateurs de modules de développement de volet de tâches. La plupart des add-ins dans le Office Store sont de niveau ReadWriteDocument avec presque tous les modules qui la prise en charge au moins au niveau ReadDocument. Pour plus d’informations sur les niveaux d’autorisation, voir Demande [d’autorisations](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)pour l’utilisation des API dans les modules complémentaires de contenu et du volet Des tâches. 
 
 Lors de la mise à jour d'un manifeste, les modifications standard sont apportées à l'icône et au texte d'un complément. Les commandes de complément changent parfois, contrairement aux autorisations du complément. L'application web dans laquelle le code et la logique du complément sont exécutés peut changer à tout moment, ce qui est la nature même des applications web. 
 
 Les mises à jour des compléments se produisent comme suit : 
 - **Add-in** métier : dans ce cas, lorsqu’un administrateur a téléchargé explicitement un manifeste, le add-in exige que l’administrateur charge un nouveau fichier manifeste pour prendre en charge les modifications de métadonnées. Le complément est mis à jour au démarrage suivant des applications Office concernées. L'application web peut changer à tout moment. 
 
-- **Add-in Office Store**: lorsqu’un administrateur a sélectionné un add-in à partir de l’Office Store, si un add-in est mis à jour dans l’Office Store, lors du prochain démarrage des applications Office pertinentes, le add-in est mis à jour. L'application web peut changer à tout moment. 
+- **Office** Store : lorsqu’un administrateur a sélectionné un add-in dans le Office Store, si un application est mise à jour dans le Office Store, lors du prochain démarrage des applications Office pertinentes, le add-in est mis à jour. L'application web peut changer à tout moment. 
 
 > [!NOTE]
-> Pour Word, Excel et PowerPoint, utilisez un catalogue d’applications [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)pour déployer des applications pour les utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des applications   SharePoint requises. Pour Outlook, utilisez le panneau de contrôle Exchange pour déployer dans un environnement local sans connexion à Microsoft 365.  
+> Pour Word, Excel et PowerPoint utilisent un catalogue d’applications [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)pour déployer des applications pour les utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des SharePoint de   l’application. Par Outlook utiliser Exchange panneau de Microsoft 365.  
 
 ## <a name="add-in-states"></a>États de complément
 Un add-in peut être à **l’état On**   ou **Off.**   
@@ -289,7 +289,7 @@ Il existe deux cas dans lesquels un administrateur Exchange ne peut pas déploye
 - Si un add-in est lié à au moins deux applications et applications web, et qu’au moins l’un de ces modules est déployé par un autre administrateur (exchange/global) et que l’affectation de l’utilisateur n’est pas uniforme. Nous permettons uniquement le déploiement des applications lorsque l’affectation de l’utilisateur est la même pour toutes les applications déjà déployées.  
 
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>Quel rôle d’administrateur ai-je besoin pour accéder aux applications intégrées ?
 

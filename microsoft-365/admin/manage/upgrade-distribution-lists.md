@@ -1,5 +1,5 @@
 ---
-title: Mettre à niveau les listes de distribution Microsoft 365 groupes dans Outlook
+title: Améliorer les listes de distribution vers les groupes Microsoft 365 dans Outlook
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers Microsoft 365 Groupes dans Outlook et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: aef797a2bf052fcc84c9220993c2e6706eae5f61
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 6e836ef0d80668a59e8dee6eb06c1d52af55a758c9df0b79c5d0e1422de07b3f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53391386"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824462"
 ---
-# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Mettre à niveau les listes de distribution Microsoft 365 groupes dans Outlook
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Améliorer les listes de distribution vers les groupes Microsoft 365 dans Outlook
 
 Vous pouvez mettre à niveau les listes de distribution Microsoft 365 groupes Outlook. Il s’agit d’un excellent moyen de fournir aux listes de distribution de votre organisation toutes les fonctionnalités et fonctionnalités de Microsoft 365 groupes. [Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
@@ -192,7 +192,7 @@ Dans certains cas, la DL est éligible mais n’a pas pu être mise à niveau. L
 
 La mise à niveau se produit uniquement lorsque l’appel est soumis au serveur. Si la mise à niveau échoue, vos DL sont intactes. Ils fonctionneront comme avant.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Comparer les groupes](../create-groups/compare-groups.md) (article)\
 [Expliquer Microsoft 365 groupes à vos utilisateurs](../create-groups/explain-groups-knowledge-worker.md) (article)\

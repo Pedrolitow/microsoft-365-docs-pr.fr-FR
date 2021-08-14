@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les commentaires que vos utilisateurs peuvent envoyer à Microsoft concernant les produits Microsoft.
-ms.openlocfilehash: 7b8798847559e84a6ea10079aab010a08d8eaa42
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: 86d126be8c645c857192ef3f111e80d538456b8e9aab7e5c8143aadfdae752fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363930"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824037"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>En savoir plus sur les commentaires de Microsoft pour votre organisation
 
@@ -70,7 +70,7 @@ Microsoft utilise les commentaires pour améliorer les produits Microsoft. Nous 
 Lorsqu’un utilisateur envoie des commentaires, les informations d’application sont généralement collectées avec les évaluations et descriptions des commentaires de l’application.  Si vous avez activé la stratégie, nous pouvons autoriser les utilisateurs à soumettre des captures d’écran et des journaux pour nous aider à déboguer et résoudre les problèmes auxquels l’utilisateur peut être en cours d’exécution. Voici les éléments les plus courants collectés ou calculés.
 
 - **Commentaires**   L’utilisateur a envoyé des commentaires dans la langue d’origine.
-- **Application**   Le produit Microsoft nous a fait part de vos commentaires.
+- **Application**   Produit Microsoft dont nous avons reçu les commentaires.
 - **Date d’soumise**   Date et heure à laquelle nous avons reçu les commentaires.
 - **ID d’utilisateur**   ID Azure Active Directory ou adresse e-mail de l’utilisateur authentifié envoyant les commentaires. Les commentaires anonymes sont autorisés, mais ne sont pas affichés dans cette vue.
 - **Courrier électronique de l’utilisateur**   Si l’utilisateur est autorisé à fournir son adresse e-mail pour le suivi.
@@ -86,10 +86,10 @@ Lorsqu’un utilisateur envoie des commentaires, les informations d’applicatio
 
 ## <a name="how-can-i-see-my-users-feedback"></a>Comment puis-je voir les commentaires de mon utilisateur ?
 
-Pour répondre aux obligations légales de Microsoft envers les clients, nous travaillons sur une nouvelle expérience dans le Centre d’administration Microsoft 365 qui permet aux administrateurs d’afficher, de supprimer et d’exporter les données de commentaires pour leurs organisations. Dans le cadre de leur responsabilité de contrôleur de données, les clients possèdent toutes les données de commentaires des utilisateurs et cette fonctionnalité permet aux administrateurs de fournir une transparence directe dans les expériences de leurs utilisateurs avec les produits Microsoft 365 et de permettre aux données de commentaires des utilisateurs d’être fournies dans le cadre d’une demande de personne liée aux données. Les administrateurs globaux et les administrateurs de données de conformité ont la possibilité d’afficher, d’exporter et de supprimer les commentaires des utilisateurs. Tous les autres administrateurs, ainsi que les lecteurs, seront en mesure d’afficher et d’exporter les données de commentaires, mais ne pourront pas effectuer de tâches liées à la conformité ou afficher des informations sur les personnes ayant publié les commentaires (par exemple, le nom d’utilisateur, le courrier électronique ou le nom de l’appareil). Pour accéder aux données de commentaires de votre organisation, connectez-vous au Centre d’administration Microsoft 365 et personnalisez la navigation pour afficher le nœud d’état. Accédez à cette expérience en sélectionnant **Commentaires sur les** produits sous le nœud d’état d’santé.
+Pour répondre aux obligations légales de Microsoft envers les clients, nous travaillons sur une nouvelle expérience dans le Centre d’administration Microsoft 365 qui permet aux administrateurs d’afficher, de supprimer et d’exporter les données de commentaires pour leurs organisations. Dans le cadre de leur responsabilité de contrôleur de données, les clients possèdent toutes les données de commentaires des utilisateurs et cette fonctionnalité permet aux administrateurs de fournir une transparence directe dans les expériences de leurs utilisateurs avec les produits Microsoft 365 et de permettre aux données de commentaires des utilisateurs d’être fournies dans le cadre d’une demande de personne liée aux données. Les administrateurs globaux et les administrateurs de données de conformité ont la possibilité d’afficher, d’exporter et de supprimer les commentaires des utilisateurs. Tous les autres administrateurs, ainsi que les lecteurs, seront en mesure d’afficher et d’exporter les données de commentaires, mais ne pourront pas effectuer de tâches liées à la conformité ou afficher des informations sur les personnes ayant publié les commentaires (par exemple, le nom d’utilisateur, le courrier électronique ou le nom de l’appareil). Pour accéder aux données de commentaires de votre organisation, connectez-vous au Centre d’administration Microsoft 365 et personnalisez la navigation pour afficher le nœud d’état. Accédez à cette expérience en sélectionnant **Commentaires sur les produits** sous le nœud d’état d’santé.
 
 ## <a name="data-handling-and-privacy"></a>Gestion des données et confidentialité
 
-Nous savons que lorsque vous utilisez nos services cloud, vous nous faites confiance avec l’un de vos biens les plus précieux : vos données. Nous nous assurerons que les commentaires que nous recevons sont stockés et gérés dans le cadre des règles de gouvernance Microsoft et qu’ils sont accessibles uniquement pour les utilisations approuvées. Nous n’utilisons pas votre courrier électronique, votre conversation, vos fichiers ou tout autre contenu personnel pour vous cibler des publicités. Lorsque nous collectons des données, nous les utilisons pour améliorer vos expériences.
+Nous savons que lorsque vous utilisez nos services cloud, vous nous faites confiance avec l’un de vos biens les plus précieux : vos données. Nous nous assurerons que les commentaires que nous recevons sont stockés et gérés sous les règles de gouvernance Microsoft et qu’ils sont accessibles uniquement pour les utilisations approuvées. Nous n’utilisons pas votre courrier électronique, votre conversation, vos fichiers ou tout autre contenu personnel pour vous cibler des publicités. Lorsque nous collectons des données, nous les utilisons pour améliorer vos expériences.
 
 Pour en savoir plus sur la façon dont nous protégeons la confidentialité et la confidentialité de vos données, et sur la façon dont nous nous assurons qu’elles seront utilisées uniquement d’une manière cohérente avec vos attentes, examinez nos principes de confidentialité dans le Centre de gestion de la confidentialité [Microsoft.](https://www.microsoft.com/trust-center/privacy)

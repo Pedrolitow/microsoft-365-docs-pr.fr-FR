@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails de la Microsoft 365 Apps - la technologie permet d’obtenir un score de productivité.
-ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: def83cb3a468a31ce5d714af4337f786ef660ebd89293ead9c6c92d9ec23c34d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823377"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Intégrité de Microsoft 365 Apps – expériences technologiques
 
@@ -67,13 +67,13 @@ Le score d Microsoft 365 d’application mesure si les appareils exécutent Micr
 
 ## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Explorer votre organisation pour Microsoft 365 canaux et versions d’application
 
-Nous fournissons également des informations de prise en charge qui vous permettent d’obtenir une visibilité supplémentaire sur les canaux et versions des appareils de votre organisation en cours d’exécution. Ces mesures supplémentaires ne contribuent pas à votre score de productivité, mais peuvent vous aider à créer un plan d’action pour augmenter le score d’état de vos applications Microsoft 365 en vous assurer que les appareils exécutent Microsoft 365 applications sur les canaux recommandés.
+Nous fournissons également des informations de prise en charge qui vous permettent d’obtenir une visibilité supplémentaire sur les canaux et versions des appareils de votre organisation en cours d’exécution. Ces mesures supplémentaires ne contribuent pas à votre score de productivité, mais peuvent vous aider à créer un plan d’action pour augmenter le score d’état de vos applications Microsoft 365 en vous assurez que les appareils exécutent Microsoft 365 applications sur les canaux recommandés.
 
 ### <a name="devices-on-current-channel-and-running-supported-versions"></a>Appareils sur le canal actuel et l’exécution de versions pris en charge
 
 :::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Graphique montrant le nombre d’appareils dans le canal actuel pris en charge.":::
 
-1. **En-tête : Temps forts** pourcentage d’appareils sur le canal actuel exécutent des versions de Microsoft 365 Apps  
+1. **En-tête :**  Met en évidence le pourcentage d’appareils sur le canal actuel qui exécutent des versions de Microsoft 365 Apps
 1. **Corps :**  Fournit des informations sur la valeur des appareils exécutant Microsoft 365 applications sur le canal recommandé.
 1. **Visualisation :**  La répartition dans la visualisation représente le pourcentage d’appareils sur les versions les plus récentes et les versions Microsoft 365 prise en charge sur différents canaux), comme suit :
     - **Versions pris en charge :** La barre bleue représente le pourcentage d’appareils en cours d’exécution sur la version prise en charge Microsoft 365 applications.
@@ -84,10 +84,10 @@ Nous fournissons également des informations de prise en charge qui vous permett
 
 :::image type="content" source="../../media/device-supported-versions.png" alt-text="Graphique montrant le nombre d’appareils exécutant les versions les plus récentes et les plus pris en charge des applications.":::
 
-1. **En-tête : Temps forts** pourcentage d’appareils exécutant des versions et appareils pris en charge exécutant les versions les plus récentes.  
+1. **En-tête :**  Met en évidence le pourcentage d’appareils exécutant des versions et des appareils pris en charge exécutant les versions les plus récentes.
 1. **Corps :**  Fournit des informations sur la valeur d’exécution des appareils sur les canaux recommandés et sur les versions les plus récentes/pris en charge.
 1. **Visualisation :** La répartition dans la visualisation est destinée à représenter l’étendue du nombre d’appareils exécutant des versions prise en charge et des versions les plus récentes d’Microsoft 365 applications) :
-    - **Versions pris en charge :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage d’appareils exécutant la version prise en charge des applications Microsoft 365.
+    - **Versions pris en charge :** La partie bleue (couleur) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage d’appareils exécutant la version prise en charge des applications Microsoft 365.
         - Numérateur : nombre d’appareils sur les versions de Microsoft 365 applications au cours des 28 derniers jours
         - Dénominateur : nombre d’appareils utilisant Microsoft 365 applications au cours des 28 derniers jours
     - **Versions les plus récentes :** La partie sarcelle (couleur) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage d’appareils exécutant des versions récentes de Microsoft 365 applications.
@@ -112,7 +112,7 @@ Les colonnes suivantes sont présentées dans le tableau au niveau canal/version
 - **Versions :**   Versions Microsoft 365 applications actuelles sur les appareils.
 - **# des appareils :**  Nombre d’appareils.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Communication – Expériences des personnes](communication.md) (article)\
 [Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\

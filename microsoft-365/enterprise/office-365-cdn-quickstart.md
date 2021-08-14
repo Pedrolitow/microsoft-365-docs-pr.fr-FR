@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 réseau de distribution de contenu (CDN) Démarrage rapide
-ms.openlocfilehash: 3539ad1f11b27c60b5641976ae66a1480ef4be98
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b005c670bce80d84e7d1762eb2d8b2fc57bc7b55d0f5da9e7de13ec144742169
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921593"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870301"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 réseau de distribution de contenu (CDN) Démarrage rapide
 
@@ -39,7 +39,7 @@ Pour obtenir des instructions plus détaillées, consultez la Office 365 réseau
 
 Vous pouvez utiliser l’extension de navigateur de l’outil Diagnostic de page pour SharePoint pour facilement lister les ressources dans vos pages SharePoint Online qui peuvent être **ajoutées** à une origine CDN défaut.
 
-**L’outil Diagnostic de** page pour SharePoint est une extension de navigateur pour la nouvelle Microsoft Edge ( et les navigateurs Chrome qui analyse à la fois le portail moderne SharePoint Online et les pages de site de publication classiques. https://www.microsoft.com/edge) L’outil fournit un rapport pour chaque page analysée montrant comment la page se comporte par rapport à un ensemble défini de critères de performance. Pour installer et découvrir l’outil Diagnostic de page pour SharePoint, consultez [Utiliser l’outil Diagnostic de page pour SharePoint Online](./page-diagnostics-for-spo.md).
+**L’outil Diagnostic de** page pour SharePoint est une extension de navigateur pour la nouvelle Microsoft Edge ( et les navigateurs Chrome qui analyse à la fois le portail moderne SharePoint Online et les pages de site de publication https://www.microsoft.com/edge) classiques. L’outil fournit un rapport pour chaque page analysée montrant comment la page se comporte par rapport à un ensemble défini de critères de performance. Pour installer et découvrir l’outil Diagnostic de page pour SharePoint, consultez [Utiliser l’outil Diagnostic de page pour SharePoint Online](./page-diagnostics-for-spo.md).
 
 Lorsque vous exécutez l’outil Diagnostic de page pour SharePoint sur une page SharePoint Online, vous pouvez cliquer sur l’onglet Tests de **diagnostic** pour voir la liste des ressources qui ne sont pas hébergées par le CDN. Ces ressources sont répertoriées sous la vérification de titre **réseau de distribution de contenu (CDN),** comme illustré dans la capture d’écran ci-dessous.
 
@@ -54,8 +54,8 @@ Le Office 365 CDN est conçu pour optimiser les performances pour les utilisateu
 
 Le Office 365 CDN est séparé en deux types de base :
 
-- **Les CDN** publiques sont conçues pour être utilisées pour les images JS (JavaScript), CSS (Feuilles de style), Les fichiers de polices Web (WOFF, WOFF2) et les images non propriétaires telles que les logos d’entreprise.
-- **Les CDN** privées sont conçues pour être utilisées pour les images (PNG, JPG, JPEG, etc.).
+- **La CDN** publique est conçue pour être utilisée pour JS (JavaScript), CSS (Feuilles de style), le fichier de police web (WOFF, WOFF2) et les images non propriétaires comme les logos d’entreprise.
+- **La CDN** privée est conçue pour être utilisée pour les images (PNG, JPG, JPEG, etc.).
 
 Vous pouvez choisir d’avoir des origines publiques ou privées pour votre organisation. La plupart des organisations choisiront d’implémenter une combinaison des deux. Les options publiques et privées offrent des gains de performances similaires, mais chacune possède des attributs et des avantages uniques. Pour plus d’informations sur les origines des CDN publiques et privées, voir Choisir si chaque origine doit [être publique ou privée.](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)
 

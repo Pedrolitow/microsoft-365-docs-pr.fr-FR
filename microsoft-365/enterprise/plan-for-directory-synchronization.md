@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Décrit la synchronisation d’annuaires avec Microsoft 365, le nettoyage des services de domaine Active Directory et l’outil Azure Active Directory Connecter’annuaire.
-ms.openlocfilehash: 7b717f65bb434918a5eb0ab2bf4a5acab2d08eea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 10fe97f13f02aa19371b40284ca0549d6f14285042bf19ae174a833e44130343
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927543"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848441"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Synchronisation d’annuaires et d’identités hybrides pour Microsoft 365
 
@@ -67,7 +67,7 @@ Avec PHS, vous synchronisez vos comptes d’utilisateur AD DS avec Microsoft 365
 
 ![Synchronisation de hachage de mot de passe (PHS)](../media/plan-for-directory-synchronization/phs-authentication.png)
 
-Lorsque des mots de passe sont modifiés ou réinitialisés en local, les nouveaux hchéhes de mot de passe sont synchronisés avec Azure AD afin que vos utilisateurs peuvent toujours utiliser le même mot de passe pour les ressources cloud et les ressources sur site. Les mots de passe utilisateur ne sont jamais envoyés à Azure AD ou stockés dans Azure AD en texte clair. Certaines fonctionnalités premium d’Azure AD, telles que identity protection, nécessitent PHS, quelle que soit la méthode d’authentification sélectionnée.
+Lorsque des mots de passe sont modifiés ou réinitialisés en local, les nouveaux hchéhes de mot de passe sont synchronisés avec Azure AD afin que vos utilisateurs peuvent toujours utiliser le même mot de passe pour les ressources cloud et les ressources sur site. Les mots de passe utilisateur ne sont jamais envoyés à Azure AD ou stockés dans Azure AD en texte clair. Certaines fonctionnalités premium d’Azure AD, telles que identity protection, nécessitent phs, quelle que soit la méthode d’authentification sélectionnée.
   
 Pour en [savoir plus,](/azure/active-directory/hybrid/choose-ad-authn) voir choisir la méthode d’authentification la plus efficace.
   
@@ -121,7 +121,7 @@ Si votre organisation possède plusieurs forêts pour l’authentification (for�
 
 Si vous ne pouvez pas consolider votre déploiement AD DS à forêts multiples ou si vous utilisez d’autres services d’annuaire pour gérer les identités, vous pourrez peut-être les synchroniser avec l’aide de Microsoft ou d’un partenaire.
   
-Pour [plus d’informations, voir Topologies Connecter Azure AD.](/azure/active-directory/hybrid/plan-connect-topologies)
+Pour [plus d’informations, voir Topologies for Azure AD Connecter.](/azure/active-directory/hybrid/plan-connect-topologies)
   
 ## <a name="features-that-are-dependent-on-directory-synchronization"></a>Fonctionnalités qui dépendent de la synchronisation d’annuaires
   
@@ -136,7 +136,7 @@ La synchronisation d’annuaires est requise pour les fonctionnalités suivantes
   - La synchronisation double doit être configurée lors de la configuration de la synchronisation d’annuaires. Par défaut, les outils de synchronisation d’annuaires écrivent les informations d’annuaire uniquement dans le cloud. Lorsque vous configurez la synchronisation double, vous activez la fonctionnalité d’écriture inaltérable afin qu’un nombre limité d’attributs d’objet soient copiés à partir du cloud, puis écrits dans votre AD DS local. L’écriture en écriture arrière est également appelée Exchange mode hybride. 
   - Déploiement hybride Exchange local
   - Possibilité de déplacer certaines boîtes aux lettres d’utilisateur vers Microsoft 365 tout en conservant d’autres boîtes aux lettres utilisateur en local.
-  - Les expéditeurs sûrs et les expéditeurs bloqués locaux sont répliqués vers Microsoft 365.
+  - Coffre expéditeurs et les expéditeurs bloqués locaux sont répliqués vers Microsoft 365.
   - Fonctionnalité de délégation de base et d’envoi de courrier « de la part de ».
   - Vous avez une carte à puce ou une solution d’authentification multifacteur intégrée sur site.
 - Synchronisation des photos, des miniatures, des salles de conférence et des groupes de sécurité

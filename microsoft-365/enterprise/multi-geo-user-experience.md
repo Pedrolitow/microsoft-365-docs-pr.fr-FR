@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Découvrez l’expérience utilisateur de SharePoint, de OneDrive et d’Exchange dans un environnement multigéographique pour Microsoft 365.
-ms.openlocfilehash: 4e752581f4ca692f9fecc5019f8e34543ebf7067
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: d81220cae6e78ddb387742a83affd3e8f803a75cef0cbc292d252f7b302f4959
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848506"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Expérience utilisateur dans un environnement multigéographique
 
@@ -48,7 +48,7 @@ L’application Synchronisation OneDrive (version 17.3.6943.0625 et versions ult
 
 ## <a name="onedrive-location"></a>OneDrive’emplacement
 
-Les utilisateurs auront leurs OneDrive à leur emplacement de données préféré. Si un utilisateur navigue vers une URL OneDrive qui contient un emplacement géographique incorrect (tel qu’un signet d’un emplacement géographique précédent), il est automatiquement redirigé vers le OneDrive dans l’emplacement géographique approprié.
+Les utilisateurs auront leurs OneDrive dans leur emplacement de données préféré. Si un utilisateur navigue vers une URL OneDrive qui contient un emplacement géographique incorrect (tel qu’un signet d’un emplacement géographique précédent), il est automatiquement redirigé vers le OneDrive dans l’emplacement géographique approprié.
 
 ## <a name="onedrive-ios-and-android"></a>OneDrive iOS et Android 
 
@@ -94,7 +94,7 @@ Le client mobile SharePoint prend en compte la configuration multigéographique 
 
 ## <a name="sharing"></a>Partage
 
-L’interface du Sélecteur de personnes affiche tous les utilisateurs indépendamment de leur emplacement géographique. Cela permet à un utilisateur de partager avec un autre utilisateur dans le même emplacement géographique, ou dans tout autre emplacement géographique de votre locataire. Le contenu provenant de différents  emplacements géographiques s’affiche dans la vue Partagé avec moi dans le OneDrive de l’utilisateur et est accessible avec l’expérience Sign-On unique, quel que soit l’emplacement géographique dans lequel il est hébergé.
+L’interface du Sélecteur de personnes affiche tous les utilisateurs indépendamment de leur emplacement géographique. Cela permet à un utilisateur de partager avec un autre utilisateur dans le même emplacement géographique, ou dans tout autre emplacement géographique de votre locataire. Le contenu provenant de différents  emplacements géographiques s’affiche dans la vue Partagé avec moi dans l’OneDrive de l’utilisateur et est accessible avec l’expérience d'Sign-On unique, quel que soit l’emplacement géographique dans lequel il est hébergé.
 
 ## <a name="teams-experience"></a>Expérience Teams
 

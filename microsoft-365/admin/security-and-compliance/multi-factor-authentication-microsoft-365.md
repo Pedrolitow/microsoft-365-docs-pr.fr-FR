@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: L’authentification multifacteur (MFA) utilise à la fois un mot de passe, qui doit être fort, et une méthode de vérification supplémentaire.
-ms.openlocfilehash: 9b3347f1a8e7b1f62c9bbfe77a7f14c221ef28b5
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: afe93f3b9432c26ba38e007e929e718853816b7b9f45d9d1d4053c30898a88a5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393642"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822794"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Authentification multifacteur pour Microsoft 365
 
@@ -171,11 +171,11 @@ Dans le portail Azure, vous pouvez :
 
 Dans le Centre d’administration Microsoft 365, vous pouvez configurer les paramètres MFA par utilisateur et service.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [Configurer l’ment MFA pour Microsoft 365](set-up-multi-factor-authentication.md)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
-[Activer l’authentification multifacteur](../../business-video/turn-on-mfa.md) (vidéo)\
-[Activer l’authentification multifacteur pour votre téléphone](../../business-video/set-up-mfa.md) (vidéo)
+[Activer l’authentification multi-facteurs](../../business-video/turn-on-mfa.md) (vidéo)\
+[Activer l’authentification multi-facteurs sur votre téléphone](../../business-video/set-up-mfa.md) (vidéo)

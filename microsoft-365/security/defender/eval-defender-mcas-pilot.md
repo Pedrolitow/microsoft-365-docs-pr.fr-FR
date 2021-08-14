@@ -1,5 +1,5 @@
 ---
-title: Pilotez Microsoft Cloud App Security avec Microsoft 365 Defender, créez des groupes pilotes, configurez le contrôle d’accès conditionnel, testez les fonctionnalités, configurez l’installation dans le cadre Microsoft 365 Defender
+title: Pilote Microsoft Cloud App Security avec Microsoft 365 Defender
 description: Configurer votre laboratoire d Microsoft 365 Defender d’essai ou votre environnement pilote pour tester et tester la solution de sécurité conçue pour protéger les appareils, l’identité, les données et les applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 672b01258c68f1cbcbfe3e2315c4b7cbcb36021e
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: a4aeb40e7386ae3648a392b6869551c3f16c2514b459ab1abf11c8ae6ceee46b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862854"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>Pilote Microsoft Cloud App Security avec Microsoft 365 Defender
 
@@ -66,7 +66,7 @@ Pour plus d’informations, notamment sur les applications et les clients pris e
 
 Par exemple, les [stratégies recommandées Microsoft Cloud App Security pour les applications SaaS.](../office-365-security/mcas-saas-access-policies.md) Ces stratégies s’appuient sur un ensemble de stratégies communes d’accès aux identités et aux appareils qui sont recommandées comme point de départ pour tous les clients. [](../office-365-security/microsoft-365-policies-configurations.md) 
 
-## <a name="step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment"></a>Étape 3. Tester les fonctionnalités : parcourir les didacticiels pour protéger votre environnement 
+## <a name="step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment"></a>Étape 3 : Tester les fonctionnalités : parcourir les didacticiels pour protéger votre environnement 
 
 La documentation Microsoft Cloud App Security comprend une série de didacticiels pour vous aider à découvrir les risques et à protéger votre environnement. 
 

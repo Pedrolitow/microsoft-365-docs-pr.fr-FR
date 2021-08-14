@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Choisissez les fonctionnalités Office à afficher ou masquer lorsqu’un utilisateur choisit Aide > Nouveautés de son application Office sur Windows à l’aide de la fonctionnalité « Nouveautés de Office » dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 66665aaf7fda869492d7bdfc12feaf45869f847b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 882616a8ed0f4a4198bd7987ea596fe2c0cfc83dbe844e2ca5e354bbca768bcc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824574"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Gérer les fonctionnalités Office’affiche dans Nouveautés
 
@@ -44,7 +44,7 @@ Vous pouvez contrôler les messages de fonctionnalité affichés par vos utilisa
 3. Lorsque vous cliquez sur le nom de la fonctionnalité, un panneau volant apparaît avec les informations suivantes :
      - Brève description de la fonctionnalité.
      - Lien vers un article pour en savoir plus sur la fonctionnalité.
-     - Le Office applications dans qui la fonctionnalité apparaît.
+     - Les Office applications dans qui la fonctionnalité apparaît.
      - La première version (publication) dans qui la fonctionnalité est disponible pour ce canal.
 4. Choose **Hide from users**. Ou, si vous avez précédemment caché la fonctionnalité, choisissez **Afficher aux utilisateurs.**
 

@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 33db334ecf977b351ac963107c647c7eff414cc0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2cfd687b3f34c1857fa5128cefa236ceb71f6b8ba7ba00a86a3dfceb43b60062
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870330"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows 10 et Office 365
 
-Le kit de laboratoire de déploiement Windows 10 et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et la gestion des ordinateurs de bureau exécutant Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit utilisent Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
+Le kit de laboratoire de déploiement Windows 10 et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et votre gestion des ordinateurs de bureau exécutant Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit utilisent Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
 
-Ce kit est vivement recommandé pour les organisations qui se préparent Windows 8.1 mises à niveau vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester votre automatisation liée au déploiement.
+Ce kit est vivement recommandé pour les organisations qui se préparent Windows 8.1 mises à niveau vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester l’automatisation liée au déploiement.
 
 [Téléchargez le kit Windows 10 et Office 365 de déploiement.](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
@@ -111,7 +111,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 - [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](https://www.aka.ms/watchhowtoshift)
 - [Déploiement du système d’exploitation Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 - [Plan de déploiement de Windows 10](/windows/deployment/planning/index)
-- [Guide de déploiement des Applications Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Guide de déploiement de Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Mise en route d’Intune](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>Ressources connexes

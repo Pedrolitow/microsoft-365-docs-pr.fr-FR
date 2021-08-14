@@ -1,5 +1,5 @@
 ---
-title: Évaluer et piloter Microsoft 365 Defender, une XDR, pour empêcher, détecter, examiner, répondre, points de terminaison, identités, applications, courrier électronique, applications collaboratives, données.
+title: Évaluer et piloter Microsoft 365 Defender, une XDR
 description: Planifiez votre laboratoire d Microsoft 365 Defender d’essai ou votre environnement pilote pour tester et tester une solution de sécurité conçue pour protéger les appareils, l’identité, les données et les applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ade3087543f45439664868fbe02f1746e1f5e762
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: e8dc4d61fb0d43d2864245223923936fe4a646e88e93a3c6eda2a672d459b137
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862821"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Évaluer et piloter les Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "53458334"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender est une solution XDR (détection et réponse étendue) qui collecte, met automatiquement en corrélation et analyse les données de signal, de menace et d’alerte à partir de votre environnement Microsoft 365, y compris les points de terminaison, la messagerie, les applications et les identités. Il tire parti de l’IA et de l’automatisation étendues pour arrêter automatiquement les attaques et corriger les ressources affectées dans un état sûr. Les articles suivants vous étapent tout au long du processus de configuration d’un environnement d’évaluation afin que vous pouvez évaluer les fonctionnalités de Microsoft 365 Defender. 
+Microsoft 365 Defender est une solution XDR (détection et réponse étendue) qui collecte, met en corrélation et analyse automatiquement les données de signal, de menace et d’alerte à partir de votre environnement Microsoft 365, y compris les points de terminaison, la messagerie, les applications et les identités. Il tire parti de l’IA et de l’automatisation étendues pour arrêter automatiquement les attaques et corriger les ressources affectées dans un état sûr. Les articles suivants vous étapent tout au long du processus de configuration d’un environnement d’évaluation afin que vous pouvez évaluer les fonctionnalités de Microsoft 365 Defender. 
 
 Au fil de ces articles, les étapes montrent comment activer chaque composant, configurer les paramètres et commencer la surveillance avec un groupe pilote. Lorsque vous êtes prêt, vous pouvez terminer par promouvoir votre environnement d’évaluation directement dans la production. 
 
@@ -43,7 +43,7 @@ Microsoft vous recommande de créer votre évaluation dans un abonnement de prod
 
 ## <a name="the-anatomy-of-an-attack"></a>Anatomie d’une attaque
 
-Microsoft 365 Defender est une suite de défense d’entreprise en nuage, unifiée, avant et après la violation. Il coordonne la *prévention,* la  *détection,* *l’examen* et la réponse entre les points de terminaison, les identités, les applications, le courrier électronique, les applications collaboratives et toutes leurs données.
+Microsoft 365 Defender est une suite de défense d’entreprise en nuage, unifiée, avant et après la violation. Il coordonne la *prévention,* la  *détection,* *l’examen* et la réponse entre les points de terminaison, les identités, les applications, la messagerie, les applications collaboratives et toutes leurs données.
 
 Dans cette illustration, une attaque est en cours. Le courrier électronique de hameçonnage arrive dans la boîte de réception d’un employé de votre organisation, qui ouvre sans le savoir la pièce jointe du courrier électronique. Cela installe les programmes malveillants, ce qui entraîne une chaîne d’événements qui peut se terminer par le vol de données sensibles. Mais dans ce cas, Defender pour Office 365 est en cours d’utilisation.
 
@@ -66,9 +66,9 @@ Microsoft 365 Defender est composé de ces technologies de sécurité, fonctionn
 |Microsoft Defender pour l’identité     |      Microsoft Defender pour l’identité utilise des signaux Active Directory pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation.     |     [Qu’est-ce que Microsoft Defender pour Identity ?](/defender-for-identity/what-is)   |
 |Exchange Online Protection     |      Exchange Online Protection est le service de filtrage et de relais SMTP basé sur le cloud natif qui permet de protéger votre organisation contre le courrier indésirable et les programmes malveillants.      |   [Exchange Online Protection (EOP) : Office 365](../office-365-security/overview.md)     |
 |Microsoft Defender pour Office 365     |     Microsoft Defender pour Office 365 votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration.      |    [Microsoft Defender pour Office 365 - Office 365](../office-365-security/overview.md)    |
-|Microsoft Defender pour Point de terminaison     |     Microsoft Defender pour point de terminaison est une plateforme unifiée pour la protection des appareils, la détection post-violation, l’examen automatisé et la réponse recommandée.      |   [Microsoft Defender pour le point de terminaison : sécurité Windows sécurité](../defender-endpoint/microsoft-defender-endpoint.md)    |
+|Microsoft Defender pour point de terminaison     |     Microsoft Defender pour point de terminaison est une plateforme unifiée pour la protection des appareils, la détection post-violation, l’examen automatisé et la réponse recommandée.      |   [Microsoft Defender pour le point de terminaison : sécurité Windows sécurité](../defender-endpoint/microsoft-defender-endpoint.md)    |
 |Microsoft Cloud App Security     |      Microsoft Cloud App Security est une solution saaS complète qui apporte une visibilité approfondie, des contrôles de données forts et une protection renforcée contre les menaces à vos applications cloud.       |    [Qu'est-ce que la sécurité des applications du Cloud ?](/cloud-app-security/what-is-cloud-app-security)    |
-|Azure AD Identity Protection|Azure AD Identity Protection évalue les données de risque provenant de milliards de tentatives de se connecte et utilise ces données pour évaluer le risque de chaque connect dans votre environnement. Ces données sont utilisées par Azure AD pour autoriser ou empêcher l’accès au compte, selon la configuration des stratégies d’accès conditionnel. Azure AD Identity Protection est sous licence séparément de Microsoft 365 Defender. Il est inclus dans Azure Active Directory Premium P2.|[Qu’est-ce que la protection des identités ?](/azure/active-directory/identity-protection/overview-identity-protection)|
+|Azure AD Identity Protection|Azure AD Identity Protection évalue les données de risque provenant de milliards de tentatives de connectez-vous et utilise ces données pour évaluer le risque de chaque connect dans votre environnement. Ces données sont utilisées par Azure AD pour autoriser ou empêcher l’accès au compte, selon la configuration des stratégies d’accès conditionnel. Azure AD Identity Protection est sous licence séparément de Microsoft 365 Defender. Il est inclus dans Azure Active Directory Premium P2.|[Qu’est-ce que la protection des identités ?](/azure/active-directory/identity-protection/overview-identity-protection)|
 | | | |
 
 ## <a name="microsoft-365-defender-architecture"></a>Microsoft 365 Defender architecture
@@ -84,11 +84,11 @@ Dans cette illustration :
 - Microsoft Defender pour l’identité recueille les signaux des serveurs exécutant les services AD FS (Active Directory Federated Services) et les services de domaine Active Directory (AD DS) locaux. Il utilise ces signaux pour protéger votre environnement d’identité hybride, y compris la protection contre les pirates informatiques qui utilisent des comptes compromis pour se déplacer ultérieurement entre les stations de travail dans l’environnement local.
 - Microsoft Defender pour le point de terminaison collecte des signaux à partir des appareils utilisés par votre organisation et les protège.
 - Microsoft Cloud App Security collecte les signaux provenant de l’utilisation des applications cloud par votre organisation et protège les données qui circulent entre votre environnement et ces applications, y compris les applications cloud sanctionnées et non utilisées.
-- Azure AD Identity Protection évalue les données de risque provenant de milliards de tentatives de se connecte et utilise ces données pour évaluer le risque de chaque connect dans votre environnement. Ces données sont utilisées par Azure AD pour autoriser ou empêcher l’accès au compte, selon la configuration des stratégies d’accès conditionnel. Azure AD Identity Protection est sous licence séparément de Microsoft 365 Defender. Il est inclus dans Azure Active Directory Premium P2.  
+- Azure AD Identity Protection évalue les données de risque provenant de milliards de tentatives de connectez-vous et utilise ces données pour évaluer le risque de chaque connect dans votre environnement. Ces données sont utilisées par Azure AD pour autoriser ou empêcher l’accès au compte, selon la configuration des stratégies d’accès conditionnel. Azure AD Identity Protection est sous licence séparément de Microsoft 365 Defender. Il est inclus dans Azure Active Directory Premium P2.  
 
 Composants d’architecture facultatifs supplémentaires non inclus dans cette illustration :
 
-- Les données de signal détaillées de tous les composants Microsoft Defender peuvent être intégrées à Azure Sentinel et combinées avec d’autres sources de journalisation pour offrir des fonctionnalités et des informations COMPLÈTEs SIEM et NIVEAUX.
+- Les données de signal détaillées de tous les composants De Microsoft Defender peuvent être intégrées à Azure Sentinel et combinées avec d’autres sources de journalisation pour offrir des fonctionnalités et des informations COMPLÈTEs SIEM et CASRE.
 
 ## <a name="the-evaluation-process"></a>Processus d’évaluation
 
@@ -106,11 +106,11 @@ Le tableau suivant décrit cette illustration.
 |4      | [Activer Defender pour le point de terminaison ](eval-defender-endpoint-overview.md)       | Assurez-vous que vous répondez aux exigences d’architecture, activez l’évaluation, puis créez l’environnement pilote.         |
 |5      | [Activer Microsoft Cloud App Security](eval-defender-mcas-overview.md)        |  Assurez-vous que vous répondez aux exigences d’architecture, activez l’évaluation, puis créez l’environnement pilote.        |
 |6      | [Examiner et répondre aux menaces](eval-defender-investigate-respond.md)        |   Simuler une attaque et commencer à utiliser les fonctionnalités de réponse aux incidents.      |
-|7      | [Promouvoir l’essai en production](eval-defender-promote-to-production.md)        | Promouvoir Microsoft 365 composants de production un par un.        |
+|7      | [Promouvoir la version d’évaluation en production](eval-defender-promote-to-production.md)        | Promouvoir Microsoft 365 composants de production un par un.        |
 | | | |
 
 Il s’agit d’un ordre généralement recommandé conçu pour obtenir rapidement la valeur des fonctionnalités en fonction de la quantité d’efforts généralement requise pour déployer et configurer les fonctionnalités. Par exemple, Defender pour Office 365 peut être configuré beaucoup plus rapidement que nécessaire pour inscrire des appareils pour Defender for Endpoint. Bien entendu, vous pouvez hiérarchiser les composants pour répondre aux besoins de votre entreprise et les activer dans un ordre différent.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Créer l’Microsoft 365 Defender d’évaluation de la sécurité](eval-create-eval-environment.md)
+[Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement](eval-create-eval-environment.md)
