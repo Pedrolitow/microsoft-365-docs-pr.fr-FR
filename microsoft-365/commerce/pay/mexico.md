@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5300552fdd2b33986c96ad5f59e827e3e309ca47
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 460ba16b68263d8c56858b4b833e37737fde5052b732247539144643596aa62e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535421"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893102"
 ---
 # <a name="payment-information-by-deposit-or-electronic-transfer-only-for-mexico"></a>Informations de paiement par dépôt ou transfert électronique (uniquement pour le Mexique)
 
@@ -26,13 +26,13 @@ ms.locfileid: "52535421"
 
 Pour payer par dépôt ou transfert électronique :
 
-1. Sélectionnez lors de l’checkout le mode de paiement « Facture (payer par chèque ou virement bancaire) ». Dans les prochaines 24 à 72 heures, vous recevrez la facture du produit dans le courrier électronique enregistré en tant que contact. La facture inclut les instructions pour effectuer le paiement.
+1. Sélectionnez lors de l’checkout le mode de paiement « Facture (paiement par chèque ou virement bancaire) ». Dans les prochaines 24 à 72 heures, vous recevrez la facture du produit dans le courrier électronique enregistré en tant que contact. La facture inclut les instructions pour effectuer le paiement.
 2. Payez au compte bancaire suivant (pour que votre paiement soit correctement effectué, indiquez le nom de l’acheteur et le numéro de facture correspondant) :  
 
 **Banque :** Bank/Banamex  
 **Branche :** Act. Roberto Medellin 800, P.B. Sur, Col. Santa Fe, Mexico City C.P. 01210, Mexique  
 **Code SWIFT :** BNMXMM  
-**CLABE** 002180002337160225  
+**ClaBE** 002180002337160225  
 **Numéro de compte :** 0233716022  
 **Nom du compte :** Microsoft Payments Inc.  
 **Devise :** Pesos américains

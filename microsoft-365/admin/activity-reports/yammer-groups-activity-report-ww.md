@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenez le rapport Yammer d’activité des groupes de Yammer qui sont créés et utilisés dans votre organisation, ainsi que leur activité.
-ms.openlocfilehash: 470fd7dc70069688f6d0ec0bbf3ba92b40a82ae1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Obtenez le Yammer d’activité des groupes de Yammer sur le nombre de groupes créés et utilisés dans votre organisation, ainsi que sur leur activité.
+ms.openlocfilehash: ee547e6da465cd36d62f62043c9364350352bc5a6b19da631a9e56071ef9d679
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244055"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816136"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365 Rapports dans le Centre d’administration - Rapport Yammer’activité des groupes
 
@@ -53,7 +53,7 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |**Métrique**|**Définition**|
 |Nom du groupe  <br/> |Nom du groupe. <br/> |
 |Administrateur de groupe  <br/> |Nom de l’administrateur ou du propriétaire du groupe.  <br/> |
-|Supprimé  <br/> |Nombre de groupes Yammer supprimés. Si le groupe est supprimé, mais qu'il a connu une activité dans la période du rapport, il apparaît dans la grille avec cet indicateur défini sur true.  <br/> |
+|Deleted  <br/> |Nombre de groupes Yammer supprimés. Si le groupe est supprimé, mais qu'il a connu une activité dans la période du rapport, il apparaît dans la grille avec cet indicateur défini sur true.  <br/> |
 |Type  <br/> |Type de groupe, public ou privé. <br/> |
 |Connecté à Office 365  <br/> |Indique si le groupe Yammer est également un groupe Microsoft 365 groupe. <br/> |
 |Date de la dernière activité (UTC)  <br/> | Date à laquelle un message a été lu, publié ou aimé au plus tard par le groupe.  <br/> |

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Lorsque vous fermez votre compte avec Microsoft, toutes les informations relatives à votre compte sont supprimées, y compris les licences, les utilisateurs et les données utilisateur.
 ms.date: 04/02/2021
-ms.openlocfilehash: f46a35ca9a8b4ca0a68a3260f1a79bbf3717b552
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0693f592c36e39687b78587b384a193fde7cd6879a69628c1818bafed7420ef5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893150"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
 
@@ -42,7 +42,7 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 
 Supprimez tous les utilisateurs à l’exception d’un administrateur général. L’administrateur général termine les étapes de fermeture du compte. Avant de pouvoir supprimer l’annuaire à la fin de ce processus, vous devez supprimer tous les autres utilisateurs.
 
-Si les utilisateurs sont synchronisés en local, désynchronisé, supprimez-les dans l’annuaire cloud à l’aide du portail Azure ou Azure PowerShell cmdlets.
+Si les utilisateurs sont synchronisés à partir de l’local, désynchronisé, puis supprimez les utilisateurs dans l’annuaire cloud à l’aide du portail Azure ou Azure PowerShell cmdlets.
 
 Pour supprimer des utilisateurs, [consultez l’administrateur de gestion des utilisateurs : supprimez un ou plusieurs utilisateurs.](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365)
 
@@ -90,7 +90,7 @@ Vous pouvez également [utiliser PowerShell pour désactiver l’authentificatio
 
 Une fois cette dernière étape terminée, votre compte microsoft est fermé et supprimé.
 
-## <a name="related-content"></a>Contenu associé 
+## <a name="related-content"></a>Contenu connexe 
 
 [Comprendre votre facture pour Microsoft 365 entreprise](./billing-and-payments/understand-your-invoice2.md) (article)\
 [Annuler votre abonnement](./subscriptions/cancel-your-subscription.md) (article)

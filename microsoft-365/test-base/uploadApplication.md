@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 26033189eb5d63aee632dba2254f2109d273ae0b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 80ea369284e9b9677bbd1e51612915057eea3136b5e8c6172230e332187edb1e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656570"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816501"
 ---
 # <a name="step-2-uploading-a-package"></a>Étape 2 : Téléchargement d’un package
 
@@ -42,7 +42,7 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
     > [!NOTE]
     > Le nom du package et la combinaison de version entrés doivent être uniques au sein de votre organisation. Cette vérification est validée par la coche, comme illustré ci-dessous.
 
-    - Si vous choisissez de réutiliser le nom d’un package, le numéro de version doit être unique (autrement dit, n’a jamais été utilisé avec un package portant ce nom particulier).
+    - Si vous choisissez de réutiliser le nom d’un package, le numéro de version doit être unique (c’est-à-dire qu’il n’a jamais été utilisé avec un package portant ce nom particulier).
 
     - Si la combinaison du nom du package + de la version ne passe pas la vérification de l’unicité, vous verrez un message d’erreur qui indique « Le package avec cette version de *package* existe déjà ».
 
@@ -65,8 +65,8 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
 
 4. Sélectionnez le type de mise à jour du système d’exploitation.
 
-    - Les « mises à jour de sécurité » permettent de tester votre package contre les évolutions incrémentielles de Windows mises à jour de sécurité mensuelles pré-publiées.
-    - Les « mises à jour des fonctionnalités » permettent de tester votre package par rapport aux mises à jour de fonctionnalités Windows pré-publication bi-annuelles à partir du programme Windows Insider.
+    - Les « mises à jour de sécurité » permettent de tester votre package sur les évolutions incrémentielles de Windows mises à jour de sécurité mensuelles pré-publiées.
+    - Les « mises à jour des fonctionnalités » permettent de tester votre package par rapport à Windows mises à jour de fonctionnalités bi-annuelles pré-publiées à partir du programme Windows Insider.
     <!---
     Change to the correct picture
     -->
@@ -76,7 +76,7 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
 
     Dans la sélection multiple, sélectionnez la ou les versions du système d’exploitation Windows votre package sera installé.
 
-    - Pour tester votre package uniquement par rapport Windows d’exploitation client, sélectionnez les versions Windows système d’exploitation 11 dans la liste de menus.
+    - Pour tester votre package uniquement sur Windows d’exploitation client, sélectionnez les versions Windows système d’exploitation 11 dans la liste de menus.
     - Pour tester votre package uniquement sur les systèmes d’exploitation Windows Server, sélectionnez les versions Windows système d’exploitation server applicables dans la liste de menus.
     - Pour tester votre package uniquement par rapport aux systèmes d’Windows client et Windows Server, sélectionnez tous les systèmes d’exploitation applicables dans la liste de menus.
 
@@ -110,7 +110,7 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
 
     :::image type="content" alt-text="Affichage des détails du test." source="Media/TestDetails.png":::
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Notre article suivant traite du chargement de vos fichiers binaires vers notre service.
 

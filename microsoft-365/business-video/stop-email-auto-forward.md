@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment arrêter le forwarding automatique des e-mails en créant une règle de flux de messagerie pour éviter le vol d’informations propriétaires.
-ms.openlocfilehash: 23b1afa7a851c0b00fb9fca574ca0bb32057ea42
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: b3118fed41408ef83ba007ff9530b49b6072f8c51e9ca6cc07fc3526309decb5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893314"
 ---
 # <a name="stop-email-auto-forward"></a>Arrêter le courrier électronique à l’avance automatique
 
@@ -55,4 +55,4 @@ Si un pirate informatique accède à la boîte aux lettres d’un utilisateur, i
 
 [Ajouter un autre alias de courrier pour un utilisateur](../admin/email/add-another-email-alias-for-a-user.md) (article)\
 [Configurer le transfert des e-mails dans Microsoft 365](../admin/email/configure-email-forwarding.md) (article)\
-[Rechercher et résoudre les problèmes de remise des e-mails en tant qu’administrateur Office 365 entreprise](/exchange/troubleshoot/email-delivery/email-delivery-issues) (article)
+Rechercher et résoudre les problèmes de remise des e-mails en [tant qu’administrateur Office 365 entreprise](/exchange/troubleshoot/email-delivery/email-delivery-issues) (article)

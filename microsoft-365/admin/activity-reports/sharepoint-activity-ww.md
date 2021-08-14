@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le SharePoint d’utilisation de l’activité pour connaître l’activité de chaque utilisateur SharePoint, le nombre de fichiers partagés et l’utilisation du stockage.
-ms.openlocfilehash: f049a67e8444654e05cfe3dc72a8d4fe39792cb2
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4121cce33c530e422dcf3b3d05e9a47f1a86c381eff549187f5904c961c57470
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816262"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365 Rapports dans le Centre d’administration : SharePoint activité
 
-En tant qu’administrateur Microsoft 365, le tableau de bord **Rapports** vous présente la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Consultez les rapports [d’activité dans le centre Microsoft 365'administration.](activity-reports.md)
+En tant qu’administrateur Microsoft 365, le tableau de bord **Rapports** vous présente la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Consultez les [rapports d’activité dans le Centre d’administration Microsoft 365](activity-reports.md).
   
 Par exemple, vous pouvez comprendre l'activité de chaque utilisateur titulaire d'une licence d'utilisation de SharePoint en examinant son interaction avec les fichiers. Cela vous aide également à comprendre le niveau de la collaboration en examinant le nombre de fichiers partagés.
   
@@ -45,21 +45,21 @@ Par exemple, vous pouvez comprendre l'activité de chaque utilisateur titulaire 
 
 Vous pouvez afficher les activités dans le rapport SharePoint en choisissant **l’onglet** Activité.<br/>![Microsoft 365- Rapport d’activité SharePoint Microsoft.](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![SharePoint d’activité de l’entreprise : choisir des colonnes](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![SharePoint d’activité : choisir des colonnes](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
 |Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
-|Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur qui a effectué l’activité sur SharePoint site.  <br/> |
+|Nom d’utilisateur  <br/> |Adresse de messagerie de l’utilisateur qui a effectué l’activité sur le SharePoint site.  <br/> |
 |Date de la dernière activité (UTC)  <br/> |Date à laquelle une activité de fichier a été effectuée au plus tard ou à laquelle une page a été visitée pour la plage de dates sélectionnée. Pour voir l'activité qui s'est produite à une date spécifique, sélectionnez celle-ci directement dans le graphique.  <br/> |
 |Fichiers consultables ou modifiés  <br/> |Nombre de fichiers téléchargés, téléchargés, modifiés ou visionés par l’utilisateur.   <br/> |
 |Fichiers synchronisés  <br/> |Nombre de fichiers qui ont été synchronisés à partir de l’appareil local d’un utilisateur vers SharePoint site. <br/> |
 |Fichiers partagés en interne  <br/> | Nombre de fichiers partagés avec des utilisateurs au sein de l’organisation ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
 |Fichiers partagés en externe  <br/> |Nombre de fichiers partagés avec des utilisateurs extérieurs à l’organisation. <br/>|
 |Pages visitées  <br/> |Visites de pages uniques par l’utilisateur. <br/>|
-|Supprimé  <br/> | Cela indique que la licence de l’utilisateur a été supprimée.  <br/>  **REMARQUE :** L’activité d’un utilisateur supprimé s’affiche toujours dans le rapport tant qu’il a été titulaire d’une licence à un moment ou un autre pendant la période sélectionnée. La colonne Supprimé permet de voir que, si l'utilisateur n'est peut-être plus actif, il a été pris en compte dans les données du rapport.  <br/> |
+|Deleted  <br/> | Cela indique que la licence de l’utilisateur a été supprimée.  <br/>  **REMARQUE :** L’activité d’un utilisateur supprimé s’affiche toujours dans le rapport tant qu’il a été titulaire d’une licence à un moment ou un autre pendant la période sélectionnée. La colonne Supprimé permet de voir que, si l'utilisateur n'est peut-être plus actif, il a été pris en compte dans les données du rapport.  <br/> |
 |Date de suppression  <br/> |Date à laquelle la licence de l’utilisateur a été supprimée. <br/>|
-|Produit affecté  <br/> |Les Microsoft 365 produits sous licence à l’utilisateur.|
+|Produit affecté  <br/> |Les Microsoft 365 qui sont sous licence pour l’utilisateur.|
 |||

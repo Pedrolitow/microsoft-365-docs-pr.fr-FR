@@ -1,5 +1,5 @@
 ---
-title: Réponse et prise en charge de COVID-19 de Contoso pour le travail hybride
+title: Réponse contoso-19 et prise en charge du travail hybride
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -13,21 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendre comment Contoso Corporation a répondu à la épidémie COVID-19 et conçu son infrastructure d’installation et de mise à jour logicielle pour le travail hybride.
-ms.openlocfilehash: 2d28b0513221f6c14526baba69bf0f5986154805
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+description: Comprendre comment Contoso Corporation a répondu à la épidémie COVID-19 et conçu son infrastructure d’installation et de mise à jour logicielles pour le travail hybride.
+ms.openlocfilehash: e40e655801cb8a980dcde4e9be2167b81f12f74cccd2bd43878c66a5aeac5ca5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816694"
 ---
-# <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Réponse et prise en charge de COVID-19 de Contoso pour le travail hybride
+# <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Réponse contoso-19 et prise en charge du travail hybride
 
-Contoso avait toujours pris en charge ses travailleurs à distance, qui accédaient aux ressources sur site via un serveur VPN central au siège social parisien. Contoso avait émis un ordinateur portable géré pour tous les travailleurs à distance. Les employés locaux avaient un mélange d’ordinateurs de bureau et d’ordinateurs portables.
+Contoso avait toujours pris en charge ses employés à distance, qui accédaient aux ressources sur site via un serveur VPN central du siège social parisien. Contoso avait émis un ordinateur portable géré pour tous les travailleurs à distance. Les employés locaux avaient un mélange d’ordinateurs de bureau et d’ordinateurs portables.
 
 ## <a name="contosos-response-to-covid-19"></a>Réponse de Contoso à COVID-19
 
-Avec l’apparition de la épidémie COVID-19, soudainement, tous les travailleurs essentiels, sauf ceux essentiels, étaient des travailleurs à distance. Contoso a répondu en déplaçant ses employés pour qu’ils travaillent de chez eux et mener leurs activités principales via l’accès à distance aux ressources locales et en ligne à l’aide de Microsoft 365 services cloud.
+Avec l’apparition de la épidémie COVID-19, soudainement, tous les travailleurs essentiels, sauf les travailleurs à distance, étaient soudainement des travailleurs à distance. Contoso a répondu en déplaçant ses employés pour qu’ils travaillent de chez eux et mener leurs activités principales via l’accès à distance aux ressources locales et en ligne à l’aide de Microsoft 365 services cloud.
 
 Contoso avait des serveurs VPN d’accès à distance dans le siège social parisien pour prendre en charge 25 % de ses employés déjà distants, mais a rapidement été déplacé pour faire monter en charge sa capacité d’accès à distance pour prendre en charge 90 % de ses employés. Contoso a déployé des serveurs VPN d’accès à distance dans chaque bureau satellite afin que les travailleurs à distance utilisent un point d’entrée de fermeture régionale pour accéder à l’intranet Contoso.
 
@@ -41,11 +41,11 @@ Un travailleur à distance avec le client VPN installé utilise DNS pour recherc
 
 ## <a name="contosos-support-for-hybrid-work"></a>Prise en charge de Contoso pour le travail hybride
 
-Une fois que les modifications initiales ont été apportées pour prendre en charge la plupart des travailleurs à distance pendant les verrouillages régionaux, Contoso a apporté des modifications d’infrastructure pour prendre en charge le travail hybride dans lequel un travailleur peut être :
+Une fois que les modifications initiales ont été apportées pour prendre en charge la plupart des travailleurs à distance pendant les verrouillages régionaux, Contoso a apporté des modifications d’infrastructure pour prendre en charge le travail hybride dans lequel un travailleur pourrait être :
 
 - Toujours distant.
 - Toujours sur site.
-- Combinaison de sites sur site et distants.
+- Combinaison de l’emplacement sur site et de la télécommande.
 
 Microsoft 365 fonctionnalités d’identité, de sécurité et de conformité sont conçues pour la confiance zéro et fonctionnent quel que soit l’emplacement de l’utilisateur et de son appareil. Pour plus d’informations, voir [Confiance zéro](https://www.microsoft.com/security/business/zero-trust).
 
@@ -77,7 +77,7 @@ Le comportement d’installation et de mise à jour est déterminé en faisant d
 
 - RoamingDevices
 
-  Intune et d’autres paramètres sur l’appareil spécifient l’utilisation du Microsoft 365 pour les installations et les mises à jour.
+  Intune et d’autres paramètres sur l’appareil spécifient l’utilisation du réseau Microsoft 365 pour les installations et les mises à jour.
 
 ## <a name="new-onboarding-process"></a>Nouveau processus d’intégration
 

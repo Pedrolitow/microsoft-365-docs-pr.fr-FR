@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenez un rapport Microsoft 365 groupes de recherche pour connaître les groupes et leurs activités.
-ms.openlocfilehash: a013e8fd7ff555cfb1700260cb26ce83f4d07339
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: f899b742cb4d7098c1b8bcf7b51563e009dcd0217c74fb71f6bc98944650c681
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53408947"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816370"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Rapports dans le Centre d’administration : Microsoft 365 groupes
 
 Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport Microsoft 365 groupes, vous pouvez obtenir des informations sur l’activité des groupes dans votre organisation et voir combien de groupes sont créés et utilisés.
   
 > [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.  
+> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.  
   
 ## <a name="how-to-get-to-the-groups-report"></a>Comment obtenir le rapport des groupes
 
@@ -73,7 +73,7 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |Membres externes |Nombre d’utilisateurs externes dans le groupe.|
 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365 rapports dans le Centre d’administration](activity-reports.md) (article)\
 [Rapports dans le Centre de sécurité & conformité](../../compliance/reports-in-security-and-compliance.md) (article)\

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur , tels que l’administrateur de service, correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: cc9f5d019864c82e38bdb7bb061f1491d1ad8a11
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2873773312af8584d403b9f4c506c72aad7a43a6367490887839d8778e285468
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393318"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816054"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
