@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 25f748ded3c50106c78d411002b67f64dac79b87
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: db1d103cb25ab13b9c246e3261bcb5802d466ac0c2f786c32d8748a422389e69
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817800"
 ---
 # <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Déploiement de Microsoft Defender pour endpoint sur macOS avec Jamf Pro
 
@@ -39,7 +39,7 @@ ms.locfileid: "53652010"
 Découvrez comment déployer Microsoft Defender pour Endpoint sur macOS avec Jamf Pro.
 
 > [!NOTE]
-> Si vous utilisez macOS Fonctionnalité (10.15.4) ou des versions plus récentes de macOS, voir Nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](/microsoft-365/security/defender-endpoint/mac-sysext-policies)
+> Si vous utilisez macOS Souhaitez (10.15.4) ou des versions plus récentes de macOS, voir Nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](/microsoft-365/security/defender-endpoint/mac-sysext-policies)
 
 Il s’agit d’un processus en plusieurs étapes. Vous devez effectuer toutes les étapes suivantes :
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 629bcd89fab59039f576d01d80f2ba3ef6f8ef78
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3385b9b545e9e1a871b4bbd2fff0cad001796c033154128876dfcf6da0513b76
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53818110"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Intégration à l'aide de Microsoft Endpoint Manager
 
@@ -146,9 +146,9 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > ![Image de Microsoft Endpoint Manager portal6](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > Dans cette instance, ce système a été rempli automatiquement, car Defender pour le point de terminaison a déjà été intégré à Intune. Pour plus d’informations sur l’intégration, voir [Activer Microsoft Defender pour le point de terminaison dans Intune.](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
+    > Dans cette instance, cela a été automatiquement rempli comme Defender pour point de terminaison a déjà été intégré à Intune. Pour plus d’informations sur l’intégration, voir [Activer Microsoft Defender pour le point de terminaison dans Intune.](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
     >
-    > L’image suivante est un exemple de ce que vous verrez lorsque Microsoft Defender pour le point de terminaison n’est PAS intégré à Intune :
+    > L’image suivante illustre ce que vous voyez lorsque Microsoft Defender pour le point de terminaison n’est PAS intégré à Intune :
     >
     > ![Image de Microsoft Endpoint Manager portal7](images/2466460812371ffae2d19a10c347d6f4.png)
 
@@ -157,7 +157,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal8](images/ef844f52ec2c0d737ce793f68b5e8408.png)
 
-7. Ajoutez un groupe de test en cliquant sur **Sélectionner les groupes à inclure** et choisissez votre groupe, puis sélectionnez  **Suivant**.
+7. Ajoutez un groupe de test en cliquant sur **Sélectionner les groupes à inclure** et choisissez votre groupe, puis sélectionnez **Suivant.**
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal9](images/fc3525e20752da026ec9f46ab4fec64f.png)
@@ -313,7 +313,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
 
 ### <a name="confirm-policies-have-been-applied"></a>Confirmer que les stratégies ont été appliquées
 
-Une fois la stratégie de configuration affectée, l’application prend un certain temps.
+Une fois que la stratégie de configuration a été affectée, l’application prend un certain temps.
 
 Pour plus d’informations sur le minutage, consultez [les informations de configuration d’Intune.](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
 
@@ -359,7 +359,7 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
     > [!div class="mx-imgBorder"]
     > [![Image du panneau Services2](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. Une fois que les services sont en cours d’exécution sur l’appareil, celui-ci apparaît dans le Centre de sécurité Microsoft Defender.
+3. Une fois que les services sont en cours d’exécution sur l’appareil, l’appareil apparaît dans le Centre de sécurité Microsoft Defender.
 
     > [!div class="mx-imgBorder"]
     > [![Image de la Centre de sécurité Microsoft Defender](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
@@ -399,7 +399,7 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
 
     ![Image de la ligne de commande 2](images/619fb877791b1fc8bc7dfae1a579043d.png)
 
-### <a name="confirm-attack-surface-reduction---web-protection"></a>Confirmer la réduction de la surface d’attaque - Protection Web
+### <a name="confirm-attack-surface-reduction---web-protection"></a>Confirmer la Réduction de la surface d’attaque - Protection Web
 
 1. Sur le périphérique de test, ouvrez une Windows PowerShell et tapez `(Get-MpPreference).EnableNetworkProtection` .
 

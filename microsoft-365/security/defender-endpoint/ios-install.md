@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5395e9e9cfa9ed9bf52247af5528bac4220ba655
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 612089ef8e4b4ba3429c5116847a5888c8ea752e4543da5c2d97b217f179bca4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817969"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour le point de terminaison sur iOS
 
@@ -35,7 +35,7 @@ ms.locfileid: "53648230"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Cette rubrique décrit le déploiement de Defender pour Endpoint sur iOS sur Portail d’entreprise Intune des appareils inscrits. Pour plus d’informations sur l’inscription d’appareils Intune, voir Inscrire des appareils [iOS/iPadOS dans Intune.](/mem/intune/enrollment/ios-enroll)
+Cette rubrique décrit le déploiement de Defender pour Endpoint sur iOS Portail d’entreprise Intune appareils inscrits. Pour plus d’informations sur l’inscription d’appareils Intune, voir Inscrire des appareils [iOS/iPadOS dans Intune.](/mem/intune/enrollment/ios-enroll)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -78,7 +78,7 @@ Déployez Defender pour endpoint sur iOS via Portail d’entreprise Intune.
 
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>Intégration automatique du profil VPN (intégration simplifiée)
 
-Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour le point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
+Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection Web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
 
 1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à   ->  **Profils de configuration des**  ->  **appareils.**
 1. Choisissez **Plateforme en** tant que **iOS/iPadOS** et type de profil en **tant** que **VPN**. Cliquez sur **Créer**.

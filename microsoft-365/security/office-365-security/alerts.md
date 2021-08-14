@@ -21,12 +21,12 @@ description: Découvrez comment utiliser les fonctionnalités d’alertes dans l
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44009ac90dddf9a8f901fdcc5d46496e4bc78338
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 41f17ccb3cf6c79771df0d8db8390d013e18262f1d0b3fece7c52edf5a280cef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56849518"
 ---
 # <a name="alerts-in-the-microsoft-365-defender-portal"></a>Alertes dans le portail Microsoft 365 Defender web
 

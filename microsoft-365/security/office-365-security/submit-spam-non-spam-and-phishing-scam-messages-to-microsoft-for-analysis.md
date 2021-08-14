@@ -18,12 +18,12 @@ description: Les administrateurs et les utilisateurs finaux peuvent apprendre à
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0d48c3c6f6d082085390d6e246a088b6d3f6bf0
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: a6dd7314162fd91be487684be2191c1ea2b50d740fd86fc27bc91e7c0d978196
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56849938"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Envoyer manuellement des messages à Microsoft pour analyse
 
@@ -49,14 +49,14 @@ Vous et vos utilisateurs pouvez vous aider à ce processus en envoyant des faux 
 > [!TIP]
 > Au lieu d’utiliser les procédures suivantes pour signaler les faux négatifs, les utilisateurs de Outlook et de Outlook sur le web (anciennement appelés Outlook Web App) peuvent utiliser le add-in Report Message ou le add-in Report Phishing. Pour plus d’informations sur l’installation et l’utilisation de ces outils, voir [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
 
-Si vous recevez un message qui a été transmis par le biais du filtrage du courrier indésirable et qui doit avoir été identifié comme courrier indésirable ou hameçonnage, vous pouvez envoyer le message aux équipes d’analyse du courrier indésirable de Microsoft et d’analyse du hameçonnage Microsoft, le cas échéant. Les analystes examinent le message et l’ajoutent aux filtres à l’échelle du service s’il répond aux critères de classification.
+Si vous recevez un message qui a été transmis par le biais du filtrage du courrier indésirable et qui doit avoir été identifié comme courrier indésirable ou hameçonnage, vous pouvez le soumettre aux équipes d’analyse du courrier indésirable de Microsoft et d’analyse du hameçonnage Microsoft, le cas échéant. Les analystes examinent le message et l’ajoutent aux filtres à l’échelle du service s’il répond aux critères de classification.
 
 1. Créez un message électronique vide avec l’un des destinataires suivants :
 
    - **Courrier** indésirable : `junk@office365.microsoft.com`
    - **Hameçonnage**: `phish@office365.microsoft.com`
 
-2. Faites glisser et déposez le message de courrier indésirable ou de hameçonnage dans le nouveau message. Cela permet d’enregistrer le message de courrier indésirable ou de hameçonnage en tant que pièce jointe dans le nouveau message. Ne copiez et collez pas le contenu du message ou ne le faites pas passer (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes du message).
+2. Faites glisser et déposez le message de courrier indésirable ou de hameçonnage dans le nouveau message. Cela permet d’enregistrer le message de courrier indésirable ou de hameçonnage en tant que pièce jointe dans le nouveau message. Ne copiez pas et ne collez pas le contenu du message ou ne le faites pas passer (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes du message).
 
    > [!NOTE]
    >
@@ -72,13 +72,13 @@ Si vous recevez un message qui a été transmis par le biais du filtrage du cour
 ## <a name="submit-false-positives-to-microsoft"></a>Envoyer des faux positifs à Microsoft
 
 > [!TIP]
-> Au lieu d’utiliser les procédures suivantes pour signaler les faux positifs, les utilisateurs de Outlook et Outlook sur le web peuvent utiliser le module de signalement du message ou le module de signalement du hameçonnage. Pour plus d’informations sur l’installation et l’utilisation de ces outils, voir [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
+> Au lieu d’utiliser les procédures suivantes pour signaler les faux positifs, les utilisateurs de Outlook et Outlook sur le web peuvent utiliser le module de signalement des messages ou le module de signalement du hameçonnage. Pour plus d’informations sur l’installation et l’utilisation de ces outils, voir [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
 
 Si un message a été identifié à tort comme courrier indésirable, vous pouvez le soumettre à l’équipe d’analyse du courrier indésirable de Microsoft. Les analystes évaluent le message et (en fonction des résultats de l’analyse) les filtres à l’échelle du service peuvent être ajustés pour autoriser le message.
 
 1. Créez un message électronique vide avec `not_junk@office365.microsoft.com` comme destinataire.
 
-2. Faites glisser et déposez le message non identifié dans le nouveau message. Cela permet d’enregistrer le message non identifié en tant que pièce jointe dans le nouveau message. Ne copiez et collez pas le contenu du message ou ne le faites pas passer (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes du message).
+2. Faites glisser et déposez le message non identifié dans le nouveau message. Cela permet d’enregistrer le message non identifié en tant que pièce jointe dans le nouveau message. Ne copiez pas et ne collez pas le contenu du message ou ne le faites pas passer (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes du message).
 
    > [!NOTE]
    >

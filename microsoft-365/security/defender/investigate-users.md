@@ -19,18 +19,18 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 72eb111da2f342b78aa6161c7334a7252314b4a5
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1962e90fbbcddd9c5c342abb0eb368dfc89848f8da79278895431643eaa400f7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893782"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Examiner les utilisateurs dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -80,7 +80,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 --> 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête.](investigate-incidents.md)
 

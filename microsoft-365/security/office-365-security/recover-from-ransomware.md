@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administrateurs peuvent apprendre à récupérer d’une attaque par ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 608fac50fc65f20a612b80ed151252eb2a0c2e01
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: b7511039c1d33722790e993e8cd9c8c89e1e620b2585255359cb14f59ddb1ece
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56850705"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupérer d’une attaque par ransomware dans Microsoft 365
 
@@ -63,7 +63,7 @@ Pour désactiver d’autres types d’accès à une boîte aux lettres, voir :
 
 - [Activer ou désactiver l’accès POP3 ou IMAP4 pour un utilisateur](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-L’interruption Synchronisation OneDrive permet de protéger vos données cloud contre la mise à jour par des appareils potentiellement infectés. Pour plus d’informations, [voir Comment suspendre](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)et reprendre la synchronisation dans OneDrive .
+L’interruption Synchronisation OneDrive permet de protéger vos données cloud contre la mise à jour par des appareils potentiellement infectés. Pour plus d’informations, [voir Comment suspendre et reprendre la synchronisation dans OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Étape 3 : Supprimer les programmes malveillants des appareils concernés
 
@@ -75,11 +75,11 @@ Vous pouvez utiliser [Windows Defender](https://www.microsoft.com/windows/compre
 
 Une alternative qui vous aidera également à supprimer des ransomware ou des programmes malveillants est l’outil de suppression de logiciels malveillants [(MSRT).](https://www.microsoft.com/download/details.aspx?id=9905)
 
-Si ces options ne fonctionnent pas, vous pouvez essayer Windows Defender [hors](https://support.microsoft.com/help/17466) connexion ou résoudre les problèmes de détection et de suppression de programmes [malveillants.](https://support.microsoft.com/help/4466982)
+Si ces options ne fonctionnent pas, vous pouvez essayer Windows Defender [hors](https://support.microsoft.com/help/17466) connexion ou résoudre les problèmes liés à la détection et à la suppression [de programmes malveillants.](https://support.microsoft.com/help/4466982)
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Étape 4 : Récupérer des fichiers sur un ordinateur ou un appareil nettoyé
 
-Une fois que vous avez terminé l’étape précédente pour supprimer la charge utile de ransomware de [](https://support.microsoft.com/help/17128) votre environnement (ce qui empêche le ransomware de chiffrer ou de supprimer vos fichiers), vous pouvez utiliser l’historique des fichiers dans Windows 10 et Windows 8.1 ou protection système dans Windows 7 pour essayer de récupérer vos fichiers et dossiers locaux.
+Une fois que vous avez terminé l’étape précédente pour supprimer la charge utile du ransomware de [](https://support.microsoft.com/help/17128) votre environnement (ce qui empêchera le ransomware de chiffrer ou de supprimer vos fichiers), vous pouvez utiliser l’historique des fichiers dans Windows 10 et Windows 8.1 ou protection système dans Windows 7 pour tenter de récupérer vos fichiers et dossiers locaux.
 
 **Remarques** :
 
@@ -93,7 +93,7 @@ La restauration de fichiers OneDrive Entreprise vous permet de restaurer l’int
 
 ## <a name="step-6-recover-deleted-email"></a>Étape 6 : Récupérer les messages supprimés
 
-Dans les rares cas où le ransomware a supprimé tous vos messages électroniques, vous pouvez probablement récupérer les éléments supprimés. Pour plus d’informations, voir :
+Dans les rares cas où le ransomware a supprimé tous vos messages électroniques, vous pouvez probablement récupérer les éléments supprimés. Si vous souhaitez en savoir plus, veuillez consulter les rubrique suivantes :
 
 - [Récupérer des messages supprimés dans la boîte aux lettres d’un utilisateur](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -167,7 +167,7 @@ Billets de blog de l’équipe de sécurité Microsoft :
   Consultez la section **Ransomware.**
 
 - [Attaques par ransomware gérées par l’homme : un sinistre qui peut être évité (mars 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
-- [Réponse ransomware : payer ou ne pas payer ? (Décembre 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Réponse de ransomware : payer ou ne pas payer ? (Décembre 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [NorskQue répond aux attaques par ransomware avec transparence (décembre 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 - [Une mise à niveau fiable : la sécurité de nouvelle génération sur Windows 10 s’avère résiliente contre les attaques de ransomware en 2017 (janvier 2018)](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 

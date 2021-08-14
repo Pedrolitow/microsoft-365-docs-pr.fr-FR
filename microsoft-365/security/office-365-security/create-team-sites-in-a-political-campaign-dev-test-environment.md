@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80c975cd181f326fc2766c6ebfbd0d7f8a5164f2
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 924e363b55b3832a1882e68242c46f5466bd5f6fb900e8b8345fc45eab301d89
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56849944"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 

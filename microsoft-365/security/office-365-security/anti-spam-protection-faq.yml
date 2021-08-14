@@ -20,12 +20,12 @@ metadata:
   description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur la protection contre le courrier indésirable dans Exchange Online Protection (EOP).
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: 1643e94de99b06cee9ea55e03bc6bc12fefa1de9bc4c1fc9f08f0c655315019b
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52624908"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "56849968"
 title: FAQ sur la protection anti-courrier indésirable
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -111,7 +111,7 @@ sections:
   - question: >
       Puis-je obtenir des rapports sur le courrier indésirable ?
     answer: >
-      Oui, par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans Microsoft 365'administration centrale. Ce rapport indique le volume de courrier indésirable sous la forme d’un nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
+      Oui, par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans le Centre d’administration Microsoft 365. Ce rapport indique le volume de courrier indésirable sous la forme d’un nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
 
 
       Exchange Online clients : [surveillance, rapports et suivi](/exchange/monitoring/monitoring) des messages dans Exchange Online
@@ -132,7 +132,7 @@ sections:
   - question: >
       Puis-je utiliser un fournisseur tiers de blocage de courrier indésirable et de programme malveillant en association avec Exchange Online ?
     answer: >
-      Oui. Bien qu’il soit recommandé de pointer votre enregistrement MX vers Microsoft, nous savons qu’il existe des raisons légitimes pour l’entreprise d’router votre courrier électronique vers un autre endroit que Microsoft.
+      Oui. Bien qu’il soit recommandé de pointer votre enregistrement MX vers Microsoft, nous savons qu’il existe des raisons professionnelles légitimes d’router votre courrier électronique vers un autre endroit que Microsoft.
 
 
       - **Entrant :** modifiez vos enregistrements MX pour qu’ils pointent vers le fournisseur tiers, puis redirigez les messages vers EOP pour un traitement supplémentaire. Pour plus d’informations, [voir Filtrage amélioré pour les connecteurs dans Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
@@ -146,7 +146,7 @@ sections:
   - question: >
       Le courrier indésirable et les messages malveillants font-ils l’objet d’une enquête pour savoir qui les a envoyés, ou sont-ils transférés à des services chargés de l’application de la loi ?
     answer: >
-      Le service se concentre sur la détection et la suppression du courrier indésirable et des programmes malveillants, même si nous pouvons parfois examiner des campagnes de courrier indésirable ou d’attaque particulièrement dangereuses ou endommager, et poursuivre les attaques. Cela peut impliquer de travailler avec nos unités juridiques et numériques pour mettre fin à un botnet d’expéditeur de courrier indésirable, d’empêcher l’expéditeur de courrier indésirable d’utiliser le service (s’il l’utilise pour envoyer des messages électroniques sortants) et de transmettre les informations à l’application de la loi pour infraction pénale.
+      Le service se concentre sur la détection et la suppression du courrier indésirable et des programmes malveillants, même si nous pouvons parfois examiner des campagnes de courrier indésirable ou d’attaque particulièrement dangereuses ou endommager, et poursuivre les attaques. Cela peut impliquer de travailler avec nos unités juridiques et numériques pour mettre fin à un botnet d’expéditeur de courrier indésirable, de bloquer l’expéditeur de courrier indésirable d’utiliser le service (s’il l’utilise pour envoyer des messages électroniques sortants) et de transmettre les informations à l’application de la loi pour infraction pénale.
   - question: >
       Quelles sont les meilleures pratiques d'envoi de courrier sortant pour garantir la remise de mes messages électroniques ?
     answer: >

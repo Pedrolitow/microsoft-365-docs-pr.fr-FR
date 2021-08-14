@@ -20,12 +20,12 @@ description: Découvrez comment utiliser les fonctionnalités d’examen et de r
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e49963d1ffaeb7bce20f21f82f37fd3675b9cdd3
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 00a56df1b4c924bb2d1a4edbabac18e7f94747d956f58557d71e8af8cd2c5938
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083355"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56851359"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Examiner les e-mails malveillants qui ont été remis dans Microsoft 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "53083355"
 [Microsoft Defender pour Office 365](defender-for-office-365.md) vous permet d’examiner les activités qui mettent les personnes de votre organisation en danger et de prendre des mesures pour protéger votre organisation. Par exemple, si vous faites partie de l’équipe de sécurité de votre organisation, vous pouvez rechercher et examiner les messages électroniques suspects qui ont été remis. Vous pouvez le faire à l’aide de [l’Explorateur de menaces (ou des détections en temps réel).](threat-explorer.md)
 
 > [!NOTE]
-> Cliquez ici pour passer à l’article [de correction.](remediate-malicious-email-delivered-office-365.md)
+> Retentez l’article de [correction ici.](remediate-malicious-email-delivered-office-365.md)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -51,7 +51,7 @@ Assurez-vous que les conditions suivantes sont remplies :
 
 - Votre organisation a des stratégies définies pour la protection contre le courrier indésirable, les programmes malveillants, l’anti-hameçonnage, etc. Voir [Protéger contre les menaces dans Office 365](protect-against-threats.md).
 
-- Vous êtes un administrateur général ou vous avez le rôle Administrateur de la sécurité ou Recherche et purge affecté dans le portail Microsoft 365 Defender web. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Pour certaines actions, le rôle Aperçu doit également vous être attribué.
+- Vous êtes un administrateur général ou le rôle Administrateur de sécurité ou Recherche et purge est attribué dans le portail Microsoft 365 Defender web. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Pour certaines actions, le rôle Aperçu doit également vous être attribué.
 
 ### <a name="preview-role-permissions"></a>Autorisations de rôle d’aperçu
 
@@ -65,22 +65,22 @@ Pour effectuer certaines actions, telles que l’affichage des en-têtes de mess
 |---|---|---|
 |Utiliser l’Explorateur de menaces (et détections en temps réel) pour analyser les menaces |Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité|Non|
 |Utiliser l’Explorateur de menaces (et détections en temps réel) pour afficher les en-têtes des messages électroniques, ainsi que prévisualiser et télécharger les messages électroniques mis en quarantaine|Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité|Non|
-|Utiliser l’Explorateur de menaces pour afficher les en-têtes, prévisualiser le courrier électronique (uniquement dans la page d’entité de messagerie) et télécharger les messages électroniques remis aux boîtes aux lettres|Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité <p> Aperçu|Oui|
+|Utiliser l’Explorateur de menaces pour afficher les en-têtes, prévisualiser le courrier électronique (uniquement dans la page d’entité de messagerie) et télécharger les messages électroniques remis aux boîtes aux lettres|Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité <p> Preview|Oui|
 |
 
 > [!NOTE]
 > *La* prévisualisation est un rôle, et non un groupe de rôles. Le rôle Aperçu doit être ajouté à un groupe de rôles existant dans le portail Microsoft 365 Defender ( <https://security.microsoft.com> ). Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
 >
-> Le rôle Administrateur général se voit attribuer Centre d’administration Microsoft 365 ( ), et les rôles Administrateur de la sécurité et Lecteur sécurité sont attribués <https://admin.microsoft.com> dans Microsoft 365 Defender ( <https://security.microsoft.com> ). Pour en savoir plus sur les rôles et les [autorisations,](permissions-microsoft-365-security-center.md)consultez Autorisations dans le portail Microsoft 365 Defender.
+> Le rôle Administrateur général se voit attribuer Centre d’administration Microsoft 365 ( ), et les rôles Administrateur de la sécurité et Lecteur sécurité sont attribués <https://admin.microsoft.com> dans Microsoft 365 Defender ( <https://security.microsoft.com> ). Si vous souhaitez en savoir plus sur les rôles et les autorisations, consultez [le portail Autorisations dans Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 Nous comprenons que la prévisualisation et le téléchargement des e-mails soient des activités sensibles, et donc l’audit est activé pour ces activités. Une fois qu’un administrateur effectue ces activités sur les e-mails, les journaux d’audit sont générés pour le même et sont visibles dans le portail Microsoft 365 Defender ( <https://security.microsoft.com> ). Go to **Audit** \> **Search** tab, and filter on the admin name in **Users** box. Les résultats filtrés afficheront **l’activité AdminMailAccess**. Sélectionnez une ligne pour afficher les détails dans **la** section Plus d’informations sur les e-mails prévisualés ou téléchargés.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Rechercher les messages suspects qui ont été remis
 
-L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs fins, telles que la recherche et la suppression de messages, l’identification de l’adresse IP d’un expéditeur de courrier malveillant ou le démarrage d’un incident pour un examen plus approfondie. La procédure suivante se concentre sur l’utilisation de l’Explorateur pour rechercher et supprimer des messages malveillants des boîtes aux lettres des destinataires.
+L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs fins, telles que la recherche et la suppression de messages, l’identification de l’adresse IP d’un expéditeur de courrier malveillant ou le démarrage d’un incident pour un examen plus approfondie. La procédure suivante se concentre sur l’utilisation de l’Explorateur pour rechercher et supprimer des messages malveillants des boîtes aux lettres du destinataire.
 
 > [!NOTE]
-> Les recherches par défaut dans l’Explorateur n’incluent pas actuellement les éléments remis qui ont été supprimés de la boîte aux lettres cloud par la protection automatique sans heure (ZAP). Cette limitation s’applique à tous les affichages (par exemple, les affichages **Programme \>** malveillant ou **Hameçonnage \>** du courrier électronique). Pour inclure les éléments supprimés par ZAP, vous devez ajouter un jeu **d’actions** de remise pour inclure **Supprimé par ZAP**. Si vous incluez toutes les options, vous verrez tous les résultats de l’action de remise, y compris les éléments supprimés par ZAP.
+> Les recherches par défaut dans l’Explorateur n’incluent pas actuellement les éléments remis qui ont été supprimés de la boîte aux lettres cloud par la protection automatique sans heure (ZAP). Cette limitation s’applique à tous les affichages (par exemple, les affichages **Email \> Malware** ou **Email \> Phish).** Pour inclure les éléments supprimés par ZAP, vous devez ajouter un jeu **d’actions** de remise pour inclure **Supprimé par ZAP**. Si vous incluez toutes les options, vous verrez tous les résultats de l’action de remise, y compris les éléments supprimés par ZAP.
 
 1. Ouvrez le Microsoft 365 Defender et connectez-vous à l’aide de votre compte scolaire ou <https://security.microsoft.com> Office 365.
 
@@ -197,11 +197,11 @@ L’emplacement de remise affiche les résultats des stratégies et des détecti
 > [!IMPORTANT]
 > Aller à une rubrique de [correction ici.](remediate-malicious-email-delivered-office-365.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Corriger les messages malveillants remis dans Office 365](remediate-malicious-email-delivered-office-365.md)
 
-[Microsoft Defender pour Office 365](office-365-ti.md)
+[Microsoft Defender pour Office 365](office-365-ti.md)
 
 [Se protéger contre les menaces dans Office 365](protect-against-threats.md)
 

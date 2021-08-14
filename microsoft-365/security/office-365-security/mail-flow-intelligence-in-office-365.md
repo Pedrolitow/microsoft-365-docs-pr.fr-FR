@@ -14,12 +14,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés renseignements sur le flux de messagerie).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44f2272c98f0c011c05cbe728e720f4d3180c09d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 32b613cbd3251c58602a292c50ba48d56a02291fd9388c5433b4c8d9a836d314
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56849685"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de courriers dans EOP
 
@@ -30,7 +30,7 @@ ms.locfileid: "52844669"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour router les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router des messages depuis Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas remettre ces messages via le connecteur, ils sont mis en file d’attente Microsoft 365. Microsoft 365 continueront de réessayer de remise pour chaque message pendant 24 heures. Au bout de 24 heures, le message mis en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une non-remise (également appelée rapport de non-remise).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour router les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router des messages depuis Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 pouvez pas remettre ces messages via le connecteur, ils sont mis en file d’attente Microsoft 365. Microsoft 365 continueront de réessayer de remise pour chaque message pendant 24 heures. Au bout de 24 heures, le message mis en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une non-remise (également appelée rapport de non-remise).
 
 Microsoft 365 génère une erreur lorsqu’un message ne peut pas être remis à l’aide d’un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cet article. Collectivement, les erreurs de mise en file d’accès et de notification pour les messages non transmis envoyés via des connecteurs sont appelées informations de _flux de messagerie._
 

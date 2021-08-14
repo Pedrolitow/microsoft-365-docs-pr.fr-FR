@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Assurez-vous que vos employés à distance peuvent accéder aux ressources locales tout en optimisant l’accès aux services cloud de Microsoft 365.
-ms.openlocfilehash: bc446cf26ec99d3e9f81564b5474777c674603bc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2097507c79d9c2f1738e0fee45464e90e7887551836fd8895c99cfb22de1d094
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816761"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Étape 2 : fournir l’accès à distance aux applications et services locaux
 

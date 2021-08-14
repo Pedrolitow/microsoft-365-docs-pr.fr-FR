@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 52dfac3b6b6210c75cb0c168d0d5071b381e1020
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ec7b4a5a5edc542e305e876141e501e3c0e4b2bc35d096a48b4b6d36fe3e804d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817806"
 ---
 # <a name="live-response-command-examples"></a>Exemples de commande Live response
 

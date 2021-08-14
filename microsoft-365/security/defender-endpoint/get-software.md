@@ -1,7 +1,7 @@
 ---
 title: Répertorier les logiciels
 description: Récupère une liste d’inventaire logiciel
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, inventaire logiciel, api & gestion des vulnérabilités menace, Api tvm Microsoft Defender pour endpoint
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, inventaire logiciel, api & gestion des vulnérabilités menace, Api Tvm Microsoft Defender pour Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1b8703073dabdd934c5613cd95b4b4584aaba584
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 1aa13e51114691426a9d898d61f2faff0593b9ef9997784d8980b6ebcc2f6978
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53847234"
 ---
 # <a name="list-software-inventory-api"></a>API d’inventaire de logiciels de liste
 
@@ -99,7 +99,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f34d4fd9cc845855e8ec3b1f719824d06157cf23
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7d6d077aa1e17bed75577a162c83d3d1105add4d2f6e7d7a91bf7000ad34b493
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817869"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux avec l’ment
 
@@ -47,7 +47,7 @@ Cet article explique comment déployer Defender pour point de terminaison sur Li
 
  Pour obtenir une description des conditions préalables et de la condition système requise pour la version logicielle actuelle, voir la page principale de [Defender for Endpoint sur Linux.](microsoft-defender-endpoint-linux.md)
 
-En outre, pour le déploiement de Manière générale, vous devez être familiarisé avec les tâches d’administration de l’équipe de sécurité, configurer la configuration de l’appareil et savoir comment déployer des packages. Il existe de nombreuses façons d’effectuer la même tâche. Ces instructions supposent la disponibilité des modules De jeu pris en charge, par exemple pour *vous* aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d’informations, [reportez-vous](https://puppet.com/docs) à la documentation de Documentation.
+En outre, pour le déploiement de Manière générale, vous devez être familiarisé avec les tâches d’administration de la charge de travail, configurer Configure et savoir comment déployer des packages. Il existe de nombreuses façons d’effectuer la même tâche. Ces instructions supposent la disponibilité des modules De jeu pris en charge, par exemple pour *vous* aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d’informations, [reportez-vous](https://puppet.com/docs) à la documentation de Documentation.
 
 ## <a name="download-the-onboarding-package"></a>Télécharger le package d’intégration
 
@@ -81,7 +81,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 
 Vous devez créer un manifeste de Manifest pour le déploiement de Defender for Endpoint sur Linux sur des appareils gérés par un serveur De jeu. Cet exemple utilise les modules *apt* et *yumrepo* disponibles à partir delabs, et part du principe que les modules ont été installés sur votre serveur Dupont.
 
-Créez les dossiers *install_mdatp/fichiers* et *install_mdatp/manifestes* sous le dossier modules de votre installation de Latre. Ce dossier se trouve généralement dans */etc/spamlabs/code/environnements/production/modules* sur votre serveur Der. Copiez le mdatp_onboard.jssur le fichier créé ci-dessus dans *le dossier install_mdatp/fichiers.* Créer *un init.pp* qui contient les instructions de déploiement :
+Créez les dossiers *install_mdatp/fichiers* et *install_mdatp/manifestes* sous le dossier modules de votre installation de Latre. Ce dossier se trouve généralement dans */etc/spamlabs/code/environments/production/modules* sur votre serveur Der. Copiez le mdatp_onboard.jssur le fichier créé ci-dessus dans *le dossier install_mdatp/fichiers.* Créer *un init.pp* qui contient les instructions de déploiement :
 
 ```bash
 pwd
@@ -194,7 +194,7 @@ node "default" {
 }
 ```
 
-Les appareils d’agent inscrits sondent périodiquement le serveur de contrôle d’accès et installent de nouveaux profils et stratégies de configuration dès qu’ils sont détectés.
+Les périphériques d’agent inscrits sondent périodiquement le serveur de contrôle d’accès et installent de nouveaux profils et stratégies de configuration dès qu’ils sont détectés.
 
 ## <a name="monitor-puppet-deployment"></a>Surveiller le déploiement de l’écran de surveillance
 

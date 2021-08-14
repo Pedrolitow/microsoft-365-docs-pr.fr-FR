@@ -1,5 +1,5 @@
 ---
-title: Simulateur d’attaques dans le Centre de conformité & sécurité
+title: Simulateur d’attaques dans le Centre de sécurité & conformité
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,14 +20,14 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques dans le Centre de conformité des & de sécurité pour exécuter des attaques par hameçonnage et par mot de passe simulés dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: aa10c30644562a156964ebaa1d63145047ca9264
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 902673c39e0f2c9c68e8408073dc25bb7f92c87189e10568c80a1be21e2c7b02
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082863"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56849967"
 ---
-# <a name="attack-simulator-in-the-security--compliance-center"></a>Simulateur d’attaques dans le Centre de conformité & sécurité
+# <a name="attack-simulator-in-the-security--compliance-center"></a>Simulateur d’attaques dans le Centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ Si votre organisation dispose de Microsoft Defender pour [](office-365-ti.md)Off
 
 > [!NOTE]
 >
-> Le Simulateur d’attaques, comme décrit dans cet article, est désormais en lecture seule et a été remplacé par une formation à la **simulation** d’attaque dans le nœud de collaboration e-mail **&** dans le portail Microsoft 365 Defender à <https://security.microsoft.com> l’adresse . Pour plus d’informations, voir [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+> Le Simulateur d’attaques, comme décrit dans cet article, est désormais en lecture seule et a été remplacé par une formation à la **simulation** d’attaque dans le nœud de collaboration e-mail **&** dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com> . Pour plus d’informations, voir [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 >
 > La possibilité de lancer de nouvelles simulations à partir de cette version du Simulateur d’attaques a été désactivée. Toutefois, vous pouvez toujours accéder aux rapports jusqu’au 24 avril 2021.
 
@@ -45,7 +45,7 @@ Si votre organisation dispose de Microsoft Defender pour [](office-365-ti.md)Off
 
 - Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com/>. Le Simulateur d’attaques est disponible dans **Gestion des menaces** \> **Simulateur d’attaques**. Pour aller directement au simulateur d’attaques, ouvrez <https://protection.office.com/attacksimulator> .
 
-- Pour plus d’informations sur la disponibilité du Simulateur d’attaques Microsoft 365 différents abonnements, consultez Microsoft Defender pour obtenir [la description Office 365 service.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Pour plus d’informations sur la disponibilité du Simulateur d’attaques Microsoft 365 différents abonnements, consultez Microsoft Defender pour obtenir [Office 365 description du service.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
@@ -55,7 +55,7 @@ Si votre organisation dispose de Microsoft Defender pour [](office-365-ti.md)Off
 
 - Les campagnes d’hameçonnage collectent et traitent des événements sur une durée de 30 jours. L’historique des données de la campagne est disponible pendant un maximum de 90 jours après le lancement de la campagne.
 
-- Les données associées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour Microsoft 365 services. Pour plus [d’informations, Microsoft 365 des emplacements de données.](../../enterprise/o365-data-locations.md)
+- Les données liées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour Microsoft 365 services. Pour plus [d’informations, Microsoft 365 des emplacements de données.](../../enterprise/o365-data-locations.md)
 
 - Il n’existe pas d’applet de commande PowerShell correspondante pour le Simulateur d’attaques.
 

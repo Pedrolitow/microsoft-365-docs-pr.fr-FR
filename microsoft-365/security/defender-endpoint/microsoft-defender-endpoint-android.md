@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7b751584913da3441fcb6037e4c7c64f494060ff
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4b407e99b65fd3f8deb28f4e76496f64b0160150558f200149abaed896d8717a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655934"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817830"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison Android
 
@@ -78,7 +78,7 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 
 ### <a name="installation-instructions"></a>Instructions d’installation
 
-Microsoft Defender pour le point de terminaison sur Android prend en charge l’installation sur les deux modes d’appareils inscrits : l’administrateur d’appareil hérité et les modes Enterprise Android.
+Microsoft Defender pour Endpoint sur Android prend en charge l’installation sur les deux modes d’appareils inscrits : l’administrateur d’appareil hérité et les modes Enterprise Android.
 **Actuellement, les appareils personnels avec profil de travail et les inscriptions d’appareils utilisateur entièrement gérées par l’entreprise sont pris en charge dans Android Enterprise. La prise en charge des autres modes Enterprise Android sera annoncée lorsque vous serez prêt.**
 
 Le déploiement de Microsoft Defender pour Endpoint sur Android s’effectue via Microsoft Intune (MDM).
@@ -86,15 +86,15 @@ Pour plus d’informations, voir [Déployer Microsoft Defender pour endpoint sur
 
 
 > [!NOTE]
-> **Microsoft Defender pour le point de terminaison sur Android est désormais disponible [sur Google Play.](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br> Vous pouvez vous connecter à Google Play à partir d’Intune pour déployer l’application Microsoft Defender pour endpoint, sur les modes d’inscription de l’administrateur d’appareil et Enterprise Android. 
+> **Microsoft Defender pour le point de terminaison sur Android est désormais disponible [sur Google Play.](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br> Vous pouvez vous connecter à Google Play à partir d’Intune pour déployer l’application Microsoft Defender pour Endpoint, sur les modes d’inscription de l’administrateur d’appareil et Enterprise Android. 
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>Comment configurer Microsoft Defender pour endpoint sur Android
 
-Des instructions sur la configuration de Microsoft Defender pour endpoint sur les fonctionnalités Android sont disponibles dans [Configurer Microsoft Defender pour endpoint sur les fonctionnalités Android.](android-configure.md)
+Des instructions sur la configuration de Microsoft Defender pour le point de terminaison sur les fonctionnalités Android sont disponibles dans Configurer Microsoft Defender pour le point de terminaison [sur les fonctionnalités Android.](android-configure.md)
 
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)
 - [Configurer Microsoft Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: cda1a2fb4840e072fa4523ae4d0b2c0475035976
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 00d42e237e5fbe5d0c9fd904bd51c3dc94fd3668d0a12249a46d9cd48f06adad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653225"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817854"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
 
@@ -97,7 +97,7 @@ Vous pouvez filtrer les résultats selon les périodes suivantes :
 - 30 jours
 - 6 mois
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

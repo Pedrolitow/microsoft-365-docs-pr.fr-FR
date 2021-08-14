@@ -16,16 +16,16 @@ metadata:
   ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-  description: Les administrateurs peuvent afficher les questions fréquemment posées et les réponses sur les messages mis en quarantaine dans Exchange Online Protection (EOP).
+  description: Les administrateurs peuvent afficher les questions fréquemment posées et les réponses sur les messages mis en quarantaine Exchange Online Protection (EOP).
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
-  ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+  ms.openlocfilehash: 0dd07677bf372bb4bb15008708641837d475af716e1c5fc3c2edc5ebe42cb750
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 06/23/2021
-  ms.locfileid: "53083643"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "56849397"
 title: FAQ sur les messages mis en quarantaine
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -82,7 +82,7 @@ sections:
   - question: >
       Est-ce que je peux libérer ou signaler plusieurs messages mis en quarantaine à la fois ?
     answer: >
-      Dans le Microsoft 365 Defender, vous pouvez sélectionner et libérer jusqu’à 100 messages à la fois.
+      Dans le portail Microsoft 365 Defender, vous pouvez sélectionner et libérer jusqu’à 100 messages à la fois.
 
 
       Les administrateurs peuvent utiliser les cmdlets [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) et [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) dans Exchange Online PowerShell ou EOP PowerShell autonome pour rechercher et libérer les messages mis en quarantaine en bloc et signaler les faux positifs en bloc.
@@ -95,7 +95,7 @@ sections:
       Par exemple, copiez le code PowerShell suivant dans le Bloc-notes et enregistrez le fichier en tant que .ps1 à un emplacement facile à trouver (par exemple, C:\Data\QuarantineRelease.ps1).
 
 
-      Ensuite, après vous être connecté [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) [ou Exchange Online Protection PowerShell,](/powershell/exchange/connect-to-exchange-online-protection-powershell)exécutez la commande suivante pour exécuter le script :
+      Ensuite, après vous être connecté [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ou [Exchange Online Protection PowerShell,](/powershell/exchange/connect-to-exchange-online-protection-powershell)exécutez la commande suivante pour exécuter le script :
 
 
       ```powershell

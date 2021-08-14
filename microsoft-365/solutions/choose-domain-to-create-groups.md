@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: Apprenez à choisir le domaine à utiliser lors de la création de groupes Microsoft 365 en configurant des stratégies d’adresse de messagerie à l’aide de PowerShell.
-ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c63542e707322040df379f3620ab893d23f6243656f787e9b72c6491b7b52232
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583147"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893578"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Choisir le domaine à utiliser lors de la création de Microsoft 365 groupes
 
@@ -37,7 +37,7 @@ Avant de pouvoir exécuter les cmdlets PowerShell, téléchargez et installez un
 
 Supposons que le domaine principal de votre entreprise soit Contoso.com. Toutefois, le domaine accepté par défaut de votre organisation est service.contoso.com. Cela signifie que les groupes seront créés dans service.contoso.com (par exemple, jimsteam@service.contoso.com).
   
-Supposons que vous avez également des sous-domaines configurés dans votre organisation. Vous souhaitez également créer des groupes dans ces domaines :
+Supposons que des sous-domaines sont également configurés dans votre organisation. Vous souhaitez également créer des groupes dans ces domaines :
   
 - students.contoso.com pour les étudiants
     
@@ -46,7 +46,7 @@ Supposons que vous avez également des sous-domaines configurés dans votre orga
 Les deux scénarios suivants expliquent comment effectuer cette tâche.
 
 > [!NOTE]
-> Lorsque vous avez des projets DPE, ils sont évalués dans l’ordre de priorité. Une valeur de 1 signifie la priorité la plus élevée. Une fois qu’un EAP correspond, aucun autre EAP n’est évalué et les adresses qui sont marqués sur le groupe sont conformes à l’EAP. > si aucun eaps ne correspond aux critères spécifiés, le groupe est provisioné dans le domaine accepté par défaut de l’organisation. Consultez [Gérer les domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) dans Exchange Online pour plus d’informations sur l’ajout d’un domaine accepté.
+> Lorsque vous avez des projets DPE, ils sont évalués dans l’ordre de priorité. Une valeur de 1 signifie la priorité la plus élevée. Une fois qu’un EAP correspond, aucun autre EAP n’est évalué et les adresses qui sont marqués sur le groupe sont conformes au EAP. > si aucun eaps ne correspond aux critères spécifiés, le groupe est provisioné dans le domaine accepté par défaut de l’organisation. Consultez [Gérer les domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) dans Exchange Online pour plus d’informations sur l’ajout d’un domaine accepté.
   
 ### <a name="scenario-1"></a>Scénario 1
 
@@ -60,13 +60,13 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 Supposons que vous vouliez contrôler dans quels sous-domaines Microsoft 365 groupes sont créés. Vous souhaitez :
   
-- Groupes créés par des étudiants (utilisateurs dont **le** service est d’étudiants) dans students.groups.contoso.com domaine. Utilisez la commande suivante :
+- Groupes créés par des étudiants (utilisateurs dont le service **est** réservé aux **étudiants)** dans students.groups.contoso.com domaine. Utilisez la commande suivante :
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- Groupes créés par des membres  du corps enseignant (les utilisateurs dont le service est définie sur Le corps enseignant ou l’adresse **e-mail** contient faculty.contoso.com) ) dans le faculty.groups.contoso.com domaine. Utilisez la commande suivante :
+- Groupes créés par des membres  du corps enseignant (les utilisateurs dont le service est définie sur Enseignant ou l’adresse **e-mail** contient faculty.contoso.com) ) dans le faculty.groups.contoso.com domaine. Utilisez la commande suivante :
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
@@ -80,7 +80,7 @@ Supposons que vous vouliez contrôler dans quels sous-domaines Microsoft 365 gro
 
 ## <a name="change-email-address-policies"></a>Modifier les stratégies d’adresse de messagerie
 
-Pour modifier les modèles de priorité ou d’adresse de messagerie d’un EAP existant, utilisez Set-EmailAddressPolicy cmdlet.
+Pour modifier les modèles de priorité ou d’adresse de messagerie d’un EAP existant, utilisez la cmdlet Set-EmailAddressPolicy de messagerie.
   
 ```
 Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com" ManagedByFilter {Department -eq 'Students'} -Priority 2
@@ -113,13 +113,13 @@ Il y a d’autres choses à savoir :
     
 - Le groupe d’utilisateurs est déterminé à l’aide des requêtes standard (propriétés utilisateur) qui sont déjà disponibles. Consultez [propriétés filtrables pour le paramètre -RecipientFilter](/powershell/exchange/recipientfilter-properties) pour les propriétés filtrables pris en charge. 
     
-- Si vous ne configurez aucun eap pour les groupes, le domaine accepté par défaut est sélectionné pour la création du groupe.
+- Si vous ne configurez pas de PNE pour les groupes, le domaine accepté par défaut est sélectionné pour la création de groupes.
     
 - Si vous supprimez un domaine accepté, vous devez d’abord mettre à jour les PED, sinon la mise en service de groupe sera impactée.
     
 - Une limite maximale de 100 stratégies d’adresse de messagerie peut être configurée pour une organisation.
     
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Planification pas à pas de la gouvernance de](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) la collaboration (article)
 

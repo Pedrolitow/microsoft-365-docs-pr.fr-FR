@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 29f753aa5020191286008f803da5fedaa238cb13
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9f4b8e713d9712796261dba69d76ebaaa9d80e9dfcafec0193e2e6b81cc8b563
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817662"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>API de requête Microsoft Defender pour point de terminaison prise en charge 
 
@@ -45,7 +45,7 @@ Restreindre l’exécution du code | Exécutez cette API pour contenir une attaq
 Exécution de code de groupe | Exécutez cette vérification pour annuler la restriction de la stratégie d’applications après avoir vérifié que l’appareil compromis a été corrigé.
 Exécuter une analyse antivirus | Lancez à distance une analyse antivirus pour identifier et corriger les programmes malveillants qui peuvent être présents sur un appareil compromis.
 Arrêt et fichier mis en quarantaine |  Exécutez cet appel pour arrêter l’exécution des processus, mettre en quarantaine les fichiers et supprimer la persistance telle que les clés de Registre.
-Exemple de demande | Exécutez cet appel pour demander un exemple de fichier à partir d’un appareil spécifique. Le fichier est collecté à partir de l’appareil et chargé dans un stockage sécurisé.
+Exemple de requête | Exécutez cet appel pour demander un exemple de fichier à partir d’un appareil spécifique. Le fichier est collecté à partir de l’appareil et chargé dans un stockage sécurisé.
 Bloquer un fichier | Exécutez cette API pour empêcher toute propagation supplémentaire d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects. 
 Débloquer le fichier | Autoriser l’exécuter dans l’organisation à l’aide Antivirus Microsoft Defender.
 Obtenir l’URI SAS du package | Exécutez cette API pour obtenir un URI qui permet de télécharger un package d’enquête.

@@ -15,12 +15,12 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b96d3d656a89e7102550d09a2f5052fdb5ae818
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 0e5f75f0523af7f2a81ce9f1d74ae8f323c78816c828cd9fdfba4210afc912fe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792955"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56850706"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le forwarding automatique du courrier externe dans Microsoft 365
 
@@ -68,7 +68,7 @@ Les paramètres de domaine distant et les règles de flux de messagerie sont ind
 
 Cette indépendance de fonctionnalité vous permet (par exemple) d’autoriser le forwarding automatique dans les stratégies de filtrage du courrier indésirable sortant, mais d’utiliser des domaines distants pour contrôler les domaines externes vers qui les utilisateurs peuvent envoyer des messages.
 
-## <a name="blocked-email-forwarding-messages"></a>Messages de courrier électronique bloqués
+## <a name="blocked-email-forwarding-messages"></a>Messages de courrier bloqués
 
 Lorsqu’un message est détecté comme étant [](configure-the-outbound-spam-policy.md) automatiquement transmis et  que la stratégie de filtrage du courrier indésirable sortant bloque cette activité, le message est renvoyé à l’expéditeur dans une NDR contenant les informations suivantes :
 
