@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressources pour vous aider à respecter les réglementations en matière de gouvernance des informations et de gestion des enregistrements.
-ms.openlocfilehash: a2629dbd9df4b582b2aeb7726de87d81eb726a76
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 360d1091485c409967d9c0a7cfa96117920b8b9f3d9e6e680c67d61b088d30f3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917780"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819762"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Réglementations en matière de gouvernance des informations et de gestion des enregistrements
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tiers et messages remis à des boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 88235051a50197be56f20dcce22e868ce6bf4b3e
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 0338cdd6dd45596e31650680d15c9fa31126929ae355389cce66e2045437bfcb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810329"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
@@ -55,7 +55,7 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 - Détections de l’Explorateur de [menaces/En](threat-explorer.md)temps réel dans Defender pour Office 365 plan 2 : l’administrateur peut filtrer sur la **source** de remplacement du système et sélectionner la **simulation** d’hameçonnage ou la boîte aux lettres **SecOps.**
 - La page Entité de messagerie dans l’Explorateur de [menaces/Détections](mdo-email-entity-page.md)en temps réel : l’administrateur peut  afficher un message autorisé par la stratégie de l’organisation par la boîte aux lettres **SecOps** ou la **simulation** de hameçonnage sous remplacement de client dans la **section** Remplacements.
 - Le rapport d’état de  la [protection](view-email-security-reports.md#threat-protection-status-report)contre les menaces : l’administrateur peut filtrer en afficher les données par remplacement du système dans le menu déroulant et choisir d’afficher les messages autorisés en raison d’un remplacement du système de simulation de hameçonnage. Pour voir les messages autorisés par le remplacement  de boîte aux lettres  SecOps, vous pouvez sélectionner la répartition du graphique par emplacement de remise dans le menu déroulant de répartition du graphique pour raison.
-- [Recherche avancée](../defender-endpoint/advanced-hunting-overview.md)dans Microsoft Defender pour point de terminaison : les remplacements de système de boîte aux lettres SecOps et simulation de hameçonnage s’afficheront comme options dans OrgLevelPolicy dans EmailEvents. 
+- [Recherche avancée](../defender-endpoint/advanced-hunting-overview.md)dans Microsoft Defender pour point de terminaison : les remplacements de système de boîte aux lettres SecOps et simulation de hameçonnage s’afficheront comme options dans OrgLevelPolicy dans EmailEvents.
 - [Affichages de campagne](campaigns.md): l’administrateur peut filtrer sur la **source** de remplacement du système et sélectionner la **simulation** de hameçonnage ou la boîte aux lettres **SecOps.**
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
@@ -75,7 +75,7 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer les boîtes aux lettres SecOps dans la stratégie de remise avancée
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Rules** section \> **Advanced delivery**.
+1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
 
 2. Dans la page **Remise** avancée, vérifiez que l’onglet Boîte aux lettres **SecOps** est sélectionné, puis faites l’une des étapes suivantes :
    - Cliquez sur ![ Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier.**
@@ -95,20 +95,18 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées sont affich
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer des simulations de hameçonnage tiers dans la stratégie de remise avancée
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Rules** section \> **Advanced delivery**.
+1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
 
 2. Dans la page **Remise avancée,** sélectionnez l’onglet **Simulation** de hameçonnage, puis faites l’une des étapes suivantes :
    - Cliquez sur ![ Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier.**
    - S’il n’existe aucune simulation de hameçonnage configurée, cliquez sur **Ajouter.**
 
-3. Dans le **flyout de simulation** de hameçonnage tiers qui s’ouvre, configurez les paramètres suivants : 
-
-L’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) est l’adresse de messagerie utilisée dans la `5321.MailFrom` transmission SMTP du message. 
+3. Dans le **flyout de simulation** de hameçonnage tiers qui s’ouvre, configurez les paramètres suivants :
 
    - **Domaine** d’envoi : développez ce paramètre et entrez au moins un domaine d’adresse de messagerie (par exemple, contoso.com) en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées.
 
      > [!NOTE]
-     > Utilisez le domaine de l’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) utilisée dans la `5321.MailFrom` transmission SMTP du message.  Cette adresse de messagerie est généralement enregistrée dans le champ **d’en-tête Return-Path** dans l’en-tête du message.
+     > Utilisez le domaine de l’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) utilisée dans la `5321.MailFrom` transmission SMTP du message. 
 
    - **Adresse IP** d’envoi : développez ce paramètre et entrez au moins une adresse IPv4 valide en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées. Les valeurs valides sont les suivantes :
      - Adresse IP unique : par exemple, 192.168.1.1.
@@ -117,7 +115,7 @@ L’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeu
    - URL de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou désaxées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, voir [la syntaxe d’URL pour la liste d’adresses client autoriser/bloquer](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list).
 
    Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
-   
+
    > [!NOTE]
    > Vous devez spécifier au moins un domaine **d’envoi** et au moins une **adresse IP** d’envoi pour configurer une simulation de hameçonnage tierce dans la remise avancée. Vous pouvez éventuellement inclure des **URL de simulation pour** vous assurer que les URL présentes dans les messages de simulation ne sont pas bloquées. Vous pouvez spécifier jusqu’à 10 entrées pour chaque champ. Il doit y avoir une correspondance sur au moins un domaine **d’envoi** et une **adresse IP** d’envoi, mais aucune association entre les valeurs n’est conservée.
 

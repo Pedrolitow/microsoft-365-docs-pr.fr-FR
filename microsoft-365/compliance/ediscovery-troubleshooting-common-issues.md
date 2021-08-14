@@ -19,16 +19,16 @@ ms.assetid: ''
 description: Découvrez les étapes de résolution des problèmes de base que vous pouvez suivre pour résoudre les problèmes courants dans Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b118a97df765321704a995905de797e06a60108
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 1ec120edcbccc64046b57507cd6cd6044fb583c5129c336e28890b67f369cd46
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339417"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820146"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, résoudre et résoudre les problèmes eDiscovery courants
 
-Cette rubrique traite des étapes de dépannage de base que vous pouvez effectuer pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus eDiscovery. La résolution de certains de ces scénarios nécessite l’aide du Support Microsoft. Les informations sur le moment où contacter le Support Microsoft sont incluses dans les étapes de résolution.
+Cette rubrique traite des étapes de résolution des problèmes de base que vous pouvez effectuer pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus eDiscovery. La résolution de certains de ces scénarios nécessite l’aide du Support Microsoft. Les informations sur le moment où contacter le Support Microsoft sont incluses dans les étapes de résolution.
 
 ## <a name="errorissue-ambiguous-location"></a>Erreur/problème : emplacement ambigu
 
@@ -58,7 +58,7 @@ Recherchez des utilisateurs en double ou une liste de distribution avec le même
 
 ## <a name="errorissue-search-fails-on-specific-locations"></a>Erreur/problème : la recherche échoue sur des emplacements spécifiques
 
-Une recherche eDiscovery ou de contenu peut produire l’erreur suivante : `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
+Une recherche de contenu ou eDiscovery peut produire l’erreur suivante : `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![Capture d’écran d’erreur d’erreur d’un emplacement spécifique à la recherche](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -74,7 +74,7 @@ Si vous recevez cette erreur, nous vous recommandons de vérifier les emplacemen
 
 2. À partir de la sortie PowerShell, affichez les emplacements qui ont échoué dans le champ erreurs ou à partir des détails d’état dans l’erreur à partir de la sortie de recherche.
 
-3. Réessayez la recherche eDiscovery sur les emplacements qui ont échoué uniquement.
+3. Réessayez la recherche eDiscovery uniquement sur les emplacements qui ont échoué.
 
 4. Si vous continuez à recevoir ces erreurs, consultez Réessayer les emplacements d’échec [pour](/Office365/SecurityCompliance/retry-failed-content-search) plus d’étapes de résolution des problèmes.
 
@@ -101,12 +101,12 @@ La solution suggérée consiste à réindexer manuellement le site ou à attendr
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Erreur/problème : ce résultat de recherche n’a pas été téléchargé car il s’agit d’un dossier ou d’un autre artefact qui ne peut pas être téléchargé seul, tous les éléments du dossier ou de la bibliothèque seront téléchargés.
 
-Vous pouvez voir cette erreur lors de l’exécution d’une recherche eDiscovery qui inclut SharePoint Online et One Drive for Business. Cela signifie que nous allions essayer d’exporter l’élément signalé dans l’index, mais qu’il s’est traduit par un dossier, donc nous ne l’avons pas exporté. Comme mentionné dans l’erreur, nous n’exportons pas les éléments de dossier, mais nous exportons leur contenu.
+Vous pouvez voir cette erreur lors de l’exécution d’une recherche eDiscovery qui inclut SharePoint Online et One Drive for Business. Cela signifie que nous allions essayer d’exporter l’élément signalé dans l’index, mais qu’il s’est traduit par un dossier afin de ne pas l’exporter. Comme mentionné dans l’erreur, nous n’exportons pas les éléments de dossier, mais nous exportons leur contenu.
 
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Erreur/problème : la recherche échoue car le destinataire est in trouvé
 
-Une recherche eDiscovery échoue avec l’erreur . `recipient not found` Cette erreur peut se produire si l’objet utilisateur est in Exchange Online Protection (EOP) car l’objet n’a pas été synchronisé.
+Une recherche eDiscovery échoue avec l’erreur « `recipient not found` . Cette erreur peut se produire si l’objet utilisateur est in Exchange Online Protection (EOP) car l’objet n’a pas été synchronisé.
 
 ### <a name="resolution"></a>Résolution
 

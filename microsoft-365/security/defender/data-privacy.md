@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Protection de la confidentialité et de la sécurité des données Defender
+title: Microsoft 365 Defender sécurité et confidentialité des données
 description: Décrit la confidentialité et la sécurité des données du service.
 keywords: confidentialité, données, sécurité, centre de gestion de la confidentialité, collecte d’informations
 search.product: eADQiWindows 10XVcnh
@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 196c3d5ddcec082433d3e459a0b122e2f7052e9d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9740ab52b19a767735b3d484a70b17ca07686b982a23bf65b7a5d952728601da
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056629"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828630"
 ---
-# <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365 Protection de la confidentialité et de la sécurité des données Defender
+# <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365 Defender sécurité et confidentialité des données
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender opère dans Microsoft Azure centres de données de l’Union européenne, du Royaume-Uni et des États-Unis. Les données client collectées par le service sont stockées au repos dans (a) l’emplacement géographique du client identifié lors de l’approvisionnement ou (b) si Microsoft 365 Defender utilise un autre service en ligne Microsoft pour traiter ces données, la géolocalisation telle que définie par les règles de stockage de données de cet autre service en ligne.
+Microsoft 365 Defender fonctionne dans Microsoft Azure centres de données de l’Union européenne, du Royaume-Uni et des États-Unis. Les données client collectées par le service sont stockées au repos dans (a) l’emplacement géographique du client identifié lors de l’approvisionnement ou(b) si Microsoft 365 Defender utilise un autre service en ligne Microsoft pour traiter ces données, la géolocalisation telle que définie par les règles de stockage de données de cet autre service en ligne.
 
 Les données client sous forme pseudonyme peuvent également être stockées dans des systèmes de stockage et de traitement centraux aux États-Unis.
 

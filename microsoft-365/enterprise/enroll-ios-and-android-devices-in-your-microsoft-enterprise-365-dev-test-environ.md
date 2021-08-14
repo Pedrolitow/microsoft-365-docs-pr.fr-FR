@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Utilisez ce guide de laboratoire de test pour inscrire des appareils dans Microsoft 365 environnement de test et les gérer à distance.
-ms.openlocfilehash: 06f83d1ed61bcc530b6aa974d7730f1aadc0ecbd
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: e00aa4b51d5e3a9cc88c9d73ef644c56d4336b8b6120df4ac34de061200af317
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855094"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 entreprise
 
@@ -41,7 +41,7 @@ L’inscription d’appareils iOS/iPadOS et Android dans votre environnement de 
 
 Si vous souhaitez inscrire les appareils iOS/iPadOS et Android de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère.](lightweight-base-configuration-microsoft-365-enterprise.md)
   
-Si vous souhaitez inscrire des appareils iOS/iPadOS et Android dans une entreprise simulée, suivez les instructions de [l’authentification directe.](pass-through-auth-m365-ent-test-environment.md)
+Si vous souhaitez inscrire des appareils iOS/iPadOS et Android dans une entreprise simulée, suivez les instructions de l’authentification [directe.](pass-through-auth-m365-ent-test-environment.md)
   
 > [!NOTE]
 > Le test de la gestion automatisée des licences et de l’appartenance à un groupe ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS (Active Directory Domain Services). Il est fourni ici en tant qu’option pour que vous pouvez tester les licences automatisées et l’appartenance à un groupe, et vous pouvez l’expérimenter dans un environnement qui représente une organisation classique.
@@ -53,7 +53,7 @@ Si vous envisagez d’utiliser une solution de gestion des périphériques mobil
 Dans Intune, il existe plusieurs façons d’inscrire vos appareils iOS/iPadOS et Android. Vous pouvez choisir l’option d’inscription qui fonctionne le mieux pour votre organisation. Pour plus d’informations et de conseils, consultez les articles suivants :
 
 - [Guide de déploiement : Inscrire des appareils iOS et iPadOS dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados)
-- [Guide de déploiement : inscrire des appareils Android dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android)
+- [Guide de déploiement : Inscrire des appareils Android dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android)
 
 Si vous êtes prêt à utiliser Intune pour la gestion des appareils et que vous souhaitez obtenir des conseils, les informations suivantes peuvent vous aider :
 
@@ -68,11 +68,11 @@ Microsoft Intune fonctionnalité de verrouillage à distance et de réinitialisa
 - Pour verrouiller à distance un appareil iOS/iPadOS ou Android, voir Verrouiller à distance les appareils [avec Intune.](/mem/intune/remote-actions/device-remote-lock)
 - Pour réinitialiser à distance le code secret, voir Réinitialiser ou supprimer un code [secret d’appareil dans Intune.](/mem/intune/remote-actions/device-passcode-reset)
 
-Pour les autres tâches que vous pouvez exécuter à distance, consultez [les actions de périphérique disponibles.](/mem/intune/remote-actions/device-management#available-device-actions)
+Pour les autres tâches que vous pouvez exécuter à distance, consultez les [actions de périphérique disponibles.](/mem/intune/remote-actions/device-management#available-device-actions)
     
 ## <a name="next-step"></a>Étape suivante
 
-Explorez [d’autres fonctionnalités de gestion](m365-enterprise-test-lab-guides.md#mobile-device-management) des appareils mobiles dans votre environnement de test.
+Explorez [d’autres fonctionnalités de gestion des](m365-enterprise-test-lab-guides.md#mobile-device-management) appareils mobiles dans votre environnement de test.
 
 ## <a name="see-also"></a>Voir aussi
 

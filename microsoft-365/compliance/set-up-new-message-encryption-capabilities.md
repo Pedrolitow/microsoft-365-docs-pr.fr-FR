@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez les nouvelles fonctionnalités de chiffrement de messages Office 365 qui permettent une communication de messagerie protégée avec des personnes internes ou externes à votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fedbfc753250cd9b2a080aab91342d904876e0ef
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 0d33caff1499bf0792148039cb90d1aa6187247a90f53b7ea22828385d3d4fa3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819774"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurer les nouvelles fonctionnalités de chiffrement de messages
 

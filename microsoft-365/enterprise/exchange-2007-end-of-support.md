@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Découvrez vos options après Exchange Server 2007 et commencez à planifier la migration vers Microsoft 365, Office 365 ou Exchange 2016.
-ms.openlocfilehash: d7e8f50118dab6fcb618273f5c28497c80d4a549
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a6de134db567d3c932d4455409653f1bfd40b3e35960f84691cbcef247b1cfe5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855082"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour Exchange 2007
 
@@ -45,7 +45,7 @@ Pour plus d’informations sur Office 2007 vers la fin de la prise en charge, vo
   
 ## <a name="what-are-my-options"></a>Quelles sont mes options ?
 
-Vous pouvez :
+Vous pouvez :
   
 - Migrez vers Microsoft 365 à l’aide d’une migration à cutover, par étapes ou hybride.
     
@@ -53,7 +53,7 @@ Vous pouvez :
     
 Les sections suivantes explorent chaque option plus en détail.
   
-### <a name="migrate-to-microsoft-365"></a>Migrer vers Microsoft 365
+### <a name="migrate-to-microsoft-365"></a>Migrer vers Microsoft 365
 
 La migration de votre courrier vers Microsoft 365 est la meilleure option et la plus simple pour vous aider à retirer votre déploiement Exchange 2007. Avec une migration vers Microsoft 365, vous pouvez effectuer un saut unique entre une technologie de 10 ans et des fonctionnalités de pointe, notamment :
   
@@ -108,7 +108,7 @@ Si vous envisagez d’une migration àover, voici les éléments à prendre en c
   
 - Microsoft 365 vous connecter à vos serveurs Exchange 2007 à l’aide de Outlook Anywhere sur le port TCP 443.
     
-- Toutes les boîtes aux lettres sur site seront déplacées vers Microsoft 365.
+- Toutes les boîtes aux lettres sur site sont déplacées vers Microsoft 365.
     
 - Vous aurez besoin d’un compte d’administrateur local qui dispose d’un accès en lecture aux boîtes aux lettres de vos utilisateurs.
     
@@ -116,7 +116,7 @@ Si vous envisagez d’une migration àover, voici les éléments à prendre en c
     
 - Entre le début de la migration et la phase d’achèvement, Microsoft 365 synchronise régulièrement les boîtes aux lettres Microsoft 365 et sur site. Cela vous permet d’effectuer la migration sans vous soucier du fait que le courrier électronique soit laissé dans vos boîtes aux lettres sur site.
     
-- Les utilisateurs recevront de nouveaux mots de passe temporaires pour Microsoft 365 comptes. Ils doivent modifier leur mot de passe lorsqu’ils se connectent à leur boîte aux lettres pour la première fois.
+- Les utilisateurs recevront de nouveaux mots de passe temporaires pour Microsoft 365 comptes. Ils devront modifier leur mot de passe lorsqu’ils se connectent à leur boîte aux lettres pour la première fois.
     
 - Vous aurez besoin d’une licence Microsoft 365 qui inclut Exchange Online boîte aux lettres utilisateur que vous migrez.
     
@@ -126,7 +126,7 @@ Pour plus d’informations sur la migration à cutover, voir :
   
 - [Ce que vous devez savoir sur une migration de messagerie à cutover](https://support.office.com/article/What-you-need-to-know-about-a-cutover-email-migration-to-Office-365-961978ef-f434-472d-a811-1801733869da)
     
-- [Effectuer une migration à cutover du courrier électronique](https://support.office.com/article/Perform-a-cutover-migration-of-email-to-Office-365-9496e93c-1e59-41a8-9bb3-6e8df0cd81b4)
+- [Effectuer une migration à cutover de la messagerie](https://support.office.com/article/Perform-a-cutover-migration-of-email-to-Office-365-9496e93c-1e59-41a8-9bb3-6e8df0cd81b4)
     
 #### <a name="staged-migration"></a>Migration intermédiaire
 
@@ -160,11 +160,11 @@ Pour plus d’informations sur la migration par étapes, voir :
 
 Dans une migration hybride complète, votre organisation dispose de plusieurs centaines, jusqu’à des dizaines de milliers, de boîtes aux lettres et vous souhaitez déplacer une partie ou la totalité d’entre elles vers Microsoft 365. Étant donné que ces migrations sont généralement à plus long terme, les migrations hybrides rendent possible :
   
-- Affichez les informations de calendrier des utilisateurs locaux pour les utilisateurs Microsoft 365, et vice versa.
+- Affichez les informations de calendrier des utilisateurs locaux pour les utilisateurs dans Microsoft 365, et vice versa.
     
 - Consultez une liste d’adresses globale unifiée qui contient des destinataires à la fois en local et Microsoft 365.
     
-- Afficher les propriétés Outlook destinataire complètes pour tous les utilisateurs, qu’ils soient locaux ou Microsoft 365.
+- Affichez toutes Outlook propriétés du destinataire pour tous les utilisateurs, qu’ils soient locaux ou Microsoft 365.
     
 - Sécuriser la communication par courrier électronique entre les serveurs Exchange locaux et Microsoft 365 l’aide de TLS et de certificats.
     
@@ -176,13 +176,13 @@ Dans une migration hybride complète, votre organisation dispose de plusieurs ce
     
 La migration hybride complète est la meilleure solution pour les organisations qui prévoient de rester dans une configuration hybride pendant de nombreux mois ou plus. Vous obtenez les fonctionnalités répertoriées plus tôt dans cette section, ainsi que la synchronisation d’annuaires, de meilleures fonctionnalités de conformité intégrées et la possibilité de déplacer des boîtes aux lettres vers et depuis Microsoft 365 à l’aide de déplacements de boîtes aux lettres en ligne. Microsoft 365 devient une extension de votre organisation sur site.
   
-Si vous envisagez d’une migration hybride complète, voici les éléments à prendre en considération :
+Si vous envisagez d’une migration hybride complète, voici les éléments à prendre en compte :
   
 - La migration hybride complète n’est pas adaptée à tous les types d’organisations. En raison de la complexité des migrations hybrides complètes, les organisations avec moins de quelques centaines de boîtes aux lettres ne voient généralement pas d’avantages qui justifient l’effort et le coût nécessaires pour en configurer une. Si cela ressemble à votre organisation, nous vous recommandons d’envisager plutôt une migration à cutover ou par étapes.
     
 - Vous devez déployer au moins un serveur Exchange 2013 dans votre organisation Exchange 2007 pour agir en tant que « serveur hybride ». Ce serveur communiquera avec Microsoft 365 de la part de vos serveurs Exchange 2007.
     
-- Microsoft 365 devez se connecter au « serveur hybride » à l’aide de Outlook Anywhere sur le port TCP 443.
+- Microsoft 365 vous connecter au « serveur hybride » à l’aide de Outlook Anywhere sur le port TCP 443.
     
 - Vous devez configurer la synchronisation d’annuaires à l’aide de Azure Active Directory (Azure AD) Connecter entre vos serveurs Active Directory locaux et Microsoft 365.
     
@@ -213,8 +213,8 @@ Si vous ne pouvez pas migrer vers Microsoft 365, nous vous recommandons de migre
 |**Exchange version**|**Composants**|
 |:-----|:-----|
 |Exchange 2010  <br/> | Role-Based contrôle d’accès (autorisations sans AAL)  <br/>  Stratégies de boîte aux lettres de Outlook Web App  <br/>  Possibilité de partager des calendriers de libre/occupé et de déléguer des calendriers entre des organisations  <br/> |
-|Exchange 2013  <br/> | *Fonctionnalités de Exchange 2010 et ...*  <br/>  Architecture simplifiée qui a réduit le nombre de rôles serveur à trois (boîte aux lettres, accès au client, transport Edge)  <br/>  Stratégies de protection contre la perte de données (DLP) qui empêchent la fuite d’informations sensibles  <br/>  Amélioration de Outlook Web App  <br/> |
-|Exchange 2016  <br/> | *Fonctionnalités de Exchange 2013 et ...*  <br/>  Autres rôles serveur simplifiés pour les boîtes aux lettres et le transport Edge  <br/>  Amélioration de la DLP avec l’intégration avec SharePoint  <br/>  Résilience de base de données améliorée  <br/>  Collaboration sur des documents en ligne |
+|Exchange 2013  <br/> | *Fonctionnalités de Exchange 2010 et ...*  <br/>  Architecture simplifiée qui a réduit le nombre de rôles serveur à trois (boîte aux lettres, accès au client, transport Edge)  <br/>  Stratégies de protection contre la perte de données (DLP) qui empêchent la fuite d’informations sensibles  <br/>  Amélioration de Outlook Web App  <br/> |
+|Exchange 2016  <br/> | *Fonctionnalités de Exchange 2013 et ...*  <br/>  Autres rôles serveur simplifiés pour les boîtes aux lettres et le transport Edge  <br/>  Amélioration de la DLP avec l’intégration avec SharePoint  <br/>  Résilience de base de données améliorée  <br/>  Collaboration sur des documents en ligne |
    
 #### <a name="which-version-should-i-migrate-to"></a>Vers quelle version dois-je migrer ?
 
@@ -224,11 +224,11 @@ Nous vous recommandons de supposer initialement que vous allez migrer vers Excha
 |:-----|:-----|
 |Dates de fin du support  <br/> | Comme Exchange 2007, chaque version de Exchange a sa propre date de fin de prise en charge :  <br/> *Exchange 2010* - Janvier 2020  <br/> *Exchange 2013* - Avril 2023  <br/> *Exchange 2016* - Octobre 2025  <br/>  Plus la fin du support est antérieure, plus vite vous devrez effectuer une autre migration.<br/> |
 |Chemin de migration Exchange 2010 et 2013.  <br/> |Voici les phases générales de migration vers Exchange 2010 ou Exchange 2013 :  <br/> - Installez Exchange 2010 ou 2013 dans votre organisation Exchange 2007 existante. <br/>- Déplacez les services et autres infrastructures vers Exchange 2010 ou 2013.<br/>- Déplacer des boîtes aux lettres et des dossiers publics vers Exchange 2010 ou 2013.<br/>- Désaffecter les serveurs Exchange 2007. |
-|Migration vers Exchange 2016  <br/> |Voici les phases générales de migration vers Exchange 2016 :  <br/> - Installez Exchange 2013 dans votre organisation Exchange 2007 existante.<br/>- Déplacez les services et autres infrastructures vers Exchange 2013.<br/>- Déplacer des boîtes aux lettres et des dossiers publics vers Exchange 2013.<br/>- Désaffecter les serveurs Exchange 2007.<br/>- Installez Exchange 2016 dans votre organisation Exchange 2013 existante.<br/>- Déplacer des boîtes aux lettres, des dossiers publics, des services et d’autres infrastructures vers Exchange 2016 (l’ordre n’a pas d’importance). Désaffecter les Exchange serveurs 2013.<br/><br/> **Remarque :** La migration de Exchange 2013 vers Exchange 2016 est simple. Les deux versions ont presque la même configuration matérielle requise, et ces versions sont très compatibles. Vous pouvez donc reconstruire un serveur que vous avez acheté Exchange 2013 et installer Exchange 2016 dessus. Pour les déplacements de boîtes aux lettres en ligne, la plupart des utilisateurs ne remarqueront même pas que leur boîte aux lettres a été déplacée hors du serveur, puis de nouveau après l’avoir reconstruite avec Exchange 2016.           |
+|Chemin de migration vers Exchange 2016  <br/> |Voici les phases générales de migration vers Exchange 2016 :  <br/> - Installez Exchange 2013 dans votre organisation Exchange 2007 existante.<br/>- Déplacez les services et autres infrastructures vers Exchange 2013.<br/>- Déplacer des boîtes aux lettres et des dossiers publics vers Exchange 2013.<br/>- Désaffecter les serveurs Exchange 2007.<br/>- Installez Exchange 2016 dans votre organisation Exchange 2013 existante.<br/>- Déplacer des boîtes aux lettres, des dossiers publics, des services et d’autres infrastructures vers Exchange 2016 (l’ordre n’a pas d’importance). Désaffecter les Exchange serveurs 2013.<br/><br/> **Remarque :** La migration de Exchange 2013 vers Exchange 2016 est simple. Les deux versions ont presque la même configuration matérielle requise, et ces versions sont très compatibles. Vous pouvez donc reconstruire un serveur que vous avez acheté Exchange 2013 et installer Exchange 2016 dessus. Pour les déplacements de boîtes aux lettres en ligne, la plupart des utilisateurs ne remarqueront même pas que leur boîte aux lettres a été déplacée hors du serveur, puis de nouveau après l’avoir reconstruite avec Exchange 2016.           |
 |Coexistence de version  <br/> | Lors de la migration vers...  <br/> **Exchange 2016** : Exchange 2016 ne peut pas être installé dans une organisation qui inclut un serveur Exchange 2007. Vous devez d’abord migrer vers Exchange 2010 ou 2013 (nous vous recommandons vivement Exchange 2013), supprimer tous les serveurs Exchange 2007, puis migrer vers Exchange 2016.  <br/> **Exchange 2010 ou Exchange 2013 :** Vous pouvez installer Exchange 2010 ou Exchange 2013 dans une organisation Exchange 2007 existante. Cela vous permet d’installer un ou Exchange serveurs 2010 ou 2013 et d’effectuer votre migration.  <br/> |
-|Matériel serveur  <br/> | La configuration matérielle requise pour le serveur Exchange 2007. Assurez-vous que votre matériel est compatible. Pour obtenir des informations détaillées, voir :  <br/> [Exchange system requirements 2016](/Exchange/plan-and-deploy/system-requirements) <br/> [Exchange system requirements 2013](/exchange/exchange-2013-system-requirements-exchange-2013-help) <br/> [Exchange 2010 System Requirements](/previous-versions/office/exchange-server-2010/aa996719(v=exchg.141)) <br/>  Vous verrez que les améliorations significatives des performances de Exchange et l’augmentation de la puissance informatique et de la capacité de stockage sur les serveurs plus nouveaux signifient que vous aurez probablement besoin de moins de serveurs pour prendre en charge le même nombre de boîtes aux lettres.  <br/> |
+|Matériel serveur  <br/> | La configuration matérielle requise pour le serveur Exchange 2007. Assurez-vous que votre matériel est compatible. Pour obtenir des informations détaillées, voir :  <br/> [Exchange system requirements 2016](/Exchange/plan-and-deploy/system-requirements) <br/> [Exchange system requirements 2013](/exchange/exchange-2013-system-requirements-exchange-2013-help) <br/> [Exchange system requirements 2010](/previous-versions/office/exchange-server-2010/aa996719(v=exchg.141)) <br/>  Vous verrez que les améliorations significatives des performances de Exchange et l’augmentation de la puissance informatique et de la capacité de stockage sur les serveurs plus nouveaux signifient que vous aurez probablement besoin de moins de serveurs pour prendre en charge le même nombre de boîtes aux lettres.  <br/> |
 |Version du système d'exploitation  <br/> | Les versions minimales de système d’exploitation pris en charge pour chaque version sont les :  <br/> **Exchange 2016** - Windows Server 2012  <br/> **Exchange 2013** - Windows Server 2008 R2 SP1  <br/> **Exchange 2010** - Windows Server 2008 SP2  <br/>  Pour plus d’informations sur la prise en charge du système [d’exploitation, Exchange Matrice de prise en charge.](/Exchange/plan-and-deploy/supportability-matrix)  <br/> |
-|Niveau fonctionnel de la forêt Active Directory  <br/> | Les niveaux fonctionnels minimaux de forêt Active Directory pris en charge pour chaque version sont les :  <br/> **Exchange 2016** Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Pour plus d’informations sur la prise en charge du niveau fonctionnel de la [forêt, voir Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
+|Niveau fonctionnel de la forêt Active Directory  <br/> | Les niveaux fonctionnels minimaux de forêt Active Directory pris en charge pour chaque version sont :  <br/> **Exchange 2016** Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Pour plus d’informations sur la prise en charge du niveau fonctionnel de la forêt, [voir Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
 |Office versions clientes  <br/> | Les versions minimales Office client pour chaque version sont les Office les plus récentes :  <br/> **Exchange 2016** - Office 2010 (avec les dernières mises à jour)  <br/> **Exchange 2013** - Office 2007 SP3  <br/> **Exchange 2010** - Office 2003  <br/>  Pour plus d’informations sur Office prise en charge du client, [voir Exchange Matrice de prise en charge.](/Exchange/plan-and-deploy/supportability-matrix)  <br/> |
    
 #### <a name="how-do-i-migrate"></a>Comment migrer ?
@@ -253,6 +253,6 @@ Si vous avez des problèmes lors de votre migration vers Microsoft 365 et que vo
     
 - [Support client](https://support.microsoft.com/gp/support-options-for-business)
     
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Ressources pour vous aider à mettre à niveau Office serveurs et clients 2007](upgrade-from-office-2007-servers-and-products.md)

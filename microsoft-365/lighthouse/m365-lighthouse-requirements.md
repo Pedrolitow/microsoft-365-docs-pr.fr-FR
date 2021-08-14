@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés, obtenez la liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: 9c87744053ffe3bace90534287cd2b81697f3554
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1d2f2812e2f22060c2e401519f18ae8dc6f1959993ef7703fa1a9add69e9ae14
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395189"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53847954"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Conditions requises pour Microsoft 365 Lighthouse
 
@@ -60,7 +60,7 @@ Antivirus Microsoft Defender fait partie du système d Windows d’exploitation 
 > [!NOTE] 
 > Si vous utilisez une solution antivirus non Microsoft et que vous n’utilisez pas Antivirus Microsoft Defender, Antivirus Microsoft Defender est désactivé automatiquement. Lorsque vous désinstallez la solution antivirus non Microsoft, Antivirus Microsoft Defender est activé automatiquement pour protéger vos appareils Windows contre les menaces.    
 
-## <a name="related-content"></a>Contenu associé   
+## <a name="related-content"></a>Contenu connexe   
 
 [Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise](m365-lighthouse-configure-portal-security.md) (article)\
 [Microsoft 365 Lighthouse page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)\

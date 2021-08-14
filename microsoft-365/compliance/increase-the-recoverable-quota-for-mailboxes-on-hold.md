@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique pour augmenter la taille du dossier Éléments récupérables d’une boîte aux lettres dans Microsoft 365.
-ms.openlocfilehash: 47227e066f922a9e4b8bccedaa9573c001194836
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: ed6b427bf9bd30a4f57bd8c893c879857022ee44c0c951ed9a77c5f9f4da53cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819802"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 
@@ -33,7 +33,7 @@ Pour réduire les risques de dépassement de cette limite, le quota de stockage 
 
 |**Emplacement du dossier Éléments récupérables**|**Boîtes aux lettres non placées en conservation**|**Boîtes aux lettres placées en conservation**|
 |:-----|:-----|:-----|
-|Boîte aux lettres principale  <br/> |30 Go  <br/> |100 Go  <br/> |
+|Boîte aux lettres principale  <br/> |30 Go  <br/> |100 Go  <br/> |
 |Boîte aux lettres d’archivage<sup>\*</sup> <br/> |Illimité  <br/> |Illimité  <br/> |
 |**Quota de stockage total pour le dossier Éléments récupérables** <br/> |Illimité  <br/> |Illimité  <br/> |
 
