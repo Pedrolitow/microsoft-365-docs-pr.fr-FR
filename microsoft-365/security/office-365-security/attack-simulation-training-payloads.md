@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des charges utiles personnalisées pour la formation à la simulation d’attaques dans Microsoft Defender Office 365.
 ms.technology: mdo
-ms.openlocfilehash: ac7963b71c466e8dfdc513a2563776cd4e10af95
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ecd7b539aa22d2935f96860769b30751022d89ea43151a94222caeec9b309928
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878759"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810369"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Créer une charge personnalisée pour une formation à la simulation d’attaque
 
@@ -32,6 +32,9 @@ La première étape de l’Assistant vous permettra de sélectionner un type de 
 Ensuite, sélectionnez une technique associée. Pour plus d’informations sur les techniques, voir [la sélection d’une technique d’ingénierie sociale.](attack-simulation-training.md#selecting-a-social-engineering-technique)
 
 À l’étape suivante, nommez votre charge utile. Si vous le souhaitez, vous pouvez lui donner une description.
+
+> [!NOTE]
+> Certaines marques, logos, symboles, insignias et autres identificateurs source bénéficient d’une protection maximale en vertu de lois et lois locales, nationales et fédérales. L’utilisation non autorisée de ces indicateurs peut imposer des sanctions aux utilisateurs, y compris des amendes pénales. Bien qu’il ne s’agit pas d’une liste complète, il s’agit notamment des personnes à l’emploi de Lasc, du vice-président et de l’espion, du CENTRE d’enquêtes sur la sécurité sociale, de la sécurité sociale, du service de sécurité sociale des États-Unis et du service de revenu interne des États-Unis. Au-delà de ces catégories de marques, l’utilisation et la modification d’une marque tierce impliquent un risque inhérent. L’utilisation de vos propres marques et logos dans une charge utile serait moins risqué, en particulier lorsque votre organisation autorise l’utilisation. Si vous avez d’autres questions sur ce qui est approprié ou non à utiliser lors de la création ou de la configuration d’une charge utile, vous devez consulter vos conseillers juridiques.
 
 ## <a name="configure-payload"></a>Configurer la charge utile
 

@@ -17,17 +17,17 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Utilisez ce guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 entreprise.
-ms.openlocfilehash: 8df63e1a580b57aa263c11dccaed947f46f2cbb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Utilisez ce Guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 entreprise.
+ms.openlocfilehash: 8c07187d5c86af7e82c6ce31ad98a1caa5bb71669df3eb64d24831018b6f679c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926043"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870191"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Configuration de base d’une entreprise simulée
 
-*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
+*Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
 
 Cet article explique comment créer un environnement simplifié pour Microsoft 365 entreprise qui inclut :
 
@@ -197,7 +197,7 @@ Notez que l’exécution de ces commandes peut prendre quelques minutes.
   
 Après le redémarrage de DC1, reconnectez-vous à la machine virtuelle DC1.
   
-1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez Groupes de **ressources** > <nom de votre groupe de *ressources*> > **dc1**  >  **Connecter**.
+1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez Groupes de **ressources** > <nom de votre groupe de *ressources*> > **DC1**  >  **Connecter**.
     
 2. Exécutez le fichier DC1.rdp téléchargé, puis sélectionnez **Connecter**.
     
@@ -337,7 +337,7 @@ Ensuite, vérifiez que vous pouvez accéder aux ressources web et de partage de 
   
 1. Dans le Gestionnaire de serveur, dans le volet d’arborescence, sélectionnez **Serveur local.**
     
-2. Dans **Les propriétés de CLIENT1,** **sélectionnez Sur** en plus de la configuration de sécurité renforcée **d’IE.**
+2. Dans **les propriétés de CLIENT1,** **sélectionnez Sur** en plus de la configuration de sécurité renforcée **d’IE.**
     
 3. Dans la configuration de sécurité renforcée d’Internet **Explorer,** sélectionnez **Off** pour les administrateurs et les  **utilisateurs,** puis **sélectionnez OK**.
     
@@ -400,7 +400,7 @@ Votre configuration finale ressemble à ceci :
   
 ![Phase 2 de la configuration de base de l’entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-Vous êtes maintenant prêt à expérimenter des fonctionnalités supplémentaires de [Microsoft 365 entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
+Vous êtes maintenant prêt à tester des fonctionnalités supplémentaires de [Microsoft 365 entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
   
 ## <a name="next-steps"></a>Étapes suivantes
 

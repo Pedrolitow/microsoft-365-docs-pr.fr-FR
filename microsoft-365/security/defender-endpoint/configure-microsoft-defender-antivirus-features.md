@@ -16,17 +16,17 @@ ms.custom: nextgen
 ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 7fa5959ede9f0c71c75cefafc0fcb0d4376a1a4f
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 140a6a58cd0ee3f179644b7f4365dd796bea9f8d1966885d4728a58161681982
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925394"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829506"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurer les fonctionnalités antivirus Microsoft Defender
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -39,7 +39,7 @@ Vous pouvez configurer Antivirus Microsoft Defender avec un certain nombre d’o
 
 Les grandes catégories de fonctionnalités suivantes peuvent être configurées :
 
-- Protection cloud. Voir protection et protection des services [cloud Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+- Protection cloud. Voir [protection et](cloud-protection-microsoft-defender-antivirus.md) Antivirus Microsoft Defender
  
 - Protection en temps réel toujours continue, y compris la protection comportementale, heuristique et basée sur l’apprentissage automatique. Voir [Configurer la protection comportementale, heuristique et en temps réel.](configure-protection-features-microsoft-defender-antivirus.md)
 

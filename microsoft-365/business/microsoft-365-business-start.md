@@ -1,5 +1,5 @@
 ---
-title: Prendre en Microsoft 365 entreprise
+title: Mise en place Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -28,14 +28,14 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment Microsoft 365 pour les entreprises, comment le configurer et comment préparer les appareils et pc de vos utilisateurs afin qu’ils sont protégés par Microsoft 365 entreprise.
-ms.openlocfilehash: 2ab0079da7a8f30d481cdb3d3dc6d165b4a19e99
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 3ac8ec3c831d14cfa6d0018340458b2b494b2dd746a7f2bd61d2eba0b4eaf0a1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339287"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837888"
 ---
-# <a name="get-started-with-microsoft-365-for-business"></a>Prendre en Microsoft 365 entreprise
+# <a name="get-started-with-microsoft-365-for-business"></a>Mise en place Microsoft 365 entreprise
 
 ## <a name="what-is-microsoft-365-for-business"></a>Qu’est-ce Microsoft 365 entreprise ?
 
@@ -49,9 +49,9 @@ Microsoft 365 entreprise est destiné à 300 licences au plus. Si vous avez beso
   
 ## <a name="get-microsoft-365-for-business"></a>Obtenir Microsoft 365 entreprise
 
-- Si vous avez un partenaire, il Microsoft 365 pour les entreprises : obtenir Microsoft 365 pour les entreprises à partir de [l’Centre partenaires Microsoft.](get-microsoft-365-business.md)
+- Si vous avez un partenaire, il Microsoft 365 pour les entreprises : obtenir Microsoft 365 pour les entreprises à partir de [l’Partner Center Microsoft](get-microsoft-365-business.md).
     
-- Si vous n’avez pas de partenaire et que vous souhaitez obtenir Microsoft 365 pour les entreprises, vous pouvez [l’acheter ici.](https://www.microsoft.com/microsoft-365/business)
+- Si vous n’avez pas de partenaire et que vous souhaitez Microsoft 365 entreprise, vous pouvez [l’acheter ici.](https://www.microsoft.com/microsoft-365/business)
     
 ## <a name="set-up-microsoft-365-for-business"></a>Configurer Microsoft 365 Entreprises
 
@@ -99,7 +99,7 @@ Si votre organisation utilise Windows Server Active Directory localement, vous p
 Si vous conservez un Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes **ci-après** : Accéder aux ressources locales à partir d’un appareil joint à [Azure AD](access-resources.md)dans Microsoft 365 pour les entreprises.
   
   
-## <a name="contact-support"></a>Contacter le support technique
+## <a name="contact-support"></a>Contacter le support
 
  **Si vous devez contacter le support technique :**
   

@@ -15,17 +15,17 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Un brouillon de collection est une recherche eDiscovery de sources de données privatives et non privatives dans un cas Advanced eDiscovery qui renvoie une estimation de recherche qui correspond à la requête de recherche de la collection. Vous pouvez passer en revue les statistiques de recherche, prévisualiser un échantillonnage d’éléments et réviser et réexécuter la collection avant de valider les résultats dans un jeu à réviser.
-ms.openlocfilehash: 18f018a5e00f355c3f320a963135e76ecc51f086
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+description: Un brouillon de collection est une recherche eDiscovery de sources de données privées et non privées dans un cas Advanced eDiscovery qui renvoie une estimation de recherche qui correspond à la requête de recherche de la collection. Vous pouvez passer en revue les statistiques de recherche, prévisualiser un échantillonnage d’éléments et réviser et réexécuter la collection avant de valider les résultats dans un jeu à réviser.
+ms.openlocfilehash: 42497a8f5f8d5d8e5ecf58ff8f486bffa578e6f0ca9375ab1924d2f2100b5729
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838862"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820426"
 ---
 # <a name="create-a-draft-collection-in-advanced-ediscovery"></a>Créer un brouillon de collection dans Advanced eDiscovery
 
-Une fois que vous avez identifié des dépositaires et des sources de données non dépositaires pour le cas, vous êtes prêt à identifier et à localiser un ensemble de documents pertinents. Pour ce faire, utilisez l’outil Collections pour rechercher du contenu pertinent dans les sources de données. Pour ce faire, vous créez une collection qui recherche le contenu qui correspond à vos critères de recherche dans les sources de données spécifiées. Vous avez la possibilité de créer un brouillon *de collection*, qui est une estimation des éléments trouvés ou vous pouvez créer une collection qui ajoute automatiquement les éléments à un jeu à réviser. Lorsque vous créez un brouillon de collection, vous pouvez voir des informations sur les résultats estimés qui correspondent à la requête de recherche, telles que le nombre total et la taille des éléments trouvés, les différentes sources de données où ils ont été trouvés et les statistiques sur la requête de recherche. Vous pouvez également afficher un aperçu d’un exemple d’éléments qui ont été renvoyés par la collection. À l’aide de ces statistiques, vous pouvez modifier la requête de recherche et réexécuter la collection provisoire pour affiner vos résultats. Une fois que vous êtes satisfait des résultats de la collection, vous pouvez valider la collection dans un jeu à réviser. Lorsque vous valider un brouillon de collection, les éléments renvoyés par la collection sont ajoutés à un jeu à réviser pour révision, analyse et exportation.
+Une fois que vous avez identifié des dépositaires et des sources de données non dépositaires pour le cas, vous êtes prêt à identifier et à localiser un ensemble de documents pertinents. Pour ce faire, utilisez l’outil Collections pour rechercher du contenu pertinent dans les sources de données. Pour ce faire, vous créez une collection qui recherche dans les sources de données spécifiées du contenu qui correspond à vos critères de recherche. Vous avez la possibilité de créer un brouillon *de collection*, qui est une estimation des éléments trouvés ou vous pouvez créer une collection qui ajoute automatiquement les éléments à un jeu à réviser. Lorsque vous créez un brouillon de collection, vous pouvez voir des informations sur les résultats estimés qui correspondent à la requête de recherche, telles que le nombre total et la taille des éléments trouvés, les différentes sources de données où ils ont été trouvés et les statistiques sur la requête de recherche. Vous pouvez également afficher un aperçu d’un exemple d’éléments qui ont été renvoyés par la collection. À l’aide de ces statistiques, vous pouvez modifier la requête de recherche et réexécuter la collection provisoire pour affiner vos résultats. Une fois que vous êtes satisfait des résultats de la collection, vous pouvez valider la collection dans un jeu à réviser. Lorsque vous valider un brouillon de collection, les éléments renvoyés par la collection sont ajoutés à un jeu à réviser pour révision, analyse et exportation.
 
 ## <a name="before-you-create-a-draft-collection"></a>Avant de créer un brouillon de collection
 
@@ -39,7 +39,7 @@ Une fois que vous avez identifié des dépositaires et des sources de données n
 
 ## <a name="create-a-draft-collection"></a>Créer une collection au brouillon
 
-1. Dans le Microsoft 365 conformité, ouvrez Advanced eDiscovery cas, puis sélectionnez **l’onglet Collections.**
+1. Dans la Centre de conformité Microsoft 365, ouvrez Advanced eDiscovery cas, puis sélectionnez **l’onglet Collections.**
 
 2. Dans la page **Collections,** **sélectionnez Nouvelle collection**  >  **Standard.**
 
@@ -70,7 +70,7 @@ Une fois que vous avez identifié des dépositaires et des sources de données n
    > [!NOTE]
    > L’autre option de cette page vous permet de collecter des éléments et de les ajouter directement à un jeu à réviser. Au lieu de créer un brouillon de collection que vous pouvez consulter et afficher un aperçu des résultats de la collection, cette option ignore ce processus et ajoute automatiquement la collection à un jeu à réviser. Si vous sélectionnez la deuxième option pour ajouter la collection à un jeu à réviser, vous avez des paramètres supplémentaires à configurer, tels que la collecte de threads de conversation complets dans Microsoft Teams et Yammer et la collecte de pièces jointes cloud (également appelées pièces *jointes modernes).* Pour plus d’informations sur ces paramètres, voir [Valider un brouillon de collection dans un jeu à réviser.](commit-draft-collection.md)
 
-9. Dans la page **Examiner votre collection,** vous pouvez passer en revue et mettre à jour les paramètres de collection que vous avez configurés dans les pages précédentes.
+9. Dans la page **Examiner votre collection,** vous pouvez passer en revue et mettre à jour les paramètres de collection que vous avez configurés sur les pages précédentes.
 
    - **Onglet Résumé** : Examinez et modifiez le nom et la description de la collection, les critères de recherche de la collection, les emplacements de données supplémentaires et le type de collection.
 
@@ -78,7 +78,7 @@ Une fois que vous avez identifié des dépositaires et des sources de données n
 
 10. Cliquez **sur Envoyer** pour créer le brouillon de la collection. Une page s’affiche confirmant que la collection a été créée.
 
-## <a name="what-happens-after-you-create-a-draft-collection"></a>Que se passe-t-il après la création d’un brouillon de collection ?
+## <a name="what-happens-after-you-create-a-draft-collection"></a>Que se passe-t-il après la création d’une collection provisoire ?
 
 Une fois que vous avez créé un brouillon de collection, il est répertorié dans la page **Collections** dans le cas et l’état indique qu’il est en cours. Un travail nommé **Préparation de l’aperçu** de recherche et des estimations est également créé et affiché sur la page **Travaux** dans le cas.
 
@@ -108,13 +108,13 @@ Voici la liste des choses que vous pouvez faire à partir de la page volante de 
 
 - Cliquez **sur Examiner l’exemple** (situé au bas de la page volante) pour afficher un aperçu des éléments renvoyés par la collection.
 
-- Valider le brouillon de collection dans un jeu à réviser (en cliquant sur **Actions**  >  **Modifier la collection**). Cela signifie que vous réexécutez la collection (à l’aide des paramètres actuels) et ajoutez les éléments renvoyés par la collection à un jeu à réviser. Comme indiqué précédemment, vous pouvez également configurer des paramètres supplémentaires (tels que les threads de conversation et les pièces jointes basées sur le cloud) lorsque vous ajoutez la collection à un jeu à réviser. Pour plus d’informations et des instructions pas à pas, voir Valider un brouillon [de collection dans un jeu à réviser.](commit-draft-collection.md)
+- Valider l’ébauche de collection dans un jeu à réviser (en cliquant sur **Actions**  >  **Modifier la collection**). Cela signifie que vous réexécutez la collection (à l’aide des paramètres actuels) et ajoutez les éléments renvoyés par la collection à un jeu à réviser. Comme indiqué précédemment, vous pouvez également configurer des paramètres supplémentaires (tels que les threads de conversation et les pièces jointes basées sur le cloud) lorsque vous ajoutez la collection à un jeu à réviser. Pour plus d’informations et des instructions pas à pas, voir Valider un brouillon [de collection dans un jeu à réviser.](commit-draft-collection.md)
 
-## <a name="manage-a-draft-collection"></a>Gérer un brouillon de collection
+## <a name="manage-a-draft-collection"></a>Gérer un brouillon d’une collection
 
 Vous pouvez utiliser les options du menu **Actions** de la page volante d’un brouillon de collection pour effectuer différentes tâches de gestion.
 
-![Options du menu Actions pour la collection de brouillons](../media/DraftCollectionActionsMenu.png)
+![Options du menu Actions pour la collection brouillon](../media/DraftCollectionActionsMenu.png)
 
 Voici des descriptions des options de gestion.
 
@@ -124,13 +124,13 @@ Voici des descriptions des options de gestion.
 
 - **Actualiser les estimations**: réexécutez la requête (par rapport aux sources de données) spécifiées dans le brouillon de la collection pour mettre à jour les estimations de recherche et les statistiques.
 
-- **Exporter en tant que** rapport : exporte des informations sur le brouillon de collection dans un fichier CSV que vous pouvez télécharger sur votre ordinateur local. Le rapport d’exportation contient les informations suivantes :
+- **Exporter en tant que rapport**: exporte des informations sur le brouillon de collection dans un fichier CSV que vous pouvez télécharger sur votre ordinateur local. Le rapport d’exportation contient les informations suivantes :
 
-  - Identité de chaque emplacement de contenu qui contient les éléments qui correspondent à la requête de recherche dans la collection brouillon. Ces emplacements sont généralement des boîtes aux lettres ou des sites.
+  - Identité de chaque emplacement de contenu qui contient les éléments qui correspondent à la requête de recherche dans la collection provisoire. Ces emplacements sont généralement des boîtes aux lettres ou des sites.
   
   - Nombre total d’éléments dans chaque emplacement de contenu.
   
-  - Taille totale (en octets) des éléments dans chaque emplacement de contenu.
+  - Taille totale (en octets) des éléments de chaque emplacement de contenu.
 
   - Service (par exemple, Exchange ou SharePoint) dans lequel se trouve l’emplacement du contenu.
 

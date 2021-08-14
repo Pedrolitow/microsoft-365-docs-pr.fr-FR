@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: f9ac4632259d26045c70551ea7ea4a8a4a7e8e85
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 2b0f25f0dafb48a6b9c707c64a4498b57ea7c57c1eda3a0fb45952db03bd0f4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810413"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Intégrer des tickets ServiceNow dans le centre de sécurité Microsoft 365 et le centre de conformité
 

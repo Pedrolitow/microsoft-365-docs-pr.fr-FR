@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comment Contoso utilise les fonctionnalités de sécurité de Microsoft 365 entreprise.
-ms.openlocfilehash: 59eed0b7e08aae8397bb037e6d1b515bf6aa0ba8
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 8e207ac55b7d7280adfeb356cef20dec1ada0da89298945f1318bbf656a2310f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855202"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé des Microsoft 365 pour la sécurité de l’entreprise pour Contoso Corporation
 
 Pour obtenir l’approbation du déploiement de Microsoft 365 entreprise, le service de sécurité informatique de Contoso a effectué un examen approfondi de la sécurité. Ils ont identifié les exigences de sécurité suivantes pour le cloud :
 
-- Utilisez les méthodes d’authentification les plus puissantes pour l’accès des employés aux ressources cloud.
+- Utilisez les méthodes d’authentification les plus fortes pour l’accès des employés aux ressources cloud.
 - Assurez-vous que les PC et les appareils mobiles se connectent aux applications et y accèdent de manière sécurisée.
 - Protéger les PC et les e-mails contre les programmes malveillants.
 - Les autorisations sur les biens numériques basés sur le cloud définissent qui peut accéder à quoi et ce qu’ils peuvent faire, et sont conçues pour l’accès selon le moindre privilège
@@ -77,11 +77,11 @@ Pour respecter les meilleures pratiques et les Microsoft 365 de sécurité pour 
 
 - Windows Hello Entreprise
 
-  Contoso a déployé [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) Entreprise pour finir par éliminer le besoin de mots de passe par le biais d’une authentification forte à deux facteurs sur les PC et les appareils mobiles exécutant Windows 10 Entreprise.
+  Contoso a déployé [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) entreprise pour finir par éliminer le besoin de mots de passe par le biais d’une authentification forte à deux facteurs sur les PC et les appareils mobiles exécutant Windows 10 Entreprise.
 
 - Windows Defender Credential Guard
 
-  Pour bloquer les attaques ciblées et les programmes malveillants [](/windows/security/identity-protection/credential-guard/credential-guard) en cours d’exécution dans le système d’exploitation avec des privilèges d’administration, Contoso a activé Windows Defender Credential Guard via la stratégie de groupe AD DS.
+  Pour bloquer les attaques ciblées et les programmes malveillants en cours d’exécution dans le système d’exploitation avec des privilèges d’administration, Contoso a activé Windows Defender [Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) via la stratégie de groupe AD DS.
 
 ## <a name="threat-protection"></a>Protection contre les menaces
 
@@ -107,7 +107,7 @@ Pour respecter les meilleures pratiques et les Microsoft 365 de sécurité pour 
 
 - Protection des biens numériques sensibles et hautement réglementés avec des étiquettes Azure Information Protection
 
-  Contoso a déterminé trois niveaux [](../compliance/sensitivity-labels.md) de protection des données et Microsoft 365 étiquettes de sensibilité que les utilisateurs appliquent aux biens numériques. Pour ses secrets commerciaux et autres propriétés intellectuelles, Contoso utilise des sous-bels de sensibilité pour les données hautement réglementées. Ce processus chiffre le contenu et limite l’accès à des comptes et groupes d’utilisateurs spécifiques.
+  Contoso a déterminé trois niveaux [](../compliance/sensitivity-labels.md) de protection des données et Microsoft 365 étiquettes de sensibilité que les utilisateurs appliquent aux biens numériques. Pour ses secrets commerciaux et ses autres propriétés intellectuelles, Contoso utilise des sous-bels de sensibilité pour les données hautement réglementées. Ce processus chiffre le contenu et limite l’accès à des comptes et groupes d’utilisateurs spécifiques.
 
 - Empêcher les fuites de données intranet avec la protection contre la perte de données
 

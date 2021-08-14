@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: d28ad22721e22dfd0dc5962bd46bab2b45469781
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: afe1b37d80a074c0011a3d1ea58c3b15fab96ef6d4f1701f11bd1ab73dc06979
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810656"
 ---
 # <a name="configure-your-event-hub"></a>Configurer votre Hub d’événements
 
@@ -150,7 +150,7 @@ Pour ce Hub d’événements (et non un espace de noms), vous devez configurer u
 
     Si vous choisissez de laisser Microsoft 365 Defender créer des hubs d’événements par types d’événements (Tables) pour vous, laissez ce champ vide.
 
-    **Types** d’événements : sélectionnez les tables de recherche avancée que vous souhaitez faire suivre au Hub d’événements, puis à votre application personnalisée. Les tables d’alerte sont Microsoft 365 Defender, les tables Périphériques sont de Microsoft Defender pour point de terminaison (PEPT) et les tables de messagerie sont de Microsoft Defender pour Office 365. Les événements de messagerie enregistrent toutes les transactions de messagerie. Les événements URL (SafeLinks), Attachment (Safe Attachments) et POST Delivery Events (ZAP) sont également enregistrés et peuvent être joints aux événements de messagerie sur le champ NetworkMessageId.
+    **Types** d’événements : sélectionnez les tables de recherche avancée que vous souhaitez faire suivre au Hub d’événements, puis à votre application personnalisée. Les tables d’alerte sont Microsoft 365 Defender, les tables Périphériques sont de Microsoft Defender pour point de terminaison (PEPT) et les tables de messagerie sont de Microsoft Defender pour Office 365. Les événements de messagerie enregistrent toutes les transactions de messagerie. Les événements URL (SafeLinks), Attachment (Coffre Attachments) et POST Delivery Events (ZAP) sont également enregistrés et peuvent être joints aux événements de messagerie sur le champ NetworkMessageId.
 
     ![Image des paramètres de l’API de diffusion en continu](../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png)
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fb023ab3d4ec4115411b1c8d12ef1c2ef1b1eece
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c335885821f0479cd797d5b9bb4795ab211e8b37d3a7b9f2aaa098161ddd91ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829494"
 ---
 # <a name="delete-indicator-api"></a>API Supprimer l’indicateur
 
@@ -48,7 +48,7 @@ Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 app
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La](apis-intro.md) mise en place
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez La mise [en place](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -77,7 +77,7 @@ Vide
 
 Si l’indicateur existe et a été supprimé avec succès - 204 OK sans contenu.
 
-Si l’indicateur avec l’ID spécifié est in trouvé - 404 - In trouvé.
+If Indicator with the specified id was not found - 404 Not Found.
 
 ## <a name="example"></a>Exemple
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: c5f5837f4e4069a67bc080178fefd10bd2a08629
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 755dbd892d5e772a2bfda3b8e6e959027b74815a2e69ab27659f7f5e4a29bf26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805239"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
 
@@ -49,11 +49,11 @@ Notez l’ajout d’une nouvelle stratégie Exchange Online pour bloquer les cli
 
 Si vous avez inclus Exchange Online et Outlook dans l’étendue des stratégies lorsque vous les avez définies, vous devez uniquement créer la nouvelle stratégie pour bloquer les clients ActiveSync. Examinez les stratégies répertoriées dans le tableau suivant et ajoutez les ajouts recommandés ou confirmez qu’elles sont déjà incluses. Chaque stratégie est liée aux instructions de configuration associées dans les [stratégies communes d’accès aux appareils et aux identités.](identity-access-policies.md)
 
-|Niveau de protection|Stratégies|Plus d’informations|
+|Niveau de protection|Politiques|Plus d’informations|
 |---|---|---|
 |**Baseline**|[Exiger l’mf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation des applications cloud|
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Inclure Exchange Online dans l’affectation des applications cloud|
-||[Appliquer des stratégies de protection des données APP](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous Outlook est inclus dans la liste des applications. Assurez-vous de mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
+||[Appliquer des stratégies de protection des données APP](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous Outlook figure dans la liste des applications. Assurez-vous de mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
 ||[Exiger des applications approuvées et la protection des applications](identity-access-policies.md#require-approved-apps-and-app-protection)|Inclure Exchange Online dans la liste des applications cloud|
 ||[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure des Exchange Online dans la liste des applications cloud|
 ||[Bloquer les clients ActiveSync](#block-activesync-clients)|Ajouter cette nouvelle stratégie|
@@ -70,15 +70,15 @@ Cette stratégie empêche les clients ActiveSync de contourner les autres strat�
 
 Vous pouvez également utiliser [](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)des stratégies d’authentification pour désactiver l’authentification de base, ce qui force toutes les demandes d’accès client à utiliser l’authentification moderne.
 
-## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Limiter l’accès Exchange Online des Outlook sur le web
+## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Limiter l’accès aux Exchange Online de Outlook sur le web
 
-Vous pouvez restreindre la possibilité pour les utilisateurs de télécharger des pièces jointes à partir de Outlook sur le web sur des appareils umnanaged. Les utilisateurs de ces appareils peuvent afficher et modifier ces fichiers à l’aide de Office Online sans fuite ni stockage des fichiers sur l’appareil. Vous pouvez également empêcher les utilisateurs de voir les pièces jointes sur un appareil non utilisé.
+Vous pouvez restreindre la possibilité pour les utilisateurs de télécharger des pièces jointes à partir Outlook sur le web sur des appareils umnanaged. Les utilisateurs de ces appareils peuvent afficher et modifier ces fichiers à l’aide de Office Online sans fuite ni stockage des fichiers sur l’appareil. Vous pouvez également empêcher les utilisateurs de voir les pièces jointes sur un appareil non utilisé.
 
 Voici les étapes à effectuer :
 
 1. [Connecter à une session PowerShell Exchange Online distante.](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 2. Si vous n’avez pas encore OWA stratégie de boîte aux lettres, créez-en une avec la cmdlet [New-OwaMailboxPolicy.](/powershell/module/exchange/new-owamailboxpolicy)
-3. Si vous souhaitez autoriser l’affichage des pièces jointes sans téléchargement, utilisez la commande ci-après :
+3. Si vous souhaitez autoriser l’affichage des pièces jointes, mais aucun téléchargement, utilisez la commande ci-après :
 
    ```powershell
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnly
@@ -116,5 +116,5 @@ Pour plus d’informations, voir [Configurer de chiffrement de messages Office 3
 
 Configurer des stratégies d’accès conditionnel pour :
 
-- [Microsoft Teams](teams-access-policies.md)
+- [Microsoft Teams](teams-access-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)

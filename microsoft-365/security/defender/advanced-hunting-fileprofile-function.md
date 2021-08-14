@@ -1,5 +1,5 @@
 ---
-title: Fonction FileProfile() dans le recherche avancée de Microsoft 365 Defender
+title: Fonction FileProfile() dans le recherche avancée d’Microsoft 365 Defender
 description: Découvrez comment utiliser FileProfile() pour enrichir des informations sur les fichiers dans vos résultats de requête de recherche avancée
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
@@ -20,30 +20,30 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 67295529cdb7b8a3e93e663f2a8a28d27a8f6737
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 8bc631af17c270f3502e1fa8d36dce07575acdc4d4dcb52d87224931dc6111f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810473"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 La fonction est une fonction d’enrichissement dans le recherche avancée qui ajoute les données suivantes `FileProfile()` aux fichiers trouvés par la requête. [](advanced-hunting-overview.md)
 
-| Column | Type de données | Description |
+| Colonne | Type de données | Description |
 |------------|---------------|-------------|
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
 | `SHA256` | string | SHA-256 du fichier à qui l’action enregistrée a été appliquée |
 | `MD5` | string | Hachage MD5 du fichier à l’application de l’action enregistrée |
-| `FileSize` | entier | Taille du fichier en octets |
-| `GlobalPrevalence` | entier | Nombre d’instances de l’entité observées globalement par Microsoft |
+| `FileSize` | int | Taille du fichier en octets |
+| `GlobalPrevalence` | int | Nombre d’instances de l’entité observées globalement par Microsoft |
 | `GlobalFirstSeen` | DateHeure | Date et heure à laquelle l’entité a été observée pour la première fois par Microsoft globalement |
 | `GlobalLastSeen` | DateHeure | Date et heure de la dernière observation de l’entité par Microsoft au niveau global |
 | `Signer` | string | Informations sur le signataire du fichier |
@@ -70,7 +70,7 @@ invoke FileProfile(x,y)
 
 
 >[!TIP]
-> Les fonctions d’enrichissement afficheront des informations supplémentaires uniquement lorsqu’elles sont disponibles. La disponibilité des informations varie et dépend d’un grand nombre de facteurs. Veillez à prendre cela en compte lors de l’utilisation de FileProfile() dans vos requêtes ou lors de la création de détections personnalisées. Pour de meilleurs résultats, nous vous recommandons d’utiliser la fonction FileProfile() avec SHA1.
+> Les fonctions d’enrichissement afficheront des informations supplémentaires uniquement lorsqu’elles sont disponibles. La disponibilité des informations varie et dépend d’un grand nombre de facteurs. Veillez à prendre cela en compte lors de l’utilisation de FileProfile() dans vos requêtes ou lors de la création de détections personnalisées. Pour obtenir de meilleurs résultats, nous vous recommandons d’utiliser la fonction FileProfile() avec SHA1.
 
 ## <a name="examples"></a>Exemples
 
@@ -84,7 +84,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et lister les fichiers à faible prévalence
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et lister les fichiers de faible prévalence
 
 ```kusto
 DeviceFileEvents
@@ -94,7 +94,7 @@ DeviceFileEvents
 | where GlobalPrevalence < 15
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

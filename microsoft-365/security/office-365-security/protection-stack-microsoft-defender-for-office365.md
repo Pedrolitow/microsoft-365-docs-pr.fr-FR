@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Suivez le chemin d’accès d’un message entrant via la pile de filtrage des menaces dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1113d04cabdabe2925242cb18dde78daf9ef6e2c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: ea7fc497f42bff24bbf9b5cb69c03144f64503eb381e530135263497486bcb24
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194804"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805322"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protection contre les menaces étape par étape dans Microsoft Defender pour Office 365
 
@@ -55,7 +55,7 @@ Les fonctionnalités d’intelligence de l’expéditeur sont essentielles pour 
 
 1. **Les déclencheurs et** alertes de détection de compromission de compte sont déclenchés lorsqu’un compte présente un comportement anormal, cohérent avec la compromission. Dans certains cas, le compte d’utilisateur est bloqué et empêché d’envoyer d’autres messages électroniques jusqu’à ce que le problème soit résolu par l’équipe des opérations de sécurité d’une organisation.
 
-2. **L’authentification** de messagerie implique des méthodes configurées par le client et des méthodes configurées dans le cloud, visant à s’assurer que les expéditeurs sont autorisés et authentifiés. Ces méthodes résistant à l’usurpation d’usurpation.
+2. **L’authentification** de messagerie implique des méthodes configurées par le client et des méthodes configurées dans le cloud, visant à s’assurer que les expéditeurs sont autorisés et authentifiés. Ces méthodes résistant à l’usurpation.
     - **SPF peut** rejeter des messages basés sur des enregistrements TXT DNS répxant les adresses IP et les serveurs autorisés à envoyer des messages au nom de l’organisation.
     - **DKIM** fournit une signature chiffrée qui authentifier l’expéditeur.
     - **DMARC permet** aux administrateurs de marquer SPF et DKIM comme requis dans leur domaine et applique l’alignement entre les résultats de ces deux technologies.
@@ -69,7 +69,7 @@ Les fonctionnalités d’intelligence de l’expéditeur sont essentielles pour 
 
 5. **Le filtrage en bloc** permet aux administrateurs de configurer un niveau de confiance en bloc (BCL) indiquant si le message a été envoyé à partir d’un expéditeur en bloc. Les administrateurs peuvent utiliser le curseur en bloc dans la stratégie anti-courrier indésirable pour déterminer le niveau de courrier en nombre à traiter comme courrier indésirable.
 
-6. **L’intelligence des boîtes** aux lettres apprend les comportements de messagerie standard de l’utilisateur. Il exploite le graphique de communication d’un utilisateur pour détecter quand un expéditeur semble être une personne avec qui l’utilisateur communique généralement, mais qui est en réalité malveillante. Cette méthode détecte l’emprunt d’identité.
+6. **L’intelligence des boîtes** aux lettres apprend les comportements de messagerie standard de l’utilisateur. Il tire parti du graphique de communication d’un utilisateur pour détecter quand un expéditeur semble être une personne avec qui l’utilisateur communique généralement, mais qui est en réalité malveillante. Cette méthode détecte l’emprunt d’identité.
 
 7. **L’emprunt d’identité** d’intelligence de boîte aux lettres active ou désactive les résultats d’emprunt d’identité améliorés en fonction de la carte d’expéditeur individuelle de chaque utilisateur. Lorsqu’elle est activée, cette fonctionnalité permet d’identifier l’emprunt d’identité.
 
@@ -89,7 +89,7 @@ Dans cette phase, la pile de filtrage commence à gérer le contenu spécifique 
 
 3. Les moteurs antivirus sont également utilisés pour taper toutes les pièces  jointes de sorte que le blocage des types puisse bloquer toutes les pièces jointes de types spécifiés par l’administrateur.
 
-4. Chaque fois que Microsoft Defender pour Office 365 détecte une pièce jointe malveillante, le hachage du fichier et un hachage de son contenu actif sont ajoutés à la réputation Exchange Online Protection (EOP). **Le blocage de la** réputation des pièces jointes bloque ce fichier sur tous les Office 365 et sur les points de terminaison, via les appels cloud MSAV.
+4. Chaque fois que Microsoft Defender pour Office 365 détecte une pièce jointe malveillante, le hachage du fichier et un hachage de son contenu actif sont ajoutés à la réputation Exchange Online Protection (EOP). **Le blocage de la** réputation des pièces jointes bloque ce fichier sur tous les Office 365 et sur les points de terminaison, par le biais d’appels cloud MSAV.
 
 5. **Le clustering heuristique** peut déterminer qu’un fichier est suspect en fonction de l’heuristique de remise. Lorsqu’une pièce jointe suspecte est trouvée, l’intégralité de la campagne est suspendue et le fichier est en bac à sable. Si le fichier est jugé malveillant, toute la campagne est bloquée.
 

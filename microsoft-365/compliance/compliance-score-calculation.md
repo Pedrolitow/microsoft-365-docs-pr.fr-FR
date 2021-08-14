@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Comprendre comment le Gestionnaire de conformité Microsoft calcule un score personnalisé en fonction des actions prises pour résoudre les risques et améliorer votre posture de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e1e3f4b90b0a5e83a1e068cd30f76b3a8c7bb22
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: cbbef643005904e8ca913df69382e9e6012e5b371c9cb5ff132990e1ba74c535
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149165"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820473"
 ---
 # <a name="compliance-score-calculation"></a>Calcul du score de conformité
 
@@ -41,13 +41,13 @@ Une valeur de score est affectée à trois niveaux :
     - **L’état d’implémentation** **est égal à Implémenté** ou **Autre implémentation** et
     - **Le résultat du** test est égal **à Réussi**.
 
-3. **Score d’évaluation**: ce score est la somme de vos scores de contrôle. Elle est calculée à l’aide de scores d’action. Chaque action Microsoft et chaque action d’amélioration gérée par votre organisation sont comptabilisées une seule fois, quelle que soit la fréquence de référencement dans un contrôle.
+3. **Score d’évaluation**: ce score est la somme des scores de votre contrôle. Elle est calculée à l’aide de scores d’action. Chaque action Microsoft et chaque action d’amélioration gérée par votre organisation sont comptabilisées une seule fois, quelle que soit la fréquence de référencement dans un contrôle.
 
 Le score de conformité global est calculé à l’aide de scores d’action, où chaque action Microsoft est comptée une fois, chaque action technique que vous gérez est comptée une seule fois et chaque action non technique que vous gérez est comptée une fois par groupe. Cette logique est conçue pour fournir la comptabilité la plus précise de la façon dont les actions sont implémentées et testées dans votre organisation. Vous remarquerez peut-être que votre score de conformité global peut différer de la moyenne de vos scores d’évaluation. En savoir plus [ci-dessous sur le score des actions.](#action-types-and-points)
 
 ## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Score initial basé sur la ligne de base Microsoft 365 protection des données
   
-Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base Microsoft 365 protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés en matière de protection des données et de gouvernance générale des données. Cette ligne de base tire principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
+Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base Microsoft 365 protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés en matière de protection des données et de gouvernance générale des données. Cette ligne de base dessine principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
 
 Votre score initial est calculé en fonction de l’évaluation de base de la protection des données par défaut fournie à toutes les organisations. Lors de votre première visite, le Gestionnaire de conformité collecte déjà des signaux à partir de Microsoft 365 solutions. Vous verrez d’un coup d’œil les résultats de votre organisation par rapport aux principales normes et réglementations en matière de protection des données, ainsi que les suggestions d’actions d’amélioration à prendre.
 
@@ -102,21 +102,21 @@ Une valeur de score est attribuée aux actions selon qu’elles sont obligatoire
   
 ### <a name="preventative-detective-and-corrective-actions"></a>Actions préventives, de prévention et correctives
   
- - **Les actions préventives** s’adressent à des risques spécifiques. Par exemple, la protection des informations au repos à l’aide du chiffrement est une action préventive contre les attaques et les violations. La séparation des tâches est une action préventive pour gérer les conflits d’intérêts et se prémunir contre la fraude.
+ - Les **actions préventives** gèrent des risques spécifiques. Par exemple, la protection des informations au repos à l’aide du chiffrement est une action préventive contre les attaques et les violations. La répartition des tâches est également une action préventive qui permet de gérer les conflits d’intérêts, puis de lutter contre la fraude.
   
  - **Les actions de détection** surveillent activement les systèmes pour identifier les conditions ou comportements insérez des conditions ou des comportements qui représentent un risque, ou qui peuvent être utilisés pour détecter les intrusions ou les violations. Les exemples incluent l’audit de l’accès au système et les actions administratives privilégiées. Les audits de conformité réglementaire sont un type d’action de recherche utilisé pour rechercher les problèmes de processus.
   
-- **Les actions correctives** tentent de limiter au minimum les effets négatifs d’un incident de sécurité, de prendre des mesures correctives pour réduire l’effet immédiat et d’annuler les dommages si possible. La réponse aux incidents de confidentialité est une action corrective pour limiter les dommages et restaurer les systèmes à un état opérationnel après une violation.
+- **Les actions correctives** tentent de limiter au minimum les effets négatifs d’un incident de sécurité, de prendre des mesures correctives pour réduire l’effet immédiat et d’annuler les dommages si possible. Une réponse à un incident de confidentialité est une action corrective visant à limiter les dommages, puis à remettre les systèmes en état de fonctionnement après une violation.
   
 Chaque action a une valeur attribuée dans le Gestionnaire de conformité en fonction du risque qu’elle représente :
 
-|**Type (Type)**|**Score attribué**|
+|**Type**|**Score attribué**|
 |:-----|:-----|
 | Obligatoire préventive | 27 |
 | Discrétionnaire préventive | 9  |
-| Inspecteur obligatoire | 3  |
-| Discrétionnaire de l’inspecteur | 1  |
-| Correctif obligatoire | 3  |
-| Correction discrétionnaire | 1  |
+| Inspecteur obligatoire | 3 |
+| Discrétionnaire de l’inspecteur | 1 |
+| Correctif obligatoire | 3 |
+| Correction discrétionnaire | 1 |
   
 ![Valeurs de point d’action du Gestionnaire de conformité](../media/compliance-score-action-scoring.png "Valeurs de point d’action du Gestionnaire de conformité")
