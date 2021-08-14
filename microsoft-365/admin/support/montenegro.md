@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8dbb6ebb123770c0293ba25145ef2234fc6031a5
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: be31f14b1b6fc66d67dd327f0bf0dfd7213324f03d7957e66ac594a2a6691ad4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295722"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832192"
 ---
 # <a name="contact-support-for-montenegro"></a>Contacter le support technique pour LeO
 
@@ -37,4 +37,4 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7

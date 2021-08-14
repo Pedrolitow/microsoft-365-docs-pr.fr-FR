@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Découvrez les propositions pour vous aider à acheter des produits et services Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 5dece5ccc0cc26b157ae0cc33ec9bb1fe44c44b3
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 10d4d531acc0e4a323cde6d1034c626419a58a4b06b40be76c0d292c7679ac28
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852030"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprendre le flux de travail de proposition
 
@@ -100,7 +100,7 @@ Une fois que vous vous connectez, la première chose que vous faites est de pass
 
 La section **Votre organisation** affiche le compte de facturation qui lui est associé. Les informations de compte de facturation sont soit tirées d’un compte de facturation existant, soit créées pour vous par le représentant Microsoft. Si votre organisation est un affilié d’une autre organisation, vous voyez également une **section** Sur l’organisation en chef avec le nom et l’adresse de cette organisation.
 
-Si c’est la première fois que votre organisation établit une relation commerciale avec Microsoft et que  vous  n’avez pas encore signé de compte mca, si les informations sous Votre organisation ou Responsable sont incorrectes, contactez le représentant pour apporter des modifications à votre place. Une fois que vous avez accepté un compte mca, vous pouvez consulter et modifier l’adresse et les [coordonnées](https://go.microsoft.com/fwlink/p/?linkid=2084771) de votre organisation dans la page Comptes de facturation du Centre d’administration Microsoft 365. Si le nom de votre organisation change, ouvrez une demande de service pour la mettre à jour. [Découvrez comment ouvrir une demande de service](../business-video/get-help-support.md)
+Si c’est la première fois que votre organisation établit une relation commerciale avec Microsoft et que  vous  n’avez pas encore signé de mca, si les informations sous Votre organisation ou Responsable de l’organisation sont incorrectes, contactez le représentant pour apporter des modifications à votre place. Une fois que vous avez accepté un compte mca, vous pouvez consulter et modifier l’adresse et les [coordonnées](https://go.microsoft.com/fwlink/p/?linkid=2084771) de votre organisation dans la page Comptes de facturation du Centre d’administration Microsoft 365. Si le nom de votre organisation change, ouvrez une demande de service pour la mettre à jour. [Découvrez comment ouvrir une demande de service](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>Vos informations
 
@@ -122,14 +122,14 @@ La proposition contient les informations suivantes :
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nom de l’organisation | Nom de l’organisation pour laquelle la proposition a été préparée. |
 | Valide jusqu’à la date | Date d’expiration de l’offre de proposition. Si vous manquez cette date d’expiration, contactez votre représentant Microsoft pour lui faire savoir que la proposition vous intéresse toujours. |
-| Monétaire | Devise utilisée pour calculer le coût des éléments dans la proposition. |
+| Devise | Devise utilisée pour calculer le coût des éléments dans la proposition. |
 | Préparé pour | Nom du compte de facturation, adresse, adresse de messagerie du contact et numéro de téléphone de la personne qui a demandé la proposition. |
 | Préparé par | Adresse e-mail du représentant Microsoft qui a préparé la proposition. |
 | Résumé | Indique le sous-totaux associé à la proposition. Si nécessaire, il affiche également le taux de change utilisé pour calculer les coûts. |
 | Éléments de ligne de proposition | Cette section contient la quantité, le prix unitaire et le sous-total de tous les éléments inclus dans la proposition. |
 | Étape suivante | Cette section indique l’action nécessaire que vous devez prendre. |
 
-Pour signer un mca, sélectionnez le bouton sous **Étape suivante.** Si vous devez signer des termes supplémentaires, un lien vous permet d’accès au site DocuSign, où vous suivez les étapes de signature du document.
+Pour signer un MCA, sélectionnez le bouton sous **Étape suivante.** Si vous devez signer des termes supplémentaires, un lien vous permet d’accès au site DocuSign, où vous suivez les étapes de signature du document.
 
 Une fois que vous avez signé les contrats nécessaires ou les termes supplémentaires, **sélectionnez Go to checkout**.
 
@@ -141,11 +141,11 @@ La page d’checkout contient les sections suivantes :
 
 Cette section indique le compte de facturation utilisé pour la proposition. Si vous avez besoin de modifier des informations, sélectionnez le **lien** Modifier. Vous pouvez également utiliser le lien **Modifier** pour ajouter l’ID fiscal de votre organisation. L’ID de taxe doit être lié au pays répertorié dans la section **Vendu à.** Si vous avez une exonération fiscale, vous devez ouvrir un ticket de support pour demander l’exonération fiscale.
 
-Pour en savoir plus sur les ID de taxe et sur la façon de demander une exonération fiscale, consultez informations [fiscales.](billing-and-payments/tax-information.md)
+Pour en savoir plus sur les ID de taxe et sur la façon de demander une exonération fiscale, consultez [informations fiscales.](billing-and-payments/tax-information.md)
 
 ### <a name="billed-to"></a>Facturé à
 
-Cette section présente le profil de facturation utilisé pour déterminer les éléments inclus sur votre facture et la façon dont vous payez vos factures. À chaque cycle de facturation, vous recevez une facture distincte pour chaque profil de facturation. Vous payez pour les factures à l’aide d’un chèque ou d’un virement bancaire, ou d’un paiement anticipé Azure. Si vous n’avez pas encore de profil de facturation, votre représentant Microsoft en crée un pour vous. Lors de l’checkout, vous pouvez sélectionner un profil de facturation différent, si vous en avez un, modifier le nom du profil de facturation ou ajouter une P.O. nombre. Vous pouvez également créer un profil de facturation.
+Cette section indique le profil de facturation utilisé pour déterminer quels éléments sont inclus sur votre facture et comment vous payez vos factures. À chaque cycle de facturation, vous recevez une facture distincte pour chaque profil de facturation. Vous payez pour les factures à l’aide d’un chèque ou d’un transfert par virement, ou d’un paiement anticipé Azure. Si vous n’avez pas encore de profil de facturation, votre représentant Microsoft en crée un pour vous. Lors de l’checkout, vous pouvez sélectionner un profil de facturation différent, si vous en avez un, modifier le nom du profil de facturation ou ajouter une P.O. nombre. Vous pouvez également créer un profil de facturation.
 
 Pour plus d’informations sur les profils de facturation, voir [Gérer les profils de facturation.](billing-and-payments/manage-billing-profiles.md)
 

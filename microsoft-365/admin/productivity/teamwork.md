@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Détails du travail d’équipe : les utilisateurs ont un score de productivité.'
-ms.openlocfilehash: 0924114a73a9bcf55a74744ee371de8c2d326d1c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: db948c7a510c1bfe959b9f8aa07544f0ed9faf03909da9ec182ec18abdea5e82
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822945"
 ---
 # <a name="teamwork--people-experiences"></a>Travail d’équipe : expériences de personnes
 
 Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie travail d’équipe fait partie des mesures qui relèvent des expériences utilisateur. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour commencer à comprendre les informations sur le travail d’équipe, les membres de votre organisation doivent être titulaires d’une licence pour :
 
@@ -52,7 +52,7 @@ Nous fournissons un aperçu principal de l’expérience qui contient les mesure
 
 ### <a name="primary-insight"></a>Informations principales
 
-Le principal aperçu examine toutes les personnes qui communiquent à l’aide de messages électroniques et de messages sur Microsoft Teams, et qui interagissent avec le contenu sur le cloud dans des espaces de travail partagés. Dans Microsoft 365, les groupes Microsoft 365 sont la base pour que les personnes se rassemblent dans un espace de travail partagé avec la possibilité d’envoyer des messages électroniques à la boîte aux lettres de groupe, de partager des fichiers sur le site d’équipe SharePoint et d’envoyer des messages de canal via Microsoft Teams.
+Le principal aperçu examine toutes les personnes qui communiquent à l’aide de messages électroniques et de messages sur Microsoft Teams, et qui interagissent avec le contenu sur le cloud dans des espaces de travail partagés. Au sein de Microsoft 365, les groupes Microsoft 365 sont la base pour que les utilisateurs se rassemblent dans un espace de travail partagé avec la possibilité d’envoyer des messages électroniques à la boîte aux lettres de groupe, de partager des fichiers sur le site d’équipe SharePoint et d’envoyer des messages de canal via Microsoft Teams.
 
 :::image type="content" source="../../media/teamwork-score.png" alt-text="Graphique présentant des informations principales sur le score du travail d’équipe.":::
 
@@ -71,7 +71,7 @@ Le principal aperçu examine toutes les personnes qui communiquent à l’aide d
 1. **Corps :** Fournit plus d’informations sur la façon dont la communication et l’interaction avec le contenu, lorsqu’elles sont réalisées dans un espace de travail partagé, peuvent avoir des résultats positifs pour la productivité au sein de votre organisation.
 2. **Visualisation (état actuel) :**
       - Barre horizontale où la partie bleue représente le pourcentage exprimé dans l’en-tête
-      - Temps forts la fraction (numérateur/dénominateur) utilisée pour calculer le pourcentage affiché dans l’en-tête
+      - Met en évidence la fraction (numérateur/dénominateur) utilisée pour calculer le pourcentage affiché dans l’en-tête
         - Numérateur : nombre de personnes de votre organisation qui envoient des messages électroniques à une boîte aux lettres de groupe via Exchange, OU qui envoient des messages de canal via Teams, OU qui lisent et créent du contenu dans des sites d’équipe SharePoint.
         - Dénominateur : nombre de personnes de votre organisation qui envoient des messages électroniques via Exchange, OU qui envoient des messages (messages de conversation ou de canal) sur Microsoft Teams, OU lisent et créent du contenu sur OneDrive ou SharePoint et ont accès à au moins l’un des services suivants : Exchange, Microsoft Teams ou SharePoint.
    - La valeur de référence homologue de la mesure clé est également affichée sous la mesure d’un pourcentage.
@@ -85,7 +85,7 @@ Le graphique suivant fournit la tendance du numérateur et le dénominateur de l
 
 ### <a name="scoring-framework"></a>Infrastructure de notation
 
-Le score de travail d’équipe de votre organisation mesure au niveau de l’agrégation (organisationnelle) si les utilisateurs communiquent ou s’engagent de manière cohérente dans l’activité des fichiers dans les espaces de travail partagés au cours des 28 derniers jours.
+Le score de travail d’équipe de votre organisation mesure au niveau de l’agrégation (organisationnelle) si les utilisateurs communiquent de manière cohérente ou s’engagent dans l’activité des fichiers dans les espaces de travail partagés au cours des 28 derniers jours.
 
 Les scores ne sont pas fournis au niveau de l’utilisateur individuel.
 
@@ -102,7 +102,7 @@ Nous fournissons également des informations supplémentaires sur la façon dont
 3. **Visualisation :** La visualisation montre dans quelle mesure les personnes qui communiquent ou interagissent avec du contenu le font dans des espaces de travail partagés, comme suit :
       - **Envoi de messages** électroniques : la partie colorée et la fraction représentent le pourcentage de personnes envoyant des messages électroniques à des boîtes aux lettres de groupe. La fraction est composée des composants :
         - Numérateur : personnes envoyant des courriers électroniques à des boîtes aux lettres de groupe au cours des 28 derniers jours.
-        - Dénominateur : personnes envoyant des courriers électroniques au cours des 28 derniers jours. Il s’agit du même groupe de personnes qui sont marquées comme envoyant des messages électroniques dans le principal aperçu du score de productivité des communications.
+        - Dénominateur : personnes envoyant des courriers électroniques au cours des 28 derniers jours. Il s’agit du même groupe de personnes marquées comme envoyant des courriers électroniques dans le principal aperçu du score de productivité des communications.
       - **Envoi de messages**: la partie colorée et la fraction représentent le pourcentage de personnes envoyant des messages dans les canaux Microsoft Teams. La fraction est composée des composants :
         - Numérateur : personnes envoyant des messages de canal au cours des 28 derniers jours.
         - Dénominateur : personnes envoyant des messages de conversation ou de canal au cours des 28 derniers jours. Il s’agit du même groupe de personnes qui sont marquées comme envoyant des messages dans Microsoft Teams dans la principale vue d’ensemble de la catégorie de communication du Score de productivité.
@@ -152,10 +152,10 @@ Nous fournissons également des informations supplémentaires sur la façon dont
       - Numérateur : nombre d’espaces de travail partagés au cours des 28 derniers jours au cours des 28 dernier Microsoft Teams s jours
       - Dénominateur : nombre d’espaces de travail partagés dans votre organisation au cours des 28 derniers jours
 
-        Le nombre au centre du graphique de donut représente le nombre total d’espaces de travail partagés qui sont associés à Microsoft Teams’équipe.
+        Le nombre au centre du graphique de donut représente le nombre total d’espaces de travail partagés associés à Microsoft Teams’équipe.
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\

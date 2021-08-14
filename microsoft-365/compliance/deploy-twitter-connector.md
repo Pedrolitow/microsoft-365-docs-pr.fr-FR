@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des données Twitter dans Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Twitter de votre organisation.
-ms.openlocfilehash: 0a0ebb18cb39b7dd7416f2d03dcb5b4d21332c9b
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8f78da8570c792085d87031dba917c9295417e40d7c85e8d022b41088aec69f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866176"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Déployer un connecteur pour archiver des données Twitter
 
@@ -128,7 +128,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
 L’application de développement Twitter est maintenant prête à être utilisé.
 
-## <a name="step-4-configure-the-connector-web-app"></a>Étape 4 : Configurer l’application web du connecteur
+## <a name="step-4-configure-the-connector-web-app"></a>Étape 4 : Configurer l’application web de connecteur
 
 1. Go to https:// \<AzureAppResourceName> .azurewebsites.net (where **AzureAppResourceName** is the name of your Azure app resource that you named in Step 4). Par exemple, si le nom est **twitterconnector**, allez à https://twitterconnector.azurewebsites.net . La page d’accueil de l’application ressemble à la capture d’écran suivante :
 
@@ -196,7 +196,7 @@ L’application de développement Twitter est maintenant prête à être utilis�
 
 11. Dans la page **Définir les filtres,** vous pouvez appliquer un filtre pour importer initialement des éléments d’un certain âge. Sélectionnez un âge, puis cliquez sur **Suivant**.
 
-12. Dans la page **Choisir l’emplacement** de stockage, tapez l’adresse de messagerie Microsoft 365 boîte aux lettres dans Microsoft 365 vers qui les éléments Twitter seront importés, puis cliquez sur **Suivant**.
+12. Dans la page **Choisir** l’emplacement de stockage, tapez l’adresse de messagerie Microsoft 365 boîte aux lettres dans Microsoft 365 vers qui les éléments Twitter seront importés, puis cliquez sur **Suivant**.
 
 13. Cliquez **sur Suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer la configuration du connecteur.
 

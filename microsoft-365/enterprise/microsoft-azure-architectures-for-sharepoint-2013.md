@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: Découvrez quels types de solutions SharePoint 2013 peuvent être hébergés sur Microsoft Azure machines virtuelles et comment configurer Azure pour en héberger une.
-ms.openlocfilehash: eed74e2dcbe383f0f63e7f6ea2fc70fe7b51b1b3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d7405909e25078086147e2bab7504375b6527ff07c14a1750c9b5971592a4858
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858787"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architectures Microsoft Azure pour SharePoint 2013
 
@@ -219,7 +219,7 @@ Ce schéma illustre la batterie de serveurs SharePoint implémentée dans les se
   
 ## <a name="see-also"></a>Voir aussi
 
-[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   
 [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   

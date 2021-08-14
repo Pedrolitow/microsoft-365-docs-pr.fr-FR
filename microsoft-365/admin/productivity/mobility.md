@@ -18,19 +18,19 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: 'Détails de la mobilité : le niveau de productivité des utilisateurs.'
-ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 'Détails de la mobilité : le score de productivité des utilisateurs.'
+ms.openlocfilehash: d3ea6e4803a1aa5d12084d626b60c058dd578832d8707e8269419683a0ed223d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580845"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823029"
 ---
 # <a name="mobility--people-experiences"></a>Mobilité : expériences de personnes
 
 Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie de mobilité fait partie des mesures d’expérience des personnes. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour prendre en main les informations sur la mobilité, les membres de votre organisation doivent être titulaires d’une licence pour :
 
@@ -47,7 +47,7 @@ Une fois que les utilisateurs ont été actifs dans les produits ci-dessus au mo
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Importance du score&#39;mobilité de votre organisation
 
-L’un des piliers fondamentaux de la productivité organisationnelle est la capacité des personnes à travailler de façon flexible où qu’elles soient. Grâce Microsoft 365, les personnes peuvent rester connectées Outlook, Microsoft Teams et Yammer. Les utilisateurs peuvent également collaborer en toute transparence sur du contenu à l’aide de Word, Excel, PowerPoint et OneNote à partir de n’importe quel emplacement et plateforme.
+L’un des piliers fondamentaux de la productivité organisationnelle est la capacité des personnes à travailler de manière flexible où qu’elles soient. Grâce Microsoft 365, les personnes peuvent rester connectées Outlook, Microsoft Teams et Yammer. Les utilisateurs peuvent également collaborer en toute transparence sur du contenu à l’aide de Word, Excel, PowerPoint et OneNote à partir de n’importe quel emplacement et plateforme.
 
 ## <a name="how-we-calculate-the-score"></a>Comment calculer le score
 
@@ -64,7 +64,7 @@ Microsoft 365 permet aux personnes de travailler avec souplesse entre les applic
 3. **Visualisation (état actuel) :** Indique le nombre de personnes qui utilisent plusieurs plateformes sur ordinateur de bureau, mobile et web pour au moins un Microsoft 365 (liste ci-dessous) comme suit :
     - **Barre horizontale** où la partie bleue (couleur) représente le pourcentage exprimé dans l’en-tête.
     - **La fraction** de la barre met en évidence le (numérateur/dénominateur) utilisé pour calculer le pourcentage dans l’en-tête.
-        - Numérateur : nombre de personnes dans votre organisation utilisant n’importe quelle application au sein de Microsoft Outlook, Word, Excel, PowerPoint, OneNote et Microsoft Teams, Yammer et Skype sur plusieurs plateformes de bureau, web et mobile au cours des 28 derniers jours.
+        - Numérateur : nombre de personnes dans votre organisation utilisant des applications dans Microsoft Outlook, Word, Excel, PowerPoint, OneNote et Microsoft Teams, Yammer et Skype sur plusieurs plateformes de bureau, web et mobile au cours des 28 derniers jours.
         - Dénominateur : nombre de personnes titulaires d’une licence pour Microsoft 365 Apps, Exchange, Yammer, Microsoft Teams ou Skype au moins 1 des 28 derniers jours.
     - La **valeur de référence** homologue pour la mesure clé est également affichée sous la mesure d’un pourcentage.
 4. **Afficher les ressources de mobilité :** Sélectionnez ce lien pour afficher le contenu de l’aide.
@@ -81,7 +81,7 @@ Le score de mobilité de votre organisation mesure au niveau de l’organisation
 
 Les scores ne sont pas fournis au niveau de l’utilisateur individuel.
 
-## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Découvrir le fonctionnement de votre organisation sur les plateformes et les emplacements
+## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Explorer le fonctionnement de votre organisation sur les plateformes et les emplacements
 
 Nous vous fournissons également des informations qui vous permettent de mieux comprendre le fonctionnement des membres de votre organisation sur plusieurs plateformes. Ces mesures supplémentaires ne contribuent pas directement à votre score de productivité, mais vous aident à créer un plan d’action dans le cadre de votre transformation numérique.  
 
@@ -142,10 +142,10 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 :::image type="content" source="../../media/remotework-trend.png" alt-text="Graphique shows how many people are working remotely, on-site, or both.":::
 
 1. **En-tête :** Indique le pourcentage de personnes travaillant uniquement à domicile ou à l’extérieur du réseau de leur entreprise.
-2. **Corps : Temps forts** importance de faciliter le travail à distance pour les personnes qui n’ont pas accès aux bureaux physiques de votre organisation.
+2. **Corps :** Met en évidence l’importance de faciliter le travail à distance pour les personnes qui n’ont pas accès aux bureaux physiques de votre organisation.
 3. **Visualisation :** Affiche une courbe de tendance pour le pourcentage quotidien de personnes qui travaillent uniquement à distance, ainsi que pour le pourcentage quotidien de personnes qui travaillent également sur site. Les utilisateurs sont considérés sur site s’ils effectuent au moins trois heures d’activité Microsoft 365 Apps dans une journée.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\

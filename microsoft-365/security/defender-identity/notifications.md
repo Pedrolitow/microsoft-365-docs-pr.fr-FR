@@ -1,18 +1,18 @@
 ---
 title: Notifications Microsoft Defender pour l’identité dans Microsoft 365 Defender
-description: Découvrez comment définir Microsoft Defender pour les notifications d’identité dans Microsoft 365 Defender.
+description: Découvrez comment définir microsoft Defender pour les notifications d’identité dans Microsoft 365 Defender.
 ms.date: 05/20/2021
 ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 0edae8f92165841e94b8079f32d778bee3c1aeab
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ef5bc9561f79bf1629522a610632d5eb349ab892347843e73701a2efa2ef65c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810896"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Notifications Defender pour l’identité dans Microsoft 365 Defender
 
@@ -24,9 +24,9 @@ ms.locfileid: "53544197"
 Cet article explique comment travailler avec les notifications [d’identité Microsoft Defender](/defender-for-identity) dans [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 > [!IMPORTANT]
-> Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender pour l’identité. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
+> Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender for Identity. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
 
-## <a name="health-issues-notifications"></a>Notifications de problèmes d’état de santé
+## <a name="health-issues-notifications"></a>Notifications de problèmes d’état
 
 Dans Microsoft 365 Defender, vous pouvez ajouter des destinataires pour les notifications par courrier électronique de problèmes d’état de santé dans Defender for Identity.
 
@@ -36,7 +36,7 @@ Dans Microsoft 365 Defender, vous pouvez ajouter des destinataires pour les noti
 
 1. Sélectionnez **les notifications de problèmes d’état d’santé.**
 
-1. Entrez l’adresse e-mail du destinataire. Sélectionnez **Ajouter**.
+1. Entrez l’adresse e-mail du destinataire. Cliquez sur **Ajouter**.
 
     ![Entrer l’adresse e-mail pour les problèmes d’état](../../media/defender-identity/health-email-recipient.png)
 
@@ -57,7 +57,7 @@ Dans Microsoft 365 Defender, vous pouvez ajouter des destinataires pour les noti
 
 1. Sélectionnez **les notifications d’alerte.**
 
-1. Entrez l’adresse e-mail du destinataire. Sélectionnez **Ajouter**.
+1. Entrez l’adresse e-mail du destinataire. Cliquez sur **Ajouter**.
 
     ![Entrer l’adresse e-mail des alertes détectées](../../media/defender-identity/alert-email-recipient.png)
 
@@ -77,7 +77,7 @@ Defender for Identity peut vous avertir lorsqu’il détecte des activités susp
 
 1. Sélectionnez **Configurer le service.** Un volet s’ouvre et vous permet d’entrer les détails du service de syslog.
 
-    ![Entrer les détails du service de syslog](../../media/defender-identity/syslog-sensor.png)
+    ![Entrer les détails du service syslog](../../media/defender-identity/syslog-sensor.png)
 
 1. Entrez les détails suivants :
 

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez ce qu’il advient de vos données lorsque votre abonnement Microsoft 365 Business atteint sa date d’expiration, est désactivé, ou que vous procédez à sa résiliation.
 ms.date: 04/08/2021
-ms.openlocfilehash: 55a34352da6deef2fd48542dd06859e0024e6966
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 716dc1df065daf324f8f449c5d74c09d2d4a81ce91a0fca50d1ff84f20133a39
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852066"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Business ?
 

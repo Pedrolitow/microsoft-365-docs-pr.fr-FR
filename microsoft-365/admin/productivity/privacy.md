@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protection de la confidentialité par le score de productivité.
-ms.openlocfilehash: 5b5997532ddcd1fdf43b4124f8e2d8183bb3d89e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 928dfc8677cc452fb3c6309d6a42e4390a238d52b7dffa0217a4b4507c8d72a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822909"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Contrôles de confidentialité pour le score de productivité
 
@@ -51,7 +51,7 @@ Pour afficher l’intégralité du score de productivité, vous devez être l’
 - Lecteur de rapports
 - Lecteur Rapports de synthèse de l’utilisation
 
-Attribuez le rôle Lecteur de rapports ou Rapport de synthèse de l’utilisation à toute personne responsable de la gestion et de l’adoption des changements, mais pas nécessairement un administrateur informatique. Ce rôle leur donne accès à l’expérience de score de productivité complète dans le Centre d Microsoft 365'administration.
+Attribuez le rôle lecteur de rapports ou De synthèse de l’utilisation à toute personne responsable de la gestion et de l’adoption des changements, mais pas nécessairement un administrateur informatique. Ce rôle leur permet d’accéder à l’expérience complète du Score de productivité dans Microsoft 365'administration centrale.
 
 Le rôle lecteur rapports de synthèse de l’utilisation devra être attribué par le biais des cmdlets PowerShell jusqu’à ce qu’il soit affecté à partir du Centre d’administration Microsoft 365 plus tard en 2020.
 

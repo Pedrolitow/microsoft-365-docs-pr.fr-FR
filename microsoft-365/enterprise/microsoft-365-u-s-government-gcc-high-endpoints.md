@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Dans cet article, vous trouverez des points de terminaison accessibles aux clients qui utilisent Office 365 pour le gouvernement américain Cloud de la communauté du secteur public plans élevés.
 hideEdit: true
-ms.openlocfilehash: 2febfec744dfb527dd99b205f3b2b78f5b9af4e7
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 52027e4c9b503edfb5b051be96c5f238e731c825626b70ee66a2de53f7759dbd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813044"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Points de terminaison Office 365 U.S. Government GCC High
 
@@ -39,7 +39,7 @@ Office 365 nécessite une connexion à Internet. Les points de terminaison ci-de
 
 ****
 
-|Notes|Télécharger|
+|Remarques|Télécharger|
 |---|---|
 |**Dernière mise à jour :** 28/05/2021 : ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Modifier l'abonnement au journal](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Télécharger :** la liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |
