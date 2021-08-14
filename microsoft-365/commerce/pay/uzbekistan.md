@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b20ad47900d2061c54fdb45a6ce274549292cbb5
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3d7a9e7ad9f4750a08846986a436474baf628de00a5ddce83e832e61c2a45ba3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837167"
 ---
 # <a name="payment-information-for-uzbekistan"></a>Informations de paiement pour l’Ouzbékistan
 

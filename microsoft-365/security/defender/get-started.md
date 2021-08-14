@@ -1,5 +1,5 @@
 ---
-title: Prise en main de Microsoft 365 Defender
+title: Prise en main de Microsoft 365 Defender
 ms.reviewer: ''
 description: Découvrez les étapes à suivre pour commencer à Microsoft 365 Defender
 keywords: get started, microsoft 365 defender, turn on, onboard, deploy
@@ -19,25 +19,25 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f408ed0fe77034f69fc6e51ada75012f752ee2e7
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 8d479a5cacc5db8961084135eb2b155c4b3af509cc06adecc9b3c2c42688f7d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51759821"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828525"
 ---
 # <a name="get-started-with-microsoft-365-for-defender"></a>Mise en place de Microsoft 365 pour Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender est une expérience unifiée dans laquelle vous pouvez surveiller et gérer la sécurité au sein de votre entreprise. Avec les alertes intégrées entre les identités, les points de terminaison, les données, les applications, la messagerie électronique et les outils de collaboration . L’investigation et la réponse aux menaces se produisent désormais dans un emplacement central. 
+Microsoft 365 Defender est une expérience unifiée dans laquelle vous pouvez surveiller et gérer la sécurité au sein de votre entreprise. Avec les alertes intégrées entre les identités, les points de terminaison, les données, les applications, le courrier électronique et les outils de collaboration . L’investigation et la réponse aux menaces se produisent désormais dans un emplacement central. 
 
-Que vous débutiez avec la suite de produits de sécurité Microsoft ou que vous connaissez les flux de travail individuels, cette rubrique vous guidera dans les étapes simples à suivre pour commencer à travailler avec Microsoft 365 Defender.
+Que vous débutiez avec la suite de produits de sécurité Microsoft ou que vous connaissez les flux de travail individuels, cette rubrique vous guide dans les étapes simples à suivre pour commencer à Microsoft 365 Defender.
 
-![Image de la mise en place des étapes Microsoft 365 Defender](../../media/mtp/get-started-m365d.png)
+![Image de la mise en Microsoft 365 Defender étapes](../../media/mtp/get-started-m365d.png)
 
 En règle générale, vous devez suivre les étapes suivantes pour commencer :
 
@@ -56,7 +56,7 @@ L’Microsoft 365 Defender et le déploiement de services vous donnent accès au
 
 | Fonctionnalité | Description |
 | ------ | ------ |
-| Microsoft Defender pour point de terminaison | Suite de protection des points de terminaison conçue autour de puissants capteurs comportementaux, d’analyses cloud et d’intelligence des menaces |
+| Microsoft Defender pour point de terminaison | Suite de protection des points de terminaison conçue autour de puissants capteurs comportementaux, d’analyse cloud et d’intelligence des menaces |
 |Microsoft Defender pour Office 365 | Protection avancée de vos applications et données dans Office 365, y compris la messagerie électronique et d’autres outils de collaboration |
 | Microsoft Defender pour l’identité | Se défendre contre les menaces avancées, les identités compromises et les insiders malveillants à l’aide de signaux Active Directory corrélés |
 | Microsoft Cloud App Security | Identifier et lutter contre les cybermenaces au sein de vos services cloud Microsoft et tiers |

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1ba049e9fe608ba8bd559180c5a30060b10ee9e0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: cec25a877e7039fc3b00d693ecc63e798492131e8eba6c12e4a97b77824da150
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53285984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828510"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Questions fréquemment posées lors de l’Microsoft 365 Defender
 
@@ -99,7 +99,7 @@ Obtenez les dernières expériences disponibles publiquement en allumer les [fon
 
 Il n’est pas disponible pour le moment.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 - [Activer Microsoft 365 Defender](m365d-enable.md).

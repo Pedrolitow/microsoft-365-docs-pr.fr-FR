@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 303391a5ed9368e94fe744cf405e2502af0e6ec6
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 5975931dab77752da4ba139b3203fcf1b142150fc642379275a149d84a968120
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828581"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidents dans Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "53622735"
 
 Un incident dans Microsoft 365 Defender est une collection d’alertes corrélées et de données associées qui constitue l’histoire d’une attaque. 
 
-Microsoft 365 services et applications créent des alertes lorsqu’ils détectent un événement ou une activité suspect ou malveillant. Les alertes individuelles fournissent des indices précieux sur une attaque terminée ou en cours. Toutefois, les attaques utilisent généralement différentes techniques pour différents types d’entités, telles que les appareils, les utilisateurs et les boîtes aux lettres. Le résultat est plusieurs alertes pour plusieurs entités dans votre client. 
+Microsoft 365 et applications créent des alertes lorsqu’ils détectent un événement ou une activité suspect ou malveillant. Les alertes individuelles fournissent des indices précieux sur une attaque terminée ou en cours. Toutefois, les attaques utilisent généralement différentes techniques pour différents types d’entités, telles que les appareils, les utilisateurs et les boîtes aux lettres. Le résultat est plusieurs alertes pour plusieurs entités dans votre client. 
 
 Étant donné que l’agrégation des alertes individuelles pour obtenir des informations sur une attaque peut être complexe et chronophage, Microsoft 365 Defender regroupe automatiquement les alertes et leurs informations associées dans un incident.
 
@@ -56,13 +56,13 @@ Regardez cette courte vue d’ensemble des incidents Microsoft 365 Defender (4 m
 
 Le regroupement d’alertes associées dans un incident vous offre une vue complète d’une attaque. Par exemple, vous pouvez voir :
 
-- L’endroit où l’attaque a commencé.
+- Point de départ de l’attaque.
 - Quelles tactiques ont été utilisées .
 - Jusqu’où l’attaque est passée dans votre client.
-- Étendue de l’attaque, telle que le nombre d’appareils, d’utilisateurs et de boîtes aux lettres touchés. 
+- Étendue de l’attaque, telle que le nombre d’appareils, d’utilisateurs et de boîtes aux lettres qui ont été touchés. 
 - Toutes les données associées à l’attaque.
 
-Si [elle est activée,](m365d-enable.md)Microsoft 365 Defender [peut automatiquement](m365d-autoir.md) examiner et résoudre les alertes par le biais de l’automatisation et de l’intelligence artificielle. Vous pouvez également effectuer des étapes de correction supplémentaires pour résoudre l’attaque. 
+Si [elle est activée,](m365d-enable.md)Microsoft 365 Defender [peuvent automatiquement](m365d-autoir.md) examiner et résoudre les alertes par le biais de l’automatisation et de l’intelligence artificielle. Vous pouvez également effectuer des étapes de correction supplémentaires pour résoudre l’attaque. 
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>Incidents et alertes dans le portail Microsoft 365 Defender web
 
@@ -82,7 +82,7 @@ Les onglets supplémentaires pour un incident sont les suivants :
 
 - Appareils
 
-  Tous les appareils qui ont été identifiés comme faisant partie ou liés à l’incident.
+  Tous les appareils identifiés comme faisant partie ou liés à l’incident.
 
 - Utilisateurs
 
@@ -127,7 +127,7 @@ Identifiez régulièrement les incidents les plus prioritaires pour l’analyse 
 
    1. Si nécessaire, rassemblez des informations sur les appareils, les utilisateurs et les boîtes aux lettres touchés (onglets **Appareils,** Utilisateurs et Boîtes **aux lettres).**
 
-   1. Découvrez comment Microsoft 365 Defender a [automatiquement résolu certaines alertes](m365d-autoir.md) (onglet **Enquêtes).**
+   1. Découvrez comment Microsoft 365 Defender [a automatiquement résolu certaines alertes](m365d-autoir.md) (onglet **Enquêtes).**
    
    1. Si nécessaire, utilisez les informations du jeu de données pour l’incident pour plus d’informations (onglet Preuve **et** réponse).
 
@@ -135,14 +135,14 @@ Identifiez régulièrement les incidents les plus prioritaires pour l’analyse 
 
 3. Dans la mesure du possible, récupérez à partir de l’attaque en restaurant les ressources de votre client à l’état où elles se sont trouver avant l’incident.
 
-4. [Résolvez](manage-incidents.md#resolve-an-incident) l’incident et prenez le temps d’apprendre après l’incident à :
+4. [Résolvez](manage-incidents.md#resolve-an-incident) l’incident et prenez le temps d’apprendre après l’incident pour :
 
    - Comprendre le type de l’attaque et son impact.
    - Recherchez une tendance des attaques de sécurité dans [l’analyse](threat-analytics.md) des menaces et la communauté de sécurité.
-   - Rappelez-vous du flux de travail que vous avez utilisé pour résoudre l’incident et mettre à jour vos flux de travail, processus, stratégies et playbooks standard selon vos besoins.
+   - Rappelez-vous du flux de travail que vous avez utilisé pour résoudre l’incident et mettre à jour vos flux de travail, processus, stratégies et playbooks standard si nécessaire.
    - Déterminez si des modifications sont nécessaires dans votre configuration de sécurité et implémentez-les.
 
-Si vous débutez dans l’analyse de la sécurité, consultez [l’introduction](incidents-overview.md) à la réponse à votre premier incident pour plus d’informations et pour passer en détail à un exemple d’incident.
+Si vous débutez dans l’analyse de la sécurité, consultez [l’introduction](incidents-overview.md) à la réponse à votre premier incident pour plus d’informations et pour passer au travers d’un exemple d’incident.
 
 Pour plus d’informations sur la réponse aux incidents dans les produits Microsoft, consultez [cet article.](/security/compass/incident-response-overview)
 
@@ -179,7 +179,7 @@ Pour plus d’informations sur SecOps dans les produits Microsoft, consultez les
 - [Meilleures pratiques](/security/compass/security-operations)
 - [Vidéos et diapositives](/security/compass/security-operations-videos-and-decks)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 **Si vous êtes nouveau dans l’analyse** de la sécurité et la réponse aux incidents :
 
@@ -195,7 +195,7 @@ Pour plus d’informations sur SecOps dans les produits Microsoft, consultez les
 
   - Effectuer [des examens](investigate-incidents.md) des incidents.
 
-- Découvrez comment intégrer des Microsoft 365 Defender dans votre Centre des opérations [de sécurité (SOC).](integrate-microsoft-365-defender-secops.md)
+- Découvrez comment intégrer [des Microsoft 365 Defender dans votre Centre d’opérations de sécurité (SOC).](integrate-microsoft-365-defender-secops.md)
 
 - Consultez ces manuels de réponse aux incidents pour obtenir des [instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application.
 

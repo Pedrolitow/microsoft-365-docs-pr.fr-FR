@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9ec98eb4e087e388db85f08a8737093718a1d7d1
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 05bfc70181963801f34b612d66d3277a59eff68cd6e5204f722b626299f06fe1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536849"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837322"
 ---
 # <a name="payment-information-for-denmark"></a>Informations de paiement pour le Danemark
 
@@ -36,7 +36,7 @@ Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,**
 **Numéro de compte :** 12207613  
 **Nom du compte :** MICROSOFT
 
-Si vous avez une facture facturée par **Microsoft Denmark ApS** pour les commandes et la consommation à compter du 1er mars 2021, utilisez les informations bancaires ci-après :
+Si vous avez une facture facturée par **Microsoft Denmark ApS** pour les commandes et la consommation à partir du 1er mars 2021, utilisez les informations bancaires ci-après :
 
 **Banque :** Bank Europe plc  
 **Code SWIFT :** CITIIE2X  

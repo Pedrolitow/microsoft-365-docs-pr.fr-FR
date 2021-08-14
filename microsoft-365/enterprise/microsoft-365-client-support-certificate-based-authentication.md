@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, recherchez des détails sur Microsoft 365 prise en charge de l’application cliente pour l’authentification basée sur les certificats.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bef1a684ba1ebe2eaba90677cd726cc190e342db
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: cef2cc9084b44e568afd1df7291a21dce8c4ae3dd7a3feb8dcba31f20d5a31b0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855051"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 Prise en charge des applications clientes : authentification basée sur les certificats
 

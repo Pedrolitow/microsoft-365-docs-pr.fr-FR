@@ -10,16 +10,16 @@ ms.topic: conceptual
 author: samanro
 ms.author: samanro
 manager: pamgreen
-ms.openlocfilehash: 99f4018a0fe5fdd7d3d6acdad0fa19c443412023
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 289c9ed0dc0291ed44c1c10f0d33a362ce30723c0ddaf1bf1e27552edec1bd6b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926678"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53847771"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 de navigation de documents
 
-Cette rubrique fournit quelques conseils et astuces pour naviguer dans l’espace Microsoft 365 documentation technique.  
+Cette rubrique fournit des conseils et des astuces pour naviguer dans l’espace Microsoft 365 documentation technique.  
 
 ## <a name="hub-page"></a>Page hub
 
@@ -31,7 +31,7 @@ Vous pouvez toujours revenir à cette page en sélectionnant **Microsoft 365** d
 
 ## <a name="offline-documentation"></a>Documentation hors connexion
 
-Si vous souhaitez afficher la documentation Microsoft 365 sur un système hors connexion, vous pouvez créer un pdf où que vous se trouvez dans la documentation Microsoft 365 technique.
+Si vous souhaitez afficher la documentation Microsoft 365 sur un système hors connexion, vous pouvez créer un fichier PDF où que vous vous trouveriez dans la documentation Microsoft 365 technique.
 
 Si vous souhaitez créer un fichier PDF, sélectionnez le lien Télécharger **pdf** en bas de chaque table des matières.
 
@@ -69,7 +69,7 @@ Si vous trouvez un problème dans un article, vous pouvez envoyer des commentair
 
 ## <a name="contribute-to-microsoft-365-documentation"></a>Contribuer à la Microsoft 365 documentation
 
-Savez-vous que vous pouvez modifier le contenu sur docs.microsoft.com vous-même ? Si vous le faites, non seulement notre documentation sera améliorée, mais vous serez également crédité en tant que collaborateur de la page. Pour commencer, voir :
+Savez-vous que vous pouvez modifier le contenu sur docs.microsoft.com vous-même ? Si vous le faites, non seulement notre documentation s’améliorera, mais vous serez également crédité en tant que collaborateur de la page. Pour commencer, voir :
 
 - [Guide de collaborateur Microsoft Docs](/contribute/)
 

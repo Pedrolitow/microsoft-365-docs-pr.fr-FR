@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: bf95c26a9bf724aaddae8321022ecdfceae82d1a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e6caa9fb493c84331ea164b8a3f0f0ec2122fd5fb86e113253cd243644bbced8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229058"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862375"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -48,7 +48,7 @@ Dans chacun des niveaux, nous avons la possibilité de partager avec des personn
 
 ![Capture d’écran du commutateur Accès invité dans Teams](../media/teams-guest-access-toggle-on.png)
 
-Pour déterminer les paramètres d’accès invité Teams, procédez comme suit :
+Pour déterminer les paramètres d’accès invité Teams, procédez comme suit :
 
 1. Connectez-vous au Centre d’administration Microsoft 365 sur[https://admin.microsoft.com](https://admin.microsoft.com).
 2. Dans la barre de navigation de gauche, cliquez sur **Afficher tout**.

@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour LaPétade
+title: Informations de paiement pour La France
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,14 +13,14 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3085e72f671e453923af6478db748977cd2494dd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0a17414e43170049011381ee29479413957aaa8939bed4190a2a261c2a7e5a6a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536753"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837262"
 ---
-# <a name="payment-information-for-guadeloupe"></a>Informations de paiement pour LaPétade
+# <a name="payment-information-for-guadeloupe"></a>Informations de paiement pour La France
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez les plateformes, les clients et les modules PowerShell qui la prise en charge de l' sign-on unique pour Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 560196694e1c2aaf924e02a882e0c8a3454bf667
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: d0edf3e9954fb481e83d40e4af0befd9c7ca9967a7354be1969d226e08f52cb2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854931"
 ---
 # <a name="microsoft-365-client-app-support-single-sign-on"></a>Microsoft 365 Prise en charge des applications clientes : Sign-On
 
@@ -33,7 +33,7 @@ En savoir plus [sur l' sign-on unique.](/azure/active-directory/manage-apps/what
 
 ## <a name="supported-clients--platforms"></a>Clients pris en charge & plateformes
 
-Les dernières versions des plateformes et des clients suivants prisent en charge l' sign-on unique. Pour plus d’informations sur la prise en charge de la plateforme dans Microsoft 365, voir [La Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
+Les versions les plus récentes des plateformes et des clients suivants prisent en charge l' sign-on unique. Pour plus d’informations sur la prise en charge de la plateforme dans Microsoft 365, voir [La Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
 <br>
 <br>
 
@@ -42,5 +42,5 @@ Les dernières versions des plateformes et des clients suivants prisent en charg
 ## <a name="supported-powershell-modules"></a>Modules PowerShell pris en charge
 
 - [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview)
-- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

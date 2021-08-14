@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: En savoir plus Microsoft 365 Business Voice.
-ms.openlocfilehash: edffbbe615b7098377297f96a6015929d5825694
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: En savoir plus sur Microsoft 365 Business Voice.
+ms.openlocfilehash: 3e909d77d0206c6f4506030340965d8bd7c756a2ba66ab9e2619f2a706adaa3a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809697"
 ---
 # <a name="overview-of-business-voice"></a>Vue d’ensemble de Business Voice
 
@@ -37,7 +37,7 @@ Microsoft 365 Business Voice fournit un système téléphonique cloud de bout en
 
 :::image type="content" source="../media/rework_m365-businessvoice-overview.png" alt-text="Figure de vue d’ensemble Microsoft 365 Business Voice.":::
 
-Microsoft 365 Business La voix permet aux petites et moyennes organisations de transformer facilement Microsoft Teams système téléphonique puissant et flexible. Il remplace les fournisseurs de téléphonie traditionnels et les systèmes téléphoniques en interne qui peuvent être difficiles et coûteux à gérer. Vous pouvez configurer à la fois des numéros gratuits et des numéros gratuits, des menus d’appel pour aider les appelants à se rendre au bon service, une audioconférence afin de pouvoir organiser des réunions avec tout le monde, et bien plus encore. Vous pouvez même donner à des personnes leurs propres numéros de téléphone pour qu’elles obtiennent directement des appels.
+Microsoft 365 Business Voice permet aux petites et moyennes organisations de transformer facilement Microsoft Teams système téléphonique puissant et flexible. Il remplace les fournisseurs de téléphonie traditionnels et les systèmes téléphoniques en interne qui peuvent être difficiles et coûteux à gérer. Vous pouvez configurer à la fois des numéros gratuits et des numéros gratuits, des menus d’appel pour aider les appelants à se rendre au bon service, une audioconférence afin de pouvoir organiser des réunions avec tout le monde, et bien plus encore. Vous pouvez même donner à des personnes leurs propres numéros de téléphone pour qu’elles obtiennent directement des appels.
 
 Business Voice fait tout cela en veloppant Microsoft 365 Système téléphonique fonctionnalités dans un ensemble facile à gérer. Vous n’avez pas besoin de vous soucier de choisir le plan ou la fonctionnalité qui vous est le plus à même de choisir. Elles sont toutes là et sont définies pour vous. Étant Système téléphonique fait partie de Teams, vous pouvez transformer n’importe quel PC, Mac ou appareil mobile en un téléphone qui peut utiliser votre numéro de téléphone Business Voice.
 
@@ -56,7 +56,7 @@ Business Voice est partout où vous allez, car il fait partie Microsoft Teams. A
 1. Enfin, transférez vos numéros de téléphone existants vers Microsoft Teams.
 1. Lorsque les numéros deviennent disponibles sur Teams, affectez-les à vos employés et à votre numéro d’entreprise principal. Vous êtes maintenant prêt à utiliser votre nouveau téléphone d’entreprise avec l’application Teams sur n’importe quel ordinateur, téléphone ou tablette.
 
-## <a name="how-to-use"></a>Utilisation
+## <a name="how-to-use"></a>Comment utiliser
 
 Pour effectuer un appel téléphonique, ouvrez l’application Teams sur votre ordinateur, tablette ou téléphone, puis choisissez Appels. Vous verrez votre numéro de téléphone affecté et le pavé de numérotation que vous pouvez utiliser pour appeler n’importe quel numéro. Vous pouvez également sélectionner l’un de vos contacts Outlook ou votre téléphone et les appeler directement.
 

@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: Trouvez des scénarios sur l’utilisation des SharePoint Syntex dans votre organisation.
-ms.openlocfilehash: 4714af4c4182c3c57625a82dff0cfdc1d5260785
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0be3424acd6d3d1b547feedb6854beced4a2453f88530271c1376a8fd07ea09d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819682"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Scénarios et cas d’usage pour Microsoft SharePoint Syntex
 
@@ -51,7 +51,7 @@ Par exemple, vous pouvez configurer un processus à l’aide SharePoint Syntex e
 Lorsque vous automatisez ce scénario, vous pouvez :
 
 - Gagnez du temps et de l’argent en extrayant automatiquement les données des factures au lieu de les faire manuellement.
-- Réduisez les erreurs potentielles et assurez-vous d’une meilleure conformité à l’aide de flux de travail pour vérifier les factures et vous informer des problèmes éventuels.
+- Réduisez les erreurs potentielles et assurez-vous d’une meilleure conformité à l’aide de flux de travail pour vérifier les factures et vous informer de tout problème.
 
 ## <a name="scenario-track-information-from-contracts-with-document-understanding"></a>Scénario : suivre les informations des contrats avec la compréhension des documents
 
@@ -99,14 +99,14 @@ Lorsque vous automatisez ce scénario, vous pouvez :
 - Déverrouillez les connaissances du contenu numérique.
 - Classifier les stratégies RH, cv, documents commerciaux, plans techniques, plans de compte et extraire des informations.
 - Recherchez rapidement les informations ou le document que vous recherchez.
-- Obtenez un accès instantané aux dernières informations.
+- Accédez instantanément aux dernières informations.
 - Réduisez les temps de recherche.
 
 ## <a name="scenario-improve-data-processing-to-provide-insights-and-analytics"></a>Scénario : améliorer le traitement des données pour fournir des informations et des analyses
 
 Par exemple, une société de petite entreprise peut utiliser SharePoint Syntex pour extraire des informations à partir de documents FDA afin de répondre aux questions de leurs responsables. Le fait d’avoir les réponses plus facilement accessibles peut réduire le temps nécessaire pour produire ces réponses et augmenter la disponibilité des données afin de générer des réponses plus précises aux questions de direction.
 
-Par exemple, un responsable de projet doit fournir rapidement des réponses aux questions relatives aux produits de mon équipe de direction. Ils doivent trouver des informations et des mesures relatives aux requêtes dans un tableau de bord consolidé. Ils recherchent une solution qui extrait les informations dont ils ont besoin à partir d’étiquettes de produits, de publications de produits et d’autres documents, et génère un rapport consolidé qu’ils peuvent utiliser lorsqu’ils reviennent à leur équipe de direction.
+Par exemple, un responsable de projet doit fournir rapidement des réponses aux questions relatives aux produits de mon équipe de direction. Ils doivent trouver des informations et des mesures relatives aux requêtes dans un tableau de bord consolidé. Ils recherchent une solution qui extrait les informations dont ils ont besoin à partir d’étiquettes de produits, de publications de produits et d’autres documents, et génère un rapport consolidé qu’ils peuvent utiliser lorsqu’ils font des rapports à leur équipe de direction.
 
 Lorsque vous automatisez ce scénario, vous pouvez :
 

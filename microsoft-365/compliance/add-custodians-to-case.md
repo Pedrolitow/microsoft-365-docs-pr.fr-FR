@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser l’outil de gestion des dépositaires intégré dans Advanced eDiscovery pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9468fb889e9115b3652d1dba8a6c6632bb367fe3
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+ms.openlocfilehash: 3fc08eb6602331ef12cba45ed5106cf692272a8f80537a2cd73fc6bd357efd2f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837218"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires à un Advanced eDiscovery de données
 
@@ -52,7 +52,7 @@ Pour ajouter des dépositaires à un cas, vous devez être membre du groupe de r
 
 3. Dans la page **Advanced eDiscovery,** cliquez sur l’onglet **Cas,** puis sélectionnez le cas à ajouter aux dépositaires.
 
-4. Cliquez sur **l’onglet Sources** de données, puis sur **Ajouter une source** de données Ajouter de  >  **nouveaux dépositaires.**
+4. Cliquez sur **l’onglet Sources** de données, puis sur **Ajouter** une source de données Ajouter de  >  **nouveaux dépositaires.**
 
 5. Ajoutez un ou plusieurs utilisateurs de votre organisation en tant que dépositaires au cas en tapant la première partie du nom ou de l’alias d’une personne. Une fois que vous avez trouvé la personne correcte, sélectionnez son nom pour l’ajouter à la liste.
 

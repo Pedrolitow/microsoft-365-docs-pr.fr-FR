@@ -1,5 +1,5 @@
 ---
-title: Opérations de sécurité dans Bureau géré Microsoft
+title: Opérations de sécurité dans Microsoft Manged Desktop
 description: Services et processus fournis par le Centre des opérations de sécurité
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 600755c15ce6da94481ef4d84732991e5006cce1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aaec101b6e7046aaf64fac3a5e0bf52e6ee8dd1159b653feac63135fdb3446d9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53818994"
 ---
-# <a name="security-operations-in-microsoft-managed-desktop"></a>Opérations de sécurité dans Bureau géré Microsoft
+# <a name="security-operations-in-microsoft-managed-desktop"></a>Opérations de sécurité dans Microsoft Manged Desktop
 
-Le centre Bureau géré Microsoft sécurité et sécurité (SOC) s’associe à votre personnel de sécurité des informations pour assurer la sécurité de votre environnement de bureau. Notre équipe reçoit et répond à toutes les alertes de sécurité sur les appareils gérés à l’aide d’une analyse experte et, si nécessaire, nous erons les activités de réponse aux incidents de sécurité. Pour plus d’informations sur l’working with the SOC, examinez la documentation opérationnelle sur votre portail d’administration.
+Le centre Microsoft Manged Desktop des opérations de sécurité (SOC) s’associe à votre personnel de sécurité des informations pour assurer la sécurité de votre environnement de bureau. Notre équipe reçoit et répond à toutes les alertes de sécurité sur les appareils gérés à l’aide d’une analyse experte et, si nécessaire, nous erons les activités de réponse aux incidents de sécurité. Pour plus d’informations sur l’working with the SOC, examinez la documentation opérationnelle sur votre portail d’administration.
 
 Le SOC offre une couverture 24/7/365 de la part d’employés à plein temps de Microsoft ayant une expertise dans le paysage actuel et les menaces émergentes, y compris les méthodes d’attaque courantes par le biais de logiciels, de réseaux ou d’adversaires humains.
 
@@ -31,8 +31,8 @@ Le SOC fournit les services ci-après :
 
 ## <a name="processes"></a>Processus
 
-- Bureau géré Microsoft Les opérations de sécurité sont employées par des employés à plein temps de Microsoft en partenariat avec le Centre des opérations de [cybersécurité de](https://www.microsoft.com/msrc/cdoc)Microsoft. 
-- Notre SOC utilise des signaux collectives au sein de notre entreprise, internes et externes, pour protéger vos appareils, même contre les éléments que nous n’avons pas encore vus dans Bureau géré Microsoft.
+- Microsoft Manged Desktop Les opérations de sécurité sont employées par des employés à plein temps de Microsoft en partenariat avec le Centre des opérations de [cybersécurité de](https://www.microsoft.com/msrc/cdoc)Microsoft. 
+- Notre SOC utilise des signaux collectives au sein de notre entreprise, internes et externes, pour protéger vos appareils, même contre les éléments que nous n’avons pas encore vus dans Microsoft Manged Desktop.
 - Les solutions de sécurité Microsoft s’alignent sur de nombreuses normes de protection contre la cybersécurité. Les opérations SOC sont basées sur le Guide de réponse aux incidents de sécurité informatique du National Institute of Standards and Technology (NIST 800-61 r2).
 - Le processus permet une collecte appropriée d’informations et de preuves, d’analyse et de documentation, ainsi que d’informations sur les méthodes permettant de mieux protéger votre environnement par le biais des phases suivantes :
     - Préparation, détection et analyse
@@ -40,5 +40,5 @@ Le SOC fournit les services ci-après :
     - Eradication
     - Récupération
     - Activité post-incident
-- Bureau géré Microsoft clients peuvent s’inscrire au service Spécialistes des menaces Microsoft client. Le SOC est lié à ce service pour mieux comprendre les menaces complexes qui affectent votre organisation, y compris les demandes d’alerte, les appareils potentiellement compromis, la cause première d’une connexion réseau suspecte et d’autres informations sur les menaces concernant les campagnes de menaces avancées persistantes en cours. Pour plus d’informations, [voir Spécialistes des menaces Microsoft](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
+- Microsoft Manged Desktop clients peuvent s’inscrire au service Spécialistes des menaces Microsoft client. Le SOC est lié à ce service pour mieux comprendre les menaces complexes qui affectent votre organisation, y compris les demandes d’alerte, les appareils potentiellement compromis, la cause première d’une connexion réseau suspecte et d’autres informations sur les menaces concernant les campagnes de menaces avancées persistantes en cours. Pour plus d’informations, [voir Spécialistes des menaces Microsoft](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
 - Le processus de gestion des menaces et des vulnérabilités de SOC utilise certains services de Microsoft pour vous aider à formuler des recommandations pour que votre organisation se protège contre les menaces. Le SOC consomme des données à partir de votre Centre de sécurité Microsoft Defender pour points de terminaison et à partir de sources de données de vulnérabilité pertinentes à l’intérieur et à l’extérieur de Microsoft pour découvrir les vulnérabilités et les mauvaises configurations et fournir des rapports actionnables.

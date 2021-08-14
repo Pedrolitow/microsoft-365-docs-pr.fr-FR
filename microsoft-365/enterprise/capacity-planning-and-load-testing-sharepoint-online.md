@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: Cet article explique comment effectuer un déploiement sur SharePoint Online sans effectuer de test de charge traditionnel, car il n’est pas autorisé.
-ms.openlocfilehash: fb54864168b35fed290ccb1139cb6c607969820d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a8b12cbe3c581a455e3e8c2b5cb39653d159f5fb678eda7cdf2069f49849f3ba
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905223"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819462"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planification de la capacité et test de charge SharePoint Online
 Cet article explique comment déployer sur SharePoint Online sans test de charge classique, car le test de charge n’est pas autorisé sur SharePoint Online. SharePoint Online est un service cloud et les fonctionnalités de charge, l’état d’état et l’équilibre global de la charge dans le service sont gérés par Microsoft.
