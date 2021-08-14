@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Découvrez comment transférer manuellement des données entre deux comptes Microsoft 365 lorsque vous avez modifié le nom de l’offre ou de la société, ou combiné plusieurs abonnements en un seul.
-ms.openlocfilehash: f9b9185a2441c4fc47aef0d3ce28116ff4e33e6e
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 560dc52c97d588a43e28420c62df18a00b552c7ffa9e38ff0df51ebd02998648
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297103"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825690"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Transférer manuellement des données entre deux comptes
 
 Préparez-vous à mettre en place vos comptabilité et bloquer un segment de temps sur votre calendrier : le transfert de données entre deux comptes Microsoft 365 est un processus manuel, compliqué et chronophage. Il ne s’agit pas d’un processus automatisé ou pris en charge. Nous allons vous aider à démarrer.
   
 > [!CAUTION]
-> Il y aura un temps d’in Microsoft 365 pendant le processus pendant lequel le courrier électronique, les Skype Entreprise et un site web public hébergé sur Microsoft 365 ne fonctionneront pas. Les utilisateurs obtiennent de nouveaux noms d’utilisateur et mots de passe, et ils doivent réinitialiser Outlook.
+> Il y aura des temps d’in Microsoft 365 pendant le processus pendant lequel le courrier électronique, les Skype Entreprise et un site web public hébergé sur Microsoft 365 ne fonctionneront pas. Les utilisateurs obtiennent de nouveaux noms d’utilisateur et mots de passe, et ils doivent réinitialiser Outlook.
 
 **Ne transférez les données manuellement à l’aide des instructions de cette rubrique que si l’une des procédures suivantes s’applique :**
   
@@ -50,7 +50,7 @@ Préparez-vous à mettre en place vos comptabilité et bloquer un segment de tem
 |Supprimez votre domaine personnalisé de votre ancien Microsoft 365 abonnement.  <br/> | Suivez les [étapes](remove-a-domain.md) requises avant de supprimer un domaine pour supprimer le nom de domaine des adresses de messagerie des utilisateurs et supprimer les enregistrements DNS pour le courrier électronique et Lync pour le domaine personnalisé. Si vous hébergez votre site web public Microsoft 365, vous devez également supprimer l’enregistrement CNAME qui pointe vers celui-ci.  <br/> > [!IMPORTANT]> Après avoir supprimé l’enregistrement MX qui approvisionnement le courrier électronique vers ce domaine personnalisé, le courrier électronique cesse de fonctionner tant que vous n’avez pas ajouté le domaine à votre nouveau compte, que vous avez installé le nouvel enregistrement MX et que vous avez installé vos utilisateurs. Lorsque vous supprimez les enregistrements DNS pour Lync, Lync cesse de fonctionner. Une fois que vous avez supprimé l’enregistrement CNAME qui pointe vers votre site web public, il ne sera pas disponible.           [Supprimez le domaine.](remove-a-domain.md)  <br/> |
 |Configurer votre domaine personnalisé pour votre nouvel abonnement et configurer vos utilisateurs.  <br/> | Configurer votre nouvel abonnement, y compris créer les enregistrements DNS requis pour votre domaine personnalisé.  <br/>  Créez vos utilisateurs, avec des adresses de messagerie sur votre domaine personnalisé.  <br/> |
 |Transférer des données de votre ancien abonnement vers votre nouvel abonnement.  <br/> | Connectez-vous aux deux comptes dans des fenêtres de navigateur distinctes :  <br/>  Cliquez avec le bouton droit sur l’icône de votre navigateur et ouvrez deux fenêtres de navigateur privées. Vous pouvez utiliser des informations d’identification différentes dans les deux fenêtres pour vous inscrire sur les deux comptes.  <br/> [Transférer les paramètres d’administration entre les abonnements](#email) <br/> [Transférer la structure et les données du site d’équipe](#transfer-team-site-structure-and-data) <br/> [Transfert d’un site web public entre les abonnements](#transfer-a-public-website-between-subscriptions) <br/> [Transférer les paramètres d’administration entre les abonnements](#email) <br/> |
-|Annulez l’abonnement pour l’offre avec qui vous avez terminé en appelant le Support Microsoft Microsoft 365.  <br/> | Vérifiez que votre nouvel abonnement fonctionne et que toutes les données ont été transférées.  <br/>  [Contactez le support technique pour](../../business-video/get-help-support.md) annuler votre ancien abonnement.  <br/> |
+|Annulez l’abonnement pour l’offre avec qui vous avez terminé en appelant le Support Microsoft Microsoft 365.  <br/> | Vérifiez que votre nouvel abonnement fonctionne et que toutes les données ont été transférées.  <br/>  [Contactez le support technique](../../business-video/get-help-support.md) pour annuler votre ancien abonnement.  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>Transférer les paramètres d’administration entre les abonnements
 
@@ -60,16 +60,16 @@ Si vous transférez des données de Microsoft 365 vers Microsoft 365 moyenne ent
   
 Pour Microsoft 365 Entreprise et Microsoft 365 moyenne entreprise :
   
-|**Location**|**Objectif**|
+|**Emplacement**|**Objectif**|
 |:-----|:-----|
 |**Administrateur** \> **Microsoft 365** \> **Paramètres de service** <br/> |Sélectionnez chaque onglet pour les paramètres de messagerie, sites, Lync, logiciels utilisateur, mots de passe, communauté, gestion des droits et mobile.  <br/> |
 |**Administrateur** \> **Exchange** <br/> | Exchange Online paramètres  <br/> |
 |**Administrateur** \> **SharePoint** <br/> | SharePoint Paramètres en ligne  <br/> |
-|**Administrateur** \> **Skype Entreprise** <br/> |Paramètres de Skype Entreprise supplémentaires  <br/> |
+|**Administrateur** \> **Skype Entreprise** <br/> |Paramètres Skype Entreprise supplémentaires  <br/> |
 
 Pour Microsoft 365 petite entreprise
   
-|**Location**|**Objectif**|
+|**Emplacement**|**Objectif**|
 |:-----|:-----|
 |**Administrateur** \> **Gérer les paramètres à l’échelle de l’organisation** <br/> |Paramètres d’administration  <br/> |
 
@@ -95,13 +95,13 @@ Il existe plusieurs façons d’enregistrer ou de transférer des données de si
 
 - Pour transférer des données de liste, enregistrez un modèle de [liste](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)et utilisez le modèle enregistré pour re-créer la liste sur le nouveau site.
 
-- Pour enregistrer une bibliothèque de documents ou du contenu de liste à partir d’un environnement SharePoint Online (OneDrive Entreprise ou sites d’équipe) vers des partages de fichiers ou sur un ordinateur local, voir Informations sur la migration manuelle du contenu [SharePoint Online.](/sharepoint/troubleshoot/migration-tool/content-manual-migration)
+- Pour enregistrer une bibliothèque de documents ou un contenu de liste à partir d’un environnement SharePoint Online (OneDrive Entreprise ou sites d’équipe) vers des partages de fichiers ou sur un ordinateur local, voir Informations sur la migration manuelle du contenu [SharePoint Online.](/sharepoint/troubleshoot/migration-tool/content-manual-migration)
 
 ## <a name="transfer-users-data-between-subscriptions"></a>Transférer les données des utilisateurs entre les abonnements
 
 ### <a name="email"></a>Messagerie:
 
-Demandez aux utilisateurs [de déplacer leurs messages électroniques, contacts, tâches](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) et informations de calendrier après avoir installé votre nouvel abonnement. Ils peuvent obtenir leur ancien e-mail à l’aide de leur nom d’utilisateur initial, par exemple sue@contoso.onmicrosoft.com.
+Demandez aux utilisateurs [de déplacer leurs e-mails, contacts, tâches](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) et informations de calendrier après avoir installé votre nouvel abonnement. Ils peuvent obtenir leur ancien e-mail à l’aide de leur nom d’utilisateur initial, par exemple sue@contoso.onmicrosoft.com.
   
 ### <a name="onedrive-for-business-data"></a>OneDrive Pour les données métiers :
 

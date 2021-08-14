@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Découvrez les nouveaux noms d Microsoft 365'abonnement.
-ms.openlocfilehash: 64923611ec6571f9008b7f7fc5ec5e00e87bb400
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 5757b802dcc5897e720249314d91974c35d0d3e3bce6acd8d564065bdc8a891c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53391314"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823542"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 est désormais Microsoft 365
 
@@ -36,7 +36,7 @@ Nous avons modifié certains de nos noms d’abonnement Office 365 et Microsoft
 
 [Pour en savoir plus!](https://go.microsoft.com/fwlink/?linkid=2120533)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Abonnements et facturation](../commerce/index.yml) (page de lien)\
 [Consulter votre facture](../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\

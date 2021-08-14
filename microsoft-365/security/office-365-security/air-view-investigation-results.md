@@ -19,12 +19,12 @@ description: Pendant et après un examen automatisé dans Microsoft 365, vous po
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef91a3b218c2dda671bf7d07bf2615001bd20ebc
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 1795d8c4d52f0ea8c9bb2ccdf374d3d508e99404131878ba61cd3e737c14ad72
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884126"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’un examen automatisé dans Microsoft 365
 
@@ -45,13 +45,13 @@ L’état de l’examen indique la progression de l’analyse et des actions. Au
 
 ****
 
-|Statut|Description|
+|État|Description|
 |---|---|
 |**Démarrage**|L’enquête a été déclenchée et en attente de démarrage.|
 |**En cours d’exécution**|Le processus d’examen a démarré et est en cours. Cet état se produit également lorsque les [actions en attente sont](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) approuvées.|
 |**Aucune menace trouvée**|L’enquête est terminée et aucune menace (compte d’utilisateur, message électronique, URL ou fichier) n’a été identifiée. <p> **CONSEIL**: si vous pensez que quelque chose a été manqué (par exemple, un faux négatif), vous pouvez prendre des mesures à l’aide de [l’Explorateur de menaces.](threat-explorer.md)|
-|**Menaces détectées**|L’examen automatisé a trouvé des problèmes, mais il n’existe aucune action de correction spécifique pour résoudre ces problèmes. <p> **L’état Menaces** trouvées peut se produire lorsqu’un type d’activité utilisateur a été identifié, mais qu’aucune action de nettoyage n’est disponible. Voici quelques exemples d’activités utilisateur : <ul><li>Un [événement de protection contre la perte de](../../compliance/dlp-learn-about-dlp.md) données</li><li>Anomalie d’envoi de courrier électronique</li><li>Programmes malveillants envoyés</li><li>Hameçonnage envoyé</li></ul> <p> L’examen n’a trouvé aucune URL, aucun fichier ou message électronique malveillant à corriger, ni aucune activité de boîte aux lettres à corriger, telle que la non-remise des règles de forwarding ou de la délégation. <p> **CONSEIL**: si vous pensez que quelque chose a été manqué (tel qu’un faux négatif), vous pouvez examiner et prendre des mesures à l’aide de [l’Explorateur de menaces](threat-explorer.md)|
-|**Terminated By System**|L’examen a été arrêté. Une enquête peut s’arrêter pour plusieurs raisons : <ul><li>Les actions en attente de l’examen ont expiré. Délai d’attente des actions en attente d’approbation pendant une semaine</li><li>Il y a trop d’actions. Par exemple, s’il y a trop d’utilisateurs qui cliquent sur des URL malveillantes, cela peut aller au-delà de la capacité de l’examen à exécuter tous les analyseurs, de sorte que l’enquête s’arrête.</li></ul> <p> **CONSEIL**: si un examen s’arrête avant que des actions ne sont prises, essayez d’utiliser l’Explorateur de menaces [pour](threat-explorer.md) rechercher et résoudre les menaces.|
+|**Menaces détectées**|L’examen automatisé a trouvé des problèmes, mais il n’existe aucune action de correction spécifique pour résoudre ces problèmes. <p> **L’état Menaces** trouvées peut se produire lorsqu’un type d’activité utilisateur a été identifié, mais qu’aucune action de nettoyage n’est disponible. Voici quelques exemples d’activités utilisateur : <ul><li>Un [événement de protection contre la perte de](../../compliance/dlp-learn-about-dlp.md) données</li><li>Anomalie d’envoi de courrier électronique</li><li>Programmes malveillants envoyés</li><li>Hameçonnage envoyé</li></ul> <p> L’examen n’a trouvé aucune URL, aucun fichier ou message électronique malveillant à corriger et aucune activité de boîte aux lettres à corriger, telle que la non-remise des règles de forwarding ou de la délégation. <p> **CONSEIL**: si vous pensez que quelque chose a été manqué (tel qu’un faux négatif), vous pouvez examiner et prendre des mesures à l’aide de [l’Explorateur de menaces](threat-explorer.md)|
+|**Terminated By System**|L’examen a été arrêté. Une enquête peut s’arrêter pour plusieurs raisons : <ul><li>Les actions en attente de l’examen ont expiré. Délai d’attente des actions en attente d’approbation pendant une semaine</li><li>Il y a trop d’actions. Par exemple, s’il y a trop d’utilisateurs qui cliquent sur des URL malveillantes, cela peut aller au-delà de la capacité de l’examen à exécuter tous les analyseurs, de sorte que l’enquête s’arrête.</li></ul> <p> **CONSEIL :** si un examen s’arrête avant que des mesures ne sont prises, essayez d’utiliser l’Explorateur de menaces [pour](threat-explorer.md) rechercher et résoudre les menaces.|
 |**Action en attente**|L’enquête a trouvé une menace, telle qu’un e-mail malveillant, une URL malveillante ou un paramètre de boîte aux lettres à risque, et une action pour corriger cette menace est en attente [d’approbation.](air-review-approve-pending-completed-actions.md) <p> **L’état Action en attente** est déclenché lorsqu’une menace avec une action correspondante est trouvée. Toutefois, la liste des actions en attente peut augmenter au cours d’une enquête. Affichez les détails de l’examen pour voir si d’autres éléments sont en attente d’achèvement.|
 |**Corrigé**|L’examen s’est terminé et toutes les actions de correction ont été approuvées (notées comme étant entièrement corrigés). <p> **REMARQUE**: les actions de correction approuvées peuvent avoir des erreurs qui empêchent les actions d’être prises. Que les actions de correction soient effectuées avec succès ou non, l’état de l’examen ne change pas. Afficher les détails de l’examen.|
 |**Correction partielle**|L’examen a entraîné des actions de correction, dont certaines ont été approuvées et terminées. D’autres actions sont [toujours en attente.](air-review-approve-pending-completed-actions.md)|
@@ -81,11 +81,11 @@ Certains types d’alerte déclenchent une enquête automatisée dans Microsoft 
 
 ## <a name="keep-the-following-points-in-mind"></a>Gardez les points suivants à l’esprit
 
-- Le nombre d’e-mails est calculé au moment de l’enquête et certains sont recalculés lorsque vous ouvrez des volants d’enquête (sur la base d’une requête sous-jacente).
+- Les nombres d’e-mails sont calculés au moment de l’enquête et certains sont recalculés lorsque vous ouvrez des volants d’enquête (sur la base d’une requête sous-jacente).
 
 - Les nombres de messages affichés  pour les clusters de messagerie sous l’onglet Courrier électronique et la valeur de quantité de courrier indiquée dans le flyout de cluster sont calculés au moment de l’examen et ne changent pas.
 
-- Le nombre de messages affichés en bas de l’onglet Courrier du flyout du cluster de messagerie et le nombre de messages électroniques affichés dans l’Explorateur reflètent les messages électroniques reçus après l’analyse initiale de l’enquête. 
+- Le nombre de messages affichés en bas de l’onglet Courrier du flyout du cluster de messagerie et le nombre de messages affichés dans l’Explorateur reflètent les messages électroniques reçus après l’analyse initiale de l’enquête. 
 
   Par conséquent, un cluster de messagerie qui affiche une quantité d’origine de 10 messages électroniques affiche un total de 15 messages électroniques lorsque cinq autres messages électroniques arrivent entre la phase d’analyse de l’examen et lorsque l’administrateur examine l’examen. De même, les anciennes enquêtes peuvent commencer à afficher des nombres plus élevés que les requêtes Explorer, car les données de Microsoft Defender pour Office 365 Plan 2 expirent après sept jours pour les essais et après 30 jours pour les licences payantes.
 

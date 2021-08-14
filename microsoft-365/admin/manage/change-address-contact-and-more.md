@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
 ms.date: 03/30/2021
-ms.openlocfilehash: 80f48c001cb4796e60f9ec3cc20c03ac231eccab
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 303435376c7ae2211d27e10da9b9d56246121707a15ad26d91f01b1d31bf8f40
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825438"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
   
@@ -80,7 +80,7 @@ Pour en savoir plus sur la modification d’autres informations de profil, voir 
   
 Vous pouvez modifier votre signature électronique dans Outlook Web App. Pour plus d'informations, voir [Paramètres du courrier](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Envoyer des courriers électroniques à partir d’une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
 [Modifier un nom d’utilisateur et une adresse e-mail](../add-users/change-a-user-name-and-email-address.md) (article)\

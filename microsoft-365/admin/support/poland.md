@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 955c77e53172c9cc82ff49eaee2bade7f30cc655
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 507b8539bb7a83b2a3c04582357e8fd506cb295c6f42b34aa11ed63cb90a0c0a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856654"
 ---
 # <a name="contact-support-for-poland"></a>Contacter le support technique pour la Pologne
 
@@ -33,11 +33,11 @@ Polonais : Mon-Fri 8 h à 18 h
 
 Anglais : Mon-Fri 8 h à 18 h
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Polonais : Mon-Fri 8 h à 18 h
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Autre Téléphone numéro : 022 306 05 17
 

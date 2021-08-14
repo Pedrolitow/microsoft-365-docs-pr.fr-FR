@@ -21,12 +21,12 @@ ms.custom:
 - AdminTemplateSet
 description: Découvrez comment acheter et gérer des modules pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/02/2021
-ms.openlocfilehash: c9b552ebc6b23bf01816fee197641caf5c6a43c6
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 59abcbed4ee051d59d6b5fdd2091d0cb6164396269171a157fd447ce2e6f1b16
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856294"
 ---
 # <a name="buy-or-manage-add-ons"></a>Acheter ou gérer des modules complémentaires
 
@@ -72,7 +72,7 @@ Pour supprimer un abonnement de modules [](subscriptions/cancel-your-subscriptio
 
 Vous ne pouvez pas supprimer un module add-on traditionnel. Si vous souhaitez supprimer un module add-on traditionnel, [contactez le support technique pour obtenir de l’aide.](../business-video/get-help-support.md)
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ajouter de l’espace de stockage pour votre abonnement](add-storage-space.md) (article)\
 [Acheter ou supprimer des licences d’abonnement](licenses/buy-licenses.md) (article)\

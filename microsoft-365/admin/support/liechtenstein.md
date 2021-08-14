@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07f23961062632fab132610b7b103652f7fcf546
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 84bb8267a39c2a9232df6f6f369b98014f3cdc978cf90d8499e2fb1e36975397
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856726"
 ---
 # <a name="contact-support-for-liechtenstein"></a>Contacter le support technique pour le Liechtenstein
 
@@ -37,7 +37,7 @@ Anglais : Lun.-ven. 9H-17h
 
 Allemand : Mon-Fri 8h00 à 21h00
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Autre Téléphone numéro : +41 22 76 141 14
 

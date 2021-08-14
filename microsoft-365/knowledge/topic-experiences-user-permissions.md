@@ -1,5 +1,5 @@
 ---
-title: Gérer les autorisations des rubriques dans les rubriques microsoft
+title: Gérer les autorisations de rubrique dans Sujets Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,17 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Découvrez comment administrer les autorisations des rubriques dans Les rubriques microsoft.
-ms.openlocfilehash: 6592103526a86671a3ff42c698c1243f63be7fef
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+description: Découvrez comment administrer les autorisations de rubrique dans Sujets Microsoft Viva.
+ms.openlocfilehash: 2d7720f3e3c3272ba8ec3088fbd417d4977a2f4b7494ce4dfc9e2934f017f2b0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107396"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863962"
 ---
-# <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Gérer les autorisations des rubriques dans les rubriques microsoft
+# <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Gérer les autorisations de rubrique dans Sujets Microsoft Viva
 
-Vous pouvez gérer les paramètres d’autorisations de rubrique dans [le centre d Microsoft 365'administration.](https://admin.microsoft.com) Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
+Vous pouvez gérer les paramètres d’autorisations de rubrique dans [le Centre d’administration Microsoft 365](https://admin.microsoft.com). Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
 
 Avec les paramètres d’autorisations de rubrique, vous pouvez choisir :
 
@@ -28,10 +28,10 @@ Avec les paramètres d’autorisations de rubrique, vous pouvez choisir :
 
 ## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :
 
-1. Dans le Microsoft 365 d’administration, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
+1. Dans la Centre d’administration Microsoft 365, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** cliquez sur **Expériences de rubrique.**
 
-    ![Connecter personnes à connaître](../media/admin-org-knowledge-options-completed.png) 
+    ![Connecter connaissances](../media/admin-org-knowledge-options-completed.png) 
 
 3. Sélectionnez **l’onglet Autorisations de rubrique.** Consultez les sections suivantes pour plus d’informations sur chaque paramètre.
 
@@ -64,8 +64,8 @@ Pour mettre à jour les personnes autorisées à gérer les rubriques :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer la découverte de rubriques dans les rubriques microsoft](topic-experiences-discovery.md)
+[Gérer la découverte de rubriques dans Sujets Microsoft Viva](topic-experiences-discovery.md)
 
-[Gérer la visibilité des rubriques dans les rubriques microsoft](topic-experiences-knowledge-rules.md)
+[Gérer la visibilité des rubriques dans Sujets Microsoft Viva](topic-experiences-knowledge-rules.md)
 
-[Modifier le nom du centre de rubriques dans Rubriques microsoft](topic-experiences-administration.md)
+[Modifier le nom du centre de rubriques dans Sujets Microsoft Viva](topic-experiences-administration.md)

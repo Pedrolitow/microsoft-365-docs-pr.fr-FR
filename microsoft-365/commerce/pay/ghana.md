@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0865aec454ba28829bd0d829ff9c261de3ca5fdb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9fa4dcc71f17bf550fd4f74de123efc6ae7f7a7fc427878865fe3f34a7060d5b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856246"
 ---
 # <a name="payment-information-for-ghana"></a>Informations de paiement pour le Ghana
 

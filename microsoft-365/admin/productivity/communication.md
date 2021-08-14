@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Détails de la communication : score de productivité de l’expérience utilisateur.'
-ms.openlocfilehash: 3ea17bb859fc02343a97033fa65e830f305b69cf
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 354f5db7eede84d448489cf7c269d1aa1ed6500c7806c66029cc38daad83b5d5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823469"
 ---
 # <a name="communication--people-experiences"></a>Communication : expériences de personnes
 
 Le Score de productivité prend en charge la transition vers la transformation numérique avec des informations sur la façon dont votre organisation utilise Microsoft 365 et les expériences technologiques qui la supportent. Le score de votre organisation reflète les évaluations de l’expérience des personnes et technologies et peut être comparé aux benchmarks d’organisations d’une taille semblable à la vôtre. La catégorie de communication fait partie des mesures d’expérience des personnes. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour commencer à comprendre les informations sur les communications, les membres de votre organisation doivent être titulaires d’une licence pour :
 
@@ -180,7 +180,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\

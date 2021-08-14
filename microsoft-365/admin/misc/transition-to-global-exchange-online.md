@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment passer de Microsoft Cloud Germany Exchange Online au service Exchange Online global
-ms.openlocfilehash: 93eab2c4e0ab2f841359061ebdca69967d8d7d33
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: e075aeaaaa101da261116116d787f2313edd0254ad3ab692dd51a04fb33245c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363870"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823566"
 ---
 # <a name="update-your-mx-records-to-transition-to-the-global-exchange-online-service"></a>Mettre à jour vos enregistrements MX pour passer au service Exchange Online global
 
@@ -27,4 +27,4 @@ ms.locfileid: "53363870"
 
 3. Cliquez sur le domaine, puis cliquez sur **Erreurs DNS détectées, cliquez ici pour afficher**.
 
-4. Cette page vous indique comment corriger l’enregistrement MX. Si le bureau d’enregistrement de votre domaine utilise [Domain Connecter](../setup/add-domain.md#registrars-with-domain-connect), vous pouvez cliquer sur « Corriger mes enregistrements » en haut. Sinon, vous pouvez suivre le lien dans l’Assistant pour suivre des **instructions détaillées pour** votre bureau d’enregistrement.
+4. Cette page aura des instructions pour vous montrer comment corriger l’enregistrement MX. Si le bureau d’enregistrement de votre domaine utilise [Domain Connecter](../setup/add-domain.md#registrars-with-domain-connect), vous pouvez cliquer sur « Corriger mes enregistrements » en haut. Sinon, vous pouvez suivre le lien dans l’Assistant pour suivre des **instructions détaillées pour** votre bureau d’enregistrement.

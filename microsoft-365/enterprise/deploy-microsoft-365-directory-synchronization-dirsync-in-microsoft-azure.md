@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Découvrez comment déployer Azure AD Connecter sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre annuaire local et le client Azure AD.
-ms.openlocfilehash: 52c1bb2eb53cc4e6753d528e0d82822b2a0eebc5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6f7744ab894346e7468f3b90c211d0f8247ba253b291a4a8eda0b292e7409f04
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919085"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835212"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Déployer Microsoft 365 synchronisation d’annuaires dans Microsoft Azure
 
@@ -68,7 +68,7 @@ Le déploiement de cette solution comporte deux étapes principales :
     
     La configuration d’Azure AD Connecter nécessite les informations d’identification (nom d’utilisateur et mot de passe) d’un compte d’administrateur Azure AD et d’un compte d’administrateur d’entreprise AD DS. Azure AD Connecter s’exécute immédiatement et régulièrement pour synchroniser la forêt AD DS sur site avec Microsoft 365.
     
-Avant de déployer cette solution en production, vous pouvez utiliser les instructions de la configuration de [base](simulated-ent-base-configuration-microsoft-365-enterprise.md) de l’entreprise simulée pour configurer cette configuration comme preuve de concept, pour des démonstrations ou pour l’expérimentation.
+Avant de déployer cette solution en production, vous pouvez utiliser les instructions de la configuration de [base](simulated-ent-base-configuration-microsoft-365-enterprise.md) de l’entreprise simulée pour configurer cette configuration en tant que preuve de concept, pour des démonstrations ou pour l’expérimentation.
   
 > [!IMPORTANT]
 > Une fois la configuration d’Azure AD Connect terminée, les informations d’identification de compte d’administrateur d’entreprise AD DS ne sont pas enregistrées. 
@@ -89,7 +89,7 @@ Avant de commencer, passez en revue les conditions préalables suivantes pour ce
     
 - Disposez d Microsoft 365 abonnement incluant la fonctionnalité d’intégration Active Directory. Pour plus d’informations Microsoft 365 abonnements, voir la [page Microsoft 365 abonnement.](https://products.office.com/compare-all-microsoft-office-products?tab=2)
     
-- Approvisionnement d’une machine virtuelle Azure qui exécute Azure AD Connecter synchroniser votre forêt AD DS sur site avec Microsoft 365.
+- Provision a Azure Virtual Machine that runs Azure AD Connecter to synchronize your on-premises AD DS forest with Microsoft 365.
     
     Vous devez disposer des informations d’identification (noms et mots de passe) d’un compte d’administrateur d’entreprise AD DS et d’un compte d’administrateur Active Directory Azure.
     
@@ -175,7 +175,7 @@ Cette illustration montre le serveur de synchronisation d’annuaires avec Azure
 
 Azure AD Connecter ajoute des comptes à votre abonnement Microsoft 365 à partir des services AD DS locaux, mais pour que les utilisateurs se connectent à Microsoft 365 et utilisent ses services, les comptes doivent être configurés avec un emplacement et des licences. Utilisez ces étapes pour ajouter l’emplacement et activer les licences pour les comptes d’utilisateur appropriés :
   
-1. Connectez-vous au [centre d Microsoft 365'administration,](https://admin.microsoft.com)puis cliquez sur **Admin**.
+1. Connectez-vous au [Centre d’administration Microsoft 365,](https://admin.microsoft.com)puis cliquez sur **Administrateur.**
     
 2. Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
@@ -191,7 +191,7 @@ Azure AD Connecter ajoute des comptes à votre abonnement Microsoft 365 à parti
     
 ## <a name="see-also"></a>Voir aussi
 
-[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   
 [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Le trimming de sécurité dans Sujets Microsoft Viva
+title: Le contrôle de sécurité dans Sujets Microsoft Viva
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: None
-description: Découvrez comment la sécurité est utilisée pour afficher les rubriques dans rubriques Topics.
-ms.openlocfilehash: 4edf66a16546766a1738090cabf5ede3a5951fc3
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+description: Découvrez comment la sécurité est utilisée pour afficher les rubriques dans Rubriques Desy.
+ms.openlocfilehash: 3dd6e25fffe0a395bf41814309574c67507d280b29ee3848e676c66cadfb2463
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622123"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864009"
 ---
-# <a name="security-trimming-in-microsoft-viva-topics"></a>Le trimming de sécurité dans Sujets Microsoft Viva
+# <a name="security-trimming-in-microsoft-viva-topics"></a>Le contrôle de sécurité dans Sujets Microsoft Viva
 
 Les utilisateurs de rubriques Topics ne peuvent pas afficher les informations dans les rubriques que leurs autorisations Office 365 existantes les empêchent de voir. Tout ce qu'un utilisateur voit sur une page thématique (par exemple, sites SharePoint, documents, fichiers) sera une information qu'il est déjà autorisé à consulter. Rubriques Viva n’a apporté aucune modification aux autorisations existantes.
 
@@ -31,11 +31,11 @@ Par exemple, lorsque l’utilisateur 1 affiche la page thématique Neptune, il p
 
 ![Rubrique de l’utilisateur 1](../media/knowledge-management/user2-topic-view.png) </br> 
 
-Toutefois, lorsque l’utilisateur 2 examine la même page de rubriques, son affichage diffère de celui de l’utilisateur 1.  L’utilisateur 2 peut voir le fichier vue d’ensemble du produit *DG-2000* dans la section Des fichiers et **des pages** épinglés de la page de rubrique, qui n’apparaît pas pour l’utilisateur 1. 
+Toutefois, lorsque l’utilisateur 2 examine la même page de rubriques, son affichage diffère de celui de l’utilisateur 1.  L’utilisateur 2 peut voir le fichier de présentation du produit *DG-2000* dans la section Des fichiers et **des pages** épinglés de la page de rubrique, qui n’apparaît pas pour l’utilisateur 1. 
 
-![Rubrique de l’utilisateur 2](../media/knowledge-management/user1-topic-view.png) </br> 
+![Rubrique de Rubrique pour l’utilisateur 2](../media/knowledge-management/user1-topic-view.png) </br> 
 
-La différence entre ce que les utilisateurs peuvent voir dans la même rubrique est que les utilisateurs n’ont peut-être pas les autorisations Office 365 pour afficher un site ou un fichier associé.  Cette rubrique respecte les autorisations définies sur les éléments d’une rubrique et ne peut pas modifier l’accès à ces derniers. Dans notre exemple, l’utilisateur 1 n’est pas en mesure d’afficher le fichier de présentation du produit *DG-2000* dans sa page de rubriques, car l’utilisateur 1 ne Office 365 pas l’autorisation d’afficher le fichier.
+La différence entre ce que les utilisateurs peuvent voir dans la même rubrique est que les utilisateurs peuvent ne pas avoir les autorisations Office 365 pour afficher un site ou un fichier associé.  Cette rubrique respecte les autorisations définies sur les éléments d’une rubrique et ne peut pas modifier l’accès à ces derniers. Dans notre exemple, l’utilisateur 1 n’est pas en mesure d’afficher le fichier de présentation du produit *DG-2000* dans sa page de rubriques, car l’utilisateur 1 ne Office 365 pas l’autorisation d’afficher le fichier.
 
 Si un utilisateur ne peut pas voir suffisamment d’informations dans une rubrique pour qu’elle soit utile, la rubrique ne sera pas disponible pour l’utilisateur. Lorsque cela se produit, l’utilisateur ne voit pas la rubrique mise en surbrillvient. Un autre utilisateur ayant des autorisations pour plus d'informations dans la rubrique pour qu'elle soit utile, peut consulter la rubrique.
 
