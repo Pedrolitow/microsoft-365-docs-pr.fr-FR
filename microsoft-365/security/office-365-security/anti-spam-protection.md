@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les paramètres et filtres anti-courrier indésirable qui contribuent à empêcher le courrier indésirable dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9b960894b6923633489c005ee75307ec02b248f5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2145637500376944f1adf038e33c41549479a5f4da89fb456b590da8a5c78bb8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650198"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56854329"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protection contre le courrier indésirable dans EOP
 
@@ -55,7 +55,7 @@ Pour réduire le courrier indésirable, EOP inclut une protection contre le cour
 
 Les paramètres anti-courrier indésirable dans EOP sont composés des technologies suivantes :
 
-- Filtrage des connexions : identifie les serveurs de sources de courriers électroniques bons et non fiables au début de la connexion de messagerie entrante via la liste d’adresses IP permises, la liste d’adresses IP bloqués et la liste fiable *(liste* dynamique mais non modifiable d’expéditeurs fiables conservée par Microsoft). Vous configurez ces paramètres dans la stratégie de filtrage des connexions. Pour plus d’informations, [plus d’informations sur la configuration du filtrage des connexions.](configure-the-connection-filter-policy.md)
+- Filtrage des connexions : identifie les serveurs de sources de courriers électroniques bons et non fiables au début de la connexion de messagerie entrante via la liste d’adresses IP permises, la liste d’adresses IP bloqués et la liste fiable *(liste* dynamique mais non modifiable d’expéditeurs fiables conservée par Microsoft). Vous configurez ces paramètres dans la stratégie de filtrage des connexions. Pour plus d’informations, [découvrez comment configurer le filtrage des connexions.](configure-the-connection-filter-policy.md)
 
 - Filtrage du courrier  indésirable (filtrage du **contenu)**: EOP utilise les verdicts de filtrage du courrier indésirable spam, courrier indésirable à niveau de confiance élevé, courrier électronique en masse, courrier de hameçonnage et e-mail de hameçonnage à haut niveau de confiance pour classer les messages.     Vous pouvez configurer les actions à prendre en fonction de ces verdicts, et vous pouvez configurer les options de notification de l’utilisateur final pour les messages qui ont été mis en quarantaine au lieu d’être remis. Pour plus d’informations, voir [Configurer des stratégies anti-courrier indésirable dans Microsoft 365](configure-your-spam-filter-policies.md).
 
@@ -64,7 +64,7 @@ Les paramètres anti-courrier indésirable dans EOP sont composés des technolog
 
 - **Filtrage du** courrier indésirable sortant : EOP vérifie également que vos utilisateurs n’envoient pas de courrier indésirable, que ce soit dans le contenu des messages sortants ou en dépassant les limites des messages sortants. Pour plus d’informations, [voir Configurer le filtrage](configure-the-outbound-spam-policy.md)du courrier indésirable sortant dans Microsoft 365 .
 
-- **Veille contre l’usurpation** d’adresse : pour plus d’informations, voir Protection contre l’usurpation [d’adresse dans EOP.](anti-spoofing-protection.md)
+- **Veille contre l’usurpation** d’adresse : pour plus d’informations, voir Protection contre l’usurpation [d’adresses dans EOP.](anti-spoofing-protection.md)
 
 ## <a name="manage-errors-in-spam-filtering"></a>Gérer les erreurs de filtrage du courrier indésirable
 
@@ -76,7 +76,7 @@ Voici quelques meilleures pratiques qui s’appliquent à l’un ou l’autre de
 
 - **Examinez les en-têtes de message anti-courrier** indésirable : ces valeurs vous indiquent pourquoi un message a été marqué comme courrier indésirable ou pourquoi il a ignoré le filtrage du courrier indésirable. Pour plus d’informations, consultez [les en-têtes de message anti-courrier indésirable.](anti-spam-message-headers.md)
 
-- **Pointez votre enregistrement MX** sur Microsoft 365 : pour qu’EOP offre la meilleure protection, nous vous recommandons de remettre d’abord le courrier Microsoft 365' Pour obtenir des instructions, voir Créer des enregistrements DNS chez un fournisseur [d’hébergement DNS Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+- **Pointez votre enregistrement MX** sur Microsoft 365 : pour qu’EOP offre la meilleure protection, nous vous recommandons de remettre d’abord le courrier Microsoft 365' Pour obtenir des instructions, voir Créer des enregistrements [DNS chez un](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)fournisseur d’hébergement DNS Microsoft 365 .
 
   Si l’enregistrement MX pointe vers un autre emplacement (par exemple, une solution ou un dispositif anti-courrier indésirable tiers), il est difficile pour EOP de fournir un filtrage précis du courrier indésirable. Dans ce scénario, vous devez configurer le filtrage amélioré pour les connecteurs (également appelé ignorer la _liste)._ Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
@@ -84,11 +84,11 @@ Voici quelques meilleures pratiques qui s’appliquent à l’un ou l’autre de
 
   - **SPF**: Sender Policy Framework vérifie l’adresse IP source du message par rapport au propriétaire du domaine d’envoi. Pour une présentation rapide de SPF et pour le configurer rapidement, voir Configurer SPF pour éviter [l’usurpation d’accès.](set-up-spf-in-office-365-to-help-prevent-spoofing.md) Pour consulter des informations plus approfondies sur l’utilisation de SPF par Microsoft 365, la résolution des problèmes et les déploiements non standard tels que les déploiements hybrides, voir [Comment Microsoft 365 utilise SPF (Sender Policy Framework) pour empêcher l’usurpation d’identité](how-office-365-uses-spf-to-prevent-spoofing.md).
 
-  - **DKIM**: DomainKeys Identified Mail ajoute une signature numérique à l’en-tête de message des messages envoyés à partir de votre domaine. Pour plus d’informations, [voir Utiliser DKIM pour valider](use-dkim-to-validate-outbound-email.md)les messages sortants envoyés à partir de votre domaine personnalisé dans Microsoft 365 .
+  - **DKIM**: DomainKeys Identified Mail ajoute une signature numérique à l’en-tête du message des messages envoyés à partir de votre domaine. Pour plus d’informations, [voir Utiliser DKIM pour valider](use-dkim-to-validate-outbound-email.md)les messages sortants envoyés à partir de votre domaine personnalisé dans Microsoft 365 .
 
   - **DMARC**: l’authentification, la signalement et la conformité des messages basés sur un domaine aident les systèmes de messagerie de destination à déterminer ce qu’ils doivent faire avec les messages qui échouent aux vérifications SPF ou DKIM et offrent un autre niveau de confiance à vos partenaires de messagerie. Pour plus d’informations, [voir Utiliser DMARC pour valider le courrier électronique Microsoft 365](use-dmarc-to-validate-email.md).
 
-- Vérifiez vos **paramètres** de courrier en nombre : le seuil de niveau de réclamation en bloc (BCL) que vous configurez dans les stratégies anti-courrier indésirable détermine si les messages électroniques en nombre (également appelés messages _gris)_ sont marqués comme courrier indésirable. Le paramètre PowerShell uniquement _MarkAsSpamBulkMail_ qui est sur par défaut contribue également aux résultats. Pour plus d’informations, voir [Configurer des stratégies anti-courrier indésirable dans Microsoft 365](configure-your-spam-filter-policies.md).
+- Vérifiez vos **paramètres** de courrier en nombre : le seuil BCL (Bulk Complaint Level) que vous configurez dans les stratégies anti-courrier indésirable détermine si les messages électroniques en nombre (également appelés messages _gris)_ sont marqués comme courrier indésirable. Le paramètre PowerShell uniquement _MarkAsSpamBulkMail_ qui est sur par défaut contribue également aux résultats. Pour plus d’informations, voir [Configurer des stratégies anti-courrier indésirable dans Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Empêcher la remise de courrier indésirable à la boîte de réception
 
@@ -98,7 +98,7 @@ Voici quelques meilleures pratiques qui s’appliquent à l’un ou l’autre de
 
 - **Utilisez les listes d’expéditeurs bloqués disponibles**: pour plus d’informations, voir Créer des [listes d’expéditeurs bloqués.](create-block-sender-lists-in-office-365.md)
 
-- **Se désabonner du courrier électronique en masse** Si l’utilisateur s’est inscrit au message (bulletins d’informations, annonces de produits, etc.) et qu’il contient un lien de désabonnement provenant d’une source digne de confiance, demandez-lui simplement de se désabonner.
+- **Se désabonner de la messagerie en bloc** Si l’utilisateur s’est inscrit au message (bulletins d’informations, annonces de produits, etc.) et qu’il contient un lien de désabonnement provenant d’une source digne de confiance, demandez-lui simplement de se désabonner.
 
 - EOP autonome : créez des règles de flux de messagerie dans les Exchange locaux pour les verdicts de filtrage du courrier indésirable EOP : dans les **environnements** EOP où EOP protège les boîtes aux lettres Exchange sur site, vous devez configurer des règles de flux de messagerie (également appelées règles de transport) dans des Exchange sur site pour traduire le verdict de filtrage du courrier indésirable EOP afin que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer Exchange Online Protection (EOP) pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
@@ -106,11 +106,11 @@ Voici quelques meilleures pratiques qui s’appliquent à l’un ou l’autre de
 
 Voici quelques étapes que vous pouvez suivre pour éviter les faux positifs :
 
-- **Vérifiez les paramètres de filtrage du courrier Outlook courrier indésirable de l’utilisateur**:
+- **Vérifiez les paramètres de filtrage du courrier Outlook** courrier indésirable de l’utilisateur :
 
-  - Vérifiez que le filtre **de** courrier indésirable Outlook est désactivé : lorsque le filtre de courrier indésirable Outlook est définie sur la valeur par défaut Aucun filtrage **automatique,** Outlook ne tente pas de classer les messages comme courrier indésirable.  Lorsqu’il est  réglé sur Faible ou **Élevé,** le filtre de courrier indésirable Outlook utilise sa propre technologie de filtrage SmartScreen pour identifier et déplacer le courrier indésirable vers le dossier Courrier indésirable, afin que vous receviez des faux positifs. Notez que Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen Exchange et Outlook en novembre 2016. Les définitions de courrier indésirable SmartScreen existantes ont été laissées en place, mais leur efficacité se dégradera probablement au fil du temps.
+  - Vérifiez que le filtre **de** courrier indésirable Outlook est désactivé : lorsque le filtre de courrier indésirable Outlook est définie sur la valeur par défaut Aucun filtrage **automatique,** Outlook ne tente pas de classer les messages comme courrier indésirable.  Lorsque la valeur  est Faible ou **Élevée,** le filtre de courrier indésirable Outlook utilise sa propre technologie de filtrage SmartScreen pour identifier et déplacer le courrier indésirable vers le dossier Courrier indésirable, afin que vous receviez des faux positifs. Notez que Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen Exchange et Outlook en novembre 2016. Les définitions de courrier indésirable SmartScreen existantes ont été laissées en place, mais leur efficacité se dégradera probablement au fil du temps.
 
-  - Vérifiez que le paramètre **Outlook**« listes Coffre uniquement » est désactivé : lorsque ce paramètre est activé, seuls les messages provenant d’expéditeurs de la liste des expéditeurs Coffre ou de la liste des destinataires Coffre de l’utilisateur sont remis dans la boîte de réception . Les messages provenant de tous les autres utilisateurs sont automatiquement déplacés vers le dossier Courrier indésirable.
+  - Vérifiez que le paramètre **Outlook**« listes Coffre uniquement » est désactivé : lorsque ce paramètre est activé, seuls les messages provenant d’expéditeurs de la liste des expéditeurs Coffre ou de la liste des destinataires Coffre de l’utilisateur sont remis dans la boîte de réception . Le courrier électronique de tous les autres utilisateurs est automatiquement déplacé vers le dossier Courrier indésirable.
 
   Pour plus d’informations sur ces paramètres, voir [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 

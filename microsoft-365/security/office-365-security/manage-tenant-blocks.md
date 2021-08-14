@@ -16,14 +16,14 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38347850b66c2a83708df12aaa3233a0afe01444
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ad3cf9a4080a5ec50bdff1de623118d70f90bc1240a7eb5b6a09f0b6fe7b2a45
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56852187"
 ---
-# <a name="add-blocks-in-the-tenant-allowblock-list"></a>Ajouter des blocs dans la liste des locataires autoriser/bloquer
+# <a name="add-blocks-in-the-tenant-allowblock-list"></a>Ajouter des blocs dans la liste verte/rouge du locataire
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "53543932"
 2. Dans la page Liste d’adresses  client **autoriser/bloquer,** vérifiez que l’onglet URL est sélectionné, puis cliquez sur Bloquer l’icône ![ ](../../media/m365-cc-sc-create-icon.png) **Bloquer.**
 
 3. Dans le **volant Bloquer les URL** qui s’affiche, configurez les paramètres suivants :
-   - **Ajouter des URL avec des caractères génériques**: entrez une URL par ligne, jusqu’à un maximum de 20. Pour plus d’informations sur la syntaxe des entrées d’URL, voir la section syntaxe de l’URL dans Gérer la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)
+   - **Ajouter des URL avec des caractères génériques**: entrez une URL par ligne, jusqu’à un maximum de 20. Pour plus d’informations sur la syntaxe des entrées d’URL, voir la section syntaxe de l’URL dans Gérer la liste d’adresses client [autoriser/bloquer](tenant-allow-block-list.md).
    - **N’expirez jamais**: faites l’une des étapes suivantes :
      - Vérifiez que le paramètre est désactivé (basculement désactivé) et utilisez la zone Supprimer sur pour spécifier la ![ date d’expiration ](../../media/scc-toggle-off.png) des entrées. 
 
@@ -52,7 +52,7 @@ ms.locfileid: "53543932"
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
-### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>Créer des entrées de fichiers bloqués dans la liste d’attente du client
+### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>Créer des entrées de fichiers bloqués dans la liste d’accès au client
 
 1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
@@ -88,7 +88,7 @@ ms.locfileid: "53543932"
    - **Type d’usurpation**: sélectionnez l’une des valeurs suivantes :
      - **Interne**: l’expéditeur usurpé se trouve dans un domaine appartenant à votre organisation [(un domaine accepté).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **Externe**: l’expéditeur usurpé se trouve dans un domaine externe.
-   - **Action**: **sélectionnez Autoriser** ou **Bloquer.**
+   - **Action**: **sélectionnez Autoriser** ou **Bloquer**.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
@@ -102,7 +102,7 @@ Pour ajouter des entrées de blocage de fichier ou d’URL dans la liste d’adr
 New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
 ```
 
-Cet exemple ajoute une entrée de bloc de fichiers pour les fichiers spécifiés qui n’expire jamais.
+Cet exemple ajoute une entrée de fichier de blocage pour les fichiers spécifiés qui n’expire jamais.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration

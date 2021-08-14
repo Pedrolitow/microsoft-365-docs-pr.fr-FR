@@ -15,12 +15,12 @@ ms.custom:
 description: Dans cet article, vous allez découvrir comment basculer vers Exchange Online Protection (EOP) à partir d’un équipement d’hygiène de messagerie local ou d’un service de protection en nuage.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dfbbc44ebfed6cafb97e36b18a4fc34c91840d9b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 610ac3633516be12fe42cdfb77b0b240f7408746203284f6dba227021d314ed1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56854713"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Basculer vers EOP depuis Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort
 
@@ -37,7 +37,7 @@ Si vous débutez avec EOP et que vous souhaitez lire une vue d’ensemble de ses
 
 Avant de passer à EOP, il est important que vous déterminiez si vous voulez héberger vos boîtes aux lettres protégées par EOP dans le nuage avec Exchange Online, localement ou dans un scénario hybride (hybride signifie que certaines boîtes aux lettres sont hébergées localement, et d'autres avec Exchange Online). Chacun de ces scénarios d'hébergement (en nuage, local et hybride) est possible, mais les étapes de configuration peuvent varier. Voici quelques considérations pour vous aider à choisir le déploiement approprié :
 
-- Protection EOP avec boîtes aux lettres **locales**: ce scénario est approprié si vous avez une infrastructure d’hébergement de messagerie existante que vous souhaitez utiliser, ou si vous avez des exigences professionnelles pour conserver des boîtes aux lettres locales et que vous souhaitez utiliser EOP comme protection de messagerie en nuage. Pour plus d'informations sur ce scénario, consultez la rubrique [Passage à EOP autonome](#switch-to-eop-standalone).
+- Protection EOP avec boîtes aux lettres **locales**: ce scénario est approprié si vous avez une infrastructure d’hébergement de messagerie existante que vous souhaitez utiliser, ou si vous avez des exigences professionnelles pour conserver des boîtes aux lettres locales et que vous souhaitez utiliser EOP comme protection de messagerie électronique en nuage. Pour plus d'informations sur ce scénario, consultez la rubrique [Passage à EOP autonome](#switch-to-eop-standalone).
 
 - **Protection EOP avec Exchange Online boîtes** aux lettres : ce scénario est approprié si vous souhaitez une protection EOP et toutes vos boîtes aux lettres hébergées dans le cloud. Il peut s'avérer plus simple, car il ne nécessite pas le maintien de serveurs de messagerie locaux. La rubrique [Passage à Exchange Online](#switch-to-exchange-online) décrit ce scénario.
 
@@ -49,7 +49,7 @@ Si vous hébergez actuellement vos boîtes aux lettres localement et utilisez un
 
 ## <a name="switch-to-exchange-online"></a>Passage à Exchange Online
 
-Vous disposez peut-être de boîtes aux lettres sur site protégées par une appliance sur site et vous souhaitez passer à Exchange Online boîtes aux lettres hébergées dans le cloud et à la protection EOP pour tirer parti des fonctionnalités de messagerie et de protection cloud Microsoft 365. Pour commencer, vous pouvez vous inscrire à Microsoft 365 et ajouter votre domaine. Ce scénario ne vous oblige pas à configurer des connecteurs, car il n’existe aucun routage vers les boîtes aux lettres sur site. Commencez par [obtenir les dernières fonctionnalités](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) avancées avec Microsoft 365 pour vous inscrire et vous familiariser avec ses fonctionnalités.
+Vous disposez peut-être de boîtes aux lettres sur site protégées par une appliance sur site et vous souhaitez passer à Exchange Online boîtes aux lettres hébergées dans le cloud et à la protection EOP pour tirer parti des fonctionnalités de messagerie et de protection cloud Microsoft 365. Pour commencer, vous pouvez vous inscrire à Microsoft 365 et ajouter votre domaine. Ce scénario ne nécessite pas la mise en place de connecteurs, car il n’existe aucun routage vers les boîtes aux lettres sur site. Commencez par [obtenir les dernières fonctionnalités](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) avancées avec Microsoft 365 pour vous inscrire et vous familiariser avec ses fonctionnalités.
 
 Pendant le Microsoft 365 de configuration, vous allez créer vos utilisateurs de boîte aux lettres en nuage.
 

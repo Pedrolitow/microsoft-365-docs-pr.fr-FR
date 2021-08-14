@@ -17,12 +17,12 @@ ms.collection:
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3213cae1b04b3f1a1b861e8f2cfc698576013546
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3a8ad98029fdc7f008ff6b22c2e8fa3e738b9fc7c0caa13b0aaca918a40f4d3e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204662"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56854714"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Services pour les non-clients qui envoient des messages Microsoft 365
 
@@ -42,7 +42,7 @@ Cette vue d’ensemble fournit des informations sur les avantages que nous fourn
 |Ce contenu d'aide en ligne|Fournit : <ul><li>Point de départ pour toute question liée à la transmission des communications aux utilisateurs EOP.</li><li>Inclut un guide en ligne simple avec nos stratégies et exigences.</li><li>Vue d’ensemble des filtres de courrier indésirable et des technologies d’authentification employés par Microsoft.</li><ul>|
 |[Support technique Microsoft](#microsoft-support)|Offre un support autonome et de transmission à une instance supérieure pour les problèmes de remise.|
 |[Portail de liste d’adresses IP de courrier indésirable](#anti-spam-ip-delist-portal)|Un outil permettant d'envoyer une demande de suppression d'adresse IP de la liste. Avant d'envoyer cette demande, il incombe à l'expéditeur de s'assurer que tout autre courrier provenant de l'adresse IP en question n'est pas abusif ou malveillant.|
-|[Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Empêche l’envoi de courrier indésirable et d’autres courriers indésirables Exchange Online et encombrer Internet et votre système de messagerie.|
+|[Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Empêche l’envoi de courrier indésirable et d’autres messages indésirables Exchange Online et encombrer Internet et votre système de messagerie.|
 |
 
 ## <a name="microsoft-support"></a>Support technique Microsoft

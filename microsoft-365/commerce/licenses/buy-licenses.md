@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/07/2021
-ms.openlocfilehash: 4fa1b08a7a4304d13fb25ec53c5f034eae77ccec
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: b5d526ef999da8bb173be2ee26f16d131fe532b64eed88c5c16cbfe8b6a4807e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394436"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820934"
 ---
 # <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences d’abonnement
 
@@ -99,13 +99,13 @@ Si vous avez prépayé votre abonnement avec une clé de produit, vous pouvez aj
 - Les licences ajoutées au milieu de votre période de facturation apparaissent sur votre prochaine facture. Si vous payez annuellement, vous êtes facturé dans un mois pour ces modifications.
 - Sur votre relevé de facturation suivant, les frais précédents pour le nombre de licences d’origine sont déduits. Nous ajoutons un frais au prorat pour la période avec le nombre de licences d’origine et un frais pour le nouveau nombre de licences. Il existe également un frais pour le nombre de licences actuel pour le restant de votre période de facturation.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous avez acheté plus de licences pour votre abonnement, vous devez ensuite attribuer ces licences aux [utilisateurs de votre organisation.](../../admin/manage/assign-licenses-to-users.md)
 
 Si vous avez réduit le nombre de licences pour votre abonnement parce qu’une personne a quitté votre organisation, vous pouvez supprimer le compte de cet utilisateur. Pour en savoir plus, [consultez Supprimer un ancien employé.](../../admin/add-users/remove-former-employee.md)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Comprendre les abonnements et les licences](subscriptions-and-licenses.md) (article)\

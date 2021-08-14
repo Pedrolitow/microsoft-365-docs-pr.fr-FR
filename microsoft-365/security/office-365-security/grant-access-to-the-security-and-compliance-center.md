@@ -20,12 +20,12 @@ description: Des autorisations doivent être attribuées aux utilisateurs dans l
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7cd36ac0dec20851a423acd58e5ad7d38cb65d93
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 93588d7a467c1a3274a803edfc15a4eb51327cdaa320c644d5214defa79798c8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56853759"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
 
@@ -48,11 +48,11 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 - Les appartenances aux groupes de rôles ne sont pas partagées entre Exchange Online et le Centre de sécurité & conformité.
 
-- Les partenaires avec autorisation d’accès délégué avec des autorisations Administrer de la part de (AOBO) ne peuvent pas accéder au Centre de sécurité & conformité.
+- Les partenaires avec autorisation d’accès délégué (DAP) avec des autorisations Administrer au nom de (AOBO) ne peuvent pas accéder au Centre de sécurité & conformité.
 
 ## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utiliser le Centre de sécurité & conformité pour accorder à un autre utilisateur l’accès au Centre de sécurité & conformité
 
-1. Ouvrez le Centre de sécurité & conformité <https://protection.office.com> à l’accueil, puis allez à **Autorisations.** Pour aller directement à **l’onglet Autorisations,** ouvrez <https://protection.office.com/permissions> .
+1. Ouvrez le Centre de sécurité & conformité, puis <https://protection.office.com> allez à **Autorisations.** Pour aller directement à **l’onglet Autorisations,** ouvrez <https://protection.office.com/permissions> .
 
 2. Dans la liste des groupes de rôles,  choisissez le groupe de rôles, puis cliquez sur Modifier ![ l’icône ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) Modifier.
 
@@ -84,7 +84,7 @@ Pour des problèmes de syntaxe et de paramètres détaillés, voir [Add-RoleGrou
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
-Pour vérifier que vous avez bien accordé l’accès au Centre de sécurité & conformité, vous devez suivre l’une des étapes suivantes :
+Pour vérifier que vous avez bien accordé l’accès au Centre de sécurité & conformité, faites l’une des étapes suivantes :
 
 - Dans le Centre de sécurité & conformité, sélectionnez le groupe de **rôles Autorisations.** Dans le volant d’informations qui s’ouvre, vérifiez les membres du groupe de rôles.
 

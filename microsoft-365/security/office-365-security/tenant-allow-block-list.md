@@ -1,5 +1,5 @@
 ---
-title: Gérer vos autoriser et bloquer dans la liste d’autoriser/bloquer des locataires
+title: Gérer vos autoriser et bloquer dans la liste d’autoriser/bloquer le client
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à gérer les autoriser et les blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a09229eb9c7794742248f857384d138e41313b73
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 814ba0695b8b07defbfe991da1c3ed24d0ea0a88679ef36cf43dc49ecefd7a35
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538852"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56853747"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -71,14 +71,14 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 - Une entrée doit être active dans les 30 minutes.
 
-- Par défaut, les entrées de la liste d’inscriptions au client sont expirées au bout de 30 jours. Vous pouvez spécifier une date ou la définir pour qu’elles n’expirent jamais.
+- Par défaut, les entrées de la liste d’inscriptions au client sont expirées au bout de 30 jours. Vous pouvez spécifier une date ou les définir pour qu’elles n’expirent jamais.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Des autorisations doivent vous avoir été attribuées dans Exchange Online pour que vous puissiez effectuer les procédures décrites dans cet article :
   - **URL et fichiers**:
     - Pour ajouter et supprimer des valeurs de la liste d’attente des locataires, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité. 
-    - Pour un accès en lecture seule à la liste des locataires  autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
+    - Pour un accès en lecture seule à la liste d’accès  au  client autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
   - **Usurpation :** l’une des combinaisons suivantes :
     - **Gestion de l'organisation**
     - **Administrateur de la** <u>sécurité et</u> **configuration en affichage seul** ou gestion **de l’organisation en affichage seul.**
@@ -133,7 +133,7 @@ Pour gérer tous les blocs et tous les autoriser, voir Ajouter des blocs dans la
 
    Vous pouvez cliquer sur un en-tête de colonne pour trier par ordre croissant ou décroit.
 
-   Vous pouvez cliquer sur **Grouper** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
+   Vous pouvez cliquer sur **Groupe** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
 
    - **URL : vous** pouvez grouper les résultats par **action.**
    - **Fichiers**: vous pouvez grouper les résultats par **action.**
@@ -157,7 +157,7 @@ Pour gérer tous les blocs et tous les autoriser, voir Ajouter des blocs dans la
      - **Action**
      - **Type d’usurpation**
 
-   Lorsque vous avez terminé, cliquez sur **Appliquer.** Pour effacer les filtres existants,  cliquez sur **Filtrer** et, dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
+   Lorsque vous avez terminé, cliquez sur **Appliquer.** Pour effacer les filtres existants,  cliquez sur **Filtrer** et dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
@@ -181,7 +181,7 @@ Cet exemple renvoie toutes les URL bloquées.
 Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
 
 ## <a name="view-spoofed-sender-entries"></a>Afficher les entrées d’expéditeur usurpées
 
@@ -474,4 +474,4 @@ Par exemple, vous ajoutez une entrée d’accès pour la paire de domaines suiva
 - **Domaine**: gmail.com
 - **Infrastructure**: tms.mx.com
 
-Seuls les messages provenant de ce domaine et *de* cette paire d’infrastructure d’envoi sont autorisés à usurper l’usurpation. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages provenant d’expéditeurs d’autres domaines tms.mx.com sont vérifiés par la veille contre l’usurpation d’adresse.
+Seuls les messages provenant *de* ce domaine et de cette paire d’infrastructure d’envoi sont autorisés à usurper l’usurpation. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages provenant d’expéditeurs d’autres domaines tms.mx.com sont vérifiés par la veille contre l’usurpation d’adresse.

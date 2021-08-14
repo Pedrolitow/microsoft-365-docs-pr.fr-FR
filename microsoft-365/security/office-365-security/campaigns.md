@@ -19,21 +19,21 @@ ms.collection:
 description: Découvrez les affichages campagne dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: d1b080968675de25374019ea96e68cb6e9a63aa2fe72533759065cd4fbbc44c0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56854324"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
-Les affichages de campagne sont une fonctionnalité de Microsoft Defender pour Office 365 Plan 2 (par exemple, Microsoft 365 E5 ou les organisations avec un module Office 365 Plan 2). Les affichages de campagne dans Microsoft 365 Defender identifient et classent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
+Les affichages de campagne sont une fonctionnalité de Microsoft Defender pour Office 365 Plan 2 (par exemple, Microsoft 365 E5 ou les organisations avec un module Office 365 Plan 2). Les affichages de campagne dans le Microsoft 365 Defender identifient et classent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
 
 - Examiner et répondre efficacement aux attaques par hameçonnage.
 - Mieux comprendre l’étendue de l’attaque.
@@ -54,11 +54,11 @@ Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-co
 
 Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée sur votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
 
-## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Affichages des campagnes dans le portail Microsoft 365 Defender
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Affichages des campagnes dans le portail Microsoft 365 Defender web
 
-Les affichages de campagne sont disponibles dans le portail Microsoft 365 Defender ( ) à <https://security.microsoft.com> l’adresse **e-mail & campagnes** de collaboration, ou \> directement à l’adresse <https://security.microsoft.com/campaigns> .
+Les affichages de campagne sont disponibles dans le portail Microsoft 365 Defender ( ) sur la & campagnes de <https://security.microsoft.com> **collaboration,** ou directement \> à <https://security.microsoft.com/campaigns> l’adresse .
 
-![Vue d’ensemble des campagnes dans le portail Microsoft 365 Defender](../../media/campaigns-overview.png)
+![Vue d’ensemble des campagnes dans Microsoft 365 Defender web](../../media/campaigns-overview.png)
 
 Vous pouvez également obtenir les affichages campagne à partir des points de vue de campagne :
 
@@ -67,7 +67,7 @@ Vous pouvez également obtenir les affichages campagne à partir des points de v
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Hameçonnage** \> **Onglet Campagne**
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Programmes malveillants** \> **Onglet Campagne**
 
-Pour accéder aux affichages campagne, vous devez être membre  des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Lecteur sécurité dans le portail Microsoft 365 Defender. Pour plus d’informations, [voir Autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
+Pour accéder aux affichages campagne, vous devez être membre  des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Lecteur sécurité dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 ## <a name="campaigns-overview"></a>Vue d’ensemble des campagnes
 
@@ -104,7 +104,7 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
   Notez que **le taux de clics** n’est pas utilisé dans les campagnes anti-programme malveillant.
 
-- **Visité :** nombre d’utilisateurs qui ont réellement effectué l’accès au site web de charge utile. S’il existe **des valeurs Clicked,** mais que les liens sécurisés bloquent l’accès au site web, cette valeur est zéro.
+- **Visité :** nombre d’utilisateurs qui ont réellement effectué l’accès au site web de charge utile. S’il existe **des valeurs Clicked,** mais Coffre liens ont bloqué l’accès au site web, cette valeur est zéro.
 
 **L’onglet Origine** de la campagne affiche les sources des messages sur une carte du monde.
 
@@ -116,7 +116,7 @@ En haut de la page **Campagne,** plusieurs paramètres de filtre et de requête 
 
 Le filtrage le plus simple que vous pouvez faire est la date/l’heure de début et la date/heure de fin.
 
-Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser.**
+Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser**.
 
 Les propriétés filtrables de campagne disponibles dans le bouton **Type** de campagne sont décrites dans la liste suivante :
 
@@ -161,7 +161,7 @@ Pour un filtrage plus avancé, y compris le  filtrage par plusieurs propriétés
 
 - Vous pouvez cliquer **sur Ajouter une condition pour** sélectionner plusieurs conditions.
 - Vous pouvez choisir l’opérateur **And** ou **Or** entre les conditions.
-- Vous pouvez sélectionner l’élément **de groupe Condition** en bas de la liste des conditions pour former des conditions composées complexes.
+- Vous pouvez sélectionner **l’élément de groupe Condition** en bas de la liste des conditions pour former des conditions composées complexes.
 
 Lorsque vous avez terminé, cliquez sur **le bouton Requête.**
 
@@ -169,7 +169,7 @@ Après avoir créé un filtre de base ou  avancé, vous pouvez l’enregistrer �
 
 Pour exporter le graphique ou la liste des campagnes, cliquez sur **Exporter** et sélectionnez Exporter les données **du graphique** ou Exporter la liste **des campagnes.**
 
-Si vous avez un abonnement Microsoft Defender pour point de terminaison, vous pouvez cliquer sur **MDE Paramètres** pour connecter ou déconnecter les informations des campagnes avec Microsoft Defender pour Endpoint. Pour plus d’informations, voir [Intégrer Microsoft Defender pour Office 365 microsoft Defender pour le point de terminaison.](integrate-office-365-ti-with-mde.md)
+Si vous avez un abonnement Microsoft Defender pour les points de terminaison, vous pouvez cliquer sur **MDE Paramètres** pour connecter ou déconnecter les informations des campagnes avec Microsoft Defender for Endpoint. Pour plus d’informations, voir [Intégrer Microsoft Defender pour Office 365 microsoft Defender pour le point de terminaison.](integrate-office-365-ti-with-mde.md)
 
 ## <a name="campaign-details"></a>Détails de la campagne
 
@@ -214,7 +214,7 @@ Le diagramme contient les informations suivantes :
 
   ****
 
-  |Valeur|Verdict de filtrage du courrier indésirable|Description|
+  |Valeur|Verdict du filtre anti-courrier indésirable|Description|
   |---|---|---|
   |**Autorisé**|`SFV:SKN` <p> `SFV:SKI`|Le message a été marqué comme n’étant pas du courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme n’étant pas un courrier indésirable par une règle de flux de messagerie (également appelée règle de transport). <p> Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent se trouver dans la même organisation.|
   |**Bloqué**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable. Par exemple, par une règle de flux de messagerie.|
@@ -223,7 +223,7 @@ Le diagramme contient les informations suivantes :
   |**Released**|`SFV:SKQ`|Le message a ignoré le filtrage du courrier indésirable car il a été libéré de la quarantaine.|
   |**Autoriser le client**<sup>\*</sup>|`SFV:SKA`|Le message a ignoré le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
   |**Bloc de client**<sup>\*\*</sup>|`SFV:SKA`|Le message a été bloqué par le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
-  |**Autoriser l’utilisateur**<sup>\*</sup>|`SFV:SFE`|Le message a ignoré le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des expéditeurs sûrs d’un utilisateur.|
+  |**Autoriser l’utilisateur**<sup>\*</sup>|`SFV:SFE`|Le message a ignoré le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des Coffre d’un utilisateur.|
   |**Blocage de l’utilisateur**<sup>\*\*</sup>|`SFV:BLK`|Le message a été bloqué par le filtrage du courrier indésirable car l’expéditeur se trouvait dans la liste des expéditeurs bloqués d’un utilisateur.|
   |**ZAP**|s/o|[La purge automatique de zéro heure (ZAP)](zero-hour-auto-purge.md) a déplacé le message remis dans le dossier Courrier indésirable ou mis en quarantaine. Vous configurez l’action dans votre stratégie anti-courrier indésirable.|
   |
@@ -255,9 +255,9 @@ Lorsqu’un message de hameçonnage est remis dans la boîte de réception ou le
 Si un utilisateur a cliqué sur l’URL de la charge utile dans le message d’hameçonnage, les actions s’affichent dans la zone de **clics de l’URL** du diagramme dans l’affichage Détails de la campagne.
 
 - **Autorisé**
-- **BlockPage**: le destinataire [a](safe-links.md) cliqué sur l’URL de la charge utile, mais son accès au site web malveillant a été bloqué par une stratégie de liens sécurisés dans votre organisation.
-- **BlockPageOverride**: le destinataire a cliqué sur l’URL de la charge utile dans le message, les liens sécurisés ont essayé de les arrêter, mais ils ont été autorisés à remplacer le bloc. Examinez vos [stratégies de liens](set-up-safe-links-policies.md) sécurisés pour voir pourquoi les utilisateurs sont autorisés à remplacer le verdict de liens sécurisés et à continuer vers le site web malveillant.
-- **PendingDetonationPage**: pièces jointes sécurisées dans Microsoft Defender pour Office 365 est en cours d’ouverture et d’examen de l’URL de la charge utile dans un environnement d’ordinateur virtuel.
+- **BlockPage**: le destinataire [a](safe-links.md) cliqué sur l’URL de la charge utile, mais son accès au site web malveillant a été bloqué par une stratégie de liens Coffre dans votre organisation.
+- **BlockPageOverride**: le destinataire a cliqué sur l’URL de la charge utile dans le message, Coffre Links a tenté de les arrêter, mais il a été autorisé à remplacer le bloc. Examinez vos [stratégies Coffre liens](set-up-safe-links-policies.md) pour voir pourquoi les utilisateurs sont autorisés à remplacer le verdict Coffre liens et à continuer vers le site web malveillant.
+- **PendingDetonationPage**: Coffre pièces jointes dans Microsoft Defender pour Office 365 est en cours d’ouverture et d’examen de l’URL de charge utile dans un environnement d’ordinateur virtuel.
 - **PendingDetonationPageOverride**: le destinataire a été autorisé à remplacer le processus de détonation de la charge utile et à ouvrir l’URL sans attendre les résultats.
 
 ### <a name="tabs"></a>Onglets
@@ -288,7 +288,7 @@ Les onglets de l’affichage Détails de la campagne vous permettent d’examine
   - **DKIM transmis**: l’expéditeur a été authentifié par [DKIM (Domain Keys Identified Mail).](support-for-validation-of-dkim-signed-messages.md) Un expéditeur qui ne passe pas la validation DKIM indique un expéditeur non authentifié ou le message usurpe un expéditeur légitime.
   - **DMARC transmis**: l’expéditeur a été authentifié par l’authentification de message basée sur le domaine, la rapport et [la conformité (DMARC)](use-dmarc-to-validate-email.md). Un expéditeur qui ne passe pas la validation DMARC indique un expéditeur non authentifié ou le message usurpe un expéditeur légitime.
 
-- **Attachments**
+- **Pièces jointes**
   - **Filename**
   - **SHA256**
   - **Famille de programmes malveillants**

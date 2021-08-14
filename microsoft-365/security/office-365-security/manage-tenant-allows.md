@@ -16,14 +16,14 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer les autoriser dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5870ff663f0e97d699f6e4a158f8b0b05ee0bf15
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 9a9b682307c9891aab8e73496916205368734b369ecea2f6e43d73f2c2640fbf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56853729"
 ---
-# <a name="add-allows-in-the-tenant-allowblock-list"></a>Ajout d’autorises dans la liste d’attente des locataires
+# <a name="add-allows-in-the-tenant-allowblock-list"></a>Ajouter des autorisations dans la liste verte/rouge du client
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -48,7 +48,7 @@ Autorisez les fichiers, les URL et les expéditeurs dans la section Soumissions 
 
 5. Activer **l’option Autoriser les messages comme celle-ci.** 
 
-6. Dans la **liste supprimée après** la liste, spécifiez la durée de fonctionnement de l’option d’autoriser.
+6. Dans la **liste supprimée après** la liste, spécifiez la durée de fonctionnement de l’option d’option d’autoriser.
 
 7. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
@@ -60,7 +60,7 @@ Autorisez les fichiers, les URL et les expéditeurs dans la section Soumissions 
 **Remarques** :
 
 - Seule la _combinaison_ de l’utilisateur usurpé et de l’infrastructure d’envoi, telle que définie dans la paire de domaines, est spécifiquement autorisée ou bloquée à l’usurpation. 
-- Lorsque vous configurez une entrée d’autoriser ou de bloquer une paire de domaines, les messages de cette paire de domaines n’apparaissent plus dans l’aperçu de l’usurpation d’intelligence.
+- Lorsque vous configurez une entrée d’autoriser ou de bloquer une paire de domaines, les messages provenant de cette paire de domaines n’apparaissent plus dans l’aperçu de l’usurpation d’intelligence.
 - Les entrées des expéditeurs usurpés n’expirent jamais.
 - L’usurpation prend en charge à la fois autoriser et bloquer. L’URL prend uniquement en charge l’autoriser.
 
@@ -73,7 +73,7 @@ Autorisez les fichiers, les URL et les expéditeurs dans la section Soumissions 
    - **Type d’usurpation**: sélectionnez l’une des valeurs suivantes :
      - **Interne**: l’expéditeur usurpé se trouve dans un domaine appartenant à votre organisation [(un domaine accepté).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **Externe**: l’expéditeur usurpé se trouve dans un domaine externe.
-   - **Action**: **sélectionnez Autoriser** ou **Bloquer.**
+   - **Action**: **sélectionnez Autoriser** ou **Bloquer**.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 

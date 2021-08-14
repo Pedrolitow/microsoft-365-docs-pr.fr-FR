@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur le niveau de confiance du courrier indésirable (SCL) appliqué aux messages dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55e64c72cc472e98baa8eb71e23dafb6b276ba01
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 0d93f0ba26e164209aa36dac8d8849bc0cb8be7ecf1c7b4faf624d4b1acab6f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625280"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56852877"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Niveau de confiance du courrier indésirable (SCL) dans EOP
 
@@ -46,7 +46,7 @@ Ce que signifie le SCL et les actions par défaut qui sont prises sur les messag
 |-1|Le message a ignoré le filtrage du courrier indésirable. Par exemple, le message est provenant d’un expéditeur fiable, a été envoyé à un destinataire fiable ou à partir d’un serveur source de messagerie sur la liste d’adresses IP permises. Pour plus d’informations, voir [Créer des listes d’expéditeurs sûrs dans EOP.](create-safe-sender-lists-in-office-365.md)|Le message est remis dans la boîte aux lettres des destinataires.|
 |0, 1|Le filtrage du courrier indésirable a déterminé que le message n’était pas du courrier indésirable.|Le message est remis dans la boîte aux lettres des destinataires.|
 |5, 6|Le filtrage du courrier indésirable a marqué le message comme **courrier indésirable**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
-|9 |Le filtrage du courrier indésirable a marqué le message comme courrier indésirable **à niveau de confiance élevé**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
+|9 |Le filtrage du courrier indésirable a marqué le message comme courrier **indésirable à niveau de confiance élevé**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
 |
 
 Vous remarquerez que les SCL 2, 3, 4, 7 et 8 ne sont pas utilisés par le filtrage du courrier indésirable.
@@ -57,4 +57,4 @@ Comme le SCL, le niveau de réclamation en bloc (BCL) identifie les messages él
 
 ****
 
-![L’icône courte pour LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Découvrez les cours vidéo gratuits **pour Microsoft 365 administrateurs et** professionnels de l’informatique, présentés par LinkedIn Learning.
+![L’icône courte pour LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nouveau Microsoft 365 ?** Découvrez les cours vidéo gratuits **pour Microsoft 365 administrateurs** et professionnels de l’informatique, présentés par LinkedIn Learning.

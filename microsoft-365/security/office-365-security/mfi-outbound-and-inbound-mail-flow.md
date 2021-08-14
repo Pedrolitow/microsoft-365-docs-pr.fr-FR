@@ -13,12 +13,12 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Les administrateurs peuvent en savoir plus sur les informations sur le flux de messagerie sortant et entrant dans le tableau de bord flux de messagerie du Centre de sécurité & conformité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a3117223e466a4a7aad7edf25ecdbcf0a3de719
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fd625d4b8ff70d6fba6af17f8f42a78257f97ff4bb64393c4c32a4d1fc1ee7c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56852884"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Informations sur le flux de messagerie sortant et entrant dans le Centre de sécurité & conformité
 
@@ -47,15 +47,15 @@ Lorsque vous cliquez sur Afficher les **détails** sur le widget, le volant Mess
 
 ![Message protégé en transit (par TLS) qui s’affiche après que vous avez cliqué sur Afficher les détails sur le widget de messagerie sortant et entrant](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
 
-Actuellement, TLS 1.2 est la version de TLS la plus sécurisée proposée par les Microsoft 365. Souvent, vous devez connaître le chiffrement TLS utilisé pour les audits de conformité. Vous n’avez probablement pas de relation directe avec la plupart des serveurs de messagerie source et de destination (vous ne les possédez pas, et Microsoft non plus), vous n’avez donc pas beaucoup d’options pour améliorer le chiffrement TLS utilisé par ces serveurs.
+Actuellement, TLS 1.2 est la version de TLS la plus sécurisée proposée par Microsoft 365. Souvent, vous devez connaître le chiffrement TLS utilisé pour les audits de conformité. Vous n’avez probablement pas de relation directe avec la plupart des serveurs de messagerie source et de destination (vous ne les possédez pas, et Microsoft non plus), vous n’avez donc pas beaucoup d’options pour améliorer le chiffrement TLS utilisé par ces serveurs.
 
 Toutefois, vous pouvez utiliser des [connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) pour garantir la meilleure protection TLS disponible pour les messages envoyés entre vos serveurs de messagerie et Microsoft 365. Le flux de messagerie entre Microsoft 365 et vos propres serveurs de messagerie ou serveurs qui appartiennent à vos partenaires est souvent plus important et sensible que les messages ordinaires. Vous pouvez donc appliquer une sécurité et un niveau de sécurité supplémentaires à ces messages.
 
-Vous pouvez mettre à niveau ou corriger vos propres serveurs de messagerie pour améliorer le chiffrement TLS utilisé, ou contactez vos partenaires pour en faire de même. Le **rapport connecteur affiche** à la fois le volume de flux de messagerie et le chiffrement TLS pour les messages qui utilisent Microsoft 365 connecteurs.
+Vous pouvez mettre à niveau ou corriger vos propres serveurs de messagerie pour améliorer le chiffrement TLS utilisé, ou contactez vos partenaires pour en faire de même. Le **rapport connecteur affiche** le volume de flux de messagerie et le chiffrement TLS pour les messages qui utilisent Microsoft 365 connecteurs.
 
-Vous pouvez cliquer sur **le lien du rapport connecteur** pour y [aller.](view-mail-flow-reports.md#connector-report) Les informations suivantes peuvent être disponibles sur la page de rapport **connecteur** si la condition associée a été détectée :
+Vous pouvez cliquer sur **le lien du rapport connecteur** pour aller au rapport [connecteur.](view-mail-flow-reports.md#connector-report) Les informations suivantes peuvent être disponibles sur la page de rapport **connecteur** si la condition associée a été détectée :
 
-- **Connecteur partenaire entrant avec un flux de messagerie TLS1.0 important**
+- **Connecteur partenaire entrant avec flux de messagerie TLS1.0 important**
 - **Connecteur OnPremises entrant avec un flux de messagerie TLS1.0 important**
 
 Pour les connexions TLS 1.0, vous devez vraiment mettre à niveau ou corriger votre serveur de messagerie ou le serveur de votre partenaire afin d’éviter tout problème lorsque la prise en charge de TLS 1.0 est finalement Microsoft 365.

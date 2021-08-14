@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment installer des applications Office sur des appareils iOS.
-ms.openlocfilehash: 0cb7cae3a4569d83a1b2e6b27ca42de2142f30e5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4f5bdf92f2c221509a8e36f97531bb42e928e38553b4fb0cae6190bea18f5ed2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580557"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821061"
 ---
 # <a name="install-outlook-and-office-apps-on-ios-devices"></a>Installer des Outlook et Office sur des appareils iOS
 
@@ -42,7 +42,7 @@ Une fois&#39;avez Microsoft 365 Business Premium, vous pouvez installer Office a
 5. Entrez votre adresse e-mail de travail.
 6. Sélectionnez **Ajouter un** compte, entrez votre mot de passe, puis choisissez **Se connectez.**
 7. (Facultatif), sélectionnez **Nous allons le faire ** pour ajouter d’autres comptes, ou sélectionnez  **Peut-être**  plus tard pour ignorer cette étape.
-8. Sélectionnez **OK** pour redémarrer l’application afin Microsoft 365 Business protéger vos données Outlook données.
+8. Sélectionnez **OK** pour redémarrer l’application afin Microsoft 365 Entreprise puisse protéger vos Outlook données.
 9. Ouvrez Outlook nouveau et un message de confirmation s’affiche. Sélectionnez  **OK**.
 10. Créez un code confidentiel pour Outlook applications Office applications et confirmez-le. À partir de maintenant, ce code confidentiel sera utilisé pour sécuriser toutes les application Office données.
 11. Sélectionnez  **Activer pour**  activer les notifications par courrier électronique.

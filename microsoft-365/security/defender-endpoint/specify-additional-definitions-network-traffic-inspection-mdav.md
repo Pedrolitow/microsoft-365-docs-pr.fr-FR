@@ -16,18 +16,18 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 82568df0a6ad2225fd31b4c0fa4a654710f1e98b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ee2e3f8a1071828c9d8b87b32bcd15f38374d13d37b5215a0cefae14cabde8f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894082"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -35,7 +35,7 @@ Vous pouvez spécifier des ensembles de définitions supplémentaires pour l’i
 
 ## <a name="use-group-policy-to-specify-additional-definition-sets-for-network-traffic-inspection"></a>Utiliser une stratégie de groupe pour spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau
 
-1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
+1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
 2. Go to **Windows Components**  >  **Antivirus Microsoft Defender**  >  **Network Inspection System**. 
 
@@ -43,7 +43,7 @@ Vous pouvez spécifier des ensembles de définitions supplémentaires pour l’i
 
 4. Pour modifier la stratégie, sélectionnez le lien **modifier le paramètre de stratégie.**
 
-5. Sélectionnez **Activé,** puis, dans la section **Options,** **sélectionnez Afficher...**.
+5. Sélectionnez **Activé,** puis dans la section **Options,** **sélectionnez Afficher...**.
 
 6. Ajoutez des entrées à la liste, puis sélectionnez **OK**. 
 
@@ -56,7 +56,7 @@ Vous pouvez spécifier des ensembles de définitions supplémentaires pour l’i
   
 ## <a name="related-articles"></a>Articles connexes
 
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
  
 - [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 

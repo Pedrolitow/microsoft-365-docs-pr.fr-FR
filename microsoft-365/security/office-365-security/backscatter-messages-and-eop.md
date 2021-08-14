@@ -19,12 +19,12 @@ ms.custom:
 description: Dans cet article, vous allez découvrir la protection contre la Microsoft Exchange Online (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5882f611c3feec9a22760e696973cd0713649b2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1ae3cf89171f7da89ea1821c693152cdd0e3bf968f3e9ff73d517aecad2de7a5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204025"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56852199"
 ---
 # <a name="backscatter-in-eop"></a>Rétrodiffusion dans EOP
 
@@ -42,4 +42,4 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Onli
 Backscatterer.org conserve une liste d’adresses (également appelée liste d’adresses DNS bloqués ou DNSBL) des serveurs de messagerie qui étaient chargés de l’envoi de la backscatter, et les serveurs EOP peuvent apparaître dans cette liste. Toutefois, nous n’essayons pas de nous supprimer de la liste d’Backscatterer.org bloqués, car il ne s’agit pas d’une liste d’expéditeurs de courrier indésirable (de leur propre admission).
 
 > [!TIP]
-> Le Backscatter.org web () recommande d’utiliser son service pour vérifier le courrier entrant en mode sans échec plutôt qu’en mode de rejet (les services de courrier de grande taille envoient presque toujours des <http://www.backscatterer.org/?target=usage> retours).
+> Le Backscatter.org web () recommande d’utiliser son service pour vérifier le courrier entrant en mode Coffre au lieu du mode de rejet (les services de courrier de grande taille envoient presque toujours des <http://www.backscatterer.org/?target=usage> retours).

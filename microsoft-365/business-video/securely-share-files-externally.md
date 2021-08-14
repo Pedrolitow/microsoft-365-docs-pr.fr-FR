@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment partager en toute sécurité vos fichiers d’entreprise avec des personnes extérieures à votre organisation avec un lien sécurisé.
-ms.openlocfilehash: 17875dc403c96caac55a5487cf5649d6778ec160
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 26f6d88805a9dd185dfd2c8271613f9701fd51eef3a8ebd8ef9a990785917506
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705581"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820958"
 ---
 # <a name="securely-share-files-externally"></a>Partager en toute sécurité des fichiers en externe
 
@@ -39,9 +39,9 @@ Dans Microsoft 365 entreprise, il est facile de partager des fichiers avec des p
 
 1. En haut de la bibliothèque documents sur votre site SharePoint, cliquez sur **Nouveau,** puis sélectionnez **Dossier.**
 1. Nommez le dossier, puis cliquez sur **Créer.**
-1. Télécharger les fichiers que vous souhaitez partager avec la nouvelle bibliothèque, ou choisissez **Nouveau** pour créer des documents directement dans la bibliothèque.
+1. Télécharger les fichiers que vous souhaitez partager avec la nouvelle bibliothèque, ou choisissez **Nouveau** pour créer de nouveaux documents directement dans la bibliothèque.
 1. Sélectionnez votre nouveau dossier dans la bibliothèque documents, puis cliquez sur le **bouton** Partager.
 1. Dans la **fenêtre Lien d’envoi,** cliquez sur la liste en haut, choisissez Des personnes spécifiques, sélectionnez Autoriser la **modification,** puis sélectionnez **Appliquer**. 
 1. Dans la **fenêtre Lien d’envoi,** entrez l’adresse e-mail de votre client, tapez un message, puis choisissez **Envoyer.**
 
-    Votre client reçoit un courrier électronique avec un code de vérification qu’il doit envoyer à lui-même pour accéder à votre dossier. S’il ne trouve pas l’e-mail, il doit vérifier son dossier de courrier indésirable.
+    Votre client reçoit un courrier électronique avec un code de vérification qu’il doit envoyer à lui-même pour accéder à votre dossier. S’il ne trouve pas le courrier électronique, il doit vérifier son dossier De courrier indésirable.

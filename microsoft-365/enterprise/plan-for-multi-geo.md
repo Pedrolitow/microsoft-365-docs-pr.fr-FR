@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Découvrez Microsoft 365 Multi-Geo, comment opèrent les fonctionnalités multigéographiques et les emplacements géographiques disponibles pour le stockage de données.
-ms.openlocfilehash: 52c4bc8a23bdf89afb1a3f3eae3fe6348fed8009
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 2f651754e4ebf3e9f088e4acc7bd9bb8f007c64ee0add5def79312ca21012db6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362713"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848374"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan pour Microsoft 365 Multi-Geo
 
@@ -79,6 +79,6 @@ Pour commencer à configurer Microsoft 365 Multi-Geo, voir [Configurer Microsoft
 
 Une fois que vous avez terminé la configuration, n’oubliez pas de [migrer les bibliothèques OneDrive de vos utilisateurs](move-onedrive-between-geo-locations.md) pour permettre à ceux-ci de travailler à partir de leur emplacement par défaut des données.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Configuration eDiscovery dans Microsoft 365 Multi-Geo](./multi-geo-ediscovery-configuration.md)

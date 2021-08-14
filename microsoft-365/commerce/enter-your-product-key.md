@@ -22,12 +22,12 @@ ms.custom:
 - AdminTemplateSet
 description: Si vous avez acheté Microsoft 365 Business Standard dans un magasin, découvrez comment échanger la clé de produit et activer votre abonnement.
 ms.date: 11/13/2020
-ms.openlocfilehash: c3807a6e4ce5a49b1552fee7320c03c6b329a8c6
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 6f812948e06b4ddf678b8112bca4c068e8d36444d7b036f95764d5bc0e7c9bde
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394448"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820922"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrez votre clé de produit pour Microsoft 365 Business Standard
 
@@ -58,7 +58,7 @@ Si vous avez acheté Microsoft 365 Business Standard dans un magasin, cet articl
 
 Pour prolonger la date d’expiration ou ajouter une licence à votre abonnement Microsoft 365 Business Standard existant, utilisez une nouvelle clé inutilisée pour le même plan Microsoft 365 de licence. La saisie de votre clé Microsoft 365 produit d’origine ne fonctionne pas, car une clé qui a déjà été échangée ne peut pas être utilisée à nouveau. Voir [Ajouter des licences ou étendre un abonnement payé pour l’utilisation d’une clé de produit.](licenses/add-licenses-using-product-key.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous êtes nouveau dans Microsoft 365 entreprise, découvrez comment [configurer Microsoft 365](../admin/setup/setup.md).
 
@@ -66,7 +66,7 @@ Consultez cette liste des erreurs et des solutions courantes : problèmes liés 
   
 Sinon, [appelez le Support Microsoft.](../business-video/get-help-support.md)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Mettre à niveau vers un autre plan](./subscriptions/upgrade-to-different-plan.md) (article)\
 [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Business ?](./subscriptions/what-if-my-subscription-expires.md) (article)\

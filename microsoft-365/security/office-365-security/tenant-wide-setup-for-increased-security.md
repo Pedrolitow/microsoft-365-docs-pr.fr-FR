@@ -1,5 +1,5 @@
 ---
-title: Configurer votre client Microsoft 365 pour une sécurité accrue
+title: Configurer votre locataire Microsoft 365 pour renforcer la sécurité
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -20,14 +20,14 @@ ms.custom:
 description: Cette rubrique vous dirige vers la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de Microsoft 365 environnement.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1bb3f9bf6507e41d8b927137a9ab9ea8803637c
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 1e8008bafe2aae7f3076257662fb3eb0bd513310431cf7711db344379e6923b8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105523"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56854263"
 ---
-# <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre client Microsoft 365 pour une sécurité accrue
+# <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre locataire Microsoft 365 pour renforcer la sécurité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -50,7 +50,7 @@ Le portail Microsoft 365 Defender inclut des fonctionnalités qui protègent vot
 
 ****
 
-|Domaine|Stratégie par défaut ?|Recommandation|
+|Zone|Stratégie par défaut ?|Recommandation|
 |---|---|---|
 |**Anti-hameçonnage**|Oui|Configurez la stratégie anti-hameçonnage par défaut comme décrit ici : Configurez les paramètres de [protection anti-hameçonnage](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)dans EOP et Defender pour Office 365 . <p> Plus d’informations : <ul><li>[Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Paramètres de stratégie anti-hameçonnage recommandés dans Microsoft Defender pour Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Perspicacité de l'usurpation d'identité](impersonation-insight.md)</li><li>[Informations sur l’usurpation d’intelligence dans EOP](learn-about-spoof-intelligence.md)</li><li>[Gérer la liste d’accès au client autoriser/bloquer](tenant-allow-block-list.md).</li></ul>|
 |**Moteur anti-programme malveillant**|Oui|Configurez la stratégie anti-programme malveillant par défaut comme décrit ici : Configurer les paramètres de [protection anti-programme malveillant dans EOP.](protect-against-threats.md#part-1---anti-malware-protection-in-eop) <p> Plus d’informations : <ul><li>[Protection contre les programmes malveillants](anti-malware-protection.md)</li><li>[Paramètres de stratégie anti-programme malveillant recommandés](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[Configurer des stratégies anti-programme malveillant](configure-anti-malware-policies.md)</li></ul>|
@@ -74,9 +74,9 @@ Consultez ces rapports et tableaux de bord pour en savoir plus sur l’état de 
 |Tableau de bord|Description|
 |---|---|
 |Rapports de sécurité de messagerie|Ces rapports sont disponibles dans Exchange Online Protection. Pour plus d’informations, voir Afficher les rapports de sécurité de messagerie [dans le portail Microsoft 365 Defender.](view-email-security-reports.md)|
-|Rapports Defender for Office 365|Les rapports sont disponibles uniquement dans Defender pour Office 365. Pour plus d’informations, [voir View Defender pour Office 365 rapports dans le portail Microsoft 365 Defender.](view-reports-for-mdo.md)|
+|Rapports Defender for Office 365|Les rapports sont disponibles uniquement dans Defender pour les Office 365. Pour plus d’informations, [voir View Defender pour Office 365 rapports dans le portail Microsoft 365 Defender.](view-reports-for-mdo.md)|
 |Rapports et informations sur le flux de messagerie|Ces rapports et informations sont disponibles dans le Centre d’administration Exchange(EAC). Pour plus d’informations, voir [Rapports de flux de messagerie](/exchange/monitoring/mail-flow-reports/mail-flow-reports) et Informations sur le flux de [messagerie.](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
-|[Threat Explorer (et détections en temps réel)](threat-explorer.md)|Si vous examinez ou rencontrez une attaque contre votre client, utilisez l’Explorateur (ou les détections en temps réel) pour analyser les menaces. L’Explorateur (et le rapport de détections en temps réel) vous indique le volume d’attaques au fil du temps, et vous pouvez analyser ces données par familles de menaces, infrastructure d’attaquant, etc. Vous pouvez également marquer tout message suspect pour la liste Incidents.|
+|[Threat Explorer (et détections en temps réel)](threat-explorer.md)|Si vous examinez ou rencontrez une attaque contre votre client, utilisez l’Explorateur (ou les détections en temps réel) pour analyser les menaces. L’Explorateur (et le rapport de détections en temps réel) vous indique le volume d’attaques au fil du temps, et vous pouvez analyser ces données par familles de menaces, infrastructure de l’attaquant, etc. Vous pouvez également marquer tout message suspect pour la liste Incidents.|
 |
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>Configurer des paramètres Exchange Online à l’échelle du client
@@ -87,9 +87,9 @@ Voici quelques paramètres supplémentaires qui sont recommandés.
 
 ****
 
-|Domaine|Recommandation|
+|Zone|Recommandation|
 |---|---|
-|**Règles de flux de messagerie** (également appelées règles de transport)|Ajoutez une règle de flux de messagerie pour vous protéger contre les ransomware en bloquant les types de fichiers exécutables Office types de fichiers contenant des macros. Pour plus d’informations, voir [Utiliser des règles de flux de messagerie pour inspecter les pièces jointes](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)des messages Exchange Online . <p> Consultez les rubriques supplémentaires ci-après : <ul><li>[Se protéger contre les rançongiciels](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[Protection contre les programmes malveillants et ransomware dans Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[Récupérer d’une attaque par ransomware dans Office 365](recover-from-ransomware.md)</li></ul> <p> Créez une règle de flux de messagerie pour empêcher le forwarding automatique du courrier électronique vers des domaines externes. Pour plus d’informations, voir [Atténuation des règles de forwarding externe client avec le score de sécurisation.](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) <p> Plus d’informations : [Règles de flux de messagerie (règles](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) de transport) dans Exchange Online|
+|**Règles de flux de messagerie** (également appelées règles de transport)|Ajoutez une règle de flux de messagerie pour vous protéger contre les ransomware en bloquant les types de fichiers exécutables Office types de fichiers contenant des macros. Pour plus d’informations, voir [Utiliser des règles de flux de messagerie pour inspecter les pièces jointes](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)des messages Exchange Online . <p> Consultez les rubriques supplémentaires ci-après : <ul><li>[Se protéger contre les rançongiciels](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[Protection contre les programmes malveillants et ransomware dans Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[Récupérer d’une attaque par ransomware dans Office 365](recover-from-ransomware.md)</li></ul> <p> Créez une règle de flux de messagerie pour empêcher le forwarding automatique du courrier électronique vers des domaines externes. Pour plus d’informations, voir [Atténuation des règles de forwarding externe client avec le score de sécurisation.](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) <p> Plus d’informations [: Règles de flux de messagerie (règles](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) de transport) Exchange Online|
 |**Authentification moderne**|L’authentification moderne est une condition préalable à l’utilisation de l’authentification multifacteur (MFA). L’mf est recommandée pour sécuriser l’accès aux ressources cloud, y compris la messagerie. <p> Consultez les rubriques ci-après : <ul><li>[Activation ou désactivation de l’authentification moderne dans Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype Entreprise En ligne : activer votre client pour l’authentification moderne](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> L’authentification moderne est activée par défaut pour Office clients 2016, SharePoint Online et OneDrive Entreprise. <p> Plus d’informations : Fonctionnement de l’authentification [moderne Office 2013 et Office applications clientes 2016](../../enterprise/modern-auth-for-office-2013-and-2016.md)|
 |
 
@@ -105,7 +105,7 @@ Pour prendre en charge les objectifs de protection de base, configurez les strat
 
 ****
 
-|Domaine|Inclut une stratégie par défaut|Recommandation|
+|Zone|Inclut une stratégie par défaut|Recommandation|
 |---|---|---|
 |**Partage** (SharePoint Online et OneDrive Entreprise)|Oui|Le partage externe est activé par défaut. Ces paramètres sont recommandés : <ul><li>Autoriser le partage à des utilisateurs externes authentifiés et l’utilisation de liens d’accès anonyme (paramètre par défaut).</li><li>Les liens d’accès anonyme expirent dans ce nombre de jours. Entrez un nombre, si vous le souhaitez, par exemple 30 jours.</li><li>Type de lien par défaut : sélectionnez Interne (personnes de l’organisation uniquement). Les utilisateurs qui souhaitent partager à l’aide de liens anonymes doivent choisir cette option dans le menu de partage.</li></ul> <p> Plus d’informations : [Vue d’ensemble du partage externe](/sharepoint/external-sharing-overview)|
 |

@@ -19,12 +19,12 @@ ms.custom:
 description: Utilisez le nouveau tableau de bord de sécurité pour passer en revue Office 365 l’état de la protection contre les menaces, et afficher et agir sur les alertes de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1504c84f0657dd049b63908d56c4ec6cca4871de
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 95f0a804491e8f2fe4963379efd68873336966f164fda9692ca289d4bc60253b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56852181"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Tableau de bord de sécurité dans le Centre de sécurité & conformité
 
@@ -141,7 +141,7 @@ Pour afficher ou accéder au widget Alertes de gestion des menaces récentes, vo
 
 [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
 
-[Afficher des rapports pour Microsoft Defender pour Office 365](view-reports-for-mdo.md)
+[Afficher les rapports de Microsoft Defender pour Office 365](view-reports-for-mdo.md)
 
 [Defender pour Office 365](defender-for-office-365.md)
 
