@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft et configurez des tests automatisés des actions. Gérer l’historique des utilisateurs et filtrer l’affichage de votre tableau de bord.
-ms.openlocfilehash: 9b6885d101529d18201084b3364c6412bbbc4f4d
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 3d6eb3abac41106d48794b7f1859d7c809602489db93e99a46a4eed44efd6d30
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725827"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892307"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -312,7 +312,7 @@ Il existe deux façons d’agir à partir de cet écran :
 
 1. Sur la ligne de votre solution prévue, sous la colonne **Actions** restantes, sélectionnez le numéro de lien hypertexte. Vous verrez une vue filtrée de l’écran actions d’amélioration affichant les actions d’amélioration non testées pour cette solution.
 
-2. Sur la ligne de votre solution prévue, sous la colonne **Ouvrir la solution,** sélectionnez **Ouvrir**. Vous verrez la solution ou l’emplacement dans les centres de sécurité et de conformité Microsoft 365 et Office 365 où vous pouvez prendre l’action recommandée.
+2. Sur la ligne de votre solution prévue, sous la colonne **Ouvrir la solution,** sélectionnez **Ouvrir**. Vous verrez la solution ou l’emplacement dans les centres de sécurité et conformité Microsoft 365 et Office 365 où vous pouvez prendre l’action recommandée.
 
 ## <a name="assessments-page"></a>Page Évaluations
 
@@ -322,7 +322,7 @@ Le compteur de **modèles activés** situé en haut de la page indique le nombre
 
 La page Évaluations récapitule les informations clés sur chaque évaluation :
 
-- **Évaluation**: nom de l’évaluation
+- **Évaluation :** nom de l’évaluation
 - **État**:
     - **Complète** : tous les contrôles ont l’état « transmis » ou au moins un est passé et les autres sont « hors de portée »
     - **Incomplet** : au moins un contrôle a l’état « échec »

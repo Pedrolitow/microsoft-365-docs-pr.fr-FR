@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les types d’adress
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5a02313bf8c36fe0be91340e421c69a8dc5c0842
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0451f89501a9247b80d5696a085728a5edc66af882a57788063e702733c9cd97
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56800855"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse De pour empêcher le hameçonnage
 
@@ -57,8 +57,8 @@ L’adresse De est définie en détail sur plusieurs RFC (par exemple, les secti
 
 - **Nom complet**: expression facultative qui décrit le propriétaire de l’adresse e-mail.
 
-  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme indiqué. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
-  - Si l’adresse De comprend un nom complet, la valeur EmailAddress doit être entre crochets (< >) comme illustré.
+  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme illustré. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
+  - Si l’adresse De comprend un nom d’affichage, la valeur EmailAddress doit être entre crochets (< >) comme illustré.
   - Microsoft recommande vivement d’insérer un espace entre le nom complet et l’adresse e-mail.
 
 - **EmailAddress**: une adresse de messagerie utilise le format `local-part@domain` :
@@ -100,7 +100,7 @@ Les adresses de messagerie De suivantes ne sont pas valides :
 
 - `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Texte après l’adresse e-mail.)
 
-- `From: Sender, Example <sender.example@contoso.com>` (Le nom complet contient une virgule, mais n’est pas entre guillemets doubles.)
+- `From: Sender, Example <sender.example@contoso.com>` (Le nom complet contient une virgule, mais n’est pas entouré de guillemets doubles.)
 
 - `From: "Microsoft 365 <sender@contoso.com>"` (La valeur entière est incorrectement entourée de guillemets doubles.)
 
@@ -112,7 +112,7 @@ Les adresses de messagerie De suivantes ne sont pas valides :
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Supprimer les réponses automatiques à votre domaine personnalisé
 
-Vous ne pouvez pas utiliser la valeur `From: <>` pour supprimer les réponses automatiques. Au lieu de cela, vous devez configurer un enregistrement MX null pour votre domaine personnalisé. Les réponses automatiques (et toutes les réponses) sont supprimées naturellement, car il n’existe aucune adresse publiée à qui le serveur répondant peut envoyer des messages.
+Vous ne pouvez pas utiliser la valeur pour `From: <>` supprimer les réponses automatiques. Au lieu de cela, vous devez configurer un enregistrement MX null pour votre domaine personnalisé. Les réponses automatiques (et toutes les réponses) sont supprimées naturellement, car il n’existe aucune adresse publiée à qui le serveur répondant peut envoyer des messages.
 
 - Choisissez un domaine de messagerie qui ne peut pas recevoir de courrier électronique. Par exemple, si votre domaine principal est contoso.com, vous pouvez choisir noreply.contoso.com.
 
@@ -136,4 +136,4 @@ Vous ne pouvez pas remplacer les exigences d’adresse de provenance pour les me
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Autres méthodes de prévention et de protection contre les cybercriminels dans Microsoft 365
 
-Pour plus d’informations sur la façon de renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, voir les [10](../../admin/security-and-compliance/secure-your-business-data.md)principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise.
+Pour plus d’informations sur la façon dont vous pouvez renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, voir les [10](../../admin/security-and-compliance/secure-your-business-data.md)principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise.

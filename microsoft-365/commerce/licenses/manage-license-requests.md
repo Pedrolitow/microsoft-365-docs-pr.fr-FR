@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment examiner et approuver ou refuser les demandes de licence des utilisateurs pour votre abonnement Microsoft 365 entreprise.
 ms.date: 06/07/2021
-ms.openlocfilehash: 23258d21ebb413c56323aa4dab25cee60baf2be0
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 3a1290c071fa96be654e645d6f7ca82197ecc4b929f6c6c97d1b2c61625b5ef7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815050"
 ---
 # <a name="manage-license-requests"></a>Gérer les demandes de licence
 
@@ -41,7 +41,7 @@ Pour voir et gérer les demandes de licence, l’administrateur utilise **l’on
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global pour effectuer les tâches de cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur global pour effectuer les tâches de cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-your-own-request-process"></a>Utiliser votre propre processus de demande
 
@@ -77,7 +77,7 @@ Lorsque vous revenir à la liste **demandes,** vous voyez le message Que vous ut
 9. Fermez le volet droit.
     Les utilisateurs reçoivent un courrier électronique qui indique que leur demande a été approuvée ou refusée.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Déplacer les utilisateurs vers un autre abonnement](../subscriptions/move-users-different-subscription.md) (article)\

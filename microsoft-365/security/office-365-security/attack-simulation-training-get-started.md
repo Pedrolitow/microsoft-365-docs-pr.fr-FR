@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser la formation sur la simulation d’attaques pour exécuter des attaques par hameçonnage simulé et par mot de passe dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fa10d0d29b76d1631dd349d255b6c386557b5b8
-ms.sourcegitcommit: 2266c2da090bc9a6dc1e01dea07f26901d20d57b
+ms.openlocfilehash: a73be772e0426c987f1ab3b4f66ed0c2e24a178267dd8a7f09cbc47ae28cd48c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53222669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56802029"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Commencer à utiliser la formation à la simulation d’attaque
 

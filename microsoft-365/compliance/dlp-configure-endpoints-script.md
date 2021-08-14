@@ -14,16 +14,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Utilisez un script local pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 55109d8fda52db6651d4398cd84ffd6668b4d871
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9b5df749d71ac3c7b6004f2c44e5d0015595a935a749061eb74b581ae44951cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892126"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Intégrer les appareils Windows 10 utilisant un script local
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
 
@@ -52,13 +52,13 @@ Vous pouvez également intégrer manuellement des appareils individuels pour Mic
 
 8.  Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
-    ![Menu Démarrer de la fenêtre pointant sur Exécuter en tant qu’administrateur](../media/dlp-run-as-admin.png)
+    ![Fenêtre menu Démarrer pointant sur Exécuter en tant qu’administrateur](../media/dlp-run-as-admin.png)
 
 9.  Tapez l’emplacement du fichier de script. Si vous avez copié le fichier sur le Bureau, tapez : *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
 10.  Appuyez sur **entrée** ou cliquez sur **OK.**
 
-Pour plus d’informations sur la façon dont vous pouvez vérifier manuellement que l’appareil est conforme et signale correctement les données du capteur, consultez la Microsoft Defender Advanced Threat Protection problèmes [d’intégration.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+Pour plus d’informations sur la façon dont vous pouvez vérifier manuellement que l’appareil est conforme et signale correctement les données du capteur, consultez La procédure de résolution des problèmes d’intégration de la Protection avancée contre les [menaces Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
 
 ## <a name="offboard-devices-using-a-local-script"></a>Hors-carte des appareils à l’aide d’un script local
 Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
@@ -74,7 +74,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
-5. Extrayez le contenu du .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+5. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 6.  Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil et exécutez le script :
 
@@ -82,7 +82,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 8.  Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
-    ![Menu Démarrer de la fenêtre pointant sur Exécuter en tant qu’administrateur](../media/dlp-run-as-admin.png)
+    ![Fenêtre menu Démarrer pointant sur Exécuter en tant qu’administrateur](../media/dlp-run-as-admin.png)
 
 9.  Tapez l’emplacement du fichier de script. Si vous avez copié le fichier sur le Bureau, tapez : *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -105,10 +105,10 @@ La surveillance peut également être effectuée directement sur le portail ou �
 3. Vérifiez que les appareils apparaissent.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](dlp-configure-endpoints-gp.md)
 - [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](dlp-configure-endpoints-mdm.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](dlp-configure-endpoints-vdi.md)
 - [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Résoudre les problèmes Microsoft Defender Advanced Threat Protection’intégration](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Résoudre les problèmes d’intégration de la Protection avancée contre les menaces Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

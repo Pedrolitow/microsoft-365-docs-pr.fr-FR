@@ -1,5 +1,5 @@
 ---
-title: Connexion sécurisée des utilisateurs à votre client Microsoft 365
+title: Connexion sécurisée des utilisateurs à votre client Microsoft 365
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Renforcez la sécurité des connexions de vos utilisateurs à l’aide de l’authentification multifacteur (MFA) et d’autres fonctionnalités.
-ms.openlocfilehash: 32a33822d33d5be881e02089d064866db5d8e111
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3520a76b3007befda335ef26609ae89fe8b2a7b92821bb9f72e9213087df5fb5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051257"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813233"
 ---
-# <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Connexion sécurisée des utilisateurs à votre client Microsoft 365
+# <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Connexion sécurisée des utilisateurs à votre client Microsoft 365
 
-Pour renforcer la sécurité des connexions des utilisateurs :
+Pour renforcer la sécurité des connexions des utilisateurs :
 
 - Utiliser Windows Hello Entreprise
-- Utilisez la protection par mot de passe Azure Active Directory (Azure AD).
+- Utilisez la protection par mot de passe Azure Active Directory (Azure AD).
 - Utilisez l’authentification multifacteur (MFA)
 - Déployer les configurations des identités et de l’accès aux appareils
 - Protégez-vous contre la compromission d’informations d’identification avec Azure AD protection des identités
@@ -56,20 +56,20 @@ La première étape de l’utilisation de l’authentification multifacteur est 
 
 Une fois cette première étape effectuée, Microsoft recommande l’authentification multifacteur pour tous les utilisateurs.
 
-En fonction de votre plan Microsoft 365, trois méthodes sont possibles pour imposer l’utilisation de l’authentification multifacteur.
+En fonction de votre plan Microsoft 365, trois méthodes sont possibles pour imposer l’utilisation de l’authentification multifacteur.
 
 | Planification | Recommandation |
 |---------|---------|
-|Toutes les offres Microsoft 365 (sans licence Azure AD Premium P1 ou P2)     |[Activer les paramètres de sécurité par défaut dans Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). La sécurité par défaut d’Azure AD inclut l’authentification multifacteur pour les utilisateurs et les administrateurs.   |
-|Microsoft 365 E3 (inclut les licences Azure AD Premium P1)     | Utilisez les [Stratégies d’accès conditionnel courantes](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br>- [Exiger l’authentification multifacteur pour les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquer l’authentification héritée](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (inclut les licences Azure AD Premium P2)     | Pour tirer parti de la protection d’identité Azure AD Identity Protection, commencez à implémenter la [série recommandée concernant l’accès conditionnel et les stratégies associées](../security/defender-365-security/identity-access-policies.md) en créant les deux stratégies suivantes :<br> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Les utilisateurs à risque élevé doivent modifier leur mot de passe](../security/defender-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Toutes les offres Microsoft 365 (sans licence Azure AD Premium P1 ou P2)     |[Activer les paramètres de sécurité par défaut dans Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). La sécurité par défaut d’Azure AD inclut l’authentification multifacteur pour les utilisateurs et les administrateurs.   |
+|Microsoft 365 E3 (inclut les licences Azure AD Premium P1)     | Utilisez les [Stratégies d’accès conditionnel courantes](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br>- [Exiger l’authentification multifacteur pour les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquer l’authentification héritée](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (inclut les licences Azure AD Premium P2)     | Pour tirer parti de la protection d’identité Azure AD Identity Protection, commencez à implémenter la [série recommandée concernant l’accès conditionnel et les stratégies associées](../security/office-365-security/identity-access-policies.md) en créant les deux stratégies suivantes :<br> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Les utilisateurs à risque élevé doivent modifier leur mot de passe](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### <a name="security-defaults"></a>Paramètres de sécurité par défaut
 
-Les paramètres de sécurité par défaut sont une nouvelle fonctionnalité pour Microsoft 365 et les abonnements Office 365 payants ou en version d’évaluation créés après le 21 octobre 2019. Les paramètres de sécurité par défaut de ces abonnements sont activés, ce qui ***nécessite que tous vos utilisateurs utilisent l’authentification multifacteur à l’aide de l’application Microsoft Authenticator***.
+Les paramètres de sécurité par défaut sont une nouvelle fonctionnalité pour Microsoft 365 et les abonnements Office 365 payants ou en version d’évaluation créés après le 21 octobre 2019. Les paramètres de sécurité par défaut de ces abonnements sont activés, ce qui ***nécessite que tous vos utilisateurs utilisent l’authentification multifacteur à l’aide de l’application Microsoft Authenticator***.
  
-Les utilisateurs disposent de 14 jours pour s’inscrire à l’authentification multifacteur de l’application Microsoft Authenticator sur leur smartphone, un délai qui commence dès la première connexion suivant l’activation des paramètres de sécurité par défaut. Lorsque les 14 jours sont écoulés, l’utilisateur ne peut pas se connecter tant que son inscription à l’authentification multifacteur n’est pas terminée.
+Les utilisateurs disposent de 14 jours pour s’inscrire à l’authentification multifacteur de l’application Microsoft Authenticator sur leur smartphone, un délai qui commence dès la première connexion suivant l’activation des paramètres de sécurité par défaut. Lorsque les 14 jours sont écoulés, l’utilisateur ne peut pas se connecter tant que son inscription à l’authentification multifacteur n’est pas terminée.
 
 Les paramètres de sécurité par défaut garantissent que toutes les organisations ont un niveau de sécurité de base qui est activé par défaut pour la connexion des utilisateurs. Vous pouvez désactiver les paramètres de sécurité par défaut en faveur de l’authentification multifacteur avec des stratégies d’accès conditionnel ou pour des comptes individuels.
 
@@ -77,21 +77,21 @@ Pour plus d’informations, consultez [Vue d’ensemble des paramètres de sécu
 
 ### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
 
-Les stratégies d’accès conditionnel sont un groupe de règles qui spécifient les conditions dans lesquelles les connexions sont évaluées et l’accès autorisé. Par exemple, vous pouvez créer une stratégie d’accès conditionnel qui indique :
+Les stratégies d’accès conditionnel sont un groupe de règles qui spécifient les conditions dans lesquelles les connexions sont évaluées et l’accès autorisé. Par exemple, vous pouvez créer une stratégie d’accès conditionnel qui indique :
 
 - Si le nom du compte d’utilisateur concerne membre d’un groupe d’utilisateurs bénéficiant des rôles d’administrateur Exchange, utilisateur, mot de passe, sécurité, SharePoint ou global, exigez l’authentification multifacteur avant d’autoriser l’accès.
 
 Cette stratégie vous permet de demander une authentification multifacteur basée sur l’appartenance au groupe, plutôt que d’essayer de configurer des comptes d’utilisateur individuels pour l’authentification multifacteur lorsqu’ils sont attribués ou non à des rôles d’administrateur.
 
-Vous pouvez également utiliser les stratégies d’accès conditionnel pour des fonctionnalités plus avancées, telles que la nécessité de se connecter à partir d’un appareil compatible, tel que votre ordinateur portable fonctionnant sous Windows 10.
+Vous pouvez également utiliser les stratégies d’accès conditionnel pour des fonctionnalités plus avancées, telles que la nécessité de se connecter à partir d’un appareil compatible, tel que votre ordinateur portable fonctionnant sous Windows 10.
 
-Les licences d’accès conditionnel exige Azure AD Premium P1, lesquelles sont incluses dans Microsoft 365 E3 et E5.
+Les licences d’accès conditionnel exige Azure AD Premium P1, lesquelles sont incluses dans Microsoft 365 E3 et E5.
 
 Si vous souhaitez en savoir plus, consultez la [Présentation de l’accès conditionnel](/azure/active-directory/conditional-access/overview).
 
 ### <a name="using-these-methods-together"></a>Utilisation combinée des méthodes
 
-Gardez les éléments suivants à l’esprit :
+Gardez les éléments suivants à l’esprit :
 
 - Vous ne pouvez pas activer les paramètres de sécurité par défaut si vous avez activé des stratégies d’accès conditionnel.
 - Vous ne pouvez pas activer de stratégie d’accès conditionnel si les paramètres de sécurité par défaut sont activés.
@@ -111,10 +111,10 @@ Ce tableau présente les résultats de l’activation de l’authentification mu
 Les paramètres et stratégies d’identité et d’accès aux appareils sont des fonctionnalités préalables recommandées et leurs paramètres, associés à un accès conditionnel, à Intune et à des stratégies de protection d’identité Azure AD, qui déterminent si une demande d’accès doit être accordée et dans quelles conditions. La décision se fonde sur le compte d’utilisateur utilisé pour la connexion, l’appareil utilisé, l’application utilisée par l’utilisateur pour l’accès, l’emplacement depuis lequel la demande d’accès est émise et l’évaluation du risque lié à la demande. Cela permet de s’assurer que seuls les utilisateurs et les appareils approuvés ont accès aux ressources critiques de l’entreprise.
 
 >[!Note]
->Azure AD Identity Protection requiert des licences Azure AD Premium P2, incluses dans Microsoft 365 E5.
+>Azure AD Identity Protection requiert des licences Azure AD Premium P2, incluses dans Microsoft 365 E5.
 >
 
-Les stratégies d’identité et d’accès aux appareils sont définies pour une utilisation à trois niveaux : 
+Les stratégies d’identité et d’accès aux appareils sont définies pour une utilisation à trois niveaux : 
 
 - La protection de base constitue un niveau de sécurité minimal pour les identités et appareils qui accèdent à vos applications et données.
 - La protection sensible propose une sécurité supplémentaire pour les données spécifiques. Les identités et les appareils doivent démontrer des niveaux de sécurité et d’intégrité des appareils plus élevés.
@@ -122,18 +122,18 @@ Les stratégies d’identité et d’accès aux appareils sont définies pour un
 
 Ces niveaux de protection et les configurations correspondantes apportent des niveaux de protection cohérents selon les données, les identités et les appareils.
 
-Microsoft recommande vivement de configurer et de déployer les stratégies d’identité et d’accès aux appareils dans votre organisation, notamment des paramètres spécifiques pour Microsoft Teams, Exchange Online et SharePoint. Pour plus d’informations, voir [Configurations des identités et de l’accès aux appareils](../security/defender-365-security/microsoft-365-policies-configurations.md).
+Microsoft recommande vivement de configurer et de déployer les stratégies d’identité et d’accès aux appareils dans votre organisation, notamment des paramètres spécifiques pour Microsoft Teams, Exchange Online et SharePoint. Pour plus d’informations, voir [Configurations des identités et de l’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md).
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
 Cette section explique comment configurer des stratégies de protection contre la compromission d’informations d’identification consistant pour un attaquant à déterminer le nom de compte et le mot de passe d’un utilisateur afin d’accéder aux services et données cloud d’une organisation. Azure Active Directory Identity Protection offre plusieurs méthodes pour empêcher un pirate de compromettre les informations d’identification d’un compte d’utilisateur.
 
-Azure AD Identity Protection vous permet de :
+Azure AD Identity Protection vous permet de :
 
 |Fonctionnalité|Description|
 |:---------|:---------|
-| déterminer et résoudre les vulnérabilités potentielles dans les identités de votre organisation ; | Azure AD utilise le Machine Learning pour détecter les anomalies et les activités suspectes, telles que les connexions et les activités post-connexion. Grâce à ces données, Azure AD Identity Protection génère des rapports et des alertes qui vous permettent d’évaluer les problèmes et de prendre des mesures.|
-|Détecter des actions douteuses qui sont liées aux identités de votre organisation et y répondre automatiquement|Vous pouvez configurer des stratégies qui répondent automatiquement aux problèmes détectés lorsqu’un niveau de risque spécifié est atteint. Outre les autres contrôles d’accès conditionnel fournis par Azure AD et Microsoft Intune, ces stratégies peuvent automatiquement bloquer l’accès ou prendre des mesures correctives, qui incluent des réinitialisations de mot de passe et impliquent Azure AD Multi-Factor Authentication connexions suivantes. |
+| déterminer et résoudre les vulnérabilités potentielles dans les identités de votre organisation ; | Azure AD utilise le Machine Learning pour détecter les anomalies et les activités suspectes, telles que les connexions et les activités de post-connexion. À l’aide de ces données, Azure AD Identity Protection génère des rapports et des alertes qui vous aident à évaluer les problèmes et à prendre des mesures.|
+|Détecter des actions douteuses qui sont liées aux identités de votre organisation et y répondre automatiquement|Vous pouvez configurer des stratégies basées sur les risques qui répondent automatiquement aux problèmes détectés lorsqu’un niveau de risque spécifié a été atteint. Ces stratégies, en plus d’autres contrôles d’accès conditionnel fournis par Azure AD et Microsoft Intune, peuvent bloquer automatiquement l’accès ou prendre des mesures correctives, y compris les réinitialisations de mot de passe et exiger Azure AD Multi-Factor Authentication pour les connexions ultérieures. |
 | Examiner les incidents suspects et les résoudre avec des actions d’administration | Vous pouvez examiner des événements à risque en utilisant les informations sur l’incident de sécurité. Des flux de travail de base sont disponibles pour effectuer le suivi des enquêtes et lancer des actions de correction, telles que des réinitialisations du mot de passe. |
 |||
 
@@ -143,11 +143,11 @@ Reportez-vous à la rubrique des [étapes pour activer Azure AD Identity Protect
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>Ressources techniques pour l’administrateur pour l’authentification multifacteur et la connexion sécurisée
 
-- [Authentification multifacteur pour Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
-- [Feuille de route relative à l’identité pour Microsoft 365](identity-roadmap-microsoft-365.md)
+- [Authentification multifacteur pour Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
+- [Feuille de route relative à l’identité pour Microsoft 365](identity-roadmap-microsoft-365.md)
 - [Vidéos de formation d’Azure Academy Azure AD](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Configurer la stratégie d’inscription Azure AD Multi-Factor Authentication](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [Configurations des identités et de l’accès aux appareils](../security/defender-365-security/microsoft-365-policies-configurations.md)
+- [Configurations des identités et de l’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>Étape suivante
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Après avoir créé et itérer sur un brouillon de collection, vous pouvez la valider dans un jeu à réviser. Lorsque vous valider un brouillon de collection, les éléments collectés sont ajoutés au jeu à réviser dans le cas. Une fois que les éléments collectés sont dans l’ensemble de révision, vous pouvez les analyser, les examiner et les exporter.
-ms.openlocfilehash: dceb661d9586e324482dc4f56bce12fafaf9b251
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: c5e2ebaec734efed1c310e13a8d66badefac860dfaf59ea8c6189104656185df
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814761"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Valider un brouillon de collection dans un jeu à réviser dans Advanced eDiscovery
 

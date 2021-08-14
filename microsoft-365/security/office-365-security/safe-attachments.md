@@ -20,12 +20,12 @@ ms.collection:
 description: Les administrateurs peuvent en savoir plus sur Coffre fonctionnalité Pièces jointes dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 127d862d235abc4cd81f62679b97077c7a80bd70
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 0158ef1e182b0c0def6a84f71608660134b5cbc68f467f8a43485447c02c7999
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56800975"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Coffre Pièces jointes dans Microsoft Defender pour Office 365
 
@@ -35,9 +35,9 @@ ms.locfileid: "53054392"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Coffre Les pièces jointes dans [Microsoft Defender pour Office 365](defender-for-office-365.md) fournissent une couche de protection supplémentaire pour les pièces jointes de courrier électronique qui ont déjà été analysées par la protection anti-programme malveillant dans Exchange Online Protection [(EOP).](anti-malware-protection.md) Plus précisément, Coffre pièces jointes utilise un environnement virtuel pour vérifier les pièces jointes dans les messages électroniques avant qu’elles ne soit remis aux destinataires (processus appelé _détonation)._
+Coffre Les pièces jointes dans [Microsoft Defender pour Office 365](defender-for-office-365.md) fournissent une couche supplémentaire de protection pour les pièces jointes de courrier électronique qui ont déjà été analysées par la protection anti-programme malveillant dans Exchange Online Protection [(EOP).](anti-malware-protection.md) Plus précisément, Coffre pièces jointes utilise un environnement virtuel pour vérifier les pièces jointes dans les messages électroniques avant qu’elles ne soit remis aux destinataires (processus appelé _détonation)._
 
-Coffre La protection des pièces jointes pour les messages électroniques est contrôlée par les stratégies Coffre pièces jointes. Il n’existe aucune stratégie Coffre pièces jointes par défaut, donc pour obtenir la protection des pièces jointes Coffre, vous devez créer une ou plusieurs stratégies Coffre **pièces jointes.** Pour obtenir des instructions, voir [Configurer les stratégies Coffre pièces jointes dans Defender pour Office 365](set-up-safe-attachments-policies.md).
+Coffre La protection des pièces jointes pour les messages électroniques est contrôlée par les stratégies Coffre pièces jointes. Il n’existe aucune stratégie Coffre pièces jointes par défaut, donc pour obtenir la protection des pièces jointes Coffre, vous devez créer une ou plusieurs stratégies Coffre **pièces jointes.** Pour obtenir des instructions, voir [Configurer Coffre de pièces jointes dans Defender pour Office 365](set-up-safe-attachments-policies.md).
 
 Le tableau suivant décrit les scénarios pour les pièces jointes Coffre dans les organisations Microsoft 365 et Office 365 qui incluent Microsoft Defender pour Office 365 (en d’autres termes, l’absence de licence n’est jamais un problème dans les exemples).
 
@@ -49,8 +49,8 @@ Le tableau suivant décrit les scénarios pour les pièces jointes Coffre dans l
 |---|---|
 |L’organisation Microsoft 365 E5 pat n’a pas de stratégies Coffre pièces jointes configurées.|Pat n’est pas protégé par Coffre pièces jointes. <p> Un administrateur doit créer au moins une stratégie Coffre pièces jointes pour que la protection Coffre pièces jointes soit active. En outre, les conditions de la stratégie doivent inclure Pat si Pat doit être protégé par Coffre pièces jointes.|
 |L’organisation de Lee dispose d’une stratégie Coffre pièces jointes qui s’applique uniquement aux employés du service financier. Lee est membre du service des ventes.|Lee n’est pas protégé par Coffre pièces jointes. <p> Les employés du service financier sont protégés Coffre pièces jointes, mais pas les employés des ventes (et d’autres employés).|
-|Hier, un administrateur de l’organisation de Jean a créé une stratégie Coffre pièces jointes qui s’applique à tous les employés. Plus tôt dans la journée, Jean a reçu un message électronique qui inclut une pièce jointe.|Jean est protégé par Coffre pièces jointes. <p> En règle générale, l’application d’une nouvelle stratégie prend environ 30 minutes.|
-|L’organisation de Chris a des stratégies Coffre pièces jointes de longue date pour tous les membres de l’organisation. Chris reçoit un message électronique qui a une pièce jointe, puis le envoie à des destinataires externes.|Chis est protégé par les pièces jointes Coffre’un autre. <p> Si les destinataires externes ont également des stratégies Coffre pièces jointes dans leur organisation, les messages transmis sont soumis à ces stratégies.|
+|Hier, un administrateur de l’organisation de Jean a créé une stratégie Coffre pièces jointes qui s’applique à tous les employés. Plus tôt dans la journée, Jean a reçu un message électronique qui inclut une pièce jointe.|Jean est protégé par des pièces jointes Coffre jointes. <p> En règle générale, l’application d’une nouvelle stratégie prend environ 30 minutes.|
+|L’organisation de Chris a des stratégies Coffre pièces jointes de longue date pour tous les membres de l’organisation. Chris reçoit un message électronique qui a une pièce jointe, puis le envoie à des destinataires externes.|Chis est protégé par des pièces jointes Coffre’un autre. <p> Si les destinataires externes ont également des stratégies Coffre pièces jointes dans leur organisation, les messages transmis sont soumis à ces stratégies.|
 |
 
 Coffre L’analyse des pièces jointes a lieu dans la même région que Microsoft 365 données personnelles. Pour plus d’informations sur la géographie du centre de données, voir [Où se trouvent vos données ?](https://products.office.com/where-is-your-data-located?geo=All)
@@ -82,7 +82,7 @@ Cette section décrit les paramètres des stratégies Coffre pièces jointes :
 
 - Rediriger la pièce jointe lors de la détection : activez la **redirection** et envoyez la pièce jointe à l’adresse de messagerie suivante : Pour **bloquer,** surveiller ou remplacer **des** actions, envoyez des messages contenant des pièces jointes contenant des programmes malveillants à l’adresse de messagerie interne ou externe spécifiée pour analyse et examen.
 
-  La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, [voir Coffre Paramètres des pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
+  La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, [Coffre paramètres de pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
 - Appliquez la sélection ci-dessus si l’analyse des programmes malveillants pour les pièces **jointes** arrive à arriver ou si une erreur se produit : l’action spécifiée par Coffre La réponse anti-programme malveillant **attachments** inconnue est appliquée aux messages même lorsque l’analyse des pièces jointes Coffre ne peut pas se terminer. Sélectionnez toujours cette option si vous sélectionnez **Activer la redirection.** Dans le cas contraire, les messages peuvent être perdus.
 

@@ -22,19 +22,19 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8d33804e8c1405093843709e06250beb7f10512
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 40301b0fd16b7d0b29b6a89ec009fc07c85b33ba587833866dd2e2b49741f85d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56801797"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’examen et de la réponse automatisés dans Microsoft Defender Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Lorsque des alertes de sécurité sont déclenchées, c’est à votre équipe des opérations de sécurité d’examiner ces alertes et de prendre les mesures nécessaires pour protéger votre organisation. Parfois, les équipes en matière d’opérations de sécurité peuvent se sentir submergées par le volume d’alertes déclenchées. Les fonctionnalités d’investigation et de réponse automatisées (AIR) dans Microsoft Defender Office 365 peuvent vous aider.
@@ -89,7 +89,7 @@ Par exemple, supposons que vous utilisez la vue **Programmes** malveillants dans
 
 Comme pour les playbooks déclenchés par une alerte, les enquêtes automatiques déclenchées à partir d’un affichage dans l’Explorateur incluent une enquête racine, des étapes pour identifier et corréler les menaces, ainsi que des actions recommandées pour atténuer ces menaces.
 
-## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Exemple : une équipe en charge des opérations de sécurité intègre AIR à son SIEM à l’aide de l’API Office 365 Management Activity
+## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Exemple : une équipe des opérations de sécurité intègre AIR à son SIEM à l’aide de l Office 365 API Activité de gestion
 
 Les fonctionnalités AIR de Microsoft Defender pour Office 365 incluent des rapports & détails que les équipes des [opérations](air-view-investigation-results.md) de sécurité peuvent utiliser pour surveiller et traiter les menaces. Toutefois, vous pouvez également intégrer des fonctionnalités AIR à d’autres solutions. Il peut s’agir par exemple d’un système de gestion des événements et des informations de sécurité (SIEM), d’un système de gestion des cas ou d’une solution de création de rapports personnalisée. Ces types d’intégrations peuvent être effectués à l’aide de [l’API Office 365 Activité de gestion.](/office/office-365-management-api/office-365-management-activity-api-reference)
 

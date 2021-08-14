@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: c66ef036e7a44e64a4e4e99aec3c81da287590d0
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0bde0c6610e1280a23a7382babf302cc1a8839497e06361a5d4554274903315d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227270"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892432"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
 

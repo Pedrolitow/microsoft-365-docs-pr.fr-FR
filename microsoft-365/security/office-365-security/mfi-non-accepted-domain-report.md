@@ -14,12 +14,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le rapport de domaine non accepté dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller les messages provenant de votre organisation sur site où le domaine de l’expéditeur n’est pas configuré dans Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb33feb56bf2b52731c03273ce0c6444c333f348
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 018fb5ee8e2d0532cc96f85f4ec66e146dae8eb81a8e189e8746c26fde71fe7e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56801793"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Rapport de domaine non accepté dans le Centre de sécurité & conformité
 
@@ -72,6 +72,6 @@ Lorsque vous sélectionnez une ligne dans le tableau, un flyout s’affiche avec
 
 Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport.**
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

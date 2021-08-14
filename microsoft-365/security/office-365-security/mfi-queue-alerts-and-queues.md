@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent apprendre à utiliser le widget Files d’attente dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller le flux de messagerie infructueux vers leurs organisations locales ou partenaires sur des connecteurs sortants.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65452b0ad7c31673c910ba48c9c6709995e563ce
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9b4bee0a8be6b7fdcc022add2092fb16b88d5d2f3f245e6a998036d66ed490af
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56801786"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Informations sur les files d’attente dans le Centre de sécurité & conformité
 
@@ -28,7 +28,7 @@ ms.locfileid: "51599982"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Lorsque des messages ne peuvent pas être envoyés depuis votre organisation vers vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente Microsoft 365. Les exemples courants à l’origine de cette condition sont les suivants :
+Lorsque les messages ne peuvent pas être envoyés depuis votre organisation vers vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente Microsoft 365. Les exemples courants à l’origine de cette condition sont les suivants :
 
 - Le connecteur n’est pas correctement configuré.
 - Des modifications ont été apportées au réseau ou au pare-feu dans votre environnement local.
@@ -45,7 +45,7 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
 
 - Les administrateurs recevront une notification par courrier électronique en fonction de la configuration de la stratégie d’alerte par défaut nommée **Messages qui a été retardée.** Pour configurer les paramètres de notification pour cette alerte, consultez la section suivante.
 
-  Pour plus d’informations sur les stratégies d’alerte, voir Stratégies d’alerte dans le [Centre de sécurité & conformité.](../../compliance/alert-policies.md)
+  Pour plus d’informations sur les stratégies d’alerte, voir Stratégies d’alerte dans le Centre de [sécurité & conformité.](../../compliance/alert-policies.md)
 
 ## <a name="customize-queue-alerts"></a>Personnaliser les alertes de file d’attente
 

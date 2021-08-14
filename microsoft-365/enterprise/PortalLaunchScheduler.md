@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article décrit comment lancer votre portail à l’aide du programme de lancement du portail
-ms.openlocfilehash: dd2b6bdabae5f4d24882912709d6f16a637a9721
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 14bbbe671d1708bf0d6674ecab93955066b4093d80b2ced9790030559673dc4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430419"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813363"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Lancer votre portail à l’aide du SharePoint de lancement du portail
 

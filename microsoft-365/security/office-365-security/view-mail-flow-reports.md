@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les rapports de flux
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 087b9fea8b22a9d1f99f2bc3a74217a0b21aa264d7e26764e6abfe71f5d84075
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029450"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56801478"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord Rapports du Centre de sécurité & conformité
 
@@ -36,9 +36,9 @@ ms.locfileid: "53029450"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> La majorité des rapports décrits dans cette rubrique sont disponibles dans le Centre d’administration Exchange (EAC). Pour plus d’informations, voir [Rapports de flux de messagerie dans le nouveau Centre d’administration Exchange.](/exchange/monitoring/mail-flow-reports/mail-flow-reports) Le [rapport des règles de transport Exchange](view-email-security-reports.md#exchange-transport-rule-report) est disponible dans le portail Microsoft 365 Defender.
+> La majorité des rapports décrits dans cette rubrique sont disponibles dans le Centre d’administration Exchange(EAC). Pour plus d’informations, voir [Rapports de flux de messagerie dans le nouveau centre Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports) Le [Exchange de règles de transport est](view-email-security-reports.md#exchange-transport-rule-report) disponible dans le portail Microsoft 365 Defender web.
 
-Outre les rapports de flux de [](mail-flow-insights-v2.md) messagerie disponibles dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité, plusieurs rapports de flux de messagerie supplémentaires sont disponibles dans le tableau de bord Rapports pour vous aider à surveiller votre organisation Microsoft 365.
+Outre les rapports de flux de [](mail-flow-insights-v2.md) messagerie disponibles dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité, plusieurs rapports de flux de messagerie supplémentaires sont disponibles dans le tableau de bord Rapports pour vous aider à surveiller votre organisation Microsoft 365.
 
 Si vous avez les [autorisations](#what-permissions-are-needed-to-view-these-reports)nécessaires, vous pouvez afficher ces rapports dans le Centre de sécurité [& conformité](https://protection.office.com) en allant au Tableau de bord **des** \> **rapports.** Pour aller directement au tableau de bord Rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
@@ -98,29 +98,29 @@ Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez
 
 Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 
-## <a name="exchange-transport-rule-report"></a>Rapport de règles de transport Exchange
+## <a name="exchange-transport-rule-report"></a>Exchange de règles de transport
 
-Le **rapport des règles** de transport Exchange indique l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
+Le Exchange de règles de **transport** de messagerie affiche l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
 
-Pour afficher le rapport, ouvrez le Centre  de sécurité [& conformité,](https://protection.office.com)puis sélectionnez Tableau de bord rapports \>  et **sélectionnez Règle de transport Exchange.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Pour afficher le rapport, ouvrez le Centre  de sécurité [& conformité,](https://protection.office.com)allez au tableau de bord rapports et sélectionnez Exchange \>  règle **de transport.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
-![Widget de règle de transport Exchange dans le tableau de bord Rapports](../../media/transport-rule-report-widget.png)
+![Exchange widget de règle de transport dans le tableau de bord Rapports](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Affichage du rapport pour le rapport des règles de transport Exchange
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Affichage du rapport pour le rapport Exchange règles de transport
 
 Les graphiques suivants sont disponibles en affichage état :
 
-- **Afficher les données par : règles de transport** \> Exchange **Décomposer par : Direction**: ce  graphique affiche le nombre de **messages** entrants et sortants affectés par les règles de transport.
+- **Afficher les données par : Exchange transport** \> **Décomposer par : Direction**: ce  graphique affiche le nombre de **messages** entrants et sortants affectés par les règles de transport.
 
-- **Afficher les données par : règles de transport** \> Exchange **Décomposez par : Gravité :** ce  graphique affiche le nombre de messages de gravité élevée, moyenne et **faible.** Vous définissez le niveau de gravité en tant qu’action dans la règle (**Auditez** cette règle avec le niveau de gravité _ou SetAuditSeverity_). Pour plus d’informations, voir [Actions de règle de flux de messagerie dans Exchange Online.](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- **Afficher les données par : Exchange transport** \> **Décomposez par : Gravité :** ce  graphique affiche le nombre de messages de gravité élevée, moyenne et **faible.** Vous définissez le niveau de gravité en tant qu’action dans la règle (**Auditez** cette règle avec le niveau de gravité _ou SetAuditSeverity_). Pour plus d’informations, voir [Actions de règle de flux](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)de messagerie dans Exchange Online .
 
-- **Afficher les données par : règles de transport** \> Exchange DLP **Décomposer par : Direction**: ce  graphique affiche le nombre de **messages** entrants et sortants affectés par les règles de transport de protection contre la perte de données (DLP). Vous pouvez affiner davantage le graphique en sélectionnant l’une des options suivantes :
+- Afficher les données par : règles de transport **Exchange DLP** \> **Décomposer par : Direction**: ce  graphique affiche le nombre de **messages** entrants et sortants affectés par les règles de transport de protection contre la perte de données (DLP). Vous pouvez affiner davantage le graphique en sélectionnant l’une des options suivantes :
 
   - **Afficher les données pour : toutes les règles de transport DLP**
   - **Afficher les données pour : utilisateurs compromis**
   - **Afficher les données pour : faible volume de contenu détecté pour le Patriot Act des États-Unis**
 
-- **Afficher les données par : règles de transport** \> Exchange DLP **Décomposez par : Direction**: cet  affichage indique le nombre de **messages** de gravité élevée et moyenne **et** faible qui ont été affectés par les règles de transport DLP. Vous pouvez affiner davantage le graphique en sélectionnant l’une des options suivantes :
+- Afficher les données par : règles de transport **Exchange DLP** \> **Décomposez par : Direction**: cet  affichage indique le nombre de **messages** de gravité élevée et moyenne **et** faible qui ont été affectés par les règles de transport DLP. Vous pouvez affiner davantage le graphique en sélectionnant l’une des options suivantes :
 
   - **Afficher les données pour : toutes les règles de transport DLP**
   - **Afficher les données pour : utilisateurs compromis**
@@ -132,13 +132,13 @@ Si vous cliquez **sur Filtres** dans un affichage de rapport, vous pouvez modifi
 - Valeurs de direction
 - Valeurs de gravité
 
-![Affichage du rapport dans le rapport de règles de transport Exchange](../../media/transport-rule-report-report-view.png)
+![Affichage du rapport dans le rapport Exchange règles de transport](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Vue de table Détails pour le rapport de règles de transport Exchange
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Vue de table Détails pour le rapport Exchange règle de transport
 
 Si vous cliquez sur Afficher le tableau des **détails,** les informations affichées dépendent du graphique que vous regardiez :
 
-- **Afficher les données par : Règles de transport Exchange**:
+- **Afficher les données par : Exchange transport :**
 
   - **Date**
   - **Règle de transport**
@@ -148,7 +148,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
   - **Gravité**
   - **Direction**
 
-- **Afficher les données par : Règles de transport Exchange DLP**:
+- **Afficher les données par : DLP Exchange de transport**:
 
   - **Date**
   - **Stratégie DLP**
@@ -249,7 +249,7 @@ Vous pouvez modifier ces filtres en cliquant sur **Filtre** ou en cliquant sur u
 La table de données contient les informations suivantes :
 
 - **Direction**
-- **Type (Type)**
+- **Type**
 - **24 heures**
 - **3 jours**
 - **7 jours**
@@ -293,7 +293,7 @@ Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données de c
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Affichage en entonnoir pour le rapport d’état du flux de messagerie
 
-La **vue Entonnoir** vous montre comment les fonctionnalités de protection contre les menaces de courrier électronique de Microsoft filtrent le courrier électronique entrant et sortant dans votre organisation. Il fournit des détails sur le nombre total de messages électroniques et sur la façon dont les fonctionnalités de protection contre les menaces configurées, y compris la protection edge, la protection contre les programmes malveillants, l’anti-hameçonnage, le courrier indésirable et la détection d’usurpation d’accès affectent ce nombre.
+La **vue Entonnoir** vous montre comment les fonctionnalités de protection contre les menaces de courrier électronique de Microsoft filtrent le courrier électronique entrant et sortant dans votre organisation. Il fournit des détails sur le nombre total de messages électroniques et sur la façon dont les fonctionnalités de protection contre les menaces configurées, y compris la protection edge, les logiciels anti-programme malveillant, l’anti-hameçonnage, le courrier indésirable et la détection d’usurpation d’accès affectent ce nombre.
 
 Si vous  cliquez sur l’onglet Entonnoir, par défaut, cet affichage contient un graphique et une table de données configurés avec les filtres suivants :
 
@@ -305,7 +305,7 @@ Si vous  cliquez sur l’onglet Entonnoir, par défaut, cet affichage contient u
   - **Sortant**
   - **Intra-organisation**: ce nombre est le nombre de messages envoyés au sein d’un client ; Autrement dit, l’expéditeur abc@domain.com envoyé au destinataire xyz@domain.com (comptabilisé séparément des messages entrants et sortants).
 
-L’affichage agrégé et l’affichage de table de données autorisent 90 jours de filtrage.
+L’affichage agrégé et l’affichage table de données autorisent 90 jours de filtrage.
 
 Si vous cliquez **sur Filtre,** vous pouvez filtrer le graphique et la table de données.
 
@@ -342,8 +342,8 @@ La table de données contient les informations suivantes, indiquées dans l’or
   - **Emprunt d’identité** d’utilisateur : messages filtrés en raison d’une tentative d’emprunt d’identité d’un utilisateur (expéditeur de message) défini dans les paramètres de protection contre l’emprunt d’identité d’une stratégie anti-hameçonnage.
   - **Emprunt d’identité** de domaine : messages filtrés en raison d’une tentative d’emprunt d’identité d’un domaine défini dans les paramètres de protection contre l’emprunt d’identité d’une stratégie anti-hameçonnage.
 - **Détonation de fichier et d’URL (Defender pour Office 365)**:
-  - **Détonation de fichier**: messages filtrés par une stratégie Safe pièces jointes.
-  - **Détonation d’URL**: message filtré par une stratégie Safe liens.
+  - **Détonation de fichier**: messages filtrés par une stratégie Coffre pièces jointes.
+  - **Détonation d’URL**: message filtré par une stratégie Coffre liens.
 - **Protection post-remise et ZAP (ATP) ou ZAP (EOP)**: ZAP indique une purge automatique de zéro heure.
 
 Si vous sélectionnez une ligne dans la table de données, une répartition supplémentaire du nombre de messages électroniques est affichée dans le volant.
@@ -383,11 +383,11 @@ Ce graphique présente les messages organisés dans les catégories suivantes :
 
 - **Nombre total de messages électroniques**
 - **Edge autoriser** et **edge filtré**
-- **Pas de programmes** malveillants, **Safe détection des pièces jointes,** détection du moteur <sup>\*</sup> **anti-programme** malveillant et **messages de règle**
+- **Pas de programmes** **malveillants, Coffre détection des pièces jointes,** détection du moteur <sup>\*</sup> **anti-programme** malveillant et **messages de règle**
 - **Pas de hameçonnage,**  **d’échec DMARC,** de détection d’emprunt d’identité, de détection d’usurpation **d’identité** et de **détection d’hameçonnage**
 - **Aucune détection avec détection de détonation d’URL** et **de détonation d’URL**<sup>\*</sup>
 - **Pas de courrier indésirable** et  **de courrier indésirable**
-- **E-mail** non malveillant, **détection Safe liens et** <sup>\*</sup> **ZAP**
+- **E-mail** non malveillant, **détection Coffre liens et** <sup>\*</sup> **ZAP**
 
 <sup>\*</sup>Defender for Office 365
 
@@ -398,20 +398,20 @@ La table de données contient les informations suivantes, indiquées dans l’or
 - **Date**
 - **Nombre total de messages électroniques**
 - **Edge filtré**
-- **Moteur anti-programme malveillant, Safe pièces jointes, règle filtrée**:
+- **Moteur anti-programme malveillant, Coffre pièces jointes, règle filtrée**:
   - **Règle filtrée**: messages filtrés en raison de règles de flux de messagerie (également appelées règles de transport).
 - **DMARC, emprunt d’identité, usurpation d’identité, hameçonnage filtré**:
   - **DMARC**: messages filtrés en raison de l’échec de la vérification de l’authentification DMARC.
 - **Détection de détonation d’URL**
 - **Filtrage anti-courrier indésirable**
 - **ZAP supprimé**
-- **Détection par liens Safe de détection**
+- **Détection par liens Coffre de détection**
 
 Si vous sélectionnez une ligne dans la table de données, une répartition supplémentaire du nombre de messages électroniques est affichée dans le volant.
 
 **Exporter**:
 
-En cliquant **sur Exporter,** sous **Options,** vous pouvez sélectionner l’une des valeurs suivantes :
+En cliquant sur **Exporter,** sous **Options,** vous pouvez sélectionner l’une des valeurs suivantes :
 
 - **Résumé (avec des données pour les 90 derniers jours au maximum)**
 - **Détails (avec des données pour les 30 derniers jours au maximum)**
@@ -461,7 +461,7 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
 Si vous cliquez **sur Filtres** dans un affichage de rapport, vous pouvez modifier les résultats avec les filtres suivants :
 
-- **Date de début** et **date de fin**
+- **Date de début et** **date de fin**
 - Valeurs de direction
 - Valeurs de type
 
@@ -472,13 +472,13 @@ Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 Si vous cliquez **sur Afficher les détails dans** le tableau Décomposer par : **Direction** ou Descendre en mode **Direction,** les informations suivantes sont affichées :
 
 - **Date (UTC)**
-- **Type (Type)**
+- **Type**
 - **Direction**
 - **Nombre de messages**
 
 Si vous cliquez **sur Filtres** dans une vue de tableau de détails, vous pouvez modifier les résultats avec les filtres suivants :
 
-- **Date de début** et **date de fin**
+- **Date de début et** **date de fin**
 - Valeurs de direction
 - Valeurs de type
 
@@ -549,15 +549,15 @@ Pour afficher et utiliser les rapports décrits dans cet article, vous devez êt
 
 - **Gestion de l'organisation**
 - **Administrateur de sécurité**
-- **Lecteur sécurité**
-- **Lecteur global**
+- **Lecteur de sécurité**
+- **Lecteur général**
 
 Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
 > L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
 

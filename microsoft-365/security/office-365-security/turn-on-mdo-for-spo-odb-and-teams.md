@@ -20,12 +20,12 @@ description: Les administrateurs peuvent apprendre à activer Coffre pièces joi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80c35b91de046642a7b4ff4c66d1a42f76976c5b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 396a1fa3ee2c6ba4f9ffb75c57513bb97f94f93dee677372b930eed4d3ec4b6d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56801485"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
@@ -53,7 +53,7 @@ Cet article contient les étapes permettant d’activer et de configurer Coffre 
 
 ## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Étape 1 : utiliser le portail Microsoft 365 Defender pour activer Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies & rules** Threat \> **policies** section \>  Coffre \> **Attachments**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies & rules** Threat \> **policies** \> **section** \> **Coffre Attachments**.
 
 2. Dans la page **Coffre pièces jointes,** cliquez **sur Paramètres globaux.**
 
@@ -96,7 +96,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [v
 
 Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d’autres administrateurs, lorsque Coffre Attachments for SharePoint, OneDrive et Microsoft Teams détecte un fichier malveillant. Pour en savoir plus sur les alertes, consultez stratégies [d’alerte.](../../compliance/alert-policies.md)
 
-1. Dans le portail Microsoft 365 Defender, allez à **Stratégies &** \> **Stratégies** d’alerte ou ouvrez <https://security.microsoft.com/alertpolicies> .
+1. Dans le portail Microsoft 365 Defender, go to **Policies & Rules** Alert \> **policy** or open <https://security.microsoft.com/alertpolicies> .
 
 2. Dans la page **Stratégie d’alerte,** cliquez **sur Nouvelle stratégie d’alerte.**
 
@@ -104,13 +104,13 @@ Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d�
    - **Nom**: tapez un nom unique et descriptif. Par exemple, fichiers malveillants dans les bibliothèques.
    - **Description**: tapez une description facultative. Par exemple, avertit les administrateurs lorsque des fichiers malveillants sont détectés dans SharePoint Online, OneDrive ou Microsoft Teams.
    - **Gravité :** sélectionnez **Faible,** **Moyen** ou **Élevé** dans la liste de listes.
-   - **Catégorie :** sélectionnez **Gestion des menaces** dans la liste de listes.
+   - **Catégorie :** sélectionnez **La gestion des menaces** dans la liste liste.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 4. Dans la page **Créer des paramètres d’alerte,** configurez les paramètres suivants :
    - **Sur quoi voulez-vous alerter ?** \> **l’activité de section** consiste à sélectionner les programmes \> **malveillants détectés dans le fichier** dans la liste de listes.
-   - **Comment voulez-vous que l’alerte soit déclenchée ?** section : laissez la valeur par défaut **chaque fois qu’une activité correspond à la règle** sélectionnée.
+   - **Comment voulez-vous que l’alerte soit déclenchée ?** section : laissez la valeur par défaut **Chaque fois qu’une activité correspond à la règle** sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -120,9 +120,9 @@ Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d�
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-6. Dans la page **Examiner vos paramètres,** examinez vos paramètres. Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section. Vous pouvez également cliquer sur **Précédent** ou sélectionner la page spécifique dans l’Assistant.
+6. Dans la page **Passer en revue vos paramètres,** examinez vos paramètres. Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section. Vous pouvez également cliquer sur **Précédent** ou sélectionner la page spécifique dans l’Assistant.
 
-   Dans la section **Voulez-vous activer** la stratégie immédiatement ? Laissez la valeur par défaut **Oui,** l’activer immédiatement.
+   Dans la section **Voulez-vous activer** la stratégie immédiatement ? Laissez la valeur par défaut Oui, l’activer **immédiatement** sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Terminer**.
 

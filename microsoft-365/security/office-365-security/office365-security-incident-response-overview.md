@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65ff75253f45ae2d0f051dafe73c6e665f89827a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 62e73b3b8e72aad66fd83743551f770078d164e93136defc31140bf20cb87042
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56802197"
 ---
 # <a name="security-incident-response"></a>Réponse aux incidents de sécurité
 
@@ -39,7 +39,7 @@ ms.locfileid: "51204378"
 
 ## <a name="learn-how-to-respond-to-cyberattacks"></a>Découvrez comment répondre aux cyberattaques
 
-Toutes les cyberattaques ne peuvent pas être déprécées. Les attaquants recherchent constamment de nouvelles faiblesses dans votre stratégie de sécurité ou exploitent des anciennes. Le fait de savoir reconnaître une attaque vous permet d’y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
+Toutes les cyberattaques ne peuvent pas être déprécées. Les attaquants recherchent constamment de nouvelles faiblesses dans votre stratégie de défense ou exploitent des anciennes. Le fait de savoir reconnaître une attaque vous permet d’y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
 
 Cette série d’articles vous aide à comprendre à quoi peut ressembler un type particulier d’attaque dans Microsoft 365 et vous donne les étapes à suivre pour y répondre. Ce sont des points d’entrée rapides pour comprendre :
 
@@ -73,4 +73,4 @@ Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités d
 
 - Tâches à accomplir dans les 90 premiers jours. La planifier et l’implémenter prennent un peu plus de temps, mais améliorent considérablement votre posture de sécurité.
 
-- Au-delà de 90 jours. Ces améliorations sont à mettre en place pendant les 90 premiers jours.
+- Au-delà de 90 jours. Ces améliorations s’appuient sur vos 90 premiers jours de travail.

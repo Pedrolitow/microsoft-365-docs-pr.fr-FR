@@ -22,22 +22,22 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 8e1812d8b6df9b48377978715e3a213e66993965ad1d0e6108457150ad1d3d12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56802033"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités automatisées d’examen et de réponse
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si des fonctionnalités d’investigation et de réponse automatisées [(AIR)](automated-investigation-response-office.md) dans Office 365 manquées ou détectées à tort, il existe des étapes que votre équipe des opérations de sécurité peut prendre pour résoudre ce problème. Ces actions sont les suivantes :
+Si des fonctionnalités d’investigation et de réponse automatisées [(AIR)](automated-investigation-response-office.md) Office 365 manquées ou détectées à tort, il existe des étapes que votre équipe des opérations de sécurité peut suivre pour résoudre ce problème. Ces actions sont les suivantes :
 
 - [Signalement d’un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Ajustement des alertes](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si nécessaire) ; et
@@ -47,7 +47,7 @@ Utilisez cet article comme guide.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Signaler un faux positif/négatif à Microsoft pour analyse
 
-Si AIR dans Microsoft Defender pour Office 365 a manqué un message électronique, une pièce jointe, une URL dans un message électronique ou une URL dans un fichier Office, vous pouvez soumettre des messages suspects de courrier [indésirable,](admin-submission.md)d’hameçonnage, d’URL et de fichiers à Microsoft pour l’analyse Office 365 .
+Si AIR dans Microsoft Defender pour Office 365 a manqué un message électronique, une pièce jointe, une URL dans un message électronique ou une URL dans un fichier Office, vous pouvez soumettre des messages suspects de courrier [indésirable,](admin-submission.md)de hameçonnage, d’URL et de fichiers à Microsoft pour l’analyse Office 365 .
 
 Vous pouvez également [soumettre un fichier à Microsoft pour analyse des programmes malveillants.](https://www.microsoft.com/wdsi/filesubmission)
 
@@ -90,5 +90,5 @@ Dans le centre de correction, vous pouvez voir les actions de correction qui ont
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Microsoft Defender pour Office 365](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365](defender-for-office-365.md)
 - [Examens automatisés dans Microsoft Defender pour Office 365](office-365-air.md)

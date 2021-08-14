@@ -9,15 +9,15 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: Les administrateurs peuvent en savoir plus sur le rapport des messages transmis automatiquement dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité.
+description: Les administrateurs peuvent en savoir plus sur le rapport des messages transmis automatiquement dans le tableau de bord flux de messagerie du Centre de sécurité & conformité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1882c0506093816e9bb85ae3ba90decd4e0e0d74
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e0c03321b1bdada7145a19d0d2147594eb039c716b61feebbf26c4becab286f3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56801253"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Informations sur les messages transmis automatiquement dans le Centre de sécurité & conformité
 
@@ -32,7 +32,7 @@ Les informations sur les **messages** transmis automatiquement dans le tableau d
 
 ![Widget de messages transmis automatiquement dans le Centre de conformité & sécurité](../../media/mfi-auto-forwarded-messages.png)
 
-## <a name="auto-forwarded-messages-details"></a>Détails des messages automatiquement transmis
+## <a name="auto-forwarded-messages-details"></a>Détails des messages transmis automatiquement
 
 Lorsque vous cliquez sur le nombre de messages dans le widget, un volet volant s’affiche, qui affiche plus d’informations sur les messages transmis automatiquement :
 
@@ -49,7 +49,7 @@ Lorsque vous cliquez sur le nombre de messages dans le widget, un volet volant s
   - **Nouveaux domaines (dernière semaine)**
   - **5 principaux utilisateurs de forwarding**
   - **Nouveaux utilisateurs (semaine dernière)**
-  - Lien vers le rapport [de modifications de forwarding](mfi-new-users-forwarding-email.md#forwarding-modifications-report) pour plus d’informations.
+  - Lien vers le rapport [de modifications de report pour](mfi-new-users-forwarding-email.md#forwarding-modifications-report) plus d’informations.
 
 ![Volant de détails pour le rapport des messages transmis automatiquement dans le Centre de sécurité & conformité](../../media/mfi-auto-forwarded-messages-details.png)
 

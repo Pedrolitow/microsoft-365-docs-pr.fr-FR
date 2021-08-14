@@ -14,12 +14,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le plan de flux de messagerie dans le tableau de bord du flux de messagerie dans le Centre de sécurité & conformité pour visualiser et suivre la façon dont les messages circulent vers et depuis leur organisation via des connecteurs et sans utiliser de connecteurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e806dde2e6f3ddde5cce3b61c85fe0b024ba2fe
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6bf906871bc95bd57ef3ffc342352c4ce8b5fea96bb6a5212b04b000d66c7b41
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204929"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56802022"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Carte de flux de messagerie dans le Centre de sécurité & conformité
 
@@ -30,15 +30,15 @@ ms.locfileid: "51204929"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Le plan de [](mail-flow-insights-v2.md) flux de **messagerie** dans le tableau de bord de flux de messagerie du Centre de sécurité & [conformité](https://protection.office.com) donne des informations sur la façon dont le courrier circule dans votre organisation. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et résoudre les problèmes au moment où ils se produisent.
+Le plan de [](mail-flow-insights-v2.md) flux de **messagerie** dans le tableau de bord de flux de messagerie du Centre de sécurité & [conformité](https://protection.office.com) donne des informations sur la façon dont les messages circulent dans votre organisation. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et résoudre les problèmes au moment où ils se produisent.
 
 ![Widget de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-mail-flow-map-widget.png)
 
 Par défaut, le widget affiche le modèle de flux de messagerie du jour précédent dans un graphique appelé *diagramme Sankey.* Vous pouvez utiliser la flèche gauche et la flèche droite pour afficher les informations de ![ ](../../media/scc-left-arrow.png) différents ![ ](../../media/scc-right-arrow.png) jours. Chaque couleur représente le flux de messagerie sur un connecteur entrant ou sortant différent (ou sans utiliser de connecteurs). Si vous pointez sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
 
-## <a name="report-view-for-the-mail-flow-map"></a>Affichage de rapport pour le map point de flux de messagerie
+## <a name="report-view-for-the-mail-flow-map"></a>Affichage de rapport pour le plan de flux de messagerie
 
-En cliquant sur le widget de **carte de flux** de messagerie, vous allez dans le rapport de carte de flux **de** messagerie.
+Un clic sur le widget **de carte de flux** de messagerie vous permet d’accès au rapport de carte de flux **de** messagerie.
 
 Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
@@ -61,7 +61,7 @@ Les informations associées sont affichées sous le plan de flux de messagerie s
 Si vous cliquez **sur Afficher le tableau des détails** dans un affichage de rapport, les informations suivantes sont affichées :
 
 - **Date**
-- **Catégorie**
+- **Category**
 - **Connecteur / Fournisseur de services tiers**
 - **Domaine de l’expéditeur/du destinataire**
 - **Nombre de messages**

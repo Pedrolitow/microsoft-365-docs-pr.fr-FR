@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c73a1a4ca5a85e4c6867cbe2cb79a33cfe0bfac9
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 7b180808422c3c71adf430d1d9c5d4283ef9b90e801f54ccd5492a8d070504e1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623791"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811879"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurer microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro
 
@@ -32,13 +32,13 @@ ms.locfileid: "53623791"
 
 **S’applique à :**
 
-- [Defender pour le point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+- [Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
 
 Cette page vous guide à travers les étapes à suivre pour configurer des stratégies macOS dans Jamf Pro.
 
 Vous devez suivre les étapes suivantes :
 
-1. [Obtenir le package d’intégration De Microsoft Defender pour point de terminaison](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
+1. [Obtenir le package d’intégration Microsoft Defender for Endpoint](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 
 2. [Créer un profil de configuration dans Jamf Pro à l’aide du package d’intégration](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 
@@ -164,15 +164,15 @@ Notez que vous devez utiliser exact comme domaine de préférence , Microsoft De
 
     ![Ajouter un schéma personnalisé](images/4137189bc3204bb09eed3aabc41afd78.png)
 
-4. Entrez comme domaine de préférence, cliquez sur Ajouter un schéma et Télécharger le schema.jssur le fichier téléchargé à `com.microsoft.wdav` l’étape  1.  Cliquez sur **Enregistrer**.
+4. Entrez comme domaine de préférence, cliquez sur Ajouter un schéma et Télécharger le schema.jssur le fichier téléchargé à `com.microsoft.wdav` l’étape  1.  Cliquez sur **Save (Enregistrer)**.
 
     ![Télécharger schéma](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
-5. Vous pouvez voir tous les paramètres de configuration de Microsoft Defender pris en charge ci-dessous, sous **Propriétés de domaine de préférence.** Cliquez **sur Ajouter/Supprimer des propriétés** pour sélectionner les paramètres à gérer, puis cliquez sur **OK** pour enregistrer vos modifications. (Paramètres non sélectionné ne sera pas inclus dans la configuration gérée, un utilisateur final pourra configurer ces paramètres sur ses ordinateurs.)
+5. Vous pouvez voir tous les paramètres de configuration de Microsoft Defender pris en charge ci-dessous, sous **Propriétés de domaine de préférence.** Cliquez **sur Ajouter/Supprimer des** propriétés pour sélectionner les paramètres à gérer, puis cliquez sur **OK** pour enregistrer vos modifications. (Paramètres non sélectionné ne sera pas inclus dans la configuration gérée, un utilisateur final pourra configurer ces paramètres sur ses ordinateurs.)
 
     ![Sélectionner les paramètres gérés](images/817b3b760d11467abe9bdd519513f54f.png)
 
-6. Modifiez les valeurs des paramètres en valeurs souhaitées. Vous pouvez cliquer **sur Plus d’informations** pour obtenir la documentation d’un paramètre particulier. (Vous pouvez cliquer sur **aperçu Plist** pour inspecter l’apparence de la liste de configuration. Cliquez **sur Éditeur de** formulaire pour revenir à l’éditeur visuel.)
+6. Modifiez les valeurs des paramètres en valeurs souhaitées. Vous pouvez cliquer **sur Plus d’informations** pour obtenir la documentation d’un paramètre particulier. (Vous pouvez cliquer sur **aperçu Plist** pour inspecter l’apparence de la liste de configuration. Cliquez **sur Éditeur de formulaire** pour revenir à l’éditeur visuel.)
 
     ![Modifier les valeurs des paramètres](images/a14a79efd5c041bb8974cb5b12b3a9b6.png)
 
@@ -197,7 +197,7 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier  le profil d
 
 ### <a name="legacy-method"></a>Méthode héritée
 
-1. Utilisez les paramètres de configuration microsoft Defender pour les points de terminaison suivants :
+1. Utilisez les paramètres de configuration de Microsoft Defender pour les points de terminaison suivants :
 
     - enableRealTimeProtection
     - passiveMode
@@ -453,7 +453,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
 ## <a name="step-5-configure-microsoft-autoupdate-mau"></a>Étape 5 : Configurer la mise à jour automatique Microsoft (AutoUpdate)
 
-1. Utilisez les paramètres de configuration microsoft Defender pour les points de terminaison suivants :
+1. Utilisez les paramètres de configuration de Microsoft Defender pour les points de terminaison suivants :
 
       ```XML
    <?xml version="1.0" encoding="UTF-8"?>
@@ -523,7 +523,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
      ![Image du paramètre de configuration scopetab](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-13. Sélectionnez **Ajouter**.
+13. Cliquez sur **Ajouter**.
 
     ![Image du paramètre de configuration addimg1](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
@@ -614,7 +614,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
     ![Image du paramètre de configuration contoso machinegrp](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
-15. Sélectionnez **Ajouter**.
+15. Cliquez sur **Ajouter**.
 
 16. Sélectionnez **Enregistrer**.
 
@@ -664,7 +664,7 @@ Vous pouvez également télécharger [fulldisk.mobileconfig](https://github.com/
 
 6. Sélectionnez **+ Ajouter**.
 
-7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** du > sélectionnez Groupe ordinateur de **Contoso.**
+7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom du** > sélectionnez Groupe ordinateur de **Contoso.**
 
 8. Sélectionnez **+ Ajouter**.
 
@@ -719,7 +719,7 @@ Vous pouvez également télécharger [kext.mobileconfig](https://github.com/micr
 
 6. Sélectionnez **+ Ajouter**.
 
-7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** du > sélectionnez Groupe ordinateur de **Contoso.**
+7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom du** > sélectionnez Groupe ordinateur de **Contoso.**
 
 8. Sélectionnez **+ Ajouter**.
 
@@ -769,7 +769,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
 4. Sélectionnez **+ Ajouter**.
 
-5. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** du > sélectionnez Groupe ordinateur de **Contoso.**
+5. Sélectionnez **Groupes d’ordinateurs** > **sous Nom du** > sélectionnez Groupe ordinateur de **Contoso.**
 
 6. Sélectionnez **+ Ajouter**.
 
@@ -783,7 +783,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
     ![Image de paramètres de configuration netextfinal](images/netext-final.png)
 
-Vous pouvez également télécharger [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) et le télécharger dans les profils de configuration JAMF comme décrit dans [Deploying Custom Configuration Profiles using Jamf Pro| Méthode 2 : Télécharger profil de configuration à Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+Vous pouvez également télécharger [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) et le télécharger dans les profils de configuration JAMF, comme décrit dans [Deploying Custom Configuration Profiles using Jamf Pro| Méthode 2 : Télécharger profil de configuration à Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Étape 10 : Planifier des analyses avec Microsoft Defender pour Endpoint sur macOS
 
@@ -843,7 +843,7 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
 9. Accédez à la page **Stratégies.**
 
-    ![Image des paramètres de configuration](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
+    ![Image des paramètres de configuration des locations](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
 
 10. Sélectionnez **+ Nouveau** pour créer une stratégie.
 
@@ -872,7 +872,7 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
 16. Sélectionnez **Enregistrer**.
 
-    ![Image de configuration settingssavimg](images/9d6e5386e652e00715ff348af72671c6.png)
+    ![Image des paramètres de configurationssavimg](images/9d6e5386e652e00715ff348af72671c6.png)
 
 17. Sélectionnez **l’onglet** Étendue.
 
@@ -884,7 +884,7 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
     **Scope**
 
-    Sélectionnez **Ajouter**.
+    Cliquez sur **Ajouter**.
 
     ![Image des paramètres de configuration ad1img](images/1c08d097829863778d562c10c5f92b67.png)
 
