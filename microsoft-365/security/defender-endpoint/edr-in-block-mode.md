@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/29/2021
+ms.date: 08/05/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: ee163b8a32bde00fe247dcc4f570ce7768c33a55e1c4c8ffc88ad7fbe08dc080
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3169cbd5aa834e22a5d354066b01b1da04adafe59bf780da99367da21774e359
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833917"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523704"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse des points de terminaison (PEPT) en mode blocage
 
@@ -153,13 +153,13 @@ Si Antivirus Microsoft Defender est en cours d’exécution en mode actif ou pas
 
 - Windows 10 (toutes les publications)
 - Windows Serveur, version 1803 ou plus récente 
-- Windows Server 2019 
+- Windows Server 2019 
 
 #### <a name="what-about-windows-server-2016"></a>Qu’en est-il Windows Server 2016 ? 
 
 Si Windows Server 2016 a Antivirus Microsoft Defender en mode actif et que le point de terminaison est intégré à Defender pour le point de terminaison, PEPT en mode bloc est techniquement pris en charge. Toutefois, PEPT en mode blocage est conçu pour être une protection supplémentaire lorsque Antivirus Microsoft Defender n’est pas la solution antivirus principale sur un point de terminaison. Dans ce cas, Antivirus Microsoft Defender s’exécute en mode passif. 
 
-Actuellement, l’exécution Antivirus Microsoft Defender en mode passif n’est pas prise en charge sur Windows Server 2016. Pour plus d’informations, voir Antivirus Microsoft Defender solutions [antivirus/anti-programme malveillant non-Microsoft.](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
+Actuellement, l’exécution Antivirus Microsoft Defender en mode passif n’est pas prise en charge sur Windows Server 2016. Pour plus d’informations, voir [Mode passif et Windows server](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server) et Antivirus Microsoft Defender [compatibilité.](microsoft-defender-antivirus-compatibility.md)
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Combien de temps faut-il pour que PEPT en mode bloc soit désactivé ?
 

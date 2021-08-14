@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité Microsoft 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 3bbd7a59ed0f969293aff738872662afa9738b649876092e17f4d09712d5ebed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a01b981bb8562b59c29c351468060aaaecaed2501b835e7d230054665a7e7e1e
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807623"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834786"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 
 **Cet article est destiné aux administrateurs. Vous essayez de rechercher des éléments à supprimer dans votre boîte aux lettres ? Voir [Rechercher un message ou un élément avec la Recherche instantanée](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
 
-Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation. Cela peut vous aider à trouver et supprimer des messages électroniques potentiellement dangereux ou à haut risque, tels que les suivants :
+Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher et supprimer des messages électroniques de toutes les boîtes aux lettres de votre organisation. Cela peut vous aider à trouver et à supprimer des e-mails potentiellement dangereux ou à haut risque, tels que :
 
 - Messages contenant des virus ou des pièces jointes dangereuses
 
@@ -41,10 +41,12 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles **Gestionnaire eDiscovery** ou disposer du rôle **Recherche de conformité** dans le Centre de sécurité et de conformité. Pour supprimer des messages, vous devez être membre du groupe de rôles de **gestion de l’organisation** ou disposer du rôle de **Recherche et purge** dans Centre de sécurité et de conformité. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez la rubrique [Attribuer des autorisations eDiscovery dans le Centre de sécurité et conformité](assign-ediscovery-permissions.md).
+- Le flux de travail de recherche et de vidage décrit dans cet article ne supprime pas les messages de conversation ou d’autres contenus de Microsoft Teams. Si la recherche de contenu que vous créez à l’étape 2 retourne des éléments de Microsoft Teams, ces éléments ne seront pas supprimés lorsque vous purgez des éléments à l’étape 3.
+
+- Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles **Gestionnaire eDiscovery** ou avoir le rôle **Recherche de conformité** dans le Centre de conformité Microsoft 365. Pour supprimer des messages, vous devez être membre du groupe de rôles **Gestion de l’organisation** ou avoir le rôle **Rechercher et purger** dans le Centre de conformité Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez [Attribuer des autorisations eDiscovery](assign-ediscovery-permissions.md).
 
   > [!NOTE]
-  > Le groupe du rôle **Gestion de l'organisation** existe dans Exchange Online et le Centre de sécurité et conformité. Ces groupes de rôles distincts donnent des autorisations différentes. Être membre de la **Gestion des organisations** dans Exchange Online n'octroie pas les autorisations requises pour supprimer des messages électroniques. Si le rôle **Recherche et purge** ne vous est pas attribué dans le Centre de sécurité et conformité (directement ou via un groupe de rôles tel que **Gestion de l’organisation**), vous recevrez une erreur à l’étape 3 lorsque vous exécuterez la cmdlet **New-ComplianceSearchAction** avec le message « Impossible de trouver un paramètre qui correspond au nom du paramètre « Purge ».
+  > Le groupe de rôles **Gestion de l’organisation** existe à la fois dans Exchange Online et dans le Centre de conformité Microsoft 365. Ces groupes de rôles distincts donnent des autorisations différentes. Être membre de la **Gestion des organisations** dans Exchange Online n'octroie pas les autorisations requises pour supprimer des messages électroniques. Si vous n’avez pas le rôle **Rechercher et purger** dans le Centre de conformité (directement ou par le biais d’un groupe de rôles tel que **Gestion de l’organisation**), vous recevrez une erreur à l’étape 3 lorsque vous exécutez l'applet de commande **New-ComplianceSearchAction** avec le message « Impossible de trouver un paramètre correspondant au nom de paramètre « Purge ».
 
 - Pour supprimer des messages, vous devez utiliser le centre de sécurité et conformité PowerShell. Pour des instructions sur la façon de se connecter, consultez [Etape 1](#step-1-connect-to-security--compliance-center-powershell).
 
@@ -112,7 +114,14 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 ## <a name="step-3-delete-the-message"></a>Étape 3 : supprimer le message
 
-Après avoir créé et affiné une Recherche de contenu pour renvoyer le message que vous souhaitez supprimer et que vous êtes connecté au Centre de sécurité et conformité PowerShell, la dernière étape consiste à exécuter le cmdlet **New-ComplianceSearchAction** pour supprimer le message. Vous pouvez supprimer le message de manière temporaire ou définitive. Un message supprimé de manière temporaire est déplacé vers le dossier éléments récupérables d’un utilisateur et conservé jusqu’à l’expiration de la période de rétention des éléments supprimés. Les messages supprimés définitivement sont marqués pour suppression définitive de la boîte aux lettres et sont supprimés définitivement la prochaine fois que la boîte aux lettres est traitée par l’Assistant Dossier géré. Si la récupération d’élément unique est activée pour la boîte aux lettres, les éléments supprimés définitivement seront supprimés définitivement après l’expiration de la période de rétention des éléments supprimés. Si une boîte aux lettres est suspendue, les messages supprimés sont conservés jusqu’à ce que la durée de conservation de l’élément arrive à expiration ou jusqu’à ce que la suspension de la boîte aux lettres soit supprimée.
+Une fois que vous avez créé et affiné une recherche de contenu pour renvoyer les messages à supprimer, la dernière étape consiste à exécuter la commande **New-ComplianceSearchAction -Purge** dans Security & Compliance PowerShell pour supprimer le message. Vous pouvez supprimer le message de manière temporaire ou définitive. Un message supprimé de manière temporaire est déplacé vers le dossier éléments récupérables d’un utilisateur et conservé jusqu’à l’expiration de la période de rétention des éléments supprimés. Les messages supprimés définitivement sont marqués pour suppression définitive de la boîte aux lettres et sont supprimés définitivement la prochaine fois que la boîte aux lettres est traitée par l’Assistant Dossier géré. Si la récupération d’élément unique est activée pour la boîte aux lettres, les éléments supprimés définitivement seront supprimés définitivement après l’expiration de la période de rétention des éléments supprimés. Si une boîte aux lettres est suspendue, les messages supprimés sont conservés jusqu’à ce que la durée de conservation de l’élément arrive à expiration ou jusqu’à ce que la suspension de la boîte aux lettres soit supprimée.
+
+> [!NOTE]
+> Comme indiqué précédemment, les éléments de Microsoft Teams retournés par la recherche de contenu ne sont pas supprimés lorsque vous exécutez la commande **New-ComplianceSearchAction -Purge** .
+
+Pour exécuter les commandes suivantes pour supprimer des messages, assurez-vous que vous êtes [connecté à Centre de sécurité et de conformité PowerShell](/powershell/exchange/connect-to-scc-powershell) .
+
+### <a name="soft-delete-messages"></a>Supprimer les messages de manière réversible
 
 Dans l’exemple suivant, la commande supprime temporairement les résultats de recherche renvoyés par une Recherche de contenu nommée « Supprimer le message d’hameçonnage ».
 
@@ -120,13 +129,15 @@ Dans l’exemple suivant, la commande supprime temporairement les résultats de 
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
+### <a name="hard-delete-messages"></a>Supprimer définitivement les messages
+
 Pour supprimer définitivement les éléments renvoyés par la recherche de contenu « Supprimer le message d’hameçonnage », exécutez la commande suivante :
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 
-Notez que lorsque vous exécutez la commande précédente pour supprimer des messages de façon temporaire ou définitive, la recherche spécifiée par le paramètre *SearchName* est la Recherche de contenu que vous avez créée à l’étape 1.
+Lorsque vous exécutez les commandes précédentes pour supprimer définitivement ou de manière réversible des messages, la recherche spécifiée par le paramètre *SearchName* correspond à la recherche de contenu que vous avez créée à l’étape 1.
 
 Pour plus d’informations, voir [New-ComplianceSearchAction](/powershell/module/exchange/New-ComplianceSearchAction).
 

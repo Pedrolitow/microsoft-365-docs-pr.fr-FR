@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3f3ee0590fcbbbbcdb58680e13d154ddc4b2918e48a0c494f8ebdbdf70757bc7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8058109abb8462849af4fea04e43c934ebfce1ad440053c60f8b8e070171e76e
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794029"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523756"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -44,24 +44,24 @@ Vérifiez si la protection réseau a été activée sur un appareil local à l�
 
 2. Choisir **HKEY_LOCAL_MACHINE** dans le menu latéral
 
-3. Naviguez dans les menus imbrmbrés jusqu’à **SOFTWARE**  >  **Microsoft**  >  **Windows Defender**  >  **Windows Defender Exploit Guard** Network  >  **Protection**
+3. Naviguez dans les menus imbrmbrés pour accéder aux stratégies **LOGICIELLEs**  >    >  **Microsoft**  >    >  **Windows Defender Windows Defender Exploit Guard** Network  >  **Protection**
 
 4. Sélectionnez **EnableNetworkProtection pour** voir l’état actuel de la protection réseau sur l’appareil
 
-    * 0 ou **Off**
-    * 1 ou **Sur**
-    * 2 ou **mode Audit**
-    
-    ![networkprotection](https://user-images.githubusercontent.com/3296790/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.PNG)
+   - 0 ou **Off**
+   - 1 ou **Sur**
+   - 2 ou **mode Audit**
+
+    ![Clé de Registre protection du réseau](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
 
 ## <a name="enable-network-protection"></a>Activer la protection réseau
 
 Activez la protection réseau à l’aide de l’une des méthodes ci-après :
 
-* [PowerShell](#powershell)
-* [Gestion des périphériques mobiles (MDM)](#mobile-device-management-mdm)
-* [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
-* [Stratégie de groupe](#group-policy)
+- [PowerShell](#powershell)
+- [Gestion des périphériques mobiles (MDM)](#mobile-device-management-mdm)
+- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Stratégie de groupe](#group-policy)
 
 ### <a name="powershell"></a>PowerShell
 
@@ -106,13 +106,13 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
 
 3. Développez l’arborescence **Windows composants**  >  **Antivirus Microsoft Defender**  >  **Windows Defender Exploit Guard** Network  >  **Protection**.
 
-> [!NOTE]
-> Sur les versions antérieures Windows, le chemin d’accès de la stratégie de groupe peut dire « Antivirus Windows Defender » au lieu de « Antivirus Microsoft Defender ».
+   > [!NOTE]
+   > Sur les versions antérieures Windows, le chemin d’accès de la stratégie de groupe peut dire « Antivirus Windows Defender » au lieu de « Antivirus Microsoft Defender ».
 
 4. Double-cliquez sur le paramètre Empêcher les utilisateurs et **les applications d’accéder** au paramètre sites web dangereux et définissez l’option **sur Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
-    * **Bloquer** : les utilisateurs ne peuvent pas accéder aux domaines et aux adresses IP malveillants
-    * **Désactiver (par défaut)** : la fonctionnalité de protection du réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants
-    * **Mode audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal Windows’événements malveillants. Toutefois, l’utilisateur ne sera pas empêché de visiter l’adresse.
+    - **Bloquer** : les utilisateurs ne peuvent pas accéder aux domaines et aux adresses IP malveillants
+    - **Désactiver (par défaut)** : la fonctionnalité de protection du réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants
+    - **Mode audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal Windows’événements malveillants. Toutefois, l’utilisateur ne sera pas empêché de visiter l’adresse.
 
 > [!IMPORTANT]
 > Pour activer entièrement la protection réseau,  vous devez définir  l’option de stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
@@ -124,12 +124,12 @@ Confirmez que la protection réseau est activée sur un ordinateur local à l’
 2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. Sélectionnez **EnableNetworkProtection et** confirmez la valeur :
-   * 0=Off
-   * 1=Sur
-   * 2=Audit
+   - 0=Off
+   - 1=Sur
+   - 2=Audit
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Protection du réseau](network-protection.md)
-* [Évaluer la protection du réseau](evaluate-network-protection.md)
-* [Résoudre les problèmes de protection du réseau](troubleshoot-np.md)
+- [Protection du réseau](network-protection.md)
+- [Évaluer la protection du réseau](evaluate-network-protection.md)
+- [Résoudre les problèmes de protection du réseau](troubleshoot-np.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9fa41e172f970dcac818d989b60a69bbd2ddbfe1c945eff971a4bfc2cca63d02
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: f64a1ccc0990c2e3961bb31f25616874c9f3fe885a3aca806e1301235b0d2311
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834762"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523728"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -44,16 +44,11 @@ Pour chaque fonctionnalité, les tableaux suivants listent la version minimale d
 Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, consultez [Présentation des canaux de mise à jour de Microsoft 365 Apps](/DeployOffice/overview-update-channels). Les nouvelles fonctionnalités en préversion privée ne sont pas incluses dans le tableau, mais il est possible que vous soyez en mesure de participer à ces préversions en nomant votre organisation pour le [programme de préversion privé Microsoft Information Protection](https://aka.ms/mip-preview).
 
 > [!NOTE]
-> Les noms des canaux de mise à jour pour les applications Office ont changé en mai 2020. Par exemple, le Canal mensuel est désormais Canal actuel et Office Insider le Canal bêta. Si vous souhaitez en savoir plus, consultez [Modifications apportées aux canaux de mise à jour des applications Microsoft 365](/deployoffice/update-channels-changes).
+> Les noms des canaux de mise à jour des applications Office ont récemment changé. Par exemple, le Canal mensuel est désormais Canal actuel et Office Insider le Canal bêta. Si vous souhaitez en savoir plus, consultez [Modifications apportées aux canaux de mise à jour des applications Microsoft 365](/deployoffice/update-channels-changes).
 
 Office pour iOS et Office pour Android : les étiquettes de niveau de confidentialité sont intégrées dans l’[application Office](https://www.microsoft.com/fr-FR/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
 Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le client de l’étiquetage unifié d’Azure Information Protection, qui s’exécute uniquement sur les ordinateurs Windows. Pour plus d’informations, consultez [Comparer les clients d’étiquetage pour les ordinateurs Windows](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
-
-> [!TIP]
-> Lorsque vous comparez les versions minimales des tables aux versions dont vous disposez, n’oubliez pas la pratique courante des versions de mise en production pour omettre les zéros non significatifs.
-> 
-> Par exemple, vous avez la version 4.2128.0 et lisez que 4.7.1+ est la version minimale. Pour faciliter la comparaison, lisez 4.7.1 (sans zéros non significatifs) en tant que 4.**0007**.1 (et non 4.**7000**.1). Votre version de 4.2128.0 est supérieure à 4.0007.1. Votre version est donc prise en charge.
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Fonctionnalités d’étiquettes de confidentialité dans Word, Excel et PowerPoint
 

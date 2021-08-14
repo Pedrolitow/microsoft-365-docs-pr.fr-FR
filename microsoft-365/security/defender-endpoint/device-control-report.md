@@ -13,12 +13,12 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: 2edd4503e25b4ef2ddf4225716a152609c1022b3
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 9309d0b1bc5a83495af344b699b45e6e21d7e1d65dab6511e31880ee11ec4bfb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596313"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811304"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>Protéger les données de votre organisation avec le contrôle d’appareil
 

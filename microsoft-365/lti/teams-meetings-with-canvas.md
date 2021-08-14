@@ -13,16 +13,24 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams réunions avec Canvas
-ms.openlocfilehash: 5ba812ba2f5694dd7860131479f01fceaba9ab2a040d1ba828306aa022665f74
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3c2692aa44b8e711cfd9e4f1cb321dfba7cd80ae1e9186c95b1931705676016
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819284"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834774"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Utiliser Microsoft Teams réunions avec Canvas
 
 Microsoft Teams réunions est une application Learning Tools Interoperability (LTI) qui permet aux enseignants et aux étudiants de naviguer facilement entre leur système de gestion Learning (LMS) et leur Teams. Les utilisateurs peuvent accéder à leurs équipes de cours associées à leur cours directement à partir de leur LMS.
+
+## <a name="prerequisites-before-deployment"></a>Conditions préalables avant le déploiement
+
+> [!NOTE]
+> L’Teams Meetings LTI actuelle prend uniquement en charge la synchronisation des utilisateurs canvas avec Microsoft Azure Active Directory (AAD) dans une étendue limitée. 
+> - Votre client doit avoir une licence Microsoft Éducation.
+> - Un seul client Microsoft peut être utilisé pour le mappage d’utilisateurs entre Canvas et Microsoft.
+> - Vous devez désactiver SDS avant d’utiliser la classe Teams LTI afin d’éviter la duplication des groupes.
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administrateur
 
@@ -32,11 +40,14 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 2. Sélectionnez **le lien** Administrateur dans la navigation globale, puis sélectionnez votre compte.
 
-3. Dans la navigation de l’administrateur, sélectionnez **Paramètres** lien, puis l’onglet **Intégrations.**
+3. Dans la navigation de l’administrateur, **sélectionnez Paramètres** lien, puis l’onglet **Intégrations.**
 
-4. Entrez le nom de votre client Microsoft et l’attribut de connexion.
+![Canvas Teams Sync Updated png](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
 
-   L’attribut de connexion sera utilisé pour associer l’utilisateur Canvas à un Azure Active Directory utilisateur.
+4. Entrez le nom de votre client Microsoft, l’attribut de connexion, le suffixe de domaine et l’attribut de recherche AAD. Ces champs seront utilisés pour faire correspondre les utilisateurs de Canvas aux utilisateurs Microsoft Azure Active Directory. 
+   * L’attribut de connexion est l’attribut utilisateur Canvas utilisé pour la correspondance.
+   * Le champ Suffix est facultatif et vous permet de spécifier un domaine lorsqu’il n’existe pas de mappage exact entre les attributs canvas et les champs Microsoft AAD. Par exemple, si votre e-mail Canvas est « name@example.edu » alors que l’UPN dans Microsoft AAD est « nom » , vous pouvez faire correspondre les utilisateurs en entrant « example.edu » dans le champ de suffixe.
+   * L’attribut de recherche Active Directory est le champ côté Microsoft auquel les attributs Canvas sont en correspondance. Sélectionnez l’UPN, l’adresse de messagerie principale ou l’alias de messagerie.
 
 5. Sélectionnez **Mettre à jour Paramètres** une fois terminé.
 
@@ -44,9 +55,12 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
    ![autorisations](media/permissions.png)
 
-7. Sélectionnez **Accepter**.
+7. Sélectionnez **Accepter**. 
 
-8. Activez la synchronisation Microsoft Teams l’utilisateur en activer le basculement.
+> [!NOTE]
+> La synchronisation est une fonctionnalité gérée par un partenaire LMS et utilisée pour synchroniser l’appartenance au niveau d’un cours avec l’équipe Teams à l’aide des API Microsoft Graph. Il s’agit principalement d’une fonctionnalité qu’un enseignant bascule comme vrai au niveau d’un cours. Par la suite, toute modification d’appartenance effectuée côté LMS pour l’ajout ou la suppression des membres est reflétée à l’aide de la synchronisation implémentée par le partenaire LMS. Avant même que ce processus ne soit activé pour un enseignant, l’administrateur de l’établissement d’enseignement M365 permet à ses enseignants d’accéder à la synchronisation à l’aide de la modale d’autorisation de synchronisation ci-dessous. Ces autorisations sont accordées au partenaire LMS pour permettre aux enseignants de synchroniser l’appartenance entre le cours LMS et les équipes Teams classe.
+
+8. Activez la synchronisation Microsoft Teams l’utilisateur en activé le basculement.
 
    ![teams-sync](media/teams-sync.png)
 
@@ -75,6 +89,8 @@ En tant qu’administrateur de zone de dessin, vous devez ajouter l’applicatio
 5. Sélectionnez **Installer**.
 
    L Microsoft Teams l’application LTI de réunions sera ajoutée à la liste des applications externes.
+
+6. Activez l’application en naviguant vers les clés du développeur dans le compte d’administrateur Canvas, en sélectionnant hérité et en activé le basculement pour Microsoft Teams réunions.
    
 ## <a name="enable-for-canvas-courses"></a>Activer pour les cours de canevas
 

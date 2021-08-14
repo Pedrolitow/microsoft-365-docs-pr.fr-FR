@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7365bc28e05c22cdba3ac52fcbda109c192bbe7e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c2154351dd3f7db7e3300dde86bdb3e7f1b6e4d55853c59449d11aa5ef12a643
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651746"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810977"
 ---
 # <a name="restrict-app-execution-api"></a>API Restreindre l’exécution de l’application
 
@@ -48,6 +48,13 @@ Limiter l’exécution de toutes les applications sur l’appareil à l’except
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+
+> [!IMPORTANT]
+>
+> - Cette action est disponible pour les appareils Windows 10 version 1709 ou ultérieure.
+> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender.
+> - Cette action doit respecter les formats de stratégie d Windows Defender’intégrité du code application Control et les exigences de signature. Pour plus d’informations, voir [Formats de stratégie d’intégrité du code et signature.](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)
 
 ## <a name="permissions"></a>Autorisations
 

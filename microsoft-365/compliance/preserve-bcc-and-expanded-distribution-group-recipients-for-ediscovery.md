@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place conservation, conservation pour litige et stratégies de rétention Microsoft 365 vous permettent de conserver le contenu des boîtes aux lettres afin de répondre aux exigences de conformité réglementaire et eDiscovery.
-ms.openlocfilehash: f00ed951fb68778b9c62ae874c2cca964bd6cb5c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80481a5b7c85167742e79c86c6d60e52f80aa0e4b1dd9b128e7ce188f5ddf09a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927940"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891810"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
   
@@ -58,7 +58,7 @@ Scénario 1 : John est membre du groupe de distribution Ventes aux États-Unis. 
    
 Scénario 2 : Bob envoie un courrier électronique à John (À/Cc) et Jack (Cci, directement ou indirectement via un groupe de distribution). Le tableau ci-dessous montre les résultats de la recherche de découverte électronique.
   
-| Lorsque vous recherchez... | Pour les messages envoyés... | Les résultats incluent le message... | Notes |
+| Lorsque vous recherchez... | Pour les messages envoyés... | Les résultats incluent le message... | Remarques |
 |:-----|:-----|:-----|:-----|
 |Boîte aux lettres de Bob  <br/> |À/Cc:John  <br/> |Oui  <br/> |Indique que Jack était inclus dans le champ Cci  <br/> |
 |Boîte aux lettres de Bob  <br/> |Cci:Jack  <br/> |Oui  <br/> |Indique que Jack était inclus dans le champ Cci  <br/> |
@@ -84,7 +84,7 @@ R. Non. Ces informations ne sont pas incluses dans les en-têtes de message et n
   
  **Q. Comment puis-je m’assurer que les destinataires de groupe de distribution étendu sont toujours conservés ?**
   
-A. Pour vous assurer que les membres du groupe de distribution étendu sont toujours conservés avec un [message,](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) placez toutes les boîtes aux lettres en conservation ou créez une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. 
+R : Pour vous assurer que les membres du groupe de distribution étendu sont toujours conservés avec un [message,](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) placez toutes les boîtes aux lettres en conservation ou créez une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. 
   
  **Q. Quels types de groupe sont pris en charge ?**
   

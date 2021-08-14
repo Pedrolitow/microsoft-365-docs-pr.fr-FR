@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: eeda30297133c9bfd2d030f602cb76fdf1c39ba9
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 22b272e956740fe77bc936827c7212ddcc1e75efa8dbf30103a04ba2f53a2607
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811484"
 ---
 # <a name="attack-surface-reduction-rules"></a>Règles de réduction des surfaces d'attaque
 
@@ -36,7 +36,7 @@ Cet article fournit des informations sur les règles de réduction des attaques 
 
 ## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge 
 
-Les liens vers des informations sur les versions du système d’exploitation référencés dans ce tableau sont répertoriés sous ce tableau.
+Le tableau suivant répertorie les règles de réduction de la surface d’attaque par ordre alphabétique. Une coche indique que la règle est prise en charge par le système d’exploitation répertorié dans cette colonne.
 
 > [!Note]
 >
@@ -63,18 +63,6 @@ Les liens vers des informations sur les versions du système d’exploitation r�
 |[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | ![Pris en charge](images/checkmark.png) <br><br> version 1803 ou ultérieure | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
 | **Nom de la règle** |  **&nbsp;Windows 10** | **&nbsp;Windows Server 2019** | **&nbsp;Windows Serveur** | **&nbsp;Windows Server 2016** | **&nbsp;Windows Server 2012 R2** |
-
-### <a name="operating-system-version"></a>Version du système d'exploitation
-
-- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 Professionnel, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 Entreprise, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-
-- [Windows Serveur, version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="supported-configuration-management-systems"></a>Systèmes de gestion de la configuration pris en charge
 
@@ -147,7 +135,7 @@ Nom Intune : `Office apps launching child processes`
 
 Nom du Gestionnaire de configuration : `Block Office application from creating child processes`
 
-GUID : `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
+GUID : `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquer le vol d’informations d’identification Windows sous-système de l’autorité de sécurité locale
 
@@ -175,7 +163,7 @@ Nom Intune : `Execution of executable content (exe, dll, ps, js, vbs, etc.) drop
 
 Microsoft Endpoint Manager nom de l’Microsoft Endpoint Manager :`Block executable content from email client and webmail`
 
-GUID : `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
+GUID : `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 > [!NOTE]
 > La règle Bloquer **le contenu exécutable** à partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
@@ -217,7 +205,7 @@ Nom Intune : `Obfuscated js/vbs/ps/macro code`
 
 Nom du Gestionnaire de configuration : `Block execution of potentially obfuscated scripts`
 
-GUID : `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
+GUID : `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé
 
@@ -229,7 +217,7 @@ Nom Intune : `js/vbs executing payload downloaded from Internet (no exceptions)`
 
 Nom du Gestionnaire de configuration : `Block JavaScript or VBScript from launching downloaded executable content`
 
-GUID : `D3E037E1-3EB8-44C8-A917-57927947596D`
+GUID : `d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher Office applications de créer du contenu exécutable
 
@@ -241,7 +229,7 @@ Nom Intune : `Office apps/macros creating executable content`
 
 Nom SCCM : `Block Office applications from creating executable content`
 
-GUID : `3B576869-A4EC-4529-8536-B80A7769E899`
+GUID : `3b576869-a4ec-4529-8536-b80a7769e899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Empêcher Office applications d’injecter du code dans d’autres processus
 
@@ -257,7 +245,7 @@ Nom Intune : `Office apps injecting code into other processes (no exceptions)`
 
 Nom du Gestionnaire de configuration : `Block Office applications from injecting code into other processes`
 
-GUID : `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
+GUID : `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher Office application de communication de créer des processus enfants
 
@@ -329,7 +317,7 @@ Nom Intune : `Win32 imports from Office macro code`
 
 Nom du Gestionnaire de configuration : `Block Win32 API calls from Office macros`
 
-GUID : `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
+GUID : `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Utiliser la protection avancée contre les ransomware
 

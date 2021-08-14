@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 408f28ab9e0b866d604ee43b303e3072f9c0bb77
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 16a0222b1d72099cf1d6f9cba23f599ad722804fc1d0b04c9953e94aa3ab1d80
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655622"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811184"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour Endpoint sur Linux
 
@@ -45,7 +45,7 @@ Ces applications peuvent augmenter le risque d’infection de votre réseau par 
 
 Defender pour le point de terminaison sur Linux peut détecter et signaler des fichiers PUA. Lorsqu’ils sont configurés en mode de blocage, les fichiers PUA sont placés en quarantaine.
 
-Lorsqu’une puA est détectée sur un point de terminaison, Defender for Endpoint sur Linux conserve un enregistrement de l’infection dans l’historique des menaces. L’historique peut être visualisé à partir du portail Microsoft 365 Defender ou via l’outil `mdatp` en ligne de commande. Le nom de la menace contient le mot « Application ».
+Lorsqu’une PUA est détectée sur un point de terminaison, Defender for Endpoint sur Linux conserve un enregistrement de l’infection dans l’historique des menaces. L’historique peut être visualisé à partir du Microsoft 365 Defender centre de gestion ou via l’outil `mdatp` en ligne de commande. Le nom de la menace contient le mot « Application ».
 
 ## <a name="configure-pua-protection"></a>Configurer la protection PUA
 
@@ -56,7 +56,7 @@ La protection PUA dans Defender for Endpoint sur Linux peut être configurée de
 - **Bloquer**: les fichiers PUA sont signalés dans les journaux du produit et dans Microsoft 365 Defender. Un enregistrement de l’infection est stocké dans l’historique des menaces et une action est prise par le produit.
 
 >[!WARNING]
->Par défaut, la protection PUA est configurée en mode **Audit.**
+>Par défaut, la protection PUA est configurée en mode **audit.**
 
 Vous pouvez configurer la façon dont les fichiers PUA sont gérés à partir de la ligne de commande ou de la console de gestion.
 
@@ -70,7 +70,7 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>Utilisez la console de gestion pour configurer la protection PUA :
 
-Dans votre entreprise, vous pouvez configurer la protection PUA à partir d’une console de gestion, telle qu’Unetem ou Ansible, de la même manière que d’autres paramètres de produit sont configurés. Pour plus d’informations, voir la section [Paramètres](linux-preferences.md#threat-type-settings) du type de menace de l’article Définir les préférences de [Defender pour Endpoint sur Linux.](linux-preferences.md)
+Dans votre entreprise, vous pouvez configurer la protection PUA à partir d’une console de gestion, telle qu’une console de jeu ou ansible, de la même manière que d’autres paramètres de produit sont configurés. Pour plus d’informations, voir la section [Paramètres](linux-preferences.md#threat-type-settings) du type de menace de l’article Définir les préférences de [Defender pour Endpoint sur Linux.](linux-preferences.md)
 
 ## <a name="related-articles"></a>Articles connexes
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d39140d3f5d9f066dab59b19d41a98aa0d0a6f4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: cddd84dc362d2193cb63dc18783f280730ba4a6f37df5dc8677bb56899767370
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655682"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811217"
 ---
 # <a name="get-machine-related-alerts--api"></a>API Obtenir les alertes associées à l’ordinateur
 

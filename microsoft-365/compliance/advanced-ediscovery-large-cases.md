@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez de grands cas dans Advanced eDiscovery pour ajouter d’autres éléments aux jeux de révision et tirer parti d’autres limites accrues.
-ms.openlocfilehash: d4737b6c715ac96fc9e16c40e2f4fa784a66e5d1
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 739fa2a7bb3e1d1d650ef736ca1c480c8b704e6f4c2cc12b6c7fdd7e03fec2ed
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542462"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523656"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>Utiliser de grands cas dans Advanced eDiscovery (prévisualisation)
 
@@ -35,7 +35,7 @@ Pour créer un cas important :
 
 2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur **eDiscovery > Advanced**.
 
-3. Dans la page **Advanced eDiscovery,** cliquez sur **l’onglet Cas,** puis cliquez **sur Créer un cas.**
+3. Dans la page **Advanced eDiscovery,** cliquez sur l’onglet **Cas,** puis cliquez **sur Créer un cas.**
 
    La page de présentation du nouveau cas **eDiscovery** s’affiche. La section **Format de** cas offre la possibilité de créer un cas important. Choisissez ce type de cas si vous devez collecter une grande quantité de contenu sur une courte période de temps.
 
@@ -53,13 +53,19 @@ Voici une liste des autres avantages des cas importants dans Advanced eDiscovery
 
    Pour chaque grand cas, les paramètres de collection collectent par défaut les pièces jointes cloud et les Teams et Yammer contenu. Ces paramètres permettent de recueillir l’image complète des communications numériques au sein d’une enquête. Pour les conversations contextuelles Teams et Yammer, le format de cas élevé convertit les captures instantanées basées sur le temps de 1:1, 1 : N et les conversations de canal en transcriptions html afin de fournir du contexte aux conversations et de réduire le nombre total d’éléments produits par le contenu basé sur la conversation.  
 
-- **Révision**: chaque ensemble de révision prendra en charge jusqu’à 1 To de contenu de pré-expansion. Des métadonnées supplémentaires seront disponibles pour les filtres et les requêtes, notamment le nom de l’équipe, le nom du canal et le nom de conversation pour Teams contenu. Chaque transcription inclut du contenu basé sur le temps avant et après l’élément réactif. Pour les conversations de canal, le billet racine et toutes les réponses sont collectés pour le contenu réactif.  
+- **Révision**: chaque ensemble de révision prendra en charge jusqu’à 1 To de contenu de pré-expansion. Des métadonnées supplémentaires seront disponibles pour les filtres et les requêtes, notamment le nom de l’équipe, le nom du canal et le nom de conversation pour Teams contenu. Chaque transcription inclut un contenu basé sur le temps avant et après l’élément réactif. Pour les conversations de canal, le billet racine et toutes les réponses sont collectés pour le contenu réactif.  
 
 - **Exporter**: vous pouvez exporter de grands ensembles de contenu en une seule tâche d’exportation. Le format de grande taille vous permet d’exporter 5 millions de documents ou 500 Go, selon la taille la plus petite d’une tâche d’exportation.
 
 En outre, le nouveau format de cas de grande taille inclut une interface utilisateur mise à jour qui affiche la taille totale de chaque jeu à réviser dans le cas. Les tailles des ensembles de révision sont affichées dans une colonne de l’onglet Révision **et** dans un volet volant qui persiste de chaque onglet dans le cas.
 
 ![Statistiques de cas de grande taille dans Advanced eDiscovery’interface utilisateur](..\media\LargeCaseUI.png)
+
+## <a name="known-issues"></a>Problèmes connus
+
+- L’option d’exportation de contenu en tant que fichiers libres et **fichiers PST n’est** actuellement pas prise en charge dans les grands cas (l’option est grisée). Cette option d’exportation pour les cas importants sera bientôt prise en charge. Pour plus d’informations sur l’exportation de contenu, voir [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
+
+- L’indexation avancée qui se produit lorsque vous ajoutez des dépositaires et une source de données non privative à un cas n’est actuellement pas prise en charge dans de grands cas. Le travail d’indexation est créé, mais il ne se termine pas. L’indexation avancée dans de grands cas sera bientôt prise en charge. Pour plus d’informations sur l’indexation avancée, voir [Indexation avancée des données des dépositaires.](indexing-custodian-data.md)
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 

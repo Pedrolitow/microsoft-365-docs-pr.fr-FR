@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 08/04/2021
-ms.openlocfilehash: d90ae4b8281015c675535f483b23e5c027e6918abc57627e8da3440db9b03064
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.date: 08/05/2021
+ms.openlocfilehash: 80dba315e8293e6a88e8cca7db3bbe12a30226ffb4b6daa4b9cad2343ac9e4a7
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800089"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523644"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -82,18 +82,19 @@ Toutes nos mises à jour contiennent
 - améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
-<summary> Juillet-2021 (plateforme : 4.18.2107.4 | Moteur : 1.1.18400.x)</summary>
+<summary> Juillet-2021 (plateforme : 4.18.2107.4 | Moteur : 1.1.18400.4)</summary>
 
-&ensp;Version de mise à jour de l’intelligence **de la sécurité : x.xxx.xx.x**  
-&ensp;Publication : **date, 2021**  
+&ensp;Version de mise à jour des informations de sécurité **: 1.345.13.0**  
+&ensp;Publication : **5 août 2021**  
 &ensp;Plateforme : **4.18.2107.4**  
-&ensp;Moteur : **1.1.18400.x**  
+&ensp;Moteur : **1.1.18400.4**  
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**
     
 ### <a name="whats-new"></a>Nouveautés
 - Prise en charge des contrôles d’appareil ajoutée Windows appareils portables
 - La protection des applications potentiellement indésirables (PUA) est désactivée par défaut pour les consommateurs (voir Applications potentiellement indésirables bloquées [par défaut)](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)
 - Les analyses programmées pour les systèmes gérés par l’objet de stratégie de groupe respecteront la durée d’analyse configurée par l’utilisateur 
+- Améliorations apportées au moteur d’analyse du comportement
 
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu  
@@ -413,7 +414,7 @@ Aucun problème connu
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.311.4.0**   
 &ensp;Publication : **25 février 2020**  
-&ensp;Plateforme/client : **-**  
+&ensp;Plateforme/Client : **-**  
 &ensp;Moteur : **1.1.16800.2**  
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
      
@@ -441,11 +442,11 @@ Moteur : **1.1.16700.2**
 - Prise en charge des mises à jour de plateforme lorsque le TMP est redirigé vers le chemin d’accès réseau
 - Les versions de plateforme et de moteur sont ajoutées [à WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - étendre la mise à jour des signatures d’urgence [en mode passif](./microsoft-defender-antivirus-compatibility.md)
-- Correction du problème de 4.18.1911.3
+- Correction du hang 4.18.1911.3
    
 ### <a name="known-issues"></a>Problèmes connus
 
-[**Fixed**] Devices using [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Les ordinateurs concernés semblent ne pas avoir été mis à jour vers la dernière plateforme anti-programme malveillant.  
+[**Fixe**] Les appareils utilisant le [mode](/windows-hardware/design/device-experiences/modern-standby) de veille moderne peuvent se bloquer avec le pilote de filtre Windows Defender, ce qui se traduit par un manque de protection.  Les ordinateurs concernés semblent ne pas avoir été mis à jour vers la dernière plateforme anti-programme malveillant.  
 <br/>
 > [!IMPORTANT]
 > Cette mise à jour est :
@@ -508,23 +509,37 @@ Pour Windows 10 de publication, consultez la [Windows de faits sur](https://supp
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Mises à jour pour la gestion et la maintenance des images de déploiement (DISM)
 
-Nous vous recommandons de mettre à jour vos images d’installation Windows 10 (Enterprise, Pro et Éditions Famille), Windows Server 2019 et Windows Server 2016 OS avec les dernières mises à jour antivirus et anti-programme malveillant. La mise à jour de vos images d’installation du système d’exploitation permet d’éviter un écart de protection. 
+Nous vous recommandons de mettre à jour vos images d’installation Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019 et Windows Server 2016 OS avec les dernières mises à jour antivirus et anti-programme malveillant. La mise à jour de vos images d’installation du système d’exploitation permet d’éviter un écart de protection. 
 
-Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Windows images d’installation du système d’exploitation.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
+Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Windows images d’installation du système d’exploitation.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
 
 <details>
+<summary>1.1.2108.01</summary>
+
+&ensp;Version du package **: 1.1.2108.01**    
+&ensp;Version de la plateforme **: 4.18.2107.4**   
+&ensp;Version du moteur **: 1.1.18300.4**  
+&ensp;Version de signature **: 1.343.2244.0**    
+    
+### <a name="fixes"></a>Correctifs
+- Néant
+
+### <a name="additional-information"></a>Informations supplémentaires
+- Néant  
+<br/>
+</details><details>
 <summary>1.1.2107.02</summary>
 
 &ensp;Version du package **: 1.1.2107.02**    
-&ensp;Version de la plateforme **: 4.18.2105.5**   
+&ensp;Version de plateforme **: 4.18.2105.5**   
 &ensp;Version du moteur **: 1.1.18300.4**  
 &ensp;Version de signature **: 1.343.658.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Néant  
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -535,10 +550,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.1923.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Néant  
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -549,10 +564,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.42.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Néant  
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
@@ -563,10 +578,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.335.232.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Néant  
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -577,10 +592,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.2302.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Néant  
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -591,10 +606,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.174.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Néant  
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -605,10 +620,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.329.1796.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Néant  
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -619,10 +634,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.1991.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Néant  
 <br/>
 </details><details>
 <summary>1.1.2011.02</summary>
@@ -633,7 +648,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.658.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Signatures Antivirus Microsoft Defender actualisées  
@@ -647,10 +662,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.344.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Néant  
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>
@@ -661,7 +676,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.2216.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Néant
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Ajout de la prise en charge Windows 10 images d’installation du système d’exploitation RS1 ou ultérieure.  

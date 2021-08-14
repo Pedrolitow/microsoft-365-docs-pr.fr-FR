@@ -1,5 +1,5 @@
 ---
-title: Introduction à l’intégration de Microsoft 365 Defender dans vos opérations de sécurité
+title: Intégration de Microsoft 365 Defender dans vos opérations de sécurité
 description: Les principes de base de l’intégration Microsoft 365 Defender vos opérations de sécurité.
 keywords: incidents, alertes, examiner, corrélation, attaque, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365, réponse aux incidents, cyber-attaque, secops, opérations de sécurité, soc
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a90ef363b869b5b10352a0aedcd6210a336e4a8c2a32b806aa3d3b583287b515
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e1fa33358dbaa63e99e4e0645a04766ab72477b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862598"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58243925"
 ---
-# <a name="introduction-to-integrating-microsoft-365-defender-into-your-security-operations"></a>Introduction à l’intégration de Microsoft 365 Defender dans vos opérations de sécurité
+# <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Intégration de Microsoft 365 Defender dans vos opérations de sécurité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -45,8 +45,10 @@ Si vous ne connaissez pas déjà Microsoft 365 Defender, consultez les articles 
 - [Prise en main de Microsoft 365 Defender](get-started.md)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
 
+Si votre organisation a déjà implémenté certains aspects de Microsoft 365 Defender, ces articles peuvent contribuer à améliorer votre architecture et vos processus existants.
+
 >[!Note]
->Si votre organisation a déjà implémenté certains aspects de Microsoft 365 Defender, ces articles peuvent contribuer à améliorer votre architecture et vos processus existants.
+>En tant que partenaire Microsoft, Protiviti a contribué et fourni des remarques importantes sur le contenu de cet article.
 >
 
 ## <a name="target-audience"></a>Public cible
@@ -61,7 +63,7 @@ Ce contenu est conçu pour les raisons suivantes :
 - Équipes d’investigation & CSIRT
 - Microsoft 365 administrateurs
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Utilisez ces étapes pour intégrer Microsoft 365 Defender dans votre SOC.
 

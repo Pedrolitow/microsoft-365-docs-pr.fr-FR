@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b56fbcd7e3a40a70ddb0e36b33aa4a24c8f5835
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: bdd3e822403b6ad48989723626ce5a6d2d4a8bc3a18ca01c3c1d9915aabfa03d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657158"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811241"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Méthodes et propriétés des activités de correction
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: ea9e1acb96de32565c4d49529af75fd0224db7885fd6431b8de8bc287969c970
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 46397c4e0c414537b3f737105ce2d60e2c2ec7d366763b174a6ab377db4ee9c2
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834534"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803451"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
@@ -43,7 +43,7 @@ Pour les autres charges de travail, consultez:
 
 Les messages des utilisateurs de Yammer et les messages de la communauté peuvent être supprimés en utilisant les politiques de conservation pour Yammer. En plus du texte des messages, les éléments suivants peuvent être conservés pour des raisons de conformité : Les liens hypertextes et les liens vers d'autres messages Yammer.
 
-Les messages de l'utilisateur comprennent tous les noms des personnes présentes dans la conversation, et les messages de la communauté comprennent le nom de la communauté et le titre du message (s'il est fourni).
+Les messages de l'utilisateur comprennent tous les noms des personnes présentes dans le chat, et les messages de la communauté comprennent le nom de la communauté et le titre du message (s'il est fourni).
 
 Les réactions des autres sous forme d'émoticônes ne sont pas conservées lorsque vous utilisez les politiques de conservation pour Yammer.
 

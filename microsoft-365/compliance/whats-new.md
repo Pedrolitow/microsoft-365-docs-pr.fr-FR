@@ -27,10 +27,10 @@ ms.locfileid: "58244012"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
-Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microsoft 365,](microsoft-365-compliance-center.md)en mettant à jour les fonctionnalités existantes en fonction de vos commentaires ou en mettant en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester informé du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 jour.
+Que vous ajoutiez de nouvelles solutions au [Centre de conformité Microsoft 365,](microsoft-365-compliance-center.md)mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester informé du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 jour.
 
 > [!NOTE]
-> Certaines fonctionnalités de conformité sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](/office365/admin/manage/release-options-in-office-365)
+> Certaines fonctionnalités de conformité sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](/office365/admin/manage/release-options-in-office-365)
 
 > [!TIP]
 > Vous êtes intéressé par ce qui se passe dans d’autres centres d’administration ? Consultez les articles suivants :
@@ -45,7 +45,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- [Advanced eDiscovery flux](teams-workflow-in-advanced-ediscovery.md) de travail pour le contenu dans Microsoft Teams à l’aide de grands cas a ajouté un flux de travail de bout en bout de gestion du contenu Teams dans Advanced eDiscovery ; inclut des détails sur l’aperçu de la nouvelle fonctionnalité de transcription de conversation.
+- [Advanced eDiscovery flux](teams-workflow-in-advanced-ediscovery.md) de travail pour le contenu dans Microsoft Teams à l’aide de grands cas ajout d’un flux de travail de bout en bout de gestion du contenu Teams dans Advanced eDiscovery ; inclut des détails sur l’aperçu de la nouvelle fonctionnalité de transcription de conversation.
 - Utilisez de grands cas dans [Advanced eDiscovery](advanced-ediscovery-large-cases.md) ajout d’un aperçu du nouveau format de cas de grande taille qui étend les limites de révision et de cas et prend en charge les transcriptions de conversation pour Teams et Yammer conversation.
 
 ### <a name="app-governance"></a>Gouvernance des applications
@@ -59,7 +59,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 ### <a name="compliance--service-assurance"></a>Certification du service & conformité
 
 - [Assurance de service](/compliance/) (mise à jour ; révision trimestrielle des mises à jour de contenu pour les certifications et déclarations d’applicabilité)
-    - Vérifications des arrière-plan dans le cloud
+    - Vérifications d’arrière-plan dans le cloud
     - Transfert d'& employé
     - Gouvernance
     - Ressources humaines
@@ -74,14 +74,14 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 
 ### <a name="data-classification"></a>Classification des données
 
-- [En savoir plus sur la classification des données.](data-classification-overview.md) Mise à jour pour la version GA du classifieur entra nements entra mentables.
+- [En savoir plus sur la classification des données.](data-classification-overview.md) Mise à jour pour la version GA du classifieur de discrimination entra nements.
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 
 - [Découvrez comment Microsoft 365 protection contre la](endpoint-dlp-learn-about.md) perte de données de point de terminaison a ajouté des conseils mis à jour sur l’activité de fichier Toujours auditer pour les appareils.
 - [Mise en place du scanneur](dlp-on-premises-scanner-get-started.md) local de protection contre la perte de données mis à jour pour la version GA.
 - [En savoir plus sur la Microsoft 365 protection contre](dlp-on-premises-scanner-learn.md) la perte de données sur site mise à jour pour la version GA.
-- [Utilisez le Microsoft 365 de protection contre](dlp-on-premises-scanner-use.md) la perte de données local mis à jour pour la version GA.
+- [Utilisez le Microsoft 365 protection contre](dlp-on-premises-scanner-use.md) la perte de données local mis à jour pour la version GA.
 - [Utilisez des stratégies de protection contre](dlp-use-policies-non-microsoft-cloud-apps.md) la perte de données pour les applications cloud non-Microsoft mises à jour pour la version GA et l’intégration MIP-MCAS.
 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
@@ -199,7 +199,7 @@ Voici quelques-unes des modifications apportées aux solutions Microsoft 365 con
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 - **Advanced eDiscovery collections de collections prend** désormais en charge les nouveaux [outils de collections et flux de travail.](/microsoft-365/compliance/collections-overview) D’autres nouvelles rubriques incluent [la création d’un brouillon de collection,](/microsoft-365/compliance/create-draft-collection)la validation d’une collection provisoire dans un jeu à [réviser](/microsoft-365/compliance/commit-draft-collection)et les statistiques et les rapports [de collection.](/microsoft-365/compliance/collection-statistics-reports)
-- **Exporter des documents** d’un jeu à réviser vers [un stockage Azure](/microsoft-365/compliance/download-export-jobs) client.
+- **Exporter des documents** dans un jeu à réviser vers [un stockage Azure](/microsoft-365/compliance/download-export-jobs) client.
 - **Module de codage prédictif pour Advanced eDiscovery**. Tout d’abord, regardez la nouvelle fonctionnalité de [codage](/microsoft-365/compliance/predictive-coding-overview) prédictif qui remplace le module Pertinence retiré.
 
 ### <a name="data-classification"></a>Classification des données
@@ -218,7 +218,7 @@ Voici quelques-unes des modifications apportées aux solutions Microsoft 365 con
 ### <a name="encryption"></a>Chiffrement
 
 - **Clé client pour Microsoft 365**. [Vue d’ensemble de la](/microsoft-365/compliance/customer-key-tenant-level) clé client Microsoft 365 au niveau du client (prévisualisation publique).
-- **Chiffrement à double clé**. En savoir plus sur [l’activation de la prise](/microsoft-365/compliance/double-key-encryption) en charge des documents étiquetés et protégés dans SharePoint et OneDrive Entreprise.
+- **Chiffrement à double clé**. En savoir plus [sur l’activation de la prise](/microsoft-365/compliance/double-key-encryption) en charge des documents étiquetés et protégés dans SharePoint et OneDrive Entreprise.
 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
@@ -252,7 +252,7 @@ Les rubriques suivantes ont été mises à jour ou ajoutées pour prendre en cha
 ### <a name="records-management"></a>Gestion des enregistrements
 
 - **Améliorations apportées au plan de fichiers.** Une mise à [jour du plan](file-plan-manager.md) de fichiers supprime ou améliore les restrictions de longueur précédentes pour l’importation.
-- **Supprimer des étiquettes de rétention pour les enregistrements**. Une version d’aperçu prend en charge la possibilité de [supprimer les étiquettes de](create-apply-retention-labels.md#deleting-retention-labels) rétention qui marquent les éléments comme des enregistrements.
+- **Supprimer des étiquettes de rétention pour les enregistrements.** Une version d’aperçu prend en charge la possibilité de [supprimer les étiquettes de](create-apply-retention-labels.md#deleting-retention-labels) rétention qui marquent les éléments comme des enregistrements.
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
@@ -262,7 +262,7 @@ Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 - [En savoir plus sur les types d’informations confidentielles](/microsoft-365/compliance/sensitive-information-type-learn-about).
 - [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
 - [Créer des notifications pour les activités de correspondance de données exactes](/microsoft-365/compliance/sit-edm-notifications-activities)
-- [Définitions d’entités de type d’informations sensibles](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [Définitions d’entités de types d’informations sensibles](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 - [Créer un type d’informations sensibles personnalisé à l’aide de PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
 - [Créer un dictionnaire de mots clés](/microsoft-365/compliance/create-a-keyword-dictionary)
 
