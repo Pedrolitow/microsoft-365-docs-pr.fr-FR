@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange administrateurs en ligne gèrent la messagerie et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
-ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: e4c5e437ae72e3d3baac4140200670684af73cf1080c7b80edca044389465684
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816018"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos Exchange Online rôle d’administrateur principal
 
@@ -38,7 +38,7 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
   
 - [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Configurer une stratégie d’archivage et de](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)suppression pour les boîtes aux lettres de votre organisation.
+- [Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation.](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)
 
 - Configurer des fonctionnalités de boîte aux lettres telles que la stratégie de partage de boîte aux lettres : comment les utilisateurs peuvent partager des informations de calendrier et de contacts avec d’autres personnes extérieures à votre organisation.
 
@@ -46,13 +46,13 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
 
 - [Créez une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) pour qu’un groupe de personnes puisse surveiller et envoyer des messages électroniques à partir d’une adresse de messagerie commune.
 
-- [Protection contre le courrier indésirable et filtres anti-programme](../../security/office-365-security/anti-spam-protection.md) malveillant pour l’organisation.
+- Protection contre le courrier indésirable et filtres [anti-programme](../../security/office-365-security/anti-spam-protection.md) malveillant pour l’organisation.
 
 - Gestion des groupes Microsoft 365
 
 ## <a name="exchange-online-role-groups"></a>Exchange Online groupes de rôles
 
-Si vous avez une grande organisation, l’administrateur Exchange peut affecter des utilisateurs à Exchange groupes de rôles. Lorsqu’un administrateur ajoute un utilisateur à un groupe de rôles, l’utilisateur obtient les autorisations pour effectuer certaines fonctions professionnelles que seuls les membres de ce groupe peuvent faire.
+Si vous avez une grande organisation, l’administrateur Exchange souhaite peut-être affecter des utilisateurs à Exchange groupes de rôles. Lorsqu’un administrateur ajoute un utilisateur à un groupe de rôles, l’utilisateur obtient les autorisations pour effectuer certaines fonctions professionnelles que seuls les membres de ce groupe peuvent faire.
   
  Par exemple, l’administrateur Exchange peut affecter une personne au groupe de rôles Gestion de la découverte afin qu’elle puisse effectuer des recherches de données dans les boîtes aux lettres qui répondent à certains critères. Pour plus d’informations, [voir Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo) et gérer les groupes de [rôles.](/exchange/manage-role-groups-exchange-2013-help)
   

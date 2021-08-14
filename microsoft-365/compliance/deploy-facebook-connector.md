@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des pages Facebook Business Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Facebook de votre organisation.
-ms.openlocfilehash: b771c50eb5c2eb5f99269f1f399d27043ebee6bb
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 773893884aebba3d55e063e7e4f8fa331553eb215a2e20f6b8833b00811d7c12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892809"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Déployer un connecteur pour archiver les données des pages Facebook Business
 
@@ -40,7 +40,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
     ![Cliquez sur **Inscriptions d’applications (prévisualisation)**, puis sur **Nouvelle inscription**](../media/FBCimage3.png)
 
-4. Inscrivez l’application. Sous URI de redirection, sélectionnez Web dans la liste de listes de listes listes des types d’application, puis tapez dans la zone de <https://portal.azure.com> l’URI.
+4. Inscrivez l’application. Sous URI de redirection, sélectionnez Web dans la liste de listes listes des types d’application, puis tapez dans la zone de <https://portal.azure.com> l’URI.
 
    ![Inscription de l’application](../media/FBCimage4.png)
 
@@ -64,15 +64,15 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    ![Copier la valeur de la secret et l’enregistrer](../media/FBCimage9.png)
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : Déployer le service web connecteur à partir de GitHub votre compte Azure
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : Déployer le service web connecteur de GitHub votre compte Azure
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-connector-csharp-aspnet) and click Deploy to **Azure**.
 
     ![Cliquez sur Déployer sur Azure](../media/FBCGithubApp.png)
 
-2. Une fois que vous avez **cliqué sur Déployer** vers Azure, vous êtes redirigé vers un portail Azure avec une page de modèle personnalisée. Remplissez les **informations de base** et **Paramètres,** puis cliquez sur **Acheter.**
+2. Une fois que **vous avez cliqué sur Déployer** vers Azure, vous êtes redirigé vers un portail Azure avec une page de modèle personnalisée. Remplissez les **informations de base** **Paramètres** détails, puis cliquez sur **Acheter.**
 
-   - **Abonnement :** Sélectionnez votre abonnement Azure sur qui vous souhaitez déployer le service web connecteur de pages Facebook Business.
+   - **Abonnement :** Sélectionnez votre abonnement Azure vers qui vous souhaitez déployer le service web connecteur de pages Facebook Business.
 
    - **Groupe de ressources :** Choisissez ou créez un groupe de ressources. Un groupe de ressources est un conteneur qui contient des ressources associées pour une solution Azure.
 
@@ -80,9 +80,9 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    - **Nom de l’application web :** Fournissez un nom unique pour l’application web du connecteur. La longueur du nom doit être de 3 à 18 caractères. Ce nom est utilisé pour créer l’URL du service d’application Azure ; par exemple, si vous fournissez le nom de l’application Web **fbconnector,** l’URL du service d’application Azure **sera fbconnector.azurewebsites.net**.
 
-   - **tenantId :** ID client de votre organisation Microsoft 365 que vous avez copiée après la création de l’application connecteur Facebook à l Azure Active Directory l’étape 1.
+   - **tenantId :** ID de client de votre organisation Microsoft 365 que vous avez copiée après la création de l’application connecteur Facebook à Azure Active Directory l’étape 1.
 
-   - **APISecretKey :** Vous pouvez taper n’importe quelle valeur comme secret. Il permet d’accéder à l’application web de connecteur à l’étape 5.
+   - **APISecretKey :** Vous pouvez taper n’importe quelle valeur comme secret. Cela permet d’accéder à l’application web de connecteur à l’étape 5.
 
      ![Cliquez sur Créer un compte de stockage de ressources et de types](../media/FBCimage12.png)
 
@@ -94,7 +94,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
 1. Go to <https://developers.facebook.com> , log in using the credentials for the account for your organization’s Facebook Business pages, and then click Add New **App**.
 
-   ![Ajouter une nouvelle page d’application pour les entreprises Facebook](../media/FBCimage25.png)
+   ![Ajouter une nouvelle page d’application pour Les entreprises Facebook](../media/FBCimage25.png)
 
 2. Créez un ID d’application.
 
@@ -106,7 +106,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
 4. Dans la page Intégrer la connexion Facebook, cliquez sur **Web.**
 
-   ![Cliquez sur Le Web sur la page d’intégration de la connexion Facebook](../media/FBCimage28.png)
+   ![Cliquez sur Le Web sur la page d’intégration de la connexion à Facebook](../media/FBCimage28.png)
 
 5. Ajouter l’URL du service d’application Azure ; par `https://fbconnector.azurewebsites.net` exemple.
 
@@ -186,7 +186,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
 5. Cliquez **sur Enregistrer** pour enregistrer les paramètres du connecteur.
 
-## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>Étape 5 : Configurer un connecteur Facebook dans le centre Microsoft 365 conformité
+## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>Étape 5 : Configurer un connecteur Facebook dans le Centre de conformité Microsoft 365
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click Data **connectors** in the left nav.
 
@@ -202,7 +202,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    - Dans la **zone** Nom, tapez un nom pour le connecteur, tel que la **page d’actualités facebook.**
 
-   - Dans la **zone URL de** connexion, tapez ou collez l’URL du service d’application Azure ; par `https://fbconnector.azurewebsites.net` exemple.
+   - Dans la **zone URL de** connexion, tapez ou collez l’URL du service d’application Azure . par `https://fbconnector.azurewebsites.net` exemple.
 
    - Dans la **zone Mot** de passe, tapez ou collez la valeur de l’APISecretKey que vous avez ajoutée à l’étape 2.
 

@@ -20,23 +20,23 @@ search.appverid: MET150
 description: Découvrez comment mettre à niveau un abonnement Office 365 E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ee90038bb80120ed727cd2dee0c43a894053440f
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 3131f163bcf846c623213a3e2d7c88e6d21cd1479f64185d2b70be81de102c23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892626"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Mise à niveau à partir d Office 365 abonnement E4
 
-Cet article vous explique le processus de mise à niveau d’un Office 365 E4 vers un nouvel abonnement. Pour plus d’informations sur les options disponibles lors de la mise à niveau Office 365 E4, voir Informations importantes pour les Office 365 [E4.](important-information-e4.md)
+Cet article vous explique le processus de mise à niveau d’un Office 365 E4 vers un nouvel abonnement. Pour plus d’informations sur les options disponibles lors de la mise à niveau Office 365 E4, voir Informations importantes pour Office 365 [clients E4.](important-information-e4.md)
 
 > [!IMPORTANT]
-> Cet article s’applique Office 365 abonnements E4 achetés directement auprès de Microsoft via carte bancaire ou facture uniquement. Si votre abonnement a été acheté d’une autre façon, par exemple par le biais d’un partenaire ou du Centre de gestion des licences en volume, contactez votre représentant de compte Microsoft ou votre partenaire pour vous aider à mettre à niveau les plans.
+> Cet article s’applique Office 365 abonnements E4 achetés directement auprès de Microsoft via carte bancaire ou facture uniquement. Si votre abonnement a été acheté d’une autre façon, par exemple par le biais d’un partenaire ou du Centre de gestion des licences en volume, contactez votre représentant de compte Microsoft ou votre partenaire pour vous aider à mettre à niveau des plans.
 
 ## <a name="what-are-my-options-for-how-to-upgrade"></a>Quelles sont mes options de mise à niveau ?
 
-Le moyen le plus simple de  mettre à niveau votre plan consiste à utiliser l’onglet Mise à niveau dans Microsoft 365 centre d’administration. Toutefois, l’utilisation **de l’onglet** Mise à niveau n’est pas prise en charge dans toutes les situations. Si votre scénario n’est pas pris en charge, vous pourrez peut-être mettre à niveau les plans manuellement.
+Le moyen le plus simple de  mettre à niveau votre plan consiste à utiliser l’onglet Mise à niveau dans le Centre d’administration Microsoft 365. Toutefois, l’utilisation **de l’onglet** Mise à niveau n’est pas prise en charge dans toutes les situations. Si votre scénario n’est pas pris en charge, vous pourrez peut-être mettre à niveau les plans manuellement.
 
 ## <a name="what-is-the-upgrade-tab"></a>Qu’est-ce que l’onglet Mise à niveau ?
 
@@ -66,7 +66,7 @@ Il existe plusieurs raisons pour lesquelles vous ne pouvez pas mettre à niveau 
 
 ## <a name="will-a-credit-check-be-required"></a>Une vérification de solvabilité sera-t-elle nécessaire ?
 
-Si vous avez choisi de régler votre nouvelle offre par facture ou si votre achat dépasse un certain montant, une vérification de solvabilité peut être nécessaire. Si une vérification de solvabilité est nécessaire, la mise à niveau peut prendre jusqu’à deux jours ou moins. Les administrateurs n’ont pas accès au Centre d’administration Microsoft 365'administration centrale tant que la vérification de solvabilité n’est pas terminée. Toutefois, les utilisateurs ont toujours un accès complet au plan E4 jusqu’à la fin de la mise à niveau.
+Si vous avez choisi de régler votre nouvelle offre par facture ou si votre achat dépasse un certain montant, une vérification de solvabilité peut être nécessaire. Si une vérification de solvabilité est nécessaire, la mise à niveau peut prendre jusqu’à deux jours ou moins. Les administrateurs n’ont pas accès au Centre d’administration Microsoft 365 tant que la vérification de solvabilité n’est pas terminée. Toutefois, les utilisateurs ont toujours un accès complet au plan E4 jusqu’à la fin de la mise à niveau.
 
 ## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>Mettre à niveau votre plan à l’aide de l’onglet Mise à niveau
 
@@ -74,10 +74,10 @@ Si vous avez choisi de régler votre nouvelle offre par facture ou si votre acha
 
 Voici quelques points importants à retenir avant de commencer.
 
-- **Planifiez les temps d’arrêt administratifs.** Les administrateurs ne peuvent pas utiliser le centre Microsoft 365'administration lorsque le plan est mis à niveau. Selon le nombre d’utilisateurs que vous avez, la mise à niveau peut prendre de quelques minutes à quelques heures. Nous vous recommandons de planifier la mise à niveau lorsque vous n’avez pas besoin d’effectuer de mises à jour à l’aide Microsoft 365 centre d’administration.
+- **Planifiez les temps d’arrêt administratifs.** Les administrateurs ne peuvent pas utiliser le Centre d’administration Microsoft 365 pendant la mise à niveau du plan. Selon le nombre d’utilisateurs que vous avez, la mise à niveau peut prendre de quelques minutes à quelques heures. Nous vous recommandons de planifier la mise à niveau lorsque vous n’avez pas besoin d’effectuer de mises à jour à l’aide Centre d’administration Microsoft 365.
 
     Les utilisateurs ne font l’expérience d’aucune interruption de service pendant la mise à niveau du plan ; ils continuent à avoir un accès complet à l’abonnement E4 pendant le processus de mise à niveau. Une fois la mise à niveau terminée, les utilisateurs ont accès au nouveau plan.
-- **Utilisateurs, licences, facturation et domaines personnalisés.** Pour comprendre comment les utilisateurs et les licences sont gérés pendant la mise à niveau, comment les plans de mise à niveau affectent votre facturation et comment gérer les domaines personnalisés, voir que fait la mise à niveau d’un plan vers mon service et la facturation [?](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
+- **Utilisateurs, licences, facturation et domaines personnalisés.** Pour comprendre comment les utilisateurs et les licences sont gérés pendant la mise à niveau, comment les plans de mise à niveau affectent votre facturation et comment gérer les domaines personnalisés, voir que fait la mise à niveau d’un plan vers mon service et ma facturation [?](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
 - **Modifier le nombre de licences utilisateur.** Vous ne pouvez pas supprimer de licences dans le cadre des plans de mise à niveau. Toutefois, vous pouvez [réduire le nombre de licences](../licenses/buy-licenses.md) avant ou après les plans de mise à niveau.
 
 ### <a name="start-the-upgrade-by-using-the-upgrade-tab"></a>Démarrer la mise à niveau à l’aide de l’onglet Mise à niveau
@@ -92,7 +92,7 @@ Voici quelques points importants à retenir avant de commencer.
 6. Une fois que vous avez passé en revue votre commande, **sélectionnez Go to checkout**.
 7. Dans la page **De la commande,** **consultez La vente** à , **Facturé** à et Éléments dans **cet ordre**. Sélectionnez **Modifier** à côté de l’un de ces éléments pour modifier les informations.
     > [!NOTE]
-    > L’option d’utilisation de la facture comme mode de paiement est disponible uniquement pour les commandes dont le coût est supérieur à un certain montant. La sélection de l’option de paiement par facture peut retarder le processus de mise à niveau de deux jours ou plus si une vérification de solvabilité est requise.
+    > L’option d’utilisation de la facture comme mode de paiement est disponible uniquement pour les commandes dont le coût dépasse un certain montant. La sélection de l’option de paiement par facture peut retarder le processus de mise à niveau de deux jours ou plus si une vérification de solvabilité est requise.
 8. Lorsque vous avez terminé, sélectionnez **Ordre des commandes.**
 
 > [!NOTE]
@@ -127,7 +127,7 @@ Avant de passer à l’étape suivante, il est important de s’assurer que tous
 
 ### <a name="step-3-reassign-licenses-to-users"></a>Étape 3 : Réattribuer des licences aux utilisateurs
 
-Vous pouvez utiliser le centre d Microsoft 365 pour réaffecter des licences à 20 utilisateurs à la fois. Pour savoir comment faire, voir [Déplacer des utilisateurs vers un autre abonnement.](move-users-different-subscription.md)
+Vous pouvez utiliser la Centre d’administration Microsoft 365 pour réaffecter des licences à 20 utilisateurs à la fois. Pour savoir comment faire, voir [Déplacer des utilisateurs vers un autre abonnement.](move-users-different-subscription.md)
 
 > [!TIP]
 > Si vous avez un grand nombre d’utilisateurs, vous pouvez utiliser Office 365 PowerShell pour attribuer des [licences utilisateur en bloc.](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
@@ -136,7 +136,7 @@ Vous pouvez utiliser le centre d Microsoft 365 pour réaffecter des licences à 
 
 Une fois que tous vos utilisateurs ont été réassignés à votre nouvel abonnement, annulez [l’abonnement Office 365 E4](cancel-your-subscription.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Mettre à niveau vers un autre plan](upgrade-to-different-plan.md) (article)\
 [Acheter ou supprimer des licences d’abonnement](../licenses/buy-licenses.md) (article)\

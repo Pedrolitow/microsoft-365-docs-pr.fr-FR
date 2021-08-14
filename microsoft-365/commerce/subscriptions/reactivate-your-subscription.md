@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Les administrateurs peuvent réactiver un abonnement lorsqu’il expire, est désactivé ou annulé, ou si vous avez annulé l’abonnement au milieu d’une période d’abonnement.
 ms.date: 04/07/2021
-ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: a33cf6b0500dedabfde1de8f78417148a9e870e9867d530d6fb8e6346f37f21d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394916"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893078"
 ---
 # <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
 
