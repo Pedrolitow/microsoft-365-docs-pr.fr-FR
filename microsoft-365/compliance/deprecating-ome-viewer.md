@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: L chiffrement de messages Office 365 visionneuse (OME) a été supprimée des magasins Android et Apple en 2018.
-ms.openlocfilehash: bb96601a8a542d53f6732ab9316051c1a820ba46
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: dc12eaa783c43fb80fb8ecbe984ecbcd0cda315f33b2cd1d3bc65e8932d77bda
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892086"
 ---
 # <a name="deprecating-message-encryption-viewer-app"></a>Application Deprecating Message Encryption Viewer
 
@@ -32,9 +32,9 @@ Le 15 août 2018, nous avons supprimé l’application mobile chiffrement de mes
   
 ## <a name="changes-from-august-2018"></a>Modifications d’août 2018
 
-Comme annoncé en septembre 2017, nous avons publié une nouvelle version de [chiffrement de messages Office 365](https://aka.ms/ome2017) afin que les utilisateurs peuvent envoyer des messages chiffrés et protégés à toute personne à l’intérieur ou à l’extérieur de l’organisation sans l’application mobile requise. Depuis, nous avons ajouté des fonctionnalités supplémentaires :
+Comme annoncé en septembre 2017, nous avons publié une nouvelle version de [chiffrement de messages Office 365](https://aka.ms/ome2017) afin que les utilisateurs peuvent envoyer des messages chiffrés et protégés à toute personne à l’intérieur ou à l’extérieur de l’organisation sans l’exigence de l’application mobile. Depuis, nous avons ajouté des fonctionnalités supplémentaires :
   
-- [Modèle de chiffrement uniquement](https://aka.ms/encryptonly)
+- [Modèle chiffrer uniquement](https://aka.ms/encryptonly)
 
 - [Contrôle pour déchiffrer les pièces jointes](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
 

@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment créer un modèle de codage prédictif dans Advanced eDiscovery. Il s’agit de la première étape de l’utilisation des fonctionnalités d’apprentissage automatique dans Advanced eDiscovery pour vous aider à identifier le contenu pertinent et non pertinent dans un jeu à réviser.
-ms.openlocfilehash: ab84f529169c780e58888cc2726fbabfef33219e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 37ff12ea723127b322e7a2b2a1e049b66b72bb92a7625c97efdff4dcdb64b976
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891990"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Créer un modèle de codage prédictif (prévisualisation)
 
-La première étape de l’utilisation des fonctionnalités d’apprentissage automatique du codage prédictif dans Advanced eDiscovery consiste à créer un modèle de codage prédictif. Après avoir créé un modèle, vous pouvez l’entraîner à identifier le contenu pertinent et non pertinent dans un jeu à réviser.
+La première étape de l’utilisation des fonctionnalités d’apprentissage automatique du codage prédictif dans Advanced eDiscovery consiste à créer un modèle de codage prédictif. Après avoir créé un modèle, vous pouvez l’entraîner à identifier le contenu pertinent et non pertinent dans un ensemble de révision.
 
-Pour passer en revue le flux de travail de codage prédictif, voir [En savoir plus sur le codage](predictive-coding-overview.md#the-predictive-coding-workflow) prédictif dans Advanced eDiscovery
+Pour passer en revue le flux de travail de codage prédictif, voir [En savoir plus sur le codage prédictif dans Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## <a name="before-you-create-a-model"></a>Avant de créer un modèle
 
@@ -57,9 +57,9 @@ Pour passer en revue le flux de travail de codage prédictif, voir [En savoir pl
 
 Après avoir créé un modèle, les éléments suivants se produisent en arrière-plan lors de la création et de la préparation du modèle :
 
-- Le système calcule le nombre d’éléments du jeu de contrôles. Cette taille est basée sur le nombre d’éléments du jeu à réviser et sur les paramètres du niveau de confiance et de la marge d’erreur. Les éléments du jeu de contrôles sont sélectionnés de manière aléatoire et désignés comme éléments de jeu de contrôles. Le système inclut 10 éléments du jeu de contrôles de la première série de formation.
+- Le système calcule le nombre d’éléments du jeu de contrôles. Cette taille est basée sur le nombre d’éléments du jeu à réviser et sur les paramètres du niveau de confiance et de la marge d’erreur. Les éléments du jeu de contrôles sont sélectionnés de manière aléatoire et désignés en tant qu’éléments de jeu de contrôles. Le système inclut 10 éléments du jeu de contrôles de la première série de formation.
 
-- Le système sélectionne de manière aléatoire 40 éléments dans le jeu à réviser à inclure dans l’ensemble de formation pour la première série de formations. Par conséquent, la première série de formations inclut 50 éléments pour l’étiquetage : 40 éléments de l’ensemble de formations et 10 éléments de l’ensemble de contrôles.
+- Le système sélectionne de manière aléatoire 40 éléments dans le jeu à réviser à inclure dans l’ensemble de formation pour la première série de formations. Par conséquent, la première série de formations inclut 50 éléments pour l’étiquetage : 40 éléments de l’ensemble de formations et 10 éléments du jeu de contrôles.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

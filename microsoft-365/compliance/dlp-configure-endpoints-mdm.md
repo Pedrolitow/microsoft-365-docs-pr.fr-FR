@@ -14,16 +14,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Utilisez les outils de gestion des appareils mobiles pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 1ad1115308257fa3ce63f10edebb9129638fd52f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b95ee215e63027b7d7579aebecc091c972fd26ebbc3352a43c1f4dfe69d73826
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917990"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892074"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
 
@@ -31,7 +31,7 @@ Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) 
 
 
 ## <a name="before-you-begin"></a>Avant de commencer
-Si vous utilisez Microsoft Intune, l’appareil doit être inscrit À la gestion des périphériques. Dans le cas contraire, les paramètres ne seront pas appliqués correctement. 
+Si vous utilisez Microsoft Intune, l’appareil doit être inscrit À la gestion des appareils. Dans le cas contraire, les paramètres ne seront pas appliqués correctement. 
 
 Pour plus d’informations sur l’activation de la gestion des périphériques Microsoft Intune, voir [Inscription d’appareil (Microsoft Intune).](/mem/intune/enrollment/device-enrollment)
 
@@ -73,9 +73,9 @@ Pour plus d’informations Microsoft Intune paramètres de stratégie, voir [Win
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](dlp-configure-endpoints-gp.md)
 - [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows 10 utilisant un script local](dlp-configure-endpoints-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](dlp-configure-endpoints-vdi.md)
-- [Résoudre les problèmes Microsoft Defender Advanced Threat Protection’intégration](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Résoudre les problèmes d’intégration de la Protection avancée contre les menaces Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
