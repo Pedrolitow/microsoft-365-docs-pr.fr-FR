@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: Un tour d’ensemble quotidien des actualités, des tendances et des articles relatifs à votre entreprise, votre travail ou votre secteur sont remis à jour dans votre boîte de réception.
-ms.openlocfilehash: 811fbf981d740735d140c14d786b505eebaa05f4
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: ac88ccb709f23a95046ad5361fef60a1270a125ac4350e13cc0e192adcdf17b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51649961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823890"
 ---
 # <a name="microsoft-industry-updates"></a>Mises à jour du secteur Microsoft
 
@@ -29,7 +29,7 @@ Tirant parti de la puissance du moteur de recherche Bing de Microsoft, industry 
 
 ## <a name="how-does-it-work"></a>Comment cela fonctionne-t-il ?
 
-Personnalisez votre expérience en suivant les rubriques et les intérêts. Obtenez des informations sur votre entreprise, suivez les tendances du secteur et soyez le premier à connaître les lancements de produits clés. En outre, vous êtes au fait des compétences et des informations dont vous aurez besoin pour développer votre carrière.
+Personnalisez votre expérience en suivant les rubriques et les intérêts. Obtenez des informations sur votre entreprise, suivez les tendances du secteur et soyez le premier à connaître les lancements de produits clés. En outre, vous êtes pris en compte des compétences et des informations dont vous aurez besoin pour développer votre carrière.
 
 ## <a name="how-do-i-customize-my-industry-updates-email"></a>Comment personnaliser mon courrier électronique Industry Updates ?
 

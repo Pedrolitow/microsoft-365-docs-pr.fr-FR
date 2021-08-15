@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: Découvrez comment créer une stratégie d’attribution de noms pour Microsoft 365 groupes.
-ms.openlocfilehash: 5ab5f252e2b81470413b4efea17b131613aabc18
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 20d993ed4a799c68b33c9187c8b4b2021731e9415c6dc39726543343bec4517a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853082"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 de noms de groupes
 
@@ -52,7 +52,7 @@ Les préfixes et les suffixes peuvent être des chaînes fixes ou des attributs 
 
 ### <a name="fixed-strings"></a>Chaînes fixes
 
-Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixes courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
+Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixe courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
 
 ### <a name="attributes"></a>Attributs
 
@@ -60,7 +60,7 @@ Vous pouvez utiliser des attributs qui peuvent aider à identifier qui a créé 
 
 Exemples :
 
-- Policy = « GRP [GroupName] [Department] »
+- Stratégie = « GRP [GroupName] [Department] »
 - Service de l’utilisateur = Ingénierie
 - Nom du groupe créé = « GRP My Group Engineering »
 
@@ -130,7 +130,7 @@ Pour configurer une stratégie d’attribution de noms :
 
 ![Capture d’écran des paramètres de stratégie d’attribution de noms de groupes Azure Active Directory](../media/groups-naming-policy-azure.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

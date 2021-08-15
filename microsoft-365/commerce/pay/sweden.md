@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f908a4a6f3f64564a0c40f7b0b28b0308d726725
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4e76a0639a4f71649a5844b7f91e5de0e951373082ed47ba504983c86e987ca5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537786"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880962"
 ---
 # <a name="payment-information-for-sweden"></a>Informations de paiement pour la Suède
 
@@ -26,7 +26,7 @@ ms.locfileid: "52537786"
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Veuillez payer en SEK et référencer les numéro(s) de facture à votre paiement.**
+**Veuillez payer en SEK et référencer les numéro(s) de facture sur votre paiement.**
 
 Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,** utilisez les informations bancaires ci-après :
 

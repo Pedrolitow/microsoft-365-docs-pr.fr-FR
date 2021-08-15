@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: Découvrez comment valider vos informations de contact pour se conformer aux réglementations ICANN.
-ms.openlocfilehash: cddde025fb020347c52de49841e35e2e1aed90ca
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a691496fb5149d4db990d15d34f4b6da2e409a044a1f3794520b593ff0cf385f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645046"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823941"
 ---
 # <a name="icann-verification-of-contact-information"></a>Vérification des informations de contact par l’ICANN
 

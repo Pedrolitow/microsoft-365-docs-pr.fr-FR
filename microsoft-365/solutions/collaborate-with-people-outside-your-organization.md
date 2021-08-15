@@ -19,12 +19,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment configurer des applications Microsoft 365 telles que Teams, OneDrive et SharePoint pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 291a5e6d75ac1b1a12a2403a9aeece9cb658afd0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1620af867057ee771936bfc15048ce6b15968e3230c5fb324acc7bc5141af20d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537822"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853102"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborer avec des personnes extérieures à votre organisation
 
@@ -35,7 +35,7 @@ La collaboration avec des personnes extérieures à votre organisation comprend 
 - Activer **le** partage : configurez les contrôles de partage entre Azure Active Directory, Teams, Microsoft 365 Groupes et SharePoint pour autoriser le niveau de partage voulu pour votre organisation.
 -  Activer une sécurité supplémentaire : alors que les fonctionnalités de partage de base peuvent être configurées pour exiger l’authentification des personnes extérieures à votre organisation, Microsoft 365 fournit de nombreuses fonctionnalités de sécurité et de conformité supplémentaires pour vous aider à protéger vos données et à maintenir vos stratégies de gouvernance tout en partageant en externe.
 
-Lisez [Configurer la collaboration sécurisée avec Microsoft 365 et Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams) pour découvrir comment le partage externe est lié à l’ensemble des Microsoft 365 de collaboration.
+Lisez [Configurer la collaboration sécurisée](/microsoft-365/solutions/setup-secure-collaboration-with-teams) avec Microsoft 365 et Microsoft Teams pour découvrir comment le partage externe est lié aux recommandations globales Microsoft 365 collaboration.
 
 ## <a name="enable-sharing"></a>Activer le partage
 
@@ -63,7 +63,7 @@ Lorsque vous travaillez sur un grand projet qui implique de nombreux invités d�
 
 Si certaines fonctionnalités de partage dans Microsoft 365 entrent en conflit avec vos stratégies de gouvernance, voir Limiter le partage dans [Microsoft 365](microsoft-365-limit-sharing.md) pour en savoir plus sur les options de limitation du partage.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Introduction à la collaboration sur les fichiers dans Microsoft 365](/sharepoint/intro-to-file-collaboration)
 

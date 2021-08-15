@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c30e65a154e582ee843bcae4fa233f81964aca13
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: e335503c9182176b957b5b15e664a4e629f42a17a585c3fbd53ea5508b730cbd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542324"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869155"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement basé sur Intune pour Microsoft Defender pour Endpoint sur macOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "53542324"
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 
-Cette rubrique décrit comment déployer Microsoft Defender pour Endpoint sur macOS via Intune. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
+Cette rubrique décrit comment déployer Microsoft Defender pour endpoint sur macOS via Intune. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
 
 1. [Télécharger le package d’intégration](#download-the-onboarding-package)
 1. [Configuration de l’appareil client](#client-device-setup)
@@ -126,7 +126,7 @@ Ce profil contient des informations de licence pour Microsoft Defender pour le p
 
 ### <a name="approve-system-extensions"></a>Approuver les extensions système
 
-Ce profil est nécessaire pour macOS 10.15 (Genre), ou une nouvelle génération. Il sera ignoré sur les anciens macOS.
+Ce profil est nécessaire pour macOS 10.15 (Îlelier) ou une nouvelle génération. Il sera ignoré sur les anciens macOS.
 
 1. Sélectionnez **Créer un profil** sous **Profils de configuration.**
 1. Select **Platform** = **macOS**, **Profile type** = **Templates**. **Nom du modèle** = **Extensions**. Cliquez sur **Créer**.
@@ -146,14 +146,14 @@ Ce profil est nécessaire pour macOS 10.15 (Genre), ou une nouvelle génération
 
 ### <a name="kernel-extensions"></a>Extensions de noyau
 
-Ce profil est nécessaire pour macOS 10.15 (Îles) ou une ancienne. Il sera ignoré sur les nouveaux macOS.
+Ce profil est nécessaire pour macOS 10.15 (Genre) ou une ancienne. Il sera ignoré sur les nouveaux macOS.
 
 > [!CAUTION]
 > Les appareils Apple Silicon (M1) ne supportent pas KEXT. L’installation d’un profil de configuration constitué de stratégies KEXT échoue sur ces appareils.
 
 1. Sélectionnez **Créer un profil** sous **Profils de configuration.**
 1. Select **Platform** = **macOS**, **Profile type** = **Templates**. **Nom du modèle** = **Extensions**. Cliquez sur **Créer**.
-1. Dans **l’onglet Éléments de** base, nommez ce nouveau profil.
+1. Dans **l’onglet Basics,** nommez ce nouveau profil.
 1. Dans **l’onglet Paramètres de configuration,** développez **Extensions de noyau.**
 1. Définissez **l’identificateur** d’équipe sur **UBF8T346G9** et cliquez sur **Suivant**.
 
@@ -166,7 +166,7 @@ Ce profil est nécessaire pour macOS 10.15 (Îles) ou une ancienne. Il sera igno
 ### <a name="full-disk-access"></a>Accès disque total
 
    > [!CAUTION]
-   > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
+   > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
    >
    > Ce profil de configuration accorde un accès disque total à Microsoft Defender pour le point de terminaison. Si vous avez précédemment configuré Microsoft Defender pour endpoint via Intune, nous vous recommandons de mettre à jour le déploiement avec ce profil de configuration.
 
@@ -180,7 +180,7 @@ Dans le cadre des fonctionnalités de détection et de réponse des points de te
 
 Téléchargez [**netfilter.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) partir de [notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
-Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, en utilisant « Defender for Endpoint Network Filter » comme nom de profil et **netfilter.mobileconfig** téléchargé en tant que nom de profil de configuration.
+Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, en utilisant « Defender for Endpoint Network Filter » comme nom de profil et le fichier **netfilter.mobileconfig** téléchargé en tant que nom de profil de configuration.
 
 ### <a name="notifications"></a>Notifications
 
@@ -206,7 +206,7 @@ Cette étape permet de déployer Microsoft Defender pour le point de terminaison
     > [!div class="mx-imgBorder"]
     > ![Prêt à créer une application](images/mdatp-8-app-before.png)
 
-1. Sélectionnez par plateforme > macOS > Ajouter.
+1. Sélectionnez Par plateforme > macOS > Ajouter.
 1. Choose **App type** = **macOS,** click **Select**.
 
     > [!div class="mx-imgBorder"]
@@ -231,7 +231,7 @@ Cette étape permet de déployer Microsoft Defender pour le point de terminaison
 (Vous trouverez des informations détaillées sur la [page Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)pour le déploiement de Defender.)
 
    > [!CAUTION]
-   > Vous devez créer tous les profils de configuration requis et les pousser sur tous les ordinateurs, comme expliqué ci-dessus.
+   > Vous devez créer tous les profils de configuration requis et les pousser vers tous les ordinateurs, comme expliqué ci-dessus.
 
 ## <a name="client-device-setup"></a>Configuration de l’appareil client
 
@@ -281,7 +281,7 @@ Solution : suivez les étapes ci-dessus pour créer un profil d’appareil à l�
 
 ## <a name="logging-installation-issues"></a>Journalisation des problèmes d’installation
 
-Pour plus d’informations sur la recherche du journal généré automatiquement créé par le programme d’installation lorsqu’une erreur se produit, voir [Problèmes d’installation de journalisation.](mac-resources.md#logging-installation-issues)
+Pour plus d’informations sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir [Problèmes d’installation de journalisation.](mac-resources.md#logging-installation-issues)
 
 ## <a name="uninstallation"></a>Désinstallation
 

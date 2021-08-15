@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interactions avec les services de groupes
-ms.openlocfilehash: 13331ea53b69b4559bfe21074dd5c7d998aa68af
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3cf68b0abcf15515ebe724fe795b9b31c5ebd2b6f8b3dd6c9ca76b7b706c8508
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853066"
 ---
 # <a name="groups-services-interactions"></a>Interactions avec les services de groupes
 
@@ -91,7 +91,7 @@ Les services suivants permettent la création de groupes par les utilisateurs fi
 
 #### <a name="restriction-of-group-creation"></a>Restriction de la création de groupes
 
-Une approche courante pour contrôler l’étendue des équipes consiste à limiter les utilisateurs qui peuvent les créer. Pour ce faire, vous ne pouvez le faire qu’en limitant la création de groupes. Cela a une incidence sur la possibilité de créer des groupes à partir d’autres services qui peuvent être nécessaires pour l’utilisateur final. Microsoft 365 Les groupes ne permettent pas de restreindre la création de groupes à partir de certaines applications ou services tout en le permettant à d’autres.
+Une approche courante pour contrôler l’étendue des équipes consiste à limiter les utilisateurs qui peuvent les créer. Pour ce faire, vous ne pouvez le faire qu’en limitant la création de groupes. Cela a une incidence sur la possibilité de créer des groupes à partir d’autres services lorsque cela peut être nécessaire pour l’utilisateur final. Microsoft 365 Les groupes ne permettent pas de restreindre la création de groupes à partir de certaines applications ou services tout en le permettant à d’autres.
 
 L’expérience de restriction de création de groupe varie selon les applications et les services :
 
@@ -137,7 +137,7 @@ Bien que le tableau ci-dessus offre une vue d’ensemble des interactions de gro
 
 ## <a name="azure-ad"></a>Azure AD
 
-Azure AD fournit les fonctionnalités de gestion des identités sous-jacentes dans Microsoft 365.
+Azure AD fournit les fonctionnalités de gestion des identités sous-jacentes Microsoft 365.
 
 **Fonctionnalités clés fournies aux groupes**
 
@@ -145,7 +145,7 @@ Azure AD fournit les fonctionnalités de gestion des identités sous-jacentes da
 - Stratégie d’attribution de noms
 - Stratégie d’expiration
 - Invités
-- Restriction de la création de groupes
+- Restriction de création de groupes
 
 **Azure AD peut-il créer un groupe ?**
 
@@ -169,11 +169,11 @@ Non, Azure AD est la plateforme sous-jacente où les groupes existent.
 
 **La suppression de l’instance supprime-t-elle le groupe ?**
 
-La suppression du groupe dans Azure AD supprime les services et le contenu associés au groupe appropriés.
+La suppression du groupe dans Azure AD supprimera les services et le contenu associés au groupe appropriés.
 
 ## <a name="teams"></a>Teams
 
-Teams est un espace de travail centré sur la conversation visant à améliorer la collaboration en fournissant une interface unique permettant d’interagir avec divers services Microsoft et tiers.
+Teams est un espace de travail centré sur la conversation visant à améliorer la collaboration en fournissant une interface unique permettant d’interagir avec une variété de services Microsoft et tiers.
 
 Par défaut, lorsqu’une équipe est créée, la boîte aux lettres et le calendrier associés au groupe Microsoft 365 sont masqués à la fois dans la liste d’adresses globale dans Exchange, ainsi que dans Outlook. Un administrateur peut le faire manuellement si l’utilisateur souhaite utiliser à la fois Outlook et Teams sur le même groupe Microsoft 365 client.
 
@@ -289,13 +289,13 @@ Non, l’application OneNote ne peut pas créer de groupe.
 
 Oui, les blocs-notes peuvent être créés directement dans OneDrive ou dans d’autres emplacements partagés.
 
-**Y a-t-il OneNote blocs-notes par groupe ?**
+**Peut-il y avoir plusieurs blocs-OneNote par groupe ?**
 
 Oui, un bloc-notes est créé par défaut et d’autres peuvent être ajoutés, mais n’importe quel lien vers OneNote à partir des services associés à un groupe sera toujours vers le bloc-notes par défaut.
 
 **Un bloc-OneNote peut-il être associé à plusieurs groupes ?**
 
-Non, le bloc-notes est stocké dans la bibliothèque de SharePoint de sites associée au groupe et lié à partir de différentes interfaces. Il peut toutefois être partagé avec d’autres groupes de la même manière qu’avec des individus.
+Non, le bloc-notes est stocké dans la bibliothèque SharePoint de sites associée au groupe et lié à partir de différentes interfaces. Il peut toutefois être partagé avec d’autres groupes de la même manière qu’avec des individus.
 
 **L’association du bloc-notes à un groupe peut-elle changer ?**
 
@@ -317,7 +317,7 @@ Le Planificateur est un service de gestion des tâches de groupe léger.
 
 Oui, la création d’un plan crée un groupe.
 
-**Existe-t-il un tableau du Planificateur sans groupe ?**
+**Existe-t-il un tableau du planificateur sans groupe ?**
 
 Non, un plan doit être associé à un groupe.
 
@@ -646,7 +646,7 @@ Non, le groupe Yammer ne peut être associé qu’au groupe de Microsoft 365 auq
 
 Oui, la suppression du groupe dans Yammer supprimera le contenu et les services associés au groupe Microsoft associés.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

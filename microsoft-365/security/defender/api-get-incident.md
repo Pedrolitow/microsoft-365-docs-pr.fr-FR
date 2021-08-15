@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6f1e59dd653ef0718797a4b71e67c3607b39824c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 1e50e997dd6a64ac20b06c4a2717f10716642607c815dc12a9732dd64a419c93
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888822"
 ---
 # <a name="get-incident-information-api"></a>API Obtenir des informations sur l’incident
 

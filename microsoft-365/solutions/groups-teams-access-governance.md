@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: En savoir plus sur la gouvernance de l’accès Microsoft 365 groupes, Teams et SharePoint.
-ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 37ea23956e4d4953da631eeb47bc227ad1059a335e68752c5c5b9ab82cef6deb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853006"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Gouvernance de l’accès Microsoft 365 groupes, Teams et SharePoint
 
@@ -49,7 +49,7 @@ Le tableau suivant fournit une référence rapide pour les contrôles d’accès
 ||Contrôler le type de lien de partage affiché aux utilisateurs par défaut.|[Modifier le type de lien par défaut d’un site](/sharepoint/change-default-sharing-link)|
 ||Limiter le partage externe à des personnes spécifiques.|[Limiter le partage externe aux groupes de sécurité spécifiés](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
 ||Contrôler l’accès invité à un groupe, une équipe ou un site en fonction de la sensibilité des informations.|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||Désactiver les options de partage.|[Limiter le partage dans Microsoft 365](./microsoft-365-limit-sharing.md)|
+||Désactiver les options de partage.|[Limiter le partage dans Microsoft 365](./microsoft-365-limit-sharing.md)|
 |Gestion des utilisateurs|||
 ||Passer régulièrement en revue l’appartenance aux équipes et aux groupes.|[Que sont les révisions d’accès Azure AD ?](/azure/active-directory/governance/access-reviews-overview)|
 ||Automatisez la gestion des accès aux groupes et aux équipes.|[Qu’est-ce que la gestion des droits Azure AD ?](/azure/active-directory/governance/entitlement-management-overview)|
@@ -85,7 +85,7 @@ Dans SharePoint, vous pouvez restreindre l’accès aux sites à partir d’empl
 - [Contrôler l’accès aux données SharePoint et OneDrive en fonction de l’emplacement réseau](/sharepoint/control-access-based-on-network-location)
 
 
-Ressources supplémentaires :
+Ressources supplémentaires :
 
 - [Planifier un déploiement d’accès conditionnel](/azure/active-directory/conditional-access/plan-conditional-access)
 
@@ -110,7 +110,7 @@ Microsoft 365 permet le partage anonyme de fichiers et de dossiers à l’aide d
 
 - [Définir une date d’expiration pour les liens Tout le monde](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)
 
-Lorsque vous partagez des fichiers ou des dossiers, les utilisateurs peuvent choisir parmi plusieurs types de liens. Pour réduire le risque de partage inapproprié accidentel, vous pouvez modifier le type de lien par défaut présenté aux utilisateurs lorsqu’ils partagent. Par exemple, la modification de la valeur par  défaut des liens *Tout* le monde (qui autorisent l’accès anonyme) vers les liens des personnes de votre organisation peut réduire le risque de partage externe indésirable d’informations sensibles :
+Lors du partage de fichiers ou de dossiers, les utilisateurs peuvent choisir parmi plusieurs types de liens. Pour réduire le risque de partage inapproprié accidentel, vous pouvez modifier le type de lien par défaut présenté aux utilisateurs lorsqu’ils partagent. Par exemple, la modification de la valeur par  défaut des liens *Tout* le monde (qui autorisent l’accès anonyme) vers les liens des personnes de votre organisation peut réduire le risque de partage externe indésirable d’informations sensibles :
 
 - [Modifier le type de lien par défaut d’un site](/sharepoint/change-default-sharing-link)
 
@@ -126,13 +126,13 @@ Dans un environnement où vous invitez fréquemment des invités à des groupes 
 
 - [Configurer les révisions d’accès invité](/microsoft-365/solutions/create-secure-guest-sharing-environment#set-up-guest-access-reviews)
 
-Microsoft 365 propose de nombreuses méthodes de partage d’informations. Si vous avez des informations sensibles et que vous souhaitez limiter leur partage, examinez les options de limitation du partage :
+Microsoft 365 offre de nombreuses méthodes de partage d’informations. Si vous avez des informations sensibles et que vous souhaitez limiter la façon dont elles sont partagées, examinez les options de limitation du partage :
 
-- [Limiter le partage dans Microsoft 365](./microsoft-365-limit-sharing.md)
+- [Limiter le partage dans Microsoft 365](./microsoft-365-limit-sharing.md)
 
-Ressources supplémentaires :
+Ressources supplémentaires :
 
-- [Configurer la collaboration sécurisée avec Microsoft 365](./setup-secure-collaboration-with-teams.md)
+- [Configurer la collaboration sécurisée avec Microsoft 365](./setup-secure-collaboration-with-teams.md)
 
 - [Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés](./best-practices-anonymous-sharing.md)
 
@@ -158,11 +158,11 @@ Les canaux privés Teams autoriser les conversations étendues et le partage de 
 
 - [Gérer le cycle de vie des canaux privés dans Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)
 
-Ressources supplémentaires :
+Ressources supplémentaires :
 
 - [Azure Active Directory Gouvernance des identités](/azure/active-directory/governance)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

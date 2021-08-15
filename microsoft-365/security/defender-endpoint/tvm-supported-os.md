@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0f2acedd03cab105c150f3f43d183b749c487d65
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c5352a9ce14c8223a7c008702e7ca3166a647b60a1a1024cf2a87f7e0967fab7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853558"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge pour Gestion des menaces et des vulnérabilités
 
@@ -32,7 +32,7 @@ ms.locfileid: "53656210"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -53,9 +53,9 @@ Windows 8.1|Oui|Oui|Oui|Oui|Oui
 Windows 10, versions 1607-1703|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
 Windows 10, version 1709 ou ultérieure|Oui|Oui|Oui|Oui|Oui
 Windows Server 2008 R2|Oui|Oui|Oui|Oui|Oui
-Windows Server 2012 R2|Oui|Oui|Oui|Oui|Oui
+Windows Server 2012 R2|Oui|Oui|Oui|Oui|Oui
 Windows Server 2016|Oui|Oui|Oui|Oui|Oui
-Windows Server 2019|Oui|Oui|Oui|Oui|Oui
+Windows Server 2019|Oui|Oui|Oui|Oui|Oui
 macOS 10.14 « Mojave » et supérieur|Oui|Oui|Oui|Oui|Oui 
 Red Hat Enterprise Linux 7.2 ou supérieur \* (voir l’avis « Important » ci-dessous)|Oui|Oui|Oui|Oui|Oui
 CentOS 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui

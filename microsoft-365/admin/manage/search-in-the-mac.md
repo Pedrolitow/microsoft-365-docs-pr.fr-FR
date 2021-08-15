@@ -1,5 +1,5 @@
 ---
-title: Rechercher des tâches ou de la documentation dans le Centre Microsoft 365'administration
+title: Recherchez des tâches ou de la documentation dans le Centre d’administration Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser la fonctionnalité de recherche dans le Centre d’administration pour obtenir des résultats meilleurs et plus rapides.
-ms.openlocfilehash: 87e7fb78e9d7ce535f481151515791c20c115836
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 64a578f8b7ebf71fbfc162936e8efa09440834d362fcc2b359a18bb9d8c1469a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824768"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Effectuer une recherche dans le Centre d’administration Microsoft 365
 
 En tant qu’administrateur d’Microsoft 365 organisation, vous pouvez utiliser la recherche pour rechercher des utilisateurs, effectuer des actions, accéder à différents paramètres et lire la documentation. Avec les nouvelles fonctionnalités de recherche, la vitesse de recherche a été améliorée et vous pouvez désormais effectuer des recherches à partir de chaque page du Centre d’administration. La zone de recherche a été déplacée vers la zone bannière en haut du centre d’administration. Vous pouvez utiliser le raccourci **Alt+S pour** utiliser la recherche à partir de n’importe quelle page.
 
-:::image type="content" source="../../media/search-bar.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
+:::image type="content" source="../../media/search-bar.png" alt-text="Capture d’écran : barre de recherche dans la Centre d’administration Microsoft 365":::
 
 Les résultats de la recherche sont organisés en différentes catégories. La plupart des catégories sont des éléments du Centre d’administration. Par exemple, les utilisateurs, les groupes, les boîtes aux lettres partagées ou les domaines. D’autres catégories indiquent les endroits où vous pouvez naviguer, les actions que vous pouvez prendre ou les paramètres de niveau application que vous pouvez modifier. Il existe également une catégorie liée à la documentation.
 
@@ -50,7 +50,7 @@ Si vous sélectionnez le menu à trois points (plus d’actions) à côté de le
 
 **Astuces pour améliorer les résultats de recherche des utilisateurs**
 
-- Assurez-vous d’épeler correctement les noms des utilisateurs car les recherches des utilisateurs correspondent exactement aux propriétés mentionnées précédemment. Par exemple, dans l’exemple ci-dessus, Ils ou Malz fonctionnent, mais une faute d’orthographe, telle que Jostin au lieu de Celle-ci, ne permettra pas de trouver cet utilisateur.
+- Assurez-vous d’épeler correctement les noms des utilisateurs car les recherches des utilisateurs correspondent exactement aux propriétés mentionnées précédemment. Par exemple, dans l’exemple ci-dessus, Ils ou Malz fonctionneront, mais une faute d’orthographe, comme Jostin au lieu de Celle-ci, ne permettra pas de trouver cet utilisateur.
 - Pour obtenir une correspondance exacte, recherchez par adresse de messagerie principale ou nom d’utilisateur.
 
 ## <a name="groups"></a>Groupes
@@ -77,7 +77,7 @@ Les résultats vous offrent la possibilité d’accéder rapidement à une page 
 
 ## <a name="settings"></a>Paramètres
 
-Recherchez les paramètres pris en charge au niveau de l’application liés à votre organisation, les services à qui vous vous abonnez, ainsi que les paramètres de sécurité et de confidentialité.
+Recherchez les paramètres de niveau application pris en charge liés à votre organisation, les services à qui vous vous abonnez, ainsi que les paramètres de sécurité et de confidentialité.
 
 :::image type="content" source="../../media/search-for-settings-mac.png" alt-text="Capture d’écran : résultats de recherche affichant les paramètres dans le Centre d’administration":::
 
@@ -85,7 +85,7 @@ Recherchez les paramètres pris en charge au niveau de l’application liés à 
 
 Vous trouverez des liens rapides vers vos domaines, puis le lien vous permettra d’obtenir la page de présentation de ce domaine.
 
-:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Résultats de recherche montrant les domaines du Centre d’administration":::
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Résultats de la recherche affichant les domaines du Centre d’administration":::
 
 ## <a name="documentation"></a>Documentation
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 52e6709d18bd5ecbc91755a6c0e7be336d346f0c
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 18044d469e90137ea14fa2dde9a6afe75e5dd0998d67e015e71d20b049ad30fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599602"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853229"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des Teams conversations, des groupes et des fichiers
 
@@ -51,7 +51,7 @@ Pour protéger la conversation, les groupes et le contenu dans Teams, le diagram
 
 [![Résumé des mises à jour de stratégie pour la protection de l’accès à Teams et à ses services dépendants](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
-Ces services sont les services dépendants à inclure dans l’affectation des applications cloud pour Teams :
+Ces services sont les services dépendants à inclure dans l’affectation d’applications cloud pour Teams :
 
 - Microsoft Teams
 - SharePoint et OneDrive Entreprise
@@ -60,9 +60,9 @@ Ces services sont les services dépendants à inclure dans l’affectation des a
 - Microsoft Stream (enregistrements de réunions)
 - Planificateur Microsoft (tâches du planificateur et données de plan)
 
-Ce tableau répertorie les stratégies qui doivent être réexaminées et les liens vers chaque stratégie dans les stratégies communes d’identité et d’accès aux [appareils,](identity-access-policies.md)dont la stratégie la plus large est définie pour toutes les applications Office.
+Ce tableau répertorie les stratégies qui doivent [](identity-access-policies.md)être réexaminées et les liens vers chaque stratégie dans les stratégies d’accès aux identités et appareils communes, qui ont la stratégie plus large définie pour toutes les applications Office.
 
-|Niveau de protection|Stratégies|Informations supplémentaires sur l’implémentation Teams’application|
+|Niveau de protection|Politiques|Informations supplémentaires sur l’implémentation Teams’application|
 |---|---|---|
 |**Baseline**|[Exiger l’mf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assurez-vous Teams services dépendants sont inclus dans la liste des applications. Teams des règles d’accès invité et d’accès externe à prendre en compte, vous en apprendrez plus sur ces règles plus loin dans cet article.|
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Inclure Teams services dépendants dans l’affectation des applications cloud.|
@@ -114,7 +114,7 @@ L’accès externe permet aux Teams d’un domaine externe entier de rechercher,
 
 Les utilisateurs d’accès externe ont moins d’accès et de fonctionnalités qu’une personne qui a été ajoutée via l’accès invité. Par exemple, les utilisateurs d’accès externe peuvent discuter avec vos utilisateurs internes avec Teams mais ne peuvent pas accéder aux canaux d’équipe, aux fichiers ou à d’autres ressources.
 
-L’accès externe n’utilise pas les comptes d’utilisateur Azure AD B2B et, par conséquent, n’utilise pas de stratégies d’accès conditionnel.
+L’accès externe n’utilise pas les comptes d’utilisateur Azure AD B2B et n’utilise donc pas de stratégies d’accès conditionnel.
 
 ## <a name="teams-policies"></a>Teams stratégies
 
@@ -142,7 +142,7 @@ Teams vous permet également d’utiliser des applications à différents endroi
 
 Pour en savoir plus sur les stratégies d’autorisation d’application, consultez Gérer les stratégies [d’autorisation d’application Microsoft Teams](/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 ![Étape 4 : Stratégies pour Microsoft 365 applications cloud](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

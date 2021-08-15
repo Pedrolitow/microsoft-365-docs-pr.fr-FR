@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6b1d5496d6476353cfe16acebc43de498547465fab3a8ea245b410de632aadb2
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 85afa2cb66edc471a0a311270e29dd8fd0768dbaae0236769efeecce2015ce01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520566"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889014"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -43,7 +43,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 > Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux :
 >
 > ```https
-> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
+> /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
 ## <a name="june-2021"></a>Juin 2021
@@ -120,7 +120,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 ## <a name="september-2019"></a>Septembre 2019
 
-- [Paramètres de protection contre la falsification à l’aide d’Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Vous pouvez désormais activer (ou désactiver) la protection contre les falsifications pour votre organisation dans le Microsoft 365 Device Management Portal (Intune).
+- [Paramètres de protection contre la falsification à l’aide d’Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Vous pouvez désormais activer (ou désactiver) la protection contre les falsifications pour votre organisation dans Microsoft 365 Device Management Portal (Intune).
 
 - [Réponse en direct](live-response.md) <BR> Obtenir un accès instantané à un appareil à l’aide d’une connexion Shell distante. Faire des investigations approfondies et prendre des mesures de réponse immédiates pour contenir rapidement les menaces identifiées ( en temps réel).
 
@@ -205,7 +205,7 @@ L’analyse des menaces est un ensemble de rapports interactifs publiés par l�
     > [!NOTE]
     > Disponible à partir Windows 10 version 1803 ou ultérieure.
 
-- [Accès conditionnel](conditional-access.md) <br> Activez l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données.
+- [Accès conditionnel](conditional-access.md) <br> Activer l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données.
 
 - [Centre de Community Microsoft Defender pour Community terminaison](community.md)<BR>
     Le Centre d’administration Microsoft Defender pour Community est un endroit où les membres de la communauté peuvent découvrir, collaborer et partager des expériences sur le produit.

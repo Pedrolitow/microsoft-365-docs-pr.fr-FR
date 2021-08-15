@@ -1,6 +1,6 @@
 ---
-title: Codes d’Microsoft 365 l’API REST Defender courants
-description: En savoir plus sur les codes d’Microsoft 365 l’API REST Defender
+title: Codes d’Microsoft 365 Defender l’API REST courants
+description: En savoir plus sur les codes d’Microsoft 365 Defender l’API REST courants
 keywords: api, erreur, codes, erreurs courantes, Microsoft 365 Defender, codes d’erreur d’api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,25 +20,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: b972bc1710a5edbb3d351f2a33f966c80266fe4d9f13cfbfa6f6bf320764a93c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930270"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888870"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codes d’Microsoft 365 l’API REST Defender courants
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codes d’Microsoft 365 Defender l’API REST courants
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Les codes d’erreur peuvent être renvoyés par une opération sur l’une Microsoft 365 API Defender. Chaque réponse d’erreur contient un message d’erreur, qui peut aider à résoudre le problème. La colonne message d’erreur de la section tableau fournit des exemples de messages. Le contenu des messages réels varie en fonction des facteurs qui ont déclenché la réponse. Le contenu de la variable est indiqué dans le tableau par des crochets.
+Les codes d’erreur peuvent être renvoyés par une opération sur l’une Microsoft 365 Defender API. Chaque réponse d’erreur contient un message d’erreur, qui peut aider à résoudre le problème. La colonne message d’erreur de la section tableau fournit des exemples de messages. Le contenu des messages réels varie en fonction des facteurs qui ont déclenché la réponse. Le contenu de la variable est indiqué dans le tableau par des crochets.
 
 ## <a name="error-codes"></a>Codes d’erreur
 
@@ -99,7 +99,7 @@ Chaque réponse d’erreur contient un paramètre d’ID unique pour le suivi. L
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Microsoft 365 Vue d’ensemble des API Defender](api-overview.md)
+- [Microsoft 365 Defender Vue d’ensemble des API](api-overview.md)
 - [API Microsoft 365 Defender prises en charge](api-supported.md)
-- [Accéder aux API Microsoft 365 Defender](api-access.md)
+- [Accéder aux API Microsoft 365 Defender de données](api-access.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)

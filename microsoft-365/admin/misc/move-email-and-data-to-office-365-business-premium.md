@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Apprenez à déplacer des données vers votre nouvelle identité d’entreprise.
-ms.openlocfilehash: 4f105e00ab6496a5d1d3edfc0e0f1abd4eced412
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 69953736003fb6d19be37baafb0715bc1468843fd2ed81b94b593c6e56a68ae7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823902"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Déplacer le courrier électronique et les données vers Microsoft 365 Business Standard
 
@@ -50,7 +50,7 @@ Si vous voulez déplacer certaines de vos données personnelles vers votre nouve
 2. Sélectionnez l'icône du **lanceur d'applications** dans la partie supérieure gauche, puis choisissez **OneDrive**.
   
     > [!TIP]
-    > La première fois que vous ouvrez OneDrive Entreprise, vous devez configurer votre OneDrive. Si cela se produit, dans la page Bienvenue **dans OneDrive Entreprise,** sélectionnez **Suivant**. Une OneDrive est définie, **sélectionnez Votre OneDrive est prêt.** 
+    > La première fois que vous ouvrez OneDrive Entreprise, vous devez configurer votre OneDrive. Si cela se produit, dans la page Bienvenue **dans OneDrive Entreprise,** sélectionnez **Suivant**. Une OneDrive est définie, sélectionnez **Votre OneDrive est prêt.** 
   
 3. Vous êtes redirigé vers un dossier OneDrive vide. Si vous souhaitez créer des sous-dossiers, sélectionnez **Nouveau** \> **dossier.**
 
