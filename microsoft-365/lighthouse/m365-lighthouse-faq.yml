@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, obtenez des réponses aux questions fréquemment posées sur les Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 5f15453f21ef48fcc1f8266d9474fc0cbc4190c2
-  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+  ms.openlocfilehash: f144e2a1535054508e548a8b2848600e45c4adba1763de85194879965a8358af
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/13/2021
-  ms.locfileid: "53415532"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53840130"
 title: Microsoft 365 Lighthouse questions fréquemment posées (FAQ)
 summary: >
   > [!NOTE]
@@ -79,4 +79,16 @@ sections:
 
       Pour en savoir plus sur les locataires, voir [Microsoft 365 Lighthouse liste des locataires.](m365-lighthouse-tenant-list-overview.md)
   - question: Cela Microsoft 365 Lighthouse si mes locataires client ont d’autres abonnements que Microsoft 365 Business Premium ?
-    answer: Microsoft 365 Lighthouse vous permet de gérer les clients qui ont des licences Microsoft 365 Business Premium en place pour leurs utilisateurs. Pour les utilisateurs des clients qui ne sont pas titulaires de licences Premium, les fonctionnalités Microsoft 365 Lighthouse client seront limitées. Par exemple, si une licence inclut Intune est manquante pour un utilisateur, les appareils, l’état de conformité de l’appareil et l’état des menaces de cet utilisateur seront indisponibles . et si une licence qui inclut Azure AD P1 est manquante, le mot de passe et la gestion de la signature de cet utilisateur ne seront pas disponibles. Pour plus d’informations, voir [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+    answer: >
+      Microsoft 365 Lighthouse vous permet de gérer les clients qui ont des licences Microsoft 365 Business Premium en place pour leurs utilisateurs. Pour les utilisateurs des clients qui ne sont pas titulaires de licences Premium, les fonctionnalités Microsoft 365 Lighthouse client seront limitées. Par exemple, si une licence inclut Intune est manquante pour un utilisateur, les appareils, l’état de conformité de l’appareil et l’état des menaces de cet utilisateur seront indisponibles . et si une licence qui inclut Azure AD P1 est manquante, le mot de passe et la gestion de la signature de cet utilisateur ne seront pas disponibles. Pour plus d’informations, voir [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: Comment puis-je gérer les PC cloud des clients dans Microsoft 365 Lighthouse ?
+    answer: >
+      Si vous répondez aux conditions requises pour utiliser Microsoft 365 Lighthouse, vous êtes qualifié pour gérer les PC cloud des clients Microsoft 365 Lighthouse. Pour obtenir la liste des conditions requises actuelles, voir [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: Où puis-je acheter Windows licences 365 (Cloud PC) pour mes clients ?
+    answer: >
+      Vous pouvez acheter Windows licences 365 via tous les canaux de vente commerciaux Microsoft disponibles. Une licence achetée équivaut à l’achat d’un PC Cloud. Actuellement, chaque utilisateur ne peut se voir attribuer qu’un seul PC Cloud du même type de référence SKU, mais plusieurs PC Cloud peuvent lui être affectés s’ils ont des types de référenceS différents. Pour comparer Windows 365 plans et tarifs, voir Obtenir Windows [365 Cloud PC](https://www.microsoft.com/windows-365/business/compare-plans-pricing)qui vous est le plus à votre place.
+  - question: Comment obtenir de l’aide et du support ?
+    answer: >
+      Dans Microsoft 365 Lighthouse, sélectionnez **le ?** en haut du portail pour ouvrir le volet **d’aide.** À partir de là, vous pouvez accéder à des articles en libre-assistance ou contacter le support technique. Pour plus d’informations sur les options d’aide et de support, voir Obtenir de l’aide [et du support pour Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+  - question: Où puis-je envoyer des commentaires et des idées ?
+    answer: Vos commentaires ont de l’importance et nous sont importants ! Envoyez vos commentaires ou vos idées de fonctionnalités via [la page Microsoft Endpoint Manager commentaires Intune.](https://go.microsoft.com/fwlink/?linkid=2151507) Vous pouvez démarrer des conversations sur Microsoft 365 Lighthouse fonctionnalités Windows 365, poser des questions à d’autres partenaires ou employés de Microsoft, fournir des commentaires sur les fonctionnalités, etc.

@@ -12,19 +12,19 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-description: Vue d’ensemble de la façon dont les rubriques sont découvertes dans Les rubriques de Topics.
-ms.openlocfilehash: 378bdae4ad4b8104d28da7f884f42580d29eabcc
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+description: Vue d’ensemble de la façon dont les rubriques sont découvertes dans Les rubriques Topics.
+ms.openlocfilehash: c85ebbda9613fb3bab2542805d8bc2c7575d0d7203f6e2bf41650fb0d9771f60
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622711"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864170"
 ---
 # <a name="topic-discovery-and-curation-in-microsoft-viva-topics"></a>Découverte et curation de rubriques dans Sujets Microsoft Viva 
 
 Ces rubriques organisent les informations selon les connaissances de votre environnement Microsoft 365 de travail. Nous avons tous lu des documents et des pages de site dans des termes que nous ne connaissez pas. De nombreuses fois, nous arrêtons ce que nous faisons pour consacrer beaucoup de temps à la recherche d’informations supplémentaires.
 
-Cette rubrique utilise Microsoft Graph et l’IA pour identifier **les sujets** de votre organisation.  Une rubrique est une expression ou un terme qui a une signification spécifique pour l’organisation et qui possède des ressources associées qui peuvent aider les personnes à comprendre ce qu’il est et trouver plus d’informations à son sujet. Il existe différents types de rubriques qui seront importants pour votre organisation. Initialement, les types de rubriques suivants peuvent être identifiés :
+Cette rubrique utilise Microsoft Graph et l’IA pour identifier **les sujets** de votre organisation.  Une rubrique est une expression ou un terme qui a une signification spécifique pour l’organisation et qui comprend des ressources qui peuvent aider les personnes à comprendre ce qu’elle est et à trouver plus d’informations à son sujet. Il existe différents types de rubriques qui seront importants pour votre organisation. Initialement, les types de rubriques suivants peuvent être identifiés :
 
 - Project
 - Événement
@@ -53,17 +53,17 @@ En outre, les utilisateurs pourront également trouver des rubriques par Recherc
 
 ## <a name="topic-curation-and-feedback"></a>Curation de rubrique et commentaires
 
-Cette rubrique vous permet d’apporter une contribution humaine pour améliorer la qualité de vos rubriques. Alors que l’IA identifie et suggère initialement des rubriques, les modifications manuelles du contenu des collaborateurs, l’ajout manuel de rubriques, la confirmation des utilisateurs pour les propriétés et le contenu découverts par l’IA et les commentaires sur l’utilité des rubriques sont tous essentiels.
+Topics se souhaite une contribution humaine pour améliorer la qualité de vos rubriques. Alors que l’IA identifie et suggère initialement des rubriques, les modifications manuelles du contenu des collaborateurs, l’ajout manuel de rubriques, la confirmation des utilisateurs pour les propriétés et le contenu découverts par l’IA et les commentaires sur l’utilité des rubriques sont tous essentiels.
 
 - Les rubriques peuvent être examinées par **les responsables de connaissances** de votre organisation. Le gestionnaire de connaissances peut consulter les rubriques qu’il est autorisé à consulter. Dans la page Gérer les rubriques dans le centre de **rubriques,** ils peuvent choisir de confirmer les rubriques générées par l’IA (« sujets suggérés ») comme valides, de rejeter les rubriques pour empêcher que le contenu ne soit considéré comme une rubrique, de créer des rubriques qui n’ont pas été découvertes par l’IA ou d’identifier les rubriques qui pourraient bénéficier de quelques modifications par des experts techniques pour être plus utiles ou précises. Pour plus d’informations, [voir Gérer les rubriques dans le centre de rubriques.](manage-topics.md)
 
 - Vous pouvez attribuer *des autorisations* créer et modifier des rubriques à n’importe quel utilisateur sous licence afin qu’il puisse apporter des modifications à des rubriques existantes ou créer de nouvelles rubriques. Cela permet aux utilisateurs qui sont informés de la rubrique de mettre à jour la page de rubrique directement pour apporter des corrections ou ajouter des informations supplémentaires. Ils peuvent également ajouter de nouvelles rubriques que l’IA n’a pas pu identifier. S’il existe suffisamment d’informations sur ces rubriques ajoutées manuellement et que l’IA est en mesure d’identifier ce type de rubrique, des suggestions supplémentaires de l’IA peuvent améliorer ces rubriques ajoutées manuellement. Ensemble, les humains et l’IA peuvent conserver des connaissances précises au fil du temps et ne pas avoir ce reste sur une seule personne. Pour plus d’informations, [voir Créer une rubrique et](./create-a-topic.md) modifier une [rubrique.](./edit-a-topic.md)
 
-- Même les utilisateurs qui ont uniquement accès en lecture à la rubrique (visiteurs des rubriques) sont invités à vérifier l’utilité de rubriques spécifiques. Les questions de commentaires sont posées sur la carte **récapitulatif rubrique** pour améliorer la valeur de la rubrique et ses informations. Les questions sur la qualité et l’utilité des suggestions d’IA sont présentées une par une aux utilisateurs. Les questions sont les suivantes :
+- Même les utilisateurs qui ont uniquement accès en lecture à des rubriques (visionneuses de rubriques) sont invités à vérifier l’utilité de rubriques spécifiques. Les questions de commentaires sont posées sur la carte **récapitulatif rubrique** pour améliorer la valeur de la rubrique et ses informations. Les questions sur la qualité et l’utilité des suggestions d’IA sont présentées une par une aux utilisateurs. Les questions sont les suivantes :
 
     1. L’identification de la rubrique dans la page SharePoint a été utile. Vous avez la possibilité de supprimer la mise en surbrill valeur si elle n’est pas précise ou utile. Si suffisamment de personnes indiquent qu’une rubrique n’est pas correctement identifiée sur une page particulière, ce surbrillant sera finalement supprimé pour tous les utilisateurs. 
 
-    2. Indique si la rubrique suggérée est utile pour l’organisation. Si suffisamment de personnes indiquent que la rubrique suggérée est utile, la rubrique est automatiquement confirmée. Sinon, si la rubrique suggérée n’est pas utile, elle est automatiquement rejetée. Le gestionnaire de connaissances peut observer cette activité dans la page **Gérer les rubriques.**
+    2. Indique si la rubrique suggérée est utile pour l’organisation. Si suffisamment de personnes indiquent que la rubrique suggérée est utile, la rubrique est automatiquement confirmée. Sinon, si la rubrique suggérée n’est pas utile, la rubrique est automatiquement rejetée. Le gestionnaire de connaissances peut observer cette activité dans la page **Gérer les rubriques.**
 
     3. Si les suggestions de personnes et de ressources sont utiles.
 

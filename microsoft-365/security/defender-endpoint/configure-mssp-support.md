@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 54187862f805c8232aac80199b30dcce7fef2c5b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 92e017d4b068de289204dc891cdee7d3a5c30a214a7e251e977d77909d8429ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904118"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>Configurer l’intégration des fournisseurs de services de sécurité gérés
 
@@ -39,7 +39,7 @@ Vous devez suivre les étapes de configuration suivantes pour activer l’intég
 
 >[!NOTE]
 >Les termes suivants sont utilisés dans cet article pour faire la distinction entre le fournisseur de services et le consommateur de services :
-> - MSSP : organisations de sécurité qui offrent de surveiller et de gérer les appareils de sécurité d’une organisation.
+> - MSSP : organisations de sécurité qui offrent la surveillance et la gestion des périphériques de sécurité pour une organisation.
 > - Clients MSSP : organisations qui engagent les services des MSSP.
 
 L’intégration permettra aux MSSP d’agir comme suit :
@@ -51,7 +51,7 @@ L’intégration permettra aux MSSP d’agir comme suit :
 Avant que les MSSP ne prennent ces mesures, le client MSSP doit accorder l’accès à son client Defender for Endpoint afin que le MSSP puisse accéder au portail. 
  
 
-En règle générale, les clients MSSP prennent les étapes de configuration initiales pour accorder aux MSSP l’accès à Windows Defender client central de sécurité. Une fois l’accès accordé, d’autres étapes de configuration peuvent être réalisées par le client MSSP ou le MSSP.
+En règle générale, les clients MSSP prennent les étapes de configuration initiales pour accorder aux MSSP l’accès Windows Defender client central de sécurité. Une fois l’accès accordé, d’autres étapes de configuration peuvent être réalisées par le client MSSP ou le MSSP.
 
 
 En règle générale, les étapes de configuration suivantes doivent être prises :
@@ -64,7 +64,7 @@ Cette action doit être effectuée par le client MSSP. Il accorde au MSSP l’ac
 - **Configurer les notifications d’alerte envoyées aux MSSP** <br>
 Cette action peut être prise par le client MSSP ou MSSP. Cela permet aux MSSP de savoir quelles alertes ils doivent adresser pour le client MSSP.
 
-- **Récupérer des alertes du client MSSP client dans le système SIEM** <br> Cette action est prise par le MSSP. Il permet aux MSSP de récupérer des alertes dans les outils SIEM.
+- **Récupérer les alertes du client du client MSSP dans le système SIEM** <br> Cette action est prise par le MSSP. Il permet aux MSSP de récupérer des alertes dans les outils SIEM.
 
 - **Récupérer des alertes à partir du client MSSP client à l’aide des API** <br>
 Cette action est prise par le MSSP. Il permet aux MSSP de récupérer des alertes à l’aide d’API.
@@ -74,7 +74,7 @@ Pour plus d’informations sur l’implémenter un accès délégué à plusieur
 
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Accorder l’accès MSSP au portail](grant-mssp-access.md)
 - [Accéder au portail client MSSP](access-mssp-portal.md)
 - [Configurer des notifications d’alerte](configure-mssp-notifications.md)

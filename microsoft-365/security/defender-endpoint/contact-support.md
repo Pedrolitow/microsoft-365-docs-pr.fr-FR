@@ -1,6 +1,6 @@
 ---
 title: Contacter le support Microsoft Defender pour point de terminaison
-description: Découvrez comment contacter le support microsoft Defender pour le point de terminaison
+description: Découvrez comment contacter microsoft Defender pour la prise en charge des points de terminaison
 keywords: support, contact, support premier, solutions, problèmes, cas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 78a7aca31a4e103c5abe98bffc0e60048e8b0426
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ee2fe84fcacd5f8f6b6eb2d6e1c2fca2d22af6595549ac5c464303f979d0d93b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904074"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter le support Microsoft Defender pour point de terminaison
 
@@ -34,7 +34,7 @@ ms.locfileid: "53656894"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender pour le point de terminaison a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
+Defender for Endpoint a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
 
 Le nouveau widget permet aux clients de :
 - Trouver des solutions aux problèmes courants
@@ -82,7 +82,7 @@ Découvrez comment ouvrir des tickets de support en contactant le support de Def
 > [!Note]
 > Si vous avez un contrat de support permier avec Microsoft, vous verrez la balise premier sur le widget. Si ce n’est pas le cas, contactez votre gestionnaire de comptes Microsoft.
 
-### <a name="contact-support"></a>Contacter le support technique
+### <a name="contact-support"></a>Contacter le support
 Cette option est disponible en cliquant sur l’icône qui ressemble à un casque. Vous recevez ensuite la page suivante pour soumettre votre dossier de support : </br>
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="contacter le support technique 2"::: </br>
@@ -95,6 +95,6 @@ Cette option est disponible en cliquant sur l’icône qui ressemble à un casqu
 3. Sélectionnez votre fuseau horaire et une autre langue, le cas échéant. La demande est envoyée à l’équipe de support technique Microsoft. L’équipe répondra prochainement à votre demande de service.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Résoudre des problèmes de service](troubleshoot-mdatp.md)
 - [Vérifier l’état du service](service-status.md)

@@ -1,6 +1,6 @@
 ---
-title: Gérer les applications dans Bureau géré Microsoft
-description: Informations sur la mise à jour des applications métier déployées sur Bureau géré Microsoft appareils
+title: Gérer les applications dans Microsoft Manged Desktop
+description: Informations sur la mise à jour des applications métier déployées sur Microsoft Manged Desktop appareils
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -12,25 +12,25 @@ ms.topic: article
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b016d8458b4b4cc9f6b684d3b8a3c0a1e1322fef
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: ffa1d96e1a700049fcfad47f9be15376fa3bd8ee566be08707a2b559e66b8c9d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925406"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904262"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Gérer les applications métier dans le bureau géré Microsoft
 
 <!--Application management -->
 
-Il existe deux façons de gérer les mises à jour d’application pour les applications que vous avez intégrés à Bureau géré Microsoft et déployés sur vos appareils Bureau géré Microsoft. Vous pouvez effectuer des mises à jour d’application dans Bureau géré Microsoft portail ou Intune. 
+Il existe plusieurs façons de gérer les mises à jour d’application pour les applications que vous avez intégrés à Microsoft Manged Desktop et déployés sur vos appareils Microsoft Manged Desktop. Vous pouvez effectuer des mises à jour d’application dans Microsoft Manged Desktop portail ou Intune. 
 
 <span id="update-app-mmd" />
 
-## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Mettre à jour des applications métier dans Bureau géré Microsoft
+## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Mettre à jour des applications métier dans Microsoft Manged Desktop
 
-**Pour mettre à jour vos applications métier dans Bureau géré Microsoft web**
-1. Connectez-vous [Bureau géré Microsoft portail d’administration.](https://aka.ms/mmdportal)
+**Pour mettre à jour vos applications métier dans Microsoft Manged Desktop web**
+1. Connectez-vous [Microsoft Manged Desktop portail d’administration.](https://aka.ms/mmdportal)
 2. Sous **Inventaire,** sélectionnez **Applications.**  
 3. Sélectionnez l’application à mettre à jour, puis sélectionnez **Modifier.**
 4. Sous **Gérer,** sélectionnez **Propriétés.** 
@@ -63,12 +63,12 @@ Si une erreur est trouvée lors du déploiement d’une nouvelle version d’une
 
 **Pour revenir à une version antérieure d’une application métier**
 
-1. Connectez-vous [Bureau géré Microsoft portail d’administration.](https://aka.ms/mmdportal)
+1. Connectez-vous [Microsoft Manged Desktop portail d’administration.](https://aka.ms/mmdportal)
 2. Sous **Inventaire,** sélectionnez **Applications.**  
 3. Sélectionnez l’application que vous devez revenir en arrière, puis sélectionnez **Modifier.**
 4. Sous **Gérer,** sélectionnez **Propriétés.** 
     - Pour Windows applications **métier MSI,** sélectionnez Informations sur l’application, puis sous Ignorer la **version** de l’application, sélectionnez **Oui**.
     - For **Windows app (Win 32) - preview** apps, select App **information,** select **Detection rules,** and then select **Add**. 
     S’il existe une règle MSI, vérifiez que la vérification de la version du produit **MSI** est définie sur **Non**.
-5. [Télécharger une version précédente du fichier source](../get-started/deploy-apps.md) de l’application sur Bureau géré Microsoft portail d’administration.  
+5. [Télécharger une version antérieure du fichier source](../get-started/deploy-apps.md) de l’application pour Microsoft Manged Desktop portail d’administration.  
 

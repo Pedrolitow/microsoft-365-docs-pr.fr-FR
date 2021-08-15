@@ -1,6 +1,6 @@
 ---
 title: 'Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités'
-description: Répertorie les vulnérabilités courantes et l’ID d’exposition (CVE) des faiblesses trouvées dans le logiciel en cours d’exécution dans votre organisation. Détecté par Microsoft Defender pour endpoint Gestion des menaces et des vulnérabilités fonctionnalité.
+description: Répertorie les vulnérabilités courantes et l’ID d’exposition (CVE) des faiblesses trouvées dans le logiciel en cours d’exécution dans votre organisation. Découvert par Microsoft Defender pour endpoint Gestion des menaces et des vulnérabilités fonctionnalité.
 keywords: Microsoft Defender for Endpoint threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 30e1229db1af93c74731678723b60d7d20640f9b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3977f1ee1864438a49abcc955656ee558a5e694d77de433c11905b3bc78c6d98
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650798"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839358"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités
 
@@ -31,7 +31,7 @@ ms.locfileid: "53650798"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -79,8 +79,8 @@ Affichez les informations sur les violations et menaces associées dans la colon
  >[!NOTE]
  > Toujours hiérarchiser les recommandations associées aux menaces en cours. Ces recommandations sont marquées avec l’icône d’informations sur les menaces ![ Simple dessin d’un bogue rouge.](images/tvm_bug_icon.png) et l’icône d’informations sur la violation, dessin ![ simple d’une flèche qui atteint une cible. ](images/tvm_alert_icon.png) .  
 
-L’icône Informations sur les violations est mise en surbrillant si une vulnérabilité est trouvée dans votre organisation.
-![Exemple de texte d’informations sur la violation qui peut s’afficher lorsque vous placez le pointage sur l’icône. Celle-ci indique « une alerte active possible est associée à cette recommandation.](images/tvm-breach-insights.png)
+L’icône Informations sur les violations est mise en surbrill valeur si une vulnérabilité est trouvée dans votre organisation.
+![Exemple de texte d’informations sur la violation qui pourrait s’afficher lorsque vous placez le pointage sur l’icône. Celle-ci indique « une alerte active possible est associée à cette recommandation.](images/tvm-breach-insights.png)
 
 L’icône Informations sur les menaces est mise en évidence si la vulnérabilité trouvée dans votre organisation est associée à des exploits. Le pointage sur l’icône indique si la menace fait partie d’un kit d’exploitation ou est connectée à des campagnes avancées persistantes ou à des groupes d’activités spécifiques. Lorsqu’il est disponible, il existe un lien vers un rapport d’analyse des menaces avec les actualités sur l’exploitation zéro jour, les divulgations ou les conseils de sécurité associés.  
 
@@ -123,7 +123,7 @@ Les informations sur l’appareil exposé ne seront pas disponibles pour les VC 
 
 Afficher les informations sur les faiblesses associées dans la page de l’appareil.
 
-1. Go to the Microsoft 365 Defender navigation menu bar, then select the device icon. La page **Inventaire des** appareils s’ouvre.
+1. Go to the Microsoft 365 Defender navigation menu bar, then select the device icon. La page **d’inventaire des** appareils s’ouvre.
 
 2. Dans la page **Inventaire des** appareils, sélectionnez le nom de l’appareil que vous souhaitez examiner.
 
@@ -145,7 +145,7 @@ La catégorie « Fonctionnalité du système d’exploitation » est également 
 
 :::image type="content" alt-text="Exemple de logique de détection qui répertorie les logiciels détectés sur l’appareil et les ko." source="images/tvm-cve-detection-logic.png":::
 
-## <a name="report-inaccuracy"></a>Inaccuracy de rapport
+## <a name="report-inaccuracy"></a>Report inaccuracy
 
 Signalez un faux positif lorsque vous voyez des informations vagues, inexactes ou incomplètes. Vous pouvez également signaler les recommandations de sécurité qui ont déjà été corrigés.
 

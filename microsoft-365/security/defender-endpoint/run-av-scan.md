@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a8c21b49e4de23b2f8a822eb06a3d172202d3cf4b8b1c38bec6f23bf08e381b7
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: e4541bf39c034973057f53513afb7b5376d51b0ba7a2232f9fc5594ef64d76f0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839542"
 ---
 # <a name="run-antivirus-scan-api"></a>API d’analyse antivirus
 
@@ -45,11 +45,6 @@ Lancez Antivirus Microsoft Defender analyse sur un appareil.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
-> [!IMPORTANT]
->
-> - Cette action est disponible pour les appareils Windows 10 version 1709 ou ultérieure.
-> - Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender AV soit ou non la solution antivirus active. L’Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
-
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
@@ -62,7 +57,7 @@ Déléguée (compte professionnel ou scolaire)|Machine.Scan|« Analyser l’ordi
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (pour plus d’informations, voir Créer et gérer [des](user-roles.md) rôles)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
@@ -82,7 +77,7 @@ Content-Type|string|application/json
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Paramètre|Type|Description
+Parameter|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 ScanType|Chaîne|Définit le type de l’analyse. **Obligatoire**.

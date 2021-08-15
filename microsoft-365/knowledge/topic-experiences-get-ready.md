@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 84a07211126e2007b0f5740c18ef871d24497d8746d369acabf0aa9adf0203b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864150"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Préparer votre environnement à la Sujets Microsoft Viva
 
@@ -59,8 +59,8 @@ Pour planifier des rubriques De Rubriques, vous devez :
 Il existe plusieurs outils et services pour vous aider dans votre migration : vous pouvez obtenir une vue d’ensemble et des informations sur la migration de votre contenu vers [Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online). Les outils de migration sont les suivants :
 
 - [Gestionnaire de migration](/sharepointmigration/mm-get-started)
-- [l’outil de migration SharePoint](/sharepointmigration/introducing-the-sharepoint-migration-tool)
-- [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)
+- [Outil de migration SharePoint (SPMT)](/sharepointmigration/introducing-the-sharepoint-migration-tool)
+- [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)
 - [Les outils et services de migration des partenaires](https://www.microsoft.com/solution-providers)
 
 Ez le meilleur de votre migration :
@@ -96,7 +96,7 @@ Une bonne gestion des autorisations est essentielle ici. Et une bonne gestion de
   1. Sur votre site, choisissez **Paramètres**  >  **autorisations de site.** Vérifiez qui est répertorié sous Propriétaires du site, Membres du site, et Visiteurs du site. Recherchez les utilisateurs Invités.
   2. Sur la page **Autorisations**, choisissez **Paramètres d’autorisations avancés**. Vous pouvez vérifier les autorisations uniques et voir qui a un accès limité à tous les éléments du site.
 
-- Auditez les groupes et les équipes Microsoft 365 pour vous assurer qu’ils sont correctement définis en tant que groupes ou équipes publics ou privés. Les nouveaux Teams et Microsoft 365 groupes sont définies sur privé par défaut, mais lors de leur première publication ont été publiques par défaut. Si vous étiez des utilisateurs précédents de ces technologies, vous voudrez peut-être passer en revue. De plus, la fonction d’une équipe évolue souvent au cours de son cycle de vie et le paramètre peut devoir être mis à jour pour refléter l’utilisation actuelle de l’équipe.
+- Auditez les groupes et les équipes Microsoft 365 pour vous assurer qu’ils sont correctement définis en tant que groupes ou équipes publics ou privés. Les nouveaux Teams et Microsoft 365 groupes sont définies sur privé par défaut, mais lors de leur première publication ont été publiques par défaut. Si vous étiez des utilisateurs précédents de ces technologies, vous voudrez peut-être passer en revue. De plus, la fonction d’une équipe évolue souvent au cours de son cycle de vie et le paramètre peut devoir être mis à jour pour refléter l’utilisation actuelle de l’équipe.
 - Examiner l’utilisation de « tout le monde », « tout le monde sauf les utilisateurs externes » ou des groupes de sécurité larges. Le contenu peut être incorrectement partagé avec ces valeurs. Pour passer en revue l’utilisation de ces groupes, vous pouvez :
   - Créer un compte qui n’a pas d’appartenance à un groupe
   - Utiliser la recherche avec ce compte pour découvrir du contenu largement partagé.
@@ -121,7 +121,7 @@ La gestion des rubriques implique trois rôles clés, y compris deux nouveaux r�
 
 Selon votre organisation, vous pouvez avoir peu ou plusieurs personnes qui jouent ces rôles. Pour certaines organisations, il peut s’y avoir les mêmes personnes.
 
-| Administrateur d’informations | Gestionnaire des connaissances | Contributeur de rubrique |
+| Administrateur d’informations | Responsables d’informations | Contributeur de rubrique |
 |:-------|:-------|:-------|:-------|
 | Rôle AAD | Rôle AAD | SME |
 | A accès au Centre d’administration | A accès au Centre d’administration | Aucun accès au Centre d’administration |
@@ -137,7 +137,7 @@ Les sur-points et les cartes apparaissent pour les utilisateurs dans le contexte
 
     Pour afficher l’expérience de sujet, une licence doit être appliquée à tous les utilisateurs, même les utilisateurs invités. N’oubliez pas que les autorisations contrôlent toujours ce qui peut être vu.
 
-- Quels Rubriques sont visibles ? Vous pouvez :
+- Quels Rubriques sont visibles ? Vous pouvez :
   - Afficher tous les rubriques candidates.
   - Afficher uniquement les rubriques confirmées.
 

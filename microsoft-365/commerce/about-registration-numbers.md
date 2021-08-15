@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: Découvrez les numéros d’inscription et les notifications sous-revue lorsque vous achetez des produits ou services Microsoft.
 ms.date: 03/17/2021
-ms.openlocfilehash: ad1d4fe68ad42a33a2cdfa8b78c1bb5b168e9059
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: a03815e8c5da48c52ef43d11d613ade86657d368b908fff9ecbce5e30291e301
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925222"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872998"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>À propos des numéros d’inscription et des notifications sous révision
 
@@ -77,7 +77,7 @@ Le tableau suivant contient des exemples des numéros d’inscription collectés
 |**Brésil** | [CNPJ](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Brazil-TIN.pdf) – (Cadastro Nacional da Pessoa Jurídica, ou Registre national des entités juridiques). Il s’agit d’un numéro d’identification émis par le département du Revenu fédéral du Brésil pour les entreprises du Brésil  |
 | **Chine** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/China-TIN.pdf) – Numéro d’identification fiscale |
 | **Hongrie**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Hungary-TIN.pdf) – Numéro d’identification fiscale |
-| **Inde** | ID de taxe<br>[PAN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/India-TIN.pdf) – (Présence à travers la nation) L’implication de PAN India signifie qu’il existe une organisation qui fonctionne à plusieurs endroits en Inde. |
+| **Inde** | ID de taxe<br>[PAN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/India-TIN.pdf) – (Présence au sein de la nation) L’implication de PAN India signifie qu’il existe une organisation qui fonctionne à plusieurs emplacements en Inde. |
 | **Irak** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Numéro d’identification fiscale |
 | **Kazakhstan**  | BIN : numéro d’identification bancaire<br>IIN : numéro d’identification de l’émetteur |
 | **Kirghizstan**  | EN-AVANT - Numéro d’identification fiscale |

@@ -16,12 +16,12 @@ description: Afficher et examiner les tentatives de hameçonnage de programmes m
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cebe76536c5ed309ca16777e85c5cdf919d0fb5c
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: cfefbbbdcba0b7ff909892e982abf2ca534e978ead74a6263e23fa443fa8125d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897350"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Sécurité du courrier électronique avec l’Explorateur de menaces dans Microsoft Defender Office 365
 
@@ -74,7 +74,7 @@ Vous pouvez afficher les tentatives de hameçonnage par le biais d’URL dans le
    > [!div class="mx-imgBorder"]
    > ![Afficher le menu de l’Explorateur dans le contexte de hameçonnage](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Cliquez **sur Expéditeur,** puis sélectionnez **URL** Verdict \> **de clic** dans la liste liste.
+3. Cliquez **sur Expéditeur,** puis choisissez **URL** Cliquez \> **sur verdict** dans la liste de liste.
 
 4. Dans les options qui s’affichent,  sélectionnez une ou plusieurs options, telles que Blocage et Blocage, puis cliquez sur Actualiser **(ne** pas actualiser la fenêtre de votre navigateur).
 
@@ -84,7 +84,7 @@ Vous pouvez afficher les tentatives de hameçonnage par le biais d’URL dans le
 
    - **Les URL principales sont** les URL des messages que vous avez filtrés vers le bas et le nombre d’actions de remise de courrier pour chaque URL. Dans l’affichage de courrier d’hameçonnage, cette liste contient généralement des URL légitimes. Les attaquants incluent un mélange d’URL bonnes et mauvaises dans leurs messages pour essayer de les remettre, mais ils rendent les liens malveillants plus intéressants. Le tableau des URL est trié par nombre total de messages électroniques, mais cette colonne est masquée pour simplifier l’affichage.
 
-   - **Les clics les** plus fréquents Coffre URL wrapped links qui ont été cliquées, triées par nombre total de clics. Cette colonne n’est pas non plus affichée, pour simplifier l’affichage. Le nombre total par colonne indique le nombre Coffre nombre de verdicts de clics de liens pour chaque URL cliquée. Dans l’affichage courrier d’hameçonnage, il s’agit généralement d’URL suspectes ou malveillantes. Toutefois, l’affichage peut inclure des URL qui ne sont pas des menaces mais qui figurent dans des messages d’hameçonnage. Les clics d’URL sur les liens déballés ne s’affiche pas ici.
+   - **Les clics les** plus fréquents Coffre URL wrapped links qui ont été cliquées, triées par nombre total de clics. Cette colonne n’est pas non plus affichée, pour simplifier l’affichage. Le nombre total par colonne indique le nombre Coffre nombre de verdicts de clics de liens pour chaque URL cliquée. Dans l’affichage courrier d’hameçonnage, il s’agit généralement d’URL suspectes ou malveillantes. Toutefois, l’affichage peut inclure des URL qui ne sont pas des menaces mais qui figurent dans des messages d’hameçonnage. Les clics d’URL sur les liens non ballés ne s’affiche pas ici.
 
    Les deux tableaux d’URL indiquent les PRINCIPALES URL des messages électroniques de hameçonnage par action de remise et emplacement. Les tableaux indiquent les clics d’URL qui ont été bloqués ou visités malgré un avertissement, afin que vous pouvez voir les liens potentiellement malveillants présentés aux utilisateurs et que les utilisateurs ont cliqué. À partir de là, vous pouvez effectuer une analyse plus approfondie. Par exemple, sous le graphique, vous pouvez voir les URL les plus fréquentes dans les messages électroniques bloqués dans l’environnement de votre organisation.
 

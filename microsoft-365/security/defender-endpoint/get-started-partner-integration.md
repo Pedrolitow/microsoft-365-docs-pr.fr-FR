@@ -16,12 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 8597cc951c5a6d9cc587eaee957beb304fb35311
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4d7f257f5ecb1c3f24acb6d4510e9a534b6fa01f45667cb5b662ca7805b9f69e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653186"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839842"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Devenir un partenaire Microsoft Defender pour point de terminaison
 
@@ -80,6 +80,6 @@ Pour que votre société soit répertoriée en tant que partenaire dans la page 
 
 Les partenariats avec Microsoft Defender pour point de terminaison aident nos clients mutuels à rationaliser, intégrer et orchestrer davantage les défenses. Nous sommes heureux que vous choisissiez de devenir un partenaire Microsoft Defender pour Points de terminaison et d’atteindre notre objectif commun de protéger efficacement les clients et leurs biens en empêchant les menaces modernes et en y répondant ensemble.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Opportunités de partenariat technique](partner-integration.md)

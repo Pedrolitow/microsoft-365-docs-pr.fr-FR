@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment configurer la gestion de la confidentialité pour votre organisation, définir des rôles et des autorisations et configurer des paramètres importants.
-ms.openlocfilehash: 0486c073da8061b72eedb9a7fac44adf6d38ae19
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8c66d041b05a672c3622d0187fb3a6b538e2505d7f5a69eed1f2089cabef2e24
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648602"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830706"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Prise en charge de la gestion de la confidentialité (aperçu)
 
@@ -33,7 +33,7 @@ La gestion de la confidentialité est disponible dans le Centre de conformité M
 
 Notez que la prévisualisation publique de la gestion de la confidentialité n’est pas disponible pour les clients modérés, Cloud de la communauté du secteur public élevés ou du département de la Défense (DoD) du gouvernement américain Community (Cloud de la communauté du secteur public).
 
-Pour commencer la prévisualisation publique, obtenez l’abonnement d’aperçu à partir du Centre d’administration. Si vous n’avez pas encore d’abonnement lorsque vous sélectionnez la gestion de la confidentialité pour la première fois dans le centre de conformité, vous êtes dirigé vers le centre d’administration pour commencer. Il est recommandé que l’administrateur global se connecte et définisse les autorisations des utilisateurs comme indiqué ci-dessous lors de la première visite de la gestion de la confidentialité. Si vous ne devez pas détenir le rôle requis pour obtenir l’abonnement ou consentir aux conditions d’utilisation de la gestion de la confidentialité, vous serez invité à contacter votre administrateur global pour obtenir de l’aide.
+Pour commencer la prévisualisation publique, obtenez l’abonnement d’aperçu à partir du Centre d’administration. Si vous n’avez pas encore d’abonnement lorsque vous sélectionnez la gestion de la confidentialité pour la première fois dans le centre de conformité, vous êtes dirigé vers le Centre d’administration pour commencer. Il est recommandé que l’administrateur global se connecte et définisse les autorisations des utilisateurs comme indiqué ci-dessous lors de la première visite de la gestion de la confidentialité. Si vous ne devez pas détenir le rôle requis pour obtenir l’abonnement ou consentir aux conditions d’utilisation de la gestion de la confidentialité, vous serez invité à contacter votre administrateur global pour obtenir de l’aide.
 
 Confirmer que vous souhaitez commencer à utiliser la gestion de la confidentialité indique que vous acceptez les termes et le processus d’évaluation des données personnelles. Vous pouvez consulter les liens fournis dans son intégralité avant de poursuivre.
 
@@ -55,7 +55,7 @@ Les autorisations et les attributions de rôles pour la gestion de la confidenti
 
 Cette section décrit les groupes de rôles et les rôles pertinents pour la gestion de la confidentialité. Les membres doivent être affectés à des groupes de rôles par l’administrateur de niveau supérieur en fonction des tâches qu’ils doivent accomplir et du niveau d’accès approprié aux fichiers. Chaque groupe de rôles comprend un ou plusieurs rôles. Ces rôles peuvent concerner des tâches de gestion de la confidentialité spécifiques ou correspondre à des fonctions clés activées ou restreintes pour les membres de ce groupe.
 
-Les groupes de rôles peuvent être personnalisés si nécessaire. Pour éviter toute perte accidentelle d’accès, nous vous recommandons de créer une copie du groupe de rôles existant que vous souhaitez personnaliser, d’attribuer un nom identifiable à la copie, d’apporter et de vérifier vos modifications au nouveau groupe et d’y affecter des personnes selon le cas.
+Les groupes de rôles peuvent être personnalisés si nécessaire. Pour éviter toute perte accidentelle d’accès, nous vous recommandons de créer une copie du groupe de rôles existant que vous souhaitez personnaliser, d’attribuer à la copie un nom identifiable, d’apporter et de vérifier vos modifications au nouveau groupe et d’y affecter des personnes, le cas échéant.
 
 **Gestion de la** confidentialité : ce groupe contient tous les rôles d’autorisation de gestion de la confidentialité dans un seul groupe. Il s’agit du moyen le plus simple de commencer rapidement la gestion de la confidentialité et de gérer le contrôle d’accès pour d’autres groupes qui utiliseront la gestion de la confidentialité. Il convient également aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts.
 
@@ -67,7 +67,7 @@ Administrateurs de la gestion de la confidentialité : les membres de ce groupe 
 
 **Visionneuse de la** gestion de la confidentialité : les membres de ce groupe peuvent afficher des informations analytiques dans la gestion de la confidentialité, telles que la vue d’ensemble, le profil de données et les rapports de demande d’objet.
 
-**Administrateurs de demandes de droits de l’objet**: les membres de ce groupe ont un accès total pour administrer et créer des demandes de droits d’objet.
+**Administrateurs des demandes des droits de l’objet**: les membres de ce groupe ont un accès total pour administrer et créer des demandes de droits d’objet.
 
 **Contributeurs à la gestion de la confidentialité**: les membres de ce groupe ont un accès collaborateur aux demandes de droits de l’objet.
 
@@ -105,13 +105,13 @@ Pour voir les rôles spécifiques inclus dans chaque groupe de rôles, consultez
 
 ## <a name="configure-settings"></a>Configurer les paramètres
 
-La page Paramètres est accessible via la roulette d’engrenage dans le coin supérieur droit des pages principales de la gestion de la confidentialité. Il permet aux administrateurs de gestion de la confidentialité de configurer les propriétés essentielles dans la gestion de la confidentialité. Les options sont les suivantes:
+La Paramètres page est accessible via la roulette d’engrenage dans le coin supérieur droit des pages principales de la gestion de la confidentialité. Il permet aux administrateurs de gestion de la confidentialité de configurer les propriétés essentielles dans la gestion de la confidentialité. Les options sont les suivantes:
 
 ### <a name="anonymization"></a>Anonymisation
 
 Cette fonctionnalité vous permet d’afficher des versions rendues anonymes des noms d’utilisateur dans les fonctionnalités de gestion de la confidentialité aux utilisateurs de certains rôles. Cela remplacera les noms complets identifiables tels que « Grace Grace » par une étiquette générique telle que « AnonyIS8-988 » afin de masquer les identités de vos utilisateurs lors de l’examen des données sensibles. Cette option ne s’applique pas au module de demande de droits de l’objet.
 
-### <a name="user-notification-emails"></a>Messages électroniques de notification de l’utilisateur
+### <a name="user-notification-emails"></a>E-mails de notification de l’utilisateur
 
 Lorsque nous détectons une correspondance pour vos stratégies de gestion des données, la gestion de la confidentialité peut envoyer un courrier électronique à vos utilisateurs avec des actions correctives à prendre et un lien vers une formation sur la confidentialité. Dans Paramètres, vous pouvez activer ou désactiver la fonctionnalité de notification par courrier électronique de la gestion de la confidentialité dans son ensemble. Vous pouvez activer des notifications individuelles, définir la fréquence des e-mails et spécifier une URL de formation lorsque vous créez ou modifiez une stratégie. Si la fonctionnalité de notification est désactivée Paramètres, toute configuration au niveau de la stratégie pour des messages de notification spécifiques est désactivée. Pour en savoir plus sur les stratégies, voir [Créer et gérer des stratégies.](privacy-management-policies.md)
 
@@ -121,7 +121,7 @@ Intégrez Microsoft Teams fonctionnalités de gestion de la confidentialité pou
 
 ### <a name="power-automate-flows"></a>Power Automate flux
 
-Utilisez Power Automate flux de travail pour gérer automatiquement les processus et les tâches liés à la confidentialité. Vous pouvez créer des flux dans la section Paramètres à l’aide de modèles de gestion de la confidentialité intégrés ou utiliser la console Power Automate pour créer des flux personnalisés. Pour en savoir plus sur Power Automate, consultez la documentation [Power Automate](/power-automate/) documentation.
+Utilisez Power Automate flux de travail pour gérer automatiquement les processus et les tâches liés à la confidentialité. Vous pouvez créer des flux dans la section Paramètres à l’aide de modèles de gestion de la confidentialité intégrés ou utiliser la console Power Automate pour créer des flux personnalisés. Pour en savoir plus sur les Power Automate, consultez la documentation [Power Automate](/power-automate/) documentation.
 
 ### <a name="data-matching"></a>Correspondance de données
 
@@ -129,7 +129,7 @@ Utilisez cette section pour télécharger des schémas de données qui décriven
 
 ### <a name="data-retention-periods"></a>Périodes de rétention des données
 
-Pour les demandes de droits d’objet, choisissez la durée de rétention des données finales collectées et le rapport après la fermeture d’une demande. Vous pouvez sélectionner entre 30 et 90 jours. Pour en savoir plus sur les demandes de droits d’objet, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)
+Pour les demandes de droits de l’objet, choisissez la durée de rétention des données finales collectées et le rapport après la fermeture d’une demande. Vous pouvez choisir entre 30 et 90 jours. Pour en savoir plus sur les demandes de droits d’objet, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)
 
 ### <a name="data-review-tags"></a>Balises de révision des données
 

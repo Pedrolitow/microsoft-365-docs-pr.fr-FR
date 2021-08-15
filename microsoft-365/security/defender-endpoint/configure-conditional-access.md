@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2460b1aac746e706175524e7f201610a1888c255
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 281a9391fdc512882a4a7aef2dfecf51e28ce77a9724f0ba1882d75f7bbff935
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655862"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839854"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurer l’accès conditionnel dans Microsoft Defender pour le point de terminaison
 
@@ -51,7 +51,7 @@ Il existe des étapes que vous devrez suivre dans Microsoft 365 Defender, le por
 
 Il est important de noter les rôles requis pour accéder à ces portails et implémenter l’accès conditionnel :
 
-- **Microsoft 365 Defender** : vous devez vous inscrire au portail avec un rôle d’administrateur général pour activer l’intégration.
+- **Microsoft 365 Defender** : vous devez vous connectez au portail avec un rôle d’administrateur général pour activer l’intégration.
 - **Intune** : vous devez vous connectez au portail avec des droits d’administrateur de sécurité avec des autorisations de gestion.
 - **Portail Azure AD** : vous devez vous inscrire en tant qu’administrateur général, administrateur de sécurité ou administrateur d’accès conditionnel.
 
@@ -77,14 +77,14 @@ Pour activer l’accès conditionnel, prenez les mesures suivantes :
 1. Connectez-vous au [Portail Azure](https://portal.azure.com).
 2. Sélectionnez **La conformité de**  >  **l’appareil Microsoft Defender ATP**.
 3. Définissez **Connecter Windows 10.0.15063+** sur Microsoft Defender - Protection avancée contre les **menaces sur On**.
-4. Cliquez sur **Enregistrer**.
+4. Cliquez sur **Save (Enregistrer)**.
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>Étape 3 : Créer la stratégie de conformité dans Intune
 
-1. Dans le [portail Azure,](https://portal.azure.com) **sélectionnez Tous les services,** filtrez **sur Intune** et sélectionnez **Microsoft Intune**.
+1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez **Tous les services,** filtrez sur **Intune** et sélectionnez **Microsoft Intune**.
 2. Sélectionnez **Stratégies de conformité**  >  **des appareils** Créer une  >  **stratégie.**
 3. Entrez un **nom et** une **description.**
-4. Dans **Plateforme,** **sélectionnez Windows 10 et ultérieures.**
+4. Dans **Plateforme,** sélectionnez **Windows 10 et ultérieures.**
 5. Dans les paramètres **d’état** de l’appareil, définissez Exiger que l’appareil soit à ou sous le niveau de menace de l’appareil **à** votre niveau préféré :
 
    - **Sécurisé :** ce niveau est le plus sécurisé. L’appareil ne peut pas avoir de menaces existantes et accéder aux ressources de l’entreprise. Si des menaces sont trouvées, l’appareil est évalué comme non conforme.
@@ -96,7 +96,7 @@ Pour activer l’accès conditionnel, prenez les mesures suivantes :
 
 ### <a name="step-4-assign-the-policy"></a>Étape 4 : Attribuer la stratégie
 
-1. Dans le [portail Azure,](https://portal.azure.com) **sélectionnez Tous les services,** filtrez **sur Intune** et sélectionnez **Microsoft Intune**.
+1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez **Tous les services,** filtrez sur **Intune** et sélectionnez **Microsoft Intune**.
 2. Sélectionnez   >  **stratégies de** conformité des> sélectionnez votre stratégie de conformité Microsoft Defender pour les points de terminaison.
 3. Sélectionnez **Devoirs**.
 4. Incluez ou excluez vos groupes Azure AD pour leur attribuer la stratégie.

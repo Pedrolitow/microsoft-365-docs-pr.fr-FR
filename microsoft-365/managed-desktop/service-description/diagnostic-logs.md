@@ -9,22 +9,22 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ef7d19fef989610c10323c2a9820a5314d5e1641
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 04de03e22e270099c647a0dd1ac6d3bb9826ccf87014031bb13ed77b0b580870
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272890"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840118"
 ---
 # <a name="diagnostic-logs"></a>Journaux de diagnostic
 
-Lorsque nous dépannageons un problème sur un appareil géré par Bureau géré Microsoft, qu’il s’agit d’un problème que vous avez signalé ou identifié par notre service, il se peut que nous deions collecter certains journaux de diagnostic à partir de l’appareil sans l’intervention de l’utilisateur. Nous ne collectons pas de contenu ou d’informations générés par l’utilisateur à partir des annuaires d’utilisateurs. Nous collectons uniquement les données de diagnostic et de journal qui concernent l’état et l’état de l’appareil.
+Lorsque nous dépannageons un problème sur un appareil géré par Microsoft Manged Desktop, qu’il s’agit d’un problème que vous avez signalé ou identifié par notre service, il se peut que nous deions collecter certains journaux de diagnostic à partir de l’appareil sans l’intervention de l’utilisateur. Nous ne collectons pas de contenu ou d’informations générés par l’utilisateur dans les annuaires des utilisateurs. Nous collectons uniquement les données de diagnostic et de journal qui concernent l’état et l’état de l’appareil.
 
 Nous stockons tous les journaux collectés pendant 28 jours, puis les supprimons. Nous traiterons tous les journaux collectés à partir d’un appareil en suivant nos normes [de gestion des données.](privacy-personal-data.md)
 
 ## <a name="data-collected"></a>Données collectées
 
-Cette liste inclut tous les dossiers, journaux d’événements, fichiers exécutables ou emplacements de Registre à partir Bureau géré Microsoft journaux de diagnostic. Les données réelles collectées sont un sous-ensemble de cette liste et dépendent du problème identifié.
+Cette liste inclut tous les dossiers, journaux d’événements, fichiers exécutables ou emplacements de Registre à partir Microsoft Manged Desktop des journaux de diagnostic. Les données réelles collectées sont un sous-ensemble de cette liste et dépendent du problème identifié.
 
 ### <a name="registry-keys"></a>Clés du Registre
 
@@ -98,7 +98,7 @@ Cette liste inclut tous les dossiers, journaux d’événements, fichiers exécu
 - Microsoft-Windows-AppLocker/Packaged app-Execution
 - Microsoft-Windows-Bitlocker/Bitlocker Management
 - Microsoft-Windows-SENSE/Opérationnel
-- Microsoft-Windows-SenseIR/Opérationnel
+- Microsoft-Windows-SenseIR/Operational
 - Configuration
 - Système
 

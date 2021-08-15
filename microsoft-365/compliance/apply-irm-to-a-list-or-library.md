@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Vous pouvez utiliser la Gestion des droits numériques (IRM) pour contrôler et protéger les fichiers téléchargés à partir de listes ou de bibliothèques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0648d511ee882765f1905e83ebdea673f306c186
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 8e6390e20b19c291ea79417082d926e670d7b59a27572d58e25b888e8a18d023
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887026"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Appliquer la Gestion des droits à l’information (IRM) à une liste ou une bibliothèque
 
@@ -66,7 +66,7 @@ Vous pouvez utiliser la Gestion des droits numériques (IRM) pour contrôler et 
 
 7. Pour appliquer des restrictions supplémentaires aux documents de cette liste ou bibliothèque, sélectionnez Afficher les **options** et faites l’une des actions suivantes :
 
-|**Pour ce faire :**|**Pour ce faire :**|
+|**Pour cela :**|**Pour ce faire :**|
 |:-----|:-----|
 |Autoriser les utilisateurs à imprimer des documents à partir de cette liste ou bibliothèque|Cochez **la case Autoriser les visionneuses à** imprimer.|
 |Autoriser les personnes ayant au moins l’autorisation Afficher les éléments à exécuter du code ou des macros incorporés sur un document.|Cochez la case Autoriser **les visionneuses à exécuter** un script et un lecteur d’écran pour fonctionner sur les documents téléchargés. Si vous sélectionnez cette option, les utilisateurs peuvent exécuter du code pour extraire le contenu d’un document.           |
@@ -85,15 +85,15 @@ La Gestion des droits numériques (IRM) vous permet de limiter les actions que l
   
 Vous pouvez utiliser irm sur des listes ou des bibliothèques pour limiter la diffusion de contenu sensible. Par exemple, si vous créez une bibliothèque de documents pour partager des informations sur les produits à venir avec des représentants commerciaux sélectionnés, vous pouvez utiliser la gestion des droits numériques pour empêcher ces personnes de partager ce contenu avec d’autres employés de l’entreprise.
   
-Sur un site, vous appliquez la gestion des droits numériques à l’ensemble d’une liste ou d’une bibliothèque, plutôt qu’à des fichiers individuels. Cela facilite la mise en place d’un niveau de protection cohérent pour l’ensemble des documents ou des fichiers. Irm peut ainsi aider votre organisation à appliquer des stratégies d’entreprise qui régissent l’utilisation et la diffusion d’informations confidentielles ou propriétaires.
+Sur un site, vous appliquez la gestion des droits numériques à l’ensemble d’une liste ou d’une bibliothèque, plutôt qu’à des fichiers individuels. Cela facilite la mise en place d’un niveau de protection cohérent pour l’ensemble d’un ensemble de documents ou de fichiers. Irm peut ainsi aider votre organisation à appliquer des stratégies d’entreprise qui régissent l’utilisation et la diffusion d’informations confidentielles ou propriétaires.
   
 > [!NOTE]
 > Les informations de cette page concernant la gestion des droits de l’information ont la place sur les termes qui font référence à la « Gestion des droits informatiques » dans les contrats de licence Microsoft SharePoint Server 2013 et SharePoint Server 2016. 
   
-### <a name="how-irm-can-help-protect-content"></a>Comment IRM peut aider à protéger le contenu
+### <a name="how-irm-can-help-protect-content"></a>Comment irm peut aider à protéger le contenu
 <a name="__toc256598176"> </a>
 
-Irm permet de protéger le contenu restreint des manières suivantes :
+La gestion des droits numériques permet de protéger le contenu restreint des manières suivantes :
   
 - Permet d’empêcher une visionneuse autorisée de copier, modifier, imprimer, télécopier ou copier et coller le contenu pour une utilisation non autorisée
     
@@ -133,10 +133,10 @@ Les types de restrictions qui sont appliquées à un fichier lorsqu’il est té
   
 |**Autorisations**|**Autorisations IRM**|
 |:-----|:-----|
-|Gérer les autorisations, Gérer un site Web|**Contrôle total** (tel que défini par le programme client) : cette autorisation permet généralement à un utilisateur de lire, modifier, copier, enregistrer et modifier des autorisations de contenu géré par des droits.|
-|Modifier des éléments, gérer des listes, ajouter et personnaliser des pages|**Modifier,** **copier** et enregistrer : un utilisateur ne peut imprimer un fichier que si la case Autoriser les utilisateurs à imprimer des **documents** est sélectionnée sur la page Paramètres gestion des droits relatifs à l’information pour la liste ou la bibliothèque.|
+|Gérer les autorisations, Gérer le site Web|**Contrôle total** (tel que défini par le programme client) : cette autorisation permet généralement à un utilisateur de lire, modifier, copier, enregistrer et modifier des autorisations de contenu géré par des droits.|
+|Modifier des éléments, gérer des listes, ajouter et personnaliser des pages|**Modifier,** **copier** et enregistrer : un utilisateur ne peut imprimer un fichier que si la case Autoriser les utilisateurs à imprimer des **documents** est cocher sur la page gestion des droits relatifs à l’information Paramètres de la liste ou de la bibliothèque.|
 |Afficher les éléments|**Lecture**: un utilisateur peut lire le document, mais ne peut pas copier ou modifier son contenu. Un utilisateur ne peut imprimer que si la case Autoriser les utilisateurs à imprimer des **documents** est sélectionnée sur la page gestion des droits relatifs à l’Paramètres de la liste ou de la bibliothèque.|
-|Autre|Aucune autre autorisation ne correspond directement aux autorisations IRM.|
+|Autres|Aucune autre autorisation ne correspond directement aux autorisations IRM.|
    
 Lorsque vous activez irm pour une liste ou une bibliothèque dans SharePoint Server 2013, vous ne pouvez protéger que les types de fichiers de cette liste ou bibliothèque pour lesquels un logiciel de protection est installé sur tous les serveurs web frontux. Un logiciel de protection est un programme qui contrôle le chiffrement et le déchiffrement des fichiers gérés par des droits d’un format de fichier spécifique. SharePoint comprend des protecteurs pour les types de fichiers suivants :
   

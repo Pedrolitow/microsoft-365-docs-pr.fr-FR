@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment gérer les stratégies Windows 10 Professionnel appareil à l’Microsoft 365 Business Premium.
-ms.openlocfilehash: 0f7cfff227e1ab4ea992414b513e341adbd9ef22
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: fa639da2b12f97e833d892d2b83939d42481c766f8c57c6f52adf7eb5fae0011
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873110"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>Gérer les stratégies Windows 10 Professionnel appareils
 

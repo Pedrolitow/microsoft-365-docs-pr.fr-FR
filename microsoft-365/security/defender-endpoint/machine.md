@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d171e0975779b9c1c8858418db7e38a7bdb65c96
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 5afc965ab72ccdf062826a4157c6949f9a83fd165feb5b31f72dd67fda4e9e93
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650318"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839578"
 ---
 # <a name="machine-resource-type"></a>Type de ressource Machine
 
@@ -43,7 +43,7 @@ ms.locfileid: "53650318"
 
 Méthode|Type renvoyé |Description
 :---|:---|:---
-[Répertorier les ordinateurs](get-machines.md) | [collection d’ordinateurs](machine.md) | Liste des [ensembles d’entités](machine.md) d’ordinateur dans l’organisation.
+[Répertorier les ordinateurs](get-machines.md) | [collection d’ordinateurs](machine.md) | Liste des [ensembles d’entités](machine.md) d’ordinateurs dans l’organisation.
 [Obtenir un ordinateur](get-machine-by-id.md) | [ordinateur](machine.md) | Obtenez un [ordinateur par](machine.md) son identité.
 [Obtenir des utilisateurs connectés](get-machine-log-on-users.md) | Collection d’[utilisateurs](user.md) | Obtenez l’ensemble [de l’utilisateur](user.md) qui s’est connecté à l’ordinateur. [](machine.md)
 [Obtenir les alertes associées](get-machine-related-alerts.md) | collection[alert](alerts.md) | Obtenir [l’ensemble](alerts.md) des entités d’alerte qui ont été élevés sur l’ordinateur . [](machine.md)
@@ -73,7 +73,7 @@ lastIpAddress | Chaîne | Dernière adresse IP sur la NIC locale sur [l’ordina
 lastExternalIpAddress | Chaîne | Dernière adresse IP via laquelle [l’ordinateur](machine.md) a accédé à Internet.
 healthStatus | Énum | [état d’état](machine.md) de l’ordinateur. Les valeurs possibles sont : « Active », « Inactive », « ImpairedCommunication », « NoSensorData », « NoSensorDataImpairedCommunication » et « Unknown ». 
 rbacGroupName | Chaîne | Nom du groupe d’ordinateurs.
-riskScore | Nullable, enum | Score de risque tel qu’évalué par Microsoft Defender pour le point de terminaison. Les valeurs possibles sont : « None » (aucun), « Informational » (information), « Low » (faible), « Medium » (moyen) et « High » (élevé).
+riskScore | Nullable, enum | Score de risque tel qu’évalué par Microsoft Defender pour le point de terminaison. Les valeurs possibles sont : « None » (aucun), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).
 exposureScore | Nullable, enum | [Score d’exposition](tvm-exposure-score.md) tel qu’évalué par Microsoft Defender pour le point de terminaison. Les valeurs possibles sont : « None » (aucun), « Low » (faible), « Medium » (moyen) et « High » (élevé).
 aadDeviceId | Guid de représentation nullable | ID d’appareil AAD [(lorsque l’ordinateur](machine.md) est joint à AAD).
 machineTags | Collection de chaînes | Ensemble de [balises d’ordinateur.](machine.md)

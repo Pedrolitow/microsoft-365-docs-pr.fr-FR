@@ -19,20 +19,20 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Une fois que vous avez terminé la configuration chiffrement de messages Office 365 (OME), découvrez comment personnaliser votre déploiement de plusieurs façons.
-ms.openlocfilehash: a2b3dde44ea541deb41eeb9d55d5ed745fa6c719
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 73862bd08ba393d7ccc24a2b665cb3ac83df99a9018b3c9945ce3cae691e78a5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52650983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855994"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
 
-Une fois que vous avez terminé la configuration chiffrement de messages Office 365 (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs manières. Par exemple, vous pouvez configurer s’il faut activer  les codes de passe à temps partiel, afficher le bouton Chiffrer dans Outlook sur le web, et bien plus encore. Les tâches de cet article décrivent comment.
+Une fois que vous avez terminé la configuration chiffrement de messages Office 365 (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs manières. Par exemple, vous pouvez configurer s’il faut activer  les codes de passe à temps partiel, afficher le bouton Chiffrer dans Outlook sur le web, etc. Les tâches de cet article décrivent comment.
 
-## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Déterminer si les destinataires des comptes Google, Yahoo et Microsoft peuvent utiliser ces comptes pour se connecter au portail chiffrement de messages Office 365 web
+## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Déterminer si les destinataires des comptes Google, Yahoo et Microsoft peuvent utiliser ces comptes pour se chiffrement de messages Office 365 portail
 
-Lorsque vous définissez les nouvelles fonctionnalités chiffrement de messages Office 365, les utilisateurs de votre organisation peuvent envoyer des messages à des destinataires extérieurs à votre organisation. Si le destinataire utilise un *ID social* tel qu’un compte Google, un compte Yahoo ou un compte Microsoft, le destinataire peut se connecter au portail OME avec un ID social. Si vous le souhaitez, vous pouvez choisir de ne pas autoriser les destinataires à utiliser les ID de réseau social pour se connecter au portail OME.
+Lorsque vous définissez les nouvelles fonctionnalités chiffrement de messages Office 365, les utilisateurs de votre organisation peuvent envoyer des messages à des destinataires extérieurs à votre organisation. Si le destinataire utilise un *ID social* tel qu’un compte Google, un compte Yahoo ou un compte Microsoft, le destinataire peut se connecter au portail OME avec un ID social. Si vous le souhaitez, vous pouvez choisir de ne pas autoriser les destinataires à utiliser des ID de réseau social pour se connecter au portail OME.
   
 ### <a name="to-manage-whether-recipients-can-use-social-ids-to-sign-in-to-the-ome-portal"></a>Pour déterminer si les destinataires peuvent utiliser des ID sociaux pour se connecter au portail OME
   
@@ -145,7 +145,7 @@ Pour plus d’informations et pour une vue de l’expérience client, voir Affic
 
 Normalement, lorsque vous utilisez le chiffrement Office 365 messages, les pièces jointes sont automatiquement chiffrées. En tant qu’administrateur, vous pouvez appliquer le déchiffrement côté service pour les pièces jointes de courrier que les utilisateurs téléchargent à partir d’un navigateur web.
   
-Lorsque vous utilisez le déchiffrement côté service, le service envoie une copie déchiffrée du fichier à l’appareil. Le message est toujours chiffré. La pièce jointe conserve également les informations sur les droits d’utilisation, même si le navigateur n’applique pas les droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer la pièce jointe même s’il n’en avait pas à l’origine les droits. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite le serveur de messagerie Microsoft 365, telle que le forwarding de la pièce jointe, le serveur n’autorise pas l’action si l’utilisateur n’en avait pas à l’origine le droit d’utilisation.
+Lorsque vous utilisez le déchiffrement côté service, le service envoie une copie déchiffrée du fichier à l’appareil. Le message est toujours chiffré. La pièce jointe conserve également les informations sur les droits d’utilisation, même si le navigateur n’applique pas de droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer la pièce jointe d’un e-mail même s’il n’en avait pas à l’origine les droits. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite le serveur de messagerie Microsoft 365, telle que le forwarding de la pièce jointe, le serveur n’autorise pas l’action si l’utilisateur n’en avait pas à l’origine le droit d’utilisation.
   
 Que vous setiez ou non le déchiffrement côté service des pièces jointes, les utilisateurs ne peuvent pas afficher les pièces jointes des messages chiffrés et protégés par des droits dans l’application de messagerie iOS.
   
@@ -175,7 +175,7 @@ Pour plus d’informations sur la façon dont Microsoft 365 implémente le chiff
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
-## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>S’assurer que tous les destinataires externes utilisent le portail OME pour lire les messages chiffrés
+## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>Vérifier que tous les destinataires externes utilisent le portail OME pour lire les messages chiffrés
 
 Vous pouvez utiliser des modèles de personnalisation pour obliger les destinataires à recevoir un wrapper qui les dirige vers la lecture de messages chiffrés dans le portail OME au lieu d’utiliser Outlook ou Outlook sur le web. Vous pouvez le faire si vous souhaitez mieux contrôler la façon dont les destinataires utilisent le courrier qu’ils reçoivent. Par exemple, si des destinataires externes visualisent le courrier électronique dans le portail web, vous pouvez définir une date d’expiration pour le courrier électronique et révoquer le courrier électronique. Ces fonctionnalités sont uniquement pris en charge via le portail OME. Vous pouvez utiliser l’option Chiffrer et l’option Ne pas forwarder lors de la création des règles de flux de messagerie.
 
@@ -189,11 +189,11 @@ Vous pouvez utiliser des modèles de personnalisation pour obliger les destinata
    New-TransportRule -name "<mail flow rule name>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "<option name>" -ApplyRightsProtectionCustomizationTemplate "<template name>"
    ```
 
-    où :
+    où :
 
    - `mail flow rule name` est le nom que vous souhaitez utiliser pour la nouvelle règle de flux de messagerie.
 
-   - `option name` est soit `Encrypt` `Do Not Forward` ou .
+   - `option name` est `Encrypt` l’un ou `Do Not Forward` l’autre .
 
    - `template name` est le nom que vous avez donné au modèle de personnalisation, par exemple `OME Configuration` .
 

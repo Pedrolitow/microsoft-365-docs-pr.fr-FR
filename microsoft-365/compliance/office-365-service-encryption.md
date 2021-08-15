@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé : Comprendre la résilience des données dans Microsoft Office 365.'
-ms.openlocfilehash: 89f3fbcc90cee0ad822156014ee4ac9e04fe3371
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 290debbcbb58c7ded884a2443a7c4f31a4b2f92c396500ff1d63f3fcc7221942
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855694"
 ---
 # <a name="service-encryption"></a>Chiffrement de service
 
@@ -33,7 +33,7 @@ Vous fournissez les clés racine utilisées avec le chiffrement de service et vo
 
 Le chiffrement de service offre plusieurs avantages :
 
-- Fournit une couche de protection supplémentaire en plus des BitLocker.
+- Fournit une couche de protection supplémentaire sur BitLocker.
 
 - Permet de séparer les Windows du système d’exploitation de l’accès aux données d’application stockées ou traitées par le système d’exploitation.
 

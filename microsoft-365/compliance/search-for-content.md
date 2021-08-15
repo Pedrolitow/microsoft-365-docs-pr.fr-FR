@@ -10,27 +10,25 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: Utilisez l’outil eDiscovery de recherche de contenu dans le Centre de sécurité & conformité pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise.
-ms.openlocfilehash: a70c234331d1329fb80f32fb81762391a862d487
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: Utilisez l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise.
+ms.openlocfilehash: d56c2e9532611593fe41df8ac2bee4860b3920b175e50a188abbc8de67812473
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226058"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855634"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Rechercher du contenu à l’aide de l’outil de recherche de contenu
 
-Utilisez l’outil de recherche de contenu dans le Centre de sécurité & conformité pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 groupes.
-
+Utilisez l’outil de recherche de contenu dans le Centre de conformité Microsoft 365 pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 groupes.
+  
 ## <a name="search-for-content"></a>Recherche de contenu
 
 La première étape consiste à commencer à utiliser l’outil de recherche de contenu pour choisir les emplacements de contenu à rechercher et configurer une requête de mot clé pour rechercher des éléments spécifiques. Vous pouvez également laisser la requête vide et renvoyer tous les éléments aux emplacements cibles.
-
+  
 - [Créer et exécuter une](content-search.md) recherche de contenu
 
-- [Référence des fonctionnalités] pour la recherche de contenu (content-search-reference.md)
+- [Référence des fonctionnalités](content-search-reference.md) pour la recherche de contenu
 
 - [Créer des requêtes de recherche et utiliser des conditions pour](keyword-queries-and-search-conditions.md) affiner votre recherche
 
@@ -46,24 +44,24 @@ La première étape consiste à commencer à utiliser l’outil de recherche de 
 
 - [Modification en bloc](bulk-edit-content-searches.md) des emplacements de requête et de contenu pour plusieurs recherches
 
-- [Réessayer une recherche de contenu pour](retry-failed-content-search.md) résoudre une erreur d’emplacement de contenu
+- [Réessayer une recherche de contenu](retry-failed-content-search.md) pour résoudre une erreur d’emplacement de contenu
 
 - [Conserver les destinataires Bcc](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) afin de pouvoir les rechercher
 
 ## <a name="perform-actions-on-content-you-find"></a>Effectuer des actions sur le contenu que vous trouvez
 
 Une fois que vous avez exécuté une recherche et que vous l’avez affinée si nécessaire, l’étape suivante consiste à effectuer une opération avec les résultats renvoyés par la recherche. Vous pouvez exporter et télécharger les résultats sur votre ordinateur local ou, en cas d’attaque par courrier électronique sur votre organisation, vous pouvez supprimer les résultats d’une recherche dans les boîtes aux lettres des utilisateurs.
-
+  
 - [Exporter les résultats d’une recherche de contenu et](export-search-results.md) les télécharger sur votre ordinateur local
 
-- [Rechercher et supprimer des messages](search-for-and-delete-messages-in-your-organization.md) électroniques, tels que des messages qui contentent un virus, des pièces jointes dangereuses ou des messages de hameçonnage
+- [Rechercher et supprimer des messages](search-for-and-delete-messages-in-your-organization.md)électroniques, tels que des messages qui contentent un virus, des pièces jointes dangereuses ou des messages de hameçonnage
 
 - [Exporter un rapport sur](export-a-content-search-report.md) les résultats d’une recherche de contenu, sans exporter les résultats réels
 
 ## <a name="learn-more-about-content-search"></a>En savoir plus sur la recherche de contenu
 
 La recherche de contenu est facile à utiliser, mais il s’agit également d’un outil puissant. En arrière-plan, il se passe beaucoup de choses. Plus vous en sconnaissez et que vous comprenez son comportement et ses limitations, plus vous l’utiliserez pour répondre aux besoins de recherche et d’examen de votre organisation. Pour en savoir plus, approfondissez les sujets suivants :
-
+  
 - [Éléments partiellement indexés](partially-indexed-items-in-content-search.md) dans Exchange et SharePoint et comment les inclure ou les exclure lorsque vous exportez et téléchargez des résultats de recherche
 
 - [Examiner les éléments partiellement indexés et](investigating-partially-indexed-items-in-ediscovery.md) déterminer l’exposition de votre organisation à ces éléments
