@@ -1,7 +1,7 @@
 ---
 title: Nouveau Microsoft Edge
 description: Explique comment le nouveau navigateur Edge est déployé et mis à jour
-keywords: navigateur, Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: navigateur, Microsoft Manged Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -10,26 +10,26 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2bf1fab504ae77a1e66235f49333c3b123e38904
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 8ba59668f0f2571a2ce03fcbbb6eac68fb8f63f77416585d021c6fcf22387795
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869830"
 ---
 # <a name="new-microsoft-edge-app"></a>Nouvelle application Microsoft Edge’application
 
-Le nouveau [navigateur Microsoft Edge fournit](https://www.microsoft.com/edge) des performances de niveau mondial avec plus de confidentialité, plus de productivité et plus de valeur pendant que vous naviguez. Bureau géré Microsoft offre un aperçu public du déploiement du nouveau navigateur Edge dans votre environnement.
+Le nouveau [navigateur Microsoft Edge fournit](https://www.microsoft.com/edge) des performances de niveau mondial avec plus de confidentialité, plus de productivité et plus de valeur pendant que vous naviguez. Microsoft Manged Desktop offre un aperçu public du déploiement du nouveau navigateur Edge dans votre environnement.
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
-Pour migrer vos appareils Bureau géré Microsoft vers le nouveau navigateur Microsoft Edge, déposez un ticket de support technique via le portail Bureau géré Microsoft web. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de se tenir en attente.
+Pour migrer vos appareils Microsoft Manged Desktop vers le nouveau navigateur Microsoft Edge, déposez un ticket de support technique via le portail Microsoft Manged Desktop. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de conserver.
 
-Le [canal bêta](/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Bureau géré Microsoft déployera l’application selon les besoins des groupes Test et First afin que tous ces utilisateurs utilisent le canal bêta en plus du canal stable. Pour tous les autres utilisateurs qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe Utilisateurs bêta de l’espace de travail moderne **- Edge** et installez-le à partir du Portail d’entreprise
+Le [canal bêta](/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Microsoft Manged Desktop déployer l’application selon les besoins pour les groupes Test et First afin que tous ces utilisateurs utilisent le canal bêta en plus du canal stable. Pour tous les autres utilisateurs qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe Utilisateurs bêta de l’espace de travail moderne **- Edge** et installez-le à partir du Portail d’entreprise
 
 ## <a name="updates-to-microsoft-edge"></a>Mises à jour de Microsoft Edge
 
-Bureau géré Microsoft déploie le canal [stable](/deployedge/microsoft-edge-channels#stable-channel) de Microsoft Edge, qui est mis à jour automatiquement toutes les six semaines environ. Les mises à jour sur [](/deployedge/microsoft-edge-update-progressive-rollout) le canal stable sont déployées progressivement par le groupe de produits Microsoft Edge afin de garantir la meilleure expérience pour les clients. 
+Microsoft Manged Desktop déploie le canal [stable](/deployedge/microsoft-edge-channels#stable-channel) de Microsoft Edge, qui est mis à jour automatiquement environ toutes les six semaines. Les mises à jour sur [](/deployedge/microsoft-edge-update-progressive-rollout) le canal stable sont déployées progressivement par le groupe de produits Microsoft Edge afin de garantir la meilleure expérience pour les clients. 
 
 Le [canal bêta](/deployedge/microsoft-edge-channels#beta-channel) est déployé sur les appareils des groupes Test et First pour une validation représentative au sein de l’organisation. Ce canal est entièrement pris en charge et est mis à jour automatiquement avec de nouvelles fonctionnalités environ toutes les six semaines.
 
@@ -37,18 +37,18 @@ Pour vous assurer que Microsoft Edge mises à jour sont correctes, ne modifiez p
 
 
 
-## <a name="settings-managed-by-microsoft-managed-desktop"></a>Paramètres géré par Bureau géré Microsoft
+## <a name="settings-managed-by-microsoft-managed-desktop"></a>Paramètres géré par Microsoft Manged Desktop
 
-Bureau géré Microsoft a créé un ensemble de stratégies par défaut pour Microsoft Edge pour sécuriser le navigateur. Les paramètres de navigateur par défaut sont les suivants :
+Microsoft Manged Desktop a créé un ensemble de stratégies par défaut pour Microsoft Edge pour sécuriser le navigateur. Les paramètres de navigateur par défaut sont les suivants :
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge extensions
 
-La ligne de base de sécurité Microsoft Edge sur Bureau géré Microsoft définit deux stratégies pour désactiver toutes les extensions Chrome et sécuriser les utilisateurs. Pour activer et déployer des extensions dans votre environnement, voir Paramètres gérer. 
+La ligne de base de sécurité Microsoft Edge sur Microsoft Manged Desktop définit deux stratégies pour désactiver toutes les extensions Chrome et sécuriser les utilisateurs. Pour activer et déployer des extensions dans votre environnement, voir Paramètres gérer. 
 
 #### <a name="extension-installation-blocklist"></a>Liste de blocage d’installation d’extension
 **Valeur par défaut :** Tout
 
-Bureau géré Microsoft cette stratégie pour empêcher l’installation des extensions Chrome sur les points de terminaison gérés. Il existe des risques connus associés au modèle d’extension Chromium, notamment la protection contre la perte de données, la confidentialité et d’autres risques qui peuvent compromettre les appareils. 
+Microsoft Manged Desktop cette stratégie pour empêcher l’installation des extensions Chrome sur les points de terminaison gérés. Il existe des risques connus associés au modèle d’extension Chromium, notamment la protection contre la perte de données, la confidentialité et d’autres risques qui peuvent compromettre les appareils. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Autoriser les hôtes de messagerie native au niveau de l’utilisateur (installés sans autorisations d’administrateur)
 
@@ -107,9 +107,9 @@ Nous vous déconseillons d’utiliser Flash en raison des risques de sécurité 
 Le gestionnaire des mots de passe est désactivé par défaut. Si cette fonctionnalité est activée, déposez une demande de support et nos ingénieurs de service peuvent activer le paramètre dans votre environnement. 
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Mode Internet Explorer dans Microsoft Edge
-Le mode IE Microsoft Edge facilite l’utilisation de tous les sites dont votre organisation a besoin dans un seul navigateur. Il utilise le moteur de Chromium intégré pour les sites compatibles avec le moteur de rendu Chromium et utilise le moteur Trident MSHTML d’Internet Explorer 11 (IE11) pour les sites qui ne sont pas ou qui ont des dépendances sur les fonctionnalités d’Internet Explorer. [En savoir plus](/DeployEdge/edge-ie-mode) 
+Le mode Internet Explorer sur Microsoft Edge facilite l’utilisation de tous les sites dont votre organisation a besoin dans un seul navigateur. Il utilise le moteur de Chromium intégré pour les sites compatibles avec le moteur de rendu Chromium et utilise le moteur Trident MSHTML d’Internet Explorer 11 (IE11) pour les sites qui ne sont pas ou qui ont des dépendances sur les fonctionnalités d’Internet Explorer. [En savoir plus](/DeployEdge/edge-ie-mode) 
 
-Bureau géré Microsoft active le mode Internet Explorer pour vos appareils par défaut 
+Microsoft Manged Desktop active le mode Internet Explorer pour vos appareils par défaut 
 
 #### <a name="internet-explorer-mode-integration"></a>Intégration du mode Internet Explorer
 **Valeur par défaut :** Mode Internet Explorer
@@ -131,7 +131,7 @@ Lorsque cette stratégie est activée, les utilisateurs ne peuvent pas refuser l
 
 **Valeur par défaut :** NTLM, Négocier
 
-Bureau géré Microsoft ne prend pas en charge les schémas d’authentification de base ou Digest.
+Microsoft Manged Desktop ne prend pas en charge les schémas d’authentification de base ou Digest.
 
 #### <a name="automatically-import-another-browsers-data-and-settings-at-first-run"></a>Importer automatiquement les données et paramètres d’un autre navigateur lors de la première application
 
@@ -142,11 +142,11 @@ Avec cette stratégie appliquée, l’expérience de première utilisation ignor
 
 ## <a name="settings-you-manage"></a>Paramètres vous gérez
 
-Vous pouvez déployer n’importe Microsoft Edge paramètres non décrits précédemment à l’aide du profil Modèles d’administration dans Microsoft Intune. Pour plus d’informations, [voir Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune). Si vous souhaitez évaluer une stratégie qui n’est pas actuellement incluse dans les modèles d’administration Microsoft Edge dans Intune, vous pouvez utiliser des paramètres personnalisés pour les appareils Windows 10 dans Intune.
+Vous pouvez déployer tous les paramètres Microsoft Edge qui n’ont pas été précédemment décrits à l’aide du profil Modèles d’administration dans Microsoft Intune. Pour plus d’informations, [voir Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune). Si vous souhaitez évaluer une stratégie qui n’est pas actuellement incluse dans les modèles d’administration Microsoft Edge dans Intune, vous pouvez utiliser des paramètres personnalisés pour les appareils Windows 10 dans Intune.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Activation d’extensions Chrome spécifiques
 
-Le modèle d’administration offre un paramètre pour déployer des extensions Chrome particulières avec Microsoft Intune. Vous pouvez le trouver dans configuration ordinateur **> Microsoft Edge > extensions > autoriser l’installation d’extensions spécifiques.**
+Le modèle d’administration offre un paramètre pour déployer des extensions Chrome particulières avec Microsoft Intune. Vous pouvez le trouver dans les extensions > Microsoft Edge > configuration ordinateur **> autoriser l’installation d’extensions spécifiques.**
 
 ### <a name="install-extensions-silently"></a>Installer les extensions en mode silencieux
 

@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Si vous avez un abonnement Office 365 E3 mais que vous n’avez pas plus de 300 employés, envisagez de passer à Microsoft 365 Business Premium.
-ms.openlocfilehash: c1b4da07b3bf28cce1a48424ab45cde6ea54d367
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 89bf493b39250d88fcb47585d71e7dadd6600c4c3fff0658bb72e51b9ff386c5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394168"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837660"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration de Office 365 E3 vers Microsoft 365 Business Premium
 
@@ -42,7 +42,7 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 
 | Fonctionnalité    | Prise en charge dans Microsoft 365 Business Premium    | Prise en charge dans Office 365 E3 |
 |:-------|:-----|:-----|
-| **Sur site**        | | |
+| **Local**        | | |
 | Office applications<sup>1</sup>    | Microsoft 365 Apps for business    | Microsoft 365 Apps for enterprise |
 | **Applications de productivité cloud**        | | |
 | Exchange Online et Outlook    | Limite de stockage de 50 Go par boîte aux lettres et nombre Archivage Exchange Online    | Limite de stockage de 100 Go par boîte aux lettres et nombre Archivage Exchange Online |
@@ -127,7 +127,7 @@ Après avoir migré vers Microsoft 365 Business Premium, vous avez Defender for 
 
 Pour commencer à utiliser des étiquettes de sensibilité, voir [Vue d’ensemble](../compliance/sensitivity-labels.md) des étiquettes de sensibilité et créer et gérer la vidéo sur [les étiquettes de](../business-video/create-sensitivity-labels.md) sensibilité.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Modifier les plans manuellement](../commerce/subscriptions/change-plans-manually.md) (article)\
 [Mettre à niveau Windows appareils vers Windows 10 Professionnel](upgrade-to-windows-pro-creators-update.md) (vidéo)\

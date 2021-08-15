@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs de leur organisation.
 ms.date: 03/26/2021
-ms.openlocfilehash: a4ac4b79a9a73f80fc22e6f14696e25925df9faf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3ab07fac52a55518f2d8259b35f1de808bb544685ef4c463ac9c5e9d3706a973
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536093"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852234"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gérer les achats libre-service (administrateur)
 
@@ -38,19 +38,19 @@ Vous pouvez également contrôler si les utilisateurs de votre organisation peuv
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 2. Sous **l’onglet** Produits, sélectionnez l’icône de filtre, puis sélectionnez **Libre-service.**
@@ -121,8 +121,8 @@ Vous pouvez attribuer des licences existantes ou acheter des abonnements supplé
 ::: moniker-end
 
 2. Recherchez et choisissez le produit que vous souhaitez acheter, puis choisissez **Acheter.**
-3. Effectuer les étapes restantes pour effectuer votre achat.
-4. Suivez les étapes de l’affichage qui dispose de licences pour un abonnement acheté en [libre-service](#view-who-has-licenses-for-a-self-service-purchase-subscription) pour exporter une liste d’utilisateurs à référencer à l’étape suivante.
+3. Pour terminer votre achat, complétez les étapes restantes.
+4. Suivez les étapes de [l’affichage qui](#view-who-has-licenses-for-a-self-service-purchase-subscription) dispose de licences pour un abonnement acheté en libre-service pour exporter une liste d’utilisateurs à référencer à l’étape suivante.
 5. Attribuez des licences à toutes les personnes qui disposent d’une licence dans l’autre abonnement. Pour obtenir la procédure complète, voir [Attribuer des licences aux utilisateurs.](../../admin/manage/assign-licenses-to-users.md)
 6. Contactez la personne qui a acheté l’abonnement à l’achat en libre-service et demandez-lui de [l’annuler.](manage-self-service-purchases-users.md#cancel-a-subscription)
 
@@ -142,7 +142,7 @@ Lorsque vous déplacez des utilisateurs vers un autre abonnement, l’ancien abo
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
@@ -161,7 +161,7 @@ Lorsque vous déplacez des utilisateurs vers un autre abonnement, l’ancien abo
 2. Sous **l’onglet** Produits, sélectionnez l’icône de filtre, puis sélectionnez **Libre-service.**
 3. Sélectionnez l’abonnement à prendre en compte.
 4. Dans la page détails de l’abonnement, dans la section Abonnements et **paramètres,** sélectionnez **Prendre le contrôle de cet abonnement.**
-5. Dans le volet droit, sélectionnez **Déplacer les utilisateurs.**
+5. Dans le volet droit, sélectionnez **Déplacer des utilisateurs.**
 6. Sélectionnez le produit vers qui vous souhaitez déplacer les utilisateurs, puis **sélectionnez Déplacer les utilisateurs.**
 7. Dans la **zone Déplacer les utilisateurs vers,** **sélectionnez Déplacer les utilisateurs.** Le processus de déplacement peut prendre plusieurs minutes. Ne fermez pas votre navigateur pendant l’opération.
 8. Lorsque le processus de déplacement est terminé, fermez le **volet Déplacer terminé.**
@@ -173,7 +173,7 @@ Lorsque vous choisissez d’annuler un abonnement d’achat en libre-service, le
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
@@ -198,7 +198,7 @@ Lorsque vous choisissez d’annuler un abonnement d’achat en libre-service, le
 8. Fermez le volet droit.
 9. Sur la page des détails de l’abonnement, **l’état de l’abonnement** s’affiche **comme supprimé.**
 
-## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
+## <a name="need-help-contact-us"></a>Besoin d'aide ? Contactez-nous.
 
 Pour les questions courantes sur les achats en libre-service, consultez la FAQ sur les [achats en libre-service.](self-service-purchase-faq.yml)
 

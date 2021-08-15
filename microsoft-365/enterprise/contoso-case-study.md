@@ -14,16 +14,16 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment une organisation globale fictive mais représentative a adopté Microsoft 365 entreprise.
-ms.openlocfilehash: e14c2747837ed91a63e7609ce46307b0f38aa758
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: deef90fc670c0baca49d79ea6c285cd6fb2ee4f9151d83b6a336e0e7b81b0ff5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830274"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 entreprise pour Contoso Corporation
 
-Microsoft 365 entreprise est l’offre cloud microsoft de premier niveau qui combine des applications et des services de productivité locaux et basés sur le cloud avec des fonctionnalités Windows 10 Entreprise de sécurité avancées. Il s’agit d’une solution complète et intelligente qui permet à tout le monde de collaborer de façon créative et sécurisée.
+Microsoft 365 entreprise est l’offre cloud de premier niveau de Microsoft qui combine des applications et services de productivité locaux et basés sur le cloud avec des fonctionnalités Windows 10 Entreprise de sécurité avancées. Il s’agit d’une solution complète et intelligente qui permet à tout le monde de collaborer de façon créative et sécurisée.
 
 Contoso Corporation est un conglomérat de production international fictif mais représentatif dont le siège social est à Paris. L’entreprise a déployé Microsoft 365 entreprise et a pris des décisions de conception majeures et des détails d’implémentation pour la mise en réseau, l’identité, les Windows 10 Entreprise, les Applications Microsoft 365 pour les grandes entreprises, la gestion des appareils mobiles, la protection des informations et la sécurité.
 
@@ -45,7 +45,7 @@ Reportez-vous aux articles suivants pour plus d’informations :
 
 - [Identité](contoso-identity.md)
 
-  La solution d’identité Contoso dans le cloud tire parti de la forêt des services de domaine Active Directory (AD DS) sur site de l’entreprise. Il inclut l’authentification fédérée avec leurs fournisseurs d’identité tiers et fiables existants.
+  La solution d’identité Contoso dans le cloud exploite la forêt des services de domaine Active Directory (AD DS) sur site de l’entreprise. Il inclut l’authentification fédérée avec leurs fournisseurs d’identité tiers et de confiance existants.
 
 - [Windows 10 Entreprise](contoso-win10.md)
 

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment faire passer votre entreprise de Microsoft 365 Business Premium à Microsoft 365 E3.
-ms.openlocfilehash: 6502d79dbb283db37b00e4fccf89b15ab4291ce5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: d3030518f7f4467c7b2e16897dc7b100764d9d5a36c50169b58f1adcd7bef209
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837628"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migration de Microsoft 365 Business Premium vers Microsoft 365 E3
 
@@ -48,9 +48,9 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Mi
 
 | Fonctionnalité    | Prise en charge dans Microsoft 365 Business Premium    | Prise en charge dans Microsoft 365 E3 |
 |:-------|:-----|:-----|
-| **Sur site**        | | |
-| Windows 10    | Windows 10 Business  |     Windows 10 Entreprise E3|
-| Office applications*    | [Microsoft 365 Apps for business](#office-365-business)    | Applications Microsoft 365 pour les grandes entreprises |
+| **Local**        | | |
+| Windows 10    | Windows 10 Business  |     Windows 10 Entreprise E3|
+| Office applications*    | [Microsoft 365 Apps for business](#office-365-business)    | Applications Microsoft 365 for entreprise |
 | **Applications de productivité cloud**        | | |
 | Exchange Online et Outlook    | Limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | Limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité |
 | Teams    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Microsoft 365 E3](../media/check-mark.png) |
@@ -129,7 +129,7 @@ Windows 10 Entreprise E3 inclut également la gestion d’entreprise de l’isol
 
 Vous n’avez pas besoin d’apporter des modifications à votre configuration Intune actuelle avant la migration, ce qui inclut les appareils inscrits, ainsi que les paramètres des appareils et des applications.
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Microsoft 365 Business Premium inclut Windows 10 Business, que vous pouvez installer avec Windows AutoPilot. Lorsque vous migrez vers Microsoft 365 E3, chaque licence utilisateur inclut Windows 10 Entreprise E3, que vous pouvez également installer avec Windows Autopilot.
 

@@ -10,18 +10,18 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3f77074aa11e9dc82c8fac9763fdebfd2fc49d99
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 480106eacbcc809007ff1aa45d776bb89beaf78cb7aaeefce41df33dfc000af9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869940"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Préparer des ressources d’impression pour le Bureau géré Microsoft
 
 Lorsque vous êtes prêt à vous inscrire à Microsoft Manged Desktop, vous devez évaluer vos besoins d’impression et déterminer l’approche qui convient à votre environnement. Vous avez trois options :
 
-- Déployez la solution d’impression universelle Microsoft pour faciliter la découverte des imprimantes Microsoft Manged Desktop appareils. Pour plus d’informations, voir [Qu’est-ce que l’impression universelle](/universal-print/fundamentals/universal-print-whatis).
+- Déployez la solution Impression universelle Microsoft pour faciliter la découverte des imprimantes Microsoft Manged Desktop appareils. Pour plus d’informations, voir [Qu’est-ce que l’impression universelle](/universal-print/fundamentals/universal-print-whatis).
 - Déployez les imprimantes directement à l’aide d’un script PowerShell personnalisé. Suivez les étapes de la section Configurer [les imprimantes locales.](#set-up-local-printers)
 - Utilisez une solution d’impression cloud non Microsoft compatible avec Windows 10 appareils joints à un domaine Azure Active Directory microsoft. La solution doit répondre aux exigences logicielles requises pour Microsoft Manged Desktop. Pour plus d’informations, [voir Microsoft Manged Desktop’application requise.](../service-description/mmd-app-requirements.md)
  

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Résumé : Configurez les contrôleurs de domaine et le serveur de synchronisation d’annuaires pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: 751d332ce5f5606fe5f833182f002a1f4b6f29ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 659b70b9f5d81fe1cc692701987fb0736c821a880e1f8e64b27b197ff26b8127
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909809"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830245"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Authentification fédérée haute disponibilité, phase 2 : Configurer les contrôleurs de domaine
 
@@ -150,7 +150,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 Utilisez le client Bureau à distance de votre choix et créez une connexion de Bureau à distance pour la machine virtuelle du premier contrôleur de domaine. Utilisez son nom d’ordinateur ou son nom DNS intranet et les informations d’identification du compte Administrateur local.
   
-Ensuite, ajoutez le disque de données supplémentaire au premier contrôleur de domaine avec cette commande à partir d’une invite de commandes Windows PowerShell sur la machine virtuelle du premier contrôleur **de domaine**:
+Ensuite, ajoutez le disque de données supplémentaire au premier contrôleur de domaine avec cette commande à partir d’une invite de commandes Windows PowerShell sur la première machine virtuelle du contrôleur **de domaine**:
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -232,7 +232,7 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 Utilisez le client Bureau à distance de votre choix et créez une connexion bureau à distance à la machine virtuelle du serveur de synchronisation d’annuaires. Utilisez son nom d'ordinateur ou son nom DNS intranet et les informations d'identification du compte Administrateur local.
   
-Ensuite, associez-le au domaine AD DS approprié avec ces commandes à l’invite Windows PowerShell suivante.
+Ensuite, joignez-le au domaine AD DS approprié avec ces commandes à l’invite Windows PowerShell suivante.
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -257,4 +257,4 @@ Utilisez [la phase 3 : Configurez les serveurs AD FS](high-availability-federate
   
 [Identité fédérée pour votre environnement Microsoft 365 dev/test](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)

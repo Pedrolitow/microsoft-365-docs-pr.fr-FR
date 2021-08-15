@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment configurer et utiliser un connecteur dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de Cisco Jabber sur PostgreSQL Microsoft 365.
-ms.openlocfilehash: 7fca60df9d2c0378579d7700fb3dae9bbcdf619d
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: fc73fe178c59a50da81dd6e17ccf63e2e8b655419e24d0f17adcfffabc9449a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054795"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861054"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>Configurer un connecteur pour archiver cisco Jabber sur les données PostgreSQL
 
@@ -46,7 +46,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Créez un compte Merge1 pour les connecteurs Microsoft. Pour ce faire, contactez le support [technique Veritas.](https://www.veritas.com/content/support/en_US) Vous devez vous inscrire à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- L’utilisateur qui crée le connecteur Cisco Jabber sur PostgreSQL à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- L’utilisateur qui crée le connecteur Cisco Jabber sur PostgreSQL à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 ## <a name="step-1-set-up-the-cisco-jabber-on-postgresql-connector"></a>Étape 1 : Configurer Cisco Jabber sur le connecteur PostgreSQL
 
@@ -70,7 +70,7 @@ Une fois que vous avez **cliqué sur &,** la **page** Mappage de l’utilisateur
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : Masons les utilisateurs et terminez la configuration du connecteur
 
-Pour ma cartographier les utilisateurs et terminer la configuration du connecteur dans le Centre de conformité Microsoft 365, suivez les étapes suivantes :
+Pour maîtr les utilisateurs et terminer la configuration du connecteur dans Centre de conformité Microsoft 365, suivez les étapes suivantes :
 
 1. Dans la page **Mappage des utilisateurs De Cisco Jabber sur PostgreSQL Microsoft 365 utilisateurs,** activez le mappage automatique des utilisateurs. Les éléments Cisco Jabber on PostgreSQL incluent une propriété appelée *Email*, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
@@ -86,6 +86,6 @@ Après avoir créé le connecteur Cisco Jabber sur PostgreSQL, vous pouvez affic
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

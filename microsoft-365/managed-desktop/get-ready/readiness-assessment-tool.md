@@ -10,16 +10,16 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: caf9274284548a179e088131930ae832c098b521
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7138933c1ef3b849374cda16f5072f408877dd66910808c0ce771fcd2c317d0c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579397"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869854"
 ---
 # <a name="readiness-assessment-tools"></a>Outils d’évaluation de la préparation
 
-Pour une expérience la plus fluide possible lorsque vous vous inscrivez à Bureau géré Microsoft, il existe des paramètres et d’autres paramètres que vous devez définir à l’avance, ainsi que certaines configurations requises pour l’appareil et le réseau. Un outil, accessible via le portail Bureau géré Microsoft’administration, vérifie les paramètres liés à la gestion. Un autre outil, téléchargeable, vérifie les configurations réseau et les configurations requises pour chaque appareil. Vous pouvez utiliser ces outils pour vérifier ces paramètres et recevoir des étapes détaillées pour résoudre les problèmes.
+Pour une expérience la plus fluide possible lorsque vous vous inscrivez à Microsoft Manged Desktop, il existe des paramètres et d’autres paramètres que vous devez définir à l’avance, ainsi que certaines configurations requises pour l’appareil et le réseau. Un outil, accessible via le portail Microsoft Manged Desktop’administration, vérifie les paramètres liés à la gestion. Un autre outil, téléchargeable, vérifie les configurations réseau et les configurations requises pour chaque appareil. Vous pouvez utiliser ces outils pour vérifier ces paramètres et recevoir des étapes détaillées pour résoudre les problèmes.
 
 ## <a name="downloadable-readiness-assessment-checker-for-devices-and-network"></a>Téléchargeable readiness assessment checker for devices and network
 
@@ -27,7 +27,7 @@ Pour plus d’informations sur l’utilisation de l’outil de vérification de 
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Outil d’évaluation de la préparation en ligne pour les paramètres de gestion
 
-[L’outil](https://aka.ms/mmdart) en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec Bureau géré Microsoft. Bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Après 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
+L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec Microsoft Manged Desktop. [](https://aka.ms/mmdart) Microsoft Manged Desktop conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Après 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
 
 Toute personne ayant au moins le rôle Lecteur global ou Administrateur Intune pourra exécuter cet outil, mais deux des vérifications[(](readiness-assessment-fix.md#conditional-access-policies) les stratégies d’accès conditionnel et l’authentification [multifacteur](readiness-assessment-fix.md#multifactor-authentication) nécessitent des autorisations supplémentaires.
  
@@ -37,22 +37,22 @@ L’outil d’évaluation vérifie les éléments ci-après :
 
 |Chèque  |Description  |
 |---------|---------|
-|Profil Autopilot Deployment     | Vérifie que l’affectation du profil Autopilot Deployment ne s’applique pas à tous les appareils (le profil ne doit être affecté à aucun Bureau géré Microsoft appareils.)        |
+|Profil autopilot deployment     | Vérifie que l’affectation du profil Autopilot Deployment ne s’applique pas à tous les appareils (le profil ne doit être affecté à aucun Microsoft Manged Desktop appareils.)        |
 |Connecteurs de certificat     | Vérifie l’état des connecteurs de certificat pour s’assurer qu’ils sont actifs   |
-|Accès conditionnel     | Vérifie que les stratégies d’accès conditionnel ne  sont pas affectées à tous les utilisateurs (les stratégies d’accès conditionnel ne doivent pas être affectées Bureau géré Microsoft comptes de service.)    |
-|Stratégies de conformité des appareils     | Vérifie que les stratégies de conformité Intune  ne sont pas affectées à tous les utilisateurs (les stratégies ne doivent pas être affectées à Bureau géré Microsoft appareils.)    |
-|Profils de configuration d’appareil     | Confirme que les profils de configuration ne sont pas  affectés à tous les utilisateurs ou à tous les appareils (les profils de configuration ne doivent pas être affectés à Bureau géré Microsoft périphériques.)     |
+|Accès conditionnel     | Vérifie que les stratégies d’accès conditionnel ne  sont pas affectées à tous les utilisateurs (les stratégies d’accès conditionnel ne doivent pas être affectées Microsoft Manged Desktop comptes de service.)    |
+|Stratégies de conformité des appareils     | Vérifie que les stratégies de conformité Intune  ne sont pas affectées à tous les utilisateurs (les stratégies ne doivent pas être affectées à Microsoft Manged Desktop appareils.)    |
+|Profils de configuration d’appareil     | Confirme que les profils de configuration ne sont pas  affectés à tous les utilisateurs ou à tous les appareils (les profils de configuration ne doivent pas être affectés à Microsoft Manged Desktop périphériques.)     |
 |Restrictions de type d’appareil     | Vérifie que Windows 10 appareils de votre organisation sont autorisés à s’inscrire dans Intune        |
 |Page État de l’inscription     | Confirme que la page État de l’inscription n’est pas activée      |
 |Inscription à Intune     | Vérifie que les Windows 10 de votre organisation Azure AD sont automatiquement inscrits dans Intune         |
 |Microsoft Store pour Entreprises     | Confirme que la Microsoft Store pour Entreprises est activée et synchronisée avec Intune        |
-|Authentification multifacteur | Vérifie que l’authentification multifacteur n’est pas appliquée Bureau géré Microsoft comptes de service.
-|Scripts PowerShell     | Vérifie que les scripts Windows PowerShell ne *sont* pas affectés d’une manière qui ciblerait les Bureau géré Microsoft périphériques    |
-|Région     | Vérifie que votre région est prise en charge par Bureau géré Microsoft        |
-|Bases de référence de sécurité     | Vérifie que le profil de base de sécurité ne cible  pas tous les utilisateurs ou tous les appareils (les stratégies de base de sécurité ne doivent pas cibler Bureau géré Microsoft appareils.)       |
-|Windows applications     | Passer en revue les applications que vous souhaitez affecter à Bureau géré Microsoft appareils      |
-|Windows Hello Entreprise     | Vérifie que Windows Hello Entreprise est activé        |
-|Windows 10 sonnerie de mise à jour     | Vérifie que la stratégie « anneau de mise à jour Windows 10 » d’Intune  ne cible pas tous les utilisateurs ou tous les appareils (la stratégie ne doit pas cibler Bureau géré Microsoft périphériques.)     |
+|Authentification multifacteur | Vérifie que l’authentification multifacteur n’est pas appliquée Microsoft Manged Desktop comptes de service.
+|Scripts PowerShell     | Vérifie que Windows PowerShell scripts de contrôle ne *sont* pas affectés d’une manière qui ciblerait les Microsoft Manged Desktop périphériques    |
+|Région     | Vérifie que votre région est prise en charge par Microsoft Manged Desktop        |
+|Bases de référence de sécurité     | Vérifie que le profil de base de sécurité ne cible  pas tous les utilisateurs ou tous les appareils (les stratégies de base de sécurité ne doivent pas cibler Microsoft Manged Desktop appareils.)       |
+|Windows applications     | Passer en revue les applications que vous souhaitez affecter à Microsoft Manged Desktop appareils      |
+|Windows Hello Entreprise     | Vérifie que Windows Hello entreprise est activé        |
+|Windows 10 de mise à jour     | Vérifie que la stratégie « anneau de mise à jour Windows 10 » d’Intune ne cible pas tous les utilisateurs ou tous les appareils (la stratégie ne doit pas cibler Microsoft Manged Desktop périphériques.)      |
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory paramètres
@@ -62,8 +62,8 @@ L’outil d’évaluation vérifie les éléments ci-après :
 |Abonnements « ad hoc » pour l’itinérance Enterprise’état     | Indique comment vérifier un paramètre qui (s’il est « false ») risque d’empêcher Enterprise’itinérance d’état de fonctionner correctement  |
 |Itinérance du statut Entreprise     | Indique comment vérifier que l’itinérance Enterprise’état est activée       |
 |Licences     | Vérifie que vous avez obtenu les [licences nécessaires](prerequisites.md#more-about-licenses)         |
-|Authentification multifacteur     | Vérifie que l’authentification multifacteur n’est pas appliquée à tous les utilisateurs (l’authentification multifacteur ne doit pas être appliquée accidentellement Bureau géré Microsoft comptes de service.)|
-|Noms de compte de sécurité   | Vérifie qu’aucun nom d’utilisateur n’entre en conflit avec ceux Bureau géré Microsoft réserves pour son propre usage        |
+|Authentification multifacteur     | Vérifie que l’authentification multifacteur n’est pas appliquée à tous les utilisateurs (l’authentification multifacteur ne doit pas être appliquée accidentellement Microsoft Manged Desktop comptes de service.)|
+|Noms de compte de sécurité   | Vérifie qu’aucun nom d’utilisateur n’entre en conflit avec ceux Microsoft Manged Desktop réserves pour son propre usage        |
 |Rôles d’administrateur de sécurité     | Confirme que les utilisateurs ayant des rôles lecteur sécurité, Opérateur de sécurité ou Lecteur global ont été affectés à ces rôles dans Microsoft Defender for Endpoint         |
 |Paramètres de sécurité par défaut | Vérifie si les paramètres de sécurité par défaut de votre organisation Azure AD sont activés Azure Active Directory |
 |Réinitialisation du mot de passe en libre-service     | Confirme que la réinitialisation du mot de passe en libre-service est activée        |
@@ -89,7 +89,7 @@ Pour chaque vérification, l’outil signalera l’un des quatre résultats poss
 
 ## <a name="after-enrollment"></a>Après l’inscription
 
-Une fois que vous avez terminé l’inscription Bureau géré Microsoft, n’oubliez pas de revenir en arrière et d’ajuster certains paramètres Intune et Azure AD. Pour plus d’informations, voir [Ajuster les paramètres après l’inscription.](../get-started/conditional-access.md)
+Une fois que vous avez terminé l’inscription dans Microsoft Manged Desktop, n’oubliez pas de revenir en arrière et d’ajuster certains paramètres Intune et Azure AD. Pour plus d’informations, voir [Ajuster les paramètres après l’inscription.](../get-started/conditional-access.md)
 
 ## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 124abd254b8e8155ad60d400fede3419e754c83d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3ba4c4dbb2b5b8315fb09023b9fa0c0e29c4fd1c3b3f95da0328522a7d839ffc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649819"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884258"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Protéger votre organisation contre les menaces web
 
@@ -50,7 +50,7 @@ Pour activer la protection réseau sur vos appareils :
 > [!NOTE]
 > Si vous définissez la protection réseau sur **Audit uniquement,** le blocage sera indisponible. En outre, vous pourrez détecter et enregistrer les tentatives d’accès à des sites web malveillants et indésirables Microsoft Edge uniquement.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Vue d’ensemble de la protection web](web-protection-overview.md)
 - [Protection contre les menaces web](web-threat-protection.md)

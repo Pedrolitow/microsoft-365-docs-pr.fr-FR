@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez ce Microsoft 365 Business Premium et obtenez des instructions pas à pas pour vous inscrire à Microsoft 365 Business Premium.
-ms.openlocfilehash: 18f4cea19225f053bef6ac8838275755b8a1f7ab
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5a294f85aff688f247e918c82f22e6b445219e130878a472399a42cd2cd3e49d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244753"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837552"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>S’inscrire à Microsoft 365 Business Premium
 
@@ -42,7 +42,7 @@ Il existe trois façons d’Microsoft 365 Business Premium :
 - **Pour les partenaires Microsoft**: si vous êtes un partenaire, consultez Obtenir des Microsoft 365 Business Premium à partir de [l’Microsoft Partner Center.](get-microsoft-365-business.md)
 - **Obtenir de l’aide dans un Microsoft Store**: rendez-vous sur un [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2109652). Les magasins Microsoft peuvent vous aider à répondre à vos questions sur les plans, à acheter un plan adapté aux besoins de votre entreprise et à effectuer votre configuration.
 
-**Vous avez besoin d’un autre modèle ?** Vous pouvez :
+**Vous avez besoin d’un autre modèle ?** Vous pouvez :
 - [Mettre à niveau Office 365 plan de Microsoft 365 Business Premium](migrate-to-microsoft-365-business.md).
 - [Obtenez une version d’Microsoft 365 Business Premium](https://go.microsoft.com/fwlink/p/?linkid=2102309) gratuite pendant un mois.
 - [Inscrivez-vous Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkID=510935) si vous avez besoin d’un plan avec moins de fonctionnalités. Découvrez ce que chaque plan d’entreprise inclut [dans products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397).

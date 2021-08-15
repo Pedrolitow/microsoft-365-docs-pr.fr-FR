@@ -15,19 +15,19 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 809f4573c91f7f1882693cbd8c63d88b06b55c67
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: badf2f18f85b2f8776dec4b119e58ad3839c9074db17f24083ca648c8c24e730
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884546"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Gérer les mises à jour pour les appareils mobiles et les machines virtuelles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -94,7 +94,7 @@ Vous pouvez configurer Antivirus Microsoft Defender pour télécharger les mises
 
 3.  Sélectionnez **stratégies** **puis modèles d’administration.**
 
-4.  Développez l’arborescence **Windows composants** Antivirus Microsoft Defender mises à jour des  >    >  **signatures,**  puis définissez Autoriser les mises à jour d’informations de sécurité lorsque vous exécutez une batterie sur **Désactivé.** Puis sélectionnez **OK**. 
+4.  Développez l’arborescence **Windows composants** Antivirus Microsoft Defender mises à jour des  >    >  **signatures,**  puis définissez Autoriser les mises à jour d’informations de sécurité lorsque vous exécutez l’alimentation sur batterie **sur Désactivé.** Puis sélectionnez **OK**. 
 
 Cette action empêche le téléchargement des mises à jour de protection lorsque le PC est sur batterie.
 

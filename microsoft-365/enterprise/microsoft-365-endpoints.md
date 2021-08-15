@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Pour les adresses IP de destination et les URL pour le trafic Microsoft 365, utilisez cette liste d’articles pour les points de terminaison Internet des différents Microsoft 365 nuages.
-ms.openlocfilehash: 159c8e7dea6fe241ab44b283b1193397c3ad70e3
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 3ffe00e1b578f135829f8c1d621e413dd6f00848041087222a0af4518e79a15f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830196"
 ---
 # <a name="microsoft-365-endpoints"></a>Points de terminaison Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "49787902"
 
 Les points de terminaison sont l’ensemble des adresses IP de destination, des noms de domaine DNS et des URL pour Microsoft 365 trafic sur Internet. 
 
-Pour optimiser les performances pour Microsoft 365 services basés sur le cloud, ces points de terminaison ont besoin d’une gestion spéciale par vos navigateurs clients et les appareils de votre réseau edge. Ces appareils incluent les pare-feu, les dispositifs SSL Break and Inspect et d’inspection des paquets, ainsi que les systèmes de protection contre la perte de données.
+Pour optimiser les performances pour Microsoft 365 services basés sur le cloud, ces points de terminaison ont besoin d’une gestion spéciale par vos navigateurs clients et les appareils de votre réseau edge. Ces appareils incluent les pare-feux, les dispositifs SSL Break and Inspect et d’inspection des paquets, ainsi que les systèmes de protection contre la perte de données.
 
 Pour [plus d’Microsoft 365, voir](managing-office-365-endpoints.md) Gestion des points de terminaison.
 

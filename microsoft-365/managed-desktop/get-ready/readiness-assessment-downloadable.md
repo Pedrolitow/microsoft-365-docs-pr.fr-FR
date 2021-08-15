@@ -10,16 +10,16 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: eec6bdff2e494e0f55b06cb581c5775d3ffeb9e3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8ddc078e2d62881706c4e78d269268373c7e5fef9f25df3980ff411517f2b056
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581033"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869918"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>Vérifier la préparation d’évaluation téléchargeable
 
-Pour fonctionner avec Bureau géré Microsoft, les appareils doivent répondre à certaines exigences en matière de matériel et de paramètres. En outre, chaque appareil doit être en mesure d’atteindre les points de terminaison clés. Téléchargez et exécutez cet outil pour obtenir un rapport HTML, afficher les résultats, puis prendre des mesures. Vous devrez télécharger l’outil et les fichiers de prise en charge, puis l’exécuter manuellement sur chaque appareil que vous souhaitez inscrire dans Bureau géré Microsoft.
+Pour fonctionner avec Microsoft Manged Desktop, les appareils doivent répondre à certaines exigences en matière de matériel et de paramètres. En outre, chaque appareil doit être en mesure d’atteindre les points de terminaison clés. Téléchargez et exécutez cet outil pour obtenir un rapport HTML, afficher les résultats, puis prendre des mesures. Vous devrez télécharger l’outil et les fichiers de prise en charge, puis l’exécuter manuellement sur chaque appareil que vous souhaitez inscrire dans Microsoft Manged Desktop.
 
 Pour chaque vérification, l’outil signalera l’un des trois résultats possibles :
 
@@ -42,7 +42,7 @@ Téléchargez le .zip à partir https://aka.ms/mmddratoolv0 de .
 1. Copiez le fichier .zip téléchargé sur chaque appareil que vous souhaitez vérifier.
 2. Extrayez tous les fichiers dans le téléchargement compressé.
 3. Exécutez **Microsoft.MMD.DeviceReadinessAssessmentTool.exe**.
-4. Lorsque l’invite de contrôle d’accès utilisateur s’affiche, **sélectionnez Oui**. L’outil s’exécute et ouvre un rapport dans votre navigateur par défaut.
+4. Lorsque l’invite de contrôle d’accès utilisateur s’affiche, **sélectionnez Oui.** L’outil s’exécute et ouvre un rapport dans votre navigateur par défaut.
 
 Vous pouvez également télécharger et extraire l’archive .zip  à un emplacement partagé, accéder auxMicrosoft.MMD.DeviceReadinessAssessmentTool.exeà partir de chaque appareil, puis l’exécuter localement.
 
@@ -53,13 +53,13 @@ L’outil téléchargeable vérifie les éléments liés à l’appareil et au r
 
 ### <a name="hardware"></a>Matériel
 
-Les appareils doivent répondre à des exigences matérielles spécifiques pour fonctionner avec Bureau géré Microsoft. Actuellement, seuls des [appareils approuvés spécifiques](../service-description/device-list.md) sont autorisés à s’inscrire. 
+Les appareils doivent répondre à des exigences matérielles spécifiques pour fonctionner avec Microsoft Manged Desktop. Actuellement, seuls des [appareils approuvés spécifiques](../service-description/device-list.md) sont autorisés à s’inscrire. 
 
-Si votre appareil échoue à l’une des vérifications, il n’est pas compatible avec Bureau géré Microsoft.
+Si votre appareil échoue à l’une des vérifications, il n’est pas compatible avec Microsoft Manged Desktop.
 
 ### <a name="network-endpoints"></a>Points de terminaison réseau
 
-Les appareils sont en grande partie en mesure d’atteindre plusieurs [points de terminaison clés](network.md) pour fonctionner avec Bureau géré Microsoft.
+Les appareils sont en grande partie en mesure d’atteindre plusieurs [points de terminaison clés](network.md) pour fonctionner avec Microsoft Manged Desktop.
 
 Si l’outil **signale** un résultat non prêt, consultez le rapport détaillé pour savoir quels points de terminaison n’ont pas été accessibles. Ajustez ensuite votre pare-feu ou d’autres paramètres réseau pour vous assurer que ces points de terminaison sont accessibles.
 
@@ -67,25 +67,25 @@ Si l’outil **signale** un résultat non prêt, consultez le rapport détaillé
 
 #### <a name="enterprise-wi-fi-profiles"></a>Enterprise wi-fi
 
-Un **résultat d’avis** signifie que vous utilisez certains profils Wi-Fi qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir Déployer des certificats et profil [Wi-Fi/VPN.](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)
+Un **résultat d’avis** signifie que vous utilisez certains profils wi-fi qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir Déployer des certificats et profil [Wi-Fi/VPN.](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)
 
 #### <a name="lan-profiles"></a>Profils LAN
 
-Un **résultat d’avis** signifie que vous avez des lans qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, [voir Préparer les certificats et les profils réseau pour Bureau géré Microsoft](certs-wifi-lan.md).
+Un **résultat d’avis** signifie que vous avez des lans qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 #### <a name="vpn-profiles"></a>Profils VPN
 
-Un **résultat d’avis** signifie que vous utilisez un réseau privé virtuel (VPN). Créez un profil VPN qui déploie des certificats intégrés à Microsoft Intune. Pour plus d’informations, [voir Préparer les certificats et les profils réseau pour Bureau géré Microsoft](certs-wifi-lan.md).
+Un **résultat d’avis** signifie que vous utilisez un réseau privé virtuel (VPN). Créez un profil VPN qui déploie des certificats intégrés à Microsoft Intune. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 #### <a name="mapped-drives"></a>Lecteurs mappés
 
-Un **résultat d’avis** signifie que vous avez des lecteurs mappés, ce qui n’est pas recommandé. Pour plus d’informations, voir [Préparer les lecteurs Bureau géré Microsoft](mapped-drives.md).
+Un **résultat d’avis** signifie que vous avez des lecteurs mappés, ce qui n’est pas recommandé. Pour plus d’informations, voir [Préparer les lecteurs Microsoft Manged Desktop](mapped-drives.md).
 
 #### <a name="print-queues"></a>Imprimer les files d’attente
 
-Un **résultat d’avis** signifie que vous avez des files d’attente d’impression en attente, ce qui n’est pas recommandé. Une solution consiste à utiliser l’impression cloud. Pour plus d’informations, voir [Préparer les ressources d’impression Bureau géré Microsoft](printing.md).
+Un **résultat d’avis** signifie que vous avez des files d’attente d’impression en attente, ce qui n’est pas recommandé. Une solution consiste à utiliser l’impression cloud. Pour plus d’informations, voir [Préparer les ressources d’impression Microsoft Manged Desktop](printing.md).
 
 #### <a name="proxies"></a>Proxies
 
-Un **résultat d’avis** signifie que vous avez un serveur proxy en cours d’utilisation. Pour plus d’informations, [voir Configuration réseau pour Bureau géré Microsoft](network.md).
+Un **résultat d’avis** signifie que vous avez un serveur proxy en cours d’utilisation. Pour plus d’informations, [voir Configuration réseau pour Microsoft Manged Desktop](network.md).
 

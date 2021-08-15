@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: c0343117251d169d0284c2fdb3fc3b8bca5ff0df
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: c85129d13b836b8eab8b15fa5fcbbc3813d908e2c49f11ca70d887b283944370
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362557"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860873"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 

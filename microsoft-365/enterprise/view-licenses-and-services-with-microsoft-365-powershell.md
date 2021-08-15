@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explique comment utiliser PowerShell pour afficher des informations sur les plans de gestion des licences, les services et les licences disponibles dans Microsoft 365 organisation.
-ms.openlocfilehash: 08f48301001ee6a40318428f3310eab8b0d0a351
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: faf7589cacee5d945ef136c602dd1f3f18ac92dba5e361adc1a9e43580afe24f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830142"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Afficher Microsoft 365 licences et services avec PowerShell
 
@@ -121,7 +121,7 @@ Get-MsolAccountSku
 
 Les résultats contiennent les informations suivantes :
   
-- **AccountSkuId :** Affichez les plans de gestion des licences disponibles pour votre organisation à l’aide de la `<CompanyName>:<LicensingPlan>` syntaxe.  _\<CompanyName>_ est la valeur que vous avez fournie lorsque vous vous êtes inscrit à Microsoft 365 et est unique pour votre organisation. La _\<LicensingPlan>_ valeur est la même pour tout le monde. Par exemple, dans la valeur , le nom de la société est et le nom du plan de gestion des licences, qui est le nom du système `litwareinc:ENTERPRISEPACK` `litwareinc` Office 365 Entreprise `ENTERPRISEPACK` E3.
+- **AccountSkuId :** Affichez les plans de gestion des licences disponibles pour votre organisation à l’aide de la syntaxe `<CompanyName>:<LicensingPlan>` .  _\<CompanyName>_ est la valeur que vous avez fournie lorsque vous vous êtes inscrit à Microsoft 365 et est unique pour votre organisation. La _\<LicensingPlan>_ valeur est la même pour tout le monde. Par exemple, dans la valeur , le nom de la société est et le nom du plan de gestion des licences, qui est le nom du système `litwareinc:ENTERPRISEPACK` `litwareinc` Office 365 Entreprise `ENTERPRISEPACK` E3.
     
 - **ActiveUnits :** Nombre de licences que vous avez achetées pour un plan de gestion des licences spécifique.
     
@@ -147,7 +147,7 @@ Le tableau suivant présente les plans Microsoft 365 service et leurs noms convi
 | `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
-| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |
+| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |
    
 Pour obtenir la liste complète des plans de licence (également appelés noms de produits), leurs plans de service inclus et leurs noms convivial correspondants, voir Noms de produits et identificateurs de plan de service pour la [gestion des licences.](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
 

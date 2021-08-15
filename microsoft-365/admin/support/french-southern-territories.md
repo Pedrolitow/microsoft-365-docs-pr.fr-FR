@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b9485364997c6ef824516e4a8fa1b576c33bbbee
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 3afefc809fc2a8160340706ebadc8f5a0950746ab667e285dccdf2762aff0ba6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296202"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901790"
 ---
 # <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>Contacter le support pour les Territoires du Sud français
 
@@ -33,10 +33,10 @@ Français : Mon-Fri 13:00 à 21:00
 
 Anglais : Mon-Fri 13:00 à 21:00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Français : Mon-Fri 12:00-23:00
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

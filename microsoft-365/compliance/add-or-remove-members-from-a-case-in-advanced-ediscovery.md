@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment ajouter ou supprimer les membres qui peuvent accéder à un cas lors de la gestion d’Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 06199ebfc9bdf24f1e4fb245f3b373c4129ebc9e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b0b35503ca4e006f7a15bae8ffebc80081a9020db47d31621f67b8edbcc22667
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923494"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837034"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Ajouter ou supprimer des membres à partir d’un cas
 

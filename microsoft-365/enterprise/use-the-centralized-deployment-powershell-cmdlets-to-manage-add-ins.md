@@ -20,16 +20,16 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez les cmdlets PowerShell de déploiement centralisé pour vous aider à déployer et gérer des Office pour votre Microsoft 365 organisation.
-ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8f84c3222fa8a9eefcdda90fa6daf1c453dd73236fd6be61d2c57b63c7feceea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924671"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830154"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins
 
-En tant qu’administrateur général Microsoft 365, vous pouvez déployer des Office pour les utilisateurs via la fonctionnalité Déploiement centralisé (voir [Déployer](../admin/manage/manage-deployment-of-add-ins.md)des Office dans le Centre d’administration). En plus de déployer Office compléments via le centre d’administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement centralisé O365 Add-In pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+En tant qu’administrateur général Microsoft 365, vous pouvez déployer des Office pour les utilisateurs via la fonctionnalité Déploiement centralisé (voir [Déployer](../admin/manage/manage-deployment-of-add-ins.md)des Office dans le Centre d’administration). En plus de déployer Office compléments via le Centre d’administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement centralisé O365 Add-In pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
 
 Après avoir téléchargé le module, ouvrez une fenêtre Windows PowerShell et exécutez l’cmdlet suivante :
 
@@ -62,7 +62,7 @@ Avant de pouvoir utiliser les cmdlets de déploiement centralisé, vous devez vo
 > [!NOTE]
 > Pour plus d’informations sur l’utilisation de PowerShell, [voir Connecter à Microsoft 365 avec PowerShell.](./connect-to-microsoft-365-powershell.md) 
   
-## <a name="upload-an-add-in-manifest"></a>Télécharger un manifeste de add-in
+## <a name="upload-an-add-in-manifest"></a>Télécharger manifeste d’un add-in
 
 Exécutez la cmdlet **New-OrganizationAdd-In** pour télécharger un manifeste de add-in à partir d’un chemin d’accès, qui peut être un emplacement de fichier ou une URL. L’exemple suivant montre un emplacement de fichier pour la valeur du _paramètre ManifestPath._ 
   

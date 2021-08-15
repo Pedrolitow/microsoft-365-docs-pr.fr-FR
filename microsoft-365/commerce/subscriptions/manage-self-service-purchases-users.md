@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
 ms.date: 03/17/2021
-ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 581a142eb18e64bfec237e6108564d68d715e21ca20b74e39337afbb7ac86491
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683666"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852198"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
-En tant qu’utilisateur, vous pouvez acheter des abonnements à certains produits et attribuer des licences pour ces abonnements aux membres de votre équipe. Vous êtes responsable du paiement des achats en libre-service effectués. Vous pouvez gérer vos abonnements dans le Centre d’administration Microsoft 365 à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">l’adresse admin.microsoft.com</a>.
+En tant qu’utilisateur, vous pouvez acheter des abonnements à certains produits et attribuer des licences pour ces abonnements aux membres de votre équipe. Vous êtes responsable du paiement des achats en libre-service effectués. Vous pouvez gérer vos abonnements dans le Centre d’administration Microsoft 365 à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">l’admin.microsoft.com</a>.
 
-Votre administrateur dispose d’une vue en lecture seule des abonnements que vous achetez. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque abonnement que vous achetez.
+Votre administrateur dispose d’une vue en lecture seule sur les abonnements que vous achetez. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque abonnement que vous achetez.
 
 ## <a name="view-your-subscriptions"></a>Afficher vos abonnements
 
@@ -37,19 +37,19 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 2. Sous **l’onglet** Produits, sélectionnez l’icône de filtre, puis sélectionnez **Libre-service.**
 
@@ -57,19 +57,19 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement dont vous souhaitez acheter davantage ou réduire les licences.
 3. Choisissez **Acheter des licences** ou **Supprimer des licences.**
@@ -131,21 +131,21 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
-2. Sur la page **Produits**, recherchez l’abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
+2. Dans l'onglet **Produits**, recherchez l'abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l’abonnement**.
 3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Si vous le souhaitez, fournissez vos commentaires.
 4. Sélectionnez **Enregistrer**.
 
@@ -176,7 +176,7 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 1. Dans le Centre d’administration, allez sur la page **Factures**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiements.</a>
 2. Sous **l’onglet Factures,** sélectionnez la facture à afficher. Si aucune facture n’est visible, modifiez les **3** derniers mois en **6 derniers** mois ou spécifiez **une plage de dates.**
 
-## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
+## <a name="need-help-contact-us"></a>Besoin d'aide ? Contactez-nous.
 
 Pour les questions courantes sur les achats en libre-service, consultez la FAQ sur les [achats en libre-service.](self-service-purchase-faq.yml)
 

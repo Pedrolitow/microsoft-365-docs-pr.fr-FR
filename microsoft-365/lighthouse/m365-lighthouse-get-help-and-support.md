@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment obtenir de l’aide et du support.
-ms.openlocfilehash: 6efa7475b409a4e81e4aa8551f0e899d95ff5c27
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1b800a9b06cf83ff6014d2377c847204d7aaa568bc7feac65631adec22772ccc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830130"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Obtenir de l’aide et du support pour Microsoft 365 Lighthouse 
 
@@ -79,6 +79,6 @@ Si vous rencontrez un problème qui n’est répertorié dans aucun des tableaux
 
 6.  Remplissez les informations du formulaire, joignez les captures d’écran et le fichier JSON que vous avez enregistré à l’étape 1, le cas échéant, puis sélectionnez &nbsp; **Me contacter.** Le temps d’attente attendu est indiqué dans le volet.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

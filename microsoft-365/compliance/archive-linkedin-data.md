@@ -15,22 +15,22 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer & utiliser un connecteur natif pour importer des données à partir d’une page d’entreprise LinkedIn Microsoft 365.
-ms.openlocfilehash: 40e51424d086b0eee42d1f15ea577b7e8f1648c1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 950647d1795e63763631c06a949cf05843420f34a2bc451886eacc88649ddb75
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906144"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861023"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
 
-Utilisez un connecteur dans le centre Microsoft 365 conformité pour importer et archiver des données à partir de pages linkedIn Company. Une fois que vous avez configuré et configuré un connecteur, il se connecte au compte de la page de la société LinkedIn spécifique toutes les 24 heures. Le connecteur convertit les messages publiés dans la page Société en un message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
+Utilisez un connecteur dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de pages linkedIn Company. Une fois que vous avez configuré et configuré un connecteur, il se connecte au compte de la page de la société LinkedIn spécifique toutes les 24 heures. Le connecteur convertit les messages publiés dans la page Société en un message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 
 Une fois que les données de la page Société LinkedIn sont stockées dans une boîte aux lettres, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu, l’archivage In-Place, l’audit et les stratégies de rétention Microsoft 365 aux données LinkedIn. Par exemple, vous pouvez rechercher ces éléments à l’aide de la recherche de contenu ou associer la boîte aux lettres de stockage à un dépositaire dans Advanced eDiscovery cas. La création d’un connecteur pour importer et archiver des données LinkedIn dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
-- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée un connecteur de page d’entreprise LinkedIn dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **Connecteurs** de données dans le centre Microsoft 365 conformité. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée un connecteur de page d’entreprise LinkedIn dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 - Vous devez avoir les informations d’identification de connexion (adresse de messagerie, numéro de téléphone et mot de passe) d’un compte d’utilisateur LinkedIn qui est administrateur de la page de société LinkedIn que vous souhaitez archiver. Vous utilisez ces informations d’identification pour vous inscrire à LinkedIn lors de la configuration du connecteur.
 
@@ -52,7 +52,7 @@ Une fois que les données de la page Société LinkedIn sont stockées dans une 
 
 5. Dans la page de signature LinkedIn, entrez l’adresse e-mail (ou le numéro de téléphone) et le mot de passe du compte LinkedIn associé à la page d’entreprise que vous souhaitez archiver, puis cliquez sur Se **connectez.**
 
-   Une page de l’Assistant s’affiche avec la liste de toutes les pages d’entreprise LinkedIn associées au compte à qui vous vous êtes connecté. Un connecteur ne peut être configuré que pour une page d’entreprise. Si votre organisation possède plusieurs pages d’entreprise LinkedIn, vous devez créer un connecteur pour chacune d’elles.
+   Une page de l’Assistant s’affiche avec la liste de toutes les pages de société LinkedIn associées au compte à qui vous vous êtes connecté. Un connecteur ne peut être configuré que pour une page d’entreprise. Si votre organisation possède plusieurs pages d’entreprise LinkedIn, vous devez créer un connecteur pour chacune d’elles.
 
    ![Une page avec une liste de pages d’entreprise LinkedIn s’affiche](../media/LinkedInSelectCompanyPage.png)
 
@@ -66,6 +66,6 @@ Après avoir créé le connecteur, vous pouvez revenir à la page **Connecteurs*
 
 Pour afficher plus de détails, sélectionnez le connecteur dans la liste de la page **Connecteurs** de données pour afficher la page de présentation. Sous **État,** la plage de dates qui s’affiche indique le filtre d’âge qui a été sélectionné lors de la création du connecteur.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
-Les éléments LinkedIn sont importés dans le sous-foldeur LinkedIn dans la boîte de réception de la boîte aux lettres de stockage Microsoft 365. Ils s’affichent sous la mesure de messages électroniques.
+Les éléments LinkedIn sont importés dans le sous-foldeur LinkedIn dans la boîte de réception de la boîte aux lettres de stockage dans Microsoft 365. Ils s’affichent sous la mesure de messages électroniques.

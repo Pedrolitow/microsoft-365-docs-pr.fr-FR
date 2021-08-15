@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Suivez ces étapes pour suivre les problèmes de mobilité et de sécurité de base
-ms.openlocfilehash: b8df8c17f3a2fc5b7b6cce21769ca20742dbd397
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 1ba964f052169b3937ecbc086abd4a686c0a66bb959c4b38d4280c1bbb0225a2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826710"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>Résoudre les problèmes de mobilité et de sécurité de base
 
@@ -35,7 +35,7 @@ Pour commencer, vérifiez ce qui suit :
 
 - Basculez vers un autre réseau WIFI ou cellulaire sur l’appareil.
 
-- Pour les appareils Android ou iOS, désinstallez et réinstallez l’Portail d’entreprise Intune sur l’appareil. 
+- Pour les appareils Android ou iOS, désinstallez et réinstallez l’application Portail d’entreprise Intune sur l’appareil. 
 
 ## <a name="ios-phone-or-tablet"></a>Téléphone ou tablette iOS
 
@@ -53,13 +53,13 @@ Pour commencer, vérifiez ce qui suit :
 
 ## <a name="windows-rt"></a>Windows RT
 
-- Assurez-vous que votre domaine est Microsoft 365 pour fonctionner avec basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
+- Assurez-vous que votre domaine est Microsoft 365 pour fonctionner avec Basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
     
 - Assurez-vous que l’utilisateur **choisit** Activer   plutôt que de participer. ****
 
 ## <a name="windows-10-pc"></a>Windows 10 PC
 
-- Assurez-vous que votre domaine est Microsoft 365 pour fonctionner avec basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
+- Assurez-vous que votre domaine est Microsoft 365 pour fonctionner avec Basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
     
 - Sauf si vous avez Azure Active Directory Premium, assurez-vous que **** l’utilisateur choisit l’inscription à la gestion des appareils uniquement au lieu de   choisir **Connecter**.
 

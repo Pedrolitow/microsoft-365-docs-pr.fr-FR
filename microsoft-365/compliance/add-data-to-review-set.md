@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment ajouter des résultats de recherche ou des exemples de ces résultats de recherche à un groupe Advanced eDiscovery révision de cas.
-ms.openlocfilehash: 25ea5fe076753d4a5685f1224b98a2005d334f5f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: dd3b04812f1284d8a95a158f1ef47317bc89c9f28b743a723fc8d21287116e48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837058"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
@@ -45,17 +45,17 @@ Vous pouvez ajouter un jeu à réviser existant ou en créer un nouveau.  Si vou
 
 ![Sélectionner un jeu à réviser et configurer les options de collection](../media/AeD_AddToReviewSet.png)
 
-L’ajout de données à un groupe de révision est un processus à long terme. Ce processus comprend la collecte d’éléments à partir des sources de données d’origine dans Microsoft 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie à l’emplacement stockage Azure (ce processus de copie est également appelé *ingestion),* puis la réindexation des éléments. Vous pouvez suivre la progression sous l’onglet **Travaux** ou dans  l’onglet **Recherches** en surveillant l’état dans la colonne Données ajoutées à réviser. Une fois le traitement de  l’ensemble de révision terminé, cliquez sur l’onglet Ensembles de révision dans le cas, puis cliquez sur le jeu à réviser pour démarrer le processus de filtrage, de révision, de marquage et d’exportation des données dans le jeu à réviser.
+L’ajout de données à un groupe de révision est un processus à long terme. Ce processus comprend la collecte d’éléments à partir des sources de données d’origine dans Microsoft 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie à l’emplacement stockage Azure (ce processus de copie est également appelé *ingestion),* puis la réindexation des éléments. Vous pouvez suivre l’avancement sous l’onglet **Travaux** ou dans  l’onglet **Recherches** en surveillant l’état dans la colonne Ajout de données à réviser. Une fois le traitement de  l’ensemble de révision terminé, cliquez sur l’onglet Ensembles de révision dans le cas, puis cliquez sur le jeu à réviser pour démarrer le processus de filtrage, de révision, de marquage et d’exportation des données dans le jeu à réviser.
 
 ## <a name="define-options-to-scope-your-collection-for-review"></a>Définir des options pour définir l’étendue de votre collection pour révision
 
-Lorsque vous ajoutez le contenu d’une recherche à un ensemble de révision existant ou nouveau, vous avez les options suivantes pour collecter le contenu pour révision :
+Lorsque vous ajoutez le contenu d’une recherche à un groupe de révision existant ou nouveau, vous avez les options suivantes pour collecter le contenu pour révision :
 
 - Inclure les versions de **SharePoint (bêta)**: utilisez cette option pour activer la collection de toutes les versions d’un document SharePoint en fonction des limites de version et des paramètres de recherche de la collection. La sélection de cette option augmente considérablement la taille des éléments ajoutés au jeu à réviser.
 
-- **Options de récupération des conversations**: les éléments ajoutés au jeu à réviser sont activés pour les conversations threadées afin d’aider à examiner le contenu dans le contexte de la conversation de va-et-vient. Pour plus d’informations, [consultez les conversations dans Advanced eDiscovery](conversation-review-sets.md).
+- **Options de récupération de conversation**: les éléments ajoutés au jeu à réviser sont activés pour les conversations threadées afin de faciliter la révision du contenu dans le contexte de la conversation de va-et-vient. Pour plus d’informations, [consultez les conversations dans Advanced eDiscovery](conversation-review-sets.md).
 
-- **Activer la récupération des pièces jointes** modernes : utilisez cette option pour inclure des pièces jointes modernes ou des fichiers liés dans la collection pour une révision plus approfondi. Pour plus d’informations sur les propriétés utilisables dans une recherche relatives aux pièces jointes modernes, voir les champs de [métadonnées](document-metadata-fields-in-Advanced-eDiscovery.md)de document Advanced eDiscovery .
+- **Activer la récupération des** pièces jointes modernes : utilisez cette option pour inclure des pièces jointes modernes ou des fichiers liés dans la collection pour une révision plus approfondi. Pour plus d’informations sur les propriétés utilisables dans une recherche relatives aux pièces jointes modernes, voir les champs de [métadonnées](document-metadata-fields-in-Advanced-eDiscovery.md)de document Advanced eDiscovery .
 
 ## <a name="add-a-sample-to-a-review-set"></a>Ajouter un exemple à un jeu à réviser
 
