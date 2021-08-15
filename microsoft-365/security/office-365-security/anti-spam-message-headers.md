@@ -18,12 +18,12 @@ description: Les administrateurs peuvent en savoir plus sur les champs d’en-t�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9720495fa78b22ee6d18a52b173349f8b3438e94
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 7c25679e6b997756d9af1ccfd16eb5fd41565c4d4472e7ebc22fe572277997a6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595977"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56854330"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>En-têtes de message anti-courrier indésirable dans Microsoft 365
 

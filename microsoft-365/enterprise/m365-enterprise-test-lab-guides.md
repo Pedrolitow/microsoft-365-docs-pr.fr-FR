@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Servez-vous des guides de laboratoire de test pour configurer les environnements de développement/test, de preuve de concept et de démonstration pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: a006f549d0ac68562faee9c935df7f15161b2f12
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1e5a65ce0ac9320a586e3bad73a6bfbdb967ff39b8cfae3344b4bc633c922041
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858979"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guides de laboratoire de test Microsoft 365 pour entreprise
 
@@ -45,7 +45,7 @@ Pour obtenir une carte visuelle de tous les articles de la pile de guides de lab
 
 Tout d’abord, créez un environnement de test [pour Microsoft 365 entreprise.](/microsoft-365-enterprise/) Vous pouvez créer deux types différents de configurations de base :
 
-- [Configuration](lightweight-base-configuration-microsoft-365-enterprise.md) de base légère : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire une démonstration des Microsoft 365 pour les fonctionnalités d’entreprise et les fonctionnalités dans un environnement cloud uniquement, qui n’inclut aucun composant local.
+- [Configuration](lightweight-base-configuration-microsoft-365-enterprise.md) de base légère : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire la démonstration de Microsoft 365 pour les fonctionnalités et fonctionnalités d’entreprise dans un environnement cloud uniquement, qui n’inclut aucun composant local.
 
 - Configuration de [base](simulated-ent-base-configuration-microsoft-365-enterprise.md) d’entreprise simulée : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire une démonstration des Microsoft 365 pour les fonctionnalités d’entreprise dans un environnement cloud hybride, qui utilise des composants locaux tels qu’un domaine AD DS (Active Directory Domain Services).
 

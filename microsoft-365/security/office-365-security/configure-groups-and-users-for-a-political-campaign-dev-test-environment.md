@@ -1,5 +1,5 @@
 ---
-title: 'Configurer des groupes et des utilisateurs : environnement de développement/test pour une campagne politique'
+title: 'Configurer des groupes et des utilisateurs : environnement de développement/test pour une campagne politique'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,29 +15,29 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
-description: 'Résumé : Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.'
+description: 'Résumé : Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.'
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e21cdfb0aabbdb10397d6d16c879756449a498e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d96d91d264911343bac32baee5eee7da08064f5546ac787730ad62a80c441cac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203938"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56802025"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
- **Résumé :** Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.
+ **Résumé :** Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.
 
 Suivez les instructions de cet article pour créer un environnement de développement/test incluant des comptes d’utilisateurs simplifiés et des groupes pour la solution des [conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations souples](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md).
 
-## <a name="phase-1-create-your-office-365-devtest-environment"></a>Phase 1 : Création d’un environnement de développement/test Office 365
+## <a name="phase-1-create-your-office-365-devtest-environment"></a>Phase 1 : Création d’un environnement de développement/test Office 365
 
 Dans cette phase, vous obtenez des abonnements d’essai pour Office 365 E5 et Enterprise Mobility + Security (EMS) E5 pour une entreprise fictive qui représente une campagne électorale.
 
@@ -45,7 +45,7 @@ Tout d’abord, suivez les instructions de **Phase 2** de [la configuration de b
 
 Ensuite, inscrivez-vous à l’abonnement d’évaluation EMS E5 et ajoutez-le à la même organisation que votre abonnement d’évaluation.
 
-1. Si nécessaire, connectez-vous au centre d’administration avec les identifiants du compte d’administrateur général de votre abonnement d’essai. Pour obtenir de l’aide, consultez [Où se connecter](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si nécessaire, connectez-vous au Centre d'administration avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai. Pour obtenir de l’aide, consultez [Où se connecter](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Cliquez sur la vignette **Administration**.
 
@@ -59,23 +59,23 @@ Ensuite, inscrivez-vous à l’abonnement d’évaluation EMS E5 et ajoutez-le �
 
 Ensuite, activez la licence EMS E5 pour votre compte Administrateur général.
 
-1. Sous l’onglet **Centre d’administration Microsoft 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
+1. Sous l’onglet **Centre d’administration Microsoft 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
 
 2. Cliquez sur votre compte Administrateur général, puis cliquez sur **Modifier** pour les **licences de produit**.
 
 3. Dans le volet **Licences de produit**, activez la licence de produit pour **Enterprise Mobility + Security E5** en sélectionnant **Activer**, cliquez sur **Enregistrer**, cliquez deux fois sur **Fermer**.
 
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>Phase 2 : Création et configuration de vos groupes Azure Active Directory (AD)
+## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>Phase 2 : Création et configuration de vos groupes Azure Active Directory (AD)
 
 Dans cette phase, vous créez et configurez des groupes Azure AD pour votre campagne.
 
 Commencez par créer un ensemble de groupes pour une campagne électorale standard avec le portail Azure.
 
-1. Dans un nouvel onglet de votre navigateur, accédez au portail Azure sous <https://portal.azure.com>. Si nécessaire, connectez-vous avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai Office 365 E5.
+1. Dans un onglet distinct dans votre navigateur, accédez au portail Azure à l’adresse <https://portal.azure.com>. Si nécessaire, connectez-vous avec les informations d’identification du compte Administrateur général de votre abonnement d’essai Office 365 E5.
 
 2. Dans le portail Azure, cliquez sur **Azure Active Directory > Utilisateurs et groupes > Tous les groupes**.
 
-3. Procédez comme suit pour chaque nom de groupe dans cette liste :
+3. Procédez comme suit pour chaque nom de groupe dans cette liste :
 
    - Senior and strategic staff
 
@@ -117,7 +117,7 @@ Ensuite, vous configurez les groupes afin que des licences Office 365 E5 et EMS 
 
 3. Dans le panneau **Affecter une licence**, cliquez sur **Utilisateurs et groupes**.
 
-4. Dans la liste des groupes, sélectionnez les éléments suivants :
+4. Dans la liste des groupes, sélectionnez les éléments suivants :
 
    - Analytics staff
 
@@ -135,13 +135,13 @@ Ensuite, vous configurez les groupes afin que des licences Office 365 E5 et EMS 
 
 6. Fermez l’onglet du portail Azure dans votre navigateur.
 
-## <a name="phase-3-add-your-user-accounts"></a>Phase 3 : Ajout de comptes d’utilisateurs
+## <a name="phase-3-add-your-user-accounts"></a>Phase 3 : Ajout de comptes d’utilisateurs
 
 Dans cette phase, vous ajoutez les comptes d’utilisateurs de l’exemple pour votre campagne politique.
 
 Pour commencer, [connectez -vous au module PowerShell Azure Active Directory pour le module Graphique](../../enterprise/connect-to-microsoft-365-powershell.md).
 
-Ensuite, renseignez le nom de votre organisation, votre emplacement et un mot de passe commun, puis exécutez les commandes suivantes à partir de l’invite de commandes PowerShell ou de l’environnement de script intégré (ISE) :
+Ensuite, renseignez le nom de votre organisation, votre emplacement et un mot de passe commun, puis exécutez les commandes suivantes à partir de l’invite de commandes PowerShell ou de l’environnement de script intégré (ISE) :
 
 ```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
@@ -178,11 +178,11 @@ Utilisez ces étapes pour vérifier que l’appartenance au groupe dynamique et 
 
 1. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Administration**.
 
-2. Dans le nouvel onglet **Centre d’administration Microsoft 365** de votre navigateur, cliquez sur **Utilisateurs**.
+2. Dans le nouvel onglet **Centre d’administration Microsoft 365** de votre navigateur, cliquez sur **Utilisateurs**.
 
 3. Dans la liste des utilisateurs, cliquez sur **Candidat**.
 
-4. Dans le volet qui répertorie les propriétés du compte d’utilisateur **Candidat**, vérifiez que les situations suivantes sont satisfaites :
+4. Dans le volet qui répertorie les propriétés du compte d’utilisateur **Candidat**, vérifiez que les situations suivantes sont satisfaites :
 
    - Il est membre du groupe **Senior and strategic staff** (dans **Appartenances aux groupes**).
 
@@ -192,23 +192,23 @@ Utilisez ces étapes pour vérifier que l’appartenance au groupe dynamique et 
 
 ## <a name="record-values-for-future-reference"></a>Enregistrez les valeurs, vous en aurez besoin plus tard.
 
-Enregistrez ces valeurs pour utiliser les abonnements aux versions d’évaluation d’Office 365 et d’EMS pour cet environnement de développement/test :
+Enregistrez ces valeurs pour utiliser les abonnements aux versions d’évaluation d’Office 365 et d’EMS pour cet environnement de développement/test :
 
-- Nom de l’organisation bénéficiant de l’abonnement à la version d’évaluation : ![Souligner](../../media/Common-Images/TableLine.png)
+- Nom de l’organisation bénéficiant de l’abonnement à la version d’évaluation : ![Souligner](../../media/Common-Images/TableLine.png)
 
-  Par exemple, pour le nom de domaine de l’abonnement à la version d’évaluation de contoso.onmicrosoft.com, le nom de l’organisation est « contoso ».
+  Par exemple, pour le nom de domaine de l’abonnement à la version d’évaluation de contoso.onmicrosoft.com, le nom de l’organisation est « contoso ».
 
-- Nom d’administrateur général : ![Souligner](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- Nom d’administrateur général : ![Souligner](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Enregistrez le mot de passe pour ce compte et le mot de passe initial commun pour les autres comptes d’utilisateurs dans un emplacement sécurisé.
 
 ## <a name="next-step"></a>Étape suivante
 
-Créez les quatre différents types de sites d’équipe SharePoint Online dans cet environnement de développement/test en vous reportant à [Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale](create-team-sites-in-a-political-campaign-dev-test-environment.md).
+Créez les quatre différents types de sites d’équipe SharePoint Online dans cet environnement de développement/test en vous reportant à [Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale](create-team-sites-in-a-political-campaign-dev-test-environment.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
 [Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 

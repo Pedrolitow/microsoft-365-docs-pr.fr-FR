@@ -20,12 +20,12 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 05/27/2021
-ms.openlocfilehash: 1d18cd6e43a755661997e2b3a9a3295ef6f05de1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c5e239968fb7048f6bd7a52c3b893ee3292aee1f1a6d93d4bde25689b27b5fca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822092"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881446"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>Demander un crédit pour la retenue d’impôt sur votre compte (clients globaux)
 
@@ -35,7 +35,7 @@ ms.locfileid: "52822092"
 
 Certains clients reçoivent des factures Web Direct (Azure et Microsoft 365) facturées par une entité Microsoft située dans un pays étranger. Si votre organisation effectue des paiements 2 frontières à cette entité, l’autorité fiscale de votre pays peut vous obliger à refuser une partie du paiement 2 frontière en tant que retenue d’impôt sur la revenu (WHT). Si vous avez retenu les taxes requises par votre autorité fiscale lors du versement de paiements à Microsoft, cet article explique le processus de revendication d’un crédit pour l’impôt retenu.
 
-## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Pour les clients de paiement par facture qui paient par chèque ou par virement
+## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Pour les clients payant par facture qui paient par chèque ou par virement
 
 Si vous avez retenu des taxes lors du versement et déposé l’impôt retenu auprès de l’autorité fiscale concernée, vous devez soumettre une demande WHT pour effacer le solde en suspens dans votre compte.
 

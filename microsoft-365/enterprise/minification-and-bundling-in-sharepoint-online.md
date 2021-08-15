@@ -20,19 +20,19 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: Découvrez comment utiliser les techniques de réduction et de regroupement avec Web Essentials pour réduire les demandes HTTP et le temps nécessaire au chargement des pages dans SharePoint Online.
-ms.openlocfilehash: 2e2ff7b9d36a6c28ca3840304d896782e1096e85
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Découvrez comment utiliser les techniques de réduction et de regroupement avec Web Essentials pour réduire les demandes HTTP et le temps nécessaire pour charger des pages dans SharePoint Online.
+ms.openlocfilehash: a7ed45dbc06f4d5cc58742ee545edac212f1ce181896907b889c41e7b3645486
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689655"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858584"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimisation et regroupement dans SharePoint Online
 
 Cet article explique comment utiliser les techniques de réduction et de regroupement avec Web Essentials pour réduire le nombre de demandes HTTP et réduire le temps nécessaire au chargement des pages dans SharePoint Online.
   
-Lorsque vous personnalisez votre site web, vous pouvez ajouter un grand nombre de fichiers supplémentaires au serveur pour prendre en charge la personnalisation. L’ajout de JavaScript, de CSS et d’images supplémentaires augmente le nombre de requêtes HTTP sur le serveur, ce qui augmente le temps d’affichage d’une page web. Si vous avez plusieurs fichiers du même type, vous pouvez regrouper ces fichiers pour accélérer le téléchargement de ces fichiers.
+Lorsque vous personnalisez votre site web, vous pouvez finir par ajouter un grand nombre de fichiers supplémentaires au serveur pour prendre en charge la personnalisation. L’ajout de JavaScript, de CSS et d’images supplémentaires augmente le nombre de requêtes HTTP sur le serveur, ce qui augmente le temps d’affichage d’une page web. Si vous avez plusieurs fichiers du même type, vous pouvez regrouper ces fichiers pour accélérer le téléchargement de ces fichiers.
   
 Pour les fichiers JavaScript et CSS, vous pouvez également utiliser une approche appelée réduction, dans laquelle vous réduisez la taille totale des fichiers en supprimant les espaces et autres caractères qui ne sont pas nécessaires.
   
@@ -49,7 +49,7 @@ Web Essentials offre deux formes de regroupement :
     
 - .sprite : pour les images (disponible uniquement dans Visual Studio 2013)
     
-Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité existante avec certains éléments de personnalisation qui sont référencés dans une page maître personnalisée, telle que :
+Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité existante avec certains éléments de personnalisation référencés dans une page maître personnalisée, telles que :
   
 ![Capture d’écran de l’élément de marque sur la page maître personnalisée](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
@@ -77,7 +77,7 @@ La figure suivante est le résultat du chargement des fichiers JavaScript et CSS
   
 ![Capture d’écran montrant 80 éléments en cours de téléchargement](../media/e2df3912-1923-46e6-8cf2-3015a31554e1.png)
   
-Après avoir groupé les fichiers CSS et JavaScript, le nombre de demandes est passé à 74 et chaque fichier n’a pris que légèrement plus de temps que les fichiers d’origine à télécharger individuellement :
+Après avoir groupé les fichiers CSS et JavaScript, le nombre de demandes abandonnées à 74 et chaque fichier n’a pris que légèrement plus de temps que les fichiers d’origine à télécharger individuellement :
   
 ![Capture d’écran montrant 74 éléments en cours de téléchargement](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
   

@@ -1,5 +1,5 @@
 ---
-title: Créez l’Microsoft 365 Defender d’évaluation. Activez ou activez les licences d’essai, puis continuez sur Microsoft Defender pour l’identité (MDI).
+title: Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement
 description: Configurer votre laboratoire d Microsoft 365 Defender d’essai ou votre environnement pilote en activant les licences d’essai. Ensuite, configurer Microsoft Defender pour l’identité (MDI) et toutes les autres évaluations M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,18 +21,18 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 04f7a746788ebcf67525020515cdc7bb20c41bb6
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 6e89591b57be2bf79664547715906074b92b54649e1858bde9ffe06cb2be9335
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867618"
 ---
-# <a name="create-the-microsoft-365-defender-evaluation-environment"></a>Créer l’Microsoft 365 Defender d’évaluation de la sécurité
+# <a name="create-the-microsoft-365-defender-evaluation-environment"></a>Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement
 
-Il existe deux façons courantes de faire cette étape suivante dans l’évaluation. Ce document suppose que vous avez déjà un client M365 de production et activera les licences d’évaluation E5 pour évaluer M365 Defender dans *l’environnement actuel.* Une évaluation sur place vous permet de conserver les méthodes de sécurité avec l’achat de licences après la période d’évaluation.
+Il existe deux façons courantes de faire cette étape suivante dans l’évaluation. Ce document suppose que vous avez déjà un client M365 de production et activera les licences d’évaluation E5 pour évaluer M365 Defender dans *l’environnement actuel.* Une évaluation sur place vous permet de conserver toutes les méthodes de sécurité avec l’achat de licences après la période d’évaluation.
 
-La seconde consiste à configurer votre environnement de laboratoire [d Microsoft 365 Defender d’évaluation](setup-m365deval.md) à des fins d’évaluation. Il n’y a peut-être pas beaucoup de signaux réels de l’entreprise, donc n’ignorez pas cette mise en garde.
+La seconde consiste à configurer votre environnement de laboratoire [d Microsoft 365 Defender d’évaluation](setup-m365deval.md) aux fins d’évaluation. Il n’y a peut-être pas beaucoup de signaux réels de l’entreprise, donc n’ignorez pas cette mise en garde.
 
 ## <a name="to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>Pour activer les licences d’évaluation E5 afin d’évaluer Microsoft 365 Defender 
 1. Connectez-vous à votre portail d’administration des clients M365 existant.

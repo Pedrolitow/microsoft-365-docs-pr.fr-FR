@@ -20,12 +20,12 @@ search.appverid:
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 090253806295d0a5db67afbe769c9c0ca8be4b39
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: dc34894998fda5ec28db6752f50c9122d3a2b416c5e5d7bd443e756681ce50b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56800978"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
@@ -136,7 +136,7 @@ Pour débloquer la boîte aux lettres et permettre l’envoi de messages électr
 
 4. Dans le Centre d’administration Exchange à <https://admin.exchange.microsoft.com>, accédez à **Destinataires** \> **Boîtes aux lettres**.
 
-5. Recherchez et sélectionnez l’utilisateur. Dans le menu volant des détails de boîte aux lettres qui s’ouvre, procédez comme suit :
+5. Chercher and sélectionner l’utilisateur. Dans le menu volant des détails de boîte aux lettres qui s’ouvre, procédez comme suit:
    - Dans la section **Applications de messagerie**, bloquez tous les paramètres disponibles en déplaçant le bouton bascule vers la droite ![Désactivez](../../media/scc-toggle-on.png):
      - **Outlook sur le web**
      - **Bureau Outlook (MAPI)**

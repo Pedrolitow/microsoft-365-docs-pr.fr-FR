@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 98a3b85f5abab5319b6259961d999c7e1ae67cb8eb4c9cc46862b5739e59f165
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 805ee94a6367bfc80401bf9a8165dc60b1c9022f8c5ade8cae675b49fe0325b4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520374"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867666"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Repérer des menaces sur les appareils, les e-mails, les applications, et les identités
 
@@ -235,7 +235,7 @@ EmailAttachmentInfo
 | join (
 //Check devices for any activity involving the attachments
 DeviceFileEvents
-| project FileName, SHA256, DeviceName, DeviceId
+| project FileName, SHA256
 ) on SHA256
 | project Timestamp, FileName , SHA256, DeviceName, DeviceId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
 ```

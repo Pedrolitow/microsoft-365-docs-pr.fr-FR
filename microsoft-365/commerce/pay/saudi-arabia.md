@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 60799ef1d7fdc89b9f2dba90a98b137799f5f7fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4cf7d9d160f98bcf111d5fdffe954c748846333e3d38927aa6ce2d23462595c7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831042"
 ---
 # <a name="payment-information-for-saudi-arabia"></a>Informations de paiement pour l’Arabie Saoudite
 

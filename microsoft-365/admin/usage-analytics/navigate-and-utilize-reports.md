@@ -1,5 +1,5 @@
 ---
-title: Explorer et utiliser les rapports d’analyse sur l’utilisation de Microsoft 365
+title: Naviguer et utiliser les rapports dans Microsoft 365 analyse de l’utilisation
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Découvrez comment afficher les rapports à l’aide d’onglets et de filtres de navigation.
-ms.openlocfilehash: e69953aaf42b7ad55853ac4ad9162a7ae6a4f916
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 242a5f27c47fc1db0d807906f725201d2574712afe75ef421abf8848a334f2f5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579049"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901242"
 ---
-# <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Explorer et utiliser les rapports d’analyse sur l’utilisation de Microsoft 365
+# <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Naviguer et utiliser les rapports dans Microsoft 365 analyse de l’utilisation
 
 Le tableau de bord vous offre un aperçu rapide des principaux indicateurs d'utilisation et d'adoption. En sélectionnant les mesures de niveau supérieur, vous pouvez accéder à des rapports qui fournissent plus de détails et d’informations. Chaque onglet de rapport contient des visualisations de données spécifiques à un aspect de l’utilisation et de l’adoption pour votre organisation. Les données collectées sont expliquées dans le titre de chaque rapport et une vignette apparaît qui contient des informations supplémentaires sur les visualisations sous l’onglet du rapport que vous affichez.
 

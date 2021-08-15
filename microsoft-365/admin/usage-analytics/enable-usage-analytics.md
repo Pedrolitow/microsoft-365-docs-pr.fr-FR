@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application Microsoft 365 d’analyse de l’utilisation dans Power BI.
-ms.openlocfilehash: c0e39a307ee75c661e0f91fcbbcfeae3d95c7257
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 836ff4cea69f0feef2c94980a48c9202ce57dd6891ef4a7dd76cea26fc3d2cc4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394748"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901164"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
@@ -99,7 +99,7 @@ Pour anonymiser les données collectées pour tous les rapports, vous devez êtr
 
 3. Sélectionnez **Enregistrer les modifications**.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [À propos de l’analyse de l’utilisation](usage-analytics.md) (article)\
 [Obtenir la dernière version de l’analyse de l’utilisation](get-the-latest-version-of-usage-analytics.md) (article)\

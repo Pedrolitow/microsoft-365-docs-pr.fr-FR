@@ -20,33 +20,33 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Découvrez comment résoudre les problèmes avec l’application Microsoft 365 d’analyse de l’utilisation.
-ms.openlocfilehash: 74ee32ae015421a2352474daefa0eaa0a53fbbc9
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b0978edd23809d61a7160cb423cf279d425dd0c13c0451798d8d54535a78c284
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293734"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901129"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Résolution des problèmes Microsoft 365'utilisation
 
 Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur les problèmes les plus courants Microsoft 365'analyse de l’utilisation.
   
     
-## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>Nous ne sommes pas en mesure de traiter votre demande. Vous devez d’abord vous abonner à ces données à partir du centre d’administration Microsoft 365'administration.
+## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>Nous ne sommes pas en mesure de traiter votre demande. Vous devez d’abord vous abonner à ces données à partir du Centre d’administration Microsoft 365
 
  **Code d’erreur :** 422 
   
- **Où vous verrez ce message :** Dans Power BI lorsque vous vous connectez à l’application Microsoft 365 Modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
+ **Où vous verrez ce message :** Dans Power BI lorsque vous vous connectez à l’application Microsoft 365 modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
   
- **Cause :** Avant de pouvoir vous connecter à l’application, vous devez vous abonner aux données à partir du centre d’administration Microsoft 365'administration. Si cette étape n’est pas effectuée en premier, vous ne pourrez pas vous connecter à l’application de modèle, même si vous fournissez votre ID Microsoft 365 client. 
+ **Cause :** Avant de vous connecter à l’application, vous devez vous abonner aux données du Centre d’administration Microsoft 365. Si cette étape n’est pas effectuée en premier, vous ne pourrez pas vous connecter à l’application de modèle, même si vous fournissez votre ID Microsoft 365 client. 
   
  **Pour corriger cette erreur :** Pour vous abonner aux données, go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. Sélectionnez **le** bouton Commencer,  puis dans le volet  Rapports qui s’ouvre, rendez les données disponibles pour l’analyse Microsoft 365 l’utilisation Power BI sur et **Enregistrer.**
   
 ## <a name="we-are-processing-your-data"></a>Vos données sont en cours de traitement
 
- **Où vous verrez ce message :** Dans la vignette **Microsoft 365'analyse de l’utilisation** dans le **tableau** de bord Utilisation du centre d Microsoft 365'administration. 
+ **Où vous verrez ce message :** Dans la **vignette Microsoft 365'analyse de l’utilisation** dans le tableau de **bord** Utilisation de la Centre d’administration Microsoft 365. 
   
- **Cause :** Lorsque vous [choisissez de](enable-usage-analytics.md) voir les données dans le modèle d’application à partir du Centre d’administration Microsoft 365, le système Microsoft 365 commence à générer des données d’utilisation historiques pour votre organisation. En fonction de la taille de votre locataire, cette étape peut prendre 2 à 48 heures. 
+ **Cause :** Lorsque vous [choisissez de](enable-usage-analytics.md) voir les données dans l’application de modèle à partir du Centre d’administration Microsoft 365, le système Microsoft 365 commence à générer des données d’utilisation historiques pour votre organisation. En fonction de la taille de votre locataire, cette étape peut prendre 2 à 48 heures. 
   
  **Pour résoudre ce problème :** Soyez patient, mais si le message  n’est pas ajouté à Vos données, vous êtes prêt au bout de 3 jours, contactez Microsoft 365 pour [le support technique.](../../business-video/get-help-support.md)
   
@@ -74,7 +74,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
 
  **Code d'erreur :** 404 
   
- **Où vous verrez ce message :** Dans Power BI lorsque vous vous connectez à l’application Microsoft 365 Modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
+ **Où vous verrez ce message :** Dans Power BI lorsque vous vous connectez à l’application Microsoft 365 modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
   
  **Cause :** L’ID de client que vous avez fourni n’est pas valide ou n’existe pas. 
   
@@ -84,7 +84,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
 
 Code d'erreur : 302
   
- **Où vous verrez ce message :** Dans Power BI lorsque vous vous connectez à l’application Microsoft 365 Modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
+ **Où vous verrez ce message :** Dans Power BI lorsque vous vous connectez à l’application Microsoft 365 modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
   
  **Cause :** Le code d'autorisation a échoué. Vous risquez d'être invité à entrer à nouveau vos informations d'identification. 
   
@@ -94,7 +94,7 @@ Code d'erreur : 302
 
  **Code d'erreur :** 403 
   
- **Où vous verrez ce message :** Dans Power BI lorsque vous vous connectez à l’application Microsoft 365 Modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
+ **Où vous verrez ce message :** Dans Power BI lorsque vous vous connectez à l’application Microsoft 365 modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
   
  **Cause :** Le code d’autorisation a échoué car l’utilisateur qui a tenté de se connecter à l’application modèle ne peut pas accéder à ces données avec le niveau d’autorisation le plus élevé. 
   

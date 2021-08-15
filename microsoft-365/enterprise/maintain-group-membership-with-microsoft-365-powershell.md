@@ -18,21 +18,21 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Découvrez comment utiliser PowerShell pour maintenir l’appartenance à Microsoft 365 groupes.
-ms.openlocfilehash: 9696c9093ae6f24a2edaf544e80794bde45d18d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e60aaa0200a4cbc972f9157ead3db81a92fb7f4e7049d9ab27c2e420b94c2169
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858950"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>Conserver l’appartenance à un groupe de sécurité avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative au Centre d’administration Microsoft 365 pour conserver l’appartenance à un groupe de sécurité dans Microsoft 365. 
+Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative à la Centre d’administration Microsoft 365 pour conserver l’appartenance à un groupe de sécurité dans Microsoft 365. 
 
 >[!Note]
->[Découvrez comment maintenir l’appartenance Microsoft 365 groupe](../admin/create-groups/add-or-remove-members-from-groups.md) avec le centre d Microsoft 365'administration. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
+>[Découvrez comment maintenir l’appartenance Microsoft 365 groupe](../admin/create-groups/add-or-remove-members-from-groups.md) avec le Centre d’administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
@@ -40,7 +40,7 @@ Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-3
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>Ajouter ou supprimer des comptes d’utilisateur en tant que membres d’un groupe
 
-Pour ajouter un compte d’utilisateur par son **UPN,** indiquez le nom d’utilisateur principal (UPN) du compte d’utilisateur (par exemple : belindan@contoso.com) et le nom complet du groupe de sécurité, en supprimant les caractères « < » et « > », puis exécutez ces commandes dans la fenêtre PowerShell ou dans l’environnement de script intégré De PowerShell .
+Pour ajouter un compte d’utilisateur par son **UPN,** indiquez le nom d’utilisateur principal (UPN) du compte d’utilisateur (par exemple : belindan@contoso.com) et le nom complet du groupe de sécurité, en supprimant les caractères « < » et « > », puis exécutez ces commandes dans la fenêtre PowerShell ou dans l’environnement de script intégré à PowerShell (ISE).
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
@@ -56,7 +56,7 @@ $groupName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-Pour supprimer un compte d’utilisateur par son **UPN,** remplissez l’UPN du compte d’utilisateur (exemple : belindan@contoso.com) et le nom d’affichage du groupe, puis exécutez ces commandes dans la fenêtre PowerShell ou powerShell ISE.
+Pour supprimer un compte d’utilisateur par son **UPN,** remplissez le nom d’utilisateur upN du compte d’utilisateur (exemple : belindan@contoso.com) et le nom d’affichage du groupe, puis exécutez ces commandes dans la fenêtre PowerShell ou powerShell ISE.
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"
@@ -115,7 +115,7 @@ $groupName="<display name of the group>"
 Add-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayName -eq $userName }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-Pour supprimer un compte d’utilisateur par son **UPN,** remplissez l’UPN du compte d’utilisateur (exemple : belindan@contoso.com) et le nom d’affichage du groupe, puis exécutez ces commandes dans la fenêtre PowerShell ou powerShell ISE.
+Pour supprimer un compte d’utilisateur par son **UPN,** remplissez le nom d’utilisateur upN du compte d’utilisateur (exemple : belindan@contoso.com) et le nom d’affichage du groupe, puis exécutez ces commandes dans la fenêtre PowerShell ou powerShell ISE.
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"

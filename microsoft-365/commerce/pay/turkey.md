@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d30a9ecfa01b25d8bde159903fdcb843f5ebb8d2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: da6836b7eba0a9ffe901eed0cb301d823e831feae9440c9895781e5ea6402dd1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843214"
 ---
 # <a name="payment-information-for-turkey"></a>Informations de paiement pour la Turquie
 
