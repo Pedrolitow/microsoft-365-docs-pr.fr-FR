@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 68b627c7cdc215317d737a637316e5edf0971322
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e74ca9a12938028d3e9710e46de8b2f82bca00a3c01f241c74b344f9e211d082
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650918"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890018"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison
 
@@ -74,7 +74,7 @@ Si l’intégration s’est correctement terminée,  mais que les appareils n’
 
 2. Go to **Windows Logs**  >  **Application**.
 
-3. Recherchez un événement à partir de la source **d’événement WDATPOnboarding.**
+3. Recherchez un événement à partir de la source de l’événement **WDATPOnboarding.**
 
 Si le script échoue et que l’événement est une erreur, vous pouvez vérifier l’ID d’événement dans le tableau suivant pour vous aider à résoudre le problème.
 
@@ -85,7 +85,7 @@ ID d’événement | Type d’erreur | Étapes de résolution
 :---:|:---|:---
  `5` | Des données de désintboarding ont été trouvées, mais n’ont pas pu être supprimées | Vérifier les autorisations sur le Registre, plus précisément<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 `10` | Les données d’intégration n’ont pas pu être écrites dans le Registre |  Vérifier les autorisations sur le Registre, plus précisément<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.<br>Vérifiez que le script a été exécuté en tant qu’administrateur.
-`15` |  Échec du démarrage du service SENSE |Vérifiez l’état du service `sc query sense` (commande). Assurez-vous qu’il n’est pas dans un état intermédiaire ( '*Pending_Stopped '*, *' Pending_Running*' ) et essayez d’exécuter le script à nouveau (avec des droits d’administrateur). <br> <br> Si l’appareil s’Windows 10, version 1607 et que la commande est en cours d’exécution, `sc query sense` `START_PENDING` redémarrez l’appareil. Si le redémarrage de l’appareil ne permet pas de résoudre le problème, faites une mise à niveau vers KB4015217 et tentez à nouveau l’intégration.
+`15` |  Échec du démarrage du service SENSE |Vérifiez l’état du service `sc query sense` (commande). Assurez-vous qu’il n’est pas dans un état intermédiaire ( '*Pending_Stopped '*, *' Pending_Running*' ) et essayez d’exécuter le script à nouveau (avec des droits d’administrateur). <br> <br> Si l’appareil s’Windows 10, version 1607 et que la commande est en cours d’exécution, `sc query sense` `START_PENDING` redémarrez l’appareil. Si le redémarrage de l’appareil ne permet pas de résoudre le problème, mettre à niveau vers KB4015217 et réessayer l’intégration.
 `15` | Échec du démarrage du service SENSE | Si le message de l’erreur est le suivant : erreur système 577 ou erreur 1058 s’est produite, vous devez activer le pilote ELAM Antivirus Microsoft Defender, voir Vérifier que [Antivirus Microsoft Defender](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) n’est pas désactivé par une stratégie pour obtenir des instructions.
 `30` |  Le script n’a pas réussi à attendre le démarrage de l’exécution du service | Le service a peut-être mis plus de temps à démarrer ou a rencontré des erreurs lors de la tentative de démarrage. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les erreurs à l’aide de [l’Observateur d’événements.](event-error-codes.md)
 `35` |  Le script n’a pas trouvé la valeur de Registre d’état d’intégration nécessaire | Lorsque le service SENSE démarre pour la première fois, il écrit l’état d’intégration à l’emplacement du Registre<br>`HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`.<br> Le script n’a pas réussi à le trouver après plusieurs secondes. Vous pouvez le tester manuellement et vérifier s’il est là. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les erreurs à l’aide de [l’Observateur d’événements.](event-error-codes.md)
@@ -101,7 +101,7 @@ Si vous avez configuré des stratégies dans Intune et qu’elles ne sont pas pr
 Utilisez les tableaux suivants pour comprendre les causes possibles des problèmes lors de l’intégration :
 
 - Microsoft Intune codes d’erreur et OMA-URIs tableau
-- Tableau des problèmes connus de non-conformité
+- Problèmes connus avec la table de non-conformité
 - Tableau des journaux des événements de gestion des périphériques mobiles (MDM)
 
 Si aucun des journaux des événements et des étapes de dépannage ne fonctionne, téléchargez le script local à partir de la **section** Gestion des périphériques du portail, puis exécutez-le dans une invite de commandes avec élévation de niveaux.
@@ -161,9 +161,9 @@ Si les outils de déploiement utilisés n’indiquent pas une erreur dans le pro
 
 4. Dans le **volet Action,** cliquez sur **Filtrer le journal actuel.**
 
-5. Sous **l’onglet Filtre,** sous **Niveau d’événement :** sélectionnez **Critique,** **Avertissement** et **Erreur,** puis cliquez sur **OK**.
+5. Sous **l’onglet Filtre,** sous **Niveau d’événement :** sélectionnez **Critique,** **Avertissement** et **Erreur,** puis cliquez sur **OK.**
 
-   ![Image du filtre de journal de l’Observateur d’événements](images/filter-log.png)
+   ![Image du filtre du journal de l’Observateur d’événements](images/filter-log.png)
 
 6. Les événements qui peuvent indiquer des problèmes s’affichent dans le **volet** opérationnel. Vous pouvez essayer de les résoudre en fonction des solutions du tableau suivant :
 
@@ -182,7 +182,7 @@ ID de l'événement | Message | Étapes de résolution
 `30` | Échec de la désactivation du mode $(build.sense.productDisplayName) dans Microsoft Defender pour Endpoint. Code d’échec : %1 | Contactez le support technique.
 `32` | Le service $(build.sense.productDisplayName) n’a pas réussi à demander à s’arrêter après le processus de déboardage. Code d’échec : %1 | Vérifiez que le type de démarrage du service est manuel et redémarrez l’appareil.
 `55` | Échec de la création dulogger automatique ETW sécurisé. Code d’échec : %1 | Redémarrez l’appareil.
-`63` | Mise à jour du type de démarrage du service externe. Nom : %1, type de démarrage réel : %2, type de démarrage attendu : %3, code de sortie : %4 | Identifiez ce qui provoque des modifications dans le type de démarrage du service mentionné. Si le code de sortie n’est pas 0, corrigez manuellement le type de démarrage pour le type de démarrage attendu.
+`63` | Mise à jour du type de démarrage du service externe. Nom : %1, type de démarrage réel : %2, type de démarrage attendu : %3, code de sortie : %4 | Identifiez ce qui provoque des modifications dans le type de démarrage du service mentionné. Si le code de sortie n’est pas 0, corrigez le type de démarrage manuellement pour le type de démarrage attendu.
 `64` | Démarrage du service externe arrêté. Nom : %1, code de sortie : %2 | Contactez le support technique si l’événement continue à apparaître.
 `68` | Le type de démarrage du service est inattendu. Nom du service : %1, type de démarrage réel : %2, type de démarrage attendu : %3 | Identifiez ce qui provoque des modifications dans le type de démarrage. Correction du type de démarrage du service mentionné.
 `69` | Le service est arrêté. Nom du service : %1 | Démarrez le service mentionné. Contactez le support technique s’il est persistant.
@@ -306,7 +306,7 @@ Si la vérification échoue et que votre environnement utilise un proxy pour se 
 Si vous rencontrez des problèmes lors de l’intégration d’un serveur, vous devez suivre les étapes de vérification suivantes pour résoudre les problèmes possibles.
 
 - [Vérifier Microsoft Monitoring Agent (MMA) est installé et configuré pour signaler les données du capteur au service](configure-server-endpoints.md)
-- [S’assurer que les paramètres de proxy serveur et de connectivité Internet sont configurés correctement](configure-server-endpoints.md)
+- [S’assurer que les paramètres de proxy serveur et de connectivité Internet sont correctement configurés](configure-server-endpoints.md)
 
 Vous devrez peut-être également vérifier les choses suivantes :
 
@@ -392,7 +392,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration12](images/mecm-12.png)
 
-13. Dans **Les conditions requises,** **sélectionnez Suivant**.
+13. In **Requirements**, select **Next**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration13](images/mecm-13.png)
 
@@ -461,7 +461,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
     ![Image de Microsoft Endpoint Configuration Manager configuration30](images/mecm-30.png)
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Résoudre des problèmes avec Microsoft Defender pour point de terminaison](troubleshoot-mdatp.md)
 - [Intégration des appareils](onboard-configure.md)

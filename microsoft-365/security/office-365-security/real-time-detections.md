@@ -16,12 +16,12 @@ description: Utilisez les détections de l’Explorateur ou en temps réel pour 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d0a9ba7ee40c8ad97df745a20d6b5b3314bb3d8
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: a89ed9eed07be2d66336dcab799e45d155151fce252f163c1d0eb27f43a4ac46
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083187"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867474"
 ---
 # <a name="explorer-and-real-time-detections-basics"></a>Informations de base sur les détections en temps réel et de l’Explorateur
 
@@ -35,11 +35,11 @@ Contenu de cet article :
 - [Licences et autorisations requises](#required-licenses-and-permissions)
 
 > [!NOTE]
-> Cela fait partie d’une série de **3 articles** sur l’Explorateur (également connu sous le nom d’Explorateur de **menaces),** la sécurité du courrier électronique et les bases de détection en temps réel et de l’Explorateur **(telles** que les différences entre les outils et les autorisations nécessaires pour les utiliser). Les deux autres articles de cette série sont le recherche de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) et la [sécurité de messagerie avec l’Explorateur.](email-security-in-microsoft-defender.md)
+> Cela fait partie d’une série de **3 articles** sur l’Explorateur (également appelé Explorateur de **menaces),** la sécurité du courrier électronique et les bases de détection en temps réel et de l’Explorateur **(telles** que les différences entre les outils et les autorisations nécessaires pour les utiliser). Les deux autres articles de cette série sont le recherche de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) et la [sécurité de messagerie avec l’Explorateur.](email-security-in-microsoft-defender.md)
 
 Cet article explique la différence entre l’Explorateur et les rapports de détections en temps réel, ainsi que les licences et autorisations requises.
 
-Si votre organisation dispose de [Microsoft Defender](defender-for-office-365.md)pour Office 365 et que vous disposez des [autorisations,](#required-licenses-and-permissions)vous pouvez utiliser l’Explorateur **(également** appelé Explorateur de menaces) ou les détections en temps réel pour détecter et corriger les **menaces.**
+Si votre organisation dispose de [Microsoft Defender](defender-for-office-365.md)pour Office 365 et que vous disposez des [autorisations,](#required-licenses-and-permissions)vous pouvez utiliser **l’Explorateur** (également appelé Explorateur de menaces) ou les détections en temps réel pour détecter et corriger les **menaces.**
 
 Dans le portail Microsoft 365 Defender ( ), go <https://security.microsoft.com> to **Email & collaboration,** and then choose **Explorer** _or_ **Real-time detections**.
 

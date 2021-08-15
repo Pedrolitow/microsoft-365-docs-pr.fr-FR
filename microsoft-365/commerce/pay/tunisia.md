@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 51a73b78ce3c0b6f70a5edb06060e018314bb3a7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b89d0f6bd9137177f97e28e799dce38c9d119ba8efdd6201454e6ec30f6eede3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537702"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900290"
 ---
 # <a name="payment-information-for-tunisia"></a>Informations de paiement pour la Tunisie
 

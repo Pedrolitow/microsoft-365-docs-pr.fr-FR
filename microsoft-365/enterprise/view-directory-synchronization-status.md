@@ -21,12 +21,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Dans cet article, découvrez comment vérifier l’état de la synchronisation d’annuaires dans Office 365.
-ms.openlocfilehash: cbaae8bbd31f6124c2b0f4984b9a625ffbde538f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 766e3ef112ac9493863df0aa6c9958e89ec93c0e2e0c9e307e7371b536f3cb01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924659"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840754"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Afficher l’état de synchronisation d’annuaires dans Microsoft 365
 
@@ -34,14 +34,14 @@ Si vous avez intégré vos services de domaine Active Directory (AD DS) locaux �
   
 ## <a name="view-directory-synchronization-status"></a>Consulter l’état de synchronisation des annuaires
 
-- Connectez-vous [au Microsoft 365 d’administration](https://admin.microsoft.com) et choisissez **État de la DirSync** sur la page d’accueil.
+- Connectez-vous [au Centre d’administration Microsoft 365](https://admin.microsoft.com) puis choisissez État de la **DirSync** sur la page d’accueil.
 - Vous pouvez également vous  rendre sur Utilisateurs actifs et, sur la page Utilisateurs actifs, choisir Plus de synchronisation \>    \> **d’annuaires.** Dans le volet Synchronisation d’annuaires, choisissez **Go to DirSync management**. 
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Informations sur la page Gérer la synchronisation d’annuaires
 
 Le tableau suivant répertorie les fonctionnalités dont vous pouvez obtenir des informations sur la page.
   
-En cas de problème avec votre synchronisation d’annuaires, les erreurs sont également répertoriées sur cette page. Pour plus d’informations sur les différentes erreurs que vous pouvez rencontrer, voir Identifier les erreurs de synchronisation d’annuaires [dans Microsoft 365](identify-directory-synchronization-errors.md).
+En cas de problème avec la synchronisation d’annuaires, les erreurs sont également répertoriées sur cette page. Pour plus d’informations sur les différentes erreurs que vous pouvez rencontrer, voir Identifier les erreurs de synchronisation d’annuaires [dans Microsoft 365](identify-directory-synchronization-errors.md).
   
 |Item|Objet|
 |:-----|:-----|

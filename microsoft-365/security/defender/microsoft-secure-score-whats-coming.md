@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 90e16f6ef44310960efa45825a3e78f8dec61287
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: ee54beffebaa6e42e58e54de7ba9a1e31a69dc5f576d813b4dfce584d8c4e694
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867546"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qu’arrive-t-il à Microsoft Secure Score ?
 

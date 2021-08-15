@@ -21,12 +21,12 @@ search.appverid:
 description: Découvrez comment utiliser l’cmdlet AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
-ms.openlocfilehash: 77cb1c753db22929ea2c3d14226a3927e6406b89
-ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
+ms.openlocfilehash: 8714334d2c05d312d8a7895c943e21816e31c9297e879b9681639efb92aec426
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53461362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900278"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 
@@ -146,7 +146,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 Vous voyez le message d’erreur suivant :
 
-> HandleError : Échec de la récupération de la stratégie avec PolicyId « AllowSelfServicePurchase » et ErrorMessage - La connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors d’une envoi.
+> HandleError : Échec de récupération de la stratégie avec PolicyId « AllowSelfServicePurchase » et ErrorMessage : la connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors d’un envoi.
 
 Cela peut être dû à une version antérieure de TLS (Transport Layer Security). Pour connecter ce service, vous devez utiliser TLS 1.2 ou supérieur
 
@@ -165,7 +165,7 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 Uninstall-Module -Name MSCommerce
 ```-->
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Gérer les achats en libre-service (administrateur)](manage-self-service-purchases-admins.md) (article)
 

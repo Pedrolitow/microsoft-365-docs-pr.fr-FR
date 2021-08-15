@@ -11,19 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 En savoir plus pour importer et archiver des données dans Microsoft 365.
-ms.openlocfilehash: 0dce81b5251612bc3c3ddb467c658bd4a32d56f7
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 Deparser pour importer et archiver des données à l’Microsoft 365.
+ms.openlocfilehash: 1302ae87900b765f0cdf3ed9e380c6c3361f0760678ef1f459827374a4be00e4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900306"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-symphony"></a>Configurer un connecteur pour archiver des données à partir de Usby
 
-Utilisez [l’analyseur](https://www.17a-4.com/Symphony-dataparser/) de données de 17a-4 LLC afin d’importer et d’archiver des données de communications à des boîtes aux lettres d’utilisateurs dans Microsoft 365 organisation. DataParser inclut un connecteur Deparsy configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur DeParser de données deLyser convertit les données de Lassy au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
+Utilisez [l’analyseur](https://www.17a-4.com/Symphony-dataparser/) de données de 17a-4 LLC pour importer et archiver les données de communications De Lasy dans les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. DataParser inclut un connecteur Deparsy configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur DeParser de données deLyser convertit les données de Lassy au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
-Une fois les données stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la découverte électronique, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur de Typey pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la découverte électronique, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur de Typey pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-symphony-data"></a>Vue d’ensemble de l’archivage des données
 
@@ -33,7 +33,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec 17a-4 pour configurer l’analyseur de données DeParser.
 
-2. Régulièrement, les éléments de Lassy sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
+2. Régulièrement, les éléments de la collection Sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
 3. Le connecteur DataParser que vous créez dans le Centre de conformité Microsoft 365 se connecte à DataParser et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
@@ -77,6 +77,6 @@ Une fois que vous avez créé un connecteur DataParser, vous pouvez afficher l�
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

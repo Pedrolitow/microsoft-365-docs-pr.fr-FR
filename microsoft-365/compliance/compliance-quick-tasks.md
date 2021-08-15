@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Découvrez les tâches qui vous aideront à prendre rapidement en charge la conformité dans Microsoft 365.
-ms.openlocfilehash: 61a057c3666faae51a012dd9db2d4c63ded0f77a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3d8c767c82642c40a9f16792da7697ed7ab85711c95a7834937334bba3504a4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830982"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tâches rapides pour démarrer avec la conformité Microsoft 365
 
@@ -146,7 +146,7 @@ Définir des types d’informations sensibles en fonction du modèle contenu dan
 
 Pour obtenir des instructions pas à pas pour définir des types d’informations sensibles personnalisés, voir Créer un type d’informations sensibles personnalisé dans le Centre de sécurité [& conformité.](./create-a-custom-sensitive-information-type.md)
 
-### <a name="prevent-data-loss"></a>Éviter les pertes de données
+### <a name="prevent-data-loss"></a>Évitez les pertes de données
 
 Les stratégies de protection contre la perte de données [(DLP)](dlp-learn-about-dlp.md) vous permettent d’identifier, de surveiller et de protéger automatiquement les informations sensibles au sein Microsoft 365 organisation. Utilisez les stratégies DLP pour identifier les éléments sensibles dans services Microsoft, empêcher le partage accidentel d’éléments sensibles et aider les utilisateurs à rester conformes sans interrompre leur flux de travail.
 

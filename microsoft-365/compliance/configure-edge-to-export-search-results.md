@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous devez activer la prise en charge ClickOnce pour utiliser la dernière version de Microsoft Edge pour télécharger les résultats de recherche à partir de la recherche de contenu et de la découverte électronique dans le centre de sécurité et conformité.
-ms.openlocfilehash: 60f42d2884c56aaff40bc0a6a979e99698a3cd2e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: ec241d36bc24d72e4c0ea3e30e622e42eb9546bfb4b548220e98a0d9ea1c0334
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830909"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Utiliser l’outil d’exportation eDiscovery dans Microsoft Edge
 
@@ -60,4 +60,4 @@ Pour plus d’informations, voir les rubriques suivantes :
 
 - [Exporter les résultats de la recherche de contenu](export-search-results.md)
 
-- [Comment activer les indicateurs d’expérience dans Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [Comment activer des indicateurs d’expérience dans Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
