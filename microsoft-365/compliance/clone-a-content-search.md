@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez le script PowerShell de cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365.
-ms.openlocfilehash: c64cec2415819dc53f30c303c241e3902f34017d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 526c07ac3ce3ee30137bcb4d51f2c5fee32cc546bdcc5b56795ddea7f0449ac5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918060"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872022"
 ---
 # <a name="clone-a-content-search"></a>Cloner une recherche de contenu
 

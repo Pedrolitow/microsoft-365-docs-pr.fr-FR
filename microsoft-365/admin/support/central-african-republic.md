@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 545e684db95203dc7e464c42f35a217f8ef1cc1b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b8656d40cfc75e62cfaa5a65eb002105fb2464bfbefcb0528e879e400f4ede9c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901886"
 ---
 # <a name="contact-support-for-central-african-republic"></a>Contacter le support pour la République centrale d’Afrique
 

@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 9a9d33d123c1b308d31c80663d1a8fc373e955d53e92d3680d39dc8b1d930d00
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623359"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853786"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 
@@ -60,7 +60,7 @@ ID d’événement|Nom du journal|Description|Source
 Sur un Windows 10, si vous n’utilisez pas Microsoft Defender pour Endpoint et qu’un antivirus tiers est installé, Antivirus Microsoft Defender sera automatiquement désactivé. Si vous utilisez Microsoft Defender pour Endpoint avec un antivirus tiers installé, Antivirus Microsoft Defender démarrera en mode passif, avec des fonctionnalités réduites.
 
 > [!TIP]
-> Le scénario décrit s’applique uniquement aux Windows 10. Les autres versions de Windows [ont des réponses différentes aux](microsoft-defender-antivirus-compatibility.md) Antivirus Microsoft Defender en cours d’utilisation avec des logiciels de sécurité tiers.
+> Le scénario décrit s’applique uniquement aux Windows 10. D’autres versions Windows [ont des réponses différentes aux](microsoft-defender-antivirus-compatibility.md) Antivirus Microsoft Defender en cours d’utilisation avec des logiciels de sécurité tiers.
 
 #### <a name="use-services-app-to-check-if-microsoft-defender-antivirus-is-turned-off"></a>Utiliser l’application Services pour vérifier si Antivirus Microsoft Defender est désactivé
 

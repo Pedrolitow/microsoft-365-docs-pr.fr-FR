@@ -16,16 +16,16 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: a4c7b711c0a977e0980cd0c72f9369833e9e5c65
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0f4ccadd48759f3aa3de959df3ef8104df21520e2dcd59b65567891be31d314a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423595"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871832"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>Obstacles à l’information Microsoft 365
 
-Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations, et prend en charge les moyens de restreindre la communication et la collaboration entre des groupes spécifiques d’utilisateurs si nécessaire. Il peut s’agir de situations ou de scénarios dans lesquelles vous souhaitez restreindre la communication et la collaboration entre deux groupes afin d’éviter qu’un conflit d’intérêts ne se produise dans votre organisation. Cela peut également inclure des situations dans lesquelles vous devez restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes.
+Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations, et prend en charge les moyens de restreindre la communication et la collaboration entre des groupes spécifiques d’utilisateurs si nécessaire. Cela peut inclure des situations ou des scénarios dans lesquelles vous souhaitez restreindre la communication et la collaboration entre deux groupes afin d’éviter qu’un conflit d’intérêts ne se produise dans votre organisation. Cela peut également inclure des situations dans lesquelles vous devez restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes.
 
 Les obstacles aux informations sont pris en charge dans Microsoft Teams, SharePoint Online et OneDrive Entreprise. Un administrateur de conformité ou un administrateur des obstacles à l’information peut définir des stratégies pour autoriser ou empêcher les communications entre des groupes d’utilisateurs Microsoft Teams. Les stratégies de obstacle à l’information peuvent être utilisées dans des situations comme celles-ci :
 
@@ -40,10 +40,10 @@ Pour configurer les obstacles à l’information pour votre organisation, utilis
 
 ![Étapes des obstacles aux informations sur les solutions à risque internes](../media/ir-solution-ib-steps.png)
 
-1. En savoir plus [sur les obstacles aux informations](information-barriers.md) dans Microsoft 365
+1. En savoir plus [sur les obstacles aux informations](information-barriers.md) Microsoft 365
 2. Configurer les [conditions préalables et les autorisations](information-barriers-policies.md#prerequisites)
 3. Segmenter [les utilisateurs de votre organisation](information-barriers-policies.md#part-1-segment-users)
-4. Créer et configurer des stratégies de [obstacle à l’information](information-barriers-policies.md#part-2-define-information-barrier-policies)
+4. Créer et configurer des stratégies [d’obstacle aux informations](information-barriers-policies.md#part-2-define-information-barrier-policies)
 5. Appliquer des [stratégies de obstacle à l’information](information-barriers-policies.md#part-3-apply-information-barrier-policies)
 
 ## <a name="more-information-about-information-barriers"></a>Plus d’informations sur les obstacles aux informations

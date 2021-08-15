@@ -18,12 +18,12 @@ ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez un fichier CSV d’une recherche de contenu existante pour créer une recherche de liste d’ID qui renvoie des éléments de courrier spécifiques.
-ms.openlocfilehash: 37a398d0896fcfd7b7282bda1f6a549ed9f53601
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: db22ac702e71004d73728350acf4242c9a5ac25d59749584dc8a7948ff2d1065
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871949"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Préparer un fichier CSV pour une recherche de contenu de liste d’ID
 
@@ -33,7 +33,7 @@ Vous pouvez rechercher des messages électroniques de boîte aux lettres spécif
 
 Voici une vue d’ensemble rapide du processus de création d’une recherche de liste d’ID.
 
-1. Créez et exécutez une recherche dans le centre Microsoft 365 conformité.
+1. Créez et exécutez une nouvelle recherche dans le Centre de conformité Microsoft 365.
 
 2. Exporter les résultats de recherche de contenu ou le rapport de recherche de contenu. Pour plus d’informations, voir :
 
@@ -59,7 +59,7 @@ Vous pouvez utiliser un fichier CSV à partir d’une recherche qui incluait des
 2. Dans la **colonne Sélectionnée,** tapez **Oui** dans la cellule qui correspond à l’élément que vous souhaitez rechercher. Répétez cette étape pour chaque élément que vous souhaitez rechercher.
 
     > [!IMPORTANT]
-    > Lorsque vous ouvrez le fichier CSV dans Excel, le format de données de la colonne **ID** de document a peut-être été modifié en **Général**. Cela entraîne l’affichage de l’ID de document pour un élément en notation scientifique. Par exemple, l’ID de document « 481037338205 » est affiché sous la référence « 4.81037E+11 ». Si cela se produit, vous devez effectuer les étapes suivantes  pour modifier le format de données de la colonne **ID** de document en numéro afin de restaurer le format correct pour l’ID de document. Si vous ne le faites pas, la recherche de liste d’ID qui utilise le fichier CSV échoue.
+    > Lorsque vous ouvrez le fichier CSV dans Excel, le format de données de la colonne **ID** de document a peut-être été modifié en **Général**. Cela entraîne l’affichage de l’ID de document pour un élément en notation scientifique. Par exemple, l’ID de document de « 481037338205 » s’affiche sous la mesure « 4.81037E+11 ». Si cela se produit, vous devez effectuer les étapes suivantes  pour modifier le format de données de la colonne **ID** de document en numéro afin de restaurer le format correct pour l’ID de document. Si vous ne le faites pas, la recherche de liste d’ID qui utilise le fichier CSV échoue.
 
 3. Cliquez avec le bouton droit sur **l’intégralité de** la colonne ID de document et **sélectionnez Format de cellule.**
 
@@ -100,6 +100,6 @@ L’étape suivante consiste à créer une recherche de liste d’ID et à soume
 
 6. Afficher un aperçu ou exporter les éléments renvoyés par la recherche de liste d’ID.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Si vous déplacez une boîte aux lettres après avoir créé une recherche de liste d’ID, la requête de recherche ne retourne pas les éléments spécifiés. Cela est dû au fait que la **propriété DocumentId** des éléments de boîte aux lettres est modifiée lorsqu’une boîte aux lettres est déplacée. Dans les rares cas où une boîte aux lettres est déplacée après avoir créé une recherche de liste d’ID, vous devez créer une recherche de contenu (ou mettre à jour les résultats de recherche pour une recherche existante), puis exporter les résultats ou le rapport de recherche pour générer des fichiers CSV mis à jour qui peuvent être utilisés pour créer une recherche de liste d’ID.

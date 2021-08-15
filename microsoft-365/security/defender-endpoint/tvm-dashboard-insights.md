@@ -1,7 +1,7 @@
 ---
 title: 'Informations sur le tableau de bord : Gestion des menaces et des vulnérabilités'
 description: Le tableau Gestion des menaces et des vulnérabilités de bord peut aider SecOps et les administrateurs de sécurité à faire face aux menaces de cybersécurité et à renforcer la résilience de sécurité de leur organisation.
-keywords: Microsoft Defender pour Endpoint-tvm, tableau de bord Microsoft Defender pour Endpoint-tvm, & gestion des vulnérabilités contre les menaces, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités contre les menaces basées sur les risques, configuration de la sécurité, Score de sécurité Microsoft pour les appareils, score d’exposition
+keywords: Microsoft Defender pour Endpoint-tvm, Microsoft Defender pour le tableau de bord Endpoint-tvm, & gestion des vulnérabilités contre les menaces, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités contre les menaces basées sur les risques, configuration de la sécurité, Score de sécurité Microsoft pour les appareils, score d’exposition
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 64b1f19a0e96a861f966db31379e80894dcf5a7b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: abadce38582408ec7105bdfcec7181210a775e85af2354be08bb33aca3b5764e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853766"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Informations sur le tableau de bord : Gestion des menaces et des vulnérabilités
 
@@ -32,7 +32,7 @@ ms.locfileid: "53647978"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -64,7 +64,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide de ce qui se trou
 Zone|Description
 :---|:---
 **Groupes d’appareils sélectionnés (#/#)**|Filtrez les Gestion des menaces et des vulnérabilités que vous souhaitez voir dans le tableau de bord et les cartes par groupes d’appareils. Ce que vous sélectionnez dans le filtre s’applique à l’ensemble Gestion des menaces et des vulnérabilités pages.
-[**Score d'exposition**](tvm-exposure-score.md)|Consultez l’état actuel de l’exposition des appareils de votre organisation aux menaces et vulnérabilités. Plusieurs facteurs affectent le score d’exposition de votre organisation : faiblesses découvertes sur vos appareils, probabilité de violation de vos appareils, valeur des appareils pour votre organisation et alertes pertinentes découvertes avec vos appareils. L’objectif est de réduire le score d’exposition de votre organisation pour être plus sécurisé. Pour réduire le score, vous devez corriger les problèmes de configuration de sécurité associés répertoriés dans les recommandations de sécurité.
+[**Score d’exposition**](tvm-exposure-score.md)|Consultez l’état actuel de l’exposition des appareils de votre organisation aux menaces et vulnérabilités. Plusieurs facteurs affectent le score d’exposition de votre organisation : faiblesses découvertes sur vos appareils, probabilité de violation de vos appareils, valeur des appareils pour votre organisation et alertes pertinentes découvertes avec vos appareils. L’objectif est de réduire le score d’exposition de votre organisation pour être plus sécurisé. Pour réduire le score, vous devez corriger les problèmes de configuration de sécurité associés répertoriés dans les recommandations de sécurité.
 [**Niveau de sécurité Microsoft pour les appareils**](tvm-microsoft-secure-score-devices.md)|Découvrez la posture de sécurité du système d’exploitation, des applications, du réseau, des comptes et des contrôles de sécurité de votre organisation. L’objectif est de résoudre les problèmes de configuration de sécurité associés afin d’augmenter votre score pour les appareils. La sélection des barres vous permettra d’être sur la page **recommandations en matière de** sécurité.
 **Distribution de l’exposition des appareils**|Voir le nombre d’appareils exposés en fonction de leur niveau d’exposition. Sélectionnez une section dans le graphique en doughnut pour aller à la **page** de liste Périphériques et afficher les noms des appareils concernés, le niveau d’exposition, le niveau de risque et d’autres détails tels que le domaine, la plateforme du système d’exploitation, son état d’état d’état, la dernière fois qu’il a été vu et ses balises.
 **Recommandations de sécurité principales**|Consultez les recommandations de sécurité triées qui sont triées et hiérarchisées en fonction de l’exposition aux risques de votre organisation et de l’urgence dont elle a besoin. Sélectionnez **Afficher plus** pour afficher le reste des recommandations de sécurité dans la liste. Sélectionnez **Afficher les exceptions** pour la liste des recommandations qui ont une exception.
@@ -74,7 +74,7 @@ Zone|Description
 
 Pour plus d’informations sur les icônes utilisées dans l’ensemble du portail, voir [Microsoft Defender pour les icônes de point de terminaison.](portal-overview.md#microsoft-defender-for-endpoint-icons)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Score d'exposition](tvm-exposure-score.md)

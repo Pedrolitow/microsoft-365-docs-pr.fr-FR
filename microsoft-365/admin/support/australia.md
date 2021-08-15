@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 94d8996f876451fd30e39c08cdff9cb7d8c61996
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: a1c6fb4d7b643746aa66fa9bbe29b286f403e1a4e78bb97e15a3a782e0f2f3f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852922"
 ---
 # <a name="contact-support-for-australia"></a>Contacter le support pour l’Australie
 
@@ -31,9 +31,9 @@ ms.locfileid: "52296610"
 
 Anglais : Mon-Fri 9h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Autre Téléphone numéro : 02 8223 9959
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 219689783dbd98c1b6dfa09a2164cc4d350ffd9c
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: a3895b2d3e5ee435f0aeb1bb9b2becf23b6da71ecd387bbbc06fac3f1941a8d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838818"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 
@@ -30,7 +30,7 @@ ms.locfileid: "53029632"
 
 **S’applique à :**
 - [Microsoft 365 Defender](microsoft-365-defender.md)
-- [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+- [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 ## <a name="quick-reference"></a>Référence rapide
 
@@ -143,7 +143,7 @@ Ce tableau est une référence rapide de la gestion des menaces où des changeme
 
 ****
 
-|Domaine|Description de la modification|
+|Zone|Description de la modification|
 |---|---|
 |[Enquête](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|Regroupe les fonctionnalités ERA dans [Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) et [Defender pour les points de terminaison](../defender-endpoint/automated-investigations.md). Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.|
 |[File d’attente des alertes](../../compliance/alert-policies.md)|Le **volet volant Afficher les alertes** dans le Centre de sécurité & conformité inclut désormais des liens vers Microsoft 365 Defender. Cliquez sur le **lien Ouvrir la page d’alerte** Microsoft 365 Defender s’ouvre. Vous pouvez accéder à la page **Affichage des alertes** en cliquant sur une alerte Office 365 dans la file d’attente Alertes.|

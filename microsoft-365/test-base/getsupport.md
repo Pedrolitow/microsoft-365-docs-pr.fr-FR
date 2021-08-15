@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: a160037400b78e4fbd61ede9dc371d3d50260af3
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 3554072781dea2397b5a302d7a497168c370c7f832cfe75c6b4a5c91c5640cdb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322734"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852970"
 ---
 # <a name="additional-support"></a>Prise en charge supplémentaire
 

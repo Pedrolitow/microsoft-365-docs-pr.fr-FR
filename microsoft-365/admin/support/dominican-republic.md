@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66be529b6a300dfd57a59e755311e28c167beffb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6f09f6a4088e0f96ccaeaee4ac41c0ffd244e41eac80b5262d8a8ce7adf6319d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862262"
 ---
 # <a name="contact-support-for-dominican-republic"></a>Contacter le support pour la République dominicaine
 
@@ -35,7 +35,7 @@ Entrer le code 7007
 
 Espagnol : Mon-Fri 9 h à 17 h
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Espagnol : 24 heures sur 24, 7 jours sur 7
 

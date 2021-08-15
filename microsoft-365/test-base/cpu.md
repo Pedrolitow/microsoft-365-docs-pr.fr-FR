@@ -14,18 +14,18 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: bc28c128902ae353fb35c3b6010856ade934a436
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 6e3474566185a1d55c69dfc32d4d9953effd78a2ebac27d27acbf213ec4aae57
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322718"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852986"
 ---
 # <a name="intelligent-cpu-regression-analysis"></a>Analyse intelligente de la régression du processeur
 
 L’utilisation du processeur peut indiquer si une application est affectée par une mise à jour du système d’exploitation. 
 
-La Base de test pour Microsoft 365 fournit aux développeurs de logiciels un aperçu des régressions des performances du processeur qui se produisent lorsque leur application s’exécute sur différentes versions d’une mise à jour du système d’exploitation Windows à venir. 
+La Base de test pour Microsoft 365 fournit aux développeurs de logiciels un aperçu des régressions des performances du processeur qui se produisent lorsque leur application s’exécute sur différentes versions d’une prochaine mise à jour du système d’exploitation Windows. 
 
 Ces régressions du processeur permettent aux développeurs de détecter et de résoudre les problèmes d’application (et les échecs potentiels) avant le déploiement de la mise à jour du système d’exploitation à grande étendue, empêchant ainsi une mauvaise expérience pour l’utilisateur final.
 
@@ -42,7 +42,7 @@ L’utilisation du processeur n’est pas une comparaison comparable à 100 %, c
 
 Dans la capture instantanée ci-dessous, il existe deux version du système d’exploitation par rapport à laquelle les utilisations processeur sont comparées pour la même application. 
 -   L’onglet Utilisation du processeur affiche respectivement les limites supérieure et inférieure de l’utilisation pour les deux sorties au 90e et au 10e centile. 
--   Les graphiques indiquent la série de temps d’utilisation du processeur ainsi que l’utilisation moyenne. 
+-   Les graphiques indiquent la série de temps d’utilisation de l’UC ainsi que l’utilisation moyenne. 
 
 Les clients peuvent désormais utiliser cette fonctionnalité pour déterminer si l’utilisation processeur de leur application est impactée par les mises à jour du système d’exploitation et plus précisément les processus qui ont régressé par rapport à leur exécution précédente.
 
@@ -55,7 +55,7 @@ Ici, nous abordons comment identifier les processus régressés dans l’applica
 
 L’analyse de la régression des performances nécessite le suivi de différents types de compteurs de performance pour chaque processus exécuté sur une machine virtuelle pendant l’exécution du test. 
 
-Cette analyse capture un grand nombre de variables pour un grand nombre de processus pour une application donnée. Tous les processus ne sont pas associés à une application ou à une application. Pour contourner ce problème, un algorithme de classement des informations mutuelle utilisant la probabilité et la théorie de l’information est appliqué pour déterminer les processus les plus pertinents pour une application donnée. 
+Cette analyse capture un grand nombre de variables pour un grand nombre de processus pour une application donnée. Tous les processus ne sont pas associés à une application ou une application. Pour contourner ce problème, un algorithme de classement des informations mutuelle utilisant la probabilité et la théorie de l’information est appliqué pour déterminer les processus les plus pertinents pour une application donnée. 
 
 Une application peut être considérée comme un type de variable aléatoire discrète tandis qu’un processus est considéré comme un autre type de variable aléatoire discrète. L’association des deux variables aléatoires est mesurée à l’aide de probabilités conditionnelles pour la pertinence. 
 

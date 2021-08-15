@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: c7f2d4b7b600e84b2ed35cce320dcb7d7191ecfc
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 64c47566959cbe83088ac7855f8f3cd6a8473d2ad86d5ab2957fbbdf41d10bf7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322797"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852958"
 ---
 # <a name="test-base-sdk-for-python"></a>SDK de base de test pour Python
 
@@ -32,7 +32,7 @@ Avec le SDK de base de test, vous pouvez intégrer la base de test dans votre pi
 
 ## <a name="client-library"></a>Bibliothèque cliente
 
-Installez le package de base de test avec le pip.
+Installez le package de base de test avec un pip.
 
 ~~~
 pip install  Microsoft.Testbase

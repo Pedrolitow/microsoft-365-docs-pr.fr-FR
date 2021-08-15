@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 9ae00853b97cf503c87b92327b8b2c401baa6ec6
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 92f1abc54eff0b1a4fad4838e24dafc7d6c6632ce995ac8634abbd3752bec769
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902030"
 ---
 # <a name="microsoft-365-enterprise-architecture-design-principles"></a>Microsoft 365 Entreprise de conception de l’architecture
 

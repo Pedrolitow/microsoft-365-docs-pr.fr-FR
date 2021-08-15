@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 705ac3cde6def481fcf8c2a517c3de37231496d9
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2ee9237422c42a364866dda930c690fe29da01f7d329df176131f68e06a4f5ff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862250"
 ---
 # <a name="contact-support-for-eritrea"></a>Contacter le support pour l’Éthiopie
 
@@ -39,10 +39,10 @@ Arabe : Sun-Thu 10h00 à 18h00
 
 Anglais : Mon-Fri 10h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Arabe : Sun-Thu 10h00 à 18h00
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

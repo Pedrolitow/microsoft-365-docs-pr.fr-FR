@@ -13,18 +13,18 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4a91bece49c4e1e12e8f0a2d9d2d6f6cf0e2681a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 738a5ae02cba8078b583b138b4e9dfa8733433f07feb69bce96b663a068aaa4e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538888"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853807"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
 Microsoft Defender pour endpoint Device Control Printer Protection empêche les personnes d’imprimer via des imprimantes non d’entreprise ou des imprimantes USB non approuvées.
 
-## <a name="licensing"></a>Licences
+## <a name="licensing"></a>Licence
 
 Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) Pour accéder à printer Protection et l’utiliser, vous devez avoir les informations suivantes :
 
@@ -33,7 +33,7 @@ Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer
 
 ## <a name="permission"></a>Autorisation
 
-Pour le déploiement de stratégie dans Intune, pour déployer une stratégie via OMA-URI, le compte doit avoir les autorisations pour créer, modifier, mettre à jour ou supprimer des profils de configuration d’appareil. Vous pouvez créer des rôles personnalisés ou utiliser n’importe quel rôle intégré avec les autorisations ci-après :
+Pour le déploiement de stratégie dans Intune, pour déployer une stratégie via OMA-URI, le compte doit être autorisé à créer, modifier, mettre à jour ou supprimer des profils de configuration d’appareil. Vous pouvez créer des rôles personnalisés ou utiliser n’importe quel rôle intégré avec les autorisations ci-après :
 
 - Rôle gestionnaire de stratégies et de profils.
 - Ou rôle personnalisé avec les autorisations Créer/Modifier/Mettre à jour/Lecture/Supprimer/Afficher les rapports pour les profils de configuration d’appareil
@@ -72,11 +72,11 @@ Vous pouvez déployer la stratégie via la stratégie de groupe ou Intune.
 |**Liste des appareils d’impression connectés usb approuvés**\*|Autoriser une imprimante USB spécifique|Oui|Oui|Oui|Oui|
 |
 
-\*Cette stratégie doit être utilisée avec les **restrictions d’impression des contrôles d’appareil.**
+\*Cette stratégie doit être utilisée avec activer les **restrictions d’impression des contrôles d’appareil.**
 
 ## <a name="deploy-policy-via-intune"></a>Déployer une stratégie via Intune
 
-Pour Intune, la protection de l’imprimante de contrôle d’appareil prend actuellement en charge l’OMA-URI uniquement.
+Pour Intune, la protection de l’imprimante de contrôle d’appareil prend uniquement en charge l’OMA-URI.
 
 ### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-intune"></a>Scénario 1 : empêcher les personnes d’imprimer via une imprimante non d’entreprise à l’aide d’Intune
 
@@ -102,7 +102,7 @@ Chaîne de prise en charge du programme CSP avec `<enabled/>` :
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-La chaîne de prise en charge du programme CSP avec des imprimantes USB approuvées via la propriété « ApprovedUsbPrintDevices » (par `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">` exemple :
+La chaîne de prise en charge du programme CSP avec des imprimantes USB approuvées via la propriété « ApprovedUsbPrintDevices » (par exemple : `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">`
 
 :::image type="content" source="../../media/editrow.png" alt-text="modifier la ligne":::
 

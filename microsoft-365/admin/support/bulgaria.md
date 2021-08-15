@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f867f79e6d6107325e6cf6e92ef71fdbc8c4a4d3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2091ed4b6ce6d6796585964ad86643234e1184da681b8258d115ada366ddae32
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296418"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901910"
 ---
 # <a name="contact-support-for-bulgaria"></a>Contacter le support pour la Bulgarie
 
@@ -33,4 +33,4 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a881ff4f5ed844282b36a573639a253c07bea2f4
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: aed7cb7320e000cbbec4733ebe9e6543c25a497da77df5af0667a2e67cce796a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901850"
 ---
 # <a name="contact-support-for-china-prc"></a>Contacter le support technique pour la Chine (RPC)
 
@@ -33,11 +33,11 @@ Chinois (Mandarin) : Mon-Fri 9h00-18h00
 
 Anglais : Mon-Fri 9h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Chinois (Mandarin) : Mon-Fri 9h00-18h00
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Autre Téléphone : 400 920 0365 (Mobile)
 
@@ -53,7 +53,7 @@ Autre Téléphone : 400 920 0365 (Mobile)
 
 Chinois et anglais : Mon-Fri 9 h à 18 h
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Prise en charge du téléphone chinois et anglais : Mon-Fri 9h00 à 21h00
 

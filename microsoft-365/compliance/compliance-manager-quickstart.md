@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le guide de démarrage rapide du Gestionnaire de conformité pour vous aider tout au long de votre parcours de compréhension, de mise en place et d’utilisation du Gestionnaire de conformité.
-ms.openlocfilehash: 59d833c74c0d56d82d3f4ae4170e1bbd32638a49
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 28e6763947e04f5c0f924f8c832de34a47dcf7ab32ec3e8e9bba14fddb7976ad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419594"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872000"
 ---
 # <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
 
-**Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider tout au long de votre parcours d’utilisation du Gestionnaire de conformité Microsoft pour gérer la conformité de votre organisation avec les réglementations, stratégies et normes.
+**Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider tout au long de votre parcours d’utilisation du Gestionnaire de conformité Microsoft pour gérer la conformité de votre organisation avec les réglementations, les stratégies et les normes.
 
 Le Gestionnaire de conformité fournit des données intelligentes et actionnables lors de votre première visite. Le Gestionnaire de conformité offre également des fonctionnalités avancées pour la mise à l’échelle de votre conformité lorsque vous êtes prêt. Les évaluations disponibles dépendent de votre contrat de licence . [en savoir plus.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
