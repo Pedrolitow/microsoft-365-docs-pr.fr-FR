@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser l’outil Microsoft 365 de recherche dans le journal d’audit pour résoudre les problèmes de support courants pour les comptes de messagerie.
-ms.openlocfilehash: 22d511fa2ad538c4ec9729fb051caefad6c3e974
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 2a758114f361f3d13f0393780ef9b1e149fd421960bee627e3fb4ff41d100859
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341048"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906381"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Effectuer une recherche dans le journal d’audit pour examiner les problèmes de support courants
 
@@ -33,7 +33,7 @@ Cet article explique comment utiliser l’outil de recherche du journal d’audi
 - Déterminer qui a installé le forwarding de courrier pour une boîte aux lettres
 - Déterminer si un utilisateur a supprimé des éléments de courrier dans sa boîte aux lettres
 - Déterminer si un utilisateur a créé une règle de boîte de réception
-- Examiner pourquoi un utilisateur extérieur à votre organisation a réussi à se connecter
+- Examiner les raisons pour lesquelles une connexion a réussi par un utilisateur extérieur à votre organisation
 - Rechercher les activités de boîte aux lettres effectuées par les utilisateurs avec des licences non E5
 - Rechercher les activités de boîte aux lettres effectuées par des utilisateurs délégués
 
@@ -43,7 +43,7 @@ Chacun des scénarios de dépannage décrits dans cet article est basé sur l’
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorisations requises pour utiliser l’outil de recherche du journal d’audit
 
-Le rôle Journaux View-Only audit ou Journaux d’audit doit vous être attribué dans Exchange Online pour effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Les administrateurs globaux Office 365 et Microsoft 365 sont automatiquement ajoutés en tant que membres du groupe de rôles Gestion de l’organisation dans Exchange Online. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
+Le rôle Journaux View-Only audit ou Journaux d’audit doit vous être attribué dans Exchange Online pour effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Les administrateurs globaux dans votre client Office 365 et Microsoft 365 sont automatiquement des membres du groupe de rôle Gestion de l'organisation dans Exchange Online. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
 ### <a name="running-audit-log-searches"></a>Exécution de recherches dans le journal d’audit
 
@@ -144,7 +144,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 - **Messages supprimés du dossier Éléments supprimés :** Cette activité correspond à l’action d’audit de boîte aux lettres **SoftDelete.** Cette activité est également enregistrée lorsqu’un utilisateur supprime définitivement un élément en le sélectionnant et en appuyant sur **Shift+Supprim.** Une fois qu’un élément est supprimé définitivement, l’utilisateur peut le récupérer jusqu’à l’expiration de la période de rétention des éléments supprimés.
 
-- **Messages purgés de la boîte aux lettres :** Cette activité correspond à l’action d’audit de boîte aux lettres **HardDelete.** Cette information est consignée lorsqu’un utilisateur purge un élément du dossier Éléments récupérables. Les administrateurs peuvent utiliser l’outil de recherche de contenu dans le centre de sécurité et conformité pour rechercher et récupérer des éléments purgés jusqu’à ce que la période de rétention des éléments supprimés expire ou plus longtemps si la boîte aux lettres de l’utilisateur est en conservation.
+- **Messages purgés de la boîte aux lettres :** Cette activité correspond à l’action d’audit de boîte aux lettres **HardDelete.** Cette information est consignée lorsqu’un utilisateur purge un élément du dossier Éléments récupérables. Les administrateurs peuvent utiliser l’outil de recherche de contenu dans le centre de sécurité et conformité pour rechercher et récupérer des éléments purgés jusqu’à l’expiration de la période de rétention des éléments supprimés ou plus longtemps si la boîte aux lettres de l’utilisateur est en conservation.
 
 **Date de début** **et de fin : sélectionnez** une plage de dates applicable à votre enquête.
 
@@ -152,9 +152,9 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 **Fichier, dossier ou site :** Laissez ce champ vide.
 
-Après avoir exécuté la recherche, vous pouvez filtrer les résultats de la recherche afin d’afficher les enregistrements d’audit pour les éléments supprimés (supprimés(s) (supprimés(s) (logiciels) ou les éléments supprimés (supprimés définitivement). Sélectionnez l’enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.** Des informations supplémentaires sur l’élément supprimé, telles que la ligne d’objet et l’emplacement de l’élément lors de sa suppression, sont affichées dans le champ **AffectedItems.** Les captures d’écran suivantes illustrent un exemple du champ **AffectedItems** à partir d’un élément supprimé (supprimé( ou supprimé) et d’un élément supprimé (supprimé définitivement).
+Après avoir exécuté la recherche, vous pouvez filtrer les résultats de la recherche pour afficher les enregistrements d’audit pour les éléments supprimés (supprimés(s) ou les éléments supprimés (supprimés définitivement). Sélectionnez l’enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.** Des informations supplémentaires sur l’élément supprimé, telles que la ligne d’objet et l’emplacement de l’élément lors de sa suppression, sont affichées dans le champ **AffectedItems.** Les captures d’écran suivantes illustrent un exemple du champ **AffectedItems** à partir d’un élément supprimé (supprimé( ou supprimé) et d’un élément supprimé (supprimé définitivement).
 
-**Exemple de champ AffectedItems pour l’élément supprimé (supprimé de la demande)**
+**Exemple de champ AffectedItems pour l’élément supprimé (supprimé(s)**
 
 ![Enregistrement d’audit pour l’élément supprimé (supprimé de nouveau)](../media/softdeleteditem.png)
 
@@ -180,7 +180,7 @@ Lorsque les utilisateurs créent une règle de boîte de réception pour Exchang
 
 Voici comment configurer une requête de recherche de journal d’audit pour ce scénario :
 
-**Activités :** Sous **Exchange des activités de boîte** aux lettres, sélectionnez Nouvelle boîte de réception **Créer/modifier/activer/désactiver la règle de** boîte de réception .
+**Activités :** Sous **Exchange activités de boîte aux** lettres, sélectionnez Nouvelle boîte de réception **Créer/modifier/activer/désactiver la règle de** boîte de réception .
 
 **Date de début** **et de fin : sélectionnez** une plage de dates applicable à votre enquête.
 
@@ -188,7 +188,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 **Fichier, dossier ou site :** Laissez ce champ vide.
 
-Après avoir exécuté la recherche, tous les enregistrements d’audit pour cette activité sont affichés dans les résultats de la recherche. Sélectionnez un enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.** Les informations sur les paramètres de règle de boîte de réception sont affichées dans le **champ Paramètres.** La capture d’écran et les descriptions suivantes mettent en évidence les informations sur les règles de boîte de réception.
+Après avoir exécuté la recherche, tous les enregistrements d’audit pour cette activité sont affichés dans les résultats de la recherche. Sélectionnez un enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.** Les informations sur les paramètres de règle de boîte de réception sont affichées dans **le champ Paramètres.** La capture d’écran et les descriptions suivantes mettent en évidence les informations sur les règles de boîte de réception.
 
 ![Enregistrement d’audit pour la nouvelle règle de boîte de réception](../media/NewInboxRuleRecord.png)
 
@@ -200,9 +200,9 @@ c. Le *paramètre MoveToFolder* spécifie l’action de la règle de boîte de r
 
 d. Le **champ UserId** indique l’utilisateur qui a créé la règle de boîte de réception spécifiée dans le **champ ObjectId.** Cet utilisateur est également affiché dans la colonne **Utilisateur** sur la page des résultats de la recherche.
 
-## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Examiner pourquoi un utilisateur extérieur à votre organisation a réussi à se connecter
+## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Examiner les raisons pour lesquelles une connexion a réussi par un utilisateur extérieur à votre organisation
 
-Lors de l’examen des enregistrements d’audit dans le journal d’audit, vous pouvez voir des enregistrements qui indiquent qu’un utilisateur externe a été authentifié par Azure Active Directory et connecté à votre organisation. Par exemple, un administrateur dans contoso.onmicrosoft.com peut voir un enregistrement d’audit indiquant qu’un utilisateur d’une autre organisation (par exemple, fabrikam.onmicrosoft.com) s’est connecté contoso.onmicrosoft.com. De même, vous pouvez voir des enregistrements d’audit qui indiquent que les utilisateurs avec un compte Microsoft (MSA), comme un compte Outlook.com ou Live.com, se sont connectés correctement à votre organisation. Dans ces situations, l’activité auditée est connectée par **l’utilisateur.** 
+Lors de l’examen des enregistrements d’audit dans le journal d’audit, vous pouvez voir des enregistrements qui indiquent qu’un utilisateur externe a été authentifié par Azure Active Directory et s’est connecté à votre organisation. Par exemple, un administrateur dans contoso.onmicrosoft.com peut voir un enregistrement d’audit indiquant qu’un utilisateur d’une autre organisation (par exemple, fabrikam.onmicrosoft.com) s’est connecté contoso.onmicrosoft.com. De même, vous pouvez voir des enregistrements d’audit qui indiquent que les utilisateurs avec un compte Microsoft (MSA), comme un compte Outlook.com ou Live.com, se sont connectés correctement à votre organisation. Dans ces situations, l’activité auditée est connectée **par l’utilisateur.** 
 
 Ce comportement est inhérent au produit. Azure Active Directory (Azure AD), le service d’annuaire,  autorise une authentification directe lorsqu’un utilisateur externe tente d’accéder à un site SharePoint ou à un emplacement OneDrive dans votre organisation. Lorsque l’utilisateur externe tente de le faire, il est invité à entrer ses informations d’identification. Azure AD utilise les informations d’identification pour authentifier l’utilisateur, ce qui signifie que seul Azure AD vérifie que l’utilisateur est bien celui qu’il dit être. L’indication de la connexion réussie dans l’enregistrement d’audit est le résultat de l’authentification de l’utilisateur par Azure AD. La connexion réussie ne signifie pas que l’utilisateur a pu accéder à des ressources ou effectuer d’autres actions dans votre organisation. Il indique uniquement que l’utilisateur a été authentifié par Azure AD. Pour qu’un utilisateur pass-through accède aux ressources SharePoint ou OneDrive, un utilisateur de votre organisation doit explicitement partager une ressource avec l’utilisateur externe en lui envoyant une invitation de partage ou un lien de partage anonyme. 
 
@@ -219,9 +219,9 @@ Voici un exemple et des descriptions des propriétés pertinentes dans un enregi
 
    c. La **propriété ApplicationId** identifie l’application qui a déclenché la demande d’inscription. La valeur 00000003-0000-0ff1-ce00-0000000000000 affichée dans la propriété ApplicationId de cet enregistrement d’audit indique SharePoint Online. OneDrive Entreprise également le même ApplicationId.
 
-   d. Cela indique que l’authentification directe a réussi. En d’autres termes, l’utilisateur a été authentifié avec succès par Azure AD. 
+   d. Cela indique que l’authentification directe a réussi. En d’autres termes, l’utilisateur a été authentifié par Azure AD. 
 
-   e. La **valeur RecordType** de **15** indique que l’activité auditée (UserLoggedIn) est un événement de session du service STS (Secure Token Service) dans Azure AD.
+   e. La **valeur RecordType** de **15** indique que l’activité auditée (UserLoggedIn) est un événement de session stS (Secure Token Service) dans Azure AD.
 
 Pour plus d’informations sur les autres propriétés affichées dans un enregistrement d’audit UserLoggedIn, consultez les informations de schéma liées à Azure AD dans le schéma de l’API activité de gestion [Office 365.](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)
 

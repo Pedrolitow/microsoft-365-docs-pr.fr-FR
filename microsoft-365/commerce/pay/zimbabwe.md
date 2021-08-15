@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e6dcb107cc68d51584434e5e91a1ecdf18dda471
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5078678b01c3cc42331b94c2ba05a4ea2fd110720e27075de6a61f5a42abd5d1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536141"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861338"
 ---
 # <a name="payment-information-for-zimbabwe"></a>Informations de paiement pour le Zimbabwe
 

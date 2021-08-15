@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Feuille de route pour configurer vos services cloud pour Microsoft 365.
-ms.openlocfilehash: 3303d91b5ec72090c69ae0b1fb14434e03c83729
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b4de1f40ff845f59903708da927eeb29cec5391527dfcb31cf952d221a1beb19
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300024"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850230"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Feuille de route des services cloud pour Microsoft 365
 
 Pour bénéficier des avantages en matière de créativité, de travail d’équipe et de productivité de Microsoft 365 entreprise, déployez les services cloud qui correspondent le mieux aux besoins de votre organisation.
 
-Si vous avez des déploiements basés sur un serveur existants pour Exchange, SharePoint ou Skype Entreprise et que vous souhaitez migrer l’ensemble de votre organisation vers Microsoft 365 pour entreprise, consultez la feuille de route des logiciels client et [serveur.](client-server-software-roadmap-microsoft-365.md) Cette feuille de route inclut Microsoft Office produits clients, les produits Office Server locaux et les appareils Windows &ndash; Microsoft.
+Si vous avez des déploiements basés sur un serveur existants pour Exchange, SharePoint ou Skype Entreprise et que vous souhaitez migrer l’ensemble de votre organisation vers Microsoft 365 pour entreprise, consultez la feuille de route des logiciels client et [serveur.](client-server-software-roadmap-microsoft-365.md) Cette feuille de route inclut Microsoft Office produits clients, les produits Office Server locaux et les appareils microsoft Windows &ndash; client.
 
 ## <a name="deploy"></a>Déployer
 

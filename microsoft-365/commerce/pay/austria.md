@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ca3b04b0ff104760aea224c6fd2739d6f1d7ef0d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7989ceb3ee1183f34c4d4b7f524f11200caf115b11cb992b282fbf9cd57c18e8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872894"
 ---
 # <a name="payment-information-for-austria"></a>Informations de paiement pour l’Autriche
 

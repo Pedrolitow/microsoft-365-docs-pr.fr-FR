@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez l’affichage simplifié dans Microsoft 365 gérer les tâches courantes ou l’affichage tableau de bord pour des paramètres et des tâches plus complexes.
-ms.openlocfilehash: 61b2fb004ab4c1a84b5550065dd44f7ff7e432d8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 585deb5d4d1b7bf5758854ee90f31150ef1ed9e08b06c4402c90b7324965fad8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873158"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
@@ -63,9 +63,9 @@ Si vous avez besoin d’aide, sélectionnez **Aide & support technique.** Recher
 
 Le Centre d’administration Microsoft 365 est l’endroit où vous gérez votre entreprise dans le cloud. Vous pouvez effectuer des tâches telles que l’ajout et la suppression d’utilisateurs, la modification de licences et la réinitialisation des mots de passe.
 
-Les espaces de travail spécialisés, tels que la sécurité ou la gestion des appareils, permettent un contrôle plus granulaire. Pour plus d’informations sur la façon dont les centres d’administration fonctionnent ensemble, voir Qu’en est-il des types spécifiques de [rôles informatiques](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) et d’autres espaces de travail tels que sécurité, gestion des appareils ou Exchange ? dans cet article.
+Les espaces de travail spécialisés, tels que la sécurité ou la gestion des appareils, permettent un contrôle plus granulaire. Pour plus d’informations sur la façon dont les centres d’administration fonctionnent ensemble, voir Qu’en est-il des types spécifiques de [rôles informatiques](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) et d’autres espaces de travail tels que la sécurité, la gestion des appareils ou Exchange ? dans cet article.
 
-To get to the Centre d’administration Microsoft 365, go to [admin.microsoft.com](https://admin.microsoft.com) or, if you’re already signed in, select the app launcher, and choose **Admin**.
+Pour obtenir le Centre d’administration Microsoft 365, admin.microsoft.com [](https://admin.microsoft.com) ou, si vous êtes déjà inscrit, sélectionnez le lanceur d’applications, puis choisissez **Administrateur.**
 
 Dans la page d’accueil, vous pouvez créer des cartes pour les tâches que vous effectuez fréquemment. Pour ajouter une nouvelle carte, sélectionnez Ajouter une **carte,** puis sélectionnez le signe plus à côté de la carte que vous souhaitez ajouter. Lorsque vous avez terminé, fermez la fenêtre. Vous pouvez réorganiser les cartes en les sélectionnant, puis en les faisant glisser vers l’endroit voulu. Pour supprimer une carte, sélectionnez les trois points (autres actions), puis choisissez **Supprimer**.
 
@@ -111,7 +111,7 @@ Si vous ne savez pas à qui contacter votre entreprise ou votre établissement s
 
 2. Go to the **Release preferences** card, and then select **Edit**.
 
-3. Sélectionnez **la version ciblée pour tout le** monde ou la version ciblée pour les **utilisateurs sélectionnés.** Si vous choisissez La version ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
+3. Sélectionnez **la version ciblée pour tout le** monde ou la version ciblée pour les **utilisateurs sélectionnés.** Si vous choisissez la version ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
 
 ## <a name="admin-center-feedback"></a>Commentaires du Centre d’administration
 
@@ -189,7 +189,7 @@ Le Centre d’administration Microsoft 365 est entièrement localisée dans 40 l
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Qu’est-ce qu Microsoft 365 administrateur de serveur ?](what-is-admin.md) (vidéo)\
 [Ajouter un administrateur](add-admin.md) (vidéo)\

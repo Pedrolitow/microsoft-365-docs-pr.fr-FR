@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Validez Microsoft 365 Business Premium paramètres de protection des applications sur Windows 10 et vérifiez que les utilisateurs ne peuvent pas copier les données de l’entreprise dans des fichiers personnels ou des applications non gérées.
-ms.openlocfilehash: e319ffa5149f055b5de45078facc8899acffc223
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ab084ded5ef052a7b85839f0debb96eb1bc5bdf332230293613396825c7263f0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579859"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861715"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Valider les paramètres de protection des applications sur les PC Windows 10
 
@@ -38,7 +38,7 @@ Une fois les [stratégies de protection des applications configurées](protectio
   
  **Vérifiez les paramètres de connexion**
   
-1. Après vous être connecté avec les informations d’identification Microsoft 365 Business Premium et vous êtes connecté à Azure AD comme décrit dans Configurer des appareils Windows pour les utilisateurs [Microsoft 365 Business Premium,](set-up-windows-devices.md)accédez à **Windows Paramètres** Compte d’accès scolaire ou \>  \> scolaire. Choose **Connected to Azure \<tenant name\> AD,** and then choose **Info**.
+1. Une fois que vous vous connectez avec les informations d’identification Microsoft 365 Business Premium et que vous vous connectez à Azure AD comme décrit dans Configurer des appareils Windows pour les utilisateurs [Microsoft 365 Business Premium,](set-up-windows-devices.md)accédez à **Windows Paramètres** Compte d’accès scolaire ou \>  \> scolaire. Choose **Connected to Azure \<tenant name\> AD,** and then choose **Info**.
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -64,7 +64,7 @@ Une fois les [stratégies de protection des applications configurées](protectio
 
  **Vérifiez les paramètres de connexion**
   
-1. Sur votre appareil Windows 10 personnel sur lequel vous êtes connecté en tant qu’utilisateur local,  accédez à **Windows Paramètres,** puis cliquez ou appuyez sur Accès compte travail ou \> **scolaire.**
+1. Sur votre appareil Windows 10 personnel sur lequel vous êtes connecté en tant qu’utilisateur local,  accédez à **Windows Paramètres,** puis cliquez ou appuyez sur Comptes Accès au travail ou à \> **l’école.**
     
 2. Sous **Accès Professionnel ou Scolaire**, choisissez **Connexion**.
     

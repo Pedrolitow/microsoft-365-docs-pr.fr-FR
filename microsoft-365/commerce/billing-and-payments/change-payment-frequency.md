@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment modifier la fréquence de facture pour votre abonnement d’entreprise.
 ms.date: 04/02/2021
-ms.openlocfilehash: 52bf7f3eda473e241f5fef7c5d7c8e7417ab841e
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 14eef03bd156987fe3aa485f8276b37849a58b9cc31e14505de712dbc5655349
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861422"
 ---
 # <a name="change-your-billing-frequency"></a>Modifier votre fréquence de facturation
 
@@ -38,7 +38,7 @@ Lorsque vous achetez un abonnement, vous choisissez une facturation mensuelle ou
 3. Dans la page détails de l’abonnement, dans la section **Paramètres** d’abonnement et de paiement, **sélectionnez Modifier la fréquence de facturation.**
 4. Dans le **volet Modifier la fréquence de** facturation, choisissez l’option de fréquence de facturation, puis sélectionnez **Modifier.**
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Consulter votre facture](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\
 [Paiement de votre abonnement](../../commerce/billing-and-payments/pay-for-your-subscription.md) (article)\

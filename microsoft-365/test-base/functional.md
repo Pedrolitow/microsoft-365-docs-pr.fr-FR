@@ -14,24 +14,24 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 7b5cb907756ec0fb746d303b3ab629e912bf9c96
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 989ec90af003d3b0a488e4ab32afa70e5640dd93cbfab4195d6b048105b80e80
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322846"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888127"
 ---
 # <a name="functional-testing"></a>Test fonctionnel
 
 En tant que fournisseur de logiciels, vous pouvez désormais effectuer des tests fonctionnels personnalisés, à l’aide de l’infrastructure de test de votre choix, via la base de test libre-service pour le portail M365. 
 
-Lors du lancement initial du service, nous avons proposé les tests prédéfinis, qui sont un ensemble prédéfinis de tests pilotés par des scripts standardisés. Toutefois, cela n’a pas pu aboutir à une couverture de test complète pour de nombreux éditeurs de logiciels indépendants. 
+Lors du lancement initial du service, nous avons proposé les tests prédéfinis, qui sont un ensemble prédéfinis de tests pilotés par des scripts standardisés. Toutefois, cela n’a pas pu aboutir à une couverture de test complète pour de nombreux éditeurs de logiciels indépendants ( ISV). 
 
 Par conséquent, en réponse à vos commentaires, nous fournissons à nos isv la possibilité de télécharger des tests fonctionnels automatisés.
 
 Pour utiliser cette fonctionnalité, suivez les étapes ci-dessous :
 
-1. Télécharger fichiers (fichiers binaires, dépendances et scripts) en tant que package .zip unique.
+1. Télécharger vos fichiers (fichiers binaires, dépendances et scripts) en tant que package .zip unique.
 2. Choisissez si vous souhaitez redémarrer les machines virtuelles (VM) de test à différents points d’exécution.
 3. Gérez les options disponibles pour vos scripts.
 4. Choisissez quand appliquer la mise à jour Windows sur la VM lors de l’exécution.
@@ -53,7 +53,7 @@ Onglet 2 : Télécharger composants de votre package en chargeant un fichier zip
 
 Voir aka.ms/usl-package-outline pour plus d’informations. (Remarque : les scripts de test Out-of-Box et le contenu du test fonctionnel doivent être placés dans le même fichier zip). Actuellement, la taille du fichier est limitée à 2 Go.
 
-Onglet 3 : configurer les tâches de test out-of-box et Fonctionnelles. Ici, choisissez le ou les chemins d’accès aux scripts PowerShell qui installeront, lanceront, fermeront et désinstalleront votre application (pour Out-of-Box), ainsi que les chemins d’accès à tous vos scripts personnalisés pour effectuer votre test fonctionnel. **(Remarque : un script pour désinstaller votre application est facultatif).**
+Onglet 3 : configurer les tâches de test out-of-Box et Fonctionnelles. Ici, choisissez le ou les chemins d’accès aux scripts PowerShell qui installeront, lanceront, fermeront et désinstalleront votre application (pour Out-of-Box), ainsi que les chemins d’accès à tous vos scripts personnalisés pour effectuer votre test fonctionnel. **(Remarque : un script pour désinstaller votre application est facultatif).**
 
 Actuellement, vous pouvez charger entre 1 et 8 scripts pour vos tests fonctionnels. (Faites un commentaire sur ce billet si vous avez besoin de davantage de scripts !)
 
@@ -75,7 +75,7 @@ Nous exécuterons un test initial pour installer, lancer, fermer et désinstalle
 
 Le processus de vérification peut prendre jusqu’à 24 heures. Une fois la vérification terminée, vous pouvez voir l’état dans le menu, qui serait l’une des ```Manage packages``` deux entrées :
 
-1. La vérification a réussi : le package sera automatiquement testé par rapport aux mises à jour Windows pré-version pour les builds de système d’exploitation que vous avez sélectionnées.
+1. La vérification réussit : le package sera automatiquement testé par rapport aux mises à jour Windows pré-version pour les builds de système d’exploitation que vous avez sélectionnées.
 ou
 2. Échec de la vérification : vous devrez examiner les raisons de l’échec, résoudre le problème et re-télécharger votre package.
 

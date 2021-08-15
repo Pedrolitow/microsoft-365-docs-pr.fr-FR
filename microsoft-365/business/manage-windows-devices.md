@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment activer les Microsoft 365 pour protéger les appareils joints à Active Directory Windows 10 en quelques étapes seulement.
-ms.openlocfilehash: 9cc7ca01cec667465e9114083fecdc56ef4e7ce7
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 777a86313957920661e613f77afba3aaf4ea6292f252e445f308e3669de663d6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393376"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831404"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Activer les appareils joints Windows 10 domaine à gérer par les Microsoft 365 Business Premium
 
@@ -120,7 +120,7 @@ Si vous ne voyez pas la stratégie Activer l’inscription mdm automatique à l�
 
 À ce stade, vous devriez être en mesure de voir la stratégie Activer l’inscription mdm automatique à l’aide des informations d’identification **Azure AD par défaut** disponibles.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Synchroniser les utilisateurs de domaine avec Microsoft 365](manage-domain-users.md) (article)\
 [Créer un groupe dans le Centre d’administration](../admin/create-groups/create-groups.md) (article)\

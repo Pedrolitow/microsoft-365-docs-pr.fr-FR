@@ -17,20 +17,18 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Découvrez comment activer et gérer des applications tierces dans Microsoft 365 centre d’administration.
+description: Découvrez comment activer et gérer des applications tierces dans Centre d’administration Microsoft 365.
 ms.date: 04/15/2021
-ms.openlocfilehash: 5a486dba03fbd34fe2e409bba8ba41c1f9873141
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d7de6613ae77d70631b926ac1c2e72fab8b1837bacaf6f6f0e5a4735ef5dd06b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831434"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gérer les abonnements d’applications tierces pour votre organisation
 
-Vous pouvez gérer les licences et la facturation des applications tierces dans le nouveau centre d Microsoft 365'administration. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un accès amélioré aux informations de facturation et une plus grande flexibilité pour la gestion des factures. La gestion des abonnements est basée sur la plateforme commerciale mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou auprès d’un fournisseur tiers.
-
-Vous pouvez gérer les licences et la facturation pour les applications tierces dans Microsoft 365 centre d’administration avec le mode aperçu désactivé. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un accès amélioré aux informations de facturation et une plus grande flexibilité pour la gestion des factures. La gestion des abonnements est basée sur la plateforme commerciale mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou auprès d’un fournisseur tiers.
+Vous pouvez gérer les licences et la facturation des applications tierces dans la nouvelle Centre d’administration Microsoft 365. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un accès amélioré aux informations de facturation et une plus grande flexibilité pour la gestion des factures. La gestion des abonnements est basée sur la plateforme commerciale mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou auprès d’un fournisseur tiers.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Comment obtenir des applications de logiciel en tant que service
 
@@ -40,14 +38,14 @@ Il existe plusieurs façons d’acheter des applications tierces.
 - **Achat de partenaire** : travaillez avec un partenaire via l’Partner Center pour acheter des abonnements.
 - **Proposition Microsoft** : répondre à une proposition de Microsoft Sales qui inclut des applications tierces.
 
-Une fois que les clients achètent les applications et acceptent le contrat client Microsoft, ils peuvent les gérer dans Microsoft 365 centre d’administration ou Microsoft Store pour Entreprises.
+Une fois que les clients achètent les applications et acceptent le contrat client Microsoft, ils peuvent les gérer dans Centre d’administration Microsoft 365 ou Microsoft Store pour Entreprises.
 
 Les fournisseurs d’applications vendent leurs applications à un taux fixe ou en achetant des licences pour les utilisateurs.
 
 - **Taux fixe** : également appelé tarification basée sur le site, les applications sont payantes avec un prix mensuel ou annuel. Sur la page de l’application, la quantité de licences est répertoriée sur Unlimited.
 - **Licences :** les applications sont payantes par licence. Les clients attribuent des licences à chaque utilisateur de leur organisation
 
-## <a name="supported-regions"></a>Régions prises en charge
+## <a name="supported-regions"></a>Régions pris en charge
 
 La prise en charge des applications tierces est disponible dans ces régions :
 
@@ -76,7 +74,7 @@ Vous serez dirigé vers le site de l’éditeur d’application où vous pouvez 
 
 ## <a name="manage-third-party-apps"></a>Gérer les applications tierces
 
-Les administrateurs gèrent les applications tierces dans deux emplacements : Microsoft 365 centre d’administration et le portail du fournisseur d’applications tiers.
+Les administrateurs gèrent les applications tierces dans deux emplacements : Centre d’administration Microsoft 365 et le portail du fournisseur d’applications tiers.
 
 Voici ce que vous pouvez faire dans chaque portail.
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer votre domaine de Google Workspace vers Microsoft 365 entreprise.
-ms.openlocfilehash: 814e714527467bb6e7008ea141989f3117ddcdd8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 77d1284d842c862eb8044db0fc461618e48300756ca462fa3ac957a4eea82e84
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578770"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861574"
 ---
 # <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Ajoutez votre domaine Google Workspace à Microsoft 365
 
@@ -36,15 +36,15 @@ Ajoutez votre domaine Google Workspace à Microsoft 365 entreprise afin de conti
 
 ## <a name="try-it"></a>Essayez !
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com).
-1. Dans le Microsoft 365 d’administration, dans le navigation gauche, sélectionnez Afficher **tout, Paramètres** puis **Domaines**.
+1. Go to the [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+1. Dans le Administration Microsoft 365, dans le navigation de gauche, sélectionnez Afficher **tout, Paramètres** puis **Domaines**.
 1. Choisissez **Ajouter un domaine,** entrez votre nom de domaine, puis **sélectionnez Utiliser ce domaine.** 
 1. Choose, **Add a TXT record to the domains DNS records,** select **Continue**, and copy the TXT value. 
 1. Revenir à la [console d’administration Google,](https://admin.google.com)choisissez **Domaines,** Gérer les domaines, Afficher les **détails,** Gérer le domaine, **DNS,** puis faites défiler vers le bas jusqu’aux enregistrements de ressources **personnalisés.**   
 1. Ouvrez la drop-down du type d’enregistrement, choisissez **TXT**, collez la valeur TXT que vous avez copiée, puis sélectionnez **Ajouter**. 
 
     La mise à jour prend généralement quelques minutes, mais peut prendre jusqu’à 48 heures. 
-1. Revenir au Centre d Microsoft 365'administration, **sélectionnez Vérifier,** puis **Fermez.** 
+1. Revenir au centre Administration Microsoft 365, **sélectionnez Vérifier,** puis **Fermez.** 
 1. Pour définir votre domaine comme courrier électronique principal pour vos utilisateurs, dans le navigation de gauche, sélectionnez **Utilisateurs**  >  **actifs.** 
 1. Choisissez un utilisateur, sélectionnez Gérer le nom **d’utilisateur** et le courrier électronique, **Modifier,** sélectionner votre domaine dans la liste modifiable, puis sélectionnez Terminé **et** Enregistrer **les modifications.** 
 1. Répétez ce processus pour chaque utilisateur. 

@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: Cet article contient des liens vers des informations sur la planification, les tests et la migration du réseau vers Office 365.
-ms.openlocfilehash: aed8bacd4dc08aa6d77ad0c530e721ac9d383bf5
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+description: Cet article contient des liens vers des informations sur la planification, les tests et la migration réseau vers Office 365.
+ms.openlocfilehash: 0467b60315f879141a344e620f218de8fd7ed8e0c368f26d7a5dd50a85a2bc84
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149105"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898946"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
 
@@ -38,7 +38,7 @@ Avant de déployer pour la première fois ou de migrer vers Office 365, vous pou
 
 Cet article fait partie de la planification [réseau et de l’optimisation](./network-planning-and-performance.md)des performances pour Office 365 .
 
-Pour obtenir la procédure d’optimisation de votre réseau pour Microsoft 365 et d’autres services et plateformes cloud Microsoft, consultez l’affiche Mise en réseau cloud microsoft pour les architectes [Enterprise.](../solutions/cloud-architecture-models.md)
+Pour obtenir la procédure d’optimisation de votre réseau pour Microsoft 365 et d’autres plateformes et services cloud Microsoft, consultez l’affiche Mise en réseau cloud microsoft pour les architectes [Enterprise.](../solutions/cloud-architecture-models.md)
    
 ## <a name="estimate-network-bandwidth-requirements"></a>Estimer les besoins en bande passante réseau
 <a name="EstimateBandwidthRequirements"> </a>
@@ -73,11 +73,11 @@ Approfondissez ces meilleures pratiques pour plus d’informations sur l’amél
     
 2. Lisez [Office 365 principes](./microsoft-365-network-connectivity-principles.md) de connectivité réseau pour comprendre les principes de connectivité pour gérer en toute sécurité Office 365 trafic et obtenir les meilleures performances possibles. Cet article vous aidera à mieux comprendre les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Office 365. 
     
-3. Améliorez les performances de migration de messagerie en gérant attentivement la planification des mises à Windows jour. Vous pouvez mettre à jour vos ordinateurs clients par lots et vous assurer que tous les ordinateurs clients sont mis à jour avant de migrer vers Office 365 afin de contrôler l’utilisation de la bande passante réseau. Pour plus d’informations, voir Mise à jour manuelle et configuration des ordinateurs de bureau [pour Office 365 pour les dernières mises à jour.](https://support.microsoft.com/gp/office-2013-365-update)
+3. Améliorez les performances de migration de messagerie en gérant soigneusement la planification des mises à jour Windows de messagerie. Vous pouvez mettre à jour vos ordinateurs clients par lots et vous assurer que tous les ordinateurs clients sont mis à jour avant de migrer vers Office 365 afin de contrôler l’utilisation de la bande passante réseau. Pour plus d’informations, voir Mise à jour manuelle et configuration des ordinateurs de bureau [pour Office 365 pour les dernières mises à jour.](https://support.microsoft.com/gp/office-2013-365-update)
     
-4. Office 365 trafic réseau est plus performant lorsqu’il est traité comme un service Internet approuvé et autorisé à contourner une grande partie du filtrage et de l’analyse traditionnels que certaines organisations placent sur le trafic réseau vers des services Internet non fiables. Cela inclut généralement la suppression du traitement sortant tel que l’authentification des utilisateurs proxy et l’inspection des paquets, ainsi que la garantie d’une sortie locale vers Internet avec la traduction d’adresses réseau (NAT) appropriée et une capacité de bande passante suffisante pour gérer les demandes réseau accrues. [Reportez-vous](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)à Gestion Office 365 points de terminaison pour obtenir des instructions supplémentaires sur la configuration de votre réseau pour gérer les Office 365 en tant que service Internet approuvé sur votre réseau.
+4. Office 365 trafic réseau est plus performant lorsqu’il est traité comme un service Internet approuvé et autorisé à contourner une grande partie du filtrage et de l’analyse traditionnels que certaines organisations placent sur le trafic réseau vers des services Internet non fiables. Cela inclut généralement la suppression du traitement sortant tel que l’authentification des utilisateurs proxy et l’inspection des paquets, ainsi que la garantie d’une sortie locale vers Internet avec la traduction d’adresses réseau (NAT) appropriée et une capacité de bande passante suffisante pour gérer les demandes réseau accrues. [Reportez-vous](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)à La gestion Office 365 points de terminaison pour obtenir des instructions supplémentaires sur la configuration de votre réseau pour gérer les Office 365 en tant que service Internet approuvé sur votre réseau.
     
-1. Assurez [la gestion Office 365 de terminaison.](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a) Le trafic supplémentaire à Office 365 entraîne une augmentation des connexions proxy sortantes, ainsi qu’une augmentation du trafic sécurisé sur TLS/SSL.
+1. [Assurez-vous de Office 365 points de terminaison.](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a) Le trafic supplémentaire à Office 365 entraîne une augmentation des connexions proxy sortantes, ainsi qu’une augmentation du trafic sécurisé sur TLS/SSL.
     
 2. Si vos proxies sortants nécessitent l’authentification de l’utilisateur, vous risquez de voir une connectivité lente ou une perte de fonctionnalités. Le contournement de l’exigence d’authentification pour Office 365 domaines peut réduire cette surcharge.
     
@@ -87,7 +87,7 @@ Approfondissez ces meilleures pratiques pour plus d’informations sur l’amél
     
 5. Si vous examinez les connexions sortantes à partir d’ordinateurs de votre réseau, le contournement de ce filtrage vers les domaines Office 365 améliorera la connectivité et les performances. En outre, le contournement de l’inspection sortante supprime souvent la nécessité d’une sortie Internet unique et active la sortie Internet locale pour les demandes Office 365 réseau destinées.
     
-6. Certains clients trouvent que les paramètres réseau internes peuvent affecter les performances. Paramètres comme la taille maximale de l’unité de transmission (MTU), la négociation automatique ou la détection automatique du réseau, et les itinéraires sous-optimaux vers Internet sont des lieux courants à rechercher.
+6. Certains clients trouvent que les paramètres réseau internes peuvent affecter les performances. Paramètres par exemple, la taille maximale de l’unité de transmission (MTU), la négociation automatique ou la détection automatique du réseau, et les itinéraires sous-optimaux vers Internet sont des lieux courants à rechercher.
     
 ## <a name="network-planning-reference-for-office-365"></a>Référence de planification réseau pour Office 365
 <a name="NetReference"> </a>
@@ -102,7 +102,7 @@ Ces rubriques contiennent des informations détaillées Office 365 de référenc
     
 - [Prise en charge du protocole IPv6 dans les services Office 365](ipv6-support.md)
     
-- [Principes de connectivité réseau Office 365](./microsoft-365-network-connectivity-principles.md)
+- [Principes de connectivité réseau Office 365](./microsoft-365-network-connectivity-principles.md)
     
 - [Planifier les périphériques réseau qui se connectent aux services Office 365](plan-for-network-devices.md)
     

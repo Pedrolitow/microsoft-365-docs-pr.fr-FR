@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Ces étapes de vue d’ensemble sont conçues pour vous aider à configurer votre réseau, à créer vos identités, à déployer Microsoft 365 Apps et à migrer vos données.
-ms.openlocfilehash: f750b14738de20251e1f218679384dcf8db4d1e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ef984ba4e076ca6665dee6a75a456c2abc09c1a8cb1fb04933ab08a2a98c0d85
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924891"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898922"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Déployer Microsoft 365 Entreprise pour votre organisation
 
@@ -41,7 +41,7 @@ Cet article décrit deux options de déploiement, que vous vouliez de l’aide o
 Pour accéder à une série de guides d’installation, connectez-vous à votre abonnement Microsoft 365, puis accédez aux conseils [d’installation.](https://aka.ms/o365fasttrack)
 
 >[!Note]
->Vous pouvez également obtenir de l’aide [d’un partenaire Microsoft.](https://www.microsoft.com/solution-providers/home)
+>Vous pouvez également obtenir de l’aide d’un [partenaire Microsoft.](https://www.microsoft.com/solution-providers/home)
 >
 
 ## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Déploiement guidé do-it-yourself de Microsoft 365 Entreprise

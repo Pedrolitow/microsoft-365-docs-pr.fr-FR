@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 46f89062b03d51ed38a6376220fbdec255343937
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ae432f74bdb8b5fa05cf5c1237bb6c5346036354bd3d4eb086ce666af3cf9fed
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906470"
 ---
 # <a name="payment-information-for-israel"></a>Informations de paiement pour Israël
 

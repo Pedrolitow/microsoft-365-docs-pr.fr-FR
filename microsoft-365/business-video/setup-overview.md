@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez ce dont vous avez besoin pour configurer Microsoft 365 Business Premium.
-ms.openlocfilehash: 70d0bf00afaa1a504097ac80598f9c1b1a184b05
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9a88b5269b4c3c4b566f50baf535a5896e9ad2bdde148eb82323b31dcdb64420
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580401"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831577"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>Vue d’ensemble de Microsoft 365 Business Premium configuration
 
@@ -51,17 +51,17 @@ Vous&#39;pas d’applications pour la comptabilité, la paie, crm ou un site web
 
 ## <a name="1-sign-up-for-the-cloud"></a>1. S’inscrire au cloud
 
-Lorsque vous choisissez un abonnement cloud pour votre entreprise, vous avez le choix entre les fonctionnalités que vous souhaitez dans votre abonnement. Découvrez nos [plans Pour les petites entreprises Microsoft.](https://www.microsoft.com/microsoft-365/business?rtc=1)
+Lorsque vous choisissez un abonnement cloud pour votre entreprise, vous avez le choix entre les fonctionnalités que vous souhaitez dans votre abonnement. Découvrez nos [plans microsoft pour les petites entreprises.](https://www.microsoft.com/microsoft-365/business?rtc=1)
 
 - Choisissez [Office 365 Business Essentials](https://www.microsoft.com/en-us/p/office-365-business-essentials/cfq7ttc0k59v?rtc=1&amp;activetab=pivot:overviewtab) si vous souhaitez uniquement des applications en ligne (applications accessibles dans un navigateur web) pour la messagerie, la création de documents, la collaboration et le stockage cloud. Cela inclut Word Online, Excel Online, PowerPoint Online et SharePoint Online.
 - Choisissez [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) si vous souhaitez la version enrichie des fonctionnalités des applications Office telles que Word, Excel et Teams qui s’exécutent directement sur vos PC et Mac. Cela s’ajoute aux applications en ligne.
-- Choisissez [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business?rtc=1) si vous souhaitez toutes les applications Office, ainsi que la sécurité cloud et la gestion des appareils. Cela inclut la protection contre les virus, les programmes malveillants, les ransomware, etc., ainsi que la gestion et le chiffrement des appareils. Vous obtenez également une mise à niveau gratuite vers Windows 10 Professionnel des versions Windows Professional précédentes.
+- Choisissez [Microsoft 365 Business si](https://www.microsoft.com/microsoft-365/business?rtc=1) vous souhaitez toutes les applications Office, ainsi que la sécurité cloud et la gestion des appareils. Cela inclut la protection contre les virus, les programmes malveillants, les ransomware, etc., ainsi que la gestion et le chiffrement des appareils. Vous obtenez également une mise à niveau gratuite vers Windows 10 Professionnel des versions Windows Professional précédentes.
 - Si vous avez une grande entreprise ou si vous avez besoin d’applications et de services de gestion des informations plus complexes, découvrez [nos plans Microsoft 365 Entreprise.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
 
 
 ## <a name="2-add-a-domain-name"></a>2. Ajouter un nom de domaine
 
-- Un nom de domaine fournit à votre organisation une identité en ligne professionnelle et facile à mémoriser, telle que _rob@contoso.com_. Si vous en avez déjà un, vous pouvez l’Microsoft 365 ou Microsoft 365 : nous&#39;vous aiderons dans la transition.
+- Un nom de domaine fournit à votre organisation une identité en ligne professionnelle et facile à mémoriser, telle que _rob@contoso.com_. Si vous en avez déjà un, vous pouvez l’Microsoft 365 ou Microsoft 365 : nous vous&#39;vous aider dans la transition.
 - Vous&#39;pas de domaine ? Il est&#39;d’en obtenir un en même temps que vous vous inscrivez pour Microsoft 365 ou Microsoft 365.
 
 **Remarque :**  En plus de votre courrier électronique, vous pouvez utiliser le domaine avec un site web sur différents hôtes, tels que WordPress, GoDaddy ou Wix.
@@ -74,12 +74,12 @@ Lorsque vous choisissez un abonnement cloud pour votre entreprise, vous avez le 
 
 ## <a name="4-enable-threat-protection"></a>4. Activer la protection contre les menaces
 
-- Vous&#39;activer la Protection avancée contre les menaces lors de la configuration du service. Microsoft 365 La Protection avancée contre les menaces inclut des fonctionnalités de configuration, de protection et de détection, notamment les pièces jointes fiables, les liens fiables, les SharePoint, les OneDrive et les protections Microsoft Teams, la protection anti-hameçonnage et la détection des menaces en temps réel.
+- Vous&#39;activer la Protection avancée contre les menaces lors de la configuration du service. Microsoft 365 La Protection avancée contre les menaces inclut des fonctionnalités de configuration, de protection et de détection, notamment les pièces jointes Coffre, les liens Coffre, les SharePoint, les OneDrive et les protections Microsoft Teams, la protection anti-hameçonnage et la détection des menaces en temps réel.
 - Par défaut, vous&#39;de l’aide sur la protection de base contre les menaces en ligne courantes, mais vous pouvez personnaliser ces paramètres ultérieurement pour répondre aux besoins de votre entreprise.
 
 ## <a name="5-manage-and-secure-your-devices"></a>5. Gérer et sécuriser vos appareils
 
-- Grâce Microsoft 365 Business Premium, vous obtenez une protection sur vos appareils, une protection contre les menaces en ligne et une protection contre la perte accidentelle de données. Vous obtenez également des mises Windows Defender, BitLocker mises à jour automatiques et des mises à jour automatiques Windows 10 Professionnel et Office applications.
+- Grâce Microsoft 365 Business Premium, vous obtenez une protection sur vos appareils, une protection contre les menaces en ligne et une protection contre la perte accidentelle de données. Vous pouvez également obtenir Windows Defender, BitLocker et les mises à jour automatiques Windows 10 Professionnel et Office applications.
 - Vous pouvez configurer l’authentification multifacteur (MFA), le chiffrement du courrier électronique, la protection contre les programmes malveillants et la protection contre les ransomware pour empêcher l’accès non autorisé aux appareils et aux données.
 - Vous pouvez protéger vos données de travail précieuses stockées localement sur votre PC, SharePoint OneDrive Entreprise, ou sur votre appareil mobile. La gestion intégrée des périphériques mobiles (MDM) pour Microsoft 365 vous permet de sécuriser et de gérer vos utilisateurs&#39; appareils mobiles tels que les iPhone, iPad, Android et Windows mobiles. Avec la gestion des appareils mobiles, vous pouvez créer et gérer des stratégies de sécurité des appareils, réinitialiser un appareil à distance et afficher des rapports détaillés sur les appareils.
 
@@ -98,9 +98,9 @@ Lorsque vous choisissez un abonnement cloud pour votre entreprise, vous avez le 
 
 - Commencez à utiliser toutes les applications Office disponibles, telles que Word, Excel et PowerPoint. S'&#39;n’est pas déjà installé, vous pouvez facilement l’installer à partir [du Microsoft Office web.](https://www.office.com/)
 - L’une des premières choses que&#39;vous allez faire est d’ouvrir Outlook pour la première fois. Vous&#39;entrer votre adresse de messagerie Microsoft 365 mot de passe et avoir un accès immédiat à votre courrier électronique, votre calendrier et vos contacts.
-- En outre, vous pouvez ouvrir Microsoft Teams, Word, Excel, PowerPoint et le reste Office applications. Il se peut que vous soyez invité à utiliser votre adresse e-mail et votre mot de passe la première fois que vous ouvrez chaque application.
+- En outre, vous pouvez ouvrir Microsoft Teams, Word, Excel, PowerPoint et le reste Office applications. Il se peut que vous soyez invité à nous envoyer votre adresse e-mail et votre mot de passe la première fois que vous ouvrez chaque application.
 
-## <a name="9-migrate-old-email-and-files"></a>9. Migrer les anciens e-mails et fichiers
+## <a name="9-migrate-old-email-and-files"></a>9. Migrer les anciens messages électroniques et fichiers
 
 - À un moment donné,&#39;souhaiterez importer vos anciens e-mails, calendriers et contacts, ainsi que des documents professionnels et d’autres fichiers dans Microsoft 365 Business Premium.
 - Pour le courrier électronique, vous pouvez le faire dans Outlook en exportant l’ancien courrier électronique en tant que PST, puis en important ce PST dans le nouveau compte de messagerie. Répétez ensuite cette situation sur d’autres ordinateurs. Vous pouvez également utiliser un partenaire pour vous aider à cette étape.

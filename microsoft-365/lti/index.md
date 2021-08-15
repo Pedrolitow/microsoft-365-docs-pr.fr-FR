@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 localization_priority: None
 description: Découvrez les applications Office Learning Tools Interoperability (LTI) dans M365 et comment ils aideront les enseignants lors de l’intégration d’applications Office à leur système de gestion Learning (LMS).
-ms.openlocfilehash: 34956eac57a7e3af44ca1c8cf8ae2714327e3e96
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 350d0d2618275ec628f9ac884fb0de4f019021aaa4397af57129fa29bbfcb86b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322340"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898838"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Intégration des produits Microsoft à votre système Learning de gestion des données (LMS)
 
@@ -79,4 +79,4 @@ L Microsoft Teams LTI pour les classes permet aux enseignants et aux étudiants 
 
 - **Teams Classes LTI avec Canvas** Utiliser Microsoft Teams [classes avec Canvas](teams-classes-with-canvas.md).
 
-- **Teams classes LTI avec Tableau** noir [Utiliser Microsoft Teams classes avec Blackboard Learn Ultra](teams-classes-with-blackboard.md)
+- **Teams classes LTI avec Tableau** noir Utiliser [Microsoft Teams classes avec Blackboard Learn Ultra](teams-classes-with-blackboard.md)

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurer Microsoft Defender pour Office 365 et protéger les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: a995063cef6fdc42ad62079d49d58edc9d07b52c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: d5aad66642fc2b509ae40dc1277167deb53de6fbb0593a3dcd766062305fbd6a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831472"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -101,7 +101,7 @@ Les pirates informatiques qui accèdent à la boîte aux lettres d’un utilisat
 
 Pour créer une règle de transport de messagerie, regardez [cette courte vidéo](../business-video/stop-email-auto-forward.md) ou suivez les étapes suivantes :
 
-1. Dans le centre Microsoft 365' administration, sélectionnez **Centres d’administration** \> **Exchange**.
+1. Dans la Centre d’administration Microsoft 365, sélectionnez **Centres d’administration** \> **Exchange**.
 
 2. Dans la catégorie **de flux de messagerie,** sélectionnez **des règles.**
 
@@ -153,19 +153,19 @@ Pour créer une stratégie anti-hameçonnage dans Microsoft Defender pour Office
 |Ajouter des expéditeurs et domaines de confiance|Ici, vous pouvez ajouter votre propre domaine ou tout autre domaine approuvé.|
 |Appliqué à|Sélectionnez **Le domaine du destinataire est**. Sous **Un de ces éléments**, sélectionnez **Choisir**. Sélectionnez **+ Ajouter**. Cochez la case en regard du nom du domaine, par *exemple, contoso. <span> <span> com*, dans la liste, puis sélectionnez **Ajouter**. Sélectionnez **Terminé**.|
 
-## <a name="protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Se protéger contre les pièces jointes et les fichiers malveillants avec pièces jointes sécurisées
+## <a name="protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Se protéger contre les pièces jointes et les fichiers malveillants Coffre pièces jointes
 
-Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante simplement en regardant un message électronique. Microsoft Defender pour Office 365 inclut la protection contre les pièces jointes sécurisées, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
+Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante simplement en regardant un message électronique. Microsoft Defender pour Office 365 inclut Coffre protection contre les pièces jointes, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
 
-Pour créer une stratégie de pièce jointe sécurisée, regardez [cette courte vidéo](../business-video/safe-attachments.md)ou suivez les étapes suivantes :
+Pour créer une stratégie Coffre pièces jointes, regardez cette [courte](../business-video/safe-attachments.md)vidéo ou suivez les étapes suivantes :
 
 1. Go to [https://protection.office.com](https://protection.office.com) , and sign in with your admin account.
 
 2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
 
-3. Dans la page Stratégie, sélectionnez **Pièces jointes sécurisées.**
+3. Dans la page Stratégie, choisissez **Coffre pièces jointes.**
 
-4. Dans la page Pièces jointes sécurisées, appliquez cette protection à grande étendue en cochez la case Activer la protection atp pour **SharePoint, OneDrive** et Microsoft Teams protection.
+4. Sur la page Coffre pièces jointes, appliquez cette protection à grande étendue en selecting the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box.
 
 5. Sélectionnez **+** pour créer une stratégie.
 
@@ -183,9 +183,9 @@ Pour créer une stratégie de pièce jointe sécurisée, regardez [cette courte 
 
 Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
 
-## <a name="protect-against-phishing-attacks-with-safe-links"></a>Se protéger contre les attaques par hameçonnage avec des liens sécurisés
+## <a name="protect-against-phishing-attacks-with-safe-links"></a>Se protéger contre les attaques par hameçonnage à l’Coffre liens
 
-Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. Les liens sécurisés, qui font partie de Microsoft Defender pour Office 365, peuvent aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les messages électroniques et les documents Office documents. La protection est définie par le biais de stratégies de liens sécurisés.
+Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. Coffre Les liens, qui font partie de Microsoft Defender pour Office 365, peuvent aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les messages électroniques et les documents Office documents. La protection est définie par le biais Coffre de liens.
 
 Nous vous recommandons d’y faire les choses suivantes :
 
@@ -193,17 +193,17 @@ Nous vous recommandons d’y faire les choses suivantes :
 
 - Ajoutez une nouvelle stratégie destinée à tous les destinataires de votre domaine.
 
-Pour configurer des liens sécurisés, [regardez cette courte vidéo](../business-video/safe-links.md)de formation ou suivez les étapes suivantes :
+Pour configurer des Coffre, regardez cette courte vidéo de [formation](../business-video/safe-links.md)ou suivez les étapes suivantes :
 
 1. Go to [https://protection.office.com](https://protection.office.com) , and sign in with your admin account.
 
 2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
 
-3. Dans la page Stratégie, choisissez **Liens sécurisés.**
+3. Dans la page Stratégie, choisissez **Coffre liens.**
 
 Pour modifier la stratégie par défaut :
 
-1. Dans la page Liens sécurisés, sous **Stratégies qui s’appliquent** à l’ensemble de l’organisation, sélectionnez la **stratégie par** défaut.
+1. Dans la page Coffre liens, sous Stratégies qui s’appliquent à l’ensemble de **l’organisation,** sélectionnez la **stratégie par** défaut.
 
 2. Sous **Paramètres qui s’appliquent au** contenu à l’exception de la messagerie, sélectionnez **Applications Microsoft 365 pour les grandes entreprises, Office pour iOS et Android**.
 
@@ -211,7 +211,7 @@ Pour modifier la stratégie par défaut :
 
 Pour créer une stratégie destinée à tous les destinataires de votre domaine :
 
-1. Dans la page Liens sécurisés, sous Stratégies qui s’appliquent à l’ensemble de **l’organisation,** sélectionnez **+** pour créer une stratégie.
+1. Dans la page Coffre liens, sous **Stratégies** qui s’appliquent à l’ensemble de l’organisation, sélectionnez **+** pour créer une stratégie.
 
 2. Appliquez les paramètres répertoriés dans le tableau suivant.
 
@@ -219,12 +219,12 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
-|Nom|Stratégie de liens sécurisés pour tous les destinataires du domaine|
+|Nom|Coffre de liens pour tous les destinataires du domaine|
 |Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages|Sélectionnez Sur : les URL seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur **clique sur le lien.**|
-|Utiliser des pièces jointes sécurisées pour analyser le contenu téléchargeable|Sélectionnez cette case.|
+|Utiliser Coffre pièces jointes pour analyser le contenu téléchargeable|Sélectionnez cette case.|
 |Appliqué à|Le domaine du destinataire est . . . sélectionnez votre domaine.|
 
-Pour plus d’informations, voir [Liens sécurisés.](../security/office-365-security/safe-links.md)
+Pour plus d’informations, [voir Coffre liens.](../security/office-365-security/safe-links.md)
 
 ## <a name="go-to-intune-admin-center"></a>Go to Intune admin center
 
@@ -234,4 +234,4 @@ Pour plus d’informations, voir [Liens sécurisés.](../security/office-365-sec
 
 3. Une fois que les résultats apparaissent, sélectionnez le début en **Microsoft Intune** pour en faire un favori et facile à trouver ultérieurement.
 
-Outre le Centre d’administration, vous pouvez utiliser Intune pour inscrire et gérer les appareils de votre organisation. Pour plus d’informations, voir [Fonctionnalités par](/intune/enrollment/enrollment-method-capab) méthode d’inscription Windows et options d’inscription pour les appareils [gérés par Intune.](/intune/enrollment-options)
+Outre le Centre d’administration, vous pouvez utiliser Intune pour inscrire et gérer les appareils de votre organisation. Pour plus d’informations, voir [Fonctionnalités par](/intune/enrollment/enrollment-method-capab) méthode d’inscription pour Windows et options d’inscription pour les appareils gérés [par Intune.](/intune/enrollment-options)

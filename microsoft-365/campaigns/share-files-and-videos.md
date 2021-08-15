@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Partagez des fichiers et des vidéos au sein de votre campagne avec Microsoft Teams et SharePoint.
-ms.openlocfilehash: d6d168c196a8571cab86a1be57f5b26782bc4d3f
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 90f99f42db7dbfba3d0b7276da8591623cc6a32b588acb212694953a29735d1d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044179"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861441"
 ---
 # <a name="share-files-and-videos"></a>Partager des fichiers et des vidéos
 
-Lorsque vous devez contrôler qui peut afficher et modifier vos fichiers, vous devez stocker les fichiers dans un emplacement sécurisé, où vous pouvez vous assurer que les autorisations sont appliquées correctement. Vous pouvez utiliser Microsoft Teams pour stocker vos fichiers, puis partager les fichiers à l’intérieur ou à l’extérieur de votre entreprise, pratique ou campagne à l’aide de Microsoft Teams ou en envoyant des liens SharePoint. L’envoi d’un lien plutôt qu’une pièce jointe signifie que vous savez qui affiche et modifie les fichiers, et qu’ils ne peuvent pas être affichés ou modifiés sans votre autorisation.
+Lorsque vous devez contrôler qui peut afficher et modifier vos fichiers, vous devez stocker les fichiers dans un emplacement sécurisé, où vous pouvez vous assurer que les autorisations sont appliquées correctement. Vous pouvez utiliser Microsoft Teams pour stocker vos fichiers, puis partager les fichiers à l’intérieur ou à l’extérieur de votre entreprise, pratique ou campagne à l’aide de Microsoft Teams ou en envoyant des liens SharePoint. L’envoi d’un lien plutôt qu’une pièce jointe par courrier électronique signifie que vous savez qui affiche et modifie les fichiers, et qu’ils ne peuvent pas être affichés ou modifiés sans votre autorisation.
 
 ![Diagramme d’une fenêtre Microsoft Teams, montrant l’onglet Fichiers et le lien Obtenir dans le menu](../media/m365-democracy-teams-sharefiles.png)
 
@@ -47,7 +47,7 @@ Vous pouvez également utiliser Microsoft Stream pour stocker et partager des vi
 Utilisez ces méthodes pour partager des fichiers et des vidéos en toute sécurité :
 
 1. Stockez des fichiers Microsoft Teams ou SharePoint et assurez-vous que seules les personnes qui ont besoin d’accéder à ces fichiers en ont.
-2. Lorsque vous souhaitez partager, ne joignez pas de fichiers à un e-mail. Au lieu de cela, choisissez **Obtenir** un lien à partir Microsoft Teams ou SharePoint et envoyez le lien par courrier électronique.
+2. Lorsque vous souhaitez partager, n’attachez pas de fichiers à un e-mail. Au lieu de cela, choisissez **Obtenir un** lien à partir Microsoft Teams ou SharePoint et envoyez le lien par courrier électronique.
 3. Pour partager un fichier en externe, ajoutez l’utilisateur en tant qu’invité à votre équipe ou utilisez SharePoint pour obtenir un lien sécurisé pour partager uniquement ce fichier.
 4. Utilisez Microsoft Stream pour héberger des vidéos que vous souhaitez voir dans votre campagne.
 5. Utilisez Microsoft Teams ou SharePoint pour stocker les fichiers vidéo sur qui votre équipe doit collaborer ou partager.

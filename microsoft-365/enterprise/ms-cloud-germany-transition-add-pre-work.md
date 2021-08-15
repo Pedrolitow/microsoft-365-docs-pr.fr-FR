@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Pré-travail lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: 77e3dbd3f819aea15632a0ba069249a44a8663fb
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8d2f33f7bd574610980e64c4da769f3418042bc302c1a5d33d081ceeeebfd4a9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542032"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899006"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Activités préalables à la migration de Microsoft Cloud Deutschland
 
@@ -52,7 +52,7 @@ Office 365 les identificateurs de client et d’utilisateur sont conservés pend
 
 - Les demandes DSR (Data Subject Requests) du Règlement général sur la protection des données (R GDPR) sont exécutées à partir du portail d’administration Azure pour les demandes futures. Toutes les données de diagnostic héritées ou non client résidant dans Microsoft Cloud Deutschland sont supprimées au plus tard 30 jours après.
 
-- Les demandes d’authentification multifacteur (MFA) qui utilisent Microsoft Authenticator s’affichent en tant qu’objectid utilisateur (GUID) pendant que le client est copié dans Office 365 services. Les demandes mfa s’exécutent comme prévu malgré ce comportement d’affichage.  Microsoft Authenticator comptes qui ont été activés à l’aide Office 365 des points de terminaison des services afficheront le nom d’utilisateur principal (UPN).  Les comptes ajoutés à l’aide des points de terminaison Microsoft Cloud Deutschland afficheront l’objectID de l’utilisateur, mais fonctionneront avec les points de terminaison des services Microsoft Cloud Deutschland et Office 365 cloud.
+- Les demandes d’authentification multifacteur (MFA) qui utilisent Microsoft Authenticator s’affichent en tant qu’objectID utilisateur (GUID) pendant que le client est copié dans Office 365 services. Les demandes mfa s’exécuteront comme prévu malgré ce comportement d’affichage.  Microsoft Authenticator comptes qui ont été activés à l’aide Office 365 des points de terminaison des services afficheront le nom d’utilisateur principal (UPN).  Les comptes ajoutés à l’aide des points de terminaison Microsoft Cloud Deutschland afficheront l’objectID de l’utilisateur, mais fonctionneront avec les points de terminaison des services Microsoft Cloud Deutschland et Office 365 cloud.
 
 <br>
 
@@ -77,7 +77,7 @@ S’il est configuré, le _cname msoid_ affecte uniquement les clients utilisant
 
 Si vous avez définie un DNS CNAME appelé _msoid_ dans un ou plusieurs espaces de noms DNS que vous possédez, vous devez supprimer le CNAME jusqu’à la fin de la phase 8 au plus tard. Vous pouvez supprimer le _msoid_ CNAME à tout moment avant la fin de la phase 8.
 
-Pour vérifier si vous avez définie un CNAME dans votre espace  de noms DNS, suivez les étapes ci-dessous et remplacez contoso.com par votre propre nom de domaine :
+Pour vérifier si vous avez définie un CNAME dans votre espace de noms DNS, suivez les étapes ci-dessous et remplacez _contoso.com_ par votre propre nom de domaine :
 
 ```console
 nslookup -querytype=CNAME msoid.contoso.com
@@ -91,7 +91,7 @@ Si la ligne de commande renvoie un enregistrement DNS, supprimez _le cname msoid
 ## <a name="office-apps"></a>Office Applications
 
 **S’applique à**: Clients utilisant Office apps, en particulier sur Windows clients <br>
-**Lorsqu’elle est** appliquée : à tout moment avant le démarrage de la phase 9
+**Lorsqu’elle est** appliquée : tout moment avant le démarrage de la phase 9
 
 Office 365 clients qui migrent vers la région « Allemagne » exigent que tous les utilisateurs se ferment, se connectent depuis Office 365 et se connectent à toutes les applications de bureau Office (Word, Excel, PowerPoint, Outlook, etc.) et au client OneDrive Entreprise une fois que la migration des clients a atteint la phase 9. La signature et la signature permettent aux services Office d’obtenir de nouveaux jetons d’authentification à partir du service Azure AD global.
 
@@ -103,7 +103,7 @@ L’OCCT peut être déployé sur Windows clients à tout moment avant la phase 
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Services AD FS (Active Directory Federation Services)
 
-**S’applique** à : clients utilisant AD FS sur site pour authentifier les utilisateurs se connectant à Microsoft Office 365<br>
+**S’applique** à : Clients utilisant AD FS sur site pour authentifier les utilisateurs se connectant à Microsoft Office 365<br>
 **Lorsqu’elle est** appliquée : à tout moment avant le démarrage de la phase 2
 
 Lire et appliquer les [étapes de migration ADFS](ms-cloud-germany-transition-add-adfs.md)
@@ -156,7 +156,7 @@ Les attributs d’annuaire sont synchronisés entre Office 365 et Azure AD avec 
 
 |Étapes|Description|Impact|
 |---|---|---|
-|Ré-exécuter HCW à l’aide Office 365 Allemagne <p> _Vous pouvez démarrer cette activité immédiatement après avoir reçu la notification du centre de messages vous avertissant que la migration de votre client Office 365 a commencé (phase 1)._|La désinstallation et la ré-exécution du HCW (17.0.5378.0 ou une valeur supérieure) avant la phase 5 garantit que votre configuration sur site est prête à envoyer et recevoir des messages avec les utilisateurs de Microsoft Cloud Deutschland et les utilisateurs migrés vers la région <https://aka.ms/hybridwizard> Office 365 Germany. <p> Dans le HCW, pour la zone de liste sous Mon **Office 365 est** hébergée par , sélectionnez **Office 365 Germany.**|Si vous ne parvient pas à effectuer cette tâche avant le début de la phase 5 [migration Exchange], des messages d’échec de non-Exchange peuvent être acheminés entre votre déploiement local Office 365.|
+|Ré-exécuter HCW à l’aide Office 365 Germany <p> _Vous pouvez démarrer cette activité immédiatement après avoir reçu la notification du centre de messages vous avertissant que la migration de votre client Office 365 a commencé (phase 1)._|La désinstallation et la ré-exécution du HCW (17.0.5378.0 ou une valeur supérieure) avant la phase 5 garantit que votre configuration sur site est prête à envoyer et recevoir des messages avec les utilisateurs de Microsoft Cloud Deutschland et les utilisateurs migrés vers la région <https://aka.ms/hybridwizard> Office 365 Germany. <p> Dans le HCW, pour la zone de liste sous Mon **Office 365 est** hébergée par , sélectionnez **Office 365 Germany.**|Si vous ne parvient pas à effectuer cette tâche avant le début de la phase 5 [migration Exchange], des messages d’échec de non-Exchange peuvent être acheminés entre votre déploiement local Office 365.|
 |Conservation des paramètres de boîte aux lettres partagée|Certains clients hybrides ont converti des boîtes aux lettres utilisateur cloud en boîtes aux lettres « partagées » à l’aide Exchange Online commandes. Cette configuration de boîte aux lettres cloud est écrite dans la boîte aux lettres et le répertoire Exchange Online local, mais elle n’est pas synchronisée avec Active Directory du client via AAD Connecter. Le résultat est une différence entre la représentation Active Directory des valeurs de la boîte aux lettres RemoteRecipientType et RemoteDisplayType et celle dans Exchange Online définition de la boîte aux lettres comme partagée. <p> Le client est responsable de s’assurer que toutes les boîtes aux lettres partagées sont correctement mise en service à l’aide `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` de , ou `Set-RemoteMailbox -Shared` . Consultez cette référence pour savoir comment convertir [la boîte aux lettres d’un utilisateur dans un environnement hybride.](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox)|Si vous ne parvient pas à effectuer cette tâche avant la phase 5 [migration de Exchange Online], il se peut que des NDR pour les boîtes aux lettres partagées se convertissent en boîtes aux lettres sans permis et que l’accès partagé des boîtes aux lettres concernées soit perdu. Les boîtes aux lettres partagées sont converties de manière inattendue en boîtes aux lettres utilisateur après l’installation de la synchronisation d’annuaires dans un déploiement hybride [Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) décrit l’impact de ne pas résoudre ce problème avant la fin de la migration Exchange Online.|
 
 
@@ -173,9 +173,9 @@ Les attributs d’annuaire sont synchronisés entre Office 365 et Azure AD avec 
 
 |Étapes|Description|Impact|
 |---|---|---|
-|Déployez Teams client de bureau pour les utilisateurs qui accèdent Skype Entreprise en Allemagne.|La migration déplace Skype Entreprise utilisateurs vers Microsoft Teams pour la collaboration, l’appel et la conversation. Déployez le client Microsoft Teams bureau ou assurez-vous qu’un navigateur pris en charge est disponible.|L’inaction entraîne l’indisponibilité des services Microsoft Teams collaboration.|
+|Déployez Teams client de bureau pour les utilisateurs qui accèdent Skype Entreprise en Allemagne.|La migration déplace Skype Entreprise utilisateurs vers Microsoft Teams pour la collaboration, les appels et la conversation. Déployez le client Microsoft Teams bureau ou assurez-vous qu’un navigateur pris en charge est disponible.|L’inaction entraîne l’indisponibilité des services Microsoft Teams collaboration.|
 |Examiner et préparer les modifications DNS liées à la migration.|La zone DNS du client change pour Skype Entreprise Online.|<ul><li>Nous vous recommandons de mettre à jour la durée de vie (TTL) de tous les enregistrements DNS de domaine d’un client sur 5 minutes pour accélérer l’actualisation des enregistrements DNS. Toutefois, le cutover géré par Microsoft associé à cette modification DNS peut se produire à tout moment dans la fenêtre de modification de 24 heures fournie.</li><li>La perturbation du service est possible à l’avenir. Les utilisateurs ne pourront pas se connecter Skype Entreprise et seront redirigés vers l’expérience Teams migrée dans les services Office 365 client.</li></ul>|
-|Préparez la formation et la préparation de l’utilisateur final et de l’administration pour la transition vers Microsoft Teams.|Pour réussir votre transition de Skype à Teams en planant la communication et la préparation des utilisateurs.|<ul><li>Les clients doivent connaître les nouveaux services et savoir comment les utiliser une fois leurs services Office 365 services.</li><li>Une fois que les modifications DNS ont été apportées à la fois pour les domaines de service client et le domaine initial, les utilisateurs se connectent à Skype Entreprise et voient qu’ils sont désormais migrés vers Teams. Cela télécharge également le client de bureau pour Teams en arrière-plan.</li></ul>|
+|Préparez la formation et la préparation de l’utilisateur final et de l’administration pour la transition vers Microsoft Teams.|Pour réussir votre transition de Skype à Teams en planant la communication et la préparation des utilisateurs.|<ul><li>Les clients doivent connaître les nouveaux services et savoir comment les utiliser une fois leurs services Office 365 services.</li><li>Une fois que des modifications DNS ont été apportées pour les domaines de la première ligne et les domaines de la première ligne, les utilisateurs se connectent à Skype Entreprise et voient qu’ils sont désormais migrés vers Teams. Cela télécharge également le client de bureau pour Teams en arrière-plan.</li></ul>|
 
 
 ## <a name="mobile-device-management"></a>Gestion des appareils mobiles
@@ -214,7 +214,7 @@ Pendant la migration, alors que votre organisation se trouve entre les phases 2 
 |Déterminez si une reconfiguration est requise après la migration.|Les applications et services tiers qui s’intègrent Office 365 peuvent être codés pour s’attendre à des adresses IP et des URL Microsoft Cloud Deutschland.|Action requise. L’inaction peut entraîner des défaillances du service ou du logiciel client.|
 
 
-## <a name="dynamics-365"></a>Dynamics 365
+## <a name="dynamics-365"></a>Dynamics 365
 
 **S’applique à**: Clients utilisant Microsoft Dynamics 365
 
@@ -255,7 +255,7 @@ Les clients qui utilisent Office 365 ressources Azure (par exemple, réseau, cal
 
 |Étapes|Description|Impact|
 |---|---|---|
-|Déterminez les services Azure en cours d’utilisation et préparez la migration future de l’Allemagne vers le client Office 365 services en travaillant avec vos partenaires. Suivez les étapes décrites dans le [manuel de migration Azure.](/azure/germany/germany-migration-main)|<ul><li>La migration des ressources Azure est une responsabilité du client et nécessite un effort manuel en suivant les étapes prescrites. Il est essentiel de comprendre quels services sont utilisés dans l’organisation pour réussir la migration des services Azure.</li><li>Office 365 Les clients allemands qui ont des abonnements Azure sous la même partition d’identité (organisation) doivent suivre l’ordre prévu par Microsoft lorsqu’ils peuvent commencer la migration des abonnements et des services.</li></ul>|<ul><li>Les clients peuvent avoir plusieurs abonnements Azure, chacun contenant des composants d’infrastructure, de services et de plateforme.</li><li>Les administrateurs doivent identifier les abonnements et les parties prenantes pour s’assurer que la migration rapide et la validation sont possibles dans le cadre de cet événement de migration.</li><li>L’échec de la migration de ces abonnements et composants Azure dans la chronologie prescrite affecte la fin de la transition de Office et Azure AD vers les services Office 365 et peut entraîner une perte de données.</li><li>Une notification du centre de messages signale le point auquel la migration dirigée par le client peut commencer.</li></ul>|
+|Déterminez les services Azure en cours d’utilisation et préparez la migration future de l’Allemagne vers le client Office 365 services en travaillant avec vos partenaires. Suivez les étapes décrites dans le [manuel de migration Azure.](/azure/germany/germany-migration-main)|<ul><li>La migration des ressources Azure est une responsabilité du client et nécessite un effort manuel en suivant les étapes prescrites. Il est essentiel de comprendre quels services sont utilisés dans l’organisation pour réussir la migration des services Azure.</li><li>Office 365 Les clients allemands qui ont des abonnements Azure sous la même partition d’identité (organisation) doivent respecter l’ordre prévu par Microsoft lorsqu’ils peuvent commencer la migration des abonnements et des services.</li></ul>|<ul><li>Les clients peuvent avoir plusieurs abonnements Azure, chacun contenant des composants d’infrastructure, de services et de plateforme.</li><li>Les administrateurs doivent identifier les abonnements et les parties prenantes pour s’assurer que la migration rapide et la validation sont possibles dans le cadre de cet événement de migration.</li><li>L’échec de la migration de ces abonnements et composants Azure dans la chronologie prescrite affecte la fin de la transition de Office et Azure AD vers les services Office 365 et peut entraîner une perte de données.</li><li>Une notification du centre de messages signale le point auquel la migration dirigée par le client peut commencer.</li></ul>|
 
 
 <!--
@@ -278,7 +278,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en place :
 

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b553c543989798f46e3e0301c36cfe6b5de80546
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9adb3b64ce53609a416f05fbf89fc064a2cafad6596c8dbf78bc329c5937089c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861398"
 ---
 # <a name="payment-information-for-canada"></a>Informations de paiement pour le Canada
 
@@ -34,6 +34,6 @@ Si vous avez une facture facturée par **Microsoft Corporation,** utilisez les i
 
 Si vous avez une facture facturée par **Microsoft Canada Inc.** pour les commandes et la consommation à compter du 1er mars 2021, utilisez les informations bancaires ci-après :
 
-**Banque :** Bank N.A., numéro de **routage** de la succursale canadienne : 032820012 **CODE BIC/SWIFT** : Numéro de compte CITICATTBCH  : 3003600001  Nom du compte : MICROSOFT
+**Banque :** N.A.Bank, numéro de routage des succursales du Canada **:** 032820012 **BIC/SWIFT Code :** Numéro de compte CITICATTBCH  : 3003600001 **nom** du compte : MICROSOFT
 
 Les factures émises à partir d’une filiale Microsoft locale sont émises avec le taux standard TVA/Taxe de vente/TAXE sur les produits et services et considérées comme une fourniture nationale de services à des fins de TVA/Taxe de vente/TAXE SUR LES PRODUITS.

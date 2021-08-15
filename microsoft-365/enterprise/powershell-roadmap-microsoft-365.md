@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Feuille de route pour utiliser PowerShell pour Microsoft 365.
-ms.openlocfilehash: 76a7fe72d6ba640d6dcea240310ae3f6efdba477
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d9ebbcdd1e886d0fb13116ed7685c23f2129c7b8221e31ba97cb004c292bfdd8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689705"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898934"
 ---
 # <a name="powershell-roadmap-for-microsoft-365"></a>Feuille de route PowerShell pour Microsoft 365
 
