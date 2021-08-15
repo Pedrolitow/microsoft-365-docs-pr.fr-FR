@@ -12,14 +12,14 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 49102198dc1d904d50c4b2a507c5b1042fa56696
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f50546079f0495c2bf9614b7df581ab284821fcc527ae2cb4b04bacfe3bcca1b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896966"
 ---
-# <a name="contact-support-for-brunei"></a>Contacter le support technique pour le Brunei
+# <a name="contact-support-for-brunei"></a>Contacter le support pour le Brunei
 
 [Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
@@ -37,4 +37,4 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7

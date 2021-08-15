@@ -18,15 +18,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cet article explique comment créer et gérer Advanced eDiscovery cas. La première étape consiste à créer un cas et à commencer à utiliser Advanced eDiscovery fonctionnalités et fonctionnalités.
-ms.openlocfilehash: 95e88bb071476de1ed66b3ffaa8942f0a9df89c2
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+description: Cet article explique comment créer et gérer Advanced eDiscovery cas. La première étape consiste à créer un cas et à commencer à utiliser Advanced eDiscovery fonctionnalités.
+ms.openlocfilehash: 31b19f48ba6deabe3d4150544ce16c3669d18efe1607652d8224a2ebb1f81bb2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886458"
 ---
-# <a name="create-and-manage-an-advanced-ediscovery-case"></a>Créer et gérer un cas Advanced eDiscovery dossier
+# <a name="create-and-manage-an-advanced-ediscovery-case"></a>Créer et gérer un cas Advanced eDiscovery de gestion
 
 Après avoir Advanced eDiscovery et attribué des autorisations aux [responsables eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) de votre organisation qui gèreront les cas, l’étape suivante consiste à créer et gérer un cas.
 
@@ -34,15 +34,15 @@ Cet article fournit également une vue d’ensemble de l’utilisation des cas p
 
 ## <a name="create-a-case"></a>Créer un cas
 
-Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L’utilisateur qui crée le cas est automatiquement ajouté en tant que membre. Les membres du cas peuvent accéder au cas dans le centre Microsoft 365 conformité et effectuer Advanced eDiscovery tâches.
+Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L’utilisateur qui crée le cas est automatiquement ajouté en tant que membre. Les membres du cas peuvent accéder au cas dans le Centre de conformité Microsoft 365 et effectuer Advanced eDiscovery tâches.
 
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for user account that has been assigned eDiscovery permissions. Les membres du groupe de rôles Gestion de l’organisation peuvent également créer Advanced eDiscovery cas.
 
 2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher**, puis cliquez sur **eDiscovery >avancée**.
 
-3. Dans la page **Advanced eDiscovery,** cliquez sur l’onglet **Cas,** puis cliquez **sur Créer un cas.**
+3. Dans la page **Advanced eDiscovery,** cliquez sur **l’onglet Cas,** puis cliquez **sur Créer un cas.**
 
-4. Dans **la** page de découverte électronique du nouveau cas de découverte électronique, nommez le cas (obligatoire), puis tapez un numéro de cas et une description facultatifs. Le nom de cas doit être unique dans votre organisation.
+4. Dans la page de vol du cas **Nouvelle** découverte électronique, nommez le cas (obligatoire), puis tapez un numéro de cas et une description facultatifs. Le nom de cas doit être unique dans votre organisation.
 
 5. Cliquez **sur Enregistrer** pour créer le cas.
 
@@ -66,7 +66,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
 ![Advanced eDiscovery flux de travail](../media/AeDWorkflow.png)
 
-1. **[Ajoutez des dépositaires](add-custodians-to-case.md) et des sources de [données non privatives](non-custodial-data-sources.md) au cas.** La première étape après la création d’un cas consiste à ajouter des dépositaires. Un *dépositaire* est une personne particulièrement concernée par le contrôle administratif d’un document ou d’un fichier électronique. En outre, vous pouvez ajouter des sources de données qui ne sont pas associées à un utilisateur spécifique, mais qui peuvent être pertinentes pour le cas.
+1. **[Ajoutez des dépositaires](add-custodians-to-case.md) et [des sources de données non privatives](non-custodial-data-sources.md) au cas.** La première étape après la création d’un cas consiste à ajouter des dépositaires. Un *dépositaire* est une personne particulièrement concernée par le contrôle administratif d’un document ou d’un fichier électronique. En outre, vous pouvez ajouter des sources de données qui ne sont pas associées à un utilisateur spécifique, mais qui peuvent être pertinentes pour le cas.
 
    Voici quelques choses qui se produisent (ou que vous pouvez faire) lorsque vous ajoutez des dépositaires à un cas :
 
@@ -80,7 +80,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
    - Vous pouvez utiliser le flux [de travail de communication](managing-custodian-communications.md) dans Advanced eDiscovery pour envoyer une notification de conservation légale aux dépositaires.
 
-2. **[Collecter du contenu pertinent à partir de sources de données.](create-draft-collection.md)** Après avoir ajouté des dépositaires et des sources de données non privées à un cas, utilisez l’outil de collecte intégré pour rechercher dans ces sources de données du contenu qui peut être pertinent pour le cas. Vous utilisez des mots clés, [](building-search-queries.md) des propriétés et des conditions pour créer des requêtes de recherche qui retournent des résultats de recherche avec les données les plus susceptibles d’être pertinentes pour le cas. Vous pouvez également :
+2. **[Collecter du contenu pertinent à partir de sources de données.](create-draft-collection.md)** Après avoir ajouté des dépositaires et des sources de données non privées à un cas, utilisez l’outil de collecte intégré pour rechercher dans ces sources de données du contenu qui peut être pertinent pour le cas. Vous utilisez des mots clés, [](building-search-queries.md) des propriétés et des conditions pour créer des requêtes de recherche qui retournent des résultats de recherche avec les données les plus susceptibles d’être pertinentes pour le cas. Vous pouvez également :
 
    - Afficher [les statistiques de collection](collection-statistics-reports.md) qui peuvent vous aider à affiner une collection pour affiner les résultats.
 
@@ -90,7 +90,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
 3. **[Valider la collection dans un jeu à réviser.](commit-draft-collection.md)** Une fois que vous avez configuré et vérifié qu’une recherche renvoie les données souhaitées, l’étape suivante consiste à ajouter les résultats de la recherche à un jeu à réviser. Lorsque vous ajoutez des données à un jeu à réviser, les éléments sont copiés à partir de leur emplacement d’origine vers un emplacement stockage Azure sécurisé. Les données sont réindexées pour optimiser les recherches approfondies et rapides lors de la révision et de l’analyse des éléments du jeu à réviser. En outre, vous pouvez également ajouter des données [non Office 365 dans un jeu à réviser.](load-non-office-365-data-into-a-review-set.md)
 
-   Il existe également un type spécial d’ensemble de révision à ajouter, appelé jeu de révision *de conversation.* Ces types d’ensembles de révisions fournissent des fonctionnalités de reconstruction de conversation pour reconstruire, réviser et exporter des conversations threadées telles que celles Microsoft Teams. Pour plus d’informations, [consultez les conversations dans Advanced eDiscovery](conversation-review-sets.md).
+   Il existe également un type spécial d’ensemble de révision à ajouter, appelé jeu de révision *de conversation.* Ces types d’ensembles de révision fournissent des fonctionnalités de reconstruction de conversation pour reconstruire, réviser et exporter des conversations threadées telles que celles Microsoft Teams. Pour plus d’informations, [consultez les conversations dans Advanced eDiscovery](conversation-review-sets.md).
 
 4. **Examiner et analyser les données d’un jeu à réviser.** Maintenant que les données sont dans un jeu à réviser, vous pouvez utiliser un large éventail d’outils et de fonctionnalités pour afficher et analyser les données de cas dans le but de réduire le jeu de données à ce qui est le plus pertinent pour le cas que vous examinez. Voici une liste de certains outils et fonctionnalités que vous pouvez utiliser au cours de ce processus.
 
@@ -108,7 +108,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
 ## <a name="advanced-ediscovery-architecture"></a>Advanced eDiscovery architecture
 
-Voici un diagramme d’architecture qui montre le flux de travail Advanced eDiscovery de bout en bout dans un environnement à une seule géo et dans un environnement multigé géographique, ainsi que le flux de données de bout en bout aligné sur le modèle de référence de découverte [électronique.](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
+Voici un diagramme d’architecture qui montre le flux de travail de bout en bout Advanced eDiscovery dans un environnement à une seule géo et dans un environnement multigé géographique, ainsi que le flux de données de bout en bout aligné sur le modèle de référence de découverte [électronique.](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
 
 [![Affiche de modèle : Advanced eDiscovery architecture dans Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 

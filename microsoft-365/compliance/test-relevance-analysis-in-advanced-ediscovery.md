@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment utiliser l’onglet Test après le calcul par lots dans Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.
-ms.openlocfilehash: 3ac12c176f2e46ac0321976a7e0689fbd8893bba
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 97adafae8cc6113fbc2f34a1c9a95276439fc834e14ef0b45b345e1deb577ca9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865245"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery"></a>Tester l’analyse de pertinence dans Advanced eDiscovery
   
 L’onglet Test Advanced eDiscovery vous permet de tester, comparer et valider la qualité globale du traitement. Ces tests sont effectués après le calcul par lots. En balant les fichiers de la collection, un expert décide de façon finale si chaque fichier balisé est pertinent pour le cas.
   
-Dans les scénarios à problème unique ou multiple, les tests sont généralement effectués par problème. Les résultats peuvent être consultables après chaque test, et les résultats des tests peuvent être retravaillés avec des exemples de fichiers de test spécifiés.
+Dans les scénarios à problème unique et multiple, les tests sont généralement effectués par problème. Les résultats peuvent être consultables après chaque test, et les résultats des tests peuvent être retravaillés avec des exemples de fichiers de test spécifiés.
   
 ## <a name="testing-the-rest"></a>Test du reste
 
@@ -38,7 +38,7 @@ Ce test fournit des statistiques et une comparaison entre le jeu à réviser et 
   
 - Testez des exemples de statistiques sur le nombre de fichiers dans un exemple et identifiez les fichiers pertinents.
 
-- Comparaison tabulaire des paramètres Population du jeu à réviser et du reste, par exemple, nombre de fichiers, nombre estimé de fichiers pertinents, richesse estimée et coût moyen de recherche d’un autre fichier pertinent. Les paramètres de coût peuvent être définies par l’administrateur.
+- Comparaison tabulaire des paramètres Population du jeu à réviser et du reste, par exemple, le nombre de fichiers, le nombre estimé de fichiers pertinents, la richesse estimée et le coût moyen de recherche d’un autre fichier pertinent. Les paramètres de coût peuvent être définies par l’administrateur.
 
 Pour exécuter le test « Tester le reste » :
 

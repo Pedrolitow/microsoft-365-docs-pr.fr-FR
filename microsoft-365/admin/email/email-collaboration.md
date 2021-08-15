@@ -26,12 +26,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Découvrez les différents types de groupes et comment les utiliser avec les différentes fonctionnalités de collaboration de Microsoft 365.
-ms.openlocfilehash: bb5eca7ae7ad01488c13222984eee349e5554d26
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8edbd9cea5e6dcfe775ada42d164e9df81436ec7f7d461d9035a3fb1e98fd0a3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915733"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826098"
 ---
 # <a name="email-collaboration"></a>Collaborer par message électronique
 
@@ -59,12 +59,12 @@ Le tableau suivant vous donne un coup d’œil rapide sur les différents types 
 
 ||**Groupes dans Outlook**|**Listes de distribution**|**Boîtes aux lettres partagées**|**Dossiers publics**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Utilisateurs** <br/> |Utilisateurs qui souhaitent un espace de travail de collaboration pour leurs messages de groupe, fichiers et calendrier intégré aux services qu’ils utilisent déjà (Outlook Web App, OneDrive Entreprise)  <br/> |Utilisateurs devant envoyer un message électronique à un groupe de destinataires partageant des intérêts ou des caractéristiques communs.  <br/> |Les boîtes aux lettres partagées sont un excellent moyen de traiter les questions de courrier des clients, car plusieurs membres de votre organisation peuvent partager la responsabilité de la surveillance de la boîte aux lettres et de la réponse aux requêtes. Vos questions client obtiennent des réponses plus rapides et les e-mails associés sont tous stockés dans une seule boîte aux lettres.  <br/><br/> Délégués qui travaillent au nom d'une entité virtuelle, telle que support@contoso.com. Les délégués peuvent répondre aux messages électroniques en tant qu'identité de boîte aux lettres partagée.  <br/> |Dès lors qu'ils disposent des autorisations utiles, tous les membres de votre organisation peuvent accéder aux dossiers publics et y effectuer des recherches. Ils conviennent parfaitement à l'archivage des messages ou au partage des documents.  <br/> |
+|**Utilisateurs** <br/> |Utilisateurs qui souhaitent un espace de travail de collaboration pour leurs messages de groupe, fichiers et calendrier intégré aux services qu’ils utilisent déjà (Outlook Web App, OneDrive Entreprise)  <br/> |Utilisateurs devant envoyer un message électronique à un groupe de destinataires partageant des intérêts ou des caractéristiques communs.  <br/> |Les boîtes aux lettres partagées sont un excellent moyen de gérer les questions de courrier des clients, car plusieurs membres de votre organisation peuvent partager la responsabilité de la surveillance de la boîte aux lettres et de la réponse aux requêtes. Vos questions client obtiennent des réponses plus rapides et les e-mails associés sont tous stockés dans une seule boîte aux lettres.  <br/><br/> Délégués qui travaillent au nom d'une entité virtuelle, telle que support@contoso.com. Les délégués peuvent répondre aux messages électroniques en tant qu'identité de boîte aux lettres partagée.  <br/> |Dès lors qu'ils disposent des autorisations utiles, tous les membres de votre organisation peuvent accéder aux dossiers publics et y effectuer des recherches. Ils conviennent parfaitement à l'archivage des messages ou au partage des documents.  <br/> |
 |**Taille de groupe idéale** <br/> |Toute  <br/> |Grande  <br/> |Petit  <br/> |Grande  <br/> |
 |**Accès** <br/> |Exchange Online utilisateurs  <br/> |Pour les groupes de distribution, vous devez ajouter les membres manuellement. Pour les groupes de distribution dynamiques, les membres sont ajoutés d'après des critères de filtrage.  <br/> |Les autorisations Accès total et/ou Envoyer en tant que peuvent être octroyées aux utilisateurs. Si les autorisations Accès total, les utilisateurs doivent également ajouter la boîte aux lettres partagée à leur profil Outlook pour y accéder.  <br/> |Accessible par les membres de votre organisation  <br/> |
 |**Calendrier partagé ?** <br/> |Oui  <br/> |Non  <br/> |Oui  <br/> |Oui  <br/> |
 |**Les messages électroniques arrivent-ils dans la boîte de réception personnelle de l'utilisateur ?** <br/> |Non. Les utilisateurs peuvent s'abonner à un groupe, puis transférer tous les messages du groupe vers leur boîte de réception.  <br/> |Oui. Les messages électroniques arrivent dans la boîte de réception des membres du groupe de distribution.  <br/> |Non. Les messages électroniques arrivent dans la boîte de réception de la boîte aux lettres partagée.  <br/> |Non. Les messages électroniques arrivent dans le dossier public.  <br/> |
-|**Clients pris en charge** <br/> | Outlook 2016  <br/>  Outlook 2013 (transfert après abonnement)  <br/>  Outlook Web App  <br/>  Outlook 2010 (transfert après abonnement)  <br/>  Outlook 2007 (transfert après abonnement)  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> |
+|**Clients pris en charge** <br/> | Outlook 2016  <br/>  Outlook 2013 (transfert après abonnement)  <br/>  Outlook Web App  <br/>  Outlook 2010 (transfert après abonnement)  <br/>  Outlook 2007 (transfert après abonnement)  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> |
 
   
 ## <a name="related-articles"></a>Articles connexes

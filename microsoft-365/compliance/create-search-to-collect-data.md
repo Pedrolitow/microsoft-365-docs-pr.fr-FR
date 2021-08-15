@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer, définir et choisir des dépositaires et des emplacements de conservation pour une recherche dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1d9051824ff3f28484d0750b982edd70334a9b88
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f5eadf89d0f4eae3c206c82609f7b7d33fbe1ad15953808acab52880f00da274
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886433"
 ---
 # <a name="create-a-search"></a>Créer une recherche
 
@@ -44,4 +44,4 @@ Dans certains cas, vous pouvez rechercher des sources de données qui ne sont pa
 
 ## <a name="define-the-search-query-and-conditions"></a>Définir la requête de recherche et les conditions
 
-Vous pouvez définir la requête de mots clés et toutes les conditions de la recherche à l’aide des cartes de condition pré-conçues ou à l’aide du langage KQL (Keyword Query Language). Pour plus d’informations, voir [Créer des requêtes de recherche.](building-search-queries.md)
+Vous pouvez définir la requête de mots clés et toutes les conditions pour la recherche à l’aide des cartes de condition pré-conçues ou à l’aide du langage KQL (Keyword Query Language). Pour plus d’informations, voir [Créer des requêtes de recherche.](building-search-queries.md)

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ajouter et gérer des alertes d’activité dans le Centre de sécurité & conformité afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques
-ms.openlocfilehash: 5ca3b7d49490b3bd43eb82e2f230e804ad769386
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 1411e69229dc2baa60578bfa60a7c2c18184fd10a759081e68c13d87a482d7cb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886542"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 
@@ -50,7 +50,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
 
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
 
-3. Dans la page **Alertes d’activité,** cliquez ![ sur Ajouter une icône ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nouveau.**
+3. Dans la page **Alertes d’activité,** cliquez ![ sur Ajouter l’icône ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nouveau.**
 
    La page de présentation pour créer une alerte d’activité s’affiche.
 
@@ -97,7 +97,7 @@ Vous pouvez désactiver une alerte d’activité afin qu’aucune notification p
 
 Pour ré-activer une alerte d’activité,  répétez simplement ces étapes et cliquez sur le bouton bascule Désactiver pour modifier l’état sur **Activer**.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Voici un exemple de notification par courrier électronique envoyée aux utilisateurs spécifiés dans le champ Envoyé à cette alerte (et répertorié sous **Destinataires** sur la page **Alertes** d’activité) dans le Centre de sécurité & conformité.
 
@@ -108,7 +108,7 @@ Pour ré-activer une alerte d’activité,  répétez simplement ces étapes et 
     > [!TIP]
     > Vous pouvez créer une alerte d’activité pour une seule activité effectuée par n’importe quel utilisateur. Vous pouvez également créer une alerte d’activité qui effectue le suivi de plusieurs activités effectuées par un ou plusieurs utilisateurs.
 
-    Le tableau suivant répertorie certaines activités courantes liées aux documents SharePoint ou OneDrive Entreprise.
+    Le tableau suivant répertorie certaines activités courantes liées aux documents dans SharePoint ou OneDrive Entreprise.
 
     | Lorsqu’un utilisateur fait cela... | Créer une alerte pour cette activité | Groupe d’activités |
     |:-----|:-----|:-----|

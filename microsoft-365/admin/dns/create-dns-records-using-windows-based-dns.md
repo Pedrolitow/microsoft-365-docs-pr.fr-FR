@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur Windows DNS basé sur Windows microsoft.
-ms.openlocfilehash: 86deaac256c0d657ad9604be91349b113e9c0ded
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 3a1b11eb9663a68f7787b026c7c7402db8ef4a854e4b9ecdb3356bb1074e2610
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826206"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Créer des enregistrements DNS pour Microsoft à l’Windows DNS
 
@@ -54,7 +54,7 @@ Ajoutez un enregistrement MX afin que le courrier électronique de votre domaine
     - Nom d’hôte : 
     - @Address : collez la valeur d’adresse points que vous avez copiée ici à partir de Microsoft.  
     - Préf : 
-- Sélectionnez **Enregistrer les modifications.**
+- Sélectionnez **Enregistrer les modifications**.
 - Supprimez les enregistrements MX obsolètes. Si vous avez d’anciens enregistrements MX pour ce domaine qui routent le courrier électronique ailleurs, cochez la case en regard de chaque ancien enregistrement, puis sélectionnez **Supprimer**  >  **OK**. 
    
 ## <a name="add-cname-records"></a>Ajouter les enregistrements CNAME
@@ -208,7 +208,7 @@ Si vous envisagez de synchroniser votre annuaire Active Directory local avec Mic
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Transférer un domaine de Microsoft 365 vers un autre hôte](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (article)\
 [Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)\

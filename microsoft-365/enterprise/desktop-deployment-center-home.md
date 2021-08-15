@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Comment obtenir les ressources équivalentes au Centre de déploiement de bureau déprécié.
-ms.openlocfilehash: 54847305576cb5b2cf96177ad810c1b1ccb11eed
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4e71d80496ff700e9b662d7109383e04a8ef805045e1ac0085eb195b041b65fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051471"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53849858"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Centre de déploiement de bureau (supprimé)
 
@@ -27,9 +27,9 @@ Le corps du contenu qui comprenait le Centre de déploiement de bureau a été s
 Utilisez ces ressources pour déployer des bureaux modernes :
 
 - [Windows 10 déploiement](/windows/deployment/)
-- [Déployer Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Déployer Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
-- [Stratégies pour les accès aux identités et appareils](../security/defender-365-security/microsoft-365-policies-configurations.md)
+- [Stratégies pour les accès aux identités et appareils](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 Vous pouvez également afficher les vidéos [de la série De déploiement de](https://www.aka.ms/watchhowtoshift)bureau à partir de Microsoft Mechanics .
 

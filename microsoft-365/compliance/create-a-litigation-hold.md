@@ -16,12 +16,12 @@ description: Découvrez comment placer une boîte aux lettres en attente pour li
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 3bf6b39edd42d03a11731c436cd5792c3b9f7309
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a8386eba6373be26ccd3e4a9cb9884ca44cb61237e33d93c33528db4b318c71e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542072"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886608"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une attente pour litige
 
@@ -62,9 +62,9 @@ Voici les étapes à suivre pour placer une boîte aux lettres en attente pour l
 
     1. Durée de la mise en attente **(jours)**: cette zone vous indique la durée de la mise en attente des éléments de boîte aux lettres lorsque la boîte aux lettres est placée en attente pour litige. La durée est calculée à compter de la date de réception ou de création de l'élément de boîte aux lettres. Lorsque la durée de la conservation expire pour un élément spécifique, cet élément n’est plus conservé. Si vous laissez cette zone vide, les éléments sont conservés indéfiniment ou jusqu’à ce que la conservation soit supprimée. Indiquez la période en nombre de jours.
 
-    2. **Remarque visible pour l’utilisateur**: utilisez cette zone pour informer l’utilisateur que sa boîte aux lettres est en attente pour litige. La note s’affiche dans la page Informations sur le compte de la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
+    2. **Remarque visible pour l’utilisateur**: utilisez cette zone pour informer l’utilisateur que sa boîte aux lettres est en attente pour litige. La note s’affiche sur la page Informations sur le compte dans la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou une ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
 
-    3. **Page Web avec plus d’informations pour** l’utilisateur : cette zone vous aide à diriger l’utilisateur vers un site web pour plus d’informations sur la mise en attente pour litige. Cette URL apparaît sur la page Informations sur le compte dans la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou une date ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
+    3. **Page Web avec plus d’informations pour** l’utilisateur : cette zone vous aide à diriger l’utilisateur vers un site web pour plus d’informations sur la mise en attente pour litige. Cette URL apparaît sur la page Informations sur le compte dans la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou une ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
 
 6. Cliquez **sur Enregistrer les modifications** dans la page de la page de **la** attente pour litige pour créer la attente. 
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Découvrez comment activer ou désactiver la fonctionnalité De la fonction De la fonction De pylène pour tous les utilisateurs ou des utilisateurs spécifiques de votre organisation, à l’aide Exchange PowerShell. '
-ms.openlocfilehash: 91098047bdf2ab8190283990bdc6b0292e3e57ba
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1bca3c8353d756ff5b7a9cb20f083313a3ee13117c784049a5277e677110058b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826182"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Configurer l’encombrement pour votre organisation
 
@@ -98,7 +98,7 @@ En tant qu’administrateur, vous pouvez ré-activer le clutter à l’aide Exch
     
   - Les paramètres de l’encombrement s’affichent
     
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Utiliser le clutter pour trier les messages de](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) faible priorité dans Outlook (article)\
 [Utiliser le clutter pour trier les messages de](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) faible priorité dans OWA (article)\

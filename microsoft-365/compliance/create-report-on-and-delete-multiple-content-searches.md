@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu telles que la création de recherches et l’exécution de rapports via des scripts PowerShell dans le Centre de sécurité et conformité & dans Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6155a0bf411cc83fd58291efe7797e7f68370708
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: ba42baa399e92e65228d18028043c53d8e90fc78f2c6ae614c39d68efc3482d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886493"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
@@ -64,7 +64,7 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez à cette
 
    ****
 
-   |Paramètre|Description|
+   |Parameter|Description|
    |---|---|
    |`ExchangeLocation`|Adresse SMTP de la boîte aux lettres de l’utilisateur.|
    |`SharePointLocation`|URL du site OneDrive Entreprise de l’utilisateur ou URL de n’importe quel site de votre organisation. Pour l’URL OneDrive Entreprise sites web, utilisez ce format : ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` . Par exemple : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
@@ -249,7 +249,7 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
 
 3. À **l’invite d’ID de** groupe de recherche, tapez un nom de groupe de recherche, puis appuyez sur **Entrée**; par  `ContosoCase` exemple. N’oubliez pas que ce nom est sensible à la cas, donc vous devez le taper comme vous l’avez fait lorsque vous avez écrit le script à l’étape 3.
 
-4. À l’invite chemin d’accès du fichier pour enregistrer le rapport dans un fichier **CSV (laissez** vide pour afficher simplement le rapport), tapez un nom de fichier complet (y compris l’extension de fichier .csv) si vous souhaitez enregistrer le rapport dans un fichier CSV. nom du fichier CSV, y compris l’extension .csv fichier. Par exemple, vous pouvez taper pour l’enregistrer dans le répertoire actuel ou pour l’enregistrer  `ContosoCaseReport.csv`  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` dans un autre dossier. Vous pouvez également laisser l’invite vide pour afficher le rapport, mais pas l’enregistrer dans un fichier.
+4. À l’invite chemin d’accès au fichier pour enregistrer le rapport dans un fichier **CSV (laisser** vide pour afficher simplement le rapport), tapez un nom de fichier complet (y compris l’extension de fichier .csv) si vous souhaitez enregistrer le rapport dans un fichier CSV. nom du fichier CSV, y compris l’extension .csv fichier. Par exemple, vous pouvez taper pour l’enregistrer dans le répertoire actuel ou pour l’enregistrer  `ContosoCaseReport.csv`  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` dans un autre dossier. Vous pouvez également laisser l’invite vide pour afficher le rapport, mais pas l’enregistrer dans un fichier.
 
 5. Appuyez sur **Entrée**.
 

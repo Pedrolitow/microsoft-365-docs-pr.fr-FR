@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Choisissez entre différentes méthodes MDM et MAM.
-ms.openlocfilehash: 462fe28b1240681380d6a1d26ae362575c0d7c86
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 933aacd950f67eaab9b538fd6b029a4b6f71d807a27bd33c9139650f57f1d7b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826230"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>Options de protection de vos appareils et données d’application
 
@@ -46,12 +46,12 @@ Vous avez plusieurs façons de sécuriser les appareils et les données de votre
 
     Microsoft Intune est un service basé sur le cloud qui se concentre sur la gestion des périphériques mobiles (MDM) et la gestion des applications mobiles (MAM). Vous contrôlez l’utilisation des appareils de votre organisation, notamment les téléphones mobiles, les tablettes et les ordinateurs portables. Vous pouvez également configurer des stratégies spécifiques pour contrôler les applications. Pour plus d’informations, [voir Microsoft Intune documentation.](/mem/intune/)
 
-- **Azure Active Directory (AD) Premium** sont des plans autonomes qui sont également fourni avec certains plans Microsoft 365 pour les entreprises et les entreprises. Pour plus d’informations, [consultez la tarification Azure AD.](https://azure.microsoft.com/pricing/details/active-directory/)
+- **Azure Active Directory (AD) Premium** sont des plans autonomes qui sont également fourni avec certaines des Microsoft 365 pour les entreprises et les plans d’entreprise. Pour plus d’informations, [consultez la tarification Azure AD.](https://azure.microsoft.com/pricing/details/active-directory/)
 
      Azure AD Premium P1 et Azure AD Premium P2 vous permettent de définir des fonctionnalités d’accès conditionnel, de réinitialisation de mot de passe en libre-service, etc. Pour plus d’informations sur les fonctionnalités des plans Premium, consultez la page de tarification [Azure AD.](https://azure.microsoft.com/pricing/details/active-directory/)
-- **Microsoft 365 Business Premium** inclut Intune et Azure Active Directory Premium P1 et Office 365 Protection avancée contre les menaces. 
+- **Microsoft 365 Business Premium** inclut Intune et Azure Active Directory Premium P1 et Office 365 protection avancée contre les menaces. 
  
-    Microsoft 365 Business Premium offre un ensemble de modèles de stratégie pour sécuriser vos appareils et vos données d’application. Il offre un bon niveau de sécurité et de protection contre les menaces pour la plupart des entreprises de moins de 300 utilisateurs. Pour plus d’informations, voir [configurer](../../business/set-up.md)Microsoft 365 Business Premium l’Assistant Installation, sécuriser Windows 10 [ordinateurs](../../business/secure-win-10-pcs.md)et Microsoft 365 Business Premium fonctionnalités de sécurité [et de conformité.](../../business/security-features.md)
+    Microsoft 365 Business Premium offre un ensemble de modèles de stratégie pour sécuriser vos appareils et vos données d’application. Il offre un bon niveau de sécurité et de protection contre les menaces pour la plupart des entreprises de moins de 300 utilisateurs. Pour plus d’informations, voir [configurer](../../business/set-up.md)des Microsoft 365 Business Premium dans l’Assistant Installation, sécuriser Windows 10 [ordinateurs](../../business/secure-win-10-pcs.md)et Microsoft 365 Business Premium fonctionnalités de sécurité [et de conformité.](../../business/security-features.md)
 
 - **Microsoft 365 pour les abonnements** d’entreprise incluent Microsoft Intune et E5 inclut également les plans Azure AD Premium 1 et 2.
 

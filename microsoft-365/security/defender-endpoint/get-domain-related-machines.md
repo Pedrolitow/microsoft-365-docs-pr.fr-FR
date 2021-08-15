@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les ordinateurs associés au domaine
-description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés au domaine pour obtenir des ordinateurs qui ont communiqué avec ou à partir d’un domaine dans Microsoft Defender pour point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés au domaine pour obtenir des ordinateurs qui ont communiqué avec ou depuis un domaine dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, domaine, associé, appareils
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 82c1d0f1caf9a6814beb99c38cd6bc1d49eacf27
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: dc6b2f1edcd7387ac144f4cd989cf3c65889dd232d887360187fbf84062cba78
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656018"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53874098"
 ---
 # <a name="get-domain-related-machines-api"></a>API Obtenir les ordinateurs associés au domaine
 
@@ -39,7 +39,7 @@ ms.locfileid: "53656018"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère une collection [d’ordinateurs](machine.md) qui ont communiqué avec ou à partir d’une adresse de domaine donnée.
+Extrait une collection [d’ordinateurs](machine.md) qui ont communiqué avec ou à partir d’une adresse de domaine donnée.
 
 ## <a name="limitations"></a>Limites
 

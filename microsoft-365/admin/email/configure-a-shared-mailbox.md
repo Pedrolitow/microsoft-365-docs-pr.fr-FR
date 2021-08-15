@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez une boîte aux lettres partagée et configurez certains paramètres pour ses utilisateurs, tels que le forwarding de courrier électronique et les réponses automatiques.
-ms.openlocfilehash: e69d1bbde5784339f3973bf456eca1ded72840af
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: dafc63bd09cb50501503ab74086b9b51f73e8e7ea1b72d420e610eb58681072c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393990"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826218"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Configurer les paramètres de boîte aux lettres partagée
 
@@ -108,7 +108,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 2. Sélectionnez la boîte aux lettres  partagée à modifier, puis sélectionnez \> **Modifier les membres.**
 
-3. Effectuez l’une des opérations suivantes :
+3. Effectuez l'une des opérations suivantes :
    - Pour ajouter des membres, **sélectionnez Ajouter des** membres, recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
    - Pour supprimer des membres, utilisez la zone de recherche pour rechercher le membre si nécessaire, sélectionnez **le X** à côté du nom du membre, puis sélectionnez **Enregistrer**. 
 
@@ -122,7 +122,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 3. Sélectionnez **Modifier** en plus de l’autorisation que vous souhaitez modifier pour un membre. 
 
-4. Effectuez l’une des opérations suivantes :
+4. Effectuez l'une des opérations suivantes :
    - Pour accorder cette autorisation à un membre supplémentaire, sélectionnez Ajouter des **autorisations,** recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
    - Pour supprimer l’autorisation d’un membre, utilisez la zone De recherche pour rechercher le membre si nécessaire, sélectionnez **le X** en de côté du nom du membre, puis sélectionnez **Enregistrer**. 
 

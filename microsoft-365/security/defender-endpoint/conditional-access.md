@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c547fd5691332044082b918f07e5da7c7c92bcf
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7bfe9006a42bc2599c6883b5b27d5565a4df57a49fc8ba7cb4faf1d00fe29a9d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834208"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>Activer l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données 
 
@@ -65,7 +65,7 @@ Il existe trois façons de résoudre un risque :
 2. Résoudre les alertes actives sur l’appareil. Cela permet de supprimer le risque de l’appareil.
 3. Vous pouvez supprimer l’appareil des stratégies actives et, par conséquent, l’accès conditionnel ne sera pas appliqué sur l’appareil. 
 
-La correction manuelle nécessite qu’un administrateur secops examine une alerte et adresse le risque visible sur l’appareil. La correction automatisée est configurée par le biais des paramètres de configuration fournis dans la section suivante, [Configurer l’accès conditionnel](configure-conditional-access.md).
+La correction manuelle nécessite qu’un administrateur secops examine une alerte et adresse le risque visible sur l’appareil. La correction automatisée est configurée par le biais des paramètres de configuration fournis dans la section suivante, [Configurer l’accès conditionnel.](configure-conditional-access.md)
 
 Lorsque le risque est supprimé par le biais d’une correction manuelle ou automatisée, l’appareil revient à un état conforme et l’accès aux applications est accordé.
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/15/2021
-ms.openlocfilehash: f9ca83fcfba4b79898a0fed527e38947a4c230d6
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: e7ea71848c2e64eb7d67605ca108ac9fc90709747af633e6a01b5da67cd8baed
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950130"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857762"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Erreurs courantes à éviter lors de la définition d’exclusions
 
