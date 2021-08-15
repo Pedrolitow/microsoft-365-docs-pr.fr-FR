@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8ecd425076507cb00d763d9e57f9fef1e6779035
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 876954234e3b78b76780861f925ae120d5df5b63dc85ea4f0278f614f979a72d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887342"
 ---
 # <a name="payment-information-for-brunei"></a>Informations de paiement pour le Brunei
 

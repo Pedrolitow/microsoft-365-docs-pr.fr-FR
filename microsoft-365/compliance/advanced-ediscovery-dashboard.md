@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le tableau Advanced eDiscovery tableau de bord pour les ensembles de révision afin d’analyser rapidement votre corpus afin d’identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision.
-ms.openlocfilehash: 36f30689047eec7ff2c2c49c6b0d54f1a60470e4
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+ms.openlocfilehash: 2128f2b2caa719cf2fc9b966ff70e1cfc74a1852896a10c85a17c407ffdddfea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836509"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery tableau de bord pour les ensembles de révision
 
@@ -45,13 +45,13 @@ Dans certains cas, Advanced eDiscovery, il se peut que vous devrez examiner un g
   
 5. Cliquez sur **le widget Nouveau,** puis sélectionnez l’un des éléments suivants :
 
-   ![Liste de listes de listes de nouveaux widgets](../media/NewWidgetDropdownBox.png)
+   ![Liste de listes des nouveaux widgets](../media/NewWidgetDropdownBox.png)
 
    - **Choisissez dans la bibliothèque :** Affiche une bibliothèque par défaut de widgets. Vous cliquez sur un widget, puis sur **Ajouter** pour l’ajouter aux widgets dans la page d’affichage **de profil de** recherche.
   
    - **Créez un widget personnalisé :** Affiche une page de présentation que vous pouvez utiliser pour configurer un widget personnalisé. 
 
-6. Pour créer un widget personnalisé, faites les choses suivantes dans la page volant Ajouter un **widget** :
+6. Pour créer un widget personnalisé, dans la page volant Ajouter un **widget,** vous pouvez :
 
    ![Créer un widget](../media/addwidget.png)
 

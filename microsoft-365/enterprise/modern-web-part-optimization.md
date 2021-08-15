@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment utiliser les diagnostics de page pour optimiser les performances des composants Web SharePoint pages de sites modernes en ligne.
-ms.openlocfilehash: fab5b0bc9d0b04ede0815856af7366e277dbf909
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: bfa508840045d9222798254e02e1363ea5b480829605f82e3cbd211846dc9d3d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288898"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878718"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des composants WebPart dans les pages de sites modernes SharePoint Online
 
