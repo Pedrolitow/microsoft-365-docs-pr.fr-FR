@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment sélectionner et exporter du contenu à partir d’un Advanced eDiscovery de révision pour les présentations ou les avis externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7aa0685be3beadc9e7c9979aa2ebea25465b67f3e0fc93cbd33b5dffa8338074
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: ceb735b4ebce5ef26eb7e7216e1e0f81897c7c0cfbdbb5982b632e6f355e442a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905802"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exporter des documents à partir d’un groupe de révision dans Advanced eDiscovery
 
@@ -76,8 +76,6 @@ Utilisez les options suivantes pour configurer l’exportation. Toutes les optio
   - Fichiers texte : cette option inclut les versions texte extraites des fichiers natifs dans l’exportation.
   
   - Remplacez les natifs rédigés par des fichiers PDF convertis : si des fichiers PDF rédigés sont générés au cours de la révision, ces fichiers peuvent être exportés. Vous pouvez choisir d’exporter uniquement les fichiers natifs qui ont été rédigés (en ne sélectionnant pas cette option) ou vous pouvez sélectionner cette option pour exporter les fichiers PDF qui contiennent les actions.
-
-  - Fichiers PDF de conversation au lieu de messages de conversation individuels : cochez cette case pour exporter les conversations dans un fichier PDF. Tous les messages de conversation de la même conversation sont exportés dans le même fichier PDF. Si vous ne cochez pas cette case, chaque message unique d’une conversation est exporté en tant qu’élément autonome. Le fichier est exporté au même format que dans la boîte aux lettres. Pour une conversation spécifique, vous recevez plusieurs fichiers .msg.
 
 Les sections suivantes décrivent la structure des dossiers pour les fichiers libres et les options de structure de répertoire condensé. Les exportations sont partitionées dans des fichiers ZIP avec une taille maximale de contenu non compressé de 75 Go. Si la taille de l’exportation est inférieure à 75 Go, l’exportation se compose d’un fichier récapitulatif et d’un fichier ZIP unique. Pour les exportations dont la taille est supérieure à 75 Go de données non compressées, plusieurs fichiers ZIP sont créés. Une fois téléchargés, les fichiers ZIP peuvent être décompressés dans un seul emplacement pour recréer l’exportation complète.
 

@@ -2,8 +2,8 @@
 title: Démarrage avec des stratégies d’application
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec En savoir plus sur les stratégies d’application.
-ms.openlocfilehash: 96acc17322cf811ba2ce36345df972f36b7706c7
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: fae9afa65c4bef1d7288493e92c8b78c6fb9d08fa4426c1087622856b4cec921
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541280"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861306"
 ---
 # <a name="get-started-with-app-policies"></a>Démarrage avec des stratégies d’application
 
@@ -27,7 +27,7 @@ ms.locfileid: "53541280"
 
 Les stratégies d’application pour la gouvernance des applications Microsoft vous permettent d’implémenter des conditions plus proactives ou réactives pour créer des alertes ou corriger automatiquement vos besoins spécifiques en matière de conformité des applications au sein de votre organisation.
 
-Pour afficher la liste des stratégies d’application actuelles, accédez à **Centre de conformité Microsoft 365 > Protection et gouvernance d’applications > Stratégies**.
+Pour afficher la liste des stratégies d’application actuelles, accédez à **Centre de conformité Microsoft 365 > Gouvernance d’applications > Stratégies**.
 
 ![Page récapitulative des stratégies MAPG dans le Centre de conformité Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 

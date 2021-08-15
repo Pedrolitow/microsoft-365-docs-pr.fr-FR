@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4345ac0a2758e87160be83c6abd96cdbaa6822dc
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 873dd032b0f53b95327fcc8b517031cfed80501e55fbc74c65daf06be2f75a15
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458189"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898379"
 ---
 # <a name="pilot-mde-evaluation"></a>Évaluation MDE pilote
 
@@ -41,7 +41,7 @@ La vérification de l’état de la licence et si elle a été correctement mise
 
    ![Image de la page de gestion des licences Azure](images/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder aux abonnements de facturation dans le Centre  >  **d’administration.**
+1. Vous pouvez également accéder au Centre d’administration pour accéder **aux**  >  **abonnements de facturation.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 

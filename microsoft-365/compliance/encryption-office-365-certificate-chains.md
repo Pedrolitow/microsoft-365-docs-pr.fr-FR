@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Affichez la liste complète des certificats racine et des autorités de certification dans Microsoft 365.
-ms.openlocfilehash: ab4ca6f92407659b96e177161e0fd0c2847a890c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a462b5912bc27cc8ed6ef529df63fd96c25969a494253e4133324c031d2475d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905834"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 chaînes de chiffrement
 
@@ -162,7 +162,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Autorité de certification racine de la resserrement - G2**
 
-| **Subject** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Subject** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **Numéro de série** | 4A:53:8C:28 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -766,7 +766,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Cast, C=IE |
+| **Issuer** | CN=CyberTrust Root, OU=CyberTrust, O=Magasins, C=IE |
 | **Numéro de série** | 0F:A7:47:22:C5:3D:88:C8:0F:58:9E:FB:1F:9D:4A:3A |
 | **Longueur de clé publique** | RSA 4096 bits |
 | **Algorithme de signature** | sha256RSA |

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Liste de références des enregistrements système de nom de domaine externe à utiliser lorsque vous planifiez d’un déploiement Office 365.
-ms.openlocfilehash: 2cbbbcb6105feccdaed1f7b6ce05a84b374024c0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: e3f66326d314246b3cde5c88dfc00ea394d8119e92cf9dcd14840f559aa7cd6f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53849190"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Enregistrements DNS externes pour Office 365
 
@@ -52,7 +52,7 @@ Chaque client Office 365 doit ajouter deux enregistrements à son serveur DNS ex
   
 |**Enregistrement DNS** <br/> |**Objectif** <br/> |**Valeur à utiliser** <br/> |
 |----------|-----------|------------|
-|**CNAME** <br/> **(Suite)** <br/> |Utilisé par Office 365 pour l'authentification directe auprès de la plateforme d'identité correcte.[Plus d’informations](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **Remarque :** cette CNAME s’applique uniquement à Office 365 géré par 21Vianet. [Plus d’informations](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**Alias :** msoID  <br/> **Cible :** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
+|**CNAME** <br/> **(Suite)** <br/> |Utilisé par Office 365 pour l'authentification directe auprès de la plateforme d'identité correcte.[Plus d’informations](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **Remarque :** Cette CNAME s’applique uniquement à Office 365 géré par 21Vianet. [Pour plus d’informations](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**Alias :** msoID  <br/> **Cible :** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(Vérification du domaine)** <br/> |Utilisées par Office 365 uniquement ce vous êtes le propriétaire vérifier votre domaine. Il n’affecte aucun autre élément.  <br/> |**Hôte :** @ (ou de certains fournisseurs d’hébergement DNS, votre nom de domaine)  <br/> **Valeur TXT :** _une chaîne de texte fournie par_ Office 365  <br/> L’Assistant de **configuration de domaine** Office 365 fournit les valeurs à utiliser pour créer cet enregistrement.  <br/> |
 
 
@@ -66,7 +66,7 @@ Emailing dans Office 365 nécessite plusieurs enregistrements. Les trois princip
 - **L’enregistrement MX** indique aux autres systèmes de messagerie où envoyer le courrier électronique pour votre domaine. **Lorsque vous transférez votre courrier électronique vers Office 365, la mise à jour de l’enregistrement MX de votre domaine permettra aux messages envoyés à ce domaine d’arriver dans Office 365.**  
 Voulez-vous simplement faire passer quelques adresses de messagerie dans Office 365 ? Vous pouvez [piloter Office 365 avec un petit nombre d’adresses e-mail sur votre domaine personnalisé](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7).
 
-- **L’enregistrement TXT pour SPF** permet aux systèmes de messagerie de destination de confirmer que vous approuvez le serveur d’envoi de votre courrier électronique. Cela évite des problèmes tels que l’usurpation d’adresse e-mail et le hameçonnage. Consultez [Enregistrements DNS externes requis pour SPF](external-domain-name-system-records.md#BKMK_SPFrecords) dans cet article pour comprendre ce que vous devez inclure dans votre enregistrement.
+- **L’enregistrement TXT pour SPF** est utilisé par les systèmes de messagerie du destinataire pour valider que vous approuvez le serveur d’envoi de votre message. Cela permet d’éviter les problèmes tels que l’usurpation d’identité et le hameçonnage de messagerie. Voir les [enregistrements DNS externes requis pour SPF](external-domain-name-system-records.md#BKMK_SPFrecords) dans cet article d’aide pour comprendre ce que vous incluez dans votre enregistrement.
 
 Les clients email qui utilisent la fédération Exchange auront un enregistrement CNAME et TXT supplémentaire en bas de tableau.
   

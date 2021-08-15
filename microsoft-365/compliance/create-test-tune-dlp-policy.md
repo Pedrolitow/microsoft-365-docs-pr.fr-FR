@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous allez découvrir comment créer, tester et régler une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: 3b7f74605c8a825bb03244f3a861ad3cca8f550d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: b503fbf62972c2c816fdf7396c7cad4eb2b5fe2514ca36375d7773c9e432d175
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872367"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -38,7 +38,7 @@ DLP examine les messages électroniques et les fichiers à la recherche d’info
 
 ## <a name="permissions"></a>Autorisations
 
-Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité. Par défaut, votre administrateur client aura accès aux responsables de la mise en conformité et à d’autres personnes. Procédez comme suit :
+Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité. Par défaut, votre administrateur client aura accès aux responsables de la mise en conformité et à d’autres personnes. Procédez comme suit :
   
 1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
     
@@ -52,19 +52,19 @@ Utilisez le rôle Gestion de la conformité **DLP** en affichage seul pour crée
 
 Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP afin de ne pas appliquer de stratégies.
+Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP et non pour appliquer des stratégies.
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Détection des informations sensibles par DLP
 
-DLP trouve des informations sensibles par correspondance de modèle d’expression régulière (RegEx), en combinaison avec d’autres indicateurs tels que la proximité de certains mots clés avec les modèles correspondants. Par exemple, un numéro de carte de crédit VISA a 16 chiffres. Toutefois, ces chiffres peuvent être écrits de différentes manières, par exemple 1111-1111-1111-1111, 1111 1111 1111 1111 ou 111111111111111111111.
+DLP trouve des informations sensibles par correspondance de modèle d’expression régulière (RegEx), en combinaison avec d’autres indicateurs tels que la proximité de certains mots clés avec les modèles correspondants. Par exemple, un numéro de carte de crédit VISA a 16 chiffres. Toutefois, ces chiffres peuvent être écrits de différentes manières, par exemple 1111-1111-1111-1111, 1111 1111 1111 1111 1111 ou 1111111111111111.
 
-Toute chaîne à 16 chiffres n’est pas nécessairement un numéro de carte de crédit, il peut s’agit d’un numéro de ticket provenant d’un système de service d’aide ou d’un numéro de série d’un élément matériel. Pour faire la différence entre un numéro de carte de crédit et une chaîne à 16 chiffres sans danger, un calcul est effectué (checksum) pour vérifier que les numéros correspondent à un modèle connu des différentes marques de carte de crédit.
+Toute chaîne à 16 chiffres n’est pas nécessairement un numéro de carte de crédit, il peut s’agit d’un numéro de ticket provenant d’un système de service d’aide ou d’un numéro de série d’un élément matériel. Pour faire la différence entre un numéro de carte de crédit et une chaîne à 16 chiffres sans danger, un calcul est effectué (checksum) pour vérifier que les nombres correspondent à un modèle connu des différentes marques de carte de crédit.
 
 Si DLP trouve des mots clés tels que « VISA » ou « AMEX », des valeurs proches qui peuvent être la date d’expiration de la carte de crédit, DLP utilise également ces données pour l’aider à déterminer si la chaîne est un numéro de carte de crédit ou non.
 
 En d’autres termes, la DLP est suffisamment intelligente pour reconnaître la différence entre ces deux chaînes de texte dans un e-mail :
 
-- « Pouvez-vous me commander un nouvel ordinateur portable ? Utilisez mon numéro VISA 1111-1111-1111-1111, date d’expiration : 11/22, et envoyez-moi la date de remise estimée lorsque vous l’avez. »
+- « Pouvez-vous me commander un nouvel ordinateur portable ? Utilisez mon numéro VISA 1111-1111-1111-1111, arrivant à expiration le 22/11 et envoyez-moi la date de remise estimée lorsque vous l’avez. »
 - « Le numéro de série de mon ordinateur portable est 2222-2222-2222-2222 et il a été acheté le 11/11/2010. En fait, mon visa de voyage est-il encore approuvé ? »
 
 Voir [les définitions d’entités](sensitive-information-type-entity-definitions.md) de type Informations sensibles qui expliquent comment chaque type d’informations est détecté.
@@ -73,13 +73,13 @@ Voir [les définitions d’entités](sensitive-information-type-entity-definitio
 
 Lorsque les risques de fuite de données ne sont pas entièrement évidents, il est difficile de savoir exactement où vous devez commencer avec l’implémentation de la protection contre la perte de données. Heureusement, les stratégies DLP peuvent être exécutés en « mode test », ce qui vous permet d’évaluer leur efficacité et leur précision avant de les activer.
 
-Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d Exchange’administration. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le Centre de sécurité & conformité. C’est donc ce que je vais utiliser pour les démonstrations de cet article. Dans le Centre de sécurité & conformité, vous trouverez les stratégies DLP sous Stratégie de protection contre la perte **de**  >  **données.** Choisissez **Créer une stratégie** à démarrer.
+Les stratégies DLP pour Exchange Online peuvent être gérées par le biais Exchange centre d’administration. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le Centre de sécurité & conformité. C’est donc ce que je vais utiliser pour les démonstrations de cet article. Dans le Centre de sécurité & conformité, vous trouverez les stratégies DLP sous Stratégie de protection contre la perte **de**  >  **données**. Choisissez **Créer une stratégie à** démarrer.
 
 Microsoft 365 fournit une gamme de modèles de stratégie [DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies. Supposons que vous êtes une entreprise australien. Vous pouvez filtrer les modèles sur l’Australie et choisir Financial, Medical and Health et Privacy.
 
 ![Option de choix du pays ou de la région](../media/DLP-create-test-tune-choose-country.png)
 
-Pour cette démonstration, je choisirai les données d’informations d’identification personnelle (PII) de l’Australie, qui incluent les types d’informations du numéro de fichier fiscal australien (TFN) et du numéro de permis de conduire.
+Pour cette démonstration, je choisirai les données des informations d’identification personnelle (PII) de l’Australie, qui incluent les types d’informations du numéro de fichier fiscal australien (TFN) et du numéro de permis de conduire.
 
 ![Option de choix d’un modèle de stratégie](../media/DLP-create-test-tune-choose-policy-template.png)
 
@@ -91,7 +91,7 @@ Choisissez les emplacements à appliquer à la stratégie. Les stratégies DLP p
 
 ![Option de choix de tous les emplacements](../media/DLP-create-test-tune-choose-locations.png)
 
-À la première étape **Paramètres** stratégie, acceptez simplement les valeurs par défaut pour le moment. Vous pouvez personnaliser les stratégies DLP, mais les valeurs par défaut sont un bon endroit pour commencer.
+À la première **étape Paramètres** stratégie, acceptez simplement les valeurs par défaut pour le moment. Vous pouvez personnaliser les stratégies DLP, mais les valeurs par défaut sont un bon endroit pour commencer.
 
 ![Options de personnalisation du type de contenu à protéger](../media/DLP-create-test-tune-default-customization-settings.png)
 
@@ -117,7 +117,7 @@ Par exemple, la stratégie DLP que j’ai créée pour cet article détectera le
 
 ![Documentation sur le numéro de fichier fiscal australien](../media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
  
-Pour faire la démonstration de la détection du TFN de manière assez discrète, un message électronique avec le mot « Numéro de fichier fiscal » et une chaîne à neuf chiffres à proximité se fera sans problème. La raison pour laquelle elle ne déclenche pas la stratégie DLP est que la chaîne à neuf chiffres doit transmettre la sommes de contrôle qui indique qu’il s’agit d’un TFN valide et non seulement d’une chaîne de nombres sans danger.
+Pour faire la démonstration de la détection de TFN de manière plutôt discrète, un message électronique avec le mot « Numéro de fichier fiscal » et une chaîne à neuf chiffres à proximité proche s’enserra sans problème. La raison pour laquelle elle ne déclenche pas la stratégie DLP est que la chaîne à neuf chiffres doit transmettre la sommes de contrôle qui indique qu’il s’agit d’un TFN valide et non seulement d’une chaîne de nombres sans danger.
 
 ![Numéro de fichier fiscal australien ne réussissant pas la sommes de contrôle](../media/DLP-create-test-tune-email-test1.png)
 
@@ -125,11 +125,11 @@ En comparaison, un e-mail avec les mots « Numéro de fichier fiscal » et un nu
 
 ![Numéro de fichier fiscal australien qui passe le total de contrôle](../media/DLP-create-test-tune-email-test2.png)
 
-Le courrier électronique du rapport d’incident inclut le type d’informations sensibles détectées, le nombre d’instances détectées et le niveau de confiance de la détection.
+Le courrier électronique du rapport d’incident inclut le type d’informations sensibles qui ont été détectées, le nombre d’instances détectées et le niveau de confiance de la détection.
 
 ![Rapport d’incident montrant le numéro de fichier fiscal détecté](../media/DLP-create-test-tune-email-incident-report.png)
 
-Si vous laissez votre stratégie DLP en mode test et analysez les e-mails de rapport d’incident, vous pouvez commencer à avoir une bonne impression de la précision de la stratégie DLP et de son efficacité lorsqu’elle est appliquée. Outre les rapports d’incident, vous pouvez utiliser les rapports [DLP](view-the-dlp-reports.md) pour afficher une vue agrégée des correspondances de stratégie au sein de votre client.
+Si vous laissez votre stratégie DLP en mode test et analysez les e-mails de rapport d’incident, vous pouvez commencer à avoir une bonne impression de la précision de la stratégie DLP et de son efficacité lorsqu’elle est appliquée. Outre les rapports d’incident, vous pouvez utiliser les rapports [DLP](view-the-dlp-reports.md) pour afficher un affichage agrégé des correspondances de stratégie au sein de votre client.
 
 ## <a name="tune-a-dlp-policy"></a>Régler une stratégie DLP
 
@@ -152,7 +152,7 @@ Lorsque vous modifiez une règle au sein d’une stratégie DLP, vous pouvez mod
 - Les conditions, y compris le type et le nombre d’instances de données sensibles qui déclenchent la règle.
 - Actions entreprises, telles que la restriction de l’accès au contenu.
 - Les notifications des utilisateurs, qui sont des conseils de stratégie qui s’affichent à l’utilisateur dans leur client de messagerie ou navigateur web.
-- Les substitutions utilisateur déterminent si les utilisateurs peuvent choisir de continuer à partager leurs e-mails ou fichiers.
+- Les substitutions utilisateur déterminent si les utilisateurs peuvent choisir de continuer à partager leurs messages électroniques ou fichiers.
 - Rapports d’incident, pour avertir les administrateurs.
 
 ![Options pour modifier des parties d’une règle](../media/DLP-create-test-tune-editing-options.png)
@@ -161,15 +161,15 @@ Pour cette démonstration, j’ai ajouté des notifications utilisateur à la st
 
 ![Options pour les notifications et remplacements utilisateur](../media/DLP-create-test-tune-user-notifications.png)
 
-La stratégie contient deux règles pour la gestion du volume élevé et du volume faible, donc n’oubliez pas de modifier les deux avec les actions que vous souhaitez. Il s’agit d’une opportunité de traiter les cas différemment en fonction de leurs caractéristiques. Par exemple, vous pouvez autoriser les remplacements pour les violations de volume faible, mais pas les remplacements pour les violations de volume élevé.
+La stratégie contient deux règles pour la gestion du volume élevé et du volume faible, donc n’oubliez pas de modifier les deux avec les actions que vous souhaitez. Il s’agit d’une opportunité de traiter les cas différemment en fonction de leurs caractéristiques. Par exemple, vous pouvez autoriser les remplacements pour les violations de volume faible, mais pas les remplacements pour les violations de volume élevées.
 
 ![Une règle pour un volume élevé et une règle pour un volume faible](../media/DLP-create-test-tune-two-rules.png)
 
-En outre, si vous souhaitez réellement bloquer ou restreindre l’accès au contenu en violation de la stratégie, vous devez configurer une action sur la règle pour le faire.
+En outre, si vous souhaitez bloquer ou restreindre l’accès au contenu en violation de la stratégie, vous devez configurer une action sur la règle pour le faire.
 
 ![Option pour restreindre l’accès au contenu](../media/DLP-create-test-tune-restrict-access-action.png)
 
-Après avoir enregistrer ces modifications dans les paramètres de stratégie, je dois également revenir à la page de paramètres principale de la stratégie et activer l’option permettant d’afficher des conseils de stratégie aux utilisateurs pendant que la stratégie est en mode test. Il s’agit d’un moyen efficace d’introduire des stratégies DLP à vos utilisateurs finaux et de former les utilisateurs, sans risque de trop de faux positifs qui ont un impact sur leur productivité.
+Après avoir enregistrer ces modifications dans les paramètres de stratégie, je dois également revenir à la page de paramètres principale de la stratégie et activer l’option permettant d’afficher des conseils de stratégie aux utilisateurs pendant que la stratégie est en mode test. Il s’agit d’un moyen efficace d’introduire des stratégies DLP à vos utilisateurs finaux et de former les utilisateurs à la sensibilisation, sans risque de trop de faux positifs qui ont une incidence sur leur productivité.
 
 ![Option d’afficher les conseils de stratégie en mode test](../media/DLP-create-test-tune-show-policy-tips.png)
 
@@ -183,7 +183,7 @@ Si vous avez activé les conseils de stratégie, l’utilisateur commence à voi
 
 Les modèles de stratégie DLP ne sont pas parfaits. Il est probable que certains faux positifs se produisent dans votre environnement, c’est pourquoi il est si important de faciliter votre passage à un déploiement DLP, en prenant le temps de tester et d’affiner correctement vos stratégies.
 
-Voici un exemple de faux positif. Cet e-mail est relativement dangereux. L’utilisateur fournit son numéro de téléphone mobile à une personne, y compris sa signature électronique.
+Voici un exemple de faux positif. Cet e-mail est relativement dangereux. L’utilisateur fournit son numéro de téléphone mobile à une personne, ainsi que sa signature électronique.
 
 ![Courrier électronique affichant des informations fausses positives](../media/DLP-create-test-tune-false-positive-email.png)
  
@@ -204,7 +204,7 @@ Une autre option consiste à augmenter le nombre d’instances afin qu’un faib
 
 ![Option de modification du nombre d’instances](../media/DLP-create-test-tune-edit-instance-count.png)
 
-En plus de modifier le nombre d’instances, vous pouvez également ajuster la précision de correspondance (ou le niveau de confiance). Si votre type d’informations sensibles possède plusieurs modèles, vous pouvez ajuster la précision de correspondance dans votre règle, afin que votre règle ne corresponde qu’à des modèles spécifiques. Par exemple, pour réduire les faux positifs, vous pouvez définir la précision de correspondance de votre règle afin qu’elle corresponde uniquement au modèle ayant le niveau de confiance le plus élevé. Pour plus d’informations sur les niveaux de confiance, voir comment utiliser le niveau [de confiance pour régler vos règles.](data-loss-prevention-policies.md#match-accuracy)
+En plus de modifier le nombre d’instances, vous pouvez également ajuster la précision de correspondance (ou niveau de confiance). Si votre type d’informations sensibles possède plusieurs modèles, vous pouvez ajuster la précision de correspondance dans votre règle, afin que votre règle ne corresponde qu’à des modèles spécifiques. Par exemple, pour réduire les faux positifs, vous pouvez définir la précision de correspondance de votre règle afin qu’elle corresponde uniquement au modèle ayant le niveau de confiance le plus élevé. Pour plus d’informations sur les niveaux de confiance, voir comment utiliser le niveau [de confiance pour régler vos règles.](data-loss-prevention-policies.md#match-accuracy)
 
 Enfin, si vous souhaitez obtenir encore un peu plus d’informations avancées, vous pouvez personnaliser n’importe quel type [d’informations](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)sensibles : par exemple, vous pouvez supprimer « Sydney NSW » de la liste des mots clés pour le numéro de permis de conduire australien, afin d’éliminer le faux positif déclenché ci-dessus. Pour savoir comment faire à l’aide de XML et PowerShell, voir la personnalisation d’un [type d’informations sensibles intégré.](customize-a-built-in-sensitive-information-type.md)
 
@@ -214,7 +214,7 @@ Lorsque vous êtes satisfait que votre stratégie DLP détecte précisément et 
 
 ![Option pour activer la stratégie](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si vous attendez de voir à quel moment la stratégie prendra effet, Connecter au Centre de sécurité & conformité [PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) pour voir DistributionStatus.
+Si vous attendez que la stratégie prenne effet, Connecter au Centre de sécurité & conformité [PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) pour voir DistributionStatus.
 
 ![Exécution de l’cmdlet dans PowerShell](../media/DLP-create-test-tune-PowerShell.png)
 
@@ -222,11 +222,11 @@ Après avoir exécuté la stratégie DLP, vous devez effectuer vos propres tests
 
 Les stratégies qui autorisent les substitutions utilisateur présentent cette option à l’utilisateur dans le cadre du conseil de stratégie.
 
-![Conseil de stratégie qui autorise le remplacement par l’utilisateur](../media/DLP-create-test-tune-override-option.png)
+![Conseil de stratégie permettant le remplacement par l’utilisateur](../media/DLP-create-test-tune-override-option.png)
 
-Les stratégies qui limitent le contenu présentent l’avertissement à l’utilisateur dans le cadre du conseil de stratégie et l’empêchent d’envoyer le courrier électronique.
+Les stratégies qui restreignent le contenu présentent l’avertissement à l’utilisateur dans le cadre du conseil de stratégie et l’empêchent d’envoyer le courrier électronique.
 
-![Conseil de stratégie selon le fait que le contenu est restreint](../media/DLP-create-test-tune-restrict-warning.png)
+![Conseil de stratégie pour limiter le contenu](../media/DLP-create-test-tune-restrict-warning.png)
 
 ## <a name="summary"></a>Résumé
 

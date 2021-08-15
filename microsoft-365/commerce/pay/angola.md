@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5ae0fb4ec58b4bb7cc4411269e751b8fcd179c78
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 828b74414bd377208f53d14edb027e03ae9e8b2e57fc875d46a4155e2e0365a3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831202"
 ---
 # <a name="payment-information-for-angola"></a>Informations de paiement pour l’Angola
 

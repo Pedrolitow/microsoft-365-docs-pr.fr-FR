@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez l’outil d’importation pour ajouter rapidement plusieurs dépositaires et leurs sources de données associées à un cas Advanced eDiscovery.
-ms.openlocfilehash: 98ff3690fe7fd8c956fce436585014ef0db82a26
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ccce04b5821eaff2d2ba65c846d58f3f474fb7277931da1d986f7b7ebe8beccb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421611"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906102"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importer des dépositaires dans un Advanced eDiscovery de données
 
@@ -79,7 +79,7 @@ Après avoir chargé le fichier CSV du dépositaire, Advanced eDiscovery les cho
 
 ### <a name="custodian-validation"></a>Validation du dépositaire
 
-Actuellement, nous 5 000 dépositaires de l’importation qui sont inclus dans l’Azure Active Directory de votre organisation (Azure AD).
+Pour l’instant, nous 5 000 personnes qui sont incluses dans l’Azure Active Directory de votre organisation (Azure AD).
 
 L’outil d’importation du dépositaire trouve et valide les dépositaires à l’aide de la valeur UPN dans la colonne **contactEmail** du dépositaire dans le fichier CSV. Les dépositaires validés sont automatiquement ajoutés au cas et répertoriés sous l’onglet **Sources** de données du cas. Si un dépositaire ne peut pas être validé, il est répertorié dans le journal des erreurs  pour le travail BulkAddCustodian qui est répertorié sous l’onglet Travaux dans le cas. Les dépositaires nonvaleurs ne sont pas ajoutés au cas ou répertoriés sous l’onglet **Sources de** données.
 
@@ -97,16 +97,16 @@ Pour ajouter des sources de données validées pour un dépositaire :
 
 3. Cliquez **sur Modifier** en haut de la page volante pour supprimer des sources de données non valides ou en ajouter de nouvelles.
 
-4. Une fois que vous avez supprimé des sources de données nonvalidées ou ajouté une nouvelle source de données, la valeur **Active** s’affiche dans la colonne État du dépositaire sous l’onglet **Sources de** données.  Pour ajouter des sources qui apparaissaient précédemment comme non valides, suivez les étapes de correction ci-dessous pour les ajouter manuellement à un dépositaire.
+4. Après avoir supprimé des sources de données nonvalidées ou en  avoir ajouté une nouvelle, la valeur **Active** s’affiche dans la colonne État du dépositaire sous l’onglet **Sources** de données. Pour ajouter des sources qui apparaissaient précédemment comme non valides, suivez les étapes de correction ci-dessous pour les ajouter manuellement à un dépositaire.
 
 ### <a name="remediating-invalid-data-sources"></a>Correction des sources de données non valides
 
-Pour ajouter et associer manuellement une source de données qui n’était pas valide précédemment :
+Pour ajouter et associer manuellement une source de données qui n’était pas valide :
 
 1. Sous **l’onglet Sources de** données, sélectionnez un dépositaire pour ajouter et associer manuellement une source de données qui n’était pas valide précédemment.
 
 2. Cliquez **sur Modifier** en haut de la page volante pour associer des boîtes aux lettres, des sites, des Teams ou des groupes Yammer au dépositaire. Pour ce faire, cliquez sur **Modifier** à côté du type d’emplacement de données approprié.
 
-3. Cliquez **sur Suivant** pour afficher la page **Paramètres** de la mise en attente et configurer le paramètre de mise en attente pour les sources de données que vous avez ajoutées.
+3. Cliquez **sur Suivant** pour afficher la page **Paramètres de** la mise en attente et configurer le paramètre de mise en attente pour les sources de données que vous avez ajoutées.
 
 4. Cliquez **sur Suivant** pour afficher la page Des dépositaires de **révision,** puis cliquez sur **Envoyer** pour enregistrer vos modifications.

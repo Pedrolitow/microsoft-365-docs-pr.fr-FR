@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données CellTrust SL2 pour importer et archiver des données de communications mobiles.
-ms.openlocfilehash: c437df7715e41fc0977142b60356ed4decf62027
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 802d5e08354d5fbdc179c01a7c72145a5d0c7ac3f12907b06632cd5db758ee0f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541132"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861082"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archiver les données de CellTrust SL2 vers Microsoft 365
 
@@ -45,7 +45,7 @@ La plateforme SL2 de CellTrust capture les données de communication à partir d
 
 - Obtenez les informations d’identification pour accéder au compte d’administrateur de votre domaine SL2.
 
-- L’utilisateur qui crée le connecteur de données CellTrust SL2 à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- L’utilisateur qui crée le connecteur de données CellTrust SL2 à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 ## <a name="step-1-create-a-celltrust-sl2-connector"></a>Étape 1 : Créer un connecteur CellTrust SL2
 
@@ -79,7 +79,7 @@ L’étape suivante consiste à se connecter à un compte d’administrateur pou
 
    Si vous vous connectez en tant qu’administrateur de domaine SL2, vous verrez le nom de votre domaine et les O dans ce domaine. Si vous n’avez pas d’O, vous voyez uniquement le nom de votre domaine. Si vous vous connectez en tant qu’administrateur d’ou, vous ne voyez que le nom de votre ou.
 
-3. Activez les unités métier que vous souhaitez archiver. La sélection du domaine ne sélectionne pas automatiquement les O. Vous devez activer chaque OU séparément pour l’archiver.
+3. Activez les unités métier que vous souhaitez archiver. La sélection du domaine ne sélectionne pas automatiquement les O. Vous devez activer chaque ouo séparément pour l’archiver.
 
    ![Activer les OUS pour l’archivage](../media/EnableCellTrustOUs.png)
 
@@ -89,7 +89,7 @@ L’étape suivante consiste à se connecter à un compte d’administrateur pou
 
 La dernière étape consiste à ma cartographier les utilisateurs et à terminer la configuration du connecteur dans le Centre de conformité Microsoft 365.
 
-1. Dans la page **Mappage** des utilisateurs, sélectionnez Activer le mappage automatique des utilisateurs si l’adresse de messagerie des utilisateurs est la même dans SL2 et Microsoft 365.  Dans le cas contraire, vous devez manuellement charger les adresses de messagerie des utilisateurs en chargeant un fichier CSV qui m’indique l’adresse SL2 des utilisateurs Microsoft 365'adresse.
+1. Dans la page **Mappage des** utilisateurs, sélectionnez Activer le mappage automatique des utilisateurs si l’adresse de messagerie des utilisateurs est la même dans SL2 et Microsoft 365.  Dans le cas contraire, vous devez manuellement charger les adresses de messagerie des utilisateurs en chargeant un fichier CSV qui m’indique l’adresse SL2 des utilisateurs Microsoft 365'adresse.
 
 2. Cliquez **sur** Suivant, examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
@@ -99,9 +99,9 @@ La dernière étape consiste à ma cartographier les utilisateurs et à terminer
 
 Consultez la page Du support client [CellTrust](https://www.celltrust.com/contact-us/#support) pour plus d’informations sur le contact de CellTrust pour obtenir de l’aide sur la configuration d’un connecteur de données CellTrust SL2.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
-- Un administrateur de domaine peut configurer un connecteur pour le domaine ou toute autre OUS de ce domaine. Si vous utilisez le compte Administrateur d’ou, vous ne pouvez configurer un connecteur que pour cette ou cette même ou plusieurs.
+- Un administrateur de domaine peut configurer un connecteur pour le domaine ou n’importe quelle OUS de ce domaine. Si vous utilisez le compte Administrateur d’ou, vous ne pouvez configurer un connecteur que pour cette ou cette même ou plusieurs.
 
 - Pour effectuer correctement les étapes ci-dessus, vous devez avoir une licence Microsoft 365 E5 et avoir les droits d’administrateur Microsoft Office appropriés.
 

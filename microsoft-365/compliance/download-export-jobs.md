@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Exportez des documents dans un jeu à réviser sur un compte stockage Azure puis utilisez Explorateur Stockage Azure pour les télécharger sur un ordinateur local.
-ms.openlocfilehash: b7638e33a40a2ac46f4bb69b869e4c2cf6d48f65
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e4dee3eb6da53b58e79993f39e4540e0c2d1951f41be13c370fb3631138f5208
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906038"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exporter des documents dans un jeu à réviser vers un compte stockage Azure client
 
@@ -115,7 +115,7 @@ La dernière étape consiste à utiliser les Explorateur Stockage Azure et l’U
 > [!NOTE]
 > Au lieu de télécharger l’intégralité de la tâche d’exportation dans Explorateur Stockage Azure, vous pouvez sélectionner des éléments spécifiques à télécharger et à afficher.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Le dossier du travail d’exportation contient les éléments suivants. Les éléments réels dans le dossier d’exportation sont déterminés par les options d’exportation configurées lors de la création de la tâche d’exportation. Pour plus d’informations sur ces options, voir [Exporter des documents à partir d’un jeu à réviser.](export-documents-from-review-set.md)
 

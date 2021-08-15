@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9724f44e02f427b2cc6642ba657748eef6d9a986
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: af0f075bd99a3d728485f43c1c9e3540a10f3917e69c40d8ed9c4cecca145d3b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535529"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831162"
 ---
 # <a name="payment-information-for-malaysia"></a>Informations de paiement pour la Malaisie
 

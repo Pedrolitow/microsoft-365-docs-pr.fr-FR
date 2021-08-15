@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6e17e6c69db84cf7ca91deb4b83dc2862996b70c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0f977b875b903c8d878dc1a4add87182bf8e636b63de25697ac6acdb541d0071
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831278"
 ---
 # <a name="payment-information-for-albania"></a>Informations de paiement pour l’Albanie
 

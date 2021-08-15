@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: Dans cet article, vous allez découvrir comment créer des stratégies DLP à l’aide de l’un des modèles inclus dans Office 365.
-ms.openlocfilehash: 729f9ba742b2263ee557c076c987e511a9bdfcc2
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3c2b4d6164b56cdfdc00cf030046fcb7ba07ea49755a4e9a4b79d12fffb8c56c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657038"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886711"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
@@ -75,8 +75,8 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
 
 6. Pour choisir les emplacements que la stratégie DLP doit protéger, faites l’une des choses suivantes :
 
-   - Choisissez **tous les emplacements dans Office 365** \> **suivant**.
-   - Choose **Let me choose specific locations** \> **Next**. Pour cet exemple, sélectionnez ceci.
+   - Choose **All locations in Office 365** \> **Next**.
+   - Choose **Let me choose specific locations** \> **Next**. Pour cet exemple, choisissez ceci.
 
    Pour inclure ou exclure un emplacement entier tel que tous les e-mails  Exchange ou tous les comptes OneDrive de messagerie, mettez l’état de cet emplacement sur ou hors service.
 
@@ -84,7 +84,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
 
    ![Options pour les emplacements dans lesquels une stratégie DLP peut être appliquée](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
-   Dans cet exemple, pour protéger les informations sensibles stockées  dans tous les comptes OneDrive Entreprise, désactiver l’état  pour les sites de messagerie **Exchange** et **SharePoint** et laisser l’état sur pour les comptes **OneDrive.**
+   Dans cet exemple, pour protéger les informations sensibles stockées  dans tous les comptes OneDrive Entreprise, désactiver l’état  pour les sites de messagerie **Exchange** et **SharePoint** et laisser l’état pour les comptes **OneDrive.**
 
 7. Choose **Use advanced settings** \> **Next**.
 
@@ -96,7 +96,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
 
    - Faible volume de contenu détecté pour les données **d’pii** pour les États-Unis Cette règle recherche les fichiers contenant entre 1 et 10 occurrences de chacun des trois types d’informations sensibles (ITIN, SSN et numéros de passeport américains), où les fichiers sont partagés avec des personnes extérieures à l’organisation. Si elle est trouvée, la règle envoie une notification par courrier électronique à l’administrateur principal de la collection de sites, au propriétaire du document et à la personne qui a modifié le document pour la dernière fois.
 
-   - Volume élevé de contenu détecté pour les données **d’pii** pour les États-Unis Cette règle recherche les fichiers contenant au moins 10 occurrences de chacun des trois types d’informations sensibles, où les fichiers sont partagés avec des personnes extérieures à l’organisation. Si elle est trouvée, cette action envoie également une notification par courrier électronique, plus elle restreint l’accès au fichier. Pour le contenu d’un compte OneDrive Entreprise, cela signifie que les autorisations pour le document sont restreintes pour tout le monde, à l’exception de l’administrateur principal de la collection de sites, du propriétaire du document et de la personne qui a modifié le document en dernier.
+   - Volume élevé de contenu détecté pour les données **d’pii pour les États-Unis** Cette règle recherche les fichiers contenant au moins 10 occurrences de chacun des trois types d’informations sensibles, où les fichiers sont partagés avec des personnes extérieures à l’organisation. Si elle est trouvée, cette action envoie également une notification par courrier électronique, plus elle restreint l’accès au fichier. Pour le contenu d’un compte OneDrive Entreprise, cela signifie que les autorisations pour le document sont restreintes pour tout le monde, à l’exception de l’administrateur principal de la collection de sites, du propriétaire du document et de la personne qui a modifié le document en dernier.
 
     Pour répondre aux exigences spécifiques de votre organisation, vous souhaitez peut-être faciliter le déclenchement des règles, afin qu’une seule occurrence d’informations sensibles soit suffisante pour bloquer l’accès pour les utilisateurs externes. Après avoir passé en compte ces règles, vous comprenez que vous n’avez pas besoin de règles de faible nombre et de nombre élevé ; vous n’avez besoin que d’une seule règle qui bloque l’accès si une occurrence d’informations sensibles est trouvée.
 
@@ -104,7 +104,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
 
     ![Bouton Supprimer une règle](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
 
-9. Dans cet exemple, vous devez maintenant ajouter deux types d’informations sensibles (numéros de compte bancaire et numéros de permis de conduire aux États-Unis), autoriser les utilisateurs à remplacer une règle et modifier le nombre à n’importe quelle occurrence. Vous pouvez faire tout cela en éditant une règle, sélectionnez Donc, le volume élevé de contenu détecté aux **États-Unis** règle de modification piI \> .
+9. Dans cet exemple, vous devez maintenant ajouter deux types d’informations sensibles (numéros de compte bancaire et numéros de permis de conduire aux États-Unis), autoriser les utilisateurs à remplacer une règle et modifier le nombre à n’importe quelle occurrence. Vous pouvez faire tout cela en éditant  une règle. Sélectionnez donc Volume élevé de contenu détecté pour la règle de modification des données \> **d’piI aux États-Unis.**
 
     ![Bouton Modifier la règle](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
 
@@ -132,9 +132,9 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
 
 14. En bas de l’éditeur de \> **règles, enregistrez**.
 
-15. Examinez les conditions et actions de cette règle \> **suivante**.
+15. Examinez les conditions et les actions de cette règle \> **Suivante**.
 
-    À droite, notez le changement **d’état** de la règle. Si vous désactiver une stratégie entière, toutes les règles contenues dans la stratégie sont également désactivées. Toutefois, vous pouvez désactiver une règle spécifique sans désactiver la stratégie entière. Cela peut être utile lorsque vous avez besoin d’examiner une règle qui génère un grand nombre de faux positifs.
+    À droite, notez le commutateur **d’état** de la règle. Si vous désactiver une stratégie entière, toutes les règles contenues dans la stratégie sont également désactivées. Toutefois, vous pouvez désactiver une règle spécifique sans désactiver la stratégie entière. Cela peut être utile lorsque vous avez besoin d’examiner une règle qui génère un grand nombre de faux positifs.
 
 16. Sur la page suivante, lisez et comprenez les choses suivantes, puis choisissez d’activer la règle ou de la tester en premier. \> 
 
@@ -179,7 +179,7 @@ Voici les différents états et leur signification.
 
 Vous pouvez modifier ou désactiver une stratégie DLP à tout moment. La désactivation d’une stratégie désactive toutes les règles de la stratégie.
 
-Pour modifier ou désactiver une stratégie DLP, dans la page **Stratégie,** \> sélectionnez la stratégie \> **Modifier la stratégie.**
+Pour modifier ou désactiver une stratégie DLP, dans la page **Stratégie,** sélectionnez \> la stratégie Modifier la \> **stratégie.**
 
 ![Bouton Modifier la stratégie](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
 
