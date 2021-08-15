@@ -16,16 +16,16 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: En savoir plus sur les options de gouvernance du cycle de vie pour les outils de collaboration Microsoft 365
-ms.openlocfilehash: 7d88618b75ef731bf38df029970efdc05f3eea5a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d49fb6cfe9f181a7e79c9984aa54deb0cf2f3a8e4008512132c980ce1623ea59
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827709"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planifier la gouvernance de l’organisation et du cycle de vie Microsoft 365 groupes et Microsoft Teams
 
-Microsoft 365 groupes disposent d’un ensemble riche d’outils pour implémenter les fonctionnalités de gouvernance dont votre organisation a besoin. 
+Microsoft 365 groupes disposent d’un riche ensemble d’outils pour implémenter les fonctionnalités de gouvernance dont votre organisation a besoin. 
 
 La section suivante décrit les fonctionnalités, recommande les meilleures pratiques et fournit des conseils pour poser les bonnes questions afin de déterminer les conditions requises pour la gouvernance et comment y répondre.
 
@@ -40,7 +40,7 @@ Nous vous recommandons vivement le libre-service pour permettre aux propriétair
 Prenons les options de gouvernance suivantes pour la création de groupes :
 
 - Pour limiter la prolifération des groupes, utilisez des [stratégies d’expiration](microsoft-365-groups-expiration-policy.md) de groupes pour supprimer automatiquement les groupes qui ne sont pas utilisés.
-- Limiter la création de [](/azure/active-directory/users-groups-roles/groups-create-rule) groupes aux membres d’un groupe de sécurité avec une appartenance dynamique contenant, par exemple, tous les employés à plein temps.
+- Limiter la création de groupes aux membres [d’un](/azure/active-directory/users-groups-roles/groups-create-rule) groupe de sécurité avec une appartenance dynamique contenant, par exemple, tous les employés à plein temps.
 - Limitez la création de groupes à un groupe de sécurité et obligez les utilisateurs à effectuer une formation sur les stratégies d’utilisation des groupes de votre organisation afin de devenir membres du groupe de sécurité.
 
 Si vous souhaitez limiter les personnes autorisées à créer des groupes, consultez Gérer les personnes autorisées à créer des groupes Microsoft 365 [pour](manage-creation-of-groups.md) plus d’informations sur la configuration de ce groupe.
@@ -76,7 +76,7 @@ Une fois que vous avez fixé l’expiration des groupes :
 
 Les stratégies d’expiration sont un bon moyen de limiter la prolifération des groupes en veillant à ce que les groupes qui ne sont plus utilisés soient supprimés. Si vous souhaitez créer une stratégie d’expiration de groupe, voir [Microsoft 365 stratégie d’expiration de groupe.](microsoft-365-groups-expiration-policy.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 5b5421d2b4001b813d3bcc1e804cae7fb05d0fa7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4bfbf817279512c32f3862baa1aba75720eb81a8e5d385a5433951eaa4c29aff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877702"
 ---
 # <a name="device-profiles"></a>Profils d’appareil
 
@@ -31,13 +31,13 @@ Vous pouvez penser que les profils d’appareil font partie d’une hiérarchie 
 
 :::image type="content" source="../../media/mmd-profile-options-heirarchy.png" alt-text="Configurations d’appareil affichées sous la forme d’une pyramide. Description :":::
 
-Fondamentalement, chaque Bureau géré Microsoft a une base qui inclut une ligne de base de sécurité standard, des stratégies de conformité, des Windows de mise à jour et des groupes. Pour fonctionner avec Bureau géré Microsoft, chaque appareil doit inclure tous ces éléments, qui ne peuvent pas être modifiés par les administrateurs sans une demande de Bureau géré Microsoft.
+Fondamentalement, chaque Microsoft Manged Desktop a une base qui inclut une ligne de base de sécurité standard, des stratégies de conformité, des Windows de mise à jour et des groupes. Pour fonctionner avec Microsoft Manged Desktop, chaque appareil doit inclure tous ces éléments, qui ne peuvent pas être modifiés par les administrateurs sans demande d’Microsoft Manged Desktop.
 
-Les profils d’appareil apparaissent au niveau supérieur suivant. Chaque Bureau géré Microsoft appareil doit avoir un (et un seul) profil affecté. Les administrateurs peuvent choisir le profil attribué à un appareil.
+Les profils d’appareil apparaissent au niveau supérieur suivant. Chaque Microsoft Manged Desktop appareil doit avoir un (et un seul) profil affecté. Les administrateurs peuvent choisir le profil attribué à un appareil.
 
 À un niveau encore plus élevé, il existe des [personnalisations supplémentaires.](customizing.md) Chaque appareil peut avoir une ou plusieurs personnalisations (ou aucune). Ils peuvent modifier une couche de niveau inférieur (profils d’appareil ou configuration de base) ou être une toute nouvelle demande superposée à la configuration standard.
 
-En haut, vous avez vos propres modifications, telles que les détails du réseau ou les applications. Un appareil peut avoir n’importe quel nombre de ces modifications, qui ne sont pas gérées ou bloquées par Bureau géré Microsoft.
+En haut, vous avez vos propres modifications, telles que les détails du réseau ou les applications. Un appareil peut avoir n’importe quel nombre de ces modifications, qui ne sont pas gérées ou bloquées par Microsoft Manged Desktop.
 
 
 ## <a name="device-profile-details"></a>Détails du profil de l’appareil

@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés,découvrez comment s’inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: d53c95ac636af38d458c1259f8d75c1e59f9d775
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+description: Pour les fournisseurs de services gérés (MSP), découvrez comment s’inscrire à Microsoft 365 Lighthouse.
+ms.openlocfilehash: 60d78f243c757596aa5b3d493d0b79848ebe033a109858e8fd8fbd7ae6bf5f9c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587920"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877790"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
@@ -40,7 +40,7 @@ ms.locfileid: "53587920"
 
 1. Go to **Billing**  >  **Purchase Services** Other  >  **Services**.
 
-    Si Microsoft 365 Lighthouse ne figure pas dans la liste des services, sélectionnez **Voir tous les autres produits de services.**
+    Si Microsoft 365 Lighthouse n’est pas dans la liste des services, sélectionnez **Voir tous les autres produits de services.**
 
     Si vous rencontrez la page d’erreur Acheter des services, sélectionnez **Afficher** les produits en bas de la page.
 
@@ -64,7 +64,7 @@ ms.locfileid: "53587920"
 
 [Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise](m365-lighthouse-configure-portal-security.md) 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

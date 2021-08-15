@@ -15,17 +15,17 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 414d6ae0586078551c737e45763ea665d5eec4e6
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 0051b138d155ed4bdf41786f4a73439bba22c738ba7d2a73da44341437ba5c0c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838562"
 ---
 # <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>Stratégies de Microsoft Cloud App Security recommandées pour les applications SaaS
 Microsoft Cloud App Security s’appuie sur les stratégies d’accès conditionnel Azure AD pour activer la surveillance et le contrôle en temps réel des actions granulaires avec les applications SaaS, telles que le blocage des téléchargements, des téléchargements, des copier-coller et de l’impression. Cette fonctionnalité ajoute la sécurité aux sessions qui présentent des risques inhérents, par exemple lorsque les ressources d’entreprise sont accessibles à partir d’appareils nonmanagés ou par des utilisateurs invités.
 
-Microsoft Cloud App Security s’intègre également en mode natif à Microsoft Information Protection, en fournissant une inspection du contenu en temps réel pour rechercher des données sensibles basées sur des types d’informations sensibles et des étiquettes de sensibilité et prendre les mesures appropriées.
+Microsoft Cloud App Security s’intègre également en mode natif à Protection des données Microsoft, en fournissant une inspection du contenu en temps réel pour rechercher des données sensibles basées sur des types d’informations sensibles et des étiquettes de sensibilité et prendre les mesures appropriées.
 
 Ces conseils incluent des recommandations pour ces scénarios :
 
@@ -37,12 +37,12 @@ Ces conseils incluent des recommandations pour ces scénarios :
 
 La première étape de l’Microsoft Cloud App Security gérer les applications SaaS consiste à les découvrir, puis à les ajouter à votre client Azure AD. Si vous avez besoin d’aide pour la découverte, [consultez Découvrir et gérer les applications SaaS dans votre réseau.](/cloud-app-security/tutorial-shadow-it) Une fois que vous avez découvert les applications, [ajoutez-les à votre client Azure AD.](/azure/active-directory/manage-apps/add-application-portal)
 
-Vous pouvez commencer à gérer ces éléments en suivant les mesures suivantes :
+Vous pouvez commencer à les gérer en suivant les mesures suivantes :
 
 1. Tout d’abord, dans Azure AD, créez une stratégie d’accès conditionnel et configurez-la pour « Utiliser le contrôle d’application d’accès conditionnel ». Cela redirige la demande vers Sécurité des applications cloud. Vous pouvez créer une stratégie et ajouter toutes les applications SaaS à cette stratégie.
 1. Ensuite, dans Sécurité des applications cloud, créez des stratégies de session. Créez une stratégie pour chaque contrôle que vous souhaitez appliquer.
 
-Les autorisations d’accès aux applications SaaS sont généralement basées sur les besoins de l’entreprise pour accéder à l’application. Ces autorisations peuvent être très dynamiques. L Sécurité des applications cloud des stratégies de protection garantit la protection des données d’application, que les utilisateurs soient affectés à un groupe Azure AD associé à la protection de référence, sensible ou hautement réglementée.
+Les autorisations d’accès aux applications SaaS sont généralement basées sur les besoins de l’entreprise pour accéder à l’application. Ces autorisations peuvent être très dynamiques. L Sécurité des applications cloud des stratégies de protection garantit la protection des données d’application, que les utilisateurs soient affectés à un groupe Azure AD associé à une protection de référence, sensible ou hautement réglementée.
 
 Pour protéger les données au sein de votre collection d’applications SaaS, le diagramme suivant illustre la stratégie d’accès conditionnel Azure AD nécessaire, ainsi que les stratégies suggérées que vous pouvez créer dans Sécurité des applications cloud. Dans cet exemple, les stratégies créées dans Sécurité des applications cloud s’appliquent à toutes les applications SaaS que vous gérez. Ces contrôles sont conçus pour appliquer les contrôles appropriés selon que les appareils sont gérés, ainsi que les étiquettes de niveau de sensibilité qui sont déjà appliquées aux fichiers.
 
@@ -101,9 +101,9 @@ L’illustration et le tableau suivants fournissent plusieurs exemples de strat�
 |---|---|
 |Baseline|Alerte lorsque les fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sont partagés à l’extérieur de l’organisation <p> >bloquer les téléchargements de fichiers contenant ce type d’informations sensibles (« numéro de carte de crédit ») sur les appareils non utilisés|
 |Sensible|Protéger les téléchargements de fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sur les appareils gérés <p> Bloquer les téléchargements de fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sur les appareils non utilisés <p> Alerte lorsqu’un fichier avec l’une de ces étiquettes est téléchargé vers OneDrive Entreprise ou Box (données client, ressources humaines : données de salaire, ressources humaines, données des employés)|
-|Hautement réglementé|Alerte lorsque les fichiers avec cette étiquette (« Hautement classé ») sont téléchargés sur les appareils gérés <p> Bloquer les téléchargements de fichiers avec cette étiquette (« Hautement classé ») sur les appareils non utilisés|
+|Hautement réglementé|Alerte lorsque les fichiers avec cette étiquette (« Hautement classé ») sont téléchargés sur les appareils gérés <p> Bloquer les téléchargements de fichiers avec cette étiquette (« Hautement classé ») sur les appareils nonmanagés|
 |||
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations sur l’utilisation Sécurité des applications cloud, voir [Microsoft Cloud App Security documentation.](//cloud-app-security/)

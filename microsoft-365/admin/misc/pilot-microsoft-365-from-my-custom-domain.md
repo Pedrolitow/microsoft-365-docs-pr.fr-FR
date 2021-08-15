@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment piloter la fonctionnalité de messagerie depuis mon domaine personnalisé vers une boîte aux lettres Microsoft 365 à l’aide de deux comptes de test uniquement.
-ms.openlocfilehash: b2017da30aba3b48b51de26b7907167dc5dd3e6e
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 6172975719258e6186e6fcfdecc7bc9395b887c9f69ae835d45c1edf16626a2e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823830"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Piloter Microsoft 365 depuis mon domaine personnalisé
 

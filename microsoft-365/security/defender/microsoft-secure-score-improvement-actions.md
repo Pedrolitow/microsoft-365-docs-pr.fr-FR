@@ -1,7 +1,7 @@
 ---
 title: Évaluer votre posture de sécurité via le Score de sécurité Microsoft
 description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le centre Microsoft 365 sécurité.
-keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
+keywords: niveau de sécurité microsoft, degré de sécurisation, degré de sécurisation d’Office 365, score de sécurité microsoft, centre de sécurité microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: c4d4958c03bee7301465c16fef2cd4ff8adb1722
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: e347f4393c45ba54d1ddb286fcc001193bc647f635dda64dcbb446be190a5dba
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288454"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838646"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve dans le https://security.microsoft.com/securescore centre de [sécurité Microsoft 365.](overview-security-center.md)
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve à https://security.microsoft.com/securescore dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
 
 Pour vous aider à trouver les informations dont vous avez besoin plus rapidement, les actions d’amélioration de Microsoft sont organisées en groupes :
 
@@ -44,7 +44,7 @@ Pour vous aider à trouver les informations dont vous avez besoin plus rapidemen
 
 Dans la page vue d’ensemble du score de sécurité Microsoft, affichez la répartition des points entre ces groupes et les points disponibles. Vous pouvez également obtenir une vue globale du score total, de la tendance historique de votre score sécurisé avec des comparaisons de critères et des actions d’amélioration hiérarchisées qui peuvent être prises pour améliorer votre score.
 
-![Page d’accueil du score de sécurisation](../../media/secure-score/secure-score-home-page.png)
+![Page d’accueil du degré de sécurisation](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="check-your-current-score"></a>Vérifier votre score actuel
 
@@ -115,11 +115,11 @@ Les conditions préalables incluent les licences nécessaires ou les actions à 
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 
-Si vous avez des problèmes, faites-le nous savoir en publiant dans la communauté sécurité, confidentialité [& conformité.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Nous surveillons la communauté et fournirons de l’aide.
+Si vous rencontrez des problèmes, faites-le nous savoir en publiant dans la communauté [Sécurité, confidentialité et conformité](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous supervisons la communauté et vous fournirons de l’aide.
 
 ## <a name="related-resources"></a>Ressources connexes
 
 - [Vue d’ensemble du score de sécurisation Microsoft](microsoft-secure-score.md)
-- [Suivre votre historique du Score de sécurisation Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
-- [Nouveautés](microsoft-secure-score-whats-coming.md)
+- [Suivez votre historique de score de sécurité Microsoft et répondez aux objectifs](microsoft-secure-score-history-metrics-trends.md)
+- [Ce qui est à venir](microsoft-secure-score-whats-coming.md)
 - [Nouveautés](microsoft-secure-score-whats-new.md)

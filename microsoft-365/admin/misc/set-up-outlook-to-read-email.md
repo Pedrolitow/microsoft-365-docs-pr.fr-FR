@@ -1,5 +1,5 @@
 ---
-title: Configurer Outlook lire les e-mails
+title: Configurer les Outlook lire les e-mails
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Découvrez comment configurer un compte de messagerie dans Outlook pour Windows et Mac, et comment installer des applications Office et accéder aux e-mails en ligne.
-ms.openlocfilehash: c4c0f845fcdba1011e0c025ff0e29a98ba7046d5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 90335d30cd33807b0bfce044f6fc0f9d0a2ec4d10cafefa91b8de6bab8b7c461
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823749"
 ---
-# <a name="set-up-outlook-to-read-email"></a>Configurer Outlook lire les e-mails
+# <a name="set-up-outlook-to-read-email"></a>Configurer les Outlook lire les e-mails
 
 Votre abonnement Microsoft 365 est livré avec une Outlook web, mais si votre abonnement inclut des applications clientes Office, vous recevrez également des Outlook que vous pouvez installer sur votre ordinateur ou appareil personnel.
   

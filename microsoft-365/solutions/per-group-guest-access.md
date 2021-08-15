@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment empêcher l’ajout d’invités à un groupe spécifique
-ms.openlocfilehash: 83fb123a3512e767270cf69f6ff56813e27903d4
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: ad83ab0b0ec739691721627b09924e1e0ab8ee1d07513634606525f2371d0f6d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827733"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Empêcher l’ajout d’invités à un groupe Microsoft 365 ou une équipe Microsoft Teams spécifique
 
@@ -33,7 +33,7 @@ Si vous utilisez des étiquettes de niveau de sensibilité dans votre organisati
 
 Vous pouvez également empêcher l’ajout de nouveaux invités à des groupes individuels à l’aide de PowerShell. (N’oubliez pas que le site SharePoint de l’équipe possède des [contrôles de partage d’invités distincts.)](/sharepoint/change-external-sharing-site)
 
-Vous devez utiliser la version d’aperçu [de Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2) (nom du module **AzureADPreview)** pour modifier le paramètre d’accès invité au niveau du groupe :
+Vous devez utiliser la version d’aperçu [de Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2) (nom du module **AzureADPreview**) pour modifier le paramètre d’accès invité au niveau du groupe :
 
 - Si vous n’avez jamais installé une version du module Azure AD PowerShell, consultez [l’installation du module Azure AD](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) et suivez les instructions d’installation de la préversion publique.
 
@@ -85,7 +85,7 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Autoriser ou bloquer l’accès invité en fonction de son domaine
 
-Vous pouvez autoriser ou bloquer les invités qui utilisent un domaine spécifique. Par exemple, si votre entreprise (Contoso) a un partenariat avec une autre entreprise (Fabrikam), vous pouvez ajouter Fabrikam à votre liste d’invités autoriser afin que vos utilisateurs peuvent ajouter ces invités à leurs groupes.
+Vous pouvez autoriser ou bloquer les invités qui utilisent un domaine spécifique. Par exemple, si votre entreprise (Contoso) a un partenariat avec une autre entreprise (Fabrikam), vous pouvez ajouter Fabrikam à votre liste d’invités pour permettre à vos utilisateurs d’ajouter ces invités à leurs groupes.
 
 Pour plus d’informations, voir Autoriser ou bloquer les invitations à [des utilisateurs B2B d’organisations spécifiques.](/azure/active-directory/b2b/allow-deny-list)
 
@@ -99,13 +99,13 @@ Recherchez l’ObjectID de l’invité en exécutant :
 Get-AzureADUser -Filter "userType eq 'Guest'"
 ```
 
-Exécutez ensuite ce qui suit à l’aide des valeurs appropriées pour ObjectID, GivenName, Surname, DisplayName et TelephoneNumber.
+Exécutez ensuite ce qui suit en utilisant les valeurs appropriées pour ObjectID, GivenName, Surname, DisplayName et TelephoneNumber.
 
 ```PowerShell
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

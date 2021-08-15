@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez les Microsoft 365 l’inscription en libre-service et les programmes libre-service disponibles tels que Microsoft Power Apps, Microsoft Flow et Dynamics 365 for Finance.
 ms.date: 03/17/2021
-ms.openlocfilehash: 7aec03abce468342cfeb23da490b1f950ecd7050
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: e1a11db1e5fe1d6cb35d1583a6a6fc9f7bb73e16d76e98d2c8cb739223d22db3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286584"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823806"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’inscription en libre-service dans votre organisation
 
@@ -58,7 +58,7 @@ Voici les programmes en libre-service actuellement disponibles. Cette liste sera
 |**Microsoft Business Center** <br/> |Le Microsoft Business Center est le portail pour les clients qui ont effectué des achats via le Contrat de produits et services Microsoft (MPSA). <br/> |[Démarrage rapide : s’inscrire au Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Centre de service de licence en volume Microsoft** <br/> |Le Centre de service de licence en volume Microsoft affiche les licences achetées dans le cadre des contrats Enterprise, Sélection, Éducation (Campus ou École), Open Value, Open License et ISV.  <br/> |[Formation et ressources vlsc](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Centre de service de licence en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft Education Edition** <br/> |En utilisant Minecraft en tant que plateforme pour l’apprentissage, les enseignants peuvent encourager et encourager chaque étudiant à atteindre d’autres objectifs et à susciter une envie d’apprentissage. Rejoignez une communauté d’enseignants qui apprennent à utiliser Minecraft pour déverrouiller le potentiel des étudiants.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
-|**Microsoft Stream** <br/> |Télécharger et partagez des vidéos au sein de votre organisation pour améliorer la communication, la participation et l’apprentissage.  <br/> |[Expérience &amp; d’inscription au jour 0](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
+|**Microsoft Stream (basé sur SharePoint)** <br/> |Télécharger et partagez des vidéos au sein de votre organisation pour améliorer la communication, la participation et l’apprentissage.  <br/> |[Expérience &amp; d’inscription au jour 0](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream (basé sur SharePoint)](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |Power Automate est un produit qui vous aide à configurer des flux de travail automatisés entre vos applications et services favoris pour synchroniser des fichiers, recevoir des notifications, collecter des données, etc.  <br/> |[Inscrivez-vous et connectez-vous Power Automate](/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agents** <br/> |Power Virtual Agents permet aux équipes de créer facilement des bots puissants à l’aide d’une interface graphique sans code guidée sans avoir besoin de données ou de développeurs. Power Virtual Agents de nombreux problèmes majeurs avec la création de bots dans le secteur aujourd’hui. Cela élimine l’écart entre les experts techniques et les équipes de développement qui construisent les bots, ainsi que la latence longue entre les équipes qui reconnaissent un problème et mettent à jour le bot pour le résoudre.  <br/> |[Détails des licences et de l’accès](/power-virtual-agents/requirements-licensing) <br/> |[S’inscrire à Power Virtual Agents](https://aka.ms/TryPVA) <br/> |
 |**Azure AD B2B** <br/> |Azure Active Directory collaboration entreprise-entreprise (B2B) (Azure AD) vous permet d’inviter des utilisateurs externes (ou des « utilisateurs invités ») à utiliser vos services Azure AD payants. Certaines fonctionnalités sont gratuites, mais pour toutes les fonctionnalités Azure AD payantes, vous pouvez inviter jusqu’à cinq utilisateurs invités pour chaque licence d’édition Azure AD que vous possédez pour un employé ou un utilisateur non invité dans votre client. <br/> |[Inscription en libre-service pour la collaboration Azure AD B2B](/azure/active-directory/b2b/self-service-portal) <br/> |[Azure Active Directory Conseils sur les licences de collaboration B2B](/azure/active-directory/b2b/licensing-guidance) <br/> |

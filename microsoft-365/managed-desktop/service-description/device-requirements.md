@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b17585f7449f1151c7a5f5cd75d06b8e723fbe4b
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 559cec70c4f699d0f6a849aec8235a22903a5050becb4469824b17908025f32d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877664"
 ---
 # <a name="device-requirements"></a>Configuration requise de l’appareil
 
-Microsoft Manged Desktop évalue régulièrement les besoins de l’appareil à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtrer les Microsoft Manged Desktop sur le site [Windows 10 Professionnel d’entreprise](https://www.microsoft.com/windowsforbusiness/view-all-devices)
+Microsoft Manged Desktop évalue régulièrement les besoins des appareils à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtrer les Microsoft Manged Desktop sur le site [Windows 10 Professionnel d’entreprise](https://www.microsoft.com/windowsforbusiness/view-all-devices)
 
 > [!NOTE]
 > Ces exigences peuvent changer à tout moment, mais nous vous fournirons un préavis de 30 jours pour toute modification de la configuration matérielle requise. Les exigences les plus récemment modifiées sont marquées par **\*** . 
@@ -65,7 +65,7 @@ Pour plus d’informations sur ces fonctionnalités et les technologies qui y so
 
 > [!NOTE]
 >- ARM processeurs ne sont pas pris en charge.
->- Windows 11 présente une configuration [matérielle supplémentaire requise.](/windows/whats-new/windows-11-requirements)
+>- Windows 11 a une configuration [matérielle supplémentaire requise.](/windows/whats-new/windows-11-requirements)
 
 Les appareils doivent respecter ou dépasser les limites suivantes pour le stockage et la mémoire :
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’explorateur d’activité complète les fonctionnalités de classification des données en vous permettant de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: 414ef4e5d9f6472180a5eaef391d3eba33463b02
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5570cecdf3b7e6b6959bb20ca2c2fcdd0ad2e6ebd6b579f7caf7a018049beaeb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886411"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activité
 
@@ -46,14 +46,14 @@ Plus de 30 filtres différents sont à votre disposition. Parmi ceux-ci, figure
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-Chaque compte qui accède et utilise la classification de données doit posséder une licence pour l’un des abonnements suivants :
+Chaque compte qui accède et utilise la classification de données doit posséder une licence pour l’un des abonnements suivants :
 
-- Microsoft 365 (E5)
-- Office 365 (E5)
+- Microsoft 365 (E5)
+- Office 365 (E5)
 - Complément Conformité avancée (E5)
 - Complément Threat Intelligence avancé (E5)
-- Microsoft 365 E5/A5, Protection des informations et gouvernance
-- Conformité Microsoft 365 E5/A5
+- Microsoft 365 E5/A5, Protection des informations et gouvernance
+- Conformité Microsoft 365 E5/A5
 
 ### <a name="permissions"></a>Autorisations
 
@@ -63,12 +63,12 @@ Chaque compte qui accède et utilise la classification de données doit posséde
 > [!IMPORTANT]
 > Access to Activity explorer via the Security reader or Device Management role groups or other has been removed-->
 
-**Groupes de rôles Microsoft 365**
+**Groupes de rôles Microsoft 365**
 
 - Administrateur général
 - Administrateur de conformité
 - Administrateur de sécurité
-- Administrateur des données de conformité
+- Administrateur de conformité des données
 
 **Microsoft 365 rôles**
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: cb029ddcaf63accfd0b49c6b317976ad1a00ab40
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 7c5b30abcf755ff43f746e4a7a299ae1aece0f8688612274ebc2ce9e547f3eaa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423222"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866502"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité des communications dans Microsoft 365
 

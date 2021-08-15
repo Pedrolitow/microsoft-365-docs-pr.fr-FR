@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 37f533f34753d66d975cb557239b2b168ac78f8e
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: b248af7d098fa8b78632b248e37248840f0f1d8302a658061489f6ea68e4fd85
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877744"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le Bureau géré Microsoft
 
@@ -47,13 +47,13 @@ Il existe encore certaines choses que vous devez faire avec ces applications :
 
 ## <a name="apps-you-provide"></a>Applications que vous fournissez
 
-Vous avez probablement d’autres applications dont vous avez besoin pour vos opérations professionnelles. Ces applications ne peuvent être déployées que sur Microsoft Manged Desktop à l’aide Microsoft Intune pipeline de déploiement de l’application. Pour plus d’informations sur le déploiement d’applications, suivez les étapes de [déploiement d’applications Microsoft Manged Desktop appareils.](../get-started/deploy-apps.md)
+Vous avez probablement d’autres applications dont vous avez besoin pour vos opérations professionnelles. Ces applications ne peuvent être déployées que sur Microsoft Manged Desktop à l’aide Microsoft Intune pipeline de déploiement de l’application. Pour plus d’informations sur le déploiement d’applications, suivez les étapes de [Déploiement d’applications Microsoft Manged Desktop appareils.](../get-started/deploy-apps.md)
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Préparation de vos propres applications pour l’inclusion dans Microsoft Manged Desktop
 Examinez vos applications, en vérifiant :
 
 - Aucune des applications n’est interdite ou n’a de comportement restreint, comme décrit [dans Microsoft Manged Desktop’application requise.](../service-description/mmd-app-requirements.md)
-- Les applications doivent être prêtes à être Microsoft Intune. Pour plus d’informations sur cette rubrique, [voir Windows 10 déploiement](/intune/apps-windows-10-app-deploy) d’applications à l’aide Microsoft Intune et Ajouter des applications à [Microsoft Intune](/intune/apps-add).
+- Les applications doivent être prêtes à être Microsoft Intune. Pour plus d’informations sur cette rubrique, [voir Windows 10 déploiement d’applications](/intune/apps-windows-10-app-deploy) à l’aide Microsoft Intune et Ajouter des applications à [Microsoft Intune](/intune/apps-add).
 - Autres conditions préalables à l’empaquetage, telles que la fourniture de clés de licence, l’accord avec les termes du contrat de licence et la configuration préalable des connexions au serveur.
 
 ## <a name="steps-to-get-ready"></a>Étapes pour vous préparer

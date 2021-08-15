@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e843ae91536cfa24ad8c8a257764cc7fd88b8883
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: d8c7c4a47f4332351e632821adaf05b64bc6cf21c840a71b5b08bf8aedf063c0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664032"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877676"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft Manged Desktop services d’appareil
 
@@ -27,7 +27,7 @@ Microsoft fournit ces services pour les Microsoft Manged Desktop mobiles. Pour o
 Service | Description
 --- | ---
 Support | Les agents de support technique répondront aux questions directement liées aux fonctionnalités de l’appareil et diagnostiquera les problèmes liés aux appareils.
-Inventaire | Tous les appareils sont suivis dans le portail d Microsoft Manged Desktop pour le suivi de l’inventaire et de l’état.
+Inventaire | Tous les appareils sont suivis dans le portail d Microsoft Manged Desktop pour le suivi des stocks et de l’état.
 Mises à jour du microprogramme et des pilotes | Par défaut, les Microsoft Manged Desktop reçoivent les mises à jour du microprogramme et des pilotes de Windows Update. Tous les partenaires matériels ne déploient pas leurs mises à jour via Windows Update. Les mises à jour non publiées comme automatiques nécessitent une exception et doivent être déployées par le client.
 Accessoires | Les accessoires qui sont produits avec votre appareil sont couverts par les mêmes services que l’appareil lui-même, mais les conditions de garantie peuvent différer. Reportez-vous aux conditions de garantie choisies lors de la sélection de vos appareils. 
 Configuration des appareils | Les appareils sont préconfigurés avec la version actuelle de Windows et reçoivent leurs applications et configurations via le cloud.

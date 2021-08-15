@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c1177fe198422433afb83b62e12a75f64581b3f8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: e29dd65ecc791bfaba3f8f281ce534a8b94680f8db47217411b85dfd6a2cae24
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297823"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838186"
 ---
 # <a name="contact-support-for-romania"></a>Contacter le support technique pour la Roumanie
 
@@ -33,7 +33,7 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Autre Téléphone numéro : 372 741 961
 

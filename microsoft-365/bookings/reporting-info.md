@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Découvrez comment afficher une vue de 4 mois de votre activité Bookings
-ms.openlocfilehash: ad0a21454cfe28cec521e545e587105e8f8a7454
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: 8fc8a41a982135550ae711e435905c9bd39460994b1f6757b633aea49a7a48a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838202"
 ---
 # <a name="reporting-info-for-bookings"></a>Informations de rapport pour Bookings
 
@@ -28,7 +28,7 @@ Ces informations de niveau de rendez-vous peuvent être utilisées pour visualis
 
 :::image type="content" source="../media/bookings-activities.png" alt-text="Capture d’écran : 4 mois d’activité Bookings":::
 
-1. Enregistrez le fichier sous un nouveau nom et spécifiez .xls format xlsx.
+1. Enregistrez le fichier sous un nouveau nom et spécifiez le format .xls ou xlsx.
 
 1. Ouvrez le fichier pour afficher l’affichage de quatre mois de votre calendrier Bookings.
 
@@ -47,7 +47,7 @@ Le rapport inclut les champs suivants.
 - **Adresse du client**
 - **Personnel**
 - **Service**
-- **Location**
+- **Emplacement**
 - **Durée (minutes)**
 - **Type d’événement**
 
@@ -58,6 +58,6 @@ Le rapport amélioré contient désormais les champs suivants.
 - **Devise**   Type de devise pour une entreprise.
 - **Participants Cc**   Destinataires qui reçoivent les notifications par courrier électronique pour une réservation. Cela peut être spécifié à partir de l’application Teams lors de la création d’une réservation.
 - **Nombre de participants inscrits**   Nombre de clients qui ont réservé un service de réservation de groupe.
-- **Notifications texte activées**   Si les clients peuvent recevoir SMS notifications textuelles.
+- **Notifications texte activées**   Si les clients peuvent recevoir des notifications textuelles SMS.
 - **Champs personnalisés**   Toutes les questions et réponses relatives à une seule réservation sont combinées dans ce champ.
 - **ID de réservation**   Cela est utile pour identifier les mêmes réservations d’un service de groupe.

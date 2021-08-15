@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: d2db35e50d31a0a19076965da6dcecf9cfeef826
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: febe5148d6f4a341cd29d3950bc319d36bcfa0a6f0d4a4afe2c4ebb9038613b0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886338"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Appareils Windows 10 intégrés utilisant Configuration Manager
 
@@ -36,7 +36,7 @@ ms.locfileid: "53226896"
 
 3. Dans le champ Méthode **de** déploiement, **sélectionnez Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
 
-4. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
+4. Sélectionnez **le package** de téléchargement, puis enregistrez .zip fichier.
 
 5. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *DeviceComplianceOnboardingScript.cmd*.
 
@@ -83,7 +83,7 @@ Les valeurs possibles sont les suivantes :
 
 La valeur par défaut au cas où la clé de Registre n’existe pas est 1.
 
-Pour plus d’informations sur System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
+Pour plus d’informations System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
 
 ## <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
@@ -136,11 +136,11 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 ### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>Appareils deboard à l’aide Microsoft Endpoint Configuration Manager branche actuelle
 
-Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, voir Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
+Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, consultez Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage System Center 2012 R2 Configuration Manager
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage utilisant System Center Configuration Manager 2012 R2
 
-1. Obtenez le package de mise hors programme à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com/):
+1. Obtenez le package deboarding à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com/):
 
 2. Dans le volet de navigation, sélectionnez **Paramètres**  >   **l’intégration** >  **de l’appareil.**
 
@@ -148,7 +148,7 @@ Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, voir
 
 4. Dans le champ Méthode **de** déploiement, **sélectionnez Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
 
-5. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
+5. Sélectionnez **le package** de téléchargement, puis enregistrez .zip fichier.
 
 6. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -201,7 +201,7 @@ Value: “1”
 ```
 Pour plus d’informations, voir Introduction aux paramètres de conformité [dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](dlp-configure-endpoints-gp.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](dlp-configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows 10 utilisant un script local](dlp-configure-endpoints-script.md)

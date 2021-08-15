@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 182d44c8ad46b8c711705c46aabba3393f4e0801
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 42f4a4e19fbb062789532e1786bfe2f37bdb3448f2671ec9ac3dcd2a0770b6c9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595965"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838618"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portails de sécurité Microsoft et centres d’administration
 
