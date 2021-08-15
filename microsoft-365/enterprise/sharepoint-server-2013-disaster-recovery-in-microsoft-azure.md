@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: Cet article explique comment utiliser Azure pour créer un environnement de récupération d’urgence pour votre batterie de serveurs SharePoint local.
-ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb048b9b0cf297ba5e5cd61e09f9f3164464a41a37fecfe2d27d0ef7be82f37b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907431"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878234"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure
 
@@ -642,10 +642,10 @@ Ipconfig /flushdns
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-[Options de haute disponibilité et de récupération d'urgence prises en charge pour les bases de données SharePoint](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
+[Options de haute disponibilité et de récupération d’urgence prises en charge pour les bases de données SharePoint](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
 [Configurer des groupes de disponibilité AlwaysOn SQL Server 2012 pour SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 ## <a name="see-also"></a>Voir aussi
 
-[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)

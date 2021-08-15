@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment utiliser le scanneur de protection contre la perte de données Microsoft 365 en local pour analyser les données au repos, puis implémenter des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint locales.
-ms.openlocfilehash: 3d7c2e30092eee022fc0ed2a7ef6a8be7b82e3f1
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 60befcd3ba35fe900c9fd90f84b484f9c49c280a53f7e6f31cd5ab17e729c34b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657374"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850974"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Utiliser le scanner local de prévention des pertes de données Microsoft 365 
 

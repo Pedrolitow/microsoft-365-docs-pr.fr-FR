@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Découvrez comment ajouter des invités à un groupe Microsoft 365, afficher les utilisateurs invités et utiliser PowerShell pour contrôler l’accès invité.
-ms.openlocfilehash: 41a42a0b4fc76b71892f758519db56f4c1adc897
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: dd29775aebc9b5a6434e7ce5bdbd46b6a874d548b6a82f61f2e525f51b638c27
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826482"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gérer l’accès invité dans Microsoft 365 groupes
 
@@ -69,7 +69,7 @@ Si vous souhaitez ajouter un invité directement à l’annuaire, vous pouvez aj
 
 Si vous souhaitez modifier les informations d’un invité, vous pouvez ajouter ou mettre à jour les informations de profil d’un utilisateur à [l’aide Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Bloquer les utilisateurs invités d’un groupe spécifique](../../solutions/per-group-guest-access.md) (article)\
 [Gérer l’appartenance à un groupe dans le Centre d’administration Microsoft 365](add-or-remove-members-from-groups.md) (article)\

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Comparez les options de chiffrement Microsoft 365, notamment la fonctionnalité de chiffrement des messages Office 365 (OME), S/MIME, la gestion des droits relatifs à l’information (IRM) et découvrez le protocole TLS.
-ms.openlocfilehash: cb34318c4f22375a1eadd4266bc781cfe3c691bf
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 2101e1e4f02e5a3c017be7737e37feb3ac4414b205ffc6df7b219d57cc4496e7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583327"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850934"
 ---
 # <a name="email-encryption"></a>Chiffrement de l’e-mail
 

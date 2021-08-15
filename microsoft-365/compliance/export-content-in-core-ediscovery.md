@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Décrit comment exporter et télécharger du contenu à partir d’un cas core eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 8eb54e23369ef682e8aa1ebf7e681eb34444f1cd
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: c74cf79ffc5defe495ed03ac45182dbd8e36582418879d6cf367242b96095eb9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310841"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850818"
 ---
-# <a name="export-content-from-a-core-ediscovery-case"></a>Exporter du contenu à partir d’un cas core eDiscovery
+# <a name="export-content-from-a-core-ediscovery-case"></a>Exporter le contenu à partir d'une affaire d' eDiscovery de base
 
 Une fois qu’une recherche associée à un cas core eDiscovery a été correctement exécuté, vous pouvez exporter les résultats de la recherche. Lorsque vous exportez des résultats de recherche, les éléments de boîte aux lettres sont téléchargés dans des fichiers PST ou sous la mesure de messages individuels. Lorsque vous exportez du contenu à SharePoint sites OneDrive Entreprise sites, des copies de documents Office et d’autres documents sont exportées. Un Results.csv qui contient des informations sur chaque élément exporté et un fichier manifeste (au format XML) qui contient des informations sur chaque résultat de recherche est également exporté.
   
@@ -32,7 +32,7 @@ Une fois qu’une recherche associée à un cas core eDiscovery a été correcte
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
 
-2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
+2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
 
 3. Dans la page **Core eDiscovery,** cliquez sur le nom du cas où vous souhaitez créer la attente.
 

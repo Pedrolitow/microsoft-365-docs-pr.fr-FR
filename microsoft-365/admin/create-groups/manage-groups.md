@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Apprenez à gérer les Microsoft 365, notamment en ajoutant des membres de groupe supprimés, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
-ms.openlocfilehash: 2ec8198b7e28b47bcbbf40818fbe624b2744f0ee
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: f568ef170125c72a8280a354091f9a3f18b65069d33dc455f31671d8ec8b16ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454576"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826488"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le Centre d’administration Microsoft 365
 
@@ -52,7 +52,7 @@ Go to the Centre d’administration Microsoft 365 at [https://admin.microsoft.co
 
 5. Cliquez sur **Fermer**.
 
-## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Envoyer des copies des conversations dans les boîtes de réception des membres du groupe
+## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Envoyer des copies des conversations aux boîtes de réception des membres du groupe
   
 Lorsque vous utilisez le Centre d’administration pour créer un groupe, par défaut, les utilisateurs n’obtiennent pas de copies des messages électroniques de groupe envoyés à leur boîte de réception, même si les utilisateurs obtiennent des copies des invitations aux réunions de groupe envoyées à leur boîte de réception. Ils doivent se rendre dans le groupe pour voir les conversations. Vous pouvez modifier ce paramètre dans le Centre d’administration.
 

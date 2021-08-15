@@ -1,5 +1,5 @@
 ---
-title: Régions prises en charge pour la gouvernance des applications
+title: Démarrer avec la gouvernance des applications
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Liste des pays dans lesquels la gouvernance des applications est disponible.
-ms.openlocfilehash: 272e37f9f5824deb65e08de852f30e0e762330bd3f34fe6d926634ea97e303c4
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 4e9f5425d111c0a21946c78dfdbeebaedd56ac6ff23fb6c279a0c5e793f1674c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520470"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836410"
 ---
 # <a name="app-governance-supported-countries"></a>Pays pris en charge par la gouvernance des applications
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez la mobilité et la sécurité de base intégrées pour supprimer des informations des appareils inscrits.
-ms.openlocfilehash: c3cc547ce5e135ccdabf9a09b0d572f1b2530f47
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e8e5f9327a2145bcaaa5415e4d269de5ae351d2500838f5b2c972418041c218a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826581"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Effacement d’un appareil mobile dans Basic Mobility and Security
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment commencer à utiliser le module de codage prédictif dans Advanced eDiscovery. Cet article vous explique le processus de bout en bout d’utilisation du codage prédictif pour identifier le contenu d’un jeu à réviser le plus pertinent pour votre enquête.
-ms.openlocfilehash: 16fb92af5048ae6cd953e522b2e5e5d8f5a7256f
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: fe0e19c61f441f7ae01ba1c8245301ab8c6e00a3c3b1c8ddf601476bcd1f4301
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866697"
 ---
 # <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>Démarrage rapide : codage prédictif dans Advanced eDiscovery (aperçu)
 
@@ -29,7 +29,7 @@ Voici un aperçu rapide du processus de codage prédictif :
 
 ![Processus de démarrage rapide pour le codage de prédiction](..\media\PredictiveCodingQuickStartProcess.png)
 
-Pour commencer, vous créez un modèle, en étiqueter aussi peu que 50 éléments comme pertinents ou non pertinents. Le système utilise ensuite cette formation pour appliquer des scores de prévision à chaque élément du jeu à réviser. Cela vous permet de filtrer les éléments en fonction du score de prédiction, ce qui vous permet d’examiner d’abord les éléments les plus pertinents (ou non pertinents). Si vous souhaitez entraîner des modèles avec des taux de rappel et des nombres de rappels plus élevés, vous pouvez continuer à étiqueter des éléments dans les séries de formation suivantes jusqu’à ce que le modèle se stabilise. Une fois le modèle stabilisé, vous pouvez appliquer le filtre de prédiction final pour hiérarchiser les éléments à réviser.
+Pour commencer, vous créez un modèle, étiqueter aussi peu que 50 éléments comme pertinents ou non pertinents. Le système utilise ensuite cette formation pour appliquer des scores de prédiction à chaque élément du jeu à réviser. Cela vous permet de filtrer les éléments en fonction du score de prédiction, ce qui vous permet d’examiner d’abord les éléments les plus pertinents (ou non pertinents). Si vous souhaitez entraîner des modèles avec des taux de rappel et des nombres de rappels plus élevés, vous pouvez continuer à étiqueter des éléments dans les séries de formation suivantes jusqu’à ce que le modèle se stabilise. Une fois le modèle stabilisé, vous pouvez appliquer le filtre de prédiction final pour hiérarchiser les éléments à réviser.
 
 Pour une vue d’ensemble détaillée du codage prédictif, voir En savoir plus sur le codage prédictif [dans Advanced eDiscovery](predictive-coding-overview.md).
 
@@ -37,7 +37,7 @@ Pour une vue d’ensemble détaillée du codage prédictif, voir En savoir plus 
 
 La première étape consiste à créer un modèle de codage prédictif dans le jeu à réviser
 
-1. Dans le centre Microsoft 365 conformité, ouvrez un Advanced eDiscovery, puis sélectionnez l’onglet Ensembles **de révision.**
+1. Dans la Centre de conformité Microsoft 365, ouvrez un Advanced eDiscovery, puis sélectionnez l’onglet Ensembles **de révision.**
 
 2. Ouvrez un jeu à réviser, puis cliquez sur **Analyse** Gérer le  >  **codage prédictif (prévisualisation).**
 
@@ -73,7 +73,7 @@ Après avoir créé le modèle, l’étape suivante consiste à effectuer la pre
 
     Il faudra quelques minutes au système pour « apprendre » de votre étiquetage et mettre à jour le modèle. Une fois ce processus terminé, l’état **Prêt** s’affiche pour le modèle sur la page Modèles de codage prédictif **(prévisualisation).**
 
-Pour obtenir des instructions plus détaillées, voir [La formation d’un modèle de codage prédictif.](predictive-coding-train-model.md)
+Pour obtenir des instructions plus détaillées, [consultez La formation d’un modèle de codage prédictif.](predictive-coding-train-model.md)
 
 ## <a name="step-3-apply-the-prediction-score-filter-to-items-in-review-set"></a>Étape 3 : Appliquer le filtre de score de prédiction aux éléments du jeu à réviser
 
@@ -105,7 +105,7 @@ Après avoir effectué une série de formation en bail, vous pouvez appliquer le
 
 Pour obtenir des instructions plus détaillées, voir Appliquer un filtre de prédiction [à un jeu à réviser.](predictive-coding-apply-prediction-filter.md)
 
-## <a name="step-4-perform-more-training-rounds"></a>Étape 4 : Effectuer d’autres séries de formations
+## <a name="step-4-perform-more-training-rounds"></a>Étape 4 : Effectuer d’autres séries de formation
 
 Il est plus probable que vous de dû effectuer davantage de séries de formation pour former le module afin de mieux prévoir les éléments pertinents et non pertinents dans l’ensemble de révision. En règle générale, vous allez entraîner le modèle suffisamment de fois jusqu’à ce qu’il soit suffisamment stabilisé pour répondre à vos besoins.
 

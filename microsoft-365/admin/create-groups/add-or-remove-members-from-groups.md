@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Découvrez comment ajouter un membre à un groupe, supprimer un membre du groupe et gérer l’état du propriétaire du groupe dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 7eaa74a53ac5f27d801d1cf16c9af035c63c68b1
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: ee93f4c22d64e20ec586dd315aa970b610ff7e450e1a2bd79700b3f91ed84c23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393762"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826542"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Ajouter ou supprimer des membres de groupes Microsoft 365 à l’aide du Centre d’administration
 
@@ -111,7 +111,7 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 - [Attribuer un nouveau propriétaire à un groupe orphelin](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Mettre à niveau les listes de distribution Microsoft 365 groupes dans Outlook](../manage/upgrade-distribution-lists.md) (article)\
 [Pourquoi mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (article)\

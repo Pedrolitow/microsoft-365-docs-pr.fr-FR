@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: En savoir plus sur les conditions et les exceptions de stratégie dlp
-ms.openlocfilehash: e85f9c1fdc19e125ef790d14e4e42d2390145fdc
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b1ada8362b149e737784f3cc2948100bbcb217274e000736ecf4cc4752c59e93
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288346"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851130"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Conditions, exceptions et actions de stratégie DLP
 
@@ -157,7 +157,7 @@ Ce tableau décrit les actions disponibles dans DLP.
 |Transmettre le message pour approbation à des approuveurs spécifiques|Modéré|Première propriété : *ModerateMessageByUser*</br>Deuxième propriété : *Addresses*|Le paramètre Moderate spécifie une action pour la règle DLP qui envoie le message électronique à un modérateur. Ce paramètre utilise la syntaxe : @{ ModerateMessageByUser = @(« emailaddress1 »,"emailaddress2 »,..."emailaddressN »)}|
 |Ajouter un destinataire|AddRecipients|Première propriété : *Field*</br>Deuxième propriété : *Addresses*|Ajoute un ou plusieurs destinataires au champ À/Cc/Cci du message. Ce paramètre utilise la syntaxe : @{<AddToRecipients \| CopyTo \| BlindCopyTo> = « emailaddress"}|
 |Ajouter le responsable de l’expéditeur en tant que destinataire|AddRecipients|Première propriété : *AddedManagerAction*</br>Deuxième propriété : *Field*|Ajoute le responsable de l’expéditeur au message en tant que type de destinataire spécifié (To, Cc, Bcc) ou redirige vers le responsable de l’expéditeur sans notification à l’expéditeur ou au destinataire. Cette action fonctionne uniquement si l'attribut Manager de l'expéditeur est défini dans Active Directory. Ce paramètre utilise la syntaxe : @{AddManagerAsRecipientType = « <To \| Cc \| Bcc>"}|
-Prédépender l’objet|PrependSubject|String|Ajoute le texte spécifié au début du champ Subject du message. Envisagez d'utiliser un espace ou un signe deux-points (:) comme dernier caractère du texte spécifié pour le différencier du texte de l'objet d'origine.  </br>Pour empêcher l’ajout de la même chaîne aux messages qui contiennent déjà le texte dans l’objet (par exemple, les réponses), ajoutez l’exception « L’objet contient des mots » (ExceptIfSubjectContainsWords) à la règle.|
+Prédépender l’objet|PrependSubject|Chaîne|Ajoute le texte spécifié au début du champ Subject du message. Envisagez d'utiliser un espace ou un signe deux-points (:) comme dernier caractère du texte spécifié pour le différencier du texte de l'objet d'origine.  </br>Pour empêcher l’ajout de la même chaîne aux messages qui contiennent déjà le texte dans l’objet (par exemple, les réponses), ajoutez l’exception « L’objet contient des mots » (ExceptIfSubjectContainsWords) à la règle.|
 |Appliquer une clause d’exclusion de responsabilité HTML|ApplyHtmlDisclaimer|Première propriété : *Text*</br>Deuxième propriété : *Location*</br>Troisième propriété : *action de retour*|Applique la clause d’exclusion de responsabilité HTML spécifiée à l’emplacement requis du message.</br>Ce paramètre utilise la syntaxe : @{ Text = " ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }|
 |Supprimer la chiffrement de messages Office 365 et la protection des droits|RemoveRMSTemplate|s/o|Supprime le chiffrement Office 365 appliqué à un e-mail|
 |

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez de grands cas dans Advanced eDiscovery pour ajouter d’autres éléments aux jeux de révision et tirer parti d’autres limites accrues.
-ms.openlocfilehash: 739fa2a7bb3e1d1d650ef736ca1c480c8b704e6f4c2cc12b6c7fdd7e03fec2ed
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: d73ef8bd29de96fb845913e966e7d195d286b94f061e7fa492353ccfe773800f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523656"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836444"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>Utiliser de grands cas dans Advanced eDiscovery (prévisualisation)
 
@@ -61,11 +61,9 @@ En outre, le nouveau format de cas de grande taille inclut une interface utilisa
 
 ![Statistiques de cas de grande taille dans Advanced eDiscovery’interface utilisateur](..\media\LargeCaseUI.png)
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
-- L’option d’exportation de contenu en tant que fichiers libres et **fichiers PST n’est** actuellement pas prise en charge dans les grands cas (l’option est grisée). Cette option d’exportation pour les cas importants sera bientôt prise en charge. Pour plus d’informations sur l’exportation de contenu, voir [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
-
-- L’indexation avancée qui se produit lorsque vous ajoutez des dépositaires et une source de données non privative à un cas n’est actuellement pas prise en charge dans de grands cas. Le travail d’indexation est créé, mais il ne se termine pas. L’indexation avancée dans de grands cas sera bientôt prise en charge. Pour plus d’informations sur l’indexation avancée, voir [Indexation avancée des données des dépositaires.](indexing-custodian-data.md)
+- Pour l’instant, l’option d’exportation de contenu en tant que fichiers libres et fichiers **PST n’est** pas prise en charge dans les grands cas (l’option est actuellement grisée). Cette option d’exportation sera bientôt prise en charge. Pour plus d’informations sur l’exportation de contenu, voir [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 

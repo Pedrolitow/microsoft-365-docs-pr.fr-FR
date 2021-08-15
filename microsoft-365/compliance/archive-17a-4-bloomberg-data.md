@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur 17a-4 Bloomberg DataParser pour importer et archiver des données Bloomberg dans Microsoft 365.
-ms.openlocfilehash: 2d4005468d7df7987d1794e8d61262c8fde70b5f
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: c4f1ff76d03fc63ae746f433056ee544969d4470d2736ffb165042c881f6d72d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836326"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-data"></a>Configurer un connecteur pour archiver des données Bloomberg
 
@@ -77,6 +77,6 @@ Après avoir créé un connecteur Bloomberg DataParser, vous pouvez afficher l�
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

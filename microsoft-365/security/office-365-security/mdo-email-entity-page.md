@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les clients Microsoft Defender pour Office 365 E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d’entité de messagerie.
-ms.openlocfilehash: 5621476f8f8f7270d241d642354ab174a25b8b37
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: a1e318541a970b6fbd6fe04ac4b8de421ecff9aba7479393a245bc10e47e5d46
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194990"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897278"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
@@ -138,8 +138,8 @@ Les utilisateurs voient des détails de détonation enrichis pour les pièces jo
   - Softfail (raison) : l’enregistrement SPF a désigné l’hôte comme n’étant pas autorisé à envoyer mais est en transition.
   - Neutre : l’enregistrement SPF indique explicitement qu’il n’indique pas si l’adresse IP est autorisée à envoyer des messages.
   - Aucun : le domaine n’a pas d’enregistrement SPF ou l’enregistrement SPF n’est pas évalué comme un résultat.
-  - Leror : une erreur temporaire s’est produite. Par exemple, une erreur DNS. Cette même vérification peut être effectuée ultérieurement.
-  - Permerror : une erreur permanente s’est produite. Par exemple, un enregistrement SPF mal mis en forme dans le domaine.
+  - Leror : une erreur temporaire s’est produite. Par exemple, une erreur DNS. Cette même vérification peut être effectuée ultérieurement.
+  - Permerror : une erreur permanente s’est produite. Par exemple, un enregistrement SPF mal mis en forme dans le domaine.
 
 - DomainKeys Identified Mail (**DKIM**) :
   - Pass : indique la vérification DKIM pour le message passé.

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Avec Microsoft 365 groupes, vous pouvez piloter le travail d’équipe dans Microsoft 365 en donnant à un groupe de personnes l’accès à une collection de ressources partagées.
-ms.openlocfilehash: 612884306b0b999de48f7168981d9c006335f0aa
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f054578e13fb4ee43aa158f615d3a2810769d6982981fcd534bb4ca8d234a70c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826446"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Présentation des Groupes Microsoft 365 pour les administrateurs
 
@@ -82,7 +82,7 @@ Les limites suivantes s’appliquent Microsoft 365 groupes :
 |Nombre de membres|Plus de 1 000, mais seuls 1 000 peuvent accéder simultanément aux conversations de groupe. <br>Les utilisateurs peuvent remarquer des retards lors de l’accès au calendrier et aux conversations dans de grands groupes Outlook.|
 |Nombre de groupes dont un utilisateur peut être membre|7,000|
 |Stockage de fichiers|1 téraoctet + 10 Go par utilisateur abonné + tout autre stockage acheté. Vous pouvez acheter une quantité illimitée de stockage supplémentaire.|
-|Taille de la boîte aux lettres de groupe|50 Go|
+|Taille de la boîte aux lettres de groupe|50 Go|
 
 Le nombre maximal de groupes Microsoft 365 par défaut qu’une organisation peut avoir est de 500 000. Pour aller au-delà de la limite par défaut, vous devez contacter le Support Microsoft. Pour plus d’informations sur Microsoft 365 limites des groupes, voir groupes [Microsoft 365 - Aide de l’administrateur.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
@@ -118,7 +118,7 @@ Microsoft 365 groupes fonctionnent avec Azure Active Directory. Les fonctionnali
 > Pour toutes les fonctionnalités de groupes, si vous disposez d’un abonnement Azure AD Premium, les utilisateurs peuvent rejoindre le groupe, qu’une licence AAD P1 leur soit attribuée ou non. La gestion des licences n’est pas appliquée.
 > Régulièrement, nous allons générer des rapports d’utilisation qui vous indiquent quels utilisateurs manquent une licence et en ont besoin pour être conformes aux exigences de licence. Par exemple, supposons qu’un utilisateur n’a pas de licence et qu’il est ajouté à un groupe dans lequel la stratégie d’attribution de noms est appliquée. Le rapport indique qu’il a besoin d’une licence.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [En savoir plus sur Microsoft 365 groupes](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) de travail (article)\
 [Mettre à niveau les listes](../manage/upgrade-distribution-lists.md) de distribution Microsoft 365 Groupes de distribution (article)\

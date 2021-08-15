@@ -23,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: Commencez à planifier votre mise à niveau à partir Office 2010 et des applications clientes, car la prise en charge se termine bientôt et les contrats de support personnalisés ne sont pas disponibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 85a6efac9c7e622157b01b02c5d9c38a1e74d5e4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c17fcd6738b1a6e1d8359cace27b7feaed3afa5f4699391fbacd79c8ddcc9b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909297"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878052"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 

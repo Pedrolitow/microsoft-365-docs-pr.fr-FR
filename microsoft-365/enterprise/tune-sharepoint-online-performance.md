@@ -19,28 +19,28 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contient des liens vers d’autres articles qui vous expliquent comment améliorer les performances des temps de téléchargement de page pour SharePoint Online.
-ms.openlocfilehash: 9ce463898b81e1653932864276be2fa8d6ce830b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e76969da9dce2d6cc87bc903960e9879f81bdc4e6895161df84367b0f95afff3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909333"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878130"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Optimisation des performances SharePoint Online
 
 Cet article contient des liens vers d’autres articles qui vous expliquent comment améliorer les performances des temps de téléchargement de page pour SharePoint Online. Cet article fait partie de la planification réseau et de l’optimisation des performances [pour Office 365](./network-planning-and-performance.md) projet.
 
-## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Articles sur le réglage des performances SharePoint Online
+## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Articles sur l’optimisation des performances SharePoint Online
 
 Utilisez ces articles pour affiner les performances SharePoint Online.
   
-- [Introduction à l’optimisation des performances pour SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
+- [Introduction à l’optimisation des performances pour SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
 
 - [Utiliser l’outil Diagnostic de page pour SharePoint Online](page-diagnostics-for-spo.md)
 
 - [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
 
-- [Aide relative aux performances des portails SharePoint Online](/sharepoint/dev/solution-guidance/portal-performance)
+- [Aide relative aux performances des portails SharePoint Online](/sharepoint/dev/solution-guidance/portal-performance)
 
 - [Optimisation des images pour SharePoint Online](image-optimization-for-sharepoint-online.md)
 
@@ -62,7 +62,7 @@ Utilisez ces articles pour affiner les performances SharePoint Online.
 
 - [Optimiser les iFrames dans les pages SharePoint portail moderne en ligne](modern-iframe-optimization.md)
 
-- [Optimiser les performances des SharePoint web dans les pages de portail moderne en ligne](modern-web-part-optimization.md)
+- [Optimiser les performances des SharePoint web dans les pages du portail moderne en ligne](modern-web-part-optimization.md)
 
 - [Optimiser les appels de page dans les pages SharePoint portail moderne en ligne](modern-page-call-optimization.md)
 

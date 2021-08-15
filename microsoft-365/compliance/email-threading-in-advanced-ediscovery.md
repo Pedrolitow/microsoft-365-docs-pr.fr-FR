@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Lorsque vous effectuez une analyse Advanced eDiscovery, le thread de messagerie analyse une conversation par courrier électronique et sépare chaque message en différentes catégories.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b087bfc84175f80daaf1c0d2f1394584a70757ac
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: afe740f3b5be33a7033f8ed5ce41aa9582b0da4d2a7af05868bd5522d5f66fb1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850890"
 ---
 # <a name="email-threading-in-advanced-ediscovery"></a>Threads de messagerie dans Advanced eDiscovery
 
@@ -29,7 +29,7 @@ Envisagez une conversation par courrier électronique qui se passe depuis un cer
 
 ## <a name="what-does-email-threading-do"></a>Que fait le thread de messagerie ?
 
-Le thread de courrier électronique pare chaque e-mail et le déconstruit dans des messages individuels . chaque e-mail est une chaîne de messages individuels. Ensuite, il analyse tous les e-mails du jeu à réviser pour déterminer si un e-mail a un contenu unique ou si la chaîne est entièrement contenue dans un autre e-mail. Au final, les courriers électroniques sont répartis en quatre catégories :
+Le thread de courrier électronique pare chaque e-mail et le déconstruit dans des messages individuels . chaque e-mail est une chaîne de messages individuels. Ensuite, il analyse tous les e-mails du jeu à réviser pour déterminer si un e-mail a un contenu unique ou si la chaîne est entièrement contenue dans un autre e-mail. Au final, les messages électroniques sont répartis en quatre catégories :
 
 - **Conversation complète** : le dernier message présente un contenu unique. Le courrier inclut toutes les pièces jointes ajoutées aux autres messages dont le contenu est entièrement disponible dans ce courrier.
 

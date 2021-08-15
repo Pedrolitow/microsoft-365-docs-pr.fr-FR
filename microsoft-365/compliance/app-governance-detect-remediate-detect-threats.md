@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Corrigez les menaces liées aux applications.
-ms.openlocfilehash: 5d2673fa1723e227119dd535784b4ad391ccf79f
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 3b84594aa990516b6ecb340d6b8ffbd8d6d1a544c9c1e3dddeb691044e221424
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621694"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836432"
 ---
 # <a name="remediate-app-threats"></a>Corriger les menaces liées aux applications
 
