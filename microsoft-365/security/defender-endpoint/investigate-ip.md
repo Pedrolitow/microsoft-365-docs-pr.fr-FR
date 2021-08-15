@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e2c1cbc82d0fe1604622b1eb2f9f3583f0125c69
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: bd0d9dda9edeb27a472474f071cf67ff1463f23b4c82577b9c902b1ec84eecce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839590"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner une adresse IP associée à une alerte Microsoft Defender pour le point de terminaison
 
@@ -42,7 +42,7 @@ Examinez les communications possibles entre vos appareils et les adresses IP ext
 
 L’identification de tous les appareils de l’organisation ayant communiqué avec une adresse IP malveillante suspectée ou connue, telle que les serveurs de commande et de contrôle (C2), permet de déterminer l’étendue potentielle de la violation, des fichiers associés et des appareils infectés.
 
-Vous trouverez des informations dans les sections suivantes dans l’affichage des adresses IP :
+Vous trouverez des informations dans les sections suivantes dans l’affichage d’adresse IP :
 
 - IP dans le monde entier
 - Noms DNS inversés
@@ -56,7 +56,7 @@ La section Détails de l’adresse IP affiche les attributs de l’adresse IP, t
 
 ## <a name="alerts-related-to-this-ip"></a>Alertes associées à cette adresse IP
 
-Les **alertes associées à cette** section IP fournissent une liste d’alertes associées à l’adresse IP.
+Les **alertes associées à cette** section IP fournissent une liste des alertes associées à l’adresse IP.
 
 ## <a name="ip-in-organization"></a>IP dans l’organisation
 
@@ -85,7 +85,7 @@ Utilisez les filtres de recherche pour définir les critères de recherche. Vous
 
 En cliquant sur l’un des noms d’appareils, vous pouvez continuer à examiner les alertes, comportements et événements signalés.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a6071a8cb13fc7c785a1b3914f65cd8eca27f28f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e68a2013a2c883356f11b94d21ac68169faa42d8b719f8a41af1b73cbadc970f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651614"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854458"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
@@ -44,7 +44,7 @@ Microsoft Manged Desktop identifie chaque appareil de manière unique en référ
 
 - Demandez à votre fournisseur OEM le fichier d’inscription AutoPilot, qui inclut les h biens matériels.
 - Exécutez [un script Windows PowerShell sur](#powershell-script-method) chaque appareil et collectez les résultats dans un fichier.
-- Démarrez chaque appareil (mais ne terminez pas l’Windows de configuration) et collectez les hages sur un [disque mémoire flash amovible.](#flash-drive-method)
+- Démarrez chaque appareil(mais ne terminez pas l’Windows de configuration) et collectez les hages sur un [lecteur flash amovible.](#flash-drive-method)
 
 #### <a name="powershell-script-method"></a>Méthode de script PowerShell
 

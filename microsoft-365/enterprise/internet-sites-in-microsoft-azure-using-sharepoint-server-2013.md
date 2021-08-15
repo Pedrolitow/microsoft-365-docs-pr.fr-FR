@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: Cet article fournit des ressources pour la conception et l’implémentation de sites Internet Sharepoint Server 2013 hébergés dans les services d’infrastructure Azure.
-ms.openlocfilehash: f6c7bec1dccc48c1080f76c30bb31b98a473f66e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9d811900485fe42e218a2e58ec4572d993c849ffe7f5ddbcd54ab16c42887db2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870600"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013
 
@@ -45,7 +45,7 @@ Microsoft Azure est une option intéressante pour l'hébergement de sites Intern
 
 Les articles et les illustrations techniques suivants fournissent des informations sur la méthode de conception et d'implémentation des sites Internet dans Azure à l'aide de SharePoint Server 2013.
 
-|Resource|Plus d’informations|
+|Ressource|Plus d’informations|
 |---|---|
 |Sites Internet **SharePoint Server 2013 dans Azure** <br/> [![Image de sites Internet dans Azure utilisant SharePoint](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|Ce modèle d’architecture décrit les activités de conception clés et les choix d’architecture recommandés pour les sites Internet dans Azure.|
 |**Exemple de conception : sites Internet dans Azure pour SharePoint Server 2013** <br/> [ ![ Image de l’exemple de conception : sites Internet Microsoft Azure pour SharePoint 2013 ](../media/MS-AZ-InternetSitesDesignSample.jpg) ] <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|Utilisez cet exemple de conception comme point de départ pour votre propre architecture.|
@@ -54,4 +54,4 @@ Les articles et les illustrations techniques suivants fournissent des informatio
 
 ## <a name="see-also"></a>Voir aussi
 
-[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)

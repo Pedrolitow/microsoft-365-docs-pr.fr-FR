@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre Administration Microsoft 365 de connexion
-ms.openlocfilehash: 05247c73bec3a11905890d26db84f8fe1a288a99
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 3d22d3d3ee4081ab905c3848a39f5f9df9a9e667b503899b946c1ebec8110dc8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419798"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870413"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre Administration Microsoft 365 de connexion
 
@@ -224,7 +224,7 @@ L’emplacement de sortie Internet est l’emplacement où le trafic réseau qui
 
 Vous avez besoin d’une licence qui donne accès au Centre d’administration Microsoft 365.
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Sujets connexes
 
 [Microsoft 365 informations sur le réseau (aperçu)](office-365-network-mac-perf-insights.md)
 

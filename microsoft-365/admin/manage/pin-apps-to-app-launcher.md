@@ -13,12 +13,12 @@ ms.collection:
 ms.service: o365-administration
 localization_priority: Normal
 description: En tant qu’administrateur général, vous pouvez épingler jusqu’à trois applications au lanceur d’applications de vos utilisateurs.
-ms.openlocfilehash: 786368f1236c7a86a6fbd0dd863ad0296cb65fac
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6569b05f29a2219c9d1d6c847e65cd29043d80fd82d5e499e2af57ba96af0da9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579265"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825009"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>Épingler des applications au lanceur d’applications de vos utilisateurs
 
@@ -28,7 +28,7 @@ Pour plus d’informations sur le lanceur d’applications [](https://support.mi
 
 ## <a name="use-the-azure-active-directory-portal-to-pin-apps"></a>Utiliser le portail Azure Active Directory pour épingler des applications
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+1. Go to the Centre d’administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Azure Active Directory**.
 3. In **Azure Active Directory**, choose **Enterprise applications** User  >  **settings**.
 4. Dans la **section Office 365 Paramètres,** choisissez **Ajouter une application.**

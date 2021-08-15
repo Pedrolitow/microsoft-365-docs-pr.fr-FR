@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser les Microsoft Teams votre petite entreprise.
-ms.openlocfilehash: 75e5c4aad1ef65e63ed7809cc667fce4b48934e2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5ba2dee81602cf6c474728879435998b699a1b5439ae751033a3511b17940361
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537366"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882444"
 ---
 # <a name="get-started-with-teams"></a>Commencez avec Teams
 
@@ -49,32 +49,32 @@ Avec Microsoft Teams vous pouvez envoyer des messages instantanés, partager des
 
 ### <a name="create-and-organize-teams"></a>Créer et organiser des équipes
 
-Une équipe dans Microsoft Teams est conçue pour rassembler un groupe de personnes qui travaillent en étroite collaboration pour faire des choses. Teams peuvent être dynamiques pour un travail basé sur un projet (c’est-à-dire un lancement de produit) ou en cours, en fonction des services ou des bureaux de votre entreprise. Vous pouvez également configurer des équipes à l’échelle de l’organisation pour inclure tous les membres de votre organisation.
+Une équipe dans Microsoft Teams est conçue pour rassembler un groupe de personnes qui travaillent en étroite collaboration pour faire leurs choses. Teams peuvent être dynamiques pour un travail basé sur un projet (c’est-à-dire un lancement de produit) ou en cours, en fonction des services ou des bureaux de votre entreprise. Vous pouvez également configurer des équipes à l’échelle de l’organisation pour inclure tous les membres de votre organisation.
 
 Les canaux sont des sections dédiées au sein d’une équipe pour conserver les conversations organisées par sujets, projets ou domaines spécifiques. Les conversations, les fichiers et les notes de chaque canal sont visibles uniquement par les membres de ce groupe.
 
 ### <a name="store-and-share-files"></a>Stocker et partager des fichiers
 
-Comme votre équipe travaille ensemble à distance, vous aurez des fichiers que vous souhaiterez partager et sur qui collaborer, à l’intérieur et à l’extérieur de l’entreprise. Microsoft Teams facilite le partage de fichiers et leur travail ensemble. Si vos documents sont Word, Excel ou PowerPoint fichiers que vos collègues et clients peuvent même afficher, modifier et collaborer dessus, directement Microsoft Teams.
+Comme votre équipe travaille ensemble à distance, vous aurez des fichiers que vous souhaiterez partager et sur qui collaborer, à l’intérieur et à l’extérieur de l’entreprise. Microsoft Teams permet de partager facilement des fichiers et de travailler dessus ensemble. Si vos documents sont Word, Excel ou PowerPoint fichiers que vos collègues et clients peuvent même afficher, modifier et collaborer dessus, directement Microsoft Teams.
 
-Assurez-vous que les documents clés de votre entreprise sont enregistrés dans le cloud et prêts à être partagés en toute sécurité avec les clients, clients, partenaires, fournisseurs et autres personnes de votre entreprise. Le fait de conserver des fichiers dans le cloud signifie également que vous bénéficiez des avantages de la sauvegarde et de la possibilité de récupérer après des défaillances de disque dur, des attaques par ransomware et d’autres attaques.
+Assurez-vous que les documents clés de votre entreprise sont enregistrés dans le cloud et prêts à être partagés en toute sécurité avec des clients, des clients, des partenaires, des fournisseurs et d’autres personnes de votre entreprise. Conserver des fichiers dans le cloud signifie également que vous bénéficiez des avantages de la sauvegarde et de la possibilité de récupérer après des défaillances de disque dur, des attaques par ransomware et d’autres attaques.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour approfondir les fonctionnalités de Microsoft Teams...
 
-### <a name="secure-your-business-as-it-runs-remotely"></a>Sécuriser votre entreprise pendant qu’elle s’exécute à distance
+### <a name="secure-your-business-as-it-runs-remotely"></a>Sécurisation de votre entreprise à mesure qu’elle s’exécute à distance
 
-Une fonctionnalité de sécurité hautement recommandée est l’authentification multifacteur (MFA). L’ajout de l’authentification multifacteur pour les employés distants nécessite qu’ils entrent un code de sécurité reçu par un texte, un appel téléphonique ou une application d’authentification lorsqu’ils se connectent Microsoft 365. Si un pirate informatique met en attente le mot de passe d’une personne par le biais d’une attaque par hameçonnage, il ne peut pas l’utiliser pour accéder aux comptes et données de votre entreprise. Vous pouvez ajouter la protection MFA à partir Microsoft 365 Admin Center : [configurer mfa pour les appareils mobiles.](set-up-mfa.md)
+Une fonctionnalité de sécurité fortement recommandée est l’authentification multifacteur (MFA). L’ajout de l’authentification multifacteur pour les employés distants nécessite qu’ils entrent un code de sécurité reçu par un texte, un appel téléphonique ou une application d’authentification lorsqu’ils se connectent Microsoft 365. Si un pirate informatique met en attente le mot de passe d’une personne par le biais d’une attaque par hameçonnage, il ne peut pas l’utiliser pour accéder aux comptes et données de votre entreprise. Vous pouvez ajouter la protection MFA à partir du centre Administration Microsoft 365 : configurer l’mfmf [pour les appareils mobiles.](set-up-mfa.md)
 
 ### <a name="microsoft-teams-templates"></a>Microsoft Teams modèles
 
-Pour faciliter et rationaliser le déploiement dans votre organisation, consultez les modèles qui sont spécifiquement disponibles pour les petites entreprises. Microsoft Teams modèles vous permettent de créer rapidement et facilement des équipes en fournissant un modèle prédéféré de paramètres, de canaux et d’applications préinstallées, tout en orientant les utilisateurs à commencer à utiliser Microsoft Teams efficacement. Voir [La mise en Teams modèles pour les petites et moyennes entreprises.](/microsoftteams/smb-templates)
+Pour faciliter et rationaliser le déploiement dans votre organisation, consultez les modèles qui sont spécifiquement disponibles pour les petites entreprises. Microsoft Teams modèles vous permettent de créer rapidement et facilement des équipes en fournissant un modèle prédéféré de paramètres, de canaux et d’applications préinstallées, tout en orientant les utilisateurs à commencer à utiliser Microsoft Teams efficacement. Voir [La mise en Teams modèles de modèles pour les petites et moyennes entreprises.](/microsoftteams/smb-templates)
 
 ### <a name="business-phone-system"></a>Système téléphonique d’entreprise
 
-Transformez n’importe quel PC, Mac ou appareil mobile en téléphone d’entreprise en ajoutant [Microsoft 365 Business Voice](https://aka.ms/getbusinessvoice) à votre abonnement. Donnez aux employés leur propre numéro de téléphone pour effectuer et recevoir des appels, configurer un système de menus d’appels pour router les appels, ajouter des audioconférences et configurer des numéros gratuits et gratuits pour votre entreprise. Tout cela tout en remplaçant les fournisseurs de téléphonie traditionnels et les systèmes téléphoniques en interne qui peuvent être coûteux et difficiles à gérer.
+Transformez n’importe quel PC, Mac ou appareil mobile en téléphone d’entreprise en ajoutant des Microsoft 365 Business Voice [à](https://aka.ms/getbusinessvoice) votre abonnement. Donnez aux employés leur propre numéro de téléphone pour effectuer et recevoir des appels, configurer un système de menus d’appels pour router les appels, ajouter des audioconférences et configurer des numéros gratuits et gratuits pour votre entreprise. Tout cela tout en remplaçant les fournisseurs de téléphonie traditionnels et les systèmes téléphoniques en interne qui peuvent être coûteux et difficiles à gérer.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Permettre à votre petite entreprise de travailler à distance](../admin/misc/empower-your-small-business-with-remote-work.md) (article)

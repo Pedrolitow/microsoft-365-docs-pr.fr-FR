@@ -1,7 +1,6 @@
 ---
-title: Activez l’environnement d’évaluation de Microsoft Defender pour Office 365 dans votre environnement de production, activez votre évaluation, votre activation
+title: Activer l’environnement d’évaluation de Microsoft Defender pour Office 365 dans votre environnement de production
 description: Étapes d’activation de l’évaluation de Microsoft Defender pour Office365, avec des licences d’évaluation, la gestion des enregistrement MX, & audit des domaines acceptés et des connexions entrantes.
-keywords: Microsoft 365 Defender essai, essayez Microsoft 365 Defender, évaluez Microsoft 365 Defender, laboratoire d’évaluation Microsoft 365 Defender, pilote Microsoft 365 Defender, cybersécurité, menace avancée persistante, sécurité d’entreprise, appareils, appareil, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: eebf6b6a07ed051a59ce9563497be25367ad3878
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3a771c463c5f41aa9c74a8fb318b248f92bfb0ca159e84714c53ff43d378dc5f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863048"
 ---
 # <a name="enable-the-evaluation-environment"></a>Activer l’environnement d’évaluation
 
@@ -102,7 +101,7 @@ Utilisez les instructions ci-après pour activer votre Microsoft Defender pour O
 
    :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="Cliquez sur le bouton Activer les paramètres pour utiliser le portail d’administration centralisé Microsoft 365 Defender amélioré.":::
 
-3. Dans le menu de navigation, sélectionnez **Stratégies & sous** *Collaboration & courrier électronique.*
+3. Dans le menu de navigation, sélectionnez **Stratégies & sous** *Email & Collaboration*.
 
    :::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="Voici une image du menu Collaboration & courrier électronique pointant vers stratégies & règles. Cliquez dessus !":::
 
@@ -129,7 +128,7 @@ Utilisez les instructions ci-après pour activer votre Microsoft Defender pour O
    |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="Ce volet dispose d’une zone de drop-down pour passer en revue vos paramètres. Il dispose également d’un lien cliquable pour modifier votre type de routage si nécessaire. Lorsque vous êtes prêt, cliquez sur le grand bouton Bleu Créer l’évaluation.":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="La mise en place est maintenant terminée. Le bouton bleu de cette page indique « Passer à l’évaluation ».":::|
    |
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Étape 3 sur 3 : Configurer le pilote pour Microsoft Defender pour Office 365
 

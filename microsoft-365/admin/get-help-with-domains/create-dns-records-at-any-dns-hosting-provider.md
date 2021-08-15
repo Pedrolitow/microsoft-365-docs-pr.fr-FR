@@ -21,12 +21,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
-ms.openlocfilehash: 22eb8ff47ac3dd25eb143ccb567e75b9179395b9
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a4af63493ae155314f0e3cc0d7772b61d2656b6a898c036f0ee086622bccf42d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652454"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825913"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 

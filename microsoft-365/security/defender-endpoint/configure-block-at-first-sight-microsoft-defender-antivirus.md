@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ef0805644112552c3ee9faf21f43decdfa42eeab
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 48b014c808a2d8d91f7a0adb01938bf289c1985aece314fd5ab49d3ef9542c4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664080"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829810"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 

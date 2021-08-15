@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Résumé : Configurez les serveurs proxy d’application web pour votre authentification fédérée haute disponibilité Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: 95d73d05f2eef087e606df14db180b24c69d5932
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc74fd93fc668094d9627486ac0106447825166e3c69b4c79c36be7ccd6ea107
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870640"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Authentification fédérée haute disponibilité, phase 4 : Configurer les proxys d’application web
 
@@ -64,13 +64,13 @@ Vous devez déterminer le nom DNS pour identifier le nom de votre service de fé
   
 Une fois que le nom de domaine complet du service de fédération a été obtenu, créez un enregistrement DNS de domaine public A pour le nom de domaine complet pour le résoudre en adresse IP publique de l’équilibreur de charge Azure connecté à Internet.
   
-|**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Value (Valeur)**|
+|**Name**|**Type (Type)**|**TTL**|**Value (Valeur)**|
 |:-----|:-----|:-----|:-----|
 |Nom de domaine complet du service de fédération  <br/> |A  <br/> |3600  <br/> |adresse IP publique de l’équilibreur de charge Azure connecté à Internet (affiché par la commande **Write-Host** dans la section précédente) <br/> |
    
 Voici un exemple :
   
-|**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Value (Valeur)**|
+|**Name**|**Type (Type)**|**TTL**|**Value (Valeur)**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -168,4 +168,4 @@ Utilisez [la phase 5 : Configurer l’authentification fédérée pour Microsoft
   
 [Identité fédérée pour votre environnement Microsoft 365 dev/test](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)

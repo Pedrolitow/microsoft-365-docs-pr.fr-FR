@@ -1,5 +1,5 @@
 ---
-title: Restreindre l’accès aux rubriques des rubriques microsoft
+title: Restreindre l’accès aux rubriques dans Sujets Microsoft Viva
 description: Comment exclure des rubriques pour les empêcher d’être découvertes.
 author: efrene
 ms.author: efrene
@@ -13,16 +13,16 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: d6dfb2f7f432a40c5b6e96a9437f50ba47e23387
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: e0fc8d2bce8de471049f36194696fd5600b05476ccceb362a448d7ba79be45d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854674"
 ---
-# <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>Restreindre l’accès aux rubriques des rubriques microsoft
+# <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>Restreindre l’accès aux rubriques dans Sujets Microsoft Viva
 
-Dans Microsoft Domaine, les parties prenantes de votre organisation peuvent vouloir s’assurer que des rubriques spécifiques ne sont pas découvertes et exposées à vos utilisateurs sous licence. Par exemple, vous travaillez peut-être sur un projet dont vous ne souhaitez pas encore exposer d’informations. Bien que les autorisations Office 365 sur les sites, les fichiers et d’autres ressources empêchent les utilisateurs d’Expériences de rubrique d’afficher des informations sensibles dans des rubriques, il existe des protections supplémentaires pour empêcher la découverte de sujets spécifiques.
+Dans Microsoft Viva, les parties prenantes de votre organisation peuvent vouloir s’assurer que des rubriques spécifiques ne sont pas découvertes et exposées à vos utilisateurs sous licence. Par exemple, vous travaillez peut-être sur un projet dont vous ne souhaitez pas encore exposer d’informations. Bien que les autorisations Office 365 sur les sites, les fichiers et d’autres ressources empêchent les utilisateurs d’Expériences de rubrique d’afficher des informations sensibles dans des rubriques, il existe des protections supplémentaires pour empêcher la découverte de sujets spécifiques.
 
 Bien que les administrateurs du savoir contrôlent les paramètres afin d’empêcher la découverte de sujets, les gestionnaires de connaissances et les autres parties prenantes doivent savoir comment cela se fait pour travailler en collaboration.
 
@@ -31,7 +31,7 @@ Bien que les administrateurs du savoir contrôlent les paramètres afin d’emp�
 
 ## <a name="prevent-topics-from-being-identified"></a>Empêcher l’identification des rubriques
 
-L’administrateur du savoir peut restreindre l’accès à des rubriques spécifiques en les empêchant d’être trouvés dans l’indexation initiale. Il existe deux façons d’accomplir cette tâche dans les paramètres d’administration Rubriques Dans le centre d Microsoft 365'administration.
+L’administrateur du savoir peut restreindre l’accès à des rubriques spécifiques en les empêchant d’être trouvés dans l’indexation initiale. Il existe deux façons d’accomplir cette tâche dans les paramètres d’administration Rubriques Dans la Centre d’administration Microsoft 365.
  
 - [Sélectionnez SharePoint sites](./topic-experiences-discovery.md#select-sharepoint-topic-sources)à exclure de la découverte de rubriques : vous pouvez utiliser ce paramètre pour empêcher l’analyse de sites SharePoint spécifiques pour les rubriques.
 - [Exclure les rubriques par leur nom](./topic-experiences-discovery.md#exclude-topics-by-name): les administrateurs peuvent utiliser ce paramètre pour empêcher la découverte de sujets spécifiques par leur nom. Dans les paramètres d’administration De Rubriques, un administrateur peut télécharger une liste de rubriques à exclure dans un fichier CSV. Vous pouvez exclure les rubriques qui ont des correspondances exactes ou partielles d’un nom de rubrique.

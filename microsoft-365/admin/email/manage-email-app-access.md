@@ -1,5 +1,5 @@
 ---
-title: Gérer l’accès aux applications de messagerie Microsoft 365 centre d’administration
+title: Gérer l’accès aux applications de messagerie Centre d’administration Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -20,17 +20,17 @@ search.appverid:
 - MBS150
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
-description: Découvrez comment choisir les applications mobiles que les utilisateurs peuvent utiliser pour accéder à la messagerie, au calendrier et aux contacts.
-ms.openlocfilehash: f114aa43b4bbade09d53f415aae4c5c033c20694
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Découvrez comment choisir les applications mobiles que les utilisateurs peuvent utiliser pour accéder à la messagerie électronique, au calendrier et aux contacts.
+ms.openlocfilehash: d38730df158758ceb310ba25f45f222d7893afe2d0aefc601a17663e85787552
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825978"
 ---
-# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Gérer l’accès aux applications de messagerie dans Microsoft 365'administration
+# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Gérer l’accès aux applications de messagerie dans le Centre d’administration Microsoft 365
 
-Utilisez les paramètres d’accès à la messagerie mobile pour choisir les applications mobiles que les membres de votre organisation peuvent utiliser pour accéder à leur compte scolaire ou scolaire ou accéder à la messagerie, au calendrier et aux contacts.
+Utilisez les paramètres d’accès à la messagerie mobile pour choisir les applications mobiles que les membres de votre organisation peuvent utiliser pour accéder à leur compte scolaire ou scolaire ou pour accéder à la messagerie, au calendrier et aux contacts.
   
 > [!IMPORTANT]
 > Votre organisation aura accès à ce paramètre, sauf si vous utilisez Microsoft Intune ou que vous avez configuré les paramètres de gestion des appareils mobiles dans le Centre d’administration Exchange. 
@@ -54,12 +54,12 @@ Choisissez l’option pour définir la façon dont les utilisateurs de votre org
     
 Pour plus d’informations, consultez [Les options d’accès à la messagerie](access-email-from-a-mobile-device.md)à partir de votre appareil mobile.
   
-## <a name="new-user-or-device-is-activated-in-your-organization"></a>Un nouvel utilisateur ou appareil est activé dans votre organisation
+## <a name="new-user-or-device-is-activated-in-your-organization"></a>Un nouvel utilisateur ou un nouvel appareil est activé dans votre organisation
 
-Dès qu’un utilisateur de votre organisation ajoute son courrier scolaire ou scolaire à une application de messagerie tierce ou à un nouvel appareil, il reçoit un e-mail de Microsoft pour le compte de votre **organisation.** L’e-mail leur fera savoir les avantages de l’utilisation Outlook’application mobile et fournit un lien vers l’emplacement de téléchargement. Vos utilisateurs peuvent ensuite choisir de continuer à utiliser l’application tierce ou d’utiliser l’Outlook mobile. Pendant les 24 heures qui s’erront après que l’utilisateur aura reçu ce message électronique pour la première fois, son appareil sera mis en quarantaine et les données de courrier, de calendrier et de contact ne seront pas mises à jour. S’ils choisissent d’utiliser Outlook’application mobile, l’application tierce reste mise en quarantaine et les données ne sont synchronisées qu’avec Outlook’application mobile. S’ils décident de continuer à utiliser l’application tierce, les données commencent à se synchroniser instantanément. Si aucune action n’est entreprise pendant ces premières 24 heures, le courrier électronique est supprimé de sa boîte de réception et les données commencent à se synchroniser automatiquement à partir du serveur.
+Dès qu’un utilisateur de votre organisation ajoute son courrier scolaire ou scolaire à une application de messagerie tierce ou à un nouvel appareil, il reçoit un e-mail de Microsoft pour le compte de votre **organisation.** L’e-mail leur fera savoir les avantages de l’utilisation Outlook’application mobile et fournit un lien vers l’emplacement de téléchargement. Vos utilisateurs peuvent ensuite choisir de continuer à utiliser l’application tierce ou d’utiliser l’Outlook mobile. Pendant les 24 heures qui s’erront après que l’utilisateur aura reçu ce message électronique pour la première fois, son appareil sera mis en quarantaine et les données de courrier, de calendrier et de contact ne seront pas mises à jour. S’ils choisissent d’utiliser l’application mobile Outlook, l’application tierce reste mise en quarantaine et les données ne sont synchronisées qu’avec Outlook’application mobile. S’ils décident de continuer à utiliser l’application tierce, les données commencent à se synchroniser instantanément. Si aucune action n’est entreprise pendant ces premières 24 heures, le courrier électronique est supprimé de sa boîte de réception et les données commencent à se synchroniser automatiquement à partir du serveur.
   
 ## <a name="previously-configured-users-in-your-organization"></a>Utilisateurs précédemment configurés dans votre organisation
 
-Si vous décidez de recommander des Outlook à tous les membres de votre organisation, en plus de l’expérience décrite ci-dessus pour les nouveaux utilisateurs, les utilisateurs qui ont précédemment connecté leur compte de messagerie scolaire ou scolaire à une application tierce recevront un courrier électronique de **Microsoft** pour le compte de votre organisation dans les 48 heures qui s’viennent d’être activés. L’e-mail leur fera savoir les avantages de l’utilisation Outlook’application mobile et fournit un lien vers l’emplacement de téléchargement. Vos utilisateurs peuvent ensuite choisir de continuer à utiliser l’application tierce ou d’utiliser l’Outlook mobile. Pendant les 24 heures qui s’erront après que l’utilisateur aura reçu ce message électronique pour la première fois, son appareil sera mis en quarantaine et les données de courrier, de calendrier et de contact ne seront pas mises à jour. S’ils choisissent d’utiliser Outlook’application mobile, l’application tierce reste mise en quarantaine et les données ne sont synchronisées qu’avec Outlook’application mobile. S’ils décident de continuer à utiliser l’application tierce, les données commencent à se synchroniser instantanément. Si aucune action n’est entreprise pendant ces premières 24 heures, le courrier électronique est supprimé de sa boîte de réception et les données commencent à se synchroniser automatiquement à partir du serveur. 
+Si vous décidez de recommander des Outlook à tous les membres de votre organisation, en plus de l’expérience décrite ci-dessus pour les nouveaux utilisateurs, les utilisateurs qui ont précédemment connecté leur compte de messagerie scolaire ou scolaire à une application tierce recevront un courrier électronique de **Microsoft** pour le compte de votre organisation dans les 48 heures qui s’viennent d’être activés. L’e-mail leur fera savoir les avantages de l’utilisation Outlook’application mobile et fournit un lien vers l’emplacement de téléchargement. Vos utilisateurs peuvent ensuite choisir de continuer à utiliser l’application tierce ou d’utiliser l’Outlook mobile. Pendant les 24 heures qui s’erront après que l’utilisateur aura reçu ce message électronique pour la première fois, son appareil sera mis en quarantaine et les données de courrier, de calendrier et de contact ne seront pas mises à jour. S’ils choisissent d’utiliser l’application mobile Outlook, l’application tierce reste mise en quarantaine et les données ne sont synchronisées qu’avec Outlook’application mobile. S’ils décident de continuer à utiliser l’application tierce, les données commencent à se synchroniser instantanément. Si aucune action n’est entreprise pendant ces premières 24 heures, le courrier électronique est supprimé de sa boîte de réception et les données commencent à se synchroniser automatiquement à partir du serveur. 
   
 

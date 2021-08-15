@@ -13,13 +13,13 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: 'Résumé : Configurez azure ad Connecter pour votre authentification fédérée haute disponibilité Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: 2bca2b758486b85d185870e2e14b495b8f084cb7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 'Résumé : Configurez azure ad Connecter pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
+ms.openlocfilehash: 7953e7655b484250576352eb805042e1a435ccf5bf6cea25cf6a5dc7eb3a4bc8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929407"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870664"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Authentification fédérée haute disponibilité, phase 5 : Configurer l’authentification fédérée pour Microsoft 365
 
@@ -69,7 +69,7 @@ Voici un exemple pour l’organisation Contoso :
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Exécutez Azure AD Connect pour configurer l’authentification fédérée
 
-L’outil Azure AD Connecter configure les serveurs AD FS, les serveurs proxy d’application web et les Microsoft 365 pour l’authentification fédérée en suivantes :
+L’outil azure AD Connecter configure les serveurs AD FS, les serveurs proxy d’application web et les Microsoft 365 pour l’authentification fédérée en suivantes :
   
 1. Créez une connexion bureau à distance à votre serveur de synchronisation d’annuaires avec un compte de domaine ayant des privilèges d’administrateur local.
     
@@ -145,6 +145,6 @@ Votre infrastructure d’authentification fédérée haute disponibilité Micros
   
 [Identité fédérée pour votre environnement Microsoft 365 dev/test](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
 
 [Identité fédérée pour Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)

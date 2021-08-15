@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 0fb8c55f5b7291cdc6bcec636981a9d31015e723
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: e4d287f82fd267b3a56bcfad8266389e2dffa194c16f9c2fb9048cebe4773232
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487683"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870878"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identité fédérée pour votre environnement de test Microsoft 365
 
@@ -201,9 +201,9 @@ Ensuite, utilisez ces étapes pour enregistrer le nouveau certificat auto-signé
   
 1. Sélectionnez **Démarrer,** **entrezmmc.exe,** puis appuyez sur **Entrée.**
     
-2. Select **File**  >  **Add/Remove Ancrer-in**.
+2. Select **File**  >  **Add/Remove Snap-in**.
     
-3. Dans **Ajouter ou supprimer Ancrer, double-cliquez** sur **Certificats** dans la liste des logiciels en snap-in disponibles, sélectionnez Compte d’ordinateur, puis sélectionnez **Suivant**.
+3. Dans **Ajouter ou supprimer des snap-ins,** double-cliquez sur **Certificats** dans la liste des logiciels en snap-in disponibles, sélectionnez Compte d’ordinateur, puis sélectionnez **Suivant**.
     
 4. Dans **Sélectionner un ordinateur,** **sélectionnez Terminer,** puis **sélectionnez OK.**
     
@@ -237,7 +237,7 @@ Attendez la fin de l’installation.
   
 Ensuite, configurez le service AD FS en suivant ces étapes :
   
-1. Sélectionnez **Démarrer,** puis **l’icône Gestionnaire de** serveur.
+1. Sélectionnez **Démarrer,** puis l’icône **Gestionnaire de** serveur.
     
 2. Dans le volet d’arborescence du Gestionnaire de serveur, sélectionnez **AD FS**.
     
@@ -257,7 +257,7 @@ Ensuite, configurez le service AD FS en suivant ces étapes :
     
 7. Dans la page **Spécifier un compte de service,** **sélectionnez Sélectionner** **le nom du compte.**
     
-8. Dans **Sélectionner un compte d’utilisateur ou** de service, entrez **ADFS-Service,** sélectionnez **Vérifier** les noms, puis **sélectionnez OK**.
+8. Dans **Sélectionner un compte d’utilisateur ou de service,** entrez **ADFS-Service,** sélectionnez **Vérifier** les noms, puis **sélectionnez OK**.
     
 9. Dans **mot de passe** du compte, entrez le mot de passe du ADFS-Service, puis sélectionnez **Suivant**.
     
@@ -277,9 +277,9 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
   
 1. Sélectionnez **Démarrer,** **entrezmmc.exe,** puis appuyez sur **Entrée.**
     
-2. Sélectionnez **fichier > ajouter/supprimer Ancrer-in**.
+2. Select **File > Add/Remove Snap-in**.
     
-3. Dans **Ajouter ou supprimer Ancrer, double-cliquez** sur **Certificats** dans la liste des logiciels en snap-in disponibles, sélectionnez Compte d’ordinateur, puis sélectionnez **Suivant**.
+3. Dans **Ajouter ou supprimer des snap-ins,** double-cliquez sur **Certificats** dans la liste des logiciels en snap-in disponibles, sélectionnez Compte d’ordinateur, puis sélectionnez **Suivant**.
     
 4. Dans **Sélectionner un ordinateur,** **sélectionnez Terminer,** puis **sélectionnez OK.**
     
@@ -305,7 +305,7 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
     
 15. Sélectionnez et maintenez (ou cliquez avec le bouton droit) le certificat, puis sélectionnez **Copier**.
     
-16. Dans le volet d’arborescence, **ouvrez Certificats autorités** de certification  >  **racines de confiance.**
+16. Dans le volet d’arborescence, **ouvrez Certificats autorités de certification**  >  **racines de confiance.**
     
 17. Déplacez votre pointeur de souris sous la liste des certificats installés, sélectionnez et maintenez le curseur (ou cliquez avec le bouton droit), puis sélectionnez **Coller**.
     
@@ -355,7 +355,7 @@ Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Microso
     
 3. Dans la page **Tâches supplémentaires,** sélectionnez Modifier la **connectez-vous** de l’utilisateur, puis sélectionnez **Suivant**.
     
-4. Dans la page **Connecter azure AD,** entrez le nom et le mot de passe de votre compte d’administrateur général, puis sélectionnez **Suivant.**
+4. Dans la page Connecter azure **AD,** entrez le nom et le mot de passe de votre compte d’administrateur général, puis sélectionnez **Suivant.**
     
 5. Dans la page De la page De la **connectez-vous** de l’utilisateur, sélectionnez Fédération avec **AD FS,** puis sélectionnez **Suivant**.
     
@@ -387,7 +387,7 @@ Pour vérifier que l’authentification fédérée fonctionne, procédez comme s
     
     Une page **Votre connexion n’est pas privée** devrait s’afficher. Vous voyez cela, car vous avez installé un certificat auto-signé sur ADFS1 que votre ordinateur de bureau ne peut pas valider. Dans un déploiement de production d’authentification fédérée, vous utiliseriez un certificat provenant d’une autorité de certification approuvée et vos utilisateurs ne verraient pas cette page.
     
-3. Sur la page **Votre connexion n’est pas** privée, sélectionnez **Avancé,** puis **Sélectionnez Continuer à \<*your federation service FQDN*>**. 
+3. Sur la **page Votre connexion n’est pas** privée, sélectionnez **Avancé,** puis Continuer **à \<*your federation service FQDN*>**. 
     
 4. Sur la page contenant le nom de votre organisation fictive, connectez-vous avec les éléments suivants :
     

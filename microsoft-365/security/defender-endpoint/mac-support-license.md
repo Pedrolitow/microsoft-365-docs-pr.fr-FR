@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes de licence pour Microsoft Defender pour endpoint sur Mac
+title: Résoudre les problèmes de licence pour Microsoft Defender pour point de terminaison sur Mac
 description: Résolution des problèmes de licence dans Microsoft Defender pour point de terminaison sur Mac.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, performances
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3110072cbb3a6d858aab6407ffecd74777d453a4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 215c652520dd7267ec38e1eabc79f4268b3fcc1c0b85c19a7555816ed6eb80c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652938"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839605"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de licence pour Microsoft Defender pour le point de terminaison sur macOS
 

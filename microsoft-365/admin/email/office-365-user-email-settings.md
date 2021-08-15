@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Cet article vous offre des informations sur la gestion des paramètres pour vos utilisateurs.
-ms.openlocfilehash: db7a7f01fdd5a6bd657bb04f9aaf4491959e0558
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5b1d47004a5721a58c37c77298b2db352e5824e50985cfd992fc7c51dd2daffe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825906"
 ---
 # <a name="user-email-settings"></a>Paramètres de messagerie de l'utilisateur
 

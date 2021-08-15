@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer une équipe à l’échelle de l’organisation dans Microsoft Teams.
-ms.openlocfilehash: fa24457bbe34136c793fd0e7a5856ba57e345ca1
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9621a737572eb28f942efc30c3da00bd9faa82c02e7f290d2bc4a9de8f4c1ee4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580533"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882432"
 ---
 # <a name="create-an-org-wide-team"></a>Créer une équipe à l’échelle de l’organisation dans Teams
 

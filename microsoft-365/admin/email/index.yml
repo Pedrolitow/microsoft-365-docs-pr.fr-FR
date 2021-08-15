@@ -11,12 +11,12 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: f274480d80f97319df8110571c11552bcb7d3639
-  ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+  ms.openlocfilehash: 54e6e0dbf48a826bdc51f7c2c945242c4cddc6c8e47748d73448e64a080b56f7
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/02/2021
-  ms.locfileid: "51579325"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53825990"
 landingContent:
 - title: Gérer la messagerie
   linkLists:
@@ -36,7 +36,7 @@ landingContent:
       url: configure-email-forwarding.md
     - text: Utiliser des groupes de sécurité
       url: create-edit-or-delete-a-security-group.md
-    - text: Migrer le courrier électronique et les contacts vers Microsoft 365
+    - text: Migrer le courrier électronique et les contacts vers Microsoft 365
       url: ../setup/migrate-email-and-contacts-admin.md
 - title: Gérer les boîtes aux lettres partagées
   linkLists:
@@ -70,5 +70,5 @@ landingContent:
       url: ../get-help-with-domains/find-and-fix-issues.md
     - text: Récupérer des éléments supprimés dans la boîte aux lettres d’un utilisateur
       url: /Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages
-    - text: Résoudre les problèmes de connexion à Outlook dans Microsoft 365 et Exchange Online
+    - text: Résoudre les problèmes de connexion à Outlook dans Microsoft 365 et Exchange Online
       url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

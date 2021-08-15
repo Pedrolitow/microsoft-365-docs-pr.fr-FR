@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer une adresse de messagerie de groupe.
-ms.openlocfilehash: 0854c41a4af52649c09fc8e5e3d121282e615d8e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9dd9b6fb64de02b2e7063266cee9afd6e9dcc277fc43f903d58d3dce693c1eab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580581"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882420"
 ---
 # <a name="create-a-group-email-address"></a>Créer une adresse e-mail de groupe
 
@@ -35,7 +35,7 @@ Lorsque vous créez un groupe, vous créez une adresse de messagerie centrale et
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans Outlook, sous **l’onglet Accueil,** choisissez **Nouveau groupe.**
+1. In Outlook, on the **Home** tab, choose **New Group**.
 2. Dans la  **zone Créer un**  groupe, entrez un nom de groupe, une adresse de messagerie plus courte comme des informations et une description.
 3. Ouvrez la baisse de confidentialité et choisissez  **Privé**.
 4. Cochez la case Envoyer  **tous les e-mails et événements**  de groupe dans les boîtes de réception des membres.

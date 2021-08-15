@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Cet article fournit des listes de contrôle et d’autres ressources à planifier pour Microsoft 365 Entreprise déploiement.
-ms.openlocfilehash: d31f97ecc13d78ae3e5786cc86f4d8cf44be45b1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb3a62dd1751c51530bec1927e101c0dc5fd35bcf05ce8d7ac62d9fa5809909b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690151"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870718"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Planifier les Microsoft 365 Entreprise
 
@@ -35,17 +35,17 @@ Lorsque vous déplacez une organisation vers Microsoft 365, il est important de 
 
 ## <a name="planning-with-microsoft-365-fasttrack"></a>Planification avec Microsoft 365 FastTrack
 
-[FastTrack pour Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) est la meilleure méthode pour obtenir de l’aide de Microsoft pour la planification de Microsoft 365 déploiement. FastTrack peut vous aider à répondre aux questions les plus courantes en cours de conception. 
+[FastTrack pour Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) est la meilleure méthode pour obtenir de l’aide de Microsoft pour la planification de votre déploiement Microsoft 365 déploiement. FastTrack peut vous aider à répondre aux questions les plus courantes en cours de conception. 
 
 >[!Note]
->Vous pouvez également obtenir de l’aide [d’un partenaire Microsoft.](https://www.microsoft.com/solution-providers/home)
+>Vous pouvez également obtenir de l’aide d’un [partenaire Microsoft.](https://www.microsoft.com/solution-providers/home)
 >
 
 ## <a name="do-it-yourself-planning-for-microsoft-365"></a>Planification du do-it-yourself pour Microsoft 365
 
 Pour planifier les Microsoft 365 vous-même, avancez pas à pas dans les décisions de planification et de conception pour ces domaines :
 
-- Votre client Microsoft 365
+- Votre client Microsoft 365
 
   Inclut la planification de vos connexions réseau à Internet, vos identités Microsoft 365 et l’intégration aux applications, locales, Azure et autres éléments. Pour plus [d’informations, voir Abonnements, licences, comptes](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) et clients pour les offres cloud de Microsoft.
 
@@ -59,6 +59,6 @@ Pour planifier les Microsoft 365 vous-même, avancez pas à pas dans les décisi
 
 - Clients et serveurs Office serveurs plus anciens
 
-  Inclut des informations de migration Office 2007 et Office 2010 clients et serveurs. Pour plus [d’informations, voir Planifier](plan-upgrade-previous-versions-office.md) votre mise à niveau.
+  Inclut des informations de migration Office 2007 et Office produits client et serveur 2010. Pour plus [d’informations, voir Planifier](plan-upgrade-previous-versions-office.md) votre mise à niveau.
 
 Vous pouvez également vous inscrire à votre abonnement Microsoft 365 et utiliser les guides d’installation pour Microsoft 365 [et Office 365 services.](setup-guides-for-microsoft-365.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c106e76486854817c87f290f060999020beae5fd
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c824afa68b42639a82d46d70f13f4a70b266a0492f1d41ebf463cb7975bff7f7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655454"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829866"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Recherche proactive des menaces avec le chasse avancée
 

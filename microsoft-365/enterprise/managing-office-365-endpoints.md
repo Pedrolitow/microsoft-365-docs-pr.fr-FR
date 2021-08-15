@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Découvrez comment gérer les points Office 365 afin qu’ils fonctionnent avec l’architecture réseau de votre organisation d’entreprise.
-ms.openlocfilehash: fa727c5c80521b6ff67c50d202d0c11c643b021e
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 4c6f291627fc3b0b24f53ef3dd11698dba7d1fa4958886dd8f70ce7f34ccb9e2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925862"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870560"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -73,7 +73,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 Il existe de nombreux paramètres que vous pouvez transmettre au script :
 
-| Paramètre | Description |
+| Parameter | Description |
 |:-----|:-----|
 |**ClientRequestId** <br/> |Ceci est requis et il s’agit d’un GUID transmis au service Web qui représente l’ordinateur client à l’origine de l’appel. <br/> |
 |**Instance** <br/> |L Office 365 de service, qui est par défaut dans le monde entier. Il est également transmis au service web. <br/> |
@@ -216,7 +216,7 @@ N’oubliez pas que le blocage de l’accès aux services grand public de Micros
 
 Office 365 ne fournit aucune adresse IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut qui sont requises doivent être autorisées via un serveur proxy. Si vous n’avez pas de serveur proxy, regardez comment vous avez configuré les demandes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web ; l’utilisateur ne fournit pas non plus d’adresse IP. Les Office 365 url de catégorie par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même manière.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Service web d’URL et d’adresses IP Office 365](microsoft-365-ip-web-service.md)
 

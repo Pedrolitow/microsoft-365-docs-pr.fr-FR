@@ -25,12 +25,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment Microsoft 365 fonctionnalités d’authentification moderne fonctionnent différemment pour Office applications clientes 2013 et 2016.
-ms.openlocfilehash: 60b1729d9830fd12141d162c4fe721267e52d437
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: a115eec0781645c87bd799d15d4966133b4fd9de40993858912fda71cc5ab485
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229838"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870522"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Fonctionnement de l’authentification moderne Office 2013, Office 2016 et Office applications clientes 2019
 
@@ -62,8 +62,8 @@ Pour activer l'authentification moderne pour les appareils exécutant Windows (p
 
 |**Clé de Registre**|**Type**|**Valeur** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
 
 Lisez [comment utiliser l’authentification moderne (ADAL) avec Skype Entreprise](./hybrid-modern-auth-overview.md) pour en savoir plus sur son fonctionnement avec Skype Entreprise.
 
