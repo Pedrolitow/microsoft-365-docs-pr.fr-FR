@@ -1,7 +1,7 @@
 ---
 title: Afficher et organiser la liste des appareils Microsoft Defender pour les points de terminaison
-description: Découvrez les fonctionnalités disponibles que vous pouvez utiliser dans la liste Appareils, telles que le tri, le filtrage et l’exportation de la liste pour améliorer les examens.
-keywords: trier, filtrer, exporter, csv, nom de l’appareil, domaine, dernière vue, IP interne, état d’état, alertes actives, détections de programmes malveillants actifs, catégorie de menace, passer en revue les alertes, réseau, connexion, programme malveillant, type, programme malveillant, programme malveillant, ransomware, attaque, menace, programme malveillant général, logiciel indésirable
+description: Découvrez les fonctionnalités disponibles que vous pouvez utiliser dans la liste Appareils, telles que le tri, le filtrage et l’exportation de la liste pour améliorer les investigations.
+keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 88219c7a2bd8b5170df11d5b0853a3e16c3f2463
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4cf27d7d65df613969f46f05c6b5085a448675f2cae3a325f4308d9f72ba8c4c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53868006"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Afficher et organiser la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -67,7 +67,7 @@ Le niveau d’exposition reflète l’exposition actuelle de l’appareil en fon
 Si le niveau d’exposition indique « Aucune donnée disponible », il existe plusieurs raisons pour lesquelles cela peut être le cas :
 
 - L’appareil a cessé de signaler pendant plus de 30 jours. Dans ce cas, il est considéré comme inactif et l’exposition n’est pas calculée
-- Le système d’exploitation de l’appareil n’est [pas pris en charge : voir les conditions minimales requises pour Microsoft Defender pour endpoint](minimum-requirements.md)
+- Le système d’exploitation de l’appareil n’est [pas pris en charge : voir la conditions minimales requises pour Microsoft Defender pour endpoint](minimum-requirements.md)
 - Appareil avec agent obsolète (très peu probable)
 
 ### <a name="os-platform"></a>Plateforme du système d’exploitation
@@ -110,6 +110,6 @@ Sélectionnez uniquement les Windows 10 versions que vous souhaitez examiner.
 
 Filtrez la liste en fonction du regroupement et du marquage que vous avez ajoutés à des appareils individuels. Voir [Créer et gérer des balises d’appareil](machine-tags.md) et créer et gérer des groupes [d’appareils.](machine-groups.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison](investigate-machines.md)

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article explique comment supprimer ou désactiver l’authentification moderne hybride de Skype Entreprise et Exchange.
-ms.openlocfilehash: 9442ef3e19d0835bfd59f27ec425e36fd7dfcf7a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dd663c1178f2f7008917f944c6e641a696c81bdb0c9ce8d325267d861910f4c5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927287"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904658"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Suppression ou désactivation de l’authentification moderne hybride à partir de Skype Entreprise et Exchange
 
@@ -67,4 +67,4 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed
 ```
 
-[Revenir à la vue d’ensemble de l’authentification moderne.](hybrid-modern-auth-overview.md) 
+[Lien vers la vue d’ensemble de l’authentification moderne.](hybrid-modern-auth-overview.md) 

@@ -13,16 +13,16 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: c2036d719cc66e12ed1009a14e972c4d68dc4eaa
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: f514618f916ee94243e2e3ccbb19fcf61cc9cf0b745bdcd3acadc223966b818d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53338636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856919"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Illustrations du cloud Microsoft pour les architectes informatiques
 
-Ces affiches sur l’architecture cloud vous donnent des informations sur les services cloud de Microsoft, notamment Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 et les solutions hybrides locales et cloud. 
+Ces affiches d’architecture cloud vous donnent des informations sur les services cloud de Microsoft, notamment Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365, ainsi que les solutions hybrides locales et cloud. 
 
 Les décideurs informatiques et les architectes peuvent utiliser ces ressources pour déterminer les solutions idéales pour leurs charges de travail et prendre des décisions sur les composants d’infrastructure principaux tels que la mise en réseau, l’identité et la sécurité.
 

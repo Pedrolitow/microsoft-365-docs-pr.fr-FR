@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: fc69992139235dd0e99a0c22e92f87c8447dab43
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: acb2c0cc3b75ac5491f2653c60e1e9d9bab7b22292caaeb698b1c9eed70df85c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655898"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884807"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des enquêtes automatisées
 
@@ -54,7 +54,7 @@ Une enquête automatisée peut commencer lorsqu’une alerte est déclenchée ou
 
 |Situation|Action exécutée|
 |---|---|
-|Une alerte est déclenchée|En règle générale, une enquête automatisée démarre [lorsqu’une](review-alerts.md) alerte est déclenchée et qu’un [incident](view-incidents-queue.md) est créé. Par exemple, supposons qu’un fichier malveillant réside sur un appareil. Lorsque ce fichier est détecté, une alerte est déclenchée et un incident est créé. Un processus d’examen automatisé commence sur l’appareil. Comme d’autres alertes sont générées en raison du même fichier sur d’autres appareils, elles sont ajoutées à l’incident associé et à l’examen automatisé.|
+|Une alerte est déclenchée|En règle générale, un examen automatisé démarre [lorsqu’une](review-alerts.md) alerte est déclenchée et qu’un [incident](view-incidents-queue.md) est créé. Par exemple, supposons qu’un fichier malveillant réside sur un appareil. Lorsque ce fichier est détecté, une alerte est déclenchée et un incident est créé. Un processus d’examen automatisé commence sur l’appareil. Comme d’autres alertes sont générées en raison du même fichier sur d’autres appareils, elles sont ajoutées à l’incident associé et à l’examen automatisé.|
 |Une enquête est démarrée manuellement|Une enquête automatisée peut être lancée manuellement par votre équipe des opérations de sécurité. Par exemple, supposons qu’un opérateur de sécurité examine une liste d’appareils et remarque qu’un appareil présente un niveau de risque élevé. L’opérateur de sécurité peut sélectionner l’appareil dans la liste pour ouvrir son volant, puis sélectionner **Lancer une enquête automatisée.**|
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>Comment un examen automatisé étend son étendue
@@ -63,7 +63,7 @@ Pendant l’exécution d’un examen, toutes les autres alertes générées à p
 
 Si une entité incriminée est vue dans un autre appareil, le processus d’examen automatisé étend son étendue pour inclure cet appareil, et un manuel de sécurité général démarre sur cet appareil. Si au moins 10 appareils sont trouvés au cours de ce processus d’expansion à partir de la même entité, cette action d’expansion nécessite une approbation et est visible sous l’onglet **Actions** en attente.
 
-## <a name="how-threats-are-remediated"></a>Comment les menaces sont-elles corrigés ?
+## <a name="how-threats-are-remediated"></a>Comment les menaces sont corrigés
 
 Lorsque des alertes sont déclenchées et qu’une enquête automatisée s’exécute, un verdict est généré pour chaque élément de preuve examiné. Les verdicts peuvent être :
 
@@ -86,7 +86,7 @@ Votre organisation doit avoir Defender pour le point de terminaison (voir [Minim
 
 Actuellement, AIR prend uniquement en charge les versions de système d’exploitation suivantes :
 
-- Windows Server 2019
+- Windows Server 2019
 - Windows 10, version 1709 (os Build 16299.1085 avec [KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)ou version ultérieure
 - Windows 10, version 1803 (os Build 17134.704 avec [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)ou version ultérieure
 - Windows 10, version [1803 ou](/windows/release-information/status-windows-10-1809-and-windows-server-2019) ultérieure

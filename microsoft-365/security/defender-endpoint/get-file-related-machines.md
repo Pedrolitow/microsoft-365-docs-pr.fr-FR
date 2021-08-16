@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les ordinateurs liés aux fichiers
-description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés à un fichier pour obtenir une collection d’ordinateurs liés à un hachage de fichier dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés à un fichier pour obtenir une collection d’ordinateurs liés à un hachage de fichier dans Microsoft Defender for Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, appareils, hachage
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 432f8e640d8bbc0f2464af2c2476c57bcd9539f38c23ae2c91b864afd585e6f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 722c4a28ab477b34fc3e52cb3eb3efddf319d0d8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890490"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246232"
 ---
 # <a name="get-file-related-machines-api"></a>API Obtenir les ordinateurs liés aux fichiers
 
@@ -44,6 +44,7 @@ Récupère une collection [d’ordinateurs liés](machine.md) à un hachage de f
 ## <a name="limitations"></a>Limites
 
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+2. Seule la fonction de hachage SHA-1 est prise en charge (et non MD5 ou SHA-256).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -72,7 +73,8 @@ GET /api/files/{id}/machines
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -80,7 +82,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si le fichier existe : 200 - OK avec la liste des entités de [l’ordinateur](machine.md) dans le corps. Si le fichier n’existe pas - 404 - In trouvé.
+En cas de réussite et si le fichier existe : 200 - OK avec la liste des entités de [l’ordinateur](machine.md) dans le corps. Si le fichier n’existe pas : 200 - OK avec un jeu vide.
 
 ## <a name="example"></a>Exemple
 

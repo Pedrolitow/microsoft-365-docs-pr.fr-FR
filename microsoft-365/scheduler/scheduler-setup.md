@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Configuration du Scheduler pour Microsoft 365.
-ms.openlocfilehash: 924b25e3d921f402c97632f7475ed5beea98d5c7
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 36d273dc75dbb2ff208c4f5036915b1b241de0b743f8ca6c95498a110daf8334
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884918"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Configuration du Planificateur pour Microsoft 365
 
@@ -23,12 +23,12 @@ Pour configurer le Scheduler pour Microsoft 365, voici les conditions préalable
 | De quoi ai-je besoin ? | Description |
 |-------------------|-------------|
 |Cortana boîte aux lettres |Les administrateurs client doivent définir une boîte aux lettres pour qu’elle serve de boîte aux lettres « Cortana » (c’est-à-dire, cortana@yourdomain.com).         |
-|Boîte aux lettres Exchange Online |Les utilisateurs doivent avoir un Exchange Online et un calendrier         |
+|Boîte aux lettres Exchange Online |Les utilisateurs doivent avoir un Exchange Online et le calendrier         |
 |Licence du scheduleur |Pour plus d’informations sur les licences et les tarifs, voir [Scheduler for Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/meeting-scheduler-pricing).        |
 
 ## <a name="create-a-mailbox-for-cortana"></a>Créer une boîte aux lettres pour Cortana
 
-Une Exchange dans votre client agit comme la boîte aux lettres Cortana pour que votre client envoie et reçoit des courriers électroniques vers et depuis Cortana. Tous les messages électroniques envoyés Cortana sont conservés dans la boîte aux lettres Cortana de votre client en fonction de votre stratégie de rétention.
+Une Exchange dans votre client agit comme la boîte aux lettres Cortana pour que votre client envoie et reçoit des messages électroniques vers et depuis Cortana. Tous les e-mails envoyés Cortana sont conservés dans la boîte aux lettres Cortana de votre client en fonction de votre stratégie de rétention.
 
 - Utilisez le Centre d’administration Microsoft 365 pour créer une boîte aux lettres utilisateur. Une stratégie de rétention de 30 jours est recommandée. 
 - Utilisez le nom Cortana dans l’adresse SMTP principale de votre boîte aux lettres. Noms tels que « Cortana@yourdomain.com », « CortanaScheduler@contoso.com » ou « Cortana ». Scheduler@yourdomain.com' sont recommandés.
@@ -62,7 +62,7 @@ Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 > La mise en service complète de la boîte aux lettres scheduler peut prendre jusqu’à deux heures pour définir la fonctionnalité SchedulerAssistant.
 
 ## <a name="exchange-online-mailbox"></a>Boîte aux lettres Exchange Online
-Une licence De planification est un module Microsoft 365, qui permet à l’organisateur de la réunion de déléguer ses tâches de planification de réunion à son Assistant Planification. Pour que le Scheduler fonctionne, généralement par le biais Microsoft 365 licence, les organisateurs de réunions nécessitent les composants suivants :
+Une licence De planification est un module Microsoft 365, qui permet à l’organisateur de la réunion de déléguer ses tâches de planification de réunion à son Assistant Planification. Pour que le Scheduler fonctionne, généralement par le biais Microsoft 365 licence, les organisateurs de réunion nécessitent les composants suivants :
 
 - Boîte aux lettres désignée comme boîte aux lettres de l’Assistant Planification
 - Licence du scheduleur
@@ -85,7 +85,7 @@ Une licence de scheduler nécessite l’une des licences suivantes :
 > Le programme de planification Microsoft 365 est disponible dans les environnements internationaux multi-clients en anglais uniquement. **Le programme d’Microsoft 365** n’est pas disponible pour les utilisateurs des :
 
 - Microsoft 365 géré par 21Vianet en Chine
-- Microsoft 365 cloud allemand qui utilise le trustee de données German Telekom
+- Microsoft 365 cloud allemand qui utilise le conseiller en données German Telekom
 - Cloud pour le secteur public, Cloud de la communauté du secteur public, Consommateur, Cloud de la communauté du secteur public Élevé ou DoD
 
-Le programme de planification prend en charge les utilisateurs situés en Allemagne dont l’emplacement des données ne se trouve pas dans le centre de données allemand.
+Le programme de planification prend en charge les utilisateurs situés en Allemagne dont l’emplacement des données n’est pas dans le centre de données allemand.

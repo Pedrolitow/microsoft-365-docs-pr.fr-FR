@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3c49575e7a1d88c15907fdd7c118b71071949b23
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 6286df3fa7b099df9cbe3f910434e0da99f521607148d872ed13e6b97a5d26a6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622843"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867990"
 ---
 # <a name="threat-protection"></a>Protection contre les menaces
 
@@ -83,7 +83,7 @@ Pour renforcer davantage le périmètre de sécurité de votre réseau, Microsof
 - [Surveillance du comportement](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 - [Protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
 - [Apprentissage automatique](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [URL Protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+- [Protection d’URL](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
 - [Service bac à sable automatisé](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
@@ -112,7 +112,7 @@ En plus de répondre rapidement aux attaques avancées, Microsoft Defender pour 
 <a name="mte"></a>
 
 **[Spécialistes des menaces Microsoft](microsoft-threat-experts.md)**<br>
-Le nouveau service de recherche contre les menaces gérées de Microsoft Defender pour point de terminaison fournit une recherche proactive, la hiér donc, ainsi que des informations et un contexte supplémentaires. Spécialistes des menaces Microsoft permet aux centres d’opérations de sécurité (SOC) d’identifier les menaces et de répondre rapidement et avec précision aux menaces.
+Le nouveau service de recherche contre les menaces gérées de Microsoft Defender pour point de terminaison fournit une recherche proactive, la hiér donc, ainsi que des informations et un contexte supplémentaires. Spécialistes des menaces Microsoft permet aux centres d’opérations de sécurité (SOC) d’identifier les menaces et d’y répondre rapidement et avec précision.
 
 - [Notification d’attaque ciblée](microsoft-threat-experts.md)
 - [Experts à la demande](microsoft-threat-experts.md)
@@ -130,7 +130,7 @@ Intégrez Microsoft Defender pour point de terminaison à vos flux de travail ex
 
 <a name="integration"></a>
 **[Intégration aux solutions Microsoft](threat-protection-integration.md)** <br>
- Microsoft Defender pour le point de terminaison s’intègre directement à différentes solutions Microsoft, notamment :
+ Microsoft Defender pour point de terminaison s’intègre directement à différentes solutions Microsoft, notamment :
 - Intune
 - Microsoft Defender pour Office 365
 - Microsoft Defender pour l’identité

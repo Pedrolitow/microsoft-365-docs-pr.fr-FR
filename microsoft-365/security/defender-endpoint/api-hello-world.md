@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f1ebb1d476f58109a32e367581f764774b894670
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 5081822d31d3e127dbe6511719afdaddd6f6b4fdf078bf5c6e09aee4caff725e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884934"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API Microsoft Defender pour point de terminaison - Hello World
 
@@ -66,11 +66,11 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
    - **Remarque**: WindowsDefenderATP n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
 
-   ![Image de l’accès à l’API et de la sélection d’API1](images/add-permission.png)
+   ![Image de l’accès à l’API et de la sélection de l’API1](images/add-permission.png)
 
    - Choose **Application permissions**  >  **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image de l’accès à l’API et de la sélection de l’API2](images/application-permissions.png)
+   ![Image de l’accès à l’API et sélection de l’API2](images/application-permissions.png)
 
    **Remarque importante**: vous devez sélectionner les autorisations pertinentes. « Lire toutes les alertes » n’est qu’un exemple !
 
@@ -86,7 +86,7 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
    ![Image de l’octroi d’autorisations](images/grant-consent.png)
 
-6. Ajoutez une secret à l’application.
+6. Ajoutez un secret à l’application.
 
    - Cliquez **sur Certificats & secrets,** ajoutez une description à la secret, puis cliquez sur **Ajouter**.
 
@@ -100,7 +100,7 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
    ![Image de l’ID d’application créé](images/app-and-tenant-ids.png)
 
-Terminé ! Vous avez réussi à inscrire une application !
+Terminé ! Vous avez réussi à inscrire une application !
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>Étape 2 : obtenir un jeton à l’aide de l’application et utiliser ce jeton pour accéder à l’API.
 

@@ -1,5 +1,5 @@
 ---
-title: Passer en revue les exigences en matière d’architecture et les concepts de planification de Microsoft Defender pour les Office 365, la construction, la création et la conception
+title: Passer en revue les exigences en matière d’architecture et les concepts de planification de Microsoft Defender pour Office 365
 description: Le diagramme technique de Microsoft Defender pour Office 365 dans Microsoft 365 Defender vous aidera à comprendre l’identité dans Microsoft 365 avant de créer votre laboratoire d’essai ou votre environnement pilote.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 15c84921dcfb4644241cf83ce4ffb6403180b9d4
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 2a62756522ad82d04c72995508ca8ada1e575f94c9bc9940069d59057f7de63f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458279"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897678"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Passer en revue Microsoft Defender pour les exigences Office 365'architecture et les concepts clés
 
@@ -40,7 +40,7 @@ Avant d’activer Defender pour Office 365, veillez à bien comprendre l’archi
 
 ## <a name="understand-the-architecture"></a>Comprendre l’architecture
 
-Le diagramme suivant illustre l’architecture de base de Microsoft Defender pour Office qui peut inclure une passerelle SMTP tierce ou une intégration locale. Les scénarios de coexistence hybride (c’est-à-dire que les boîtes aux lettres de production sont à la fois locales et en ligne) nécessitent des configurations plus complexes et ne sont pas abordés dans cet article ou dans les instructions d’évaluation.
+Le diagramme suivant illustre l’architecture de base de Microsoft Defender pour Office qui peut inclure une passerelle SMTP tierce ou une intégration locale. Les scénarios de coexistence hybride (par exemple, les boîtes aux lettres de production sont à la fois locales et en ligne) nécessitent des configurations plus complexes et ne sont pas abordés dans cet article ou dans les instructions d’évaluation.
 
 ![Architecture de Microsoft Defender pour Office 365](../../media/defender/m365-defender-office-architecture.png)
 
@@ -50,7 +50,7 @@ Le tableau suivant décrit cette illustration.
 |---------|---------|
 |1     | Le serveur hôte de l’expéditeur externe effectue généralement une recherche DNS publique pour un enregistrement MX qui fournit le serveur cible pour relayer le message.  Cette référence peut être Exchange Online (EXO) directement ou une passerelle SMTP qui a été configurée pour être relayée par rapport à EXO.  |
 |2     | Exchange Online Protection négocier et valider la connexion entrante et inspecte les en-têtes et le contenu du message pour déterminer les stratégies, balises ou traitements supplémentaires requis.  |
-|3     | Exchange Online s’intègre à Microsoft Defender pour Office 365 offrir une protection, une atténuation et une correction des menaces plus avancées. |
+|3     | Exchange Online s’intègre à Microsoft Defender pour Office 365 offrir une protection, une atténuation et une correction plus avancées contre les menaces. |
 |4      | Un message qui n’est pas malveillant, bloqué ou mis en quarantaine est traitée et envoyée au destinataire dans EXO, où les préférences de l’utilisateur relatives au courrier indésirable, aux règles de boîte aux lettres ou à d’autres paramètres sont évaluées et déclenchées. |
 |5      | L’intégration avec Active Directory local peut être activée à l’aide d’Azure AD Connecter pour synchroniser et mettre en service des objets et des comptes à messagerie dans Azure Active Directory et, en fin de compte, Exchange Online. |
 |6      | Lors de l’intégration d’un environnement local, il est vivement recommandé d’utiliser un serveur Exchange pour la gestion et l’administration des attributs, paramètres et configurations liés à la messagerie pris en charge |
@@ -70,14 +70,14 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 |Protection anti-courrier indésirable     |   Les organisations avec des boîtes aux lettres dans EXO sont automatiquement protégées contre les stratégies de courrier indésirable et de courrier indésirable.      |  [Protection contre le courrier indésirable dans EOP](../office-365-security/anti-spam-protection.md)       |
 |Protection anti-hameçonnage |  MDO offre une protection anti-hameçonnage plus avancée liée au harponnage, à la whaling, aux ransomware et à d’autres activités malveillantes.   | [Protection supplémentaire contre les attaques par phishing dans Microsoft Defender pour Office 365](../office-365-security/anti-phishing-protection.md)   |
 |Protection contre l’usurpation d’identité     |   EOP inclut des fonctionnalités pour protéger votre organisation contre les expéditeurs falsifiés (falsifiés).      |   [Protection contre l’usurpation d’identité dans EOP](../office-365-security/anti-spoofing-protection.md)      |
-|Pièces jointes fiables     |   Coffre Les pièces jointes fournissent une couche de protection supplémentaire à l’aide d’un environnement virtuel pour vérifier et « désaérer » les pièces jointes dans les messages électroniques avant leur livraison.      |   [Coffre Pièces jointes dans Microsoft Defender pour Office 365](../office-365-security/safe-attachments.md)      |
+|Pièces jointes fiables     |   Coffre Les pièces jointes fournissent une couche supplémentaire de protection à l’aide d’un environnement virtuel pour vérifier et « désaérer » les pièces jointes dans les messages électroniques avant leur livraison.      |   [Coffre Pièces jointes dans Microsoft Defender pour Office 365](../office-365-security/safe-attachments.md)      |
 |Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams     |    En outre, Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams offre une couche de protection supplémentaire pour les fichiers qui ont été téléchargés vers des référentiels de stockage cloud.     |  [Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
 |Liens sûrs     | Coffre Les liens sont une fonctionnalité qui fournit l’analyse et la réécriture d’URL dans les messages électroniques entrants et permet de vérifier ces liens avant leur livraison ou leur clic.        |   [Coffre Liens dans Microsoft Defender pour Office 365](../office-365-security/safe-links.md)      |
 |    |         |         |
 
 Pour plus d’informations sur les fonctionnalités incluses dans Microsoft Defender pour Office, consultez Microsoft Defender pour obtenir [la description Office 365 service.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-## <a name="review-architecture-requirements"></a>Examiner les exigences en matière d’architecture
+## <a name="review-architecture-requirements"></a>Passer en revue les exigences en matière d’architecture
 Une évaluation MDO réussie ou un projet pilote de production suppose les conditions préalables suivantes :
 - Toutes vos boîtes aux lettres de destinataire sont actuellement en Exchange Online.
 - Votre enregistrement MX public est résolu directement dans EOP ou une passerelle SMTP tierce qui relaie ensuite le courrier électronique externe entrant directement vers EOP.

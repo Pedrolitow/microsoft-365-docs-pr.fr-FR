@@ -1,6 +1,6 @@
 - name: Documentation de base de test
   href: index.yml
-- name: Présentation
+- name: Vue d’ensemble
   items:
     - name: Qu’est-ce que la base de test ?
       href: overview.md

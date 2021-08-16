@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 333e69c910e5800332261f9a7a2e23983f2615d7bac13f2139604747874b40b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867942"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>Configurer les Centre de sécurité Microsoft Defender de configuration
 
@@ -43,5 +43,5 @@ Paramètres généraux | Modifiez vos paramètres généraux précédemment déf
 Autorisations | Gérer l’accès au portail à l’aide de RBAC ainsi que des groupes d’appareils.
 API | Activez l’intégration intel contre les menaces et SIEM.
 Rules | Configurez les règles de suppression et les paramètres d’automatisation.
-Gestion des appareils | Appareils intégrés et hors intégration.
+Gestion des appareils | Appareils intégrés et hors-carte.
 Évaluations réseau | Choisissez les appareils à scanner régulièrement et ajoutés à l’inventaire des appareils.

@@ -13,21 +13,21 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Les clients Office 365 existants doivent envoyer une demande avant la date d’échéance pour que leurs données de services Microsoft 365 sont déplacées vers leur nouvelle région.
+description: Les Office 365 existants doivent envoyer une demande avant la date d’échéance pour que leurs données de services Microsoft 365 sont déplacées vers leur nouvelle région.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4421b034c31adc3e8b0b017067b12086d364564
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: dbd1984520019296026bc5f57328a20837591c27830f4fe9b32fc425123b6550
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904638"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
 > [!NOTE]
 > Les informations de cette page s’appliquent uniquement aux clients qui avaient des clients Microsoft 365 existants avant l’ouverture des nouveaux centres de données dans leur centre de données géographique. L’éligibilité à la migration dépend également de la date de mise en service du service spécifique.  La date de création du client n’est peut-être pas toujours la date unique qui compte.
   
-Les clients Microsoft 365 éligibles peuvent demander la migration des données client essentielles de leur organisation au repos.  Le programme prend en charge les demandes pour chaque pays au cours de la période décrite dans le tableau et des clients avec un pays d’inscription éligible associé à Microsoft 365 client.
+Les clients Microsoft 365 éligibles peuvent demander la migration des données client essentielles de leur organisation au repos.  Le programme prend en charge les demandes pour chaque pays au cours de la période décrite dans le tableau et des clients ayant un pays d’inscription éligible associé à Microsoft 365 client.
   
 ## <a name="when-can-i-request-a-move"></a>Quand puis-je demander un déplacement ?
 
@@ -49,9 +49,9 @@ Les clients Microsoft 365 éligibles peuvent demander la migration des données 
 
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
-Les clients éligibles voient une page dans le Centre d’administration Microsoft 365, qui leur permet de demander que leurs données client essentielles sont déplacées vers leur nouvelle région de centres de données.  
+Les clients éligibles voient une page dans le Centre d’administration Microsoft 365, qui leur permet de demander le déplacer vers leur nouvelle région de centres de données.  
   
-Pour accéder à la page du Centre d’administration Microsoft 365, dans le volet de navigation de gauche, développez **Paramètres,** puis cliquez sur Org **Paramètres**.
+Pour accéder à la page dans le Centre d’administration Microsoft 365, dans le volet de navigation sur la gauche, développez **Paramètres,** puis cliquez sur **Org Paramètres**.
 Sélectionnez le profil **d’organisation de** l’onglet, puis sélectionnez l’option **Résidence des données.**
   
 Vous ne verrez pas cette section si votre client n’est pas éligible au Microsoft 365 move program.  Si votre organisation a des exigences en matière de résidence des données et que vous devez demander la migration, cochez la case, puis **enregistrez.**
@@ -70,7 +70,7 @@ Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'éch�
 
 Depuis janvier 2020, les clients des pays Office 365 éligibles peuvent opter pour la migration de Microsoft Teams de service de conversation.  Les clients qui ont précédemment choisi un déplacement Data Residency de données Teams déplacer vers leur région de centre de données locale.  Aucune action supplémentaire n’est requise par ces clients.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Déplacement de données principales vers de nouvelles Office 365 de centres de données](moving-data-to-new-datacenter-geos.md)
 

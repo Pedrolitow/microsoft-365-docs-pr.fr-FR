@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 23d099d01791fcdd5f5265c8683d6faca9fb857d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 480b5c10c17925bb4a37bd89f3ec909627f89f2c4533407446440567afed1e7b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651938"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53868052"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
 
@@ -92,7 +92,7 @@ Vous pouvez sélectionner plusieurs filtres à appliquer à partir des attributs
 Par exemple, pour afficher des données sur les Windows 10 avec l’état d’état d’état du capteur actif :
  
 1. Sous **Filtres > l’état d'> du capteur actif.**
-2. Sélectionnez ensuite **les plateformes de système d'> Windows 10**.
+2. Sélectionnez ensuite **les plateformes de système d> Windows 10**.
 3. Sélectionnez **Appliquer**.
 
 

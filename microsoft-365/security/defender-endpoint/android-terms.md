@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: e005da97a668581e453aa5da162574755ff40d8f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6af07a318ae9a9f4c4c929283ee49dfb9b802b72228b0d2a38e7a293baacd27a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884906"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Termes du contrat de licence de l’application Microsoft Defender pour Endpoint sur Android
 
