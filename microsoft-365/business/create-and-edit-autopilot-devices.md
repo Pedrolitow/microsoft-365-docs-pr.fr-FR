@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: Découvrez comment télécharger des appareils à l’aide d’AutoPilot Microsoft 365 Business Premium. Vous pouvez affecter un profil à un appareil ou à un groupe d’appareils.
-ms.openlocfilehash: 506ff44e3cb6656b19174e82688b5af141ea2b79
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment télécharger des appareils à l’aide d’AutoPilot dans Microsoft 365 Business Premium. Vous pouvez affecter un profil à un appareil ou à un groupe d’appareils.
+ms.openlocfilehash: ae3a760db4b94aac50301685a0c4f468e46ec8e9aa907a1b6fb35e03a9e541f0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867042"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Créer et modifier des appareils AutoPilot
 
@@ -45,7 +45,7 @@ Les appareils doivent répondre aux exigences ci-après :
     
 - Nouveaux appareils qui n’ont pas été Windows l’expérience pré-out-of-box
 
-1. Dans le centre Microsoft 365'administration, sélectionnez **Appareils** \> **AutoPilot**.
+1. In the Centre d’administration Microsoft 365, choose **Devices** \> **AutoPilot**.
   
 2. Dans la page **AutoPilot,** sélectionnez **l’onglet Appareils** \> **Ajouter des appareils.**
     

@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment envoyer des messages chiffrés à l’aide Outlook.
-ms.openlocfilehash: 209734bd52d1d97278d5632f035723758fe2e016
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c9ce78b744f903427b5e88bfb9fc1695279ebe30535ee97eca32a5fc3b6b35f7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866995"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Chiffrer ou étiqueter votre courrier électronique sensible
 
@@ -47,7 +47,7 @@ Avant d’envoyer des messages électroniques avec des informations confidentiel
 
 ## <a name="set-it-up"></a>Configuration
 
-Si vous souhaitez chiffrer un message qui ne répond pas à une règle prédéfinie ou si votre administrateur n’a pas défini de règles, vous pouvez appliquer différentes règles de chiffrement avant d’envoyer le message. Pour envoyer un message chiffré à partir de Outlook 2013 ou 2016 ou Outlook 2016 pour Mac, sélectionnez **Options > Autorisations,** puis sélectionnez l’option de protection dont vous avez besoin. Vous pouvez également envoyer un message  chiffré en sélectionnant le bouton Protéger dans Outlook sur le web. Pour plus d’informations, voir [Envoyer, afficher et](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)répondre à des messages chiffrés Outlook pc.
+Si vous souhaitez chiffrer un message qui ne répond pas à une règle prédéfinie ou si votre administrateur n’a pas défini de règles, vous pouvez appliquer différentes règles de chiffrement avant d’envoyer le message. Pour envoyer un message chiffré à partir de Outlook 2013 ou 2016, ou Outlook 2016 pour Mac, sélectionnez **Options > Autorisations,** puis sélectionnez l’option de protection dont vous avez besoin. Vous pouvez également envoyer un message  chiffré en sélectionnant le bouton Protéger dans Outlook sur le web. Pour plus d’informations, voir [Envoyer, afficher et](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)répondre à des messages chiffrés Outlook pc.
 
 ## <a name="admin-settings"></a>Paramètres d’administration
 

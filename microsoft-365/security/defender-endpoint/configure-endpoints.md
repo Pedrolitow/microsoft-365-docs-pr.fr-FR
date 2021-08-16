@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 253c055198547852c55a44b60910e3a38229737e89fa5e2fa467e74089ee20d6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb71cc8ee014c1e96f4e57fb58785e0c15b4602a
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863798"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256598"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices-in-defender-for-endpoint"></a>Outils et méthodes d’intégration pour Windows 10 dans Defender for Endpoint
 
@@ -33,25 +33,22 @@ ms.locfileid: "53863798"
 - [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [Microsoft 365 Gestion des risques internes](/microsoft-365/compliance/insider-risk-management)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Les appareils de votre organisation doivent être configurés pour que le service Defender for Endpoint puisse obtenir des données de capteur de leur part. Il existe différentes méthodes et outils de déploiement que vous pouvez utiliser pour configurer les appareils de votre organisation.
 
 Les méthodes et outils de déploiement suivants sont pris en charge :
 
-- Stratégie de groupe
-- Microsoft Endpoint Configuration Manager
-- Gestion des appareils mobiles (y compris Microsoft Intune)
-- Script local
-
-## <a name="in-this-section"></a>Dans cette section
 
 Rubrique|Description
 :---|:---
-[Intégrer des Windows 10 à l’aide de la stratégie de groupe](configure-endpoints-gp.md)|Utilisez la stratégie de groupe pour déployer le package de configuration sur les appareils.
-[Intégrer Windows appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)|Vous pouvez utiliser la version Microsoft Endpoint Manager (branche actuelle) 1606 ou la version 1602 de Microsoft Endpoint Manager (branche actuelle) ou une version antérieure pour déployer le package de configuration sur les appareils.
-[Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)|Utilisez les outils de gestion des appareils mobiles ou Microsoft Intune pour déployer le package de configuration sur l’appareil.
-[Intégrer les appareils Windows 10 utilisant un script local](configure-endpoints-script.md)|Découvrez comment utiliser le script local pour déployer le package de configuration sur les points de terminaison.
+[Intégrer des appareils à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)|Utilisez la stratégie de groupe pour déployer le package de configuration sur les appareils.
+[Intégrer des appareils à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)|Vous pouvez utiliser la version Microsoft Endpoint Manager (branche actuelle) 1606 ou la version 1602 de Microsoft Endpoint Manager (branche actuelle) ou une version antérieure pour déployer le package de configuration sur les appareils.
+[Intégrer des appareils à l’aide des outils de Gestion des appareils mobiles](configure-endpoints-mdm.md)|Utilisez les outils de gestion des appareils mobiles ou Microsoft Intune pour déployer le package de configuration sur l’appareil.
+[Intégrer des appareils en utilisant un script local](configure-endpoints-script.md)|Découvrez comment utiliser le script local pour déployer le package de configuration sur les points de terminaison.
 [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)|Découvrez comment utiliser le package de configuration pour configurer des appareils VDI.
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpoints-belowfoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpoints-belowfoldlink)
+
+
+Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)

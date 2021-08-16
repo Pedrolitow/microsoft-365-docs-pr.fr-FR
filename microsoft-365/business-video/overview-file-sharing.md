@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble du partage de vos fichiers métiers.
-ms.openlocfilehash: 408979728e4f834acb57f39a6eed3ac40057feba
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a377735f077df81556621a06e2367929d966aaf45f36e9f4425309f5dabaae0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244907"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867182"
 ---
 # <a name="overview-of-sharing-business-files"></a>Vue d’ensemble du partage de fichiers métiers
 
@@ -47,10 +47,10 @@ En savoir plus sur le partage de [fichiers en dehors](securely-share-files-exter
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Partager et collaborer avec un client ou un partenaire commercial
 
-Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un endroit permanent pour partager et collaborer. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires restent au même niveau.
+Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un lieu continu pour partager et collaborer. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires continuent de s’en sortir.
 
 1. Créez l’équipe.
-1. Télécharger vos fichiers.
+1. Charger vos fichiers.
 1. Invitez vos partenaires ou fournisseurs à accéder à l’équipe en tant qu’utilisateurs « invités » pour leur donner accès.
 
 En savoir plus sur le partage [de fichiers en dehors de votre organisation avec un lien sécurisé.](securely-share-files-externally.md)
@@ -60,13 +60,13 @@ En savoir plus sur le partage [de fichiers en dehors de votre organisation avec 
 Si vous travaillez avec des fichiers que vous partagez au sein de votre entreprise, il est également bon de configurer une équipe dans Microsoft Teams. Partagez vos fichiers à cet endroit et tous les personnes de votre entreprise peuvent facilement les trouver et les modifier, et vous savez que vous travaillez tous sur la même page.
 
 1. Créez l’équipe et invitez votre équipe à l’y faire.
-1. Télécharger vos fichiers.
+1. Charger vos fichiers.
 
 En savoir plus sur [le stockage de fichiers d’entreprise](files-to-sharepoint.md) et le stockage de fichiers des [employés.](files-to-onedrive.md)
 
 ## <a name="how-to-get-it-done"></a>Comment y arriver
 
-Vous avez besoin d’aide ? Découvrez comment :
+Vous avez besoin d’aide ? Découvrez comment :
 
 - [Envoyer et recevoir des pièces jointes](https://support.microsoft.com/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
 - [Partager des fichiers et des dossiers avec OneDrive](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)

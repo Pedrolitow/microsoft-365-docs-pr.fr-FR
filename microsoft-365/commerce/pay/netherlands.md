@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3b4c7e9b7519c2fc0cdc6420093076acbaf88912
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1bbf977b9cf5da63bf014e3cce217f9621aa66024cfb3e9fd941dd621119406f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535349"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896202"
 ---
 # <a name="payment-information-for-netherlands"></a>Informations de paiement pour les Pays-Bas
 

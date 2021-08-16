@@ -15,16 +15,16 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Découvrez comment les administrateurs peuvent utiliser Exchange Online PowerShell et un fichier CSV pour importer en bloc des contacts externes dans la liste d’adresses globale.
-ms.openlocfilehash: 178e3676f8dc5fb59cdad9cc46d7ecbd9dddb90e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cb6195f82ed794ea5b6741a6b8bdf3007cdf366411ad7a464688b6ffbf5d9cb0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895962"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importation en bloc de contacts externes vers Exchange Online
 
-**Cet article est pour les administrateurs. Essayez-vous d’importer des contacts dans votre propre boîte aux lettres ? Voir [Importer des contacts vers Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
+**Cet article est réservé aux administrateurs. Essayez-vous d’importer des contacts dans votre propre boîte aux lettres ? Voir [Importer des contacts vers Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
 Votre entreprise a-t-elle un grand nombre de contacts professionnels existants que vous souhaitez inclure dans le carnet d’adresses partagé (également appelé liste d’adresses globale) dans Exchange Online ? Souhaitez-vous ajouter des contacts externes en tant que membres de groupes de distribution, comme vous le pouvez avec des utilisateurs au sein de votre entreprise ? Si c’est le cas, vous pouvez utiliser Exchange Online PowerShell et un fichier CSV (valeurs séparées par des virgules) pour importer en bloc des contacts externes dans Exchange Online. Il s’agit d’un processus en trois étapes :
   
@@ -93,7 +93,7 @@ L’étape suivante consiste à utiliser le fichier CSV que vous avez créé à 
     Les contacts importés apparaissent dans le carnet d’adresses partagé Outlook et Outlook sur le web.
     
     > [!NOTE]
-    > Vous pouvez également afficher les contacts dans le  centre d Microsoft 365'administration en allant à \> **Contacts des utilisateurs.** 
+    > Vous pouvez également afficher les contacts dans le  Centre d’administration Microsoft 365 en allant à \> **Contacts des utilisateurs.** 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Étape 3 : Ajouter des informations aux propriétés des contacts externes
 
@@ -117,13 +117,13 @@ Après avoir exécuté la commande à l’étape 2, les contacts externes sont c
     > [!NOTE]
     > Le  _paramètre Manager_ peut être problématique. Si la cellule est vide dans le fichier CSV, vous obtenez une erreur et aucune information sur la propriété n’est ajoutée au contact. Si vous n’avez pas besoin de spécifier un responsable, supprimez simplement  ` -Manager $_.Manager ` la commande PowerShell précédente. 
   
-    Là encore, la mise à jour des contacts peut prendre un certain temps, selon le nombre d’importations que vous avez importées à l’étape 1. 
+    Là encore, la mise à jour des contacts peut prendre un certain temps, en fonction du nombre d’importations à l’étape 1. 
     
 4. Pour vérifier que les propriétés ont été ajoutées aux contacts : 
     
 1. Dans le CAE, accédez à **Destinataires** \> **Contacts**.
     
-2. Cliquez sur un contact, puis cliquez sur **Modifier** ![ ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) l’icône pour afficher les propriétés du contact. 
+2. Cliquez sur un contact, puis **cliquez** sur ![ Modifier ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) l’icône pour afficher les propriétés du contact. 
     
 Voilà ! Les utilisateurs peuvent voir les contacts et les informations supplémentaires dans le carnet d’adresses Outlook et Outlook sur le web.
   
@@ -136,7 +136,7 @@ Vous pouvez répéter les étapes 1 à 3 pour ajouter de nouveaux contacts exter
   
 ## <a name="hide-external-contacts-from-the-shared-address-book"></a>Masquer les contacts externes dans le carnet d’adresses partagé>
 
-Certaines sociétés peuvent utiliser des contacts externes uniquement pour pouvoir être ajoutées en tant que membres de groupes de distribution. Dans ce scénario, il se peut qu’ils souhaitent masquer les contacts externes dans le carnet d’adresses partagé. Voici comment procéder :
+Certaines sociétés peuvent utiliser des contacts externes uniquement pour pouvoir être ajoutées en tant que membres de groupes de distribution. Dans ce scénario, il se peut qu’ils souhaitent masquer les contacts externes dans le carnet d’adresses partagé. Voici comment procéder :
   
 1.  Connecter PowerShell pour votre Exchange Online organisation. Pour obtenir des instructions, consultez [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     

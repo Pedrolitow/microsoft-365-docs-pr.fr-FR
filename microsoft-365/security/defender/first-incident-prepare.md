@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: aa4080c6cfbbf0af93587e00b9b6d7489e6ed2da0e3fde1a0be8f84595026b7f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 89c185472f9e570374a3c0ea0ee70a62a4970b89
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897878"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256527"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Préparer votre posture de sécurité pour votre premier incident
 
@@ -53,15 +53,15 @@ Les composants de Microsoft 365 Defender peuvent afficher des violations de règ
 
 Le risque de l’appareil influence directement les ressources qui seront accessibles par l’utilisateur de cet appareil. Le refus d’accès aux ressources en fonction de certains critères est le thème principal de confiance zéro et Microsoft 365 Defender fournit les informations nécessaires pour déterminer les critères de niveau de confiance. Par exemple, Microsoft 365 Defender peut fournir le niveau de version logicielle d’un appareil via la page Gestion des menaces et des vulnérabilités, tandis que les stratégies d’accès conditionnel limitent les appareils qui ont des versions obsolètes ou vulnérables.
 
-L’automatisation est un élément essentiel de l’implémentation et de la maintenance d’un environnement de confiance zéro, tout en réduisant le nombre d’alertes susceptibles de conduire à des événements de réponse aux incidents (IR). Les composants de Microsoft 365 Defender peuvent être automatisés, tels que les [actions](m365d-autoir.md) de correction (appelées enquêtes pour un incident dans le centre de sécurité Microsoft 365), les actions de notification et même la création de tickets de support tels que [dans ServiceNow](https://microsoft.service-now.com/sp/).
+L’automatisation est un élément essentiel de l’implémentation et de la maintenance d’un environnement de confiance zéro, tout en réduisant le nombre d’alertes susceptibles de conduire à des événements de réponse aux incidents (IR). Les composants de Microsoft 365 Defender peuvent être automatisés, tels que les [actions](m365d-autoir.md) de correction (appelées enquêtes pour un incident dans le portail Microsoft 365 Defender), les actions de notification et même la création de tickets de support tels que [dans ServiceNow](https://microsoft.service-now.com/sp/).
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Étape 2. Déterminer la position de sécurité de votre organisation
 
-Ensuite, les organisations peuvent utiliser le niveau de sécurité [Microsoft](microsoft-secure-score.md) dans Microsoft 365 Defender pour déterminer votre posture de sécurité actuelle et prendre en compte des recommandations sur la façon de l’améliorer. Plus le score est élevé, plus l’organisation a mis en place de recommandations de sécurité et d’actions d’amélioration. Les recommandations de niveau de sécurité peuvent être prises sur différents produits et permettre aux organisations d’augmenter leurs scores encore plus élevés. 
+Ensuite, les organisations peuvent utiliser le Niveau de sécurité [Microsoft](microsoft-secure-score.md) dans Microsoft 365 Defender pour déterminer votre posture de sécurité actuelle et prendre en compte des recommandations sur la façon de l’améliorer. Plus le score est élevé, plus l’organisation a mis en place de recommandations de sécurité et d’actions d’amélioration. Les recommandations de niveau de sécurité peuvent être prises sur différents produits et permettre aux organisations d’augmenter leurs scores encore plus élevés. 
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Exemple de Niveau de sécurité Microsoft dans le Centre de sécurité Microsoft":::
  
-## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Étape 3 : Évaluer l’exposition aux vulnérabilités de votre organisation
+## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Étape 3. Évaluer l’exposition aux vulnérabilités de votre organisation
 
 La prévention des incidents peut contribuer à rationaliser les opérations de sécurité afin de se concentrer sur les incidents de sécurité critiques et importants en cours. Les vulnérabilités logicielles sont souvent un point d’entrée empêchant les attaques qui peuvent entraîner un vol de données, une perte de données ou une perturbation des opérations de l’entreprise. Si aucune attaque n’est en cours, les opérations de sécurité doivent s’efforcer d’atteindre et de maintenir un niveau acceptable d’exposition aux vulnérabilités [dans](../defender-endpoint/tvm-exposure-score.md) leur organisation.
 
@@ -71,7 +71,7 @@ Pour vérifier l’avancement des correctifs logiciels, consultez la [page](../d
  
 ## <a name="4-understand-emerging-threats"></a>4. Comprendre les menaces émergentes
 
-Utilisez [l’analyse des](threat-analytics.md) menaces Microsoft 365 centre de sécurité pour rester à jour avec le paysage actuel des menaces de sécurité. Des chercheurs spécialisés en matière de sécurité Microsoft créent des rapports qui décrivent en détail les dernières cybermenaces afin que vous compreniez en quoi elles peuvent affecter votre abonnement Microsoft 365, les appareils et les utilisateurs. Ces rapports peuvent inclure les éléments suivants :
+Utilisez [l’analyse](threat-analytics.md) des menaces dans Microsoft 365 Defender portail pour rester à jour avec le paysage actuel des menaces de sécurité. Des chercheurs spécialisés en matière de sécurité Microsoft créent des rapports qui décrivent en détail les dernières cybermenaces afin que vous compreniez en quoi elles peuvent affecter votre abonnement Microsoft 365, les appareils et les utilisateurs. Ces rapports peuvent inclure les éléments suivants :
 
 - Acteurs actifs contre les menaces et leurs campagnes
 - Techniques d’attaques nouvelles et populaires
@@ -83,7 +83,7 @@ L’analyse des menaces examine également votre configuration et vos alertes po
 
 Vous pouvez implémenter les recommandations d’une menace émergente pour renforcer votre posture de sécurité et réduire la surface d’attaque.
 
-Veillez à consulter régulièrement la section [Analyse](threat-analytics.md) des menaces du centre de Microsoft 365 de sécurité.
+Veillez à consulter régulièrement la section [Analyse](threat-analytics.md) des menaces du portail Microsoft 365 Defender.
 
 ## <a name="next-step"></a>Étape suivante
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d04ce84d49b1ba059c1bd9550a2894ba13296525
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b81a01ed239ec58dd736be51074117de1dae9e97386431e89a6343e9c01a1142
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655838"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894618"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Obtenir des appareils intégrés à Microsoft Defender pour le point de terminaison
 
@@ -62,12 +62,12 @@ Defender pour le point de terminaison fournit plusieurs options pratiques pour [
 *Page de conformité des appareils Microsoft Defender for Endpoint sur la gestion des appareils Intune*
 
 > [!TIP]
-> Vous pouvez également accéder à la page de conformité de l’intégration de Defender for Endpoint dans le portail [Microsoft Azure](https://portal.azure.com/) à partir de Tous les **services > Intune > Conformité** des appareils > Microsoft Defender ATP .
+> Vous pouvez également accéder à la page de conformité d’intégration defender pour point de terminaison dans le portail [Microsoft Azure](https://portal.azure.com/) à partir de Tous les **services > Intune > Conformité** des appareils > Microsoft Defender ATP .
 
 > [!NOTE]
 > Si vous souhaitez afficher les données d’appareil les plus récentes, cliquez sur Liste des appareils sans **capteur ATP.**
 
-À partir de la page de conformité des appareils, créez un profil de configuration spécifique pour le déploiement du capteur Defender for Endpoint et affectez ce profil aux appareils que vous souhaitez intégrer. Pour ce faire, vous pouvez :
+À partir de la page conformité des appareils, créez un profil de configuration spécifique pour le déploiement du capteur Defender for Endpoint et affectez ce profil aux appareils que vous souhaitez intégrer. Pour ce faire, vous pouvez :
 
 - Sélectionnez Créer un profil de configuration d’appareil pour configurer le capteur **ATP** afin qu’il commence par un profil de configuration d’appareil prédéféré.
 - Créez le profil de configuration de l’appareil de A à Z.
@@ -76,7 +76,7 @@ Pour plus d’informations, découvrez l’utilisation des profils de configurat
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Vérifier que vos appareils sont correctement configurés](configure-machines.md)
 - [Renforcer la conformité à la ligne de base de sécurité de Defender for Endpoint](configure-machines-security-baseline.md)

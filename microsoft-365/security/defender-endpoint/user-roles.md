@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7e3a84b2f1ace627906a0235d6ad27904aba8d6b312199f1df1eae133e907143
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 60a0d59bd199e46e52623e36fa962465b313c9bd
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817194"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256337"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle
 
@@ -79,11 +79,11 @@ Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365
 - **Gérer les paramètres** de sécurité dans le Centre de sécurité : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-bord, et gérer les notifications par courrier électronique, gérer le laboratoire d’évaluation
 
 - **Fonctionnalités de réponse en direct**
-    - **Commandes** de base :
+    - **Commandes de** base :
         - Démarrer une session de réponse en direct
         - Exécuter des commandes de réponse en direct en lecture seule sur un appareil distant (à l’exception de la copie et de l’exécution des fichiers)
-    - **Commandes** avancées :
         - Télécharger un fichier à partir de l’appareil distant via une réponse en direct
+    - **Commandes** avancées :
         - Télécharger des fichiers PE et non PE à partir de la page de fichiers
         - Télécharger fichier sur l’appareil distant
         - Afficher un script à partir de la bibliothèque de fichiers
@@ -113,7 +113,7 @@ Pour plus d’informations sur les commandes disponibles, voir Examiner les appa
 
 3. Sélectionnez le rôle que vous souhaitez supprimer.
 
-4. Cliquez sur le bouton de la déposer et sélectionnez **Supprimer le rôle.**
+4. Cliquez sur le bouton de la drop-down et **sélectionnez Supprimer le rôle**.
 
 ## <a name="related-topic"></a>Rubrique connexe
 

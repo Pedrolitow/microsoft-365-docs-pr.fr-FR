@@ -10,23 +10,23 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez la clé de disponibilité utilisée pour récupérer les clés client perdues.
-ms.openlocfilehash: 0f65721856cd046f28a399701e625239decbd9b6
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: 573c7bb7426dea8594f3a2e73991f845153146996f8a03cab4766855482a7de1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463996"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895790"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Découvrir la clé de disponibilité pour la clé client
 
-La clé de disponibilité est une clé racine générée et mise en service automatiquement lorsque vous créez une stratégie de chiffrement de données. Microsoft 365 stocke et protège la clé de disponibilité. La clé de disponibilité est fonctionnellement comme les deux clés racine que vous fournissez pour le chiffrement de service avec la clé client. La clé de disponibilité enveloppe les clés d’un niveau inférieur dans la hiérarchie de clés. Contrairement aux clés que vous fournissez et gérez dans Azure Key Vault, vous ne pouvez pas accéder directement à la clé de disponibilité. Microsoft 365 automatisés gèrent la clé de disponibilité par programme. Ces services lancent des opérations automatisées qui n’impliquent jamais un accès direct à la clé de disponibilité.
+La clé de disponibilité est une clé racine générée et mise en service automatiquement lorsque vous créez une stratégie de chiffrement de données. Microsoft 365 stocke et protège la clé de disponibilité. La clé de disponibilité est fonctionnellement comme les deux clés racine que vous fournissez pour le chiffrement de service avec la clé client. La clé de disponibilité encapsule les clés d’un niveau inférieur dans la hiérarchie de clés. Contrairement aux clés que vous fournissez et gérez dans Azure Key Vault, vous ne pouvez pas accéder directement à la clé de disponibilité. Microsoft 365 automatisés gèrent la clé de disponibilité par programmation. Ces services lancent des opérations automatisées qui n’impliquent jamais un accès direct à la clé de disponibilité.
 
 L’objectif principal de la clé de disponibilité est de fournir une fonctionnalité de récupération en cas de perte imprévue de clés racines que vous gérez. La perte peut être le résultat d’une mauvaise gestion ou d’une action malveillante. Si vous perdez le contrôle de vos clés racine, contactez le Support Microsoft et Microsoft vous aidera tout au long du processus de récupération à l’aide de la clé de disponibilité. Vous utiliserez la clé de disponibilité pour migrer vers une nouvelle stratégie de chiffrement de données avec les nouvelles clés racines que vous provisionnez.
 
 Stockage et le contrôle de la clé de disponibilité sont délibérément différents des clés Azure Key Vault pour trois raisons :
 
 - La clé de disponibilité fournit une fonctionnalité de récupération « break-glass » si le contrôle sur les deux clés Azure Key Vault est perdu.
-- La séparation des contrôles logiques et des emplacements de stockage sécurisés fournit une défense en profondeur et protège contre la perte de toutes les clés et de vos données contre une attaque ou un point de défaillance unique.
+- La séparation des contrôles logiques et des emplacements de stockage sécurisés fournit une protection en profondeur et protège contre la perte de toutes les clés et de vos données contre une attaque ou un point de défaillance unique.
 - La clé de disponibilité offre une fonctionnalité de haute disponibilité si les services Microsoft 365 ne parviennent pas à accéder aux clés hébergées dans Azure Key Vault en raison d’erreurs temporaires. Cette règle s’applique uniquement au chiffrement Exchange Online et Skype Entreprise service. SharePoint Les fichiers en ligne, OneDrive Entreprise et Teams n’utilisent jamais la clé de disponibilité, sauf si vous demandez explicitement à Microsoft de lancer le processus de récupération.
 
 Le partage de la responsabilité de protéger vos données, à l’aide d’une variété de protections et de processus pour la gestion des clés, permet de réduire le risque que toutes les clés (et par conséquent vos données) soient définitivement perdues ou détruites. Microsoft vous fournit l’autorité unique sur la désactivation ou la destruction de la clé de disponibilité lorsque vous quittez le service. Par défaut, personne chez Microsoft n’a accès à la clé de disponibilité : elle est uniquement accessible par le code de service Microsoft 365.
@@ -39,7 +39,7 @@ La clé de disponibilité offre une fonctionnalité de récupération pour les s
 
 ### <a name="exchange-online-and-skype-for-business-uses"></a>Exchange Online et Skype Entreprise des applications
 
-Outre la fonctionnalité de récupération, Exchange Online et Skype Entreprise utilisent la clé de disponibilité pour garantir la disponibilité des données pendant les problèmes opérationnels temporaires ou intermittents liés au service qui accède aux clés racine. Lorsque le service ne peut pas atteindre l’une de vos clés client dans Azure Key Vault en raison d’erreurs temporaires, le service utilise automatiquement la clé de disponibilité. Le service ne passe JAMAIS directement à la clé de disponibilité.
+Outre la fonctionnalité de récupération, Exchange Online et Skype Entreprise utilisent la clé de disponibilité pour garantir la disponibilité des données pendant les problèmes opérationnels temporaires ou intermittents liés au service qui accède aux clés racine. Lorsque le service ne peut pas accéder à l’une de vos clés client dans Azure Key Vault en raison d’erreurs temporaires, le service utilise automatiquement la clé de disponibilité. Le service ne passe JAMAIS directement à la clé de disponibilité.
 
 Les systèmes automatisés dans Exchange Online et Skype Entreprise peuvent utiliser la clé de disponibilité lors d’erreurs temporaires pour prendre en charge des services principaux automatisés tels que l’antivirus, la découverte électronique, la protection contre la perte de données, les déplacements de boîtes aux lettres et l’indexation des données.
 
@@ -57,19 +57,19 @@ Microsoft protège les clés de disponibilité dans les magasins de clés secrè
 
 **Exchange Online et Skype Entreprise** clés de disponibilité sont stockées dans une Exchange Online de clés secrètes Active Directory. Les clés de disponibilité sont stockées en toute sécurité dans des conteneurs propres au client dans le contrôleur de domaine Active Directory. Cet emplacement de stockage sécurisé est distinct et isolé de la SharePoint des fichiers secrets SharePoint Online, OneDrive Entreprise et Teams fichiers.
 
-**SharePoint en ligne, OneDrive Entreprise** et Teams clés de disponibilité des fichiers sont stockées dans un magasin de clés secrètes interne géré par l’équipe de service. Ce service de stockage sécurisé des secrets dispose de serveurs frontaux avec des points de terminaison d’application et SQL Database comme serveur principal. Les clés de disponibilité sont stockées dans le SQL Database et sont enveloppées (chiffrées) par des clés de chiffrement de banque secrète qui utilisent une combinaison DES-256 et HMAC pour chiffrer la clé de disponibilité au repos. Les clés de chiffrement de magasin secret sont stockées dans un composant isolé logiquement de la même SQL Database et sont chiffrées avec des clés RSA-2048 contenues dans des certificats gérés par l’autorité de certification Microsoft. Ces certificats sont stockés dans les serveurs frontaux du magasin secret qui effectuent des opérations sur la base de données.
+**SharePoint en ligne, OneDrive Entreprise et Teams** clés de disponibilité des fichiers sont stockées dans un magasin de clés secrètes interne géré par l’équipe de service. Ce service de stockage sécurisé des secrets dispose de serveurs frontaux avec des points de terminaison d’application et SQL Database comme serveur principal. Les clés de disponibilité sont stockées dans le SQL Database et sont enveloppées (chiffrées) par des clés de chiffrement de banque secrète qui utilisent une combinaison DES-256 et HMAC pour chiffrer la clé de disponibilité au repos. Les clés de chiffrement de magasin secret sont stockées dans un composant isolé logiquement de la même SQL Database et sont chiffrées avec des clés RSA-2048 contenues dans des certificats gérés par l’autorité de certification Microsoft. Ces certificats sont stockés dans les serveurs frontaux du magasin secret qui effectuent des opérations sur la base de données.
 
 ### <a name="defense-in-depth"></a>Défense en profondeur
 
 Microsoft utilise une stratégie de défense en profondeur pour empêcher les acteurs malveillants d’avoir un impact sur la confidentialité, l’intégrité ou la disponibilité des données client stockées dans Microsoft Cloud. Des contrôles de prévention et de témoin spécifiques sont implémentés pour protéger la clé secrète et la clé de disponibilité dans le cadre de la stratégie de sécurité globale.
 
-Microsoft 365 est conçu pour éviter toute utilisation abusive de la clé de disponibilité. La couche d’application est la seule méthode par laquelle les clés, y compris la clé de disponibilité, peuvent être utilisées pour chiffrer et déchiffrer des données. Seul Microsoft 365 code de service a la possibilité d’interpréter et de parcourir la hiérarchie de clés pour les activités de chiffrement et de déchiffrement. Il existe une isolation logique entre les emplacements de stockage des clés client, les clés de disponibilité, les autres clés hiérarchiques et les données client. Cette isolation atténue le risque d’exposition des données dans le cas où un ou plusieurs emplacements sont compromis. Chaque couche de la hiérarchie a intégré des fonctionnalités de détection des intrusions 24 heures sur 24 et 7 jours sur 7 pour protéger les données et les secrets stockés.
+Microsoft 365 est conçu pour éviter toute utilisation abusive de la clé de disponibilité. La couche d’application est la seule méthode par laquelle les clés, y compris la clé de disponibilité, peuvent être utilisées pour chiffrer et déchiffrer des données. Seul Microsoft 365 code de service a la possibilité d’interpréter et de parcourir la hiérarchie de clés pour les activités de chiffrement et de déchiffrement. Il existe une isolation logique entre les emplacements de stockage des clés client, des clés de disponibilité, d’autres clés hiérarchiques et des données client. Cette isolation atténue le risque d’exposition des données dans le cas où un ou plusieurs emplacements sont compromis. Chaque couche de la hiérarchie a intégré des fonctionnalités de détection des intrusions 24 heures sur 24 et 7 jours sur 7 pour protéger les données et les secrets stockés.
 
-Les contrôles d’accès sont implémentés pour empêcher tout accès non autorisé aux systèmes internes, y compris aux magasins de clés secrètes de disponibilité. Les ingénieurs Microsoft n’ont pas un accès direct aux magasins de clés secrètes de disponibilité. Pour plus d’informations sur les contrôles d’accès, examinez [les contrôles d’accès administratifs Microsoft 365](/compliance/office-365-administrative-access-controls-overview).
+Les contrôles d’accès sont implémentés pour empêcher tout accès non autorisé aux systèmes internes, y compris aux magasins de clés secrètes de disponibilité. Les ingénieurs Microsoft n’ont pas un accès direct aux magasins de clés secrètes de disponibilité. Pour plus d’informations sur les contrôles d’accès, examinez [les contrôles d’accès](/compliance/office-365-administrative-access-controls-overview)administratif Microsoft 365 .
 
 Les contrôles techniques empêchent le personnel Microsoft de se connecter à des comptes de service hautement privilégiés, qui pourraient sinon être utilisés par des personnes malveillantes pour usurper l’identité services Microsoft. Par exemple, ces contrôles empêchent l’accès interactif.
 
-La journalisation de la sécurité et les contrôles de surveillance sont un autre dispositif de protection en profondeur mis en œuvre qui atténue les risques pour services Microsoft et vos données. Les équipes de service Microsoft ont déployé des solutions de surveillance actives qui génèrent des alertes et des journaux d’audit. Toutes les équipes de service téléchargent leurs journaux dans un référentiel central où les journaux sont agrégés et traitées. Les outils internes examinent automatiquement les enregistrements pour vérifier que les services fonctionnent dans un état optimal, résilient et sécurisé. Une activité inhabituelle est signalée pour un examen plus approfondi.
+La journalisation de sécurité et les contrôles de surveillance sont un autre dispositif de protection en profondeur implémenté qui atténue les risques pour services Microsoft et vos données. Les équipes de service Microsoft ont déployé des solutions de surveillance actives qui génèrent des alertes et des journaux d’audit. Toutes les équipes de service téléchargent leurs journaux dans un référentiel central où les journaux sont agrégés et traitées. Les outils internes examinent automatiquement les enregistrements pour vérifier que les services fonctionnent dans un état optimal, résilient et sécurisé. Une activité inhabituelle est signalée pour un examen plus approfondi.
 
 Tout événement de journal qui indique une violation potentielle de la stratégie de sécurité Microsoft est immédiatement mis à l’attention des équipes de sécurité Microsoft. Microsoft 365 sécurité a configuré des alertes pour détecter les tentatives d’accès aux magasins de clés secrètes de disponibilité. Les alertes sont également générées si le personnel de Microsoft tente d’accéder de manière interactive aux comptes de service, ce qui est interdit et protégé par les contrôles d’accès. Microsoft 365 sécurité détecte et avertit également les écarts du service Microsoft 365 par rapport aux opérations de référence normales. Les malfaiteurs qui tentent d’utiliser Microsoft 365 services informatiques déclenchent des alertes qui entraînent la délation de l’agresseur de l’environnement cloud de Microsoft.
 
@@ -81,7 +81,7 @@ Si vous perdez le contrôle de vos clés client, la clé de disponibilité vous 
 
 Si vous perdez le contrôle de vos clés client, la clé de disponibilité vous permet de récupérer vos données et de remettre en ligne vos ressources Microsoft 365 données impactées. La clé de disponibilité continue de protéger vos données pendant la récupération. À un niveau élevé, pour récupérer entièrement après une perte de clé, vous devez créer une nouvelle stratégie de dép. de données et déplacer les ressources impactées vers la nouvelle stratégie.
 
-Pour chiffrer vos données avec de nouvelles clés client, créez de nouvelles clés dans Azure Key Vault, créez un dep à l’aide des nouvelles clés client, puis affectez la nouvelle dep aux boîtes aux lettres actuellement chiffrées avec le dep précédent pour lesquels les clés ont été perdues ou compromises.
+Pour chiffrer vos données avec de nouvelles clés client, créez de nouvelles clés dans Azure Key Vault, créez un dep à l’aide des nouvelles clés client, puis affectez la nouvelle dep aux boîtes aux lettres actuellement chiffrées avec le PED précédent pour lesquels les clés ont été perdues ou compromises.
 
 Ce processus de re-chiffrement peut prendre jusqu’à 72 heures. Il s’agit de la durée standard lorsque vous modifiez une dep.
   
@@ -93,7 +93,7 @@ Cette opération est proportionnelle au nombre de sites dans votre organisation.
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Comment Exchange Online et Skype Entreprise la clé de disponibilité
 
-Lorsque vous créez une deP avec clé client, Microsoft 365 génère une clé de stratégie de chiffrement de données (deP Key) associée à cette dep. Le service chiffre la clé DEP trois fois : une fois avec chacune des clés client et une fois avec la clé de disponibilité. Seules les versions chiffrées de la clé DEP sont stockées et une clé DEP ne peut être déchiffrée qu’avec les clés client ou la clé de disponibilité. La clé DEP est ensuite utilisée pour chiffrer les clés de boîte aux lettres, qui chiffrent des boîtes aux lettres individuelles.
+Lorsque vous créez une dep avec clé client, Microsoft 365 génère une clé de stratégie de chiffrement de données (DEP Key) associée à cette dep. Le service chiffre la clé DEP trois fois : une fois avec chacune des clés client et une fois avec la clé de disponibilité. Seules les versions chiffrées de la clé DEP sont stockées et une clé DEP ne peut être déchiffrée qu’avec les clés client ou la clé de disponibilité. La clé DEP est ensuite utilisée pour chiffrer les clés de boîte aux lettres, qui chiffrent des boîtes aux lettres individuelles.
   
 Microsoft 365 suit ce processus pour déchiffrer et fournir des données lorsque les clients utilisent le service :
   
@@ -103,7 +103,7 @@ Microsoft 365 suit ce processus pour déchiffrer et fournir des données lorsque
 
 3. Utilisez la clé de boîte aux lettres déchiffrée pour déchiffrer la boîte aux lettres elle-même, ce qui vous permet d’accéder aux données de la boîte aux lettres.
 
-## <a name="how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key"></a>Comment SharePoint en ligne, OneDrive Entreprise et les fichiers Teams la clé de disponibilité
+## <a name="how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key"></a>Comment SharePoint online, OneDrive Entreprise et Teams la clé de disponibilité
 
 L’architecture SharePoint online et OneDrive Entreprise et l’implémentation de la clé client et de la clé de disponibilité sont différentes de Exchange Online et Skype Entreprise.
   
@@ -164,7 +164,7 @@ Pour les fichiers SharePoint Online, OneDrive Entreprise et Teams, la clé de di
 
 ## <a name="audit-logs-and-the-availability-key"></a>Journaux d’audit et clé de disponibilité
 
-Les systèmes automatisés dans Microsoft 365 traiter toutes les données à mesure qu’ils circulent dans le système pour fournir des services cloud, par exemple, la détection électronique, la détection électronique, la protection contre la perte de données et l’indexation des données. Microsoft 365 ne génère pas de journaux visibles par le client pour cette activité. En outre, le personnel Microsoft n’accède pas à vos données dans le cadre de ces opérations système normales.
+Les systèmes automatisés Microsoft 365 traiter toutes les données à mesure qu’ils circulent dans le système pour fournir des services cloud, par exemple, antivirus, découverte électronique, protection contre la perte de données et indexation des données. Microsoft 365 ne génère pas de journaux visibles par les clients pour cette activité. En outre, le personnel Microsoft n’accède pas à vos données dans le cadre de ces opérations système normales.
 
 ### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Exchange Online journalisation Skype Entreprise clé de disponibilité
 
@@ -200,7 +200,7 @@ Microsoft 365 utilise la clé de disponibilité pour encapsuler le niveau de cl�
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Chiffrement du service avec la clé client](customer-key-overview.md)
+- [Chiffrement de service avec clé client](customer-key-overview.md)
 
 - [Configurer la clé client](customer-key-set-up.md)
 

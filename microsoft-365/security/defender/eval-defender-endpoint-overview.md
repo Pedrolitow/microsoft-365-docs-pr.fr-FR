@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f3ec24e4d73ac9297e4ca0bec5659b987f9e33d7bae182a1f7f1853ee72d6876
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8f5ddd873d5303748bab5ba391cfbf1d4f2b0066
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833209"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256515"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Vue d’ensemble de l’évaluation de Microsoft Defender for Endpoint
 

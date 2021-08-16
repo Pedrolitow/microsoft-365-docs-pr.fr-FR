@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer des réunions en ligne avec Microsoft Teams.
-ms.openlocfilehash: a78a3a2ef66a2bc659a1c655dab338a1055ae3af
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: a1b11429aaf43e913d9f2def902e73299e68c6e295a04bc19f7f995db1d5d823
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866970"
 ---
 # <a name="set-up-meetings"></a>Organiser des réunions
 

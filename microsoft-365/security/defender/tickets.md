@@ -1,6 +1,6 @@
 ---
-title: Intégrer des tickets ServiceNow dans le centre de sécurité Microsoft 365 et le centre de conformité
-description: Découvrez comment créer et suivre des tickets dans ServiceNow à partir du centre de sécurité Microsoft 365 et du centre de conformité.
+title: Intégrer des tickets ServiceNow dans le portail Microsoft 365 Defender et le centre de conformité
+description: Découvrez comment créer et suivre des tickets dans ServiceNow à partir du portail Microsoft 365 Defender et du centre de conformité.
 keywords: sécurité, Microsoft 365, M365, conformité, centre de conformité, centre de sécurité, ServiceNow, tickets, tâches, LOI, connexion
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 2b0f25f0dafb48a6b9c707c64a4498b57ea7c57c1eda3a0fb45952db03bd0f4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1803d4408d50ecfd0e4f0a3c78016cd8914760f1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810413"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256491"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Intégrer des tickets ServiceNow dans le centre de sécurité Microsoft 365 et le centre de conformité
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-defender-portal-and-compliance-center"></a>Intégrer des tickets ServiceNow dans le portail Microsoft 365 Defender et le centre de conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

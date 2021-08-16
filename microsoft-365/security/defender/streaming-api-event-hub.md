@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c7745538471a2e8eae3b4708de06a789f4e0daff0150fd83f18a32b85461f892
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1b121ca196ba1b416b0031e3a0a7a8516bc7299
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893734"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256503"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers votre Hub d’événements Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "53893734"
 
 2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> inscrivez-vous à Microsoft.Informations**.
 
-3. Créez un espace de noms Hub d’événements, sélectionnez Hub d’événements **>** Ajoutez et sélectionnez le niveau de tarification, les unités de débit et la capacité de resserrement automatique en fonction de la charge attendue. Pour plus d’informations, voir [Tarification - Hub d’événements | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
+3. Créez un espace de noms Hub d’événements, sélectionnez Hub d’événements **>** Ajoutez et sélectionnez le niveau de tarification, les unités de débit et la capacité de resserrement automatique en fonction de la charge attendue. Pour plus d’informations, [voir la tarification des Hubs d’événements.](https://azure.microsoft.com/pricing/details/event-hubs/)  
 
 ### <a name="add-contributor-permissions"></a>Ajouter des autorisations de collaborateur
 
@@ -101,7 +101,7 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
 Pour obtenir les types de données pour les propriétés d’événement, faites les choses suivantes :
 
-1. Connectez-vous [Microsoft 365 centre de sécurité et](https://security.microsoft.com) allez à la page Recherche [avancée.](https://security.microsoft.com/hunting-package)
+1. Connectez-vous [Microsoft 365 Defender portail et](https://security.microsoft.com) allez à la page Recherche [avancée.](https://security.microsoft.com/hunting-package)
 
 2. Exécutez la requête suivante pour obtenir le mappage des types de données pour chaque événement :
 
@@ -115,7 +115,7 @@ Pour obtenir les types de données pour les propriétés d’événement, faites
 
   ![Image de l’ID2 de la ressource Hub d’événements](../defender-endpoint/images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [API Microsoft 365 Defender diffusion en continu](streaming-api.md)

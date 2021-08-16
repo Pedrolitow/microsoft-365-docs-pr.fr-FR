@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: Cet article explique la différence entre l’utilisation du cache d’objets dans SharePoint Server 2013 local et SharePoint Online.
-ms.openlocfilehash: 279d156a941aad6fbe7adbcf052c57f5b58c652f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 669a68e949c5e83be794644e0d4b9ae117c69e6282f2d0ea15f96a0ad3e90461
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695873"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894846"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Utilisation du cache d’objets avec SharePoint Online
 
@@ -34,7 +34,7 @@ L’utilisation du cache d’objets dans le déploiement SharePoint Online a un 
   
 ## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>Fonctionnement SharePoint cache d’objets SharePoint Server 2013
 
-Lorsque SharePoint Server 2013 est hébergé en local, le client dispose de serveurs web frontaux privés qui hébergent le cache d’objets. Cela signifie que le cache est dédié à un client et est limité uniquement par la quantité de mémoire disponible et allouée au cache d’objets. Étant donné qu’un seul client est servi dans le scénario local, les serveurs web frontaux ont généralement des utilisateurs qui font des demandes aux mêmes sites plusieurs fois. Cela signifie que le cache est rapidement plein et qu’il reste plein des résultats de requête de liste et des objets SharePoint que vos utilisateurs demandent régulièrement.
+Lorsque SharePoint Server 2013 est hébergé en local, le client dispose de serveurs web frontaux privés qui hébergent le cache d’objets. Cela signifie que le cache est dédié à un client et est limité uniquement par la quantité de mémoire disponible et allouée au cache d’objets. Étant donné qu’un seul client est servi dans le scénario local, les serveurs web frontaux ont généralement des utilisateurs qui font des demandes aux mêmes sites plusieurs fois. Cela signifie que le cache est rapidement plein et qu’il reste plein des résultats de requête de liste et SharePoint objets que vos utilisateurs demandent régulièrement.
   
 ![Affiche le trafic et la charge vers les serveurs web frontaux locaux](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   

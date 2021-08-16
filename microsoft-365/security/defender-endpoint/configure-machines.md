@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 20851106ec3301823e6c87432eb54b6c8adccc79
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 13e89f64a0b86249d69e3c36e52dc445b2d4c70438d3f16f62bc8758fa6b5b4a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894462"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Vérifier que vos appareils sont correctement configurés
 

@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f718c5d81e0dc4c5b228540f949c99fca2e46928
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5cf4bff66898f9f671ebb7a406cb59e6cdc0583a741b721fb910fd04502a6cbe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247053"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896052"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas : Contoso configure rapidement une stratégie de langage choquant pour Microsoft Teams, Exchange et Yammer communications
 
-La conformité des communications Microsoft 365 réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les messages électroniques, Microsoft Teams, Yammer ou tiers analysés dans votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
+La conformité des communications Microsoft 365 réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinées et personnalisées vous permettent d’analyser les communications internes et externes pour les correspondances de stratégie afin qu’elles soient examinées par des réviseurs désignés. Les réviseurs peuvent examiner les communications analysées par e-mail, Microsoft Teams, Yammer ou tierces dans votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’elles sont conformes aux normes de message de votre organisation.
 
 Contoso Corporation est une organisation fictive qui doit configurer rapidement une stratégie pour contrôler le langage choquant. Ils ont utilisé Microsoft 365 principalement pour la messagerie électronique, les Microsoft Teams et le support Yammer pour leurs utilisateurs, mais ont de nouvelles exigences pour appliquer la stratégie de l’entreprise en matière de harcèlement en lieu de travail. Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont une connaissance de base des principes de base de l’utilisation de Microsoft 365 et recherchent des conseils de bout en bout sur la façon de se lancer rapidement dans la conformité des communications.
 
@@ -81,7 +81,7 @@ Les administrateurs informatiques de Contoso prennent les mesures suivantes pour
 
 Il existe cinq groupes de rôles utilisés pour configurer les autorisations pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des** communications disponible en tant qu’option de menu dans Centre de conformité Microsoft 365  et pour poursuivre ces étapes de configuration, le rôle Administrateur de conformité des communications est attribué aux administrateurs Contoso.
 
-Contoso décide d’utiliser le groupe de rôles Conformité des communications pour affecter au groupe tous les administrateurs, analystes, enquêteurs et visionneuses de conformité des communications.  Cela facilite la prise en charge rapide de Contoso et répond au mieux à ses besoins en matière de gestion de la conformité.
+Contoso décide d’utiliser le groupe de rôles Conformité des communications pour affecter tous les administrateurs de conformité des communications, analystes, enquêteurs et visionneuses au groupe.  Cela facilite la prise en charge rapide de Contoso et répond au mieux à ses besoins en matière de gestion de la conformité.
 
 |**Role**|**Autorisations de rôle**|
 |:-----|:-----|
@@ -91,11 +91,11 @@ Contoso décide d’utiliser le groupe de rôles Conformité des communications 
 | **Enquêteur de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des réviseurs supplémentaires, passer à un cas Advanced eDiscovery, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
 | **Visionneuse de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui gèreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de rapports sur la page d’accueil de conformité des communications et peuvent afficher tous les rapports de conformité des communications. |
 
-1. Les administrateurs informatiques contoso se connectent à la page d’autorisations [Centre de conformité Microsoft 365](https://compliance.microsoft.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur général et sélectionnent le lien pour afficher et gérer les rôles dans Microsoft 365.
-2. Dans la **Centre de conformité Microsoft 365,** ils vont à Autorisations et sélectionnent le lien pour afficher et gérer les **rôles** dans Office 365.
+1. Les administrateurs informatiques de Contoso se connectent à la page d’autorisations du Centre de sécurité & conformité **Office 365** [(à https://compliance.microsoft.com/permissions)](https://compliance.microsoft.com/permissions) l’aide des informations d’identification d’un compte d’administrateur général et sélectionnent le lien pour afficher et gérer les rôles dans Microsoft 365.
+2. Dans le **Centre de sécurité & conformité,** ils ont accès aux autorisations et sélectionnent le lien pour afficher et gérer les **rôles** dans Office 365.
 3. Les administrateurs sélectionnent le *groupe de rôles Conformité* des communications, puis **sélectionnent Modifier le groupe de rôles.**
 4. Les administrateurs **sélectionnent Choisir des membres** dans le volet de navigation de gauche, puis **sélectionnent Modifier.**
-5. Ils **sélectionnent Ajouter,** puis cochent la case pour tous les utilisateurs de Contoso qui gèreront la conformité des communications, examineront et examineront les alertes.
+5. Ils **sélectionnent Ajouter,** puis cochent la case pour tous les utilisateurs de Contoso qui gèrent la conformité des communications, examinent et examinent les alertes.
 6. Les administrateurs **sélectionnent Ajouter,** puis **Terminé**.
 7. Ils **sélectionnent Enregistrer** pour ajouter des utilisateurs Contoso au groupe de rôles. Ils **sélectionnent Fermer** pour effectuer les étapes.
 
@@ -166,8 +166,8 @@ Les spécialistes de la conformité Contoso souhaitent ajouter tous les utilisat
 
 Ils doivent créer un groupe pour inclure tous les utilisateurs de Contoso, afin qu’ils prennent les mesures suivantes :
 
-1. Les administrateurs informatiques de Contoso se connectent au **Centre d’administration Microsoft 365** [ https://admin.microsoft.com) (](https://admin.microsoft.com) et accédez **à** Centre d’administration Microsoft 365 groupes  >  **de**  >  **groupes.**
-2. Ils **sélectionnent Ajouter un groupe et** terminent l’Assistant pour créer un Microsoft 365 *ou* un groupe *de distribution.*
+1. Les administrateurs informatiques de Contoso se connectent au **Centre d’administration Microsoft 365** [ https://admin.microsoft.com) (](https://admin.microsoft.com) et naviguent jusqu’Centre d’administration Microsoft 365 groupes   >  **de**  >  **groupes.**
+2. Ils **sélectionnent Ajouter un groupe et** terminent l’Assistant pour créer un groupe Microsoft 365 *ou* un groupe *de distribution.*
 
     ![Groupes](../media/communication-compliance-case-all-employees.png)
 

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 6f3c44ba70debfdf4ecebb089f2015214e92f4b2cef037da5bdf5f7ad0e99c40
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: 77a5d01b16a181067b347ab72220d722dc2ab447
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803631"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256558"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurer et valider des exclusions pour Antivirus Microsoft Defender analyses
 
@@ -28,7 +28,7 @@ ms.locfileid: "57803631"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par le processus de Antivirus Microsoft Defender analyses. Ces exclusions s’appliquent [aux analyses programmées,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la protection et à la surveillance en temps réel toujours en [temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Les exclusions pour les fichiers ouverts par le processus s’appliquent uniquement à la protection en temps réel.
+Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par des processus Antivirus Microsoft Defender analyses. Ces exclusions s’appliquent aux analyses [programmées,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la protection et à la surveillance en temps réel toujours en [temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Les exclusions pour les fichiers ouverts par le processus s’appliquent uniquement à la protection en temps réel.
 
 ## <a name="configure-and-validate-exclusions"></a>Configurer et valider des exclusions
 
@@ -53,7 +53,7 @@ Gardez les points suivants à l’esprit lorsque vous définissez des exclusions
 
 - Dans l’idéal, évitez de définir des exclusions afin d’être proactives. Par exemple, n’excluez pas quelque chose simplement parce que vous pensez qu’il pourrait s’agir d’un problème à l’avenir. Utilisez des exclusions uniquement pour des problèmes spécifiques, tels que ceux relatifs aux performances ou à la compatibilité des applications que les exclusions peuvent atténuer.
 
-- Examiner et auditer les modifications apportées à votre liste d’exclusions. Votre équipe de sécurité doit conserver le contexte sur la raison pour laquelle une certaine exclusion a été ajoutée afin d’éviter toute confusion ultérieurement. Votre équipe de sécurité doit être en mesure de fournir des réponses spécifiques aux questions sur la raison de l’existence d’exclusions.
+- Examiner et auditer les modifications apportées à votre liste d’exclusions. Votre équipe de sécurité doit conserver le contexte sur la raison pour laquelle une certaine exclusion a été ajoutée afin d’éviter toute confusion ultérieurement. Votre équipe de sécurité doit être en mesure de fournir des réponses spécifiques aux questions sur la raison pour laquelle des exclusions existent.
 
 ## <a name="see-also"></a>Voir aussi
 

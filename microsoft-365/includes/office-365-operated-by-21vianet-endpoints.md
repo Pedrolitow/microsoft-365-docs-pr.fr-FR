@@ -7,8 +7,8 @@
 
 ID | Catégorie | ER | Adresses | Ports
 -- | -------------------- | -- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------
-1  | Optimiser<BR>Obligatoire | Non | `*.partner.outlook.cn`<BR>`40.73.132.0/24, 40.73.164.128/25, 40.73.165.0/26, 42.159.40.0/24, 42.159.163.128/25, 42.159.165.0/24` | **TCP :** 443, 80
-2  | Autoriser<BR>Obligatoire | Non | `42.159.33.192/27, 42.159.36.0/24, 42.159.161.192/27, 42.159.164.0/24, 139.219.16.0/27, 139.219.17.0/24, 139.219.24.0/22, 139.219.145.0/27, 139.219.146.0/24, 139.219.156.0/22, 2406:e500:4440::/43, 2406:e500:c020::/44, 2406:e500:c120::/44` | **TCP :** 25, 443, 53, 80
+1 | Optimiser<BR>Obligatoire | Non | `*.partner.outlook.cn`<BR>`40.73.132.0/24, 40.73.164.128/25, 40.73.165.0/26, 42.159.40.0/24, 42.159.163.128/25, 42.159.165.0/24` | **TCP :** 443, 80
+2 | Autoriser<BR>Obligatoire | Non | `42.159.33.192/27, 42.159.36.0/24, 42.159.161.192/27, 42.159.164.0/24, 139.219.16.0/27, 139.219.17.0/24, 139.219.24.0/22, 139.219.145.0/27, 139.219.146.0/24, 139.219.156.0/22, 2406:e500:4440::/43, 2406:e500:c020::/44, 2406:e500:c120::/44` | **TCP :** 25, 443, 53, 80
 12  | Par défaut<BR>Obligatoire | Non | `attachments.office365-net.cn` | **TCP :** 443, 80
 
 ## <a name="sharepoint-online-and-onedrive-for-business"></a>Sharepoint Online et OneDrive Entreprise
@@ -21,7 +21,7 @@ ID | Catégorie | ER | Adresses | Ports
 
 ID | Catégorie | ER | Adresses | Ports
 -- | -------------------- | -- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------
-3  | Optimiser<BR>Obligatoire | Non | `*.partner.lync.cn`<BR>`42.159.34.32/27, 42.159.34.64/27, 42.159.34.96/28, 42.159.162.32/27, 42.159.162.64/27, 42.159.162.96/28` | **TCP :** 443, 80
+3 | Optimiser<BR>Obligatoire | Non | `*.partner.lync.cn`<BR>`42.159.34.32/27, 42.159.34.64/27, 42.159.34.96/28, 42.159.162.32/27, 42.159.162.64/27, 42.159.162.96/28` | **TCP :** 443, 80
 
 ## <a name="microsoft-365-common-and-office-online"></a>Services communs Microsoft 365 et Office Online
 
@@ -32,8 +32,8 @@ ID | Catégorie | ER | Adresses | Ports
 8  | Autoriser<BR>Obligatoire | Non | `*.onmschina.cn, *.partner.microsoftonline.net.cn, *.partner.microsoftonline-i.cn, *.partner.microsoftonline-i.net.cn, *.partner.office365.cn`<BR>`101.28.252.0/24, 115.231.150.0/24, 123.235.32.0/24, 171.111.154.0/24, 175.6.10.0/24, 180.210.229.0/24, 211.90.28.0/24` | **TCP :** 443, 80
 9  | Autoriser<BR>Obligatoire | Non | `*.partner.microsoftonline-p.cn`<BR>`42.159.4.68/32, 42.159.4.200/32, 42.159.7.156/32, 42.159.132.138/32, 42.159.133.17/32, 42.159.135.78/32, 182.50.87.0/24` | **TCP :** 443, 80
 10  | Autoriser<BR>Obligatoire | Non | `*.partner.microsoftonline.cn`<BR>`42.159.4.68/32, 42.159.4.200/32, 42.159.7.156/32, 42.159.132.138/32, 42.159.133.17/32, 42.159.135.78/32, 103.9.8.0/22` | **TCP :** 443, 80
-11  | Autoriser<BR>Obligatoire | Non | `activation.sls.microsoft.com, crl.microsoft.com, odc.officeapps.live.com, office15client.microsoft.com, officecdn.microsoft.com, osiprod-scus01-odcsm.cloudapp.net`<BR>`40.73.248.0/21, 42.159.4.45/32, 42.159.4.50/32, 42.159.4.225/32, 42.159.7.13/32, 42.159.132.73/32, 42.159.132.74/32, 42.159.132.75/32, 65.52.98.231/32, 65.55.69.140/32, 65.55.227.140/32, 70.37.81.47/32, 168.63.252.62/32` | **TCP :** 443, 80
-13  | Par défaut<BR>Obligatoire | Non | `*.msauth.cn, *.msauthimages.cn, *.msftauth.cn, *.msftauthimages.cn` | **TCP :** 443, 80
+11 | Autoriser<BR>Obligatoire | Non | `activation.sls.microsoft.com, crl.microsoft.com, odc.officeapps.live.com, office15client.microsoft.com, officecdn.microsoft.com, osiprod-scus01-odcsm.cloudapp.net`<BR>`40.73.248.0/21, 42.159.4.45/32, 42.159.4.50/32, 42.159.4.225/32, 42.159.7.13/32, 42.159.132.73/32, 42.159.132.74/32, 42.159.132.75/32, 65.52.98.231/32, 65.55.69.140/32, 65.55.227.140/32, 70.37.81.47/32, 168.63.252.62/32` | **TCP :** 443, 80
+13 | Par défaut<BR>Obligatoire | Non | `*.msauth.cn, *.msauthimages.cn, *.msftauth.cn, *.msftauthimages.cn` | **TCP :** 443, 80
 15 | Par défaut<BR>Obligatoire | Non | `loki.office365.cn` | **TCP :** 443
 16  | Par défaut<BR>Obligatoire | Non | `*.cdn.office.net, shellprod.msocdn.com` | **TCP :** 443
 17  | Autoriser<BR>Obligatoire | Non | `login.partner.microsoftonline.cn`<BR>`42.159.87.106/32, 42.159.92.96/32, 52.130.2.32/27, 52.130.3.64/27, 52.130.17.192/27, 52.130.18.32/27, 139.217.115.121/32, 139.217.118.25/32, 139.217.118.46/32, 139.217.118.54/32, 139.217.228.95/32, 139.217.231.198/32, 139.217.231.208/32, 139.217.231.219/32, 139.219.132.56/32, 139.219.133.182/32, 2406:e500:5500::/48` | **TCP :** 443, 80

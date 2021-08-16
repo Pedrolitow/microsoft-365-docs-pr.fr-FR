@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Résumé : Décrit les considérations pour la capacité du réseau, les accélérateurs wan et les périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: e1209c13eb24d11a2cc9692957bc4ee5f6310f41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bda9fc9e9005530e97bc0033fc13813fceeb77d84e39f44726d259fd8847e8e8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927499"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894898"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
@@ -37,7 +37,7 @@ Les paramètres de proxy Internet sortant local affectent également la connecti
   
 Les articles d Skype Entreprise d’aide suivants ont plus d’informations sur Skype Entreprise paramètres de mise à jour :
   
-- [Résolution des Skype Entreprise de la signature en ligne pour les administrateurs](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
+- [Résolution des erreurs Skype Entreprise de la signature en ligne pour les administrateurs](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [Vous ne pouvez pas vous connecter Skype Entreprise ou certaines fonctionnalités ne fonctionnent pas, car un pare-feu local bloque la connexion.](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
@@ -54,9 +54,9 @@ Pour tester la capacité du réseau, surveillez l’activité réseau sur l’in
   
 ## <a name="wan-accelerators"></a>Accélérateurs de réseau étendu
 
-Si votre organisation utilise des appliances proxy d’accélération de réseau wan (WAN), vous pouvez rencontrer des problèmes lorsque vous accédez aux services Office 365 réseau. Vous devrez peut-être optimiser votre ou vos périphériques réseau pour vous assurer que vos utilisateurs ont une expérience cohérente lors de l’accès Office 365. Par exemple, les services Office 365 chiffrent certains Office 365 contenu et l’en-tête TCP. Il se peut que votre appareil ne soit pas en mesure de gérer ce type de trafic.
+Si votre organisation utilise des équipements proxy d’accélération de réseau large (WAN), vous pouvez rencontrer des problèmes lorsque vous accédez aux services Office 365 réseau. Vous devrez peut-être optimiser votre ou vos périphériques réseau pour vous assurer que vos utilisateurs ont une expérience cohérente lors de l’accès Office 365. Par exemple, les services Office 365 chiffrent certains Office 365 contenu et l’en-tête TCP. Il se peut que votre appareil ne soit pas en mesure de gérer ce type de trafic.
   
-Lisez notre déclaration de support sur l’utilisation du contrôleur [d’optimisation wan ou des périphériques de trafic/inspection avec Office 365](https://support.microsoft.com/kb/2690045).
+Lisez notre déclaration de support sur [l’utilisation du contrôleur d’optimisation wan ou des périphériques de trafic/inspection avec Office 365](https://support.microsoft.com/kb/2690045).
   
 ## <a name="hardware-and-software-load-balancing-devices"></a>Dispositifs d’équilibrage de charge matériels et logiciels
 
@@ -66,7 +66,7 @@ Nous fournissons une solution DLB logicielle intégrée à Windows Server. Offic
   
 ## <a name="firewalls-and-proxies"></a>Pare-feu et proxies
 
-Pour plus d’informations sur la configuration des pare-feux et des proxies pour la connexion à Office 365, voir Gestion des points de terminaison [de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a) [,](assessing-network-connectivity.md)Évaluation de la connectivité réseau Office 365 et FAQ sur les points de terminaison [Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) pour en savoir plus sur les appareils et la sélection de circuits.
+Pour plus d’informations sur la configuration des pare-feux et des proxies pour la connexion à Office 365, voir Gestion des points de terminaison Office 365 [,](assessing-network-connectivity.md)Évaluation de la connectivité réseau Office 365 et FAQ sur les points de terminaison Office 365 pour en savoir plus sur les appareils et la sélection des [circuits.](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a) [](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
   
 ## <a name="see-also"></a>Voir aussi
 

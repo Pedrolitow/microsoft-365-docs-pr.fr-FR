@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment créer et gérer des stratégies de gestion des données personnelles de votre organisation dans Microsoft 365, répondre aux alertes et résoudre les problèmes.
-ms.openlocfilehash: 8add0ba2122c8ae73d6a9da075e346c74395084a243db68361a0df03aea8f00c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 548e8b6960b2cd27ba786aa6bd184f771a5fcb75
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842121"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256434"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>Créer et gérer des stratégies dans la gestion de la confidentialité (aperçu)
 
@@ -43,14 +43,14 @@ Pour en savoir plus sur les fonctionnalités de chaque modèle, voir ci-dessous.
 
 ### <a name="data-overexposure"></a>Surexposure des données
 
-La gestion de la confidentialité peut vous aider à détecter et gérer les situations dans lesquelles les données que vous avez stockées ne sont pas suffisamment sécurisées. Par exemple, si l’accès à un site interne est ouvert à un groupe trop large ou si vos paramètres d’autorisation n’ont pas été tenus à jour, les données personnelles stockées sur ce site peuvent être vulnérables à une violation. Vous pouvez utiliser le modèle de stratégie de données de la gestion de la confidentialité pour évaluer vos données et vous avertir des problèmes potentiels.
+La gestion de la confidentialité peut vous aider à détecter et gérer les situations dans lesquelles les données que vous avez stockées ne sont pas suffisamment sécurisées. Par exemple, si l’accès à un site interne est ouvert à un groupe trop large ou si vos paramètres d’autorisation n’ont pas été tenus à jour, les données personnelles stockées sur ce site peuvent être vulnérables à une violation. Vous pouvez utiliser le modèle de stratégie de données de gestion de la confidentialité pour évaluer vos données et vous avertir des problèmes potentiels.
 
 ### <a name="data-transfer"></a>Transfert de données
 
-Le transfert de données entre départements ou frontières régionales peut augmenter le risque d’exposition des données, par exemple s’ils sont envoyés via des e-mails non chiffrés ou à des destinataires non autorisés. De telles actions peuvent avoir un impact réglementaire ou aller à l’encontre des pratiques établies en matière de confidentialité. L’utilisation du modèle de transfert de données pour créer des stratégies de gestion de la confidentialité peut repérer et limiter ces transferts.
+Le transfert de données entre départements ou frontières régionales peut augmenter le risque d’exposition des données, par exemple si elles sont envoyées via des e-mails non chiffrés ou à des destinataires non autorisés. De telles actions peuvent avoir un impact réglementaire ou aller à l’encontre des pratiques établies en matière de confidentialité. L’utilisation du modèle de transfert de données pour créer des stratégies de gestion de la confidentialité peut repérer et limiter ces transferts.
 
 > [!NOTE]
-> Pendant la prévisualisation publique, certains clients exécutant des stratégies de transfert de données pour détecter les transferts entre régions peuvent rencontrer des problèmes de synchronisation qui ont un impact sur la visibilité des correspondances de stratégie dans les données Exchange et Teams données. Nous vous recommandons de vous concentrer sur SharePoint et OneDrive données lors de l’aperçu de ce type de stratégie.
+> Pendant la prévisualisation publique, certains clients exécutant des stratégies de transfert de données pour détecter les transferts entre régions peuvent rencontrer des problèmes de synchronisation qui ont un impact sur la visibilité des correspondances de stratégie dans les données Exchange et Teams données. Nous vous recommandons de vous concentrer sur SharePoint données OneDrive lors de l’aperçu de ce type de stratégie.
 
 ### <a name="data-minimization"></a>Réduction des données
 
@@ -68,11 +68,11 @@ Il existe deux chemins d’accès pour créer des stratégies de gestion de la c
 
 Pour commencer immédiatement avec une stratégie, sélectionnez l’un des trois types de stratégie pré-définies. Pour passer en revue les détails de l’un d’eux, vous pouvez sélectionner les paramètres d’affichage pour afficher les propriétés spécifiques qui sont à l’origine de la stratégie, y compris les types de données, les emplacements de données et les conditions qui déclenchent des correspondances de stratégie.
 
-Lorsque vous créez une stratégie directement à partir d’un modèle, de nombreux paramètres sont automatiquement choisis. Cela inclut l’option d’option par défaut de la stratégie. Si vous souhaitez afficher un aperçu de la stratégie en action avant de l’activer entièrement, recherchez-la dans votre liste après sa création, modifiez la stratégie et basculez-la en mode test. Pour plus d’informations, voir [Tester votre stratégie.](#test-your-policy)
+Lorsque vous créez une stratégie directement à partir d’un modèle, de nombreux paramètres sont automatiquement choisis. Cela inclut l’option d’option par défaut de la stratégie. Si vous souhaitez afficher un aperçu de la stratégie en action avant de l’activer entièrement, recherchez-la dans votre liste après sa création, modifiez la stratégie et basculez-la en mode test. Pour plus d’informations, [voir Tester votre stratégie.](#test-your-policy)
 
 ### <a name="create-custom-policy"></a>Créer une stratégie personnalisée
 
-Pour prendre un contrôle granulaire des paramètres d’une stratégie, vous pouvez créer une stratégie personnalisée à l’aide de l’un des modèles existants comme base de référence. La gestion de la confidentialité fournit un Assistant pour vous guider tout au long de ces étapes.
+Pour prendre un contrôle granulaire des paramètres d’une stratégie, vous pouvez créer une stratégie personnalisée à l’aide de l’un des modèles existants comme base. La gestion de la confidentialité fournit un Assistant pour vous guider tout au long de ces étapes.
 
 Les propriétés personnalisables sont les suivantes :
 
@@ -117,7 +117,7 @@ Avec les notifications par courrier électronique, les utilisateurs reçoivent d
 
 Les notifications peuvent être activées pour des stratégies individuelles lors de la création d’une stratégie personnalisée ou lors de la modification d’une stratégie. Utilisez la section Résultats pour définir ce qui se produit lorsqu’une correspondance de stratégie est détectée, y compris l’option permettant d’activer ces notifications et définir la fréquence de livraison de ces résumés.
 
-La fonctionnalité de notification par courrier électronique est contrôlée au niveau global au sein Paramètres. Elle est activée par défaut. La mise hors service de ce paramètre arrête tous les e-mails même si des notifications spécifiques ont été configurées au niveau d’une stratégie individuelle. Pour plus d’informations, voir Configurer les paramètres sous [Prise en charge de la gestion de la confidentialité.](privacy-management-setup.md#configure-settings)
+La fonctionnalité de notification par courrier électronique est contrôlée à un niveau global au sein Paramètres. Elle est activée par défaut. La mise hors service de ce paramètre arrête tous les e-mails même si des notifications spécifiques ont été configurées au niveau d’une stratégie individuelle. Pour plus d’informations, voir [Gérer les paramètres de gestion de la confidentialité.](privacy-management-settings.md)
 
 ## <a name="view-policy-details"></a>Afficher les détails de la stratégie
 
@@ -153,11 +153,11 @@ Les onglets suivants fournissent des détails supplémentaires sur les alertes e
 
 #### <a name="share-the-issue"></a>Partager le problème
 
-L’ajout de personnes en tant que collaborateurs vous permet de partager le problème avec d’autres membres de votre entreprise via un canal Microsoft Teams sécurisé, un courrier électronique de l’entreprise ou en partageant un lien directement vers la page du problème dans la gestion de la confidentialité. Ces options sont disponibles sous le **bouton** Partager. Lors du partage via Teams, vous serez invité à sélectionner les équipes disponibles dans votre organisation, à sélectionner le canal spécifique et à laisser un message sur le problème, qui sera partagé avec le canal spécifié.
+L’ajout de personnes en tant que collaborateurs vous permet de partager le problème avec d’autres membres de votre entreprise via un canal Microsoft Teams sécurisé, un courrier électronique d’entreprise ou en partageant un lien directement vers la page du problème dans la gestion de la confidentialité. Ces options sont disponibles sous le **bouton** Partager. Lors du partage via Teams, vous serez invité à sélectionner les équipes disponibles dans votre organisation, à sélectionner le canal spécifique et à laisser un message sur le problème, qui sera partagé avec le canal spécifié.
 
 #### <a name="review-content-and-remediate"></a>Examiner le contenu et corriger
 
-Pour examiner le contenu associé à  un problème, choisissez l’action Examiner le contenu si vous y êtes invité ou ouvrez l’onglet Contenu. Sélectionnez n’importe quel fichier de la liste pour l’afficher dans son intégralité. Vous pouvez voir ici des détails sur le fichier, les activités sur l’enregistrement et son historique de correction, si des étapes précédentes ont été prises pour gérer ce fichier.
+Pour examiner le contenu associé à  un problème, choisissez l’action Examiner le contenu si vous y êtes invité ou ouvrez l’onglet Contenu. Sélectionnez n’importe quel fichier de la liste pour l’afficher dans son intégralité. Vous pouvez y voir des détails sur le fichier, les activités sur l’enregistrement et son historique de correction, si des étapes précédentes ont été prises pour gérer ce fichier.
 
 Utilisez le **bouton Corriger** pour prendre vos propres décisions de gestion des données pour ce contenu. La sélection du bouton vous permet de choisir parmi une ou plusieurs actions de correction. Les options suivantes sont disponibles : 
 
@@ -165,7 +165,7 @@ Utilisez le **bouton Corriger** pour prendre vos propres décisions de gestion d
 
 - **Avertir**: informer le propriétaire du contenu du problème détecté.
 - **Appliquer une étiquette de rétention**: ajoutez une étiquette sur la rétention des données pour cet élément. 
-- **Appliquer une étiquette de niveau de sensibilité**: ajoutez une étiquette sur la sensibilité des données de cet élément.
+- **Appliquer une étiquette de niveau de** sensibilité : ajoutez une étiquette sur la sensibilité des données de cet élément.
 - **Marquer comme n’étant pas une correspondance**: identifiez un résultat de recherche comme faux positif pour supprimer l’élément de contenu de la considération.
 
 **Réduction des données**

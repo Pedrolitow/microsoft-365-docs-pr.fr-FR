@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - IWA160
 description: Les billets du tableau de bord d’état du service sont en anglais uniquement, mais peuvent être affichés automatiquement dans la langue que vous spécifiez pour Microsoft 365.
-ms.openlocfilehash: 9f5ce6dbb918f7a3dddf43b6332d28142446f179
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: d6ad788ef5847dc8bd5c30742db8950ffabbb395b2757b16029438ef542f35cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864626"
 ---
 # <a name="language-translation-for-service-health-dashboard"></a>Traduction linguistique pour le tableau de bord d’état du service
 
@@ -53,7 +53,7 @@ Lorsque votre langue préférée n’est pas l’anglais, les options de traduct
 
 Pour définir les billets du tableau de bord d’état du service de manière à ce qu’ils s’affichent automatiquement et traduits par l’ordinateur dans votre langue préférée, > tableau de bord d’état du service. Vous verrez un commutateur en haut de l’affichage pour faire basculer la traduction automatique sur ou hors de l’affichage. Lorsque ce paramètre est désactivé, les publications sont affichées en anglais. Lorsque ce paramètre est activé, les messages s'affichent dans la langue de votre choix. Le paramètre que vous choisissez est persistant pour chaque visite.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Comment vérifier l’intégrité du service Microsoft 365](view-service-health.md)
 

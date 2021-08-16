@@ -15,12 +15,12 @@ localization_priority: Normal
 audience: microsoft-business
 keywords: Microsoft 365 Business, Microsoft 365, SMB, transition d’un abonnement Fournisseur de solutions Cloud
 ms.date: 11/01/2017
-ms.openlocfilehash: 47b65b2de9db0fd27e29272937bab2041eb67300
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: c35cb3b78c4fe2cebc8308b34ceef3decd346b3db298ce5fb56abc8cf205e69d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867126"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transition d’un abonnement Fournisseur de solutions Cloud Microsoft365Business
 
@@ -57,7 +57,7 @@ Si vous avez un abonnement Fournisseur de solutions Cloud Microsoft365Business v
 9. Si vous le souhaitez, vous pouvez également valider le contrat de licence. Pour cela, procédez comme suit:
     1. Sélectionnez **Utilisateurs et licences** dans la page **Abonnements** de la société.
     2. Dans la page **Utilisateurs et licences,** sélectionnez un utilisateur.
-    3. Sur la page de l’utilisateur, consultez la section Attribuer des **licences** et vérifiez qu’elle affiche **Microsoft 365 Business**.
+    3. Dans la page de l’utilisateur, consultez la section Attribuer des **licences** et vérifiez qu’elle affiche **Microsoft 365 Business**.
 
         ![Vérifier que la licence Microsoft 365Business est attribuée à l’utilisateur](../../media/pc_customer_userslicenses_m365b_validate.png)
 
