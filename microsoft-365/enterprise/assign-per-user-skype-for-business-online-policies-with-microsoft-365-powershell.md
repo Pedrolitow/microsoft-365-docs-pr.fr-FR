@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour affecter des paramètres de communication par utilisateur avec Skype Entreprise online.'
-ms.openlocfilehash: d7f369e96f3db95c741e6d4f2178eaf9032ab0bb
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 42bd63a8fa5fd4bf838be949302d9f65479bde98897ab8f01ae17b738886957a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894934"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Affecter des stratégies Skype Entreprise Online par utilisateur avec PowerShell pour Microsoft 365
 

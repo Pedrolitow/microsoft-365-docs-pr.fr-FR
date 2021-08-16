@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ac274b0b6e9758db8515a9774ab991f56c574174
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: c1921fabd44b21d00e19df91910d60662de87ee35c82b293a9e6bd344c118c5c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832330"
 ---
 # <a name="contact-support-for-mayotte"></a>Contacter le support pour Mayotte
 
@@ -33,10 +33,10 @@ Français : Mon-Fri 11:00-19:00
 
 Anglais : Mon-Fri 11:00-19:00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Français : Mon-Fri 10H00 à 23h00
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

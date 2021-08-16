@@ -14,19 +14,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Intégrer Windows 10 des appareils afin qu’ils peuvent envoyer des données de capteur aux solutions Microsoft 365 conformité
-ms.openlocfilehash: 676fb3a7ffcae8d108fd9b7fabe61bb78b7e1744
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: ac2cbf41d77960338885a98ffddc707618988848c6be8cc7ef4cb911da50a40d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895306"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Outils et méthodes d’intégration pour les appareils Windows 10.
 
 **S’applique à :**
 - [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
 
-Les appareils de votre organisation doivent être configurés pour que le service Microsoft 365 de protection contre la perte de données de point de terminaison puisse obtenir des données de capteur à partir de ces derniers. Il existe différentes méthodes et outils de déploiement que vous pouvez utiliser pour configurer les appareils de votre organisation.
+Les appareils de votre organisation doivent être configurés pour que le service Microsoft 365 protection contre la perte de données du point de terminaison puisse obtenir des données de capteur à partir de ces derniers. Il existe différentes méthodes et outils de déploiement que vous pouvez utiliser pour configurer les appareils de votre organisation.
 
 Les méthodes et outils de déploiement suivants sont pris en charge :
 

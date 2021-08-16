@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8bca8fa3446bc3e078c992b537b30dfe70e73f65
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 147f74b75a7c6954fb595d3fd8a0976ea821bdd5ac61a819bbffd98730bbd9d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650018"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53903304"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applications partenaires dans Microsoft Defender pour point de terminaison
 
@@ -39,7 +39,7 @@ Defender pour le point de terminaison prend en charge des applications tierces p
 
 La prise en charge de solutions tierces permet de rationaliser, d’intégrer et d’orchestrer davantage les défenses d’autres fournisseurs avec Microsoft Defender for Endpoint ; permettre aux équipes de sécurité de répondre efficacement mieux aux menaces modernes.
 
-Microsoft Defender pour point de terminaison s’intègre de façon transparente aux solutions de sécurité existantes. L’intégration offre une intégration avec les solutions suivantes, telles que :
+Microsoft Defender for Endpoint s’intègre de façon transparente aux solutions de sécurité existantes. L’intégration offre une intégration avec les solutions suivantes, telles que :
 
 - SIEM
 - Solutions de gestion des tickets et des services it
@@ -55,7 +55,7 @@ Microsoft Defender pour point de terminaison s’intègre de façon transparente
 Logo|Nom du partenaire|Description
 :---|:---|:---
 ![Image du logo AttackIQ](images/attackiq-logo.png)|[Plateforme AttackIQ](https://go.microsoft.com/fwlink/?linkid=2103502)|La plateforme AttackIQ valide que Defender pour endpoint est configuré correctement en lançant des attaques continues en toute sécurité sur les ressources de production
-![Image du logo Azure Sentinel](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Diffuser des alertes de Microsoft Defender pour point de terminaison dans Azure Sentinel
+![Image du logo Azure Sentinel](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Diffuser des alertes à partir de Microsoft Defender pour point de terminaison dans Azure Sentinel
 ![Image du logo Cymulate](images/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Corréler les résultats de Defender pour les points de terminaison avec des attaques simulées pour valider la détection précise et les actions de réponse efficaces
 ![Image du logo de sécurité élastique](images/elastic-security-logo.png)|[Sécurité élastique](https://go.microsoft.com/fwlink/?linkid=2139303)|La sécurité élastique est une solution gratuite et ouverte pour la prévention, la détection et la réponse aux menaces
 ![Image du logo IBM QRadar](images/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configurer IBM QRadar pour collecter les détections à partir de Defender for Endpoint
@@ -73,10 +73,10 @@ Logo|Nom du partenaire|Description
 ![Image du logo CyberSponse CyOps](images/cybersponse-logo.png)|[CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943)|CyOps s’intègre à Defender for Endpoint pour automatiser les manuels de réponse aux incidents à haut débit des clients
 ![Image du logo ActiveEye de risque delta](images/delta-risk-activeeye-logo.png)|[Risque delta ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Le risque delta, l’un des principaux fournisseurs de services de sécurité et soc-as-a-Service, intègre Defender pour Endpoint à sa plateforme NATIVE DU CLOUD, ActiveEye.
 ![Image de Demisto, logo de la société Palo Alto Networks](images/demisto-logo.png)|[Demisto, une société de réseaux Palo Alto](https://go.microsoft.com/fwlink/?linkid=2108414)|Demisto s’intègre à Defender for Endpoint pour permettre aux équipes de sécurité d’orchestrer et d’automatiser la surveillance, l’enrichissement et la réponse de la sécurité des points de terminaison
-![Image du logo Microsoft Flow & Azure Functions](images/ms-flow-logo.png)|[Microsoft Flow & fonctions Azure](https://go.microsoft.com/fwlink/?linkid=2114300)|Utiliser les connecteurs Defender pour les points de terminaison pour Azure Logic Apps & Microsoft Flow procédures de sécurité
+![Image du logo Microsoft Flow & Azure Functions](images/ms-flow-logo.png)|[Microsoft Flow & fonctions Azure](https://go.microsoft.com/fwlink/?linkid=2114300)|Utiliser les connecteurs Defender for Endpoint pour Azure Logic Apps & Microsoft Flow automatiser les procédures de sécurité
 ![Image du logo InsightConnect Rapide7](images/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect s’intègre à Defender for Endpoint pour accélérer, rationaliser et intégrer vos processus de sécurité longs
 ![Image du logo ServiceNow](images/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|Ing d’alertes dans la solution Opérations de sécurité ServiceNow basée sur l’intégration de l’API microsoft Graph
-![Image du logo Caption caption](images/swimlane-logo.png)|[Sous-groupe](https://go.microsoft.com/fwlink/?linkid=2113902)|Optimiser les fonctionnalités de réponse aux incidents en utilisant TogetherIng Et Defender pour Endpoint
+![Image du logo Caption caption](images/swimlane-logo.png)|[Sous-groupe](https://go.microsoft.com/fwlink/?linkid=2113902)|Optimiser les fonctionnalités de réponse aux incidents à l’aide de Lassage et Defender pour le point de terminaison ensemble
 
 ### <a name="threat-intelligence"></a>Veille contre les menaces
 
@@ -125,7 +125,7 @@ L’intégration de solutions de gestion des tickets permet d’implémenter des
 
 ## <a name="security-orchestration-and-automation-response-soar-integration"></a>Intégration de l’orchestration de sécurité et de la réponse d’automatisation (CASER)
 
-Les solutions d’orchestration peuvent aider à créer des playbooks et à intégrer le modèle de données enrichi et les actions que defender pour les API de point de terminaison expose pour orchestrer des réponses, telles que la requête de données de périphérique, déclencher l’isolation de périphérique, bloquer/autoriser, résoudre une alerte, etc.
+Les solutions d’orchestration peuvent aider à créer des playbooks et à intégrer le modèle de données enrichi et les actions que defender pour les API de point de terminaison expose pour orchestrer les réponses, telles que la requête de données de périphérique, déclencher l’isolation de l’appareil, bloquer/autoriser, résoudre une alerte, etc.
 
 ## <a name="external-alert-correlation-and-automated-investigation-and-remediation"></a>Corrélation d’alertes externes et examen et correction automatisés
 

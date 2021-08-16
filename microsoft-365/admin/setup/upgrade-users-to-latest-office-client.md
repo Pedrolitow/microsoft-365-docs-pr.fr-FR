@@ -24,14 +24,14 @@ ms.custom:
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau Microsoft Office vers la dernière Office client pour les utilisateurs de votre organisation.
 ms.topic: article
-ms.openlocfilehash: 877659e420079ed607adc13e5bbe44bdc979f5ac
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 15f798d413cb12cb0a44da9f853e663c0a2ae436f0aeb8a583398a13d9f4f9dc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924694"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832756"
 ---
-# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau Microsoft 365 pour les utilisateurs professionnels vers le dernier client Office client
+# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau votre Microsoft 365 pour les utilisateurs professionnels vers le dernier client Office client
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 atteint la fin de la prise en charge
 
@@ -100,7 +100,7 @@ Passez à un abonnement qui inclut Office. Voir [Basculer vers une autre Microso
 
 ## <a name="step-3---uninstall-office"></a>Étape 3 : Désinstaller Office
 
-Avant d’installer la dernière version de Office, nous vous recommandons de désinstaller toutes les anciennes versions de Office. Toutefois, si vous changez d’avis concernant la mise à niveau des Office, notez les instances suivantes où vous ne pourrez pas réinstaller Office après l’avoir désinstallée.
+Avant d’installer la dernière version de Office, nous vous recommandons de désinstaller toutes les anciennes versions de Office. Toutefois, si vous changez d’avis sur la mise à niveau des Office, notez les instances suivantes où vous ne pourrez pas réinstaller Office après l’avoir désinstallée.
   
 Si vous avez des produits tiers, contactez le fabricant pour savoir s’il existe une mise à jour qui fonctionne avec la dernière version de Office.
 
@@ -125,7 +125,7 @@ Si vous préférez installer votre ancienne version de Office côte à côte ave
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>Étape 4 : Attribuer des licences Office aux utilisateurs
 
-Si vous ne l’avez pas déjà fait, attribuez des licences à tous les utilisateurs de votre organisation qui doivent installer Office, voir Attribuer des licences aux utilisateurs dans [Microsoft 365 entreprise.](../manage/assign-licenses-to-users.md)
+Si vous ne l’avez pas déjà fait, attribuez des licences aux utilisateurs de votre organisation qui doivent installer Office, voir Attribuer des licences aux utilisateurs dans [Microsoft 365 entreprise.](../manage/assign-licenses-to-users.md)
   
 ## <a name="step-5---install-office"></a>Étape 5 : installer Office
 

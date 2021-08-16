@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Utilisez cette feuille de route pour configurer les logiciels client et serveur pour Microsoft 365.
-ms.openlocfilehash: ee101b3ba148f1075939d56904dc9d2ecf14e1b9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6fe2a271c8a6837bdd2dcf98f3aa5ca45f880ddd560b72979fb3e9a5b666caa0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865002"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Feuille de route logicielle client et serveur pour Microsoft 365
 
 La plupart des organisations d’entreprise ont un environnement hétérogène qui inclut plusieurs sorties de systèmes d’exploitation, de logiciels clients et de logiciels serveur. Microsoft 365 pour Enterprise inclut les versions les plus sécurisées des composants clés de votre infrastructure informatique. Il inclut également des fonctionnalités de productivité conçues pour tirer parti des technologies cloud.
 
-Pour optimiser la valeur commerciale de la Microsoft 365 pour Enterprise suite intégrée de produits, commencez à planifier et implémenter une stratégie de migration des produits :
+Pour optimiser la valeur commerciale de la Microsoft 365 pour Enterprise suite intégrée de produits, commencez à planifier et à implémenter une stratégie de migration des produits :
 
 - Le Office client installé sur vos ordinateurs pour Applications Microsoft 365 pour les grandes entreprises.
 - Les Office serveurs installés sur vos serveurs pour leurs services équivalents dans Microsoft 365.
@@ -60,7 +60,7 @@ Applications Microsoft 365 pour les grandes entreprises installe automatiquement
 
 ### <a name="office-2010"></a>Office 2010
 
-Pour les versions Office dans la version Office 2010, le support a pris fin le *13 octobre 2020.* Pour plus d’informations, [voir Office 2010 end-of-support roadmap](/deployoffice/office-2010-end-support-roadmap).
+Pour les versions Office la version Office 2010, le support a pris fin le *13 octobre 2020.* Pour plus d’informations, [voir Office 2010 end-of-support roadmap](/deployoffice/office-2010-end-support-roadmap).
 
 Vous pouvez envisager de mettre à niveau vos ordinateurs Office 2010 vers Office 2013 ou Office 2016. Toutefois, ces deux versions doivent être mises à jour manuellement. Pensez donc à suivre les étapes suivantes à la place :
 
@@ -91,7 +91,7 @@ Les grandes et les petites organisations utilisent souvent une combinaison d’a
 - N’incluez pas les nouvelles applications de productivité, telles que Microsoft Teams.
 - N’incluez pas les dernières fonctionnalités de sécurité, telles que Exchange et Defender pour Office 365.
 
-Microsoft 365 pour Enterprise inclut des versions cloud des services serveur Office qui utilisent certains des mêmes outils que les versions sur site du logiciel serveur Office, tels que les navigateurs web et le client Outlook. Ces services sont automatiquement mis à jour pour des raisons de sécurité. Ainsi, votre personnel informatique économise le temps qu’il faut pour gérer et mettre à jour les serveurs locaux. Ces services offrent également de nouvelles améliorations de fonctionnalités qui ne sont pas présentes dans Office logiciels serveur.
+Microsoft 365 pour Enterprise inclut des versions en nuage des services serveur Office qui utilisent certains des mêmes outils que les versions sur site des logiciels serveur Office, tels que les navigateurs web et le client Outlook. Ces services sont automatiquement mis à jour pour des raisons de sécurité. Ainsi, votre personnel informatique économise le temps qu’il faut pour gérer et mettre à jour les serveurs locaux. Ces services offrent également de nouvelles améliorations de fonctionnalités qui ne sont pas présentes dans Office logiciels serveur.
 
 Utilisez les ressources suivantes pour plus d’informations sur la migration des utilisateurs et des données pour Microsoft 365 charges de travail spécifiques :
 
@@ -101,13 +101,13 @@ Utilisez les ressources suivantes pour plus d’informations sur la migration de
 
 ### <a name="office-2007-server-products"></a>Office 2007 server products
 
-Pour les produits serveur de Office version 2007, la fin de la prise en charge est déjà passée. Pour plus d’informations, voir les articles suivants :
+Pour les produits serveur de la Office 2007, la fin de la prise en charge est déjà passée. Pour plus d’informations, voir les articles suivants :
 
 - [Exchange feuille de route de fin de prise en charge 2007](exchange-2007-end-of-support.md)
 - [SharePoint Feuille de route de fin de la prise en charge de Server 2007](sharepoint-2007-end-of-support.md)
 - [Project Feuille de route de fin de la prise en charge de Server 2007](project-server-2007-end-of-support.md)
-- [Office Feuille de route de fin de la prise en charge de Communications Server](/skypeforbusiness/plan-your-deployment/upgrade)
-- [PerformancePoint Server feuille de route de fin de la prise en charge 2007](pps-2007-end-of-support.md)
+- [Office Feuille de route de fin de prise en charge de Communications Server](/skypeforbusiness/plan-your-deployment/upgrade)
+- [PerformancePoint Server feuille de route de fin de prise en charge 2007](pps-2007-end-of-support.md)
 
 Au lieu de mettre à niveau vos produits serveur dans la version Office 2007 avec les produits serveur des Office 2010, Office 2013 ou Office 2016, envisagez d’suivre les étapes suivantes :
 
@@ -117,7 +117,7 @@ Au lieu de mettre à niveau vos produits serveur dans la version Office 2007 ave
 
 ### <a name="office-2010-server-products"></a>Office 2010 server products
 
-Le support [Exchange Server 2010 a](exchange-2010-end-of-support.md) pris fin *le 13 octobre 2020.*
+La prise [en charge Exchange Server 2010](exchange-2010-end-of-support.md) a pris fin *le 13 octobre 2020.*
 
 La fin du support pour [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) est prévue pour le *13 avril 2021*.
 
@@ -125,7 +125,7 @@ Au lieu de mettre à niveau ces produits serveur dans la version Office 2010 ave
 
 1. Migrez les données sur vos serveurs Office 2010 vers Microsoft 365. Pour plus d’informations, [consultez FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365) ou engager un partenaire Microsoft.
 2. Déployer les nouvelles fonctionnalités et processus de travail pour vos utilisateurs.
-3. Lorsque vous n’avez plus besoin des serveurs locaux exécutant Office 2010, désaffectez-les.
+3. Lorsque vous n’avez plus besoin des serveurs locaux exécutant Office produits serveur 2010, désaffectez-les.
 
 ### <a name="office-2013-server-products"></a>Office produits serveur 2013
 
@@ -137,7 +137,7 @@ Pour les produits serveur de la Office 2013, la fin de la prise en charge n’a 
 
 ### <a name="office-2016-server-products"></a>Office 2016 server products
 
-Pour les produits serveur de la Office version 2016, la fin de la prise en charge n’a pas été déterminée. Pour tirer parti du service basé sur le cloud et des améliorations apportées à la transformation numérique de votre entreprise, envisagez d’suivre les étapes suivantes :
+Pour les produits serveur de la Office version 2016, la fin de la prise en charge n’a pas été déterminée. Pour tirer parti du service basé sur le cloud et des améliorations apportées pour transformer numériquement votre entreprise, envisagez d’suivre les étapes suivantes :
 
 1. Migrez les données sur vos serveurs Office 2016 vers Microsoft 365. Pour plus d’informations, [consultez FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365) ou engager un partenaire Microsoft.
 2. Déployer les nouvelles fonctionnalités et processus de travail pour vos utilisateurs.
@@ -155,15 +155,15 @@ Voici un résumé visuel des options de mise à niveau, de migration et de migra
 
 [![Image montrant les options de fin de prise en charge Office 2010 clients et serveurs et Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Cette affiche d’une page vous permet de comprendre rapidement les chemins d’accès que vous pouvez prendre pour gérer la fin de la prise en charge des produits client et serveur Office 2010 et Windows 7. Les chemins d’accès préférés sont pris en charge Microsoft 365 pour Enterprise.
+Cette affiche d’une page permet de comprendre rapidement les chemins d’accès que vous pouvez prendre pour gérer la fin de la prise en charge des produits client et serveur Office 2010 et Windows 7. Les chemins d’accès préférés sont pris en Microsoft 365 pour Enterprise.
 
-Vous pouvez [télécharger cette affiche et](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) l’imprimer en taille de lettre, taille légale ou tabloïd (11 x 17).
+Vous pouvez [télécharger cette affiche et](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) l’imprimer au format lettre, taille légale ou tabloïd (11 x 17).
 
 ## <a name="transition-your-entire-organization"></a>Transition de l'ensemble de votre organisation
 
 Pour obtenir une meilleure image de la façon de déplacer l’ensemble de votre organisation vers les produits et services Microsoft 365 pour Enterprise, téléchargez cette affiche de transition :
 
-[![Image montrant l’affiche Transition vers Microsoft 365'affichage.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![Image montrant l’affiche Transition vers Microsoft 365 projet.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 Cette affiche de deux pages est un moyen rapide d'inventorier vos infrastructures existantes. Utilisez-le pour obtenir des conseils pour passer à un produit ou un service Microsoft 365 pour Enterprise. Il présente les produits Windows et Office, ainsi que d’autres éléments d’infrastructure et de sécurité tels que la gestion des appareils, la protection des identités et des menaces, ainsi que la protection des informations et de la conformité.
 

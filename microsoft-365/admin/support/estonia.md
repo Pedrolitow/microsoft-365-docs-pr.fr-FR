@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e93657c41555e16cc477116d2ea11be0828843b7
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 9f6a5cca24c88f61c08b77e09963e455cc80cbb9be210b0d56d1a27ad6e96130
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298889"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852862"
 ---
 # <a name="contact-support-for-estonia"></a>Contacter le support technique pour l’Estonie
 
@@ -33,4 +33,4 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7

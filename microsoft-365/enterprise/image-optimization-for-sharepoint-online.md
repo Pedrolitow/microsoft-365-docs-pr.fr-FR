@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Découvrez comment utiliser les rendus et les sprites pour améliorer les performances des images sur vos sites de publication classiques SharePoint Online.
-ms.openlocfilehash: 15885f1d8803332e24e2656a48b796dab28c665f
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: d3bc078bd462e6695afd74d36712757d291215a7b9bbdb6158c1862c034f8158
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924574"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864706"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Optimisation des images pour SharePoint sites de publication classiques en ligne
 
 La vitesse de chargement d’une page web dépend de la taille combinée de tous les composants requis pour restituer la page, y compris les images, HTML, JavaScript et CSS. Les images sont un excellent moyen de rendre votre site plus attrayant, mais leur taille peut affecter les performances. En optimisant vos images avec compression et re re resserr, et en utilisant des sprites, vous pouvez décaner les effets des images très grandes. À l SharePoint rendus d’image, vous pouvez charger une seule grande image et afficher des sections de l’image, ce qui permet de la réutiliser plutôt que de la recharger.
 
 >[!NOTE]
->Cette rubrique s’applique SharePoint sites de publication classiques en ligne, et non aux sites portail modernes. Pour plus d’informations sur l’optimisation des images dans SharePoint sites portail modernes en ligne, voir Optimiser les images dans les pages SharePoint [portail moderne en ligne.](modern-image-optimization.md)
+>Cette rubrique s’applique SharePoint sites de publication classiques en ligne, et non aux sites portail modernes. Pour plus d’informations sur l’optimisation des images SharePoint sites portail modernes en ligne, voir Optimiser les images dans les pages SharePoint [portail moderne en ligne.](modern-image-optimization.md)
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>Utilisation de sprites pour accélérer le chargement de l’image
 
@@ -59,9 +59,9 @@ Les rendus d’image sont une fonctionnalité de SharePoint Online qui vous perm
 > [!NOTE]
 > Les rendus ne sont disponibles que pour SharePoint lorsque la publication est activée. Vous pouvez activer la publication sous Paramètres Site Paramètres Gérer les fonctionnalités de \> \> site SharePoint Server \> Publishing. L’option n’apparaîtra pas autrement.
   
-Le re dimensionnement du rendu d’image fonctionne en prenant la plus petite dimension que vous définissez, largeur ou hauteur, puis en re dimensionnant l’image de sorte que l’autre dimension soit automatiquement re dimensionné en fonction des proportions verrouillées. Par défaut, elle rognait l’image du centre par les dimensions restantes. Par exemple, si vous définissez un rendu de 100 px de large et de 50 px de hauteur et que votre image d’origine a une largeur de 1 000 px et une hauteur de 800 px, il sera re dimensionné de sorte que la dimension de 800 px soit maintenant de 50 px et que la dimension 1 000 px (désormais 62,5 px) soit rogné du centre de l’image.
+Le re dimensionnement du rendu d’image fonctionne en prenant la plus petite dimension que vous définissez, largeur ou hauteur, puis en re dimensionnant l’image de sorte que l’autre dimension soit automatiquement re dimensionné en fonction des proportions verrouillées. Par défaut, elle rognait l’image du centre par les dimensions restantes. Par exemple, si vous définissez un rendu de 100 px de large et de 50 px de haut et que votre image d’origine a une largeur de 1 000 px et une hauteur de 800 px, elle sera re dimensionné de sorte que la dimension 800px soit maintenant de 50 px et que la dimension 1 000 px (désormais 62,5 px) soit rogné du centre de l’image.
   
-Les étapes sont relativement simples, mais pour que les images utilisent les rendus, les rendus doivent être sur le site SharePoint avant d’ajouter les images. En outre, les fonctionnalités infrastructure de publication de serveur SharePoint (niveau collection de sites) et SharePoint Server Publishing (niveau site) doivent également être désactivées.
+Les étapes sont relativement simples, mais pour que les images utilisent les rendus, les rendus doivent être sur le site SharePoint avant d’ajouter les images. En outre, les fonctionnalités infrastructure de publication de serveur SharePoint (niveau collection de sites) et SharePoint Server Publishing (niveau site) doivent également être allumées.
   
 ### <a name="add-an-image-rendition-to-speed-up-page-loading"></a>Ajouter un rendu d’image pour accélérer le chargement de la page
   

@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 74a98e915577cf86ec32a706bd3b8f558f49db95
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8158e911a8520c07cf5f85fea8b64d65820d603d7f9f49938849ff2df6fc45ed
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881951"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer des Microsoft 365 Business Premium dans l’Assistant Installation
 
@@ -69,7 +69,7 @@ Lorsque vous achetez Microsoft 365 Business Premium, vous avez la possibilité d
     ![Capture d’écran de la page Personnaliser votre connectez-vous.](../media/adddomain.png)
 
     
-4. Suivez les étapes de l’Assistant pour créer des enregistrements DNS chez un fournisseur d’hébergement [DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Microsoft 365 qui vérifie que vous êtes propriétaire du domaine. Si vous connaissez votre hôte de domaine, voir aussi Ajouter un domaine [à Microsoft 365](/microsoft-365/admin/setup/add-domain).
+4. Suivez les étapes de l’Assistant pour créer des enregistrements DNS chez un fournisseur d’hébergement [DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Microsoft 365 qui vérifie que vous êtes propriétaire du domaine. Si vous connaissez votre hôte de domaine, voir aussi [Ajouter un domaine à Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     Si votre fournisseur d’hébergement est GoDaddy ou si un autre hôte est activé avec [connexion de domaine](/office365/admin/get-help-with-domains/domain-connect), le processus est simple et vous êtes automatiquement invité à vous connecter et à laisser Microsoft s’authentifier en votre nom.
 
@@ -81,7 +81,7 @@ Vous pouvez ajouter des utilisateurs dans l’Assistant, mais vous pouvez égale
 
 #### <a name="add-users-in-the-wizard"></a>Ajouter des utilisateurs dans l’Assistant
 
-Tous les utilisateurs que vous ajoutez dans l’Assistant obtiennent automatiquement une licence Microsoft 365 Business Premium’utilisateur.
+Tous les utilisateurs que vous ajoutez dans l’Assistant obtiennent automatiquement une licence Microsoft 365 Business Premium licence.
 
 ![Capture d’écran de la page Ajouter de nouveaux utilisateurs dans l’Assistant](../media/addnewuserspage.png)
 
@@ -118,7 +118,7 @@ Les stratégies que vous avez définies dans l’Assistant sont appliquées auto
 
 3. Dans la page Protéger les données **dans Office** pour appareils mobiles, laissez la gestion des applications mobiles en place, développez les paramètres et examinez-les, puis sélectionnez Créer une stratégie de gestion des applications **mobiles.**
 
-    ![Capture d’écran de protéger les données Office page mobile.](../media/protectdatainmobile.png)
+    ![Capture d’écran de La protection des Office pour la page mobile.](../media/protectdatainmobile.png)
 
 
 ## <a name="secure-windows-10-pcs"></a>Sécuriser les PC Windows 10

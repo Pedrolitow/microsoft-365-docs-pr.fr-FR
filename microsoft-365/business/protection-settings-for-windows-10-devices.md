@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Découvrez comment créer ou modifier des stratégies de gestion des applications et protéger les fichiers de travail sur les appareils personnels Windows 10 vos utilisateurs.
-ms.openlocfilehash: aa270c563e6bdce6fd48f8713d7db3ce23921925
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6d38d1765e0a331516b2261870112d530ab4ee50f24c6defba95964ea4d9dcfa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852641"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Définir ou modifier les paramètres de protection des applications pour Windows 10 appareils
 

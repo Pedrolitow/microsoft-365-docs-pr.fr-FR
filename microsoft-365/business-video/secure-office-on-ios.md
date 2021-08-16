@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment sécuriser les applications Office sur iOS à l’Microsoft 365 Business Premium.
-ms.openlocfilehash: 5a5f52f87fe63fdec6df9611a5ea44a2ecf4466b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: bdab7e1ddbd55e64c1c568cc65ff3f700223d9dfd4c93213f51e8c0909fbc6c3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580461"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852766"
 ---
 # <a name="secure-office-apps-on-ios"></a>Sécuriser les applications Office sur iOS
 
@@ -45,7 +45,7 @@ Vous pouvez configurer une stratégie d’accès utilisateur qui oblige les util
     - **Chiffrer les fichiers de travail**
 
 1. Sous **Les fichiers de ces applications** seront protégés, sélectionnez les Office que vous souhaitez protéger sur les appareils mobiles.
-1. Sous Qui obtenir ces **paramètres ?**, tous les utilisateurs sont  sélectionnés par défaut, mais vous pouvez choisir Modifier pour sélectionner les groupes de sécurité que vous avez créés.
-1. Pour terminer la création de la stratégie, choisissez **Ajouter**.
+1. Sous Qui vous obtenez ces **paramètres ?**, tous les utilisateurs  sont sélectionnés par défaut, mais vous pouvez choisir Modifier pour sélectionner les groupes de sécurité que vous avez créés.
+1. Pour terminer la création de la stratégie, choisissez **Ajouter.**
 1. Dans la page **Ajouter une stratégie,** choisissez **Fermer.**
 1. Dans la page d’accueil du Centre d’administration,  confirmez que votre nouvelle stratégie a été ajoutée en choisissant Stratégies et en l’avisant sur la page **Stratégies.**

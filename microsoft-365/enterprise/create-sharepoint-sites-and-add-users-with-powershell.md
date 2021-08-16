@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : Utilisez PowerShell pour créer de nouveaux sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.'
-ms.openlocfilehash: 0c363df3edd40d810a0d8ca63090c0fec4c1c155
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 32c577b40dc85ebad586376a6a47e4587502eae626c21ce3076866e39a17e321
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864818"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Création de sites SharePoint Online et ajout d’utilisateurs avec PowerShell
 
@@ -34,7 +34,7 @@ Lorsque vous utilisez PowerShell pour Microsoft 365 pour créer des sites ShareP
 
 ## <a name="connect-to-sharepoint-online"></a>Se connecter à SharePoint Online
 
-Les procédures de cette rubrique exigent que vous vous connectiez à SharePoint Online. Pour obtenir des instructions, [voir Connecter à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+Les procédures de cette rubrique exigent que vous vous connectiez à SharePoint Online. Pour obtenir des instructions, [voir Connecter pour SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>Étape 1 : Créer des collections de sites à l’aide de PowerShell
 

@@ -16,19 +16,19 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
-description: Découvrez comment accéder à la messagerie électronique à partir de votre appareil mobile.
-ms.openlocfilehash: 1c1033d98d9035767e9d7d8608a33421c7c30cbd
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: Découvrez comment accéder à la messagerie à partir de votre appareil mobile.
+ms.openlocfilehash: a2a4df56a6f17a8e4d5a1c7b9165b58971c46170fdfa08b808b1cc7ca2563d66
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832837"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Options d’accès à la messagerie à partir de votre appareil mobile
 
 Votre organisation configure les paramètres qui contrôlent les applications mobiles que vous pouvez utiliser pour accéder à votre compte de travail pour la messagerie, le calendrier et les contacts.
 
-Les Outlook pour Android et Outlook pour les applications mobiles iOS sont conçues pour votre courrier électronique scolaire ou scolaire. Ces applications fournissent des fonctionnalités telles que la boîte de réception [Focus,](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)qui conserve les messages électroniques importants au premier plan et au centre, et [Assistant Planification](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470), qui vous aide à trouver des heures de réunion qui fonctionnent avec des collègues et trouve simplement des salles de conférence disponibles.
+Les Outlook pour Android et Outlook pour les applications mobiles iOS sont conçus pour votre courrier électronique scolaire ou scolaire. Ces applications fournissent des fonctionnalités telles que la boîte de réception [Focus,](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)qui conserve les messages électroniques importants au premier plan et au centre, et [Assistant Planification,](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470)qui vous aide à trouver des heures de réunion qui fonctionnent avec des collègues et trouve simplement des salles de conférence disponibles.
   
 ## <a name="end-user-experience"></a>Expérience utilisateur final
 

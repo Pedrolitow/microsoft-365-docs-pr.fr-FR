@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurer des fonctionnalités de conformité pour éviter la perte de données et sécuriser les informations sensibles de vos clients et de vos clients.
-ms.openlocfilehash: 945f8a283b90b89da2fbe67a073e0807b80d198f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ae5e5727db1f372c40aa4468329021525b6dfc8c5ebbf34705184e461df069e5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881860"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 
@@ -37,19 +37,19 @@ Votre Microsoft 365 Business Premium comprend des fonctionnalités pour protége
 
 Voir [Créer une stratégie DLP à partir](../compliance/create-a-dlp-policy-from-a-template.md) d’un modèle pour obtenir un exemple sur la façon de configurer une stratégie pour protéger contre la perte de données personnelles. 
   
-DLP est livré avec de nombreux modèles de stratégie prêts à l’emploi pour de nombreux paramètres régionaux différents. Par exemple, les données financières en Australie, la Loi canadienne sur les informations personnelles, les données financières américaines, etc. Voir [ce que les modèles](../compliance/what-the-dlp-policy-templates-include.md) de stratégie DLP incluent pour obtenir une liste complète. Tous ces modèles peuvent être activés de la même façon que l’exemple de modèle PII. 
+DLP est livré avec de nombreux modèles de stratégie prêts à l’emploi pour de nombreux paramètres régionaux différents. Par exemple, les données financières en Australie, la Loi canadienne sur les informations personnelles, les données financières américaines, etc. Voir [ce que les modèles de stratégie DLP incluent](../compliance/what-the-dlp-policy-templates-include.md) pour obtenir une liste complète. Tous ces modèles peuvent être activés de la même façon que l’exemple de modèle PII. 
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurer la rétention du courrier électronique avec Archivage Exchange Online
 
- **Archivage Exchange Online** de licence permettent de maintenir les normes réglementaires et de conformité en conservant le contenu des e-mails pour eDiscovery. Cela permet également de réduire les risques en cas de poursuites judiciaires et permet de récupérer des données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
+ **Archivage Exchange Online** licences permettent de maintenir les normes réglementaires et de conformité en conservant le contenu du courrier électronique pour eDiscovery. Cela permet également de réduire les risques en cas de poursuites judiciaires et permet de récupérer des données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
   
-**Attente pour litige :** Vous pouvez conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés, en mettant la boîte aux lettres entière d’un utilisateur en conservation pour litige. 
+**Attente pour litige :** Vous pouvez conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés, en mettant la boîte aux lettres entière d’un utilisateur en attente pour litige. 
     
 Pour placer une boîte aux lettres en attente pour litige, dans le Centre d’administration :
     
-1. Dans le navigation de gauche, allez à **Utilisateurs** \> **actifs.**
+1. Dans le navigation gauche, allez à **Utilisateurs** \> **actifs.**
     
-2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en attente pour litige. Dans le volet utilisateur, développez **Paramètres** de messagerie et, en plus des **paramètres,** choisissez Modifier **Exchange propriétés.**
+2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en attente pour litige. Dans le volet utilisateur, développez **Paramètres** de messagerie, puis en plus des **paramètres,** choisissez **Modifier Exchange propriétés.**
     
 3. Dans la page de boîte aux lettres de l’utilisateur, choisissez ** fonctionnalités de boîte aux lettres ** dans le navigation gauche, puis choisissez le lien Activer sous Attente pour **litige.** 
     
@@ -61,7 +61,7 @@ Pour placer une boîte aux lettres en attente pour litige, dans le Centre d’ad
 
 Les étiquettes de niveau de sensibilité sont disponibles avec Azure Information Protection (AIP) Plan 1 et vous aident à classer et éventuellement protéger vos documents et e-mails en appliquant des étiquettes. Les étiquettes peuvent être appliquées automatiquement par les administrateurs qui définissent des règles et des conditions, manuellement par les utilisateurs ou à l’aide d’une combinaison dans laquelle des recommandations sont données aux utilisateurs.
 
-Pour configurer des étiquettes de niveau de sensibilité, affichez la vidéo créer et gérer [les étiquettes de](../business-video/create-sensitivity-labels.md) sensibilité.
+Pour configurer les étiquettes de niveau de sensibilité, affichez la vidéo créer et gérer [les étiquettes de](../business-video/create-sensitivity-labels.md) sensibilité.
 
 
 
@@ -74,4 +74,4 @@ Pour installer manuellement le client AIP :
 2. Pour vérifier que l’installation a fonctionné, affichez  un document Word et assurez-vous que l’option Sensibilité est disponible sous l’onglet **Accueil.**
 <br/>![Onglet Protection dans un document Word.](../media/word-sensitivity.png)
 
-Pour plus d’informations, [voir Installer le client.](/azure/information-protection/infoprotect-tutorial-step3)
+Pour plus d’informations, voir [Installer le client.](/azure/information-protection/infoprotect-tutorial-step3)

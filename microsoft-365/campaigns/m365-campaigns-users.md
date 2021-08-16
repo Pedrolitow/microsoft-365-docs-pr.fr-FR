@@ -24,26 +24,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment ces recommandations de sécurité pour Microsoft 365 Business Premium vos utilisateurs et protège vos données.
-ms.openlocfilehash: ce64189d721bc3eb356a39f431af01e67973516a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8e2ce13b694aa526c3c063bec7a4dc8c7699244f2c00f4dfee5d38bfe5208b1b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881677"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Impact de ces recommandations de sécurité sur vos utilisateurs
 
 Les recommandations de sécurité pour Microsoft 365 dans cette solution compliquent beaucoup plus l’accès des pirates informatiques à votre environnement. Le compromis est que vos utilisateurs doivent savoir comment travailler dans cet environnement plus sécurisé. Nous comprenons qu’un peu de patience soit nécessaire, mais il est intéressant de préserver la protection de votre organisation.
 
-![Illustration qui résume les points clés ci-dessous pour les iPhone, les appareils Android, les Mac, les Windows 10, le partage et le personnel clé](../media/M365-democracy-Users_900px.png)
+![Illustration qui résume les points clés ci-dessous pour les iPhone, les appareils Android, les Mac, Windows 10, le partage et le personnel clé](../media/M365-democracy-Users_900px.png)
 
 ## <a name="use-secure-email-practices"></a>Utiliser des pratiques de messagerie sécurisée
 
-Tous les utilisateurs doivent connaître et utiliser ces pratiques de messagerie pour sécuriser leur messagerie :
+Tous les utilisateurs doivent connaître ces pratiques de messagerie et les utiliser pour sécuriser leur messagerie :
 
 - Configurer le courrier électronique pour utiliser l’authentification multifacteur avec l’application d’authentification.
 - Vérifiez les e-mails légitimes et recherchez les conseils de sécurité du hameçonnage avancé dans Defender pour Office 365 Protection.
-- Ouvrez uniquement les pièces jointes et liens sécurisés, comme vérifié par les liens et pièces jointes sécurisés.
+- Ouvrez uniquement les pièces jointes et liens sécurisés, comme vérifié Coffre liens et Coffre pièces jointes.
 
 En savoir plus sur [l’authentification multifacteur,](m365-campaigns-multifactor-authenication.md) [le hameçonnage et d’autres attaques.](m365-campaigns-phishing-and-attacks.md)
 
@@ -72,13 +72,13 @@ Pour [les appareils Windows 10 mac](m365-campaigns-protect-pcs-macs.md)non Windo
 
 |**Windows 10**|**Mac**|
 |:-----|:------|
-|Activer la protection BitLocker appareil<p><p> S’assurer Windows Defender reste sur <p>Activer le pare-feu Windows de sécurité| Utiliser FileVault pour chiffrer le disque Mac <p><p>Utiliser un logiciel antivirus fiable <p>Activer la protection contre le pare-feu|
+|Activer la protection des appareils BitLocker<p><p> S’assurer Windows Defender reste sur <p>Activer le pare-feu Windows de sécurité| Utiliser FileVault pour chiffrer le disque Mac <p><p>Utiliser un logiciel antivirus fiable <p>Activer la protection contre le pare-feu|
 
 Pour en savoir plus sur ces recommandations, voir Protéger votre compte et vos appareils contre les [pirates informatiques et les programmes malveillants.](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Collaborer à l’aide Microsoft Teams, OneDrive, SharePoint Online et d’autres outils
 
-Vos utilisateurs peuvent être tentés de partager et de stocker des fichiers de votre organisation à des endroits autres que Microsoft 365. Microsoft 365 facilite autant que possible la collaboration et le partage en toute sécurité. Vous pouvez [partager des fichiers et](share-files-and-videos.md) des vidéos directement à partir Microsoft Teams, OneDrive, Stream et même à partir d’un fichier. Le partage à partir de ces outils permet d’éviter la fuite de vos données. Vous pouvez ajouter une protection supplémentaire aux données sensibles pour empêcher le partage à l’extérieur de votre organisation.
+Vos utilisateurs peuvent être tentés de partager et de stocker les fichiers de votre organisation à des endroits autres que Microsoft 365. Microsoft 365 facilite autant que possible la collaboration et le partage en toute sécurité. Vous pouvez [partager des fichiers et](share-files-and-videos.md) des vidéos directement à partir Microsoft Teams, OneDrive, Stream et même à partir d’un fichier. Le partage à partir de ces outils permet d’éviter la fuite de vos données. Vous pouvez ajouter une protection supplémentaire aux données sensibles pour empêcher le partage à l’extérieur de votre organisation.
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurer des appareils Windows 10 gérés
 

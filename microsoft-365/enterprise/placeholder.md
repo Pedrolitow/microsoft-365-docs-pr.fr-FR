@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: TBD.
-ms.openlocfilehash: 2bf1cf13e56be6d1c0f559a14687dbf135f8fc50
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 57909f520db85994374068f6d2734dd07d0510cf56d5281dd45c284437e38ddf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894922"
 ---
 # <a name="placeholder-article"></a>Article sur l’espace réservé
 

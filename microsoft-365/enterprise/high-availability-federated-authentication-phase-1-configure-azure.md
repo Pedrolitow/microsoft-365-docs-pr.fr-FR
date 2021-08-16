@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour héberger l’authentification fédérée haute disponibilité pour Microsoft 365.'
-ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e9b68fe1fa2c4028186d86b5cf6d419f63cfc79d57d5de8c4817c762791b3a55
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929107"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864762"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
@@ -57,7 +57,7 @@ Pour les trois premiers sous-réseaux, spécifiez un nom et un espace d’adress
     
 2. Convertissez les bits résultants en nombres décimaux et exprimez-les sous forme d'espace d'adressage, en définissant la longueur du préfixe sur une valeur équivalente à la taille du sous-réseau de passerelle.
     
-Consultez la calculatrice [d’espace](address-space-calculator-for-azure-gateway-subnets.md) d’adressare pour les sous-réseaux de passerelle Azure pour un bloc de commandes PowerShell et une application console C# Python qui effectue ce calcul pour vous.
+Consultez la calculatrice d’espace d’adressare pour les [sous-réseaux](address-space-calculator-for-azure-gateway-subnets.md) de passerelle Azure pour un bloc de commandes PowerShell et une application console C# Python qui effectue ce calcul pour vous.
   
 Renseignez-vous auprès de votre service informatique pour déterminer ces espaces d'adressage à partir de l'espace d'adressage de réseau virtuel.
   
@@ -314,6 +314,6 @@ Utilisez [la phase 2 : configurez les contrôleurs de domaine](high-availability
   
 [Identité fédérée pour votre environnement Microsoft 365 dev/test](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
 
 [Comprendre Microsoft 365 identité et les Azure Active Directory](about-microsoft-365-identity.md)

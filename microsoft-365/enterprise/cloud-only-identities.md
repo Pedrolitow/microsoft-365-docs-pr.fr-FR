@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment créer des utilisateurs et des groupes lorsque votre abonnement Microsoft 365 utilise l’identité cloud uniquement.
-ms.openlocfilehash: 111c42e644913a8f7f6e41d4e8bf65685263f757
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c12b3bea5523430c89c89f1e310308925a04c3c6fe6bd0a4b1a033dadd57501f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864986"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 identité cloud uniquement
 
@@ -41,7 +41,7 @@ Avec l’identité cloud uniquement, tous vos utilisateurs, groupes et contacts 
  
 ![Composants de base de l’identité cloud uniquement](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-Les utilisateurs et leurs comptes d’utilisateurs dans les organisations peuvent être classés de plusieurs façons. Par exemple, certains sont des employés et ont un statut permanent. Certains fournisseurs, sous-traitants ou partenaires ont un statut temporaire. Certains sont des utilisateurs externes qui n’ont pas de compte d’utilisateur, mais qui doivent tout de même avoir accès à des services et des ressources spécifiques pour prendre en charge l’interaction et la collaboration. Par exemple :
+Les utilisateurs et leurs comptes d’utilisateurs dans les organisations peuvent être classés de plusieurs façons. Par exemple, certains sont des employés et ont un statut permanent. Certains sont des fournisseurs, des sous-traitants ou des partenaires qui ont un statut temporaire. Certains sont des utilisateurs externes qui n’ont pas de compte d’utilisateur, mais qui doivent tout de même avoir accès à des services et des ressources spécifiques pour prendre en charge l’interaction et la collaboration. Par exemple :
 
 - Les comptes client représentent les utilisateurs au sein de votre organisation auxquels vous octroyez une licence pour les services cloud
 
