@@ -1,6 +1,6 @@
 ---
 title: API Obtenir des statistiques IP
-description: Obtenez les dernières statistiques de votre adresse IP à l’aide de Microsoft Defender pour le point de terminaison.
+description: Obtenez les dernières statistiques de votre adresse IP à l’aide de Microsoft Defender pour endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, ip, statistiques, prévalence
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: acf37d183df430ab86d021fec547fa1c1e11441a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e59f59158e36def392255e3034e0123c98ffac7a83548bf5c0284f92bea03a8a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853918"
 ---
 # <a name="get-ip-statistics-api"></a>API Obtenir des statistiques IP
 
@@ -72,7 +72,7 @@ Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 Nom|Type|Description
 :---|:---|:---
-lookBackHours|Int32|Définit les heures que nous allons rechercher pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
+lookBackHours|Int32|Définit les heures pendant les recherches pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -80,7 +80,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si ip existe : 200 - OK avec des données statistiques dans le corps. L’adresse IP n’existe pas : 404 - In trouvé.
+En cas de réussite et si ip existe - 200 OK avec des données statistiques dans le corps. L’adresse IP n’existe pas : 404 - In trouvé.
 
 ## <a name="example"></a>Exemple
 

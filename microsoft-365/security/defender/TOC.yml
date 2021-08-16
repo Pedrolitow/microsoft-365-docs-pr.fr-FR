@@ -160,22 +160,6 @@
                       href: first-incident-path-phishing.md
                     - name: Identité
                       href: first-incident-path-identity.md
-            - name: Intégrer Microsoft 365 Defender à vos opérations de sécurité
-              items:
-                - name: Introduction
-                  href: integrate-microsoft-365-defender-secops.md
-                - name: Étape 1. La préparation des opérations.
-                  href: integrate-microsoft-365-defender-secops-plan.md
-                - name: Étape 2. Évaluation de la préparation à l’aide de la confiance zéro
-                  href: integrate-microsoft-365-defender-secops-readiness.md
-                - name: Étape 3. Intégration à vos services SOC
-                  href: integrate-microsoft-365-defender-secops-services.md
-                - name: 'Étape 4. Rôles, responsabilités et supervision'
-                  href: integrate-microsoft-365-defender-secops-roles.md
-                - name: Étape 5. Cas d’utilisation de test
-                  href: integrate-microsoft-365-defender-secops-use-cases.md
-                - name: Étape 6. Tâches de maintenance SOC
-                  href: integrate-microsoft-365-defender-secops-tasks.md
             - name: Playbooks de réponse aux incidents
               href: /security/compass/incident-response-playbooks
             - name: Notifications par e-mail
@@ -320,6 +304,22 @@
               href: ../mtp/microsoft-threat-experts.md
             - name: Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
               href: ../mtp/configure-microsoft-threat-experts.md
+        - name: Intégrer Microsoft 365 Defender à vos opérations de sécurité
+          items:
+            - name: Introduction
+              href: integrate-microsoft-365-defender-secops.md
+            - name: Étape 1. La préparation des opérations.
+              href: integrate-microsoft-365-defender-secops-plan.md
+            - name: Étape 2. Évaluation de la préparation à l’aide de la confiance zéro
+              href: integrate-microsoft-365-defender-secops-readiness.md
+            - name: Étape 3. Intégration à vos services SOC
+              href: integrate-microsoft-365-defender-secops-services.md
+            - name: 'Étape 4. Rôles, responsabilités et supervision'
+              href: integrate-microsoft-365-defender-secops-roles.md
+            - name: Étape 5. Cas d’utilisation de test
+              href: integrate-microsoft-365-defender-secops-use-cases.md
+            - name: Étape 6. Tâches de maintenance SOC
+              href: integrate-microsoft-365-defender-secops-tasks.md
     - name: Guides pratiques
       items:
         - name: Créer un laboratoire d’évaluation ou un environnement pilote

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3066ccf803d5a2cad907ae7f983f3cafbb41112d
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 62c8fda1276089ba4c9f6e7bd7a0839ddf88256d3c30f8c62f9eb25daadf7b40
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863214"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -45,6 +45,8 @@ Pour gérer les détections personnalisées, vous devez avoir l’un des rôles 
 - **Administrateur de sécurité**: les utilisateurs ayant [ce rôle Azure Active Directory gérer](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) les paramètres de sécurité dans Microsoft 365 centre de sécurité et d’autres portails et services.
 
 - **Opérateur de sécurité**: les utilisateurs dotés de ce [rôle Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) peuvent gérer les alertes et ont un accès global en lecture seule aux fonctionnalités liées à la sécurité, y compris à toutes les informations dans Microsoft 365 centre de sécurité. Ce rôle est suffisant pour la gestion des détections personnalisées uniquement si le contrôle d’accès basé sur un rôle (RBAC) est désactivé dans Microsoft Defender pour point de terminaison. Si vous avez configuré RBAC, vous avez également besoin de l’autorisation gérer les **paramètres** de sécurité pour Defender for Endpoint.
+
+Vous pouvez également gérer les détections personnalisées qui s’appliquent aux données de solutions Microsoft 365 Defender spécifiques si vous avez des autorisations pour elles. Si vous avez uniquement des autorisations de gestion des Microsoft 365 Defender pour Office, par exemple, vous pouvez créer des détections personnalisées à l’aide de tableaux, mais `Email` pas de `Identity` tableaux.  
 
 Pour gérer les autorisations requises, un **administrateur général** peut :
 

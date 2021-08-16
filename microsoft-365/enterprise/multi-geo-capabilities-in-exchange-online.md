@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Découvrez les fonctionnalités multigé géographiques dans Exchange Online, telles que les limitations de fonctionnalités et l’emplacement des boîtes aux lettres.
-ms.openlocfilehash: c7c7699906b92e09f88f59bb9d34d1c3b2c36135
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 1a6d5ff5dfe6072266a707e7263ae673d6605eb4f7e531bb8a62ebd60606bb27
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864194"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Fonctionnalités multigéographiques d’Exchange Online
 

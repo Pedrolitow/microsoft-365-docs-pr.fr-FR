@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2a4d588e869fed684c4424578025a50d36a2280e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: de6925bcfc70285516bf12c07540b9c74caec9ea8210850cc1a3cc44f6a1ed92
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650414"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853870"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -77,7 +77,7 @@ Si vous pouvez reproduire un problème, augmentez le niveau de journalisation, e
 
 ## <a name="logging-installation-issues"></a>Journalisation des problèmes d’installation
 
-Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
+Si une erreur se produit pendant l’installation, le programme d’installation signale uniquement un échec général.
 
 Le journal détaillé sera enregistré dans `/Library/Logs/Microsoft/mdatp/install.log` . Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
 

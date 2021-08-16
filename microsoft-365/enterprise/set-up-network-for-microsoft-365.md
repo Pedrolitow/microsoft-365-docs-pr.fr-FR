@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Trouvez des liens vers des articles avec des informations pour vous aider à configurer votre réseau pour Microsoft 365, notamment une vue d’ensemble de la connectivité réseau et la liste des points de terminaison.
-ms.openlocfilehash: f0e0499c70745d31399240372c190758285408aa
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2feed0b600a107158b2ae32734169ae9d68294228d7eb449170dfe8a92511def
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689674"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904430"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurer votre réseau pour Microsoft 365
 
@@ -40,7 +40,7 @@ Utilisez ces articles pour comprendre les différences clés et modifier vos éq
 Consultez les articles suivants pour obtenir une vue d’ensemble de la connectivité Microsoft 365 :
 
 - [Vue d’ensemble de la connectivité réseau Microsoft 365](microsoft-365-networking-overview.md)
-- [Microsoft 365 de connectivité réseau](microsoft-365-network-connectivity-principles.md)
+- [Principes de connectivité réseau Microsoft 365](microsoft-365-network-connectivity-principles.md)
 - [Évaluation de la connectivité réseau Microsoft 365](assessing-network-connectivity.md)
 
 Pour obtenir des conseils sur l’amélioration des performances, voir Planification réseau et optimisation des [performances pour Microsoft 365](network-planning-and-performance.md).

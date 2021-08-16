@@ -9,23 +9,23 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 19465d2d2f077859490c106b9c01f08beb6e3906
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 253d6d48d9fcd38ea56a8ff52154f7c8898b66e735304ed9f871944dc7a04e1f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985574"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863834"
 ---
 # <a name="assign-devices-to-a-deployment-group"></a>Affecter des appareils à un groupe de déploiement
 
-Bureau géré Microsoft affectera des appareils aux différents groupes de déploiement, mais vous pouvez spécifier ou modifier le groupe pour qu’un appareil soit affecté à un appareil à l’aide du portail d’administration. Vous modifiez l’affectation après l’inscription d’un appareil ou après l’inscription d’un utilisateur.
+Microsoft Manged Desktop affectera des appareils aux différents groupes de déploiement, mais vous pouvez spécifier ou modifier le groupe pour qu’un appareil soit affecté à un appareil à l’aide du portail d’administration. Vous modifiez l’affectation après l’inscription d’un appareil ou après l’inscription d’un utilisateur.
 
 > [!IMPORTANT]
 > Si vous modifiez l’affectation, les stratégies spécifiques à ce groupe seront appliquées à l’appareil. La modification peut installer la dernière version de Windows 10 (y compris les nouvelles mises à jour de fonctionnalité ou de qualité). Il est préférable de déplacer quelques appareils au début, puis de vérifier l’expérience utilisateur qui en résulte. N’ignorez pas que certaines mises à jour redémarreront l’appareil. Vérifiez que vous avez sélectionné les appareils à affecter. L’affectation peut prendre effet jusqu’à 24 heures.
 
 Pour affecter des appareils à un groupe de déploiement, suivez ces étapes. Si vous souhaitez déplacer des appareils distincts vers différents groupes, répétez ces étapes pour chaque groupe.
 
-1. Dans Microsoft Endpoint Manager, sélectionnez **Appareils** dans le volet gauche. Dans la **section Bureau géré Microsoft,** sélectionnez **Appareils.**
+1. Dans Microsoft Endpoint Manager, sélectionnez **Appareils** dans le volet gauche. Dans la **section Microsoft Manged Desktop,** sélectionnez **Appareils.**
 2. Sélectionnez les appareils que vous souhaitez affecter. Tous les appareils sélectionnés seront affectés au groupe que vous spécifiez.
 3. Sélectionnez **les actions de** l’appareil dans le menu.
 4. Sélectionnez **Affecter l’appareil au groupe.** Un volant s’ouvre.

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: afe1b37d80a074c0011a3d1ea58c3b15fab96ef6d4f1701f11bd1ab73dc06979
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 553f9502803bb10fbc6d22a60c2b1d35d877380f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810656"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257247"
 ---
 # <a name="configure-your-event-hub"></a>Configurer votre Hub d’événements
 
@@ -40,7 +40,7 @@ Découvrez comment configurer votre Hub d’événements afin qu’il puisse ing
 ## <a name="setup-the-required-resource-provider-in-the-event-hub-subscription"></a>Configurer le fournisseur de ressources requis dans l’abonnement Event Hub
 
 
-1. Connectez-vous au [Portail Azure](https://portal.azure.com).
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
 1. Select **Subscriptions \> { Select the subscription the event hub will be ***deployed to***} Resource \> providers**.
 1. Vérifiez que **le fournisseur Microsoft.Informations** est inscrit. Sinon, inscrivez-le.
 
@@ -73,7 +73,7 @@ Découvrez comment configurer votre Hub d’événements afin qu’il puisse ing
 1. Créez un espace de noms Event Hub :
 
     Go **to Event Hubs \> Add** and select the pricing tier, throughput units and Auto-Présoute (requires standard pricing and under features) appropriate for the load you are expecting.  
-    Pour plus d’informations, voir [Tarification - Hubs \| d’événements Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/)
+    Pour plus d’informations, voir [Tarification - Hubs \| d’événements Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     >[!NOTE]
     > Vous pouvez utiliser un hub d’événements existant, mais le débit et la mise à l’échelle sont définies au niveau de l’espace de noms. Il est donc recommandé de placer un hub d’événements dans son espace de noms.

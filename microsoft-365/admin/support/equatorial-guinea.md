@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3898338fd7beae67109d70e0d8f5c7cd08547468
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: e75a5bc76ea8c82b138f52df2988b02db0f2f8400134ebdaa407c085f373d4b8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298901"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852874"
 ---
 # <a name="contact-support-for-equatorial-guinea"></a>Contacter le support pour la Guinée guinéenne
 
@@ -37,6 +37,6 @@ Anglais : Lun.-ven. 9H-17h
 
 Espagnol : Mon-Fri 8 h à 21 h
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

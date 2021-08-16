@@ -1,7 +1,7 @@
 ---
 title: Outils et méthodes d’intégration pour les appareils Windows 10.
 description: Intégrer Windows 10 appareils afin qu’ils peuvent envoyer des données de capteur au capteur Microsoft Defender for Endpoint
-keywords: Intégrer Windows 10, stratégie de groupe, gestionnaire de configuration de point de terminaison, gestion des appareils mobiles, script local, gp, sccm, mdm, intune
+keywords: Intégrer Windows 10 appareils, stratégie de groupe, gestionnaire de configuration de point de terminaison, gestion des appareils mobiles, script local, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 95ad09a3aca9b756752ef7fd05886e4d8c98befc
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 253c055198547852c55a44b60910e3a38229737e89fa5e2fa467e74089ee20d6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655826"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863798"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices-in-defender-for-endpoint"></a>Outils et méthodes d’intégration pour Windows 10 dans Defender for Endpoint
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les alertes de protection contre la perte de données et le tableau de bord des alertes.
-ms.openlocfilehash: b6fd698e535e006149f6ce3a2a5bc57d0c92c7e2
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 0474c5609fcd979fa8db7e47857c099cbed7be365bb55ee80e507ad3375da660
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760733"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895658"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>En savoir plus sur le tableau de bord des alertes de protection contre la perte de données
 
@@ -35,20 +35,20 @@ Lorsque les critères d’une stratégie de protection contre la perte de donné
 
 ## <a name="workloads"></a>Charges de travail
 
-Le tableau de bord de gestion des alertes [DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)dans [le centre Microsoft 365](https://compliance.microsoft.com/)conformité, affiche des alertes pour les stratégies DLP sur ces charges de travail :
+Le tableau de bord de gestion des alertes [DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)dans le [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)affiche des alertes pour les stratégies DLP sur ces charges de travail :
 
 - Exchange
 - SharePoint
 - OneDrive
 - Teams
-- Appareils Windows 10 
+- appareils Windows 10 
 
 > [!TIP]
 > Les clients qui utilisent [endpoint DLP](endpoint-dlp-learn-about.md) et qui sont éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
 
 ## <a name="single-alert-and-aggregate-alert"></a>Alerte unique et alerte agrégée
 
-Deux types d’alertes peuvent être configurés dans les stratégies DLP.
+Il existe deux types d’alertes qui peuvent être configurés dans les stratégies DLP.
 
 Les alertes à événement unique sont généralement utilisées dans les stratégies qui surveillent les événements hautement sensibles qui se produisent dans un volume faible, comme un seul **e-mail** avec 10 numéros de carte de crédit client ou plus envoyés à l’extérieur de votre organisation.
 
@@ -75,7 +75,7 @@ Voici quelques événements associés à une alerte. Dans l’interface utilisat
 |Adresse IP | Adresse IP de l’ordinateur sur lequel la correspondance de stratégie DLP s’est produite | événements d’appareil|
 |sha1 |Hachage SHA-1 du fichier | événements d’appareil|
 |sha256 | Hachage SHA-256 du fichier | événements d’appareil|
-|MDATP’appareil | ID d’appareil MDATP point de terminaison|
+|ID d’appareil MDATP | ID MDATP de l’appareil de point de terminaison|
 |taille du fichier | taille du fichier| SharePoint, OneDrive et événements d’appareil|
 |chemin d’accès du fichier | chemin d’accès absolu de l’élément impliqué dans la correspondance de stratégie DLP | SharePoint, OneDrive et appareils|
 |destinataires du courrier électronique |si un e-mail était l’élément sensible qui correspond à la stratégie DLP, ce champ inclut les destinataires de cet e-mail| Exchange événements|
@@ -98,7 +98,7 @@ Voici quelques événements associés à une alerte. Dans l’interface utilisat
 |actions prises |actions qui ont été prises à l’origine de la correspondance de stratégie DLP| tous les événements|
 |action de violation | action sur l’appareil de point de terminaison qui a élevé l’alerte DLP| événements d’appareil | 
 |stratégie de overrode utilisateur |l’utilisateur a-t-il remplacer la stratégie via un conseil de stratégie | tous les événements|
-|justification du remplacement de l’utilisation |texte de la raison fournie par l’utilisateur pour le remplacement | tous les événements|   
+|justification du remplacement de l’utilisation |texte de la raison fournie par l’utilisateur pour le remplacement ; | tous les événements|   
 
 ## <a name="see-also"></a>Voir aussi
 

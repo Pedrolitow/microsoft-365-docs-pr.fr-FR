@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: be0239e4d414dd82b6f37866e1e7980f6681dd41ae222a7796d0ebd421372a61
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 76f0478167c020d470fec32f2f2020a9263b0b44
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799513"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247203"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -41,6 +41,9 @@ Le tableau du schéma de recherche avancée contient des informations sur les é
 > Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
+
+> [!IMPORTANT]
+> Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
@@ -76,10 +79,11 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `OrgLevelAction` | string | Action entreprise sur le courrier électronique en réponse à des correspondances à une stratégie définie au niveau de l’organisation |
 | `OrgLevelPolicy` | string | Stratégie organisationnelle qui a déclenché l’action entreprise sur le courrier électronique |
 | `UserLevelAction` | string | Action prise sur le courrier électronique en réponse à des correspondances à une stratégie de boîte aux lettres définie par le destinataire |
-| `UserLevelPolicy` | string | Stratégie de boîte aux lettres d’utilisateur final qui a déclenché l’action sur le courrier électronique |
+| `UserLevelPolicy` | string | Stratégie de boîte aux lettres de l’utilisateur final qui a déclenché l’action sur le courrier électronique |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
+| `AuthenticationDetails` | string | Liste des verdicts d’échec ou de passage par protocoles d’authentification de messagerie tels que DMARC, DKIM, SPF ou une combinaison de plusieurs types d’authentification (CompAuth) |
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)

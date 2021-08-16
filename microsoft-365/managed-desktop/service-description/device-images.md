@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: fb3646e2ff339115d3fe6043ed45ea8f2140105a
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 8b8b1647fec96dd43ab5ed57c324d4e1525af0c377d8757034b6171dc606107d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863882"
 ---
 # <a name="device-images"></a>Images d’un appareil
 

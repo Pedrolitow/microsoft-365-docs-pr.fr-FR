@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Afficher l’état d’intégrité des services Microsoft 365 avant de contacter le support technique pour vérifier qu’aucune interruption de service n’est en cours.
-ms.openlocfilehash: 8423884aedeb923ed9374595bf32c905a685a1746fb7c9088ec015e857ac0299
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 85488297911613c7664890f3d7fe1be5ecf507aa253cd08c803cdba55969da75
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864215"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Comment vérifier l’intégrité du service Microsoft 365
 
@@ -56,13 +56,13 @@ Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pou
 
 L’onglet **Tous les services** (affichage par défaut) affiche tous les services, leur état d’intégrité actuel et tous les incidents ou avis actifs. Une icône et un état dans la colonne **État** indiquent l’état de chaque service.
 
-S’il existe un incident ou un avis actif pour un service, ils sont répertoriés directement sous le nom du service dans une table imbriquée. Vous pouvez réduire la table imbriqué pour masquer les incidents ou les avis dans cette vue en cliquant sur l’icône de chevron à gauche du nom du service.
+S’il existe un incident ou un avis actif pour un service, ils sont répertoriés directement sous le nom du service dans une table imbriquée. Vous pouvez réduire la table imbriqué pour masquer les incidents ou les avis dans cette vue en cliquant sur l’icône de chevron à gauche du nom du service.   
 
 Pour filtrer votre affichage afin d’afficher uniquement tous les incidents actifs, sélectionnez l’onglet **Incidents** en haut de la page. La sélection de l’onglet **Avertissements** affiche uniquement tous les avis actifs publiés.
 
 L’onglet **Historique** affiche tous les incidents et avis qui ont été résolus au cours des sept ou 30 derniers jours.
 
-Si vous rencontrez un problème avec un service Microsoft 365 et que vous ne le voyez pas dans la page d’**Intégrité des services**, faites-le nous savoir en sélectionnant **Signaler un problème** et en complétant le formulaire court. Nous allons examiner les données et rapports connexes d’autres organisations pour voir à quel point le problème est répandu et s’il provient de notre service. Si c’est le cas, nous l’ajouterons sous la forme d’un nouvel incident ou d’un nouvel avis sur la page d’**Intégrité des services**, où vous pouvez suivre sa résolution. La page **Problèmes signalés** affiche tous les problèmes signalés par votre locataire à partir de ce formulaire et l’état.
+Si vous rencontrez un problème avec un service Microsoft 365 et que vous ne le voyez pas dans la page d’**intégrité du service**, faites-le nous savoir en sélectionnant **Signaler un problème** et en complétant le formulaire court. Nous allons examiner les données et rapports connexes d’autres organisations pour voir à quel point le problème est répandu et s’il provient de notre service. Si c’est le cas, nous l’ajouterons sous la forme d’un nouvel incident ou d’un nouvel avis sur la page d’**intégrité du service**, où vous pouvez suivre sa résolution. La page **Problèmes signalés** affiche tous les problèmes signalés par votre locataire à partir de ce formulaire et l’état.
 
 Pour personnaliser votre affichage des services qui apparaissent sur le tableau de bord, sélectionnez **Préférences** > **Affichage personnalisé** et décochez les cases des services que vous souhaitez filtrer en dehors de votre affichage tableau de bord d’intégrité des services. Vérifiez que la case à cocher est cochée pour chaque service que vous souhaitez surveiller.
 
@@ -72,8 +72,7 @@ Pour vous inscrire aux notifications par e-mail des nouveaux incidents qui affec
 - Que vous souhaitiez recevoir des notifications pour des incidents ou des avis
 - Services pour lesquels vous souhaitez recevoir une notification
 
-Vous pouvez également vous abonner à des notifications par e-mail pour des événements individuels au lieu de chaque événement d’un service. Pour ce faire, sélectionnez le problème actif pour lequel vous souhaitez recevoir des mises à jour de notification par e-mail, sélectionnez **Gérer les notifications pour ce problème**, puis spécifiez :
-
+Vous pouvez également vous abonner à des notifications par e-mail pour des événements individuels au lieu de chaque événement d’un service. Pour ce faire, sélectionnez le problème actif pour lequel vous souhaitez recevoir des mises à jour de notification par e-mail, sélectionnez **Gérer les notifications pour ce problème**, puis spécifiez : 
 - Jusqu’à deux adresses e-mail.
 
 > [!NOTE]
@@ -84,9 +83,9 @@ Vous pouvez également vous abonner à des notifications par e-mail pour des év
 
 ### <a name="view-details-of-posted-service-health"></a>Afficher les détails relatifs à l’état du service publié
 
-Dans la vue **Tous les services** , sélectionnez le titre du problème pour afficher la page de détails du problème, qui affiche plus d’informations sur le problème, y compris un flux de tous les messages publiés pendant que nous travaillons sur une solution.
+Dans la vue **Tous les services** , sélectionnez le titre du problème pour afficher la page de détails du problème, qui affiche plus d’informations sur le problème, y compris un flux de tous les messages publiés pendant que nous travaillons sur une solution. 
 
-[![Capture d’écran montrant l’avis de service](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
+[ ![Capture d’écran montrant l’avis de service](../media/service-health-advisory.png) ](../media/service-health-advisory.png#lightbox)
 
 Le récapitulatif de l’avis ou de l’incident fournit les informations suivantes :
 
@@ -130,7 +129,7 @@ En règle générale, les services apparaissent comme intègres, sans autres inf
 |**Récupération étendue** | Cet état indique qu'une action corrective est en cours afin de restaurer le service pour la plupart des utilisateurs, mais qu'il faudra un certain temps pour qu'elle s'applique à tous les systèmes concernés. Cet état peut également s'afficher si nous proposons un correctif temporaire visant à réduire l'impact du problème en attendant un correctif définitif. |
 |**Examen suspendu** | Cet état s'affiche si l'examen détaillé d'un problème potentiel implique plus d'informations de la part des clients afin de nous permettre de mieux l'étudier. Dans ce cas, nous vous indiquerons les données ou journaux dont nous avons besoin. |
 |**Service restauré** | L'action corrective a permis de résoudre le problème sous-jacent et le service a été restauré. Pour en savoir plus, consultez les détails relatifs au problème. |
-|**Faux positif** | Après un examen détaillé, nous avons confirmé que le service est sain et fonctionne comme prévu. Aucun impact sur le service n’a été observé ou la cause de l’incident provient de l’extérieur du service. Les incidents et avis avec cet état s’affichent dans l’affichage d’historique jusqu’à leur expiration (après la période de temps mentionnée dans la publication finale de cet événement). |
+|**Faux positif** | Après un examen détaillé, nous avons confirmé que le service est sain et fonctionne comme prévu. Aucun impact sur le service n’a été observé ou la cause de l’incident provient de l’extérieur du service. |
 |**Rapport post-incident publié** | Nous avons publié un rapport post-incident concernant un problème spécifique. Le rapport comprend les informations relatives aux causes premières de l’incident et aux étapes à mettre en œuvre pour s’assurer qu’il ne se reproduise plus. |
 
 ### <a name="message-post-types"></a>Types de billets de message
@@ -138,7 +137,7 @@ En règle générale, les services apparaissent comme intègres, sans autres inf
 | Type | Définition |
 |:-----|:-----|
 |**Mise à jour rapide** | Mises à jour incrémentielles courtes et fréquentes pour les incidents à impact général, disponibles pour tous les clients. |
-|**Détails supplémentaires** | Ces publications supplémentaires fournissent des détails techniques et de résolution plus complets pour offrir une visibilité plus approfondie de la gestion des incidents. Ceci est disponible pour les locataires qui répondent aux mêmes exigences décrites pour la[surveillance Exchange Online](/microsoft-365/enterprise/microsoft-365-exchange-monitoring#requirements), |
+|**Détails supplémentaires** | Ces publications supplémentaires fournissent des détails techniques et de résolution plus complets pour offrir une visibilité plus approfondie de la gestion des incidents. Ceci est disponible pour les locataires qui répondent aux mêmes exigences décrites pour la[surveillance Exchange Online](/microsoft-365/enterprise/microsoft-365-exchange-monitoring?view=o365-worldwide#requirements), |
 
 ### <a name="history"></a>Historique
 
@@ -148,6 +147,8 @@ Pour plus d’informations sur notre engagement en matière de temps d’activit
 
 ## <a name="related-topics"></a>Sujets associés
 
-- [Rapports d'activité dans le centre d'administration Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-- [Préférences du centre de messages](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)
-- [Comment vérifier l’intégrité des versions de Windows sur le Centre d’administration](/windows/deployment/update/check-release-health)
+[Rapports d'activité dans le centre d'administration Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+
+[Préférences du centre de messages](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)
+
+[Comment vérifier l’intégrité des versions de Windows sur le Centre d’administration](/windows/deployment/update/check-release-health)

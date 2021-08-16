@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fbce67602006a86c71bf3b802d8b69e2cd367104
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 2c58fb68ec96f802621c3b4c3a25d4174fc6017dd7f2855850fbcd6ea052d82d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863822"
 ---
 # <a name="configure-device-discovery"></a>Configurer la découverte d’appareils
 
@@ -38,7 +38,7 @@ ms.locfileid: "53664068"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-La découverte peut être configurée pour être en mode standard ou de base. Utilisez l’option standard pour rechercher activement des appareils dans votre réseau, ce qui garantit mieux la découverte des points de terminaison et fournit une classification d’appareil plus riche. 
+La découverte peut être configurée pour être en mode standard ou de base. Utilisez l’option standard pour rechercher activement des appareils dans votre réseau, ce qui garantit mieux la découverte des points de terminaison et fournit une classification plus riche des appareils. 
 
 Vous pouvez personnaliser la liste des appareils utilisés pour effectuer une découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement - appareils Windows 10 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil.
 
@@ -51,7 +51,7 @@ Prenez les étapes de configuration suivantes dans Microsoft 365 de sécurité :
 1. Accédez à **Paramètres > détection d’appareil.**
 2. Sélectionnez le mode de découverte à utiliser sur vos appareils intégrés.
 3. Si vous avez choisi d’utiliser la découverte standard, sélectionnez les appareils à utiliser pour l’analyse active : tous les appareils ou sur un sous-ensemble en spécifiant leurs balises d’appareil.
-4. Cliquez sur **Enregistrer**.
+4. Cliquez sur **Save (Enregistrer)**.
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>Exclure les appareils d’être activement sondés dans la découverte standard
 
@@ -77,7 +77,7 @@ Vous pouvez appliquer un filtre pour afficher l’un des états de découverte r
 
 ### <a name="configure-the-network-monitor-state"></a>Configurer l’état du moniteur réseau
 
-Vous contrôlez l’endroit où la découverte d’appareils a lieu. Les réseaux surveillés sont l’endroit où la découverte d’appareils est effectuée et qui sont généralement des réseaux d’entreprise. Vous pouvez également choisir d’ignorer les réseaux ou de sélectionner la classification de découverte initiale après avoir modifié un état.
+Vous contrôlez l’endroit où la découverte d’appareils a lieu. Les réseaux surveillés sont l’endroit où la découverte des appareils est effectuée et qui sont généralement des réseaux d’entreprise. Vous pouvez également choisir d’ignorer les réseaux ou de sélectionner la classification de découverte initiale après avoir modifié un état.
 
 Le choix de la classification de découverte initiale implique l’application de l’état du moniteur réseau par défaut. Si vous sélectionnez l’état du moniteur réseau par défaut, les réseaux identifiés comme étant des réseaux d’entreprise seront surveillés et ceux identifiés comme non professionnels seront ignorés automatiquement.
 
@@ -88,7 +88,7 @@ Le choix de la classification de découverte initiale implique l’application d
 5. Choisissez si vous souhaitez surveiller, ignorer ou utiliser la classification de découverte initiale.
 
     > [!WARNING]
-    > - Choisir de surveiller un réseau qui n’a pas été identifié par Microsoft Defender pour Endpoint comme réseau d’entreprise peut entraîner la découverte d’appareils en dehors de votre réseau d’entreprise, et par conséquent détecter des appareils d’entreprise ou d’autres appareils. 
+    > - Le choix de surveiller un réseau qui n’a pas été identifié par Microsoft Defender pour Endpoint comme réseau d’entreprise peut entraîner la découverte d’appareils en dehors de votre réseau d’entreprise et peut donc détecter des appareils d’entreprise ou d’autres appareils. 
     > - Choisir d’ignorer un réseau arrête la surveillance et la découverte d’appareils dans ce réseau. Les appareils qui ont déjà été découverts ne seront pas supprimés de l’inventaire, mais ne seront plus mis à jour et les détails seront conservés jusqu’à l’expiration de la période de rétention des données de Defender for Endpoint.
     > - Avant de choisir de surveiller les réseaux non professionnels, vous devez vous assurer que vous êtes autorisé à le faire. <br>
 

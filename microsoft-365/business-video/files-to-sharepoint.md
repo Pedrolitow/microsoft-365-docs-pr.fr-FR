@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer des fichiers d’entreprise vers SharePoint.
-ms.openlocfilehash: e7a778fea9d358d2c5b3e7944edfbb8b2b7fb0f1
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 965eac5570a665109b39ecd700b3208f4cebc339db2e88add59a97078ae4c0b4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861830"
 ---
 # <a name="move-files-to-sharepoint"></a>Déplacer des fichiers vers SharePoint
 
@@ -36,8 +36,8 @@ Une fois que vous vous êtes Microsoft 365 Business Premium, vous&#39;copier les
 ## <a name="try-it"></a>Essayez !
 
 1. Ouvrez Microsoft Teams, puis ouvrez une équipe à qui tous les membres de votre entreprise ont accès.
-2. Sélectionnez **Fichiers,** puis **Ouvrez dans SharePoint**.
-3. Sélectionnez  **Documents** pour aller à l’emplacement où tous les documents sont stockés sur le site.
+2. Sélectionnez **Fichiers,** puis **Sélectionnez Ouvrir dans SharePoint**.
+3. Sélectionnez  **Documents** pour aller à l’emplacement où tout est stocké sur le site.
 4. Sélectionnez Synchroniser, puis **Oui.**  Cela synchronise les fichiers du site SharePoint sur votre ordinateur.
 5. Dans l’Explorateur de fichiers, vous&#39;le dossier documents synchronisés à partir du site&#39;site SharePoint entreprise. Si vous synchronisez des sites SharePoint supplémentaires, ils s’afficheront au-dessus ou en dessous de celui-ci. Cliquez avec le bouton droit sur le dossier documents synchronisés et ouvrez-le dans une nouvelle fenêtre pour le voir côte à côte avec les fichiers d’entreprise que vous souhaitez déplacer.
 6. Sélectionnez tous les fichiers à déplacer, puis faites-les glisser vers votre dossier SharePoint synchronisé. Les flèches circulaires bleues en dehors de vos fichiers signifient qu&#39;se synchronisent à nouveau avec SharePoint site. Lorsqu'&#39;ont terminé la synchronisation, des coches vertes s’affichent.

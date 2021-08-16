@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bccd0ae5ce6ecfadd3ecc46569252c2d0004cf80e36a20e827232813d47e8b8d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d3926521b86c12ad875b4fac6bf8b864987ff754
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814669"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246721"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -35,7 +35,7 @@ La première étape pour examiner les problèmes détectés par vos stratégies 
 
 - **Page** Stratégie de conformité des communications : lorsque vous vous connectez à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365, sélectionnez Conformité des communications pour afficher la page Stratégie de conformité [https://compliance.microsoft.com](https://compliance.microsoft.com) des communications.   Cette page affiche les stratégies de conformité des communications configurées pour votre organisation Microsoft 365 et des liens vers les modèles de stratégie recommandés. Chaque stratégie répertoriée inclut le nombre d’alertes qui doivent être revue, le nombre d’éléments résordés et résolus, l’état de la stratégie et la date et l’heure de la dernière analyse de stratégie. La sélection d’une stratégie affiche toutes les alertes en attente pour les correspondances à la stratégie, une alerte spécifique pour lancer la page de détails de la stratégie et démarrer les actions de correction.
 - **Alertes :** accédez aux **alertes** de conformité des communications pour afficher les 30 derniers jours d’alertes regroupées  >   par correspondances de stratégie. Cet affichage vous permet de voir rapidement les stratégies de conformité des communications qui génèrent la plupart des alertes classées par gravité. Pour démarrer les actions de correction, sélectionnez la stratégie associée à l’alerte pour lancer la page **détails de la stratégie.** À partir de la page **Détails** de la stratégie, vous pouvez consulter un résumé des activités de la **page** Vue d’ensemble, examiner et agir sur les messages d’alerte sur la **page** En attente, ou passer en revue l’historique des alertes fermées sur la page **Résolu.**
-- **Rapports :** accédez aux rapports **de conformité des communications** pour afficher les widgets de rapport  >   de conformité des communications. Chaque widget fournit une vue d’ensemble des activités et des états de conformité des communications, y compris l’accès à des informations plus approfondies sur les correspondances de stratégie et les actions de correction.
+- **Rapports :** accédez aux rapports **de conformité des**  >  **communications** pour afficher les widgets de rapport de conformité des communications. Chaque widget fournit une vue d’ensemble des activités et des états de conformité des communications, y compris l’accès à des informations plus approfondies sur les correspondances de stratégie et les actions de correction.
 
 ### <a name="using-filters"></a>Utilisation de filtres
 
@@ -59,7 +59,7 @@ Pour obtenir la liste complète des filtres et des détails des champs, voir [Fi
 
 7. Si vous souhaitez enregistrer le filtre sélectionné comme filtre par défaut, **sélectionnez Enregistrer par défaut.** Si vous souhaitez utiliser ce filtre en tant que filtre enregistré, sélectionnez **Terminé**.
 
-8. Si vous souhaitez enregistrer les filtres sélectionnés en  tant que requête de filtre, sélectionnez Enregistrer le contrôle de requête après avoir configuré au moins une valeur de filtre. Entrez un nom pour la requête de filtre, puis sélectionnez **Enregistrer.** Ce filtre est disponible uniquement pour cette stratégie et est répertorié dans la **section** Requêtes de filtre enregistrées de la page **Détails** des filtres.
+8. Si vous souhaitez enregistrer les filtres sélectionnés en  tant que requête de filtre, sélectionnez Enregistrer le contrôle de requête après avoir configuré au moins une valeur de filtre. Entrez un nom pour la requête de filtre, puis sélectionnez **Enregistrer.** Ce filtre n’est disponible que pour cette stratégie et est répertorié dans la **section** Requêtes de filtre enregistrées de la page **Détails** des filtres.
 
     ![Contrôles détaillés du filtre de conformité des communications](../media/communication-compliance-filter-detail-controls.png)
 
@@ -77,7 +77,7 @@ Les stratégies de conformité des communications analysent et pré-groupent aut
 
 4. Dans la page **Stratégie,** sélectionnez  l’onglet **En attente** ou Résolu pour afficher les messages en double.
 
-5. Sélectionnez les **contrôles Doublons proches** ou **Doublons exacts** pour ouvrir la page de détails des doublons.
+5. Sélectionnez les **contrôles Doublons proches** ou Doublons **exacts** pour ouvrir la page de détails des doublons.
 
 6. Sélectionnez un ou plusieurs messages pour les contrôles d’action de correction de ces messages.
 
@@ -113,7 +113,7 @@ Après avoir examiné les informations de base du message, il est temps d’ouvr
 
 Maintenant que vous avez examiné les détails du message pour l’alerte, vous pouvez choisir plusieurs actions de correction :
 
-- **Résoudre**: la sélection du contrôle **Résoudre** supprime immédiatement le message de la file d’attente des **alertes** en attente et aucune autre action ne peut être prise sur le message. En sélectionnant **Résoudre,** vous avez essentiellement fermé l’alerte sans classification supplémentaire et elle ne peut pas être rouverte pour d’autres actions. Tous les messages résolus sont affichés dans **l’onglet Résolu.**
+- **Résoudre**: la sélection du contrôle **Résoudre** supprime immédiatement le message de la file d’attente des **alertes** en attente et aucune autre action ne peut être prise sur le message. En sélectionnant **Résoudre,** vous avez essentiellement fermé l’alerte sans classification supplémentaire et vous ne pouvez pas la rouvrir pour d’autres actions. Tous les messages résolus sont affichés dans **l’onglet Résolu.**
 - **Signaler une erreur de classification (aperçu)**: vous pouvez toujours résoudre un message comme mal classé à tout moment pendant le flux de travail de révision du message. Une classification incorrecte signifie que l’alerte ne peut pas être actionnable ou que l’alerte a été générée de manière incorrecte par le processus d’alerte et tous les classifieurs entraisables. La résolution de l’élément comme étant mal classé envoie le contenu du message, les pièces jointes et l’objet du message (y compris les métadonnées) à Microsoft afin d’améliorer les classifieurs entraisables. Les données envoyées à Microsoft ne contiennent pas d’informations qui peuvent identifier ou être utilisées pour identifier les utilisateurs de votre organisation. D’autres actions ne peuvent pas être prises sur le message et tous les messages mal classés sont affichés dans **l’onglet Résolu.**
 - **Power Automate (aperçu)**: utilisez un flux Power Automate pour automatiser les tâches de traitement d’un message d’alerte. Par défaut, la conformité des communications inclut le gestionnaire notify lorsqu’un utilisateur dispose d’un modèle de flux d’alerte de conformité des *communications* que les réviseurs peuvent utiliser pour automatiser le processus de notification pour les utilisateurs avec des alertes de message. Pour plus d’informations sur la création et la gestion des flux Power Automate conformité des communications, consultez l’article de référence de la fonctionnalité de conformité [des](communication-compliance-feature-reference.md#power-automate-flows) communications.
 - **Marquez le** message comme étant *conforme,* *non* conforme ou aussi *discutable* qu’il est lié aux stratégies et aux normes de votre organisation. L’ajout de balises et de commentaires de marquage vous permet de filtrer les alertes de stratégie de micro-filtrage pour les escalades ou dans le cadre d’autres processus de révision interne. Une fois le marquage terminé, vous pouvez également choisir de résoudre le message pour le déplacer hors de la file d’attente de révision.

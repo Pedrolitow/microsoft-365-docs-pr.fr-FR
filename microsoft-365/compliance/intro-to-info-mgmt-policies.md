@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser des stratégies de gestion des informations pour contrôler et suivre des éléments tels que la durée de rétention du contenu ou les actions que les utilisateurs peuvent prendre avec ce contenu.
-ms.openlocfilehash: dfb1aeb3dbd3a2b17f18bbd03d5f4d3e198e4c47
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4584a23156a7dc492601717b0453cf7d9526f2654058ca0f311a370770518a73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815511"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879361"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction aux stratégies de gestion des informations
 
@@ -43,16 +43,16 @@ Il existe quatre catégories de base de fonctionnalités de stratégie prédéfi
   
 ![Types de stratégies de contenu](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
   
-La fonctionnalité de stratégie Audit permet aux organisations d’analyser l’utilisation de leurs systèmes de gestion de contenu par la journalisation des événements et des opérations effectuées sur les documents et les éléments de liste. Vous pouvez configurer la fonctionnalité de stratégie d’audit pour journaliser les événements, par exemple lorsqu’un document ou un élément est modifié, consulté, enregistré, extrait, supprimé ou si ses autorisations ont été modifiées. Toutes les informations d’audit sont stockées dans un journal d’audit unique sur le serveur, et les administrateurs de site peuvent y exécuter des rapports. 
+La fonctionnalité de stratégie d’audit permet aux organisations d’analyser la façon dont leurs systèmes de gestion de contenu sont utilisés par la journalisation des événements et des opérations effectuées sur les documents et les éléments de liste. Vous pouvez configurer la fonctionnalité de stratégie d’audit pour journaliser les événements tels que la modification, l’affichage, l’audit, l’extrait, la suppression ou la modification des autorisations d’un document ou d’un élément. Toutes les informations d’audit sont stockées dans un journal d’audit unique sur le serveur, et les administrateurs de site peuvent y exécuter des rapports. 
   
-La fonctionnalité de stratégie d’expiration permet aux organisations de supprimer du contenu périmé de leurs sites de manière cohérente et accessible. Cela vous permet de gérer à la fois le coût et le risque associés à la rétention de contenu à jour. Vous pouvez configurer une stratégie d’expiration pour spécifier que certains types de contenu expirent à une date donnée ou dans un délai après la création ou la dernière modification du document.
+La fonctionnalité de stratégie d’expiration permet aux organisations de supprimer du contenu périmé de leurs sites de manière cohérente et accessible. Cela vous permet de gérer à la fois le coût et le risque associés à la rétention de contenu à jour. Vous pouvez configurer une stratégie d’expiration pour spécifier que certains types de contenu expirent à une date particulière ou dans un délai après la création ou la dernière modification du document.
   
 Les organisations peuvent également créer et déployer des fonctionnalités de stratégie personnalisées afin de répondre à des besoins spécifiques. Par exemple, une organisation de fabrication peut définir une stratégie de gestion des informations pour tous les documents de spécification de conception de produit provisoires qui empêchent les utilisateurs d’imprimer des copies de ces documents sur des imprimantes non confidentielles. Pour définir ce type de stratégie de gestion des informations, vous pouvez créer et déployer une fonctionnalité de stratégie de restriction d’impression qui peut être ajoutée à la stratégie de gestion des informations pertinente pour le type de contenu de spécification de conception de produit.
   
 ## <a name="locations-to-use-an-information-management-policy"></a>Emplacements d’utilisation d’une stratégie de gestion des informations
 <a name="__toc340213528"> </a>
 
-Pour implémenter une stratégie de gestion des informations, vous devez l’ajouter à une liste, une bibliothèque ou un type de contenu dans un site. L’emplacement où vous créez ou ajoutez une stratégie de gestion des informations affecte la portée de la stratégie ou sa portée d’utilisation. Vous pouvez :
+Pour implémenter une stratégie de gestion des informations, vous devez l’ajouter à une liste, une bibliothèque ou un type de contenu dans un site. L’emplacement où vous créez ou ajoutez une stratégie de gestion des informations affecte l’étendue de la stratégie ou la portée de son utilisation. Vous pouvez :
   
  **Créer une stratégie de collection de sites, puis ajouter cette stratégie à un type de contenu, une liste ou une bibliothèque** Vous pouvez créer une stratégie de collection de sites dans la liste Stratégies du site de niveau supérieur d’une collection de sites. Après avoir créé une stratégie de collection de sites, vous pouvez l’exporter afin que les administrateurs d’autres collections de sites peuvent l’importer dans leur liste Stratégies. La création d’une stratégie de collection de sites exportable vous permet de normaliser les stratégies de gestion des informations sur les sites de votre organisation. 
   
@@ -72,7 +72,7 @@ Remarque : pour contrôler les stratégies utilisées dans une collection de sit
   
 ![Lien des stratégies de gestion des informations sur la page paramètres de la bibliothèque de documents](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
-Notes 
+Remarques 
   
 Vous pouvez créer une stratégie de gestion des informations pour une liste ou une bibliothèque uniquement si cette liste ou bibliothèque ne prend pas en charge plusieurs types de contenu. Si une liste ou une bibliothèque prend en charge plusieurs types de contenu, vous devez définir une stratégie de gestion des informations pour chaque type de contenu de liste associé à cette liste ou bibliothèque. (Les instances d’un type de contenu de site associées à une liste ou bibliothèque spécifique sont appelées types de contenu de liste.)
   

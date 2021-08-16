@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: e033142567c0eb33987cae6d840abf5f6422365e
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 553e27bf4f3d3b34749bb0b45375ee646e7c28ed20f5f3f0751626752b07b0d2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430599"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879642"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>En savoir plus sur la gestion des risques internes dans Microsoft 365
 
@@ -54,7 +54,7 @@ La gestion des risques internes utilise l’ensemble des indicateurs de service 
 
 La gestion des risques internes est centrée sur les principes suivants :
 
-- **Transparence :** trouver un équilibre entre la confidentialité des utilisateurs et les risques de l’organisation avec l’architecture de confidentialité par conception.
+- **Transparence : équilibrez** la confidentialité entre les utilisateurs et les risques de l’organisation avec l’architecture de confidentialité par conception.
 - **Configurable :** stratégies configurables basées sur des secteurs d’activité, géographiques et professionnels.
 - **Intégré :** flux de travail intégré dans Microsoft 365 solutions de conformité.
 - **Actionnable**: fournit des informations pour activer les notifications du réviseur, les investigations de données et les enquêtes utilisateur.
@@ -92,9 +92,9 @@ Vous pouvez choisir parmi les modèles de stratégie suivants pour commencer rap
 
 ### <a name="alerts"></a>Alertes
 
-Les alertes sont automatiquement générées par les indicateurs de risque qui correspondent aux conditions de stratégie et qui sont affichés dans le tableau de bord [Alertes.](insider-risk-management-activities.md#alert-dashboard) Ce tableau de bord permet d’afficher rapidement toutes les alertes qui ont besoin d’être revue, d’ouvrir les alertes au fil du temps et de statistiques d’alerte pour votre organisation. Toutes les alertes de stratégie sont affichées avec les informations suivantes pour vous aider à identifier rapidement l’état des alertes existantes et des nouvelles alertes qui ont besoin d’une action :
+Les alertes sont automatiquement générées par les indicateurs de risque qui correspondent aux conditions de stratégie et qui sont affichés dans le tableau de bord [Alertes.](insider-risk-management-activities.md#alert-dashboard) Ce tableau de bord permet d’afficher rapidement toutes les alertes qui ont besoin d’être revue, d’ouvrir les alertes au fil du temps et de statistiques d’alerte pour votre organisation. Toutes les alertes de stratégie s’affichent avec les informations suivantes pour vous aider à identifier rapidement l’état des alertes existantes et des nouvelles alertes qui ont besoin d’une action :
 
-- Statut
+- État
 - Severity
 - Heure détectée
 - Cas
@@ -104,7 +104,7 @@ Les alertes sont automatiquement générées par les indicateurs de risque qui c
 
 ### <a name="triage"></a>Triage
 
-Les nouvelles activités utilisateur qui doivent faire l’objet d’un examen génèrent automatiquement des alertes qui se voit attribuer *l’état De révision des* besoins. Les réviseurs peuvent rapidement identifier et examiner, évaluer et trier ces alertes.
+Les nouvelles activités utilisateur qui doivent faire l’objet d’un examen génèrent automatiquement des alertes qui se voit attribuer un *état De révision des* besoins. Les réviseurs peuvent rapidement identifier et examiner, évaluer et trier ces alertes.
 
 Les alertes sont résolues par l'ouverture d'un nouveau cas, l'affectation de l'alerte à un cas existant ou le rejet de l'alerte. À l’aide des filtres d’alerte, il est facile d’identifier rapidement les alertes par état, gravité ou heure détectée. Dans le cadre du processus de tri, les réviseurs peuvent afficher les détails de l’alerte pour les activités identifiées par la stratégie, afficher l’activité de l’utilisateur associée à la correspondance de stratégie, consulter la gravité de l’alerte et consulter les informations de profil utilisateur.
 
@@ -120,7 +120,7 @@ La sélection d’un cas dans le tableau de bord de cas ouvre le cas pour examen
 
 - **Activité utilisateur**: l’activité de l’utilisateur s’affiche automatiquement dans un graphique interactif qui trace les activités au fil du temps et par niveau de risque pour les activités de risque actuelles ou passées. Les réviseurs peuvent rapidement filtrer et afficher l’historique des risques complet de l’utilisateur et consulter des activités spécifiques pour plus d’informations.
 - **Explorateur de contenu**: tous les fichiers de données et messages électroniques associés aux activités d’alerte sont automatiquement capturés et affichés dans l’Explorateur de contenu. Les réviseurs peuvent filtrer et afficher des fichiers et des messages par source de données, type de fichier, balises, conversation et bien d’autres attributs.
-- **Notes de cas**: les réviseurs peuvent fournir des notes pour un cas dans la section Notes de cas. Cette liste consolide toutes les notes dans un affichage central et inclut les informations de relecteur et de date d’soumises.
+- **Notes de cas**: les réviseurs peuvent fournir des notes pour un cas dans la section Notes de cas. Cette liste consolide toutes les notes dans un affichage central et inclut les informations de réviseur et de date d’soumise.
 
 ![Examen de la gestion des risques internes](../media/insider-risk-investigate.png)
 
@@ -181,4 +181,4 @@ Les événements liés à l’emploi peuvent avoir un impact sur le comportement
 
 - Voir [Planifier la gestion des risques internes](insider-risk-management-plan.md) pour vous préparer à activer les stratégies de gestion des risques internes dans votre organisation.
 - Consultez [La prise en charge des paramètres de gestion](insider-risk-management-settings.md) des risques internes pour configurer les paramètres globaux des stratégies de risque internes.
-- Consultez [La prise en charge de la gestion](insider-risk-management-configure.md) des risques internes pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.
+- Consultez [La prise en charge de la gestion des](insider-risk-management-configure.md) risques internes pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.

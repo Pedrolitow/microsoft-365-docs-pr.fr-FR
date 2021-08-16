@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Préparez, puis déployez l’extension de la conformité Microsoft.
-ms.openlocfilehash: a76a4b1ab5b92a1e237663f65002b99d792b13bb
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a7f33edb71695af1328dd62d488d86a9216cf91a357bbbc7049068d262f3837c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895670"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Prise en main de l’extension de la conformité Microsoft
 

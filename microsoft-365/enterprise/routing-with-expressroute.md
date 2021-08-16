@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Dans cet article, découvrez les exigences de routage, les circuits et les domaines de routage Azure ExpressRoute à utiliser avec Office 365.
-ms.openlocfilehash: b27e3cfe41af8cf5e444f1221f1cee2e3bbf5826
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: e36730f457f17ca6e789bd0ba06998824a6c590a45c53f9050f497c762f5985b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194792"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904486"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routage avec ExpressRoute pour Office 365
 
@@ -227,7 +227,7 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/erorouting
   
 ## <a name="related-topics"></a>Rubriques connexes
 
-[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
+[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute pour Office 365](azure-expressroute.md)
   
@@ -247,7 +247,7 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/erorouting
   
 [Utilisation de communautés BGP dans ExpressRoute pour Office 365 scénarios](bgp-communities-in-expressroute.md)
   
-[Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](performance-tuning-using-baselines-and-history.md)
+[Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](performance-tuning-using-baselines-and-history.md)
   
 [Plan de résolution des problèmes de performances pour Office 365](performance-troubleshooting-plan.md)
   

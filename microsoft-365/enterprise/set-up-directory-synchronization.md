@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Découvrez comment configurer la synchronisation d’annuaires entre Microsoft 365 et votre active Directory local.
-ms.openlocfilehash: 14b44523c0a560a71ed8dc9182f677f2ebc0b865
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 53a64b2fdf2ff16f024425f516a5752b7788fadcabec94da772ace32ed9cdc0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926525"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904454"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurer la synchronisation d’annuaires pour Microsoft 365
 
@@ -47,7 +47,7 @@ Azure AD Connecter s’exécute sur un serveur local et synchronise vos AD DS av
 
 - Authentification directe (PTA)
 
-  Azure AD dispose d’AD DS qui effectue l’authentification.
+  Azure AD permet aux AD DS d’effectuer l’authentification.
 
 - Authentification fédérée
 
@@ -55,7 +55,7 @@ Azure AD Connecter s’exécute sur un serveur local et synchronise vos AD DS av
 
 Pour plus [d’informations, voir Identités](plan-for-directory-synchronization.md) hybrides.
   
-## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Passer en revue les conditions préalables pour les Connecter Azure AD
+## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Examiner les conditions préalables requises pour les Connecter Azure AD
 
 Vous obtenez un abonnement Azure AD gratuit avec votre abonnement Microsoft 365 abonnement. Lorsque vous configurerez la synchronisation d’annuaires, vous installez Azure AD Connecter sur l’un de vos serveurs locaux.
   
@@ -66,7 +66,7 @@ Pour Microsoft 365 vous devez :
 
 Pour votre serveur local sur lequel vous installez Azure AD Connecter, vous devez :
   
-|**Système d’exploitation du serveur**|**Autres logiciels**|
+|**Système d’exploitation de serveur**|**Autres logiciels**|
 |:-----|:-----|
 |Windows Server 2012 R2 et ultérieures | - PowerShell est installé par défaut, aucune action n’est requise.  <br> - Net 4.5.1 et les mises à jour ultérieures sont proposées via Windows Update. Assurez-vous que vous avez installé les dernières mises à jour Windows Server dans le Panneau de contrôle. |
 |Windows Server 2008 R2 avec Service Pack 1 (SP1)** ou Windows Server 2012 | - La dernière version de PowerShell est disponible dans Windows Management Framework 4.0. Recherchez-le dans [le Centre de téléchargement Microsoft.](https://go.microsoft.com/fwlink/p/?LinkId=717996)  <br> - .Net 4.5.1 et les version ultérieures sont disponibles dans le Centre de [téléchargement Microsoft.](https://go.microsoft.com/fwlink/p/?LinkId=717996) |
@@ -85,12 +85,12 @@ Avant de commencer, assurez-vous que vous avez :
 - Quelle méthode d’authentification (PHS, PTA, fédéré)
 - Si vous souhaitez utiliser l' [sign-on](/azure/active-directory/hybrid/how-to-connect-sso) unique transparente Azure AD
 
-Procédez comme suit :
+Procédez comme suit :
 
-1. Connectez-vous au [Microsoft 365 d’administration](https://admin.microsoft.com) ( et choisissez Utilisateurs https://admin.microsoft.com) actifs  \> **sur** le navigation de gauche.
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) ( https://admin.microsoft.com) et choisissez **Utilisateurs** \> **actifs sur** le navigation de gauche.
 2. Dans la page **Utilisateurs** actifs, sélectionnez **Plus** (trois points) \> **Synchronisation d’annuaires.**
   
-3. Dans la page **Azure Active Directory de** préparation, sélectionnez Le Centre de téléchargement pour obtenir le lien **d’outils Connecter Azure AD** pour commencer. 
+3. Dans la page **Azure Active Directory** de préparation, sélectionnez Le Centre de téléchargement pour obtenir le lien de l’outil Connecter **Azure AD** pour commencer. 
 4. Suivez les étapes de la feuille [de route d’installation d’Azure AD Connecter et Azure AD Connecter Health.](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
 
 ## <a name="3-finish-setting-up-domains"></a>3. Terminer la configuration des domaines

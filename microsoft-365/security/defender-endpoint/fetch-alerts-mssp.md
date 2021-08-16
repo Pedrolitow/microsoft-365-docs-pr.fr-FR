@@ -1,5 +1,5 @@
 ---
-title: Récupérer des alertes à partir du client MSSP
+title: Récupérer des alertes à partir du client MSSP client
 description: Découvrez comment récupérer des alertes à partir d’un client
 keywords: fournisseur de services de sécurité géré, mssp, configurer, intégration
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 07821a55728483b5c87a55a4ec736ac2b8dca26b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f5f9cd4515c79513bf9690023e05a541f7495acbd19f4d51df7b46eae295dba2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853966"
 ---
-# <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP
+# <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP client
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -91,7 +91,7 @@ Cette section vous guide sur l’utilisation d’un script PowerShell pour obten
 Après avoir fourni vos informations d’identification, vous devez donner votre consentement à l’application afin que l’application soit mise en service dans le client du client.
 
 
-1. Créez un dossier et nommez-le : `MsspTokensAcquisition` .
+1. Créez un dossier et nommez-le `MsspTokensAcquisition` :
 
 2. Téléchargez [le module LoginBrowser.psm1](https://github.com/shawntabrizi/Microsoft-Authentication-with-PowerShell-and-MSAL/blob/master/Authorization%20Code%20Grant%20Flow/LoginBrowser.psm1) et enregistrez-le dans le `MsspTokensAcquisition` dossier.
 

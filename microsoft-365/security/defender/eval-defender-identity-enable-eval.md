@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cff8a37999014cc037a0d76e99ff5b9a05ec44d28acab66e3238d0b4576969fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93c3b15dc9ee47c076d4f17a60530d6660dea112
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839005"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247178"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Activer l’environnement d’évaluation pour Microsoft Defender pour l’identité
 
@@ -48,32 +48,32 @@ Utilisez les étapes suivantes pour configurer votre environnement Microsoft Def
 
 Connectez-vous au portail Defender pour l’identité pour créer votre instance, puis connectez cette instance à votre environnement Active Directory. 
 
-|  |Étape     |Plus d’informations  |
+|  |Étape     |Informations supplémentaires  |
 |---------|---------|---------|
-|1     | Créer l’instance Defender pour l’identité        | [Démarrage rapide : créer votre instance De Microsoft Defender pour l’identité](/defender-for-identity/install-step1)        |
-|2     | Connecter’instance Defender for Identity à votre forêt Active Directory   | [Démarrage rapide : Connecter votre forêt Active Directory](/defender-for-identity/install-step2)  |
+|1      | Créer l’instance Defender pour l’identité        | [Démarrage rapide : créer votre instance De Microsoft Defender pour l’identité](/defender-for-identity/install-step1)        |
+|2      | Connecter’instance Defender for Identity à votre forêt Active Directory   | [Démarrage rapide : Connecter votre forêt Active Directory](/defender-for-identity/install-step2)  |
 | | |
 
 ## <a name="step-2-install-and-configure-the-sensor"></a>Étape 2. Installer et configurer le capteur
 
 Ensuite, téléchargez, installez et configurez le capteur Defender for Identity sur les contrôleurs de domaine et les serveurs AD FS de votre environnement local.
 
-|  |Étape     |Plus d’informations  |
+|  |Étape     |Informations supplémentaires  |
 |---------|---------|---------|
-|1     | Déterminez le nombre de capteurs Microsoft Defender pour l’identité dont vous avez besoin.        | [Planifier la capacité de Microsoft Defender pour l’identité](/defender-for-identity/capacity-planning)   |
-|2     | Télécharger le package d’installation du capteur  |  [Démarrage rapide : télécharger le package d’installation du capteur Microsoft Defender pour l’identité](/defender-for-identity/install-step3)   |
-|3     | Installer le capteur Defender for Identity    |  [Démarrage rapide : installer le capteur Microsoft Defender pour l’identité](/defender-for-identity/install-step4)       |
+|1      | Déterminez le nombre de capteurs Microsoft Defender pour l’identité dont vous avez besoin.        | [Planifier la capacité de Microsoft Defender pour l’identité](/defender-for-identity/capacity-planning)   |
+|2      | Télécharger le package d’installation du capteur  |  [Démarrage rapide : télécharger le package d’installation du capteur Microsoft Defender pour l’identité](/defender-for-identity/install-step3)   |
+|3      | Installer le capteur Defender for Identity    |  [Démarrage rapide : installer le capteur Microsoft Defender pour l’identité](/defender-for-identity/install-step4)       |
 |4      | Configurer le capteur       |  [Configurer les paramètres du capteur d’identité Microsoft Defender ](/defender-for-identity/install-step5)   |
 |   |         |         |
 
-## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Étape 3 : Configurer les paramètres du journal des événements et du proxy sur les ordinateurs avec le capteur
+## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Étape 3. Configurer les paramètres du journal des événements et du proxy sur les ordinateurs avec le capteur
 
 Sur les ordinateurs sur qui vous avez installé le capteur, configurez Windows collection de journaux d’événements et les paramètres proxy Internet pour activer et améliorer les fonctionnalités de détection.
 
-|  |Étape     |Plus d’informations  |
+|  |Étape     |Informations supplémentaires  |
 |---------|---------|---------|
-|1     | Configurer Windows collection de journaux d’événements         | [Configurer Windows collection d’événements](/defender-for-identity/configure-windows-event-collection)        |
-|2     | Configurer les paramètres de proxy Internet        | [Configurer les paramètres de proxy de point de terminaison et de connectivité Internet pour votre capteur d’identité Microsoft Defender](/defender-for-identity/configure-proxy)        |
+|1      | Configurer Windows collection de journaux d’événements         | [Configurer Windows collection d’événements](/defender-for-identity/configure-windows-event-collection)        |
+|2      | Configurer les paramètres de proxy Internet        | [Configurer les paramètres de proxy de point de terminaison et de connectivité Internet pour votre capteur d’identité Microsoft Defender](/defender-for-identity/configure-proxy)        |
 |   |         |         |
 
 ## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>Étape 4. Autoriser Defender pour l’identité à identifier les administrateurs locaux sur d’autres ordinateurs
@@ -84,7 +84,7 @@ Pour vous assurer que les clients et serveurs Windows autorisent votre compte De
 
 Pour obtenir des instructions sur la façon de faire, voir Configurer Microsoft Defender pour l’identité pour effectuer des [appels distants à SAM](/defender-for-identity/install-step8-samr). 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Étape 3 sur 3 : Piloter [Microsoft Defender pour l’identité](eval-defender-identity-pilot.md)
 

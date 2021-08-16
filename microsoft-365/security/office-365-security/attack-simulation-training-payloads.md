@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des charges utiles personnalisées pour la formation à la simulation d’attaques dans Microsoft Defender Office 365.
 ms.technology: mdo
-ms.openlocfilehash: ecd7b539aa22d2935f96860769b30751022d89ea43151a94222caeec9b309928
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a597fd05c9b975c54518828ebbd2433bc47b835
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810369"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257434"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Créer une charge personnalisée pour une formation à la simulation d’attaque
 
@@ -29,9 +29,9 @@ Vous pouvez créer une charge  utile en cliquant sur Créer une charge utile dan
 
 La première étape de l’Assistant vous permettra de sélectionner un type de charge utile. **Actuellement, seul le courrier électronique est disponible.**
 
-Ensuite, sélectionnez une technique associée. Pour plus d’informations sur les techniques, voir [la sélection d’une technique d’ingénierie sociale.](attack-simulation-training.md#selecting-a-social-engineering-technique)
+Ensuite, sélectionnez une technique associée. Pour plus d’informations sur les techniques, voir la sélection [d’une technique d’ingénierie sociale.](attack-simulation-training.md#selecting-a-social-engineering-technique)
 
-À l’étape suivante, nommez votre charge utile. Si vous le souhaitez, vous pouvez lui donner une description.
+Dans l’étape suivante, nommez votre charge utile. Si vous le souhaitez, vous pouvez lui donner une description.
 
 > [!NOTE]
 > Certaines marques, logos, symboles, insignias et autres identificateurs source bénéficient d’une protection maximale en vertu de lois et lois locales, nationales et fédérales. L’utilisation non autorisée de ces indicateurs peut imposer des sanctions aux utilisateurs, y compris des amendes pénales. Bien qu’il ne s’agit pas d’une liste complète, il s’agit notamment des personnes à l’emploi de Lasc, du vice-président et de l’espion, du CENTRE d’enquêtes sur la sécurité sociale, de la sécurité sociale, du service de sécurité sociale des États-Unis et du service de revenu interne des États-Unis. Au-delà de ces catégories de marques, l’utilisation et la modification d’une marque tierce impliquent un risque inhérent. L’utilisation de vos propres marques et logos dans une charge utile serait moins risqué, en particulier lorsque votre organisation autorise l’utilisation. Si vous avez d’autres questions sur ce qui est approprié ou non à utiliser lors de la création ou de la configuration d’une charge utile, vous devez consulter vos conseillers juridiques.
@@ -41,11 +41,11 @@ Ensuite, sélectionnez une technique associée. Pour plus d’informations sur l
 Il est maintenant temps de créer votre charge utile. Dans la section Détails de l’expéditeur, entrer le nom de l’expéditeur, l’adresse e-mail et l’objet **de l’e-mail.** Sélectionnez une URL de hameçonnage dans la liste fournie. Cette URL sera incorporée ultérieurement dans le corps du message.
 
 > [!TIP]
-> Vous pouvez choisir un e-mail interne pour l’expéditeur de votre charge utile, ce qui fait apparaître la charge utile comme provenant d’un autre employé de l’entreprise. Cela augmente la sensibilité à la charge utile et aide à informer les employés sur les risques de menaces internes.
+> Vous pouvez choisir un courrier électronique interne pour l’expéditeur de votre charge utile, ce qui fait apparaître la charge utile comme provenant d’un autre employé de l’entreprise. Cela augmente la sensibilité à la charge utile et aide à informer les employés sur les risques de menaces internes.
 
 Un éditeur de texte enrichi est disponible pour créer votre charge utile. Vous pouvez également importer un e-mail que vous avez créé au préalable. Lorsque vous créez le corps de  l’e-mail, tirez parti des balises dynamiques pour personnaliser l’e-mail sur vos cibles. Cliquez **sur le lien Hameçonnage** pour ajouter l’URL de hameçonnage précédemment sélectionnée dans le corps du message.
 
-![Lien de hameçonnage et balises dynamiques mises en évidence dans la création de charge utile pour Microsoft Defender pour Office 365](../../media/attack-sim-preview-payload-email-body.png)
+![Lien de hameçonnage et balises dynamiques mis en surbrillrillation dans la création de charge utile pour Microsoft Defender pour Office 365](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > Pour gagner du temps, basculez sur l’option de remplacement de tous les liens du message électronique par le **lien de hameçonnage.**
@@ -64,7 +64,7 @@ Ajoutez une description personnalisée pour décrire l’indicateur et cliquez d
 
 ## <a name="review-payload"></a>Examiner la charge utile
 
-Vous avez terminé de créer votre charge utile. Il est maintenant temps de passer en revue les détails et d’afficher un aperçu de votre charge utile. La prévisualisation inclut tous les indicateurs que vous avez créés. Vous pouvez modifier chaque partie de la charge utile à partir de cette étape. Une fois satisfait, vous pouvez **soumettre votre** charge utile.
+Vous avez terminé de créer votre charge utile. Il est maintenant temps de passer en revue les détails et d’afficher un aperçu de votre charge utile. L’aperçu inclut tous les indicateurs que vous avez créés. Vous pouvez modifier chaque partie de la charge utile à partir de cette étape. Une fois satisfait, vous pouvez **soumettre** votre charge utile.
 
 > [!IMPORTANT]
 > Les charges utiles que vous avez créées auront **le client** comme source. Lorsque vous sélectionnez des charges utiles, veillez à ne pas filtrer le **client.**

@@ -1,7 +1,7 @@
 ---
 title: Nouveautés dans Microsoft Defender pour point de terminaison
 description: Découvrez les fonctionnalités généralement disponibles dans la dernière version de Microsoft Defender pour Endpoint, ainsi que les fonctionnalités de sécurité dans Windows 10 et Windows Server.
-keywords: nouveautés de Microsoft Defender pour point de terminaison, ga, généralement disponibles, fonctionnalités, disponible, nouveau
+keywords: nouveautés de Microsoft Defender pour point de terminaison, ga, généralement disponibles, fonctionnalités, disponibles, nouvelles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 85afa2cb66edc471a0a311270e29dd8fd0768dbaae0236769efeecce2015ce01
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 56752128d68fae579ab1b15fbfb8ab1b2320f5f8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889014"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257266"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "53889014"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Les fonctionnalités suivantes sont généralement disponibles dans la dernière version de Microsoft Defender pour Endpoint, ainsi que les fonctionnalités de sécurité dans Windows 10 et Windows Server.
 
@@ -43,14 +43,14 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 > Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux :
 >
 > ```https
-> /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
+> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
 ## <a name="june-2021"></a>Juin 2021
 
-- [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exporter les évaluations des vulnérabilités et des [configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
+- [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exportation des évaluations des vulnérabilités et [des configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
 
-- [Exporter des évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) API <br> Ajoute une collection d’API qui Gestion des menaces et des vulnérabilités données par appareil. Il existe différents appels d’API pour obtenir différents types de données : évaluation de la configuration sécurisée, évaluation de l’inventaire logiciel et évaluation des vulnérabilités logicielles. Chaque appel d’API contient les données requises pour les appareils de votre organisation.
+- [Exporter les évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) API <br> Ajoute une collection d’API qui Gestion des menaces et des vulnérabilités données par appareil. Il existe différents appels d’API pour obtenir différents types de données : évaluation de la configuration sécurisée, évaluation de l’inventaire logiciel et évaluation des vulnérabilités logicielles. Chaque appel d’API contient les données requises pour les appareils de votre organisation.
 
 - [Activité de correction](get-remediation-methods-properties.md) API <br>  Ajoute une collection d’API avec des réponses qui contiennent des Gestion des menaces et des vulnérabilités de correction qui ont été créées dans votre client. Les types d’informations de réponse incluent une activité de correction par ID, toutes les activités de correction et les périphériques exposés d’une activité de correction.
 
@@ -73,26 +73,26 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Microsoft Defender pour point de terminaison iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender pour le point de terminaison ajoute désormais la prise en charge d’iOS. Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur iOS.
 
-## <a name="september-2020"></a>Septembre 2020
+## <a name="september-2020"></a>Septembre 2020
 
 - [Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender pour le point de terminaison ajoute désormais la prise en charge d’Android. Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur Android.
 - [Prise en charge des menaces gestion des vulnérabilités macOS](tvm-supported-os.md)<br> Threat and gestion des vulnérabilités for macOS is now in public preview, and will continuously detect vulnerabilities on your macOS devices to help you prioritize remediation by focusing on risk. En savoir plus sur ce [billet de blog Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)
 
-## <a name="august-2020"></a>Août 2020
+## <a name="august-2020"></a>Août 2020
 
 - [Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender pour le point de terminaison ajoute désormais la prise en charge d’Android. Découvrez comment installer, configurer et utiliser Microsoft Defender pour Endpoint sur Android.
 
-## <a name="july-2020"></a>Juillet 2020
+## <a name="july-2020"></a>Juillet 2020
 
 - [Créer des indicateurs pour les certificats](manage-indicators.md) <br> Créez des indicateurs pour autoriser ou bloquer les certificats.
 
-## <a name="june-2020"></a>Juin 2020
+## <a name="june-2020"></a>Juin 2020
 
 - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender pour le point de terminaison ajoute désormais la prise en charge de Linux. Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur Linux.
 
 - [Simulateurs d’attaques dans le laboratoire d’évaluation](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender pour le point de terminaison s’est associé à différentes plateformes de simulation de menaces pour vous donner un accès pratique pour tester les fonctionnalités de la plateforme directement à partir du portail.
 
-## <a name="april-2020"></a>Avril 2020
+## <a name="april-2020"></a>Avril 2020
 
 - [Prise en charge de l& API de gestion des menaces et des vulnérabilités](exposed-apis-list.md) <BR>Exécutez des appels d’API liés à la gestion des menaces et des vulnérabilités, tels que le score d’exposition aux menaces de votre organisation ou le score de sécurité de l’appareil, l’inventaire des vulnérabilités des logiciels et des appareils, la distribution des versions des logiciels, les informations sur les vulnérabilités des appareils, les informations de recommandation de sécurité. & En savoir plus sur ce [billet de blog Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
 
@@ -108,7 +108,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Rapport d’intégrité et de conformité des appareils](machine-reports.md) <br/> Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
 
-## <a name="october-2019"></a>Octobre 2019
+## <a name="october-2019"></a>Octobre 2019
 
 - [Indicateurs pour les adresses IP, url/domaines](manage-indicators.md) <BR> Vous pouvez désormais autoriser ou bloquer des URL/domaines à l’aide de votre propre intelligence des menaces.
 
@@ -118,15 +118,15 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Explorateur d’API](api-explorer.md)<br> L’Explorateur d’API facilite la construction et l’application de requêtes API, teste et envoie des demandes pour tout point de terminaison de l’API Microsoft Defender pour Endpoint disponible.
 
-## <a name="september-2019"></a>Septembre 2019
+## <a name="september-2019"></a>Septembre 2019
 
-- [Paramètres de protection contre la falsification à l’aide d’Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Vous pouvez désormais activer (ou désactiver) la protection contre les falsifications pour votre organisation dans Microsoft 365 Device Management Portal (Intune).
+- [Paramètres de protection contre la falsification à l’aide d’Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Vous pouvez désormais activer (ou désactiver) la protection contre les falsifications pour votre organisation dans le Microsoft 365 Device Management Portal (Intune).
 
 - [Réponse en direct](live-response.md) <BR> Obtenir un accès instantané à un appareil à l’aide d’une connexion Shell distante. Faire des investigations approfondies et prendre des mesures de réponse immédiates pour contenir rapidement les menaces identifiées ( en temps réel).
 
 - [Laboratoire d’évaluation](evaluation-lab.md) <BR> Le laboratoire d’évaluation de Microsoft Defender pour points de terminaison est conçu pour éliminer la complexité de la configuration des appareils et de l’environnement afin de pouvoir vous concentrer sur l’évaluation des fonctionnalités de la plateforme, l’exécution de simulations et l’utilisation des fonctionnalités de prévention, de détection et de correction.
 
-- [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> Vous pouvez désormais intégrer Windows Server 2008 R2 SP1.
+- [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> Vous pouvez désormais intégrer Windows Server 2008 R2 SP1.
 
 ## <a name="june-2019"></a>Juin 2019
 
@@ -162,7 +162,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Accès contrôlé aux dossiers](enable-controlled-folders.md)<BR> L’accès contrôlé aux dossiers est désormais pris en charge Windows Server 2019.
 
-- [Détection personnalisée](manage-indicators.md)<BR>Avec les détections personnalisées, vous pouvez créer des requêtes personnalisées pour surveiller les événements pour tout type de comportement, tel que les menaces suspectes ou émergentes. Pour ce faire, vous pouvez tirer parti de la puissance du repérage avancé via la création de règles de détection personnalisées.
+- [Détection personnalisée](manage-indicators.md)<BR>Avec les détections personnalisées, vous pouvez créer des requêtes personnalisées pour surveiller les événements pour tout type de comportement, comme les menaces suspectes ou émergentes. Pour ce faire, vous pouvez tirer parti de la puissance du repérage avancé via la création de règles de détection personnalisées.
 
 - [Intégration à Azure Defender](configure-server-endpoints.md)<BR> Microsoft Defender pour point de terminaison s’intègre à Azure Defender pour fournir une solution de protection serveur complète. Avec cette intégration, Azure Defender peut tirer parti de la puissance de Microsoft Defender for Endpoint pour fournir une détection améliorée des menaces pour Windows serveurs.
 
@@ -205,7 +205,7 @@ L’analyse des menaces est un ensemble de rapports interactifs publiés par l�
     > [!NOTE]
     > Disponible à partir Windows 10 version 1803 ou ultérieure.
 
-- [Accès conditionnel](conditional-access.md) <br> Activer l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données.
+- [Accès conditionnel](conditional-access.md) <br> Activez l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données.
 
 - [Centre de Community Microsoft Defender pour Community terminaison](community.md)<BR>
     Le Centre d’administration Microsoft Defender pour Community est un endroit où les membres de la communauté peuvent découvrir, collaborer et partager des expériences sur le produit.

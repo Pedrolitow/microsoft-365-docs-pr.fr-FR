@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 802f3fdacba62839b93b8441502334ae486cdacc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 9b097336cadcc4c76c0a9d8026d9a73d079d3572f39dd53a3b98e52caa59cb65
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226322"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879548"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Tableau de bord Utilisateurs de la gestion des risques internes
 
@@ -43,7 +43,7 @@ Le **tableau de bord** Utilisateurs affiche automatiquement tous les utilisateur
 
 Le tableau **de bord Utilisateurs inclut** les utilisateurs ajoutés aux stratégies de gestion des risques internes après un événement inhabituel en dehors du flux de travail de gestion des risques internes. L’ajout temporaire d’utilisateurs (à partir du tableau de bord Stratégies) est également un moyen de commencer à marquer l’activité des utilisateurs pour une stratégie de gestion des risques internes pour tester la stratégie, même si aucun connecteur requis n’est configuré.
 
-Lorsqu’un utilisateur est ajouté manuellement à une stratégie, les activités de l’utilisateur pour les 90 jours précédents sont marqués et ajoutés à la chronologie **d’activité** de l’utilisateur. Par exemple, aucun score de risque n’est actuellement attribué à un utilisateur pour une stratégie de risque interne et les activités de fuite de données sont signalées au service juridique de votre organisation. Le service juridique vous recommande de configurer de nouvelles exigences de surveillance à court terme pour l’utilisateur. Vous pouvez affecter temporairement l’utilisateur à votre stratégie de fuite *de* données pour une durée donnée (fenêtre d’activation). Tous les utilisateurs ajoutés temporairement sont affichés dans le tableau de bord Utilisateurs car le déclenchement des exigences d’événement est annulé. 
+Lorsqu’un utilisateur est ajouté manuellement à une stratégie, les activités de l’utilisateur pour les 90 jours précédents sont marqués et ajoutés à la chronologie **d’activité** de l’utilisateur. Par exemple, aucun score de risque n’est actuellement attribué à un utilisateur pour une stratégie de risque interne et les activités de fuite de données sont signalées au service juridique de votre organisation. Le service juridique vous recommande de configurer de nouvelles exigences de surveillance à court terme pour l’utilisateur. Vous pouvez affecter temporairement l’utilisateur à votre stratégie de fuite *de* données pour une durée donnée (fenêtre d’activation). Tous les utilisateurs ajoutés temporairement sont affichés dans le tableau de bord Utilisateurs, car le déclenchement des exigences en matière d’événements est annulé. 
 
 > [!NOTE]
 > L’affichage des nouveaux utilisateurs ajoutés manuellement dans le tableau de bord Utilisateurs peut prendre plusieurs **heures.** L’affichage des activités des 90 jours précédents de ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher les activités des utilisateurs ajoutés  manuellement, sélectionnez l’utilisateur dans le tableau de bord Utilisateurs et ouvrez l’onglet Activité de l’utilisateur dans le volet d’informations. 
@@ -84,7 +84,7 @@ Pour afficher plus de détails sur l’activité de risque pour un utilisateur, 
   - **Alias**: alias réseau de l’utilisateur.
   - **Organisation ou service :** l’organisation ou le service de l’utilisateur.
 
-- **Onglet Activité utilisateur**
+- **Onglet Activité de l’utilisateur**
   - **Historique des activités récentes des utilisateurs**: répertorie les indicateurs de déclenchement et les indicateurs de risque interne pour les activités des utilisateurs jusqu’aux 180 derniers jours. Toutes les activités pertinentes pour les indicateurs de risque internes sont également notés, même si les activités peuvent ou non avoir généré une alerte de risque interne. Le déclenchement d’exemples d’indicateurs peut être une date de départ ou la dernière date de travail prévue pour l’utilisateur. Les indicateurs de risque internes sont des activités déterminées comme étant à risque et définies dans les stratégies dans qui l’utilisateur est inclus. Les activités d’événement et de risque sont répertoriées avec l’élément le plus récent répertorié en premier.
 
 ## <a name="remove-users-from-in-scope-assignment-to-policies"></a>Supprimer des utilisateurs de l’attribution dans l’étendue aux stratégies

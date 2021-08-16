@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Utilisez la recherche de contenu dans le Centre de conformité Microsoft 365 pour effectuer une collection ciblée, qui recherche des éléments dans une boîte aux lettres ou un dossier de site spécifique.
-ms.openlocfilehash: 60f0f51c713abf98109362fd57e3950d2ee17ce307b3c16b6483ada69385c2f1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b165e52835165980da3621634ef29247a87490fe
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891777"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257342"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Utiliser la recherche de contenu pour les collections ciblées
 
@@ -55,15 +55,15 @@ L’outil de recherche de contenu dans le Centre de conformité Microsoft 365 ne
 
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>Étape 1 : Exécuter le script pour obtenir la liste des dossiers d’une boîte aux lettres ou d’un site
 
-Le script que vous exécutez lors de cette première étape retourne une liste de dossiers de boîtes aux lettres ou de dossiers SharePoint et OneDrive Entreprise, ainsi que l’ID ou le chemin d’accès correspondant à chaque dossier. Lorsque vous exécutez ce script, il vous invite à fournir les informations suivantes.
+Le script que vous exécutez lors de cette première étape retourne une liste de dossiers de boîtes aux lettres ou de dossiers SharePoint et OneDrive Entreprise, ainsi que l’ID ou le chemin d’accès correspondant pour chaque dossier. Lorsque vous exécutez ce script, il vous invite à fournir les informations suivantes.
 
 - **Adresse de messagerie ou URL du site**: tapez l’adresse e-mail du dépositaire pour renvoyer la liste Exchange dossiers de boîte aux lettres et les ID de dossier. Ou tapez l’URL d’un site SharePoint ou d’un site OneDrive Entreprise pour renvoyer la liste des chemins d’accès pour le site spécifié. Voici quelques exemples :
 
-  - **Exchange**: stacig@contoso.onmicrosoft <spam> <spam> .com
+  - **Exchange**:`stacig@contoso.onmicrosoft.com`
 
-  - **SharePoint**: https <span>://</span>contoso.sharepoint.com/sites/marketing
+  - **SharePoint**:`https://contoso.sharepoint.com/sites/marketing`
 
-  - **OneDrive Entreprise**: https <span>://</span>contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com
+  - **OneDrive Entreprise**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
 - **Vos informations d’identification** utilisateur : le script utilisera vos informations d’identification pour se connecter à Exchange Online PowerShell ou au Centre de sécurité & conformité PowerShell à l’aide de l’authentification moderne. Comme indiqué précédemment, les autorisations appropriées doivent vous être attribuées pour exécuter correctement ce script.
 
@@ -212,7 +212,7 @@ Si vous recherchez le chemin d’accès de la propriété **documentlink** à pa
 
 Voici un exemple de sortie renvoyée par le script pour les dossiers de site.
 
-![Exemple de liste des noms de liens de documents pour les dossiers de site renvoyés par le script](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Exemple de liste de noms de liens de documents pour les dossiers de site renvoyés par le script](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
 
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Étape 2 : Utiliser un ID de dossier ou un lien de document pour effectuer une collection ciblée
 

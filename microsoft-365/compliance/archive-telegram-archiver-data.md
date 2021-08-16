@@ -1,5 +1,5 @@
 ---
-title: Configurer un connecteur pour archiver les données de communications de Archiver dans Microsoft 365
+title: Configurer un connecteur pour archiver les données de communications Der dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,40 +12,40 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver les données de communications De la base de données Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 93126418a9cd636307d90dbe59d62e111a9d521af6415d74646a27766f1d7938
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a4f1e5232883602cd8102793b4fbfaa6439b60bb
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796408"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257522"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>Configurer un connecteur pour archiver les données de communications Der
 
 Utilisez le connecteur TeleMessage dans le Centre de conformité Microsoft 365 pour importer et archiver des conversations, des pièces jointes, des fichiers et des messages et appels supprimés. Une fois que vous avez configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation et importe la communication mobile des employés à l’aide de l’archiveur Archiver Archiver dans les boîtes aux lettres de Microsoft 365.
 
-Une fois que les données du connecteur Archiveur Archiveur sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données de communication de Contrôle. Par exemple, vous pouvez effectuer une recherche dans la communication à l’aide de la recherche de contenu ou associer la boîte aux lettres contenant les données du connecteur Archiver archiveur à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur Archiveur Archiver pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations de gouvernance d’entreprise et aux stratégies réglementaires.
+Une fois que les données du connecteur Archiveur Archiveur sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données de communication de Contrôle. Par exemple, vous pouvez effectuer une recherche dans la communication à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données du connecteur archiveur à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur Archiveur Archiver pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations de gouvernance d’entreprise et aux stratégies réglementaires.
 
 ## <a name="overview-of-archiving-telegram-communications-data"></a>Vue d’ensemble de l’archivage des données de communications de Communications Communications
 
-La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données de communications Der dans Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données de communications de Domaine dans Microsoft 365.
 
-![Flux de travail d’archivage des communications de Domaine](../media/TelegramConnectorWorkflow.png)
+![Flux de travail d’archivage des communications Par le centre d’information](../media/TelegramConnectorWorkflow.png)
 
 1. Votre organisation travaille avec TeleMessage pour configurer un connecteur Archiver archiveur archiveur. Pour plus d’informations, voir [Activating the TeleMessage Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-telegram-archiver/).
 
 2. En temps réel, les données de votre organisation sont copiées sur le site TeleMessage.
 
-3. Le connecteur Archiveur archiveur archiveur que vous créez dans le Centre de conformité Microsoft 365 se connecte au site TeleMessage tous les jours et transfère les messages électroniques des 24 heures précédentes vers une zone stockage Azure sécurisée dans microsoft Cloud.
+3. Le connecteur Archiveur archiveur archiveur que vous créez dans le Centre de conformité Microsoft 365 se connecte au site TeleMessage tous les jours et transfère les messages électroniques des 24 heures précédentes vers une zone stockage Azure sécurisée dans Microsoft Cloud.
 
 4. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé Archiver Archiver sera créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y seront importés. Le connecteur fait ce mappage à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur. Chaque message électronique contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message électronique.
 
-> Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur, vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage doit contenir le numéro mobile de l’utilisateur et l’adresse Microsoft 365 boîte aux lettres correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de courrier électronique, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas un utilisateur Microsoft 365 valide qui correspond au numéro de téléphone mobile d’un utilisateur, le connecteur utilise la propriété d’adresse de messagerie de l’utilisateur de l’élément de courrier. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse de messagerie de *l’utilisateur* de l’élément de courrier, l’élément n’est pas importé.
+> Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur, vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage doit contenir le numéro mobile de l’utilisateur et l’adresse Microsoft 365 boîte aux lettres correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de courrier électronique, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide correspondant au numéro de téléphone mobile d’un utilisateur, le connecteur utilise la propriété d’adresse de messagerie de l’utilisateur de l’élément de courrier. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse de messagerie de *l’utilisateur* de l’élément de courrier, l’élément n’est pas importé.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
 - Commandez [le service d’archivage Deoe à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous inscrire à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
 
-- Enregistrez tous les utilisateurs qui ont besoin de l’archivage Archiver Dans le compte TeleMessage. Lors de l’inscription des utilisateurs, n’oubliez pas d’utiliser la même adresse de messagerie que celle utilisée pour Microsoft 365 compte.
+- Enregistrez tous les utilisateurs qui ont besoin de l’archivage de Archiver Dans le compte TeleMessage. Lors de l’inscription des utilisateurs, n’oubliez pas d’utiliser la même adresse de messagerie que celle utilisée pour Microsoft 365 compte.
 
 - Installez l’application Archiver Archiver sur les téléphones mobiles de vos employés et activez-la. L’application Archiver Archiver permet aux utilisateurs de communiquer et de discuter avec d’autres utilisateurs de l’archive.
 
@@ -55,7 +55,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ## <a name="create-a-telegram-archiver-connector"></a>Créer un connecteur Archiveur archiveur
 
-Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer le connecteur Archiver archiveur dans le Centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site TeleMessage et transfère les données de communication De Lasser vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
+Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer le connecteur Archiver archiveur dans le Centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site TeleMessage et transfère les données de communication De Lass aux boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
 1. Go to <https://compliance.microsoft.com> and then click Data **connectors** > T **elegram Archiver**.
 
@@ -77,6 +77,6 @@ Une fois que vous avez rempli les conditions préalables décrites dans la secti
 
 8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
