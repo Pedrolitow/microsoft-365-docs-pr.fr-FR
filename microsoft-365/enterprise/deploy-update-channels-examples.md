@@ -1,9 +1,9 @@
 ---
 title: Exemples de configuration des canaux de déploiement et de mise à jour
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 07/21/2020
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment des exemples d’organisation procèdent au déploiement et à la mise à jour des versions à l’aide de canaux.
-ms.openlocfilehash: 65f644c9888d3ef9998299660b5d97ff7129fab4551a04d63d28975677c875ae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 76c627e3a3278897c9075adf8af8a721c1021a99
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813209"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356383"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Exemples de configuration des canaux de déploiement et de mise à jour
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 collaboration entre les locataires
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment Microsoft 365 collaboration fonctionne entre les locataires et les organisations, ce qui permet à différentes organisations de collaborer en toute sécurité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36e16beb852b99a17f0252217cfd6f148dcf0a0a15feb9770adcc3d5b9d268b2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c2060ec93fdf80d4afc3f0aa8f693de6bb275454
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870544"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356635"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 collaboration entre les locataires
 
@@ -38,13 +38,13 @@ Microsoft 365 options de collaboration entre clients incluent l’utilisation d�
 |:-----|:-----|:-----|
 |Partager des calendriers avec une autre Microsoft 365 organisation |Les administrateurs peuvent configurer différents niveaux d’accès au calendrier dans Exchange Online pour permettre aux entreprises de collaborer avec d’autres entreprises et permettre aux utilisateurs de partager les plannings (informations de libre/occupé) avec d’autres personnes. | <ul><li>[Partage](/exchange/sharing/sharing) </li><li> [Relations des organisations](/exchange/sharing/organization-relationships/organization-relationships) </li><li> [Créer une relation d’organisation](/exchange/sharing/organization-relationships/create-an-organization-relationship) </li><li> [Modifier une relation d’organisation](/exchange/sharing/organization-relationships/modify-an-organization-relationship) </li><li> [Supprimer une relation d’organisation](/exchange/sharing/organization-relationships/remove-an-organization-relationship) </li><li> [Partager des calendriers avec des utilisateurs externes](https://support.office.com/article/fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd) </li></ul> |
 |Contrôler la façon dont les utilisateurs partagent leurs calendriers avec des personnes extérieures à votre organisation | Les administrateurs appliquent des stratégies de partage aux boîtes aux lettres des utilisateurs pour contrôler avec qui il peut être partagé et le niveau d’accès accordé |  <ul><li> [Stratégies de partage](/exchange/sharing/sharing-policies/sharing-policies) </li><li> [Créer une stratégie de partage](/exchange/sharing/sharing-policies/create-a-sharing-policy) </li><li> [Appliquer une stratégie de partage aux boîtes aux lettres](/exchange/sharing/sharing-policies/apply-a-sharing-policy) </li><li> [Modifier, désactiver ou supprimer une stratégie de partage](/exchange/sharing/sharing-policies/modify-a-sharing-policy) </li></ul> |
-|Configurer des canaux de messagerie sécurisés et contrôler le flux de messagerie avec les organisations partenaires | Les administrateurs créent des connecteurs pour appliquer la sécurité aux échanges de messages avec une organisation partenaire ou un fournisseur de services. Les connecteurs appliquent le chiffrement via le protocole TLS (Transport Layer Security) et autorisent des restrictions sur les noms de domaine ou les plages d’adresses IP à partir des envois de courrier électronique par vos partenaires. |  <ul><li> [Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie](../compliance/exchange-online-uses-tls-to-secure-email-connections.md) </li><li> [Configurer le flux de messagerie à l’aide des connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) </li><li> [Domaines distants](/exchange/mail-flow-best-practices/remote-domains/remote-domains) </li><li> [Configurer un connecteur pour un flux de messagerie sécurisé avec une organisation partenaire](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner) </li><li> [Meilleures pratiques en matière de flux de messagerie (vue d’ensemble)](/exchange/mail-flow-best-practices/mail-flow-best-practices) </li></ul> |
+|Configurer des canaux de messagerie sécurisés et contrôler le flux de messagerie avec les organisations partenaires | Les administrateurs créent des connecteurs pour appliquer la sécurité aux échanges de messages avec une organisation partenaire ou un fournisseur de services. Les connecteurs appliquent le chiffrement via le protocole TLS (Transport Layer Security) et autorisent des restrictions sur les noms de domaine ou les plages d’adresses IP à partir des envois de messages électroniques par vos partenaires. |  <ul><li> [Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie](../compliance/exchange-online-uses-tls-to-secure-email-connections.md) </li><li> [Configurer le flux de messagerie à l’aide des connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) </li><li> [Domaines distants](/exchange/mail-flow-best-practices/remote-domains/remote-domains) </li><li> [Configurer un connecteur pour un flux de messagerie sécurisé avec une organisation partenaire](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner) </li><li> [Meilleures pratiques en matière de flux de messagerie (vue d’ensemble)](/exchange/mail-flow-best-practices/mail-flow-best-practices) </li></ul> |
 
 ## <a name="sharepoint-online-and-onedrive-for-business-collaboration-options"></a>SharePoint Options de collaboration OneDrive Entreprise en ligne et en ligne
 
 | Objectifs de partage | Action administrative | Informations sur les how-to |
 |:-----|:-----|:-----|
-|Partager des sites et des documents avec des utilisateurs externes | Les administrateurs configurent le partage au niveau du client ou de la collection de sites pour le compte Microsoft authentifié, le compte professionnel ou scolaire authentifié ou les comptes invités |  <ul><li> [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) </li><li> [Restreindre le partage de contenu SharePoint et OneDrive par domaine](/sharepoint/restricted-domains-sharing) </li><li> [Utiliser SharePoint Online en tant que solution extranet B2B (business-to-business)](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) </li></ul> |
+|Partager des sites et des documents avec des utilisateurs externes | Les administrateurs configurent le partage au niveau du client ou de la collection de sites pour le compte Microsoft authentifié, le compte professionnel ou scolaire authentifié ou les comptes invités |  <ul><li> [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) </li><li> [Restreindre le partage de contenu SharePoint et OneDrive par domaine](/sharepoint/restricted-domains-sharing) </li><li> [Utiliser SharePoint Online en tant que solution extranet B2B (business-to-business)](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) </li></ul> |
 |Suivi et contrôle du partage externe pour les utilisateurs finaux | OneDrive Entreprise propriétaires de fichiers et SharePoint les utilisateurs finaux en ligne configurent le partage de sites et de documents et établissent des notifications pour suivre le partage |  <ul><li> [Configurer des notifications pour le partage externe pour OneDrive Entreprise](https://support.office.com/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) </li><li> [Partager des fichiers ou dossiers SharePoint](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) </li></ul> |
 
 ## <a name="skype-for-business-collaboration-options"></a>Skype Entreprise options de collaboration
@@ -96,12 +96,12 @@ Chaque organisation conserve ses propres comptes d’utilisateur, identités, gr
 
 - **Abonnements &amp; aux licences** : dans Microsoft 365, les licences des plans de gestion des licences (également appelées plans Microsoft 365 ou SSO) donnent aux utilisateurs l’accès aux services Microsoft 365 définis pour ces plans.
 
-- **Stockage :** Dans Microsoft 365 plans de gestion des licences, les limites et frontières logicielles pour SharePoint Online sont gérées séparément des limites de stockage des boîtes aux lettres. Les limites de stockage de boîtes aux lettres sont définies et gérées à l’aide Exchange Online. Dans les deux scénarios, le stockage ne peut pas être partagé entre les locataires.
+- **Stockage :** Dans Microsoft 365 plans de gestion des licences, les limites et frontières logicielles de SharePoint Online sont gérées séparément des limites de stockage des boîtes aux lettres. Les limites de stockage de boîtes aux lettres sont définies et gérées à l’aide Exchange Online. Dans les deux scénarios, le stockage ne peut pas être partagé entre les locataires.
 
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>Pouvons-nous partager des espaces de noms de domaine Microsoft 365 locataires ?
 
 Non. Les noms de domaine d’organisation, tels fabrikam.com ou tailspintoys.com, ne peuvent être associés et utilisés qu’avec un seul Microsoft 365 client. Chaque client doit avoir son propre espace de noms. Les espaces de noms UPN, SMTP et SIP ne peuvent pas être partagés entre les locataires.
 
-### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>Qu’en est-il des composants hybrides et Microsoft 365 collaboration inter-locataires ?
+### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>Qu’en est-il des composants hybrides Microsoft 365 collaboration inter-locataires ?
 
 Les composants hybrides locaux, tels qu’une organisation Exchange et azure AD Connecter, ne peuvent pas être répartis sur plusieurs locataires.

@@ -1,7 +1,7 @@
 ---
 title: Migrer les données de votre organisation vers Microsoft 365 Entreprise
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez vous aider à migrer les données de votre organisation vers Microsoft 365.
-ms.openlocfilehash: 6eff9d525f25817f7042e2ce77cfaf0e08170df794db22b13cced81fa791f43e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80efbafe17d0a35da323c6f6274e18af270c4985
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858686"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355951"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Migrer les données de votre organisation vers Microsoft 365 Entreprise
 
@@ -30,7 +30,7 @@ ms.locfileid: "53858686"
 
 Nos [instructions de mise en place](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) de base vous aident à faire en Microsoft 365 vos applications et services de base le plus rapidement possible. Cela ignore les scénarios hybrides et les méthodes plus avancées pour la migration vers Microsoft 365. 
   
-Si vous souhaitez obtenir de l’aide Microsoft 365 la configuration, [FastTrack](https://fasttrack.microsoft.com/office) est le moyen le plus simple de déployer Microsoft 365, vous pouvez également vous inscrire et utiliser les guides d’installation pour [Microsoft 365 services.](setup-guides-for-microsoft-365.md)
+Si vous souhaitez obtenir de l’aide Microsoft 365 la configuration, [FastTrack](https://fasttrack.microsoft.com/office) est le moyen le plus simple de déployer des Microsoft 365, vous pouvez également vous inscrire et utiliser les guides d’installation pour [Microsoft 365 services.](setup-guides-for-microsoft-365.md)
 
 ## <a name="migrate-email-to-microsoft-365"></a>Migrer le courrier vers Microsoft 365
 - Effectuer une migration avec Exchange hybride à l’aide de l’ [Assistant de Déploiement Exchange](https://technet.microsoft.com/exdeploy2013). (Administrateur)

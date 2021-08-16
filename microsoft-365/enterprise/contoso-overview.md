@@ -1,9 +1,9 @@
 ---
 title: Vue d’ensemble de Contoso Corporation
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
-ms.openlocfilehash: dc3d939895a5eedc0bf5f66a0226486bd2fa97cd15fb05aa9329a1cfbce644d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0690f942a72dedbd1247fcff9d6705ec638e189e
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899382"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356851"
 ---
 # <a name="overview-of-contoso-corporation"></a>Vue d’ensemble de Contoso Corporation
 
-Contoso Corporation est une multinationale dont le siège social est à Paris. La société est une organisation de production, de vente et de support technique qui compte plus de 100 000 produits.
+Contoso Corporation est une multinationale dont le siège social est à Paris. L’entreprise est une organisation de production, de vente et de support qui compte plus de 100 000 produits.
 
 ## <a name="contoso-around-the-world"></a>Contoso dans le monde
 
@@ -45,7 +45,7 @@ Contoso possède trois niveaux de bureaux :
 
   Les bureaux hub servent une région spécifique du monde avec 60 % de chiffre d’affaires et de personnel de support technique. Chaque hub régional est connecté au siège social parisien via une liaison WAN à bande passante élevée.
 
-  Les centres régionaux ont en moyenne 2 000 travailleurs.
+  Les centres régionaux ont en moyenne 2 000 employés.
 
 - Succursales
 

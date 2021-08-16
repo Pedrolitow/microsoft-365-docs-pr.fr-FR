@@ -1,7 +1,7 @@
 ---
 title: Désactiver l’accès aux services Microsoft 365 tout en attribuant des licences utilisateur
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 04/24/2020
 audience: Admin
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Découvrez comment attribuer des licences à des comptes d’utilisateurs et désactiver des plans de service spécifiques en même temps à l’aide de PowerShell pour Microsoft 365.
-ms.openlocfilehash: 1e4015873fd4461269ff77697010334d1b1a5d6703c8d965a81a4c9ce3141319
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf3ae327000f2f0bdb93dfdad8429c741a52c30f
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841072"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356539"
 ---
 # <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Désactiver l’accès aux services Microsoft 365 tout en attribuant des licences utilisateur
 

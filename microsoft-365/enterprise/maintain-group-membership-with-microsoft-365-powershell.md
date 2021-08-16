@@ -1,7 +1,7 @@
 ---
 title: Conserver l’appartenance à un groupe de sécurité avec PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Découvrez comment utiliser PowerShell pour maintenir l’appartenance à Microsoft 365 groupes.
-ms.openlocfilehash: e60aaa0200a4cbc972f9157ead3db81a92fb7f4e7049d9ab27c2e420b94c2169
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a66db0748c50d296ff9d26969ae8b3caa7f310f
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858950"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356695"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>Conserver l’appartenance à un groupe de sécurité avec PowerShell
 

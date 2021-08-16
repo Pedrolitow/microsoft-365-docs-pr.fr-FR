@@ -2,8 +2,8 @@
 title: Configuration de base légère
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/14/2019
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test léger pour les tests Microsoft 365 entreprise.
-ms.openlocfilehash: a43616d538e21bf906fae82797c2835b0593b23c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 3b59b6ce6ac0ff9f6ba51bcd7c8ab150152dc6a9
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256850"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356371"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuration de base légère
 
@@ -145,7 +145,7 @@ Si vous n’avez pas encore enregistré ces valeurs, enregistrez-les maintenant 
    
 ### <a name="using-an-office-365-test-environment"></a>Utilisation d’un environnement de test Office 365
 
-Si vous n’avez besoin que d Office 365 de test, vous n’avez pas besoin de lire le reste de cet article.
+Si vous n’avez besoin Office 365 environnement de test, vous n’avez pas besoin de lire le reste de cet article.
 
 Pour obtenir des guides de laboratoire de test supplémentaires qui s’appliquent à Office 365 et Microsoft 365, voir Microsoft 365 guides de laboratoire de test pour [entreprise.](m365-enterprise-test-lab-guides.md)
   
@@ -169,7 +169,7 @@ Tout d’abord, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attr
 
 7. Dans la Centre d’administration Microsoft 365, **sélectionnez Utilisateurs > utilisateurs actifs.**
 
-8. Dans **les utilisateurs actifs,** sélectionnez votre compte d’administrateur.
+8. Dans **les utilisateurs** actifs, sélectionnez votre compte d’administrateur.
 
 9. Sélectionnez **licences et applications.**
 
@@ -294,7 +294,7 @@ Ensuite, installez Applications Microsoft 365 pour les grandes entreprises sur l
     
 2. Sous **l’Microsoft Office Accueil,** **sélectionnez Installer Office**.
     
-3. Lorsque vous y avez été invité, sélectionnez **Exécuter,** puis Oui **pour** le contrôle de **compte d’utilisateur.**
+3. Lorsque vous y avez été invité, sélectionnez **Exécuter,** puis Oui **pour** **le contrôle de compte d’utilisateur.**
     
 4. Attendez qu’Office termine l’installation. Lorsque vous voyez **que tout est prêt !**, sélectionnez Fermer **deux** fois.
     

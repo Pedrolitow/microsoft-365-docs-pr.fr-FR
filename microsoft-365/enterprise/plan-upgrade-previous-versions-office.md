@@ -1,7 +1,7 @@
 ---
 title: Planifier votre mise à niveau à Office serveurs et clients 2007 ou 2010
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: overview
@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des ressources pour les utilisateurs qui utilisent Office 2007 ou Office 2010 pour les aider à planifier leur mise à niveau.
-ms.openlocfilehash: d93a1a00e2738d907fdfc9a9c9cad8a64f23519c647315166f093d424e7217b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1fbbf13f267f191f567f413dd777d12e43abc096
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794929"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356899"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
@@ -36,9 +36,9 @@ Pour plus d’informations, voir [Upgrade from Office 2010 servers and clients](
 
 Utilisez les ressources de cet article pour commencer votre mise à niveau.
 
-## <a name="what-is-microsoft-365"></a>Qu’est-ce que Microsoft 365 ?
+## <a name="what-is-microsoft-365"></a>Qu’est-ce que Microsoft 365 ?
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) est une combinaison d’applications Office innovantes, de services cloud intelligents et de sécurité de niveau mondial conçue pour vous aider à atteindre des objectifs plus élaborés.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) est une combinaison d’applications Office innovantes, de services cloud intelligents et de sécurité de niveau mondial conçue pour vous aider à atteindre d’autres objectifs.
 
 Microsoft 365 inclut les licences et fonctionnalités pour vous assurer que votre organisation travaille sur la dernière version Windows système d’exploitation. Il garantit également que vos appareils Windows, iOS et Android sont inscrits et sécurisés par des stratégies qui nécessitent l’authentification et la protection des données. En outre, Windows 10 logiciel client Microsoft 365 Apps pour Enterprise (précédemment nommé Office 365 ProPlus) est continuellement mis à jour pour inclure les dernières fonctionnalités et mises à jour de sécurité.
   
@@ -81,7 +81,7 @@ Si vous souhaitez de l’aide sur la planification de votre mise à niveau, envi
 
 - Travaillez avec un partenaire ou un spécialiste des licences en volume. [Recherchez votre Microsoft 365 ou revendeur.](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx) 
 
-- Si votre organisation achète un nombre éligible de Microsoft 365 licences, notre équipe FastTrack peut vous aider tout au long du processus de configuration. Pour plus d’informations, [voir FastTrack pour Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365).
+- Si votre organisation achète un nombre éligible de licences Microsoft 365, notre équipe FastTrack peut vous aider tout au long du processus de configuration. Pour plus d’informations, [voir FastTrack pour Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365).
 
 - Si vous faites partie d’une petite organisation ou si vous préférez gérer vous-même la mise à niveau Office de votre organisation, consultez Mettre à niveau vos utilisateurs Microsoft 365 Business vers le [dernier client Office](/office365/admin/setup/upgrade-users-to-latest-office-client). 
   
@@ -91,13 +91,13 @@ Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options 
 
 - **Utilisez Office dans un navigateur gratuitement.** Créez, affichez et modifiez des Office dans votre navigateur. Accédez à ces fichiers à partir de n’importe quel appareil dispose d’un accès à Internet. 
 
-  [Office sur le Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclut [Word sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746664), [Excel sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway,](https://go.microsoft.com/fwlink/p/?linkid=746675) [e-mail,](https://go.microsoft.com/fwlink/p/?linkid=746676)calendrier [et OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). [](https://go.microsoft.com/fwlink/p/?linkid=746678) Pour commencer, visitez [Office.com](https://office.com) et connectez-vous à l’aide de [votre compte Microsoft.](https://account.microsoft.com/account) Si vous n’avez pas de compte Microsoft, vous pouvez en créer un [sur Office.com.](https://office.com)
+  [Office sur le Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclut [Word sur le Web,](https://go.microsoft.com/fwlink/p/?linkid=746664) [Excel sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway,](https://go.microsoft.com/fwlink/p/?linkid=746675) [e-mail,](https://go.microsoft.com/fwlink/p/?linkid=746676) [](https://go.microsoft.com/fwlink/p/?linkid=746678)calendrier [et OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Pour commencer, visitez [Office.com](https://office.com) et connectez-vous à l’aide de [votre compte Microsoft.](https://account.microsoft.com/account) Si vous n’avez pas de compte Microsoft, vous pouvez en créer un [sur Office.com.](https://office.com)
 
 - **Essayez Microsoft 365 Famille.** Démarrez une version [d Microsoft 365 Famille](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) pour voir comment elle fonctionne pour vous. Avec Microsoft 365 Famille, vous pourrez profiter du stockage cloud avec OneDrive.
 
   La prise en charge Windows 7 [a pris fin le 14 janvier 2020.](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support) Les versions de Word, Excel, PowerPoint, Outlook, Publisher et Access fournies avec Office 365 Famille ou Office 365 Personnel et qui s’exécutent sur des appareils Windows 7 reçoivent des mises à jour de sécurité, mais pas des mises à jour de fonctionnalités. Pour continuer à recevoir des mises à jour de fonctionnalités pour ces applications, mettez à [niveau Windows 7](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)appareils vers Windows 10 .
     
-- **Achetez Office Famille &amp; Étudiant.** Si vous choisissez cette option, vous pouvez effectuer un achat en une seule fois, puis installer Office sur votre PC Windows mac. Cet achat n’est pas un abonnement . Il s’agit d’une licence à usage permanent pour un ordinateur. Affichez [les conditions](https://office.com/systemrequirements) requises, puis choisissez une version.
+- **Achetez Office Famille &amp; Étudiant.** Si vous choisissez cette option, vous pouvez effectuer un achat à prix seul, puis installer Office sur Windows PC ou Mac. Cet achat n’est pas un abonnement . Il s’agit d’une licence à usage permanent pour un ordinateur. Affichez [les conditions](https://office.com/systemrequirements) requises, puis choisissez une version.
 
   - Si votre PC Windows’exécute Windows 10, envisagez d’obtenir Office [Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
 
@@ -112,6 +112,6 @@ Si vous choisissez de ne pas mettre à niveau maintenant, vos applications Offic
 - [Mettre à niveau des serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
 - [Mettre à niveau des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
   
 [Politique de cycle de vie Microsoft](/lifecycle/)

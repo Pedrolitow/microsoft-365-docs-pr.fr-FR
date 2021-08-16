@@ -1,7 +1,7 @@
 ---
 title: Pourquoi utiliser PowerShell pour Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
@@ -13,19 +13,19 @@ f1.keywords:
 - CSH
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
-description: 'Résumé : Comprendre pourquoi vous devez utiliser PowerShell pour gérer les Microsoft 365, dans certains cas plus efficacement et dans d’autres cas par nécessité.'
-ms.openlocfilehash: 1c575cc71186dcf5c82e11f03c266086abac730a7340d89ae5d8c1a005d4496c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 'Résumé : Comprendre pourquoi vous devez utiliser PowerShell pour gérer Microsoft 365, dans certains cas plus efficacement et dans d’autres cas par nécessité.'
+ms.openlocfilehash: 361900d66c1cb8f41a27f661241a63d7d806e99b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807279"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356863"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Pourquoi utiliser PowerShell pour Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Grâce aux Centre d’administration Microsoft 365, vous pouvez gérer vos comptes d Microsoft 365 utilisateur et vos licences. Vous pouvez également gérer vos services Microsoft 365, tels que Exchange Online, Teams et SharePoint Online. Si vous utilisez PowerShell à la place pour gérer ces services, vous pouvez tirer parti de la ligne de commande et de l’environnement de langage de script pour la vitesse, l’automatisation et des fonctionnalités supplémentaires.
+Grâce aux Centre d’administration Microsoft 365, vous pouvez gérer vos comptes d Microsoft 365 utilisateur et vos licences. Vous pouvez également gérer vos services Microsoft 365, tels que Exchange Online, Teams et SharePoint Online. Si vous utilisez PowerShell à la place pour gérer ces services, vous pouvez tirer parti de l’environnement de langage de script et de ligne de commande pour la vitesse, l’automatisation et des fonctionnalités supplémentaires.
 
 Cet article montre comment utiliser PowerShell pour gérer les Microsoft 365 à :
 
@@ -41,7 +41,7 @@ Cet article montre comment utiliser PowerShell pour gérer les Microsoft 365 à 
 
 - Gérer entre les services
 
-N’oubliez pas que PowerShell pour Microsoft 365 est un ensemble de modules pour Windows PowerShell, qui est un environnement de ligne de commande pour les plateformes et les services basés sur Windows. Cet environnement crée un langage d’environnement de commande qui peut être étendu avec des modules supplémentaires. Il permet d’exécuter des commandes ou des scripts simples ou complexes. Par exemple, après avoir installé powerShell pour les modules Microsoft 365 et vous être connecté à votre abonnement Microsoft 365, vous pouvez exécuter la commande suivante pour lister toutes les boîtes aux lettres utilisateur pour Microsoft Exchange Online :
+N’oubliez pas que PowerShell pour Microsoft 365 est un ensemble de modules pour Windows PowerShell, qui est un environnement de ligne de commande pour les plateformes et les services basés sur Windows. Cet environnement crée un langage d’environnement de commande qui peut être étendu avec des modules supplémentaires. Il permet d’exécuter des commandes ou des scripts simples ou complexes. Par exemple, après avoir installé les modules PowerShell pour Microsoft 365 et vous être connecté à votre abonnement Microsoft 365, vous pouvez exécuter la commande suivante pour lister toutes les boîtes aux lettres utilisateur pour Microsoft Exchange Online :
 
 ```powershell
 Get-Mailbox
@@ -49,7 +49,7 @@ Get-Mailbox
 
 Vous pouvez également obtenir la liste des boîtes aux lettres à l’aide du Centre d’administration Microsoft 365 mais il n’est pas facile de compter les éléments de toutes les listes de tous les sites pour toutes vos applications web.
 
-PowerShell pour Microsoft 365 est conçu pour vous aider à gérer les Microsoft 365, et non à remplacer les Centre d’administration Microsoft 365. Les administrateurs doivent être en mesure d’utiliser PowerShell pour Microsoft 365 car certaines procédures de configuration peuvent uniquement être réalisées via PowerShell pour Microsoft 365 commandes. Pour ces cas, vous devez savoir comment :
+PowerShell pour Microsoft 365 est conçu pour vous aider à gérer les Microsoft 365, et non à remplacer les Centre d’administration Microsoft 365. Les administrateurs doivent être en mesure d’utiliser PowerShell pour Microsoft 365, car certaines procédures de configuration peuvent uniquement être réalisées via PowerShell pour Microsoft 365 commandes. Pour ces cas, vous devez savoir comment :
 
 - Installez PowerShell pour Microsoft 365 modules (effectués une seule fois pour chaque ordinateur administrateur).
 
@@ -182,7 +182,7 @@ Avec ces paramètres, vous pouvez ajouter une touche de personnalisation et de p
 
 - tous les utilisateurs de votre organisation à être désignés en tant que présentateurs lorsqu’ils rejoignent la réunion.
 
-Ces paramètres ne sont pas disponibles dans le centre d’administration Skype Entreprise Online. Vous pouvez les contrôler à partir de PowerShell pour Microsoft 365. Voici une commande qui désactive ces trois paramètres :
+Ces paramètres ne sont pas disponibles dans le Centre d’administration Skype Entreprise Online. Vous pouvez les contrôler à partir de PowerShell pour Microsoft 365. Voici une commande qui désactive ces trois paramètres :
 
 ```powershell
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConferenceRecording $False -DesignateAsPresenter "None"
@@ -238,7 +238,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > [!NOTE]
 > Cette commande nécessite que vous installiez SharePoint [module PowerShell en ligne.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
-L’interprétation de cette commande PowerShell est : Obtenir tous les sites SharePoint dans l’abonnement Microsoft 365 actuel (**Get-SPOSite**) et pour chaque site supprimer KenLier de la liste des utilisateurs qui peuvent y accéder (**ForEach {Remove-SPOUser -Site $ \_ . Url -LoginName « kenmyer \@ litwareinc.com"}**).
+L’interprétation de cette commande PowerShell est : Obtenir tous les sites SharePoint dans l’abonnement Microsoft 365 actuel (**Get-SPOSite**) et pour chaque site, supprimez KenLier de la liste des utilisateurs qui peuvent y accéder (**ForEach {Remove-SPOUser -Site $ \_ . Url -LoginName « kenmyer \@ litwareinc.com"}**).
 
 Nous vous Microsoft 365 de supprimer Ken Meyer de chaque site, y compris ceux à lesquels il n’a pas accès. Les résultats indiquent donc des erreurs pour les sites à qui il n’a pas accès. Nous pouvons utiliser une condition supplémentaire sur cette commande pour supprimer KenCourir uniquement des sites qui l’ont sur leur liste de connexion. Toutefois, les erreurs renvoyées ne provoquent aucun dommage pour les sites eux-mêmes. Cette commande peut prendre quelques minutes pour s’exécuter sur des centaines de sites, plutôt que des heures de travail sur le Centre d’administration Microsoft 365.
 
@@ -258,7 +258,7 @@ Le Centre d’administration Microsoft 365 propose plusieurs façons de filtrer 
 
 Le Centre d'administration Exchange vous permet également de combiner des critères de filtre. Par exemple, vous pouvez trouver les boîtes aux lettres de toutes les personnes qui habitent à Bloomington et travaillent au service financier.
 
-Toutefois, il existe des limites à ce que vous pouvez faire dans le centre d Exchange’administration. Par exemple, vous n’avez pas pu trouver aussi facilement les boîtes aux lettres des personnes qui habitent à *Bloomington* ou San Diego, ou les boîtes aux lettres de toutes les personnes qui ne habitent pas à Bloomington.
+Toutefois, il existe des limites à ce que vous pouvez faire dans le Centre d Exchange’administration. Par exemple, vous n’avez pas pu trouver aussi facilement les boîtes aux lettres des personnes qui habitent à *Bloomington* ou San Diego, ou les boîtes aux lettres de toutes les personnes qui ne habitent pas à Bloomington.
 
 Vous pouvez utiliser la commande PowerShell pour Microsoft 365 suivante pour obtenir la liste des boîtes aux lettres de toutes les personnes qui habitent à Bloomington ou San Diego :
 
@@ -308,7 +308,7 @@ L’interprétation de cette commande PowerShell est : Obtenir tous les utilisat
 
 ### <a name="use-wildcards"></a>Utiliser des caractères génériques
 
-Vous pouvez également utiliser des caractères génériques dans vos filtres PowerShell pour faire correspondre une partie d’un nom. Par exemple, supposons que vous recherchiez un compte d’utilisateur. Tout ce que vous vous souvenez, c’est que le nom de famille de l’utilisateur était *Anderson* ou *peut-être À la place* de *Sondesser ou Dersonson*.
+Vous pouvez également utiliser des caractères génériques dans vos filtres PowerShell pour faire correspondre une partie d’un nom. Par exemple, supposons que vous recherchiez un compte d’utilisateur. Tout ce que vous vous souvenez, c’est que le nom de famille de l’utilisateur était *Anderson* ou *peut-être À la place* de Ce *dernier.*
 
 Vous pouvez suivre cet utilisateur dans le Centre d’administration Microsoft 365 l’aide de l’outil de recherche et effectuer trois recherches différentes :
 

@@ -2,8 +2,8 @@
 title: Inscrire des appareils iOS/iPadOS et Android dans votre environnement de test Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2020
 audience: ITPro
@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
-description: Utilisez ce guide de laboratoire de test pour inscrire des appareils dans Microsoft 365 environnement de test et les gérer à distance.
-ms.openlocfilehash: e00aa4b51d5e3a9cc88c9d73ef644c56d4336b8b6120df4ac34de061200af317
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Utilisez ce Guide de laboratoire de test pour inscrire des appareils dans Microsoft 365 environnement de test et les gérer à distance.
+ms.openlocfilehash: ee7933a5e111b33ac7d3b17c0de2ef14483f9714
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855094"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356743"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 entreprise
 
@@ -41,10 +41,10 @@ L’inscription d’appareils iOS/iPadOS et Android dans votre environnement de 
 
 Si vous souhaitez inscrire les appareils iOS/iPadOS et Android de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère.](lightweight-base-configuration-microsoft-365-enterprise.md)
   
-Si vous souhaitez inscrire des appareils iOS/iPadOS et Android dans une entreprise simulée, suivez les instructions de l’authentification [directe.](pass-through-auth-m365-ent-test-environment.md)
+Si vous souhaitez inscrire des appareils iOS/iPadOS et Android dans une entreprise simulée, suivez les instructions de [l’authentification directe.](pass-through-auth-m365-ent-test-environment.md)
   
 > [!NOTE]
-> Le test de la gestion automatisée des licences et de l’appartenance à un groupe ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS (Active Directory Domain Services). Il est fourni ici en tant qu’option pour que vous pouvez tester les licences automatisées et l’appartenance à un groupe, et vous pouvez l’expérimenter dans un environnement qui représente une organisation classique.
+> Le test de la gestion automatisée des licences et de l’appartenance à un groupe ne nécessite pas l’environnement de test d’entreprise simulée, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS (Active Directory Domain Services). Il est fourni ici en tant qu’option pour que vous pouvez tester les licences automatisées et l’appartenance à un groupe, et vous pouvez l’expérimenter dans un environnement qui représente une organisation classique.
 
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Phase 2 : Inscrire vos appareils iOS et Android
 
@@ -68,7 +68,7 @@ Microsoft Intune fonctionnalité de verrouillage à distance et de réinitialisa
 - Pour verrouiller à distance un appareil iOS/iPadOS ou Android, voir Verrouiller à distance les appareils [avec Intune.](/mem/intune/remote-actions/device-remote-lock)
 - Pour réinitialiser à distance le code secret, voir Réinitialiser ou supprimer un code [secret d’appareil dans Intune.](/mem/intune/remote-actions/device-passcode-reset)
 
-Pour les autres tâches que vous pouvez exécuter à distance, consultez les [actions de périphérique disponibles.](/mem/intune/remote-actions/device-management#available-device-actions)
+Pour les autres tâches que vous pouvez exécuter à distance, consultez [les actions de périphérique disponibles.](/mem/intune/remote-actions/device-management#available-device-actions)
     
 ## <a name="next-step"></a>Étape suivante
 

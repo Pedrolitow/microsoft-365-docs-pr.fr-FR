@@ -2,8 +2,8 @@
 title: Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/13/2019
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez la réinitialisation de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 6935327518c6b2fe5bac9e8fddf4308eb34852954d9e20767a3d8315f7566c21
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 999709558a468d53bc809662dbcc270fa8a9945b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840874"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356503"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 
@@ -70,13 +70,13 @@ Dans cette phase, configurez la réinitialisation du mot de passe dans le client
 Tout d’abord, activez la réinitialisation de mot de passe pour les comptes d’un groupe Azure AD spécifique.
 
 1. Dans une instance privée de votre navigateur, ouvrez [https://portal.azure.com](https://portal.azure.com), puis connectez-vous avec les informations d’identification de votre compte Administrateur général.
-2. Dans le portail Azure, sélectionnez **Azure Active Directory**  >  **Groupe Nouveau**  >  **groupe.**
+2. Dans le portail Azure, **sélectionnez Azure Active Directory**  >    >  **Groupe Nouveau groupe.**
 3. Définissez le **Type de groupe** sur **Sécurité**, le **Nom du groupe** sur **PWReset** et le **Type d’appartenance** sur **Affecté**.
 4. Sélectionnez **Membres,** recherchez et **sélectionnez Utilisateur 3,** **sélectionnez Sélectionner,** puis **créez.**
 5. Fermez le volet **Groupes**.
-6. Dans le volet Azure Active Directory, sélectionnez **Réinitialiser** le mot de passe dans le volet de navigation gauche.
+6. Dans le volet Azure Active Directory, sélectionnez Réinitialiser le mot de **passe** dans le volet de navigation gauche.
 7. Sur la page **Propriétés–Réinitialiser le mot de passe**, sous l’option **Réinitialisation du mot de passe en libre-service activée**, choisissez **Sélectionné**.
-8. Sélectionnez **Sélectionner un** groupe, sélectionnez le groupe **PWReset,** puis **sélectionnez**  >  **Enregistrer.**
+8. Sélectionnez **Sélectionner** un groupe, sélectionnez le groupe **PWReset,** puis **sélectionnez**  >  **Enregistrer.**
 9. Fermez l’instance privée du navigateur.
 
 Ensuite, testez la réinitialisation du mot de passe pour le compte Utilisateur 3.
@@ -88,7 +88,7 @@ Ensuite, testez la réinitialisation du mot de passe pour le compte Utilisateur 
 1. Une fois les deux vérifiés, **sélectionnez Apparences,** puis fermez l’instance privée du navigateur.
 1. Dans une nouvelle instance de navigateur privé, allez à [https://aka.ms/sspr](https://aka.ms/sspr) .
 1. Entrez le nom du compte Utilisateur 3, entrez les caractères de la CAPTCHA, puis sélectionnez **Suivant**.
-1. Pour **l’étape de vérification 1,** **sélectionnez Envoyer un e-mail** à mon courrier de remplacement, puis sélectionnez **Courrier électronique.** Lorsque vous recevez l’e-mail, entrez le code de vérification, puis sélectionnez **Suivant**.
+1. Pour **l’étape de vérification 1,** sélectionnez **Envoyer un e-mail à mon autre e-mail,** puis sélectionnez Courrier **électronique.** Lorsque vous recevez l’e-mail, entrez le code de vérification, puis sélectionnez **Suivant**.
 1. Dans **Revenir à votre compte,** entrez un nouveau mot de passe pour le compte Utilisateur 3, puis sélectionnez **Terminer.** Notez le mot de passe modifié du compte d’utilisateur 3 et stockez-le dans un endroit sûr.
 1. Dans un onglet distinct du même navigateur, accédez à [https://admin.microsoft.com](https://admin.microsoft.com), puis connectez-vous avec le nom de compte Utilisateur 3 et son nouveau mot de passe. Vous devez voir la **page d’accueil Microsoft Office**.
 

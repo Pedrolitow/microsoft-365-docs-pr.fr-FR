@@ -2,8 +2,8 @@
 title: Centre de déploiement du bureau moderne
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Comment obtenir les ressources équivalentes au Centre de déploiement de bureau déprécié.
-ms.openlocfilehash: 4e71d80496ff700e9b662d7109383e04a8ef805045e1ac0085eb195b041b65fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b74072593b3345c2c0ffef495b117af47f1f88a3
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53849858"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356779"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Centre de déploiement de bureau (supprimé)
 
@@ -28,12 +28,12 @@ Utilisez ces ressources pour déployer des bureaux modernes :
 
 - [Windows 10 déploiement](/windows/deployment/)
 - [Déployer Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
-- [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
+- [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [Stratégies pour les accès aux identités et appareils](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 Vous pouvez également afficher les vidéos [de la série De déploiement de](https://www.aka.ms/watchhowtoshift)bureau à partir de Microsoft Mechanics .
 
-Vous pouvez également trouver de l’aide pour votre déploiement de bureau auprès de partenaires Microsoft et [FastTrack.](https://www.microsoft.com/fasttrack/microsoft-365)
+Vous pouvez également trouver de l’aide pour votre déploiement de bureau auprès de partenaires et de [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)Microsoft.
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 

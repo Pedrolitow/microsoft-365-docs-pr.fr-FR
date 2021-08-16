@@ -2,8 +2,8 @@
 title: Automatiser la gestion des licences et l’appartenance à un Microsoft 365 pour l’environnement de test d’entreprise
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/09/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurez la gestion des licences basée sur les groupes et l’appartenance à un groupe dynamique dans Microsoft 365 pour l’environnement de test d’entreprise.
-ms.openlocfilehash: 8835498f0b56eeafbc86f49a0be2df840359afbfdeb5518ca6fe521b64c8c652
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7c871c7005163aa81e911b15f8a3c91e8ea9c43
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859082"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356587"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatiser la gestion des licences et l’appartenance à un Microsoft 365 pour l’environnement de test d’entreprise
 
@@ -49,7 +49,7 @@ Si vous souhaitez tester la gestion automatisée des licences et l’appartenanc
   
 ## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Phase 2 : Configurer et tester l’appartenance à un groupe dynamique et la gestion automatique des licences
 
-Tout d’abord, créez un groupe nommé Ventes, puis ajoutez  une  règle d’appartenance au groupe dynamique afin que les comptes d’utilisateurs dont le service est le service des ventes rejoignent automatiquement le groupe Ventes.
+Tout d’abord, créez un groupe nommé Ventes et ajoutez  une règle  d’appartenance au groupe dynamique afin que les comptes d’utilisateurs dont le service est le service sont automatiquement joints au groupe Ventes.
 
 1. Dans une instance privée de votre navigateur Internet, connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec le compte d’administrateur général de votre abonnement Microsoft 365 E5 de laboratoire de test.
 2. Sous un onglet distinct de votre navigateur, allez sur le portail Azure à [https://portal.azure.com](https://portal.azure.com) l':.

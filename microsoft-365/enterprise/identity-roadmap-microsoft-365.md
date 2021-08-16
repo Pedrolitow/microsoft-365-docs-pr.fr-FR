@@ -2,8 +2,8 @@
 title: Feuille de route relative à l’identité pour Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Feuille de route de l’identité pour Microsoft 365.
-ms.openlocfilehash: 555f0ceba66280f1142b0af492eb61acf37e34d5a4b8d1db6333e7da01ff968c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 520f80152bccfd9a01b812f08e7c75f6770a9bc4
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801016"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356707"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Feuille de route relative à l’identité pour Microsoft 365
 
@@ -41,7 +41,7 @@ Examinez cette affiche de deux pages pour accélérer rapidement les concepts et
 
 Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
-## <a name="plan"></a>Planification
+## <a name="plan"></a>Prévision
 
 Pour planifier l’implémentation de votre identité :
 
@@ -72,8 +72,8 @@ Pour gérer votre déploiement d Microsoft 365 d’identité, voir :
 - [Comptes d’utilisateur](manage-microsoft-365-accounts.md)
 - [Licences](assign-licenses-to-user-accounts.md)
 - [Mots de passe](manage-microsoft-365-passwords.md)
-- [Groupes](manage-microsoft-365-groups.md)
-- [Governance](manage-microsoft-365-identity-governance.md)
+- [Groups](manage-microsoft-365-groups.md)
+- [Gouvernance](manage-microsoft-365-identity-governance.md)
 - [Synchronisation d’annuaires](view-directory-synchronization-status.md)
 
 ## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Comment Microsoft fait l’identité pour Microsoft 365

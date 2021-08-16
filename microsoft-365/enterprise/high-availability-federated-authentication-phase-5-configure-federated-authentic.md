@@ -1,7 +1,7 @@
 ---
 title: Authentification fédérée haute disponibilité Phase 5 Configurer l’authentification fédérée pour Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -13,13 +13,13 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: 'Résumé : Configurez azure ad Connecter pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: 7953e7655b484250576352eb805042e1a435ccf5bf6cea25cf6a5dc7eb3a4bc8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 'Résumé : Configurez azure ad Connecter pour votre authentification fédérée haute disponibilité Microsoft 365 dans Microsoft Azure.'
+ms.openlocfilehash: ecd5eac14279bb79c0e4bc574a9340314cc77574
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870664"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356527"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Authentification fédérée haute disponibilité, phase 5 : Configurer l’authentification fédérée pour Microsoft 365
 
@@ -45,7 +45,7 @@ Lorsque vous recevez le certificat, copiez-le dans un dossier sur le lecteur C: 
   
 ## <a name="verify-your-configuration"></a>Vérifier votre configuration
 
-Vous devez maintenant être prêt à configurer l’authentification fédérée et les Connecter Azure AD pour Microsoft 365. Pour vous en assurer, utilisez la liste de vérification suivante :
+Vous devez maintenant être prêt à configurer l’authentification Connecter Azure AD et l’authentification fédérée pour Microsoft 365. Pour vous en assurer, utilisez la liste de vérification suivante :
   
 - Le domaine public de votre organisation est ajouté à votre abonnement Microsoft 365 abonnement.
     

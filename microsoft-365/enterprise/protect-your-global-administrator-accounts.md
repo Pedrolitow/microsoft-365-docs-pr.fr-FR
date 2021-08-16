@@ -1,7 +1,7 @@
 ---
 title: Protéger vos comptes Microsoft 365 administrateur général
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
@@ -22,18 +22,18 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Cet article fournit des informations sur la protection de l’accès administrateur général à Microsoft 365 abonnement.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97ef59ff9b08ba9d763b18381b76a697de2e4338f28fbfb3799eba53d89e9c09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3a43c8b6ac5389be99581302c249e431853ba99b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904694"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355915"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Protéger vos comptes Microsoft 365 administrateur général
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les violations de sécurité d’un abonnement Microsoft 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement réalisées en compromettant les informations d’identification d’Microsoft 365 compte d’administrateur général. La sécurité dans le cloud est un partenariat entre vous et Microsoft :
+Les violations de sécurité d’un abonnement Microsoft 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement dues à la compromissation des informations d’identification d’un Microsoft 365 d’administrateur général. La sécurité dans le cloud est un partenariat entre vous et Microsoft :
   
 - Les services cloud de Microsoft reposent sur une base de confiance et de sécurité. Microsoft vous fournit des contrôles de sécurité et des fonctionnalités pour vous aider à protéger vos données et applications.
     
@@ -89,7 +89,7 @@ Les résultats doivent être :
 À partir de maintenant, vous vous connectez avec les comptes d’administrateur général dédiés uniquement pour les tâches qui nécessitent des privilèges d’administrateur général. Toutes les autres Microsoft 365 administration doivent être réalisées en attribuant d’autres rôles d’administration à des comptes d’utilisateurs.
   
 > [!NOTE]
-> Cela nécessite des étapes supplémentaires pour vous dé connectez en tant que compte d’utilisateur quotidien et avec un compte d’administrateur général dédié. Toutefois, cette opération ne doit être effectuée qu’occasionnellement pour les opérations d’administrateur général. La récupération de votre abonnement Microsoft 365 suite à une violation de compte d’administrateur général nécessite beaucoup plus d’étapes.
+> Cela nécessite des étapes supplémentaires pour vous dé connectez en tant que compte d’utilisateur quotidien et connectez-vous à l’aide d’un compte d’administrateur général dédié. Toutefois, cette opération ne doit être effectuée qu’occasionnellement pour les opérations d’administrateur général. Considérez que la récupération de votre abonnement Microsoft 365 suite à une violation de compte d’administrateur général nécessite beaucoup plus d’étapes.
   
 ## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>Étape 2. Configurer l’authentification multifacteur pour vos comptes Microsoft 365 administrateur général dédiés
 
@@ -119,7 +119,7 @@ Pour plus d’informations, [consultez l’mf pour Microsoft 365](../admin/secur
   
 Pour vous connecter à Microsoft 365 services avec mfa et PowerShell, consultez les articles suivants :
 
-- [PowerShell for Microsoft 365 for user accounts, groups, and licenses](connect-to-microsoft-365-powershell.md)
+- [PowerShell pour Microsoft 365 pour les comptes d’utilisateur, les groupes et les licences](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](/microsoftteams/teams-powershell-install)
 - [Exchange Online](/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
@@ -143,7 +143,7 @@ Reportez-vous à la rubrique [Sécurisation de l’accès privilégié pour les 
 
 Au lieu d’attribuer définitivement le rôle d’administrateur général à vos comptes d’administrateur général, vous pouvez utiliser Azure AD Privileged Identity Management (PIM) pour activer l’attribution à la demande et juste-à-temps du rôle d’administrateur général lorsqu’il est nécessaire.
   
-Vos comptes d’administrateur général ne sont plus des administrateurs permanents, mais des administrateurs éligibles. Le rôle d’administrateur général est inactif jusqu’à ce que quelqu’un en a besoin. Vous terminez ensuite un processus d’activation pour ajouter le rôle d’administrateur général au compte d’administrateur général pendant un laps de temps prédéterminé. Lorsque le délai expire, PIM supprime le rôle d’administrateur général du compte d’administrateur général.
+Vos comptes d’administrateur général ne sont plus des administrateurs permanents, mais des administrateurs éligibles. Le rôle d’administrateur général est inactif jusqu’à ce que quelqu’un en a besoin. Vous terminez ensuite un processus d’activation pour ajouter le rôle d’administrateur général au compte d’administrateur général pendant un laps de temps prédéterminé. À l’expiration du délai, PIM supprime le rôle d’administrateur général du compte d’administrateur général.
   
 L’utilisation de PIM et de ce processus réduit considérablement le temps que vos comptes d’administrateur général sont vulnérables aux attaques et à l’utilisation par des utilisateurs malveillants.
 

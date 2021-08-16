@@ -1,7 +1,7 @@
 ---
 title: Afficher Microsoft 365 licence de compte et les détails du service avec PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -19,12 +19,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Explique comment utiliser PowerShell pour déterminer les services Microsoft 365 qui ont été affectés aux utilisateurs.
-ms.openlocfilehash: 040f296468e3bc3ad3b4b69df4a4420defa202f4dc8e50441f5cbece71399613
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c450c0697dced43f974087f6c0453e4b761914b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840742"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356059"
 ---
 # <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>Afficher Microsoft 365 licence de compte et les détails du service avec PowerShell
 

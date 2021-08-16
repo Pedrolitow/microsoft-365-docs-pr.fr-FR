@@ -1,7 +1,7 @@
 ---
 title: Ajouter un domaine à une location de client avec Windows PowerShell pour les partenaires DAP
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,13 +16,13 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: 'Résumé : Utilisez PowerShell pour Microsoft 365 ajouter un autre nom de domaine à un client existant.'
-ms.openlocfilehash: a7a1039f29b73cef50ed14fe6ad3189faf3365087e9526f5517b866ac0440f77
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour ajouter un autre nom de domaine à un client existant.'
+ms.openlocfilehash: 90eec48de55a01dd2298bed1ff0dc068d57da3bb
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835450"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356119"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
@@ -49,10 +49,10 @@ Vous avez également besoin des informations suivantes :
 
 ## <a name="create-domains"></a>Création de domaines
 
- Vos clients vous demanderont probablement de créer des domaines supplémentaires à associer à leur location, car ils ne voudront probablement pas que le domaine<domain>.onmicrosoft.comsoit le domaine principal qui représente leur identité d'entreprise aux yeux du monde entier. Cette procédure vous guide au fil du processus de création d'un domaine associé à la location de votre client.
+ Vos clients vous demanderont probablement de créer des domaines supplémentaires à associer à leur location, car ils ne voudront probablement pas que le domaine\<domain>.onmicrosoft.comsoit le domaine principal qui représente leur identité d'entreprise aux yeux du monde entier. Cette procédure vous guide au fil du processus de création d'un domaine associé à la location de votre client.
 
 > [!NOTE]
-> Pour effectuer certaines de ces opérations, le compte d’administrateur partenaire avec qui vous vous connectez doit être définie sur **Administration** complète pour l’attribution d’un accès **administratif** aux sociétés que vous supportez et qui se trouvent dans les détails du compte d’administrateur dans le Centre d’administration Microsoft 365. Pour plus d’informations sur la gestion des rôles d’administrateur partenaire, voir [Partenaires : proposer une administration déléguée.](https://go.microsoft.com/fwlink/p/?LinkId=532435)
+> Pour effectuer certaines de ces opérations, le compte d’administrateur partenaire avec qui vous vous connectez doit être définie sur **Administration** complète pour l’attribution d’un accès **administratif** aux sociétés que vous prendrez en charge et qui se trouvent dans les détails du compte d’administrateur dans le Centre d’administration Microsoft 365. Pour plus d’informations sur la gestion des rôles d’administrateur partenaire, voir [Partenaires : proposer une administration déléguée.](https://go.microsoft.com/fwlink/p/?LinkId=532435)
 
 ### <a name="create-the-domain-in-azure-active-directory"></a>Création du domaine dans Azure Active Directory
 

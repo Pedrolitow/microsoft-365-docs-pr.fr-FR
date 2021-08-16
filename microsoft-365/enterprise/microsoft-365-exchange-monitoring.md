@@ -1,7 +1,7 @@
 ---
 title: Déployer Exchange Online pour Microsoft 365 Éducation
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/03/2020
 audience: Admin
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Si vous souhaitez en savoir plus sur les incidents d’e-mail ou les conseils dans Microsoft 365, utilisez la surveillance d’Exchange Online.
-ms.openlocfilehash: fd0e71a33a502f21e9a072a43cbe35dc76582a31def8f7a6ca1e9d2f2ad2592e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b6eaf85c1f5f8c892bc382cb7656dac6bbbb550
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807433"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355987"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Déployer Exchange Online pour Microsoft 365 Éducation
 

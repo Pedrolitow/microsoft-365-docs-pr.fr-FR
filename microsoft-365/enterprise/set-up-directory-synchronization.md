@@ -1,7 +1,7 @@
 ---
 title: Configurer la synchronisation d’annuaires pour Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Découvrez comment configurer la synchronisation d’annuaires entre Microsoft 365 et votre active Directory local.
-ms.openlocfilehash: 53a64b2fdf2ff16f024425f516a5752b7788fadcabec94da772ace32ed9cdc0e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: db6fc46eb4659b0c41f46b2828044af3bdaf02e2
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904454"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356191"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurer la synchronisation d’annuaires pour Microsoft 365
 
@@ -87,10 +87,10 @@ Avant de commencer, assurez-vous que vous avez :
 
 Procédez comme suit :
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) ( https://admin.microsoft.com) et choisissez **Utilisateurs** \> **actifs sur** le navigation de gauche.
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) ( https://admin.microsoft.com) et choisissez **Utilisateurs** \> **actifs** sur le navigation de gauche.
 2. Dans la page **Utilisateurs** actifs, sélectionnez **Plus** (trois points) \> **Synchronisation d’annuaires.**
   
-3. Dans la page **Azure Active Directory** de préparation, sélectionnez Le Centre de téléchargement pour obtenir le lien de l’outil Connecter **Azure AD** pour commencer. 
+3. Dans la page **Azure Active Directory de** préparation, sélectionnez Le Centre de téléchargement pour obtenir le lien **d’outils Connecter Azure AD** pour commencer. 
 4. Suivez les étapes de la feuille [de route d’installation d’Azure AD Connecter et Azure AD Connecter Health.](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
 
 ## <a name="3-finish-setting-up-domains"></a>3. Terminer la configuration des domaines

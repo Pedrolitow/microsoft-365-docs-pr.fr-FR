@@ -1,7 +1,7 @@
 ---
 title: Utilisation de PowerShell pour effectuer une migration IMAP vers Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: Découvrez comment utiliser PowerShell pour effectuer une migration IMAP (Internet Mail Access Protocol) vers Microsoft 365.
-ms.openlocfilehash: 6f259ed05a5c6b050484ab1cb7188230b77af36c29c934d07054f7a3833f0075
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3447aa5be5ba76c5f8c85849ce8c5ea0e05a5ad4
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830178"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356887"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration IMAP vers Microsoft 365
 
@@ -57,7 +57,7 @@ Les migrations IMAP font l'objet des restrictions suivantes :
 
 - **Si vous avez un domaine pour votre organisation IMAP, ajoutez-le en tant que domaine accepté de Microsoft 365 organisation.** Si vous souhaitez utiliser le même domaine que celui que vous possédez déjà pour vos boîtes aux lettres Microsoft 365, vous devez d’abord l’ajouter en tant que domaine accepté à Microsoft 365. Une fois que vous l’avez ajouté, vous pouvez créer vos utilisateurs dans Microsoft 365. Pour plus d’informations,[voir Vérifier votre domaine.](../admin/setup/add-domain.md)
 
-- **Ajoutez chaque utilisateur à Microsoft 365 de sorte qu’il y a une boîte aux lettres.** Pour obtenir des instructions, voir[Ajouter des utilisateurs Microsoft 365 pour les entreprises.](../admin/add-users/add-users.md)
+- **Ajoutez chaque utilisateur à Microsoft 365 afin qu’il y a une boîte aux lettres.** Pour obtenir des instructions, voir[Ajouter des utilisateurs Microsoft 365 pour les entreprises.](../admin/add-users/add-users.md)
 
 - **Obtenez le nom de domaine complet (FQDN) du serveur IMAP.** Lorsque vous créez un point de terminaison de migration IMAP, vous devez fournir le nom de domaine complet (FQDN) (également appelénom complet de l'ordinateur) du serveur IMAP à partir duquel vous allez migrer les données de boîte aux lettres. Utilisez un client IMAP ou la commande PING pour vérifier que vous pouvez utiliser le FQDN pour communiquer avec le serveur IMAP sur Internet.
 
@@ -84,7 +84,7 @@ Identifiez le groupe d'utilisateurs dont vous voulez migrer les boîtes aux lett
 
 Les attributs obligatoires pour chaque utilisateur sont les suivants :
 
-- **EmailAddress spécifie** l’ID utilisateur de la boîte aux lettres Microsoft 365'utilisateur.
+- **EmailAddress spécifie** l’ID d’utilisateur pour la boîte aux lettres Microsoft 365 utilisateur.
 
 - **UserName** spécifie le nom de connexion du compte à utiliser pour accéder à la boîte aux lettres sur le serveur IMAP.
 

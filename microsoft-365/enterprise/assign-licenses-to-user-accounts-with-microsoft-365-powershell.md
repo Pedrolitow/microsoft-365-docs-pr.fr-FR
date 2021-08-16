@@ -1,7 +1,7 @@
 ---
 title: Attribuer Microsoft 365 licences d’utilisateur à des comptes d’utilisateur avec PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/23/2020
 audience: Admin
@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Dans cet article, découvrez comment utiliser PowerShell pour attribuer une licence Microsoft 365 aux utilisateurs sans licence.
-ms.openlocfilehash: 5ce0a8a5cab4acf5db2e72f56526228a8f78b7809677026267bd6caceff77004
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 08aab95c0d864437210de557bd48b9bb0a0ee3e2
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904886"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356035"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Attribuer Microsoft 365 licences d’utilisateur à des comptes d’utilisateur avec PowerShell
 
@@ -103,7 +103,7 @@ Pour rechercher les comptes sans permis dans votre organisation, exécutez cette
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-Vous pouvez uniquement attribuer des licences à des comptes d’utilisateur dont la propriété **UsageLocation** est définie sur un code pays ISO 3166-1 alpha-2 valide. Par exemple, US pour les États-Unis et FR pour la France. Certains Microsoft 365 ne sont pas disponibles dans certains pays. Pour plus d’informations, voir [à propos des restrictions de licence.](https://go.microsoft.com/fwlink/p/?LinkId=691730)
+Vous pouvez uniquement attribuer des licences à des comptes d’utilisateurs dont la propriété **UsageLocation** est définie sur un code pays ISO 3166-1 alpha-2 valide. Par exemple, US pour les États-Unis et FR pour la France. Certains Microsoft 365 ne sont pas disponibles dans certains pays. Pour plus d’informations, voir [à propos des restrictions de licence.](https://go.microsoft.com/fwlink/p/?LinkId=691730)
     
 Pour rechercher des comptes qui n’ont pas de valeur **UsageLocation,** exécutez cette commande.
 

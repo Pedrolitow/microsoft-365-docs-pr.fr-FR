@@ -2,8 +2,8 @@
 title: Protéger les comptes d’administrateur général dans votre environnement de test Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/12/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Utilisez ces étapes pour protéger les comptes d’administrateur général dans votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: 17aca0060501a4df3c694c4c7e4aa2aef98248d54b36d27ff3c99780648274b5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7d49e82fd53e5383a86bbcafcbf8d8c750195ab
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904730"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356347"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Protéger les comptes d’administrateur général dans votre environnement de test Microsoft 365 entreprise
 
@@ -78,7 +78,7 @@ Cette première stratégie nécessite que tous les comptes d’administrateur g�
 
 1. Dans un nouvel onglet de votre navigateur, allez à [https://portal.azure.com](https://portal.azure.com) .
 2. Cliquez **sur Azure Active Directory** accès  >  **conditionnel à** la  >  **sécurité.**
-3. Dans le **volet Accès conditionnel – Stratégies,** sélectionnez Stratégie de référence : Exiger l’pertinence de l’élection de l’élection **(prévisualisation) pour les administrateurs.**
+3. Dans le **volet Accès conditionnel – Stratégies,** sélectionnez Stratégie de référence : Exiger l’élection de l’élection de base pour **les administrateurs (prévisualisation).**
 4. Dans le **volet Stratégie de** référence, **sélectionnez Utiliser la stratégie immédiatement > Enregistrer.**
 
 Cette deuxième stratégie bloque l’accès à l’authentification de compte d’administrateur général lorsque le risque de se connecte est moyen ou élevé.
@@ -89,7 +89,7 @@ Cette deuxième stratégie bloque l’accès à l’authentification de compte d
 4. Dans **l’onglet**  Inclure du volet Utilisateurs et groupes, sélectionnez Sélectionner des utilisateurs et des **groupes**  >  **Utilisateurs et groupes**  >  **Sélectionner.**
 5. Dans le **volet** Sélectionner, sélectionnez le **groupe GlobalAdmins,** puis **sélectionnez**  >  **Terminé.**
 6. Dans la section **Affectations,** sélectionnez **Conditions.**
-7. Dans le **volet Conditions,** sélectionnez Risque  de se connectez, sélectionnez Oui pour Configurer, Sélectionnez Élevé et **Moyen,** puis Sélectionnez Sélectionner **et** **Terminé.**   
+7. Dans le **volet Conditions,** sélectionnez Risque  de se connectez, sélectionnez Oui pour Configurer, Sélectionner Élevé et **Moyen,** puis Sélectionnez Sélectionner **et** **Terminé.**   
 8. Dans la section **Contrôles d’accès** du **nouveau** volet, sélectionnez **Accorder**.
 9. Dans le **volet Accorder,** sélectionnez Bloquer **l’accès,** puis sélectionnez **Sélectionner.**
 10. Dans le **volet** Nouveau, sélectionnez **Activer** pour **activer** la stratégie, puis sélectionnez **Créer.**

@@ -1,7 +1,7 @@
 ---
 title: Utilisation de PowerShell pour créer des rapports pour Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
@@ -16,18 +16,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Résumé : Utilisez PowerShell pour Microsoft 365 créer des rapports que vous ne pouvez pas produire dans le Centre d’administration Microsoft 365.'
-ms.openlocfilehash: dba0e7eab3c2521193128b503fd11a00198e7abd199a0a3003ec19e1adf732fa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fe1b48bdb61d037a3b2bc49d017a16c3a6875cd
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894802"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356875"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Utilisation de PowerShell pour créer des rapports pour Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-De nombreux rapports différents sont disponibles dans le Centre d’administration Microsoft 365. Toutefois, ces rapports fournissent uniquement une telle quantité d’informations, et vous avez parfois besoin de plus. C’est à ce moment que vous avez besoin de PowerShell pour Microsoft 365.
+De nombreux rapports différents sont disponibles dans le Centre d’administration Microsoft 365. Toutefois, ces rapports fournissent uniquement une telle quantité d’informations, et vous en avez parfois besoin de plus. C’est à ce moment que vous avez besoin de PowerShell pour Microsoft 365.
   
 Ces articles décrivent comment utiliser PowerShell pour Microsoft 365 pour obtenir des informations de votre client Microsoft 365 client :
   
@@ -48,7 +48,7 @@ Ces articles décrivent comment utiliser PowerShell pour Microsoft 365 pour obte
     
 - Rapports pour SharePoint Online :
     
-  - [Prise en main de SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+  - [Prise en main de SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
   - [Get-SPOSiteGroup : obtient tous les groupes sur une collection de sites spécifiée](/powershell/module/sharepoint-online/get-spositegroup)
     

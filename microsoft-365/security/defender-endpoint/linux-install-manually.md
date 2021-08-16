@@ -1,5 +1,5 @@
 ---
-title: Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
+title: Déployer Microsoft Defender pour point de terminaison sur Linux manuellement
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour Endpoint sur Linux manuellement à partir de la ligne de commande.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 704e44a61a89e176433058bc62ed02ed96001ed28fda38354b85e1cbc977545d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea48f3e69630a61c8e3156ab156fb0365ff9c100
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806879"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356179"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour point de terminaison sur Linux manuellement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -74,28 +74,34 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     ```bash
     sudo yum install yum-utils
     ```
+- Notez votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/rhel/` .
 
-- Notez votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/config/` . Par exemple, RHEL 7.9 est plus proche de 7,4 que de 8.
+    Utilisez le tableau suivant pour vous aider à trouver le package : 
 
-    Dans les commandes ci-dessous, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées :
+    |     Distro & version    |     Package    |
+    |---|---|
+    |     Pour RHEL 8.0-8.5    |     https://packages.microsoft.com/rhel/8/prod/    |
+    |     Pour RHEL 7.2-7.9    |     https://packages.microsoft.com/rhel/7/prod/    |
+
+    Dans les commandes suivantes, *remplacez [version]* et *[canal]* par les informations que vous avez identifiées :
 
     > [!NOTE]
     > Dans le cas d’Oracle Linux, *remplacez [distro]* par « rhel ».
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/[version]/[channel].repo
     ```
 
     Par exemple, si vous exécutez CentOS 7 et que vous souhaitez déployer Defender pour Endpoint sur Linux à partir du *canal prod* :
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/prod.repo
     ```
 
-    Ou si vous souhaitez explorer de nouvelles fonctionnalités sur des appareils sélectionnés, vous pouvez déployer Microsoft Defender pour Endpoint sur Linux sur un canal rapide pour les *insiders* :
+    Ou si vous souhaitez explorer de nouvelles fonctionnalités sur des appareils sélectionnés, vous pouvez déployer Microsoft Defender pour Point de terminaison sur Linux sur un canal rapide pour les *insiders* :
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/insiders-fast.repo
     ```
 
 - Installez la clé publique Microsoft GPG :
@@ -112,18 +118,18 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
 
 ### <a name="sles-and-variants"></a>SLES et variantes
 
-- Notez votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/config/` .
+- Notez votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/sles/` .
 
     Dans les commandes suivantes, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées :
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/[distro]/[version]/[channel].repo
     ```
 
     Par exemple, si vous exécutez SLES 12 et que vous souhaitez déployer Microsoft Defender pour Endpoint sur Linux à partir du *canal prod* :
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
+    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/sles/12/prod.repo
     ```
 
 - Installez la clé publique Microsoft GPG :
@@ -146,18 +152,18 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     sudo apt-get install libplist-utils
     ```
 
-- Notez votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/config` .
+- Notez votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/[distro]/` .
 
     Dans la commande ci-dessous, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées :
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
+    curl -o microsoft.list https://packages.microsoft.com/[distro]/[version]/[channel].list
     ```
 
-    Par exemple, si vous exécutez Ubuntu 18.04 et que vous souhaitez déployer MDE pour Linux à partir du *canal prod* :
+    Par exemple, si vous exécutez Ubuntu 18.04 et que vous souhaitez déployer Microsoft Defender pour Endpoint sur Linux à partir du *canal prod* :
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
+    curl -o microsoft.list https://packages.microsoft.com/ubuntu/18.04/prod.list
     ```
 
 - Installez la configuration du référentiel :
@@ -327,7 +333,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
     mdatp health --field org_id
     ```
 
-4. Quelques minutes après avoir terminé l’installation, vous pouvez voir l’état en exécutant la commande suivante. Une valeur de retour `1` de indique que le produit fonctionne comme prévu :
+4. Quelques minutes après avoir terminé l’installation, vous pouvez voir l’état en exécutant la commande suivante. Une valeur de retour indique que le `1` produit fonctionne comme prévu :
 
     ```bash
     mdatp health --field healthy
@@ -340,7 +346,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
     > mdatp health --field definitions_status
     > ```
     >
-    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l’installation initiale. Voir Configurer Defender pour endpoint sur Linux pour [la découverte de proxy statique : configuration post-installation.](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
+    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l’installation initiale. Voir [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
 
 5. Exécutez un test de détection pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 
@@ -376,7 +382,7 @@ Pour tester les fonctionnalités de PEPT linux, suivez les étapes ci-dessous po
 
 ## <a name="installer-script"></a>Script du programme d’installation
 
-Vous pouvez également utiliser un script de programme d’installation [bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
+Vous pouvez également utiliser un script bash de [programme](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) d’installation automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
 Le script identifie la distribution et la version, et définit l’appareil pour qu’il tire le dernier package et l’installe.
 Vous pouvez également intégrer un script fourni.
 
@@ -428,7 +434,7 @@ Lors de la mise à niveau de votre système d’exploitation vers une nouvelle v
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
     ```
 
-1. Redéployer MDE pour Linux à l’aide du « canal de production ».
+1. Redéployer Microsoft Defender pour endpoint sur Linux à l’aide du « canal de production ».
 
 ## <a name="uninstallation"></a>Désinstallation
 

@@ -2,8 +2,8 @@
 title: Microsoft 365 pour l’authentification multifacteur de l’environnement de test d’entreprise
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/12/2019
 audience: ITPro
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: Configurez l’authentification multifacteur à l’aide de messages texte envoyés à un smartphone dans votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: 4f410b7e8a57a119ecce33626354639af89c0e65aea01b123d213908735dbb00
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 772fc5d5a05ca08f2fcb851f1e5399c1dd77828f
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813017"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356227"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Authentification multifacteur pour votre environnement de test Microsoft 365 entreprise
 
@@ -64,7 +64,7 @@ Activez l’authentification multifacteur pour le compte d’utilisateur 2 en pr
     
 4. Dans la liste, sélectionnez le **compte Utilisateur 2.**
     
-5. Dans la section **Utilisateur 2,** sous **Étapes rapides,** **sélectionnez Activer**.
+5. Dans la section **Utilisateur 2,** sous **Étapes rapides,** sélectionnez **Activer**.
     
 6. Dans la boîte de dialogue À propos **de l’activation de** l’th plusieurs facteurs, sélectionnez Activer **l’thème multi-facteur.**
     

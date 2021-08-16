@@ -1,7 +1,7 @@
 ---
 title: Gestion des stratégies Skype Entreprise Online avec PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Résumé : Utilisez PowerShell pour gérer vos propriétés Skype Entreprise compte d’utilisateur En ligne avec des stratégies.'
-ms.openlocfilehash: 51218d2158558e527f5ce9b3c12388e69cd3d87c140641762247a90d6e78043c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aea57c836403918e4c236f766ed211a31ea2ceec
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835054"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357040"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Gestion des stratégies Skype Entreprise Online avec PowerShell
 
@@ -116,7 +116,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 Le paramètre ApplicableTo limite les données renvoyées aux stratégies qui peuvent être attribuées à l’utilisateur indiqué (par exemple, Alex Darrow). Selon les restrictions liées à la gestion des licences et à l’emplacement d’utilisation, cela pourrait représenter un sous-ensemble de toutes les stratégies disponibles. 
   
-Dans certains cas, les propriétés des stratégies ne sont pas utilisées avec les Microsoft 365, tandis que d’autres ne peuvent être gérées que par le personnel du support technique Microsoft. 
+Dans certains cas, les propriétés des stratégies ne sont pas utilisées avec les Microsoft 365, tandis que d’autres ne peuvent être gérées que par le personnel du support Technique de Microsoft. 
   
 Avec Skype Entreprise Online, les utilisateurs doivent être gérés par une stratégie ou une autre. Si une propriété portant sur les stratégies est vide, cela signifie que l'utilisateur en question est géré par une stratégie globale, c'est-à-dire une stratégie qui est appliquée automatiquement à un utilisateur, sauf si une stratégie individuelle est appliquée à cet utilisateur. Si aucune stratégie de client n'est répertoriée pour un compte d'utilisateur, cela signifie qu'il est géré par la stratégie globale. Vous pouvez déterminer la stratégie de client globale avec cette commande :
   

@@ -1,7 +1,7 @@
 ---
 title: Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 05/16/2018
 audience: ITPro
@@ -20,12 +20,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: Obtenez des affiches qui décrivent les modèles architecturaux, le déploiement et les options de plateforme pour SharePoint, Exchange, Skype Entreprise et Lync.
-ms.openlocfilehash: caa4f630a047ca438decdd9dd2dede13ff96598eea1f0781140a8c66dbc6381f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 98558c20c66a808e93cd866b2f676b5f78fde3c1
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885470"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356443"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync
 
@@ -43,7 +43,7 @@ Cette expérience utilisateur unifiée complique la décision d’où placer cha
     
 - Comment Azure s’intègre-t-il à l’image ?
     
-- Quelles configurations des charges Office charges de travail du serveur sont-ils prise en charge par Azure ?
+- Quelles configurations des charges de travail Office serveur sont-ils prise en charge par Azure ?
     
 > [!TIP]
 > La plupart des affiches de cet article sont disponibles dans plusieurs langues. Les langues disponibles sont le chinois, l’anglais, le français, l’allemand, l’italien, le japonais, le coréen, le portugais, le russe et l’espagnol. Pour télécharger une affiche dans l’une de ces langues, sous l’image miniature de l’affiche, sélectionnez **Plus de langues.**
@@ -80,7 +80,7 @@ Utilisez les liens suivants pour obtenir les affiches dont vous avez besoin :
 
 Les affiches pour SharePoint 2016 et Skype Entreprise 2015 permettent de comparer les méthodes de déploiement dans un format facile à imprimer. Les affiches listent toutes les options de configuration ou de plateforme. Elles fournissent les informations suivantes pour chaque option :
   
-- **Vue** d’ensemble : bref résumé de la plateforme, y compris un diagramme conceptuel.
+- **Vue d’ensemble**: bref résumé de la plateforme, y compris un diagramme conceptuel.
     
 - **Idéal pour**: scénarios courants qui conviennent parfaitement à la plateforme.
     
@@ -88,14 +88,14 @@ Les affiches pour SharePoint 2016 et Skype Entreprise 2015 permettent de compare
     
 - **Tâches d’architecture**: décisions que vous devez prendre en tant qu’architecte.
     
-- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel technique doit planifier.
+- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel de l’équipe it doit planifier.
     
 <a name="SP2016_ArchModel"> </a>
 ### <a name="microsoft-sharepoint-server-2016-architectural-models"></a>Modèles architecturaux Microsoft SharePoint Server 2016
 
 |Item|Description|
 |---|---|
-|[![Miniature de l’affiche SharePoint modèles architecturaux server 2016.](../media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=52650)|Cette affiche décrit les configurations SharePoint Online, Azure et SharePoint sur site que les décideurs d’entreprise et les architectes de solutions doivent connaître. <br/><br/> - **SharePoint Online (SaaS)**: utiliser SharePoint via un modèle d’abonnement SaaS (Software as a Service). <br/> - **SharePoint hybride**: déplacez vos sites SharePoint applications vers le cloud à votre rythme. <br/> - **SharePoint Azure (IaaS)**: étendez votre environnement local à Azure et déployez des serveurs SharePoint 2016. (Ce modèle est recommandé pour les environnements de haute disponibilité ou de récupération d’urgence et les environnements de développement/test.) <br/> - **SharePoint local**: planifiez, déployez, maintenez et personnalisez votre environnement SharePoint dans un centre de données que vous conservez.|
+|[![Miniature de l’affiche SharePoint modèles architecturaux server 2016.](../media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=52650)|Cette affiche décrit les configurations SharePoint Online, Azure et SharePoint sur site que les décideurs d’entreprise et les architectes de solutions doivent connaître. <br/><br/> - **SharePoint Online (SaaS)**: utiliser SharePoint via un modèle d’abonnement SaaS (Software as a Service). <br/> - **SharePoint hybride**: déplacez vos sites SharePoint applications vers le cloud à votre rythme. <br/> - **SharePoint Azure (IaaS)**: étendez votre environnement local à Azure et déployez des serveurs SharePoint 2016. (Ce modèle est recommandé pour les environnements de haute disponibilité ou de récupération d’urgence et les environnements de développement/test.) <br/> - **SharePoint local**: planifiez, déployez, conservez et personnalisez votre environnement SharePoint dans un centre de données que vous conservez.|
    
 <a name="SP2016_Databases"> </a>
 ### <a name="sharepoint-server-2016-databases"></a>Bases de données SharePoint Server 2016
@@ -115,7 +115,7 @@ Les affiches pour SharePoint 2016 et Skype Entreprise 2015 permettent de compare
 
 Les affiches pour SharePoint 2013, Exchange 2013 et Lync 2013 permettent de comparer les méthodes de déploiement en un coup d’œil. Chaque affiche répertorie toutes les configurations ou options de plateforme. Il fournit les informations suivantes pour chaque option :
   
-- **Vue** d’ensemble : bref résumé de la plateforme, y compris un diagramme conceptuel.
+- **Vue d’ensemble**: bref résumé de la plateforme, y compris un diagramme conceptuel.
     
 - **Idéal pour**: scénarios courants qui conviennent parfaitement à la plateforme.
     
@@ -123,14 +123,14 @@ Les affiches pour SharePoint 2013, Exchange 2013 et Lync 2013 permettent de comp
     
 - **Tâches d’architecture**: décisions que vous devez prendre en tant qu’architecte.
     
-- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel technique doit planifier.
+- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel de l’équipe it doit planifier.
     
 <a name="SP2013_Options"> </a>
 ## <a name="sharepoint-2013-platform-options"></a>Options de plateforme SharePoint 2013
 
 |Item|Description|
 |---|---|
-|[![Image miniature de l’SharePoint Options de plateforme 2013.](../media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=40332)|Pour les décideurs d’entreprise et les architectes, cette affiche présente les options de plateforme pour les déploiements SharePoint 2013, SharePoint en Microsoft 365, hybrides locaux avec Microsoft 365, Azure et les déploiements locaux uniquement. Il inclut une vue d’ensemble de chaque architecture, des recommandations, des exigences de licence et des listes de tâches architecte et de professionnel de l’it pour chaque plateforme. L’affiche présente plusieurs solutions SharePoint sur Azure.|
+|[![Image miniature de l’SharePoint Options de plateforme 2013.](../media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=40332)|Pour les décideurs d’entreprise et les architectes, cette affiche présente les options de plateforme pour SharePoint 2013, SharePoint en Microsoft 365, un déploiement hybride local avec Microsoft 365, Azure et des déploiements locaux uniquement. Il inclut une vue d’ensemble de chaque architecture, des recommandations, des exigences de licence et des listes de tâches architecte et de professionnel de l’it pour chaque plateforme. L’affiche présente plusieurs solutions SharePoint sur Azure.|
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Options de plateforme Exchange 2013

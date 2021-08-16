@@ -1,7 +1,7 @@
 ---
 title: Déployer Microsoft 365 synchronisation d’annuaires dans Microsoft Azure
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/05/2018
 audience: ITPro
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Découvrez comment déployer Azure AD Connecter sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre annuaire local et le client Azure AD.
-ms.openlocfilehash: 6f7744ab894346e7468f3b90c211d0f8247ba253b291a4a8eda0b292e7409f04
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c7a3c8a3800f7dc866895606277ca7dc5bd9ddd6
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835212"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356803"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Déployer Microsoft 365 synchronisation d’annuaires dans Microsoft Azure
 

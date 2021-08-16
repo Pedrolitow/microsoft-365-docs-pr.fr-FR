@@ -1,7 +1,7 @@
 ---
-title: Attribuer des rôles Microsoft 365 comptes d’utilisateur avec PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+title: Attribuer des rôles Microsoft 365 comptes d’utilisateurs avec PowerShell
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/23/2020
 audience: Admin
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: Dans cet article, découvrez comment utiliser rapidement et facilement PowerShell pour Microsoft 365 attribuer des rôles d’administrateur à des comptes d’utilisateur.
-ms.openlocfilehash: ef02c57037e17d17455ea19e78beefd221fc678386fe1fbb68f465da0fe0df36
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae68d2d8bb4373f3dc3cd94b8ebae5f1e4be05f4
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904910"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356599"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Attribuer des rôles d’administrateur Microsoft 365 comptes d’utilisateurs avec PowerShell
 

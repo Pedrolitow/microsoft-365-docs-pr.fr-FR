@@ -1,7 +1,7 @@
 ---
 title: Gestion des utilisateurs et des groupes SharePoint Online avec PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: Dans cet article, découvrez comment utiliser PowerShell pour Microsoft 365 gérer les utilisateurs, les groupes et les sites SharePoint Online.
-ms.openlocfilehash: 98a37311c75380f7ae6174e741690a9c84f9bec44a8f60a7051650a3d70c09e8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 04eb4a0e2c7d2c309ae4bbe063102293a017bbd6
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795193"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355999"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Gestion des utilisateurs et des groupes SharePoint Online avec PowerShell
 
@@ -33,7 +33,7 @@ ms.locfileid: "53795193"
 
 Si vous êtes un administrateur SharePoint Online qui travaille avec de grandes listes de comptes ou de groupes d’utilisateurs et souhaitez un moyen plus facile de les gérer, vous pouvez utiliser PowerShell pour Microsoft 365.
 
-Avant de commencer, les procédures de cette rubrique exigent que vous vous connectiez à SharePoint Online. Pour obtenir des instructions, [voir Connecter pour SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+Avant de commencer, les procédures de cette rubrique exigent que vous vous connectiez à SharePoint Online. Pour obtenir des instructions, [voir Connecter à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>Obtenir une liste de sites, de groupes et d’utilisateurs
 
@@ -59,7 +59,7 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>Ajouter un utilisateur au groupe Administrateurs de collection de sites
 
-La cmdlet permet d’ajouter un utilisateur à la liste des administrateurs de collection de `Set-SPOUser` sites sur une collection de sites.
+Vous utilisez la cmdlet pour ajouter un utilisateur à la liste des administrateurs de collection de `Set-SPOUser` sites sur une collection de sites.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -116,7 +116,7 @@ $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
 
-Les propriétés de groupe, telles que les niveaux d’autorisation, peuvent être mises à jour ultérieurement à l’aide de la `Set-SPOSiteGroup` cmdlet.
+Les propriétés de groupe, telles que les niveaux d’autorisation, peuvent être mises à jour ultérieurement à l’aide de `Set-SPOSiteGroup` l’cmdlet.
 
 Par exemple, nous allons ajouter le groupe Auditeurs avec des autorisations Affichage seul à la collection de sites contosotest dans la location contoso :
 
@@ -276,7 +276,7 @@ Mais que faire si vous souhaitez effectuer cette action pour chaque site ? Vous
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapports plus spécifiques ou des rapports qui contiennent des informations plus détaillées. Toutefois, cela devrait vous donner une idée de l’utilisation de SharePoint Online Management Shell pour gérer les utilisateurs dans l’environnement SharePoint Online.
+Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapports plus spécifiques ou des rapports qui contiennent des informations plus détaillées. Toutefois, cela devrait vous donner une idée de la façon d’utiliser SharePoint Online Management Shell pour gérer les utilisateurs dans l’environnement SharePoint Online.
 
 ## <a name="see-also"></a>Voir aussi
 

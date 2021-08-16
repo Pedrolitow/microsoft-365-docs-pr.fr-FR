@@ -1,7 +1,7 @@
 ---
 title: Skype Entreprise Online dans Office 365 - Aide de l'administrateur
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: En tant qu’administrateur, trouvez de l’aide pour configurer des parties de Skype Entreprise Online, notamment votre réseau, vos réunions et votre messagerie instantanée, ainsi que l’accès externe pour les utilisateurs.
-ms.openlocfilehash: db39d4d42b27aa95cdb3dc86d0c1976dd053d43408e5b64289b2754f88e698b6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3464f137459544d521fdbe43a2a6e590ed11b904
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835006"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355855"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype Entreprise Online dans Office 365 - Aide de l'administrateur
 

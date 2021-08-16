@@ -1,7 +1,7 @@
 ---
-title: Créer Microsoft 365 comptes d’utilisateur avec PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+title: Créer Microsoft 365 comptes d’utilisateurs avec PowerShell
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,14 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Comment utiliser PowerShell pour créer des comptes d’Microsoft 365 individuels ou multiples.
-ms.openlocfilehash: c3889c7611d4c0442eeac2e42fcaea0cb71aeb7b8467f8f6e88d11c8ac2fad21
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c096b5b4966bfde9973173b9a0a0c5bf1f0d786c
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864806"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356839"
 ---
-# <a name="create-microsoft-365-user-accounts-with-powershell"></a>Créer Microsoft 365 comptes d’utilisateur avec PowerShell
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>Créer Microsoft 365 comptes d’utilisateurs avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
@@ -40,12 +40,12 @@ Lorsque vous créez des comptes d’utilisateurs dans PowerShell, certaines prop
 |**UserPrincipalName** <br/> |Oui  <br/> |Il s’agit du nom de compte utilisé pour se Microsoft 365 services. Par exemple, *CalebS \@ contoso.onmicrosoft.com*.  <br/> |
 |**FirstName** <br/> |Non  <br/> ||
 |**NomFamille** <br/> |Non  <br/> ||
-|**LicenseAssignment** <br/> |Non  <br/> |Il s’agit du plan de gestion des licences (également appelé plan de licence ou référence SKU) à partir duquel une licence disponible est attribuée au compte d’utilisateur. La licence définit les services Microsoft 365 disponibles pour le compte. Vous n’avez pas besoin d’attribuer une licence à un utilisateur lorsque vous créez le compte, mais le compte doit avoir une licence pour accéder aux services Microsoft 365 services. Vous disposez de 30 jours pour attribuer une licence à un compte d'utilisateur après sa création. |
+|**LicenseAssignment** <br/> |Non  <br/> |Il s’agit du plan de gestion des licences (également appelé plan de licence ou référence SKU) à partir duquel une licence disponible est attribuée au compte d’utilisateur. La licence définit les services Microsoft 365 disponibles pour le compte. Vous n’êtes pas tenu d’attribuer une licence à un utilisateur lorsque vous créez le compte, mais le compte doit avoir une licence pour accéder aux services Microsoft 365 services. Vous disposez de 30 jours pour attribuer une licence à un compte d'utilisateur après sa création. |
 |**Password** <br/> |Non  <br/> | Si vous n'indiquez pas de mot de passe, un mot de passe aléatoire est affecté au compte d'utilisateur et le mot de passe est visible dans les résultats de la commande. Si vous spécifiez un mot de passe, il doit être de 8 à 16 caractères de texte ASCII des types suivants : lettres minuscules, lettres majuscules, chiffres et symboles.<br/> |
 |**UsageLocation** <br/> |Non  <br/> |Il s’agit d’un code pays ISO 3166-1 alpha-2 valide. Par exemple, *états-Unis* pour les États-Unis et *FR* pour la France. Il est important de fournir cette valeur, car certains services Microsoft 365 ne sont pas disponibles dans certains pays. Vous ne pouvez pas attribuer de licence à un compte d’utilisateur, sauf si cette valeur est configurée pour le compte. Pour plus d’informations, voir [à propos des restrictions de licence.](https://go.microsoft.com/fwlink/p/?LinkId=691730)<br/> |
 
 >[!Note]
->[Découvrez comment créer des comptes d’utilisateur à l’aide](../admin/add-users/add-users.md) du Centre d’administration Microsoft 365.
+>[Découvrez comment créer des comptes d’utilisateurs](../admin/add-users/add-users.md) à l’aide Centre d’administration Microsoft 365.
 > 
 > Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
 >   

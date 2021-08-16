@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2bb51c5162dcf89619d893e573e9275c002da4afb0bd21fbd03d7349488a2ac4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e9f65d7280ccbc2b780a693e1c259e3f3d6c6400
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898178"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357004"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
 
@@ -41,7 +41,7 @@ Cet article explique comment déployer Defender pour endpoint sur Linux à l’a
 - [Télécharger le package d’intégration](#download-the-onboarding-package)
 - [Créer des fichiers YAML ansibles](#create-ansible-yaml-files)
 - [Déploiement](#deployment)
-- [Références](#references)
+- [References](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
@@ -55,7 +55,7 @@ En outre, pour le déploiement Ansible, vous devez être familiarisé avec les t
   - sous-président
   - python-apt
 
-- Tous les nodes gérés doivent être répertoriés au format suivant dans le `/etc/ansible/hosts` fichier ou le fichier approprié :
+- Tous les nodes gérés doivent être répertoriés au format suivant dans le `/etc/ansible/hosts` fichier ou dans le fichier approprié :
 
     ```bash
     [servers]
@@ -77,7 +77,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![capture d’écran Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux-2.png)
+    ![capture d Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux-2.png)
 
 4. À partir d’une invite de commandes, vérifiez que vous avez le fichier. Extrayons le contenu de l’archive :
 
@@ -98,7 +98,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 
 ## <a name="create-ansible-yaml-files"></a>Créer des fichiers YAML ansibles
 
-Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou à une tâche.
+Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou une tâche.
 
 - Créez la tâche d’intégration : `onboarding_setup.yml`
 
@@ -138,7 +138,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
     > [!WARNING]
     > Le basculement du canal après l’installation initiale nécessite la réinstallation du produit. Pour basculer le canal de produit : désinstallez le package existant, configurez de nouveau votre appareil pour utiliser le nouveau canal et suivez les étapes de ce document pour installer le package à partir du nouvel emplacement.
 
-    Notez votre distribution et version et identifiez l’entrée la plus proche sous `https://packages.microsoft.com/config/` .
+    Notez votre distribution et version et identifiez l’entrée la plus proche sous `https://packages.microsoft.com/[distro]/` .
 
     Dans les commandes suivantes, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées.
 
@@ -177,7 +177,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
     when: ansible_os_family == "RedHat"
   ```
 
-- Créez les fichiers YAML d’installation et de désinstallation Ansible.
+- Créez les fichiers YaML d’installation et de désinstallation Ansible.
 
     - Pour les distributions basées sur apt, utilisez le fichier YAML suivant :
 
@@ -265,7 +265,7 @@ Exécutez maintenant les fichiers de tâches sous `/etc/ansible/playbooks/` ou d
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
+## <a name="log-installation-issues"></a>Journal des problèmes d’installation
 
 Pour [plus d’informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir problèmes d’installation des journaux.
 

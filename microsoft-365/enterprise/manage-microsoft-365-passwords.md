@@ -1,7 +1,7 @@
 ---
 title: Gérer les Microsoft 365 de compte d’utilisateur
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Découvrez comment gérer les mots de passe Microsoft 365 compte d’utilisateur.
-ms.openlocfilehash: ac83ef8a52bd0f0c3a6a8d1c0164c6eb6c0a4f4b20045d5c23ad2c1fb7a6b6da
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85d3c42a7aca977472e44fce63af3968fc8e9705
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899306"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356659"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>Gérer les Microsoft 365 de compte d’utilisateur
 
@@ -87,6 +87,6 @@ Pour obtenir plus d’informations et les instructions de configuration, consult
 
 ## <a name="simplify-password-resets"></a>Simplifiez les réinitialisations du mot de passe
 
-La réinitialisation du mot de passe en libre-service (SSPR) permet aux utilisateurs de réinitialiser ou de déverrouiller leur mot de passe ou leur compte. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer la [réinitialisation du mot de](#pw_writeback) passe avant de pouvoir déployer les réinitialisations de mot de passe.
+La réinitialisation du mot de passe en libre-service (SSPR) permet aux utilisateurs de réinitialiser ou de déverrouiller leur mot de passe ou leur compte. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer [l’écriture écriture par mot de](#pw_writeback) passe avant de pouvoir déployer les réinitialisations de mot de passe.
 
 Reportez-vous aux [Instructions pour activer la réinitialisation de mot de passe](/azure/active-directory/authentication/howto-sspr-deployment).

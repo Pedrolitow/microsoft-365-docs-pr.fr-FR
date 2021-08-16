@@ -1,7 +1,7 @@
 ---
 title: Préparation d’un domaine non routable pour la synchronisation d’annuaires
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Découvrez comment faire si vous avez un domaine non routable associé à vos comptes d’utilisateurs locaux avant de les synchroniser avec Microsoft 365 client.
-ms.openlocfilehash: 97e4a0b634b66a439d96496b3e742659b9d99496271fddd8db2ddf7c6ee7cee9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cecaee814d19f78b973ebd2f06c8d2c665d905de
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794859"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356911"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparation d’un domaine non routable pour la synchronisation d’annuaires
 
@@ -43,11 +43,11 @@ Azure AD Connecter l’UPN et le mot de passe de vos utilisateurs afin que les u
   
 ### <a name="change-your-primary-domain"></a>Modifier votre domaine principal
 
-Modifiez votre domaine principal en un domaine que vous avez vérifié dans Microsoft 365, par exemple, contoso.com. Chaque utilisateur qui possède le domaine contoso.local est ensuite mis à jour contoso.com. Il s’agit toutefois d’un processus très complexe, et une solution plus facile est décrite dans la section suivante.
+Modifiez votre domaine principal en un domaine que vous avez vérifié dans Microsoft 365, par exemple, contoso.com. Chaque utilisateur qui possède le domaine contoso.local est ensuite mis à jour contoso.com. Il s’agit toutefois d’un processus très complexe et une solution plus facile est décrite dans la section suivante.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>Ajouter des suffixes UPN et mettre à jour vos utilisateurs
 
-Vous pouvez résoudre le problème « .local » en enregistrant de nouveaux suffixes UPN dans AD DS pour qu’ils correspondent au ou aux domaines que vous avez vérifiés dans Microsoft 365. Après avoir inscrit le nouveau suffixe, vous mettez à jour les UPN utilisateur pour remplacer le « .local » par le nouveau nom de domaine, par exemple, afin qu’un compte d’utilisateur ressemble à billa@contoso.com.
+Vous pouvez résoudre le problème « .local » en enregistrant de nouveaux suffixes UPN dans AD DS pour qu’ils correspondent au ou aux domaines que vous avez vérifiés dans Microsoft 365. Après avoir inscrit le nouveau suffixe, vous mettez à jour les upns utilisateur pour remplacer « .local » par le nouveau nom de domaine, par exemple, afin qu’un compte d’utilisateur ressemble à billa@contoso.com.
   
 Une fois que vous avez mis à jour les UPN pour utiliser le domaine vérifié, vous êtes prêt à synchroniser vos AD DS locaux avec Microsoft 365.
   

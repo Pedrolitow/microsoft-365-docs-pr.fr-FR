@@ -1,7 +1,7 @@
 ---
 title: Intégration d’Azure avec Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Intégrez Microsoft 365 Azure AD si vous souhaitez synchroniser le mot de passe ou l' sign-on unique avec votre environnement local.
-ms.openlocfilehash: 68ec6098d6873177d573e866e0361b3775be25df1b7751a77f5b589adf5503ac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a4c6ad7346fc1c82968db024795ddf3f148a9053
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878896"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356575"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Intégration d’Azure avec Microsoft 365
 
@@ -60,7 +60,7 @@ Pour plus d’informations sur Microsoft 365 et Azure AD, voir [Microsoft 365 mo
 |**Fonctionnalité**|**Description**|
 |:-----|:-----|
 |Applications intégrées  <br/> |Vous pouvez accorder à des applications individuelles l’accès à Microsoft 365 données de messagerie, de calendriers, de contacts, d’utilisateurs, de groupes, de fichiers et de dossiers. Vous pouvez également autoriser ces applications au niveau de l’administrateur global et les mettre à la disposition de l’ensemble de votre entreprise en les enregistrant dans Azure AD. Pour plus d’informations, voir [Applications intégrées et Azure AD pour Microsoft 365 administrateurs.](integrated-apps-and-azure-ads.md)  <br/> Voir aussi [1 000 000 000](/azure/active-directory/manage-apps/what-is-single-sign-on).  <br/> |
-|PowerApps  <br/> | Les applications d’alimentation sont des applications axées sur les appareils mobiles qui peuvent se connecter à vos sources de données existantes, telles que SharePoint listes et autres applications de données. Pour [plus d’informations,](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) voir Créer un PowerApp pour une liste SharePoint Online et la [page PowerApps.](https://powerapps.microsoft.com/)  <br/> |
+|PowerApps  <br/> | Les applications d’alimentation sont des applications axées sur les appareils mobiles qui peuvent se connecter à vos sources de données existantes, telles que SharePoint listes et autres applications de données. Pour [plus d’informations,](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) voir Créer une PowerApp pour une liste SharePoint Online et la [page PowerApps.](https://powerapps.microsoft.com/)  <br/> |
    
 ## <a name="see-also"></a>Voir aussi
 

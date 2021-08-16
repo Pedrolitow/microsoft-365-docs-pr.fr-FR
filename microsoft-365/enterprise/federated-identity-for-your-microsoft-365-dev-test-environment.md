@@ -2,8 +2,8 @@
 title: Identité fédérée pour votre environnement de test Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 05/26/2019
 audience: ITPro
@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: e4d287f82fd267b3a56bcfad8266389e2dffa194c16f9c2fb9048cebe4773232
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dea2c5fe85ffb30f6195e4f76765422fb22f20b4
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870878"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356755"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identité fédérée pour votre environnement de test Microsoft 365
 
@@ -257,7 +257,7 @@ Ensuite, configurez le service AD FS en suivant ces étapes :
     
 7. Dans la page **Spécifier un compte de service,** **sélectionnez Sélectionner** **le nom du compte.**
     
-8. Dans **Sélectionner un compte d’utilisateur ou de service,** entrez **ADFS-Service,** sélectionnez **Vérifier** les noms, puis **sélectionnez OK**.
+8. Dans **Sélectionner un compte d’utilisateur ou** de service, entrez **ADFS-Service,** sélectionnez **Vérifier** les noms, puis **sélectionnez OK**.
     
 9. Dans **mot de passe** du compte, entrez le mot de passe du ADFS-Service, puis sélectionnez **Suivant**.
     
@@ -277,7 +277,7 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
   
 1. Sélectionnez **Démarrer,** **entrezmmc.exe,** puis appuyez sur **Entrée.**
     
-2. Select **File > Add/Remove Snap-in**.
+2. Sélectionnez **fichier > ajouter/supprimer un logiciel en snap-in**.
     
 3. Dans **Ajouter ou supprimer des snap-ins,** double-cliquez sur **Certificats** dans la liste des logiciels en snap-in disponibles, sélectionnez Compte d’ordinateur, puis sélectionnez **Suivant**.
     
@@ -305,7 +305,7 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
     
 15. Sélectionnez et maintenez (ou cliquez avec le bouton droit) le certificat, puis sélectionnez **Copier**.
     
-16. Dans le volet d’arborescence, **ouvrez Certificats autorités de certification**  >  **racines de confiance.**
+16. Dans le volet d’arborescence, **ouvrez Certificats autorités** de certification  >  **racines de confiance.**
     
 17. Déplacez votre pointeur de souris sous la liste des certificats installés, sélectionnez et maintenez le curseur (ou cliquez avec le bouton droit), puis sélectionnez **Coller**.
     
@@ -339,7 +339,7 @@ Suivez ces étapes pour configurer le service de proxy d’application web de ma
     
 6. Dans la page Certificat **de proxy AD FS,** sélectionnez la flèche vers le bas, sélectionnez le certificat avec votre nom de service de fédération, puis sélectionnez **Suivant**.
     
-7. Dans la page **Confirmation,** sélectionnez **Configurer.**
+7. Dans la page **Confirmation,** **sélectionnez Configurer.**
     
 8. Dans la page **Résultats,** sélectionnez **Fermer.**
     
@@ -355,11 +355,11 @@ Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Microso
     
 3. Dans la page **Tâches supplémentaires,** sélectionnez Modifier la **connectez-vous** de l’utilisateur, puis sélectionnez **Suivant**.
     
-4. Dans la page Connecter azure **AD,** entrez le nom et le mot de passe de votre compte d’administrateur général, puis sélectionnez **Suivant.**
+4. Dans la page **Connecter azure AD,** entrez le nom et le mot de passe de votre compte d’administrateur général, puis sélectionnez **Suivant.**
     
 5. Dans la page De la page De la **connectez-vous** de l’utilisateur, sélectionnez Fédération avec **AD FS,** puis sélectionnez **Suivant**.
     
-6. Dans la page Batterie **de serveurs AD FS,** sélectionnez Utiliser une batterie  **AD FS** existante, entrez **ADFS1** dans la zone Nom du serveur, puis sélectionnez **Suivant**.
+6. Dans la page Batterie de serveurs **AD FS,** sélectionnez Utiliser une batterie  **AD FS** existante, entrez **ADFS1** dans la zone Nom du serveur, puis sélectionnez **Suivant**.
     
 7. Lorsque vous y invitez des informations d’identification de serveur, entrez les informations d’identification du compte CORP \\ User1, puis sélectionnez **OK**.
     

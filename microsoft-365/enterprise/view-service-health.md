@@ -1,7 +1,7 @@
 ---
 title: Comment vérifier l’intégrité du service Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Afficher l’état d’intégrité des services Microsoft 365 avant de contacter le support technique pour vérifier qu’aucune interruption de service n’est en cours.
-ms.openlocfilehash: 075c573146f49d74e84d1a46508d8f9235877dc1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: dc925a1ce1e61f2a67d258c12baabddf29dd880b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255952"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356335"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Comment vérifier l’intégrité du service Microsoft 365
 

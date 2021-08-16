@@ -1,7 +1,7 @@
 ---
-title: Gérer Microsoft 365 clients avec Windows PowerShell pour les partenaires DAP
-ms.author: josephd
-author: JoeDavies-MSFT
+title: Gérer Microsoft 365 clients avec des Windows PowerShell pour les partenaires DAP
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: Dans cet article, découvrez comment utiliser PowerShell pour Microsoft 365 gérer les locations de votre client.
-ms.openlocfilehash: 2bbe59f5c5c27830569be2c357a586152ced849c62de0b62e3d29fcc6d926d37
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee0eb3a645d6590e2393fe8ea7820511df36ab4a
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899318"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356011"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gérer Microsoft 365 clients avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
@@ -30,10 +30,10 @@ ms.locfileid: "53899318"
 
 Windows PowerShell permet aux partenaires de syndication et de fournisseur de solutions Cloud (CSP) d’administrer et de créer facilement des rapports sur les paramètres de location des clients qui ne sont pas disponibles dans le Centre d’administration Microsoft 365. Les autorisations AOBO (Administrer au nom de) sont requises pour que le compte d’administrateur du partenaire puisse se connecter aux locations de son client.
 
-Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s’agit souvent de fournisseurs de réseau ou de télécommunication pour d’autres sociétés. Ils regroupent Microsoft 365 abonnements dans leurs offres de services à leurs clients. Lorsqu’ils vendent un abonnement Microsoft 365, ils se voient automatiquement accorder des autorisations Administrer de la part de (AOBO) aux locations du client afin de pouvoir administrer et signaler les locations du client.
+Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s’agit souvent de fournisseurs de réseau ou de télécommunication pour d’autres sociétés. Ils regroupent Microsoft 365 abonnements dans leurs offres de services à leurs clients. Lorsqu’ils vendent un abonnement Microsoft 365, ils se voient automatiquement accorder des autorisations Administrer de la part de (AOBO) aux locations du client afin de pouvoir administrer les locations du client et en signaler les locations.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-Les procédures de cette rubrique exigent que vous vous connectiez à [Connecter à Microsoft 365 avec PowerShell.](connect-to-microsoft-365-powershell.md)
+Les procédures de cette rubrique nécessitent que vous vous connectiez à [Connecter à Microsoft 365 avec PowerShell.](connect-to-microsoft-365-powershell.md)
 
 Vous avez aussi besoin des informations d’identification d’administrateur de la location du partenaire.
 
@@ -66,7 +66,7 @@ Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object
 
 ### <a name="list-all-domains-for-a-tenant"></a>Répertorier tous les domaines pour un locataire
 
-Pour obtenir la liste de tous les domaines pour un seul des locataires d'un client, exécutez la commande suivante. Remplacez  _<customer TenantId value>_ par la valeur réelle du code TenantId du client.
+Pour obtenir la liste de tous les domaines pour un seul des locataires d'un client, exécutez la commande suivante. Remplacez  _\<customer TenantId value>_ par la valeur réelle du code TenantId du client.
 
 ```powershell
 Get-MsolDomain -TenantId <customer TenantId value>
@@ -84,7 +84,7 @@ $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.Tenan
 
 ### <a name="get-all-users-for-a-tenant"></a>Obtenir tous les utilisateurs pour un client
 
-Cette commande permet d'afficher **UserPrincipalName**, **DisplayName** et le statut **isLicensed** pour tous les utilisateurs d'une location particulière. Remplacez _<customer TenantId value>_ par la valeur réelle du code TenantId du client.
+Cette commande permet d'afficher **UserPrincipalName**, **DisplayName** et le statut **isLicensed** pour tous les utilisateurs d'une location particulière. Remplacez _\<customer TenantId value>_ par la valeur réelle du code TenantId du client.
 
 ```powershell
 Get-MsolUser -TenantID <customer TenantId value>
@@ -92,7 +92,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### <a name="get-all-details-about-a-user"></a>Obtenir tous les détails sur un utilisateur
 
-Si vous souhaitez voir toutes les propriétés d'un utilisateur particulier, exécutez la commande suivante. Remplacez  _<customer TenantId value>_ par la valeur réelle du code TenantId du client et _<user principal name value>_ par la valeur réelle du nom d'utilisateur principal.
+Si vous souhaitez voir toutes les propriétés d'un utilisateur particulier, exécutez la commande suivante. Remplacez  _\<customer TenantId value>_ par la valeur réelle du code TenantId du client et _\<user principal name value>_ par la valeur réelle du nom d'utilisateur principal.
 
 ```powershell
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>

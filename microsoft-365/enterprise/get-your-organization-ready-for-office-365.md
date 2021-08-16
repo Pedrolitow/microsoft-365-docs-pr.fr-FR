@@ -1,7 +1,7 @@
 ---
 title: Planifier les Microsoft 365 Entreprise
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/12/2019
 audience: Admin
@@ -22,20 +22,20 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Cet article fournit des listes de contrôle et d’autres ressources à planifier pour Microsoft 365 Entreprise déploiement.
-ms.openlocfilehash: fb3a62dd1751c51530bec1927e101c0dc5fd35bcf05ce8d7ac62d9fa5809909b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e914d5ea5f145197e348fd88fe7cf2b287a883f8
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870718"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356731"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Planifier les Microsoft 365 Entreprise
 
 Lorsque vous déplacez une organisation vers Microsoft 365, il est important de planifier l’avenir et de prendre les décisions de conception clés qui simplifieront le déploiement informatique et l’adoption par les utilisateurs. 
 
-## <a name="planning-with-microsoft-365-fasttrack"></a>Planification avec Microsoft 365 FastTrack
+## <a name="planning-with-microsoft-365-fasttrack"></a>Planification avec les Microsoft 365 FastTrack
 
-[FastTrack pour Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) est la meilleure méthode pour obtenir de l’aide de Microsoft pour la planification de votre déploiement Microsoft 365 déploiement. FastTrack peut vous aider à répondre aux questions les plus courantes en cours de conception. 
+[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) est la meilleure méthode pour obtenir de l’aide de Microsoft pour la planification de Microsoft 365 déploiement. FastTrack peut vous aider à tenir compte des considérations de conception les plus courantes et à répondre aux questions en cours de route. 
 
 >[!Note]
 >Vous pouvez également obtenir de l’aide d’un [partenaire Microsoft.](https://www.microsoft.com/solution-providers/home)
@@ -43,7 +43,7 @@ Lorsque vous déplacez une organisation vers Microsoft 365, il est important de 
 
 ## <a name="do-it-yourself-planning-for-microsoft-365"></a>Planification du do-it-yourself pour Microsoft 365
 
-Pour planifier les Microsoft 365 vous-même, avancez pas à pas dans les décisions de planification et de conception pour ces domaines :
+Pour planifier des Microsoft 365 vous-même, avancez pas à pas dans les décisions de planification et de conception pour ces domaines :
 
 - Votre client Microsoft 365
 
@@ -51,7 +51,7 @@ Pour planifier les Microsoft 365 vous-même, avancez pas à pas dans les décisi
 
 - Prise en charge de vos clients
 
-  Inclut l’authentification basée sur les certificats, la gestion des appareils mobiles, les options d’authentification et la collaboration entre les locataires. Pour plus [d’informations, voir Authentification](microsoft-365-client-support-certificate-based-authentication.md) basée sur les certificats.
+  Inclut l’authentification basée sur les certificats, la gestion des appareils mobiles, les options d’authentification et la collaboration entre les locataires. Pour plus [d’informations,](microsoft-365-client-support-certificate-based-authentication.md) voir Authentification basée sur les certificats.
 
 - Prise en charge de l’authentification moderne hybride
 

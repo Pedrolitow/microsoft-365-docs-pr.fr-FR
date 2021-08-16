@@ -1,9 +1,9 @@
 ---
 title: Résumé des Microsoft 365 pour la sécurité de l’entreprise pour Contoso Corporation
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 10/02/2019
 audience: ITPro
@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comment Contoso utilise les fonctionnalités de sécurité de Microsoft 365 entreprise.
-ms.openlocfilehash: 8e207ac55b7d7280adfeb356cef20dec1ada0da89298945f1318bbf656a2310f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b88e1dfafe6669782096e851eef1935079aa4676
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855202"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356407"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé des Microsoft 365 pour la sécurité de l’entreprise pour Contoso Corporation
 
-Pour obtenir l’approbation du déploiement de Microsoft 365 entreprise, le service de sécurité informatique de Contoso a effectué un examen approfondi de la sécurité. Ils ont identifié les exigences de sécurité suivantes pour le cloud :
+Pour obtenir l’approbation du déploiement Microsoft 365 entreprise, le service de sécurité informatique de Contoso a effectué un examen approfondi de la sécurité. Ils ont identifié les exigences de sécurité suivantes pour le cloud :
 
 - Utilisez les méthodes d’authentification les plus fortes pour l’accès des employés aux ressources cloud.
 - Assurez-vous que les PC et les appareils mobiles se connectent aux applications et y accèdent de manière sécurisée.
@@ -34,13 +34,13 @@ Pour obtenir l’approbation du déploiement de Microsoft 365 entreprise, le ser
 - Les biens numériques hautement réglementés sont protégés par un chiffrement et des autorisations supplémentaires.
 - Le personnel de sécurité informatique peut surveiller la posture de sécurité actuelle à partir des tableaux de bord centraux et être averti des événements de sécurité pour une réponse et une atténuation rapides.
 
-## <a name="the-contoso-path-to-microsoft-365-security-readiness"></a>Chemin d’accès De Contoso à la préparation Microsoft 365 sécurité
+## <a name="the-contoso-path-to-microsoft-365-security-readiness"></a>Chemin d’accès De Contoso Microsoft 365 préparation à la sécurité
 
 Contoso a suivi ces étapes pour préparer sa sécurité pour son déploiement de Microsoft 365 entreprise :
 
 1. Limiter les comptes d’administrateur pour le cloud
 
-   Contoso a réalisé un examen approfondi de ses comptes d’administrateur des services de domaine Active Directory (AD DS) existants et a mis en place une série de groupes et de comptes d’administrateur cloud dédiés.
+   Contoso a réalisé un examen approfondi de ses comptes d’administrateur des services de domaine Active Directory (AD DS) existants et a mis en place une série de groupes et comptes d’administrateur cloud dédiés.
 
 2. Classer les données en trois niveaux de sécurité
 
@@ -66,7 +66,7 @@ Pour respecter les meilleures pratiques et les Microsoft 365 de sécurité pour 
 
 - Authentification multifacteur pour tous les comptes d’utilisateur
 
-  L' multi-fa ajoute une couche de protection supplémentaire au processus de signature. Il exige que les utilisateurs reconnaissent un appel téléphonique, un SMS ou une notification d’application sur leur smartphone après avoir entré correctement leur mot de passe. Avec l’mf, les comptes d’utilisateur Azure AD sont protégés contre la connectez-vous non autorisée, même si un mot de passe de compte est compromis.
+  L' multi-fa ajoute une couche de protection supplémentaire au processus de signature. Il exige que les utilisateurs reconnaissent un appel téléphonique, un SMS ou une notification d’application sur leur smartphone après avoir correctement entré leur mot de passe. Avec l’mf, les comptes d’utilisateur Azure AD sont protégés contre la connectez-vous non autorisée, même si un mot de passe de compte est compromis.
 
    - Pour se protéger contre la compromission de l’abonnement Microsoft 365, Contoso requiert l’mfmf sur tous les comptes d’administrateur général.
    - Pour se protéger contre les attaques par hameçonnage, pendant lesquelles un utilisateur malveillant compromet les informations d’identification d’une personne approuvée dans l’organisation et envoie des e-mails malveillants, Contoso a activé la MFA sur tous les comptes d’utilisateur, y compris ceux des gestionnaires et de la direction.

@@ -1,7 +1,7 @@
 ---
 title: Gérer la Microsoft 365 d’identité
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Découvrez comment utiliser les fonctionnalités Microsoft 365 gouvernance des identités.
-ms.openlocfilehash: a3e5ae78c0c84716d4290badfa034641b8ca696f8fc99b06f9b869437691f371
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9b353a83b79c2b66ca224914a7d33a4854919d4e
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899342"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356671"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>Gérer la Microsoft 365 d’identité
 

@@ -1,7 +1,7 @@
 ---
 title: Configurer les Microsoft 365 de compte d’utilisateur avec PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,18 +18,18 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: Utilisez PowerShell pour configurer Microsoft 365 propriétés de comptes d’utilisateurs individuels ou multiples dans votre Microsoft 365 client.
-ms.openlocfilehash: 2bed1d15c54b1f025cf4173d8e6a0b1be2757054587a306bc7c31187c2b89962
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 23d89448eb9f34d67ada8711b8ca6463a0f6acd7
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850134"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356623"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Configurer les Microsoft 365 de compte d’utilisateur avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser la Centre d’administration Microsoft 365 pour configurer les propriétés des comptes d’utilisateurs de votre Microsoft 365 client. Dans PowerShell, vous pouvez également le faire, ainsi que d’autres choses que vous ne pouvez pas faire dans le Centre d’administration.
+Vous pouvez utiliser le Centre d’administration Microsoft 365 pour configurer les propriétés des comptes d’utilisateurs de votre Microsoft 365 client. Dans PowerShell, vous pouvez également le faire, ainsi que d’autres choses que vous ne pouvez pas faire dans le Centre d’administration.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
@@ -73,7 +73,7 @@ Vous identifiez le compte avec le *paramètre -ObjectID* et définissez ou modif
 
     Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).
 
-Pour obtenir des paramètres supplémentaires, [voir Set-AzureADUser.](/powershell/module/azuread/set-azureaduser)
+Pour d’autres paramètres, [voir Set-AzureADUser](/powershell/module/azuread/set-azureaduser).
 
 > [!NOTE]
 > Avant de pouvoir attribuer des licences à un compte d’utilisateur, vous devez affecter un emplacement d’utilisation.
@@ -108,7 +108,7 @@ $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-En utilisant une variable *$upn*, vous pouvez apporter des modifications à des comptes individuels en fonction de leur nom d'affichage. Voici un exemple qui définit l’emplacement d’utilisation de *Belinda Newman* en France. Mais il spécifie son nom d’affichage plutôt que son nom d’utilisateur principal :
+En utilisant une variable *$upn*, vous pouvez apporter des modifications à des comptes individuels en fonction de leur nom d'affichage. Voici un exemple qui définit l’emplacement d’utilisation de *Belinda Newman* sur La France. Mais il spécifie son nom d’affichage plutôt que son nom d’utilisateur principal :
   
 ```powershell
 $userName="Belinda Newman"
@@ -245,7 +245,7 @@ Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 
 Cette commande indique à PowerShell de :
   
-1. Obtenez toutes les informations des comptes d’utilisateur (**Get-MsolUser**) et envoyez-les à la commande suivante ( **|** ).
+1. Obtenez toutes les informations pour les comptes d’utilisateur (**Get-MsolUser**) et envoyez-les à la commande suivante ( **|** ).
 
 1. Définissez l’emplacement utilisateur sur France (**Set-MsolUser -UsageLocation « FR »**).
 
@@ -259,7 +259,7 @@ Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocat
 
 Cette commande indique à PowerShell de :
   
-1. Obtenez toutes les informations des comptes d’utilisateur (**Get-MsolUser**) et envoyez-les à la commande suivante ( **|** ).
+1. Obtenez toutes les informations pour les comptes d’utilisateur (**Get-MsolUser**) et envoyez-les à la commande suivante ( **|** ).
 
 1. Recherchez tous les comptes d’utilisateur dont la propriété *Department* est définie sur « Accounting » (**Where {$_. Department -eq « Accounting"}**) et envoyer les informations résultantes à la commande suivante ( **|** ).
 

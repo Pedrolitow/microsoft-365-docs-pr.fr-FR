@@ -1,9 +1,9 @@
 ---
 title: Accès aux identités et appareils pour votre environnement de test Microsoft 365
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès aux identités et appareils.
-ms.openlocfilehash: bb0df359884fb6f99397d8d535ce5bd0160ee9f218d5e446f5555530e84f36e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 53c9db06b27f0e697eb57525b563f11b819a6812
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864686"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356515"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Accès aux identités et appareils pour votre environnement de test Microsoft 365
 

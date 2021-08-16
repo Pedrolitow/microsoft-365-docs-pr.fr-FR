@@ -2,8 +2,8 @@
 title: Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/22/2019
 audience: ITPro
@@ -18,22 +18,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 5b75cc99d9f0f8f8d28a99d597406a605001721a29f60b6177e68a596a54e3a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7ad01942b0da7858895d58ecd3bf5c83207e88b9
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840850"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356215"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
 *Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Les utilisateurs peuvent utiliser l’écriture écriture par mot de passe pour mettre à jour leurs mots de passe via Azure Active Directory (Azure AD), qui est ensuite répliqué vers vos services de domaine Active Directory (AD DS) locaux. Avec l’écriture écriture par mot de passe, les utilisateurs n’ont pas besoin de mettre à jour leur mot de passe via les AD DS sur site où leurs comptes d’utilisateur d’origine sont stockés. Cela aide les utilisateurs itinérants ou distants qui n’ont pas de connexion à distance à leur réseau local.
+Les utilisateurs peuvent utiliser l’écriture écriture par mot de passe pour mettre à jour leurs mots de passe via Azure Active Directory (Azure AD), qui est ensuite répliqué sur vos services de domaine Active Directory (AD DS) locaux. Avec l’écriture écriture par mot de passe, les utilisateurs n’ont pas besoin de mettre à jour leur mot de passe via les AD DS sur site où leurs comptes d’utilisateur d’origine sont stockés. Cela aide les utilisateurs itinérants ou distants qui n’ont pas de connexion d’accès à distance à leur réseau local.
 
 Cet article explique comment configurer votre environnement de test Microsoft 365 pour l’écriture par mot de passe.
 
-La configuration de votre environnement de test pour l’écriture écriture par mot de passe implique deux phases :
+La configuration de votre environnement de test pour l’écriture par mot de passe implique deux phases :
 - [Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Phase 2 : Activer l’écriture différée de mot de passe pour le domaine TESTLAB AD DS.](#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)
   
@@ -72,9 +72,9 @@ Configurez ensuite le compte utilisateur 1 en lui attribuant les paramètres de 
 
 1. À partir du[Portail Azure](https://portal.azure.com), connectez-vous avec votre compte d’administrateur général, puis connectez-vous à APP1 avec le compte TESTLAB\Utilisateur1.
 
-2. À partir du bureau d’APP1, **sélectionnez Démarrer,** entrez **actif,** puis sélectionnez Utilisateurs et **ordinateurs Active Directory.**
+2. Sur le bureau d’APP1, **sélectionnez Démarrer,** entrez **actif,** puis sélectionnez Utilisateurs **et ordinateurs Active Directory.**
 
-3. Dans la barre de menus, sélectionnez **Afficher.** Si **les fonctionnalités** avancées ne sont pas activées, sélectionnez-la pour l’activer.
+3. Dans la barre de menus, sélectionnez **Afficher.** Si **les fonctionnalités avancées** ne sont pas activées, sélectionnez-la pour l’activer.
 
 4. Dans le volet d’arborescence, sélectionnez et maintenez (ou cliquez avec le bouton droit) votre domaine, sélectionnez Propriétés, puis sélectionnez **l’onglet** Sécurité.
 
@@ -107,7 +107,7 @@ Ensuite, configurez de la Connexion Azure AD Connect sur APP1 pour écriture d
 
 3. Dans la **page d’accueil,** **sélectionnez Configurer.**
 
-4. Dans la page **Tâches supplémentaires,** sélectionnez **Personnaliser les options** de synchronisation, puis sélectionnez **Suivant.**
+4. Dans la page **Tâches supplémentaires,** sélectionnez **Personnaliser les options de** synchronisation, puis sélectionnez **Suivant**.
 
 5. Sur la page **Connecter azure AD,** entrez vos informations d’identification de compte d’administrateur général, puis sélectionnez **Suivant.**
 

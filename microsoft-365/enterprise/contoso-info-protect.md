@@ -1,9 +1,9 @@
 ---
 title: Protection des informations de Contoso Corporation
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 10/02/2019
 audience: ITPro
@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre comment Contoso utilise les fonctionnalités de protection des informations Microsoft 365 entreprise pour sécuriser ses biens numériques dans le cloud.
-ms.openlocfilehash: 25a9c27d13ff55201a72bb936abbd44a5138a787b912db64ff6bc5aa798a05fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7240e226cf70b2666f6e0bc9180aea3ee63bdc91
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899676"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356299"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
 Contoso est sérieux quant à la sécurité de ses informations. La fuite ou la destruction de la propriété intellectuelle qui décrit leurs conceptions de produits et techniques de fabrication propriétaires les placent dans un inconvénient concurrentiel.
 
-Avant de déplacer leurs biens numériques sensibles vers le cloud, Contoso s’est assuré que les exigences de classification et de protection des informations sur site étaient prises en charge par les services informatiques de Microsoft 365 entreprise.
+Avant de déplacer leurs biens numériques sensibles vers le cloud, Contoso s’est assuré que les exigences de protection et de classification des informations sur site étaient prises en charge par les services informatiques de Microsoft 365 entreprise.
 
 ## <a name="contoso-data-security-classification"></a>Classification de la sécurité des données Contoso
 
@@ -41,7 +41,7 @@ Contoso a effectué une analyse de ses données et déterminé les niveaux de cl
 Le tableau suivant répertorie les stratégies d’information de Contoso.
 
 
-| Valeur | Access | Rétention de données | Protection des informations |
+| Valeur | Accès | Rétention de données | Protection des informations |
 |:-------|:-----|:-----|:-----|
 | Valeur commerciale faible (Niveau 1: Ligne de base) | Autoriser l’accès à tous.  | 6 mois | Utiliser le chiffrement. |
 | Valeur commerciale moyenne (Niveau 2: Sensible) | Autoriser l’accès aux employés, sous-traitants et partenaires de Contoso. <BR><BR> Utiliser l’authentification multi-facteur (MFA), le chiffrement TLS (Transport Layer Security) et la gestion des applications mobiles (MAM). | 2 ans  | Utiliser les valeurs de hachage pour l’intégrité des données.  |
@@ -68,9 +68,9 @@ Contoso a suivi les étapes suivantes pour préparer Microsoft 365 entreprise au
 
     Les fichiers ayant migré vers les nouveaux sites SharePoint ont hérité des étiquettes de rétention par défaut attribuées au site.
 
-5. Former les employés à l’utilisation des étiquettes de sensibilité pour les nouveaux documents, à interagir avec le service it de Contoso lors de la création de sites SharePoint et à toujours stocker des biens numériques sur des sites SharePoint sites
+5. Former les employés à l’utilisation des étiquettes de niveau de sensibilité pour les nouveaux documents, à interagir avec le service it de Contoso lors de la création de sites SharePoint et à toujours stocker des biens numériques sur des sites SharePoint sites
 
-    La modification des mauvaises habitudes de stockage des informations des travailleurs est souvent considérée comme la partie la plus difficile de la transition de protection des informations pour le cloud. Contoso it and management needed to get employees to always label and store their digital assets in the cloud, refrain from using on-premises file shares, and not use third-party cloud storage services or USB drives.
+    La modification des mauvaises habitudes de stockage des informations des travailleurs est souvent considérée comme la partie la plus difficile de la transition de la protection des informations pour le cloud. Contoso it and management needed to get employees to always label and store their digital assets in the cloud, refrain from using on-premises file shares, and not use third-party cloud storage services or USB drives.
 
 ## <a name="conditional-access-policies-for-information-protection"></a>Stratégies d’accès conditionnel régissant la protection des informations
 
@@ -100,7 +100,7 @@ Ces stratégies vous assurent que :
 
 Le tableau suivant maie les niveaux de données Contoso aux fonctionnalités de protection des informations Microsoft 365 entreprise.
 
-| Level | Microsoft 365 services cloud | Windows 10 et Microsoft 365 Apps for enterprise | Sécurité et conformité |
+| Niveau | Microsoft 365 services cloud | Windows 10 et Microsoft 365 Apps for enterprise | Sécurité et conformité |
 |:-------|:-----|:-----|:-----|
 | Niveau 1 : ligne de base  | Stratégies d’accès conditionnel à SharePoint et à Exchange Online <BR> Autorisations sur les sites SharePoint | Étiquettes de confidentialité <BR> BitLocker <BR> Protection des informations Windows | Stratégies d’accès conditionnel aux matériels et stratégies de gestion des applications mobiles |
 | Niveau 2 : Sensible | Niveau 1 plus : <BR> <BR> Étiquettes de confidentialité <BR> Étiquettes de rétention Microsoft 365 sur les sites SharePoint <BR> Protection contre la perte de données pour SharePoint et Exchange Online <BR> Sites SharePoint isolés  | Niveau 1 plus : <BR> <BR> Étiquettes de sensibilité sur les biens numériques  | Niveau 1 |

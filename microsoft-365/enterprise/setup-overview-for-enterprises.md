@@ -1,7 +1,7 @@
 ---
 title: Déployer Microsoft 365 Entreprise pour votre organisation
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2019
 audience: ITPro
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Ces étapes de vue d’ensemble sont conçues pour vous aider à configurer votre réseau, à créer vos identités, à déployer Microsoft 365 Apps et à migrer vos données.
-ms.openlocfilehash: ef984ba4e076ca6665dee6a75a456c2abc09c1a8cb1fb04933ab08a2a98c0d85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ce19d135b46bb848aecb557610bc1ed1703fc686
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898922"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355867"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Déployer Microsoft 365 Entreprise pour votre organisation
 
@@ -36,15 +36,15 @@ Cet article décrit deux options de déploiement, que vous vouliez de l’aide o
 
 ## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>Guide du Microsoft 365 Entreprise de configuration avec FastTrack
 
-**[FastTrack pour Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** est la meilleure méthode pour déployer des Microsoft 365. FastTrack vous guide dans les configurations de déploiement courantes et répond à vos questions tout au long du processus. 
+**[FastTrack’Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** est la meilleure méthode pour déployer des Microsoft 365. FastTrack vous guide dans les configurations de déploiement courantes et répond à vos questions tout au long du processus. 
 
 Pour accéder à une série de guides d’installation, connectez-vous à votre abonnement Microsoft 365, puis accédez aux conseils [d’installation.](https://aka.ms/o365fasttrack)
 
 >[!Note]
->Vous pouvez également obtenir de l’aide d’un [partenaire Microsoft.](https://www.microsoft.com/solution-providers/home)
+>Vous pouvez également obtenir de l’aide [d’un partenaire Microsoft.](https://www.microsoft.com/solution-providers/home)
 >
 
-## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Déploiement guidé do-it-yourself de Microsoft 365 Entreprise
+## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Déploiement guidé de do-it-yourself de Microsoft 365 Entreprise
 
 Le déploiement Microsoft 365 Entreprise vous-même nécessite d’effectuer des recherches détaillées pour prendre les décisions de conception qui simplifient la configuration Microsoft 365 service et l’adoption par les utilisateurs. Commencez votre planification [ici.](get-your-organization-ready-for-office-365.md)
 
@@ -80,5 +80,5 @@ Pour déployer Microsoft 365 Entreprise vous-même après avoir terminé votre p
  
 
 >[!Note]
->Ces étapes sont également pour les entreprises [et](https://go.microsoft.com/fwlink/?LinkId=627221) les associations qui souhaitent commencer par un déploiement personnalisé de Microsoft 365 Entreprise. 
+>Ces étapes sont également pour les entreprises [et](https://go.microsoft.com/fwlink/?LinkId=627221) les organisations à but non lucratif qui souhaitent commencer par un déploiement personnalisé de Microsoft 365 Entreprise. 
 >
