@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cb71f31cb047d7310b9534cd75350b25ebc7e7b865f403b7fcf22fa01ffe1718
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cb0a64b6f6d63e0439a03805e4e8cfc1d05116c7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889026"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255474"
 ---
 # <a name="remove-app-restriction-api"></a>SUPPRIMER l’API de restriction d’application
 
@@ -66,7 +66,7 @@ Déléguée (compte professionnel ou scolaire)|Machine.RestrictExecution|« Rest
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (pour plus d’informations, voir Créer et gérer [des](user-roles.md) rôles)
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
@@ -79,14 +79,15 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/unrestrictCodeEx
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 

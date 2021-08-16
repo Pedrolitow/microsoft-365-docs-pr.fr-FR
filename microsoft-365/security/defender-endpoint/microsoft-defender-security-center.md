@@ -1,6 +1,6 @@
 ---
 title: Centre de sécurité Microsoft Defender
-description: Centre de sécurité Microsoft Defender est le portail sur lequel vous pouvez accéder à Microsoft Defender pour endpoint.
+description: Centre de sécurité Microsoft Defender est le portail où vous pouvez accéder à Microsoft Defender pour endpoint.
 keywords: windows, defender, sécurité, centre, defender, avancé, menace, protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f7fb73cde3afa385b0d73b35610415cacd1cad81
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4daba7a19af2b1653bd5158033b10b82935583da9e5977d3de1e31f3ef28cc71
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902766"
 ---
 # <a name="microsoft-defender-security-center"></a>Centre de sécurité Microsoft Defender
 
@@ -45,7 +45,7 @@ Prise en main  |  Découvrez la configuration minimale requise, validez les lice
 [Intégration des appareils](onboard-configure.md) | Découvrez l’intégration de clients, de serveurs et d’appareils Windows externes. Découvrez comment exécuter un test de détection, configurer les paramètres de proxy et de connectivité Internet, et comment résoudre les problèmes d’intégration potentiels.
 [Comprendre le portail](use.md) | Comprendre les opérations de sécurité, le score de sécurité et les tableaux de bord d’analyse des menaces, ainsi que la navigation dans le portail.
 Examiner et corriger les menaces | Examiner les alertes, les appareils et prendre des mesures de réponse pour corriger les menaces.
-Prise en charge de l’API et du SIEM | Utilisez les API pris en charge pour tirer et créer des alertes personnalisées ou automatiser les flux de travail. Utilisez les outils SIEM pris en charge pour tirer des alertes de Centre de sécurité Microsoft Defender.
+Prise en charge de l’API et du SIEM | Utilisez les API pris en charge pour tirer et créer des alertes personnalisées, ou automatiser les flux de travail. Utilisez les outils SIEM pris en charge pour tirer des alertes Centre de sécurité Microsoft Defender.
 Rapports | Créez et créez des Power BI à l’aide de Microsoft Defender pour les données de point de terminaison.
 Vérifier l’état du capteur et de l’état du service | Vérifiez que le service est en cours d’exécution et vérifiez l’état du capteur sur les appareils.
 [Configurer les Centre de sécurité Microsoft Defender de configuration](preferences-setup.md) | Configurez les paramètres généraux, activez l’expérience d’aperçu, les notifications et activez d’autres fonctionnalités.

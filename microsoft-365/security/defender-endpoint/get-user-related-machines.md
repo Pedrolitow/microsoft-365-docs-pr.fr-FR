@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 207ecaa9352293aebb907d4b14faab1ac2f47187
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d87efcd940fd9e19c9f28250f85e0f7915febc05
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652106"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255498"
 ---
 # <a name="get-user-related-machines-api"></a>API Obtenir les ordinateurs liés à l’utilisateur
 
@@ -74,7 +74,8 @@ GET /api/users/{id}/machines
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String
+ | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -82,7 +83,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’utilisateur existe : 200 - OK avec la liste des entités de [l’ordinateur](machine.md) dans le corps. Si l’utilisateur n’existe pas - 404 - In trouvé.
+En cas de réussite et si l’utilisateur existe : 200 - OK avec la liste des entités de [l’ordinateur](machine.md) dans le corps. Si l’utilisateur n’existe pas - 200 OK avec un jeu vide.
 
 ## <a name="example"></a>Exemple
 

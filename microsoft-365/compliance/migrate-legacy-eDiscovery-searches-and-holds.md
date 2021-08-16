@@ -1,5 +1,5 @@
 ---
-title: Migrer les recherches et les données de découverte électronique héritées vers le centre Microsoft 365 conformité
+title: Migrer les recherches et les Centre de conformité Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,31 +14,31 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: aaae5e6bddc48f29cc0766fe26a1976672c7dd49
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 0867e2b28bc693d50d5d79f4ba8e0a8cb89578d76853584f28c3db65ee7b692a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310794"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885666"
 ---
-# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrer les recherches et les données de découverte électronique héritées vers le centre Microsoft 365 conformité
+# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrer les recherches et les Centre de conformité Microsoft 365
 
-Le centre de conformité Microsoft 365 offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une plus grande fiabilité, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, notamment les cas d’organisation de votre contenu, les ensembles de révision pour examiner le contenu et l’analyse afin d’aider à annuler les données pour révision telles que le regroupement quasi-dupliqué, le thread de messagerie, l’analyse des thèmes et le codage prédictif.
+Le Centre de conformité Microsoft 365 offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une plus grande fiabilité, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, y compris les cas pour organiser votre contenu en fonction de la matière, les ensembles de révision pour examiner le contenu et l’analyse afin d’aider à annuler les données pour révision telles que le regroupement quasi-dupliqué, le thread de messagerie électronique, l’analyse des thèmes et le codage prédictif.
 
-Pour aider les clients à tirer parti des fonctionnalités nouvelles et améliorées, cet article fournit des instructions de base sur la migration des recherches et des recherches de découverte électronique In-Place du Centre d’administration Exchange vers le Centre de conformité Microsoft 365.
+Pour aider les clients à tirer parti des fonctionnalités nouvelles et améliorées, cet article fournit des instructions de base sur la migration des recherches et des In-Place eDiscovery du Centre d’administration Exchange vers le centre d’administration Centre de conformité Microsoft 365.
 
 > [!NOTE]
-> Étant donné qu’il existe de nombreux scénarios différents, cet article fournit des instructions générales pour la transition des recherches et des recherches en cas de découverte électronique principale dans le centre Microsoft 365 conformité. L’utilisation de cas eDiscovery n’est pas toujours requise, mais elles ajoutent une couche supplémentaire de sécurité en vous permettant d’attribuer des autorisations pour contrôler qui a accès aux cas eDiscovery dans votre organisation.
+> Étant donné qu’il existe de nombreux scénarios différents, cet article fournit des instructions générales pour la transition des recherches et des recherches en cas de découverte électronique principale dans le Centre de conformité Microsoft 365. L’utilisation de cas eDiscovery n’est pas toujours requise, mais elles ajoutent une couche supplémentaire de sécurité en vous permettant d’attribuer des autorisations pour contrôler qui a accès aux cas eDiscovery dans votre organisation.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & conformité pour exécuter les commandes PowerShell décrites dans cet article. Vous devez également être membre du groupe de rôles Gestion de la découverte dans le centre Exchange’administration.
+- Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & conformité pour exécuter les commandes PowerShell décrites dans cet article. Vous devez également être membre du groupe de rôles Gestion de la découverte dans le centre d’administration Exchange de découverte.
 
 - Cet article fournit des instructions sur la création d’une attente eDiscovery. La stratégie de attente sera appliquée aux boîtes aux lettres par le biais d’un processus asynchrone. Lors de la création d’une mise en attente eDiscovery, vous devez créer une case CaseHoldPolicy et CaseHoldRule, sinon la mise en attente ne sera pas créée et les emplacements de contenu ne seront pas placés en attente.
 
 ## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Étape 1 : Connecter pour Exchange Online PowerShell et le Centre de sécurité & conformité PowerShell
 
-La première étape consiste à vous connecter à Exchange Online PowerShell et au Centre de sécurité & conformité PowerShell. Vous pouvez copier le script suivant, le coller dans une fenêtre PowerShell, puis l’exécuter. Vous serez invité à entrer les informations d’identification de l’organisation à qui vous voulez vous connecter. 
+La première étape consiste à se connecter à Exchange Online PowerShell et au Centre de sécurité & conformité PowerShell. Vous pouvez copier le script suivant, le coller dans une fenêtre PowerShell, puis l’exécuter. Vous serez invité à entrer les informations d’identification de l’organisation à qui vous voulez vous connecter. 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -130,23 +130,23 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![Exemple de New-ComplianceSearch PowerShell](../media/MigrateLegacyeDiscovery6.png)
 
-## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Étape 8 : Vérifier le cas, la mise en attente et la recherche dans le centre Microsoft 365 conformité
+## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Étape 8 : Vérifier le cas, conserver et rechercher dans le Centre de conformité Microsoft 365
 
-Pour vous assurer que tout est correctement installé, rendez-vous dans le centre de conformité Microsoft 365 à l’adresse , puis cliquez sur [https://compliance.microsoft.com](https://compliance.microsoft.com) **eDiscovery > Core**.
+Pour vous assurer que tout est correctement installé, rendez-vous sur le Centre de conformité Microsoft 365 , puis cliquez sur [https://compliance.microsoft.com](https://compliance.microsoft.com) **eDiscovery > Core**.
 
 ![Microsoft 365 EDiscovery du Centre de conformité](../media/MigrateLegacyeDiscovery7.png)
 
 Le cas que vous avez créé à l’étape 3 est répertorié dans la page **Core eDiscovery.** Ouvrez le cas, puis notez la attente que vous avez créée à l’étape 4 de l’onglet **Attente.** Vous pouvez sélectionner la boîte aux lettres pour voir les détails sur la page volante, y compris le nombre de boîtes aux lettres à lesquelles la boîte aux lettres est appliquée et l’état de distribution.
 
-![EDiscovery est en cours d’Microsoft 365 conformité](../media/MigrateLegacyeDiscovery8.png)
+![eDiscovery est en cours d’Centre de conformité Microsoft 365](../media/MigrateLegacyeDiscovery8.png)
 
 La recherche que vous avez créée à l’étape 7 est répertoriée sous l’onglet **Recherches** du cas.
 
-![Recherche de cas eDiscovery dans le centre Microsoft 365 conformité](../media/MigrateLegacyeDiscovery9.png)
+![Recherche de cas eDiscovery dans le Centre de conformité Microsoft 365](../media/MigrateLegacyeDiscovery9.png)
 
 Si vous migrez une recherche eDiscovery In-Place mais que vous ne l’associez pas à un cas eDiscovery, elle sera répertoriée sur la page de recherche de contenu dans le Centre de conformité Microsoft 365.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Pour plus d’informations In-Place'& eDiscovery dans le Centre d’administration Exchange, voir :
   
@@ -170,4 +170,4 @@ Si vous migrez une recherche eDiscovery In-Place mais que vous ne l’associez p
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- Pour plus d’informations sur le centre Microsoft 365 conformité, voir Vue d’ensemble du [centre Microsoft 365 conformité.](microsoft-365-compliance-center.md)
+- Pour plus d’informations sur Centre de conformité Microsoft 365, voir [Vue d’ensemble de la Centre de conformité Microsoft 365](microsoft-365-compliance-center.md).

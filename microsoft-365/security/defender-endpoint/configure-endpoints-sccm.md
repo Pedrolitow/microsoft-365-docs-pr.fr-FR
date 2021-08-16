@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 925e76c595b8714ebc0aaf41329b5edb94967434b6acce46431d326047d4c572
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: deac72ddab08d180daf1c71885217c2a93ba1938
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874117"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255548"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Intégrer les appareils Windows 10 à l’aide de Configuration Manager
 
@@ -35,7 +35,7 @@ ms.locfileid: "53874117"
 - Microsoft Endpoint Configuration Manager branche actuelle
 - Gestionnaire de configuration de System Center 2012 R2
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## <a name="supported-client-operating-systems"></a>Systèmes d’exploitation clients pris en charge
 
@@ -88,9 +88,6 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 > [!NOTE]
 > Defender pour le point de terminaison ne prend pas en charge l’intégration pendant la phase [OOBE (Out-Of-Box Experience).](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Assurez-vous que les utilisateurs ont terminé la OOBE après Windows’installation ou de mise à niveau.
-
-> [!TIP]
-> Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Defender for Endpoint nouvellement intégré.](run-detection-test.md)
 >
 > Notez qu’il est possible de créer une règle de détection sur une application Configuration Manager pour vérifier en permanence si un appareil a été intégré. Une application est un type d’objet différent d’un package et d’un programme.
 > Si un appareil n’est pas encore intégré (en raison de l’exécution de la OOBE en attente ou d’une autre raison), Configuration Manager réessaye d’intégrer l’appareil jusqu’à ce que la règle détecte le changement d’état.
@@ -169,18 +166,22 @@ Activez la fonctionnalité en mode audit pendant au moins 30 jours. Après cette
 
 Pour plus d’informations, voir [Évaluer l’accès contrôlé aux dossiers.](evaluate-controlled-folder-access.md)
 
+## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
+Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
+
+
 ## <a name="offboard-devices-using-configuration-manager"></a>Hors-carte des appareils à l’aide de Configuration Manager
 
-Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
+Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Appareils deboard à l’aide Microsoft Endpoint Manager branche actuelle
+### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Appareils de tableau de bord à l’Microsoft Endpoint Manager branche actuelle
 
-Si vous utilisez Microsoft Endpoint Manager branche actuelle, consultez Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
+Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage utilisant System Center Configuration Manager 2012 R2
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage System Center 2012 R2 Configuration Manager
 
 
 1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
@@ -218,7 +219,7 @@ Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se
 
 4. Examinez les indicateurs d’état sous **Statistiques d’achèvement** et **État du contenu.**
 
-    En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les points [de terminaison.](troubleshoot-onboarding.md)
+    En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les [points de terminaison.](troubleshoot-onboarding.md)
 
     ![Configuration Manager affichant un déploiement réussi sans erreur](images/sccm-deployment.png)
 
@@ -238,7 +239,7 @@ Value: "1"
 
 Pour plus d’informations, voir Introduction aux paramètres de conformité [dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
