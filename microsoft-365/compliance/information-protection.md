@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implémentez Microsoft Information Protection (MIP) pour vous permettre de protéger les informations sensibles où qu’elles se trouvent.
-ms.openlocfilehash: bca6ce0dabaa9db2444da374b5d3ee166154fdd8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 76e2da01dd9fbcbb7d053b61b515aeb998d86c5147893a822dfa2695e43f58a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226538"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860779"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection dans Microsoft 365.
 

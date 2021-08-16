@@ -168,7 +168,7 @@
               href: manage-tenant-allows.md
             - name: Modifier et supprimer des entrées dans la liste verte/rouge du client
               href: modify-remove-entries-tenant-allow-block.md
-        - name: Suivi des messages dans le Centre de sécurité et de conformité
+        - name: Suivi des messages
           href: message-trace-scc.md
         - name: Signaler les messages et fichiers à Microsoft
           href: report-junk-email-messages-to-microsoft.md
@@ -182,6 +182,8 @@
           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
         - name: 'Purge automatique zéro heure : protection contre le courrier indésirable et les programmes malveillants'
           href: zero-hour-auto-purge.md
+        - name: Contrôler le transfert automatique d’e-mails externes
+          href: external-email-forwarding.md
     - name: Détecter
       items:
         - name: Explorateur des menaces pour Defender pour Office 365

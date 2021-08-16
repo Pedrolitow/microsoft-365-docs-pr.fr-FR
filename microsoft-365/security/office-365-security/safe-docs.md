@@ -16,12 +16,12 @@ ms.collection:
 description: Découvrez comment Coffre documents dans Microsoft 365 E5 ou Microsoft 365 E5 Sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e1bd2150a04e51e0d06c6cd1c17a71a032df1a5
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: dd9928034c8043f7852df0eeecdae870c9393c66
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108606"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254931"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documents sécurisés dans Microsoft 365 E5
 
@@ -44,13 +44,13 @@ Coffre Les documents sont une fonctionnalité de Microsoft 365 E5 ou de Microsof
 
 - Vous avez besoin d’autorisations **Exchange Online** pour pouvoir suivre les procédures de cet article :
   - Pour configurer les Coffre Documents, vous devez être membre  des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
-  - Pour accéder en lecture seule aux paramètres Coffre Documents, vous  devez être  membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
+  - Pour accéder en lecture seule aux paramètres Coffre Documents, vous  devez être membre des groupes de rôles Lecteur global ou Lecteur **de** sécurité.
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
@@ -62,7 +62,7 @@ Les fichiers envoyés par Coffre Documents ne sont pas conservés dans Defender 
 
 ## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>Utiliser la Microsoft 365 Defender pour configurer les documents Coffre documents
 
-1. Ouvrez le portail Microsoft 365 Defender et  allez à la section Stratégies de collaboration & de messagerie & règles de stratégies de menaces dans la \>  \>  \>  section \> **Stratégies Coffre pièces jointes.**
+1. Ouvrez le portail Microsoft 365 Defender de messagerie et & stratégies de **collaboration** & règles de menace Coffre pièces jointes dans la \>  \>  \> section **Stratégies.** 
 
 2. Dans la page **Coffre pièces jointes,** cliquez **sur Paramètres globaux.**
 
@@ -74,7 +74,7 @@ Les fichiers envoyés par Coffre Documents ne sont pas conservés dans Defender 
 
    ![Coffre Documents settings after selecting Global settings on the Coffre Attachments page.](../../media/safe-docs-global-settings.png)
 
-### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Utiliser Exchange Online PowerShell pour configurer Coffre Documents
+### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Utiliser Exchange Online PowerShell pour configurer Coffre documents
 
 Utilisez la syntaxe suivante :
 
@@ -82,7 +82,7 @@ Utilisez la syntaxe suivante :
 Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
-- Le _paramètre EnableSafeDocs_ active ou désactive Coffre Documents pour l’ensemble de l’organisation.
+- Le _paramètre EnableSafeDocs_ active ou désactive Coffre documents pour l’ensemble de l’organisation.
 - Le _paramètre AllowSafeDocsOpen_ permet ou empêche les utilisateurs de quitter le affichage protégé (c’est-à-dire, l’ouverture du document) si le document a été identifié comme malveillant.
 
 Cet exemple active Coffre documents pour l’ensemble de l’organisation et empêche les utilisateurs d’ouvrir des documents qui ont été identifiés comme malveillants en affichage protégé.
@@ -95,7 +95,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Intégration au service Microsoft Defender for Endpoint pour activer les fonctionnalités d’audit
 
-Pour déployer Microsoft Defender pour endpoint, vous devez passer par les différentes phases de déploiement. Après l’intégration, vous pouvez configurer les fonctionnalités d’audit dans Microsoft 365 Defender portail.
+Pour déployer Microsoft Defender pour le point de terminaison, vous devez passer par les différentes phases de déploiement. Après l’intégration, vous pouvez configurer les fonctionnalités d’audit dans Microsoft 365 Defender portail.
 
 Pour plus d’informations, [voir Intégrer au service Microsoft Defender for Endpoint.](/microsoft-365/security/defender-endpoint/onboarding) Si vous avez besoin d’aide supplémentaire, reportez-vous à Résoudre les problèmes d’intégration de Microsoft Defender pour les points [de terminaison.](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
 
@@ -103,7 +103,7 @@ Pour plus d’informations, [voir Intégrer au service Microsoft Defender for En
 
 Pour vérifier que vous avez activé et configuré Coffre Documents, faites l’une des étapes suivantes :
 
-- Dans le portail Microsoft 365 Defender, consultez la page Stratégies de collaboration de messagerie **&** stratégies de & Règles de stratégies de \>  \>  \>  menaces section \> **Stratégies Coffre Paramètres** \>    globaux des pièces jointes, puis vérifiez que l’outil Activer les documents Coffre pour les clients Office et autoriser les utilisateurs à cliquer en affichage protégé même si Coffre Documents identifie le fichier comme des paramètres malveillants.
+- Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** Coffre \> **Attachments** in the **Policies** section \> **Global settings**, and verify the **Turn on Coffre Documents for Office clients** and Allow people to click **through Protected View even if Coffre Documents identifies the file as malicious** settings.
 
 - Exécutez la commande suivante dans Exchange Online PowerShell et vérifiez les valeurs des propriétés :
 

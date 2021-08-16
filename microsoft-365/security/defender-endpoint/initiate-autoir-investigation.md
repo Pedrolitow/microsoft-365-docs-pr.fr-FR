@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b69acd8bb60c6b4c2d254c9cd1ca5aef7de69cf583fa02e56d799076c84d372a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9da8f0c15fdffbecb701955be10289ff19f28d1f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868997"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255230"
 ---
 # <a name="start-investigation-api"></a>DÉMARRER l’API Investigation
 
@@ -31,7 +31,7 @@ ms.locfileid: "53868997"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -53,7 +53,7 @@ Votre organisation doit avoir Defender pour le point de terminaison (voir [Minim
 
 Actuellement, AIR prend uniquement en charge les versions de système d’exploitation suivantes :
 
-- Windows Server 2019
+- Windows Server 2019
 - Windows 10, version 1709 (os Build 16299.1085 avec [KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)ou version ultérieure
 - Windows 10, version 1803 (os Build 17134.704 avec [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)ou version ultérieure
 - Windows 10, version [1803 ou](/windows/release-information/status-windows-10-1809-and-windows-server-2019) ultérieure
@@ -83,14 +83,15 @@ POST https://api.security.microsoft.com/api/machines/{id}/startInvestigation
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 

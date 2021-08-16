@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Nous publions de nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365. Nous mettons également remplacé deux stratégies d’alerte existantes qui ont été mises hors service.
-ms.openlocfilehash: 3fc25c50a5e9a2c30ebd06328edf60b5641168035e5275ac58ae81b8b63bf760
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c4edbb59d3328bb933825ab6a85ab561db93741
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856014"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255358"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365
 
@@ -69,8 +69,8 @@ Le tableau suivant définit la période à laquelle les nouvelles stratégies d�
 | **Messages de courrier contenant un fichier malveillant supprimé après la remise** (nouvelle) | Les alertes se déclencheront le 11 avril 2021 |
 | **Messages de courrier d’une campagne remis, puis supprimés ultérieurement** (nouvelle) | Les alertes se déclencheront le 28 mai 2021|
 | **Courriers malveillants remis, puis supprimés ultérieurement** (nouvelle) | Les alertes se déclencheront le 28 mai 2021|
-| **Messages de courrier contenant des URL d’hameçonnage supprimées après la remise** (existante, sera supprimée)| La stratégie d’alerte sera supprimée le 28 mai 2021. Voir la section [Ce que vous devez faire pour vous préparer à ces changements](#what-you-need-to-do-to-prepare-for-these-changes).|
-| **Messages de courrier contenant un programme malveillant supprimé après la remise** (existante, sera supprimée) | La stratégie d’alerte sera supprimée le 28 mai 2021. Voir la section [Ce que vous devez faire pour vous préparer à ces changements](#what-you-need-to-do-to-prepare-for-these-changes). |
+| **Messages de courrier contenant des URL d’hameçonnage supprimées après la remise** (existante, sera supprimée)| La stratégie d’alerte a été supprimée en juin 2021. Voir la section [Ce que vous devez faire pour vous préparer à ces changements](#what-you-need-to-do-to-prepare-for-these-changes).|
+| **Messages de courrier contenant un programme malveillant supprimé après la remise** (existante, sera supprimée) | La stratégie d’alerte a été supprimée en juin 2021. Voir la section [Ce que vous devez faire pour vous préparer à ces changements](#what-you-need-to-do-to-prepare-for-these-changes). |
 |||
 
 Le déploiement vers toutes les organisations des modifications de gravité d’alerte s’effectuera avant le 14 mai 2021.

@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 326910f4b556837b319c53cb1d257af09efbbe7a6ba8b92a4784d38a50b43fbe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09274557ea35c87cb4346e797d1b5e5e26e96aa3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792901"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255178"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Examen et réponse automatisés dans Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "53792901"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Si votre organisation utilise [Microsoft 365 Defender](microsoft-365-defender.md), votre équipe des opérations de sécurité reçoit une alerte dans le centre de sécurité Microsoft 365 chaque fois qu’une activité ou un artefact malveillant ou suspect est détecté. Étant donné le flux de menaces qui peut s’écouler sans fin, les équipes de sécurité doivent souvent relever le défi de traiter le volume élevé d’alertes. Heureusement, Microsoft 365 Defender inclut des fonctionnalités d’investigation et de réponse automatisées (AIR) qui peuvent aider votre équipe des opérations de sécurité à gérer les menaces plus efficacement et efficacement.
+Si votre organisation utilise [Microsoft 365 Defender,](microsoft-365-defender.md)votre équipe des opérations de sécurité reçoit une alerte dans le portail Microsoft 365 Defender chaque fois qu’une activité ou un artefact malveillant ou suspect est détecté. Étant donné le flux sans fin des menaces qui peuvent survenir, les équipes de sécurité doivent souvent relever le défi de traiter le volume élevé d’alertes. Heureusement, Microsoft 365 Defender inclut des fonctionnalités d’investigation et de réponse automatisées (AIR) qui peuvent aider votre équipe des opérations de sécurité à traiter les menaces plus efficacement.
 
 Cet article fournit une vue d’ensemble d’AIR et inclut des liens vers les étapes suivantes et des ressources supplémentaires.
 
@@ -50,7 +50,7 @@ Regardez la vidéo suivante pour voir comment fonctionne la auto-ressource : <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-Dans Microsoft 365 Defender, l’examen et la réponse automatisés avec des fonctionnalités de auto-ressourcement fonctionnent sur vos appareils, vos & de messagerie et vos identités.
+Dans Microsoft 365 Defender, l’examen et la réponse automatisés avec des fonctionnalités de auto-ressourcement fonctionnent sur vos appareils, votre & contenu et vos identités.
  
 > [!TIP]
 > Cet article décrit le fonctionnement de l’examen et de la réponse automatisés. Pour configurer ces fonctionnalités, voir Configurer les fonctionnalités d’investigation et de réponse automatisées [dans Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
@@ -100,7 +100,7 @@ Dans Microsoft 365 Defender, chaque enquête automatisée met en corrélation le
 
 ## <a name="viewing-a-list-of-investigations"></a>Affichage d’une liste d’enquêtes
 
-Pour afficher les enquêtes, consultez la page **Incidents.** Sélectionnez un incident, puis l’onglet **Enquêtes.** Pour en savoir plus, consultez [les détails et les résultats d’une enquête automatisée.](m365d-autoir-results.md)
+Pour afficher les enquêtes, consultez la page **Incidents.** Sélectionnez un incident, puis l’onglet **Investigations.** Pour en savoir plus, consultez [les détails et les résultats d’une enquête automatisée.](m365d-autoir-results.md)
 
 
 ## <a name="next-steps"></a>Prochaines étapes

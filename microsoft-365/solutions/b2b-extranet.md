@@ -17,16 +17,16 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment créer un site extranet B2B ou une équipe avec des invités gérés d’une organisation partenaire.
-ms.openlocfilehash: d76951da5d8affa1dac08cbdc68a91329ca069ed
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ab88ba8b12c6eb53bc3c0b3c4b22cb09919ce38256b68fa65256e64d7ff81bdd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883775"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Créer un extranet B2B avec des invités gérés
 
-Vous pouvez utiliser [Azure Active Directory gestion des](/azure/active-directory/governance/entitlement-management-overview) droits d’accès pour créer un extranet B2B afin de collaborer avec une organisation partenaire qui utilise Azure Active Directory. Cela permet aux utilisateurs de s’inscrire eux-mêmes sur le site ou l’équipe extranet et de recevoir un accès via un flux de travail d’approbation.
+Vous pouvez utiliser [Azure Active Directory gestion des](/azure/active-directory/governance/entitlement-management-overview) droits d’accès pour créer un extranet B2B afin de collaborer avec une organisation partenaire qui utilise Azure Active Directory. Cela permet aux utilisateurs de s’inscrire eux-mêmes dans le site ou l’équipe extranet et de recevoir l’accès via un flux de travail d’approbation.
 
 Grâce à cette méthode de partage de ressources pour la collaboration, l’organisation partenaire peut aider à maintenir et approuver les invités de leur côté, réduisant ainsi la charge qui pèse sur votre service informatique et permettant aux personnes les plus familiarisés avec le contrat de collaboration de gérer l’accès des utilisateurs.
 
@@ -36,7 +36,7 @@ Avant de commencer, créez le site ou l’équipe que vous souhaitez partager av
 
 ## <a name="license-requirements"></a>Critères de licence
 
-L’utilisation de cette fonctionnalité nécessite une licence Azure AD Premium P2. 
+L’utilisation de cette fonctionnalité nécessite Azure AD Premium P2 licence. 
 
 Les clouds spécialisés, tels qu’Azure Germany et Azure China 21Vianet, ne sont actuellement pas disponibles.
 
@@ -101,8 +101,8 @@ Pour créer un package d’accès
 10. Sous **Approbation,** **sélectionnez Oui** pour **Exiger l’approbation.**
 11. Sous **Premier approuveur,** choisissez l’un des sponsors que vous avez ajoutés précédemment ou choisissez un utilisateur spécifique.
 12. Cliquez **sur Ajouter un secours** et sélectionnez un approuveur de secours.
-13. Sous **Activer,** sélectionnez **Oui.**
-14. Cliquez **sur Suivant : Cycle de vie.**
+13. Under **Enable**, choose **Yes**.
+14. Cliquez **sur Suivant : Cycle de vie**.
 15. Choisissez les paramètres d’expiration et de révision d’accès que vous souhaitez utiliser, puis cliquez sur **Suivant : Révision + Créer.**
 16. Examinez vos paramètres, puis cliquez sur **Créer.**
 

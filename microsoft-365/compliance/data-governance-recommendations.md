@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Le Centre de sécurité et conformité Microsoft 365 et le Centre de conformité Microsoft 365 fournissent des recommandations pour la gouvernance des données basées sur la configuration actuelle de votre organisation et vous permet de configurer certaines actions en quelques clics. Certaines de ces recommandations détectent du contenu spécifique dans votre organisation, puis actualisent les étapes recommandées pour la gestion de ce contenu. Par exemple, une recommandation peut détecter les éléments qui présentent un contenu de critique commerciale (tel qu un privilège client-avocat ou informations accord de confidentialité) et vous permet automatiquement d’appliquer une étiquette de rétention à ces éléments pour vous assurer qu’ils soient classés et conservés selon vos besoins . Cette rubrique répertorie les recommandations de gouvernance des données que vous pouvez voir et décrit quel contenu est détecté au déclenchement de chacun d’eux.
-ms.openlocfilehash: 42956e72bf377a02adde3e4253bd9221bb84ff3e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: ddfb21cae1483a271e159f79f554b55b234ce7241ab9fcd3d3a434802f17ede6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860798"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>Comment le contenu est identifié pour consulter des recommandations de gouvernance des données
 

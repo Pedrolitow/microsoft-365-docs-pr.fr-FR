@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 2b2cbfdddce8f26a64b1def5fa89ead6d7fb0557697363f6d285d8ee82ea353f
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: c3ec44716cd466b3bfe4440c6cdf63fe00376f75
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803415"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255197"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Antivirus Microsoft Defender dans Windows
 
@@ -72,7 +72,7 @@ Le nom de votre solution antivirus/anti-programme malveillant apparaît sur la p
 
    - **Le mode passif** signifie Antivirus Microsoft Defender en cours d’exécution, mais n’est pas le produit antivirus/anti-programme malveillant principal sur votre appareil. Le mode passif est uniquement disponible pour les appareils qui sont intégrés à Microsoft Defender pour point de terminaison et qui répondent à certaines exigences. Pour en savoir plus, voir [Configuration requise pour que Microsoft Defender Antivirus fonctionne en mode passif ](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
 
-   - **Le mode de blocage EDR** signifie que Antivirus Microsoft Defender est en cours d’exécution et qu’une fonctionnalité de [Microsoft Defender pour point de terminaison appelée EDR en mode bloc ](edr-in-block-mode.md) est activée.
+   - **Le mode de blocage EDR** signifie que Antivirus Microsoft Defender est en cours d’exécution et qu’une fonctionnalité de [Microsoft Defender pour point de terminaison appelée EDR en mode bloc](edr-in-block-mode.md) est activée.
 
    - **Le mode passif** de SxS signifie que Microsoft Defender Antivirus est exécuté aux côtés d'un autre produit antivirus/antimalware et [qu'une analyse périodique limitée est utilisée](limited-periodic-scanning-microsoft-defender-antivirus.md).
 

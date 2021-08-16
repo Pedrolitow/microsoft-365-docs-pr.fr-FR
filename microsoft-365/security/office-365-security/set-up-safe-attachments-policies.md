@@ -18,12 +18,12 @@ description: Découvrez comment définir des stratégies Coffre pièces jointes 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3ec6dc0d0a74507298810a9ec020a2a4b050c2b6
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 02a5d393e2cd13d029106bdc0975c935f052d9f1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538972"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254926"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies Coffre pièces jointes dans Microsoft Defender pour Office 365
 
@@ -49,14 +49,14 @@ Les éléments de base d’une stratégie Coffre pièces jointes sont :
 
 La différence entre ces deux éléments n’est pas évidente lorsque vous gérez les stratégies Coffre pièces jointes dans le portail Microsoft 365 Defender:
 
-- Lorsque vous créez une stratégie de pièces jointes Coffre, vous créez en fait une règle de pièces jointes sécurisées et la stratégie de pièces jointes sécurisées associée en utilisant le même nom pour les deux.
+- Lorsque vous créez une stratégie de pièces jointes Coffre, vous créez en fait une règle de pièces jointes sécurisées et la stratégie de pièces jointes sécurisée associée en utilisant le même nom pour les deux.
 - Lorsque vous modifiez une stratégie Coffre pièces jointes, les paramètres liés au nom, à la priorité, activé ou désactivé, et aux filtres de destinataire modifient la règle de pièce jointe sécurisée. Tous les autres paramètres modifient la stratégie de pièce jointe sécurisée associée.
 - Lorsque vous supprimez une stratégie Coffre pièces jointes, la règle de pièces jointes sécurisées et la stratégie de pièces jointes sécurisées associée sont supprimées.
 
 Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la stratégie et la règle séparément. Pour plus d’informations, voir la section Utiliser Exchange Online PowerShell ou [EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) autonome pour configurer des stratégies Coffre pièces jointes plus loin dans cet article.
 
 > [!NOTE]
-> Dans la zone paramètres globaux des paramètres Coffre pièces jointes, vous configurez les fonctionnalités qui ne dépendent pas des stratégies Coffre pièces jointes. Pour obtenir des instructions, voir Activer Coffre pièces jointes pour [SharePoint, OneDrive et](turn-on-mdo-for-spo-odb-and-teams.md) Microsoft Teams et Coffre documents dans [Microsoft 365 E5](safe-docs.md).
+> Dans la zone paramètres globaux des paramètres Coffre pièces jointes, vous configurez des fonctionnalités qui ne dépendent pas des stratégies Coffre pièces jointes. Pour obtenir des instructions, voir Activer Coffre pièces jointes pour [SharePoint, OneDrive et](turn-on-mdo-for-spo-odb-and-teams.md) Microsoft Teams et Coffre documents dans [Microsoft 365 E5](safe-docs.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -75,7 +75,7 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365.  Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
-- Pour les paramètres recommandés pour les stratégies Coffre pièces jointes, voir Coffre [paramètres de pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
+- Pour obtenir les paramètres recommandés pour les stratégies Coffre pièces jointes, voir Coffre [paramètres de pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
 - Autorisez jusqu’à 30 minutes pour qu’une stratégie nouvelle ou mise à jour soit appliquée.
 
@@ -83,7 +83,7 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 La création d’une stratégie Coffre pièces jointes personnalisée dans le portail Microsoft 365 Defender crée la règle de pièces jointes sécurisées et la stratégie de pièces jointes sécurisées associée en utilisant le même nom pour les deux.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Coffre Attachments** in the **Policies** section.
 
 2. Dans la page **Coffre pièces jointes,** cliquez sur ![ Créer une icône ](../../media/m365-cc-sc-create-icon.png) **Créer.**
 
@@ -110,7 +110,7 @@ La création d’une stratégie Coffre pièces jointes personnalisée dans le po
 
 5. Sur la **Paramètres** page, configurez les paramètres suivants :
 
-   - **Coffre de programmes malveillants inconnus attachments**: sélectionnez l’une des valeurs suivantes :
+   - **Coffre de programmes malveillants inconnus des** pièces jointes : sélectionnez l’une des valeurs suivantes :
      - **Off**: En règle générale, nous ne recommandons pas cette valeur.
      - **Moniteur**
      - **Bloc**: il s’agit de la valeur par défaut et de la valeur recommandée dans les stratégies de sécurité standard [et](preset-security-policies.md)stricte.
@@ -121,9 +121,9 @@ La création d’une stratégie Coffre pièces jointes personnalisée dans le po
 
    - Rediriger les messages contenant des pièces **jointes détectées**: si vous sélectionnez Activer la **redirection,** vous pouvez spécifier une adresse de messagerie dans les messages d’envoi qui contiennent des pièces **jointes bloquées, surveillées** ou remplacées dans la zone d’adresse de messagerie spécifiée pour envoyer des messages contenant des pièces jointes contenant des programmes malveillants à des besoins d’analyse et d’examen.
 
-     La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, [voir Coffre Paramètres des pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
+     La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, [Coffre paramètres de pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
-   - Appliquez la réponse de détection des pièces jointes Coffre si l’analyse ne peut pas se terminer (délai ou **erreurs) : l’action** spécifiée par Coffre La réponse anti-programme malveillant inconnue pièces **jointes** est appliquée aux messages même lorsque l’analyse des pièces jointes Coffre ne peut pas se terminer. Si vous avez sélectionné cette option, sélectionnez toujours Activer la **redirection** et spécifiez une adresse de messagerie pour envoyer des messages contenant des pièces jointes contenant des programmes malveillants. Dans le cas contraire, les messages peuvent être perdus.
+   - Appliquez la réponse de détection des pièces jointes Coffre si l’analyse ne peut pas se terminer **(délai d’Coffre** ou erreurs) : l’action spécifiée par Coffre La réponse de programmes **malveillants inconnus** pièces jointes est appliquée aux messages même lorsque l’analyse des pièces jointes Coffre ne peut pas se terminer. Si vous avez sélectionné cette option, sélectionnez toujours Activer la **redirection** et spécifiez une adresse de messagerie pour envoyer des messages contenant des pièces jointes contenant des programmes malveillants. Dans le cas contraire, les messages peuvent être perdus.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -135,7 +135,7 @@ La création d’une stratégie Coffre pièces jointes personnalisée dans le po
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Utiliser le portail Microsoft 365 Defender pour afficher les stratégies Coffre pièces jointes
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Coffre Attachments** in the **Policies** section.
 
 2. Dans la page **Coffre pièces jointes, les propriétés suivantes** sont affichées dans la liste des stratégies :
    - **Name**
@@ -146,17 +146,17 @@ La création d’une stratégie Coffre pièces jointes personnalisée dans le po
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Utiliser le portail Microsoft 365 Defender pour modifier les stratégies Coffre pièces jointes
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Coffre Attachments** in the **Policies** section.
 
 2. Dans la page **Coffre pièces jointes,** sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
-3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, consultez la section Utiliser le portail Microsoft 365 Defender pour créer des stratégies Coffre [pièces jointes](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) plus tôt dans cet article.  
+3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, voir la section Utiliser le portail Microsoft 365 Defender pour créer des stratégies Coffre [pièces jointes](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) plus tôt dans cet article.
 
 Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de la stratégie, consultez les sections suivantes.
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Activer ou désactiver les stratégies Coffre pièces jointes
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Coffre Attachments** in the **Policies** section.
 
 2. Dans la page **Coffre pièces jointes,** sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
@@ -182,7 +182,7 @@ Coffre Les stratégies de pièces jointes sont affichées dans l’ordre de trai
 
 Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priorité** ou **Diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro **Priorité** dans le Portail Microsoft 365 Defender). La modification de la priorité d’une stratégie n’a de sens que si vous avez plusieurs stratégies.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Coffre Attachments** in the **Policies** section.
 
 2. Dans la page **Coffre pièces jointes,** sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
@@ -197,7 +197,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Utiliser le portail Microsoft 365 Defender pour supprimer les stratégies Coffre pièces jointes
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Coffre Attachments** in the **Policies** section.
 
 2. Dans la page **Coffre pièces jointes,** sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom de la stratégie.
 
@@ -212,7 +212,7 @@ Comme décrit précédemment, une stratégie Coffre pièces jointes se compose d
 Dans PowerShell, la différence entre les stratégies de pièces jointes sécurisées et les règles de pièces jointes sécurisées est évidente. Vous gérez les stratégies de pièces jointes sécurisées à l’aide des cmdlets **\* -SafeAttachmentPolicy** et vous gérez les règles de pièces jointes sécurisées à l’aide des cmdlets **\* -SafeAttachmentRule.**
 
 - Dans PowerShell, vous créez d’abord la stratégie de pièces jointes sécurisées, puis vous créez la règle de pièce jointe sécurisée qui identifie la stratégie à qui s’applique la règle.
-- Dans PowerShell, vous modifiez séparément les paramètres de la stratégie de pièces jointes sécurisées et de la règle de pièce jointe sécurisée.
+- Dans PowerShell, vous modifiez séparément les paramètres de la stratégie de pièces jointes sécurisées et la règle de pièce jointe sécurisée.
 - Lorsque vous supprimez une stratégie de pièces jointes sécurisées de PowerShell, la règle de pièce jointe sécurisée correspondante n’est pas automatiquement supprimée, et inversement.
 
 ### <a name="use-powershell-to-create-safe-attachments-policies"></a>Utiliser PowerShell pour créer des stratégies Coffre pièces jointes
@@ -230,7 +230,7 @@ La création d Coffre de pièces jointes dans PowerShell est un processus en deu
   - Créez la stratégie comme _désactivée_ ( activée sur la `$false` cmdlet **New-SafeAttachmentRule).**
   - Définissez la priorité de la stratégie lors de la création (_Priorité_ ) sur la _\<Number\>_ cmdlet **New-SafeAttachmentRule).**
 
-- Une nouvelle stratégie de pièces jointes sécurisées que vous créez dans PowerShell n’est pas visible dans le portail Microsoft 365 Defender tant que vous n’avez pas attribué la stratégie à une règle de pièce jointe sécurisée.
+- Une nouvelle stratégie de pièces jointes sécurisées que vous créez dans PowerShell n’est pas visible dans le portail Microsoft 365 Defender tant que vous n’avez pas attribué la stratégie à une règle de pièces jointes sécurisées.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a>Étape 1 : Utiliser PowerShell pour créer une stratégie de pièces jointes sécurisées
 
@@ -439,7 +439,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez correctement créé, modifié ou supprimé des stratégies Coffre pièces jointes, faites l’une des étapes suivantes :
 
-- In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**. Vérifiez la liste des stratégies, leurs **valeurs d’état** et leurs **valeurs de** priorité. Pour afficher plus de détails, sélectionnez la stratégie dans la liste en cliquant sur le nom, puis affichez les détails dans le volant.
+- Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Coffre Attachments** in the **Policies** section. Vérifiez la liste des stratégies, leurs **valeurs d’état** et leurs **valeurs de** priorité. Pour afficher plus de détails, sélectionnez la stratégie dans la liste en cliquant sur le nom, puis affichez les détails dans le volant.
 
 - Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell, remplacez par le nom de la stratégie ou de la règle, exécutez la commande suivante et vérifiez les \<Name\> paramètres :
 

@@ -17,30 +17,30 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 42f4a4e19fbb062789532e1786bfe2f37bdb3448f2671ec9ac3dcd2a0770b6c9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 81fe9d058a1144c67a1d95d02a3e8b47e3c2104b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838618"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255436"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portails de sécurité Microsoft et centres d’administration
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Bien [que Microsoft 365](overview-security-center.md) centre de sécurité soit le nouvel outil de surveillance et de gestion de la sécurité au sein de vos identités, données, appareils et applications, vous devez accéder à différents portails pour certaines tâches spécialisées.
+Bien [que Microsoft 365 Defender portail](overview-security-center.md) soit le nouvel outil de surveillance et de gestion de la sécurité au sein de vos identités, données, appareils et applications, vous devez accéder à différents portails pour certaines tâches spécialisées.
 
 > [!TIP] 
-> Pour accéder à différents portails pertinents à partir Microsoft 365 centre de sécurité, sélectionnez **Plus de ressources** dans le volet de navigation.
+> Pour accéder à différents portails pertinents à partir Microsoft 365 Defender portail, sélectionnez **Plus de ressources** dans le volet de navigation.
 
 ## <a name="security-portals"></a>Portails de sécurité
 
 Les opérateurs de sécurité et les administrateurs peuvent se rendre sur les portails suivants pour gérer les paramètres spécifiques à la sécurité, examiner les activités de menace possibles, répondre aux menaces actives et collaborer avec les administrateurs informatiques pour résoudre les problèmes.
 <p></p>
 
-| Nom du portail | Description | Liens |
+| Nom du portail | Description | Lien |
 |---|---|---| 
-| Centre de sécurité Microsoft 365 | Surveiller et répondre à l’activité des menaces et renforcer la posture de sécurité au sein de vos identités, e-mails, données, points de terminaison et applications [à l’Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
+| Portail Microsoft 365 Defender | Surveiller et répondre à l’activité des menaces et renforcer la posture de sécurité au sein de vos identités, e-mails, données, points de terminaison et applications [à l’Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Centre de sécurité Microsoft Defender | Surveiller l’activité des menaces sur vos points de terminaison et y répondre à l’aide des fonctionnalités fournies [avec Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
 | Centre de sécurité et conformité | Gérer [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) et [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) pour protéger vos services de messagerie et de collaboration, et garantir la conformité aux différentes réglementations de gestion des données | [protection.office.com](https://protection.office.com) |
 | Portail Azure Defender | Utiliser [Azure Defender pour](/azure/security-center/security-center-intro) renforcer la posture de sécurité de vos centres de données et de vos charges de travail hybrides dans le cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
@@ -53,7 +53,7 @@ Les opérateurs de sécurité et les administrateurs peuvent se rendre sur les p
 Bien que ces portails ne soient pas spécifiquement dédiés à la gestion de la sécurité, ils gèrent différentes charges de travail et tâches qui peuvent avoir un impact sur votre sécurité. Visitez ces portails pour gérer les identités, les autorisations, les paramètres des appareils et les stratégies de gestion des données.
 <p></p>
 
-| Nom du portail | Description | Liens | 
+| Nom du portail | Description | Lien | 
 |---|---|---| 
 | Portail Azure | Afficher et gérer [les Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) et toutes vos [ressources Azure](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Centre de conformité Microsoft 365 | Gérer les stratégies de gestion des données et garantir [la conformité avec les réglementations](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |

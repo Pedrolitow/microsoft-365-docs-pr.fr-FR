@@ -17,12 +17,12 @@ ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Découvrez comment utiliser le Gestionnaire de conformité dans le portail d’approbation de services Microsoft pour satisfaire les exigences en matière de protection des données et de réglementation.
 ms.custom: seo-marvel-apr2020
 ROBOTS: NOINDEX
-ms.openlocfilehash: beea1f9008b8196fb39fe928cc317899bc6fcf8d
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: d4216b7b9b7967b507931e6cb45cef89cabf3809d13308c58cefa38f897e89ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725959"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860361"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Gestionnaire de conformité Microsoft (classique)
 
@@ -590,13 +590,13 @@ Voici une liste des tâches que vous pouvez effectuer à l’aide des fonctionna
 
 3. **Affecter un élément d’action à un utilisateur** : vous pouvez affecter un élément d’action à une personne pour implémenter les exigences d’une certification/réglementation, ou pour tester, vérifier et documenter les exigences d’implémentation de votre organisation. Quand vous affectez un élément d’action, vous pouvez choisir d’envoyer un e-mail à cette personne en l’informant des actions du client recommandées et de la priorité de l’élément d’action. Vous pouvez également désaffecter ou réaffecter un élément d’action à une autre personne.
 
-4. **Gérer les documents**: les contrôles gérés par le client disposent également d’un emplacement pour gérer les documents liés aux tâches d’implémentation, de test et de validation. Toute personne ayant l’autorisation de modifier les données dans le Gestionnaire de conformité peut charger des documents en cliquant sur **Gérer les documents**. Une fois qu’un document est chargé, vous pouvez cliquer sur **Gérer les documents** pour afficher et télécharger les fichiers.
+4. **Gérer les documents** Les contrôles gérés par le client permettent aussi de gérer les documents associés afin d’effectuer des tâches de mise en œuvre, ainsi que des tâches de test et de validation. Toute personne disposant des autorisations requises pour modifier les données dans le Gestionnaire de conformité peut charger des documents en cliquant sur **Gérer les documents**. Une fois le document chargé, cliquez sur **Gérer les documents** pour afficher et télécharger les fichiers.
 
 5. **Fournir des détails sur l’implémentation et le test** : tous les contrôles gérés par le client contiennent un champ modifiable où les utilisateurs peuvent ajouter des détails sur l’implémentation qui documentent les tâches effectuées par votre organisation pour répondre aux exigences de la certification/réglementation, et pour valider et documenter les actions effectuées par votre organisation pour y répondre.
 
 6. **Définir l’état** : permet de définir l’état de chaque élément dans le cadre du processus d’évaluation. Les états disponibles sont **Implémenté**, **Implémentation alternative**, **Planifié** et **Non inclus**.
 
-7. **Entrer la date du test et le résultat de test**: la personne ayant le rôle d’Évaluateur du Gestionnaire de conformité peut vérifier que les tests appropriés sont réalisés, consulter les détails de l’implémentation, le plan de test, les résultats de test et les preuves chargées, puis définir la Date du test et le Résultat de test. Les valeurs disponibles pour le résultat de test sont **Réussite**, **Échec Risque faible**, **Échec risque modéré** et **Échec risque élevé**.
+7. **Entrer la date du test et les résultats du test** La personne dotée du rôle Analyste du Gestionnaire de conformité peut vérifier la bonne exécution du test, revoir les détails de mise en œuvre, du plan du test, des résultats du test et toute autre preuve chargée, puis définir la Date du test et les Résultats du test. Les valeurs de résultat de test disponibles sont les suivantes : **Réussi**, **Échec avec faible risque**, **Échec avec risque intermédiaire** et **Échec avec risque élevé**.
 
 ## <a name="managing-action-items"></a>Gestion des éléments d’action
 

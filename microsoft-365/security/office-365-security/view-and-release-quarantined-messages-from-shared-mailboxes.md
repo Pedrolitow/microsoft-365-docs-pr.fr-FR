@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Les utilisateurs peuvent apprendre à afficher et à agir sur les messages mis en quarantaine qui ont été envoyés à des boîtes aux lettres partagées pour qui ils ont des autorisations.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4b958bb07660f4e0c93865300e190c713148a21d
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 90c4476d2c882c98b6b24a738adc2d9e2a9d6244994bd8f82c36b0d1f544c488
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883869"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Afficher et libérer les messages mis en quarantaine à partir de boîtes aux lettres partagées
 

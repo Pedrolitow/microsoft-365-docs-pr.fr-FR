@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 64e634ce33794264de3b8a627355c9c0f64038d712cff55a6d704ada0dc33e3c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec56158a8ccf0c1014b847b04a62db6a14fe992b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863850"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255242"
 ---
 # <a name="user-support"></a>Support pour les utilisateurs
 
@@ -51,7 +51,7 @@ Votre administrateur informatique est responsable des éléments ci-après :
 
 - Collaborer avec le fournisseur de support pour définir et gérer les contrats de niveau de service pour la prise en charge des utilisateurs
 - Gestion des privilèges d’accès élevés pour le personnel de support approuvé. Pour plus d’informations, voir [Activer les fonctionnalités de support utilisateur](../get-started/enable-support.md)
-- S’il existe des problèmes d’appareil affectant plusieurs utilisateurs, escaladez-les à l’aide Microsoft Manged Desktop processus de support de l’administrateur. Pour plus d’informations, [consultez la prise en charge de Microsoft Manged Desktop.](../working-with-managed-desktop/admin-support.md)
+- S’il existe des problèmes d’appareil affectant les utilisateurs, escaladez-les à l’aide Microsoft Manged Desktop processus de support de l’administrateur. Pour plus d’informations, [consultez la prise en charge de Microsoft Manged Desktop.](../working-with-managed-desktop/admin-support.md)
 - Router les problèmes liés au matériel vers le fournisseur ou le fournisseur approprié
 - Conservez et protégez les paramètres de stratégie de sécurité des Microsoft Manged Desktop appareils en empêchant les stratégies que nous avons définies d’être modifiées.
 
@@ -74,7 +74,7 @@ L’intégration de vos processus existants à ce flux de travail Microsoft Mang
 
 Si un problème d’utilisateur doit être Microsoft Manged Desktop, il est utile d’identifier l’équipe vers laquelle le problème doit être dirigé. Nous pouvons transférer des cas de manière appropriée, mais cela permet de gagner du temps pour les router au bon endroit dès le début.
 
-- Les problèmes spécifiques Microsoft Manged Desktop (par exemple, une stratégie ou un paramètre déployé par le service lui-même) : ils sont directement envoyés à l’équipe des opérations. Pour plus d’informations, voir [Obtenir de l’aide pour les utilisateurs.](../working-with-managed-desktop/end-user-support.md)
+- Problèmes spécifiques à Microsoft Manged Desktop (par exemple, une stratégie ou un paramètre déployé par le service lui-même) : faire directement une escalade vers l’équipe des opérations en créant une demande de support. Pour plus d’informations, voir [Obtenir de l’aide pour les utilisateurs.](../working-with-managed-desktop/end-user-support.md)
 - Problèmes matériels : directement à votre fournisseur ou fournisseur de matériel
 - Autres problèmes : faire passer les canaux de support existants, qu’il s’agit d’un abonnement Unifié ou Premier.
 
@@ -83,7 +83,7 @@ Si un problème d’utilisateur doit être Microsoft Manged Desktop, il est util
 
 ### <a name="elevation-portal"></a>Portail d’élévation 
 
-Étant donné Microsoft Manged Desktop’appareils s’exécutent sur l’utilisateur standard par défaut, certaines tâches nécessitent l’élévation de privilèges. Pour plus d’informations sur le contrôle de compte d’utilisateur, voir [Contrôle de compte d’utilisateur.](/windows/security/identity-protection/user-account-control/user-account-control-overview) Afin que le personnel de [](../working-with-managed-desktop/end-user-support.md#elevation-requests) support puisse effectuer des tâches tout en dépannage des problèmes pour les utilisateurs, nous fournissons un accès « juste-à-temps » à un compte d’administrateur. Ce mot de passe est accessible en toute sécurité uniquement par ceux que vous désignez et pivote toutes les deux heures.  
+Étant donné Microsoft Manged Desktop’appareils s’exécutent sur l’utilisateur standard par défaut, certaines tâches nécessitent l’élévation de privilèges. Pour plus d’informations sur le contrôle de compte d’utilisateur, voir [Contrôle de compte d’utilisateur.](/windows/security/identity-protection/user-account-control/user-account-control-overview) Pour permettre au personnel de [](../working-with-managed-desktop/end-user-support.md#elevation-requests) support technique d’effectuer des tâches tout en dépannage des problèmes pour les utilisateurs, nous fournissons un accès « juste-à-temps » à un compte d’administrateur. Ce mot de passe est accessible en toute sécurité uniquement par ceux que vous désignez et pivote toutes les deux heures.  
 
 Pour savoir comment configurer les utilisateurs pour l’accès à ce portail, voir Activer les fonctionnalités [de support utilisateur.](../get-started/enable-support.md)
 
@@ -91,7 +91,7 @@ Pour obtenir la procédure d’envoi d’une demande d’élévation, voir [Dema
 
 ### <a name="escalation-portal"></a>Portail d’escalade 
 
-Si un problème nécessite une escalade vers Microsoft Manged Desktop l’équipe des opérations, le personnel de support désigné peut être semblable à une demande de support de l’administrateur informatique.  
+Si un problème nécessite une escalade vers l’équipe Microsoft Manged Desktop Opérations, le personnel de support désigné peut être semblable à une demande de support de l’administrateur informatique.  
 
 > [!NOTE]
 > Seules les demandes de support Sev C peuvent être classées de cette manière. Pour un problème correspondant à la description des autres gravités, il est recommandé de contacter l’administrateur informatique approprié pour le fichier. Pour plus d’informations, voir [définitions de gravité des demandes de support.](../working-with-managed-desktop/admin-support.md#support-request-severity-definitions)

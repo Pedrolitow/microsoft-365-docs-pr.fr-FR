@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b57026ab2af53cbd941ecd3f4e9f9e6dff7f99c7eb44e0b1b9b2ffb462408415
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88506e546cc359a3cdf042c8661fcc54b217d6d4
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902234"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255448"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Activer Microsoft Defender pour l’environnement d’évaluation des points de terminaison
 
@@ -54,7 +54,7 @@ Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle 
 
    ![Image de la page de gestion des licences Azure](../../media/defender/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder aux abonnements de facturation dans le Centre  >  **d’administration.**
+1. Vous pouvez également accéder au Centre d’administration pour accéder **aux**  >  **abonnements de facturation.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 

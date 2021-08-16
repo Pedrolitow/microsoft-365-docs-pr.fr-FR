@@ -1,7 +1,7 @@
 ---
 title: Suivez votre historique de score de sécurité Microsoft et répondez aux objectifs
 description: Obtenir des informations sur l’activité qui a affecté votre score de sécurité Microsoft. Découvrez les tendances et définissez des objectifs.
-keywords: niveau de sécurité microsoft, degré de sécurisation, degré de sécurisation d’Office 365, score de sécurité microsoft, centre de sécurité microsoft 365, actions d’amélioration
+keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Microsoft 365 Defender portail, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 0c9e8669aa3cf1f2d78c0329d4555048664ffebab5a7f43ddf5259be9b51b8b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b5fbfae845c320e0d38293cff0d859165217a385
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792663"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255159"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivez votre historique de score de sécurité Microsoft et répondez aux objectifs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Le niveau de sécurité Microsoft](microsoft-secure-score.md) est une mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration. Il se trouve à https://security.microsoft.com/securescore dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
+[Le niveau de sécurité Microsoft](microsoft-secure-score.md) est une mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration. Il se trouve dans le https://security.microsoft.com/securescore portail [Microsoft 365 Defender.](overview-security-center.md)
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Obtenir des informations sur l’activité qui a affecté votre score
 

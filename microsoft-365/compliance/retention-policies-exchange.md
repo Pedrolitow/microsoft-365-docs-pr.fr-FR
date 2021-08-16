@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
-ms.openlocfilehash: 1ec89ee838c73c0ba0eb50361f8c457a697bd9bb
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 39c8e9ec5a94cf9f50ac4d98ac8a789e6f007949
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538864"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255121"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 
@@ -46,7 +46,7 @@ Les autres éléments stockés dans une boîte aux lettres, tels que les message
 
 Les boîtes aux lettres et les dossiers publics utilisent le même dossier [Éléments récupérables ](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)pour conserver des éléments. Seules les personnes disposant des autorisations eDiscovery peuvent afficher le dossier Éléments récupérables d’un autre utilisateur.
   
-Lorsqu’un utilisateur supprime un message d’un dossier autre que le dossier Éléments supprimés, le message est par défaut déplacé vers le dossier Éléments supprimés. Lorsqu’une personne supprime un élément dans le dossier Éléments supprimés, le message est déplacé vers le dossier Éléments récupérables. Toutefois, un utilisateur peut supprimer de façon réversible un élément (Maj + Suppr) dans n’importe quel dossier, ce qui permet d’ignorer le dossier Éléments supprimés et place directement l’élément dans le dossier Éléments récupérables.
+Lorsqu’un utilisateur supprime un message d’un dossier autre que le dossier Éléments supprimés, le message est par défaut déplacé vers le dossier Éléments supprimés. Toutefois, un utilisateur peut supprimer de façon réversible un élément (Maj + Suppr) dans n’importe quel dossier, ce qui permet d’ignorer le dossier Éléments supprimés et place directement l’élément dans le dossier Éléments récupérables.
   
 Lorsque vous appliquez des paramètres de rétention à des données Exchange, un travail du minuteur évalue régulièrement les éléments du dossier Éléments récupérables. Si un élément ne correspond pas aux règles d’au moins une stratégie de rétention ou une étiquette de rétention pour retenir l’élément. Il est supprimé définitivement du dossier Éléments récupérables.
 
@@ -81,11 +81,19 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 2. **Si l’élément est supprimé** pendant la période de rétention : l’élément est placé immédiatement dans le dossier Éléments récupérables. Si un utilisateur supprime l’élément à partir de là ou vide le dossier Éléments récupérables, l’élément est définitivement supprimé. Dans le cas contraire, l’élément est définitivement supprimé après avoir été placé dans le dossier Éléments récupérables pendant 14 jours. 
 
+## <a name="user-notification-of-expiry-date"></a>Notification de l'utilisateur sur la date d’expiration
+
+Les stratégies de rétention pour Exchange, contrairement aux stratégies de rétention pour d’autres charges de travail Microsoft 365, ont une présence utilisateur en affichant, en haut de chaque message par e-mail, le nom de la stratégie de rétention qui a la date d’expiration la plus courte pour l’élément et la date d’expiration calculée de celui-ci. Les utilisateurs ne voient pas cette notification si la stratégie de rétention ne supprime pas les éléments (conserver uniquement).
+
+Si une étiquette de rétention est appliquée à un message par e-mail, le nom de cette étiquette et date d’expiration correspondante est toujours affichée et remplace le nom et la date d’une stratégie de rétention appliquée à la boîte aux lettres.
+
+N’oubliez pas que, dans ce contexte, la date d’expiration pour la suppression d’un e-mail correspond à celle à laquelle les utilisateurs peuvent s’attendre à ce que le message par e-mail se déplace automatiquement vers le dossier Éléments récupérables (s’il ne s’y trouve pas encore). Les e-mails dans le Dossier Éléments récupérables ne sont pas supprimés de manière définitive et restent à cet emplacement à des fins de conformité s’ils font l’objet de paramètres de rétention pour les conserver ou s’ils sont mis sous conservation eDiscovery pour des raisons juridiques ou d’enquête.
+
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 
 Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, celle-ci devient inactive lorsque le compte Microsoft 365 de l’utilisateur est supprimé. Le contenu d’une boîte aux lettres inactive reste soumis à toute stratégie de rétention qui a été appliquée à la boîte aux lettres avant sa désactivation, et le contenu est accessible aux recherches eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md).
 
-Lorsque les paramètres de rétention ne s’appliquent plus, car les données sont définitivement supprimées ou la période de rétention a expiré, l’administrateur Exchange peut désormais [supprimer la boîte aux lettres](delete-an-inactive-mailbox.md). Dans ce scénario, la boîte aux lettres inactive n’est pas automatiquement supprimée.
+Lorsque les paramètres de rétention ne s’appliquent plus, car les données sont définitivement supprimées ou la période de rétention a expiré, l’administrateur Exchange peut désormais [supprimer la boîte aux lettres inactive](delete-an-inactive-mailbox.md). Dans ce scénario, la boîte aux lettres inactive n’est pas automatiquement supprimée.
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
