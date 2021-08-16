@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0f9002e9a54af37fa2b75e9a4053676bc784678bde8544ee4b93ffad7c0cdd06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 28ea0cfa3d22405d80fdf457cc60ce4627caf9de
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903768"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349595"
 ---
 # <a name="get-user-related-alerts-api"></a>API Obtenir les alertes liées à l’utilisateur
 
@@ -75,7 +75,8 @@ GET /api/users/{id}/alerts
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String
+ | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -83,7 +84,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’utilisateur existe : 200 - OK. Si l’utilisateur n’existe pas - 404 - In trouvé. 
+En cas de réussite et si l’utilisateur existe : 200 - OK. Si l’utilisateur n’existe pas : 200 - OK avec un jeu vide. 
 
 ## <a name="example"></a>Exemple
 

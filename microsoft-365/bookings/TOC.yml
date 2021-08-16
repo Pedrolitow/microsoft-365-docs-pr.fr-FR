@@ -3,7 +3,7 @@
   items:
     - name: Configuration
       items:
-        - name: "Accès à Microsoft\_Bookings"
+        - name: Accès à Microsoft Bookings
           href: get-access.md
         - name: Protégez vos informations
           href: enter-business-information.md

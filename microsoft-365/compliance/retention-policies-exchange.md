@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
-ms.openlocfilehash: 39c8e9ec5a94cf9f50ac4d98ac8a789e6f007949
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f735520841531360e5fa943ebecd832ab60cfc858a61c84feec572af04eebf71
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899911"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 
@@ -83,7 +83,7 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 ## <a name="user-notification-of-expiry-date"></a>Notification de l'utilisateur sur la date d’expiration
 
-Les stratégies de rétention pour Exchange, contrairement aux stratégies de rétention pour d’autres charges de travail Microsoft 365, ont une présence utilisateur en affichant, en haut de chaque message par e-mail, le nom de la stratégie de rétention qui a la date d’expiration la plus courte pour l’élément et la date d’expiration calculée de celui-ci. Les utilisateurs ne voient pas cette notification si la stratégie de rétention ne supprime pas les éléments (conserver uniquement).
+Les stratégies de rétention pour Exchange, contrairement aux stratégies de rétention pour d’autres charges de travail Microsoft 365, ont une présence utilisateur en affichant, en haut de chaque message par e-mail, le nom de la stratégie de rétention qui a la date d’expiration la plus courte pour l’élément et la date d’expiration calculée de celui-ci. Cette notification ne s’affiche pas aux utilisateurs si la stratégie de rétention ne supprime pas les éléments (conserver uniquement).
 
 Si une étiquette de rétention est appliquée à un message par e-mail, le nom de cette étiquette et date d’expiration correspondante est toujours affichée et remplace le nom et la date d’une stratégie de rétention appliquée à la boîte aux lettres.
 

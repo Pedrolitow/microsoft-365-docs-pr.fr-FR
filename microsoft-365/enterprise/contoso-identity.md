@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: f3c8746345683652ce601400ae7297e96fff2ee3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 47a9492f0924f777da12361b2c161ef9b5b0770d24d720ac927b02b44f369bc8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051519"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899722"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -64,7 +64,7 @@ Voici le serveur exécutant Azure AD Connecter la forêt Contoso AD DS pour les 
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Stratégies d’accès conditionnel basé sur l’identité et l’appareil
 
-Contoso a créé un jeu d’Azure AD et Intune [stratégies d’accès conditionnel](../security/defender-365-security/identity-access-policies.md) pour trois niveaux de protection :
+Contoso a créé un jeu d’Azure AD et Intune [stratégies d’accès conditionnel](../security/office-365-security/identity-access-policies.md) pour trois niveaux de protection :
 
 - *Les* protections de référence s’appliquent à tous les comptes d’utilisateur.
 - *Les* protections sensibles s’appliquent aux cadres supérieurs et aux cadres.

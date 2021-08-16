@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont les besoins de l’entreprise sont satisfaits par Microsoft 365 entreprise.
-ms.openlocfilehash: 72d502b5078a1e572eeba27832550af52907e209
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 70b0f0c9ae93a682a00eb6cccfec013c4e72f18b29d2c701ae9a3c3db84da240
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558405"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899563"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastructure informatique de Contoso et besoins de l’entreprise
 
@@ -87,7 +87,7 @@ Les besoins commerciaux de Contoso sont en cinq catégories principales :
 
 - Améliorer la sécurité pour les travailleurs à distance et mobiles
 
-  Implémentez la gestion de votre propre appareil (BYOD) et de votre entreprise pour garantir un accès sécurisé, un comportement correct des applications et la protection des données d’entreprise.
+  Implémentez la gestion de votre propre appareil (BYOD) et de votre entreprise pour garantir un accès sécurisé, un comportement d’application correct et la protection des données d’entreprise.
 
 - Réduire l’infrastructure d’accès distant pour les employés
 
@@ -101,7 +101,7 @@ Les besoins commerciaux de Contoso sont en cinq catégories principales :
 
 - Respecter les exigences réglementaires locales
 
-  Assurer la conformité avec les réglementations industrielles et régionales en matière de stockage des données, de chiffrement, de confidentialité des données et de réglementations relatives aux données personnelles, telles que le Règlement général sur la protection des données (R GDPR) pour l’Union européenne.
+  Assurer la conformité avec les réglementations industrielles et régionales en matière de stockage de données, de chiffrement, de confidentialité des données et de réglementations relatives aux données personnelles, telles que le Règlement général sur la protection des données (R GDPR) pour l’Union européenne.
 
 **Gestion**
 

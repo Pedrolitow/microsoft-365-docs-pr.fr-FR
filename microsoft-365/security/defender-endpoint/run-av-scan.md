@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 07b3b6174b8f99123cb4184c68fa22fdddf6ca8e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 2ae3c72387b2617bc8fe88349272d27675af16a5
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255755"
+ms.locfileid: "58349211"
 ---
 # <a name="run-antivirus-scan-api"></a>API d’analyse antivirus
 
@@ -97,6 +97,8 @@ ScanType|String
 ## <a name="response"></a>Réponse
 
 Si elle réussit, cette méthode renvoie 201, code de réponse créé et _objet MachineAction_ dans le corps de la réponse.
+
+Si vous envoyez plusieurs appels d’API pour exécuter une analyse antivirus pour le même appareil, elle renvoie « Action de l’ordinateur en attente » ou HTTP 400 avec le message « L’action est déjà en cours ».
 
 ## <a name="example"></a>Exemple
 

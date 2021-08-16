@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b69de3add4ca159793eada07ff6c121e7e29690a751be682285ffea24ee46ff5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d04590eee8f771fe8001f44dfae490645e270e64
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829302"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349607"
 ---
 # <a name="list-indicators-api"></a>API d’indicateurs de liste
 
@@ -41,7 +41,9 @@ Extrait une collection de tous les indicateurs [actifs.](ti-indicator.md)
 
 Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
 
-La requête OData est prise en charge sur `$filter` : , , , et les `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` `action` `severity` propriétés.
+La requête OData est prise en charge sur `$filter` : , , , , , , , `application` , , , `createdByDisplayName` et `expirationTime` `generateAlert` les `title` `rbacGroupNames` `rbacGroupIds` `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` `action` `severity` propriétés.
+<br>```$stop``` avec une valeur maximale de 10 000. 
+<br>```$skip```.
 
 Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
@@ -69,7 +71,8 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -80,7 +83,7 @@ Vide
 Si elle réussit, cette méthode renvoie le code de réponse 200, Ok avec une collection [d’entités Indicator.](ti-indicator.md)
 
 > [!NOTE]
-> Si l’application dispose de l’autorisation « Ti.ReadWrite.All », elle sera exposée à tous les indicateurs. Sinon, il sera exposé uniquement aux indicateurs qu’il a créés.
+> Si l’application dispose de l’autorisation « Ti.ReadWrite.All » , elle est exposée à tous les indicateurs. Sinon, il sera exposé uniquement aux indicateurs qu’il a créés.
 
 ## <a name="example-1"></a>Exemple 1
 

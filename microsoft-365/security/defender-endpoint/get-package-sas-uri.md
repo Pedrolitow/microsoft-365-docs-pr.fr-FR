@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b9bc82bff9be84c74b9d908b79572b926a943bab
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f04fac6783f07918639e54b3f318b63ed32838fe
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257092"
+ms.locfileid: "58349283"
 ---
 # <a name="get-package-sas-uri-api"></a>API Obtenir l’URI SAS du package
 
@@ -41,6 +41,11 @@ Obtenez un URI qui permet le téléchargement d’un [package d’enquête.](col
 > [!IMPORTANT]
 >
 > - Ces actions sont uniquement disponibles pour les appareils Windows 10 version 1703 ou ultérieure.
+
+## <a name="limitations"></a>Limites
+
+Les limites de taux pour cette API sont de 2 appels par minute et de 120 appels par heure. 
+
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [l’api Microsoft Defender pour les points de terminaison.](apis-intro.md)
@@ -75,7 +80,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie un code de réponse 200, Ok avec un objet qui contient le lien vers le package dans le paramètre « value ». Ce lien est valide pour une très courte durée et doit être utilisé immédiatement pour télécharger le package dans un stockage local.
+Si elle réussit, cette méthode renvoie un code de réponse 200, Ok avec un objet qui contient le lien vers le package dans le paramètre « value ». Ce lien est valide pour une très courte durée et doit être utilisé immédiatement pour télécharger le package dans un stockage local. Si l’action de l’ordinateur pour la collection existe mais n’est pas terminée, cela renvoie 404 In trouvé.
 
 ## <a name="example"></a>Exemple
 

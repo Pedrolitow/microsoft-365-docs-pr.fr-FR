@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e59f59158e36def392255e3034e0123c98ffac7a83548bf5c0284f92bea03a8a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6bcabc069bd79444802ca7487de93719cb2bee00
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853918"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347203"
 ---
 # <a name="get-ip-statistics-api"></a>API Obtenir des statistiques IP
 
@@ -31,7 +31,7 @@ ms.locfileid: "53853918"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,6 +42,7 @@ Récupère les statistiques de l’adresse IP donnée.
 
 ## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+2. La valeur maximale pour lookbackhours est de 720 heures (30 jours).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -66,7 +67,8 @@ GET /api/ips/{ip}/stats
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-uri-parameters"></a>Paramètres d’URI de demande
 
@@ -80,7 +82,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si ip existe - 200 OK avec des données statistiques dans le corps. L’adresse IP n’existe pas : 404 - In trouvé.
+En cas de réussite et si ip existe - 200 OK avec des données statistiques dans le corps. L’adresse IP est valide mais n’existe pas - organizationPrevalence 0, IP n’est pas valide - HTTP 400.
 
 ## <a name="example"></a>Exemple
 

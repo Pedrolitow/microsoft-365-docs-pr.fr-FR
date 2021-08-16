@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a utilisé une équipe avec isolation de sécurité pour un projet top secret afin de développer une nouvelle suite de produits et services.'
-ms.openlocfilehash: 751bf3972d148219a6cc341067c0bf34cd581447
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 86c2b0cbf53df07ac956138e096ad53a67f0bd7226b8583214d0e666ddbafe9e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029015"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883581"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Équipe isolée pour un projet top secret de Contoso Corporation
 
@@ -42,7 +42,7 @@ Le personnel informatique de Contoso [a](secure-teams-security-isolation.md) uti
 
 Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies [SharePoint’accès.](../security/office-365-security/sharepoint-file-access-policies.md)
 
-Ensuite, un administrateur informatique de Contoso a créé une équipe privée nommée Project 2X et ajouté les comptes d’utilisateur de Project 2X en tant que membres. Ils ont également configuré l’équipe de sorte que Project propriétaires d’équipe 2X peuvent créer des canaux privés.
+Ensuite, un administrateur informatique De Contoso a créé une équipe privée nommée Project 2X et ajouté les comptes d’utilisateur de Project 2X en tant que membres. Ils ont également configuré l’équipe de sorte que Project propriétaires d’équipe 2X peuvent créer des canaux privés.
 
 Pour plus d’informations sur la configuration, voir [Créer une équipe privée.](secure-teams-security-isolation.md#create-a-private-team)
 
@@ -73,7 +73,7 @@ Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires po
 
 Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires pour le site pour empêcher Project membres du groupe 2X de partager l’accès au site. 
 
-Comme des canaux privés pour Project 2X ont été créés, le propriétaire du  groupe a désactivé le partage d’invités et définir le lien de partage par défaut sur la valeur Personnes spécifiques.
+À mesure que des canaux privés Project 2X ont été créés, le propriétaire  du groupe a désactivé le partage d’invités et définir le lien de partage par défaut sur la valeur Personnes spécifiques.
 
 Voici la configuration de l’équipe Project 2X avec isolation de sécurité.
 
@@ -98,9 +98,9 @@ Dans deux cas, Project les membres de l’équipe 2X ont téléchargé des fichi
 
 Toutefois, après avoir été invité à obtenir des informations d’identification lors de leur ouverture, ils ont réalisé leur erreur et les ont supprimés.
 
-En raison de l’environnement de collaboration de Teams et des fonctionnalités de sécurité de Microsoft 365, les détails de Project 2X ont été conservés secrètes pendant toute la durée du projet. Contoso a annoncé ses plans et est en train de déployer les nouveaux produits et services pour le plus grand plaisir de ses clients, de ses investisseurs et de ses concurrents.
+En raison de l’environnement de collaboration de Teams et des fonctionnalités de sécurité de Microsoft 365, les détails de Project 2X ont été conservés secrètes pendant toute la durée du projet. Contoso a annoncé ses plans et est en train de déployer les nouveaux produits et services pour le plus grand plaisir de ses clients et de ses investisseurs, ainsi que de ses concurrents.
 
 ## <a name="next-step"></a>Étape suivante
 
-[Déployez une équipe avec isolation de la sécurité](secure-teams-security-isolation.md) dans votre organisation.
+[Déployez une équipe avec une isolation de sécurité](secure-teams-security-isolation.md) dans votre organisation.
 

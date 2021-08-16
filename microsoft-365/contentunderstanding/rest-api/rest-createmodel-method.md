@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Utilisez l’API REST pour créer un modèle et son type de contenu associé.
-ms.openlocfilehash: 1c5bd84c777774edc1aa0c2419181f7b84aa4707
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: ac5a48f92352c2c286323b8a679a975e0dbdca80703f9f727d16a4999b4a2f65
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899810"
 ---
 # <a name="create-model"></a>Créer un modèle
 

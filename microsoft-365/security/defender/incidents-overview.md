@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5975931dab77752da4ba139b3203fcf1b142150fc642379275a149d84a968120
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d9c244b048685824abfece8302c2528fa51a5802
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828581"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349991"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidents dans Microsoft 365 Defender
 
@@ -82,7 +82,7 @@ Les onglets supplémentaires pour un incident sont les suivants :
 
 - Appareils
 
-  Tous les appareils identifiés comme faisant partie ou liés à l’incident.
+  Tous les appareils qui ont été identifiés comme faisant partie ou liés à l’incident.
 
 - Utilisateurs
 
@@ -100,11 +100,7 @@ Les onglets supplémentaires pour un incident sont les suivants :
 
   Tous les événements pris en charge et entités suspectes dans les alertes dans l’incident.
 
-- Graph (en prévisualisation)
-
-  Figure montrant la connexion des alertes aux biens touchés dans votre organisation.
-
-Voici la relation entre un incident et ses données et les onglets d’un incident dans le Microsoft 365 Defender web.
+Voici la relation entre un incident et ses données et les onglets d’un incident dans Microsoft 365 Defender web.
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Relation d’un incident et de ses données avec les onglets d’un incident dans le portail Microsoft 365 Defender web":::
 
@@ -171,6 +167,8 @@ Les tâches annuelles peuvent inclure la conduite d’un incident majeur ou d’
 
 Les tâches quotidiennes, mensuelles, trimestrielles et annuelles peuvent être utilisées pour mettre à jour ou affiner des processus, des stratégies et des configurations de sécurité.
 
+Pour [plus d’informations, voir Intégration Microsoft 365 Defender vos opérations](integrate-microsoft-365-defender-secops.md) de sécurité.
+
 ### <a name="secops-resources-across-microsoft-products"></a>Ressources SecOps sur les produits Microsoft
 
 Pour plus d’informations sur SecOps dans les produits Microsoft, consultez les ressources ci-après :
@@ -195,7 +193,7 @@ Pour plus d’informations sur SecOps dans les produits Microsoft, consultez les
 
   - Effectuer [des examens](investigate-incidents.md) des incidents.
 
-- Découvrez comment intégrer [des Microsoft 365 Defender dans votre Centre d’opérations de sécurité (SOC).](integrate-microsoft-365-defender-secops.md)
+- Découvrez comment intégrer des Microsoft 365 Defender dans votre Centre des opérations [de sécurité (SOC).](integrate-microsoft-365-defender-secops.md)
 
 - Consultez ces manuels de réponse aux incidents pour obtenir des [instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application.
 

@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad3cf9a4080a5ec50bdff1de623118d70f90bc1240a7eb5b6a09f0b6fe7b2a45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dd3ff63482340cb69a432e73d7ca8ff258f86522
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56852187"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349955"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Ajouter des blocs dans la liste verte/rouge du locataire
 
@@ -33,6 +33,24 @@ ms.locfileid: "56852187"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## <a name="use-the-microsoft-365-defender-portal"></a>Utiliser le portail Microsoft 365 Defender 
+
+### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>Créer des entrées d’expéditeur bloqués dans la liste d’adresses client
+
+1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+
+2. Dans la page Liste d’adresses  client **autoriser/bloquer,** vérifiez que l’onglet Expéditeurs est sélectionné, puis cliquez sur Bloquer l’icône ![ ](../../media/m365-cc-sc-create-icon.png) **Bloquer.**
+
+3. Dans le **volant Bloquer les expéditeurs** qui s’affiche, configurez les paramètres suivants :
+   - **Adresses e-mail** ou domaines de l’expéditeur : entrez un expéditeur (adresse e-mail ou domaine) par ligne, jusqu’à un maximum de 20.
+   - **N’expirez jamais**: faites l’une des étapes suivantes :
+     - Vérifiez que le paramètre est désactivé (basculement désactivé) et utilisez la zone Supprimer sur pour spécifier la ![ date d’expiration ](../../media/scc-toggle-off.png) des entrées. 
+
+       ou
+
+     - Déplacez le basculement vers la droite pour configurer les entrées pour qu’ils n’expirent jamais : ![Activer](../../media/scc-toggle-on.png).
+   - **Remarque facultative**: entrez un texte descriptif pour les entrées.
+
+4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>Créer des entrées d’URL de bloc dans la liste d’adresses client autoriser/bloquer
 
@@ -94,15 +112,21 @@ ms.locfileid: "56852187"
 
 ## <a name="use-powershell"></a>Utiliser PowerShell
 
-### <a name="add-block-file-or-url-entries-to-the-tenant-allowblock-list"></a>Ajouter des entrées de bloc de fichier ou d’URL à la liste d’adresses client autoriser/bloquer
+### <a name="add-block-sender-file-or-url-entries-to-the-tenant-allowblock-list"></a>Ajouter des entrées d’expéditeur, de fichier ou d’URL de bloc à la liste d’adresses client autoriser/bloquer
 
-Pour ajouter des entrées de blocage de fichier ou d’URL dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
+Pour ajouter des entrées d’expéditeur, de fichier ou d’URL de bloc dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
 
 ```powershell
-New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
+New-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
 ```
 
-Cet exemple ajoute une entrée de fichier de blocage pour les fichiers spécifiés qui n’expire jamais.
+Cet exemple ajoute une entrée d’expéditeur bloqué pour l’expéditeur spécifié qui expire à une date spécifique.
+
+```powershell
+New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattackerdomain.com", "test2@anotherattackerdomain.com" -ExpirationDate 8/20/2021
+```
+
+Cet exemple ajoute une entrée de bloc de fichiers pour les fichiers spécifiés qui n’expire jamais.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration

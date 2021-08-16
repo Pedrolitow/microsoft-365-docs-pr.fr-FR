@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de la gestion et des API
 ms.reviewer: ''
-description: En savoir plus sur les outils de gestion et les catégories d’API dans Microsoft Defender pour point de terminaison
+description: En savoir plus sur les outils de gestion et les catégories d’API dans Microsoft Defender for Endpoint
 keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 82cfac1498ae11afe108e68a3c9caf70bf8645e3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 49a9d668182a065f3b0a5168f14ed9c7472e00ac37615518c31a252d22191861
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652826"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902790"
 ---
 # <a name="overview-of-management-and-apis"></a>Vue d’ensemble de la gestion et des API
 
@@ -38,7 +38,7 @@ ms.locfileid: "53652826"
 
 Defender pour le point de terminaison prend en charge un large éventail d’options pour s’assurer que les clients peuvent facilement adopter la plateforme.
 
-Sachant que les environnements et structures des clients peuvent varier, Defender for Endpoint a été créé avec flexibilité et contrôle granulaire pour s’adapter à différentes exigences des clients.
+Sachant que les environnements et structures des clients peuvent varier, Defender for Endpoint a été créé avec flexibilité et contrôle granulaire pour s’adapter aux besoins divers des clients.
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>Intégration de point de terminaison et accès au portail
 
@@ -72,7 +72,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide des API de Defend
 
 **L’API** Investigation expose la richesse de Defender pour point de terminaison : elle expose des entités calculées ou « profilées » (par exemple, des appareils, des utilisateurs et des fichiers) et des événements discrets (par exemple, création de processus et création de fichiers) qui décrivent généralement un comportement lié à une entité, ce qui permet d’accéder aux données via des interfaces d’investigation permettant un accès basé sur une requête aux données. Pour plus d’informations, voir [API pris en charge.](exposed-apis-list.md)
 
-**L’API Response** expose la possibilité d’agir dans le service et sur les appareils, ce qui permet aux clients d’ing d’indicateurs, de gérer les paramètres, l’état des alertes, ainsi que d’agir sur les appareils par programme, comme isoler les appareils du réseau, mettre en quarantaine des fichiers, etc.
+**L’API Response** expose la possibilité d’agir dans le service et sur les appareils, ce qui permet aux clients d’inger des indicateurs, de gérer les paramètres, l’état des alertes, ainsi que d’prendre des actions de réponse sur les appareils par programme, telles que l’isolement des appareils du réseau, les fichiers de mise en quarantaine, etc.
 
 ## <a name="raw-data-streaming-api"></a>API de diffusion en continu de données brutes
 
@@ -87,9 +87,9 @@ Pour plus d’informations, [voir Microsoft 365 Defender API de diffusion en con
 
 ## <a name="siem-api"></a>SIEM API
 
-Lorsque vous activez l’intégration SIEM (Security Information and Event Management), cela vous permet d’obtenir des détections à partir de Centre de sécurité Microsoft Defender à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections. Cette action active la section des détails d’accès au connecteur SIEM avec des valeurs pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD). Pour plus d’informations, voir [intégration SIEM.](enable-siem-integration.md)
+Lorsque vous activez l’intégration SIEM (Security Information and Event Management), cela vous permet d’obtenir des détections à partir de Centre de sécurité Microsoft Defender à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections. Cela active la section des détails d’accès au connecteur SIEM avec des valeurs pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD). Pour plus d’informations, voir [intégration SIEM.](enable-siem-integration.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Accéder aux API Microsoft Defender pour point de terminaison](apis-intro.md)
 - [API prise en charge](exposed-apis-list.md)

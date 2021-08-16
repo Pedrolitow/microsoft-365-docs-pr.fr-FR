@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a68402571ff86c8b130b168e4fd1164abf46b3c01b6906c1ec8cfc7c1123cfa2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 12317627c497999f0821a09bc6639aedc2515933
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811253"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347239"
 ---
 # <a name="get-ip-related-alerts-api"></a>API Obtenir les alertes liées à l’ADRESSE IP
 
@@ -72,7 +72,8 @@ GET /api/ips/{ip}/alerts
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String
+ | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -80,7 +81,8 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’adresse IP existe : 200 - OK avec la liste [des](alerts.md) entités d’alerte dans le corps. Si l’adresse IP n’existe pas : 404 - In trouvé.
+En cas de réussite et si l’adresse IP existe : 200 - OK avec la liste [des](alerts.md) entités d’alerte dans le corps. Si l’adresse IP est inconnue mais valide, elle retourne un ensemble vide.
+Si l’adresse IP n’est pas valide, elle retourne HTTP 400.
 
 ## <a name="example"></a>Exemple
 

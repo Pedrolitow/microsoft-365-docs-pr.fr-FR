@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 69d892fef4dc83cfc3ef3ff04acc34b873ecc382
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 848d422828a4c0a8c8e5c7aa63c31f0727ea12f4
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254664"
+ms.locfileid: "58349931"
 ---
 # <a name="release-device-from-isolation-api"></a>LIBÉRER l’appareil à partir de l’API d’isolation
 
@@ -50,7 +50,7 @@ Annuler l’isolation d’un appareil.
 > [!IMPORTANT]
 >
 > - L’isolation complète est disponible pour les appareils Windows 10, version 1703.
-> - L’isolation sélective est disponible pour les appareils Windows 10, version 1709 ou ultérieure.
+> - L’isolation sélective est disponible pour les appareils Windows 10 version 1709 ou ultérieure.
 > - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionnée pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
 
 ## <a name="permissions"></a>Autorisations
@@ -92,7 +92,9 @@ Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 201 : code de réponse créé et action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+
+Si vous envoyez plusieurs appels d’API pour supprimer l’isolation pour le même appareil, elle renvoie « Action de l’ordinateur en attente » ou HTTP 400 avec le message « L’action est déjà en cours ».
 
 ## <a name="example"></a>Exemple
 

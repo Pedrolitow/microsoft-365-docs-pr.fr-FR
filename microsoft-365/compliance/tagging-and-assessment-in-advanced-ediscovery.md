@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
 description: Examinez les étapes à suivre pour effectuer une formation sur l’évaluation, y compris le marquage des fichiers et l’examen des résultats de l’Advanced eDiscovery.
-ms.openlocfilehash: 15bc8254ea1589d9afa17a74eaf3bfbcdfd4bba0
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 4e1b9f3e79ee35866322e713412690af068ce1837c668c0331d1091cd84a2786
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769189"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899854"
 ---
 # <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Marquage et évaluation dans le module de pertinence dans Advanced eDiscovery
   
@@ -36,14 +36,14 @@ Cette section décrit la procédure d’évaluation dans le module Pertinence da
 
     ![Onglet Balise de pertinence pour l’évaluation](../media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
   
-2. Passez en revue chaque fichier de l’exemple, déterminez la pertinence du fichier pour chaque problème de cas et  marquez le fichier à l’aide des boutons Pertinence (R), Non pertinent (NR) et Ignorer dans le volet Marquage. 
+2. Passez en revue chaque fichier de l’exemple, déterminez la pertinence du fichier pour chaque problème de cas et  marquez le fichier à l’aide des boutons Pertinence (R), Non pertinent (NR) et Ignorer dans le volet De marquage. 
 
     > [!NOTE]
     >  L’évaluation nécessite 500 fichiers balisé. Si les fichiers sont « ignorés », vous recevrez d’autres fichiers à baliser. 
   
 3. Après avoir balisé tous les fichiers de l’exemple, cliquez sur **Calculer.**
 
-    La marge d’erreur et la richesse  actuelles de l’évaluation sont calculées et affichées dans l’onglet Suivi de pertinence, avec des détails développés par problème, comme illustré ci-dessous. Plus d’informations sur cette boîte de dialogue sont décrites dans la section Révision des résultats [de l’évaluation.](#reviewing-assessment-results)
+    La marge d’erreur actuelle de l’évaluation et la richesse sont calculées et affichées dans l’onglet Suivi de pertinence, avec des détails étendus par problème, comme illustré ci-dessous.  Plus d’informations sur cette boîte de dialogue sont décrites dans la section Révision des résultats [de l’évaluation.](#reviewing-assessment-results)
 
     ![Suivi de pertinence - Évaluation](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
@@ -116,12 +116,12 @@ L’affichage suivi développé montre l’étape suivante recommandée, les sta
   
 Lorsque la richesse est très faible, le nombre de fichiers d’évaluation supplémentaires nécessaires pour atteindre un nombre minimal de fichiers pertinents afin de produire des statistiques utiles est très élevé. Advanced eDiscovery vous recommanderez ensuite de passer à la formation. L’indicateur de progression de l’évaluation sera ombbré et aucune statistiques ne sera disponible.
   
-En l’absence de stabilisation basée sur les statistiques, des résultats seront obtenus avec un niveau de précision et de confiance inférieurs. Toutefois, ces résultats peuvent être utilisés pour rechercher des fichiers pertinents lorsque vous n’avez pas besoin de connaître le pourcentage de fichiers pertinents trouvés. De même, cet état peut être utilisé pour entraîner des problèmes de faible richesse, où les scores de pertinence peuvent accélérer l’accès aux fichiers pertinents pour un problème spécifique.
+En l’absence de stabilisation basée sur les statistiques, des résultats seront obtenus avec un niveau de précision et de confiance inférieurs. Toutefois, ces résultats peuvent être utilisés pour rechercher des fichiers pertinents lorsque vous n’avez pas besoin de connaître le pourcentage de fichiers pertinents trouvés. De même, cet état peut être utilisé pour entraîner les problèmes de faible richesse, où les scores de pertinence peuvent accélérer l’accès aux fichiers pertinents pour un problème spécifique.
   
 > [!TIP]
 > Dans **l’onglet Suivi de \> pertinence,** affichage des problèmes développé, les options d’affichage suivantes sont disponibles : 
 > 
-> L’étape suivante recommandée,  telle que l’étape suivante : le balisage peut être contourné (par problème) en cliquant sur le bouton Modifier à droite, puis en sélectionnant une autre étape à l’étape **suivante.**  Lorsque l’indicateur de progression de l’évaluation n’est pas terminé, l’évaluation est la prochaine option recommandée, pour baliser d’autres fichiers d’évaluation et améliorer la précision des statistiques. 
+> L’étape suivante recommandée,  telle que l’étape suivante : le marquage  peut être contourné (par problème) en cliquant sur le bouton Modifier à droite, puis en sélectionnant une autre étape dans l’étape **suivante.** Lorsque l’indicateur de progression de l’évaluation n’est pas terminé, l’évaluation est la prochaine option recommandée, pour baliser d’autres fichiers d’évaluation et améliorer la précision des statistiques. 
 > 
 > Vous pouvez modifier la marge d’erreur et évaluer son impact en cliquant sur Modifier **et** dans la boîte de dialogue Niveau d’évaluation, en modifiant la marge d’erreur cible pour les estimations de rappel et en cliquant sur Mettre à jour les **valeurs.** En outre, dans cette boîte de dialogue, vous pouvez afficher les options avancées en cliquant sur **Avancé.** 
 > 

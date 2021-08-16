@@ -1,7 +1,7 @@
 ---
 title: Afficher les erreurs de synchronisation d’annuaires dans Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Découvrez comment afficher les erreurs de synchronisation d’annuaires et les correctifs possibles dans Centre d’administration Microsoft 365.
-ms.openlocfilehash: 37bd25f46c84f2a4ec26f17accdae034487a4dc91023d798cf3459941136c0a6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d48b67f31241777368cd27cf0385d34757495eef
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885254"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58353755"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Afficher les erreurs de synchronisation d’annuaires dans Microsoft 365
 

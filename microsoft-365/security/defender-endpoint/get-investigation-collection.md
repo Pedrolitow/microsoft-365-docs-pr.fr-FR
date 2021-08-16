@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 20c5e392f80a497d58f9f50d6e72996b87741f469bf78994a11c9db50511f987
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 73dd701eff97d7afb3fee7f4480a16296fa3d983
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857578"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347119"
 ---
 # <a name="list-investigations-api"></a>API Enquêtes de liste
 
@@ -43,7 +43,9 @@ Récupère une collection [d’enquêtes.](investigation.md)
 
 Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
 
-La requête OData est prise en charge sur `$filter` : , et les `startTime` `state` `machineId` `triggeringAlertId` propriétés.
+La requête OData est prise en charge sur `$filter` : , et les `startTime` `id` `state` `machineId` `triggeringAlertId` propriétés.
+<br>```$stop``` avec une valeur maximale de 10 000
+<br>```$skip```
 
 Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
@@ -78,7 +80,8 @@ GET https://api.securitycenter.microsoft.com/api/investigations
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

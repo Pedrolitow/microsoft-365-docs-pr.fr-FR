@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Déterminez les réglementations en matière de confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se Microsoft 365 environnement.
-ms.openlocfilehash: 106bc0d15c04e44e17bf4c0528b541c5d5fd6d8e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 04dc67ee6316f4549e7d215f997cdc171b0038024f3740d544d6acb214f9be1e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651650"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883421"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques de confidentialité des données et identifier les éléments sensibles à l’Microsoft 365
 
@@ -42,7 +42,7 @@ Conformément à l’article 4 du R GDPR :
 
 ### <a name="iso-27001"></a>ISO 27001
 
-Le respect d’autres normes telles que la norme ISO 27001 a également été reconnu par plusieurs autorités de surveillance européennes comme un proxy valide d’intention au sein du spectre des personnes, des processus et des technologies. Les normes qu’il spécifie chevauchent et respectent les mécanismes de protection pilotés par l’ISO-27001 peuvent être considérés comme un proxy qui remplit certaines obligations de confidentialité dans certaines circonstances.
+Le respect d’autres normes telles que la norme ISO 27001 a également été reconnu par plusieurs autorités de surveillance européennes comme un proxy valide d’intention au sein du spectre des personnes, des processus et des technologies. Les normes qu’il spécifie chevauchent et respectent les mécanismes de protection pilotés par iso-27001 peuvent être considérées comme un proxy qui remplit certaines obligations de confidentialité dans certaines circonstances.
 
 ### <a name="other-data-privacy-regulations"></a>Autres réglementations en matière de confidentialité des données
 
@@ -71,7 +71,7 @@ Pour référence ultérieure dans les articles de cette solution globale, ce tab
 ||45 CFR 164.312(c)(2)|Mettre en œuvre des mécanismes électroniques pour confirmer que les informations médicales électroniques protégées n'ont pas été altérées ou détruites de manière non autorisée.|Gérer les informations|
 ||45 CFR 164.316(b)(1)(i)|Si une action, une activité ou une évaluation est requise par cette sous-partie pour être documentée, conservez un enregistrement écrit (qui peut être électronique) de l’action, de l’activité ou de l’évaluation|Gérer les informations|
 ||45 CFR 164.316(b)(1)(ii)|Conserver la documentation requise par le paragraphe (b)(1) du présent article pendant 6 ans à compter de la date de sa création ou de la dernière date à laquelle elle a été en vigueur, si celle-ci est postérieure.|Gérer les informations|
-||45 C.F.R. 164.308(a)(1)(ii)(D)|Implémenter des procédures pour passer régulièrement en revue les enregistrements de l’activité du système d’information, tels que les journaux d’audit, les rapports d’accès et les rapports de suivi des incidents de sécurité|Découvrir et répondre|
+||45 C.F.R. 164.308(a)(1)(ii)(D)|Implémenter des procédures pour examiner régulièrement les enregistrements de l’activité du système d’information, tels que les journaux d’audit, les rapports d’accès et les rapports de suivi des incidents de sécurité|Découvrir et répondre|
 ||45 C.F.R. 164.308(a)(6)(ii)|Identifier et répondre aux incidents de sécurité connus ou suspects ; atténuer, dans la mesure du possible, les effets néfastes des incidents de sécurité qui sont connus de l'entité couverte ou de l'associé commercial ; et documenter les incidents de sécurité et leurs résultats.|Découvrir et répondre|
 ||45 C.F.R. 164.312(b)|Implémenter des mécanismes matériels, logiciels et procédural qui enregistrent et examinent l’activité dans les systèmes d’information qui contiennent ou utilisent des informations de santé électroniques protégées.|Découvrir et répondre|
 |CCPA|1798.105(c)|Une entreprise qui reçoit une demande vérifiable d’un consommateur pour supprimer ses informations personnelles conformément à la sous-section (a) du présente article supprime les informations personnelles du consommateur de ses enregistrements et demande à tous les fournisseurs de services de supprimer les informations personnelles du consommateur de ses enregistrements.|Découvrir et répondre|
@@ -89,7 +89,7 @@ Quelles que soient les réglementations qui vous sont soumises, où différents 
 
 ### <a name="data-portability"></a>Portabilité des données
 
-Les données se déplacent également au fil du temps à mesure qu’elles sont traitées, affinées et que d’autres versions en sont dérivées. Une capture instantanée initiale n’est jamais suffisante. Il doit y avoir un processus continu pour connaître vos données. Cela représente l’un des plus grands défis pour les grandes organisations qui gèrent des volumes importants de données personnelles. Les organisations qui ne s’adressent pas au problème « connaissez vos données » peuvent potentiellement se retrouver avec un risque très élevé et des amendes éventuelles des organismes de réglementation.
+Les données se déplacent également au fil du temps à mesure qu’elles sont traitées, affinées et que d’autres versions en sont dérivées. Une capture instantanée initiale ne suffit jamais. Il doit y avoir un processus continu pour connaître vos données. Cela représente l’un des plus grands défis pour les grandes organisations qui gèrent des volumes importants de données personnelles. Les organisations qui ne s’adressent pas au problème « connaissez vos données » peuvent potentiellement se retrouver avec un risque très élevé et des amendes éventuelles des organismes de réglementation.
 
 ![Cycle de vie des données](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
 
@@ -126,7 +126,7 @@ Il est également important de réfléchir aux défis courants suivants en mati�
 
 - **Distribution des données personnelles.** Quelle est la diffusion des informations sur un sujet donné ? Est-il suffisamment connu pour convaincre les organismes de réglementation que des contrôles appropriés sont en place ? Peut-il être examiné et corrigé si nécessaire ?
 - **Protection contre l’exfiltration.** Comment protéger les données personnelles d’un type ou d’une source donné contre les compromissons et comment y répondre si c’était le cas ?
-- **Protection et risque.** Quels mécanismes de protection des informations sont appropriés par rapport au risque et comment maintenir la continuité et la productivité de l’entreprise et réduire l’impact sur les utilisateurs finaux si une intervention de l’utilisateur final est nécessaire ? Par exemple, la classification ou le chiffrement manuel doit-il être utilisé ?
+- **Protection et risque.** Quels mécanismes de protection des informations sont appropriés par rapport au risque et comment maintenir la continuité et la productivité de l’entreprise et minimiser l’impact sur les utilisateurs finaux si l’intervention de l’utilisateur final est nécessaire ? Par exemple, la classification ou le chiffrement manuel doit-il être utilisé ?
 - **Rétention des données personnelles.** Combien de temps les informations contenant des données personnelles doivent-elles être conservées pour des raisons professionnelles valides et comment éviter les pratiques de conservation indéfinies passées, équilibrées avec les besoins de rétention pour la continuité de l’activité ?
 - **Gestion des demandes des personnes qui traitent des données.** Quels mécanismes seront nécessaires pour gérer les demandes des personnes qui traitent des données (DSR) et les mesures correctives, telles que l’anonymisation, la suppression et la suppression ?
 - **Surveillance et rapports continus.** Quels types de techniques d’analyse, d’investigation et de rapport au quotidien sont disponibles pour les différents types de données et sources ?
@@ -172,7 +172,7 @@ La plupart des organisations seront exposées à l’un des scénarios ci-dessus
 
 ## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>Étape 2 : Évaluer votre préparation pour vous conformer aux réglementations en matière de confidentialité des données
 
-Bien que spécifiques au R GDPR, les questions posées dans l’outil d’évaluation gratuit de [Microsoft R GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) fournissent un bon départ pour comprendre la préparation globale à la confidentialité des données.
+Bien que spécifiques au R GDPR, les questions posées dans l’outil d’évaluation gratuit de [Microsoft R GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) fournissent un bon départ pour comprendre la préparation globale de la confidentialité des données.
 
 Les organisations soumises à d’autres réglementations en matière de confidentialité des données, telles que le CCPA aux États-Unis ou le LGPD du Brésil, peuvent également bénéficier de l’inventaire de préparation de cet outil en raison de dispositions qui se chevauchent avec le RGPD.
 

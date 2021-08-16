@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b71ed4cb81da800069df826f9d95737134822ae896dc23cbe37363275264219e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93e76fb5730140d06f9805e91ecd1a175a4f7cfb
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847414"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347143"
 ---
 # <a name="get-domain-statistics-api"></a>API Obtenir les statistiques de domaine
 
@@ -44,6 +44,7 @@ Récupère les statistiques sur le domaine donné.
 ## <a name="limitations"></a>Limites
 
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+2. La valeur maximale est `lookbackhours` de 720 heures (30 jours).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -75,7 +76,7 @@ Autorisation|Porteur {token}. **Obligatoire**.
 
 Nom|Type|Description
 :---|:---|:---
-lookBackHours|Int32|Définit les heures pendant les recherches pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
+lookBackHours|Int32|Définit les heures que nous allons rechercher pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 

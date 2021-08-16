@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 53abd7fa11d7e49059daef39be58f923e2c858d65bc9b6051c12886ac8a9137d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a8b87a7cee3bb03a0946773012ed6f18bbd75b9
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792949"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58350003"
 ---
 # <a name="score-resource-type"></a>Type de ressource Score
 
@@ -53,5 +53,9 @@ Méthode|Type renvoyé|Description
 Propriété|Type|Description
 :---|:---|:---
 Niveau|Double|Score actuel.
-Temps|Date/heure|Date et heure à laquelle l’appel de cette API a été effectué.
-RbacGroupName|Chaîne|Nom du groupe d’appareils.
+Temps|DateTime
+|Date et heure à laquelle l’appel de cette API a été effectué.
+RbacGroupName|String
+|Nom du groupe d’appareils.
+RbacGroupId|String
+|ID du groupe d’appareils.

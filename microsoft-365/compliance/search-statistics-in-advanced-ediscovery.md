@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Validez vos résultats de recherche en visualxant les statistiques générées après avoir exécuté une recherche de collection dans Advanced eDiscovery.
-ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 811668ba0a1d6a4ca9e171f634f9802273921d0fa1cf7190b315111183a172b8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750775"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899822"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>Statistiques de recherche dans Advanced eDiscovery
 
@@ -28,7 +28,7 @@ Une façon de valider vos résultats de recherche consiste à examiner les stati
 
 - Nombre et volume d’éléments récupérés par la recherche
 
-- Nombre et volume d’éléments partiellement indexés ou non indexés trouvés aux emplacements de recherche
+- Nombre et volume d’éléments partiellement indexés ou non indexés trouvés dans les emplacements de recherche
 
 - Nombre de boîtes aux lettres et d’emplacements recherchés.
 Pour afficher des statistiques plus détaillées, cliquez sur « Statistiques » dans le volant des détails de la recherche.
@@ -63,7 +63,7 @@ Si vous avez utilisé (c:s) des lignes de mot clé ou de mot clé dans votre req
 
 - Requête : composant de requête réel à qui la ligne fait référence. Si la partie est « Primaire », il s’agit de la requête entière ; Si la partie était « Mot clé », vous verrez l’un des composants de requête ici.
   
-  - Lorsque vous recherchez dans toutes les boîtes aux lettres de contenu (en ne spécifiant aucun mot clé), la requête réelle est (taille >= 0) afin que tous les éléments soient renvoyés
+  - Lorsque vous recherchez dans toutes les boîtes aux lettres de contenu (en ne spécifiant aucun mot clé), la requête réelle est (taille >= 0) afin que tous les éléments soient renvoyés.
   
   - Lorsque vous recherchez SharePoint online et OneDrive Entreprise sites web, les deux composants suivants sont ajoutés :
     

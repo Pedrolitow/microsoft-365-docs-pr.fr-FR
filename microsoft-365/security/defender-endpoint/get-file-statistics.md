@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2e4e01ebb90389f02b7e141a7412927319135e94b63536f19ec0dea8754a262
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6e08f8379189bf221ae8eb450666084932a950b3
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800365"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347131"
 ---
 # <a name="get-file-statistics-api"></a>API Obtenir les statistiques sur les fichiers
 
@@ -44,6 +44,7 @@ Extrait les statistiques du fichier donné.
 ## <a name="limitations"></a>Limites
 
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+2. La valeur maximale est `lookbackhours` de 720 heures (30 jours).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -69,13 +70,14 @@ GET /api/files/{id}/stats
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-uri-parameters"></a>Paramètres d’URI de demande
 
 Nom|Type|Description
 :---|:---|:---
-lookBackHours|Int32|Définit les heures pendant les recherches pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
+lookBackHours|Int32|Définit les heures que nous allons rechercher pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 

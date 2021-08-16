@@ -17,22 +17,24 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les demandes Customer Lockbox qui vous permettent de contrôler comment un ingénieur du support technique Microsoft peut accéder à vos données lorsque vous êtes face à un problème.
-ms.openlocfilehash: 4669abefe039d0f4ba75f22d267c54696cb680aee44df560befd93006c515ae5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa1a53e2f18f186a31673fa240e1d7bd9b71b5f8
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796249"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58350051"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Customer Lockbox dans Office 365
 
+
+
 Cet article fournit des instructions de déploiement et de configuration pour Customer Lockbox. Customer Lockbox prend en charge les demandes d’accès aux données dans Exchange Online, SharePoint Online et OneDrive Entreprise. Pour recommander la prise en charge d’autres services, envoyez une [demande à Office 365 UserVoice](https://office365.uservoice.com/).
 
-Pour voir les options de gestion des licences pour vos utilisateurs afin qu’ils bénéficient des offres de conformité Microsoft 365, y compris celle-ci, à compter du 1er avril 2020, consultez les conseils de gestion des licences [Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)pour la conformité des & de sécurité.
+Pour voir les options de gestion des licences pour vos utilisateurs afin de bénéficier des offres de conformité Microsoft 365, consultez les conseils de gestion des licences Microsoft 365 pour la conformité & [sécurité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-Customer Lockbox garantit que Microsoft ne peut pas accéder à votre contenu pour effectuer une opération de service sans votre approbation explicite. Customer Lockbox vous permet d’accéder au flux de travail d’approbation pour les demandes d’accès à votre contenu.
+Customer Lockbox garantit que Microsoft ne peut pas accéder à votre contenu pour les opérations de service sans votre approbation explicite. Customer Lockbox vous amène dans le processus de flux de travail d’approbation que Microsoft utilise pour s’assurer que seules les demandes autorisées autorisent l’accès à votre contenu. Pour en savoir plus sur le processus de flux de travail de Microsoft, voir [Privileged access management dans Microsoft 365](privileged-access-management-solution-overview.md).
 
-Parfois, les ingénieurs Microsoft aident à résoudre les problèmes signalés par le client dans le processus de support. En règle générale, les problèmes sont résolus par le biais d’outils de télémétrie et de débogage étendus que Microsoft a mis en place pour ses services. Toutefois, dans certains cas, un ingénieur Microsoft doit accéder au contenu du client pour déterminer la cause première et résoudre le problème. Customer Lockbox nécessite l’intervention de l’ingénieur pour demander l’accès au client en tant que dernière étape du flux de travail d’approbation. Cela permet aux organisations d’approuver ou de refuser ces demandes et de fournir un contrôle d’accès direct au client.
+Parfois, les ingénieurs Microsoft aident à résoudre les problèmes qui surviennent avec le service. En règle générale, les ingénieurs corrigent les problèmes à l’aide des outils de télémétrie et de débogage étendus que Microsoft a mis en place pour ses services. Toutefois, dans certains cas, un ingénieur Microsoft doit accéder à votre contenu pour déterminer la cause première et résoudre le problème. Customer Lockbox exige que l’ingénieur vous demande l’accès comme dernière étape du flux de travail d’approbation. Cela vous permet d’approuver ou de refuser la demande pour votre organisation et de fournir un contrôle d’accès direct à votre contenu.
 
 ### <a name="customer-lockbox-overview-video"></a>Vidéo de vue d’ensemble de Customer Lockbox
 
@@ -40,15 +42,15 @@ Parfois, les ingénieurs Microsoft aident à résoudre les problèmes signalés 
 
 ## <a name="customer-lockbox-workflow"></a>Flux de travail Customer Lockbox
 
-Les étapes suivantes décrivent le flux de travail classique lorsqu’un ingénieur Microsoft lance une demande Customer Lockbox :
+Ces étapes décrivent le flux de travail classique lorsqu’un ingénieur Microsoft démarre une demande Customer Lockbox :
 
-1. Une personne d’une organisation connaît un problème avec sa boîte Microsoft 365 lettres.
+1. Une personne d’une organisation rencontre un problème avec sa boîte aux lettres Microsoft 365.
 
-2. Une fois que l’utilisateur a corrigé le problème, mais qu’il ne peut pas le résoudre, il ouvre une demande de support auprès du Support Microsoft.
+2. Si l’utilisateur trouve la solution au problème, mais qu’il ne parvient pas à le corriger, il envoie une demande d’assistance au Support Microsoft.
 
-3. Un ingénieur du support Technique de Microsoft examine la demande de service et détermine la nécessité d’accéder au client de l’organisation pour réparer le problème dans Exchange Online.
+3. Un ingénieur du Support Microsoft examine la demande de service et décide qu’il est nécessaire d’accéder au client de l’organisation pour réparer le problème dans Exchange Online.
 
-4. L’ingénieur du support technique Microsoft se connecte à l’outil de demande Customer Lockbox et effectue une demande d’accès aux données qui inclut le nom du client de l’organisation, le numéro de demande de service et la durée estimée d’accès aux données par l’ingénieur.
+4. L’ingénieur du Support Microsoft se connecte à l’outil de demande Customer Lockbox et effectue une demande d’accès aux données incluant le nom du client de l’organisation, le numéro de la demande de service et la durée pendant laquelle l’ingénieur doit accéder aux données.
 
 5. Une fois la demande approuvée par le gestionnaire du support technique Microsoft, Customer Lockbox envoie à l’approbateur désigné dans l’organisation une notification par e-mail concernant la demande d’accès en attente de Microsoft.
 
@@ -63,7 +65,7 @@ Les étapes suivantes décrivent le flux de travail classique lorsqu’un ingén
    > [!IMPORTANT]
    > Microsoft n’inclut pas de liens dans les notifications par courrier électronique Customer Lockbox qui vous obligent à vous Office 365.
 
-7. Après acceptation de la demande par l’approbateur de l’organisation, l’ingénieur Microsoft reçoit le message d’approbation, se connecte au client dans Exchange Online et corrige le problème rencontré par le client. Les ingénieurs Microsoft ont la durée demandée pour résoudre le problème, après quoi l’accès est automatiquement révoqué.
+7. Après acceptation de la demande par l’approbateur de l’organisation, l’ingénieur Microsoft reçoit le message d’approbation, se connecte au client dans Exchange Online et corrige le problème rencontré par le client. Les ingénieurs Microsoft ont la durée demandée pour résoudre le problème après lequel l’accès est automatiquement révoqué.
 
 > [!NOTE]
 > Chaque action effectuée par un ingénieur Microsoft est enregistrée dans le journal d’audit. Vous pouvez rechercher et consulter ces enregistrements d’audit.
@@ -94,15 +96,14 @@ Vous pouvez activer les contrôles Customer Lockbox dans le Centre d’administr
 
 3. Sélectionnez une demande Customer Lockbox, puis choisissez **Approuver** ou **Refuser.**
 
-    ![Approuver ou refuser des demandes Customer Lockbox](../media/CustomerLockbox7.png)
+    ![Approuver les demandes Customer Lockbox](../media/CustomerLockbox7.png)
 
     Un message de confirmation concernant l’approbation de la demande Customer Lockbox s’affiche.
 
-    ![Approuver ou refuser des demandes Customer Lockbox](../media/CustomerLockbox8.png)
+    ![Refuser les demandes Customer Lockbox](../media/CustomerLockbox8.png)
 
 > [!NOTE]
 > Utilisez la cmdlet Set-AccessToCustomerDataRequest pour approuver, refuser ou annuler les demandes de référentiel sécurisé du client Microsoft 365 qui contrôlent l’accès des ingénieurs de support Microsoft à vos données. Pour plus d’informations, [voir Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
-
 
 ## <a name="auditing-customer-lockbox-requests"></a>Audit des demandes d’accès au Customer Lockbox
 
@@ -249,7 +250,7 @@ Toutes les demandes Customer Lockbox sont vues dans le Centre d’administration
 
 #### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>Comment mettre en corrélation les demandes d’accès au contenu avec les journaux d’audit associés ?
 
-Le flux d’activités du Centre de conformité contient les activités du journal de Customer Lockbox. Les clients peuvent faire référence aux activités du journal Customer Lockbox à partir du flux d’activités par rapport à la demande de courrier électronique qu’ils reçoivent.
+Le flux d’activités du Centre de conformité contient les activités de journal de Customer Lockbox. Les clients peuvent faire référence aux activités du journal Customer Lockbox à partir du flux d’activités par rapport à la demande de courrier électronique qu’ils reçoivent.
 
 #### <a name="what-happens-when-a-customer-doesnt-respond-to-a-customer-lockbox-request"></a>Que se passe-t-il lorsqu’un client ne répond pas à une demande Customer Lockbox ?
 
@@ -259,7 +260,7 @@ Les demandes d’accès Customer Lockbox ont une durée par défaut de 12 heures
 
 Si un client rejette une demande Customer Lockbox, aucun accès au contenu client ne se produit. Si un utilisateur de votre organisation continue de faire face à un problème de service qui oblige Microsoft à accéder au contenu du client pour résoudre le problème, le problème de service peut persister et Microsoft en informera l’utilisateur.
 
-#### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>Customer Lockbox protège-t-il contre les demandes de données des organismes chargés de l’application de la loi ou d’autres tiers ?
+#### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>Customer Lockbox se protège-t-il contre les demandes de données des organismes chargés de l’application de la loi ou d’autres tiers ?
 
 Non. Microsoft prend au sérieux les demandes tierces pour les données client. En tant que fournisseur de services cloud, Microsoft fait toujours la défense de la confidentialité des données client. Dans le cas où nous obtenons une autorisation, Microsoft tente toujours de rediriger le tiers vers le client pour obtenir les informations. (Lisez le blog de Brad Smith : Protection des données client contre les espions du [gouvernement).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Nous publions régulièrement [des informations détaillées](https://www.microsoft.com/corporate-responsibility/lerr) sur les demandes d’application de la loi reçues par Microsoft.
 
