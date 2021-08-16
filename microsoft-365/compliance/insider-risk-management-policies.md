@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f64fcf4908f119e261b07bbc4feaed2151e30187
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: HT
+ms.openlocfilehash: 79795b6166b5a0b513ab4558effe509cc6637849
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226430"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256691"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -210,6 +210,8 @@ Pour d’autres détails concernant les avertissements et les recommandations, s
 
 ![Intégrité d’une stratégie de gestion des risques internes](../media/insider-risk-policy-health.png)
 
+### <a name="notification-messages"></a>Les messages de notification
+
 Utilisez le tableau suivant pour en savoir davantage sur les notifications d’avertissement et de recommandation, ainsi que les mesures à prendre pour résoudre des problèmes potentiels.
 
 |**Messages de notification**|**Modèles de stratégie**|**Causes/Essayer cette action de correction**|
@@ -380,7 +382,7 @@ Pour commencer manuellement l’activité d’attribution de scores pour les uti
 7. Pour importer une liste d’utilisateurs à ajouter aux stratégies, sélectionnez **Importer** pour importer un fichier .csv (valeurs séparées par une virgule). Le fichier doit être dans le format ci-après et vous devez répertorier les noms de principal de l’utilisateur dans le fichier :
 
     ```csv
-    nom d'utilisateur principal
+    user principal name
     user1@domain.com
     user2@domain.com
     ```

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9314b1b99afeed1738d03a5f11c513166c37dfa002784b21d3c3b461183b0077
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: ad3b53a9936fb40c8d699f656f88bf5a3fff20b9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803427"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256667"
 ---
 # <a name="getting-help-for-users"></a>Obtenir de l’aide pour les utilisateurs
 
@@ -25,13 +25,13 @@ Si vous avez atteint le [](../service-description/user-support.md) point dans le
 
 ## <a name="elevation-requests"></a>Demandes d’élévation
 
-Avant de demander un accès élevé à un appareil, il est préférable de passer en revue les actions les mieux adaptées.
+Avant de demander un accès élevé à un appareil, il est préférable de passer en revue les actions qui conviennent le mieux.
 
-- **Ce processus** vise généralement à effectuer des actions qui seraient régulièrement effectuées lors de la résolution des problèmes liés Microsoft Manged Desktop appareils mobiles. Les exemples incluent :
+- **Ce processus** est généralement destiné à des actions qui seraient effectuées régulièrement lors de la résolution des problèmes liés Microsoft Manged Desktop appareils mobiles. Les exemples incluent :
     - Élévation des niveaux des dépannages du système intégrés, de l’invite de commandes ou des Windows PowerShell
     - Résolution des problèmes des applications métier
     - Utilisation d’une solution de contournement pour corriger quelque chose qui doit fonctionner par conception (par exemple, l’activation de BitLocker ou le temps système non mis à jour)
-    - Élévation de la fonction Gestionnaire de périphériques pour faire des opérations telles que les pilotes de mise à jour, désinstaller un appareil ou analyser les nouvelles modifications
+    - Élévation de la fonction Gestionnaire de périphériques pour qu’il recherche de nouvelles modifications, telles que la mise à jour des pilotes, la désinstallation d’un appareil ou l’analyse des nouvelles modifications
 
 - **Les actions qui ne sont pas recommandées sont** les suivantes :
     - Installation de logiciels ou de navigateurs
@@ -54,7 +54,7 @@ Avant de demander un accès élevé à un appareil, il est préférable de passe
     - **Catégorie**: sélectionnez la catégorie qui correspond le mieux à votre problème. Si aucune option ne semble proche, sélectionnez **Autre**. Il est préférable de sélectionner une catégorie si possible.
     - **Sous-catégorie :** sélectionnez celle qui répond le mieux au problème. Si aucune option ne semble proche, sélectionnez **Autre**.
     - **Titre**: fournissez une brève description du problème sur l’appareil.
-    - **Plan d’action**: fournissez les étapes de résolution des problèmes que vous prévoyez d’suivre une fois l’élévation accordée. 
+    - **Plan d’action**: fournissez les étapes de résolution des problèmes que vous prévoyez de suivre une fois l’élévation accordée. 
 4. Sélectionnez **Envoyer**.
 
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 45858943dab6f6cb2964cc2751c245f182f3ea9e61ab5a8565a238e3aad715e1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3053740119c09b56b6fa01434d79fe9cd31d826e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808163"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256703"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -74,7 +74,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 3. Pour la page **Choisir les emplacements auxquels appliquer la stratégie**, sélectionnez l’un ou l’ensemble des emplacements pour Teams :
     - **Message de canal Teams** : messages provenant de conversations de canal standard et de réunions de canal standard, mais pas de [canaux privés](/microsoftteams/private-channels) qui ont leur propre emplacement de stratégie.
     - **Conversations Teams** : messages provenant de conversations privées individuelles, de conversations de groupe et de conversations de réunion.
-    - **Messages de canal privé Teams** : messages provenant de conversations de canal privé et de réunions de canal privé. Cette option est actuellement déployée en préversion et si vous ne la voyez pas s'afficher, réessayez dans quelques jours.
+    - **Messages de canal privé Teams** : messages provenant de conversations de canal privé et de réunions de canal privé.
     
    Par défaut, [toutes les équipes et tous les utilisateurs sont sélectionnés](#a-policy-that-applies-to-entire-locations), mais vous pouvez affiner cela en sélectionnant les options **Modifier** pour configurer une stratégie de rétention pour [inclusions ou exclusions spécifiques](#a-policy-with-specific-inclusions-or-exclusions). Toutefois, avant de modifier la valeur par défaut, n’ignorez pas les conséquences suivantes pour une stratégie de rétention qui supprime des messages lorsqu’elle est configurée pour inclut ou exclut :
     

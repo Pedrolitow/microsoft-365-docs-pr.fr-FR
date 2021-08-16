@@ -15,12 +15,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts aux fonctionnalités de protection d’Exchange Online Protection (EOP) et de Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61166c78f31a86882ef0e2dc2a79683aea794040
-ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
+ms.openlocfilehash: cfabb6a33c2d107e4f4822ed57e6e9ff1f8cc718
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53383461"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258276"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -31,16 +31,16 @@ ms.locfileid: "53383461"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Les stratégies de sécurité prédéfinisées fournissent un emplacement centralisé pour l’application de toutes les stratégies recommandées de courrier indésirable, de programmes malveillants et de hameçonnage aux utilisateurs à la fois. Les paramètres de stratégie ne sont pas configurables. Au lieu de cela, elles sont définies par nous et sont basées sur nos observations et expériences dans les centres de données pour trouver un équilibre entre conserver du contenu dangereux à l’écart des utilisateurs et éviter les perturbations inutiles.
+Les stratégies de sécurité prédéfinisées fournissent un emplacement centralisé pour l’application de toutes les stratégies recommandées de courrier indésirable, de programmes malveillants et de hameçonnage aux utilisateurs à la fois. Les paramètres de stratégie ne sont pas configurables. Au lieu de cela, elles sont définies par nous et sont basées sur nos observations et expériences dans les centres de données pour trouver un équilibre entre le fait de conserver du contenu dangereux à l’écart des utilisateurs et d’éviter les interruptions inutiles.
 
 Le reste de cet article décrit les stratégies de sécurité prédéfinie et la façon de les configurer.
 
 ## <a name="what-preset-security-policies-are-made-of"></a>En quoi les stratégies de sécurité prédéfines sont-elles
 
-Les stratégies de sécurité prédéfines sont composées des éléments suivants :
+Les stratégies de sécurité prédéfinës sont composées des éléments suivants :
 
 - Profils
-- Politiques
+- Stratégies
 - Paramètres de stratégie
 
 En outre, l’ordre de priorité est important si plusieurs stratégies de sécurité prédéfinir et autres stratégies s’appliquent à la même personne.
@@ -69,10 +69,10 @@ Les stratégies de sécurité prédéfines utilisent les stratégies corresponda
 - **Exchange Online Protection (EOP)**: cela inclut les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et les organisations EOP autonomes Exchange Online boîtes aux lettres :
 
   - [Stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md) **nommées Standard Preset Security Policy** et Strict **Preset Security Policy**.
-  - [Stratégies anti-programme malveillant](configure-anti-malware-policies.md) nommées Stratégie de sécurité **prédéfinë standard** et **Stratégie de sécurité prédéfinë stricte.**
+  - [Stratégies anti-programme](configure-anti-malware-policies.md) malveillant nommées Stratégie de sécurité **prédéfinë standard** et **Stratégie de sécurité prédéfinë stricte.**
   - [Stratégies anti-hameçonnage EOP](set-up-anti-phishing-policies.md#spoof-settings) nommées Stratégie de sécurité prédéfini **standard** et Stratégie de sécurité prédéfini stricte **(paramètres** d’usurpation).
 
-- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations avec des abonnements Microsoft 365 E5 ou Defender pour Office 365 de modules:
+- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations ayant des abonnements Microsoft 365 E5 ou Defender pour Office 365 de modules:
 
   - Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365 nommés **Stratégie** de sécurité prédéfinë standard et Stratégie de sécurité prédéfinë **stricte,** qui incluent :
 
@@ -80,7 +80,7 @@ Les stratégies de sécurité prédéfines utilisent les stratégies corresponda
     - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Seuils de hameçonnage avancés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Coffre stratégies de liens nommées](set-up-safe-links-policies.md) Stratégie de sécurité prédéfine **standard** et **Stratégie de sécurité prédéfine stricte.**
+  - [Coffre des stratégies de liens nommées](set-up-safe-links-policies.md) Stratégie de sécurité prédéfinfine **standard** et **Stratégie de sécurité prédéfine stricte.**
 
   - [Coffre pièces jointes nommées](set-up-safe-attachments-policies.md) **Standard Preset Security Policy** et Strict **Preset Security Policy**.
 
@@ -90,7 +90,7 @@ Notez que vous pouvez appliquer des protections EOP à différents utilisateurs 
 
 Vous ne pouvez pas modifier les paramètres de stratégie dans les profils de protection. Les **valeurs des** paramètres de stratégie Standard et **Strict** sont décrites dans les [paramètres recommandés](recommended-settings-for-eop-and-office365.md)pour EOP et Microsoft Defender pour Office 365 sécurité.
 
-### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Ordre de priorité pour les stratégies de sécurité prédéfinir et autres stratégies
+### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Ordre de priorité pour les stratégies de sécurité prédéfinir et les autres stratégies
 
 Lorsque plusieurs stratégies sont appliquées à un utilisateur, l’ordre suivant est appliqué de la priorité la plus élevée à la priorité la plus faible :
 
@@ -99,9 +99,9 @@ Lorsque plusieurs stratégies sont appliquées à un utilisateur, l’ordre suiv
 3. Stratégies de sécurité personnalisées
 4. Stratégies de sécurité par défaut
 
-En d’autres termes, les paramètres de la stratégie De **protection** stricte remplacent les paramètres de la stratégie de **protection standard,** qui remplace les paramètres d’une stratégie personnalisée, qui remplace les paramètres de la stratégie par défaut. 
+En d’autres termes, les paramètres de la stratégie De **protection** stricte remplacent les paramètres de la stratégie de **protection standard,** qui remplace les paramètres d’une stratégie personnalisée, qui remplace les paramètres de la stratégie par défaut.
 
-Par exemple, si un paramètre de sécurité existe dans la **protection standard** et qu’un administrateur a activé la **protection Standard** pour un utilisateur, le paramètre de protection **standard** sera appliqué à la place de ce qui est configuré pour ce paramètre dans une stratégie personnalisée ou dans la stratégie par défaut (pour le même utilisateur). Notez que vous pouvez avoir une partie de votre organisation à laquelle vous souhaitez appliquer uniquement la stratégie de protection **standard** ou **stricte** lors de l’application d’une stratégie personnalisée à d’autres utilisateurs de votre organisation pour répondre à des besoins spécifiques.
+Par exemple, si un paramètre de sécurité existe dans la **Protection standard** et qu’un administrateur a activé la **protection Standard** pour un utilisateur, le paramètre de protection **standard** sera appliqué à la place de ce qui est configuré pour ce paramètre dans une stratégie personnalisée ou dans la stratégie par défaut (pour le même utilisateur). Notez que vous pouvez avoir une partie de votre organisation à laquelle vous souhaitez appliquer uniquement la stratégie de protection **standard** ou **stricte** lors de l’application d’une stratégie personnalisée à d’autres utilisateurs de votre organisation pour répondre à des besoins spécifiques.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Affecter des stratégies de sécurité prédéfines aux utilisateurs
 
@@ -112,22 +112,22 @@ Par exemple, si un paramètre de sécurité existe dans la **protection standard
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cette rubrique.
-  - Pour configurer des stratégies de sécurité prédéfinie, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité. 
+  - Pour configurer des stratégies de sécurité prédéfinie, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité. 
   - Pour accéder en lecture seule aux stratégies de sécurité prédéfinis, vous devez être membre du **groupe** de rôles Lecteur global.
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
-  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux _utilisateurs_ les autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux _utilisateurs_ les autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Utiliser le portail Microsoft 365 Defender pour affecter des stratégies de sécurité prédéfines aux utilisateurs
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Templated policies** section \> **Preset Security Policies**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Preset Security Policies** in the **Templated policies** section.
 
 2. Sous **Protection standard ou** Protection **stricte,** cliquez sur **Modifier.**
 
 3. **L’Assistant Appliquer une protection standard** ou Appliquer une **protection** stricte démarre. Sur la page **des protections EOP,** identifiez les destinataires internes à qui les [protections EOP](#policies-in-preset-security-policies) s’appliquent (conditions de destinataire) :
    - **Utilisateurs**
-   - **Groupes**
+   - **Groups**
    - **Domaines**
 
    Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
@@ -150,7 +150,7 @@ Par exemple, si un paramètre de sécurité existe dans la **protection standard
 
 Les étapes de modification de l’attribution de la stratégie de **sécurité Protection standard** ou **Protection** stricte sont les mêmes que lorsque vous avez initialement affecté les stratégies de sécurité prédéfines [aux utilisateurs.](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)
 
-Pour désactiver les stratégies de sécurité **de protection standard** ou stricte tout en conservant  les conditions et les exceptions existantes, faites glisser le basculement vers  ![ Désactivé. ](../../media/scc-toggle-off.png) Pour activer les stratégies, faites  glisser le basculement sur ![ ](../../media/scc-toggle-on.png) Activé.
+Pour désactiver les stratégies de sécurité **de protection standard** ou stricte tout en conservant  les conditions et les exceptions existantes, faites glisser le basculement vers  ![ Désactivé. ](../../media/scc-toggle-off.png) Pour activer les stratégies, faites glisser le **basculement** sur ![ ](../../media/scc-toggle-on.png) Activé.
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 

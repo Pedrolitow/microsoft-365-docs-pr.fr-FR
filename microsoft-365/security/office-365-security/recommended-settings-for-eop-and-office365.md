@@ -16,15 +16,15 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Quelles sont les meilleures pratiques pour Exchange Online Protection (EOP) et Defender pour Office 365 de sécurité ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les extras que vous obtenez si vous utilisez également Defender pour Office 365 ?
+description: Quelles sont les meilleures pratiques pour Exchange Online Protection (EOP) et Defender pour Office 365 de sécurité ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous souhaitez être plus strict ? Quels sont les extras que vous obtenez si vous utilisez également Defender pour Office 365 ?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 72a5491bbad382cc9a22faa64b9e98a4f36893ef
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 23013a2bab538763fd69eb787d7a84904517859b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725839"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258312"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité
 
@@ -51,7 +51,7 @@ Cet article décrit les paramètres par défaut, ainsi que les paramètres stand
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Protection anti-courrier indésirable, anti-programme malveillant et anti-hameçonnage dans EOP
 
-Les fonctionnalités anti-courrier indésirable, anti-programme malveillant et anti-hameçonnage sont des fonctionnalités EOP qui peuvent être configurées par les administrateurs. Nous vous recommandons les configurations Standard ou Strict suivantes.
+Les fonctionnalités anti-courrier indésirable, anti-programme malveillant et anti-hameçonnage sont des fonctionnalités EOP qui peuvent être configurées par les administrateurs. Nous vous recommandons les configurations standard ou stricte suivantes.
 
 ### <a name="eop-anti-spam-policy-settings"></a>Paramètres de stratégie anti-courrier indésirable EOP
 
@@ -63,10 +63,10 @@ Pour créer et configurer des stratégies anti-courrier indésirable, voir Confi
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
-|**Seuil de courrier en bloc & propriétés de courrier indésirable**||||
+|**Seuil de courrier électronique en & propriétés de courrier indésirable**||||
 |**Seuil des courriers électroniques en bloc** <p> _BulkThreshold_|7 |6 |4 |Pour plus d’informations, voir [Niveau de réclamation en bloc (BCL) dans EOP.](bulk-complaint-level-values.md)|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|Ce paramètre est uniquement disponible dans PowerShell.|
-|**Augmenter les paramètres de score** de courrier indésirable|Désactivé|Désactivé|Désactivé|Tous ces paramètres font partie du filtre de courrier indésirable avancé (ASF). Pour plus d’informations, consultez la section paramètres ASF dans la section des [stratégies anti-courrier](#asf-settings-in-anti-spam-policies) indésirable de cet article.|
+|**Augmenter les paramètres du score** de courrier indésirable|Désactivé|Désactivé|Désactivé|Tous ces paramètres font partie du filtre de courrier indésirable avancé (ASF). Pour plus d’informations, consultez la section paramètres ASF dans la section des [stratégies anti-courrier](#asf-settings-in-anti-spam-policies) indésirable de cet article.|
 |**Marquer comme paramètres de** courrier indésirable|Désactivé|Désactivé|Désactivé|La plupart de ces paramètres font partie d’ASF. Pour plus d’informations, consultez la section paramètres ASF dans la section des [stratégies anti-courrier](#asf-settings-in-anti-spam-policies) indésirable de cet article.|
 |**Contient des langues spécifiques** <p> _EnableLanguageBlockList_ <p> _LanguageBlockList_|**Désactivé** <p> `$false` <p> Vide|**Désactivé** <p> `$false` <p> Vide|**Désactivé** <p> `$false` <p> Vide|Nous n’avons aucune recommandation spécifique pour ce paramètre. Vous pouvez bloquer les messages dans des langues spécifiques en fonction des besoins de votre entreprise.|
 |**À partir de ces pays** <p> _EnableRegionBlockList_ <p> _RegionBlockList_|**Désactivé** <p> `$false` <p> Vide|**Désactivé** <p> `$false` <p> Vide|**Désactivé** <p> `$false` <p> Vide|Nous n’avons aucune recommandation spécifique pour ce paramètre. Vous pouvez bloquer les messages provenant de pays spécifiques en fonction des besoins de votre entreprise.|
@@ -74,7 +74,7 @@ Pour créer et configurer des stratégies anti-courrier indésirable, voir Confi
 |**Actions**|||||
 |**Action de** détection du courrier indésirable <p> _SpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |**Action de détection du courrier indésirable** à niveau de confiance élevé <p> _HighConfidenceSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
-|**Action de détection du** hameçonnage <p> _PhishSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
+|**Action de détection du** hameçonnage <p> _PhishSpamAction_|**Mettre en quarantaine le message** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |**Action de détection du hameçonnage à haut** niveau de confiance <p> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |**Action de** détection en bloc <p> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |**Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** <p> _QuarantineRetentionPeriod_|15 jours|30 jours|30 jours||
@@ -85,7 +85,7 @@ Pour créer et configurer des stratégies anti-courrier indésirable, voir Confi
 |**Envoyer des notifications de courrier indésirable à l’utilisateur final tous les (jours)** <p> _EndUserSpamNotificationFrequency_|3 jours|3 jours|3 jours||
 |**Autoriser & liste d'& blocage**|||||
 |Expéditeurs autorisés <p> _AllowedSenders_|Aucun|Aucun|Aucun||
-|Domaines d’expéditeur autorisés <p> _AllowedSenderDomains_|Aucun|Aucun|Aucun|L’ajout de domaines à la liste des expéditeurs autorisés est une idée très mauvaise. Les attaquants pourraient vous envoyer des messages électroniques qui seraient autrement filtrés. <p> Utilisez [](learn-about-spoof-intelligence.md) la veille contre l’usurpation d’adresses et la liste d’adresses ip/bloqués du client pour passer en revue tous les expéditeurs usurpant des adresses de messagerie d’expéditeur dans les domaines de messagerie de votre organisation ou usurpant des adresses de messagerie d’expéditeur dans des domaines externes. [](tenant-allow-block-list.md)|
+|Domaines d’expéditeur autorisés <p> _AllowedSenderDomains_|Aucun|Aucun|Aucun|L’ajout de domaines à la liste des expéditeurs autorisés est une idée très mauvaise. Les attaquants pourraient vous envoyer des messages électroniques qui seraient autrement filtrés. <p> Utilisez [](learn-about-spoof-intelligence.md) la veille contre l’usurpation d’adresses et la liste d’adresses de [blocage/d’usurpation](tenant-allow-block-list.md) d’adresses client pour passer en revue tous les expéditeurs usurpant des adresses de messagerie d’expéditeur dans les domaines de messagerie de votre organisation ou usurpant des adresses de messagerie d’expéditeur dans des domaines externes.|
 |Expéditeurs bloqués <p> _BlockedSenders_|Aucun|Aucun|Aucun||
 |Domaines des expéditeurs bloqués <p> _BlockedSenderDomains_|Aucun|Aucun|Aucun||
 |
@@ -153,7 +153,7 @@ Pour créer et configurer des stratégies anti-programme malveillant, voir Confi
 |---|:---:|:---:|:---:|---|
 |**Paramètres de protection**|||||
 |**Activer le filtre des pièces jointes courantes** <p> _EnableFileFilter_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Ce paramètre met en quarantaine les messages qui contiennent des pièces jointes exécutables en fonction du type de fichier, quel que soit le contenu de la pièce jointe.|
-|**Activer la purge automatique zéro heure pour les programmes malveillants** <p> _ZapEnabled_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
+|**Activer la purge automatique sans heure pour les programmes malveillants** <p> _ZapEnabled_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Notifications des destinataires**|||||
 |**Avertir les destinataires lorsque les messages sont mis en quarantaine en tant que programmes malveillants** <p> _Action_|Non sélectionnée <p> _DeleteMessage_|Non sélectionnée <p> _DeleteMessage_|Non sélectionnée <p> _DeleteMessage_|Si un programme malveillant est détecté dans une pièce jointe, le message est mis en quarantaine et ne peut être libéré que par un administrateur.|
 |**Notifications de l’expéditeur**|||||
@@ -164,12 +164,12 @@ Pour créer et configurer des stratégies anti-programme malveillant, voir Confi
 |**Informer un administrateur des messages non reçus d’expéditeurs externes** <p> _EnableExternalSenderAdminNotifications_ <p> _ExternalSenderAdminAddress_|Non sélectionnée <p> `$false`|Non sélectionnée <p> `$false`|Non sélectionnée <p> `$false`|Nous n’avons aucune recommandation spécifique pour ce paramètre.|
 |**Personnaliser les notifications**||||Nous n’avons aucune recommandation spécifique pour ces paramètres.|
 |**Utiliser un texte de notification personnalisé** <p> _CustomNotifications_|Non sélectionnée <p> `$false`|Non sélectionnée <p> `$false`|Non sélectionnée <p> `$false`||
-|**À partir du nom** <p> _CustomFromName_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
+|**De nom** <p> _CustomFromName_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
 |**Adresse de provenance** <p> _CustomFromAddress_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
 |**Personnaliser les notifications pour les messages provenant d’expéditeurs internes**||||Ces paramètres sont utilisés uniquement si les expéditeurs internes  sont avertis lorsque des **messages** sont mis en quarantaine en tant que programmes malveillants ou si les messages non envoyés provenant d’expéditeurs internes sont sélectionnés.|
 |**Subject** <p> _CustomInternalSubject_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
 |**Message** <p> _CustomInternalBody_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
-|**Personnaliser les notifications pour les messages provenant d’expéditeurs externes**||||Ces paramètres sont utilisés uniquement si les expéditeurs externes sont avertis lorsque des **messages** sont mis en quarantaine en tant que programmes malveillants ou si les messages non envoyés provenant d’expéditeurs externes sont sélectionnés. |
+|**Personnaliser les notifications pour les messages provenant d’expéditeurs externes**||||Ces paramètres sont utilisés uniquement si les expéditeurs externes sont avertis lorsque des **messages** sont mis en quarantaine en tant que programmes malveillants ou si les **messages** non envoyés provenant d’expéditeurs externes sont sélectionnés.|
 |**Subject** <p> _CustomExternalSubject_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
 |**Message** <p> _CustomExternalBody_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
 |
@@ -184,10 +184,10 @@ Pour plus d’informations sur ces paramètres, voir [Paramètres d’usurpation
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
-|**Seuil d’hameçonnage & protection**|||||
+|**Seuil de hameçonnage & protection**|||||
 |**Activer la veille contre l’usurpation d’informations** <p> _EnableSpoofIntelligence_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Actions**|||||
-|**Si le message est détecté comme usurpant une usurpation** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs usurpés qui ont [](learn-about-spoof-intelligence.md) été automatiquement bloqués comme indiqué dans l’aperçu de l’usurpation d’intelligence ou qui ont été bloqués manuellement dans la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)|
+|**Si le message est détecté comme usurpant une usurpation** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs usurpés qui ont [](learn-about-spoof-intelligence.md) été automatiquement bloqués, comme indiqué dans la veille contre l’usurpation d’informations ou bloqués manuellement dans la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)|
 |**Afficher le premier contact conseil de sécurité** <p> _EnableFirstContactSafetyTips_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Pour plus d’informations, [voir First contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
 |**Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation d’adresse** <p> _EnableUnauthenticatedSender_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans Outlook des expéditeurs usurpés non identifiés. Pour plus d’informations, [voir Expéditeur non authentifié.](set-up-anti-phishing-policies.md#unauthenticated-sender)|
 |**Afficher la balise « via »** <p> _EnableViaTag_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM.** <p> Pour plus d’informations, [voir Expéditeur non authentifié.](set-up-anti-phishing-policies.md#unauthenticated-sender)|
@@ -203,13 +203,13 @@ Des avantages supplémentaires en matière de sécurité s’offrent à vous ave
 >
 > - Il n’existe aucune stratégie de Coffre de liens ou de Coffre pièces jointes par défaut qui protège automatiquement tous les destinataires de l’organisation. Pour obtenir les protections, vous devez créer au moins une stratégie Coffre liens et Coffre pièces jointes.
 >
-> - Coffre pièces jointes pour [SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md) et la protection Microsoft Teams et [la](safe-docs.md) protection des documents Coffre ne sont pas dépendantes des stratégies Coffre liens.
+> - [Coffre pièces jointes](mdo-for-spo-odb-and-teams.md) pour SharePoint, OneDrive et la protection Microsoft Teams et [la](safe-docs.md) protection Coffre Documents ne sont pas dépendantes des stratégies Coffre liens.
 
 Si votre abonnement inclut Microsoft Defender pour Office 365 ou si vous avez acheté Defender pour Office 365 en tant que modules, définissez les configurations Standard ou Strict suivantes.
 
 ### <a name="anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Paramètres de stratégie anti-hameçonnage dans Microsoft Defender pour les Office 365
 
-Les clients EOP obtiennent un anti-hameçonnage de base, comme décrit précédemment, mais Defender pour Office 365 inclut davantage de fonctionnalités et de contrôle pour vous aider à prévenir, détecter et corriger les attaques. Pour créer et configurer ces stratégies, voir Configurer des stratégies [anti-hameçonnage](configure-mdo-anti-phishing-policies.md)dans Defender pour Office 365 .
+Les clients EOP obtiennent un anti-hameçonnage de base comme décrit précédemment, mais Defender pour Office 365 inclut davantage de fonctionnalités et de contrôle pour vous aider à prévenir, détecter et corriger les attaques. Pour créer et configurer ces stratégies, voir Configurer des stratégies [anti-hameçonnage](configure-mdo-anti-phishing-policies.md)dans Defender pour Office 365 .
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres avancés dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -226,7 +226,7 @@ Pour plus d’informations sur ce paramètre, voir Seuils d’hameçonnage avanc
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres d’emprunt d’identité dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
-Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d’identité dans les [stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)dans Microsoft Defender pour Office 365 . Pour configurer ces paramètres, voir Configurer des stratégies [anti-hameçonnage](configure-mdo-anti-phishing-policies.md)dans Defender pour Office 365 .
+Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d’identité dans les [stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)dans Microsoft Defender pour Office 365 . Pour configurer ces paramètres, voir [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 <br>
 
@@ -235,17 +235,17 @@ Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d�
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Seuil d’hameçonnage & protection**|||||
-|**Permettre aux utilisateurs de se protéger** (protection des utilisateurs dont l’identité est usurpée)<p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Non sélectionnée <p> `$false` <p> aucune|Sélectionné <p> `$true` <p> \<list of users\>|Sélectionné <p> `$true` <p> \<list of users\>|Nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres cadres supérieurs. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration.|
+|**Permettre aux utilisateurs de se protéger** (protection des utilisateurs dont l’identité est usurpée)<p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Non sélectionnée <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of users\>|Sélectionné <p> `$true` <p> \<list of users\>|Nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres cadres supérieurs. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration.|
 |**Activer les domaines à protéger** (protection de domaine dont l’identité est usurpée)|Non sélectionnée|Sélectionné|Sélectionné||
 |**Inclure les domaines que je possède** <p> _EnableOrganizationDomainsProtection_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
-|**Inclure des domaines personnalisés** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Désactivé <p> `$false` <p> aucune|Sélectionné <p> `$true` <p> \<list of domains\>|Sélectionné <p> `$true` <p> \<list of domains\>|Nous vous recommandons d’ajouter des domaines (domaines d’expéditeur) que vous ne possédez pas, mais avec qui vous interagissez fréquemment.|
+|**Inclure des domaines personnalisés** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Désactivé <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of domains\>|Sélectionné <p> `$true` <p> \<list of domains\>|Nous vous recommandons d’ajouter des domaines (domaines d’expéditeur) que vous ne possédez pas, mais avec qui vous interagissez fréquemment.|
 |**Ajouter des expéditeurs et des domaines de confiance** <p> _ExcludedSenders_ <p> _ExcludedDomains_|Aucun|Aucun|Aucun|En fonction de votre organisation, nous vous recommandons d’ajouter des expéditeurs ou des domaines qui sont identifiés à tort comme des tentatives d’emprunt d’identité.|
 |**Activer l’intelligence des boîtes aux lettres** <p> _EnableMailboxIntelligence_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Activer la veille pour la protection contre l’emprunt d’identité** <p> _EnableMailboxIntelligenceProtection_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Ce paramètre autorise l’action spécifiée pour les détections d’emprunt d’identité par l’intelligence des boîtes aux lettres.|
 |**Actions**|||||
 |**Si le message est détecté comme un utilisateur dont l’identité est usurpée** <p> _TargetedUserProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre le message en quarantaine** <p> `Quarantine`|**Mettre le message en quarantaine** <p> `Quarantine`||
 |**Si le message est détecté comme un domaine dont l’identité est usurpée** <p> _TargetedDomainProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre le message en quarantaine** <p> `Quarantine`|**Mettre le message en quarantaine** <p> `Quarantine`||
-|**Si l’intelligence de boîte aux lettres détecte et usurpe l’identité d’un utilisateur** <p> _MailboxIntelligenceProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`||
+|**Si l’intelligence de boîte aux lettres détecte et usurpe l’identité de l’utilisateur** <p> _MailboxIntelligenceProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`||
 |**Afficher l’emprunt d’identité conseil de sécurité** <p> _EnableSimilarUsersSafetyTips_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Afficher les conseil de sécurité** <p> _EnableSimilarDomainsSafetyTips_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Afficher les caractères inhabituels d’emprunt d’identité conseil de sécurité** <p> _EnableUnusualCharactersSafetyTips_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
@@ -266,10 +266,10 @@ Les paramètres d’usurpation sont liés, mais le paramètre Afficher le premie
 |**Seuil d’hameçonnage & protection**|||||
 |**Activer la veille contre l’usurpation d’informations** <p> _EnableSpoofIntelligence_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Actions**|||||
-|**Si le message est détecté comme usurpant une usurpation** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs usurpés qui ont [](learn-about-spoof-intelligence.md) été automatiquement bloqués comme indiqué dans l’aperçu de l’usurpation d’intelligence ou qui ont été bloqués manuellement dans la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)|
+|**Si le message est détecté comme usurpant une usurpation** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs usurpés qui ont [](learn-about-spoof-intelligence.md) été automatiquement bloqués, comme indiqué dans la veille contre l’usurpation d’informations ou bloqués manuellement dans la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)|
 |**Afficher le premier contact conseil de sécurité** <p> _EnableFirstContactSafetyTips_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Pour plus d’informations, [voir First contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
-|**Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation d’adresse** <p> _EnableUnauthenticatedSender_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans Outlook des expéditeurs usurpés non identifiés. Pour plus d’informations, [voir Expéditeur non authentifié.](set-up-anti-phishing-policies.md#unauthenticated-sender)|
-|**Afficher la balise « via »** <p> _EnableViaTag_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM.** <p> Pour plus d’informations, [voir Expéditeur non authentifié.](set-up-anti-phishing-policies.md#unauthenticated-sender)|
+|**Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation d’adresse** <p> _EnableUnauthenticatedSender_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans Outlook des expéditeurs usurpés non identifiés. Pour plus d’informations, voir Expéditeur non [authentifié.](set-up-anti-phishing-policies.md#unauthenticated-sender)|
+|**Afficher la balise « via »** <p> _EnableViaTag_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM.** <p> Pour plus d’informations, voir Expéditeur non [authentifié.](set-up-anti-phishing-policies.md#unauthenticated-sender)|
 |
 
 ### <a name="safe-attachments-settings"></a>Coffre Paramètres des pièces jointes
@@ -289,7 +289,7 @@ Dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](/powershell/modu
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
-|**Activer les Coffre documents pour les clients Office client** <p> _EnableSafeDocs_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`|Cette fonctionnalité n’est disponible et significative qu’avec Microsoft 365 E5 ou Microsoft 365 E5 Sécurité licences. Pour plus d’informations, [Coffre documents dans Microsoft Defender pour Office 365](safe-docs.md).|
+|**Activer les Coffre documents pour Office clients** <p> _EnableSafeDocs_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`|Cette fonctionnalité est disponible et significative uniquement avec les licences Microsoft 365 E5 ou Microsoft 365 E5 Sécurité licences. Pour plus d’informations, [Coffre documents dans Microsoft Defender pour Office 365](safe-docs.md).|
 |**Autoriser les utilisateurs à cliquer dans le affichage protégé même si Coffre documents ont identifié le fichier comme malveillant** <p> _AllowSafeDocsOpen_|Désactivé <p> `$false`|Désactivé <p> `$false`|Désactivé <p> `$false`|Ce paramètre est lié à Coffre Documents.|
 |
 
@@ -308,14 +308,14 @@ Dans PowerShell, vous utilisez les cmdlets [New-SafeAttachmentPolicy](/powershel
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
-|**Coffre Réponse aux programmes malveillants inconnus pour les pièces jointes** <p> _Activer_ et _action_|**Désactivé** <p> `-Enable $false`|**Bloquer** <p> `-Enable $true` et `-Action Block`|**Bloquer** <p> `-Enable $true` et `-Action Block`|Lorsque le _paramètre Enable_ est $false, la valeur du paramètre _Action_ n’a pas d’importance.|
+|**Coffre Réponse aux programmes malveillants inconnus pour les pièces jointes** <p> _Activer_ et _action_|**Désactivé** <p> `-Enable $false` et `-Action Block`|**Bloquer** <p> `-Enable $true` et `-Action Block`|**Bloquer** <p> `-Enable $true` et `-Action Block`|Lorsque le _paramètre Enable_ est $false, la valeur du paramètre _Action_ n’a pas d’importance.|
 |**Rediriger la pièce jointe avec les pièces jointes détectées** : **activer la redirection** <p> _Redirect_ <p> _RedirectAddress_|Non sélectionné et aucune adresse de messagerie spécifiée. <p> `-Redirect $false` <p> _RedirectAddress_ est vide ( `$null` )|Sélectionné et spécifiez une adresse de messagerie. <p> `$true` <p> une adresse e-mail|Sélectionné et spécifiez une adresse de messagerie. <p> `$true` <p> une adresse e-mail|Rediriger les messages vers un administrateur de sécurité pour révision.|
 |**Appliquer la réponse Coffre détection des pièces jointes si l’analyse ne peut pas se terminer (délai d’Coffre ou erreurs)** <p> _ActionOnError_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |
 
 ### <a name="safe-links-settings"></a>Coffre Paramètres des liens
 
-Coffre Les liens dans Defender pour Office 365 incluent des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans les stratégies actives de liens Coffre, ainsi que des paramètres spécifiques à chaque stratégie de liens Coffre. Pour plus d’informations, [voir Coffre liens dans Defender pour Office 365](safe-links.md).
+Coffre Les liens dans Defender pour Office 365 incluent des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans les stratégies actives de liens Coffre et des paramètres spécifiques à chaque stratégie de liens Coffre. Pour plus d’informations, [voir Coffre liens dans Defender pour Office 365](safe-links.md).
 
 #### <a name="global-settings-for-safe-links"></a>Paramètres globaux des liens Coffre web
 
@@ -330,7 +330,7 @@ Dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](/powershell/modu
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Bloquer les URL suivantes** <p> _ExcludedUrls_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`|Nous n’avons aucune recommandation spécifique pour ce paramètre. <p> Pour plus d’informations, consultez la liste « Bloquer les URL suivantes » [pour Coffre liens.](safe-links.md#block-the-following-urls-list-for-safe-links)
-|**Utiliser des liens Coffre dans Office 365 applications** <p> _EnableSafeLinksForO365Clients_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Utilisez Coffre dans les applications de bureau et mobiles (iOS et Android) Office 365 pris en charge. Pour plus d’informations, [voir Coffre liens pour les Office 365 applications.](safe-links.md#safe-links-settings-for-office-365-apps)|
+|**Utiliser des liens Coffre dans Office 365 applications** <p> _EnableSafeLinksForO365Clients_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Utilisez Coffre dans les applications de bureau et mobiles (iOS et Android) Office 365 pris en charge. Pour plus d’informations, [Coffre paramètres de liens](safe-links.md#safe-links-settings-for-office-365-apps)pour Office 365 applications.|
 |**Ne pas suivre le moment où les utilisateurs cliquent sur les liens protégés Office 365 applications** <p> _TrackClicks_|Activé <p> `$false`|Désactivé <p> `$true`|Désactivé <p> `$true`|La définition de ce paramètre (paramètre _TrackClicks_ sur ) suit les clics de l’utilisateur `$true` dans les applications Office 365 pris en charge.|
 |**Ne pas laisser les utilisateurs accéder à l’URL d’origine dans Office 365 applications** <p> _AllowClickThrough_|Activé <p> `$false`|Activé <p> `$false`|Activé <p> `$false`|L’turning on this setting (setting _AllowClickThrough_ to `$false` ) prevents click through to the original URL in supported Office 365 apps.|
 |
@@ -357,7 +357,7 @@ Dans PowerShell, vous utilisez les cmdlets [New-SafeLinksPolicy](/powershell/mod
 |**Attendre la fin de l’analyse de l’URL avant de remettre le message** <p> _DeliverMessageAfterScan_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Appliquer Coffre liens vers les messages électroniques envoyés au sein de l’organisation** <p> _EnableForInternalSenders_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Ne pas suivre les clics de l’utilisateur** <p> _DoNotTrackUserClicks_|Non sélectionnée <p> `$false`|Non sélectionnée <p> `$false`|Non sélectionnée <p> `$false`|La dés off off this setting (setting _DoNotTrackUserClicks_ to `$false` ) suit les clics des utilisateurs.|
-|**Ne pas laisser les utilisateurs cliquer jusqu’à l’URL d’origine** <p> _DoNotAllowClickThrough_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|L’turning on this setting (setting _DoNotAllowClickThrough_ to `$true` ) prevents click through to the original URL.|
+|**Ne pas laisser les utilisateurs accéder à l’URL d’origine** <p> _DoNotAllowClickThrough_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|L’turning on this setting (setting _DoNotAllowClickThrough_ to `$true` ) prevents click through to the original URL.|
 |**Afficher la marque de l’organisation sur les pages de notification et d’avertissement** <p> _EnableOrganizationBranding_|Non sélectionnée <p> `$false`|Non sélectionnée <p> `$false`|Non sélectionnée <p> `$false`|Nous n’avons aucune recommandation spécifique pour ce paramètre. <p> Avant d’activer ce paramètre, vous devez suivre les instructions dans Personnaliser le thème [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) pour que votre organisation télécharge le logo de votre entreprise.|
 |**Ne pas réécrire les URL suivantes** <p> _DoNotRewriteUrls_|Non sélectionnée <p> blank|Non sélectionnée <p> blank|Non sélectionnée <p> blank|Nous n’avons aucune recommandation spécifique pour ce paramètre. Pour plus d’informations, voir [« Ne pas réécrire](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)les URL suivantes » dans Coffre de liens.|
 |**Notification**|||||
@@ -366,10 +366,10 @@ Dans PowerShell, vous utilisez les cmdlets [New-SafeLinksPolicy](/powershell/mod
 
 ## <a name="related-articles"></a>Articles connexes
 
-- Vous recherchez les meilleures pratiques pour Exchange règles de flux de **messagerie (également appelées règles de transport)**? Consultez [les meilleures pratiques pour configurer les règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Vous recherchez les meilleures pratiques pour Exchange de flux de **messagerie (également appelées règles de transport)**? Consultez [les meilleures pratiques pour configurer les règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Les administrateurs et les utilisateurs peuvent envoyer des faux positifs (e-mail de qualité marqué comme faux) et des faux négatifs (courriers électroniques erronés autorisés) à Microsoft pour analyse. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - Utilisez ces liens pour  plus d’informations sur la configuration de votre [service EOP](/exchange/standalone-eop/set-up-your-eop-service)et la **configuration** de Microsoft Defender [pour Office 365](defender-for-office-365.md). N’oubliez pas les instructions utiles dans « Protéger contre les menaces[Office 365](protect-against-threats.md)».
 
-- Les lignes de base de sécurité pour **Windows** sont disponibles ici : Où puis-je obtenir les lignes de base de sécurité [?](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) pour les options GPO/sur site, et utiliser les lignes de base de sécurité pour configurer des appareils Windows 10 dans [Intune](/intune/protect/security-baselines) pour la sécurité basée sur Intune. Enfin, une comparaison entre les lignes de base de sécurité microsoft Defender pour point de terminaison et Microsoft Intune est disponible dans Comparez Microsoft Defender pour point de terminaison et les lignes de base de sécurité [Windows Intune.](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)
+- Les lignes de base de sécurité pour **Windows** sont disponibles ici : Où puis-je obtenir les lignes de base de sécurité [?](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) pour les options GPO/sur site, et utiliser les lignes de base de sécurité pour configurer des appareils Windows 10 dans [Intune](/intune/protect/security-baselines) pour la sécurité basée sur Intune. Enfin, une comparaison entre les lignes de base de sécurité microsoft Defender pour point de terminaison et Microsoft Intune est disponible dans Comparer microsoft Defender pour le point de terminaison et les lignes de base de sécurité [Windows Intune.](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)

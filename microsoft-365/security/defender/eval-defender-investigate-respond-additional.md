@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: aaf30aa5f598fffc5f8f53fc92fef5571b3c851b0bd9e48ef3ca8b60ad9e5e43
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 17b850cb26e9743afc807e3d72e3067eec2c7bd1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863276"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256893"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Essayer Microsoft 365 Defender fonctionnalités de réponse aux incidents dans un environnement pilote
 
@@ -68,7 +68,7 @@ Pour plus d’informations, voir [Hiérarchiser les incidents.](incident-queue.m
 
 ## <a name="manage-incidents"></a>Gérer les incidents
 
-Vous pouvez gérer les incidents à partir du volet Gérer **les incidents** pour un incident. Voici un exemple.
+Vous pouvez gérer les incidents à partir du **volet Gérer les incidents** pour un incident. Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Exemple du volet Gérer les incidents d’un incident":::
 
@@ -320,4 +320,4 @@ Consultez [Obtenir une formation spécialisée sur la recherche avancée](advanc
 
 ### <a name="navigation-you-may-need"></a>Navigation dont vous aurez peut-être besoin
 
-[Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement](eval-create-eval-environment.md)
+[Créer l’Microsoft 365 Defender d’évaluation de la sécurité](eval-create-eval-environment.md)

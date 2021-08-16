@@ -18,16 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test léger pour les tests Microsoft 365 entreprise.
-ms.openlocfilehash: 2745d6a94262a45972c95d47dd10a464e76f4948ddb82a0ab01b084bd97786c7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a43616d538e21bf906fae82797c2835b0593b23c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859014"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256850"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuration de base légère
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
+*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
 
 Cet article explique comment créer un environnement simplifié avec un abonnement Microsoft 365 E5 et un ordinateur exécutant Windows 10 Entreprise.
 
@@ -100,29 +100,17 @@ $commonPW="<common user account password>"
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password=$commonPW
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
 $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
 $LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
 $LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+for($i=2;$i -le 4; $i++) {
+    $userUPN= "user$($i)@$($orgName).onmicrosoft.com"
+    New-AzureADUser -DisplayName "User $($i)" -GivenName User -SurName $i -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user$($i)"
+    $userObjectID = (Get-AzureADUser -SearchString $userupn).ObjectID
+    Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
+}
 ```
 > [!NOTE]
 > L’utilisation ici d’un mot de passe courant est destinée à l’automatisation et à la simplification de la configuration pour un environnement de test. Bien évidemment, cela est hautement déconseillé pour les abonnements de production. 
@@ -157,7 +145,7 @@ Si vous n’avez pas encore enregistré ces valeurs, enregistrez-les maintenant 
    
 ### <a name="using-an-office-365-test-environment"></a>Utilisation d’un environnement de test Office 365
 
-Si vous n’avez besoin Office 365 environnement de test, vous n’avez pas besoin de lire le reste de cet article.
+Si vous n’avez besoin que d Office 365 de test, vous n’avez pas besoin de lire le reste de cet article.
 
 Pour obtenir des guides de laboratoire de test supplémentaires qui s’appliquent à Office 365 et Microsoft 365, voir Microsoft 365 guides de laboratoire de test pour [entreprise.](m365-enterprise-test-lab-guides.md)
   
@@ -181,7 +169,7 @@ Tout d’abord, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attr
 
 7. Dans la Centre d’administration Microsoft 365, **sélectionnez Utilisateurs > utilisateurs actifs.**
 
-8. Dans **les utilisateurs** actifs, sélectionnez votre compte d’administrateur.
+8. Dans **les utilisateurs actifs,** sélectionnez votre compte d’administrateur.
 
 9. Sélectionnez **licences et applications.**
 
@@ -199,7 +187,7 @@ Votre environnement de test comporte maintenant :
 - Un abonnement d’évaluation de Microsoft 365 E5.
 - Tous vos comptes d’utilisateur appropriés (l’administrateur général ou tous les cinq comptes d’utilisateur) sont activés pour utiliser Microsoft 365 E5.
     
-Votre configuration résultante, qui ajoute des Microsoft 365 E5, ressemble à ceci :
+Votre configuration résultante, qui ajoute des Microsoft 365 E5, se ressemble à ceci :
   
 ![Phase 3 de l’environnement de test Microsoft 365 Entreprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   

@@ -1,6 +1,6 @@
 ---
-title: Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré
-description: Exécutez le script de détection sur un appareil nouvellement intégré pour vérifier qu’il est correctement intégré au service Microsoft Defender for Endpoint.
+title: Exécuter un test de détection après avoir ajouté un appareil à Microsoft Defender pour l’appareil Endpoint
+description: Exécutez le script de détection sur un appareil récemment ajouté au service Microsoft Defender for Endpoint pour vérifier qu’il est correctement intégré
 keywords: test de détection, détection, powershell, script, vérifier, intégration, microsoft defender pour l’intégration de point de terminaison, clients, serveurs, test
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 82f34d345663df77c7b713f06b0d7b9760c86e1f374a033b5386bfdbdb0fcc41
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ae3f6cfbdf1452b47f1bd91029c6a481eff5761
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256912"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré 
 
@@ -41,6 +41,11 @@ ms.locfileid: "53867882"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+L’intégration d’appareils est la méthode d’ajout d’appareils au service Microsoft Defender for Endpoint. Il permet aux appareils de signaler des signaux au service.  
+
+Vérifier qu’un appareil a été correctement ajouté au service est une étape importante dans l’ensemble du processus de déploiement. 
+
+## <a name="verify-onboarding-using-a-detection-test"></a>Vérifier l’intégration à l’aide d’un test de détection
 Exécutez le script PowerShell suivant sur un appareil nouvellement intégré pour vérifier qu’il est correctement signalé au service Defender for Endpoint.
 
 1. Créez un dossier : « C:\test-MDATP-test ».
@@ -60,7 +65,7 @@ Exécutez le script PowerShell suivant sur un appareil nouvellement intégré po
 
 La fenêtre d’invite de commandes se ferme automatiquement. Si elle réussit, le test de détection est marqué comme terminé et une nouvelle alerte s’affiche dans le portail pour l’appareil intégré dans environ 10 minutes.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

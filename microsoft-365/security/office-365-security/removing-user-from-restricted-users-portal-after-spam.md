@@ -20,12 +20,12 @@ description: Les administrateurs peuvent apprendre à supprimer des utilisateurs
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 924db948103a4d3b45c499f433961762a45931af
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b06cf477ab8d713e0684c0d62567199c6c57cb32
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082851"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258307"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Supprimer les utilisateurs bloqués du portail Utilisateurs restreints dans Microsoft 365
 
@@ -83,7 +83,7 @@ Les administrateurs peuvent supprimer des utilisateurs de la page Utilisateurs r
 6. Cliquez sur **Oui** pour confirmer la modification.
 
    > [!NOTE]
-   > La suppression de toutes les restrictions de l’utilisateur peut prendre jusqu’à 24 heures.
+   > La suppression de toutes les restrictions de l’utilisateur peut prendre jusqu’à 1heure.
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Vérifier les paramètres d’alerte pour les utilisateurs restreints
 

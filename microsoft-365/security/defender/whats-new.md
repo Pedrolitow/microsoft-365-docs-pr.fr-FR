@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bed151d87fa648034a1c0535bc7e01fea8c36e17
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: ca008206e30b6e7d13638379322238d3bb7b79d6
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726452"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256655"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -38,6 +38,9 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copia
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+## <a name="august-2021"></a>Août 2021
+- (Aperçu) Microsoft Defender pour les Office 365 disponibles dans le recherche avancée
+<br>Les nouvelles colonnes des tables de courrier électronique peuvent fournir plus d’informations sur les menaces basées sur le courrier électronique pour des examens plus approfondis à l’aide de la recherche avancée. Vous pouvez désormais inclure la colonne dans `AuthenticationDetails` [EmailEvents,](./advanced-hunting-emailevents-table.md) `FileSize` [dans EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)et dans les `ThreatTypes` tables `DetectionMethods` [EmailPostDeliveryEvents.](./advanced-hunting-emailpostdeliveryevents-table.md) 
 
 ## <a name="july-2021"></a>Juillet 2021
 - [catalogue Professional services de transport](https://sip.security.microsoft.com/interoperability/professional_services)<br>Améliorer les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme avec les connexions partenaires pris en charge.
@@ -57,19 +60,19 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="march-2021"></a>Mars 2021
 - [Table CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Trouvez des informations sur les événements dans différents services et applications cloud couverts par Microsoft Cloud App Security. Ce tableau inclut également des informations précédemment disponibles dans `AppFileEvents` .
-## <a name="february-2021"></a>Février 2021
-- (Aperçu) Le centre [de sécurité Microsoft 365 https://security.microsoft.com) amélioré (est](https://security.microsoft.com) désormais disponible en prévisualisation publique). Cette nouvelle expérience place Defender pour Point de terminaison et Defender pour Office 365 au centre. [Découvrez les modifications](./overview-security-center.md).
+## <a name="february-2021"></a>Février 2021
+- (Aperçu) Le portail [Microsoft 365 Defender amélioré https://security.microsoft.com) (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience place Defender pour Point de terminaison et Defender pour Office 365 au centre. [Découvrez les modifications](./overview-security-center.md).
 
-## <a name="september-2020"></a>Septembre 2020
+## <a name="september-2020"></a>Septembre 2020
 - [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Rechercher les événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce [tableau de schéma de](advanced-hunting-overview.md) recherche avancé couvre une plage d’événements liés à l’identité et d’événements système sur le contrôleur de domaine.
 - [Fonction AssignedIPAddresses()](advanced-hunting-assignedipaddresses-function.md) <br> Utilisez cette fonction dans vos requêtes de recherche avancées pour obtenir rapidement les dernières adresses IP attribuées à un appareil ou les adresses IP les plus récentes à partir d’une heure spécifique.
 
-## <a name="july-2020"></a>Juillet 2020
+## <a name="july-2020"></a>Juillet 2020
 - [Fonction FileProfile()](advanced-hunting-fileprofile-function.md) <br> Utilisez cette fonction dans vos requêtes de recherche avancées pour enrichir les résultats avec des informations complètes sur les fichiers.
 - [Tables d’identité et d’application](advanced-hunting-schema-tables.md)<br> Obtenez une visibilité sur les événements d’authentification, les requêtes Active Directory et l’activité liée aux applications avec les tables [IdentityLogonEvents,](advanced-hunting-identitylogonevents-table.md) [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)et [AppFileEvents](advanced-hunting-appfileevents-table.md) dans le schéma de recherche avancé.
 - [Accédez à la recherche](advanced-hunting-go-hunt.md)<br> Faites rapidement pivoter de l’investigation d’un incident à l’inspection d’un événement spécifique, d’un utilisateur, d’un appareil ou d’autres types d’entités sur le chasse avancée.
 
-## <a name="june-2020"></a>Juin 2020
+## <a name="june-2020"></a>Juin 2020
 - Flux Twitter <br> Obtenez les dernières recherches sur la sécurité, l’intelligence des menaces, les actualités sur les produits, etc., directement dans le tableau de bord.
 - [Table de schéma EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporez des informations sur les actions de post-remise prises sur les messages électroniques dans vos requêtes de recherche avancées.
 - [Inspecter les enregistrements dans le recherche avancée](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Examinez rapidement les enregistrements dans les résultats de votre requête avec le nouveau panneau d’informations.
@@ -77,7 +80,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="may-2020"></a>Mai 2020
 - [Détections personnalisées](custom-detections-overview.md) <br> Utilisez des requêtes de repérage avancé pour créer des règles de détection personnalisées qui surveillent automatiquement les événements de sécurité et les états système et y répondent.
 
-## <a name="february-2020"></a>Février 2020
+## <a name="february-2020"></a>Février 2020
 - [Incidents](incidents-overview.md) <br> Connaissez exactement l’endroit où une attaque a commencé et d’autres détails pour vous aider à voir l’étendue de l’attaque.
 - [Examen et réponse automatisés](m365d-autoir.md) <br> AIR permet à l’équipe en charge des opérations de sécurité d’augmenter considérablement la capacité de votre organisation à gérer les alertes et incidents de sécurité.
 - [Améliorations avancées du chasse](advanced-hunting-overview.md) <br> Recherchez de manière proactive les menaces dans l’espace de travail moderne avec kusto query Language et un schéma optimisé pour la sécurité.
