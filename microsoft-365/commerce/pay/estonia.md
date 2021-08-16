@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b1b7d37a00a680c9f483bbe280336581fadae796
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: adb3283d81241ad0fc4a544044153554511fc40bb88acb7a52ff4e29b5cc0b45
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535565"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852486"
 ---
 # <a name="payment-information-for-estonia"></a>Informations de paiement pour l’Estonie
 

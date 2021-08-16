@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9784b4768b346ec9c6614a000f4cfc92ecd4f98a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: badd29f758691e253544c7816408f93fa222f3d0dcc87d2a891bba7c611a8846
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863618"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Exemples de stratégies de contrôle d’appareil pour Intune
 
@@ -424,6 +424,6 @@ L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID d
 </plist>
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Vue d’ensemble du contrôle d’appareil pour macOS](mac-device-control-overview.md)

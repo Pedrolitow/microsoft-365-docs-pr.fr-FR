@@ -1,6 +1,6 @@
 ---
 title: Résoudre des problèmes de performance
-description: Résoudre les problèmes d’utilisation élevée du processeur lié au service de protection en temps réel dans Microsoft Defender pour Endpoint.
+description: Résoudre les problèmes d’utilisation élevée de l’UC liée au service de protection en temps réel dans Microsoft Defender pour Endpoint.
 keywords: résolution des problèmes, performances, utilisation élevée du processeur, utilisation élevée du processeur, erreur, correctif, mise à jour de conformité, oms, surveiller, rapport, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 146cda79ef70500ccc016f5064d1b1847b69b6ff
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d760a122527c3d5c9578188043ec2fdc56c5840b457a2f177263bfb9fcc4ad93
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889416"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Résoudre les problèmes de performances liés à la protection en temps réel
 
@@ -183,7 +183,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
 6. Sélectionnez **Ajouter des profils...** et accédez au chemin d’accès du `MDAV.wprp` fichier.
 
-7. Après cela, vous devriez voir un nouveau profil sous mesures *personnalisées nommées* Analyse du point de terminaison *Microsoft Defender* en dessous.
+7. Après cela, vous devriez voir un nouveau profil sous Mesures *personnalisées nommées* Analyse du point de terminaison *Microsoft Defender* en dessous.
 
     ![dans le fichier](images/wpr-infile.png)
 
@@ -193,14 +193,14 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
 8. Pour utiliser le profil d’analyse détaillée de la mesure personnalisée Microsoft Defender pour point de terminaison dans l’interface utilisateur WPR :
 
-    1. Assurez-vous qu’aucun profil n’est sélectionné dans les groupes *Tri de premier* niveau, Analyse *des* ressources et *Analyse de* scénario.
-    2. Sélectionnez **mesures personnalisées.**
+    1. Assurez-vous qu’aucun profil n’est sélectionné dans les groupes *de tri* de premier niveau, Analyse *des* ressources et *Analyse de* scénario.
+    2. Sélectionnez **mesures personnalisées**.
     3. Sélectionnez **Microsoft Defender pour l’analyse des points de terminaison.**
-    4. Sélectionnez **Détaillé sous** *niveau* Détails.
+    4. Sélectionnez **Détaillé sous** *Niveau* détail.
     5. Sélectionnez **Fichier ou** **Mémoire en** mode Journalisation.
 
     > [!IMPORTANT]
-    > Vous devez sélectionner *Fichier* pour utiliser le mode de journalisation des fichiers si le problème de performances peut être reproduit directement par l’utilisateur. La plupart des problèmes relèvent de cette catégorie. Toutefois, si l’utilisateur ne peut pas reproduire directement le problème mais  peut facilement le remarquer une fois le problème se produit, il doit sélectionner Mémoire pour utiliser le mode de journalisation de la mémoire. Cela permet de s’assurer que le journal de suivi n’est pas excessivement insérable en raison du temps de longue durée.
+    > Vous devez sélectionner *Fichier* pour utiliser le mode de journalisation des fichiers si le problème de performances peut être reproduit directement par l’utilisateur. La plupart des problèmes relèvent de cette catégorie. Toutefois, si l’utilisateur ne peut pas reproduire directement le problème mais  qu’il peut facilement le remarquer une fois le problème se produit, l’utilisateur doit sélectionner Mémoire pour utiliser le mode de journalisation de la mémoire. Cela permet de s’assurer que le journal de suivi n’est pas excessivement insérable en raison du temps de longue durée.
 
 9. Vous êtes maintenant prêt à collecter des données. Quittez toutes les applications qui ne sont pas pertinentes pour reproduire le problème de performances. Vous pouvez sélectionner **les options Masquer pour** que l’espace occupé par la fenêtre WPR reste petit.
 

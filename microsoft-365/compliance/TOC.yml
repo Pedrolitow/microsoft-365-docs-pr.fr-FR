@@ -251,7 +251,7 @@
               href: endpoint-dlp-learn-about.md
             - name: En savoir plus sur la stratégie de protection par défaut contre la perte de données dans Microsoft Teams (préviersion)
               href: dlp-teams-default-policy.md
-            - name: En savoir plus sur le scanneur local de protection contre la perte de données Microsoft 365 (préversion)
+            - name: 'En savoir plus sur le scanner local de prévention des pertes de données Microsoft 365 '
               href: dlp-on-premises-scanner-learn.md
             - name: En savoir plus sur l’extension de la conformité Microsoft.
               href: dlp-chrome-learn-about.md
@@ -269,7 +269,7 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: 'Création, test et réglage d’une stratégie DLP'
               href: create-test-tune-dlp-policy.md
-            - name: Prise en main du scanner local de protection contre la perte de données Microsoft 365 (préversion)
+            - name: Prise en main du scanner local de protection contre la perte de données Microsoft 365
               href: dlp-on-premises-scanner-get-started.md
             - name: Prise en main des points de terminaison de protection contre la perte de données
               href: endpoint-dlp-getting-started.md
@@ -299,7 +299,7 @@
               href: dlp-microsoft-teams.md
             - name: Utilisation de la protection contre la perte de données de point de terminaison
               href: endpoint-dlp-using.md
-            - name: Utilisation du scanner local de protection contre la perte de données Microsoft 365 (préversion)
+            - name: Utiliser le scanner local de prévention des pertes de données Microsoft 365
               href: dlp-on-premises-scanner-use.md
             - name: Utilisation des notifications et des conseils de stratégie dans les stratégies DLP
               href: use-notifications-and-policy-tips.md
@@ -425,7 +425,7 @@
               href: archive-reuterseikon-data.md
             - name: Reuters FX
               href: archive-reutersfx-data.md
-            - name: RingCentral (aperçu)
+            - name: RingCentral
               href: archive-ringcentral-data.md
             - name: Salesforce Chatter
               href: archive-salesforcechatter-data.md
@@ -465,6 +465,8 @@
               href: archive-enterprise-number-data.md
             - name: Archiveur de réseau vocal et SMS O2 Telefonica
               href: archive-o2-network-data.md
+            - name: Archiveur réseau de Lars (préversion)
+              href: archive-rogers-network-archiver-data.md
             - name: Archiveur de signal
               href: archive-signal-archiver-data.md
             - name: Archiveur de télégramme
@@ -505,6 +507,8 @@
               href: archive-17a-4-refinitiv-messenger-data.md
             - name: ServiceNow DataParser
               href: archive-17a-4-servicenow-data.md
+            - name: DataParser Skype Entreprise Server (préversion)
+              href: archive-17a-4-skype-for-business-server-data.md
             - name: Slack DataParser
               href: archive-17a-4-slack-data.md
             - name: SQL DataParser
@@ -982,6 +986,10 @@
       href: privacy-management.md
     - name: Prise en main de la gestion des enregistrements
       href: privacy-management-setup.md
+    - name: Configurer les autorisations utilisateur dans la gestion de la confidentialité
+      href: privacy-management-permissions.md
+    - name: Gestion des paramètres de confidentialité
+      href: privacy-management-settings.md
     - name: Rechercher et visualiser des données personnelles dans la gestion de la confidentialité
       href: privacy-management-data-profile.md
     - name: Créer et gérer des stratégies dans la gestion de la confidentialité

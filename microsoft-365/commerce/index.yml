@@ -15,12 +15,12 @@ metadata:
   ms.date: 02/27/2020
   localization_priority: Normal
   search.appverid: MET150
-  ms.openlocfilehash: ecf809c3fe771e38b6edc758d8f2654c0cb89ca6
-  ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+  ms.openlocfilehash: 63513a75eea8357cd631c9ccf401e4f05d814e1709c1f8f6660a3c51b12c54d4
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 06/10/2021
-  ms.locfileid: "52888336"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53852546"
 landingContent:
 - title: Gestion des factures et des paiements
   linkLists:

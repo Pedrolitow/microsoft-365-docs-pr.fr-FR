@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: En savoir plus sur les listes Microsoft. Avec Listes Microsoft, vous pouvez suivre les détails des clients, tels que le type de client, l’avancement des commandes et l’avancement des commandes.
-ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3f427e32bf0b8ce6933eedd56bb3fac8e7e5d2ae3da667f8c7e8d5d95c00931f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245191"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900582"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>Utiliser les listes Microsoft pour suivre les informations professionnelles
 
@@ -63,7 +63,7 @@ Mettez en forme une colonne pour mettre en évidence les détails qu’elle int 
 
 Vous pouvez hiérarchiser une liste de commandes de différentes manières :
 
-- Pour trier par échéance, sélectionnez l’ordre d’accomplir par colonne, puis sélectionnez Ancien à Nouveau.
+- Pour trier par échéance, sélectionnez l’ordre d’accomplir par colonne, puis sélectionnez Plus ancien à Plus nouveau.
 - Pour grouper les commandes par client, sélectionnez la colonne Type de client, puis grouper par type de client.
 
 ### <a name="update-an-items-status"></a>Mettre à jour l’état d’un élément
@@ -72,6 +72,6 @@ Vous pouvez suivre la progression instantanément :
 
 - Double-cliquez sur un élément pour l’ouvrir et mettez à jour la progression de la commande.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Créer une liste à partir de l’application Listes](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)

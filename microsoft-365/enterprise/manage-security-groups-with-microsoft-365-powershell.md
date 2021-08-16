@@ -17,18 +17,18 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: Découvrez comment utiliser PowerShell pour gérer les groupes de sécurité.
-ms.openlocfilehash: 64a02a1472fdeb0d61cfb4f380cbe61dd7b557b6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fbefc5d483c327daa1082debd8ca504bc8df36e52dd49a0c3ad50ee356e45e48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909501"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878884"
 ---
 # <a name="manage-security-groups-with-powershell"></a>Gérer les groupes de sécurité avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative au Centre d’administration Microsoft 365 pour gérer les groupes de sécurité. 
+Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative à l’Centre d’administration Microsoft 365 pour gérer les groupes de sécurité. 
 
 Cet article décrit la liste, la création, la modification des paramètres et la suppression de groupes de sécurité. 
 
@@ -36,7 +36,7 @@ Lorsqu’un bloc de commandes dans cet article nécessite que vous spécifiant d
 
 1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes ou dans l’environnement de script intégré à PowerShell (ISE).
 2. Remplissez les valeurs des variables et supprimez les caractères « < » et « > ».
-3. Exécutez les commandes dans la fenêtre PowerShell ou dans PowerShell ISE.
+3. Exécutez les commandes dans la fenêtre PowerShell ou powerShell ISE.
 
 Voir [Gérer l’appartenance à un groupe de](maintain-group-membership-with-microsoft-365-powershell.md) sécurité pour gérer l’appartenance au groupe avec PowerShell.
 
@@ -116,7 +116,7 @@ $groupName="<display name of the group>"
 Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -OwnerId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectId
 ```
 
-Utilisez ces commandes pour supprimer un compte d’utilisateur par **son** nom d’affichage pour les propriétaires actuels d’un groupe de sécurité.
+Utilisez ces commandes pour supprimer un compte d’utilisateur par **son** nom complet aux propriétaires actuels d’un groupe de sécurité.
 
 ```powershell
 $userName="<Display name of the user account to remove>"

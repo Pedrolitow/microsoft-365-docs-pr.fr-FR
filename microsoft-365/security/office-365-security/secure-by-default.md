@@ -17,12 +17,12 @@ ms.collection:
 description: En savoir plus sur le paramètre sécurisé par défaut dans Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 0988e8f69c6459ece80df718f74940b1bb0e6c1cd7a62c98e02b3d4bb53f1c4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56967347"
 ---
 # <a name="secure-by-default-in-office-365"></a>Sécurisé par défaut dans Office 365
 

@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment supprimer des utilisateurs dans Microsoft 365 entreprise.
-ms.openlocfilehash: 8b2f0db242197aecb04df2261caac3688ad4f1b2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment supprimer des utilisateurs Microsoft 365 entreprise.
+ms.openlocfilehash: 2f0d470bc7855a5f3a57dd431fe11aac1525475710721585771f1959853ba50f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900595"
 ---
 # <a name="delete-a-user"></a>Supprimer un utilisateur
 
@@ -45,7 +45,7 @@ Lorsqu’un employé quitte l’entreprise, vous devez le supprimer de Microsoft
 1. Cet utilisateur a maintenant 30 jours pour déplacer les fichiers vers un nouvel emplacement.
 1. Cochez la case pour accorder à un autre utilisateur l’accès à la messagerie de l’ancien employé, puis sélectionnez Sélectionner un utilisateur **et définir les options de courrier électronique.**
 1. Choisissez l’utilisateur, puis sélectionnez **Suivant.**
-1. Si vous le souhaitez, vous pouvez créer un nom complet qui indique que la boîte aux lettres appartient à un ancien employé, puis sélectionner **Suivant**.
+1. Si vous le souhaitez, vous pouvez créer un nom d’affichage qui indique que la boîte aux lettres appartient à un ancien employé, puis sélectionner **Suivant**.
 1. Activer les réponses automatiques et modifier le texte de réponse si vous le souhaitez.
 1. Choisissez à qui envoyer des réponses automatiques, des personnes à l’intérieur ou à l’extérieur de votre entreprise et si la même réponse est envoyé aux personnes extérieures à votre société, puis sélectionnez **Suivant**.
 1. Pour supprimer les alias de messagerie associés, **sélectionnez X** en côté de leurs alias.

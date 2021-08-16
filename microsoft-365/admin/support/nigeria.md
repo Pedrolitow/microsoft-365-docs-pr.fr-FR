@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bc500ff4418787648ee213d6f0f28bdda194e2ca
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 576c13f09cf4e215f0df0cfde6b745190b5aaaf930b662a8bb9b57363a26c546
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831862"
 ---
 # <a name="contact-support-for-nigeria"></a>Contacter le support pour le Nigeria
 
@@ -37,6 +37,6 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Frais d’appel local applicables

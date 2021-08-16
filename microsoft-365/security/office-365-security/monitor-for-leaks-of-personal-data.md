@@ -19,12 +19,12 @@ search.appverid:
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 05d31ac36fbdc687c60ec3c03efac9be43da9c39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: e0d5803560ea965e222669027be30860d8a17328b2d097705dabe9bb88e5c42c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878483"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56967395"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -58,7 +58,7 @@ Vous pouvez utiliser les rapports DLP pour :
 
 En outre, vous pouvez utiliser les rapports DLP pour affiner vos stratégies DLP lorsque vous les exécutez en mode test.
 
-Les rapports DLP se trouvent dans le Centre de conformité Microsoft 365. Accédez à la section **Rapports** \> **Données de l’organisation** pour rechercher les rapports sur les **Correspondances de la stratégie DLP**, **Incidents DLP** et les **Faux positifs et remplacements DLP**.
+Les rapports DLP sont dans le Centre de conformité Microsoft 365. Accédez à la section **Rapports**\>**Données de l’organisation** pour rechercher les rapports sur les **Correspondances de la stratégie DLP**, **Incidents DLP** et les **Faux positifs et remplacements DLP**.
 
 Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](../../compliance/view-the-dlp-reports.md).
 

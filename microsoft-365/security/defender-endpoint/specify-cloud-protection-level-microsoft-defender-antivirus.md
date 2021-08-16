@@ -16,19 +16,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: fb4dd3114c411385f1a38cf7b0fd391a1b159b99
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6b7ef857e09e01a1a9ba550dc679708c88dfce1751cd2644156ce38d1b8f42c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924470"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863486"
 ---
 # <a name="specify-the-cloud-delivered-protection-level"></a>Spécifier le niveau de protection pour le cloud
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -48,9 +48,9 @@ Vous pouvez spécifier votre niveau de protection cloud offerte par les Antiviru
 
 4. Sélectionnez **propriétés**. Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
-5. Développez **la protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
+5. Développez **La protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
 
-    1. **Élevé**: applique un niveau élevé de détection.
+    1. **Élevé**: applique un niveau de détection élevé.
     2. **Plus élevé**: utilise le **niveau élevé** et applique des mesures de protection supplémentaires (peut avoir un impact sur les performances du client).
     3. **Tolérance zéro :** bloque tous les exécutables inconnus.
 
@@ -91,6 +91,6 @@ Vous pouvez spécifier votre niveau de protection cloud offerte par les Antiviru
   
 ## <a name="related-articles"></a>Articles connexes
 
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Comment créer et déployer des stratégies de logiciel anti-programme malveillant : service de protection cloud](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

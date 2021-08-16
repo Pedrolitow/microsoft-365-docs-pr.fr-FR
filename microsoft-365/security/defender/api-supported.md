@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: acd8ec28fb1d78e3724cb0ca0ebee48133e7310f
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 2ecd4080ed0c8cf527fa31f3c41bcd0921b489b5284651378483cce637f04ba7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863402"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>API Microsoft 365 Defender prises en charge 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 > [!IMPORTANT]

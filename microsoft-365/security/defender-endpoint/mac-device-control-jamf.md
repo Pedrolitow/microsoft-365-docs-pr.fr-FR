@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3b96bc33763ded81a760e3d0d0ba6459fa2b5857
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f4a5771cc78f1872d57fb8301cdfb1d7d47ae27c64a4aa6f1ab2e0333ba5548f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863594"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>Exemples de stratégies de contrôle d’appareil pour JAMF
 
@@ -39,7 +39,7 @@ Ce document contient des exemples de stratégies de contrôle d’appareil que v
 
 ## <a name="restrict-access-to-all-removable-media"></a>Restreindre l’accès à tous les médias amovibles
 
-L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations sur `none` les fichiers seront interdites.
+L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations `none` sur les fichiers seront interdites.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -219,6 +219,6 @@ L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID d
 </plist> 
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Vue d’ensemble du contrôle d’appareil pour macOS](mac-device-control-overview.md)

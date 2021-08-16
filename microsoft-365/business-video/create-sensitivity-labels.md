@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer et gérer des étiquettes de sensibilité.
-ms.openlocfilehash: 26697265088a2a59ac145eeff2816b816b95a149
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f47e57c1085e054dc5b1936fcd83e2a41f3bd9980a1d69f6ac41451e1596a2e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900651"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>Protéger les documents avec des étiquettes de niveau de sensibilité
 
@@ -36,25 +36,25 @@ Les étiquettes de niveau de sensibilité vous permettent de classifier et de pr
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le Centre [d’administration,](https://admin.microsoft.com)sélectionnez le **Centre d’administration** de conformité.
+1. Dans le Centre [d’administration,](https://admin.microsoft.com)sélectionnez le **Centre d’administration** de la conformité.
 1. Sélectionnez **Classification,** puis **étiquettes de sensibilité.**
-1. Sélectionnez **Créer une étiquette** et, lorsque l’avertissement s’affiche, sélectionnez **Oui.**
+1. Sélectionnez **Créer une étiquette** et lorsque l’avertissement s’affiche, sélectionnez **Oui**.
 1. Entrez un **nom d’étiquette,** **une boîte à outils** et une **description.** Sélectionnez **Suivant**.
 1. Activer le **chiffrement**. Choisissez quand vous souhaitez attribuer des autorisations, si vous souhaitez que l’accès de vos utilisateurs au contenu expire et si vous souhaitez autoriser l’accès hors connexion.
 1. **Sélectionnez Attribuer des autorisations,** puis **Ajoutez ces adresses e-mail ou domaines.**
 1. Entrez une adresse de messagerie ou un nom de domaine (par exemple, Contoso.org).  Sélectionnez **Ajouter** et répétez l’étape pour chaque adresse e-mail ou domaine que vous souhaitez ajouter.
 1. Sélectionnez **Choisir des autorisations à partir d’autorisations prédéfines ou personnalisées.**
-1. Utilisez la liste de listes pour sélectionner  des autorisations prédéfinées, telles que réviseur ou visionneuse, ou pour sélectionner des **autorisations** personnalisées. Si vous avez **choisi Personnalisé,** sélectionnez les autorisations dans la liste. Sélectionnez **Enregistrer,** **Enregistrer,** puis **Suivant.**
+1. Utilisez la liste de listes pour sélectionner  des autorisations prédéfinées, telles que réviseur ou visionneuse, ou des **autorisations** personnalisées. Si vous avez **choisi Personnalisé,** sélectionnez les autorisations dans la liste. Sélectionnez **Enregistrer,** **Enregistrer,** puis **Suivant.**
 1. Activer le **marquage de** contenu et choisir les marquages que vous souhaitez utiliser.
-1. Pour chaque marquage que vous choisissez, **sélectionnez Personnaliser le texte.** Entrez le texte que vous souhaitez voir apparaître dans le document, puis définissez les options de police et de mise en page. Sélectionnez **Enregistrer,** puis répétez les marques supplémentaires. Sélectionnez **Suivant**.
+1. Pour chaque marquage que vous choisissez, sélectionnez **Personnaliser le texte.** Entrez le texte que vous souhaitez voir apparaître dans le document, puis définissez les options de police et de mise en page. Sélectionnez **Enregistrer,** puis répétez les marques supplémentaires. Sélectionnez **Suivant**.
 1. Éventuellement, activer la protection contre la perte **de données de point de terminaison.** Sélectionnez **Suivant**.
 1. Éventuellement, activer **l’étiquetage automatique.** Ajoutez une condition. Par exemple, sous **Détecter le contenu qui contient**, **sélectionnez Ajouter une condition.** Entrez la condition ; par exemple, ajoutez une condition qui, si Passport, la sécurité sociale ou d’autres informations sensibles sont détectées, l’étiquette sera ajoutée. Sélectionnez **Suivant**.
-1. Examinez vos paramètres, puis sélectionnez **Créer.** Votre étiquette a été créée. Répétez ce processus pour les étiquettes supplémentaires que vous souhaitez.
-1. Par défaut, les étiquettes apparaissent Office applications dans cet ordre : **Confidentiel,** **Interne** et **Public**. Pour modifier l’ordre, pour chaque étiquette, sélectionnez les trois points (plus d’actions), puis déplacez l’étiquette vers le haut ou vers le bas. En règle générale, les autorisations sont répertoriées du niveau d’autorisation le plus bas au niveau le plus élevé.
+1. Examinez vos paramètres, puis sélectionnez **Créer.** Votre étiquette a été créée. Répétez ce processus pour toutes les étiquettes supplémentaires que vous souhaitez.
+1. Par défaut, les étiquettes apparaissent Office applications dans cet ordre : **Confidentiel,** **Interne** et **Public**. Pour modifier l’ordre, pour chaque étiquette, sélectionnez les trois points (autres actions), puis déplacez l’étiquette vers le haut ou vers le bas. En règle générale, les autorisations sont répertoriées du niveau d’autorisation le plus bas au niveau le plus élevé.
 1. Pour ajouter une sous-étiquette à une étiquette, sélectionnez les trois points (plus d’actions), puis **ajoutez le sous-niveau**.
 1. Lorsque vous avez terminé, choisissez **Publier des étiquettes,** **choisissez les étiquettes à publier,** puis **Ajoutez**. Sélectionnez les étiquettes que vous souhaitez publier, puis sélectionnez **Ajouter,** **Terminé,** puis **Suivant**.
-1. Par défaut, la nouvelle stratégie d’étiquette est appliquée à tout le monde. Si vous souhaitez limiter les personnes à qui la stratégie est appliquée, sélectionnez Choisir des utilisateurs ou des **groupes,** puis **Ajoutez**. Sélectionnez à qui vous souhaitez que la stratégie s’applique, puis sélectionnez **Ajouter,** **Terminé,** puis **Suivant**.
-1. Si vous souhaitez une étiquette par défaut pour les documents et les e-mails, sélectionnez l’étiquette de votre choix dans la liste liste. Examinez les paramètres restants, ajustez selon les besoins, puis sélectionnez **Suivant**.
+1. Par défaut, la nouvelle stratégie d’étiquette est appliquée à tout le monde. Si vous souhaitez limiter l’application de la stratégie, sélectionnez Choisir des utilisateurs ou des **groupes,** puis **Ajoutez**. Sélectionnez à qui vous souhaitez que la stratégie s’applique, puis sélectionnez **Ajouter,** **Terminé,** puis **Suivant**.
+1. Si vous souhaitez une étiquette par défaut pour les documents et les e-mails, sélectionnez l’étiquette de votre choix dans la liste de listes. Examinez les paramètres restants, ajustez selon les besoins, puis sélectionnez **Suivant**.
 1. Entrez un **nom et** une **description** pour votre stratégie. Sélectionnez **Suivant**.
 1. Examinez vos paramètres, puis sélectionnez **Publier.**
 

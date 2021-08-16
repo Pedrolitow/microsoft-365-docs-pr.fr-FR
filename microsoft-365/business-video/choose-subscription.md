@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez quel abonnement Microsoft 365 est le bon pour votre organisation.
-ms.openlocfilehash: ca998be8c51af5caeb648510693effa88f481a9f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f5cf6adffe54ed1930e139bf70c91e8f17b4d501b8c324ceb11512ce81f4b950
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900635"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Choisir un abonnement Microsoft 365 abonnement
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfzL9?autoplay=false]
 
-Le choix de l’abonnement Microsoft 365 est essentiel pour obtenir le meilleur du service. Voici&#39;comment comparer les options et choisir une offre qui&#39;pour votre entreprise.
+Le choix de l’abonnement Microsoft 365 est essentiel pour vous servir au mieux du service. Voici&#39;comment comparer les options et choisir une offre qui&#39;pour votre entreprise.
 
 ## <a name="try-it"></a>Essayez !
 
@@ -48,7 +48,7 @@ Le choix de l’abonnement Microsoft 365 est essentiel pour obtenir le meilleur 
 | --- | --- | --- | --- | --- |
 | **Licences disponibles** | Nombre maximal d’utilisateurs | 300 | 300 | Illimité |
 | **Applications Office** | Installer Office sur jusqu’à 5 PC/Mac + 5 smartphones par utilisateur (Word, Excel, PowerPoint, OneNote, Access), Office Online | Professionnel | Professionnel | ProPlus |
-| **Calendrier de &amp; messagerie** | Outlook, Exchange Online | 50 Go | 50 Go | 100 Go |
+| **Calendrier de &amp; messagerie** | Outlook, Exchange Online | 50 Go | 50 Go | 100 Go |
 | **Hub pour le travail d’équipe** | Espace de travail basé sur la conversation, réunions en ligne et autres Microsoft Teams | Oui | Oui | Oui |
 | **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
 | **Réseaux sociaux, vidéo, sites** | Stream, Yammer, Planner, SharePoint \* Online, PowerApps, \* Microsoft Flow\* | Oui | Oui | Oui |
@@ -62,7 +62,7 @@ Le choix de l’abonnement Microsoft 365 est essentiel pour obtenir le meilleur 
  | Droits de mise à niveau Windows 10 Professionnel pour les licences Pro Win 7/8.1 | | Non | Oui | Non |
  | Windows Virtual Desktop | | Non | Oui | Non |
 | **Protection des informations** | Office 365 protection contre la perte de données | Non | Oui | Oui |
- | Azure Information Protection Plan 1, BitLocker application | | Non | Oui | Non |
+ | Azure Information Protection Plan 1, application de BitLocker | | Non | Oui | Non |
 | **Droits de cal local** | ECAL Suite (Exchange, SharePoint, Skype) | Non | Non | Oui |
 | **Conformité** | Archivage illimité du courrier électronique\*\*\* | Non | Oui | Oui |
 

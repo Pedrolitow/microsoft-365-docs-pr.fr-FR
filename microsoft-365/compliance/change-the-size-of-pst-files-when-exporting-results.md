@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Vous pouvez modifier la taille par défaut des fichiers PST téléchargés sur votre ordinateur lorsque vous exportez les résultats de recherche eDiscovery.
-ms.openlocfilehash: eb5fcce037ff5e3444b42c996b4a32d818edd29d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 76f15e590e1a12468f197f81a1963c9bce06c65008e0570df7bbbaf77b2e9d52
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942917"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851514"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery
 
@@ -48,9 +48,9 @@ Effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exp
     |**Taille en Go (environ))**|**Taille en octets**|
     |:-----|:-----|
     |0,7 Go (700 Mo)  <br/> |751619277  <br/> |
-    |2 Go  <br/> |2147483648  <br/> |
+    |2 Go  <br/> |2147483648  <br/> |
     |4 Go  <br/> |4294967296  <br/> |
-    |8 Go  <br/> |8589934592  <br/> |
+    |8 Go  <br/> |8589934592  <br/> |
    
 3. Modifiez la valeur à la taille maximale souhaitée d’un fichier PST lorsque vous exportez les résultats de recherche, puis `PstSizeLimitInBytes` enregistrez le fichier. 
     

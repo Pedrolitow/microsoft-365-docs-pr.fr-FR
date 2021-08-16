@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6882996daf151a0d3b20e68801f21f97aa622463
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 1947e8c2440d7252e60d65bb684c24fc3ce4f314ea81cb2da297e35eb7318c37
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297907"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831742"
 ---
 # <a name="contact-support-for-pakistan"></a>Contacter le support technique pour le Pakistan
 
@@ -33,8 +33,8 @@ Sélectionner l’option 3
 
 Anglais : Mon-Fri 10h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Frais d’appel local applicables

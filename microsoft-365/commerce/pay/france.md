@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 71f165611f59c45dd2c6d8fa5a5980264c03ba21
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bfa1dd7966bbe3695cc99d33d47765e192ab867023c8316bb37ab0bd5ef2ef51
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535493"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852414"
 ---
 # <a name="payment-information-for-france"></a>Informations de paiement pour la France
 

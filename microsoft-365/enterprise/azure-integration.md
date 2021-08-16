@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Intégrez Microsoft 365 Azure AD si vous souhaitez synchroniser le mot de passe ou l' sign-on unique avec votre environnement local.
-ms.openlocfilehash: f977969634401d59d7598136f9323cb0e37f9ece
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 68ec6098d6873177d573e866e0361b3775be25df1b7751a77f5b589adf5503ac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905331"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878896"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Intégration d’Azure avec Microsoft 365
 
@@ -45,7 +45,7 @@ Vous pouvez utiliser les conseillers de déploiement Azure AD pour une configura
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Éditions Azure AD et gestion Microsoft 365 identités
 
-Si vous avez un abonnement payant Microsoft 365, vous avez également un abonnement Azure AD gratuit. Vous pouvez utiliser Azure AD pour créer et gérer des comptes d’utilisateur et de groupe. Pour activer cet abonnement, vous devez effectuer une inscription à une seule fois. Ensuite, vous pouvez accéder à Azure AD à partir de votre centre d Microsoft 365'administration. 
+Si vous avez un abonnement payant Microsoft 365, vous avez également un abonnement Azure AD gratuit. Vous pouvez utiliser Azure AD pour créer et gérer des comptes d’utilisateur et de groupe. Pour activer cet abonnement, vous devez effectuer une inscription à une seule fois. Ensuite, vous pouvez accéder à Azure AD à partir de votre Centre d’administration Microsoft 365. 
 
 Pour obtenir des instructions pour inscrire votre abonnement Azure AD gratuit, consultez votre abonnement [Azure AD gratuit.](../compliance/use-your-free-azure-ad-subscription-in-office-365.md) N’allez pas directement à azure.microsoft.com pour vous inscrire ou vous vous retrouverez avec un abonnement d’essai ou payant à Microsoft Azure distinct de votre abonnement Azure AD gratuit avec Microsoft 365. 
   
@@ -60,7 +60,7 @@ Pour plus d’informations sur Microsoft 365 et Azure AD, voir [Microsoft 365 mo
 |**Fonctionnalité**|**Description**|
 |:-----|:-----|
 |Applications intégrées  <br/> |Vous pouvez accorder à des applications individuelles l’accès à Microsoft 365 données de messagerie, de calendriers, de contacts, d’utilisateurs, de groupes, de fichiers et de dossiers. Vous pouvez également autoriser ces applications au niveau de l’administrateur global et les mettre à la disposition de l’ensemble de votre entreprise en les enregistrant dans Azure AD. Pour plus d’informations, voir [Applications intégrées et Azure AD pour Microsoft 365 administrateurs.](integrated-apps-and-azure-ads.md)  <br/> Voir aussi [1 000 000 000](/azure/active-directory/manage-apps/what-is-single-sign-on).  <br/> |
-|PowerApps  <br/> | Les applications d’alimentation sont des applications axées sur les appareils mobiles qui peuvent se connecter à vos sources de données existantes, telles que SharePoint listes et autres applications de données. Pour [plus d’informations,](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) voir Créer une PowerApp pour une liste SharePoint Online et la [page PowerApps.](https://powerapps.microsoft.com/)  <br/> |
+|PowerApps  <br/> | Les applications d’alimentation sont des applications axées sur les appareils mobiles qui peuvent se connecter à vos sources de données existantes, telles que SharePoint listes et autres applications de données. Pour [plus d’informations,](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) voir Créer un PowerApp pour une liste SharePoint Online et la [page PowerApps.](https://powerapps.microsoft.com/)  <br/> |
    
 ## <a name="see-also"></a>Voir aussi
 
