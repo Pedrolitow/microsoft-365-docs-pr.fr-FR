@@ -150,6 +150,10 @@
           items:
             - name: Rapport d’inventaire des appareils
               href: working-with-managed-desktop/device-inventory-report.md
+            - name: Rapport d’état de l’appareil
+              href: working-with-managed-desktop/device-status-report.md
+            - name: Rapport des mises à jour de sécurité Windows
+              href: working-with-managed-desktop/security-updates-report.md
         - name: Support pour les administrateurs
           href: working-with-managed-desktop/admin-support.md
         - name: Support pour les utilisateurs
@@ -160,7 +164,7 @@
           href: working-with-managed-desktop/work-with-app-control.md
         - name: Modifier un profil d’appareil
           href: working-with-managed-desktop/change-device-profile.md
-        - name: Affecter des appareils au déploiement
+        - name: Affecter des appareils au groupe de déploiement
           href: working-with-managed-desktop/assign-deployment-group.md
         - name: Supprimer des appareils
           href: working-with-managed-desktop/remove-devices.md
