@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Étapes de migration des services AD FS (Active Directory Federation Services) pour la migration à partir de Microsoft Cloud Deutschland.'
-ms.openlocfilehash: c8e784c8e582185b4bdebc0cb359cc4c19503d1a
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: bc71c731dd98dd859e7e19065c4c39fc041a530804b28ed5559ab1ac4a84660a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339609"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885182"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Étapes de migration AD FS pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -49,13 +49,13 @@ Une fois que vous avez terminé et testé la sauvegarde AD FS, effectuez les ét
 
 3. Dans le volet droit, sélectionnez **Ajouter une confiance de partie de confiance...**
 
-4. Sélectionnez **Démarrer** sur la page **d’accueil** de l’Assistant Ajouter une confiance de partie de confiance.
+4. Sélectionnez **Démarrer** sur la page **d’accueil** de l’Assistant Ajouter une relation d’confiance.
 
 5. Dans la page **Sélectionner une source de données,** sélectionnez Importer des données sur la partie de confiance publiée en ligne ou sur un réseau **local.** La **valeur d’adresse de métadonnées de** fédération (nom d’hôte ou URL) doit être définie sur `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` . Cliquez sur **Suivant**.
 
 6. Dans la page **Spécifier le nom complet,** tapez le nom complet tel que **Microsoft Office 365 Identity Platform WorldWide**. Cliquez sur **Suivant**.
 
-7. Si vous utilisez ADFS dans Windows Server 2012, dans la page de l’Assistant Configurer l’authentification **multifacteur maintenant ?**, sélectionnez le choix approprié en fonction de vos exigences d’authentification. Si vous respectez la valeur par défaut, sélectionnez Je ne souhaite pas configurer de **paramètres d’authentification multifacteur** pour cette relation d’confiance pour le moment. Vous pouvez modifier ce paramètre ultérieurement si vous le souhaitez.
+7. Si vous utilisez ADFS dans Windows Server 2012, dans la page de l’Assistant Configurer l’authentification **multifacteur** maintenant ? , sélectionnez le choix approprié en fonction de vos exigences d’authentification. Si vous respectez la valeur par défaut, sélectionnez Je ne souhaite pas configurer de **paramètres d’authentification multifacteur** pour cette relation d’confiance pour le moment. Vous pouvez modifier ce paramètre ultérieurement si vous le souhaitez.
 
 8. For AD FS 2012: On the **Choose Issuance Authorization Rules**, keep Allow all users to access this **relying party** selected and click **Next**.
 
@@ -70,11 +70,11 @@ En fermant l’Assistant, l’confiance de la partie de confiance Office 365 ser
 Vous pouvez utiliser [l’aide AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) pour générer les règles de transformation d’émission correctes. Les règles de revendication générées créées avec l’aide d’AD FS peuvent être ajoutées manuellement via la console de gestion AD FS ou avec PowerShell. L’aide des AD FS génère les scripts PowerShell nécessaires à l’exécution.  
 
 > [!NOTE]
-> [L’aide des AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) génère les règles de transformation d’émission standard qui sont générées avec le produit. Toutefois, si des règles de transformation d’émission personnalisées sont en place dans l’trust de partie de confiance Microsoft Cloud Deutschland (par exemple, les UR d’émetteur personnalisés, les ID non standard immuables ou toute autre personnalisation), les règles générées par AD FS doivent être modifiées de manière à ce qu’elles correspondent à la logique personnalisée actuellement en place pour l’confiance de la partie de confiance Microsoft Cloud Deutschland. Si ces personnalisations ne sont pas intégrées aux règles générées via l’aide [d’AD FS,](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)l’authentification à **Microsoft Office 365 Identity Platform WorldWide** ne fonctionne probablement pas pour vos identités fédérées. 
+> [L’aide des AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) génère les règles de transformation d’émission standard qui sont générées avec le produit. Toutefois, si des règles de transformation d’émission personnalisées sont en place dans l’trust de partie de confiance Microsoft Cloud Deutschland (par exemple, les UR d’émetteur personnalisés, les ID non standard immuables ou toute autre personnalisation), les règles générées par AD FS doivent être modifiées de manière à ce qu’elles correspondent à la logique personnalisée actuellement en place pour l’confiance de partie de confiance Microsoft Cloud Deutschland. Si ces personnalisations ne sont pas intégrées aux règles générées via l’aide [d’AD FS,](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)l’authentification à **Microsoft Office 365 Identity Platform WorldWide** ne fonctionne probablement pas pour vos identités fédérées. 
 
 1. Exécutez **l’aide** Générer des revendications [sur AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) et copiez le script PowerShell à l’aide de l’option  Copier dans le coin supérieur droit du script.
 
-2. Suivez les étapes décrites dans l’aide [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) sur la façon d’exécuter le script PowerShell dans votre batterie de serveurs AD FS pour générer l’confiance de partie de confiance globale. Avant d’exécuter le script, remplacez les lignes de code suivantes dans le script généré, comme indiqué ci-dessous :
+2. Suivez les étapes décrites dans l’aide [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) sur la façon d’exécuter le script PowerShell dans votre batterie de serveurs AD FS pour générer l’trust de partie de confiance globale. Avant d’exécuter le script, remplacez les lignes de code suivantes dans le script généré, comme indiqué ci-dessous :
 
    ```powershell
    # AD FS Help generated value
@@ -88,7 +88,7 @@ Vous pouvez utiliser [l’aide AD FS](https://adfshelp.microsoft.com/AadTrustCla
    Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
    ```
 
-3. Vérifiez que deux règles PartyTtrust de confiance sont présentes ; un pour Microsoft Cloud Deutschland et un autre pour le service Office 365 global. La commande suivante peut être mise à profit pour la vérification. Elle doit renvoyer deux lignes, ainsi que les noms et identificateurs respectifs.
+3. Vérifiez que deux parties de confiance sont présentes ; un pour Microsoft Cloud Deutschland et un autre pour le service Office 365 global. La commande suivante peut être mise à profit pour la vérification. Elle doit renvoyer deux lignes, ainsi que les noms et identificateurs respectifs.
 
    ```powershell
    Get-AdfsRelyingPartyTrust | Where-Object {$_.Identifier -like 'urn:federation:MicrosoftOnline*'} | Select-Object Name, Identifier
@@ -136,7 +136,7 @@ Si votre batterie de serveurs a complètement échoué et qu’il n’existe auc
 
 3. Pointez vos nouveaux enregistrements DNS ou équilibreur de charge vers les nouveaux serveurs AD FS.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en place :
 

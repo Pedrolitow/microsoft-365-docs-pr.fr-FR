@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Utilisez un filtre de score de prédiction pour afficher les éléments qu’un modèle de codage prédictif est prévisible comme pertinent ou non pertinent.
-ms.openlocfilehash: 0ca2770d5ccbcc3ea5f3dec8394f69d1f5117da5
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 99cc9aee90c57f6f48053a6ef7e5a622a15295aa16089416081913ac6e5d3473
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822530"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865841"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Appliquer un filtre de score de prédiction à un jeu à réviser (aperçu)
 
@@ -35,11 +35,11 @@ Voici deux façons d’utiliser le filtre de score de prédiction :
 
 - Créez un modèle de codage prédictif de sorte qu’un filtre de score de prédiction correspondant soit créé.
 
-- Vous pouvez appliquer un filtre de score de prédiction après l’un des cycles d’entraînement. Toutefois, vous pouvez attendre après avoir effectué plusieurs séries ou jusqu’à ce que le modèle soit stable avant d’utiliser le filtre de score de prédiction.
+- Vous pouvez appliquer un filtre de score de prédiction après l’un des cycles de formation. Toutefois, vous pouvez attendre après avoir effectué plusieurs séries ou jusqu’à ce que le modèle soit stable avant d’utiliser le filtre de score de prédiction.
 
 ## <a name="apply-a-prediction-score-filter"></a>Appliquer un filtre de score de prédiction
 
-1. Dans le centre Microsoft 365 conformité, ouvrez le cas  Advanced eDiscovery, sélectionnez l’onglet Ensembles de révision, puis ouvrez le jeu à réviser.
+1. Dans la Centre de conformité Microsoft 365, ouvrez Advanced eDiscovery cas, sélectionnez l’onglet Ensembles de révision, puis ouvrez le jeu à réviser. 
 
    ![Cliquez sur Filtres pour afficher la page de présentation filtres](..\media\PredictionScoreFilter0.png)   
 
@@ -66,6 +66,6 @@ Voici deux façons d’utiliser le filtre de score de prédiction :
   > [!TIP]
   > Pour afficher le score de prédiction réel attribué à un document, vous pouvez cliquer sur l’onglet **Métadonnées** dans le volet de lecture. Les scores de prédiction pour tous les modèles du jeu à réviser sont affichés dans la propriété de métadonnées **RelevanceScores.**
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Pour plus d’informations sur l’utilisation des filtres, voir [Requête et filtrage du contenu dans un jeu à réviser.](review-set-search.md)

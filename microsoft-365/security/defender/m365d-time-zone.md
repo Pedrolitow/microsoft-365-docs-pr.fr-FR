@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: eb24dee7a79bdf93d4571da0b5a9bd0b92a196a7b1d1767572767f7d92259056
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6665fcfcc5031e9790e7b467e32f18e203f5fe6a
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893722"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247245"
 ---
 # <a name="set-the-time-zone-for-microsoft-365-defender"></a>Définir le fuseau horaire pour Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "53893722"
 
 
 
-Microsoft 365 Defender pouvez afficher les informations de date et d’heure à l’aide de votre fuseau horaire local ou de l’heure UTC. Le fuseau horaire sélectionné s’applique à toutes les informations de date et d’heure indiquées dans les fonctionnalités suivantes du centre de sécurité Microsoft 365 :
+Microsoft 365 Defender pouvez afficher les informations de date et d’heure à l’aide de votre fuseau horaire local ou de l’heure UTC. Le fuseau horaire sélectionné s’applique à toutes les informations de date et d’heure affichées dans les fonctionnalités suivantes du portail Microsoft 365 Defender:
 - Incidents
 - Enquête et correction automatiques, y compris le centre de notifications
 - Repérage avancé

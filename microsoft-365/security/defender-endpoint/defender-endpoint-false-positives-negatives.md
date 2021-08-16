@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: ba376288b759f9a9c331450f3f48c918b0171e51
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 904ea83c6a4a2c8267341ae5fb324c5f2f3678e0c5458720af13f6a932c8c25f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854010"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -344,7 +344,7 @@ Pour vérifier les mises à jour concernant votre soumission, connectez-vous [su
 
 Microsoft Defender pour point de terminaison offre un large éventail d’options, notamment la possibilité d’affiner les paramètres de différentes fonctionnalités et fonctionnalités. Si vous avez de nombreux faux positifs, veillez à passer en revue les paramètres de protection contre les menaces de votre organisation. Vous devrez peut-être effectuer quelques ajustements pour :
 
-- [Protection fournie par le cloud](#cloud-delivered-protection)
+- [Protection cloud](#cloud-delivered-protection)
 - [Correction des applications potentiellement indésirables](#remediation-for-potentially-unwanted-applications)
 - [Examen et correction automatisés](#automated-investigation-and-remediation)
 

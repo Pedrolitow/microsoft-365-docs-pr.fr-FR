@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c21332ae4c71f78e5ce1f92684d2a1a4cb68618869413ab27bd692aa295bd283
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b38953c5f57b13e7aa13c62da926552c3d45c74b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863438"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247391"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -40,6 +40,9 @@ ms.locfileid: "53863438"
 Le tableau du schéma de recherche avancée contient des informations sur les pièces jointes sur les e-mails traitées par `EmailAttachmentInfo` Microsoft Defender Office 365. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
+
+> [!IMPORTANT]
+> Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
@@ -57,8 +60,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ThreatNames` | string | Nom de détection des programmes malveillants ou autres menaces détectées |
 | `DetectionMethods` | string | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
+| `FileSize` | string | Taille du fichier en octets |
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

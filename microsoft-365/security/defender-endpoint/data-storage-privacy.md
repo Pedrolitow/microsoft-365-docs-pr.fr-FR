@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1ad4dd1bacb301ad50b5a6aa52e6a49eacb647f1
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6cbd3af84d5bb0758ebbcbe22e6a570b3d04492b0eea0e89b047087ab0bf245f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649394"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854062"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender pour le stockage et la confidentialité des données des points de terminaison
 
@@ -36,13 +36,13 @@ ms.locfileid: "53649394"
 Cette section traite de certaines des questions les plus fréquemment posées concernant la confidentialité et la gestion des données pour Defender for Endpoint.
 
 > [!NOTE]
-> Ce document explique les détails relatifs au stockage des données et à la confidentialité relatifs à Defender for Endpoint. Pour plus d’informations sur Defender for Endpoint et d’autres produits et services tels que Antivirus Microsoft Defender et Windows 10, voir déclaration de [confidentialité Microsoft.](https://go.microsoft.com/fwlink/?linkid=827576) Consultez également [Windows 10 FAQ sur la confidentialité](https://go.microsoft.com/fwlink/?linkid=827577) pour plus d’informations.
+> Ce document explique les détails relatifs au stockage des données et à la confidentialité relatifs à Defender for Endpoint. Pour plus d’informations sur Defender for Endpoint et d’autres produits et services tels que Antivirus Microsoft Defender et Windows 10, voir déclaration de confidentialité [Microsoft.](https://go.microsoft.com/fwlink/?linkid=827576) Consultez également [Windows 10 FAQ sur la confidentialité](https://go.microsoft.com/fwlink/?linkid=827577) pour plus d’informations.
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Quelles données Microsoft Defender for Endpoint collecte-t-il ?
 
 Microsoft Defender pour le point de terminaison collecte et stocke des informations à partir de vos appareils configurés dans un client dédié et séparé propre au service à des fins d’administration, de suivi et de rapport.
 
-Les informations collectées comprennent les données de fichier (telles que les noms de fichiers, les tailles et les hages), les données de processus (processus en cours d’exécution, hèses), les données de Registre, les données de connexion réseau (IPS et ports hôtes) et les détails des périphériques (tels que les identificateurs de périphérique, les noms et la version du système d’exploitation).
+Les informations collectées comprennent les données de fichier (telles que les noms de fichiers, les tailles et les hages), les données de processus (processus en cours d’exécution, hèses), les données de Registre, les données de connexion réseau (IPS et ports hôtes) et les détails de l’appareil (tels que les identificateurs de périphérique, les noms et la version du système d’exploitation).
 
 Microsoft stocke ces données en toute sécurité Microsoft Azure et les maintient conformément aux pratiques de confidentialité de Microsoft et aux stratégies du Centre de [gestion de la confidentialité Microsoft.](https://go.microsoft.com/fwlink/?linkid=827578)
 
@@ -76,7 +76,7 @@ Oui, vos données sont isolées par l’authentification d’accès et la sépar
 
 ## <a name="how-does-microsoft-prevent-malicious-insider-activities-and-abuse-of-high-privilege-roles"></a>Comment Microsoft empêche-t-il les activités malveillantes internes et les abus des rôles à privilège élevé ?
 
-Les développeurs et les administrateurs Microsoft ont, par conception, reçu des privilèges suffisants pour effectuer leurs tâches d’exploitation et d’évolution du service. Microsoft déploie des combinaisons de contrôles de prévention, de surveillance et de réaction, y compris les mécanismes suivants pour vous protéger contre les activités non autorisées des développeurs et/ou des administrations :
+Les développeurs et les administrateurs Microsoft ont, par conception, reçu des privilèges suffisants pour exécuter leurs tâches affectées afin d’exploiter et de faire évoluer le service. Microsoft déploie des combinaisons de contrôles de prévention, de surveillance et réactifs, y compris les mécanismes suivants pour vous protéger contre les activités non autorisées des développeurs et/ou des administrations :
 
 - Contrôle d’accès étroit aux données sensibles
 - Combinaisons de contrôles qui améliorent grandement la détection indépendante des activités malveillantes
@@ -106,7 +106,7 @@ Le repérage avancé est un outil de repérage de menaces basé sur des requête
 
 ## <a name="can-microsoft-help-us-maintain-regulatory-compliance"></a>Microsoft peut-il nous aider à maintenir la conformité réglementaire ?
 
-Microsoft fournit aux clients des informations détaillées sur les programmes de sécurité et conformité de Microsoft, notamment des rapports d’audit et des packages de conformité, pour aider les clients à évaluer Defender pour les services Endpoint par rapport à leurs propres exigences légales et réglementaires. Defender pour le point de terminaison a obtenu un certain nombre de certifications, notamment ISO, SOC, FedRAMP High et PCI, et continue à poursuivre des certifications nationales, régionales et spécifiques au secteur.
+Microsoft fournit aux clients des informations détaillées sur les programmes de sécurité et de conformité de Microsoft, notamment des rapports d’audit et des packages de conformité, pour aider les clients à évaluer Defender pour les services Endpoint par rapport à leurs propres exigences légales et réglementaires. Defender pour le point de terminaison a obtenu un certain nombre de certifications, notamment ISO, SOC, FedRAMP High et PCI, et continue à poursuivre des certifications nationales, régionales et spécifiques au secteur.
 
 En fournissant aux clients des services conformes et vérifiés de manière indépendante, Microsoft leur permet de se conformer plus facilement à l’infrastructure et aux applications qu’ils exécutent.
 

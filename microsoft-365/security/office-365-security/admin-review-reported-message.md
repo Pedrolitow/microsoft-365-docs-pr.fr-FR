@@ -10,15 +10,15 @@ ms.topic: how-to
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment passer en revue les messages signalés et envoyer des commentaires à vos utilisateurs.
+description: Découvrez comment passer en revue les messages signalés et comment envoyer des commentaires à vos utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 850b5846c8028342dea03bcc93c1709ef460e1ba
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a8f278d94235f4fc36e2c05c1cfe8724843f9ff3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538944"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258568"
 ---
 # <a name="admin-review-for-reported-messages"></a>Révision par l’administrateur des messages signalés
 
@@ -33,7 +33,7 @@ ms.locfileid: "53538944"
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres Exchange Online et Microsoft Defender pour Office 365, les administrateurs peuvent désormais renvoyer des messages de modèle aux utilisateurs finaux après avoir passé en revue les messages signalés. Les modèles peuvent être personnalisés pour votre organisation et basés sur le verdict de votre administrateur.
 
-La fonctionnalité est conçue pour envoyer des commentaires à vos utilisateurs, mais ne modifie pas les verdicts des messages dans le système. Pour aider Microsoft à mettre à jour et à améliorer ses filtres, vous devez soumettre des messages pour analyse à l’aide de [la soumission d’administrateur.](admin-submission.md)
+La fonctionnalité est conçue pour envoyer des commentaires à vos utilisateurs, mais ne modifie pas les verdicts des messages dans le système. Pour aider Microsoft à mettre à jour et à améliorer ses filtres, vous devez envoyer des messages pour analyse à l’aide de [la soumission d’administrateur.](admin-submission.md)
 
 Vous ne pourrez marquer et avertir les utilisateurs des résultats de la révision que si le message a été signalé comme faux positifs ou [faux négatifs.](report-false-positives-and-false-negatives.md)
 
@@ -53,18 +53,18 @@ Vous ne pourrez marquer et avertir les utilisateurs des résultats de la révisi
 
 1. Dans le Microsoft 365 Defender, allez directement à la page **Soumissions** : [ https://security.microsoft.com/reportsubmission}(https://security.microsoft.com/reportsubmission) .
 
-2. Cliquez **sur Messages signalés** par l’utilisateur, puis sélectionnez le message que vous souhaitez marquer et notifier. 
+2. Cliquez **sur Messages signalés** par l’utilisateur, puis sélectionnez le message que vous souhaitez marquer et notifier.
 
-3. Sélectionnez la marque en tant que et **notifier** la drop-down, puis sélectionnez Aucune menace **trouvée,** **Hameçonnage** ou **Courrier indésirable**.  
+3. Sélectionnez la marque en tant que et **notifier** la drop-down, puis sélectionnez Aucune menace **trouvée,** **Hameçonnage** ou **Courrier indésirable**.
 
    > [!div class="mx-imgBorder"]
    > ![Envoyer des messages à partir du portail](../../media/admin-review-send-message-from-portal.png)
 
-Le message signalé sera marqué comme faux positif ou faux négatif, et un message électronique sera automatiquement envoyé à partir du portail pour avertir l’utilisateur qui a signalé le message. 
+Le message signalé sera marqué comme faux positif ou faux négatif, et un message électronique sera automatiquement envoyé à partir du portail pour avertir l’utilisateur qui a signalé le message.
 
 ## <a name="customize-the-messages-used-to-notify-users"></a>Personnaliser les messages utilisés pour avertir les utilisateurs
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Others** section User \> **reported message settings**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **Policies** User reported \> **message settings** in the **Others** section.
 
 2. Dans la page Soumissions d’utilisateurs, si vous souhaitez  spécifier le nom complet de l’expéditeur, cochez la case Spécifier l’adresse de messagerie Office 365 à utiliser en tant qu’expéditeur dans la section **Notifications** par courrier électronique pour les résultats de l’avis de l’administrateur, puis entrez le nom que vous souhaitez utiliser.  L’adresse de messagerie qui sera visible dans Outlook et toutes les réponses y seront.
 

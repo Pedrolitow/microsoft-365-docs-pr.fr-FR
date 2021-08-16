@@ -1,6 +1,6 @@
 ---
 title: API de fichier d’arrêt et de mise en quarantaine
-description: Découvrez comment arrêter l’exécution d’un fichier sur un appareil et supprimer le fichier dans Microsoft Defender pour le point de terminaison. Consulter un exemple.
+description: Découvrez comment arrêter l’exécution d’un fichier sur un appareil et supprimer le fichier dans Microsoft Defender pour endpoint. Consultez un exemple.
 keywords: api, api de graphique, api pris en charge, arrêter et mettre en quarantaine le fichier
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96009bfd61ad22b06a5d5f64351e4983db264395
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2d37eef37400f67421434e36aa3e7b36487afaf4
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651722"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247470"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API de fichier d’arrêt et de mise en quarantaine
 
@@ -45,6 +45,14 @@ Arrêtez l’exécution d’un fichier sur un appareil et supprimez-le.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
+> [!IMPORTANT]
+> Vous pouvez uniquement prendre cette action si :
+>
+> - L’appareil sur qui vous exécutez l’action Windows 10, version 1703 ou ultérieure
+> - Le fichier n’appartient pas aux éditeurs tiers de confiance ou n’est pas signé par Microsoft
+> - Antivirus Microsoft Defender doit au moins être en cours d’exécution en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+
+
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
@@ -57,7 +65,7 @@ Déléguée (compte professionnel ou scolaire)|Machine.StopAndQuarantine|« Arr�
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (pour plus d’informations, voir Créer et gérer [des](user-roles.md) rôles)
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
@@ -70,20 +78,22 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
-Sha1|Chaîne|Sha1 du fichier à arrêter et mettre en quarantaine sur l’appareil. **Obligatoire**.
+Sha1|String
+|Sha1 du fichier à arrêter et mettre en quarantaine sur l’appareil. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 201 : code de réponse créé et action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

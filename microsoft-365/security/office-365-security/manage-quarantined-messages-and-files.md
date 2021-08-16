@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 59bdfdaddbc091467bfd2ccddc2c40377955fab3
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: ad6ddf036bbadd3ccfff901e9efcf866864886aa
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028990"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258539"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -59,12 +59,12 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
 
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
-  - <sup>\*</sup>Les membres  du groupe de rôles Administrateur  de mise en quarantaine doivent également être membres du groupe de rôles Gestion de l’hygiène dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) pour pouvoir mettre en quarantaine les procédures dans Exchange Online PowerShell.
+  - <sup>\*</sup>Les membres  du groupe de rôles Administrateur  de mise en quarantaine doivent également être membres du groupe de rôles Gestion de l’hygiène dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) pour pouvoir mettre en quarantaine des procédures dans Exchange Online PowerShell.
 
 - Les messages mis en quarantaine sont conservés pendant une période par défaut avant d’être automatiquement supprimés :
   - 30 jours pour les messages mis en quarantaine par des stratégies anti-courrier indésirable (courrier indésirable, hameçonnage et courrier électronique en masse). Il s’agit de la valeur par défaut et de la valeur maximale. Pour configurer (plus bas) cette valeur, voir [Configurer des stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)
   - 15 jours pour les messages contenant des programmes malveillants.
-  - 15 jours pour les fichiers mis en quarantaine Safe pièces jointes pour SharePoint, OneDrive et Microsoft Teams dans Defender pour Office 365.
+  - 15 jours pour les fichiers mis en quarantaine Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams dans Defender pour Office 365.
 
   Lorsqu’un message arrive à expiration de la quarantaine, vous ne pouvez pas le récupérer.
 
@@ -78,9 +78,9 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
 
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
 
-   - **Reçu**<sup>\*</sup>
-   - **Expéditeur**<sup>\*</sup>
    - **Sujet**<sup>\*</sup>
+   - **Heure de réception**<sup>\*</sup>
+   - **Expéditeur**<sup>\*</sup>
    - **Raison de la quarantaine**<sup>\*</sup>
    - **Déplacer ?**<sup>\*</sup>
    - **Type de stratégie**<sup>\*</sup>
@@ -88,10 +88,10 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
    - **Destinataire**
    - **ID de message**
    - **Nom de la stratégie**
-   - **Taille**
-   - **Direction**
+   - **Taille du message**
+   - **Sens du courrier**
 
-   Lorsque vous avez terminé, cliquez sur **Enregistrer** ou sur **Définir par défaut**.
+   Lorsque vous avez terminé, cliquez sur **Appliquer.**
 
 4. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres disponibles sont :
    - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
@@ -102,14 +102,14 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
    - **Heure de réception**: Entrer une **Date de début** et une **Date de fin**.
    - **Raison de la mise en quarantaine :**
      - **Stratégie**: le message correspond aux conditions d’une règle de flux de messagerie (également appelée règle de transport).
-     - **E-mail de masse**
-     - **Hameçonnage**: le  verdict de filtrage du courrier indésirable était le courrier de hameçonnage ou la protection anti-hameçonnage mis en quarantaine le message ([paramètres](set-up-anti-phishing-policies.md#spoof-settings) d’usurpation d’identité ou protection contre [l’usurpation d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
+     - **Courrier en nombre**
+     - **Hameçonnage**: le  verdict de filtrage du courrier indésirable était le hameçonnage ou la protection anti-hameçonnage qui a mis en quarantaine le message [(paramètres](set-up-anti-phishing-policies.md#spoof-settings) d’usurpation d’identité ou protection contre [l’usurpation d’identité).](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
      - **Programme malveillant**
      - **Courrier indésirable**
      - **Hameçonnage à haut niveau de confiance**
    - **Type de stratégie** : filtrer les messages par type de stratégie :
      - **Stratégie anti-programme malveillant**
-     - **Safe Stratégie de pièces jointes**
+     - **Coffre Stratégie de pièces jointes**
      - **Stratégie anti-hameçonnage**
      - **Stratégie de filtrage de contenu hébergé** (stratégie anti-courrier indésirable)
      - **Règle de transport**
@@ -128,7 +128,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
    - **Sujet** : utiliser l'intégralité du sujet du message. La recherche n’est pas sensible à la casse.
    - **Nom de** la stratégie : nom de la stratégie responsable de la mise en quarantaine du message.
 
-   Après avoir entrer les critères de recherche, cliquez sur le ![Bouton actualiser](../../media/scc-quarantine-refresh.png) **Actualiser** pour filtrer les résultats.
+   Une fois que vous avez entré les critères de recherche, cliquez sur ! **Actualisez** pour filtrer les résultats.
 
 Une fois le message spécifique mis en quarantaine trouvé, sélectionnez-le pour afficher des détails à son sujet et pour prendre des mesures (par exemple, afficher, déplacer, télécharger ou supprimer le message).
 
@@ -149,16 +149,16 @@ Lorsque vous sélectionnez un message électronique dans la liste, les détails 
 
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
 
-Une fois que vous avez sélectionné un message, plusieurs options s’offrent à vous pour ce qui est des messages dans le volant de détails :
+Une fois que vous avez sélectionné un message, plusieurs options s’offrent à vous pour ce qu’il faut faire avec les messages dans le volant de détails :
 
 - **Message de publication**: dans le volant qui s’affiche, choisissez les options suivantes :
   - **Signaler les messages à Microsoft pour** analyse : cette option est sélectionnée par défaut et signale le message mis en quarantaine par erreur à Microsoft comme faux positif. Si le message a été mis en quarantaine en tant que courrier indésirable, en bloc, hameçonnage ou contenant un programme malveillant, le message est également signalé à l’équipe d’analyse du courrier indésirable de Microsoft. En fonction de leur analyse, les règles de filtrage du courrier indésirable à l’échelle du service peuvent être ajustées pour autoriser le message.
   - Choisissez l’une des options suivantes :
-    - **Envoyer des messages à tous les destinataires**
-    - **Envoyer des messages à des destinataires spécifiques**
-    - **Diffuser des messages à d’autres** personnes : notez que la libération de messages de programmes malveillants à des personnes autres que des destinataires d’origine n’est pas prise en charge.
+    - **Publication pour tous les destinataires**
+    - **Publication vers des destinataires spécifiques**
+  - **Signaler des messages à Microsoft pour** améliorer la détection : cette option est sélectionnée par défaut et signale le message mis en quarantaine par erreur à Microsoft comme faux positif. Si le message a été mis en quarantaine en tant que courrier indésirable, en bloc, hameçonnage ou contenant un programme malveillant, le message est également signalé à l’équipe d’analyse du courrier indésirable de Microsoft. En fonction de leur analyse, les règles de filtrage du courrier indésirable à l’échelle du service peuvent être ajustées pour autoriser le message.
 
-  Lorsque vous avez terminé, cliquez sur **Déplacer les messages**.
+  Lorsque vous avez terminé, cliquez sur **Libérer le message.**
 
   Remarques sur la libération des messages :
 
@@ -175,10 +175,10 @@ Une fois que vous avez sélectionné un message, plusieurs options s’offrent �
 - **Envoyer un message**: dans le volant qui s’affiche, choisissez les options suivantes :
   - **Type d’objet**: **e-mail** (par défaut), **URL** ou **pièce jointe**.
   - **Format de** soumission : **ID de message** réseau (par défaut, avec la valeur correspondante dans la zone **ID** de message réseau) ou fichier **(accédez** à un fichier .eml ou .msg local). Notez que si vous **sélectionnez Fichier,** puis **ID de message** réseau, la valeur initiale a disparu.
-  - **Destinataires :** tapez au moment du bail un destinataire d’origine du message, ou cliquez sur **Sélectionner** tout pour identifier tous les destinataires. Vous pouvez également cliquer sur **Sélectionner tout,** puis supprimer de manière sélective des destinataires individuels.
+  - **Destinataires :** tapez au moment du bail un destinataire d’origine du message, ou cliquez sur **Sélectionner** tout pour identifier tous les destinataires. Vous pouvez également cliquer **sur Sélectionner tout,** puis supprimer de manière sélective des destinataires individuels.
   - **Raison de l’envoi** **: ne doit pas avoir été bloqué** (par défaut) ou doit avoir été **bloqué**.
 
-  Lorsque vous avez terminé, cliquez sur **Envoyer.**
+  Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
 Si vous ne déplacez pas ou ne supprimez pas le message, il sera supprimé après l'expiration de la période de conservation de quarantaine par défaut.
 
@@ -193,31 +193,33 @@ Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (
 
 - **Supprimer des messages**: après avoir cliqué sur **Oui** dans l’avertissement qui s’affiche, les messages sont immédiatement supprimés sans être envoyés aux destinataires d’origine.
 
-Lorsque vous avez terminé, cliquez sur **Fermer**.
+- **Télécharger des messages**
 
 ## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Utilisez le portail Microsoft 365 Defender pour gérer les fichiers mis en quarantaine dans Defender pour Office 365
+
 > [!NOTE]
 > Les procédures pour les fichiers mis en quarantaine dans cette section sont disponibles uniquement pour microsoft Defender pour les abonnés Office 365 Plan 1 et Plan 2.
 
-Dans les organisations avec Defender pour Office 365, les administrateurs peuvent gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams. Pour activer la protection de ces fichiers, voir Activer Safe pièces jointes pour [SharePoint, OneDrive et Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+Dans les organisations avec Defender pour Office 365, les administrateurs peuvent gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams. Pour activer la protection de ces fichiers, voir Activer Coffre pièces jointes pour [SharePoint, OneDrive et Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Afficher les fichiers mis en quarantaine
 
 1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Évaluation** \> **Quarantaine**.
 
-
-2. Dans la page **Quarantaine,** modifiez **l’affichage mis en quarantaine** dans les fichiers de **valeurs.** Vous pouvez trier un champ en cliquant sur un en-tête de colonne disponible.
+2. Dans la page **Mise en** quarantaine, **modifiez l’affichage mis en quarantaine** dans les fichiers de **valeurs.** Vous pouvez trier un champ en cliquant sur un en-tête de colonne disponible.
 
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les colonnes par défaut sont marquées d’un astérisque ( <sup>\*</sup> :
    - **Utilisateur**<sup>\*</sup>
    - **Emplacement**<sup>\*</sup>
-   - **Nom de fichier**<sup>\*</sup>
+   - **Attachment filename**<sup>\*</sup>
    - **URL du fichier**<sup>\*</sup>
    - **Taille du fichier**<sup>\*</sup>
-   - **Expire**<sup>\*</sup>
    - **Déplacer ?**<sup>\*</sup>
+   - **Expire**<sup>\*</sup>
    - **Détecté par**
    - **Modifié par heure**
+
+   Lorsque vous avez terminé, cliquez sur **Appliquer** ou **Annuler.**
 
 4. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres disponibles sont :
    - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
@@ -229,7 +231,9 @@ Dans les organisations avec Defender pour Office 365, les administrateurs peuven
    - **Raison de la mise** en quarantaine : la seule valeur disponible est **Programme malveillant.**
    - **Type de stratégie**
 
-Une fois que vous avez trouvé un fichier mis en quarantaine spécifique, sélectionnez-le pour afficher les détails à son sujet et pour prendre des mesures (par exemple, afficher, libérer, télécharger ou supprimer le message).
+   Lorsque vous avez terminé, cliquez sur **Appliquer** ou **Annuler.**
+
+Une fois que vous avez trouvé un fichier spécifique mis en quarantaine, sélectionnez-le pour afficher les détails à son sujet et pour agir dessus (par exemple, afficher, libérer, télécharger ou supprimer le message).
 
 #### <a name="view-quarantined-file-details"></a>Afficher les détails du fichier mis en quarantaine
 
@@ -264,7 +268,7 @@ Si vous ne les relâchez pas ou ne les supprimez pas, ils seront supprimés à l
 Lorsque vous sélectionnez plusieurs fichiers mis en quarantaine dans la liste (jusqu’à 100), le flyout **Actions** en bloc s’affiche où vous pouvez prendre les mesures suivantes :
 
 - **Libérer des fichiers**
-- **Supprimer des fichiers**: une fois que vous avez cliqué **sur Oui** dans l’avertissement qui s’affiche, les fichiers sont immédiatement supprimés.
+- **Supprimer des fichiers**: une fois que vous avez cliqué sur **Oui** dans l’avertissement qui s’affiche, les fichiers sont immédiatement supprimés.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour afficher et gérer les messages et fichiers mis en quarantaine
 
@@ -276,6 +280,6 @@ Les cmdlets que vous utilisez pour afficher et gérer les messages et les fichie
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): notez que cette cmdlet est uniquement pour les messages, et non pour les fichiers mis en quarantaine provenant de Safe Attachments for SharePoint, OneDrive et Microsoft Teams.
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): notez que cette cmdlet est uniquement pour les messages, et non pour les fichiers mis en quarantaine à partir de Coffre Attachments for SharePoint, OneDrive et Microsoft Teams.
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 910923e693804c96c109c52606b62d92af51abeb
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f896888a90e855926fc8840f4bd936819ed25142
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228662"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258549"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -83,7 +83,7 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
 En créant une stratégie contre le courrier indésirable dans le Portail Microsoft 365 Defender, cela créé une règle de filtrage du courrier indésirable et la stratégie de filtrage de courrier indésirable associée en utilisant le même nom pour les deux.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la page **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** section\> **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, cliquez sur l’![icône Créer](../../media/m365-cc-sc-create-icon.png) **Créer une stratégie**, puis sélectionnez **Entrant** dans la liste déroulante.
 
@@ -140,7 +140,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
      Les actions disponibles pour les verdicts de filtrage du courrier indésirable sont décrites dans le tableau suivant.
 
-     - Une coche ( ![Coche](../../media/checkmark.png) ) indique que l’action est disponible (toutes les actions ne sont pas disponibles pour les verdicts).
+     - Une coche ( ![Coche](../../media/checkmark.png)) indique que l’action est disponible (toutes les actions ne sont pas disponibles pour les verdicts).
      - Un astérisque ( <sup>\*</sup> ) après la coche indique l’action par défaut pour le verdict de filtrage du courrier indésirable.
 
      <br>
@@ -149,12 +149,12 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
      |Action|Courrier indésirable|Élevé<br>confiance<br>courrier indésirable|Hameçonnage|Élevé<br>confiance<br>hameçonnage|Courrier en nombre|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Déplacer le message vers le dossier Courrier indésirable**: le message est remis dans la boîte aux lettres et déplacé vers le dossier Courrier indésirable.<sup>1</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)<sup>\*</sup>|
-     |**Ajouter un en-tête X** : ajoute un en-tête X à l’en-tête du message et remet le message dans la boîte aux lettres. <p> Vous devez entrer le nom du champ d’en-tête X (et non la valeur) plus loin dans la zone **Ajouter ce texte d’en-tête X**. <p> Pour les verdicts de **Courrier indésirable** et **Courrier indésirable à haute fiabilité**, le message est déplacé vers le dossier Courrier indésirable.<sup>1, 2</sup>|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)<sup>\*</sup>|
+     |**Déplacer le message vers le dossier Courrier indésirable**: le message est remis dans la boîte aux lettres et déplacé vers le dossier Courrier indésirable.<sup>1</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|
+     |**Ajouter un en-tête X** : ajoute un en-tête X à l’en-tête du message et remet le message dans la boîte aux lettres. <p> Vous devez entrer le nom du champ d’en-tête X (et non la valeur) plus loin dans la zone **Ajouter ce texte d’en-tête X**. <p> Pour les verdicts de **Courrier indésirable** et **Courrier indésirable à haute fiabilité**, le message est déplacé vers le dossier Courrier indésirable.<sup>1, 2</sup>|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
      |**Ajouter la ligne d’objet avec le texte**: ajoute du texte au début de la ligne d’objet du message. Le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable.<sup>1, 2</sup> <p> Vous devez entrer le texte plus loin dans la zone **Ligne d’objet préfixe avec ce texte**.|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
      |**Rediriger le message vers une adresse e-mail**: envoie le message à une adresse e-mail spécifiée au lieu des destinataires prévus. <p> Spécifiez l'adresse de redirection dans la zone d'entrée **Rediriger vers cette adresse de messagerie**.|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
      |**Supprimer le message**: supprime le message entier, pièces jointes comprises.|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
-     |**Mettre en quarantaine le message**: Envoie le message en quarantaine au lieu de le remettre à ses destinataires. <p> Vous pouvez spécifier la durée de la mise en quarantaine ultérieure du message dans la boîte de dialogue de la mise en **Quarantaine**.|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+     |**Mettre en quarantaine le message**: Envoie le message en quarantaine au lieu de le remettre à ses destinataires. <p> Vous pouvez spécifier la durée de la mise en quarantaine ultérieure du message dans la boîte de dialogue de la mise en **Quarantaine**.|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)|
      |**Aucune action**|||||![Coche](../../media/checkmark.png)|
      |
 
@@ -242,7 +242,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>Utiliser le Portail Microsoft 365 Defender pour afficher des stratégies anti-courrier indésirable
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la page **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** section\> **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, recherchez l’une des valeurs suivantes :
    - La valeur **Type** est **Stratégie anti-courrier indésirable personnalisée**
@@ -259,7 +259,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Utiliser le Portail Microsoft 365 Defender pour modifier des stratégies anti-courrier indésirable
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la page **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** section\> **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, sélectionnez une stratégie anti-courrier indésirable dans la liste en cliquant sur le nom :
    - Une stratégie personnalisée que vous avez créée où la valeur du **Type de** colonne est **stratégie anti-courrier indésirable personnalisée**.
@@ -275,7 +275,7 @@ Pour activer ou désactiver une stratégie, définir l’ordre de priorité de l
 
 Vous ne pouvez pas désactiver la stratégie anti-courrier indésirable par défaut.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la page **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** section\> **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom.
 
@@ -300,7 +300,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 - Dans le Portail Microsoft 365 Defender, vous pouvez uniquement modifier la priorité de la stratégie de logiciel anti-courrier indésirable après l'avoir créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de filtrage de courrier indésirable (ceci peut modifier la priorité de règles existantes).
 - Les stratégies anti-courrier indésirable sont traitées dans l’ordre dans lequel elles sont affichées (la première stratégie possède la valeur **Priorité** 0). La stratégie anti-courrier indésirable par défaut contient la valeur priorité **la plus faible**, et vous ne pouvez pas la modifier.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la page **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** section\> **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom.
 
@@ -317,7 +317,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 
 Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quarantaine, vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour informer les destinataires de qu’il est advenu des messages qui leur ont été envoyés. Pour plus d’informations sur ces notifications, voir [Notifications de courrier indésirable à l’utilisateur final dans Exchange Online PowerShell](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la page **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** section\> **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, sélectionnez une stratégie anti-courrier indésirable dans la liste en cliquant sur le nom :
    - Une stratégie personnalisée que vous avez créée où la valeur du **Type de** colonne est **stratégie anti-courrier indésirable personnalisée**.
@@ -344,7 +344,7 @@ Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quara
 
 Lorsque vous utilisez le Portail Microsoft 365 Defender pour supprimer une stratégie anti-courrier indésirable personnalisée, la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable correspondante sont toutes deux supprimées. Vous ne pouvez pas supprimer la stratégie anti-courrier indésirable par défaut.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la page **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** section\> **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom. En haut du menu volant Détails de la stratégie qui s’affiche, cliquez sur l’![Icône Autres actions](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** \> ![Icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png) **Supprimer la stratégie**.
 

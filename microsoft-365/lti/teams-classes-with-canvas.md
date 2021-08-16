@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams classes à Canvas
-ms.openlocfilehash: 7743e7064bf31d87513c8c274f0ef8d0f70e7e8b9f97f530a2ad2f1826dd0542
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: 8091d84e1d0f26c820979450001a1e0c9ad1cdec775ac9e34317f69c24bd2df6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803619"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898706"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Utiliser Microsoft Teams classes avec Canvas
 
@@ -28,7 +28,7 @@ Microsoft Teams classes est une application Learning Tools Interoperability (LTI
 
 > [!NOTE]
 > La classe actuelle Teams LTI prend uniquement en charge la synchronisation des utilisateurs canvas avec Microsoft Azure Active Directory (AAD) dans une étendue limitée. 
-> - Votre client doit avoir une licence Microsoft Éducation.
+> - Votre client doit avoir une correspondance exacte entre un champ Canvas (e-mail, ID utilisateur ou ID SIS) et l’UPN dans Microsoft AAD. Nous travaillons à accroître la flexibilité de la fonctionnalité de synchronisation, mais en attendant, tous les utilisateurs de Canvas qui ne correspondent pas à un UPN dans AAD ne seront pas ajoutés à la classe Teams synchronisée avec Canvas. 
 > - Un seul client Microsoft peut être utilisé pour le mappage d’utilisateurs entre Canvas et Microsoft.
 > - Vous devez désactiver SDS avant d’utiliser la classe Teams LTI afin d’éviter la duplication des groupes.
 
@@ -40,18 +40,15 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 2. Sélectionnez **le lien** Administrateur dans la navigation globale, puis sélectionnez votre compte.
 
-3. Dans la navigation de l’administrateur, **sélectionnez Paramètres** lien, puis l’onglet **Intégrations.**
+3. Dans la navigation de l’administrateur, sélectionnez **Paramètres** lien, puis l’onglet **Intégrations.**
 
-4. Activez Microsoft Teams synchronisation en activer le basculement.
-   
-   ![Canvas Teams Sync Updated png](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
+4. Activez Microsoft Teams synchronisation en activé le basculement.
 
-5. Entrez le nom de votre client Microsoft, l’attribut de connexion, le suffixe de domaine et l’attribut de recherche AAD.
+   ![teams-sync](media/teams-sync.png)
 
-   Ces champs seront utilisés pour faire correspondre les utilisateurs de Canvas aux utilisateurs Microsoft Azure Active Directory. 
-   * L’attribut de connexion est l’attribut utilisateur Canvas utilisé pour la correspondance.
-   * Le champ Suffix est facultatif et vous permet de spécifier un domaine lorsqu’il n’existe pas de mappage exact entre les attributs canvas et les champs Microsoft AAD. Par exemple, si votre e-mail Canvas est « name@example.edu » alors que l’UPN dans Microsoft AAD est « nom » , vous pouvez faire correspondre les utilisateurs en entrant « example.edu » dans le champ de suffixe.
-   * L’attribut de recherche Active Directory est le champ du côté Microsoft auquel les attributs Canvas sont en correspondance. Sélectionnez l’UPN, l’adresse de messagerie principale ou l’alias de messagerie.
+5. Entrez le nom de votre client Microsoft et l’attribut de connexion.
+
+   L’attribut de connexion sera utilisé pour associer l’utilisateur Canvas à un Azure Active Directory utilisateur.
 
 6. Sélectionnez **Mettre à jour Paramètres** une fois terminé.
 
@@ -87,7 +84,7 @@ En tant qu’administrateur de zone de dessin, vous devez ajouter l’applicatio
 
    L Microsoft Teams’application LTI des classes sera ajoutée à la liste des applications externes.
    
-## <a name="enabling-the-lti-app-for-canvas-courses"></a>Activation de l’application LTI pour les cours Canvas
+## <a name="enabling-the-lti-app-for-canvas-courses"></a>Activation de l’application LTI pour les cours canvas
 
 Pour utiliser l’application LTI dans un cours, un instructeur du cours Canvas doit activer la synchronisation des intégrations. Chaque cours doit être activé par un instructeur pour qu’une équipe correspondante soit créée . Il n’existe pas de mécanisme global pour la création d’équipes. Il s’agit d’une mesure de précaution pour empêcher la création d’équipes indésirables.
 

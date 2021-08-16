@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base font partie des plans Microsoft 365 de sécurité.
-ms.openlocfilehash: 69d1c285d234d0884400cfc6325fcecfbff5a2d3bb62769682ec974b53a85f7e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 74b6aeb5b768dc668a66bcb8c82f6c8393219561
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827034"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247430"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Choisir entre Basic Mobility and Security ou Intune
 
@@ -71,7 +71,6 @@ Microsoft Intune la mobilité et la sécurité de base intégrées vous donnent 
 |Conformité des appareils|Définir et gérer des stratégies de sécurité, telles que la détection de verrouillage du code confidentiel et de jailbreak au niveau de l’appareil. |Limitations sur les appareils Android 9 et ultérieurs. Voir [les détails.](capabilities.md) |Oui|
 |Accès conditionnel basé sur la conformité des appareils |Empêcher les appareils non conformes d’accéder à la messagerie électronique et aux données d’entreprise à partir du cloud. |Non pris en charge sur Windows 10.<br/>Limité au contrôle de l’accès Exchange Online, SharePoint Online et Outlook. |Oui |
 |Configuration des appareils  |Configurer les paramètres de l’appareil (par exemple, désactivation de l’appareil photo)|Ensemble limité de paramètres.|Oui|
-|Conformité des appareils  |Définir et gérer des stratégies de sécurité, telles que la détection de verrouillage du code confidentiel et de jailbreak au niveau de l’appareil. |Limitations sur les appareils Android 9 et ultérieurs. Voir [les détails.](capabilities.md) |Oui|
 |Profils de messagerie  |Provisionne un profil de messagerie natif sur l’appareil. |Oui|Oui|
 |Profils WiFi |Approvisionnement d’un profil WiFi natif sur l’appareil. |Non|Oui|
 |Profils VPN |Provisionne un profil VPN natif sur l’appareil. |Non|Oui|

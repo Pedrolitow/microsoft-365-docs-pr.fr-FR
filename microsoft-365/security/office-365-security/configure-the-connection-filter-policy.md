@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les messages électroniques provenant de serveurs de messagerie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce1eddbf1ac788ad57ffc57da2156aae1ae69f6a
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 8aa760990eff4bff8e8c4dd26efa74042f4a9208
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108390"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258498"
 ---
 # <a name="configure-connection-filtering"></a>Configurer le filtrage des connexions
 
@@ -40,7 +40,7 @@ Si vous êtes un client Microsoft 365 avec des boîtes aux lettres en Exchange O
 
 - **Liste d’adresses IP** permises : ignorez le filtrage du courrier indésirable pour tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Pour les scénarios où le filtrage du courrier indésirable peut encore se produire sur les messages provenant de ces sources, consultez la section [Scénarios](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) dans lequel les messages provenant de sources de la liste d’adresses IP sont toujours filtrés plus loin dans cet article. Pour plus d’informations sur la façon dont la liste d’adresses IP permises doit s’intégrer dans votre stratégie globale d’expéditeurs sûrs, voir Créer des listes d’expéditeurs sûrs [dans EOP.](create-safe-sender-lists-in-office-365.md)
 
-- **Liste d’adresses IP** bloqués : bloquez tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Les messages entrants sont rejetés, ne sont pas marqués comme courrier indésirable et aucun filtrage supplémentaire ne se produit. Pour plus d’informations sur la façon dont la liste d’adresses IP bloquées doit tenir dans votre stratégie globale des expéditeurs bloqués, voir Créer des listes d’expéditeurs bloqués [dans EOP.](create-block-sender-lists-in-office-365.md)
+- **Liste d’adresses IP** bloqués : bloquez tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Les messages entrants sont rejetés, ne sont pas marqués comme courrier indésirable et aucun filtrage supplémentaire ne se produit. Pour plus d’informations sur la façon dont la liste d’adresses IP bloquées doit tenir dans votre stratégie globale d’expéditeurs bloqués, voir Créer des listes d’expéditeurs bloqués [dans EOP.](create-block-sender-lists-in-office-365.md)
 
 - **Coffre liste :** la *liste sécurisée* est une liste d’utilisateurs autoriser dynamiques dans le centre de données Microsoft qui ne nécessite aucune configuration client. Microsoft identifie ces sources de courriers électroniques de confiance à partir d’abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste sécurisée ; vous ne pouvez pas configurer les serveurs de messagerie source dans la liste fiable. Le filtrage du courrier indésirable est ignoré sur les messages entrants provenant des serveurs de messagerie de la liste sécurisée.
 
@@ -74,7 +74,7 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>Utiliser le portail Microsoft 365 Defender pour modifier la stratégie de filtrage des connexions par défaut
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **Policies** \> **Anti-spam** in the **Policies** section.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, sélectionnez Stratégie de filtrage des connexions **(par défaut)** dans la liste en cliquant sur le nom de la stratégie.
 
@@ -93,11 +93,11 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
 
        Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
-     Pour ajouter l’adresse IP ou la plage d’adresses, cliquez dans la zone et tapez itclick **Ajouter** ![ une icône ](../../media/ITPro-EAC-AddIcon.png) . Pour supprimer une entrée, sélectionnez-la dans **l’adresse IP autorisée,** puis cliquez sur  ![ ](../../media/scc-remove-icon.png) Supprimer. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+     Pour ajouter l’adresse IP ou la plage d’adresses, cliquez dans la zone et tapez itclick **Icône** ![ Ajouter ](../../media/ITPro-EAC-AddIcon.png) . Pour supprimer une entrée, sélectionnez-la dans **l’adresse IP autorisée,** puis cliquez sur  ![ ](../../media/scc-remove-icon.png) Supprimer. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
    - **Toujours bloquer les messages provenant des adresses IP ou** de la plage d’adresses suivantes : il s’agit de la liste d’adresses IP bloqués. Entrez une adresse IP, une plage IP ou une adresse IP CIDR unique dans la zone comme décrit précédemment dans le paramètre Toujours autoriser les messages provenant des adresses IP ou des **plages d’adresses suivantes.**
 
-   - **Activer la liste sécurisée**: activez ou désactivez l’utilisation de la liste sécurisée pour identifier les expéditeurs connus et de qualité qui ignoreront le filtrage du courrier indésirable. Pour utiliser la liste sécurisée, cochez la case.
+   - **Activez la liste sécurisée**: activez ou désactivez l’utilisation de la liste sécurisée pour identifier les expéditeurs connus et de qualité qui ignoreront le filtrage du courrier indésirable. Pour utiliser la liste sécurisée, cochez la case.
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -105,7 +105,7 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>Utiliser le portail Microsoft 365 Defender pour afficher la stratégie de filtrage des connexions par défaut
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **Policies** \> **Anti-spam** in the **Policies** section.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, les propriétés suivantes sont affichées dans la liste des stratégies :
 
@@ -114,7 +114,7 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
    - **Priorité**: cette valeur est la plus **faible pour** la stratégie de filtrage des connexions par défaut.
    - **Type**: cette valeur est vide pour la stratégie de filtrage des connexions par défaut.
 
-3. Lorsque vous sélectionnez la stratégie de filtrage des connexions par défaut, les paramètres de stratégie sont affichés dans un volant.
+3. Lorsque vous sélectionnez la stratégie de filtrage des connexions par défaut, les paramètres de stratégie s’affichent dans un volant.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-modify-the-default-connection-filter-policy"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour modifier la stratégie de filtrage des connexions par défaut
 
@@ -152,7 +152,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez bien modifié la stratégie de filtrage des connexions par défaut, faites l’une des étapes suivantes :
 
-- Dans le portail Microsoft 365 Defender, consultez la page Stratégies de collaboration de messagerie **&** & Règles de stratégies contre les menaces Section \>  \>  \>  Stratégies \> **anti-courrier** indésirable sélectionnez stratégie de filtrage des \> connexions **(par défaut)** dans la liste en cliquant sur le nom de la stratégie, puis vérifiez les paramètres.
+- Dans le portail Microsoft 365 Defender, sélectionnez Stratégies de collaboration de messagerie **&** & Règles anti-courrier indésirable dans la section Stratégies sélectionnez stratégie de filtrage des \>  \>  \>   \> connexions **(par défaut)** dans la liste en cliquant sur le nom de la stratégie, puis vérifiez les paramètres.
 
 - Dans Exchange Online PowerShell ou EOP PowerShell autonome, exécutez la commande suivante et vérifiez les paramètres :
 

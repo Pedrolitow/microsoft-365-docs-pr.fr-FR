@@ -18,13 +18,13 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Résumé : Comprendre ce qui a changé pour passer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+description: 'Résumé : Comprendre ce qui a changé pour passer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centre de données allemande.'
+ms.openlocfilehash: cacc6d75b890585aa7b219b8bbb8f49b3f2d6714fe4502fe1b6b1030f54b9763
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885170"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Ce qui va changer après la migration vers Office 365 services dans les nouvelles régions de centres de données allemandes
 
@@ -39,7 +39,7 @@ Voici les principales différences entre Microsoft Cloud Deutschland et Office 3
 | Administrateur de données | Oui | Non |
 | Collaboration entre clients Office 365 du monde entier | Non | Oui |
 | Résidence des données client | Les données client sont stockées uniquement dans les centres de données allemands. | Microsoft stockera les données client suivantes au repos exclusivement en Allemagne : <ul><li> Exchange Online de boîte aux lettres (corps du courrier électronique, entrées de calendrier et contenu des pièces jointes) </li><li> SharePoint Contenu du site en ligne et fichiers stockés dans ce site, et fichiers chargés sur OneDrive Entreprise </li></ul> |
-| Conditions applicables | [Conditions d’accès aux](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) services en ligne avec ce [supplément](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=64) | [Conditions d’utilisation d’Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
+| Conditions applicables | [Conditions d’accès aux](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) services en ligne avec ce [supplément](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=64) | [Conditions d’utilisation des services en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 ||||
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
@@ -48,7 +48,7 @@ Ce qui ne change pas :
 
 - Le domaine initial du client (par exemple) avec un ID de client (GUID) et des domaines `contoso.onmicrosoft.de` personnalisés est persistant après la migration. 
 
-- Les demandes d’authentification pour les ressources migrées vers des services Office 365 sont accordées par le service d’authentification Azure Office 365 services d’authentification Azure ( `login.microsoftonline.com` ). Pendant la migration, les ressources qui restent en Office 365 Allemagne sont authentifiées par le service Azure Allemagne existant ( `login.microsoftonline.de` ).
+- Les demandes d’authentification pour les ressources migrées vers des services Office 365 sont accordées par le service d’authentification Azure Office 365 services d’authentification ( `login.microsoftonline.com` ). Pendant la migration, les ressources qui restent en Office 365 Allemagne sont authentifiées par le service Azure Allemagne existant ( `login.microsoftonline.de` ).
 
 Remarques à prendre en compte :
 
@@ -58,19 +58,19 @@ Remarques à prendre en compte :
 
 - Les réinitialisations de mot de passe, les modifications de mot de passe, la réinitialisation de mot de passe par un administrateur pour les organisations gérées (qui n’utilisent pas les services de fédération Active Directory) doivent être effectuées via le portail Office 365 services. Les tentatives des utilisateurs qui accèdent aux portails Microsoft Cloud Deutschland pour réinitialiser les mots de passe échouent.
 
-- Les demandes des personnes soumises au Règlement général sur la protection des données (R GDPR) sont exécutées à partir du portail d’administration Azure des services Office 365 pour les demandes futures. Toutes les données de diagnostic héritées ou non client résidant dans Microsoft Cloud Deutschland sont supprimées au moins 30 jours.
+- Les demandes des personnes soumises au règlement général sur la protection des données (R GDPR) sont exécutées à partir du portail d’administration Azure des services Office 365 pour les demandes futures. Toutes les données de diagnostic héritées ou non client résidant dans Microsoft Cloud Deutschland sont supprimées au moins 30 jours.
 
 ## <a name="subscriptions--licenses"></a>Abonnements & licences
 
 - Office 365 abonnements Dynamics de Microsoft Cloud Deutschland sont transitionés vers la région allemande avec le déplacement d’Azure AD. L’organisation est ensuite mise à jour pour refléter les nouveaux abonnements Office 365 services. Pendant le bref processus de transfert d’abonnement, les modifications apportées aux abonnements sont bloquées.
 
-- À mesure que le client passe aux services Office 365, ses abonnements et licences propres à l’Allemagne sont normalisés avec les nouvelles offres de services Office 365 client. Les abonnements Office 365 services sont achetés pour les abonnements transférés en Allemagne. Les utilisateurs qui ont des licences en Allemagne se Office 365 licences de services. À la fin de l’exécution, les abonnements Germany hérités sont annulés et supprimés du client Office 365 services en cours.
+- À mesure que le client passe aux services Office 365, ses abonnements et licences propres à l’Allemagne sont normalisés avec les nouvelles offres Office 365 services. Les abonnements Office 365 services sont achetés pour les abonnements transférés en Allemagne. Les utilisateurs qui ont des licences en Allemagne se Office 365 licences de services. À la fin de l’exécution, les abonnements Germany hérités sont annulés et supprimés du client Office 365 services en cours.
 
-- Après la migration des charges de travail individuelles, des fonctionnalités supplémentaires sont disponibles via les services Office 365 (tels que Le Planificateur Microsoft et Microsoft Flow) en raison des nouveaux abonnements aux services Office 365. Si cela est approprié pour votre organisation, le client ou l’administrateur de licences peut désactiver les nouveaux plans de service lorsque vous planifiez la gestion des changements afin d’introduire les nouveaux services. Pour obtenir des instructions sur la désactivation des plans de service attribués aux licences des utilisateurs, voir Désactiver l’accès aux services Microsoft 365 tout en attribuant des [licences utilisateur.](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses)
+- Après la migration des charges de travail individuelles, des fonctionnalités supplémentaires sont disponibles via les services Office 365 (tels que Le Planificateur Microsoft et Microsoft Flow) en raison des nouveaux abonnements aux services Office 365. Si cela est approprié pour votre organisation, le client ou l’administrateur de licences peut désactiver les nouveaux plans de service lorsque vous planifiez la gestion des changements afin d’introduire les nouveaux services. Pour obtenir des instructions sur la désactivation des plans de service affectés aux licences des utilisateurs, voir Désactiver l’accès aux services Microsoft 365 tout en attribuant des [licences utilisateur.](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses)
 
 ## <a name="exchange-online"></a>Exchange Online
 
-- Exchange URL de ressources sont transitionnables du point de terminaison hérité germany vers `outlook.office.de` le point de terminaison Office 365 services après `outlook.office365.com` la migration. Vos utilisateurs peuvent accéder à leur boîte aux lettres migrée à l’aide de l’URL héritée jusqu’à la fin de la migration. Les clients doivent migrer les utilisateurs vers la nouvelle URL dès que possible après Exchange migration commence pour éviter d’affecter le retrait de l’environnement allemand. Les URL Office 365 services de gestion pour Outlook services deviennent disponibles uniquement après le début Exchange migration.
+- Exchange URL de ressources sont transitionnables du point de terminaison hérité germany vers le point de terminaison Office 365 services après `outlook.office.de` la `outlook.office365.com` migration. Vos utilisateurs peuvent accéder à leur boîte aux lettres migrée à l’aide de l’URL héritée jusqu’à la fin de la migration. Les clients doivent migrer les utilisateurs vers la nouvelle URL dès que possible après Exchange migration commence pour éviter d’affecter le retrait de l’environnement allemand. Les URL Office 365 services de gestion pour Outlook services deviennent disponibles uniquement après le début Exchange migration.
 
 - Les boîtes aux lettres sont migrées en tant que processus back-end. Les utilisateurs de votre organisation peuvent se voir dans Microsoft Cloud Deutschland ou dans la région allemande pendant la transition et faire partie de la même organisation Exchange (dans la même liste d’adresses globale).
 
@@ -84,7 +84,7 @@ Le partage d’éléments SharePoint Online et OneDrive Entreprise via Outlook n
 
 ## <a name="office-services"></a>Office Services
 
-Office Les services en ligne sont accessibles via `office.de` avant et pendant la transition. Après la transition des boîtes aux lettres des utilisateurs vers les services Office 365, les utilisateurs doivent commencer à utiliser les URL Office 365 services de messagerie. À mesure que les charges de travail suivantes migrent vers Office 365, leur interface à partir du portail office.com commence à fonctionner.
+Office Les services en ligne sont accessibles via `office.de` avant et pendant la transition. Une fois les boîtes aux lettres des utilisateurs transitionées vers les services Office 365, les utilisateurs doivent commencer à utiliser les URL Office 365 services de messagerie. À mesure que les charges de travail suivantes migrent vers Office 365, leur interface à partir du portail office.com commence à fonctionner.
 
 Le service (MRU) le plus récemment utilisé dans Office est un passage de Microsoft Cloud Deutschland à Office 365 services globaux, et non à une migration. Seuls les liens de la Office 365 services globaux sont visibles après la migration à partir du portail Office.com. Les liens de la base de données MRU provenant de Microsoft Cloud Deutschland ne sont pas visibles en tant que liaisons MRU dans Office 365 services globaux. Dans Office 365 services globaux, les liaisons de gestion des données sont accessibles uniquement une fois que la migration du client a atteint la phase 9.
 
@@ -99,13 +99,13 @@ Les clients Skype Entreprise Online existants sont transférés vers Microsoft T
 
 ## <a name="office-365-video"></a>Office 365 Video
 
-Office 365 La vidéo a été retirée le 1er mars 2021 et Office 365 Video ne sera pas pris en charge une fois la migration de SharePoint Online vers les nouvelles régions de centres de données allemandes terminée. Le contenu Office 365 Vidéo sera migré dans le cadre de la migration de SharePoint Online. Toutefois, les vidéos de Office 365 vidéo ne seront pas lues dans l’interface utilisateur Office 365 vidéo après la migration SharePoint migration. En savoir plus sur la chronologie de la migration Office 365 la transition vidéo vers [Microsoft Stream (classique).](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
+Office 365 La vidéo a été retirée le 1er mars 2021 et Office 365 Video ne sera pas pris en charge une fois la migration de SharePoint Online vers les nouvelles régions de centres de données allemandes terminée. Le contenu Office 365 vidéo sera migré dans le cadre de la migration de SharePoint Online. Toutefois, les vidéos Office 365 Vidéo ne seront pas lues dans l’interface utilisateur Office 365 Vidéo après la migration SharePoint migration. En savoir plus sur la chronologie de la migration Office 365 la transition vidéo vers [Microsoft Stream (classique).](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 ## <a name="next-step"></a>Étape suivante
 
 [Comprendre les actions et les impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en place :
 

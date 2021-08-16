@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 709a231f1c3f401ceeee2b3aaf99ff275f107e30
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: e2269135cc24cc63e20d0c5d768da3a7576547aa63155ead5fa7a6490738e347
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409115"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898670"
 ---
 # <a name="enable-enterprise-state-roaming"></a>Activer Enterprise State Roaming
 

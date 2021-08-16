@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment activer le message de rapport ou les modules de signalement du hameçonnage pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5e336dcab9e3787d8c5245cdbe32855c59021f7
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 35d84f9b960f466c76adf1f278d8d3a40a725f38
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082767"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258588"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Activer le message de rapport ou les modules de signalement du hameçonnage
 
@@ -36,11 +36,11 @@ ms.locfileid: "53082767"
 > [!NOTE]
 > Si vous êtes un administrateur d’une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser la page **Soumissions** dans le portail Microsoft 365 Defender. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
-Les add-ins Signaler les messages et signaler le hameçonnage pour Outlook et Outlook sur le web (anciennement appelés Outlook Web App) permettent aux utilisateurs de signaler facilement les faux positifs (messages électroniques de qualité marqués comme faux) ou les faux négatifs (courrier électronique non autorisé) à Microsoft et à ses affiliés pour analyse.
+Les modules de signalement des messages et du hameçonnage pour Outlook et Outlook sur le web (anciennement appelés Outlook Web App) permettent aux utilisateurs de signaler facilement les faux positifs (messages électroniques de qualité marqués comme faux) ou les faux négatifs (courriers électroniques erronés autorisés) à Microsoft et à ses affiliés pour analyse.
 
 Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection de la messagerie. Par exemple, supposons que des personnes signalent de nombreux messages à l’aide du module de signalement du hameçonnage. Ces informations sont disponibles dans le Tableau de bord de sécurité et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies anti-hameçonnage peuvent avoir besoin d’être mises à jour.
 
-Vous pouvez installer le module de rapport de message ou de signalement du hameçonnage. Si vous souhaitez que vos utilisateurs signalent à la fois le courrier indésirable et le hameçonnage, déployez le add-in Signaler un message dans votre organisation. Pour plus d’informations, voir Activer le add-in Message de rapport.
+Vous pouvez installer le module de rapport de message ou de signalement du hameçonnage. Si vous souhaitez que vos utilisateurs signalent à la fois le courrier indésirable et les messages de hameçonnage, déployez le add-in Signaler un message dans votre organisation. Pour plus d’informations, voir Enable the Report Message add-in.
 
 Le add-in Report Message offre la possibilité de signaler les messages de courrier indésirable et de hameçonnage. Les administrateurs peuvent activer le add-in Message de rapport pour l’organisation, et les utilisateurs individuels peuvent l’installer eux-mêmes.
 
@@ -48,29 +48,32 @@ Le module de signalement du hameçonnage offre la possibilité de signaler uniqu
 
 Si vous êtes un utilisateur individuel, vous pouvez activer les deux modules pour vous-même.
 
-Si vous êtes un administrateur général ou un administrateur Exchange Online et que Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez activer le add-in Message de rapport et le module de signalement du hameçonnage pour votre organisation. Les deux modules sont désormais disponibles via [le déploiement centralisé.](../../admin/manage/centralized-deployment-of-add-ins.md)
+Si vous êtes un administrateur général ou un administrateur Exchange Online et que Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez activer le module de signalement des messages et le module de signalement du hameçonnage pour votre organisation. Les deux modules sont désormais disponibles via [le déploiement centralisé.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Le add-in Report Message et le add-in Report Phishing fonctionnent avec la plupart Microsoft 365 abonnements et les produits suivants :
   - Outlook sur le web
   - Outlook 2013 SP1 ou une ultérieure
-  - Outlook 2016 pour Mac
+  - Outlook 2016 pour Mac
   - Outlook incluses dans Microsoft 365 applications pour Enterprise
   - Outlook application pour iOS et Android
 
 - Les deux modules ne sont pas disponibles pour les boîtes aux lettres partagées ou les boîtes aux lettres dans des organisations Exchange locales.
 
-- Votre navigateur web existant doit fonctionner à la fois avec les modules de rapport de message et de signalement du hameçonnage. Toutefois, si vous remarquez que le module n’est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
+- Votre navigateur web existant doit fonctionner à la fois avec les add-ins Message de rapport et Signaler le hameçonnage. Toutefois, si vous remarquez que le module n’est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
 
-- Pour les installation organisationnelles, l’organisation doit être configurée pour utiliser l’authentification OAuth. Pour plus d’informations, [voir Determine if Centralized Deployment of add-ins works for your organization.](../../admin/manage/centralized-deployment-of-add-ins.md)
+- Pour les installation organisationnelles, l’organisation doit être configurée pour utiliser l’authentification OAuth. Pour plus d’informations, [voir Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
 - Les administrateurs doivent être membres du groupe de rôles Administrateurs globaux. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 - Pour plus d’informations sur la façon de signaler un message à l’aide de la fonctionnalité Signaler un message, voir Signaler les faux positifs et les [faux négatifs dans Outlook](report-false-positives-and-false-negatives.md).
 
+- Les organisations qui ont une solution de filtrage d’URL ou de sécurité (telle que Proxy et FireWall) doivent avoir des points de terminaison ipagave.azurewebsites.net et outlook.office.com autorisés à être atteints sur le protocole HTTPS.
+
+
 > [!IMPORTANT]
-> Nous ne recommandons pas l’expérience de rapport intégrée dans Outlook car elle ne peut pas utiliser la stratégie de [soumission d’utilisateur.](./user-submission.md) Nous vous recommandons plutôt d’utiliser le add-in Report Message ou report Phishing.
+> Nous vous déconseillons d’utiliser l’expérience de rapport intégrée dans Outlook car elle ne peut pas utiliser la stratégie de [soumission d’utilisateur.](./user-submission.md) Nous vous recommandons plutôt d’utiliser le add-in Report Message ou report Phishing.
 
 ## <a name="get-the-report-message-add-in"></a>Obtenir le add-in Message de rapport
 
@@ -111,13 +114,13 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
 3. Dans le **volant Déployer un** nouveau module complémentaire qui s’affiche, examinez les informations, puis cliquez sur **Suivant**.
 
-4. Sur la page suivante, cliquez **sur Choisir dans le Store.**
+4. Sur la page suivante, cliquez sur **Choisir dans le Store.**
 
    ![Déployer une nouvelle page de modules](../../media/NewAddInScreen2.png)
 
 5. Dans la page **Sélectionner un add-in** qui s’affiche, cliquez dans la zone De recherche, entrez Message de rapport, puis cliquez sur **Icône**   ![ ](../../media/search-icon.png) Rechercher. Dans la liste des résultats, recherchez Message de **rapport,** puis cliquez sur **Ajouter.**
 
-   ![Sélectionner les résultats de la recherche de add-in](../../media/NewAddInScreen3.png)
+   ![Sélectionner des résultats de recherche de add-in](../../media/NewAddInScreen3.png)
 
 6. Dans la boîte de dialogue qui s’affiche, examinez les informations de licence et de confidentialité, puis cliquez sur **Continuer**.
 
@@ -129,7 +132,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
      - **Juste moi**
 
    - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
-     - **Fixe (par défaut)**: le add-in est automatiquement déployé pour les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
+     - **Fixe (par défaut)**: le add-in est automatiquement déployé sur les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
      - **Disponible**: les utilisateurs peuvent installer le add-in sur **Home** \> **Get add-ins** \> **géré par l’administrateur.**
      - **Facultatif**: le add-in est automatiquement déployé pour les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
 
@@ -143,13 +146,13 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
 9. Dans la page **Annoncer le add-in** qui s’affiche, examinez les informations, puis cliquez sur **Fermer**.
 
-   ![Page Annoncer le add-in](../../media/announce-add-in-page.png)
+   ![Page d’annonce du add-in](../../media/announce-add-in-page.png)
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Passer en revue ou modifier les paramètres du add-in Message de rapport
 
 1. In the Centre d’administration Microsoft 365, go to the go to the **Paramètres** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Si vous ne voyez pas la page Des  applications intégrées, **rendez-vous** sur le lien Paramètres Applications intégrées en haut de la \>  \>  page **Applications intégrées.**
 
-   ![Page Services et Add-Ins dans le nouveau centre Administration Microsoft 365 web](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Page Services et Add-Ins dans le nouveau centre de Administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Recherchez et sélectionnez le add-in **Message** de rapport.
 
@@ -193,7 +196,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
 3. Dans le **volant Déployer un** nouveau module complémentaire qui s’affiche, examinez les informations, puis cliquez sur **Suivant**.
 
-4. Sur la page suivante, cliquez **sur Choisir dans le Store.**
+4. Sur la page suivante, cliquez sur **Choisir dans le Store.**
 
    ![Déployer une nouvelle page de modules](../../media/NewAddInScreen2.png)
 
@@ -209,7 +212,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
      - **Juste moi**
 
    - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
-     - **Fixe (par défaut)**: le add-in est automatiquement déployé pour les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
+     - **Fixe (par défaut)**: le add-in est automatiquement déployé sur les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
      - **Disponible**: les utilisateurs peuvent installer le add-in sur **Home** \> **Get add-ins** \> **géré par l’administrateur.**
      - **Facultatif**: le add-in est automatiquement déployé pour les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
 
@@ -225,4 +228,4 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
 2. Recherchez et sélectionnez **le** module de signalement du hameçonnage.
 
-3. Dans le flyout **Modifier le hameçonnage** du rapport qui s’affiche, examinez et modifiez les paramètres selon le cas pour votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+3. Dans le volant **Modifier le hameçonnage** du rapport qui s’affiche, examinez et modifiez les paramètres selon les cas de votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.

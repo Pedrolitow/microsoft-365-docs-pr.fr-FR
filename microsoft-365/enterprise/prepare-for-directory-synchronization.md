@@ -25,13 +25,13 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Décrit comment préparer la mise en service des utilisateurs Microsoft 365 l’aide de la synchronisation d’annuaires et les avantages à long terme de l’utilisation de cette méthode.
-ms.openlocfilehash: ee6cfe9adfe029e620d2465f08a3fbe1e9290503
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: Décrit comment préparer la mise en service des utilisateurs Microsoft 365 à l’aide de la synchronisation d’annuaires et les avantages à long terme de l’utilisation de cette méthode.
+ms.openlocfilehash: fc2fa76e61afeb0efeeef9fca7f66ac34ec83c77169551b859724b86b766c2c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885134"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 
@@ -60,7 +60,7 @@ Dans vos AD DS, effectuer les tâches de nettoyage suivantes pour chaque compte 
 
 1. Assurez-vous qu’il s’agit d’une adresse de messagerie valide et unique dans **l’attribut proxyAddresses.**
 
-2. Supprimez les valeurs en double dans **l’attribut proxyAddresses.**
+2. Supprimez les valeurs dupliquées dans **l’attribut proxyAddresses.**
 
 3. Si possible, assurez-vous d’une valeur valide et unique pour l’attribut **userPrincipalName** dans l’objet utilisateur de **l’utilisateur.** Pour une meilleure expérience de synchronisation, assurez-vous que l’UPN AD DS correspond à l’UPN Azure AD. Si un utilisateur n’a pas de valeur pour l’attribut **userPrincipalName,** l’objet utilisateur doit contenir une valeur valide et unique pour l’attribut **sAMAccountName.**  Supprimez les valeurs dupliquées dans **l’attribut userPrincipalName.**
 
@@ -105,7 +105,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - La valeur d’attribut doit être unique dans le répertoire.
 
     > [!NOTE]
-    > S’il existe des valeurs en double, le premier utilisateur avec la valeur est synchronisé. Les utilisateurs suivants n’apparaîtront pas dans Microsoft 365. Vous devez modifier la valeur dans Microsoft 365 ou modifier les deux valeurs dans AD DS afin que les deux utilisateurs apparaissent dans Microsoft 365.
+    > S’il existe des valeurs en double, le premier utilisateur avec la valeur est synchronisé. Les utilisateurs suivants n’apparaîtront pas dans Microsoft 365. Vous devez modifier la valeur dans Microsoft 365 ou modifier les deux valeurs dans AD DS pour que les deux utilisateurs apparaissent dans Microsoft 365.
 
 - **mailNickname** (Exchange alias)
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6d7ccaa890c8678bf1d02e578f33019208e6d2a9050f286435f913e67831d35d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 682b7729bbfe49a0889065b9cabcae980e031881
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828645"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247377"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Pilote Microsoft Defender pour le point de terminaison
 

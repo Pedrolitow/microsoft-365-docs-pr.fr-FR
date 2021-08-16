@@ -1,5 +1,5 @@
 ---
-title: Bureau géré Microsoft’application requise
+title: Microsoft Manged Desktop’application requise
 description: ''
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -9,23 +9,23 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 322a46ce48cce4d080e51f482178462934d5c8f2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: d41cb16636a1a35673495b9b7f8538218f4919c290fbee9896781da46acf746f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659713"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898634"
 ---
-# <a name="microsoft-managed-desktop-app-requirements"></a>Bureau géré Microsoft’application requise
+# <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Manged Desktop’application requise
 
 <!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
-Bureau géré Microsoft nécessite que nous gérions les appareils à l’aide d’une approche spécifique pour garantir les performances, la fiabilité et la serviceabilité des appareils.
+Microsoft Manged Desktop exige que nous gérions les appareils à l’aide d’une approche spécifique pour garantir les performances, la fiabilité et la serviceabilité des appareils.
 
 
-|Domaine de gestion  |Bureau géré Microsoft approche  |
+|Domaine de gestion  |Microsoft Manged Desktop approche  |
 |---------|---------|
 |Configuration de l’appareil ou gestion des stratégies     |  Microsoft Intune       |
 |Gestion des applications     | Microsoft Intune et Portail d’entreprise        |
@@ -41,4 +41,4 @@ Bureau géré Microsoft nécessite que nous gérions les appareils à l’aide d
 
 
 
-Bureau géré Microsoft surveiller d’autres logiciels en cours d’exécution sur des appareils gérés. Si cela a un impact négatif sur la gestion des appareils, la sécurité, les performances ou la fiabilité des appareils, vous demandons peut-être une [exception au plan de service.](customizing.md)
+Microsoft Manged Desktop surveiller d’autres logiciels en cours d’exécution sur des appareils gérés. Si elle a un impact négatif sur la gestion des appareils, la sécurité, les performances ou la fiabilité des appareils, vous demandons peut-être une [exception au plan de service.](customizing.md)

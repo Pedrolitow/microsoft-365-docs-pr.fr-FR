@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3b30d73572f6d1f0b67c7bdd434400cd28c86d5e1a69bc0fcda1410fe50a1df9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa083adfc6734ad8fbb230f4fa35097a16698e23
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794437"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247418"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
 
@@ -50,9 +50,9 @@ Vous pouvez évaluer l’impact d’une règle de réduction de la surface d’a
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Contrôle de sécurité pour la règle de réduction de la surface d’attaque":::
 
-Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer le pourcentage de vos appareils qui peuvent accepter une nouvelle stratégie autorisant la règle en mode de blocage sans affecter la productivité.
+Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer quel pourcentage de vos appareils peuvent accepter une nouvelle stratégie permettant d’activer la règle en mode de blocage sans affecter la productivité.
 
-Pour plus [d’informations](enable-attack-surface-reduction.md#requirements) sur les systèmes d’exploitation pris en charge et d’autres informations sur les conditions requises, voir La procédure requise dans l’article « Activer les règles de réduction de la surface d’attaque ».
+Consultez [la procédure requise](enable-attack-surface-reduction.md#requirements) dans l’article « Activer les règles de réduction de la surface d’attaque » pour plus d’informations sur les systèmes d’exploitation pris en charge et des informations supplémentaires sur les conditions requises.
 
 ## <a name="audit-mode-for-evaluation"></a>Mode audit pour l’évaluation
 
@@ -126,7 +126,7 @@ Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows 
 
 Defender pour le point de terminaison fournit des rapports détaillés pour les événements et les blocages dans le cadre de scénarios d’investigation d’alerte.
 
-Vous pouvez interroger Defender pour obtenir des données de point de [terminaison Microsoft 365 Defender](microsoft-defender-security-center.md) à l’aide d’une [recherche avancée.](advanced-hunting-query-language.md) Si vous exécutez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour comprendre l’impact des règles de réduction de la surface d’attaque sur votre environnement.
+Vous pouvez interroger Defender pour obtenir des données de point de terminaison [dans Microsoft 365 Defender](microsoft-defender-security-center.md) à l’aide d’un [recherche avancée.](advanced-hunting-query-language.md) Si vous exécutez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour comprendre l’impact des règles de réduction de la surface d’attaque sur votre environnement.
 
 Voici un exemple de requête :
 

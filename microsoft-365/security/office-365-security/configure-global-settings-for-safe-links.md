@@ -18,12 +18,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher et configurer les paramètres globaux (la liste « Bloquer les URL suivantes » et la protection pour les applications Office 365) pour les liens Coffre dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 46bafd89400dfa551641c055f6f0e208c0ecd49f
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 9e17aad0910c1e069fe80445c76882aa239217f2
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108042"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247310"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurer les paramètres globaux pour Coffre liens vers Microsoft Defender pour Office 365
 
@@ -74,9 +74,9 @@ Vous pouvez configurer les paramètres globaux des liens Coffre dans le portail 
 
 ## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>Configurer la liste « Bloquer les URL suivantes » dans le portail Microsoft 365 Defender
 
-La **liste Bloquer les URL suivantes** identifie les liens qui doivent toujours être bloqués par Coffre’analyse des liens dans les applications pris en charge. Pour plus d’informations, consultez la liste « Bloquer les URL suivantes » [pour Coffre liens.](safe-links.md#block-the-following-urls-list-for-safe-links)
+La **liste Bloquer les URL suivantes** identifie les liens qui doivent toujours être bloqués par Coffre’analyse des liens dans les applications pris en charge. Pour plus d’informations, consultez la liste « Bloquer les URL suivantes » [Coffre liens.](safe-links.md#block-the-following-urls-list-for-safe-links)
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Links**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Coffre Links** in the **Policies** section.
 
 2. Dans la page **Coffre liens,** cliquez sur **Paramètres globaux.** Dans la **Coffre liens de** votre organisation qui s’affiche, allez dans la zone Bloquer les URL **suivantes.**
 
@@ -121,11 +121,11 @@ Vous pouvez utiliser la cmdlet **Get-AtpPolicyForO365** pour afficher les entré
 
 Coffre La protection des liens Office 365 applications s’applique aux documents dans les applications Office bureau, mobiles et web pris en charge. Pour plus d’informations, [Coffre paramètres de liens](safe-links.md#safe-links-settings-for-office-365-apps)pour Office 365 applications.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Links**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Coffre Links** in the **Policies** section.
 
 2. Dans la page **Coffre liens,** cliquez sur **Paramètres globaux.** Dans la **Coffre** liens de votre organisation qui s’affiche, configurez les paramètres suivants dans la Paramètres qui s’appliquent au contenu de la section applications Office 365 **pris** en charge :
 
-   - **Utilisez Coffre** liens dans les applications Office 365 : vérifiez que le basculement est à droite pour activer les liens Coffre pour les applications Office 365 pris en charge : activer/ ![ ](../../media/scc-toggle-on.png) activer.
+   - **Utilisez Coffre** liens dans les applications Office 365 : vérifiez que le basculement se trouve à droite pour activer Coffre Liens pour les applications Office 365 pris en charge : activer/ ![ ](../../media/scc-toggle-on.png) activer.
 
    - Ne suivez pas le moment où les utilisateurs cliquent sur les liens protégés dans les applications **Office 365**: déplacez le bouton bascule vers la gauche pour suivre les clics des utilisateurs liés aux URL bloquées dans les applications Office 365 pris en charge : basculez vers la ![ ](../../media/scc-toggle-off.png) gauche.
 
@@ -143,7 +143,7 @@ Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowCli
 
 Cet exemple configure les paramètres suivants pour la protection Coffre liens dans Office 365 applications :
 
-- Coffre Les liens pour Office 365 applications sont activés (nous n’utilisons pas le paramètre _EnableSafeLinksForO365Clients_ et la valeur par défaut est $true).
+- Coffre Les liens pour Office 365 applications sont activés (nous n’utilisons pas le paramètre _EnableSafeLinksForO365Clients,_ et la valeur par défaut est $true).
 - L’utilisateur clique sur les URL bloquées dans les Office 365 les applications sont suivis.
 - Les utilisateurs ne sont pas autorisés à accéder à l’URL bloquée d’origine dans les applications Office 365 pris en charge (nous n’utilisons pas le paramètre _AllowClickThrough_ et la valeur par défaut est $false).
 
@@ -155,9 +155,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
-Pour vérifier que vous avez correctement configuré les paramètres globaux des liens Coffre (la liste Bloquer les URL suivantes et les paramètres de protection des applications Office 365), vous devez suivre l’une des **étapes** suivantes :
+Pour vérifier que vous avez correctement configuré les paramètres globaux des liens Coffre (la liste Bloquer les URL suivantes et les **paramètres** de protection des applications Office 365), vous devez suivre l’une des étapes suivantes :
 
-- Dans le portail Microsoft 365 Defender, consultez la section Stratégies de stratégies de menace des règles de messagerie **&** Règles & Stratégies de menace Coffre Les liens cliquent sur paramètres globaux et vérifient les paramètres dans le volant qui \>  \>  \>  s’affiche. \>  \> 
+- Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Coffre Links** in the **Policies** section click \> Global **settings**, and verify the settings in the fly out that appears.
 
 - Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell, exécutez la commande suivante et vérifiez les paramètres :
 

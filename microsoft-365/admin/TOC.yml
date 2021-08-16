@@ -268,7 +268,7 @@
             - name: Gérer des compléments dans le centre d’administration
               href: manage/manage-addins-in-the-admin-center.md
             - name: Forum aux questions sur le déploiement centralisé
-              href: manage/centralized-deployment-faq.md
+              href: manage/centralized-deployment-faq.yml
         - name: Gérer les actualités de l’industrie
           href: manage/manage-industry-news.md
         - name: Gérer les paramètres de Office Scripts
@@ -425,3 +425,5 @@
       href: /office/troubleshoot/
     - name: Contacter l’assistance
       href: ../business-video/get-help-support.md
+    - name: Guide de Navigation
+      href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json

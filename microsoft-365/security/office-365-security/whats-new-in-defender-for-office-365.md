@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0eeba9fb8678a4b71e8fdaefb05acb0ec55978
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 0963d80699e171ea72c8873a36da28800bb5bf88
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726295"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247443"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -45,16 +45,25 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 ## <a name="july-2021"></a>Juillet 2021
 
 - [Améliorations apportées à l’analyse du courrier électronique dans les enquêtes automatisées](email-analysis-investigations.md)
+- [Remise avancée](configure-advanced-delivery.md): introduction d’une nouvelle fonctionnalité de configuration de la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés aux boîtes aux lettres d’opération de sécurité.
 - [Coffre Liens pour Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- Nouvelles stratégies d’alerte pour les scénarios suivants : boîtes aux lettres compromises, hameçonnage de formulaires, messages malveillants remis en raison de remplacements et de l’arrondi zap
+  - Activité suspecte de transfert d’e-mail
+  - Utilisateur restreint au partage de formulaires et à la collecte de réponses
+  - Formulaire bloqué en raison d’une tentative de hameçonnage potentielle
+  - Formulaire marqué et confirmé comme hameçonnage
+  - [Nouvelles stratégies d’alerte pour ZAP](../../compliance/new-defender-alert-policies.md)
+- Les alertes Microsoft Defender pour Office 365 sont désormais intégrées dans Microsoft 365 Defender - Microsoft 365 Defender de la file d’attente des alertes unifiées et de la file d’attente des [alertes unifiées](../defender/investigate-alerts.md)
+- [](user-tags.md) Les balises utilisateur sont désormais intégrées aux expériences d’alerte de Microsoft Defender pour Office 365, notamment : la file d’attente des alertes et les détails dans Office 365 Security & Compliance, et l’application de stratégies d’alerte personnalisées aux balises utilisateur pour créer des stratégies d’alerte ciblées. 
+  - Les balises sont également disponibles dans la file d’attente des alertes unifiées dans le centre Microsoft 365 Defender (Microsoft Defender pour Office 365 Plan 2)
 
 
 ## <a name="june-2021"></a>Juin 2021
 
-- Le nouveau premier contact conseil de sécurité dans les stratégies anti-hameçonnage. Cette conseil de sécurité s’affiche lorsque les destinataires reçoivent pour la première fois un message électronique d’un expéditeur ou ne reçoivent pas souvent de courriers électroniques d’un expéditeur. Pour plus d’informations sur ce paramètre et comment le configurer, consultez les articles suivants :
-
-- [Premier contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-- [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
-- [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)
+- Le nouveau premier contact conseil de sécurité dans les stratégies anti-hameçonnage. Cette conseil de sécurité s’affiche lorsque les destinataires reçoivent pour la première fois un message électronique d’un expéditeur ou ne reçoivent pas souvent de courrier d’un expéditeur. Pour plus d’informations sur ce paramètre et comment le configurer, consultez les articles suivants :
+  - [Premier contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+  - [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
+  - [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>Avril/mai 2021
 
@@ -65,9 +74,9 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 ## <a name="februarymarch-2021"></a>Février/mars 2021
 
 - Intégration de l’ID d’alerte (recherche à l’aide de l’ID d’alerte et Alert-Explorer navigation) dans les expériences [de recherche](threat-explorer.md)
-- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de recherche](threat-explorer.md)
+- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de chasse](threat-explorer.md)
 - Extension de la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 (limite précédente) à 30 jours dans les expériences de [repérage](threat-explorer.md)
-- Nouveaux tableaux  croisés dynamiques  de repérage appelés domaine dont l’identité a été usurpée et utilisateur usurpé d’identité dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés. Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
+- Nouveaux pivots  de repérage appelés domaine emprunt d’identité et utilisateur dont l’identité est usurpée dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés.  Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
 ## <a name="december-2020"></a>Décembre 2020
 
@@ -108,17 +117,17 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 
 - [Coffre documents dans Microsoft 365](safe-docs.md) **(prévisualisation)**
 
-## <a name="december-2019"></a>Décembre 2019
+## <a name="december-2019"></a>Décembre 2019
 
 - [Exporter les données de clic d’URL](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) pour l’analyse hors connexion (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
 - [Utiliser les affichages campagne dans Microsoft Defender pour Office 365 **(prévisualisation)**](campaigns.md) (Microsoft Defender pour Office 365 Plan 2)
 
-## <a name="november-2019"></a>Novembre 2019
+## <a name="november-2019"></a>Novembre 2019
 
 - [Découvrez les nouvelles fonctionnalités de](address-compromised-users-quickly.md) détection et de réponse utilisateur compromises **(prévisualisation)**(Microsoft Defender pour Office 365 Plan 2)
 
-## <a name="september-2019"></a>Septembre 2019
+## <a name="september-2019"></a>Septembre 2019
 
 - [Utiliser des fonctionnalités automatisées](automated-investigation-response-office.md) d’examen et de réponse (Microsoft Defender pour Office 365 Plan 2)
 
@@ -126,7 +135,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 
 - [Afficher les en-têtes de courrier électronique et télécharger](investigate-malicious-email-that-was-delivered.md) le corps de l’e-mail (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Afficher la chronologie du courrier](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) électronique (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 

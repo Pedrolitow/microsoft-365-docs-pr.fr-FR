@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: ad9bf2ba40ede2d76246c56bf94b90e0e96aeeff
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 3f6e25a940835eae16f897d60a3249ad670dd8fa9df01bf7bb4fd73937948025
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288274"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865442"
 ---
 # <a name="predictive-coding-reference-preview"></a>Référence de codage prédictif (aperçu)
 

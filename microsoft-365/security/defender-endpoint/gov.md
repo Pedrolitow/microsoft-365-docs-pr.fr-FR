@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bcd8dabfae373e382a02d982ef764df38516c297d745d14c1e2b486351c3ad7f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c804aa9b557e87b15cf40721239957c122fec22
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845273"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247476"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
@@ -73,6 +73,7 @@ Les versions de système d’exploitation suivantes sont pris en charge :
 
 Version du système d’exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
+Windows 10 version 21H1 et versions supérieures|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 20H2 (avec [KB4586853)](https://support.microsoft.com/help/4586853)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 2004 (avec [KB4586853](https://support.microsoft.com/help/4586853))|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1909 (avec [KB4586819](https://support.microsoft.com/help/4586819))|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -83,7 +84,7 @@ Windows 10, version 1709|![Non](images/svg/check-no.svg) <p> Remarque : ne sera 
 Windows 10, version 1703 et antérieures|![Non](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge
 Windows Server 2019 (avec [KB4586839)](https://support.microsoft.com/help/4586839)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 8.1 Entreprise|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 8 Pro|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -107,7 +108,7 @@ Version du système d’exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows Server 2019|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 
 ## <a name="required-connectivity-settings"></a>Paramètres de connectivité requis
@@ -129,7 +130,7 @@ Pour plus d’informations, voir [Configurer les paramètres de proxy](configure
 
 ### <a name="service-backend-ip-ranges"></a>Plages d’adresses IP du système de service
 
-Si vos périphériques réseau ne supportent pas les règles DNS, utilisez plutôt des plages IP.
+Si vos périphériques réseau ne prisent pas en charge les règles DNS, utilisez plutôt des plages IP.
 
 Defender pour le point de terminaison pour les clients du gouvernement des États-Unis est créé dans l’environnement Azure US Government, déployé dans les régions suivantes :
 
@@ -159,12 +160,12 @@ Voici les lacunes connues :
 
 Nom de la fonctionnalité|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Découverte du réseau|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement
+Découverte du réseau|![Non](images/svg/check-no.svg) En cours de déploiement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement
 Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement
-Intégrations : Azure Sentinel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Alertes <p> ![Non](images/svg/check-no.svg) Incidents & données brutes : en développement|![Oui](images/svg/check-yes.svg) Alertes <p> ![Non](images/svg/check-no.svg) Incidents & données brutes : en développement
+Intégrations : Azure Sentinel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Alertes <p> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation|![Oui](images/svg/check-yes.svg) Alertes <p> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation
 Intégrations : Microsoft Cloud App Security|![Oui](images/svg/check-yes.svg)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement
 Intégrations : Gestionnaire de conformité Microsoft|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Intégrations : Microsoft Defender pour l’identité|![Non](images/svg/check-no.svg) En cours de déploiement|![Non](images/svg/check-no.svg) En cours de déploiement|![Non](images/svg/check-no.svg) En cours de déploiement
-Intégrations : point de terminaison Microsoft DLP|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement
+Intégrations : point de terminaison Microsoft DLP|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Non](images/svg/check-no.svg) En cours de déploiement
 Intégrations : Microsoft Power Automate & Azure Logic Apps|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Azure Logic Apps <p> ![Non](images/svg/check-no.svg) Power Automate : en développement
 Spécialistes des menaces Microsoft|![Non](images/svg/check-no.svg) On engineering backlog|![Non](images/svg/check-no.svg) On engineering backlog|![Non](images/svg/check-no.svg) On engineering backlog

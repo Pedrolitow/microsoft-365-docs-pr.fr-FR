@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Choisissez la façon dont vous affichez le contenu Advanced eDiscovery, tel que le texte, l’annoter, la conversion ou l’affichage natif.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7c2adf5a1b06761832b96a06a85f72c471e5dd1c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0cbb720ee935b9c6046eb2d7b78b1bcf8a06e9284bc01133145eb6c8ed0820ad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228518"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865379"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Afficher des documents dans un jeu à réviser dans Advanced eDiscovery
 
