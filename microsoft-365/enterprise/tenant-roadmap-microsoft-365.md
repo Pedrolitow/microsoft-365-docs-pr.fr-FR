@@ -2,8 +2,8 @@
 title: Feuille de route du client pour Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Feuille de route pour configurer vos locataires pour Microsoft 365.
-ms.openlocfilehash: d96d6246bfe38c9e3a5f3aadf04bf5cfe19ccd2f54697141a7c5463c72a6aea2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d041c87e12bfb3025592cb14cda5413c805dc880
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794713"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354211"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Feuille de route du client pour Microsoft 365
 
@@ -33,7 +33,7 @@ Pour préparer votre client pour les utilisateurs, les groupes, les licences et 
 
 Après vous être assuré que votre réseau est optimisé pour l’accès à Microsoft 365 pour les travailleurs locaux et distants, vos prochaines tâches importantes sont la planification et la configuration de votre client Microsoft 365 pour les noms de domaine DNS, les services communs et pour cette infrastructure d’identités qui prend en charge la connectez-vous utilisateur sécurisée.
 
-### <a name="plan"></a>Planification
+### <a name="plan"></a>Prévision
 
 Pour planifier l’implémentation de votre client :
 
@@ -57,7 +57,7 @@ Pour déployer votre client :
 
 Microsoft continue d’ouvrir de nouveaux emplacements géographiques de centre de données (Microsoft 365 services). Ces nouvelles géos de centres de données ajoutent de la capacité et des ressources de calcul pour prendre en charge la demande des clients et la croissance de l’utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles.
 
-Pour plus d’informations, voir [Déplacement de données principales vers de nouvelles Microsoft 365 de centres de données.](moving-data-to-new-datacenter-geos.md)
+Pour plus d’informations, voir Déplacement de données principales vers [de nouvelles Microsoft 365 de centres de données.](moving-data-to-new-datacenter-geos.md)
 
 
 ## <a name="deploy-microsoft-365-multi-geo"></a>Déployer Microsoft 365 multigéogé

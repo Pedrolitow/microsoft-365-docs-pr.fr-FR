@@ -1,7 +1,7 @@
 ---
 title: Authentification fédérée haute disponibilité, phase 1 Configurer Azure
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour héberger l’authentification fédérée haute disponibilité pour Microsoft 365.'
-ms.openlocfilehash: e9b68fe1fa2c4028186d86b5cf6d419f63cfc79d57d5de8c4817c762791b3a55
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 759b6f72a0d86a090c0db265abd23feea6aa1543
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864762"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354271"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
@@ -41,7 +41,7 @@ Avant de commencer à configurer les composants Azure, renseignez les tableaux s
   
 |**Élément**|**Paramètre de configuration**|**Description**|**Valeur**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nom du réseau virtuel  <br/> |Nom à attribuer au réseau VNet (par exemple, FedAuthNet).  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Nom du réseau virtuel  <br/> |Nom à attribuer au réseau VNet (par exemple FedAuthNet).  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Emplacement du réseau virtuel  <br/> |Centre de données Azure régional qui contiendra le réseau virtuel.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l'interface de votre périphérique VPN sur Internet.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |Espace d'adressage du réseau virtuel  <br/> |Espace d'adressage du réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d'adressage.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
@@ -57,7 +57,7 @@ Pour les trois premiers sous-réseaux, spécifiez un nom et un espace d’adress
     
 2. Convertissez les bits résultants en nombres décimaux et exprimez-les sous forme d'espace d'adressage, en définissant la longueur du préfixe sur une valeur équivalente à la taille du sous-réseau de passerelle.
     
-Consultez la calculatrice d’espace d’adressare pour les [sous-réseaux](address-space-calculator-for-azure-gateway-subnets.md) de passerelle Azure pour un bloc de commandes PowerShell et une application console C# Python qui effectue ce calcul pour vous.
+Consultez la calculatrice [d’espace](address-space-calculator-for-azure-gateway-subnets.md) d’adressare pour les sous-réseaux de passerelle Azure pour un bloc de commandes PowerShell et une application console C# Python qui effectue ce calcul pour vous.
   
 Renseignez-vous auprès de votre service informatique pour déterminer ces espaces d'adressage à partir de l'espace d'adressage de réseau virtuel.
   
@@ -283,7 +283,7 @@ Ensuite, définissez les noms de trois groupes à haute disponibilité. Rempliss
   
 Vous aurez besoin de ces noms lorsque vous créerez les machines virtuelles aux phases 2, 3 et 4.
   
-Créez les nouveaux groupes à haute disponibilité à l’Azure PowerShell commandes.
+Créez les nouveaux groupes à haute disponibilité avec Azure PowerShell commandes.
   
 ```powershell
 $locName="<the Azure location for your new resource group>"

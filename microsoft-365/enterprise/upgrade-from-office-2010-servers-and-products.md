@@ -1,7 +1,7 @@
 ---
 title: Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: overview
@@ -23,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: Commencez à planifier votre mise à niveau à partir Office 2010 et des applications clientes, car la prise en charge se termine bientôt et les contrats de support personnalisés ne sont pas disponibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4c17fcd6738b1a6e1d8359cace27b7feaed3afa5f4699391fbacd79c8ddcc9b2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15d70ba1a090af9c378f7a041313620703c2a667
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878052"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354175"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 

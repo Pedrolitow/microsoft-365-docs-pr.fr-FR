@@ -1,7 +1,7 @@
 ---
 title: Ressources pour vous aider à mettre à niveau Office serveurs et clients 2007
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/01/2018
 audience: ITPro
@@ -24,12 +24,12 @@ f1.keywords:
 - NOCSH
 description: Cet article fournit des ressources pour vous aider à mettre à niveau Office serveurs et clients 2007, à mesure que la prise en charge de Office 2007 a pris fin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 661dfca0c9d38d48a083eb9724aeafb9d433d9fffad2d2cc882078c17860d265
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3f90bed99816378d4e44bb714b4c6104a9302b7
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878074"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354187"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à mettre à niveau Office serveurs et clients 2007
 
@@ -56,7 +56,7 @@ Une fois le support technique terminé pour un produit Microsoft, il n’y a plu
 - Options d’assistance gratuites ou payantes disponibles (y compris les contrats de support personnalisés)
 - Nouvelles mises à jour de contenu technique en ligne
 
-Que vous s’il s’agit d’une organisation d’entreprise ou d’un particulier, vous avez plusieurs options à envisager.
+Que vous êtes une organisation d’entreprise ou un particulier, vous avez plusieurs options à envisager.
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Je suis un particulier. Que dois-je faire ?
 

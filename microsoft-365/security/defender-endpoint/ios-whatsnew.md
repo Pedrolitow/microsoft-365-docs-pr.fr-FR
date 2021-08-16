@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 54f1cb3ee31571af7cb664f7327a80016ab2fa6b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e7916ad50a6331baedb4a033e9b8aaa881b13e536153c4069bbfe36fa28ba670
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902846"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour Endpoint sur iOS
 
@@ -37,7 +37,7 @@ Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez
 
 ## <a name="1117240101"></a>1.1.17240101
 - La prise en charge de la gestion des applications mobiles (MAM) via Intune est généralement disponible avec cette version. Pour plus d’informations, voir Microsoft Defender pour les signaux de risque de point de terminaison [disponibles pour vos stratégies de protection des applications](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322)
-- **La détection d’jailbreak** est généralement disponible. Pour plus d’informations, voir [La stratégie d’accès conditionnel du programme d’installation basée sur les signaux de risque de l’appareil.](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- **La détection de jailbreak** est généralement disponible. Pour plus d’informations, voir [La stratégie d’accès conditionnel du programme d’installation basée sur les signaux de risque de l’appareil.](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 - **La configuration automatique du profil VPN pour** les appareils inscrits via Microsoft Endpoint Manager (Intune) est généralement disponible. Pour plus d’informations, [voir profil VPN de configuration automatique pour les appareils iOS inscrits.](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
 - Corrections de bogues.
 

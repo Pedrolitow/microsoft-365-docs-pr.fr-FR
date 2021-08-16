@@ -2,8 +2,8 @@
 title: Authentification unique transparente Azure AD pour votre environnement de test Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/21/2019
 audience: ITPro
@@ -18,22 +18,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 16cf76ffbe775c362ce3a3401db80a043d86b8bb598fe0b31f4587c670df6075
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8304d8191d31f4e40dd35920c571c5fa01d258ee
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835030"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354247"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Authentification unique transparente Azure AD pour votre environnement de test Microsoft 365
 
 *Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
 
-Azure AD Seamless Single Sign-On (Seamless SSO) connecte automatiquement les utilisateurs lorsqu’ils se connectent à leur PC ou appareils connectés au réseau de leur organisation. Azure AD Seamless SSO fournit aux utilisateurs un accès facile aux applications basées sur le cloud sans avoir besoin de composants locaux supplémentaires.
+Azure AD Seamless Single Sign-On (Seamless SSO) connecte automatiquement les utilisateurs lorsqu’ils sont sur leurs PC ou appareils connectés au réseau de leur organisation. Azure AD Seamless SSO fournit aux utilisateurs un accès facile aux applications basées sur le cloud sans avoir besoin de composants locaux supplémentaires.
 
 Cet article explique comment configurer votre environnement de test Microsoft 365 pour l' sso transparente Azure AD.
 
-La configuration de l' ssO transparente Azure AD implique deux phases :
+La configuration de l' sso transparente Azure AD implique deux phases :
 - [Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Phase 2 : Configuration de l’authentification unique transparente Azure AD pour Azure AD Connect sur APP1](#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso)
    
@@ -94,7 +94,7 @@ Ensuite, testez la possibilité de vous inscrire à votre abonnement avec le <st
 
 4. Dans **l’intranet local,** sélectionnez **Avancé**.
 
-5. Dans **Ajouter ce site web à la zone,** entrez **https <span>://</span>autologon.microsoftazuread-sso.com**, **sélectionnez Ajouter**  >  **Fermer**  >    >  **OK**.
+5. Dans **Ajouter ce site web à la zone,** entrez **https <span>://</span>autologon.microsoftazuread-sso.com**, **sélectionnez Ajouter**  >  **Fermer**  >  **OK**  >  **.**
 
 6. Déconnectez-vous, puis reconnectez-vous avec un compte différent.
 

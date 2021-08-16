@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8c4af97ed6ef6e14ed1aeede655ab48f04998d3d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2b7a3ae0c7dcf64792f61cb183e2bee5f34f2c1a6d7009b421ea767ef44aea06
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655598"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902887"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 
@@ -83,7 +83,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
    L’installation se poursuit.
 
    > [!CAUTION]
-   > Si vous ne sélectionnez pas **Autoriser,** l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations sur](mac-support-kext.md) la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
+   > Si vous ne sélectionnez pas **Autoriser,** l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations](mac-support-kext.md) sur la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
 
 > [!NOTE]
 > MacOS peut demander à redémarrer l’appareil lors de la première installation de Microsoft Defender pour Endpoint. La protection en temps réel n’est pas disponible tant que l’appareil n’est pas redémarrage.
@@ -191,7 +191,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
    > Si vous double-cliquez, vous recevez le message suivant :
    >
    > > **« MDATP MacOS VERIFIE » ne peut pas être ouvert, car le développeur ne peut pas être vérifié.**<br/>
-   > > macOS ne peut pas vérifier que cette application est exempt de programmes malveillants.<br/>
+   > > MacOS ne peut pas vérifier que cette application est exempt de programmes malveillants.<br/>
    > > **\[ Déplacer vers \] annuler la corbeille** **\[ \]**
 
 7. Cliquez sur **Annuler**.
@@ -228,4 +228,4 @@ Pour [plus d’informations](mac-resources.md#logging-installation-issues) sur l
 
 ## <a name="uninstallation"></a>Désinstallation
 
-Voir [Désinstallation](mac-resources.md#uninstalling) pour plus d’informations sur la suppression de Microsoft Defender pour endpoint sur macOS des appareils clients.
+Voir [Désinstallation](mac-resources.md#uninstalling) pour plus d’informations sur la suppression de Microsoft Defender pour Endpoint sur macOS des appareils clients.

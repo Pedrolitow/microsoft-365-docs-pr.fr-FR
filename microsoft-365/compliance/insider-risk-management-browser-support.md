@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ed4fe1e24a4414c4dad8f596df75705d1f6231a4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: cb0f84cac5b03f6b51d2853966be26686f8a13ec417230da670cae3106ced20c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885962"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection-preview"></a>En savoir plus et configurer la détection du signal du navigateur de gestion des risques internes (aperçu)
 
-Les navigateurs web sont souvent utilisés par les utilisateurs pour accéder aux fichiers sensibles et non sensibles au sein d’une organisation. La gestion des risques internes permet à votre organisation de détecter et d’agir sur les signaux d’exfiltration du navigateur pour tous les fichiers non exécutables dans les navigateurs [Microsoft Edge](https://www.microsoft.com/edge) [et Google Chrome.](https://www.google.com/chrome) Avec ces signaux, les analystes et enquêteurs peuvent agir rapidement lorsque l’une des activités suivantes est effectuée par les utilisateurs de stratégies dans l’étendue lors de l’utilisation de ces navigateurs :
+Les navigateurs web sont souvent utilisés par les utilisateurs pour accéder aux fichiers sensibles et non sensibles au sein d’une organisation. La gestion des risques internes permet à votre organisation de détecter et d’agir sur les signaux d’exfiltration du navigateur pour tous les fichiers non exécutables dans les navigateurs [Microsoft Edge](https://www.microsoft.com/edge) et [Google Chrome.](https://www.google.com/chrome) Avec ces signaux, les analystes et enquêteurs peuvent agir rapidement lorsque l’une des activités suivantes est effectuée par les utilisateurs de stratégies dans l’étendue lors de l’utilisation de ces navigateurs :
 
 - Fichiers copiés dans le stockage cloud personnel
 - Fichiers imprimés sur des périphériques locaux ou réseau
@@ -57,9 +57,9 @@ Pour des exigences de configuration de navigateur spécifiques, voir les section
 ### <a name="microsoft-edge-browser-requirements"></a>Microsoft Edge navigateur requis
 
 - Répondre aux exigences courantes
-- Microsoft Edge version x64, 91.0.864.41 ou supérieure
+- Microsoft Edge version x64, 91.0.864.41 ou version supérieure
 - *Extension de* risque Microsoft Insider version 1.0.0.44 ou supérieure
-- Edge.exe n’est pas configuré en tant que navigateur nonallé
+- Edge.exe n’est pas configuré comme un navigateur nonallé
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-edge"></a>Option 1 : Configuration de base (recommandée pour les tests avec Edge)
 
@@ -70,7 +70,7 @@ Pour l’option de configuration de base, effectuer les étapes suivantes :
 1. Accédez à [Microsoft Insider Risk Extension](https://microsoftedge.microsoft.com/addons/detail/microsoft-insider-risk-ex/lcmcgbabdcbngcbcfabdncmoppkajglo).
 2. Installez l’extension.
 
-### <a name="option-2-intune-setup-for-edge"></a>Option 2 : configuration d’Intune pour Edge
+### <a name="option-2-intune-setup-for-edge"></a>Option 2 : Configuration d’Intune pour Edge
 
 Utilisez cette option pour configurer l’extension et les conditions requises pour votre organisation à l’aide d’Intune.
 
@@ -83,7 +83,7 @@ Pour l’option d’installation d’Intune, effectuer les étapes suivantes :
 5. Sélectionnez **Modèles d’administration** *en tant que type de profil,* puis **sélectionnez Créer.**
 6. Sélectionnez l’onglet **Paramètres**.
 7. Sélectionnez **Edge version 77 et ultérieures.**
-8. Recherchez **des extensions** qui vous donnent une vue d’ensemble de tous les paramètres liés aux extensions.
+8. Recherchez **des extensions** qui vous donnent une vue d’ensemble de tous les paramètres liés à l’extension.
 9. Sélectionnez le paramètre **Contrôler les extensions installées en mode silencieux.**
 10. Sélectionnez **Activé.**
 11. Ajoutez l’ID d’extension à l’invite : *lcmcgbabdcbngcbcfabdncmoppkajglo***.**
@@ -99,9 +99,9 @@ Pour l’option de configuration de la stratégie de groupe, effectuer les étap
 
 Les appareils doivent être gérables à l’aide de stratégies de groupe et tous [Microsoft Edge modèles](https://www.microsoft.com/edge/business/download) d’administration doivent être importés dans le magasin central de stratégie de groupe. Pour plus d’informations, reportez-vous à l’article [Comment créer et gérer le magasin central des modèles d’administration de stratégie de groupe dans Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
-**Étape 2 : ajoutez le module supplémentaire *Microsoft Insider Risk Management Extension* à la liste Force *Install.***
+**Étape 2 : Ajoutez le module supplémentaire *Microsoft Insider Risk Management Extension* à la liste Force *Install.***
 
-Pour ajouter l’extension, vous pouvez effectuer les étapes suivantes :
+Pour ajouter l’extension, complétez les étapes suivantes :
 
 1. Dans **l’Éditeur de gestion des stratégies de** groupe, accédez à votre unité d’organisation.
 2. Développez le chemin d’accès suivant **Ordinateur/Stratégies** de configuration utilisateur \>  \> **Modèles** \> **d’administration Modèles d’administration** \> **classiques Microsoft Edge** \> **extensions**. Ce chemin d’accès peut varier en fonction de la configuration de votre organisation.
@@ -121,7 +121,7 @@ La prise en charge de la détection du signal du navigateur de gestion des risqu
 - Répondre aux exigences courantes
 - Dernière version de Google Chrome x64
 - *Extension de conformité Microsoft* version 2.0.0.183 ou supérieure
-- Chrome.exe n’est pas configuré en tant que navigateur nonallé
+- Chrome.exe n’est pas configuré comme un navigateur nonallé
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-chrome"></a>Option 1 : Configuration de base (recommandée pour les tests avec Chrome)
 
@@ -170,7 +170,7 @@ Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Conf
 
 **Étape 2 : Configurer l’installation force Intune**
 
-Avant d’ajouter l’extension Microsoft DLP Chrome à la liste des extensions installées de force, vous devez installer le fichier de modèle d’administration Chrome (.admx) pour la gestion Intune. Pour obtenir des instructions pas à pas, voir [Gérer le navigateur Chrome avec Microsoft Intune](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune). Après avoir installé le fichier de modèle d’administration, effectuer les étapes suivantes :
+Avant d’ajouter l’extension Microsoft DLP Chrome à la liste des extensions installées de force, vous devez installer le fichier de modèle d’administration Chrome (.admx) pour la gestion Intune. Pour obtenir des instructions pas à pas, voir Gérer le [navigateur Chrome avec Microsoft Intune](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune). Après avoir installé le fichier de modèle d’administration, effectuer les étapes suivantes :
 
 1. Connectez-vous au [Microsoft Endpoint Manager Admin Center.](https://endpoint.microsoft.com)
 2. Accédez aux **profils de configuration.**

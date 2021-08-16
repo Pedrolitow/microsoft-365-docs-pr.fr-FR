@@ -2,8 +2,8 @@
 title: Classification des données pour votre environnement de test Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour créer et utiliser des étiquettes de rétention sur les documents de votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: 79002397be7c44c5c160d80288d3fea6e9c1f9594a024f5aa4dc501f86dda886
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c4527f751881750c5f6427ea085baa9516f0bd73
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891318"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354307"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Classification des données pour votre environnement de test Microsoft 365 entreprise
 
@@ -63,7 +63,7 @@ Dans cette phase, créez les étiquettes de rétention pour les différents nive
   - Hautement confidentiel
 1. Dans le volet **Étiquettes de** rétention, **sélectionnez Publier des étiquettes.**
 1. Dans le **volet Choisir les étiquettes à** publier, sélectionnez Choisir les **étiquettes à publier.**
-1. Dans le **volet Choisir des étiquettes,** **sélectionnez Ajouter** et sélectionnez les quatre étiquettes.
+1. Dans le volet Choisir **des étiquettes,** **sélectionnez Ajouter** et sélectionnez les quatre étiquettes.
 1. **Sélectionnez** Ajouter, puis **Terminé**.
 1. Dans le **volet Choisir les étiquettes à** publier, sélectionnez **Suivant.**
 1. Dans le **volet Choisir des** emplacements, sélectionnez **Suivant.**
@@ -99,7 +99,7 @@ Ensuite, créez un document dans le site SensitiveFiles et modifiez son étiquet
 1. Dans le dossier documents, sélectionnez **Nouveau**  >  **document Word.**
 1. Entrez du texte dans le document vide. Attendez que le texte soit enregistré.
 1. Dans la barre de menus, sélectionnez **Documents partagés.**
-1. EnDocument.docxnom **de** fichier, sélectionnez les sélections verticales, puis sélectionnez **Détails.**
+1. À côté du **Document.docx** de fichier, sélectionnez les sélections verticales, puis sélectionnez **Détails.**
 1. Dans le volet droit, dans la section **Propriétés,** sous Appliquer  l’étiquette de **rétention,** notez que l’étiquette de rétention Sensible a été automatiquement appliquée au document.
 1. Cliquez sur **Modifier tout**.
 1. Dans le **Document.docx,** sous Appliquer l’étiquette de **rétention,** sélectionnez l’étiquette **Hautement** confidentiel, puis sélectionnez **Enregistrer.**

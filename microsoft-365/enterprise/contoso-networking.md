@@ -1,9 +1,9 @@
 ---
 title: Mise en réseau de Contoso Corporation
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre l’infrastructure réseau contoso et la façon dont l’entreprise utilise sa technologie SD-WAN pour optimiser les performances réseau pour Microsoft 365 services cloud d’entreprise.
-ms.openlocfilehash: a7b57a4a126b455b3a063abba9e215ec8d02f2b1b630234e647347fdd14dce6e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad7bac187a81564c3d222069bce06756dd176a58
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899530"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354319"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Mise en réseau de Contoso Corporation
 
@@ -56,7 +56,7 @@ Contoso a suivi les [principes de connectivité réseau Microsoft 365](microsof
 - Éviter les épingles de réseau
 - Ignorer les périphériques de sécurité réseau en double
 
-Il existe trois catégories de trafic réseau pour Microsoft 365 : *Optimiser,* Autoriser *et* *Par défaut*. Le trafic Optimiser et Autoriser est un trafic réseau approuvé chiffré et sécurisé aux points de terminaison et destiné au Microsoft 365 réseau.
+Il existe trois catégories de trafic réseau pour Microsoft 365 : *Optimiser,* Autoriser *et* *Par défaut.* Le trafic Optimiser et Autoriser est un trafic réseau approuvé chiffré et sécurisé aux points de terminaison et destiné au Microsoft 365 réseau.
 
 Contoso a décidé d’effectuer les opérations suivantes :
 
@@ -100,7 +100,7 @@ L’adoption Microsoft 365 pour les services d’entreprise par les utilisateurs
 
 4. Optimiser les performances pour les services réseau Microsoft
 
-   Contoso a déterminé l’ensemble des points de terminaison Office 365, Intune et Azure, ainsi que des pare-feux, des périphériques de sécurité et d’autres systèmes configurés dans le chemin d’accès Internet pour obtenir des performances optimales. Les points de terminaison pour Office 365 trafic de catégorie Optimiser et Autoriser ont été configurés sur les périphériques SD-WAN pour le routage sur le circuit ISP.
+   Contoso a déterminé l’ensemble des points de terminaison Office 365, Intune et Azure, ainsi que des pare-feux, des périphériques de sécurité et d’autres systèmes configurés dans le chemin d’accès Internet pour des performances optimales. Les points de terminaison pour Office 365 trafic de catégorie Optimiser et Autoriser ont été configurés sur les périphériques SD-WAN pour le routage sur le circuit ISP.
 
 5. Configurer le DNS interne
 

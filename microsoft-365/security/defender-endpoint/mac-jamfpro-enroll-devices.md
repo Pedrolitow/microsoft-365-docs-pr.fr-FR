@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3907c52e4cae7dedba38c893ee34b0b857316d08
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: cd07c40692bb70d64a7bde6f5f7fd13a08ecf0b8f7c5b7e8db2e8cfa4a9b4501
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652022"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53903032"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Inscrire Microsoft Defender pour endpoint sur les appareils macOS dans Jamf Pro 
 
@@ -78,9 +78,9 @@ Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordin
 
     ![Image des paramètres de configuration8](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
 
-## <a name="enrollment-method-2-prestage-enrollments"></a>Méthode d’inscription 2 : pré-étape des inscriptions
+## <a name="enrollment-method-2-prestage-enrollments"></a>Enrollment Method 2: Prestage Enrollments
 
-1. Dans le tableau de bord Pro Jamf, accédez **à Pré-étapes d’inscription.**
+1. Dans le tableau de bord Pro Jamf, accédez à **Pré-étapes d’inscription.**
 
     ![Image des paramètres de configuration9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 

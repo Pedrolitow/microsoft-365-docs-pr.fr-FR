@@ -1,7 +1,7 @@
 ---
 title: Applications intégrées et Azure AD pour Microsoft 365 administrateurs
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Découvrez comment inscrire et administrer Office 365 applications intégrées dans Azure AD, en permettant des autorisations d’application au niveau de l’administrateur général.
-ms.openlocfilehash: 54825d551c39dde75596615080618d9a0693ac90ada420373d28bcc6881e4b09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f604260646aa4e6793540003346c9e83d7a6b269
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830214"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354223"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>Applications intégrées et Azure AD pour Microsoft 365 administrateurs
 
@@ -52,4 +52,4 @@ Pour gérer Microsoft 365 applications, vous devez connaître les applications d
 |[Didacticiels d’intégration Azure AD](/azure/active-directory/saas-apps/tutorial-list) <br/> |L’objectif de ces didacticiels est de vous montrer comment configurer Azure AD SSO pour des applications SaaS tierces.  <br/> |
 |[Scénarios d’authentification pour Azure AD](/azure/active-directory/develop/authentication-vs-authorization) <br/> |Azure AD simplifie l’authentification pour les développeurs en fournissant l’identité en tant que service, avec la prise en charge des protocoles standard tels que OAuth 2.0 et OpenID Connecter, ainsi que des bibliothèques open source pour différentes plateformes pour vous aider à démarrer rapidement le codage. Ce document vous aide à comprendre les différents scénarios pris en charge par Azure AD et vous montre comment commencer.  <br/> |
 |[Accès aux applications](/azure/active-directory/manage-apps/what-is-access-management) <br/> |Azure AD permet une intégration facile à de nombreuses applications SaaS (Software as a Service) les plus populaires d’aujourd’hui. Il fournit la gestion des identités et des accès, et fournit un panneau d’accès aux utilisateurs qui leur permet de découvrir l’accès aux applications dont ils disposent et où ils peuvent utiliser l' utilisateur unique pour accéder à leurs applications. Cet article vous fournit des liens vers les ressources associées qui vous permettent d’en savoir plus sur les améliorations apportées à l’accès aux applications pour Azure AD et sur la façon dont vous pouvez y contribuer.  <br/> |
-|[Personnaliser votre expérience Office 365 personnalisée](https://support.microsoft.com/office/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |Vous pouvez accéder rapidement aux applications que vous utilisez quotidiennement en ajoutant ou en supprimant des applications dans le lanceur Microsoft 365 applications.  <br/> |
+|[Personnaliser votre expérience Office 365 personnalisée](https://support.microsoft.com/office/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |Vous pouvez accéder rapidement aux applications que vous utilisez quotidiennement en ajoutant ou en supprimant des applications dans le lanceur d Microsoft 365 applateur.  <br/> |
