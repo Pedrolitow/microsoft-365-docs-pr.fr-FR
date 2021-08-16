@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les propriétés de messagerie et de document que vous pouvez rechercher à l’aide des outils de recherche eDiscovery Microsoft 365.
-ms.openlocfilehash: b274b185c7fb0d2cd6dfa4aca0e8d8429664fe61
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b465b0dedac35b8008627fcb9a2ecd2f9b9d27dddcfb26a16c290d7176447ce8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860139"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Requêtes par mot clé et conditions de recherche pour eDiscovery
 
@@ -57,7 +57,7 @@ Le tableau suivant répertorie les propriétés des messages électroniques qui 
 
 ****
 
-|Propriété|Description de la propriété|範例|Résultats de recherche renvoyés par les exemples|
+|Propriété|Description de la propriété|Exemples|Résultats de recherche renvoyés par les exemples|
 |---|---|---|---|
 |AttachmentNames|Nom des fichiers joints à un message électronique.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*` <br/> `attachmentnames:.pptx`|Messages comportant un fichier joint nommé annualreport.ppt. Dans le deuxième exemple, l’utilisation du caractère générique ( * ) renvoie des messages avec le mot « annual » dans le nom de fichier d’une pièce jointe. Le troisième exemple renvoie toutes les pièces jointes avec l’extension de fichier pptx.|
 |Cci|Champ Bcc d’un message électronique. <sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|Tous les exemples renvoient des messages dont « Pilar Pinilla » est en copie carbone invisible.|
@@ -115,7 +115,7 @@ Pour obtenir la liste complète des propriétés SharePoint qui peuvent être re
 |FileName|Nom d’un fichier.|`filename:"marketing plan"` <p> `filename:estimate`|Le premier exemple renvoie les fichiers contenant l’expression « marketing plan » (plan marketing) dans le titre. Le second exemple renvoie les fichiers contenant le mot « estimate » (devis) dans le nom du fichier.|
 |LastModifiedTime|Date à laquelle un élément a été modifié pour la dernière fois.|`lastmodifiedtime>=05/01/2016` <p> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|Le premier exemple renvoie les éléments qui ont été modifiés le 1er mai 2016 ou après. Le deuxième exemple renvoie les éléments modifiés entre le 1er mai 2016 et le 1er juin 2016.|
 |ModifiedBy|Personne qui a apporté les dernières modifications. N’oubliez pas d’utiliser le nom complet de l’utilisateur pour cette propriété.|`modifiedby:"Garth Fort"`|Tous les éléments qui ont été modifiés en dernier par Garth Fort.|
-|Chemin d'accès|Chemin d’accès (URL) d’un site spécifique dans un site SharePoint ou OneDrive Entreprise site. <p> Pour renvoyer des éléments uniquement à partir du site spécifié, vous devez ajouter la fin à la fin de `/` l’URL ; par exemple, `path: "https://contoso.sharepoint.com/sites/international/"` <p> Pour renvoyer des éléments situés dans des dossiers du site que vous spécifiez dans la propriété de chemin d’accès, vous devez ajouter à la fin de `/*` l’URL ; par exemple,  `path: "https://contoso.sharepoint.com/Shared Documents/*"` <p> **Remarque :** L’utilisation de la propriété pour rechercher OneDrive emplacements ne retourne pas les fichiers multimédias, tels que les fichiers .png, .tiff ou .wav, dans les résultats de `Path` la recherche. Utilisez une propriété de site différente dans votre requête de recherche pour rechercher des fichiers multimédias OneDrive dossiers. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"` <p> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Le premier exemple renvoie tous les éléments du site OneDrive Entreprise spécifié. Le deuxième exemple renvoie les documents du site spécifié (et les dossiers du site) qui contiennent le mot « confidentiel » dans le nom de fichier.|
+|Path|Chemin d’accès (URL) d’un site spécifique dans un site SharePoint ou OneDrive Entreprise site. <p> Pour renvoyer des éléments uniquement à partir du site spécifié, vous devez ajouter la fin à la fin de `/` l’URL ; par exemple, `path: "https://contoso.sharepoint.com/sites/international/"` <p> Pour renvoyer les éléments situés dans les dossiers du site que vous spécifiez dans la propriété path, vous devez ajouter à la fin de `/*` l’URL ; par exemple,  `path: "https://contoso.sharepoint.com/Shared Documents/*"` <p> **Remarque :** L’utilisation de la propriété pour rechercher OneDrive emplacements ne retourne pas les fichiers multimédias, tels que les fichiers .png, .tiff ou .wav, dans les résultats de `Path` la recherche. Utilisez une propriété de site différente dans votre requête de recherche pour rechercher des fichiers multimédias OneDrive dossiers. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"` <p> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Le premier exemple renvoie tous les éléments du site OneDrive Entreprise spécifié. Le deuxième exemple renvoie les documents du site spécifié (et les dossiers du site) qui contiennent le mot « confidentiel » dans le nom de fichier.|
 |SharedWithUsersOWSUser|Documents qui ont été partagés avec l’utilisateur spécifié et affichés sur la **page** Partagé avec moi sur le site OneDrive Entreprise’utilisateur. Ce sont des documents qui ont été explicitement partagés avec l’utilisateur spécifié par d’autres personnes de votre organisation. Lorsque vous exportez des documents qui correspondent à une requête de recherche qui utilise la propriété SharedWithUsersOWSUser, les documents sont exportés à partir de l’emplacement de contenu d’origine de la personne qui a partagé le document avec l’utilisateur spécifié. Pour plus d’informations, voir [Recherche de contenu de site partagé au sein de votre organisation.](#searching-for-site-content-shared-within-your-organization)|`sharedwithusersowsuser:garthf` <p> `sharedwithusersowsuser:"garthf@contoso.com"`|Les deux exemples retournent tous les documents internes qui ont été explicitement partagés avec Garth Fort et qui apparaissent sur la **page** Partagé avec moi dans le compte OneDrive Entreprise de Garth Fort.|
 |Site|URL d’un site ou d’un groupe de sites de votre organisation.|`site:"https://contoso-my.sharepoint.com"` <p> `site:"https://contoso.sharepoint.com/sites/teams"`|Le premier exemple renvoie des éléments à partir des sites OneDrive Entreprise pour tous les utilisateurs de l’organisation. Le second exemple renvoie les éléments de tous les sites d’équipe.|
 |Size|Taille d'un élément, en octets.|`size>=1` <p> `size:1..10000`|Le premier exemple renvoie les éléments dont la taille est supérieure à 1 octet. Le deuxième exemple renvoie les éléments dont la taille est comprise entre 1 et 10 000 octets.|
@@ -138,7 +138,7 @@ Le tableau suivant répertorie les propriétés de contact qui sont indexées et
 |BusinessAddress|Adresse dans la **propriété Adresse** professionnelle. La propriété est également appelée **adresse** de travail sur la page des propriétés du contact.|
 |BusinessPhone|Numéro de téléphone dans l’une des propriétés de numéro **Téléphone** entreprise.|
 |CompanyName|Nom dans la propriété **Company.**|
-|Service|Nom dans la **propriété Department.**|
+|Département|Nom dans la **propriété Department.**|
 |DisplayName|Nom complet du contact. Il s’agit du nom dans la **propriété Nom** complet du contact.|
 |EmailAddress|Adresse de toute propriété d’adresse de messagerie du contact. Les utilisateurs peuvent ajouter plusieurs adresses de messagerie pour un contact. L’utilisation de cette propriété retournerait les contacts qui correspondent à l’une des adresses de messagerie du contact.|
 |FileAs|Fichier **en tant que** propriété. Cette propriété est utilisée pour spécifier la façon dont le contact est répertorié dans la liste des contacts de l’utilisateur. Par exemple, un contact peut être répertorié en tant que  *FirstName, LastName*  ou  *LastName,FirstName*.|
@@ -157,7 +157,7 @@ Le tableau suivant répertorie les propriétés de contact qui sont indexées et
 
 ## <a name="searchable-sensitive-data-types"></a>Types de données sensibles utilisables dans une requête
 
-Vous pouvez utiliser les outils de recherche eDiscovery dans le Centre de conformité Microsoft 365 pour rechercher des données sensibles, telles que des numéros de carte de crédit ou des numéros de sécurité sociale, qui sont stockées dans des documents sur des sites SharePoint et OneDrive Entreprise. Pour ce faire, vous pouvez utiliser la propriété et le nom (ou ID) d’un type d’informations sensibles dans une requête `SensitiveType` de mot clé. Par exemple, la requête renvoie `SensitiveType:"Credit Card Number"` les documents qui contiennent un numéro de carte de crédit. La requête renvoie les documents qui contiennent un numéro  `SensitiveType:"U.S. Social Security Number (SSN)"` de sécurité sociale aux États-Unis.
+Vous pouvez utiliser les outils de recherche eDiscovery dans le Centre de conformité Microsoft 365 pour rechercher des données sensibles, telles que des numéros de carte de crédit ou des numéros de sécurité sociale, qui sont stockées dans des documents sur des sites SharePoint et OneDrive Entreprise. Pour ce faire, utilisez la propriété et le nom (ou ID) d’un type d’informations sensibles dans une requête `SensitiveType` de mot clé. Par exemple, la requête renvoie `SensitiveType:"Credit Card Number"` les documents qui contiennent un numéro de carte de crédit. La requête renvoie les documents qui contiennent un numéro  `SensitiveType:"U.S. Social Security Number (SSN)"` de sécurité sociale aux États-Unis.
 
 Pour consulter la liste des types d’informations sensibles que vous pouvez rechercher, consultez Classifications des données Types d’informations **sensibles** dans la \>  Centre de conformité Microsoft 365. Vous pouvez également utiliser la cmdlet **Get-DlpSensitiveInformationType** dans le Centre de sécurité & conformité PowerShell pour afficher une liste des types d’informations sensibles.
 
@@ -175,7 +175,7 @@ Pour plus d’informations sur la création de requêtes à l’aide de la propr
 
   Ensuite, vous pouvez utiliser l’ID dans la propriété de recherche pour renvoyer les documents qui contiennent le type de données sensibles personnalisé `SensitiveType` ; par exemple, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
 
-- Vous ne pouvez pas utiliser les types d’informations sensibles et la propriété de recherche pour rechercher des données sensibles au `SensitiveType` repos dans Exchange Online boîtes aux lettres. Cela inclut les messages de conversation 1:1, les messages de conversation de groupe 1:N et les conversations de canal d’équipe dans Microsoft Teams, car tout ce contenu est stocké dans les boîtes aux lettres. Toutefois, vous pouvez utiliser des stratégies de protection contre la perte de données (DLP) pour protéger les données électroniques sensibles en transit. Pour plus d’informations, voir [En savoir plus sur la](dlp-learn-about-dlp.md) protection contre la perte de données et rechercher et rechercher des données [personnelles.](/compliance/regulatory/gdpr)
+- Vous ne pouvez pas utiliser les types d’informations sensibles et la propriété de recherche pour rechercher des données sensibles au repos `SensitiveType` dans Exchange Online boîtes aux lettres. Cela inclut les messages de conversation 1:1, les messages de conversation de groupe 1:N et les conversations de canal d’équipe dans Microsoft Teams, car tout ce contenu est stocké dans les boîtes aux lettres. Toutefois, vous pouvez utiliser des stratégies de protection contre la perte de données (DLP) pour protéger les données électroniques sensibles en transit. Pour plus d’informations, voir [En savoir plus sur la](dlp-learn-about-dlp.md) protection contre la perte de données et rechercher et rechercher des données [personnelles.](/compliance/regulatory/gdpr)
 
 ## <a name="search-operators"></a>Opérateurs de recherche
 
@@ -187,7 +187,7 @@ Les opérateurs de recherche booléens, tels que **AND,** **OR** et **NOT,** vou
 
 |Opérateur|Utilisation|Description|
 |---|---|---|
-|AND|keyword1 AND keyword2|Renvoie les éléments qui incluent tous les mots clés ou  `property:value` expressions spécifiés. Par exemple, retournerait tous les messages envoyés par Ann Beebe contenant le mot « northwind » dans  `from:"Ann Beebe" AND subject:northwind` la ligne d’objet. <sup>2</sup>|
+|AND|keyword1 AND keyword2|Renvoie des éléments qui incluent tous les mots clés ou  `property:value` expressions spécifiés. Par exemple, retournerait tous les messages envoyés par Ann Beebe contenant le mot « northwind » dans  `from:"Ann Beebe" AND subject:northwind` la ligne d’objet. <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Renvoie les éléments qui contiennent  *soit*  `keyword2` soit  `keyword3` *, et*  qui contiennent également  `keyword1`. Par conséquent, cet exemple équivaut à la requête  `(keyword2 OR keyword3) AND keyword1`.  <p> La requête (avec un espace après le symbole) est identique à `keyword1 + keyword2` **+** l’utilisation de **l’opérateur AND.** Cette requête est équivalente à  `"keyword1 + keyword2"` et renvoie des éléments contenant l'expression exacte  `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Renvoie des éléments qui incluent un ou plusieurs des mots clés ou  `property:value` expressions spécifiés. <sup>2</sup>|
 |NOT|keyword1 NOT keyword2 <p> NOT from:"Ann Beebe" <p> NOT kind:im|Exclut les éléments spécifiés par un mot clé ou une  `property:value` expression. Dans le deuxième exemple, les messages envoyés par Ann Beebe sont exclus. Le troisième exemple exclut les conversations de messagerie instantanée, telles que Skype Entreprise conversations enregistrées dans le dossier de boîte aux lettres Historique des conversations. <sup>2</sup>|
@@ -325,7 +325,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez des critères de 
 
 - Vous pouvez utiliser le contrôle glisser-déposer pour resquencer l’ordre des conditions. Cliquez sur le contrôle pour une condition et déplacez-la vers le haut ou vers le bas.
 
-- Comme indiqué précédemment, certaines propriétés de condition vous permettent de taper plusieurs valeurs (séparées par des points-virgules). Chaque valeur est connectée logiquement par **l’opérateur OR** et entraîne la `(filetype=docx) OR (filetype=pptx) OR (filetype=xlsx)` requête. L’illustration suivante montre un exemple de condition avec plusieurs valeurs.
+- Comme indiqué précédemment, certaines propriétés de condition vous permettent de taper plusieurs valeurs (séparées par des points-virgules). Chaque valeur est connectée logiquement par l’opérateur **OR** et entraîne la `(filetype=docx) OR (filetype=pptx) OR (filetype=xlsx)` requête. L’illustration suivante montre un exemple de condition avec plusieurs valeurs.
 
     ![Un message doit remplir toutes les conditions de la règle. Si vous souhaitez qu’une condition ou une autre s’applique, utilisez des règles distinctes pour chaque condition. Par exemple, si vous souhaitez ajouter la même clause d’exclusion de responsabilité aux messages comportant des pièces jointes et aux messages dont le contenu correspond à un modèle, créez une règle pour chaque condition. Vous pouvez facilement copier une règle.](../media/SearchConditions1.png)
 
@@ -352,7 +352,7 @@ Cet exemple renvoie des documents sur SharePoint sites OneDrive Entreprise qui c
 
 `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2021-01-01)`
 
-Notez dans la capture d’écran précédente que l’interface utilisateur de recherche confirme que la requête et la condition de mot clé sont connectées par **l’opérateur AND.**
+Notez que dans la capture d’écran précédente, l’interface utilisateur de recherche confirme que la requête et la condition de mot clé sont connectées par **l’opérateur AND.**
 
 #### <a name="example-2"></a>Exemple 2
 
@@ -405,7 +405,7 @@ Voici quelques exemples :
 - La requête renvoie une liste de documents sur tous les sites d’équipe de l’organisation qui ont  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` été partagés avec des utilisateurs externes.
 
 > [!TIP]
-> Une requête de recherche telle que peut renvoyer un grand nombre de fichiers  `ViewableByExternalUsers:true AND ContentType:document` .aspx dans les résultats de la recherche. Pour éliminer ces derniers (ou d’autres types de fichiers), vous pouvez utiliser la propriété pour exclure des types de fichiers  `FileExtension` spécifiques ; par exemple  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` .
+> Une requête de recherche telle que peut renvoyer un grand nombre de fichiers  `ViewableByExternalUsers:true AND ContentType:document` .aspx dans les résultats de la recherche. Pour éliminer ces derniers (ou d’autres types de fichiers), vous pouvez utiliser la propriété pour exclure des types de fichiers  `FileExtension` spécifiques ; par  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` exemple.
 
 Qu’est-ce qui est considéré comme du contenu partagé avec des personnes extérieures à votre organisation ? Documents dans les sites SharePoint et OneDrive Entreprise de votre organisation qui sont partagés en envoyant une invitation de partage ou qui sont partagés dans des emplacements publics. Par exemple, les activités utilisateur suivantes produisent du contenu visible par les utilisateurs externes :
 
@@ -418,7 +418,7 @@ Qu’est-ce qui est considéré comme du contenu partagé avec des personnes ext
 Bien que la propriété indique si un document ou un site est partagé avec des utilisateurs externes, il existe quelques avertissements quant à ce que cette propriété fait et ne reflète  `ViewableByExternalUsers` pas. Dans les scénarios suivants, la valeur de la propriété ne sera pas mise à jour et les résultats d’une requête de recherche qui utilise cette propriété peuvent  `ViewableByExternalUsers` être imprécis.
 
 - Modifications apportées à la stratégie de partage, telles que la stratégie de non-partage externe pour un site ou pour l’organisation. La propriété affiche toujours les documents partagés précédemment comme étant accessibles en externe, même si l’accès externe a peut-être été révoqué.
-- Modifications apportées à l’appartenance à un groupe, telles que l’ajout ou la suppression d’utilisateurs externes à Microsoft 365 groupes ou Microsoft 365 groupes de sécurité. La propriété ne sera pas automatiquement mise à jour pour les éléments à qui le groupe a accès.
+- Modifications apportées à l’appartenance à un groupe, telles que l’ajout ou la suppression d’utilisateurs externes à Microsoft 365 groupes ou Microsoft 365 groupes de sécurité. La propriété ne sera pas automatiquement mise à jour pour les éléments accessibles par le groupe.
 - Envoi d’invitations de partage à des utilisateurs externes où le destinataire n’a pas accepté l’invitation et n’a donc pas encore accès au contenu.
 
 Dans ces scénarios, la propriété ne reflète pas l’état de partage actuel tant que le site ou la bibliothèque de documents n’a pas été  `ViewableByExternalUsers` réaxé et réindexé.

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8240b9f4c4402e0e372a5e242d8b200f26f28717
-ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
+ms.openlocfilehash: 7f7a548632ed366e628d3e1edb1cbefff796ea28e4e5b5c7ad7b2cbd64e276ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53243970"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896894"
 ---
 # <a name="contact-support-for-india"></a>Contacter le support pour l’Inde
 

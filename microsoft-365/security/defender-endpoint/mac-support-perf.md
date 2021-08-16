@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 431e8f5a300f11b28855f981948b6ec396e0c1d0
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3be00729d96c7c46189348bf517e40e08f226fa08ad494aa93d14b3cb4b725e5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898159"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur macOS
 
@@ -50,7 +50,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
 
       Si votre appareil n’est pas géré par votre organisation, la protection en temps réel peut être désactivée à l’aide de l’une des options suivantes :
 
-    - À partir de l’interface utilisateur. Ouvrez Microsoft Defender pour le point de terminaison sur macOS et accédez **à Gérer les paramètres.**
+    - À partir de l’interface utilisateur. Ouvrez Microsoft Defender pour le point de terminaison sur macOS et accédez à **Gérer les paramètres.**
 
       ![Capture d’écran gérer la protection en temps réel](images/mdatp-36-rtp.png)
 

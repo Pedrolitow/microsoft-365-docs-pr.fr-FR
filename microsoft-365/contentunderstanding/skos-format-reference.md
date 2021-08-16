@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Référence de format SKOS pour la taxonomie SharePoint
-ms.openlocfilehash: 4c08073f453ef0b6a224829b7d4cb4034b74ed14
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0da428a256ba2300e38d68abf10cd87a439255a7ebd3ac99edd555d3d988f8da
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228734"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879154"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>Référence de format SKOS pour la taxonomie SharePoint
 

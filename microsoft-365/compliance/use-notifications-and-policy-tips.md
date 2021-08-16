@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
-ms.openlocfilehash: f8b1c4228dcccf82a8dadb8b942d2587f92ba382
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 0eb30101dc42ab25eef5625f2fa952cac8f8bda89e6c72a5f7f46186ac96f652
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623047"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859969"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -33,7 +33,7 @@ Vous pouvez utiliser une stratégie de protection contre la perte de données (D
 
 ![La barre des messages affiche le conseil de stratégie dans Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-Un conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’une personne travaille avec du contenu en conflit avec une stratégie DLP, par exemple, du contenu tel qu’un classer Excel sur un site OneDrive Entreprise qui contient des informations d’identification personnelle (PII) et qui est partagé avec un utilisateur externe.
+Un conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’une personne travaille avec du contenu qui entre en conflit avec une stratégie DLP, par exemple, du contenu tel qu’un classez Excel sur un site OneDrive Entreprise qui contient des informations d’identification personnelle (PII) et qui est partagé avec un utilisateur externe.
 
 Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour mieux sensibiliser les personnes aux stratégies de votre organisation. Vous pouvez également donner aux personnes la possibilité de remplacer la stratégie, afin qu’elles ne sont pas bloquées s’ils ont des besoins commerciaux valides ou si la stratégie détecte un faux positif.
 
@@ -65,7 +65,7 @@ Lorsque vous créez une stratégie DLP, vous pouvez activer les **notifications 
 
 4. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles dont vous avez \> besoin.
 
-    Pour commencer avec un modèle vide, choisissez **Stratégie** \> **personnalisée personnalisée** \> **suivante.**
+    Pour commencer avec un modèle vide, sélectionnez **Stratégie** \> **personnalisée personnalisée** \> **suivante.**
 
 5. Nommez la stratégie \> **Suivant**.
 
@@ -99,7 +99,7 @@ Pour chaque règle d’une stratégie DLP, vous pouvez :
 - Personnalisez le texte inclus dans la notification à l’aide de code HTML ou de jetons. Consultez la rubrique ci-dessous pour plus d’informations.
 
 > [!NOTE]
->  Les notifications par courrier électronique peuvent être envoyées uniquement à des destinataires individuels, et non à des groupes ou des listes de distribution. Seul le nouveau contenu déclenche une notification par courrier électronique. La modification de contenu existant déclenche des conseils de stratégie, mais pas une notification par courrier électronique.
+>  Les notifications par courrier électronique peuvent être envoyées uniquement à des destinataires individuels, et non à des groupes ou des listes de distribution. Seul le nouveau contenu déclenche une notification par courrier électronique. La modification du contenu existant déclenche des conseils de stratégie, mais pas une notification par courrier électronique.
 
 ![Options de notification par courrier électronique](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
@@ -109,7 +109,7 @@ Les notifications ont une ligne d’objet qui commence par l’action prise, tel
 
 ![Message de notification](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
 
-Par défaut, les notifications affichent le texte suivant pour un élément sur un site. Le texte de notification est configuré séparément pour chaque règle, de sorte que le texte affiché diffère en fonction de la règle qui correspond.
+Par défaut, les notifications affichent un texte semblable à ce qui suit pour un élément sur un site. Le texte de notification est configuré séparément pour chaque règle, de sorte que le texte affiché diffère en fonction de la règle qui correspond.
 
 |**Si la règle de stratégie DLP le fait...**|**La notification par défaut pour SharePoint ou OneDrive Entreprise documents indique alors ceci...**|**La notification par défaut pour Outlook messages indique alors ceci...**|
 |:-----|:-----|:-----|
@@ -119,7 +119,7 @@ Par défaut, les notifications affichent le texte suivant pour un élément sur 
 
 ### <a name="custom-email-notification"></a>Notification par courrier électronique personnalisé
 
-Vous pouvez créer une notification par courrier électronique personnalisée au lieu d’envoyer la notification par courrier électronique par défaut à vos utilisateurs finaux ou administrateurs. La notification par courrier électronique personnalisé prend en charge le code HTML et présente une limite de 5 000 caractères. Vous pouvez utiliser du code HTML pour inclure des images, la mise en forme et d’autres marques dans la notification.
+Vous pouvez créer une notification par courrier électronique personnalisée au lieu d’envoyer la notification par courrier électronique par défaut à vos utilisateurs finaux ou administrateurs. La notification par courrier électronique personnalisée prend en charge le code HTML et présente une limite de 5 000 caractères. Vous pouvez utiliser du code HTML pour inclure des images, la mise en forme et d’autres marques dans la notification.
 
 Vous pouvez également utiliser les jetons suivants pour vous aider à personnaliser la notification par courrier électronique. Ces jetons sont des variables qui sont remplacées par des informations spécifiques dans la notification envoyée.
 
@@ -139,7 +139,7 @@ Pour chaque règle d’une stratégie DLP, vous pouvez configurer des conseils d
 
 - Autorisez la personne à remplacer la stratégie DLP. Si vous le souhaitez, vous pouvez :
 
-  - Exiger que la personne entre une justification professionnelle pour le remplacement de la stratégie. Ces informations sont consignées et vous pouvez les afficher dans les rapports DLP de la section **Rapports** du Centre de conformité &amp; de la sécurité.
+  - Exiger que la personne entre une justification professionnelle pour le remplacement de la stratégie. Ces informations sont consignées et vous pouvez les afficher dans les rapports DLP de la section **Rapports** du Centre de conformité &amp; de sécurité.
 
   - Autorisez la personne à signaler un faux positif et à remplacer la stratégie DLP. Ces informations sont également enregistrées pour les rapports, afin que vous pouvez utiliser des faux positifs pour affiner vos règles.
 
@@ -151,7 +151,7 @@ Par exemple, il se peut qu’une stratégie DLP soit appliquée aux sites OneDri
 
 2. Deuxième règle : si plus de cinq instances de ces informations sensibles sont détectées dans  un document et que le document est partagé avec des personnes au sein de l’organisation, l’action Bloquer l’accès au contenu restreint les autorisations pour le fichier et l’action Envoyer une **notification** permet aux utilisateurs de remplacer les actions de cette règle en fournissant une justification professionnelle. L’entreprise de votre organisation nécessite parfois que des personnes internes partagent des données piI, et vous ne souhaitez pas que votre stratégie DLP bloque ce travail.
 
-3. Troisième règle : si plus de cinq instances de ces informations sensibles sont détectées dans  un document et que le document est partagé avec des personnes extérieures à l’organisation, l’action Bloquer l’accès au contenu limite les autorisations pour le fichier et l’action Envoyer une **notification** ne permet pas aux utilisateurs de remplacer les actions de cette règle, car les informations sont partagées en externe. En aucun cas les membres de votre organisation ne doivent être autorisés à partager des données d’informations personnelles à l’extérieur de l’organisation.
+3. Troisième règle : si plus de cinq instances de ces informations sensibles sont détectées dans  un document et que le document est partagé avec des personnes extérieures à l’organisation, l’action Bloquer l’accès au contenu restreint les autorisations pour le fichier et l’action Envoyer une **notification** ne permet pas aux utilisateurs de remplacer les actions de cette règle, car les informations sont partagées en externe. En aucun cas les membres de votre organisation ne doivent être autorisés à partager des données d’informations personnelles à l’extérieur de l’organisation.
 
 Voici quelques points à comprendre sur l’utilisation d’un conseil de stratégie pour remplacer une règle :
 
@@ -205,7 +205,7 @@ Les conseils de stratégie fonctionnent si les informations sensibles apparaisse
 
 ![Conseil de stratégie indiquant qu’une pièce jointe est en conflit avec une stratégie DLP](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
 
-Si les conseils de stratégie sont configurés pour autoriser le remplacement, vous pouvez choisir Afficher le remplacement des **détails** en entrant une justification professionnelle ou signaler un remplacement \>  \> faux \> **positif.**
+Si les conseils de stratégie sont configurés pour autoriser le remplacement, vous pouvez choisir Afficher le remplacement des **détails** et entrer une justification professionnelle ou signaler un remplacement \>  \> faux \> **positif.**
 
 ![Conseil de stratégie dans le message développé pour afficher l’option Remplacer](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
 
@@ -222,7 +222,7 @@ Actuellement, Outlook 2013 et les ultérieures ne prend en charge l’affichage 
 
 Notez que les exceptions sont considérées comme des conditions et que toutes ces conditions fonctionnent dans Outlook, où elles correspondent au contenu et appliquent des actions de protection sur le contenu. Toutefois, l’affichage des conseils de stratégie aux utilisateurs n’est pas encore pris en charge.
 
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Conseils de stratégie dans le Exchange d’administration et le Centre de conformité &amp; de sécurité
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Conseils de stratégie dans Exchange centre d’administration et le Centre de &amp; conformité de sécurité
 
 Les conseils de stratégie peuvent fonctionner avec les stratégies DLP et les règles de flux de messagerie créées dans le Centre d’administration Exchange, ou avec les stratégies DLP créées dans le Centre de conformité de sécurité, mais pas les &amp; deux. En effet, ces stratégies sont stockées à différents emplacements, mais les conseils de stratégie ne peuvent dessiner qu’à partir d’un seul emplacement.
 
@@ -232,7 +232,7 @@ Notez que bien que les conseils de stratégie ne peuvent dessiner qu’à partir
 
 ### <a name="default-text-for-policy-tips-in-email"></a>Texte par défaut pour les conseils de stratégie dans le courrier électronique
 
-Par défaut, les conseils de stratégie affichent un texte semblable à celui-ci pour le courrier électronique.
+Par défaut, les conseils de stratégie affichent un texte semblable à ce qui suit pour le courrier électronique.
 
 |**Si la règle de stratégie DLP le fait...**|**Ensuite, le conseil de stratégie par défaut indique ceci...**|
 |:-----|:-----|
@@ -251,7 +251,7 @@ Lorsque des personnes travaillent avec du contenu sensible dans les versions de 
 Office programmes de bureau synchronisent automatiquement les stratégies DLP directement à partir de Office 365, puis analysent vos documents pour vous assurer qu’ils ne sont pas en conflit avec vos stratégies DLP et affichent des conseils de stratégie en temps réel.
 
 > [!NOTE]
-> Office applications de bureau analysent les documents eux-mêmes pour déterminer si les conseils de stratégie DLP doivent être affichés ; ils n’indiquent pas les conseils de stratégie que SharePoint sites en ligne ou OneDrive Entreprise sites ont déjà déterminés doivent être affichés sur un fichier. Par conséquent, un conseil de stratégie DLP n’est pas toujours visible dans les applications de bureau que vous voyez sur les sites SharePoint Online ou OneDrive Entreprise sites. En revanche, les applications Office sur le web n’indiquent que les conseils de stratégie DLP que les sites SharePoint Online ou les sites OneDrive Entreprise ont déjà déterminés doivent être affichés.
+> Office applications de bureau analysent les documents eux-mêmes pour déterminer si des conseils de stratégie DLP doivent être affichés ; ils n’indiquent pas les conseils de stratégie que SharePoint sites en ligne ou OneDrive Entreprise sites ont déjà déterminés doivent être affichés sur un fichier. Par conséquent, un conseil de stratégie DLP n’est pas toujours visible dans les applications de bureau que vous voyez sur les sites SharePoint Online ou OneDrive Entreprise sites. En revanche, les applications Office sur le web n’indiquent que les conseils de stratégie DLP que les sites SharePoint Online ou les sites OneDrive Entreprise ont déjà déterminés doivent être affichés.
 
 Selon la façon dont vous configurez les conseils de stratégie dans la stratégie DLP, les personnes peuvent choisir d’ignorer le conseil de stratégie, de remplacer la stratégie avec ou sans justification professionnelle ou de signaler un faux positif.
 

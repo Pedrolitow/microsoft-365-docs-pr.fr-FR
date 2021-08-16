@@ -1,7 +1,7 @@
 ---
 title: Qu’arrive-t-il à Microsoft Secure Score ?
-description: Décrit les nouvelles modifications apportées au Niveau de sécurité Microsoft dans le centre Microsoft 365 sécurité.
-keywords: niveau de sécurité microsoft, degré de sécurisation, degré de sécurisation d’Office 365, score de sécurité microsoft, centre de sécurité microsoft 365, actions d’amélioration
+description: Décrit les nouvelles modifications apportées au score de sécurité Microsoft dans le portail Microsoft 365 Defender microsoft.
+keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Microsoft 365 Defender portail, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee54beffebaa6e42e58e54de7ba9a1e31a69dc5f576d813b4dfce584d8c4e694
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ef2caf21d09a2c5387e60e81e3af93b08b78f07
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867546"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254333"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qu’arrive-t-il à Microsoft Secure Score ?
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score se trouve dans https://security.microsoft.com/securescore le centre de sécurité [Microsoft 365.](overview-security-center.md)
+Microsoft Secure Score se trouve sur https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](overview-security-center.md)
 
 ## <a name="proposed-changes"></a>Proposed changes
 

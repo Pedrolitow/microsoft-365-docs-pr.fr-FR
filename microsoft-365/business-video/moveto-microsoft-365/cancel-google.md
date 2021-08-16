@@ -15,19 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment annuler l’abonnement Google Workspace, mais conserver votre domaine.
-ms.openlocfilehash: 1ad7e4ae3583063281ac5b5e9510be539b1378dd
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 48ceac56e0fa0af8bd15a4a3e98db51958aec83fbd50bf83ac2241b7562677a1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928257"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896586"
 ---
 # <a name="cancel-google-workspace-subscription"></a>Annuler l’abonnement Google Workspace
 

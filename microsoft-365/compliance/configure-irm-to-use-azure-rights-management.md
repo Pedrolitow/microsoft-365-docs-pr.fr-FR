@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des informations sur les nouvelles fonctionnalités de chiffrement de messages Office 365 (OME).
-ms.openlocfilehash: ac6063b1765d65c3dafc3f296d9ae9c010ffd617
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 726e6e62543a0c22a1d9ebb6693f9ab32396037236cb5854fc35421d85e30581
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880406"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Configurer IRM pour utiliser Azure Rights Management
 

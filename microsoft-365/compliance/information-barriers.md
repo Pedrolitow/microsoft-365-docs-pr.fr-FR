@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les obstacles aux informations dans Microsoft 365
+title: En savoir plus sur les obstacles aux informations Microsoft 365
 description: Utilisez les obstacles à l’information pour assurer la conformité des communications à l Microsoft Teams au sein de votre organisation.
 ms.author: robmazz
 author: robmazz
@@ -16,14 +16,14 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ef3fce82a10792c8289a4a3c4e3cb5639a4d178
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b9c9657521265890b842c910286d92c655297612f6c545c4abf12faa46e5d999
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880194"
 ---
-# <a name="learn-about-information-barriers-in-microsoft-365"></a>En savoir plus sur les obstacles aux informations dans Microsoft 365
+# <a name="learn-about-information-barriers-in-microsoft-365"></a>En savoir plus sur les obstacles aux informations Microsoft 365
 
 Les services de cloud computing Microsoft incluent des fonctionnalités enrichies de communication et de collaboration. Toutefois, supposons que vous vouliez restreindre la communication et la collaboration entre deux groupes pour éviter qu’un conflit d’intérêts ne se produise dans votre organisation. Ou, peut-être souhaitez-vous restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Microsoft 365 la communication et la collaboration entre les groupes et les organisations, existe-t-il un moyen de restreindre la communication et la collaboration entre des groupes d’utilisateurs spécifiques si nécessaire ? Avec les obstacles à l’information, vous pouvez !
 
@@ -33,12 +33,12 @@ Microsoft Teams, SharePoint Online et OneDrive Entreprise les obstacles aux info
 - Le personnel financier travaillant sur des informations confidentielles sur l’entreprise ne doit pas communiquer ou partager des fichiers avec certains groupes au sein de leur organisation
 - Une équipe interne avec du matériel de secret commercial ne doit pas appeler ou discuter en ligne avec des personnes de certains groupes au sein de leur organisation
 - Une équipe de recherche doit uniquement appeler ou discuter en ligne avec une équipe de développement de produits
-- Un site pour le groupe d’informations d’une journée ne doit pas être partagé ou accessible par quiconque en dehors du groupe de veille du jour
+- Un site pour le groupe d’informations d’une journée ne doit pas être partagé ou accessible par toute personne extérieure au groupe de veille du jour
 
 > [!IMPORTANT]
-> Obstacles à l’information ***prend uniquement en charge** les restrictions _ à double sens. Les restrictions à sens seul, telles que le marketing, peuvent communiquer et collaborer avec les courtiers du jour, mais les courtiers ne peuvent pas communiquer et collaborer avec marketing __*_ n’est pas pris en charge **.
+> Obstacles à l’information ***prend uniquement en charge** les restrictions _ à double sens. Les restrictions à sens seul, telles que le marketing, peuvent communiquer et collaborer avec des courtiers de jour, mais les courtiers ne peuvent pas communiquer et collaborer avec marketing __*_ n’est pas pris en charge **.
 
-Pour tous ces exemples de scénarios (et bien plus encore), des stratégies de obstacle à l’information peuvent être définies pour empêcher ou autoriser les communications et la collaboration dans Microsoft Teams, SharePoint Online et OneDrive. De telles stratégies peuvent empêcher les personnes d’appeler ou de discuter avec celles qu’elles ne devraient pas, ou permettre aux utilisateurs de communiquer uniquement avec des groupes spécifiques Microsoft Teams. Avec les stratégies de obstacle à l’information en vigueur, chaque fois que les utilisateurs couverts par ces stratégies tentent de communiquer et de collaborer avec d’autres personnes dans Microsoft Teams, des vérifications SharePoint Online ou OneDrive sont réalisées pour empêcher (ou autoriser) la communication et la collaboration (telles que définies par les stratégies d’obstacle à l’information).
+Pour tous ces exemples de scénarios (et bien plus encore), des stratégies d’obstacle à l’information peuvent être définies pour empêcher ou autoriser les communications et la collaboration dans Microsoft Teams, SharePoint Online et OneDrive. De telles stratégies peuvent empêcher les personnes d’appeler ou de discuter avec celles qu’elles ne devraient pas, ou permettre aux utilisateurs de communiquer uniquement avec des groupes spécifiques Microsoft Teams. Avec les stratégies de obstacle à l’information en vigueur, chaque fois que les utilisateurs couverts par ces stratégies tentent de communiquer et de collaborer avec d’autres personnes dans Microsoft Teams, des vérifications SharePoint Online ou OneDrive sont réalisées pour empêcher (ou autoriser) la communication et la collaboration (telles que définies par les stratégies d’obstacle à l’information).
 
 Pour en savoir plus sur l’expérience utilisateur avec les obstacles aux informations, voir :
 
@@ -69,7 +69,7 @@ Si les personnes impliquées sont incluses dans une stratégie de cloisonnement 
 
 Pour en savoir plus sur l’expérience utilisateur avec les obstacles à l’information, consultez les [obstacles aux](/MicrosoftTeams/information-barriers-in-teams)informations Microsoft Teams .
 
-Dans SharePoint online et OneDrive, les stratégies d’obstacle à l’information déterminent et empêchent les types de collaborations non autorisées suivants :
+Dans SharePoint online et OneDrive, les stratégies de obstacle à l’information déterminent et empêchent les types de collaborations non autorisées suivants :
 
 - Ajout d’un membre à un site
 - Accès au site ou au contenu par un utilisateur
@@ -84,9 +84,9 @@ Les obstacles à l’information sont en cours de déploiement et sont inclus da
 
 - Microsoft 365 E5/A5
 - Office 365 E5/A5
-- Conformité avancée Office 365
+- Conformité avancée Office 365
 - Microsoft 365 Conformité E5/A5
-- Microsoft 365 : gestion des risques internes
+- Microsoft 365 : gestion des risques internes
 
 Pour plus d’informations, [voir Microsoft 365 licences pour la sécurité et & conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
@@ -97,11 +97,11 @@ Pour [définir ou modifier des stratégies de obstacle aux](information-barriers
 - Administrateur de conformité
 - Gestion de la conformité IB
 
-(Pour en savoir plus sur les rôles et les [autorisations,](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)voir Autorisations dans le Centre Office 365 sécurité et conformité &.)
+(Pour en savoir plus sur les rôles et les [autorisations,](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)voir Autorisations dans le Centre Office 365 sécurité & conformité.)
 
-Vous devez être familiarisé avec les cmdlets PowerShell pour définir, valider ou modifier des stratégies d’obstacle aux informations. Bien que nous fournissions plusieurs exemples d’cmdlets PowerShell dans [l’article](information-barriers-policies.md), vous devez connaître d’autres détails, tels que des paramètres, pour votre organisation.
+Vous devez être familiarisé avec les cmdlets PowerShell pour définir, valider ou modifier des stratégies d’obstacle aux informations. Bien que nous fournissions plusieurs exemples d’cmdlets PowerShell dans [l’article](information-barriers-policies.md), vous devez connaître d’autres détails, tels que les paramètres, pour votre organisation.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [En savoir plus sur les obstacles aux informations dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [En savoir plus sur les obstacles aux informations dans SharePoint Online](/sharepoint/information-barriers)

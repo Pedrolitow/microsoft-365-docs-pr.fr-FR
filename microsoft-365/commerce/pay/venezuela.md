@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 434c48a4347ecafa685e76dddda3918e9c862f6b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 67e5609225a8ea7b0951fb47e0e956062c1502b7c2f767679fc3a1a2db6fb219
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880874"
 ---
 # <a name="payment-information-for-venezuela"></a>Informations de paiement pour le Venezuela
 

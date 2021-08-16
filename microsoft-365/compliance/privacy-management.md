@@ -15,13 +15,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: La gestion de la confidentialité Microsoft offre des solutions pour l’évaluation des données personnelles que votre organisation stocke dans Microsoft 365 et vous aide à identifier et à résoudre les risques de confidentialité.
-ms.openlocfilehash: f4beecb0c9249c9eba530526e835bd2958be8cfab4c409365dc536f64b1b2caf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: La gestion de la confidentialité Microsoft offre des solutions pour l’évaluation des données personnelles que votre organisation stocke dans Microsoft 365 et vous aide à identifier et à corriger les risques de confidentialité.
+ms.openlocfilehash: 339407dcd22742ce089b18f6b70172754a09a4cc
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835738"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254610"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Gestion de la confidentialité Microsoft (prévisualisation)
 
@@ -56,13 +56,13 @@ Pour en savoir plus, voir [Rechercher et visualiser vos données personnelles.](
 
 Les environnements de données complexes peuvent présenter des scénarios potentiellement risqués pour les données personnelles. La gestion de la confidentialité permet de détecter facilement les risques dans les domaines suivants et d’établir des processus continus pour la gestion de ces scénarios.
 
-- **Données personnelles surexposées**: les sociétés peuvent collecter différents types d’informations qui peuvent être utilisés pour identifier des clients ou des employés individuels. Les droits d’accès à ces données doivent être gérés correctement pour protéger la confidentialité et empêcher toute utilisation inappropriée.
+- **Données personnelles surexposées**: les sociétés peuvent collecter différents types d’informations qui peuvent être utilisés pour identifier des clients ou des employés individuels. Les droits d’accès à ces données doivent être correctement gérés pour protéger la confidentialité et empêcher toute utilisation inappropriée.
 - Transferts **de** données : le transfert de données personnelles entre les services de votre organisation ou au-delà des frontières nationales ou régionales peut augmenter le risque d’exposition des données ou de ne pas respecter les réglementations et lois en matière de confidentialité.
 - **Réduction des données**: les sociétés peuvent collecter des informations superflues ou les conserver plus longtemps que nécessaire, ce qui entraîne le stockage des données personnelles inutilisées. Ces données doivent être réduites pour éviter les risques de confidentialité.
 
 La gestion de la confidentialité fournit des modèles intégrés pour la configuration des stratégies de gestion des données dans ces domaines. Ces stratégies peuvent évaluer vos données Microsoft 365 données de manière continue, vous alerter contre les problèmes potentiels et vous aider à résoudre ces problèmes. Par conséquent, vos employés peuvent mieux suivre les meilleures pratiques en matière de confidentialité et rester informés des actions recommandées à prendre. Les modèles peuvent être utilisés en tant que fournis ou personnalisés pour répondre aux besoins spécifiques de votre entreprise.
 
-Pour plus d’informations, voir [Créer et gérer des stratégies.](privacy-management-policies.md)
+Pour en savoir plus, voir [Créer et gérer des stratégies.](privacy-management-policies.md)
 
 ### <a name="manage-subject-rights-requests"></a>Gérer les demandes de droits d’objet
 
@@ -102,6 +102,6 @@ Pour plus d’informations sur la façon dont Microsoft aborde la confidentialit
 - [Principes de confidentialité de Microsoft](https://www.microsoft.com/en-us/trust-center/privacy)
 - [Aperçu sur la confidentialité](/compliance/assurance/assurance-privacy)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour continuer, voir [Prise en charge de la gestion de la confidentialité.](privacy-management-setup.md)

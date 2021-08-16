@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1971f70752b7787540e3edd470bece5e609d5bcd6171a7c6a8ef39af44c0ce4f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 90660b9b95e7724437972d280b5f179a774c00c3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893906"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254373"
 ---
 # <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Activer et piloter Microsoft Defender pour Office 365
 
@@ -43,8 +43,8 @@ Le tableau suivant décrit les étapes de l’illustration.
 
 | |Étape  |Description  |
 |---------|---------|---------|
-|1|[Passer en revue les exigences en matière d’architecture et les concepts clés](eval-defender-office-365-architecture.md)    | Comprenez l’architecture de Defender Office et assurez-vous que votre environnement Exchange Online répond aux conditions préalables de l’architecture.       |
-|2|[Activer l’environnement d’évaluation](eval-defender-office-365-enable-eval.md)     |   Suivez les étapes de configuration de l’environnement d’évaluation.      |
-|3|[Configurer le pilote ](eval-defender-office-365-pilot.md)    |    Créez des groupes pilotes, configurez la protection et familiarisez-vous avec les fonctionnalités clés et les tableaux de bord.     |
+|1|[Passer en revue les exigences en matière d’architecture et les concepts clés](eval-defender-office-365-architecture.md)    | Comprenez l’architecture de Defender pour Office et assurez-vous que votre environnement Exchange Online répond aux conditions préalables de l’architecture.       |
+|2 |[Activer l’environnement d’évaluation](eval-defender-office-365-enable-eval.md)     |   Suivez les étapes de configuration de l’environnement d’évaluation.      |
+|3 |[Configurer le pilote ](eval-defender-office-365-pilot.md)    |    Créez des groupes pilotes, configurez la protection et familiarisez-vous avec les fonctionnalités clés et les tableaux de bord.     |
 ||||
 

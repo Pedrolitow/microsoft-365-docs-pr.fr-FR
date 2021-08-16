@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b7eb225f04f531c3b6de71bf72df0f8062a8c93d
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fad8d20e0c3e6e1d3e8a9587a211fb109d869d1ab849c8e6948b9f476e543820
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880174"
 ---
 # <a name="insider-risk-management-audit-log"></a>Journal d’audit de la gestion des risques internes
 
@@ -29,7 +29,7 @@ Le journal d’audit est automatiquement et immédiatement mis à jour chaque fo
 
 Les domaines inclus dans l’analyse des activités sont les suivants :
 
-- Stratégies
+- Politiques
 - Cas
 - Alertes
 - Paramètres
@@ -70,11 +70,11 @@ Le fichier contient des informations d’activité pour les champs suivants :
 - **Volume d’alerte**: niveau du volume d’alerte défini dans les paramètres de gestion des risques internes.
 - **Montant**: montants des indicateurs personnalisés actuellement sélectionnés pour une stratégie.
 - **ID d’actif**: ID de l’actif physique de priorité sur qui l’activité a été effectuée.
-- **Catégorie :** Catégorie de l’élément modifié. Les valeurs *sont les modèles Stratégies, Cas, Utilisateurs, Alertes, Paramètres* et *Notification.*
+- **Catégorie :** Catégorie de l’élément modifié. Les valeurs *sont les modèles Stratégies, Cas, Utilisateurs, Alertes, Paramètres et* *Notification.*
 - **Date :** Date et heure, répertoriées dans la date et l’heure locales de votre organisation.
 - **Description**: entrée de description par l’utilisateur pour l’objet en cours d’action (par exemple, une stratégie ou un groupe d’utilisateurs prioritaire).
 - **Stratégie DLP :** stratégie de protection contre la perte de données (DLP) sélectionnée pour déclencher l’inclusion dans une stratégie de gestion des risques internes.
-- **Indicateur**: indicateur dans les paramètres de risque internes sur qui l’activité a été effectuée (par exemple, ajout ou suppression d’un indicateur).
+- **Indicateur**: indicateur dans les paramètres de risque internes sur l’activité (par exemple, ajout ou suppression d’un indicateur).
 - **Modèle de notification**: modèle d’avis sur qui l’activité a été effectuée.
 - **Nombre de jours :** fenêtre d’activation de stratégie définie dans les paramètres de risque interne.
 - **Nombre de fichiers**: limite de volume de fichiers définie dans les paramètres de gestion des risques internes.

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des dépositaires dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1e9e9d481073c8bb2827d5d65537dbf2b63ef1f
-ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
+ms.openlocfilehash: daf74c2e51d9a01fad97534a4e49068528e820054b147c09baf8d3b3a8099d45
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "49739867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879316"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gérer les dépositaires dans un Advanced eDiscovery de gestion
 
@@ -87,7 +87,7 @@ Pour mettre à jour les sources de données associées à un dépositaire :
   
 4. Cliquez **sur l’onglet** Choisir les sources de données pour modifier les paramètres de la boîte aux lettres du Exchange et du compte OneDrive, cliquez sur Choisir les **sources de données.**
   
-5. Cliquez sur **l’onglet** Sélectionner des sources de données supplémentaires pour ajouter ou supprimer Teams, SharePoint ou Exchange boîtes aux lettres associées au dépositaire. 
+5. Cliquez sur **l’onglet** Sélectionner des sources de données supplémentaires pour ajouter ou supprimer des Teams, SharePoint ou Exchange boîtes aux lettres associées au dépositaire. 
 
     Pour plus d’informations sur les sources de données associées à un dépositaire, voir [Ajouter des dépositaires à un cas.](add-custodians-to-case.md) 
   
@@ -111,7 +111,7 @@ Pour déclencher le processus de ré-indexation afin de traiter les éléments p
 
    Une boîte de dialogue s’affiche pour dire que le travail d’index a été créé.
 
-La ré-indexation des données des dépositaires est un processus de longue durée . la tâche correspondante créée est nommée **Re-indexation des données du dépositaire**. Vous pouvez suivre l’avancement sous l’onglet **Travaux** ou sous l’onglet **Dépositaires** en surveillant l’état dans la colonne État du travail **d’indexation.**
+La ré-indexation des données des dépositaires est un processus de longue durée . le travail correspondant créé est nommé **Re-indexation des données du dépositaire**. Vous pouvez suivre l’avancement sous l’onglet **Travaux** ou sous l’onglet **Dépositaires** en surveillant l’état dans la colonne État du travail **d’indexation.**
 
 Pour plus d’informations, voir :
 
@@ -135,7 +135,7 @@ Pour libérer un dépositaire :
 
 4. Dans la page volante, cliquez sur **Libérer le dépositaire**.
 
-   Une page d’avertissement s’affiche, expliquant que si une conservation est placée sur une source de données associée au dépositaire, la conservation est supprimée et que toute autre conservation associée à un cas Advanced eDiscovery différent s’applique toujours. Cela inclut d’autres types de fonctionnalités de conservation et de rétention (telles qu’Microsoft 365 stratégie de rétention).
+   Une page d’avertissement s’affiche, expliquant que si une conservation est placée sur une source de données associée au dépositaire, la conservation sera supprimée et que toute autre conservation associée à un cas Advanced eDiscovery différent s’appliquera toujours. Cela inclut d’autres types de fonctionnalités de conservation et de rétention (telles qu’Microsoft 365 stratégie de rétention).
 
 5. Cliquez **sur Oui** pour confirmer que vous souhaitez libérer le dépositaire. 
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8aeebe64a5a9f95093e5433f72203e92451d4e94
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 19016d254dbdcd169a83034f3b7f1d814a665b8108a67d09349ff7809a7ffc0d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896822"
 ---
 # <a name="contact-support-for-lebanon"></a>Contacter le support pour le Liban
 
@@ -39,10 +39,10 @@ Arabe : Sun-Thu 10h00 à 18h00
 
 Anglais : Mon-Fri 10h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Arabe : Sun-Thu 10h00 à 18h00
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Frais d’appel local applicables

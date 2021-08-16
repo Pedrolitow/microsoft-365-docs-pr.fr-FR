@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article présente une liste des filtres qui peuvent être codés dans des types d’informations sensibles personnalisés.
-ms.openlocfilehash: 6dfa562d581f14c0b1ac41c4ce803e2367a94636
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 8cf5e60aeb27ff7426837b8885597a7d03e9e868073262bed263a7f70bbb301b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879192"
 ---
-# <a name="custom-sensitive-information-type-filters-reference"></a>Référence des filtres de types d’informations sensibles personnalisés
+# <a name="custom-sensitive-information-type-filters-reference"></a>Référence de filtres de type d’informations sensibles personnalisé
 
 Dans Microsoft, vous pouvez définir des filtres ou des vérifications supplémentaires lors de la création d’un type d’informations sensibles personnalisé (SIT).
 
@@ -149,9 +149,9 @@ vous pouvez utiliser ce xml
 
 ### <a name="textmatchfilter-full"></a>TextMatchFilter Full
 
-Description : vous permet d’interdire certaines correspondances pour les empêcher de déclencher la règle. Par exemple, excluez 411111111111111 de la liste des correspondances de carte de crédit valides.
+Description : vous permet d’interdire certaines correspondances pour les empêcher de déclencher la règle. Par exemple, excluez 4111111111111111 de la liste des correspondances de carte de crédit valides.
 
-Par exemple, pour exclure des numéros de carte de crédit tels que 4111111111111 et 3241891031113111, dans une liste comme celle-ci :
+Par exemple, pour exclure des numéros de carte de crédit tels 4111111111111111 et 3241891031113111 dans une liste comme celle-ci :
 
 - 4485 3647 3952 7352
 - 4111111111111111
@@ -172,7 +172,7 @@ vous pouvez utiliser ce xml
   </Keyword>
 ```
 
-Par exemple, pour inclure des numéros de carte de crédit comme 41111111111111 et 3241891031113111 dans une liste comme celle-ci :
+Par exemple, pour inclure des numéros de carte de crédit tels 4111111111111111 et 3241891031113111 dans une liste comme celle-ci :
 
 - 4485 3647 3952 7352
 - 4111111111111111
@@ -287,7 +287,7 @@ you can use this xml
 
 ## <a name="using-filters-in-rule-packages"></a>Utilisation de filtres dans des packages de règles
 
-Les filtres peuvent être définis sur l’ensemble du sit ou sur un modèle. Voici quelques exemples d’extraits de code. 
+Les filtres peuvent être définis sur l’intégralité de la fonction SIT ou sur un modèle. Voici quelques exemples d’extraits de code. 
 
 ### <a name="at-sensitive-information-type-level"></a>Au niveau du type d’informations sensibles
 

@@ -17,12 +17,12 @@ ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez l’Éditeur de recherche en bloc dans le centre de sécurité et conformité pour modifier rapidement les emplacements de requête et de contenu pour une ou plusieurs recherches de contenu.
-ms.openlocfilehash: be7e37ec22966e16dfa3c6d1f37a34e6441e632a
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 221b35c282de3f9bf00c3318e92d996d867388226fd93251fef3f66881c7be21
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341031"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880626"
 ---
 # <a name="bulk-edit-content-searches"></a>Modification en bloc des recherches de contenu
 
@@ -66,7 +66,7 @@ Voici quelques conseils pour modifier des requêtes à l’aide de l’Éditeur 
 
 - Copiez la requête existante (à l’aide **de Ctrl C)** dans un fichier texte. Modifiez la requête dans le fichier texte, puis copiez la requête révisée et collez-la (à l’aide de **Ctrl V**) dans la cellule de la page **Requêtes.**
 
-- Vous pouvez également copier des requêtes à partir d’autres applications (telles que Microsoft Word ou Microsoft Excel). Toutefois, vous pouvez ajouter par inadvertance des caractères non pris en aide à une requête à l’aide de l’Éditeur de recherche en bloc. La meilleure façon d’éviter les caractères non pris en place consiste à taper simplement la requête dans une cellule de la page **Requêtes.** Vous pouvez également copier une requête à partir de Word ou Excel puis la coller dans un éditeur de texte simple, tel que Microsoft Bloc-notes. Enregistrez ensuite le fichier texte, puis sélectionnez **ANSI** dans la liste déroulante **Encodage**. Cette opération supprime les caractères de mise en forme et non pris en place. Vous pouvez ensuite copier et coller la requête à partir du fichier texte dans la page **Requêtes.**
+- Vous pouvez également copier des requêtes à partir d’autres applications (telles que Microsoft Word ou Microsoft Excel). Toutefois, vous pouvez ajouter par inadvertance des caractères non pris en aide à une requête à l’aide de l’Éditeur de recherche en bloc. La meilleure façon d’éviter les caractères non pris en place consiste à taper simplement la requête dans une cellule de la page **Requêtes.** Vous pouvez également copier une requête à partir de Word ou Excel puis la coller dans un éditeur de texte simple, tel que Microsoft Bloc-notes. Enregistrez ensuite le fichier texte, puis sélectionnez **ANSI** dans la liste déroulante **Encodage**. Cette opération supprime les caractères de mise en forme et les caractères non pris en place. Vous pouvez ensuite copier et coller la requête à partir du fichier texte dans la page **Requêtes.**
 
 ## <a name="use-the-bulk-search-editor-to-change-content-locations"></a>Utiliser l’Éditeur de recherche en bloc pour modifier les emplacements de contenu
 
@@ -76,7 +76,7 @@ Voici quelques conseils pour modifier des requêtes à l’aide de l’Éditeur 
 
     ![Sélectionnez Activer l’éditeur d’emplacements en bloc, puis sélectionnez Emplacements pour ajouter ou supprimer des emplacements de contenu](../media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
 
-    a. **Boîtes aux lettres à rechercher** Cette section affiche une colonne pour chaque recherche de contenu sélectionnée et une ligne pour chaque boîte aux lettres incluse dans la recherche. Une coche indique que la boîte aux lettres est incluse dans la recherche. Vous pouvez ajouter des boîtes aux lettres à une recherche en tapant l’adresse de messagerie de la boîte aux lettres sur une ligne vide, puis en élecant la case à cocher pour la recherche de contenu à ajouter. Vous pouvez également supprimer une boîte aux lettres d’une recherche en ôtant la case à cocher.
+    a. **Boîtes aux lettres à rechercher** Cette section affiche une colonne pour chaque recherche de contenu sélectionnée et une ligne pour chaque boîte aux lettres incluse dans la recherche. Une coche indique que la boîte aux lettres est incluse dans la recherche. Vous pouvez ajouter des boîtes aux lettres à une recherche en tapant l’adresse e-mail de la boîte aux lettres sur une ligne vide, puis en élecant la case à cocher pour la recherche de contenu à ajouter. Vous pouvez également supprimer une boîte aux lettres d’une recherche en ôtant la case à cocher.
 
     b. **SharePoint sites à rechercher** Cette section affiche une ligne pour chaque site SharePoint et OneDrive qui est inclus dans chaque recherche de contenu sélectionnée. Une coche indique que le site est inclus dans la recherche. Vous pouvez ajouter des sites à une recherche en tapant l’URL du site sur une ligne vide, puis en élecant la case à cocher pour la recherche de contenu à ajouter. Vous pouvez également supprimer un site d’une recherche en ôtant la case à cocher.
 
@@ -92,11 +92,11 @@ Voici quelques conseils pour modifier des requêtes à l’aide de l’Éditeur 
 
 Voici quelques conseils pour modifier les emplacements de contenu à l’aide de l’Éditeur de recherche en bloc :
 
-- Vous pouvez modifier les recherches de contenu pour effectuer des  recherches dans toutes  les boîtes aux lettres ou tous les sites de l’organisation en tapant Tout sur une ligne vide dans les boîtes aux lettres pour rechercher ou **SharePoint sites** à rechercher, puis en cocher la case.
+- Vous pouvez modifier les recherches de contenu pour effectuer des  recherches dans toutes  les boîtes aux lettres ou tous les sites de l’organisation en tapant Tout sur une ligne vide dans les boîtes aux lettres pour rechercher ou **SharePoint sites** à rechercher, puis en élecant la case à cocher.
 
 - Vous pouvez ajouter plusieurs emplacements de contenu à une ou plusieurs recherches en copiant plusieurs lignes à partir d’un fichier texte ou d’un fichier Excel, puis en les coller dans une section de la page **Emplacements.** Après avoir ajouté de nouveaux emplacements, n’oubliez pas de cocher la case pour chaque recherche à ajouter à l’emplacement.
 
     > [!TIP]
-    > Pour générer une liste d’adresses de messagerie pour tous les utilisateurs de votre organisation, exécutez la commande PowerShell à l’étape 2 de l’étape 2 : Générer une liste [d’utilisateurs.](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users) Vous pouvez également suivre les étapes de la procédure Obtenir la liste de toutes les URL OneDrive [utilisateurs](/onedrive/list-onedrive-urls) de votre organisation pour générer une liste de tous les sites OneDrive Entreprise de votre organisation. Notez que vous devez appender l’URL du domaine Mon site de votre organisation (par exemple, aux sites OneDrive Entreprise créés par https://contoso-my.sharepoint.com) le script. Une fois que vous avez une liste d’adresses de messagerie ou OneDrive Entreprise sites, vous pouvez les copier et les coller dans la **page** Emplacements dans l’Éditeur de recherche en bloc.
+    > Pour générer une liste d’adresses de messagerie pour tous les utilisateurs de votre organisation, exécutez la commande PowerShell à l’étape 2 de l’étape 2 : Générer une liste [d’utilisateurs.](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users) Vous pouvez également suivre les étapes de la procédure Obtenir la liste de toutes les URL OneDrive [utilisateurs](/onedrive/list-onedrive-urls) de votre organisation pour générer une liste de tous les sites OneDrive Entreprise de votre organisation. Notez que vous devez y appender l’URL du domaine Mon site de votre organisation (par exemple, aux sites OneDrive Entreprise créés par https://contoso-my.sharepoint.com) le script. Une fois que vous avez une liste d’adresses e-mail ou OneDrive Entreprise sites, vous pouvez les copier et les coller dans la **page** Emplacements dans l’Éditeur de recherche en bloc.
 
 - Une fois que vous avez sélectionné **Enregistrer** pour enregistrer les modifications dans l’Éditeur de recherche en bloc, l’adresse de messagerie des boîtes aux lettres que vous avez ajoutées à une recherche est validée. Si l’adresse de messagerie n’existe pas, un message d’erreur s’affiche pour dire que la boîte aux lettres ne peut pas être localisée. Les URL des sites ne sont pas validées.

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ad044d7cb0ad2ed15d738e99deb14a9a04218479
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8c2029be06be016d34fc7f00f5b1ec4ffb474f472bb96179f46ed55280706a40
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296815"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896942"
 ---
 # <a name="contact-support-for-canada"></a>Contacter le support pour le Canada
 
@@ -33,8 +33,8 @@ Anglais : Mon-Fri 9h00 à 17h00 locales
 
 Français : Mon-Fri 9h00-17h00 ET
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Français : Mon-Fri 9h00-17h00 ET

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft est un outil gratuit d’évaluation des risques des flux de travail disponible dans le Portail d’approbation de services de Microsoft. Le Gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de mise en conformité réglementaires liées aux services de cloud computing Microsoft.
-ms.openlocfilehash: 69e6551620fb654cb09d46554e6e3c98b6a2fc60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc58bf9b38b08ddd7218dfe0be07013a72ad0608dec931a3a5992193f75b0a25
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880544"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Gestionnaire de conformité Microsoft et RGPD
 
@@ -28,7 +28,7 @@ Le Règlement général sur la protection des données (RGPD) adopté par l’Un
 
 ## <a name="user-privacy-settings"></a>Paramètres de confidentialité de l’utilisateur
 
-Certaines réglementations exigent qu’une organisation puisse supprimer les données de l’historique d’un utilisateur. Le Gestionnaire de conformité fournit des fonctionnalités, les **Paramètres de confidentialité de l’utilisateur**, qui permettent aux administrateurs d’effectuer ce qui suit :
+Certaines réglementations exigent que les organisations soient en mesure de supprimer les données de l’historique d’un utilisateur. Le Gestionnaire de conformité propose les fonctions **Paramètres de confidentialité de l’utilisateur**, qui permettent aux administrateurs d’effectuer les actions suivantes :
   
 - [Rechercher un utilisateur](#search-for-a-user)
 - [Exporter le rapport de l’historique des données d’un compte](#export-a-report-of-account-data-history)
@@ -36,7 +36,7 @@ Certaines réglementations exigent qu’une organisation puisse supprimer les do
   
 ## <a name="search-for-a-user"></a>Rechercher un utilisateur
 
-Pour rechercher un compte d’utilisateur :
+Pour rechercher un compte d’utilisateur :
   
 1. Entrez l’alias de l’adresse e-mail de l’utilisateur (informations à gauche du symbole @), puis choisissez le nom de domaine à partir de la liste des suffixes de domaine à droite. Pour les organisations ayant plusieurs domaines inscrits, revérifiez le suffixe du nom de domaine pour éviter toute erreur.
 
@@ -44,7 +44,7 @@ Pour rechercher un compte d’utilisateur :
 
 3. Pour les comptes d’utilisateur non renvoyés, la page affiche **Utilisateur introuvable**. Vérifiez l’adresse e-mail de l’utilisateur, puis apportez les corrections nécessaires le cas échéant. Pour réessayer, sélectionnez **Rechercher**.
 
-4. Pour les comptes d’utilisateur renvoyés, le texte du bouton passe de **Rechercher** à **Effacer**. Ceci indique que les comptes d’utilisateur renvoyés est le contexte opérationnel pour les fonctions supplémentaires et que ces dernières s’appliquent à ce compte d’utilisateur.
+4. Pour le compte d’utilisateur retourné, le texte du bouton n’affichera plus **Rechercher** mais **Effacer**. Ceci indique que le compte d’utilisateur renvoyé peut utiliser les autres fonctions qui seront affichées ci-dessous, et que l’exécution de ces fonctions sera rattachée à ce compte d’utilisateur.
 
 5. Pour effacer les résultats de la recherche et rechercher un autre utilisateur, sélectionnez **Effacer**.
 
@@ -52,9 +52,9 @@ Pour rechercher un compte d’utilisateur :
 
 Pour chaque compte d’utilisateur identifié, vous pouvez générer un rapport sur les dépendances liées au compte. Ces informations vous permettent de réaffecter des éléments d’action en cours ou de garantir l’accès à des preuves chargées.
   
- Pour générer et exporter un rapport :
+ Pour générer et exporter un rapport :
   
-1. Sélectionnez **Exporter** pour générer et télécharger un rapport sur les éléments d’action de contrôle du Gestionnaire de conformité actuellement attribués au compte d’utilisateur renvoyé, ainsi que la liste des documents chargés par cet utilisateur. En l’absence d’actions attribuées ou de documents chargés, un message d’erreur indique « Aucune données pour cet utilisateur ».
+1. Sélectionnez **Exporter** pour générer et télécharger un rapport des éléments d’action d’un contrôle du Gestionnaire de conformité actuellement affectés au compte d’utilisateur retourné, et la liste des documents chargés par cet utilisateur. S’il n’y a aucune action affectée ni aucun document téléchargé, un message d’erreur indiquera « Aucune donnée liée à cet utilisateur ». Vous pouvez spécifier plusieurs valeurs séparées par des virgules.
 
 2. Le rapport est téléchargé en arrière-plan de la fenêtre active du navigateur. Si aucune fenêtre contextuelle de téléchargement n’apparaît, vérifiez l’historique de téléchargement de votre navigateur.
 
@@ -65,12 +65,12 @@ Pour chaque compte d’utilisateur identifié, vous pouvez générer un rapport 
   
 ## <a name="delete-user-data-history"></a>Supprimer l’historique des données d’un utilisateur
 
-Cette action définit tous les éléments affectés d’action de contrôle sur « non affecté » à l’utilisateur renvoyé. Elle définit la valeur **chargé par** sur « utilisateur supprimé » pour tous les documents chargés par l’utilisateur renvoyé.
+Cette action définit tous les éléments affectés d’action de contrôle sur « non affecté » à l’utilisateur renvoyé. Elle définit la valeur **chargé par** sur « utilisateur supprimé » pour tous les documents chargés par l’utilisateur renvoyé.
   
-Pour supprimer un élément d’action du compte d’utilisateur et l’historique de chargement des documents :
+Pour supprimer un élément d’action du compte d’utilisateur et l’historique de chargement des documents :
   
 1. Sélectionnez **Supprimer**.
 
-    Une boîte de dialogue de confirmation apparaît, indiquant : *Cette action supprime tous les éléments d’action du contrôle affectés et l’historique de chargement des documents pour l’utilisateur sélectionné. Cette action est définitive. Voulez-vous vraiment continuer ?*  »
+    Une boîte de dialogue de confirmation apparaît, indiquant : *Cette action supprime tous les éléments d’action du contrôle affectés et l’historique de chargement des documents pour l’utilisateur sélectionné. Cette action est définitive. Voulez-vous vraiment continuer ?* »
 
 2. Pour continuer, sélectionnez **OK**. Sinon, sélectionnez **Annuler**.
