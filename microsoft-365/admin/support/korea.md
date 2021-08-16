@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 641553925d12755bfd1efbceba68fe4e39709b53
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 3de547e823b356c1661a5cb57cc5de164ca52790cdb14486ad0f6092715a773b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295974"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53907066"
 ---
 # <a name="contact-support-for-korea"></a>Contacter le support technique pour la Corée
 
@@ -33,11 +33,11 @@ Coréen : Mon-Fri 9 h à 18 h
 
 Anglais : Mon-Fri 9h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Coréen : Mon-Fri 9 h à 18 h
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Autre Téléphone numéro : 02 3483 1937
 

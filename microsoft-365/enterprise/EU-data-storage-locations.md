@@ -1,7 +1,7 @@
 ---
 title: Emplacements de données pour l’Union européenne
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans l’Union européenne
-ms.openlocfilehash: 581b4b4a1c3861025518219c7ca5a4c4d4e29e5fc45fcb68d88f4a5627d79ee3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2099f6b81fa7ecfff4c641d0e18bed3c9b0f4d7c
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835486"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355039"
 ---
 # <a name="data-locations-for-the-european-union"></a>Emplacements de données pour l’Union européenne
 
@@ -49,7 +49,7 @@ Nous disposons de centres de données dans des emplacements géographiques en Al
 | OneDrive Entreprise | France | Allemagne | Union européenne |
 | SharePoint Online | France | Allemagne | Union européenne |
 | Skype Entreprise | Union européenne | Union européenne | Union européenne |
-| Microsoft Teams | France | Allemagne | Union européenne |
+| Microsoft Teams | France | Allemagne | Union européenne |
 | Office Online et Mobile | France | Allemagne | Union européenne |
 | Exchange Online Protection | France | Allemagne | Union européenne |
 | Intune | Union européenne | Union européenne | Union européenne |
@@ -57,7 +57,7 @@ Nous disposons de centres de données dans des emplacements géographiques en Al
 | Planificateur | Union européenne | Union européenne | Union européenne |
 | Yammer | Union européenne | Union européenne | Union européenne |
 | Services OneNote | France | Allemagne | Union européenne |
-| Stream | Union européenne | Union européenne | Union européenne |
+| Flux | Union européenne | Union européenne | Union européenne |
 | Tableau blanc collaboratif | Union européenne | Union européenne | Union européenne |
 | Formulaires | Union européenne | Union européenne | Union européenne |
 ||||| 

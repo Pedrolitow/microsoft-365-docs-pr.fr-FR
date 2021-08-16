@@ -1,7 +1,7 @@
 ---
 title: Solutions hybrides
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Fournit une liste de liens vers des informations utiles pour le déploiement Office charges de travail du serveur dans Microsoft Azure.
-ms.openlocfilehash: 1b63f2fff61a9fb8a7eb99bd15da13d5c909af86c3362618ab7a438e0a610316
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c7b3997464a6834da0471f3b879da4daafe3908d
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885386"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354451"
 ---
 # <a name="hybrid-solutions"></a>Solutions hybrides
 
@@ -48,7 +48,7 @@ Pour les charges de travail SharePoint Server 2013 dans Azure :
 - [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 [Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment vous connecter à des données dans votre client Microsoft 365 Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) à l’aide de l’application de modèle Analyse de l’utilisation Microsoft 365 dans Power BI.
-ms.openlocfilehash: f11a174f83dcdc9b2afadd71133cce19a5e6f677
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: e831cae78c90eeafae38117b6939d506f37632f30e3bd456ca9242b9d81c402c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53907170"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Connecter données Microsoft 365 Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) avec l’analyse de l’utilisation
 
@@ -61,7 +61,7 @@ Pour configurer initialement Microsoft 365 l’analyse de l’utilisation :
     ![ID client](../../media/usage-analytics/tenant-id-gcc.png) 
  
     > [!IMPORTANT]
-    > Lorsque vos données sont disponibles, ne sélectionnez pas **Power BI**, qui vous permet d’Power BI Marketplace.  L’application de modèle pour ce rapport requise par Cloud de la communauté du secteur public client n’est pas disponible sur Power BI Marketplace.  
+    > Lorsque vos données sont disponibles, ne sélectionnez pas **Power BI,** qui vous permet d’Power BI Marketplace.  L’application de modèle pour ce rapport requise par Cloud de la communauté du secteur public client n’est pas disponible sur Power BI Marketplace.  
 
 
 ## <a name="step-2-download-the-power-bi-template-connect-to-your-data-and-publish-the-report"></a>Étape 2 : Télécharger le modèle Power BI, vous connecter à vos données et publier le rapport

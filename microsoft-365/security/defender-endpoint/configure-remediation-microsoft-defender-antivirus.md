@@ -16,17 +16,17 @@ ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 9b765d14e31d6c4890aeace41e4fe79bafdd889e
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: a08be838fdfb23e7f24677694fb0fe2f896ca8412d0f77df937af6a7b732053e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925574"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904022"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Configurer la correction pour la détection d’antivirus Microsoft Defender
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -51,7 +51,7 @@ Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/pow
 |Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
 |Analyser | Créer un point de restauration du système | Un point de restauration système est créé chaque jour avant la tentative de nettoyage ou d’analyse | Désactivé|
-|Analyser | Activer la suppression des éléments du dossier d’historique d’analyse | Spécifier le nombre de jours pendant combien d’éléments doivent être conservés dans l’historique d’analyse | 30 jours |
+|Analyser | Activer la suppression des éléments du dossier d’historique d’analyse | Spécifier le nombre de jours pendant combien d’éléments doivent être conservés dans l’historique d’analyse | 30 jours |
 |Root | Désactiver la correction de routine | Vous pouvez spécifier si Antivirus Microsoft Defender les menaces sont automatiquement corrigés ou s’il doit demander à l’utilisateur du point de terminaison ce qu’il doit faire. | Désactivé (les menaces sont automatiquement corrigés) |
 |Quarantaine | Configurer la suppression des éléments du dossier de mise en quarantaine | Spécifier le nombre de jours pendant combien d’éléments doivent être mis en quarantaine avant d’être supprimés | 90 jours |
 |Menaces | Spécifier les niveaux d’alerte contre les menaces pour lesquels aucune action par défaut ne doit être prise lorsqu’elle est détectée | Chaque menace détectée par le Antivirus Microsoft Defender est affectée à un niveau de menace (faible, moyen, élevé ou grave). Vous pouvez utiliser ce paramètre pour définir comment toutes les menaces pour chacun des niveaux de menace doivent être corrigés (mis en quarantaine, supprimés ou ignorés) | Non applicable |
@@ -64,14 +64,14 @@ Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/pow
 > 
 > Pour éviter ce problème à l’avenir, vous pouvez exclure des fichiers des analyses. Voir [Configurer et valider les exclusions pour Antivirus Microsoft Defender analyses.](configure-exclusions-microsoft-defender-antivirus.md)
 
-Consultez également Configurer des analyses complètes Antivirus Microsoft Defender de correction [requises](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) pour plus de paramètres liés à la correction.
+Voir également Configurer des analyses complètes Antivirus Microsoft Defender des [corrections requises](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) pour la correction.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Configurer les options d’analyse de l’antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender](run-scan-microsoft-defender-antivirus.md).
+- [Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender](run-scan-microsoft-defender-antivirus.md)
 - [Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
 - [Configurer l’interaction de l’utilisateur Antivirus Microsoft Defender fin](configure-end-user-interaction-microsoft-defender-antivirus.md)
 - [Personnaliser, lancer et passer en revue les résultats des analyses et Antivirus Microsoft Defender correction](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

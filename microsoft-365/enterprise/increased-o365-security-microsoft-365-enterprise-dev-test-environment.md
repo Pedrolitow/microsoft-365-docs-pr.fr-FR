@@ -2,8 +2,8 @@
 title: Sécurité accrue Microsoft 365 pour votre environnement de test Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/09/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour activer des paramètres Microsoft 365 de sécurité supplémentaires que Microsoft 365 pour l’environnement de test d’entreprise.
-ms.openlocfilehash: 3decba5b8e75525c8988f07e8e3af3e236ed5e2e597266901bec5346cec8660c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad739ed76d903ece388dde4c4fbc6337bb230051
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835150"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354439"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Sécurité accrue Microsoft 365 pour votre environnement de test Microsoft 365 entreprise
 
@@ -70,7 +70,7 @@ Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects y
 
 3. Sous **Protéger les fichiers dans SharePoint, OneDrive et Microsoft Teams**. sélectionnez **Activer LAP pour SharePoint, OneDrive et Microsoft Teams**.
 
-4. Cliquez sur **Save (Enregistrer)**.
+4. Cliquez sur **Enregistrer**.
 
 
 ### <a name="enable-anti-malware"></a>Activer la protection contre les programmes malveillants
@@ -113,7 +113,7 @@ Le degré de sécurisation Microsoft indique votre posture de sécurité sous la
 
 Pour plus d’informations, voir [Le Score de sécurité Microsoft.](../security/defender/microsoft-secure-score.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Explorez [d’autres fonctionnalités de protection](m365-enterprise-test-lab-guides.md#information-protection) des informations dans votre environnement de test.
 

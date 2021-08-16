@@ -2,8 +2,8 @@
 title: Configuration de base d’une entreprise simulée pour Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/21/2019
 audience: ITPro
@@ -17,13 +17,13 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Utilisez ce Guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 entreprise.
-ms.openlocfilehash: 8c07187d5c86af7e82c6ce31ad98a1caa5bb71669df3eb64d24831018b6f679c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Utilisez ce guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 entreprise.
+ms.openlocfilehash: c392e24b9bf3ef7c8c949ef00a6b661000156117
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870191"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354415"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Configuration de base d’une entreprise simulée
 
@@ -201,7 +201,7 @@ Après le redémarrage de DC1, reconnectez-vous à la machine virtuelle DC1.
     
 2. Exécutez le fichier DC1.rdp téléchargé, puis sélectionnez **Connecter**.
     
-3. Dans **Sécurité Windows,** **sélectionnez Utiliser un autre compte.** Dans **le nom d’utilisateur,** entrez le nom du compte d’administrateur local **TESTLAB \\** < >.
+3. Dans **Sécurité Windows,** **sélectionnez Utiliser un autre compte.** Dans **le nom d’utilisateur,** entrez le nom du compte **\\** < *d’administrateur local* TESTLAB>.
     
 4. Dans la **zone Mot** de passe, entrez le mot de passe du compte d’administrateur local, puis sélectionnez **OK.**
     
@@ -337,9 +337,9 @@ Ensuite, vérifiez que vous pouvez accéder aux ressources web et de partage de 
   
 1. Dans le Gestionnaire de serveur, dans le volet d’arborescence, sélectionnez **Serveur local.**
     
-2. Dans **les propriétés de CLIENT1,** **sélectionnez Sur** en plus de la configuration de sécurité renforcée **d’IE.**
+2. Dans **Les propriétés de CLIENT1,** **sélectionnez Sur** en plus de la configuration de sécurité renforcée **d’IE.**
     
-3. Dans la configuration de sécurité renforcée d’Internet **Explorer,** sélectionnez **Off** pour les administrateurs et les  **utilisateurs,** puis **sélectionnez OK**.
+3. Dans **la configuration de sécurité renforcée d’Internet Explorer,** sélectionnez **Off** pour les administrateurs et les **utilisateurs,** puis **sélectionnez OK**. 
     
 4. Dans l’écran d’accueil, **sélectionnez Internet Explorer,** puis **sélectionnez OK.**
     
@@ -400,7 +400,7 @@ Votre configuration finale ressemble à ceci :
   
 ![Phase 2 de la configuration de base de l’entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-Vous êtes maintenant prêt à tester des fonctionnalités supplémentaires de [Microsoft 365 entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
+Vous êtes maintenant prêt à expérimenter des fonctionnalités supplémentaires de [Microsoft 365 entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
   
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 79795b6166b5a0b513ab4558effe509cc6637849
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 155195ef2c7083bf6d792ccd1b77584d43ba3be27414ac3b27013af6f774cd09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256691"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905508"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -209,8 +209,6 @@ Pour afficher rapidement l’état d’intégrité d’une stratégie, naviguez 
 Pour d’autres détails concernant les avertissements et les recommandations, sélectionnez une stratégie sur l’onglet **Stratégie** pour ouvrir la carte détaillée de la stratégie. Des informations supplémentaires sur les avertissements et les recommandations, notamment des conseils sur la façon de traiter ces problèmes, s’affichent dans la section Notification de la carte détaillées.
 
 ![Intégrité d’une stratégie de gestion des risques internes](../media/insider-risk-policy-health.png)
-
-### <a name="notification-messages"></a>Les messages de notification
 
 Utilisez le tableau suivant pour en savoir davantage sur les notifications d’avertissement et de recommandation, ainsi que les mesures à prendre pour résoudre des problèmes potentiels.
 

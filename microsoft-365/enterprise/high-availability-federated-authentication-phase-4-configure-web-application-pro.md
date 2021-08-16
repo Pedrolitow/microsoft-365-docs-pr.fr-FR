@@ -1,7 +1,7 @@
 ---
 title: Authentification fédérée haute disponibilité, phase 4 Configurer les proxies d’application web
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Résumé : Configurez les serveurs proxy d’application web pour votre authentification fédérée haute disponibilité Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: cc74fd93fc668094d9627486ac0106447825166e3c69b4c79c36be7ccd6ea107
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c67aa4b2c3583fe4e370fdc750a49d7088e0db2
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870640"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354463"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Authentification fédérée haute disponibilité, phase 4 : Configurer les proxys d’application web
 
@@ -160,7 +160,7 @@ Lorsque cette phase est terminée, voici la configuration résultante, avec les 
   
 ## <a name="next-step"></a>Étape suivante
 
-Utilisez [la phase 5 : Configurer l’authentification fédérée pour Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) pour continuer à configurer cette charge de travail.
+Utilisez [la phase 5 : Configurez l’authentification fédérée Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) pour continuer à configurer cette charge de travail.
   
 ## <a name="see-also"></a>Voir aussi
 

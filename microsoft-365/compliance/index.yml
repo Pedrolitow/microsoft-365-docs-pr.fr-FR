@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: 5fbddbbf65d987817e793233fe3384c0f47fd04f
-  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+  ms.openlocfilehash: 165eec00e4d382feadb435ae1a3479740359d50aebcda92f47edbb755672eee6
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/13/2021
-  ms.locfileid: "53415528"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53905534"
 landingContent:
 - title: Gérer la protection et la gouvernance des informations
   linkLists:

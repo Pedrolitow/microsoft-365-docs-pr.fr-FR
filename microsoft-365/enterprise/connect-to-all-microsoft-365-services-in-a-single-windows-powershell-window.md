@@ -1,7 +1,7 @@
 ---
 title: Se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 02/02/2021
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé : se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell.'
-ms.openlocfilehash: cfe720193da1633c21cbe5be5a39478fe54971f0028e9881f5fe30bee0f29e03
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82d623c0074a7cdb3b61d0e6380b779d55354809
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53849990"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354967"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell
 
@@ -46,7 +46,7 @@ Avant de pouvoir gérer l’ensemble de Microsoft 365 à partir d’une seule in
     
   - Windows 8.1 ou Windows 8
     
-  - Windows Server 2019
+  - Windows Server 2019
     
   - Windows Server 2016
     

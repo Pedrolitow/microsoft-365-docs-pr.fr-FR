@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé est réprocessé pour le rendre entièrement utilisable dans une recherche.
-ms.openlocfilehash: 34855eb168dd10fc500e2e57fe1d57ad81449452
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: a43ccc09fb3c0821ff04d5ec47bf9bfbb1782c1061e51b6b541abc3792e82738
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53437975"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905546"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 
@@ -39,7 +39,7 @@ Pour en savoir plus sur le traitement de la prise en charge et des éléments pa
 
 ## <a name="viewing-advanced-indexing-results"></a>Affichage des résultats de l’indexation avancée
 
-Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du nouveau traitement.  Dans l’affichage Des résultats  d’indexation avancée sous l’onglet Traitement d’un cas, le graphique répertorie le nombre d’éléments ajoutés à *l’index hybride.*  L’index hybride est l’Advanced eDiscovery stocke le contenu réprocessé.
+Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du nouveau traitement.  Dans l’affichage Des résultats  d’indexation avancée sous l’onglet Traitement d’un cas, le graphique répertorie le nombre d’éléments ajoutés à *l’index hybride.*  L’index hybride est l’emplacement où Advanced eDiscovery stocke le contenu retraite.
 
 Cette vue inclut également le nombre d’éléments qui nécessitent une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, voir :
 

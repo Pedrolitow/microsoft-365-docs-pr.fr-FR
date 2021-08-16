@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Utilisez cet article pour en savoir plus sur l’activation et la configuration de la gestion des accès privilégiés dans Office 365.
-ms.openlocfilehash: 13b600c60e1b9c88285ee58efcf80a7ff5ea17fe
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 70af2d3582bd2a8166645ab7507369d48e5c17f0b43dae8543dac9e427bf2285
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905474"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Prise en main de la gestion des accès privilégiés
 
@@ -72,7 +72,7 @@ Suivez ces étapes pour configurer et utiliser l’accès privilégié dans votr
 
     Une fois activé, l’accès privilégié nécessite des approbations pour toutes les tâches auxquelles une stratégie d’approbation associée est définie. Pour les tâches incluses dans une stratégie d’approbation, les utilisateurs doivent demander et se voir autoriser d’accès afin d’obtenir les autorisations nécessaires pour exécuter la tâche.
 
-Une fois l’approbation accordée, l’utilisateur demandeur peut exécuter la tâche prévue et l’accès privilégié autorise et exécute la tâche au nom de l’utilisateur. L’approbation reste valide pendant la durée demandée (la durée par défaut est de 4 heures), période durant laquelle le demandeur peut effectuer la tâche prévue plusieurs fois. Toutes ces réalisations sont enregistrées et mises à disposition pour l’audit sur la sécurité et la conformité.
+Une fois l’approbation accordée, l’utilisateur demandeur peut exécuter la tâche prévue et l’accès privilégié autorise et exécute la tâche au nom de l’utilisateur. L’approbation reste valide pendant la durée demandée (la durée par défaut est de 4 heures), période durant laquelle le demandeur peut effectuer la tâche prévue plusieurs fois. Toutes ces réalisations sont enregistrées et mises à disposition pour l’audit sur la sécurité et la conformité.
 
 > [!NOTE]
 > Si vous souhaitez utiliser Exchange Management PowerShell pour activer et configurer l’accès privilégié, suivez les étapes de Connecter pour [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa) à l’aide de l’authentification multifacteur pour vous connecter à Exchange Online PowerShell avec vos informations d’identification Office 365. Il n’est pas nécessaire d’activer l’authentification multifacteur pour que votre organisation utilise les étapes permettant d’activer l’accès privilégié lors de la connexion Exchange Online PowerShell. La connexion avec l’authentification multifacteur crée un jeton OAuth qui est utilisé par l’accès privilégié pour signer vos demandes.
@@ -87,7 +87,7 @@ Une fois l’approbation accordée, l’utilisateur demandeur peut exécuter la 
 
 3. Sélectionnez **le groupe de** sécurité à messagerie, puis complétez les champs Nom, Adresse de **messagerie** du groupe et **Description** du nouveau groupe. 
 
-4. Enregistrez le groupe.  La configuration totale du groupe peut prendre quelques minutes et s’affiche dans le Centre d’administration Microsoft 365.
+4. Enregistrez le groupe.  La configuration totale du groupe peut prendre quelques minutes et s’affiche dans le Centre d’administration Microsoft 365.
 
 5. Sélectionnez le groupe du nouvel approuveur et sélectionnez **Modifier** pour ajouter des utilisateurs au groupe.
 
@@ -144,15 +144,15 @@ Vous pouvez créer et configurer jusqu’à 30 stratégies d’accès privilégi
 
 5. Dans les champs de la baisse, sélectionnez les valeurs appropriées pour votre organisation :
 
-    **Type de stratégie** : tâche, rôle ou groupe de rôles
+    **Type de stratégie** : tâche, rôle ou groupe de rôles
 
-    **Étendue de la stratégie** : Exchange
+    **Étendue de la stratégie** : Exchange
 
-    **Nom de la stratégie** : sélection parmi les stratégies disponibles
+    **Nom de la stratégie** : sélection parmi les stratégies disponibles
 
-    **Type d’approbation** : manuel ou automatique
+    **Type d’approbation** : manuel ou automatique
 
-    **Groupe d’approbation** : sélection du groupe d’approbateurs créé à l’Étape 1.
+    **Groupe d’approbation** : sélection du groupe d’approbateurs créé à l’Étape 1.
 
 6. Sélectionnez **Créer,** puis **Fermer.** La configuration et l’activé de la stratégie peuvent prendre quelques minutes.
 
@@ -176,7 +176,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Demander une autorisation d’élévation pour l’exécution de tâches privilégiées
 
-Les demandes d’accès privilégié sont valables pendant 24 heures après l’envoi de la demande. En cas de rejet ou de refus, les demandes expirent et l’accès n’est pas approuvé.
+Les demandes d’accès privilégié sont valables pendant 24 heures après l’envoi de la demande. En cas de rejet ou de refus, les demandes expirent et l’accès n’est pas approuvé.
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Dans le centre Administration Microsoft 365
 
@@ -188,13 +188,13 @@ Les demandes d’accès privilégié sont valables pendant 24 heures après l�
 
 4. Sélectionnez **Nouvelle requête**. Dans les champs de la baisse, sélectionnez les valeurs appropriées pour votre organisation :
 
-    **Type de demande** : tâche, rôle ou groupe de rôles
+    **Type de demande** : tâche, rôle ou groupe de rôles
 
-    **Étendue de la demande** : Exchange
+    **Étendue de la demande** : Exchange
 
-    **Demande pour** : sélection parmi les stratégies disponibles
+    **Demande pour** : sélection parmi les stratégies disponibles
 
-    **Durée (heures)**  : nombre d’heures d’accès demandé. Le nombre d’heures qui peuvent être demandées n’est pas limité.
+    **Durée (heures)** : nombre d’heures d’accès demandé. Le nombre d’heures qui peuvent être demandées n’est pas limité.
 
     **Commentaires :** champ texte pour les commentaires liés à votre demande d’accès
 

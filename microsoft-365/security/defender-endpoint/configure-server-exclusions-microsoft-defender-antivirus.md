@@ -16,17 +16,17 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 02/10/2021
-ms.openlocfilehash: 31d5c22d11a28c9604b2be3145ebd46715a6e5b3
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6e0636122a5ef2d173e6eee53c4c303bb8cc46c8df7b1eeaa5d7b026f1c04ea0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904034"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer des exclusions Antivirus Microsoft Defender sur Windows Server
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -50,7 +50,7 @@ Gardez les points importants suivants à l’esprit :
 
 ## <a name="opt-out-of-automatic-exclusions"></a>Refuser les exclusions automatiques
 
-Dans Windows Server 2016 et Windows Server 2019, les exclusions prédéfines délivrées par les mises à jour de l’intelligence de sécurité excluent uniquement les chemins d’accès par défaut pour un rôle ou une fonctionnalité. Si vous avez installé un rôle ou une fonctionnalité dans un chemin d’accès personnalisé, ou si vous souhaitez contrôler manuellement l’ensemble d’exclusions, veillez à refuser les exclusions automatiques délivrées dans les mises à jour d’informations de sécurité. Toutefois, gardez à l’esprit que les exclusions qui sont livrées automatiquement sont optimisées pour les rôles Windows Server 2016 2019. Voir [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) avant de définir vos listes d’exclusions.
+Dans Windows Server 2016 et Windows Server 2019, les exclusions prédéfines délivrées par les mises à jour de l’intelligence de sécurité excluent uniquement les chemins d’accès par défaut pour un rôle ou une fonctionnalité. Si vous avez installé un rôle ou une fonctionnalité dans un chemin d’accès personnalisé, ou si vous souhaitez contrôler manuellement l’ensemble des exclusions, veillez à refuser les exclusions automatiques délivrées dans les mises à jour de l’intelligence de sécurité. Toutefois, gardez à l’esprit que les exclusions qui sont livrées automatiquement sont optimisées pour les rôles Windows Server 2016 2019. Voir [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) avant de définir vos listes d’exclusions.
 
 > [!WARNING]
 > Le fait de refuser les exclusions automatiques peut avoir un impact négatif sur les performances ou entraîner une altération des données. Les exclusions qui sont livrées automatiquement sont optimisées pour les rôles Windows Server 2016 et Windows Server 2019.
@@ -61,7 +61,7 @@ Vous pouvez désactiver les listes d’exclusion automatique avec la stratégie 
 
 ### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Utiliser la stratégie de groupe pour désactiver la liste d’exclusions automatiques sur Windows Server 2016 et Windows Server 2019
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis cliquez sur **Modifier.**
 2. Dans **l’Éditeur de gestion des stratégies** de groupe, allez à **Configuration** ordinateur, puis cliquez sur **Modèles d’administration.**
 3. Développez l’arborescence **Windows composants**  >  **Antivirus Microsoft Defender**  >  **exclusions.**
 4. Double-cliquez **sur Désactiver les exclusions automatiques** et définissez l’option sur **Activé.** Cliquez ensuite sur **OK**. 
@@ -341,4 +341,4 @@ Cette section répertorie les exclusions de dossiers qui sont automatiquement li
 - [Configurer et valider des exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [Erreurs courantes à éviter lors de la définition d’exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [Personnaliser, lancer et passer en revue les résultats des analyses et Antivirus Microsoft Defender correction](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
