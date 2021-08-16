@@ -1,7 +1,7 @@
 ---
 title: Fournir un accès au fournisseur de services de sécurité gérés (MSSP)
-description: En savoir plus sur les modifications apportées Centre de sécurité Microsoft Defender au centre de sécurité Microsoft 365 de sécurité
-keywords: Mise en place du Centre de sécurité Microsoft 365, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, MDO, MDE, volet unique, portail convergé, portail de sécurité, portail de sécurité Defender
+description: En savoir plus sur les modifications apportées Centre de sécurité Microsoft Defender au portail Microsoft 365 Defender web
+keywords: Getting started with the Microsoft 365 Defender portal, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: ddc28149ca2ab43b7c14d3bdbaeeecdad1b18387
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 232cb81080a8d478b57b2f87a8b98752e51b0c20
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289762"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258257"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Fournir un accès au fournisseur de services de sécurité gérés (MSSP) 
 
@@ -38,25 +38,25 @@ ms.locfileid: "53289762"
 
 Pour implémenter une solution d’accès délégué multi-locataire, prenez les mesures suivantes :
 
-1. Activez le contrôle d’accès basé sur les rôles dans Defender pour le point de terminaison dans Microsoft 365 centre de sécurité et [connectez-vous](/windows/security/threat-protection/microsoft-defender-atp/rbac) Azure Active Directory groupes (Azure AD).
+1. Activez [le contrôle d’accès](/windows/security/threat-protection/microsoft-defender-atp/rbac) basé sur les rôles dans Defender pour le point de terminaison dans Microsoft 365 Defender portail et connectez-vous à Azure Active Directory groupes (Azure AD).
 
 2. Configurer des [packages d’accès de gouvernance pour](/azure/active-directory/governance/identity-governance-overview) la demande d’accès et la mise en service.
 
 3. Gérer les demandes d’accès et les audits [dans Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>Activer les contrôles d’accès basés sur les rôles dans Microsoft Defender pour le point de terminaison dans Microsoft 365 de sécurité
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>Activer les contrôles d’accès basés sur les rôles dans Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender portail
 
 1. **Créer des groupes d’accès pour les ressources MSSP dans Customer AAD : Groupes**
 
-    Ces groupes seront liés aux rôles que vous créez dans Defender for Endpoint dans Microsoft 365 de sécurité. Pour ce faire, dans le client AD client, créez trois groupes. Dans notre exemple d’approche, nous créons les groupes suivants :
+    Ces groupes seront liés aux rôles que vous créez dans Defender for Endpoint dans Microsoft 365 Defender portail. Pour ce faire, dans le client AD client, créez trois groupes. Dans notre exemple d’approche, nous créons les groupes suivants :
 
     - Analyste de niveau 1
     - Analyste de niveau 2
     - Approbations d’analyste MSSP  
 
-2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint Microsoft 365 rôles et groupes du centre de sécurité.
+2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint dans Microsoft 365 Defender rôles et groupes portail.
 
-    Pour activer RBAC dans le Centre de sécurité Microsoft 365 client, accédez aux **autorisations > Rôles** de point de terminaison & groupes > Rôles avec un compte d’utilisateur avec des droits d’administrateur général ou d’administrateur de sécurité.
+    Pour activer RBAC dans le portail d’Microsoft 365 Defender du client, accédez aux **autorisations > Rôles** points de terminaison & groupes > Rôles avec un compte d’utilisateur avec des droits d’administrateur général ou d’administrateur de sécurité.
 
     ![Image de l’accès MSSP](../../media/mssp-access.png)
 
@@ -125,9 +125,9 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
 2. Approuver ou refuser des demandes dans la section **Approbations** de l’interface utilisateur.
 
-     À ce stade, l’accès analyste a été mis en service et chaque analyste doit pouvoir accéder au Centre de sécurité Microsoft 365 client :
+     À ce stade, l’accès analyste a été mis en service et chaque analyste doit pouvoir accéder au portail Microsoft 365 Defender client :
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` avec les autorisations et les rôles qui leur ont été attribués.
 
 > [!IMPORTANT]
-> L’accès délégué à Microsoft Defender pour le point de terminaison dans le centre de sécurité Microsoft 365 permet actuellement d’accéder à un seul client par fenêtre de navigateur.
+> L’accès délégué à Microsoft Defender pour le point de terminaison dans le portail Microsoft 365 Defender permet actuellement d’accéder à un seul client par fenêtre de navigateur.

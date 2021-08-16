@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre à Microsoft des messages suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour la réessuration.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d18dd7f5dc702f08a722652394aeb0102f100ef
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 4ce1ea9e06167f0fec4431438c48c967f12a8a46
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409055"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258253"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
@@ -140,6 +140,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
      - **Raison de l’envoi**<sup>\*</sup>
      - **État rescan**<sup>\*</sup>
      - **Résultat rescan**<sup>\*</sup>
+     - **Balises**<sup>\*</sup>
      - **Verdict du filtre**
      - **Raison de la remise/du blocage**
      - **ID de soumission**
@@ -159,6 +160,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
      - **ID de soumission**: valeur GUID attribuée à chaque soumission.
      - **ID de message réseau**
      - **Sender**
+     - **Tags**
 
      Lorsque vous avez terminé, cliquez sur **Appliquer.**
 
@@ -167,9 +169,9 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste suivante :
      - **Aucune**
-     - **Type (Type)**
+     - **Type**
      - **Raison**
-     - **État**
+     - **Status**
      - **Résultat rescan**
 
    - Pour exporter les entrées, cliquez sur **Exporter.** Dans la boîte de dialogue qui s’affiche, enregistrez .csv fichier.
@@ -201,6 +203,7 @@ Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enabl
      - **Expéditeur**<sup>\*</sup>
      - **Raison signalée**<sup>\*</sup>
      - **Résultat rescan**<sup>\*</sup>
+     - **Balises**<sup>\*</sup>
      - **ID de message signalé**
      - **ID de message réseau**
      - **IP de l’expéditeur**
@@ -216,7 +219,8 @@ Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enabl
      - **ID de message réseau**
      - **Sender**
      - **Raison signalée :** **pas de courrier indésirable,** **de hameçonnage** ou de **courrier indésirable.**
-     - **Simulation de hameçonnage**: **Oui** ou **Non**
+     - **Simulation de hameçonnage** **: Oui** ou **Non**
+     - **Tags**
 
      Lorsque vous avez terminé, cliquez sur **Appliquer.**
 
