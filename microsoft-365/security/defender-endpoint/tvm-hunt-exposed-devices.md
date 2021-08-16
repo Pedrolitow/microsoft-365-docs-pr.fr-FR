@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34ad9d1c6f020fb8e6d8e878803eba23b3aeb5e616146fa5cdf564a19226f826
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bec319f840728599f01680c32561bf3998d59381
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894003"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253367"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Recherche des appareils exposés - Gestion des menaces et des vulnérabilités
 
@@ -63,19 +63,22 @@ Le repérage avancé est un outil de repérage de menaces basé sur des requête
 
 ```kusto
 // Search for devices with High active alerts or Critical CVE public exploit
-DeviceTvmSoftwareVulnerabilities
+let DeviceWithHighAlerts = AlertInfo
+| where Severity == "High"
+| project Timestamp, AlertId, Title, ServiceSource, Severity
+| join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
+| summarize HighSevAlerts = dcount(AlertId) by DeviceId;
+let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
 | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId),
-DeviceName=any(DeviceName) by DeviceId
-| join kind =inner(DeviceAlertEvents) on DeviceId  
-| summarize NumOfVulnerabilities=any(NumOfVulnerabilities),
-DeviceName=any(DeviceName) by DeviceId, AlertId
-| project DeviceName, NumOfVulnerabilities, AlertId  
-| order by NumOfVulnerabilities desc
+DeviceName=any(DeviceName) by DeviceId;
+DeviceWithCriticalCve
+| join kind=inner DeviceWithHighAlerts on DeviceId
+| project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
 ```
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Recommandations de sécurité](tvm-security-recommendation.md)

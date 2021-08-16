@@ -1,7 +1,7 @@
 ---
 title: Nouveautés du score de sécurité Microsoft
-description: Décrit les nouvelles modifications apportées au Niveau de sécurité Microsoft dans le centre Microsoft 365 sécurité.
-keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, Centre de sécurité Microsoft 365
+description: Décrit les nouvelles modifications apportées au score de sécurité Microsoft dans le portail Microsoft 365 Defender microsoft.
+keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Microsoft 365 Defender portail
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: c0abdd26456fe9c7d2ee6111f8c15805af3f66b7738b42ee79fb1a230e08239d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ff06a12d6d0639b00091a93b9ba7162d7cb6264
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884138"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58249055"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés du score de sécurité Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "53884138"
 
 Pour que le Niveau de sécurité Microsoft soit mieux représentatif de votre posture de sécurité, nous avons apporté quelques modifications. Pour en savoir plus sur les modifications planifiées, consultez [l’aide](microsoft-secure-score-whats-coming.md) de Microsoft Secure Score ?
 
-Microsoft Secure Score se trouve dans https://security.microsoft.com/securescore le centre de sécurité [Microsoft 365.](overview-security-center.md)
+Microsoft Secure Score se trouve sur https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](overview-security-center.md)
 
 ## <a name="july-2021"></a>Juillet 2021
 
@@ -48,7 +48,7 @@ Microsoft Secure Score se trouve dans https://security.microsoft.com/securescore
 
 ### <a name="added-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Ajout d’une action d’amélioration liée à Microsoft Defender pour le point de terminaison
 
-- Corriger la collecte de données du capteur Microsoft Defender pour les points de terminaison pour macOS
+- Corriger microsoft Defender pour la collecte de données de capteur de point de terminaison pour macOS
 - Résoudre les problèmes de communications de Microsoft Defender pour les points de terminaison pour macOS
 - Définir la longueur minimale du mot de passe sur 15 caractères ou plus dans macOS
 - Définir « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus » dans macOS
@@ -79,11 +79,11 @@ Microsoft Secure Score se trouve dans https://security.microsoft.com/securescore
 
 - Utilisez Sécurité des applications cloud pour détecter un comportement anormal.
 
-## <a name="february-2021"></a>Février 2021
+## <a name="february-2021"></a>Février 2021
 
 ### <a name="compatibility-with-graph-api"></a>Compatibilité avec l’API Graph de connexion
 
-Les recommandations de Niveau de sécurité Microsoft Graph api auront l’apparence et seront pondérées de la même manière que les recommandations que vous voyez actuellement dans le Centre de sécurité Microsoft 365 de sécurité Microsoft.
+Les recommandations du Score de sécurité Microsoft, Graph api, seront pondérées de la même manière que les recommandations que vous voyez actuellement dans le portail Microsoft 365 Defender.
 
 ## <a name="january-2021"></a>Janvier 2021
 
@@ -93,7 +93,7 @@ Microsoft Teams clients voient « Empêcher les utilisateurs anonymes de partici
 
 ## <a name="december-2020"></a>Décembre 2020
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de six actions d’amélioration liées aux comptes pour Microsoft Defender for Endpoint :
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de six actions d’amélioration liées aux comptes pour Microsoft Defender pour Endpoint :
 
 - Définir « Longueur minimale du mot de passe » sur « 14 caractères ou plus »
 - Définir « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus »
@@ -114,13 +114,13 @@ La possibilité de créer des tickets ServiceNow via Secure Score en allant sur 
 - Modifier le chemin d’accès exécutable du service à un emplacement protégé commun
 - Modifier le compte de service pour éviter le mot de passe mis en cache dans le Registre Windows
 
-## <a name="october-2020"></a>Octobre 2020
+## <a name="october-2020"></a>Octobre 2020
 
 ### <a name="removed-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Suppression de l’action d’amélioration liée à Microsoft Defender pour le point de terminaison
 
 - Configurer la vérification Microsoft Defender SmartScreen Windows contenu web d’application du Store pour avertir
 
-## <a name="august-2020"></a>Août 2020
+## <a name="august-2020"></a>Août 2020
 
 ### <a name="updated-improvement-action-for-azure-active-directory"></a>Action d’amélioration mise à jour pour Azure Active Directory
 
@@ -128,7 +128,7 @@ La possibilité de créer des tickets ServiceNow via Secure Score en allant sur 
 
 ## <a name="incompatibility-with-identity-secure-score"></a>Incompatibilité avec identity secure score
 
-Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié. Ces modifications permettent une vue plus souple et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score.
+Dans la version récente de Microsoft Secure Score, un modèle de notation amélioré a été publié. Ces modifications permettent une vue plus flexible et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score.
 
 Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En attendant, les clients constateront des différences dans les scores signalés par le Score de sécurité Microsoft et le score de sécurisation de l’identité. Nous vous excusons pour les désagréments que cela provoque et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
 

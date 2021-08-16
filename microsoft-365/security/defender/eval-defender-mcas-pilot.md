@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a4aeb40e7386ae3648a392b6869551c3f16c2514b459ab1abf11c8ae6ceee46b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 255aa361badf79e3ea4e4b0fe208ea22bb7a26db
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862854"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58249372"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>Pilote Microsoft Cloud App Security avec Microsoft 365 Defender
 
@@ -66,7 +66,7 @@ Pour plus d’informations, notamment sur les applications et les clients pris e
 
 Par exemple, les [stratégies recommandées Microsoft Cloud App Security pour les applications SaaS.](../office-365-security/mcas-saas-access-policies.md) Ces stratégies s’appuient sur un ensemble de stratégies communes d’accès aux identités et aux appareils qui sont recommandées comme point de départ pour tous les clients. [](../office-365-security/microsoft-365-policies-configurations.md) 
 
-## <a name="step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment"></a>Étape 3 : Tester les fonctionnalités : parcourir les didacticiels pour protéger votre environnement 
+## <a name="step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment"></a>Étape 3. Tester les fonctionnalités : parcourir les didacticiels pour protéger votre environnement 
 
 La documentation Microsoft Cloud App Security comprend une série de didacticiels pour vous aider à découvrir les risques et à protéger votre environnement. 
 
@@ -83,7 +83,7 @@ Essayez les Sécurité des applications cloud didacticiels suivants :
 
 Pour plus d’informations sur le Microsoft Cloud App Security avancé, voir la [vidéo.](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [Examiner et répondre à l’aide Microsoft 365 Defender dans un environnement pilote](eval-defender-investigate-respond.md)
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a780c30b2919aac1f5a50c475c79df87d5b1f1f3
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: d9e733bb16b843df24fa4fee6b2eecaa889a61041f9a05fe8970124729d8dc41
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873450"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>Étape 4. Définir Microsoft 365 Defender rôles, responsabilités et supervision
 
@@ -36,7 +36,7 @@ ms.locfileid: "53622356"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Votre organisation doit établir la propriété et la responsabilité des licences Microsoft 365 Defender, des configurations et de l’administration comme tâches initiales avant de pouvoir définir des rôles opérationnels. En règle générale, la propriété des licences, les coûts d’abonnement et l’administration des services Microsoft 365 et Enterprise Security + Mobility (EMS) (qui peuvent inclure Microsoft 365 Defender) ne font pas partie des équipes du Centre des opérations de sécurité (SOC). Les équipes SOC doivent travailler avec ces personnes pour assurer une supervision appropriée des Microsoft 365 Defender. 
+Votre organisation doit établir la propriété et la responsabilité des licences Microsoft 365 Defender, des configurations et de l’administration en tant que tâches initiales avant de pouvoir définir des rôles opérationnels. En règle générale, la propriété des licences, les coûts d’abonnement et l’administration des services Microsoft 365 et Enterprise Security + Mobility (EMS) (qui peuvent inclure Microsoft 365 Defender) ne font pas partie des équipes du Centre des opérations de sécurité (SOC). Les équipes SOC doivent travailler avec ces personnes pour assurer une supervision appropriée des Microsoft 365 Defender. 
 
 De nombreux socs modernes affectent à leurs membres d’équipe des catégories en fonction de leurs compétences et fonctions. Par exemple :
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f06804e7a6944f119401f8cf2ea5cc0496fd30e841129cef061d8caee4964887
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f79372a210a256720654c92e5ce580d772ef4527
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839041"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58249666"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>Passer en revue les exigences en matière d’architecture et les concepts clés pour Microsoft Cloud App Security
 
@@ -146,7 +146,7 @@ En outre, Azure Sentinel inclut un connecteur Microsoft Cloud App Security pour 
 - [Intégration d’une solution SIEM générique](/cloud-app-security/siem)
 - [Diffuser des alertes et des journaux de découverte cloud à partir de MCAS dans Azure Sentinel](/azure/sentinel/connect-cloud-app-security)
 
-### <a name="next-steps"></a>Étapes suivantes
+### <a name="next-steps"></a>Prochaines étapes
 
 Étape 2 sur 3 : activer [l’environnement d’évaluation pour Microsoft Cloud App Security](eval-defender-mcas-enable-eval.md)
 

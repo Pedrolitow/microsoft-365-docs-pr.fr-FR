@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0a73e8269f4be23d97ead5a2befb677706c7486a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4f1c9ee4c5a4581bf9af73a9474574b31c253ca9f00488c7a7168f687c42f538
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656702"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53903758"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Obtenir une activité de correction par ID
 
@@ -42,7 +42,7 @@ ms.locfileid: "53656702"
 
 ## <a name="api-description"></a>Description de l’API
 
-Renvoie des informations pour l’activité de correction spécifiée. Présente les mêmes colonnes que [Obtenir toutes les](get-remediation-all-activities.md)activités de correction , mais renvoie les résultats uniquement pour l’activité de correction _spécifiée._
+Renvoie des informations pour l’activité de correction spécifiée. Présente les mêmes colonnes que [Obtenir toutes les](get-remediation-all-activities.md)activités de correction , mais renvoie des résultats uniquement pour l’activité de correction _spécifiée._
 
 [En savoir plus sur les activités de correction.](tvm-remediation.md)
 
@@ -145,4 +145,4 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [Répertorier toutes les activités de correction](get-remediation-all-activities.md)
 - [Répertorier les appareils exposés d’une activité de correction](get-remediation-exposed-devices-activities.md)
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

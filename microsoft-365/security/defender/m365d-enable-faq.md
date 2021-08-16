@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cec25a877e7039fc3b00d693ecc63e798492131e8eba6c12e4a97b77824da150
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e630b2cdb7164157e2dd42e8f1ee8d09676dfbfb
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828510"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58252082"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Questions fréquemment posées lors de l’Microsoft 365 Defender
 
@@ -63,13 +63,13 @@ Microsoft 365 Defender sélectionne automatiquement un emplacement optimal pour 
 >[!NOTE]
 >Microsoft Defender pour le point de terminaison est automatiquement mis en place dans les centres de données de l’Union européenne (UE) lorsqu’il est allumé par le biais d’Azure Defender. Microsoft 365 Defender seront automatiquement mis en service dans le même centre de données de l’UE pour les clients qui ont mis en service Microsoft Defender pour endpoint de cette manière.
 
-L’emplacement du centre de données s’affiche avant et après la mise en service du service dans la page des paramètres pour Microsoft 365 Defender (**Paramètres > Microsoft 365 Defender**). Si vous préférez utiliser un autre emplacement de centre de données, sélectionnez Besoin d’aide **?** dans le centre de sécurité Microsoft 365 pour contacter le support Microsoft.
+L’emplacement du centre de données s’affiche avant et après la mise en service du service dans la page des paramètres pour Microsoft 365 Defender (**Paramètres > Microsoft 365 Defender**). Si vous préférez utiliser un autre emplacement de centre de données, sélectionnez Besoin d’aide **?** dans le portail Microsoft 365 Defender pour contacter le support Microsoft.
 
 ## <a name="where-can-i-access-microsoft-365-defender"></a>Où puis-je accéder Microsoft 365 Defender ?
 
-Microsoft 365 Defender est disponible dans Microsoft 365 de sécurité. Pour accéder au centre de sécurité, accédez à <https://security.microsoft.com> l’URL.
+Microsoft 365 Defender disponible sur : <https://security.microsoft.com> .
 
-## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender-in-microsoft-365-security-center"></a>De quelles autorisations ai-je besoin pour accéder Microsoft 365 Defender dans Microsoft 365 de sécurité ?
+## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>De quelles autorisations ai-je besoin pour accéder Microsoft 365 Defender ?
 
 Les comptes affectés aux rôles Azure Active Directory (Azure AD) peuvent accéder aux Microsoft 365 Defender et aux données suivantes :
 
@@ -99,7 +99,7 @@ Obtenez les dernières expériences disponibles publiquement en allumer les [fon
 
 Il n’est pas disponible pour le moment.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 - [Activer Microsoft 365 Defender](m365d-enable.md).

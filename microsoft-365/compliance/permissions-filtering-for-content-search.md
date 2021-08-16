@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilisez le filtrage des autorisations de recherche de contenu pour laisser un gestionnaire eDiscovery rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 944866c5994f128798ae9f3392bb26b24d7698614ce11496714e252d86f8a3a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 74555f605f29ff0fa979dd939d192bf2ef643b96
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892062"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253892"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configuration du filtrage des autorisations pour la recherche de contenu
 
-Vous pouvez utiliser le filtrage des autorisations de recherche pour laisser un gestionnaire eDiscovery rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation. Vous pouvez également utiliser le filtrage des autorisations pour permettre à ce gestionnaire de rechercher uniquement le contenu de boîte aux lettres ou de site qui répond à des critères de recherche spécifiques. Par exemple, vous voudrez peut-être permettre à un gestionnaire de découverte électronique de rechercher uniquement les boîtes aux lettres des utilisateurs dans un lieu ou un service spécifique. Pour ce faire, vous créez un filtre qui utilise un filtre de destinataires pris en charge pour limiter les boîtes aux lettres qu’un utilisateur ou un groupe d’utilisateurs spécifique peut rechercher. Vous pouvez également créer un filtre qui spécifie le contenu de boîte aux lettres qu’un utilisateur peut rechercher. Pour cela, vous devez créer un filtre qui utilise une propriété de message pouvant faire l’objet d’une recherche. De même, vous pouvez laisser un gestionnaire eDiscovery rechercher uniquement des sites SharePoint de votre organisation. Pour ce faire, vous devez créer un filtre limitant les sites pouvant faire l’objet d’une recherche. Vous pouvez aussi créer un filtre qui spécifie le contenu de site pouvant être recherché. Pour ce faire, vous devez créer un filtre qui utilise une propriété de site pouvant faire l’objet d’une recherche.
+Vous pouvez utiliser le filtrage des autorisations de recherche pour laisser un gestionnaire eDiscovery rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation. Vous pouvez également utiliser le filtrage des autorisations pour permettre à ce gestionnaire de rechercher uniquement le contenu de boîte aux lettres ou de site qui répond à des critères de recherche spécifiques. Par exemple, vous voudrez peut-être permettre à un gestionnaire de découverte électronique de rechercher uniquement les boîtes aux lettres des utilisateurs dans un lieu ou un service spécifique. Pour ce faire, vous créez un filtre qui utilise un filtre de destinataires pris en charge pour limiter les boîtes aux lettres qu’un utilisateur ou un groupe d’utilisateurs spécifique peut rechercher. Vous pouvez également créer un filtre qui spécifie le contenu de boîte aux lettres qu’un utilisateur peut rechercher. Pour cela, vous devez créer un filtre qui utilise une propriété de message pouvant faire l’objet d’une recherche. De même, vous pouvez laisser un gestionnaire eDiscovery rechercher uniquement des SharePoint sites spécifiques dans votre organisation. Pour ce faire, vous devez créer un filtre limitant les sites pouvant faire l’objet d’une recherche. Vous pouvez aussi créer un filtre qui spécifie le contenu de site pouvant être recherché. Pour ce faire, vous devez créer un filtre qui utilise une propriété de site pouvant faire l’objet d’une recherche.
 
 Vous pouvez également utiliser le filtrage des autorisations de recherche pour créer des limites logiques (appelées limites de *conformité)* au sein d’une organisation qui contrôle les emplacements de contenu utilisateur (tels que les boîtes aux lettres, les sites SharePoint et les comptes OneDrive) que des gestionnaires eDiscovery spécifiques peuvent rechercher. Pour plus d’informations, voir Configurer les limites de conformité pour les [enquêtes eDiscovery dans Office 365](tagging-and-assessment-in-advanced-ediscovery.md).
   
@@ -77,7 +77,7 @@ Avant de pouvoir exécuter correctement le script dans cette section, vous devez
     .\ConnectEXO-SCC.ps1
     ```
 
-Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets de Exchange Online et security & Compliance PowerShell sont importées dans votre session Windows PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter une cmdlet du Centre Exchange Online conformité et sécurité & sécurité. Par exemple, vous pouvez exécuter **Et Get-Mailbox** et **Get-ComplianceSearch**.
+Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets de Exchange Online et security & Compliance PowerShell sont importées dans votre session Windows PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter une cmdlet Exchange Online et de sécurité & conformité. Par exemple, vous pouvez exécuter **et Get-Mailbox** et **Get-ComplianceSearch**.
 
 Pour résoudre les erreurs de connexion PowerShell, voir :
 
@@ -89,7 +89,7 @@ Pour résoudre les erreurs de connexion PowerShell, voir :
 
 Le **filtre New-ComplianceSecurityFilter est** utilisé pour créer un filtre d’autorisations de recherche. Le tableau suivant décrit les paramètres de cette cmdlet. Tous les paramètres sont obligatoires pour créer un filtre de sécurité de conformité.
   
-| Parameter | Description |
+| Paramètre | Description |
 |:-----|:-----|
 | _Action_ <br/> | Le  _paramètre Action_ spécifie le type d’action de recherche à appliquer au filtre. Les actions de recherche de contenu possibles sont les suivantes :  <br/><br/> **Exporter :** Le filtre est appliqué lors de l’exportation des résultats de recherche.  <br/> **Aperçu :** Le filtre est appliqué lors de l’aperçu des résultats de recherche.  <br/> **Purge :** Le filtre est appliqué lors de la purge des résultats de recherche.  <br/> **Recherche :** Le filtre est appliqué lors de l’exécution d’une recherche.  <br/> **Tous :** Le filtre est appliqué à toutes les actions de recherche.  <br/> |
 | _FilterName_ <br/> |Le  _paramètre FilterName_ spécifie le nom du filtre d’autorisations. Ce nom est utilisé pour identifier un filtre lors de l’utilisation des cmdlets **Get-ComplianceSecurityFilter**, **Set-ComplianceSecurityFilter** et **Remove-ComplianceSecurityFilter**.  <br/> |
@@ -104,7 +104,7 @@ Une *liste de filtres* est un filtre qui inclut un filtre de boîte aux lettres 
 -Filters "Mailbox_CustomAttribute10 -eq 'OttawaUsers'", "Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"
 ```
 
-Lorsqu’un filtre qui contient une liste de filtres est traitement lors de l’exécution d’une recherche de contenu, deux filtres d’autorisations de recherche sont créés à partir de la liste des filtres : un pour chaque filtre séparé par une virgule. Ainsi, dans l’exemple précédent, un filtre d’autorisations de recherche de boîte aux lettres et un filtre d’autorisations de recherche de site sont créés. 
+Lorsqu’un filtre qui contient une liste de filtres est traitement pendant l’exécution d’une recherche de contenu, deux filtres d’autorisations de recherche sont créés à partir de la liste des filtres : un pour chaque filtre séparé par une virgule. Ainsi, dans l’exemple précédent, un filtre d’autorisations de recherche de boîte aux lettres et un filtre d’autorisations de recherche de site sont créés. 
 
 Une alternative à l’utilisation d’une liste de filtres serait de créer deux filtres d’autorisations de recherche distincts. Ainsi, dans l’exemple précédent, vous créez un filtre pour l’attribut de boîte aux lettres et un filtre pour l’attribut de site. Dans les deux cas, les résultats sont identiques. L’utilisation d’une liste de filtres ou la création de filtres d’autorisations de recherche distincts est une question de préférence.
 
@@ -112,7 +112,7 @@ Gardez les points suivants à l’esprit concernant l’utilisation d’une list
 
 - Vous devez utiliser une liste de filtres pour créer un filtre qui inclut un filtre **de** boîte aux lettres et un filtre **MailboxContent.**
 
-- Chaque composant d’une liste de filtres peut contenir une syntaxe de filtre complexe. Par exemple, la boîte aux lettres et les filtres de site peuvent contenir plusieurs filtres séparés par **un opérateur :**
+- Chaque composant d’une liste de filtres peut contenir une syntaxe de filtre complexe. Par exemple, les filtres de boîte aux lettres et de site peuvent contenir plusieurs filtres séparés par **un opérateur :**
 
    ```powershell
    -Filters "Mailbox_Department -eq 'CohoWinery' -or Mailbox_CustomAttribute10 -eq 'CohoUsers'", "Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'"
@@ -207,7 +207,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 **Set-ComplianceSecurityFilter est** utilisé pour modifier un filtre d’autorisations de recherche existant. Le seul paramètre obligatoire est  _FilterName_. 
   
-| Parameter | Description |
+| Paramètre | Description |
 |:-----|:-----|
 | _Action_| Le  _paramètre Action_ spécifie le type d’action de recherche à appliquer au filtre. Les actions de recherche de contenu possibles sont les suivantes : <br/><br/> **Exporter :** Le filtre est appliqué lors de l’exportation des résultats de recherche.  <br/> **Aperçu :** Le filtre est appliqué lors de l’aperçu des résultats de recherche.  <br/> **Purge :** Le filtre est appliqué lors de la purge des résultats de recherche.  <br/> **Recherche :** Le filtre est appliqué lors de l’exécution d’une recherche.  <br/> **Tous :** Le filtre est appliqué à toutes les actions de recherche.  <br/> |
 | _FilterName_|Le  _paramètre FilterName_ spécifie le nom du filtre d’autorisations. |
@@ -252,7 +252,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
   
 ## <a name="more-information"></a>Plus d’informations
 
-- **Comment fonctionne le filtrage des autorisations de recherche ?** Le filtre d’autorisations est ajouté à la requête de recherche lors de l’exécution d’une recherche de contenu. Le filtre d’autorisations est joint à la requête de recherche par **l’opérateur booléen AND.** Par exemple, vous avez un filtre d’autorisations qui permet à Bob d’effectuer toutes les actions de recherche sur les boîtes aux lettres des membres du groupe de distribution Workers. Ensuite, Bob exécute une recherche de contenu sur toutes les boîtes aux lettres de l’organisation avec la requête de  `sender:jerry@adatum.com` recherche. Étant donné que le filtre d’autorisations et la requête de recherche sont combinés logiquement par un opérateur **AND,** la recherche renvoie tout message envoyé par jerry@adatum.com à tout membre du groupe de distribution Workers. 
+- **Comment fonctionne le filtrage des autorisations de recherche ?** Le filtre d’autorisations est ajouté à la requête de recherche lors de l’exécution d’une recherche de contenu. Le filtre d’autorisations est joint à la requête de recherche par **l’opérateur booléen AND.** Par exemple, vous avez un filtre d’autorisations qui permet à Bob d’effectuer toutes les actions de recherche sur les boîtes aux lettres des membres du groupe de distribution Workers. Ensuite, Bob exécute une recherche de contenu sur toutes les boîtes aux lettres de l’organisation avec la requête de  `sender:jerry@adatum.com` recherche. Étant donné que le filtre d’autorisations et la requête de recherche sont combinés logiquement par un opérateur **AND,** la recherche renvoie tous les messages envoyés par jerry@adatum.com à tout membre du groupe de distribution Workers. 
     
 - **Que se passe-t-il si vous disposez de plusieurs filtres d’autorisations de recherche ?** Dans une requête de recherche de contenu, plusieurs filtres d’autorisations sont combinés par des opérateurs booléens **OR**. Par conséquent, des résultats sont renvoyés si l’un des filtres détecte une condition recherchée. Dans une recherche de contenu, tous les filtres (combinés par des opérateurs **OR**) sont ensuite combinés avec la requête de recherche par l’opérateur **AND**. Prenons l’exemple précédent, où un filtre de recherche permet à Bob de rechercher uniquement les boîtes aux lettres des membres du groupe de distribution Workers. Nous créons un autre filtre qui empêche Pierre de rechercher la boîte aux lettres de Paul (« Mailbox_Alias -ne ’Paul’ »). Supposons également que Paul est membre du groupe Employés. Lorsque Bob exécute une recherche de contenu (à partir de l’exemple précédent) sur toutes les boîtes aux lettres de l’organisation, les résultats de la recherche sont renvoyés pour la boîte aux lettres de Bob, même si vous avez appliqué un filtre pour empêcher Bob de rechercher la boîte aux lettres de Bob. En effet, le critère du premier filtre, qui autorise Pierre à effectuer des recherches dans le groupe Employés, est vérifié. Ainsi, Paul étant membre du groupe Employés, Pierre peut effectuer des recherches dans sa boîte aux lettres. 
     
@@ -260,7 +260,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
     
 - **Le filtrage des autorisations de recherche fonctionne-t-il pour les dossiers publics ?** Non. Comme indiqué précédemment, le filtrage des autorisations de recherche ne peut pas être utilisé pour limiter les personnes autorisées à rechercher des dossiers publics dans Exchange. Par exemple, les éléments des emplacements de dossiers publics ne peuvent pas être exclus des résultats de la recherche par un filtre d’autorisations. 
 
-- **Autoriser un utilisateur à rechercher tous les emplacements de contenu dans un service spécifique l’empêche-t-il également de rechercher des emplacements de contenu dans un autre service ?** Non. Comme indiqué précédemment, vous devez créer un filtre d’autorisations de recherche pour empêcher explicitement les utilisateurs de rechercher des emplacements de contenu dans un service spécifique (par exemple, empêcher un utilisateur de rechercher une boîte aux lettres Exchange ou un site SharePoint). En d’autres termes, la création d’un filtre d’autorisations de recherche qui permet à un utilisateur de rechercher tous les sites SharePoint de l’organisation n’empêche pas cet utilisateur de rechercher des boîtes aux lettres. Par exemple, pour autoriser SharePoint administrateurs à rechercher uniquement SharePoint sites, vous devez créer un filtre qui les empêche de rechercher des boîtes aux lettres. De même, pour autoriser Exchange administrateurs à rechercher uniquement des boîtes aux lettres, vous devez créer un filtre qui les empêche de rechercher des sites.
+- **Autoriser un utilisateur à rechercher tous les emplacements de contenu dans un service spécifique l’empêche-t-il également de rechercher des emplacements de contenu dans un autre service ?** Non. Comme expliqué précédemment, vous devez créer un filtre d’autorisations de recherche pour empêcher explicitement les utilisateurs de rechercher des emplacements de contenu dans un service spécifique (par exemple, empêcher un utilisateur de rechercher une boîte aux lettres Exchange ou un site SharePoint). En d’autres termes, la création d’un filtre d’autorisations de recherche qui permet à un utilisateur de rechercher tous les sites SharePoint de l’organisation n’empêche pas cet utilisateur de rechercher des boîtes aux lettres. Par exemple, pour autoriser SharePoint administrateurs à rechercher uniquement SharePoint sites, vous devez créer un filtre qui les empêche de rechercher des boîtes aux lettres. De même, pour autoriser Exchange administrateurs à rechercher uniquement des boîtes aux lettres, vous devez créer un filtre qui les empêche de rechercher des sites.
 
 - **Les filtres d’autorisations de recherche sont-ils comptabilisés dans les limites des caractères de requête de recherche ?** Oui. Les filtres d’autorisations de recherche comptent par rapport à la limite de caractères pour les requêtes de recherche. Pour plus d’informations, [voir Limites dans Advanced eDiscovery](limits-ediscovery20.md).
 

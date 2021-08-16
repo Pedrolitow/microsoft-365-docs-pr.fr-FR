@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ab8562eb1ae9a9d45baa31952b0a88ed4a1d9f36
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 518cf05d271c534caa2e0d1c6aafe854aa1da0b7ee4874bc42d57fa20c27bb48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541996"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873438"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>Redirection des comptes du Centre Office 365 sécurité et conformité vers Microsoft 365 Defender
 
@@ -57,11 +57,11 @@ Pour démarrer le routage des comptes vers Microsoft 365 Defender à security.mi
 1. Assurez-vous que vous êtes un administrateur général ou que vous avez des autorisations d’administrateur de sécurité dans Azure Active Directory.
 2. [Connectez-vous](https://security.microsoft.com/) à Microsoft 365 Defender.
 3. Accédez à **Paramètres**  >  **courrier électronique &**  >  **redirection du portail de collaboration.**  
-4. Basculez le paramètre de redirection automatique sur **Le**.
+4. Basculez le paramètre de redirection automatique sur **Sur**.
 5. Cliquez **sur Activer** pour appliquer la redirection automatique à Microsoft 365 Defender.
 
 > [!NOTE]
-> Une fois la redirection activée, les comptes des sessions actives pendant que ce paramètre est appliqué ne sont pas éjectés de leur session et ne sont acheminés vers Microsoft 365 Defender qu’après avoir mis fin à leur session active et se sont de nouveau ré-signés.
+> Une fois la redirection activée, les comptes dans les sessions actives pendant que ce paramètre est appliqué ne sont pas éjectés de leur session et sont acheminés uniquement vers Microsoft 365 Defender après la fin de leur session active et la nouvelle session.
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>Puis-je revenir à l’ancien portail ?
 Si quelque chose ne fonctionne pas pour vous ou s’il y a quelque chose que vous ne parvenez pas à effectuer via Microsoft 365 Defender, nous voulons en savoir plus à son sujet à l’aide de l’option de commentaires du portail. Si vous avez rencontré des problèmes avec la redirection, n’hésitez pas à nous le faire savoir.
@@ -72,7 +72,7 @@ Pour revenir à l’ancien portail :
 
 2. Accédez à **Paramètres**  >  **courrier électronique &**  >  **redirection du portail de collaboration.**
 
-3. Basculez le paramètre de redirection automatique sur **Désintégation.**
+3. Désaffectez le paramètre de redirection **automatique.**
 
 4. Cliquez **sur Désactiver le** partage & commentaires lorsque vous y avez été invité.
 

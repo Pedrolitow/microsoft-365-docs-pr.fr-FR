@@ -561,7 +561,7 @@
 ####### [Méthodes et propriétés de l’action d'amélioration](recommendation.md)
 ####### [Répertorier toutes les actions d’amélioration](get-all-recommendations.md)
 ####### [Obtenir des recommandations par ID](get-recommendation-by-id.md)
-####### [Obtenir les actions d’amélioration par logiciel](get-recommendation-software.md)
+####### [Obtenir les actions d’amélioration par logiciel](list-recommendation-software.md)
 ####### [Répertorier les ordinateurs par action d'amélioration](get-recommendation-machines.md)
 ####### [Répertorier les vulnérabilités par action d'amélioration](get-recommendation-vulnerabilities.md)
 
@@ -666,6 +666,17 @@
 ##### [Appareils inactifs](fix-unhealthy-sensors.md#inactive-devices)
 ##### [Appareils mal configurés](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [Évaluer les erreurs et événements du capteur sur des ordinateurs avec Event Viewer](event-error-codes.md)
+
+#### [Résoudre les problèmes d’intégrité des capteurs à l’aide de l’analyseur client]()
+##### [Vue d’ensemble de l’analyseur client](overview-client-analyzer.md)
+##### [Télécharger et exécuter l’analyseur client](download-client-analyzer.md)
+##### [Exécuter l’analyseur client sur Windows](run-analyzer-windows.md)
+##### [Exécuter l’analyseur client sur macOS ou Linux](run-analyzer-macos-linux.md)
+##### [Collecte de données pour la résolution avancée des problèmes sur Windows](data-collection-analyzer.md)
+##### [Comprendre le de rapport HTML de l’analyseur](analyzer-report.md)
+##### [Fournir des commentaires sur l’outil d’analyseur client](analyzer-feedback.md)
+
+  
 
 #### [Résoudre des problèmes de service avec Microsoft Defender pour point de terminaison]()
 ##### [Résoudre des problèmes de service](troubleshoot-mdatp.md)

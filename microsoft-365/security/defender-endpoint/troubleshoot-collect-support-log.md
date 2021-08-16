@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 69c6bb7a054841cdb7ee7feded55d8f27b3fb93c9e411c3c69853e49141723ed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 518194e3cbf185da415104991e1d7186f5912953
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839208"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250576"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Collecter les journaux de support dans Microsoft Defender pour point de terminaison à l’aide d’une réponse en direct
 
@@ -81,3 +81,13 @@ Cette rubrique fournit des instructions sur la façon d’exécuter l’outil vi
 >   ```
 >
 > - Pour plus d’informations sur la collecte de données localement sur un ordinateur au cas où l’ordinateur ne communique pas avec Microsoft Defender pour les services cloud de point de terminaison ou n’apparaît pas dans le portail Microsoft Defender pour point de terminaison comme prévu, voir Vérifier la connectivité du client à [Microsoft Defender pour](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)les URL de service De point de terminaison.
+
+
+## <a name="see-also"></a>Voir aussi
+- [Vue d’ensemble de l’analyseur client](overview-client-analyzer.md)
+- [Télécharger et exécuter l’analyseur client](download-client-analyzer.md)
+- [Exécutez l’analyseur client sur Windows](run-analyzer-windows.md)
+- [Exécuter l’analyseur client sur macOS ou Linux](run-analyzer-macos-linux.md)
+- [Collecte de données pour la résolution avancée des problèmes sur Windows](data-collection-analyzer.md)
+- [Comprendre le rapport HTML de l’analyseur](analyzer-report.md)
+

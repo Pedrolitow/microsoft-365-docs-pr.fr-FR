@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: edce65314062f731673926195be791f77d1cb823
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 684585d38bd66e5a62df82e9c757a80775f4403e42d4f28c929d1f6e3fe3852f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873359"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Travail prérequis pour l’implémentation des stratégies d’accès aux identités et aux appareils
 
@@ -33,9 +33,9 @@ ms.locfileid: "51952547"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - Azure
 
-Cet article décrit les conditions préalables que les administrateurs doivent respecter pour utiliser les stratégies recommandées d’accès aux identités et aux appareils et pour utiliser l’accès conditionnel. Il décrit également les valeurs par défaut recommandées pour configurer les plateformes clientes pour une expérience d' sign-on unique (SSO) de meilleure choix.
+Cet article décrit les conditions préalables que les administrateurs doivent respecter pour utiliser les stratégies recommandées d’accès aux identités et aux appareils et pour utiliser l’accès conditionnel. Il présente également les valeurs par défaut recommandées pour la configuration des plateformes clientes pour une expérience d' sign-on unique (SSO) de meilleure choix.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Avant d’utiliser les stratégies d’accès aux identités et appareils recommandées, votre organisation doit respecter les conditions préalables. Les exigences sont différentes pour les différents modèles d’identité et d’authentification répertoriés :
 
@@ -44,9 +44,9 @@ Avant d’utiliser les stratégies d’accès aux identités et appareils recomm
 - Hybride avec authentification directe (PTA)
 - Fédéré
 
-Le tableau suivant détaille les fonctionnalités prérequises et leur configuration qui s’appliquent à tous les modèles d’identité, sauf en cas de remarque.
+Le tableau suivant détaille les fonctionnalités prérequises et leur configuration qui s’appliquent à tous les modèles d’identité, sauf dans les cas indiqués.
 
-|Configuration|Exceptions|Licences|
+|Configuration|Exceptions|Licence|
 |---|:---:|---|
 |[Configurez PHS](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Cela doit être activé pour détecter les informations d’identification divulguées et agir sur ces informations pour l’accès conditionnel basé sur les risques. **Remarque :** Cette procédure est requise, que votre organisation utilise ou non l’authentification fédérée.|Cloud uniquement|Microsoft 365 E3 ou E5|
 |[Activez l' sign-on](/azure/active-directory/connect/active-directory-aadconnect-sso) unique transparente pour connecter automatiquement les utilisateurs lorsqu’ils se connectent sur leurs appareils d’organisation connectés au réseau de votre organisation.|Cloud uniquement et fédéré|Microsoft 365 E3 ou E5|
@@ -55,18 +55,18 @@ Le tableau suivant détaille les fonctionnalités prérequises et leur configura
 |[Activer l’inscription automatique de l’appareil des ordinateurs Windows joints au domaine.](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup) L’accès conditionnel s’assure que les appareils qui se connectent aux applications sont joints au domaine ou conformes. Pour le prendre en charge sur les ordinateurs Windows, l’appareil doit être inscrit auprès d’Azure AD.  Cet article explique comment configurer l’inscription automatique des appareils.|Cloud uniquement|Microsoft 365 E3 ou E5|
 |**Préparer votre équipe de support**. Mettez un plan en place pour les utilisateurs qui ne parviennent pas à effectuer l’authentification multifacteur. Il peut s’agit de les ajouter à un groupe d’exclusions de stratégie ou d’enregistrer de nouvelles informations de l’mf pour eux. Avant d’apporter l’une de ces modifications sensibles à la sécurité, vous devez vous assurer que l’utilisateur réel fait la demande. Exiger que les responsables des utilisateurs facilitent l’approbation est une étape efficace.||Microsoft 365 E3 ou E5|
 |[Configurer la réécriture du mot de passe dans AD local](/azure/active-directory/active-directory-passwords-getting-started). L’écriture écriture par mot de passe permet à Azure AD d’exiger que les utilisateurs modifient leur mot de passe local lorsqu’une compromission de compte à haut risque est détectée. Vous pouvez activer cette fonctionnalité à l’aide d’Azure AD Connecter de deux manières : activer l’écriture écriture de mot de passe dans l’écran des fonctionnalités facultatives de l’Assistant Installation d’Azure AD Connecter ou l’activer via Windows PowerShell. |Cloud uniquement|Microsoft 365 E3 ou E5|
-|[Configurez la protection par mot de passe Azure AD.](/azure/active-directory/authentication/concept-password-ban-bad) La protection par mot de passe Azure AD détecte et bloque les mots de passe faibles connus et leurs variantes, et peut également bloquer d’autres termes faibles définis par votre organisation. Les listes générales par défaut de mots de passe interdits sont automatiquement appliquées à tous les utilisateurs d’un client Azure AD. Vous pouvez définir d’autres entrées dans une liste personnalisée de mots de passe interdits. Lorsque les utilisateurs modifient ou réinitialisent leurs mots de passe, ces listes sont vérifiées de façon à garantir l’utilisation de mots de passe forts.||Microsoft 365 E3 ou E5|
-|[Activez Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection). Azure AD Identity Protection vous permet de détecter les vulnérabilités potentielles affectant les identités de votre organisation et de configurer une stratégie de correction automatisée en cas de risque de communication faible, moyen et élevé et de risque pour l’utilisateur.||Microsoft 365 E5 ou Microsoft 365 E3 avec le module de sécurité E5|
-|**Activez l’authentification** [moderne Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) et pour [Skype Entreprise Online.](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) L’authentification moderne est une condition préalable à l’utilisation de l’authentification multifacteur. L’authentification moderne est activée par défaut Office clients 2016 et 2019, SharePoint et OneDrive Entreprise.||Microsoft 365 E3 ou E5|
+|[Configurer la protection par mot de passe Azure AD.](/azure/active-directory/authentication/concept-password-ban-bad) La protection par mot de passe Azure AD détecte et bloque les mots de passe faibles connus et leurs variantes, et peut également bloquer d’autres termes faibles définis par votre organisation. Les listes générales par défaut de mots de passe interdits sont automatiquement appliquées à tous les utilisateurs d’un client Azure AD. Vous pouvez définir d’autres entrées dans une liste personnalisée de mots de passe interdits. Lorsque les utilisateurs modifient ou réinitialisent leurs mots de passe, ces listes sont vérifiées de façon à garantir l’utilisation de mots de passe forts.||Microsoft 365 E3 ou E5|
+|[Activez Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection). Azure AD Identity Protection vous permet de détecter les vulnérabilités potentielles qui affectent les identités de votre organisation et de configurer une stratégie de correction automatisée en cas de risque de communication faible, moyen et élevé pour les utilisateurs.||Microsoft 365 E5 ou Microsoft 365 E3 avec le module de sécurité E5|
+|**Activer l’authentification** [moderne pour Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) et pour Skype Entreprise [Online.](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) L’authentification moderne est une condition préalable à l’utilisation de l’authentification multifacteur. L’authentification moderne est activée par défaut Office clients 2016 et 2019, SharePoint et OneDrive Entreprise.||Microsoft 365 E3 ou E5|
 |
 
 ## <a name="recommended-client-configurations"></a>Configurations clientes recommandées
 
-Cette section décrit les configurations de client de plateforme par défaut que nous vous recommandons pour offrir la meilleure expérience d' cesso à vos utilisateurs, ainsi que les conditions techniques requises pour l’accès conditionnel.
+Cette section décrit les configurations de client de plateforme par défaut que nous vous recommandons pour fournir la meilleure expérience d' utilisateur unique à vos utilisateurs, ainsi que les conditions techniques requises pour l’accès conditionnel.
 
 ### <a name="windows-devices"></a>Appareils Windows
 
-Nous vous recommandons d’Windows 10 (version 2004 ou ultérieure), car Azure est conçu pour offrir l’expérience d' utilisateur unique la plus fluide possible à la fois sur site et Azure AD. Les appareils scolaires ou de travail doivent être configurés pour rejoindre Azure AD directement ou, si l’organisation utilise la joint de domaine AD sur site, ces appareils doivent être configurés pour s’inscrire automatiquement et silencieusement auprès [d’Azure AD.](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
+Nous vous recommandons d’Windows 10 (version 2004 ou ultérieure), car Azure est conçu pour fournir l’expérience d' utilisateur unique la plus fluide possible à la fois sur site et Azure AD. Les appareils scolaires ou de travail doivent être configurés pour rejoindre Azure AD directement ou, si l’organisation utilise la joint de domaine AD sur site, ces appareils doivent être configurés pour s’inscrire automatiquement et silencieusement auprès [d’Azure AD.](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
 
 Pour les appareils byod Windows, les utilisateurs peuvent utiliser ajouter un **compte scolaire ou scolaire.** Notez que les utilisateurs du navigateur Google Chrome sur Windows 10 doivent installer une [extension](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) pour obtenir la même expérience de Microsoft Edge utilisateurs. En outre, si votre organisation dispose d’appareils Windows 8 ou 8.1 joints à un domaine, vous pouvez installer Microsoft Workplace Join pour les ordinateurs Windows 10 non connectés. [Téléchargez le package pour inscrire les](https://www.microsoft.com/download/details.aspx?id=53554) appareils auprès d’Azure AD.
 
@@ -112,11 +112,11 @@ Les clients suivants sont recommandés lorsqu’une stratégie de documents séc
 Pour plus d’informations sur la prise en charge Microsoft 365 client, consultez les articles suivants :
 
 - [Microsoft 365 Prise en charge des applications clientes : accès conditionnel](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365 Prise en charge des applications clientes : authentification multifacteur](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
+- [Microsoft 365 Prise en charge des applications client : authentification multifacteur](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>Protection des comptes d’administrateur
 
-Pour Microsoft 365 E3 ou E5 ou avec des licences Azure AD Premium P1 ou P2 distinctes, vous pouvez exiger l’mf pour les comptes d’administrateur avec une stratégie d’accès conditionnel créée manuellement. Pour [plus d’informations,](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) voir Accès conditionnel : exiger l' approbation de la MFA pour les administrateurs.
+Pour Microsoft 365 E3 ou E5 ou avec des licences Azure AD Premium P1 ou P2 distinctes, vous pouvez exiger l' approbation de la MFA pour les comptes d’administrateur avec une stratégie d’accès conditionnel créée manuellement. Pour [plus d’informations,](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) voir Accès conditionnel : exiger l' approbation de la MFA pour les administrateurs.
 
 Pour les éditions de Microsoft 365 ou Office 365 qui ne prisent pas en charge l’accès conditionnel, vous pouvez activer les [paramètres](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) de sécurité par défaut pour exiger l' approbation MFA pour tous les comptes.
 

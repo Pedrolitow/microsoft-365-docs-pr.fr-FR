@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0bf041210aac90a1aa5b0c360b0b5dd55d8cd8c6
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: bd51b218bfa31496c708f61e4469246ce3d0e0c12e5551063929f65d06337f85
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857602"
 ---
 # <a name="get-alert-related-user-information-api"></a>API Obtenir les informations utilisateur associées à une alerte
 
@@ -60,7 +60,7 @@ Déléguée (compte professionnel ou scolaire)|User.Read.All|« Lire les profils
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -80,7 +80,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et d’alerte et si un utilisateur existe : 200 - OK avec l’utilisateur dans le corps. Si l’alerte ou l’utilisateur est in found - 404 - In trouvé.
+En cas de réussite et si l’alerte et qu’un utilisateur existe : 200 - OK avec l’utilisateur dans le corps. Si l’alerte ou l’utilisateur est in found - 404 - In trouvé.
 
 ## <a name="example"></a>Exemple
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 26b68fe1adcf9841b69f86000c4c0d77d1db860fc64e713f2c186ad295b63ffc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7357c05809ffc31783f985adc04cabc70742dbe9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888662"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247952"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -64,7 +64,7 @@ La suite Microsoft 365 Defender protège :
 - **Points de** terminaison avec Microsoft Defender pour point de terminaison - Microsoft Defender pour point de terminaison est une plateforme de point de terminaison unifiée pour la protection préventive, la détection post-violation, l’examen automatisé et la réponse. 
 - **E-mail** et collaboration avec Microsoft Defender pour Office 365 - Defender pour Office 365 protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. 
 - Identités avec Microsoft Defender pour l’identité et **Azure AD Identity Protection** - Microsoft Defender pour l’identité utilise les signaux Active Directory pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation. 
-- **Applications** avec sécurité Microsoft Cloud App : la sécurité de Microsoft Cloud App est une solution saaS complète qui apporte une visibilité approfondie, des contrôles de données forts et une protection renforcée contre les menaces à vos applications cloud. 
+- **Applications** avec sécurité Microsoft Cloud App : la sécurité des applications Cloud Microsoft est une solution saaS complète qui apporte une visibilité approfondie, des contrôles de données forts et une protection renforcée contre les menaces à vos applications cloud. 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
@@ -93,7 +93,7 @@ Microsoft 365 Defender fonctionnalités entre produits sont les suivantes :
 
 
 ## <a name="get-started"></a>Prise en main
-Microsoft 365 Defender licences doivent être remplies avant de pouvoir activer le service dans le centre de sécurité Microsoft 365 à [l’security.microsoft.com](https://security.microsoft.com). Pour plus d’informations, voir :
+Microsoft 365 Defender licences doivent être remplies avant de pouvoir activer le service dans le portail Microsoft 365 Defender à [l’security.microsoft.com](https://security.microsoft.com). Pour plus d’informations, voir :
 - [Conditions de licence](prerequisites.md#licensing-requirements)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
 

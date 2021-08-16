@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 73c63374b980eea272d8940b7c6e62827788075c3827341dfe1ff039d4c6fa58
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bc8b5d2229dac85ff5029c3f40bb0581a66b3343
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833890"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253545"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corriger les capteurs défectueux dans Microsoft Defender pour le point de terminaison
 
@@ -93,3 +93,9 @@ Si vous avez pris des mesures correctives et que l’état de l’appareil est t
 
 ## <a name="see-also"></a>Voir aussi
 - [Vérifier l’état d’état du capteur dans Microsoft Defender pour le point de terminaison](check-sensor-status.md)
+- [Vue d’ensemble de l’analyseur client](overview-client-analyzer.md)
+- [Télécharger et exécuter l’analyseur client](download-client-analyzer.md)
+- [Exécutez l’analyseur client sur Windows](run-analyzer-windows.md)
+- [Exécuter l’analyseur client sur macOS ou Linux](run-analyzer-macos-linux.md)
+- [Collecte de données pour la résolution avancée des problèmes sur Windows](data-collection-analyzer.md)
+

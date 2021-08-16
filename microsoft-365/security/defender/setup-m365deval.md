@@ -1,6 +1,6 @@
 ---
 title: Configurer votre laboratoire d Microsoft 365 Defender d’essai ou votre environnement pilote
-description: Accéder au Microsoft 365 de sécurité, puis configurer votre environnement Microsoft 365 Defender d’essai
+description: Accéder Microsoft 365 Defender portail d’essai puis configurer votre environnement Microsoft 365 Defender d’essai
 keywords: Microsoft 365 Defender d’essai, Microsoft 365 Defender le programme d’installation pilote, essayez Microsoft 365 Defender, Microsoft 365 Defender de laboratoire d’évaluation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6db3003aa6465df90a3d2e4af55b28ccccf44100
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 30edfb5a40c62f56da1a431f34c6ddd80f12799e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454732"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58252106"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>Configurer votre version d Microsoft 365 Defender d’essai dans un environnement de laboratoire 
 
@@ -50,7 +50,7 @@ Cette rubrique vous guide pour configurer un environnement de laboratoire dédi�
 
 3. Remplissez votre prénom, nom, numéro de téléphone d’entreprise, nom de société, taille de la société et pays ou région.  
 
-   ![Image of_Office page de configuration de l’enregistrement de la version d’essai 365 E5 demandant le nom, le téléphone et les détails de la société](../../media/mtp-eval-11.png)
+   ![Image of_Office page de configuration de l’inscription de la version d’essai 365 E5 demandant le nom, le téléphone et les détails de la société](../../media/mtp-eval-11.png)
    
    > [!NOTE]
    > Le pays ou la région que vous définissez ici détermine la région de centre de données dans Office 365 sera hébergée.
@@ -73,7 +73,7 @@ Cette rubrique vous guide pour configurer un environnement de laboratoire dédi�
 
 8. Connecter votre domaine d’entreprise au Office 365 client. [Facultatif] Choisissez **Connecter domaine que vous possédez déjà** et tapez votre nom de domaine. Cliquez sur **Suivant**.
 
-   ![Image of_Office page d’installation 365 E5 dans laquelle vous devez personnaliser votre inscription et votre courrier électronique](../../media/mtp-eval-16.png)
+   ![Image of_Office page d’installation 365 E5 dans laquelle vous devez personnaliser votre connectez-vous et votre courrier électronique](../../media/mtp-eval-16.png)
  
 9. Ajoutez un enregistrement TXT ou MX pour valider la propriété du domaine. Une fois que vous avez ajouté l’enregistrement TXT ou MX à votre domaine, sélectionnez **Vérifier**.
 
@@ -106,7 +106,7 @@ Cette rubrique vous guide pour configurer un environnement de laboratoire dédi�
 ## <a name="enable-microsoft-365-trial-subscription"></a>Activer l Microsoft 365 d’essai
 
 >[!NOTE]
->L’inscription à une version d’essai vous donne 25 licences utilisateur à utiliser pendant un mois. Pour plus d’informations, voir Essayer ou acheter [un abonnement M365.](../../commerce/try-or-buy-microsoft-365.md)
+>L’inscription à une version d’essai vous donne 25 licences utilisateur à utiliser pendant un mois. Pour plus d’informations, voir Essayer ou acheter un abonnement [M365.](../../commerce/try-or-buy-microsoft-365.md)
 
 1. À [partir Administration Microsoft 365, cliquez](https://admin.microsoft.com/)sur **Facturation,** puis accédez à Acheter des **services.**
 

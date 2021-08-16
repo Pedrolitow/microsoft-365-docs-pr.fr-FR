@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 761a8fcb3c6f7efe82c542001dac1f62eb365f1473268df0866bb5dfae0ed302
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: efb6bcde04411b3409d3076d09251423d436265c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863190"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58252139"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>Activer l’environnement d’évaluation pour Microsoft Cloud App Security
 
@@ -64,13 +64,13 @@ Si vous avez encore des difficultés, examinez la [exigences du réseau.](/cloud
 
 ## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>Étape 2. Intégration à Microsoft Defender pour point de terminaison
 
-Microsoft Cloud App Security s’intègre à Microsoft Defender pour Endpoint en natif. L’intégration simplifie le déploiement de la découverte cloud, étend les fonctionnalités de découverte cloud au-delà de votre réseau d’entreprise et permet une enquête basée sur l’appareil. Cette intégration révèle l’accès aux applications et services cloud à partir d’appareils gérés par Windows 10 informatique. 
+Microsoft Cloud App Security s’intègre à Microsoft Defender pour Endpoint en natif. L’intégration simplifie le déploiement de la découverte cloud, étend les fonctionnalités de découverte cloud au-delà de votre réseau d’entreprise et permet une investigation basée sur l’appareil. Cette intégration révèle l’accès aux applications et services cloud à partir d’appareils gérés par Windows 10 informatique. 
 
-Si vous avez déjà configuré Microsoft Defender pour Endpoint, la configuration de l’intégration avec Sécurité des applications cloud est un basculement dans Microsoft 365 Defender. Une fois l’intégration désactivée, vous pouvez revenir au portail Sécurité des applications cloud et afficher des données enrichies dans le Tableau de bord de découverte cloud.
+Si vous avez déjà configuré Microsoft Defender pour Endpoint, la configuration de l’intégration avec Sécurité des applications cloud est un basculement Microsoft 365 Defender. Une fois l’intégration désactivée, vous pouvez revenir au portail Sécurité des applications cloud et afficher des données enrichies dans le Tableau de bord de découverte cloud.
 
-Pour effectuer ces tâches, voir [Microsoft Defender pour l’intégration de point](/cloud-app-security/mde-integration)de terminaison avec Microsoft Cloud App Security . 
+Pour effectuer ces tâches, consultez [Microsoft Defender pour l’intégration des points](/cloud-app-security/mde-integration)de terminaison avec Microsoft Cloud App Security . 
 
-## <a name="step-3-deploy-the-cloud-app-security-log-collector-on-your-firewalls-and-other-proxies"></a>Étape 3 : Déployer le collecteur Sécurité des applications cloud journaux sur vos pare-feu et autres proxies
+## <a name="step-3-deploy-the-cloud-app-security-log-collector-on-your-firewalls-and-other-proxies"></a>Étape 3. Déployer le collecteur Sécurité des applications cloud journaux sur vos pare-feu et autres proxies
 
 Pour une couverture sur tous les appareils connectés à votre réseau, déployez le collecteur de journaux Sécurité des applications cloud sur vos pare-feu et autres proxies pour collecter des données à partir de vos points de terminaison et les envoyer à Sécurité des applications cloud pour analyse. 
 
@@ -87,10 +87,10 @@ Le tableau de bord de découverte cloud est conçu pour vous donner plus d’inf
 
 Pour commencer à utiliser le tableau de bord de découverte cloud, voir [Utilisation des applications découvertes.](/cloud-app-security/discovered-apps)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Étape 3 sur 3 : [Pilote Microsoft Cloud App Security](eval-defender-mcas-pilot.md)
 
-Revenir à la vue d’ensemble [de l’Microsoft Cloud App Security](eval-defender-mcas-overview.md)
+Revenir à la vue d’ensemble de [l’Microsoft Cloud App Security](eval-defender-mcas-overview.md)
 
 Revenir à la vue d’ensemble [de l’évaluation et de la Microsoft 365 Defender](eval-overview.md)

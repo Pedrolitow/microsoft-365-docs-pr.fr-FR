@@ -16,17 +16,17 @@ ms.custom: nextgen
 ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 2d23ca6d98d86666d72b75723a2205fcd83b08d7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: f83c62b3ae642bcff59910f668d2915bb143b8e42f818eb33d014b5540a8e30a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857738"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement les paramètres Antivirus Microsoft Defender stratégie
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -72,7 +72,7 @@ Analyser | Configurer le remplacement de paramètre local pour le type d’analy
 
 <a id="merge-lists"></a>
 
-## <a name="configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged"></a>Configurer la façon dont les listes de correction et d’exclusion des menaces définies localement et globalement sont fusionnées
+## <a name="configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged"></a>Configurer la façon dont les listes de correction et d’exclusions des menaces définies localement et globalement sont fusionnées
 
 Vous pouvez également configurer la façon dont les listes définies localement sont combinées ou fusionnées avec des listes définies globalement. Ce paramètre s’applique aux [listes d’exclusions,](configure-exclusions-microsoft-defender-antivirus.md) [aux listes de](configure-remediation-microsoft-defender-antivirus.md)correction spécifiées et à la réduction de la surface [d’attaque.](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 
@@ -93,7 +93,7 @@ Vous pouvez désactiver ce paramètre pour vous assurer que seules les listes d�
 > [!NOTE]
 > Si vous désactivez la fusion de listes locales, elle remplacera les paramètres d’accès contrôlé aux dossiers. Elle remplace également les dossiers protégés ou les applications autorisées définies par l’administrateur local. Pour plus d’informations sur les paramètres d’accès contrôlé aux dossiers, voir Autoriser une application [bloquée dans Sécurité Windows](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Configurer l’interaction de l’utilisateur final avec Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)

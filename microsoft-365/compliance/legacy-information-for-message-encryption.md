@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Comprendre comment faire passer des fichiers hérités vers chiffrement de messages Office 365 (OME) pour votre organisation.
-ms.openlocfilehash: eabf655b6fa92a6f502ebe1e071d41f394f78929
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6f2b2719a66449f01b3810c8bb65020c49568248de253a7e35b84c8ae283f220
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051826"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859835"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
@@ -67,9 +67,9 @@ Pour plus d’informations sur la création Exchange règles de flux de messager
 
 1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur général, connectez-vous [Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Choisissez la **vignette** Administrateur.
+2. Sélectionnez la **vignette** Administrateur.
 
-3. Dans le centre Microsoft 365' administration, sélectionnez **Centres d’administration** \> **Exchange**.
+3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
 
 4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et \>  **sélectionnez Nouvelle** icône Créer une ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
@@ -83,7 +83,7 @@ Pour plus d’informations sur la création Exchange règles de flux de messager
 
       - Pour sélectionner un nom existant, sélectionnez-le dans la liste et cliquez sur **OK**.
 
-      - Pour entrer un nouveau nom, tapez une adresse de messagerie dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
+      - Pour entrer un nouveau nom, tapez une adresse e-mail dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
 
 7. Pour ajouter d’autres conditions, sélectionnez **Plus d’options,** puis **sélectionnez Ajouter une condition** et sélectionnez dans la liste.
 
@@ -99,7 +99,7 @@ Pour plus d’informations sur la création Exchange règles de flux de messager
 
 1. Connectez-vous à Exchange Online PowerShell. Pour plus d'informations, reportez-vous à [Connexion à Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Créez une règle à l’aide de la cmdlet **New-TransportRule** et définissez le _paramètre ApplyOME_ sur `$true` .
+2. Créez une règle à l’aide de la cmdlet **New-TransportRule** et définissez _le paramètre ApplyOME_ sur `$true` .
 
    Cet exemple exige que tous les messages électroniques envoyés DrToniRamos@hotmail.com soient chiffrés.
 
@@ -123,9 +123,9 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur, connectez-vous [Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Choisissez la **vignette** Administrateur.
+2. Sélectionnez la **vignette** Administrateur.
 
-3. Dans le centre Microsoft 365' administration, sélectionnez **Centres d’administration** \> **Exchange**.
+3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
 
 4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et \>  **sélectionnez Nouvelle** icône Créer une ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
@@ -259,7 +259,7 @@ Non, les destinataires externes n’ont pas besoin d’un abonnement pour lire o
   
  **Q. En quoi les chiffrement de messages Office 365 des services RMS (Rights Management Services) sont-ils différents ?**
   
-RMS offre des fonctionnalités de protection des droits de l’information pour les messages électroniques internes d’une organisation en fournissant des modèles intégrés, tels que : Ne pas faire avancer et Confidentiel de l’entreprise. Le chiffrement de messages Office 365 prend en charge le chiffrement des messages électroniques pour ceux envoyés à des destinataires externes et internes.
+RMS fournit des fonctionnalités de protection des droits de l’information pour les messages électroniques internes d’une organisation en fournissant des modèles intégrés, tels que : Ne pas forward et Company Confidential. Le chiffrement de messages Office 365 prend en charge le chiffrement des messages électroniques pour ceux envoyés à des destinataires externes et internes.
   
  **Q. En quoi chiffrement de messages Office 365 est-il différent de S/MIME ?**
   
@@ -293,7 +293,7 @@ Lorsqu’une réponse chiffrée est envoyée à partir du portail de chiffrement
   
  **Q. Je suis abonné au Exchange EhE (Hosted Encryption). Où puis-je en savoir plus sur la mise à niveau vers chiffrement de messages Office 365 ?**
   
-Tous les clients EHE ont été mis à niveau vers le chiffrement de messages Office 365. Pour plus d’informations, visitez Exchange centre de mise à [niveau de chiffrement hébergé.](../security/defender-365-security/exchange-online-protection-overview.md)
+Tous les clients EHE ont été mis à niveau vers le chiffrement de messages Office 365. Pour plus d’informations, visitez Exchange centre de mise à [niveau de chiffrement hébergé.](../security/office-365-security/exchange-online-protection-overview.md)
   
  **Q. Ai-je besoin d’ouvrir des URL, des adresses IP ou des ports dans le pare-feu de mon organisation pour prendre en charge chiffrement de messages Office 365 ?**
   

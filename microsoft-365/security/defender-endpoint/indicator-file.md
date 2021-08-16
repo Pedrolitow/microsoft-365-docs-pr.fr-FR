@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 535a729a56c5841eb6591ec34ac934c0446fefbd
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 0c3f4dea703a5d146cab9382be3e991bf8c50bd545ee26ac2781d9542a1f5f90
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587701"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894250"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -98,7 +98,7 @@ Le conflit de gestion des stratégies Cert et IoC de fichier suit l’ordre ci-d
 - Sinon, si le fichier est bloqué ou averti par un blocage ou un avertissement de fichier IoC, **puis Bloquer/Avertir**
 - Sinon, si le fichier est autorisé par une stratégie IoC de fichier autorisé, **autorisez**
 - Sinon si le fichier est bloqué par les règles de la asr, cfa, av, SmartScreen, puis **bloquer**
-- Else **Allow** (passe Windows Defender Application Control & AppLocker, aucune règle IoC ne s’applique à elle)
+- Else **Allow** (passe Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
 
 S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé (c’est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
 

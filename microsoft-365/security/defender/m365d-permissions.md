@@ -1,5 +1,5 @@
 ---
-title: Gérer l’accès Microsoft 365 Defender données dans le centre Microsoft 365 sécurité
+title: Gérer l’accès Microsoft 365 Defender données dans le portail Microsoft 365 Defender web
 description: Découvrez comment gérer les autorisations d’accès aux données dans Microsoft 365 Defender
 keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Sécurité des applications cloud, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 33b53356f4569954b2e5905b953bc1edaa7f750f8dff0d09133ec520a67ec615
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 61d76d873005c2bdd37fc37f05cf6e520a302647
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902198"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247959"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Gérer l’accès aux Microsoft 365 Defender avec Azure Active Directory rôles globaux
 
@@ -46,7 +46,7 @@ Les comptes affectés aux rôles **Azure Active Directory global (AD)** suivants
 - Lecteur général
 - Lecteur de sécurité
 
-Pour examiner les comptes avec ces rôles, [afficher les autorisations dans le Centre de sécurité Microsoft 365](https://security.microsoft.com/permissions).
+Pour passer en revue les comptes avec ces [rôles, affichez les autorisations](https://security.microsoft.com/permissions)dans le portail Microsoft 365 Defender.
 
 **L’accès** aux rôles personnalisés est une nouvelle fonctionnalité de Microsoft 365 Defender et vous permet de gérer l’accès à des données, des tâches et des fonctionnalités spécifiques dans Microsoft Defender 365. Les rôles personnalisés offrent plus de contrôle que les rôles Azure AD globaux, fournissant aux utilisateurs uniquement l’accès dont ils ont besoin avec les rôles les moins permissifs nécessaires.  Les rôles personnalisés peuvent être créés en plus des rôles Azure AD globaux. [En savoir plus sur les rôles personnalisés.](custom-roles.md)
 
@@ -67,7 +67,7 @@ Par exemple, si vous n’appartenez qu’à un seul groupe d’utilisateurs avec
 ### <a name="microsoft-cloud-app-security-access-controls"></a>Contrôles d'accès Microsoft Cloud App Security (MCAS)
 Pendant la prévisualisation, Microsoft 365 Defender n’applique pas les contrôles d’accès basés sur Sécurité des applications cloud paramètres. L’accès Microsoft 365 Defender données n’est pas affecté par ces paramètres.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Rôles personnalisés dans le contrôle d’accès basé sur les rôles pour Microsoft 365 Defender](custom-roles.md)
 - [Rôles Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 - [Microsoft Defender pour point de terminaison RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)

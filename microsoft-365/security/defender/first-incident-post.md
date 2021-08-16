@@ -22,25 +22,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 7098da4150b95b2567f068d83afa431ad3a71ca3b4ff996e5f0a2b7588f0c256
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651367"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873474"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Étape 3. Effectuer un examen post-incident de votre premier incident
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Étape 3 : Effectuer un examen post-incident de votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Le National Institute of Standards and Technology (NIST) recommande qu’une fois que toutes les mesures ont été prises pour récupérer après l’attaque, les organisations doivent passer en revue l’incident pour en savoir plus et améliorer la posture ou les processus de sécurité. L’évaluation des différents aspects de la gestion des incidents devient importante lors de la préparation du prochain incident.
 
-Microsoft 365 Defender peut vous aider à effectuer des activités post-incident en fournissant à une organisation des alertes qui s’alignent sur [MITRE ATT&CK Framework](https://attack.mitre.org/). Toutes les solutions Microsoft Defender étiquetent les attaques conformément à une tactique ou une technique att&CK. 
+Microsoft 365 Defender pouvez vous aider à effectuer des activités post-incident en fournissant à une organisation des alertes qui s’alignent sur [MITRE ATT&CK Framework](https://attack.mitre.org/). Toutes les solutions Microsoft Defender étiquetent les attaques conformément à une tactique ou une technique att&CK. 
 
-En m mappage des alertes à cette infrastructure du secteur, vous pouvez :
+En m mappage d’alertes à cette infrastructure du secteur, vous pouvez :
 
 - Effectuer une analyse des lacunes dans la couverture de sécurité.
 - Déterminer l’adversaire et l’attribution de la campagne.

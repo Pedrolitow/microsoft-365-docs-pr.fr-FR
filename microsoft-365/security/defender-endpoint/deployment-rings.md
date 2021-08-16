@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1b63c601613094305e7f669b82bc18552374ca0b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ce3ef7cd0861f8f094a873e39ae010ac87e4e18549ce0337911c327741f5e4f7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53903803"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Déployer Microsoft Defender pour le point de terminaison dans des anneaux
 
@@ -64,7 +64,7 @@ Déploiement complet | Anneau 3 : déployer le service dans le reste de l’envi
 
 Voici un exemple de critères de sortie pour ces anneaux :
 
-- Les appareils s’affichent dans la liste d’inventaire des appareils
+- Les appareils s’affiche dans la liste d’inventaire des appareils
 - Les alertes apparaissent dans le tableau de bord
 - [Exécuter un test de détection](run-detection-test.md)
 - [Exécuter une attaque simulée sur un appareil](attack-simulations.md)

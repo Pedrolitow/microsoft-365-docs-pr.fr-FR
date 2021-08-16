@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des pages Facebook Business Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Facebook de votre organisation.
-ms.openlocfilehash: 773893884aebba3d55e063e7e4f8fa331553eb215a2e20f6b8833b00811d7c12
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 14793931ec6e58571dd870bd48b2150d2d00fa09
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892809"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248065"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Déployer un connecteur pour archiver les données des pages Facebook Business
 
@@ -40,7 +40,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
     ![Cliquez sur **Inscriptions d’applications (prévisualisation)**, puis sur **Nouvelle inscription**](../media/FBCimage3.png)
 
-4. Inscrivez l’application. Sous URI de redirection, sélectionnez Web dans la liste de listes listes des types d’application, puis tapez dans la zone de <https://portal.azure.com> l’URI.
+4. Inscrivez l’application. Sous URI de redirection, sélectionnez Web dans la liste de listes de listes listes des types d’application, puis tapez dans la zone de <https://portal.azure.com> l’URI.
 
    ![Inscription de l’application](../media/FBCimage4.png)
 
@@ -64,7 +64,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    ![Copier la valeur de la secret et l’enregistrer](../media/FBCimage9.png)
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : Déployer le service web connecteur de GitHub votre compte Azure
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : Déployer le service web connecteur à partir de GitHub votre compte Azure
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-connector-csharp-aspnet) and click Deploy to **Azure**.
 
@@ -80,9 +80,9 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    - **Nom de l’application web :** Fournissez un nom unique pour l’application web du connecteur. La longueur du nom doit être de 3 à 18 caractères. Ce nom est utilisé pour créer l’URL du service d’application Azure ; par exemple, si vous fournissez le nom de l’application Web **fbconnector,** l’URL du service d’application Azure **sera fbconnector.azurewebsites.net**.
 
-   - **tenantId :** ID de client de votre organisation Microsoft 365 que vous avez copiée après la création de l’application connecteur Facebook à Azure Active Directory l’étape 1.
+   - **tenantId :** ID client de votre organisation Microsoft 365 que vous avez copiée après la création de l’application connecteur Facebook à l Azure Active Directory l’étape 1.
 
-   - **APISecretKey :** Vous pouvez taper n’importe quelle valeur comme secret. Cela permet d’accéder à l’application web de connecteur à l’étape 5.
+   - **APISecretKey :** Vous pouvez taper n’importe quelle valeur comme secret. Il permet d’accéder à l’application web de connecteur à l’étape 5.
 
      ![Cliquez sur Créer un compte de stockage de ressources et de types](../media/FBCimage12.png)
 
@@ -100,7 +100,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    ![Créer un ID d’application](../media/FBCimage26.png)
 
-3. Dans le volet de navigation de gauche, **cliquez** sur Ajouter des produits, puis cliquez sur **Configurer** dans la vignette de **connexion Facebook.**
+3. Dans le volet de navigation de gauche, cliquez sur Ajouter des **produits,** puis cliquez sur **Configurer** dans la vignette de **connexion Facebook.**
 
    ![Cliquez sur Ajouter des produits](../media/FBCimage27.png)
 
@@ -112,7 +112,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    ![Ajouter l’URL du service d’application Azure](../media/FBCimage29.png)
 
-6. Complétez la section Démarrage rapide de la configuration de la connexion à Facebook.
+6. Complétez la section Démarrage rapide de la configuration de la connexion Facebook.
 
    ![Terminer la section Démarrage rapide](../media/FBCimage30.png)
 
@@ -124,7 +124,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    ![Cliquez sur Ajouter des produits, puis sur **Webhooks](../media/FBCimage32.png)
 
-9. Ajoutez l’URL de rappel webhooks et ajoutez un jeton de vérification. Le format de l’URL de rappel, utilisez le format **<connectorserviceuri> /api/FbPageWebhook**, où la valeur de connectorserviceuri est l’URL du service d’application Azure pour votre organisation ; par exemple `https://fbconnector.azurewebsites.net` .
+9. Ajoutez l’URL de rappel webhooks et ajoutez un jeton de vérification. Le format de l’URL de rappel, utilisez le format , où la valeur pour connectorserviceuri est l’URL du service d’application Azure pour `<connectorserviceuri>/api/FbPageWebhook` votre organisation ; par exemple `https://fbconnector.azurewebsites.net` .
 
    Le jeton de vérification doit être similaire à un mot de passe fort. Copiez le jeton de vérification dans un fichier texte ou un autre emplacement de stockage.
 
@@ -198,7 +198,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
 5. Dans la page **Ajouter des informations d’identification pour votre** application de connecteur, entrez les informations suivantes, puis cliquez sur Valider la **connexion.**
 
-   ![Entrer les informations d’identification de l’application connecteur](../media/TCimage38.png)
+   ![Entrer les informations d’identification de l’application du connecteur](../media/TCimage38.png)
 
    - Dans la **zone** Nom, tapez un nom pour le connecteur, tel que la **page d’actualités facebook.**
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 475260ee10bd1d85c895bcbd69df78b338367931e63a115466a75e9e836b189d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 51b03ebf277583541fc86bdbd80535704929fcf3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853318"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58249184"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Promouvoir votre environnement d Microsoft 365 Defender d’évaluation vers la production
 
