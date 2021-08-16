@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 1aa318c75dcfcb339ae1f7c52832938805593e47b966d68694380e3d760f0569
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: b61abfa58d10aca154cee02edf15a56b516495b8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523780"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247093"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -63,7 +63,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
         - Ces fichiers peuvent être étiquetés automatiquement au repos avant ou après la création des stratégies d’étiquette automatique. Les fichiers ne peuvent pas être étiquetés automatiquement s’ils font partie d’une session ouverte (le fichier est ouvert).
         - Les pièces jointes aux éléments de liste ne sont actuellement pas prises en charge et ne seront pas étiquetées automatiquement.
     - Jusqu’à 25 000 fichiers automatiquement étiquetés dans votre client par jour.
-    - Jusqu’à 10 stratégies d’attribution automatique de nom par client, chacune ciblant 10 sites (SharePoint ou OneDrive). Avec le [déploiement des améliorations récentes](#recent-enhancements-for-auto-labeling-policies), ces nombres passent à 100 stratégies et 100 sites lorsqu’ils sont spécifiés individuellement. Vous pouvez également spécifier tous les sites, et cette configuration est exemptée du maximum de 100 sites.
+    - Jusqu’à 100 stratégies d’attribution automatique de nom par client, chacune ciblant 100 sites (SharePoint ou OneDrive) lorsqu’ils sont spécifiés de manière individuelle. Vous pouvez également spécifier tous les sites, et cette configuration est exemptée du maximum de 100 sites.
     - Les valeurs existantes pour modifié, modifié par et la date ne sont pas changées du fait des stratégies d’étiquetage automatique pour le mode de simulation et lors de l’application des étiquettes.
     - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond au dernier compte qui a modifié le fichier.
 
@@ -98,7 +98,7 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 |Remplacer le chiffrement IRM appliqué sans étiquette|Oui, si l’utilisateur dispose du droit d’utilisation minimal d’exportation |Oui (e-mail uniquement) |
 |Étiquette du courrier électronique entrant|Non |Oui|
 
-\* L’étiquetage automatique n’est actuellement pas disponible dans toutes les régions. Si votre client ne prend pas en charge cette fonctionnalité, l’onglet Étiquetage automatique n’apparaît pas dans le centre d’étiquettes d’administrateurs.
+\* L’étiquetage automatique n’est actuellement pas disponible dans toutes les régions. Si votre client ne prend pas en charge cette fonctionnalité, l’onglet **Étiquetage automatique** n’apparaît pas dans le Centre de conformité.
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plusieurs étiquettes
 
@@ -197,9 +197,6 @@ Spécifique au client d’étiquetage unifié Azure Information Protection :
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Configurer les stratégies d’étiquetage automatique pour SharePoint, OneDrive et Exchange
 
-> [!IMPORTANT]
-> De nouvelles améliorations sont en cours de déploiement pour les stratégies d’étiquetage automatique qui incluent des résultats de simulation plus rapides, la prise en charge d’un plus grand nombre de fichiers et de sites, ainsi que des notifications par e-mail. Pour plus d’informations, consultez [Améliorations récentes apportées aux stratégies d’étiquetage automatique](#recent-enhancements-for-auto-labeling-policies).
-
 N’oubliez pas de connaître les conditions préalables avant de configurer les stratégies d’attribution automatique d’étiquette.
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Conditions préalables pour les stratégies d’étiquetage automatique
@@ -231,9 +228,7 @@ Flux de travail pour une stratégie d’étiquetage automatique :
 
 1. Créer et configurer une stratégie d’étiquetage automatique.
 
-2. Exécutez la stratégie en mode de simulation, ce qui peut prendre 48 heures.
-    
-    Avec les [améliorations récentes](#recent-enhancements-for-auto-labeling-policies) en cours de déploiement, cette durée est réduite à 12 heures et la simulation terminée déclenche une notification par e-mail envoyée à l’utilisateur configuré pour recevoir les [alertes d’activité](alert-policies.md).
+2. Exécutez la stratégie en mode de simulation, ce qui peut prendre 12 heures. La simulation effectuée déclenche une notification par courrier qui est envoyée à l’utilisateur configuré pour recevoir les [alertes d’activité](alert-policies.md).
 
 3. Examinez les résultats et, si nécessaire, affinez votre stratégie. Réexécutez le mode de simulation et attendez sa fin.
 
@@ -270,7 +265,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
 5. Pour la page **Nommer votre stratégie d’étiquetage automatique** : donnez un nom unique et éventuellement une description pour vous aider à identifier l’étiquette, les emplacements et les conditions appliqués automatiquement qui identifient le contenu à étiqueter.
 
-6. Pour la page **Choisir les emplacements dans lesquels vous souhaitez appliquer l’étiquette** : sélectionner et spécifier les emplacements pour Exchange, les sites SharePoint et OneDrive. Ensuite, sélectionnez **Suivant**.
+6. Pour la page **Choisir les emplacements dans lesquels vous souhaitez appliquer l’étiquette** : sélectionner et spécifier les emplacements pour Exchange, SharePoint et OneDrive. Si vous ne souhaitez pas conserver la valeur par défaut **Tous** pour les emplacements de votre choix, sélectionnez le lien pour choisir des instances spécifiques. Ensuite, sélectionnez **Suivant**.
 
     ![Choisir la page emplacements auto-labelingwizard](../media/locations-auto-labeling-wizard.png)
     
@@ -382,7 +377,7 @@ Pour plus d’informations sur les applets de commande PowerShell qui prennent e
 
 ## <a name="recent-enhancements-for-auto-labeling-policies"></a>Améliorations récentes apportées aux stratégies d’étiquetage automatique
 
-Les améliorations récentes actuellement déployées pour les stratégies d’étiquetage automatique pour OneDrive et SharePoint sont les suivantes :
+Les améliorations récentes par rapport à la version précédente pour les stratégies d’étiquetage automatique pour OneDrive et SharePoint sont les suivantes :
 
 - Maximum de 100 stratégies d’étiquetage automatique par client au lieu de 10.
 
@@ -409,8 +404,6 @@ Les améliorations récentes actuellement déployées pour les stratégies d’�
 Lorsque votre client bénéficie des nouvelles améliorations, la notification suivante s’affiche sous l’onglet **Étiquetage automatique** :
 
 ![Bannière confirmant qu’un client dispose des nouvelles améliorations](../media/auto-labeling-updatedbanner.png)
-
-Si vous ne voyez pas cette notification, votre client n’a pas reçu les nouvelles améliorations, mais vérifiez à nouveau dans quelques jours.
 
 > [!NOTE]
 > Si vous aviez des stratégies d’étiquetage automatique qui étaient en mode simulation lorsque votre client a reçu les nouvelles améliorations, vous devez réexécuter la simulation. Si ce scénario vous concerne, vous êtes invité à sélectionner **Redémarrer la simulation** lorsque vous examinez la simulation. Si vous ne redémarrez pas la simulation, elle ne se terminera pas.

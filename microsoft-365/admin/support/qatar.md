@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 15acaf68cb72ec1b30ce4f56be72613eb03d03ac
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 519960d3b2a9c5c2e6f9e10755e3a94cd07fe97c8f0765414ba0d3d33856c4b4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297835"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873212"
 ---
 # <a name="contact-support-for-qatar"></a>Contacter le support pour le Qatar
 
@@ -39,10 +39,10 @@ Arabe : Sun-Thu 10h00 à 18h00
 
 Anglais : Mon-Fri 10h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
 Arabe : Sun-Thu 10h00 à 18h00
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Frais d’appel local applicables

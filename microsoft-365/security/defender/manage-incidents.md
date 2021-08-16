@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 87e20b8b44c42c1063155396c1ce1f98d10cd88391336734f28fe24db293a312
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae03aff64765647bd7a32b31fcc987b062c15173
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838741"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247110"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "53838741"
 
 La gestion des incidents est essentielle pour s’assurer que les menaces sont contenues et traitées.
 
-Vous gérez les incidents à partir **d’incidents & alertes** > incidents dans le lancement rapide du centre de sécurité Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
+Vous gérez les incidents à partir **d’incidents & alertes** > incidents sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident":::
 
@@ -52,7 +52,7 @@ Voici comment gérer vos incidents :
 - [Définir sa classification et sa détermination](#set-the-classification-and-determination)
 - [Ajouter des commentaires](#add-comments)
 
-Vous pouvez gérer les incidents à partir du volet Gérer **les incidents** pour un incident. Voici un exemple.
+Vous pouvez gérer les incidents à partir du **volet Gérer les incidents** pour un incident. Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Exemple du volet Gérer les incidents d’un incident":::
 
@@ -65,7 +65,7 @@ Dans les cas où vous souhaitez déplacer des alertes d’un incident à un autr
 
 ## <a name="edit-the-incident-name"></a>Modifier le nom de l’incident
 
-Microsoft 365 Defender attribue automatiquement un nom basé sur des attributs d’alerte tels que le nombre de points de terminaison affectés, d’utilisateurs affectés, de sources ou de catégories de détection. Cela vous permet de comprendre rapidement l’étendue de l’incident. Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
+Microsoft 365 Defender attribue automatiquement un nom basé sur les attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident. Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
 
 Vous pouvez modifier le nom de l’incident à partir du **champ Nom de l’incident** dans le volet Gérer **l’incident.**
 
@@ -106,7 +106,7 @@ S’il s’agissait d’une alerte réelle, vous devez également spécifier le 
 
 Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ** Commentaire. Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour les nouveaux incidents, commencez votre [enquête.](investigate-incidents.md)
 

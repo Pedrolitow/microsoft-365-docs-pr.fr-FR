@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment placer des conservations sur les dépositaires et leurs sources de données pour conserver le contenu pertinent pour Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5c5781d5dd2ce08c3b57695fa08720c1cc3ab38c6f41bceeb6f12a388232c70c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859802"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Dans certains cas, vous pouvez avoir un ensemble de dépositaires que vous avez 
 
 Pour afficher la stratégie de conservation des dépositaires :
 
-1. Dans le centre Microsoft 365 conformité, cliquez sur **eDiscovery > Advanced** pour afficher la liste des cas dans votre organisation.
+1. Dans la Centre de conformité Microsoft 365, cliquez **sur eDiscovery > Advanced** pour afficher la liste des cas dans votre organisation.
 
 2. Go to the **Sources** tab to add custodians within your case. Pour savoir comment ajouter et placer des dépositaires en conservation dans un Advanced eDiscovery, voir Ajouter des [dépositaires à un cas.](add-custodians-to-case.md) Si vous avez déjà ajouté des dépositaires et les avez placés en conservation, allez à l’étape 3.
 
@@ -54,7 +54,7 @@ Lorsque vous créez une attente, vous avez les options suivantes pour l’étend
 
 Pour créer une mise en attente non privative pour Advanced eDiscovery cas :
 
-1. Dans le centre Microsoft 365 conformité, cliquez sur **eDiscovery > Advanced** pour afficher la liste des cas dans votre organisation.
+1. Dans la Centre de conformité Microsoft 365, cliquez **sur eDiscovery > Advanced** pour afficher la liste des cas dans votre organisation.
   
 2. Cliquez **sur Ouvrir** en face du cas où vous souhaitez créer les conserves.
   
@@ -68,17 +68,17 @@ Pour créer une mise en attente non privative pour Advanced eDiscovery cas :
   
 7. Cliquez sur **Suivant**.
   
-8. Choisissez les emplacements de contenu que vous souhaitez placer en attente. Vous pouvez placer des boîtes aux lettres, des sites et des dossiers publics en attente.
+8. Choisissez les emplacements de contenu que vous souhaitez placer en attente. Vous pouvez mettre en attente des boîtes aux lettres, des sites et des dossiers publics.
 
-   1. **Exchange-** Cliquez sur Choisir les utilisateurs, les groupes ou les **équipes,** puis cliquez à nouveau sur Choisir des **utilisateurs,** des groupes ou des équipes pour spécifier les boîtes aux lettres à placer en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer les boîtes aux lettres des membres du groupe en conservation) à placer en conservation. Vous pouvez également placer en attente la boîte aux lettres associée d’un groupe Microsoft 365 ou d’une équipe Microsoft. Sélectionnez la case à cocher Utilisateur, Groupe, Équipe, Cliquez sur **Choisir,** puis cliquez sur **Terminé**.
+   1. **Exchange-** Cliquez sur Choisir les utilisateurs, les groupes ou les **équipes,** puis cliquez à nouveau sur Choisir des **utilisateurs,** des groupes ou des équipes pour spécifier les boîtes aux lettres à placer en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer les boîtes aux lettres des membres du groupe en conservation) à placer en conservation. Vous pouvez également placer la boîte aux lettres associée en attente pour un groupe Microsoft 365 ou Microsoft Team. Sélectionnez la case à cocher Utilisateur, Groupe, Équipe, Cliquez sur **Choisir,** puis cliquez sur **Terminé**.
  
       > [!NOTE]
-      > Lorsque vous cliquez sur Choisir des **utilisateurs,** des groupes ou des équipes pour spécifier les boîtes aux lettres à placer en attente, le soche de boîte aux lettres qui s’affiche est vide. Il s’agit d’une conception pour améliorer les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche.
+      > Lorsque vous cliquez **sur Choisir des utilisateurs,** des groupes ou des équipes pour spécifier les boîtes aux lettres à placer en attente, le soche de boîte aux lettres qui s’affiche est vide. Il s’agit d’une conception pour améliorer les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche.
 
-   1. **SharePoint sites** : cliquez sur Choisir des **sites,** puis cliquez à nouveau sur Choisir des **sites** pour spécifier SharePoint sites OneDrive Entreprise sites à placer en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Microsoft 365 ou une équipe Microsoft. Cliquez **sur Choisir,** puis sur **Terminé.**
+   1. **SharePoint sites** : cliquez sur Choisir des **sites,** puis cliquez à nouveau sur Choisir des **sites** pour spécifier SharePoint sites OneDrive Entreprise sites à placer en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Microsoft 365 ou Microsoft Team. Cliquez **sur Choisir,** puis sur **Terminé.**
 
       > [!NOTE]
-      > L’URL du compte d’OneDrive utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où l’UPN d’une personne est modifié, son URL OneDrive change également pour incorporer le nouveau nom d’upn. Si le compte OneDrive d’un utilisateur fait partie d’une mise en attente non privative et que son UPN est modifié, vous devez mettre à jour la mise en attente et pointer vers la nouvelle URL de OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
+      > L’URL du compte d’OneDrive utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où l’UPN d’une personne est modifié, son URL OneDrive change également pour incorporer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une mise en attente non privative et que son UPN est modifié, vous devez mettre à jour la mise en attente et pointer vers la nouvelle URL de OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
 
    1. **Exchange publics** : déplacez le bouton bascule vers la position Tout pour placer tous les dossiers publics de votre organisation Exchange Online en attente. Notez que vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le bouton bascule sur **Aucun** si vous ne souhaitez pas placer de mise en attente sur les dossiers publics.
 
@@ -106,7 +106,7 @@ Gardez les points suivants à l’esprit concernant les statistiques de la atten
   
 - Le nombre d’éléments en attente inclut également les éléments nonndex trouvés dans les emplacements de contenu. Notez que si vous créez une mise en attente basée sur une requête, tous les éléments nonndex dans les emplacements de contenu sont placés en attente. Cela inclut les éléments nonndex qui ne correspondent pas aux critères de recherche d’une attente basée sur une requête et les éléments nonndex qui peuvent se trouver en dehors d’une condition de plage de dates. Cela est différent de ce qui se produit lorsque vous exécutez une recherche de contenu, dans laquelle les éléments nonndex qui ne correspondent pas à la requête de recherche ou qui sont exclus par une condition de plage de dates ne sont pas inclus dans les résultats de la recherche. Pour plus d’informations sur les éléments non indexés, voir Éléments partiellement [indexés](partially-indexed-items-in-content-search.md)dans la recherche de contenu dans Office 365 . 
 
-- Vous pouvez obtenir les dernières statistiques de mise en attente en cliquant sur Mettre à jour les statistiques pour ré-exécuter une estimation de la recherche qui calcule le nombre actuel d’éléments en attente.
+- Vous pouvez obtenir les dernières statistiques de mise en attente en cliquant sur Mettre à jour les statistiques pour ré-exécuter une estimation de recherche qui calcule le nombre actuel d’éléments en attente.
 
 - Si nécessaire, cliquez sur Actualiser dans la barre d’outils pour mettre à jour les statistiques de mise en attente dans le volet d’informations.
 
@@ -118,7 +118,7 @@ Gardez les points suivants à l’esprit concernant les statistiques de la atten
 
 Microsoft Teams sont créés sur Office 365 groupes. Par conséquent, leur mise en attente Advanced eDiscovery est très similaire.
 
-- **Comment puis-je ma cartographier un Microsoft 365 groupes ou un site Microsoft Teams à un dépositaire ? Et qu’en est-il du placement d’une mise en attente non Microsoft 365 groupes et Microsoft Teams ?** Microsoft Teams sont créés sur Microsoft 365 groupes. Par conséquent, les placer en attente dans un cas eDiscovery est très similaire. Gardez les points suivants à l’esprit lorsque vous Microsoft 365 groupes et Microsoft Teams en attente.
+- **Comment puis-je ma cartographier un Microsoft 365 groupes ou un site Microsoft Teams supplémentaire à un dépositaire ? Et qu’en est-il du placement d’une mise en attente Microsoft 365 groupes et Microsoft Teams ?** Microsoft Teams sont créés sur Microsoft 365 groupes. Par conséquent, les placer en attente dans un cas eDiscovery est très similaire. Gardez les points suivants à l’esprit lorsque vous placez Microsoft 365 groupes et Microsoft Teams en attente.
   - Pour placer le contenu situé dans les groupes Microsoft 365 et Microsoft Teams en attente, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou à une équipe.
   
   - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’Microsoft 365 groupe ou Microsoft Team. Il s’agit d’un bon moyen d’obtenir l’URL du site associé à un groupe Microsoft 365 ou Microsoft Team. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Microsoft 365 nommé Senior Leadership Team :
@@ -137,7 +137,7 @@ Microsoft Teams sont créés sur Office 365 groupes. Par conséquent, leur mise 
 
  - Lorsque la recherche est sur la boîte aux lettres d’un utilisateur, aucun groupe Microsoft 365 ou Microsoft Team dont l’utilisateur est membre n’est pas recherché. De même, lorsque vous placez une Microsoft 365 groupe ou microsoft Team, seules la boîte aux lettres de groupe et le site de groupe sont placés en attente . Les boîtes aux lettres et OneDrive Entreprise sites de membres du groupe ne sont pas placés en conservation, sauf si vous les ajoutez explicitement en tant que dépositaires ou que vous placez leurs sources de données en conservation. Par conséquent, si vous avez besoin de placer un groupe Microsoft 365 ou Microsoft Team en conservation pour un dépositaire spécifique, envisagez de ma mappage du site de groupe et de la boîte aux lettres de groupe au dépositaire (voir Gestion des dépositaires dans Advanced eDiscovery). Si le groupe Microsoft 365 ou l’équipe Microsoft n’est pas attribué à un seul dépositaire, envisagez d’ajouter la source à une conservation non-privative. 
  
- - Pour obtenir la liste des membres d’un groupe Microsoft 365 ou d’une équipe Microsoft, vous pouvez afficher les propriétés sur la page Groupes d’accueil > dans le Centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
+ - Pour obtenir la liste des membres d’un groupe Microsoft 365 ou d’une équipe Microsoft, vous pouvez afficher les propriétés sur la page Groupes d'> d’accueil dans la Centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2a62756522ad82d04c72995508ca8ada1e575f94c9bc9940069d59057f7de63f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82931431b2c299a6ca367fa682218e5e3a461af7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897678"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247156"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Passer en revue Microsoft Defender pour les exigences Office 365'architecture et les concepts clés
 
@@ -49,8 +49,8 @@ Le tableau suivant décrit cette illustration.
 |Appel  |Description  |
 |---------|---------|
 |1     | Le serveur hôte de l’expéditeur externe effectue généralement une recherche DNS publique pour un enregistrement MX qui fournit le serveur cible pour relayer le message.  Cette référence peut être Exchange Online (EXO) directement ou une passerelle SMTP qui a été configurée pour être relayée par rapport à EXO.  |
-|2     | Exchange Online Protection négocier et valider la connexion entrante et inspecte les en-têtes et le contenu du message pour déterminer les stratégies, balises ou traitements supplémentaires requis.  |
-|3     | Exchange Online s’intègre à Microsoft Defender pour Office 365 offrir une protection, une atténuation et une correction plus avancées contre les menaces. |
+|2      | Exchange Online Protection négocier et valider la connexion entrante et inspecte les en-têtes et le contenu du message pour déterminer les stratégies, balises ou traitements supplémentaires requis.  |
+|3      | Exchange Online s’intègre à Microsoft Defender pour Office 365 offrir une protection, une atténuation et une correction plus avancées contre les menaces. |
 |4      | Un message qui n’est pas malveillant, bloqué ou mis en quarantaine est traitée et envoyée au destinataire dans EXO, où les préférences de l’utilisateur relatives au courrier indésirable, aux règles de boîte aux lettres ou à d’autres paramètres sont évaluées et déclenchées. |
 |5      | L’intégration avec Active Directory local peut être activée à l’aide d’Azure AD Connecter pour synchroniser et mettre en service des objets et des comptes à messagerie dans Azure Active Directory et, en fin de compte, Exchange Online. |
 |6      | Lors de l’intégration d’un environnement local, il est vivement recommandé d’utiliser un serveur Exchange pour la gestion et l’administration des attributs, paramètres et configurations liés à la messagerie pris en charge |
@@ -93,7 +93,7 @@ Vous pouvez intégrer Microsoft Defender pour Office 365 Azure Sentinel pour ana
 
 Microsoft Defender pour Office 365 peut également être intégré à d’autres solutions SIEM (Security Information and Event Management) à l’aide de [l’API Office 365 Gestion des activités.](/office/office-365-management-api/office-365-management-activity-api-reference)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Étape 2 sur 3 : activer [l’environnement d’évaluation Microsoft Defender pour Office 365](eval-defender-office-365-enable-eval.md)
 

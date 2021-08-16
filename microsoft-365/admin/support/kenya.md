@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7df4e9f2a9827289ab0bd85c9696e03aac9e3bb3
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f629d399846ce9e241c088b5f1791faf54ab0cbe9b4ca7072a5b7fc73b5f54b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873246"
 ---
 # <a name="contact-support-for-kenya"></a>Contacter le support pour le Kenya
 
@@ -35,8 +35,8 @@ Appuyer sur 1 pour Microsoft 365
 
 Anglais : Mon-Fri 10h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Frais d’appel local applicables

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 87c4ca3eddbc7e67f6fb9918bfc343f1ba9a3c0f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: cb71f31cb047d7310b9534cd75350b25ebc7e7b865f403b7fcf22fa01ffe1718
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889026"
 ---
 # <a name="remove-app-restriction-api"></a>SUPPRIMER l’API de restriction d’application
 
@@ -47,6 +47,12 @@ Activez l’exécution de n’importe quelle application sur l’appareil.
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+> [!IMPORTANT]
+>
+> - L’isolation complète est disponible pour les appareils Windows 10, version 1703.
+> - L’isolation sélective est disponible pour les appareils Windows 10, version 1709 ou ultérieure.
+> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionnée pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -86,7 +92,7 @@ Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 201 : code de réponse créé et action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

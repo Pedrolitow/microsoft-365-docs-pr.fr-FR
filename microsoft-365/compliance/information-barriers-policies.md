@@ -15,21 +15,21 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08a0b3722bad18b2823b0ba0e5c998d570f3654e
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8b29c2f5256c991e327e8962f02a96a294a6bec6
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362581"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246562"
 ---
 # <a name="define-information-barrier-policies"></a>Définir des stratégies d’obstacle aux informations
 
-Avec les obstacles à l’information, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer entre eux, ou autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies d’obstacle à l’information peuvent aider votre organisation à maintenir la conformité avec les normes et réglementations pertinentes du secteur et à éviter les conflits d’intérêts potentiels. Pour plus d’informations, voir [Obstacles à l’information.](information-barriers.md)
+Avec les obstacles à l’information, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer entre eux, ou autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies d’obstacle à l’information peuvent aider votre organisation à maintenir la conformité avec les normes et réglementations pertinentes du secteur et à éviter les conflits d’intérêts potentiels. Pour en savoir plus, voir [Obstacles à l’information.](information-barriers.md)
 
 Cet article explique comment planifier, définir, implémenter et gérer des stratégies de obstacle à l’information. Plusieurs étapes sont impliquées et le flux de travail est divisé en plusieurs parties. Veillez à lire les conditions [préalables](#prerequisites) et l’ensemble du processus avant de commencer à définir (ou modifier) des stratégies d’obstacle à l’information.
 
 > [!TIP]
-> Cet article inclut un exemple [de scénario](#example-contosos-departments-segments-and-policies) et un Excel [téléchargeable](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) pour vous aider à planifier et définir vos stratégies d’obstacle à l’information.
+> Cet article inclut un exemple [de scénario pour](#example-contosos-departments-segments-and-policies) vous aider à planifier et définir vos stratégies de obstacle à l’information.
 
 ## <a name="concepts-of-information-barrier-policies"></a>Concepts des stratégies de cloisonnement de l’information
 
@@ -46,14 +46,14 @@ Lorsque vous définissez des stratégies pour les obstacles à l’information, 
 
 | Phase | Ce qui est impliqué |
 |:--------|:------------------|
-| [S’assurer que les conditions préalables sont remplies](#prerequisites) | - Vérifier que vous avez les [licences et autorisations requises](information-barriers.md#required-licenses-and-permissions)<br/>- Vérifier que votre annuaire inclut des données pour segmenter les utilisateurs<br/>- Activer la recherche d’annuaire étendue pour Microsoft Teams<br/>- Assurez-vous que la journalisation d’audit est allumée<br/>- Assurez-vous qu’aucune stratégie Exchange de carnet d’adresses n’est en place<br/>- Utiliser PowerShell (des exemples sont fournis)<br/>- Fournir le consentement de l’administrateur Microsoft Teams (les étapes sont incluses) |
+| [S’assurer que les conditions préalables sont remplies](#prerequisites) | - Vérifier que vous avez les [licences et autorisations requises](information-barriers.md#required-licenses-and-permissions)<br/>- Vérifier que votre annuaire inclut des données pour segmenter les utilisateurs<br/>- Activer la recherche dans l’annuaire dans l’étendue Microsoft Teams<br/>- Assurez-vous que la journalisation d’audit est allumée<br/>- Assurez-vous qu’aucune stratégie Exchange de carnet d’adresses n’est en place<br/>- Utiliser PowerShell (des exemples sont fournis)<br/>- Fournir le consentement de l’administrateur Microsoft Teams (les étapes sont incluses) |
 | [Partie 1 : segmenter les utilisateurs de votre organisation](#part-1-segment-users) | - Déterminer les stratégies nécessaires<br/>- Établir une liste de segments à définir<br/>- Identifier les attributs à utiliser<br/>- Définir des segments en termes de filtres de stratégie |
 | [Partie 2 : définir des stratégies de obstacle aux informations](#part-2-define-information-barrier-policies) | - Définir vos stratégies (ne s’appliquent pas encore)<br/>- Choisir parmi deux types (bloquer ou autoriser) |
-| [Partie 3 : appliquer des stratégies de obstacle à l’information](#part-3-apply-information-barrier-policies) | - Définir des stratégies sur l’état actif<br/>- Exécuter l’application de stratégie<br/>- Afficher l’état de la stratégie |
+| [Partie 3 : appliquer des stratégies de obstacle aux informations](#part-3-apply-information-barrier-policies) | - Définir des stratégies sur l’état actif<br/>- Exécuter l’application de stratégie<br/>- Afficher l’état de la stratégie |
 | (Selon les besoins) [Modifier un segment ou une stratégie](information-barriers-edit-segments-policies.md) | - Modifier un segment<br/>- Modifier ou supprimer une stratégie<br/>- Réexécuter l’application de stratégie<br/>- Afficher l’état de la stratégie |
 | (Selon les besoins) [Résolution des problèmes](information-barriers-troubleshooting.md)| - Prendre des mesures lorsque les choses ne fonctionnent pas comme prévu|
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 En plus des [licences et autorisations requises,](information-barriers.md#required-licenses-and-permissions)assurez-vous que les conditions suivantes sont remplies :
 
@@ -62,19 +62,19 @@ En plus des [licences et autorisations requises,](information-barriers.md#requir
   - [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurer les propriétés des comptes d'utilisateur avec Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- Recherche dans l’annuaire - Avant de définir la première stratégie d’obstacle aux informations de votre [organisation,](/MicrosoftTeams/teams-scoped-directory-search)vous devez activer la recherche dans l’annuaire Microsoft Teams . Patientez au moins 24 heures après l’activation de la recherche dans l’annuaire dans l’étendue avant de configurer ou de définir des stratégies d’obstacle à l’information.
+- Recherche dans l’annuaire dans l’étendue : avant de définir la première stratégie d’obstacle aux informations de votre [organisation,](/MicrosoftTeams/teams-scoped-directory-search)vous devez activer la recherche dans l’annuaire Microsoft Teams . Patientez au moins 24 heures après l’activation de la recherche dans l’annuaire dans l’étendue avant de configurer ou de définir des stratégies d’obstacle à l’information.
 
 - Licence EXO : les stratégies DE LAS fonctionnent uniquement si une licence EXO a été attribuée aux utilisateurs cibles.
 
 - Journalisation d’audit : pour rechercher l’état d’une application de stratégie, l’enregistrement d’audit doit être allumé. Nous vous recommandons d’activer l’audit avant de commencer à définir des segments ou des stratégies. Pour plus d’informations, voir Activer ou désactiver la [recherche dans le journal d’audit.](turn-audit-log-search-on-or-off.md)
 
-- Aucune stratégie de carnet d’adresses - Avant de définir et d’appliquer des stratégies de barrières aux informations, assurez-vous qu’Exchange stratégies de carnet d’adresses ne sont pas en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous avez de telles stratégies, veillez d’abord [à supprimer vos stratégies de carnet d’adresses.](/exchange/address-books/address-book-policies/remove-an-address-book-policy) Une fois que les stratégies d’obstacle aux informations  sont activées et que le carnet [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) d’adresses hiérarchique est activé, tous les utilisateurs qui ne sont pas inclus dans un segment de barrières de l’information voient le carnet d’adresses hiérarchique dans Exchange en ligne.
+- Aucune stratégie de carnet d’adresses - Avant de définir et d’appliquer des stratégies de barrières aux informations, assurez-vous qu’Exchange stratégies de carnet d’adresses ne sont pas en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous avez de telles stratégies, veillez d’abord à supprimer [vos stratégies de carnet d’adresses.](/exchange/address-books/address-book-policies/remove-an-address-book-policy) Une fois que les stratégies d’obstacle aux informations  sont activées et que le carnet [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) d’adresses hiérarchique est activé, tous les utilisateurs qui ne sont pas inclus dans un segment de barrières de l’information voient le carnet d’adresses hiérarchique dans Exchange en ligne.
 
 - PowerShell : actuellement, les stratégies d’obstacle aux informations sont définies et gérées dans le Centre de sécurité Office 365 conformité & à l’aide des cmdlets PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et paramètres PowerShell. Vous aurez également besoin du module Azure PowerShell’équipe.
   - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell)
   - [Installer le module Azure PowerShell’installation](/powershell/azure/install-az-ps)
 
-- Consentement de l’administrateur pour les obstacles à l’information dans Microsoft Teams : lorsque vos stratégies DNS sont en place, ils peuvent supprimer les utilisateurs de conformité non-PDF des groupes (c’est-à-dire les canaux Teams, qui sont basés sur des groupes). Cette configuration permet de s’assurer que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies d’obstacle aux informations de fonctionner comme prévu dans Microsoft Teams.
+- Consentement de l’administrateur pour les obstacles à l’information dans Microsoft Teams : lorsque vos stratégies DE DISTRIBUTION sont en place, ils peuvent supprimer les utilisateurs de conformité non-TOA des groupes (c’est-à-dire les canaux Teams, qui sont basés sur des groupes). Cette configuration permet de s’assurer que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies d’obstacle aux informations de fonctionner comme prévu dans Microsoft Teams.
 
    1. Conditions préalables : installer les Azure PowerShell à partir [d’Install Azure PowerShell](/powershell/azure/install-az-ps).
 
@@ -98,11 +98,11 @@ En plus des [licences et autorisations requises,](information-barriers.md#requir
 Lorsque toutes les conditions préalables sont remplies, passer à la section suivante.
 
 > [!TIP]
-> Pour vous aider à préparer votre plan, un exemple de scénario est inclus dans cet article. [Consultez les services, segments et stratégies de Contoso.](#example-contosos-departments-segments-and-policies)<p>En outre, un Excel téléchargeable est disponible pour vous aider à planifier et définir vos segments et stratégies (et à créer vos cmdlets PowerShell). [Obtenir le workbook](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx).
+> Pour vous aider à préparer votre plan, un exemple de scénario est inclus dans cet article. [Consultez les services, segments et stratégies de Contoso.](#example-contosos-departments-segments-and-policies)
 
 ## <a name="part-1-segment-users"></a>Partie 1 : segmenter les utilisateurs
 
-Au cours de cette phase, vous déterminez les stratégies d’obstacle à l’information qui sont nécessaires, vous devez établir une liste de segments à définir, puis définir vos segments.
+Au cours de cette phase, vous déterminez les stratégies d’obstacle aux informations qui sont nécessaires, vous devez établir une liste de segments à définir, puis définir vos segments.
 
 ### <a name="determine-what-policies-are-needed"></a>Déterminer les stratégies nécessaires
 
@@ -115,7 +115,7 @@ Lorsque vous avez votre liste initiale de groupes et de stratégies, continuez �
 
 ### <a name="identify-segments"></a>Identifier les segments
 
-En plus de votre liste initiale de stratégies, faites une liste de segments pour votre organisation. Les utilisateurs qui seront inclus dans les stratégies d’obstacle à l’information doivent appartenir à un segment. Planifiez soigneusement vos segments en tant qu’utilisateur ne peut se trouver que dans un seul segment. Chaque segment ne peut avoir qu’une seule stratégie d’obstacle aux informations appliquée.
+En plus de votre liste initiale de stratégies, faites une liste de segments pour votre organisation. Les utilisateurs qui seront inclus dans les stratégies d’obstacle à l’information doivent appartenir à un segment. Planifiez soigneusement vos segments en tant qu’utilisateur ne peut se trouver que dans un seul segment. Chaque segment ne peut avoir qu’une seule stratégie de obstacle aux informations appliquée.
 
 > [!IMPORTANT]
 > Un utilisateur ne peut se trouver que dans un seul segment.
@@ -156,7 +156,7 @@ Vous pouvez également définir des segments à l’aide d’un paramètre « no
 
 | Syntaxe | Exemple |
 |:---------|:----------|
-| `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | Dans cet exemple, nous avons défini un segment appelé *NotSales* qui inclut toutes les personnes qui ne sont pas dans *sales*. La **partie -ne** de la cmdlet fait référence à « n’est pas égal à ». |
+| `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | Dans cet exemple, nous avons défini un segment appelé *NotSales* qui inclut tout le monde qui n’est pas dans *sales*. La **partie -ne** de la cmdlet fait référence à « n’est pas égal à ». |
 
 En plus de définir des segments à l’aide de « equals » ou « not equals », vous pouvez définir un segment à l’aide des paramètres « equals » et « not equals ». Vous pouvez également définir des filtres de groupe complexes à l’aide d’opérateurs *logiques AND* *et OR.*
 
@@ -258,7 +258,7 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateurs, de
 |:---------------|:----------|
 | Comptes d’utilisateur | Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres Identity. <p> Syntaxe : `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Vous pouvez utiliser n’importe quelle valeur qui identifie chaque utilisateur de manière unique, telle que le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse e-mail ou le GUID. <p> Exemple : `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan* et *alexw* pour *Alex*. <p> (Vous pouvez également utiliser cette cmdlet pour un seul utilisateur : `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p> Cette cmdlet renvoie des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de obstacle aux informations appliquées.|
 | Segments | Utilisez la cmdlet **Get-OrganizationSegment.**<p> Syntaxe : `Get-OrganizationSegment` <p> Cette cmdlet affiche la liste de tous les segments définis pour votre organisation. |
-| Stratégies de obstacle à l’information | Utilisez la cmdlet **Get-InformationBarrierPolicy.** <p> Syntaxe : `Get-InformationBarrierPolicy` <p> Cette cmdlet affiche la liste des stratégies d’obstacle aux informations qui ont été définies et leur état. |
+| Stratégies d’obstacle aux informations | Utilisez la cmdlet **Get-InformationBarrierPolicy.** <p> Syntaxe : `Get-InformationBarrierPolicy` <p> Cette cmdlet affiche la liste des stratégies d’obstacle aux informations qui ont été définies et leur état. |
 | Application de stratégie de obstacle à l’information la plus récente | Utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus.** <p> Syntaxe : `Get-InformationBarrierPoliciesApplicationStatus`<p> Cette cmdlet affiche des informations sur la fin, l’échec ou l’avancement de l’application de stratégie. |
 | Toutes les applications de stratégie de obstacle à l’information|Utiliser `Get-InformationBarrierPoliciesApplicationStatus -All`<p> Cette cmdlet affiche des informations sur la fin, l’échec ou l’avancement de l’application de stratégie.|
 
@@ -268,10 +268,10 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateurs, de
 
 Des ressources sont disponibles pour vous aider à gérer vos stratégies de obstacle aux informations.
 
-- En cas de problème avec les obstacles à l’information, voir [Résolution des problèmes d’obstacles à l’information.](information-barriers-troubleshooting.md)
+- En cas de problème avec les obstacles à l’information, voir [Résolution des problèmes d’obstacles aux informations.](information-barriers-troubleshooting.md)
 - Pour arrêter l’application des stratégies, voir [Arrêter une application de stratégie.](information-barriers-edit-segments-policies.md#stop-a-policy-application)
 - Pour supprimer une stratégie d’obstacle à l’information, voir [Supprimer une stratégie.](information-barriers-edit-segments-policies.md#remove-a-policy)
-- Pour apporter des modifications à des segments ou des stratégies, voir [Modifier (ou supprimer) des stratégies d’obstacle aux informations.](information-barriers-edit-segments-policies.md)
+- Pour apporter des modifications à des segments ou des stratégies, voir [Modifier (ou supprimer) les stratégies d’obstacle à l’information.](information-barriers-edit-segments-policies.md)
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Exemple : services, segments et stratégies de Contoso
 
@@ -287,9 +287,9 @@ Contoso compte cinq départements : Ressources Humaines, Ventes, Marketing, Rec
 | Ventes | RH, Marketing, Fabrication | Recherche |
 | Marketing | Tout le monde | (aucune restriction) |
 | Recherche | RH, Marketing, Fabrication | Ventes |
-| Fabrication | RH, Marketing | Toute personne autre que rh ou marketing |
+| Production | RH, Marketing | Toute personne autre que rh ou marketing |
 
-Pour cette structure, le plan de Contoso inclut trois stratégies de obstacle à l’information :
+Pour cette structure, le plan de Contoso inclut trois stratégies d’obstacle à l’information :
 
 1. Une stratégie conçue pour empêcher les ventes de communiquer avec la recherche (et une autre stratégie pour empêcher la recherche de communiquer avec les ventes).
 
@@ -301,7 +301,7 @@ Pour ce scénario, il n’est pas nécessaire de définir des stratégies pour l
 
 Contoso utilisera l’attribut Department dans Azure Active Directory pour définir des segments, comme suit :
 
-| Service | Définition de segment |
+| Département | Définition de segment |
 |:-------------|:---------------------|
 | RH | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` |
 | Ventes | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"` |
@@ -317,8 +317,8 @@ Contoso définit trois stratégies, comme décrit dans le tableau suivant :
 
 | Stratégie | Définition de la stratégie |
 |:---------|:--------------------|
-| **Stratégie 1 : empêcher le département des Ventes de communiquer avec la Recherche** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, la stratégie de cloisonnement de l’information est nommée *Sales-Research*. Lorsque cette stratégie est active et appliquée, elle empêche les utilisateurs du segment Ventes de communiquer avec les utilisateurs du segment Recherche. Cette stratégie est une stratégie à sens seul . Cela n’empêche pas la recherche de communiquer avec les ventes. Pour cela, la stratégie 2 est nécessaire. |
-| **Stratégie 2 : empêcher la Recherche de communiquer avec le département des Ventes** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> Dans cet exemple, la stratégie de cloisonnement de l’information est nommée *Research-Sales*. Lorsque cette stratégie est active et appliquée, elle empêche les utilisateurs du segment Recherche de communiquer avec les utilisateurs du segment Ventes. |
+| **Stratégie 1 : empêcher le département des Ventes de communiquer avec la Recherche** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, la stratégie de cloisonnement de l’information est nommée *Sales-Research*. Lorsque cette stratégie est active et appliquée, elle empêche les utilisateurs du segment Ventes de communiquer avec les utilisateurs du segment Recherche. Cette stratégie est une stratégie à sens seul . Cela n’empêche pas la recherche de communiquer avec les ventes. Pour cela, la stratégie 2 est nécessaire. |
+| **Stratégie 2 : empêcher la Recherche de communiquer avec le département des Ventes** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> Dans cet exemple, la stratégie de cloisonnement de l’information est nommée *Research-Sales*. Lorsque cette stratégie est active et appliquée, elle empêche les utilisateurs du segment Recherche de communiquer avec les utilisateurs du segment Ventes. |
 | **Stratégie 3 : autoriser la fabrication à communiquer uniquement avec les ressources humaines et le marketing** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> Dans ce cas, la stratégie de cloisonnement de l’information est nommée *Manufacturing-HRMarketing*. Lorsque cette stratégie est active et appliquée, la Production ne peut communiquer qu’avec les Ressources Humaines et le Marketing. Les ressources humaines et le marketing ne sont pas limités à communiquer avec d’autres segments. |
 
 Lorsque des segments et des stratégies sont définis, Contoso applique les stratégies en exécutant l’cmdlet **Start-InformationBarrierPoliciesApplication.**

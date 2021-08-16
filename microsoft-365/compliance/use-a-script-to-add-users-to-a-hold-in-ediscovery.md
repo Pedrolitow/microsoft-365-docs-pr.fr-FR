@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & OneDrive Entreprise sites à une nouvelle mise en attente associée à un cas eDiscovery dans le centre Microsoft 365 conformité.
-ms.openlocfilehash: d6e6ff1ca053fd8c729054490e78ef42dc64e829
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & OneDrive Entreprise sites à une nouvelle boîte aux lettres associée à un cas eDiscovery dans le Centre de conformité Microsoft 365.
+ms.openlocfilehash: 7f1b5f9d3b8106ca899079d22fd4a46a8270771470be5a288ef5d1f77f1a6cce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859766"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utiliser un script pour ajouter des utilisateurs à une attente dans un cas core eDiscovery
 
@@ -91,7 +91,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
 
 - **Requête de recherche pour une attente basée sur une requête :** Vous pouvez créer une mise en attente basée sur une requête afin que seul le contenu qui répond aux critères de recherche spécifiés soit mis en attente. Pour placer tout le contenu en attente, appuyez simplement sur **Entrée** lorsque vous êtes invité à effectuer une requête de recherche.
 
-- **En tenez-vous ou non en attente :** Vous pouvez laisser le script activer la mise en attente après sa création ou le script peut créer la mise en attente sans l’activer. Si le script n’est pas en attente, vous pouvez l’activer ultérieurement dans le Centre de sécurité & conformité ou en exécutant les commandes PowerShell suivantes :
+- **En 2013, vous tenez ou non en attente :** Vous pouvez laisser le script activer la mise en attente après sa création ou le script peut créer la mise en attente sans l’activer. Si le script n’est pas en attente, vous pouvez l’activer ultérieurement dans le Centre de sécurité & conformité ou en exécutant les commandes PowerShell suivantes :
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true

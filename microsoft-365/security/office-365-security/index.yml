@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 04/13/2021
   localization_priority: Priority
-  ms.openlocfilehash: b379b42ae3c01c8359003407f3fb58834a8c074e
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: 12af1b9edaec084be3b4ce3a39ae27190dd6f73d6fe289fff8bd42e8eda00f9e
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52623564"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53873342"
 landingContent:
 - title: Defender for Office 365 & Exchange Online Protection
   linkLists:
@@ -68,7 +68,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Configurer votre client Microsoft 365 pour une sécurité accrue
+    - text: Configurer votre locataire Microsoft 365 pour renforcer la sécurité
       url: tenant-wide-setup-for-increased-security.md
     - text: Analyseur de configuration dans EOP et Defender pour Office 365
       url: configuration-analyzer-for-security-policies.md

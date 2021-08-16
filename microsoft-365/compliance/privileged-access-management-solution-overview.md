@@ -1,6 +1,6 @@
 ---
 title: Gestion des accès privilégiés dans Microsoft 365
-description: Découvrez comment configurer les fonctionnalités de risque internes au sein Microsoft 365.
+description: Découvrez comment configurer les fonctionnalités de risque internes dans Microsoft 365.
 keywords: Microsoft 365, risques internes, conformité
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: a5cd9d62670b35f7093a3d38cf9e499df407de97
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 60fdb02da960d10b875fcd064c665ecd615ae04c0093f0f90f40ae77e4028f50
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871612"
 ---
 # <a name="privileged-access-management-in-microsoft-365"></a>Gestion des accès privilégiés dans Microsoft 365
 

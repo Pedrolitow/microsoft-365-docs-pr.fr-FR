@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les balises intelligentes vous permet d’appliquer les fonctionnalités d’apprentissage automatique lors de l’examen du contenu dans Advanced eDiscovery cas. Utilisez des groupes de balises intelligentes pour afficher les résultats des modèles de détection d’apprentissage automatique, tels que le modèle de privilège client-avocat.
-ms.openlocfilehash: 3d3852a13410a3aa57932e19031cc5d00ce52a96
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4b793b53001a9d03e53d9aadac1bd39d2d6c98d8ab498d91be12d9a6886e185b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859778"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Configurer des balises intelligentes dans Advanced eDiscovery
 
@@ -48,4 +48,4 @@ Les fonctionnalités d’apprentissage automatique (ML) dans Advanced eDiscovery
 
 ## <a name="how-to-use-smart-tags"></a>Comment utiliser des balises intelligentes
 
-Lors de la révision d’un document, les résultats du modèle s’affichent à côté de la balise enfant appropriée. Par exemple, si vous avez un groupe de balises intelligentes pour la détection des privilèges client-avocat et que vous examinez un document potentiellement privilégié, la raison de cette conclusion s’affiche à côté de la balise appropriée. Il est important de noter que la balise n’est pas appliquée automatiquement au document. Le réviseur prend la décision de baliser le document.
+Lors de la révision d’un document, les résultats du modèle s’affichent à côté de la balise enfant appropriée. Par exemple, si vous avez un groupe de balises intelligentes pour la détection des privilèges client-avocat et que vous examinez un document potentiellement privilégié, la raison de cette conclusion s’affiche à côté de la balise appropriée. Il est important de noter que la balise n’est pas appliquée automatiquement au document. Le réviseur décide de la façon de baliser le document.

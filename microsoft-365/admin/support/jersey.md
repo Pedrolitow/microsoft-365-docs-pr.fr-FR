@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e5a5fbe05515f86869b7d14e6e4860e5e2c641d0
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 9ea3bc236136d7dde8c6b94f7ba109de47f2dac3cfff906a8475f4f675592f6e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298567"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873258"
 ---
 # <a name="contact-support-for-jersey"></a>Contacter le support technique pour Jersey
 
@@ -31,8 +31,8 @@ ms.locfileid: "52298567"
 
 Anglais : Mon-Fri 10h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

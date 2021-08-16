@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4180b57ac053fffe3ea1b7ac584799c65c94ea95
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2c54234b2eb655cc9f0c032b7085ac387d0dc2a85e141ea1bd53a49b8419ed4e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648938"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889198"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités
 
@@ -32,14 +32,14 @@ ms.locfileid: "53648938"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Une vulnérabilité « zero-day » est une vulnérabilité publiquement divulguée pour laquelle aucune mise à jour de sécurité ou correctifs officiels n’a été publié. Les vulnérabilités du jour zéro ont souvent des niveaux de gravité élevés et sont activement exploitées.
 
-Les menaces et gestion des vulnérabilités afficheront uniquement les vulnérabilités zero-day dont il dispose d’informations.
+Les menaces et gestion des vulnérabilités afficheront uniquement les vulnérabilités zero-day dont ils disposent d’informations.
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>Trouver des informations sur les vulnérabilités du jour zéro
 
@@ -82,7 +82,7 @@ Recherchez une balise « zero-day » pour chaque logiciel affecté par la vulné
 
 ### <a name="security-recommendations-page"></a>Page Recommandations en matière de sécurité
 
-Affichez des suggestions claires sur les options de correction et d’atténuation, y compris les solutions de contournement si elles existent. Filtrez par balise « zero day » pour voir uniquement les recommandations de sécurité concernant les vulnérabilités zero-day.
+Afficher des suggestions claires sur les options de correction et d’atténuation, y compris les solutions de contournement si elles existent. Filtrez par balise « zero day » pour voir uniquement les recommandations de sécurité concernant les vulnérabilités zero-day.
 
 S’il existe un logiciel avec une vulnérabilité zéro jour et des vulnérabilités supplémentaires à résoudre, vous recevrez une recommandation sur toutes les vulnérabilités.
 

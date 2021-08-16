@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c37ff8a7cc364a3633ced5439f03df0bfba3dcaa
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 700c24b35bb1915839b023139927a02fc6680f34eecdabbac1c60129ba0969ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298468"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873224"
 ---
 # <a name="contact-support-for-kosovo"></a>Contacter le support technique pour Le Monde
 
@@ -31,8 +31,8 @@ ms.locfileid: "52298468"
 
 Anglais : Mon-Fri 11:00-19:00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

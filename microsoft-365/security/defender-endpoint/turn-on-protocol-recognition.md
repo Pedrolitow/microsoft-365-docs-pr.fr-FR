@@ -16,18 +16,18 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 890303a15618a0318db0421c9c80f270583e19bf
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 1b5e85e61ce9335e730c7b8b5bc3406c1b9d40e8be2b591434e7b06661444238
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889065"
 ---
 # <a name="turn-on-protocol-recognition"></a>Activer la reconnaissance de protocole 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -35,11 +35,11 @@ Ce paramètre de stratégie vous permet de configurer la reconnaissance de proto
 
 ## <a name="use-group-policy-to-configure-protocol-recognition"></a>Utiliser une stratégie de groupe pour configurer la reconnaissance de protocole
 
-1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
+1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
 2. Go to **Computer Configuration**  >  **Administrative Templates** Windows  >  **Components**  >  **Antivirus Microsoft Defender** Network  >  **Inspection System**. 
 
-3. Sélectionnez **la reconnaissance de protocole.** Par défaut, cette stratégie est activée. Si la configuration **n’est pas configurée,** le retrait de définition est activé. 
+3. Sélectionnez **la reconnaissance de protocole.** Par défaut, cette stratégie est activée. Si la définition **n’est pas configurée,** le retrait de définition est activé. 
 
 4. Pour modifier la stratégie, sélectionnez le lien **modifier le paramètre de stratégie.**
 
@@ -52,7 +52,7 @@ Ce paramètre de stratégie vous permet de configurer la reconnaissance de proto
   
 ## <a name="related-articles"></a>Articles connexes
 
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
  
 - [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 

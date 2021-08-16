@@ -1,5 +1,5 @@
 ---
-title: Exporter des documents d’un jeu à réviser
+title: Documents d'exportation provenant d'un ensemble d'examens
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment sélectionner et exporter du contenu à partir d’un Advanced eDiscovery de révision pour les présentations ou les avis externes.
+description: Découvrez comment sélectionner et exporter du contenu à partir d’un ensemble Advanced eDiscovery révision pour les présentations ou les avis externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ceb735b4ebce5ef26eb7e7216e1e0f81897c7c0cfbdbb5982b632e6f355e442a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ec92c432d693a46151cd92e9d65e5b6fc9c2734
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905802"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246581"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exporter des documents à partir d’un groupe de révision dans Advanced eDiscovery
 
@@ -77,6 +77,8 @@ Utilisez les options suivantes pour configurer l’exportation. Toutes les optio
   
   - Remplacez les natifs rédigés par des fichiers PDF convertis : si des fichiers PDF rédigés sont générés au cours de la révision, ces fichiers peuvent être exportés. Vous pouvez choisir d’exporter uniquement les fichiers natifs qui ont été rédigés (en ne sélectionnant pas cette option) ou vous pouvez sélectionner cette option pour exporter les fichiers PDF qui contiennent les actions.
 
+  - Fichiers PDF de conversation au lieu de messages de conversation individuels : cochez cette case pour exporter les conversations dans un fichier PDF. Tous les messages de conversation de la même conversation sont exportés dans le même fichier PDF. Si vous ne cochez pas cette case, chaque message unique d’une conversation est exporté en tant qu’élément autonome. Le fichier est exporté au même format que dans la boîte aux lettres. Pour une conversation spécifique, vous recevez plusieurs fichiers .msg.
+
 Les sections suivantes décrivent la structure des dossiers pour les fichiers libres et les options de structure de répertoire condensé. Les exportations sont partitionées dans des fichiers ZIP avec une taille maximale de contenu non compressé de 75 Go. Si la taille de l’exportation est inférieure à 75 Go, l’exportation se compose d’un fichier récapitulatif et d’un fichier ZIP unique. Pour les exportations dont la taille est supérieure à 75 Go de données non compressées, plusieurs fichiers ZIP sont créés. Une fois téléchargés, les fichiers ZIP peuvent être décompressés dans un seul emplacement pour recréer l’exportation complète.
 
 ### <a name="loose-files-and-pst-export-structure"></a>Fichiers libres et structure d’exportation PST
@@ -105,7 +107,7 @@ Si vous sélectionnez cette option d’exportation, le contenu exporté est orga
   
   - Avertissements et erreurs x de z.csv : ce fichier inclut des informations sur les erreurs rencontrées lors de la tentative d’exportation à partir du jeu à réviser.
 
-  - NativeFiles : ce dossier contient tous les fichiers natifs qui ont été exportés. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les natifs rédigés par des fichiers *pdf convertis.*
+  - NativeFiles : ce dossier contient tous les fichiers natifs qui ont été exportés. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les natifs rédigés par des fichiers *PDF convertis.*
   
   - Error_files : ce dossier contient des fichiers dont l’extraction ou une autre erreur de traitement s’est produite. Les fichiers sont placés dans des dossiers distincts, ExtractionError ou ProcessingError. Ces fichiers sont répertoriés dans le fichier de chargement.
 

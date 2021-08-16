@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e502c63cb30de23b190a0d6844c9e87d6720d707
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 468abdd5db01cdf5450bfb8efefae0e93852da8be867ebdbc7345587a89779d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858124"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune
 
@@ -268,7 +268,7 @@ Le profil de configuration de l’appareil est maintenant affecté au groupe d�
 
     ![Image du portail Microsoft Defender pour les points de terminaison](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 - [Configurer Microsoft Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
