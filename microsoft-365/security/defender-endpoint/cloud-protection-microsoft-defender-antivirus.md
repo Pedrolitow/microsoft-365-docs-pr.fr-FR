@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 06/03/2021
-ms.openlocfilehash: ce54f8205e62b953022fd2518caac058f4f9bab2
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: a6e4e76f75bc5eebdf17ce4768eb13327abe630d5aff6d66033ffab43d9ad263
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788798"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854338"
 ---
 # <a name="cloud-delivered-protection-and-microsoft-defender-antivirus"></a>Protection par le cloud et antivirus Microsoft Defender
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - Antivirus Microsoft Defender
@@ -32,7 +32,7 @@ ms.locfileid: "52788798"
 Les technologies de nouvelle génération Antivirus Microsoft Defender fournissent une protection automatisée et quasi instantanée contre les menaces nouvelles et émergentes. Pour identifier les nouvelles menaces de manière dynamique, les technologies de nouvelle génération fonctionnent avec de grands ensembles de données interconnectées dans le Graph Microsoft Intelligent Security et des systèmes d’intelligence artificielle (IA) puissants pilotés par des modèles d’apprentissage automatique avancés. Antivirus Microsoft Defender utilise plusieurs technologies de détection et de prévention pour offrir une protection précise, en temps réel et intelligente. 
 
 > [!TIP]
-> Vous souhaitez en savoir plus ? Consultez le billet de blog, Découvrez les technologies avancées au cœur de [Microsoft Defender pour la protection nouvelle génération de point de terminaison.](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
+> Vous voulez en savoir plus ? Consultez le billet de blog, Découvrez les technologies avancées au cœur de [Microsoft Defender pour la protection nouvelle génération de point de terminaison.](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 
 Antivirus Microsoft Defender fonctionne en toute transparence avec les services cloud de Microsoft. Ces services de protection cloud, également appelés Microsoft Advanced Protection Service (MAPS), améliorent la protection en temps réel standard, offrant sans doute la meilleure défense antivirus. 
 
@@ -56,7 +56,7 @@ Les organisations exécutant Windows 10 E5 peuvent également tirer parti des mi
 > [!TIP]
 > Visitez le site Windows Defender Testground sur [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 1. [Activer la protection cloud.](enable-cloud-protection-microsoft-defender-antivirus.md) Vous pouvez activer la protection de cloud avec Microsoft Endpoint Manager (qui inclut désormais Microsoft Endpoint Configuration Manager et Microsoft Intune), une stratégie de groupe ou des cmdlets PowerShell.
 

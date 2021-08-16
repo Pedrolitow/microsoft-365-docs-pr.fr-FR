@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8f4d0ca8034295a625f5b3fdf07bbc665276b474651c5515b49a9b5c465cafa4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362473"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854398"
 ---
 # <a name="admin-support"></a>Support pour les administrateurs
 
@@ -44,11 +44,11 @@ Détails du support :
 
 - Actuel : États-Unis, Canada (à l’exception de Australia), Royaume-Uni, Belgique, Luxembourg, Pays-Bas, Australie et Nouvelle-Zélande (24 x 7 x 365) 
 - L’anglais est la seule langue prise en charge pour les conversations téléphoniques et de conversation avec les clients 
-- Nous travaillons en partenariat avec le helpdesk de votre entreprise, et non avec son remplacement. les applications métier, les ressources réseau, etc. sont toujours gérées par votre helpdesk 
+- Nous travaillons en partenariat avec votre aide d’entreprise, et non avec son remplacement. les applications métier, les ressources réseau, etc. sont toujours gérées par votre helpdesk 
 - Microsoft Manged Desktop du groupe « Test » et les appareils qui ne font pas partie Microsoft Manged Desktop sont hors de portée 
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Découvrez comment les administrateurs informatiques peuvent obtenir une assistance](../working-with-managed-desktop/admin-support.md)
 - [Découvrez comment les utilisateurs peuvent obtenir de l’aide](../working-with-managed-desktop/end-user-support.md)

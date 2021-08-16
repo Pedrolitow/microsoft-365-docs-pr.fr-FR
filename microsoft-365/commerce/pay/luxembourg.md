@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6eb3f9db21299b5a763480e5c50a0999cb2925b7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: dd4b762ba22880b1ae0693cbf69bd7e36e974c3f48d65583e1a3d3f6e34e3a07
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535481"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866870"
 ---
 # <a name="payment-information-for-luxembourg"></a>Informations de paiement pour le Luxembourg
 

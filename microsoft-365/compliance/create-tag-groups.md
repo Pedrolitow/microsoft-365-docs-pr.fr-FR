@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9dc6f92ffdc5a676bd6f8895fe884b5493724963
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 985ce31ae9c88e6124e559ef200cfbecfc7ab8de63b63244f399b7c0c96c30f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865991"
 ---
 # <a name="create-tag-groups"></a>Créer des groupes de balises
 
-Avant que vous ou d’autres personnes ne pouvez baliser des documents dans un jeu à réviser, les balises doivent être créées. Pour ce faire, vous pouvez créer des groupes de balises qui contiennent des balises enfants. Les balises sont affichées dans le panneau de marquage lors de l’examen de documents dans un jeu à réviser.
+Avant que vous ou d’autres personnes ne pouvez baliser des documents dans un jeu à réviser, les balises doivent être créées. Pour ce faire, vous pouvez créer des groupes de balises qui contiennent des balises enfants. Les balises sont affichées dans le panneau de marquage lors de la révision de documents dans un jeu à réviser.
 
 Pour créer un groupe de balises :
 

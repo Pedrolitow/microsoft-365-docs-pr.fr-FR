@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 091411a35d120389a10dd09cffc560fd20dc1bf8
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 5221c7c715e6722ada2acabe2d9752cb51c18914c4b5e77ddbb6d5cac55c7ac2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656906"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854122"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>Tirer les détections vers vos outils SIEM
 

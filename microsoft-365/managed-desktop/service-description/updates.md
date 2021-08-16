@@ -11,12 +11,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f817831cda584dc1aa6c968d7332939c68f48e8b
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 37c9c83bd61fe0be89eff47dedf7e3c0492ac78c1b9fc4c48afe822e370a1726
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622267"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854386"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Comment les mises à jour sont gérées dans Microsoft Manged Desktop
 
@@ -27,7 +27,7 @@ ms.locfileid: "53622267"
 
 Microsoft Manged Desktop connecte tous les appareils à une infrastructure informatique moderne. Maintenir Windows, Office, pilotes, microprogrammes et applications Microsoft Store pour Entreprises à jour constitue un équilibre entre vitesse et stabilité. Nous utilisons des groupes de mise à jour pour nous assurer que les mises à jour et les stratégies du système d’exploitation sont déployées en toute sécurité. Pour plus d’informations, voir la vidéo [Microsoft Manged Desktop processus de modification et de publication.](https://www.microsoft.com/videoplayer/embed/RE4mWqP) 
 
-Les mises à jour publiées par Microsoft sont cumulatives et sont classées en tant que mises à jour qualité ou fonctionnalités.
+Les mises à jour publiées par Microsoft sont cumulatives et sont classées en tant que mises à jour de qualité ou de fonctionnalités.
 Pour plus d’informations, [voir Windows Update for Business: Update types](/windows/deployment/update/waas-manage-updates-wufb#update-types). 
 
 ## <a name="update-groups"></a>Mettre à jour un groupe
@@ -35,10 +35,10 @@ Pour plus d’informations, [voir Windows Update for Business: Update types](/wi
 
 Microsoft Manged Desktop utilise quatre groupes Azure AD pour gérer les mises à jour :
 
-- **Test**: permet de valider les modifications de stratégie Microsoft Manged Desktop, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications apportées à l’organisation Azure AD ( « client »). Le meilleur pour les tests ou les utilisateurs qui peuvent fournir des commentaires précoces. Le groupe de test est exempté de tout contrat de niveau de service établi et du support utilisateur. Ce groupe peut être utilisé pour valider la compatibilité des applications avec de nouvelles stratégies ou modifications de système d’exploitation.  
-- **Tout d’abord**: contient les premiers utilisateurs et périphériques logiciels qui peuvent faire l’objet de mises à jour pré-publiées. Les appareils de ce groupe peuvent être en panne s’il existe des scénarios qui n’ont pas été couverts lors des tests dans l’anneau de test.
+- **Test**: permet de valider les modifications de stratégie Microsoft Manged Desktop, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications apportées à l’organisation Azure AD ( « client »). Le meilleur pour les tests ou les utilisateurs qui peuvent fournir des commentaires précoces. Le groupe de test est exempté de tout contrat de niveau de service établi et du support utilisateur. Ce groupe est disponible pour la validation de la compatibilité des applications avec de nouvelles stratégies ou modifications de système d’exploitation.  
+- **Tout d’abord**: contient les premiers utilisateurs de logiciels et les appareils qui peuvent être soumis à des mises à jour de pré-publication. Les appareils de ce groupe peuvent être en panne s’il existe des scénarios qui n’ont pas été couverts lors des tests dans l’anneau de test.
 - **Rapide**: hiérarchise la vitesse sur la stabilité. Utile pour détecter les problèmes de qualité avant qu’ils ne soient proposés au groupe Large. Ce groupe fait office de couche suivante de validation, mais il est généralement plus stable que les groupes Test et First. 
-- **Large**: dernier groupe à avoir des mises à jour de fonctionnalités et de qualité disponibles. Ce groupe contient la plupart des utilisateurs de l’organisation Azure AD. Par conséquent, il privilégie la stabilité par rapport à la vitesse de déploiement. Le test des applications doit être effectué ici, car l’environnement est le plus stable.
+- **Large**: dernier groupe à avoir des mises à jour de fonctionnalités et de qualité disponibles. Ce groupe contient la plupart des utilisateurs de l’organisation Azure AD et, par conséquent, privilégie la stabilité par rapport à la vitesse de déploiement. Le test des applications doit être effectué ici, car l’environnement est le plus stable.
 
 ### <a name="moving-devices-between-update-groups"></a>Déplacement d’appareils entre des groupes de mise à jour
 Vous souhaiterez peut-être que certains appareils reçoivent les mises à jour en dernier et d’autres que vous souhaitez passer en premier. Pour déplacer ces appareils dans le groupe de mise à jour approprié, voir Affecter des [appareils à un groupe de déploiement.](../working-with-managed-desktop/assign-deployment-group.md)
@@ -73,7 +73,7 @@ Ce processus de déploiement s’applique aux mises à jour des fonctionnalités
 </table>
 
 >[!NOTE]
->Ces périodes de report sont conçues intentionnellement pour garantir des normes de sécurité et de performances élevées pour tous les utilisateurs. En outre, en fonction des données recueillies sur tous les appareils Microsoft Manged Desktop et de l’étendue et de l’impact variables des mises à jour, Microsoft Manged Desktop se réserve la flexibilité nécessaire pour modifier la durée des périodes de report ci-dessus pour tous les groupes de déploiement de manière ponctuelle.
+>Ces périodes de report sont conçues intentionnellement pour garantir des normes élevées en matière de sécurité et de performances pour tous les utilisateurs. En outre, en fonction des données recueillies sur tous les appareils Microsoft Manged Desktop et de l’étendue et de l’impact variables des mises à jour, Microsoft Manged Desktop se réserve la flexibilité nécessaire pour modifier la durée des périodes de report ci-dessus pour tous les groupes de déploiement de manière ponctuelle.
 >
 >Microsoft Manged Desktop effectue une évaluation indépendante de chaque version Windows fonctionnalité pour évaluer sa nécessité et son utilité pour ses locataires gérés. Par conséquent, Microsoft Manged Desktop peuvent ou non déployer toutes les mises à jour Windows fonctionnalités. 
 
@@ -85,4 +85,4 @@ Tous les appareils trouvés avec des builds Insider Windows peuvent être placé
 
 ## <a name="bandwidth-management"></a>Gestion de la bande passante
 
-Nous utilisons [l’optimisation de la](/windows/deployment/update/waas-delivery-optimization) distribution pour toutes les mises à jour du système d’exploitation et des pilotes. L’optimisation de la distribution réduit la taille de téléchargement à partir du service Windows mise à jour en recherchant les mises à jour des homologues au sein du réseau d’entreprise.
+Nous utilisons [l’optimisation de la](/windows/deployment/update/waas-delivery-optimization) distribution pour toutes les mises à jour du système d’exploitation et des pilotes. L’optimisation de la distribution réduit la taille de téléchargement à partir du service Windows mise à jour en recherchant des mises à jour à partir d’homologues au sein du réseau d’entreprise.

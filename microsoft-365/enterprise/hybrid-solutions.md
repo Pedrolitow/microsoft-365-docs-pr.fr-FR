@@ -18,16 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Fournit une liste de liens vers des informations utiles pour le déploiement Office charges de travail du serveur dans Microsoft Azure.
-ms.openlocfilehash: 47e885d3db7d9211b917414d03efdc5b716dcd1e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b63f2fff61a9fb8a7eb99bd15da13d5c909af86c3362618ab7a438e0a610316
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885386"
 ---
 # <a name="hybrid-solutions"></a>Solutions hybrides
 
-Avec Microsoft Azure, vous pouvez déployer certaines charges de travail Office Server généralement déployées localement dans les services d’infrastructure Azure.
+Avec Microsoft Azure, vous pouvez déployer certaines charges de travail Office Server qui étaient généralement déployées localement dans les services d’infrastructure Azure.
   
 Pour plus Microsoft 365'identité dans Azure :
 
@@ -48,9 +48,9 @@ Pour les charges de travail SharePoint Server 2013 dans Azure :
 - [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
-[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
+[Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   
 [Illustrations de documents sur le cloud Microsoft pour les architectes d’entreprise](../solutions/cloud-architecture-models.md)
   

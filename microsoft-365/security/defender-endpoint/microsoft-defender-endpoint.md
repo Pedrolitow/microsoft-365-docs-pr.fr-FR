@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65bfcf003ff1fc29187f0c66d2c39cf177b75b11ed792a5566ec0ef81b71d705
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a507f1fe1292fcd456891aa64f7974d2f722bbc
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793492"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247625"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 

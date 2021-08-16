@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a27761cc6f907905e9aa1a4fb2c1a1dc8120f5acfb15574cae6b170d75d51ec1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3edacef44021211d82b1b7d8c477683185c87f00
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833482"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247610"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>Exécuter des commandes de réponse en direct sur un appareil
 
@@ -58,13 +58,15 @@ Exécute une séquence de commandes de réponse en direct sur un appareil
 
 4.  Le délai d’un délai de commande RunScript est passé au bout de 10 minutes.
 
-5.  En cas d’échec d’une commande de réponse en direct, toutes les actions suivies ne sont pas exécutées.
+5.  Les commandes de réponse en direct ne peuvent pas être mis en file d’attente et ne peuvent être exécutées qu’une par une. 
+
+6.  Plusieurs commandes de réponse en direct peuvent être exécutés sur un seul appel d’API. Toutefois, lorsqu’une commande de réponse en direct échoue, toutes les actions suivantes ne sont pas exécutées.
 
 ## <a name="minimum-requirements"></a>Conditions minimales requises
 
 Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
 
-- **Vérifiez que vous exécutez une version prise en charge de Windows**.
+- **Vérifiez que vous exécutez une version prise** en charge de Windows .
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
@@ -98,12 +100,13 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|Chaîne|Porteur\<token>\. Obligatoire.|
+|Autorisation|String
+|Porteur\<token>\. Obligatoire.|
 |Content-Type|string|application/json. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande
 
-|Parameter|Type|Description|
+|Paramètre|Type|Description|
 |---|---|---|
 |Commentaire|Chaîne|Commentaire à associer à l’action.|
 |Commandes|Tableau|Commandes à exécuter. Les valeurs autorisées sont PutFile, RunScript, GetFile.|
@@ -118,7 +121,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="response"></a>Réponse
 
-- Si elle réussit, cette méthode renvoie 200, OK.
+- Si elle réussit, cette méthode renvoie 201 Created.
 
   Entité Action. Si l’ordinateur avec l’ID spécifié est in trouvé - 404 - In trouvé.
 
@@ -222,7 +225,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [API Obtenir l’action de l’ordinateur](get-machineaction-object.md)
 - [Obtenir le résultat de la réponse en direct](get-live-response-result.md)

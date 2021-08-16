@@ -20,12 +20,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: Obtenez des affiches qui décrivent les modèles architecturaux, le déploiement et les options de plateforme pour SharePoint, Exchange, Skype Entreprise et Lync.
-ms.openlocfilehash: 6c8aea1f6389c5007adb1800639488972483d5fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: caa4f630a047ca438decdd9dd2dede13ff96598eea1f0781140a8c66dbc6381f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905511"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885470"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync
 
@@ -33,7 +33,7 @@ Les affiches de cet article décrivent les modèles architecturaux et les option
   
 En utilisant Microsoft 365, vous pouvez fournir des services de collaboration et de communication familiers via le cloud. À quelques exceptions près, l’expérience utilisateur reste la même, que vous tenez à jour un déploiement local ou que vous utilisiez Microsoft 365. 
 
-Cette expérience utilisateur unifiée complique la décision de l’endroit où placer chaque charge de travail. Elle pose également des questions :
+Cette expérience utilisateur unifiée complique la décision d’où placer chaque charge de travail. Elle pose également des questions :
   
 - Comment choisir une plateforme pour les charges de travail individuelles ?
     
@@ -88,14 +88,14 @@ Les affiches pour SharePoint 2016 et Skype Entreprise 2015 permettent de compare
     
 - **Tâches d’architecture**: décisions que vous devez prendre en tant qu’architecte.
     
-- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel de l’équipe it doit planifier.
+- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel technique doit planifier.
     
 <a name="SP2016_ArchModel"> </a>
 ### <a name="microsoft-sharepoint-server-2016-architectural-models"></a>Modèles architecturaux Microsoft SharePoint Server 2016
 
 |Item|Description|
 |---|---|
-|[![Miniature de l’affiche SharePoint modèles architecturaux server 2016.](../media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=52650)|Cette affiche décrit les configurations SharePoint Online, Azure et SharePoint sur site que les décideurs d’entreprise et les architectes de solutions doivent connaître. <br/><br/> - **SharePoint Online (SaaS)**: utiliser SharePoint via un modèle d’abonnement SaaS (Software as a Service). <br/> - **SharePoint hybride :** déplacez SharePoint sites et applications vers le cloud à votre rythme. <br/> - **SharePoint Azure (IaaS)**: étendez votre environnement local à Azure et déployez des serveurs SharePoint 2016. (Ce modèle est recommandé pour les environnements de haute disponibilité ou de récupération d’urgence et les environnements de développement/test.) <br/> - **SharePoint local**: planifiez, déployez, maintenez et personnalisez votre environnement SharePoint dans un centre de données que vous conservez.|
+|[![Miniature de l’affiche SharePoint modèles architecturaux server 2016.](../media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=52650)|Cette affiche décrit les configurations SharePoint Online, Azure et SharePoint sur site que les décideurs d’entreprise et les architectes de solutions doivent connaître. <br/><br/> - **SharePoint Online (SaaS)**: utiliser SharePoint via un modèle d’abonnement SaaS (Software as a Service). <br/> - **SharePoint hybride**: déplacez vos sites SharePoint applications vers le cloud à votre rythme. <br/> - **SharePoint Azure (IaaS)**: étendez votre environnement local à Azure et déployez des serveurs SharePoint 2016. (Ce modèle est recommandé pour les environnements de haute disponibilité ou de récupération d’urgence et les environnements de développement/test.) <br/> - **SharePoint local**: planifiez, déployez, maintenez et personnalisez votre environnement SharePoint dans un centre de données que vous conservez.|
    
 <a name="SP2016_Databases"> </a>
 ### <a name="sharepoint-server-2016-databases"></a>Bases de données SharePoint Server 2016
@@ -123,7 +123,7 @@ Les affiches pour SharePoint 2013, Exchange 2013 et Lync 2013 permettent de comp
     
 - **Tâches d’architecture**: décisions que vous devez prendre en tant qu’architecte.
     
-- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel de l’équipe it doit planifier.
+- **Tâches ou responsabilités des** professionnel de l’it : responsabilités quotidiennes que votre personnel technique doit planifier.
     
 <a name="SP2013_Options"> </a>
 ## <a name="sharepoint-2013-platform-options"></a>Options de plateforme SharePoint 2013
@@ -156,14 +156,14 @@ Les affiches informatiques SharePoint dans Azure montrent des solutions Azure qu
 
 |Item|Description|
 |---|---|
-|[![Image des sites Internet dans Azure à l’aide SharePoint Server 2013.](../media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=41992)|Cette affiche décrit les activités de conception clés et l’architecture recommandée pour les sites internet dans Azure.  <br/><br/> Pour plus d’informations, voir les articles suivants :  <br/><br/> - [Sites Internet dans Azure utilisant SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Architectures Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
+|[![Image des sites Internet dans Azure à l’aide SharePoint Server 2013.](../media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=41992)|Cette affiche décrit les activités de conception clés et l’architecture recommandée pour les sites internet dans Azure.  <br/><br/> Pour plus d’informations, voir les articles suivants:  <br/><br/> - [Sites Internet dans Azure utilisant SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Architectures Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
 <a name="DesignSampleInternetSites"> </a>
 ### <a name="internet-sites-in-azure-for-sharepoint-2013"></a>Sites Internet dans Azure pour SharePoint 2013
 
 |Item|Description|
 |---|---|
-|[![Image des sites Internet dans Microsoft Azure affiche SharePoint Server 2013.](../media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=41991)|Utilisez cet exemple de conception comme point de départ pour votre propre architecture d’un site internet dans Azure à l’aide de SharePoint Server 2013. <br/><br/> Pour plus d’informations, voir les articles suivants :  <br/><br/> - [Sites Internet dans Azure utilisant SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Architectures Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
+|[![Image des sites Internet dans Microsoft Azure affiche SharePoint Server 2013.](../media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=41991)|Utilisez cet exemple de conception comme point de départ pour votre propre architecture d’un site internet dans Azure à l’aide de SharePoint Server 2013. <br/><br/> Pour plus d’informations, voir les articles suivants:  <br/><br/> - [Sites Internet dans Azure utilisant SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Architectures Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
 <a name="sharepoint_recovery_Azure"> </a>
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Récupération d’urgence SharePoint vers Microsoft Azure
@@ -174,7 +174,7 @@ Les affiches informatiques SharePoint dans Azure montrent des solutions Azure qu
    
 ## <a name="see-also"></a>Voir aussi
 
-- [Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
+- [Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   
 - [Modèles d’architecture cloud Microsoft](../solutions/cloud-architecture-models.md)
   

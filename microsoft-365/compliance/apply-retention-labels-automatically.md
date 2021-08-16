@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 870b3491bd0556b2d72de901917713c6d6643a5f3c31871ab33f5eb459fefaf2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2b21df0592c2ca6f3f45500236e2cd07ab7128c1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802753"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247549"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -127,6 +127,16 @@ Vous pouvez appliquer automatiquement des étiquettes de rétention au contenu q
 
 - [Correspondance pour les classifieurs entraînables](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
+Les trois conditions peuvent automatiquement appliquer des étiquettes de rétention aux e-mails lorsqu’ils sont envoyés et reçus, mais pas aux éléments existants dans la boîte aux lettres (données au repos). Pour les éléments dans SharePoint et OneDrive, utilisez le tableau suivant pour identifier le moment où des étiquettes de rétention peuvent y être automatiquement appliquées :
+
+|Condition|Éléments modifiés ou nouveaux |Éléments existants (données au repos)|
+|:-----|:-----|:-----|
+|Types d’informations sensibles – intégrés| Oui | Oui |
+|Types d’informations sensibles – personnalisés| Oui | Non |
+|Mots clés spécifiques ou propriétés pouvant faire l’objet d’une recherche| Oui |Oui |
+|Classifieurs pouvant être formés| Oui | Oui (six derniers mois uniquement) |
+
+
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Application automatique d’étiquettes au contenu incluant des types spécifiques d’informations sensibles
 
 > [!WARNING]
@@ -148,7 +158,7 @@ Pour plus d’informations sur ces options, reportez-vous aux instructions suiva
 
 Lorsque vous utilisez des types d’informations sensibles pour appliquer automatiquement des étiquettes de rétention :
 
-- Les éléments nouveaux et modifiés peuvent être étiquetés automatiquement.
+- Si vous utilisez des types d’informations sensibles personnalisés, ceux-ci ne peuvent pas étiqueter automatiquement des éléments existants dans SharePoint et OneDrive.
 
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Application automatique d’étiquettes au contenu comprenant des mots clés ou des propriétés pouvant faire l’objet d’une recherche
 
@@ -161,8 +171,6 @@ Pour plus d’informations sur la syntaxe de requête qui utilise le langage de 
 Les stratégies d’application automatique basées sur une requête utilisent le même index de recherche que la recherche de contenu eDiscovery pour identifier du contenu. Pour plus d’informations sur ces propriétés utilisables dans une requête, consultez [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
 
 Éléments à prendre en compte lorsque vous utilisez des mots clés ou des propriétés utilisables dans une requête pour appliquer automatiquement des étiquettes de rétention
-
-- Les éléments nouveaux, modifiés et existants sont automatiquement étiquetés pour SharePoint, OneDrive et Exchange.
 
 - Pour SharePoint, les propriétés analysées et les propriétés personnalisées ne sont pas prises en charge pour ces requêtes KQL et vous devez utiliser uniquement des propriétés gérées prédéfinies. Toutefois, vous pouvez utiliser des mappages au niveau du client avec les propriétés gérées prédéfinies qui sont activées comme affinements par défaut (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09 et RefinableDouble00-09). Pour plus d’informations, consultez[vue d’ensemble des propriétés analysées et gérées dans SharePoint Server](/SharePoint/technical-reference/crawled-and-managed-properties-overview)et pour obtenir des instructions, consultez [créer une propriété gérée](/sharepoint/manage-search-schema#create-a-new-managed-property).
 
@@ -255,7 +263,7 @@ Pour plus d’informations sur les classifieurs avec capacité de formation, con
 
 Lorsque vous utilisez des classificateurs pouvant apprendre pour appliquer automatiquement des étiquettes de rétention :
 
-- Les éléments nouveaux et modifiés peuvent être étiquetés automatiquement ainsi que les éléments existants des six derniers mois.
+- Vous ne pouvez pas étiqueter automatiquement des éléments qui ont plus de six mois dans SharePoint ou OneDrive.
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Délai d’activation des étiquettes de rétention
 
