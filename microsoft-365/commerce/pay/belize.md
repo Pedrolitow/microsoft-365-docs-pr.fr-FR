@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7e531aba1aeb53125b628e4fec964b496316f3ae
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5f976d3997c27870b7ea0b1bd95f6ec99fab5b9413125f57d6460a21ce3d26fd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537113"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887466"
 ---
 # <a name="payment-information-for-belize"></a>Informations de paiement pour Belize
 

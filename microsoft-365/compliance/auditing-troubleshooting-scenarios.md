@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser l’outil Microsoft 365 de recherche dans le journal d’audit pour résoudre les problèmes de support courants pour les comptes de messagerie.
-ms.openlocfilehash: 2a758114f361f3d13f0393780ef9b1e149fd421960bee627e3fb4ff41d100859
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a925bd425d04a3df8971b1cf983763f2093aa68
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906381"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255717"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Effectuer une recherche dans le journal d’audit pour examiner les problèmes de support courants
 
@@ -50,30 +50,30 @@ Le rôle Journaux View-Only audit ou Journaux d’audit doit vous être attribu�
 Cette section décrit les bases de la création et de l’exécution de recherches dans le journal d’audit. Utilisez ces instructions comme point de départ pour chaque scénario de résolution des problèmes de cet article. Pour obtenir des instructions détaillées détaillées, consultez la recherche dans le [journal d’audit.](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)
 
 1. Allez sur <https://compliance.microsoft.com/auditlogsearch> et connectez-vous à l’aide de votre compte professionnel ou scolaire.
-    
-    La page **Audit** s’affiche. 
-    
+  
+    La page **Audit** s’affiche.
+  
     ![Configurer les critères, puis sélectionner La recherche pour exécuter la recherche](../media/AuditLogSearchPage1.png)
   
-4. Vous pouvez configurer les critères de recherche suivants. Chaque scénario de résolution des problèmes décrit dans cet article recommande des instructions spécifiques pour la configuration de ces champs.
-    
-   a. **Date de début** et **date de fin : sélectionnez** une plage de dates et d’heures pour afficher les événements qui se sont produits au cours de cette période. Les sept derniers jours sont sélectionnés par défaut. Les date et heure sont présentées au format UTC (temps universel coordonné). La plage de dates maximale que vous pouvez spécifier est de 90 jours.    
+2. Vous pouvez configurer les critères de recherche suivants. Chaque scénario de résolution des problèmes décrit dans cet article recommande des instructions spécifiques pour la configuration de ces champs.
+  
+   a. **Date de début** et **date de fin : sélectionnez** une plage de dates et d’heures pour afficher les événements qui se sont produits au cours de cette période. Les sept derniers jours sont sélectionnés par défaut. Les date et heure sont présentées au format UTC (temps universel coordonné). La plage de dates maximale que vous pouvez spécifier est de 90 jours.
 
    b. **Activités :** Sélectionnez la liste de listes pour afficher les activités que vous pouvez rechercher. Une fois la recherche terminée, seuls les enregistrements d’audit correspondant aux activités sélectionnées apparaissent. La sélection **Afficher les résultats pour toutes les activités** affiche les résultats de toutes les activités qui répondent aux autres critères de recherche. Vous devez également laisser ce champ vide dans certains scénarios de dépannage.
-    
+  
     c. **Utilisateurs :** Cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour afficher les résultats de la recherche. Les enregistrements d’audit pour l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation.
-    
+  
     d. **Fichier, dossier ou site :** Tapez tout ou partie d’un nom de fichier ou de dossier pour rechercher l’activité liée au fichier de dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez une URL, assurez-vous que vous tapez le chemin d’accès complet de l’URL ou si vous tapez uniquement une partie de l’URL, n’incluez pas de caractères ou d’espaces spéciaux. Laissez cette zone vide pour renvoyer les entrées correspondant à tous les fichiers et dossiers dans votre organisation. Ce champ est laissé vide dans tous les scénarios de dépannage de cet article.
-    
-5. Sélectionnez **Rechercher** pour exécuter la recherche à l’aide de vos critères de recherche. 
-    
-    Les résultats de la recherche sont chargés et,  après quelques instants, ils sont affichés sous Résultats sur la page de recherche du **journal d’audit.** Chacune des sections de cet article fournit des conseils sur les éléments à rechercher dans le contexte du scénario de dépannage spécifique.
+  
+3. Sélectionnez **Rechercher** pour exécuter la recherche à l’aide de vos critères de recherche.
+  
+    Les résultats de la recherche sont chargés et, après quelques instants, ils sont affichés sur une page de l’outil de recherche du journal d’audit. Chacune des sections de cet article fournit des conseils sur les éléments à rechercher dans le contexte du scénario de dépannage spécifique.
 
-    Pour plus d’informations sur l’affichage, le filtrage ou l’exportation des résultats de recherche du journal d’audit, voir :
+    Pour plus d’informations sur l’affichage et l’exportation des résultats de recherche du journal d’audit, voir :
 
     - [Afficher les résultats de la recherche](search-the-audit-log-in-security-and-compliance.md#step-2-view-the-search-results)
-    - [Filtrer les résultats de recherche](search-the-audit-log-in-security-and-compliance.md#step-3-filter-the-search-results)
-    - [Exporter les résultats de la recherche](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)
+  
+    - [Exporter les résultats de la recherche](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file)
 
 ## <a name="find-the-ip-address-of-the-computer-used-to-access-a-compromised-account"></a>Rechercher l’adresse IP de l’ordinateur utilisé pour accéder à un compte compromis
 
@@ -116,7 +116,7 @@ Après avoir exécuté la recherche, sélectionnez **Filtrer les résultats** su
 
 ![Informations détaillées de l’enregistrement d’audit](../media/emailforwarding2.png)
 
-a. Dans le **champ ObjectId,** l’alias de la boîte aux lettres sur qui a été définie le forwarding de courrier électronique s’affiche. Cette boîte aux lettres s’affiche également dans la colonne **Élément** de la page des résultats de la recherche.
+a. Dans le **champ ObjectId,** l’alias de la boîte aux lettres sur qui a été définie le forwarding de courrier s’affiche. Cette boîte aux lettres s’affiche également dans la colonne **Élément** de la page des résultats de la recherche.
 
 b. Dans le **champ Paramètres,** la valeur *ForwardingSmtpAddress* indique que le forwarding de courrier électronique a été définie sur la boîte aux lettres. Dans cet exemple, le courrier est transmis à l’adresse mike@contoso.com, qui se trouve en dehors de l’alpinehouse.onmicrosoft.com organisation.
 
@@ -144,7 +144,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 - **Messages supprimés du dossier Éléments supprimés :** Cette activité correspond à l’action d’audit de boîte aux lettres **SoftDelete.** Cette activité est également enregistrée lorsqu’un utilisateur supprime définitivement un élément en le sélectionnant et en appuyant sur **Shift+Supprim.** Une fois qu’un élément est supprimé définitivement, l’utilisateur peut le récupérer jusqu’à l’expiration de la période de rétention des éléments supprimés.
 
-- **Messages purgés de la boîte aux lettres :** Cette activité correspond à l’action d’audit de boîte aux lettres **HardDelete.** Cette information est consignée lorsqu’un utilisateur purge un élément du dossier Éléments récupérables. Les administrateurs peuvent utiliser l’outil de recherche de contenu dans le centre de sécurité et conformité pour rechercher et récupérer des éléments purgés jusqu’à l’expiration de la période de rétention des éléments supprimés ou plus longtemps si la boîte aux lettres de l’utilisateur est en conservation.
+- **Messages purgés de la boîte aux lettres :** Cette activité correspond à l’action d’audit de boîte aux lettres **HardDelete.** Cette information est consignée lorsqu’un utilisateur purge un élément du dossier Éléments récupérables. Les administrateurs peuvent utiliser l’outil de recherche de contenu dans le centre de sécurité et conformité pour rechercher et récupérer des éléments purgés jusqu’à ce que la période de rétention des éléments supprimés expire ou plus longtemps si la boîte aux lettres de l’utilisateur est en conservation.
 
 **Date de début** **et de fin : sélectionnez** une plage de dates applicable à votre enquête.
 
@@ -152,7 +152,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 **Fichier, dossier ou site :** Laissez ce champ vide.
 
-Après avoir exécuté la recherche, vous pouvez filtrer les résultats de la recherche pour afficher les enregistrements d’audit pour les éléments supprimés (supprimés(s) ou les éléments supprimés (supprimés définitivement). Sélectionnez l’enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.** Des informations supplémentaires sur l’élément supprimé, telles que la ligne d’objet et l’emplacement de l’élément lors de sa suppression, sont affichées dans le champ **AffectedItems.** Les captures d’écran suivantes illustrent un exemple du champ **AffectedItems** à partir d’un élément supprimé (supprimé( ou supprimé) et d’un élément supprimé (supprimé définitivement).
+Après avoir exécuté la recherche, vous pouvez filtrer les résultats de la recherche pour afficher les enregistrements d’audit pour les éléments supprimés (supprimés(s) ou les éléments supprimés (supprimés définitivement). Sélectionnez l’enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.** Des informations supplémentaires sur l’élément supprimé, telles que la ligne d’objet et l’emplacement de l’élément lors de sa suppression, sont affichées dans le champ **AffectedItems.** Les captures d’écran suivantes illustrent un exemple du champ **AffectedItems** à partir d’un élément supprimé (supprimé de nouveau) et d’un élément supprimé (supprimé définitivement).
 
 **Exemple de champ AffectedItems pour l’élément supprimé (supprimé(s)**
 
@@ -188,7 +188,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 **Fichier, dossier ou site :** Laissez ce champ vide.
 
-Après avoir exécuté la recherche, tous les enregistrements d’audit pour cette activité sont affichés dans les résultats de la recherche. Sélectionnez un enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.** Les informations sur les paramètres de règle de boîte de réception sont affichées dans **le champ Paramètres.** La capture d’écran et les descriptions suivantes mettent en évidence les informations sur les règles de boîte de réception.
+Après avoir exécuté la recherche, tous les enregistrements d’audit pour cette activité sont affichés dans les résultats de la recherche. Sélectionnez un enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.** Les informations sur les paramètres de règle de boîte de réception sont affichées dans le **champ Paramètres.** La capture d’écran et les descriptions suivantes mettent en évidence les informations sur les règles de boîte de réception.
 
 ![Enregistrement d’audit pour la nouvelle règle de boîte de réception](../media/NewInboxRuleRecord.png)
 
@@ -200,7 +200,7 @@ c. Le *paramètre MoveToFolder* spécifie l’action de la règle de boîte de r
 
 d. Le **champ UserId** indique l’utilisateur qui a créé la règle de boîte de réception spécifiée dans le **champ ObjectId.** Cet utilisateur est également affiché dans la colonne **Utilisateur** sur la page des résultats de la recherche.
 
-## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Examiner les raisons pour lesquelles une connexion a réussi par un utilisateur extérieur à votre organisation
+## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Examiner pourquoi un utilisateur extérieur à votre organisation a réussi à se connecter
 
 Lors de l’examen des enregistrements d’audit dans le journal d’audit, vous pouvez voir des enregistrements qui indiquent qu’un utilisateur externe a été authentifié par Azure Active Directory et s’est connecté à votre organisation. Par exemple, un administrateur dans contoso.onmicrosoft.com peut voir un enregistrement d’audit indiquant qu’un utilisateur d’une autre organisation (par exemple, fabrikam.onmicrosoft.com) s’est connecté contoso.onmicrosoft.com. De même, vous pouvez voir des enregistrements d’audit qui indiquent que les utilisateurs avec un compte Microsoft (MSA), comme un compte Outlook.com ou Live.com, se sont connectés correctement à votre organisation. Dans ces situations, l’activité auditée est connectée **par l’utilisateur.** 
 
@@ -219,7 +219,7 @@ Voici un exemple et des descriptions des propriétés pertinentes dans un enregi
 
    c. La **propriété ApplicationId** identifie l’application qui a déclenché la demande d’inscription. La valeur 00000003-0000-0ff1-ce00-0000000000000 affichée dans la propriété ApplicationId de cet enregistrement d’audit indique SharePoint Online. OneDrive Entreprise également le même ApplicationId.
 
-   d. Cela indique que l’authentification directe a réussi. En d’autres termes, l’utilisateur a été authentifié par Azure AD. 
+   d. Cela indique que l’authentification directe a réussi. En d’autres termes, l’utilisateur a été authentifié avec succès par Azure AD. 
 
    e. La **valeur RecordType** de **15** indique que l’activité auditée (UserLoggedIn) est un événement de session stS (Secure Token Service) dans Azure AD.
 
@@ -239,7 +239,7 @@ Voici deux exemples de scénarios  qui entraîneraient la réussite de l’activ
 
     Outre les  activités de l’utilisateur connecté, d’autres enregistrements d’audit peuvent être renvoyés, tels que ceux qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé, modifié ou téléchargé un document qui a été partagé avec lui.
 
-- Recherchez SharePoint activités de partage qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un enregistrement **d’audit** connecté par un utilisateur. Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit](use-sharing-auditing.md).
+- Recherchez SharePoint activités de partage qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un enregistrement d’audit connecté **par** un utilisateur. Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit](use-sharing-auditing.md).
 
 - Exportez les résultats de recherche du journal d’audit qui contiennent des enregistrements pertinents pour votre enquête afin de pouvoir utiliser Excel pour rechercher d’autres activités liées à l’utilisateur externe. Pour plus d’informations, voir Exporter, configurer et afficher les enregistrements du [journal d’audit.](export-view-audit-log-records.md)
 

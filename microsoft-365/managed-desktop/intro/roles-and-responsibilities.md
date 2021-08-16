@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 07fdea2e8fc007491dfc2ab920a53f50f55b71b4f0f37cb0674f5ff4a9cc1014
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a7c322f75cc05406169fc3a1ce36f1550bbd95ce
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898646"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255929"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Rôles et responsabilités de Bureau géré Microsoft
 
@@ -31,11 +31,11 @@ Microsoft fournit les rôles et responsabilités clés ci-après :
 Rôle ou responsabilité | Description
 --- | ---
 Gestion des stratégies mdm | Microsoft appliquera des stratégies de gestion des stratégies de gestion des stratégies de groupe conformément aux meilleures pratiques et prendra en compte les demandes de modifications de stratégie. Nous apporterons également des modifications à votre client comme prévu dans les stratégies [d’appareil.](../service-description/device-policies.md)
-Support pour les utilisateurs | Nous fournissons un mécanisme permettant d’augmenter l’accès aux appareils et de faire passer les problèmes en question si nécessaire. Pour plus d’informations, voir [support utilisateur.](../service-description/user-support.md)
-prise en charge Microsoft Manged Desktop service d’assistance | Microsoft fournira un support à votre service informatique via une équipe Microsoft Manged Desktop operations. Cette équipe prendra en charge le dépannage technique, les demandes de modification et la gestion des incidents pour l’environnement Microsoft Manged Desktop client. Pour plus d’informations, [consultez la prise en charge de Microsoft Manged Desktop](../working-with-managed-desktop/admin-support.md).
+Support pour les utilisateurs | Nous fournissons un mécanisme permettant d’augmenter l’accès aux appareils et d’escalader les problèmes par le biais d’une demande de support si nécessaire. Pour plus d’informations, voir [support utilisateur.](../service-description/user-support.md)
+prise en charge Microsoft Manged Desktop service d’assistance | Microsoft fournira un support à votre service informatique via une équipe Microsoft Manged Desktop operations. Cette équipe prendra en charge le dépannage technique, les demandes de modification et la gestion des incidents pour l’environnement Microsoft Manged Desktop client. Pour plus d’informations, [consultez la prise en charge de Microsoft Manged Desktop.](../working-with-managed-desktop/admin-support.md)
 Surveillance de la sécurité | Microsoft surveillera vos appareils Microsoft Manged Desktop à l’aide de Microsoft Defender for Endpoint. Si le centre Microsoft Manged Desktop des opérations de sécurité détecte une menace, nous vous en informons, isolons l’appareil et rectifions le problème à distance. Pour plus d’informations, voir [Sécurité.](../service-description/security.md)
 Mise à jour de la surveillance et de la gestion | Nous surveillons activement vos appareils Microsoft Manged Desktop pour nous assurer que les dernières mises à jour qualité et fonctionnalités sont installées pour Microsoft Windows et Microsoft Office. Pour plus d’informations, voir [comment les mises à jour sont gérées.](../service-description/updates.md)
-Regroupement d’utilisateurs et d’appareils | Microsoft Manged Desktop d’exploitation crée et gère les groupes d’appareils et d’utilisateurs requis dans le cadre des opérations it. Aucune modification d’appartenance ou de configuration n’est autorisée pour ces groupes. La modification de ces groupes peut entraîner une configuration inattendue des appareils et une perte de fonctionnalités. Pour tout problème ou toute question concernant ces groupes une fois ces groupes établis, les administrateurs informatiques peuvent contacter Microsoft Manged Desktop opérations. Pour plus d’informations, [consultez la prise en charge de Microsoft Manged Desktop](../working-with-managed-desktop/admin-support.md).
+Regroupement d’utilisateurs et d’appareils | Microsoft Manged Desktop d’exploitation crée et gère les groupes d’appareils et d’utilisateurs requis dans le cadre des opérations it. Aucune modification d’appartenance ou de configuration n’est autorisée pour ces groupes. La modification de ces groupes peut entraîner une configuration inattendue des appareils et une perte de fonctionnalités. Pour tout problème ou toute question concernant ces groupes une fois ces groupes établis, les administrateurs informatiques peuvent contacter Microsoft Manged Desktop opérations. Pour plus d’informations, [consultez la prise en charge de Microsoft Manged Desktop.](../working-with-managed-desktop/admin-support.md)
 
 ## <a name="your-roles-and-responsibilities"></a>Vos rôles et responsabilités
 

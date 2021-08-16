@@ -694,5 +694,7 @@
       href: /compliance/assurance/assurance-developing-your-ebcm-plan
     - name: Scénarios d’atténuation des incidents de service
       href: /compliance/assurance/assurance-microsoft-365-mitigations
+- name: Guide de navigation
+  href: ../microsoft-365-docs-navigation-guide.md?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
 - name: Microsoft 365 Entreprise
   href: ../admin/index.yml

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 84fad9dc273d020ee48e53c5d9edb57c88041e99dd077151f4b41e8de93da3e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 75c18feba1b7d293f954582d83357d1efcff98ed
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862550"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256306"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender conditions préalables
 
@@ -38,7 +38,7 @@ ms.locfileid: "53862550"
 Découvrez les licences et autres conditions requises pour l’approvisionnement et [l’utilisation Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
-L’une de ces licences vous permet d’accéder Microsoft 365 Defender fonctionnalités de Microsoft 365 centre de sécurité sans frais supplémentaires :
+L’une de ces licences vous permet d’accéder Microsoft 365 Defender fonctionnalités de Microsoft 365 Defender portail sans frais supplémentaires :
 
 - Microsoft 365 E5 ou A5
 - Microsoft 365 E3 l’Microsoft 365 E5 Sécurité de module
@@ -65,11 +65,11 @@ Go to Centre d’administration Microsoft 365 ([admin.microsoft.com](https://adm
 Vous devez être administrateur **général ou** **administrateur** de sécurité dans Azure Active Directory pour activer Microsoft 365 Defender. Pour obtenir la liste des rôles requis pour utiliser les Microsoft 365 Defender et des informations sur la façon dont l’accès aux données est réglementé, consultez la liste des rôles de gestion de [l’accès Microsoft 365 Defender](m365d-permissions.md).
 
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
-Accédez Microsoft 365 Defender dans le centre Microsoft 365 sécurité à l’aide de Microsoft Edge, d’Internet Explorer 11 ou de n’importe quel navigateur web html 5.
+Accédez Microsoft 365 Defender le portail Microsoft 365 Defender à l’aide de Microsoft Edge, d’Internet Explorer 11 ou de tout navigateur web conforme HTML 5.
 
-## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilité aux états-Unis Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et à d’autres institutions gouvernementales américaines
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilité pour les Cloud de la communauté du secteur public américains, Cloud de la communauté du secteur public High et d’autres institutions gouvernementales américaines
 Actuellement, Microsoft 365 Defender *n’est pas* disponible pour :
-- États-Unis Cloud de la communauté du secteur public (Cloud de la communauté du secteur public)
+- États-Cloud de la communauté du secteur public (Cloud de la communauté du secteur public)
 - États-Unis Cloud de la communauté du secteur public élevé (Cloud de la communauté du secteur public élevé)
 - Département de la Défense des États-Unis
 - Toutes les institutions gouvernementales américaines titulaires de licences commerciales
@@ -86,7 +86,7 @@ Actuellement, l’intégration de Microsoft Defender for Office 365 dans les fon
 - Émirats arabes unis 
 
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
 - [Gérer l’accès et les autorisations](m365d-permissions.md)

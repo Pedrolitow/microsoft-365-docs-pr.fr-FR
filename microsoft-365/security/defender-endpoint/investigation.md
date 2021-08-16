@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0d15f90c155a6ed14ccb29e5ab634a02b01d52b1
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f06fb5c425327156a4acf78e9eb3f6864b2317ff23b31cd90a8aded764cff8d5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889662"
 ---
 # <a name="investigation-resource-type"></a>Type de ressource Investigation
 

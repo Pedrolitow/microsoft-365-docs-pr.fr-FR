@@ -14,12 +14,12 @@ metadata:
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
   ms.date: 07/21/2020
-  ms.openlocfilehash: 4c625fdb60a4c3d97b4623be09c24556259fcbde
-  ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+  ms.openlocfilehash: 91293e61b923a10f30116ec6eb72cbb1d1a7fccb4ec07649bdacb8c57b3179c1
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/02/2021
-  ms.locfileid: "51579897"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53906692"
 title: Forum Aux Questions Microsoft 365 Business Premium
 summary: ''
 sections:
@@ -55,7 +55,7 @@ sections:
 
       - Protection des identités avec l’authentification multifacteur, la réinitialisation du mot de passe en libre-service et l’accès conditionnel.
 
-      - Une configuration de sécurité cohérente sur tous les &mdash; appareils protège les données d’entreprise sur tous les appareils ; Antivirus Microsoft Defender, qui est toujours à jour.
+      - Configuration de sécurité cohérente sur les appareils protection &mdash; des données d’entreprise sur les appareils ; Antivirus Microsoft Defender, qui est toujours à jour.
 
 
       **Déploiement simplifié des appareils et configuration utilisateur**:
@@ -188,8 +188,8 @@ sections:
     answer: Toutes les extensions qui peuvent être ajoutées à Microsoft 365 Business Standard peuvent être ajoutées à Microsoft 365 Business Premium. Cela signifie que vous pouvez acheter Sécurité des applications cloud Office 365, conformité avancée, Threat Intelligence, MyAnalytics, Power BI Pro et Audioconférence.
   - question: Puis-je ajouter Système téléphonique et des forfaits d’appel à Microsoft 365 Business Premium ?
     answer: >
-      Oui, vous pouvez acheter un abonnement Business Voice. [Business Voice](/microsoftteams/business-voice/whats-business-voice) est une solution de téléphonie conçue pour les petites et moyennes entreprises de 300 utilisateurs qui regroupent des Système téléphonique, des audioconférences, un forfait d’appels nationaux, etc. Système téléphonique fonctionnalités de messagerie vocale, d’ID d’appelant, de parcage d’appel, de forwarding d’appel, de attendants automatiques et de files d’attente d’appels. <br> Pour savoir si Business Voice est disponible dans votre pays ou région, consultez La disponibilité des pays et régions [pour Business Voice.](/microsoftteams/business-voice/country-region-availability) Pour plus d’informations sur les tarifs, [voir Tarification pour Business Voice.](https://go.microsoft.com/fwlink/?linkid=2127221)
-  - question: Les Microsoft 365 Business Premium peuvent-ils utiliser Microsoft Defender pour Endpoint ?
+      Oui, vous pouvez acheter un abonnement Business Voice. [Business Voice](/microsoftteams/business-voice/whats-business-voice) est une solution de téléphonie conçue pour les petites et moyennes entreprises de 300 utilisateurs qui regroupe des Système téléphonique, des audioconférences, un forfait d’appels nationaux, etc. Système téléphonique fonctionnalités que vous recevrez incluent la messagerie vocale, l’ID de l’appelant, le parcage d’appel, le forwarding d’appel, les attendants automatiques et les files d’attente d’appels. <br> Pour savoir si Business Voice est disponible dans votre pays ou région, consultez La disponibilité des pays et régions [pour Business Voice.](/microsoftteams/business-voice/country-region-availability) Pour plus d’informations sur les tarifs, [voir Tarification pour Business Voice.](https://go.microsoft.com/fwlink/?linkid=2127221)
+  - question: Les clients Microsoft 365 Business Premium peuvent-ils utiliser Microsoft Defender pour Endpoint ?
     answer: >
       Oui, Microsoft Defender pour le point de terminaison est disponible en tant que module Microsoft 365 Business Premium lorsqu’il est acheté auprès [d’un Fournisseur de solutions Microsoft Cloud](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
 - name: Possibilité de devenir partenaire

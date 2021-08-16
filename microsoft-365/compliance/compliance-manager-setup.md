@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft et configurez des tests automatisés des actions. Gérer l’historique des utilisateurs et filtrer l’affichage de votre tableau de bord.
-ms.openlocfilehash: 3d6eb3abac41106d48794b7f1859d7c809602489db93e99a46a4eed44efd6d30
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e13620413c81e5a6492c85d54d284f48308f5578
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892307"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256031"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -58,7 +58,7 @@ Pour définir des autorisations et attribuer des rôles dans le Centre de confor
 
 1. Go to the [Centre de conformité Microsoft 365](https://compliance.microsoft.com/compliancemanager) and select **Permissions** on the left navigation.
 
-2. Sous la dropdown **du Centre de** conformité, sélectionnez **Rôles.** 
+2. Sous la dropdown **du Centre de** conformité, sélectionnez **Rôles.**
 
 3. Recherchez le groupe de rôles auquel vous souhaitez ajouter un ou plusieurs utilisateurs, puis cochez la case à gauche du nom du groupe. (Consultez la [liste des rôles et des fonctions associées ci-dessous.](#role-types) Les noms des groupes de rôles imitent le nom du rôle.)
 
@@ -312,7 +312,7 @@ Il existe deux façons d’agir à partir de cet écran :
 
 1. Sur la ligne de votre solution prévue, sous la colonne **Actions** restantes, sélectionnez le numéro de lien hypertexte. Vous verrez une vue filtrée de l’écran actions d’amélioration affichant les actions d’amélioration non testées pour cette solution.
 
-2. Sur la ligne de votre solution prévue, sous la colonne **Ouvrir la solution,** sélectionnez **Ouvrir**. Vous verrez la solution ou l’emplacement dans les centres de sécurité et conformité Microsoft 365 et Office 365 où vous pouvez prendre l’action recommandée.
+2. Sur la ligne de votre solution prévue, sous la colonne **Ouvrir la solution,** sélectionnez **Ouvrir**. Vous verrez la solution ou l’emplacement dans les centres de sécurité et de conformité Microsoft 365 et Office 365 où vous pouvez prendre l’action recommandée.
 
 ## <a name="assessments-page"></a>Page Évaluations
 

@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Planifier les fermetures de bureau et les congés des employés du calendrier Bookings afin que les employés soient marqués comme indisponibles pour les réservations aux heures spécifiées.
-ms.openlocfilehash: 6a4bf19a676b838bf164e3170b25659f5e76eba2
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 3d8c7b370331f0e4651864f961d6eceffc9d24cddef07810d765bfbc5db6e96b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419549"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906974"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>Planifier des fermetures d’entreprise, des congés et des congés
 

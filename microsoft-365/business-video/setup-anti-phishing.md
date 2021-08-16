@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer la protection anti-hameçonnage.
-ms.openlocfilehash: 32494eda4496d99e5e5f4def213ba7876f6c3183
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 71acaf070ea121db93947423e9824ae93d90b53c3ccbd3cc47e57df23a92a40f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580413"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887514"
 ---
 # <a name="set-up-anti-phishing"></a>Configurer les stratégies d’anti-hameçonnage et d’anti-hameçonnage
 
@@ -46,6 +46,6 @@ Le hameçonnage est une attaque malveillante dans laquelle un e-mail semble avoi
 1. Sélectionnez **Activer les conseils de sécurité pour l’emprunt d’identité.** Choisissez si des conseils doivent être fournis aux utilisateurs lorsque le système détecte des utilisateurs usurpés d’identité, des domaines ou des caractères inhabituels. Sélectionnez **Enregistrer**.
 1. Sélectionnez **l’intelligence de** boîte aux lettres et vérifiez qu’elle est allumée. Cela permet à votre courrier électronique d’être plus efficace en apprendant les modèles d’utilisation.
 1. Choose **Add trusted senders and domains**. Ici, vous pouvez ajouter des adresses e-mail ou des domaines qui ne doivent pas être classés comme emprunt d’identité.
-1. Sélectionnez **Passer en revue vos paramètres,** assurez-vous que tout est correct, **sélectionnez Enregistrer,** puis **Fermer**.
+1. Sélectionnez **Passer en revue vos paramètres,** assurez-vous que tout est correct, **sélectionnez Enregistrer,** puis **Fermer.**
 
     Votre organisation dispose désormais d’une meilleure protection contre les menaces de hameçonnage.

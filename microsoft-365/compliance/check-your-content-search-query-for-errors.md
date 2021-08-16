@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment détecter les erreurs et les fautes de frappe dans votre requête de mot clé pour les recherches de découverte électronique avant d’effectuer la recherche.
-ms.openlocfilehash: 9c041ca690df3306347cbca77df3ba9639801245
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 0f1e319c9ae3e332e58645d9ff1703062975a714278ab3322cdb156b6c62badf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311687"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886879"
 ---
 # <a name="check-your-search-query-for-errors"></a>Vérifier la présence d’erreurs dans vos requêtes de recherche
   
@@ -31,7 +31,7 @@ Voici une liste des caractères non pris en place que nous vérifions dans les r
 
 - **Caractères non imprimables** et de contrôle : les caractères non imprimables et de contrôle ne représentent pas un symbole écrit, tel qu’un caractère alpha numérique. Il peut s'agir de caractères servant à mettre en forme le texte ou à séparer des lignes. 
 
--  Marques de gauche à droite et de droite à gauche : ces marques sont des caractères de contrôle utilisés pour indiquer l’orientation du texte pour les langues de gauche à droite (telles que l’anglais et l’espagnol) et de droite à gauche (comme l’arabe et l’hébreu).
+- Marques de gauche à droite et de droite à **gauche** : ces marques sont des caractères de contrôle utilisés pour indiquer l’orientation du texte pour les langues de gauche à droite (telles que l’anglais et l’espagnol) et de droite à gauche (comme l’arabe et l’hébreu).
 
 - **Opérateurs booléens** en minuscules : si vous utilisez un opérateur booléen, tel que **AND**, **OR** et **NOT** dans une requête de recherche, il doit être en minuscules. Lorsque nous vérifions une requête pour des fautes de frappe, la syntaxe de requête indique souvent qu’un opérateur booléen est utilisé même si des opérateurs en minuscules peuvent être utilisés ; par exemple,  `(WordA or WordB) and (WordC or WordD)` .
 

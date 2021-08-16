@@ -9,8 +9,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: jweston-1
+ms.author: v-jweston
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: a736ff05bf729e69f89bdb9050a0c8dec2d033f74101fed7a2f46372872464e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 336fbbbbbe07747a8dbe12c46fd3bbe2483c08b9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817692"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256178"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>Vue d’ensemble des fonctionnalités de réduction de la surface d’attaque
 
@@ -44,14 +44,14 @@ Les surfaces d’attaque sont tous les endroits où votre organisation est vuln�
 
 ## <a name="resources-to-learn-more-about-attack-surface-reduction"></a>Ressources pour en savoir plus sur la réduction de la surface d’attaque
 
-Comme mentionné dans la vidéo, Defender pour point de terminaison inclut plusieurs fonctionnalités de réduction de la surface d’attaque. Pour en savoir plus, utilisez les ressources suivantes :
+Comme mentionné dans la vidéo, Defender pour le point de terminaison inclut plusieurs fonctionnalités de réduction de la surface d’attaque. Pour en savoir plus, utilisez les ressources suivantes :
 
 | Article | Description |
 |:---|:---|
-| [Isolation basée sur le matériel](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protégez et maintenez l’intégrité d’un système au démarrage et pendant son exécution. Valider l’intégrité du système par le biais d’une attestation locale et distante. Utilisez l’isolation de conteneur Microsoft Edge pour vous protéger contre les sites web malveillants. |
+| [Isolation basée sur le matériel](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protégez et maintenez l’intégrité d’un système au démarrage et pendant son exécution. Valider l’intégrité du système par le biais d’une attestation locale et distante. Utilisez l’isolation de conteneur pour Microsoft Edge pour vous protéger contre les sites web malveillants. |
 | [Contrôle d’application](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Utilisez le contrôle d’application pour que vos applications gagnent en confiance pour pouvoir s’exécuter. |
-| [Accès contrôlé aux dossiers](controlled-folders.md) | Empêcher les applications malveillantes ou suspectes (notamment les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système clés (nécessite Antivirus Microsoft Defender) |
+| [Accès contrôlé aux dossiers](controlled-folders.md) | Empêcher les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système clés (nécessite Antivirus Microsoft Defender) |
 | [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite une Antivirus Microsoft Defender) |
 | [Exploit Protection](exploit-protection.md) | Protéger les systèmes d’exploitation et les applications que votre organisation utilise contre l’exploitation. Exploit Protection fonctionne également avec des solutions antivirus tierces. |
-| [Règles de réduction de la surface d’attaque](attack-surface-reduction.md) | Réduisez les vulnérabilités (surfaces d’attaque) dans vos applications grâce à des règles intelligentes qui permettent d’arrêter le programme malveillant. (Nécessite une Antivirus Microsoft Defender). |
+| [Règles de réduction de la surface d’attaque](attack-surface-reduction.md) | Réduisez les vulnérabilités (surfaces d’attaque) de vos applications grâce à des règles intelligentes qui permettent d’arrêter le programme malveillant. (Nécessite une Antivirus Microsoft Defender). |
 | [Contrôle des appareils](device-control-report.md) | Protège contre la perte de données en surveillant et en contrôlant les médias utilisés sur les appareils, tels que le stockage amovible et les lecteurs USB, dans votre organisation. |

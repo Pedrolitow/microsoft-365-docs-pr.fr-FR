@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez comment l’isolation et le contrôle d’accès fonctionnent pour conserver les données de plusieurs clients isolés les uns des autres au sein Azure Active Directory.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 198e1f37a7378d14d5a4ad28d5bce9d480b2c49e
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: e48ffaee5927010aa9e2cea2d231a194a33008d1d0c0ca7ed260fe6adc3c834b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864561"
 ---
 # <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Microsoft 365 Isolation et contrôle d’accès dans Azure Active Directory
 
@@ -47,6 +47,6 @@ En outre, aucun composant d’application ne peut s’exécuter à partir d’Az
 
 Par défaut, Azure AD ne permet pas toutes les opérations émises par des identités dans d’autres locataires. Chaque client est logiquement isolé dans Azure AD par le biais de contrôles d’accès basés sur les revendications. Les lectures et écritures de données d’annuaire sont limitées aux conteneurs clients et sont limitées par une couche d’abstraction interne et une couche de contrôle d’accès basé sur un rôle (RBAC), qui appliquent ensemble le client en tant que limite de sécurité. Chaque demande d’accès aux données d’annuaire est traitée par ces couches et chaque demande d’accès dans Microsoft 365 est traitée par la logique ci-dessus.
 
-Azure AD dispose de partitions d’Amérique du Nord, du gouvernement américain, de l’Union européenne, de l’Allemagne et du monde entier. Un client existe dans une partition unique et les partitions peuvent contenir plusieurs locataires. Les informations de partition sont extraites des utilisateurs. Une partition donnée (y compris tous les clients qu’elle comprend) est répliquée dans plusieurs centres de données. La partition d’un client est choisie en fonction des propriétés du client (par exemple, le code pays). Les secrets et autres informations sensibles de chaque partition sont chiffrés avec une clé dédiée. Les clés sont générées automatiquement lors de la création d’une nouvelle partition.
+Azure AD dispose de partitions d’Amérique du Nord, du gouvernement américain, de l’Union européenne, de l’Allemagne et du monde entier. Un client existe dans une partition unique et les partitions peuvent contenir plusieurs locataires. Les informations de partition sont extraites des utilisateurs. Une partition donnée (y compris tous les clients qu’elle comprend) est répliquée vers plusieurs centres de données. La partition d’un client est choisie en fonction des propriétés du client (par exemple, le code pays). Les secrets et autres informations sensibles de chaque partition sont chiffrés avec une clé dédiée. Les clés sont générées automatiquement lors de la création d’une nouvelle partition.
 
 Les fonctionnalités système Azure AD sont une instance unique de chaque session utilisateur. En outre, Azure AD utilise des technologies de chiffrement pour isoler les ressources système partagées au niveau du réseau afin d’empêcher le transfert non autorisé et involontaire d’informations.

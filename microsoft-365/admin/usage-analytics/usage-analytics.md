@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenez une vue d’ensemble de la façon dont votre organisation adopte Microsoft 365 services pour communiquer et collaborer.
-ms.openlocfilehash: 9e1518d85a583af100ea2734fdc1f526599e55b82882733c4516c7f88dcc2451
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c2c81f1be38e0fe203b270eb132bff52be4482a7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887903"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256261"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 
@@ -50,17 +50,17 @@ Ce résumé vous permet de comprendre rapidement les modèles d’utilisation Of
 
 ![Image du résumé de Microsoft 365 l’utilisation.](../../media/office365usage-exec-summary.png)
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Aperçu
 
 Le rapport Microsoft 365 vue d’ensemble contient les rapports suivants. Vous pouvez les afficher en choisissant l’onglet en haut de la page du rapport. Toutes les valeurs du mois affichées dans la section supérieure du rapport font référence au dernier mois complet.
 
-- **Adoption** &ndash; Offre un résumé complet des tendances d’adoption. Utilisez les rapports de cette section pour découvrir comment vos utilisateurs ont adopté Microsoft 365, ainsi que la façon dont l’utilisation globale des services individuels a changé au fil des mois. Vous pouvez voir comment les utilisateurs peuvent être activés, combien de personnes de votre organisation utilisent activement Microsoft 365, combien sont ceux qui retournent des utilisateurs et combien utilisent le produit pour la première fois.
+- **Adoption** &ndash; Offre un résumé complet des tendances d’adoption. Utilisez les rapports de cette section pour découvrir comment vos utilisateurs ont adopté Microsoft 365, ainsi que la façon dont l’utilisation globale des services individuels a changé au fil des mois. Vous pouvez voir comment les utilisateurs peuvent être activés, combien de personnes de votre organisation utilisent activement Microsoft 365, combien retournent des utilisateurs et combien utilisent le produit pour la première fois.
 
 - **Utilisation** &ndash; Offre une vue d’drill-down du volume d’utilisateurs actifs et des activités clés de chaque produit au cours des 12 derniers mois. Utilisez les rapports de cette section pour découvrir comment les membres de votre organisation utilisent Microsoft 365.
 
 - **Communication** &ndash; Vous pouvez voir d’un coup d’œil si les membres de votre organisation préfèrent rester en contact en utilisant Teams, Yammer, e-mail ou Skype appels. Vous pouvez observer s’il existe des changements de modèles dans l’utilisation des outils de communication entre vos employés. 
 
-- **Collaboration** &ndash; Découvrez comment les membres de votre organisation utilisent OneDrive et SharePoint pour stocker des documents et collaborer les uns avec les autres, et comment ces tendances évoluent mois après mois. Vous pouvez également voir combien d’utilisateurs ont partagé des documents en interne ou en externe et combien d’utilisateurs ont utilisé des sites SharePoint ou des comptes OneDrive, décomposés par des propriétaires et d’autres collaborateurs.
+- **Collaboration** &ndash; Découvrez comment les membres de votre organisation utilisent OneDrive et SharePoint pour stocker des documents et collaborer les uns avec les autres, et comment ces tendances évoluent mois après mois. Vous pouvez également voir le nombre d’utilisateurs qui ont partagé des documents en interne ou en externe, ainsi que le nombre d’utilisateurs qui ont utilisé des sites SharePoint ou des comptes OneDrive, décomposés par des propriétaires et d’autres collaborateurs.
 
 - **Stockage** &ndash; Utilisez ce rapport pour suivre le stockage cloud pour les boîtes aux lettres, OneDrive et SharePoint sites.
 
@@ -80,7 +80,7 @@ Ce rapport contient un rapport distinct pour chaque service Microsoft 365, notam
 
 ## <a name="user-activity"></a>Activité utilisateur
 
-Les rapports d’activité des utilisateurs sont disponibles pour certains services individuels. Ces rapports fournissent des données d’utilisation détaillées au niveau de l’utilisateur jointes à des attributs Active Directory. En outre, le rapport Adoption du service vous permet de découper par attributs Active Directory afin de pouvoir voir les utilisateurs actifs dans tous les services individuels. Toutes les mesures sont agrégées pour le dernier mois complet. Pour afficher la date du contenu, accédez à la page du tableau et sélectionnez la table UserActivity où la valeur sous TimeFrame fournit la période de rapport. 
+Les rapports d’activité des utilisateurs sont disponibles pour certains services individuels. Ces rapports fournissent des données d’utilisation détaillées au niveau de l’utilisateur jointes aux attributs Active Directory. En outre, le rapport Adoption du service vous permet de découper par attributs Active Directory afin de pouvoir voir les utilisateurs actifs dans tous les services individuels. Toutes les mesures sont agrégées pour le dernier mois complet. Pour afficher la date du contenu, accédez à la page du tableau et sélectionnez la table UserActivity où la valeur sous TimeFrame fournit la période de rapport. 
 
 ## <a name="faq"></a>FAQ
 
@@ -95,7 +95,7 @@ Le rôle Lecteur de rapports de synthèse de l’utilisation permet uniquement d
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Qui peut se connecter aux analyses de l'utilisation de Microsoft 365 ?
 
-Vous devez être un administrateur global, un  administrateur **Exchange,** un administrateur **Skype Entreprise,**  un administrateur **SharePoint,** un lecteur global ou un lecteur de rapports pour établir la connexion à l’application de modèle.  Pour plus [d’informations, voir](../add-users/about-admin-roles.md) à propos des rôles d’administrateur.
+Vous devez être un administrateur global, un  administrateur **Exchange,** un administrateur **Skype Entreprise,**  un administrateur **SharePoint,** un lecteur global ou un lecteur de rapports afin d’établir la connexion à l’application de modèle.  Pour plus [d’informations, voir](../add-users/about-admin-roles.md) à propos des rôles d’administrateur.
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>Qui pouvez personnaliser les rapports d’analyse de l’utilisation ?
 
@@ -111,7 +111,7 @@ Vous pouvez accéder au fichier pbit à partir du Centre [de téléchargement Mi
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>Qui pouvez-vous afficher les tableaux de bord et les rapports ?
 
-Si vous vous êtes connecté à l’application de modèle, vous pouvez la partager avec n’importe qui à l’aide de la fonctionnalité [de partage.](/power-bi/collaborate-share/service-share-dashboards) Power BI licences nécessite que l’utilisateur partage et l’utilisateur avec lequel un tableau de bord est partagé Power BI Pro ou Power BI Premium.
+Si vous vous êtes connecté à l’application de modèle, vous pouvez la partager avec toute personne à l’aide de la fonctionnalité [de partage.](/power-bi/collaborate-share/service-share-dashboards) Power BI licences nécessite que l’utilisateur partage et l’utilisateur avec lequel un tableau de bord est partagé Power BI Pro ou Power BI Premium.
 
 ### <a name="can-anyone-share-the-dashboard-or-does-it-have-to-be-the-person-who-connected-to-the-dashboard"></a>N'importe qui peut-il partager le tableau de bord ou doit-il s'agir obligatoirement de la personne qui s'est connectée au tableau de bord ?
 
@@ -123,7 +123,7 @@ Oui. Pour permettre à un groupe d’administrateurs de travailler ensemble sur 
 
 ### <a name="for-which-timeframe-is-data-available"></a>Pour quelle période des données sont-elles disponibles ?
 
-La majorité des rapports affichent des données pour les 12 mois précédents. Toutefois, certains graphiques peuvent afficher moins d’historique, car la collecte de données pour différents produits et rapports a été démarrée à différents moments et les données pour les 12 mois complets risquent de ne pas être disponibles. Tous les rapports finiront par créer jusqu’à 12 mois d’historique. Les rapports qui indiquent les détails au niveau de l’utilisateur indiquent les données du mois complet précédent.
+La majorité des rapports affichent des données pour les 12 mois précédents. Toutefois, certains graphiques peuvent afficher moins d’historique car la collecte de données pour différents produits et rapports a été démarrée à différents moments et par conséquent, les données pour les 12 mois complets risquent de ne pas être disponibles. Tous les rapports finiront par créer jusqu’à 12 mois d’historique. Les rapports qui indiquent les détails au niveau de l’utilisateur indiquent les données du mois complet précédent.
 
 ### <a name="what-data-is-included-in-the-template-app"></a>Quelles données sont incluses dans l’application de modèle ?
 
@@ -137,11 +137,11 @@ En outre, les détails au niveau de l’utilisateur dans l’application de mod�
 
 ### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>Quand dois-je utiliser l’application de modèle et quand les rapports d’utilisation ?
 
-Les [rapports d’activité](../activity-reports/activity-reports.md) sont un bon point de départ pour comprendre l’utilisation et l’adoption Microsoft 365. L’application de modèle combine les données d’utilisation Microsoft 365 et les informations Active Directory de votre organisation et permet aux administrateurs d’analyser le jeu de données à l’aide des fonctionnalités d’analyse visuelle de Power BI. Cela permet aux administrateurs non seulement de visualiser et d’analyser Microsoft 365 d’utilisation, mais également de les découper par propriétés Active Directory telles que les services, l’emplacement, etc. Ils peuvent également créer des rapports personnalisés et partager les informations au sein de leur organisation. 
+Les [rapports d’activité](../activity-reports/activity-reports.md) sont un bon point de départ pour comprendre l’utilisation et l’adoption des Microsoft 365. L’application de modèle combine les données d’utilisation Microsoft 365 et les informations Active Directory de votre organisation et permet aux administrateurs d’analyser le jeu de données à l’aide des fonctionnalités d’analyse visuelle de Power BI. Cela permet aux administrateurs non seulement de visualiser et d’analyser Microsoft 365 d’utilisation, mais également de les découper par propriétés Active Directory telles que les services, l’emplacement, etc. Ils peuvent également créer des rapports personnalisés et partager les informations au sein de leur organisation. 
 
 ### <a name="how-often-is-the-data-refreshed"></a>À quelle fréquence les données sont-elles actualisées ? 
 
-Lorsque vous vous connectez à l’application de modèle pour la première fois, elle se remplit automatiquement avec vos données pour les 12 mois précédents. Après cela, les données du modèle d’application sont actualisées toutes les semaines. Les clients peuvent choisir de modifier la planification d’actualisation si leur utilisation de ces données exige un rythme de mise à jour différent.
+Lorsque vous vous connectez à l’application de modèle pour la première fois, elle se remplit automatiquement avec vos données pour les 12 mois précédents. Après cela, les données de l’application de modèle seront actualisées toutes les semaines. Les clients peuvent choisir de modifier la planification d’actualisation si leur utilisation de ces données exige un rythme de mise à jour différent.
 
 Le service d’Microsoft 365 de base actualisera les données quotidiennement et fournit des données qui sont latentes entre 5 et 8 jours à partir de la date actuelle.
 
@@ -161,9 +161,9 @@ La version actuelle de l’application de modèle inclut l’utilisation de Outl
 
 ### <a name="when-will-an-updated-version-of-the-template-app-become-available"></a>Quand une version mise à jour de l’application de modèle sera-t-elle disponible ?
 
-Les principales modifications apportées à l’application de modèle sont publiées deux fois par an, ce qui peut inclure de nouveaux rapports ou de nouvelles données. Les modifications mineures apportées aux rapports peuvent être publiées plus fréquemment.
+Des modifications majeures de l’application de modèle seront publiées deux fois par an, ce qui peut inclure de nouveaux rapports ou de nouvelles données. Les modifications mineures apportées aux rapports peuvent être publiées plus fréquemment.
 
-### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>Est-il possible d’intégrer les données de l’application modèle dans des solutions existantes ? 
+### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>Est-il possible d’intégrer les données de l’application de modèle dans des solutions existantes ? 
 
 Les données dans l’application de modèle peuvent être récupérées via les API Microsoft 365 de données (en prévisualisation). Lorsqu’ils sont produits en production, ils sont fusionnés dans les API de création de rapports [Graph Microsoft.](https://go.microsoft.com/fwlink/p/?linkid=848843) 
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0e44e876c6eadc4c1b95081091346ce20ad4493bb0c258958fdbc1346e9659f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66f9f571411c61bd8944ceb01a13f237ecd1d483
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867913"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255781"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur
 
@@ -36,11 +36,11 @@ Vous pouvez utiliser la stratégie de groupe pour empêcher les utilisateurs sur
 
 ## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Masquer l’interface Antivirus Microsoft Defender de données
 
-Dans Windows 10 versions 1703, le masquage de l’interface masquera les notifications Antivirus Microsoft Defender et empêchera l’apparition de la vignette de protection contre les menaces & virus dans l’application Sécurité Windows.
+Dans Windows 10 versions 1703, le masquage de l’interface masquera les notifications Antivirus Microsoft Defender et empêchera l’apparition de la vignette de protection contre les menaces virus & dans l’application Sécurité Windows.
 
 Avec le paramètre activé **:**
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Sécurité Windows sans l’icône de bouclier et la section protection contre les virus et menaces":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="Capture d’écran Sécurité Windows sans l’icône de bouclier et les sections de protection contre les virus et menaces":::
 
 Avec le paramètre désactivé **ou** non configuré :
 

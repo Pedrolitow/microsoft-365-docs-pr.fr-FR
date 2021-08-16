@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a5a2170652302aceab9789b3eb8ee0d8b15df6db
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b439976ea0d3b0d79f98cba1a719d1210c7eb2f165d989983661aad878f978b8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650462"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889698"
 ---
 # <a name="log-in-to-jamf-pro"></a>Connectez-vous à Jamf Pro
 

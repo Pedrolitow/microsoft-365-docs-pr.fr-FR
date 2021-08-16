@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c728456fc4052f4ec8dfca29ddc28f6e26decd19
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 66b1071ab4d075160a78a125b6b6fa1202769c52df586a45acfc6e74f0cca5e0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906574"
 ---
 # <a name="payment-information-for-botswana"></a>Informations de paiement pour le Botswana
 

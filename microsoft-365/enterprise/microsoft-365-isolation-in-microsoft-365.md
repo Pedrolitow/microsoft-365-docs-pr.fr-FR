@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Résumé : Explication de l’isolation et du contrôle d’accès au sein des différentes applications de Microsoft 365.'
-ms.openlocfilehash: 53f60c09b94bdcc2515bcc5ff70dfbcd47f42bb4
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 6f8a668c1d479d249a85b889689f61f20f2a050beb1dcaf50f51d660631b5cc4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332327"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864378"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Isolation et contrôle d’accès dans Microsoft 365
 
@@ -35,7 +35,7 @@ Microsoft 365 utilise à la fois le stockage physique et le stockage cloud Azure
 
 ## <a name="exchange-online"></a>Exchange Online
 
-Exchange Online stocke les données client dans les boîtes aux lettres. Les boîtes aux lettres sont hébergées dans des bases de données ESE (Extensible Stockage Engine) appelées bases de données de boîtes aux lettres. Cela inclut les boîtes aux lettres utilisateur, les boîtes aux lettres liées, les boîtes aux lettres partagées et les boîtes aux lettres de dossiers publics. Les boîtes aux lettres utilisateur incluent des Skype Entreprise de contenu enregistrés, tels que les historiques de conversation.
+Exchange Online stocke les données client dans les boîtes aux lettres. Les boîtes aux lettres sont hébergées dans des bases de données ESE (Extensible Stockage Engine) appelées bases de données de boîtes aux lettres. Cela inclut les boîtes aux lettres utilisateur, les boîtes aux lettres liées, les boîtes aux lettres partagées et les boîtes aux lettres de dossiers publics. Les boîtes aux lettres utilisateur incluent des Skype Entreprise de contenu enregistrés, tels que des historiques de conversation.
 
 Le contenu de la boîte aux lettres de l’utilisateur inclut :
 
@@ -43,7 +43,7 @@ Le contenu de la boîte aux lettres de l’utilisateur inclut :
 - Informations de calendrier et de libre/occupé
 - Contacts
 - Tâches
-- Notes
+- Remarques
 - Groupes
 - Données d’inférence
 
@@ -54,14 +54,14 @@ Chaque base de données de boîtes aux lettres Exchange Online contient des boî
 Skype Entreprise stocke les données à différents endroits :
 
 - Les informations utilisateur et de compte, qui incluent les points de terminaison de connexion, les ID de client, les plans de numérotation, les paramètres d’itinérance, l’état de présence, les listes de contacts, etc., sont stockées sur les serveurs Active Directory Skype Entreprise et dans différents serveurs de base de données Skype Entreprise. Les listes de contacts sont stockées dans la boîte aux lettres Exchange Online de l’utilisateur si l’utilisateur est activé pour les deux produits, ou sur des serveurs Skype Entreprise si ce n’est pas le cas. Skype Entreprise serveurs de base de données ne sont pas partitionés par client, mais l’isolation des données par plusieurs clients est appliquée via le contrôle d’accès basé sur un rôle (RBAC).
-- Le contenu de réunion et les données téléchargées sont stockés sur des partages de système de fichiers distribués (DFS). Ce contenu peut également être archivé dans Exchange Online si activé. Les partages DFS ne sont pas partitionés par client. Le contenu est sécurisé avec des AAC et l’location multiple est appliquée par le biais du RBAC.
+- Le contenu de réunion et les données téléchargées sont stockés sur des partages de système de fichiers distribués (DFS). Ce contenu peut également être archivé dans Exchange Online s’il est activé. Les partages DFS ne sont pas partitionés par client. Le contenu est sécurisé avec des AAC et l’location multiple est appliquée par le biais du RBAC.
 - Les enregistrements des détails des appels, qui sont l’historique des activités, tels que l’historique des appels, les sessions de messagerie instantanée, le partage d’application, l’historique de messagerie instantanée, etc., peuvent également être stockés dans Exchange Online, mais la plupart des enregistrements des détails des appels sont temporairement stockés sur des serveurs d’enregistrement des détails des appels. Le contenu n’est pas partitioné par client, mais l’location multiple est appliquée par le biais du RBAC.
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-SharePoint Online dispose de plusieurs mécanismes indépendants qui assurent l’isolation des données. Il stocke les objets sous forme de code abstrait dans les bases de données d’application. Par exemple, lorsqu’un utilisateur télécharge un fichier vers SharePoint Online, le fichier est désassembl, converti en code d’application et stocké dans plusieurs tables dans plusieurs bases de données.
+SharePoint Online dispose de plusieurs mécanismes indépendants qui assurent l’isolation des données. Il stocke les objets sous forme de code abstrait dans les bases de données d’application. Par exemple, lorsqu’un utilisateur télécharge un fichier vers SharePoint Online, le fichier est désassembler, converti en code d’application et stocké dans plusieurs tables sur plusieurs bases de données.
 
-Si un utilisateur peut accéder directement au stockage contenant les données, le contenu n’est pas interprétable par un système humain ou autre que SharePoint Online. Ces mécanismes incluent le contrôle d’accès à la sécurité et les propriétés. Toutes SharePoint en ligne sont sécurisées par le code d’autorisation et la stratégie RBAC, y compris au sein d’une location. La liste de contrôle d’accès (ACL) qui sécurisation une ressource contient une identité authentifiée au niveau du client. SharePoint Les données en ligne d’un client sont limitées aux identités authentifiées par le fournisseur d’authentification du client.
+Si un utilisateur peut accéder directement au stockage contenant les données, le contenu n’est pas interprétable par un système humain ou autre que SharePoint Online. Ces mécanismes incluent le contrôle d’accès de sécurité et les propriétés. Toutes SharePoint en ligne sont sécurisées par le code d’autorisation et la stratégie RBAC, y compris au sein d’une location. La liste de contrôle d’accès (ACL) qui sécurisation une ressource contient une identité authentifiée au niveau du client. SharePoint Les données en ligne d’un client sont limitées aux identités authentifiées par le fournisseur d’authentification du client.
 
 Outre les ACA, une propriété au niveau du client qui spécifie le fournisseur d’authentification (qui est azure AD propre au client) est écrite une seule fois et ne peut pas être modifiée une fois définie. Une fois que la propriété du client du fournisseur d’authentification a été définie pour un client, elle ne peut pas être modifiée à l’aide d’API exposées à un client.
 
@@ -69,13 +69,13 @@ Un *SubscriptionId* unique est utilisé pour chaque client. Tous les sites clien
 
 SharePoint Online utilise les SQL Server et stockage Azure stockage des métadonnées de contenu. La clé de partition pour le magasin de contenu est *SiteId* dans SQL. Lors de l’exécution SQL requête, SharePoint Online utilise un *SiteId* vérifié dans le cadre d’une vérification *SubscriptionId* au niveau du client.
 
-SharePoint Online stocke le contenu de fichier chiffré dans Microsoft Azure blobs. Chaque batterie SharePoint Online possède son propre compte Microsoft Azure et tous les objets blob enregistrés dans Azure sont chiffrés individuellement avec une clé stockée dans le magasin de contenu SQL. Clé de chiffrement protégée dans le code par la couche d’autorisation et non exposée directement à l’utilisateur final. SharePoint Online dispose d’une surveillance en temps réel pour détecter lorsqu’une demande HTTP lit ou écrit des données pour plusieurs clients. L’identité de la demande *SubscriptionId* est suivi par rapport à *l’SubscriptionId* de la ressource accessible. Les demandes d’accès aux ressources de plusieurs clients ne doivent jamais avoir lieu par les utilisateurs finaux. Les demandes de service dans un environnement multi-clients sont la seule exception. Par exemple, le robot de recherche tire les modifications de contenu d’une base de données entière en même temps. Cela implique généralement l’interrogation de sites de plusieurs clients dans une demande de service unique, ce qui est effectué pour des raisons d’efficacité.
+SharePoint Online stocke le contenu de fichier chiffré dans Microsoft Azure blobs. Chaque batterie SharePoint Online possède son propre compte Microsoft Azure et tous les objets blob enregistrés dans Azure sont chiffrés individuellement avec une clé stockée dans le magasin de contenu SQL. Clé de chiffrement protégée dans le code par la couche d’autorisation et non exposée directement à l’utilisateur final. SharePoint Online dispose d’une surveillance en temps réel pour détecter lorsqu’une demande HTTP lit ou écrit des données pour plusieurs clients. L’identité de la *demande SubscriptionId* est suivi par rapport à *l’SubscriptionId* de la ressource accessible. Les demandes d’accès aux ressources de plusieurs clients ne doivent jamais se produire par les utilisateurs finaux. Les demandes de service dans un environnement multi-clients sont la seule exception. Par exemple, le robot de recherche tire les modifications de contenu d’une base de données entière en même temps. Cela implique généralement l’interrogation de sites de plusieurs clients dans une demande de service unique, ce qui est effectué pour des raisons d’efficacité.
 
 ## <a name="teams"></a>Teams
 
 Vos Teams sont stockées différemment, en fonction du type de contenu. 
 
-Consultez la [session de coupure Ignite sur Microsoft Teams’architecture](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) pour une discussion approfondie.
+Consultez la [session de discussion Ignite sur Microsoft Teams’architecture](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) pour une discussion approfondie.
 
 ### <a name="core-teams-customer-data"></a>Données principales Teams client
 
@@ -95,7 +95,7 @@ Les messages vocaux sont stockés dans Exchange. Les contacts sont stockés dans
 
 #### <a name="images-and-media"></a>Images et médias
 
-Le média utilisé dans les conversations (à l’exception des GIF Giphy qui ne sont pas stockés mais qui sont un lien de référence vers l’URL du service Giphy d’origine, Giphy est un service non Microsoft) est stocké dans un service multimédia Azure qui est déployé aux mêmes emplacements que le service de conversation.
+Le média utilisé dans les conversations (à l’exception des GIF Giphy qui ne sont pas stockés mais qui sont un lien de référence vers l’URL du service Giphy d’origine, Giphy est un service non-Microsoft) est stocké dans un service multimédia Azure qui est déployé aux mêmes emplacements que le service de conversation.
 
 #### <a name="files"></a>Fichiers
 

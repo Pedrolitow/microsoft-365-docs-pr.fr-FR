@@ -16,19 +16,19 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: Cet article fournit des conseils pour optimiser les performances réseau pour les utilisateurs chinois Microsoft 365 clients.
-ms.openlocfilehash: f48b552dec72d78e2429aedf6a3834dba6c7590a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 36ae5bf08cfb529c7c6a23b5b3c1a8e17c73f412a0de196296b14226d5ec88a8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844501"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864321"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 optimisation des performances globales des clients pour les utilisateurs chinois
 
 > [!IMPORTANT]
-> Ces conseils sont spécifiques aux scénarios d’utilisation dans lesquels les utilisateurs **Microsoft 365** entreprise situés en Chine se connectent à un client **Microsoft 365 global.** Ces instructions ne **s’appliquent** pas aux locataires Office 365 gérés par 21Vianet.
+> Ces conseils sont spécifiques aux scénarios d’utilisation dans lesquels les utilisateurs **Microsoft 365** entreprise situés en Chine se connectent à un **client Microsoft 365 global.** Ces instructions ne **s’appliquent** pas aux locataires Office 365 gérés par 21Vianet.
 
-Pour les entreprises avec des clients Microsoft 365 globaux et une présence d’entreprise en Chine, les performances des clients Microsoft 365 pour les utilisateurs basés en Chine peuvent être compliquées par des facteurs propres à l’architecture Internet de China Telco.
+Pour les entreprises avec des clients Microsoft 365 globaux et une présence d’entreprise en Chine, les performances du client Microsoft 365 pour les utilisateurs basés en Chine peuvent être compliquées par des facteurs propres à l’architecture Internet de China Telco.
 
 Les fournisseurs de services Internet chinois ont des connexions réglementées à internet public mondial qui traversent des périphériques de périmètre qui sont sujets à des niveaux élevés de congestion du réseau erréglementé. Cette congestion crée une perte de paquets et une latence pour tout le trafic Internet en entrée et en sortie de chine.
 
@@ -47,7 +47,7 @@ De nombreuses entreprises nationaux Microsoft 365 clients et utilisateurs en Chi
 
 Dans un premier temps, il est essentiel de suivre nos recommandations réseau de référence sur la planification réseau et l’optimisation des performances [pour Microsoft 365](./network-planning-and-performance.md). L’objectif principal doit être d’éviter d’accéder aux services de Microsoft 365 globaux à partir d’Internet en Chine si possible.
 
-- Tirez parti de votre réseau privé existant pour Microsoft 365 trafic réseau entre les réseaux de bureaux chinois et les emplacements géographiques qui sont en sortie sur Internet public en dehors de la Chine. Presque n’importe quel emplacement en dehors de la Chine sera clairement avantageux. Les administrateurs réseau peuvent optimiser davantage en dégressant dans les zones où la latence faible est interconnectée avec [le réseau global Microsoft.](/azure/networking/microsoft-global-network) Hong Kong, le Japon et la Corée du Sud sont des exemples.
+- Tirez parti de votre réseau privé existant pour transporter Microsoft 365 trafic réseau entre les réseaux de bureaux chinois et les emplacements géographiques qui sont en sortie sur Internet public en dehors de la Chine. Presque n’importe quel emplacement en dehors de la Chine sera clairement avantageux. Les administrateurs réseau peuvent optimiser davantage en dégressant dans les zones où la latence faible est interconnectée avec [le réseau global Microsoft.](/azure/networking/microsoft-global-network) Hong Kong, le Japon et la Corée du Sud sont des exemples.
 - Configurez les appareils utilisateur pour accéder au réseau d’entreprise sur une connexion VPN pour autoriser le trafic Microsoft 365 transiter par le lien privé privé du réseau d’entreprise. Assurez-vous que les clients VPN ne sont pas configurés pour utiliser la tunnellation fractionnée ou que les appareils utilisateur sont configurés pour ignorer la tunnellation fractionnée pour Microsoft 365 trafic. Pour plus d’informations sur l’optimisation de la connectivité VPN pour Teams trafic multimédia en temps réel et en temps réel, consultez [cette section.](#optimizing-microsoft-teams-meetings-network-performance-for-users-in-china)
 - Configurez votre réseau pour router tout le trafic Microsoft 365 sur votre lien privé privé. Si vous devez réduire le volume de trafic sur votre lien privé, vous pouvez choisir  de  router uniquement les points de terminaison dans la catégorie Optimiser et d’autoriser les demandes de points de terminaison Autoriser et Par défaut à transiter sur Internet.  Cela permet d’améliorer les performances et de réduire la consommation de bande passante en limitant le trafic optimisé aux services critiques les plus sensibles à la latence élevée et à la perte de paquets.
 - Si possible, utilisez UDP au lieu de TCP pour le trafic de diffusion multimédia en direct, par exemple pour Teams. UDP offre de meilleures performances de diffusion multimédia en direct que TCP.
@@ -79,10 +79,10 @@ Par conséquent, Microsoft s’est associé à des fournisseurs de télécommuni
 
 Vous devez réfléchir à la façon de tirer parti de ces améliorations réseau, étant donné que les instructions précédentes pour envisager une extension de réseau privé afin d’éviter la congestion du réseau entre les frontières. Il existe deux options générales pour les réseaux Office de l’organisation :
 
-1. Ne rien faire de nouveau. Continuez à suivre les instructions précédentes concernant la déviation du réseau privé pour éviter la congestion 2-3. Teams trafic multimédia en temps réel tirera parti de cette configuration, comme auparavant.
+1. Ne rien faire de nouveau. Continuez à suivre les instructions précédentes concernant la déviation du réseau privé afin d’éviter la congestion croisée. Teams trafic multimédia en temps réel tirera parti de cette configuration, comme auparavant.
 2. Implémenter un modèle partagé/hybride.
    - Utilisez les instructions précédentes pour tout le trafic marqué pour l’optimisation, à l’exception Teams réunions et l’appel du trafic multimédia en temps réel.
-   - Routez Teams réunion et appelant le trafic multimédia en temps réel sur Internet public. Consultez les informations suivantes pour plus d’informations sur l’identification du trafic réseau multimédia en temps réel.
+   - Routez Teams réunion et appelez le trafic multimédia en temps réel sur Internet public. Consultez les informations suivantes pour plus d’informations sur l’identification du trafic réseau multimédia en temps réel.
 
 L’envoi d’un trafic audio et vidéo multimédia en temps réel sur Internet public, qui utilise une connectivité de qualité supérieure, peut entraîner des économies considérable, car il est gratuit ou payant d’envoyer ce trafic sur un réseau privé. Teams Il peut y avoir des avantages supplémentaires similaires si les utilisateurs utilisent également des clients SDWAN ou VPN. En règle générale, certaines organisations préfèrent que davantage de données traversent des connexions Internet publiques.
 
@@ -90,9 +90,9 @@ Les mêmes options peuvent s’appliquer aux configurations SDWAN ou VPN. Par ex
 
 Vous pouvez également continuer à utiliser votre SDWAN ou VPN pour tout le trafic Microsoft 365, y compris pour Microsoft Teams trafic en temps réel. Microsoft n’a aucune recommandation sur l’utilisation de solutions SDWAN ou VPN.
 
-### <a name="home-mobile-and-user-network-best-practices-for-teams-meetings"></a>Meilleures pratiques en matière de réseau famille, mobile et utilisateur pour Teams réunions
+### <a name="home-mobile-and-user-network-best-practices-for-teams-meetings"></a>Meilleures pratiques en matière de réseau d’accueil, de mobilité et d’utilisateur pour Teams réunions
 
-Les utilisateurs chinois peuvent tirer parti de ces améliorations simplement en se connectant au service Internet public en Chine avec une connexion fixe ou mobile. Teams trafic audio et vidéo multimédia en temps réel sur Internet public bénéficie directement de l’amélioration de la connectivité et de la qualité.
+Les utilisateurs en Chine peuvent tirer parti de ces améliorations simplement en se connectant au service Internet public en Chine avec une connexion fixe ou mobile. Teams trafic audio et vidéo multimédia en temps réel sur Internet public bénéficie directement de l’amélioration de la connectivité et de la qualité.
 
 Toutefois, les données provenant d’autres services Microsoft 365 et d’autres trafics dans Teams, tels que les conversation ou les fichiers, ne bénéficieront pas directement de ces améliorations. Les utilisateurs en dehors du réseau de l’organisation peuvent encore faire l’expérience de mauvaises performances réseau pour ce trafic. Comme indiqué dans cet article, vous pouvez atténuer ces effets à l’aide d’un VPN ou de SDWAN. Vos utilisateurs peuvent également utiliser des clients de bureau enrichis sur des clients web, qui la prise en charge de la mise en cache dans l’application pour atténuer les problèmes réseau.
 
@@ -102,7 +102,7 @@ Pour configurer un périphérique réseau ou une configuration VPN/SDWAN, vous d
 
 Microsoft s’efforce continuellement d’améliorer Microsoft 365 l’expérience utilisateur et les performances des clients sur le plus large éventail possible d’architectures et de caractéristiques réseau. Visitez la Office 365 de mise en [réseau](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking) Community pour démarrer ou rejoindre une conversation, rechercher des ressources et soumettre des suggestions et des demandes de fonctionnalités
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Planification réseau et optimisation des performances pour Microsoft 365](./network-planning-and-performance.md)
 

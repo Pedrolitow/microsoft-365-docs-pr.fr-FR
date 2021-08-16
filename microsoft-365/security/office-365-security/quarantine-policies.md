@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire pour leurs messages mis en quarantaine.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c346c1e27d6ff59b6c63709d5f49e57b0cc4a3a1389facf3318a790126bd7ff5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 966136e2b4c81b188735da656ff57504ef3f6347
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824248"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256145"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -74,7 +74,7 @@ Vous créez et affectez des stratégies de mise en quarantaine dans le portail M
 
 2. Dans la page **Stratégie de** mise en quarantaine, cliquez sur Ajouter une icône de stratégie personnalisée Ajouter une ![ stratégie ](../../media/m365-cc-sc-create-icon.png) **personnalisée.**
 
-3. **L’Assistant Nouvelle stratégie** s’ouvre. Dans la page **Nom de la** stratégie, entrez un nom court mais unique dans la zone Nom de **la** stratégie. Vous devez identifier et sélectionner la stratégie de mise en quarantaine par nom dans les étapes à venir. Lorsque vous avez terminé, cliquez sur **Suivant**.
+3. **L’Assistant Nouvelle** stratégie s’ouvre. Dans la page **Nom de la** stratégie, entrez un nom court mais unique dans la zone Nom de **la** stratégie. Vous devez identifier et sélectionner la stratégie de mise en quarantaine par nom dans les étapes à venir. Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 4. Dans la page **d’accès aux messages du** destinataire, sélectionnez l’une des valeurs suivantes :
    - **Accès limité**
@@ -133,12 +133,12 @@ L’ordre et les valeurs requis pour chaque autorisation individuelle dans les g
 
 |Autorisation|Accès limité|
 |---|:---:|
-|PermissionToBlockSender|1|
-|PermissionToDelete|1|
+|PermissionToBlockSender|1 |
+|PermissionToDelete|1 |
 |PermissionToDownload<sup>\*</sup>|0|
-|PermissionToPreview|1|
+|PermissionToPreview|1 |
 |PermissionToRelease<sup>\*\*</sup>|0|
-|PermissionToRequestRelease<sup>\*\*</sup>|1|
+|PermissionToRequestRelease<sup>\*\*</sup>|1 |
 |PermissionToViewHeader<sup>\*</sup>|0|
 |Valeur binaire|01101010|
 |Valeur décimale à utiliser|106|
@@ -190,7 +190,7 @@ Pour les autorisations personnalisées, ne définissez pas les paramètres _Perm
 
 Vous pouvez également modifier une variable objet d’autorisations existante après la création, mais avant de l’utiliser à l’aide de la cmdlet **Set-QuarantinePermissions.**
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-QuarantinePermissions](/powershell/module/exchange/new-quarantinepermissions) et [Set-QuarantinePermissions.](/powershell/module/exchange/set-quarantinepermissions)
+Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, voir New-QuarantinePermissions](/powershell/module/exchange/new-quarantinepermissions) et [Set-QuarantinePermissions](/powershell/module/exchange/set-quarantinepermissions).
 
 ##### <a name="step-b-use-the-variable-in-the-new-quarantinetag-command"></a>Étape B : Utiliser la variable dans la commande New-QuarantineTag commande
 
@@ -236,7 +236,7 @@ Des instructions complètes pour la création et la modification des stratégies
 1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** Policies & \> **rules** \> **Policies** section \> **Anti-spam**. Ou, ouvrez <https://security.microsoft.com/antispam> .
 
 2. Dans la page **Stratégies anti-courrier** indésirable, faites l’une des opérations suivantes :
-   - Recherchez et sélectionnez **une** stratégie de courrier indésirable entrant existante.
+   - Recherchez et sélectionnez **une** stratégie anti-courrier indésirable entrant existante.
    - Créez une stratégie **de** courrier indésirable entrant.
 
 3. Effectuez l’une des étapes suivantes :
@@ -277,7 +277,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 
 Cet exemple crée une stratégie de filtrage du courrier indésirable nommée Research Department avec les paramètres suivants :
 
-- L’action pour tous les verdicts de filtrage du courrier indésirable est définie sur Quarantaine.
+- L’action de tous les verdicts de filtrage du courrier indésirable est définie sur Quarantaine.
 - La stratégie de mise en quarantaine  personnalisée nommée NoAccess qui attribue aucune autorisation  d’accès remplace toutes les stratégies de mise en quarantaine par défaut qui n’attribuent pas déjà aucune autorisation d’accès par défaut.
 
 ```powershell
@@ -296,7 +296,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal"></a>Configurer les paramètres globaux de notification de mise en quarantaine dans le portail Microsoft 365 Defender
 
-Les paramètres globaux des stratégies de mise en quarantaine vous permettent de personnaliser les notifications de courrier indésirable à l’utilisateur final qui sont envoyées aux destinataires des messages mis en quarantaine. Pour plus d’informations sur ces notifications, voir notifications de courrier indésirable pour [l’utilisateur final.](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+Les paramètres globaux des stratégies de mise en quarantaine vous permettent de personnaliser les notifications de courrier indésirable à l’utilisateur final qui sont envoyées aux destinataires des messages mis en quarantaine. Pour plus d’informations sur ces notifications, voir notifications de [courrier indésirable pour l’utilisateur final.](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
 1. Dans le portail Microsoft 365 Defender, sélectionnez Stratégies de mise en quarantaine & stratégies de **collaboration** sur les menaces, puis \>  \>  \>  sélectionnez **Stratégies de mise en quarantaine.**
 
@@ -304,7 +304,7 @@ Les paramètres globaux des stratégies de mise en quarantaine vous permettent d
 
 3. Dans le volant **des paramètres de notification de** mise en quarantaine qui s’ouvre, configurez tout ou partie des paramètres suivants :
 
-   - **Nom complet**: personnalisez le nom complet de l’expéditeur utilisé dans les notifications de courrier indésirable à l’utilisateur final.
+   - **Nom d’affichage**: personnalisez le nom complet de l’expéditeur utilisé dans les notifications de courrier indésirable à l’utilisateur final.
 
      Pour chaque langue que vous avez ajoutée, sélectionnez la langue dans la deuxième langue (ne cliquez pas  sur le X) et entrez la valeur de texte de votre choix dans la zone Nom complet.
 
@@ -320,7 +320,7 @@ Les paramètres globaux des stratégies de mise en quarantaine vous permettent d
 
      ![Une clause d’exclusion de responsabilité personnalisée au bas d’une notification de courrier indésirable à l’utilisateur final](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
-   - **Choisir la langue**: les notifications de courrier indésirable de l’utilisateur final sont déjà localisées en fonction des paramètres de langue du destinataire. Vous pouvez spécifier du texte personnalisé dans différentes langues pour les valeurs **Nom d’affichage** et Exclusion **de** responsabilité.
+   - **Choisir la langue**: les notifications de courrier indésirable de l’utilisateur final sont déjà localisées en fonction des paramètres de langue du destinataire. Vous pouvez spécifier du texte personnalisé dans différentes langues pour le nom **d’affichage** et les valeurs **de clause d’exclusion** de responsabilité.
 
      Sélectionnez au moins une langue dans la première langue, puis cliquez sur **Ajouter.** Vous pouvez sélectionner plusieurs langues en cliquant sur **Ajouter** après chacune d’elles. Une zone de langue de section affiche toutes les langues que vous avez sélectionnées :
 
@@ -334,7 +334,7 @@ Les paramètres globaux des stratégies de mise en quarantaine vous permettent d
 
    - Envoyer une notification de courrier indésirable à l’utilisateur final **tous les (jours)**: sélectionnez la fréquence à laquelle vous souhaitez que la notification de l’utilisateur final sorte.
 
-## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Afficher les stratégies de mise en quarantaine dans le portail Microsoft 365 Defender de mise en quarantaine
+## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Afficher les stratégies de mise en quarantaine dans le Microsoft 365 Defender web
 
 1. Dans le portail Microsoft 365 Defender, sélectionnez Stratégies de mise en quarantaine & stratégies de **collaboration** sur les menaces, puis \>  \>  \>  sélectionnez **Stratégies de mise en quarantaine.**
 
@@ -360,7 +360,7 @@ Si vous préférez utiliser PowerShell pour afficher les stratégies de mise en 
   Get-QuarantineTag -Identity "<QuarantinePolicyName>"
   ```
 
-- Pour afficher les paramètres globaux des notifications de courrier indésirable pour l’utilisateur final, exécutez la commande suivante :
+- Pour afficher les paramètres globaux des notifications de courrier indésirable à l’utilisateur final, exécutez la commande suivante :
 
   ```powershell
   Get-QuarantineTag -QuarantineTagType GlobalQuarantineTag
@@ -411,7 +411,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 2. Dans la page **Stratégie de** mise en quarantaine, sélectionnez la stratégie de mise en quarantaine personnalisée à supprimer en cliquant sur le nom.
 
-3. Après avoir sélectionné la stratégie, cliquez sur l’icône Supprimer la stratégie Icône Supprimer la stratégie ![ ](../../media/m365-cc-sc-delete-icon.png)  qui s’affiche.
+3. Après avoir sélectionné la stratégie, cliquez sur l’icône Supprimer la stratégie Icône Supprimer ![ la ](../../media/m365-cc-sc-delete-icon.png) **stratégie** qui s’affiche.
 
 4. Cliquez **sur Supprimer la stratégie** dans la boîte de dialogue de confirmation qui s’affiche.
 
@@ -438,7 +438,7 @@ Les autorisations individuelles incluses dans les groupes d’autorisations pré
 Si la stratégie de  mise en quarantaine attribue les autorisations d’accès Administrateur uniquement (aucune autorisation), les utilisateurs ne pourront pas voir les messages mis en quarantaine :
 
 - **Détails du message mis en quarantaine**: aucun message ne s’affiche dans l’affichage de l’utilisateur final.
-- **Notifications de courrier indésirable** pour l’utilisateur final : aucune notification n’est envoyée pour ces messages
+- **Notifications de courrier indésirable pour** l’utilisateur final : aucune notification n’est envoyée pour ces messages
 
 #### <a name="limited-access"></a>Accès limité
 
@@ -529,7 +529,7 @@ L’autorisation autoriser les destinataires à libérer un message de l’autor
 
 #### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>Autoriser les destinataires à demander la libération d’un message de l’autorisation de mise en quarantaine
 
-L’autorisation autoriser les destinataires à demander la libération d’un message à partir de  l’autorisation de mise en quarantaine (_PermissionToRequestRelease_) contrôle la capacité des **utilisateurs** à demander la libération de leurs messages mis en quarantaine. Le message est publié uniquement après qu’un administrateur a approuvé la demande.
+L’autorisation autoriser les destinataires à demander la libération d’un message de l’autorisation  de mise en quarantaine (_PermissionToRequestRelease_) contrôle la capacité des **utilisateurs** à demander la libération de leurs messages mis en quarantaine. Le message est publié uniquement après qu’un administrateur a approuvé la demande.
 
 - **Détails du message mis en quarantaine**:
   - Autorisation activée : le bouton **De publication** de la demande est disponible.

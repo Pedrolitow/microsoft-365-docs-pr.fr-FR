@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e4541bf39c034973057f53513afb7b5376d51b0ba7a2232f9fc5594ef64d76f0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 07b3b6174b8f99123cb4184c68fa22fdddf6ca8e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255755"
 ---
 # <a name="run-antivirus-scan-api"></a>API d’analyse antivirus
 
@@ -44,6 +44,11 @@ Lancez Antivirus Microsoft Defender analyse sur un appareil.
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+> [!IMPORTANT]
+>
+> - Cette action est disponible pour les appareils Windows 10 version 1709 ou ultérieure.
+> - Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender AV soit ou non la solution antivirus active. L’Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
 
 ## <a name="permissions"></a>Autorisations
 
@@ -70,17 +75,19 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json
 
 ## <a name="request-body"></a>Corps de la demande
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
-ScanType|Chaîne|Définit le type de l’analyse. **Obligatoire**.
+ScanType|String
+|Définit le type de l’analyse. **Obligatoire**.
 
 **ScanType** contrôle le type d’analyse à effectuer et peut être l’un des suivants :
 

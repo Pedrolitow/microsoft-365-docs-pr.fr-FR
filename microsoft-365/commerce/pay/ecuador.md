@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: df2db6704d1cbeebc5d4a90b2e4df318a9c04e53
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 970c3d35c89c4ba3debf6451641eb2b6edcef596570e97931ff005a0d6dbc9ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906494"
 ---
 # <a name="payment-information-for-ecuador"></a>Informations de paiement pour l’Équateur
 

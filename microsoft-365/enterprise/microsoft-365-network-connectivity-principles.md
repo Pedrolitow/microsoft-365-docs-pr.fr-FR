@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Cet article fournit les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8f710793dd8ce1e5a2835a05bbf366559a38a0aa
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ba808cb8bb4f71c22638950d22af6ede8170275ffaa8d84c00d8d2c54f383d43
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864407"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principes de connectivité réseau Microsoft 365
 

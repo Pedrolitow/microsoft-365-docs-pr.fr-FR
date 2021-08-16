@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 08/05/2021
-ms.openlocfilehash: 80dba315e8293e6a88e8cca7db3bbe12a30226ffb4b6daa4b9cad2343ac9e4a7
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: d8a01890ac3a42903786d161201a287f65b1715a
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523644"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256190"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -147,7 +147,7 @@ Après la publication d’une nouvelle version de package, la prise en charge de
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
     
 ### <a name="whats-new"></a>Nouveautés
-- Logique de surveillance du comportement supplémentaire
+- Logique d’analyse de comportement supplémentaire
 - Détection améliorée de l’enregistreur de clés en mode noyau
 - Ajout de nouveaux contrôles pour gérer le processus de déploiement progressif pour [les mises à jour de Microsoft Defender](manage-gradual-rollout.md)
 
@@ -239,7 +239,7 @@ Aucun problème connu
 
 - Nouvelles descriptions pour les catégories de menaces spéciales
 - Fonctionnalités d’émulation améliorées
-- Fonctionnalités améliorées d’autoriser/bloquer l’adresse hôte
+- Fonctionnalités améliorées d’autoriser/de bloquer l’adresse hôte
 - Nouvelle option dans le programme CSP Defender pour ignorer la fusion des exclusions des utilisateurs locaux
 
 ### <a name="known-issues"></a>Problèmes connus
@@ -265,7 +265,7 @@ Aucun problème connu
    - Protection du réseau sur Server 2019
    - Exclusions d’adresses IP pour la protection du réseau
 - Meilleure visibilité des mesures du TPM
-- Amélioration de Office module VBA
+- Amélioration de l Office de module VBA
 
 ### <a name="known-issues"></a>Problèmes connus
 
@@ -522,10 +522,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.2244.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant  
+- Aucune  
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -536,10 +536,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.658.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant  
+- Aucune  
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -550,10 +550,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.1923.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant  
+- Aucune  
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -564,24 +564,24 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.42.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant  
+- Aucune  
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
 
 &ensp;Version du package **: 1.1.2104.01**    
-&ensp;Version de plateforme **: 4.18.2102.4**   
+&ensp;Version de la plateforme **: 4.18.2102.4**   
 &ensp;Version du moteur **: 1.1.18000.5**  
 &ensp;Version de signature **: 1.335.232.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant  
+- Aucune  
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -592,10 +592,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.2302.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant  
+- Aucune  
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -606,10 +606,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.174.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant  
+- Aucune  
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -620,10 +620,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.329.1796.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant  
+- Aucune  
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -634,10 +634,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.1991.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant  
+- Aucune  
 <br/>
 </details><details>
 <summary>1.1.2011.02</summary>
@@ -648,7 +648,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.658.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Signatures Antivirus Microsoft Defender actualisées  
@@ -662,10 +662,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.344.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant  
+- Aucune  
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>
@@ -676,7 +676,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.2216.0**    
     
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Ajout de la prise en charge Windows 10 images d’installation du système d’exploitation RS1 ou ultérieure.  

@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes Microsoft 365 Defender service
 description: Trouver des solutions et des solutions de contournement pour les problèmes Microsoft 365 Defender connus
-keywords: résoudre les Microsoft 365 Defender, résoudre les problèmes, Microsoft Defender pour l’identité, problèmes, modules, page de paramètres
+keywords: résoudre Microsoft 365 Defender, résoudre les problèmes, Microsoft Defender pour l’identité, problèmes, module add-on, page de paramètres
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b60adc266de6b99f61712d2d8303fc22c4cb9e1bf44d99bdc66f16c2a5a09d0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c4bbc9cd47d3ceb8110a6a2f0e3136a364458abc
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792604"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255879"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Résoudre les problèmes Microsoft 365 Defender service
 
@@ -51,7 +51,7 @@ Pour plus d’informations, [voir Microsoft Defender pour l’intégration de l�
 
 ## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>Où se trouve la page des paramètres pour l’ment du service ?
 
-Pour activer la Microsoft 365 Defender, accédez **Paramètres** à partir du volet de navigation dans le centre Microsoft 365 de sécurité. Cet élément de navigation n’est visible que si vous avez les autorisations et [licences requises.](m365d-enable.md#check-license-eligibility-and-required-permissions)
+Pour activer la Microsoft 365 Defender, accédez **Paramètres** à partir du volet de navigation du portail Microsoft 365 Defender web. Cet élément de navigation n’est visible que si vous avez les [autorisations et licences requises.](m365d-enable.md#check-license-eligibility-and-required-permissions)
 
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Comment créer une exception pour mon fichier/URL ?
 

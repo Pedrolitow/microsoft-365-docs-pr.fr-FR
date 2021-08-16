@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 Skype Entreprise Server pour importer et archiver des Skype Entreprise Server dans Microsoft 365.
-ms.openlocfilehash: a536234aff66d5da1d91a9e3a85e08521246b0deb2b2df554170c1ec0b1bd59e
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: f01e0a81895bc460608ad555a9206ad91c105a20
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523804"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256048"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data-preview"></a>Configurer un connecteur pour archiver les Skype Entreprise Server de données (prévisualisation)
 
@@ -69,11 +69,11 @@ Le Skype Entreprise Server DataParser masique automatiquement les utilisateurs �
 
 ## <a name="step-4-monitor-the-skype-for-business-server-dataparser-connector"></a>Étape 4 : Surveiller le connecteur Skype Entreprise Server DataParser
 
-Après avoir créé un connecteur DataParser Skype Entreprise Server, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
+Après avoir créé un Skype Entreprise Server DataParser, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
-2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur Skype Entreprise Server DataParser que vous avez créé pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
+2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur DataParser Skype Entreprise Server que vous avez créé pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 

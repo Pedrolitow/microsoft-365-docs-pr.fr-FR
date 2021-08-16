@@ -15,13 +15,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Utilisez de grands cas dans Advanced eDiscovery pour ajouter d’autres éléments aux jeux de révision et tirer parti d’autres limites accrues.
-ms.openlocfilehash: d73ef8bd29de96fb845913e966e7d195d286b94f061e7fa492353ccfe773800f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Utilisez de grands cas dans Advanced eDiscovery vous pouvez ajouter des éléments à des jeux de révision et tirer parti d’autres limites accrues.
+ms.openlocfilehash: 592b9d60a1275be0e12ddce238621d5ef02ab06e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836444"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255860"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>Utiliser de grands cas dans Advanced eDiscovery (prévisualisation)
 
@@ -41,7 +41,7 @@ Pour créer un cas important :
 
    ![Grande option de cas dans la page Nouveau cas eDiscovery](..\media\AeDLargeCases1.png)
 
-4. Après avoir nommé le  cas, sélectionnez l’option Grand cas, puis cliquez sur **Enregistrer** pour créer le cas important.
+4. Après avoir nommé le  cas, sélectionnez l’option Grand cas, puis cliquez sur **Enregistrer** pour créer le cas de grande taille.
 
 ## <a name="benefits-of-large-cases"></a>Avantages des cas importants
 
@@ -51,7 +51,7 @@ Voici une liste des autres avantages des cas importants dans Advanced eDiscovery
 
 - **Collection**: dans le format grand format, vous pouvez collecter jusqu’à 1 To de données pour une seule collection. 
 
-   Pour chaque grand cas, les paramètres de collection collectent par défaut les pièces jointes cloud et les Teams et Yammer contenu. Ces paramètres permettent de recueillir l’image complète des communications numériques au sein d’une enquête. Pour les conversations contextuelles Teams et Yammer, le format de cas élevé convertit les captures instantanées basées sur le temps de 1:1, 1 : N et les conversations de canal en transcriptions html afin de fournir du contexte aux conversations et de réduire le nombre total d’éléments produits par le contenu basé sur la conversation.  
+   Pour chaque cas volumineux, les paramètres de collection collectent par défaut les pièces jointes cloud et les Teams et Yammer contenu. Ces paramètres permettent de recueillir l’image complète des communications numériques au sein d’une enquête. Pour les conversations contextuelles Teams et Yammer, le format de cas élevé convertit les captures instantanées basées sur le temps de 1:1, 1 : N et les conversations de canal en transcriptions html pour fournir du contexte des conversations et réduire le nombre total d’éléments produits par le contenu basé sur la conversation.  
 
 - **Révision**: chaque ensemble de révision prendra en charge jusqu’à 1 To de contenu de pré-expansion. Des métadonnées supplémentaires seront disponibles pour les filtres et les requêtes, notamment le nom de l’équipe, le nom du canal et le nom de conversation pour Teams contenu. Chaque transcription inclut un contenu basé sur le temps avant et après l’élément réactif. Pour les conversations de canal, le billet racine et toutes les réponses sont collectés pour le contenu réactif.  
 
@@ -61,11 +61,13 @@ En outre, le nouveau format de cas de grande taille inclut une interface utilisa
 
 ![Statistiques de cas de grande taille dans Advanced eDiscovery’interface utilisateur](..\media\LargeCaseUI.png)
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
-- Pour l’instant, l’option d’exportation de contenu en tant que fichiers libres et fichiers **PST n’est** pas prise en charge dans les grands cas (l’option est actuellement grisée). Cette option d’exportation sera bientôt prise en charge. Pour plus d’informations sur l’exportation de contenu, voir [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
+- L’option d’exportation de contenu en tant que fichiers libres et **fichiers PST n’est** actuellement pas prise en charge dans les grands cas (l’option est grisée). Cette option d’exportation pour les cas importants sera bientôt prise en charge. Pour plus d’informations sur l’exportation de contenu, voir [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+- L’indexation avancée qui se produit lorsque vous ajoutez des dépositaires et une source de données non privative à un cas n’est actuellement pas prise en charge dans de grands cas. Le travail d’indexation est créé, mais il ne se termine pas. L’indexation avancée dans de grands cas sera bientôt prise en charge. Pour plus d’informations sur l’indexation avancée, voir [Indexation avancée des données des dépositaires.](indexing-custodian-data.md)
+
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Si j’essaie de collecter plus de 1 To dans une seule collection, cela fonctionne-t-il ?**
 
