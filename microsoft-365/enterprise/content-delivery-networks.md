@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilisez ces informations pour découvrir comment Office 365 réseaux de distribution de contenu (CDN) pour améliorer les performances.
-ms.openlocfilehash: 1a963d14df14e8644072a159e35c8590f953dae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 853c145e616739fb9cbc1e15a9939dbc38c2b2cf1803e5bfca1b36d2dc254373
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870946"
 ---
 # <a name="content-delivery-networks-cdns"></a>Réseaux de distribution de contenu (CDN)
 
@@ -35,7 +35,7 @@ Les CDN permettent de Office 365 rapides et fiables pour les utilisateurs finaux
 
 ## <a name="what-exactly-is-a-cdn"></a>Qu’est-ce qu’un CDN ?
 
-Un CDN est un réseau distribué géographiquement constitué de serveurs proxy et de fichiers dans des centres de données connectés par des réseaux de dorsale dorsale haute vitesse. Les CDN sont utilisés pour réduire la latence et les temps de chargement d’un ensemble spécifié de fichiers et d’objets dans un site web ou un service. Un CDN peut avoir plusieurs milliers de points de terminaison pour une maintenance optimale des demandes entrantes en provenance de n’importe quel emplacement.
+Un CDN est un réseau distribué géographiquement composé de serveurs proxy et de fichiers dans des centres de données connectés par des réseaux de dorsale dorsale principal haut débit. Les CDN sont utilisés pour réduire la latence et les temps de chargement d’un ensemble spécifié de fichiers et d’objets dans un site web ou un service. Un CDN peut avoir plusieurs milliers de points de terminaison pour une maintenance optimale des demandes entrantes en provenance de n’importe quel emplacement.
 
 Les CDN sont couramment utilisés pour fournir des téléchargements plus rapides de contenu générique pour un site web ou un service tel que des fichiers javascript, des icônes et des images, et peuvent également fournir un accès privé au contenu des utilisateurs, tels que des fichiers dans des bibliothèques de documents SharePoint Online, des fichiers multimédias de diffusion en continu et du code personnalisé.
 
@@ -56,7 +56,7 @@ Les CDN permettent d’améliorer les performances du service cloud de plusieurs
 Le Office 365 réseau de distribution de contenu intégré (CDN) permet aux administrateurs Office 365 d’offrir de meilleures performances aux pages SharePoint Online de leur organisation en achant les ressources statiques plus près des navigateurs qui les demandent, ce qui permet d’accélérer les téléchargements et de réduire la latence. Le Office 365 CDN utilise [le protocole HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) pour améliorer les vitesses de compression et de téléchargement.
 
 > [!NOTE]
-> Le Office 365 CDN est uniquement disponible pour les clients dans le cloud **de production** (dans le monde). Les locataires du gouvernement des États-Unis, de la Chine et de l’Allemagne ne sont actuellement pas en charge Office 365 CDN.
+> Le Office 365 CDN est uniquement disponible pour les clients dans le cloud **de production** (dans le monde). Les locataires du gouvernement des États-Unis, de la Chine et de l’Allemagne ne peuvent pas actuellement Office 365 CDN.
 
 Le réseau de distribution de contenu Office 365 est composé de plusieurs réseaux de distribution de contenu qui vous permettent d’héberger des ressources statiques à différents emplacements (ou _origines_) et de les servir à partir de réseaux à haut débit mondiaux. Selon le type de contenu que vous souhaitez héberger sur le réseau de distribution de contenu Office 365, vous pouvez ajouter des origines **publiques**, **privées** ou les deux.
 
@@ -70,13 +70,13 @@ Le réseau de distribution de contenu Office 365 est inclus dans votre abonneme
 
 Pour plus d’informations sur l’utilisation du Office 365 CDN, voir Utiliser le réseau de distribution Office 365 contenu avec [SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
 
-Pour regarder une série de courtes vidéos qui fournissent des informations conceptuelles et HOWTO sur l’utilisation du Office 365 CDN, consultez la chaîne [YouTube modèles](https://aka.ms/sppnp-videos)et pratiques du développeur SharePoint.
+Pour regarder une série de courtes vidéos qui fournissent des informations conceptuelles et HOWTO sur l’utilisation du Office 365 CDN, visitez la chaîne [YouTube modèles](https://aka.ms/sppnp-videos)et pratiques du développeur SharePoint.
 
 ## <a name="other-microsoft-cdns"></a>Autres CDN Microsoft
 
 Bien qu’ils ne font pas partie du Office 365 CDN, vous pouvez utiliser ces CDN dans votre client Office 365 pour accéder aux bibliothèques de développement SharePoint, au code personnalisé et à d’autres fins qui n’entrent pas dans le cadre du Office 365 CDN.
 
-### <a name="azure-cdn"></a>Azure CDN
+### <a name="azure-cdn"></a>Azure CDN.
 
 >[!NOTE]
 >À compter du 3e trimestre 2020, SharePoint Online commencera la mise en cache des vidéos sur le Azure CDN afin de prendre en charge une lecture et une fiabilité améliorées de la vidéo. Les vidéos populaires sont diffusées à partir CDN point de terminaison le plus proche de l’utilisateur. Ces données resteront dans la limite de Microsoft 365 conformité. Il s’agit d’un service gratuit pour tous les clients et il ne nécessite aucune action du client à configurer.
@@ -130,7 +130,7 @@ Les CDN utilisés par les Office 365 sont toujours sujets à modification et, da
 |CDN  |Société  |Utilisation  |Liens  |
 |---------|---------|---------|---------|
 |Office 365 CDN     |Akamai         |Ressources génériques dans les origines publiques, SharePoint contenu utilisateur dans les origines privées         |[Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online](use-microsoft-365-cdn-with-spo.md)         |
-|Azure CDN     |Microsoft         |Code personnalisé, solutions SharePoint Framework personnalisées         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
+|Azure CDN.     |Microsoft         |Code personnalisé, SharePoint Framework solutions         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Microsoft Ajax CDN (lecture seule)     |Microsoft         |Bibliothèques courantes pour Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js, etc.         |[Microsoft Ajax CDN](/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>Quels gains de performances un CDN-t-il ?
@@ -156,13 +156,13 @@ Nous prenons soin de protéger les données qui gèrent votre entreprise. Les do
 Pour vous assurer que vos données restent sécurisées, nous vous recommandons de ne jamais stocker de contenu utilisateur ou d’autres données sensibles dans une CDN. Étant donné que l’accès aux données dans une CDN publique est anonyme, les CDN publics doivent uniquement être utilisés pour héberger du contenu générique tel que des fichiers de script web, des icônes, des images et d’autres ressources non sensibles.
 
 > [!NOTE]
-> Les fournisseurs CDN tiers peuvent avoir des normes de confidentialité et de conformité qui diffèrent des engagements présentés par le Centre de Office 365 de confidentialité. Les données mises en cache par le biais du service CDN peuvent ne pas être conformes aux conditions de traitement des données Microsoft (DPT) et se trouver en dehors des limites de conformité Office 365 du Centre de gestion de la confiance.
+> Les fournisseurs CDN tiers peuvent avoir des normes de confidentialité et de conformité qui diffèrent des engagements décrits par le Centre de Office 365 de confidentialité. Les données mises en cache par le biais du service CDN peuvent ne pas être conformes aux conditions de traitement des données Microsoft (DPT) et se trouver en dehors des limites de conformité Office 365 du Centre de gestion de la confiance.
 
 Pour obtenir des informations détaillées sur la confidentialité et la protection des données Office 365 CDN fournisseurs de données, consultez les informations suivantes :  
 
 - En savoir plus sur Office 365 confidentialité et la protection des données dans le Centre de gestion [de la confidentialité Microsoft](https://www.microsoft.com/trustcenter)
 - En savoir plus sur la confidentialité et la protection des données [d’Akamai](https://www.akamai.com/us/en/about/compliance/data-protection-at-akamai.jsp) dans le Centre de gestion de la confidentialité Akamai
-- En savoir plus sur azure confidentialité et protection des données dans le Centre de gestion [de la confidentialité Azure](https://azure.microsoft.com/overview/trusted-cloud/)
+- En savoir plus sur la protection des données et la confidentialité Azure dans [le Centre de gestion de la confidentialité Azure](https://azure.microsoft.com/overview/trusted-cloud/)
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Comment puis-je sécuriser mon réseau avec tous ces services tiers ?
 
@@ -180,7 +180,7 @@ Vous pouvez également utiliser l’adresse IP Office 365 et le [service Web d�
 
 Nous recherchons continuellement de nouvelles façons de répondre aux besoins de nos clients et explorons actuellement l’utilisation de solutions proxy de mise en cache et d’autres solutions CDN local.
 
-Bien qu’il ne fait pas partie de l’Office 365 CDN, vous pouvez également utiliser le **Azure CDN** pour héberger des composants Web Parts, des bibliothèques et d’autres ressources personnalisés, ce qui vous permet d’appliquer des touches d’accès rapide à votre stockage CDN et d’exercer un meilleur contrôle sur votre configuration CDN. L’utilisation du Azure CDN n’est pas gratuite et nécessite un abonnement Azure. Pour plus d’informations sur la configuration d’une instance Azure CDN, voir Démarrage rapide : intégrer un compte de stockage Azure à [Azure CDN](/azure/cdn/cdn-create-a-storage-account-with-cdn).
+Bien qu’il ne fait pas partie du Office 365 CDN, vous pouvez également utiliser le **Azure CDN** pour héberger des composants Web Parts, des bibliothèques et d’autres ressources personnalisés, ce qui vous permet d’appliquer des touches d’accès rapide à votre stockage CDN et d’exercer un contrôle accru sur votre configuration CDN. L’utilisation du Azure CDN n’est pas gratuite et nécessite un abonnement Azure. Pour plus d’informations sur la configuration d’une instance Azure CDN, voir Démarrage rapide : intégrer un compte de stockage Azure à [Azure CDN](/azure/cdn/cdn-create-a-storage-account-with-cdn).
 
 ## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>J’utilise Azure ExpressRoute pour Office 365, cela change-t-il les choses ?
 

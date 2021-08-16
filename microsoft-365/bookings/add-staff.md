@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Cette page permet de créer votre liste de membres du personnel et de gérer les détails des membres du personnel tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: 23757c492986936125eff1203e6a99231164da22
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: fca6ac7d76c4ce680209eba297894b582a824355b3a9c6f736c861dc9559fe82
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52768944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900838"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
 
@@ -42,7 +42,7 @@ Bien que Bookings soit une fonctionnalité de Microsoft 365, tous les membres de
     > [!NOTE]
     > Les employés extérieurs à votre client ne pourront pas partager d’informations de libre/occupé avec Bookings.
 
-5. Pour chaque membre du personnel, sélectionnez un rôle : administrateur, visionneuse ou invité.
+5. Pour chaque membre du personnel, sélectionnez un rôle : Administrateur, Visionneuse ou Invité.
     - **Les administrateurs** peuvent modifier tous les paramètres, ajouter et supprimer du personnel, et créer, modifier ou supprimer des réservations.
     - **Les** visiteurs peuvent voir toutes les réservations dans le calendrier, mais ils ne peuvent pas les modifier ou les supprimer. Ils ont un accès en lecture seule aux paramètres.
     - **Les** invités peuvent être affectés à des réservations, mais ils ne peuvent pas ouvrir la boîte aux lettres de réservation.
@@ -62,7 +62,7 @@ Bien que Bookings soit une fonctionnalité de Microsoft 365, tous les membres de
 
 8. Sélectionnez Utiliser **les** heures d’ouverture pour définir toutes les heures de réservation pour que les membres de votre personnel soient uniquement pendant les heures d’ouverture que vous avez définies dans la **section** Heures d’ouverture de la page Informations professionnelles.
 
-    La désélection de cette case permet au personnel de se voir donner des heures personnalisées qui limitent davantage la durée de réservation. Cela est utile dans les scénarios où un membre du personnel peut se trouve uniquement le mardi et le mercredi sur le site, ou il dédie ses matins à un type de rendez-vous et ses activités pour d’autres types.
+    La désélection de cette case permet au personnel de se voir donner des heures personnalisées qui limitent davantage la durée de réservation. Cela est utile dans les scénarios où un membre du personnel peut se trouve uniquement les mardis et mercredis sur le site, ou il dédie ses matins à un type de rendez-vous et ses activités pour d’autres types.
 
     > [!NOTE]
     > Seuls les 31 premiers membres du personnel que vous ajoutez à la page de votre personnel s’affichent lorsque vous affectez des membres du personnel à un service.

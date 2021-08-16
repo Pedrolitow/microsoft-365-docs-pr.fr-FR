@@ -1,5 +1,5 @@
 ---
-title: Examiner les rapports d’utilisation
+title: Passer en revue les rapports d’utilisation
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser les informations des rapports d’utilisation.
-ms.openlocfilehash: 1c499b62f14aeec392d15939c8e6d70c9bad7ced
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 2703245899e62f89730885bfc9e78f13e24da7d1252dbcd4209f1ddd6ce15292
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900782"
 ---
-# <a name="review-usage-reports-in-microsoft-365"></a>Passer en revue les rapports d’utilisation dans Microsoft 365
+# <a name="review-usage-reports-in-microsoft-365"></a>Passer en revue les rapports d’utilisation Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
 
-Découvrez comment les employés utilisent des services Microsoft 365 tels que le courrier électronique ou les OneDrive, et prenez des mesures.
+Découvrez comment les employés utilisent des services Microsoft 365 tels que la messagerie électronique ou les OneDrive, et prenez des mesures.
 
 Dans le [Centre d’administration,](https://admin.microsoft.com)vous pouvez voir tous les rapports disponibles.
 

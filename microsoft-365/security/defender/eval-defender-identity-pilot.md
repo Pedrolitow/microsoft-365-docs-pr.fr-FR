@@ -1,5 +1,5 @@
 ---
-title: Pilotez Microsoft Defender pour l’identité, définissez des critères de configuration, des normes, des instructions et prenez des didacticiels sur la détection et la correction de diverses menaces d’identité telles que la reconnaissance, les informations d’identification compromises, les mouvements latérals, les alertes de domaine et d’exfiltration, mener des recherches sur les chemins d’accès utilisateur, ordinateur, entité et mouvement latéral.
+title: Pilote Microsoft Defender pour l’identité
 description: Pilotez Microsoft Defender pour l’identité, définissez des critères, prenons des didacticiels sur la reconnaissance, les informations d’identification compromises, les mouvements latérals, les alertes de domaine et d’exfiltration, entre autres.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 14c5b9252e980d1f693139393d26b9405cb1b812
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9d3eb0668b855745aee32ac0d070613a60a20b93ec13fef6ff564f2f4c7944a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457764"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857222"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Pilote Microsoft Defender pour l’identité
 
@@ -53,7 +53,7 @@ Ces recommandations de référence incluent la ligne [de base de sécurité Azur
 
 ## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>Étape 2. Tester les fonctionnalités : parcourir des didacticiels pour identifier et corriger différents types d’attaques
 
-La documentation de Microsoft Defender pour l’identité inclut une série de didacticiels qui guident le processus d’identification et de correction de différents types d’attaques.
+La documentation de Microsoft Defender pour l’identité comprend une série de didacticiels qui guident le processus d’identification et de correction de différents types d’attaques.
 
 Essayez les didacticiels Defender pour l’identité :
 - [Alertes de reconnaissance](/defender-for-identity/reconnaissance-alerts)

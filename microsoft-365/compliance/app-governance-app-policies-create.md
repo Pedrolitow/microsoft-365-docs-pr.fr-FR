@@ -2,8 +2,8 @@
 title: Créer des stratégies d’application
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des stratégies d’application.
-ms.openlocfilehash: 70c22201c64e5fa1d4b77eec922fb53f75abfe6b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 22836d5eff088d8bf76a418f6713a9ae84d0cb5e85d2065fcd64faec62131c26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541352"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842705"
 ---
 # <a name="create-app-policies"></a>Créer des stratégies d’application
 
@@ -48,28 +48,40 @@ La gouvernance des applications comporte trois catégories de modèles de strat�
 
 La gouvernance des applications inclut ces modèles pour générer des alertes pour l’utilisation des applications.
 
-| Nom du modèle | Description |
-|:-------|:-----|
-| Nouvelle application avec un volume élevé d’accès aux données | Met en évidence toutes les applications récemment inscrites avec un accès aux données en volume élevé pour s’assurer que ces modèles de données sont attendus. <br><br> Par défaut, cette stratégie signale toutes les applications qui ont été inscrites au cours des 7 derniers jours et qui ont eu plus de 1 Go d’accès aux données au cours de cette période. Cette stratégie peut être personnalisée avec davantage de conditions et d’actions. |
+<br>
+
+****
+
+|Nom du modèle|Description|
+|---|---|
+|Nouvelle application avec un volume élevé d’accès aux données|Met en évidence toutes les applications récemment inscrites avec un accès aux données en volume élevé pour s’assurer que ces modèles de données sont attendus. <p> Par défaut, cette stratégie signale toutes les applications qui ont été inscrites au cours des 7 derniers jours et qui ont eu plus de 1 Go d’accès aux données au cours de cette période. Cette stratégie peut être personnalisée avec davantage de conditions et d’actions.|
 |||
 
 ### <a name="app-permissions"></a>Autorisations d’application
 
 La gouvernance des applications inclut ces modèles pour générer des alertes pour les autorisations d’application.
 
-| Nom du modèle | Description |
-|:-------|:-----|
-| Applications sur-privilégiées | Met en évidence toutes les applications avec plus d’autorisations accordées que celles utilisées par ces applications pour identifier les opportunités de réduction potentielle des autorisations. <br><br> Par défaut, cette stratégie signale toutes les applications marquées comme étant sur-privilégiées si elles ne sont pas utilisées pendant 90 jours. Ce filtre de période peut être personnalisé avec plus de conditions et d’actions. |
-| Nouvelle application avec des autorisations à privilèges élevés | Met en évidence toutes les nouvelles applications disposant d’autorisations à privilèges élevés pour identifier les applications potentielles à encombrement élevé qui peuvent nécessiter une investigation plus approfondie. <br><br> Par défaut, cette stratégie signalera toutes les applications enregistrées au cours des sept derniers jours qui disposent d’autorisations étendues. |
+<br>
+
+****
+
+|Nom du modèle|Description|
+|---|---|
+|Applications sur-privilégiées|Met en évidence toutes les applications avec plus d’autorisations accordées que celles utilisées par ces applications pour identifier les opportunités de réduction potentielle des autorisations. <p> Par défaut, cette stratégie signale toutes les applications marquées comme étant sur-privilégiées si elles ne sont pas utilisées pendant 90 jours. Ce filtre de période peut être personnalisé avec plus de conditions et d’actions.|
+|Nouvelle application avec des autorisations à privilèges élevés|Met en évidence toutes les nouvelles applications disposant d’autorisations à privilèges élevés pour identifier les applications potentielles à encombrement élevé qui peuvent nécessiter une investigation plus approfondie. <p> Par défaut, cette stratégie signalera toutes les applications enregistrées au cours des sept derniers jours qui disposent d’autorisations étendues.|
 |||
 
 ### <a name="m365-certification"></a>Certification M365
 
 La gouvernance des applications inclut ces modèles pour générer des alertes pour la certification M365.
 
-| Nom du modèle | Description |
-|:-------|:-----|
-| Nouvelle application non certifiée | Met en évidence les nouvelles applications qui n’ont pas fait l’objet du processus de certification M365 pour s’assurer qu’elles sont attendues dans le client. <br><br> Par défaut, cette stratégie signale toutes les applications qui ont été inscrites au cours des 7 derniers jours et qui ne sont pas certifiées. |
+<br>
+
+****
+
+|Nom du modèle|Description|
+|---|---|
+|Nouvelle application non certifiée|Met en évidence les nouvelles applications qui n’ont pas fait l’objet du processus de certification M365 pour s’assurer qu’elles sont attendues dans le client. <p> Par défaut, cette stratégie signale toutes les applications qui ont été inscrites au cours des 7 derniers jours et qui ne sont pas certifiées.|
 |||
 
 ## <a name="custom-app-policies"></a>Stratégies d’application personnalisées
@@ -106,25 +118,29 @@ Le volet **Créer une règle** vous permet de sélectionner les conditions d’u
 
 Voici les conditions disponibles pour une stratégie d’application personnalisée.
 
-|Condition | Valeurs de condition acceptées | Plus d’informations |
-|:-------|:-----|:-------|
-| Âge de l’inscription de l’application | Au cours des X derniers jours |  |
-| Certification des applications | Conformité de base, conformité MCAS ou N/A | [Certification Microsoft 365](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
-| Vérification de l’éditeur | Oui ou Non | [Vérification de l’éditeur](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
-| Autorisation de l’application | Sélectionnez une ou plusieurs entrées dans la liste. | [Référence des autorisations de Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference) |
-| Autorisation déléguée | Sélectionnez une ou plusieurs entrées dans la liste. | [Référence des autorisations de Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference) |
-| Privilège élevé | Oui ou Non | Il s’agit d’une désignation interne basée sur la même logique que celle utilisée par MCAS. |
-| Application avec trop de privilèges | Oui ou Non | Applications avec plus d’autorisations accordées que celles utilisées par ces applications. |
-| Accès aux données de l’application | Accès aux données supérieur à X Go par heure |  |
-| Tendance d’accès aux données de l’application | Augmentation de X % de l’utilisation des données au cours des 7 derniers jours |  |
-| Accès à l’API de l’application | Appels d’API supérieurs à X par heure |  |
-| Tendance d’accès à l’API d’application | Augmentation de X % des appels d’API au cours des 7 derniers jours     |  |
-| Utilisateurs qui ont accepté | (Supérieur ou inférieur à) X utilisateurs consentés |  |
-| L’utilisateur prioritaire a donné son consentement | Oui ou Non | Un utilisateur disposant d’un [compte de priorité](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts). |
-| Application autorisée par | Sélectionner des utilisateurs dans la liste |  |
-| Rôle de l'utilisateur consentant | Sélectionnez un ou plusieurs : Administrateur Teams, Lecteurs d’annuaires, Lecteur de sécurité, Administrateur de conformité, Administrateur de la sécurité, Administrateur du support technique, Administrateur SharePoint, Administrateur Exchange, Lecteur général, Administrateur général, Administrateur des données de conformité, Administrateur des utilisateurs, Administrateur du support technique | Sélections multiples autorisées. <br><br> Tout rôle Azure AD avec un membre affecté doit être mis à disposition dans cette liste. |
-| Charge de travail consultée | OneDrive et/ou SharePoint et/ou Exchange | Sélections multiples autorisées. |
-| Taux d’erreur | Le taux d’erreur est supérieur à X% au cours des 7 derniers jours, où X est une valeur définie par l’administrateur |  |
+<br>
+
+****
+
+|Condition|Valeurs de condition acceptées|Plus d’informations|
+|---|---|---|
+|Âge de l’inscription de l’application|Au cours des X derniers jours||
+|Certification des applications|Conformité de base, conformité MCAS ou N/A|[Certification Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide)|
+|Vérification de l’éditeur|Oui ou Non|[Vérification de l’éditeur](/azure/active-directory/develop/publisher-verification-overview)|
+|Autorisation de l’application|Sélectionnez une ou plusieurs entrées dans la liste.|[Référence des autorisations de Microsoft Graph](/graph/permissions-reference)|
+|Autorisation déléguée|Sélectionnez une ou plusieurs entrées dans la liste.|[Référence des autorisations de Microsoft Graph](/graph/permissions-reference)|
+|Privilège élevé|Oui ou Non|Il s’agit d’une désignation interne basée sur la même logique que celle utilisée par MCAS.|
+|Application avec trop de privilèges|Oui ou Non|Applications avec plus d’autorisations accordées que celles utilisées par ces applications.|
+|Accès aux données de l’application|Accès aux données supérieur à X Go par heure||
+|Tendance d’accès aux données de l’application|Augmentation de X % de l’utilisation des données au cours des 7 derniers jours||
+|Accès à l’API de l’application|Appels d’API supérieurs à X par heure||
+|Tendance d’accès à l’API d’application|Augmentation de X % des appels d’API au cours des 7 derniers jours||
+|Utilisateurs qui ont accepté|(Supérieur ou inférieur à) X utilisateurs consentés||
+|L’utilisateur prioritaire a donné son consentement|Oui ou Non|Un utilisateur disposant d’un [compte de priorité](/microsoft-365/admin/setup/priority-accounts).|
+|Application autorisée par|Sélectionner des utilisateurs dans la liste||
+|Rôle de l'utilisateur consentant|Sélectionnez un ou plusieurs : Administrateur Teams, Lecteurs d’annuaires, Lecteur de sécurité, Administrateur de conformité, Administrateur de la sécurité, Administrateur du support technique, Administrateur SharePoint, Administrateur Exchange, Lecteur général, Administrateur général, Administrateur des données de conformité, Administrateur des utilisateurs, Administrateur du support technique|Sélections multiples autorisées. <p> Tout rôle Azure AD avec un membre affecté doit être mis à disposition dans cette liste.|
+|Charge de travail consultée|OneDrive et/ou SharePoint et/ou Exchange|Sélections multiples autorisées.|
+|Taux d’erreur|Le taux d’erreur est supérieur à X% au cours des 7 derniers jours, où X est une valeur définie par l’administrateur||
 ||||
 
 Toutes les conditions spécifiées doivent être remplies pour que cette stratégie d’application génère une alerte.
@@ -151,7 +167,7 @@ Publish metadata-based policies
 
 ## <a name="test-and-monitor-your-new-app-policy"></a>Tester et surveiller votre nouvelle stratégie d’application
 
-Maintenant que votre stratégie d’application est créée, vous devez la surveiller sur la page **Stratégies** pour vous assurer qu’elle inscrit un nombre attendu d’alertes actives et le nombre total d’alertes pendant le test. 
+Maintenant que votre stratégie d’application est créée, vous devez la surveiller sur la page **Stratégies** pour vous assurer qu’elle inscrit un nombre attendu d’alertes actives et le nombre total d’alertes pendant le test.
 
 ![Page récapitulative des stratégies MAPG dans le Centre de conformité Microsoft 365 avec une stratégie mise en surbrillance](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
 

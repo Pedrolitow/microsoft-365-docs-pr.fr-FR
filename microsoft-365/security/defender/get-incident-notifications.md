@@ -1,6 +1,6 @@
 ---
-title: Obtenir des notifications d’incident par courrier électronique dans Microsoft 365 Defender
-description: Découvrez comment créer des règles pour obtenir des notifications par courrier électronique pour les incidents dans Microsoft 365 Defender
+title: Obtenir des notifications d’incident par courrier électronique Microsoft 365 Defender
+description: Découvrez comment créer des règles pour obtenir des notifications par courrier électronique pour les incidents Microsoft 365 Defender
 keywords: incident, e-mail, notfications de courrier électronique, configurer, utilisateurs, boîte aux lettres, courrier électronique, incidents, analyser, réponse
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,22 +22,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2e47b35646a1cd6e1075d80f9ed0550e8e1e819f
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 33de1e3adc004e05a8c383c8277c358d769bf520528c4c7332e23c5d05635051
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838933"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtenir des notifications d’incident par courrier électronique
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Vous pouvez configurer Microsoft 365 Defender pour informer votre personnel par courrier électronique des nouveaux incidents ou des mises à jour des incidents existants. Vous pouvez choisir d’obtenir des notifications basées sur :
+Vous pouvez configurer des Microsoft 365 Defender pour informer votre personnel par courrier électronique des nouveaux incidents ou des mises à jour des incidents existants. Vous pouvez choisir d’obtenir des notifications basées sur :
 
 - Gravité de l’incident.
 - Groupe d’appareils.
@@ -55,9 +55,9 @@ De même, si votre organisation utilise le contrôle d’accès basé sur un rô
 
 Suivez ces étapes pour créer une règle et personnaliser les paramètres de notification par courrier électronique.
 
-1. Dans le volet de navigation, sélectionnez Paramètres > Microsoft 365 **notifications >'incident.**
+1. Dans le volet de navigation, sélectionnez Paramètres > Microsoft 365 Defender > **notifications d’incident par courrier électronique.**
 2. Sélectionnez **Ajouter un élément.**
-3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant**.
+3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant.**
 4. Dans la **page Paramètres de** notification, configurez :
     - **Gravité de l’alerte** : choisissez les gravités d’alerte qui déclencheront une notification d’incident. Par exemple, si vous souhaitez uniquement être informé des incidents de gravité élevée, sélectionnez **Élevé**.
     - **Étendue du groupe d’appareils** : vous pouvez spécifier tous les groupes d’appareils ou sélectionner dans la liste des groupes d’appareils de votre client.

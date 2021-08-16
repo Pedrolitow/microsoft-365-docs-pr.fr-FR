@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 06fdea1c4d84ca4cd23aeb7e715c0087f65275b1
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c71a3e5169334adc5d6d6f2b901d82678e5aa27bee47bd20faf06e569a14b63c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648122"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857302"
 ---
 # <a name="threat-and-vulnerability-management"></a>La gestion des menaces et des vulnérabilités
 
@@ -64,7 +64,7 @@ Il fournit également :
 Les menaces et gestion des vulnérabilités les clients hiérarchisent et se concentrent sur les faiblesses qui posent les risques les plus urgents et les plus élevés pour l’organisation. Il associe les recommandations de sécurité avec les menaces dynamiques et le contexte métier :
 
 - **Exposition des attaques émergentes dans l’environnement** : aligne dynamiquement la hiér donc sur les recommandations de sécurité. Les menaces et gestion des vulnérabilités se concentrent sur les vulnérabilités actuellement exploitées dans les menaces émergentes et les menaces émergentes qui présentent le risque le plus élevé.
-- **Localisation des violations actives** : met en Gestion des menaces et des vulnérabilités et PEPT informations pour hiérarchiser les vulnérabilités exploitées dans une violation active au sein de l’organisation.
+- **Mise en évidence des violations actives** : met en Gestion des menaces et des vulnérabilités et PEPT des informations pour hiérarchiser les vulnérabilités exploitées dans une violation active au sein de l’organisation.
 - **Protection des biens à** valeur élevée : identifiez les appareils exposés avec des applications critiques pour l’entreprise, des données confidentielles ou des utilisateurs à valeur élevée.
 
 ### <a name="seamless-remediation"></a>Correction transparente
@@ -72,7 +72,7 @@ Les menaces et gestion des vulnérabilités les clients hiérarchisent et se con
 Les menaces et gestion des vulnérabilités aux administrateurs de sécurité et aux administrateurs informatiques de collaborer en toute transparence pour résoudre les problèmes.
 
 - **Demandes de correction envoyées aux services informatiques** : créez une tâche de correction Microsoft Intune à partir d’une recommandation de sécurité spécifique. Nous prévoyons d’étendre cette fonctionnalité à d’autres plateformes de gestion de la sécurité informatique.
-- **Autres atténuations** : obtenir des informations sur les autres atténuations, telles que les modifications de configuration qui peuvent réduire les risques associés aux vulnérabilités logicielles.
+- **Autres atténuations** : obtenir des informations sur d’autres atténuations, telles que les modifications de configuration qui peuvent réduire les risques associés aux vulnérabilités logicielles.
 - **État de correction en temps** réel : surveillance en temps réel de l’état et de la progression des activités de correction au sein de l’organisation.
 
 ## <a name="threat-and-vulnerability-management-walk-through"></a>Threat and gestion des vulnérabilités walk-through

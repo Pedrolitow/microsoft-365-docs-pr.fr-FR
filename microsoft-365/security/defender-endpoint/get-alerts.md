@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c200e2e0b214b634b3a893d07cc8044995190f8eb89f8adad1e3b96ad1f7ae19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e295d4014231242bf1e3ae7dceaeb38dfea2fa1c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818767"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246321"
 ---
 # <a name="list-alerts-api"></a>API d’alertes de liste
 
@@ -43,7 +43,7 @@ ms.locfileid: "53818767"
 Récupère une collection d’alertes.
 <br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
 <br>Opérateurs pris en charge par OData :
-<br>```$filter``` on: ```alertCreationTime``` , , , , , and ```lastUpdateTime``` ```incidentId``` ```InvestigationId``` ```status``` ```severity``` ```category``` properties.
+<br>```$filter``` on: ```alertCreationTime``` , , , , , , , , , ```lastUpdateTime``` et ```incidentId``` ```InvestigationId``` ```id``` ```asssignedTo``` ```detectionSource``` ```lastEventTime``` ```status``` ```severity``` ```category``` properties.
 <br>```$top``` avec une valeur maximale de 10 000
 <br>```$skip```
 <br>```$expand``` of ```evidence```
@@ -83,7 +83,8 @@ GET /api/alerts
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String
+ | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

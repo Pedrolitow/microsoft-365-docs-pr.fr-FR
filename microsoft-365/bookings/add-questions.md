@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: Si vous devez poser des questions aux clients lorsqu’ils réservent un rendez-vous en ligne, vous pouvez ajouter des questions personnalisées et des questions requises à la page de réservation.
-ms.openlocfilehash: ebbb07857fd8bb196f769dfb7e71ad25a85dfd54
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 7ee5710d20145dc1cb819c03c0a86336241ba829173f8abc3b4fdf2a96aa719e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900882"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>Ajouter des questions personnalisées et requises à la page réservation
 
@@ -37,7 +37,7 @@ Pour plus d’informations sur la personnalisation et la personnalisation de vot
 
 1. Faites défiler vers le bas **jusqu’à** la section Champs personnalisés, puis sélectionnez **Modifier.**
 
-   Nous avons déjà ajouté des questions de base sur les informations client : courrier électronique du client, numéro de téléphone, adresse du client et notes client. La première fois que vous faites cela, les questions sur les informations client sont en gris. Cela signifie que l’utilisateur verra cette question. Si vous sélectionnez la question, la zone de mise en surbrillation qui l’entoure disparaît et votre client n’est pas invité à répondre à cette question.
+   Nous avons déjà ajouté des questions de base sur les informations client : courrier électronique du client, numéro de téléphone, adresse du client et notes client. La première fois que vous faites cela, les questions d’informations client sont en gris. Cela signifie que l’utilisateur verra cette question. Si vous sélectionnez la question, la zone surligné autour de celle-ci disparaît et votre client n’est pas invité à répondre à cette question.
 
    Dans cet exemple, le numéro de téléphone et les notes client ont été désactivés et nous avons créé deux questions personnalisées à poser.
 
@@ -57,14 +57,14 @@ Dans cet exemple, vous pouvez voir que les questions qui ont été ajoutées pou
 
    ![Image des questions qui s’affichent pour plusieurs services](../media/bookings-questions-services.png)
 
-Si votre page de réservation est déjà publiée, vous n’avez rien d’autre à faire. Les clients pourront voir les questions la prochaine fois qu’ils se livreront avec vous. Si votre page de réservation n’est pas encore publiée, rendez-vous sur la **page** de réservation à partir Outlook sur le web, puis sélectionnez Enregistrer **et publier.**
+Si votre page de réservation est déjà publiée, vous n’avez rien d’autre à faire. Les clients pourront voir les questions la prochaine fois qu’ils se livreront avec vous. Si votre page de réservation n’est pas encore publiée, rendez-vous sur la **page** de réservation à partir de Outlook sur le web, puis sélectionnez Enregistrer **et publier.**
 
 > [!WARNING]
 > Vous pouvez également supprimer des questions de la liste principale. Toutefois, si vous supprimez une question, elle sera supprimée de chaque service. Nous vous recommandons de désactiver la question en la sélectionnant pour vous assurer que vous n’avez aucun impact sur les autres services. Vous pouvez voir qu’une question est désactivée si elle n’est pas entourée d’un rectangle en surbrillant.
 
 ## <a name="customer-experience"></a>Expérience client
 
-Lorsque vos clients réservent un rendez-vous avec vous, les questions d’informations client de base s’afficheront dans la section Ajouter **vos détails.** Toutes les questions personnalisées que vous ajoutez se feront dans la section Fournir des informations **supplémentaires.**
+Lorsque vos clients réservent un rendez-vous avec vous, les questions d’informations client de base s’afficheront dans la section Ajouter **vos détails.** Toutes les questions personnalisées que vous ajoutez se feront dans la section Fournir **des** informations supplémentaires.
 
 ![Image de ce que les clients voient lorsque les questions sont activées](../media/bookings-questions-customer.png)
 

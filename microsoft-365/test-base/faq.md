@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2d8e0a8cea68e969df5939691b517ee71e78472d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ff686860455279218b55fa871327a87fe1ce3e411f3aa7cab83e2ddba00978e7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888230"
 ---
 # <a name="test-base-faq"></a>Test Base FAQ
 
@@ -33,7 +33,7 @@ Consultez le guide de l’utilisateur d’intégration pour plus d’information
 
 **Q : Que sont les tests OOB ( Out-of-Box) ?**
 
-**R :** Les tests OOB (Out-of-Box) sont standardisés, les tests par défaut s’exécutent là où les packages d’application sont installés, lancés et fermés trente (30) fois, puis désinstallés. 
+**R :** Les tests prêts à l’emploi (OOB) sont standardisés, les tests par défaut s’exécutent lorsque les packages d’application sont installés, lancés et fermés trente (30) fois, puis désinstallés. 
 
 Les packages créés pour la base de test auront les scripts de test suivants : installer, lancer, fermer et éventuellement le script de désinstallation. 
 
@@ -51,7 +51,7 @@ Les tests OOB (Out-of-Box) vous fournissent une télémétrie normalisée sur vo
 
 **R :** Oui, la base de test prend en charge les tests fonctionnels. Les tests fonctionnels sont des tests qui permettent à nos clients d’exécuter leurs scripts pour exécuter des fonctionnalités personnalisées sur leur application. 
 
-Pour soumettre votre package d’application à des tests fonctionnels, téléchargez simplement le dossier compressé contenant les fichiers binaires, les dépendances et les scripts de test de votre application via notre tableau de bord de portail libre-service. 
+Pour soumettre votre package d’application à des tests fonctionnels, téléchargez simplement le dossier compressé contenant les fichiers binaires, les dépendances et les scripts de test de votre application via notre tableau de bord du portail libre-service. 
 
 Consultez le guide de l’utilisateur d’intégration pour plus d’informations ou contactez notre équipe pour obtenir de <testbasepreview@microsoft.com> l’aide et plus d’informations.
 
@@ -67,7 +67,7 @@ Consultez le guide de l’utilisateur d’intégration pour plus d’information
 
 **R :** Nous supportons toutes les langues et toutes les infrastructure. Nous appelons tous les scripts via PowerShell. 
 
-Vous devez également fournir (télécharger) les fichiers binaires dépendants de l’infrastructure requise.
+Vous devrez également fournir (télécharger) les fichiers binaires dépendants de l’infrastructure requise.
 
 **Q : À combien de temps la Base de test fournit-elle les résultats des tests ?**
 
@@ -107,7 +107,7 @@ Nous pouvons également fournir des vidages mémoire pour le débogage sur incid
 
 Nous travaillons toujours en étroite collaboration avec nos clients pour résoudre les problèmes. 
 
-**Q : Microsoft tient-il la publication du correctif de sécurité jusqu’à ce que le problème soit résolu ? Quelles résolutions alternatives sont disponibles ?**
+**Q : Microsoft tient-il la publication du correctif de sécurité jusqu’à ce que le problème soit résolu ? Quelles autres résolutions sont disponibles ?**
 
 **R :** L’objectif de la base de test est de s’assurer que nos clients finaux conjoints ne rencontrent aucun problème. Nous travaillerons en dur avec les éditeurs de logiciels pour résoudre les problèmes avant la publication, mais au cas où le correctif ne serait pas réalisable, nous avons d’autres résolutions telles que les shims et les blocs.
 
@@ -123,9 +123,9 @@ Nous travaillons toujours en étroite collaboration avec nos clients pour résou
 
 **Q : Ce service prend-il en charge les applications web, mobiles ou de bureau ?**
 
-**R :** Pour l’instant, nous nous concentrons sur les applications de bureau, mais nous envisageons d’intégrer des applications web à l’avenir, mais nous ne prisent pas en charge les applications mobiles pour le moment.
+**R :** Pour l’instant, nous nous concentrons sur les applications de bureau. Toutefois, nous envisageons d’intégrer des applications web à l’avenir, mais nous ne prisent pas en charge les applications mobiles pour le moment.
 
-**Q : Quelle est la différence entre Base de test et LAPX ?**
+**Q : Quelle est la différence entre Test Base et LAPX ?**
 
 **R :** La principale différence entre base de test et LAPSP est que nos partenaires ententent leurs applications dans l’environnement Azure de base de test pour la validation s’exécute sur les mises à jour pré-publiées au lieu d’effectuer les tests eux-mêmes. 
 

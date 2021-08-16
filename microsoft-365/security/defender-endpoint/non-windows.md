@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a59490c4005288a10520a1b29867b59a401680388d2378cfe3eb8b7fea143b01
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a975daa6b73f39722b077cda307aa5ea806b1e1b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829098"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256999"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender pour point de terminaison pour les plateformes non Windows
 
@@ -51,7 +51,6 @@ Pour plus d’informations sur la mise en place, consultez la [documentation](mi
 >Les fonctionnalités suivantes ne sont actuellement pas pris en charge sur les points de terminaison macOS :
 >- Protection contre la perte de données
 >- Réponse en direct
->- SIEM
 
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux

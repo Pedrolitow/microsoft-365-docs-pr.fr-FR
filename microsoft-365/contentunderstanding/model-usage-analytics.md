@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment rechercher et utiliser l’analyse de l’utilisation pour un modèle de compréhension de document.
-ms.openlocfilehash: 5eca389519dbab7038ef774d8f096e61017d0155
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: 9ea408485a7cf1ff935192775eab2325e0e268aad927a72dedf237f0e81a3e0f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871142"
 ---
 # <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Analyse de l’utilisation du modèle de compréhension de document dans Microsoft SharePoint Syntex
 

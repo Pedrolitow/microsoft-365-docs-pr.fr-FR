@@ -1,9 +1,9 @@
-- name: "Formation Microsoft\_365 pour les petites entreprises"
+- name: Formation Microsoft 365 pour les petites entreprises
   href: index.yml
   items:
     - name: Prise en main
       items:
-        - name: "Qu’est-ce que Microsoft\_365\_?"
+        - name: Qu’est-ce que Microsoft 365 ?
           href: what-is-microsoft-365.md
         - name: Vue d’ensemble de la configuration
           href: setup-overview.md
@@ -15,15 +15,15 @@
           href: sign-up.md
         - name: Configurer le service
           href: set-up.md
-        - name: "Sécuriser les PC Windows\_10"
+        - name: Sécuriser les PC Windows 10
           href: secure-win10-pcs.md
         - name: Créer un site web GoDaddy
           href: create-web-site.md
     - name: Configuration des appareils
       items:
-        - name: "Mettre à niveau vers Windows\_10 Professionnel"
+        - name: Mettre à niveau vers Windows 10 Professionnel
           href: upgrade.md
-        - name: "Connecter des PC à Microsoft\_365\_Business Premium"
+        - name: Connecter des PC à Microsoft 365 Business Premium
           href: connect.md
         - name: Installer des applications Microsoft Office
           href: install-office.md
@@ -79,7 +79,7 @@
           href: securely-share-files-externally.md
         - name: Partager aisément des fichiers en externe
           href: share-files-externally.md
-    - name: "Business\_Voice"
+    - name: Business Voice
       items:
         - name: Vue d’ensemble de Business Voice
           href: business-voice.md
@@ -95,7 +95,7 @@
           href: plan-event.md
     - name: Gérer les services
       items:
-        - name: "Qu’est-ce qu’un administrateur\_?"
+        - name: Qu’est-ce qu’un administrateur ?
           href: what-is-admin.md
         - name: Vue d’ensemble du centre d’administration
           href: admin-center-overview.md
@@ -131,13 +131,13 @@
           href: set-up-a-new-business-email-address.md
     - name: Gestion des appareils
       items:
-        - name: "Sécuriser les appareils Windows\_10"
+        - name: Sécuriser les appareils Windows 10
           href: secure-win-10-pro-devices.md
         - name: Sécuriser les applications Office sur iOS
           href: secure-office-on-ios.md
     - name: Sécurité et conformité
       items:
-        - name: "Vue d’ensemble de la sécurité de Microsoft\_365 Business Premium"
+        - name: Vue d’ensemble de la sécurité de Microsoft 365 Business Premium
           href: overview-m365-security.md
         - name: Sécuriser les comptes des employés avec une authentification multifacteur
           href: turn-on-mfa.md

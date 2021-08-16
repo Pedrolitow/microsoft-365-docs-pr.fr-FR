@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 localization_priority: Normal
 description: Découvrez comment modifier une rubrique existante dans Sujets Microsoft Viva.
-ms.openlocfilehash: 47c9254c91e08cda6dc33c40768689d94e5ceeef
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 748b626dcdf6d118794872d5865a06678293d90da95d7e74057f019df749a1c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840361"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Modifier une rubrique existante dans Sujets Microsoft Viva 
 

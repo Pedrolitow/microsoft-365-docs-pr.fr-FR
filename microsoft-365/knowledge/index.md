@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez comment rechercher des ressources pour Rubriques Microsoft Viva.
-ms.openlocfilehash: 7d8a95e924c269660e50355078f4fc9eee9bd333
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: ec078f1a3e1e4dd963111f0c60529173d2aedbcffcd2b61e3248a3021b5eea69
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326842"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840166"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Présentation de Rubriques Microsoft Viva
 
@@ -35,7 +35,7 @@ Les ressources de cette page sont conçues pour vous aider à commencer à déco
 
 ## <a name="get-started"></a>Prise en main
 
-Les ressources de cette section vous aident à en savoir plus sur ce qu’est Topics et comment elle peut vous aider.
+Les ressources de cette section vous aident à en savoir plus sur ce qu’est Topics Et comment elle peut vous aider.
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
@@ -54,7 +54,7 @@ Découvrez comment utiliser et mettre en œuvre Rubriques Viva au sein de votre 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
 |Découvrez comment commencer à planifier l’utilisation de Rubriques |[Prise en main](topics-adoption-getstarted.md)|  
-|Configurer et exécuter un programme pilote d’essai pour Rubriques |[Exécuter une version d’essai](trial-topics.md)|
+|Configurer et exécuter un programme pilote d’essai pour Rubriques |[Exécuter une version d’évaluation](trial-topics.md)|
 
 ## <a name="set-up-and-administration"></a>Configuration et personnalisation
 

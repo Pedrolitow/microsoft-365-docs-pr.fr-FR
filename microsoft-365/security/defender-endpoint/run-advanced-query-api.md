@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7f37dc12e14561b46e264f46cb7e07c4a9cc757083bbe8402f07bdf4705f08f1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54883ab437dcf01b042b5458bdc6312eaf24d179
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817677"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256973"
 ---
 # <a name="advanced-hunting-api"></a>API de recherche avancée
 
@@ -50,6 +50,8 @@ ms.locfileid: "53817677"
 4. La durée d’exécution maximale d’une seule demande est de 10 minutes.
 
 5. La réponse 429 représente l’atteinte de la limite de quota soit par nombre de demandes, soit par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte. 
+
+6. La taille maximale des résultats d’une requête ne peut pas dépasser 124 Mo. S’il est dépassé, http 400 demande non autorisée avec le message « L’exécution de la requête a dépassé la taille de résultat autorisée. Optimisez votre requête en limitant la quantité de résultats et essayez à nouveau ».
 
 ## <a name="permissions"></a>Autorisations
 
@@ -83,7 +85,7 @@ Content-Type|application/json
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 Requête|Texte|Requête à exécuter. **Obligatoire**.
 
@@ -155,7 +157,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Présentation des API Microsoft Defender pour les points de terminaison](apis-intro.md)
 - [Recherche avancée à partir du portail](advanced-hunting-query-language.md)

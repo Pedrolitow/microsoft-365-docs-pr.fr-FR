@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d7eb71d0547c0ee242e02697e949bd39c3bdb2f3012adeaf159ca90f953268aa
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: b9bc82bff9be84c74b9d908b79572b926a943bab
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523632"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257092"
 ---
 # <a name="get-package-sas-uri-api"></a>API Obtenir l’URI SAS du package
 
@@ -40,7 +40,7 @@ Obtenez un URI qui permet le téléchargement d’un [package d’enquête.](col
 
 > [!IMPORTANT]
 >
-> - Ces actions sont uniquement disponibles pour les appareils sur Windows 10, version 1703 ou ultérieure.
+> - Ces actions sont uniquement disponibles pour les appareils Windows 10 version 1703 ou ultérieure.
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [l’api Microsoft Defender pour les points de terminaison.](apis-intro.md)
@@ -66,7 +66,8 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4fab4e7d8b736646223928610e257e84d628b6d960f15f480506627b9ecf5960
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ca52f60d6bece71ca778c067fb96241b82c9093
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801805"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246381"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -138,9 +138,7 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 
 [Étape 2 : consulter les résultats de la recherche](#step-2-view-the-search-results)
 
-[Étape 3 : filtrer les résultats de la recherche](#step-3-filter-the-search-results)
-
-[Étape 4 : exporter les résultats de la recherche dans un fichier](#step-4-export-the-search-results-to-a-file)
+[Étape 3 : exporter les résultats de la recherche dans un fichier](#step-3-export-the-search-results-to-a-file)
 
 ### <a name="step-1-run-an-audit-log-search"></a>Étape 1 : effectuer une recherche dans le journal d’audit
 
@@ -191,7 +189,7 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 
 - Vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités** pour afficher les entrées du journal d’audit de l’administrateur Exchange. Les événements dans ce journal d’audit affichent un nom de cmdlet (par exemple, **Set-Mailbox**) dans la colonne **Activité** des résultats. Pour plus d’informations, cliquez sur l’onglet **activités auditées** dans cette rubrique, puis sur **activités de l’administrateur Exchange**.
 
-  De même, certaines activités d’audit n’ont pas d’élément correspondant dans la liste **Activités**. Si vous connaissez le nom de l’opération correspondant à ces activités, vous pouvez effectuer une recherche sur toutes les activités, puis filtrer les résultats en entrant le nom de l’opération dans la zone pour la colonne **Activité**. Voir [Étape 3 : filtrer les résultats de recherche](#step-3-filter-the-search-results) pour plus d’informations sur le filtrage des résultats.
+  De même, certaines activités d’audit n’ont pas d’élément correspondant dans la liste **Activités**. Si vous connaissez le nom de l’opération correspondant à ces activités, vous pouvez effectuer une recherche sur toutes les activités, puis filtrer les opérations après l’exportation des résultats de la recherche dans un fichier CSV.
 
 - Cliquez sur **Effacer** pour effacer les critères de recherche actuels. La plage de dates reprend la valeur par défaut des sept derniers jours. Vous pouvez également cliquer sur **Effacer tout pour afficher les résultats correspondant à toutes les activités** pour annuler toutes les activités sélectionnées.
 
@@ -223,57 +221,28 @@ Les résultats contiennent les informations suivantes sur chaque événement ren
 
 #### <a name="view-the-details-for-a-specific-event"></a>Afficher les détails d’un événement spécifique
 
-Vous pouvez afficher davantage d’informations sur un événement en cliquant sur l’enregistrement d’événement dans la liste des résultats de recherche. La page **Détails** qui s’affiche contient les propriétés détaillées de l’enregistrement d’événement. Les propriétés affichées dépendent du service dans lequel l’événement se produit. Pour afficher des détails supplémentaires, cliquez sur **Plus d’informations**. Pour consulter des descriptions, voir [Propriétés détaillées dans le journal d’audit](detailed-properties-in-the-office-365-audit-log.md).
+Vous pouvez afficher davantage d’informations sur un événement en cliquant sur l’enregistrement d’événement dans la liste des résultats de recherche. La page du menu volant s’affiche contenant les propriétés détaillées de l’enregistrement d’événement. Les propriétés affichées dépendent du service dans lequel l’événement se produit. 
 
-![Cliquez sur Informations supplémentaires pour afficher les propriétés détaillées de l’enregistrement d’événement du journal d’audit](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
-
-### <a name="step-3-filter-the-search-results"></a>Étape 3 : filtrer les résultats de la recherche
-
-Vous pouvez également filtrer les résultats d’une recherche dans le journal d’audit. Cette fonctionnalité permet de filtrer rapidement les résultats pour un utilisateur ou une activité spécifique. Vous pouvez créer une recherche large au départ, puis filtrer rapidement les résultats pour afficher des événements spécifiques. Vous pouvez ensuite affiner les critères de recherche, puis relancer la recherche pour renvoyer un jeu de résultats plus petit et concis.
-
-Pour filtrer les résultats :
-
-1. Effectuez une recherche dans le journal d’audit.
-
-2. Lorsque les résultats sont affichés, cliquez sur **Filtrer les résultats**.
-
-   Les zones de mot clé apparaissent sous chaque en-tête de colonne.
-
-3. Cliquez sur une des zones sous un en-tête de colonne et tapez un mot ou une expression, en fonction de la colonne qui fait l’objet du filtrage. Les résultats sont réajustés dynamiquement pour afficher les événements qui correspondent à votre filtre.
-
-   ![Tapez un mot dans le filtre pour afficher les événements correspondant au filtre](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
-
-4. Pour effacer un filtre, cliquez sur le **X** dans la zone de filtre, ou cliquez sur **Masquer le filtrage**.
-
-> [!TIP]
-> Pour afficher des événements dans le journal d’audit de l’administrateur Exchange, tapez un **-** (tiret) dans la zone de filtre **Activité**. Cela permet d’afficher le nom des cmdlets qui figurent dans la colonne **Activité** des événements d’administrateur Exchange. Vous pouvez ensuite trier les noms de cmdlet par ordre alphabétique.
-
-### <a name="step-4-export-the-search-results-to-a-file"></a>Étape 4 : exporter les résultats de la recherche dans un fichier
+### <a name="step-3-export-the-search-results-to-a-file"></a>Étape 3 : exporter les résultats de la recherche dans un fichier
 
 Vous pouvez exporter les résultats d’une recherche dans le journal d’audit dans un fichier de valeurs séparées par des virgules (.csv) sur votre ordinateur local. Vous pouvez ouvrir ce fichier dans Microsoft Excel et utiliser des fonctionnalités telles que la recherche, le tri, le filtrage et le fractionnement d’une colonne (dont les cellules contiennent plusieurs propriétés) en plusieurs colonnes.
 
 1. Effectuez une recherche dans le journal d’audit, puis modifiez les critères de recherche jusqu’à obtenir les résultats souhaités.
 
-2. Cliquez sur **Exporter les résultats**, puis sélectionnez l’une des options suivantes :
+2. Sur la page des résultats de la recherche, cliquez sur **Exporter** > **Télécharger tous les résultats**.
 
-   - **Enregistrer les résultats chargés :** Choisissez cette option pour exporter uniquement les entrées affichées sous **Résultats** sur la page **Recherche dans le journal d’audit**. Le fichier .csv téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (Date, Utilisateur, Activité, Élément et Détails). Une colonne supplémentaire (nommée **Plus**) est incluse dans le fichier .csv qui contient davantage d’informations de l’entrée du journal d’audit. Comme vous exportez les mêmes résultats que ceux chargés (et visibles) sur la page **Recherche dans le journal d’audit**, 5 000 entrées au maximum sont exportées.
-
-   - **Télécharger tous les résultats** : choisissez cette option pour exporter toutes les entrées du journal d’audit qui correspondent aux critères de recherche. Pour un ensemble plus vaste de résultats de recherche, choisissez cette option pour télécharger toutes les entrées du journal d’audit en plus des 5 000 résultats d’audit qui apparaissent sur la page **Recherche dans le journal d’audit**. Cette option permet de télécharger les données brutes du journal d’audit dans un fichier .csv et contient des informations supplémentaires de l’entrée du journal d’audit dans la colonne **AuditData**. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut-être plus volumineux que celui téléchargé à l’aide de l’autre option.
+   Toutes les entrées du journal d'audit correspondant aux critères de recherche sont exportées dans un ficher CSV. Les données brutes du journal d’audit sont enregistrées dans un fichier CSV. Des informations supplémentaires de l’entrée du journal d’audit sont incluses dans une colonne appelée **AuditData** dans le CSV.
 
      > [!IMPORTANT]
      > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier .csv à partir d’une seule recherche dans le journal d’audit. Si 50 000 résultats sont téléchargés dans le fichier .csv, vous pouvez partir du principe que plus de 50 000 événements remplissent les critères de recherche. Pour exporter davantage de résultats, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Vous devrez peut-être effectuer plusieurs recherches avec des plages de dates plus réduites pour exporter plus de 50 000 entrées.
 
-3. Une fois que vous avez sélectionné une option d’exportation, un message apparaît en bas de la fenêtre. Il vous invite à ouvrir le fichier .csv, à l’enregistrer dans le dossier Téléchargements ou à l’enregistrer dans un dossier spécifique.
+3. Après la fin du processus d’exportation, un message s’affiche en haut de la fenêtre qui vous invite à ouvrir le fichier CSV et à l’enregistrer sur votre ordinateur local. Vous pouvez également accéder au fichier CSV dans le dossier Téléchargements.
 
+#### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Informations supplémentaires sur l'exportation et l'affichage des résultats de recherche dans le journal d'audit
 
-
-#### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Informations supplémentaires sur l’exportation et l’affichage des résultats de recherche dans le journal d’audit
-
-- Si vous téléchargez tous les résultats de recherche, le fichier .csv contient une colonne nommée **AuditData**, qui inclut des informations supplémentaires sur chaque événement. Les données de cette colonne se composent d’un objet JSON qui contient plusieurs propriétés de l’enregistrement du journal d’audit. Chaque pair *property:value* dans l’objet JSON est séparée par une virgule. Vous pouvez utiliser l’outil transformation JSON de l’éditeur Power Query dans Excel pour fractionner la colonne **AuditData** en plusieurs colonnes de sorte que chaque propriété dans l’objet JSON ait sa propre colonne. Cela vous permettra d’utiliser une ou plusieurs de ces propriétés pour trier et filtrer les valeurs. Pour obtenir des instructions pas à pas à l’aide de l’éditeur Power Query pour transformer l’objet JSON, voir [exporter, configurer et afficher des enregistrements de journal d’audit](export-view-audit-log-records.md).
+- Lorsque vous téléchargez tous les résultats de la recherche, le fichier CSV contient les colonnes **CreationDate**, **UserIds**, **Opérations** et **AuditData**. La colonne **AuditData** contient des informations supplémentaires sur chaque événement (semblables aux informations détaillées affichées sur la page du menu volant lorsque vous affichez les résultats de la recherche dans le Centre de conformité). Les données de cette colonne se composent d’un objet JSON qui contient plusieurs propriétés de l’enregistrement du journal d’audit. Chaque pair *property:value* dans l’objet JSON est séparée par une virgule. Vous pouvez utiliser l’outil transformation JSON de l’éditeur Power Query dans Excel pour fractionner la colonne **AuditData** en plusieurs colonnes de sorte que chaque propriété dans l’objet JSON ait sa propre colonne. Cela vous permettra d’utiliser une ou plusieurs de ces propriétés pour trier et filtrer les valeurs. Pour obtenir des instructions pas à pas à l’aide de l’éditeur Power Query pour transformer l’objet JSON, voir [exporter, configurer et afficher des enregistrements de journal d’audit](export-view-audit-log-records.md).
 
   Après avoir fractionné la colonne **AuditData**, vous pouvez filtrer sur la colonne **Opérations** pour afficher les propriétés détaillées pour un type d’activité spécifique.
-
-- L’option **Télécharger tous les résultats** télécharge les données brutes du journal d’audit dans un fichier .csv. Les noms de colonne qui apparaissent dans ce fichier (CreationDate, UserIds, Operation, AuditData) sont différents de ceux figurant dans le fichier téléchargé si vous sélectionnez l’option **Enregistrer les résultats chargés**. Les valeurs dans les deux fichiers .csv peuvent également différer pour la même activité. Par exemple, l’activité dans la colonne **Action** du fichier .csv peut avoir une valeur différente de la version « conviviale » qui apparaît dans la colonne **Activité** sur la page Recherche dans le **journal d’audit**. Par exemple, MailboxLogin et Utilisateur connecté à la boîte aux lettres.
 
 - Lorsque vous téléchargez tous les résultats d’une requête de recherche qui contient les événements de différents services, la colonne **AuditData** du fichier .csv contient différentes propriétés selon le service dans lequel l’action a été effectuée. Par exemple, les entrées des journaux d’audit Exchange et Azure AD incluent une propriété nommée **ResultStatus** qui indique si l’action a réussi ou non. Cette propriété n’est pas incluse pour les événements dans SharePoint. De même, les événements SharePoint ont une propriété qui identifie l’URL de site pour les activités liées aux fichiers et dossiers. Pour modifier ce comportement, vous pouvez utiliser des recherches différentes pour exporter les résultats des activités d’un service.
 
