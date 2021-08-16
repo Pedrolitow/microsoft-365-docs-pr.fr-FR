@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Découvrez comment gérer les groupes Microsoft 365'équipe.
-ms.openlocfilehash: 529bdb874661329497b103a1207b90625ad33a4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4658f046ec6ce7fbd8039556f0faf30ee2860a7416dd99baff45e3efb4a532fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899330"
 ---
 # <a name="manage-microsoft-365-groups"></a>Gestion des groupes Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez gérer Microsoft 365 groupes de plusieurs manières différentes, en fonction de votre configuration. Vous pouvez gérer les comptes d’utilisateurs dans le Centre [d’administration Microsoft 365,](../admin/add-users/index.yml)PowerShell, dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
+Vous pouvez gérer Microsoft 365 groupes de différentes manières, en fonction de votre configuration. Vous pouvez gérer les comptes d’utilisateurs dans [Centre d’administration Microsoft 365,](../admin/add-users/index.yml)PowerShell, dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planifier l’endroit et la façon dont vous allez gérer vos groupes
 

@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Activez le partage de calendrier dans le Centre d’administration Microsoft 365 afin que les utilisateurs peuvent partager leurs calendriers avec toute personne à l’intérieur ou à l’extérieur de l’organisation.
-ms.openlocfilehash: ed0ee14c37f5c23d262d98408114143a3f84803ba8830461a659b4dc6c010902
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3183eb9f45333e26685c09d586b5f3c5137a4a56
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824586"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346747"
 ---
 # <a name="share-calendars-with-external-users"></a>Partager des calendriers avec des utilisateurs externes
 
-Il est parfois nécessaire pour vos utilisateurs de planifier des réunions avec des personnes extérieures à votre organisation. Pour simplifier le processus de recherche des heures de réunion courantes, Microsoft 365 vous permet de mettre les calendriers à la disposition de ces personnes. Ce sont des personnes qui ont besoin de voir les heures de libre et de occupé pour les utilisateurs de votre organisation, mais qui n’ont pas de comptes d’utilisateur pour Microsoft 365 organisation.
+Il est parfois nécessaire pour vos utilisateurs de planifier des réunions avec des personnes extérieures à votre organisation. Pour simplifier le processus de recherche des heures de réunion courantes, Microsoft 365 vous permet de mettre les calendriers à la disposition de ces personnes. Ce sont des personnes qui ont besoin de consulter les heures de libre et de occupé pour les utilisateurs de votre organisation, mais qui n’ont pas de comptes d’utilisateur pour Microsoft 365 organisation.
 
 Vous pouvez activer le partage de calendrier pour tous les utilisateurs de votre organisation dans le Centre d’administration Microsoft 365. Une fois le partage activé, vos utilisateurs peuvent utiliser Outlook Web App pour partager leurs calendriers avec toute personne à l’intérieur ou à l’extérieur de l’organisation. Les membres de l’organisation peuvent afficher le calendrier partagé avec leur propre calendrier. Les personnes extérieures à l’organisation seront envoyées à une URL qu’elles pourront utiliser pour afficher le calendrier. Les utilisateurs de votre organisation décident quand partager et combien partager.
 
@@ -41,9 +41,7 @@ Vous pouvez activer le partage de calendrier pour tous les utilisateurs de votre
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Activer le partage de calendrier à l’aide Centre d’administration Microsoft 365
 
-1. Dans le Centre d’administration, Paramètres  \> **Org Paramètres**.
-
-2. Sous **l’onglet Services,** sélectionnez **Calendrier.**
+1. Dans le Centre d’administration,  Paramètres paramètres de l’organisation, puis sous l’onglet \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"> **Services,**</a>sélectionnez **Calendrier.**
   
 3. Dans **la** page Calendrier, choisissez si vous souhaitez laisser les utilisateurs partager leurs calendriers avec des personnes extérieures à votre organisation qui ont des Microsoft 365 ou Exchange. Choisissez si vous souhaitez autoriser les utilisateurs anonymes (utilisateurs sans informations d’identification) à accéder aux calendriers via une invitation par courrier électronique.
 

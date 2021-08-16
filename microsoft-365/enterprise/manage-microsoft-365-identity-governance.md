@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Découvrez comment utiliser les fonctionnalités Microsoft 365 gouvernance des identités.
-ms.openlocfilehash: 6a97ca24c609724a2cab93feec9e90f25d3361e3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a3e5ae78c0c84716d4290badfa034641b8ca696f8fc99b06f9b869437691f371
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899342"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>Gérer la Microsoft 365 d’identité
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez les plateformes, les clients et les modules PowerShell qui peuvent Access pour Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 763380429b8643c5dd01971117fccb040a9a0210
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 3548e692d81dc426fa03b4001db2b27b16d4a474dd9f8f531000ca6d57dab803
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899359"
 ---
 # <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 Prise en charge des applications clientes : accès conditionnel
 

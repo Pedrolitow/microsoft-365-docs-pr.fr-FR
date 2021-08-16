@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2a56b6ad80690e83c655773cf274cc54d757bdb3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b2c04250c568e827ed78d80a483b0ae7eb0c934339cab0ea49f11f77149bcaf7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883108"
 ---
 # <a name="contact-support-for-kiribati"></a>Contacter le support pour Kiribati
 
@@ -33,6 +33,6 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

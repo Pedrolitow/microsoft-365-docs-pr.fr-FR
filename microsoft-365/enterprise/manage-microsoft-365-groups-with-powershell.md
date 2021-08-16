@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Dans cet article, découvrez comment effectuer des tâches de gestion courantes pour Microsoft 365 groupes dans PowerShell.
-ms.openlocfilehash: 22bf4d1f3187746483d8d904378e675562a62142
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 48555dd41ff18941a6cbce3ef9f25cb5e3727735c7c7cedfe1e6050556e96dfb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730557"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899414"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Gérer Microsoft 365 groupes avec PowerShell
 
@@ -39,7 +39,7 @@ Cet article décrit les étapes à suivre pour effectuer des tâches de gestion 
 
 Lorsque les [utilisateurs créent ou modifient](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx)un groupe dans Outlook, vous pouvez leur afficher un lien vers les instructions d’utilisation de votre organisation. Par exemple, si vous avez besoin d’ajouter un préfixe ou un suffixe spécifique à un nom de groupe.
 
-Utilisez la Azure Active Directory PowerShell (Azure AD) pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour Microsoft 365 groupes. Consultez [Azure Active Directory cmdlets](/azure/active-directory/enterprise-users/groups-settings-cmdlets) pour configurer les paramètres de groupe et suivez les étapes de la procédure Créer des **paramètres** au niveau du répertoire pour définir le lien hypertexte de recommandation d’utilisation. Une fois que vous avez exécuté l’cmdlet AAD, les utilisateurs voient le lien vers vos instructions lorsqu’ils créent ou modifient un groupe dans Outlook.
+Utilisez la Azure Active Directory PowerShell (Azure AD) pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour Microsoft 365 groupes. Consultez [Azure Active Directory cmdlets](/azure/active-directory/enterprise-users/groups-settings-cmdlets) pour la configuration des paramètres de groupe et suivez les étapes de la procédure Créer des paramètres au niveau du répertoire pour définir le lien hypertexte des **recommandations** d’utilisation. Une fois que vous avez exécuté l’cmdlet AAD, les utilisateurs voient le lien vers vos instructions lorsqu’ils créent ou modifient un groupe dans Outlook.
 
 ![Créer un groupe avec le lien Recommandations en matière d’utilisation](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
 
@@ -62,7 +62,7 @@ $groupsRecipientDetails = Get-Recipient -RecipientTypeDetails groupmailbox -Iden
 Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAlias -AccessRights SendAs
 ```
 
-Une fois la cmdlet exécutée, les utilisateurs peuvent se rendre sur Outlook ou Outlook sur le web  pour envoyer en tant que groupe, en ajoutant l’adresse de messagerie du groupe au champ De.
+Une fois la cmdlet exécutée, les utilisateurs peuvent passer à Outlook ou Outlook sur le web pour envoyer en  tant que groupe, en ajoutant l’adresse de messagerie du groupe au champ De.
 
 ## <a name="create-classifications-for-microsoft-365-groups-in-your-organization"></a>Créer des classifications pour Microsoft 365 groupes de votre organisation
 
@@ -73,7 +73,7 @@ Vous pouvez créer des étiquettes de niveau de sensibilité que les utilisateur
 
 Vous pouvez toujours utiliser la fonctionnalité de classification des groupes précédente. Vous pouvez créer des classifications que les utilisateurs de votre organisation peuvent définir lorsqu’ils créent Microsoft 365 groupe. Par exemple, vous pouvez autoriser les utilisateurs à définir « Standard », « Secret » et « Top Secret » sur les groupes qu’ils créent. Les classifications de groupe ne sont pas définies par défaut et vous devez la créer pour que vos utilisateurs la définissent. Utilisez Azure Active Directory PowerShell pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour Microsoft 365 groupes.
 
-Consultez [Azure Active Directory cmdlets](/azure/active-directory/users-groups-roles/groups-settings-cmdlets) pour configurer les paramètres de groupe et suivez les étapes de la procédure Créer des **paramètres** au niveau de l’annuaire pour définir la classification des groupes Microsoft 365 de groupe.
+Consultez [Azure Active Directory cmdlets](/azure/active-directory/users-groups-roles/groups-settings-cmdlets) pour configurer les paramètres de groupe et suivez les étapes de la procédure Créer des **paramètres** au niveau du répertoire pour définir la classification des groupes Microsoft 365 de groupe.
 
 ```powershell
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
@@ -150,13 +150,13 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>Modifier le nom d’affichage du groupe Microsoft 365 groupe
 
-Le nom complet spécifie le nom du groupe Microsoft 365 groupe. Vous pouvez voir ce nom dans votre Centre d’administration Exchange ou Microsoft 365'administration Exchange. Vous pouvez modifier le nom complet du groupe ou attribuer un nom complet à un groupe Microsoft 365 existant en exécutant la commande Set-UnifiedGroup :
+Le nom complet spécifie le nom du groupe Microsoft 365 groupe. Vous pouvez voir ce nom dans votre centre d’administration Exchange ou Centre d’administration Microsoft 365. Vous pouvez modifier le nom complet du groupe ou attribuer un nom complet à un groupe Microsoft 365 existant en exécutant la commande Set-UnifiedGroup:
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 ```
 
-## <a name="change-the-default-setting-of-microsoft-365-groups-for-outlook-to-public-or-private"></a>Modifier le paramètre par défaut de Microsoft 365 Groupes de Outlook sur Public ou Privé
+## <a name="change-the-default-setting-of-microsoft-365-groups-for-outlook-to-public-or-private"></a>Modifier le paramètre par défaut de Microsoft 365 groupes pour Outlook public ou privé
 <a name="BKMK_CreateClassification"> </a>
 
 Microsoft 365 Les groupes dans Outlook sont créés comme privés par défaut. Si votre organisation souhaite créer Microsoft 365 groupes publics par défaut (ou de nouveau en privé), utilisez la syntaxe de l’cmdlet PowerShell suivante :
@@ -190,12 +190,12 @@ Les cmdlets suivantes peuvent être utilisées avec Microsoft 365 groupes.
 |[Set-UserPhoto](/powershell/module/exchange/set-userphoto) <br/> |Utilisé pour associer une photo d’utilisateur à un compte. Les photos de l’utilisateur sont stockées dans Active Directory  <br/> |
 |[Remove-UserPhoto](/powershell/module/exchange/remove-userphoto) <br/> |Supprimer la photo d’un groupe Microsoft 365 de recherche  <br/> |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Mettre à niveau les listes de distribution Microsoft 365 groupes](/office365/admin/manage/upgrade-distribution-lists)
 
 [Gérer les personnes autorisées à créer des groupes Microsoft 365](/office365/admin/create-groups/manage-creation-of-groups)
 
-[Gérer l’accès invité aux groupes Microsoft 365 client](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Gérer l’accès invité à Microsoft 365 groupes](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Modifier l’appartenance à un groupe statique en dynamique dans](/azure/active-directory/users-groups-roles/groups-change-type)

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Découvrez comment ajouter des invités à un groupe Microsoft 365, afficher les utilisateurs invités et utiliser PowerShell pour contrôler l’accès invité.
-ms.openlocfilehash: dd29775aebc9b5a6434e7ce5bdbd46b6a874d548b6a82f61f2e525f51b638c27
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 13eb75203bc12e6682700c9a5d44bb33505f9ff0
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826482"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346843"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gérer l’accès invité dans Microsoft 365 groupes
 
@@ -47,17 +47,17 @@ L’accès invité dans les groupes est souvent utilisé dans le cadre d’un sc
 
 ## <a name="manage-groups-guest-access"></a>Gérer l’accès invité des groupes
 
-Si vous souhaitez activer ou désactiver l’accès invité dans les groupes, vous pouvez le faire dans le Centre d’administration Microsoft 365.
+Si vous souhaitez activer ou désactiver l’accès invité dans les groupes, vous pouvez le faire dans les <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**groupes.**</a>
 
-1. Dans le Centre d’administration, sélectionnez **Afficher** tous Paramètres l’organisation et sous l’onglet \>  \>  **Services,** **sélectionnez Microsoft 365 groupes.**
+1. Dans le Centre d’administration, sélectionnez Afficher  tous Paramètres l’organisation et sous l’onglet \>  \>  **Services,** <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**sélectionnez Microsoft 365 groupes.**</a>
   
 2. Dans la page **Microsoft 365** groupes, choisissez si vous souhaitez laisser des personnes extérieures à votre organisation accéder aux ressources de groupe ou laisser les propriétaires de groupes ajouter des personnes extérieures à votre organisation à des groupes.
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Ajouter des invités à un groupe Microsoft 365 à partir du Centre d’administration
 
-Si l’invité existe déjà dans votre annuaire, vous pouvez l’ajouter à vos groupes à partir du Centre d’administration Microsoft 365. (Les groupes avec appartenance dynamique doivent être [gérés Azure Active Directory](/azure/active-directory/enterprise-users/groups-create-rule).)
+Si l’invité existe déjà dans votre annuaire, vous pouvez l’ajouter à vos groupes à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Centre d’administration Microsoft 365</a>. (Les groupes avec appartenance dynamique doivent être [gérés Azure Active Directory](/azure/active-directory/enterprise-users/groups-create-rule).)
   
-1. Dans le Centre d’administration, allez à la page   >  **Groupes.**
+1. Dans le Centre d’administration, allez aux **groupes.**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
   
 2. Cliquez sur le groupe à qui vous souhaitez ajouter l’invité, puis sélectionnez Afficher **tout et gérer** les membres sous **l’onglet Membres.** 
   
@@ -72,6 +72,6 @@ Si vous souhaitez modifier les informations d’un invité, vous pouvez ajouter 
 ## <a name="related-content"></a>Contenu connexe
 
 [Bloquer les utilisateurs invités d’un groupe spécifique](../../solutions/per-group-guest-access.md) (article)\
-[Gérer l’appartenance à un groupe dans le Centre d’administration Microsoft 365](add-or-remove-members-from-groups.md) (article)\
+[Gérer l’appartenance à un Centre d’administration Microsoft 365](add-or-remove-members-from-groups.md) (article)\
 [Azure Active Directory révisions d’accès](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (article)\
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (article)

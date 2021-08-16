@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ef3a678e1ae23878701ca0305c16484786927399
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b955ad0deac5907aed998a3a7f31db625eedc6772df5bfe8dda1b57959a314cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882928"
 ---
 # <a name="contact-support-for-tanzania"></a>Contacter le support pour la Tanzanie
 
@@ -35,8 +35,8 @@ Entrer le code 7704
 
 Anglais : Mon-Fri 10h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Les frais d’appels internationaux s’appliquent

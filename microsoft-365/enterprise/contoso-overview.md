@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
-ms.openlocfilehash: b0c00ed5657d914851f28278a2f4cf80660b53b0
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: dc3d939895a5eedc0bf5f66a0226486bd2fa97cd15fb05aa9329a1cfbce644d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754267"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899382"
 ---
 # <a name="overview-of-contoso-corporation"></a>Vue d’ensemble de Contoso Corporation
 
-Contoso Corporation est une multinationale dont le siège social est à Paris. L’entreprise est une organisation de production, de vente et de support qui compte plus de 100 000 produits.
+Contoso Corporation est une multinationale dont le siège social est à Paris. La société est une organisation de production, de vente et de support technique qui compte plus de 100 000 produits.
 
 ## <a name="contoso-around-the-world"></a>Contoso dans le monde
 
@@ -53,7 +53,7 @@ Contoso possède trois niveaux de bureaux :
 
   Les succursales ont en moyenne 250 employés.
 
-Environ 25 % des employés de Contoso sont mobiles uniquement. Les centres régionaux et les succursales ont un pourcentage plus élevé de ces employés. La fourniture d’une meilleure prise en charge des travailleurs mobiles uniquement est un objectif commercial important pour Contoso.
+Environ 25 % des employés de Contoso sont mobiles uniquement. Les centres régionaux et les succursales ont un pourcentage plus élevé de ces travailleurs. La fourniture d’une meilleure prise en charge des travailleurs mobiles uniquement est un objectif commercial important pour Contoso.
 
 ## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considérations de conception pour Microsoft 365 entreprise
 

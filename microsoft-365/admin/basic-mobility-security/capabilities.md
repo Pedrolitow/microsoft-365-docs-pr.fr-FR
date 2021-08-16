@@ -18,17 +18,17 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer les appareils mobiles.
-ms.openlocfilehash: e69ad327add8ced4f3bacfa47c5b9424f3601b63a18360983e20c9a68ea83b53
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer vos appareils mobiles.
+ms.openlocfilehash: cfd29178bfa6ea235bc26cf8ca1efa3b80e39915
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827062"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346951"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités Mobility + Security de Base
 
-La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles tels que les iPhone, iPad, Android et Windows Phone utilisés par les utilisateurs sous licence Microsoft 365 au sein de votre organisation. Vous pouvez créer des stratégies de gestion des appareils mobiles avec des paramètres qui peuvent vous aider à contrôler l’accès au courrier électronique et aux documents Microsoft 365 de votre organisation pour les appareils mobiles et les applications mobiles pris en charge. En cas de perte ou de vol d’un appareil, vous pouvez le réinitialiser à distance pour supprimer les informations sensibles de l’organisation qu’il contient.
+La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles tels que les iPhone, iPad, Android et Windows Phone utilisés par les utilisateurs sous licence Microsoft 365 au sein de votre organisation. Vous pouvez créer des stratégies de gestion des appareils mobiles avec des paramètres qui permettent de contrôler l’accès au courrier électronique et aux documents Microsoft 365 de votre organisation pour les appareils mobiles et les applications mobiles pris en charge. En cas de perte ou de vol d’un appareil, vous pouvez le réinitialiser à distance pour supprimer les informations sensibles de l’organisation qu’il contient.
 
 ## <a name="supported-devices"></a>Appareils pris en charge
 
@@ -38,15 +38,15 @@ Vous pouvez utiliser la mobilité et la sécurité de base pour sécuriser et g�
 
 - Android 5.0 ou versions ultérieures<sup>3</sup>
 
-- Windows 8.1<sup>1</sup>
+- Windows 8.1<sup>1</sup>
 
-- Windows 8.1 RT<sup>1</sup>
+- Windows 8.1 RT<sup>1</sup>
 
 - Windows 10<sup>2</sup>
 
 - Windows 10 Mobile<sup>2</sup>
 
-<sup>1</sup> Le contrôle d’Windows 8.1 les appareils RT est limité à Exchange ActiveSync.
+<sup>1</sup> Le contrôle d’accès Windows 8.1 les appareils RT est limité à Exchange ActiveSync.
 
 <sup>2</sup> Le contrôle d’Windows 10 nécessite un abonnement qui inclut Azure AD Premium et l’appareil doit être joint à Azure Active Directory.
 
@@ -61,7 +61,7 @@ Si les membres de votre organisation utilisent des appareils mobiles qui ne sont
 
 Les applications prise en charge pour les différents types d’appareils mobiles dans le tableau suivant invitent les utilisateurs à s’inscrire à Basic Mobility and Security lorsqu’une nouvelle stratégie de gestion des appareils mobiles s’applique à l’appareil d’un utilisateur et que l’utilisateur n’a pas précédemment inscrit l’appareil. Si l’appareil d’un utilisateur n’est pas conforme à une stratégie, selon la façon dont vous la définissez, il se peut qu’un utilisateur ne puisse pas accéder aux ressources Microsoft 365 dans ces applications, ou qu’il puisse y avoir accès mais Microsoft 365 signale une violation de stratégie.
 
-|**Produit**|**iOS 10.0 ou ultérieur**|**Android 5.0 ou version ultérieure**|
+|**Produit**|**iOS 10.0 ou une ultérieure**|**Android 5.0 ou version ultérieure**|
 |:-----|:-----|:-----|
 |**Exchange** Exchange ActiveSync inclut la messagerie électronique intégrée et les applications tierces, telles que TouchDown, qui utilisent Exchange ActiveSync version 14.1 ou ultérieure. |Courrier |E-mail |
 |**Office**   et  **OneDrive Entreprise** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**Sur les téléphones et les tablettes**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Sur les téléphones uniquement :** <br/> Office Mobile |
@@ -93,7 +93,7 @@ Les paramètres qui peuvent empêcher les utilisateurs d’accéder Microsoft 36
 
 - Profil de messagerie géré
 
-Par exemple, le diagramme suivant montre ce qui se produit lorsqu’un utilisateur disposant d’un appareil inscrit ne respecte pas un paramètre de sécurité dans une stratégie de gestion des appareils mobiles qui s’applique à son appareil. L’utilisateur se signe à une application qui prend en charge le contrôle d’accès avec Basic Mobility and Security. Ils ne peuvent pas accéder Microsoft 365 ressources de l’application tant que leur appareil n’est pas conforme au paramètre de sécurité.
+Par exemple, le diagramme suivant montre ce qui se produit lorsqu’un utilisateur disposant d’un appareil inscrit ne respecte pas un paramètre de sécurité dans une stratégie de gestion des appareils mobiles qui s’applique à son appareil. L’utilisateur se signe à une application qui prend en charge le contrôle d’accès avec Basic Mobility and Security. Ils ne peuvent pas accéder aux Microsoft 365 de l’application tant que leur appareil n’est pas conforme au paramètre de sécurité.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Message de conformité de sécurité et de mobilité de base":::
 
@@ -142,8 +142,8 @@ L’option suivante peut empêcher les utilisateurs d’accéder à Microsoft 36
 |Bloquer la sauvegarde sur le cloud |Oui|Non|Non|
 |Bloquer la synchronisation de documents |Oui|Non|Non|
 |Bloquer la synchronisation de photos  |Oui|Non|Non|
-|Autoriser la sauvegarde Google  |N/A|Non|Oui|
-|Autoriser la synchronisation automatique des comptes Google  |N/A|Non|Oui|
+|Autoriser la sauvegarde Google  |S/O|Non|Oui|
+|Autoriser la synchronisation automatique des comptes Google  |S/O|Non|Oui|
 
 ## <a name="system-settings"></a>Paramètres système
 

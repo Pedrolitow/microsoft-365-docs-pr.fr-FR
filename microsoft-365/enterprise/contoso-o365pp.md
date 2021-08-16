@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer de Microsoft 365 Apps for enterprise.
-ms.openlocfilehash: 71958b2e87882e478a852db1f906f61207837854
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 858d83f02bc00874c639815ce4af6a491a0352764f9ddb7ab024d3d9fc37ebe7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907673"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899503"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Déploiement de Microsoft 365 Apps for enterprise pour Consoto.
 
@@ -65,7 +65,7 @@ Pour effectuer le déploiement d’Office, Contoso a implémenté le processus s
 1. Dans Configuration Manager, ils ont activé le cache d’homologues sur leurs appareils clients, ce qui permet de limiter la capacité du réseau lors du déploiement sur les appareils clients dans des emplacements distants. 
 1. Contoso a défini deux groupes de déploiement en tant que collections d’appareils dans Configuration Manager : un groupe pilote et un groupe large. Le groupe pilote, qui comprenait un petit ensemble d’appareils représentatifs au sein de l’organisation, a été utilisé pour des tests supplémentaires d’applications, de compléments et de matériel avec Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises.
 1. Ils ont créé des packages de déploiement pour Office à l’aide du tableau de bord de gestion des clients Office et de l’Assistant Office 365 Installer, qui font tous deux partie de la console Configuration Manager. Ils ont créé deux packages Applications Microsoft 365 pour les grandes entreprises, un pour le groupe pilote sur le canal Semi-Annual Enterprise (prévisualisation) et un pour le groupe large sur le canal Semi-Annual Enterprise.
-2. Chaque Office inclut des packs linguistiques anglais, français et allemand. Si un appareil nécessitait une langue qui n’était pas incluse dans le package Office, ce pack de langue était automatiquement téléchargé à partir du Office réseau de distribution de contenu (CDN).
+2. Chaque Office inclut des packs linguistiques anglais, français et allemand. Si un appareil nécessitait une langue qui n’était pas incluse dans le package Office, ce pack de langue a été automatiquement téléchargé à partir du Office réseau de distribution de contenu (CDN).
 3. La société a utilisé la fonctionnalité intégrée dans le package Office afin de supprimer automatiquement toutes les versions MSI d’Office existantes avant d’installer Microsoft 365 Apps for enterprise.
 4. Dans Configuration Manager, ils ont déployé les packages Windows et Office vers des points de distribution sur leur réseau. Ils ont ensuite déployé les séquences de tâches de déploiement configuration Manager pour déployer le package Applications Microsoft 365 pour les grandes entreprises pilote dans le groupe pilote.
 5. Après avoir résolu les problèmes de compatibilité avec le groupe pilote, Contoso a mis en place les séquences de tâches pour déployer le package Applications Microsoft 365 pour les grandes entreprises au groupe étendu.

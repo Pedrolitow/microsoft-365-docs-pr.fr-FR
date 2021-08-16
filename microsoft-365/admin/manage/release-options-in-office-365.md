@@ -24,19 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de publication pour les nouvelles mises à jour de produits et de fonctionnalités dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 69cae62a2a468c27a210a5db65d1858046b758859c2dae0ed4ab90c1acf78d9c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c9a3478c15ad5505bae73b6821fc8ed9511f9b3e
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825042"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346783"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de publication standard ou ciblée
 
 > [!IMPORTANT]
 > Les Microsoft 365 mises à jour décrites dans cet article s’appliquent à Microsoft 365, SharePoint Online et Exchange Online. Ces options de publication sont des méthodes ciblées et efficaces pour publier les modifications apportées à Microsoft 365 mais ne peuvent pas être garanties en permanence ou pour toutes les mises à jour. Elles ne s’appliquent pas Microsoft 365 Apps, Skype Entreprise, Microsoft Teams services associés. Pour plus d’informations sur les options de publication Microsoft 365 Apps, voir [Vue d’ensemble](/deployoffice/overview-update-channels)des canaux de mise à jour Microsoft 365 Apps .
 
-Avec Microsoft 365, vous recevez de nouvelles mises à jour et fonctionnalités de produit dès qu’elles sont disponibles au lieu de faire des mises à jour coûteuses tous les quelques années. Vous n'avez donc plus besoin de procéder à des mises à jour onéreuses chaque année. De plus, vous pouvez gérer la manière dont votre organisation reçoit ces mises à jour. Par exemple, vous pouvez vous inscrire à une publication anticipée et faire profiter l'ensemble de votre organisation des mises à jour en avance, ou sélectionner un panel restreint d'utilisateurs qui les testeront. Vous pouvez également décider de rester sur le programme de publication standard et recevoir les mises à jour plus tard. Cet article décrit les différentes options de publication et la façon dont vous pouvez les utiliser pour votre organisation.
+Avec Microsoft 365, vous recevez de nouvelles mises à jour et fonctionnalités de produit dès qu’elles sont disponibles au lieu de faire des mises à jour coûteuses tous les ans. Vous n'avez donc plus besoin de procéder à des mises à jour onéreuses chaque année. De plus, vous pouvez gérer la manière dont votre organisation reçoit ces mises à jour. Par exemple, vous pouvez vous inscrire à une publication anticipée et faire profiter l'ensemble de votre organisation des mises à jour en avance, ou sélectionner un panel restreint d'utilisateurs qui les testeront. Vous pouvez également décider de rester sur le programme de publication standard et recevoir les mises à jour plus tard. Cet article décrit les différentes options de publication et la façon dont vous pouvez les utiliser pour votre organisation.
 
 ## <a name="how-it-works---release-validation"></a>Mode de fonctionnement - Validation de publication
 
@@ -95,7 +95,7 @@ Vous pouvez modifier la façon dont votre organisation reçoit Microsoft 365 mis
 > [!IMPORTANT]
 > Jusqu’à 24 heures peuvent être nécessaires pour que les modifications ci-dessous prennent effet dans Microsoft 365. Si vous décidez de ne plus participer au programme de publication ciblée après l'avoir activé, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication planifiée. 
   
-1. Dans le Centre d’administration, sélectionnez le **paramètre**  >  **Paramètres’organisation,** puis sous l’onglet Profil de  l’organisation, choisissez Préférences de **publication.**
+1. Dans le Centre d’administration, sélectionnez le **paramètre**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"></a>**Paramètres’organisation,** puis sous l’onglet Profil de l’organisation, choisissez Préférences **de publication.**
 
 5. Pour désactiver la publication ciblée, sélectionnez **Publication standard,** puis **sélectionnez Enregistrer les modifications.** 
     

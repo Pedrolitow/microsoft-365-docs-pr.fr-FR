@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7f17526765bbd3940ed88d85f7432805546ab13c
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f70fb390e1cde09786f81dd8b7ebe790f607e55085254a6b25f6851c096cbde4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296454"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883168"
 ---
 # <a name="contact-support-for-bosnia-and-herzegovnia"></a>Contacter le support technique pour la Bosnie-Herzégovine et Herzegovnia
 
@@ -37,7 +37,7 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
+Anglais : 24h/24, 7j/7
 
 Autre Téléphone numéro : +387 33 606 100
 
