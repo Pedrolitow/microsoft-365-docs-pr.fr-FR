@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8e37572b07c6d81abc531e204a8cb060f1f6402c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 687195eeb9bbc53be3f50e9b7662faaeed208b5502e9972801ee3d105c35c1ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194986"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888706"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender vue d’ensemble
 
@@ -181,7 +181,7 @@ Utilisez *cette page pour* obtenir des commentaires sur l’article lui-même. M
 Continuez d’explorer les fonctionnalités dans Microsoft 365 Defender :
 
 - [Gérer les incidents et les alertes](manage-incidents.md)
-- [Suivre les menaces émergentes et y répondre avec l’analyse des menaces](threat-analytics.md)
+- [Suivre et répondre aux menaces émergentes avec l’analytique des menaces](threat-analytics.md)
 - [Le centre des actions](m365d-action-center.md)
 - [Repérer des menaces sur les appareils, les e-mails, les applications, et les identités](./advanced-hunting-query-emails-devices.md)
 - [Règles de détection personnalisée](./custom-detection-rules.md)

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1d1652a866d8d3cfd7b1270a09abead8a27507a7d7ec7dde2a5a5dceb465677e
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 4dec522f41a2dc580038f0ee5ae007221a596046
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523392"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247849"
 ---
 # <a name="collect-investigation-package-api"></a>API collecter un package d’examen
 
@@ -75,7 +75,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande

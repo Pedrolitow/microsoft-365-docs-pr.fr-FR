@@ -1,7 +1,7 @@
 ---
 title: Évaluer votre posture de sécurité via le Score de sécurité Microsoft
-description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le centre Microsoft 365 sécurité.
-keywords: niveau de sécurité microsoft, degré de sécurisation, degré de sécurisation d’Office 365, score de sécurité microsoft, centre de sécurité microsoft 365, actions d’amélioration
+description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le portail Microsoft 365 Defender microsoft.
+keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Microsoft 365 Defender portail, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: e347f4393c45ba54d1ddb286fcc001193bc647f635dda64dcbb446be190a5dba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b1d684687c271150fa7e297c0a243ba61bd1b39
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838646"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247938"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve à https://security.microsoft.com/securescore dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve dans le https://security.microsoft.com/securescore portail [Microsoft 365 Defender.](overview-security-center.md)
 
 Pour vous aider à trouver les informations dont vous avez besoin plus rapidement, les actions d’amélioration de Microsoft sont organisées en groupes :
 

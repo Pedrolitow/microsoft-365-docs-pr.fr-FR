@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 32de0d16d2a8e754a36d0def296b3913e2fc04d5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c1620de251a0cd16ab61e0ecb41abb1b481535161d5db5b9d791501229e6fc13
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889362"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour
 
@@ -41,9 +41,9 @@ Lorsque vous utilisez [Windows Analytics Update Compliance](/windows/deployment/
 En règle générale, les indicateurs les plus courants d’un problème sont :
 - Vous ne voyez qu’un petit nombre ou un sous-ensemble de tous les appareils que vous attendiez à voir
 - Vous ne voyez aucun appareil
-- Les rapports et les informations que vous voyez sont obsolètes (plus de quelques jours)
+- Les rapports et informations que vous voyez sont obsolètes (plus de quelques jours)
 
-Pour les codes d’erreur courants et les ID d’événement liés au service Antivirus Microsoft Defender qui ne sont pas liés à la mise à jour de conformité, voir [Antivirus Microsoft Defender événements.](troubleshoot-microsoft-defender-antivirus.md) 
+Pour les codes d’erreur courants et les ID d’événement liés au service Antivirus Microsoft Defender qui ne sont pas liés à update compliance, voir Antivirus Microsoft Defender [événements .](troubleshoot-microsoft-defender-antivirus.md) 
 
 La résolution de ces problèmes se fait en trois étapes :
 
@@ -73,7 +73,7 @@ Si les conditions préalables ci-dessus ont toutes été remplies, vous devrez p
 > [!div class="nextstepaction"]
 > [Collecter des données de diagnostic pour la résolution des problèmes de conformité des mises à jour](collect-diagnostic-data.md)  
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)

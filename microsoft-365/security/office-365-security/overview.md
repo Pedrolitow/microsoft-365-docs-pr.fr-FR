@@ -16,12 +16,12 @@ ms.collection:
 description: La sécurité dans Office 365, de EOP à Defender pour Office 365 Plans 1 et 2, les configurations de sécurité Standard vs Strict, et plus encore. Comprenez ce que vous avez et comment sécuriser vos propriétés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b9db76654e19309816b29e5cfe607c064b8d364
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 622ee49dc0fed1f094496e0e25b2f52466b281a242638d484f13ab8a905c09f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888510"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Vue d’ensemble de la sécurité Office 365 Microsoft Defender for Office 365
 
@@ -153,4 +153,4 @@ Découvrir les [Nouveautés Microsoft Defender pour Office 365 (y compris les d�
 
 [Utiliser l’Explorateur de menaces ou la détection en temps réel](threat-explorer.md)
 
-Utiliser une [formation de simulation d’attaque](attack-simulation-training.md)
+Utiliser une [formation sur la simulation d’attaque](attack-simulation-training.md)

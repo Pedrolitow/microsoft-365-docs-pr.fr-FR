@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: fc2de341f79940f4c7a3a79ca61f2854844d2263
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 3b4c99f78173466e2a4d5802be54fd98cf312849
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53618882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247885"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -71,7 +71,7 @@ Une stratégie réussie pour le déploiement d’étiquettes de confidentialité
 
 En utilisant le tableau de la section suivante, nous vous recommandons d’identifier un ou deux de vos principaux scénarios correspondant aux besoins d’entreprise qui ont le plus d’impact. Une fois ces scénarios déployés, revenez à la liste pour identifier une ou deux prochaines priorités pour le déploiement.
 
-Vous trouverez des conseils généraux sur le déploiement dans le guide téléchargeable sur la protection contre la perte de données et l’accélération de déploiement de Microsoft Information Protection. Si vous souhaitez obtenir plus d’informations, voir le billet de blog, [Guide d’accélération du déploiement de Microsoft 365 Information Protection et de la conformité](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404).
+Vous trouverez des conseils supplémentaires de déploiement général et les meilleures pratiques dans le [Guide d’accélération du déploiement pour Microsoft Information Protection et la protection contre la perte de données](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/), l’une des ressources du site [Customer Acceleration Team (CAT)](https://microsoft.github.io/ComplianceCxE/).
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Scénarios courants relatifs aux étiquettes de confidentialité
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tiers et messages remis à des boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0338cdd6dd45596e31650680d15c9fa31126929ae355389cce66e2045437bfcb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1bfde7c5d4decd57586f243c4eafefce8917ac4f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810329"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247907"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
@@ -40,7 +40,7 @@ Vous utilisez la _stratégie de remise_ avancée dans Microsoft 365 pour empêch
 
 - Les filtres dans EOP et Microsoft Defender Office 365 aucune action sur ces messages.<sup>\*</sup>
 - [La purge zéro heure (ZAP) pour](zero-hour-auto-purge.md) le courrier indésirable et le hameçonnage n’a aucune action sur ces messages.<sup>\*</sup>
-- [Les alertes système par](/microsoft-365/compliance/alert-policies#default-alert-policies) défaut ne sont pas déclenchées pour ces scénarios.
+- [Les alertes système par défaut](/microsoft-365/compliance/alert-policies#default-alert-policies) ne sont pas déclenchées pour ces scénarios.
 - [Air and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Plus spécifiquement pour les simulations de hameçonnage tierces :
   - [Les soumissions d’administrateur](admin-submission.md) génèrent une réponse automatique qui dit que le message fait partie d’une campagne de simulation de hameçonnage et qu’il ne constitue pas une menace réelle. Les alertes et air ne sont pas déclenchés. L’expérience de soumissions d’administrateurs présente ces messages comme une menace simulée.
@@ -71,11 +71,11 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
   Pour plus d’informations, [voir Autorisations dans le portail Microsoft 365 Defender et](permissions-microsoft-365-security-center.md) [autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > L’ajout d’utilisateurs au rôle Azure Active Directory leur donne les autorisations  requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > L’ajout d’utilisateurs au rôle Azure Active Directory leur donne les autorisations  requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer les boîtes aux lettres SecOps dans la stratégie de remise avancée
 
-1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
+1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & Stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
 
 2. Dans la page **Remise** avancée, vérifiez que l’onglet Boîte aux lettres **SecOps** est sélectionné, puis faites l’une des étapes suivantes :
    - Cliquez sur ![ Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier.**
@@ -95,7 +95,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées sont affich
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer des simulations de hameçonnage tiers dans la stratégie de remise avancée
 
-1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
+1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & Stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
 
 2. Dans la page **Remise avancée,** sélectionnez l’onglet **Simulation** de hameçonnage, puis faites l’une des étapes suivantes :
    - Cliquez sur ![ Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier.**
@@ -112,7 +112,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées sont affich
      - Adresse IP unique : par exemple, 192.168.1.1.
      - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
      - ADRESSE IP CIDR : par exemple, 192.168.0.1/25.
-   - URL de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou désaxées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, voir [la syntaxe d’URL pour la liste d’adresses client autoriser/bloquer](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list).
+   - URL de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou désaxées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, voir [la syntaxe d’URL pour la liste d’adresses client autoriser/bloquer.](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)
 
    Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 

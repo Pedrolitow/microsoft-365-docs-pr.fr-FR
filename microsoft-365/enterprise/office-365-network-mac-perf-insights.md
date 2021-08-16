@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Informations réseau
+title: Microsoft 365 Réseau Informations
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,23 +13,23 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 Informations réseau
-ms.openlocfilehash: 10b1c66a8f9aae555c2841b2b290f341bec3c7ec
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+description: Microsoft 365 Réseau Informations
+ms.openlocfilehash: ef844598d505e42f4fb99cb52321fc9709dbd4a2411884f7b8b4fff51c3a62d2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470555"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854766"
 ---
-# <a name="microsoft-365-network-insights"></a>Microsoft 365 Informations réseau
+# <a name="microsoft-365-network-insights"></a>Microsoft 365 Réseau Informations
 
-**Les informations réseau sont** des mesures de performances collectées à partir de votre client Microsoft 365 et disponibles uniquement pour les utilisateurs administratifs de votre client. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance> .
+**Les informations réseau sont** des mesures de performances collectées à partir de votre client Microsoft 365 et disponibles uniquement pour les utilisateurs administratifs de votre client. Informations sont affichés dans le centre Administration Microsoft 365 à <https://portal.microsoft.com/adminportal/home#/networkperformance> l’écran.
 
-Les informations sont conçues pour vous aider à concevoir des périmètres réseau pour vos bureaux. Chaque insight fournit des détails en direct sur les caractéristiques de performances d’un problème commun spécifique pour chaque emplacement géographique où les utilisateurs accèdent à votre client.
+Informations sont conçus pour vous aider à concevoir des périmètres réseau pour vos bureaux. Chaque insight fournit des détails en direct sur les caractéristiques de performances d’un problème courant spécifique pour chaque emplacement géographique où les utilisateurs accèdent à votre client.
 
 Il existe six informations réseau spécifiques qui peuvent être affichées pour chaque emplacement de bureau :
 
-- [Sortie du réseau backhauled](#backhauled-network-egress)
+- [Sortie réseau backhauled](#backhauled-network-egress)
 - [Périphérique intermédiaire réseau](#network-intermediary-device)
 - [Meilleures performances détectées pour les clients proches de chez vous](#better-performance-detected-for-customers-near-you)
 - [Utilisation d’une porte d’Exchange Online service non optimale](#use-of-a-non-optimal-exchange-online-service-front-door)
@@ -43,16 +43,16 @@ Il existe deux informations réseau au niveau du client qui peuvent être affich
 - [SharePoint exemples de connexions touchés par des problèmes de connectivité](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
->Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre d’administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
+>Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre Administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
 
-## <a name="backhauled-network-egress"></a>Sortie du réseau backhauled
+## <a name="backhauled-network-egress"></a>Sortie réseau backhauled
 
 Cette information s’affiche si le service d’informations réseau détecte que la distance entre un emplacement d’utilisateur donné et la sortie réseau est supérieure à 500 km (800 kilomètres), ce qui indique que le trafic Microsoft 365 est rétrogradé vers un périphérique edge Internet ou un proxy commun.
 
 Cette information est abrégée en « Egress » dans certains affichages récapitulatifs.
 
 > [!div class="mx-imgBorder"]
-> ![Sortie du réseau backhauled](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+> ![Sortie réseau backhauled](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
@@ -70,7 +70,7 @@ Pour plus d’informations sur la résolution de ce problème, voir Egress [conn
 
 Cette information s’affiche si nous avons détecté des appareils entre vos utilisateurs et le réseau de Microsoft, ce qui peut avoir un impact sur Office 365 l’expérience utilisateur. Il est recommandé de les contourner pour des Microsoft 365 réseau spécifiques destinés aux centres de données Microsoft. Cette recommandation est également décrite dans Microsoft 365 [principes de connectivité réseau.](microsoft-365-network-connectivity-principles.md) 
 
-L’une des informations intermédiaires du réseau que nous montrons est la coupure SSL et l’inspection lorsque les points de terminaison réseau Office 365 critiques pour les Exchange, SharePoint et Teams sont interceptés et déchiffrés par des périphériques intermédiaires réseau.
+L’une des informations intermédiaires du réseau que nous montrons est la coupure SSL et l’inspection lorsque des points de terminaison réseau Office 365 critiques pour les Exchange, SharePoint et Teams sont interceptés et déchiffrés par des périphériques intermédiaires réseau.
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
@@ -99,12 +99,12 @@ Il peut y avoir de nombreuses raisons à cette condition, notamment la latence d
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Utilisation d’une porte d’Exchange Online service non optimale
 
-Cette information s’affiche si le service d’informations réseau détecte que les utilisateurs d’un emplacement spécifique ne se connectent pas à une porte d’entrée Exchange Online service optimale.
+Cette information s’affiche si le service d’informations réseau détecte que les utilisateurs situés à un emplacement spécifique ne se connectent pas à une porte d’entrée Exchange Online service optimale.
 
 Cette information est abrégée en « Routage » dans certains affichages récapitulatifs.
 
 > [!div class="mx-imgBorder"]
-> ![Porte frontale EXO non optimale](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+> ![Porte d’entrée EXO non optimale](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
@@ -125,7 +125,7 @@ Cette information est abrégée en « Afd » dans certains affichages récapitul
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
-Nous identifions la SharePoint frontale du service en ligne à qui le client de test se connecte. Ensuite, pour la ville de l’emplacement du bureau, nous comparons cela à la porte d’SharePoint service en ligne prévue pour cette ville. Si ce n’est pas le cas, nous vous en faisons la recommandation.
+Nous identifions la SharePoint frontale du service en ligne à qui le client de test se connecte. Ensuite, pour la ville de l’emplacement du bureau, nous comparons cela à la SharePoint service en ligne prévue pour cette ville. Si ce n’est pas le cas, nous vous en faisons la recommandation.
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
@@ -160,7 +160,7 @@ Si votre organisation dispose d’une connectivité WAN privée, nous vous recom
 - Singapour
 - Malaisie
 
-Une sortie d’Internet plus éloignée des utilisateurs que ces emplacements réduit les performances, et la sortie en Chine peut entraîner des problèmes de latence et de connectivité élevés en raison d’une congestion croisée.
+Une sortie d’Internet plus éloignée des utilisateurs que ces emplacements réduit les performances et la sortie en Chine peut entraîner des problèmes de latence et de connectivité élevés en raison d’une congestion croisée.
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
@@ -190,9 +190,9 @@ Cela indique que la majorité de vos utilisateurs rencontreront probablement des
 
 Activez la visibilité de la connectivité réseau de l’emplacement du bureau si vous ne l’avez pas déjà fait. Vous souhaitez identifier les bureaux qui sont touchés par une connectivité réseau médiocre qui a un impact sur SharePoint et trouver des moyens d’améliorer le périmètre réseau à chaque bureau qui connecte les utilisateurs au réseau de Microsoft.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
-[Connectivité réseau dans le Centre d’administration Microsoft 365 (prévisualisation)](office-365-network-mac-perf-overview.md)
+[Connectivité réseau dans le centre de Administration Microsoft 365 (aperçu)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365'évaluation réseau (prévisualisation)](office-365-network-mac-perf-score.md)
 

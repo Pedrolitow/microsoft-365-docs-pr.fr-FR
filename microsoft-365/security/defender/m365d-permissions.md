@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 738315c446fd57d4cd027de92eb77b0029f84323
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 33b53356f4569954b2e5905b953bc1edaa7f750f8dff0d09133ec520a67ec615
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902198"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Gérer l’accès aux Microsoft 365 Defender avec Azure Active Directory rôles globaux
 

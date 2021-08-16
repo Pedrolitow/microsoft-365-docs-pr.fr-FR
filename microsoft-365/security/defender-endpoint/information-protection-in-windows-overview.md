@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d4958d002e0b9033993d3196c09684b5037534a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b38cf9c56f3c518ed7dace01b174b21b280baa23a9e71edb290edd797283f40d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857489"
 ---
 # <a name="information-protection-in-windows-overview"></a>Vue d’ensemble de la protection des informations dans Windows
 
@@ -40,7 +40,7 @@ ms.locfileid: "53653246"
 La protection des informations fait partie intégrante de Microsoft 365 Entreprise suite, offrant une protection intelligente pour garantir la sécurité des données sensibles tout en permettant la productivité sur le lieu de travail.
 
 >[!TIP]
-> Lisez notre billet de blog sur la façon dont Microsoft Defender pour endpoint s’intègre à Protection des données Microsoft pour découvrir, protéger et surveiller les données sensibles [sur Windows appareils.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
+> Lisez notre billet de blog sur la façon dont Microsoft Defender pour le point de terminaison s’intègre à Protection des données Microsoft pour découvrir, protéger et surveiller les données sensibles [sur Windows appareils.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
 
 Defender pour le point de terminaison applique les méthodes suivantes pour découvrir, classifier et protéger les données :
 
@@ -55,7 +55,7 @@ Les étiquettes de sensibilité classifient et aident à protéger le contenu se
 
 Les types d’informations sensibles dans l Office 365 de protection contre la perte de données (DLP) relèvent de deux catégories :
 
-- Défaut
+- Par défaut
 - Personnalisé
 
 Les types d’informations sensibles par défaut incluent des informations telles que des numéros de compte bancaire, des numéros de sécurité sociale ou des ID nationaux. Pour plus d’informations, voir [ce que le type d’informations sensibles recherche.](/office365/securitycompliance/what-the-sensitive-information-types-look-for)
@@ -74,7 +74,7 @@ Les signaux signalés peuvent être vus dans le tableau de bord Azure Informatio
 
 Ce tableau de bord présente une synthèse des informations de découverte des données découvertes par Defender pour Endpoint et Azure Information Protection. Les données de Defender pour le point de terminaison sont marquées avec type d’emplacement - Point de terminaison.
 
-![Image d’Azure Information Protection - Découverte des données](images/azure-data-discovery.png)
+![Image d’Azure Information Protection - Découverte de données](images/azure-data-discovery.png)
 
 Notez que la colonne Risque de l’appareil sur la droite, ce risque d’appareil est dérivé directement de Defender pour point de terminaison, indiquant le niveau de risque du périphérique de sécurité où le fichier a été découvert, en fonction des menaces de sécurité actives détectées par Defender pour le point de terminaison.
 
@@ -91,7 +91,7 @@ Pour plus d’informations sur l’analyse Azure Information Protection, consult
 
 Ouvrez Azure Log Analytics dans le portail Azure et ouvrez un générateur de requêtes (standard ou classique).
 
-Pour afficher les données de Defender for Endpoint, effectuez une requête qui contient :
+Pour afficher les données defender pour point de terminaison, exécutez une requête qui contient :
 
 ```text
 InformationProtectionLogs_CL

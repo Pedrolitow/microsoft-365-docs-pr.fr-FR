@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8154c144e82a38665f18ec35fdc8d49247ad75ca
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 5d31cb5d11d6b998a8363c8a8056135155bbc2fa6da20c39d7583207d8de0716
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655742"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869414"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API prises en charge Microsoft Defender pour point de terminaison
 
@@ -36,7 +36,7 @@ ms.locfileid: "53655742"
 
 ### <a name="endpoint-uri"></a>URI de point de terminaison
 
-> L’URI de base du service est : [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
+> L’URI de base de service est : [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
 >
 > Les requêtes basées sur OData ont le préfixe « /api ». Par exemple, pour obtenir des alertes, vous pouvez envoyer une requête GET à [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
 

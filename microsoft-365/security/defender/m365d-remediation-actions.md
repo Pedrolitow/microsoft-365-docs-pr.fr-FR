@@ -21,26 +21,26 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: c8d3838194c25ba49b2611dc355b21e228291b01
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 7f34f40d5d0078c1dc0b49e2f73b5c692c6a4b315058f5d8f7c097dce6b237cb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902186"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Actions de correction dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Pendant et après un examen automatisé dans Microsoft 365 Defender, des actions de correction sont identifiées pour les éléments malveillants ou suspects. Certains types d’actions de correction sont prises sur les appareils, également appelés points de terminaison. D’autres mesures correctives sont prises sur le contenu du courrier électronique. Les enquêtes automatisées se terminent après que des mesures correctives ont été prises, approuvées ou rejetées.
 
 > [!IMPORTANT]
 > Le fait que des mesures correctives soient prises automatiquement ou uniquement après approbation dépend de certains paramètres, tels que la façon dont les niveaux d’automatisation sont mis en place. Pour en savoir plus, consultez les articles suivants :
-> - [Configurer vos fonctionnalités d’investigation et de réponse automatisées dans Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
+> - [Configurez vos fonctionnalités d’examen et de réponse automatisées dans Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
 > - [Comment les menaces sont corrigés sur les appareils](../defender-endpoint/automated-investigations.md)
 > - [Menaces et actions de correction sur le contenu de collaboration & courrier électronique](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
@@ -77,7 +77,7 @@ En plus des actions de correction qui suivent des enquêtes automatisées, votre
 - Action [de réponse en direct](/windows/security/threat-protection/microsoft-defender-atp/live-response) manuelle, telle que la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée
 - Action de réponse en direct [avec les API Microsoft Defender pour point](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)de terminaison, telle que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Visiter le Centre de notifications](m365d-action-center.md)
 - [Afficher et gérer les actions de correction](m365d-autoir-actions.md)

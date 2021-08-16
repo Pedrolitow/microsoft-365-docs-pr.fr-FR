@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 918c3787d12704c8aa23e7dd367e9f03909275c6
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b69acd8bb60c6b4c2d254c9cd1ca5aef7de69cf583fa02e56d799076c84d372a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655646"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53868997"
 ---
 # <a name="start-investigation-api"></a>DÉMARRER l’API Investigation
 
@@ -46,6 +46,17 @@ Pour plus [d’informations, voir Vue d’ensemble des enquêtes](automated-inve
 ## <a name="limitations"></a>Limites
 
 1. Les limites de taux pour cette API sont de 50 appels par heure.
+
+## <a name="requirements-for-air"></a>Conditions requises pour AIR
+
+Votre organisation doit avoir Defender pour le point de terminaison (voir [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)).
+
+Actuellement, AIR prend uniquement en charge les versions de système d’exploitation suivantes :
+
+- Windows Server 2019
+- Windows 10, version 1709 (os Build 16299.1085 avec [KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)ou version ultérieure
+- Windows 10, version 1803 (os Build 17134.704 avec [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)ou version ultérieure
+- Windows 10, version [1803 ou](/windows/release-information/status-windows-10-1809-and-windows-server-2019) ultérieure
 
 ## <a name="permissions"></a>Autorisations
 

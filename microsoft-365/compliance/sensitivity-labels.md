@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 05877324767ea4f201873325b087855520be672022d8aee63bbad5fa0d713d6c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6861c9e0fa4611ca2a457b26d431b7f9a7473690
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841861"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247860"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -148,7 +148,7 @@ Pour ces pages dont les options ne sont pas disponibles, sélectionnez **Suivant
 
 Lorsque vous créez vos étiquettes de confidentialité dans votre centre d’administration, elles apparaissent dans une liste située sous l’onglet **Sensibilité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important car il reflète leur priorité. Vous souhaitez que votre étiquette de sensibilité la plus restrictive, comme l’étiquette Hautement confidentiel, apparaisse en **bas** de la liste, et que la moins restrictive, telle que l’étiquette Public, apparaisse en **haut**.
 
-Vous pouvez appliquer une seule étiquette de confidentialité à un élément tel qu’un document, un e-mail ou un conteneur. Si vous définissez une option obligeant vos utilisateurs à fournir une justification pour la modification d'une étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées. Cette option ne s’applique toutefois pas aux sous-étiquettes.
+Vous pouvez appliquer une seule étiquette de confidentialité à un élément tel qu’un document, un e-mail ou un conteneur. Si vous définissez une option obligeant vos utilisateurs à fournir une justification pour la modification d'une étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées. Toutefois, cette option ne s’applique pas aux sous-étiquettes qui partagent la priorité de leur étiquette parente.
 
 Cependant, l’ordre des sous-étiquettes est utilisé avec l'[étiquetage automatique](apply-sensitivity-label-automatically.md). Lorsque vous configurez les étiquettes pour les appliquer automatiquement ou en tant que recommandation, plusieurs correspondances peuvent se produire pour plus d'une étiquette. Pour déterminer l’étiquette à appliquer ou à recommander, l’ordre d’étiquettes est utilisé : la dernière étiquette de confidentialité est sélectionnée, puis, le cas échéant, la dernière sous-étiquette.
 
@@ -195,7 +195,7 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
 - **Demandez aux utilisateurs d’appliquer une étiquette** aux documents et aux e-mails, uniquement aux documents, pour les conteneurs et le contenu Power BI. Également connues sous le nom d'étiquetage obligatoire, ces options permettent d’assurer qu’une étiquette soit appliquée avant que les utilisateurs puissent enregistrer des documents, envoyer des e-mails, créer des groupes ou des sites et lorsqu’ils utilisent du contenu non étiqueté pour Power BI.
     
-    Pour les documents et les e-mails, une étiquette peut être attribuée manuellement par l’utilisateur, automatiquement suite à une condition que vous configurez, ou être attribuée par défaut (l'option d’étiquette par défaut précédemment décrite). Exemple d'invite lorsqu'un utilisateur doit attribuer une étiquette :
+    Pour les documents et les e-mails, une étiquette peut être attribuée manuellement par l’utilisateur, automatiquement suite à une condition que vous configurez, ou être attribuée par défaut (l’option d’étiquette par défaut précédemment décrite). Un exemple d’invite présenté dans Outlook lorsqu’un utilisateur doit attribuer une étiquette :
 
     ![Invite demandant à l’utilisateur Outlook d’appliquer l’étiquette requise](../media/sensitivity-labels-mandatory-prompt-outlook.png)
     

@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 API d’incidents Defender et type de ressource incidents
-description: En savoir plus sur les méthodes et les propriétés du type de ressource Incidents dans Microsoft 365 Defender
+title: Microsoft 365 Defender API d’incidents et le type de ressource incidents
+description: Découvrez les méthodes et les propriétés du type de ressource Incidents dans Microsoft 365 Defender
 keywords: incident, incidents, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 5fbdb1725249797ea87104cac5f25eaac9f5bff05967ee11cccb7ae14c349d55
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888432"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888762"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 API d’incidents Defender et type de ressource incidents
+# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API des incidents et le type de ressource incidents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "52888432"
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Un [incident](incidents-overview.md) est un ensemble d’alertes associées qui permettent de décrire une attaque. Les événements de différentes entités de votre organisation sont regroupés automatiquement par Microsoft 365 Defender. Vous pouvez utiliser l’API d’incidents pour accéder par programmation aux incidents de votre organisation et aux alertes associées.
+Un [incident](incidents-overview.md) est un ensemble d’alertes associées qui permettent de décrire une attaque. Les événements de différentes entités de votre organisation sont automatiquement regroupés par Microsoft 365 Defender. Vous pouvez utiliser l’API d’incidents pour accéder par programmation aux incidents de votre organisation et aux alertes associées.
 
 ## <a name="quotas-and-resource-allocation"></a>Quotas et allocation de ressources
 
@@ -73,16 +73,16 @@ createdTime | DateTimeOffset | Date et heure (en UTC) de création de l’incide
 lastUpdateTime | DateTimeOffset | Date et heure (en UTC) de la dernière mise à jour de l’incident.
 assignedTo | string | Propriétaire de l’incident.
 Sévérité  | Énum | Gravité de l’incident. Les valeurs possibles ```UnSpecified``` sont : , , et ```Informational``` ```Low``` ```Medium``` ```High``` .
-status | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibles ```Active``` sont : , et ```Resolved``` ```Redirected``` .
+statut | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibles ```Active``` sont : , et ```Resolved``` ```Redirected``` .
 classification | Énum | Spécification de l’incident. Les valeurs possibles sont les suivantes : ```Unknown```, ```FalsePositive``` et ```TruePositive```.
 détermination | Énum | Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
 étiquettes | liste de chaînes | Liste des balises d’incident.
 commentaires | Liste des commentaires sur les incidents | L’objet Incident Comment contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.
-alerts | Liste des alertes | Liste des alertes associées. Consultez des exemples dans la documentation [de l’API d’incidents](api-list-incidents.md) de liste.
+alertes | Liste des alertes | Liste des alertes associées. Consultez des exemples dans la documentation [de l’API d’incidents](api-list-incidents.md) de liste.
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Microsoft 365 Vue d’ensemble des API Defender](api-overview.md)
+- [Microsoft 365 Defender Vue d’ensemble des API](api-overview.md)
 - [Vue d’ensemble des incidents](incidents-overview.md)
 - [API de liste des incidents](api-list-incidents.md)
 - [API de mise à jour de l’incident](api-update-incidents.md)

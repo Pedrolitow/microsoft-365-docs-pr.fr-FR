@@ -14,23 +14,23 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365'évaluation du réseau
-ms.openlocfilehash: c09e34b1bc3a8bf0f82a4a1e3c72e67f320abd43
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: c9533cb4189709ad4e32194371fb0863b4b5fa3f38eb035f7f0bdc505152b731
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470473"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854729"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365'évaluation du réseau
 
-Dans la Microsoft 365 réseau du Centre d’administration,  les évaluations réseau regroupent de nombreuses mesures de performances réseau dans un instantané de l’état du périmètre de votre réseau d’entreprise. Une évaluation réseau vous indique l’impact de la conception de réseau responsable du client sur Office 365 l’expérience utilisateur. Les évaluations réseau sont limitées à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client. Les évaluations permettent aux administrateurs Microsoft 365 d’avoir instantanément une idée de l’état du réseau de l’entreprise et d’obtenir rapidement un rapport détaillé pour n’importe quel emplacement de bureau global.
+Dans le centre Administration Microsoft 365, les évaluations  réseau regroupent de nombreuses mesures de performances réseau dans un instantané de l’état du périmètre de votre réseau d’entreprise. Une évaluation réseau vous indique l’impact de la conception de réseau responsable du client sur Office 365 l’expérience utilisateur. Les évaluations réseau sont limitées à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client. Les évaluations offrent aux administrateurs Microsoft 365 un moyen simple d’obtenir instantanément une idée de l’état du réseau de l’entreprise et d’obtenir rapidement un rapport détaillé pour n’importe quel emplacement de bureau global.
 
 La valeur des points d’évaluation réseau est de 0 à 100 et est une moyenne de la latence TCP, de la vitesse de téléchargement et des mesures de qualité de connexion UDP. Ces mesures sont compilées une fois par jour. Les mesures de performances pour les réseaux microsoft sont exclues de ces mesures pour s’assurer que les résultats de l’évaluation sont non ambigus et spécifiques au réseau d’entreprise.
 
 > [!div class="mx-imgBorder"]
 > ![Valeur d’évaluation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-Une très faible valeur d’évaluation du réseau suggère que Microsoft 365 clients auront des problèmes importants lors de la connexion au client ou de la maintenance d’une expérience utilisateur réactive. Une valeur élevée indique un réseau correctement configuré avec peu de problèmes de performances en cours. Une valeur de 80 % représente une ligne de base saine, au-dessus de laquelle vous ne devriez pas vous attendre à recevoir régulièrement des réclamations des utilisateurs concernant la connectivité ou la réactivité Microsoft 365 en raison des performances du réseau. Au fil des améliorations apportées à la connectivité réseau itérative, cette valeur augmente avec l’expérience utilisateur.
+Une très faible valeur d’évaluation réseau suggère que Microsoft 365 clients auront des problèmes importants lors de la connexion au client ou de la maintenance d’une expérience utilisateur réactive. Une valeur élevée indique un réseau correctement configuré avec peu de problèmes de performances en cours. Une valeur de 80 % représente une ligne de base saine, au-dessus de laquelle vous ne devriez pas vous attendre à recevoir régulièrement des réclamations des utilisateurs concernant la connectivité ou la réactivité Microsoft 365 en raison des performances du réseau. Au fil des améliorations apportées à la connectivité réseau itérative, cette valeur augmente avec l’expérience utilisateur.
 
 | Évaluation du réseau | Expérience utilisateur attendue |
 | :----------------- | :----------------------- |
@@ -38,11 +38,11 @@ Une très faible valeur d’évaluation du réseau suggère que Microsoft 365 cl
 | 80                 | Répond aux recommandations    |
 | 60                 | Acceptable               |
 | 40                 | Les utilisateurs peuvent être en situation de problèmes |
-| 20                 | Les utilisateurs peuvent se plaindr       |
+| 20                 | Les utilisateurs peuvent se plaindra peut-être       |
 | 0                  | Problèmes réseau : sujet de discussion courant |
 
 >[!IMPORTANT]
->Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre d’administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
+>Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre Administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
 
 ## <a name="network-assessment-panel"></a>Panneau d’évaluation du réseau
 
@@ -53,7 +53,7 @@ Chaque évaluation réseau, qu’elle soit limitée au client ou à un emplaceme
 
 La **répartition de l’évaluation** dans le panneau présente l’évaluation de chacune des charges de travail de composant.
 
-**L’historique des** évaluations indique les 30 derniers jours de l’évaluation et le critère. Vous pouvez également faire un rapport sur l’historique des mesures pour n’importe quel emplacement de bureau pendant deux ans à l’aide de l’onglet Historique. L’onglet Historique vous permet de sélectionner vos attributs à signaler. En choisissant une période de rapport, vous pouvez mettre en évidence l’impact d’un projet de mise à jour réseau et voir l’amélioration de votre évaluation du réseau.
+**L’historique des** évaluations indique les 30 derniers jours de l’évaluation et le critère. Vous pouvez également faire un rapport sur l’historique des mesures pour n’importe quel emplacement de bureau pendant deux ans à l’aide de l’onglet Historique. L’onglet Historique vous permet de sélectionner vos attributs à signaler. En choisissant une période de rapport, vous pouvez mettre en évidence l’impact d’un projet de mise à jour réseau et constater l’amélioration de votre évaluation du réseau.
 
 ## <a name="tenant-network-assessments-and-office-location-network-assessments"></a>Évaluations réseau des locataires et évaluations du réseau de l’emplacement du bureau
 
@@ -93,13 +93,13 @@ L SharePoint en ligne est réalisée à l’aide du tableau suivant. Tout numér
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Par Microsoft Teams la qualité du réseau est mesurée en tant que latence UDP, gigue UDP et perte de paquets UDP. UDP est utilisé pour la connectivité multimédia audio et vidéo d’appel et de conférence pour Microsoft Teams. Cela peut être impacté par les mêmes facteurs que pour la latence et la vitesse de téléchargement en plus des lacunes de connectivité dans la prise en charge UDP d’un réseau dans la mesure où UDP est configuré séparément sur le protocole TCP le plus courant. La médiane (également appelée 50e centile ou mesure P50) est prise pour toutes les mesures des trois jours précédents. 
+Par Microsoft Teams la qualité du réseau est mesurée en tant que latence UDP, gigue UDP et perte de paquets UDP. UDP est utilisé pour la connectivité multimédia audio et vidéo d’appel et de conférence pour Microsoft Teams. Cela peut être impacté par les mêmes facteurs que pour la latence et la vitesse de téléchargement, en plus des lacunes de connectivité dans la prise en charge UDP d’un réseau, car UDP est configuré séparément sur le protocole TCP le plus courant. La médiane (également appelée 50e centile ou mesure P50) est prise pour toutes les mesures des trois jours précédents. 
 
 Nous calculons un score d’opinion moyenne à partir de ces mesures UDP pour une échelle de 1 à 5. Ensuite, nous mions cela à l’échelle de 0 à 100 points pour l’évaluation Microsoft Teams réseau.  La valeur globale est de plus de 87,5 points et la valeur globale est inférieure à 50 points.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
-[Connectivité réseau dans le Centre d’administration Microsoft 365 (prévisualisation)](office-365-network-mac-perf-overview.md)
+[Connectivité réseau dans le centre de Administration Microsoft 365 (aperçu)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 informations sur les performances du réseau (aperçu)](office-365-network-mac-perf-insights.md)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: ff7ba1964afdfcc63c81034666d29432c395c2f391ed5e3945969db0fcae49da
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0604a6531b93a1a0df04c39ebaff4e75a0365f9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841750"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248035"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -346,7 +346,7 @@ Les applications et services suivants ne prennent actuellement pas en charge les
 
 - Utiliser les applications et services :
 
-  - Dynamics 365
+  - Dynamics 365
   - Yammer
   - Project
   - Power BI
@@ -413,13 +413,16 @@ Pour vous aider à gérer la coexistence des étiquettes de confidentialité et 
 ## <a name="auditing-sensitivity-label-activities"></a>Audit sur les activités des étiquettes de confidentialité
 
 > [!IMPORTANT]
-> Si vous utilisez la séparation des étiquettes en sélectionnant uniquement l’étendue **Groupes et sites** pour les étiquettes qui protègent les conteneurs : en raison de la **non-concordance de la sensibilité au document détectée** des événements d’audit et des e-mails décrite dans cette section, vous pouvez [classer ces étiquettes](sensitivity-labels.md#label-priority-order-matters) avant celles qui ont une étendue pour **Fichiers et e-mails**. 
+> Si vous utilisez la séparation des étiquettes en sélectionnant uniquement l’étendue **Groupes et sites** pour les étiquettes qui protègent les conteneurs : en raison de la **non-concordance de la sensibilité au document détectée** des événements d’audit et des e-mails décrite dans cette section, envisagez de [classer ces étiquettes](sensitivity-labels.md#label-priority-order-matters) avant celles qui ont une étendue pour **Fichiers et e-mails**. 
 
 Si un utilisateur télécharge un document sur un site protégé par une étiquette de confidentialité et son document comporte une étiquette de confidentialité [plus élevée](sensitivity-labels.md#label-priority-order-matters) que celle du site, cette action n’est pas bloquée. Par exemple, vous avez appliqué l’étiquette **Général** à un site SharePoint, et une personne télécharge un document étiqueté comme **Confidentiel**. Une étiquette de confidentialité ayant une priorité plus élevée identifie un contenu plus sensible qu’un contenu présentant un ordre de priorité plus faible, cette situation peut devenir un problème de sécurité.
 
 Bien que l’action ne soit pas bloquée, elle est auditée et par défaut, génère automatiquement un courrier électronique à la personne qui a chargé le document et à l’administrateur du site. Par conséquent, l’utilisateur et les administrateurs peuvent identifier les documents comportant un mauvais alignement de la priorité d’étiquette et prendre des mesures, le cas échéant. Par exemple, supprimer ou déplacer le document téléchargé à partir du site.
 
 Il ne s’agit pas d’un problème de sécurité si le document comprend une étiquette de confidentialité de priorité inférieure à celle appliquée sur le site. Par exemple, un document marqué **Général** est téléchargé sur un site intitulé **Confidentiel**. Dans ce scénario, l’événement d’audit et l’e-mail ne sont pas générés.
+
+> [!NOTE]
+> Comme pour l’option de stratégie qui exige que les utilisateurs fournissent une justification pour changer une étiquette vers une classification inférieure, les sous-étiquettes pour la même étiquette parente sont toutes considérées comme ayant la même priorité.
 
 Pour rechercher le journal d’audit pour cet événement, recherchez **Correspondance incorrecte des documents détectés** dans la catégorie **Activités de fichiers et de pages**.
 

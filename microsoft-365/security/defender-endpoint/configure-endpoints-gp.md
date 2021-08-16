@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 406a7cf3e234bc8d9d4fdb314c39d4ee8cbc9aaad7ff4aea96308595c2b1736a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4dec8b9ddf8cf0e03aef7005b53918bfc6a86c65
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857794"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247677"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>Intégrer les appareils Windows 10 à l’aide de la stratégie de groupe 
 
@@ -47,9 +47,7 @@ ms.locfileid: "53857794"
 
 Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [ou Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
 
-1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
-
-1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [de Microsoft 365 Defender](https://security.microsoft.com/):
+1. Ouvrez le package de configuration gp .zip fichier (*WindowsDefenderATPOnboardingPackage. zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
  
     1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **Endpoints**  >  **Device Management**   >  **Onboarding**.
 
@@ -60,6 +58,8 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
     1. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
 2. Extrayez le contenu du .zip vers un emplacement partagé en lecture seule accessible par l’appareil. Vous devez avoir un dossier appelé *OptionalParamsPolicy* et le fichier *WindowsDefenderATPOnboardingScript.cmd*.
+
+3. Pour créer un objet de stratégie de groupe, ouvrez la [Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) de gestion des **stratégies** de groupe (GPMC), cliquez avec le bouton droit sur Objets de stratégie de groupe à configurer, puis cliquez sur **Nouveau.** Entrez le nom du nouvel GPO dans la boîte de dialogue qui s’affiche, puis cliquez sur **OK**.
 
 3. Ouvrez [la Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) de gestion des stratégies de groupe (GPMC), cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 
@@ -77,8 +77,11 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 10. Sélectionnez **OK** et fermez toutes les fenêtres GPMC ouvertes.
 
+1. Pour lier l’GPO à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un GPO existant.** Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet de stratégie de groupe à lier. Cliquez sur **OK**.
+
 > [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier que l’appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Defender for Endpoint nouvellement intégré.](run-detection-test.md)
+
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Paramètres de configuration defender supplémentaires pour les points de terminaison
 Pour chaque appareil, vous pouvez déterminer si des échantillons peuvent être collectés à partir de l’appareil lorsqu’une demande est faite via Microsoft 365 Defender pour soumettre un fichier pour analyse approfondie.
@@ -186,6 +189,10 @@ Stratégie | Paramètre
 :---|:---
 Configurer l’accès contrôlé aux dossiers| Activé, mode audit
 
+## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
+Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
+
+
 ## <a name="offboard-devices-using-group-policy"></a>Appareils de tableau de bord à l’aide de la stratégie de groupe
 
 Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
@@ -238,7 +245,77 @@ Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiem
 > [!NOTE]
 > L’affichage des appareils dans la liste Appareils peut prendre plusieurs **jours.** Cela inclut le temps qu’il faut pour que les stratégies soient distribuées à l’appareil, le temps qu’il faut avant que l’utilisateur se connecte et le temps qu’il faut au point de terminaison pour commencer à créer des rapports.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="setup-defender-av-policies"></a>Stratégies de l’Antivirus Setup Defender
+
+Créez une stratégie de groupe ou groupez ces paramètres avec les autres stratégies. Cela dépend de l’environnement des clients et de la façon dont ils souhaitent déployer le service en ciblant différentes unités d’organisation (unités d’organisation).
+
+1. Après avoir choisi la gp ou en créer une nouvelle, modifiez-la.
+2. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Antivirus Microsoft Defender**  >  **protection en temps réel.**
+:::image type="content" source="images/realtime-protect.png" alt-text="protection en temps réel":::
+1. Dans le dossier Quarantaine, configurez la suppression des éléments du dossier Quarantaine.
+
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="dossier de mise en quarantaine des éléments de suppression":::
+
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="mise en quarantaine de la suppression de la config":::
+
+1. Dans le dossier Analyse, configurez les paramètres d’analyse.
+
+    :::image type="content" source="images/gpo-scans.png" alt-text="analyses gpo":::
+
+**Surveiller tous les fichiers dans la protection en temps réel**
+
+Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Antivirus Microsoft Defender**  >  **protection en temps réel.**
+
+:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configurer la surveillance de l’activité des fichiers sortants entrants":::
+
+ 
+#### <a name="configure-windows-defender-smart-screen-settings"></a>Configurer les Windows Defender de l’écran intelligent
+
+1. Accédez à **Modèles d’administration** des stratégies de  >    >    >  **configuration ordinateur Windows composants**  >  **Windows Defender’explorateur SmartScreen.**  >  
+
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Explorateur d’écran intelligent windows defender de la config":::
+ 
+2. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Windows Defender SmartScreen**  >  **Microsoft Edge**.
+
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Config windows defender smart screen Edge":::
+
+#### <a name="configure-potentially-unwanted-applications"></a>Configurer les applications potentiellement indésirables
+     
+Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Antivirus Microsoft Defender**.
+
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config d’une application potentielle indésirable":::
+
+:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potentiel de config":::
+
+#### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>Configurer cloud Deliver Protection et envoyer automatiquement des exemples
+
+Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Antivirus Microsoft Defender**  >  **MAPS**.
+
+:::image type="content" source="images/gpo-maps1.png" alt-text="maps":::
+
+:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="bloquer à la première vue":::
+
+:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="joindre microsoft maps":::
+
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="envoyer un exemple de fichier lorsque des analyses plus approfondies sont requises":::
+
+#### <a name="check-for-signature-update"></a>Vérifier la mise à jour des signatures
+Accédez aux **modèles d’administration** des stratégies de configuration  >    >    >  **ordinateur Windows composants**  >  **Antivirus Microsoft Defender**  >  **mises à jour des signatures**
+
+:::image type="content" source="images/signature-update-1.png" alt-text="mise à jour de signature":::
+
+:::image type="content" source="images/signature-update-2.png" alt-text="mise à jour de définition de signature":::
+
+#### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configurer le délai d’out de livraison cloud et le niveau de protection
+
+Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Antivirus Microsoft Defender**  >  **MpEngine**.
+Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Microsoft Defender stratégie de blocage par **défaut,** la stratégie est désactivée. C’est ce qui est nécessaire pour définir le niveau de protection sur les fenêtres par défaut.
+
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="vérification étendue du cloud de la config":::
+
+:::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config":::
+
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)

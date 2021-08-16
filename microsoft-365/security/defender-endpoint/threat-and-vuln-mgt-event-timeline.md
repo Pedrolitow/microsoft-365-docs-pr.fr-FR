@@ -1,6 +1,6 @@
 ---
 title: Chronologie des événements dans Gestion des menaces et des vulnérabilités
-description: La chronologie des événements est un flux d’actualités sur les risques qui vous permet d’interpréter la façon dont le risque est introduit dans l’organisation et les atténuations qui ont eu lieu pour le réduire.
+description: La chronologie des événements est un flux d’actualités sur les risques qui vous permet d’interpréter la façon dont le risque est introduit dans l’organisation et les atténuations qui ont eu pour effet de le réduire.
 keywords: chronologie des événements, chronologie des événements Microsoft Defender pour point de terminaison, chronologie des événements tvm de Microsoft Defender pour point de terminaison, Gestion des menaces et des vulnérabilités, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d63dc8978692652e2d18900b434223d726c0d304
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8bfca50816f0efc3ea0c2c8fa17521d038570b839508d6fe67b5db7ba03b379b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656594"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902345"
 ---
-# <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements : Gestion des menaces et des vulnérabilités
+# <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements - Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "53656594"
 
 La chronologie des événements est un flux d’actualités sur les risques qui vous permet d’interpréter la façon dont le risque est introduit dans l’organisation par le biais de nouvelles vulnérabilités ou de nouvelles exploitations. Vous pouvez afficher les événements qui peuvent avoir un impact sur les risques de votre organisation. Par exemple, vous pouvez trouver de nouvelles vulnérabilités qui ont été introduites, des vulnérabilités qui sont devenues exploitables, des exploits ajoutés à un kit d’exploitation, et bien plus encore.
 
-La chronologie des événements indique également l’histoire de votre [score](tvm-exposure-score.md) d’exposition et du score de sécurité [Microsoft](tvm-microsoft-secure-score-devices.md) pour les appareils afin que vous pouvez déterminer la cause des modifications importantes. Les événements peuvent avoir un impact sur vos appareils ou votre score pour les appareils. Réduisez votre exposition en adressant ce qui doit être corrigé en fonction des recommandations de sécurité [prioritaires.](tvm-security-recommendation.md)
+La chronologie des événements indique également l’histoire de votre [score](tvm-exposure-score.md) d’exposition et du score de sécurité [Microsoft](tvm-microsoft-secure-score-devices.md) pour les appareils afin que vous pouvez déterminer la cause des modifications importantes. Les événements peuvent avoir un impact sur vos appareils ou votre score pour les appareils. Réduisez votre exposition en résribuant ce qui doit être corrigé en fonction des recommandations de sécurité [prioritaires.](tvm-security-recommendation.md)
 
 >[!TIP]
 >Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
@@ -57,16 +57,16 @@ Dans le tableau Gestion des menaces et des vulnérabilités tableau de bord, poi
 
 Si aucun événement n’affecte vos appareils ou votre score pour les appareils, aucun ne s’affiche.
 
-![Pointage du score d’exposition ](images/tvm-event-timeline-exposure-score350.png) 
- ![ : score de sécurité Microsoft pour les appareils survolant](images/tvm-event-timeline-device-hover360.png)
+![Score d’exposition ](images/tvm-event-timeline-exposure-score350.png) 
+ ![ pointage Niveau de sécurisation Microsoft pour les appareils pointage](images/tvm-event-timeline-device-hover360.png)
 
 ### <a name="drill-down-to-events-from-that-day"></a>Descendre dans les événements de ce jour
 
-Si vous **sélectionnez Afficher tous les** événements de ce jour, vous pouvez vous rendre sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
+La sélection **d’Afficher tous** les événements de ce jour vous place sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
 
 ![Chronologie des événements : plage de dates personnalisée sélectionnée](images/tvm-event-timeline-drilldown.png)
 
-Sélectionnez **Plage personnalisée** pour modifier la plage de dates en une autre plage personnalisée ou une plage de temps pré-définie.
+Sélectionnez **Plage personnalisée** pour modifier la plage de dates en une autre personnalisée ou une plage de temps pré-définie.
 
 ![Options de plage de dates de chronologie des événements](images/tvm-event-timeline-dates.png)
 
@@ -130,7 +130,7 @@ Accédez à l’onglet Chronologie des événements pour afficher tous les évé
 
 ![Page logicielle avec un onglet Chronologie des événements](images/tvm-event-timeline-software-pages.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Tableau de bord](tvm-dashboard-insights.md)

@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: a8cea87e9f26262b4c54e7991add7affc8013033
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a107cf53b249d2f7a1e13fa37bbcdfa2cc6da562b974407913d045d9400eeedd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934980"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857458"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios-application-license-terms"></a>Microsoft Defender for Endpoint sur les termes du contrat de licence d’application iOS
 
@@ -43,11 +43,11 @@ Ces termes du contrat de licence (« Conditions ») sont un contrat entre Micros
 
 -   les services d'assistance technique
 
-pour cette application, sauf si d’autres termes accompagnent ces éléments. Si c’est le cas, ces termes s’appliquent.
+pour cette application, sauf si d’autres termes accompagnent ces éléments. Si c’est le cas, ces conditions s’appliquent.
 
 **À L’AIDE DE L’APPLICATION, VOUS ACCEPTEZ CES TERMES. SI VOUS NE LES ACCEPTEZ PAS, N’UTILISEZ PAS L’APPLICATION.**
 
-**Si vous respectez ces Conditions, vous avez les droits perpétuelles ci-dessous.**
+**Si vous vous conformez aux conditions suivantes, vous avez les droits perpétuelles ci-dessous.**
 
 1.  **INSTALLATION AND USE RIGHTS.**
 
@@ -68,7 +68,7 @@ pour cette application, sauf si d’autres termes accompagnent ces éléments. S
         -   Données d’utilisation. Microsoft collecte automatiquement les données d’utilisation et de performances sur Internet. Ces données seront utilisées pour fournir et améliorer les produits et services Microsoft et améliorer votre expérience.
             Vous pouvez limiter ou contrôler la collecte de certaines données d’utilisation et de performances par le biais des paramètres de votre appareil. Cela peut perturber l’utilisation de certaines fonctionnalités de l’application. Pour plus d’informations sur la collecte et l’utilisation des données de Microsoft, consultez les conditions [d’utilisation des services en ligne.](https://go.microsoft.com/fwlink/?linkid=2106777)
 
-    2.  Utilisation abusive des services Internet. Vous ne pouvez utiliser aucun service Internet qui pourrait l’endommager ou nuire à l’utilisation de celui-ci ou du réseau sans fil par d’autres personnes. Vous ne pouvez pas utiliser le service pour essayer d’obtenir un accès non autorisé à un service, à des données, à un compte ou à un réseau par quelque moyen que ce soit.
+    2.  Utilisation abusive des services Internet. Vous ne pouvez utiliser aucun service Internet qui pourrait l’endommager ou nuire à l’utilisation de celui-ci ou du réseau sans fil par d’autres personnes. Vous ne pouvez pas utiliser le service pour essayer d’obtenir un accès non autorisé à un service, à des données, à un compte ou à un réseau de quelque façon que ce soit.
 
 4.  **FEEDBACK.** Si vous faites part de vos commentaires sur l’application à Microsoft, vous accordez à Microsoft, sans frais, le droit d’utiliser, de partager et de commercialiser vos commentaires d’une manière ou d’une autre. Vous accordez également à des tiers, sans frais, les droits de brevet nécessaires pour que leurs produits, technologies et services utilisent ou s’interfacent avec des parties spécifiques d’un logiciel ou d’un service Microsoft qui inclut les commentaires. Vous ne donnerez aucun commentaire faisant l’objet d’une licence qui obligerait Microsoft à émettre une licence pour son logiciel ou sa documentation envers des tiers du fait d’y inclure votre commentaire. These rights survive this agreement.
 
@@ -96,7 +96,7 @@ pour cette application, sauf si d’autres termes accompagnent ces éléments. S
     1.  Si vous obtenez l’application par le biais d’un magasin d’applications (par exemple, App Store), examinez les termes du magasin d’applications applicables pour vous assurer que le téléchargement et l’utilisation de l’application sont conformes à ces conditions.
         Ces termes sont entre vous et Microsoft et non avec le magasin d’applications.
 
-    2.  Le fournisseur de magasin d’applications respectif et ses filiales sont des bénéficiaires tiers des conditions d’utilisation, et dès que vous acceptez ces Conditions, les fournisseurs de magasins d’applications ont le droit d’appliquer et de s’appuyer directement sur toute disposition de ces Conditions qui leur accorde un avantage ou des droits.
+    2.  Le fournisseur de magasin d’applications respectif et ses filiales sont des bénéficiaires tiers des conditions d’utilisation, et dès que vous acceptez ces Conditions, le ou les fournisseurs de magasins d’applications auront le droit d’appliquer et de s’appuyer directement sur toute disposition de ces Conditions qui leur accorde un avantage ou des droits.
 
 9.  **AVIS DE MARQUE.** Microsoft, Microsoft Defender pour le point de terminaison et Microsoft 365 sont des marques commerciales de Microsoft Corporation inscrites ou de droit commun de Microsoft Corporation aux États-Unis et/ou dans d’autres pays.
 

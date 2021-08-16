@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment planifier la Sujets Microsoft Viva
-ms.openlocfilehash: 8f02d917a6a977dfcd8fdca6745abcdc66142aaa
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 639c76567f3f14ac9c885ae277ee2631ca26dec5bdf8b3184ad6ee212a7c4c1f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649646"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854698"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planifier les Sujets Microsoft Viva
 
@@ -23,8 +23,8 @@ Vous contrôlez la façon dont les sujets sont abordés dans votre organisation.
 
 Dans cet article, nous examinerons les décisions de planification ci-après :
 
-- Quels SharePoint sites que vous souhaitez analyser pour les rubriques
-- Rubriques, le cas caser, que vous souhaitez exclure des expériences de rubrique
+- Les SharePoint sites que vous souhaitez analyser pour les rubriques
+- Les rubriques, le cas besoin, que vous souhaitez exclure des expériences de rubrique
 - Utilisateurs pour lesquels vous souhaitez rendre les rubriques visibles
 - Utilisateurs que vous souhaitez autoriser à gérer les rubriques dans le centre de rubriques
 - Utilisateurs que vous souhaitez autoriser à créer ou modifier des rubriques dans le centre de rubriques
@@ -36,7 +36,7 @@ Pour en savoir plus sur la technologie d’IA derrière Topics, consultez La rub
 
 Gardez à l’esprit que Topics Doit accéder aux sites et fichiers que vos utilisateurs utilisent tous les jours. Le déploiement de rubriques Dans un environnement de test ou de développement peut ne pas produire de résultats utiles.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d’administration Microsoft 365 et configurer Rubriques.
 
@@ -100,7 +100,7 @@ Vous pouvez choisir de ne permettre à personne de contribuer à des rubriques, 
 
 *Visionneuses de rubriques*
 
-Les visiteurs peuvent voir des informations sur les pages de rubriques, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillables dans le contenu comme SharePoint pages. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
+Les visiteurs peuvent voir des informations sur les pages de rubriques, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillez dans le contenu tel que SharePoint pages. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
 
 Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parmi :
 
@@ -108,7 +108,7 @@ Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parm
 - **Personnes ou groupes de sécurité sélectionnés uniquement**
 - **Personne**
 
-Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les utilisateurs à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
+Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les personnes à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
 
 ## <a name="knowledge-rules"></a>Règles de connaissance
 
@@ -119,7 +119,7 @@ Si vous souhaitez exclure des rubriques au niveau de l’administrateur, vous de
 Le .csv doit contenir les paramètres suivants :
 
 - **Nom** : tapez le nom de la rubrique à exclure. Il existe deux méthodes pour y parvenir :
-- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exacte* *ou* partielle.
+- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
     - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
     - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
 - **Signifie (facultatif)**: (également appelé *expansion)* Si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.
