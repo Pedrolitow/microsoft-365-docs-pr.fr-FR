@@ -37,12 +37,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: La prise en charge SharePoint Server 2007 a pris fin en octobre 2017. Dans cet article, découvrez les options de mise à niveau, de migration et de support.
-ms.openlocfilehash: 224b0af90d6a314aa15a2c0dab7b60626e5abde8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: de7469e40ac377cd49384c5d67cf9ac26273f4ace74ab165c6aa38835afa8444
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885074"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour SharePoint Server 2007
 
@@ -76,13 +76,13 @@ Votre premier arrêt doit être le [site cycle de vie du produit.](/lifecycle/pr
 |**Good**|**Meilleure**|**Idéale**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
-||Environnement hybride Microsoft Office SharePoint Online  <br/> |SharePoint Server 2016  <br/> |
+||Environnement hybride Microsoft Office SharePoint Online  <br/> |SharePoint Server 2016  <br/> |
 | | |Environnement hybride Microsoft Office SharePoint Online  <br/> |
    
 Si vous choisissez une option « suffisamment bonne », vous devrez bientôt commencer la planification d’une autre mise à niveau une fois la migration à partir de SharePoint Server 2007 terminée. 
 
 >[!NOTE] 
->Les dates de fin de support sont sujettes à modification. Vérifiez le [site Cycle de vie du produit.](https://support.microsoft.com/lifecycle)
+>Les dates de fin de prise en charge sont sujettes à modification. Vérifiez le [site cycle de vie du produit.](https://support.microsoft.com/lifecycle)
   
 ## <a name="where-can-i-go-next"></a>Que faire ensuite ?
 
@@ -110,7 +110,7 @@ Tenez compte des coûts masqués associés à la maintenance d’une batterie de
    
 Lorsque vous migrez vers Microsoft 365, le déplacement à une seule heure aura un coût plus élevé à l’avance, pendant que vous organisez les données et décidez de ce qu’il faut faire dans le cloud et de ce qu’il faut laisser. Toutefois, les mises à niveau futures seront automatiques et vous n’aurez plus besoin de gérer les mises à jour matérielles et logicielles. En outre, la durée de vie de votre batterie de serveurs est également fonction d’un contrat de niveau de service[(SLA)](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement)Microsoft.
   
-### <a name="migrate-to-sharepoint-online"></a>Migrer vers SharePoint Online
+### <a name="migrate-to-sharepoint-online"></a>Migrer vers SharePoint Online
 
 Assurez-vous que SharePoint Online dispose de toutes les fonctionnalités dont vous avez besoin. Voir [Microsoft 365 et les descriptions Office 365 service.](/office365/servicedescriptions/office-365-service-descriptions-technet-library)
   
@@ -266,7 +266,7 @@ Un bon moyen de voir comment cela fonctionne consiste à créer un environnement
 > [!NOTE]
 > N’oubliez pas que pour utiliser l’option hybride, votre batterie de serveurs SharePoint 2007 devra être mise à niveau, en local, vers SharePoint Server 2013 ou SharePoint Server 2016.
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Résoudre les problèmes et reprendre la mise à niveau (Office SharePoint Server 2007)](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262967(v=office.12))
   

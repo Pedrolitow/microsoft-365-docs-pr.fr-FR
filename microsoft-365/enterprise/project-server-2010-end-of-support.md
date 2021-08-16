@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Le support prend fin Project Server 2010 se termine le 13 avril 2021. Utilisez cet article comme guide pour mettre à niveau vers Project Online ou une version plus récente de Project Server local.
-ms.openlocfilehash: 0ca37d00ee670a8a3f7c83d75864b5af19587951
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: ec8046589fb1691ca0feb4791d174587b33eb8c9cb2c51f720292fb2e3561f12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229754"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904746"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge de Project Server 2010
 
@@ -114,7 +114,7 @@ Vous pouvez créer manuellement votre configuration de PWA dans Project Online (
 
 Ressources clés :
 
-|Resource|Description|
+|Ressource|Description|
 |---|---|
 |[Prenez en main Project Online](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)|Comment configurer et utiliser les Project Online|
 |[Description du service Project Online](/office365/servicedescriptions/project-online-service-description/project-online-service-description)|Informations sur les différents plans Project Online disponibles|
@@ -165,9 +165,9 @@ Ressources clés :
 
 Ressources clés :
 
-- [Vue d’ensemble du processus de mise à niveau vers Project Server 2013](/project/overview-of-the-project-server-2016-upgrade-process)
+- [Vue d’ensemble du processus de mise à niveau vers Project Server 2013](/project/overview-of-the-project-server-2016-upgrade-process)
 
-- [Mettre à niveau vos bases de données et collections de sites Project Web App (Project Server 2013)](/project/upgrading-to-project-server-2016)
+- [Mettre à niveau vos bases de données et collections de sites Project Web App (Project Server 2013)](/project/upgrading-to-project-server-2016)
 
 - [Microsoft Project Diagramme du processus de mise à niveau du serveur](https://go.microsoft.com/fwlink/p/?linkid=841270)
 
@@ -233,7 +233,7 @@ Cette affiche illustre les différents chemins que vous pouvez prendre pour évi
 
 Vous pouvez également [télécharger cette](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Mise à jour à jour de SharePoint 2010](upgrade-from-sharepoint-2010.md)
 

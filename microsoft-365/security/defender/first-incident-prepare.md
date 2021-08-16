@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fcdce7f5a41c23dfe33eb75ef15b579ac12c8742
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: aa4080c6cfbbf0af93587e00b9b6d7489e6ed2da0e3fde1a0be8f84595026b7f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897878"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Préparer votre posture de sécurité pour votre premier incident
 
@@ -61,7 +61,7 @@ Ensuite, les organisations peuvent utiliser le niveau de sécurité [Microsoft](
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Exemple de Niveau de sécurité Microsoft dans le Centre de sécurité Microsoft":::
  
-## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Étape 3. Évaluer l’exposition aux vulnérabilités de votre organisation
+## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Étape 3 : Évaluer l’exposition aux vulnérabilités de votre organisation
 
 La prévention des incidents peut contribuer à rationaliser les opérations de sécurité afin de se concentrer sur les incidents de sécurité critiques et importants en cours. Les vulnérabilités logicielles sont souvent un point d’entrée empêchant les attaques qui peuvent entraîner un vol de données, une perte de données ou une perturbation des opérations de l’entreprise. Si aucune attaque n’est en cours, les opérations de sécurité doivent s’efforcer d’atteindre et de maintenir un niveau acceptable d’exposition aux vulnérabilités [dans](../defender-endpoint/tvm-exposure-score.md) leur organisation.
 
@@ -76,7 +76,7 @@ Utilisez [l’analyse des](threat-analytics.md) menaces Microsoft 365 centre de 
 - Acteurs actifs contre les menaces et leurs campagnes
 - Techniques d’attaques nouvelles et populaires
 - Vulnérabilités critiques
-- Surfaces d’attaque courantes
+- Surface d'attaque courantes
 - Programmes malveillants répandus
 
 L’analyse des menaces examine également votre configuration et vos alertes pour déterminer la façon dont vous êtes à risque et si des alertes actives s’appliquent à un rapport.

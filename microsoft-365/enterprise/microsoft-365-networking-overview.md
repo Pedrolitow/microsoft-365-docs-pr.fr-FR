@@ -17,18 +17,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Explique pourquoi l’optimisation du réseau est importante pour les services SaaS, l’objectif de Microsoft 365 réseau et comment SaaS nécessite une mise en réseau différente des autres charges de travail.
-ms.openlocfilehash: d1a2b79f6e4042b97ec5a31d0ff92175baa1218e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8c1d4b3f661cc10723b9419687ed5f5acbefeb8dedb39963992290ecba289aec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923181"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904934"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Vue d’ensemble de la connectivité réseau Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Microsoft 365 est un cloud SaaS (Software-as-a-Service) distribué qui fournit des scénarios de productivité et de collaboration par le biais d’un ensemble variés de micro-services et d’applications. Les composants clients de Microsoft 365 tels que Outlook, Word et PowerPoint s’exécutent sur les ordinateurs des utilisateurs et se connectent à d’autres composants de Microsoft 365 qui s’exécutent dans les centres de données Microsoft. Le facteur le plus significatif qui détermine la qualité de l’expérience de l’utilisateur final Microsoft 365 est la fiabilité du réseau et une faible latence entre les clients Microsoft 365 et les Microsoft 365 frontales du service.
+Microsoft 365 est un cloud SaaS (Software-as-a-Service) distribué qui fournit des scénarios de productivité et de collaboration par le biais d’un ensemble variés de micro-services et d’applications. Les composants clients de Microsoft 365 tels que Outlook, Word et PowerPoint s’exécutent sur les ordinateurs des utilisateurs et se connectent à d’autres composants de Microsoft 365 qui s’exécutent dans les centres de données Microsoft. Le facteur le plus significatif qui détermine la qualité de l’expérience de l’utilisateur final Microsoft 365 est la fiabilité du réseau et une faible latence entre les clients Microsoft 365 et les Microsoft 365 frontaux du service.
 
 Dans cet article, vous allez découvrir les objectifs de la mise en réseau Microsoft 365 et pourquoi la mise en réseau Microsoft 365 nécessite une approche d’optimisation différente de celle du trafic Internet générique.
 
@@ -36,7 +36,7 @@ Dans cet article, vous allez découvrir les objectifs de la mise en réseau Micr
 
 L’objectif ultime de Microsoft 365 réseau est d’optimiser l’expérience de l’utilisateur final en activant l’accès le moins restrictif entre les clients et les points de terminaison Microsoft 365 les plus proches. La qualité de l’expérience de l’utilisateur final est directement liée aux performances et à la réactivité de l’application que l’utilisateur utilise. Par exemple, Microsoft Teams s’appuie sur une faible latence pour que les appels téléphoniques, les conférences et les collaborations à l’écran partagé soient sans problème, et Outlook repose sur une excellente connectivité réseau pour les fonctionnalités de recherche instantanée qui tirent parti de l’indexation côté serveur et des fonctionnalités d’IA.
 
-L’objectif principal dans la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les ordinateurs clients et le réseau global Microsoft, la dorsale principale du réseau public de Microsoft qui interconnecte tous les centres de données Microsoft avec une faible latence et des points d’entrée d’application cloud haute disponibilité répartis dans le monde entier. Si vous souhaitez en savoir plus sur le réseau mondial de Microsoft, consultez l’article [Comment Microsoft construit son réseau mondial rapide et fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+L’objectif principal dans la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les ordinateurs clients et le réseau mondial microsoft, la dorsale principale du réseau public de Microsoft qui interconnecte tous les centres de données Microsoft avec une faible latence et des points d’entrée d’application cloud haute disponibilité répartis dans le monde entier. Si vous souhaitez en savoir plus sur le réseau mondial de Microsoft, consultez l’article [Comment Microsoft construit son réseau mondial rapide et fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 L’optimisation Microsoft 365 performances réseau n’a pas besoin d’être compliquée. Vous pouvez obtenir les meilleures performances possibles en suivant quelques principes clés :
 
@@ -44,7 +44,7 @@ L’optimisation Microsoft 365 performances réseau n’a pas besoin d’être c
 - Autoriser la sortie de la succursale locale Microsoft 365 trafic réseau vers Internet à partir de chaque emplacement où les utilisateurs se connectent Microsoft 365
 - Autoriser Microsoft 365 trafic à contourner les proxies et les périphériques d’inspection des paquets
 
-Pour plus d’informations Microsoft 365 principes de connectivité réseau, voir [Microsoft 365 principes de connectivité réseau.](microsoft-365-network-connectivity-principles.md)
+Pour plus d’informations Microsoft 365 principes de connectivité réseau, voir Microsoft 365 principes de [connectivité réseau.](microsoft-365-network-connectivity-principles.md)
 
 ## <a name="traditional-network-architectures-and-saas"></a>Architectures réseau traditionnelles et SaaS
 
@@ -57,7 +57,7 @@ Dans les architectures réseau traditionnelles, une latence plus élevée pour l
 Nous facilitez l’identification Microsoft 365 le trafic réseau et la gestion de l’identification réseau.
 
 - Nouvelles catégories de points de terminaison réseau pour différencier le trafic réseau hautement critique du trafic réseau qui n’est pas impacté par les latentes Internet. Il n’existe qu’une poignée d’URL et d’adresses IP de prise en charge dans la catégorie « Optimiser » la plus critique.
-- Services Web pour l’utilisation des scripts ou la configuration directe de l’appareil et la gestion des Microsoft 365'identification réseau. Les modifications sont disponibles à partir du service web, au format RSS ou sur le courrier électronique à l’aide d’Microsoft Flow modèle.
+- Services Web pour l’utilisation des scripts ou la configuration directe de l’appareil et la gestion des Microsoft 365'identification réseau. Les modifications sont disponibles à partir du service web, au format RSS ou sur le courrier électronique à l’aide Microsoft Flow modèle.
 - [Office 365 programme partenaire](./microsoft-365-networking-partner-program.md) réseau avec des partenaires Microsoft qui fournissent des appareils ou des services qui suivent Microsoft 365 principes de connectivité réseau et ont une configuration simple.
 
 ## <a name="securing-microsoft-365-connections"></a>Sécurisation Microsoft 365 connexions

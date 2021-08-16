@@ -12,12 +12,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 a atteint la fin de la prise en charge. Utilisez cette feuille de route de planification pour préparer la mise à niveau vers Exchange Online ou une version plus récente de Exchange Server en local.
-ms.openlocfilehash: bbc7fb83537621a47a866bf0ca129a38e21f055e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: dc7a9355be8232daefb158ca143fac377949480e714de77a644b5f8b1bdc3c6a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289126"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904950"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge d'Exchange 2010
 
@@ -70,7 +70,7 @@ La migration de votre courrier vers Microsoft 365 est l’option la plus simple 
 - Boîte de réception Focused.
 - MyAnalytics.
 
-Microsoft 365 également de nouvelles fonctionnalités et expériences, afin que votre organisation puisse commencer à les utiliser immédiatement. En outre, vous n’avez pas à vous soucier des sujets qui s’offrent à vous :
+Microsoft 365 également de nouvelles fonctionnalités et expériences, afin que votre organisation puisse commencer à les utiliser immédiatement. En outre, vous n’avez pas à vous soucier des :
 
 - Achat et maintenance du matériel.
 - Payer à la température et à la température de vos serveurs.
@@ -105,15 +105,15 @@ Les sections suivantes donnent une vue d’ensemble de ces méthodes. Pour plus 
 
 Dans une migration à cutover, vous migrez toutes vos boîtes aux lettres, groupes de distribution, contacts, etc., vers Office 365 à une date et une heure définies. Lorsque vous avez terminé, vous fermez vos serveurs Exchange locaux et commencez à utiliser Microsoft 365 exclusivement.
 
-La migration à cutover est très efficace pour les petites organisations qui n’ont pas beaucoup de boîtes aux lettres, qui souhaitent Microsoft 365 rapidement et qui ne veulent pas gérer la complexité des autres méthodes. Toutefois, il doit être terminé dans une semaine ou moins. En plus, les utilisateurs doivent reconfigurer leurs profils Outlook utilisateurs. La migration à cutover peut migrer jusqu’à 2 000 boîtes aux lettres, mais nous vous recommandons de l’utiliser pour un maximum de 150 boîtes aux lettres. Si vous essayez d’en migrer davantage, vous risquez de ne plus pouvoir transférer toutes les boîtes aux lettres avant l’échéance, et votre équipe de support technique risque d’être submergée par les demandes d’aide aux utilisateurs pour reconfigurer les Outlook.
+La migration à cutover est très efficace pour les petites organisations qui n’ont pas beaucoup de boîtes aux lettres, qui souhaitent Microsoft 365 rapidement et qui ne veulent pas gérer la complexité des autres méthodes. Toutefois, il doit être terminé dans une semaine ou moins. En plus, les utilisateurs doivent reconfigurer leurs profils Outlook utilisateurs. La migration à cutover peut migrer jusqu’à 2 000 boîtes aux lettres, mais nous vous recommandons de l’utiliser pour un maximum de 150 boîtes aux lettres. Si vous essayez de migrer davantage, vous risquez de ne plus pouvoir transférer toutes les boîtes aux lettres avant l’échéance, et votre personnel de support technique risque d’être submergé par les demandes d’aide aux utilisateurs pour reconfigurer les Outlook.
 
-Voici les éléments à prendre en compte à propos de la migration à cutover :
+Voici les éléments à prendre en compte concernant la migration àover :
 
 - Microsoft 365 vous connecter à vos serveurs Exchange 2010 à l’aide de Outlook Anywhere sur le port TCP 443.
 - Toutes les boîtes aux lettres sur site sont déplacées vers Microsoft 365.
 - Vous aurez besoin d’un compte d’administrateur local qui dispose d’un accès en lecture aux boîtes aux lettres de vos utilisateurs.
 - Les Exchange 2010 acceptés que vous souhaitez utiliser dans Microsoft 365 doivent être ajoutés en tant que domaines vérifiés dans le service.
-- Entre le début de la migration et la phase d’achèvement, Microsoft 365 synchronise régulièrement les boîtes aux lettres Microsoft 365 et sur site. Cela vous permet d’effectuer la migration sans vous soucier du fait que le courrier électronique soit laissé dans vos boîtes aux lettres sur site.
+- Entre le début de la migration et la phase d’achèvement, Microsoft 365 synchronise régulièrement les boîtes aux lettres Microsoft 365 et en local. Cela vous permet d’effectuer la migration sans vous soucier du fait que le courrier électronique soit laissé dans vos boîtes aux lettres sur site.
 - Les utilisateurs recevront de nouveaux mots de passe temporaires pour Microsoft 365 compte. Ils devront les modifier lorsqu’ils se connectent à leurs boîtes aux lettres pour la première fois.
 - Vous aurez besoin d’une licence Microsoft 365 qui inclut Exchange Online boîte aux lettres utilisateur que vous migrez.
 - Les utilisateurs doivent configurer un nouveau profil Outlook sur chacun de leurs appareils et télécharger à nouveau leur courrier électronique. La quantité d’e-Outlook que vous téléchargerez peut varier. Pour plus d’informations, [voir Travail hors connexion dans Outlook](https://support.microsoft.com/office/f3a1251c-6dd5-4208-aef9-7c8c9522d633).
@@ -127,7 +127,7 @@ Pour en savoir plus sur la migration à cutover, voir :
 
 Dans une migration hybride ou express minimale, vous déplacez quelques centaines de boîtes aux lettres vers Microsoft 365 en quelques semaines. Cette méthode ne prend pas en charge les fonctionnalités avancées de migration hybride telles que les informations de calendrier de libre/occupé partagées.
 
-La migration hybride minimale est très efficace pour les organisations qui ont besoin de plus de temps pour migrer leurs boîtes aux lettres vers Microsoft 365, mais qui prévoient de terminer la migration dans un délai de quelques semaines. Vous bénéficiez de certains avantages de la *migration hybride* complète plus avancée sans grande complexité. Vous pouvez contrôler le nombre et les boîtes aux lettres à migrer à un moment donné. Microsoft 365 boîtes aux lettres seront créées avec les noms d’utilisateur et les mots de passe des comptes locaux. Et, contrairement aux migrations à bas Outlook, vos utilisateurs n’ont pas à recréer leurs profils.
+La migration hybride minimale est très efficace pour les organisations qui ont besoin de plus de temps pour migrer leurs boîtes aux lettres vers Microsoft 365, mais qui prévoient de terminer la migration dans un délai de quelques semaines. Vous bénéficiez de certains avantages de la *migration hybride* complète plus avancée sans grande complexité. Vous pouvez contrôler le nombre et les boîtes aux lettres à migrer à un moment donné. Microsoft 365 boîtes aux lettres seront créées avec les noms d’utilisateur et les mots de passe des comptes locaux. Et, contrairement aux migrations à bas Outlook, vos utilisateurs n’ont pas à recréer leur profil.
 
 Voici les éléments à prendre en considération concernant la migration hybride minimale :
 
@@ -199,7 +199,7 @@ Exchange 2016 inclut toutes les fonctionnalités des versions précédentes de E
 
 ****
 
-|Considération|Plus d’informations|
+|Considération|Informations supplémentaires|
 |---|---|
 |Dates de fin du support|Comme Exchange 2010, chaque version de Exchange a sa propre date de fin de prise en charge : <p> Exchange 2013 - Avril 2023 <p> Exchange 2016 - Octobre 2025 <p> Plus la date de fin de support est antérieure, plus vite vous devrez effectuer une autre migration. Avril 2023 est beaucoup plus proche que vous ne le pensez !|
 |Migration vers Exchange 2013 ou 2016|Le chemin de migration de Exchange 2010 vers une version plus récente est le même, que vous choisissiez Exchange 2013 ou Exchange 2016 : <p> Installez Exchange 2013 ou 2016 dans votre organisation Exchange 2010 existante. <p> Déplacez les services et autres infrastructures vers Exchange 2013 ou 2016. <p> Déplacez les boîtes aux lettres et les dossiers publics vers Exchange 2013 ou 2016 Désaffecter les serveurs restants Exchange 2010.|

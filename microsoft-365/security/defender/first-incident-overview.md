@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6e65a12f42b9f5f75c1a19cb9c4a261c94feaf31
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: bec4ca87c3827c8b24fa7017c01b40a60fce80eecb636d6d91adf0ceb9b8ecf1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841713"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897774"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>Présentation de la réponse à votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 La stratégie de réponse aux incidents d’une organisation détermine sa capacité à gérer les incidents de sécurité et la cybercriminalité de plus en plus perturbants. Bien que la prise de mesures préventives soit importante, la possibilité d’agir rapidement pour contenir, atténuer et récupérer des incidents détectés peut réduire les dommages et les pertes de l’entreprise.

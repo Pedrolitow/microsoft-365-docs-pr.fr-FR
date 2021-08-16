@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés de votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: e9684ebd2aa147049dadfbda9408257ff801aff0
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 334680092becee4d10784b1f48d5b39ec5b94405d9d8afb59d1e2060c218a017
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126416"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904766"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 entreprise
 
@@ -28,7 +28,8 @@ ms.locfileid: "50126416"
 
 Cet article explique comment configurer la gestion des accès privilégiés pour renforcer la sécurité dans votre Microsoft 365 environnement de test d’entreprise.
 
-La configuration de la gestion de l’accès privé implique trois phases :
+La configuration de la gestion des accès privilégiés implique trois phases :
+
 - [Phase 1 : Créer votre environnement de test Microsoft 365 entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Phase 2 : Configurer la gestion des accès privilégiés](#phase-2-configure-privileged-access-management)
 - [Phase 3 : Vérifier que l’approbation est requise pour les tâches avec élévation de privilèges](#phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks)
@@ -59,7 +60,7 @@ Avant de commencer à utiliser l’accès privilégié, déterminez qui aura l�
 
 #### <a name="step-2-enable-privileged-access"></a>[Étape 2 : Activer l’accès privilégié](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
-L’accès privilégié doit être explicitement allumé dans Microsoft 365 avec le groupe d’approbations par défaut, et il doit inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès de gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation avant de commencer la phase 3 de ce guide.
+L’accès privilégié doit être explicitement allumé dans Microsoft 365 avec le groupe d’approbation par défaut, et il doit inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès de gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation avant de commencer la phase 3 de ce guide.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Phase 3 : Vérifier que l’approbation est requise pour les tâches avec élévation de privilèges
 
@@ -67,48 +68,35 @@ Dans cette phase, vérifiez que la stratégie d’accès privilégié fonctionne
 
 ### <a name="test-the-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Tester la possibilité d’exécuter une tâche NON définie dans une stratégie d’accès privilégié
 
-Tout d’abord, connectez-vous à Exchange PowerShell avec les informations d’identification d’un utilisateur configuré en tant qu’administrateur général dans votre environnement de test et essayez de créer une règle de journal. La [tâche New-JournalRule](/powershell/module/exchange/new-journalrule) n’est actuellement pas définie dans une stratégie d’accès privilégié pour votre organisation.
+Tout d’abord, connectez-vous à Exchange Management PowerShell avec les informations d’identification d’un utilisateur configuré avec le rôle de gestion des rôles Exchange dans votre environnement de test et essayez de créer une règle de journal. La [tâche New-JournalRule](/powershell/module/exchange/new-journalrule) n’est actuellement pas définie dans une stratégie d’accès privilégié pour votre organisation.
 
-1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** à l’aide du compte d’administrateur global pour votre environnement de test.
-
-1. Dans Exchange PowerShell Gestion, créez une règle de journal pour votre organisation :
+1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** à l’aide des informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
+2. Dans Exchange PowerShell Gestion, créez une règle de journal pour votre organisation :
 
    ```ExchangeManagementPowerShell
    New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
    ```
 
-1. Vous voyez que la nouvelle règle de journal a été correctement créée dans Exchange PowerShell.
+3. Découvrez que la nouvelle règle de journal a été créée avec succès dans Exchange PowerShell.
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Créer une stratégie d’accès privilégié pour la New-JournalRule de travail
 
 >[!NOTE]
 >Si vous n’avez pas déjà effectué les étapes 1 et 2 de la phase 2 de ce guide, assurez-vous de suivre les étapes pour créer un groupe d’approbation nommé « Approvers d’accès privilégié » afin d’activer l’accès privilégié dans votre environnement de test.
 
-1. Connectez-vous au [centre Microsoft 365'administration](https://admin.microsoft.com) à l’aide des informations d’identification du compte d’administrateur global de votre environnement de test.
-
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification avec Exchange rôle de gestion des rôles pour votre environnement de test.
 2. Dans le Centre d’administration, accédez **à Paramètres**  >  **sécurité & confidentialité**  >  **privilégié.**
-
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
-
 4. Sélectionnez **Configurer les stratégies,** puis **ajoutez une stratégie.**
-
 5. Dans les champs de listes, sélectionnez ou entrez les valeurs suivantes :
 
-    **Type de stratégie**: Tâche
-
-    **Étendue de la stratégie** : Exchange
-
-    **Nom de la stratégie**: nouvelle règle de journal
-
-    **Type d’approbation**: Manuel
-
-    **Groupe d’approbation**: approbations d’accès privilégié
+    **Type de stratégie**: étendue **de stratégie de tâche**: Exchange stratégie **:** Nouveau type d’approbation de règle de **journal**: **Groupe** Approbation manuelle : Approbations d’accès privilégié  
 
 6. Sélectionnez **Créer**, puis sélectionnez **Fermer**. La configuration et l’activé de la stratégie peuvent prendre quelques minutes. Veillez à laisser le temps à la stratégie d’être entièrement activée avant de tester l’exigence d’approbation à l’étape suivante.
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Tester l’approbation requise pour la tâche New-JournalRule définie dans une stratégie d’accès privilégié
 
-1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** à l’aide d’un compte d’administrateur global pour votre environnement de test.
+1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** à l’aide des informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
 
 2. Dans Exchange PowerShell Gestion, créez une règle de journal pour votre organisation :
 
@@ -128,7 +116,7 @@ Tout d’abord, connectez-vous à Exchange PowerShell avec les informations d’
 
 ### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>Demander l’accès pour créer une règle de journal à l’aide New-JournalRule tâche
 
-1. Connectez-vous au [centre Microsoft 365'administration](https://admin.microsoft.com) à l’aide du compte d’administrateur global de votre environnement de test.
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification avec Exchange rôle de gestion des rôles pour votre environnement de test.
 
 2. Dans le Centre d’administration, accédez **à Paramètres**  >  **sécurité & confidentialité**  >  **privilégié.**
 
@@ -136,39 +124,31 @@ Tout d’abord, connectez-vous à Exchange PowerShell avec les informations d’
 
 4. Sélectionnez **Nouvelle requête**. Dans les champs de la baisse, sélectionnez les valeurs appropriées pour votre organisation :
 
-    **Type de requête**: Tâche
-
-    **Étendue de la demande** : Exchange
-
-    **Demande pour**: Nouvelle règle de journal
-
-    **Durée (heures)**: 2
-
-    **Commentaires :** Demander l’autorisation de créer une règle de journal
+    **Type de** requête : étendue **de** demande de tâche : Exchange **demande** pour : Nouvelle durée de règle de journal **(heures)**: **2** commentaires : demander l’autorisation de créer une règle de journal  
 
 5. Sélectionnez **Enregistrer,** puis **Fermez.** Votre demande est envoyée au groupe de l’approuveur par courrier électronique.
 
 ### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Approuver une demande d’accès privilégié pour la création d’une nouvelle règle de journal
 
-1. Connectez-vous au Centre d’administration [Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification de l’utilisateur 3 dans votre environnement de test (membre du groupe de sécurité « Privileged Access Approvers » dans votre environnement de test).
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification de l’utilisateur 3 dans votre environnement de test (membre du groupe de sécurité « Privileged Access Approvers » dans votre environnement de test).
 
 2. Dans le Centre d’administration, accédez **à Paramètres**  >  **sécurité & confidentialité**  >  **privilégié.**
 
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 
-4. Sélectionnez la demande en attente, puis **sélectionnez Approuver** pour accorder l’accès au compte d’administrateur global pour créer une règle de journal. Le compte d’administrateur global (l’utilisateur demandeur) reçoit une confirmation par courrier électronique pour confirmer que l’approbation a été accordée.
+4. Sélectionnez la demande en attente, puis **sélectionnez Approuver** pour accorder l’accès au compte d’utilisateur afin de créer une règle de journal. Le compte (l’utilisateur demandeur) reçoit une confirmation par courrier électronique pour confirmer que l’approbation a été accordée.
 
-### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Tester la création d’une règle de journal avec un accès privilégié approuvé pour la New-JournalRule de journal
+### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Tester la création d’une règle de journal avec un accès privilégié approuvé pour la New-JournalRule tâche
 
-1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** à l’aide du compte d’administrateur global pour votre environnement de test.
+1. Sur votre ordinateur local, ouvrez et connectez-vous au module Exchange Online Remote PowerShell de **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** à l’aide des informations d’identification avec le rôle de gestion des rôles Exchange pour votre environnement de test.
 
-1. Dans Exchange PowerShell Gestion, créez une règle de journal pour votre organisation :
+2. Dans Exchange PowerShell Gestion, créez une règle de journal pour votre organisation :
 
    ```ExchangeManagementPowerShell
    New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
    ```
 
-1. Vous voyez que la nouvelle règle de journal a été correctement créée dans Exchange PowerShell.
+3. Découvrez que la nouvelle règle de journal a été créée avec succès dans Exchange PowerShell.
 
 ## <a name="next-step"></a>Étape suivante
 
@@ -176,8 +156,6 @@ Explorez [d’autres fonctionnalités de protection](m365-enterprise-test-lab-gu
 
 ## <a name="see-also"></a>Voir aussi
 
-[Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
-
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
-
-[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)
+- [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
+- [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+- [Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

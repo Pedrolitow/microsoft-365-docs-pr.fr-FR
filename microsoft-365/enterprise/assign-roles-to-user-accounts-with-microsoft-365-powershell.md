@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: Dans cet article, découvrez comment utiliser rapidement et facilement PowerShell pour Microsoft 365 attribuer des rôles d’administrateur à des comptes d’utilisateur.
-ms.openlocfilehash: 84e785052c970ca15487540c3904eacdd0e9ca28
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ef02c57037e17d17455ea19e78beefd221fc678386fe1fbb68f465da0fe0df36
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904910"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Attribuer des rôles d’administrateur Microsoft 365 comptes d’utilisateurs avec PowerShell
 
@@ -34,7 +34,7 @@ ms.locfileid: "50905379"
 Vous pouvez facilement attribuer des rôles à des comptes d’utilisateurs à l’aide de PowerShell pour Microsoft 365.
 
 >[!Note]
->Découvrez comment attribuer [des rôles d’administrateur](../admin/add-users/assign-admin-roles.md) à des comptes d’utilisateurs à l’Microsoft 365 centre d’administration.
+>Découvrez comment attribuer [des rôles d’administrateur](../admin/add-users/assign-admin-roles.md) à des comptes d’utilisateurs à l’Centre d’administration Microsoft 365.
 >
 >Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
 >
@@ -48,7 +48,7 @@ Ensuite, identifiez le nom de la signature du compte d’utilisateur que vous so
 Ensuite, déterminez le nom du rôle. Voir [les autorisations de rôle d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 >[!Note]
->Soyez attentif aux notes dans cet article. Certains noms de rôles sont différents pour Azure Active Directory (Azure AD) PowerShell. Par exemple, le *rôle SharePoint* administrateur général dans le centre d’administration Microsoft 365 est administrateur SharePoint *service* dans Azure AD PowerShell.
+>Soyez attentif aux notes dans cet article. Certains noms de rôles sont différents pour Azure Active Directory (Azure AD) PowerShell. Par exemple, le *rôle SharePoint administrateur* principal dans le Centre d’administration Microsoft 365 est administrateur SharePoint *service* dans Azure AD PowerShell.
 >
 
 Ensuite, remplissez les noms de la signature et du rôle, puis exécutez les commandes suivantes :

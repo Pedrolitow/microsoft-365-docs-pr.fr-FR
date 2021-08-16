@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configurez la protection des informations dans Microsoft 365 pour les réglementations en matière de confidentialité des données telles que le R GDPR et le CCPA (California Consumer Privacy Act), y compris les Microsoft Teams, les SharePoint et la messagerie électronique.
-ms.openlocfilehash: c0ffe7cf850ec6e7ae8c974f983ce43668bf6f30
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 0d0c0e4ed98ac2fefb7dc7abb1c1477adb93e994e66c86b2ed1a5a8fd88cb4ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833053"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations en matière de confidentialité des Microsoft 365
 
@@ -125,7 +125,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-security-info-overview/introduction/)
 
-#### <a name="identity-and-access"></a>Identités et accès
+#### <a name="identity-and-access"></a>Identité et accès
 
 |Formation :|Protégez les identités et l’accès avec Azure Active Directory|
 |:---|:---|

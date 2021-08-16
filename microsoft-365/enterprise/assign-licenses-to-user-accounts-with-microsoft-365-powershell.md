@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Dans cet article, découvrez comment utiliser PowerShell pour attribuer une licence Microsoft 365 aux utilisateurs sans licence.
-ms.openlocfilehash: 6d7e005aff018394810082de57c68ea289057f8e
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 5ce0a8a5cab4acf5db2e72f56526228a8f78b7809677026267bd6caceff77004
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904886"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Attribuer Microsoft 365 licences d’utilisateur à des comptes d’utilisateur avec PowerShell
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572620"
 
 Les utilisateurs ne peuvent utiliser aucun service Microsoft 365 tant que leur compte n’a pas reçu une licence d’un plan de gestion des licences. Vous pouvez utiliser PowerShell pour attribuer rapidement des licences à des comptes sans licence. 
 
-Un emplacement doit d’abord être affecté aux comptes d’utilisateurs. La spécification d’un emplacement est une partie obligatoire de la création d’un compte d’utilisateur dans [Microsoft 365 centre d’administration.](../admin/add-users/add-users.md) 
+Un emplacement doit d’abord être affecté aux comptes d’utilisateurs. La spécification d’un emplacement est une partie obligatoire de la création d’un compte d’utilisateur dans [le Centre d’administration Microsoft 365](../admin/add-users/add-users.md). 
 
 Les comptes synchronisés à partir de vos services de domaine Active Directory locaux n’ont pas d’emplacement spécifié par défaut. Vous pouvez configurer un emplacement pour ces comptes à partir de :
 
@@ -43,7 +43,7 @@ Les comptes synchronisés à partir de vos services de domaine Active Directory 
  - Le [portail Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Utilisateurs Active Directory**> compte d’utilisateur > informations de contact du profil  >   Pays ou   >    >  **région**).
 
 >[!Note]
->[Découvrez comment attribuer des licences à des comptes d’utilisateurs](../admin/manage/assign-licenses-to-users.md) à l’Microsoft 365 d’administration. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
+>[Découvrez comment attribuer des licences à des comptes d’utilisateurs](../admin/manage/assign-licenses-to-users.md) à l’Centre d’administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
@@ -103,7 +103,7 @@ Pour rechercher les comptes sans permis dans votre organisation, exécutez cette
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-Vous pouvez uniquement attribuer des licences à des comptes d’utilisateurs dont la propriété **UsageLocation** est définie sur un code pays ISO 3166-1 alpha-2 valide. Par exemple, US pour les États-Unis et FR pour la France. Certains Microsoft 365 ne sont pas disponibles dans certains pays. Pour plus d’informations, voir [à propos des restrictions de licence.](https://go.microsoft.com/fwlink/p/?LinkId=691730)
+Vous pouvez uniquement attribuer des licences à des comptes d’utilisateur dont la propriété **UsageLocation** est définie sur un code pays ISO 3166-1 alpha-2 valide. Par exemple, US pour les États-Unis et FR pour la France. Certains Microsoft 365 ne sont pas disponibles dans certains pays. Pour plus d’informations, voir [à propos des restrictions de licence.](https://go.microsoft.com/fwlink/p/?LinkId=691730)
     
 Pour rechercher des comptes qui n’ont pas de valeur **UsageLocation,** exécutez cette commande.
 

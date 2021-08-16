@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 693f750b7e169eda597b43344d913c170676be77
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 1a011d3cf8879b9f4b82d055693edfea98dbeb83a829c153b20e579b015fc80e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897942"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Centre de sécurité Microsoft Defender Tableau de bord opérations de sécurité
 
@@ -65,7 +65,7 @@ Chaque groupe est sous-classé selon les niveaux de gravité d’alerte correspo
 
 Pour plus d’informations, voir [la vue d’ensemble des alertes.](alerts-queue.md)
 
-Chaque ligne inclut une catégorie de gravité d’alerte et une brève description de l’alerte. Vous pouvez cliquer sur une alerte pour afficher sa vue détaillée. Pour plus d’informations, [consultez La vue d’ensemble](investigate-alerts.md) de Microsoft Defender pour les alertes de point de [terminaison et les alertes.](alerts-queue.md)
+Chaque ligne inclut une catégorie de gravité d’alerte et une brève description de l’alerte. Vous pouvez cliquer sur une alerte pour afficher sa vue détaillée. Pour plus d’informations, [consultez La vue d’ensemble](investigate-alerts.md) de Microsoft Defender pour les alertes de point de terminaison et [les alertes.](alerts-queue.md)
 
 ## <a name="devices-at-risk"></a>Appareils à risque
 
@@ -96,7 +96,7 @@ La **vignette d’état** du service vous informe si le service est actif ou s�
 
 ![La vignette d’état du service affiche un indicateur global du service](images/status-tile.png)
 
-Pour plus d’informations sur l’état du service, voir [Vérifier l’état du service Microsoft Defender pour Endpoint.](service-status.md)
+Pour plus d’informations sur l’état du service, consultez [l’état du service Microsoft Defender pour Endpoint.](service-status.md)
 
 ## <a name="daily-devices-reporting"></a>Rapports quotidiens sur les appareils
 
@@ -128,7 +128,7 @@ Cliquez sur le compte d’utilisateur pour voir les détails sur le compte d’u
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Comprendre le portail Microsoft Defender pour les points de terminaison](use.md)
 - [Vue d’ensemble du portail](portal-overview.md)

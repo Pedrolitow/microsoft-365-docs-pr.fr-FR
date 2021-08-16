@@ -20,17 +20,17 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: Cet article décrit les sites d’options de navigation avec la publication SharePoint activée dans SharePoint Online.
-ms.openlocfilehash: b5989bf26ebf7bb1452f983af89a6e6739821d53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Cet article décrit les sites d’options de navigation avec SharePoint publication activée dans SharePoint Online.
+ms.openlocfilehash: 4cb0406fc9f4d1496cb28282427c38f83c3ea1eac31aecbf6e33f7247660be2a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923623"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904990"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
-Cet article décrit les sites d’options de navigation avec la publication SharePoint activée dans SharePoint Online. Le choix et la configuration de la navigation ont un impact significatif sur les performances et l’évolutivité des sites SharePoint Online. Le modèle de site de publication SharePoint ne doit être utilisé que si nécessaire pour un portail centralisé et la fonctionnalité de publication ne doit être activée que sur des sites spécifiques et uniquement en cas d’absolue nécessité, car elle peut avoir un impact sur les performances en cas d’utilisation incorrecte.
+Cet article décrit les sites d’options de navigation avec SharePoint publication activée dans SharePoint Online. Le choix et la configuration de la navigation ont un impact significatif sur les performances et l’évolutivité des sites SharePoint Online. Le modèle de site de publication SharePoint ne doit être utilisé que si nécessaire pour un portail centralisé et la fonctionnalité de publication ne doit être activée que sur des sites spécifiques et uniquement en cas d’absolue nécessité, car elle peut avoir un impact sur les performances en cas d’utilisation incorrecte.
 
 >[!NOTE]
 >Si vous utilisez des options de navigation SharePoint modernes telles que le méga-menu, la navigation en cascade ou la navigation de hub, cet article ne s’applique pas à votre site. Les SharePoint architectures de site modernes tirent parti d’une hiérarchie de sites plus aplatie et d’un modèle de hub-and-spoke. Cela permet d’atteindre de nombreux scénarios qui ne nécessitent PAS l’utilisation de la fonctionnalité SharePoint publication.
@@ -41,7 +41,7 @@ La configuration du fournisseur de navigation peut avoir un impact significatif 
 
 La première option, la [**navigation**](#using-structural-navigation-in-sharepoint-online)structurelle, est l’option de navigation recommandée dans SharePoint Online pour les sites Sharepoint classiques, si vous allumez la mise en cache de navigation structurelle pour **votre site.** Ce fournisseur de navigation affiche les éléments de navigation sous le site actuel, et éventuellement le site actuel et ses frères. Il offre des fonctionnalités supplémentaires telles que le trimming de sécurité et l’éumération de la structure du site. Si la mise en cache est désactivée, cela a un impact négatif sur les performances et l’évolutivité, et peut être soumis à une limitation.
 
-La deuxième option, [**navigation gérée (métadonnées),**](#using-managed-navigation-and-metadata-in-sharepoint-online)représente les éléments de navigation à l’aide d’un ensemble de termes métadonnées gérées. Nous vous recommandons de désactiver le contrôle de sécurité sauf si cela est nécessaire. Le trimming de sécurité est activé en tant que paramètre sécurisé par défaut pour ce fournisseur de navigation . toutefois, de nombreux sites ne nécessitent pas la surcharge du contrôle de sécurité, car les éléments de navigation sont souvent cohérents pour tous les utilisateurs du site. Avec la configuration recommandée pour désactiver le trimming de sécurité, ce fournisseur de navigation ne nécessite pas d’éumerating la structure du site et est hautement évolutif avec un impact acceptable sur les performances.
+La deuxième option, [**navigation gérée (métadonnées),**](#using-managed-navigation-and-metadata-in-sharepoint-online)représente les éléments de navigation à l’aide d’un ensemble de termes métadonnées gérées. Nous vous recommandons de désactiver le contrôle de sécurité, sauf si cela est nécessaire. Le trimming de sécurité est activé en tant que paramètre sécurisé par défaut pour ce fournisseur de navigation . toutefois, de nombreux sites ne nécessitent pas la surcharge du contrôle de sécurité, car les éléments de navigation sont souvent cohérents pour tous les utilisateurs du site. Avec la configuration recommandée pour désactiver le trimming de sécurité, ce fournisseur de navigation ne nécessite pas d’éumerating la structure du site et est hautement évolutif avec un impact acceptable sur les performances.
 
 Outre les fournisseurs de navigation pré-personnalisés, de nombreux clients ont implémenté d’autres implémentations de navigation personnalisée. Voir [les scripts côté client pilotés par](#using-search-driven-client-side-scripting) la recherche dans cet article.
   
@@ -61,7 +61,7 @@ L’option la plus appropriée pour votre site dépend des besoins de votre site
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>Analyse des performances de navigation dans SharePoint Online
 
-[L’outil Diagnostic de page pour SharePoint](./page-diagnostics-for-spo.md) est une extension de navigateur pour les navigateurs Microsoft Edge et Chrome qui analyse à la fois le portail moderne SharePoint Online et les pages de site de publication classiques. Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur SharePoint page système.
+[L’outil Diagnostic de](./page-diagnostics-for-spo.md) page pour SharePoint est une extension de navigateur pour les navigateurs Microsoft Edge et Chrome qui analyse à la fois le portail moderne SharePoint Online et les pages de site de publication classiques. Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur SharePoint page système.
 
 L’outil génère un rapport pour chaque page analysée montrant comment la page fonctionne par rapport à un ensemble prédéfiny de règles et affiche des informations détaillées lorsque les résultats d’un test sont en dehors de la valeur de référence. SharePoint Les administrateurs et concepteurs en ligne peuvent utiliser l’outil pour résoudre les problèmes de performances afin de s’assurer que les nouvelles pages sont optimisées avant la publication.
 
@@ -93,7 +93,7 @@ Si vous avez besoin d’activer le contrôle de sécurité, nous vous recommando
 
 - Mettre à jour tous les liens d’URL conviviales vers des liens simples
 - Ajouter les nodes de contrôle de sécurité requis en tant qu’URL conviviales
-- Limiter le nombre d’éléments de navigation à 100 et pas plus de 3 niveaux
+- Limiter le nombre d’éléments de navigation à 100 et pas plus de 3 niveaux de profondeur
 
 De nombreux sites ne nécessitent pas de contrôle de sécurité, car la structure de navigation est souvent cohérente pour tous les utilisateurs du site. Si le contrôle de sécurité est désactivé et qu’un lien est ajouté à la navigation à l’accès de tous les utilisateurs, le lien s’affiche toujours, mais entraîne un message de refus d’accès. Il n’y a aucun risque d’accès par inadvertance au contenu.
 
@@ -115,7 +115,7 @@ Ces fournisseurs de navigation ont deux avantages clés :
 - Ils sont extrêmement évolutifs et performants, car ils peuvent s’restituer sans coût de ressource (et s’actualiser en arrière-plan après un délai d’attente).
 - Ces fournisseurs de navigation peuvent récupérer des données de navigation à l’aide de différentes stratégies, allant de configurations statiques simples à différents fournisseurs de données dynamiques.
 
-Un exemple de fournisseur de données consiste à utiliser une **navigation** pilotée par la recherche, ce qui permet d’éumer les nodes de navigation et de gérer efficacement le tri de sécurité.
+Un exemple de fournisseur de données consiste à utiliser une **navigation** pilotée par la recherche, ce qui offre une flexibilité pour l’éumation des nodes de navigation et la gestion efficace du tri de sécurité.
 
 Il existe d’autres options populaires pour créer **des fournisseurs de navigation personnalisés.** Consultez les solutions de navigation pour SharePoint Online pour obtenir des [instructions](/sharepoint/dev/solution-guidance/portal-navigation) supplémentaires sur la création d’un fournisseur de navigation personnalisé.
 
@@ -216,7 +216,7 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 
 Les handlers d’événements pour et sont ajoutés à la navigation de niveau supérieur pour gérer les menus de listes des sous-site qui sont `mouseenter` `mouseexit` effectués dans la `addEventsToElements()` fonction.
 
-Dans notre exemple de navigation complexe, une nouvelle charge de page sans la mise en cache locale indique que le temps passé sur le serveur a été réduit par rapport à la navigation structurelle de référence pour obtenir un résultat similaire à l’approche de navigation gérée.
+Dans notre exemple de navigation complexe, un nouveau chargement de page sans la mise en cache locale indique que le temps passé sur le serveur a été réduit par rapport à la navigation structurelle de référence pour obtenir un résultat similaire à l’approche de navigation gérée.
 
 ### <a name="about-the-javascript-file"></a>À propos du fichier JavaScript...
 
@@ -543,7 +543,7 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 
 ```
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Vue d'ensemble de la navigation gérée dans SharePoint Server](/sharepoint/administration/overview-of-managed-navigation)
 
