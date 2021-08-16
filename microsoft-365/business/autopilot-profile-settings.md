@@ -29,13 +29,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Les profils AutoPilot vous aident à contrôler Windows l’installation des appareils des utilisateurs. Les profils contiennent des paramètres par défaut et facultatifs comme ignorer l’installation de Cortana.
-ms.openlocfilehash: 86f8718131f0a0b93e18e65e39e02e7d65aded1a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Les profils AutoPilot vous aident à contrôler Windows l’installation des appareils des utilisateurs. Les profils contiennent des paramètres par défaut et facultatifs tels que ignorer Cortana’installation.
+ms.openlocfilehash: 67ad6e92583d71207e2807657a7ad00261e1249291e2e6a7546f544ea924b394
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578504"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896320"
 ---
 # <a name="about-autopilot-profile-settings"></a>À propos des paramètres du profil AutoPilot
 
@@ -47,7 +47,7 @@ Vous pouvez utiliser les profils AutoPilot pour contrôler la Windows sur les ap
   
 |**Paramètre**|**Description**|
 |:-----|:-----|
-|Ignorer l’inscription de Cortana, OneDrive et OEM  <br/> |Ignore l’installation d’applications grand public telles que Cortana et les OneDrive. L’utilisateur de l’appareil peut les installer ultérieurement tant que l’utilisateur est un administrateur local sur l’appareil. L’inscription du fabricant d’origine est ignorée, car l’appareil sera géré par Microsoft 365 Business Premium.  <br/> |
+|Ignorer Cortana, OneDrive et l’inscription OEM  <br/> |Ignore l’installation d’applications grand public telles que Cortana et les OneDrive. L’utilisateur de l’appareil peut les installer ultérieurement tant que l’utilisateur est un administrateur local sur l’appareil. L’inscription du fabricant d’origine est ignorée, car l’appareil sera géré par Microsoft 365 Business Premium.  <br/> |
 |Expérience de signature avec la marque de votre entreprise  <br/> |Si votre entreprise dispose d’une marque Ajouter votre marque à [Microsoft 365 page](../admin/setup/customize-sign-in-page.md)de Microsoft 365, l’utilisateur de l’appareil reçoit cette expérience lors de la signature.  <br/> |
 |Inscription automatique mdm avec des comptes AAD configurés.  <br/> |L’identité de l’utilisateur est gérée par Azure Active Directory et les utilisateurs se connectent à Windows et Microsoft 365 avec leurs informations d Microsoft 365 Business Premium personnelles.  <br/> |
    
@@ -55,5 +55,5 @@ Vous pouvez utiliser les profils AutoPilot pour contrôler la Windows sur les ap
   
 |**Paramètre**|**Description**|
 |:-----|:-----|
-|Ignorer les paramètres de confidentialité (par défaut)  <br/> |Si cette option est définie sur **On,** l’utilisateur de l’appareil ne verra pas le contrat de licence de l’appareil et Windows lors de sa première se connecté.  <br/> |
-|Ne pas autoriser l’utilisateur à devenir l’administrateur local  <br/> |Si cette option est définie sur **Activé,** l’utilisateur de l’appareil ne pourra pas installer d’applications personnelles, telles que Cortana.<br/> |
+|Ignorer les paramètres de confidentialité (par défaut)  <br/> |Si cette option est définie sur **On,** l’utilisateur de l’appareil ne verra pas le contrat de licence de l’appareil et n’Windows lorsqu’il se connecté pour la première fois.  <br/> |
+|Ne pas autoriser l’utilisateur à devenir l’administrateur local  <br/> |Si cette option est définie sur **On,** l’utilisateur de l’appareil ne peut pas installer d’applications personnelles, telles que Cortana.<br/> |

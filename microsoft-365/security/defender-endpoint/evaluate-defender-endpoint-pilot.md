@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e06d3c436c01d7d88abca65819493902c2a5ab20
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 94e1751c792d6762230d7e064fb1b2fe9fa73f149adc6190110ce672988e2e0d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53594897"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898478"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-mde-through-simulated-attacks"></a>Expérience microsoft Defender pour le point de terminaison (MDE) par le biais d’attaques simulées
 

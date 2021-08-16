@@ -1,5 +1,5 @@
 ---
-title: Gérer Coffre liens
+title: Gérer les Coffre de gestion
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment gérer les liens Coffre pour protéger votre entreprise contre les sites malveillants.
-ms.openlocfilehash: 7e6b4507cd363a448812b48e3eafc7f4c077be3c
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 236597bf06913c75a5cd1c702084d7bb7085f4cf4edd5991a6ebe61e2fc159e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177512"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896402"
 ---
-# <a name="manage-safe-links"></a>Gérer Coffre liens
+# <a name="manage-safe-links"></a>Gérer les Coffre de gestion
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 

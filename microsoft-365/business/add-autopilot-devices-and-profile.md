@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Découvrez comment utiliser Windows AutoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise afin qu’ils sont prêts à être utilisés par les employés.
-ms.openlocfilehash: f160ddcd1e41bd44c908ecc8bbd30a9819f76902
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: b61ece9a82e12bec088be1b8e2611a13ea7f80d7669911ccaa57df72bf75ee84
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393436"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896430"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot
 
@@ -94,7 +94,7 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     
 6. Vous avez terminé d’indiquer que le profil que vous avez créé (ou choisi) sera appliqué au groupe **d’appareils** que vous avez créé en téléchargeant la liste des appareils. Les paramètres seront en vigueur lorsque les utilisateurs de l’appareil se connectent ensuite. Sélectionnez **Fermer**.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [À propos des paramètres de profil AutoPilot](autopilot-profile-settings.md) (article)\
 [Options de protection de vos appareils et données d’application](../admin/devices/choose-device-security.md) (article)

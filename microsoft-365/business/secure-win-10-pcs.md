@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment sécuriser les WINDOWS 10 une fois que vous avez Microsoft 365 Business Premium.
-ms.openlocfilehash: a45e941ebc407eea5defdccbbe3f06e6eb1e7dea
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 20fc2f4cb3c5df98158a8da50a5bdfe8893501bd95d803f09abe1fe25eadf221
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882058"
 ---
 # <a name="secure-windows-10-computers"></a>Sécuriser des ordinateurs Windows 10
 

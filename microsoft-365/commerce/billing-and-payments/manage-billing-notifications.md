@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Découvrez comment gérer les personnes qui reçoivent des e-mails de notification de facturation et des pièces jointes de facture.
 ms.date: 03/17/2021
-ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: fd9bae82d08170ce2aaee392df872d83bd5c5b8dbfa7aa258f448144370f0103
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203243"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896286"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gérer les notifications de facturation et les pièces jointes de facture
 
@@ -34,9 +34,9 @@ La **page Notifications de facturation** vous permet de gérer les personnes qui
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global pour suivre les étapes décrites dans cet article. Les administrateurs de facturation peuvent apporter certaines de ces modifications, comme indiqué dans les sections ci-dessous. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur global pour suivre les étapes décrites dans cet article. Les administrateurs de facturation peuvent apporter certaines de ces modifications, comme indiqué dans les sections ci-dessous. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
-## <a name="change-the-language-you-receive-email-in"></a>Modifier la langue dans qui vous recevez le courrier électronique
+## <a name="change-the-language-you-receive-email-in"></a>Modifier la langue de réception du courrier électronique
 
 Les e-mails de notification de facturation sont envoyés dans la langue par défaut de votre organisation. Pour modifier la langue préférée, utilisez les étapes suivantes.
 
@@ -94,7 +94,7 @@ Vous pouvez avoir une copie de la facture de votre organisation attachée sous f
 2. Sous **Paramètres de notification de facturation,** **sélectionnez Modifier les paramètres de notification.**
 3. Dans le **volet Paramètres de notification de** facturation, sous Joindre un **PDF** à vos e-mails de facture, cochez la case, puis sélectionnez **Enregistrer.**
 
-Pour arrêter de recevoir la pièce jointe de la facture à tout moment, suivez les étapes ci-dessus et clear the **Attach a PDF to your invoice emails** checkbox in step 3.
+Pour arrêter de recevoir la pièce jointe de la facture à tout moment, suivez les étapes ci-dessus et cochez la case Joindre un **PDF** à vos e-mails de facture à l’étape 3.
 
 ## <a name="what-if-i-have-a-billing-profile"></a>Que se passe-t-il si j’ai un profil de facturation ?
 
@@ -124,7 +124,7 @@ Pour recevoir vos factures en pièce jointe à vos notifications de facture, uti
 2. Sélectionnez **l’onglet Profils** de facturation, puis sélectionnez un profil de facturation dans la liste.
 3. Dans la page des détails du profil de facturation, sous Obtenir les factures dans les pièces **jointes** des e-mails, basculez sur **Sur**.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
 [Informations de facturation pour Microsoft 365 pour les entreprises au Mexique](mexico-billing-info.md) (article) \

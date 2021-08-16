@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Les utilisateurs ayant des comptes professionnels ou scolaires valides peuvent Cortana des expériences Microsoft 365 qui répondent Office 365 promesses de sécurité au niveau de l’entreprise.
-ms.openlocfilehash: f81fd357ec69a8cf50c2f55875a65b61b0f7d9348662f8c0c1f8f11864419630
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8462d4bf3838c5080a7f4f00380fa03dab2c01b9
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824193"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346099"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 
@@ -67,19 +67,19 @@ Le tableau ci-dessous décrit la gestion des données pour Cortana services d’
 
 ### <a name="cortana-in-windows-10-version-2004-and-later"></a>Cortana dans Windows 10 (version 2004 et ultérieures)
 
-L’application Cortana dans Windows 10 permet aux utilisateurs d’obtenir rapidement des informations dans Microsoft 365, en utilisant des requêtes tapés ou prononcés pour se connecter avec des personnes, vérifier les calendriers, définir des rappels, etc.
+L’application Cortana dans Windows 10 permet aux utilisateurs d’obtenir rapidement des informations dans Microsoft 365, à l’aide de requêtes tapée ou parlées pour communiquer avec des personnes, vérifier les calendriers, définir des rappels, etc.
 
 Cortana dans Windows peuvent aider les utilisateurs à mieux gérer leur planification et leurs tâches. Ils peuvent ajouter à leurs listes dans Microsoft To Do, rechercher des informations locales, obtenir des définitions et effectuer le suivi des dernières actualités, de la météo et des informations financières avec Bing recherche.
 
 Cortana dans Windows 10, version 2004 et ultérieures, répond aux mêmes promesses de confidentialité, de sécurité et de conformité au niveau de l’entreprise pour les services d’entreprise Cortana, comme le reflètent les conditions d’application des services en ligne [(OST).](https://www.microsoft.com/licensing/product-licensing/products)
 
-### <a name="how-to-opt-out-of-cortana-in-windows-10"></a>Comment choisir de ne pas Cortana dans Windows 10
+### <a name="how-to-opt-out-of-cortana-in-windows-10"></a>Comment refuser l’Cortana dans Windows 10
 
-Le fait de ne pas Cortana dans Windows 10 ne désintésse pas les autres expériences contrôlées séparément. Les administrateurs peuvent configurer des Cortana dans Windows 10 pour leur organisation à l’aide de la stratégie de gestion des appareils de groupe Experience\AllowCortana ou via la stratégie de groupe : Configuration ordinateur\Modèles d’administration\Composants Windows\Recherche\Autoriser les Cortana.
+Le fait de ne pas Cortana dans Windows 10 n’est pas refuser les autres expériences qui sont contrôlées séparément. Les administrateurs peuvent configurer des Cortana dans Windows 10 pour leur organisation à l’aide de la stratégie de gestion des appareils de groupe Experience\AllowCortana ou via la stratégie de groupe : Configuration ordinateur\Modèles d’administration\Composants Windows\Recherche\Autoriser les Cortana.
 
 À partir de Windows 10 version 2004, Cortana est une application de plateforme Windows universelle (UWP) préinstallée avec Windows et est régulièrement mise à jour via le Microsoft Store. Pour recevoir les dernières mises à jour Cortana, vous devez activer les mises à jour [via le Microsoft Store](/windows/configuration/stop-employees-from-using-microsoft-store).
 
-[En savoir plus sur les Cortana dans Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)
+[En savoir plus sur Cortana dans Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
 ### <a name="cortana-voice-assistance-in-teams"></a>Cortana’assistance vocale dans Teams
 
@@ -109,9 +109,9 @@ Dans Outlook pour iOS, l’expérience d’IA de conversation vocale de Cortana 
 
 En utilisant le langage naturel, la reconnaissance vocale, l’apprentissage automatique et la linguistique basés sur la technologie Microsoft AI, Cortana apprend à connaître votre contexte pour vous aider à rester organisé, connecté aux personnes et aux éléments qui vous sont importants et à contrôler votre journée.
 
-Il vous suffit d’utiliser le bouton du microphone pour Cortana ajouter des destinataires de la réunion ou modifier des dates, des heures ou des emplacements. Vous pouvez également demander Cortana pour rechercher des événements spécifiques. Enfin, vous pouvez demander aux Cortana de composer des e-mails rapides, de forwarder des messages ou de répondre à des threads. Cortana micro peut également vous aider à démarrer Lire mes e-mails dans Outlook pour iOS, afin de pouvoir écouter votre boîte de réception mains libres.
+Il vous suffit d’utiliser le bouton du microphone pour Cortana ajouter des destinataires de réunion ou modifier les dates, heures ou emplacements. Vous pouvez également demander Cortana pour rechercher des événements spécifiques. Enfin, vous pouvez demander aux Cortana de composer des e-mails rapides, de forwarder des messages ou de répondre à des threads. Cortana micro peut également vous aider à démarrer Lire mes e-mails dans Outlook pour iOS, afin de pouvoir écouter votre boîte de réception mains libres.
 
-Initialement, cette nouvelle fonctionnalité d’IA de conversation avec Cortana sera disponible en anglais pour les clients aux États-Unis à l’aide de Outlook pour iOS avec un compte Microsoft 365 travail. Pour en savoir plus, allez à démarrer une conversation avec votre assistant de productivité [personnel dans Outlook avec Cortana](https://techcommunity.microsoft.com/t5/outlook-blog/start-a-conversation-with-your-personal-productivity-assistant/ba-p/2071416#:~:text=Conversational%20AI%20allows%20you%20to,time%2C%20all%20with%20your%20voice).
+Initialement, cette nouvelle fonctionnalité d’IA de conversation avec Cortana sera disponible en anglais pour les clients aux États-Unis à l’aide de Outlook pour iOS avec un compte Microsoft 365 travail. Pour en savoir plus, allez à Démarrer une conversation avec votre assistant de productivité [personnel dans Outlook avec Cortana](https://techcommunity.microsoft.com/t5/outlook-blog/start-a-conversation-with-your-personal-productivity-assistant/ba-p/2071416#:~:text=Conversational%20AI%20allows%20you%20to,time%2C%20all%20with%20your%20voice).
 
 ### <a name="conversational-ai-with-cortana-in-outlook-with-ios-is-an-opt-in-experience"></a>L’IA de conversation Cortana dans Outlook avec iOS est une expérience d’opt-in
 
@@ -159,7 +159,7 @@ Voici les deux façons de réfléchir à la façon dont Cortana fonctionne dans 
 
 1. Il s’agit d’un nouveau service qui est abordé ici dans ce document.
 
-2. Pour les services soumis aux conditions d’utilisation des services en ligne, Microsoft est un processeur de données : Microsoft collecte et utilise les données client des clients uniquement pour fournir les services en ligne demandés par nos clients et aux fins demandées par nos clients. Dans le cadre du Règlement général sur la protection des données (R GDPR) de l’UE, le client est le contrôleur de données de ses données. Consultez les [conditions d’utilisation des services](https://www.microsoft.com/licensing/product-licensing/products) en ligne et introduisez plus de transparence de la confidentialité pour nos clients cloud [commerciaux.](https://blogs.microsoft.com/eupolicy/2019/11/18/introducing-privacy-transparency-commercial-cloud-customers/)
+2. Pour les services soumis aux conditions d’utilisation des services en ligne, Microsoft est un processeur de données : Microsoft collecte et utilise les données client des clients uniquement pour fournir les services en ligne demandés par nos clients et aux fins demandées par nos clients. Dans le cadre du Règlement général sur la protection des données (R GDPR) de l’UE, le client est le contrôleur de données de ses données. Consultez les [conditions d’utilisation des services en](https://www.microsoft.com/licensing/product-licensing/products) ligne et introduit plus de transparence de la confidentialité pour nos clients cloud [commerciaux.](https://blogs.microsoft.com/eupolicy/2019/11/18/introducing-privacy-transparency-commercial-cloud-customers/)
 
 3. Par exemple, Play My Emails est un service Cortana que vos utilisateurs peuvent se connecter via Outlook pour iOS et utilise les services Cortana entreprise. 
 
@@ -173,7 +173,7 @@ Services existants pour les consommateurs : Cortana les services connectés facu
 
 Désactiver l Cortana accès aux données hébergées par Microsoft de votre organisation
 
-1. In the Centre d’administration Microsoft 365, select **Paramètres**  >  **Org Paramètres** and select **Cortana**.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365,</a> **sélectionnez**  >  **Paramètres’organisation Paramètres** et sélectionnez **Cortana**.
 
 2. Désélectionner la case à cocher pour autoriser les Cortana dans **Windows 10 (version 1909** et antérieures) et l’application Cortana sur iOS et Android, pour accéder aux données hébergées par Microsoft pour le compte de personnes de votre organisation afin de désactiver les expériences connectées Cortana.
 

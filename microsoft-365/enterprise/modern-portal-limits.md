@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez les recommandations en matière de performances pour les sites modernes dans SharePoint Online, telles que la limitation des appels vers SharePoint et les points de terminaison externes.
-ms.openlocfilehash: 2429869c5397e0260876ee5a765ea18ae3fc42a1
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6ae0ab89d0b940d41ee2f8056d4cdaf35f7c957784a315612413cb37fd219c58
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899210"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Limites du site portail moderne en ligne
 
@@ -61,7 +61,7 @@ Bon nombre des instructions de cet article se concentrent sur la réduction et l
 |Appels vers le service UPA  <br/> |1 par utilisateur et par heure  <br/> |Nous vous recommandons de ne pas effectuer d’appels _par demande_ au service UPA (User Profile Application). [L’API Microsoft Graph et](/graph/call-api) [PageContext](/javascript/api/sp-page-context/pagecontext) peuvent être utilisés pour interroger des informations utilisateur.  <br/> Si un appel de service UPA est nécessaire, appelez le cas échéant un seul appel, puis cachez les informations à réutiliser dans la même session. |
 |Appels au service de taxonomie  <br/> |5 par utilisateur et par heure  <br/> |Nous vous recommandons de ne pas effectuer _d’appels par demande_ au service de taxonomie. Si des appels de service de taxonomie sont nécessaires, mettre en cache les informations à réutiliser dans la même session. <br/> Pour plus d’informations, voir Optimiser les appels de page dans SharePoint online des pages de site de publication modernes [et classiques.](modern-page-call-optimization.md) <br/> |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Création d’un portail SharePoint sain](/sharepoint/portal-health)
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77a70a6d05d62d9ca93dcca18f0801f9f2635d2d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 36cd53e5cf88fee136689af503a68b3119dac0af4a8576f6dbad36f11351aafd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649471"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898502"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Accès des partenaires via les API microsoft Defender pour les points de terminaison
 
@@ -40,10 +40,10 @@ ms.locfileid: "53649471"
 Cette page décrit comment créer une application Azure Active Directory (Azure AD) pour obtenir un accès par programmation à Microsoft Defender pour endpoint pour le compte de vos clients.
 
 
-Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
-- Créez une application Azure AD à **plusieurs** locataires.
+- Créez une application Azure AD **multi-locataire.**
 - Obtenez l’autorisation (consentement) de votre administrateur client pour que votre application accède aux ressources Defender for Endpoint dont elle a besoin.
 - Obtenez un jeton d’accès à l’aide de cette application.
 - Utilisez le jeton pour accéder à l’API Microsoft Defender for Endpoint.
@@ -71,7 +71,7 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
 4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et à l’affecter avec le jeu minimal d’autorisations requis pour terminer l’intégration.
 
-   - Dans la page de votre application, sélectionnez **Autorisations api** Ajouter des API d’autorisation que mon  >    >   organisation utilise > type **WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
+   - Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon  >    >   organisation > **tapez WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
 
    - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour le voir apparaître.
 
@@ -83,7 +83,7 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
    - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
    
-   - Pour [isoler un appareil,](isolate-machine.md)sélectionnez l’autorisation « Isoler l’ordinateur »
+   - Pour [isoler un appareil, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
 
    Dans l’exemple suivant, nous allons utiliser **l’autorisation** « Lire toutes les alertes » :
 
@@ -94,7 +94,7 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
 5. Sélectionnez **Accorder le consentement**
 
-   - **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner accordez **l’autorisation** pour que la nouvelle autorisation prenne effet.
+   - **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner l’autorisation **Accorder le consentement** pour que la nouvelle autorisation prenne effet.
 
    ![Image de l’octroi d’autorisations](images/grant-consent.png)
 
@@ -132,7 +132,7 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
    En outre, vous devrez demander à votre client son ID de locataire et l’enregistrer pour une utilisation ultérieure lors de l’acquisition du jeton.
 
-- **Terminé !** Vous avez réussi à inscrire une application !
+- **Terminé !** Vous avez réussi à inscrire une application !
 - Voir les exemples ci-dessous pour l’acquisition et la validation des jetons.
 
 ## <a name="get-an-access-token-example"></a>Obtenir un exemple de jeton d’accès

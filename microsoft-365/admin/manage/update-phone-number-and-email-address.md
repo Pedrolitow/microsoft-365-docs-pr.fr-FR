@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Mettez à jour votre numéro de téléphone et votre adresse de messagerie d’administrateur dans le Centre d’administration si vous souhaitez réinitialiser votre propre mot de passe d’administrateur.
-ms.openlocfilehash: bbd7e40f8349b067837e8faadc502a96edac046fc10b95393ce0c946475cc8a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 685f6c55c3b83cb8ec52725a06a5c3d53d35118a
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824490"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346111"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Mettre à jour votre numéro de téléphone et votre adresse e-mail d’administrateur
 
@@ -41,7 +41,7 @@ Pour plus d’informations sur la modification des informations de contact de l�
 
 Utilisez la page **Informations de sécurité** pour modifier votre numéro de téléphone mobile et votre adresse e-mail de remplacement. L’adresse de messagerie de remplacement est utilisée pour les notifications importantes, telles que la réinitialisation de votre mot de passe d’administrateur (et non le mot de passe d’administrateur de votre ordinateur). 
   
-1. Accédez au Centre d’administration Microsoft 365.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 
 2. Dans l’en-tête, sélectionnez votre icône de profil \> **Mes informations de** \> **sécurité de compte.**
 

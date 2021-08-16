@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Choisissez les fonctionnalités Office à afficher ou masquer lorsqu’un utilisateur choisit Aide > Nouveautés de son application Office sur Windows à l’aide de la fonctionnalité « Nouveautés de Office » dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 882616a8ed0f4a4198bd7987ea596fe2c0cfc83dbe844e2ca5e354bbca768bcc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 22801436a4502dd27e9b290080bcb6f1936550ac
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824574"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346255"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Gérer les fonctionnalités Office’affiche dans Nouveautés
 
@@ -39,14 +39,13 @@ Vous pouvez contrôler les messages de fonctionnalité affichés par vos utilisa
 
 ## <a name="show-or-hide-new-features"></a>Afficher ou masquer les nouvelles fonctionnalités
 
-1. In the Centre d’administration Microsoft 365, under **Paramètres**, choose **Org settings**.
-2. Sous **l’onglet Services,** choisissez **Nouveautés de Office**.
-3. Lorsque vous cliquez sur le nom de la fonctionnalité, un panneau volant apparaît avec les informations suivantes :
+1. Dans la Centre d’administration Microsoft 365, sous **Paramètres**, sélectionnez Paramètres de l’organisation, sélectionnez **l’onglet** <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"> **Services,**</a>puis sélectionnez **Nouveautés** dans Office .
+1. Lorsque vous cliquez sur le nom de la fonctionnalité, un panneau volant apparaît avec les informations suivantes :
      - Brève description de la fonctionnalité.
      - Lien vers un article pour en savoir plus sur la fonctionnalité.
-     - Les Office applications dans qui la fonctionnalité apparaît.
+     - Le Office applications dans qui la fonctionnalité apparaît.
      - La première version (publication) dans qui la fonctionnalité est disponible pour ce canal.
-4. Choose **Hide from users**. Ou, si vous avez précédemment caché la fonctionnalité, choisissez **Afficher aux utilisateurs.**
+1. Choose **Hide from users**. Ou, si vous avez précédemment caché la fonctionnalité, choisissez **Afficher aux utilisateurs.**
 
 Vous pouvez également sélectionner plusieurs fonctionnalités dans la page Gérer les fonctionnalités Office qui apparaissent dans la **page** Nouveautés, puis choisir Masquer **ou** **Afficher.**
 
@@ -58,9 +57,9 @@ Vous pouvez également sélectionner plusieurs fonctionnalités dans la page Gé
 
 ## <a name="list-of-features"></a>Liste des fonctionnalités
 
-Vous pouvez filtrer les fonctionnalités qui apparaissent dans la page Gérer les Office **qui apparaissent dans** la page Nouveautés. Vous pouvez filtrer par canal, application ou état, ou par combinaison d’entre eux.
+Vous pouvez filtrer les fonctionnalités qui apparaissent dans la page Gérer les Office **qui apparaissent dans la** page Nouveautés. Vous pouvez filtrer par canal, application ou état, ou par combinaison d’entre eux.
 
-De nouvelles fonctionnalités apparaissent sur la page en fonction de la planification suivante :
+De nouvelles fonctionnalités apparaissent sur la page selon la planification suivante :
 
 <br>
 

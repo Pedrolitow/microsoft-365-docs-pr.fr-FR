@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f342a4a104fb908bc8b8c05d2d53d190de8d64c9a826fb87be641e63921bb456
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 478a187494ff247c7d3e8a258e8ac73eb921d4d2
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793825"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346027"
 ---
 # <a name="get-file-related-alerts-api"></a>API Obtenir les alertes liées aux fichiers
 
@@ -44,6 +44,7 @@ Récupère une collection d’alertes liées à un hachage de fichier donné.
 ## <a name="limitations"></a>Limites
 
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+2. Seule la fonction de hachage SHA-1 est prise en charge (et non MD5 ou SHA-256).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -72,7 +73,8 @@ GET /api/files/{id}/alerts
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String
+|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -80,7 +82,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si le fichier existe : 200 - OK avec la liste [des](alerts.md) entités d’alerte dans le corps. Si le fichier n’existe pas - 404 - In trouvé.
+En cas de réussite et si le fichier existe : 200 - OK avec la liste [des](alerts.md) entités d’alerte dans le corps. Si le fichier n’existe pas : 200 - OK avec un jeu vide.
 
 ## <a name="example"></a>Exemple
 

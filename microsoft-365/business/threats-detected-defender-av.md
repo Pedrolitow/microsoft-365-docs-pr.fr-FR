@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment Antivirus Microsoft Defender protéger vos appareils Windows contre les menaces logicielles, telles que les virus, les programmes malveillants et les logiciels espions.
-ms.openlocfilehash: 7c5d000e2a8c30e17d1f890cef69fe88beed75bb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 79ec44a44c3939a4a868b98d75ab4f24eaf949fcd9bbafb7c0a3173e267f4680
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896300"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Menaces détectées par l’antivirus Microsoft Defender
 
@@ -64,16 +64,16 @@ Lorsque des menaces sont détectées par Antivirus Microsoft Defender, les chose
 
 - Les [utilisateurs reçoivent des notifications dans Windows](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e). 
 - Les détections sont répertoriées dans [l’Sécurité Windows sur](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) la page Historique **de la** protection.  
-- Si vous avez sécurisé vos appareils Windows 10 et les [avez](secure-win-10-pcs.md) inscrits dans [Intune](/mem/intune/enrollment/windows-enrollment-methods)et que votre organisation compte au moins 800 appareils inscrits, vous verrez des détections et des informations sur les menaces dans le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a> sur la page Menaces et **antivirus,** à laquelle vous pouvez accéder à partir de la carte **Antivirus Microsoft Defender** sur la **page** d’accueil (ou à partir du volet de navigation en sélectionnant l’antivirus **&** menaces d’état).  >  
+- Si vous avez sécurisé vos appareils Windows 10 et les [avez](secure-win-10-pcs.md) inscrits dans [Intune](/mem/intune/enrollment/windows-enrollment-methods)et que votre organisation compte au moins 800 appareils inscrits, vous verrez des détections de menaces et des informations dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> sur la page Menaces et **antivirus,** à laquelle vous pouvez accéder à partir de la carte **Antivirus Microsoft Defender** sur la **page** d’accueil (ou à partir du volet de navigation en sélectionnant l’antivirus **&** menaces  >  d’état).
 
     Si votre organisation compte plus de 800 appareils inscrits dans Intune, vous serez invité à afficher les détections de menaces et les informations provenant de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) au lieu de la page Menaces et **antivirus.**
  
     > [!NOTE]
-    > La carte **Antivirus Microsoft Defender** la page Menaces et **antivirus** sont déployées par phases, de sorte que vous n’avez peut-être pas un accès immédiat à ces cartes.
+    > La carte **Antivirus Microsoft Defender** la page menaces et **antivirus** sont déployées par phases, de sorte que vous n’avez peut-être pas un accès immédiat à ces cartes.
 
 Dans la plupart des cas, les utilisateurs n’ont pas besoin de prendre d’autres mesures. Dès qu’un fichier ou un programme malveillant est détecté sur un appareil, Antivirus Microsoft Defender le bloque et l’empêche de s’exécute. De plus, les menaces nouvellement détectées sont ajoutées au moteur antivirus et anti-programme malveillant afin que les autres appareils et utilisateurs soient également protégés.  
 
-S’il existe une action qu’un utilisateur doit prendre, telle que l’approbation de la suppression d’un fichier malveillant, il le verra dans la notification qu’il reçoit. Pour en savoir plus sur les actions Antivirus Microsoft Defender de la part d’un utilisateur, ou sur les actions que les utilisateurs devront peut-être prendre, consultez l’historique [de la protection.](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708) Pour découvrir comment gérer les détections de menaces en tant que professionnel de l’informatique/administrateur, voir Examiner les menaces détectées [et prendre des mesures.](review-threats-take-action.md)
+S’il existe une action qu’un utilisateur doit prendre, par exemple approuver la suppression d’un fichier malveillant, il le verra dans la notification qu’il reçoit. Pour en savoir plus sur les actions Antivirus Microsoft Defender de la part d’un utilisateur, ou sur les actions que les utilisateurs devront peut-être prendre, consultez l’historique [de la protection.](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708) Pour découvrir comment gérer les détections de menaces en tant que professionnel de l’informatique/administrateur, voir Examiner les menaces détectées [et prendre des mesures.](review-threats-take-action.md)
 
 Pour en savoir plus sur les différentes menaces, visitez <a href="https://www.microsoft.com/wdsi/threats" target="_blank">le site Renseignement de sécurité Microsoft menaces,</a>où vous pouvez effectuer les actions suivantes : 
 
@@ -81,7 +81,7 @@ Pour en savoir plus sur les différentes menaces, visitez <a href="https://www.m
 - Afficher les dernières menaces pour une région spécifique.
 - Recherchez des détails sur une menace spécifique dans la menace.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Secure Windows 10 devices](secure-windows-10-devices.md) (article)\
 [Évaluer Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (article)\

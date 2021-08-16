@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - FRP150
 description: Découvrez les nouveaux noms d Microsoft 365'abonnement.
-ms.openlocfilehash: 5757b802dcc5897e720249314d91974c35d0d3e3bce6acd8d564065bdc8a891c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2885a4c7dc30cb9431b4389f30e5a0d443cf0f62
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346039"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 est désormais Microsoft 365
 
-Nous avons modifié certains de nos noms d’abonnement Office 365 et Microsoft 365. Vous n’avez rien à faire. Vos services, applications et fonctionnalités restent inchangés, ainsi que le prix de votre abonnement. Le nom de votre abonnement sera automatiquement mis à jour dans le Centre d’administration Microsoft 365 et vos relevés de facturation seront mis à jour le 21 avril 2020 ou après.
+Nous avons modifié certains de nos noms d’abonnement Office 365 et Microsoft 365. Vous n’avez rien à faire. Vos services, applications et fonctionnalités restent inchangés, ainsi que le prix de votre abonnement. Le nom de votre abonnement sera automatiquement mis à jour dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centre d’administration Microsoft 365</a> et vos relevés de facturation seront mis à jour le 21 avril 2020 ou après.
 
 - **Office 365 Business Essentials** est désormais **Microsoft 365 Business Basic**
 - **Office 365 Business Premium** est désormais **Microsoft 365 Business Standard**

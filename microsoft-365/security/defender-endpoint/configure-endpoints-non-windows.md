@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9ded2b9bd3f45dfafadc3733e363b3cd82d6aac1
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: b74d61f6739ba67e95e291ed287c8abaabe2c1a2079bfae23c6fa3219a0e3f57
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869542"
 ---
 # <a name="onboard-non-windows-devices"></a>Intégrer des appareils non Windows
 
@@ -36,11 +36,11 @@ ms.locfileid: "53568099"
 - macOS
 - Linux
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-nonwindows-abovefoldlink)
 
 Defender for Endpoint offre une expérience centralisée des opérations de sécurité pour les plateformes Windows et non Windows de sécurité. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Microsoft 365 Defender et mieux protéger le réseau de votre organisation. 
 
-Vous devez connaître les versions exactes de Linux et macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Vous devez connaître les versions exactes de Linux et macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne. Pour plus d’informations, voir :
 - [Microsoft Defender pour point de terminaison sur la demande système Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
 - [Microsoft Defender pour point de terminaison sur macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
 
@@ -48,7 +48,7 @@ Vous devez connaître les versions exactes de Linux et macOS compatibles avec De
 Pour intégrer des appareils non Windows, vous devez suivre les étapes suivantes :
 1. Sélectionnez votre méthode d’intégration préférée :
 
-   - Pour les appareils macOS, vous pouvez choisir d’intégrer via Microsoft Defender pour endpoint ou via une solution tierce. Pour plus d’informations, [voir Microsoft Defender pour Endpoint sur Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - Pour les appareils macOS, vous pouvez choisir d’intégrer via Microsoft Defender pour Endpoint ou via une solution tierce. Pour plus d’informations, [voir Microsoft Defender pour Endpoint sur Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
    - Pour les autres appareils non Windows choisissez Intégrer des appareils non Windows par le biais **d’une intégration tierce.**   
     1. Dans le volet de navigation, sélectionnez **Partenaires et API** Applications  >  **partenaires.** Assurez-vous que la solution tierce est répertoriée.
@@ -65,11 +65,11 @@ Pour intégrer des appareils non Windows, vous devez suivre les étapes suivante
 2. Supprimez les autorisations pour la solution tierce dans votre client Azure AD.
    1. Connectez-vous au [Portail Azure](https://portal.azure.com).
    2. Sélectionnez **Azure Active Directory > Enterprise applications.**
-   3. Sélectionnez l’application que vous souhaitez horsboard.
+   3. Sélectionnez l’application que vous souhaitez hors-carte.
    4. Sélectionnez **le bouton** Supprimer.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)
 - [Configurer les paramètres de proxy et de connectivité Internet](configure-proxy-internet.md)

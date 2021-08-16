@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Dans cet article, vous allez découvrir les outils et techniques que vous pouvez utiliser pour surveiller et maintenir Microsoft 365 connectivité.
-ms.openlocfilehash: 8fa0820cf9b7778001be5184041e5c96930a29dd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 5013ef1129e230ea9a3cd31e5a75dbf367c4e5c01c63b37768e7f73098bcfacc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924198"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899198"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Surveiller la connectivité Microsoft 365
 
@@ -41,9 +41,9 @@ Une fois que vous avez déployé Microsoft 365, vous pouvez maintenir Microsoft 
 |**Utiliser Azure AD Connect Health avec AD FS** <br/> |Si vous utilisez AD FS pour Sign-On unique avec Microsoft 365, vous pouvez commencer à utiliser Azure AD Connecter Health pour surveiller votre [infrastructure AD FS.](/azure/active-directory/hybrid/how-to-connect-health-adfs)  <br/> |
 |**Surveiller les Microsoft 365** <br/> |Reportez-vous à nos conseils sur [l Microsoft 365 API de gestion des données.](/office/office-365-management-api/office-365-management-apis-overview)  <br/> |
 
-Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/monitorconnectivity365]()
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/monitorconnectivity365]()
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 [Configurer Microsoft 365 Entreprise services et applications](configure-services-and-applications.md)
   

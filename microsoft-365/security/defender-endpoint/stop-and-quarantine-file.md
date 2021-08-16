@@ -1,6 +1,6 @@
 ---
 title: API de fichier d’arrêt et de mise en quarantaine
-description: Découvrez comment arrêter l’exécution d’un fichier sur un appareil et supprimer le fichier dans Microsoft Defender pour endpoint. Consultez un exemple.
+description: Découvrez comment arrêter l’exécution d’un fichier sur un appareil et supprimer le fichier dans Microsoft Defender pour endpoint. Consulter un exemple.
 keywords: api, api de graphique, api pris en charge, arrêter et mettre en quarantaine le fichier
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2d37eef37400f67421434e36aa3e7b36487afaf4
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d9ae988df82a2cc1cf5106f832ae22f0c5a95dbdfbf28e6dc773cea3e8208798
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247470"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873822"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API de fichier d’arrêt et de mise en quarantaine
 
@@ -78,18 +78,16 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String
-|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Paramètre|Type|Description
+Parameter|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
-Sha1|String
-|Sha1 du fichier à arrêter et mettre en quarantaine sur l’appareil. **Obligatoire**.
+Sha1|Chaîne|Sha1 du fichier à arrêter et mettre en quarantaine sur l’appareil. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 

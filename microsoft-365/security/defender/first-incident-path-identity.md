@@ -22,25 +22,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 204530b8b4a87215053ddcb0434e40e45271da3d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 57a324310458dc15f5edcd6012ab381bb4d5041d902b8871d85cb318f0e7023e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841005"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873615"
 ---
 # <a name="example-of-an-identity-based-attack"></a>Exemple d’attaque basée sur l’identité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Microsoft Defender pour l’identité peut vous aider à détecter les tentatives malveillantes de compromission des identités dans votre organisation. Dans la mesure où Defender pour l’identité s’intègre à Microsoft 365 Defender, les analystes de sécurité peuvent avoir une visibilité sur les menaces provenant de Defender for Identity, telles que les tentatives d’élévation de privilège Netlogon suspectes.
+Microsoft Defender pour l’identité peut vous aider à détecter les tentatives malveillantes de compromission des identités dans votre organisation. Étant donné que Defender pour l’identité s’intègre à Microsoft 365 Defender, les analystes de sécurité peuvent avoir une visibilité sur les menaces provenant de Defender for Identity, telles que les tentatives d’élévation de privilège Netlogon suspectes.
 
 ## <a name="analyzing-the-attack-in-microsoft-defender-for-identity"></a>Analyse de l’attaque dans Microsoft Defender pour l’identité
 
-Microsoft 365 Defender permet aux analystes de filtrer les alertes par source de détection sous **l’onglet Alertes** de la page Incidents. Dans l’exemple suivant, la source de détection est filtrée sur **Defender for Identity**. 
+Microsoft 365 Defender permet aux analystes de filtrer les alertes par source de détection dans l’onglet **Alertes** de la page Incidents. Dans l’exemple suivant, la source de détection est filtrée sur **Defender for Identity**. 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Exemple de filtrage de la source de détection pour Defender for Identity":::
 
@@ -70,7 +70,7 @@ Pour ce faire, un analyste commence au moment de la détection de l’alerte (en
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="Exemple de démarrage au moment de la détection de l’alerte"::: 
 
-Il est important de comprendre et de distinguer les activités courantes telles que les connexions de mise à jour Windows, le trafic d’activation de logiciels Windows approuvé, d’autres connexions communes aux sites Microsoft, l’activité Internet tierce, l’activité Microsoft Endpoint Configuration Manager et toute autre activité faible contre une activité suspecte. Une façon d’y parvenir consiste à utiliser des filtres de chronologie. Il existe de nombreux filtres qui peuvent mettre en évidence une activité spécifique tout en filtrant tout ce que l’analyste ne souhaite pas afficher. 
+Il est important de comprendre et de distinguer les activités courantes telles que les connexions Windows Update, le trafic d’activation de logiciels de confiance Windows, d’autres connexions communes aux sites Microsoft, l’activité Internet tierce, l’activité Microsoft Endpoint Configuration Manager et toute autre activité faible contre les activités suspectes. Une façon d’y parvenir consiste à utiliser des filtres de chronologie. Il existe de nombreux filtres qui peuvent mettre en évidence une activité spécifique tout en filtrant tout ce que l’analyste ne souhaite pas afficher. 
 
 Dans l’image ci-dessous, l’analyste a filtré pour afficher uniquement les événements réseau et de traitement. Cela permet à l’analyste de voir les connexions réseau et les processus qui entourent l’événement où Bloc-notes a établi une connexion avec une adresse IP, ce que nous avons également vu dans l’arborescence des processus. 
 

@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: be05b4e477e00f1cdeafcd9b2b8d20452ac0c6c2
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8c2552ca4f5e98e3ba290c5bb5225818b68ad097d5ff891c2fbe4725fd5ef949
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873978"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>Passer à Microsoft Defender pour le point de terminaison
 
@@ -38,10 +38,10 @@ Si vous envisagez de passer à Defender pour Endpoint, nous vous aiderons. Dans 
 
 | Scénario | Aide |
 |:----|:----|
-| Vous n’avez pas encore de solution de protection de point de terminaison en place et vous souhaitez en savoir plus sur Defender for Endpoint. Vous souhaitez voir comment Fonctionne Defender pour Endpoint avant de le déployer dans votre environnement.  | [Laboratoire d’évaluation de Microsoft Defender for Endpoint](evaluation-lab.md)   |
+| Vous n’avez pas encore de solution de protection de point de terminaison en place et vous souhaitez en savoir plus sur Defender for Endpoint. Vous souhaitez voir comment Fonctionne Defender pour Point de terminaison avant de le déployer dans votre environnement.  | [Laboratoire d’évaluation de Microsoft Defender for Endpoint](evaluation-lab.md)   |
 | Vous avez déjà Defender pour point de terminaison et vous souhaitez obtenir de l’aide pour tout configurer et configurer.  | [Guide de déploiement de Microsoft Defender for Endpoint](deployment-phases.md)  |
-| Vous envisagez de passer d’une solution de protection de point de terminaison non Microsoft à Defender pour endpoint et Antivirus Microsoft Defender. Vous souhaitez obtenir une vue d’ensemble du processus de migration et comment effectuer le changement. |[Passer à Microsoft Defender pour le point de terminaison](switch-to-microsoft-defender-migration.md)   |
-| Vous avez déjà migré ou intégré à Defender pour Endpoint. Vous souhaitez de l’aide sur les étapes suivantes, telles que la gestion de vos paramètres de sécurité, la configuration d’autres fonctionnalités ou l’ajustement de vos stratégies de sécurité. | [Gérer Microsoft Defender pour le point de terminaison, après la migration](manage-atp-post-migration.md) |
+| Vous envisagez de passer d’une solution de protection de point de terminaison non-Microsoft à Defender for Endpoint et Antivirus Microsoft Defender. Vous souhaitez obtenir une vue d’ensemble du processus de migration et comment effectuer le changement. |[Passer à Microsoft Defender pour le point de terminaison](switch-to-microsoft-defender-migration.md)   |
+| Vous avez déjà migré ou intégré à Defender for Endpoint. Vous souhaitez de l’aide sur les étapes suivantes, telles que la gestion de vos paramètres de sécurité, la configuration d’autres fonctionnalités ou l’ajustement de vos stratégies de sécurité. | [Gérer Microsoft Defender pour le point de terminaison, après la migration](manage-atp-post-migration.md) |
 
 
 ## <a name="do-you-have-feedback-for-us"></a>Avez-vous des commentaires à notre place ?

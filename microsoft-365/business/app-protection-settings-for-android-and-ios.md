@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Découvrez comment créer, modifier ou supprimer une stratégie de gestion des applications et protéger les fichiers de travail sur les appareils Android ou iOS.
-ms.openlocfilehash: 92dce1e8761e53b85df85f2a84f30ab307f63e6d
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 0f1e509de728654eef543449741a89f7f04001bb46ee3f06fe9b96038650eb6f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925060"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896347"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Définir les paramètres de protection des applications pour les appareils Android ou iOS
 
@@ -52,7 +52,7 @@ Cet article s’applique aux Microsoft 365 Business Premium.
     
     ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Maintenant, définissez **Qui recevra ces paramètres ?** Si vous ne souhaitez pas  utiliser le groupe de sécurité Par défaut Tous les utilisateurs, choisissez **Modifier,** choisissez les groupes de sécurité qui obtiennent ces paramètres \> **Sélectionner.**
+6. Maintenant, définissez **Qui recevra ces paramètres ?** Si vous ne souhaitez pas  utiliser le groupe de sécurité Tous les utilisateurs par défaut, choisissez **Modifier,** choisissez les groupes de sécurité qui obtiennent ces paramètres \> **Sélectionner.**
     
 7. Enfin, sélectionnez **Terminé** pour enregistrer la stratégie et l'affecter à des appareils. 
     
@@ -74,7 +74,7 @@ Cet article s’applique aux Microsoft 365 Business Premium.
     
 ## <a name="available-settings"></a>Paramètres disponibles
 
-Les tableaux suivants donnent des informations détaillées sur les paramètres disponibles pour protéger les fichiers professionnels sur les appareils et sur les paramètres qui contrôlent la façon dont les utilisateurs accèdent Office fichiers à partir de leurs appareils mobiles.
+Les tableaux suivants donnent des informations détaillées sur les paramètres disponibles pour protéger les fichiers professionnels sur les appareils et sur les paramètres qui contrôlent la façon dont les utilisateurs accèdent aux fichiers Office à partir de leurs appareils mobiles.
   
  Pour plus d’informations, voir Comment les fonctionnalités [de protection Microsoft 365 Business Premium mappés aux paramètres Intune](map-protection-features-to-intune-settings.md). 
   
