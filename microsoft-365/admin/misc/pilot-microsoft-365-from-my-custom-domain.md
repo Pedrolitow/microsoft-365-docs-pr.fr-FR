@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment piloter la fonctionnalité de messagerie depuis mon domaine personnalisé vers une boîte aux lettres Microsoft 365 à l’aide de deux comptes de test uniquement.
-ms.openlocfilehash: 6172975719258e6186e6fcfdecc7bc9395b887c9f69ae835d45c1edf16626a2e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e19c04d00e533797036a29cafdfe9902e93a008
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823830"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346075"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Piloter Microsoft 365 depuis mon domaine personnalisé
 
@@ -89,7 +89,7 @@ Microsoft 365 utilise Exchange Online Protection (EOP) pour la protection contre
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>Étape 5 : créez des comptes d’utilisateurs et définissez l’adresse de réponse principale
 
-1. Dans le volet de navigation gauche du Centre d’administration Microsoft 365, sélectionnez **Utilisateurs** > **Utilisateurs actifs**.
+1. Dans le volet de navigation gauche du Centre d’administration Microsoft 365, sélectionnez **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Utilisateurs actifs**</a>.
 
 2. Créez deux comptes de test en ajoutant deux utilisateurs existants.
 

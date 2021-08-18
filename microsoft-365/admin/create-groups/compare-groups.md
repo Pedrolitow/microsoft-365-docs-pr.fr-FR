@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Les membres du groupe Microsoft 365 disposent d'une messagerie de groupe et d'un espace de travail partagé pour les conversations, les fichiers et les événements du calendrier, du flux et du planificateur.
-ms.openlocfilehash: a831ef11817af47ed1007600a1eb70bddd341b3ae474c11d0b2326a9e4debf89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5e616e95cf56a67799f4edc2608a54758a7aa0b
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826518"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346879"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
-Dans la section **Groupes** du Centre d’administration Microsoft 365, vous pouvez créer et gérer les types de groupes suivants : 
+Dans la section <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a> du Centre d’administration Microsoft 365, vous pouvez créer et gérer les types de groupes suivants : 
 
 - Les **Groupes Microsoft 365** sont utilisés pour la collaboration entre utilisateurs, aussi bien à l’intérieur qu’à l’extérieur de votre entreprise. Ils incluent des services de collaboration tels que SharePoint et le Planificateur.
 - **Les groupes de distribution** sont utilisés pour envoyer des notifications par courrier électronique à un groupe de personnes.

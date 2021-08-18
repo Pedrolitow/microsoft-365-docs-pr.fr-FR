@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Créer une boîte aux lettres de salle ou de ressource pour que tous les membres de l'organisation puissent réserver la salle ou l'équipement pour des réunions ou des événements à l'aide d'Outlook. "
-ms.openlocfilehash: 44233261f266a6caf4b4bea78d0dbf83d98daefe537121e0ba37748e71900462
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b5db5cfbbcacf501a280df98c4d1f9fc21fe509
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824889"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346771"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Boîtes aux lettres de salle et de ressource
 
@@ -49,7 +49,7 @@ Pour utiliser les boîtes aux lettres de salle ou de ressource, ouvrez Outlook �
     
 5. Modifiez l’**emplacement** (facultatif). 
     
-6. Modifiez l’**heure de début** et l’**heure de fin**. Vous pouvez également sélectionner **Évènement d'une journée entière**. Pour répéter la réunion ou la réservation, sélectionnez **Périodicité** dans la partie supérieure.<br/>![Réserver une heure de réunion](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+6. Modifiez l'**heure de début** et l'**heure de fin**, ou sélectionnez **Journée entière**. Pour répéter la réunion ou la réservation, sélectionnez **Périodicité** dans la partie supérieure.<br/>![Réserver une heure de réunion](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Tapez un message décrivant le but et joignez des fichiers si nécessaire.
     
@@ -61,7 +61,7 @@ Pour utiliser les boîtes aux lettres de salle ou de ressource, ouvrez Outlook �
     
 ## <a name="set-up-room-and-equipment-mailboxes"></a>Configurer les boîtes aux lettres de salle et de matériel
 
-Pour configurer une boîte aux lettres de salle ou d'équipement, rendez-vous dans le centre d'administration de Microsoft 365. Créez la boîte aux lettres et faites savoir à tout le monde qu'ils peuvent commencer à la réserver pour des réunions et des événements.
+Pour configurer une boîte aux lettres de salle ou d'équipement, rendez-vous dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration de Microsoft 365</a>. (Vous devez avoir la permission de l’administrateur pour le faire). Créez la boîte aux lettres et faites savoir à tout le monde qu'ils peuvent commencer à la réserver pour des réunions et des événements.
   
 1. Dans le centre d’administration, accédez à la page **Ressources** \> [Équipement &amp; de salle](https://go.microsoft.com/fwlink/p/?linkid=2067334).
   
@@ -94,7 +94,7 @@ Pour configurer une boîte aux lettres de salle ou d'équipement, rendez-vous da
 
 ### <a name="how-can-you-tell-when-the-room-or-equipment-is-available"></a>Comment savoir si une salle ou une ressource est disponible ?
 
-Ouvrez Outlook et créez une réunion. Ajoutez la salle ou la ressource à la réunion comme s’il s’agissait d’une personne, puis sélectionnez l’option **Assistant Planification** pour afficher le calendrier actualisé de la disponibilité de la salle ou de la ressource. Si la plage horaire est transparent, la salle ou la ressource est disponible. Si elle apparaît en bleu, elle est réservée. 
+Ouvrez Outlook et créez une réunion. Ajoutez la salle ou la ressource à la réunion comme s'il s'agissait d'une personne, puis sélectionnez l'option **Assistant Planification** pour afficher le calendrier actualisé de la disponibilité de la salle ou de la ressource. Si la plage horaire est libre, la salle ou la ressource est disponible. Si elle apparaît en bleu, elle est réservée. 
   
 ### <a name="how-do-you-cancel-a-room-or-equipment-request"></a>Comment annuler une demande de réservation de salle ou de ressource ?
 

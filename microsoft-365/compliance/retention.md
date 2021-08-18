@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 13b13a2f38641467611104ec0a93c2d5872d12d6fa48af758d7fc844397f7c03
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1895e8a4b60a8c51e35d2b44c34a7fdcb8e0ac47
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899950"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354379"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -252,7 +252,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Rétention appliquée automatiquement | Oui | Oui |
 |Rétention appliquée en fonction de conditions <br /> – types d’informations sensibles, requêtes KQL et mots clés, classificateurs entrainables | Non | Oui |
 |Rétention appliquée manuellement | Non | Oui |
-|Présence d’interface utilisateur pour les utilisateurs finals | Non | Oui |
+|Interaction de l’utilisateur final | Non | Oui |
 |Persiste si le contenu est déplacé | Non | Oui, au sein de votre client Microsoft 365 |
 |Déclaration d’un élément comme enregistrement| Non | Oui |
 |Démarrage de la période de rétention à la date d’étiquetage ou en fonction d’un événement | Non | Oui |
@@ -293,11 +293,13 @@ Il existe quelques facteurs supplémentaires qui déterminent quand un élément
 Utilisez ce flux pour comprendre les résultats de la rétention et de la suppression d’un seul élément, où chaque niveau agit comme l’élément décisif pour les conflits, de haut en bas. Si le résultat est déterminé par le premier niveau, car il n’y a plus de conflits, il n’est pas nécessaire de passer au niveau supérieur, et ainsi de suite.
 
 > [!IMPORTANT]
-> Si vous utilisez des étiquettes de rétention : avant d’utiliser ce flux pour déterminer le résultat de plusieurs paramètres de rétention sur le même élément, assurez-vous de [ l’étiquette de rétention qui est appliquée](#only-one-retention-label-at-a-time).
+> Si vous utilisez des étiquettes de rétention : avant d’utiliser les principes pour déterminer le résultat de plusieurs paramètres de rétention sur le même élément, assurez-vous de [ l’étiquette de rétention qui est appliquée](#only-one-retention-label-at-a-time).
 
 ![Diagramme des principes de rétention](../media/principles-of-retention.png)
 
 Avant d’expliquer plus en détails chaque principe, il est important de comprendre la différence entre la période de rétention pour l’élément et la période de rétention spécifiée dans la stratégie de rétention ou l’étiquette de rétention. La raison est que, bien que la configuration par défaut a pour but de démarrer la période de rétention quand un élément est créé de manière à ce que la fin de la période de rétention de celui-ci soit fixée, les fichiers prennent également en charge la configuration pour le démarrage de la période de rétention à partir de la dernière date de modification du fichier. Avec cette configuration de remplacement, le démarrage de la période de rétention est réinitialisé lors de chaque modification du fichier, ce qui prolonge la fin de la période de rétention de l’élément. Les étiquettes de rétention prennent également en charge le démarrage de la période de rétention lorsqu’ils est étiqueté et au début d’un événement.
+
+Pour appliquer les principes en action avec une série de questions Oui et Non, vous pouvez également utiliser [l’organigramme de rétention](retention-flowchart.md).
 
 Explication des quatre principes différents :
   

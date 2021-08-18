@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6861c9e0fa4611ca2a457b26d431b7f9a7473690
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6c6f48b0dfdeee717162d8ebe031b162e2970959
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247860"
+ms.locfileid: "58347095"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -50,8 +50,6 @@ Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent êt
 
 > [!NOTE]
 > Pour les clients du gouvernement américain, les étiquettes de niveau de vie privée sont désormais pris en charge pour toutes les plateformes :
-> - Pour les environnements élevés du GCC et du GCC : notes de publication pour [Office pour Windows](/officeupdates/current-channel#version-2101-january-26) et [Office pour Mac](/officeupdates/release-notes-office-for-mac#feature-updates-2)
-> - Pour les environnements DoD : notes de publication pour [Office pour Windows](/officeupdates/current-channel#version-2103-march-30)
 >
 > Si vous utilisez le client d’étiquettes et le scanneur unifiés de Azure Information Protection, consultez la [Description du service public premium Azure Information Protection](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
@@ -182,7 +180,7 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
 - **Sélectionnez les utilisateurs et les groupes pouvant voir les étiquettes.** Les étiquettes peuvent être publiées vers un utilisateur ou un groupe de sécurité à extension de courrier, à un groupe de distribution ou à un groupe Microsoft 365 (pouvant avoir [l’appartenance dynamique](/azure/active-directory/users-groups-roles/groups-create-rule)) dans Azure AD.
 
-- **Spécifiez une étiquette par défaut** pour les nouveaux documents, les e-mails sans étiquette et les nouveaux conteneurs (lorsque vous avez [activé les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md)). Vous pouvez spécifier la même étiquette pour les trois types d’éléments ou des étiquettes différentes. Quand vous spécifiez une étiquette par défaut pour des documents, le client d'étiquetage unifié Azure Information Protection applique également cette étiquette aux documents existants non étiquetés. Les utilisateurs peuvent toujours modifier l’étiquette par défaut s’il ne s’agit pas de l’étiquette appropriée pour leur document ou leur courrier électronique.
+- **Spécifiez une étiquette par défaut** pour les nouveaux documents, les e-mails sans étiquette et les nouveaux conteneurs (lorsque vous avez [activé les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md)) et maintenant [une étiquette par défaut pour le contenu Power BI](/power-bi/admin/service-security-sensitivity-label-default-label-policy). Vous pouvez spécifier la même étiquette pour les quatre types d’éléments ou des étiquettes différentes. Quand vous spécifiez une étiquette par défaut pour des documents, le client d'étiquetage unifié Azure Information Protection applique également cette étiquette aux documents existants non étiquetés. Les utilisateurs peuvent modifier l'étiquette de sensibilité appliquée par défaut s'ils estiment qu'elle n'est pas la bonne.
     
     > [!IMPORTANT]
     > Lorsque vous avez des [sous-étiquettes](#sublabels-grouping-labels), veillez à ne pas configurer l’étiquette parente comme étiquette par défaut.

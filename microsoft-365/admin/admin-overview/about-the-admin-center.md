@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Connectez-vous avec des autorisations d’administrateur au Centre d’administration Microsoft 365 pour configurer votre organisation dans le cloud et gérer les utilisateurs et les abonnements.
-ms.openlocfilehash: 3eb5853a23930e1ab1e595efa6f1448dcb82894c531f0771a973318d4601c09d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1a5ebf22f874700510ff34a0f1d1fa7bb923fe0
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827166"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346975"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "53827166"
 
 **Si vous êtes un utilisateur ou si vous avez un plan Microsoft 365 Famille, vous n’avez pas de centre d’administration.** Pour configurer Microsoft 365, accédez à [Télécharger et installer ou réinstaller Microsoft 365 ou Office 2019 sur un PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
 
-Le Centre d'administration vous permet de configurer votre organisation dans le cloud, de gérer les utilisateurs, de gérer les abonnements, etc. Dans cet article, vous découvrirez comment accéder au Centre d'administration et vous en apprendrez davantage sur les fonctionnalités et paramètres disponibles.
+Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> vous permet de configurer votre organisation dans le cloud, de gérer les utilisateurs, de gérer les abonnements, etc. Dans cet article, vous découvrirez comment accéder au Centre d'administration et vous en apprendrez davantage sur les fonctionnalités et paramètres disponibles.
 
 Regardez une courte vidéo sur le Centre d’administration. <br><br>
 

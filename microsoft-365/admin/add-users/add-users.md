@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 description: Chaque membre de l’équipe a besoin d’un compte d’utilisateur avant de pouvoir se connecter et accéder à Microsoft 365 pour les entreprises. Apprenez comment ajouter des utilisateurs et attribuer des licences.
 ms.date: 07/01/2020
-ms.openlocfilehash: 5d18bfbd396bc13496cc06c80dcb5cc6fbf7f84e9432936c1d745877f0074141
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7fa0842812a83e510d7e200ebef3db4507d4b9d
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815898"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347011"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 
-Les membres de votre équipe ont besoin d'un compte d'utilisateur pour se connecter et accéder à [Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/business). La façon la plus simple d'ajouter des comptes d'utilisateurs consiste à les ajouter individuellement dans le Centre d'administration Microsoft 365. Après avoir effectué cette étape, vos utilisateurs disposent de licences Microsoft 365, d'informations d'identification de connexion et de boîtes aux lettres Microsoft 365.
+Chaque membres de votre équipe a besoin d'un compte d'utilisateur pour se connecter et accéder à [Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/business). Le moyen le plus simple d’ajouter des comptes d’utilisateurs consiste à les ajouter un par un dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Après cette étape, vos utilisateurs disposent de licences Microsoft 365, d’informations d’identification de connexion et de boîtes aux lettres Microsoft 365.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

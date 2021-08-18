@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 2b21df0592c2ca6f3f45500236e2cd07ab7128c1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: cafe6fe2628d58b80ea86753734e56996c5fdfcd
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247549"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357052"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -44,7 +44,7 @@ Les étiquettes de rétention appliquées automatiquement sont puissantes pour l
 Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci contient des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des [classifieurs pouvant être formés](classifier-get-started-with.md).
 
 > [!TIP]
-> Publié récemment, utilisez les propriétés de recherche pour identifier [Les enregistrements de réunion Teams](#microsoft-teams-meeting-recordings).
+> Utilisez les propriétés de recherche pour identifier [Les enregistrements de réunion Teams](#microsoft-teams-meeting-recordings).
 
 Les processus d’application automatique d’une étiquette de rétention sont fonction des conditions suivantes :
 
@@ -127,7 +127,7 @@ Vous pouvez appliquer automatiquement des étiquettes de rétention au contenu q
 
 - [Correspondance pour les classifieurs entraînables](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Les trois conditions peuvent automatiquement appliquer des étiquettes de rétention aux e-mails lorsqu’ils sont envoyés et reçus, mais pas aux éléments existants dans la boîte aux lettres (données au repos). Pour les éléments dans SharePoint et OneDrive, utilisez le tableau suivant pour identifier le moment où des étiquettes de rétention peuvent y être automatiquement appliquées :
+Les trois conditions peuvent automatiquement appliquer des étiquettes de rétention aux e-mails lorsqu’ils sont envoyés et reçus (données en transit), mais pas aux éléments existants dans la boîte aux lettres (données au repos). Pour les éléments dans SharePoint et OneDrive, utilisez le tableau suivant pour identifier le moment où des étiquettes de rétention peuvent y être automatiquement appliquées :
 
 |Condition|Éléments modifiés ou nouveaux |Éléments existants (données au repos)|
 |:-----|:-----|:-----|

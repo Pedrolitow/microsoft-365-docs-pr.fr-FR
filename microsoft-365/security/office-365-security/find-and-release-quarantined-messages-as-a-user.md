@@ -20,12 +20,12 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 59477ae4e75e243c27d39f26b57192b55c2ec44432da8bc24e83504542e71844
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3a6b3827260f95cdef84d5cce463cad06bfc670d
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56801505"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349830"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -38,7 +38,7 @@ ms.locfileid: "56801505"
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, la quarantaine contient des messages potentiellement dangereux ou indésirables. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans EOP](quarantine-email-messages.md).
 
-En tant que destinataire d’un message mis en quarantaine, ce que vous pouvez effectuer avec le message en tant qu’utilisateur non administrateur est décrit dans le tableau suivant :
+En tant que destinataire d'un message en quarantaine, ce que vous pouvez faire au message en tant qu'utilisateur ordinaire (pas en tant qu'administrateur) est décrit dans le tableau suivant :
 
 <br>
 
@@ -55,11 +55,11 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail M
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le Portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>. Pour ouvrir la page de quarantaine directement, accédez à <https://security.microsoft.com/quarantine>.
+- Pour ouvrir le Portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>. Pour ouvrir la page Web de **quarantaine** directement, utilisez <https://security.microsoft.com/quarantine>.
 
 - Les administrateurs peuvent configurer la durée pendant laquelle les messages sont conservés dans la quarantaine avant d’être définitivement supprimés dans les stratégies anti-courrier indésirable. Les messages dont la mise en quarantaine est arrivée à expiration ne peuvent pas être récupérés. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
-- Les administrateurs peuvent également [activer les notifications de courrier indésirable pour l’utilisateur final](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) dans les stratégies anti-courrier indésirable. Les utilisateurs peuvent débloquer les messages mis en quarantaine pour cause de courrier indésirable, directement depuis ces notifications. Les utilisateurs peuvent examiner les messages mis en quarantaine pour hameçonnage (pas les messages d’hameçonnage haute confiance) directement depuis ces notifications. Si vous souhaitez en savoir plus, veuillez consulter l’article [Notifications de courrier indésirable pour l’utilisateur final dans EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Les administrateurs peuvent également [activer les notifications de courrier indésirable pour l’utilisateur final](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) dans les stratégies anti-courrier indésirable. Les destinataires du message original peuvent *libérer* les messages de spam mis en quarantaine directement à partir de ces notifications. Les destinataires du message original peuvent *réviser* les messages de phishing mis en quarantaine (pas les messages de phishing à haut niveau de confiance) directement à partir de ces notifications. Si vous souhaitez en savoir plus, veuillez consulter l’article [Notifications de courrier indésirable pour l’utilisateur final dans EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 - Les messages mis en quarantaine car considérés comme de l’hameçonnage, des programmes malveillants ou par règles de flux de messagerie (également appelés règles de transport) ne sont disponibles que pour les administrateurs. Ils sont en revanche invisibles pour les utilisateurs. Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
 
@@ -68,25 +68,26 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail M
 ## <a name="view-your-quarantined-messages"></a>Afficher les messages en quarantaine
 
 1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Évaluation** \> **Quarantaine**.
+2. Sur la page Web **Quarantaine**, vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour modifier les colonnes qui s'affichent. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
 
-2. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
-
-   - **Reçu**<sup>\*</sup>
-   - **Expéditeur**<sup>\*</sup>
+   - **Heure de réception**<sup>\*</sup>
    - **Sujet**<sup>\*</sup>
+   - **Expéditeur**<sup>\*</sup>
    - **Raison de la quarantaine**<sup>\*</sup>
-   - **Déplacer ?**<sup>\*</sup>
+   - **Libérer le statut**<sup>\*</sup>
    - **Type de stratégie**<sup>\*</sup>
    - **Expire**<sup>\*</sup>
    - **Destinataire**
    - **ID de message**
    - **Nom de la stratégie**
-   - **Taille**
-   - **Direction**
+   - **Taille du message**
+   - **Direction du courrier**
 
-   Lorsque vous avez terminé, cliquez sur **Enregistrer** ou sur **Définir par défaut**.
+   Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
 3. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres disponibles sont :
+
+   - Message
 
    - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
      - **Aujourd’hui**
@@ -105,34 +106,58 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail M
      - **Stratégie anti-programme malveillant**
      - **Stratégie de pièces jointes fiables** (Defender pour Office 365)
      - **Stratégie anti-hameçonnage**
-     - **Stratégie de filtrage de contenu hébergé** (stratégie anti-courrier indésirable)
-     - **Règle de transport**
-
-     <sup>\*</sup>
+     - **Stratégie anti-courrier indésirable**
+     -  **Règle de transport** (règle de flux de courrier)
 
    Pour effacer le filtre, cliquez sur **Effacer**. Pour masquer le menu déroulant de filtrage, cliquez de nouveau sur **Filtrer**.
 
-4. Utilisez **Trier les résultats par** (le bouton **ID de message** par défaut) et une valeur correspondante pour rechercher des messages spécifiques. Les caractères génériques ne sont pas pris en charge. Vous pouvez effectuer une recherche sur les valeurs suivantes :
+4. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres suivants sont disponibles dans le menu déroulant **Filtres** qui apparaît :
+   - **ID du message** : l’identificateur global unique du message.
+   - **Adresse de l’expéditeur**
+   - **Adresse du destinataire**
+   - **Sujet**
+   - **Heure reçue** : Saisissez une **heure de début** et une **heure de fin** (date).
+   - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
+     - **Aujourd’hui**
+     - **Dans les 2 prochains jours**
+     - **Dans les 7 prochains jours**
+     - **Personnaliser**: Entrer une **Date de début** et une **Date de fin**.
+   - **Raison de la mise en quarantaine :**
+     - **E-mail de masse**
+     - **Courrier indésirable**
+     - **Hameçonnage** : Le verdict du filtre anti-spam était **hameçonnant** ou la protection anti-phishing a mis le message en quarantaine ([paramètres d'usurpation](set-up-anti-phishing-policies.md#spoof-settings) ou [protection contre l'usurpation d'identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
+     - **Hameçonnage à haute fiabilité**
+   - **Statut de la version** : Une des valeurs suivantes :
+     - **Révision requise.**
+     - **Approuvé**
+     - **Refusé**
+     - **Publication demandée**
+     - **Date de publication**
+   - **Type de stratégie** : filtrer les messages par type de stratégie :
+     - **Stratégie anti-programme malveillant**
+     - **Stratégie de pièces jointes fiables**
+     - **Politique de lutte contre l'hameçonnage**
+     - **Stratégie anti-courrier indésirable**
+     -  **Règle de transport** (règle de flux de courrier)
 
-   - **ID du message** : l’identificateur global unique du message. Si vous sélectionnez un message dans la liste, la valeur **ID du message** apparaît dans le volet déroulant **Détails** qui s’affiche. Les administrateurs peuvent utiliser le [suivi des messages](message-trace-scc.md) pour rechercher les messages et les valeurs d’ID de message correspondantes.
-   - **Adresse e-mail de l'expéditeur** : adresse e-mail d'un seul expéditeur.
-   - **Nom de la stratégie** : utilisez le nom de stratégie complet indiqué dans le message. La recherche n’est pas sensible à la casse.
-   - **Adresse e-mail du destinataire** : adresse e-mail d'un seul destinataire.
-   - **Sujet** : utiliser l'intégralité du sujet du message. La recherche n’est pas sensible à la casse.
+   Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres, cliquez sur l'icône ![Effacer les filtres](../../media/m365-cc-sc-clear-filters-icon.png)**Effacer les filtres** .
 
-   Après avoir entrer les critères de recherche, cliquez sur le ![Bouton actualiser](../../media/scc-quarantine-refresh.png) **Actualiser** pour filtrer les résultats.
+5. Utilisez le **champ de recherche** et une valeur correspondante pour trouver des messages spécifiques. Les caractères génériques ne sont pas pris en charge. Vous pouvez effectuer une recherche sur les valeurs suivantes :
+   - Message ID
+   - Adresse de messagerie de l’expéditeur
+   - Adresse de messagerie du destinataire
+   - Objet. Utiliser l'intégralité du sujet du message La recherche n’est pas sensible à la casse.
+   - Nom de la stratégie Nom de la stratégie : utilisez le nom de stratégie complet indiqué dans le message. La recherche n’est pas sensible à la casse.
+
+   Après avoir saisi les critères de recherche, appuyez sur ENTRÉE pour filtrer les résultats.
 
 Une fois le message spécifique mis en quarantaine trouvé, sélectionnez-le pour afficher des détails à son sujet et pour prendre des mesures (par exemple, afficher, déplacer, télécharger ou supprimer le message).
 
-### <a name="export-message-results"></a>Exporter les résultats de message
-
-1. Sélectionnez les messages qui vous intéressent, puis cliquez sur **Exporter les résultats**.
-
-2. Cliquez sur **Oui** dans le message de confirmation qui vous avertit que la fenêtre du navigateur reste ouverte.
-
-3. Lorsque l’exportation est prête, vous pouvez nommer et choisir l’emplacement de téléchargement du fichier .csv.
-
 ### <a name="view-quarantined-message-details"></a>Afficher les détails des messages mis en quarantaine
+
+Lorsque vous sélectionnez un message mis en quarantaine dans la liste, les informations suivantes sont disponibles dans le flyout de détails qui apparaît.
+
+![Le flyout des détails d'un message en quarantaine](../../media/quarantine-user-message-details.png)
 
 Lorsque vous sélectionnez un message électronique dans la liste, les détails de message suivants s’affichent dans le volet déroulant **Détails** :
 
@@ -141,40 +166,66 @@ Lorsque vous sélectionnez un message électronique dans la liste, les détails 
 - **Reçu** : Date et heure de réception du message.
 - **Subject**
 - **Raison de mise en quarantaine** : indique si un message a été identifié comme **courrier indésirable**, **courrier en nombre** ou **hameçonnage**.
+- **Type de politique** : Le type de politique. Par exemple, **la politique anti-spam**.
+- **Nombre de destinataires**
 - **Destinataires** : si le message contient plusieurs destinataires, vous devez cliquer sur **Prévisualiser le message** ou **Afficher l’en-tête du message** pour afficher la liste complète des destinataires.
 - **Expires** : Date et heure auxquelles le message sera automatiquement et définitivement supprimé de la quarantaine.
-- **Déplacé pour** : toutes les adresses e-mail (le cas échéant) auxquelles le message a été envoyé.
-- **Pas encore déplacé pour** : toutes les adresses e-mail (le cas échéant) auxquelles le message n'a pas encore été envoyé.
+
+Pour donner suite au message, consultez la section suivante.
+
+> [!NOTE]
+> Pour rester dans le menu déroulant des détails, mais changer le message en quarantaine que vous regardez, utilisez les flèches haut et bas en haut du menu déroulant.
+>
+> ![Les flèches vers le haut et vers le bas dans la fenêtre de détail d'un message en quarantaine.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
 
-Après avoir sélectionné un message, vous pouvez effectuer les actions suivantes dans le volet déroulant **Détails** :
+Après avoir sélectionné un message en quarantaine dans la liste, les actions suivantes sont disponibles dans le flyout des détails :
 
-- **Déplacer le message** : dans le volet déroulant qui s’affiche, indiquez si vous souhaitez **Signaler les messages à Microsoft pour analyse**. Cette option est sélectionnée par défaut et signale à Microsoft le message mis en quarantaine par erreur comme un faux positif.
+![Actions disponibles dans le flyout des détails d'un message en quarantaine](../../media/quarantine-user-message-details-flyout-actions.png)
 
-  Lorsque vous avez terminé, cliquez sur **Déplacer les messages**.
+- ![Icône de libération de l'email](../../media/m365-cc-sc-check-mark-icon.png) **Libération de l'email**<sup>\*</sup>: Transmet le message dans votre boîte de réception.
 
-- **Afficher l’en-tête du message** : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser en profondeur les champs d'en-tête et les valeurs, copiez le texte d’en-tête du message dans le presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft** pour accéder à l’analyseur de connectivité à distance (Faites un clic droit et sélectionnez **Ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Microsoft 365 accomplir cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes** :
+- ![Icône Afficher les en-têtes de message](../../media/m365-cc-sc-eye-icon.png) **Afficher les en-têtes de message** : Choisissez ce lien pour voir le texte de l'en-tête du message. Le flyout de **l'en-tête de message** apparaît avec les liens suivants :
+- **Copier l'en-tête du message** : Cliquez sur ce lien pour copier l'en-tête du message (tous les champs d'en-tête) dans votre presse-papiers.
+- **Analyseur d'en-tête de message Microsoft Corporation** : Pour analyser en profondeur les champs et les valeurs de l'en-tête, cliquez sur ce lien pour accéder à l'analyseur d'en-tête de message. Collez l'en-tête du message dans la section **Insérez l'en-tête du message que vous souhaitez analyser** (CTRL+V ou cliquez avec le bouton droit de la souris et choisissez **Coller**), puis cliquez sur **Analyser les en-têtes**.
 
-- **Prévisualiser le message** : dans le volet déroulant qui apparaît, choisissez l’une des options suivantes :
-  - **Mode Source** : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
-  - **Mode texte** : affiche le corps du message au format texte brut.
+Les actions suivantes sont disponibles après avoir cliqué sur l'icône ![Autres actions ](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** :
 
-- **Supprimer de la quarantaine** : Le message est supprimé dès que vous cliquez sur **Oui** dans le message d’avertissement qui s’affiche.
+- ![Icône de message de ](../../media/m365-cc-sc-eye-icon.png) **préversion du message de prévisualisation** : Dans le menu déroulant qui apparaît, choisissez l'un des onglets suivants :
+  - **Affichage Source** : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
+  - **Texte simple** : affiche le corps du message au format texte brut.
 
-- **Bloquer l’expéditeur** : ajoutez l’expéditeur à la liste des expéditeurs bloqués dans votre boîte aux lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- ![Supprimer de la quarantaine](../../media/m365-cc-sc-delete-icon.png) **Supprimer de la quarantaine** : Après avoir cliqué sur **Oui** dans l'avertissement qui apparaît, le message est immédiatement supprimé sans être envoyé aux destinataires d'origine.
 
-Ajoutez l’expéditeur à la liste des expéditeurs bloqués dans votre boîte aux lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- ![Icône de téléchargement de l'e-mail](../../media/m365-cc-sc-download-icon.png) **Télécharger l'e-mail**: Dans le menu déroulant qui apparaît, sélectionnez **Je comprends les risques liés au téléchargement de ce message**, puis cliquez sur **Télécharger** pour enregistrer une copie locale du message au format .eml.
 
-Lorsque vous avez terminé, cliquez sur **Fermer**.
+- ![Icône de blocage de l'expéditeur](../../media/m365-cc-sc-block-sender-icon.png) **Bloquer l'expéditeur** : Ajouter l'expéditeur à la liste des expéditeurs bloqués dans **votre** boîte aux lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-Si vous ne déplacez pas ou ne supprimez pas le message, il sera supprimé après l'expiration de la période de conservation de quarantaine par défaut.
+<sup>\*</sup> Cette option n'est pas disponible pour les messages qui ont déjà été validés (la **valeur du statut** Validé est **publiée**).
+
+Si vous ne libérez pas ou ne supprimez pas le message, il sera supprimé après l'expiration de la période de conservation en quarantaine par défaut (comme indiqué dans la **colonne Expiration**).
+
+> [!NOTE]
+> Sur un appareil mobile, le texte de description n'est pas disponible sur les icônes d'action.
+>
+> ![Détails d'un message en quarantaine avec les actions disponibles mises en évidence](../../media/quarantine-user-message-details-flyout-mobile-actions.png)
+>
+> Les icônes dans l'ordre et leurs descriptions correspondantes sont résumées dans le tableau suivant :
+>
+> |Icône|Description|
+> |---:|---|
+> |![Libérer l’icône du courrier](../../media/m365-cc-sc-check-mark-icon.png)|**Libérer le courrier**|
+> |![Afficher l’icône des en-têtes de messages](../../media/m365-cc-sc-eye-icon.png)|**Afficher des en-têtes de messages**|
+> |![Afficher l’icône de l’aperçu du message](../../media/m365-cc-sc-eye-icon.png)|**Afficher un aperçu du message**|
+> |![Supprimer de l’icône de la quarantaine](../../media/m365-cc-sc-delete-icon.png)|**Supprimer de la quarantaine**|
+> |![Bloquer l’icône de l’expéditeur](../../media/m365-cc-sc-block-sender-icon.png)|**Bloquer l’expéditeur**|
 
 #### <a name="take-action-on-multiple-quarantined-email-messages"></a>Effectuer une action sur plusieurs courriers électroniques mis en quarantaine
 
-Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (jusqu’à 100), le volet déroulant **Actions groupées** s’affiche et vous pouvez effectuer les actions suivantes :
+Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (jusqu'à 100) en cliquant dans la zone vide à gauche de la première colonne, la liste déroulante **Actions en vrac** s'affiche et vous permet d'effectuer les actions suivantes :
 
-- **Déplacer les messages** : Les options sont les mêmes que lorsque vous déplacez un seul message, sauf que vous ne pouvez pas sélectionner **Déplacer les messages pour des destinataires spécifiques**. Vous pouvez seulement sélectionner **Déplacer le message pour tous les destinataires** ou **Déplacer les messages pour d'autres personnes**.
-- **Supprimer des messages** : le message est immédiatement supprimé sans être envoyé aux destinataires d’origine dès que vous cliquez sur **Oui** dans le message d’avertissement qui s’affiche.
+![Liste déroulante d'actions groupées pour les messages en quarantaine](../../media/quarantine-user-message-bulk-actions.png)
 
-Lorsque vous avez terminé, cliquez sur **Fermer**.
+- ![Icône de libération de l'email](../../media/m365-cc-sc-check-mark-icon.png) **Libération des messages** : Transmet le message dans votre boîte de réception.
+- ![Icône Supprimer de la quarantaine](../../media/m365-cc-sc-delete-icon.png) **Supprimer les messages** :  Après avoir cliqué sur **Oui** dans l'avertissement qui apparaît, les messages sont immédiatement supprimés de la quarantaine sans être envoyés aux destinataires d'origine.

@@ -21,12 +21,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
-ms.openlocfilehash: a4af63493ae155314f0e3cc0d7772b61d2656b6a898c036f0ee086622bccf42d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62cc6404790d711220ef80a644772e8dcd306fcb
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825913"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346819"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -44,7 +44,7 @@ Si vous n’ajoutez pas de domaine, les membres de votre organisation utiliseron
 
 Vous devez tout d’abord prouver que vous êtes le propriétaire du domaine que vous voulez ajouter à Microsoft 365.
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com/), puis sélectionnez **Afficher tout** > **Paramètres** > **Domaines**.
+1. Connectez-vous au Centre d’administration Microsoft 365, puis sélectionnez **Afficher tout** > **Paramètres** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
 2. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur, connectez-vous à votre fournisseur d’hébergement DNS, puis recherchez l’emplacement où vous gérez vos paramètres DNS (par exemple, Paramètres de fichier de zone, Gérer les domaines, Gestionnaire de domaine, Gestionnaire DNS).
 3. Accédez à la page Gestionnaire DNS de votre fournisseur et ajoutez à votre domaine l’enregistrement TXT indiqué dans le centre d’administration.
 
@@ -64,7 +64,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 
 Si votre bureau d’enregistrement ne prend pas en charge l’ajout d'enregistrements TXT, vous pouvez procéder à la vérification en ajoutant un enregistrement MX.
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com/), puis sélectionnez **Afficher tout** > **Paramètres** > **Domaines**.
+1. Connectez-vous au Centre d’administration Microsoft 365, puis sélectionnez **Afficher tout** > **Paramètres** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
 2. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur, connectez-vous à votre fournisseur d’hébergement DNS, puis recherchez l’emplacement où vous gérez vos paramètres DNS (par exemple, Paramètres de fichier de zone, Gérer les domaines, Gestionnaire de domaine, Gestionnaire DNS).
 3. Accédez à la page Gestionnaire DNS de votre fournisseur et ajoutez à votre domaine l’enregistrement MX indiqué dans le centre d’administration.
 
@@ -141,7 +141,7 @@ Sur le site Web de votre fournisseur d’hébergement, ajoutez les enregistremen
 Dans le nouvel enregistrement, vérifiez que chacun des champs sont définis par les valeurs suivantes :
 
 - Type d’enregistrement : `SRV (Service)`
-- Nom : `@`
+- Nom : `@`
 - Cible : copiez la valeur à partir du centre d’administration et collez-la ici.
 - Protocole : copiez la valeur à partir du centre d’administration et collez-la ici.
 - Service : copiez la valeur à partir du centre d’administration et collez-la ici.
