@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: 33cec29afa04c3f2829f055e01760a19b47f1405acd618d630641135779976a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8b8b8481dca5074d2db6c3022d65e160cdf7b04
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862486"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58418023"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -149,7 +149,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 **Navigation :** Centre d’administration SharePoint > Partage
 
-![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation](../media/sharepoint-organization-external-sharing-controls.png)
+![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation](../media/external-sharing.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -160,7 +160,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 **Navigation :** Centre d’administration SharePoint > Partage
 
-![Capture d’écran des paramètres de partage supplémentaires au niveau de l’organisation dans SharePoint](../media/sharepoint-organization-advanced-sharing-settings.png)
+![Capture d’écran des paramètres de partage supplémentaires au niveau de l’organisation dans SharePoint](../media/external-sharing.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -169,6 +169,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 |Les invités doivent se connecter à l’aide du compte auquel les invitations de partage ont été envoyées|Désactivé|Empêche les invités d’utiliser des invitations de partage de sites à l’aide d’une envoyer un e-mail différente de celle à laquelle l’invitation a été envoyée. <p> L’[intégration de SharePoint et de OneDrive avec Azure AD B2B (préversion)](/sharepoint/sharepoint-azureb2b-integration-preview) n’utilise pas ce paramètre parce que tous les invités sont ajoutés à l’annuaire en fonction de l’adresse e-mail à laquelle l’invitation a été envoyée. D’autres adresses e-mail ne peuvent pas être utilisées pour accéder au site.|
 |Autoriser les invités à partager des éléments qui ne leur appartiennent pas|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent partager des éléments dont ils ne sont pas propriétaires avec d’autres utilisateurs ou invités. Quand il est **Désactivé**, ils ne le peuvent pas. Les invités peuvent toujours partager des éléments sur lesquels ils disposent d’un contrôle total.|
 |Les personnes qui utilisent un code de vérification doivent se s’authentifier à nouveau après ce nombre de jours|Désactivé|Ce paramètre vous permet d’exiger que les utilisateurs s’authentifiant avec un code secret à usage unique doivent s’authentifier à nouveau après un certain nombre de jours.|
+|L’accès invité à un site ou à OneDrive expirera automatiquement après ce nombre de jours|Activé|Si votre administrateur a fixé un délai d’expiration pour l’accès invité, chaque personne que vous invitez sur le site ou avec laquelle vous partagez des fichiers et dossiers individuels aura accès pendant un certain nombre de jours. Pour plus d’informations, visitez [Gérer l’expiration des invités pour un site](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea)
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Paramètres de lien de fichier et de dossier SharePoint et OneDrive
 
