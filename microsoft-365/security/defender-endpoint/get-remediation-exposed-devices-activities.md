@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d4f87a292c93bd5d29d9abdcef8ce3134f65b0f0afe7430d22a64c677be7a1ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 856379aeb0264cf1c6d604050ad2a0052dab4e0b
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811229"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400246"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Répertorier les appareils exposés d’une activité de correction
 
@@ -56,17 +56,17 @@ L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|RemediationTask.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Application|RemediationTasks.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 Déléguée (compte professionnel ou scolaire)|RemediationTask.Read.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 
 ## <a name="properties-details"></a>Détails des propriétés
 
 Propriété (id)|Type de données|Description|Exemple
 :---|:---|:---|:---
-id|Chaîne|ID d’appareil|w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName|Chaîne|Nom du périphérique|PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform|Chaîne|Système d’exploitation d’appareil|WindowsServer2012R2
-rbacGroupName|Chaîne|Nom du groupe d’appareils associé à cet appareil|Serveurs
+id|String|ID d’appareil|w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName|String|Nom du périphérique|PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform|String|Système d’exploitation d’appareil|WindowsServer2012R2
+rbacGroupName|String|Nom du groupe d’appareils associé à cet appareil|Serveurs
 
 ## <a name="example"></a>Exemple
 
@@ -120,4 +120,4 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [Obtenir une activité de correction par son ID](get-remediation-one-activity.md)
 - [Répertorier toutes les activités de correction](get-remediation-all-activities.md)
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)

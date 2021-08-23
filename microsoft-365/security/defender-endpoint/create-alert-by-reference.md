@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9ff52a2c2cd464552637a166708669c2ab4d00eece6bd6585603d2a33bf5a038
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ab53061a7880d5ba35c16203cffc7d6eb8e7b718
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794377"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392096"
 ---
 # <a name="create-alert-api"></a>CRÉER une API d’alerte
 
@@ -58,14 +58,14 @@ L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
-Application | Alerts.ReadWrite.All | « Lire et écrire toutes les alertes »
+Application | Alert.ReadWrite.All | « Lire et écrire toutes les alertes »
 Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et écrire des alertes »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Enquête sur les alertes » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -77,7 +77,7 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | String | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -87,12 +87,12 @@ Dans le corps de la demande, fournissons les valeurs suivantes (toutes sont obli
 Propriété | Type | Description
 :---|:---|:---
 eventTime | DateTime(UTC) | Heure précise de l’événement en tant que chaîne, tel qu’obtenu à partir d’un chasse avancée. Par exemple, ```2018-08-03T16:45:21.7115183Z``` **obligatoire**.
-reportId | Chaîne | ReportId de l’événement, tel qu’obtenu à partir d’un chasse avancée. **Obligatoire**.
-machineId | Chaîne | ID de l’appareil sur lequel l’événement a été identifié. **Obligatoire**.
-Sévérité  | Chaîne | Gravité de l’alerte. Les valeurs de propriété sont : « Low » (faible), « Medium » (moyen) et « High » (élevé). **Obligatoire**.
-title | Chaîne | Titre de l’alerte. **Obligatoire**.
-description | Chaîne | Description de l’alerte. **Obligatoire**.
-recommendedAction| Chaîne | Action recommandée par le responsable de la sécurité lors de l’analyse de l’alerte. **Obligatoire**.
+reportId | String | ReportId de l’événement, tel qu’obtenu à partir d’un chasse avancée. **Obligatoire**.
+machineId | String | ID de l’appareil sur lequel l’événement a été identifié. **Obligatoire**.
+Sévérité  | String | Gravité de l’alerte. Les valeurs de propriété sont : « Low » (faible), « Medium » (moyen) et « High » (élevé). **Obligatoire**.
+title | String | Titre de l’alerte. **Obligatoire**.
+description | String | Description de l’alerte. **Obligatoire**.
+recommendedAction| String | Action recommandée par le responsable de la sécurité lors de l’analyse de l’alerte. **Obligatoire**.
 category| String | Catégorie de l’alerte. Les valeurs de propriété sont : « General », « CommandAndControl », « Collection », « CredentialAccess », « DefenseEvasion », « Discovery », « Exfiltration », « Exploit », « Execution », « InitialAccess », « LateralMovement », « Malware », « Persistence », « PrivilegeEscalation », « Ransomware », « SuspiciousActivity » **Required**.
 
 ## <a name="response"></a>Réponse

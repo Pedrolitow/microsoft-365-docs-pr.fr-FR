@@ -1,6 +1,6 @@
 ---
 title: Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
-description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service Microsoft Defender for Endpoint.
+description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu’ils soient intégrés au service Microsoft Defender for Endpoint.
 keywords: configurer l’infrastructure VDI (Virtual Desktop Infrastructure), vdi, gestion des appareils, configurer Microsoft Defender pour les points de terminaison, points de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 1577b20cfa4f18a8db4fcba8d05a27bdacd693074ed3d14319101c6122cb443f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7e4d2d9813081785f3883c11a3a4ae8e8420855
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834106"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58378058"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>Intégration d’appareils d’infrastructure de bureau virtuel non persistants
 
@@ -35,7 +35,7 @@ ms.locfileid: "53834106"
 - Périphériques VDI (Virtual Desktop Infrastructure)
 - Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
@@ -73,9 +73,9 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
     1. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
-2. Copiez les fichiers du dossier WindowsDefenderATPOnboardingPackage extraits du fichier .zip dans l’image sous `golden/master` le chemin d’accès. `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 
+2. Copiez les fichiers du dossier WindowsDefenderATPOnboardingPackage extraits du fichier .zip dans l’image de premier plan sous le chemin `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` d’accès. 
 
-    1. Si vous n’implémentez pas une seule entrée pour chaque appareil, copiez WindowsDefenderATPOnboardingScript.cmd.
+    1. Si vous implémentez plusieurs entrées pour chaque appareil - une pour chaque session, copiez WindowsDefenderATPOnboardingScript.cmd.
 
     1. Si vous implémentez une entrée unique pour chaque appareil, copiez les fichiers Onboard-NonPersistentMachine.ps1 et WindowsDefenderATPOnboardingScript.cmd.
     
@@ -123,7 +123,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 7. Utilisez la fonction de recherche en entrant le nom de l’appareil et **sélectionnez Appareil** comme type de recherche.
 
 
-## <a name="for-downlevel-skus"></a>Pour les SSO de niveau bas
+## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>Pour les S SKUs de niveau bas (Windows Server 2008 R2/2012 R2/2016)
 
 > [!NOTE]
 > Le Registre suivant n’est pertinent que lorsque l’objectif est d’obtenir une entrée unique pour chaque appareil.
@@ -182,9 +182,9 @@ Si la maintenance hors connexion n’est pas une option viable pour votre enviro
     exit
     ```
 
-5. Resealez l’image de l’or/maître comme vous le feriez normalement.
+5. Resealez l’image de premier plan comme vous le feriez normalement.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)

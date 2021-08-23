@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3edacef44021211d82b1b7d8c477683185c87f00
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f94e4d5e51b6a846a0439e3833a01d252c51bd0a
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247610"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392133"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>Exécuter des commandes de réponse en direct sur un appareil
 
@@ -60,7 +60,9 @@ Exécute une séquence de commandes de réponse en direct sur un appareil
 
 5.  Les commandes de réponse en direct ne peuvent pas être mis en file d’attente et ne peuvent être exécutées qu’une par une. 
 
-6.  Plusieurs commandes de réponse en direct peuvent être exécutés sur un seul appel d’API. Toutefois, lorsqu’une commande de réponse en direct échoue, toutes les actions suivantes ne sont pas exécutées.
+6.  Si l’ordinateur que vous essayez d’exécuter cet appel d’API se trouve dans un groupe d’appareils RBAC qui ne lui a pas de niveau de correction automatisé, vous devez au moins activer le niveau de correction minimal pour un groupe d’appareils donné.
+
+7.  Plusieurs commandes de réponse en direct peuvent être exécutés sur un seul appel d’API. Toutefois, lorsqu’une commande de réponse en direct échoue, toutes les actions suivantes ne sont pas exécutées.
 
 ## <a name="minimum-requirements"></a>Conditions minimales requises
 
@@ -100,8 +102,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|String
-|Porteur\<token>\. Obligatoire.|
+|Autorisation|String|Porteur\<token>\. Obligatoire.|
 |Content-Type|string|application/json. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande
@@ -225,7 +226,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [API Obtenir l’action de l’ordinateur](get-machineaction-object.md)
 - [Obtenir le résultat de la réponse en direct](get-live-response-result.md)

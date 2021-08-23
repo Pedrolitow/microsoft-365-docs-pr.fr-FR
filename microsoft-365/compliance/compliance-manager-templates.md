@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment utiliser et gérer des modèles pour la création d’évaluations dans le Gestionnaire de conformité Microsoft. Créez et modifiez des modèles à l’aide d’un fichier Excel formaté.
-ms.openlocfilehash: 1b1bc9ea01905e38f695707db1b302c160ea5818
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: fe6b8a946edb84fbeb5eb002eb33c4af2790b23b
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349871"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393363"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Utiliser des modèles d’évaluation dans le Gestionnaire de conformité
 
-**Dans cet article :** Comprendre **le fonctionnement des modèles** et comment les **gérer** à partir de votre page de modèles d’évaluation. Obtenez des  instructions pour créer de  nouveaux modèles,  étendre et modifier des modèles existants, mettre en forme vos données de modèle avec **Excel** et exporter des rapports de **modèles.**
+**Dans cet article :** Comprendre **comment fonctionnent les modèles** et **comment les gérer** à partir de votre page de modèles d’évaluation. Obtenez des  instructions pour créer de  nouveaux modèles,  étendre et modifier des modèles existants, mettre en forme vos données de modèle avec **Excel** et exporter des rapports de **modèles.**
 
 > [!IMPORTANT]
 > Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Examinez les détails.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
@@ -41,7 +41,7 @@ Notez que les clients modérés, Cloud de la communauté du secteur public élev
 Il existe deux catégories de modèles dans le Gestionnaire de conformité : incluse et premium.
 
 1. **Les modèles inclus sont accordés** par votre licence du Gestionnaire de conformité et couvrent les principales réglementations et exigences. Pour en savoir plus sur les modèles disponibles dans le cadre de votre contrat de licence, consultez les [détails de la gestion des licences.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
-2. **Premium modèles supplémentaires** pour répondre à d’autres besoins et scénarios peuvent être obtenus par l’achat de licences de modèles.
+2. **Premium modèles supplémentaires** pour répondre à des besoins et scénarios supplémentaires peuvent être obtenus par l’achat de licences de modèles.
 
 Lorsque vous commencez à créer des évaluations, le Gestionnaire de conformité suit le nombre de modèles actifs afin de surveiller votre utilisation. Pour en savoir plus, [consultez les modèles actifs et inactifs.](compliance-manager-templates.md#active-and-inactive-templates)
 
@@ -49,13 +49,33 @@ Affichez [la liste complète des modèles disponibles](compliance-manager-templa
 
 ### <a name="purchase-premium-template-licenses"></a>Acheter des licences de modèle premium
 
-Les licences de modèle peuvent être achetées dans le Centre d’administration (en savoir plus sur les[abonnements, les licences et la facturation).](/microsoft-365/commerce/) Sélectionnez le nombre de licences que vous souhaitez acheter et votre plan de paiement. Vous pouvez également acquérir des licences par le biais de votre participation au [programme fournisseur de solutions Cloud licences](https://partner.microsoft.com/membership/cloud-solution-provider) [en volume ou en volume.](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)
+Les licences de modèle peuvent être obtenues par une ou plusieurs de ces méthodes, en fonction de votre contrat de licence du Gestionnaire de conformité. Une fois votre achat finalisé, les modèles doivent être disponibles dans votre client dans les 48 heures.
 
-Une fois votre achat finalisé, les modèles doivent être disponibles dans votre client dans les 48 heures.
+**Commercial et Cloud de la communauté du secteur public Modéré**
+
+Les comptes commerciaux et Cloud de la communauté du secteur public modérés peuvent acheter des licences de modèles dans le Centre d’administration (en savoir plus sur les[abonnements, les licences et la facturation).](/microsoft-365/commerce/) Sélectionnez le nombre de licences que vous souhaitez acheter et votre plan de paiement.
+
+Liens d’achat :
+
+- [Commerciale](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
+- [Cloud de la communauté du secteur public Modéré](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+
+Vous pouvez également acquérir des licences par le biais de votre participation au [programme fournisseur de solutions Cloud licences](https://partner.microsoft.com/membership/cloud-solution-provider) [en volume ou en volume.](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)
+
+**Cloud de la communauté du secteur public Comptes DOD et élevés**
+
+Cloud de la communauté du secteur public Les comptes DOD et élevés doivent acheter des licences de modèles par le biais [de licences en volume.](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)
 
 ### <a name="try-out-premium-templates"></a>Essayer des modèles Premium
 
-Pour tester des modèles premium avant d’effectuer un achat, vous pouvez également acquérir des versions d’essai des licences. Les licences d’essai sont valides pour 25 modèles au plus pendant 90 jours. Une fois que vous avez obtenu votre licence d’essai, les modèles doivent être disponibles dans votre client dans les 48 heures.
+Pour tester des modèles Premium avant d’effectuer un achat, vous pouvez également acquérir des versions d’essai des licences. Les licences d’essai sont valides pour 25 modèles au plus pendant 90 jours. Une fois que vous avez obtenu votre licence d’essai, les modèles doivent être disponibles dans votre client dans les 48 heures.
+
+Pour démarrer une version d’essai, choisissez le lien approprié pour votre organisation :
+
+- [Commerciale](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/e320704d-b7c9-4012-b6a6-0a2679790360)
+- [Cloud de la communauté du secteur public Modéré](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
+- [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
+- [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
 #### <a name="active-and-inactive-templates"></a>Modèles actifs et inactifs
 
@@ -124,7 +144,7 @@ Lorsque vous remplissez votre feuille de calcul avec des données de modèle, la
 
 - **controlDescription**: fournir une description du contrôle.
 
-- **controlActionTitle**: il s’agit du titre d’une action que vous souhaitez mettre en relation avec ce contrôle. Vous pouvez ajouter plusieurs actions en les séparant par deux points-virgules sans espace. Chaque contrôle que vous listez doit inclure au moins une action, et l’action doit exister (ce qui signifie que vous pouvez lister une action que vous avez répertoriée sous l’onglet **Actions** de la même feuille de calcul, une action qui existe dans un autre modèle ou une action créée par Microsoft). Différents contrôles peuvent faire référence à la même action.
+- **controlActionTitle**: il s’agit du titre d’une action que vous souhaitez mettre en relation avec ce contrôle. Vous pouvez ajouter plusieurs actions en les séparant par deux points-virgules sans espace. Chaque contrôle que vous listez doit inclure au moins une action et l’action doit exister (ce qui signifie que vous pouvez lister une action que vous avez répertoriée sous l’onglet **Actions** de la même feuille de calcul, une action qui existe dans un autre modèle ou une action créée par Microsoft). Différents contrôles peuvent faire référence à la même action.
 
 ##### <a name="actions-tab"></a>Onglet Actions
 
@@ -132,7 +152,7 @@ Lorsque vous remplissez votre feuille de calcul avec des données de modèle, la
 
 - **actionTitle**: il s’agit du titre de votre action et d’un champ obligatoire. Le titre que vous fournissez doit être unique. **Important**: si vous référencez une action que vous possédez qui existe déjà (par exemple dans un autre modèle) et que vous modifiez l’un de ses éléments dans les colonnes suivantes, ces modifications se propagent à la même action dans d’autres modèles.
 
-- **implementationType :** dans ce champ obligatoire, listez l’un des trois types d’implémentation ci-dessous :
+- **implementationType**: dans ce champ obligatoire, listez l’un des trois types d’implémentation ci-dessous :
     - **Opérationnel** : actions implémentées par les personnes et les processus pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes organisationnels, des ressources, des données et du personnel (exemple : sensibilisation et formation en matière de sécurité)
     - **Technique** : actions effectuées à l’aide de la technologie et des mécanismes contenus dans le matériel, les logiciels ou les composants du microprogramme du système d’information pour protéger la confidentialité, l’intégrité et la disponibilité des données et des systèmes organisationnels (exemple : authentification multifacteur)
     - **Documentation** : actions implémentées par le biais de stratégies et de procédures documentées établissant et définissant les contrôles requis pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes organisationnels, des biens, des données et du personnel (par exemple, une stratégie de sécurité des informations)
@@ -170,7 +190,7 @@ Seuls les utilisateurs qui détiennent un rôle d’administrateur général ou 
 2. Sélectionnez **Créer un modèle.** Un Assistant Création de modèle s’ouvre.
 3. Choisissez le type de modèle que vous souhaitez créer. Dans ce cas, **sélectionnez Créer un modèle personnalisé,** puis sélectionnez **Suivant.**
 4. Dans le **Télécharger** de fichiers,  sélectionnez Parcourir pour rechercher et télécharger votre fichier Excel formaté contenant toutes les données de modèle requises.
-5. S’il n’y a aucun problème avec votre fichier, le nom du fichier téléchargé s’affiche. Sélectionnez **Suivant** pour continuer. (Si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).**
+5. En l’absence de problème avec votre fichier, le nom du fichier téléchargé s’affiche. Sélectionnez **Suivant** pour continuer. (Si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).**
     - En cas d’erreur avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devez corriger votre fichier et le charger à nouveau. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou s’il existe des informations non valides dans certains champs.
 6. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, **sélectionnez Créer un modèle.** (Si vous devez apporter des modifications, sélectionnez **Retour.)**
 7. Le dernier écran confirme qu’un nouveau modèle a été créé. Sélectionnez **Terminé** pour quitter l’Assistant.
@@ -206,7 +226,7 @@ Après avoir formaté votre feuille de calcul, suivez les étapes ci-dessous.
 
 7. Dans le **Télécharger** de fichiers,  sélectionnez Parcourir pour rechercher et télécharger votre fichier Excel formaté contenant toutes les données de modèle requises.
 
-8. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. Sélectionnez Suivant pour continuer (si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).** 
+8. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. **Sélectionnez** Suivant pour continuer (si vous devez modifier le fichier, **sélectionnez Télécharger un autre fichier).**
 
     - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devrez corriger et charger à l’autre votre fichier. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou s’il existe des informations non valides dans certains champs.
 
@@ -230,7 +250,7 @@ Toutefois, vous devez connaître certains détails lorsque vous formatez votre f
 
 ### <a name="format-your-excel-file-to-modify-an-existing-template"></a>Mettre en forme Excel fichier pour modifier un modèle existant
 
-Dans la page **de vos modèles d’évaluation,** sélectionnez le modèle que vous souhaitez modifier, qui   fera monter sa page de détails. Ensuite, **sélectionnez Exporter Excel**. Un Excel avec toutes vos données de modèle sera téléchargé. Enregistrez le fichier sur votre ordinateur local.
+Dans la page **de vos modèles d’évaluation,** sélectionnez le modèle que vous souhaitez modifier, ce qui   fera monter sa page de détails. Ensuite, **sélectionnez Exporter Excel**. Un Excel avec toutes vos données de modèle sera téléchargé. Enregistrez le fichier sur votre ordinateur local.
 
 Pour travailler avec ce fichier, allez dans la section ci-dessous pour trouver rapidement les instructions dont vous avez besoin :
 
@@ -266,7 +286,7 @@ Si vous souhaitez modifier le nom d’une action d’amélioration, vous devez i
 3. Copiez le contenu de la colonne A et collez-le dans la colonne B. Cela place vos titres d’action d’amélioration existants, qui sont ce que vous souhaitez modifier, dans la colonne B.
 4. Dans la colonne A, **actionTitle**, supprimez l’ancien nom et remplacez-le par le nouveau nom de votre action d’amélioration.
 
-Notez que les titres d’action, à la fois pour vos actions d’amélioration et pour les actions Microsoft, doivent être écrits en anglais pour être reconnus lorsqu’ils sont référencés dans les contrôles.
+Notez que les titres d’action, à la fois pour vos actions d’amélioration et pour les actions Microsoft, doivent être écrits en anglais afin d’être reconnus lorsqu’ils sont référencés dans les contrôles.
 
 #### <a name="remove-an-improvement-action"></a>Supprimer une action d’amélioration
 
@@ -299,8 +319,8 @@ Une fois que Excel fichier est terminé et enregistré, suivez ces étapes.
 
 1. Ouvrez à nouveau la page du modèle d’évaluation et sélectionnez votre modèle. Sur la page de détails de votre modèle, **sélectionnez Modifier le modèle** pour lancer l’Assistant Modification.
 2. Dans le **Télécharger de fichier,** sélectionnez **Parcourir** pour rechercher et télécharger Excel fichier.
-3. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. Sélectionnez Suivant pour continuer (si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).** 
-    - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devez corriger votre fichier et le charger à nouveau. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou si certaines informations ne sont pas valides dans certains champs.
+3. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. **Sélectionnez** Suivant pour continuer (si vous devez modifier le fichier, **sélectionnez Télécharger un autre fichier).**
+    - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devez corriger votre fichier et le charger à nouveau. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou s’il existe des informations non valides dans certains champs.
 
 4. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant.**
 5. Le dernier écran confirme que le modèle a été modifié. Sélectionnez **Terminé** pour quitter l’Assistant.

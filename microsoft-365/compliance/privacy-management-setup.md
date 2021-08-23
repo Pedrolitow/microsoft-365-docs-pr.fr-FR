@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment configurer la gestion de la confidentialité pour votre organisation, définir des rôles et des autorisations et configurer des paramètres importants.
-ms.openlocfilehash: 63a6919b2aa4c368360414c683614d8bb4305fd0
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 2603a41fd4afb83c353854e5bed4c236138dd21d
+ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350039"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380211"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Prise en charge de la gestion de la confidentialité (aperçu)
 
@@ -29,7 +29,7 @@ Dans cet article : découvrez  comment configurer l’accès à  la gestion de l
 
 ## <a name="who-can-access-privacy-management"></a>Qui pouvez accéder à la gestion de la confidentialité
 
-La prévisualisation publique de la gestion de la confidentialité est disponible dans le Centre de conformité Microsoft 365 et est disponible pour les organisations ayant des licences E1, E3 et E5 entreprise dans Office 365 et Microsoft 365. Lorsque la gestion de la confidentialité passe à la disponibilité générale, les organisations qui ont utilisé la prévisualisation publique doivent obtenir une nouvelle licence.
+La prévisualisation publique de la gestion de la confidentialité est disponible dans le Centre de conformité Microsoft 365 et est disponible pour les organisations titulaires de licences E1, E3 et E5 entreprise dans Office 365 et Microsoft 365. Lorsque la gestion de la confidentialité passe à la disponibilité générale, les organisations qui ont utilisé la prévisualisation publique doivent obtenir une nouvelle licence.
 
 Pour obtenir des instructions détaillées sur les licences, consultez [instructions relatives aux licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
@@ -48,7 +48,7 @@ Après avoir obtenu votre abonnement, autorisez son activation pendant 30 minute
 
 ### <a name="accept-privacy-management-terms"></a>Accepter les conditions de gestion de la confidentialité
 
-Lorsque vous ouvrez la gestion de la confidentialité pour la première fois, vous êtes invité à confirmer que vous acceptez les termes et le processus d’évaluation des données personnelles (en[savoir plus).](privacy-management.md#how-we-evaluate-your-data) Vous pouvez consulter les liens fournis dans son intégralité avant de poursuivre. Une fois que vous êtes d’accord, la gestion de la confidentialité peut prendre jusqu’à 24 heures pour fournir des informations sur les données de votre organisation.
+Lorsque vous ouvrez la gestion de la confidentialité pour la première fois, vous êtes invité à confirmer que vous acceptez les termes et le processus d’évaluation des données personnelles (en[savoir plus).](privacy-management.md#where-privacy-management-identifies-personal-data) Vous pouvez consulter les liens fournis dans son intégralité avant de poursuivre. Une fois que vous êtes d’accord, la gestion de la confidentialité peut prendre jusqu’à 24 heures pour fournir des informations sur les données de votre organisation.
 
 Si vous ne devez pas détenir le rôle requis pour obtenir l’abonnement ou consentir aux conditions d’utilisation de la gestion de la confidentialité, vous serez invité à contacter votre administrateur global pour obtenir de l’aide.
 
@@ -62,7 +62,7 @@ Pour en savoir plus sur les groupes de rôles et sur la façon d’accorder l’
 
 ### <a name="manage-settings"></a>Gérer les paramètres
 
-La page Paramètres est accessible via la roulette d’engrenage dans le coin supérieur droit des pages principales de la gestion de la confidentialité. Il permet aux administrateurs de gestion de la confidentialité de configurer les propriétés essentielles dans la gestion de la confidentialité.
+La Paramètres page est accessible via la roulette d’engrenage dans le coin supérieur droit des pages principales de la gestion de la confidentialité. Il permet aux administrateurs de gestion de la confidentialité de configurer les propriétés essentielles dans la gestion de la confidentialité.
 
 Vous pouvez passer en revue la configuration par défaut et effectuer les ajustements souhaités avant de commencer. Pour en savoir plus sur vos options, voir [Gérer les paramètres de gestion de la confidentialité.](privacy-management-settings.md)
 
@@ -76,4 +76,4 @@ Pour en savoir plus sur ces pages, voir [Rechercher et visualiser vos données.]
 
 ## <a name="get-started-with-default-policies"></a>Mise en place des stratégies par défaut
 
-La gestion de la confidentialité vous aidera à lancer votre processus d’évaluation des données en créant trois stratégies avec des paramètres par défaut, à l’aide des modèles de réduction des données, de surexposation des données et de transferts de données. Ces stratégies sont en cours d’application par défaut, mais ne déclenchent pas automatiquement les messages de notification ou les invites de correction. Après votre configuration initiale, vous pouvez continuer à créer et personnaliser vos propres stratégies. Pour en savoir plus, voir [Créer et gérer des stratégies.](privacy-management-policies.md)
+La gestion de la confidentialité vous aidera à lancer votre processus d’évaluation des données en créant trois stratégies avec des paramètres par défaut, à l’aide des modèles de réduction des données, de surexposation des données et de transferts de données. Ces stratégies sont en cours d’application par défaut, mais ne déclenchent pas automatiquement les messages de notification ou les invites de correction. Après votre configuration initiale, vous pouvez continuer à créer et personnaliser vos propres stratégies. Pour plus d’informations, voir [Créer et gérer des stratégies.](privacy-management-policies.md)

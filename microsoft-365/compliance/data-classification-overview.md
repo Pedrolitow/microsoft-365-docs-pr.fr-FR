@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: c85129d13b836b8eab8b15fa5fcbbc3813d908e2c49f11ca70d887b283944370
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 367b37493b22074ca4d8006c8d8f8067c2b3d29b
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860873"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450115"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
@@ -53,8 +53,6 @@ La classification de données analyse votre contenu sensible et le contenu étiq
 
 ## <a name="prerequisites"></a>Configuration requise
 
-Un certain nombre d’abonnements différents prennent en charge le DLP du Point de Terminaison. Pour afficher les options d’acquisition de la licence du DLP du Point de Terminaison, consultez [ Acquisition de la licence de Protection de l’Information à titre indicatif](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
-
 ### <a name="permissions"></a>Autorisations
 
  Pour accéder à la page de classification de données, un compte doit être affecté à une appartenance dans l’un de ces rôles ou groupes de rôles.
@@ -64,7 +62,7 @@ Un certain nombre d’abonnements différents prennent en charge le DLP du Point
 - Administrateur général
 - Administrateur de conformité
 - Administrateur de sécurité
-- Administrateur des données de conformité
+- Administrateur de conformité des données
 
 > [!NOTE]
 > Il est recommandé de toujours utiliser le rôle avec le moins de privilèges pour garantir l’accès à la classification des données de Microsoft 365.
@@ -82,7 +80,7 @@ Pour déterminer le nombre d’éléments dans une catégorie de classification 
 ![détail de pointage des principaux types d’informations sensibles](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
-> Si la carte affiche le message « Aucune donnée détectée avec des informations sensibles ». Cela signifie qu’il n’y a aucun élément de votre organisation classifié comme étant un type d’informations sensibles ou aucun élément analysé. Pour commencer à utiliser les étiquettes, voir :
+> Si la carte affiche le message « Aucune donnée trouvée avec des informations sensibles », cela signifie qu’aucun élément de votre organisation n’a été classé comme étant un type d’informations sensibles ou qu’aucun élément n’a été analysé. Pour commencer à utiliser les étiquettes, voir :
 >- [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md)
 >- [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md)
 >- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
@@ -91,8 +89,8 @@ Pour déterminer le nombre d’éléments dans une catégorie de classification 
 
 Lorsque vous appliquez une étiquette de confidentialité à un élément via Microsoft 365 ou Azure information protection (AIP), deux événements se produisent :
 
-- une balise qui indique que la valeur de l’élément pour votre organisation est incorporée dans le document et qu’elle le suivra partout
-- la présence de la balise permet différents comportements de protection, tels que le filigrane ou le chiffrement obligatoires. Lorsque la protection de point de terminaison est activée, vous pouvez même empêcher un élément de quitter votre contrôle organisationnel.
+- Une balise qui indique que la valeur de l’élément pour votre organisation est incorporée dans le document et qu’elle le suivra partout.
+- La présence de la balise permet différents comportements de protection, tels que le filigrane ou le chiffrement obligatoires. Lorsque la protection de point de terminaison est activée, vous pouvez même empêcher un élément de quitter votre contrôle organisationnel.
 
 Pour plus d’informations sur les étiquettes de confidentialité, voir : [En savoir plus sur les étiquettes de confidentialité](sensitivity-labels.md).
 
@@ -133,6 +131,20 @@ L’objectif de la création de rapports sur la classification des données est 
 > [!NOTE]
 > Si cette carte affiche le message, « Aucun emplacement détecté », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de confidentialité ou qu’aucune étiquette de confidentialité n’a été appliquée à votre contenu. Pour commencer à utiliser les étiquettes de confidentialité, consultez :
 >- [Étiquettes de confidentialité](sensitivity-labels.md)
+
+## <a name="public-preview-release-notes"></a>Notes de publication de la préversion publique 
+
+> [!NOTE]
+> **Nombre de boîtes aux lettres Exchange**: vous remarquerez qu’une petite info-bulle s’affiche lorsque vous explorez les boîtes aux lettres Exchange. Il s'agit là d'évoquer le fait que le nombre agrégé affiché pour le type d’information sensible, l’étiquette de confidentialité et l’étiquette de rétention ne correspondent pas parfaitement au nombre d’éléments que vous trouverez dans la boîte aux lettres. Cela est dû au fait que l’exploration vers le bas dans le dossier extrait la vue dynamique du contenu, qui est classifié, tandis que le nombre agrégé est calculé. Informations que l’utilisateur doit remarquer même en cas d’écrémage
+
+> [!NOTE]
+> **Le rendu des documents chiffrés**: les fichiers SharePoint, Exchange et OneDrive chiffrés ne s’affichent pas dans l’Explorateur de contenu. Il s’agit d’un problème sensible qui nécessite un équilibre entre le besoin d'afficher le contenu de fichiers dans l’explorateur de contenu et la nécessité de conserver les contenus chiffrés. Avec les autorisations accordées par les groupes de rôles **Visionneuse de listes de l’Explorateur de contenu** et **Afficheur de contenu**, vous verrez une vue de liste des fichiers, des métadonnées de fichier et un lien que vous pouvez utiliser pour accéder au contenu via le client web. Informations que l’utilisateur doit remarquer même en cas d’écrémage
+
+> [!NOTE]
+> **Caractères pris en charge dans les noms d’étiquette de rétention dans la recherche SharePoint** : la recherche SharePoint ne prend pas en charge les noms d’étiquette de rétention avec `-`ou `_` . Par exemple, `Label-MIP` et `Label_MIP` ne sont pas pris en charge. La recherche SharePoint prend en charge ces caractères dans les noms d’étiquettes de confidentialité et les noms de type information sensible.
+
+> [!NOTE]
+> **OneDrive reste en préversion**: nous vous remercions pour vos précieux commentaires sur l’intégration de OneDrive pendant notre programme de préversion. À mesure que nous travaillons sur les détails, vous pouvez constater des données/flux incohérents. Nous continuerons à proposer OneDrive en préversion jusqu’à ce que tous les correctifs soient en place. Nous apprécions votre soutien constant.
 
 ## <a name="see-also"></a>Voir aussi
 

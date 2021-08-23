@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Vue d’ensemble du Scheduler pour Microsoft 365.
-ms.openlocfilehash: f7dd1fb05e2519a72538f5563396a509d44f826c4067ef2abc756eca0c1f2c85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 970d4a37c154e3049dcbd2f5987ff9055af6bbec
+ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898430"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380223"
 ---
 # <a name="welcome-to-scheduler-for-microsoft-365"></a>Bienvenue dans scheduler pour Microsoft 365
 
@@ -33,7 +33,7 @@ Scheduler :
 - Reprogramme ou annule les réunions réservées par Cortana.
 - Fonctionne à partir de n’importe quel appareil ayant accès à la messagerie électronique.
 
-## <a name="who-can-benefit-from-scheduler-for-microsoft-365"></a>Qui pouvez-vous bénéficier de Scheduler pour Microsoft 365 ?
+## <a name="who-can-benefit-from-scheduler-for-microsoft-365"></a>Qui pouvez-vous utiliser Scheduler pour Microsoft 365 ?
 
 Le programmeur s’occupe des tâches fastidieuses de planification des réunions afin que les utilisateurs se concentrent sur des choses plus importantes. 
 
@@ -43,7 +43,7 @@ Si vous organisez régulièrement de petites réunions avec moins de cinq partic
 
 Le programme de planification utilise une combinaison d’intelligence artificielle et d’intelligence humaine pour effectuer des demandes de planification reçues par Cortana (Cortana@yourdomain.com).  
 
-Pour utiliser scheduler, ajoutez l’adresse de messagerie Cortana à un e-mail avec les personnes que vous souhaitez rencontrer et demandez à Cortana de réserver une réunion en langage naturel. 
+Pour utiliser le Scheduler, ajoutez l’adresse de messagerie Cortana à un e-mail avec les personnes que vous souhaitez rencontrer et demandez à Cortana de réserver une réunion en langage naturel. 
 
 Dans votre demande, indiquez Cortana combien de temps et quand vous souhaitez vous réunir. Par exemple, **« Cortana, recherchez 45 minutes** pour nous réunir la semaine prochaine. »
 
@@ -52,3 +52,10 @@ Une fois qu’un utilisateur a envoyé une demande de réunion Cortana, le servi
 - Trouve un moment pour se réunir en fonction de la disponibilité de l’organisateur et des participants dans le même client.
 - Si l’organisateur n’a pas accès à la disponibilité des participants, Cortana négocier une heure pour rencontrer ces participants par courrier électronique. 
 - Une fois qu’une heure mutuellement acceptable a été trouvée, Cortana ajoute une réunion Teams et envoie les invitations de calendrier. 
+
+## <a name="pricing-and-licensing"></a>Tarification et gestion des licences
+
+En savoir plus : [Scheduler for Microsoft 365 licensing](https://wwww.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+
+>[Remarque : les participants à la réunion n’ont pas besoin d’une licence de planification Microsoft 365 licence. <br>La boîte aux lettres de l’Assistant Scheduler ne nécessite pas de licence Microsoft 365 ou scheduler.
+

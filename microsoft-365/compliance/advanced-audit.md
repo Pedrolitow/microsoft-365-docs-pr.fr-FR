@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 6fd9a7cbbc7db1062c22b77b1e64745e88853a13
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7671bcc99a0f1ab205312fe0aa6930255ae6cfa1
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255891"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58386995"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -55,9 +55,11 @@ Tous les enregistrements d’audit générés dans d’autres services qui ne so
 
 Vous pouvez également spécifier la durée de conservation des enregistrements d’audit qui correspondent à une stratégie et à un niveau de priorité pour que les stratégies spécifiques soient prioritaires sur les autres stratégies. Veuillez noter également que toute stratégie de rétention de journal d’audit personnalisée sera prioritaire sur la stratégie de rétention d’audit par défaut si vous devez retenir des enregistrements d’audit Exchange, SharePoint ou Azure Active Directory pendant moins d’un an (ou pendant 10 ans) pour certains ou tous les utilisateurs de votre organisation. Pour plus d’informations, voir [gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md).
 
-## <a name="access-to-crucial-events-for-investigations"></a>Accès aux événements essentiels lors d'enquêtes
+## <a name="advanced-audit-events"></a>Événements d’audit avancés
 
-L’audit avancé permet aux organisations de mener des investigations de conformité et d’audit en fournissant l’accès aux événements importants, tels que l’accès à des éléments de courrier, l’envoi de réponses à des éléments de courrier et leur transfert, ainsi que le moment et la recherche d’un utilisateur dans Exchange Online et SharePoint Online. Ces événements importants peuvent vous aider à identifier les violations possibles et déterminer l’étendue de la compromission.  L’ Audit Avancé fournit les événements importants suivants:
+L’audit avancé permet aux organisations de mener des investigations de conformité et d’audit en fournissant l’accès aux événements importants, tels que l’accès à des éléments de courrier, l’envoi de réponses à des éléments de courrier et leur transfert, ainsi que le moment et la recherche d’un utilisateur dans Exchange Online et SharePoint Online. Ces événements importants peuvent vous aider à identifier les violations possibles et déterminer l’étendue de la compromission.  Outre les événements essentiels dans Exchange et SharePoint, il existe des événements dans d’autres services Microsoft 365 qui sont considérés comme des événements essentiels et nécessitent une [licence d’audit avancée appropriée](auditing-solutions-overview.md#licensing-requirements) à enregistrer.
+
+L’ Audit Avancé fournit les événements importants suivants:
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -66,6 +68,8 @@ L’audit avancé permet aux organisations de mener des investigations de confor
 - [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
 - [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+- [Autres événements d’audit avancé dans Microsoft 365](#other-advanced-audit-events-in-microsoft-365)
 
 > [!NOTE]
 > <sup>*</sup> Pour l’instant, cet événement n’est pas disponible dans les environnements de secteur public Office 365 et Microsoft 365 GCC High et DoD..
@@ -131,7 +135,7 @@ Pour rechercher les enregistrements d’audit de SearchQueryInitiatedExchange, v
 Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 
 > [!NOTE]
-> Vous devez activer la journalisation de SearchQueryInitiatedExchange pour pouvoir rechercher cet événement dans le journal d'audit. Pour obtenir des instructions, consultez la section [Configurer l'audit avancé](set-up-advanced-audit.md#step-2-enable-crucial-events).
+> Vous devez activer la journalisation de SearchQueryInitiatedExchange pour pouvoir rechercher cet événement dans le journal d'audit. Pour obtenir des instructions, consultez la section [Configurer l'audit avancé](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -154,7 +158,19 @@ Pour rechercher les enregistrements d’audit SearchQueryInitiatedSharePoint, vo
 Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 
 > [!NOTE]
-> Vous devez activer la journalisation de SearchQueryInitiatedSharePoint pour pouvoir rechercher cet événement dans le journal d'audit. Pour obtenir des instructions, consultez la section [Configurer l'audit avancé](set-up-advanced-audit.md#step-2-enable-crucial-events).
+> Vous devez activer la journalisation de SearchQueryInitiatedSharePoint pour pouvoir rechercher cet événement dans le journal d'audit. Pour obtenir des instructions, consultez la section [Configurer l'audit avancé](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
+
+### <a name="other-advanced-audit-events-in-microsoft-365"></a>Autres événements d’audit avancé dans Microsoft 365
+
+Outre les événements essentiels dans Exchange Online et SharePoint Online, il existe des événements essentiels dans d’autres services Microsoft 365 qui sont consignés lorsque les utilisateurs reçoivent la licence d’audit avancée appropriée. Les services Microsoft 365 suivants fournissent des événements essentiels. Créez un lien vers le lien correspondant pour accéder à un article qui identifie et décrit ces événements.
+
+- [Microsoft Forms](search-the-audit-log-in-security-and-compliance.md#microsoft-forms-activities)
+
+- [Microsoft Stream (basé sur SharePoint)](/stream/audit-logs#actions-logged-in-stream)
+
+- [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities)
+
+- [Yammer](search-the-audit-log-in-security-and-compliance.md#yammer-activities)
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Accès haut débit à l’API Activité de gestion Office 365
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 93e76fb5730140d06f9805e91ecd1a175a4f7cfb
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: ba2c6e913b8768e0b905631a248435638db98939
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347143"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364504"
 ---
 # <a name="get-domain-statistics-api"></a>API Obtenir les statistiques de domaine
 
@@ -76,7 +76,7 @@ Autorisation|Porteur {token}. **Obligatoire**.
 
 Nom|Type|Description
 :---|:---|:---
-lookBackHours|Int32|Définit les heures que nous allons rechercher pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
+lookBackHours|Int32|Définit les heures pendant les recherches pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -84,7 +84,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si le domaine existe : 200 - OK, avec un objet statistiques dans le corps de la réponse. Si le domaine n’existe pas - 404 - In trouvé.
+En cas de réussite et si le domaine existe : 200 - OK, avec un objet statistiques dans le corps de la réponse. Si le domaine n’existe pas : 200 - OK avec une prévalence définie sur 0.
 
 ## <a name="example"></a>Exemple
 

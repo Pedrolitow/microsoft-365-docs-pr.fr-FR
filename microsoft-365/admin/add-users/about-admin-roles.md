@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur , tels que l’administrateur de service, correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 083c1586a522f74f87857311958a4d6082565268
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 3678a6221fc62a895bc7d2fbd97befe5a5aa6cb2
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347035"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393351"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 

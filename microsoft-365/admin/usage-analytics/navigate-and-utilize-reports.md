@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Découvrez comment afficher les rapports à l’aide d’onglets et de filtres de navigation.
-ms.openlocfilehash: 242a5f27c47fc1db0d807906f725201d2574712afe75ef421abf8848a334f2f5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8bf7d82b3c7ab8bab175da57a120ecf91e96e535
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901242"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400306"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Naviguer et utiliser les rapports dans Microsoft 365 analyse de l’utilisation
 
@@ -33,7 +33,7 @@ Le tableau de bord vous offre un aperçu rapide des principaux indicateurs d'uti
 
 Pour commencer à utiliser vos rapports, voici quelques conseils :
 
-- Utilisez les onglets de navigation à gauche ou sur une mesure associée dans la **page** Résumé exécutif pour accéder à chaque rapport de niveau supérieur.
+- Utilisez les onglets de navigation sur la gauche ou sur une mesure associée dans la **page** Résumé exécutif pour accéder à chaque rapport de niveau supérieur.
 
     ![Affiche les onglets de navigation sur la gauche](../../media/navigate-usage-analytics1.png)
 
@@ -61,7 +61,7 @@ L’utilisateur qui a insséré l’application de modèle aura la possibilité 
 
 - Créez vos propres éléments visuels à l'aide des [jeux de données](usage-analytics-data-model.md) sous-jacents.
 
-- Utilisez PowerBI Desktop pour accéder à vos propres sources de données.
+- Utilisez Power BI Desktop pour faire appel à vos propres sources de données.
 
 Pour partager vos rapports, sélectionnez simplement le bouton partager ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) en haut de la page.
 

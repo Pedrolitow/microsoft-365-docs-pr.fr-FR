@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0d76c34ae2c610933285f93e349459497de7cb79
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5b1221e47d3e34832ac798fa3be0a37d607c3975
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255524"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392131"
 ---
 #  <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
 
@@ -55,7 +55,7 @@ Récupère un résultat de commande de réponse en direct spécifique par son in
 
 Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
 
-- **Vérifiez que vous exécutez une version prise en charge de Windows**.
+- **Vérifiez que vous exécutez une version prise** en charge de Windows .
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
@@ -76,7 +76,8 @@ L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour
 
 |Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation|
 |---|---|---|
-|Application|Machine.LiveResponse|Exécuter une réponse en direct sur un ordinateur spécifique|
+Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
+Application|« Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
 |Déléguée (compte professionnel ou scolaire)|Machine.LiveResponse|Exécuter une réponse en direct sur un ordinateur spécifique|
 
 ## <a name="http-request"></a>Requête HTTP
@@ -90,8 +91,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|String
-|Porteur {token}. Obligatoire.|
+|Autorisation|String|Porteur {token}. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -147,7 +147,7 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [API Obtenir l’action de l’ordinateur](get-machineaction-object.md)
 - [Annuler l’action de l’ordinateur](cancel-machine-action.md)

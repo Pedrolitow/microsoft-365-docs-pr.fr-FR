@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: 20a7858e50a72073170be317b654de33804a5cb4
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 428211e890bcff816209b003566fc76072749bda
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357016"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58378000"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -120,7 +120,7 @@ Pour un exemple sur la façon dont une organisation multinationale fictive mais 
 
 ## <a name="additional-microsoft-365-products"></a>Autres produits Microsoft 365
 
-- [Microsoft 365 Business Premium](../business/index.yml)
+- [Microsoft 365 Business Premium](../admin/index.yml)
 
   Associer les meilleures capacités de productivité et de collaboration de leur catégorie à des solutions de gestion et de sécurité des appareils afin de protéger les données professionnelles des petites et moyennes entreprises.
 

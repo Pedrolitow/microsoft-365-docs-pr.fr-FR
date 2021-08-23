@@ -16,30 +16,29 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 836f3974da913dc27010cbc8d3162f35618e123e1c596dac42d9bf5e24863da3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7cfb066ec2eaf486a3cb3e708720436098bb01d0
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817206"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400234"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource Indicateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
-- Consultez la [page Indicateurs correspondante](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) dans le portail. 
+- Consultez la [page Indicateurs correspondante](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) dans le portail.
 
 Méthode|Type renvoyé|Description
 :---|:---|:---
@@ -52,23 +51,44 @@ Méthode|Type renvoyé|Description
 
 Propriété|Type|Description
 :---|:---|:---
-id|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md)
-indicatorValue|Chaîne|Valeur de [l’indicateur](ti-indicator.md).
+id|String|Identité de [l’entité Indicateur.](ti-indicator.md)
+indicatorValue|String|Valeur de [l’indicateur](ti-indicator.md).
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ».
-application|Chaîne|Application associée à l’indicateur.
+application|String|Application associée à l’indicateur.
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ».
 sourceType|Énum|« Utilisateur » au cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il a été envoyé à l’aide d’une application automatisée via l’API.
-source|string|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
+source|chaîne|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
 createdBy|String|Identité unique de l’utilisateur/de l’application qui a soumis l’indicateur.
-lastUpdatedBy|Chaîne|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
+lastUpdatedBy|String|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
 creationTimeDateTimeUtc|DateTimeOffset|Date et heure de création de l’indicateur.
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur.
 lastUpdateTime|DateTimeOffset|Dernière mise à jour de l’indicateur.
 Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ».
-title|Chaîne|Titre de l’indicateur.
-description|Chaîne|Description de l’indicateur.
-recommendedActions|Chaîne|Actions recommandées pour l’indicateur.
+title|String|Titre de l’indicateur.
+description|String|Description de l’indicateur.
+recommendedActions|String|Actions recommandées pour l’indicateur.
 rbacGroupNames|Liste des chaînes|Noms de groupes d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
+
+## <a name="public-preview-indicator-types"></a>Prévisualisation publique : types d’indicateurs
+
+> [!IMPORTANT]
+> Les informations de cette section **(prévisualisation publique** pour le moteur automatisé d’investigation et de correction) concernent les produits pré-publiés qui peuvent être considérablement modifiés avant leur commercialisation. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+
+Les types d’action d’indicateur pris en charge par l’API sont :
+
+- AlertAndBlock
+- Autoriser
+- Audit
+- Alerte
+- Avertir
+- BlockExecution
+- BlockRemdiation
+
+La liste API des types d’actions contient les nouvelles actions de réponse, ainsi que les actions de réponse précédentes (AlertAndBlock et Alert).
+
+> [!Note]
+>
+> Les actions de réponse précédentes (AlertAndBlock et Alert) sont supprimées lorsque la fonctionnalité a atteint GAed. La date de grâce estimée avec période de grâce est la fin d’octobre 2021.  Nous vous conseillons de mettre à jour les modèles ou les scripts existants dès que possible.
 
 ## <a name="json-representation"></a>Représentation Json
 

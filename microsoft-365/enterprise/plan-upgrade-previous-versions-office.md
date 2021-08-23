@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des ressources pour les utilisateurs qui utilisent Office 2007 ou Office 2010 pour les aider à planifier leur mise à niveau.
-ms.openlocfilehash: 1fbbf13f267f191f567f413dd777d12e43abc096
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 1e4379510ba6c4cf36200a6f49f56aa11a151140
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356899"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58378034"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
@@ -38,7 +38,7 @@ Utilisez les ressources de cet article pour commencer votre mise à niveau.
 
 ## <a name="what-is-microsoft-365"></a>Qu’est-ce que Microsoft 365 ?
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) est une combinaison d’applications Office innovantes, de services cloud intelligents et de sécurité de niveau mondial conçue pour vous aider à atteindre d’autres objectifs.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) est une combinaison d’applications Office innovantes, de services cloud intelligents et de sécurité de niveau mondial conçue pour vous aider à atteindre des objectifs plus élaborés.
 
 Microsoft 365 inclut les licences et fonctionnalités pour vous assurer que votre organisation travaille sur la dernière version Windows système d’exploitation. Il garantit également que vos appareils Windows, iOS et Android sont inscrits et sécurisés par des stratégies qui nécessitent l’authentification et la protection des données. En outre, Windows 10 logiciel client Microsoft 365 Apps pour Enterprise (précédemment nommé Office 365 ProPlus) est continuellement mis à jour pour inclure les dernières fonctionnalités et mises à jour de sécurité.
   
@@ -47,14 +47,14 @@ Microsoft 365 est la façon de transformer numériquement votre entreprise en am
 |Ressource|Description|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Obtenez des informations sur les versions de Microsoft 365.|
-|[documentation Microsoft 365 entreprise](../business/index.yml)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les petites et moyennes entreprises.|
+|[documentation Microsoft 365 entreprise](../admin/index.yml)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les petites et moyennes entreprises.|
 |[documentation Microsoft 365 éducation](/microsoft-365/education/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations éducatives.|
 |[Microsoft 365 documentation Enterprise documentation](./index.yml)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations d’entreprise.|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Que se passe-t-il si je ne suis pas mis à niveau ?
 
-Vous pouvez choisir de ne pas mettre à niveau pour le moment. Vos serveurs et applications locaux continueront de s’exécuter. Toutefois, lorsque vous ne recevez plus de mises à jour de sécurité ou d’options de support, votre organisation peut être vulnérable aux violations de sécurité. Nous vous recommandons vivement de planifier votre mise à niveau prochainement. Vous pouvez mettre à niveau vers Microsoft 365 ou vers des versions plus récentes de vos serveurs et applications locaux.
+Vous pouvez choisir de ne pas mettre à niveau pour le moment. Vos serveurs et applications locaux continueront de s’exécuter. Toutefois, lorsque vous ne recevez plus de mises à jour de sécurité ou d’options de support, votre organisation peut être vulnérable aux violations de sécurité. Nous vous recommandons vivement de planifier votre mise à niveau prochainement. Vous pouvez mettre à niveau Microsoft 365 ou vers des versions plus récentes de vos serveurs et applications locaux.
 
 ## <a name="what-upgrade-options-are-available"></a>Quelles options de mise à niveau sont disponibles ?      
 
@@ -97,7 +97,7 @@ Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options 
 
   La prise en charge Windows 7 [a pris fin le 14 janvier 2020.](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support) Les versions de Word, Excel, PowerPoint, Outlook, Publisher et Access fournies avec Office 365 Famille ou Office 365 Personnel et qui s’exécutent sur des appareils Windows 7 reçoivent des mises à jour de sécurité, mais pas des mises à jour de fonctionnalités. Pour continuer à recevoir des mises à jour de fonctionnalités pour ces applications, mettez à [niveau Windows 7](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)appareils vers Windows 10 .
     
-- **Achetez Office Famille &amp; Étudiant.** Si vous choisissez cette option, vous pouvez effectuer un achat à prix seul, puis installer Office sur Windows PC ou Mac. Cet achat n’est pas un abonnement . Il s’agit d’une licence à usage permanent pour un ordinateur. Affichez [les conditions](https://office.com/systemrequirements) requises, puis choisissez une version.
+- **Achetez Office Famille &amp; Étudiant.** Si vous choisissez cette option, vous pouvez effectuer un achat en une seule fois, puis installer Office sur votre PC Windows mac. Cet achat n’est pas un abonnement . Il s’agit d’une licence à usage permanent pour un ordinateur. Affichez [les conditions](https://office.com/systemrequirements) requises, puis choisissez une version.
 
   - Si votre PC Windows’exécute Windows 10, envisagez d’obtenir Office [Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
 
@@ -107,11 +107,11 @@ Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options 
 
 Si vous choisissez de ne pas mettre à niveau maintenant, vos applications Office continueront à s’exécuter conformément aux [chronologies.](https://support.microsoft.com/lifecycle/search/13615) Toutefois, pour obtenir des mises à jour de sécurité ou des fonctionnalités nouvelles et améliorées, vous devez mettre à niveau.
    
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Mettre à niveau des serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
 - [Mettre à niveau des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
   
 [Politique de cycle de vie Microsoft](/lifecycle/)
