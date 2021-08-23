@@ -18,17 +18,18 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - okr_smb
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenez l’Administration Microsoft 365 et apprenez à gérer votre organisation en ligne à partir de votre téléphone ou tablette.
-ms.openlocfilehash: c6990e8eed4a234c205b0a80b0a14faf18d0eeea6d607eb07b00682d17c40ab5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7e503b70f6263e0bf5e949c7ca18ccfe0eb31ffb
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827190"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394359"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>À propos de l’Microsoft 365 d’administration mobile
 
@@ -36,7 +37,7 @@ ms.locfileid: "53827190"
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Screenshot: Admin mobile app’s home page, displaying search, Message center, health, and quick links":::
 
-L’application d’administration dispose de nombreuses fonctionnalités qui vous permettent de gérer les Microsoft 365 à partir de votre appareil mobile ou tablette, lorsque vous ne pouvez pas vous rendre sur un ordinateur. Voici quelques-unes des tâches que vous pouvez effectuer à partir de l’application :
+L’application d’administration offre un grand nombre de fonctionnalités qui vous permettent de gérer les Microsoft 365 à partir de votre appareil mobile ou tablette, lorsque vous ne pouvez pas vous rendre sur un ordinateur. Voici quelques-unes des tâches que vous pouvez effectuer à partir de l’application :
 
 - **Gérer les utilisateurs et les appareils** Ajouter ou modifier un utilisateur, réinitialiser le mot de passe d’un utilisateur, attribuer un rôle, bloquer un utilisateur, supprimer un utilisateur, gérer l’alias, attribuer des licences, effacer les données de l’appareil, etc.
 - **Gérer les groupes** Ajoutez un groupe, ajoutez ou supprimez des utilisateurs de groupes.
@@ -120,7 +121,7 @@ Dans le menu de navigation de gauche, Paramètres  >  **notifications.** Vous po
 
 Envoyez [un feedback365@microsoft.com](mailto:feedback365@microsoft.com) pour signaler un problème avec l’application. Vous pouvez également nous faire part de vos commentaires au bas de cet article.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois que vous avez téléchargé l’appareil mobile de l’administrateur, vous pouvez ajouter des utilisateurs pour vous aider à démarrer.
   

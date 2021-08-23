@@ -15,19 +15,20 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
-description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles de votre organisation.
-ms.openlocfilehash: 54a10bf858fa1a1f06818c13116f20dcbbb40566
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+description: Basic Mobility and Security peut vous aider à sécuriser et gérer les appareils mobiles de votre organisation.
+ms.openlocfilehash: b532d8c189598db941f3ced4095b910cfc6f0668
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346891"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394323"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Gérer les appareils inscrits à la gestion des appareils mobiles dans Microsoft 365
 
-La gestion intégrée des appareils mobiles pour Microsoft 365 vous permet de sécuriser et de gérer les appareils mobiles de vos utilisateurs tels que les iPhone, iPad, Android et Windows mobiles. La première étape consiste à se Microsoft 365 et à configurer Basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
+La gestion intégrée des appareils mobiles pour Microsoft 365 vous permet de sécuriser et de gérer les appareils mobiles de vos utilisateurs tels que les iPhone, iPad, Android et Windows mobiles. La première étape consiste à vous Microsoft 365 et à configurer Basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
 
 Une fois que vous l’avez installé, les membres de votre organisation doivent inscrire leurs appareils dans le service. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md).Vous pouvez ensuite utiliser la mobilité et la sécurité de base pour vous aider à gérer les appareils de votre organisation. Par exemple, vous pouvez utiliser des stratégies de sécurité des appareils pour limiter l’accès à la messagerie ou à d’autres services, afficher les rapports des appareils et effacer à distance un appareil. En règle générale, vous allez au Centre de sécurité & conformité pour effectuer ces tâches. Pour plus d’informations, [voir Centre de conformité Microsoft 365](../../compliance/microsoft-365-compliance-center.md).
 

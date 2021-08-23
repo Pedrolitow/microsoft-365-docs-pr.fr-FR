@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les pages de sites de publication modernes et classiques dans SharePoint Online en limitant le nombre d’appels aux points de terminaison de service SharePoint Online.
-ms.openlocfilehash: 83a9fdaef8b5441955be7e7ebc8fc8553030892eebb7ddd8e518750e9cd26c0a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f06ec4027737f03d44c6a95a7faa74ff48d94548
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858534"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394671"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimiser les appels de page dans les pages de sites de publication modernes et classiques SharePoint Online
 
@@ -58,7 +58,7 @@ Si le résultat **Requêtes à SharePoint** apparaît dans la section **Attentio
 
 ## <a name="remediate-performance-issues-related-to-too-many-calls-on-a-page"></a>Résoudre les problèmes de performances liés à un trop grand nombre d’appels sur une page
 
-Si une page contient un trop grand nombre d’appels, vous pouvez utiliser la liste d’URL dans les résultats **Requêtes à SharePoint** pour déterminer s’il existe des appels répétés, des appels qui devraient être groupés ou des appels qui renvoient des données qui devraient être mises en cache.
+Si une page contient trop d’appels, vous pouvez utiliser la liste des URL dans les résultats Demandes à **SharePoint** pour déterminer s’il existe des appels répétés, des appels qui doivent être distribués par lots ou des appels qui retournent des données qui doivent être mises en cache.
 
 **Le traitement par lots des appels REST** permet de réduire la dégradation des performances. Pour plus d’informations sur le traitement par lots d’appels d’API, consultez [Effectuer des requêtes de lot avec les API REST](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis).
 

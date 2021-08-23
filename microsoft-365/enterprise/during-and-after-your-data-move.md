@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations de base qui se produisent lorsque Microsoft déplace les services et les données associées de votre client vers une nouvelle géo de centres de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10ea0e40a56c9f86d3563fca2e435d1a97b06fa6feb790591e40d41cafe94526
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d2c78ace4fb25d060ecaeab96903ba577a1d7316
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891294"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394395"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -71,7 +71,7 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
     
 - Office dans un navigateur
     
-- Applications Microsoft 365 for entreprise
+- Applications Microsoft 365 pour les grandes entreprises
     
 - Visio Pro pour Microsoft 365
     
@@ -118,7 +118,7 @@ Teams fichiers sont stockés dans SharePoint Online et Teams de conversation son
 
 Skype Entreprise déplacements ne sont plus disponibles.  [Skype Entreprise Online sera retiré](/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cette période, le service n’est plus accessible. 
   
-## <a name="related-topics"></a>Sujets connexes 
+## <a name="related-topics"></a>Voir aussi 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

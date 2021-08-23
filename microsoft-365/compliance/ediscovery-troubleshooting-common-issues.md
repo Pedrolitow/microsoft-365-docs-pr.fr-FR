@@ -19,16 +19,16 @@ ms.assetid: ''
 description: Découvrez les étapes de résolution des problèmes de base que vous pouvez suivre pour résoudre les problèmes courants dans Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ec120edcbccc64046b57507cd6cd6044fb583c5129c336e28890b67f369cd46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b4c5389ec650be18c9f65e7fc85f4166a8eef14
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820146"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394587"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, résoudre et résoudre les problèmes eDiscovery courants
 
-Cette rubrique traite des étapes de résolution des problèmes de base que vous pouvez effectuer pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus eDiscovery. La résolution de certains de ces scénarios nécessite l’aide du Support Microsoft. Les informations sur le moment où contacter le Support Microsoft sont incluses dans les étapes de résolution.
+Cette rubrique traite des étapes de dépannage de base que vous pouvez effectuer pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus eDiscovery. La résolution de certains de ces scénarios nécessite l’aide du Support Microsoft. Les informations sur le moment où contacter le Support Microsoft sont incluses dans les étapes de résolution.
 
 ## <a name="errorissue-ambiguous-location"></a>Erreur/problème : emplacement ambigu
 
@@ -56,7 +56,7 @@ Recherchez des utilisateurs en double ou une liste de distribution avec le même
 
 3. Si plusieurs utilisateurs sont renvoyés, recherchez et corrigez l’objet en conflit.
 
-## <a name="errorissue-search-fails-on-specific-locations"></a>Erreur/problème : la recherche échoue sur des emplacements spécifiques
+## <a name="errorissue-search-fails-on-specific-locations"></a>Erreur/problème : la recherche échoue à des emplacements spécifiques
 
 Une recherche de contenu ou eDiscovery peut produire l’erreur suivante : `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
@@ -80,7 +80,7 @@ Si vous recevez cette erreur, nous vous recommandons de vérifier les emplacemen
 
 ## <a name="errorissue-file-not-found"></a>Erreur/problème : fichier in trouvé
 
-Lors de l’exécution d’une recherche de découverte électronique qui inclut SharePoint Online et les emplacements One Drive for Business, vous pouvez recevoir l’erreur même si le fichier se trouve `File Not Found` sur le site. Cette erreur sera dans les avertissements d’exportation et errors.csv ou ignorée items.csv. Cela peut se produire si le fichier n’est pas trouvé sur le site ou si l’index n’est pas à jour. Voici le texte d’une erreur réelle (avec une accentuation ajoutée).
+Lors de l’exécution d’une recherche de découverte électronique qui inclut des emplacements SharePoint Online et OneDrive Entreprise, vous pouvez recevoir l’erreur même si le fichier se trouve `File Not Found` sur le site. Cette erreur sera dans les avertissements d’exportation et errors.csv ou ignorée items.csv. Cela peut se produire si le fichier n’est pas trouvé sur le site ou si l’index n’est pas à jour. Voici le texte d’une erreur réelle (avec une accentuation ajoutée).
 
 > 28.06.2019 10:02:19_FailedToExportItem_Failed télécharger du contenu. Informations de diagnostic supplémentaires : Microsoft. Office. Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document. ID de corrélation : 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode : -2147024894 ---> Microsoft. SharePoint. Client.ServerException : ***fichier in trouvé.*** chez Microsoft. SharePoint. Client.ClientRequest.ProcessResponseStream(Stream responseStream) chez Microsoft. SharePoint. Client.ClientRequest.ProcessResponse() --- fin de la trace de pile des exceptions internes ---
 
@@ -92,7 +92,7 @@ Lors de l’exécution d’une recherche de découverte électronique qui inclut
 
 ## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>Erreur/problème : ce fichier n’a pas été exporté car il n’existe plus. Le fichier a été inclus dans le nombre de résultats de recherche estimés, car il est toujours répertorié dans l’index. Le fichier sera finalement supprimé de l’index et ne provoquera pas d’erreur à l’avenir.
 
-Vous pouvez voir cette erreur lors de l’exécution d’une recherche eDiscovery qui inclut SharePoint Online et One Drive for Business. eDiscovery s’appuie sur l’index SPO pour identifier les emplacements de fichiers. Si le fichier a été supprimé mais que l’index SPO n’a pas encore été mis à jour, cette erreur peut se produire.
+Vous pouvez voir cette erreur lors de l’exécution d’une recherche de découverte électronique qui inclut SharePoint en ligne et OneDrive Entreprise emplacements. eDiscovery s’appuie sur l’index SPO pour identifier les emplacements de fichiers. Si le fichier a été supprimé mais que l’index SPO n’a pas encore été mis à jour, cette erreur peut se produire.
 
 ### <a name="resolution"></a>Résolution 
 Ouvrez l’emplacement SPO et vérifiez que ce fichier n’y est pas.
@@ -101,12 +101,11 @@ La solution suggérée consiste à réindexer manuellement le site ou à attendr
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Erreur/problème : ce résultat de recherche n’a pas été téléchargé car il s’agit d’un dossier ou d’un autre artefact qui ne peut pas être téléchargé seul, tous les éléments du dossier ou de la bibliothèque seront téléchargés.
 
-Vous pouvez voir cette erreur lors de l’exécution d’une recherche eDiscovery qui inclut SharePoint Online et One Drive for Business. Cela signifie que nous allions essayer d’exporter l’élément signalé dans l’index, mais qu’il s’est traduit par un dossier afin de ne pas l’exporter. Comme mentionné dans l’erreur, nous n’exportons pas les éléments de dossier, mais nous exportons leur contenu.
-
+Vous pouvez voir cette erreur lors de l’exécution d’une recherche de découverte électronique qui inclut SharePoint en ligne et OneDrive Entreprise emplacements. Cela signifie que nous allions essayer d’exporter l’élément signalé dans l’index, mais qu’il s’est traduit par un dossier, donc nous ne l’avons pas exporté. Comme mentionné dans l’erreur, nous n’exportons pas les éléments de dossier, mais nous exportons leur contenu.
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Erreur/problème : la recherche échoue car le destinataire est in trouvé
 
-Une recherche eDiscovery échoue avec l’erreur « `recipient not found` . Cette erreur peut se produire si l’objet utilisateur est in Exchange Online Protection (EOP) car l’objet n’a pas été synchronisé.
+Une recherche eDiscovery échoue avec l’erreur . `recipient not found` Cette erreur peut se produire si l’objet utilisateur est in Exchange Online Protection (EOP) car l’objet n’a pas été synchronisé.
 
 ### <a name="resolution"></a>Résolution
 
@@ -122,7 +121,7 @@ Une recherche eDiscovery échoue avec l’erreur « `recipient not found` . Cett
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>Erreur/problème : l’exportation des résultats de recherche est lente
 
-Lors de l’exportation des résultats de recherche à partir de core eDiscovery ou de recherche de contenu dans le Centre de conformité Microsoft 365, le téléchargement prend plus de temps que prévu.  Vous pouvez vérifier la quantité de données à télécharger et éventuellement augmenter la vitesse d’exportation.
+Lors de l’exportation des résultats de recherche à partir de core eDiscovery ou de recherche de contenu dans le Centre de conformité Microsoft 365, le téléchargement prend plus de temps que prévu.  Vous pouvez vérifier la quantité de données à télécharger et éventuellement augmenter la vitesse d’exportation.
 
 ### <a name="resolution"></a>Résolution
 
@@ -148,11 +147,11 @@ Lors de l’exportation des résultats de recherche à partir de core eDiscovery
 
 ## <a name="errorissue-export-process-not-progressing-or-is-stuck"></a>Erreur/problème : le processus d’exportation n’est pas en cours ou est bloqué
 
-Lors de l’exportation des résultats de recherche à partir de core eDiscovery ou de recherche de contenu dans le Centre de conformité Microsoft 365, le processus d’exportation n’est pas en cours ou semble bloqué.
+Lors de l’exportation des résultats de recherche à partir de core eDiscovery ou de recherche de contenu dans le Centre de conformité Microsoft 365, le processus d’exportation n’est pas en cours ou semble bloqué.
 
 ### <a name="resolution"></a>Résolution
 
-1. Si nécessaire, réexécutez la recherche. Si la recherche a été réexécutée pour la dernière fois il y a plus de 7 jours, vous devez réexécuter la recherche.
+1. Si nécessaire, réexécutez la recherche. Si la recherche a été réexécutée pour la dernière fois il y a plus de sept jours, vous devez réexécuter la recherche.
 
 2. Redémarrez l’exportation.
 
@@ -247,3 +246,32 @@ Il s’agit d’un problème côté client. Pour y remédier, suivez les étapes
 6. Si les étapes précédentes ne fonctionnent pas, désactivez la fermeture à la tiret et la déplication.
 
 7. Si cela fonctionne, le problème est dû à un scanneur antivirus local ou à un problème de disque.
+
+## <a name="error-your-request-cant-be-started-because-the-maximum-number-of-jobs-for-your-organization-are-currently-running"></a>Erreur : « Votre demande ne peut pas être démarrée car le nombre maximal de travaux de votre organisation est en cours d’exécution »
+
+Votre organisation a atteint la limite du nombre maximal de travaux d’exportation simultanés. Toutes les nouvelles tâches d’exportation sont limitées.
+
+### <a name="resolution"></a>Résolution
+
+Exécutez le script suivant pour découvrir combien de travaux d’exportation qui ont été démarrés au cours des sept derniers jours sont toujours en cours d’exécution.
+
+1. Connecter au [Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+
+2. Exécutez le script suivant pour collectionr des informations sur les tâches d’exportation en cours qui déclenchent la limitation :
+
+   ```powershell
+   $date = Get-Date;
+   $exports = Get-ComplianceSearchAction -Export -ResultSize Unlimited;
+   $inprogressExports = $exports | ?{$_.Results -eq $null -or (!$_.Results.Contains("Export status: Completed") -and !$_.Results.Contains("Export status: none"))};
+   $exportJobsRunning = $inprogressExports | ?{$_.JobStartTime -ge $date.AddDays(-7)} | Sort-Object JobStartTime -Descending;
+   ```
+
+3. Exécutez la commande suivante pour afficher la liste des travaux d’exportation en cours d’exécution :
+
+   ```powershell
+   $exportJobsRunning | Format-Table Name, JobStartTime, JobEndTime, Status | More;
+   ```
+
+   Si la commande précédente renvoie au moins 10 travaux d’exportation, votre organisation a atteint la limite du nombre de travaux d’exportation simultanés. Pour plus d’informations, voir [Limites pour la recherche eDiscovery.](limits-for-content-search.md)
+
+4. Attendez que les travaux d’exportation existants terminent ou suppriment les travaux d’exportation qui ne sont plus nécessaires à l’aide de la cmdlet [Remove-ComplianceSearchAction.](/powershell/module/exchange/remove-compliancesearchaction)

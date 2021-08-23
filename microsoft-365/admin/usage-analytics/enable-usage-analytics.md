@@ -16,22 +16,23 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application Microsoft 365 d’analyse de l’utilisation dans Power BI.
-ms.openlocfilehash: b8101733b125c869d55c0e9cc00f1ec598bed08f
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 4d569c40283eb7f88c734de91821e1fe7a7793ab
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347227"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394635"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
-Microsoft 365'analyse de l’utilisation n’est pas encore disponible pour Microsoft 365 gouvernement américain Community.
+Pour activer Microsoft 365'analyse de l’utilisation dans un client Microsoft 365 US Cloud de la communauté du secteur public (Cloud de la communauté du secteur public), voir [Connecter to Microsoft 365 Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) data with Usage Analytics](connect-to-gcc-data-with-usage-analytics.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -61,7 +62,7 @@ Pour plus [d’informations, voir](../add-users/about-admin-roles.md) les rôles
 
 3. Dans le panneau Rapports qui s’ouvre, définissez Rendre les données de rapport disponibles Microsoft 365 **l’analyse** de l’utilisation Power BI sur **Sur** \> **enregistrer**.
 
-Le processus de collecte de données se terminera en 2 à 48 heures en fonction de la taille de votre client. Le **bouton Go to Power BI** est activé (plus gris) lorsque la collecte de données est terminée.
+Le processus de collecte de données se terminera dans deux à 48 heures en fonction de la taille de votre client. Le **bouton Go to Power BI** est activé (plus gris) lorsque la collecte de données est terminée.
 
 ## <a name="start-the-template-app"></a>Démarrer l’application de modèle
 
@@ -85,9 +86,9 @@ Pour démarrer l’application de modèle, vous devez être un administrateur **
 
     ![Choisir un compte Microsoft comme méthode d’authentification](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
-8. Une fois l’application de modèle ins Microsoft 365 le tableau de bord d’analyse de l’utilisation sera disponible Power BI sur le web. Le chargement initial du tableau de bord prend entre 2 et 30 minutes.
+8. Une fois le modèle d’application ins Microsoft 365 le tableau de bord d’analyse de l’utilisation sera disponible Power BI sur le web. Le chargement initial du tableau de bord prendra entre 2 et 30 minutes.
 
-Les agrégats au niveau du client seront disponibles dans tous les rapports après l’avoir choisi. Les détails au niveau de l’utilisateur ne seront disponibles que le 5 du mois calendaire suivant **après l’avoir choisi.** Cela aura un impact sur [](navigate-and-utilize-reports.md) tous les rapports sous Activité de l’utilisateur (voir Naviguer et utiliser les rapports dans Microsoft 365'analyse de l’utilisation pour obtenir des conseils sur la façon d’afficher et d’utiliser ces rapports).
+Les agrégats au niveau du client seront disponibles dans tous les rapports après l’avoir choisi. Les détails au niveau de l’utilisateur ne seront disponibles qu’autour du 5 du mois calendaire suivant **après l’avoir choisi.** Cela aura un impact sur [](navigate-and-utilize-reports.md) tous les rapports sous Activité de l’utilisateur (voir Naviguer et utiliser les rapports dans Microsoft 365'analyse de l’utilisation pour obtenir des conseils sur la façon d’afficher et d’utiliser ces rapports).
 
 ## <a name="make-the-collected-data-anonymous"></a>Anonymiser les données collectées
 

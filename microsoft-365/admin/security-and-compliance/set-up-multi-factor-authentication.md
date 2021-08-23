@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multi-facteurs pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 08f1d17942b1fb11dd9717e96045fd0b32b2422b
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 39d9eb7aa25ac721fb7c39535404790e2af214e6
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346063"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394647"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multi-facteurs.
 
@@ -45,6 +46,14 @@ Basé sur votre compréhension de [l’authentification multi-facteurs (MFA) et 
 - Si l’authentification multifacteur par utilisateur héritée est activée, [Désactivez l'authentification multifacteur par utilisateur héritée](#turn-off-legacy-per-user-mfa).
 - Si vous avez des clients Office 2013 sur des appareils Windows, [activer l’authentification moderne pour les clients Office 2013](./enable-modern-authentication.md).
 - Avancé : si vous avez des services d’annuaire tiers avec les services de fédération Active Directory (AD FS), configurez le serveur Microsoft Azure Multi-Factor Authentication. Consultez [scénarios avancés avec Azure Active Directory Multifactor Authentication et les solutions VPN tierces](/azure/active-directory/authentication/howto-mfaserver-nps-vpn) pour plus d’informations.
+
+### <a name="turn-off-legacy-per-user-mfa"></a>Désactiver l’authentification multifacteur par utilisateur héritée
+
+Si vous avez déjà activé l’authentification multifacteur (MFA) par utilisateur, vous devez désactiver cette fonctionnalité avant d’activer les paramètres de Sécurité par défaut.
+
+1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation gauche, sélectionnez **Utilisateurs** \> **Utilisateurs actifs**.
+1. Sur la page **Utilisateurs actifs**, sélectionnez **Authentification multifacteur**.
+1. Sur la page d'authentification multifacteur, sélectionnez chaque utilisateur et définissez son état d'authentification multifacteur sur **Désactivé**.
 
 ## <a name="turn-security-defaults-on-or-off"></a>Activer ou désactiver les paramètres de sécurité par défaut
 
@@ -89,6 +98,7 @@ Pour la plupart des abonnements, l’authentification moderne est automatiquemen
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, dans le menu de gauche, sélectionnez **Paramètres** \> **Paramètres d’organisation**.
 2. Sous l’onglet **Services**, sélectionnez **Authentification moderne**, puis, dans le volet **Authentification moderne**, assurez-vous que l’option **Activer l’authentification moderne** est sélectionnée. Sélectionnez **Save Changes (Enregistrer les modifications)**.
 
+
 ### <a name="turn-off-legacy-per-user-mfa"></a>Désactiver l’authentification multifacteur par utilisateur héritée
 
 Si vous avez déjà activé l’authentification multifacteur (MFA) par utilisateur, vous devez désactiver cette fonctionnalité avant d’activer les paramètres de Sécurité par défaut.
@@ -106,5 +116,8 @@ Si vous avez déjà activé l’authentification multifacteur (MFA) par utilisat
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Activer l’authentification multi-facteurs](../../business-video/turn-on-mfa.md) (vidéo)\
-[Activer l’authentification multi-facteurs sur votre téléphone](../../business-video/set-up-mfa.md) (vidéo)
+
+[Activer l’authentification multifacteur](../../business-video/turn-on-mfa.md) (vidéo)
+
+[Activer l’authentification multifacteur sur votre téléphone](../../business-video/set-up-mfa.md) (vidéo)
+

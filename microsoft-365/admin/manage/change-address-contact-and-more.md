@@ -17,15 +17,16 @@ ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
-description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
+description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et le courrier électronique.
 ms.date: 03/30/2021
-ms.openlocfilehash: 303435376c7ae2211d27e10da9b9d56246121707a15ad26d91f01b1d31bf8f40
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a7a2b8ee10c37b315e14504eae67672c34f79f08
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825438"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394491"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
   

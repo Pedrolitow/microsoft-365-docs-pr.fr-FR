@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Cet article décrit les sites d’options de navigation avec SharePoint publication activée dans SharePoint Online.
-ms.openlocfilehash: 4cb0406fc9f4d1496cb28282427c38f83c3ea1eac31aecbf6e33f7247660be2a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38e72811eca6487a862beb8b1d197186783d3c48
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904990"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394659"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
@@ -39,7 +39,7 @@ Cet article décrit les sites d’options de navigation avec SharePoint publicat
 
 La configuration du fournisseur de navigation peut avoir un impact significatif sur les performances de l’ensemble du site, et il est important de prendre en compte le choix d’un fournisseur de navigation et d’une configuration qui s’dimensionnent efficacement pour les besoins d’un site SharePoint. Il existe deux fournisseurs de navigation pré-personnalisés, ainsi que des implémentations de navigation personnalisées.
 
-La première option, la [**navigation**](#using-structural-navigation-in-sharepoint-online)structurelle, est l’option de navigation recommandée dans SharePoint Online pour les sites Sharepoint classiques, si vous allumez la mise en cache de navigation structurelle pour **votre site.** Ce fournisseur de navigation affiche les éléments de navigation sous le site actuel, et éventuellement le site actuel et ses frères. Il offre des fonctionnalités supplémentaires telles que le trimming de sécurité et l’éumération de la structure du site. Si la mise en cache est désactivée, cela a un impact négatif sur les performances et l’évolutivité, et peut être soumis à une limitation.
+La première option, la [**navigation**](#using-structural-navigation-in-sharepoint-online)structurelle, est l’option de navigation recommandée dans SharePoint Online pour les sites SharePoint classiques, si vous allumez la mise en cache de navigation structurelle pour **votre site.** Ce fournisseur de navigation affiche les éléments de navigation sous le site actuel, et éventuellement le site actuel et ses frères. Il offre des fonctionnalités supplémentaires telles que le trimming de sécurité et l’éumération de la structure du site. Si la mise en cache est désactivée, cela a un impact négatif sur les performances et l’évolutivité, et peut être soumis à une limitation.
 
 La deuxième option, [**navigation gérée (métadonnées),**](#using-managed-navigation-and-metadata-in-sharepoint-online)représente les éléments de navigation à l’aide d’un ensemble de termes métadonnées gérées. Nous vous recommandons de désactiver le contrôle de sécurité, sauf si cela est nécessaire. Le trimming de sécurité est activé en tant que paramètre sécurisé par défaut pour ce fournisseur de navigation . toutefois, de nombreux sites ne nécessitent pas la surcharge du contrôle de sécurité, car les éléments de navigation sont souvent cohérents pour tous les utilisateurs du site. Avec la configuration recommandée pour désactiver le trimming de sécurité, ce fournisseur de navigation ne nécessite pas d’éumerating la structure du site et est hautement évolutif avec un impact acceptable sur les performances.
 
@@ -101,7 +101,7 @@ De nombreux sites ne nécessitent pas de contrôle de sécurité, car la structu
 
 Il existe plusieurs articles sur docs.microsoft.com sur les détails de la navigation gérée. Par exemple, voir [Vue d’ensemble de la navigation gérée dans SharePoint Server.](/sharepoint/administration/overview-of-managed-navigation)
 
-Pour implémenter la navigation gérée, vous devez configurer des termes avec des URL correspondant à la structure de navigation du site. La navigation gérée peut même être organisée manuellement pour remplacer la navigation structurelle dans de nombreux cas. Par exemple :
+Pour implémenter la navigation gérée, vous devez configurer des termes avec des URL correspondant à la structure de navigation du site. La navigation gérée peut même être organisée manuellement pour remplacer la navigation structurelle dans de nombreux cas. Par exemple :
 
 ![SharePoint Structure de site en ligne](../media/SPONavOptionsListOfSites.png))
 
@@ -543,8 +543,8 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 
 ```
   
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
-[Vue d'ensemble de la navigation gérée dans SharePoint Server](/sharepoint/administration/overview-of-managed-navigation)
+[Vue d’ensemble de la navigation gérée dans SharePoint Server](/sharepoint/administration/overview-of-managed-navigation)
 
 [Mise en cache et performances de navigation structurelle](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)

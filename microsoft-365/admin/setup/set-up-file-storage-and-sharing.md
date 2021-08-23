@@ -22,6 +22,7 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -30,12 +31,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers dans Microsoft 365.
-ms.openlocfilehash: 33a339c8757e6a6e26625c45e30401ba2870c54118db3f2324e239be58caa8b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8fac85da0b6416fe846bf5eb35ffb0761b26ad21
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821663"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394731"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurer le partage et le stockage de fichiers dans Microsoft 365
 
@@ -60,7 +61,7 @@ Tant OneDrive que les sites d'équipe vous offrent ainsi qu'à vos employés un 
 Voici quelques recommandations relatives aux éléments à stocker dans les divers emplacements lorsque vous utilisez à la fois OneDrive et des sites d'équipe :<br/>
 
   
-|Emplacement de stockage|Qu’est-ce que c’est ?|Éléments à stocker ici|
+|Emplacement de stockage|À quoi cela s’agit-il ?|Éléments à stocker ici|
 |:-----|:-----|:-----|
 |**OneDrive** |Le stockage de contenu sur OneDrive est similaire au stockage de fichiers sur votre ordinateur. Nul autre que vous ne peut y accéder aisément.<br/> Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Qu’est-ce que OneDrive Entreprise ?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Fichiers professionnels n’impliquant pas la collaboration des autres membres de votre équipe ou ne nécessitant pas leur accès régulier.<br/> |
 |**Sites d’équipe SharePoint** <br/> |Collaboration. Lorsque vous créez un groupe Microsoft 365 (par exemple dans le Centre d'administration de Microsoft 365, dans Outlook ou en créant une équipe dans Microsoft Teams), le programme crée un site d’équipe SharePoint. De même, lorsque vous créez un site d’équipe SharePoint depuis la page d’accueil de SharePoint ou depuis le nouveau Centre d’administration SharePoint, le programme crée un également groupe Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter les rubriques [Qu’est-ce qu’un site d’équipe SharePoint ?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) et [Créer un site d’équipe dans SharePoint Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |Fichiers à propriété partagée. Nous vous recommandons de séparer les sites d’équipe de chaque unité de travail de votre organisation. Par exemple, pour rendre les documents personnels et financiers consultables uniquement pour une petite équipe, créez un site d’équipe séparé.  <br/> |

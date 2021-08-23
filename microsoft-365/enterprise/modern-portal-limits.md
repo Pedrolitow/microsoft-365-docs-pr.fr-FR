@@ -18,13 +18,13 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid:
 - MET150
-description: Découvrez les recommandations en matière de performances pour les sites modernes dans SharePoint Online, telles que la limitation des appels vers SharePoint et les points de terminaison externes.
-ms.openlocfilehash: 6ae0ab89d0b940d41ee2f8056d4cdaf35f7c957784a315612413cb37fd219c58
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Découvrez les recommandations en matière de performances pour les sites modernes dans SharePoint Online, telles que la limitation des appels aux SharePoint et aux points de terminaison externes.
+ms.openlocfilehash: 3a7a25d4e14b1e38e28f0e6b6817be3f1b0d4791
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899210"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394803"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Limites du site portail moderne en ligne
 
@@ -48,7 +48,7 @@ Bon nombre des instructions de cet article se concentrent sur la réduction et l
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>Recommandations et limites des sites portail modernes
 
-|**Limite**|**Valeur maximale recommandée**|**Notes**|
+|**Limite**|**Valeur maximale recommandée**|**Remarques**|
 |:-----|:-----|:-----|:-----|
 |Pages et éléments d’actualité  <br/> |5 000 par site  <br/> |Nous vous recommandons de limiter le nombre de pages et d’éléments d’actualités dans un site portail moderne à moins de 5 000.  <br/> |
 |Composants Web Parts sur une page  <br/> |20 par page  <br/> |Nous vous recommandons d’utiliser au moins 20 composants Web Part par page, y compris les composants Web Parts Microsoft pré-personnalisés et les composants Web Part personnalisés. <br/> Pour plus d’informations, voir Optimiser les performances du SharePoint sites modernes [en ligne.](modern-web-part-optimization.md)  <br/> |
@@ -61,7 +61,7 @@ Bon nombre des instructions de cet article se concentrent sur la réduction et l
 |Appels vers le service UPA  <br/> |1 par utilisateur et par heure  <br/> |Nous vous recommandons de ne pas effectuer d’appels _par demande_ au service UPA (User Profile Application). [L’API Microsoft Graph et](/graph/call-api) [PageContext](/javascript/api/sp-page-context/pagecontext) peuvent être utilisés pour interroger des informations utilisateur.  <br/> Si un appel de service UPA est nécessaire, appelez le cas échéant un seul appel, puis cachez les informations à réutiliser dans la même session. |
 |Appels au service de taxonomie  <br/> |5 par utilisateur et par heure  <br/> |Nous vous recommandons de ne pas effectuer _d’appels par demande_ au service de taxonomie. Si des appels de service de taxonomie sont nécessaires, mettre en cache les informations à réutiliser dans la même session. <br/> Pour plus d’informations, voir Optimiser les appels de page dans SharePoint online des pages de site de publication modernes [et classiques.](modern-page-call-optimization.md) <br/> |
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Création d’un portail SharePoint sain](/sharepoint/portal-health)
 

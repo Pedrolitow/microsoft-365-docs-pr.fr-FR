@@ -11,18 +11,20 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
 - M365-subscription-management
-ms.custom: AdminTemplateSet
+ms.custom:
+- AdminTemplateSet
+- admindeeplinkMAC
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Une erreur **Boîte aux lettres introuvable pour** signifie que le compte que vous avez utilisé pour vous connecter à Outlook sur le web ne possède pas de licence Exchange Online.
-ms.openlocfilehash: e7808f550b41c63d0a2602f9977b86d8bf9a2b45158856298ad191a851a9b575
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a7c5201ac5e1e6a381d6512d46a28b526d7a0b50
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823914"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394431"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>Obtention d'une erreur « boîte aux lettres introuvable » dans Outlook sur le web ?
 

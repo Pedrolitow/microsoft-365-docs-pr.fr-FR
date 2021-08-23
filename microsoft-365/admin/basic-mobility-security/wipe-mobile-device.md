@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: Utilisez la mobilité et la sécurité de base intégrées pour supprimer des informations des appareils inscrits.
-ms.openlocfilehash: e8e5f9327a2145bcaaa5415e4d269de5ae351d2500838f5b2c972418041c218a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d9c31a037dfce1ad2a13cce8b384ebdbcc5164b9
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826581"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394311"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Effacement d’un appareil mobile dans Basic Mobility and Security
 
@@ -33,7 +34,7 @@ Vous pouvez utiliser la mobilité et la sécurité de base intégrées pour Micr
 
 Les appareils mobiles peuvent stocker des informations organisationnelles sensibles et fournir l’accès aux ressources Microsoft 365 de votre organisation. Pour protéger les informations de votre organisation, vous pouvez réinitialiser ou supprimer des données d’entreprise aux usine :
 
-- **Réinitialisation** d’usine : supprime toutes les données sur l’appareil mobile d’un utilisateur, y compris les applications installées, les photos et les informations personnelles. Une fois l’effacement terminé, l’appareil est rétabli à ses paramètres d’usine.
+- **Réinitialisation** aux usine : supprime toutes les données sur l’appareil mobile d’un utilisateur, y compris les applications installées, les photos et les informations personnelles. Une fois l’effacement terminé, l’appareil est rétabli à ses paramètres d’usine.
 
 - **Supprimer des données d’entreprise**: supprime uniquement les données de l’organisation et laisse les applications installées, les photos et les informations personnelles sur l’appareil mobile d’un utilisateur.
 

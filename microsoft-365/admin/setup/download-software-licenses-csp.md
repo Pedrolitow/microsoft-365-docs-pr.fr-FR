@@ -17,14 +17,15 @@ search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
+- admindeeplinkMAC
 description: Découvrez comment télécharger les clés de licence logicielle et de produit pour les logiciels perpétuelles achetés via le programme fournisseur de solutions Cloud (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: 7ab5cfef9ae5e17ae2ab34fff05ed482e9dd7a859f9ab72132e9bfc6264bea59
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dd2e17685746859768a14d61537871a75fe6698
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821986"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394683"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Télécharger les clés de licence de produit et de logiciel perpétuelle
 
@@ -37,7 +38,7 @@ Vous devez être un administrateur global pour suivre les étapes de cet article
 ## <a name="download-software-and-product-license-keys"></a>Télécharger les clés de licence de produit et de logiciel
 
 1. Dans le Centre d’administration Microsoft 365, accédez à la page **Factures** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Sous **l’onglet** Produits, dans la section **Logiciel,** sélectionnez le logiciel à télécharger.
+2. Sous **l’onglet** Produits, dans la section **Logiciels,** sélectionnez le logiciel à télécharger.
 3. Dans la page détails de l’abonnement, dans la section **Téléchargements &** clés, choisissez la **version** du **produit,** la langue et le type de fichier **&** processeur, puis sélectionnez **Télécharger**.
 4. Pour télécharger la clé, **sélectionnez Copier la clé dans le Presse-papiers.**
 5. Dans le volet droit, **sélectionnez Copier,** puis fermez le volet.

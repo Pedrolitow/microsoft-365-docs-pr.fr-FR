@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Découvrez comment créer et supprimer Microsoft 365 groupes, ajouter et supprimer des membres du groupe et personnaliser le fonctionnement du groupe.
-ms.openlocfilehash: 07546d32c8bd55ae1548b8f690d046e6b319bf87
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 76131f434b3c4210578fe44ff7dd4e435f1fbe6b
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346867"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394383"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Créer un groupe dans le Centre d’administration Microsoft 365
   
@@ -43,7 +44,7 @@ Bien que les utilisateurs peuvent créer un groupe Microsoft 365 à partir de Ou
 
 2. Sélectionnez **Ajouter un groupe.**
   
-3. Dans la page **Choisir un type de groupe,** **sélectionnez Office 365,** puis sélectionnez **Suivant**.
+3. Dans la page **Choisir un type de groupe,** **sélectionnez Office 365**, puis sélectionnez **Suivant**.
 
 4. Dans la page **Informations de** base, tapez un nom pour le groupe et, éventuellement, une description. Sélectionnez **Suivant**.
     
@@ -81,12 +82,12 @@ Un membre peut supprimer une conversation par courrier électronique de la boît
   
 Lorsqu’un message électronique est supprimé de la boîte aux lettres de groupe, il n’est supprimé d’aucune des boîtes aux lettres personnelles des membres du groupe.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Après avoir créé un groupe et ajouté des membres, vous pouvez configurer davantage votre groupe, par exemple en modifiant le nom ou la description du groupe, en modifiant les propriétaires ou les membres, et en spécifiant si les expéditeurs externes peuvent envoyer par e-mail le groupe et s’il faut envoyer des copies des conversations de groupe aux membres. Pour [plus d’informations, voir Microsoft 365 groupe](manage-groups.md) de gestion.
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Gérer l’accès invité Microsoft 365 groupes de travail](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (article)\
+[Gérer l’accès invité Microsoft 365 groupes de gestion](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (article)\
 [Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md) (article)\
 [Mettre à niveau les listes de distribution Microsoft 365 groupes de distribution](../manage/upgrade-distribution-lists.md) (article)

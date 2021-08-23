@@ -18,14 +18,14 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: Trouvez des informations et des ressources à mettre à niveau SharePoint 2010 et Sharepoint Server 2010. Le support pour les deux se termine le 13 avril 2021.
+description: Trouvez des informations et des ressources à mettre à niveau depuis SharePoint 2010 et SharePoint Server 2010. Le support pour les deux se termine le 13 avril 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 67b8174aa23027b64132cc4676e2e7bfb5675cd1deb4684d18945d58b5cf63ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f0919bd80b68167ccfae38a461c79b704e2b803
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848153"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394515"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à jour à jour de SharePoint 2010
 
@@ -60,7 +60,7 @@ Cette matrice vous aide à tracer un cours parmi les options de migration :
 
 |Produit de fin de support|Bonne |Idéale|
 |---|---|---|
-|SharePoint Server 2010|SharePoint Server 2013 (local)|SharePoint Online|
+|SharePoint Server 2010|SharePoint Server 2013 (local)|SharePoint Online|
 ||SharePoint Server 2013 hybride avec SharePoint Online|SharePoint Server 2016 (local)|
 |||SharePoint Recherche hybride sur le cloud|
 
@@ -116,7 +116,7 @@ Si vous mettez à niveau vers SharePoint Server 2013 ou SharePoint Server 2016 e
 |Microsoft applique des correctifs, des correctifs et des mises à jour au matériel et aux logiciels sous-jacents, notamment SQL serveurs sur lesquels SharePoint Online s’exécute.|Étant donné qu’il n’y a pas d’accès au système de fichiers sous-jacent dans le service, la personnalisation est limitée.|
 |Microsoft publie des [contrats de niveau de service](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) et se déplace rapidement pour résoudre les incidents au niveau du service.|Les options de sauvegarde et de restauration et d’autres options de récupération sont automatisées par le service dans SharePoint Online. Les sauvegardes sont écrasées si elles ne sont pas utilisées.|
 |Les tests de sécurité et l’optimisation des performances du serveur sont effectués en continu dans le service par Microsoft.|Les modifications apportées à l’interface utilisateur et aux autres fonctionnalités SharePoint sont installées par le service et peuvent avoir besoin d’être togged ou off.|
-|Microsoft 365 répond à de nombreuses normes du secteur : [offres de conformité Microsoft](/compliance/regulatory/offering-home).|[L’assistance FastTrack](https://go.microsoft.com/fwlink/?linkid=518597) pour la migration est limitée.  <br/> La majeure partie de la mise à niveau sera manuelle ou via l’API de migration SPO décrite dans SharePoint Online et OneDrive feuille de route [du contenu de migration.](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)|
+|Microsoft 365 répond à de nombreuses normes du secteur : [offres de conformité Microsoft](/compliance/regulatory/offering-home).|[FastTrack’aide](https://go.microsoft.com/fwlink/?linkid=518597) à la migration est limitée.  <br/> La majeure partie de la mise à niveau sera manuelle ou via l’API de migration SPO décrite dans SharePoint Online et OneDrive feuille de route [du contenu de migration.](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)|
 |Les ingénieurs du support Microsoft et les employés du centre de données n’ont pas un accès administrateur illimité à votre abonnement.|Il peut y avoir des coûts supplémentaires si l’infrastructure matérielle doit être mise à niveau pour prendre en charge la nouvelle version de SharePoint ou si une batterie secondaire est requise pour la mise à niveau.|
 |Les fournisseurs de solutions peuvent vous aider à migrer vos données vers SharePoint Online.|Les modifications apportées à SharePoint Online ne sont pas toutes dans votre contrôle. Après la migration, les différences de conception dans les menus, les bibliothèques et d’autres fonctionnalités peuvent temporairement affecter l’utilisation.|
 |Les produits en ligne sont mis à jour automatiquement dans l’ensemble du service. Les fonctionnalités peuvent se déprécier, mais il n’y a pas de véritable fin de cycle de vie du support.|Il existe un cycle de vie de fin de support pour SharePoint Server ou SharePoint Foundation, ainsi que pour les serveurs SQL sous-jacents.|
@@ -183,7 +183,7 @@ N’oubliez pas de vous familiariser avec les types d’hybrides existants et de
 
 |Option|Description|
 |---|---|
-|[Offres de conformité Microsoft](/compliance/regulatory/offering-home).|[L’assistance FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) pour la migration est limitée.<br/><br/> La majeure partie de la mise à niveau sera manuelle ou via l’API de migration SPO décrite dans SharePoint Online et OneDrive feuille de route [du contenu de migration.](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)|
+|[Offres de conformité Microsoft](/compliance/regulatory/offering-home).|[FastTrack’aide](https://www.microsoft.com/fasttrack/microsoft-365) à la migration est limitée.<br/><br/> La majeure partie de la mise à niveau sera manuelle ou via l’API de migration SPO décrite dans SharePoint Online et OneDrive feuille de route [du contenu de migration.](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)|
 |Les ingénieurs du support Microsoft et les employés du centre de données n’ont pas un accès administrateur illimité à votre abonnement.|Il peut y avoir des coûts supplémentaires si l’infrastructure matérielle doit être mise à niveau pour prendre en charge la nouvelle version de SharePoint, ou si une batterie secondaire est requise.|
 |Les partenaires peuvent vous aider à migrer vos données vers SharePoint Online.||
 |Les produits en ligne sont mis à jour automatiquement dans l’ensemble du service. Les fonctionnalités peuvent se déprécier, mais il n’y a pas de véritable fin de prise en charge.||

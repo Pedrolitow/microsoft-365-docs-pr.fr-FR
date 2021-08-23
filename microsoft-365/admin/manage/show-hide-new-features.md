@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Choisissez les fonctionnalités Office à afficher ou masquer lorsqu’un utilisateur choisit Aide > Nouveautés de son application Office sur Windows à l’aide de la fonctionnalité « Nouveautés de Office » dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 22801436a4502dd27e9b290080bcb6f1936550ac
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 31506f05054d6ee98eae0e1f075618d866d3934c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346255"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394443"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Gérer les fonctionnalités Office’affiche dans Nouveautés
 
@@ -43,7 +45,7 @@ Vous pouvez contrôler les messages de fonctionnalité affichés par vos utilisa
 1. Lorsque vous cliquez sur le nom de la fonctionnalité, un panneau volant apparaît avec les informations suivantes :
      - Brève description de la fonctionnalité.
      - Lien vers un article pour en savoir plus sur la fonctionnalité.
-     - Le Office applications dans qui la fonctionnalité apparaît.
+     - Les Office applications dans qui la fonctionnalité apparaît.
      - La première version (publication) dans qui la fonctionnalité est disponible pour ce canal.
 1. Choose **Hide from users**. Ou, si vous avez précédemment caché la fonctionnalité, choisissez **Afficher aux utilisateurs.**
 
@@ -59,7 +61,7 @@ Vous pouvez également sélectionner plusieurs fonctionnalités dans la page Gé
 
 Vous pouvez filtrer les fonctionnalités qui apparaissent dans la page Gérer les Office **qui apparaissent dans la** page Nouveautés. Vous pouvez filtrer par canal, application ou état, ou par combinaison d’entre eux.
 
-De nouvelles fonctionnalités apparaissent sur la page selon la planification suivante :
+De nouvelles fonctionnalités apparaissent sur la page en fonction de la planification suivante :
 
 <br>
 

@@ -12,17 +12,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
 - FRP150
 description: Découvrez les nouveaux noms d Microsoft 365'abonnement.
-ms.openlocfilehash: 2885a4c7dc30cb9431b4389f30e5a0d443cf0f62
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: f08e3f6395d97dd5f0f54665d247c474db2556b6
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346039"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394419"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 est désormais Microsoft 365
 

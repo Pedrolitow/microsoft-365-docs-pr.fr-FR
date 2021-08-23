@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Affichez vos applications.
-ms.openlocfilehash: b711610461ec02a4e3174557f77fc0d553afd124ae13a96d858a2ae353e4a554
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9e67f5115e715f804cf91d95c24760a25fdf869c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886991"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394527"
 ---
 # <a name="view-your-apps"></a>Afficher vos applications
 
@@ -74,7 +74,7 @@ Le volet détails de l’application fournit des informations supplémentaires s
 | Nom de l’onglet | Description |
 |:-------|:-----|
 | Détails | Consultez des données supplémentaires sur l’application, telles que la date du premier consentement et l’ID d’application. Pour afficher les propriétés de l’application telles qu’inscrites dans Azure AD, sélectionnez **Afficher l’application dans Azure AD**. |
-| Utilisation |Consultez les données auxquelles l’application accède dans le locataire et tracez l’utilisation des données pour les ressources Sharepoint et Exchange. |
+| Utilisation |Consultez les données auxquelles l’application accède dans le client et tracez l’utilisation des données pour les ressources SharePoint et Exchange. |
 | Utilisateurs | Consultez la liste des utilisateurs qui utilisent l’application, s’il s’agit d’un compte prioritaire et la quantité de données téléchargées et chargées. |
 | Autorisations | Consultez un résumé des autorisations accordées et utilisées par l’application, ainsi que la liste des autorisations spécifiques. Pour plus d’informations, consultez la [référence des autorisations Microsoft Graph](/graph/permissions-reference). |
 |||

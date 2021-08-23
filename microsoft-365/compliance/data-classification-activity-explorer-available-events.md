@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: liste des activités d’étiquetage disponibles dans l’Explorateur d’activités.
-ms.openlocfilehash: 5816bb897705e25ebf85b7f97df786cf2331bfb2
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 163231d4d1e7c6a2d1b75c0f81a17443cfafe246
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255679"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394563"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Activités d’étiquetage disponibles dans l’Explorateur d’activités
 
@@ -45,7 +45,7 @@ Cet événement est généré chaque fois qu’un document non étiqueté est é
 |Client unifié Azure Information Protection (AIP) et scanneur unifié AIP |oui |l’action nouvelle *étiquette* AIP est mappée sur l’étiquette *appliquée dans* l’Explorateur d’activités   |
 |SDK Protection des données Microsoft (MIP)         |oui|l’action nouvelle *étiquette* AIP est mappée sur l’étiquette *appliquée dans* l’Explorateur d’activités|
 |Rights Management Service (RMS)         |non applicable         | |
-|Power BI bureau et web        | Non| accessibles dans les journaux Microsoft 365 audit         |
+|Power BI bureau et web        | Non| accessible dans les journaux Microsoft 365 audit         |
 |Microsoft Cloud App Security (MCAS)         |Non|         |
 
 ## <a name="sensitivity-label-changed"></a>Étiquette de sensibilité modifiée
@@ -63,14 +63,14 @@ Cet événement est généré chaque fois qu’une étiquette de niveau de sensi
 |Source  |Signalé dans l’Explorateur d’activités|Remarque  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |oui         |
-|Outlook         |Oui         |
+|Outlook         |oui         |
 |SharePoint En ligne, OneDrive         |oui         |
 |Exchange         |oui         |
 |Client unifié AIP         |oui         |
-|Scanneur unifié AIP         |Oui         |
+|Scanneur unifié AIP         |oui         |
 |MIP SDK         |oui         |
 |Service RMS         |non applicable         |
-|Power BI bureau et Web         |Non         |accessibles dans les journaux Microsoft 365 audit |
+|Power BI bureau et Web         |Non         |accessible dans les journaux Microsoft 365 audit |
 |MCAS     |Non         |         |
 
 ## <a name="sensitivity-label-removed"></a>Étiquette de sensibilité supprimée
@@ -91,7 +91,7 @@ Cet événement est généré chaque fois qu’une étiquette de niveau de sensi
 |Scanneur unifié AIP         |oui         |L’action supprimer *l’étiquette* AIP est mappée sur *l’action* supprimée d’étiquette dans l’Explorateur d’activités |
 |MIP SDK         |oui         |L’action supprimer *l’étiquette* AIP est mappée sur *l’action* supprimée d’étiquette dans l’Explorateur d’activités |
 |Service RMS         |non applicable         |
-|Power BI bureau et Web         |Non         |accessibles dans les journaux Microsoft 365 audit |
+|Power BI bureau et Web         |Non         |accessible dans les journaux Microsoft 365 audit |
 |MCAS     |Non         |         |
  
 
@@ -106,16 +106,16 @@ Cet événement est généré chaque fois qu’un document protégé ou étiquet
 |SharePoint En ligne, OneDrive         |Non         |
 |Exchange         |Non         |
 |Client unifié AIP         |oui         |l’action *d’accès* AIP est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités|
-|Scanneur unifié AIP         |Oui         |l’action *d’accès* AIP est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités|
-|MIP SDK         |Oui         |l’action *d’accès* AIP est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités|
+|Scanneur unifié AIP         |oui         |l’action *d’accès* AIP est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités|
+|MIP SDK         |oui         |l’action *d’accès* AIP est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités|
 |Service RMS         |oui         |*l’action d’accès* est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités |
-|Power BI bureau et Web         |Non         |accessible dans les journaux Microsoft 365 audit |
+|Power BI bureau et Web         |Non         |accessibles dans les journaux Microsoft 365 audit |
 |MCAS     |Non         |         |
 
 
 ## <a name="files-discovered"></a>Fichiers découverts
 
-Cet événement est généré chaque fois que des fichiers sont détectés lorsque le scanneur AIP est utilisé pour analyser des données sensibles à différents emplacements et trouve des fichiers.
+Cet événement est généré chaque fois que des fichiers sont découverts lorsque le scanneur AIP est utilisé pour analyser des données sensibles à différents emplacements et trouve des fichiers.
 
 |Source  |Signalé dans l’Explorateur d’activités | Remarque  |
 |---------|---------|---------| 
@@ -124,7 +124,7 @@ Cet événement est généré chaque fois que des fichiers sont détectés lorsq
 |SharePoint En ligne, OneDrive         |non applicable         |
 |Exchange         |non applicable         |
 |Client unifié AIP         |non applicable       |
-|Scanneur unifié AIP         |oui         |l’action de *découverte* AIP est mappée sur les *fichiers détectés* dans l’Explorateur d’activités|
+|Scanneur unifié AIP         |oui         |l’action de *découverte* AIP est mappée sur les *fichiers détectés* dans l’explorateur d’activités|
 |MIP SDK         |oui         |L’action de *découverte* AIP est mappée sur l’action *de fichier découverte* dans l’Explorateur d’activités|
 |Service RMS         |non applicable         |
 |Power BI bureau et Web         |non applicable         |
@@ -168,7 +168,7 @@ Cet événement est généré chaque fois que le scanneur AIP détecte qu’un f
 
 ### <a name="protection-applied"></a>Protection appliquée
 
-Cet événement est généré la première fois que la protection est ajoutée manuellement à un élément qui n’a pas d’étiquette.
+Cet événement est généré, la protection pour la première fois est ajoutée manuellement à un élément qui n’a pas d’étiquette.
 
 |Source  |Signalé dans l’Explorateur d’activités | Remarque  |
 |---------|---------|---------| 
@@ -178,7 +178,7 @@ Cet événement est généré la première fois que la protection est ajoutée m
 |Exchange         |Non       |
 |Client unifié AIP         |oui            |
 |Scanneur unifié AIP         |non applicable         |
-|MIP SDK         |Oui            |
+|MIP SDK         |oui            |
 |Service RMS         |non applicable         |
 |Power BI bureau et Web         |non applicable            |
 |MCAS     |non applicable        |         |
@@ -223,8 +223,8 @@ Cet événement est généré chaque fois qu’une stratégie DLP est en corresp
 
 |Source  |Signalé dans l’Explorateur d’activités |
 |---------|---------| 
-|Exchange         |Oui       |
-|SharePoint Online|Oui          |
+|Exchange         |oui       |
+|SharePoint Online|oui          |
 |OneDrive |oui|
 |Teams |oui   |
 |appareils Windows 10         |oui |
@@ -232,7 +232,7 @@ Cet événement est généré chaque fois qu’une stratégie DLP est en corresp
 |local         |Non|
 |MCAS     |Non        | 
 
-Les événements pour Windows 10 périphériques de terminaison (point de terminaison DLP) sont :
+Les événements pour Windows 10 périphériques de terminaison (DLP de point de terminaison) sont les :
 
 - fichier supprimé
 - fichier créé
@@ -254,7 +254,7 @@ Cet événement est généré chaque fois qu’un document non étiqueté est é
 |Source  |Signalé dans l’Explorateur d’activités |
 |---------|---------| 
 |Exchange         |Non       |
-|SharePoint Online|Oui          |
+|SharePoint Online|oui          |
 |OneDrive |oui|
 
 ## <a name="retention-label-changed"></a>Étiquette de rétention modifiée
@@ -279,13 +279,13 @@ Cet événement est généré chaque fois qu’une étiquette est supprimée d�
 |---------|---------| 
 |Exchange         |Non       |
 |SharePoint Online|oui          |
-|OneDrive |Oui|
+|OneDrive |oui|
 
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
   
-- Lorsque l’info-conseil d’outil d’étiquette recommandée est affichée à un utilisateur final, elle n’est pas capturée. Toutefois, si l’utilisateur choisit d’appliquer l’étiquette recommandée, l’étiquette s’affiche sous le champ Comment *appliquer* comme *recommandé*  
+- Lorsque l’info-conseil d’outil d’étiquette recommandée est affichée à un utilisateur final, elle n’est pas capturée. Toutefois, si l’utilisateur choisit d’appliquer l’étiquette  recommandée, l’étiquette s’affiche sous le champ Application *recommandée*  
 
-- Le texte de justification n’est actuellement pas disponible lors de la rétrogradation des étiquettes de niveau de sensibilité à partir de SharePoint et OneDrive.  
+- Le texte de justification n’est actuellement pas disponible lors de la rétrogradation des étiquettes de niveau de SharePoint et OneDrive.  
 
 - Les types d’informations sensibles ne sont actuellement pas disponibles pour les activités d’élisage automatique à partir de Word, Excel, PowerPoint et Outlook, ainsi que de SharePoint Online et OneDrive.

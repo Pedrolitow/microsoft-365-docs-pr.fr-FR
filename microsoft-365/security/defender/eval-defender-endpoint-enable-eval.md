@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 88506e546cc359a3cdf042c8661fcc54b217d6d4
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: af66b41af4d4d427988bf46d266329777d3a908c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255448"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394695"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Activer Microsoft Defender pour l’environnement d’évaluation des points de terminaison
 
@@ -54,7 +54,7 @@ Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle 
 
    ![Image de la page de gestion des licences Azure](../../media/defender/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder au Centre d’administration pour accéder **aux**  >  **abonnements de facturation.**
+1. Vous pouvez également accéder aux abonnements de facturation dans le Centre  >  **d’administration.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 
@@ -64,7 +64,9 @@ Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle 
 
 Après avoir vérifié que l’état de la licence a été correctement mis en service, vous pouvez commencer à intégrer des appareils au service. 
 
-Dans le but d’évaluer Microsoft Defender pour endpoint, nous vous recommandons de choisir quelques appareils Windows 10 pour effectuer l’évaluation. 
+Dans le but d’évaluer Microsoft Defender pour endpoint, nous vous recommandons de choisir quelques appareils Windows 10 pour effectuer l’évaluation.
+
+Vous pouvez choisir d’utiliser n’importe quel outil de gestion pris en charge, mais Intune offre une intégration optimale. Pour plus d’informations, [voir Configurer Microsoft Defender pour le point](/mem/intune/protect/advanced-threat-protection-configure.md#enable-microsoft-defender-for-endpoint-in-intune) de terminaison dans Microsoft Intune
 
 La [rubrique Planifier le](../defender-endpoint/deployment-strategy.md) déploiement décrit les étapes générales à suivre pour déployer Defender pour Endpoint.  
 

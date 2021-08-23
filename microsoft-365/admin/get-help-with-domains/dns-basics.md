@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Le système de nom de domaine mappe les noms d’hôtes de l’ordinateur vers les adresses IP et comprendre les informations de base du bureau d'enregistrement de domaines et du DNS peut vous aider à gérer des domaines.
-ms.openlocfilehash: 0cf8d0ef7fa5a3a6420f0cf85eea2242ac9c909faaa3f0e0a032d7902fc4b7ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37d8e885dafaa055ed5cc7eee24456b758ef8b4f
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825846"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394287"
 ---
 # <a name="dns-basics"></a>Principes de base
 
@@ -193,7 +194,7 @@ Vous pouvez utiliser votre nom de domaine dans Microsoft 365 avec votre courrier
 
 Plusieurs enregistrements DNS sont requis pour permettre à Microsoft 365 de fonctionner avec votre domaine. En plus de configurer l'enregistrement MX de votre domaine de sorte que le courrier électronique soit envoyé à Microsoft 365, des enregistrements permettent de s'assurer qu'Outlook peut se connecter automatiquement au serveur Exchange approprié, de configurer la messagerie instantanée et d'éviter le courrier indésirable.
   
-Vous pouvez [consulter une liste de valeurs](information-for-dns-records.md) pour configurer votre domaine. Celles-ci sont incluses directement dans le Centre d’administration Microsoft 365. 
+Vous pouvez [trouver une liste de valeurs](information-for-dns-records.md) pour configurer votre domaine. Elles sont incluses directement dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Centre d’administration Microsoft 365</a>. 
   
 Ou, si vous envisagez de procéder à un déploiement, vous pouvez consulter la liste de tous les enregistrements DNS requis pour Microsoft 365 avec leur fonction et des valeurs d'exemple. Consultez [Enregistrements DNS externes pour Microsoft 365](../../enterprise/external-domain-name-system-records.md).
   
