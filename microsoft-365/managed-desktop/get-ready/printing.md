@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 480106eacbcc809007ff1aa45d776bb89beaf78cb7aaeefce41df33dfc000af9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: feba220d4e31443c85e600a7ab367a5f3c970e16
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869940"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364912"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Préparer des ressources d’impression pour le Bureau géré Microsoft
 
@@ -41,12 +41,14 @@ Si vous avez décidé de déployer des imprimantes à l’aide d’un script Pow
 
 ## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
 
-1. Examiner [les conditions préalables pour Microsoft Manged Desktop](prerequisites.md).
-2. Utiliser [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
-3. [Conditions préalables pour les comptes invité](guest-accounts.md)
-4. [Configuration du réseau pour Bureau géré Microsoft](network.md)
-5. [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
-6. [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](authentication.md)
-7. [Applications dans le Bureau géré Microsoft](apps.md)
-8. [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md)
-9. [Préparer les ressources d’impression Microsoft Manged Desktop](printing.md) (Cet article)
+1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
+2. Exécutez [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
+1. Acheter [Portail d’entreprise](../get-started/company-portal.md).
+1. Examinez [les conditions préalables pour les comptes invités.](guest-accounts.md)
+1. Vérifiez [la configuration du réseau.](network.md)
+1. [Préparer les certificats et les profils réseau.](certs-wifi-lan.md)
+1. [Préparer l’accès des utilisateurs aux données.](authentication.md)
+1. [Préparer les applications.](apps.md)
+1. [Préparez les lecteurs mappés.](mapped-drives.md)
+1. Préparer les ressources d’impression (cet article).
+1. Noms des [périphériques d’adresse.](address-device-names.md)

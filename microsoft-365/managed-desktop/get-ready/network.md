@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8503b294f60ffe7d01199cd4e910a94abc138bb9feed6c80483250e6c3f1fab5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf9b1e1a485000bee7bf672690af5979767fb34b
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869964"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365092"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuration du réseau pour Bureau géré Microsoft
 
@@ -56,10 +56,10 @@ Il existe des URL de plusieurs produits Microsoft qui doivent se trouver dans la
 
 Service Microsoft | Documentation
 --- | ---
-Windows 10 Entreprise y compris Windows mise à jour pour les entreprises | [Gérer les points de terminaison de connexion Windows 10, version 1803](/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion Windows 10, version 1903](/windows/privacy/manage-windows-1903-endpoints)<br><br>[Gérer les points de terminaison de connexion Windows 10, version 2004](/windows/privacy/manage-windows-2004-endpoints)
+Windows 10 Entreprise y compris Windows mise à jour pour les entreprises | [Gérer les points de terminaison de connexion pour Windows 10, version 1803](/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion Windows 10, version 1903](/windows/privacy/manage-windows-1903-endpoints)<br><br>[Gérer les points de terminaison de connexion Windows 10, version 2004](/windows/privacy/manage-windows-2004-endpoints)
 Optimisation de la distribution | [Configurer l’optimisation de la distribution pour Windows 10 mises à jour](/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365 URL et plages d’adresses IP](../../enterprise/urls-and-ip-address-ranges.md)
-Azure Active Directory | [Ports et protocoles](/azure/active-directory/hybrid/reference-connect-ports) requis pour l’identité hybride et conditions requises pour les ports Active Directory et [Active Directory Domain Services](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10)) 
+Azure Active Directory | [Ports et protocoles](/azure/active-directory/hybrid/reference-connect-ports) requis pour l’identité hybride et conditions requises pour les ports Active Directory et Services de [domaine Active Directory](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10)) 
 Microsoft Intune | [Configuration réseau requise pour Intune](/intune/network-bandwidth-use)<br>[Points de terminaison réseau pour Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender pour point de terminaison | [Conditions requises pour Microsoft Defender pour les points de terminaison](/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 Windows Autopilot | [Windows Conditions requises pour la mise en réseau Autopilot](/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
@@ -82,14 +82,16 @@ Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.micr
 Power BI | maxcdn.bootstrapcdn.com <br>ajax.aspnetcdn.com <br>netdna.bootstrapcdn.com <br>cdn.optimizely.com <br>google-analytics.com <br>\*.mktoresp.com <br>\*.aadcdn.microsoftonline-p.com <br>\*.msecnd.com <br>\*.localytics.com <br>ajax.aspnetcdn.com <br>\*.localytics.com <br>\*.virtualearth.net <br>platform.bing.com <br>powerbi.microsoft.com <br>c.microsoft.com <br>app.powerbi.com <br>\*.powerbi.com <br>dc.services.visualstudio.com <br>support.powerbi.com <br>powerbi.uservoice.com <br>go.microsoft.com <br>c1.microsoft.com <br>\*.azureedge.net |[Power BI & Express](/power-bi/service-admin-power-bi-expressroute) 
 OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [URL et plages dʼadresses IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
-## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Étapes pour vous préparer à la Microsoft Manged Desktop
 
-1. Examiner [les conditions préalables pour Microsoft Manged Desktop](prerequisites.md).
-2. Utiliser [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
-3. [Conditions préalables pour les comptes invité](guest-accounts.md)
-4. [Configuration réseau pour Microsoft Manged Desktop](network.md) (Cet article)
-5. [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
-6. [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](authentication.md)
-7. [Applications dans le Bureau géré Microsoft](apps.md)
-8. [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md)
-9. [Préparer des ressources d’impression pour le Bureau géré Microsoft](printing.md)
+1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
+2. Exécutez [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
+1. Acheter [Portail d’entreprise](../get-started/company-portal.md).
+1. Examinez [les conditions préalables pour les comptes invités.](guest-accounts.md)
+1. Vérifier la configuration du réseau (cet article).
+1. [Préparer les certificats et les profils réseau.](certs-wifi-lan.md)
+1. [Préparer l’accès des utilisateurs aux données.](authentication.md)
+1. [Préparer les applications.](apps.md)
+1. [Préparez les lecteurs mappés.](mapped-drives.md)
+1. [Préparer les ressources d’impression.](printing.md)
+1. Noms des [périphériques d’adresse.](address-device-names.md)

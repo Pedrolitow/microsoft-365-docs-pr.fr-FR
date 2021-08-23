@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les ordinateurs associés au domaine
-description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés au domaine pour obtenir des ordinateurs qui ont communiqué avec ou depuis un domaine dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés au domaine pour obtenir des ordinateurs qui ont communiqué avec ou à partir d’un domaine dans Microsoft Defender pour point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, domaine, associé, appareils
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dc6b2f1edcd7387ac144f4cd989cf3c65889dd232d887360187fbf84062cba78
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f743e4960267f98496585163d963c720ab9d0c5c
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874098"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365032"
 ---
 # <a name="get-domain-related-machines-api"></a>API Obtenir les ordinateurs associés au domaine
 
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/machines
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -81,7 +81,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si le domaine existe : 200 - OK avec la liste des [entités de l’ordinateur.](machine.md) Si le domaine n’existe pas - 404 - In trouvé.
+En cas de réussite et si le domaine existe : 200 - OK avec la liste des [entités de l’ordinateur.](machine.md) Si le domaine n’existe pas : 200 - OK avec un ensemble vide.
 
 ## <a name="example"></a>Exemple
 

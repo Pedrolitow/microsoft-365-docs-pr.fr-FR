@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d4d84ff64399bdecc936ae8876c0e1713cbf3482ab9dbf1faf848b736bfa6a09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1511a31dfd7c86d24f3a91ceebfca65d1ce777e3
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800377"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365068"
 ---
 # <a name="get-domain-related-alerts-api"></a>API Obtenir les alertes liées au domaine
 
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/alerts
 
 | En-tête        | Valeur  |
 |:--------------|:-------|
-| Autorisation | Chaîne |
+| Autorisation | String |
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -81,7 +81,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si le domaine existe : 200 - OK avec la liste des entités [d’alerte.](alerts.md) Si le domaine n’existe pas - 404 - In trouvé.
+En cas de réussite et si le domaine existe : 200 - OK avec la liste des entités [d’alerte.](alerts.md) Si le domaine n’existe pas : 200 - OK avec un ensemble vide.
 
 ## <a name="example"></a>Exemple
 

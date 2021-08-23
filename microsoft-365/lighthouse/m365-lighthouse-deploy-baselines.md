@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment déployer des Microsoft 365 Lighthouse de référence.
-ms.openlocfilehash: 70dae3e86cd5f559d0afd65406cf72835af81ebb6bd209fb1d68038b9c1be5e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85e9c9031575aae3aec43b4200caf2338422f563
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800800"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365212"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer les Microsoft 365 Lighthouse base de référence 
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse de référence vous permet de déployer des configurations client gérées standard pour sécuriser les utilisateurs, les appareils et les données des clients. Il existe six configurations de référence par défaut qui sont standard avec Microsoft 365 Lighthouse :
+Microsoft 365 Lighthouse de référence vous permet de déployer des configurations de client géré standard pour sécuriser les utilisateurs, les appareils et les données au sein des clients. Il existe six configurations de référence par défaut qui sont standard avec Microsoft 365 Lighthouse :
 
 - Exiger l’mf pour les administrateurs
 - Exiger l’mf pour les utilisateurs finaux
@@ -53,7 +53,7 @@ Sélectionnez **Lignes de base** dans le volet de navigation gauche pour ouvrir 
 
 2. Sélectionnez le client sur qui vous souhaitez déployer la configuration de référence.
 
-3. Sélectionnez **l’onglet Plan** de déploiement pour voir toutes les étapes de déploiement de la ligne de base qui ont été ajoutées au plan de déploiement du client.
+3. Sélectionnez **l’onglet Plans** de déploiement pour voir toutes les étapes de déploiement de la ligne de base qui ont été ajoutées au plan de déploiement du client.
 
 4. Sélectionnez une étape de déploiement pour ouvrir la page étape du déploiement.
 

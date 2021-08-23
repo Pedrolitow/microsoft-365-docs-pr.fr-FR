@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 22d49a85ae4d89e3d596a00a0d47468ed213788c1b46d850914d2eaecef56ec1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ffe432df946844b2ac06b87c2c5ca4284d49e0a1
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819234"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365188"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Préparer l’accès aux ressources locales pour le Bureau géré Microsoft
 
@@ -26,7 +26,7 @@ Dans Microsoft Manged Desktop, les appareils sont automatiquement joints à Azur
 
 Azure Active Directory permet à vos utilisateurs de tirer parti de l' mono-Sign-On (SSO), ce qui signifie qu’ils n’ont généralement pas à fournir d’informations d’identification chaque fois qu’ils utilisent des ressources.
 
-Pour plus d’informations sur la Azure Active Directory, voir Comment : Planifier l’implémentation de votre jointage [Azure AD.](/azure/active-directory/devices/azureadjoin-plan) Pour obtenir des informations d’arrière-plan sur l' mono-Sign-On (SSO) sur les appareils joints à Azure AD, voir comment fonctionne l' sso aux ressources sur site sur les appareils joints à [Azure AD.](/azure/active-directory/devices/azuread-join-sso#how-it-works)
+Pour plus d’informations sur la Azure Active Directory, voir Comment : Planifier l’implémentation de votre jointage [Azure AD.](/azure/active-directory/devices/azureadjoin-plan) Pour obtenir des informations d’arrière-plan sur le Sign-On unique (SSO) sur les appareils joints à Azure AD, voir comment fonctionne l’oD unique pour les ressources sur site sur les appareils joints à [Azure AD.](/azure/active-directory/devices/azuread-join-sso#how-it-works)
 
 
 Cet article explique les éléments que vous devez vérifier afin de vous assurer que les applications et autres ressources qui dépendent de la connectivité Active Directory locale fonctionneront sans problème avec les Microsoft Manged Desktop.
@@ -57,7 +57,7 @@ Microsoft Manged Desktop offrent également à vos utilisateurs une expérience 
 Reportez-vous à Comprendre les considérations concernant les applications et les ressources dans l’ensemble de contenu Azure pour obtenir des [instructions complètes](/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) sur la configuration des applications à Azure Active Directory. En Résumé :
 
 
-- Si vous utilisez des applications basées sur le **cloud,** telles que celles ajoutées à la galerie d’applications Azure AD, la plupart d’entre elles ne nécessitent aucune préparation supplémentaire pour fonctionner avec Microsoft Manged Desktop. Toutefois, toutes les applications Win32 qui n’utilisent pas le Gestionnaire de comptes Web (WAM) peuvent toujours inviter les utilisateurs à s’authentifier.
+- Si vous utilisez des applications basées sur le **cloud,** telles que celles ajoutées à la galerie d’applications Azure AD, la plupart d’entre elles ne nécessitent aucune préparation supplémentaire pour fonctionner avec Microsoft Manged Desktop. Toutefois, toutes les applications Win32 qui n’utilisent pas le Gestionnaire de comptes Web (WAM) peuvent toujours inciter les utilisateurs à s’authentifier.
 
 - Pour les applications **hébergées** en local, n’oubliez pas d’ajouter ces applications à la liste des sites de confiance dans vos navigateurs. Cette étape permet aux utilisateurs Windows l’authentification de fonctionner en toute transparence, sans que les utilisateurs ne sont invités à leur donner d’informations d’identification. Pour ajouter des applications, reportez-vous [aux sites](../working-with-managed-desktop/config-setting-ref.md#trusted-sites) de confiance dans la référence [des paramètres configurables.](../working-with-managed-desktop/config-setting-ref.md)
 
@@ -65,7 +65,7 @@ Reportez-vous à Comprendre les considérations concernant les applications et l
 
 - Pour les applications qui sont sur site et utilisent des **protocoles** plus anciens, aucune configuration supplémentaire n’est requise, tant que les appareils ont accès à un contrôleur de domaine local pour s’authentifier. Toutefois, pour fournir un accès sécurisé à ces applications, vous devez déployer le proxy d’application Azure AD. Pour plus d’informations, voir Accès à distance aux applications sur site [via Azure Active Directory proxy d’application.](/azure/active-directory/manage-apps/application-proxy)
 
-- Les applications qui **s’exécutent** en local et reposent sur l’authentification de l’ordinateur ne sont pas pris en charge. Vous devez donc envisager de les remplacer par des versions plus récentes.
+- Les applications qui **s’exécutent** en local et reposent sur l’authentification d’ordinateur ne sont pas pris en charge. Vous devez donc envisager de les remplacer par des versions plus récentes.
 
 ### <a name="network-shares-that-use-authentication"></a>Partages réseau qui utilisent l’authentification
 
@@ -78,14 +78,16 @@ Microsoft Manged Desktop ne peuvent pas se connecter à des imprimantes publiée
 Bien que les imprimantes ne peuvent pas être découvertes automatiquement dans un environnement cloud uniquement, vos utilisateurs peuvent utiliser des imprimantes locales à l’aide du chemin d’accès de l’imprimante ou de la file d’attente de l’imprimante, tant que les appareils ont accès à un contrôleur de domaine local.
 
 <!--add fuller material on printers when available-->
-## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Étapes pour vous préparer à la Microsoft Manged Desktop
 
-1. Examiner [les conditions préalables pour Microsoft Manged Desktop](prerequisites.md).
-2. Utiliser [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
-3. [Conditions préalables pour les comptes invité](guest-accounts.md)
-4. [Configuration du réseau pour Bureau géré Microsoft](network.md)
-5. [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
-6. [Préparer l’accès aux ressources sur site pour Microsoft Manged Desktop](authentication.md) (Cet article)
-7. [Applications dans le Bureau géré Microsoft](apps.md)
-8. [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md)
-9. [Préparer des ressources d’impression pour le Bureau géré Microsoft](printing.md)
+1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
+2. Exécutez [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
+1. Acheter [Portail d’entreprise](../get-started/company-portal.md).
+1. Examinez [les conditions préalables pour les comptes invités.](guest-accounts.md)
+1. Vérifiez [la configuration du réseau.](network.md)
+1. [Préparer les certificats et les profils réseau.](certs-wifi-lan.md)
+1. Préparer l’accès des utilisateurs aux données (cet article).
+1. [Préparer les applications.](apps.md)
+1. [Préparez les lecteurs mappés.](mapped-drives.md)
+1. [Préparer les ressources d’impression.](printing.md)
+1. Noms des [périphériques d’adresse.](address-device-names.md)

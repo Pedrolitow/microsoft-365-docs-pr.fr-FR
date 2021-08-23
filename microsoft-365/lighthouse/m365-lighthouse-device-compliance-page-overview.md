@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page de conformité des appareils.
-ms.openlocfilehash: 8143f6d987145001a502616ea4a3672fba24a7f3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c87f808a3694c1f256a8a4787591a93444cf792f
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257614"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364936"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse Vue d’ensemble de la page de conformité des appareils
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse vous permet d’afficher des informations et des informations relatives à la conformité  des appareils Intune pour tous vos locataires en sélectionnant Appareils dans le volet de navigation de gauche pour ouvrir la page Conformité de l’appareil. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état de conformité entre les locataires, afficher la liste des appareils pour chaque client et obtenir des rapports d’état sur les stratégies et paramètres de conformité.
+Microsoft 365 Lighthouse vous permet d’afficher des informations et des informations relatives à la conformité  des appareils Intune pour tous vos clients en sélectionnant Appareils dans le volet de navigation gauche pour ouvrir la page Conformité de l’appareil. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état de conformité entre les locataires, afficher une liste d’appareils pour chaque client et obtenir des rapports d’état sur les stratégies et paramètres de conformité.
 
 ## <a name="overview-tab"></a>Onglet Overview  
   

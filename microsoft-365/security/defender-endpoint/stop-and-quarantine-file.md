@@ -1,6 +1,6 @@
 ---
 title: API de fichier d’arrêt et de mise en quarantaine
-description: Découvrez comment arrêter l’exécution d’un fichier sur un appareil et supprimer le fichier dans Microsoft Defender pour endpoint. Consulter un exemple.
+description: Découvrez comment arrêter l’exécution d’un fichier sur un appareil et supprimer le fichier dans Microsoft Defender pour endpoint. Consultez un exemple.
 keywords: api, api de graphique, api pris en charge, arrêter et mettre en quarantaine le fichier
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9ae988df82a2cc1cf5106f832ae22f0c5a95dbdfbf28e6dc773cea3e8208798
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4ed33a26bcc7583146d810db7625ed3164d7544
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873822"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408074"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API de fichier d’arrêt et de mise en quarantaine
 
@@ -60,12 +60,14 @@ L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
 Application|Machine.StopAndQuarantine|« Arrêter et mettre en quarantaine »
+Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
+Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
 Déléguée (compte professionnel ou scolaire)|Machine.StopAndQuarantine|« Arrêter et mettre en quarantaine »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (pour plus d’informations, voir Créer et gérer [des](user-roles.md) rôles)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
@@ -78,16 +80,16 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
-Sha1|Chaîne|Sha1 du fichier à arrêter et mettre en quarantaine sur l’appareil. **Obligatoire**.
+Sha1|String|Sha1 du fichier à arrêter et mettre en quarantaine sur l’appareil. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 

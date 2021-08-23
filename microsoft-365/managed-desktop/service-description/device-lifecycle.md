@@ -8,16 +8,20 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f7c2a72fdd212eb9a549d3b855a693f095949e0dbb203caf05d37e9ad8ace226
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a459c120e0bfb4da5c4b98ee576ff347052e358
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904325"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400378"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft Manged Desktop cycle de vie du produit
 
-Microsoft Manged Desktop permet aux utilisateurs de s’assurer qu’ils utilisent toujours les appareils qui offrent les meilleures performances, fiabilité, conception et sécurité (telles que la prise en charge de fonctionnalités telles que Windows Hello). Pour ce faire, Microsoft Manged Desktop un petit catalogue d’appareils approuvés mis à jour en continu. Vous pouvez afficher les appareils approuvés en filtrant les Microsoft Manged Desktop sur le site [Shop Windows 10 Professionnel business devices.](https://www.microsoft.com/windowsforbusiness/view-all-devices)
+> [!NOTE]
+> À compter du 18 septembre 2021, le cycle de vie de ce produit Microsoft Manged Desktop ne s’appliquera plus. Aucune des conditions requises répertoriées ici ne s’applique aux appareils du service. Seule la [configuration matérielle requise](device-requirements.md) sera pertinente. 
+
+
+Microsoft Manged Desktop aux utilisateurs en s’assurant qu’ils utilisent toujours les appareils qui offrent les meilleures performances, fiabilité, conception et sécurité (telles que la prise en charge de fonctionnalités telles que Windows Hello). Pour ce faire, Microsoft Manged Desktop un petit catalogue d’appareils approuvés mis à jour en continu. Vous pouvez afficher les appareils approuvés en filtrant les Microsoft Manged Desktop sur le site [Shop Windows 10 Professionnel business devices.](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)
  
 Cet article détaille le cycle de vie des appareils à mesure qu’ils sont ajoutés et supprimés du catalogue approuvé. 
 
@@ -82,7 +86,7 @@ Vous pouvez penser que cette période est effectivement « ouvrir l’inscriptio
 
 ## <a name="product-grace-period"></a>Période de grâce du produit
 
-La période de grâce du produit est une période de trois ans suivant la disponibilité principale. Cette phase vous permet d’inscrire des appareils issus d’une famille de produits pris en charge, tout en maintenant les promesses de Microsoft Manged Desktop concernant les performances du matériel et des appareils modernes. Cette phase est idéale pour les clients qui ont pris des décisions d’approvisionnement avant de connaître Microsoft Manged Desktop. 
+La période de grâce du produit est une période de trois ans suivant la disponibilité principale. Cette phase vous permet d’inscrire des appareils qui sont issus d’une famille de produits prise en charge, tout en maintenant les promesses de Microsoft Manged Desktop concernant les performances du matériel et des appareils modernes. Cette phase est idéale pour les clients qui ont pris des décisions d’approvisionnement avant de connaître Microsoft Manged Desktop. 
 
 Si vous avez récemment acheté des appareils approuvés avant de vous inscrire auprès de Microsoft Manged Desktop, vous pouvez toujours les inscrire, mais vous ne recevrez pas trois ans de gestion complets. Au lieu de cela, ils ne seront pas conformes à la date de retrait, quel que soit le moment où ils ont été inscrits. En arrière-plan, Microsoft Manged Desktop traitent ces appareils comme s’ils étaient inscrits le dernier jour de disponibilité principale. Dans cette illustration, vous pouvez voir ce scénario en notant que les appareils bleu et vert se terminent tous les deux le même jour, malgré leur différence d’inscription d’un an :
 

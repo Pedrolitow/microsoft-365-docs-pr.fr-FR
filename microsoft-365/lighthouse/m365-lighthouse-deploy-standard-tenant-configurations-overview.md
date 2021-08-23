@@ -16,21 +16,21 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment utiliser les lignes de base pour déployer des configurations client standard.
-ms.openlocfilehash: 1daaeba481f65018eaa9f82f9ef889c7e5dbd3e7fffb4421ae24aa1facf39354
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5eea1deae1c8cf56315e121baa29273fc98feca8
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800773"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365200"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation des lignes de base pour déployer des configurations client standard 
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse de référence fournissent un moyen extensible et évolutif d’évaluer et de gérer Microsoft 365 de sécurité sur plusieurs clients. Les lignes de base permettent également de surveiller les stratégies de sécurité principales et les normes de conformité client avec des configurations qui sécurisationnt les utilisateurs, les appareils et les données.
+Microsoft 365 Lighthouse de référence fournissent un moyen extensible et évolutif d’évaluer et de gérer Microsoft 365 de sécurité entre plusieurs clients. Les lignes de base permettent également de surveiller les stratégies de sécurité principales et les normes de conformité client avec des configurations qui sécurisationnt les utilisateurs, les appareils et les données.
 
-Conçu pour aider les partenaires à favoriser l’adoption de la sécurité par les clients à leur propre rythme, Microsoft 365 Lighthouse fournit un ensemble standard de paramètres de référence et de configurations prédéfinëes pour Microsoft 365 services. Ces configurations de sécurité permettent de mesurer la progression de la sécurité Microsoft 365 conformité de vos locataires.
+Conçu pour aider les partenaires à favoriser l’adoption de la sécurité par les clients à leur propre rythme, Microsoft 365 Lighthouse fournit un ensemble standard de paramètres de référence et de configurations prédéfinës pour Microsoft 365 services. Ces configurations de sécurité permettent de mesurer la progression de la sécurité Microsoft 365 conformité de vos locataires.
 
 Vous pouvez afficher la ligne de base par défaut et ses étapes de déploiement à partir de Microsoft 365 Lighthouse. Pour appliquer des lignes de base à un client, sélectionnez **Les** locataires dans le volet de navigation de gauche, puis sélectionnez un client. Ensuite, allez dans l’onglet **Plans de** déploiement et implémentez la ligne de base souhaitée.
 

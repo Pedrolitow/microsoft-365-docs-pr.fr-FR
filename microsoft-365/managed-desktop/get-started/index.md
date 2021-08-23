@@ -8,12 +8,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: d8a7bb4e17f2dd57e613aefcaad18cde42101d22f72cb320fc9200f4e858ab73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a817f863102df09c457d759151bfa516f6b2da4
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800725"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365120"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Prise en main du Bureau géré Microsoft
 
@@ -22,13 +22,18 @@ Maintenant que vous êtes prêt à vous inscrire, ouvrez [ le gestionnaire de po
 > [!NOTE]
 > Vous devez être connecté en tant qu'administrateur global pour compléter l'inscription. Pour plus d'informations, voir [l'accès au portail administratif ](access-admin-portal.md) pour plus de détails.
 
-Une fois que vous avez terminé votre inscription, suivez les étapes ci-dessous pour configurer le service. Il s’agit de l’ordre recommandé pour suivre, mais vous disposez d’une certaine souplesse dans la séquence. 
+Une fois que vous avez terminé votre inscription, suivez les étapes ci-dessous pour configurer le service. Il s’agit de l’ordre recommandé pour suivre, mais vous disposez d’une certaine souplesse dans la séquence.
 
-1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md)
-2. [Ajuster les paramètres après l’inscription](conditional-access.md)
-3. [Affecter des licences](assign-licenses.md)
-4. [Déployer le portail d’entreprise Intune](company-portal.md)
-5. [Activer Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Configurer les appareils](set-up-devices.md)
-7. [Préparer vos utilisateurs à l’utilisation les appareils](get-started-devices.md)
-8. [Déployer des applications](deploy-apps.md)
+![Séquence d’étapes suggérée pour commencer, répertoriée dans cet article](../../media/mmd-getstarted-sequence.png) 
+
+1. Accéder au[Portail d’administration](access-admin-portal.md).
+1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md).
+1. [Ajuster les paramètres après l’inscription](conditional-access.md).
+1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
+1. [Attribuer des licences](assign-licenses.md).
+1. [Déployer des applications](deploy-apps.md).
+1. [Configurer les appareils](set-up-devices.md).
+1. Configurez l’[Expérience de première exécution avec Autopilot et la page d’état d’inscription](esp-first-run.md).
+1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
+1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).
+1. [Démarrage avec le contrôle d’application](get-started-app-control.md).

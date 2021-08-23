@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Collectez les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS afin de connecter votre domaine à Microsoft 365 abonnement.
-ms.openlocfilehash: 44421f9730cb238bc06b41c82c31471bf8431adfe77ff66aa34587fe2b2f72be
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aea4cbcff76ec499b9e9e5618646774f56785cb9
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825702"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394275"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Collecter les informations dont vous avez besoin pour créer des enregistrements DNS
 
@@ -89,7 +90,7 @@ ms.locfileid: "53825702"
     
 2. Dans la page **Domaines**, sélectionnez votre domaine.
     
-3. Choisissez **Gérer DNS,** sélectionnez **Autres options** Ajouter votre propre DNS et sélectionnez Continuer à voir les enregistrements  >   DNS à ajouter. 
+3. Choose **Manage DNS,** select **More Options** Add your own  >  **DNS** and select **Continue** to see the DNS records to add.
     
     Il est recommandé de conserver ces informations disponibles tandis que vous apportez des modifications à votre hôte DNS, pour que vous puissiez copier et coller les valeurs.
     

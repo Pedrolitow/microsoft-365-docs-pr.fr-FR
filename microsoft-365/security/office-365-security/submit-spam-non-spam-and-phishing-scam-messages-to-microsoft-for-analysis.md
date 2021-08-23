@@ -18,12 +18,12 @@ description: Les administrateurs et les utilisateurs finaux peuvent apprendre à
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a6dd7314162fd91be487684be2191c1ea2b50d740fd86fc27bc91e7c0d978196
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 91ec2807db4a4c384dabcf20634162b3a838274e
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56849938"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400354"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Envoyer manuellement des messages à Microsoft pour analyse
 
@@ -35,7 +35,7 @@ ms.locfileid: "56849938"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Si vous êtes un administrateur d’une organisation Exchange Online boîtes aux lettres, nous vous recommandons d’utiliser la page **Soumissions** dans Microsoft 365 Defender portail. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
+> Si vous êtes un administrateur d’une organisation Exchange Online boîtes aux lettres, nous vous recommandons d’utiliser la page **Soumissions** dans Microsoft 365 Defender portail. Pour plus d’informations, voir Utiliser le portail Soumissions pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
 Cela peut être frustrant lorsque les utilisateurs de votre organisation reçoivent des messages indésirables (courrier indésirable) ou de hameçonnage dans leur boîte de réception, ou s’ils ne reçoivent pas de message électronique légitime parce qu’il est marqué comme courrier indésirable. Nous affinons constamment nos filtres de courrier indésirable pour être plus précis.
 

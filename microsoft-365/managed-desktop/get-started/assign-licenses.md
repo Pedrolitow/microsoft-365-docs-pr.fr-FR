@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7504f29dfbd2c9de4f69f238f0b657fd535c5b3e323196bfaae2e19c3b79023d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb41361d58ccdac9c1fe0ecdca12927752214651
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863931"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365080"
 ---
 # <a name="assign-licenses"></a>Attribuer des licences
 
@@ -27,11 +27,14 @@ Si vous avez des difficultés avec l’attribution de licence, contactez le [sup
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 
-1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md)
-2. [Ajuster l’accès conditionnel](conditional-access.md)
-3. Attribuer des licences (cet article)
-4. [Déployer le portail d’entreprise Intune](company-portal.md)
-5. [Activer Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Configurer les appareils](set-up-devices.md)
-7. [Préparer vos utilisateurs à l’utilisation les appareils](get-started-devices.md)
-8. [Déployer des applications](deploy-apps.md)
+1. Portail [d’administration Access](access-admin-portal.md).
+1. [Ajoutez et vérifiez les contacts d’administrateur dans le portail d’administration.](add-admin-contacts.md)
+1. [Ajuster les paramètres après l’inscription.](conditional-access.md)
+1. Déployez et affectez [Portail d’entreprise Intune](company-portal.md).
+1. Attribuer des licences (cet article).
+1. [Déployer des applications.](deploy-apps.md)
+1. [Configurer des appareils.](set-up-devices.md)
+1. Configurer [l’expérience de première expérience avec Autopilot et la page État de l’inscription.](esp-first-run.md)
+1. [Activer les fonctionnalités de support utilisateur.](enable-support.md)
+1. [Préparez vos utilisateurs à utiliser des appareils.](get-started-devices.md)
+1. [Prendre en main le contrôle d’application.](get-started-app-control.md)

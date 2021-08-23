@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Découvrez comment trouver un nouveau partenaire Microsoft 365 ou obtenir des informations de contact pour un partenaire avec qui vous avez travaillé dans le passé. '
-ms.openlocfilehash: 81beb661783e1bff223245b2abd8904686bd50e8308bb7178b161fb84da455d5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac557a04039c9cf618f2ed1fd0e8c0d967e76386
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825450"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394263"
 ---
 # <a name="find-your-partner-or-reseller"></a>Trouver votre partenaire ou revendeur
 

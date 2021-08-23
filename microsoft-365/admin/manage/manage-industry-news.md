@@ -11,20 +11,22 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: Fournissez à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation.
-ms.openlocfilehash: ccb2c944fb9f3a68d0670aa86acb0095362516dcad98069defe2aba1ec97dc97
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 42a65543ef37d2433d84432a7436dabaaa9ce345
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825154"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394227"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités du secteur
 
-Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’accueil Bing et Microsoft Edge page nouvel onglet. 
+Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’Bing et de Microsoft Edge page nouvel onglet. 
 
 ## <a name="what-your-users-will-see"></a>Ce que vos utilisateurs voient
 
@@ -42,7 +44,7 @@ Ils peuvent également consulter les actualités de l’entreprise, du secteur e
 
 ## <a name="news-settings"></a>Paramètres des actualités
 
-En tant qu’administrateur, vous contrôlez les paramètres de flux d’actualités de votre organisation, y compris l’industrie sélectionnée et la page d’accueil Bing, la page du nouvel onglet Microsoft Edge (à partir de la publication de Edge 87) et les expériences de messagerie. 
+En tant qu’administrateur, vous contrôlez les paramètres des flux d’actualités de votre organisation, y compris l’industrie sélectionnée et la page d’accueil Bing, la page du nouvel onglet Microsoft Edge (à partir de la publication de Edge 87) et les expériences de messagerie. 
 
 1. In the Centre d’administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
@@ -58,7 +60,7 @@ En tant qu’administrateur, vous contrôlez les paramètres de flux d’actuali
 
 ## <a name="industry-updates-in-email"></a>Mises à jour du secteur dans le courrier électronique 
 
-Vous pouvez envoyer une mise à jour quotidienne par courrier électronique avec les actualités du secteur pertinentes dans la boîte de réception de vos utilisateurs. Pour définir des mises à jour quotidiennes du courrier électronique pour les utilisateurs : 
+Vous pouvez envoyer une mise à jour quotidienne par courrier électronique avec les actualités du secteur pertinentes dans la boîte de réception de vos utilisateurs. Pour définir des mises à jour quotidiennes de courrier électronique pour les utilisateurs : 
 
 1. In the Centre d’administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 

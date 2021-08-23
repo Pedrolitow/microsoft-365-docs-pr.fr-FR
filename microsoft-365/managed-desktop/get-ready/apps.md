@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b248af7d098fa8b78632b248e37248840f0f1d8302a658061489f6ea68e4fd85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c8a501c178ae0cffb98870d4fccd44028cbf6ec0
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877744"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365104"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le Bureau géré Microsoft
 
@@ -53,17 +53,19 @@ Vous avez probablement d’autres applications dont vous avez besoin pour vos op
 Examinez vos applications, en vérifiant :
 
 - Aucune des applications n’est interdite ou n’a de comportement restreint, comme décrit [dans Microsoft Manged Desktop’application requise.](../service-description/mmd-app-requirements.md)
-- Les applications doivent être prêtes à être Microsoft Intune. Pour plus d’informations sur cette rubrique, [voir Windows 10 déploiement d’applications](/intune/apps-windows-10-app-deploy) à l’aide Microsoft Intune et Ajouter des applications à [Microsoft Intune](/intune/apps-add).
+- Les applications doivent être prêtes à être Microsoft Intune. Pour plus d’informations sur cette rubrique, [voir Windows 10 déploiement](/intune/apps-windows-10-app-deploy) d’applications à l’aide Microsoft Intune et Ajouter des applications à [Microsoft Intune](/intune/apps-add).
 - Autres conditions préalables à l’empaquetage, telles que la fourniture de clés de licence, l’accord avec les termes du contrat de licence et la configuration préalable des connexions au serveur.
 
-## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Étapes pour vous préparer à la Microsoft Manged Desktop
 
-1. Examiner [les conditions préalables pour Microsoft Manged Desktop](prerequisites.md).
-2. Utiliser [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
-3. [Conditions préalables pour les comptes invité](guest-accounts.md)
-4. [Configuration du réseau pour Bureau géré Microsoft](network.md)
-5. [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
-6. [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](authentication.md)
-7. [Applications en Microsoft Manged Desktop](apps.md) (cet article)
-8. [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md)
-9. [Préparer des ressources d’impression pour le Bureau géré Microsoft](printing.md)
+1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
+2. Exécutez [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
+1. Acheter [Portail d’entreprise](../get-started/company-portal.md).
+1. Examinez [les conditions préalables pour les comptes invités.](guest-accounts.md)
+1. Vérifiez [la configuration du réseau.](network.md)
+1. [Préparer les certificats et les profils réseau.](certs-wifi-lan.md)
+1. [Préparer l’accès des utilisateurs aux données.](authentication.md)
+1. Préparer les applications (cet article).
+1. [Préparez les lecteurs mappés.](mapped-drives.md)
+1. [Préparer les ressources d’impression.](printing.md)
+1. Noms des [périphériques d’adresse.](address-device-names.md)

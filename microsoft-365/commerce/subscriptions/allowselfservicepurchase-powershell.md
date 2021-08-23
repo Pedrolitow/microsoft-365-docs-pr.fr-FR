@@ -21,12 +21,12 @@ search.appverid:
 description: Découvrez comment utiliser l’cmdlet AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
-ms.openlocfilehash: 8714334d2c05d312d8a7895c943e21816e31c9297e879b9681639efb92aec426
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1de0b99954883b301110689c72e10e05c16e7576
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900278"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408045"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 
@@ -100,9 +100,9 @@ Le tableau suivant répertorie les produits disponibles et leur **ProductId**.
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (autonome) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Project (plan 1) | CFQ7TTC0KXND |
-| Project (plan 3) | CFQ7TTC0KXNC |
-| Visio (plan 1) | CFQ7TTC0KXN9 |
+| Project (plan 1) | CFQ7TTC0KXND |
+| Project (plan 3) | CFQ7TTC0KXNC |
+| Visio (plan 1) | CFQ7TTC0KXN9 |
 | Visio (plan 2) | CFQ7TTC0KXN8 |
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
@@ -140,19 +140,33 @@ $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | wh
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
 
+S’il existe plusieurs valeurs pour le produit, vous pouvez exécuter la commande individuellement pour chaque valeur, comme illustré dans l’exemple suivant :
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+```
+
+
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
 ### <a name="problem"></a>Problème
 
 Vous voyez le message d’erreur suivant :
 
-> HandleError : Échec de récupération de la stratégie avec PolicyId « AllowSelfServicePurchase » et ErrorMessage : la connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors d’un envoi.
+> HandleError : Échec de la récupération de la stratégie avec PolicyId « AllowSelfServicePurchase » et ErrorMessage - La connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors d’une envoi.
 
 Cela peut être dû à une version antérieure de TLS (Transport Layer Security). Pour connecter ce service, vous devez utiliser TLS 1.2 ou supérieur
 
 ### <a name="solution"></a>Solution
 
-Mise à niveau vers TLS 1.2 : (/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+Mise à niveau vers TLS 1.2. La syntaxe suivante met à jour le protocole de sécurité ServicePointManager vers TLS1.2 :
+
+```powershell
+ [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+```
+
+Pour plus d’informations, [voir Comment activer TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
 
 <!--
 ## Uninstall the MSCommerce module

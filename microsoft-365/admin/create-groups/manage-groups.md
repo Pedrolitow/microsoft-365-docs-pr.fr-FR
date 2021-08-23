@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Apprenez à gérer les Microsoft 365, notamment en ajoutant supprimer des membres du groupe, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
-ms.openlocfilehash: 6bdab4d473433622326e96b8f1e561a30eec1e80
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 12c1b74986429be8c2681725286a3e07b7ae1d86
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346855"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393411"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le Centre d’administration Microsoft 365
 
@@ -46,9 +47,9 @@ Go to the Centre d’administration Microsoft 365 at [https://admin.microsoft.co
 
 2. Cliquez sur le nom du groupe que vous souhaitez gérer pour ouvrir le volet des paramètres.
 
-3. Sous **l’onglet Membres,** choisissez si vous souhaitez gérer les propriétaires ou les membres.
+3. Sous **l’onglet** Membres, choisissez si vous souhaitez gérer les propriétaires ou les membres.
 
-4. Choisissez **Ajouter** pour ajouter une personne ou cliquez **sur X** pour supprimer une personne.
+4. Choisissez **Ajouter pour** ajouter une personne ou cliquez sur **X** pour supprimer une personne.
 
 5. Cliquez sur **Fermer**.
 
@@ -56,7 +57,7 @@ Go to the Centre d’administration Microsoft 365 at [https://admin.microsoft.co
   
 Lorsque vous utilisez le Centre d’administration pour créer un groupe, par défaut, les utilisateurs n’obtiennent pas de copies des messages électroniques de groupe envoyés à leur boîte de réception, même si les utilisateurs obtiennent des copies des invitations aux réunions de groupe envoyées à leur boîte de réception. Ils doivent se rendre dans le groupe pour voir les conversations. Vous pouvez modifier ce paramètre dans le Centre d’administration.
 
-Lorsque vous activer ce paramètre, les membres du groupe obtiennent une copie des e-mails de groupe et des invitations aux réunions envoyés à leur Outlook boîte de réception. Ces derniers peuvent le lire et supprimer cette copie du courrier sans affecter d'autres personnes. Une copie du courrier est conservée dans la boîte aux lettres du groupe.
+Lorsque vous activer ce paramètre, les membres du groupe obtiennent une copie des e-mails de groupe et des invitations aux réunions envoyés à leur boîte Outlook réception. Ces derniers peuvent le lire et supprimer cette copie du courrier sans affecter d'autres personnes. Une copie du courrier est conservée dans la boîte aux lettres du groupe.
 
 Les membres du groupe peuvent refuser de recevoir ces e-mails en choisissant d’arrêter de suivre le groupe dans Outlook.
 
@@ -68,7 +69,7 @@ Les membres du groupe peuvent refuser de recevoir ces e-mails en choisissant d�
 
 4. Sélectionnez **Enregistrer**.
 
-## <a name="let-people-outside-the-organization-email-the-group"></a>Laisser les personnes extérieures à l’organisation envoyer un e-mail au groupe
+## <a name="let-people-outside-the-organization-email-the-group"></a>Laisser des personnes extérieures à l’organisation envoyer un e-mail au groupe
 
 Cette option est idéale si vous souhaitez avoir une adresse de messagerie d’entreprise telle que info@contoso.com.
  

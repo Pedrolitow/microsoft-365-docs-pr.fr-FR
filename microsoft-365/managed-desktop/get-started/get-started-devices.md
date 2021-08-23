@@ -11,12 +11,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3b4b46d124f1ebdee926e7ce05e2a280725dafc6dca234dec0c15800c794a9c8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 40ceb768836b7bb597620229bd30358df2977592
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800713"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365164"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Préparer vos utilisateurs à l’utilisation des appareils
 
@@ -44,11 +44,14 @@ Téléchargez simplement le guide [: Microsoft Manged Desktop - Commencer à uti
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 
-1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md)
-2. [Ajuster l’accès conditionnel](conditional-access.md)
-3. [Affecter des licences](assign-licenses.md)
-4. [Déployer le portail d’entreprise Intune](company-portal.md)
-5. [Activer Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Configurer les appareils](set-up-devices.md)
-7. Préparer vos utilisateurs à utiliser des appareils (cette rubrique)
-8. [Déployer des applications](deploy-apps.md)
+1. Portail [d’administration Access](access-admin-portal.md).
+1. [Ajoutez et vérifiez les contacts d’administrateur dans le portail d’administration.](add-admin-contacts.md)
+1. [Ajuster les paramètres après l’inscription.](conditional-access.md)
+1. Déployez et affectez [Portail d’entreprise Intune](company-portal.md).
+1. [Attribuer des licences](assign-licenses.md).
+1. [Déployer des applications.](deploy-apps.md)
+1. [Configurer des appareils.](set-up-devices.md)
+1. Configurer [l’expérience de première expérience avec Autopilot et la page État de l’inscription.](esp-first-run.md)
+1. [Activer les fonctionnalités de support utilisateur.](enable-support.md)
+1. Préparez vos utilisateurs à utiliser des appareils (cet article).
+1. [Prendre en main le contrôle d’application.](get-started-app-control.md)

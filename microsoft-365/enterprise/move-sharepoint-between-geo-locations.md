@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéogé et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80dfe847683271a8538f407f9a697536946e29a5ae98cefc92dfde74a45abd0a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 97f19b0f4ae1e00eb1d81bb20052efa158bc55cf
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854825"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400390"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -219,9 +219,9 @@ Si vous migrez un site comportant des applications, vous devez ré-instancier ce
 
 Dans la plupart des cas, les flux continueront de fonctionner après un déplacement géographique de site SharePoint. Nous vous conseillons de les tester une fois le déplacement terminé.
 
-### <a name="powerapps"></a>PowerApps
+### <a name="power-apps"></a>Power Apps
 
-Les applications PowerApps doivent être recréées dans l’emplacement cible.
+Power Apps doivent être recréés à l’emplacement de destination.
 
 ### <a name="data-movement-between-geo-locations"></a>Déplacement de données entre emplacements géographiques
 

@@ -1,6 +1,6 @@
 ---
-title: Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft par le biais de Microsoft 365 Defender
-description: Abonnez-vous à Microsoft Threats Experts via Microsoft 365 Defender pour configurer, gérer et utiliser ce service dans vos opérations de sécurité quotidiennes et votre travail d’administration de la sécurité.
+title: Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft par le biais Microsoft 365 Defender
+description: Abonnez-vous à Microsoft Threats Experts Microsoft 365 Defender pour configurer, gérer et utiliser ces derniers dans vos opérations de sécurité quotidiennes et votre travail d’administration de la sécurité.
 keywords: Spécialistes des menaces Microsoft, service de recherche de menace gérée, MTE, service de recherche géré Microsoft
 search.product: Windows 10
 search.appverid: met150
@@ -14,14 +14,14 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 0ccb8482dae94de4a9f43a5ecaf7c701e6dd82a5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: db98e147ef4453f62d4d17431286aaa99959712d
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844789"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58357468"
 ---
-# <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft par le biais de Microsoft 365 Defender
+# <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft par le biais Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,9 +41,9 @@ Pour recevoir des notifications d’attaque ciblée, vous devez avoir déployé 
 
 Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à Spécialistes des menaces Microsoft - Experts à la demande. Les experts à la demande vous permet de consulter nos experts en matière de menaces sur la façon de protéger votre organisation contre les détections et les adversaires pertinents.
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour Spécialistes des menaces Microsoft service de notifications d’attaques ciblées
+## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour les Spécialistes des menaces Microsoft - Service de notifications d’attaques ciblées
 
-Si vous avez déjà Microsoft Defender pour point de terminaison et Microsoft 365 Defender, vous pouvez demander des notifications d’Spécialistes des menaces Microsoft – Attaques ciblées via leur portail Microsoft 365 Defender.  Les notifications d’attaques ciblées vous offrent un aperçu et une analyse spéciaux pour vous aider à identifier les menaces les plus critiques pour votre organisation, afin que vous y répondiez rapidement.
+Si vous avez déjà Microsoft Defender pour les points de terminaison et les Microsoft 365 Defender, vous pouvez demander des notifications d’Spécialistes des menaces Microsoft – Des notifications d’attaques ciblées via Microsoft 365 Defender portail.  Les notifications d’attaques ciblées vous offrent des informations et une analyse spéciales pour vous aider à identifier les menaces les plus critiques pour votre organisation, afin que vous y répondiez rapidement.
 
 1. Dans le volet de navigation, Paramètres > points de terminaison > général > fonctionnalités avancées **> Spécialistes des menaces Microsoft - Notifications** d’attaque ciblée.
 
@@ -67,11 +67,11 @@ Si vous avez déjà Microsoft Defender pour point de terminaison et Microsoft 36
 
 Vous pouvez recevoir une notification d’attaque ciblée Spécialistes des menaces Microsoft via les supports suivants :
 
-- Page Microsoft 365'incidents du portail **Defender**
-- Tableau Microsoft 365 de bord **Alertes du** portail Defender
-- [API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) d’alerte OData et [API REST](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- Page Microsoft 365 Defender’incidents du portail **d’entreprise**
+- Tableau de bord Microsoft 365 Defender’alertes **du** portail d’entreprise
+- API d’alerte OData [et API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) [REST](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
 - [Table DeviceAlertEvents en](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) recherche avancée
-- Votre boîte de réception, si vous choisissez d’envoyer des notifications d’attaque ciblées par courrier électronique. Voir [Créer une règle de notification par courrier électronique ci-dessous.](#create-an-email-notification-rule)
+- Votre boîte de réception, si vous choisissez d’avoir des notifications d’attaque ciblées qui vous sont envoyées par courrier électronique. Voir [Créer une règle de notification par courrier électronique ci-dessous.](#create-an-email-notification-rule)
 
 ### <a name="create-an-email-notification-rule"></a>Créer une règle de notification par courrier électronique
 
@@ -91,14 +91,14 @@ Si vous êtes déjà un client Microsoft Defender pour points de terminaison, vo
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Consulter un expert microsoft en matière de menaces sur les activités de cybersécurité suspectes dans votre organisation
 
-Vous pouvez contacter Spécialistes des menaces Microsoft à partir du portail Microsoft 365 Defender. Les experts peuvent vous aider à comprendre les menaces complexes et les notifications d’attaque ciblée. Associez des experts pour obtenir plus de détails sur les alertes et les incidents, ou des conseils sur la gestion de la compromission. Obtenir des informations sur le contexte d’intelligence des menaces décrit par votre tableau de bord du portail.
+Vous pouvez contacter Spécialistes des menaces Microsoft à partir du portail Microsoft 365 Defender web. Les experts peuvent vous aider à comprendre les menaces complexes et les notifications d’attaque ciblée. Associez des experts pour obtenir plus de détails sur les alertes et les incidents, ou des conseils sur la gestion de la compromission. Obtenir des informations sur le contexte d’intelligence des menaces décrit par votre tableau de bord du portail.
 
 > [!NOTE]
 >
 > - Les demandes d’alerte liées aux données d’intelligence contre les menaces personnalisées de votre organisation ne sont actuellement pas pris en charge. Pour plus d’informations, consultez vos opérations de sécurité ou votre équipe de réponse aux incidents.
 > - Vous devez avoir l’autorisation Gérer les **paramètres** de sécurité dans le Centre de sécurité dans le portail Microsoft 365 Defender pour soumettre une demande par le biais du formulaire Consulter **un expert** en menaces.
 
-1. Accédez à la page du portail liée aux informations que vous souhaitez examiner : par **exemple,** Périphérique, Alerte ou **Incident.** Assurez-vous que la page du portail liée à votre requête est en vue avant d’envoyer une demande d’enquête.
+1. Accédez à la page du portail liée aux informations que vous souhaitez examiner : par **exemple,** Périphérique, Alerte ou **Incident**. Assurez-vous que la page du portail liée à votre requête est en vue avant d’envoyer une demande d’enquête.
 
 2. Dans le menu supérieur, sélectionnez **? Consultez un expert en menaces.**
 
@@ -129,7 +129,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 
 - Nous avons vu un nouveau type d’alerte pour un fichier binaire « living-off-the-land ». Nous pouvons fournir l’ID d’alerte. Pouvez-vous nous en dire plus sur cette alerte et sur la façon dont nous pouvons l’examiner plus en détail ?
 - Nous avons observé deux attaques similaires, qui tentent d’exécuter des scripts PowerShell malveillants mais génèrent des alertes différentes. L’une est « Ligne de commande PowerShell suspecte » et l’autre est « Un fichier malveillant a été détecté en fonction de l’indication fournie par O365 ». Quelle est la différence ?
-- Nous avons reçu une alerte impaire aujourd’hui concernant un nombre anormal d’échec de connexion à partir de l’appareil d’un utilisateur à profil élevé. We can’t find any further evidence for these attempts. Comment les Microsoft 365 Defender peuvent-elles voir ces tentatives ? Quel type de connexions sont surveillés ?
+- Nous avons reçu une alerte impaire aujourd’hui concernant un nombre anormal d’échec de connexion à partir de l’appareil d’un utilisateur à profil élevé. We can’t find any further evidence for these attempts. Comment pouvez Microsoft 365 Defender voir ces tentatives ? Quel type de connexions sont surveillés ?
 - Pouvez-vous donner plus de contexte ou d’informations sur l’alerte « Un comportement suspect a été observé par un utilitaire système » ?
 - J’ai observé une alerte intitulée « Création d’une règle de redirection/de redirection ». Je pense que l’activité est anodin. Pouvez-vous me dire pourquoi j’ai reçu une alerte ?
 
@@ -141,7 +141,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 ### <a name="threat-intelligence-details"></a>Détails de l’intelligence des menaces
 
 - Nous avons détecté un e-mail de hameçonnage qui a remis un document Word malveillant à un utilisateur. Le document a provoqué une série d’événements suspects, qui ont déclenché plusieurs alertes pour une famille de programmes malveillants particulière. Avez-vous des informations sur ce programme malveillant ? Si oui, pouvez-vous nous envoyer un lien ?
-- Nous avons récemment vu un billet de blog sur une menace ciblant notre secteur d’activité. Pouvez-vous nous aider à comprendre quelle protection Microsoft 365 Defender offre contre cet acteur des menaces ?
+- Nous avons récemment vu un billet de blog sur une menace ciblant notre secteur d’activité. Pouvez-vous nous aider à comprendre quelle protection Microsoft 365 Defender contre cet acteur des menaces ?
 - Nous avons récemment observé une campagne de hameçonnage menée contre notre organisation. Pouvez-vous nous indiquer si cela a été ciblé spécifiquement à notre entreprise ou secteur vertical ?
 
 ### <a name="microsoft-threat-experts-alert-communications"></a>Spécialistes des menaces Microsoft les communications d’alerte de l’Spécialistes des menaces Microsoft
@@ -151,7 +151,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 - Nous avons reçu une notification d’attaque ciblée de Spécialistes des menaces Microsoft. Quelles données pouvez-vous nous fournir que nous pouvons transmettre à notre équipe de réponse aux incidents ?
 
 > [!NOTE]
-> Spécialistes des menaces Microsoft est un service de recherche de menace gérée et non un service de réponse aux incidents. Toutefois, les experts peuvent passer en toute transparence de l’examen aux services d’équipe de détection et de réponse de Microsoft Cybersecurity Solutions Group (CSG), le cas échéant. Vous pouvez également choisir de vous engager avec votre propre équipe de réponse aux incidents pour résoudre les problèmes nécessitant une réponse aux incidents.
+> Spécialistes des menaces Microsoft est un service de recherche de menace gérée et non un service de réponse aux incidents. Toutefois, vous pouvez faire appel à votre propre équipe de réponse aux incidents pour résoudre les problèmes nécessitant une réponse aux incidents. Si vous ne possédez pas votre propre équipe de réponse aux incidents et que vous souhaitez obtenir de l’aide de Microsoft, vous pouvez vous engager avec l’équipe de réponse aux incidents de cybersécurité CSS (CIRT). Ils peuvent ouvrir un ticket pour vous aider à répondre à vos questions.
 
 ## <a name="scenario"></a>Scénario
 

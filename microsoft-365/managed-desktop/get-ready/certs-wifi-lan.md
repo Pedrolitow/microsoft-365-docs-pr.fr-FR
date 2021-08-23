@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e6c6c6f2e77ef81efae29f98baa85feafada9724cc12623bf1501316a91a38f5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5722a0261a0e336b5d6e6b2f5a0e3bb0c21f2b6
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819198"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365020"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Préparer les certificats et les profils réseau pour le Bureau géré Microsoft  
  
@@ -87,14 +87,16 @@ Pour déployer des certificats et des profils, suivez les étapes suivantes :
 4. Créez un profil pour chaque VPN d’entreprise (voir Windows 10 et Windows paramètres de périphérique holographique pour ajouter des connexions VPN à l’aide [d’Intune).](/intune/vpn-settings-windows-10)
 5. Envoyez une demande de support intitulée « Déploiement de certificats » ou « Déploiement de profil Wi-Fi » aux opérations informatiques Microsoft Manged Desktop à l’aide du portail d’administration Microsoft Manged Desktop pour examiner et déployer le profil de configuration sur « Appareils de lieux de travail modernes – Test ». Microsoft Manged Desktop Les opérations informatiques vous feront savoir quand la demande est terminée via la demande de support dans le portail d’administration. 
  
-## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Étapes pour vous préparer à la Microsoft Manged Desktop
 
-1. Examiner [les conditions préalables pour Microsoft Manged Desktop](prerequisites.md).
-2. Utiliser [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
-3. [Conditions préalables pour les comptes invité](guest-accounts.md)
-4. [Configuration du réseau pour Bureau géré Microsoft](network.md)
-5. [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md) (Cet article)
-6. [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](authentication.md)
-7. [Applications dans le Bureau géré Microsoft](apps.md)
-8. [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md)
-9. [Préparer des ressources d’impression pour le Bureau géré Microsoft](printing.md) 
+1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
+2. Exécutez [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
+1. Acheter [Portail d’entreprise](../get-started/company-portal.md).
+1. Examinez [les conditions préalables pour les comptes invités.](guest-accounts.md)
+1. Vérifiez [la configuration du réseau.](network.md)
+1. Préparer les certificats et les profils réseau (cet article).
+1. [Préparer l’accès des utilisateurs aux données.](authentication.md)
+1. [Préparer les applications.](apps.md)
+1. [Préparez les lecteurs mappés.](mapped-drives.md)
+1. [Préparer les ressources d’impression.](printing.md)
+1. Noms des [périphériques d’adresse.](address-device-names.md)
