@@ -14,18 +14,18 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 8c31ed87e8662d8e0b2bdc6321f980621a7c08d7c32fa4f7b0c7d6fc285042c9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fb639139e083ed613dea018131e7748cd063e37c
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888289"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372528"
 ---
 # <a name="step-1-create-a-test-base-account"></a>Étape 1 : Créer un compte de base de test
 
-Si vous n’avez pas d’abonnement Azure, créez [un compte gratuit](https://azure.microsoft.com/en-us/free/) avant de commencer.
+Si vous n’avez pas d’abonnement Azure, créez [un compte gratuit](https://azure.microsoft.com/free/) avant de commencer.
 
-## <a name="enter-details-for-test-base-account"></a>Entrer les détails du compte de base de test
+## <a name="enter-details-for-test-base-account"></a>Entrer des détails pour le compte de base de test
  
 1. Recherchez **« Base de test »** dans le portail Azure.
 

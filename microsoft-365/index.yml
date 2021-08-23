@@ -51,7 +51,7 @@ productDirectory:
           text: Planifier et déployer une solution vocale Teams
         - url: /MicrosoftTeams/business-voice/whats-business-voice
           text: Microsoft 365 Business Voice
-        - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
+        - url: /MicrosoftTeams/cloud-voice-landing-page
           text: Solutions de téléphonie Microsoft
     - title: Collaborer avec votre équipe
       imageSrc: 'https://docs.microsoft.com/office/media/icons/users-people.svg'
@@ -155,7 +155,7 @@ additionalContent:
             - text: Centre d’administration Microsoft 365
               url: admin/index.yml
             - text: Microsoft 365 Business Premium
-              url: business/index.yml
+              url: admin/index.yml
             - text: Microsoft 365 pour entreprise
               url: enterprise/index.yml
             - text: Conformité Microsoft 365

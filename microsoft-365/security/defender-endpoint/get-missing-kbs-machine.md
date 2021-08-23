@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 30428565f082610c64c65da88fad614ef755e557fa56b0fc278cc62bf9d88c26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b2305472f19ac0424861a30034c2fdd45bd753c
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829314"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399730"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Obtenir les ko manquants par ID d’appareil
 
@@ -42,12 +42,19 @@ Récupère les ko manquants (mises à jour de sécurité) par ID d’appareil
 ```http
 GET /api/machines/{machineId}/getmissingkbs
 ```
+## <a name="permissions"></a>Autorisations
+
+L’autorisation suivante est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison.](apis-intro.md)
+
+Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
+:---|:---|:---
+Application | Software.Read.All | « Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
 
 ## <a name="request-header"></a>En-tête de requête
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -87,13 +94,12 @@ Voici un exemple de réponse.
             "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4540673",
             "machineMissedOn": 1,
             "cveAddressed": 97
-        },
-         ...
+        }
         ]
 }
 ```
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez l’archivage à extension automatique, qui fournit un stockage d’archivage illimité pour Exchange Online boîtes aux lettres.
-ms.openlocfilehash: 20be08209bbd4bad3bf0bdb0e7de4d602ee995a2873116981a9f7d892ffd1e46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3473145231a70942311b5855036220fa247f0716
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841262"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372675"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Vue d’ensemble de l’archivage illimité
 
@@ -57,7 +57,7 @@ Voici une vue d’ensemble rapide du processus.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Qu’est-ce qui est déplacé vers l’espace de stockage d’archivage supplémentaire ?
 
-Pour utiliser efficacement le stockage d’archives à extension automatique, les dossiers peuvent être déplacés. Microsoft 365 détermine quels dossiers sont déplacés lorsque du stockage supplémentaire est ajouté à l’archive. Parfois, lorsqu’un dossier est déplacé, un ou plusieurs sous-dossiers sont automatiquement créés et les éléments du dossier d’origine sont distribués dans ces dossiers pour faciliter le processus de déplacement. Lorsque vous affichez la partie archive de la liste des dossiers Outlook, ces sous-dossiers sont affichés sous le dossier d’origine.  La convention d’attribution de noms Microsoft 365 utilise pour nommer ces sous-_yyyy (créé sur **\<folder name\> mmm dd, aaa h_mm)**, où :
+Pour utiliser efficacement le stockage d’archives à extension automatique, les dossiers peuvent être déplacés. Microsoft 365 détermine quels dossiers sont déplacés lorsque du stockage supplémentaire est ajouté à l’archive. Parfois, lorsqu’un dossier est déplacé, un ou plusieurs sous-dossiers sont automatiquement créés et les éléments du dossier d’origine sont distribués dans ces dossiers pour faciliter le processus de déplacement. Lorsque vous affichez la partie archive de la liste des dossiers dans Outlook, ces sous-dossiers sont affichés sous le dossier d’origine.  La convention d’attribution de noms Microsoft 365 utilise pour nommer ces sous-_yyyy (créé sur **\<folder name\> mmm dd, yyyy h_mm)**, où :
 
 - **yyyy est l’année** de réception des messages dans le dossier.
 
@@ -90,15 +90,15 @@ Voici quelques éléments à prendre en compte lorsque vous utilisez Outlook ou 
 
 - Vous pouvez accéder à n’importe quel dossier de votre boîte aux lettres d’archivage, y compris ceux qui ont été déplacés vers la zone de stockage à extension automatique.
 
+- Si une boîte aux lettres d’archivage possède au moins une zone de stockage à extension automatique, vous ne pouvez pas supprimer un dossier de la boîte aux lettres d’archivage ou de l’archive auxiliaire. En d’autres termes, une fois qu’une zone de stockage à extension automatique a été mise en service, vous ne pouvez supprimer aucun dossier dans l’archive.
+
+- Vous pouvez supprimer des éléments dans une zone de stockage à extension automatique. Toutefois, vous ne pouvez pas utiliser la fonctionnalité Récupérer les éléments supprimés pour récupérer un élément supprimé d’une zone de stockage à extension automatique.
+
 - La recherche d’archivage à extension automatique est disponible dans Outlook pour le web (OWA). À l’exemple de l’archive en ligne, vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire. Lorsque l’archive est sélectionnée en tant qu’étendue de recherche dans OWA, toutes les archives (y compris les archives à extension automatique) et leurs sous-documents correspondants sont recherchés.
 
 - La recherche d’archives à extension automatique est disponible dans Outlook bureau dans le canal actuel (prévisualisation). Dans cet aperçu, l’étendue Boîte aux lettres actuelle est disponible, ce qui vous permet d’effectuer des recherches dans l’archive à extension automatique. Pour plus d’informations sur cette fonctionnalité et d’autres [fonctionnalités](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)Recherche Microsoft prise en charge, voir Comment Outlook pour Windows connecté à Exchange Online utilise Recherche Microsoft . 
 
 - Le nombre d’éléments Outlook et le nombre de lecture/non lus (en Outlook et Outlook sur le web) dans une archive à extension automatique peuvent ne pas être exacts.
-
-- Vous pouvez supprimer des éléments dans un sous-dossier qui pointe vers une zone de stockage à extension automatique, mais le dossier lui-même ne peut pas être supprimé.
-
-- Vous ne pouvez pas utiliser la fonctionnalité Récupérer les éléments supprimés pour récupérer un élément qui a été supprimé d’une zone de stockage à extension automatique.
 
 ## <a name="auto-expanding-archiving-and-other-compliance-features"></a>Archivage à extension automatique et autres fonctionnalités de conformité
 

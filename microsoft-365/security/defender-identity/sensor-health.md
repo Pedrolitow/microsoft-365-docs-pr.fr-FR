@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 0c2d8fd75b33903696682e6fd196ef4ce12ab2ca101cfe32e23fbce0614dd8a5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2052652e1ded79d8605c5b5f84b82d8c6504fd9
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844492"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360135"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender pour l’état et les paramètres du capteur d’identité dans Microsoft 365 Defender
 
@@ -84,28 +84,6 @@ Cet article explique comment configurer et surveiller les capteurs [d’identit�
 1. Copiez **la touche d’accès rapide.** La touche d’accès rapide est requise pour que le capteur Defender for Identity se connecte à votre instance de Defender for Identity. La touche d’accès rapide est un mot de passe unique pour le déploiement du capteur, après quoi toutes les communications sont effectuées à l’aide de certificats pour l’authentification et le chiffrement TLS. Utilisez le **bouton de clé** Régénérer si vous avez besoin de régénérer la nouvelle touche d’accès rapide. Elle n’affecte aucun capteur précédemment déployé, car elle est utilisée uniquement pour l’inscription initiale du capteur.
 
 1. Copiez le package sur le serveur ou le contrôleur de domaine dédié sur lequel vous installez le capteur Defender for Identity.
-
-## <a name="configure-directory-services-account"></a>Configurer le compte des services d’annuaire
-
-Pour connecter le capteur à vos domaines Active Directory, vous devez configurer les comptes des services d’annuaire.
-
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Paramètres** and then **Identities**.
-
-    ![Go to Paramètres, then Identities](../../media/defender-identity/settings-identities.png)
-
-1. Sélectionnez **des comptes de service d’annuaire.** Vous verrez quels comptes sont associés à quels domaines.
-
-    ![Comptes de service d’annuaire](../../media/defender-identity/directory-service-accounts.png)
-
-1. Si vous sélectionnez un compte, un volet s’ouvre avec les paramètres de ce compte.
-
-    ![Paramètres du compte](../../media/defender-identity/account-settings.png)
-
-1. Pour ajouter un nouveau compte  de services d’annuaire, sélectionnez Créer un compte et remplissez le nom de **compte,** le domaine **et** le mot de **passe.** Vous pouvez également choisir s’il s’agit d’un compte de **service** géré de groupe (gMSA) et s’il appartient à un **domaine d’étiquette unique.**
-
-    ![Nouveau compte de service d’annuaire](../../media/defender-identity/new-directory-service-account.png)
-
-1. Sélectionnez **Enregistrer**.
 
 ## <a name="see-also"></a>Voir aussi
 

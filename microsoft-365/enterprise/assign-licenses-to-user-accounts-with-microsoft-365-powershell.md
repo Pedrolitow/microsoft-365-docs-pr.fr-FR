@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Dans cet article, découvrez comment utiliser PowerShell pour attribuer une licence Microsoft 365 aux utilisateurs sans licence.
-ms.openlocfilehash: 08aab95c0d864437210de557bd48b9bb0a0ee3e2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 2af81099b2771c69b642308fb50500b358d64780
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356035"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58417962"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Attribuer Microsoft 365 licences d’utilisateur à des comptes d’utilisateur avec PowerShell
 
@@ -40,7 +40,7 @@ Les comptes synchronisés à partir de vos services de domaine Active Directory 
 
 - Le Centre d’administration Microsoft 365
  - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
- - Le [portail Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Utilisateurs Active Directory**> compte d’utilisateur > informations de contact du profil  >   Pays ou   >    >  **région**).
+ - Le [portail Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Utilisateurs Active Directory**> compte d’utilisateur > informations de contact du profil Pays ou  >     >    >  **région**).
 
 >[!Note]
 >[Découvrez comment attribuer des licences à des comptes d’utilisateurs](../admin/manage/assign-licenses-to-users.md) à l’Centre d’administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
@@ -103,7 +103,7 @@ Pour rechercher les comptes sans permis dans votre organisation, exécutez cette
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-Vous pouvez uniquement attribuer des licences à des comptes d’utilisateurs dont la propriété **UsageLocation** est définie sur un code pays ISO 3166-1 alpha-2 valide. Par exemple, US pour les États-Unis et FR pour la France. Certains Microsoft 365 ne sont pas disponibles dans certains pays. Pour plus d’informations, voir [à propos des restrictions de licence.](https://go.microsoft.com/fwlink/p/?LinkId=691730)
+Vous pouvez uniquement attribuer des licences à des comptes d’utilisateur dont la propriété **UsageLocation** est définie sur un code pays ISO 3166-1 alpha-2 valide. Par exemple, US pour les États-Unis et FR pour la France. Certains Microsoft 365 ne sont pas disponibles dans certains pays. Pour plus d’informations, voir [à propos des restrictions de licence.](https://go.microsoft.com/fwlink/p/?LinkId=691730)
     
 Pour rechercher des comptes qui n’ont pas de valeur **UsageLocation,** exécutez cette commande.
 
@@ -117,7 +117,7 @@ Pour définir la **valeur UsageLocation** sur un compte, exécutez cette command
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-Par exemple :
+Par exemple :
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
@@ -192,10 +192,6 @@ $subscriptionTo="<SKU part number of the new subscription>"
 # Unassign
 $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
-$licenses.AddLicenses = $license
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
-$licenses.AddLicenses = @()
 $licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 # Assign

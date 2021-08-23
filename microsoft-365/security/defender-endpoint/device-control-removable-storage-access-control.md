@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 769ccb8f50a6eb407d5a1a338f91af0bfd8ae401
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c65fcb93740f975c34534e1af244dcca20ce043c
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246212"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387127"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
@@ -38,7 +38,7 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 
 | Privilège | Autorisation |
 |:---|:---|
-| Access | Lecture, Écriture, Exécution |
+| Accès | Lecture, Écriture, Exécution |
 | Action Mode | Auditer, autoriser, empêcher |
 | Prise en charge du programme CSP | Oui |
 | Prise en charge des GPO | Oui |
@@ -51,7 +51,7 @@ Déployez le contrôle d Stockage’accès amovible sur Windows 10 qui ont un cl
 
 - **4.18.2104** ou version ultérieure : Ajouter SerialNumberId, VID_PID, prise en charge des GPO basés sur filepath, ComputerSid
 - **4.18.2105** ou version ultérieure : ajouter la prise en charge des caractères génériques pour HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinaison d’un utilisateur spécifique sur un ordinateur spécifique, la prise en charge du SSD (Un SSD Extrême SanDisk)/USB Attached SCSI (UAS)
-- **4.18.2107** ou une ultérieure : ajouter la prise en charge Windows appareil portable (WPD) (pour les appareils mobiles, tels que les tablettes)
+- **4.18.2107** ou ultérieur : ajouter la prise en charge Windows appareil portable (WPD) (pour les appareils mobiles, tels que les tablettes) ; ajouter AccountName dans le [recherche avancée](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
 :::image type="content" source="images/powershell.png" alt-text="Interface PowerShell":::
 
@@ -79,9 +79,9 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 |ExcludedIDList     | Groupes à qui la stratégie ne sera pas appliquée.        |    L’ID de groupe/GUID doit être utilisé à cette instance.     |
 |ID d’entrée     |  Un policyRule peut avoir plusieurs entrées ; chaque entrée avec un GUID unique indique à Device Control une restriction.       |         |
 |Type|Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. </br>- Application : autoriser ou refuser </br>- Audit : AuditAllowed ou AuditDenied|- Autoriser </br>- Refuser</br> - AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé</br>- AuditDenied : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec **l’entrée** de refus. </br></br> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier de la stratégie. Un exemple de type de conflit est **Allow** et **Deny**.|
-|Sid|Sid de l’ordinateur local ou sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un utilisateur ou un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et d’une entrée sans sid signifie appliquer la stratégie sur l’ordinateur.||
+|Sid|Le sid de l’ordinateur local ou le sid de l’objet AD définit s’il faut appliquer cette stratégie sur un utilisateur ou un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et d’une entrée sans sid signifie appliquer la stratégie sur l’ordinateur.||
 |ComputerSid|Sid de l’ordinateur local ou sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un ordinateur ou un groupe d’ordinateurs spécifique ; une entrée peut avoir un maximum d’un ComputerSid et une entrée sans ComputerSid signifie appliquer la stratégie sur l’ordinateur. Si vous souhaitez appliquer une entrée à un utilisateur spécifique et à un ordinateur spécifique, ajoutez Sid et ComputerSid dans la même entrée.||
-|Options|Définit s’il faut afficher la notification ou non|**0-4 : lorsque** le type Autoriser ou Refuser est sélectionné.</br></br>0 : rien</br>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. </br> </br>Lorsque type **AuditAllowed ou** **AuditDenied** est sélectionné :</br>0 : rien</br>1 : afficher la notification</br>2 : événement d’envoi</br>3 : afficher la notification et envoyer un événement|
+|Options|Définit si les notifications sont affichées ou non|**0-4 : lorsque** le type Autoriser ou Refuser est sélectionné.</br></br>0 : rien</br>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. </br> </br>Lorsque type **AuditAllowed ou** **AuditDenied** est sélectionné :</br>0 : rien</br>1 : afficher la notification</br>2 : événement d’envoi</br>3 : afficher la notification et envoyer un événement|
 |AccessMask|Définit l’accès.|**1-7**: </br></br>1 : lecture</br>2 : Écriture</br>3 : Lecture et écriture</br>4 : Exécuter</br>5 : Lecture et exécution</br>6 : Écriture et exécution</br>7 : Lecture et écriture et exécution|
 ||||
 
@@ -119,7 +119,7 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Remov
 
 La fonctionnalité De Stockage contrôle d’accès amovible vous permet d’appliquer une stratégie via la stratégie de groupe à l’utilisateur ou à l’appareil, ou aux deux.
 
-### <a name="licensing"></a>Licence
+### <a name="licensing"></a>Licences
 
 Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez confirmer [votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Stockage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
 
@@ -204,7 +204,7 @@ Le portail Microsoft 365 de sécurité affiche le stockage amovible bloqué par 
 ```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == &quot;RemovableStoragePolicyTriggered&quot;
+| where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
 | extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess) 
 | extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict) 
@@ -218,14 +218,13 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId) 
 | extend MediaVendorId = tostring(parsed.VendorId) 
 | extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| extend MediaVolume = tostring(parsed.Volume) 
-| project Timestamp, DeviceId, DeviceName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, MediaVolume
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
 | order by Timestamp desc
 ```
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Écran illustrant le blocage du stockage amovible":::
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>Quelle est la limite du support de stockage amovible pour le nombre maximal de objets de première utilisation ?
 

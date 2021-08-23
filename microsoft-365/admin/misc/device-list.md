@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: Découvrez comment faire un fichier CSV pour AutoPilot dans Microsoft 365 entreprise.
-ms.openlocfilehash: bc67e32d834ec8fde13386fb02ef1368ca3757cef47e78575d00a3e3d2fc6db3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d3785d85654c1e055d0f1b36dad50485d4e82fd9
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824118"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377743"
 ---
 # <a name="device-list-csv-file"></a>Fichier CSV de liste d’appareils
 
@@ -48,10 +48,8 @@ Vous pouvez obtenir ces informations à partir de votre fournisseur de matériel
 
 Lorsque vous ajoutez des appareils, vous devez également les ajouter à un profil. Un profil est utilisé pour appliquer des profils AutoPilot Deployment à un appareil ou à un groupe d’appareils.
   
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu connexe
 
-[Microsoft 365 documentation et ressources pour les entreprises](../../business/index.yml)
+[Microsoft 365 documentation et ressources pour les entreprises](../../index.yml)
   
-[Mise en place Microsoft 365 entreprise](../../business/microsoft-365-business-overview.md)
-  
-[Gérer Microsoft 365 entreprise](../../business/manage.md)
+[Mise en place Microsoft 365 entreprise](../../business-video/what-is-microsoft-365.md)

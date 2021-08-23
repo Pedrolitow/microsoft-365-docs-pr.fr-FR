@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6008e59abadc179f8e6580d56007ea88b9415ab5
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 51f85d57a7d05ed298b94632ab35cf215d5679b2
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254849"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58359972"
 ---
 #  <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyseur client sur macOS et Linux
 
@@ -39,7 +39,7 @@ ms.locfileid: "58254849"
 > [!NOTE]  
 > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : '029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85'.
 
-2.  Extrayez le contenu du XMDEClientAnalyzer.zip sur l’ordinateur.
+2.  Extrayez le contenu des XMDEClientAnalyzer.zip sur l’ordinateur.
 
 3.  Ouvrez une session terminal, modifiez le répertoire vers l’emplacement extrait et exécutez :
 
@@ -61,7 +61,7 @@ Sur Linux, si le script ne peut pas s’exécuter, vous devez d’abord exécute
 
 > [!NOTE]  
 > Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaiera de l’extraire du référentiel officiel pour les packages Python ci-dessous :  
-https://files.pythonhosted.org/packages/\*/lxml \* .whl
+https://files.pythonhosted.org/packages/\*/lxml .whl En outre, l’outil nécessite actuellement l’installation de Python version 3 ou \* ultérieure.
 
 Exemple :  
 

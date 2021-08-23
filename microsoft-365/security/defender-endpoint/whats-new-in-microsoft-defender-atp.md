@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56752128d68fae579ab1b15fbfb8ab1b2320f5f8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6f38c052c6c1755c0717d8b64987dd69b1a5826d
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257266"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387139"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "58257266"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Les fonctionnalités suivantes sont généralement disponibles dans la dernière version de Microsoft Defender pour Endpoint, ainsi que les fonctionnalités de sécurité dans Windows 10 et Windows Server.
 
@@ -48,7 +48,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 ## <a name="june-2021"></a>Juin 2021
 
-- [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exportation des évaluations des vulnérabilités et [des configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
+- [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exporter les évaluations des vulnérabilités et des [configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
 
 - [Exporter les évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) API <br> Ajoute une collection d’API qui Gestion des menaces et des vulnérabilités données par appareil. Il existe différents appels d’API pour obtenir différents types de données : évaluation de la configuration sécurisée, évaluation de l’inventaire logiciel et évaluation des vulnérabilités logicielles. Chaque appel d’API contient les données requises pour les appareils de votre organisation.
 
@@ -61,8 +61,15 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Les définitions de groupe d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) peuvent désormais inclure plusieurs valeurs pour chaque condition. Vous pouvez définir plusieurs balises, noms d’appareils et domaines sur la définition d’un seul groupe d’appareils.
 
+- [Prise en charge de la gestion des applications mobiles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Cette amélioration permet à Microsoft Defender for Endpoint de protéger les données d’une organisation au sein d’une application gérée lorsque Intune est utilisé pour gérer les applications mobiles. Pour plus d’informations sur la gestion des applications mobiles, [consultez cette documentation.](/microsoft-365/mem/intune/apps/mam-faq)
+
+- [Microsoft Tunnel Intégration VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel Les fonctionnalités VPN sont désormais intégrées à l’application Microsoft Defender for Endpoint pour Android. Cette unification permet aux organisations d’offrir une expérience utilisateur finaux simplifiée avec une application de sécurité, offrant à la fois une protection contre les menaces mobiles et la possibilité d’accéder aux ressources locales à partir de leur appareil mobile, tandis que les équipes informatiques et de sécurité peuvent conserver les mêmes expériences d’administration qu’elles connaissent.
+
+- [Détection d’jailbreak sur iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour Endpoint sur iOS est désormais généralement disponible. Cela s’ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, voir [La stratégie d’accès conditionnel du programme d’installation basée sur les signaux de risque de l’appareil.](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+
+
 ## <a name="march-2021"></a>Mars 2021
-- [Gérer la protection contre les falsifications à l’aide Centre de sécurité Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Vous pouvez gérer les paramètres de protection contre la falsification sur Windows 10, Windows Server 2016 et Windows Server 2019 à l’aide d’une méthode appelée *attachement client.*
+- [Gérer la protection contre les falsifications à l’aide Centre de sécurité Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Vous pouvez gérer les paramètres de protection contre les falsifications sur Windows 10, Windows Server 2016 et Windows Server 2019 à l’aide d’une méthode appelée attachement *client.*
 
 
 ## <a name="january-2021"></a>Janvier 2021
@@ -126,7 +133,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Laboratoire d’évaluation](evaluation-lab.md) <BR> Le laboratoire d’évaluation de Microsoft Defender pour points de terminaison est conçu pour éliminer la complexité de la configuration des appareils et de l’environnement afin de pouvoir vous concentrer sur l’évaluation des fonctionnalités de la plateforme, l’exécution de simulations et l’utilisation des fonctionnalités de prévention, de détection et de correction.
 
-- [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> Vous pouvez désormais intégrer Windows Server 2008 R2 SP1.
+- [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> Vous pouvez désormais intégrer Windows Server 2008 R2 SP1.
 
 ## <a name="june-2019"></a>Juin 2019
 
@@ -142,13 +149,13 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Indicateurs](ti-indicator.md) <BR> Les API pour les indicateurs sont désormais généralement disponibles.
 
-- [Interopérabilité](partner-applications.md) <BR> Microsoft Defender pour endpoint prend en charge des applications tierces pour améliorer les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme.
+- [Interopérabilité](partner-applications.md) <BR> Microsoft Defender pour le point de terminaison prend en charge des applications tierces pour améliorer les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme.
 
 ## <a name="april-2019"></a>Avril 2019
 
 - [Spécialistes des menaces Microsoft Fonctionnalité de notification d’attaque ciblée](microsoft-threat-experts.md) <BR> Les alertes de notification d’attaque ciblée d’Spécialistes des menaces Microsoft sont adaptées aux organisations pour fournir autant d’informations que possible rapidement, ce qui a pour effet d’attirer l’attention sur les menaces critiques sur leur réseau, notamment la chronologie, l’étendue de la violation et les méthodes d’intrusion.
 
-- [API Microsoft Defender pour point de terminaison](apis-intro.md) <BR> Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Microsoft Defender for Endpoint.
+- [API Microsoft Defender pour point de terminaison](apis-intro.md) <BR> Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Microsoft Defender for Endpoint.
 
 ## <a name="february-2019"></a>Février 2019
 
@@ -162,7 +169,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Accès contrôlé aux dossiers](enable-controlled-folders.md)<BR> L’accès contrôlé aux dossiers est désormais pris en charge Windows Server 2019.
 
-- [Détection personnalisée](manage-indicators.md)<BR>Avec les détections personnalisées, vous pouvez créer des requêtes personnalisées pour surveiller les événements pour tout type de comportement, comme les menaces suspectes ou émergentes. Pour ce faire, vous pouvez tirer parti de la puissance du repérage avancé via la création de règles de détection personnalisées.
+- [Détection personnalisée](manage-indicators.md)<BR>Avec les détections personnalisées, vous pouvez créer des requêtes personnalisées pour surveiller les événements pour tout type de comportement, comme les menaces suspectes ou émergentes. Pour ce faire, vous pouvez tirer parti de la puissance du repérage avancé par le biais de la création de règles de détection personnalisées.
 
 - [Intégration à Azure Defender](configure-server-endpoints.md)<BR> Microsoft Defender pour point de terminaison s’intègre à Azure Defender pour fournir une solution de protection serveur complète. Avec cette intégration, Azure Defender peut tirer parti de la puissance de Microsoft Defender for Endpoint pour fournir une détection améliorée des menaces pour Windows serveurs.
 
@@ -223,4 +230,4 @@ Vous pouvez désormais empêcher les processus nontrus d’écrire dans les sect
 - [Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)<BR>
 Antivirus Microsoft Defender partage désormais l’état de détection entre Microsoft 365 services et interaérette avec Microsoft Defender pour Endpoint. Pour plus d’informations, voir Utiliser les technologies de nouvelle génération dans Antivirus Microsoft Defender via la [protection cloud.](cloud-protection-microsoft-defender-antivirus.md)
 
-    Bloquer à la première vue peut désormais bloquer les fichiers exécutables non portables (tels que JS, VBS ou macros) ainsi que les fichiers exécutables. Pour plus d’informations, voir [Activer bloquer à la première vue.](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+    Bloquer à la première vue peut désormais bloquer les fichiers exécutables non portables (tels que JS, VBS ou macros), ainsi que les fichiers exécutables. Pour plus d’informations, voir [Activer bloquer à la première vue.](configure-block-at-first-sight-microsoft-defender-antivirus.md)

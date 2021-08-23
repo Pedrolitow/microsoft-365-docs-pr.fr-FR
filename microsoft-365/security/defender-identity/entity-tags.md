@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 2dcb7767be7145420c08161782f27a51ec38727ae5d427459c4af1d9676cd37d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3e8ff4f94b0295b4ce42e20175a3547cfb4ae23
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844761"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58359882"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Balises d’entité Defender for Identity dans Microsoft 365 Defender
 
@@ -24,7 +24,7 @@ ms.locfileid: "53844761"
 Cet article explique comment appliquer des [balises d’entité d’identité Microsoft Defender](/defender-for-identity) [dans Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
->Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender for Identity. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
+>Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender pour l’identité. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
 
 ## <a name="entity-tags"></a>Balises d'entités
 
@@ -34,7 +34,7 @@ Pour définir ces balises, dans [Microsoft 365 Defender](https://security.micros
 
 ![Go to Paramètres, then Identities](../../media/defender-identity/settings-identities.png)
 
-Les paramètres de balise s’affichent dans la **Paramètres** colonne.
+Les paramètres de balise apparaissent sous les **balises d’entité.**
 
 ![Types de paramètres de balise](../../media/defender-identity/tag-settings.png)
 
@@ -46,7 +46,7 @@ La **balise Sensitive permet** d’identifier les ressources à valeur élevée.
 
 Vous pouvez également marquer manuellement les utilisateurs, les appareils ou les groupes comme sensibles.
 
-1. Sélectionnez **balise Sensible**. Vous verrez ensuite les **utilisateurs,** périphériques et groupes sensibles **existants.** 
+1. Sélectionnez **Sensible**. Vous verrez ensuite les **utilisateurs,** périphériques et groupes sensibles **existants.** 
 
     ![Entités sensibles](../../media/defender-identity/sensitive-entities.png)
 
@@ -64,7 +64,7 @@ Les entités honeytoken sont utilisées comme des captures pour les acteurs malv
 
 Vous pouvez marquer des utilisateurs ou des appareils avec la balise **Honeytoken** de la même façon que vous balisez des comptes sensibles.
 
-1. Sélectionnez **la balise Honeytoken**. Vous verrez ensuite les utilisateurs et appareils « honeytoken **»** **existants.**
+1. Sélectionnez **Honeytoken**. Vous verrez ensuite les utilisateurs et appareils « honeytoken **»** **existants.**
 
     ![Entités Honeytoken](../../media/defender-identity/honeytoken-entities.png)
 
@@ -74,13 +74,13 @@ Vous pouvez marquer des utilisateurs ou des appareils avec la balise **Honeytoke
 
 1. Sélectionnez votre utilisateur, puis cliquez sur **Ajouter une sélection.**
 
-    ![Ajouter un utilisateur sélectionné](../../media/defender-identity/add-selected-user.png)
+    ![Ajouter l’utilisateur sélectionné](../../media/defender-identity/add-selected-user.png)
 
 ## <a name="exchange-server-tags"></a>Exchange balises de serveur
 
 Defender for Identity considère les serveurs Exchange comme des ressources à valeur élevée et les balise automatiquement comme **sensibles.** Vous pouvez également marquer manuellement les appareils comme Exchange serveurs.
 
-1. Sélectionnez **Exchange balise de serveur.** Vous verrez ensuite les appareils existants étiquetés avec la **balise Exchange serveur.**
+1. Sélectionnez **Exchange serveur.** Vous verrez ensuite les appareils existants étiquetés avec la **balise Exchange serveur.**
 
     ![Exchange serveurs](../../media/defender-identity/exchange-servers.png)
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a67ec7ce5e71ed5b0275f509928d4acaa2b7c4b1f89db971353fc27fb98c650d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7ffd136bd770369248b2f0735deb42e62f372632
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884522"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372819"
 ---
 # <a name="update-machine"></a>Mettre à jour l’ordinateur 
 
@@ -73,7 +73,7 @@ PATCH /api/machines/{machineId}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|String|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -86,14 +86,14 @@ Pour de meilleures performances, vous ne devez pas inclure de valeurs existantes
 
 Propriété|Type|Description
 :---|:---|:---
-machineTags|Collection de chaînes|Ensemble de [balises d’ordinateur.](machine.md)
+machineTags|String collection|Ensemble de [balises d’ordinateur.](machine.md)
 deviceValue|Nullable, enum|Valeur [de l’appareil.](tvm-assign-device-value.md) Les valeurs possibles sont : « Normal » (normal), « Low » (faible) et « High » (élevé).
 
 ## <a name="response"></a>Réponse
 
 Si elle réussit, cette méthode renvoie 200 OK et l’entité [de l’ordinateur](machine.md) dans le corps de la réponse avec les propriétés mises à jour.
 
-Si la collection de balises de l’ordinateur dans le corps ne contient pas de balises d’ordinateur existantes - 400 Entrée non valide et un message informant les balises manquantes.
+Si la collection de balises d’ordinateur dans le corps ne contient pas de balises d’ordinateur existantes , remplace toutes les balises par les balises fournies dans le corps de la demande.
 
 Si l’ordinateur avec l’ID spécifié est in trouvé - 404 - In trouvé.
 

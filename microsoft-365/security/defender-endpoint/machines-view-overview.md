@@ -1,7 +1,7 @@
 ---
 title: Afficher et organiser la liste des appareils Microsoft Defender pour les points de terminaison
 description: Découvrez les fonctionnalités disponibles que vous pouvez utiliser dans la liste Appareils, telles que le tri, le filtrage et l’exportation de la liste pour améliorer les investigations.
-keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
+keywords: trier, filtrer, exporter, csv, nom de l’appareil, domaine, dernière vue, IP interne, état d’état, alertes actives, détections de programmes malveillants actifs, catégorie de menace, passer en revue les alertes, réseau, connexion, programme malveillant, type, programme malveillant, programme malveillant, ransomware, attaque, menace, programme malveillant général, logiciel indésirable
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4cf27d7d65df613969f46f05c6b5085a448675f2cae3a325f4308d9f72ba8c4c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c6a148c6ee332800a80e0ca9f3aea8403d2053b
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868006"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360032"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Afficher et organiser la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "53868006"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 La **liste Appareils affiche** la liste des appareils de votre réseau sur lequel des alertes ont été générées. Par défaut, la file d’attente affiche les appareils visibles au cours des 30 derniers jours.  
 
@@ -56,6 +56,14 @@ Pendant le processus d’intégration, la liste **Appareils** est progressivemen
 
 Vous pouvez appliquer les filtres suivants pour limiter la liste des alertes et obtenir une vue plus centrée.
 
+### <a name="device-name"></a>Nom du périphérique
+
+Sélectionnez le nom de l’appareil que vous souhaitez examiner.
+
+### <a name="domain"></a>Domaine
+
+Sélectionnez le domaine qui vous intéresse.
+
 ### <a name="risk-level"></a>Niveau de risque
 
 Le niveau de risque reflète l’évaluation globale des risques de l’appareil en fonction d’une combinaison de facteurs, notamment les types et la gravité des alertes actives sur l’appareil. La résolution des alertes actives, l’approbation des activités de correction et la suppression des alertes suivantes peuvent réduire le niveau de risque.
@@ -66,50 +74,54 @@ Le niveau d’exposition reflète l’exposition actuelle de l’appareil en fon
 
 Si le niveau d’exposition indique « Aucune donnée disponible », il existe plusieurs raisons pour lesquelles cela peut être le cas :
 
-- L’appareil a cessé de signaler pendant plus de 30 jours. Dans ce cas, il est considéré comme inactif et l’exposition n’est pas calculée
-- Le système d’exploitation de l’appareil n’est [pas pris en charge : voir la conditions minimales requises pour Microsoft Defender pour endpoint](minimum-requirements.md)
-- Appareil avec agent obsolète (très peu probable)
+- L’appareil a cessé de signaler pendant plus de 30 jours. Dans ce cas, il est considéré comme inactif et l’exposition n’est pas calculée.
+- Le système d’exploitation de l’appareil n’est pas pris en charge : consultez les conditions [minimales requises pour Microsoft Defender pour endpoint.](minimum-requirements.md)
+- Appareil avec agent obsolète (peu probable).
 
 ### <a name="os-platform"></a>Plateforme du système d’exploitation
 
 Sélectionnez uniquement les plateformes de système d’exploitation qui vous intéressent.
+
+### <a name="windows-10-versions"></a>Windows 10 versions
+
+Sélectionnez uniquement les Windows 10 versions que vous souhaitez examiner.
 
 ### <a name="health-state"></a>État d’intégrité
 
 Filtrez selon les états d’état d’état d’appareil suivants :
 
 - **Actif**: appareils qui rapportent activement des données de capteur au service.
-- **Inactif**: appareils qui ont complètement cessé d’envoyer des signaux pendant plus de 7 jours.
+- **Inactif**: appareils qui ont cessé d’envoyer des signaux pendant plus de 7 jours.
 - **Mal configuré : appareils** dont les communications avec le service sont réduites ou qui ne peuvent pas envoyer de données de capteur. Les appareils mal configurés peuvent également être classés sur :
   - Aucune donnée de capteur
   - Communications compromises
 
   Pour plus d’informations sur la façon de résoudre les problèmes sur les appareils mal configurés, voir corriger les [capteurs défectueux.](fix-unhealthy-sensors.md)
 
-### <a name="antivirus-status"></a>État de l’antivirus
+### <a name="onboarding-status"></a>État de l’intégration
 
-Filtrer les appareils par état antivirus. S’applique uniquement aux Windows 10 actifs.
+L’état d’intégration indique si l’appareil est actuellement intégré à Microsoft Defender pour le point de terminaison ou non. Vous pouvez filtrer selon les états suivants :
 
-- **Désactivé :** la protection contre & virus est désactivée.
-- **Not reporting** : la protection contre & contre les virus n’est pas un rapport.
-- **Non mis à jour** : la protection & contre les virus n’est pas à jour.
+- **Intégré :** le point de terminaison est intégré à Microsoft Defender pour endpoint.
 
-Pour plus d’informations, consultez le tableau de [bord gestion & des menaces et des vulnérabilités.](tvm-dashboard-insights.md)
+- **Peut être intégré :** le point de terminaison a été découvert dans le réseau en tant qu’appareil pris en charge, mais il n’est pas actuellement intégré. Microsoft recommande vivement l’intégration de ces appareils.
 
-### <a name="threat-mitigation-status"></a>État de l’atténuation des menaces
+- **Non pris en charge**: le point de terminaison a été découvert dans le réseau, mais n’est pas pris en charge par Microsoft Defender pour endpoint.
 
-Pour afficher les appareils qui peuvent être affectés par une certaine menace, sélectionnez-la dans le menu déroulant, puis sélectionnez les aspects de vulnérabilité à atténuer.
+- **Informations insuffisantes**: le système n’a pas pu déterminer la prise en charge de l’appareil.
 
-Pour en savoir plus sur certaines menaces, consultez [l’analyse des menaces.](threat-analytics.md) Pour plus d’informations sur l’atténuation, [voir Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md).
+### <a name="last-device-update"></a>Dernière mise à jour de périphérique
 
-### <a name="windows-10-version"></a>Version Windows 10
+Filtrez votre affichage en fonction de la dernière mise à jour de l’appareil.
 
-Sélectionnez uniquement les Windows 10 versions que vous souhaitez examiner.
+### <a name="first-seen"></a>Première vue
 
-### <a name="tags--groups"></a>Balises & groupes
+Filtrez votre affichage en fonction du moment où l’appareil a été vu pour la première fois sur le réseau ou de la première fois qu’il a été signalé par le capteur Microsoft Defender for Endpoint.
 
-Filtrez la liste en fonction du regroupement et du marquage que vous avez ajoutés à des appareils individuels. Voir [Créer et gérer des balises d’appareil](machine-tags.md) et créer et gérer des groupes [d’appareils.](machine-groups.md)
+### <a name="tags"></a>Balises
 
-## <a name="related-topics"></a>Sujets connexes
+Filtrez la liste en fonction du regroupement et du marquage que vous avez ajoutés à des appareils individuels. Voir [Créer et gérer des balises d’appareil.](machine-tags.md)
+
+## <a name="related-topics"></a>Voir aussi
 
 - [Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison](investigate-machines.md)

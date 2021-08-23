@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e9f65d7280ccbc2b780a693e1c259e3f3d6c6400
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 452a8238499f4c083b24c6ab01a95696334e6081
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357004"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372711"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
 
@@ -41,7 +41,7 @@ Cet article explique comment déployer Defender pour endpoint sur Linux à l’a
 - [Télécharger le package d’intégration](#download-the-onboarding-package)
 - [Créer des fichiers YAML ansibles](#create-ansible-yaml-files)
 - [Déploiement](#deployment)
-- [References](#references)
+- [Références](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
@@ -55,7 +55,7 @@ En outre, pour le déploiement Ansible, vous devez être familiarisé avec les t
   - sous-président
   - python-apt
 
-- Tous les nodes gérés doivent être répertoriés au format suivant dans le `/etc/ansible/hosts` fichier ou dans le fichier approprié :
+- Tous les nodes gérés doivent être répertoriés au format suivant dans le `/etc/ansible/hosts` fichier ou le fichier approprié :
 
     ```bash
     [servers]
@@ -77,7 +77,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![capture d Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux-2.png)
+    ![capture d’écran Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux-2.png)
 
 4. À partir d’une invite de commandes, vérifiez que vous avez le fichier. Extrayons le contenu de l’archive :
 
@@ -98,7 +98,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 
 ## <a name="create-ansible-yaml-files"></a>Créer des fichiers YAML ansibles
 
-Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou une tâche.
+Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou à une tâche.
 
 - Créez la tâche d’intégration : `onboarding_setup.yml`
 
@@ -129,7 +129,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
 
 - Ajoutez la clé et le référentiel Defender pour points de terminaison : `add_apt_repo.yml`
 
-    Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
+    Defender for Endpoint sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
 
     Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
@@ -138,7 +138,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
     > [!WARNING]
     > Le basculement du canal après l’installation initiale nécessite la réinstallation du produit. Pour basculer le canal de produit : désinstallez le package existant, configurez de nouveau votre appareil pour utiliser le nouveau canal et suivez les étapes de ce document pour installer le package à partir du nouvel emplacement.
 
-    Notez votre distribution et version et identifiez l’entrée la plus proche sous `https://packages.microsoft.com/[distro]/` .
+    Notez votre distribution et version et identifiez l’entrée la plus proche sous `https://packages.microsoft.com/config/[distro]/` .
 
     Dans les commandes suivantes, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées.
 
@@ -154,7 +154,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
 
   - name: Add Microsoft apt repository for MDATP
     apt_repository:
-      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
+      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/[distro]/[version]/prod [channel] main
       update_cache: yes
       state: present
       filename: microsoft-[channel]
@@ -171,13 +171,13 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
       name: packages-microsoft-com-prod-[channel]
       description: Microsoft Defender for Endpoint
       file: microsoft-[channel]
-      baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+      baseurl: https://packages.microsoft.com/config/[distro]/[version]/[channel]/
       gpgcheck: yes
       enabled: Yes
     when: ansible_os_family == "RedHat"
   ```
 
-- Créez les fichiers YaML d’installation et de désinstallation Ansible.
+- Créez les fichiers YAML d’installation et de désinstallation Ansible.
 
     - Pour les distributions basées sur apt, utilisez le fichier YAML suivant :
 

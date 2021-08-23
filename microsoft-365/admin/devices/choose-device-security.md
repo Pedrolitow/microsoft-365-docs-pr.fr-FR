@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Choisissez entre différentes méthodes MDM et MAM.
-ms.openlocfilehash: 933aacd950f67eaab9b538fd6b029a4b6f71d807a27bd33c9139650f57f1d7b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 887dae650dd0635724a59ebb3c1ddf5bc0d38418
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826230"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377702"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>Options de protection de vos appareils et données d’application
 
@@ -51,7 +51,7 @@ Vous avez plusieurs façons de sécuriser les appareils et les données de votre
      Azure AD Premium P1 et Azure AD Premium P2 vous permettent de définir des fonctionnalités d’accès conditionnel, de réinitialisation de mot de passe en libre-service, etc. Pour plus d’informations sur les fonctionnalités des plans Premium, consultez la page de tarification [Azure AD.](https://azure.microsoft.com/pricing/details/active-directory/)
 - **Microsoft 365 Business Premium** inclut Intune et Azure Active Directory Premium P1 et Office 365 protection avancée contre les menaces. 
  
-    Microsoft 365 Business Premium offre un ensemble de modèles de stratégie pour sécuriser vos appareils et vos données d’application. Il offre un bon niveau de sécurité et de protection contre les menaces pour la plupart des entreprises de moins de 300 utilisateurs. Pour plus d’informations, voir [configurer](../../business/set-up.md)des Microsoft 365 Business Premium dans l’Assistant Installation, sécuriser Windows 10 [ordinateurs](../../business/secure-win-10-pcs.md)et Microsoft 365 Business Premium fonctionnalités de sécurité [et de conformité.](../../business/security-features.md)
+    Microsoft 365 Business Premium offre un ensemble de modèles de stratégie pour sécuriser vos appareils et vos données d’application. Il offre un bon niveau de sécurité et de protection contre les menaces pour la plupart des entreprises de moins de 300 utilisateurs. Pour plus d’informations, voir [configurer](../../business/set-up.md)Microsoft 365 Business Premium l’Assistant Installation, sécuriser Windows 10 [ordinateurs](../../business/secure-win-10-pcs.md)et Microsoft 365 Business Premium fonctionnalités de sécurité [et de conformité.](/security-and-compliance/security-your-business-data.md)
 
 - **Microsoft 365 pour les abonnements** d’entreprise incluent Microsoft Intune et E5 inclut également les plans Azure AD Premium 1 et 2.
 

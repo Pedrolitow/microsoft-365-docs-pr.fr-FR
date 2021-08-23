@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 85c50b0a7e2fc2e38bb2b956a800ca349609139ab75aa30fe8d20f2f28b2abed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d0ef13f9718c82c920ab7bd4a151f77b1162208f
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806903"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372483"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -69,12 +69,12 @@ when 'debian'
    repo_name          'microsoft-prod'
    components         ['main']
    trusted            true
-   uri                "https://packages.microsoft.com/ubuntu/20.04/prod"
+   uri                "https://packages.microsoft.com/config/ubuntu/20.04/prod"
  end
  apt_package "mdatp"
 when 'rhel'
  yum_repository 'microsoft-prod' do
-   baseurl            "https://packages.microsoft.com/rhel/7/prod/"
+   baseurl            "https://packages.microsoft.com/config/rhel/7/prod/"
    description        "Microsoft Defender for Endpoint"
    enabled            true
    gpgcheck           true

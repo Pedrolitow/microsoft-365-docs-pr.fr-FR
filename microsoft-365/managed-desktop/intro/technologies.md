@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9cd36b1d536ae6bcfe22fdc6088b3dd0de87184ee085b60bb7e5f1423a536ab8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 89a495d5832d1a16e062c7df8e31ea3a3333bf00
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863918"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399706"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies associées de Bureau géré Microsoft
 
@@ -35,7 +35,7 @@ Applications Microsoft 365 pour les grandes entreprises (64 bits) | Ces Office a
 OneDrive |Azure Active Directory L' signer unique est activée pour les utilisateurs lorsqu’ils se connectent pour la première fois à OneDrive.<br><br>La redirection de dossiers connue pour les dossiers « Bureau », « Document » et « Images » est incluse ; activées et configurées par Microsoft Manged Desktop.
 Store Apps | Microsoft Sway et Power BI ne sont pas livrés avec l’appareil. Ces applications sont disponibles en téléchargement à partir Microsoft Store.
 Win32 Applications | Teams n’est pas fourni avec l’appareil, mais est empaqueté et fourni par Microsoft pour Microsoft Manged Desktop appareils. Le client Azure Information Protection n’est pas livré avec l’appareil, mais vous pouvez le faire empaqueté pour le déploiement.
-Applications Web | Yammer, Office dans un navigateur, Delve, Flow, StaffHub, PowerApps et planner ne sont pas livrés avec l’appareil. Les utilisateurs peuvent accéder à la version web de ces applications avec un navigateur.
+Applications Web | Yammer, Office dans un navigateur, Delve, Flow, StaffHub, Power Apps et planner ne sont pas livrés avec l’appareil. Les utilisateurs peuvent accéder à la version web de ces applications avec un navigateur.
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Entreprise E5 ou E3 avec Microsoft Defender pour le point de terminaison
 
@@ -60,11 +60,11 @@ Microsoft Defender pour le point de terminaison - Gestion des menaces et des vul
 Microsoft Defender pour le point de terminaison - Réduction de la surface d’attaque | La réduction de la surface d’attaque cible les comportements logiciels à risque qui sont souvent abusés par les attaquants. Pour plus d’informations, [voir Microsoft Defender pour le point de terminaison - Réduction de la surface d’attaque.](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 Microsoft Defender pour le point de terminaison - Exploit Protection | Protège contre les programmes malveillants qui utilisent des attaques pour infecter les appareils et se propager en appliquant automatiquement des techniques d’atténuation des attaques aux processus et applications du système d’exploitation. Pour plus d’informations, [voir Microsoft Defender for Endpoint - Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).
 Microsoft Defender pour le point de terminaison - Protection du réseau | La protection du réseau étend l’étendue des Microsoft Defender SmartScreen pour bloquer tout le trafic HTTP et HTTPS sortant qui tente de se connecter à des sources de réputation faible. Pour plus d’informations, [voir Microsoft Defender for Endpoint - Network Protection](/windows/security/threat-protection/microsoft-defender-atp/network-protection).
-Protection contre la falsification Microsoft Defender | Windows La protection contre les falsifications permet d’empêcher les paramètres de sécurité tels que la protection antivirus d’être modifiés. Pour plus d’informations, voir [Protection contre la falsification Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection)
-Antivirus Microsoft Defender Protection antivirus en temps réel, heuristique et basée sur le comportement | Recherchez toujours les menaces de fichier et de traitement qui ne sont peut-être pas détectées comme des programmes malveillants. Pour plus d’informations, voir Antivirus Microsoft Defender protection antivirus en temps [réel, heuristique et basée sur le comportement.](../../security/defender-endpoint/microsoft-defender-antivirus-in-windows-10.md)
+Protection contre la falsification Microsoft Defender | Windows La protection contre les falsifications permet d’empêcher les paramètres de sécurité tels que la protection antivirus d’être modifiés. Pour plus d’informations, voir Protection contre la falsification [Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection)
+Antivirus Microsoft Defender Protection antivirus en temps réel, heuristique et basée sur le comportement | Recherchez toujours les menaces de fichier et de traitement qui ne sont peut-être pas détectées comme des programmes malveillants. Pour plus d’informations, Antivirus Microsoft Defender protection antivirus en temps [réel, heuristique et basée sur le comportement.](../../security/defender-endpoint/microsoft-defender-antivirus-in-windows-10.md)
 Antivirus Microsoft Defender Protection cloud | Fournit une protection automatisée et immédiate dynamique contre les menaces nouvelles et émergentes. Pour plus d’informations, [Antivirus Microsoft Defender protection cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
 Microsoft Defender « Bloquer à la première vue » | Permet de détecter et de bloquer les nouveaux programmes malveillants Windows un fichier suspect ou inconnu. Pour plus d’informations, [voir Microsoft Defender Bloquer à la première vue.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-Applications potentiellement indésirables de Microsoft Defender AV | Les applications potentiellement indésirables sont utilisées pour bloquer les applications qui peuvent ralentir votre ordinateur, afficher des publicités inattendues ou, au pire, installer d’autres logiciels qui peuvent être inattendus ou indésirables. Pour plus d’informations, [voir Applications potentiellement indésirables](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)de Microsoft Defender AV.
+Applications potentiellement indésirables de Microsoft Defender AV | Les applications potentiellement indésirables sont utilisées pour bloquer les applications qui peuvent ralentir votre ordinateur, afficher des publicités inattendues ou, au pire, installer d’autres logiciels qui peuvent être inattendus ou indésirables. Pour plus d’informations, [voir Applications potentiellement indésirables de Microsoft Defender AV.](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 Windows Defender Pare-feu avec fonctions avancées de sécurité | Le filtrage du trafic réseau à double sens basé sur l’hôte pour un appareil, Windows Defender Firewall bloque le trafic réseau non autorisé qui circule à l’entrée ou à l’sortie de l’appareil local. Pour plus d’informations, [voir Windows Defender Firewall with Advanced Security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 Contrôle de compte d’utilisateur | Le contrôle de compte d’utilisateur bascule vers le Bureau sécurisé lorsqu’une tâche ou une action nécessite un accès de type compte administrateur. Microsoft Manged Desktop utilisateurs standard se voit attribuer un accès utilisateur standard lors de l’inscription. Pour plus d’informations, [voir Contrôle de compte d’utilisateur.](/windows/security/identity-protection/user-account-control/how-user-account-control-works)
 

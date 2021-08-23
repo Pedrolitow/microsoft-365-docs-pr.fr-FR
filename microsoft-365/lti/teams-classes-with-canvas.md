@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams classes à Canvas
-ms.openlocfilehash: 4ee5be86498c5a9eed3ebb47a7857b7cc401f00d
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 09c0033f6deca5d941dee5003391b1a0b171a0ee
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255560"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387019"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Utiliser Microsoft Teams classes avec Canvas
 
@@ -30,7 +30,7 @@ Microsoft Teams classes est une application Learning Tools Interoperability (LTI
 > La classe actuelle Teams LTI prend uniquement en charge la synchronisation des utilisateurs canvas avec Microsoft Azure Active Directory (AAD) dans une étendue limitée. 
 > - Votre client doit avoir une licence Microsoft Éducation.
 > - Un seul client Microsoft peut être utilisé pour le mappage d’utilisateurs entre Canvas et Microsoft.
-> - Vous devez désactiver SDS avant d’utiliser la classe Teams LTI afin d’éviter la duplication des groupes.
+> - Vous devez désactiver le Synchronisation des données scolaires (SDS) avant d’utiliser l’Teams LTI de classe afin d’éviter la duplication des groupes.
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administrateur
 

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Apprenez à suivre les problèmes que vous avez à résoudre lors de la configuration d’un domaine personnalisé en vous assurez que les enregistrements DNS sont correctement configurer.
-ms.openlocfilehash: 035d5855b539efe772254fe195a99c3fb2a855d4c592e8f085e866ab4d196b22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dd84e829ed1cd8ea1cc9738ac88eaabcba52648
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825786"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450092"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Rechercher et corriger des problèmes après avoir ajouté votre domaine ou des enregistrements DNS
 
@@ -56,7 +56,6 @@ La mise en place de votre domaine pour l’Microsoft 365 peut être difficile. L
 - [L’accès à votre site web ne fonctionne pas ?](#accessing-your-website-isnt-working)
 
 ## <a name="cant-verify-your-domain"></a>Vous ne pouvez pas vérifier votre domaine ?
-<a name="BKMK_verify"> </a>
 
 Plusieurs raisons fréquentes peuvent empêcher le fonctionnement correct de la vérification du domaine :
   
@@ -67,7 +66,6 @@ Plusieurs raisons fréquentes peuvent empêcher le fonctionnement correct de la 
 3. **L’enregistrement n’a pas été mis à jour sur Internet.** En règle générale, nous ne pouvons voir le nouvel enregistrement que quelques minutes, mais cela peut parfois prendre jusqu’à quelques heures. 
     
 ## <a name="outlook-isnt-working"></a>Outlook ne fonctionne pas ?
-<a name="BKMK_OutlookBroken"> </a>
 
 Si vous avez défini votre enregistrement MX et les autres enregistrements DNS correctement pour votre domaine, mais que le courrier ne fonctionne pas, nous pouvons vous aider à [résoudre les problèmes liés à Outlook que vous rencontrez](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
@@ -86,7 +84,6 @@ Il existe quelques scénarios où vous devez simplement vérifier le domaine de 
 Consultez les instructions dans Vérifier votre domaine Microsoft 365 pour prouver la [propriété,](../setup/domains-faq.yml) l’état des organisations à but non lucratif ou de l’éducation, ou pour activer Yammer pour vous assurer que vous avez effectué toutes les étapes requises. Il est légèrement différent pour chaque situation. 
   
 ## <a name="services-not-working-with-your-domain"></a>Les services ne fonctionnent pas avec votre domaine ?
-<a name="BKMK_Test"> </a>
 
 Nous pouvons vous aider à identifier les problèmes liés à la configuration DNS de votre domaine. L’dépannage des domaines dans Microsoft 365 affiche tous les enregistrements qui doivent être corrigés et indique exactement ce que les enregistrements doivent être définies. 
 
@@ -94,11 +91,10 @@ Nous pouvons vous aider à identifier les problèmes liés à la configuration D
 > Votre DNS est correctement configuré, mais le courrier électronique ne fonctionne pas dans Outlook sur votre ordinateur de bureau ? Consultez les [différents scénarios](/exchange/mail-flow-best-practices/mail-flow-best-practices) de flux de messagerie que vous pouvez avoir avec Microsoft 365 pour vous assurer que les choses sont correctement définies pour votre entreprise. Vous pouvez également obtenir de l'aide concernant la résolution des problèmes liés à le courrier dans la page suivante : [Résoudre les problèmes liés à Outlook](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>Vous ne parvenez pas à accéder à votre site web ?
-<a name="BKMK_Website"> </a>
 
 Si vous avez corrigé tous les problèmes DNS et que vous rencontrez toujours des difficultés, essayez l'une des solutions suivantes.
   
-- Les utilisateurs ne peuvent pas accéder à votre site web à l'adresse www.mondomaine.com : [Identifier les problèmes liés au site web](../setup/add-domain.md)
+- Les personnes ne peuvent pas se rendre sur votre site web *à l’contoso.com*: [Suivre les problèmes de site web](../setup/add-domain.md)
     
 - Vous ne pouvez pas mettre à jour votre enregistrement A ou CNAME pour qu’il pointe vers votre site web : mettez à jour les enregistrements [DNS](../setup/add-domain.md) personnalisés dans Microsoft 365
 

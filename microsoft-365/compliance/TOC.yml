@@ -150,8 +150,6 @@
           href: data-classification-activity-explorer.md
         - name: Actions d'étiquetage signalées dans l'Explorateur d'activités
           href: data-classification-activity-explorer-available-events.md
-        - name: Notes de publication pour la classification des données
-          href: data-classification-pub-preview-relnotes.md
     - name: Étiquettes de confidentialité
       items:
         - name: En savoir plus sur les étiquettes de niveau de confidentialité
@@ -467,7 +465,7 @@
               href: archive-enterprise-number-data.md
             - name: Archiveur de réseau vocal et SMS O2 Telefonica
               href: archive-o2-network-data.md
-            - name: Archiveur réseau de Lars (préversion)
+            - name: Archiveur réseau de Lars
               href: archive-rogers-network-archiver-data.md
             - name: Archiveur de signal
               href: archive-signal-archiver-data.md
@@ -509,7 +507,7 @@
               href: archive-17a-4-refinitiv-messenger-data.md
             - name: ServiceNow DataParser
               href: archive-17a-4-servicenow-data.md
-            - name: DataParser Skype Entreprise Server (préversion)
+            - name: Analyseur de données Skype Entreprise Server
               href: archive-17a-4-skype-for-business-server-data.md
             - name: Slack DataParser
               href: archive-17a-4-slack-data.md
@@ -654,6 +652,8 @@
               href: de-duplication-in-ediscovery-search-results.md
             - name: Déchiffrement dans les outils eDiscovery
               href: ediscovery-decryption.md
+            - name: Résoudre les problèmes eDiscovery courants
+              href: ediscovery-troubleshooting-common-issues.md
             - name: Modifier la taille des fichiers PST lors de l’exportation de résultats de recherche
               href: change-the-size-of-pst-files-when-exporting-results.md
             - name: Désactiver les rapports lorsque vous exportez des résultats de recherche
@@ -662,8 +662,6 @@
               href: check-your-content-search-query-for-errors.md
             - name: Utiliser Microsoft Edge pour télécharger les résultats de la recherche
               href: configure-edge-to-export-search-results.md
-            - name: Modification en bloc de plusieurs recherches de contenu
-              href: bulk-edit-content-searches.md
             - name: Rechercher des activités eDiscovery dans le journal d’audit
               href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: Scripts PowerShell de recherche de contenu

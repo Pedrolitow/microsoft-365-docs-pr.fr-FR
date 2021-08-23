@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: Que ce soit l’ajout de nouvelles solutions au centre de conformité, la mise à jour des fonctionnalités existantes en fonction de vos commentaires ou le déploiement d’une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c24108d7ccc140fecac9c6a7444a697d1526e95c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ebb491ccd84e328ea3d4d1151a2c141ca3a69168
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58244012"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450067"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
-Que vous ajoutiez de nouvelles solutions au [Centre de conformité Microsoft 365,](microsoft-365-compliance-center.md)mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester informé du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 jour.
+Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microsoft 365,](microsoft-365-compliance-center.md)en mettant à jour les fonctionnalités existantes en fonction de vos commentaires ou en mettant en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester informé du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 jour.
 
 > [!NOTE]
 > Certaines fonctionnalités de conformité sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](/office365/admin/manage/release-options-in-office-365)
@@ -95,7 +95,7 @@ Que vous ajoutiez de nouvelles solutions au [Centre de conformité Microsoft 365
 
 ### <a name="retention-and-records-management"></a>Gestion des enregistrements et de la rétention
 - En prévisualisation : les stratégies de [rétention pour Teams](create-retention-policies.md#retention-policy-for-teams-locations) prend désormais en charge les canaux privés en tant que nouveaux emplacements Teams lorsque vous créez ou modifiez une stratégie de rétention
-- Les instructions [d’importation d’un plan](file-plan-manager.md#import-retention-labels-into-your-file-plan) de gestion de fichiers sont mises à jour pour inclure les enregistrements réglementaires et les dépendances sont désormais répertoriées pour chaque entrée.
+- Les instructions [d’importation d’un plan de](file-plan-manager.md#import-retention-labels-into-your-file-plan) gestion de fichiers sont mises à jour pour inclure les enregistrements réglementaires et les dépendances sont désormais répertoriées pour chaque entrée.
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
@@ -106,7 +106,7 @@ Les pages suivantes ont été ajoutées :
 - [Supprimer un type d’informations sensibles personnalisé à l’aide de PowerShell](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
-- Les classifieurs entraisables sont désormais généralement disponibles pour l’étiquetage automatique dans les applications [Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) pour Windows et le web (Office Online)
+- Les classifieurs entraisables sont désormais généralement disponibles pour l’étiquetage automatique dans [Office apps](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) for Windows and the web (Office Online)
 - L’étiquetage obligatoire est désormais étendu aux [Power BI (en prévisualisation)](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
 - Pour [la co-auteur]( sensitivity-labels-coauthoring.md)pour les fichiers chiffrés avec des étiquettes de confidentialité : déploiement de la prise en charge des stratégies DLP qui utilisent des étiquettes de confidentialité comme conditions et pièces jointes non chiffrées pour les e-mails
 - Les événements d’audit Outlook sont désormais disponibles pour macOS, iOS et Android, et sont également Outlook sur le web
@@ -115,7 +115,7 @@ Les pages suivantes ont été ajoutées :
 
 ### <a name="customer-key"></a>Clé client
 
-- [Chiffrement de service avec clé](customer-key-overview.md) client (les DEP de niveau client chiffrent désormais la configuration des étiquettes de Protection des données Microsoft.)
+- [Chiffrement de service avec clé](customer-key-overview.md) client (les DEP de niveau client de clé client chiffrent désormais la configuration des étiquettes de Protection des données Microsoft.)
 
 ### <a name="data-connectors"></a>Connecteurs de données
 
@@ -131,7 +131,7 @@ Les pages suivantes ont été ajoutées :
 
 - L’Assistant Stratégie d’étiquette de confidentialité prend désormais en charge [Outlook options](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) spécifiques pour l’étiquette par défaut et l’étiquetage obligatoire en tant que configuration plus facile que les paramètres avancés (toujours pris en charge) de PowerShell.
 - La prise [en charge des marquages dynamiques avec des variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) est désormais en cours de déploiement pour Word, Excel et PowerPoint sur le web
-- Pour [les stratégies d’étiquetage](apply-sensitivity-label-automatically.md) Exchange, si l’étiquette est configurée pour le chiffrement, ce chiffrement n’est pas appliqué. En outre, Exchange stratégies d’étiquetage automatique, vous pouvez désormais configurer des exceptions et les nouvelles conditions suivantes : l’objet, l’adresse du destinataire ou l’adresse de l’expéditeur correspond aux modèles ; l’adresse du destinataire contient des mots ; le domaine de l’expéditeur est, le destinataire est membre de ; l’expéditeur est.
+- Pour [les stratégies d’étiquetage](apply-sensitivity-label-automatically.md) Exchange, si l’étiquette est configurée pour le chiffrement, ce chiffrement n’est pas appliqué. En outre, pour Exchange d’étiquetage automatique, vous pouvez désormais configurer des exceptions et les nouvelles conditions suivantes : l’objet, l’adresse du destinataire ou l’adresse de l’expéditeur correspond aux modèles ; l’adresse du destinataire contient des mots ; le domaine de l’expéditeur est, le destinataire est membre de ; l’expéditeur est.
 - Lorsque vous utilisez des étiquettes de niveau de sensibilité avec des équipes, des groupes et des sites, vous pouvez utiliser Set-SPOTenant avec le paramètre BlockSendLabelMismatchEmail pour empêcher le courrier électronique généré automatiquement lorsque l’événement d’audit a détecté une inaltérable sensibilité du **document.**  Pour plus d’informations, voir [Auditer les activités des étiquettes de sensibilité.](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities )
 - Le paramètre [de contexte d’authentification](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) est désormais entièrement déployé en prévisualisation pour les étiquettes de sensibilité. En outre, cette configuration est désormais prise en charge par Microsoft Teams.
 - Les fichiers étiquetés et chiffrés par un nom principal de service (tel que Microsoft Cloud App Security), puis téléchargés sur SharePoint et OneDrive peuvent désormais être ouverts en Office sur le Web lorsque vous avez activé les étiquettes de niveau de sensibilité pour les fichiers Office dans [SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -286,7 +286,6 @@ Voici quelques-unes des modifications apportées aux solutions Microsoft 365 con
 Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 
 - [Prise en main de l’Explorateur de contenu](/microsoft-365/compliance/data-classification-content-explorer)
-- [Notes de publication pour la classification des données](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 

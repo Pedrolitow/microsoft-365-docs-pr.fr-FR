@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 - AdminTemplateSet
 description: Si vous avez acheté Microsoft 365 Business Standard dans un magasin, découvrez comment échanger la clé de produit et activer votre abonnement.
 ms.date: 11/13/2020
-ms.openlocfilehash: 6f812948e06b4ddf678b8112bca4c068e8d36444d7b036f95764d5bc0e7c9bde
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c9a1bba30f6c1b55688d2a36166651fe0b16a05
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820922"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387031"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrez votre clé de produit pour Microsoft 365 Business Standard
 
@@ -56,9 +56,9 @@ Si vous avez acheté Microsoft 365 Business Standard dans un magasin, cet articl
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Prolonger la date d’expiration ou ajouter une licence à un abonnement existant
 
-Pour prolonger la date d’expiration ou ajouter une licence à votre abonnement Microsoft 365 Business Standard existant, utilisez une nouvelle clé inutilisée pour le même plan Microsoft 365 de licence. La saisie de votre clé Microsoft 365 produit d’origine ne fonctionne pas, car une clé qui a déjà été échangée ne peut pas être utilisée à nouveau. Voir [Ajouter des licences ou étendre un abonnement payé pour l’utilisation d’une clé de produit.](licenses/add-licenses-using-product-key.md)
+Pour prolonger la date d’expiration ou ajouter une licence à votre abonnement Microsoft 365 Business Standard existant, utilisez une clé nouvelle et inutilisée pour le même plan Microsoft 365 existant. La saisie de votre clé Microsoft 365 produit d’origine ne fonctionne pas, car une clé qui a déjà été échangée ne peut pas être utilisée à nouveau. Voir [Ajouter des licences ou étendre un abonnement payé pour l’utilisation d’une clé de produit.](licenses/add-licenses-using-product-key.md)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si vous êtes nouveau dans Microsoft 365 entreprise, découvrez comment [configurer Microsoft 365](../admin/setup/setup.md).
 

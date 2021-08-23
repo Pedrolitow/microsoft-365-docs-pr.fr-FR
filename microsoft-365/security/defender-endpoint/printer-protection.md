@@ -13,18 +13,18 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 738a5ae02cba8078b583b138b4e9dfa8733433f07feb69bce96b663a068aaa4e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5e1d402442b2e8fe01b55cf3d3e07858d9d592dd
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853807"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399742"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
 Microsoft Defender pour endpoint Device Control Printer Protection empêche les personnes d’imprimer via des imprimantes non d’entreprise ou des imprimantes USB non approuvées.
 
-## <a name="licensing"></a>Licence
+## <a name="licensing"></a>Licences
 
 Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) Pour accéder à printer Protection et l’utiliser, vous devez avoir les informations suivantes :
 
@@ -49,14 +49,12 @@ Pour afficher les rapports de configuration d’appareil, le compte doit avoir l
 
 Assurez-vous que les Windows 10 que vous prévoyez de déployer Printer Protection pour répondre à ces exigences.
 
-1. Rejoignez le programme Insider.
-
 1. Les mises à jour Windows suivantes sont installées.
     - For Windows 1809: install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
     - For Windows 1909: install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
     - Pour Windows 2004 ou ultérieure
 
-1. Si vous envisagez de déployer une stratégie via une stratégie de groupe, l’appareil doit être joint à MDATP . Si vous envisagez de déployer une stratégie via MEM, l’appareil doit être joint à Intune.
+2. Si vous envisagez de déployer une stratégie via une stratégie de groupe, l’appareil doit être intégré à Microsoft Defender pour le point de terminaison joint ; si vous envisagez de déployer une stratégie via Microsoft Endpoint Manager, l’appareil doit être joint à l’aide de Microsoft Intune.
 
 ## <a name="deploy-device-control-printer-protection-policy"></a>Déployer une stratégie de protection de l’imprimante de contrôle d’appareil
 
@@ -130,7 +128,7 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
 - Appliquez la stratégie à l’utilisateur :
 
-  Imprimantes du Panneau de configuration des modèles d’administration de configuration utilisateur : liste des \> périphériques d’impression connectés \> \> usb approuvés
+  Imprimantes du Panneau de configuration Des modèles d’administration de configuration utilisateur : liste des appareils d’impression connectés \> \> à USB \> approuvés
 
 :::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="liste des périphériques d’impression connectés usb approuvés":::
 

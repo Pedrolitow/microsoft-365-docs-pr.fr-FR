@@ -18,13 +18,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cet article explique comment configurer l’audit avancé afin que vous pouvez effectuer des enquêtes d’investigation lorsque des comptes d’utilisateur sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
-ms.openlocfilehash: ed4e2a8c423631cfa1c846f271d8df9361ca6414002d026cc515ddcd78842784
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Cet article explique comment configurer l’audit avancé afin de pouvoir effectuer des enquêtes d’investigation lorsque des comptes d’utilisateur sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
+ms.openlocfilehash: e23f5c9ce4212e4974de97977bb2e0785bad69ed
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841550"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58386959"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>Configurer l’audit avancé dans Microsoft 365
 
@@ -46,15 +46,15 @@ Les fonctionnalités d’audit avancées telles que la possibilité d’enregist
 
 5. Si la case à cocher n’est pas sélectionnée, sélectionnez-la, puis cliquez sur **Enregistrer les modifications.**
 
-   La journalisation des enregistrements d’audit pour MailItemsAccessed et Send commence dans les 24 heures. Vous devez effectuer l’étape 3 pour démarrer la journalisation de deux autres événements importants d’audit avancé : SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint.
+   La journalisation des enregistrements d’audit pour MailItemsAccessed et Send commence dans les 24 heures. Vous devez effectuer l’étape 3 pour démarrer la journalisation de deux autres événements d’audit avancé : SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint.
 
 Pour les organisations qui attribuent des licences à des groupes d’utilisateurs à l’aide d’une gestion de licences basée sur les groupes, vous devez désactiver l’attribution des licences pour Microsoft 365 audit avancé pour le groupe. Une fois que vous avez enregistré vos modifications, vérifiez que l’audit avancé Microsoft 365 est désactivé pour le groupe. Réactivez ensuite l’attribution des licences pour le groupe. Pour obtenir des instructions sur la gestion des licences basée sur les groupes, voir [Attribuer des licences aux utilisateurs par appartenance aux groupes dans Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
-En outre, si vous avez personnalisé les actions de boîte aux lettres qui sont enregistrées sur des boîtes aux lettres utilisateur ou des boîtes aux lettres partagées, les nouveaux événements essentiels publiés par Microsoft ne seront pas automatiquement audités sur ces boîtes aux lettres. Pour plus d’informations sur la modification des actions de boîte aux lettres auditées pour chaque type de connexion, consultez la section « Modifier ou restaurer les actions de boîte aux lettres enregistrées par défaut » dans [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
+En outre, si vous avez personnalisé les actions de boîte aux lettres qui sont enregistrées sur des boîtes aux lettres utilisateur ou des boîtes aux lettres partagées, les nouveaux événements d’audit avancé publiés par Microsoft ne seront pas automatiquement audités sur ces boîtes aux lettres. Pour plus d’informations sur la modification des actions de boîte aux lettres auditées pour chaque type de connexion, consultez la section « Modifier ou restaurer les actions de boîte aux lettres enregistrées par défaut » dans [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
-## <a name="step-2-enable-crucial-events"></a>Étape 2 : Activer les événements essentiels
+## <a name="step-2-enable-advanced-audit-events"></a>Étape 2 : Activer les événements d’audit avancé
 
-Vous devez activer la journalité de deux événements essentiels (SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint) lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online. Pour permettre à ces deux événements d’être audités pour les utilisateurs, exécutez la commande suivante (pour chaque utilisateur) [dans Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+Vous devez activer deux événements d’audit avancé (SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint) pour être enregistrés lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online. Pour permettre à ces deux événements d’être audités pour les utilisateurs, exécutez la commande suivante (pour chaque utilisateur) [dans Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
@@ -72,6 +72,6 @@ Si la commande permettant d’activer l’audit des requêtes de recherche a ét
 
 En plus de la stratégie par défaut qui conserve les enregistrements d’audit Exchange, SharePoint et Azure AD pendant un an, vous pouvez créer des stratégies de rétention supplémentaires pour le journal d’audit afin de répondre aux exigences des équipes de sécurité, informatique et de conformité de votre organisation. Pour plus d’informations, voir [gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md).
 
-## <a name="step-4-search-for-crucial-events"></a>Étape 4 : Rechercher des événements essentiels
+## <a name="step-4-search-for-advanced-audit-events"></a>Étape 4 : Rechercher des événements d’audit avancés
 
-Maintenant que l’audit avancé est installé pour votre organisation, vous pouvez rechercher des événements essentiels et d’autres activités lors de la conduite d’enquêtes légales. Après avoir effectué les étapes 1 et 2, vous pouvez rechercher dans le journal d’audit des événements essentiels et d’autres activités pendant les enquêtes d’investigation de comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité. Pour plus d’informations sur la conduite d’une investigation d’investigation d’utilisateurs compromis à l’aide de l’événement crucial MailItemsAccessed, voir [Utiliser l’audit](mailitemsaccessed-forensics-investigations.md)avancé pour examiner les comptes compromis.
+Maintenant que l’audit avancé est installé pour votre organisation, vous pouvez rechercher des événements d’audit avancés essentiels et d’autres activités lors de la conduite d’enquêtes légales. Après avoir effectué les étapes 1 et 2, vous pouvez rechercher dans le journal d’audit les événements d’audit avancés et d’autres activités pendant les enquêtes d’investigation des comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité. Pour plus d’informations sur la conduite d’une investigation d’investigation d’utilisateurs compromis à l’aide de l’événement d’audit avancé MailItemsAccessed, voir [Utiliser l’audit](mailitemsaccessed-forensics-investigations.md)avancé pour examiner les comptes compromis.

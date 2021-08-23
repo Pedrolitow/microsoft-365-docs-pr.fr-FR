@@ -118,6 +118,8 @@
           items:
             - name: Paramètres et intégrité du capteur
               href: ../defender-identity/sensor-health.md
+            - name: Compte des services d’annuaire
+              href: ../defender-identity/directory-service-accounts.md
             - name: Intégration VPN
               href: ../defender-identity/vpn-integration.md
             - name: Définir des balises d’entité
