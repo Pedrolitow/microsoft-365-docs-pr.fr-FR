@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: e0604a6531b93a1a0df04c39ebaff4e75a0365f9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 8c78cf0f8ff49d2b81533e064a16089d8fe75d15
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248035"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400402"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -170,7 +170,7 @@ Restrictions connues pour cette version préliminaire :
 
 - Les fonctionnalités et applications suivantes peuvent être incompatibles avec les contextes d'authentification. Nous vous encourageons donc à vérifier qu'elles continuent de fonctionner après qu'un utilisateur ait réussi à accéder à un site en utilisant un contexte d'authentification :
     
-    - Flux de travail qui utilisent PowerApps ou Power Automate
+    - Flux de travail qui utilisent Power Apps ou Power Automate
     - Applications tierces
 
 ## <a name="sensitivity-label-management"></a>Gestion des étiquettes de confidentialité
@@ -281,7 +281,7 @@ Vérifiez que vous disposez de la version 16.0.19418.12000 ou ultérieure de Sha
    Get-Label |ft Name, Guid
    ```
 
-3. À présent, [connectez-vous à Exchange Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et stockez votre GUID d’étiquette en tant que variable. Par exemple :
+3. À présent, [connectez-vous à Exchange Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et stockez votre GUID d’étiquette en tant que variable. Par exemple :
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
@@ -449,5 +449,7 @@ Si ces conteneurs ont des valeurs de classification Azure AD qui leur sont appli
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
 Regardez l’enregistrement du webinaire et les questions traitées pour [Utilisation d’étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint Online](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
+
+Pour plus d’informations sur la gestion des sites connectés et des sites de canaux Teams, consultez [Gérer les sites connectés Teams et les sites de canal](/SharePoint/teams-connected-sites).
 
 Ce webinaire a été enregistré lorsque la fonctionnalité était en version aperçu. vous remarquerez peut-être quelques différences dans l’interface utilisateur. Toutefois, les informations relatives à cette fonctionnalité sont encore précises, avec toutes les nouvelles fonctionnalités documentées sur cette page.

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 332a81e1433714ed3a2d962e09777a1c4dcf5a90b40172e31bae483bd4177bbd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a099ab2241e1e2a4705fd54760a48cb3f95b421
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851798"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387007"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Audit de solutions dans Microsoft 365
 
@@ -65,7 +65,7 @@ L’Audit avancé s’appuie sur les fonctionnalités de l’audit de base en fo
 
 - **Rétention plus longue des enregistrements d’audit**. Les enregistrements d'audit Exchange, SharePoint et Azure Active Directory sont conservés par défaut pendant un an. Par défaut, les enregistrements d’audit pour toutes les autres activités sont conservés pendant 90 jours. Vous pouvez utiliser des stratégies de rétention du journal d’audit pour configurer des périodes de rétention plus longues.
 
-- **Événements importants et essentiels**. Des enregistrements d’audit pour des événements essentiels peuvent aider votre organisation à mener des recherches de sécurité et de conformité en fournissant une visibilité à des événements tels que le moment où les éléments de courrier ont été accédés, ou les moments où des éléments de courrier ont été répondus et envoyés, ou quand et ce qu’un utilisateur a recherché dans Exchange Online et SharePoint Online. Ces événements importants peuvent vous aider à identifier les violations possibles et déterminer l’étendue de la compromission.
+- **Événements d’audit avancé importants et essentiels**. Des enregistrements d’audit pour des événements essentiels peuvent aider votre organisation à mener des recherches de sécurité et de conformité en fournissant une visibilité à des événements tels que le moment où les éléments de courrier ont été accédés, ou les moments où des éléments de courrier ont été répondus et envoyés, ou quand et ce qu’un utilisateur a recherché dans Exchange Online et SharePoint Online. Ces événements importants peuvent vous aider à identifier les violations possibles et déterminer l’étendue de la compromission.
 
 - **Bande passante supérieure à l’API Activité de gestion Office 365**. L’audit avancé offre aux organisations davantage de bande passante pour accéder aux journaux d’audit via l’API Activité de gestion Office 365. Si toutes les organisations (qui disposent d'un audit de base ou d'un audit avancé) se voient initialement attribuer une base de référence de 2 000 demandes par minute, cette limite augmentera de manière dynamique en fonction du nombre de sièges de l'organisation et de son abonnement aux licences. Ainsi, les organisations disposant d'un Audit avancé obtiennent environ deux fois plus de bande passante que les organisations disposant d'un audit de base.
 
@@ -155,11 +155,11 @@ Si votre organisation a un abonnement qui prend en charge l’Audit avancé, sui
   
    - L'activation de l'audit des événements essentiels, puis l'activation de l'application/du plan de service d'audit avancé pour ces utilisateurs.
 
-2. Permettre que des événements essentiels soient journalisés lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online.
+2. Permettre que des événements d’audit avancé soient journalisés lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online.
 
 3. Configurer des stratégies de rétention du journal d'audit. En plus de la stratégie par défaut qui conserve les enregistrements d’audit Exchange, SharePoint et Azure AD pendant un an, vous pouvez créer des stratégies de rétention supplémentaires pour le journal d’audit afin de répondre aux exigences des équipes de sécurité, informatique et de conformité de votre organisation.
 
-4. Recherchez des événements essentiels et d’autres activités lors d’enquêtes. À l’issue des étapes 1 et 2, vous pouvez rechercher des événements essentiels et d’autres activités dans le journal d’audit lors d’enquêtes approfondies sur des comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité.
+4. Recherchez des événements d’audit avancé essentiels et d’autres activités lors d’enquêtes. À l’issue des étapes 1 et 2, vous pouvez rechercher des événements d’audit avancé et d’autres activités dans le journal d’audit lors d’enquêtes approfondies sur des comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité.
 
 Pour obtenir des instructions plus détaillées, voir [Configurer l’audit avancé](set-up-advanced-audit.md).
 

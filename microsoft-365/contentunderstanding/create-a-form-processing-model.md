@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment créer un modèle de traitement de formulaire dans SharePoint Syntex.
-ms.openlocfilehash: 026f5b07a944cf21e6f5c260093a7cb616ffe775f3f726db9fabceac0bcfa574
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1acc47244bd5989e429ebd68105d353af214cb19
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855562"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399814"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
 
@@ -92,7 +92,7 @@ La première étape de la création d’un modèle de traitement de formulaire c
 
 ## <a name="step-2-add-and-analyze-documents"></a>Étape 2 : ajouter et analyser des documents
 
-Après avoir créé votre nouveau modèle de traitement de formulaire, votre navigateur ouvre une nouvelle page de modèle de traitement de formulaires AI Builder dans PowerApps. Sur cette page, vous pouvez ajouter et analyser vos exemples de documents. 
+Après avoir créé votre nouveau modèle de traitement de formulaire, votre navigateur ouvre une nouvelle page de modèle de traitement de formulaires AI Builder dans Power Apps. Sur cette page, vous pouvez ajouter et analyser vos exemples de documents. 
 
 > [!NOTE]
 > Lorsque vous recherchez des exemples de fichiers à utiliser, consultez l’article [Configuration requise et limitations du modèle de traitement de formulaire](/ai-builder/form-processing-model-requirements). 
