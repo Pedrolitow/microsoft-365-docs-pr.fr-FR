@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser des stratégies dlp pour les applications cloud non Microsoft.
-ms.openlocfilehash: ef4482c66f9774057d5027b191cb32c8cf40becb0e28faa36fc0641fe2e51832
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 10e5f8e78b57932c18acfe18631ae8b08d543dd5
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814280"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502818"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Utiliser des stratégies de protection contre la perte de données pour les applications cloud non Microsoft
 
-Les stratégies de protection contre la perte de données (DLP) pour les applications cloud non Microsoft font partie de la suite Microsoft 365 DLP ; À l’aide de ces fonctionnalités, vous pouvez découvrir et protéger les éléments sensibles Microsoft 365 services. Pour plus d’informations sur toutes les offres Microsoft DLP, voir [En savoir plus sur la protection contre la perte de données.](dlp-learn-about-dlp.md)
+Les stratégies de protection contre la perte de données (DLP) pour les applications cloud non Microsoft font partie de la suite Microsoft 365 DLP ; À l’aide de ces fonctionnalités, vous pouvez découvrir et protéger les éléments sensibles dans Microsoft 365 services. Pour plus d’informations sur toutes les offres Microsoft DLP, voir [En savoir plus sur la protection contre la perte de données.](dlp-learn-about-dlp.md)
 
 Vous pouvez utiliser des stratégies DLP pour les applications cloud non-Microsoft afin de surveiller et de détecter quand des éléments sensibles sont utilisés et partagés via des applications cloud non Microsoft. L’utilisation de ces stratégies vous donne la visibilité et le contrôle dont vous avez besoin pour vous assurer qu’elles sont correctement utilisées et protégées, et cela permet d’éviter les comportements risqués qui peuvent les compromettre.
 
@@ -59,14 +59,14 @@ Pour utiliser la stratégie DLP sur une application cloud non-Microsoft spécifi
 
 - [Connecter Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
 - [Connecter Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Connecter G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [Connecter G-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
 - [Connecter Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
 - [Connecter Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
 Une fois que vous avez connecté vos applications cloud Sécurité des applications cloud, vous pouvez créer Microsoft 365 stratégies DLP pour elles.
 
 > [!NOTE]
-> Il est également possible d’utiliser Microsoft Cloud App Security pour créer des stratégies DLP pour les applications cloud Microsoft. Toutefois, il est recommandé d’utiliser Microsoft 365 pour créer et gérer des stratégies DLP dans les applications cloud Microsoft.
+> Il est également possible d’utiliser Microsoft Cloud App Security pour créer des stratégies DLP dans les applications cloud De Microsoft. Toutefois, il est recommandé d’utiliser Microsoft 365 pour créer et gérer des stratégies DLP dans les applications cloud Microsoft.
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>Créer une stratégie DLP pour une application cloud non-Microsoft
 

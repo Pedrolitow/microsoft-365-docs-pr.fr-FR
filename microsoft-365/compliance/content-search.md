@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez l'outil eDiscovery de recherche de contenu dans le centre de conformité pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: e3d4f090ebe53175e2957d040ad18c226a7d3177159e2552586cac4a7b259734
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0d99321c02c4604219e5c6fcb247666f88cf4a08
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892338"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502854"
 ---
 # <a name="create-a-content-search"></a>Créer une recherche de contenu
 
@@ -45,7 +45,7 @@ Après avoir exécuté une recherche, le nombre d’emplacements de contenu et l
 
 ## <a name="create-and-run-a-search"></a>Créer et exécuter une recherche
 
-Pour accéder à la page **recherche de contenu** dans le Centre de conformité Microsoft 365 (pour effectuer des recherches et afficher un aperçu des résultats et exporter les résultats), un administrateur, un officier de conformité ou un gestionnaire d’eDiscovery doit être membre du groupe de rôles gestionnaire eDiscovery dans le Centre de conformité & de sécurité. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
+Pour accéder à la page **Recherche de contenu** dans le Centre de conformité Microsoft 365 (pour effectuer des recherches et afficher un aperçu des résultats et exporter les résultats), un administrateur, un officier de conformité ou un gestionnaire d’eDiscovery doit être membre du groupe de rôles gestionnaire eDiscovery dans le Centre de conformité & de sécurité Microsoft 365. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l’aide des informations d’identification d’un compte avec les autorisations appropriées.
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 65486a046967ef3a3961220af0c9077a7d3fbd94
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bc00136b3ca404efc2a39eb8cf7bac6dcbc84d2e
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253414"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502026"
 ---
 # <a name="recommendation-resource-type"></a>Type de ressource Recommendation
 
@@ -54,28 +54,23 @@ Propriété |   Type   |   Description
 :---|:---|:---
 id | String | ID de recommandation
 productName | String | Nom du logiciel associé  
-recommendationName | String
- | Nom de la recommandation
+recommendationName | String | Nom de la recommandation
 Faiblesses | Entier long | Nombre de vulnérabilités découvertes
-Fournisseur | String
- | Nom du fournisseur associé
-recommendedVersion | String
- | Version recommandée
-recommendationCategory | String
- | Catégorie de recommandation. Les valeurs possibles sont : « Accounts », « Application », « Network », « OS », « SecurityStack »
-sous-catégorie | String
- | Sous-catégorie de recommandation
+Fournisseur | String | Nom du fournisseur associé
+recommendedVersion | String | Version recommandée
+recommendedProgram | String | Programme recommandé
+recommendedVendor | String | Fournisseur recommandé
+recommendationCategory | String | Catégorie de recommandation. Les valeurs possibles sont : « Accounts », « Application », « Network », « OS », « SecurityControls »
+sous-catégorie | String | Sous-catégorie de recommandation
 severityScore | Double | Impact potentiel de la configuration sur le Score de sécurité Microsoft pour les appareils de l’organisation (1-10)
-publicExploit | Booléen | Une exploitation publique est disponible 
-activeAlert | Booléen | L’alerte active est associée à cette recommandation
+publicExploit | Boolean | Une exploitation publique est disponible 
+activeAlert | Boolean | L’alerte active est associée à cette recommandation
 associatedThreats | String collection | Le rapport d’analyse des menaces est associé à cette recommandation
-remediationType | String
- | Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »
+remediationType | String | Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »
 Statut | Énum | État de l’exception de recommandation. Les valeurs possibles sont : « Active » et « Exception »
 configScoreImpact | Double | Impact du Score de sécurisation Microsoft pour les appareils
-exposureImpacte | Double | Impact du score d’exposition
+exposureImpact | Double | Impact du score d’exposition
 totalMachineCount | Entier long | Nombre d’appareils installés
 exposedMachinesCount | Entier long | Nombre d’appareils installés exposés aux vulnérabilités
 nonProductivityImpactedAssets | Entier long | Nombre d’appareils qui ne sont pas affectés  
-relatedComponent | String
- |  Composant logiciel associé
+relatedComponent | String |  Composant logiciel associé

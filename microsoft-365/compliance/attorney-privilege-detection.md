@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le modèle de détection des privilèges client-avocat pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans Advanced eDiscovery cas.
-ms.openlocfilehash: a6389d68a73813dff9853cf904bd79c2ce47b9fc4de4000250bb75e0e0c8bc86
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 814caf417de58a51b43d5c4b8ef2b99c11263986
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808490"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503106"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurer la détection des privilèges client-avocat dans Advanced eDiscovery
 
@@ -57,7 +57,7 @@ Pour activer le modèle de détection des privilèges client-avocat, votre organ
 
 Une personne qui est administrateur eDiscovery dans votre organisation (membre du sous-groupe Administrateur eDiscovery dans le groupe de rôles Gestionnaire eDiscovery) doit rendre le modèle disponible dans vos cas Advanced eDiscovery.
 
-1. Dans le Centre de sécurité & conformité, go to **eDiscovery > Advanced eDiscovery**.
+1. In the Centre de conformité Microsoft 365, go to **eDiscovery > Advanced**.
 
 2. Sur la **Advanced eDiscovery** d’accueil, dans la **vignette Paramètres,** cliquez sur **Configurer les paramètres d’analyse globale.**
 
@@ -81,7 +81,7 @@ Pour télécharger une liste d’avocats à utiliser par le modèle de détectio
 
    ![Page de flyout de privilège client-avocat](../media/AeDUploadAttorneyList.png)
 
-3. Sélectionnez **Parcourir,** puis recherchez et sélectionnez le fichier .csv que vous avez créé à l’étape 1.
+3. Sélectionnez **Parcourir,** puis recherchez et sélectionnez .csv fichier que vous avez créé à l’étape 1.
 
 4. Sélectionnez **Enregistrer** pour télécharger la liste des avocats.
 

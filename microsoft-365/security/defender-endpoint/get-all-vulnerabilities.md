@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e0b1da197b93fdae0cf0254b5af81808e3b744a73cbf74428dc7cc9f2da41d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bce19d10c26bbd34874af32fe493dafdc63064d6
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829398"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503238"
 ---
 # <a name="list-vulnerabilities"></a>Répertorier des vulnérabilités
 
@@ -39,7 +39,15 @@ ms.locfileid: "53829398"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## <a name="api-description"></a>Description de l’API
+
 Récupère une liste de toutes les vulnérabilités.
+<br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
+<br>Opérateurs pris en charge par OData :
+<br>```$filter``` on:  ```id``` , , , , , , , and ```name``` ```description``` ```cvssV3``` ```publishedOn``` ```severity``` ```updatedOn``` properties.
+<br>```$top``` avec une valeur maximale de 10 000.
+<br>```$skip```.
+<br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -60,7 +68,7 @@ GET /api/vulnerabilities
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -112,4 +120,4 @@ Voici un exemple de la réponse.
 ## <a name="see-also"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnérabilités dans votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Vulnérabilités de votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

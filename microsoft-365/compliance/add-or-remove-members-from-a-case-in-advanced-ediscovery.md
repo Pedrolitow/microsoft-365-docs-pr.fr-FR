@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment ajouter ou supprimer les membres qui peuvent accéder à un cas lors de la gestion d’Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b0b35503ca4e006f7a15bae8ffebc80081a9020db47d31621f67b8edbcc22667
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4fbd3700a74da8975f46174405c73511d16af3b
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837034"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502038"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Ajouter ou supprimer des membres à partir d’un cas
 
-Vous pouvez ajouter ou supprimer des membres pour gérer les utilisateurs pouvant accéder au cas. Toutefois, avant qu’un membre puisse accéder à un cas Advanced eDiscovery (et effectuer des tâches dans le cas), vous devez ajouter l’utilisateur au groupe de rôles Gestionnaire eDiscovery sur la page **Autorisations** dans le Centre de sécurité et conformité. Pour plus d’informations, consultez [Attribuer des autorisations eDiscovery dans le Centre de sécurité et conformité](./assign-ediscovery-permissions.md).
+Vous pouvez ajouter ou supprimer des membres pour gérer les utilisateurs pouvant accéder au cas. Toutefois, avant qu’un membre puisse accéder à un cas Advanced eDiscovery (et effectuer des tâches dans le cas), vous devez ajouter l’utilisateur au groupe de rôles Gestionnaire eDiscovery sur la page **Autorisations** dans le Centre de sécurité et conformité. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](./assign-ediscovery-permissions.md).
 
 1. Dans la page **Advanced eDiscovery**, accédez au cas auquel vous voulez ajouter un membre.
 

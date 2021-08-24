@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le tableau Advanced eDiscovery tableau de bord pour les ensembles de révision afin d’analyser rapidement votre corpus afin d’identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision.
-ms.openlocfilehash: 2128f2b2caa719cf2fc9b966ff70e1cfc74a1852896a10c85a17c407ffdddfea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 14baa47a73ac3cc4917d6e2f04614a80960ef085
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836509"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502974"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery tableau de bord pour les ensembles de révision
 
@@ -29,7 +29,7 @@ Dans certains cas, Advanced eDiscovery, il se peut que vous devrez examiner un g
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>Étape 1 : Créer un widget sur le tableau de bord du jeu à réviser
 
-1. Dans le Centre de sécurité & conformité, allez à **eDiscovery > Advanced eDiscovery** pour afficher la liste des cas dans votre organisation.
+1. Dans la Centre de conformité Microsoft 365, allez à **eDiscovery > Advanced eDiscovery** pour afficher la liste des cas dans votre organisation.
   
 2. Sélectionnez un cas existant.
   
@@ -73,7 +73,7 @@ Dans certains cas, Advanced eDiscovery, il se peut que vous devrez examiner un g
 
    ![CreateFilter](../media/applyconditionfilter.png)
 
-3. Répétez les étapes 1 à 2 pour d’autres widgets multi widgets. 
+3. Répétez les étapes 1 à 2 pour d’autres widgets avec plusieurs widgets. 
 
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer** sous la requête pour enregistrer vos conditions en tant que nouvelle requête de recherche pour le jeu à réviser.
 

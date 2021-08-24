@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9916f0d7f41354decbe935a635dd709e2cfe1f6320cdb6edf9cc84c59559a964
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5ac9de03cec817f469fe096689e4badf615bb4c
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839554"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503262"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 
@@ -44,7 +44,7 @@ ms.locfileid: "53839554"
 |---|---|---|
 |[List MachineActions](get-machineactions-collection.md)|[Action de l’ordinateur](machineaction.md)|Liste des [entités d’action](machineaction.md) de l’ordinateur.|
 |[Obtenir MachineAction](get-machineaction-object.md)|[Action de l’ordinateur](machineaction.md)|Obtenir une seule [entité d’action](machineaction.md) de l’ordinateur.|
-|[Collecter un package d’examen](collect-investigation-package.md)|[Action de l’ordinateur](machineaction.md)|Collecter un package d’examen à partir d’un [ordinateur.](machine.md)|
+|[Collecter un package d’examen](collect-investigation-package.md)|[Action de l’ordinateur](machineaction.md)|Collecter un package d’examen à partir [d’un ordinateur.](machine.md)|
 |[Obtenir SAS de l’URI du package d’examen](get-package-sas-uri.md)|[Action de l’ordinateur](machineaction.md)|Obtenez l’URI pour télécharger le package d’enquête.|
 |[Isoler l’ordinateur](isolate-machine.md)|[Action de l’ordinateur](machineaction.md)|Isoler [l’ordinateur](machine.md) du réseau.|
 |[Libérer la machine de l’isolation](unisolate-machine.md)|[Action de l’ordinateur](machineaction.md)|Libérer [l’ordinateur](machine.md) de l’isolation.|
@@ -64,15 +64,22 @@ ms.locfileid: "53839554"
 |Propriété|Type|Description|
 |---|---|---|
 |ID|Guid|Identité de [l’entité Action](machineaction.md) de l’ordinateur.|
-|type|Énum|Type de l’action. Les valeurs possibles sont : « RunAntiVirusScan », « Offboard », « CollectRandigationPackage », « Isolate », « Unisolate », « StopAndQuarantineFile », « RestrictCodeExecution » et « IsolaterictCodeExecution »|
+|type|Énum|Type de l’action. Les valeurs possibles sont : « RunAntiVirusScan », « Offboard », « Live Response », « CollectConditionigationPackage », « Isolate », « Unisolate », « StopAndQuarantineFile », « RestrictCodeExecution » et « IsolaterictCodeExecution ».|
 |étendue|string|Étendue de l’action. « Complète » ou « Sélective » pour l’isolation, « Rapide » ou « Complète » pour l’analyse antivirus.|
-|demandeur|Chaîne|Identité de la personne qui a exécuté l’action.|
-|requestorComment|Chaîne|Commentaire écrit lors de l’émission de l’action.|
-|statut|Énum|État actuel de la commande. Les valeurs possibles sont : « Pending », « InProgress », « Succeeded », « Failed », « TimeOut » et « Canceled ».|
-|machineId|Chaîne|ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
-|machineId|Chaîne|Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
+|demandeur|String|Identité de la personne qui a exécuté l’action.|
+|externalID|String|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
+|requestSource|string|Nom de l’utilisateur/de l’application qui a soumis l’action.|
+|Commandes |tableau|Commandes à exécuter. Les valeurs autorisées sont PutFile, RunScript, GetFile.|
+|cancellationRequestor|String|Identité de la personne qui a annulé l’action.|
+|requestorComment|String|Commentaire écrit lors de l’émission de l’action.|
+|cancellationComment|String|Commentaire écrit lors de l’annulation de l’action.|
+|status|Énum|État actuel de la commande. Les valeurs possibles sont : « En attente », « InProgress », « Succeeded », « Failed », « TimeOut » et « Cancelled ».|
+|machineId|String|ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
+|machineId|String|Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
 |creationDateTimeUtc|DateTimeOffset|Date et heure de création de l’action.|
-|lastUpdateTimeUtc|DateTimeOffset|Date et heure de la dernière mise à jour de l’état de l’action.|
+|cancellationDateTimeUtc|DateTimeOffset|Date et heure d’annulation de l’action.|
+|lastUpdateDateTimeUtc|DateTimeOffset|Date et heure de la dernière mise à jour de l’état de l’action.|
+|title|String|Titre de l’action de l’ordinateur.|
 |relatedFileInfo|Classe|Contient deux propriétés. chaîne `fileIdentifier` , Enum `fileIdentifierType` avec les valeurs possibles : « Sha1 », « Sha256 » et « Md5 ».|
 
 ## <a name="json-representation"></a>Représentation Json

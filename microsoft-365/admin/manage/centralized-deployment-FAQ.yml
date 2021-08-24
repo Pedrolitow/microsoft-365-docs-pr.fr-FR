@@ -20,48 +20,48 @@ metadata:
   - MET150
   - MOE150
   description: Examinez les réponses aux questions fréquentes sur le déploiement centralisé à partir du Centre d’administration Microsoft 365.
-  ms.openlocfilehash: aace2db69a50f574ac6d48c95496ff65a535d150
-  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+  ms.openlocfilehash: e2b4717fb2e1d5e82d22ce5288c40187722495df
+  ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "58254886"
+  ms.lasthandoff: 08/24/2021
+  ms.locfileid: "58502002"
 title: Forum aux questions sur le déploiement centralisé
 summary: Le déploiement centralisé est la façon recommandée pour un administrateur Office 365 de déployer des modules de Office (Word, Excel, PowerPoint et Outlook) pour les utilisateurs et les groupes au sein d’une organisation, à condition que l’organisation réponde à toutes les exigences d’utilisation du déploiement centralisé, comme indiqué dans cet article.
 sections:
 - name: Ignoré
   questions:
   - question: >
-      How do I know if my organization is set up for Centralized Deployment?
-    answer: "Centralized deployment of add-ins requires that users are using Microsoft 365 Apps for enterprise (and are signed into Office using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Azure Active Directory. \n \nCentralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.\n\nYou can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. \n  \n"
+      Comment savoir si mon organisation est définie pour un déploiement centralisé ?
+    answer: "Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent Applications Microsoft 365 pour les grandes entreprises (et soient connectés à Office à l’aide de leurs informations d’identification de connexion organisationnelle) et qu’ils Exchange Online boîtes aux lettres. Votre annuaire d’abonnements doit être dans un répertoire ou fédéré Azure Active Directory. \n \nLe déploiement centralisé est uniquement pris en charge pour les boîtes aux lettres en ligne. Il ne prend pas en charge le déploiement vers des boîtes aux lettres Exchange sur site.\n\nVous pouvez utiliser le contrôle [de compatibilité du](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)déploiement centralisé pour déterminer si votre abonnement est   éligible. \n  \n"
   - question: >
-      How do you target add-in user assignments with Centralized Deployment?
-    answer: "Centralized Deployment supports assignments to individual users, groups, and everyone in the tenant. Centralized Deployment can be used for users in top-level groups or groups without parent groups, but not for users in nested groups or groups that have parent groups. Centralized Deployment is also part of most Azure Active Directory groups, including Office 365 Groups, distribution lists, and security groups. \n\nIt is better to use groups assignments instead of individual user assignment for easier management.\n \nFor more details, see [User and Group assignments](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments).\n \n"
-  - question: "How long does it take for add-ins to show up for all users? \n"
-    answer: "It can take up to 24 hours for an add-in to show up for all users. It can take the same amount of time for add-in updates, changes from turn on or turn off, or add-in removals. \n"
+      Comment cibler les affectations d’utilisateurs de add-in avec le déploiement centralisé ?
+    answer: "Le déploiement centralisé prend en charge les affectations à des utilisateurs individuels, des groupes et à tous les utilisateurs du client. Le déploiement centralisé peut être utilisé pour les utilisateurs de groupes de niveau supérieur ou de groupes sans groupes parents, mais pas pour les utilisateurs de groupes imbrmbrés ou de groupes qui ont des groupes parents. Le déploiement centralisé fait également partie de la plupart des groupes Azure Active Directory, notamment les groupes Office 365, les listes de distribution et les groupes de sécurité. \n\nIl est préférable d’utiliser des affectations de groupes plutôt que des affectations individuelles d’utilisateurs pour faciliter la gestion.\n \nPour plus d’informations, voir [Affectations d’utilisateurs et de groupes.](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)\n \n"
+  - question: "Combien de temps faut-il pour que les modules s’afficheront pour tous les utilisateurs ? \n"
+    answer: "L’exposition d’un add-in pour tous les utilisateurs peut prendre jusqu’à 24 heures. Les mises à jour de modules, les modifications apportées à l’aide de l’activer ou de la désactiver, ou les suppressions de ces derniers peuvent prendre autant de temps. \n"
   - question: >
-      As an administrator, how do I manage the user access to add-ins for my organization?
+      En tant qu’administrateur, comment puis-je gérer l’accès des utilisateurs aux add-ins pour mon organisation ?
     answer: >
-      For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use Centralized Deployment.
+      Pour faciliter le déploiement des modules pour les utilisateurs, les groupes ou l’ensemble de votre organisation, nous recommandons aux administrateurs d’utiliser le déploiement centralisé.
 
 
-      For more information about managing user access, see:
-       - [Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
-       - [Specify the administrators and users who can install and manage add-ins for Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
-  - question: "Will Centralized Deployment provide admins the flexibility to choose the deployment method for Outlook add-ins? \n"
-    answer: "Yes. Centralized Deployment provides admins the flexibility to choose one of three deployment methods for Outlook add-ins during add-in deployment:\n\n**Fixed (Default)** \nThe add-in is deployed automatically to the assigned users, and they cannot remove it.\n \n**Available**\nUsers can install the add-in in Outlook by choosing **Home > Get More add-ins > Admin-managed**.\n \n**Optional**\nThe add-in is deployed automatically to the assigned users, but they can choose to remove it.\n    \n"
-  - question: "Can admins update Line-of-Business (LOB) add-ins? \n"
-    answer: "Yes. Admins can upload a new manifest file to support metadata changes for admin-deployed LOB add-ins. The add-in updates the next time the Office applications starts. The web application can change at any time.\n \nFor more information, see [line-of-business add-in](./manage-addins-in-the-admin-center.md).  \n"
-  - question: "Can admins turn off add-ins? \n"
+      Pour plus d’informations sur la gestion de l’accès des utilisateurs, voir :
+       - [Empêcher les téléchargements de Office sur tous les clients (sauf Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+       - [Désignation des administrateurs et utilisateurs qui peuvent installer et gérer des compléments pour Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
+  - question: "Le déploiement centralisé offre-t-il aux administrateurs la possibilité de choisir la méthode de déploiement pour Outlook des modules ? \n"
+    answer: "Oui. Le déploiement centralisé offre aux administrateurs la possibilité de choisir l’une des deux méthodes de déploiement pour les Outlook lors du déploiement de ces derniers :\n         \n**Disponible** Les utilisateurs peuvent installer le Outlook en choisissant Home **> Get More add-ins > admin-managed**.\n \n**Facultatif** Le add-in est déployé automatiquement pour les utilisateurs affectés, mais ils peuvent choisir de le supprimer.\n    \n"
+  - question: "Les administrateurs peuvent-ils mettre à jour des add-ins métier ? \n"
+    answer: "Oui. Les administrateurs peuvent télécharger un nouveau fichier manifeste pour prendre en charge les modifications apportées aux métadonnées pour les add-ins LOB déployés par l’administrateur. Le add-in est mis à jour lors du prochain démarrage Office applications. L'application web peut changer à tout moment.\n \nPour plus d’informations, voir le [add-in métier.](./manage-addins-in-the-admin-center.md)  \n"
+  - question: "Les administrateurs peuvent-ils désactiver les modules ? \n"
     answer: >
-      Yes. Admins can turn on or off the add-ins they deploy for all users from the Microsoft admin center.
+      Oui. Les administrateurs peuvent activer ou désactiver les modules qu’ils déploient pour tous les utilisateurs à partir du Centre d’administration Microsoft.
 
 
-      For more information, see [Add-in states](./manage-addins-in-the-admin-center.md#add-in-states).
+      Pour plus d’informations, voir [États des modules complémentaires.](./manage-addins-in-the-admin-center.md#add-in-states)
   - question: >
-      Can admins delete or remove add-ins?
-    answer: "Yes. Admins can delete add-ins they deployed for all users from the Microsoft admin center.\n\nFor more information, see [Delete an add-in](./manage-addins-in-the-admin-center.md#delete-an-add-in). \n  \n"
-  - question: "Can admins deploy paid add-ins from the Office Store using Centralized Deployment? \n"
-    answer: "No. You can't deploy paid add-ins from the Office Store using Centralized Deployment at this time. \n \nWe suggest reaching out to the ISV Developer for the paid add-in to request a manifest file or a URL. The tenant admin can then deploy the add-in as a LOB add-in using Centralized Deployment.\n   \n"
-  - question: "Which admin role do I need to manage add-ins for my organization? \n"
-    answer: "Global Admin is the recommended role with complete access to add-in management lifecycle. If you're the person who purchased your Microsoft 365 Business subscription, you are the Global admin.\n\nYour subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the Microsoft 365 admin center.  \n \nFor more information, see [Assign admin roles](../add-users/assign-admin-roles.md?view=o365-worldwide)."
+      Les administrateurs peuvent-ils supprimer ou supprimer des modules ?
+    answer: "Oui. Les administrateurs peuvent supprimer des modules qu’ils ont déployés pour tous les utilisateurs à partir du Centre d’administration Microsoft.\n\nPour plus d’informations, [voir Supprimer un module complémentaire.](./manage-addins-in-the-admin-center.md#delete-an-add-in) \n  \n"
+  - question: "Les administrateurs peuvent-ils déployer des add-ins payants à partir Office Store à l’aide d’un déploiement centralisé ? \n"
+    answer: "Non. Pour l’instant, vous ne pouvez pas déployer de Office payants à partir du Office Store à l’aide du déploiement centralisé. \n \nNous vous suggérons d’atteindre le développeur de logiciels indépendants pour que le add-in payant demande un fichier manifeste ou une URL. L’administrateur client peut ensuite déployer le add-in en tant que add-in cœur de rôle à l’aide du déploiement centralisé.\n   \n"
+  - question: "Quel rôle d’administrateur ai-je besoin pour gérer les modules pour mon organisation ? \n"
+    answer: "L’administrateur général est le rôle recommandé avec un accès complet au cycle de vie de gestion des applications. Si vous êtes la personne qui a acheté votre abonnement Microsoft 365 Entreprise, vous êtes l’administrateur global.\n\nVotre abonnement est livré avec un ensemble de rôles d’administrateur que vous pouvez attribuer à d’autres utilisateurs de votre organisation. Chaque rôle d’administrateur est map pour les fonctions d’entreprise courantes et donne aux membres de votre organisation des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration Microsoft 365.  \n \nPour plus d’informations, voir [Attribuer des rôles d’administrateur.](../add-users/assign-admin-roles.md?view=o365-worldwide)"

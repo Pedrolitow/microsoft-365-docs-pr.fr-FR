@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Microsoft 365 eDiscovery gèrent les documents chiffrés joints aux messages électroniques et stockés dans SharePoint Online et OneDrive Entreprise.
-ms.openlocfilehash: e03f5813fcd5f232119f3586cd173c40ca846cc7a7cb6908b5b71fab8e26361c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7d0f4acd34fc67738258e0f0df23535e759bd8dd
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842290"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503046"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Déchiffrement dans les outils Microsoft 365 eDiscovery
 
@@ -31,7 +31,7 @@ Pour exécuter des tâches eDiscovery courantes sur du contenu chiffré, les ges
 
 Pour faciliter la gestion du contenu chiffré dans le flux de travail eDiscovery, les outils eDiscovery Microsoft 365 intègrent désormais le déchiffrement des fichiers chiffrés joints aux messages électroniques et envoyés dans Exchange Online. <sup>1</sup> En outre, les documents chiffrés stockés dans SharePoint Online et OneDrive Entreprise sont déchiffrés dans Advanced eDiscovery.
 
-Avant cette nouvelle fonctionnalité, seul le contenu d’un message électronique protégé par la gestion des droits (et les fichiers non joints) était déchiffré. Les documents chiffrés SharePoint et OneDrive n’ont pas pu être déchiffrés pendant le flux de travail eDiscovery. À présent, les fichiers chiffrés à l’aide d’une technologie de chiffrement Microsoft se trouvent sur un compte SharePoint ou OneDrive et peuvent être recherchés et déchiffrés lorsque les résultats de la recherche sont préparés pour la prévisualisation, ajoutés à un jeu à réviser dans Advanced eDiscovery et exportés. En outre, les documents chiffrés dans SharePoint et OneDrive joints à un message électronique peuvent faire l’être. Cette fonctionnalité de déchiffrement permet aux gestionnaires eDiscovery d’afficher le contenu des pièces jointes et des documents de site chiffrés lors de l’aperçu des résultats de la recherche, et de les examiner après leur ajout à un groupe de révision dans Advanced eDiscovery.
+Avant cette nouvelle fonctionnalité, seul le contenu d’un message électronique protégé par la gestion des droits (et les fichiers non joints) était déchiffré. Les documents chiffrés SharePoint et OneDrive n’ont pas pu être déchiffrés pendant le flux de travail eDiscovery. À présent, les fichiers chiffrés à l’aide d’une technologie de chiffrement Microsoft se trouvent sur un compte SharePoint ou OneDrive et peuvent être recherchés et déchiffrés lorsque les résultats de la recherche sont préparés pour la prévisualisation, ajoutés à un jeu à réviser dans Advanced eDiscovery et exportés. En outre, les documents chiffrés dans les SharePoint et OneDrive joints à un message électronique sont utilisables dans une recherche. Cette fonctionnalité de déchiffrement permet aux gestionnaires eDiscovery d’afficher le contenu des pièces jointes et des documents de site chiffrés lors de l’aperçu des résultats de la recherche, et de les examiner après leur ajout à un groupe de révision dans Advanced eDiscovery.
 
 ## <a name="supported-encryption-technologies"></a>Technologies de chiffrement prise en charge
 
@@ -42,20 +42,20 @@ Les outils eDiscovery de Microsoft permettent la prise en charge des éléments 
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>Activités eDiscovery qui la prise en charge des éléments chiffrés
 
-Le tableau suivant identifie les tâches prise en charge qui peuvent être effectuées dans les outils eDiscovery Microsoft 365 sur les fichiers chiffrés joints aux messages électroniques et aux documents chiffrés dans SharePoint et OneDrive. Ces tâches prise en charge peuvent être effectuées sur des fichiers chiffrés qui correspondent aux critères d’une recherche. La valeur `N/A` indique que la fonctionnalité n’est pas disponible dans l’outil eDiscovery correspondant.
+Le tableau suivant identifie les tâches prise en charge qui peuvent être effectuées dans les outils eDiscovery Microsoft 365 sur les fichiers chiffrés joints aux messages électroniques et aux documents chiffrés dans SharePoint et OneDrive. Ces tâches peuvent être effectuées sur des fichiers chiffrés qui correspondent aux critères d’une recherche. La valeur `N/A` indique que la fonctionnalité n’est pas disponible dans l’outil eDiscovery correspondant.
 
 |Tâche eDiscovery  |Recherche de contenu  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|
-|Rechercher du contenu dans les fichiers chiffrés dans le courrier électronique et les sites<sup>1</sup>     |Oui      |Oui      |Oui      |
+|Rechercher du contenu dans des fichiers chiffrés dans le courrier électronique et les sites<sup>1</sup>     |Oui      |Oui      |Oui      |
 |Afficher un aperçu des fichiers chiffrés joints à la messagerie     |Oui      |Oui     |Oui       |
 |Afficher un aperçu des documents chiffrés dans SharePoint et OneDrive|Non      |Non    |Oui       |
 |Passer en revue les fichiers chiffrés dans un jeu à réviser    |N/A      |N/A        | Oui        |
-|Exporter des fichiers chiffrés joints à la messagerie électronique    |Oui       |Oui  |Oui    |
+|Exporter des fichiers chiffrés joints à un e-mail    |Oui       |Oui  |Oui    |
 |Exporter des documents chiffrés dans SharePoint et OneDrive    |Non       |Non  |Oui    |
 |||||
 
 > [!NOTE]
-> <sup>1</sup> Les fichiers chiffrés qui se trouvent sur un ordinateur local (et qui ne sont pas stockés sur un site SharePoint ou OneDrive) ne sont pas indexés pour eDiscovery. Cela signifie que si un fichier local chiffré est joint à un message électronique, le fichier ne sera pas renvoyé par une requête de recherche par mot clé, même si le fichier contient des mots clés qui correspondent à la requête de recherche. Toutefois, les messages électroniques avec un fichier chiffré local peuvent être renvoyés par une recherche de découverte électronique si une propriété de messagerie (telle qu’une date d’envoi, un expéditeur, un destinataire ou un objet) correspond à la requête de recherche.
+> <sup>1</sup> Les fichiers chiffrés situés sur un ordinateur local (et non stockés sur un site SharePoint ou OneDrive) ne sont pas indexés pour eDiscovery. Cela signifie que si un fichier local chiffré est joint à un message électronique, le fichier ne sera pas renvoyé par une requête de recherche par mot clé, même si le fichier contient des mots clés qui correspondent à la requête de recherche. Toutefois, les messages électroniques avec un fichier chiffré local peuvent être renvoyés par une recherche de découverte électronique si une propriété de messagerie (telle qu’une date d’envoi, un expéditeur, un destinataire ou un objet) correspond à la requête de recherche.
 
 ### <a name="decryption-limitations-with-sensitivity-labels"></a>Limites de déchiffrement avec les étiquettes de sensibilité
 
@@ -73,4 +73,4 @@ Les documents chiffrés avec les paramètres précédents peuvent toujours être
 
 Le rôle de déchiffrement RMS doit vous être attribué pour prévisualiser, examiner et exporter des fichiers chiffrés avec les technologies de chiffrement Microsoft. Ce rôle doit également vous être attribué pour examiner et interroger les fichiers chiffrés qui sont ajoutés à un jeu à réviser dans Advanced eDiscovery.
 
-Ce rôle est attribué par défaut au groupe de **rôles** Gestionnaire eDiscovery dans la page Autorisations du Centre de sécurité & conformité Office 365. Pour plus d’informations sur le rôle de déchiffrement RMS, voir [Attribuer des autorisations eDiscovery](assign-ediscovery-permissions.md#rms-decrypt).
+Ce rôle est attribué par défaut au groupe de rôles Gestionnaire eDiscovery dans la page **Autorisations** du Centre de conformité Microsoft 365. Pour plus d’informations sur le rôle de déchiffrement RMS, voir [Attribuer des autorisations eDiscovery](assign-ediscovery-permissions.md#rms-decrypt).

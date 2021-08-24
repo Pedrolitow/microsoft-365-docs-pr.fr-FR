@@ -1,7 +1,7 @@
 ---
 title: Exporter les méthodes et propriétés d’évaluation par appareil
 description: Fournit des informations sur les API qui tirent les données Gestion des menaces et des vulnérabilités données. Il existe différents appels d’API pour obtenir différents types de données. En règle générale, chaque appel d’API contient les données requises pour les appareils de votre organisation.
-keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation de la vulnérabilité de l’appareil, rapport de vulnérabilité de périphérique, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
+keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2d2e2e53061353a4035675c6e24b8dcc19900f672a159d13fe1277bed0393461
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 32722edf149b18c7d37311e5b334f378b962c877
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806987"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502950"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exporter les méthodes et propriétés d’évaluation par appareil
 
@@ -74,20 +74,22 @@ Exporter l’évaluation de la configuration **sécurisée (via des fichiers)**|
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-ConfigurationCategory|string|Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité
-ConfigurationId|string|Identificateur unique pour une configuration spécifique
-ConfigurationImpact|string|Impact nominal de la configuration sur la note de configuration globale (1-10)
-ConfigurationName|string|Nom d’affichage de la configuration
-ConfigurationSubcategory|string|Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques.
-DeviceId|string|Identificateur unique de l’appareil dans le service.
-DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.
-IsApplicable|bool|Indique si la configuration ou la stratégie est applicable
-IsCompliant|bool|Indique si la configuration ou la stratégie est correctement configurée.
-IsExpectedUserImpact|bool|Indique s’il y aura un impact sur l’utilisateur si la configuration est appliquée
-OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
-RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
-RecommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.
-Timestamp|string|Dernière fois que la configuration a été vue sur l’appareil
+configurationCategory|string|Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité.
+configurationId|string|Identificateur unique pour une configuration spécifique.
+configurationImpact|string|Impact évalué de la configuration sur le score de configuration global (1-10).
+configurationName|string|Nom complet de la configuration.
+configurationSubcategory|string|Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques.
+deviceId|chaîne|Identificateur unique de l’appareil dans le service.
+deviceName|chaîne|Nom de domaine complet (FQDN) de l’appareil.
+isApplicable|bool|Indique si la configuration ou la stratégie est applicable.
+isCompliant|bool|Indique si la configuration ou la stratégie est correctement configurée.
+isExpectedUserImpact|bool|Indique s’il y aura un impact sur l’utilisateur si la configuration est appliquée.
+osPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir systèmes d’exploitation et plateformes pris en charge par TVM.
+osVersion|string|Version spécifique du système d’exploitation en cours d’exécution sur l’appareil.
+rbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».
+rbacGroupId|string|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
+recommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.
+timestamp|string|Dernière fois que la configuration a été vue sur l’appareil.
 
 ### <a name="13-properties-via-files"></a>1.3 Propriétés (via des fichiers)
 
@@ -105,24 +107,24 @@ Renvoie tous les logiciels installés et leurs détails sur chaque appareil.
 Méthode|Type de données|Description
 :---|:---|:---
 Exporter l’évaluation de l’inventaire logiciel **(réponse JSON)**|Inventaire logiciel par collection d’appareils. Voir : [Propriétés 2.2 (réponse JSON)](#22-properties-json-response)|Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. L’API tire toutes les données de votre organisation en tant que réponses JSON. Cette méthode est la meilleure pour les petites organisations avec moins de 100 Ko d’appareils. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants.
-Exporter l’évaluation de l’inventaire **logiciel (via des fichiers)**|Inventaire logiciel par fichiers d’appareil. Voir : [2.3 Properties (via files)](#23-properties-via-files)|Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit : 1.  Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation. 2.  Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
+Exporter l’évaluation de l’inventaire **logiciel (via des fichiers)**|Inventaire logiciel par fichiers d’appareil. Voir : [2.3 Properties (via files)](#23-properties-via-files)|Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 Ko d’appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit : 1.  Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation. 2.  Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
 
 ### <a name="22-properties-json-response"></a>2.2 Propriétés (réponse JSON)
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-DeviceId|string|Identificateur unique de l’appareil dans le service.
-DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.
+DeviceId|chaîne|Identificateur unique de l’appareil dans le service.
+DeviceName|chaîne|Nom de domaine complet (FQDN) de l’appareil.
 DiskPaths|Array[string]|Preuve disque que le produit est installé sur l’appareil.
 EndOfSupportDate|string|Date à laquelle la prise en charge de ce logiciel a ou va se terminer.
 EndOfSupportStatus|string|État de fin du support. Peut contenir les valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Upcoming EOS Software.
-ID|string|Identificateur unique de l’enregistrement.
-NumberOfWeaknesses|int|Nombre de faiblesses sur ce logiciel sur cet appareil
+NumberOfWeaknesses|int|Nombre de faiblesses sur ce logiciel sur cet appareil.
 OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
-RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+RbacGroupName|chaîne|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».
+rbacGroupId|chaîne|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
 RegistryPaths|Array[string]|Preuve dans le Registre que le produit est installé sur l’appareil.
 SoftwareFirstSeenTimestamp|string|La première fois que ce logiciel a été vu sur l’appareil.
-SoftwareName|string|Nom du produit logiciel.
+SoftwareName|chaîne|Nom du produit logiciel.
 SoftwareVendor|string|Nom du fournisseur de logiciels.
 SoftwareVersion|string|Numéro de version du produit logiciel.
 
@@ -143,7 +145,7 @@ Méthode|Type de données|Description
 :---|:---|:---
 Exporter l’évaluation des vulnérabilités **logicielles (réponse JSON)**|Collection d’examens : [3.2 Propriétés (réponse JSON)](#32-properties-json-response)|Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. L’API tire toutes les données de votre organisation en tant que réponses JSON. Cette méthode est la meilleure pour les petites organisations avec moins de 100 Ko d’appareils. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants.
 Exporter l’évaluation des vulnérabilités **logicielles (via des fichiers)**|Entité Investigation Voir : [Propriétés 3.3 (via des fichiers)](#33-properties-via-files)|Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit : 1.  Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation. 2.  Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
-**Évaluation des vulnérabilités** logicielles d’exportation delta **(réponse JSON)**|Collection d’examens Voir : [Exportation delta des propriétés 3.4 (réponse JSON)](#34-properties-delta-export-json-response)|Renvoie un tableau avec une entrée pour chaque combinaison unique de : DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId et EventTimestamp. <br><br> L’API tire les données de votre organisation en tant que réponses JSON. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants. Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées ? » ou « combien de nouvelles vulnérabilités ont été ajoutées à mon organisation ? »  <br><br> Étant donné que l’appel de l’API d’exportation Delta pour les vulnérabilités logicielles renvoie des données uniquement pour une plage de dates ciblée, il n’est pas considéré comme _une exportation complète._
+**Évaluation des vulnérabilités** logicielles d’exportation delta **(réponse JSON)**|Collection d’examens Voir : [Exportation delta de propriétés 3.4 (réponse JSON)](#34-properties-delta-export-json-response)|Renvoie un tableau avec une entrée pour chaque combinaison unique de : DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId et EventTimestamp. <br><br> L’API tire les données de votre organisation en tant que réponses JSON. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants. Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées ? » ou « combien de nouvelles vulnérabilités ont été ajoutées à mon organisation ? »  <br><br> Étant donné que l’appel de l’API d’exportation Delta pour les vulnérabilités logicielles renvoie des données uniquement pour une plage de dates ciblée, il n’est pas considéré comme _une exportation complète._
 
 ### <a name="32-properties-json-response"></a>3.2 Propriétés (réponse JSON)
 
@@ -157,12 +159,13 @@ DiskPaths|Chaîne de \[ tableau\]|Preuve disque que le produit est installé sur
 ExploitabilityLevel|string|Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp|string|Première fois que la CVE de ce produit a été vue sur l’appareil.
 ID|string|Identificateur unique de l’enregistrement.
-LastSeenTimestamp|string|Dernière fois que la CVE a été vue sur l’appareil.
+LastSeenTimestamp|chaîne|Dernière fois que la CVE a été vue sur l’appareil.
 OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
-RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».
+RbacGroupName|chaîne|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».
+rbacGroupId|string|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
 RecommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate|string|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
-RecommendedSecurityUpdateId|string|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants
+RecommendedSecurityUpdateId|chaîne|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants.
 Chaîne de tableau des chemins \[ d’accès du Registre\]|Preuve dans le Registre que le produit est installé sur l’appareil.
 SoftwareName|string|Nom du produit logiciel.
 SoftwareVendor|string|Nom du fournisseur de logiciels.
@@ -185,21 +188,21 @@ CvssScore|string|Score CVSS de la CVE.
 DeviceId|string|Identificateur unique de l’appareil dans le service.
 DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.
 DiskPaths|Array[string]|Preuve disque que le produit est installé sur l’appareil.
-EventTimestamp|Chaîne|Heure de la découverte de cet événement delta.
+EventTimestamp|String|Heure de la découverte de cet événement delta.
 ExploitabilityLevel|string|Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp|string|Première fois que la CVE de ce produit a été vue sur l’appareil.
 ID|string|Identificateur unique de l’enregistrement.  
 LastSeenTimestamp|string|Dernière fois que la CVE a été vue sur l’appareil.
 OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
-RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».
-RecommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.
+RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+RecommendationReference|chaîne|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate |string|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
-RecommendedSecurityUpdateId |string|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants
+RecommendedSecurityUpdateId |chaîne|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou d’aide correspondants
 RegistryPaths |Array[string]|Preuve dans le Registre que le produit est installé sur l’appareil.
 SoftwareName|string|Nom du produit logiciel.
 SoftwareVendor|string|Nom du fournisseur de logiciels.
-SoftwareVersion|string|Numéro de version du produit logiciel.
-État|Chaîne|**Nouveau**   (pour une nouvelle vulnérabilité introduite sur un appareil).  **Fixed**   (pour une vulnérabilité qui n’existe plus sur l’appareil, ce qui signifie qu’elle a été corrigé). **Mise à jour**   (pour une vulnérabilité sur un appareil qui a changé. Les modifications possibles sont les suivants : score CVSS, niveau d’exploitabilité, niveau de gravité, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
+SoftwareVersion|chaîne|Numéro de version du produit logiciel.
+Statut|String|**Nouveau**   (pour une nouvelle vulnérabilité introduite sur un appareil).  **Fixed**   (pour une vulnérabilité qui n’existe plus sur l’appareil, ce qui signifie qu’elle a été corrigé). **Mise à jour**   (pour une vulnérabilité sur un appareil qui a changé. Les modifications possibles sont les suivants : score CVSS, niveau d’exploitabilité, niveau de gravité, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
 VulnerabilitySeverityLevel|string|Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces.
 
 ## <a name="see-also"></a>Voir aussi

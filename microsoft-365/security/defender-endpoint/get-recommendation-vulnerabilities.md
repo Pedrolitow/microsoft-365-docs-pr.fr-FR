@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 74c47c8e9e4e6f46802c64df0d987ae123ed727cde05b520847c94fcfc7fd349
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8325f848281a37099e7a89eeda05d738c686b011
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800305"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502734"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>Répertorier les vulnérabilités par action d'amélioration
 
@@ -45,8 +45,8 @@ L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|SecurityRecommendation.Read.All|« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire)|SecurityRecommendation.Read|« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
+Application|Vulnerability.Read.All  |« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}/vulnerabilities
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -106,7 +106,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Recommandations & sécurité des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

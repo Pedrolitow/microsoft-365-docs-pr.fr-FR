@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: Modifiez Windows registre local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du Centre de sécurité & conformité.
-ms.openlocfilehash: 6424f1763a297cd2fee0e6c8b5b1b06236b95ad0173bc6e117bedd2da5502ed9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Modifiez Windows registre local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du Centre de conformité Microsoft 365.
+ms.openlocfilehash: efe9ea768b68524dbfda003796a10d60453862bc
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807995"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503154"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 
-Lorsque vous utilisez l’outil d’exportation eDiscovery pour exporter les résultats d’une recherche de contenu dans le Centre de sécurité & conformité, l’outil crée et exporte automatiquement deux rapports qui contiennent des informations supplémentaires sur le contenu exporté. Ces rapports sont le fichier Results.csv et le fichier Manifest.xml (consultez la section Des [questions](#frequently-asked-questions-about-disabling-export-reports) fréquemment posées sur la désactivation des rapports d’exportation dans cette rubrique pour obtenir une description détaillée de ces rapports). Étant donné que ces fichiers peuvent être très importants, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, vous pouvez modifier Windows registre sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de Registre. 
+Lorsque vous utilisez l’outil Exportation de découverte électronique pour exporter les résultats d’une recherche de contenu dans le Centre de conformité Microsoft 365, l’outil crée et exporte automatiquement deux rapports qui contiennent des informations supplémentaires sur le contenu exporté. Ces rapports sont le fichier Results.csv et le fichier Manifest.xml (consultez la section Des [questions](#frequently-asked-questions-about-disabling-export-reports) fréquemment posées sur la désactivation des rapports d’exportation dans cette rubrique pour obtenir une description détaillée de ces rapports). Étant donné que ces fichiers peuvent être très importants, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, vous pouvez modifier Windows registre sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de Registre. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Créer des paramètres de Registre pour désactiver les rapports d’exportation
 
@@ -62,7 +62,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exp
     
     L’Éditeur du Registre affiche un message vous disant que le paramètre a été correctement ajouté au Registre.
   
-## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Modifier les paramètres du Registre pour ré-activer les rapports d’exportation
+## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Modifier les paramètres de Registre pour ré-activer les rapports d’exportation
 
 Si vous avez désactivé les rapports Results.csv et Manifest.xml en créant les fichiers .reg dans la procédure précédente, vous pouvez modifier ces fichiers pour réactiver un rapport afin qu’il soit exporté avec les résultats de la recherche. Là encore, effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exporter les résultats d’une recherche de contenu.
   

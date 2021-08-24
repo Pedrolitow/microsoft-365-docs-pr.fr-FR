@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment configurer Sujets Microsoft Viva
-ms.openlocfilehash: 65c679889c60b69ae60a4649b64224f7970f57e58feb5f40a391e0acc257966c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fedf5efd6021dc425dcd7c26666edb66b1b780d6
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834843"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502770"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurer Sujets Microsoft Viva
 
@@ -25,7 +25,8 @@ Il est important de planifier la meilleure façon de configurer des rubriques da
 
 Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d’administration Microsoft 365 et configurer Rubriques.
 
-Si vous avez configuré SharePoint pour exiger [des](/sharepoint/control-access-from-unmanaged-devices)appareils gérés, assurez-vous de configurer les rubriques à partir d’un appareil géré.
+> [!IMPORTANT]
+> Si vous avez configuré SharePoint pour exiger [des](/sharepoint/control-access-from-unmanaged-devices)appareils gérés, vous devez configurer Rubriques à partir d’un appareil géré.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
@@ -73,7 +74,7 @@ Pour configurer des rubriques
 
     ![Prise en main](../media/k-get-started.png) 
 
-4. Dans la page Choisir la façon dont Topics peut trouver des **rubriques,** vous allez configurer la découverte de rubriques. Dans la section **Sélectionner SharePoint sources** de rubriques, sélectionnez les sites SharePoint à analyser en tant que sources pour vos rubriques lors de la découverte. Choisissez parmi les autorisations suivantes :
+4. Dans la page Choisir la façon dont Topics peut trouver des **rubriques,** vous allez configurer la découverte de rubriques. Dans la section **Sélectionner SharePoint sources** de rubriques, sélectionnez les sites SharePoint seront analyser en tant que sources pour vos rubriques lors de la découverte. Choisissez parmi les autorisations suivantes :
     - **Tous les sites** : tous les sites SharePoint dans votre organisation. Cela inclut les sites actuels et futurs.
     - **Tous, sauf les sites sélectionnés**: tapez les noms des sites que vous souhaitez exclure.  Vous pouvez également charger une liste de sites que vous souhaitez refuser de découvrir. Les sites créés à l’avenir seront inclus en tant que sources pour la découverte de rubriques. 
     - **Seuls les sites** sélectionnés : tapez les noms des sites que vous souhaitez inclure. Vous pouvez également charger une liste de sites. Les sites créés dans le futur ne seront pas inclus comme sources pour la découverte de rubriques.
@@ -81,7 +82,7 @@ Pour configurer des rubriques
 
     ![Choisir comment rechercher des rubriques](../media/ksetup1.png) 
    
-5. Dans la section **Exclure les rubriques par** nom, vous pouvez ajouter des noms de rubriques que vous souhaitez exclure de la découverte de rubriques. Utilisez ce paramètre pour empêcher que des informations sensibles ne figurent dans les rubriques. Les options disponibles sont les suivantes :
+5. Dans la section **Exclure les rubriques par** nom, vous pouvez ajouter des noms de rubriques que vous souhaitez exclure de la découverte de rubriques. Utilisez ce paramètre pour empêcher que des informations sensibles ne figurent dans les rubriques. Les options disponibles sont les suivantes :
     - **N’excluez aucune rubrique** 
     - **Exclure les rubriques par nom**
 
@@ -107,7 +108,7 @@ Pour configurer des rubriques
     
     Sélectionnez **Suivant**.
 
-6. Sur la Qui pouvez voir les **rubriques** et où peuvent-elles les voir, vous allez configurer la visibilité des rubriques. Dans la Qui pouvez voir les paramètres des **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en évidence, les fiches de rubrique, les réponses aux rubriques dans la recherche et les pages de rubriques. Vous pouvez sélectionner :
+6. Dans la **Qui pouvez voir les rubriques** et où peuvent-elles les voir, vous allez configurer la visibilité des rubriques. Dans la Qui pouvez voir les paramètres des **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en évidence, les fiches de rubrique, les réponses aux rubriques dans la recherche et les pages de rubriques. Vous pouvez sélectionner :
     - **Tous les membres de mon organisation**
     - **Personnes ou groupes de sécurité sélectionnés uniquement**
     - **Personne**
@@ -139,11 +140,11 @@ Pour configurer des rubriques
 
    Sélectionnez **Suivant**.
 
-   ![Créer le Centre de connaissances](../media/ksetup4.png)  
+   ![Créer un Centre de connaissances](../media/ksetup4.png)  
 
 10. À la page **Examiner et finaliser**, vous pouvez consulter le paramètre sélectionné, puis choisir d’apporter des modifications. Si vos sélections vous conviennent, sélectionnez **Activer**.
 
-11. La page **Rubriques** activée s’affiche, confirmant que le système va maintenant commencer à analyser les sites sélectionnés pour les rubriques et à créer le site centre de rubriques. Sélectionnez **Terminé**.
+11. La page **Activée rubriques** s’affiche, confirmant que le système va maintenant commencer à analyser les sites sélectionnés pour les rubriques et à créer le site centre de rubriques. Sélectionnez **Terminé**.
 
 12. Vous serez renvoyé à votre page de **Connecter de** connaissances. Dans cette page, vous pouvez sélectionner **Gérer** pour modifier vos paramètres de configuration. 
 

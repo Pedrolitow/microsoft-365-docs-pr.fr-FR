@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu telles que la création de recherches et l’exécution de rapports via des scripts PowerShell dans le Centre de sécurité et conformité & dans Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba42baa399e92e65228d18028043c53d8e90fc78f2c6ae614c39d68efc3482d4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2ca99a00c57de1c376ae3840324bd869abb73042
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886493"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58501978"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
@@ -32,7 +32,7 @@ ms.locfileid: "53886493"
 
 ## <a name="before-you-create-a-content-search"></a>Avant de créer une recherche de contenu
 
-- Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & conformité pour exécuter les scripts décrits dans cette rubrique.
+- Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de conformité Microsoft 365 pour exécuter les scripts décrits dans cette rubrique.
 
 - Pour collecter une liste des URL pour les sites OneDrive Entreprise de votre organisation que vous pouvez ajouter au fichier CSV à l’étape 1, voir Créer une liste de tous les emplacements [OneDrive](/onedrive/list-onedrive-urls)de votre organisation.
 
@@ -64,12 +64,12 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez à cette
 
    ****
 
-   |Parameter|Description|
+   |Paramètre|Description|
    |---|---|
    |`ExchangeLocation`|Adresse SMTP de la boîte aux lettres de l’utilisateur.|
    |`SharePointLocation`|URL du site OneDrive Entreprise de l’utilisateur ou URL de n’importe quel site de votre organisation. Pour l’URL OneDrive Entreprise sites web, utilisez ce format : ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` . Par exemple : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
    |`ContentMatchQuery`|Requête de recherche pour la recherche. Pour plus d’informations sur la création d’une requête de recherche, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md)|
-   |`StartDate`|Pour le courrier électronique, date à laquelle un message a été reçu par un destinataire ou envoyé par l’expéditeur. Pour les documents SharePoint ou OneDrive Entreprise sites web, date de la dernière modification d’un document ou après celui-là.|
+   |`StartDate`|Pour le courrier électronique, date à laquelle un message a été reçu par un destinataire ou envoyé par l’expéditeur. Pour les documents SharePoint sites OneDrive Entreprise sites, date de la dernière modification d’un document ou après celui-là.|
    |`EndDate`|Pour le courrier électronique, date le ou avant qu’un message a été envoyé par un utilisateur. Pour les documents SharePoint ou OneDrive Entreprise sites web, la date à laquelle un document a été modifié pour la dernière fois ou avant celui-là.|
    |
 
@@ -174,7 +174,7 @@ Pour exécuter le script :
 
 3. À **l’invite d’ID de** groupe de recherche, tapez un nom de groupe de recherche, puis appuyez sur **Entrée**; par exemple,  `ContosoCase` . N’oubliez pas que ce nom est sensible à la cas, vous devez donc le taper de la même manière dans les étapes suivantes.
 
-4. À **l’invite** de fichiers CSV source, tapez le nom du fichier CSV, y compris l’extension .csv fichier . par exemple,  `ContosoCase.csv` .
+4. À l’invite de fichiers **CSV source,** tapez le nom du fichier CSV, y compris l’extension .csv fichier . par exemple,  `ContosoCase.csv` .
 
 5. Appuyez **sur Entrée** pour poursuivre l’exécution du script.
 
@@ -258,7 +258,7 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
    ![Exécutez le rapport de recherche pour afficher les estimations pour le groupe de recherche](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
-> Si le même site ou boîte aux lettres est spécifié en tant qu’emplacement de contenu dans plusieurs recherches dans un groupe de recherche, l’estimation des résultats totaux dans le rapport (pour le nombre d’éléments et la taille totale) peut inclure des résultats pour les mêmes éléments. Cela est dû au fait que le même message électronique ou document est compté plusieurs fois s’il correspond à la requête pour différentes recherches dans le groupe de recherche.
+> Si le même site ou boîte aux lettres est spécifié en tant qu’emplacement de contenu dans plusieurs recherches dans un groupe de recherche, l’estimation des résultats totaux dans le rapport (pour le nombre d’éléments et la taille totale) peut inclure des résultats pour les mêmes éléments. Cela est dû au fait que le même message électronique ou document sera compté plusieurs fois s’il correspond à la requête pour différentes recherches dans le groupe de recherche.
 
 ## <a name="step-5-run-the-script-to-delete-the-searches"></a>Étape 5 : Exécuter le script pour supprimer les recherches
 

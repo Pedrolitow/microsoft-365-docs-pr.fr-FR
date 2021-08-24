@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 9fbe99e07a9fa881656df15e2be1d673f87bc523
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5cebf4f53a331712df6a480a6d813da7232b5858
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58251915"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502914"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -77,7 +77,7 @@ Le compte que vous utilisez pour accéder à l’Explorateur de contenu doit se 
 
 Vous pouvez également attribuer l’un ou l’autre des rôles (ou les deux) à un groupe de rôles personnalisé afin de personnaliser l’accès à l’Explorateur de contenu.
 
-Un administrateur général, un administrateur de conformité ou un administrateur de données peut attribuer l'appartenance nécessaire au groupe de rôle de la visionneuse de liste de l’explorateur de contenu et de la visionneuse de contenu de l'explorateur de contenu.
+Un administrateur général peut attribuer la Visionneuse de liste de l’Explorateur de contenus nécessaire et l'appartenance au groupe de rôles Visionneur de contenus/Explorateur de contenus.
 
 ## <a name="content-explorer"></a>Explorateur de contenu
 

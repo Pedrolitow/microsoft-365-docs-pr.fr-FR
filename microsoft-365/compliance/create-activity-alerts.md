@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Ajouter et gérer des alertes d’activité dans le Centre de sécurité & conformité afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques
-ms.openlocfilehash: 1411e69229dc2baa60578bfa60a7c2c18184fd10a759081e68c13d87a482d7cb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Ajouter et gérer des alertes d’activité dans le Centre de conformité Microsoft 365 afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques
+ms.openlocfilehash: b9f73a8f61bf1d9ef303ce0ef0b4a60320cae4df
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886542"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503118"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 
@@ -32,17 +32,17 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
  **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activité ou d’activité effectués par des utilisateurs spécifiques que vous voulez vraiment connaître. Au lieu d’avoir à rechercher ces activités dans le journal d’audit, vous pouvez utiliser des alertes d’activité pour Microsoft 365 vous envoyer un message électronique lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte d’activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint, ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de sa boîte aux lettres. La notification par courrier électronique qui vous est envoyée inclut des informations sur l’activité qui a été effectuée et l’utilisateur qui l’a effectuée.
 
 > [!NOTE]
-> Les alertes d’activité sont en cours d’precaté. Nous vous recommandons de commencer à utiliser des stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer de nouvelles alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités supplémentaires, telles que la possibilité de créer une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifiée, et d’afficher des alertes sur la page Afficher les **alertes** dans le centre de sécurité et conformité. Pour plus d’informations, voir [Stratégies d’alerte.](alert-policies.md)
+> Les alertes d’activité sont en cours d’precaté. Nous vous recommandons de commencer à utiliser des stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer de nouvelles alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités supplémentaires, telles que la possibilité de créer une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifiée, et l’affichage d’alertes sur la page Afficher les **alertes** dans le centre de sécurité et conformité. Pour plus d’informations, voir [Stratégies d’alerte.](alert-policies.md)
 
 ## <a name="confirm-roles-and-configure-audit-logging"></a>Confirmer les rôles et configurer la journalisation d’audit
 
-- Le rôle Configuration de l’organisation doit vous être attribué dans le Centre de sécurité & conformité pour gérer les alertes d’activité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité et Gestion de l’organisation. Pour plus d’informations sur l’ajout de membres à des groupes de rôles, voir [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Le rôle Configuration de l’organisation doit vous être attribué dans le Centre de conformité Microsoft 365 gérer les alertes d’activité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité et Gestion de l’organisation. Pour plus d’informations sur l’ajout de membres à des groupes de rôles, voir [Give users access to the Centre de conformité Microsoft 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
-- Vous (ou un autre administrateur) devez d’abord activer la journalisation d’audit pour votre organisation avant de commencer à utiliser les alertes d’activité. Pour ce faire, cliquez simplement sur **Démarrer** l’enregistrement de l’activité des utilisateurs et des administrateurs dans la page **Alertes d’activité.** (Si vous ne voyez pas ce lien, l’audit a déjà été désactivé pour votre organisation.) Vous pouvez également activer l’audit sur la page de recherche du journal  **d’audit** dans le Centre de sécurité & conformité (recherche dans le journal \> **d’audit de la recherche).** Vous ne devez le faire qu’une seule fois pour votre organisation.
+- Vous (ou un autre administrateur) devez d’abord activer la journalisation d’audit pour votre organisation avant de commencer à utiliser les alertes d’activité. Pour ce faire, cliquez simplement sur **Démarrer** l’enregistrement de l’activité des utilisateurs et des administrateurs dans la page **Alertes d’activité.** (Si vous ne voyez pas ce lien, l’audit a déjà été désactivé pour votre organisation.) Vous pouvez également activer l’audit sur la page de recherche du journal **d’audit** dans la Centre de conformité Microsoft 365 (go to **Audit**). Vous ne devez le faire qu’une seule fois pour votre organisation.
 
 - Vous pouvez créer des alertes pour les mêmes activités que vous pouvez rechercher dans le journal d’audit. Consultez la section [Plus](#more-information) d’informations pour obtenir la liste des scénarios courants (et l’activité spécifique à surveiller) pour qui vous pouvez créer des alertes.
 
-- Vous pouvez utiliser la page **Alertes** d’activité dans le Centre de sécurité & conformité pour créer des alertes uniquement pour les activités effectuées par les utilisateurs répertoriés dans le carnet d’adresses de votre organisation. Vous ne pouvez pas utiliser cette page pour créer des alertes pour les activités effectuées par des utilisateurs externes qui ne sont pas répertoriés dans le carnet d’adresses.
+- Vous pouvez utiliser la page **Alertes** d’activité dans le Centre de conformité Microsoft 365 pour créer des alertes uniquement pour les activités effectuées par les utilisateurs répertoriés dans le carnet d’adresses de votre organisation. Vous ne pouvez pas utiliser cette page pour créer des alertes pour les activités effectuées par des utilisateurs externes qui ne sont pas répertoriés dans le carnet d’adresses.
 
 ## <a name="create-an-activity-alert"></a>Créer une alerte d’activité
 
@@ -99,7 +99,7 @@ Pour ré-activer une alerte d’activité,  répétez simplement ces étapes et 
 
 ## <a name="more-information"></a>Informations supplémentaires
 
-- Voici un exemple de notification par courrier électronique envoyée aux utilisateurs spécifiés dans le champ Envoyé à cette alerte (et répertorié sous **Destinataires** sur la page **Alertes** d’activité) dans le Centre de sécurité & conformité.
+- Voici un exemple de notification par courrier électronique envoyée aux utilisateurs spécifiés dans le champ Envoyé à cette alerte (et répertoriés sous **Destinataires** sur la page **Alertes** d’activité) dans la Centre de conformité Microsoft 365.
 
     ![Exemple de notification par courrier électronique envoyée pour une alerte d’activité](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b8819712236ebd09c179e3f8c43a161a4ea73f5ca8b0fe8eca2fd9c242c38d40
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9f70cba0d749238b9602f88b27d96aec87a5139b
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863642"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502842"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Répertorier les vulnérabilités par logiciel
 
@@ -31,7 +31,7 @@ ms.locfileid: "53863642"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,8 +48,8 @@ L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Software.Read.All|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire)|Software.Read|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
+Application|Vulnerability.Read.All|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -61,7 +61,7 @@ GET /api/Software/{Id}/vulnerabilities
 
 |Nom|Type|Description
 |---|---|---|
-|Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+|Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

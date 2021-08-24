@@ -13,13 +13,13 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour affecter des paramètres de communication par utilisateur à l’Skype Entreprise stratégies En ligne.'
-ms.openlocfilehash: c0c2a4319b1f754384ab9b514bfe637591fc28c6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour affecter des paramètres de communication par utilisateur avec Skype Entreprise online.'
+ms.openlocfilehash: 6f262730c74de4442341454b2f85a181f673398b
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353779"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502674"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Affecter des stratégies Skype Entreprise Online par utilisateur avec PowerShell pour Microsoft 365
 
@@ -108,6 +108,8 @@ Cette commande définit le nom de la stratégie d'accès externe attribuée à A
 Pour gérer un grand nombre d’utilisateurs (1 000 ou plus), vous devez traitement par lots des commandes via un bloc de script à l’aide de la cmdlet [Invoke-Command.](/powershell/module/microsoft.powershell.core/invoke-command)  Dans les exemples précédents, chaque fois qu’une cmdlet est exécutée, elle doit configurer l’appel, puis attendre le résultat avant de le renvoyer.  Lorsque vous utilisez un bloc de script, cela permet aux cmdlets d’être exécutées à distance et, une fois terminées, de renvoyer les données.
 
 ```powershell
+$s = Get-PSSession | Where-Object { ($.ComputerName -like '*.online.lync.com' -or $.Computername -eq 'api.interfaces.records.teams.microsoft.com') -and $.State -eq 'Opened' -and $.Availability -eq 'Available' }
+
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
 
 $batch = 50

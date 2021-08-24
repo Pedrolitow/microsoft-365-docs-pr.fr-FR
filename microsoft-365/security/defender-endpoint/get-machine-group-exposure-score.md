@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5a27bebc9be678119703f931d99e07627c4355e0c64febecb067a12666edb73d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e39a1833157210e3d5e4c6a5bcc77deede295f3c
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793801"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58501990"
 ---
 # <a name="list-exposure-score-by-device-group"></a>Liste du score d’exposition par groupe d’appareils
 
@@ -39,7 +39,7 @@ ms.locfileid: "53793801"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupère une collection d’alertes liées à une adresse de domaine donnée.
+Récupère le score d’exposition de chaque groupe d’ordinateurs.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -60,7 +60,7 @@ GET /api/exposureScore/ByMachineGroups
 
 Nom|Type|Description
 ---|---|---
-|Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+|Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -68,7 +68,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK, avec une liste de score d’exposition par données de groupe d’appareils dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 200 OK, avec une liste de score d’exposition par groupe d’appareils dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 
@@ -103,7 +103,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Niveau d’exposition & vulnérabilité des menaces](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

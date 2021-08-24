@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Conserver le contenu des boîtes aux lettres supprimées à l’aide de la fonctionnalité de boîtes aux lettres inactives Microsoft 365.
-ms.openlocfilehash: b8d9043d066f2500074b79b6eb06183f093907ba
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6f533cf213f28d42dee1bb470cefaa2ced186778
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247544"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503166"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
 
@@ -68,7 +68,7 @@ Pour obtenir des procédures pas à pas pour placer une boîte aux lettres en co
 Une fois que la boîte aux lettres est placée en conservation ou qu’une stratégie de rétention lui est appliquée, l’étape suivante consiste à supprimer la boîte aux lettres. La meilleure façon de supprimer une boîte aux lettres consiste à supprimer le compte d’utilisateur correspondant dans le Centre d’administration Microsoft 365. Pour plus d’informations sur la suppression de comptes d’utilisateurs, voir [Supprimer un utilisateur de votre organisation.](../admin/add-users/delete-a-user.md)
   
 > [!NOTE]
-> Vous pouvez également supprimer la boîte aux lettres en utilisant la cmdlet **Remove-Mailbox** dans Exchange Online PowerShell. Pour plus d’informations, voir Supprimer ou restaurer des boîtes aux [lettres utilisateur dans Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes). 
+> Vous pouvez également supprimer la boîte aux lettres en utilisant la cmdlet **Remove-Mailbox** dans Exchange Online PowerShell. Pour plus d’informations, [voir Supprimer ou restaurer des](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes)boîtes aux lettres utilisateur dans Exchange Online . 
   
 ## <a name="view-a-list-of-inactive-mailboxes"></a>Afficher la liste des boîtes aux lettres inactives
 
@@ -76,13 +76,13 @@ Pour afficher la liste des boîtes aux lettres inactives dans votre organisation
 
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an Global administrator or a Compliance administrator account in your organization.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur Gouvernance des informations **> rétention**.
+2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis cliquez sur Gouvernance des informations **> rétention**.
 
    ![Cliquez sur le bouton Boîte aux lettres inactive dans la page Rétention](../media/MCCInactiveMailboxes1.png)
 
 3. Dans la page **Rétention,** cliquez sur **Boîte aux lettres inactive** pour afficher la liste des boîtes aux lettres inactives.
 
-4. Sélectionnez une boîte aux lettres inactive pour afficher une page volante avec des informations sur la boîte aux lettres inactive.
+4. Sélectionnez une boîte aux lettres inactive pour afficher une page de présentation avec des informations sur la boîte aux lettres inactive.
 
    ![La page de présentation affiche des détails sur la boîte aux lettres inactive](../media/MCCInactiveMailboxes2.png)  
 
@@ -105,7 +105,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## <a name="search-and-export-the-contents-of-an-inactive-mailbox"></a>Recherche et exportation du contenu d'une boîte aux lettres inactive
 
-Vous pouvez accéder au contenu de la boîte aux lettres inactive à l’aide de l’outil de recherche de contenu dans le Centre de sécurité & conformité. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
+Vous pouvez accéder au contenu de la boîte aux lettres inactive à l’aide de l’outil de recherche de contenu dans le Centre de conformité Microsoft 365. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
   
 - [Recherche de contenu](content-search.md)
 

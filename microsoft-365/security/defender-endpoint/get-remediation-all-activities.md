@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ae861a5490880c4521e4e7b6521fa724a5dd4da4
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 37cccbc8447f10288369185da8fe1374b4e6690e
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400198"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503142"
 ---
 # <a name="list-all-remediation-activities"></a>Répertorier toutes les activités de correction
 
@@ -47,6 +47,12 @@ Retourne des informations sur toutes les activités de correction.
 [En savoir plus sur les activités de correction.](tvm-remediation.md)
 
 **URL :** GET: /api/remediationTasks
+<br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
+<br>Opérateurs pris en charge par OData :
+<br>```$filter``` on:  ```createdon``` and ```status``` properties.
+<br>```$top``` avec une valeur maximale de 10 000.
+<br>```$skip```.
+<br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -70,7 +76,7 @@ createdOn|DateTime
 description|String|Description de cette activité de correction|Mettez à jour Microsoft Silverlight vers une version ultérieure pour atténuer les vulnérabilités connues affectant vos appareils.
 dueOn|DateTime
 |Date d’échéance définie par le créateur pour cette activité de correction|2021-01-13T00:00:00Z
-fixedDevices|.|Nombre d’appareils qui ont été corrigés|2
+fixedDevices|.|Nombre d’appareils qui ont été corrigés|2 
 id|String|ID de cette activité de correction|097d9735-5479-4899-b1b7-77398899df92
 nameId|String|Nom du produit associé|Microsoft Silverlight
 priorité|String|Priorité définie par le créateur pour cette activité de correction (Haute\Moyenne\Faible)|Élevé
@@ -88,7 +94,7 @@ scid|String|SCID de la recommandation de sécurité associée|null
 status|String|État de l’activité de correction (actif/terminé)|Actif
 statusLastModifiedOn|DateTime
 |Date de mise à jour du champ d’état|2021-01-12T18:54:11.5499487Z
-targetDevices|Entier long|Nombre d’appareils exposés pour qui cette correction s’applique|43
+targetDevices|Entier long|Nombre d’appareils exposés à appliquer à cette correction|43
 title|String|Titre de cette activité de correction|Mettre à jour Microsoft Silverlight
 type|String|Type de correction|Update
 vendorId|String|Nom du fournisseur associé|Microsoft
@@ -150,4 +156,4 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 - [Obtenir une activité de correction par son ID](get-remediation-one-activity.md)
 - [Répertorier les appareils exposés d’une activité de correction](get-remediation-exposed-devices-activities.md)
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)

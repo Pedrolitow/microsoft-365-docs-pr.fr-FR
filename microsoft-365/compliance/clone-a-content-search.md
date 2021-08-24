@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez le script PowerShell de cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365.
-ms.openlocfilehash: 526c07ac3ce3ee30137bcb4d51f2c5fee32cc546bdcc5b56795ddea7f0449ac5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80dd6911f387a7912d92bfbcfac3c94e6ee804eb
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872022"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503202"
 ---
 # <a name="clone-a-content-search"></a>Cloner une recherche de contenu
 
@@ -39,7 +39,7 @@ Pourquoi cloner des recherches de contenu ?
   
 ## <a name="script-information"></a>Informations sur le script
 
-- Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & conformité pour exécuter le script décrit dans cette rubrique.
+- Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de conformité Microsoft 365 pour exécuter le script décrit dans cette rubrique.
     
 - Le script inclut une gestion minimale des erreurs. L’objectif principal du script est de cloner rapidement une recherche de contenu.
     
@@ -53,7 +53,7 @@ Pourquoi cloner des recherches de contenu ?
 
 Le script de cette étape crée une recherche de contenu en clonant une recherche existante. Lorsque vous exécutez ce script, vous êtes invité à fournir les informations suivantes :
   
-- **Vos informations d’identification d’utilisateur** : le script utilise vos informations d’identification pour se connecter au Centre de sécurité & conformité de votre organisation avec Windows PowerShell. Comme indiqué précédemment, vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & compCompliance pour exécuter le script. 
+- **Vos informations d’identification utilisateur** : le script utilise vos informations d’identification pour se connecter au Centre de sécurité & conformité PowerShell. Comme indiqué précédemment, vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & compCompliance pour exécuter le script. 
     
 - **Nom de la recherche existante :** il s’agit de la recherche de contenu que vous souhaitez cloner. 
     
@@ -141,7 +141,7 @@ Pour cloner une recherche :
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Étape 2 : Modifier et exécuter la recherche clonée dans le centre de conformité
 
-Après avoir exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à aller au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou en supprimant des conditions de recherche. Pour plus d’informations, voir :
+Après avoir exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à aller au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou en supprimant des conditions de recherche. Pour plus d’informations, voir :
   
 - [Recherche de contenu dans Office 365](content-search.md)
     

@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Vous pouvez modifier la taille par défaut des fichiers PST téléchargés sur votre ordinateur lorsque vous exportez les résultats de recherche eDiscovery.
-ms.openlocfilehash: 76f15e590e1a12468f197f81a1963c9bce06c65008e0570df7bbbaf77b2e9d52
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c77edc4e565a76be41b274aac597c56780395d4
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851514"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58501966"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery
 
 Lorsque vous utilisez l’outil d’exportation eDiscovery pour exporter les résultats d’une recherche eDiscovery à partir des différents outils eDiscovery de Microsoft, la taille par défaut d’un fichier PST qui peut être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. L’une des raisons de cette situation est qu’un fichier PST peut tenir sur un support amovible, tel qu’un DVD, un disque compact ou un lecteur USB. 
   
 > [!NOTE]
-> L’outil d’exportation eDiscovery est utilisé pour exporter les résultats de la recherche lors de l’utilisation de l’outil de recherche de contenu dans le Centre de sécurité & conformité, In-Place eDiscovery dans Exchange Online et le centre eDiscovery dans SharePoint Online.
+> L’outil d’exportation eDiscovery est utilisé pour exporter les résultats de recherche lors de l’utilisation de l’outil de recherche de contenu dans le Centre de conformité Microsoft 365.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Créer un paramètre de Registre pour modifier la taille des fichiers PST lorsque vous exportez des résultats de recherche eDiscovery
 
@@ -48,7 +48,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exp
     |**Taille en Go (environ))**|**Taille en octets**|
     |:-----|:-----|
     |0,7 Go (700 Mo)  <br/> |751619277  <br/> |
-    |2 Go  <br/> |2147483648  <br/> |
+    |2 Go  <br/> |2147483648  <br/> |
     |4 Go  <br/> |4294967296  <br/> |
     |8 Go  <br/> |8589934592  <br/> |
    

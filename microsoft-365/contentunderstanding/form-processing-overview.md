@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez le traitement de formulaires dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 92bfd5afbdf15947afbf4264a266d0bfc009fcb03d81591fd752786e6d541be3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6914cf4a8427f505bf39e2b157beb0dbfee0336d
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891707"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399718"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble sur le traitement de formulaires dans Microsoft SharePoint Syntex
 

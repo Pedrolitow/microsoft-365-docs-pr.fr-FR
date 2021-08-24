@@ -20,12 +20,12 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a6b3827260f95cdef84d5cce463cad06bfc670d
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: efd82e5fc321b9a9c7a586b75e2b96ae44cc38c1
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349830"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450199"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -85,33 +85,7 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail M
 
    Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
-3. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres disponibles sont :
-
-   - Message
-
-   - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
-     - **Aujourd’hui**
-     - **Dans les 2 prochains jours**
-     - **Dans les 7 prochains jours**
-     - **Personnaliser**: Entrer une **Date de début** et une **Date de fin**.
-
-   - **Heure de réception**: Entrer une **Date de début** et une **Date de fin**.
-
-   - **Raison de la mise en quarantaine :**
-     - **E-mail de masse**
-     - **Courrier indésirable**
-     - **Hameçonnage**
-
-   - **Type de stratégie** : filtrer les messages par type de stratégie :
-     - **Stratégie anti-programme malveillant**
-     - **Stratégie de pièces jointes fiables** (Defender pour Office 365)
-     - **Stratégie anti-hameçonnage**
-     - **Stratégie anti-courrier indésirable**
-     -  **Règle de transport** (règle de flux de courrier)
-
-   Pour effacer le filtre, cliquez sur **Effacer**. Pour masquer le menu déroulant de filtrage, cliquez de nouveau sur **Filtrer**.
-
-4. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres suivants sont disponibles dans le menu déroulant **Filtres** qui apparaît :
+3. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres suivants sont disponibles dans le menu déroulant **Filtres** qui apparaît :
    - **ID du message** : l’identificateur global unique du message.
    - **Adresse de l’expéditeur**
    - **Adresse du destinataire**
@@ -121,7 +95,7 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail M
      - **Aujourd’hui**
      - **Dans les 2 prochains jours**
      - **Dans les 7 prochains jours**
-     - **Personnaliser**: Entrer une **Date de début** et une **Date de fin**.
+     - **Heure reçue** : Saisissez une **heure de début** et une **heure de fin** (date).
    - **Raison de la mise en quarantaine :**
      - **E-mail de masse**
      - **Courrier indésirable**
@@ -138,11 +112,10 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail M
      - **Stratégie de pièces jointes fiables**
      - **Politique de lutte contre l'hameçonnage**
      - **Stratégie anti-courrier indésirable**
-     -  **Règle de transport** (règle de flux de courrier)
 
    Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres, cliquez sur l'icône ![Effacer les filtres](../../media/m365-cc-sc-clear-filters-icon.png)**Effacer les filtres** .
 
-5. Utilisez le **champ de recherche** et une valeur correspondante pour trouver des messages spécifiques. Les caractères génériques ne sont pas pris en charge. Vous pouvez effectuer une recherche sur les valeurs suivantes :
+4. Utilisez le **champ de recherche** et une valeur correspondante pour trouver des messages spécifiques. Les caractères génériques ne sont pas pris en charge. Vous pouvez effectuer une recherche sur les valeurs suivantes :
    - Message ID
    - Adresse de messagerie de l’expéditeur
    - Adresse de messagerie du destinataire
