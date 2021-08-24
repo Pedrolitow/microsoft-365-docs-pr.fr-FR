@@ -4,7 +4,7 @@ ms.author: daisyfeller
 author: daisyfeller
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: ''
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Découvrez les Apprentissage Microsoft Viva (prévisualisation) dans votre environnement Microsoft 365 de travail.
-ms.openlocfilehash: 8f3a2d2ad8e332f66d231150334351a1304698180713fd1f6db9a2ebb71384f6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e08be19d9277a31401b62be71f1e180859ba29bb
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819381"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483438"
 ---
 # <a name="overview-of-microsoft-viva-learning-preview"></a>Vue d’Apprentissage Microsoft Viva (prévisualisation) 
 

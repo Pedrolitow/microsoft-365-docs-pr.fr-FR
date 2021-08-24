@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: cafe6fe2628d58b80ea86753734e56996c5fdfcd
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 44caa372797e627a05bc40b3fb816d50dcd5a88c
+ms.sourcegitcommit: 0ec4a6cc94ebc2ae18846011a34bbd1dd9a7ace0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357052"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470775"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Ce scénario n’est pas pris en charge pour les [enregistrements réglementaires](records-management.md#records).
+> Ce scénario n’est pas pris en charge pour les [enregistrements réglementaires](records-management.md#records) ou les étiquettes par défaut pour une structure d’organisation telle qu’un ensemble de documents ou une bibliothèque dans SharePoint ou un dossier dans Exchange.  Ces scénarios nécessitent une [stratégie d’étiquette de rétention publiée](create-apply-retention-labels.md#step-2-publish-retention-labels).
 
 L’une des fonctionnalités les plus puissantes des [étiquettes de rétention](retention.md) est la possibilité d’appliquer celles-ci automatiquement à tout contenu correspondant à certaines conditions spécifiques. Dans ce cas, les personnes au sein de votre organisation ne doivent pas appliquer les étiquettes de rétention. Microsoft 365 s’en charge à leur place.
   
@@ -136,6 +136,7 @@ Les trois conditions peuvent automatiquement appliquer des étiquettes de réten
 |Mots clés spécifiques ou propriétés pouvant faire l’objet d’une recherche| Oui |Oui |
 |Classifieurs pouvant être formés| Oui | Oui (six derniers mois uniquement) |
 
+En outre, les éléments SharePoint qui sont dans les brouillons ou qui n’ont jamais été publiés ne sont pas pris en charge pour ce scénario.
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Application automatique d’étiquettes au contenu incluant des types spécifiques d’informations sensibles
 

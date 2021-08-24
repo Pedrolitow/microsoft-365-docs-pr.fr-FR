@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tiers et messages remis à des boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa92adbcca8f01f878649081472ef600075a06d3
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 14e952aacf20350fb264fecd72f626b0f3a30729
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386971"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483354"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
@@ -31,7 +31,7 @@ ms.locfileid: "58386971"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Pour sécuriser votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
+Pour sécuriser votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
 
 - **Simulations de hameçonnage tierces**: les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre organisation.
 - Boîtes aux lettres d’opérations de sécurité **(SecOps)**: boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bonnes et mauvaises).
@@ -112,7 +112,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées sont affich
      - Adresse IP unique : par exemple, 192.168.1.1.
      - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
      - ADRESSE IP CIDR : par exemple, 192.168.0.1/25.
-   - URL de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou désaxées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, voir [la syntaxe d’URL pour la liste d’adresses client autoriser/bloquer](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list).
+   - URL de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou désaxées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, voir [la syntaxe d’URL pour la liste d’adresses client autoriser/bloquer](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
 
    Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
@@ -269,6 +269,7 @@ Dans le Centre de sécurité & conformité PowerShell, les éléments de base de
 
 - **Stratégie de remplacement de simulation de** hameçonnage : contrôlée par les cmdlets **\* -PhishSimOverridePolicy.**
 - **Règle de remplacement de simulation d’hameçonnage**: contrôlée par les cmdlets **\* -PhishSimOverrideRule.**
+- URL de simulation de hameçonnage **autorisées (débloqués)**: contrôlées par les cmdlets **\* -TenantAllowBlockListItems.**
 
 Ce comportement a les résultats suivants :
 
@@ -279,10 +280,13 @@ Ce comportement a les résultats suivants :
 
 ### <a name="use-powershell-to-configure-third-party-phishing-simulations"></a>Utiliser PowerShell pour configurer des simulations de hameçonnage tierces
 
-La configuration d’une simulation de hameçonnage tierce dans la stratégie de remise avancée dans PowerShell est un processus en deux étapes :
+La configuration d’une simulation de hameçonnage tierce dans PowerShell est un processus en plusieurs étapes :
 
 1. Créez la stratégie de remplacement de simulation d’hameçonnage.
-2. Créez la règle de remplacement de simulation de hameçonnage qui spécifie la stratégie à appliquer à la règle.
+2. Créez la règle de remplacement de simulation de hameçonnage qui spécifie :
+   - Stratégie à l’application de la règle.
+   - Adresse IP source des messages de simulation de hameçonnage.
+3. Vous avez la possibilité d’identifier les URL de simulation de hameçonnage qui doivent être autorisées (c’est-à-dire, non bloquées ou analysées).
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>Étape 1 : Utiliser PowerShell pour créer la stratégie de remplacement de simulation de hameçonnage
 
@@ -320,6 +324,24 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule).
 
+#### <a name="step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow"></a>Étape 3 : (Facultatif) Utiliser PowerShell pour identifier les URL de simulation de hameçonnage à autoriser
+
+Utilisez la syntaxe suivante :
+
+```powershell
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
+```
+
+Pour plus d’informations sur la syntaxe de l’URL, voir [la syntaxe d’URL pour la liste](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)d’adresses client autoriser/bloquer.
+
+Cet exemple ajoute une entrée d’URL d’accès pour l’URL de simulation de hameçonnage tierce spécifiée sans expiration.
+
+```powershell
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries *.fabrikam.com -NoExpiration
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
+
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>Utiliser PowerShell pour afficher la stratégie de remplacement de simulation de hameçonnage
 
 Cet exemple renvoie des informations détaillées sur la seule stratégie de remplacement de simulation de hameçonnage.
@@ -350,6 +372,16 @@ Après avoir identifié les règles non valides, vous pouvez les supprimer à l�
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-PhishSimOverrideRule](/powershell/module/exchange/get-phishsimoverriderule).
 
+### <a name="use-powershell-to-view-the-allowed-phishing-simulation-url-entries"></a>Utiliser PowerShell pour afficher les entrées d’URL de simulation de hameçonnage autorisées
+
+Pour afficher les URL de simulation de hameçonnage autorisées, exécutez la commande suivante :
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
+
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>Utiliser PowerShell pour modifier la stratégie de remplacement de simulation de hameçonnage
 
 Pour modifier la stratégie de remplacement de simulation de hameçonnage, utilisez la syntaxe suivante :
@@ -366,24 +398,7 @@ Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-PhishSimOverridePolicy](/powershell/module/exchange/set-phishsimoverridepolicy).
 
-### <a name="use-powershell-to-modify-the-simulation-url-settings"></a>Utiliser PowerShell pour modifier les paramètres d’URL de simulation
-
-Pour modifier la stratégie de remplacement de simulation de hameçonnage, utilisez la syntaxe suivante :
-
-```powershell
-New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "<url>"
-```
-Pour le format de syntaxe d’URL, voir [la syntaxe d’URL pour la liste d’adresses client autoriser/bloquer](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list).
-
-Cet exemple ajoute une URL de simulation pour les sous-domaines de contoso.com.
-
-```powershell
-New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "*.contoso.com"
-```
-
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-### <a name="use-powershell-to-modify-a-phishing-simulation-override-rule"></a>Utiliser PowerShell pour modifier une règle de remplacement de simulation de hameçonnage
+### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Utiliser PowerShell pour modifier les règles de remplacement de simulation de hameçonnage
 
 Pour modifier la règle de remplacement de simulation de hameçonnage, utilisez la syntaxe suivante :
 
@@ -403,6 +418,26 @@ Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-PhishSimOverrideRule](/powershell/module/exchange/set-phishsimoverriderule).
+
+### <a name="use-powershell-to-modify-the-allowed-phishing-simulation-url-entries"></a>Utiliser PowerShell pour modifier les entrées d’URL de simulation de hameçonnage autorisées
+
+Vous ne pouvez pas modifier les valeurs d’URL directement. Vous pouvez supprimer [des entrées d’URL](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries) existantes et ajouter de nouvelles entrées [d’URL](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow) comme décrit dans cet article.
+
+Pour modifier d’autres propriétés d’une entrée d’URL de simulation de hameçonnage autorisée (par exemple, la date d’expiration ou les commentaires), utilisez la syntaxe suivante :
+
+```powershell
+Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
+```
+
+Vous identifiez l’entrée à modifier par ses valeurs d’URL (paramètre _Entries)_ ou la valeur Identity à partir de la sortie de la cmdlet **Get-TenantAllowBlockListItems** (paramètre _Ids)._
+
+Cet exemple a modifié la date d’expiration de l’entrée spécifiée.
+
+```powershell
+Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>Utiliser PowerShell pour supprimer une stratégie de remplacement de simulation de hameçonnage
 
@@ -429,3 +464,22 @@ Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-932
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-PhishSimOverrideRule](/powershell/module/exchange/remove-phishsimoverriderule).
+
+### <a name="use-powershell-to-remove-the-allowed-phishing-simulation-url-entries"></a>Utiliser PowerShell pour supprimer les entrées d’URL de simulation de hameçonnage autorisées
+
+Pour supprimer une entrée d’URL de simulation de hameçonnage existante, utilisez la syntaxe suivante :
+
+```powershell
+Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery
+```
+
+Vous identifiez l’entrée à modifier par ses valeurs d’URL (paramètre _Entries)_ ou la valeur Identity à partir de la sortie de la cmdlet **Get-TenantAllowBlockListItems** (paramètre _Ids)._
+
+Cet exemple a modifié la date d’expiration de l’entrée spécifiée.
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
+
