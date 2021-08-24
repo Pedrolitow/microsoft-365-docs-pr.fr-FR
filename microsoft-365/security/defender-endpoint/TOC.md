@@ -268,9 +268,9 @@
 #### [Activer et configurer la protection antivirus Microsoft Defender pour qu’il soit toujours activé dans les stratégies de groupe](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Configurer la correction pour la détection d’antivirus Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)
 #### [Configurer des analyses Antivirus Microsoft Defender](schedule-antivirus-scans.md)
-##### [Planifier des analyses antivirus à l’aide de stratégie de groupe](schedule-antivirus-scans-group-policy.md)
-##### [Planifier des analyses antivirus à l’aide de PowerShell](schedule-antivirus-scans-powershell.md)
-##### [Planifier des analyses antivirus à l’aide de Windows Management Instrumentation (WMI)](schedule-antivirus-scans-wmi.md)
+##### [Planifier des analyses à l’aide de stratégie de groupe](schedule-antivirus-scans-group-policy.md)
+##### [Planifier des analyses à l’aide de PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Planifier des analyses à l’aide de WMI](schedule-antivirus-scans-wmi.md)
 #### [Utilisez une analyse périodique limitée dans Antivirus Microsoft Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Compatibilité avec d’autres produits de sécurité](microsoft-defender-antivirus-compatibility.md)
 
@@ -308,7 +308,7 @@
 ##### [Exclusions basées sur l’extension de fichier et l’emplacement du dossier](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions pour les fichiers ouverts par les processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions pour Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
-##### [Erreurs courantes à éviter lors de la définition d’exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+##### [Erreurs courantes à éviter](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 #### Résolution des problèmes de l’antivirus Microsoft Defender
 ##### [Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour](troubleshoot-reporting.md)
@@ -347,11 +347,11 @@
 ##### [Personnaliser l’accès contrôlé aux dossiers](customize-controlled-folders.md)
 
 #### [Contrôle des appareils]()
-##### [Rapports sur le contrôle des appareils](device-control-report.md)
-##### [Contrôler les périphériques USB](control-usb-devices-using-intune.md)
+##### [Contrôler les périphériques USB et d’autres média amovibles](control-usb-devices-using-intune.md)
 ##### [Protection de stockage amovible](device-control-removable-storage-protection.md)
 ##### [Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)
 ##### [Protection de l’Imprimante de Contrôle d’Appareil](printer-protection.md)
+##### [Rapports sur le contrôle des appareils](device-control-report.md)
 
 #### [Blocage et confinement comportementaux]()
 ##### [Blocage et confinement comportementaux](behavioral-blocking-containment.md)
