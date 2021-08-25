@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: 5e05dd44f6e89794f196099c878843f024b58d40e81637bd15e9fb46cc724146
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa5112eeedcfd0c46bba1d96a43e49051eb3ed9e
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808411"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503082"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
 
-Vous pouvez créer et gérer des stratégies de rétention du journal d’audit dans le Centre de sécurité & conformité. Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation. Vous pouvez conserver des journaux d’audit pendant 10 ans. Vous pouvez créer des stratégies en fonction des critères suivants :
+Vous pouvez créer et gérer des stratégies de rétention de journal d’audit dans le Centre de conformité Microsoft 365. Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation. Vous pouvez conserver des journaux d’audit pendant 10 ans. Vous pouvez créer des stratégies en fonction des critères suivants :
 
 - L'ensemble des activités d’un ou plusieurs services Microsoft 365
 - Des activités spécifiques (dans un service Microsoft 365) effectuées par l'ensemble des utilisateurs ou par des utilisateurs spécifiques
@@ -41,7 +41,7 @@ L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal d
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>Avant de créer une stratégie de rétention de journal d’audit
 
-- Pour créer ou modifier une stratégie de rétention d’audit, vous devez être avoir un rôle de Configuration de l’organisation dans le Centre de sécurité & conformité.
+- Le rôle Configuration de l'organisation doit vous être attribué dans le centre de conformité Microsoft 365 pour créer ou modifier une stratégie de rétention d'audit.
 
 - Vous pouvez disposer de 50 stratégies de rétention du journal d’audit au maximum au sein de votre organisation.
 
@@ -51,9 +51,9 @@ L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal d
 
 ## <a name="create-an-audit-log-retention-policy"></a>Créer une stratégie de rétention de journal d’audit
 
-1. Accédez à <https://compliance.microsoft.com> et connectez-vous avec le compte d’utilisateur ayant le rôle Configuration de l’organisation sur la page des autorisations dans le centre de sécurité & conformité.
+1. Accédez à <https://compliance.microsoft.com> et connectez-vous avec un compte d’utilisateur auquel le rôle Configuration de l’organisation a été attribué dans la page Autorisations du centre de conformité Microsoft 365.
 
-2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher**, puis cliquez sur **Audit**.
+2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Audit**.
 
 3. Cliquez sur l’onglet **Stratégies de rétention d’audit**.
 

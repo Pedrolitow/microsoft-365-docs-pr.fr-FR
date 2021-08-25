@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dad9a59bd4aff0126440e3967fd81e8e80a45c509a9f424a6ea10c7e28ba0ba5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: abdf9f72c4ae023cdc8bde76d96ce641b2e48b9a
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811397"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509616"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Utiliser des autorisations de base pour accéder au portail
 
@@ -37,33 +37,34 @@ ms.locfileid: "53811397"
 Reportez-vous aux instructions ci-dessous pour utiliser la gestion des autorisations de base.
 
 Vous pouvez utiliser l’une des solutions suivantes :
+
 - Azure PowerShell
 - Portail Azure
 
 Pour un contrôle granulaire des autorisations, [basculez vers le contrôle d’accès basé sur les rôles.](rbac.md)
 
 ## <a name="assign-user-access-using-azure-powershell"></a>Attribuer un accès utilisateur à l’aide Azure PowerShell
+
 Vous pouvez affecter des utilisateurs avec l’un des niveaux d’autorisation suivants :
+
 - Accès total (lecture et écriture)
 - Accès en lecture seule
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
-- Installez Azure PowerShell. Pour plus d’informations, voir [comment installer et configurer Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
+- Installez Azure PowerShell. Pour plus d’informations, voir [comment installer et configurer Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).
 
-    > [!NOTE]
-    > Vous devez exécuter les cmdlets PowerShell dans une ligne de commande avec élévation de élévation de niveaux.
+  > [!NOTE]
+  > Vous devez exécuter les cmdlets PowerShell dans une ligne de commande avec élévation de élévation de niveaux.
 
 - Connecter à votre Azure Active Directory. Pour plus d’informations, [voir Connecter-MsolService](/powershell/module/msonline/connect-msolservice).
 
-**Accès total** <br>
-Les utilisateurs ayant un accès total peuvent se connecter, afficher toutes les informations système et résoudre les alertes, soumettre des fichiers pour une analyse approfondie et télécharger le package d’intégration.
-L’attribution de droits d’accès total nécessite l’ajout des utilisateurs aux rôles intégrés AAD « Administrateur de la sécurité » ou « Administrateur général ».
+  - **Accès total**: les utilisateurs ayant un accès total peuvent se connecter, afficher toutes les informations système et résoudre les alertes, soumettre des fichiers pour une analyse approfondie et télécharger le package d’intégration. L’attribution de droits d’accès total nécessite l’ajout des utilisateurs aux rôles intégrés AAD « Administrateur de la sécurité » ou « Administrateur général ».
+  - **Accès en lecture seule**: les utilisateurs ayant un accès en lecture seule peuvent se connecter, afficher toutes les alertes et les informations connexes.
 
-**Accès en lecture seule** <br>
-Les utilisateurs ayant un accès en lecture seule peuvent se connecter, afficher toutes les alertes et les informations connexes.
-Ils ne seront pas en mesure de modifier les états d’alerte, d’envoyer des fichiers pour analyse approfondie ou d’effectuer des opérations de changement d’état.
-L’attribution de droits d’accès en lecture seule nécessite l’ajout des utilisateurs au rôle intégré Azure AD « Lecteur de sécurité ».
+    Ils ne seront pas en mesure de modifier les états d’alerte, d’envoyer des fichiers pour analyse approfondie ou d’effectuer des opérations de changement d’état.
+
+    L’attribution de droits d’accès en lecture seule nécessite l’ajout des utilisateurs au rôle intégré Azure AD « Lecteur de sécurité ».
 
 Pour attribuer des rôles de sécurité, utilisez les étapes suivantes :
 
@@ -72,7 +73,7 @@ Pour attribuer des rôles de sécurité, utilisez les étapes suivantes :
   ```PowerShell
   Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress "secadmin@Contoso.onmicrosoft.com"
   ```
-  
+
 - Pour **un accès en lecture seule,** attribuez aux utilisateurs le rôle de lecteur de sécurité à l’aide de la commande suivante :
 
   ```PowerShell

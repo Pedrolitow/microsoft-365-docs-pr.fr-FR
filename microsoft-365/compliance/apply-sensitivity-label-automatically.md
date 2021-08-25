@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: b61abfa58d10aca154cee02edf15a56b516495b8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ea7c0bcfdefddaa1c44019f3752e5d00c5323bcc
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247093"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483414"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -114,7 +114,9 @@ Pour en savoir plus sur les étiquettes parents et les sous-étiquettes, consult
 
 ## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Comment configurer l’étiquetage automatique pour les applications Office
 
-L’étiquetage automatique dans les applications Office pour Windows est pris en charge par le client d’étiquetage unifié Azure Information Protection. Pour l’étiquetage intégré dans les applications Office, cette fonctionnalité est disponible dans [Différentes étapes de disponibilité pour différentes applications](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+Pour l’étiquetage intégré dans Office applications, vérifiez les [versions](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) minimales requises pour l’étiquetage automatique dans Office applications.
+
+Le client d’étiquetage unifié Azure Information Protection prend en charge l’étiquetage automatique pour les types d’informations sensibles intégrés et personnalisés, mais pas pour les classifieurs entraidables ou les types d’informations sensibles qui utilisent EDM (Exact Data Match).
 
 Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md). Assurez-vous que **Fichiers et e-mails** est sélectionné comme étendue de l’étiquette :
 

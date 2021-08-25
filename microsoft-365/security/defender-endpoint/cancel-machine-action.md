@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 33828866b32c14b4922e936fbd279c3f7bc3b536
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.openlocfilehash: 22b0a82d8101c0a2a9e21c05413b64cd7dca4e9a
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408073"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509952"
 ---
 # <a name="cancel-machine-action-api"></a>API Annuler l’action de l’ordinateur
 
@@ -57,16 +57,14 @@ L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour
 
 |Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation|
 |---|---|---|
-|Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Collecter des données d’investigation <br>Isoler l’ordinateur<br>Restreindre l’exécution du code<br>  Ordinateur d’analyse<br>  Retirer un ordinateur<br> Arrêter et mettre en quarantaine<br> Exécuter une réponse en direct sur un ordinateur spécifique|
-|Déléguée (compte professionnel ou scolaire)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Collecter des données d’investigation<br> Isoler l’ordinateur<br>  Restreindre l’exécution du code<br> Ordinateur d’analyse<br>Retirer un ordinateur<br> Arrêter et mettre en quarantaine<br> Exécuter une réponse en direct sur un ordinateur spécifique|
-
+|Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Collecter des données d’investigation <br>Isoler l’ordinateur<br>Restreindre l'exécution de code<br>  Ordinateur d’analyse<br>  Retirer un ordinateur<br> Arrêter et mettre en quarantaine<br> Exécuter une réponse en direct sur un ordinateur spécifique|
+|Déléguée (compte professionnel ou scolaire)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Collecter des données d’investigation<br> Isoler l’ordinateur<br>  Restreindre l'exécution de code<br> Ordinateur d’analyse<br>Retirer un ordinateur<br> Arrêter et mettre en quarantaine<br> Exécuter une réponse en direct sur un ordinateur spécifique|
 
 ## <a name="http-request"></a>Requête HTTP
 
+```http
+POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel
 ```
-POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel  
-```
-
 
 ## <a name="request-headers"></a>En-têtes de demande
 

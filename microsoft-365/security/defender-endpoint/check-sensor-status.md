@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 8168977629f80923ed65e84127478eea0b526597
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 64643873c9032af92d7093d5d75535cf3af118bc
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256368"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509544"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Vérifier l’état d’état du capteur dans Microsoft Defender pour le point de terminaison
 
@@ -32,19 +32,21 @@ ms.locfileid: "58256368"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
 
 La vignette **Appareils avec problèmes de** capteur se trouve dans le tableau de bord Opérations de sécurité. Cette vignette fournit des informations sur la capacité de chaque appareil à fournir des données de capteur et à communiquer avec le service Defender for Endpoint. Elle indique le nombre d’appareils qui nécessitent une attention particulière et vous aide à identifier les appareils problématiques et à prendre des mesures pour les corriger.
 
 Il existe deux indicateurs d’état sur la vignette qui fournissent des informations sur le nombre d’appareils qui ne sont pas correctement signalés au service :
+
 - **Mal configuré :** ces appareils peuvent signaler partiellement des données de capteur au service Defender for Endpoint et peuvent avoir des erreurs de configuration qui doivent être corrigées.
 - **Inactif** : appareils qui ont cessé de signaler au service Defender for Endpoint pendant plus de sept jours au cours du mois précédent.
 
-Cliquer sur l’un des groupes vous dirige vers la liste **Appareils,** filtrée en fonction de votre choix.
+Le fait de cliquer sur l’un des groupes vous dirige vers la liste **Appareils,** filtrée en fonction de votre choix.
 
 ![Capture d’écran de la vignette Appareils avec problèmes de capteur](images/atp-devices-with-sensor-issues-tile.png)
 
-Dans **la liste Appareils,** vous pouvez filtrer la liste d’état en fonction de l’état suivant :
+Dans **la liste Appareils,** vous pouvez filtrer la liste d’état selon l’état suivant :
+
 - **Actif** : appareils qui font activement des rapports au service Defender for Endpoint.
 - **Mal configuré :** ces appareils peuvent partiellement signaler des données de capteur au service Defender for Endpoint, mais ont des erreurs de configuration qui doivent être corrigées. Les appareils mal configurés peuvent avoir l’un ou l’autre des problèmes suivants :
   - **Aucune donnée de capteur** : les appareils ont cessé d’envoyer des données de capteur. Des alertes limitées peuvent être déclenchées à partir de l’appareil.
@@ -53,17 +55,18 @@ Dans **la liste Appareils,** vous pouvez filtrer la liste d’état en fonction 
 
 Vous pouvez également télécharger la liste entière au format CSV à l’aide de la **fonctionnalité d’exportation.** Pour plus d’informations sur les filtres, voir [Afficher et organiser la liste des appareils.](machines-view-overview.md)
 
->[!NOTE]
->Exportez la liste au format CSV pour afficher les données non filtrées. Le fichier CSV inclut tous les appareils de l’organisation, quel que soit le filtrage appliqué dans l’affichage lui-même et peut prendre beaucoup de temps à télécharger, en fonction de la taille de votre organisation.
+> [!NOTE]
+> Exportez la liste au format CSV pour afficher les données non filtrées. Le fichier CSV inclut tous les appareils de l’organisation, quel que soit le filtrage appliqué dans l’affichage lui-même et peut prendre beaucoup de temps à télécharger, en fonction de la taille de votre organisation.
 
-![Capture d’écran de la page liste Appareils](images/atp-devices-list-page.png)
+![Capture d’écran de la page Liste des appareils](images/atp-devices-list-page.png)
 
 Vous pouvez afficher les détails de l’appareil lorsque vous cliquez sur un appareil mal configuré ou inactif.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Corriger les capteurs défectueux dans Defender pour le point de terminaison](fix-unhealthy-sensors.md)
 - [Vue d’ensemble de l’analyseur client](overview-client-analyzer.md)
 - [Télécharger et exécuter l’analyseur client](download-client-analyzer.md)
-- [Exécutez l’analyseur client sur Windows](run-analyzer-windows.md)
+- [Exécuter l’analyseur client sur Windows](run-analyzer-windows.md)
 - [Exécuter l’analyseur client sur macOS ou Linux](run-analyzer-macos-linux.md)
 - [Collecte de données pour la résolution avancée des problèmes sur Windows](data-collection-analyzer.md)

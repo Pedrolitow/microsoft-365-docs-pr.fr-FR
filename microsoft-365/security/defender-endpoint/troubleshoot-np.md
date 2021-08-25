@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: a31da45e56adc8838ed85df338e423070aac1a15
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 981e7962db35429e5f7bf02ee4a6f57fd19655d4
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507661"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509892"
 ---
 # <a name="troubleshoot-network-protection"></a>Résoudre les problèmes de protection du réseau
 
@@ -31,7 +31,7 @@ ms.locfileid: "58507661"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Cet article fournit des informations de dépannage pour la [protection](network-protection.md)du réseau, dans les cas suivants :
 
@@ -49,7 +49,8 @@ La résolution de ces problèmes se fait en quatre étapes :
 
 La protection réseau ne fonctionne que sur les appareils qui ont les conditions suivantes :
 
->[!div class="checklist"]
+> [!div class="checklist"]
+>
 > - Les points de terminaison Windows 10 Professionnel ou Enterprise version 1709 ou supérieure.
 > - Les points de terminaison utilisent Antivirus Microsoft Defender comme seule application de protection antivirus. [Découvrez ce qui se produit lorsque vous utilisez une solution antivirus non-Microsoft.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 > - [La protection en temps réel](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) est activée.
@@ -69,7 +70,7 @@ Vous pouvez activer la protection réseau en mode audit, puis visiter un site we
 2. Effectuez l’activité de connexion à l’origine d’un problème (par exemple, essayez de visiter le site ou de vous connecter à l’adresse IP que vous bloquez ou ne voulez pas bloquer).
 
 3. [Consultez les journaux des événements](network-protection.md#review-network-protection-events-in-windows-event-viewer) de protection réseau pour voir si la fonctionnalité aurait bloqué la connexion si elle avait été définie **sur Activé.**
-   
+
    Si la protection réseau ne bloque pas une connexion que vous attendez qu’elle bloque, activez la fonctionnalité.
 
    ```PowerShell
@@ -102,7 +103,7 @@ Lorsque vous signalez un problème avec la protection du réseau, vous êtes inv
    mpcmdrun -getfiles
    ```
 
-3. Joignez le fichier au formulaire d’envoi. Par défaut, les journaux de diagnostic sont enregistrés sur `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` . 
+3. Joignez le fichier au formulaire d’envoi. Par défaut, les journaux de diagnostic sont enregistrés sur `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .
 
 ## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>Résoudre les problèmes de connectivité avec la protection réseau (pour les clients E5)
 
@@ -114,12 +115,12 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 
 ---OR---
 
-
 ```powershell
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
 Vous pouvez configurer la clé de Registre à l’aide de PowerShell, Microsoft Endpoint Manager ou d’une stratégie de groupe. Voici quelques ressources pour vous aider :
+
 - [Working with Registry Keys](/powershell/scripting/samples/working-with-registry-keys)
 - [Configurer les paramètres client personnalisés pour Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [Utiliser les paramètres de stratégie de groupe pour gérer les Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
@@ -127,11 +128,7 @@ Vous pouvez configurer la clé de Registre à l’aide de PowerShell, Microsoft 
 ## <a name="see-also"></a>Voir aussi
 
 - [Protection du réseau](network-protection.md)
-
-- [Protection du réseau et protocole d’handshake triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
-
+- [Protection du réseau et protocole d’auto-transport TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 - [Évaluer la protection du réseau](evaluate-network-protection.md)
-
-- [Activer la protection du réseau](enable-network-protection.md)
-
+- [Activer la protection réseau](enable-network-protection.md)
 - [Corriger les faux positifs/négatifs dans Defender pour le point de terminaison](defender-endpoint-false-positives-negatives.md)

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b6f682cab22b5838234e16091001c1b0be0f4126
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 4dc2d9e0d4ea06b7b51a29be11af4e6316c83bcc
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502806"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509568"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender pour point de terminaison iOS
 
@@ -62,8 +62,8 @@ ms.locfileid: "58502806"
 - Accès à [Microsoft Endpoint Manager centre d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431)pour déployer l’application pour les groupes d’utilisateurs inscrits dans votre organisation.
 
     > [!NOTE]
-    > Microsoft Defender pour le point de terminaison étend désormais la prise en charge des données d’une organisation au sein d’une application gérée pour les personnes qui n’utilisent pas la gestion des périphériques mobiles (MDM) mais qui utilisent Intune pour gérer les applications mobiles. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles [(MAM).](/mem/intune/apps/mam-faq)
-    > Avant cette mise à jour, Microsoft Defender for Endpoint fonctionnait sur les appareils inscrits à l’aide de la gestion des périphériques mobiles Intune uniquement.  
+    > - Microsoft Defender pour endpoint étend désormais la protection aux données d’une organisation au sein d’une application gérée pour ceux qui n’utilisent pas la gestion des périphériques mobiles (MDM) mais utilisent Intune pour gérer les applications mobiles. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles [(MAM).](/mem/intune/apps/mam-faq)
+    > - En outre, Microsoft Defender pour endpoint prend déjà en charge les appareils inscrits à l’aide de la gestion des périphériques mobiles (MDM) Intune.  
 
 **Configuration requise**
 
@@ -82,7 +82,7 @@ Pour plus d’informations, [voir Déployer Microsoft Defender pour endpoint sur
 
 - Fournir des commentaires via le système de commentaires dans l’application ou via [le portail SecOps](https://securitycenter.microsoft.com)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Déployer Microsoft Defender pour le point de terminaison sur iOS](ios-install.md)
 - [Configurer Microsoft Defender pour endpoint sur les fonctionnalités iOS](ios-configure-features.md)

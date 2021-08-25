@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7f407ae3018dc9214d364528c2392b00b7279489d98ec96c5b5d24d8207bfc01
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f940d71b46f3010cded48cfe4c3b9873ea518a0b
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904130"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509520"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer les Antivirus Microsoft Defender l’outil mpcmdrun.exe ligne de commande
 
@@ -43,45 +43,45 @@ Voici un exemple :
 
 ```console
 MpCmdRun.exe -Scan -ScanType 2
-``` 
+```
 
 Dans notre exemple, l’utilitaire MpCmdRun démarre une analyse antivirus complète sur l’appareil.
 
 ## <a name="commands"></a>Commandes
 
-| Command  | Description   |
-|:----|:----|
-| `-?`**ou**`-h`   | Affiche toutes les options disponibles pour l’outil MpCmdRun |
-| `-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Recherche les logiciels malveillants. Les valeurs **de ScanType** sont :<p>**0 Par** défaut, en fonction de votre configuration<p>**1 Analyse** rapide<p>**2 Analyse** complète<p>**3 Analyse** personnalisée de fichier et d’annuaire.<p>CpuThrottling s’exécute en fonction des configurations de stratégie |
-| `-Trace [-Grouping #] [-Level #]` | Démarre le suivi des diagnostics |
-| `-GetFiles [-SupportLogLocation <path>]` | Collecte des informations de support. Voir «[Collecte des données de diagnostic](collect-diagnostic-data.md)»  |
-| `-GetFilesDiagTrack`  | Identique à `-GetFiles` , mais sorties dans le dossier DiagTrack temporaire |
-| `-RemoveDefinitions [-All]` | Restaure l’intelligence de sécurité installée sur une copie de sauvegarde précédente ou sur l’ensemble par défaut d’origine |
-| `-RemoveDefinitions [-DynamicSignatures]` | Supprime uniquement l’intelligence de sécurité téléchargée dynamiquement |
-| `-RemoveDefinitions [-Engine]` | Restaure le moteur installé précédent |
-| `-SignatureUpdate [-UNC \| -MMPC]` | Recherche les nouvelles mises à jour de l’intelligence de la sécurité |
-| `-Restore  [-ListAll \| [[-Name <name>] [-All] \| [-FilePath <filePath>]] [-Path <path>]]` | Restaure ou répertorie les éléments mis en quarantaine |
-| `-AddDynamicSignature [-Path]` | Charge l’intelligence de sécurité dynamique |
-| `-ListAllDynamicSignatures` | Répertorie l’intelligence de sécurité dynamique chargée |
-| `-RemoveDynamicSignature [-SignatureSetID]` | Supprime l’intelligence de sécurité dynamique |
-| `-CheckExclusion -path <path>` | Vérifie si un chemin d’accès est exclu |
-| `-ValidateMapsConnection` | Vérifie que votre réseau peut communiquer avec le service Antivirus Microsoft Defender cloud. Cette commande ne fonctionne que sur Windows 10 version 1703 ou supérieure.|
+|Command|Description|
+|---|---|
+|`-?`**ou**`-h`|Affiche toutes les options disponibles pour l’outil MpCmdRun|
+|`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|Recherche les logiciels malveillants. Les valeurs **de ScanType** sont :<p>**0 Par** défaut, en fonction de votre configuration<p>**1 Analyse** rapide<p>**2 Analyse** complète<p>**3 Analyse** personnalisée de fichier et d’annuaire.<p>CpuThrottling s’exécute en fonction des configurations de stratégie|
+|`-Trace [-Grouping #] [-Level #]`|Démarre le suivi des diagnostics|
+|`-GetFiles [-SupportLogLocation <path>]`|Collecte des informations de support. Voir «[Collecte des données de diagnostic](collect-diagnostic-data.md)»|
+|`-GetFilesDiagTrack`|Identique à `-GetFiles` , mais sorties dans le dossier DiagTrack temporaire|
+|`-RemoveDefinitions [-All]`|Restaure l’intelligence de sécurité installée sur une copie de sauvegarde précédente ou sur l’ensemble par défaut d’origine|
+|`-RemoveDefinitions [-DynamicSignatures]`|Supprime uniquement l’intelligence de sécurité téléchargée dynamiquement|
+|`-RemoveDefinitions [-Engine]`|Restaure le moteur installé précédent|
+|`-SignatureUpdate [-UNC \|-MMPC]`|Recherche les nouvelles mises à jour de l’intelligence de la sécurité|
+|`-Restore  [-ListAll \|[[-Name <name>] [-All] \|[-FilePath <filePath>]] [-Path <path>]]`|Restaure ou répertorie les éléments mis en quarantaine|
+|`-AddDynamicSignature [-Path]`|Charge l’intelligence de sécurité dynamique|
+|`-ListAllDynamicSignatures`|Répertorie l’intelligence de sécurité dynamique chargée|
+|`-RemoveDynamicSignature [-SignatureSetID]`|Supprime l’intelligence de sécurité dynamique|
+|`-CheckExclusion -path <path>`|Vérifie si un chemin d’accès est exclu|
+|`-ValidateMapsConnection`|Vérifie que votre réseau peut communiquer avec le service Antivirus Microsoft Defender cloud. Cette commande ne fonctionne que sur Windows 10 version 1703 ou supérieure.|
 
-## <a name="common-errors-in-running-commands-via-mpcmdrunexe"></a>Erreurs courantes lors de l’exécution de commandes via mpcmdrun.exe 
+## <a name="common-errors-in-running-commands-via-mpcmdrunexe"></a>Erreurs courantes lors de l’exécution de commandes via mpcmdrun.exe
 
 Le tableau suivant répertorie les erreurs courantes qui peuvent se produire lors de l’utilisation de l’outil MpCmdRun.
 
-|Message d’erreur | Raison possible |
-|:----|:----|
-| **ValidateMapsConnection a échoué (800106BA)** **ou 0x800106BA** | Le service Antivirus Microsoft Defender est désactivé. Activez le service et essayez à nouveau. Si vous avez besoin d’aide pour réactiver Antivirus Microsoft Defender, voir [Réinstaller/activer Antivirus Microsoft Defender sur vos points de terminaison.](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)<p> **CONSEIL**: dans Windows 10 1909 ou plus, et Windows Server 2019 ou plus ancien, le service était auparavant appelé *Antivirus Windows Defender*. |
-| **0x80070667** | Vous exécutez la commande à partir d’un ordinateur qui Windows 10 version 1607 ou antérieure, ou qui `-ValidateMapsConnection` Windows Server 2016 ou une version antérieure. Exécutez la commande à partir d’un ordinateur Windows 10 version 1703 ou plus récente, ou Windows Server 2019 ou version plus récente.|
-| **MpCmdRun n’est pas reconnu comme une commande interne ou externe, un programme opérable ou un fichier de commandes.** | L’outil doit être exécuté à partir de l’un ou de l’autre (où il peut être différent puisque les mises à jour de plateforme `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` sont `2012.4-0` mensuelles à l’exception de mars)|
-| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80070005 httpcode=450)** | La commande a été tentée à l’aide de privilèges insuffisants. Utilisez l’invite de commandes (cmd.exe) en tant qu’administrateur.|
-| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80070006 httpcode=451)** | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
-| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80004005 httpcode=450)** | Problèmes éventuels liés au réseau, tels que les problèmes de résolution de noms|
-| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=0x80508015** | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
-| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=800722F0D** | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
-| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80072EE7 httpcode=451)** | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
+|Message d’erreur|Raison possible|
+|---|---|
+|**ValidateMapsConnection a échoué (800106BA)** **ou 0x800106BA**|Le service Antivirus Microsoft Defender est désactivé. Activez le service et essayez à nouveau. Si vous avez besoin d’aide pour réactiver Antivirus Microsoft Defender, voir [Réinstaller/activer Antivirus Microsoft Defender sur vos points de terminaison.](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)<p> **CONSEIL**: dans Windows 10 1909 ou plus, et Windows Server 2019 ou plus ancien, le service était auparavant appelé *Antivirus Windows Defender*.|
+|**0x80070667**|Vous exécutez la commande à partir d’un ordinateur qui Windows 10 version 1607 ou antérieure, ou qui `-ValidateMapsConnection` Windows Server 2016 ou une version antérieure. Exécutez la commande à partir d’un ordinateur Windows 10 version 1703 ou plus récente, ou Windows Server 2019 ou version plus récente.|
+|**MpCmdRun n’est pas reconnu comme une commande interne ou externe, un programme opérable ou un fichier de commandes.**|L’outil doit être exécuté à partir de l’un ou de l’autre (où il peut être différent puisque les mises à jour de plateforme `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` sont `2012.4-0` mensuelles à l’exception de mars)|
+|**ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80070005 httpcode=450)**|La commande a été tentée à l’aide de privilèges insuffisants. Utilisez l’invite de commandes (cmd.exe) en tant qu’administrateur.|
+|**ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80070006 httpcode=451)**|Le pare-feu bloque la connexion ou effectue une inspection SSL.|
+|**ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80004005 httpcode=450)**|Problèmes éventuels liés au réseau, tels que les problèmes de résolution de noms|
+|**ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=0x80508015**|Le pare-feu bloque la connexion ou effectue une inspection SSL.|
+|**ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=800722F0D**|Le pare-feu bloque la connexion ou effectue une inspection SSL.|
+|**ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80072EE7 httpcode=451)**|Le pare-feu bloque la connexion ou effectue une inspection SSL.|
 
 ## <a name="see-also"></a>Voir aussi
 

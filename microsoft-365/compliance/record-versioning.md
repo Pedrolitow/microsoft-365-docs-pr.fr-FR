@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les enregistrements pour vous aider à implémenter une solution de gestion des enregistrements dans Microsoft 365.
-ms.openlocfilehash: 1259065e2f2fb3e2ee3ad09405e365df7fd98767
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: be85632bb4b85231f3a95680c960846fa245d97a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356323"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506525"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive
 
@@ -102,7 +102,7 @@ Pour plus d’informations sur le fonctionnement de la bibliothèque de conserva
 
 Les actions de verrouillage et déverrouillage des enregistrements sont enregistrées dans le journal d’audit. Dans **Activités de fichier et de page**, sélectionnez **Modification de l’état de l’enregistrement à « verrouillé»,** et **Modification de l’état de l’enregistrement à « déverrouillé »**.
 
-Pour plus d’informations sur la recherche de ces événements, consultez [Effectuer une recherche dans le journal d’audit dans le centre de sécurité et conformité](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+Pour plus d’informations sur la recherche de ces événements, consultez [Effectuer une recherche dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

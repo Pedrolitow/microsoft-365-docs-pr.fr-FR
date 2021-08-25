@@ -188,6 +188,8 @@
               href: m365d-autoir-results.md
             - name: Résoudre les faux positifs et les négatifs
               href: m365d-autoir-report-false-positives-negatives.md
+            - name: Utiliser Microsoft Power Automate
+              href: use-power-automate.md
         - name: Repérage avancé
           items:
             - name: Vue d’ensemble du repérage avancé

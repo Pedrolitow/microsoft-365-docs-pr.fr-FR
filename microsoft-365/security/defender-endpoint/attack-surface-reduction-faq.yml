@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: 1310ec8aafc41276e8c2e4e13d93310a4400d95d376b61612df30959683e019e
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 8b040f0de8ba510582e5201e7722137d164f2880
+  ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53869715"
+  ms.lasthandoff: 08/25/2021
+  ms.locfileid: "58509592"
 title: 'Réduction de la surface d’attaque : forum aux questions (FAQ)'
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -39,24 +39,25 @@ sections:
   - question: >
       La réduction de la surface d’attaque fait-elle partie Windows ?
     answer: >
-      Asr était à l’origine une fonctionnalité de la suite de fonctionnalités Exploit Guard introduite en tant que mise à jour majeure de Antivirus Microsoft Defender, dans Windows 10, version 1709. Antivirus Microsoft Defender est le composant anti-programme malveillant natif de Windows. Toutefois, l’ensemble complet des fonctionnalités asr est disponible uniquement avec une licence Windows entreprise. Notez également que les exclusions de règles de la RSA sont gérées séparément Antivirus Microsoft Defender exclusions.
+      Asr était à l’origine une fonctionnalité de la suite de fonctionnalités Exploit Guard introduite en tant que mise à jour majeure de Antivirus Microsoft Defender, dans Windows 10, version 1709. Antivirus Microsoft Defender est le composant anti-programme malveillant natif de Windows. Toutefois, l’ensemble complet des fonctionnalités asr est disponible uniquement avec une licence Windows entreprise. Notez également que les exclusions de règles de RSA sont gérées séparément Antivirus Microsoft Defender exclusions.
   - question: >
-      Ai-je besoin d’une licence d’entreprise pour exécuter des règles de R ASR ?
+      Ai-je besoin d’une licence d’entreprise pour exécuter des règles de RSA ?
     answer: >
       L’ensemble complet des règles et des fonctionnalités de la fonctionnalité de r asr est pris en charge uniquement si vous disposez d’une licence d’entreprise pour Windows 10. Un nombre limité de règles peut fonctionner sans licence d’entreprise. Si vous avez Microsoft 365 Entreprise, définissez Antivirus Microsoft Defender comme solution de sécurité principale et activez les règles via PowerShell. L’utilisation de la fonctionnalité asr sans licence d’entreprise n’est pas officiellement prise en charge et vous ne pourrez pas utiliser toutes les fonctionnalités de la asr.
 
 
-      Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [Licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+      Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
   - question: >
       La RSA est-elle prise en charge si j’ai une licence E3 ?
-    answer: "Oui. La RSA est prise en charge pour Windows Enterprise E3 et les niveaux supérieurs. \n"
+    answer: >
+      Oui. La RSA est prise en charge pour Windows Enterprise E3 et les niveaux supérieurs.
   - question: >
       Quelles fonctionnalités sont pris en charge avec une licence E5 ?
     answer: >
       Toutes les règles prise en charge avec E3 sont également pris en charge avec E5.
 
 
-      E5 ajoute une meilleure intégration avec Defender pour Endpoint. Avec E5, vous pouvez afficher les alertes en temps réel, affiner les exclusions de règles, configurer des règles asr et afficher des listes de rapports d’événements.
+      E5 ajoute une meilleure intégration avec Defender pour endpoint. Avec E5, vous pouvez afficher les alertes en temps réel, affiner les exclusions de règles, configurer des règles de la asr, et afficher des listes de rapports d’événements.
   - question: >
       Quelles sont les règles asr actuellement pris en charge ?
     answer: >
@@ -75,7 +76,7 @@ sections:
 
       |Nom de la règle|GUID|Exclusions de & fichiers|
 
-      |:--|:--|:--|
+      |---|---|---|
 
       |Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé|d3e037e1-3eb8-44c8-a917-57927947596d|Non pris en charge|
 
@@ -96,7 +97,7 @@ sections:
 
       - Microsoft Endpoint Configuration Manager ne *prend pas en* charge les caractères génériques (* ou ?)
 
-      - Si vous souhaitez exclure un fichier qui contient des caractères aléatoires (génération automatique de fichiers), vous pouvez utiliser le symbole « ? » (par exemple, C:\Folder\fileversion?.docx)
+      - Si vous souhaitez exclure un fichier qui contient des caractères aléatoires (génération automatisée de fichiers), vous pouvez utiliser le symbole « ? » (par exemple, C:\Folder\fileversion?.docx)
 
       - Les exclusions asr dans la stratégie de groupe ne gèrent pas les guillemets (le moteur gère en natif le chemin d’accès long, les espaces, etc., il n’est donc pas nécessaire d’utiliser des guillemets)
 
@@ -175,11 +176,18 @@ sections:
       Conservez la règle en mode audit pendant environ 30 jours pour obtenir une bonne planification du fonctionnement de la règle une fois qu’elle est en cours de fonctionnement dans toute votre organisation. Pendant la période d’audit, vous pouvez identifier les applications métiers qui peuvent être bloquées par la règle et configurer la règle pour les exclure.
   - question: >
       Je passe d’une solution de sécurité tierce à Defender for Endpoint. Existe-t-il un moyen « simple » d’exporter des règles à partir d’une autre solution de sécurité vers la RSA ?
-    answer: "Dans la plupart des cas, il est plus facile et préférable de commencer avec les recommandations de référence suggérées par [Defender for Endpoint](/windows/security/threat-protection) que d’essayer d’importer des règles à partir d’une autre solution de sécurité. Ensuite, utilisez des outils tels que le mode audit, la surveillance et l’analyse pour configurer votre nouvelle solution en fonction de vos besoins uniques. \n\nLa configuration par défaut de la plupart des règles asr, combinée avec la protection en temps réel de Defender pour endpoint, protège contre un grand nombre d’attaques et de vulnérabilités.\n\nÀ partir de Defender for Endpoint, vous pouvez mettre à jour vos défenses avec des indicateurs personnalisés, pour autoriser et bloquer certains comportements logiciels. La asr permet également une certaine personnalisation des règles, sous la forme d’exclusions de fichiers et de dossiers. En règle générale, il est préférable d’auditer une règle pendant un certain temps et de configurer des exclusions pour toutes les applications métiers qui peuvent être bloquées.\n"
+    answer: >
+      Dans la plupart des cas, il est plus facile et préférable de commencer avec les recommandations de référence suggérées par [Defender for Endpoint](/windows/security/threat-protection) que d’essayer d’importer des règles à partir d’une autre solution de sécurité. Ensuite, utilisez des outils tels que le mode audit, la surveillance et l’analyse pour configurer votre nouvelle solution en fonction de vos besoins uniques.
+
+
+      La configuration par défaut de la plupart des règles asr, combinée avec la protection en temps réel de Defender pour endpoint, protège contre un grand nombre d’attaques et de vulnérabilités.
+
+
+      À partir de Defender for Endpoint, vous pouvez mettre à jour vos défenses avec des indicateurs personnalisés, pour autoriser et bloquer certains comportements logiciels. La asr permet également une certaine personnalisation des règles, sous la forme d’exclusions de fichiers et de dossiers. En règle générale, il est préférable d’auditer une règle pendant un certain temps et de configurer des exclusions pour toutes les applications métiers qui peuvent être bloquées.
   - question: >
       La RSA prend-elle en charge les exclusions de fichiers ou de dossiers qui incluent des variables système et des caractères génériques dans le chemin d’accès ?
     answer: >
-      Oui. Pour plus d’informations sur l’exclusion des fichiers ou des dossiers des règles de la asr, voir Exclure des fichiers et des [dossiers](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) des règles de la asr. Pour plus d’informations sur l’utilisation de variables système et de caractères génériques dans les chemins d’accès aux fichiers exclus, voir Exclure des fichiers et des [dossiers](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) en fonction de l’extension de fichier et de l’emplacement des dossiers.
+      Oui. Pour plus d’informations sur l’exclusion des fichiers ou des [dossiers](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) des règles de la asr. Pour plus d’informations sur l’exclusion des fichiers ou des dossiers des règles de la asr, voir Exclusion de fichiers et dossiers, et Configurer et valider des [exclusions basées](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) sur l’extension de fichier et l’emplacement des dossiers pour plus d’informations sur l’utilisation de variables système et de caractères génériques dans les chemins d’accès aux fichiers exclus.
   - question: >
       Les règles DER couvrent-ils toutes les applications par défaut ?
     answer: >
@@ -191,7 +199,7 @@ sections:
   - question: >
       J’ai une licence E5 et j’ai activé certaines règles asr en association avec Defender pour endpoint. Est-il possible qu’un événement ASR ne s’affiche pas du tout dans la chronologie des événements de Defender for Endpoint ?
     answer: >
-      Chaque fois qu’une notification est déclenchée localement par une règle asr, un rapport sur l’événement est également envoyé au portail Defender for Endpoint. Si vous avez des difficultés à trouver l’événement, vous pouvez filtrer la chronologie des événements à l’aide de la zone de recherche. Vous pouvez également afficher les événements de la surface d’attaque en visitant La gestion de la **surface** d’attaque, à partir de l’icône Gestion de la **configuration** dans la barre des tâches du Centre de sécurité. La page de gestion de la surface d’attaque inclut un onglet pour les détections de rapports, qui inclut la liste complète des événements de règle de la surface d’attaque signalés à Defender pour le point de terminaison.
+      Chaque fois qu’une notification est déclenchée localement par une règle asr, un rapport sur l’événement est également envoyé au portail Defender for Endpoint. Si vous avez des difficultés à trouver l’événement, vous pouvez filtrer la chronologie des événements à l’aide de la zone de recherche. Vous pouvez également afficher les événements asr en visitant Go **to attack surface management**, à partir de l’icône Gestion de la **configuration** dans la barre des tâches du Centre de sécurité. La page de gestion de la surface d’attaque inclut un onglet pour les détections de rapports, qui inclut la liste complète des événements de règle de la surface d’attaque signalés à Defender pour le point de terminaison.
   - question: >
       J’ai appliqué une règle à l’aide d’un GPO. Maintenant, lorsque j’essaie de vérifier les options d’indexation de la règle dans Microsoft Outlook, je reçois un message indiquant « Accès refusé ».
     answer: >
@@ -216,10 +224,10 @@ sections:
   - question: >
       J’ai récemment activé la règle asr, « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité Windows locale (lsass.exe) » et j’ai reçu un grand nombre de notifications. Que se passe-t-il?
     answer: >
-      Une notification générée par cette règle n’indique pas nécessairement une activité malveillante ; toutefois, cette règle est toujours utile pour bloquer les activités malveillantes, car les programmes malveillants ciblent souvent lsass.exe pour obtenir un accès illicite aux comptes. Le processus lsass.exe stocke les informations d’identification de l’utilisateur en mémoire après qu’un utilisateur s’est connecté. Windows utilise ces informations d’identification pour valider les utilisateurs et appliquer des stratégies de sécurité locales.
+      Une notification générée par cette règle n’indique pas nécessairement une activité malveillante ; Toutefois, cette règle est toujours utile pour bloquer les activités malveillantes, car les programmes malveillants ciblent souvent lsass.exe pour obtenir un accès illégal aux comptes. Le processus lsass.exe stocke les informations d’identification de l’utilisateur en mémoire après qu’un utilisateur s’est connecté. Windows utilise ces informations d’identification pour valider les utilisateurs et appliquer des stratégies de sécurité locales.
 
 
-      Étant donné que de nombreux processus légitimes tout au long d’une journée classique appelleront lsass.exe informations d’identification, cette règle peut être particulièrement bruyante. Si une application légitime connue génère un nombre excessif de notifications pour cette règle, vous pouvez l’ajouter à la liste d’exclusions. La plupart des autres règles asr génèrent un nombre de notifications relativement plus petit, par rapport à celle-ci, étant donné que l’appel sur lsass.exe est caractéristique du fonctionnement normal de nombreuses applications.
+      Étant donné que de nombreux processus légitimes tout au long d’une journée classique appelleront lsass.exe d’informations d’identification, cette règle peut être particulièrement bruyante. Si une application légitime connue génère un nombre excessif de notifications pour cette règle, vous pouvez l’ajouter à la liste d’exclusions. La plupart des autres règles asr génèrent un nombre de notifications relativement plus petit, par rapport à celle-ci, car l’appel sur lsass.exe est caractéristique du fonctionnement normal de nombreuses applications.
   - question: >
       Est-il bon d’activer la règle « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité Windows locale (lsass.exe) » avec la protection LSA ?
     answer: >

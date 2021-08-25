@@ -16,22 +16,22 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/15/2021
-ms.openlocfilehash: e7ea71848c2e64eb7d67605ca108ac9fc90709747af633e6a01b5da67cd8baed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5fc496fd0d40d5dd172fb45e8ce6b8d23ebab6da
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857762"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509988"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Erreurs courantes à éviter lors de la définition d’exclusions
 
-Vous pouvez définir une liste d’exclusions pour les éléments que vous ne souhaitez Antivirus Microsoft Defender analyser. Ces éléments exclus peuvent contenir des menaces qui rendent votre appareil vulnérable. Cet article décrit une erreur courante que vous devez éviter lors de la définition d’exclusions. 
+Vous pouvez définir une liste d’exclusions pour les éléments que vous ne souhaitez Antivirus Microsoft Defender analyser. Ces éléments exclus peuvent contenir des menaces qui rendent votre appareil vulnérable. Cet article décrit une erreur courante que vous devez éviter lors de la définition d’exclusions.
 
 Avant de définir vos listes d’exclusions, [voir Recommandations pour définir des exclusions.](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
 
 ## <a name="excluding-certain-trusted-items"></a>Exclusion de certains éléments fiables
 
-Certains fichiers, types de fichiers, dossiers ou processus ne doivent pas être exclus de l’analyse, même si vous les faites confiance pour ne pas être malveillants. 
+Certains fichiers, types de fichiers, dossiers ou processus ne doivent pas être exclus de l’analyse, même si vous les faites confiance pour ne pas être malveillants.
 
 Ne définissez pas d’exclusions pour les emplacements de dossiers, les extensions de fichiers et les processus répertoriés dans les sections suivantes :
 - Emplacements des dossiers
@@ -40,9 +40,9 @@ Ne définissez pas d’exclusions pour les emplacements de dossiers, les extensi
 
 ### <a name="folder-locations"></a>Emplacements des dossiers
 
-En règle générale, ne définissez pas d’exclusions pour les emplacements de dossier suivants :
+En règle générale, ne définissez pas d’exclusions pour les emplacements de dossiers suivants :
 
-`%systemdrive%` 
+`%systemdrive%`
 
 `C:`
 
@@ -52,13 +52,13 @@ En règle générale, ne définissez pas d’exclusions pour les emplacements de
 
 `%ProgramFiles%\Java`
 
-`C:\Program Files\Java` 
+`C:\Program Files\Java`
 
-`%ProgramFiles%\Contoso\` 
+`%ProgramFiles%\Contoso\`
 
-`C:\Program Files\Contoso\` 
+`C:\Program Files\Contoso\`
 
-`%ProgramFiles(x86)%\Contoso\` 
+`%ProgramFiles(x86)%\Contoso\`
 
 `C:\Program Files (x86)\Contoso\`
 
@@ -111,7 +111,7 @@ En règle générale, ne définissez pas d’exclusions pour les extensions de f
 
 `.cmd`
 
-`.com` 
+`.com`
 
 `.cpl`
 
@@ -177,90 +177,90 @@ En règle générale, ne définissez pas d’exclusions pour les extensions de f
 
 `.zip`
 
-### <a name="processes"></a>Processus 
+### <a name="processes"></a>Processus
 
 En règle générale, ne définissez pas d’exclusions pour les processus suivants :
 
-`AcroRd32.exe`  
+`AcroRd32.exe`
 
-`bitsadmin.exe`  
+`bitsadmin.exe`
 
-`excel.exe`  
+`excel.exe`
 
-`iexplore.exe`  
+`iexplore.exe`
 
-`java.exe`  
+`java.exe`
 
-`outlook.exe`  
+`outlook.exe`
 
-`psexec.exe`  
+`psexec.exe`
 
-`powerpnt.exe`  
+`powerpnt.exe`
 
-`powershell.exe`  
+`powershell.exe`
 
 `schtasks.exe`
 
-`svchost.exe` 
+`svchost.exe`
 
-`wmic.exe`  
+`wmic.exe`
 
-`winword.exe`  
+`winword.exe`
 
-`wuauclt.exe`  
+`wuauclt.exe`
 
-`addinprocess.exe`  
+`addinprocess.exe`
 
-`addinprocess32.exe`  
+`addinprocess32.exe`
 
-`addinutil.exe`  
+`addinutil.exe`
 
-`bash.exe`  
+`bash.exe`
 
-`bginfo.exe` 
+`bginfo.exe`
 
-`cdb.exe`  
+`cdb.exe`
 
-`csi.exe`  
+`csi.exe`
 
-`dbghost.exe`  
+`dbghost.exe`
 
-`dbgsvc.exe`  
+`dbgsvc.exe`
 
 `dnx.exe`
 
 `dotnet.exe`
 
-`fsi.exe`  
+`fsi.exe`
 
-`fsiAnyCpu.exe`  
+`fsiAnyCpu.exe`
 
-`kd.exe`  
+`kd.exe`
 
-`ntkd.exe`  
+`ntkd.exe`
 
-`lxssmanager.dll`  
+`lxssmanager.dll`
 
-`msbuild.exe` 
+`msbuild.exe`
 
-`mshta.exe`  
+`mshta.exe`
 
-`ntsd.exe`  
+`ntsd.exe`
 
-`rcsi.exe`  
+`rcsi.exe`
 
-`system.management.automation.dll`  
+`system.management.automation.dll`
 
 `windbg.exe`
 
 > [!NOTE]
-> Vous pouvez choisir d’exclure des types de fichiers, tels que , ou si votre environnement dispose d’un logiciel moderne à jour avec une stratégie de mise à jour stricte pour gérer les `.gif` `.jpg` `.jpeg` `.png` vulnérabilités.
+> Vous pouvez choisir d’exclure les types de fichiers, tels que , ou si votre environnement dispose d’un logiciel moderne à jour avec une stratégie de mise à jour stricte pour gérer les `.gif` `.jpg` `.jpeg` `.png` vulnérabilités.
 
 ## <a name="using-just-the-file-name-in-the-exclusion-list"></a>Utilisation du nom de fichier dans la liste d’exclusions
 
-Un programme malveillant peut avoir le même nom que celui du fichier que vous faites confiance et que vous souhaitez exclure de l’analyse. Par conséquent, pour éviter d’exclure un programme malveillant potentiel de l’analyse, utilisez un chemin d’accès complet au fichier que vous souhaitez exclure au lieu d’utiliser uniquement le nom du fichier. Par exemple, si vous souhaitez exclure de l’analyse, utilisez le chemin d’accès complet `Filename.exe` au fichier, tel que `C:\program files\contoso\Filename.exe` .
+Un programme malveillant peut porter le même nom que celui du fichier que vous faites confiance et que vous souhaitez exclure de l’analyse. Par conséquent, pour éviter d’exclure un programme malveillant potentiel de l’analyse, utilisez un chemin d’accès complet au fichier que vous souhaitez exclure au lieu d’utiliser uniquement le nom du fichier. Par exemple, si vous souhaitez exclure de l’analyse, utilisez le chemin d’accès complet `Filename.exe` au fichier, tel que `C:\program files\contoso\Filename.exe` .
 
-## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>Utilisation d’une seule liste d’exclusions pour plusieurs charges de travail serveur
+## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>Utilisation d’une seule liste d’exclusions pour plusieurs charges de travail de serveur
 
 N’utilisez pas une seule liste d’exclusions pour définir des exclusions pour plusieurs charges de travail de serveur. Fractionner les exclusions pour différentes charges de travail d’application ou de service en plusieurs listes d’exclusions. Par exemple, la liste d’exclusions de votre charge de travail de serveur IIS doit être différente de la liste d’exclusions pour SQL Server charge de travail.
 
@@ -268,5 +268,4 @@ N’utilisez pas une seule liste d’exclusions pour définir des exclusions pou
 
 Antivirus Microsoft Defender Le service s’exécute dans le contexte système à l’aide du compte LocalSystem, ce qui signifie qu’il obtient des informations à partir de la variable d’environnement système, et non de la variable d’environnement utilisateur. L’utilisation de variables d’environnement comme caractère générique dans les listes d’exclusions est limitée aux variables système et à celles applicables aux processus en cours d’exécution en tant que compte NT AUTHORITY\SYSTEM. Par conséquent, n’utilisez pas de variables d’environnement utilisateur comme caractères génériques lors de l Antivirus Microsoft Defender exclusions de dossiers et de processus. Consultez le tableau sous [Variables d’environnement système](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) pour obtenir la liste complète des variables d’environnement système.
 
-Pour plus d’informations sur l’utilisation des caractères génériques dans les listes d’exclusions, voir Utiliser des [caractères génériques](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) dans les listes d’exclusions et le chemin d’accès au dossier ou les listes d’exclusions.
-
+Pour plus d’informations sur l’utilisation des caractères génériques dans les listes d’exclusion, voir Utiliser des [caractères génériques](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) dans les listes d’exclusions et le chemin d’accès au dossier ou les listes d’exclusions.

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1e16b6aeb664c69c419337b82081a85f10344fba
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 242d0983913a646e34caf4766bcaec90c652fbd3
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507925"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509916"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison Android
 
@@ -52,18 +52,11 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
   - Pour plus d’informations sur l’attribution de licences, voir [Attribuer des licences aux utilisateurs.](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
 - **Pour les administrateurs**
-  - Accès au portail Microsoft 365 Defender web.
+   - Accès au portail Microsoft 365 Defender web.
 
     > [!NOTE]
-    > Microsoft Intune est la seule solution de gestion des périphériques mobiles (MDM) prise en charge pour le déploiement de Microsoft Defender pour Endpoint sur Android. Actuellement, seuls les appareils inscrits sont pris en charge pour l’application de Defender for Endpoint sur les stratégies de conformité des appareils android dans Intune.
-
-  - Accédez [Microsoft Endpoint Manager centre d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431)pour déployer l’application pour les groupes d’utilisateurs inscrits dans votre organisation.
-    - Accès au portail Microsoft 365 Defender web.
-
-        > [!NOTE]
-        > Microsoft Defender pour le point de terminaison peut désormais étendre la protection aux données d’une organisation au sein d’une application gérée pour ceux qui n’utilisent pas la gestion des périphériques mobiles (MDM) mais utilisent Intune pour gérer les applications mobiles. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles [(MAM).](/mem/intune/apps/mam-faq)
-        >
-        > Avant cette mise à jour, Microsoft Defender for Endpoint fonctionnait sur les appareils inscrits à l’aide de la gestion des périphériques mobiles Intune uniquement.
+    > - Microsoft Defender pour le point de terminaison étend désormais la protection aux données d’une organisation au sein d’une application gérée pour ceux qui n’utilisent pas la gestion des périphériques mobiles (MDM) mais utilisent Intune pour gérer les applications mobiles. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles [(MAM).](/mem/intune/apps/mam-faq)
+    > - En outre, Microsoft Defender pour point de terminaison prend déjà en charge les appareils inscrits à l’aide de la gestion des périphériques mobiles (MDM) Intune.
 
     - Accédez [Microsoft Endpoint Manager centre d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431)pour déployer l’application pour les groupes d’utilisateurs inscrits dans votre organisation.
 
@@ -78,7 +71,7 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 
 ### <a name="installation-instructions"></a>Instructions d’installation
 
-Microsoft Defender pour le point de terminaison sur Android prend en charge l’installation sur les deux modes d’appareils inscrits : l’administrateur d’appareil hérité et les modes Enterprise Android. **Actuellement, les appareils personnels avec profil de travail et les inscriptions d’appareils utilisateur entièrement gérées par l’entreprise sont pris en charge dans Android Enterprise. La prise en charge des autres modes Enterprise Android sera annoncée lorsque vous serez prêt.**
+Microsoft Defender pour Endpoint sur Android prend en charge l’installation sur les deux modes d’appareils inscrits : l’administrateur d’appareil hérité et les modes Enterprise Android. **Actuellement, les appareils personnels avec profil de travail et les inscriptions d’appareils utilisateur entièrement gérées par l’entreprise sont pris en charge dans Android Enterprise. La prise en charge des autres modes Enterprise Android sera annoncée lorsque vous serez prêt.**
 
 Le déploiement de Microsoft Defender pour Endpoint sur Android s’effectue via Microsoft Intune (MDM). Pour plus d’informations, voir [Déployer Microsoft Defender pour endpoint sur Android avec Microsoft Intune](android-intune.md).
 
