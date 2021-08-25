@@ -3,7 +3,6 @@ title: Déployer Exchange Online pour Microsoft 365 Éducation
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/03/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,115 +15,120 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Si vous souhaitez en savoir plus sur les incidents d’e-mail ou les conseils dans Microsoft 365, utilisez la surveillance d’Exchange Online.
-ms.openlocfilehash: 0b6eaf85c1f5f8c892bc382cb7656dac6bbbb550
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: e3d0761cffdf9cffdf044476a2e29cef00e77d09
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355987"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502998"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Déployer Exchange Online pour Microsoft 365 Éducation
 
-La surveillance d’Exchange Online dans le Centre d’administration Microsoft 365 vous permet de surveiller l’état d’intégrité du service Exchange pour l’abonnement Microsoft 365 de votre organisation. La surveillance d’Exchange Online fournit des informations sur les incidents et les conseils collectés dans les catégories suivantes :
+Vous pouvez utiliser la surveillance Exchange Online dans le centre d'administration Microsoft 365 pour surveiller l'intégrité du service Exchange pour l'abonnement Microsoft 365 de votre organisation. La surveillance d’Exchange Online fournit des informations sur les incidents et les conseils collectés dans les catégories suivantes :
 
 - **Infrastructure** : le programme détecte un problème dans l’infrastructure Microsoft 365 détenue par Microsoft pour fournir des mises à jour régulières et résoudre le problème. Par exemple, les utilisateurs ne peuvent pas accéder à Exchange Online en raison de problèmes liés à Exchange ou à une autre infrastructure cloud Microsoft 365.
 - **Infrastructure tierce** : le programme détecte un problème dans une infrastructure tierce sur laquelle votre organisation a pris une dépendance. Votre organisation doit alors effectuer l’action nécessaire pour résoudre le problème. Par exemple, un fournisseur de services d’émission de jeton de sécurité (STS) tiers limite les transactions d’authentification utilisateur et empêche les utilisateurs de se connecter à Exchange Online.
 - **Infrastructure cliente** : le programme détecte un problème dans l’infrastructure de votre organisation. Celle-ci doit alors effectuer l’action nécessaire pour résoudre le problème. Par exemple, les utilisateurs ne peuvent pas accéder à Exchange Online, car ils ne peuvent pas obtenir de jeton d’authentification via un fournisseur STS hébergé par votre organisation en raison d’un certificat arrivé à expiration.
 
-Voici un exemple de la page **Intégrité des services** dans le Centre d’administration Microsoft 365, disponible via **Intégrité > Intégrité des services**.
+Voici un exemple de page **Intégrité du service** dans le Centre d’administration Microsoft 365, disponible à partir de **Santé > Intégrité du service** pour les scénarios d’organisation.
 
-![Page Intégrité des services dans le Centre d’administration Microsoft 365](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
+**Les problèmes au niveau de votre organisation** seront identifiés et utilisés par la surveillance au niveau de l’organisation.
 
-La valeur de la colonne **État** indique si le service est intègre, s’il comporte des conseils ou des incidents sur la base des services cloud gérés par Microsoft. 
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="Page Intégrité des services dans le Centre d’administration Microsoft 365":::
 
-La valeur de la colonne **Vos problèmes liés à votre organisation et à des tiers** indique que l’infrastructure de votre organisation ou un logiciel tiers a une incidence sur l’expérience de vos utilisateurs en matière d’intégrité des services avec Exchange Online. Les conseils ou incidents nécessitent *vos* actions pour résoudre le problème.
+La valeur de la colonne **Santé** sous **Problèmes au niveau de votre organisation** indique si l’infrastructure de l’organisation ou les logiciels tiers affectent l’expérience d’état du service des utilisateurs de votre organisation avec Exchange Online. Les conseils ou incidents nécessitent *vos* actions pour résoudre le problème.
 
-Voici un exemple de la page de surveillance **Exchange Online** dans le Centre d’administration Microsoft 365, disponible via **Intégrité > Intégrité des services > Exchange Online**.
+La valeur de la colonne **Santé** sous **État du service Microsoft** indique que le service est sain ou qu’il a des conseils ou des incidents basés sur les services cloud que Microsoft maintient.
 
-![Page de surveillance Exchange Online dans le Centre d’administration Microsoft 365](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example.png)
+Voici un exemple de page de surveillance Exchange Online dans le Centre d’administration Microsoft 365 qui indique l’état d’état des scénarios au niveau de l’organisation, disponible à partir de **Santé > Intégrité du service > Exchange Online**.
 
-La page de surveillance **Exchange Online** indique si le service Exchange Online est intègre ou non, et si des incidents ou conseils associés sont présents. Avec la surveillance Exchange Online, vous pouvez consulter l’état d’intégrité des services pour des scénarios d’e-mails spécifiques. Vous pouvez également consulter des signaux en temps réel pour déterminer l’impact par scénario. 
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png" alt-text="La page de surveillance Exchange Online dans le Centre d’administration Microsoft 365":::
+
+La page de surveillance **Exchange Online** indique si le service Exchange Online est intègre ou non, et si des incidents ou conseils associés sont présents. Avec la surveillance Exchange Online, vous pouvez consulter l’état d’intégrité des services pour des scénarios d’e-mails spécifiques. Vous pouvez également consulter des signaux en temps réel pour déterminer l’impact par scénario.
 
 ## <a name="requirements"></a>Configuration requise
 
 Cette préversion est activée pour les clients qui répondent aux exigences suivantes : 
 
-- Votre organisation doit avoir un nombre de licences d’au moins 5 000, soit une combinaison de ces produits : Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Votre organisation doit avoir un nombre de licences d’au moins 5 000, de la combinaison de ces produits : Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5.
 
   Par exemple, votre organisation peut avoir 3 000 licences Office 365 E3 et 2 500 Microsoft 365 E5, pour un total de 5 500 licences provenant des produits éligibles.
 
 - Votre organisation doit avoir au moins 50 utilisateurs Exchange Online actifs par mois.
 
-La surveillance d’Exchange Online vous permet de consulter l’état d’intégrité des clients de courrier suivants sur la base de l’activité de lecture des e-mails :
+- Tout rôle disposant d’autorisations au niveau du tableau de bord de Intégrité du service peut accéder à l’analyse Exchange Online. Pour plus d’informations, consultez [Comment vérifier l’état du service Microsoft 365](view-service-health.md).
 
-- Version de bureau d’Outlook
-- Outlook sur le web
-- Clients de messagerie natifs d’iOS et Android 
-- Application Outlook Mobile pour iOS et Android 
-- Client Outlook Mac
+## <a name="organization-level-scenarios"></a>Scénarios au niveau de l’organisation
 
-Pour ces clients, vous pouvez connaître le nombre d’utilisateurs actifs au cours des 30 dernières minutes en fonction des utilisateurs qui lisent un e-mail, ainsi que le nombre d’incidents et de conseils dans le tableau de bord. Le programme compare ces données au même intervalle pour la semaine précédente afin de déterminer si un problème s’est produit. 
+Avec Exchange Online surveillance des données prend en charge les scénarios suivants :
 
->[!Note]
-> Le programme détermine le nombre d’utilisateurs actifs selon une activité unique. Par exemple, lorsqu’un utilisateur lit un e-mail. Il rend compte seulement des 30 dernières minutes d’activité.
->
+- **Clients de messagerie** : vous pouvez afficher l’état des clients de messagerie suivants en fonction de l’activité de lecture des e-mails :
 
-Vous pouvez également surveiller l’intégrité d’Exchange Online pour les scénarios suivants :
+  - Version de bureau d’Outlook
+  - Outlook sur le web
+  - Clients de messagerie natifs d’iOS et Android
+  - Application Outlook Mobile pour iOS et Android
+  - Client Outlook Mac
+  - Ouvrez Outlook sur le web.
 
-- **Flux de courriers** : nombre de messages remis correctement dans une boîte aux lettres sans délai une fois le message arrivé sur le réseau Microsoft 365. 
+   Pour ces clients, vous pouvez connaître le nombre d’utilisateurs actifs au cours des 30 dernières minutes en fonction des utilisateurs qui lisent un e-mail, ainsi que le nombre d’incidents et de conseils dans le tableau de bord. Ces données sont comparées au même intervalle de la semaine précédente pour voir s’il y a un problème.
+
+   >[!Note]
+   > Le programme détermine le nombre d’utilisateurs actifs selon une activité unique. Par exemple, lorsqu’un utilisateur lit un e-mail. Il rend compte seulement des 30 dernières minutes d’activité.
+
+- **Connectivité des applications** : la connectivité estimée est basée sur le pourcentage de connexions synthétiques réussies entre les appareils et les Exchange Online de votre organisation, et peut inclure des problèmes en dehors du contrôle de Microsoft. 
+
+- **Flux de courriers** : nombre de messages remis correctement dans une boîte aux lettres sans délai une fois le message arrivé sur le réseau Microsoft 365.
+
 - **Authentification de base et authentification moderne** : nombre d’utilisateurs correctement validés dans le service Exchange Online.
 
-![Exemple de surveillance de l’intégrité d’Exchange pour la livraison des e-mails](../media/microsoft-365-exchange-monitoring/exhange-monitoring-scenario-example.png)
+![Exemple de surveillance de l’intégrité d’Exchange pour la livraison des e-mails](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
-Dans tous ces scénarios, les chiffres clés s’appliquent aux 30 dernières minutes dans le tableau de bord principal. Les affichages détaillés pour chacun de ces scénarios illustrent la tendance quasiment en temps réel pendant sept jours avec un agrégat de 30 minutes comparé à la semaine précédente. 
+Dans tous ces scénarios, les chiffres clés s’appliquent aux 30 dernières minutes dans le tableau de bord principal. Les affichages détaillés pour chacun de ces scénarios illustrent la tendance quasiment en temps réel pendant sept jours avec un agrégat de 30 minutes comparé à la semaine précédente.
 
 ## <a name="send-us-feedback"></a>Nous envoyer des commentaires
 
 Vous pouvez envoyer vos commentaires de deux manières :
 
 - Utilisez l’option **Envoyer des commentaires** disponible sur chaque page du Centre d’administration Microsoft 365.
+
 - Envoyez vos commentaires à l’aide du lien **Cette publication est-elle utile ?** pour un incident ou un conseil spécifique.
 
-![Lien « Cette publication est-elle utile ? » pour un incident ou un conseil spécifique](../media/microsoft-365-exchange-monitoring/exhange-monitoring-example-incident-feedback.png)
+![Lien « Cette publication est-elle utile ? » pour un incident ou un conseil spécifique](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
 #### <a name="1-why-dont-i-see-exchange-online-monitoring-under-health-in-the-microsoft-365-admin-center"></a>1. Pourquoi la mention « Surveillance Exchange Online » n’apparaît-elle pas dans le Centre d’administration Microsoft 365 ? 
 
-Tout d’abord, vérifiez que vous avez activé le nouveau Centre d’administration sur la page **Accueil** du Centre d’administration Microsoft 365. 
+Tout d’abord, vérifiez que vous avez activé le nouveau Centre d’administration sur la page **Accueil** du Centre d’administration Microsoft 365.
 
 Vérifiez que vous remplissez les deux conditions suivantes : 
 
 - Votre organisation doit avoir un nombre de licences d’au moins 5 000, soit une combinaison de ces produits : Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+
 - Votre organisation doit avoir au moins 50 utilisateurs Exchange Online actifs par mois.
 
 Si le nombre de licences de votre organisation est inférieur à 5 000 utilisateurs et que le nombre d’utilisateurs actifs par mois passe au-dessous des 50, la surveillance Exchange Online ne sera pas activée tant que ces conditions ne seront pas remplies.
 
-#### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. Le nombre d’utilisateurs actifs dans le tableau de bord pour chaque client semble faible. Nous avons attribué un grand nombre de licences actives à des utilisateurs. Qu’est-ce que cela signifie ? 
+#### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. Le nombre d’utilisateurs actifs dans le tableau de bord pour chaque client semble faible. Nous avons attribué un grand nombre de licences actives à des utilisateurs. Qu’est-ce que cela signifie ?
 
-Le nombre d’utilisateurs actifs indiqué dans la surveillance est basé sur une période de 30 minutes au cours de laquelle les utilisateurs ont effectué l’activité indiquée dans la fonctionnalité. Ce nombre est différent des nombres d’utilisations. Pour afficher les nombres d’utilisation, utilisez les rapports d’activité dans le Centre d’administration Microsoft 365 (**Rapports > Utilisation**).
+Le nombre d’utilisateurs actifs indiqué dans la surveillance est basé sur une période de 30 minutes au cours de laquelle les utilisateurs ont effectué l’activité indiquée dans la fonctionnalité. Cela ne doit pas être confondu avec les numéros d’utilisation. Pour afficher les nombres d’utilisation, utilisez les rapports d’activité dans le Centre d’administration Microsoft 365 (**Rapports > Utilisation**).
 
-#### <a name="3-will-there-be-other-monitoring-scenarios-for-other-services-such-as-teams-and-sharepoint"></a>3. D’autres scénarios de surveillances seront-ils présents pour d’autres services tels que Teams et SharePoint ? 
+#### <a name="3-will-there-be-other-monitoring-scenarios-for-other-services-such-as-teams-and-sharepoint"></a>3. D’autres scénarios de surveillances seront-ils présents pour d’autres services tels que Teams et SharePoint ?
 
-Microsoft a intégré cette expérience directement dans le tableau de bord Intégrité des services du Centre d’administration Microsoft 365. Microsoft pourra ainsi étendre les scénarios de surveillance à d’autres services qui figureront dans les prochaines actualités à partager. 
+Microsoft a intégré cette expérience directement dans le tableau de bord Intégrité des services du Centre d’administration Microsoft 365. Microsoft pourra ainsi étendre les scénarios de surveillance à d’autres services qui figureront dans les prochaines actualités à partager.
 
-#### <a name="4-what-is-the-plan-for-general-availability-of-this-experience"></a>4. Quelle est l’offre prévue pour la disponibilité générale de cette expérience ? 
+#### <a name="4-what-is-the-plan-for-general-availability-of-this-experience"></a>4. Quelle est l’offre prévue pour la disponibilité générale de cette expérience ?
 
-Microsoft a intégré la surveillance Exchange Online directement dans le tableau de bord **Intégrité des services** du Centre d’administration Microsoft 365. 
+Microsoft a intégré la surveillance Exchange Online directement dans le tableau de bord **Intégrité des services** du Centre d’administration Microsoft 365.
 
 Grâce à cette nouvelle expérience intégrée, Microsoft envisage de recueillir vos commentaires, puis de définir notre offre en faveur de la disponibilité générale.
 
 #### <a name="5-is-this-a-free-included-or-paid-extra-feature"></a>5. Cette fonctionnalité est-elle gratuite (incluse) ou payante (comme supplément) ? 
 
-Cette fonctionnalité est en préversion publique et uniquement disponible pour les clients répondant aux critères de la question 1.
+Il s’agit d’une fonctionnalité gratuite en préversion et disponible uniquement pour les clients qui répondent aux exigences de la question 1. Il n’existe pas d’option payante pour recevoir ce contenu.
 
-<!--
->[!Note]
->INTERNAL: That decision is pending
->
---> 
-
-#### <a name="6-how-do-i-provide-feedback"></a>6. Comment faire part de mes commentaires ? 
+#### <a name="6-how-do-i-provide-feedback"></a>6. Comment faire part de mes commentaires ?
 
 Pour vos commentaires généraux, utilisez l’icône **Envoyer des commentaires** en bas à droite de la page de surveillance **Exchange Online**. 
 
@@ -133,3 +137,12 @@ Pour des commentaires sur les incidents ou les conseils, utilisez le lien **Cett
 #### <a name="7-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>7. Où les données sont-elles instrumentées pour les scénarios qui montrent des tendances des activités ?
 
 Les données sont instrumentées dans le service Exchange Online. S’il y a un problème qui se produit avant que la requête n’arrive à Exchange Online ou qu’une erreur s’est produite dans Exchange Online, le signal d’activité s’affiche.
+
+#### <a name="8-are-there-any-privacy-concerns"></a>8. Existe-t-il des problèmes de confidentialité ?
+
+La surveillance se concentre sur les métadonnées de service et le contenu utilisateur n’est pas surveillé.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Comment vérifier l’intégrité du service Microsoft 365](view-service-health.md) 
+- [Limites d’Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits)
