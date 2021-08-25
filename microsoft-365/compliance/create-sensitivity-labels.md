@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour l’ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les données de votre organisation.'
-ms.openlocfilehash: 63a798d0656fbbdd0bd78cf47974befa3dad7b42d2413a98486504f6c5cf3e96
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4b37aeecabdeaef3afebb7144330a5c9df811729
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851457"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508117"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -97,11 +97,11 @@ Les étiquettes sont disponibles dans des applications ou des services après le
 
 D’autres paramètres d’étiquette sont disponibles dans l’applet de commande [Set-Label](/powershell/module/exchange/set-label) depuis le [Centre de sécurité et conformité PowerShell](/powershell/exchange/scc-powershell).
 
-Par exemple :
+Par exemple :
 
 - Utilisez le paramètre *LocaleSettings* pour des déploiements internationaux pour que les utilisateurs voient le nom de l’étiquette et l’info-bulle dans leur langue locale. La [section suivante](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) présente un exemple de configuration qui spécifie le nom de l’étiquette et le texte d’info-bulle pour le français, l’italien et l’allemand.
 
-- Pour le client d’étiquetage unifié Azure Information Protection uniquement, spécifiez des [paramètres avancés](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) qui incluent la définition d’une couleur d’étiquette et l’application d’une propriété personnalisée lorsqu’une étiquette est appliquée. Si vous souhaitez obtenir la liste complète, veuillez consulter la rubrique [Paramètres avancés disponibles pour les étiquettes](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) depuis le guide d’administration de ce client.
+- Le client d’étiquetage unifié Azure Information Protection prend en charge une liste complète de [paramètres avancés](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) qui incluent la définition d’une couleur d’étiquette et l’application d’une propriété personnalisée lorsqu’une étiquette est appliquée. Si vous souhaitez obtenir la liste complète, veuillez consulter la rubrique [Paramètres avancés disponibles pour les étiquettes](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) depuis le guide d’administration de ce client.
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Exemple de configuration d'une étiquette de confidentialité dans différentes langues
 
@@ -181,8 +181,12 @@ Ce bouton démarre l’Assistant **Créer une stratégie** qui vous permet de mo
 
 Lorsque vous utilisez l’étiquette intégrée pour les applications Office sur Windows, macOS, iOS et Android, les utilisateurs voient de nouvelles étiquettes dans un délai de quatre heures et dans un délai d’une heure pour Word, Excel et PowerPoint sur le web lorsque vous actualisez le navigateur. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
 
-> [!NOTE]
-> La mise à jour d’autres applications et services prenant en charge les étiquettes de confidentialité peut intervenir plus souvent que 24 heures avec leurs propres calendriers et déclencheurs de mise à jour pour les mises à jour de stratégie. Consultez leur documentation pour plus de détails. Par exemple, pour le client de l’étiquetage unifié d’Azure Information Protection, consultez la ligne **Mise à jour de stratégie** dans le tableau des [Comparaisons détaillées pour les clients Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
+La mise à jour d’autres applications et services prenant en charge les étiquettes de confidentialité peut intervenir plus souvent que 24 heures avec leurs propres calendriers et déclencheurs de mise à jour pour les mises à jour de stratégie. Consultez leur documentation pour plus de détails. Par exemple, pour le client de l’étiquetage unifié d’Azure Information Protection, consultez la ligne **Mise à jour de stratégie** dans le tableau des [Comparaisons détaillées pour les clients Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
+
+> [!TIP]
+> N’oubliez pas de prendre en compte les dépendances de minutage qui peuvent parfois retarder le fonctionnement des étiquettes de confidentialité et des stratégies d’étiquette. Par exemple, le remplissage d’un nouveau groupe et les modifications d’appartenance au groupe, la latence de réplication réseau et les restrictions de bande passante, et [mise en cache de l’appartenance au groupe par le service Azure Information Protection](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) pour les étiquettes qui appliquent le chiffrement.
+> 
+> Avec de nombreuses dépendances externes qui ont chacune leurs propres cycles de minutage, il ’ est judicieux d’attendre 24 heures avant de passer du temps à dépanner les étiquettes et les stratégies d’étiquette pour les modifications récentes.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Paramètres de stratégie d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
 
