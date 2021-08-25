@@ -12,22 +12,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place conservation, conservation pour litige et stratégies de rétention Microsoft 365 vous permettent de conserver le contenu des boîtes aux lettres afin de répondre aux exigences de conformité réglementaire et eDiscovery.
-ms.openlocfilehash: 80481a5b7c85167742e79c86c6d60e52f80aa0e4b1dd9b128e7ce188f5ddf09a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d72233a6026ac493de1cd551c0b4908d200815f
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891810"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508201"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
   
-les stratégies de conservation In-Place, de conservation pour litige et de rétention [Microsoft 365](./retention.md) (créées dans le Centre de sécurité & conformité) vous permettent de conserver le contenu des boîtes aux lettres afin de répondre aux exigences de conformité réglementaire et de découverte électronique. Les informations sur les destinataires directement adressés dans les champs À et Cc d’un message sont incluses dans tous les messages par défaut. Toutefois, votre organisation peut avoir besoin de la possibilité de rechercher et de reproduire des détails sur tous les destinataires d’un message. Cela inclut les opérations suivantes :
+Les conservations pour litige, les [](./retention.md) conservations eDiscovery et les stratégies de rétention Microsoft 365 (créées dans le Centre de conformité Microsoft 365) vous permettent de conserver le contenu des boîtes aux lettres pour répondre aux exigences de conformité réglementaire et de découverte électronique. Les informations sur les destinataires directement adressés dans les champs À et Cc d’un message sont incluses dans tous les messages par défaut. Toutefois, votre organisation peut avoir besoin de la possibilité de rechercher et de reproduire des détails sur tous les destinataires d’un message. Cela inclut les opérations suivantes :
   
 - **Destinataires adressés à l’aide du champ Bcc d’un message :** Les destinataires Bcc sont stockés dans le message dans la boîte aux lettres de l’expéditeur, mais ne sont pas inclus dans les en-têtes du message remis aux destinataires. 
     
 - **Destinataires de groupe de distribution étendu :** Destinataires qui reçoivent le message parce qu’ils sont membres d’un groupe de distribution auquel le message a été adressé, dans les champs À, Cc ou Cci. 
     
-Exchange Online et Exchange Server 2013 (mise à jour cumulative 7 et versions ultérieures) conservent des informations sur les destinataires Bcc et les destinataires de groupe de distribution étendu. Vous pouvez rechercher ces informations à l’aide d’une recherche de découverte électronique In-Place dans le Centre d’administration Exchange (EAC) ou d’une recherche de contenu dans le Centre de sécurité & conformité. 
+Exchange Online et Exchange Server 2013 (mise à jour cumulative 7 et versions ultérieures) conservent des informations sur les destinataires Bcc et les destinataires de groupe de distribution étendu. Vous pouvez rechercher ces informations à l’aide d’un outil eDiscovery dans le Centre de conformité Microsoft 365. 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>Conservation des destinataires en copie carbone invisible et des destinataires de groupe de distribution étendu
 
@@ -58,11 +58,11 @@ Scénario 1 : John est membre du groupe de distribution Ventes aux États-Unis. 
    
 Scénario 2 : Bob envoie un courrier électronique à John (À/Cc) et Jack (Cci, directement ou indirectement via un groupe de distribution). Le tableau ci-dessous montre les résultats de la recherche de découverte électronique.
   
-| Lorsque vous recherchez... | Pour les messages envoyés... | Les résultats incluent le message... | Remarques |
+| Lorsque vous recherchez... | Pour les messages envoyés... | Les résultats incluent le message... | Notes |
 |:-----|:-----|:-----|:-----|
 |Boîte aux lettres de Bob  <br/> |À/Cc:John  <br/> |Oui  <br/> |Indique que Jack était inclus dans le champ Cci  <br/> |
 |Boîte aux lettres de Bob  <br/> |Cci:Jack  <br/> |Oui  <br/> |Indique que Jack était inclus dans le champ Cci  <br/> |
-|Boîte aux lettres de Bob  <br/> |Cci:Jack (via un groupe de distribution)  <br/> |Oui  <br/> |La liste des membres du groupe de distribution Bcc’ed, étendue lors de l’envoi du message, est visible dans l’aperçu de recherche eDiscovery, l’exportation et les journaux.  <br/> |
+|Boîte aux lettres de Bob  <br/> |Cci:Jack (via un groupe de distribution)  <br/> |Oui  <br/> |La liste des membres du groupe de distribution Bcc’ed, étendue lors de l’envoi du message, est visible dans l’aperçu, l’exportation et les journaux de recherche eDiscovery.  <br/> |
 |Boîte aux lettres de John  <br/> |À/Cc:John  <br/> |Oui  <br/> |Aucune indication des destinataires en copie carbone invisible.  <br/> |
 |Boîte aux lettres de John  <br/> |Cci:Jack (directement ou via un groupe de distribution)  <br/> |Non  <br/> |Les informations du champ Cci ne sont pas stockées dans le message remis aux destinataires. Vous devez les rechercher dans la boîte aux lettres de l'expéditeur.  <br/> |
 |Boîte aux lettres de Jack  <br/> |À/Cc:John (directement ou via un groupe de distribution)  <br/> |Oui  <br/> |Les informations des champs À/Cc sont incluses dans le message remis à tous les destinataires.  <br/> |
@@ -72,7 +72,7 @@ Scénario 2 : Bob envoie un courrier électronique à John (À/Cc) et Jack (Cc
 
  **Q. Quand les informations sur le destinataire en Cci sont-elles stockées et à quel emplacement ?**
   
-R. Les informations relatives au destinataire en Cci sont conservées par défaut dans le message d'origine, dans la boîte aux lettres de l'expéditeur. Si le destinataire Bcc est un groupe de distribution, l’appartenance au groupe de distribution est étendue uniquement si la boîte aux lettres de l’expéditeur est en attente ou affectée à une stratégie de rétention Microsoft 365 de distribution.
+R. Les informations relatives au destinataire en Cci sont conservées par défaut dans le message d'origine, dans la boîte aux lettres de l'expéditeur. Si le destinataire Bcc est un groupe de distribution, l’appartenance au groupe de distribution n’est étendue que si la boîte aux lettres de l’expéditeur est en conservation ou affectée à une stratégie Microsoft 365 rétention.
   
  **Q. Quand la liste des destinataires de groupe de distribution étendu est-elle stockée et à quel emplacement ?**
   

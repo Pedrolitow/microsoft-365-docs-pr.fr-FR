@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 5e1d402442b2e8fe01b55cf3d3e07858d9d592dd
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 03bae05ba35b8ee332fbbb1083aa4a5763fc1cf4
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399742"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507721"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
@@ -70,11 +70,11 @@ Vous pouvez déployer la stratégie via la stratégie de groupe ou Intune.
 |**Liste des appareils d’impression connectés usb approuvés**\*|Autoriser une imprimante USB spécifique|Oui|Oui|Oui|Oui|
 |
 
-\*Cette stratégie doit être utilisée avec activer les **restrictions d’impression des contrôles d’appareil.**
+\*Cette stratégie doit être utilisée avec les **restrictions d’impression des contrôles d’appareil.**
 
 ## <a name="deploy-policy-via-intune"></a>Déployer une stratégie via Intune
 
-Pour Intune, la protection de l’imprimante de contrôle d’appareil prend uniquement en charge l’OMA-URI.
+Pour Intune, la protection de l’imprimante de contrôle d’appareil prend actuellement en charge l’OMA-URI uniquement.
 
 ### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-intune"></a>Scénario 1 : empêcher les personnes d’imprimer via une imprimante non d’entreprise à l’aide d’Intune
 
@@ -100,7 +100,7 @@ Chaîne de prise en charge du programme CSP avec `<enabled/>` :
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-La chaîne de prise en charge du programme CSP avec des imprimantes USB approuvées via la propriété « ApprovedUsbPrintDevices » (par exemple : `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">`
+La chaîne de prise en charge du programme CSP avec des imprimantes USB approuvées via la propriété « ApprovedUsbPrintDevices » (par `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">` exemple :
 
 :::image type="content" source="../../media/editrow.png" alt-text="modifier la ligne":::
 
@@ -149,3 +149,36 @@ DeviceEvents
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="recherche avancée":::
+ 
+ Vous pouvez utiliser l’événement PnP pour rechercher l’imprimante USB utilisée dans l’organisation :
+ 
+```kusto
+//find the USB Printer VID/PID
+DeviceEvents
+| where ActionType == "PnpDeviceConnected"
+| extend parsed=parse_json(AdditionalFields)
+| extend DeviceDescription = tostring(parsed.DeviceDescription) 
+| extend PrinterDeviceId = tostring(parsed.DeviceId) 
+| extend VID_PID_Array = split(split(PrinterDeviceId, "\\")[1], "&")
+| extend VID_PID = replace_string(strcat(VID_PID_Array[0], '/', VID_PID_Array[1]), 'VID_', '')
+| extend VID_PID = replace_string(VID_PID, 'PID_', '')
+| extend ClassId = tostring(parsed.ClassId) 
+| extend VendorIds = tostring(parsed.VendorIds) 
+| where DeviceDescription == 'USB Printing Support'
+| project Timestamp , DeviceId, DeviceName, ActionType, DeviceDescription, VID_PID, ClassId, PrinterDeviceId, VendorIds, parsed
+| order by Timestamp desc
+```
+
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="recherche avancée":::
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 

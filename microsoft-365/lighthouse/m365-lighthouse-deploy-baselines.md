@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment déployer des Microsoft 365 Lighthouse de référence.
-ms.openlocfilehash: 85e9c9031575aae3aec43b4200caf2338422f563
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 62fc9afcbf10a0cd77c2fe2d2f7140b5197dd42a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365212"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507901"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer les Microsoft 365 Lighthouse base de référence 
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse de référence vous permet de déployer des configurations de client géré standard pour sécuriser les utilisateurs, les appareils et les données au sein des clients. Il existe six configurations de référence par défaut qui sont standard avec Microsoft 365 Lighthouse :
+Microsoft 365 Lighthouse de référence vous permet de déployer des configurations de client géré standard pour sécuriser les utilisateurs, les appareils et les données au sein des clients. Il existe six configurations de référence par défaut qui sont standard avec le Contrôle :
 
 - Exiger l’mf pour les administrateurs
 - Exiger l’mf pour les utilisateurs finaux
@@ -59,7 +59,7 @@ Sélectionnez **Lignes de base** dans le volet de navigation gauche pour ouvrir 
 
 5. Sélectionnez **Appliquer** pour appliquer l’étape de déploiement sélectionnée au client. Si l’étape de déploiement indique « Cette action nécessite une étape manuelle », veillez à effectuer l’étape manuelle afin que l’étape de déploiement soit appliquée correctement.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vue d’ensemble de l’utilisation des lignes de base pour déployer](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) des configurations client standard (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

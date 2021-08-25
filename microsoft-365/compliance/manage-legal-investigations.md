@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: Utilisez les cas eDiscovery dans le Centre de sécurité & conformité dans Office 365 pour gérer l’enquête juridique de votre organisation.
-ms.openlocfilehash: f422695b8d5aea05442cf4e17bf58c472caa3c54a0e0624572438bbc91472480
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Utilisez les cas eDiscovery dans le Centre de conformité Microsoft 365 gérer l’enquête juridique de votre organisation.
+ms.openlocfilehash: 9eb41a67ae4ddfd39e1d40219861e0bd279fc7b8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856054"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507673"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes judiciaires dans Microsoft 365
 
@@ -42,7 +42,7 @@ Les cas eDiscovery vous permet de contrôler qui peut créer, consulter et gére
 
 - [Recherchez du contenu](search-for-content.md) dans votre organisation.
 
-### <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour les scénarios avancés
+### <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour des scénarios avancés
 
 Comme dans la section précédente qui a répertorié des scripts pour les scénarios de recherche de contenu, nous avons également créé des scripts powerShell du Centre de sécurité & conformité pour vous aider à gérer les cas eDiscovery.
   
@@ -52,7 +52,7 @@ Comme dans la section précédente qui a répertorié des scripts pour les scén
   
 ## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Gérer les enquêtes juridiques avec la solution Advanced eDiscovery dans Microsoft 365
 
-La Advanced eDiscovery solution Microsoft 365 s’appuie sur les fonctionnalités eDiscovery et d’analyse existantes dans Office 365. Cette nouvelle solution, appelée *Advanced eDiscovery,* fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux enquêtes internes et externes de votre organisation. Il permet également aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale pour communiquer avec les dépositaires impliqués dans un cas.
+La Advanced eDiscovery solution Microsoft 365 s’appuie sur les fonctionnalités eDiscovery et d’analyse existantes dans Office 365. Cette nouvelle solution, appelée *Advanced eDiscovery,* fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux enquêtes internes et externes de votre organisation. Il permet également aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale pour communiquer avec les conservateurs impliqués dans un cas.
 
 Advanced eDiscovery nécessite un abonnement E5 pour Microsoft 365 ou Office 365 organisation. Pour plus d’informations sur la gestion des licences, [voir Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
@@ -72,6 +72,6 @@ Voici une vue d’ensemble rapide du flux de travail intégré dans Advanced eDi
 
 - [Analyser les données de cas à](analyzing-data-in-review-set.md) l’aide d’outils d’analyse avancés.
 
-- [Exporter des données de cas pour](exporting-data-ediscover20.md) révision par un conseiller externe.
+- [Exporter les données de cas pour](exporting-data-ediscover20.md) révision par un conseiller externe.
 
 - [Gérer les travaux de longue durée](managing-jobs-ediscovery20.md) dans Advanced eDiscovery.

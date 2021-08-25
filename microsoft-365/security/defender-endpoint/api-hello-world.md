@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5081822d31d3e127dbe6511719afdaddd6f6b4fdf078bf5c6e09aee4caff725e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec2057eefc5cb1e8ce59138a1f5a15b7ed0fdd01
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884934"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508213"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API Microsoft Defender pour point de terminaison - Hello World
 
@@ -43,18 +43,21 @@ ms.locfileid: "53884934"
 ## <a name="get-alerts-using-a-simple-powershell-script"></a>Obtenir des alertes à l’aide d’un script PowerShell simple
 
 ### <a name="how-long-it-takes-to-go-through-this-example"></a>Combien de temps faut-il pour passer par cet exemple ?
+
 Cela ne prend que 5 minutes en deux étapes :
+
 - Inscription de l’application
 - Exemples : nécessite uniquement une copie/coller d’un court script PowerShell
 
 ### <a name="do-i-need-a-permission-to-connect"></a>Ai-je besoin d’une autorisation pour me connecter ?
+
 Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d’administrateur général dans Azure Active Directory client (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>Étape 1 : créer une application dans Azure Active Directory
 
 1. Connectez-vous [à Azure](https://portal.azure.com) avec votre **utilisateur administrateur** général.
 
-2. Accédez à **Azure Active Directory**  >  **Inscription de l’application Nouvelle**  >  **inscription.**
+2. Accédez à **Azure Active Directory** \> **inscription de l’application Nouvelle** \> **inscription.**
 
    ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application](images/atp-azure-new-app2.png)
 
@@ -62,22 +65,22 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
 4. Autorisez votre application à accéder à Defender pour endpoint et attribuez-lui **l’autorisation** « Lire toutes les alertes » :
 
-   - Dans la page de votre application, cliquez sur **Autorisations d’API** Ajouter des API d’autorisation que mon  >    >   organisation > **tapez WindowsDefenderATP** et cliquez sur **WindowsDefenderATP**.
+   - Dans la page de votre application, cliquez sur **Autorisations d’API** Ajouter des API d’autorisation que mon \>  \>  organisation > **tapez WindowsDefenderATP** et cliquez sur **WindowsDefenderATP**.
 
    - **Remarque**: WindowsDefenderATP n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
 
    ![Image de l’accès à l’API et de la sélection de l’API1](images/add-permission.png)
 
-   - Choose **Application permissions**  >  **Alert.Read.All** > Click on **Add permissions**
+   - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image de l’accès à l’API et sélection de l’API2](images/application-permissions.png)
+   ![Image de l’accès à l’API et de la sélection de l’API2](images/application-permissions.png)
 
    **Remarque importante**: vous devez sélectionner les autorisations pertinentes. « Lire toutes les alertes » n’est qu’un exemple !
 
      Par exemple,
 
      - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
-     - Pour [isoler un ordinateur, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
+     - Pour [isoler un ordinateur,](isolate-machine.md)sélectionnez l’autorisation « Isoler l’ordinateur »
      - Pour déterminer l’autorisation qui vous est nécessaire, consultez la section **Autorisations** de l’API que vous souhaitez appeler.
 
 5. Cliquez sur **Accorder le consentement**
@@ -142,7 +145,7 @@ Terminé ! Vous avez réussi à inscrire une application !
 
 - Le script ci-dessous utilise **Get-Token.ps1** pour accéder à l’API et reçoit les dernières alertes de 48 heures.
 - Enregistrez ce script dans le dossier que vous avez enregistré le script **précédentGet-Token.ps1**.
-- Le script crée deux fichiers (json et csv) avec les données dans le même dossier que les scripts.
+- Le script crée deux fichiers (json et csv) avec les données du même dossier que les scripts.
 
   ```powershell
   # Returns Alerts created in the past 48 hours.
@@ -182,7 +185,7 @@ Terminé ! Vous avez réussi à inscrire une application !
 
 Vous avez terminé ! Vous avez réussi :
 
-- Créé, inscrit et application
+- Créé et inscrit et application
 - Autorisation accordée à cette application pour lire les alertes
 - Connecté à l’API
 - Utilisation d’un script PowerShell pour renvoyer les alertes créées au cours des dernières 48 heures

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment importer des données non Microsoft 365 dans un groupe de révision pour analyse dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 169b7438ced3d34f31cd793cd615ae189af52322ba67497dcc3eee950e9724ec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fe4863321997ba6b81be2257b6ef44c83bc34cb2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807878"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508261"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un groupe de révision
 
@@ -89,7 +89,7 @@ L’utilisation de la fonctionnalité de chargement non Microsoft 365 décrite d
    > [!NOTE]
    > Comme indiqué précédemment, vous devez utiliser AzCopy v8.1 pour utiliser correctement la commande fournie dans la page Télécharger **fichiers.** Si la commande AzCopy fournie échoue, consultez Résoudre les problèmes [d’AzCopy dans Advanced eDiscovery](troubleshooting-azcopy.md).
 
-8. Revenir au Centre de sécurité & conformité, puis cliquez sur **Suivant : Traiter les fichiers** dans l’Assistant.  Cette opération initie le traitement, l’extraction de texte et l’indexation des fichiers non-Microsoft 365 qui ont été téléchargés vers l’emplacement de stockage Azure.  
+8. Revenir à la Centre de conformité Microsoft 365, puis cliquez sur **Suivant : Traiter les fichiers dans** l’Assistant.  Cette opération initie le traitement, l’extraction de texte et l’indexation des fichiers non-Microsoft 365 qui ont été téléchargés vers l’emplacement de stockage Azure.  
 
 9. Suivez la progression du traitement des fichiers sur  la **page** Des fichiers de processus ou sous l’onglet Travaux en visualisation d’un travail nommé Ajout de données non Microsoft 365 à un jeu **à réviser.**  Une fois le travail terminé, les nouveaux fichiers sont disponibles dans le jeu à réviser.
 

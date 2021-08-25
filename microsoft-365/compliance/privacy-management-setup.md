@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment configurer la gestion de la confidentialité pour votre organisation, définir des rôles et des autorisations et configurer des paramètres importants.
-ms.openlocfilehash: 2603a41fd4afb83c353854e5bed4c236138dd21d
-ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
+ms.openlocfilehash: 8f45e779cc6ce8deaf20a5f49b597f4ad6139a08
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380211"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507697"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Prise en charge de la gestion de la confidentialité (aperçu)
 
@@ -29,7 +29,7 @@ Dans cet article : découvrez  comment configurer l’accès à  la gestion de l
 
 ## <a name="who-can-access-privacy-management"></a>Qui pouvez accéder à la gestion de la confidentialité
 
-La prévisualisation publique de la gestion de la confidentialité est disponible dans le Centre de conformité Microsoft 365 et est disponible pour les organisations titulaires de licences E1, E3 et E5 entreprise dans Office 365 et Microsoft 365. Lorsque la gestion de la confidentialité passe à la disponibilité générale, les organisations qui ont utilisé la prévisualisation publique doivent obtenir une nouvelle licence.
+La prévisualisation publique de la gestion de la confidentialité est disponible dans le Centre de conformité Microsoft 365 et est disponible pour les organisations ayant des licences E1, E3 et E5 entreprise dans Office 365 et Microsoft 365. Lorsque la gestion de la confidentialité passe à la disponibilité générale, les organisations qui ont utilisé la prévisualisation publique doivent obtenir une nouvelle licence.
 
 Pour obtenir des instructions détaillées sur les licences, consultez [instructions relatives aux licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
@@ -38,15 +38,13 @@ Pour obtenir des instructions détaillées sur les licences, consultez [instruct
 
 ## <a name="set-up-privacy-management"></a>Configurer la gestion de la confidentialité
 
-Pour commencer à gérer la confidentialité, obtenez d’abord votre licence d’essai. Vous pouvez ensuite vous inscrire à la gestion de la confidentialité, attribuer des autorisations à vos utilisateurs et examiner les paramètres.
+Pour commencer à gérer la confidentialité, obtenez d’abord votre licence d’essai gratuit. Vous pouvez ensuite vous inscrire, attribuer des autorisations à vos utilisateurs, examiner les paramètres et commencer à utiliser les fonctionnalités de gestion de la confidentialité.
 
-### <a name="get-trial-license"></a>Obtenir une licence d’essai
+### <a name="get-free-trial-license"></a>Obtenir une licence d’essai gratuite
 
 Pour commencer la prévisualisation publique, votre administrateur général peut obtenir la licence d’essai de gestion de la confidentialité gratuite à partir du [Centre d’administration.](https://aka.ms/purchasem365privacy) Sélectionnez « Démarrer la version d’essai » pour commencer. Votre licence dure un mois et vous pouvez la renouveler sans frais selon vos besoins lors de la prévisualisation publique.
 
 Après avoir obtenu votre abonnement, autorisez son activation pendant 30 minutes. Revenir ensuite à la gestion de la confidentialité dans le centre de conformité pour commencer.
-
-### <a name="accept-privacy-management-terms"></a>Accepter les conditions de gestion de la confidentialité
 
 Lorsque vous ouvrez la gestion de la confidentialité pour la première fois, vous êtes invité à confirmer que vous acceptez les termes et le processus d’évaluation des données personnelles (en[savoir plus).](privacy-management.md#where-privacy-management-identifies-personal-data) Vous pouvez consulter les liens fournis dans son intégralité avant de poursuivre. Une fois que vous êtes d’accord, la gestion de la confidentialité peut prendre jusqu’à 24 heures pour fournir des informations sur les données de votre organisation.
 
@@ -62,11 +60,11 @@ Pour en savoir plus sur les groupes de rôles et sur la façon d’accorder l’
 
 ### <a name="manage-settings"></a>Gérer les paramètres
 
-La Paramètres page est accessible via la roulette d’engrenage dans le coin supérieur droit des pages principales de la gestion de la confidentialité. Il permet aux administrateurs de gestion de la confidentialité de configurer les propriétés essentielles dans la gestion de la confidentialité.
+La Paramètres page est accessible via la roulette d’engrenage dans le coin supérieur droit des pages principales de la gestion de la confidentialité. Il permet aux administrateurs de gestion de la confidentialité de configurer les propriétés essentielles dans la gestion de la confidentialité, telles que les paramètres globaux pour l’anonymisation, les notifications par courrier électronique, etc.
 
 Vous pouvez passer en revue la configuration par défaut et effectuer les ajustements souhaités avant de commencer. Pour en savoir plus sur vos options, voir [Gérer les paramètres de gestion de la confidentialité.](privacy-management-settings.md)
 
-## <a name="get-initial-data-insights"></a>Obtenir des informations sur les données initiales
+## <a name="start-visualizing-your-data"></a>Commencer à visualiser vos données
 
 Une fois que vous êtes passé à la gestion de la confidentialité, vous arrivez à la page **Vue d’ensemble.** Cette page fournit des informations sur les données personnelles stockées dans votre environnement Microsoft 365 afin de vous aider à identifier rapidement les problèmes, à identifier les indicateurs de risque et à prendre des mesures pour résoudre les problèmes. Votre vue d’ensemble doit être remplie avec les informations initiales dans les 24 premières heures de l’inscription. À mesure que vous continuez d’utiliser la gestion de la confidentialité, la page de vue d’ensemble s’actualise pour continuer à fournir des informations actuelles.
 
@@ -74,6 +72,10 @@ Pour obtenir des informations supplémentaires sur vos données au fil du temps,
 
 Pour en savoir plus sur ces pages, voir [Rechercher et visualiser vos données.](privacy-management-data-profile.md)
 
-## <a name="get-started-with-default-policies"></a>Mise en place des stratégies par défaut
+## <a name="start-managing-risks-with-default-policies"></a>Commencer à gérer les risques avec les stratégies par défaut
 
-La gestion de la confidentialité vous aidera à lancer votre processus d’évaluation des données en créant trois stratégies avec des paramètres par défaut, à l’aide des modèles de réduction des données, de surexposation des données et de transferts de données. Ces stratégies sont en cours d’application par défaut, mais ne déclenchent pas automatiquement les messages de notification ou les invites de correction. Après votre configuration initiale, vous pouvez continuer à créer et personnaliser vos propres stratégies. Pour plus d’informations, voir [Créer et gérer des stratégies.](privacy-management-policies.md)
+La gestion de la confidentialité lance l’évaluation de vos données et vous donne un coup d’œil aux scénarios de risque clés en créant trois stratégies avec des paramètres par défaut, à l’aide des modèles de réduction des données, de surexposion de données et de transferts de données. Ces stratégies sont en cours d’application par défaut, mais ne déclenchent pas automatiquement les messages de notification ou les invites de correction. Après votre configuration initiale, vous pouvez continuer à créer et personnaliser vos propres stratégies. Pour plus d’informations, voir [Créer et gérer des stratégies.](privacy-management-policies.md)
+
+## <a name="get-started-with-subject-rights-requests"></a>Mise en place des demandes de droits d’objet
+
+La solution de demandes de droits d’objet de la gestion de la confidentialité peut vous aider à gérer les demandes des personnes qui souhaitent examiner ou gérer les données personnelles que vous stockez à leur sujet. Pour en savoir plus sur l’utilisation de ces fonctionnalités, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)

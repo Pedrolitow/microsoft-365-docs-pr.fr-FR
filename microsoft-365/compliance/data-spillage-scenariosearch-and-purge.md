@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez eDiscovery et les outils de recherche pour gérer un incident de débordement de données dans votre organisation et y répondre.
-ms.openlocfilehash: 40addc161b40a4b9068fbe0c3041078086d21c6a
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 96cb6362149fe056249e7ffe2d6858785335a00c
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503130"
+ms.locfileid: "58508189"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Série de solutions eDiscovery : scénario de débordement de données : recherche et purge
 
@@ -68,7 +68,7 @@ Vous pouvez également créer un groupe de rôles qui corresponde aux besoins de
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Étape 2 : Créer un cas eDiscovery
 
-Un cas eDiscovery permet de gérer efficacement votre enquête sur la surdessage de données. Vous pouvez ajouter des membres au groupe de rôles que vous avez créé à l’étape 1, ajouter le groupe de rôles en tant que membre d’un nouveau cas eDiscovery, effectuer des recherches itératives pour rechercher les données déversées, exporter un rapport à partager, suivre l’état du cas, puis revenir aux détails du cas si nécessaire. Envisagez d’établir une convention d’attribution de noms pour les cas eDiscovery utilisés pour les incidents de débordement de données, et fournissez autant d’informations que possible dans le nom et la description du cas afin de pouvoir localiser et faire référence à l’avenir si nécessaire.
+Un cas eDiscovery permet de gérer efficacement votre enquête sur les débordements de données. Vous pouvez ajouter des membres au groupe de rôles que vous avez créé à l’étape 1, ajouter le groupe de rôles en tant que membre d’un nouveau cas eDiscovery, effectuer des recherches itératives pour rechercher les données déversées, exporter un rapport à partager, suivre l’état du cas, puis revenir aux détails du cas si nécessaire. Envisagez d’établir une convention d’attribution de noms pour les cas eDiscovery utilisés pour les incidents de débordement de données, et fournissez autant d’informations que possible dans le nom et la description du cas afin de pouvoir localiser et faire référence à l’avenir si nécessaire.
   
 Pour créer un cas, vous pouvez utiliser eDiscovery dans le centre de sécurité et conformité. Voir « Créer un cas » dans [La mise en place de Core eDiscovery.](get-started-core-ediscovery.md#step-3-create-a-core-ediscovery-case)
   
@@ -87,7 +87,7 @@ Après avoir créé une recherche de contenu, vous devez vérifier et vérifier 
   
 Si vous avez plus de 1 000 boîtes aux lettres ou plus de 100 messages électroniques par boîte aux lettres à réviser, vous pouvez diviser la recherche initiale en plusieurs recherches à l’aide de mots clés ou de conditions supplémentaires, telles que la plage de dates ou l’expéditeur/destinataire, et examiner les résultats de chaque recherche individuellement. Veillez à noter toutes les requêtes de recherche à utiliser lorsque vous supprimez des messages à [l’étape 7.](#step-7-permanently-delete-the-spilled-data)
 
-Si un dépositaire ou un utilisateur final se voit attribuer une licence Office 365 E5, vous pouvez examiner jusqu’à 10 000 résultats de recherche à la fois à l’aide Advanced eDiscovery. S’il y a plus de 10 000 messages électroniques à réviser, vous pouvez diviser la requête de recherche par plage de dates et examiner chaque résultat individuellement à mesure que les résultats de la recherche sont triés par date. Dans Advanced eDiscovery, vous pouvez baliser  les résultats de recherche à l’aide de l’étiquette en tant que fonctionnalité dans le panneau d’aperçu et filtrer le résultat de la recherche en fonction de la balise que vous avez étiquetée. Cela est utile lorsque vous collaborez avec un réviseur secondaire. À l’aide d’outils d’analyse supplémentaires dans Advanced eDiscovery, tels que la reconnaissance optique de caractères, le thread de messagerie électronique et le codage prédictif, vous pouvez rapidement traiter et examiner des milliers de messages et les marquer pour une révision plus approfondi. Voir [configuration rapide pour Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
+Si un dépositaire ou un utilisateur final se voit attribuer une licence Office 365 E5, vous pouvez examiner jusqu’à 10 000 résultats de recherche à la fois à l’aide de Advanced eDiscovery. S’il y a plus de 10 000 messages électroniques à réviser, vous pouvez diviser la requête de recherche par plage de dates et examiner chaque résultat individuellement à mesure que les résultats de la recherche sont triés par date. Dans Advanced eDiscovery, vous pouvez baliser  les résultats de recherche à l’aide de l’étiquette en tant que fonctionnalité dans le panneau d’aperçu et filtrer le résultat de la recherche en fonction de la balise que vous avez étiquetée. Cela est utile lorsque vous collaborez avec un réviseur secondaire. À l’aide d’outils d’analyse supplémentaires dans Advanced eDiscovery, tels que la reconnaissance optique de caractères, le thread de messagerie électronique et le codage prédictif, vous pouvez rapidement traiter et examiner des milliers de messages et les marquer pour une révision plus approfondi. Voir [configuration rapide pour Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
 
 Lorsque vous trouvez un message électronique contenant des données surdessées, vérifiez les destinataires du message pour déterminer s’il a été partagé en externe. Pour poursuivre le suivi d’un message, vous pouvez collecter des informations sur l’expéditeur et des plages de dates afin de pouvoir utiliser les journaux de suivi des messages. Ce processus est décrit à [l’étape 5.](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)
 
@@ -172,7 +172,7 @@ Veillez à revenir aux configurations précédentes de la boîte aux lettres apr
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Étape 7 : Supprimer définitivement les données déversées
 
-À l’aide des emplacements de boîtes aux lettres que vous avez collectés et préparés à l’étape 6 et de la requête de recherche qui a été créée et affinée à l’étape 3 pour rechercher les messages électroniques qui contiennent les données déversées, vous pouvez désormais supprimer définitivement les données qui se sont déversées.  Comme indiqué précédemment, pour supprimer des messages, vous devez être membre du groupe de rôles Gestion de l’organisation ou avoir le rôle de gestion Recherche et purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez la rubrique [Attribuer des autorisations eDiscovery dans le Centre de sécurité et conformité](./assign-ediscovery-permissions.md).
+À l’aide des emplacements de boîtes aux lettres que vous avez collectés et préparés à l’étape 6 et de la requête de recherche qui a été créée et affinée à l’étape 3 pour rechercher les messages électroniques qui contiennent les données déversées, vous pouvez désormais supprimer définitivement les données qui se sont déversées.  Comme indiqué précédemment, pour supprimer des messages, vous devez être membre du groupe de rôles Gestion de l’organisation ou avoir le rôle de gestion Recherche et purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de [rôles, voir Attribuer des autorisations eDiscovery](./assign-ediscovery-permissions.md).
 
 Pour supprimer les messages déversés, voir [Rechercher et supprimer des messages électroniques.](search-for-and-delete-messages-in-your-organization.md)
 

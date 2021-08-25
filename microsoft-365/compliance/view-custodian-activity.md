@@ -17,23 +17,23 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil Advanced eDiscovery gestion des dépositaires pour accéder facilement à l’activité des dépositaires dans votre cas et y effectuer des recherches.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2b13bfb05e212727faee52e29ac7ee52a02e4a96b1c43329933b1a91754b0d95
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43ec73c87efaad51711879e0574d03f571675523
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801509"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507829"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l’activité d’audit des consignataires
 
-Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Advanced eDiscovery est désormais intégré à l’outil de recherche de journal d’audit existant dans le Centre de sécurité & conformité. À l’aide de cette expérience incorporée, vous pouvez utiliser l’outil de gestion des dépositaires Advanced eDiscovery pour faciliter votre examen en accédant facilement à l’activité des dépositaires dans votre cas et en recherchant celui-ci.
+Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Advanced eDiscovery est désormais intégré à l’outil de recherche de journal d’audit existant dans le Centre de conformité Microsoft 365. À l’aide de cette expérience incorporée, vous pouvez utiliser l’outil de gestion des dépositaires Advanced eDiscovery pour faciliter votre examen en accédant facilement à l’activité des dépositaires dans votre cas et en recherchant celui-ci.
 
 ## <a name="get-permissions"></a>Obtenir des autorisations
 
 Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page Autorisations dans le Centre d’administration Exchange. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit Advanced eDiscovery avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir Gérer les groupes de rôles dans Exchange Online.
 
 > [!IMPORTANT]
-> Si vous attribuez à un utilisateur le rôle Journaux d’audit View-Only ou Journaux d’audit dans la page Autorisations du Centre de sécurité & conformité, il ne pourra pas effectuer de recherche dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
+> Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page Autorisations dans le Centre de conformité Microsoft 365, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Étape 1 : rechercher dans le journal d’audit les activités effectuées par un dépositaire
 
@@ -43,7 +43,7 @@ Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’a
   
 3. Dans la page **Des dépositaires,** sélectionnez un dépositaire dans la liste, puis cliquez sur **Afficher** l’activité des dépositaires dans la page de flyout.
 
-    La page de recherche activités du dépositaire s’affiche. Notez que le dépositaire que vous avez  sélectionné à l’étape précédente s’affiche dans la zone de la zone de présentation du dépositaire. Vous pouvez sélectionner différents dépositaires dans la zone de drop-down, mais vous pouvez uniquement rechercher des activités pour un dépositaire à la fois.
+    La page de recherche activités du dépositaire s’affiche. Notez que le dépositaire que vous avez  sélectionné à l’étape précédente s’affiche dans la zone de présentation du dépositaire. Vous pouvez sélectionner différents dépositaires dans la zone de drop-down, mais vous pouvez uniquement rechercher des activités pour un dépositaire à la fois.
 
     ![Page de recherche activités du consignataire](../media/AeDCustodianActivities1.png)
    
@@ -78,7 +78,7 @@ Les résultats contiennent les informations suivantes sur chaque événement ren
 
 ## <a name="step-3-filter-the-search-results"></a>Étape 3 : filtrer les résultats de la recherche
 
-Vous pouvez également filtrer les résultats d’une recherche dans le journal d’audit. Cela peut vous aider à filtrer rapidement les résultats d’un utilisateur ou d’une activité spécifique. 
+Vous pouvez également filtrer les résultats d’une recherche dans le journal d’audit. Cela peut vous aider à filtrer rapidement les résultats pour un utilisateur ou une activité spécifique. 
 
 Pour filtrer les résultats :
 
@@ -110,4 +110,4 @@ Vous pouvez exporter les résultats d’une recherche dans le journal d’audit 
 
 3. Après avoir sélectionné une option d’exportation, un message s’affiche en bas de la fenêtre qui vous invite à ouvrir le fichier CSV, à l’enregistrer dans le dossier Téléchargements ou à l’enregistrer dans un dossier spécifique
 
-Pour plus d’informations sur l’affichage, le filtrage ou l’exportation des résultats de recherche dans le journal d’audit, voir Rechercher dans le journal d’audit dans le Centre de sécurité [& conformité.](search-the-audit-log-in-security-and-compliance.md)
+Pour plus d’informations sur l’affichage, le filtrage ou l’exportation des résultats de recherche dans le journal d’audit, voir [Rechercher dans le journal d’audit.](search-the-audit-log-in-security-and-compliance.md)

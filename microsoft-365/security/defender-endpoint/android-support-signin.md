@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2ed53a3e8feb9531e4cb75bc9531718d33528870
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 38f7ff40416835e9908757456520f0a90a745dfd
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246403"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508273"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Résolution des problèmes sur Microsoft Defender pour point de terminaison sur Android
 
@@ -38,10 +38,11 @@ Lors de l’intégration d’un appareil, vous pouvez voir des problèmes de sig
 
 Lors de l’intégration, vous pouvez rencontrer des problèmes de connectez-vous après l’installation de l’application sur votre appareil.
 
-Cet article fournit des solutions pour vous aider à résoudre les problèmes d' sign-on.  
+Cet article fournit des solutions pour vous aider à résoudre les problèmes d' sign-on.
 
 ## <a name="sign-in-failed---unexpected-error"></a>Échec de la signature : erreur inattendue
-**Échec de la signature : erreur** *inattendue, essayez ultérieurement*
+
+**Échec de la signature : erreur** *inattendue, essayez plus tard*
 
 ![Image de l’erreur d’échec de la signature - Erreur inattendue](images/f9c3bad127d636c1f150d79814f35d4c.png)
 
@@ -81,18 +82,17 @@ Les sites web de hameçonnage usurpent l’identité de sites web dignes de conf
 
 **S’applique à :** OEM spécifiques uniquement
 
--   **Érmi**
+- **Érmi**
 
-L’hameçonnage et les menaces web dangereuses détectées par Defender pour Endpoint pour Android ne sont pas bloqués sur certains appareils Android. Les fonctionnalités suivantes ne fonctionnent pas sur ces appareils.
+L’hameçonnage et les menaces web dangereuses détectées par Defender pour Endpoint pour Android ne sont pas bloqués sur certains appareils. Les fonctionnalités suivantes ne fonctionnent pas sur ces appareils.
 
 ![Image du site signalé comme dangereux](images/0c04975c74746a5cdb085e1d9386e713.png)
-
 
 **Cause :**
 
 Les appareils Demi incluent un nouveau modèle d’autorisation. Cela empêche Defender pour point de terminaison pour Android d’afficher des fenêtres pop-up alors qu’elle s’exécute en arrière-plan.
 
-Autorisation d’appareils : « Afficher les fenêtres pop-up en cours d’exécution en arrière-plan ».
+Autorisation des appareils Demi : « Afficher les fenêtres pop-up en cours d’exécution en arrière-plan ».
 
 ![Image du paramètre de fenêtre pop-up](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
 
@@ -102,39 +102,41 @@ Activez l’autorisation requise sur les appareils DeMi.
 
 - Afficher les fenêtres pop-up en cours d’exécution en arrière-plan.
 
-
 ## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>Impossible d’autoriser l’autorisation « Protection permanente » lors de l’intégration sur certains appareils OEM
 
 **S’applique à :** Appareils OEM spécifiques uniquement.
 
--   **Android 11** 
+- **Android 11**
 
 Defender App demande l’autorisation Optimisation de la batterie/Protection permanente  sur les appareils dans le cadre de l’intégration de l’application, et la sélection de l’autorisation renvoie une erreur qui veut que l’autorisation n’a pas pu être définie. Elle affecte uniquement la dernière autorisation appelée « Protection permanente ». 
- 
-**Cause :** Xiomi a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de batterie.
 
-**Solution :** Nous travaillons avec OEM pour trouver une solution permettant d’activer cette autorisation à partir de l’écran d’intégration de l’application. Nous mettreons à jour la documentation une fois ce problème résolu.
+**Cause :**
+
+Xiomi a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de la batterie.
+
+**Solution :**
+
+Nous travaillons avec OEM pour trouver une solution permettant d’activer cette autorisation à partir de l’écran d’intégration de l’application. Nous mettreons à jour la documentation une fois ce problème résolu.
 Les utilisateurs peuvent suivre ces étapes pour activer les mêmes autorisations à partir des paramètres de l’appareil : 
 
 1. Go to **Paramètres** on your device.
-   
+
 2. Recherchez et sélectionnez **Optimisation de la batterie.**
-   
+
    ![Recherchez et sélectionnez « Optimisation de la batterie ».](images/search-battery-optimisation.png)
 
-3. Dans **l’accès spécial à l’application,** **sélectionnez Optimisation de la batterie.**
-   
+3. Dans **l’accès spécial aux applications,** sélectionnez **Optimisation de la batterie.**
+
    ![Dans Accès spécial aux applications, sélectionnez « Optimisation de la batterie ».](images/special-app-access.png)
 
 4. Modifiez la dropdown pour afficher **toutes les applications.**
 
-   ![Change dropdown to show « All Apps ».](images/show-all-apps-2.png)
+   ![Étape 1 pour modifier la dropdown pour afficher « Toutes les applications ».](images/show-all-apps-2.png)
 
-   ![Change dropdown to show « All Apps ».](images/show-all-apps-1.png)
+   ![Étape 2 pour modifier la dropdown pour afficher « Toutes les applications ».](images/show-all-apps-1.png)
 
 5. Recherchez « Point de terminaison Microsoft Defender » et **sélectionnez Ne pas optimiser.**
 
    ![Recherchez « Microsoft Defender Endpoint » et sélectionnez « Ne pas optimiser ».](images/select-dont-optimise.png)
-
 
 Revenir à l’écran d’intégration du point de terminaison Microsoft Defender, sélectionnez Autoriser **et** vous serez redirigé vers l’écran du tableau de bord.

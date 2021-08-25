@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Découvrez comment les établissements financiers peuvent gérer la conformité de la sécurité financière et collaborer efficacement à l’aide de Microsoft 365 et Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 45302f3b27e6aca7701fbddcd4e1db8fbd067e41cbaf6b62778408caba4bc49d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88aa46e08a450953e940d625e7f35cf9732d668d
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853143"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400270"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 
@@ -62,7 +62,7 @@ En règle générale, la collaboration nécessite plusieurs formes de communicat
 
 Fournir aux employés une plateforme de collaboration moderne, basée sur le cloud, leur permet de choisir et d'intégrer des outils qui les rendent plus productifs et leur donnent les moyens de trouver des méthodes de travail flexibles. L'utilisation de Teams conjointement avec des contrôles de sécurité et des stratégies de gouvernance de l'information qui protègent l'organisation peut aider votre personnel à communiquer et à collaborer efficacement.
 
-Teams offre une plateforme de collaboration pour l’organisation. Il contribue à rassembler les gens pour qu'ils travaillent de manière productive sur des initiatives et des projets courants. Teams permet aux membres d'une équipe de mener des conversations 1:1 et multipartites, de collaborer et de co-créer des documents, et de stocker et partager des fichiers. Teams facilite également les réunions en ligne grâce à l'intégration de la voix et de la vidéo d'entreprise. Teams peut également être personnalisé avec des applications Microsoft telles que Microsoft Planner, Microsoft Dynamics 365, PowerApps, Power BI et des applications sectorielles tierces. Teams est conçu pour être utilisé par les membres internes de l'équipe et les utilisateurs externes autorisés pouvant rejoindre les canaux de l'équipe, participer à des conversations en ligne, accéder à des fichiers stockés et tirer parti d'autres applications
+Teams offre une plateforme de collaboration pour l’organisation. Il contribue à rassembler les gens pour qu'ils travaillent de manière productive sur des initiatives et des projets courants. Teams permet aux membres d'une équipe de mener des conversations 1:1 et multipartites, de collaborer et de co-créer des documents, et de stocker et partager des fichiers. Teams facilite également les réunions en ligne grâce à l'intégration de la voix et de la vidéo d'entreprise. Teams peut également être personnalisé avec des applications Microsoft telles que Microsoft Planner, Microsoft Dynamics 365, Power Apps, Power BI, et des applications métier tierces. Teams est conçu pour être utilisé par les membres internes de l'équipe et les utilisateurs externes autorisés pouvant rejoindre les canaux de l'équipe, participer à des conversations en ligne, accéder à des fichiers stockés et tirer parti d'autres applications
 
 Chaque équipe Microsoft s’appuie sur un groupe Microsoft 365. Ce groupe est considéré comme le service d'adhésion pour de nombreux services Office 365, y compris Teams. Les groupes Microsoft 365 sont utilisés pour faire la distinction entre « propriétaires » et « membres » de façon sécurisée et pour contrôler l’accès aux différentes fonctionnalités au sein de Teams. Lorsqu’il est associé à des contrôles de gouvernance appropriés et à des révisions d’accès régulièrement administrées, Teams permet uniquement aux membres et aux propriétaires d'utiliser les canaux et les fonctionnalités autorisés.
 
@@ -88,7 +88,7 @@ Microsoft 365 fournit d’autres fonctionnalités de stratégie courantes pour 
 * Prolifération des équipes qui ne sont pas nécessaires ou qui ne sont pas utilisées.
 * Dépassement de la rétention des données qui ne sont plus nécessaires ou utilisées par l’organisation (sauf en cas de conservation ou de conservation légale).
 
-Les administrateurs peuvent spécifier une période d’expiration pour les groupes Microsoft 365. Par exemple : 90, 180 ou 365 jours. Si un service qui s’appuie sur un groupe Microsoft 365 est inactif pendant la période d’expiration, les propriétaires du groupe sont avertis. Si aucune action n’est entreprise, le groupe Microsoft 365 et tous les services associés, y compris Teams, sont supprimés.
+Les administrateurs peuvent spécifier une période d'expiration pour les groupes Microsoft 365, par exemple 90, 180 ou 365 jours. Si un service soutenu par un groupe Microsoft 365 est inactif pendant la période d'expiration, les propriétaires du groupe en sont informés. Si aucune mesure n'est prise, le groupe Microsoft 365 et tous ses services associés, y compris Teams, sont supprimés.
   
 La conservation des données stockées dans Teams et les autres services basés sur les groupes peut poser des risques aux organisations de services financiers. Les stratégies d’expiration de groupe Microsoft 365 constituent une méthode recommandée pour empêcher la conservation des données qui ne sont plus nécessaires. Combiné aux étiquettes et stratégies de rétention intégrées, Microsoft 365 permet de garantir aux organisations qu’elles conservent uniquement les données nécessaires pour respecter les stratégies d’entreprise et respecter les obligations réglementaires.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique pour augmenter la taille du dossier Éléments récupérables d’une boîte aux lettres dans Microsoft 365.
-ms.openlocfilehash: ed6b427bf9bd30a4f57bd8c893c879857022ee44c0c951ed9a77c5f9f4da53cc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 69e230bae16956e2fc55a2d838cba1ecb85345fe
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819802"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508009"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 
@@ -33,7 +33,7 @@ Pour réduire les risques de dépassement de cette limite, le quota de stockage 
 
 |**Emplacement du dossier Éléments récupérables**|**Boîtes aux lettres non placées en conservation**|**Boîtes aux lettres placées en conservation**|
 |:-----|:-----|:-----|
-|Boîte aux lettres principale  <br/> |30 Go  <br/> |100 Go  <br/> |
+|Boîte aux lettres principale  <br/> |30 Go  <br/> |100 Go  <br/> |
 |Boîte aux lettres d’archivage<sup>\*</sup> <br/> |Illimité  <br/> |Illimité  <br/> |
 |**Quota de stockage total pour le dossier Éléments récupérables** <br/> |Illimité  <br/> |Illimité  <br/> |
 
@@ -42,10 +42,10 @@ Pour réduire les risques de dépassement de cette limite, le quota de stockage 
 
 Lorsque le quota de stockage pour le dossier Éléments récupérables dans la boîte aux lettres principale d’une boîte aux lettres placée en conservation est proche de sa limite, vous pouvez effectuer les opérations suivantes :
 
-- **Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique.** Vous pouvez activer une capacité de stockage illimitée pour le dossier Éléments récupérables simplement en activant la boîte aux lettres d’archivage, puis en activant la fonctionnalité d’archivage à extension automatique dans Exchange Online. Cela entraîne 110 Go pour le dossier Éléments récupérables dans la boîte aux lettres principale et une capacité de stockage illimitée pour le dossier Éléments récupérables dans l’archive de l’utilisateur. Découvrez comment : activer [les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) dans le Centre de sécurité & conformité et activer l’archivage illimité dans [Office 365](enable-unlimited-archiving.md).
+- **Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique.** Vous pouvez activer une capacité de stockage illimitée pour le dossier Éléments récupérables simplement en activant la boîte aux lettres d’archivage, puis en activant la fonctionnalité d’archivage à extension automatique dans Exchange Online. Cela entraîne 110 Go pour le dossier Éléments récupérables dans la boîte aux lettres principale et une capacité de stockage illimitée pour le dossier Éléments récupérables dans l’archive de l’utilisateur. Découvrez comment : activer [les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et activer [l’archivage illimité.](enable-unlimited-archiving.md)
 
     > [!NOTE]
-    > Après avoir activé l’archive pour une boîte aux lettres qui est proche du dépassement du quota de stockage pour le dossier Éléments récupérables, vous pouvez exécuter l’Assistant Dossier géré pour déclencher manuellement l’Assistant pour traiter la boîte aux lettres afin que les éléments expirés soient déplacés vers le dossier Éléments récupérables de la boîte aux lettres d’archivage. Voir [Étape 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) pour obtenir des instructions. Notez que d’autres éléments dans la boîte aux lettres de l’utilisateur peuvent être déplacés vers la nouvelle boîte aux lettres d’archivage. Pensez à dire à l’utilisateur que cela peut se produire après avoir activé la boîte aux lettres d’archivage.
+    > Après avoir activé l’archive d’une boîte aux lettres proche du quota de stockage pour le dossier Éléments récupérables, vous pouvez exécuter l’Assistant Dossier géré pour déclencher manuellement l’Assistant pour traiter la boîte aux lettres afin que les éléments expirés soient déplacés vers le dossier Éléments récupérables de la boîte aux lettres d’archivage. Voir [Étape 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) pour obtenir des instructions. Notez que d’autres éléments dans la boîte aux lettres de l’utilisateur peuvent être déplacés vers la nouvelle boîte aux lettres d’archivage. Pensez à dire à l’utilisateur que cela peut se produire après avoir activé la boîte aux lettres d’archivage.
 
 - **Créez une stratégie Exchange rétention personnalisée pour les boîtes aux lettres en attente.** Outre l’activation de la boîte aux lettres d’archivage et de l’archivage à extension automatique pour les boîtes aux lettres en conservation pour litige ou en conservation In-Place, vous pouvez également créer une stratégie de rétention Exchange personnalisée pour les boîtes aux lettres en attente. Cela vous permet d’appliquer une stratégie de rétention aux boîtes aux lettres en attente qui est différente de la stratégie MRM par défaut appliquée aux boîtes aux lettres qui ne sont pas en conservation, et vous permet d’appliquer des balises de rétention conçues pour les boîtes aux lettres en attente. Cela inclut la création d’une nouvelle balise de rétention pour le dossier Éléments récupérables.
 
@@ -96,7 +96,7 @@ Vous pouvez utiliser le EAC ou Exchange Online PowerShell pour créer une strat�
 
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>Utilisation du Centre d’administration Exchange pour créer une stratégie de rétention
 
-1. Dans le CCE,  allez dans stratégies de rétention de gestion de la conformité, puis cliquez sur \>  **Ajouter** ![ une ](../media/ITPro-EAC-AddIcon.gif) icône.
+1. Dans le EAC,  allez dans stratégies de rétention de gestion de la conformité, puis \> cliquez sur **Ajouter** une ![ icône ](../media/ITPro-EAC-AddIcon.gif) .
 
 2. Sur la page **Nouvelle stratégie de rétention**, sous **Nom**, saisissez un nom qui décrit l’objectif de la stratégie de rétention ; par exemple, **MRM Policy for Mailboxes on Hold**. 
 

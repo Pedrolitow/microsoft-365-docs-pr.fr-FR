@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b81752cbc77f4be2025d0f4d90699cbfd1facbf0
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1ba3c958c4a532976c8cb3c878ea4d116cf9a94c
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248009"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507865"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -54,7 +54,7 @@ Vérifiez si la protection réseau a été activée sur un appareil local à l�
 
     ![Clé de Registre protection du réseau](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
 
-## <a name="enable-network-protection"></a>Activer la protection du réseau
+## <a name="enable-network-protection"></a>Activer la protection réseau
 
 Activez la protection réseau à l’aide de l’une des méthodes ci-après :
 
@@ -86,7 +86,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (anciennement Intune)
 
-1. Connectez-vous au Microsoft Endpoint Manager’administration centrale (https://endpoint.microsoft.com)
+1. Connectez-vous au Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com)
 
 2. Créer ou modifier un profil [de configuration de la protection des points de terminaison](/mem/intune/protect/endpoint-protection-configure)
 
@@ -111,15 +111,15 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
 
 4. Double-cliquez sur le paramètre Empêcher les utilisateurs **et les applications d’accéder** au paramètre sites web dangereux et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
     - **Bloquer** : les utilisateurs ne peuvent pas accéder aux domaines et aux adresses IP malveillants
-    - **Désactiver (par défaut)** : la fonctionnalité de protection du réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants
+    - **Désactiver (par défaut)** : la fonctionnalité de protection réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants
     - **Mode audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal Windows’événements malveillants. Toutefois, l’utilisateur ne sera pas empêché de visiter l’adresse.
 
 > [!IMPORTANT]
-> Pour activer entièrement la protection réseau,  vous devez définir  l’option de stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
+> Pour activer entièrement la protection réseau,  vous devez définir  l’option stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
 
 Confirmez que la protection réseau est activée sur un ordinateur local à l’aide de l’éditeur du Registre :
 
-1. Sélectionnez **Démarrer** et tapez **regedit** pour ouvrir **l’Éditeur du Registre.**
+1. Sélectionnez **Démarrer** et **tapez regedit** pour ouvrir **l’Éditeur du Registre.**
 
 2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
@@ -131,5 +131,9 @@ Confirmez que la protection réseau est activée sur un ordinateur local à l’
 ## <a name="see-also"></a>Voir aussi
 
 - [Protection du réseau](network-protection.md)
+
+- [Protection du réseau et protocole d’handshake triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
 - [Évaluer la protection du réseau](evaluate-network-protection.md)
+
 - [Résoudre les problèmes de protection du réseau](troubleshoot-np.md)

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c65fcb93740f975c34534e1af244dcca20ce043c
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 73d863584a1712f5619bd045a51e651edb4ff636
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387127"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507985"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
@@ -36,20 +36,21 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 
 ****
 
-| Privilège | Autorisation |
-|:---|:---|
-| Accès | Lecture, Écriture, Exécution |
-| Action Mode | Auditer, autoriser, empêcher |
-| Prise en charge du programme CSP | Oui |
-| Prise en charge des GPO | Oui |
-| Prise en charge basée sur l’utilisateur | Oui |
-| Prise en charge basée sur l’ordinateur | Oui |
+|Privilège|Autorisation|
+|---|---|
+|Access|Lecture, Écriture, Exécution|
+|Action Mode|Auditer, autoriser, empêcher|
+|Prise en charge du programme CSP|Oui|
+|Prise en charge des GPO|Oui|
+|Prise en charge basée sur l’utilisateur|Oui|
+|Prise en charge basée sur l’ordinateur|Oui|
+|
 
 ## <a name="prepare-your-endpoints"></a>Préparer vos points de terminaison
 
 Déployez le contrôle d Stockage’accès amovible sur Windows 10 qui ont un client anti-programme malveillant version **4.18.2103.3** ou ultérieure.
 
-- **4.18.2104** ou version ultérieure : Ajouter SerialNumberId, VID_PID, prise en charge des GPO basés sur filepath, ComputerSid
+- **4.18.2104** ou version ultérieure : Ajouter SerialNumberId, VID_PID, prise en charge des GPO basés sur des chemins d’fichiers, ComputerSid
 - **4.18.2105** ou version ultérieure : ajouter la prise en charge des caractères génériques pour HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinaison d’un utilisateur spécifique sur un ordinateur spécifique, la prise en charge du SSD (Un SSD Extrême SanDisk)/USB Attached SCSI (UAS)
 - **4.18.2107** ou ultérieur : ajouter la prise en charge Windows appareil portable (WPD) (pour les appareils mobiles, tels que les tablettes) ; ajouter AccountName dans le [recherche avancée](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
@@ -62,27 +63,36 @@ Déployez le contrôle d Stockage’accès amovible sur Windows 10 qui ont un cl
 
 Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockage amovible :
 
-#### <a name="removable-storage-group"></a>Groupe de Stockage amovible
-|Nom de la propriété  |Description  |Options  |
-|---------|---------|---------|
-|**GroupId**     |   [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un ID unique, représente le groupe et sera utilisé dans la stratégie.      |         |
-|**DescriptorIdList**     |  List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true) pour plus d’informations.       |  - **PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</br> - **DeviceId** </br>- **HardwareId**</br>- **InstancePathId**: InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour obtenir de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*</br>- **FriendlyNameId**</br>- **SerialNumberId**</br>- **VID**</br>- **PID**</br>- **VID_PID**</br> 0751_55E0 : correspondre à cette paire VID/PID exacte </br>55E0 : faire correspondre n’importe quel média avec _PID=55E0 </br> 0751_: faire correspondre n’importe quel média avec VID=0751 |
-|**MatchType**     |    Lorsque plusieurs propriétés d’appareil sont utilisées dans DescriptorIDList, MatchType définit la relation.     |  **MatchAll**: </br>Tous les attributs sous la relation DescriptorIdList seront **And** ; par exemple, si l’administrateur place DeviceID et InstancePathID, pour chaque clé USB connectée, le système vérifie si la clé USB répond aux deux valeurs. </br> </br>**MatchAny**:</br> Les attributs sous la relation DescriptorIdList seront **Or** ; par exemple, si l’administrateur place DeviceID et InstancePathID, pour chaque clé USB connectée, le système appliquera l’application tant que la clé USB aura une valeur **DeviceID** ou **InstanceID** identique.       |
+### <a name="removable-storage-group"></a>Groupe de Stockage amovible
+
+<br>
+
+****
+
+|Nom de la propriété|Description|Options|
+|---|---|---|
+|**GroupId**|[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un ID unique, représente le groupe et sera utilisé dans la stratégie.||
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations.|<ul><li>**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` . Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour obtenir de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple : `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.</li><li>**FriendlyNameId**</li><li>**SerialNumberId**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0 : correspondre à cette paire VID/PID exacte</li><li>55E0 : faire correspondre n’importe quel média avec PID=55E0 </li><li>0751 : faire correspondre n’importe quel média avec VID=0751</li></ul></li></ul>|
+|**MatchType**|Lorsque plusieurs propriétés d’appareil sont utilisées dans DescriptorIDList, MatchType définit la relation.|**MatchAll**: tous les attributs sous la relation DescriptorIdList seront **And** ; par exemple, si l’administrateur place DeviceID et InstancePathID, pour chaque clé USB connectée, le système vérifie si la clé USB répond aux deux valeurs. <p> **MatchAny :** les attributs sous la relation DescriptorIdList seront **Or** ; par exemple, si l’administrateur place DeviceID et InstancePathID, pour chaque clé USB connectée, le système appliquera l’application tant que la clé USB aura une valeur **DeviceID** ou **InstanceID** identique.|
 ||||
 
-#### <a name="access-control-policy"></a>Politique de contrôle d’accès
+### <a name="access-control-policy"></a>Politique de contrôle d’accès
 
-|Nom de la propriété  |Description  |Options  |
-|---------|---------|---------|
-|PolicyRuleId     |     [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un ID unique, représente la stratégie et sera utilisé dans le rapport et la résolution des problèmes.    |         |
-|IncludedIdList     | Groupe(s) à appliquer à la stratégie. Si plusieurs groupes sont ajoutés, la stratégie est appliquée à n’importe quel média de tous ces groupes.        |    L’ID de groupe/GUID doit être utilisé à cette instance. </br> L’exemple suivant illustre l’utilisation de GroupID : </br> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`    |
-|ExcludedIDList     | Groupes à qui la stratégie ne sera pas appliquée.        |    L’ID de groupe/GUID doit être utilisé à cette instance.     |
-|ID d’entrée     |  Un policyRule peut avoir plusieurs entrées ; chaque entrée avec un GUID unique indique à Device Control une restriction.       |         |
-|Type|Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. </br>- Application : autoriser ou refuser </br>- Audit : AuditAllowed ou AuditDenied|- Autoriser </br>- Refuser</br> - AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé</br>- AuditDenied : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec **l’entrée** de refus. </br></br> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier de la stratégie. Un exemple de type de conflit est **Allow** et **Deny**.|
+<br>
+
+****
+
+|Nom de la propriété|Description|Options|
+|---|---|---|
+|PolicyRuleId|[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un ID unique, représente la stratégie et sera utilisé dans le rapport et la résolution des problèmes.||
+|IncludedIdList|Groupe(s) à appliquer à la stratégie. Si plusieurs groupes sont ajoutés, la stratégie est appliquée à n’importe quel média de tous ces groupes.|L’ID de groupe/GUID doit être utilisé à cette instance. <p> L’exemple suivant illustre l’utilisation de GroupID : <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`|
+|ExcludedIDList|Les groupes à qui la stratégie ne sera pas appliquée.|L’ID de groupe/GUID doit être utilisé à cette instance.|
+|ID d’entrée|Un policyRule peut avoir plusieurs entrées ; chaque entrée avec un GUID unique indique à Device Control une restriction.||
+|Type|Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. <ul><li>Application : autoriser ou refuser</li><li>Audit : AuditAllowed ou AuditDenied</ul></li>|<ul><li>Autoriser</li><li>Refuser</li><li>AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé</li><li>AuditDenied : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec **l’entrée** de refus.</li></ul> <p> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier de la stratégie. Un exemple de type de conflit est **Allow** et **Deny**.|
 |Sid|Le sid de l’ordinateur local ou le sid de l’objet AD définit s’il faut appliquer cette stratégie sur un utilisateur ou un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et d’une entrée sans sid signifie appliquer la stratégie sur l’ordinateur.||
 |ComputerSid|Sid de l’ordinateur local ou sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un ordinateur ou un groupe d’ordinateurs spécifique ; une entrée peut avoir un maximum d’un ComputerSid et une entrée sans ComputerSid signifie appliquer la stratégie sur l’ordinateur. Si vous souhaitez appliquer une entrée à un utilisateur spécifique et à un ordinateur spécifique, ajoutez Sid et ComputerSid dans la même entrée.||
-|Options|Définit si les notifications sont affichées ou non|**0-4 : lorsque** le type Autoriser ou Refuser est sélectionné.</br></br>0 : rien</br>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. </br> </br>Lorsque type **AuditAllowed ou** **AuditDenied** est sélectionné :</br>0 : rien</br>1 : afficher la notification</br>2 : événement d’envoi</br>3 : afficher la notification et envoyer un événement|
-|AccessMask|Définit l’accès.|**1-7**: </br></br>1 : lecture</br>2 : Écriture</br>3 : Lecture et écriture</br>4 : Exécuter</br>5 : Lecture et exécution</br>6 : Écriture et exécution</br>7 : Lecture et écriture et exécution|
+|Options|Définit s’il faut afficher la notification ou non|**0-4 : lorsque** le type Autoriser ou Refuser est sélectionné. <ul><li>0 : rien</li><li>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification.</li></ul> <p> Lorsque type **AuditAllowed ou** **AuditDenied** est sélectionné : <ul><li>0 : rien</li><li>1 : afficher la notification</li><li>2 : événement d’envoi</li><li>3 : afficher la notification et envoyer un événement</li></ul>|
+|AccessMask|Définit l’accès.|**1-7**: <ol><li>Lecture</li><li>Write</li><li>Lecture et écriture</li><li>Exécuter</li><li>Lecture et exécution</li><li>Écriture et exécution</li><li>Lecture et écriture et exécution</li></ol>|
 ||||
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Scénarios courants Stockage contrôle d’accès des périphériques amovibles
@@ -165,7 +175,7 @@ Pour le déploiement de stratégie dans Intune, le compte doit être autorisé �
 
 ### <a name="deploying-policy-via-oma-uri"></a>Déploiement d’une stratégie via OMA-URI
 
-**Microsoft Endpoint Manager admin center ( https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 and later & Profile: Custom**
+Microsoft Endpoint Manager admin center ( <https://endpoint.microsoft.com/> ) \> **Devices** \> **Configuration profiles** Create \> **profile** \> **Platform: Windows 10 and later & Profile: Custom**
 
 1. Pour chaque groupe, créez une règle OMA-URI :
     - OMA-URI : 
@@ -197,7 +207,7 @@ Cette fonctionnalité (dans Microsoft Endpoint Manager admin center ( <https://e
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Afficher les données de contrôle d’Stockage d’accès amovible dans Microsoft Defender pour le point de terminaison
 
-Le portail Microsoft 365 de sécurité affiche le stockage amovible bloqué par le contrôle d’Stockage d’accès. Pour accéder à la sécurité Microsoft 365, vous devez avoir l’abonnement suivant :
+Le [portail Microsoft 365 Defender affiche](https://security.microsoft.com/advanced-hunting) les événements déclenchés par le contrôle d’accès Stockage appareil. Pour accéder à la sécurité Microsoft 365, vous devez avoir l’abonnement suivant :
 
 - Microsoft 365 de rapports E5
 
@@ -218,7 +228,7 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId) 
 | extend MediaVendorId = tostring(parsed.VendorId) 
 | extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
+|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
 | order by Timestamp desc
 ```
 

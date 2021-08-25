@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6569a84dfe2e59eabeceb849296b883a436a939d5348f2bad2bda56e42f9dec9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f57a186c49b44d007d93cba6610865b5a4e7f47f
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869684"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506489"
 ---
 # <a name="api-explorer"></a>Explorateur d’API
 
@@ -32,10 +32,9 @@ ms.locfileid: "53869684"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
+L’Explorateur d’API Microsoft Defender pour point de terminaison est un outil qui vous permet d’explorer différentes API Defender pour endpoint de manière interactive.
 
-L’Explorateur d’API Microsoft Defender pour point de terminaison est un outil qui vous permet d’explorer différentes API Defender pour endpoint de manière interactive. 
-
-L’Explorateur d’API facilite la construction et l’envoi de requêtes API, de test et d’envoi de requêtes pour n’importe quel point de terminaison de l’API Defender for Endpoint disponible. Utilisez l’Explorateur d’API pour prendre des mesures ou rechercher des données qui ne sont peut-être pas encore disponibles via l’interface utilisateur.
+L’Explorateur d’API facilite la construction et l’envoi de requêtes API, de test et d’envoi de requêtes pour n’importe quel point de terminaison de l’API Defender pour endpoint disponible. Utilisez l’Explorateur d’API pour prendre des mesures ou rechercher des données qui ne sont peut-être pas encore disponibles via l’interface utilisateur.
 
 L’outil est utile lors du développement d’applications. Il vous permet d’effectuer des requêtes API qui respectent vos paramètres d’accès utilisateur, ce qui réduit la nécessité de générer des jetons d’accès.
 
@@ -45,22 +44,22 @@ Avec l’Explorateur d’API, vous pouvez :
 
 - Exécuter des demandes pour n’importe quelle méthode et voir les réponses en temps réel
 - Parcourez rapidement les exemples d’API et découvrez les paramètres qu’ils supportent
-- Effectuer facilement des appels d’API ; pas besoin de s’authentifier au-delà de la signature du portail de gestion
+- Effectuer des appels d’API en toute simplicité ; pas besoin de s’authentifier au-delà de la signature du portail de gestion
 
 ## <a name="access-api-explorer"></a>Explorateur d’API Access
 
-Dans le menu de navigation de gauche, sélectionnez **Partenaires & API**  >  **Explorer.**
+Dans le menu de navigation de gauche, sélectionnez **Partenaires & API** \> **Explorer.**
 
 ## <a name="supported-apis"></a>API prise en charge
 
 L’Explorateur d’API prend en charge toutes les API proposées par Defender for Endpoint.
-  
-La liste des API prise en charge est disponible dans la [documentation des API.](apis-intro.md) 
+
+La liste des API prise en charge est disponible dans la [documentation des API.](apis-intro.md)
 
 ## <a name="get-started-with-the-api-explorer"></a>Mise en place de l’Explorateur d’API
 
-1. Dans le volet gauche se trouve une liste d’exemples de demandes que vous pouvez utiliser. 
-2. Suivez les liens et cliquez sur **Exécuter la requête.** 
+1. Dans le volet gauche se trouve une liste d’exemples de demandes que vous pouvez utiliser.
+2. Suivez les liens et cliquez sur **Exécuter la requête.**
 
 Certains exemples peuvent nécessiter la spécification d’un paramètre dans l’URL, par exemple, {machine- ID}.
 
@@ -71,4 +70,4 @@ Les informations d’identification pour accéder à une API ne sont pas nécess
 
 Les informations d’authentification de l’utilisateur connecté sont utilisées pour vérifier que l’Explorateur d’API est autorisé à accéder aux données en votre nom.
 
-Les demandes d’API spécifiques sont limitées en fonction de vos privilèges RBAC. Par exemple, une demande d'« indicateur d’soumission » est limitée au rôle d’administrateur de sécurité. 
+Les demandes d’API spécifiques sont limitées en fonction de vos privilèges RBAC. Par exemple, une demande d'« indicateur d’soumission » est limitée au rôle d’administrateur de sécurité.

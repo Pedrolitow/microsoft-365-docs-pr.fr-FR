@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utilisez l’outil eDiscovery de recherche de contenu pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce en créant des requêtes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3f493640ecb1e0e0bb03ce315055e2faac37d0a5a05b47711c29d68e13a46a6c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afed5e519b789baffca4f16b95c842ccfe575b4f
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891666"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507637"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Utiliser la recherche de contenu pour rechercher des données tierces importées par un connecteur partenaire personnalisé
 
-Vous pouvez utiliser l’outil [eDiscovery](content-search.md) de recherche de contenu dans le Centre de sécurité & conformité pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou créer une requête pour rechercher des éléments de données tiers spécifiques. En outre, vous pouvez également créer une stratégie de rétention basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces.
+Vous pouvez utiliser l’outil [eDiscovery](content-search.md) de recherche de contenu dans le Centre de conformité Microsoft 365 pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou créer une requête pour rechercher des éléments de données tiers spécifiques. En outre, vous pouvez également créer une stratégie de rétention basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces.
   
 Pour plus d’informations sur l’utilisation d’un partenaire pour importer des données tierces et une liste des types de données tierces que vous pouvez importer dans Microsoft 365, voir Travailler avec un partenaire pour archiver des données tierces dans [Office 365](work-with-partner-to-archive-third-party-data.md).
 
@@ -53,7 +53,7 @@ Au lieu de rechercher tous les types de données tierces, vous pouvez créer des
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
-Par exemple, pour rechercher des données Facebook contenant le mot « contoso » dans la propriété Subject, utilisez la requête suivante :
+Par exemple, pour rechercher des données Facebook contenant le mot « contoso » dans la propriété Subject, vous devez utiliser la requête suivante :
   
 ```powershell
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
@@ -77,7 +77,7 @@ Le tableau suivant répertorie les types de données tierces que vous pouvez rec
 |Bearshare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
 |BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
 |Blackberry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
-|Journaux d’appels BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
+|Journaux des appels BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
 |BlackBerry Messenger  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
 |Code confidentiel BlackBerry  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |

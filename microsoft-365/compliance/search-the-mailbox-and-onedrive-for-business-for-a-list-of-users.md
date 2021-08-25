@@ -19,20 +19,20 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Utilisez la recherche de contenu et le script de cet article pour rechercher les boîtes aux lettres et OneDrive Entreprise sites pour un groupe d’utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01014f991ba832b54b703458ca1eac7cc40902a49bf18d2b79e4e6e89d37d49e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c6dea7423eefbbbba6efdf3b9fe2bbd320cb4d7d
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813666"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508177"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et OneDrive Entreprise
 
-Le Centre de sécurité & conformité fournit plusieurs cmdlets Windows PowerShell qui vous permettent d’automatiser des tâches eDiscovery chronophages. Actuellement, la création d’une recherche de contenu dans le Centre de sécurité & conformité pour rechercher un grand nombre d’emplacements de contenu de dépositaire prend du temps et de la préparation. Avant de créer une recherche, vous devez collecter l’URL de chaque site OneDrive Entreprise puis ajouter chaque boîte aux lettres OneDrive Entreprise site à la recherche. Dans les prochaines version, cela sera plus facile à faire dans le Centre de sécurité & conformité. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus. Ce script vous invite à donner le nom du domaine Mon site de votre organisation (par exemple, **contoso** dans l’URL), une liste d’adresses e-mail utilisateur, le nom de la nouvelle recherche de contenu et la requête de recherche à `https://contoso-my.sharepoint.com` utiliser. Le script obtient l’URL OneDrive Entreprise pour chaque utilisateur de la liste, puis il crée et démarre une recherche de contenu qui recherche la boîte aux lettres et le site OneDrive Entreprise pour chaque utilisateur de la liste, à l’aide de la requête de recherche que vous fournissez.
+Le Centre de sécurité & conformité PowerShell fournit un certain nombre d’cmdlets qui vous permettent d’automatiser des tâches eDiscovery chronophages. Actuellement, la création d’une recherche de contenu dans le Centre de conformité Microsoft 365 pour rechercher un grand nombre d’emplacements de contenu de dépositaire prend du temps et de la préparation. Avant de créer une recherche, vous devez collecter l’URL de chaque site OneDrive Entreprise puis ajouter chaque boîte aux lettres et chaque site OneDrive Entreprise à la recherche. Dans les prochaines publication, cela sera plus facile à faire dans les Centre de conformité Microsoft 365. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus. Ce script vous invite à donner le nom du domaine Mon site de votre organisation (par exemple, **contoso** dans l’URL), une liste d’adresses e-mail utilisateur, le nom de la nouvelle recherche de contenu et la requête de recherche à `https://contoso-my.sharepoint.com` utiliser. Le script obtient l’URL OneDrive Entreprise pour chaque utilisateur de la liste, puis il crée et démarre une recherche de contenu qui recherche la boîte aux lettres et le site OneDrive Entreprise pour chaque utilisateur de la liste, à l’aide de la requête de recherche que vous fournissez.
   
 ## <a name="permissions-and-script-information"></a>Autorisations et informations de script
 
-- Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & conformité et administrateur général SharePoint Online pour exécuter le script à l’étape 3.
+- Vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de conformité Microsoft 365 et administrateur général SharePoint Online pour exécuter le script à l’étape 3.
 
 - N’oubliez pas d’enregistrer la liste des utilisateurs que vous créez à l’étape 2 et le script de l’étape 3 dans le même dossier. Cela facilitera l’exécuter.
 
@@ -62,15 +62,15 @@ Après avoir exécuté cette commande, n’oubliez pas d’ouvrir le fichier et 
 
 Lorsque vous exécutez le script dans cette étape, il vous invite à fournir les informations suivantes. Veillez à ce que ces informations soient prêtes avant d’exécuter le script.
   
--  Vos informations d’identification utilisateur : le script utilise vos informations d’identification pour accéder à SharePoint Online afin d’obtenir les URL OneDrive Entreprise et de se connecter au Centre de sécurité & conformité avec PowerShell à distance. 
+-  Vos informations d’identification utilisateur : le script utilise vos informations d’identification pour accéder à SharePoint Online afin d’obtenir les URL OneDrive Entreprise et de se connecter au Centre de sécurité & conformité PowerShell. 
     
 - **Nom de votre domaine Mon site** : le domaine Mon site est le domaine qui contient tous les sites OneDrive Entreprise de votre organisation. Par exemple, si l’URL de votre domaine Mon site est , vous devez entrer lorsque le script vous invite à entrer le nom de votre **https://contoso-my.sharepoint.com**  `contoso` domaine Mon site. 
     
 - **Chemin d’accès du fichier texte** de l’étape 2 : nom du fichier texte que vous avez créé à l’étape 2. Si le fichier texte et le script se trouvent dans le même dossier, entrez le nom du fichier texte. Dans le cas contraire, entrez le chemin d’accès complet du fichier texte. 
     
-- **Nom de la recherche de** contenu : nom de la recherche de contenu qui sera créée par le script. 
+- **Nom de la recherche de contenu** : nom de la recherche de contenu qui sera créée par le script. 
     
-- **Requête de recherche** : la requête de recherche qui sera utilisée avec la recherche de contenu est créée et exécuté. Pour plus d’informations sur les requêtes de recherche, voir Requêtes par mot clé et [conditions de recherche pour la recherche de contenu.](keyword-queries-and-search-conditions.md)
+- **Requête de recherche** : la requête de recherche qui sera utilisée avec la recherche de contenu est créée et exécuté. Pour plus d’informations sur les requêtes de recherche, voir Requêtes par mot clé et conditions de recherche [pour eDiscovery.](keyword-queries-and-search-conditions.md)
 
 
 **Pour exécuter le script :**
@@ -187,4 +187,4 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
     
     - Requête de recherche (laissez ce vide pour renvoyer tous les éléments dans les emplacements de contenu).
     
-    Le script obtient les URL de chaque site OneDrive Entreprise, puis crée et démarre la recherche. Vous pouvez exécuter la cmdlet **Get-ComplianceSearch** dans le Centre de sécurité & conformité PowerShell pour afficher les statistiques et les résultats de la recherche, ou vous pouvez aller à la **page** de recherche de contenu dans le Centre de sécurité & conformité pour afficher des informations sur la recherche.
+    Le script obtient les URL de chaque site OneDrive Entreprise, puis crée et démarre la recherche. Vous pouvez exécuter la cmdlet **Get-ComplianceSearch** dans le Centre de sécurité & conformité PowerShell pour afficher les statistiques et les résultats de la recherche, ou vous pouvez aller à la **page** de recherche de contenu dans le Centre de conformité Microsoft 365 pour afficher des informations sur la recherche.

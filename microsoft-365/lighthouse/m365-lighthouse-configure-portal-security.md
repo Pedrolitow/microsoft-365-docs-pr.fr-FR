@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment configurer la sécurité du portail.
-ms.openlocfilehash: 1d9dd77fb0d8ea21985b430b00c5366d70fadbf6fc047dbd7735883bb2fb77f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9701ecc002144f791be6caad1e93230be5a83bf0
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890994"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508081"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-La protection de l’accès aux données client lorsqu’un fournisseur de services gérés (MSP) a délégué des autorisations d’accès à ses clients est une priorité de cybersécurité. Microsoft 365 Lighthouse est disponible avec les fonctionnalités requises et facultatives pour vous aider à configurer la sécurité Microsoft 365 Lighthouse portail.
+La protection de l’accès aux données client lorsqu’un fournisseur de services gérés (MSP) a délégué des autorisations d’accès à ses clients est une priorité de cybersécurité. Microsoft 365 Lighthouse est disponible avec les fonctionnalités requises et facultatives pour vous aider à configurer la sécurité du portail de portail de sécurité.
 
 ## <a name="set-up-multifactor-authentication-mfa"></a>Configurer l’authentification multifacteur (MFA)
 
@@ -36,17 +36,17 @@ Comme mentionné dans le billet de [blog, votre $word n’a pas d’importance](
 
 > « Votre mot de passe n’a pas d’importance, mais c’est l’fa MFA qui l’est. D’après nos études, votre compte est moins susceptible d’être compromis à plus de 99,9 % si vous utilisez l’mf. »
 
-Lorsque les utilisateurs accèdent à Microsoft 365 Lighthouse pour la première fois, ils sont invités à configurer l’mfmf si leur compte Microsoft 365 ne l’a pas déjà configuré. Les utilisateurs ne pourront pas accéder aux Microsoft 365 Lighthouse tant que l’étape de configuration MFA requise n’est pas terminée. Pour en savoir plus sur les méthodes d’authentification, voir [Configurer votre Microsoft 365 pour l’authentification multifacteur.](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+Lorsque les utilisateurs accèdent à l’mf pour la première fois, ils sont invités à configurer l’mfmf si leur compte Microsoft 365 ne l’a pas déjà configuré. Les utilisateurs ne pourront pas accéder à l’installation de l’ermfa MFA tant que l’étape de configuration requise n’aura pas été terminée. Pour en savoir plus sur les méthodes d’authentification, voir [Configurer votre Microsoft 365 pour l’authentification multifacteur.](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
 
 ## <a name="set-up-roles-to-manage-customer-tenants"></a>Configurer des rôles pour gérer les clients
 
-L’accès aux données et paramètres du client dans Microsoft 365 Lighthouse est limité aux rôles Agent d’administration et Agent du service d’assistance du programme Fournisseur de solutions Cloud (CSP).
+L’accès aux données et paramètres du client dans le Centre d’administration est limité aux rôles Agent d’administration et Agent d’assistance du programme Fournisseur de solutions Cloud (CSP).
 
-Vous pouvez vérifier quels utilisateurs du client partenaire ont les rôles Agent d’administration et Agent du helpdesk en vérifiant les appartenances aux groupes de sécurité sur la page [Azure AD – Tous](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) les groupes. Pour savoir comment attribuer des rôles de programme CSP et d’autres autorisations aux utilisateurs, voir Attribuer des rôles et des [autorisations aux utilisateurs.](/partner-center/permissions-overview) En tant que MSP, si vous n’avez pas encore délégué des privilèges d’accès aux clients, découvrez comment les obtenir dans l’article Obtenir des autorisations pour gérer le service ou [l’abonnement d’un](/partner-center/customers-revoke-admin-privileges)client.
+Vous pouvez vérifier quels utilisateurs du client partenaire ont les rôles Agent d’administration et Agent du helpdesk en vérifiant les appartenances aux groupes de sécurité sur la page [Azure AD – Tous](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) les groupes. Pour découvrir comment attribuer des rôles de programme CSP et d’autres autorisations aux utilisateurs, voir Attribuer des rôles et des [autorisations aux utilisateurs.](/partner-center/permissions-overview) En tant que MSP, si vous n’avez pas encore délégué des privilèges d’accès aux clients, découvrez comment les obtenir dans l’article Obtenir des autorisations pour gérer le service ou [l’abonnement d’un](/partner-center/customers-revoke-admin-privileges)client.
 
-Le tableau suivant répertorie les différentes pages Microsoft 365 Lighthouse et les autorisations requises pour afficher et agir sur les données client et les paramètres des rôles Agent d’administration et Agent du service d’assistance.<br><br>
+Le tableau suivant répertorie les différentes pages Dupers et les autorisations requises pour afficher et agir sur les données et paramètres du client pour les rôles Agent d’administration et Agent d’assistance.<br><br>
 
-| Microsoft 365 Lighthouse page | Autorisations de l’agent administrateur | Autorisations de l’agent du helpdesk |
+| Page Dente | Autorisations de l’agent administrateur | Autorisations de l’agent du helpdesk |
 |--|--|--|
 | Accueil | <ul><li>Afficher tout </li></ul> | <ul><li>Afficher tout </li></ul> |
 | Clients | <ul><li>Afficher tout </li><li>Mettre à jour les contacts client et le site web</li><li>Afficher et appliquer des plans de déploiement</li></ul> | <ul><li>Afficher tout </li><li>Mettre à jour les contacts client et le site web</li><li>Afficher les plans de déploiement</li></ul> |
@@ -59,7 +59,7 @@ Le tableau suivant répertorie les différentes pages Microsoft 365 Lighthouse e
 > [!NOTE]
 > Actuellement, pour prendre les actions marquées avec * dans le tableau, les utilisateurs doivent également avoir le rôle Azure AD dans le client partenaire avec la propriété suivante définie : **microsoft.office365.serviceHealth/allEntities/allTasks**. Pour obtenir la liste des rôles Azure AD, voir [rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference)
 
-Étant donné les autorisations étendues associées au rôle Agent d’administration, nous vous suggérons d’adhérer au principe d’accès le moins privilégié lors de la désignation d’un utilisateur client partenaire en tant qu’agent administrateur ou agent du helpdesk. [](/azure/active-directory/develop/secure-least-privileged-access) Pour ce faire, vous pouvez attribuer le rôle d’agent du helpdesk aux utilisateurs du client partenaire requis. Cela leur permet d’afficher les données et paramètres des clients, mais pas d’apporter de grandes modifications. Ensuite, si nécessaire, utilisez les fonctionnalités d’approbation d’accès juste-à-temps d’Azure AD Privileged Identity Management (PIM) pour donner aux utilisateurs un rôle d’agent d’administration dans le temps.
+Étant donné les autorisations étendues associées au rôle Agent d’administration, nous vous suggérons d’adhérer au principe d’accès le moins privilégié lors de la désignation d’un utilisateur client partenaire en tant qu’agent administrateur ou agent du helpdesk. [](/azure/active-directory/develop/secure-least-privileged-access) Pour ce faire, vous pouvez attribuer le rôle d’agent du helpdesk aux utilisateurs du client partenaire requis. Cela leur permet d’afficher les données et les paramètres des clients, mais pas d’apporter de grandes modifications. Ensuite, si nécessaire, utilisez les fonctionnalités d’approbation d’accès juste-à-temps d’Azure AD Privileged Identity Management (PIM) pour donner aux utilisateurs un rôle d’agent d’administration dans le temps.
 
 ## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Configurer Azure AD Privileged Identity Management (PIM)
 
@@ -84,13 +84,13 @@ Le tableau suivant répertorie les rôles des clients partenaires et leurs autor
 
 | Rôles des locataires partenaires | Autorisations au sein du client partenaire |
 |--|--|
-| Administrateur général du client partenaire | <ul><li>Inscrivez-vous Microsoft 365 Lighthouse dans le Centre d’administration Microsoft 365.</li><li>Accepter les modifications apportées au contrat partenaire lors de la première expérience d’utilisateur.</li><li>Afficher les clients sur la page Clients.\*</li><li>Activer et désactiver un client.\*</li><li>Mettez à jour les contacts client et le site web.\*</li><li>Créer, mettre à jour et supprimer des balises.\*</li><li>Affecter et supprimer des balises d’un client.\*</li></ul> |
-| Administrateur du client partenaire avec au moins un<br> Rôle Azure AD attribué avec le jeu de propriétés suivant :<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Pour obtenir la liste des rôles Azure AD, voir rôles intégrés [Azure AD.)](/azure/active-directory/roles/permissions-reference) | <ul><li>Créez Microsoft 365 Lighthouse de service.</li></ul> |
+| Administrateur général du client partenaire | <ul><li>Inscrivez-vous à l’inscription à l’Centre d’administration Microsoft 365.</li><li>Accepter les modifications apportées au contrat partenaire lors de la première expérience d’utilisateur.</li><li>Afficher les clients sur la page Clients.\*</li><li>Activer et désactiver un client.\*</li><li>Mettre à jour les contacts client et le site web.\*</li><li>Créer, mettre à jour et supprimer des balises.\*</li><li>Affecter et supprimer des balises d’un client.\*</li></ul> |
+| Administrateur du client partenaire avec au moins un<br> Rôle Azure AD attribué avec le jeu de propriétés suivant :<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Pour obtenir la liste des rôles Azure AD, voir rôles intégrés [Azure AD.)](/azure/active-directory/roles/permissions-reference) | <ul><li>Créer des demandes de service d’accès.</li></ul> |
 
 > [!NOTE]
 > Actuellement, pour prendre les actions marquées avec * dans la table, l’administrateur général doit assumer le rôle Agent d’administration.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vue d’Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)\
 [S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\

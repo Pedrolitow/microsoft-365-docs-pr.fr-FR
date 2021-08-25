@@ -20,88 +20,105 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: dd103e31924c892eb7f43bc89c5a17f9721cea12
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 6fdf9509d6d951ed500462a6fc95e1db6c9e9cb8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502062"
+ms.locfileid: "58507961"
 ---
-#  <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
+# <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-
 ## <a name="running-the-analyzer-through-gui-scenario"></a>Exécution de l’analyseur via le scénario d’interface graphique graphique
 
-1.  Téléchargez [l’outil Analyseur de client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
-> [!NOTE]  
-> Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : '029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85'.
+1. Téléchargez [l’outil Analyseur de client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
 
-2.  Extrayez le contenu des XMDEClientAnalyzer.zip sur l’ordinateur.
+   > [!NOTE]
+   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : '029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85'.
 
-3.  Ouvrez une session terminal, modifiez le répertoire vers l’emplacement extrait et exécutez :
+2. Extrayez le contenu des XMDEClientAnalyzer.zip sur l’ordinateur.
 
-`./mde_support_tool.sh -d`
+3. Ouvrez une session terminal, modifiez le répertoire vers l’emplacement extrait et exécutez :
 
-! Remarque  
-Sur Linux, si le script ne peut pas s’exécuter, vous devez d’abord exécuter :  
-*chmod a+x mde_support_tool.sh*
+   `./mde_support_tool.sh -d`
+
+   > [!NOTE]
+   > Sur Linux, si le script ne peut pas s’exécuter, vous devez d’abord exécuter :
+   >
+   > `chmod a+x mde_support_tool.sh`
 
 ## <a name="running-the-analyzer-using-a-terminal-or-ssh-scenario"></a>Exécution de l’analyseur à l’aide d’un scénario terminal ou SSH
 
-1.  Ouvrez un terminal ou un SSH sur l’ordinateur approprié.
+1. Ouvrez un terminal ou un SSH sur l’ordinateur approprié.
 
-2.  Exécuter `wget --quiet -O XMDEClientAnalyzer.zip*
-    <https://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd
-    XMDEClientAnalyzer && chmod +x mde_support_tool.sh"`
+2. Exécuter `wget --quiet -O XMDEClientAnalyzer.zip* <https://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd XMDEClientAnalyzer && chmod +x mde_support_tool.sh"`
 
-3.  Exécutez ` ./mde_support_tool.sh -d ` cette ligne pour générer le fichier d’archivage des résultats.
+3. Exécutez `./mde_support_tool.sh -d` cette ligne pour générer le fichier d’archivage des résultats.
 
-> [!NOTE]  
-> Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaiera de l’extraire du référentiel officiel pour les packages Python ci-dessous :  
-https://files.pythonhosted.org/packages/\*/lxml .whl En outre, l’outil nécessite actuellement l’installation de Python version 3 ou \* ultérieure.
+> [!NOTE]
+> Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaiera de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+>
+> En outre, l’outil nécessite actuellement l’installation de Python version 3 ou ultérieure.
 
-Exemple :  
-
+Exemple :
 
 ![Image de l’exemple de ligne de commande](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
-  
-  
 Aide supplémentaire sur la syntaxe :
 
-**-h** \# Aide  
+**-h** \# Aide<br>
 \# Afficher le message d’aide
 
-**-p** \# Performances  
-\# Paramètre planifié qui n’est pas encore implémenté.  
+**-p** \# Performances<br>
+\# Paramètre planifié qui n’est pas encore implémenté.<br>
 \# Collecte un suivi complet pour l’analyse d’un problème de performances qui peut être reproduit à la demande.
 
-**-o** \# Sortie  
+**-o** \# Sortie<br>
 \# Spécifier le chemin d’accès de destination pour le fichier de résultats
 
-**-nz** \# No-Zip  
+**-nz** \# No-Zip<br>
 \# S’il est définie, un répertoire est créé au lieu d’un fichier d’archivage résultant
 
-**-f** \# Force  
+**-f** \# Force<br>
 \# Overwrite si la sortie existe déjà dans le chemin de destination
 
 ## <a name="result-package-contents-on-macos-and-linux"></a>Contenu du package de résultats sur macOS et Linux
 
--   report.html <br> Description : fichier de sortie HTML principal qui contiendra les résultats et les instructions que le script de l’analyseur peut exécuter sur l’ordinateur.
+- report.html
 
--   mde_diagnostic.zip <br> Description : même sortie de diagnostic générée lors de l’exécution du *diagnostic mdatp créer* sur [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information) ou [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
+  Description : fichier de sortie HTML principal qui contiendra les résultats et les instructions que le script de l’analyseur peut exécuter sur l’ordinateur.
 
--   mde.xml <br> Description : sortie XML générée lors de l’exécution et utilisée pour générer le fichier de rapport html.
+- mde_diagnostic.zip
 
--   Processes_information.txt <br> Description : contient les détails des processus microsoft Defender pour point de terminaison en cours d’exécution sur le système.
+  Description : même sortie de diagnostic qui est générée lors de l’exécution du *diagnostic mdatp créer* sur [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
--   Log.txt <br> Description : contient les mêmes messages de journal écrits à l’écran pendant la collecte de données.
+  ou
 
--   Health.txt <br> Description : sortie d’état d’état de base affichée lors de l’exécution de la *commande d’état d’état mdatp.*
+  [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 
--   Events.xml <br> Description : fichier XML supplémentaire utilisé par l’analyseur lors de la génération du rapport HTML.
+- mde.xml
 
--   Auditd_info.txt <br> Description : détails sur le service audité et les composants associés pour le système [d’exploitation Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events)
+  Description : sortie XML générée lors de l’exécution et utilisée pour générer le fichier de rapport html.
+
+- Processes_information.txt
+
+  Description : contient les détails des processus microsoft Defender pour point de terminaison en cours d’exécution sur le système.
+
+- Log.txt
+
+  Description : contient les mêmes messages de journal écrits à l’écran pendant la collecte de données.
+
+- Health.txt
+
+  Description : sortie d’état d’état de base affichée lors de l’exécution de la *commande d’état d’état mdatp.*
+
+- Events.xml
+
+  Description : fichier XML supplémentaire utilisé par l’analyseur lors de la génération du rapport HTML.
+
+- Auditd_info.txt
+
+  Description : détails sur le service audité et les composants associés pour le système [d’exploitation Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events)

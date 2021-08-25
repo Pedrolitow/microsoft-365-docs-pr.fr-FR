@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment utiliser les lignes de base pour déployer des configurations client standard.
-ms.openlocfilehash: 5eea1deae1c8cf56315e121baa29273fc98feca8
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 5dc1f7da329ab1630d857ee337048a47ad06c9e9
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365200"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507937"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation des lignes de base pour déployer des configurations client standard 
 
@@ -30,15 +30,15 @@ ms.locfileid: "58365200"
 
 Microsoft 365 Lighthouse de référence fournissent un moyen extensible et évolutif d’évaluer et de gérer Microsoft 365 de sécurité entre plusieurs clients. Les lignes de base permettent également de surveiller les stratégies de sécurité principales et les normes de conformité client avec des configurations qui sécurisationnt les utilisateurs, les appareils et les données.
 
-Conçu pour aider les partenaires à favoriser l’adoption de la sécurité par les clients à leur propre rythme, Microsoft 365 Lighthouse fournit un ensemble standard de paramètres de référence et de configurations prédéfinës pour Microsoft 365 services. Ces configurations de sécurité permettent de mesurer la progression de la sécurité Microsoft 365 conformité de vos locataires.
+Conçu pour aider les partenaires à favoriser l’adoption de la sécurité par les clients à leur propre rythme, Le Monde fournit un ensemble standard de paramètres de référence et de configurations prédéfinës pour Microsoft 365 services. Ces configurations de sécurité permettent de mesurer la progression de la sécurité Microsoft 365 conformité de vos locataires.
 
-Vous pouvez afficher la ligne de base par défaut et ses étapes de déploiement à partir de Microsoft 365 Lighthouse. Pour appliquer des lignes de base à un client, sélectionnez **Les** locataires dans le volet de navigation de gauche, puis sélectionnez un client. Ensuite, allez dans l’onglet **Plans de** déploiement et implémentez la ligne de base souhaitée.
+Vous pouvez afficher la ligne de base par défaut et ses étapes de déploiement à partir de La station d’évaluation. Pour appliquer des lignes de base à un client, sélectionnez **Les** locataires dans le volet de navigation de gauche, puis sélectionnez un client. Ensuite, allez dans l’onglet **Plans de** déploiement et implémentez la ligne de base souhaitée.
 
 ## <a name="standard-baseline-security-templates"></a>Modèles de sécurité standard de référence
 
-Microsoft 365 Lighthouse configurations standard de référence pour les charges de travail de sécurité sont conçues pour aider tous les locataires gérés à atteindre un état acceptable de couverture de sécurité et de conformité.
+Les configurations standard de référence pour les charges de travail de sécurité sont conçues pour aider tous les locataires gérés à atteindre un état acceptable de couverture de sécurité et de conformité.
 
-Les configurations de référence dans le tableau suivant sont standard avec la Microsoft 365 Lighthouse par défaut.<br><br>
+Les configurations de référence dans le tableau suivant sont standard avec la ligne de base par défaut du point de départ.<br><br>
 
 | Configuration de référence | Description |
 |--|--|
@@ -49,7 +49,7 @@ Les configurations de référence dans le tableau suivant sont standard avec la 
 | Configuration de la stratégie antivirus | Profil de configuration d’appareil Windows appareils avec des paramètres de Antivirus Microsoft Defender pré-configurés. |
 | Stratégie de conformité de fenêtre 10 définie | Une stratégie Windows appareil avec des paramètres pré-configurés pour répondre aux exigences de conformité de base. |
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Déployer Microsoft 365 Lighthouse lignes de base](m365-lighthouse-deploy-baselines.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

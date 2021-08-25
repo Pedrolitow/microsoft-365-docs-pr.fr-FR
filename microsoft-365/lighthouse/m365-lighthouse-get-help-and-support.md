@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment obtenir de l’aide et du support.
-ms.openlocfilehash: 1b800a9b06cf83ff6014d2377c847204d7aaa568bc7feac65631adec22772ccc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 392eed01b5519c512c89460776ec9f4391b7bda2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830130"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506429"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Obtenir de l’aide et du support pour Microsoft 365 Lighthouse 
 
@@ -30,10 +30,10 @@ ms.locfileid: "53830130"
 
 Plusieurs options sont disponibles si vous avez besoin d’aide. Commencez par vérifier l’état actuel des services client client :
 
-1. Dans le volet de navigation gauche de la Microsoft 365 Lighthouse, sélectionnez **État du service.**
+1. Dans le volet de navigation gauche de l’écran de sélection, sélectionnez **État du service.**
 2. Afficher des informations détaillées sur les problèmes actuels et passés.
 
-Pour vérifier l’état actuel des services Microsoft 365 Lighthouse client :
+Pour vérifier l’état d’état actuel des services du locataire Du monde :
 
 1. Go to the Centre d’administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 2. Dans le volet de navigation gauche, sélectionnez **l’état**  >  **d’état du service d’état d’santé.**
@@ -43,17 +43,17 @@ Pour vérifier l’état actuel des services Microsoft 365 Lighthouse client :
 Si vous rencontrez un problème qui n’est répertorié dans aucun des tableaux de bord d’état du service, suivez les instructions de cet article pour afficher les options d’aide autonome ou pour créer une demande de service.
 
 > [!NOTE]
-> La prise en charge est limitée à l’anglais Microsoft 365 Lighthouse est en prévisualisation.
+> La prise en charge est limitée à l’anglais alors que Le Prévisualisation est en prévisualisation.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour créer et gérer des demandes de service, vous devez avoir au moins un rôle Azure Active Directory (Azure AD) qui vous est affecté avec l’ensemble de propriétés suivant : **microsoft.office365.supportTickets/allEntities/allTasks**. Pour obtenir la liste des rôles Azure AD, voir [rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference) Pour plus d’informations sur l’attribution de rôles, voir [Attribuer des rôles Azure AD aux utilisateurs.](/azure/active-directory/roles/manage-roles-portal)
+- Pour créer et gérer des demandes de service, vous devez avoir au moins un rôle Azure Active Directory (Azure AD) qui vous est affecté avec le jeu de propriétés suivant : **microsoft.office365.supportTickets/allEntities/allTasks**. Pour obtenir la liste des rôles Azure AD, voir [rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference) Pour plus d’informations sur l’attribution de rôles, voir [Attribuer des rôles Azure AD aux utilisateurs.](/azure/active-directory/roles/manage-roles-portal)
 
 - Si vous devez créer une demande de service, rassemblez autant de détails que possible sur votre problème, tels que les journaux de diagnostic, l’ID de locataire et les ID d’utilisateur (si des utilisateurs spécifiques sont affectés).
 
 ## <a name="access-help-and-support"></a>Accéder à l’aide et au support
 
-1.  Dans Microsoft 365 Lighthouse, sélectionnez **le ?** en haut du portail pour  ouvrir le volet d’aide, puis faites l’une des choses suivantes :
+1.  Dans Le Phare, sélectionnez **le ?** en haut du portail pour  ouvrir le volet d’aide, puis faites l’une des choses suivantes :
     
     -  Si vous êtes sur la page du portail où le problème s’est produit, sélectionnez **Afficher les diagnostics.**
 
@@ -69,7 +69,7 @@ Si vous rencontrez un problème qui n’est répertorié dans aucun des tableaux
     > [!NOTE]
     > Si **le** volet Comment pouvons-nous vous aider ? ne s’ouvre pas, vous devez demander de l’aide à une personne de votre client partenaire qui dispose des autorisations d’administrateur général.
 
-3.  Dans le **volet Comment pouvons-nous vous aider ?** Entrez une description de votre problème, puis appuyez sur **Entrée**. Nous vous recommandons d’inclure le nom complet *Microsoft 365* produit dans votre description pour vous assurer que les résultats de la recherche incluent des articles d’aide pertinents.
+3.  Dans le **volet Comment pouvons-nous vous aider ?** Entrez une description de votre problème, puis appuyez sur **Entrée**. Nous vous recommandons d’inclure le nom complet *Microsoft 365 Lighthouse* produit dans votre description pour vous assurer que les résultats de la recherche incluent des articles d’aide pertinents.
 
 4.  Consultez la liste des articles recommandés pour voir si l’un d’entre eux vous aide à résoudre votre problème.
 
@@ -77,8 +77,8 @@ Si vous rencontrez un problème qui n’est répertorié dans aucun des tableaux
 
 5.  Si les articles recommandés ne vous aident pas, sélectionnez **Contacter le support technique.**
 
-6.  Remplissez les informations du formulaire, joignez les captures d’écran et le fichier JSON que vous avez enregistré à l’étape 1, le cas échéant, puis sélectionnez &nbsp; **Me contacter.** Le temps d’attente attendu est indiqué dans le volet.
+6.  Remplissez les informations du formulaire, joignez les captures d’écran et le fichier JSON que vous avez enregistré à l’étape 1, le cas échéant, puis sélectionnez &nbsp; **Me contacter.** Le délai d’attente attendu est indiqué dans le volet.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

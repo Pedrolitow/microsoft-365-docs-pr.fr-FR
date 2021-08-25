@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ca52f60d6bece71ca778c067fb96241b82c9093
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: dfacd679a48c81b7a952638f2944d0fe6a8d9123
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246381"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408093"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -231,12 +231,12 @@ Vous pouvez exporter les résultats d’une recherche dans le journal d’audit 
 
 2. Sur la page des résultats de la recherche, cliquez sur **Exporter** > **Télécharger tous les résultats**.
 
-   Toutes les entrées du journal d'audit correspondant aux critères de recherche sont exportées dans un ficher CSV. Les données brutes du journal d’audit sont enregistrées dans un fichier CSV. Des informations supplémentaires de l’entrée du journal d’audit sont incluses dans une colonne appelée **AuditData** dans le CSV.
+   Toutes les entrées du journal d'audit qui répondent aux critères de recherche sont exportées vers un fichier CSV. Les données brutes du journal d’audit sont enregistrées dans un fichier CSV. Des informations supplémentaires de l’entrée du journal d’audit sont incluses dans une colonne appelée **AuditData** dans le CSV.
 
      > [!IMPORTANT]
      > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier .csv à partir d’une seule recherche dans le journal d’audit. Si 50 000 résultats sont téléchargés dans le fichier .csv, vous pouvez partir du principe que plus de 50 000 événements remplissent les critères de recherche. Pour exporter davantage de résultats, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Vous devrez peut-être effectuer plusieurs recherches avec des plages de dates plus réduites pour exporter plus de 50 000 entrées.
 
-3. Après la fin du processus d’exportation, un message s’affiche en haut de la fenêtre qui vous invite à ouvrir le fichier CSV et à l’enregistrer sur votre ordinateur local. Vous pouvez également accéder au fichier CSV dans le dossier Téléchargements.
+3. Une fois le processus d'exportation terminé, un message s'affiche en haut de la fenêtre et vous invite à ouvrir le fichier CSV et à l'enregistrer sur votre ordinateur local. Vous pouvez également accéder au fichier CSV dans le dossier Téléchargements.
 
 #### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Informations supplémentaires sur l'exportation et l'affichage des résultats de recherche dans le journal d'audit
 
@@ -415,6 +415,8 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Fichier déplacé|FileMoved|Un utilisateur déplace un document de son emplacement actuel sur un site vers un nouvel emplacement.|
 |(aucun)|FilePreviewed|Un utilisateur affiche l’aperçu de fichiers sur un site SharePoint ou OneDrive Entreprise. Ces événements se produisent généralement dans des volumes élevés basés sur une activité unique, comme l’affichage d’une galerie d’images.|
 |Requête de recherche effectuée|SearchQueryPerformed|Un compte d’utilisateur ou système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l’application d’une stratégie de rétention et de conservation eDiscovery aux sites et comptes OneDrive, et lors de l'application automatique d'étiquettes de rétention ou de confidentialité au contenu du site.|
+|Recyclé un fichier | Fichier recyclé | L'utilisateur déplace un fichier dans la corbeille SharePoint. |
+|Recyclé un dossier | DossierRecyclé | L'utilisateur déplace un dossier dans la corbeille SharePoint. |
 |Recyclage de toutes les versions mineures du fichier|FileVersionsAllMinorsRecycled|L’utilisateur supprime toutes les versions mineures de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage de toutes les versions du fichier|FileVersionsAllRecycled|L’utilisateur supprime toutes les versions de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage d’une version du fichier|FileVersionRecycled|L’utilisateur supprime une version de l’historique des versions d’un fichier. La version supprimée est déplacée vers la Corbeille du site.|
@@ -626,7 +628,7 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Éléments de boîte aux lettres consultés|MailItemsAccessed|Les messages sont lus ou consultés dans la boîte aux lettres. Les enregistrements d’audit pour cette activité sont déclenchés de deux manières : lorsqu’un client de courrier (par exemple, Outlook) effectue une opération de liaison sur des messages ou lorsque des protocoles de courrier (par exemple, Exchange ActiveSync ou IMAP) synchronisent des éléments dans un dossier de courrier. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. L’analyse des enregistrements d’audit pour cette activité est utile lorsque vous êtes à la recherche d'un compte de messagerie compromis. Pour plus d’informations, voir la section « Accès aux événements critiques pour des enquêtes » dans [Audits Avancés](advanced-audit.md#access-to-crucial-events-for-investigations). |
+|Éléments de boîte aux lettres consultés|MailItemsAccessed|Les messages sont lus ou consultés dans la boîte aux lettres. Les enregistrements d’audit pour cette activité sont déclenchés de deux manières : lorsqu’un client de courrier (par exemple, Outlook) effectue une opération de liaison sur des messages ou lorsque des protocoles de courrier (par exemple, Exchange ActiveSync ou IMAP) synchronisent des éléments dans un dossier de courrier. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. L’analyse des enregistrements d’audit pour cette activité est utile lorsque vous êtes à la recherche d'un compte de messagerie compromis. Pour plus d'informations, voir la section "Événements d'audit avancé" dans [Audit avancé](advanced-audit.md#advanced-audit-events). |
 |Autorisations de boîtes aux lettres de délégué ajoutées|Add-MailboxPermission|Un administrateur a attribué l’autorisation de boîte aux lettres FullAccess à un utilisateur (appelé délégué) à la boîte aux lettres d’une autre personne. L’autorisation FullAccess permet au délégué d’ouvrir la boîte aux lettres d’un autre utilisateur ainsi que de lire et de gérer le contenu de la boîte aux lettres.|
 |Utilisateur ajouté ou supprimé avec accès délégué au dossier calendrier|UpdateCalendarDelegation|Un utilisateur a été ajouté ou supprimé en tant que délégué au calendrier de la boîte aux lettres d’un autre utilisateur. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|
 |Autorisations ajoutées au dossier|AddFolderPermissions|Une autorisation de dossier a été ajoutée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
@@ -642,7 +644,7 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 |Messages supprimés définitivement de la boîte aux lettres|HardDelete|Un courrier a été supprimé définitivement du dossier Éléments récupérables (supprimé définitivement de la boîte aux lettres).|
 |Autorisations de boîtes aux lettres de délégué supprimées|Remove-MailboxPermission|Un administrateur a supprimé l’autorisation FullAccess (qui était attribuée à un délégué) à partir de la boîte lettres d’un autre utilisateur. Une fois l’autorisation FullAccess supprimée, le délégué ne peut pas ouvrir l’autre boîte aux lettres ni accéder au contenu.|
 |Autorisations supprimées du dossier|RemoveFolderPermissions|Une autorisation de dossier a été supprimée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
-|Message envoyé|Envoyer|Un message a été envoyé, répondu ou transféré. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. Pour plus d’informations, voir la section « Accès aux événements critiques pour des enquêtes » dans [Audits Avancés](advanced-audit.md#access-to-crucial-events-for-investigations).|
+|Message envoyé|Envoyer|Un message a été envoyé, répondu ou transféré. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. Pour plus d'informations, voir la section « Événements d'audit avancé » dans [Audit avancé](advanced-audit.md#advanced-audit-events).|
 |Message envoyé à l’aide d’autorisations Envoyer en tant que|SendAs|Un message a été envoyé à l'aide de l'autorisation SendAs. Cela signifie qu'un autre utilisateur a envoyé le message comme s'il provenait du propriétaire de la boîte aux lettres.|
 |Message envoyé à l’aide d’autorisations Envoyer de la part de|SendOnBehalf|Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.|
 |Règles de boîte de réception mises à jour à partir du client Outlook|UpdateInboxRules|Un propriétaire de boîte aux lettres ou un autre utilisateur ayant accès à la boîte aux lettres a modifié une règle de boîte de réception dans le client Outlook.|
@@ -810,6 +812,9 @@ Pour obtenir une description des activités de l’application Shifts, consultez
 
 Le tableau suivant répertorie les activités des utilisateurs et des administrateurs dans Yammer qui sont enregistrées dans le journal d’audit. Pour renvoyer des activités Yammer du journal d’audit, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités**. Utilisez les zones des plages de dates et la liste **Utilisateurs** pour limiter les résultats de la recherche.
 
+> [!NOTE]
+> Certaines activités d'audit de Yammer ne sont disponibles que dans l'audit avancé. Cela signifie que les utilisateurs doivent se voir attribuer la licence appropriée avant que ces activités ne soient enregistrées dans le journal d'audit. Pour plus d'informations sur les activités disponibles uniquement dans l'audit avancé, voir [Audit avancé](advanced-audit.md#advanced-audit-events) dans Microsoft 365 . Pour connaître les conditions de licence de l'audit avancé, consultez la section [Solutions d'audit dans Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>Dans le tableau suivant, les activités d'audit avancé sont marquées d'un astérisque (*).
+
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
 |Modification d’une stratégie de rétention des données|SoftDeleteSettingsUpdated|Un administrateur vérifié met à jour le paramètre de stratégie de rétention des données de réseau en vue d’une suppression définitive ou réversible. Seuls des administrateurs vérifiés peuvent effectuer cette opération.|
@@ -819,16 +824,22 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 |Modification de la configuration de la sécurité|NetworkSecurityConfigurationUpdated|Un administrateur vérifié met à jour la configuration de sécurité du réseau Yammer. Cela inclut la définition des stratégies d’expiration de mot de passe et les restrictions d’adresses IP. Seuls les administrateurs vérifiés peuvent effectuer cette opération.|
 |Création de fichier|FileCreated|Un utilisateur charge un fichier.|
 |Groupe créé|GroupCreation|L’utilisateur crée un groupe.|
+|Message créé<sup>*</sup>|MessageCréé|L’utilisateur crée un groupe.|
 |Groupe supprimé|GroupDeletion|Un groupe est supprimé de Yammer.|
 |Message supprimé|MessageDeleted|Un utilisateur supprime un message.|
 |Fichier téléchargé|FileDownloaded|Un utilisateur télécharge un fichier.|
 |Données exportées|DataExport|Un administrateur vérifié exporte des données de réseau Yammer. Seuls les administrateurs vérifiés peuvent effectuer cette opération.|
+|Échec de l'accès à la communauté<sup>*</sup>|CommunityAccessFailure|L'utilisateur n'a pas réussi à accéder à une communauté.|
+|Échec de l'accès au fichier<sup>*</sup>|FileAccessFailure|L'utilisateur n'a pas réussi à accéder à un fichier.|
+|Échec de l'accès au message<sup>*</sup>|MessageAccessFailure|L'utilisateur n'a pas réussi à accéder à un message.|
 |Partage de fichier|FileShared|Un utilisateur partage un fichier avec un autre utilisateur.|
 |Suspension d’un utilisateur du réseau|NetworkUserSuspended|Un administrateur réseau ou vérifié suspend (désactive) un utilisateur de Yammer.|
 |Utilisateur suspendu|UserSuspension|Un compte d’utilisateur est suspendu (désactivé).|
 |Mise à jour de la description d’un fichier|FileUpdateDescription|Un utilisateur modifie la description d’un fichier.|
 |Mise à jour d’un nom de fichier|FileUpdateName|Un utilisateur modifie le nom d’un fichier.|
+|Message mis à jour<sup>*</sup>|MessageUpdated|Un utilisateur met à jour un message.|
 |Affichage d’un fichier|FileVisited|Un utilisateur affiche un fichier.|
+|Message affiché<sup>*</sup>|MessageViewed|Un utilisateur affiche un message.|
 ||||
 
 ### <a name="microsoft-power-automate-activities"></a>Activités Microsoft Power Automate
@@ -867,12 +878,12 @@ Le tableau suivant illustre une liste d’activités que vous pouvez rechercher 
 
 ### <a name="microsoft-forms-activities"></a>Activités Microsoft Forms
 
-Le tableau suivant répertorie les activités des utilisateurs et des administrateurs dans Microsoft Forms qui sont enregistrées dans le journal d’audit. Microsoft Forms est un outil de formulaire/questionnaire/enquête utilisé pour collecter des données pour analyse. 
+Les tableaux de cette section présentent les activités des utilisateurs et des administrateurs de Microsoft Forms qui sont enregistrées dans le journal d'audit. Microsoft Forms est un outil de formulaire/questionnaire/enquête utilisé pour collecter des données pour analyse. Dans les descriptions ci-dessous, certaines opérations contiennent d’autres paramètres d’activité.
 
-Dans les descriptions ci-dessous, certaines opérations contiennent d’autres paramètres d’activité.
+Si une activité Forms est réalisée par un co-auteur ou un répondant anonyme, elle est enregistrée de façon légèrement différente. Pour plus d’informations, voir la section [Activités Forms réalisées par des co-auteurs ou des répondants anonymes](#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
 > [!NOTE]
-> Si une activité Forms est réalisée par un co-auteur ou un répondant anonyme, elle est enregistrée de façon légèrement différente. Pour plus d’informations, voir la section [Activités Forms réalisées par des co-auteurs ou des répondants anonymes](#forms-activities-performed-by-coauthors-and-anonymous-responders).
+> Certaines activités de formulaires d'audit ne sont disponibles que dans l'audit avancé. Cela signifie que les utilisateurs doivent se voir attribuer la licence appropriée avant que ces activités ne soient enregistrées dans le journal d'audit. Pour plus d'informations sur les activités disponibles uniquement dans l'audit avancé, voir [Audit avancé](advanced-audit.md#advanced-audit-events) dans Microsoft 365 . Pour connaître les conditions de licence de l'audit avancé, consultez la section [Solutions d'audit dans Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>Dans le tableau suivant, les activités d'audit avancé sont marquées d'un astérisque (*).
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
@@ -900,21 +911,21 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Formulaire mis à jour état d’hameçonnage|UpdatePhishingStatus|Cet événement est enregistré chaque fois que la valeur détaillée de l’état de sécurité interne est modifiée, que cela modifie l’état de sécurité final ou non (par exemple, le formulaire est désormais Fermé ou Ouvert). Cela signifie que vous pouvez rencontrer des événements en double même si l’état de sécurité final n’a pas été modifié. Voici les valeurs d’état possibles pour cet événement :<br/>– Retirer <br/>– Retirer par l’administrateur <br/>– Admin débloqué <br/>– Bloqué automatiquement <br/>– Débloqué automatiquement <br/>– Utilisateur signalé <br/>– Réinitialiser l’utilisateur signalé|
 |État de l’hameçonnage de l’utilisateur mis à jour|UpdateUserPhishingStatus|Cet événement est enregistré chaque fois que la valeur de l’état de sécurité de l’utilisateur est modifiée. La valeur de l’état de l’utilisateur dans l’enregistrement d’audit est définie sur **Confirmé comme hameçonnage** lorsque l’utilisateur créé un formulaire d’hameçonnage qui est supprimé par l’équipe de sécurité de Microsoft Online. Si un administrateur débloque l’utilisateur, la valeur de l’état de l’utilisateur est définie sur **Réinitialiser en tant qu’utilisateur normal**.|
 |Invitation Forms Pro envoyée|ProInvitation|L’utilisateur clique pour activer une version d’évaluation Pro.|
-|Paramètres de formulaire mis à jour|UpdateFormSetting|Le propriétaire du formulaire met à jour un ou plusieurs paramètres de formulaire. <br><br>La propriété FormSettingName:string indique le nom des paramètres sensibles mis à jour. La propriété NewFormSettings:string indique la nouvelle valeur et le nom des paramètres mis à jour. La propriété thankYouMessageContainsLink:boolean indique que le message de remerciement mis à jour contient un lien d’URL.|
+|Paramètres de formulaire mis à jour<sup>*</sup> |UpdateFormSetting|Le propriétaire du formulaire met à jour un ou plusieurs paramètres de formulaire. <br><br>La propriété FormSettingName:string indique le nom des paramètres sensibles mis à jour. La propriété NewFormSettings:string indique la nouvelle valeur et le nom des paramètres mis à jour. Propriété thankYouMessageContainsLink:booléen indique que le message de remerciement mis à jour contient un lien URL.|
 |Paramètres d’utilisateur mis à jour|UpdateUserSetting|Le propriétaire du formulaire met à jour un paramètre d’utilisateur. <br><br>La propriété UserSettingName:string indique le nom et la nouvelle valeur du paramètre|
-|Formulaires répertoriés|ListForms|Le propriétaire du formulaire affiche une liste de formulaires. <br><br>La propriété ViewType:string indique l'affichage que le propriétaire du formulaire consulte : Tous les formulaires, Partagés avec moi ou les Formulaires de groupe|
+|Formulaires répertoriés<sup>*</sup>|ListForms|Le propriétaire du formulaire affiche une liste de formulaires. <br><br>La propriété ViewType:string indique l'affichage que le propriétaire du formulaire consulte : Tous les formulaires, Partagés avec moi ou les Formulaires de groupe|
 |Réponse envoyée|SubmitResponse|Un utilisateur envoie une réponse à un formulaire. <br><br>La propriété IsInternalForm:boolean indique si le répondant fait partie de la même organisation que le propriétaire du formulaire.|
-|Paramètre activé : tout le monde peut répondre|AllowAnonymousResponse|Le propriétaire du formulaire active le paramètre autorisant tout le monde à répondre au formulaire.|
-|Paramètre désactivé : tout le monde peut répondre|DisallowAnonymousResponse|Le propriétaire du formulaire désactive le paramètre autorisant tout le monde à répondre au formulaire.|
-|Paramètre activé : des personnes spécifiques peuvent répondre au paramètre|EnableSpecificResponse|Le propriétaire du formulaire active le paramètre autorisant uniquement des personnes ou des groupes spécifiques de l’organisation actuelle à répondre au formulaire.|
-|Paramètre désactivé : des personnes spécifiques peuvent répondre|DisableSpecificResponse|Le propriétaire du formulaire désactive le paramètre autorisant uniquement des personnes ou des groupes spécifiques de l’organisation actuelle à répondre au formulaire.|
-|Ajout d'un répondeur spécifique|AddSpecificResponder|Le propriétaire du formulaire ajoute un nouvel utilisateur ou un nouveau groupe à la liste des répondeurs spécifiques.|
-|Suppression du répondeur spécifique|RemoveSpecificResponder|Le propriétaire du formulaire supprime un utilisateur ou un groupe à la liste des répondeurs spécifiques.|
-|Collaboration désactivée|DisableCollaboration|Le propriétaire de formulaire désactive le paramètre de collaboration sur le formulaire.|
-|Activation de la collaboration d’un compte professionnel ou scolaire Office 365|EnableWorkOrSchoolCollaboration|Le propriétaire du formulaire active le paramètre autorisant les utilisateurs ayant un compte professionnel ou scolaire Office 365 à afficher et modifier le formulaire.|
-|Collaboration activée des personnes de mon organisation|EnableSameOrgCollaboration|Le propriétaire du formulaire active le paramètre autorisant les utilisateurs de l’organisation actuelle à afficher et modifier le formulaire.|
-|Collaboration activée de personnes spécifiques|EnableSpecificCollaboaration|Le propriétaire du formulaire active le paramètre autorisant uniquement des personnes ou des groupes spécifiques de l’organisation actuelle à afficher et modifier le formulaire.|
-|Connecté à un classeur Excel|ConnectToExcelWorkbook|Formulaire connecté à un classeur Excel. <br><br>La propriété ExcelWorkbookLink:string indique l’ID du classeur Excel associé du formulaire actuel.|
+|Paramètre activé : tout le monde peut répondre.<sup>*</sup>|AllowAnonymousResponse|Le propriétaire du formulaire active le paramètre autorisant tout le monde à répondre au formulaire.|
+|Paramètre désactivé : tout le monde peut répondre<sup>*</sup>.|DisallowAnonymousResponse|Le propriétaire du formulaire désactive le paramètre autorisant tout le monde à répondre au formulaire.|
+|Paramètre activé : des personnes spécifiques peuvent répondre au paramètre<sup>*</sup>.|EnableSpecificResponse|Le propriétaire du formulaire active le paramètre autorisant uniquement des personnes ou des groupes spécifiques de l’organisation actuelle à répondre au formulaire.|
+|Paramètre désactivé : des personnes spécifiques peuvent répondre<sup>*</sup>.|DisableSpecificResponse|Le propriétaire du formulaire désactive le paramètre autorisant uniquement des personnes ou des groupes spécifiques de l’organisation actuelle à répondre au formulaire.|
+|Ajout d'un répondeur spécifique<sup>*</sup>|AddSpecificResponder|Le propriétaire du formulaire ajoute un nouvel utilisateur ou un nouveau groupe à la liste des répondeurs spécifiques.|
+|Suppression du répondeur spécifique<sup>*</sup>|RemoveSpecificResponder|Le propriétaire du formulaire supprime un utilisateur ou un groupe à la liste des répondeurs spécifiques.|
+|Collaboration désactivée<sup>*</sup>|DisableCollaboration|Le propriétaire de formulaire désactive le paramètre de collaboration sur le formulaire.|
+|Activation de la collaboration d’un compte professionnel ou scolaire Office 365<sup>*</sup>|EnableWorkOrSchoolCollaboration|Le propriétaire du formulaire active le paramètre autorisant les utilisateurs ayant un compte professionnel ou scolaire Office 365 à afficher et modifier le formulaire.|
+|Collaboration activée des personnes de mon organisation<sup>*</sup>|EnableSameOrgCollaboration|Le propriétaire du formulaire active le paramètre autorisant les utilisateurs de l’organisation actuelle à afficher et modifier le formulaire.|
+|Collaboration activée de personnes spécifiques<sup>*</sup>|EnableSpecificCollaboaration|Le propriétaire du formulaire active le paramètre autorisant uniquement des personnes ou des groupes spécifiques de l’organisation actuelle à afficher et modifier le formulaire.|
+|Connecté à un classeur Excel<sup>*</sup>|ConnectToExcelWorkbook|Formulaire connecté à un classeur Excel. <br><br>La propriété ExcelWorkbookLink:string indique l’ID du classeur Excel associé du formulaire actuel.|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Activités Forms réalisées par des co-auteurs et des répondants anonymes

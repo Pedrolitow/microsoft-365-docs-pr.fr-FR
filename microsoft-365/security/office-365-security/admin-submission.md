@@ -1,5 +1,5 @@
 ---
-title: Gérer les soumissions
+title: Gérer les envois
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre à Microsoft des messages suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour la réessuration.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13520774191e9b593f962b8291c873303ddf8580
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: cb8df2eba816a5d70804bf47190c094ac9790073
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400150"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507625"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -37,11 +37,11 @@ ms.locfileid: "58400150"
 
 Dans Microsoft 365 organisations ayant des boîtes aux lettres Exchange Online, les administrateurs peuvent utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des messages électroniques, des URL et des pièces jointes à Microsoft pour analyse.
 
-Lorsque vous envoyez un message électronique, vous recevez les messages suivants :
+Lorsque vous envoyez un message électronique pour analyse, vous obtenez les résultats suivants :
 
 - **Vérification de l’authentification du** courrier électronique : détails sur la réussi ou l’échec de l’authentification de messagerie lors de sa livraison.
 - **Accès aux** stratégies : informations sur les stratégies qui ont autorisé ou bloqué le courrier entrant dans votre client, en remplacement de nos verdicts de filtre de service.
-- **Réputation/détonation de la charge utile**: examen des URL et pièces jointes du message.
+- **Réputation/détonation de la** charge utile : examen à jour des URL et pièces jointes du message.
 - **Analyse du gradeur**: révision effectuée par des élèves humains afin de confirmer si les messages sont malveillants ou non.
 
 > [!IMPORTANT]
@@ -118,7 +118,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 3. Dans la section **Sélectionner une raison d’envoyer à Microsoft,** sélectionnez l’une des options suivantes :
    - **Ne doit pas avoir été bloqué (faux positif)**
-   - **Doit avoir été bloqué**: dans l’URL qui s’affiche, le programme malveillant est le seul choix et est automatiquement sélectionné.  
+   - **Doit avoir été bloqué**: dans l’URL qui doit avoir été classée comme section qui s’affiche, un programme malveillant est le seul choix et est automatiquement sélectionné.  
 
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
@@ -177,7 +177,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 ### <a name="admin-submission-rescan-details"></a>Détails de la rescan de soumission de l’administrateur
 
-Les messages envoyés dans les soumissions d’administrateur sont examinés et les résultats affichés dans le flyout détaillé des soumissions :
+Les messages envoyés dans les soumissions d’administrateur sont examinés et les résultats sont affichés dans le flyout détaillé des soumissions :
 
 - En cas d’échec de l’authentification des e-mails de l’expéditeur au moment de la livraison.
 - Informations sur les accès à la stratégie qui auraient pu affecter ou écraser le verdict d’un message.
@@ -218,7 +218,7 @@ Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enabl
      - **ID de message réseau**
      - **Sender**
      - **Raison signalée :** **pas de courrier indésirable,** **de hameçonnage** ou de **courrier indésirable.**
-     - **Simulation de hameçonnage**: **Oui** ou **Non**
+     - **Simulation de hameçonnage** **: Oui** ou **Non**
      - **Tags**
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.

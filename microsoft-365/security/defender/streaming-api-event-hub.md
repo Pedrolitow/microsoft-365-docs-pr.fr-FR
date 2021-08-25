@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1b121ca196ba1b416b0031e3a0a7a8516bc7299
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b19b3c23716e7a9b1f78b82b3663271310603df8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256503"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508309"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers votre Hub d’événements Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "58256503"
 
 2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> inscrivez-vous à Microsoft.Informations**.
 
-3. Créez un espace de noms Hub d’événements, sélectionnez Hub d’événements **>** Ajoutez et sélectionnez le niveau de tarification, les unités de débit et la capacité de resserrement automatique en fonction de la charge attendue. Pour plus d’informations, [voir la tarification des Hubs d’événements.](https://azure.microsoft.com/pricing/details/event-hubs/)  
+3. Créez un espace de noms Hub d’événements, sélectionnez hub d’événements **>** ajoutez et sélectionnez le niveau de tarification, les unités de débit et la capacité de resserrement automatique adaptée à la charge attendue. Pour plus d’informations, [voir la tarification des Hubs d’événements.](https://azure.microsoft.com/pricing/details/event-hubs/)
 
 ### <a name="add-contributor-permissions"></a>Ajouter des autorisations de collaborateur
 
@@ -47,7 +47,7 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
 1. Définissez l’utilisateur qui se connectera à Microsoft 365 Defender en tant que collaborateur.
 
-2. Si vous vous connectez à une application, ajoutez le principal du service d’inscription de l’application en tant que lecteur, récepteur de données Azure Event Hub (cette procédure peut également être effectuée au niveau du groupe de ressources ou de l’abonnement). 
+2. Si vous vous connectez à une application, ajoutez le principal du service d’inscription d’application en tant que lecteur, récepteur de données Azure Event Hub (cette procédure peut également être effectuée au niveau du groupe de ressources ou de l’abonnement).
 
     Accédez à l’espace de noms **Hubs d’événements > contrôle d’accès (IAM) > ajouter** et vérifier sous **attributions de rôles.**
 
@@ -63,7 +63,7 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
 5. Choose **Forward events to Azure Event Hub**.
 
-6. Vous pouvez choisir d’exporter les données d’événement vers un hub d’événements unique ou d’exporter chaque table d’événements vers un hub d’événements différent dans votre espace de noms Event Hub. 
+6. Vous pouvez choisir d’exporter les données d’événement vers un hub d’événements unique ou d’exporter chaque table d’événements vers un hub d’événements différent dans votre espace de noms Event Hub.
 
 7. Pour exporter les données d’événement vers un hub d’événements unique, entrez votre nom de Hub d’événements **et** **votre ID de ressource Hub d’événements.**
 
@@ -95,7 +95,7 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
 - Pour plus d’informations sur le schéma des événements Microsoft 365 Defender, voir [vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
 
-- Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne. 
+- Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne.
 
 ## <a name="data-types-mapping"></a>Mappage des types de données
 
@@ -108,14 +108,14 @@ Pour obtenir les types de données pour les propriétés d’événement, faites
    ```kusto
    {EventType}
    | getschema
-   | project ColumnName, ColumnType 
+   | project ColumnName, ColumnType
    ```
 
-- Voici un exemple d’événement Device Info : 
+- Voici un exemple d’événement Device Info :
 
   ![Image de l’ID2 de la ressource Hub d’événements](../defender-endpoint/images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [API Microsoft 365 Defender diffusion en continu](streaming-api.md)

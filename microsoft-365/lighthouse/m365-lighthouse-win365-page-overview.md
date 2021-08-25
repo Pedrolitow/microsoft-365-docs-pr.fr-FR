@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Windows 365 (PC cloud).
-ms.openlocfilehash: 1ad05cf2cae824c0bab61635f05cbce13f6fcbd57dfcb904c0e53fd3b25e9ab0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b71beb0315c15929b20e1afd32a96bfd811a9ea9
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53907158"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507793"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>vue d Windows la page 365 (Pc cloud)  
 
@@ -33,9 +33,9 @@ Windows 365 est un service basé sur le cloud qui permet aux administrateurs de 
 Pour plus d’informations Windows 365, voir [Qu’est-ce Windows 365 ?](/windows-365/overview) Pour obtenir la liste des Windows 365 requises, voir [Requirements for Windows 365](/windows-365/requirements).
 
 > [!IMPORTANT]
-> Vous devez passer à [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) pour mettre en service des PC Cloud pour chaque client avant de pouvoir les gérer dans Microsoft 365 Lighthouse. Vous ne pouvez pas le faire à partir de Microsoft 365Lighthouse.
+> Vous devez vous rendre sur [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) pour mettre en service des PC Cloud pour chaque client avant de pouvoir les gérer dans Le Monde. Vous ne pouvez pas le faire à partir de l’intérieur de l’île.
 
-Une fois que vous avez mis en service les PC Cloud pour votre client, la carte Windows 365 sur la page d’accueil Microsoft 365 fournit une brève alerte sur les PC cloud qui ont besoin d’action, telles que le nombre de PC Cloud qui n’ont pas pu être mis en service et les échecs de connexion réseau locaux. Pour obtenir un état détaillé, sélectionnez le bouton sur la carte Windows 365 (ou sélectionnez **Windows 365** dans le volet de navigation de gauche) pour ouvrir la page Windows 365. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état des PC cloud affectés à vos clients, afficher la liste de tous les PC Cloud que vous gérez et les clients qui leur sont affectés, et afficher les connexions réseau sur site entre vos clients clients et Azure Active Directory (Azure AD) et leur état.
+Une fois que vous avez mis en service les PC Cloud pour votre client, la carte Windows 365 sur la page d’accueil Microsoft 365 fournit une brève alerte sur les PC cloud qui ont besoin d’action, telles que le nombre de PC Cloud qui n’ont pas pu être mis en service et les échecs de connexion réseau locaux. Pour obtenir un état détaillé, sélectionnez le bouton sur la carte Windows 365 (ou sélectionnez **Windows 365** dans le volet de navigation de gauche) pour ouvrir la page Windows 365. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état des PC Cloud affectés à vos clients, afficher la liste de tous les PC Cloud que vous gérez et les clients qui leur sont affectés, et afficher les connexions réseau sur site entre vos clients clients et Azure Active Directory (Azure AD) et leur état.
 
 ## <a name="overview-tab"></a>Onglet Overview
 
@@ -43,7 +43,7 @@ Sous l’onglet Vue d’ensemble, la barre de nombre d’annotations colorée af
 
 Vous pouvez voir une répartition des statuts de l’ordinateur cloud pour chaque client dans la liste sous la barre d’annotations. Pour voir quels locataires ont des PC Cloud avec un état spécifique, sélectionnez cet état dans la barre d’annotations de nombre pour filtrer la liste. Pour voir les statuts du Cloud PC pour  un ou plusieurs clients spécifiques, utilisez le menu déroulant Clients pour filtrer la liste.
 
-Pour obtenir des informations détaillées sur l’état d’un client particulier, sélectionnez une valeur sous l’une des colonnes d’état de ce client. Selon la colonne dans laquelle se trouve la valeur, l’onglet **Connexions** réseau sur site ou Tous les PC **cloud** s’ouvre et affiche plus d’informations.
+Pour obtenir des informations détaillées sur l’état d’un client particulier, sélectionnez une valeur sous l’une des colonnes d’état de ce client. Selon la colonne dans laquelle se trouve la valeur, l’onglet **Connexions** réseau sur site ou Tous les **PC cloud** s’ouvre et affiche plus d’informations.
 
 L’onglet Vue d’ensemble inclut également les options suivantes :
 
@@ -68,7 +68,7 @@ Vous pouvez afficher tous les PC cloud et leur état d’approvisionnement dans 
 
 Pour voir quels locataires ont des PC Cloud avec un état d’approvisionnement spécifique, sélectionnez cet état dans la barre d’annotations de nombre pour filtrer la liste. Pour voir les **statuts** de mise en service de Cloud PC pour un ou plusieurs clients spécifiques, utilisez le menu déroulant Clients pour filtrer la liste.
 
-Sélectionnez n’importe quel PC cloud dans la liste pour afficher plus de détails. Si vous avez besoin d’agir sur le PC cloud, il existe des options pour afficher les stratégies d’approvisionnement des locataires et les détails de l’appareil dans Microsoft Endpoint Manager.
+Sélectionnez n’importe quel PC cloud dans la liste pour afficher plus de détails. Si vous devez prendre des mesures sur le PC cloud, il existe des options pour afficher les stratégies d’approvisionnement des locataires et les détails de l’appareil dans Microsoft Endpoint Manager.
 
 L’onglet Tous les PC cloud inclut également les options suivantes :
 
@@ -83,7 +83,7 @@ Pour consulter la liste complète des statuts des PC cloud et leur description, 
 
 ## <a name="on-premises-network-connections-tab"></a>Onglet Connexions réseau sur site
 
-Sous l’onglet Connexions réseau sur site, la barre de nombre d’annotations couleur affiche le nombre total de connexions réseau sur site sur tous les clients qui ont les statuts suivants : Connexions réussies et Connexions échouées.
+Sous l’onglet Connexions réseau sur site, la barre de nombre d’annotations en couleur affiche le nombre total de connexions réseau sur site sur tous les clients qui ont les états suivants : Connexions réussies et Connexions échouées.
 
 Dans la liste sous la barre d’annotations de nombre, vous pouvez afficher toutes les connexions réseau sur site et leur état de connexion.
 
@@ -99,7 +99,7 @@ L’onglet Connexions réseau local inclut également les options suivantes :
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/on-prem-network-connections-tab.png" alt-text="Capture d’écran Windows onglet Connexions réseau 365 sur site.":::
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Qu’est-Windows 365 ?](/windows-365/overview) (article)\
 [Windows vue d’ensemble de](/windows-365/device-management-overview) la gestion des appareils 365 pour les PC cloud (article)\

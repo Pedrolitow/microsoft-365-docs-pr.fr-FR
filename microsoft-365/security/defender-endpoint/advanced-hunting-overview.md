@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du chasse avancée dans Microsoft Defender pour point de terminaison
+title: Vue d’ensemble du recherche avancée dans Microsoft Defender pour point de terminaison
 description: Utiliser les fonctionnalités de recherche de menaces dans Microsoft Defender pour point de terminaison pour créer des requêtes qui trouvent des menaces et des faiblesses dans votre réseau
 keywords: repérage avancé, repérage de menace, repérage de cybermenace, mdatp, microsoft defender atp, microsoft defender pour le point de terminaison, wdatp, recherche, requête, télémétrie, détections personnalisées, schéma, kusto, fuseau horaire, UTC
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c824afa68b42639a82d46d70f13f4a70b266a0492f1d41ebf463cb7975bff7f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d52fe03786e4fff94ca08fdc7e5c7951a0d6e33
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829866"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506506"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Recherche proactive des menaces avec le chasse avancée
 
@@ -30,7 +30,7 @@ ms.locfileid: "53829866"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
 Le repérage avancé est un outil de repérage de menaces basé sur des requêtes qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau pour localiser les indicateurs et entités de menace. L’accès flexible aux données permet un recherche sans contraintes pour les menaces connues et potentielles.
 
@@ -58,16 +58,15 @@ Nous vous recommandons de suivre plusieurs étapes pour devenir rapidement opér
 |Objectif d’apprentissage|Description|Ressource|
 |---|---|---|
 |**Découvrir la langue**|La recherche avancée est basée sur le langage de requête [Kusto,](/azure/kusto/query/)en charge de la même syntaxe et des mêmes opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête.|[Vue d'ensemble du language de requête](advanced-hunting-query-language.md)|
-|**Découvrez comment utiliser les résultats de la requête**|Découvrez les graphiques et les différentes façons d’afficher ou d’exporter vos résultats. Découvrez comment modifier rapidement les requêtes et explorer les détails pour obtenir des informations plus riches.|[Utiliser les résultats d’une requête](advanced-hunting-query-results.md)|
+|**Découvrez comment utiliser les résultats de la requête**|Découvrez les graphiques et les différentes façons d’afficher ou d’exporter vos résultats. Découvrez comment vous pouvez modifier rapidement les requêtes et explorer les différentes façons d’obtenir des informations plus riches.|[Utiliser les résultats d’une requête](advanced-hunting-query-results.md)|
 |**Comprendre le schéma**|Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes.|[Référence de schéma](advanced-hunting-schema-reference.md)|
 |**Utiliser des requêtes prédéfinies**|Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces.|[Requêtes partagées](advanced-hunting-shared-queries.md)|
-|**Optimiser les requêtes et gérer les erreurs**|Comprendre comment créer des requêtes efficaces et sans erreur.|- [Meilleures pratiques en matière de requête](advanced-hunting-best-practices.md)<br>- [Gérer les erreurs](advanced-hunting-errors.md)|
-|**Obtenir la couverture la plus complète**|Utilisez les paramètres d’audit pour fournir une meilleure couverture des données à votre organisation.|- [Étendre la couverture de recherche avancée](advanced-hunting-extend-data.md)|
-|**Exécuter un examen rapide**|Exécutez rapidement une requête de recherche avancée pour examiner les activités suspectes.|- [Recherche rapide des informations sur l’entité ou les événements avec *la recherche de go*](advanced-hunting-go-hunt.md)|
-|**Contenir des menaces et résoudre les compromissions**|Répondre aux attaques en mettre en quarantaine des fichiers, en limitant l’exécution de l’application et d’autres actions|- [Prendre des mesures sur les résultats de requête de recherche avancée](advanced-hunting-take-action.md)|
-|**Créer des règles de détection personnalisées**|Comprendre comment utiliser des requêtes de recherche avancées pour déclencher des alertes et prendre des actions de réponse automatiquement.|- [Vue d’ensemble des détections personnalisées](overview-custom-detections.md)<br>- [Règles de détection personnalisées](custom-detection-rules.md)|
+|**Optimiser les requêtes et gérer les erreurs**|Comprendre comment créer des requêtes efficaces et sans erreur.|[Meilleures pratiques en matière de requête](advanced-hunting-best-practices.md) <p> [Gestion des erreurs](advanced-hunting-errors.md)|
+|**Obtenir la couverture la plus complète**|Utilisez les paramètres d’audit pour fournir une meilleure couverture des données à votre organisation.|[Étendre la couverture de recherche avancée](advanced-hunting-extend-data.md)|
+|**Exécuter un examen rapide**|Exécutez rapidement une requête de recherche avancée pour examiner les activités suspectes.|[Recherche rapide des informations sur l’entité ou les événements avec *la recherche de go*](advanced-hunting-go-hunt.md)|
+|**Contenir des menaces et résoudre les compromissions**|Répondre aux attaques en mettre en quarantaine des fichiers, en limitant l’exécution de l’application et d’autres actions|[Prendre des mesures sur les résultats de requête de recherche avancée](advanced-hunting-take-action.md)|
+|**Créer des règles de détection personnalisées**|Comprendre comment utiliser des requêtes de recherche avancées pour déclencher des alertes et prendre des actions de réponse automatiquement.|[Vue d’ensemble des détections personnalisées](overview-custom-detections.md) <p> [Règles de détection personnalisée](custom-detection-rules.md)|
 |
-
 
 ## <a name="data-freshness-and-update-frequency"></a>Actualisation des données et fréquence de mise à jour
 

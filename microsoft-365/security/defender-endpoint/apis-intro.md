@@ -2,7 +2,7 @@
 title: Accéder aux API Microsoft Defender pour point de terminaison
 ms.reviewer: ''
 description: Découvrez comment vous pouvez utiliser les API pour automatiser les flux de travail et innover en fonction des fonctionnalités de Microsoft Defender for Endpoint
-keywords: api, api, wdatp, api d’ouverture, microsoft defender pour l’api de point de terminaison, microsoft defender atp, api publique, api pris en charge, alertes, appareil, utilisateur, domaine, ip, fichier, recherche avancée, requête
+keywords: api, api, wdatp, api ouverte, microsoft defender pour l’api de point de terminaison, microsoft defender atp, api publique, api pris en charge, alertes, appareil, utilisateur, domaine, ip, fichier, recherche avancée, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 817840c1c6a234523962667992e59225adb49b190feaaabdcb9d4ab420ad4ad8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a49c4993e6d81c90139e043683193f2ee6e532bf
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857858"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506505"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Accéder aux API Microsoft Defender pour point de terminaison 
+# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Accéder aux API Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ Defender pour le point de terminaison expose la plupart de ses données et actio
 
 Regardez cette vidéo pour obtenir une vue d’ensemble rapide des API de Defender for Endpoint.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
 
@@ -55,7 +55,7 @@ Vous pouvez accéder à l’API Defender for Endpoint avec le contexte **de l’
   Étapes à suivre pour accéder à l’API Defender for Endpoint avec le contexte de l’application :
 
   1. Créez une application web AAD.
-  2. Attribuez l’autorisation souhaitée à l’application, par exemple, « Lire les alertes » et « Isoler les ordinateurs ». 
+  2. Attribuez l’autorisation souhaitée à l’application, par exemple, « Lire les alertes » et « Isoler les ordinateurs ».
   3. Créez une clé pour cette application.
   4. Obtenir un jeton à l’aide de l’application avec sa clé.
   5. Utiliser le jeton pour accéder à l’API Microsoft Defender for Endpoint
@@ -64,18 +64,18 @@ Vous pouvez accéder à l’API Defender for Endpoint avec le contexte **de l’
 
 - **Contexte utilisateur :**
 
-  Permet d’effectuer des actions dans l’API pour le compte d’un utilisateur.
+  Permet d’effectuer des actions dans l’API au nom d’un utilisateur.
 
   Étapes à suivre pour accéder à l’API Defender pour Endpoint avec le contexte de l’application :
 
   1. Créez une application native AAD.
-  2. Attribuez l’autorisation souhaitée à l’application, par exemple « Lire les alertes » et « Isoler les ordinateurs » etc. 
+  2. Attribuez l’autorisation souhaitée à l’application, par exemple « Lire les alertes » et « Isoler les ordinateurs » etc.
   3. Obtenir un jeton à l’aide de l’application avec les informations d’identification de l’utilisateur.
   4. Utiliser le jeton pour accéder à l’API Microsoft Defender for Endpoint
 
      Pour plus d’informations, voir [Obtenir l’accès avec le contexte utilisateur.](exposed-apis-create-app-nativeapp.md)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [API Microsoft Defender pour point de terminaison](exposed-apis-list.md)
 - [Accéder à Microsoft Defender pour le point de terminaison avec le contexte de l’application](exposed-apis-create-app-webapp.md)

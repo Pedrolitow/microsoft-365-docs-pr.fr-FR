@@ -1,6 +1,6 @@
 ---
 title: Évaluer la protection du réseau
-description: Découvrez comment fonctionne la protection du réseau en testant les scénarios courants contre qui elle est protégée.
+description: Découvrez le fonctionnement de la protection réseau en testant les scénarios courants contre qui elle est protégée.
 keywords: Protection du réseau, attaques, site web malveillant, ip, domaine, domaines, évaluer, tester, démonstration
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f32e6be475ad61b83220a76527b625f2aa06580d6a181cdd8f8133eba2d27211
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: be5cbc03fa75d65d2c3fabbbf42594098d0d9d69
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898410"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507973"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 
@@ -38,7 +38,7 @@ Cet article vous aide à évaluer la protection du réseau en activant la foncti
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Activer la protection réseau en mode audit
 
-Activez la protection réseau en mode audit pour voir les adresses IP et les domaines qui auraient été bloqués. Vous pouvez vous assurer qu’elle n’affecte pas les applications métier ou qu’elle vous donne une idée de la fréquence des blocages.
+Activez la protection réseau en mode audit pour voir les adresses IP et les domaines qui auraient été bloqués. Vous pouvez vous assurer qu’elle n’affecte pas les applications métiers ou qu’elle vous donne une idée de la fréquence des blocages.
 
 1. Tapez **powershell** dans la menu Démarrer, cliquez avec le bouton **droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur**
 2. Entrez l’cmdlet suivante :
@@ -51,24 +51,31 @@ Activez la protection réseau en mode audit pour voir les adresses IP et les dom
 
 1. Ouvrez Internet Explorer, Google Chrome ou tout autre navigateur de votre choix.
 
-1. Accédez à [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
+2. Accédez à [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
 
 La connexion réseau est autorisée et un message de test s’affiche.
 
 ![Exemple de notification qui indique connexion bloquée : votre administrateur informatique a Sécurité Windows bloquer cette connexion réseau. Contactez votre service d’aide aux informations.](images/np-notif.png)
+
+> [!NOTE]
+> Les connexions réseau peuvent être réussies même si un site est bloqué par la protection réseau. Pour plus d’informations, voir Protection du réseau et protocole d’accès [triple TCP.](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows’observateur d’événements
 
 Pour passer en revue les applications qui auraient été bloquées, ouvrez l’Observateur d’événements et filtrez l’ID d’événement 1125 dans le journal Microsoft-Windows-Windows-Defender/Opérationnel. Le tableau suivant répertorie tous les événements de protection réseau.
 
 | ID d’événement | Fournir/Source | Description |
-|-|-|-|
-|5007 | Windows Defender (opérationnel) | Événement lorsque les paramètres sont modifiés |
-|1125 | Windows Defender (opérationnel) | Événement lors de l’audit d’une connexion réseau |
-|1126 | Windows Defender (opérationnel) | Événement lors du blocage d’une connexion réseau |
+|---|---|---|
+| 5007 | Windows Defender (opérationnel) | Événement lorsque les paramètres sont modifiés |
+| 1125 | Windows Defender (opérationnel) | Événement lors de l’audit d’une connexion réseau |
+| 1126 | Windows Defender (opérationnel) | Événement lors du blocage d’une connexion réseau |
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Protection du réseau](network-protection.md)
-* [Activer la protection réseau](enable-network-protection.md)
-* [Résoudre les problèmes de protection du réseau](troubleshoot-np.md)
+- [Protection du réseau](network-protection.md)
+
+- [Protection du réseau et protocole d’auto-transport TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
+- [Activer la protection réseau](enable-network-protection.md)
+
+- [Résoudre les problèmes de protection du réseau](troubleshoot-np.md)

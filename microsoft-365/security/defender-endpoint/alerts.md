@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77e7b86de5369b6a65224579de214d32c1f628e3
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377976"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508249"
 ---
 # <a name="alert-resource-type"></a>Type de ressource Alerte
 
@@ -36,55 +36,64 @@ ms.locfileid: "58377976"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="methods"></a>Méthodes
 
-Méthode |Type renvoyé |Description
-:---|:---|:---
-[Obtenir une alerte](get-alert-info-by-id.md) | [Alerte](alerts.md) | Obtenir un objet [d’alerte](alerts.md) unique.
-[Répertorier les alertes](get-alerts.md) | [Collection d’alertes](alerts.md) | Liste de la collection [d’alertes.](alerts.md)
-[Mettre à jour une alerte](update-alert.md) | [Alerte](alerts.md) | Mettre à jour une [alerte spécifique.](alerts.md)
-[Alertes de mise à jour par lot](batch-update-alerts.md) | | Mettre à jour un lot [d’alertes.](alerts.md)
-[Créer une alerte](create-alert-by-reference.md)|[Alerte](alerts.md)|Créez une alerte basée sur les données d’événement obtenues à partir [de la recherche avancée](run-advanced-query-api.md).
-[Liste des domaines associés](get-alert-related-domain-info.md)|Collection de domaines| Ré lister les URL associées à l’alerte.
-[Liste des fichiers associés](get-alert-related-files-info.md) | [Collection de](files.md) fichiers |  Liste des [entités](files.md) de fichier associées à [l’alerte.](alerts.md)
-[Liste des IP associées](get-alert-related-ip-info.md) | Collection d’adresses IP | List IPs that are associated with the alert.
-[Obtenir des ordinateurs associés](get-alert-related-machine-info.md) | [Ordinateur](machine.md) | [L’ordinateur](machine.md) associé à [l’alerte](alerts.md).
-[Obtenir des utilisateurs associés](get-alert-related-user-info.md) | [Utilisateur](user.md) | Utilisateur [associé](user.md) à [l’alerte.](alerts.md)
+<br>
+
+****
+
+|Méthode|Type renvoyé|Description|
+|---|---|---|
+|[Obtenir une alerte](get-alert-info-by-id.md)|[Alerte](alerts.md)|Obtenir un objet [d’alerte](alerts.md) unique.|
+|[Répertorier les alertes](get-alerts.md)|[Collection d’alertes](alerts.md)|Liste de la collection [d’alertes.](alerts.md)|
+|[Mettre à jour une alerte](update-alert.md)|[Alerte](alerts.md)|Mettre à jour une [alerte spécifique.](alerts.md)|
+|[Alertes de mise à jour par lot](batch-update-alerts.md)||Mettre à jour un lot [d’alertes.](alerts.md)|
+|[Créer une alerte](create-alert-by-reference.md)|[Alerte](alerts.md)|Créez une alerte basée sur les données d’événement obtenues à partir [de la recherche avancée](run-advanced-query-api.md).|
+|[Liste des domaines associés](get-alert-related-domain-info.md)|Collection de domaines|Ré lister les URL associées à l’alerte.|
+|[Liste des fichiers associés](get-alert-related-files-info.md)|[Collection de](files.md) fichiers|Liste des [entités](files.md) de fichier associées à [l’alerte.](alerts.md)|
+|[Liste des IP associées](get-alert-related-ip-info.md)|Collection d’adresses IP|List IPs that are associated with the alert.|
+|[Obtenir des ordinateurs associés](get-alert-related-machine-info.md)|[Ordinateur](machine.md)|[L’ordinateur](machine.md) associé à [l’alerte](alerts.md).|
+|[Obtenir des utilisateurs associés](get-alert-related-user-info.md)|[Utilisateur](user.md)|Utilisateur [associé](user.md) à [l’alerte.](alerts.md)|
+|
 
 ## <a name="properties"></a>Propriétés
 
-Propriété |    Type    |    Description
-:---|:---|:---
-id | String | ID d’alerte.
-title | String | Titre de l’alerte.
-description | String | Description de l’alerte.
-alertCreationTime | Nullable DateTimeOffset | Date et heure (au UTC) de création de l’alerte.
-lastEventTime | Nullable DateTimeOffset | Dernière occurrence de l’événement qui a déclenché l’alerte sur le même appareil.
-firstEventTime | Nullable DateTimeOffset | Première occurrence de l’événement qui a déclenché l’alerte sur cet appareil.
-lastUpdateTime | Nullable DateTimeOffset | Date et heure (au UTC) de la dernière mise à jour de l’alerte.
-resolvedTime | Nullable DateTimeOffset | Date et heure à laquelle l’état de l’alerte a été modifié en « Résolu ».
-incidentId | Nullable Long | ID [d’incident](view-incidents-queue.md) de l’alerte.
-investigationId | Nullable Long | ID [d’examen](automated-investigations.md) lié à l’alerte.
-investigationState | Nullable, enum | L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallySystemigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
-assignedTo | String | Propriétaire de l’alerte.
-rbacGroupName | String | Nom du groupe d’appareils RBAC.
-mitreTechniques | String | ID Enterprise technique mitre.
-relatedUser | String |  Détails de l’utilisateur associé à une alerte spécifique.
-Sévérité  | Énum | Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified » (non spécifié), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).
-status | Énum | Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (inprogress) et « Resolved » (résolu).
-classification | Nullable, enum | Spécification de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).
-détermination | Nullable, enum | Spécifie la détermination de l’alerte. Les valeurs possibles sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.
-category| String | Catégorie de l’alerte.
-detectionSource | String | Source de détection.
-threatFamilyName | String | Famille de menaces.
-threatName | String | Nom de la menace.
-machineId | String | ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.
-computerDnsName | String | [nom complet](machine.md) de l’ordinateur.
-aadTenantId | String | ID Azure Active Directory de l’autre.
-détecteurId | String | ID du détecteur qui a déclenché l’alerte.
-commentaires | Liste des commentaires d’alerte | L’objet Comment de l’alerte contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.
-Évidence | Liste des preuves d’alerte | Preuve liée à l’alerte. Voir l’exemple ci-dessous.
+<br>
+
+****
+
+|Propriété|Type|Description|
+|---|---|---|
+|id|String|ID d’alerte.|
+|title|String|Titre de l’alerte.|
+|description|String|Description de l’alerte.|
+|alertCreationTime|Nullable DateTimeOffset|Date et heure (au UTC) de création de l’alerte.|
+|lastEventTime|Nullable DateTimeOffset|Dernière occurrence de l’événement qui a déclenché l’alerte sur le même appareil.|
+|firstEventTime|Nullable DateTimeOffset|Première occurrence de l’événement qui a déclenché l’alerte sur cet appareil.|
+|lastUpdateTime|Nullable DateTimeOffset|Date et heure (au UTC) de la dernière mise à jour de l’alerte.|
+|resolvedTime|Nullable DateTimeOffset|Date et heure à laquelle l’état de l’alerte a été modifié en « Résolu ».|
+|incidentId|Nullable Long|ID [d’incident](view-incidents-queue.md) de l’alerte.|
+|investigationId|Nullable Long|ID [d’examen](automated-investigations.md) lié à l’alerte.|
+|investigationState|Nullable, enum|L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallySystemigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
+|assignedTo|String|Propriétaire de l’alerte.|
+|rbacGroupName|String|Nom du groupe d’appareils RBAC.|
+|mitreTechniques|String|ID Enterprise technique mitre.|
+|relatedUser|String|Détails de l’utilisateur associé à une alerte spécifique.|
+|Sévérité |Énum|Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified » (non spécifié), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).|
+|status|Énum|Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (inprogress) et « Resolved » (résolu).|
+|classification|Nullable, enum|Spécification de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).|
+|détermination|Nullable, enum|Spécifie la détermination de l’alerte. Les valeurs possibles sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
+|category|String|Catégorie de l’alerte.|
+|detectionSource|String|Source de détection.|
+|threatFamilyName|String|Famille de menaces.|
+|threatName|String|Nom de la menace.|
+|machineId|String|ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.|
+|computerDnsName|String|[nom complet](machine.md) de l’ordinateur.|
+|aadTenantId|String|ID Azure Active Directory de l’autre.|
+|détecteurId|String|ID du détecteur qui a déclenché l’alerte.|
+|commentaires|Liste des commentaires d’alerte|L’objet Comment de l’alerte contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.|
+|Évidence|Liste des preuves d’alerte|Preuve liée à l’alerte. Voir l’exemple ci-dessous.|
+|
 
 ### <a name="response-example-for-getting-single-alert"></a>Exemple de réponse pour l’obtention d’une alerte unique :
 

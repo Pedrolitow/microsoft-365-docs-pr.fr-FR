@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: adfe076160ca9499cace6807a0f5697a3055c1534bf4d88d57fd9337a130a575
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44db65f08c84cdcce819773958881320d7c99705
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834337"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507781"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (anciennement Microsoft Flow) et Azure Functions
 
@@ -35,7 +35,7 @@ ms.locfileid: "53834337"
 
 - Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-L’automatisation des procédures de sécurité est une exigence standard pour chaque centre d’opérations de sécurité moderne. L’absence de cyber-défenseurs professionnels force SOC à fonctionner de la manière la plus efficace et l’automatisation est une chose à faire. Microsoft Power Automate prend en charge différents connecteurs qui ont été créés exactement pour cela. Vous pouvez créer une automatisation de procédure de bout en bout en quelques minutes.
+L’automatisation des procédures de sécurité est une exigence standard pour chaque centre d’opérations de sécurité moderne. L’absence de cyber-défenseurs professionnels force SOC à travailler de la manière la plus efficace et l’automatisation est une chose à faire. Microsoft Power Automate prend en charge différents connecteurs qui ont été créés exactement pour cela. Vous pouvez créer une automatisation de procédure de bout en bout en quelques minutes.
 
 L’API Microsoft Defender dispose d’un connecteur Flow officiel avec de nombreuses fonctionnalités.
 
@@ -51,7 +51,7 @@ L’exemple suivant montre comment créer une Flow qui est déclenchée chaque f
 
 1. Connectez-vous [à Microsoft Power Automate](https://flow.microsoft.com).
 
-2. Go to **My flows**  >  **New**  >  **Automated-from blank**.
+2. Go to **My flows** \> **New** \> **Automated-from blank**.
 
     ![Image de modification des informations d’identification2](images/api-flow-1.png)
 

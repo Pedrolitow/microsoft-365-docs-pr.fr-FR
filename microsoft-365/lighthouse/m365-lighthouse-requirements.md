@@ -16,23 +16,23 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés, obtenez la liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: 1d2f2812e2f22060c2e401519f18ae8dc6f1959993ef7703fa1a9add69e9ae14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2247afb35e3b0e4757d7a6786b3a6a9027491e06
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847954"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507805"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Conditions requises pour Microsoft 365 Lighthouse
 
 > [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont disponibles uniquement pour les partenaires qui répondent aux exigences répertoriées dans cet article. Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux exigences répertoriées dans cet article. Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer les appareils, les données et les utilisateurs à grande échelle pour les petites et moyennes entreprises (SMB).  
 
-Les MSP doivent être inscrits au programme fournisseur de solutions Cloud (CSP) en tant que revendeur indirect ou partenaire de facture directe pour utiliser Microsoft 365 Lighthouse.  
+Les MSP doivent être inscrits au programme fournisseur de solutions Cloud (CSP) en tant que revendeur indirect ou partenaire de facture directe pour utiliser le Programme d’accès au détail.  
 
-En outre, chaque client MSP doit être éligible Microsoft 365 Lighthouse en suivant les exigences suivantes : 
+En outre, chaque client MSP doit être éligible à l’aide de la sécurité en se contentant des conditions suivantes : 
  
 - Privilèges d’administrateur délégués (DAP) pour le MSP 
 - Au moins une licence Microsoft 365 Business Premium licence 
@@ -47,7 +47,7 @@ Pour afficher les appareils clients sur les pages de gestion des appareils, un M
 
 ## <a name="requirements-for-enabling-usermanagement"></a>Conditions requises pour l’activation de la gestion des utilisateurs 
 
-Pour que les données client s’affichent dans les rapports sur les pages de gestion des utilisateurs, y compris les utilisateurs à risque, l’authentification multifacteur et la réinitialisation du mot de passe, les clients doivent avoir des licences pour Azure Active Directory Premium P1 ou une ultérieure. Azure AD Premium P1 est inclus dans Microsoft 365 Business Premium.   
+Pour que les données client s’afficheront dans les rapports sur les pages de gestion des utilisateurs, y compris les utilisateurs à risque, l’authentification multifacteur et la réinitialisation du mot de passe, les clients doivent avoir des licences pour Azure Active Directory Premium P1 ou une ultérieure. Azure AD Premium P1 est inclus dans Microsoft 365 Business Premium.   
 
 ## <a name="requirements-for-enablingthreat-management"></a>Conditions requises pour activer la gestion des menaces 
 
@@ -60,10 +60,10 @@ Antivirus Microsoft Defender fait partie du système d Windows d’exploitation 
 > [!NOTE] 
 > Si vous utilisez une solution antivirus non Microsoft et que vous n’utilisez pas Antivirus Microsoft Defender, Antivirus Microsoft Defender est désactivé automatiquement. Lorsque vous désinstallez la solution antivirus non Microsoft, Antivirus Microsoft Defender est activé automatiquement pour protéger vos appareils Windows contre les menaces.    
 
-## <a name="related-content"></a>Contenu connexe   
+## <a name="related-content"></a>Contenu associé   
 
 [Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise](m365-lighthouse-configure-portal-security.md) (article)\
-[Microsoft 365 Lighthouse page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[Microsoft 365 Lighthouse vue d’ensemble de la page de conformité des](m365-lighthouse-device-compliance-page-overview.md) appareils (article)\
 [Microsoft 365 Lighthouse de la page Utilisateurs](m365-lighthouse-users-page-overview.md) (article)\
 [Microsoft 365 Lighthouse de la page Gestion des menaces](m365-lighthouse-threat-management-page-overview.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml)   (article)
