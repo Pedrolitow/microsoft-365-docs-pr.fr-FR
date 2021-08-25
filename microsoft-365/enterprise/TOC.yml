@@ -193,6 +193,9 @@
           href: microsoft-365-service-health.md
         - name: Surveillance d’Exchange Online.
           href: microsoft-365-exchange-monitoring.md
+          items:
+            - name: Alertes du service d’utilisation de la boîte aux lettres
+              href: microsoft-365-mailbox-utilization-service-alerts.md
         - name: Guides de configuration
           href: setup-guides-for-microsoft-365.md
     - name: Plusieurs clients
@@ -429,7 +432,7 @@
           href: /sharepoint/sharepoint-online
         - name: Skype Entreprise
           href: /SkypeForBusiness/skype-for-business-online
-        - name: Microsoft Teams
+        - name: "Microsoft\_Teams"
           href: /MicrosoftTeams/Teams-overview
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
@@ -451,7 +454,7 @@
           href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
         - name: Skype Entreprise
           href: /SkypeForBusiness/skype-for-business-online
-        - name: Microsoft Teams
+        - name: "Microsoft\_Teams"
           href: /microsoftteams/upgrade-monitor-quality
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'

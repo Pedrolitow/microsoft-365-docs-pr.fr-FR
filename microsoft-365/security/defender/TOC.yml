@@ -188,8 +188,6 @@
               href: m365d-autoir-results.md
             - name: Résoudre les faux positifs et les négatifs
               href: m365d-autoir-report-false-positives-negatives.md
-            - name: Utiliser Microsoft Power Automate
-              href: use-power-automate.md
         - name: Repérage avancé
           items:
             - name: Vue d’ensemble du repérage avancé
@@ -324,6 +322,8 @@
               href: integrate-microsoft-365-defender-secops-use-cases.md
             - name: Étape 6. Tâches de maintenance SOC
               href: integrate-microsoft-365-defender-secops-tasks.md
+        - name: Utiliser Microsoft Power Automate
+          href: use-power-automate.md
     - name: Guides pratiques
       items:
         - name: Créer un laboratoire d’évaluation ou un environnement pilote
