@@ -1,5 +1,5 @@
 ---
-title: Étape 3. Utiliser Power Automate pour créer votre flux pour traiter vos contrats
+title: Étape 3. Utiliser Power Automate pour créer le flux pour traiter vos contrats
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,32 +11,32 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Découvrez comment utiliser Power Automate pour créer votre flux pour traiter vos contrats à l’aide d’une solution Microsoft 365.
-ms.openlocfilehash: ddf9df71c53af9f3a68dcbfd9a5b1882b67c4fbd4600e89ecec36e283848ac3e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Découvrez comment utiliser les Power Automate créer votre flux pour traiter vos contrats à l’aide d’Microsoft 365 solution.
+ms.openlocfilehash: 1de8c0c5ed25ee9934077d015f4e66c43e07c7c8
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859233"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533242"
 ---
-# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Étape 3 : Utiliser Power Automate pour créer votre flux pour traiter vos contrats
+# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Étape 3. Utiliser Power Automate pour créer le flux pour traiter vos contrats
 
-Vous avez créé votre canal de gestion des contrats et attaché votre bibliothèque de documents SharePoint. L’étape suivante consiste à créer un flux Power Automate pour traiter vos contrats que votre modèle SharePoint Syntex identifie et classifie. Vous pouvez réaliser cette étape en [créant un flux Power Automate dans votre bibliothèque de documents SharePoint.](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)
+Vous avez créé votre canal de gestion des contrats et attaché votre SharePoint de documents. L’étape suivante consiste à créer un flux Power Automate pour traiter vos contrats que votre modèle SharePoint Syntex identifie et classifie. Vous pouvez réaliser cette étape en [créant un flux Power Automate dans votre bibliothèque SharePoint documents.](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)
 
 Pour votre solution de gestion des contrats, vous souhaitez créer un flux Power Automate pour réaliser les actions suivantes :
 
--  Une fois qu’un contrat a été classé par votre modèle syntex SharePoint, modifiez l’état du contrat en **In review**.
+-  Une fois qu’un contrat a été classé par votre modèle SharePoint Syntex, modifiez l’état du contrat sur **En révision.**
 - Le contrat est ensuite examiné et approuvé ou rejeté.
 - Pour les contrats approuvés, les informations de contrat sont publiées dans un onglet pour le traitement des paiements.
 - Pour les contrats rejetés, l’équipe est avertie pour analyse approfondie. 
 
 Le diagramme suivant illustre le flux Power Automate pour la solution de gestion des contrats.
 
-![Diagramme de flux montrant l’intégralité de la solution.](../media/content-understanding/flow-entire-process.png)
+![Flow diagramme montrant l’intégralité de la solution.](../media/content-understanding/flow-entire-process.png)
 
 ## <a name="prepare-your-contract-for-review"></a>Préparer votre contrat pour révision
 
-Lorsqu’un contrat est identifié et classé par votre modèle de présentation de document SharePoint Syntex, le flux Power Automate change d’abord l’état en **In review**.
+Lorsqu’un contrat est identifié et classé par votre modèle de SharePoint Syntex document, le flux de Power Automate change d’abord l’état en **In review**.
 
 ![Mettre à jour l’état.](../media/content-understanding/flow-overview.png)
 
@@ -51,7 +51,7 @@ L’étape suivante consiste à créer une carte adaptative indiquant que le con
 
 ![Créez une carte adaptative pour révision.](../media/content-understanding/adaptive-card.png)
 
-Le code suivant est le JSON utilisé pour cette étape dans le flux Power Automate.
+Le code suivant est le JSON utilisé pour cette étape dans le Power Automate flux.
 
 ```JSON
 {
@@ -143,7 +143,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
 
 - Dans votre flux, l’état est modifié en **Approuvé**.
 
-   ![État du flux approuvé.](../media/content-understanding/status-approved.png)
+   ![Flow statut approuvé.](../media/content-understanding/status-approved.png)
 
 - Dans cette solution, les données de  contrat sont ajoutées à l’onglet Paiement afin que les paiements soient gérés. Ce processus peut être étendu pour permettre au flux de soumettre les contrats en paiement par une application financière tierce (par exemple, Dynamics CRM).
 
@@ -151,7 +151,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
 
 - Dans le flux, vous créez l’élément suivant pour déplacer les contrats approuvés vers **l’onglet** Paiement.
 
-   ![Élément de flux à déplacer vers Payer.](../media/content-understanding/ready-for-payout.png)
+   ![Flow’élément à déplacer vers Payer.](../media/content-understanding/ready-for-payout.png)
 
     Pour obtenir les expressions pour les informations nécessaires à partir de la carte Teams, utilisez les valeurs indiquées dans le tableau suivant.
  
@@ -164,7 +164,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
     
     L’exemple suivant montre comment utiliser la zone de formule dans Power Automate pour écrire une expression.
 
-   ![Capture d’écran dans Power Automate montrant une formule d’expression.](../media/content-understanding/expression-formula-power-automate.png)    
+   ![Capture d’écran Power Automate montrant une formule d’expression.](../media/content-understanding/expression-formula-power-automate.png)    
 
 - Une carte adaptative indiquant que le contrat a été approuvé est créée et publiée sur le canal de gestion des contrats.
 
@@ -173,7 +173,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
    ![Approbation de carte adaptative.](../media/content-understanding/adaptive-card.png)
 
 
-   Le code suivant est le JSON utilisé pour cette étape dans le flux Power Automate.
+   Le code suivant est le JSON utilisé pour cette étape dans le Power Automate flux.
 
 ```JSON
 { 
@@ -263,13 +263,13 @@ Lorsqu’un contrat a été rejeté, les éléments suivants se produisent :
 
 - Dans votre flux, vous consultez le fichier de contrat, modifiez l’état sur **Rejeté,** puis ré-consultez le fichier.
 
-   ![État du flux rejeté dans le fichier de contrat.](../media/content-understanding/reject-flow.png)
+   ![Flow statut rejeté dans le fichier de contrat.](../media/content-understanding/reject-flow.png)
 
 - Dans votre flux, vous créez une carte adaptative indiquant que le contrat a été rejeté.
 
-   ![L’état du flux indique le rejet sur la carte adaptative.](../media/content-understanding/reject-flow-item.png)
+   ![Flow’état de la carte adaptative est rejeté.](../media/content-understanding/reject-flow-item.png)
 
-Le code suivant est le JSON utilisé pour cette étape dans le flux Power Automate.
+Le code suivant est le JSON utilisé pour cette étape dans le Power Automate flux.
 
 ```JSON
 { 
@@ -351,4 +351,4 @@ Le code suivant est le JSON utilisé pour cette étape dans le flux Power Automa
 
 - La carte est publiée dans le canal de gestion des contrats.
 
-   ![Carte adaptative de flux à rejeter.](../media/content-understanding/rejected.png)
+   ![Flow carte adaptative à rejeter.](../media/content-understanding/rejected.png)

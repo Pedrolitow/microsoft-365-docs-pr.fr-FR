@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 281a9391fdc512882a4a7aef2dfecf51e28ce77a9724f0ba1882d75f7bbff935
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a0be19a974f7a065333ff0a5045512a2eb98a85
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839854"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532918"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurer l’accès conditionnel dans Microsoft Defender pour le point de terminaison
 
@@ -68,21 +68,21 @@ Pour activer l’accès conditionnel, prenez les mesures suivantes :
 
 ### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>Étape 1 : Activer la connexion Microsoft Intune connexion
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres points de terminaison  >  **fonctionnalités générales**  >    >    >  **avancées Microsoft Intune connexion.**
+1. Dans le volet de navigation, **sélectionnez** Paramètres points de terminaison \> **fonctionnalités générales** \>  \>  \> **avancées Microsoft Intune connexion.**
 2. Toggle the Microsoft Intune setting to **On**.
 3. Cliquez **sur Enregistrer les préférences.**
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Étape 2 : Activer l’intégration de Defender for Endpoint dans Intune
 
 1. Connectez-vous au [Portail Azure](https://portal.azure.com).
-2. Sélectionnez **La conformité de**  >  **l’appareil Microsoft Defender ATP**.
+2. Sélectionnez **La conformité de** \> **l’appareil Microsoft Defender ATP**.
 3. Définissez **Connecter Windows 10.0.15063+** sur Microsoft Defender - Protection avancée contre les **menaces sur On**.
-4. Cliquez sur **Save (Enregistrer)**.
+4. Cliquez sur **Enregistrer**.
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>Étape 3 : Créer la stratégie de conformité dans Intune
 
 1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez **Tous les services,** filtrez sur **Intune** et sélectionnez **Microsoft Intune**.
-2. Sélectionnez **Stratégies de conformité**  >  **des appareils** Créer une  >  **stratégie.**
+2. Sélectionnez **Stratégies de conformité** \> **des appareils** Créer une \> **stratégie.**
 3. Entrez un **nom et** une **description.**
 4. Dans **Plateforme,** sélectionnez **Windows 10 et ultérieures.**
 5. Dans les paramètres **d’état** de l’appareil, définissez Exiger que l’appareil soit à ou sous le niveau de menace de l’appareil **à** votre niveau préféré :
@@ -97,20 +97,20 @@ Pour activer l’accès conditionnel, prenez les mesures suivantes :
 ### <a name="step-4-assign-the-policy"></a>Étape 4 : Attribuer la stratégie
 
 1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez **Tous les services,** filtrez sur **Intune** et sélectionnez **Microsoft Intune**.
-2. Sélectionnez   >  **stratégies de** conformité des> sélectionnez votre stratégie de conformité Microsoft Defender pour les points de terminaison.
+2. Sélectionnez  \> **stratégies de** conformité des> sélectionnez votre stratégie de conformité Microsoft Defender pour les points de terminaison.
 3. Sélectionnez **Devoirs**.
 4. Incluez ou excluez vos groupes Azure AD pour leur attribuer la stratégie.
 5. Pour déployer la stratégie sur les groupes, sélectionnez **Enregistrer.** Les appareils utilisateur ciblés par la stratégie sont évalués pour la conformité.
 
 ### <a name="step-5-create-an-azure-ad-conditional-access-policy"></a>Étape 5 : Créer une stratégie d’accès conditionnel Azure AD
 
-1. Dans le [portail Azure,](https://portal.azure.com)ouvrez **Azure Active Directory** nouvelle stratégie  >  **d’accès**  >  **conditionnel.**
+1. Dans le [portail Azure,](https://portal.azure.com)ouvrez **Azure Active Directory** nouvelle stratégie \> **d’accès** \> **conditionnel.**
 2. Entrez un nom **de stratégie,** puis sélectionnez **Utilisateurs et groupes.** Utilisez les options Inclure ou Exclure pour ajouter vos groupes pour la stratégie, puis sélectionnez **Terminé**.
 3. Sélectionnez **les applications cloud** et choisissez les applications à protéger. Par exemple, **sélectionnez Sélectionner des applications,** puis **sélectionnez Office 365 SharePoint Online** et **Office 365 Exchange Online**. Sélectionnez **OK** pour enregistrer vos modifications.
 
-4. Sélectionnez **Conditions**  >  **Applications clientes** pour appliquer la stratégie aux applications et aux navigateurs. Par exemple, sélectionnez **Oui,** puis **activez** les applications mobiles **et de navigateur, ainsi que les clients de bureau.** Sélectionnez **OK** pour enregistrer vos modifications.
+4. Sélectionnez **Conditions** \> **Applications clientes** pour appliquer la stratégie aux applications et aux navigateurs. Par exemple, sélectionnez **Oui,** puis **activez** les applications mobiles **et de navigateur, ainsi que les clients de bureau.** Sélectionnez **OK** pour enregistrer vos modifications.
 
-5. Sélectionnez **Accorder pour** appliquer l’accès conditionnel en fonction de la conformité de l’appareil. Par exemple, **sélectionnez Accorder l’accès**  >  **Exiger que l’appareil soit marqué comme conforme.** Sélectionnez **Sélectionner** pour enregistrer vos modifications.
+5. Sélectionnez **Accorder pour** appliquer l’accès conditionnel en fonction de la conformité de l’appareil. Par exemple, **sélectionnez Accorder l’accès** \> **Exiger que l’appareil soit marqué comme conforme.** Sélectionnez **Sélectionner** pour enregistrer vos modifications.
 
 6. Sélectionnez **Activer la** stratégie, puis **Créez pour** enregistrer vos modifications.
 

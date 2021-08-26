@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6829e12cdfd6a2942b60e8a0b8df166686ff0485c65d739ef19285628d140305
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 143722108ef1c5df8432610ff372697fdd3407df
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857650"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532522"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Configurer les notifications Antivirus Microsoft Defender qui apparaissent sur les points de terminaison
 
@@ -38,7 +38,7 @@ Si vous faites partie de l’équipe de sécurité de votre organisation, vous p
 Vous pouvez configurer l’affichage de notifications supplémentaires, telles que des résumés récents de détection des menaces, dans [l’application Sécurité Windows et](microsoft-defender-security-center-antivirus.md) avec la stratégie de groupe.
 
 > [!NOTE]
-> Dans Windows 10 version 1607, la fonctionnalité s’appelait **notifications améliorées** et a été configurée sous Windows Paramètres mise à jour &   >  **sécurité**  >  **Windows Defender**. Dans les paramètres de stratégie de groupe pour toutes les versions de Windows 10, la fonctionnalité de notification est appelée **notifications améliorées.**
+> Dans Windows 10 version 1607, la fonctionnalité s’appelait **notifications améliorées** et a été configurée sous Windows Paramètres mise à jour &  \> **sécurité** \> **Windows Defender**. Dans les paramètres de stratégie de groupe pour toutes les versions de Windows 10, la fonctionnalité de notification est appelée **notifications améliorées.**
 
 ### <a name="use-group-policy-to-disable-additional-notifications"></a>Utiliser une stratégie de groupe pour désactiver des notifications supplémentaires
 
@@ -50,7 +50,7 @@ Vous pouvez configurer l’affichage de notifications supplémentaires, telles q
 
 4. Sélectionnez **modèles d’administration.**
 
-5. Développez l’arborescence **Windows composants Antivirus Microsoft Defender**>  >   Reporting**.
+5. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** > \>  Reporting**.
 
 6. Double-cliquez **sur Désactiver les notifications améliorées** et définissez l’option sur **Activé.** Puis sélectionnez **OK**. Cela empêche l’apparition de notifications supplémentaires.
 
@@ -90,7 +90,7 @@ Pour ajouter des informations de contact personnalisées aux notifications de po
 
 3. Dans **l’Éditeur de gestion des stratégies de** groupe, sélectionnez **Configuration** ordinateur, puis sélectionnez **Modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants**  >    >  **Antivirus Microsoft Defender’interface client.** 
+4. Développez l’arborescence **Windows composants** \>  \> **Antivirus Microsoft Defender’interface client.** 
 
 5. Double-cliquez sur **Supprimer toutes les notifications et** définissez l’option sur **Activé.** 
 
@@ -106,7 +106,7 @@ Pour ajouter des informations de contact personnalisées aux notifications de po
 
 3. Cliquez **sur Modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants**  >    >  **Antivirus Microsoft Defender’interface client.**
+4. Développez l’arborescence **Windows composants** \>  \> **Antivirus Microsoft Defender’interface client.**
 
 5. Double-cliquez **sur Supprimer les notifications** de redémarrage et définir l’option **sur Activé.** 
 

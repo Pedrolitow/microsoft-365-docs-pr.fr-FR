@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c5722a0261a0e336b5d6e6b2f5a0e3bb0c21f2b6
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: e09bcee08051663191a12c4e2916d7d6512eb514
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365020"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533230"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Préparer les certificats et les profils réseau pour le Bureau géré Microsoft  
  
@@ -74,29 +74,32 @@ Une fois que votre profil laN a été exporté, vous pouvez préparer la straté
     - OMA-URI (sensible à la cas) : Enter *./Device/Vendor/MSFT/WiredNetwork/LanXML*
     - Type de données : **sélectionnez Chaîne (fichier XML).** 
     - XML personnalisé : Télécharger fichier XML exporté.
-2. Envoyez une demande de support Microsoft Manged Desktop opérations informatiques à l’aide du portail d’administration Microsoft Manged Desktop pour passer en revue et déployer le profil de configuration sur « Appareils de lieux de travail modernes – Test ». Microsoft Manged Desktop Les opérations informatiques vous feront savoir à quel moment la demande est terminée via la demande de support dans le portail d’administration.
+2. Affectez le profil personnalisé aux *appareils d’espace de travail modernes : groupe de* test.
+3. Faites les tests nécessaires à l’aide d’un appareil qu’il se place dans le groupe de déploiement Test. Si l’opération réussit, affectez le profil personnalisé aux appareils d’espace de travail modernes *(* First , *Modern Workplace Devices – Fast*, and Modern Workplace Devices – *Larges* groupes.
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Déployer des certificats et un profil Wi-Fi/VPN 
  
  
 Pour déployer des certificats et des profils, suivez les étapes suivantes :
 
-1. Créez un profil pour chacun des certificats racines et intermédiaires (voir [Créer des profils de certificats de confiance.](/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles) Chacun de ces profils doit avoir une description qui inclut une date d’expiration au format JD/MM/AAA. **Les profils de certificats sans date d’expiration ne seront pas déployés.**
-2. Créez un profil pour chaque certificat SCEP ou PKCS (voir Créer un profil de certificat [SCEP](/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) ou Créer un profil de certificat [PKCS).](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)Chacun de ces profils doit avoir une description qui inclut une date d’expiration au format JJ/MM/AAAA. **Les profils de certificats sans date d’expiration ne seront pas déployés.**
+1. Créez un profil pour chacun des certificats racines et intermédiaires (voir [Créer des profils de certificats de confiance.](/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles) Chacun de ces profils doit avoir une description qui inclut une date d’expiration au format JD/MM/AAA. **Les profils de certificat doivent avoir une date d’expiration.**
+2. Créez un profil pour chaque certificat SCEP ou PKCS (voir Créer un profil de certificat [SCEP](/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) ou Créer un profil de certificat [PKCS).](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)Chacun de ces profils doit avoir une description qui inclut une date d’expiration au format JJ/MM/AAAA. **Les profils de certificat doivent avoir une date d’expiration.**
 3. Créez un profil pour chaque réseau WiFi d’entreprise (voir [paramètres Wi-Fi pour Windows 10 et les appareils ultérieurs).](/intune/wi-fi-settings-windows)
 4. Créez un profil pour chaque VPN d’entreprise (voir Windows 10 et Windows paramètres de périphérique holographique pour ajouter des connexions VPN à l’aide [d’Intune).](/intune/vpn-settings-windows-10)
-5. Envoyez une demande de support intitulée « Déploiement de certificats » ou « Déploiement de profil Wi-Fi » aux opérations informatiques Microsoft Manged Desktop à l’aide du portail d’administration Microsoft Manged Desktop pour examiner et déployer le profil de configuration sur « Appareils de lieux de travail modernes – Test ». Microsoft Manged Desktop Les opérations informatiques vous feront savoir quand la demande est terminée via la demande de support dans le portail d’administration. 
+5. Affectez les profils aux *appareils d’espace de travail modernes : groupe de* test.
+6. Faites les tests nécessaires à l’aide d’un appareil qu’il se place dans le groupe de déploiement Test. Si l’opération réussit, affectez le profil personnalisé aux appareils d’espace de travail modernes *(* First , *Modern Workplace Devices – Fast*, and Modern Workplace Devices – *Larges* groupes.
+
  
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Étapes pour vous préparer à la Microsoft Manged Desktop
 
 1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
-2. Exécutez [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
-1. Acheter [Portail d’entreprise](../get-started/company-portal.md).
-1. Examinez [les conditions préalables pour les comptes invités.](guest-accounts.md)
-1. Vérifiez [la configuration du réseau.](network.md)
+2. Exécutez les [outils d’évaluation de la préparation](readiness-assessment-tool.md).
+1. Achetez [Portail d’entreprise](../get-started/company-portal.md).
+1. Passez en revue les [prérequis pour les comptes invités](guest-accounts.md).
+1. Vérifiez la[configuration réseau](network.md).
 1. Préparer les certificats et les profils réseau (cet article).
-1. [Préparer l’accès des utilisateurs aux données.](authentication.md)
-1. [Préparer les applications.](apps.md)
-1. [Préparez les lecteurs mappés.](mapped-drives.md)
-1. [Préparer les ressources d’impression.](printing.md)
-1. Noms des [périphériques d’adresse.](address-device-names.md)
+1. [Préparer l’accès utilisateur aux données](authentication.md).
+1. [Préparer les applications](apps.md).
+1. [Préparer les lecteurs mappés](mapped-drives.md).
+1. [Préparer les ressources d’impression](printing.md).
+1. [noms d’appareil](address-device-names.md) d’une adresse.

@@ -10,16 +10,16 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8ddc078e2d62881706c4e78d269268373c7e5fef9f25df3980ff411517f2b056
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ba233cf780ad428a9ecfdb6c4a3466b4ec4282da
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869918"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533362"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>Vérifier la préparation d’évaluation téléchargeable
 
-Pour fonctionner avec Microsoft Manged Desktop, les appareils doivent répondre à certaines exigences en matière de matériel et de paramètres. En outre, chaque appareil doit être en mesure d’atteindre les points de terminaison clés. Téléchargez et exécutez cet outil pour obtenir un rapport HTML, afficher les résultats, puis prendre des mesures. Vous devrez télécharger l’outil et les fichiers de prise en charge, puis l’exécuter manuellement sur chaque appareil que vous souhaitez inscrire dans Microsoft Manged Desktop.
+Pour fonctionner avec Microsoft Manged Desktop, les appareils doivent répondre à certaines exigences en matière de matériel et de paramètres. En outre, chaque appareil doit être en mesure d’atteindre les points de terminaison clés. Téléchargez et exécutez cet outil pour obtenir un rapport HTML, afficher les résultats, puis prendre des mesures. Vous devez télécharger l’outil et les fichiers de prise en charge, puis l’exécuter manuellement sur chaque appareil que vous souhaitez inscrire dans Microsoft Manged Desktop.
 
 Pour chaque vérification, l’outil signalera l’un des trois résultats possibles :
 
@@ -53,7 +53,7 @@ L’outil téléchargeable vérifie les éléments liés à l’appareil et au r
 
 ### <a name="hardware"></a>Matériel
 
-Les appareils doivent répondre à des exigences matérielles spécifiques pour fonctionner avec Microsoft Manged Desktop. Actuellement, seuls des [appareils approuvés spécifiques](../service-description/device-list.md) sont autorisés à s’inscrire. 
+Les appareils doivent répondre à des exigences matérielles spécifiques pour fonctionner avec Microsoft Manged Desktop. Pour plus d’informations, voir [La requise pour l’appareil.](../service-description/device-list.md)
 
 Si votre appareil échoue à l’une des vérifications, il n’est pas compatible avec Microsoft Manged Desktop.
 
@@ -67,7 +67,7 @@ Si l’outil **signale** un résultat non prêt, consultez le rapport détaillé
 
 #### <a name="enterprise-wi-fi-profiles"></a>Enterprise wi-fi
 
-Un **résultat d’avis** signifie que vous utilisez certains profils wi-fi qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir Déployer des certificats et profil [Wi-Fi/VPN.](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)
+Un **résultat d’avis** signifie que vous utilisez certains profils Wi-Fi qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir Déployer des certificats et profil [Wi-Fi/VPN.](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)
 
 #### <a name="lan-profiles"></a>Profils LAN
 

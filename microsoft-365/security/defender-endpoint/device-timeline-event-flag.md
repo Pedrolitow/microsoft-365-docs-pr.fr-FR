@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ca9a0c814ba41d5d0272966b879d23a766ff6d002d142a7c7725ec87afff9fff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 74bfa73ff9c647a0e6979eb18b06342fe2bea1ed
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890642"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532942"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Indicateurs d’événement de chronologie de l’appareil microsoft Defender pour point de terminaison
 
@@ -34,25 +34,26 @@ ms.locfileid: "53890642"
 
 Les indicateurs d’événement dans la chronologie de l’appareil Defender for Endpoint vous aident à filtrer et à organiser des événements spécifiques lorsque vous examinez des attaques potentielles.
 
-La chronologie de l’appareil Defender pour point de terminaison fournit une vue chronologique des événements et des alertes associées observés sur un appareil. Cette liste d’événements offre une visibilité complète des événements, fichiers et adresses IP observés sur l’appareil. La liste peut parfois être longue. Les indicateurs d’événement de chronologie de l’appareil vous aident à suivre les événements qui peuvent être liés. 
+La chronologie de l’appareil Defender pour point de terminaison fournit une vue chronologique des événements et des alertes associées observés sur un appareil. Cette liste d’événements offre une visibilité complète des événements, fichiers et adresses IP observés sur l’appareil. La liste peut parfois être longue. Les indicateurs d’événement de chronologie de l’appareil vous aident à suivre les événements qui peuvent être liés.
 
 Une fois la chronologie de l’appareil passée, vous pouvez trier, filtrer et exporter les événements spécifiques que vous avez signalés.
 
-Lors de la navigation dans la chronologie de l’appareil, vous pouvez rechercher et filtrer des événements spécifiques. Vous pouvez définir des indicateurs d’événement en : 
+Lors de la navigation dans la chronologie de l’appareil, vous pouvez rechercher et filtrer des événements spécifiques. Vous pouvez définir des indicateurs d’événement en :
 
-- Mise en surbrillance des événements les plus importants 
-- Marquage d’événements nécessitant une profondeur 
+- Mise en surbrillance des événements les plus importants
+- Marquage d’événements nécessitant une profondeur
 - Création d’une nouvelle chronologie de violation
 
-
-
 ## <a name="flag-an-event"></a>Indicateur d’un événement
-1. Rechercher l’événement que vous souhaitez indicateur
-2. Cliquez sur l’icône d’indicateur dans la colonne Indicateur. 
-![Image de l’indicateur de chronologie de l’appareil](images/device-flags.png)
 
-## <a name="view-flagged-events"></a>Afficher les événements marqués  
+1. Rechercher l’événement que vous souhaitez indicateur
+2. Cliquez sur l’icône d’indicateur dans la colonne Indicateur.
+
+   ![Image de l’indicateur de chronologie de l’appareil](images/device-flags.png)
+
+## <a name="view-flagged-events"></a>Afficher les événements marqués
+
 1. Dans la section **Filtres de** chronologie, activez **les événements marqués.**
-2. Cliquez sur **Appliquer**. Seuls les événements marqués sont affichés.
-Vous pouvez appliquer des filtres supplémentaires en cliquant sur la barre d’heure. Cela affiche uniquement les événements antérieurs à l’événement marqué.  
-![Image de l’indicateur de chronologie de l’appareil avec le filtre sur](images/device-flag-filter.png)
+2. Cliquez sur **Appliquer**. Seuls les événements marqués sont affichés. Vous pouvez appliquer des filtres supplémentaires en cliquant sur la barre d’heure. Cela affiche uniquement les événements antérieurs à l’événement marqué.
+
+   ![Image de l’indicateur de chronologie de l’appareil avec le filtre sur](images/device-flag-filter.png)

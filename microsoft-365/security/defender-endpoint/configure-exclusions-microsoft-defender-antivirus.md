@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 77a5d01b16a181067b347ab72220d722dc2ab447
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a6df318ccf484d750ae8010f34b5c545b115cde0
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256558"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532978"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurer et valider des exclusions pour Antivirus Microsoft Defender analyses
 
@@ -41,11 +41,11 @@ Pour configurer et valider des exclusions, consultez les procédures suivantes :
 ## <a name="recommendations-for-defining-exclusions"></a>Recommandations définition des exclusions
 
 > [!IMPORTANT]
-> Antivirus Microsoft Defender inclut de nombreuses exclusions automatiques basées sur les comportements connus du système d’exploitation et les fichiers de gestion classiques, tels que ceux utilisés dans la gestion d’entreprise, la gestion des bases de données et d’autres scénarios et situations d’entreprise.  
-> 
+> Antivirus Microsoft Defender inclut de nombreuses exclusions automatiques basées sur les comportements connus du système d’exploitation et les fichiers de gestion classiques, tels que ceux utilisés dans la gestion d’entreprise, la gestion des bases de données et d’autres scénarios et situations d’entreprise.
+>
 > La définition d’exclusions réduit la protection offerte par Antivirus Microsoft Defender. Vous devez toujours évaluer les risques associés à l’implémentation d’exclusions, et vous devez exclure uniquement les fichiers dont vous êtes certain qu’ils ne sont pas malveillants.
 
-Gardez les points suivants à l’esprit lorsque vous définissez des exclusions :  
+Gardez les points suivants à l’esprit lorsque vous définissez des exclusions :
 
 - Les exclusions sont techniquement un écart de protection. Prenez en compte toutes vos options lors de la définition d’exclusions. D’autres options peuvent être aussi simples que de s’assurer que l’emplacement exclu dispose des listes de contrôle d’accès appropriées ou de définir des stratégies en mode audit au début.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1f85e4a517b4af5120e88a76ef9dd46eda3011ec88383c9391bca0faaa2d5edd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fbf9561e214be2180d57b3b4dcd2369061d7a7d6
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857626"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532846"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour endpoint
 
@@ -43,14 +43,14 @@ Une fois l’intégration terminé, vous pouvez vérifier votre sélection dans 
 Pendant la [phase de mise en place,](production-deployment.md)vous avez sélectionné l’emplacement où stocker vos données. 
 
 
-Vous pouvez vérifier l’emplacement des données en Paramètres rétention des données des points de  >    >  **terminaison** (sous **Général).**
+Vous pouvez vérifier l’emplacement  des données en Paramètres rétention des données des points de \>  \> **terminaison** (sous **Général).**
 
 
 ## <a name="update-data-retention-settings"></a>Mettre à jour les paramètres de rétention des données
 
 Vous pouvez mettre à jour les paramètres de rétention des données. Par défaut, la période de rétention est de 180 jours. 
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres rétention des données des points de  >    >  **terminaison** (sous **Général).**
+1. Dans le volet de navigation, **sélectionnez** Paramètres rétention des données des points de \>  \> **terminaison** (sous **Général).**
 
 2. Sélectionnez la durée de rétention des données dans la liste liste.
 
@@ -59,7 +59,7 @@ Vous pouvez mettre à jour les paramètres de rétention des données. Par défa
 
 3. Cliquez **sur Enregistrer les préférences.**
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 - [Mettre à jour les paramètres de rétention des données](data-retention-settings.md)
 - [Configurer les notifications d’alerte dans Defender pour le point de terminaison](configure-email-notifications.md)
 - [Configurer des fonctionnalités avancées](advanced-features.md)

@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: f83c62b3ae642bcff59910f668d2915bb143b8e42f818eb33d014b5540a8e30a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d70d35bc1e2baa795e024da79ea613087bf511d4
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857738"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533410"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement les paramètres Antivirus Microsoft Defender stratégie
 
@@ -54,21 +54,21 @@ Pour configurer ces paramètres :
 
 5. Déployez l’objet de stratégie de groupe comme d’habitude.
 
-Emplacement | Paramètre | Article
+Lieu|Paramètre|Article
 ---|---|---|---
-MAPS | Configurer le remplacement de paramètre local pour la création de rapports à Microsoft MAPS | [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
-Quarantaine | Configurer le remplacement de paramètre local pour la suppression des éléments du dossier de mise en quarantaine | [Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md)
-Protection en temps réel | Configurer le remplacement des paramètres locaux pour surveiller l’activité des fichiers et des programmes sur votre ordinateur | [Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protection en temps réel | Configurer le remplacement de paramètre local pour la surveillance de l’activité des fichiers entrants et sortants | [Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protection en temps réel | Configurer le remplacement de paramètre local pour l’analyse de tous les fichiers et pièces jointes téléchargés | [Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protection en temps réel | Configurer le remplacement de paramètre local pour activer l’analyse du comportement | [Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protection en temps réel | Configurer le remplacement de paramètre local pour activer la protection en temps réel | [Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md)
-Correction | Configurer le remplacement de paramètre local pour l’heure de la journée afin d’exécuter une analyse complète programmée pour terminer la correction | [Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md)
-Analyser | Configurer le remplacement de paramètre local pour le pourcentage maximal d’utilisation du processeur | [Configurer et exécuter des analyses](run-scan-microsoft-defender-antivirus.md)
-Analyser | Configurer le remplacement de paramètre local pour le jour de l’analyse de planification | [Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Analyser | Configurer le remplacement de paramètre local pour le temps d’analyse rapide programmé | [Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Analyser | Configurer le remplacement de paramètre local pour l’heure d’analyse programmée | [Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Analyser | Configurer le remplacement de paramètre local pour le type d’analyse à utiliser pour une analyse programmée | [Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+MAPS|Configurer le remplacement de paramètre local pour la création de rapports à Microsoft MAPS|[Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
+Quarantaine|Configurer le remplacement de paramètre local pour la suppression des éléments du dossier de mise en quarantaine|[Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md)
+Protection en temps réel|Configurer le remplacement des paramètres locaux pour surveiller l’activité des fichiers et des programmes sur votre ordinateur|[Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protection en temps réel|Configurer le remplacement de paramètre local pour la surveillance de l’activité des fichiers entrants et sortants|[Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protection en temps réel|Configurer le remplacement de paramètre local pour l’analyse de tous les fichiers et pièces jointes téléchargés|[Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protection en temps réel|Configurer le remplacement de paramètre local pour activer l’analyse du comportement|[Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protection en temps réel|Configurer le remplacement de paramètre local pour activer la protection en temps réel|[Activer et configurer Antivirus Microsoft Defender protection et surveillance toujours actives](configure-real-time-protection-microsoft-defender-antivirus.md)
+Correction|Configurer le remplacement de paramètre local pour l’heure de la journée afin d’exécuter une analyse complète programmée pour terminer la correction|[Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md)
+Analyser|Configurer le remplacement de paramètre local pour le pourcentage maximal d’utilisation du processeur|[Configurer et exécuter des analyses](run-scan-microsoft-defender-antivirus.md)
+Analyser|Configurer le remplacement de paramètre local pour le jour de l’analyse de planification|[Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+Analyser|Configurer le remplacement de paramètre local pour le temps d’analyse rapide programmé|[Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+Analyser|Configurer le remplacement de paramètre local pour l’heure d’analyse programmée|[Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+Analyser|Configurer le remplacement de paramètre local pour le type d’analyse à utiliser pour une analyse programmée|[Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 
 <a id="merge-lists"></a>
 
@@ -93,7 +93,7 @@ Vous pouvez désactiver ce paramètre pour vous assurer que seules les listes d�
 > [!NOTE]
 > Si vous désactivez la fusion de listes locales, elle remplacera les paramètres d’accès contrôlé aux dossiers. Elle remplace également les dossiers protégés ou les applications autorisées définies par l’administrateur local. Pour plus d’informations sur les paramètres d’accès contrôlé aux dossiers, voir Autoriser une application [bloquée dans Sécurité Windows](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security).
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Configurer l’interaction de l’utilisateur final avec Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)

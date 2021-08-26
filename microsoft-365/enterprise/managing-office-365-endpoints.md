@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Découvrez comment gérer les points Office 365 afin qu’ils fonctionnent avec l’architecture réseau de votre organisation d’entreprise.
-ms.openlocfilehash: 4c6f291627fc3b0b24f53ef3dd11698dba7d1fa4958886dd8f70ce7f34ccb9e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a8460dbc9dbbc8b7b7a5a8e720b8c55c0ed918c
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870560"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532654"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -73,7 +73,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 Il existe de nombreux paramètres que vous pouvez transmettre au script :
 
-| Parameter | Description |
+| Paramètre | Description |
 |:-----|:-----|
 |**ClientRequestId** <br/> |Ceci est requis et il s’agit d’un GUID transmis au service Web qui représente l’ordinateur client à l’origine de l’appel. <br/> |
 |**Instance** <br/> |L Office 365 de service, qui est par défaut dans le monde entier. Il est également transmis au service web. <br/> |
@@ -111,11 +111,11 @@ Pour plus d’informations, voir [Service web d’URL et d’adresses IP Office 
 
 L’adresse IP et le service Web d’URL Office 365 fournissent un flux RSS auquel vous pouvez vous abonner dans Outlook. Il existe des liens vers les URL RSS sur chacune des pages spécifiques aux instances de service Office 365 pour les adresses IP et URL. Pour plus d’informations, voir [Service web d’URL et d’adresses IP Office 365](microsoft-365-ip-web-service.md).
 
-### <a name="change-notification-and-approval-review-using-microsoft-flow"></a>Notification et révision des modifications à l’aide de Microsoft Flow
+### <a name="change-notification-and-approval-review-using-power-automate"></a>Notification de modification et révision d’approbation à l’aide Power Automate
 
-Nous savons qu’il est possible que vous deviez continuer à traiter manuellement les modifications apportées aux points de terminaison réseau par mois. Vous pouvez utiliser Microsoft Flow pour créer un flux qui vous informe par courrier électronique et exécute éventuellement un processus d’approbation pour les modifications lorsque les points de terminaison réseau Office 365 contiennent des modifications. Une fois la révision terminée, vous pouvez faire en sorte que le flux envoie par email automatiquement les modifications apportées à l’équipe de gestion de votre pare-feu et serveur proxy.
+Nous savons qu’il est possible que vous deviez continuer à traiter manuellement les modifications apportées aux points de terminaison réseau par mois. Vous pouvez utiliser Power Automate pour créer un flux qui vous avertit par courrier électronique et exécute éventuellement un processus d’approbation pour les modifications lorsque Office 365 points de terminaison réseau ont des modifications. Une fois la révision terminée, vous pouvez faire en sorte que le flux envoie par email automatiquement les modifications apportées à l’équipe de gestion de votre pare-feu et serveur proxy.
 
-Pour plus d’informations sur un exemple de flux Microsoft et un modèle, voir [Utiliser Microsoft Flow pour recevoir un courrier électronique pour les modifications apportées aux adresses IP et URL Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
+Pour plus d’informations sur un Power Automate et un modèle, voir Utiliser Power Automate pour recevoir un e-mail pour les modifications apportées Office 365 [adresses IP](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)et URL.
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Forum aux questions sur les points de terminaison réseau Office 365
@@ -216,7 +216,7 @@ N’oubliez pas que le blocage de l’accès aux services grand public de Micros
 
 Office 365 ne fournit aucune adresse IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut qui sont requises doivent être autorisées via un serveur proxy. Si vous n’avez pas de serveur proxy, regardez comment vous avez configuré les demandes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web ; l’utilisateur ne fournit pas non plus d’adresse IP. Les Office 365 url de catégorie par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même manière.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Service web d’URL et d’adresses IP Office 365](microsoft-365-ip-web-service.md)
 

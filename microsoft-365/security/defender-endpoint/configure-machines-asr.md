@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e9059360c9ce9137092fec2422c563abf2f95e39c94c0fbc9b22b5c36c21161c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1563d44aded4c018a659b70d16800decf4bcd46f
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834074"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533398"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>Optimiser le déploiement et les détections des règles ASR
 
@@ -46,7 +46,7 @@ La *carte de gestion de la surface d’attaque* est un point d’entrée vers le
 * Examinez les détections de la résurv et identifiez les détections éventuellement incorrectes.
 * Analysez l’impact des exclusions et générez la liste des chemins d’accès aux fichiers à exclure.
 
-Sélectionnez **Go to attack surface management**  >  **Reports** Attack surface  >  **reduction rules** Add  >  **exclusions**. À partir de là, vous pouvez accéder à d’autres sections du centre Microsoft 365 sécurité.
+Sélectionnez **Go to attack surface management** \> **Reports** Attack surface \> **reduction rules** Add \> **exclusions**. À partir de là, vous pouvez accéder à d’autres sections du centre Microsoft 365 sécurité.
 
 ![Onglet Ajouter des exclusions dans la page Règles de réduction de la surface d’attaque Microsoft 365 centre de sécurité](images/secconmgmt_asr_m365exlusions.png)<br>
 Onglet ***Ajouter des exclusions** dans la page Règles de réduction de la surface d’attaque Microsoft 365 centre de sécurité*

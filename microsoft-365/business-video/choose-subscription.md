@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez quel abonnement Microsoft 365 est le bon pour votre organisation.
-ms.openlocfilehash: 099104eae31cc7a615880bf9b778e6bfed548021
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 2c269ff7dc620da0c638f2c82a836ae9b0406780
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400342"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533182"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Choisir un abonnement Microsoft 365 abonnement
 
@@ -51,7 +51,7 @@ Le choix de l’abonnement Microsoft 365 est essentiel pour vous servir au mieux
 | **Calendrier de &amp; messagerie** | Outlook, Exchange Online | 50 Go | 50 Go | 100 Go |
 | **Hub pour le travail d’équipe** | Espace de travail basé sur la conversation, réunions en ligne et autres Microsoft Teams | Oui | Oui | Oui |
 | **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
-| **Réseaux sociaux, vidéo, sites** | Stream, Yammer, Planner, SharePoint \* Online, Power Apps \* , Microsoft Flow\* | Oui | Oui | Oui |
+| **Réseaux sociaux, vidéo, sites** | Stream, Yammer, Planner, SharePoint \* Online, Power Apps , \* Power Automate\* | Oui | Oui | Oui |
 | **Applications professionnelles** | Planification d’applications - Réservations\*\* | Oui | Oui | Oui |
 | **Protection contre les menaces** | Office 365 – Protection avancée contre les menaces | Non | Oui | Non |
  | Windows Application d’Exploit Guard| | Non | Oui | Non |

@@ -15,12 +15,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 894f2da81365b176afd7789635a4c9830c6d8ab681478df91e5aedd3a6579cc0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea06094121f9c6a654234da1cb6d7757db5c78dd
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794389"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533290"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurer des exclusions pour les fichiers ouverts par des processus
 
@@ -31,16 +31,20 @@ ms.locfileid: "53794389"
 
 Vous pouvez exclure des analyses des fichiers qui ont été ouverts par des processus spécifiques Antivirus Microsoft Defender analyses. Voir [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) avant de définir vos listes d’exclusions.
 
-Cet article explique comment configurer des listes d’exclusions. 
+Cet article explique comment configurer des listes d’exclusions.
 
 ## <a name="examples-of-exclusions"></a>Exemples d’exclusions
 
-|Exclusion | Exemple |
-|---|---|
-|Tout fichier sur l’ordinateur ouvert par n’importe quel processus avec un nom de fichier spécifique | La spécification `test.exe` exclurait les fichiers ouverts par : <br/>`c:\sample\test.exe`<br/>`d:\internal\files\test.exe` |  
-|Tout fichier sur l’ordinateur ouvert par un processus sous un dossier spécifique | La spécification `c:\test\sample\*` exclurait les fichiers ouverts par :<br/>`c:\test\sample\test.exe`<br/>`c:\test\sample\test2.exe`<br/>`c:\test\sample\utility.exe` | 
-|Tout fichier sur l’ordinateur ouvert par un processus spécifique dans un dossier spécifique | La spécification `c:\test\process.exe` exclurait les fichiers ouverts uniquement par `c:\test\process.exe` |
+<br>
 
+****
+
+|Exclusion|Exemple|
+|---|---|
+|Tout fichier sur l’ordinateur ouvert par n’importe quel processus avec un nom de fichier spécifique|La spécification `test.exe` exclurait les fichiers ouverts par : <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
+|Tout fichier sur l’ordinateur ouvert par un processus sous un dossier spécifique|La spécification `c:\test\sample\*` exclurait les fichiers ouverts par : <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
+|Tout fichier sur l’ordinateur ouvert par un processus spécifique dans un dossier spécifique|La spécification `c:\test\process.exe` exclurait les fichiers ouverts uniquement par `c:\test\process.exe`|
+|
 
 Lorsque vous ajoutez un processus à la liste d’exclusions de processus, Antivirus Microsoft Defender n’analyse pas les fichiers ouverts par ce processus, quel que soit l’emplacement des fichiers. Toutefois, le processus proprement dit sera analysé, sauf s’il a également été ajouté à la liste [d’exclusions de fichiers.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
@@ -72,13 +76,12 @@ Découvrez comment créer et déployer des stratégies de logiciel [anti-program
 
 2. Dans **l’Éditeur de gestion des stratégies de** groupe, cliquez sur **Configuration** ordinateur et cliquez **sur Modèles d’administration.**
 
-3. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender > exclusions.**
+3. Développez l’arborescence **Windows composants \> Antivirus Microsoft Defender \> exclusions.**
 
 4. Double-cliquez sur **Exclusions de processus** et ajoutez les exclusions :
-
     1. Définissez l’option **sur Activé.**
     2. Sous la section **Options,** cliquez sur **Afficher...**.
-    3. Entrez chaque processus sur sa propre ligne sous la **colonne Nom de** la valeur. Consultez l’exemple de tableau pour les différents types d’exclusions de processus.  Entrez **0 dans** la colonne **Valeur** pour tous les processus.
+    3. Entrez chaque processus sur sa propre ligne sous la **colonne Nom de** la valeur. Consultez l’exemple de tableau pour les différents types d’exclusions de processus. Entrez **0 dans** la colonne **Valeur** pour tous les processus.
 
 5. Cliquez sur **OK**.
 
@@ -92,16 +95,21 @@ Le format des cmdlets est :
 <cmdlet> -ExclusionProcess "<item>"
 ```
 
-Les listes suivantes sont autorisées en tant que \<cmdlet> :
+Les listes suivantes sont autorisées en tant que \<cmdlet\> :
 
-|Action de configuration | Cmdlet PowerShell |
+<br>
+
+****
+
+|Action de configuration|Cmdlet PowerShell|
 |---|---|
-|Créer ou overwrite la liste | `Set-MpPreference` |
-|Ajouter à la liste | `Add-MpPreference` |
-|Supprimer des éléments de la liste | `Remove-MpPreference` |
+|Créer ou overwrite la liste|`Set-MpPreference`|
+|Ajouter à la liste|`Add-MpPreference`|
+|Supprimer des éléments de la liste|`Remove-MpPreference`|
+|
 
->[!IMPORTANT]
->Si vous avez créé une liste, avec ou , en utilisant à nouveau la `Set-MpPreference` `Add-MpPreference` `Set-MpPreference` cmdlet, la liste existante est réécrite.
+> [!IMPORTANT]
+> Si vous avez créé une liste, avec ou , en utilisant à nouveau la `Set-MpPreference` `Add-MpPreference` `Set-MpPreference` cmdlet, la liste existante est réécrite.
 
 Par exemple, l’extrait de code suivant entraîne l’exclusion par les analyses de l’Antivirus Microsoft Defender de tout fichier ouvert par le processus spécifié :
 
@@ -135,10 +143,15 @@ En particulier, vous ne pouvez pas utiliser le caractère générique de point d
 
 Le tableau suivant décrit comment les caractères génériques peuvent être utilisés dans la liste d’exclusions de processus :
 
-|Caractère générique | Exemple d’utilisation | Exemples de correspondances |
-|:---|:---|:---|
-|`*` (astérisque) <br/><br/> Remplace un nombre quelconque de caractères | `C:\MyData\*` | Tout fichier ouvert par `C:\MyData\file.exe` |
-|Variables d’environnement <br/><br/> La variable définie est remplie en tant que chemin d’accès lorsque l’exclusion est évaluée | `%ALLUSERSPROFILE%\CustomLogFiles\file.exe` | Tout fichier ouvert par `C:\ProgramData\CustomLogFiles\file.exe` |
+<br>
+
+****
+
+|Caractère générique|Exemple d’utilisation|Exemples de correspondances|
+|---|---|---|
+|`*` (astérisque) <p> Remplace un nombre quelconque de caractères|`C:\MyData\*`|Tout fichier ouvert par `C:\MyData\file.exe`|
+|Variables d’environnement <p> La variable définie est remplie en tant que chemin d’accès lorsque l’exclusion est évaluée|`%ALLUSERSPROFILE%\CustomLogFiles\file.exe`|Tout fichier ouvert par `C:\ProgramData\CustomLogFiles\file.exe`|
+|
 
 ## <a name="review-the-list-of-exclusions"></a>Passer en revue la liste des exclusions
 
@@ -159,7 +172,6 @@ MpCmdRun.exe -CheckExclusion -path <path>
 
 > [!NOTE]
 > La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.1812.3 (publiée en décembre 2018) ou version ultérieure.
-
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Passer en revue la liste des exclusions avec toutes les autres préférences Antivirus Microsoft Defender à l’aide de PowerShell
 

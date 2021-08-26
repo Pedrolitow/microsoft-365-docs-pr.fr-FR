@@ -21,14 +21,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c03dfef28744e2ee565c25d921902b8d11ecb7a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: da726aeaf82f13cef862b105e951f28c9fdf80e3
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290242"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533050"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Suivre et répondre aux menaces émergentes avec l’analytique des menaces 
+# <a name="track-and-respond-to-emerging-threats-with-threat-analytics-in-microsoft-365-defender"></a>Suivre les menaces émergentes et y répondre à l’Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -66,7 +66,7 @@ Avec des adversaires plus sophistiqués et de nouvelles menaces émergentes fré
 - Examiner votre résilience par rapport aux menaces ou leur exposition
 - Identifier les actions d’atténuation, de récupération ou de prévention que vous pouvez prendre pour arrêter ou contenir les menaces
 
-Chaque rapport fournit une analyse d’une menace de suivi et des instructions complètes sur la façon de se défendre contre cette menace. Il intègre également des données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
+Chaque rapport fournit une analyse d’une menace de suivi et des instructions complètes sur la façon de se défendre contre cette menace. Il incorpore également les données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
 
 ## <a name="view-the-threat-analytics-dashboard"></a>Afficher le tableau de bord d’analyse des menaces
 
@@ -86,7 +86,7 @@ _Tableau de bord d’analyse des menaces. Vous pouvez également cliquer sur l�
 
 Chaque rapport d’analyse des menaces fournit des informations dans plusieurs sections :
 
-- [**Présentation**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
+- [**Vue d’ensemble**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
 - [**Rapport d’analystes**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
 - [**Incidents connexes**](#related-incidents-view-and-manage-related-incidents)
 - [**Ressources impactées**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
@@ -168,13 +168,13 @@ _Section Incidents connexes d’un rapport d’analyse des menaces_
 Un bien est considéré comme affecté s’il est affecté par une alerte active et non résolue. **L’onglet Ressources impactées** répertorie les types suivants de biens touchés :
 
 - **Appareils touchés**: points de terminaison qui ont des alertes Microsoft Defender pour point de terminaison non résolues. Ces alertes se firent généralement lors de la recherche d’indicateurs et d’activités de menace connus.
-- **Boîtes aux lettres impactées :** boîtes aux lettres qui ont reçu des messages électroniques qui ont déclenché Microsoft Defender Office 365 alertes. Alors que la plupart des messages qui déclenchent des alertes sont généralement bloqués, les stratégies au niveau de l’utilisateur ou de l’organisation peuvent remplacer les filtres.
+- **Boîtes aux lettres impactées :** boîtes aux lettres qui ont reçu des messages électroniques qui ont déclenché Microsoft Defender pour Office 365 alertes. Alors que la plupart des messages qui déclenchent des alertes sont généralement bloqués, les stratégies au niveau de l’utilisateur ou de l’organisation peuvent remplacer les filtres.
 
 ![Image de la section ressources impactées d’un rapport d’analyse des menaces](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
 _Section Ressources impactées d’un rapport d’analyse des menaces_
 
-### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>Tentatives de courrier électronique empêchées : afficher les e-mails de menace bloqués ou indésirables
+### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>Tentatives de courrier électronique empêchées : afficher les messages électroniques de menace bloqués ou indésirables
 
 Microsoft Defender pour Office 365 bloque généralement les e-mails avec des indicateurs de menace connus, y compris les pièces jointes ou les liens malveillants. Dans certains cas, les mécanismes de filtrage proactifs qui vérifient la recherche de contenu suspect envoient plutôt des e-mails de menace au dossier de courrier indésirable. Dans les deux cas, les risques de lancement du code anti-programme malveillant sur l’appareil sont réduits.
 

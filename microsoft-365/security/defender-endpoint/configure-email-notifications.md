@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f0a28aa76189388a5e7943d8a662ddcb0b28d56828d53a4b62e6d64a34518454
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 857df1a9f088c316349fbbe02618a7345df5a075
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854302"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532774"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurer les notifications d’alerte dans Microsoft Defender pour le point de terminaison
 
@@ -50,7 +50,7 @@ La notification par courrier électronique inclut des informations de base sur l
 Vous pouvez créer des règles qui déterminent les appareils et les gravités des alertes pour envoyer des notifications par courrier électronique pour les destinataires de la notification.
 
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres points de terminaison des  >  **notifications** par  >    >  **courrier électronique générales.**
+1. Dans le volet de navigation, **sélectionnez** Paramètres points de terminaison des \> **notifications** par \>  \> **courrier électronique générales.**
 
 2. Cliquez **sur Ajouter un élément.**
 
@@ -100,7 +100,7 @@ Cette section répertorie les différents problèmes que vous pouvez rencontrer 
 2. Vérifiez que votre produit de sécurité de messagerie ne bloque pas les notifications par courrier électronique de Defender for Endpoint.
 3. Vérifiez les règles de votre application de messagerie qui peuvent être en train d’capturer et de déplacer vos notifications par courrier électronique Defender for Endpoint.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Mettre à jour les paramètres de rétention des données](data-retention-settings.md)
 - [Configurer des fonctionnalités avancées](advanced-features.md)

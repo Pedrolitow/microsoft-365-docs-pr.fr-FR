@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 904ea83c6a4a2c8267341ae5fb324c5f2f3678e0c5458720af13f6a932c8c25f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de33384b6292fecc502e958385c2286b255002b1
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854010"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533062"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -93,7 +93,7 @@ Les alertes peuvent être classées en tant que faux positifs ou vrais positifs 
 
 2. Sélectionnez **la file d’attente des alertes,** puis sélectionnez une alerte.
 
-3. Pour l’alerte sélectionnée, sélectionnez **Actions**  >  **Gérer l’alerte.** Un volet volant s’ouvre.
+3. Pour l’alerte sélectionnée, sélectionnez **Actions** \> **Gérer l’alerte.** Un volet volant s’ouvre.
 
 4. Dans la section **Gérer l’alerte,** sélectionnez Alerte **True** ou **False.** (Utilisez **une alerte False pour** classer un faux positif.)
 
@@ -134,7 +134,7 @@ Une fois que vous avez examiné vos alertes, l’étape suivante consiste à pas
 
 - [Restaurer un fichier mis en quarantaine à partir du centre de mise en quarantaine](#restore-a-quarantined-file-from-the-action-center)
 - [Annuler plusieurs actions à la fois](#undo-multiple-actions-at-one-time)
-- [Supprimez un fichier de la quarantaine sur plusieurs appareils.](#remove-a-file-from-quarantine-across-multiple-devices)  et
+- [Supprimez un fichier de la quarantaine sur plusieurs appareils.](#remove-a-file-from-quarantine-across-multiple-devices) et
 - [Restaurer un fichier à partir de la mise en quarantaine](#restore-file-from-quarantine)
 
 Lorsque vous avez terminé de passer en revue et d’annuler les actions qui ont été prises à la suite de faux positifs, passer en revue [ou définir des exclusions](#part-3-review-or-define-exclusions).
@@ -220,7 +220,7 @@ En règle générale, il n’est pas nécessaire de définir des exclusions pour
 
 1. Go to the Microsoft Endpoint Manager admin center ( <https://endpoint.microsoft.com> ) and sign in.
 
-2. Choisissez **l’Antivirus de sécurité des** points de  >  terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une nouvelle, passez [à la procédure suivante).](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)
+2. Choisissez **l’Antivirus de sécurité des** points de \> terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une nouvelle, passez [à la procédure suivante).](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)
 
 3. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
@@ -232,7 +232,7 @@ En règle générale, il n’est pas nécessaire de définir des exclusions pour
 
 1. Go to the Microsoft Endpoint Manager admin center ( <https://endpoint.microsoft.com> ) and sign in.
 
-2. Choisissez **Endpoint security**  >  **Antivirus**  >  **+ Create Policy**.
+2. Choisissez **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
 3. Sélectionnez une plateforme (par **exemple, Windows 10 et** ultérieures, **macOS** ou **Windows 10 et Windows Server).**
 
@@ -344,7 +344,7 @@ Pour vérifier les mises à jour concernant votre soumission, connectez-vous [su
 
 Microsoft Defender pour point de terminaison offre un large éventail d’options, notamment la possibilité d’affiner les paramètres de différentes fonctionnalités et fonctionnalités. Si vous avez de nombreux faux positifs, veillez à passer en revue les paramètres de protection contre les menaces de votre organisation. Vous devrez peut-être effectuer quelques ajustements pour :
 
-- [Protection cloud](#cloud-delivered-protection)
+- [Protection fournie par le cloud](#cloud-delivered-protection)
 - [Correction des applications potentiellement indésirables](#remediation-for-potentially-unwanted-applications)
 - [Examen et correction automatisés](#automated-investigation-and-remediation)
 
@@ -361,7 +361,7 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 1. Go to the Microsoft Endpoint Manager admin center ( <https://endpoint.microsoft.com> ) and sign in.
 
-2. Choisissez **l’Antivirus de sécurité des** points de  >   terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une nouvelle, passez [à la procédure suivante).](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)
+2. Choisissez **l’Antivirus de sécurité des** points de \>  terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une nouvelle, passez [à la procédure suivante).](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)
 
 3. Sous **Gérer,** sélectionnez **Propriétés.** Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
@@ -373,7 +373,7 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 1. Go to the Microsoft Endpoint Manager admin center ( <https://endpoint.microsoft.com> ) and sign in.
 
-2. Choisissez **Endpoint security**  >  **Antivirus**  >  **+ Create policy**.
+2. Choisissez **Endpoint security** \> **Antivirus** \> **+ Create policy**.
 
 3. Pour **la plateforme,** sélectionnez une option, puis pour **profil,** sélectionnez **Antivirus** ou **Antivirus Microsoft Defender** (l’option spécifique dépend de ce que vous avez sélectionné pour la **plateforme.)** Ensuite, **sélectionnez Créer.**
 
@@ -404,7 +404,7 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 1. Go to the Microsoft Endpoint Manager admin center ( <https://endpoint.microsoft.com> ) and sign in.
 
-2. Choisissez **les**  >  **profils de configuration des** appareils, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une nouvelle, passez à [la procédure suivante.)](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile)
+2. Choisissez **les** \> **profils de configuration des** appareils, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une nouvelle, passez à [la procédure suivante.)](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile)
 
 3. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
 
@@ -418,7 +418,7 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 1. Go to the Microsoft Endpoint Manager admin center ( <https://endpoint.microsoft.com> ) and sign in.
 
-2. Choose **Devices**  >  **Configuration profiles**+ Create  >  **profile**.
+2. Choose **Devices** \> **Configuration profiles** + Create \> **profile**.
 
 3. Pour la **plateforme,** choisissez **Windows 10 et ultérieures,** et pour **profil,** sélectionnez **Restrictions d’appareil.**
 
@@ -446,7 +446,7 @@ Selon le niveau [d’automatisation](/microsoft-365/security/defender-endpoint/a
 > [!IMPORTANT]
 > Nous vous recommandons *d’utiliser l’automatisation complète* pour l’examen et la correction automatisés. Ne pas désactiver ces fonctionnalités en raison d’un faux positif. Au lieu de cela, utilisez des indicateurs « autoriser » pour définir des [exceptions](#indicators-for-microsoft-defender-for-endpoint)et conservez l’investigation et la correction automatisées pour prendre les mesures appropriées automatiquement. Le [suivi de ces conseils](automation-levels.md#levels-of-automation) permet de réduire le nombre d’alertes que votre équipe des opérations de sécurité doit gérer.
 
-## <a name="still-need-help"></a>Encore besoin d’aide ?
+## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
 
 Si vous avez passé en revue toutes les étapes de cet article et que vous avez toujours besoin d’aide, contactez le support technique.
 

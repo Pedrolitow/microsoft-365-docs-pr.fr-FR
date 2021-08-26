@@ -18,14 +18,14 @@ ms.custom:
 - okr_SMB
 - commerce_signup
 search.appverid: MET150
-description: Découvrez les Microsoft 365 l’inscription en libre-service et les programmes libre-service disponibles tels que Microsoft Power Apps, Microsoft Flow et Dynamics 365 for Finance.
+description: En savoir plus sur Microsoft 365 l’inscription en libre-service et les programmes libre-service disponibles tels que Microsoft Power Apps, Microsoft Power Automate et Dynamics 365 for Finance.
 ms.date: 03/17/2021
-ms.openlocfilehash: e03f82903b8aa81db2425769a23d7ec379120526
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 7c4986beb1c920865cee28f2729859e426944f3f
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400210"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532786"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’inscription en libre-service dans votre organisation
 
@@ -60,5 +60,5 @@ Voici les programmes en libre-service actuellement disponibles. Cette liste sera
 |**Minecraft Education Edition** <br/> |En utilisant Minecraft en tant que plateforme pour l’apprentissage, les enseignants peuvent encourager et encourager chaque étudiant à atteindre d’autres objectifs et à susciter une envie d’apprentissage. Rejoignez une communauté d’enseignants qui apprennent à utiliser Minecraft pour déverrouiller le potentiel des étudiants.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream (basé sur SharePoint)** <br/> |Télécharger et partagez des vidéos au sein de votre organisation pour améliorer la communication, la participation et l’apprentissage.  <br/> |[Expérience &amp; d’inscription au jour 0](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream (basé sur SharePoint)](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |Power Automate est un produit qui vous aide à configurer des flux de travail automatisés entre vos applications et services favoris pour synchroniser des fichiers, recevoir des notifications, collecter des données, etc.  <br/> |[Inscrivez-vous et connectez-vous Power Automate](/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
-|**Power Virtual Agents** <br/> |Power Virtual Agents permet aux équipes de créer facilement des bots puissants à l’aide d’une interface graphique sans code guidée sans avoir besoin de données ou de développeurs. Power Virtual Agents de nombreux problèmes majeurs avec la création de bots dans le secteur aujourd’hui. Cela élimine l’écart entre les experts techniques et les équipes de développement qui construisent les bots, ainsi que la latence longue entre les équipes qui reconnaissent un problème et mettent à jour le bot pour le résoudre.  <br/> |[Détails sur la gestion des licences et l’accès](/power-virtual-agents/requirements-licensing) <br/> |[S’inscrire à Power Virtual Agents](https://aka.ms/TryPVA) <br/> |
+|**Power Virtual Agents** <br/> |Power Virtual Agents permet aux équipes de créer facilement des bots puissants à l’aide d’une interface graphique sans code guidée sans avoir besoin de données ou de développeurs. Power Virtual Agents de nombreux problèmes majeurs avec la création de bots dans le secteur aujourd’hui. Cela élimine l’écart entre les experts techniques et les équipes de développement qui construisent les bots, ainsi que la latence longue entre les équipes qui reconnaissent un problème et mettent à jour le bot pour le résoudre.  <br/> |[Détails des licences et de l’accès](/power-virtual-agents/requirements-licensing) <br/> |[S’inscrire à Power Virtual Agents](https://aka.ms/TryPVA) <br/> |
 |**Azure AD B2B** <br/> |Azure Active Directory collaboration entreprise-entreprise (B2B) (Azure AD) vous permet d’inviter des utilisateurs externes (ou des « utilisateurs invités ») à utiliser vos services Azure AD payants. Certaines fonctionnalités sont gratuites, mais pour toutes les fonctionnalités Azure AD payantes, vous pouvez inviter jusqu’à cinq utilisateurs invités pour chaque licence d’édition Azure AD que vous possédez pour un employé ou un utilisateur non invité dans votre client. <br/> |[Inscription en libre-service pour la collaboration Azure AD B2B](/azure/active-directory/b2b/self-service-portal) <br/> |[Azure Active Directory Conseils sur les licences de collaboration B2B](/azure/active-directory/b2b/licensing-guidance) <br/> |

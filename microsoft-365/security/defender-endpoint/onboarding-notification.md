@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e62195582183f24078a2755b1773a00ceee06613f141403fe8399f798f2eb411
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c4fa624d6c0fb6ea299834fd4b57f37dd5f8f7c
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799876"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531562"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Créer une règle de notification lorsqu’un script d’intégration ou de mise hors-carte local est utilisé
 
@@ -45,7 +45,7 @@ Créez une règle de notification afin que, lorsqu’un script d’intégration 
 
 Vous devez avoir accès à :
 
-- Microsoft Flow (Flow plan 1 au minimum). Pour plus d’informations, [voir Flow page de tarification.](https://flow.microsoft.com/pricing/)
+- Power Automate (plan par utilisateur au minimum). Pour plus d’informations, [voir Power Automate page de tarification.](https://flow.microsoft.com/pricing/)
 - Tableau ou SharePoint Liste ou bibliothèque /SQL DB Azure.
 
 ## <a name="create-the-notification-flow"></a>Créer le flux de notification
@@ -76,15 +76,15 @@ Vous devez avoir accès à :
    - Public : `https://securitycenter.onmicrosoft.com/windowsatpservice\`
    - ID client : connectez-vous et accédez à Azure Active Directory >'inscription de l’application et obtenez la valeur https://portal.azure.com de l’ID client. 
    - Type d’informations d’identification : sélectionnez « Secret ».
-   - Secret : connectez-vous et accédez à Azure Active Directory > inscriptions d’application et obtenez la valeur https://portal.azure.com de l’ID de client. 
+   - Secret : connectez-vous et accédez à https://portal.azure.com **Azure Active Directory > inscriptions d’application** et obtenez la valeur de l’ID de client.
 
     ![Image des conditions HTTP](images/http-conditions.png)
 
-6. Ajoutez une nouvelle étape en sélectionnant Ajouter **une nouvelle action,** puis recherchez Opérations de **données** et **sélectionnez Analyse JSON**.
+6. Ajoutez une nouvelle étape en sélectionnant Ajouter une **nouvelle action,** puis recherchez opérations de **données** et sélectionnez Analyse **JSON**.
 
     ![Image des opérations de données](images/data-operations.png)
 
-7. Ajouter le corps dans le **champ** Contenu.
+7. Ajouter le corps dans **le champ** Contenu.
 
     ![Image de l’utilisation du JSON d’une parse](images/parse-json.png)
 
@@ -179,7 +179,7 @@ Vous devez avoir accès à :
     - Si oui, aucune notification ne sera déclenchée
     - Si non, enregistre le ou les nouveaux appareils intégrés dans la liste SharePoint et une notification est envoyée à l’administrateur de Defender for Endpoint
 
-    ![Image d’application à chaque](images/flow-apply.png)
+    ![Image de l’application à chaque](images/flow-apply.png)
 
     ![Image de s’appliquer à chacun avec obtenir des éléments](images/apply-to-each.png)
 
@@ -203,7 +203,7 @@ L’image suivante est un exemple de notification par courrier électronique.
     - Prenez tous les appareils vus pour la dernière fois au cours des 7 derniers jours.
 
 - Pour chaque appareil :
-  - Si la propriété vue pour la dernière fois est sur l’intervalle d’une heure de [-7 jours, -7days + 60 minutes] -> alerte pour la possibilité de retentation.
+  - Si la dernière propriété vue se trouve sur l’intervalle d’une heure de [-7 jours, -7days + 60 minutes] -> alerte pour la possibilité d’interruption de l’utilisation.
   - Si le premier aperçu a lieu au cours de l’heure >'alerte d’intégration.
 
 Dans cette solution, vous n’aurez pas d’alertes en double : il existe des locataires qui ont de nombreux appareils. L’obtention de tous ces appareils peut être très coûteuse et nécessiter une pagination.

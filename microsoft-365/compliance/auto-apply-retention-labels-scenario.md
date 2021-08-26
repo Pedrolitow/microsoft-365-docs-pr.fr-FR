@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comment vous pouvez utiliser les étiquettes de rétention pour gérer le cycle de vie des documents dans SharePoint en utilisant des métadonnées pour classifier le contenu, appliquer automatiquement les étiquettes et utiliser la rétention basée sur les événements pour démarrer la période de rétention.
-ms.openlocfilehash: 6a58e339bd3c99bff85bf933d1cf3e079551c84462fad49874487cc7d4fcb9f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b26cdbe7f2b8f0d6ac3845941418b189cb3d9083
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881175"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533014"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint
 
@@ -269,7 +269,7 @@ Maintenant que les étiquettes de conservation sont appliquées, concentrons-nou
 
 Vous pouvez créer manuellement l'événement dans le centre de conformité Microsoft 365 en vous rendant **sur la page Événements de** > **gestion des enregistrements**.                Vous devez choisir le type d'événement, définir les bons numéros d'identification d’élément des actifs et entrer une date pour l'événement. Pour plus d'informations, voir [Commencer la rétention lorsqu'un événement se produit](event-driven-retention.md).                
 
-Mais pour ce scénario, nous allons générer automatiquement l'événement à partir d'un système de production externe. Le système est une simple liste SharePoint qui indique si un produit est en cours de production. Un flux [Power Automate](/flow/getting-started) associé à la liste qui déclenchera l'événement.        Dans un scénario réel, vous pourriez utiliser différents systèmes pour générer l'événement, tels qu'un système de RH ou de CRM. Power Automate contient de nombreuses interactions prêtes à l'emploi et des éléments de base pour les charges de travail de Microsoft 365, comme Microsoft Exchange, SharePoint, Teams et Dynamics 365, ainsi que des applications tierces comme Twitter, Box, Salesforce et Workdays. Cette fonctionnalité permet d'intégrer facilement Power Automate à divers systèmes. Pour plus d’informations, voir[Automatiser la rétention basée sur un événement](./event-driven-retention.md#automate-events-by-using-a-rest-api).
+Mais pour ce scénario, nous allons générer automatiquement l'événement à partir d'un système de production externe. Le système est une simple liste SharePoint qui indique si un produit est en cours de production. Un flux [Power Automate](/power-automate/getting-started) associé à la liste qui déclenchera l'événement.        Dans un scénario réel, vous pourriez utiliser différents systèmes pour générer l'événement, tels qu'un système de RH ou de CRM. Power Automate contient de nombreuses interactions prêtes à l'emploi et des éléments de base pour les charges de travail de Microsoft 365, comme Microsoft Exchange, SharePoint, Teams et Dynamics 365, ainsi que des applications tierces comme Twitter, Box, Salesforce et Workdays. Cette fonctionnalité permet d'intégrer facilement Power Automate à divers systèmes. Pour plus d’informations, voir[Automatiser la rétention basée sur un événement](./event-driven-retention.md#automate-events-by-using-a-rest-api).
 
 La capture d’écran suivante montre la liste SharePoint qui sera utilisée pour déclencher l’événement :
 
