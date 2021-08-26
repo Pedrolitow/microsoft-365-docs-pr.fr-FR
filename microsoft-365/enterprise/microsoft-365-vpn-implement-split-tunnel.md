@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: 8334433cd166b01ba297f79b6a142248eacffe4021bae14edafeae6803d93fc2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 58c72fa0ede7b9f0fb75d1a8d8c26a4a18464aa4
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878801"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533578"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -41,7 +41,7 @@ L’utilisation de VPN tunnelés forcés pour la connexion à des applications c
 
 This problem has been growing for many years, with many customers reporting a significant shift of network traffic patterns. Le trafic qui était utilisé pour rester sur site se connecte désormais aux points de terminaison cloud externes. De nombreux clients Microsoft signalaient qu’auparavant, environ 80% du trafic réseau était une source interne (représentée par une ligne pointillée dans le diagramme ci-dessus). En 2020, ce nombre est à présent environ 20% ou plus, car les charges de travail majeures ont été déplacées vers le cloud, mais ces tendances ne sont pas rares pour les autres entreprises. Au fil du temps, au fur et à mesure de l’avancement du projet, le modèle ci-dessus devient de plus en plus encombrant et peu viable, empêchant une organisation d'être flexible au fur et à mesure de son déplacement dans un premier monde de cloud.
 
-La crise mondiale de grippe COVID-19 a aggravé ce problème et exige des mesures correctives immédiates. La nécessité d'assurer la sécurité des employés a généré des demandes sans précédent en matière de technologies de l'information pour prendre en charge la productivité du travail à domicile à une échelle massive. Microsoft Office 365 est bien placé pour aider les clients à répondre à cette demande, mais la forte concurrence des utilisateurs travaillant à domicile génère un volume élevé de trafic Office 365 qui, s’il est acheminé via un tunnel forcé VPN et des périmètres réseau locaux, entraîne une saturation rapide et exécute l’infrastructure VPN hors capacité. Dans cette nouvelle réalité, l’utilisation du VPN pour accéder à Office 365 n’est plus seulement un obstacle aux performances, mais un mur dur qui non seulement a un impact sur les Office 365 mais également sur les opérations d’entreprise critiques qui doivent encore s’appuyer sur le VPN pour fonctionner.
+La crise mondiale de grippe COVID-19 a aggravé ce problème et exige des mesures correctives immédiates. La nécessité d'assurer la sécurité des employés a généré des demandes sans précédent en matière de technologies de l'information pour prendre en charge la productivité du travail à domicile à une échelle massive. Microsoft Office 365 est bien positionnée pour aider les clients à répondre à cette demande, mais la forte concurrence des utilisateurs travaillant à domicile génère un volume important de trafic Office 365 qui, s’il est acheminé via un tunnel forcé VPN et des périmètres réseau locaux, entraîne une saturation rapide et exécute l’infrastructure VPN hors capacité. Dans cette nouvelle réalité, l’utilisation du VPN pour accéder à Office 365 n’est plus seulement un obstacle aux performances, mais un mur dur qui non seulement a un impact sur les Office 365 mais également sur les opérations d’entreprise critiques qui doivent encore s’appuyer sur le VPN pour fonctionner.
 
 Microsoft travaille en étroite collaboration avec des clients et une grande industrie depuis de nombreuses années afin d’offrir des solutions efficaces et modernes à ces problèmes à partir de nos propres services et de s’adapter aux meilleures pratiques industrielles. Les [principes de connectivité](./microsoft-365-network-connectivity-principles.md) du service Office 365 ont été conçus pour fonctionner de manière efficace pour les utilisateurs distants tout en permettant à une organisation de maintenir la sécurité et le contrôle de leur connectivité. Ces solutions peuvent également être implémentées rapidement avec un travail limité tout en ayant un impact positif significatif sur les problèmes décrits ci-dessus.
 
@@ -110,7 +110,7 @@ Les URL dans cette catégorie présentent les caractéristiques suivantes :
 - Sont-ils en mesure d'avoir les éléments de sécurité requis fournis dans le service plutôt qu'en ligne sur le réseau
 - Représente environ 70 à 80% du volume de trafic vers le service Office 365
 
-Pour plus d’informations Office 365 points de terminaison et comment ils sont catégorisés et [gérés, voir Managing Office 365 endpoints](managing-office-365-endpoints.md).
+Pour plus d’informations Office 365 points de terminaison et la façon dont ils sont catégorisés et [gérés, voir Gestion Office 365 de terminaison.](managing-office-365-endpoints.md)
 
 #### <a name="optimize-urls"></a>Optimiser les URL
 
@@ -120,7 +120,7 @@ Les URL optimisées actuelles sont accessibles dans le tableau ci-dessous. Dans 
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | Il s’agit de l’une des principales URL qu’Outlook utilise pour se connecter à son serveur Exchange Online et qui présente un volume élevé d’utilisation de la bande passante et de nombre de connexions. Une latence de réseau faible est requise pour les fonctionnalités en ligne telles que la recherche instantanée, les autres calendriers de boîte aux lettres, la recherche de disponibilités, la gestion des règles et alertes, l’archivage Exchange Online, les courriers électroniques faisant partie de la boîte d’envoi. |
 | <https://outlook.office.com> | TCP 443 | Cette URL est utilisée par Outlook Online Web Access pour se connecter au serveur Exchange Online, et est sensible à la latence du réseau. La connectivité est particulièrement nécessaire pour le chargement et le téléchargement de fichiers volumineux avec SharePoint Online. |
-| https:// \<tenant\> .sharepoint.com | TCP 443 | Il s’agit de l’URL principale de SharePoint Online avec une utilisation à bande passante élevée. |
+| https:// \<tenant\> .sharepoint.com | TCP 443 | Il s’agit de l’URL principale pour SharePoint Online avec une utilisation à bande passante élevée. |
 | https:// \<tenant\> -my.sharepoint.com | TCP 443 | Il s’agit de l’URL principale de OneDrive Entreprise et de l’utilisation de la bande passante élevée et éventuellement d’un nombre élevé de connexions à partir de l’outil de synchronisation OneDrive Entreprise. |
 | Adresses IP des médias Teams (aucune URL) | UDP 3478, 3479, 3480, et 3481 | Allocation de découverte de relais et trafic en temps réel (3478), audio (3479), vidéo (3480) et partage d’écran vidéo (3481). Voici les points de terminaison utilisés pour Skype Entreprise trafic Microsoft Teams multimédia (appels, réunions, etc.). La plupart des points de terminaison sont fournis lorsque le client Microsoft Teams établit un appel (et est inclus dans les adresses IP requises répertoriées pour le service). L’utilisation du protocole UDP est nécessaire pour optimiser la qualité des médias.   |
 
@@ -253,7 +253,7 @@ Une fois la stratégie en place, vous devez vérifier qu’elle fonctionne comme
   tracert worldaz.tr.teams.microsoft.com
   ```
 
-  Vous devriez ensuite voir un chemin d’accès via le isp local à ce point de terminaison qui doit résoudre une adresse IP dans les plages de Teams que nous avons configurées pour la tunnellation fractionner.
+  Vous devez ensuite voir un chemin d’accès via le isp local à ce point de terminaison qui doit résoudre une adresse IP dans les plages Teams que nous avons configurées pour la tunnellation fractionner.
 
 - Prenez une capture réseau à l’aide d’un outil tel que Wireshark. Filtrez sur le protocole UDP pendant un appel et le trafic s'acheminera vers une adresse IP dans la plage **Optimiser** Teams. Si le tunnel VPN est utilisé pour ce trafic, le trafic de média ne sera pas visible dans la trace.
 
@@ -270,7 +270,7 @@ Cette section fournit des liens vers des guides détaillés pour l’implémenta
 - **Palo Alto GlobalProtect** : [optimisation du trafic Office 365 par tunnel VPN fractionné via exclusion d’accès](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM** : [optimiser le trafic Office 365 sur un accès à distance via des réseaux VPN lors de l’utilisation de BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 - **Passerelle Citrix** : [optimisation du tunnel fractionné VPN de la passerelle Citrix pour Office 365](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
-- **Pulse Secure** : [tunnellisation VPN : comment configurer la tunnellisation partagée pour exclure les applications Office 365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **Pulse Secure**: Tunneling VPN : [comment configurer la tunnelisation fractionner](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417) pour exclure Office 365 applications
 - **VPN de point** de contrôle : [comment configurer split Tunnel pour Office 365 et d’autres applications SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="faq"></a>FAQ

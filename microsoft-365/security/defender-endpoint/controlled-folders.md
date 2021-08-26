@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: ffcb986198cbe672b935980aea39f340bab947b9f3ba21ad890feadf6cc8f2ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 19737781f2c22a356da2c237e2f059a362140956
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863678"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533662"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
@@ -36,10 +36,10 @@ ms.locfileid: "53863678"
 
 ## <a name="what-is-controlled-folder-access"></a>Qu’est-ce que l’accès contrôlé aux dossiers ?
 
-L’accès contrôlé aux dossiers permet de protéger vos données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers protège vos données en vérifiant les applications par rapport à une liste d’applications connues et fiables. Pris en charge sur les clients Windows Server 2019 et Windows 10, l’accès contrôlé aux dossiers peut être désactivé à l’aide de Sécurité Windows App, Microsoft Endpoint Configuration Manager ou Intune (pour les appareils gérés). 
+L’accès contrôlé aux dossiers permet de protéger vos données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers protège vos données en vérifiant les applications par rapport à une liste d’applications connues et fiables. Pris en charge sur les clients Windows Server 2019 et Windows 10, l’accès contrôlé aux dossiers peut être désactivé à l’aide de Sécurité Windows App, Microsoft Endpoint Configuration Manager ou Intune (pour les appareils gérés).
 
 > [!NOTE]
-> Les moteurs de script ne sont pas fiables et vous ne pouvez pas leur autoriser l’accès aux dossiers protégés contrôlés.  Par exemple, PowerShell n’est pas approuvé par l’accès contrôlé aux [dossiers,](/microsoft-365/security/defender-endpoint/indicator-certificates)même si vous l’autorisez avec des indicateurs de certificat et de fichier. 
+> Les moteurs de script ne sont pas fiables et vous ne pouvez pas leur autoriser l’accès aux dossiers protégés contrôlés. Par exemple, PowerShell n’est pas approuvé par l’accès contrôlé aux [dossiers,](/microsoft-365/security/defender-endpoint/indicator-certificates)même si vous l’autorisez avec des indicateurs de certificat et de fichier.
 
 L’accès contrôlé aux dossiers fonctionne mieux avec [Microsoft Defender pour point](microsoft-defender-endpoint.md)de terminaison, qui vous fournit des rapports détaillés sur les événements et les blocs d’accès contrôlé aux dossiers dans le cadre des scénarios d’investigation d’alerte [habituels.](investigate-alerts.md)
 
@@ -48,9 +48,9 @@ L’accès contrôlé aux dossiers fonctionne mieux avec [Microsoft Defender pou
 
 ## <a name="how-does-controlled-folder-access-work"></a>Comment fonctionne l’accès contrôlé aux dossiers ?
 
-L’accès contrôlé aux dossiers fonctionne uniquement en permettant aux applications de confiance d’accéder aux dossiers protégés. Les dossiers protégés sont spécifiés lorsque l’accès contrôlé aux dossiers est configuré. En règle générale, les dossiers couramment utilisés, tels que ceux utilisés pour les documents, les images, les téléchargements, etc., sont inclus dans la liste des dossiers contrôlés. 
+L’accès contrôlé aux dossiers fonctionne uniquement en permettant aux applications de confiance d’accéder aux dossiers protégés. Les dossiers protégés sont spécifiés lorsque l’accès contrôlé aux dossiers est configuré. En règle générale, les dossiers couramment utilisés, tels que ceux utilisés pour les documents, les images, les téléchargements, etc., sont inclus dans la liste des dossiers contrôlés.
 
-L’accès contrôlé aux dossiers fonctionne avec une liste d’applications de confiance. Les applications incluses dans la liste des logiciels de confiance fonctionnent comme prévu. Les applications qui ne sont pas incluses dans la liste sont empêchées d’apporter des modifications aux fichiers à l’intérieur de dossiers protégés. 
+L’accès contrôlé aux dossiers fonctionne avec une liste d’applications de confiance. Les applications incluses dans la liste des logiciels de confiance fonctionnent comme prévu. Les applications qui ne sont pas incluses dans la liste sont empêchées d’apporter des modifications aux fichiers à l’intérieur de dossiers protégés.
 
 Les applications sont ajoutées à la liste en fonction de leur prévalence et de leur réputation. Les applications qui sont très répandues dans toute votre organisation et qui n’ont jamais affiché de comportement considéré comme malveillant sont considérées comme fiables. Ces applications sont ajoutées automatiquement à la liste.
 
@@ -65,12 +65,13 @@ Les [dossiers protégés incluent les dossiers](#review-controlled-folder-access
 Vous pouvez utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de l’accès contrôlé aux dossiers sur votre organisation s’il était activé. Vous pouvez également visiter le site web Windows Defender test au [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
 
 L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes Windows :
+
 - [Windows 10, version 1709 et](/windows/whats-new/whats-new-windows-10-version-1709) ultérieures
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="windows-system-folders-are-protected-by-default"></a>Windows dossiers système sont protégés par défaut
 
-Windows système sont protégés par défaut, ainsi que plusieurs autres dossiers : 
+Windows système sont protégés par défaut, ainsi que plusieurs autres dossiers :
 
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
@@ -114,15 +115,20 @@ Vous pouvez consulter le journal Windows événements pour voir les événements
 
 Le tableau suivant indique les événements liés à l’accès contrôlé aux dossiers :
 
-|ID d’événement | Description |
-|:---|:---|
-|5007 | Événement lorsque les paramètres sont modifiés |
-|1124 | Événement d’accès contrôlé aux dossiers audité | 
-|1123 | Événement d’accès contrôlé aux dossiers bloqué |
+<br>
+
+****
+
+|ID d’événement|Description|
+|---|---|
+|5007|Événement lorsque les paramètres sont modifiés|
+|1124|Événement d’accès contrôlé aux dossiers audité|
+|1123|Événement d’accès contrôlé aux dossiers bloqué|
+|
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>Afficher ou modifier la liste des dossiers protégés
 
-Vous pouvez utiliser l’application Sécurité Windows pour afficher la liste des dossiers protégés par un accès contrôlé aux dossiers. 
+Vous pouvez utiliser l’application Sécurité Windows pour afficher la liste des dossiers protégés par un accès contrôlé aux dossiers.
 
 1. Sur votre Windows 10, ouvrez l’application Sécurité Windows’application.
 2. Sélectionnez **Protection contre les virus et les menaces**.
@@ -130,9 +136,7 @@ Vous pouvez utiliser l’application Sécurité Windows pour afficher la liste d
 4. Si l’accès contrôlé aux dossiers est désactivé, vous devez l’activer. Sélectionnez **les dossiers protégés.**
 5. Effectuez l’une des étapes suivantes :
    - Pour ajouter un dossier, **sélectionnez + Ajouter un dossier protégé.**
-   - Pour supprimer un dossier, sélectionnez-le, puis sélectionnez **Supprimer.** 
+   - Pour supprimer un dossier, sélectionnez-le, puis sélectionnez **Supprimer.**
 
 > [!NOTE]
 > [Windows dossiers système](#windows-system-folders-are-protected-by-default) sont protégés par défaut et vous ne pouvez pas les supprimer de la liste.
-
-

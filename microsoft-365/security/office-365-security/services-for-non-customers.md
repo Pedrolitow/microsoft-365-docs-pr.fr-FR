@@ -17,12 +17,12 @@ ms.collection:
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a8ad98029fdc7f008ff6b22c2e8fa3e738b9fc7c0caa13b0aaca918a40f4d3e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9bed3c24fee91d746957a6418e5f5ea61babef6b
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56854714"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533638"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Services pour les non-clients qui envoient des messages Microsoft 365
 
@@ -67,4 +67,4 @@ Il s’agit d’un portail en libre-service que vous pouvez utiliser pour vous s
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online
 
-Parfois, Microsoft365 est utilisé par des tiers pour envoyer du courrier indésirable, en violation de nos conditions d’utilisation et de notre stratégie. Si vous recevez un courrier indésirable de Office 365, vous pouvez signaler ces messages à Microsoft. Pour obtenir des instructions, [reportez-vous aux messages et fichiers envoyés à Microsoft.](report-junk-email-messages-to-microsoft.md)
+Parfois, Microsoft 365 est utilisé par des tiers pour envoyer du courrier indésirable, en violation de nos conditions d’utilisation et de notre stratégie. Si vous recevez un courrier indésirable de Office 365, vous pouvez signaler ces messages à Microsoft. Pour obtenir des instructions, [reportez-vous aux messages et fichiers envoyés à Microsoft.](report-junk-email-messages-to-microsoft.md)

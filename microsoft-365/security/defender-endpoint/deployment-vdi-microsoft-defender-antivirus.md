@@ -15,12 +15,12 @@ ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 8a4cd421121f9cfae94724bfaab29df2bf873ab8748f1605d68f5a9813f99102
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cbf1cae088af2606e8fea1e40e0cfe34c7a74832
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794365"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533518"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -65,7 +65,7 @@ Dans Windows 10, version 1903, nous avons introduit la fonctionnalité d’intel
 
 3. Cliquez **sur Modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender**  >    >  **security intelligence updates**.
+4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **security intelligence updates**.
 
 5. Double-cliquez sur **Définir l’emplacement d’intelligence** de sécurité pour les clients VDI, puis définissez l’option **sur Activé.** Un champ s’affiche automatiquement.
 
@@ -103,15 +103,15 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 ```
 
 Vous pouvez définir une tâche programmée de sorte qu’elle s’exécute une fois par jour de sorte que chaque fois que le package est téléchargé et décompressé, les VM reçoivent la nouvelle mise à jour.
-Nous vous suggérons de commencer par une fois par jour, mais vous devez essayer d’augmenter ou de réduire la fréquence pour en comprendre l’impact.
+Nous vous suggérons de commencer une fois par jour, mais vous devez essayer d’augmenter ou de réduire la fréquence pour en comprendre l’impact.
 
-Les packages d’informations de sécurité sont généralement publiés toutes les trois à quatre heures. La définition d’une fréquence plus courte que quatre heures n’est pas recommandée, car elle augmente la surcharge réseau sur votre ordinateur de gestion sans aucun avantage.
+Les packages d’informations de sécurité sont généralement publiés toutes les trois à quatre heures. Il n’est pas conseillé de définir une fréquence de moins de quatre heures, car cela augmente la surcharge réseau sur votre ordinateur de gestion sans aucun avantage.
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>Définir une tâche programmée pour exécuter le script PowerShell
 
 1. Sur l’ordinateur de gestion, ouvrez le menu Démarrer et tapez **Le Programmeur de tâches.** Ouvrez-le et **sélectionnez Créer une tâche...** sur le panneau latéral.
 
-2. Entrez le nom en **tant que décompresseur security intelligence**. Go to the **Trigger** tab. Select **New...**  >  **Tous les** jours, puis sélectionnez **OK.**
+2. Entrez le nom en **tant que décompresseur security intelligence**. Go to the **Trigger** tab. Select **New...** \> **Tous les** jours, puis sélectionnez **OK.**
 
 3. Go to the **Actions** tab. Select **New...** Entrez **PowerShell dans** le **champ Programme/Script.** Entrez `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` le champ Ajouter des **arguments.** Sélectionnez **OK**.
 
@@ -145,7 +145,7 @@ Si vous préférez tout faire manuellement, voici comment répliquer le comporte
 
 Les analyses programmées s’exécutent en plus de la protection et de [l’analyse en temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md)
 
-L’heure de début de l’analyse elle-même est toujours basée sur la stratégie d’analyse programmée (**ScheduleDay**, **ScheduleTime** et **ScheduleQuickScanTime**). La randomisation entraîne Antivirus Microsoft Defender démarrer une analyse sur chaque ordinateur dans une fenêtre de 4 heures à partir de la période définie pour l’analyse programmée.
+L’heure de début de l’analyse elle-même est toujours basée sur la stratégie d’analyse programmée (**ScheduleDay**, **ScheduleTime** et **ScheduleQuickScanTime**). La randomisation entraîne Antivirus Microsoft Defender démarrer une analyse sur chaque ordinateur dans une fenêtre de 4 heures à partir de l’heure définie pour l’analyse programmée.
 
 Voir [Analyses de planification pour](scheduled-catch-up-scans-microsoft-defender-antivirus.md) les autres options de configuration disponibles pour les analyses programmées.
 
@@ -153,7 +153,7 @@ Voir [Analyses de planification pour](scheduled-catch-up-scans-microsoft-defende
 
 Vous pouvez spécifier le type d’analyse à effectuer lors d’une analyse programmée. Les analyses rapides sont l’approche préférée, car elles sont conçues pour rechercher tous les endroits où les programmes malveillants doivent résider pour être actifs. La procédure suivante décrit comment configurer des analyses rapides à l’aide de la stratégie de groupe.
 
-1. Dans votre Éditeur de stratégie de groupe, allez aux **modèles**  >  **d’administration Windows composants**  >  **Antivirus Microsoft Defender**  >  **Scan**.
+1. Dans votre Éditeur de stratégie de groupe, allez aux **modèles** \> **d’administration Windows composants** \> **Antivirus Microsoft Defender** \> **Scan**.
 
 2. Sélectionnez **Spécifier le type d’analyse à utiliser pour une analyse** programmée, puis modifiez le paramètre de stratégie.
 
@@ -165,9 +165,9 @@ Vous pouvez spécifier le type d’analyse à effectuer lors d’une analyse pro
 
 ## <a name="prevent-notifications"></a>Empêcher les notifications
 
-Parfois, Antivirus Microsoft Defender notifications peuvent être envoyées à plusieurs sessions ou être persistantes. Pour minimiser ce problème, vous pouvez verrouiller l’interface Antivirus Microsoft Defender utilisateur. La procédure suivante décrit comment supprimer les notifications avec la stratégie de groupe.
+Parfois, Antivirus Microsoft Defender notifications peuvent être envoyées à plusieurs sessions ou être persistantes. Pour minimiser ce problème, vous pouvez verrouiller l’interface Antivirus Microsoft Defender’utilisateur. La procédure suivante décrit comment supprimer les notifications avec la stratégie de groupe.
 
-1. Dans votre Éditeur de stratégie de groupe, Windows **composants**  >  **Antivirus Microsoft Defender**  >  **interface client.**
+1. Dans votre Éditeur de stratégie de groupe, Windows **composants** \> **Antivirus Microsoft Defender** \> **interface client.**
 
 2. Sélectionnez **Supprimer toutes les notifications,** puis modifiez les paramètres de stratégie.
 
@@ -191,7 +191,7 @@ La désactivation d’une analyse après une mise à jour empêche l’analyse d
 > [!IMPORTANT]
 > L’exécution d’analyses après une mise à jour permet de s’assurer que vos VM sont protégées avec les dernières mises à jour d’intelligence de sécurité. La désactivation de cette option réduit le niveau de protection de vos VM et ne doit être utilisée que lors de la création ou du déploiement de l’image de base.
 
-1. Dans votre Éditeur de stratégie de groupe, Windows **composants** Antivirus Microsoft Defender mises à jour  >    >  **security intelligence**.
+1. Dans votre Éditeur de stratégie de groupe, Windows **composants** Antivirus Microsoft Defender mises à jour \>  \> **security intelligence**.
 
 2. Sélectionnez **Activer l’analyse après la mise** à jour des informations de sécurité, puis modifiez le paramètre de stratégie.
 
@@ -205,7 +205,7 @@ Cette stratégie empêche l’exécution d’une analyse immédiatement après u
 
 ## <a name="scan-vms-that-have-been-offline"></a>Analyser les ordinateurs VM qui ont été hors connexion
 
-1. Dans votre Éditeur de stratégie de groupe, Windows **composants**  >  **Antivirus Microsoft Defender**  >  **Scan**.
+1. Dans votre Éditeur de stratégie de groupe, Windows **composants** \> **Antivirus Microsoft Defender** \> **Scan**.
 
 2. Sélectionnez **Activer l’analyse rapide de rattrapage,** puis modifiez le paramètre de stratégie.
 
@@ -219,7 +219,7 @@ Cette stratégie force une analyse si la VM a manqué au moins deux analyses pro
 
 ## <a name="enable-headless-ui-mode"></a>Activer le mode d’interface utilisateur sans en-tête
 
-1. Dans votre Éditeur de stratégie de groupe, Windows **composants**  >  **Antivirus Microsoft Defender**  >  **interface client.**
+1. Dans votre Éditeur de stratégie de groupe, Windows **composants** \> **Antivirus Microsoft Defender** \> **interface client.**
 
 2. Sélectionnez **Activer le mode d’interface utilisateur sans tête** et modifiez la stratégie.
 

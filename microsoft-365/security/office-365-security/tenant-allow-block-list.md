@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à gérer les autoriser et les blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09a710a5fb1518b819704e881534efda15236520
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 6223720f6977d3c4399ad36e1ad29894feabe63d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349967"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533686"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -35,8 +35,8 @@ ms.locfileid: "58349967"
 > [!NOTE]
 >
 > Certaines des fonctionnalités décrites dans cet article sont en prévisualisation, sont sujettes à modification et ne sont pas disponibles dans toutes les organisations.
-> 
-> Si votre organisation ne dispose pas des fonctionnalités d’usurpation d’informations décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresses chez [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
+>
+> Si votre organisation ne dispose pas des fonctionnalités d’usurpation d’informations décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresse chez [Manage spoofof senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous pouvez ne pas être d’accord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message erroné peut être autorisé (faux négatif).
 
@@ -45,7 +45,7 @@ La liste des locataires autoriser/bloquer dans le portail Microsoft 365 Defender
 - URL à bloquer.
 - Fichiers à bloquer.
 - Messages électroniques ou domaines de l’expéditeur à bloquer.
-- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’adresses ou de verdicts d’usurpation d’adresse, l’expéditeur usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer.  Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresse.
+- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’informations sur l’usurpation d’adresse, l’expéditeur  usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresses.
 - URL à autoriser.
 - Fichiers à autoriser.
 - Messages électroniques ou domaines de l’expéditeur à autoriser.
@@ -84,7 +84,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
     - Pour un accès en lecture seule à la liste d’accès  au  client autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
   - **Usurpation :** l’une des combinaisons suivantes :
     - **Gestion de l'organisation**
-    - **Administrateur de la** <u>sécurité et</u> **configuration en affichage seul** ou gestion **de l’organisation en affichage seul.**
+    - **Administrateur de sécurité** <u>et</u> **configuration en affichage seul** ou gestion de **l’organisation en affichage seul.**
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -94,13 +94,13 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
   >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
-## <a name="configure-the-tenant-allowblock-list"></a>Configurer la liste d’attente des locataires
+## <a name="configure-the-tenant-allowblock-list"></a>Configurer la liste d’accès au client
 
 ### <a name="use-the-microsoft-365-defender-portal"></a>Utiliser le portail Microsoft 365 Defender
 
 Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-Pour ajouter tous les blocs, voir Ajouter des blocs dans la liste des locataires [autoriser/bloquer.](manage-tenant-blocks.md)
+Pour ajouter tous les blocs, voir [Ajouter des blocs dans la liste d’attente des locataires.](manage-tenant-blocks.md)
 
 Pour ajouter tous les autoriser, voir Ajouter des autoriser dans la liste des locataires [autoriser/bloquer](manage-tenant-allows.md).
 
@@ -108,7 +108,7 @@ Pour modifier et supprimer tous les blocs et tous les blocs, voir Modifier et su
 
 ### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome
 
-Pour gérer tous les blocs et les autoriser, voir Ajouter des blocs dans la liste des locataires [autoriser/bloquer,](manage-tenant-blocks.md)Ajouter des autoriser dans la liste des locataires [autoriser/bloquer,](manage-tenant-allows.md)et modifier et supprimer des entrées dans la liste d’inscriptions client [autoriser/bloquer](modify-remove-entries-tenant-allow-block.md).
+Pour gérer tous les blocs et tous les autoriser, voir Ajouter des blocs dans la liste d’attente [du](manage-tenant-blocks.md)client, Ajouter des autoriser dans la liste des locataires [autoriser/bloquer,](manage-tenant-allows.md)et modifier et supprimer des entrées dans la liste d’inscriptions client [autoriser/bloquer](modify-remove-entries-tenant-allow-block.md).
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>Afficher les entrées dans la liste des locataires autoriser/bloquer
 
@@ -172,7 +172,7 @@ Pour gérer tous les blocs et les autoriser, voir Ajouter des blocs dans la list
      - **Action**
      - **Type d’usurpation**
 
-   Lorsque vous avez terminé, cliquez sur **Appliquer.** Pour effacer les filtres existants,  cliquez sur **Filtrer** et dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
+   Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres existants,  cliquez sur **Filtrer** et dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
@@ -196,7 +196,7 @@ Cet exemple renvoie toutes les URL bloquées.
 Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
 
 ## <a name="view-spoofed-sender-entries"></a>Afficher les entrées d’expéditeur usurpées
 

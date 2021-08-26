@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c046bf15cf3ccfbbbfb8969b0f0bc48db1ad4f5
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: ae01a929121488399ac3a016f0b33ae7b28ff96d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349895"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533614"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -39,13 +39,25 @@ ms.locfileid: "58349895"
 Cet article répertorie les nouvelles fonctionnalités de la dernière version de Microsoft Defender pour Office 365. Les fonctionnalités actuellement en prévisualisation sont notées avec **(prévisualisation).**
 
 Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
+
 > [!TIP]
 > Vous n’avez pas encore Microsoft Defender Office 365 ? [Contactez les ventes pour démarrer une version d’essai.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
 ## <a name="august-2021"></a>Août 2021
 
+- [Révision de l’administrateur pour les messages](admin-review-reported-message.md)signalés : les administrateurs peuvent désormais renvoyer des messages de modèle aux utilisateurs finaux après avoir passé en revue les messages signalés. Cela peut être personnalisé pour votre organisation et en fonction du verdict de votre administrateur. 
+=======
+## <a name="september-2021"></a>Septembre 2021
+
+- [Stratégies de mise](quarantine-policies.md)en quarantaine : les administrateurs peuvent configurer un contrôle granulaire pour l’accès des destinataires aux messages mis en quarantaine et personnaliser les notifications de courrier indésirable à l’utilisateur final.
+  - [Vidéo de l’expérience de l’administrateur](https://youtu.be/vnar4HowfpY)
+  - [Vidéo de l’expérience de l’utilisateur final](https://youtu.be/s-vozLO43rI)
+  - D’autres nouvelles fonctionnalités mises en quarantaine sont décrites dans ce billet de blog : Simplification de l’expérience de mise [en quarantaine.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388)
+
+## <a name="august-2021"></a>Août 2021
+
 - [Révision de l’administrateur pour les messages](admin-review-reported-message.md)signalés : les administrateurs peuvent désormais renvoyer des messages de modèle aux utilisateurs finaux après avoir passé en revue les messages signalés. Les modèles peuvent être personnalisés pour votre organisation et basés sur le verdict de votre administrateur.
-- Ajout d’autoriser dans la liste d’adresses client [autoriser/bloquer](manage-tenant-allows.md): les autoriser ne peuvent pas être ajoutés directement à la liste d’adresses client autoriser/bloquer, mais peuvent maintenant être si le message bloqué est envoyé dans le cadre du processus de soumission de l’administrateur. Selon le bloc qui s’est produit, une URL, un fichier et/ou une adresse d’expéditeur sont ajoutés à la liste d’adresses client autoriser/bloquer. Dans la plupart des cas, les autoriser sont ajoutés pour donner au système un peu de temps et l’autoriser naturellement si cela est justifié. Dans certains cas, Microsoft gère l’autoriser pour vous.
+- [Ajouter des allows](manage-tenant-allows.md)dans la liste d’adresses client autoriser/bloquer : vous pouvez désormais ajouter des entrées d’autoriser à la liste d’adresses client autoriser/bloquer si le message bloqué a été envoyé dans le cadre du processus de soumission de l’administrateur. Selon la nature du bloc, l’URL envoyée, le fichier et/ou l’expéditeur sont ajoutés à la liste d’adresses client autoriser/bloquer. Dans la plupart des cas, les autoriser sont ajoutés pour donner au système un peu de temps et l’autoriser naturellement si cela est justifié. Dans certains cas, Microsoft gère l’autoriser pour vous.
 
 ## <a name="july-2021"></a>Juillet 2021
 
@@ -62,8 +74,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 - [](user-tags.md) Les balises utilisateur sont désormais intégrées aux expériences d’alerte de Microsoft Defender pour Office 365, notamment : la file d’attente des alertes et les détails dans Office 365 Security & Compliance, et l’application de stratégies d’alerte personnalisées aux balises utilisateur pour créer des stratégies d’alerte ciblées. 
   - Les balises sont également disponibles dans la file d’attente des alertes unifiées dans le centre Microsoft 365 Defender (Microsoft Defender pour Office 365 Plan 2)
 
-
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 - Le nouveau premier contact conseil de sécurité dans les stratégies anti-hameçonnage. Cette conseil de sécurité s’affiche lorsque les destinataires reçoivent pour la première fois un message électronique d’un expéditeur ou ne reçoivent pas souvent de courriers électroniques d’un expéditeur. Pour plus d’informations sur ce paramètre et comment le configurer, consultez les articles suivants :
   - [Premier contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip)
@@ -81,9 +92,9 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 - Intégration de l’ID d’alerte (recherche à l’aide de l’ID d’alerte et Alert-Explorer navigation) dans les expériences [de recherche](threat-explorer.md)
 - Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de recherche](threat-explorer.md)
 - Extension de la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 (limite précédente) à 30 jours dans les expériences de [repérage](threat-explorer.md)
-- Nouveaux pivots  de repérage appelés domaine emprunt d’identité et utilisateur dont l’identité est usurpée dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés.  Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
+- Nouveaux tableaux  croisés dynamiques  de repérage appelés domaine dont l’identité a été usurpée et utilisateur usurpé d’identité dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés. Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
-## <a name="december-2020"></a>Décembre 2020
+## <a name="december-2020"></a>Décembre 2020
 
 - [Sécurisé par défaut dans Office 365](secure-by-default.md)
 - Améliorations de l’examen automatisé : alertes générales pour les enquêtes de courrier déclenchées manuellement, traitement des modifications de boîte aux lettres comme une catégorie d’entité distincte, suppression des actions de blocage d’URL redondantes et création de clusters de courrier sortant pour les enquêtes compromises par l’utilisateur.
@@ -120,7 +131,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 
 - Le widget **Incidents** est désormais le widget **Centre de l’action.** (Pour afficher vos widgets de sécurité dans le Centre de sécurité & conformité, consultez La gestion **des menaces** \> **Review**.) (Microsoft Defender pour Office 365 Plan 2)
 
-- [Coffre documents en Microsoft 365](safe-docs.md) **(prévisualisation)**
+- [Coffre documents dans Microsoft 365](safe-docs.md) **(prévisualisation)**
 
 ## <a name="december-2019"></a>Décembre 2019
 

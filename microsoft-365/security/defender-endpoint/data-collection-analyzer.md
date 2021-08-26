@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1e65133ba8bdfd969fcca9bd9dd66d1f8340bf80
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: dcf7ecede8eb870edbeb015d0c7a5005ed006ab2
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258599"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533566"
 ---
-#  <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Collecte de données pour la résolution avancée des problèmes sur Windows
+# <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Collecte de données pour la résolution avancée des problèmes sur Windows
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -47,8 +47,8 @@ Exécuter '**MDEClientAnalyzer.cmd /?**' pour voir la liste des paramètres disp
 
 **-c** - Appels dans le [moniteur](/sysinternals/downloads/procmon) de processus pour la surveillance avancée de l’activité en temps réel du système de fichiers, du Registre et des processus/threads. Cela est particulièrement utile lors du dépannage de différents scénarios de compatibilité d’application.
 
-**-i** : appelle une [](/windows/win32/winsock/netsh-exe) commandenetsh.exeintégrée pour démarrer un suivi du réseau et du pare-feu Windows qui est utile lors de la résolution de divers problèmes liés au réseau.  
-  
+**-i** : appelle une [](/windows/win32/winsock/netsh-exe) commandenetsh.exeintégrée pour démarrer un suivi du réseau et du pare-feu Windows qui est utile lors de la résolution de divers problèmes liés au réseau.
+
 **-b** - Identique à '-c', mais la trace du moniteur de processus sera lancée lors du prochain démarrage et arrêtée uniquement lorsque le -b est de nouveau utilisé.
 
 **-a** - Appelle l’Enregistreur de [performances Windows](/windows-hardware/test/wpt/wpr-command-line-options) pour collecter un suivi des performances détaillée spécifique à l’analyse des problèmes de processeur élevés liés au processus antivirus (MsMpEng.exe).
@@ -59,12 +59,13 @@ Exécuter '**MDEClientAnalyzer.cmd /?**' pour voir la liste des paramètres disp
 
 **-q** - Appelle un script DLPDiagnose.ps1'analyseur à partir du répertoire « Tools » qui valide la configuration de base et les conditions requises pour le point de terminaison DLP.
 
-**-d** - Collecte un vidage mémoire de MsSense **S**.exe (processus de capteur sur Windows Server 2016 ou un système d’exploitation plus ancien) et des processus associés.  
-\* Cet indicateur peut être utilisé conjointement avec les indicateurs mentionnés ci-dessus.  
-\*\* La capture d’un vidage mémoire de processus protégés par [PPL](/windows-hardware/drivers/install/early-launch-antimalware) tels que MsSense.exe ou MsMpEng.exe n’est pas prise en charge par l’analyseur pour le moment.
+**-d** - Collecte un vidage mémoire de MsSense **S**.exe (processus de capteur sur Windows Server 2016 ou un système d’exploitation plus ancien) et des processus associés.
 
-**-z** - Configure les clés de Registre sur l’ordinateur pour la préparer à la collecte de vidage mémoire complète de l’ordinateur via [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard).
-Cela serait utile pour l’analyse des problèmes de blocage de l’ordinateur.  
+- \* Cet indicateur peut être utilisé conjointement avec les indicateurs mentionnés ci-dessus.
+- \*\* La capture d’un vidage mémoire de processus protégés par [PPL](/windows-hardware/drivers/install/early-launch-antimalware) tels que MsSense.exe ou MsMpEng.exe n’est pas prise en charge par l’analyseur pour le moment.
+
+**-z** - Configure les clés de Registre sur l’ordinateur pour la préparer à la collecte de vidage mémoire complète de l’ordinateur via [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard). Cela serait utile pour l’analyse des problèmes de blocage de l’ordinateur.
+
 \* Maintenez la touche Ctrl la plus à droite, puis appuyez deux fois sur la touche DE VERROUILLAGE DE DÉFILEMENT.
 
 **-k** - Utilise [l’outil NotMyFault](/sysinternals/downloads/notmyfault) pour forcer le système à se crasher et générer un vidage de mémoire de l’ordinateur. Cela serait utile pour l’analyse de divers problèmes de stabilité du système d’exploitation.
@@ -73,11 +74,14 @@ L’analyseur et tous les indicateurs de scénario ci-dessus peuvent être lanc�
 
 ![Image de la ligne de commande avec des informations de l’analyseur](images/57cab9d82d08f672a92bf9e748ac9572.png)
 
->[!NOTE]
-> -   Lorsque vous utilisez RemoteMDEClientAnalyzer.cmd, il appelle psexec pour télécharger l’outil à partir du partage de fichiers configuré, puis l’exécuter localement via PsExec.exe.
+> [!NOTE]
+>
+> - Lorsque vous utilisez RemoteMDEClientAnalyzer.cmd, il appelle psexec pour télécharger l’outil à partir du partage de fichiers configuré, puis l’exécuter localement via PsExec.exe.
     Le script CMD utilise l’indicateur « -r » pour spécifier qu’il est en cours d’exécution à distance dans le contexte SYSTÈME et qu’aucune invite ne sera donc présentée à l’utilisateur.
->-   Ce même indicateur peut être utilisé avec MDEClientAnalyzer.cmd pour éviter une invite à l’utilisateur qui demande de spécifier le nombre de minutes pour la collecte de données. Par exemple :  
-    **MDEClientAnalyzer.cmd -r -i -m 5**
-    <br> **-r** : indique que l’outil est exécuté à partir d’un contexte distant (ou non interactif)  
-    **-i** - Indicateur de scénario pour la collecte de suivi réseau avec d’autres journaux associés  
->   **-m** \# - Nombre de minutes d’exécuter (5 minutes dans l’exemple ci-dessus)
+> - Ce même indicateur peut être utilisé avec MDEClientAnalyzer.cmd pour éviter une invite à l’utilisateur qui demande de spécifier le nombre de minutes pour la collecte de données. Par exemple :
+>
+>    **MDEClientAnalyzer.cmd -r -i -m 5**
+>
+>   - **-r** : indique que l’outil est exécuté à partir d’un contexte distant (ou non interactif)
+>   - **-i** - Indicateur de scénario pour la collecte de suivi réseau avec d’autres journaux associés
+>   - **-m** \# - Nombre de minutes d’exécuter (5 minutes dans l’exemple ci-dessus)
