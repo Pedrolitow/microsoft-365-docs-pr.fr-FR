@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 44caa372797e627a05bc40b3fb816d50dcd5a88c
-ms.sourcegitcommit: 0ec4a6cc94ebc2ae18846011a34bbd1dd9a7ace0
+ms.openlocfilehash: 55fa863dca2caf3a88c7127993c392c510953af8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470775"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506453"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -127,7 +127,16 @@ Vous pouvez appliquer automatiquement des étiquettes de rétention au contenu q
 
 - [Correspondance pour les classifieurs entraînables](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Les trois conditions peuvent automatiquement appliquer des étiquettes de rétention aux e-mails lorsqu’ils sont envoyés et reçus (données en transit), mais pas aux éléments existants dans la boîte aux lettres (données au repos). Pour les éléments dans SharePoint et OneDrive, utilisez le tableau suivant pour identifier le moment où des étiquettes de rétention peuvent y être automatiquement appliquées :
+Utilisez le tableau suivant pour identifier quand les étiquettes de rétention peuvent être automatiquement appliquées aux éléments pour Exchange :
+
+|Condition|Éléments en transit (envoyés ou reçus) |Éléments existants (données au repos)|
+|:-----|:-----|:-----|
+|Types d’informations sensibles – intégrés| Oui | Non |
+|Types d’informations sensibles – personnalisés| Oui | Non |
+|Mots clés spécifiques ou propriétés pouvant faire l’objet d’une recherche| Oui |Oui |
+|Classifieurs pouvant être formés| Oui | Oui (six derniers mois uniquement) |
+
+Utilisez le tableau suivant pour identifier quand les étiquettes de rétention peuvent être automatiquement appliquées aux éléments pour SharePoint et OneDrive :
 
 |Condition|Éléments modifiés ou nouveaux |Éléments existants (données au repos)|
 |:-----|:-----|:-----|
