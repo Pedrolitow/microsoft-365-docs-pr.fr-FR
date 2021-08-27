@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Découvrez comment utiliser les SharePoint Syntex pour identifier les fichiers de contrat et extraire des données à l’aide d’Microsoft 365 solution.
-ms.openlocfilehash: d26a11edfbfadfa9b8905e9cb7643cfefeef9b1e1f6e7e0516c50305fe974d71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f6097a7573037f8efc2467bb3a9f1037a12bf7ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859484"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561421"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Étape 1. Utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données
 
@@ -31,13 +31,13 @@ Les modèles de compréhension des documents utilisent la technologie OCR (Optic
 
 1. Tout d’abord, vous devez trouver au moins cinq exemples de fichiers que vous pouvez utiliser pour « former » le modèle afin de rechercher des caractéristiques spécifiques au type de contenu que vous essayez d’identifier (contrat). 
 
-2. À l SharePoint Syntex, créez un modèle de compréhension de document. À l’aide de vos exemples de fichiers, vous devez [créer un classificateur](create-a-classifier.md). En formeant le classifieur avec vos exemples de fichiers, vous lui apprenez à rechercher des caractéristiques spécifiques à ce que vous verrez dans les contrats de votre entreprise. Par exemple, [créez une «](create-a-classifier.md#create-an-explanation) explication » qui recherche des chaînes spécifiques dans vos contrats, telles que contrat de *service,* Conditions d’contrat *et* *Rémunération.* Vous pouvez même former votre explication pour rechercher ces chaînes dans des sections spécifiques du document ou en regard d’autres chaînes. Lorsque vous pensez avoir formé votre classificateur avec les informations dont il a besoin, vous pouvez tester votre modèle sur un exemple d’exemple de fichiers pour voir son efficacité. Après le test, si nécessaire, vous pouvez choisir d’apporter des modifications à vos explications pour les rendre plus efficaces. 
+2. À l SharePoint Syntex, créez un modèle de compréhension de document. À l’aide de vos exemples de fichiers, vous devez [créer un classificateur](create-a-classifier.md). En formeant le classifieur avec vos exemples de fichiers, vous lui apprenez à rechercher des caractéristiques spécifiques à ce que vous verrez dans les contrats de votre entreprise. Par exemple, [créez une «](create-a-classifier.md#create-an-explanation) explication » qui recherche des chaînes spécifiques dans vos contrats, telles que contrat de *service,* Conditions d’contrat *et* *Rémunération.* Vous pouvez même former votre explication pour rechercher ces chaînes dans des sections spécifiques du document ou en regard d’autres chaînes. Lorsque vous pensez avoir formé votre classificateur avec les informations dont il a besoin, vous pouvez tester votre modèle sur un exemple de fichiers d’exemples pour voir son efficacité. Après le test, si nécessaire, vous pouvez choisir d’apporter des modifications à vos explications pour les rendre plus efficaces. 
 
 3. Dans votre modèle, vous pouvez créer [un extracteur](create-an-extractor.md) pour extraire des éléments de données spécifiques de chaque contrat. Par exemple, pour chaque contrat, les informations qui vous intéressent le plus sont qui est le client, le nom de l’prestataire et le coût total.
 
-4. Une fois que vous avez créé votre modèle, appliquez-le à [une SharePoint de documents.](apply-a-model.md) Lorsque vous téléchargez des documents dans la bibliothèque de documents, votre modèle de compréhension des documents s’exécute et identifie et classifie tous les fichiers qui correspondent au type de contenu de contrats que vous avez défini dans votre modèle. Tous les fichiers classés en tant que contrats s’affichent dans un affichage bibliothèque personnalisé. Les fichiers affichent également les valeurs de chaque contrat que vous avez défini dans votre extracteur.
+4. Une fois que vous avez créé votre modèle, appliquez-le à [une bibliothèque SharePoint documents.](apply-a-model.md) Lorsque vous téléchargez des documents dans la bibliothèque de documents, votre modèle de compréhension des documents s’exécute et identifie et classifie tous les fichiers qui correspondent au type de contenu de contrats que vous avez défini dans votre modèle. Tous les fichiers classés en tant que contrats s’affichent dans un affichage bibliothèque personnalisé. Les fichiers affichent également les valeurs de chaque contrat que vous avez défini dans votre extracteur.
 
-   ![Contrats dans la bibliothèque de documents](../media/content-understanding/doc-lib-solution.png)
+   ![Contrats dans la bibliothèque de documents.](../media/content-understanding/doc-lib-solution.png)
 
 5. Si vous avez des exigences de rétention ou de sécurité [](apply-a-retention-label-to-a-model.md) pour vos [](apply-a-sensitivity-label-to-a-model.md) contrats, vous pouvez également utiliser votre modèle pour appliquer une étiquette de rétention ou une étiquette de niveau de sensibilité qui empêchera la suppression de vos contrats pendant une période spécifiée ou pour restreindre l’accès aux contrats.
 
@@ -81,7 +81,7 @@ Vous devez ajouter au moins cinq exemples de fichiers qui sont des documents de 
 
 3. Dans la **liste d’exemples** étiquetés à gauche, sélectionnez les autres fichiers que vous souhaitez utiliser comme exemples et étiquetez-les. 
 
-    ![Page d’accueil du classifieur](../media/content-understanding/models-contract-classifier.png) 
+    ![Page d’accueil du classifieur.](../media/content-understanding/models-contract-classifier.png) 
 
 #### <a name="add-at-least-one-explanation-to-train-the-classifier"></a>Ajouter au moins une explication pour former le classifieur 
 
@@ -107,11 +107,11 @@ Vous devez ajouter au moins cinq exemples de fichiers qui sont des documents de 
 
 Vous pouvez tester votre modèle de contrat sur des exemples de fichiers qu’il n’a pas vus auparavant. Cela est facultatif, mais il peut s’avérer utile.
 
-1. Dans la page **Modèles > contrat > classifieur** de contrat, sélectionnez **l’onglet Test.** Cette fonction exécute le modèle sur vos exemples de fichiers non lamentés.
+1. Dans la page **Modèles > contrat > classifieur** de contrat, sélectionnez **l’onglet Test.** Cela exécute le modèle sur vos fichiers d’exemples non lamentés.
 
 2. Dans la **liste Fichiers de test,** vos exemples de fichiers s’affichent et indiquent si le modèle les a prédits comme positifs ou négatifs. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
-    ![Capture d’écran des fichiers non lamentés dans la liste Fichiers texte](../media/content-understanding/test-on-files.png) 
+    ![Capture d’écran des fichiers non lamentés dans la liste Fichiers texte.](../media/content-understanding/test-on-files.png) 
 
 3. Lorsque vous avez terminé, **sélectionnez Quitter la formation.**
 
@@ -133,7 +133,7 @@ Lorsque vous créez l’extracteur, la page de l’extracteur s’ouvre. Cette p
 
 Pour étiqueter l’entité :
 
-1. Dans la visionneuse, sélectionnez les données à extraire des fichiers. Par exemple, si vous souhaitez extraire le *client,* vous mettez en surbrillez la valeur du client dans le premier fichier (dans cet exemple, Best *For You Organics*), puis sélectionnez **Enregistrer**. La valeur du fichier s’affiche dans la liste **Exemples** étiquetés, sous la **colonne Étiquette.**
+1. Dans la visionneuse, sélectionnez les données à extraire des fichiers. Par exemple, si vous souhaitez extraire le *client,* vous mettez en surbrillez la valeur du client dans le premier fichier (dans cet exemple, *Best For You Organics*), puis sélectionnez **Enregistrer**. La valeur du fichier s’affiche dans la liste **Exemples** étiquetés, sous la **colonne Étiquette.**
 
 2. Sélectionnez **Fichier suivant** à l’auto-ave et ouvrez le fichier suivant dans la liste dans la visionneuse. Ou **sélectionnez Enregistrer,** puis sélectionnez un autre fichier dans la liste **d’exemples étiquetés.**
 
@@ -155,7 +155,7 @@ Pour vous aider à identifier la *date de début du* contrat, vous pouvez créer
 
 2. À la page **Créer une explication** :
 
-    a. Dans le **champ Nom,** tapez le nom de l’explication (par exemple, *Date*).
+    a. Dans le **champ** Nom, tapez le nom de l’explication (par exemple, *Date*).
 
     b. Dans le **champ Type d’explication,** sélectionnez **Liste de modèles.**
 
@@ -172,7 +172,7 @@ Pour vous aider à identifier la *date de début du* contrat, vous pouvez créer
 
 Vous pouvez tester votre modèle de contrat sur des exemples de fichiers qu’il n’a pas vus auparavant. Cela est facultatif, mais il peut s’avérer utile.
 
-1. Dans la page **Modèles > contrat > classifieur** de contrat, sélectionnez **l’onglet Test.** Cette fonction exécute le modèle sur vos exemples de fichiers non lamentés.
+1. Dans la page **Modèles > contrat > classifieur** de contrat, sélectionnez **l’onglet Test.** Cela exécute le modèle sur vos fichiers d’exemples non lamentés.
 
 2. Dans la liste **Des fichiers de** test, vos exemples de fichiers s’affichent et indiquent si le modèle est en mesure d’extraire les informations dont vous avez besoin. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
@@ -186,7 +186,7 @@ Pour appliquer votre modèle à une bibliothèque SharePoint de documents :
 
    ![Screenshot showing the Contracts page with Apply model to libraries option highlighted.](../media/content-understanding/key-actions-apply-model.png)
 
-2. Dans le **panneau Ajouter un** contrat, sélectionnez le site SharePoint qui contient la bibliothèque de documents à appliquer au modèle. Si le site n’apparaît pas dans la liste, utilisez la zone de recherche pour le trouver. Cliquez sur **Ajouter**.
+2. Dans le **panneau Ajouter un** contrat, sélectionnez le site SharePoint qui contient la bibliothèque de documents à appliquer au modèle. Si le site n’apparaît pas dans la liste, utilisez la zone de recherche pour le trouver. Sélectionnez **Ajouter**.
 
     > [!NOTE]
     > Vous devez disposer d’autorisations *Gérer la liste* ou de droits *Modifier* sur la bibliothèque de documents à laquelle vous appliquez le modèle.

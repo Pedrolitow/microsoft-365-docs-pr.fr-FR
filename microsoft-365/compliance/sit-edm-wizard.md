@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 082bc5e9731a7abb0a8f1d9bd9b6f2e4e4a77dd07363dd475ec350c0c983b250
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dbba5e0e63f473d12b40c902001332c1689e4d12
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895346"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572166"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
@@ -47,7 +47,7 @@ dans [Partie 1 : configurer la classification EDM](create-custom-sensitive-inf
 
 2. Choisissez **Créer un schéma EDM** pour ouvrir le menu volant de configuration de l’Assistant de schéma.
 
-![Menu volant de configuration de l’Assistant de création de schéma EDM](../media/edm-schema-wizard-1.png)
+![Volant de configuration de l’Assistant Création de schéma EDM.](../media/edm-schema-wizard-1.png)
 
 3. Indiquez un nom **approprié** et **Description**.
 
@@ -93,7 +93,7 @@ Après avoir vérifié que votre table d’informations sensibles a été correc
 
 1. Ouvrez **le Centre de conformité** Types  >  **d’informations**  >  **sensibles de classification des données.**
 2. Sélectionnez votre sit EDM dans la liste, puis **sélectionnez Tester** dans le volet volant. 
-3. Télécharger un élément qui contient les données que vous souhaitez détecter, par exemple, créez un élément qui contient certaines des données de votre table d’informations sensibles. Si vous avez utilisé la fonctionnalité de correspondance configurable dans votre schéma pour définir des délimiteur ignorés, assurez-vous que l’élément inclut des exemples avec et sans ces délimiteurs.
+3. Télécharger un élément qui contient des données que vous souhaitez détecter, par exemple, créez un élément qui contient certaines des données de votre table d’informations sensibles. Si vous avez utilisé la fonctionnalité de correspondance configurable dans votre schéma pour définir des délimiteur ignorés, assurez-vous que l’élément inclut des exemples avec et sans ces délimiteur.
 4. Une fois le fichier téléchargé et analysé, recherchez les correspondances avec votre sit EDM.
 5. Si la **fonction Test** dans la fonction SIT détecte une correspondance, vérifiez qu’elle ne le coupe pas ou ne l’extrait pas de manière incorrecte. Par exemple, en extrayant uniquement une sous-chaîne de la chaîne complète qu’elle est supposée détecter, ou en sélectionnant uniquement le premier mot d’une chaîne de plusieurs mots, ou en incluant des symboles ou des caractères supplémentaires dans l’extraction. Voir [Langage des expressions régulières - Référence rapide pour](/dotnet/standard/base-types/regular-expression-language-quick-reference) la référence du langage d’expression régulière. 
 

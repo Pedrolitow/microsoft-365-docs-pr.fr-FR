@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 989e392071de0ed90b2daa964307989f664cb53a
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e7631647d97abc7f67129c9d40887996cfc7eb0b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532954"
+ms.locfileid: "58572154"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -99,11 +99,11 @@ Si vous êtes correctement connecté, un avertissement s’Antivirus Microsoft D
 
 Si vous utilisez Microsoft Edge, vous verrez également un message de notification :
 
-:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Capture d’écran de la notification de détection de programmes malveillants dans Edge":::
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Capture d’écran de la notification de détection de programmes malveillants dans Edge.":::
 
 Un message similaire se produit si vous utilisez Internet Explorer :
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Notification de Microsoft Defender AV à l’aide de la détection d’un programme malveillant":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Notification De Microsoft Defender AV que des programmes malveillants ont été détectés.":::
 
 Vous verrez également une  détection des menaces mises en quarantaine dans la **section** Historique des analyses de l’Sécurité Windows suivante :
 

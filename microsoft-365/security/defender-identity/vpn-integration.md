@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 5c208440287723367b875f3278fc69425a03b80d93a8f8b1ec4c574a31efb7ec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e6b8015cc8b6ac073c689bde3b15a411c859cada
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844289"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561277"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Intégration VPN De Defender pour l’identité dans Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ Cet article explique comment intégrer un VPN à [Microsoft Defender pour l’id
 - Point de contrôle
 - Cisco ASA
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Pour activer l’intégration VPN, veillez à définir les paramètres suivants :
 
@@ -58,11 +58,11 @@ Effectuez les étapes suivantes sur votre serveur RRAS.
 1. Cliquez avec le bouton droit sur le nom du serveur et sélectionnez **Propriétés.**
 1. Dans **l’onglet Sécurité,** sous **Fournisseur de comptabilité,** sélectionnez **RADIUS Accounting** et **sélectionnez Configurer**.
 
-    ![Configuration RADIUS](../../media/defender-identity/radius-setup.png)
+    ![Configuration RADIUS.](../../media/defender-identity/radius-setup.png)
 
 1. Dans la **fenêtre Ajouter un serveur RADIUS,** tapez le nom **du** serveur du capteur le plus proche [!INCLUDE [Product short](includes/product-short.md)] (qui dispose d’une connectivité réseau). Pour la haute disponibilité, vous pouvez ajouter des capteurs [!INCLUDE [Product short](includes/product-short.md)] supplémentaires en tant que serveurs RADIUS. Sous **Port,** assurez-vous que la valeur par défaut de 1813 est configurée. Sélectionnez **Modifier** et tapez une nouvelle chaîne secrète partagée de caractères alphanumériques. Notez la nouvelle chaîne secrète partagée, car vous devrez la remplir ultérieurement pendant la [!INCLUDE [Product short](includes/product-short.md)] configuration. **Cochez la case Envoyer un compte RADIUS et** tenir compte des messages et sélectionnez **OK** dans toutes les boîtes de dialogue ouvertes.
 
-    ![Configuration VPN](../../media/defender-identity/vpn-set-accounting.png)
+    ![Configuration VPN.](../../media/defender-identity/vpn-set-accounting.png)
 
 ## <a name="configure-vpn-in-defender-for-identity"></a>Configurer vpn dans Defender pour l’identité
 
@@ -72,12 +72,12 @@ Pour configurer les données VPN dans [!INCLUDE [Product short](includes/product
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Paramètres** and then **Identities**.
 
-    ![Go to Paramètres, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Sélectionnez **VPN**.
 1. Sélectionnez **Activer la comptabilité du** rayon et tapez la secret **partagé** que vous avez configurée précédemment sur votre serveur VPN RRAS. Sélectionnez **Enregistrer**.
 
-    ![Intégration VPN](../../media/defender-identity/vpn-integration.png)
+    ![Intégration VPN.](../../media/defender-identity/vpn-integration.png)
 
 Une fois cette opération activée, tous les capteurs Defender for Identity écoutent le port 1813 pour les événements de comptabilité RADIUS, et votre configuration VPN est terminée.
 

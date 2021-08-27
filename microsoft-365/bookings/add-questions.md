@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: Si vous devez poser des questions aux clients lorsqu’ils réservent un rendez-vous en ligne, vous pouvez ajouter des questions personnalisées et des questions requises à la page de réservation.
-ms.openlocfilehash: 7ee5710d20145dc1cb819c03c0a86336241ba829173f8abc3b4fdf2a96aa719e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 496d395677d272c436504bfe43b3c42833e3a73e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900882"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571602"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>Ajouter des questions personnalisées et requises à la page réservation
 
@@ -41,7 +41,7 @@ Pour plus d’informations sur la personnalisation et la personnalisation de vot
 
    Dans cet exemple, le numéro de téléphone et les notes client ont été désactivés et nous avons créé deux questions personnalisées à poser.
 
-   ![Image de l’écran de questions personnalisées](../media/bookings-questions-custom-fields.png)
+   ![Image de l’écran de questions personnalisées.](../media/bookings-questions-custom-fields.png)
 
 1. Pour que la question soit obligatoire, cochez **la case** Obligatoire. Votre client ne pourra pas terminer la réservation tant qu’il n’aura pas répondu aux questions requises.
 
@@ -55,7 +55,7 @@ Bookings enregistre toutes vos questions personnalisées dans une liste principa
 
 Dans cet exemple, vous pouvez voir que les questions qui ont été ajoutées pour le premier service sont disponibles pour ce service. Toutes les questions que vous créez pour ce service seront disponibles pour tous les services.
 
-   ![Image des questions qui s’affichent pour plusieurs services](../media/bookings-questions-services.png)
+   ![Image des questions qui s’affichent pour plusieurs services.](../media/bookings-questions-services.png)
 
 Si votre page de réservation est déjà publiée, vous n’avez rien d’autre à faire. Les clients pourront voir les questions la prochaine fois qu’ils se livreront avec vous. Si votre page de réservation n’est pas encore publiée, rendez-vous sur la **page** de réservation à partir de Outlook sur le web, puis sélectionnez Enregistrer **et publier.**
 
@@ -66,10 +66,10 @@ Si votre page de réservation est déjà publiée, vous n’avez rien d’autre 
 
 Lorsque vos clients réservent un rendez-vous avec vous, les questions d’informations client de base s’afficheront dans la section Ajouter **vos détails.** Toutes les questions personnalisées que vous ajoutez se feront dans la section Fournir **des** informations supplémentaires.
 
-![Image de ce que les clients voient lorsque les questions sont activées](../media/bookings-questions-customer.png)
+![Image de ce que les clients voient lorsque les questions sont activées.](../media/bookings-questions-customer.png)
 
 ## <a name="staff-experience"></a>Expérience du personnel
 
 Lorsque vos clients réservent un rendez-vous avec vous, vos employés voient les questions et les réponses du client dans le calendrier de réservation. Pour le voir, **rendez-vous dans le calendrier Bookings,** puis \>  ouvrez un rendez-vous.
 
-![Image de ce que le personnel voit lorsque les questions sont activées](../media/bookings-questions-staff.png)
+![Image de ce que le personnel voit lorsque les questions sont activées.](../media/bookings-questions-staff.png)

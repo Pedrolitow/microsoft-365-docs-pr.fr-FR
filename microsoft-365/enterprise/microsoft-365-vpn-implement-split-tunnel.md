@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: 58c72fa0ede7b9f0fb75d1a8d8c26a4a18464aa4
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9d706de846b6206a6be8a1524da1222b1c49147b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533578"
+ms.locfileid: "58571974"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -37,7 +37,7 @@ Pendant un certain temps, les modèles VPN où toutes les connexions à partir d
 
 L’utilisation de VPN tunnelés forcés pour la connexion à des applications cloud distribuées et sensibles aux performances est sous-optimale, mais l’effet négatif de cette opération a peut-être été accepté par certaines entreprises afin de maintenir le quo du point de vue de la sécurité. Un exemple de diagramme de ce scénario est illustré ci-dessous :
 
-![Configuration de la segmentation de tunnel par VPN](../media/vpn-split-tunneling/enterprise-network-traditional.png)
+![Fractionner Tunnel configuration VPN.](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 This problem has been growing for many years, with many customers reporting a significant shift of network traffic patterns. Le trafic qui était utilisé pour rester sur site se connecte désormais aux points de terminaison cloud externes. De nombreux clients Microsoft signalaient qu’auparavant, environ 80% du trafic réseau était une source interne (représentée par une ligne pointillée dans le diagramme ci-dessus). En 2020, ce nombre est à présent environ 20% ou plus, car les charges de travail majeures ont été déplacées vers le cloud, mais ces tendances ne sont pas rares pour les autres entreprises. Au fil du temps, au fur et à mesure de l’avancement du projet, le modèle ci-dessus devient de plus en plus encombrant et peu viable, empêchant une organisation d'être flexible au fur et à mesure de son déplacement dans un premier monde de cloud.
 
@@ -63,31 +63,31 @@ Dans la liste ci-dessous, vous verrez les scénarios VPN les plus courants dans 
 
 Il s’agit du scénario de départ le plus courant pour la plupart des clients professionnels. Un VPN forcé est utilisé, ce qui signifie que 100 % du trafic est dirigé vers le réseau d’entreprise, que le point de terminaison réside ou non dans le réseau d’entreprise. Tout trafic externe (Internet) tel que Office 365 ou la navigation Internet est ensuite épinglé à l’extérieur de l’équipement de sécurité local, tel que les proxies. Dans le monde actuel où près de 100 % des utilisateurs travaillent à distance, ce modèle met donc une charge élevée sur l’infrastructure VPN et est susceptible d’entraver considérablement les performances de l’ensemble du trafic d’entreprise et donc de l’entreprise pour fonctionner efficacement en temps de crise.
 
-![Tunnel imposé VPN : modèle 1](../media/vpn-split-tunneling/vpn-model-1.png)
+![Vpn forced Tunnel model 1.](../media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. Tunnel imposé VPN avec un petit nombre d’exceptions approuvées
 
 Ce modèle est beaucoup plus efficace pour qu’une entreprise fonctionne sous, car il permet à quelques points de terminaison contrôlés et définis qui sont très sensibles à la charge et à la latence de contourner le tunnel VPN et d’aller directement au service Office 365 dans cet exemple. Cela améliore considérablement les performances des services déchargés et réduit également la charge sur l’infrastructure VPN, ce qui permet aux éléments qui en ont encore besoin de fonctionner avec une contention moindre des ressources. C’est sur ce modèle que cet article se concentre sur l’assistance à la transition, car il permet d’agir rapidement sur des actions simples et définies avec de nombreux résultats positifs.
 
-![Tunnel partagé VPN : modèle 2](../media/vpn-split-tunneling/vpn-model-2.png)
+![Fractionner Tunnel vpn modèle 2.](../media/vpn-split-tunneling/vpn-model-2.png)
 
 ### <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. Tunnel imposé VPN avec de larges exceptions
 
 Le troisième modèle élargit l’étendue du modèle 2 au lieu d’envoyer directement un petit groupe de points de terminaison définis, il envoie tout le trafic directement aux services de confiance tels que Office 365 et SalesForce. Cela permet de réduire davantage la charge sur l’infrastructure VPN d’entreprise et d’améliorer les performances des services définis. Comme ce modèle est susceptible de prendre plus de temps pour évaluer la faisabilité et l’implémenter, il s’agit probablement d’une étape qui peut être prise de manière itérative à une date ultérieure une fois que le modèle 2 est correctement mis en place.
 
-![Tunnel partagé VPN : modèle 3](../media/vpn-split-tunneling/vpn-model-3.png)
+![Fractionner Tunnel VPN modèle 3.](../media/vpn-split-tunneling/vpn-model-3.png)
 
 ### <a name="4-vpn-selective-tunnel"></a>4. Tunnel sélectif VPN
 
 Ce modèle contrepasse le troisième modèle de sorte que seul le trafic identifié comme possédant une adresse IP d’entreprise soit envoyé dans le tunnel VPN, par conséquent, le chemin d’accès Internet constitue l’itinéraire par défaut pour tous les autres éléments. Ce modèle nécessite qu’une organisation se trouve bien sur le chemin d’accès [Approbation zéro](https://www.microsoft.com/security/zero-trust?rtc=1) pour pouvoir implémenter ce modèle en toute sécurité. Il convient de noter que ce modèle ou une variante de celui-ci deviendra probablement la valeur par défaut nécessaire au fil du temps, car de plus en plus de services s'éloignent du réseau de l'entreprise pour se retrouver dans le cloud. Microsoft utilise ce modèle en interne ; pour plus d’informations sur l’implémentation Microsoft de la segmentation de tunnel par VPN en consultant l’article [Fonctionnement sur VPN : comment Microsoft maintient les employés travaillant à distance connectés](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
 
-![Tunnel partagé VPN : modèle 4](../media/vpn-split-tunneling/vpn-model-4.png)
+![Fractionner Tunnel modèle VPN 4.](../media/vpn-split-tunneling/vpn-model-4.png)
 
 ### <a name="5-no-vpn"></a>5. Pas de VPN
 
 Version plus avancée du modèle numéro 2, dans laquelle tous les services internes sont publiés via une approche de sécurité moderne ou une solution SDWAN telle qu’Azure AD Proxy, MCAS, Zscaler ZPA, etc.
 
-![Tunnel partagé VPN : modèle 5](../media/vpn-split-tunneling/vpn-model-5.png)
+![Fractionner Tunnel modèle VPN 5.](../media/vpn-split-tunneling/vpn-model-5.png)
 
 ## <a name="implement-vpn-split-tunneling"></a>Implémenter un tunnel partagé VPN
 
@@ -95,7 +95,7 @@ Dans cette section, vous trouverez les étapes simples nécessaires pour migrer 
 
 Le diagramme ci-dessous montre comment fonctionne la solution tunnel partagé VPN recommandée :
 
-![Détail de la solution VPN du tunnel partagé](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Détails de la solution VPN de tunnel partagé.](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identifier les points de terminaison à optimiser
 
@@ -172,7 +172,7 @@ Dans le script ci-dessus, _$intIndex_ est l’index de l’interface connectée 
 
 Une fois que vous avez ajouté les itinéraires, vous pouvez vérifier que la table d’itinéraires est correcte en exécutant **impression d'itinéraire** dans une invite de commandes ou dans PowerShell. La sortie doit contenir les itinéraires que vous avez ajoutés, affichant l’index d’interface (_22_ dans cet exemple) et la passerelle pour cette interface (_192.168.1.1_ dans cet exemple) :
 
-![Sortie d’impression d’itinéraire](../media/vpn-split-tunneling/vpn-route-print.png)
+![Router la sortie d’impression.](../media/vpn-split-tunneling/vpn-route-print.png)
 
 Pour ajouter des itinéraires pour _tous_ les plages d’adresses IP actuelles dans la catégorie Optimiser, vous pouvez utiliser la variante de script suivante pour interroger le [Service web Office 365 IP et URL](microsoft-365-ip-web-service.md) pour l’ensemble actuel de sous-réseaux IP et les ajouter à la table d’itinéraires.
 

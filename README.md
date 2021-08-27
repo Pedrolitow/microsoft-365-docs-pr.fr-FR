@@ -1,8 +1,8 @@
-# <a name="overview"></a>Présentation
+# <a name="overview"></a>Vue d’ensemble
 
 ## <a name="learn-how-to-contribute"></a>Découvrez comment contribuer
 
-Toute personne intéressée peut contribuer aux rubriques. Lorsque vous contribuez, votre travail est directement placé dans l’ensemble de contenu après avoir été fusionné. Il s’affiche ensuite sur docs.microsoft.com et vous êtes répertorié en tant que collaborateur à <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors> l':.
+Toute personne intéressée peut contribuer aux rubriques. Lorsque vous contribuez, votre travail est directement placé dans l’ensemble de contenu après la fusion. Il s’affiche ensuite sur docs.microsoft.com et vous êtes répertorié en tant que collaborateur à <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors> l':.
 
 ### <a name="quickly-update-an-article-using-githubcom"></a>Mettre à jour rapidement un article à l’GitHub.com
 
@@ -12,11 +12,11 @@ Les collaborateurs qui ne font que des mises à jour rares ou de petite taille p
 2. Go to the page you want to edit on docs.microsoft.com.
 3. Sur le côté droit de la page, cliquez sur **Modifier** (icône de crayon).
 
-   ![Bouton Modifier sur docs.microsoft.com](microsoft-365/media/quick-update-edit.png)
+   ![Bouton Modifier sur docs.microsoft.com.](microsoft-365/media/quick-update-edit.png)
 
 4. Le fichier de rubrique correspondant GitHub s’ouvre, où vous devez cliquer sur l’icône **Modifier ce** crayon de fichier.
 
-   ![Bouton Modifier sur github.com](microsoft-365/media/quick-update-github.png)
+   ![Bouton Modifier sur github.com.](microsoft-365/media/quick-update-github.png)
 
 5. Cette rubrique s’ouvre dans une page de modification numérotée sur une ligne dans laquelle vous pouvez apporter des modifications au fichier. Les fichiers GitHub sont écrits et modifiés à l’aide du langage Markdown. Pour obtenir de l’aide sur l’utilisation de Markdown, voir [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). Sélectionnez **l’onglet Modifications de** l’aperçu pour afficher vos modifications au cours de votre vie.
 
@@ -27,15 +27,15 @@ Les collaborateurs qui ne font que des mises à jour rares ou de petite taille p
 
    Lorsque vous êtes prêt, cliquez sur le bouton vert Proposer le **changement de** fichier.
 
-   ![Section Proposer une modification de fichier](microsoft-365/media/propose-file-change.png)
+   ![Section Proposer une modification de fichier.](microsoft-365/media/propose-file-change.png)
 
 7. Dans la page **Comparaison des modifications** qui s’affiche, cliquez sur le bouton vert Créer une requête **de** pull.
 
-   ![Comparaison de la page modifications](microsoft-365/media/comparing-changes-page.png)
+   ![Comparaison de la page des modifications.](microsoft-365/media/comparing-changes-page.png)
 
 8. Dans la page **Ouvrir une** demande de pull qui s’affiche, cliquez sur le bouton vert Créer une **requête de** pull.
 
-   ![Ouvrir une page de requête de pull](microsoft-365/media/open-a-pull-request-page.png)
+   ![Ouvrez une page de requête de pull.](microsoft-365/media/open-a-pull-request-page.png)
 
 > [!NOTE]
 > Vos autorisations dans le repo déterminent ce que vous voyez dans les dernières étapes. Les personnes sans privilèges spéciaux voient la **section** Proposer un changement de fichier et les pages de confirmation suivantes, comme décrit. Les personnes autorisées à créer et approuver leurs propres demandes de pull voient une **section** similaire Valider les modifications avec des options supplémentaires pour créer une branche et moins de pages de confirmation.<br/><br/>Le point est : cliquez sur les boutons verts qui vous sont présentés jusqu’à ce qu’il n’y en a plus.

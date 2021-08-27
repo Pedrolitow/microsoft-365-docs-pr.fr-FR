@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0051b138d155ed4bdf41786f4a73439bba22c738ba7d2a73da44341437ba5c0c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4668ecc352b9e972dcef544e87c7f29b8287cafb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838562"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561205"
 ---
 # <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>Stratégies de Microsoft Cloud App Security recommandées pour les applications SaaS
 Microsoft Cloud App Security s’appuie sur les stratégies d’accès conditionnel Azure AD pour activer la surveillance et le contrôle en temps réel des actions granulaires avec les applications SaaS, telles que le blocage des téléchargements, des téléchargements, des copier-coller et de l’impression. Cette fonctionnalité ajoute la sécurité aux sessions qui présentent des risques inhérents, par exemple lorsque les ressources d’entreprise sont accessibles à partir d’appareils nonmanagés ou par des utilisateurs invités.
@@ -46,7 +46,7 @@ Les autorisations d’accès aux applications SaaS sont généralement basées s
 
 Pour protéger les données au sein de votre collection d’applications SaaS, le diagramme suivant illustre la stratégie d’accès conditionnel Azure AD nécessaire, ainsi que les stratégies suggérées que vous pouvez créer dans Sécurité des applications cloud. Dans cet exemple, les stratégies créées dans Sécurité des applications cloud s’appliquent à toutes les applications SaaS que vous gérez. Ces contrôles sont conçus pour appliquer les contrôles appropriés selon que les appareils sont gérés, ainsi que les étiquettes de niveau de sensibilité qui sont déjà appliquées aux fichiers.
 
-![Stratégies de gestion des applications SaaS dans Sécurité des applications cloud](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
+![Stratégies de gestion des applications SaaS dans Sécurité des applications cloud.](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
 
 Le tableau suivant répertorie la nouvelle stratégie d’accès conditionnel que vous devez créer dans Azure AD.
 
@@ -95,15 +95,15 @@ Sécurité des applications cloud peut être un outil précieux pour configurer 
 
 L’illustration et le tableau suivants fournissent plusieurs exemples de stratégies qui peuvent être configurées pour vous aider à respecter le Règlement général sur la protection des données (R GDPR). Dans ces exemples, les stratégies recherchent des données spécifiques. En fonction de la sensibilité des données, chaque stratégie est configurée pour prendre les mesures appropriées.
 
-![Exemple de Sécurité des applications cloud stratégies de protection contre la perte de données](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
+![Exemple Sécurité des applications cloud stratégies de protection contre la perte de données.](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
 
 |Niveau de protection|Exemples de stratégies|
 |---|---|
 |Baseline|Alerte lorsque les fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sont partagés à l’extérieur de l’organisation <p> >bloquer les téléchargements de fichiers contenant ce type d’informations sensibles (« numéro de carte de crédit ») sur les appareils non utilisés|
 |Sensible|Protéger les téléchargements de fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sur les appareils gérés <p> Bloquer les téléchargements de fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sur les appareils non utilisés <p> Alerte lorsqu’un fichier avec l’une de ces étiquettes est téléchargé vers OneDrive Entreprise ou Box (données client, ressources humaines : données de salaire, ressources humaines, données des employés)|
-|Hautement réglementé|Alerte lorsque les fichiers avec cette étiquette (« Hautement classé ») sont téléchargés sur les appareils gérés <p> Bloquer les téléchargements de fichiers avec cette étiquette (« Hautement classé ») sur les appareils nonmanagés|
+|Hautement réglementé|Alerte lorsque les fichiers avec cette étiquette (« Hautement classé ») sont téléchargés sur les appareils gérés <p> Bloquer les téléchargements de fichiers avec cette étiquette (« Hautement classé ») sur les appareils non utilisés|
 |||
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour plus d’informations sur l’utilisation Sécurité des applications cloud, voir [Microsoft Cloud App Security documentation.](//cloud-app-security/)

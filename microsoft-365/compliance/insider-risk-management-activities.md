@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c4a8fa37ab1fcce73961d9f8f1b349cc96f94498db36a71e238c9a2aeff914a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bbb0cfe262687a22277dda99f47690a4932d8abc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880322"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561469"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
@@ -31,7 +31,7 @@ Une fois que vous avez configuré les indicateurs sur la page de gestion des ris
 
 Après avoir examiné les activités d’un utilisateur, les enquêteurs peuvent ignorer les activités individuelles comme étant anodins, partager ou envoyer par courrier électronique un lien vers le rapport avec d’autres enquêteurs, ou choisir d’affecter temporairement ou explicitement l’utilisateur à une stratégie de gestion des risques internes. Les utilisateurs doivent être affectés au groupe de *rôles Enquêteurs* de gestion des risques internes pour afficher la page Rapports **d’activité des utilisateurs.**  
 
-![Vue d’ensemble du rapport d’activité des utilisateurs sur la gestion des risques internes](../media/insider-risk-user-activity-report-overview.png)
+![Vue d’ensemble du rapport d’activité des utilisateurs de gestion des risques internes.](../media/insider-risk-user-activity-report-overview.png)
 
 Vous pouvez commencer en sélectionnant **Gérer** les rapports dans la **section** Examiner l’activité des utilisateurs dans la page Vue d’ensemble de la gestion des risques **internes.** Pour afficher les activités d’un utilisateur, sélectionnez d’abord Créer un rapport d’activité utilisateur et complétez les champs suivants dans le volet Nouveau rapport d’activité **de l’utilisateur** : 
 
@@ -40,7 +40,7 @@ Vous pouvez commencer en sélectionnant **Gérer** les rapports dans la **sectio
 - **Date de fin**: utilisez le contrôle calendrier pour sélectionner la date de fin des activités de l’utilisateur. La date de fin sélectionnée doit être supérieure à deux jours après la date de début sélectionnée et pas plus de 90 jours à partir de la date de début sélectionnée.
 Les nouveaux rapports prennent généralement jusqu’à 10 heures avant d’être prêts pour révision. Lorsque le rapport est prêt,  le rapport est prêt dans la colonne **État** de la page Rapport d’activité de l’utilisateur. Sélectionnez l’utilisateur pour afficher le rapport détaillé :
 
-![Rapport d’activité de l’utilisateur sur la gestion des risques internes](../media/insider-risk-user-activity-report.png)
+![Rapport d’activité utilisateur de gestion des risques internes.](../media/insider-risk-user-activity-report.png)
 
 Le **rapport d’activité de** l’utilisateur sélectionné contient les onglets Activité de l’utilisateur et Explorateur  **d’activités** :
 
@@ -62,7 +62,7 @@ Le tableau de **bord** des alertes de risques internes vous permet d’afficher 
   - Délai moyen de résolution des alertes de gravité moyenne, indiqué en heures, jours ou mois.
   - Délai moyen de résolution des alertes de faible gravité, indiqué en heures, jours ou mois.
 
-![Tableau de bord des alertes de gestion des risques internes](../media/insider-risk-alerts-dashboard.png)
+![Tableau de bord d’alerte de gestion des risques internes.](../media/insider-risk-alerts-dashboard.png)
 
 > [!NOTE]
 > La gestion des risques internes utilise la limitation d’alertes intégrée pour vous aider à protéger et optimiser vos examens de risque et réviser l’expérience. Cette limitation empêche les problèmes qui peuvent entraîner une surcharge d’alertes de stratégie, telles que la configuration incorrecte des connecteurs de données ou des stratégies DLP. Par conséquent, il peut y avoir un retard dans l'affichage de nouvelles alertes pour un utilisateur.
@@ -103,7 +103,7 @@ Cela peut permettre aux analystes et aux enquêteurs de faire disparaître immé
 
 Pour ignorer une alerte de risque interne, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez  l’onglet **Alertes** pour la gestion des risques internes.
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Alertes.**
 2. Dans le tableau **de bord Alertes,** sélectionnez  l’alerte (ou les alertes) avec l’état De révision des besoins que vous souhaitez ignorer.
 3. Dans la barre de commandes Alertes, sélectionnez **Ignorer les alertes.**
 4. Dans le volet Détails Ignorer les **alertes,** vous pouvez passer en revue les détails de l’utilisateur et de la stratégie associés aux alertes sélectionnées.
@@ -113,7 +113,7 @@ Pour ignorer une alerte de risque interne, complétez les étapes suivantes :
 
 Pour trier une alerte de risque interne, effectuer les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez  l’onglet **Alertes** pour la gestion des risques internes.
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Alertes.**
 2. Dans le tableau **de bord Alertes,** sélectionnez l’alerte que vous souhaitez trier.
 3. Dans le **volet d’informations Alertes,** vous pouvez passer en revue les onglets suivants et trier l’alerte :
     - **Résumé :** Cet onglet contient des informations générales sur l’alerte et vous permet de confirmer l’alerte et de créer un nouveau cas ou vous permet d’ignorer l’alerte. Il inclut l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertorié comme *élevé,* *moyen* ou *faible*. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
@@ -134,24 +134,24 @@ Pour trier une alerte de risque interne, effectuer les étapes suivantes :
 
 L’Explorateur d’activités fournit aux enquêteurs et aux analystes des risques un outil analytique complet qui fournit des informations détaillées sur les alertes. Avec l’Explorateur d’activités, les réviseurs peuvent rapidement passer en revue une chronologie des activités à risque détectées et identifier et filtrer toutes les activités à risque associées aux alertes. Pour filtrer les alertes dans l’Explorateur d’activités, sélectionnez le contrôle Filtre. Vous pouvez filtrer les alertes par un ou plusieurs attributs répertoriés dans le volet d’informations de l’alerte. L’Explorateur d’activités prend également en charge les colonnes personnalisables pour aider les enquêteurs et les analystes à concentrer le tableau de bord sur les informations les plus importantes pour eux.
 
-![Vue d’ensemble de l’Explorateur d’activités de gestion des risques internes](../media/insider-risk-activity-explorer.png)
+![Vue d’ensemble de l’Explorateur d’activités de gestion des risques internes.](../media/insider-risk-activity-explorer.png)
 
 Pour utiliser **l’Explorateur d’activités,** complétez les étapes suivantes :
 
-1. Dans la Centre de conformité Microsoft 365, **sélectionnez** l’onglet **Alertes** pour la gestion des risques internes.
+1. Dans la Centre de conformité Microsoft 365, **sélectionnez** l’onglet **Alertes** sur la gestion des risques internes.
 2. Dans le tableau **de bord Alertes,** sélectionnez l’alerte que vous souhaitez trier.
 3. Dans le **volet Détails des alertes,** **sélectionnez Ouvrir en vue étendue.**
 4. Dans la page de l’alerte sélectionnée, sélectionnez l’onglet **Explorateur d’activités.**
 
 Lors de l’examen des activités dans l’Explorateur d’activités, les enquêteurs et les analystes peuvent sélectionner une activité spécifique et ouvrir le volet d’informations sur l’activité. Le volet affiche des informations détaillées sur l’activité que les enquêteurs et les analystes peuvent utiliser pendant le processus de tri des alertes. Les informations détaillées peuvent fournir un contexte pour l’alerte et vous aider à identifier l’étendue complète de l’activité de risque ayant déclenché l’alerte.
 
-![Détails de l’explorateur des activités de gestion des risques internes](../media/insider-risk-activity-explorer-details.png)
+![Détails de l’explorateur des activités de gestion des risques internes.](../media/insider-risk-activity-explorer-details.png)
 
 ## <a name="create-a-case-for-an-alert"></a>Créer un cas pour une alerte
 
-À mesure que l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité de risque. Pour créer un cas pour une alerte, suivez les étapes suivantes :
+Lorsque l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité de risque. Pour créer un cas pour une alerte, suivez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez  l’onglet **Alertes** pour la gestion des risques internes.
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com) **sélectionnez** l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le **tableau de bord Alertes,** sélectionnez l’alerte pour qui vous souhaitez confirmer et créer un cas.
 3. Dans le **volet d’informations Alertes,** sélectionnez **Actions** Confirmer les  >  **alertes & créer un cas.**
 4. Dans la **boîte de** dialogue Confirmer l’alerte et créer un cas de risque interne, entrez un nom pour le cas, sélectionnez les utilisateurs à ajouter en tant que contributeurs et ajoutez des commentaires le cas échéant. Les commentaires sont automatiquement ajoutés au cas en tant que note de cas.

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Advanced eDiscovery en Microsoft 365 prend en charge les langues chinoise, japonaise et coréenne (JCK), qui utilisent un jeu de caractères sur deux sur deux caractères.
-ms.openlocfilehash: 7301903effa11dbe090197f0445f572b754fb44ca267b39b8cdc18ed27459fb4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bcab34e8232a77cecf7d7331d75d140f73e4db37
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905882"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572034"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>Prise en charge linguistique DE LASK pour Advanced eDiscovery
 
@@ -41,7 +41,7 @@ Vous pouvez utiliser des caractèresJCK pour les [recherches](building-search-qu
 
 Nous fournissons la [](keyword-queries-and-search-conditions.md#search-operators) prise en charge DE LASK pour tous les opérateurs de recherche et [conditions](keyword-queries-and-search-conditions.md#search-conditions)de recherche, y compris les opérateurs booléens **ET**, **OU**, **NOT** et **NEAR**.
 
-Si vous êtes certain que les emplacements de contenu ou les éléments contiennent des caractèresJC, mais que les recherches ne retournent aucun résultat, cliquez sur l’icône langue-pays/région de la requête ![Icône Langue-pays/région de requête dans la recherche de contenu](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionnez la valeur de code de culture correspondant au pays de la langue pour la recherche. La langue/région par défaut est neutre.
+Si vous êtes certain que les emplacements de contenu ou les éléments contiennent des caractèresJC, mais que les recherches ne retournent aucun résultat, cliquez sur l’icône langue-pays/région de la requête ![Icône De la langue-pays/de la région de requête dans la recherche de contenu.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionnez la valeur de code de culture correspondant au pays/la langue pour la recherche. La langue/région par défaut est neutre.
 
 **Puis-je rechercher plusieurs langues à la fois ?**
 
@@ -71,7 +71,7 @@ Non, aucune de vos recherches et jeux de révision existants ne change. Vous n�
 
 Pour plus d’informations sur la modification de la langue d’affichage et du fuseau horaire, voir Comment définir les [paramètres](/office365/troubleshoot/access-management/set-language-and-region)de langue et de région pour Office 365 .
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - OcR ne prend pas en charge les caractères DE LASK à partir de fichiers image
 

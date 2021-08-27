@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 07/22/2021
-ms.openlocfilehash: c2fafe62c5fecbc1e7ed9f7e622daf6a1b6c7faa
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 6063aed4fcbd215e4acfcc1e265df5775c3105b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510044"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561385"
 ---
 # <a name="cloud-delivered-protection-antivirus-sample-submission"></a>Soumission d’exemples d’antivirus de protection dans le cloud
 
@@ -61,18 +61,18 @@ Defender for Endpoint antivirus and cloud protection automatically blocks most n
 
 3. Antivirus de haute précision, détectant les programmes malveillants courants par le biais de techniques génériques et heuristiques.
 
-4. Une protection avancée basée sur le cloud est fournie dans les cas où l’antivirus Defender for Endpoint s’exécutant sur le point de terminaison a besoin d’une plus grande intelligence pour vérifier l’intention d’un fichier suspect.
+4. Une protection avancée basée sur le cloud est fournie dans les cas où l’antivirus Defender for Endpoint en cours d’exécution sur le point de terminaison a besoin d’une plus grande intelligence pour vérifier l’intention d’un fichier suspect.
 
-   1. Dans le cas où l’antivirus Microsoft Defender for Endpoint ne peut pas effectuer une détermination claire, les métadonnées de fichier sont envoyées au service de protection cloud. En règle générale, le service de protection cloud peut déterminer si le fichier est sûr ou malveillant, en quelques millisecondes.
+   1. Dans le cas où l’antivirus Microsoft Defender pour le point de terminaison ne peut pas effectuer une détermination claire, les métadonnées de fichier sont envoyées au service de protection cloud. En règle générale, le service de protection cloud peut déterminer si le fichier est sûr ou malveillant, en quelques millisecondes.
       - La requête cloud de métadonnées de fichier peut être le résultat d’un comportement, d’une marque du site web ou d’autres caractéristiques dans le cas où un verdict clair n’est pas déterminé.
-      - Une charge utile de métadonnées de petite taille est envoyée, dans le but d’atteindre un verdict clean vs malware
+      - Une charge utile de métadonnées de petite taille est envoyée, avec l’objectif d’atteindre un verdict clean vs malware
       - Les métadonnées peuvent inclure des attributs PE, des attributs de fichiers statiques, des attributs dynamiques et contextuels, et bien plus encore (figure 1).
       - N’inclut pas les informations d’identification personnelle (PII). Les informations telles que les noms de fichiers sont hachées
       - Peut être synchrone ou asynchrone. Pour synchrone, le fichier ne s’ouvre pas tant que le cloud n’a pas rendu de verdict. Pour les données asynchrones, le fichier s’ouvre pendant que le cloud effectue son analyse.
 
    2. Après avoir examiné les métadonnées, si la protection cloud de l’antivirus Defender for Endpoint ne peut pas atteindre un verdict de première classe, elle peut demander un échantillon du fichier pour une inspection plus approfondie. Cette demande honore la configuration des paramètres pour l’envoi d’exemples :
 
-      1. **Envoyer automatiquement des échantillons sécurisés** (par défaut)
+      1. **Envoyer automatiquement des échantillons sûrs** (par défaut)
          - Coffre exemples sont des exemples considérés comme ne contenant pas fréquemment des données d’informations d'.bat, .scr, .dll, .exe.
          - Si le fichier est susceptible de contenir des pii, l’utilisateur reçoit une demande d’autoriser l’envoi d’exemples de fichier.
          - Il s’agit de la valeur par défaut sur Windows, macOS et Linux.
@@ -95,19 +95,19 @@ Defender for Endpoint antivirus and cloud protection automatically blocks most n
 
 _Figure 1 - Exemples de métadonnées envoyées à Microsoft Defender Cloud Protection_:
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figure 1. Exemples de métadonnées envoyées à Microsoft Defender Cloud Protection":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figure 1. Exemples de métadonnées envoyées à Microsoft Defender Cloud Protection.":::
 
 _Figure 2. Flux de protection cloud_:
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="Figure 2. Flux de protection cloud":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="Figure 2. Flux de protection cloud.":::
 
 _Figure 3. Protection cloud et apprentissage automatique_ en couches :
 
-:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figure 3. Protection cloud et apprentissage automatique en couches":::
+:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figure 3. Protection cloud et apprentissage automatique en couches.":::
 
 > [!NOTE]
 >
-> Vous avez peut-être également entendu l’expression « Bloquer à la première vue (BAFS). » BAFS fait référence à l’analyse plus approfondie que le cloud peut fournir, y compris des éléments tels que la détonation pour fournir un verdict plus précis. Cela peut également inclure de retarder l’ouverture d’un fichier en cours d’interrogation par la protection cloud jusqu’à ce qu’un verdict soit atteint. Si vous désactivez l'« envoi d’exemples », BAFS est désactivé, et vous ne pouvez pas faire l’analyse la plus complète et êtes limité à l’analyse des métadonnées de fichier uniquement.
+> Vous avez peut-être également entendu l’expression « Bloquer à la première vue (BAFS). » BAFS fait référence à l’analyse plus approfondie que le cloud peut fournir, y compris des éléments tels que la détonation pour fournir un verdict plus précis. Cela peut également inclure le retard d’ouverture d’un fichier en cours d’interrogation par la protection cloud jusqu’à ce qu’un verdict soit atteint. Si vous désactivez l'« envoi d’exemples », BAFS est désactivé, et vous ne pouvez pas faire l’analyse la plus complète et êtes limité à l’analyse des métadonnées de fichier uniquement.
 
 ## <a name="cloud-delivered-protection-levels"></a>Niveaux de protection cloud
 
@@ -115,7 +115,7 @@ La détection de programmes malveillants nécessite un équilibre entre fournir 
 
 > [!NOTE]
 >
-> La modification du niveau de protection peut entraîner un niveau plus élevé de faux positifs et doit être évaluée avec soin avant de changer.
+> La modification du niveau de protection peut entraîner un niveau supérieur de faux positifs et doit être évaluée avec soin avant de changer.
 >
 
 ## <a name="other-file-sample-submission-scenarios"></a>Autres scénarios d’envoi d’exemples de fichiers
@@ -124,7 +124,7 @@ Il existe deux autres scénarios dans lequel Defender pour le point de terminais
 
 ### <a name="manual-file-sample-collection-by-security-admin-from-defender-for-endpoint-management-portal"></a>Collecte manuelle d’exemples de fichiers par l’administrateur de sécurité à partir de Defender pour le portail de gestion des points de terminaison
 
-Lors de l’intégration d’appareils à Microsoft Defender pour endpoint PEPT il existe un paramètre permettant d’activer des exemples de collections à partir de l’appareil, qui peuvent être confondus avec les paramètres mentionnés ci-dessus. Ce paramètre contrôle la collecte d’exemples de fichiers à partir d’appareils lorsque cela est demandé via le portail d’administration defender pour point de terminaison . il est soumis aux rôles et autorisations déjà établis. Ce paramètre peut autoriser ou bloquer la collecte de fichiers à partir du point de terminaison pour des fonctionnalités telles que l’analyse approfondie dans le portail Defender for Endpoint. Si ce paramètre n’est pas configuré, la valeur par défaut est d’activer la collection d’échantillons.
+Lors de l’intégration d’appareils à Microsoft Defender pour endpoint PEPT il existe un paramètre permettant d’activer des exemples de collections à partir de l’appareil, qui peut être confondu avec les paramètres mentionnés ci-dessus. Ce paramètre contrôle la collecte d’exemples de fichiers à partir d’appareils lorsque cela est demandé via le portail d’administration defender pour point de terminaison . il est soumis aux rôles et autorisations déjà établis. Ce paramètre peut autoriser ou bloquer la collecte de fichiers à partir du point de terminaison pour des fonctionnalités telles que l’analyse approfondie dans le portail Defender for Endpoint. Si ce paramètre n’est pas configuré, la valeur par défaut est d’activer la collection d’échantillons.
 
 En savoir plus sur les paramètres de configuration de Defender pour les points de terminaison, voir : Outils et méthodes d’intégration pour les Windows 10 [dans Defender for Endpoint](configure-endpoints.md)
 

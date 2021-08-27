@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: de33384b6292fecc502e958385c2286b255002b1
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 708ae221a020b8d6410b35a1db538d5ad50aba48
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533062"
+ms.locfileid: "58571866"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -39,7 +39,7 @@ ms.locfileid: "58533062"
 
 Dans les solutions de protection des points de terminaison, un faux positif est une entité, telle qu’un fichier ou un processus, qui a été détectée et identifiée comme malveillante, même si l’entité n’est pas réellement une menace. Un faux négatif est une entité qui n’a pas été détectée comme une menace, même si elle est réellement malveillante. Les faux positifs/négatifs peuvent se produire avec n’importe quelle solution de protection contre les menaces, [y compris Microsoft Defender pour le point de terminaison.](microsoft-defender-endpoint.md)
 
-![Définition des faux positifs et négatifs dans Defender pour le point de terminaison](images/false-positives-overview.png)
+![Définition des faux positifs et négatifs dans Defender pour le point de terminaison.](images/false-positives-overview.png)
 
 Heureusement, des mesures peuvent être prises pour résoudre et réduire ces types de problèmes. Si vous voyez des faux positifs/négatifs dans [Microsoft 365 Defender](microsoft-defender-security-center.md) (anciennement Centre de sécurité Microsoft Defender), vos opérations de sécurité peuvent prendre des mesures pour les résoudre à l’aide du processus suivant :
 
@@ -51,7 +51,7 @@ Heureusement, des mesures peuvent être prises pour résoudre et réduire ces ty
 
 Vous pouvez obtenir de l’aide si vous avez encore des problèmes avec des faux positifs/négatifs après avoir effectué les tâches décrites dans cet article. Vous [avez encore besoin d’aide ?](#still-need-help)
 
-![Étapes pour résoudre les faux positifs et négatifs](images/false-positives-step-diagram.png)
+![Étapes à suivre pour corriger les faux positifs et les négatifs.](images/false-positives-step-diagram.png)
 
 > [!NOTE]
 > Cet article est destiné à aider les opérateurs de sécurité et les administrateurs de sécurité qui [utilisent Microsoft Defender pour endpoint](microsoft-defender-endpoint.md).
@@ -166,7 +166,7 @@ Lorsque vous avez terminé de passer en revue et d’annuler les actions qui ont
 ### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>Supprimer un fichier de la quarantaine sur plusieurs appareils
 
 > [!div class="mx-imgBorder"]
-> ![Fichier de quarantaine](images/autoir-quarantine-file-1.png)
+> ![Fichier de mise en quarantaine.](images/autoir-quarantine-file-1.png)
 
 1. Dans le volet de navigation gauche du portail Microsoft 365 Defender, cliquez sur **Centre de l’action.**
 
@@ -260,7 +260,7 @@ Les indicateurs « Autoriser » peuvent être créés pour :
 - [Adresses IP, URL et domaines](#indicators-for-ip-addresses-urls-or-domains)
 - [Certificats d’application](#indicators-for-application-certificates)
 
-![Diagramme des types d’indicateurs](images/false-positives-indicators.png)
+![Diagramme des types d’indicateurs.](images/false-positives-indicators.png)
 
 #### <a name="indicators-for-files"></a>Indicateurs pour les fichiers
 

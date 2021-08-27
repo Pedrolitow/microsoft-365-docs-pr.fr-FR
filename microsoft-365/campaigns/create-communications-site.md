@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un site de communication pour votre campagne ou votre entreprise.
-ms.openlocfilehash: d34ab2f5360db1d756cb97a66bb87e443b86605f4864b1f8fdd827504c8829c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d40311a616e51ed665248dded45ef7d0432b6f94
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843461"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571554"
 ---
 # <a name="create-a-communications-site"></a>Créer un site de communication
 
@@ -44,13 +44,13 @@ Incluez les éléments suivants dans votre site de communications :
 4. Ajoutez des événements à un volet **Web** Événements afin que tout le monde puisse voir ce qui arrive.
 5. Ajoutez des photos que les personnes peuvent utiliser ou partager dans un partie **web de la galerie d’images.**
 
-![Diagramme d’une page SharePoint communications avec espace pour les éléments communs nécessaires à une campagne](../media/m365-democracy-comms-site.png)
+![Diagramme d’une page SharePoint communications avec espace pour les éléments communs nécessaires à une campagne.](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>Infographie : infographie créer un site de communications
 
 Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprimés au format tabloïd (également appelé format format ledger, 11 x 17 ou A3).
 
-[![Image de l’infographie du site de communications](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![Image de l’infographie du site de communications.](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf)  |  [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 

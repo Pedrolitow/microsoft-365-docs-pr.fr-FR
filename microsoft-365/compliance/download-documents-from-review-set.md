@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment sélectionner et télécharger du contenu à partir d’un ensemble de révisions dans Advanced eDiscovery présentations ou des avis externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: adda9d1ee8594137a68994f8fc908297991ff525341af4421535536cf77b346f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ec4c82acdc7958cb17def5660f51109f1ff32e0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905862"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572178"
 ---
 # <a name="download-selected-documents-from-a-review-set"></a>Télécharger les documents sélectionnés à partir d’un jeu à réviser
 
@@ -30,4 +30,4 @@ Le téléchargement offre un moyen simple de télécharger du contenu à partir 
 
 Pour télécharger du contenu à partir d’un jeu à réviser dans un cas Advanced eDiscovery, commencez par sélectionner les fichiers que vous souhaitez télécharger, puis sélectionnez Téléchargement des éléments **d’action.**  >  
 
-![Action de téléchargement dans le jeu à Advanced eDiscovery révision](../media/eDiscoDownload.png)
+![Action de téléchargement dans Advanced eDiscovery de révision.](../media/eDiscoDownload.png)

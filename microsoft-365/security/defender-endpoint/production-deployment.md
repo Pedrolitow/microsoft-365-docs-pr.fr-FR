@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e2d2addf5195f52eac94c22453e8cef08a4c6cc18bd3a21b6178bca527cc8038
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4fff8c3f461a84d7bb6616c2264120a4c8fcd0ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894171"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571818"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -39,7 +39,7 @@ ms.locfileid: "53894171"
 
 Le déploiement de Defender pour endpoint est un processus en trois phases :
 
-|[![phase de déploiement : préparer](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1 : préparation](prepare-deployment.md) | ![phase de déploiement : configuration](images/phase-diagrams/setup.png)<br>Phase 2 : configuration | [![phase de déploiement : intégration](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3 : intégration](onboarding.md)|
+|[![phase de déploiement : préparer.](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1 : préparation](prepare-deployment.md) | ![phase de déploiement : configuration](images/phase-diagrams/setup.png)<br>Phase 2 : configuration | [![phase de déploiement : intégration](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Phase 3 : intégration](onboarding.md)|
 |---|---|---|
 ||*Vous êtes là !*||
 
@@ -60,13 +60,13 @@ La vérification de l’état de la licence et si elle a été correctement mise
 
 1. Pour afficher vos licences, accédez au portail **Microsoft Azure et** accédez à la section [Microsoft Azure licences du portail.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
-   ![Image de la page de gestion des licences Azure](images/atp-licensing-azure-portal.png)
+   ![Image de la page De gestion des licences Azure.](images/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder aux abonnements de facturation dans le Centre  >  **d’administration.**
+1. Vous pouvez également accéder au Centre d’administration pour accéder **aux**  >  **abonnements de facturation.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 
-    ![Image des licences de facturation](images/atp-billing-subscriptions.png)
+    ![Image des licences de facturation.](images/atp-billing-subscriptions.png)
 
 ## <a name="cloud-service-provider-validation"></a>Validation du fournisseur de services Cloud
 
@@ -76,7 +76,7 @@ Pour accéder aux licences qui sont provisionn es pour votre entreprise et véri
 
 2. En cliquant sur le **lien du portail** partenaire, l’option **Administrateur** de la part de s’ouvre et vous donne accès au Centre d’administration du client.
 
-   ![Image du portail d’administration O365](images/atp-O365-admin-portal-customer.png)
+   ![Image du portail d’administration O365.](images/atp-O365-admin-portal-customer.png)
 
 ## <a name="tenant-configuration"></a>Configuration du client
 
@@ -94,7 +94,7 @@ Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windo
   - Proxy transparent
   - Protocole WPAD (Web Proxy Auto-Discovery Protocol)
 
-  Si un proxy transparent ou un WPAD a été implémenté dans la topologie réseau, il n’est pas nécessaire de définir des paramètres de configuration spéciaux. Pour plus d’informations sur les exclusions d’URL de point de terminaison Microsoft Defender dans le proxy, consultez la section URL du [service](production-deployment.md#proxy-service-urls) proxy dans ce document pour obtenir la liste des URL permises ou sur configurer les paramètres de connectivité Internet et de proxy [d’appareil.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+  Si un proxy transparent ou un WPAD a été implémenté dans la topologie réseau, il n’est pas nécessaire de définir des paramètres de configuration spéciaux. Pour plus d’informations sur les exclusions d’URL de point de terminaison Microsoft Defender dans le proxy, consultez la section URL du [service](production-deployment.md#proxy-service-urls) proxy dans ce document pour la liste des URL autoriser ou sur configurer les [paramètres](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)de connectivité Internet et proxy de périphérique.
 
 - **Configuration manuelle du proxy statique**:
   - Configuration basée sur le registre
@@ -113,13 +113,13 @@ Configurez un proxy statique basé sur le Registre pour autoriser uniquement le 
 2. Créez une stratégie ou modifiez une stratégie existante basée sur les pratiques organisationnelles.
 3. Modifiez la stratégie de groupe et accédez à Modèles d’administration Windows Collection de données des composants et Builds d’aperçu Configurer l’utilisation du proxy authentifié pour le service Expériences des **\> utilisateurs connectés \> \>** et télémétrie. 
 
-   ![Image de la configuration de la stratégie de groupe](images/atp-gpo-proxy1.png)
+   ![Image de la configuration de la stratégie de groupe.](images/atp-gpo-proxy1.png)
 
 4. Sélectionnez **Activé**.
 5. Sélectionnez **Désactiver l’utilisation du proxy authentifié.**
 6. Accédez à Modèles d’administration Windows collection de données des composants et builds d’aperçu Configurer les expériences utilisateur connectées **\> et la \> \> télémétrie.**
 
-    ![Image du paramètre de configuration de la stratégie de groupe](images/atp-gpo-proxy2.png)
+    ![Image du paramètre de configuration de la stratégie de groupe.](images/atp-gpo-proxy2.png)
 
 7. Sélectionnez **Activé**.
 8. Entrez le **nom du serveur proxy.**
@@ -157,9 +157,9 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
    Par exemple : netsh winhttp initialiser proxy 10.0.0.6:8080
 
-### <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de bas niveau
+### <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de niveau inférieur
 
-Down-Level comprennent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows Server CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
+Down-Level comprennent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows Server CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’Agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
 
 ### <a name="proxy-service-urls"></a>URL de service proxy
 
@@ -175,12 +175,12 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 |Liste de feuilles de calcul de domaines|Description|
 |---|---|
-|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour point de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
-### <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Plages d’adresses IP de système d’extrémité du service Microsoft Defender pour point de terminaison
+### <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Plages d’adresses IP back-end du service Microsoft Defender for Endpoint
 
-Si vos périphériques réseau ne supportent pas les règles DNS, utilisez plutôt des plages IP.
+Si vos périphériques réseau ne prisent pas en charge les règles DNS, utilisez plutôt des plages IP.
 
 Defender pour le point de terminaison est intégré au cloud Azure, déployé dans les régions suivantes :
 
@@ -202,4 +202,4 @@ Vous pouvez trouver les plages IP Azure dans [les plages IP azure](https://www.m
 
 ## <a name="next-step"></a>Étape suivante
 
-![**Phase 3 : Intégration**](images/onboard.png) <br> [Phase 3 : Intégration :](onboarding.md)intégrer des appareils au service afin que le service Microsoft Defender pour point de terminaison puisse obtenir des données de capteur à partir de ces derniers.
+![**Phase 3 : Intégration**.](images/onboard.png) <br> [Phase 3 : Intégration :](onboarding.md)intégrer des appareils au service afin que le service Microsoft Defender pour point de terminaison puisse obtenir des données de capteur à partir de ces derniers.

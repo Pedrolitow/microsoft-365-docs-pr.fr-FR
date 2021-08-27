@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéogé et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97f19b0f4ae1e00eb1d81bb20052efa158bc55cf
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 9c7ad267dcb32e055038e5186595db5776999263
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400390"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571938"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -80,7 +80,7 @@ Par exemple, si l’URL du site est <https://contosohealthcare.sharepoint.com/si
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint Fenêtre Online Management Shell affichant la commande Connect-SPOService commande](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint Fenêtre Online Management Shell affichant la commande Connect-SPOService commande.](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>Validation de l’environnement
 
@@ -118,7 +118,7 @@ Pour commencer à déplacer le site, exécutez la cmdlet suivante :
 Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
 ```
 
-![Capture d’écran de la fenêtre de PowerShell affichant la cmdlet Start-SPOSiteContentMove](../media/multi-geo-sharepoint-site-move-powershell.png)
+![Capture d’écran de la fenêtre PowerShell Start-SPOSiteContentMove cmdlet.](../media/multi-geo-sharepoint-site-move-powershell.png)
 
 ### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Démarrer un déplacement géographique de site SharePoint connecté à un groupe Microsoft 365
 

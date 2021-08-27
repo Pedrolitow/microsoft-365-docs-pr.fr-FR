@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 618ead20e8ce9fb3772fb86bb5f4687cd2026552342f8e8cdd975423cfda051d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3bf6d527092a4dc5ed340a2d9548fea41d875d31
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810452"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561253"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrer des requêtes de recherche avancée à partir de Microsoft Defender pour le point de terminaison
 
@@ -64,7 +64,7 @@ Le [Microsoft 365 Defender de recherche](advanced-hunting-schema-tables.md) avan
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Requêtes pour les objets Active Directory, tels que les utilisateurs, les groupes, les appareils et les domaines |
 
 >[!IMPORTANT]
-> Les requêtes et les détections personnalisées qui utilisent des tables de schéma qui sont uniquement disponibles dans Microsoft 365 Defender peuvent uniquement être vues dans Microsoft 365 Defender.
+> Les requêtes et les détections personnalisées qui utilisent des tables de schéma qui sont uniquement disponibles dans Microsoft 365 Defender ne peuvent être vues qu’Microsoft 365 Defender.
 
 ## <a name="map-devicealertevents-table"></a>Table Map DeviceAlertEvents
 Les `AlertInfo` `AlertEvidence` tableaux et les tables `DeviceAlertEvents` remplacent le tableau dans le schéma Microsoft Defender for Endpoint. En plus des données sur les alertes d’appareil, ces deux tableaux incluent des données sur les alertes pour les identités, les applications et les e-mails.
@@ -94,7 +94,7 @@ Utilisez le tableau suivant pour vérifier la façon dont les `DeviceAlertEvents
 ## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>Ajuster les requêtes Microsoft Defender pour les points de terminaison existantes
 Les requêtes Microsoft Defender pour les points de terminaison fonctionneront telles qu’elles sont sauf si elles font référence au `DeviceAlertEvents` tableau. Pour utiliser ces requêtes dans Microsoft 365 Defender, appliquez les modifications ci-après :
 
-- Remplacez `DeviceAlertEvents` par `AlertInfo` .
+- Remplacez `DeviceAlertEvents` par `AlertInfo`.
 - Joignez les `AlertInfo` tables et les tables pour obtenir des données `AlertEvidence` `AlertId` équivalentes.
 
 ### <a name="original-query"></a>Requête d’origine
@@ -120,13 +120,13 @@ AlertInfo
 
 Lorsque les règles microsoft Defender pour les points de terminaison sont modifiées sur Microsoft 365 Defender, elles continuent de fonctionner comme avant si la requête résultante examine uniquement les tables des appareils. 
 
-Par exemple, les alertes générées par des règles de détection personnalisées qui interrogent uniquement les tables des appareils continueront d’être remis à votre SIEM et de générer des notifications par courrier électronique, selon la façon dont vous les avez configurées dans Microsoft Defender pour endpoint. Toutes les règles de suppression existantes dans Defender pour le point de terminaison continueront également de s’appliquer.
+Par exemple, les alertes générées par des règles de détection personnalisées qui interrogent uniquement les tables des appareils continueront d’être remis à votre SIEM et de générer des notifications par courrier électronique, selon la façon dont vous les avez configurées dans Microsoft Defender pour le point de terminaison. Toutes les règles de suppression existantes dans Defender pour le point de terminaison continueront également de s’appliquer.
 
 Une fois que vous avez modifié une règle Defender pour point de terminaison afin qu’elle interroge les tables d’identité et de messagerie, qui ne sont disponibles que dans Microsoft 365 Defender, la règle est automatiquement déplacée vers Microsoft 365 Defender. 
 
 Alertes générées par la règle migré :
 
-- Ne sont plus visibles dans le portail Defender pour point de terminaison (Centre de sécurité Microsoft Defender)
+- Ne sont plus visibles dans le portail Defender for Endpoint (Centre de sécurité Microsoft Defender)
 - Ne plus être remis à votre SIEM ou générer des notifications par courrier électronique. Pour contourner ce changement, configurez les notifications par Microsoft 365 Defender pour obtenir les alertes. Vous pouvez utiliser [l’API Microsoft 365 Defender pour](api-incident.md) recevoir des notifications pour les alertes de détection des clients ou les incidents connexes.
 - Ne sera pas supprimé par les règles de suppression des points de terminaison de Microsoft Defender. Pour empêcher la générer des alertes pour certains utilisateurs, périphériques ou boîtes aux lettres, modifiez les requêtes correspondantes pour exclure explicitement ces entités.
 
@@ -141,7 +141,7 @@ Les nouvelles alertes générées par des règles de détection personnalisées 
 - Informations sur la règle de détection personnalisée 
  
 > [!div class="mx-imgBorder"]
-> ![Image de la nouvelle page d’alerte](../../media/new-alert-page.png)
+> ![Image de la nouvelle page d’alerte.](../../media/new-alert-page.png)
 
 ## <a name="write-queries-without-devicealertevents"></a>Écrire des requêtes sans DeviceAlertEvents
 

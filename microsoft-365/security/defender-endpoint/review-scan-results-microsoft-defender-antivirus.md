@@ -1,6 +1,6 @@
 ---
 title: Passer en revue les résultats des analyses de l’Antivirus Microsoft Defender
-description: Passer en revue les résultats des analyses à l’aide Microsoft Endpoint Configuration Manager, Microsoft Intune ou l’Sécurité Windows de données
+description: Passer en revue les résultats des analyses à l’aide Microsoft Endpoint Configuration Manager, Microsoft Intune ou l’application Sécurité Windows de données
 keywords: résultats de l’analyse, correction, analyse complète, analyse rapide
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c7860c284d82ee2fbdb9f8e2eae6299f56f6387b45b8c6f3d88eb2733ee7cd72
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d23d2c7f0d6fc12a3365d1c4f50d37384f5ca349
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799769"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561265"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Passer en Antivirus Microsoft Defender résultats d’analyse
 
@@ -47,7 +47,7 @@ L’cmdlet suivante retourne chaque détection sur le point de terminaison. S’
 Get-MpThreatDetection
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="Capture d’écran des cmdlets et sorties PowerShell":::
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="Capture d’écran des cmdlets et sorties PowerShell.":::
 
 Vous pouvez `-ThreatID` spécifier de limiter la sortie pour afficher uniquement les détections d’une menace spécifique.
 
@@ -57,7 +57,7 @@ Si vous souhaitez lister les détections de menaces, mais combiner les détectio
 Get-MpThreat
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Code PowerShell":::
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Code PowerShell.":::
 
 Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
 

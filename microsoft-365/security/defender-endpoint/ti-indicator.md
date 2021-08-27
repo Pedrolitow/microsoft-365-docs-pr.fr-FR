@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7cfb066ec2eaf486a3cb3e708720436098bb01d0
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 158888fec2be8f310085836e1d34fbcbd8aa93df
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400234"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585653"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource Indicateur
 
@@ -51,24 +51,25 @@ Méthode|Type renvoyé|Description
 
 Propriété|Type|Description
 :---|:---|:---
-id|String|Identité de [l’entité Indicateur.](ti-indicator.md)
-indicatorValue|String|Valeur de [l’indicateur](ti-indicator.md).
-indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ».
-application|String|Application associée à l’indicateur.
-action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ».
+id|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md)
+indicatorValue|Chaîne|Valeur de [l’indicateur](ti-indicator.md).
+indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « FileMd5 », « CertificateThumbprint », « IpAddress », « DomainName » et « Url ».
+application|Chaîne|Application associée à l’indicateur.
+action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Warn », « Block », « Audit », « Alert », « AlertAndBlock », « BlockAndRemediate » et « Allowed ».
+|externalID|Chaîne|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
 sourceType|Énum|« Utilisateur » au cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il a été envoyé à l’aide d’une application automatisée via l’API.
-source|chaîne|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
+createdBySource|string|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
 createdBy|String|Identité unique de l’utilisateur/de l’application qui a soumis l’indicateur.
-lastUpdatedBy|String|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
+lastUpdatedBy|Chaîne|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
 creationTimeDateTimeUtc|DateTimeOffset|Date et heure de création de l’indicateur.
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur.
 lastUpdateTime|DateTimeOffset|Dernière mise à jour de l’indicateur.
 Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ».
-title|String|Titre de l’indicateur.
-description|String|Description de l’indicateur.
-recommendedActions|String|Actions recommandées pour l’indicateur.
+title|Chaîne|Titre de l’indicateur.
+description|Chaîne|Description de l’indicateur.
+recommendedActions|Chaîne|Actions recommandées pour l’indicateur.
 rbacGroupNames|Liste des chaînes|Noms de groupes d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
-
+rbacGroupIds|Liste des chaînes|ID de groupe d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
 ## <a name="public-preview-indicator-types"></a>Prévisualisation publique : types d’indicateurs
 
 > [!IMPORTANT]

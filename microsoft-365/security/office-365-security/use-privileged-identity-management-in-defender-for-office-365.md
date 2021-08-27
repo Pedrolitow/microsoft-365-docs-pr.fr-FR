@@ -20,12 +20,12 @@ ms.custom:
 description: Apprenez à intégrer PIM afin d’accorder un accès limité dans le temps et juste-à-temps aux utilisateurs pour effectuer des tâches de privilège élevé dans Microsoft Defender pour Office 365, réduisant ainsi les risques pour vos données.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a894f1c4652dbea4a0c5ab9a7df9027f4d42c75c
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: 4d1333963f841a9d9263f44263ad43d20ec75057
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483937"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615039"
 ---
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) et pourquoi l’utiliser avec Microsoft Defender pour Office 365
 
@@ -62,7 +62,7 @@ Le nom de votre utilisateur (ici 'Alex') apparaîtra sous Affectations admissibl
 
 ***Étape 2***. Créez le deuxième groupe d’autorisations requis (élevé) pour les tâches supplémentaires et attribuez l’éligibilité.
 
-À l’aide de [groupes Privileged Access]),https://docs.microsoft.com/fr-FR/azure/active-directory/privileged-identity-management/groups-features) nous pouvons désormais créer nos propres groupes personnalisés et combiner des autorisations ou améliorer la granularité lorsque cela est nécessaire pour répondre à vos pratiques et besoins organisationnels.
+À l’aide [des groupes Privileged Access](/azure/active-directory/privileged-identity-management/groups-features) nous pouvons désormais créer nos propres groupes personnalisés et combiner des autorisations ou améliorer la granularité lorsque cela est nécessaire pour répondre à vos pratiques et besoins organisationnels.
 
 ### <a name="create-a-role-group-requiring-the-permissions-we-need"></a>Créez un groupe de rôles nécessitant les autorisations dont nous avons besoin.
 

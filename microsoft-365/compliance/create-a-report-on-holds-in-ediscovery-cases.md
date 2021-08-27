@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment générer un rapport qui contient des informations sur toutes les actuellement en cours associées à des cas eDiscovery.
-ms.openlocfilehash: 2a169290743c21c947edbb600f00b64a68d8cee2
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 5ccb74960a7b0d051b0c7754710f35e81b3edae0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507613"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572046"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Créer un rapport sur les conservations définies dans les cas eDiscovery 
 
@@ -160,7 +160,7 @@ Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShe
 
    Voici un exemple d’exécution du script CaseHoldsReport.ps1 script.
 
-   ![Sortie après l’exécution du script CaseHoldsReport.ps1 script](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+   ![Résultat après l’exécution CaseHoldsReport.ps1 script.](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
 ## <a name="more-information"></a>Plus d’informations
 

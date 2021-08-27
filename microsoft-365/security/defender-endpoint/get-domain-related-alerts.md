@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1511a31dfd7c86d24f3a91ceebfca65d1ce777e3
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 7712500caf2e30d6ecdb8146ecfa4173e087f154
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365068"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611146"
 ---
 # <a name="get-domain-related-alerts-api"></a>API Obtenir les alertes liées au domaine
 
@@ -37,43 +37,43 @@ ms.locfileid: "58365068"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>Description de l’API
+
 Récupère une collection d’alertes [liées](alerts.md) à une adresse de domaine donnée.
 
-
 ## <a name="limitations"></a>Limites
+
 1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
-
 
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   Alert.Read.All |    « Lire toutes les alertes »
-Application |   Alert.ReadWrite.All |   « Lire et écrire toutes les alertes »
-Déléguée (compte professionnel ou scolaire) | Alert.Read | « Lire les alertes »
-Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et écrire des alertes »
+Application|Alert.Read.All|« Lire toutes les alertes »
+Application|Alert.ReadWrite.All|« Lire et écrire toutes les alertes »
+Déléguée (compte professionnel ou scolaire)|Alert.Read|« Lire les alertes »
+Déléguée (compte professionnel ou scolaire)|Alert.ReadWrite|« Lire et écrire des alertes »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
->- La réponse inclut uniquement les alertes, associées aux appareils, à qui [](machine-groups.md) l’utilisateur a accès, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils pour plus d’informations)
+> - La réponse inclut uniquement les alertes, associées aux appareils, à qui [](machine-groups.md) l’utilisateur a accès, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
+
 ```http
 GET /api/domains/{domain}/alerts
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-| En-tête        | Valeur  |
-|:--------------|:-------|
-| Autorisation | String |
+|En-tête|Valeur|
+|---|---|
+|Autorisation|Chaîne|
 
 ## <a name="request-body"></a>Corps de la demande
 

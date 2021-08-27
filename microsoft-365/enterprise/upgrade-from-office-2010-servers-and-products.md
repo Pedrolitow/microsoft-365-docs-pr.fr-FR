@@ -23,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: Commencez à planifier votre mise à niveau à partir Office 2010 et des applications clientes, car la prise en charge se termine bientôt et les contrats de support personnalisés ne sont pas disponibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15d70ba1a090af9c378f7a041313620703c2a667
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: f4f90a34bd4f6c4585cc8900b11808a11f4a2947
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354175"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571914"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 
@@ -46,7 +46,7 @@ Lorsque vous planifiez votre mise à niveau, envisagez de passer à Microsoft 36
 
 Pour obtenir un résumé visuel des options de mise à niveau, de migration et de migration vers le cloud pour les clients et serveurs Office 2010 et Windows 7, consultez l’affiche de fin du [support](../downloads/Office2010Windows7EndOfSupport.pdf)technique.
 
-[![End of support for Office 2010 clients and servers and Windows 7 poster](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Fin de la prise en charge Office clients et serveurs 2010 et affiche Windows 7.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 Cette affiche d’une page récapitule les différents chemins que vous pouvez prendre pour gérer les produits client et serveur Office 2010 et Windows 7 à partir de la fin de la prise en charge. Les chemins d’accès préférés et la prise en charge des options Microsoft 365 Entreprise sont mis en surbrillant.
 

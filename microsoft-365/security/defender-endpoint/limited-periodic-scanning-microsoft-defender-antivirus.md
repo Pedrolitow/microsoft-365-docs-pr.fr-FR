@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: dcf83a4f90c896ce56a3f5b2fd6430eeb9c939bf2b564a5081ae063d01898a79
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c079718ea7c8dab8c8c6423fcc5877e14a1dc078
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806918"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571807"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Utilisez une analyse périodique limitée dans Antivirus Microsoft Defender
 
@@ -43,7 +43,7 @@ Par défaut, Antivirus Microsoft Defender s’active sur un appareil Windows 10 
 
 Si Antivirus Microsoft Defender est activé, les options habituelles s’affichent pour le configurer sur cet appareil :
 
-![Sécurité Windows application affichant les options de Microsoft Defender AV, y compris les options d’analyse, les paramètres et les options de mise à jour](images/vtp-wdav.png)
+![Sécurité Windows’application affichant les options de Microsoft Defender AV, y compris les options d’analyse, les paramètres et les options de mise à jour.](images/vtp-wdav.png)
 
 Si un autre produit antivirus est installé et fonctionne correctement, Antivirus Microsoft Defender se désactive lui-même. L’application Sécurité Windows modifiera la section Protection contre les virus **&** contre les menaces pour afficher l’état du produit antivirus et fournira un lien vers les options de configuration du produit.
 

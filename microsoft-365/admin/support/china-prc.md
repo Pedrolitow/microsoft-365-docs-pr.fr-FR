@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aed7cb7320e000cbbec4733ebe9e6543c25a497da77df5af0667a2e67cce796a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2555070438ead608b470f3291bd74dea0b657543
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901850"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572118"
 ---
 # <a name="contact-support-for-china-prc"></a>Contacter le support technique pour la Chine (RPC)
 
@@ -42,7 +42,7 @@ Anglais : 24h/24, 7j/7
 Autre Téléphone : 400 920 0365 (Mobile)
 
 ## <a name="follow-us-on-wechat"></a>Suivez-nous sur WeChat
-![Code QR WeChat](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![Code QR WeChat.](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>Contacter le support technique Office 365 géré par 21Vianet uniquement
 ## <a name="phone-number"></a>Numéro de téléphone

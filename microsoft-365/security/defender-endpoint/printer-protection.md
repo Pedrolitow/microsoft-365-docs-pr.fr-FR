@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 03bae05ba35b8ee332fbbb1083aa4a5763fc1cf4
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: d1a0b8af6dbf725623986582f5ee8e0b3912f0b5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507721"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561289"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
@@ -70,11 +70,11 @@ Vous pouvez déployer la stratégie via la stratégie de groupe ou Intune.
 |**Liste des appareils d’impression connectés usb approuvés**\*|Autoriser une imprimante USB spécifique|Oui|Oui|Oui|Oui|
 |
 
-\*Cette stratégie doit être utilisée avec les **restrictions d’impression des contrôles d’appareil.**
+\*Cette stratégie doit être utilisée avec activer les **restrictions d’impression des contrôles d’appareil.**
 
 ## <a name="deploy-policy-via-intune"></a>Déployer une stratégie via Intune
 
-Pour Intune, la protection de l’imprimante de contrôle d’appareil prend actuellement en charge l’OMA-URI uniquement.
+Pour Intune, la protection de l’imprimante de contrôle d’appareil prend uniquement en charge l’OMA-URI.
 
 ### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-intune"></a>Scénario 1 : empêcher les personnes d’imprimer via une imprimante non d’entreprise à l’aide d’Intune
 
@@ -88,7 +88,7 @@ Pour Intune, la protection de l’imprimante de contrôle d’appareil prend act
 
 Chaîne de prise en charge du programme CSP avec `<enabled/>` :
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="ligne d’édition personnalisée":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="ligne d’édition personnalisée.":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>Scénario 2 : autoriser des imprimantes USB approuvées spécifiques à l’aide d’Intune
 
@@ -100,9 +100,9 @@ Chaîne de prise en charge du programme CSP avec `<enabled/>` :
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-La chaîne de prise en charge du programme CSP avec des imprimantes USB approuvées via la propriété « ApprovedUsbPrintDevices » (par `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">` exemple :
+La chaîne de prise en charge du programme CSP avec des imprimantes USB approuvées via la propriété « ApprovedUsbPrintDevices » (par exemple : `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">`
 
-:::image type="content" source="../../media/editrow.png" alt-text="modifier la ligne":::
+:::image type="content" source="../../media/editrow.png" alt-text="modifier la ligne.":::
 
 ## <a name="deploy-policy-via-group-policy"></a>Déployer une stratégie via une stratégie de groupe
 
@@ -118,7 +118,7 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
   Imprimantes du Panneau de configuration Des modèles d’administration de configuration utilisateur : \> \> activer les \> restrictions d’impression des contrôles d’appareil
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="activer les restrictions d’impression d’appareil":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="activer les restrictions d’impression des appareils.":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>Scénario 2 : autoriser des imprimantes USB approuvées spécifiques à l’aide de la stratégie de groupe
 
@@ -130,7 +130,7 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
   Imprimantes du Panneau de configuration Des modèles d’administration de configuration utilisateur : liste des appareils d’impression connectés \> \> à USB \> approuvés
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="liste des périphériques d’impression connectés usb approuvés":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="liste des périphériques d’impression connectés usb approuvés.":::
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Afficher les données de protection des imprimantes des contrôles d’appareil dans le portail Microsoft Defender pour les points de terminaison
 
@@ -148,7 +148,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="recherche avancée":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="recherche avancée.":::
  
  Vous pouvez utiliser l’événement PnP pour rechercher l’imprimante USB utilisée dans l’organisation :
  

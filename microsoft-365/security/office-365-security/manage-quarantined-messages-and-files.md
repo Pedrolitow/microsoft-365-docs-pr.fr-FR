@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d441116fd02652e577c44bb5e48e3a49094d081e
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: c8e0fbedffeb5fc45e41e7a767bf8e87758e08fb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450211"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561301"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -106,14 +106,14 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
      - **Aujourd’hui**
      - **Dans les 2 prochains jours**
      - **Dans les 7 prochains jours**
-     - **Personnalisé**: entrez une heure **de début** et une heure **de fin** (date).
+     - **Heure reçue** : Saisissez une **heure de début** et une **heure de fin** (date).
    - **Balise de destinataire**
    - **Raison de la mise en quarantaine :**
      -  **Règle de transport** (règle de flux de courrier)
      - **E-mail de masse**
      - **Courrier indésirable**
      - **Programme malveillant**
-     - **Hameçonnage**: le verdict  de filtrage du courrier indésirable était le hameçonnage ou la protection anti-hameçonnage qui a mis en quarantaine le message ([paramètres](set-up-anti-phishing-policies.md#spoof-settings) d’usurpation d’identité ou [protection contre l’usurpation d’identité](set-up-anti-phishing-policies.
+     - **Hameçonnage**: le verdict  de filtrage du courrier indésirable était le hameçonnage ou la protection anti-hameçonnage qui a mis en quarantaine le message ( paramètres d’usurpation d’identité ou [protection contre l’usurpation d’identité](configurer des [stratégies](set-up-anti-phishing-policies.md#spoof-settings) anti-hameçonnage.
      - **Hameçonnage à haute fiabilité**
    - **Destinataire**: **tous les utilisateurs** ou **uniquement moi**. Les utilisateurs finaux peuvent uniquement gérer les messages mis en quarantaine qui leur sont envoyés.
    - **Statut de la version** : Une des valeurs suivantes :
@@ -129,7 +129,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
      - **Stratégie anti-courrier indésirable**
      -  **Règle de transport** (règle de flux de courrier)
 
-   Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres, cliquez sur l'icône ![Effacer les filtres](../../media/m365-cc-sc-clear-filters-icon.png)**Effacer les filtres** .
+   Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres, cliquez sur ![ Effacer l’icône Filtres.](../../media/m365-cc-sc-clear-filters-icon.png) **Effacer les filtres**.
 
 5. Utilisez le **champ de recherche** et une valeur correspondante pour trouver des messages spécifiques. Les caractères génériques ne sont pas pris en charge. Vous pouvez effectuer une recherche sur les valeurs suivantes :
    - Message ID
@@ -146,7 +146,7 @@ Une fois le message spécifique mis en quarantaine trouvé, sélectionnez-le pou
 
 Lorsque vous sélectionnez un message mis en quarantaine dans la liste, les informations suivantes sont disponibles dans le flyout de détails qui apparaît.
 
-![Le flyout des détails d'un message en quarantaine](../../media/quarantine-message-details-flyout.png)
+![Le volant de détails d’un message mis en quarantaine.](../../media/quarantine-message-details-flyout.png)
 
 - **ID du message** : l’identificateur global unique pour le message. Disponible dans le **champ d’en-tête Message-ID** dans l’en-tête du message.
 - **Adresse de l’expéditeur**
@@ -157,7 +157,7 @@ Lorsque vous sélectionnez un message mis en quarantaine dans la liste, les info
 - **Nom de la stratégie**
 - **Nombre de destinataires**
 - **Destinataires** : si le message contient plusieurs destinataires, vous devez cliquer sur **Prévisualiser le message** ou **Afficher l’en-tête du message** pour afficher la liste complète des destinataires.
-- **Balise destinataire**: pour plus d’informations, voir [Balises utilisateur dans Microsoft Defender pour Office 365](user-tags.md).
+- **Balise de destinataire**: pour plus d’informations, voir [Balises](user-tags.md)utilisateur dans Microsoft Defender pour Office 365 .
 - **Expires** : Date et heure auxquelles le message sera automatiquement et définitivement supprimé de la quarantaine.
 - **Déplacé pour** : toutes les adresses e-mail (le cas échéant) auxquelles le message a été envoyé.
 - **Pas encore déplacé pour** : toutes les adresses e-mail (le cas échéant) auxquelles le message n'a pas encore été envoyé.
@@ -167,28 +167,28 @@ Pour donner suite au message, consultez la section suivante.
 > [!NOTE]
 > Pour rester dans le menu déroulant des détails, mais changer le message en quarantaine que vous regardez, utilisez les flèches haut et bas en haut du menu déroulant.
 >
-> ![Les flèches vers le haut et vers le bas dans la fenêtre de détail d'un message en quarantaine.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> ![Flèches vers le haut et vers le bas dans le volant des détails d’un message mis en quarantaine.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
 
 Après avoir sélectionné un message en quarantaine dans la liste, les actions suivantes sont disponibles dans le flyout des détails :
 
-![Actions disponibles dans le flyout des détails d'un message en quarantaine](../../media/quarantine-message-details-flyout-actions.png)
+![Actions disponibles dans le volant des détails d’un message mis en quarantaine.](../../media/quarantine-message-details-flyout-actions.png)
 
-- ![Release email icon ](../../media/m365-cc-sc-check-mark-icon.png) **Release email** <sup>\*</sup> : In the flyout pane that appears, configure the following options:
+- ![Icône Libérer l’e-mail.](../../media/m365-cc-sc-check-mark-icon.png) **Publier un e-mail**: dans le volet volant qui s’affiche, <sup>\*</sup> configurez les options suivantes :
   - **Ajouter un expéditeur à la** liste d’adresses de votre organisation : sélectionnez cette option pour empêcher la mise en quarantaine des messages de l’expéditeur.
   - Choisissez l’une des options suivantes :
     - **Publication pour tous les destinataires**
     - **Libérer des destinataires spécifiques**: sélectionnez les destinataires dans la zone **Destinataires** qui s’affiche
-  - **Envoyez une copie de ce message à d’autres destinataires**: sélectionnez cette option pour entrer les adresses de messagerie des destinataires dans la zone **Destinataires** qui s’affiche.
+  - **Envoyez une copie de ce message à d’autres destinataires**: sélectionnez cette option pour entrer les adresses de messagerie des destinataires dans la **zone Destinataires** qui s’affiche.
 
     > [!NOTE]
     > Pour envoyer une copie du message à d’autres destinataires, vous devez également libérer le message au moins l’un des destinataires d’origine (sélectionnez Release **to all recipients** or **Release to specific recipients**).
 
   - Envoyer le message à Microsoft pour améliorer la détection **(faux positif)**: cette option est sélectionnée par défaut et signale le message mis en quarantaine par erreur à Microsoft comme faux positif. Si le message a été mis en quarantaine en tant que courrier indésirable, en bloc, hameçonnage ou contenant un programme malveillant, le message est également signalé à l’équipe d’analyse du courrier indésirable de Microsoft. Selon les résultats de leur analyse, les règles de filtrage du courrier indésirable à l’échelle du service peuvent être ajustées pour autoriser le message.
 
-  - **Autoriser les messages de** ce genre : cette option est désactivée par défaut ![ (bascule). ](../../media/scc-toggle-off.png) L’activer (activer) pour empêcher temporairement la mise en quarantaine des messages avec des URL, des pièces jointes et d’autres ![ ](../../media/scc-toggle-on.png) propriétés similaires. Lorsque vous activer cette option, les options suivantes sont disponibles :
-    - **Supprimer après**: sélectionnez la durée pendant combien de temps vous souhaitez autoriser des messages comme celui-ci. Sélectionnez **1 jour** à **30 jours.** La valeur par défaut est 30.
+  - **Autoriser les messages de** ce genre : cette option est désactivée par défaut ( ![ Basculez. ](../../media/scc-toggle-off.png) ). L’activer (activer) pour empêcher temporairement la mise en quarantaine des messages avec des URL, des pièces jointes et d’autres ![ ](../../media/scc-toggle-on.png) propriétés similaires. Lorsque vous activer cette option, les options suivantes sont disponibles :
+    - **Supprimer après**: sélectionnez la durée pendant combien de temps vous souhaitez autoriser des messages comme celui-ci. Sélectionnez **1 jour** **à 30 jours.** La valeur par défaut est 30.
     - **Remarque facultative**: entrez une description utile pour l’autoriser.
 
   Lorsque vous avez terminé, cliquez sur **Libérer le message.**
@@ -198,23 +198,23 @@ Après avoir sélectionné un message en quarantaine dans la liste, les actions 
   - Vous ne pouvez pas envoyer un message au même destinataire plusieurs fois.
   - Seuls les destinataires qui n’ont pas reçu le message apparaissent dans la liste des destinataires potentiels.
 
-- ![Icône Afficher les en-têtes de message](../../media/m365-cc-sc-eye-icon.png) **Afficher les en-têtes de message** : Choisissez ce lien pour voir le texte de l'en-tête du message. Le flyout de **l'en-tête de message** apparaît avec les liens suivants :
+- ![Afficher l’icône des en-têtes de message.](../../media/m365-cc-sc-eye-icon.png) **Afficher les en-têtes de** message : choisissez ce lien pour afficher le texte de l’en-tête du message. Le flyout de **l'en-tête de message** apparaît avec les liens suivants :
 - **Copier l'en-tête du message** : Cliquez sur ce lien pour copier l'en-tête du message (tous les champs d'en-tête) dans votre presse-papiers.
 - **Analyseur d'en-tête de message Microsoft Corporation** : Pour analyser en profondeur les champs et les valeurs de l'en-tête, cliquez sur ce lien pour accéder à l'analyseur d'en-tête de message. Collez l'en-tête du message dans la section **Insérez l'en-tête du message que vous souhaitez analyser** (CTRL+V ou cliquez avec le bouton droit de la souris et choisissez **Coller**), puis cliquez sur **Analyser les en-têtes**.
 
-Les actions suivantes sont disponibles après avoir cliqué sur l'icône ![Autres actions ](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** :
+Les actions suivantes sont disponibles après avoir cliqué sur ![ l’icône Actions plus.](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions**:
 
-- ![Icône de message de ](../../media/m365-cc-sc-eye-icon.png) **préversion du message de prévisualisation** : Dans le menu déroulant qui apparaît, choisissez l'un des onglets suivants :
+- ![Afficher un aperçu de l’icône du message.](../../media/m365-cc-sc-eye-icon.png) **Message d’aperçu**: dans le volant qui s’affiche, choisissez l’un des onglets suivants :
   - **Affichage Source** : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
   - **Texte simple** : affiche le corps du message au format texte brut.
 
-- ![Supprimer de la quarantaine](../../media/m365-cc-sc-delete-icon.png) **Supprimer de la quarantaine** : Après avoir cliqué sur **Oui** dans l'avertissement qui apparaît, le message est immédiatement supprimé sans être envoyé aux destinataires d'origine.
+- ![Supprimer de l’icône de mise en quarantaine.](../../media/m365-cc-sc-delete-icon.png) **Supprimer de la quarantaine**: une fois que vous avez cliqué sur **Oui** dans l’avertissement qui s’affiche, le message est immédiatement supprimé sans être envoyé aux destinataires d’origine.
 
-- ![Icône de téléchargement de l'e-mail](../../media/m365-cc-sc-download-icon.png) **Télécharger l'e-mail**: Dans le menu déroulant qui apparaît, sélectionnez **Je comprends les risques liés au téléchargement de ce message**, puis cliquez sur **Télécharger** pour enregistrer une copie locale du message au format .eml.
+- ![Télécharger l’icône de courrier électronique.](../../media/m365-cc-sc-download-icon.png) **Télécharger le** courrier électronique : dans le volant qui s’affiche, sélectionnez Je comprends les risques liés au téléchargement de ce **message,** puis cliquez sur Télécharger pour enregistrer une copie locale du message au format .eml. 
 
-- ![Icône de blocage de l'expéditeur](../../media/m365-cc-sc-block-sender-icon.png) **Bloquer l'expéditeur** : Ajouter l'expéditeur à la liste des expéditeurs bloqués dans **votre** boîte aux lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- ![Bloquer l’icône de l’expéditeur.](../../media/m365-cc-sc-block-sender-icon.png) **Bloquer l’expéditeur**: ajoutez l’expéditeur à la liste des expéditeurs bloqués dans **votre boîte aux** lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-- ![Envoyer uniquement ](../../media/m365-cc-sc-create-icon.png) **l’icône Envoyer**: signale le message à Microsoft pour analyse. Dans le volant qui s’affiche, choisissez les options suivantes :
+- ![Icône Envoyer uniquement.](../../media/m365-cc-sc-create-icon.png) **Envoyer uniquement**: signale le message à Microsoft pour analyse. Dans le volant qui s’affiche, choisissez les options suivantes :
   - **Sélectionnez le type de soumission**: **e-mail** (par défaut), **URL** ou **fichier**.
   - **Ajoutez l’ID de message réseau ou téléchargez le fichier de courrier** électronique : sélectionnez l’une des options suivantes :
     - **Ajouter l’ID du message** réseau de messagerie (par défaut, avec la valeur correspondante dans la zone)
@@ -222,8 +222,8 @@ Les actions suivantes sont disponibles après avoir cliqué sur l'icône ![Autre
   - **Choisissez un destinataire qui a eu un problème**: sélectionnez un (de préférence) ou plusieurs destinataires d’origine du message pour analyser les stratégies qui leur ont été appliquées.
   - **Sélectionnez une raison pour l’envoi à Microsoft**: choisissez l’une des options suivantes :
     - **Ne doit pas avoir été bloqué (faux positif)** (valeur par défaut) : les options suivantes sont disponibles :
-      - **Autoriser les messages de** ce genre : cette option est désactivée par défaut ![ (bascule). ](../../media/scc-toggle-off.png) L’activer (activer) pour empêcher temporairement la mise en quarantaine des messages avec des URL, des pièces jointes et d’autres ![ ](../../media/scc-toggle-on.png) propriétés similaires. Lorsque vous activer cette option, les options suivantes sont disponibles :
-        - **Supprimer après**: sélectionnez la durée pendant combien de temps vous souhaitez autoriser des messages comme celui-ci. Sélectionnez **1 jour** à **30 jours.** La valeur par défaut est 30.
+      - **Autoriser les messages de** ce genre : cette option est désactivée par défaut ( ![ Basculez. ](../../media/scc-toggle-off.png) ). L’activer (activer) pour empêcher temporairement la mise en quarantaine des messages avec des URL, des pièces jointes et d’autres ![ ](../../media/scc-toggle-on.png) propriétés similaires. Lorsque vous activer cette option, les options suivantes sont disponibles :
+        - **Supprimer après**: sélectionnez la durée pendant combien de temps vous souhaitez autoriser des messages comme celui-ci. Sélectionnez **1 jour** **à 30 jours.** La valeur par défaut est 30.
         - **Remarque facultative**: entrez une description utile pour l’autoriser.
     - **Doit avoir été bloqué (faux négatif).**
 
@@ -236,32 +236,32 @@ Si vous ne libérez pas ou ne supprimez pas le message, il sera supprimé après
 > [!NOTE]
 > Sur un appareil mobile, le texte de description n'est pas disponible sur les icônes d'action.
 >
-> ![Détails d'un message en quarantaine avec les actions disponibles mises en évidence](../../media/quarantine-message-details-flyout-mobile-actions.png)
+> ![Détails d’un message mis en quarantaine avec les actions disponibles mises en évidence.](../../media/quarantine-message-details-flyout-mobile-actions.png)
 >
 > Les icônes dans l'ordre et leurs descriptions correspondantes sont résumées dans le tableau suivant :
 >
 > |Icône|Description|
 > |---:|---|
-> |![Libérer l’icône du courrier](../../media/m365-cc-sc-check-mark-icon.png)|**Libérer le courrier**|
-> |![Afficher l’icône des en-têtes de messages](../../media/m365-cc-sc-eye-icon.png)|**Afficher des en-têtes de messages**|
-> |![Afficher l’icône de l’aperçu du message](../../media/m365-cc-sc-eye-icon.png)|**Afficher un aperçu du message**|
-> |![Supprimer de l’icône de la quarantaine](../../media/m365-cc-sc-delete-icon.png)|**Supprimer de la quarantaine**|
-> |![Icône Télécharger le courrier électronique](../../media/m365-cc-sc-download-icon.png)|**Télécharger le courrier électronique**|
-> |![Bloquer l’icône de l’expéditeur](../../media/m365-cc-sc-block-sender-icon.png)|**Bloquer l’expéditeur**|
-> |![Icône Envoyer uniquement](../../media/m365-cc-sc-create-icon.png)|**Envoyer uniquement**|
+> |![Icône Libérer l’e-mail.](../../media/m365-cc-sc-check-mark-icon.png)|**Libérer le courrier**|
+> |![Afficher l’icône des en-têtes de message.](../../media/m365-cc-sc-eye-icon.png)|**Afficher des en-têtes de messages**|
+> |![Afficher un aperçu de l’icône du message.](../../media/m365-cc-sc-eye-icon.png)|**Afficher un aperçu du message**|
+> |![Supprimer de l’icône de mise en quarantaine.](../../media/m365-cc-sc-delete-icon.png)|**Supprimer de la quarantaine**|
+> |![Télécharger l’icône de courrier électronique.](../../media/m365-cc-sc-download-icon.png)|**Télécharger le courrier électronique**|
+> |![Bloquer l’icône de l’expéditeur.](../../media/m365-cc-sc-block-sender-icon.png)|**Bloquer l’expéditeur**|
+> |![Icône Envoyer uniquement.](../../media/m365-cc-sc-create-icon.png)|**Envoyer uniquement**|
 
 #### <a name="take-action-on-multiple-quarantined-email-messages"></a>Effectuer une action sur plusieurs courriers électroniques mis en quarantaine
 
 Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (jusqu'à 100) en cliquant dans la zone vide à gauche de la première colonne, la liste déroulante **Actions en vrac** s'affiche et vous permet d'effectuer les actions suivantes :
 
-![Liste déroulante d'actions groupées pour les messages en quarantaine](../../media/quarantine-message-bulk-actions.png)
+![Liste de listes des actions en bloc pour les messages en quarantaine.](../../media/quarantine-message-bulk-actions.png)
 
-- ![Release email icon ](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Releases messages to all recipients. Dans le volant qui s’affiche, vous pouvez choisir les options suivantes, qui sont les mêmes que lorsque vous publiez un seul message :
+- ![Icône Libérer l’e-mail.](../../media/m365-cc-sc-check-mark-icon.png) **Messages de** libération : libère les messages à tous les destinataires. Dans le volant qui s’affiche, vous pouvez choisir les options suivantes, qui sont les mêmes que lorsque vous publiez un seul message :
   - **Ajouter un expéditeur à la liste d’adresses de votre organisation**
   - **Envoyer une copie de ce message à d’autres destinataires**
   - **Envoyer le message à Microsoft pour améliorer la détection (faux positif)**
   - **Autorisez les messages comme ceci**:
-    - **Supprimer après**: **1 jour** à **30 jours**
+    - **Supprimer après**: **1 jour** **à 30 jours**
     - **Note facultative**
 
   Lorsque vous avez terminé, cliquez sur **Libérer le message.**
@@ -269,16 +269,16 @@ Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (
   > [!NOTE]
   > Envisagez le scénario suivant : john@gmail.com envoie un message à faith@contoso.com et john@subsidiary.contoso.com. Gmail bifurme ce message en deux copies qui sont toutes deux acheminées vers la quarantaine en tant que hameçonnage dans Microsoft. Un administrateur publie ces deux messages admin@contoso.com. Le premier message publié qui atteint la boîte aux lettres d’administration est remis. Le deuxième message publié est identifié comme remise en double et est ignoré. Les messages sont identifiés comme doublons s’ils ont le même ID de message et le même temps de réception.
 
-- ![Icône Supprimer de la quarantaine](../../media/m365-cc-sc-delete-icon.png) **Supprimer les messages** :  Après avoir cliqué sur **Oui** dans l'avertissement qui apparaît, les messages sont immédiatement supprimés de la quarantaine sans être envoyés aux destinataires d'origine.
-- ![Télécharger les messages de ](../../media/m365-cc-sc-download-icon.png) **l’icône De messagerie**
-- ![Icône Envoyer uniquement ](../../media/m365-cc-sc-create-icon.png) **Envoyer uniquement**
+- ![Supprimer de l’icône de mise en quarantaine.](../../media/m365-cc-sc-delete-icon.png) **Supprimer des messages**: une fois que vous avez cliqué sur **Oui** dans l’avertissement qui s’affiche, les messages sont immédiatement supprimés de la quarantaine sans être envoyés aux destinataires d’origine.
+- ![Télécharger l’icône de courrier électronique.](../../media/m365-cc-sc-download-icon.png) **Télécharger des messages**
+- ![Icône Envoyer uniquement.](../../media/m365-cc-sc-create-icon.png) **Envoyer uniquement**
 
 ## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Utilisez le portail Microsoft 365 Defender pour gérer les fichiers mis en quarantaine dans Defender pour Office 365
 
 > [!NOTE]
 > Les procédures pour les fichiers mis en quarantaine dans cette section sont disponibles uniquement pour Microsoft Defender pour les abonnés Office 365 Plan 1 ou Plan 2.
 
-Dans les organisations avec Defender pour Office 365, les administrateurs peuvent gérer les fichiers mis en quarantaine par les pièces jointes Coffre dans SharePoint Online, OneDrive Entreprise et Microsoft Teams. Pour activer la protection de ces fichiers, voir [Activer Coffre pièces jointes](turn-on-mdo-for-spo-odb-and-teams.md)pour SharePoint, OneDrive et Microsoft Teams .
+Dans les organisations avec Defender pour Office 365, les administrateurs peuvent gérer les fichiers mis en quarantaine par les pièces jointes Coffre dans SharePoint Online, OneDrive Entreprise et Microsoft Teams. Pour activer la protection de ces fichiers, voir Activer Coffre pièces jointes pour [SharePoint, OneDrive et Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Afficher les fichiers mis en quarantaine
 
@@ -312,7 +312,7 @@ Une fois que vous avez trouvé un fichier spécifique mis en quarantaine, sélec
 
 Lorsque vous sélectionnez un fichier en quarantaine dans la liste, les informations suivantes sont disponibles dans le volant de détails qui s’ouvre :
 
-![Le volant de détails d’un fichier mis en quarantaine](../../media/quarantine-file-details-flyout.png)
+![Le volant de détails d’un fichier mis en quarantaine.](../../media/quarantine-file-details-flyout.png)
 
 - **Nom de fichier**
 - **URL du** fichier : URL qui définit l’emplacement du fichier (par exemple, dans SharePoint Online).
@@ -333,18 +333,18 @@ Pour prendre des mesures sur le fichier, consultez la section suivante.
 > [!NOTE]
 > Pour rester dans le volant des détails, mais modifier le fichier mis en quarantaine que vous regardez, utilisez les flèches haut et bas en haut du volant.
 >
-> ![Flèches vers le haut et vers le bas dans le volant des détails d’un fichier mis en quarantaine](../../media/quarantine-file-details-flyout-up-down-arrows.png)
+> ![Flèches vers le haut et vers le bas dans le volant des détails d’un fichier mis en quarantaine.](../../media/quarantine-file-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-files"></a>Prendre des mesures sur les fichiers mis en quarantaine
 
 Une fois que vous avez sélectionné un fichier mis en quarantaine dans la liste, les actions suivantes sont disponibles dans le volant de détails :
 
-![Actions disponibles dans le volant de détails d’un fichier mis en quarantaine](../../media/quarantine-file-details-flyout-actions.png)
+![Actions disponibles dans le volant des détails d’un fichier mis en quarantaine.](../../media/quarantine-file-details-flyout-actions.png)
 
-- ![Release file icon ](../../media/m365-cc-sc-check-mark-icon.png) **Release file** <sup>\*</sup> : In the flyout pane that appears, turn on or turn off **Report files to Microsoft for analysis,** and then click **Release**.
-- ![Télécharger le fichier de téléchargement de l’icône de fichier : dans le volant qui s’affiche, sélectionnez Je comprends les risques liés au téléchargement de ce fichier, puis cliquez sur Télécharger pour enregistrer une copie ](../../media/m365-cc-sc-download-icon.png) locale du fichier.  
-- ![Supprimer de l’icône Mettre en quarantaine Supprimer de la quarantaine : une fois que vous avez cliqué sur Oui dans l’avertissement qui s’affiche, le fichier ](../../media/m365-cc-sc-delete-icon.png) est immédiatement  supprimé.
-- ![Icône de blocage de l'expéditeur](../../media/m365-cc-sc-block-sender-icon.png) **Bloquer l'expéditeur** : Ajouter l'expéditeur à la liste des expéditeurs bloqués dans **votre** boîte aux lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- ![Icône Libérer le fichier.](../../media/m365-cc-sc-check-mark-icon.png) **Fichier de publication**: dans le volet volant qui s’affiche, activer ou désactiver les fichiers de rapport à Microsoft pour analyse, puis cliquez sur <sup>\*</sup> **Libérer.** 
+- ![Icône Télécharger le fichier.](../../media/m365-cc-sc-download-icon.png) **Fichier de téléchargement**: dans le volant qui s’affiche, sélectionnez  Je comprends les risques liés au téléchargement de ce **fichier,** puis cliquez sur Télécharger pour enregistrer une copie locale du fichier.
+- ![Supprimer de l’icône de mise en quarantaine.](../../media/m365-cc-sc-delete-icon.png) **Supprimer de la quarantaine**: une fois que vous avez cliqué sur **Oui** dans l’avertissement qui s’affiche, le fichier est immédiatement supprimé.
+- ![Bloquer l’icône de l’expéditeur.](../../media/m365-cc-sc-block-sender-icon.png) **Bloquer l’expéditeur**: ajoutez l’expéditeur à la liste des expéditeurs bloqués dans **votre boîte aux** lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 <sup>\*</sup> Cette option n’est pas disponible pour les fichiers qui ont déjà été publiés (la valeur d’état **Released** est **Released**).
 
@@ -354,11 +354,11 @@ Si vous ne relâchez pas ou ne supprimez pas le fichier, il sera supprimé aprè
 
 Lorsque vous sélectionnez plusieurs fichiers mis en quarantaine dans la liste (jusqu’à 100) en cliquant dans la zone vierge à gauche de la colonne Objet, la liste de listes de listes des **actions** en bloc s’affiche où vous pouvez prendre les mesures suivantes : 
 
-![Liste de listes de listes des actions en bloc pour les fichiers en quarantaine](../../media/quarantine-file-bulk-actions.png)
+![Liste de listes des actions en bloc pour les fichiers en quarantaine.](../../media/quarantine-file-bulk-actions.png)
 
-- ![Release file icon ](../../media/m365-cc-sc-check-mark-icon.png) **Release file**: In the flyout pane that appears, turn on or turn off **Report files to Microsoft for analysis,** and then click **Release**.
-- ![Supprimer de l’icône Mettre en quarantaine Supprimer de la quarantaine : une fois que vous avez cliqué sur Oui dans l’avertissement qui s’affiche, le fichier ](../../media/m365-cc-sc-delete-icon.png) est immédiatement  supprimé.
-- ![Télécharger le fichier de téléchargement de l’icône de fichier : dans le volant qui s’affiche, sélectionnez Je comprends les risques liés au téléchargement de ce fichier, puis cliquez sur Télécharger pour enregistrer une copie ](../../media/m365-cc-sc-download-icon.png) locale du fichier.  
+- ![Icône Libérer le fichier.](../../media/m365-cc-sc-check-mark-icon.png) **Fichier de publication**: dans le volet volant qui s’affiche, activer ou désactiver les fichiers de rapport à **Microsoft** pour analyse, puis cliquez sur **Libérer.**
+- ![Supprimer de l’icône de mise en quarantaine.](../../media/m365-cc-sc-delete-icon.png) **Supprimer de la quarantaine**: une fois que vous avez cliqué sur **Oui** dans l’avertissement qui s’affiche, le fichier est immédiatement supprimé.
+- ![Icône Télécharger le fichier.](../../media/m365-cc-sc-download-icon.png) **Fichier de téléchargement**: dans le volant qui s’affiche, sélectionnez  Je comprends les risques liés au téléchargement de ce **fichier,** puis cliquez sur Télécharger pour enregistrer une copie locale du fichier.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour afficher et gérer les messages et fichiers mis en quarantaine
 

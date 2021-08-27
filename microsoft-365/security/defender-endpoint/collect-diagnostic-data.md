@@ -1,6 +1,6 @@
 ---
 title: Collecter des données de diagnostic de Antivirus Microsoft Defender
-description: Utiliser un outil pour collecter des données afin de résoudre les problèmes Antivirus Microsoft Defender
+description: Utilisez un outil pour collecter des données afin de résoudre les problèmes Antivirus Microsoft Defender
 keywords: résoudre les problèmes, erreur, corriger, mettre à jour la conformité, oms, surveiller, rapport, Microsoft Defender av, objet de stratégie de groupe, paramètre, données de diagnostic
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8a016ab0e73af99ce47c30b598daade864e041eb
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: a7f85d20dfa59fbe21f811d8bef30a6c21a69125
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510024"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561397"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Collecter les données de diagnostic de l’Antivirus Microsoft Defender
 
@@ -121,12 +121,13 @@ Vous pouvez également spécifier l'.cab de diagnostic à l’aide d’un objet 
 
    ![Capture d’écran du paramètre définir le chemin d’accès aux fichiers journaux](images/GPO2-SupportLogLocationGPPage.png)
 
+    ![Capture d’écran de l’éditeur de stratégie de groupe local.](images/GPO1-SupportLogLocationDefender.png)  
+        
+     ![Capture d’écran du chemin d’accès défini pour le paramètre des fichiers journaux.](images/GPO2-SupportLogLocationGPPage.png)  
 3. À l’intérieur de l’éditeur de stratégie, **sélectionnez Activé.**
 
 4. Spécifiez le chemin d’accès du répertoire où vous souhaitez copier les fichiers journaux de support dans le **champ Options.**
-
-   ![Capture d’écran du paramètre personnalisé de chemin d’accès au répertoire activé](images/GPO3-SupportLogLocationGPPageEnabledExample.png)
-
+     ![Capture d’écran du paramètre personnalisé du chemin d’accès au répertoire activé.](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
 5. Sélectionnez **OK** ou **Appliquer.**
 
 ## <a name="see-also"></a>Voir aussi

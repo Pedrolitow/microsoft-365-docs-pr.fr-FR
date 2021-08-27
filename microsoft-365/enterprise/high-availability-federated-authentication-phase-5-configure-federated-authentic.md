@@ -1,5 +1,5 @@
 ---
-title: Authentification fédérée haute disponibilité Phase 5 Configurer l’authentification fédérée pour Microsoft 365
+title: Authentification fédérée haute disponibilité, phase 5 Configurer l’authentification fédérée pour Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Résumé : Configurez azure ad Connecter pour votre authentification fédérée haute disponibilité Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: ecd5eac14279bb79c0e4bc574a9340314cc77574
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 8d8636c10947562037093991fa3a3cee5a867af3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356527"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561409"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Authentification fédérée haute disponibilité, phase 5 : Configurer l’authentification fédérée pour Microsoft 365
 
@@ -45,7 +45,7 @@ Lorsque vous recevez le certificat, copiez-le dans un dossier sur le lecteur C: 
   
 ## <a name="verify-your-configuration"></a>Vérifier votre configuration
 
-Vous devez maintenant être prêt à configurer l’authentification Connecter Azure AD et l’authentification fédérée pour Microsoft 365. Pour vous en assurer, utilisez la liste de vérification suivante :
+Vous devez maintenant être prêt à configurer l’authentification fédérée et les Connecter Azure AD pour Microsoft 365. Pour vous en assurer, utilisez la liste de vérification suivante :
   
 - Le domaine public de votre organisation est ajouté à votre abonnement Microsoft 365 abonnement.
     
@@ -65,7 +65,7 @@ Voici un exemple pour l’organisation Contoso :
   
 **Exemple de configuration pour une infrastructure d'authentification fédérée haute disponibilité dans Azure**
 
-![Exemple de configuration de l’infrastructure d’authentification Microsoft 365 haute disponibilité dans Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Exemple de configuration de la haute disponibilité Microsoft 365'infrastructure d’authentification fédérée dans Azure.](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Exécutez Azure AD Connect pour configurer l’authentification fédérée
 
@@ -135,7 +135,7 @@ Voici la configuration finale, avec les noms d’espace réservé pour les serve
   
 **Phase 5 : Configuration finale d'une infrastructure d'authentification fédérée haute disponibilité dans Azure**
 
-![Configuration finale de l’infrastructure d’authentification fédérée Microsoft 365 haute disponibilité dans Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Configuration finale de la haute disponibilité de l Microsoft 365'authentification fédérée dans Azure.](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Votre infrastructure d’authentification fédérée haute disponibilité Microsoft 365 dans Azure est terminée.
   

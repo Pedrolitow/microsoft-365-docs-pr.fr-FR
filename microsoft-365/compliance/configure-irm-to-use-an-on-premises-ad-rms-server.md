@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la Gestion des droits de l’information (IRM) dans Exchange Online pour utiliser un serveur AD RMS (Active Directory Rights Management Service).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d2685994e35f88d92ab6b6854e88607cd84f153692a22f29c966e701f8d30f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 64d89d52b4e835c81ed1e2c8bbd54eaaae6f1823
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830838"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572058"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configuration de la Gestion des droits relatifs à l’information (IRM) pour utiliser un serveur AD RMS local
 
@@ -168,4 +168,4 @@ Pour vérifier que vous avez correctement importé le domaine de publication app
 
 - Exécutez la cmdlet **Test-IRMConfiguration** pour tester la fonctionnalité IRM. Pour plus d'informations, consultez « Exemple 1 » dans la rubrique [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-- Rédigez un nouveau message dans Outlook sur le web et protégez-le par IRM en sélectionnant Définir les **autorisations** dans le menu étendu (icône ![ Options ](../media/ITPro-EAC-MoreOptionsIcon.gif) supplémentaires).
+- Rédigez un nouveau message dans Outlook sur le web et protégez-le par IRM en sélectionnant Définir les **autorisations** dans le menu étendu (icône ![ Options supplémentaires). ](../media/ITPro-EAC-MoreOptionsIcon.gif)

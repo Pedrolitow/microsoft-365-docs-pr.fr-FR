@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8bfca50816f0efc3ea0c2c8fa17521d038570b839508d6fe67b5db7ba03b379b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9397eeaf9edd58903a50cf3f9194b995c56d216
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902345"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614883"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements - Gestion des menaces et des vulnérabilités
 
@@ -40,8 +40,8 @@ La chronologie des événements est un flux d’actualités sur les risques qui 
 
 La chronologie des événements indique également l’histoire de votre [score](tvm-exposure-score.md) d’exposition et du score de sécurité [Microsoft](tvm-microsoft-secure-score-devices.md) pour les appareils afin que vous pouvez déterminer la cause des modifications importantes. Les événements peuvent avoir un impact sur vos appareils ou votre score pour les appareils. Réduisez votre exposition en résribuant ce qui doit être corrigé en fonction des recommandations de sécurité [prioritaires.](tvm-security-recommendation.md)
 
->[!TIP]
->Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-event-timeline-page"></a>Accéder à la page Chronologie des événements
 
@@ -57,22 +57,22 @@ Dans le tableau Gestion des menaces et des vulnérabilités tableau de bord, poi
 
 Si aucun événement n’affecte vos appareils ou votre score pour les appareils, aucun ne s’affiche.
 
-![Score d’exposition ](images/tvm-event-timeline-exposure-score350.png) 
- ![ pointage Niveau de sécurisation Microsoft pour les appareils pointage](images/tvm-event-timeline-device-hover360.png)
+![Pointage du score d’exposition. ](images/tvm-event-timeline-exposure-score350.png) 
+ ![ Le score de sécurité Microsoft pour les appareils est survolé.](images/tvm-event-timeline-device-hover360.png)
 
 ### <a name="drill-down-to-events-from-that-day"></a>Descendre dans les événements de ce jour
 
-La sélection **d’Afficher tous** les événements de ce jour vous place sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
+Si vous **sélectionnez Afficher tous les** événements de ce jour, vous pouvez vous rendre sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
 
-![Chronologie des événements : plage de dates personnalisée sélectionnée](images/tvm-event-timeline-drilldown.png)
+![Chronologie des événements : plage de dates personnalisée sélectionnée.](images/tvm-event-timeline-drilldown.png)
 
-Sélectionnez **Plage personnalisée** pour modifier la plage de dates en une autre personnalisée ou une plage de temps pré-définie.
+Sélectionnez **Plage personnalisée** pour modifier la plage de dates en une autre plage personnalisée ou une plage de temps pré-définie.
 
-![Options de plage de dates de chronologie des événements](images/tvm-event-timeline-dates.png)
+![Options de plage de dates de chronologie des événements.](images/tvm-event-timeline-dates.png)
 
 ## <a name="event-timeline-overview"></a>Vue d’ensemble de la chronologie des événements
 
-Dans la page Chronologie des événements, vous pouvez afficher toutes les informations nécessaires relatives à un événement. 
+Dans la page Chronologie des événements, vous pouvez afficher toutes les informations nécessaires relatives à un événement.
 
 Fonctionnalités :
 
@@ -82,9 +82,9 @@ Fonctionnalités :
 
 Les deux grands nombres en haut de la page indiquent le nombre de nouvelles vulnérabilités et de vulnérabilités exploitables, et non d’événements. Certains événements peuvent avoir plusieurs vulnérabilités et d’autres peuvent avoir plusieurs événements.
 
-![Page Chronologie des événements](images/tvm-event-timeline-overview-mixed-type.png)
+![Page Chronologie des événements.](images/tvm-event-timeline-overview-mixed-type.png)
 
-### <a name="columns"></a>Columns
+### <a name="columns"></a>Colonnes
 
 - **Date**: mois, jour, année
 - **Événement**: événement impactant, y compris le composant, le type et le nombre d’appareils touchés
@@ -92,21 +92,21 @@ Les deux grands nombres en haut de la page indiquent le nombre de nouvelles vuln
 - **Appareils touchés à l’origine**: nombre et pourcentage d’appareils touchés lorsque cet événement s’est produit à l’origine. Vous pouvez également filtrer d’après le pourcentage d’appareils touchés à l’origine, par rapport au nombre total d’appareils.
 - **Appareils actuellement touchés**: nombre actuel et pourcentage d’appareils impactés par cet événement. Vous pouvez trouver ce champ en sélectionnant **Personnaliser les colonnes.**
 - **Types**: reflètent les événements horodatés qui ont un impact sur le score. Elles peuvent être filtrées.
-    - Exploit ajouté à un kit d’exploitation
-    - Exploit a été vérifié
-    - Nouvelle exploitation publique
-    - Nouvelle vulnérabilité
-    - Nouvelle évaluation de la configuration
+  - Exploit ajouté à un kit d’exploitation
+  - Exploit a été vérifié
+  - Nouvelle exploitation publique
+  - Nouvelle vulnérabilité
+  - Nouvelle évaluation de la configuration
 - **Tendance des scores :** tendance du score d’exposition
 
 ### <a name="icons"></a>Icônes
 
 Les icônes suivantes s’affiche en plus des événements :
 
-- ![icône de bogue](images/tvm-black-bug-icon.png) Nouvelle exploitation publique
-- ![icône d’avertissement de rapport](images/report-warning-icon.png) Nouvelle vulnérabilité publiée
-- ![kit exploit](images/bug-lightning-icon2.png) Exploit trouvé dans exploit kit
-- ![icône de bogue avec icône d’avertissement](images/bug-caution-icon2.png) Exploit vérifié
+- ![icône de bogue.](images/tvm-black-bug-icon.png) Nouvelle exploitation publique
+- ![icône d’avertissement de rapport.](images/report-warning-icon.png) Nouvelle vulnérabilité publiée
+- ![Exploit Kit.](images/bug-lightning-icon2.png) Exploit trouvé dans exploit kit
+- ![icône de bogue avec icône d’avertissement.](images/bug-caution-icon2.png) Exploit vérifié
 
 ### <a name="drill-down-to-a-specific-event"></a>Accès à un événement spécifique
 
@@ -114,23 +114,23 @@ Une fois que vous avez sélectionné un événement, un flyout s’affiche avec 
 
 La flèche sous « tendance de score » vous permet de déterminer si cet événement a potentiellement augmenté ou réduit le score d’exposition de votre organisation. Un score d’exposition plus élevé signifie que les appareils sont plus vulnérables à l’exploitation.
 
-![Volant de chronologie des événements](images/tvm-event-timeline-flyout500.png)
+![Volant de chronologie des événements.](images/tvm-event-timeline-flyout500.png)
 
-À partir de là, sélectionnez Go **to related security recommendation** view the recommendation that addresses the new software vulnerability in the security [recommendations page](tvm-security-recommendation.md). Après avoir lu la description et les détails de la vulnérabilité dans la recommandation de sécurité, vous pouvez envoyer une demande de correction et suivre la demande dans la [page de correction.](tvm-remediation.md)  
+À partir de là, sélectionnez Go **to related security recommendation** view the recommendation that addresses the new software vulnerability in the security [recommendations page](tvm-security-recommendation.md). Après avoir lu la description et les détails de la vulnérabilité dans la recommandation de sécurité, vous pouvez envoyer une demande de correction et suivre la demande dans la [page de correction.](tvm-remediation.md)
 
 ## <a name="view-event-timelines-in-software-pages"></a>Afficher les chronologies des événements dans les pages logicielles
 
 Pour ouvrir une page de logiciels, sélectionnez un > sélectionnez le nom du logiciel avec lien hypertexte (comme Visual Studio 2017) dans la section intitulée « Composant associé » dans le volant. [En savoir plus sur les pages logicielles](tvm-software-inventory.md#software-pages)
 
-Une page complète s’affiche avec tous les détails d’un logiciel spécifique. Pointez sur le graphique pour voir la chronologie des événements pour ce logiciel spécifique.
+Une page complète s’affiche avec tous les détails d’un logiciel spécifique. Pointez avec la souris sur le graphique pour voir la chronologie des événements pour ce logiciel spécifique.
 
-![Page de logiciels avec un graphique de chronologie des événements](images/tvm-event-timeline-software2.png)
+![Page de logiciels avec un graphique de chronologie des événements.](images/tvm-event-timeline-software2.png)
 
 Accédez à l’onglet Chronologie des événements pour afficher tous les événements liés à ce logiciel. Vous pouvez également voir les recommandations de sécurité, les vulnérabilités découvertes, les appareils installés et la distribution des versions.
 
-![Page logicielle avec un onglet Chronologie des événements](images/tvm-event-timeline-software-pages.png)
+![Page de logiciels avec un onglet Chronologie des événements.](images/tvm-event-timeline-software-pages.png)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Tableau de bord](tvm-dashboard-insights.md)
@@ -138,4 +138,3 @@ Accédez à l’onglet Chronologie des événements pour afficher tous les évé
 - [Recommandations de sécurité](tvm-security-recommendation.md)
 - [Corriger des vulnérabilités](tvm-remediation.md)
 - [Inventaire des logiciels](tvm-software-inventory.md)
-

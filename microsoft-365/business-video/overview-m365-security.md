@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les fonctionnalités de sécurité incluses dans Microsoft 365 entreprise.
-ms.openlocfilehash: 3c5348eb268373ff11b7e926f39d385451a4b2760978029484a2116885c7e9ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 686ced4c4612470d25ab3a39fdd824b576bbeab7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887766"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572106"
 ---
 # <a name="overview-of-security"></a>Vue d’ensemble de la sécurité
 
@@ -34,7 +34,7 @@ ms.locfileid: "53887766"
 
 Microsoft 365 Business Premium offre des fonctionnalités de protection contre les menaces, de protection des données et de gestion des appareils pour vous aider à protéger votre entreprise contre les menaces en ligne et l’accès non autorisé, ainsi qu’à protéger et gérer les données d’entreprise sur vos téléphones, tablettes et ordinateurs.
 
-|![Protection contre les menaces](../media/m365-business-security-threat-protection.png)<br/>[Protection contre les menaces](#threat-protection)|![Collaborer avec un client](../media/m365-business-security-data-protection.png) <br/>[Protection des données](#data-protection) | ![Gestion des appareils](../media/m365-business-security-device-management.png) <br/>[Gestion des appareils](#device-management) |
+|![Protection contre les menaces.](../media/m365-business-security-threat-protection.png)<br/>[Protection contre les menaces](#threat-protection)|![Collaborer avec un client](../media/m365-business-security-data-protection.png) <br/>[Protection des données](#data-protection) | ![Gestion des périphériques](../media/m365-business-security-device-management.png) <br/>[Gestion des appareils](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>Protection contre les menaces
@@ -49,13 +49,13 @@ Microsoft 365 Business Premium inclut Office 365 protection avancée contre les 
 
 Les fonctionnalités de protection des Microsoft 365 Business Premium permettent de s’assurer que les données importantes restent sécurisées et que seules les personnes autorisées y ont accès.
 
-Vous pouvez utiliser des stratégies de protection contre la perte de données [(DLP)](set-up-dlp.md) pour identifier et gérer des informations sensibles, telles que des numéros de sécurité sociale ou de carte de crédit, afin qu’elles ne sont pas partagées par erreur.
+Vous pouvez utiliser des stratégies de protection contre la perte de données [(DLP)](set-up-dlp.md) pour identifier et gérer des informations sensibles, telles que des numéros de sécurité sociale ou de carte de crédit, afin de ne pas les partager par erreur.
 
 [chiffrement de messages Office 365](/microsoft-365/compliance/ome) combine les fonctionnalités de chiffrement et de droits d’accès pour s’assurer que seuls les destinataires prévus peuvent afficher le contenu des messages. chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo!, Gmail et d’autres services de messagerie.
 
 [Archivage Exchange Online](/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description) est une solution d’archivage informatique qui fonctionne avec Microsoft Exchange ou Exchange Online pour fournir des fonctionnalités d’archivage avancées, notamment des archives et la redondance des données. Vous pouvez utiliser des stratégies de rétention pour aider votre organisation à réduire les responsabilités associées à la messagerie électronique et à d’autres communications. Si votre entreprise est tenue de conserver les communications liées à un litige, vous pouvez utiliser les conservations In-Place et les conservations pour litige pour conserver les e-mails associés.
 
-## <a name="device-management"></a>Gestion des appareils
+## <a name="device-management"></a>Gestion des périphériques
 
 Microsoft 365 Business Premium fonctionnalités avancées de gestion des appareils vous permet de surveiller et de contrôler ce que les utilisateurs peuvent faire avec les appareils inscrits. Ces fonctionnalités incluent l’accès conditionnel, la gestion des périphériques mobiles [(MDM),](/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices)BitLocker et les mises à jour automatiques.
 

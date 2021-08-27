@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: efb44f098bb18ee25bfc39b2b1c46faa057faa5e7996b24a22af89277e135742
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 786878e827fed6318a70501e400a719ad9181835
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860682"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561445"
 ---
 # <a name="insider-risk-management-notice-templates"></a>Modèles de notifications sur la gestion des risques internes
 
@@ -29,7 +29,7 @@ Créez des modèles d’avis si vous souhaitez envoyer aux utilisateurs un avis 
 
 Le **Tableau de bord modèles de notifications** affiche une liste de modèles de notifications configurés et vous permet de créer des modèles de notifications. Les modèles de notifications sont répertoriés à l’aide du modèle de notifications le plus récent répertorié en premier.
 
-![Tableau de bord du modèle de notification de gestion des risques internes](../media/insider-risk-notices-dashboard.png)
+![Tableau de bord du modèle de notification de gestion des risques internes.](../media/insider-risk-notices-dashboard.png)
 
 ## <a name="html-for-notices"></a>HTML pour les notifications
 
@@ -53,11 +53,11 @@ Si vous souhaitez créer plus qu’un simple message électronique texte pour le
 
 ## <a name="create-a-new-notice-template"></a>Créer un modèle d’avis
 
-Pour créer un modèle de notification de gestion des risques internes, vous utiliserez l’Assistant Notification dans la **solution** de gestion des risques internes dans le Centre de conformité Microsoft 365.
+Pour créer un modèle de notification de gestion des risques internes, vous utiliserez l’Assistant Notification dans la **solution** de gestion des risques internes dans le Centre de conformité Microsoft 365.
 
 Pour créer un modèle d’avis de gestion des risques internes, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez l’onglet **Modèles d’avis** sur la gestion des risques internes. 
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez l’onglet **Modèles d’avis** sur la gestion des risques internes. 
 2. Sélectionnez **Créer un modèle de notification** pour ouvrir l’Assistant Notification.
 3. Dans la page **Créer un modèle d’avis,** complétez les champs suivants :
     - **Nom du modèle**: entrez un nom convivial pour l’avis. Ce nom apparaît dans la liste des notifications dans le tableau de bord de notification et dans la liste de sélection des notifications lors de l’envoi d’avis à partir d’un cas.
@@ -71,7 +71,7 @@ Pour créer un modèle d’avis de gestion des risques internes, complétez les 
 
 Pour mettre à jour un modèle de notification de gestion des risques internes existant, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez l’onglet **Modèles d’avis** sur la gestion des risques internes. 
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez l’onglet **Modèles d’avis** sur la gestion des risques internes. 
 2. Dans le tableau de bord de notification, sélectionnez le modèle de notification que vous souhaitez gérer.
 3. Dans la page Détails de l’avis, sélectionnez **Modifier**
 4. Dans la page **Modifier,** vous pouvez modifier les champs suivants :
@@ -86,7 +86,7 @@ Pour mettre à jour un modèle de notification de gestion des risques internes e
 
 Pour supprimer un modèle de notification de gestion des risques internes existant, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez l’onglet **Modèles d’avis** sur la gestion des risques internes. 
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez l’onglet **Modèles d’avis** sur la gestion des risques internes. 
 2. Dans le tableau de bord de notification, sélectionnez le modèle de notification à supprimer.
 3. Sélectionnez **l’icône** Supprimer dans la barre d’outils.
 4. Pour supprimer le modèle d’avis, sélectionnez **Oui** dans la boîte de dialogue de suppression. Pour annuler la suppression, sélectionnez **Annuler**.

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12c7b68ba6de7accd8a6f5c2ae15a48f29b23230
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 6029fbb2f00cde1346dc2661486ae494015a753f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372435"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572130"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux avec l’ment
 
@@ -57,7 +57,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![capture d’écran Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defender capture d’écran du portail.](images/portal-onboarding-linux-2.png)
 
 4. À partir d’une invite de commandes, vérifiez que vous avez le fichier. 
 
@@ -232,7 +232,7 @@ Si le produit n’est pas sain, le code de sortie (qui peut être `echo $?` vér
 - 1 si l’appareil n’est pas encore intégré.
 - 3 si la connexion au daemon ne peut pas être établie.
 
-## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
+## <a name="log-installation-issues"></a>Journal des problèmes d’installation
 
  Pour plus d’informations sur la recherche du journal généré automatiquement créé par le programme d’installation lorsqu’une erreur se produit, voir Problèmes [d’installation du journal.](linux-resources.md#log-installation-issues)
 
