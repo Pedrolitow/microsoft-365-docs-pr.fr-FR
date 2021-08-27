@@ -1,5 +1,5 @@
 ---
-title: Passer en revue les exigences d’architecture et les concepts clés de Microsoft Defender pour l’architecture des points de terminaison
+title: Passer en revue les exigences en matière d’architecture de point de terminaison et les concepts clés de Microsoft Defender
 description: Le diagramme technique de Microsoft Defender pour endpoint dans Microsoft 365 Defender vous aidera à comprendre l’identité dans Microsoft 365 avant de créer votre laboratoire d’évaluation ou votre environnement pilote.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6e99917ad535fb639edcd92a76c5e59dc0d3040c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 01e7c83a797930ed0137aeb864f22485f1cc581d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254551"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548653"
 ---
-# <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Passer en revue les exigences d’architecture et les concepts clés de Microsoft Defender pour l’architecture des points de terminaison
+# <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Passer en revue les exigences en matière d’architecture de point de terminaison et les concepts clés de Microsoft Defender
 
 **S’applique à :** Microsoft 365 Defender
 
@@ -36,13 +36,13 @@ Cet article vous guide dans le processus de configuration de l’évaluation de 
 
 Pour plus d’informations sur ce processus, voir [l’article de présentation.](eval-defender-endpoint-overview.md)
 
-Avant d’activer Microsoft Defender pour endpoint, veillez à bien comprendre l’architecture et à répondre aux exigences.
+Avant d’activer Microsoft Defender pour le point de terminaison, veillez à bien comprendre l’architecture et à répondre aux exigences.
 
 ## <a name="understand-the-architecture"></a>Comprendre l’architecture
 
 Le diagramme suivant illustre l’architecture et les intégrations de Microsoft Defender pour les points de terminaison. 
 
-![Étapes de l’ajout de Microsoft Defender pour Office à l’environnement d’évaluation Defender](../../media/defender/m365-defender-endpoint-architecture.png)
+![Étapes de l’ajout de Microsoft Defender Office à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-endpoint-architecture.png)
 
 Le tableau suivant décrit l’illustration.
 
@@ -60,7 +60,7 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 
 Concept | Description | Plus d’informations
 :---|:---|:---|
-Portail d’administration | Microsoft 365 Defender portail pour surveiller et aider à répondre aux alertes d’activité de menaces persistantes potentielles ou de violations de données. | [Vue d’ensemble du portail Microsoft Defender pour points de terminaison](/microsoft-365/security/defender-endpoint/portal-overview)
+Portail d’administration | Microsoft 365 Defender portail pour surveiller et aider à répondre aux alertes d’activité de menaces avancées persistantes ou de violations de données. | [Vue d’ensemble du portail Microsoft Defender pour points de terminaison](/microsoft-365/security/defender-endpoint/portal-overview)
 Réduction de la surface d’attaque | Réduisez vos surfaces d’attaque en réduisant les endroits où votre organisation est vulnérable aux cybermenaces et aux attaques. | [Vue d’ensemble de la réduction de la surface d'attaque](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
 Détection et réponse des points de terminaison | Les fonctionnalités de détection et de réponse des points de terminaison fournissent des détections d’attaques avancées quasiment en temps réel et actionnables. | [Vue d’ensemble protection évolutive des points de terminaison fonctionnalités de gestion](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 Blocage et blocage du comportement | Les fonctionnalités de blocage comportemental et de contenu peuvent aider à identifier et à arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. | [Blocage et confinement comportementaux](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)

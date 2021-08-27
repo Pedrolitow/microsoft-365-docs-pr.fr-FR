@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ff686860455279218b55fa871327a87fe1ce3e411f3aa7cab83e2ddba00978e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f4cfd4cb55d6a89acf8f78d60006851c14e603f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888230"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548629"
 ---
 # <a name="test-base-faq"></a>Test Base FAQ
 
@@ -47,11 +47,11 @@ Les tests OOB (Out-of-Box) vous fournissent une télémétrie normalisée sur vo
 
 ## <a name="testing"></a>Tests
 
-**Q : Prise en charge des tests fonctionnels ?**
+**Q : Les tests fonctionnels sont-ils nécessaires ?**
 
 **R :** Oui, la base de test prend en charge les tests fonctionnels. Les tests fonctionnels sont des tests qui permettent à nos clients d’exécuter leurs scripts pour exécuter des fonctionnalités personnalisées sur leur application. 
 
-Pour soumettre votre package d’application à des tests fonctionnels, téléchargez simplement le dossier compressé contenant les fichiers binaires, les dépendances et les scripts de test de votre application via notre tableau de bord du portail libre-service. 
+Pour soumettre votre package d’application à des tests fonctionnels, téléchargez simplement le dossier compressé contenant les fichiers binaires, les dépendances et les scripts de test de votre application via notre tableau de bord de portail libre-service. 
 
 Consultez le guide de l’utilisateur d’intégration pour plus d’informations ou contactez notre équipe pour obtenir de <testbasepreview@microsoft.com> l’aide et plus d’informations.
 
@@ -67,7 +67,7 @@ Consultez le guide de l’utilisateur d’intégration pour plus d’information
 
 **R :** Nous supportons toutes les langues et toutes les infrastructure. Nous appelons tous les scripts via PowerShell. 
 
-Vous devrez également fournir (télécharger) les fichiers binaires dépendants de l’infrastructure requise.
+Vous devez également fournir (télécharger) les fichiers binaires dépendants de l’infrastructure requise.
 
 **Q : À combien de temps la Base de test fournit-elle les résultats des tests ?**
 
@@ -79,15 +79,15 @@ Vous devrez également fournir (télécharger) les fichiers binaires dépendants
 
 Pour les tests OOB (Out-of-Box), vous pouvez spécifier si un redémarrage est nécessaire pour le _script d’installation._
 
-![Image de redémarrage](Media/reboot.png)
+![Redémarrez l’image.](Media/reboot.png)
 
 Pour les tests fonctionnels, vous pouvez spécifier si un redémarrage est requis pour chaque script ajouté.
 
-![Comment sélectionner des tests fonctionnels](Media/functionalreboot.png)
+![Comment sélectionner des tests fonctionnels.](Media/functionalreboot.png)
 
 **Q : Quelles versions Windows-vous prise en charge ?**
 
-**R :** Nous prise en charge actuellement Windows 10 clients, Windows Server 2016, Windows Server 2016 Version principale, Windows Server 2019 et Windows Server 2019 Core.
+**R :** Nous ons actuellement Windows 10 clients, Windows Server 2016, Windows Server 2016 Core version, Windows Server 2019 et Windows Server 2019 Core.
 
 **Q : Quelle est la différence entre les tests de mise à jour de sécurité et les tests de mise à jour des fonctionnalités ?**
 
@@ -107,7 +107,7 @@ Nous pouvons également fournir des vidages mémoire pour le débogage sur incid
 
 Nous travaillons toujours en étroite collaboration avec nos clients pour résoudre les problèmes. 
 
-**Q : Microsoft tient-il la publication du correctif de sécurité jusqu’à ce que le problème soit résolu ? Quelles autres résolutions sont disponibles ?**
+**Q : Microsoft tient-il la publication du correctif de sécurité jusqu’à ce que le problème soit résolu ? Quelles résolutions alternatives sont disponibles ?**
 
 **R :** L’objectif de la base de test est de s’assurer que nos clients finaux conjoints ne rencontrent aucun problème. Nous travaillerons en dur avec les éditeurs de logiciels pour résoudre les problèmes avant la publication, mais au cas où le correctif ne serait pas réalisable, nous avons d’autres résolutions telles que les shims et les blocs.
 
@@ -123,7 +123,7 @@ Nous travaillons toujours en étroite collaboration avec nos clients pour résou
 
 **Q : Ce service prend-il en charge les applications web, mobiles ou de bureau ?**
 
-**R :** Pour l’instant, nous nous concentrons sur les applications de bureau. Toutefois, nous envisageons d’intégrer des applications web à l’avenir, mais nous ne prisent pas en charge les applications mobiles pour le moment.
+**R :** Pour l’instant, nous nous concentrons sur les applications de bureau, mais nous envisageons d’intégrer des applications web à l’avenir, mais nous ne prisent pas en charge les applications mobiles pour le moment.
 
 **Q : Quelle est la différence entre Test Base et LAPX ?**
 
