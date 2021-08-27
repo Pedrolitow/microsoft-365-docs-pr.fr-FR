@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les menaces de sécurité qui pèsent sur votre entreprise et les moyens faciles dont vous et vos employés pouvez protéger vos données, vos comptes et vos appareils.
-ms.openlocfilehash: 537630b551777e1eedf254de82c11e2286326ccf8973319245cacd5a7da80359
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f5b31fe2056e95ae4477480ac16e80222beeb565
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822609"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566903"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>Graphique d’informations de sécurité pour les petites entreprises
 
@@ -30,6 +30,6 @@ ms.locfileid: "53822609"
 
 Les liens pour PowerPoint et PDF ci-dessous peuvent être téléchargés et imprimés au format tabloïd (également appelé format format ledger, 11 x 17 ou A3).
 
-![Image pour sécuriser votre graphique d’informations sur les petites entreprises](../media/smbthreatprotectioninfographic-thumbnail.png)
+![Image pour sécuriser votre graphique d’informations sur les petites entreprises.](../media/smbthreatprotectioninfographic-thumbnail.png)
 
 [PDF](downloads/smbthreatprotection-infographic.pdf)  |  [PowerPoint](downloads/smbthreatprotection-infographic.pptx)

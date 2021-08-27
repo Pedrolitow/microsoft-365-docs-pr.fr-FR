@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Détails de la collaboration de contenu : les utilisateurs peuvent obtenir un score de productivité.'
-ms.openlocfilehash: 13bee74b901bef4a4d4086e5cbed97a1bdddbabb145acaee5e68af9f5fdac010
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa4e84f0cf454e28cd773292f2a4065cb1252acf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823269"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566927"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaboration de contenu : expériences de personnes
 
 Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie de collaboration de contenu fait partie des mesures de l’expérience utilisateur. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Pour commencer à obtenir des informations sur la collaboration de contenu, les membres de votre organisation doivent être titulaires d’une licence pour :
 
@@ -110,7 +110,7 @@ Nous vous fournissons également des informations qui vous aident à gagner en v
 
 ### <a name="creating-files-in-onedrive-or-sharepoint"></a>Création de fichiers dans OneDrive ou SharePoint
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Graphique shows number of people who create files in OneDrive or SharePoint":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Graphique shows number of people who create files in OneDrive or SharePoint.":::
 
 1. **En-tête :** Met en évidence le pourcentage de personnes actives sur Microsoft 365 Office applications qui créent des fichiers sur OneDrive ou SharePoint.
 2. **Corps :** Fournit des informations sur la valeur de la création de contenu dans OneDrive et SharePoint.
@@ -151,7 +151,7 @@ Nous vous fournissons également des informations qui vous aident à gagner en v
       - **En externe :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes qui ont accès à OneDrive ou SharePoint et partagent des fichiers en externe.
         -  Numérateur : nombre de personnes avec qui des fichiers ont été partagés en externe au cours des 28 derniers jours
         - Dénominateur : nombre total de personnes ayant eu accès à OneDrive ou SharePoint au moins 1 des 28 derniers jours.
-      - **En interne uniquement :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes ayant accès à OneDrive ou SharePoint et qui partagent des fichiers en interne uniquement.
+      - **En interne uniquement :** La partie bleue (couleur) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes qui ont accès à OneDrive ou SharePoint et partagent des fichiers en interne uniquement.
         - Numérateur : nombre de personnes qui ont partagé des fichiers en interne uniquement au cours des 28 derniers jours
         - Dénominateur : nombre total de personnes ayant eu accès à OneDrive ou SharePoint au moins 1 des 28 derniers jours.
 4. **Lien vers des ressources :** Sélectionnez ce lien pour afficher le contenu de l’aide.
@@ -191,7 +191,7 @@ Nous vous fournissons également des informations qui vous aident à gagner en v
       - **21-40**: la partie rouge (colorée) de la barre représente le pourcentage d’appareils avec un score de performances réseau entre 20 et 40. 
       - **0-20**: la partie rouge foncé (couleur) de la barre représente le pourcentage d’appareils avec le pire score de performances réseau entre 0 et 20. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\

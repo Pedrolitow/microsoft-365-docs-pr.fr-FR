@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur , tels que l’administrateur de service, correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 3678a6221fc62a895bc7d2fbd97befe5a5aa6cb2
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 42c28d230cef36f7f6e0421cc46f64a53222eca8
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393351"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585607"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -39,7 +39,7 @@ Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">C
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous recherchez la liste complète des descriptions de rôle Azure AD détaillées que vous pouvez gérer dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d’administration Microsoft 365</a>? Consultez la page Autorisations des rôles d’administrateur dans Azure Active Directory. [Autorisations des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Vous recherchez la liste complète des descriptions de rôle Azure AD détaillées que vous pouvez gérer dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d’administration Microsoft 365</a>? Consultez la page Autorisations des rôles d’administrateur dans Azure Active Directory. [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).
 
 Vous recherchez la liste complète des descriptions de rôle Intune détaillées que vous pouvez gérer dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d’administration Microsoft 365</a>?  Consultez la page [Contrôle d’accès basé sur un rôle dans Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
@@ -65,7 +65,7 @@ Si vous recevez un message dans le centre d’administration vous indiquant que 
 
 Dans le centre d'administration de Microsoft 365, vous pouvez accéder aux <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**affectations de rôles**</a>, puis sélectionner un rôle pour ouvrir son volet détaillé. Sélectionnez l’onglet **Autorisations** pour afficher la liste détaillée des autorisations attribuées à ce rôle d'administrateur. Sélectionnez l’onglet **Attribué** ou **Administrateurs affectés** pour ajouter des utilisateurs aux rôles.
 
-Vous devrez probablement attribuer les rôles suivants au sein de votre organisation. Par défaut, les rôles les plus utilisés par les organisations s'affichent en premier. Si le rôle recherché est introuvable, accédez au bas de la liste et sélectionnez **Afficher tout par catégorie**. (pour plus d’informations, notamment sur les applets de commande associées à un rôle, voir les [Autorisations de rôle d'administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)).
+Vous devrez probablement attribuer les rôles suivants au sein de votre organisation. Par défaut, les rôles les plus utilisés par les organisations s'affichent en premier. Si le rôle recherché est introuvable, accédez au bas de la liste et sélectionnez **Afficher tout par catégorie**. (pour plus d’informations, notamment sur les applets de commande associées à un rôle, voir les [Autorisations de rôle d'administrateur dans Azure Active Directory](/azure/active-directory/roles/permissions-reference)).
 
 |Rôle d’administrateur     |À qui doit être affecté ce rôle ?  |
 |---------|---------|

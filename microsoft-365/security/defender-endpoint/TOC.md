@@ -600,7 +600,7 @@
 ####### [Répertorier les ordinateurs par vulnérabilité](get-machines-by-vulnerability.md)
 
 ##### [Utilisation des API : exemples]()
-###### [Microsoft Flow](api-microsoft-flow.md)
+###### [Power Automate](api-microsoft-flow.md)
 ###### [Power BI](api-power-bi.md)
 ###### [Repérage avancé à l’aide de Python](run-advanced-query-sample-python.md)
 ###### [Repérage avancé à l’aide de PowerShell](run-advanced-query-sample-powershell.md)

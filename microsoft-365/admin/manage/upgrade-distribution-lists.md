@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers Microsoft 365 Groupes dans Outlook et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: 6e836ef0d80668a59e8dee6eb06c1d52af55a758c9df0b79c5d0e1422de07b3f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 298d349fcf0874dd4c2dbd85ff19101e40988aba
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824462"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566963"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Améliorer les listes de distribution vers les groupes Microsoft 365 dans Outlook
 
@@ -52,19 +52,19 @@ Vous devez être administrateur global ou administrateur Exchange pour mettre à
 > [!NOTE]
 > Une bannière en haut indique que la mise à niveau, par exemple, les groupes *de distribution ont été mis à niveau. La réflexion des modifications prend 5 minutes. Filtrez par Microsoft 365 pour voir les groupes de distrubtion* mis à niveau.
 
-### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Utiliser le CENTRE D’EAC classique pour mettre à niveau un ou plusieurs groupes de listes de distribution vers Microsoft 365 groupes dans Outlook
+### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Utiliser le CENTRE D’EAC classique pour mettre à niveau un ou plusieurs groupes de listes de distribution Microsoft 365 groupes dans Outlook
 
 1. Go to the Classic <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
-2. Dans le Centre d’administration Exchange classique, allez à **Groupes de** \> **destinataires.**<br/>Vous verrez un avis indiquant que vous avez des listes de distribution (également appelées groupes de **distribution)** qui peuvent être mises à niveau vers Microsoft 365 groupes.<br/> ![Sélectionner le bouton Commencer](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. Dans le Centre d’administration Exchange classique, allez à **Groupes de** \> **destinataires.**<br/>Vous verrez un avis indiquant que vous avez des listes de distribution (également appelées groupes de **distribution)** qui peuvent être mises à niveau vers Microsoft 365 groupes.<br/> ![Sélectionnez le bouton Démarrer.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-3. Sélectionnez une ou plusieurs listes de distribution (également appelées groupe de **distribution)** dans la page **des groupes.**<br/>![Sélectionner un groupe de distribution](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+3. Sélectionnez une ou plusieurs listes de distribution (également appelées groupe de **distribution)** dans la page **des groupes.**<br/>![Sélectionnez un groupe de distribution.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. Sélectionnez l’icône de mise à niveau.<br/>![Icône Mise à niveau vers Microsoft 365 groupes](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. Sélectionnez l’icône de mise à niveau.<br/>![Mettre à niveau vers Microsoft 365'icône Groupes.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-5. Dans la boîte de dialogue d’informations, **sélectionnez Oui** pour confirmer la mise à niveau. Le processus commence immédiatement. Selon la taille et le nombre de DLs que vous êtes en train de mettre à niveau, le processus peut prendre des minutes ou des heures.<br/>Si la liste de distribution ne peut pas être mise à niveau, une boîte de dialogue s’affiche. Voir [quelles listes de distribution ne peuvent pas être mises à niveau ?](#which-distribution-lists-cant-be-upgraded).
+5. Dans la boîte de dialogue d’informations, **sélectionnez Oui** pour confirmer la mise à niveau. Le processus commence immédiatement. Selon la taille et le nombre de DLs que vous êtes en train de mettre à niveau, le processus peut prendre des minutes ou des heures.<br/>Si la liste de distribution ne peut pas être mise à niveau, une boîte de dialogue s’affiche. Voir [quelles listes de distribution ne peuvent pas être mises à niveau ?](#which-distribution-lists-cant-be-upgraded)
 
-6. Si vous êtes en train de mettre à niveau plusieurs listes de distribution, utilisez la liste de listes listes pour filtrer les listes de distribution qui ont été mises à niveau. Si la liste n’est pas terminée, patientez un peu plus longtemps, puis sélectionnez **Actualiser** pour voir ce qui a été correctement mis à niveau.<br/>Aucun avis ne vous indique à quel moment le processus de mise à niveau est terminé pour toutes les DL que vous avez sélectionnées. Vous pouvez le comprendre en cherchant à voir ce qui est répertorié sous **Disponible** pour la mise à niveau ou les **DLs mises à niveau.**
+6. Si vous êtes en train de mettre à niveau plusieurs listes de distribution, utilisez la liste de listes listes pour filtrer les listes de distribution qui ont été mises à niveau. Si la liste n’est pas terminée, patientez un peu plus longtemps, puis sélectionnez **Actualiser** pour voir ce qui a été correctement mis à niveau.<br/>Aucun avis ne vous indique à quel moment le processus de mise à niveau est terminé pour toutes les DL que vous avez sélectionnées. Vous pouvez le comprendre en cherchant à voir ce qui est répertorié sous **Disponible** pour la mise à niveau ou les **DL mises à niveau.**
 
 7. Si vous avez sélectionné une DL pour la mise à niveau, mais qu’elle apparaît toujours sur la page comme disponible pour la mise à niveau, elle n’a pas réussi à mettre à niveau. Voir [que faire si la mise à niveau ne fonctionne pas](#what-to-do-if-the-upgrade-doesnt-work).
 
@@ -140,7 +140,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="which-distribution-lists-cant-be-upgraded"></a>Quelles listes de distribution ne peuvent pas être mises à niveau ?
 
-Vous pouvez uniquement mettre à niveau des listes de distribution gérées dans le cloud, simples et non imbrmbrées. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent** pas être mises à niveau.
+Vous pouvez uniquement mettre à niveau des listes de distribution non imbrique, simples et gérées dans le cloud. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent** pas être mises à niveau.
 
 |**Property**|**Éligible ?**|
 |:-----|:-----|
@@ -190,9 +190,9 @@ Dans certains cas, la DL est éligible mais n’a pas pu être mise à niveau. L
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>Qu’advient-il de la DL en cas d’échec de la mise à niveau à partir du EAC ?
 
-La mise à niveau se produit uniquement lorsque l’appel est soumis au serveur. Si la mise à niveau échoue, vos DL sont intactes. Ils fonctionneront comme avant.
+La mise à niveau se produit uniquement lorsque l’appel est soumis au serveur. Si la mise à niveau échoue, vos DL sont intactes. Ils fonctionnent comme avant.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Comparer les groupes](../create-groups/compare-groups.md) (article)\
 [Expliquer Microsoft 365 groupes à vos utilisateurs](../create-groups/explain-groups-knowledge-worker.md) (article)\

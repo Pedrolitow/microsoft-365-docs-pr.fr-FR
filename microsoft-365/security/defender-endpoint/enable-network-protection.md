@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 480500484948beb1423cea0640c8c01a00252190
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 15cd59e2d0291a713de142f303bb9934ec1c06d8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594185"
+ms.locfileid: "58550213"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -44,7 +44,7 @@ Vérifiez si la protection réseau a été activée sur un appareil local à l�
 
 2. Choisir **HKEY_LOCAL_MACHINE** dans le menu latéral
 
-3. Naviguez dans les menus imbrmbrés pour accéder aux stratégies **LOGICIELLEs** \>  \> **Microsoft** \>  \> **Windows Defender Windows Defender Exploit Guard** Network \> **Protection**
+3. Naviguez dans les menus imbrmbrés pour accéder aux stratégies **LOGICIELLEs**  >    >  **Microsoft**  >    >  **Windows Defender Windows Defender Exploit Guard** Network  >  **Protection**
 
 4. Sélectionnez **EnableNetworkProtection pour** voir l’état actuel de la protection réseau sur l’appareil
 
@@ -90,7 +90,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 2. Créer ou modifier un profil [de configuration de la protection des points de terminaison](/mem/intune/protect/endpoint-protection-configure)
 
-3. Sous **Configuration Paramètres** dans le flux de  profil, Protection contre les attaques Microsoft Defender Protection réseau de filtrage réseau \>  \>  \> **Activer** ou **Auditer uniquement**
+3. Sous **Configuration Paramètres** dans le flux de profil, Protection contre les attaques Microsoft Defender Protection réseau de filtrage réseau  >    >    >  **Activer** ou **Auditer uniquement**
 
 ### <a name="group-policy"></a>Stratégie de groupe
 
@@ -104,7 +104,7 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **Windows Defender Exploit Guard** Network \> **Protection**.
+3. Développez l’arborescence **Windows composants**  >  **Antivirus Microsoft Defender**  >  **Windows Defender Exploit Guard** Network  >  **Protection**.
 
    > [!NOTE]
    > Sur les versions antérieures Windows, le chemin d’accès de la stratégie de groupe peut dire « Antivirus Windows Defender » au lieu de « Antivirus Microsoft Defender ».
@@ -119,7 +119,7 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
 
 Confirmez que la protection réseau est activée sur un ordinateur local à l’aide de l’éditeur du Registre :
 
-1. Sélectionnez **Démarrer** et **tapez regedit** pour ouvrir **l’Éditeur du Registre.**
+1. Sélectionnez **Démarrer** et tapez **regedit** pour ouvrir **l’Éditeur du Registre.**
 
 2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
@@ -132,7 +132,7 @@ Confirmez que la protection réseau est activée sur un ordinateur local à l’
 
 - [Protection du réseau](network-protection.md)
 
-- [Protection du réseau et protocole d’handshake triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+- [Protection du réseau et protocole d’auto-transport TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 
 - [Évaluer la protection du réseau](evaluate-network-protection.md)
 

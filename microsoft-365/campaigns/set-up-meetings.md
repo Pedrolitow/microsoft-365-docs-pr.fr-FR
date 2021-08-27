@@ -25,18 +25,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer des réunions en ligne avec Microsoft Teams.
-ms.openlocfilehash: a1b11429aaf43e913d9f2def902e73299e68c6e295a04bc19f7f995db1d5d823
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 40858f43794736a6b2a9696b84409ca376ed8706
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866970"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567095"
 ---
 # <a name="set-up-meetings"></a>Organiser des réunions
 
 Les réunions dans Microsoft Teams incluent l’audio, la vidéo et le partage. Et comme ils sont en ligne, vous aurez toujours un espace de réunion (sans avoir besoin d’une salle ou d’un projecteur !), même si votre personnel est distribué géographiquement ou travaille à distance. Microsoft Teams réunions sont un excellent moyen de collaborer avec votre personnel à l’intérieur et à l’extérieur de votre organisation. Vous n’avez pas besoin d’être membre de votre organisation ou même d’avoir un compte pour participer à une réunion. Vous pouvez planifier et exécuter des réunions en ligne à l’aide Microsoft Teams. Au cours d’une réunion, vous pouvez partager votre écran, partager des fichiers, affecter des tâches, etc. Les campagnes électorales peuvent inclure du personnel, des volontaires et des invités extérieurs à votre organisation dans la réunion. Les petites entreprises ou pratiques peuvent rencontrer leurs employés ou des clients ou des partenaires Microsoft Teams.
 
-[![Illustration de deux utilisateurs dans une réunion](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![Illustration de deux utilisateurs dans une réunion.](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 Téléchargez une infographie au [format PDF](https://go.microsoft.com/fwlink/?linkid=2078712) ou [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) pour obtenir une vue d’ensemble rapide de la façon de rejoindre ou d’héberger une réunion en ligne avec Microsoft Teams.
 

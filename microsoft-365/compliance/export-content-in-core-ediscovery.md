@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Décrit comment exporter et télécharger du contenu à partir d’un cas core eDiscovery dans Microsoft 365.
-ms.openlocfilehash: c74cf79ffc5defe495ed03ac45182dbd8e36582418879d6cf367242b96095eb9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 68535f8623b26aa4f2b30dc88362f4550c256162
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850818"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567023"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Exporter le contenu à partir d'une affaire d' eDiscovery de base
 
@@ -32,15 +32,15 @@ Une fois qu’une recherche associée à un cas core eDiscovery a été correcte
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
+2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
 
-3. Dans la page **Core eDiscovery,** cliquez sur le nom du cas où vous souhaitez créer la attente.
+3. Dans la page **Core eDiscovery,** cliquez sur le nom du cas dans qui vous souhaitez créer la attente.
 
 4. Dans la page **d’accueil** du cas, cliquez sur **l’onglet Recherches.**
 
 5. Dans le menu **Actions** en bas de la page volante, cliquez sur **Exporter les résultats.**
 
-   ![Option Exporter les résultats dans le menu Actions](../media/ActionMenuExportResults.png)
+   ![Option Exporter les résultats dans le menu Actions.](../media/ActionMenuExportResults.png)
 
    Le flux de travail pour exporter les résultats d’une recherche associée à un cas core eDiscovery est identique à l’exportation des résultats de recherche pour une recherche sur la page de recherche **de** contenu. Pour obtenir des instructions détaillées, voir Exporter les résultats [de recherche de contenu.](export-search-results.md)
 
@@ -51,13 +51,13 @@ Une fois qu’une recherche associée à un cas core eDiscovery a été correcte
   
 6. Cliquez sur **l’onglet Exports** dans le cas pour afficher la liste des travaux d’exportation.
   
-   ![Exporter des travaux sous l’onglet Exportation dans le cas core eDiscovery](../media/CoreeDiscoveryExport.png)
+   ![Exporter des travaux sous l’onglet Exportation dans le cas core eDiscovery.](../media/CoreeDiscoveryExport.png)
 
    Vous de devez peut-être cliquer sur **Actualiser** pour mettre à jour la liste des tâches d’exportation afin qu’elle affiche la tâche d’exportation que vous avez créée. Les travaux d’exportation ont le même nom que la recherche correspondante avec **_Export** au nom de recherche.
 
 7. Cliquez sur la tâche d’exportation que vous avez créée pour afficher les informations d’état sur la page volante. Ces informations incluent le pourcentage d’éléments qui ont été transférés vers stockage Azure’emplacement.
 
-8. Une fois tous les éléments transférés, cliquez sur **Télécharger** les résultats pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d’informations sur le téléchargement des résultats de recherche, voir l’étape 2 de [l’exportation des](export-search-results.md#step-2-download-the-search-results) résultats de recherche de contenu
+8. Une fois tous les éléments transférés, cliquez sur **Télécharger** les résultats pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d’informations sur le téléchargement des résultats de recherche, voir l’étape 2 de [l’exportation des résultats de recherche de contenu](export-search-results.md#step-2-download-the-search-results)
 
 ### <a name="more-information-about-exporting-searches-from-a-case"></a>Plus d’informations sur l’exportation de recherches à partir d’un cas
 

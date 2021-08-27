@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 787fd55e9ad17607cfa0fa5f787a279bb0e2d1839d2029b9a7ec6a4bb5f1b65a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 954fa4d9879e9654847f50ad15f8ff3c3a88caf4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838958"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573862"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Étape 2. Corriger votre premier incident
 
@@ -68,7 +68,7 @@ En continuant l’exemple dans Détecter, trier et analyser les [incidents,](fir
 7. Créer un indicateur personnalisé dans Microsoft Defender pour le point de terminaison pour bloquer une adresse IP tor
 8. Créez une action de gouvernance dans Microsoft Cloud App Security pour ce type d’alerte, comme ceux illustrés dans l’image suivante :
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Exemple d’actions de gouvernance dans le portail Microsoft Cloud App Security web"::: 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Exemple d’actions de gouvernance dans Microsoft Cloud App Security portail."::: 
  
 La plupart des actions de correction peuvent être appliquées et suivis dans Microsoft 365 Defender. 
 
@@ -85,13 +85,13 @@ Les playbooks utilisent Power Automate créer des flux d’automatisation de pro
 
 Voici un exemple.
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Exemple de flux d’automatisation Power Automate processus de robotisation personnalisé"::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Exemple de flux d Power Automate processus automatisé personnalisé."::: 
  
 Les playbooks peuvent également être créés lors de la révision [post-incident](first-incident-post.md) pour créer des actions de correction à partir d’incidents afin d’accélérer les actions de correction. 
 
 ## <a name="next-step"></a>Étape suivante
 
-[![Étape 3 : Découvrez comment effectuer une révision post-incident d’un incident](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
+[![Étape 3 : Découvrez comment effectuer une révision post-incident d’un incident.](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
 Découvrez comment effectuer [une révision post-incident d’un incident.](first-incident-post.md)
 

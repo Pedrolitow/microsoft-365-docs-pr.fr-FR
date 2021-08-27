@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Découvrez comment configurer la recherche dans un environnement multigéogé. Seuls certains clients, tels que OneDrive, peuvent renvoyer des résultats dans un environnement multigéogé.
-ms.openlocfilehash: 65f74ce9d21fd9323cd2a3421875399c3a5d8346fd55e9820398c3363e099e9b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a991638e5f0b1270950b50823def61eb4d60669b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864945"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566843"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurer la recherche pour Microsoft 365 Multi-Geo
 
@@ -131,7 +131,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué ne sont p
 
 Tous les clients de recherche utilisent les API REST de recherche SharePoint existantes pour interagir avec les index de recherche.
 
-![Diagramme montrant comment SharePoint API REST de recherche interagissent avec les index de recherche](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagramme montrant comment SharePoint API REST de recherche interagissent avec les index de recherche.](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un client de recherche appelle le point de terminaison REST de recherche avec la propriété de requête EnableMultiGeoSearch= true.
 2. La requête est envoyée à tous les emplacements géographiques dans le client.
@@ -151,11 +151,11 @@ Chaque centre de recherche possède plusieurs secteurs verticaux et vous devez c
 
 3. Sélectionnez le secteur vertical à configurer, cliquez sur l’icône d’engrenage **Paramètres** située en haut à droite, puis cliquez sur **Modifier la page**. La page des résultats de la recherche s’ouvre en mode Édition.
 
-   ![Modifier la sélection de page dans Paramètres](../media/configure-search-for-multi-geo-image2.png)
+   ![Modifier la sélection de page dans Paramètres.](../media/configure-search-for-multi-geo-image2.png)
 
 4. Dans le composant WebPart de résultats de recherche, déplacez le pointeur vers le coin supérieur droit et cliquez sur la flèche, puis sur **Modifier le composant WebPart** dans le menu. Le volet des outils du composant WebPart des résultats de recherche s’ouvre sous le ruban en haut à droite de la page.
 
-   ![Modifier la sélection de la partie Web](../media/configure-search-for-multi-geo-image3.png)
+   ![Modifier la sélection de la partie Web.](../media/configure-search-for-multi-geo-image3.png)
 
 5. Dans le volet des outils du composant WebPart, dans la section **Paramètres**, sous **Paramètres de contrôle des résultats**, sélectionnez **Afficher les résultats multigéographiques** pour que le composant WebPart Résultats de la recherche affiche les résultats de tous les emplacements géographiques.
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0f7490ce1bbf1ef7666ce44f6101054d6acc7703
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: fe048005736e39623effc13751a66f195008ff96
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364552"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550261"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
@@ -32,7 +32,7 @@ Zone de mise au point | Pour des questions sur
 Empaquetage d’application | Résolution des problèmes d’empaquetage d’application
 Appareils | État de l’appareil, résolution des problèmes Microsoft Manged Desktop appareils
 Sécurité | Résolution des problèmes de sécurité avec Microsoft Manged Desktop appareils
-Service d’aide à l’information | dans les cas où notre personnel de support remet des tickets d’utilisateur en dehors de Microsoft Manged Desktop de support 
+Service d’aide à l’information | dans les cas où notre personnel de support remet des tickets d’utilisateur en dehors des Microsoft Manged Desktop de support 
 Autres | Pour les problèmes non couverts par d’autres domaines
 
 **Toute personne que vous choisissez pour ces contacts doit avoir les connaissances et l’autorité nécessaires pour prendre des décisions pour Microsoft Manged Desktop environnement.** Lorsque vous intégrerez votre environnement Microsoft Manged Desktop, vous êtes invité à ajouter des contacts pour votre aide et sécurité locales. 
@@ -49,20 +49,20 @@ Les contacts d’administrateur sont requis lorsque vous [envoyez une demande de
 
 4. Sélectionnez **une zone de focus** et entrez les informations du contact. 
 
-    ![liste des domaines de mise au point, tels que Autres, Applications et Sécurité](../../media/areaoffocus.png)
+    ![liste des domaines de mise au point, tels que Autres, Applications et Sécurité.](../../media/areaoffocus.png)
 
 5. Répétez l’étape pour chaque zone de mise au point.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 
-1. Portail [d’administration Access](access-admin-portal.md).
+1. Accéder au[Portail d’administration](access-admin-portal.md).
 1. Ajouter et vérifier des contacts d’administrateur dans le portail d’administration (cet article).
-1. [Ajuster les paramètres après l’inscription.](conditional-access.md)
-1. Déployez et affectez [Portail d’entreprise Intune](company-portal.md).
+1. [Ajuster les paramètres après l’inscription](conditional-access.md).
+1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
-1. [Déployer des applications.](deploy-apps.md)
-1. [Configurer des appareils.](set-up-devices.md)
-1. Configurer [l’expérience de première expérience avec Autopilot et la page État de l’inscription.](esp-first-run.md)
-1. [Activer les fonctionnalités de support utilisateur.](enable-support.md)
-1. [Préparez vos utilisateurs à utiliser des appareils.](get-started-devices.md)
-1. [Prendre en main le contrôle d’application.](get-started-app-control.md)
+1. [Déployer des applications](deploy-apps.md).
+1. [Configurer les appareils](set-up-devices.md).
+1. Configurez l’[Expérience de première exécution avec Autopilot et la page d’état d’inscription](esp-first-run.md).
+1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
+1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).
+1. [Démarrage avec le contrôle d’application](get-started-app-control.md).

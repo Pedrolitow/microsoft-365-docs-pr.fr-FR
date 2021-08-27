@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser la fonctionnalité de recherche dans le Centre d’administration pour obtenir des résultats meilleurs et plus rapides.
-ms.openlocfilehash: 64a578f8b7ebf71fbfc162936e8efa09440834d362fcc2b359a18bb9d8c1469a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824768"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566987"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Effectuer une recherche dans le Centre d’administration Microsoft 365
 
@@ -48,7 +48,7 @@ Si vous sélectionnez le menu à trois points (plus d’actions) à côté de le
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Screenshot: User search with the option to reset password from search result":::
 
-**Astuces pour améliorer les résultats de recherche des utilisateurs**
+**Astuces pour améliorer les résultats de la recherche utilisateur**
 
 - Assurez-vous d’épeler correctement les noms des utilisateurs car les recherches des utilisateurs correspondent exactement aux propriétés mentionnées précédemment. Par exemple, dans l’exemple ci-dessus, Ils ou Malz fonctionneront, mais une faute d’orthographe, comme Jostin au lieu de Celle-ci, ne permettra pas de trouver cet utilisateur.
 - Pour obtenir une correspondance exacte, recherchez par adresse de messagerie principale ou nom d’utilisateur.
@@ -85,7 +85,7 @@ Recherchez les paramètres de niveau application pris en charge liés à votre o
 
 Vous trouverez des liens rapides vers vos domaines, puis le lien vous permettra d’obtenir la page de présentation de ce domaine.
 
-:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Résultats de la recherche affichant les domaines du Centre d’administration":::
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Résultats de recherche montrant les domaines du Centre d’administration.":::
 
 ## <a name="documentation"></a>Documentation
 

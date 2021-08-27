@@ -9,27 +9,27 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Normal
 description: Découvrez comment utiliser le mode d’accessibilité lors de la formation d’un modèle SharePoint Syntex.
-ms.openlocfilehash: 349c9ff2fee37e4f40185c4d61592eb379d83382d373961980bfb615db7040c3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 73a867c3157d3debc584995708a337c36b6b0028
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795449"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573750"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>Mode d’accessibilité Syntex de SharePoint
 
 Dans [SharePoint Syntex,](index.md)les utilisateurs peuvent activer le mode accessibilité à toutes les étapes de la formation au modèle (étiquette, formation, test) lorsque vous travaillez avec des exemples de documents. L’utilisation du mode d’accessibilité permet aux utilisateurs à faible vue d’avoir plus facilement accès au clavier à mesure qu’ils naviguent et étiquetent des éléments dans la visionneuse de documents.
 
-Cela permet aux utilisateurs d’utiliser leur clavier pour parcourir du texte dans la visionneuse de documents et écouter une narration non seulement des valeurs sélectionnées, mais aussi des actions (telles que l’étiquetage ou la suppression de l’étiquetage du texte sélectionné) ou des valeurs d’étiquette prévues lorsque vous formez le modèle avec des exemples de documents supplémentaires. 
+Cela permet aux utilisateurs d’utiliser leur clavier pour naviguer dans le texte de la visionneuse de documents et écouter une narration non seulement des valeurs sélectionnées, mais aussi des actions (telles que l’étiquetage ou la suppression de l’étiquetage du texte sélectionné) ou des valeurs d’étiquette prévues lorsque vous formez le modèle avec des exemples de documents supplémentaires. 
 
 
-![Mode d’accessibilité](../media/content-understanding/accessibility-mode.png)
+![Mode d’accessibilité.](../media/content-understanding/accessibility-mode.png)
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour écouter l’audio de la narration, veillez à activer l’application [Narrateur](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) dans les paramètres du Narrateur sur Windows 10 système.
 
-![Activer le Narrateur](../media/content-understanding/narrator-settings.png)
+![Activer le Narrateur.](../media/content-understanding/narrator-settings.png)
 
 ## <a name="labeling-for-keyboard-users"></a>Étiquetage pour les utilisateurs du clavier
 

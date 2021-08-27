@@ -16,12 +16,12 @@ description: Découvrez comment placer une boîte aux lettres en attente pour li
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: a8386eba6373be26ccd3e4a9cb9884ca44cb61237e33d93c33528db4b318c71e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 58de1f44c6c58125b37c8cf0800d48dc0ae86f2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886608"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566879"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une attente pour litige
 
@@ -39,7 +39,7 @@ Voici ce qui se produit lorsque vous créez une attente pour litige.
 
 ## <a name="assign-an-exchange-online-plan-2-license"></a>Attribuer une licence Exchange Online Plan 2
 
-Pour placer une boîte Exchange Online boîte aux lettres en attente pour litige, une licence Plan 2 Exchange Online lui est attribuée. Si une boîte aux lettres est Exchange Online licence Plan 1, vous devez lui affecter une licence Archivage Exchange Online pour la placer en attente.
+Pour placer une boîte aux lettres Exchange Online en attente pour litige, une licence Plan 2 doit lui Exchange Online attribuée. Si une boîte aux lettres est Exchange Online licence Plan 1, vous devez lui affecter une licence Archivage Exchange Online pour la placer en attente.
 
 > [!NOTE]
 > Pour Office 365 Éducation organisations, la attente pour litige est prise en charge dans les abonnements Office 365 A1, qui incluent une licence Plan 1 Exchange Online avec des fonctionnalités supplémentaires. Pour plus d’informations, voir la section « fonctionnalités Exchange Online » dans la [description Office 365 Éducation service.](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features)
@@ -56,15 +56,15 @@ Voici les étapes à suivre pour placer une boîte aux lettres en attente pour l
 
 4. Dans la page de diffusion des propriétés, cliquez sur l’onglet **Courrier,** puis sous Plus **d’actions,** cliquez sur Gérer la attente **pour litige.**
 
-   ![Click Manage litigation hold on the Mail tab of user properties flyout page](../media/M365AdminCenterLitHold1.png)
+   ![Cliquez sur Gérer la attente pour litige dans l’onglet Courrier de la page volant des propriétés de l’utilisateur.](../media/M365AdminCenterLitHold1.png)
 
 5. Dans la page Gérer la attente  **pour** litige, cochez la case Activer la attente pour litige, puis entrez les informations facultatives suivantes :
 
     1. Durée de la mise en attente **(jours)**: cette zone vous indique la durée de la mise en attente des éléments de boîte aux lettres lorsque la boîte aux lettres est placée en attente pour litige. La durée est calculée à compter de la date de réception ou de création de l'élément de boîte aux lettres. Lorsque la durée de la conservation expire pour un élément spécifique, cet élément n’est plus conservé. Si vous laissez cette zone vide, les éléments sont conservés indéfiniment ou jusqu’à ce que la conservation soit supprimée. Indiquez la période en nombre de jours.
 
-    2. **Remarque visible pour l’utilisateur**: utilisez cette zone pour informer l’utilisateur que sa boîte aux lettres est en attente pour litige. La note s’affiche sur la page Informations sur le compte dans la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou une ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
+    2. **Remarque visible pour l’utilisateur**: utilisez cette zone pour informer l’utilisateur que sa boîte aux lettres est en attente pour litige. La note s’affiche dans la page Informations sur le compte de la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
 
-    3. **Page Web avec plus d’informations pour** l’utilisateur : cette zone vous aide à diriger l’utilisateur vers un site web pour plus d’informations sur la mise en attente pour litige. Cette URL apparaît sur la page Informations sur le compte dans la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou une ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
+    3. **Page Web avec plus d’informations pour** l’utilisateur : cette zone vous aide à diriger l’utilisateur vers un site web pour plus d’informations sur la mise en attente pour litige. Cette URL apparaît sur la page Informations sur le compte dans la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou une date ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
 
 6. Cliquez **sur Enregistrer les modifications** dans la page de la page de **la** attente pour litige pour créer la attente. 
 
@@ -102,7 +102,7 @@ Lorsqu’une boîte aux lettres est placée en conservation pour litige, les él
 
 L'illustration suivante montre les sous-dossiers des dossiers Éléments récupérables et le processus de conservation inaltérable.
 
-![Cycle de vie de la attente pour litige](../media/LitigationHoldLifeCycle.png)
+![Cycle de vie de la attente pour litige.](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > Si une conservation associée à un cas eDiscovery est placée sur une boîte aux lettres, les éléments purgés sont déplacés du sous-dossier Suppressions vers le sous-dossier DiscoveryHolds et sont conservés jusqu’à ce que la boîte aux lettres soit libérée de la conservation eDiscovery.

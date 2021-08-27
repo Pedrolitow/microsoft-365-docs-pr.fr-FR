@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 00d42e237e5fbe5d0c9fd904bd51c3dc94fd3668d0a12249a46d9cd48f06adad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 202fe1c38b6846f52361f3e55baf9050cae36fb5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817854"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550165"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
 
@@ -39,7 +39,7 @@ ms.locfileid: "53817854"
 
 ## <a name="investigate-user-account-entities"></a>Examiner les entités de compte d’utilisateur
 
-Identifiez les comptes d’utilisateurs avec les alertes les plus actives (affichées dans le tableau de bord sous la forme « Utilisateurs à risque ») et examinez les cas d’informations d’identification potentiellement compromises, ou pivotez sur le compte d’utilisateur associé lors de l’examen d’une alerte ou d’un appareil afin d’identifier les éventuels mouvements latérals entre les appareils avec ce compte d’utilisateur.
+Identifiez les comptes d’utilisateurs avec les alertes les plus actives (affichées sur le tableau de bord sous la forme « Utilisateurs à risque ») et examinez les cas d’informations d’identification potentiellement compromises, ou faites pivoter le compte d’utilisateur associé lors de l’examen d’une alerte ou d’un appareil afin d’identifier les éventuels mouvements latérals entre les appareils avec ce compte d’utilisateur.
 
 Les informations de compte d’utilisateur sont disponibles dans les affichages suivants :
 
@@ -56,7 +56,7 @@ Lorsque vous examinez une entité de compte d’utilisateur, vous voyez :
 - Alertes associées à cet utilisateur
 - Observé dans l’organisation (appareils connectés)
 
-![Image de la page de détails de l’entité du compte d’utilisateur](images/atp-user-details-view.png)
+![Image de la page de détails de l’entité du compte d’utilisateur.](images/atp-user-details-view.png)
 
 ### <a name="user-details"></a>Détails de l’utilisateur
 
@@ -67,7 +67,7 @@ Le  volet d’informations Utilisateur de gauche fournit des informations sur l�
 
 La vue d’ensemble, les alertes et les observations dans l’organisation sont des onglets différents qui affichent différents attributs sur le compte d’utilisateur.
 
-### <a name="overview"></a>Présentation
+### <a name="overview"></a>Vue d’ensemble
 
 **L’onglet** Vue d’ensemble affiche les détails des incidents et une liste des appareils sur qui l’utilisateur s’est connecté. Vous pouvez les développer pour voir les détails des événements de connexion pour chaque appareil.
 
@@ -95,9 +95,9 @@ Vous pouvez filtrer les résultats selon les périodes suivantes :
 - 3 jours
 - 7 jours
 - 30 jours
-- 6 mois
+- 6 mois
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

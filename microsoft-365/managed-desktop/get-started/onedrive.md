@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 33d86ff6b63bd8b21ba233ff8b28672a3688fd0c4b20565f69cb9f11b4959426
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 892dbcccfc8f224f80a538f9736405cb012b69ca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857950"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573690"
 ---
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
-Microsoft Manged Desktop utilise [OneDrive Entreprise](/onedrive/plan-onedrive-enterprise) service de stockage cloud pour tous les Microsoft Manged Desktop pour s’assurer que les appareils sont aussi sans état que possible. L’utilisateur peut trouver ses fichiers quel que soit l’appareil auquel il se connecte. Par exemple, si vous remplacez un Microsoft Manged Desktop par un nouvel appareil, les fichiers seront automatiquement synchronisés avec le nouvel appareil.
+Microsoft Manged Desktop utilise [OneDrive Entreprise](/onedrive/plan-onedrive-enterprise) service de stockage cloud pour tous les Microsoft Manged Desktop pour s’assurer que les appareils sont aussi sans état que possible. L’utilisateur peut trouver ses fichiers quel que soit l’appareil auquel il se connecte. Par exemple, si vous remplacez un Microsoft Manged Desktop par un nouveau, les fichiers seront automatiquement synchronisés avec le nouvel appareil.
 
 Nous configurons automatiquement ces paramètres par défaut sur les appareils gérés Microsoft :
 
@@ -26,21 +26,21 @@ Nous configurons automatiquement ces paramètres par défaut sur les appareils g
 
 - La fonctionnalité Fichiers à la demande est activée pour permettre aux utilisateurs d’accéder aux fichiers à partir de leur stockage cloud dans OneDrive sans avoir à utiliser inutilement de l’espace disque. Pour plus d’informations, voir [Save disk space with OneDrive Files On-Demand for Windows 10](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e).
 
-- La fonctionnalité Déplacement de dossiers connus est activée en mode silencieux pour la protection des données des utilisateurs dans le cloud, ce qui leur permet d’accéder à leurs fichiers à partir de n’importe quel appareil. Pour plus d’informations, voir [Back up your Documents, Pictures, and Desktop folders with OneDrive](https://support.microsoft.com/office/back-up-your-documents-pictures-and-desktop-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057).
+- La fonctionnalité De déplacement de dossiers connus est activée en mode silencieux pour la protection des données des utilisateurs dans le cloud, ce qui leur permet d’accéder à leurs fichiers à partir de n’importe quel appareil. Pour plus d’informations, voir [Back up your Documents, Pictures, and Desktop folders with OneDrive](https://support.microsoft.com/office/back-up-your-documents-pictures-and-desktop-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057).
 
 - Les utilisateurs ne peuvent pas désactiver la fonctionnalité Déplacement de dossier connu ou modifier l’emplacement des dossiers connus pour garantir une expérience cohérente sur Microsoft Manged Desktop appareils.
 
 ## <a name="user-experience"></a>Expérience utilisateur
 
-Lorsque Microsoft Manged Desktop utilisateurs reçoivent un nouvel appareil, ils bénéficient d’une expérience de première expérience d’évaluation en entrant leurs informations d’identification Azure lors de la configuration de l’appareil. Une fois ce processus terminé, ils peuvent accéder à leur bureau et avoir la OneDrive expérience utilisateur.
+Lorsque Microsoft Manged Desktop utilisateurs reçoivent un nouvel appareil, ils bénéficient d’une première expérience d’expérience d’utilisateur en entrant leurs informations d’identification Azure lors de la configuration de l’appareil. Une fois ce processus terminé, ils peuvent accéder à leur bureau et avoir la OneDrive expérience utilisateur.
 
 1. Le système indique aux utilisateurs que OneDrive a été configuré et qu’ils ont été automatiquement OneDrive.
 
-:::image type="content" source="media/onedrive-sync.png" alt-text="La lecture des notifications que vous synchronisez OneDrive et vous pouvez modifier des fichiers dans OneDrive. cliquez ici pour afficher vos fichiers":::
+:::image type="content" source="media/onedrive-sync.png" alt-text="La lecture des notifications que vous synchronisez OneDrive et vous pouvez modifier des fichiers dans OneDrive. cliquez ici pour afficher vos fichiers.":::
 
 2. Le système indique aux utilisateurs que OneDrive déplacement de dossier connu a été configuré pour eux.
 
-:::image type="content" source="media/onedrive-folders.png" alt-text="Notification lisant Votre service informatique a pris en compte vos dossiers importants. Les dossiers sont désormais pris en OneDrive et disponibles à partir d’autres appareils":::
+:::image type="content" source="media/onedrive-folders.png" alt-text="Notification lisant Votre service informatique a pris en compte vos dossiers importants. Les dossiers sont désormais pris en OneDrive et disponibles à partir d’autres appareils.":::
 
 3. Pour empêcher les icônes en double sur le bureau lorsque des appareils sont réinitialisés ou réinitialisés, le système supprime automatiquement les icônes Microsoft Edge et Microsoft Teams de l’Synchronisation OneDrive, comme illustré dans cet affichage dans l’Explorateur de fichiers.
 

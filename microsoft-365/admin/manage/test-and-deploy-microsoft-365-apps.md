@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Recherchez, testez et déployez des applications partenaires Microsoft et Microsoft pour les utilisateurs et les groupes de votre organisation à partir du portail Des applications intégrées dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 5bcbdebbacf8d9e4710dd7f9168d3f6dbcb4af5a
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 13276923c55632145207b61032583a26e3553e06
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346123"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566975"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Tester et déployer des Microsoft 365 Apps par des partenaires dans le portail applications intégrées
 
@@ -29,7 +29,7 @@ Pour plus d’informations sur l’achat et les licences Microsoft 365 applicati
 
 Pour plus d’informations sur la façon dont les partenaires créent ces applications, voir Comment planifier une offre [SaaS pour le marché commercial](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-Le portail des applications intégrées est accessible uniquement aux administrateurs globaux et uniquement aux clients du monde entier. Cette fonctionnalité n’est pas disponible dans les clouds souverains et du gouvernement.
+Le portail des applications intégrées est uniquement accessible aux administrateurs globaux et accessible aux clients du monde entier uniquement. Cette fonctionnalité n’est pas disponible dans les clouds souverains et du gouvernement.
 
 Le portail Applications intégrées affiche une liste d’applications, qui inclut des applications individuelles et Microsoft 365 applications provenant de partenaires déployés dans votre organisation. Seules les applications web, SPFx applications, Office et Teams applications sont répertoriées. Pour les applications web, vous pouvez voir deux types d’applications.
 
@@ -38,7 +38,7 @@ Le portail Applications intégrées affiche une liste d’applications, qui incl
 
 ## <a name="manage-apps-in-the-integrated-apps-portal"></a>Gérer les applications dans le portail Applications intégrées
 
-Vous pouvez gérer les tests et le déploiement des licences achetées et Microsoft 365 Apps auprès de partenaires.
+Vous pouvez gérer les tests et le déploiement d’Microsoft 365 Apps achetés et sous licence auprès de partenaires.
 
 1. Dans le Centre d’administration, **sélectionnez Paramètres,** puis sélectionnez **Applications intégrées.**
 
@@ -46,7 +46,7 @@ Vous pouvez gérer les tests et le déploiement des licences achetées et Micros
 
 3. Sous **l’onglet** Vue d’ensemble, **sélectionnez Déployer.** Certaines applications nécessitent que vous ajoutiez des utilisateurs avant de pouvoir sélectionner Déployer.
 
-4. Sélectionnez **Utilisateurs,** **sélectionnez Est-ce un déploiement de test,** puis choisissez Toute l’organisation , **Utilisateurs/groupes spécifiques** ou **Simplement moi**.  Vous pouvez également choisir **de tester le déploiement** si vous préférez attendre le déploiement de l’application dans toute l’organisation. Des utilisateurs ou des groupes spécifiques peuvent être Microsoft 365 groupe de sécurité, un groupe de sécurité ou un groupe de distribution.
+4. Sélectionnez **Utilisateurs,** **sélectionnez Est-ce un déploiement de test,** puis choisissez Toute l’organisation , **Utilisateurs/groupes spécifiques** ou **Simplement moi**.  Vous pouvez également choisir **De tester le déploiement** si vous préférez attendre le déploiement de l’application dans toute l’organisation. Des utilisateurs ou des groupes spécifiques peuvent être Microsoft 365 groupe de sécurité, un groupe de sécurité ou un groupe de distribution.
 
 5. Sélectionnez **Mettre à** jour, puis **Terminé.** Vous pouvez maintenant sélectionner Déployer sous l’onglet Vue d’ensemble.
 
@@ -72,7 +72,7 @@ Vous pouvez rechercher, tester et déployer entièrement des applications publi�
 
 6. Sélectionnez **Ajouter des** utilisateurs, choisissez **Est-ce qu’il s’agit** d’un déploiement de test, puis choisissez Toute l’organisation ou des utilisateurs/groupes spécifiques ou Simplement **moi**.  
 
-    Des utilisateurs/groupes spécifiques peuvent être un Microsoft 365, un groupe de sécurité ou un groupe distribué. Vous pouvez également choisir **de tester le déploiement** si vous préférez attendre le déploiement de l’application dans toute l’organisation.
+    Des utilisateurs/groupes spécifiques peuvent être un Microsoft 365, un groupe de sécurité ou un groupe distribué. Vous pouvez également choisir **De tester le déploiement** si vous préférez attendre le déploiement de l’application dans toute l’organisation.
 
 7. Sélectionnez **Suivant** pour obtenir la page **Accepter la demande d’autorisation.** Les fonctionnalités et autorisations de chacune des applications sont répertoriées. Si l’application a besoin de consentement, **sélectionnez Accepter les autorisations.** Seul un administrateur général peut donner son consentement.
 
@@ -97,7 +97,7 @@ Vous ne pourrez pas déployer une seule application ou une seule Microsoft 365 A
 
 3. Télécharger fichier manifeste à partir de votre appareil ou ajoutez un lien URL. Certaines applications nécessitent que vous ajoutiez des utilisateurs avant de pouvoir sélectionner Déployer.
 
-4. Sélectionnez **Ajouter des** utilisateurs, choisissez **Est-ce qu’il s’agit** d’un déploiement de test et choisissez Toute l’organisation ou des **utilisateurs/groupes spécifiques** ou **Moi uniquement**. 
+4. Sélectionnez **Ajouter des** utilisateurs, choisissez **Est-ce un déploiement de test** et choisissez Toute l’organisation ou des **utilisateurs/groupes** spécifiques ou **Moi uniquement**. 
 
     Des utilisateurs/groupes spécifiques peuvent être un Microsoft 365, un groupe de sécurité ou un groupe distribué. Vous pouvez également choisir **De tester le déploiement** si vous souhaitez attendre le déploiement de l’application dans l’ensemble de l’organisation.
 
@@ -131,53 +131,53 @@ Le déploiement ne prend pas en charge les suivantes :
 - un service d'annuaire local ; 
 - Déploiement de la mise en Exchange d’une boîte aux lettres sur place 
 - Déploiement de composants COM (Component Object Model) ou Visual Studio Tools pour Office (VSTO) de composants. 
-- Déploiements de Microsoft 365 qui n’incluent pas de Exchange Online comme Microsoft 365 Apps entreprise et Microsoft 365 Apps pour Enterprise.  
+- Déploiements de Microsoft 365 qui n’incluent pas de Exchange Online tels que Microsoft 365 Apps entreprise et Microsoft 365 Apps pour Enterprise.  
 
 ### <a name="office-requirements"></a>Office Conditions requises 
 
-Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des utilisations suivantes : 
+Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des valeurs suivantes : 
 - Sur un appareil Windows, version 1704 ou ultérieure des licences Microsoft 365 Entreprise (E3/E5/F3) ou Microsoft 365 Business (Business Basic, Business Standard, Business Premium). 
 - Sur un Mac, version 15.34 ou ultérieure. 
 
 Pour Outlook, vos utilisateurs doivent utiliser l’une des utilisations suivantes : 
 - Version 1701 ou ultérieure des licences Microsoft 365 Entreprise (E3/E5/F3) ou Microsoft 365 Business (Business Basic, Business Standard, Business Premium). 
-- Version 1808 ou ultérieure de Office Professionnel Plus 2019 ou Office Standard 2019. 
+- Version 1808 ou ultérieure Office Professionnel Plus 2019 ou Office Standard 2019. 
 - Version 16.0.4494.1000 ou ultérieure de Office Professionnel Plus 2016 (MSI) ou Office Standard 2016 (MSI).
     > [!NOTE]
-    > Les versions MSI de Outlook les add-ins installés par l’administrateur dans le ruban Outlook approprié, et non dans la section « Mes modules ».  
+    > Les versions MSI d’Outlook montrent les add-ins installés par l’administrateur dans le ruban Outlook approprié, et non dans la section « Mes add-ins ».  
 - Version 15.0.4937.1000 ou ultérieure de Office Professionnel Plus 2013 (MSI) ou Office Standard 2013 (MSI).
-- Version 16.0.9318.1000 ou ultérieure de Office 2016 pour Mac. 
-- Version 2.75.0 ou ultérieure de Outlook mobile pour iOS. 
-- Version 2.2.145 ou ultérieure de Outlook mobile pour Android. 
+- Version 16.0.9318.1000 ou ultérieure d’Office 2016 pour Mac. 
+- Version 2.75.0 ou ultérieure d’Outlook Mobile pour iOS. 
+- Version 2.2.145 ou ultérieure d’Outlook Mobile pour Android. 
 
 
 
-### <a name="exchange-online-requirements"></a>Exchange Online requise 
-Microsoft Exchange les manifestes de votre organisation. L’administrateur déployant des applications et les utilisateurs qui les reçoivent doivent se trouver sur une version de Exchange Online qui prend en charge l’authentification OAuth. 
+### <a name="exchange-online-requirements"></a>Conditions requises pour Exchange Online 
+Microsoft Exchange stocke les manifestes du add-in dans le client de votre organisation. L’administrateur déployant des applications et les utilisateurs qui les reçoivent doivent se trouver sur une version d’Exchange Online qui prend en charge l’authentification OAuth. 
 
 Pour connaître la configuration utilisée, consultez l'administrateur Exchange de votre organisation. La connectivité OAuth par utilisateur peut être vérifiée à l’aide de l’cmdlet [PowerShell Test-OAuthConnectivity.](/powershell/module/exchange/test-oauthconnectivity)   
 
 ### <a name="user-and-group-assignments"></a>Affectations à des utilisateurs et groupes
-Le déploiement du module de mise en œuvre est actuellement pris en charge pour la majorité des groupes pris en charge par Azure Active Directory, y compris les groupes Microsoft 365, les listes de distribution et les groupes de sécurité. Le déploiement prend en charge les utilisateurs des groupes de niveau supérieur ou des groupes sans groupes parents, mais pas les utilisateurs de groupes imbrmbrés ou de groupes qui ont des groupes parents. 
+Le déploiement d’un module est actuellement pris en charge pour la majorité des groupes pris en charge par Azure Active Directory, y compris les groupes Microsoft 365, les listes de distribution et les groupes de sécurité. Le déploiement prend en charge les utilisateurs des groupes de niveau supérieur ou des groupes sans groupes parents, mais pas les utilisateurs de groupes imbrmbrés ou de groupes qui ont des groupes parents. 
 
 > [!NOTE]
 > Les groupes de sécurité sans extension messagerie ne sont pas actuellement pas pris en charge. 
 
 Dans l’exemple suivant, le groupe Service des ventes est affecté à un module. Le Service des ventes Région ouest étant un groupe imbriqué, aucun complément n'est affecté à Noël et Jérôme. 
 
-![Diagramme du service des ventes](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![Diagramme du service des ventes.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Déterminer si un groupe contient des groupes imbriqués
 
-La manière la plus simple de détecter si un groupe contient des groupes imbriqués consiste à afficher la carte de visite du groupe dans Outlook. Si vous entrez le nom du groupe dans le champ **À** d’un e-mail, puis sélectionnez le nom du groupe lorsqu’il est résolu, il vous indique s’il contient des utilisateurs ou des groupes   imbrmbrés. Dans l’exemple **** ci-dessous, l’onglet Membres de Outlook carte de visite du groupe de test n’affiche aucun utilisateur   et seulement deux sous-groupes. 
+La manière la plus simple de détecter si un groupe contient des groupes imbriqués consiste à afficher la carte de visite du groupe dans Outlook. Si vous entrez le nom du groupe dans le champ **À** d’un e-mail, puis sélectionnez le nom du groupe lorsqu’il est résolu, il vous indique s’il contient des utilisateurs ou des groupes   imbrmbrés. Dans l’exemple ci-dessous, l’onglet **Membres** de la carte de visite Outlook pour le groupe de test n’affiche aucun utilisateur   et seulement deux sous-groupes. 
 
-![Onglet Membres de la carte Outlook contact](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Onglet Membres de la carte de visite Outlook.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il est membre d'un groupe. Dans l’exemple ci-dessous, <b></b>vous pouvez voir sous l’onglet Appartenance de la carte de visite Outlook que le sous-groupe 1 est membre   du groupe de test. 
+Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il est membre d'un groupe. Dans l’exemple ci-dessous, <b></b>vous pouvez voir sous l’onglet Appartenance de la carte de visite Outlook que le sous-groupe 1 est   membre du groupe de test. 
 
-![Onglet Appartenance de la carte Outlook contact](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Onglet Appartenance de la carte de visite Outlook.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Notez que vous pouvez utiliser l’API Azure Active Directory Graph pour exécuter des requêtes afin de trouver la liste des groupes au sein d’un groupe. Pour plus d’informations, voir [Opérations sur les groupes | Graph Référence d’API](/previous-versions/azure/ad/graph/api/groups-operations). 
+Notez que vous pouvez utiliser l’API Graph Azure Active Directory pour exécuter des requêtes afin de trouver la liste des groupes au sein d’un groupe. Pour plus d’informations, voir [Opérations sur les groupes | Référence de l’API Graph.](/previous-versions/azure/ad/graph/api/groups-operations) 
 
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approche recommandée pour le déploiement de compléments Office 
 Pour déployer des add-ins à l’aide d’une approche par phases, nous vous recommandons les étapes suivantes : 
@@ -199,20 +199,20 @@ Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des éta
 
 4.  **Sélectionnez** Tout le **monde, Utilisateurs/groupes** spécifiques ou Simplement **moi** pour spécifier vers qui le module est   déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. Si vous testez le module, sélectionnez **Est-ce qu’il s’agit d’un déploiement de test**. 
 
-5. Sélectionnez **Suivant**. Toutes les fonctionnalités et autorisations de l’application sont affichées dans un seul volet avec des informations de certification si l’application Microsoft 365 certification. La sélection du logo de certification permet à l’utilisateur d’obtenir plus de détails sur la certification.  
+5. Sélectionnez **Suivant**. Toutes les fonctionnalités et autorisations de l’application sont affichées dans un seul volet avec des informations de certification si l’application dispose de la certification Microsoft 365. La sélection du logo de certification permet à l’utilisateur d’obtenir plus de détails sur la certification.  
 
 6. Examinez, puis sélectionnez **Terminer le déploiement.**  
 
 7. Une icône verte « tick » s’affiche lorsque le module est déployé. Suivez les instructions de la page pour tester le add-in. 
 
 > [!NOTE]
-> Les utilisateurs devront peut-être redémarrer Office pour afficher l’icône de la application sur le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application. 
+> Il se peut que les utilisateurs doivent redémarrer Office pour afficher l’icône de l’application sur le ruban de l’application. L’apparition des applications dans les rubans d’application peut prendre jusqu’à 24 heures. 
 
 Il est bon d’informer les utilisateurs et les groupes que le add-in déployé est disponible. Envisagez d’envoyer un e-mail qui décrit quand et comment utiliser le add-in. Inclure ou lier du contenu d’aide ou des FAQ qui peuvent aider les utilisateurs en cas de problèmes avec le module. 
 
 ## <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Points à considérer lors de l'affectation d'un complément à des utilisateurs et groupes 
 
-Les administrateurs globaux et Exchange administrateurs peuvent affecter un module à tout le monde ou à des utilisateurs et groupes spécifiques. Chaque option a des conséquences spécifiques : 
+Les administrateurs globaux et les administrateurs Exchange peuvent affecter un add-in à tout le monde ou à des utilisateurs et groupes spécifiques. Chaque option a des conséquences spécifiques : 
 
 - **Tout le monde**   Cette option affecte le add-in à tous les utilisateurs de l’organisation. Utilisez-la avec parcimonie et uniquement pour les compléments qui sont réellement universels pour l'ensemble de votre organisation. 
 
@@ -224,25 +224,25 @@ Les administrateurs globaux et Exchange administrateurs peuvent affecter un modu
 
 L’option la plus efficace pour votre organisation dépend de votre configuration. Toutefois, nous vous recommandons d’effectuer des affectations à l’aide de groupes. En tant qu’administrateur, il peut être plus facile de gérer les modules en utilisant des groupes et en contrôlant l’appartenance à ces groupes plutôt que d’affecter des utilisateurs individuels à chaque fois. Dans certains cas, vous pouvez restreindre l’accès à un petit groupe d’utilisateurs en attribuant des affectations à des utilisateurs spécifiques en attribuant manuellement des utilisateurs. 
 
-### <a name="more-about-office-add-ins-security"></a>En savoir plus Office sécurité des add-ins 
+### <a name="more-about-office-add-ins-security"></a>En savoir plus sur la sécurité des add-ins Office 
 Les compléments Office combinent un fichier manifeste XML qui inclut certaines métadonnées sur le complément, mais surtout qui pointe vers une application web contenant tout le code et la logique. Les fonctionnalités des compléments peuvent varier. Par exemple, les compléments peuvent :
 - afficher des données. 
 - lire le document d'un utilisateur pour fournir des services contextuels. 
 - lire et écrire des données vers le document d'un utilisateur et à partir de celui-ci pour fournir une valeur à cet utilisateur.  
 
-Pour plus d’informations sur les types et fonctionnalités des Office, voir vue d’ensemble de la plateforme des Office [Add-ins,](/office/dev/add-ins/overview/office-add-ins)en particulier la section « Anatomie d’un Office ». 
+Pour plus d’informations sur les types et les fonctionnalités des add-ins Office, voir vue d’ensemble de la plateforme des [add-ins Office,](/office/dev/add-ins/overview/office-add-ins)en particulier la section « Anatomie d’un add-in Office ». 
 
-Pour interagir avec le document de l’utilisateur, le add-in doit déclarer l’autorisation dont il a besoin dans le manifeste. Un modèle d’autorisations d’accès de l’API JavaScript à cinq niveaux constitue la base de la confidentialité et de la sécurité pour les utilisateurs de modules de développement de volet de tâches. La plupart des add-ins dans le Office Store sont de niveau ReadWriteDocument avec presque tous les modules qui écrivent au moins le niveau ReadDocument. Pour plus d’informations sur les niveaux d’autorisation, voir Demande [d’autorisations](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)pour l’utilisation des API dans les modules complémentaires de contenu et du volet Des tâches. 
+Pour interagir avec le document de l’utilisateur, le add-in doit déclarer l’autorisation dont il a besoin dans le manifeste. Un modèle d’autorisations d’accès de l’API JavaScript à cinq niveaux constitue la base de la confidentialité et de la sécurité pour les utilisateurs de modules de développement de volet de tâches. La majorité des add-ins dans l’Office Store sont de niveau ReadWriteDocument, avec presque tous les modules qui écrivent au moins le niveau ReadDocument. Pour plus d’informations sur les niveaux d’autorisation, voir Demande [d’autorisations](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)pour l’utilisation des API dans les modules complémentaires de contenu et du volet Des tâches. 
 
 Lors de la mise à jour d'un manifeste, les modifications standard sont apportées à l'icône et au texte d'un complément. Les commandes de complément changent parfois, contrairement aux autorisations du complément. L'application web dans laquelle le code et la logique du complément sont exécutés peut changer à tout moment, ce qui est la nature même des applications web. 
 
 Les mises à jour des compléments se produisent comme suit : 
 - **Add-in** métier : dans ce cas, lorsqu’un administrateur a téléchargé explicitement un manifeste, le add-in exige que l’administrateur charge un nouveau fichier manifeste pour prendre en charge les modifications de métadonnées. Le complément est mis à jour au démarrage suivant des applications Office concernées. L'application web peut changer à tout moment. 
 
-- **Office** Store : lorsqu’un administrateur a sélectionné un add-in dans le Office Store, si un application est mise à jour dans le Office Store, lors du prochain démarrage des applications Office pertinentes, le add-in est mis à jour. L'application web peut changer à tout moment. 
+- **Add-in Office Store**: lorsqu’un administrateur a sélectionné un add-in à partir de l’Office Store, si un add-in est mis à jour dans l’Office Store, lors du prochain démarrage des applications Office pertinentes, le add-in est mis à jour. L'application web peut changer à tout moment. 
 
 > [!NOTE]
-> Pour Word, Excel et PowerPoint utilisent un catalogue d’applications [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)pour déployer des applications pour les utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des SharePoint de   l’application. Par Outlook utiliser Exchange panneau de Microsoft 365.  
+> Pour Word, Excel et PowerPoint, utilisez un catalogue d’applications [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)pour déployer des applications pour les utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des applications   SharePoint requises. Pour Outlook, utilisez le panneau de contrôle Exchange pour déployer dans un environnement local sans connexion à Microsoft 365.  
 
 ## <a name="add-in-states"></a>États de complément
 Un add-in peut être à **l’état On**   ou **Off.**   
@@ -260,7 +260,7 @@ Envisagez de supprimer un add-in si personne ne l’utilise plus. Par exemple, l
 Après le déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux add-ins. 
 
 1. Dans le Centre d’administration, **sélectionnez Paramètres,** puis sélectionnez **Applications intégrées.** 
-2. Dans la page Applications intégrées, une liste d’applications s’affiche: il s’agit de simples applications ou de modules qui ont été liés à d’autres applications. 
+2. Dans la page Applications intégrées, une liste d’applications s’affiche : des applications individuelles ou des applications qui ont été liées à d’autres applications. 
 3. Sélectionnez une application avec **l’état**    **d’autres applications disponibles** pour ouvrir le    **volet**   Gérer. L’état **d’autres** applications disponibles vous permet de savoir qu’il existe davantage   d’intégrations des isv qui ne sont pas encore déployées. 
 4. Sous **l’onglet**   Vue d’ensemble, **sélectionnez Déployer.** Certaines applications nécessitent que vous ajoutiez des utilisateurs avant de pouvoir sélectionner Déployer. 
 5. Sélectionnez **Utilisateurs,** **sélectionnez Est-ce qu’il s’agit** d’un déploiement de test, puis sélectionnez Toute l’organisation **,** **Utilisateurs/groupes spécifiques**   ou Moi **uniquement**. Vous pouvez également sélectionner **Tester le déploiement** si vous préférez attendre le déploiement de l’application dans   l’ensemble de l’organisation. Des utilisateurs ou des groupes spécifiques peuvent être Microsoft 365 groupe de sécurité, un groupe de sécurité ou un groupe de distribution. 
@@ -295,7 +295,7 @@ Il existe deux cas dans lesquels un administrateur Exchange ne peut pas déploye
 
 Seuls les administrateurs globaux peuvent accéder aux applications intégrées. Les applications intégrées ne s’affichent pas dans le navigation gauche pour les autres administrateurs.
 
-### <a name="why-do-i-see-add-in-in-the-left-nav-under-setting-but-not-integrated-apps"></a>Pourquoi le module de navigation gauche s’insérait-il dans la partie paramètre, mais pas dans les applications intégrées ?
+### <a name="why-do-i-see-add-in-in-the-left-nav-under-setting-but-not-integrated-apps"></a>Pourquoi le module de navigation de gauche s’insérait-il dans la partie paramètre, mais pas dans les applications intégrées ?
 
 Il peut y avoir plusieurs raisons :
 
@@ -304,7 +304,7 @@ Il peut y avoir plusieurs raisons :
 
 ### <a name="what-apps-can-i-deploy-from-integrated-apps"></a>Quelles applications puis-je déployer à partir d’applications intégrées ?
 
-Les applications intégrées permettent le déploiement d’applications web, Teams application, Excel, PowerPoint, Word, Outlook et SPFx applications. Pour les applications intégrées, les applications intégrées permettent le déploiement vers Exchange boîtes aux lettres en ligne et non sur site Exchange boîtes aux lettres.
+Les applications intégrées permettent le déploiement d’applications web, d’applications Teams, de Excel, de PowerPoint, de Word, de Outlook de SPFx applications. Pour les applications intégrées, les applications intégrées permettent le déploiement vers Exchange boîtes aux lettres en ligne et non sur site Exchange boîtes aux lettres.
 
 ### <a name="can-administrators-delete-or-remove-apps"></a>Les administrateurs peuvent-ils supprimer ou supprimer des applications ?
 

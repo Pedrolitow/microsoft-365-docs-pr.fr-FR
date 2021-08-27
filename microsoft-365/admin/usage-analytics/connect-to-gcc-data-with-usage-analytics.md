@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment vous connecter à des données dans votre client Microsoft 365 Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) à l’aide de l’application de modèle Analyse de l’utilisation Microsoft 365 dans Power BI.
-ms.openlocfilehash: e831cae78c90eeafae38117b6939d506f37632f30e3bd456ca9242b9d81c402c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a0ea6985b9f9d09498e4ad086bf89f529b24c17
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53907170"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567155"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Connecter données Microsoft 365 Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) avec l’analyse de l’utilisation
 
@@ -50,7 +50,7 @@ Pour configurer initialement Microsoft 365 l’analyse de l’utilisation :
 2. Dans la page **Rapports d’utilisation,** dans la section Analyse Microsoft 365'utilisation, sélectionnez **Prise en main**. 
 3. Sous **Activer Power BI’analyse** de l’utilisation, sélectionnez Rendre les données d’utilisation organisationnelles disponibles pour l’analyse de l’utilisation **de Microsoft Power BI,** puis sélectionnez **Enregistrer.**
 
-    ![Rendre vos données client disponibles](../../media/usage-analytics/make-data-available.png) 
+    ![Rendez vos données client disponibles.](../../media/usage-analytics/make-data-available.png) 
 
 
 
@@ -58,10 +58,10 @@ Pour configurer initialement Microsoft 365 l’analyse de l’utilisation :
 
 4. Lorsque les données de votre organisation sont prêtes, l’actualisation de la page affiche un message indiquant que vos données sont désormais disponibles et indique également votre **numéro d’ID** de client. Vous devrez utiliser l’ID de client dans une étape ultérieure lorsque vous tenterez de vous connecter à vos données client. 
  
-    ![ID client](../../media/usage-analytics/tenant-id-gcc.png) 
+    ![ID de locataire.](../../media/usage-analytics/tenant-id-gcc.png) 
  
     > [!IMPORTANT]
-    > Lorsque vos données sont disponibles, ne sélectionnez pas **Power BI,** qui vous permet d’Power BI Marketplace.  L’application de modèle pour ce rapport requise par Cloud de la communauté du secteur public client n’est pas disponible sur Power BI Marketplace.  
+    > Lorsque vos données sont disponibles, ne sélectionnez pas **Power BI**, qui vous permet d’Power BI Marketplace.  L’application de modèle pour ce rapport requise par Cloud de la communauté du secteur public client n’est pas disponible sur Power BI Marketplace.  
 
 
 ## <a name="step-2-download-the-power-bi-template-connect-to-your-data-and-publish-the-report"></a>Étape 2 : Télécharger le modèle Power BI, vous connecter à vos données et publier le rapport
@@ -74,19 +74,19 @@ Microsoft 365 Cloud de la communauté du secteur public utilisateurs peuvent té
 1. Après avoir téléchargé le [modèle Power BI,](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)ouvrez-le à l’aide Power BI Desktop. 
 2. Lorsque vous êtes invité à entrer un **TenantID,** entrez l’ID de locataire que vous avez reçu lorsque vous avez préparé les données de votre organisation pour ce rapport à l’étape 1. Ensuite, **sélectionnez Charger**. Le chargement de vos données prendra plusieurs minutes. 
 
-    ![Entrer l’ID de client](../../media/usage-analytics/add-tenant-id.png) 
+    ![Entrez l’ID de client.](../../media/usage-analytics/add-tenant-id.png) 
 
 
 
 3. Une fois le chargement terminé, votre rapport s’affiche et un résumé de vos données s’affiche. 
 
-    ![Synthèse](../../media/usage-analytics/exec-summary.png) 
+    ![Résumé exécutif.](../../media/usage-analytics/exec-summary.png) 
  
 
 4. Enregistrez vos modifications dans le rapport. 
 5. **Sélectionnez** Publier dans le menu Power BI Desktop pour publier le rapport dans le service Power BI Online où il peut être vu. Cela nécessite une licence Power BI Pro ou une Power BI Premium capacité maximale. Dans le cadre [du](/power-bi/create-reports/desktop-upload-desktop-files#to-publish-a-power-bi-desktop-dataset-and-reports)processus de publication, vous devez sélectionner une destination à publier dans un espace de travail disponible dans le service Power BI Online.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [À propos de l’Analyse de l’utilisation](usage-analytics.md) </br>
 [Obtenir la dernière version d’analyse d’utilisation](get-the-latest-version-of-usage-analytics.md) </br>

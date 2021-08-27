@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/02/2021
-ms.openlocfilehash: 3115695bb9c73dbff0c24f677e9e6151de82feba0695eebbb3b2078f01ab8ad8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d232245ffa88ab63ebe68ac104f291d006612505
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794137"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533206"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 
@@ -115,7 +115,7 @@ Pour System Center 2012 Configuration Manager, voir [Comment déployer la strat�
 
 4. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-5. Développez l’arborescence sur **Composants Windows** > **Antivirus Microsoft Defender**.
+5. Développez les trois sur **Composants Windows**\>**Antivirus Microsoft Defender**.
 
 6. Cliquez deux fois sur **Configurer la détection pour les applications potentiellement indésirables (PUA)**.
 

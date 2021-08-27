@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de la protection des informations dans Windows
 ms.reviewer: ''
-description: Découvrez comment fonctionne la protection des informations dans Windows pour identifier et protéger les informations sensibles
+description: En savoir plus sur le fonctionnement de la protection des informations Windows pour identifier et protéger les informations sensibles
 keywords: information, protection, dlp, données, perte, prévention, protéger
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b38cf9c56f3c518ed7dace01b174b21b280baa23a9e71edb290edd797283f40d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7c3fac607f470018b4c6c5a025b3b2ac09464cc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857489"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550225"
 ---
 # <a name="information-protection-in-windows-overview"></a>Vue d’ensemble de la protection des informations dans Windows
 
@@ -66,7 +66,7 @@ Lorsqu’un fichier est créé ou modifié sur un Windows, Defender for Endpoint
 
 Activer l’intégration Azure Information Protection de sorte que lorsqu’un fichier contenant des informations sensibles est découvert par Defender for Endpoint à l’aide d’étiquettes ou de types d’informations, il est automatiquement transmis à Azure Information Protection à partir de l’appareil.
 
-![Image de la page de paramètres avec Azure Information Protection](images/atp-settings-aip.png)
+![Image de la page de paramètres avec Azure Information Protection.](images/atp-settings-aip.png)
 
 Les signaux signalés peuvent être vus dans le tableau de bord Azure Information Protection - Data Discovery.
 
@@ -74,7 +74,7 @@ Les signaux signalés peuvent être vus dans le tableau de bord Azure Informatio
 
 Ce tableau de bord présente une synthèse des informations de découverte des données découvertes par Defender pour Endpoint et Azure Information Protection. Les données de Defender pour le point de terminaison sont marquées avec type d’emplacement - Point de terminaison.
 
-![Image d’Azure Information Protection - Découverte de données](images/azure-data-discovery.png)
+![Image d’Azure Information Protection - Découverte de données.](images/azure-data-discovery.png)
 
 Notez que la colonne Risque de l’appareil sur la droite, ce risque d’appareil est dérivé directement de Defender pour point de terminaison, indiquant le niveau de risque du périphérique de sécurité où le fichier a été découvert, en fonction des menaces de sécurité actives détectées par Defender pour le point de terminaison.
 
@@ -98,8 +98,8 @@ InformationProtectionLogs_CL
 | where Workload_s == "Windows Defender"
 ```
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Configuration requise
 
 - Les clients doivent avoir un abonnement à Azure Information Protection.
-- Activez l’intégration Azure Information Protection dans Centre de sécurité Microsoft Defender :
+- Activez l’intégration d’Azure Information Protection dans Centre de sécurité Microsoft Defender :
   - Go to **Paramètres** in Centre de sécurité Microsoft Defender, click on **Advanced Paramètres** under **General**.

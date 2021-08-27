@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Gérer les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
-ms.openlocfilehash: b9496ebe150839deb23823dc0a7492c849c7f076ba1934a847621eb553486016
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Gérez les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
+ms.openlocfilehash: 47087f2d09428214237dba226e680aa3c332625d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822070"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567167"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des clauses d’exclusion de responsabilité à l’échelle de l’organisation
 
@@ -46,7 +46,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Créer une signature qui s'applique à tous les messages
 
 > [!TIP]
-> Les signatures à l’échelle de l’organisation sont appelées « clauses d’exclusion de responsabilité », indépendamment de ce qu’elles incluent. Par exemple, il peut s’agir simplement d’une signature, ou inclure votre adresse, votre clause d’exclusion de responsabilité juridique ou d’autres informations que vous souhaitez.
+> Les signatures à l’échelle de l’organisation sont appelées « clauses d’exclusion de responsabilité », indépendamment de ce qu’elles incluent. Par exemple, il peut s’agir simplement d’une signature ou inclure votre adresse, une clause d’exclusion de responsabilité juridique ou d’autres informations de votre part.
     
 ::: moniker range="o365-worldwide"
 
@@ -66,9 +66,9 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 ::: moniker-end
 
-1. Sélectionnez le lanceur d’applications ![ L’icône du lanceur d’applications, ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) puis sélectionnez **Administrateur.**
+1. Sélectionnez le lanceur d’applications L’icône du lanceur d’applications, ![ puis ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) sélectionnez **Administrateur.**
    
-    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes les applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
+    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les **applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
     
 2. Sélectionnez **Centres d’administration,** puis **sélectionnez Exchange**.
     
@@ -104,7 +104,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 Vous ne pouvez pas faire les choses suivantes lors de la gestion des signatures électroniques dans Microsoft 365 :
   
-- Insérez la signature directement sous la dernière réponse ou envoi d’e-mail
+- Insérer la signature directement sous la dernière réponse ou envoi d’e-mail
     
 - Afficher les signatures de courrier côté serveur dans les dossiers Éléments envoyés des utilisateurs
     
@@ -112,13 +112,13 @@ Vous ne pouvez pas faire les choses suivantes lors de la gestion des signatures 
     
 - Ignorer les lignes qui contiennent des variables qui n’ont pas pu être mises à jour (par exemple, parce que la valeur n’a pas été fournie pour un utilisateur)
     
-Pour obtenir ces fonctionnalités et d’autres fonctionnalités de gestion des signatures électroniques, utilisez un outil tiers. Veuillez effectuer une recherche sur Internet pour le logiciel **de signature électronique.** Un certain nombre de ces fournisseurs sont des partenaires Microsoft Gold et leurs logiciels fournissent ces fonctionnalités. 
+Pour obtenir ces fonctionnalités et d’autres pour gérer les signatures électroniques, utilisez un outil tiers. Veuillez effectuer une recherche sur Internet pour le logiciel **de signature électronique.** Un certain nombre de ces fournisseurs sont des partenaires Microsoft Gold et leurs logiciels fournissent ces fonctionnalités. 
   
 ## <a name="more-resources"></a>Plus de ressources
 
 Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de [responsabilité, les signatures,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)les pieds de bas de gamme ou les en-têtes des messages à l’échelle de l’Exchange Online .
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Migrer le courrier électronique et les contacts vers Microsoft 365](migrate-email-and-contacts-admin.md) (vidéo)\
 [Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)\

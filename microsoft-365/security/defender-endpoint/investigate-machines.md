@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee5a8decb78d2f72b796fd3fb2ef15c1da3b0160
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: b74888549069eab515ef5c7f89138cabe01b5d92
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585699"
+ms.locfileid: "58550237"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -92,7 +92,6 @@ Pour plus d’informations, voir [Examiner les entités utilisateur.](investigat
 Les onglets fournissent des informations pertinentes sur la sécurité et la prévention des menaces relatives à l’appareil. Dans chaque onglet, vous pouvez personnaliser les  colonnes affichées en sélectionnant Personnaliser les colonnes dans la barre au-dessus des en-têtes de colonne.
 
 ### <a name="overview"></a>Vue d’ensemble
-
 **L’onglet** Vue d’ensemble affiche les [cartes](#cards) pour les alertes actives, les utilisateurs connectés et l’évaluation de la sécurité.
 
 ![Image de l’onglet Vue d’ensemble sur la page de l’appareil.](images/overview-device.png)
@@ -113,14 +112,13 @@ Pour afficher une vue de page complète d’une alerte, y compris le graphique d
 
 La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil pendant une période sélectionnée. Pour contrôler davantage votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
 
-> [!NOTE]
+>[!NOTE]
 > Pour afficher les événements de pare-feu, vous devez activer la stratégie d’audit, voir Connexion à la plateforme de filtrage [d’audit.](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
+>Le pare-feu couvre les événements suivants
 >
-> Le pare-feu couvre les événements suivants :
->
-> - [5025](/windows/security/threat-protection/auditing/event-5025) - Service de pare-feu arrêté
-> - [5031](/windows/security/threat-protection/auditing/event-5031) : application bloquée pour accepter les connexions entrantes sur le réseau
-> - [5157](/windows/security/threat-protection/auditing/event-5157) : connexion bloquée
+>- [5025](/windows/security/threat-protection/auditing/event-5025) - Service de pare-feu arrêté
+>- [5031](/windows/security/threat-protection/auditing/event-5031) : application bloquée pour accepter les connexions entrantes sur le réseau
+>- [5157](/windows/security/threat-protection/auditing/event-5157) : connexion bloquée
 
 ![Image de la chronologie de l’appareil avec des événements.](images/timeline-device.png)
 
@@ -134,7 +132,7 @@ Voici quelques-unes des fonctionnalités :
 - Exporter des événements de chronologie détaillés de l’appareil
   - Exportez la chronologie de l’appareil pour la date actuelle ou une plage de dates spécifiée jusqu’à sept jours.
 
-Des informations supplémentaires sur certains événements sont fournies dans la section **Informations** supplémentaires. Ces détails varient en fonction du type d’événement, par exemple :
+Des informations supplémentaires sur certains événements sont fournies dans la section **Informations** supplémentaires. Ces détails varient en fonction du type d’événement, par exemple : 
 
 - Contenu par Application Guard : l’événement de navigateur web a été limité par un conteneur isolé
 - Menace active détectée : la détection des menaces s’est produite pendant l’exécution de la menace
@@ -145,7 +143,6 @@ Des informations supplémentaires sur certains événements sont fournies dans l
 - Catégorie d’alerte : si l’événement a conduit à la génération d’une alerte, la catégorie d’alerte ( « Mouvement latéral », par exemple) est fournie.
 
 #### <a name="event-details"></a>Détails de l'événement
-
 Sélectionnez un événement pour afficher les détails pertinents sur cet événement. Un panneau s’affiche pour afficher des informations générales sur les événements. Le cas échéant et lorsque des données sont disponibles, un graphique montrant les entités associées et leurs relations est également affiché.
 
 Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) et les événements connexes, vous pouvez rapidement exécuter une requête de recherche avancée en sélectionnant **Hunt pour les événements connexes.** La requête retourne l’événement sélectionné et la liste des autres événements qui se sont produits au même moment sur le même point de terminaison.
@@ -183,18 +180,16 @@ La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des a
 
 ![Image de la carte d’alerte active.](images/risk-level-small.png)
 
-> [!NOTE]
-> Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
+>[!NOTE]
+>Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
 
 ### <a name="logged-on-users"></a>Utilisateurs connectés
 
 La **carte Utilisateurs** connectés indique le nombre d’utilisateurs connectés au cours des 30 derniers jours, ainsi que les utilisateurs les plus fréquents et les moins fréquents. La sélection du lien « Afficher tous les utilisateurs » ouvre le volet d’informations, qui affiche des informations telles que le type d’utilisateur, le type de connexion et le moment où l’utilisateur a été vu pour la première fois et pour la dernière fois. Pour plus d’informations, voir [Examiner les entités utilisateur.](investigate-user.md)
 
 ![Image du volet d’informations de l’utilisateur.](images/logged-on-users.png)
-
 > [!NOTE]
-> La valeur utilisateur « la plus fréquente » est calculée uniquement en fonction des preuves des utilisateurs qui ont ouvert une session interactive.
-> Toutefois, le volet latéral « Tous les utilisateurs » calcule toutes sortes d’utilisateurs qui se connectent afin de voir des utilisateurs plus fréquents dans le volet latéral, étant donné que ces utilisateurs peuvent ne pas être interactifs.
+> La valeur utilisateur « la plus fréquente » est calculée uniquement en fonction des preuves des utilisateurs qui ont ouvert une session interactive. Toutefois, le volet latéral « Tous les utilisateurs » calcule toutes sortes d’utilisateurs qui se connectent afin de voir des utilisateurs plus fréquents dans le volet latéral, étant donné que ces utilisateurs peuvent ne pas être interactifs.
 
 ### <a name="security-assessments"></a>Tests d’évaluation de la sécurité
 

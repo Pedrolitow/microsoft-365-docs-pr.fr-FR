@@ -25,19 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Recommandations en matière de sécurité et de collaboration Microsoft 365 Business Premium pour les plus petites affaires, y compris les plus petites entreprises, les pratiques, et les campagnes politiques.
-ms.openlocfilehash: bf795b0e5a89532a0b0d30f1c9436eb73739b7cc0d28dbe227dcc52ef5c76c06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8e1da206a23a58d568d6e0e4a9efe04cef510a85
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861507"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573786"
 ---
 # <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 pour les petites entreprises et les campagnes
 
 Si vous avez Microsoft 365 Business Premium, les conseils de cette bibliothèque sont le moyen le plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité. Dans notre monde actuel, le maintien de la sécurité des données et des communications est une priorité, notamment pour les pratiques médicales et juridiques, les campagnes politiques, ainsi que de nombreuses autres entreprises plus petites. Cette solution fournit un ensemble de recommandations conçues pour contribuer à vous protéger, vous et vos données. Cette bibliothèque inclut une aide à la configuration et à l’utilisation de cet environnement recommandé, quel que soit votre type d'entreprise.
 
 
-![Microsoft 365 Business Premium protège vos outils de productivité, vos outils de collaboration, le stockage de fichiers, l’e-mail, les appareils et l’identité](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
+![Microsoft 365 Business Premium protège vos outils de productivité, vos outils de collaboration, le stockage de fichiers, l’e-mail, les appareils et l’identité.](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 Cette configuration inclut les conseils suivants sur la productivité, la collaboration, le stockage de fichiers, l’e-mail, les appareils et l’identité pour protéger votre entreprise :
 
@@ -83,15 +83,15 @@ Une fois que vous avez configuré votre environnement Microsoft 365 sécurisé, 
 
 | Créer Teams pour la collaboration | Configurer des réunions en ligne |
 | ------------- | ------------- |
-| ![un site de communication SharePoint](../media/sm-m365-democracy-teams-collab.png) | ![une réunion en ligne](../media/m365-democracy-teams-meetings.png) |
+| ![un site de communication SharePoint.](../media/sm-m365-democracy-teams-collab.png) | ![une réunion en ligne](../media/m365-democracy-teams-meetings.png) |
 | Collaborer avec des équipes pour le personnel clé, l'ensemble du personnel et les partenaires ou fournisseurs.<br>[Créer votre équipe](create-teams-for-collaboration.md) | Planifier une réunion avec l’audio, la vidéo et le partage avec Microsoft Teams.<br>[Organiser une réunion](set-up-meetings.md) |
 
 | Chiffrer ou étiqueter votre courrier électronique sensible | Créer un site de communication |
 | ------------- | ------------- |
-| ![Courrier électronique chiffré et étiqueté](../media/sm-m365-campaign-email-encrypt.png) | ![un site de communications SharePoint](../media/sm-m365-democracy-comms-site.png) |
+| ![E-mail chiffré et étiqueté](../media/sm-m365-campaign-email-encrypt.png) | ![un site de communications SharePoint](../media/sm-m365-democracy-comms-site.png) |
 | Utiliser les étiquettes de confidentialité et de chiffrement pour protéger les messages électroniques qui contiennent des informations confidentielles ou sensibles.<br>[Envoyer un message électronique chiffré](send-encrypted-email.md) | Partager des événements, des messages, des images et bien plus avec les membres de votre équipe dans un site de communications interne créé avec SharePoint.<br>[Créer votre site](create-communications-site.md) |
 
 | Partager des fichiers et des vidéos |
 | ------------- |
-| ![partage d’un fichier dans Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) |
+| ![partage d’un fichier dans Microsoft Teams.](../media/m365-democracy-teams-sharefiles.png) |
 | Enregistrez vos fichiers et vidéos dans le cloud pour qu’ils soient accessibles <br>à toutes les personnes concernées.<br>[Démarrer le partage](share-files-and-videos.md) |

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 10fba72dbd22419d9941b20609c45d507cb0b206
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 24659a1e928143c79b3ab7324114d5c8b0fa1f43
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372519"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550153"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
 
@@ -38,7 +38,7 @@ ms.locfileid: "58372519"
 
 Cet article explique comment déployer Microsoft Defender pour Endpoint sur Linux manuellement. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
-- [Déployer Microsoft Defender pour point de terminaison sur Linux manuellement](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
+- [Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Conditions préalables et système requis](#prerequisites-and-system-requirements)
   - [Configurer le référentiel de logiciels Linux](#configure-the-linux-software-repository)
     - [RHEL et variantes (CentOS et Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
@@ -48,7 +48,7 @@ Cet article explique comment déployer Microsoft Defender pour Endpoint sur Linu
   - [Télécharger le package d’intégration](#download-the-onboarding-package)
   - [Configuration du client](#client-configuration)
   - [Script du programme d’installation](#installer-script)
-  - [Journal des problèmes d’installation](#log-installation-issues)
+  - [Journaux des problèmes d’installation](#log-installation-issues)
   - [Mises à niveau du système d’exploitation](#operating-system-upgrades)
   - [Désinstallation](#uninstallation)
 
@@ -58,7 +58,7 @@ Avant de commencer, consultez [Microsoft Defender pour Endpoint sur Linux](micro
 
 ## <a name="configure-the-linux-software-repository"></a>Configurer le référentiel de logiciels Linux
 
-Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
+Defender for Endpoint sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
@@ -285,7 +285,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez **Script local** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![capture d’écran Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux.png)
+    ![Microsoft 365 Defender capture d’écran du portail.](images/portal-onboarding-linux.png)
 
 4. À partir d’une invite de commandes, vérifiez que vous avez le fichier.
     Extrayons le contenu de l’archive :
@@ -333,7 +333,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
     mdatp health --field org_id
     ```
 
-4. Quelques minutes après avoir terminé l’installation, vous pouvez voir l’état en exécutant la commande suivante. Une valeur de retour indique que le `1` produit fonctionne comme prévu :
+4. Quelques minutes après avoir terminé l’installation, vous pouvez voir l’état en exécutant la commande suivante. Une valeur de retour `1` de indique que le produit fonctionne comme prévu :
 
     ```bash
     mdatp health --field healthy
@@ -405,7 +405,7 @@ Options:
 
 En savoir plus [ici.](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)
 
-## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
+## <a name="log-installation-issues"></a>Journal des problèmes d’installation
 
 Pour [plus d’informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir problèmes d’installation des journaux.
 

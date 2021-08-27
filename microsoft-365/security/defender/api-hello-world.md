@@ -1,6 +1,6 @@
 ---
 title: API REST Hello World pour Microsoft 365 Defender web
-description: Découvrez comment créer une application et utiliser un jeton pour accéder aux API Microsoft 365 Defender’application
+description: Découvrez comment créer une application et utiliser un jeton pour accéder aux API Microsoft 365 Defender de données
 keywords: application, jeton, accès, aad, application, inscription d’application, powershell, script, administrateur général, autorisation, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 50316659caf811410b9422151e47feb17fbead8055bec08a3e4e342d61f2d83b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1aa843bb1e9ca57d6264f34cbfc7c593f9590c2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888850"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573894"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>API REST Hello World pour Microsoft 365 Defender web
 
@@ -46,9 +46,9 @@ La réalisation de ce projet doit prendre entre 5 et 10 minutes. Cette estimatio
 
 1. Connectez-vous [à Azure](https://portal.azure.com) en tant qu’utilisateur avec le **rôle d’administrateur** général.
 
-2. Accédez à **Azure Active Directory**  >  **inscription de l’application Nouvelle**  >  **inscription.**
+2. Accédez à **Azure Active Directory**  >  **Inscription de l’application Nouvelle**  >  **inscription.**
 
-   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application](../../media/atp-azure-new-app2.png)
+   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](../../media/atp-azure-new-app2.png)
 
 3. Dans le formulaire d’inscription, choisissez un nom pour votre application, puis sélectionnez **Enregistrer**. La sélection d’un URI de redirection est facultative. Vous n’en aurez pas besoin pour compléter cet exemple.
 
@@ -56,26 +56,26 @@ La réalisation de ce projet doit prendre entre 5 et 10 minutes. Cette estimatio
 
    > [!TIP]
    > *La Protection Microsoft contre les* menaces est un ancien nom Microsoft 365 Defender et n’apparaîtra pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
-   ![Image de la sélection des autorisations d’API](../../media/apis-in-my-org-tab.PNG)
+   ![Image de la sélection des autorisations d’API.](../../media/apis-in-my-org-tab.PNG)
 
    - Sélectionnez **Application permissions**  >  **Incident.Read.All** et **sélectionnez Ajouter des autorisations.**
 
-   ![Image de l’accès à l’API et de la sélection d’API](../../media/request-api-permissions.PNG)
+   ![Image de l’accès à l’API et de la sélection d’API.](../../media/request-api-permissions.PNG)
 
 5. Sélectionnez **Accorder le consentement de l’administrateur.** Chaque fois que vous ajoutez une autorisation, vous devez sélectionner Accorder le **consentement de l’administrateur** pour qu’elle prenne effet.
 
-    ![Image de l’octroi d’autorisations](../../media/grant-consent.PNG)
+    ![Image d’octroi d’autorisations.](../../media/grant-consent.PNG)
 
 6. Ajoutez un secret à l’application. Select **Certificates & secrets,** add a description to the secret, then select **Add**.
 
     > [!TIP]
     > Après avoir sélectionné **Ajouter,** **sélectionnez copier la valeur de secret générée.** Vous ne pourrez pas récupérer la valeur secrète après votre départ.
 
-    ![Image de la clé de création d’application](../../media/webapp-create-key2.png)
+    ![Image de la clé de création d’application.](../../media/webapp-create-key2.png)
 
 7. Enregistrez votre ID d’application et votre ID de client dans un endroit sûr. Ils sont répertoriés sous Vue **d’ensemble** sur la page de votre application.
 
-   ![Image de l’ID d’application créé](../../media/app-and-tenant-ids.png)
+   ![Image de l’ID d’application créé.](../../media/app-and-tenant-ids.png)
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Obtenir un jeton à l’aide de l’application et utiliser le jeton pour accéder à l’API
 
@@ -117,7 +117,7 @@ Pour plus d’informations Azure Active Directory jetons, voir le [didacticiel A
 
     Dans l’image suivante, vous pouvez voir un jeton décodé acquis à partir d’une application, avec ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` , et des ```AdvancedHunting.Read.All``` autorisations :
 
-    ![Image jwt.ms](../../media/api-jwt-ms.png)
+    ![Image jwt.ms.](../../media/api-jwt-ms.png)
 
 ### <a name="get-a-list-of-recent-incidents"></a>Obtenir la liste des incidents récents
 

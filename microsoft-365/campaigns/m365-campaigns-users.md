@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment ces recommandations de sécurité pour Microsoft 365 Business Premium vos utilisateurs et protège vos données.
-ms.openlocfilehash: 8e2ce13b694aa526c3c063bec7a4dc8c7699244f2c00f4dfee5d38bfe5208b1b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8f8ccbbb1f9edb6eb9b1f29078317727b5e9b6e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881677"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567131"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Impact de ces recommandations de sécurité sur vos utilisateurs
 
 Les recommandations de sécurité pour Microsoft 365 dans cette solution compliquent beaucoup plus l’accès des pirates informatiques à votre environnement. Le compromis est que vos utilisateurs doivent savoir comment travailler dans cet environnement plus sécurisé. Nous comprenons qu’un peu de patience soit nécessaire, mais il est intéressant de préserver la protection de votre organisation.
 
-![Illustration qui résume les points clés ci-dessous pour les iPhone, les appareils Android, les Mac, Windows 10, le partage et le personnel clé](../media/M365-democracy-Users_900px.png)
+![Illustration qui résume les points clés ci-dessous pour les iPhone, appareils Android, Mac, Windows 10, partage et personnel de clés.](../media/M365-democracy-Users_900px.png)
 
 ## <a name="use-secure-email-practices"></a>Utiliser des pratiques de messagerie sécurisée
 
@@ -63,7 +63,7 @@ Une fois ces paramètres mis en place, vos utilisateurs sont invités à utilise
 
 Il est également important que les utilisateurs conservent leur périphérique de travail principal à jour :
 
-- Installez les dernières versions de Office applications de bureau et conservez-les à jour avec les mises à jour, lorsque vous y être invité.
+- Installez les dernières versions de Office applications de bureau et gardez-les à jour avec les mises à jour, lorsque vous y être invité.
 - Restez informé des mises à jour du système d’exploitation, telles que Windows mises à jour.
 
 Pour [les appareils Windows 10 mac](m365-campaigns-protect-pcs-macs.md)non Windows 10, les utilisateurs ont la responsabilité de s’assurer que les fonctionnalités de sécurité de base sont activées.
@@ -78,7 +78,7 @@ Pour en savoir plus sur ces recommandations, voir Protéger votre compte et vos 
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Collaborer à l’aide Microsoft Teams, OneDrive, SharePoint Online et d’autres outils
 
-Vos utilisateurs peuvent être tentés de partager et de stocker les fichiers de votre organisation à des endroits autres que Microsoft 365. Microsoft 365 facilite autant que possible la collaboration et le partage en toute sécurité. Vous pouvez [partager des fichiers et](share-files-and-videos.md) des vidéos directement à partir Microsoft Teams, OneDrive, Stream et même à partir d’un fichier. Le partage à partir de ces outils permet d’éviter la fuite de vos données. Vous pouvez ajouter une protection supplémentaire aux données sensibles pour empêcher le partage à l’extérieur de votre organisation.
+Vos utilisateurs peuvent être tentés de partager et de stocker des fichiers de votre organisation à des endroits autres que Microsoft 365. Microsoft 365 facilite autant que possible la collaboration et le partage en toute sécurité. Vous pouvez [partager des fichiers et](share-files-and-videos.md) des vidéos directement à partir Microsoft Teams, OneDrive, Stream et même à partir d’un fichier. Le partage à partir de ces outils permet d’éviter la fuite de vos données. Vous pouvez ajouter une protection supplémentaire aux données sensibles pour empêcher le partage à l’extérieur de votre organisation.
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurer des appareils Windows 10 gérés
 

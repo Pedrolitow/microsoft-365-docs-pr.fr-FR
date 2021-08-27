@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Découvrez comment utiliser l’adresse IP et le service web d’URL Office 365 pour mieux identifier et différencier le trafic réseau d’Office 365.
-ms.openlocfilehash: fd9951d78757c07d543c502515304e6d8792ed5493665aebfb21b1b3ed84d725
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62e9b638b0f767aef3b7f52bb3d129310d2bcbd5
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864542"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533446"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Service web d’URL et d’adresses IP Office 365
 
@@ -54,7 +54,7 @@ En tant que fournisseur de périphérique de périmètre réseau, vous pouvez ut
 > [!NOTE]
 > Si vous utilisez Azure ExpressRoute pour vous connecter à Office 365, consultez [Azure ExpressRoute pour Office 365](azure-expressroute.md) pour vous familiariser avec les services Office 365 pris en charge sur Azure ExpressRoute. Consultez l’article [ URLs and plages d’adresse IP Office 365](urls-and-ip-address-ranges.md) pour identifier les requêtes réseau des applications Office 365 qui nécessitent une connectivité Internet. Cette opération permet de mieux configurer vos périphériques de sécurité de périmètre.
 
-Pour plus d’informations, voir :
+Pour plus d’informations, voir :
 
 - [Annonce du billet de blog dans le Forum de la communauté technique Office 365](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
 - [Forum de la communauté technique Office 365 pour les questions sur l’utilisation des services web](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
@@ -605,7 +605,7 @@ Des mises à jour des paramètres ou des résultats de ces méthodes de service 
 
 Vous pouvez utiliser plusieurs méthodes pour recevoir des notifications par courrier électronique lorsque des modifications apportées aux adresses IP et aux URL sont publiées sur le service Web.
 
-- Pour utiliser une solution de flux Microsoft, voir [utiliser Microsoft Flow pour recevoir un courrier électronique pour les modifications apportées aux adresses IP et URL d’Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
+- Pour utiliser une solution Power Automate, voir [Utiliser Power Automate pour recevoir un e-mail en cas de modification des adresses IP et des URL d'Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Pour déployer une application de logique Azure à l’aide d’un modèle ARM, voir [notification de mise à jour d’Office 365 (v 1.1)](https://aka.ms/ipurlws-updates-template).
 - Pour écrire votre propre script de notification à l’aide de PowerShell, voir [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage).
 

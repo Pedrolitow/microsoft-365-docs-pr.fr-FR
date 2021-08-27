@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ec2057eefc5cb1e8ce59138a1f5a15b7ed0fdd01
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 1e04c9a817bfe799c15e3609e190980bfc4145e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508213"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550285"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API Microsoft Defender pour point de terminaison - Hello World
 
@@ -57,9 +57,9 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
 1. Connectez-vous [à Azure](https://portal.azure.com) avec votre **utilisateur administrateur** général.
 
-2. Accédez à **Azure Active Directory** \> **inscription de l’application Nouvelle** \> **inscription.**
+2. Accédez à **Azure Active Directory** \> **Inscription de l’application Nouvelle** \> **inscription.**
 
-   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application](images/atp-azure-new-app2.png)
+   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](images/atp-azure-new-app2.png)
 
 3. Dans le formulaire d’inscription, choisissez un nom pour votre application, puis cliquez sur **Enregistrer.**
 
@@ -69,25 +69,25 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
    - **Remarque**: WindowsDefenderATP n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
 
-   ![Image de l’accès à l’API et de la sélection de l’API1](images/add-permission.png)
+   ![Image de l’accès à l’API et de la sélection d’API1.](images/add-permission.png)
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image de l’accès à l’API et de la sélection de l’API2](images/application-permissions.png)
+   ![Image de l’accès à l’API et de la sélection d’API2.](images/application-permissions.png)
 
    **Remarque importante**: vous devez sélectionner les autorisations pertinentes. « Lire toutes les alertes » n’est qu’un exemple !
 
      Par exemple,
 
      - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
-     - Pour [isoler un ordinateur,](isolate-machine.md)sélectionnez l’autorisation « Isoler l’ordinateur »
+     - Pour [isoler un ordinateur, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
      - Pour déterminer l’autorisation qui vous est nécessaire, consultez la section **Autorisations** de l’API que vous souhaitez appeler.
 
 5. Cliquez sur **Accorder le consentement**
 
    - **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez cliquer sur **Accorder le consentement** pour que la nouvelle autorisation prenne effet.
 
-   ![Image de l’octroi d’autorisations](images/grant-consent.png)
+   ![Image d’octroi d’autorisations.](images/grant-consent.png)
 
 6. Ajoutez un secret à l’application.
 
@@ -95,13 +95,13 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
     **Important**: après avoir cliqué sur Ajouter, **copiez la valeur de secret générée.** Vous ne pourrez plus récupérer une fois que vous êtes parti !
 
-    ![Image de la clé de création d’application](images/webapp-create-key2.png)
+    ![Image de la clé de création d’application.](images/webapp-create-key2.png)
 
 7. Notez votre ID d’application et votre ID de client :
 
    - Dans la page de votre application, allez à **Vue d’ensemble** et copiez ce qui suit :
 
-   ![Image de l’ID d’application créé](images/app-and-tenant-ids.png)
+   ![Image de l’ID d’application créé.](images/app-and-tenant-ids.png)
 
 Terminé ! Vous avez réussi à inscrire une application !
 
@@ -139,13 +139,13 @@ Terminé ! Vous avez réussi à inscrire une application !
   - Coller dans la zone supérieure.
   - Recherchez la section « rôles ». Recherchez le rôle Alert.Read.All.
 
-  ![Image jwt.ms](images/api-jwt-ms.png)
+  ![Image jwt.ms.](images/api-jwt-ms.png)
 
 ### <a name="lets-get-the-alerts"></a>Permet d’obtenir les alertes !
 
 - Le script ci-dessous utilise **Get-Token.ps1** pour accéder à l’API et reçoit les dernières alertes de 48 heures.
 - Enregistrez ce script dans le dossier que vous avez enregistré le script **précédentGet-Token.ps1**.
-- Le script crée deux fichiers (json et csv) avec les données du même dossier que les scripts.
+- Le script crée deux fichiers (json et csv) avec les données dans le même dossier que les scripts.
 
   ```powershell
   # Returns Alerts created in the past 48 hours.

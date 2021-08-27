@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 87e1532f126488e21d869d4f04a04d56c483f6b6
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 5afa8ec7fc6d4adeef5a099a18e335b7a9e68f5b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509856"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567363"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 
@@ -36,9 +36,9 @@ ms.locfileid: "58509856"
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Le blocage du comportement client est un composant des fonctionnalités de blocage du comportement et de blocage [de](behavioral-blocking-containment.md) contenu dans Defender for Endpoint. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement.
+Le blocage du comportement client est un composant [des](behavioral-blocking-containment.md) fonctionnalités de blocage et de blocage du comportement dans Defender pour point de terminaison. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement.
 
-:::image type="content" alt-text="Protection du cloud et du client" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" alt-text="Protection du cloud et du client." source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 La protection antivirus fonctionne mieux lorsqu’elle est couplée à la protection cloud.
 

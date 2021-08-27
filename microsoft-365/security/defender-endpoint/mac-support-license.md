@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes de licence pour Microsoft Defender pour point de terminaison sur Mac
+title: Résoudre les problèmes de licence pour Microsoft Defender pour endpoint sur Mac
 description: Résolution des problèmes de licence dans Microsoft Defender pour point de terminaison sur Mac.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, performances
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 215c652520dd7267ec38e1eabc79f4268b3fcc1c0b85c19a7555816ed6eb80c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5b1cee16f4eccaa8f6fd36d8764b1305cba3131f
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839605"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611282"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de licence pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -40,7 +40,7 @@ ms.locfileid: "53839605"
 
 Pendant que vous êtes en cours d’utilisation de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) et les tests de déploiement manuel ou d’une preuve de concept, vous pouvez obtenir l’erreur suivante : [](mac-install-manually.md)
 
-![Image de l’erreur de licence](images/no-license-found.png)
+![Image de l’erreur de licence.](images/no-license-found.png)
 
 **Message:** 
 
@@ -52,7 +52,7 @@ Contactez votre administrateur pour obtenir de l'aide.
 
 **Cause :** 
 
-Vous avez déployé et/ou installé le package Microsoft Defender for Endpoint pour macOS (« Télécharger le package d’installation ») mais vous avez peut-être exécuté le script de configuration (« Télécharger le package d’intégration ») ou vous n’avez pas attribué de licence à l’utilisateur.
+Vous avez déployé et/ou installé le package Microsoft Defender for Endpoint pour macOS (« Télécharger le package d’installation ») mais vous n’avez peut-être pas exécuté le script de configuration (« Télécharger le package d’intégration ») ou vous n’avez pas attribué de licence à l’utilisateur.
 
 **Solution :**
 

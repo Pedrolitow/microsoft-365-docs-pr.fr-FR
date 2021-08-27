@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4bfbf817279512c32f3862baa1aba75720eb81a8e5d385a5433951eaa4c29aff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1806a0a21dc5f3fc300442f31da5016ffcf99e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877702"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567375"
 ---
 # <a name="device-profiles"></a>Profils d’appareil
 
@@ -29,7 +29,7 @@ Vous pouvez affecter différentes configurations pré-définies (« profils d’
 
 Vous pouvez penser que les profils d’appareil font partie d’une hiérarchie d’options de configuration d’appareil.
 
-:::image type="content" source="../../media/mmd-profile-options-heirarchy.png" alt-text="Configurations d’appareil affichées sous la forme d’une pyramide. Description :":::
+:::image type="content" source="../../media/mmd-profile-options-heirarchy.png" alt-text="Configurations d’appareil affichées sous la forme d’une pyramide. Description suivante.":::
 
 Fondamentalement, chaque Microsoft Manged Desktop a une base qui inclut une ligne de base de sécurité standard, des stratégies de conformité, des Windows de mise à jour et des groupes. Pour fonctionner avec Microsoft Manged Desktop, chaque appareil doit inclure tous ces éléments, qui ne peuvent pas être modifiés par les administrateurs sans demande d’Microsoft Manged Desktop.
 

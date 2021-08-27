@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 34fd5ed4338e42ea37d4ad9eacb1d881bb2bf0e6
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 6b2ef03984e6ed7c9b93476869e998bb06b78a30
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399802"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566831"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
@@ -62,7 +62,7 @@ Voici comment fonctionne le processus.
 [Voir une version plus grande de cette image.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
 
 <!--
-[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
+[![Tenant preparation for mailbox migration.](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
 -->
 
 ### <a name="prepare-tenants"></a>Préparer les locataires
@@ -71,7 +71,7 @@ Voici comment fonctionne le processus.
 
 Préparez le client cible :
 
-1. Si un groupe de ressources Azure existant n’est pas fourni, un nouveau groupe de ressources est créé (SCRIPT).
+1. Si un groupe de ressources Azure existant n’est pas fourni, un nouveau groupe est créé (SCRIPT).
 2. Si un coffre de clés existant n’est pas fourni, un nouveau coffre est créé (SCRIPT).
 3. Une nouvelle stratégie d’accès est créée pour l’application Office 365 Exchange Online migration de boîtes aux lettres (SCRIPT).
 4. Un nouveau certificat est créé (ou existant, s’il est spécifié) pour contenir la question secrète dans l’application de migration (SCRIPT).
@@ -85,7 +85,7 @@ Préparez le client cible :
 
 Préparez le client source :
 
-1. L’administrateur client source accepte le consentement à l’invitation de l’application de migration de boîtes aux lettres à partir du client cible (MANUAL).
+1. L’administrateur client source accepte l’invitation de l’application de migration de boîtes aux lettres du client cible (MANUAL).
 2. L’administrateur client source crée un groupe de sécurité à messagerie dans son client pour contenir la liste des boîtes aux lettres autorisées à être déplacées par l’application de migration (MANUAL).
 3. Une relation d’organisation est créée avec le client cible en spécifiant que l’application de migration de boîte aux lettres doit être utilisée pour la vérification OAuth afin d’accepter la demande de déplacement (SCRIPT).
 
@@ -94,7 +94,7 @@ Préparez le client source :
 1. Téléchargez le script SetupCrossTenantRelationshipForTargetTenant.ps1 pour la configuration du client cible à partir du [référentiel GitHub.](https://github.com/microsoft/cross-tenant/releases/tag/Preview)
 2. Enregistrez le script (SetupCrossTenantRelationshipForTargetTenant.ps1) sur l’ordinateur à partir duquel vous allez exécuter le script.
 3. Créez une connexion PowerShell distante au client Exchange Online cible. Là encore, assurez-vous que vous avez les autorisations nécessaires pour exécuter les scripts de déploiement afin de configurer le certificat et le stockage Azure Key Vault, l’application de déplacement de boîte aux lettres, le point de terminaison de migration EXO et la relation d’organisation EXO.
-4. Modifiez le répertoire du dossier de fichiers en emplacement de script ou vérifiez que le script est actuellement enregistré à l’emplacement actuellement dans votre session PowerShell distante.
+4. Modifiez le répertoire de dossiers de fichiers en emplacement de script ou vérifiez que le script est actuellement enregistré à l’emplacement actuellement dans votre session PowerShell distante.
 5. Exécutez le script avec les valeurs et paramètres suivants.
 
    |Paramètre|Valeur|Obligatoire ou facultatif
@@ -148,7 +148,7 @@ Préparez le client source :
 
 8. Connectez-vous avec vos informations d’identification d’administrateur global. Lorsque l’écran suivant est présenté, sélectionnez **Accepter**.
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Boîte de dialogue Accepter les autorisations":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Boîte de dialogue Accepter les autorisations.":::
 
 9. Revenir à la session PowerShell distante et accéder à Entrée pour continuer.
 
@@ -171,7 +171,7 @@ La configuration de l’administrateur cible est maintenant terminée !
 
 2. Sélectionnez **Accepter** pour accepter l’invitation.
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Boîte de dialogue pour accepter les autorisations":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Boîte de dialogue pour accepter les autorisations.":::
 
    > [!NOTE]
    > Si vous ne recevez pas cet e-mail ou si vous ne le trouvez pas, l’administrateur client cible a reçu une URL directe qui peut vous être fournie pour accepter l’invitation. L’URL doit être dans la transcription de la session PowerShell distante de l’administrateur client cible.
@@ -289,7 +289,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>Déplacer les boîtes aux lettres vers la source d’origine
 
-Si un déplacement de boîte aux lettres vers le client source d’origine est requis, le même ensemble d’étapes et de scripts devra être exécuté dans les nouveaux locataires source et cible. L’objet Relation d’organisation existant sera mis à jour ou appendé, et non recréé.
+Si un déplacement de boîte aux lettres vers le client source d’origine est nécessaire, le même ensemble d’étapes et de scripts devra être exécuté dans les nouveaux locataires source et cible. L’objet Relation d’organisation existant sera mis à jour ou appendé, et non recréé.
 
 ## <a name="prepare-target-user-objects-for-migration"></a>Préparer les objets utilisateur cibles pour la migration
 
@@ -355,7 +355,7 @@ Vous devez vous assurer que les objets et attributs suivants sont définies dans
     > [!NOTE]
     > EXEMPLE – EN L’ABSENCE DE GARANTIE
     >
-    > Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et à la cible Active Directory sur site (pour marquer l’objet ADUser). Si la source est pour litige ou si la récupération d’élément unique est activée, définissez-la sur le compte de destination.  Cela augmente la taille de benne du compte de destination à 100 Go.
+    > Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et à la cible Active Directory sur site (pour marquer l’objet ADUser). Si le litige ou la récupération d’élément unique est activé pour la source, définissez-le sur le compte de destination.  Cela augmente la taille de benne du compte de destination à 100 Go.
 
     ```powershell
     $ELCValue = 0
@@ -408,7 +408,7 @@ Vous devez vous assurer que les objets et attributs suivants sont définies dans
 
 ## <a name="perform-mailbox-migrations"></a>Effectuer des migrations de boîtes aux lettres
 
-Les migrations de boîtes aux lettres Exchange entre les locataires sont envoyées en tant que lots de migration initiés à partir du client cible. Cela est similaire au mode de travail des lots de migration d’embarquement lors de la migration de Exchange en local vers Microsoft 365.
+Les migrations entre Exchange boîtes aux lettres sont envoyées en tant que lots de migration initiés à partir du client cible. Cela est similaire au mode de travail des lots de migration d’embarquement lors de la migration de Exchange en local vers Microsoft 365.
 
 ### <a name="create-migration-batches"></a>Créer des lots de migration
 
@@ -457,7 +457,7 @@ Get-MoveRequest -Flags "CrossTenant"
 **Pouvez-vous fournir des exemples de scripts pour copier les attributs utilisés lors des tests ?**
 
 > [!NOTE]
-> EXEMPLE – EN L’ABSENCE DE GARANTIE<br/>Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et aux services de domaine Active Directory locaux cibles (pour marquer l’objet ADUser). Si la source est pour litige ou si la récupération d’élément unique est activée, définissez-la sur le compte de destination.  Cela augmente la taille de benne du compte de destination à 100 Go.
+> EXEMPLE – EN L’ABSENCE DE GARANTIE<br/>Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et aux services de domaine Active Directory locaux cibles (pour marquer l’objet ADUser). Si le litige ou la récupération d’élément unique est activé pour la source, définissez-le sur le compte de destination.  Cela augmente la taille de benne du compte de destination à 100 Go.
 
 ```powershell
 #Dumps out the test mailboxes from SourceTenant
@@ -609,7 +609,7 @@ Pour vous aider à planifier [](/exchange/mailbox-migration/office-365-migration
 
 N’oubliez pas que cette fonctionnalité est actuellement en prévisualisation et que le SLA et les niveaux de service applicables ne s’appliquent pas aux problèmes de performances ou de disponibilité pendant l’état d’aperçu de cette fonctionnalité.
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - **Problème : les archives à extension automatique ne peuvent pas être migrées.** La fonctionnalité de migration entre locataires permet de migrer la boîte aux lettres principale et la boîte aux lettres d’archivage d’un utilisateur spécifique. Si l’utilisateur dans la source possède toutefois une archive à extension automatique , ce qui signifie que plusieurs boîtes aux lettres d’archivage, la fonctionnalité ne peut pas migrer les archives supplémentaires et doit échouer.
 
@@ -703,7 +703,7 @@ N’oubliez pas que cette fonctionnalité est actuellement en prévisualisation 
       |Nom|
       |---|
       |Advanced eDiscovery Stockage (500 Go)|
-      |Customer Lockbox|
+      |Référentiel sécurisé client|
       |Protection contre la perte de données|
       |Services CAL Exchange Enterprise (EOP, DLP)|
       |Exchange Essentials|

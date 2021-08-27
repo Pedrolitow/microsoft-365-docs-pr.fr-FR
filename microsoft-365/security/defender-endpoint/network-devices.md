@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4e3665e148cd08bfef2fd56e1d51595ed7626a57a82cc6c3b3577b8d157bb1a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b365be018fafb487fb689acb09749804f849ce3b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884570"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550057"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Découverte et découverte de périphériques réseau gestion des vulnérabilités
 
@@ -38,7 +38,7 @@ ms.locfileid: "53884570"
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]  
-> Le [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) blog sur les évaluations de la vulnérabilité et de la découverte des périphériques réseau publié le \( 13/04/2021 fournit des informations sur les nouvelles fonctionnalités de découverte d’appareils réseau dans \) Defender pour endpoint.  Cet article fournit une vue  d’ensemble du défi que la découverte de périphériques réseau est conçue pour répondre, ainsi que des informations détaillées sur la façon de commencer à utiliser ces nouvelles fonctionnalités.
+> Le [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) blog sur les évaluations de la vulnérabilité et de la détection des périphériques réseau publié le \( 13/04/2021 fournit des informations sur les nouvelles fonctionnalités de découverte de périphériques réseau dans Defender pour le point de \) terminaison.  Cet article fournit une vue  d’ensemble du défi que la découverte de périphériques réseau est conçue pour résoudre, ainsi que des informations détaillées sur la façon de commencer à utiliser ces nouvelles fonctionnalités.
 
 Les fonctionnalités de découverte de réseau sont disponibles dans la **section** Inventaire des appareils du centre de sécurité Microsoft 365 et des consoles Microsoft 365 Defender réseau.  
 
@@ -110,7 +110,7 @@ Pour configurer les travaux d’évaluation, l’option d’autorisation utilisa
 2. Téléchargez le scanneur réseau et installez-le sur le périphérique d’évaluation Defender for Endpoint désigné.
 
     > [!div class="mx-imgBorder"]
-    > ![Bouton Télécharger le scanneur](images/assessment-jobs-download-scanner.png)
+    > ![Télécharger le bouton scanneur.](images/assessment-jobs-download-scanner.png)
 
 ## <a name="network-scanner-installation--registration"></a>Inscription de l’installation du scanneur & réseau
 
@@ -134,7 +134,7 @@ Dans la page Travaux d’évaluation **Paramètres**, **sélectionnez Ajouter un
 Pour éviter la duplication des appareils dans l’inventaire des périphériques réseau, assurez-vous que chaque adresse IP n’est configurée qu’une seule fois sur plusieurs périphériques d’évaluation.
 
 > [!div class="mx-imgBorder"]
-> ![Bouton Ajouter un travail d’évaluation réseau](images/assessment-jobs-add.png)
+> ![Bouton Ajouter un travail d’évaluation réseau.](images/assessment-jobs-add.png)
 
 Ajout des étapes d’un travail d’évaluation réseau :
 
@@ -164,7 +164,7 @@ Une fois les résultats obtenus, vous pouvez choisir les appareils qui seront in
 Les appareils nouvellement découverts s’afficheront sous le nouvel onglet **Périphériques** réseau dans la page **Inventaire des** appareils. L’ajout d’un travail d’évaluation peut prendre jusqu’à deux heures jusqu’à ce que les appareils soient mis à jour.
 
 > [!div class="mx-imgBorder"]
-> ![Section Périphériques réseau dans l’inventaire des appareils](images/assessment-jobs-device-inventory.png)
+> ![Section Périphériques réseau dans l’inventaire des appareils.](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 

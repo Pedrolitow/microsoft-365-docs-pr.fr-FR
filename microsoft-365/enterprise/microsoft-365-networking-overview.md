@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Explique pourquoi l’optimisation du réseau est importante pour les services SaaS, l’objectif de Microsoft 365 réseau et comment SaaS nécessite une mise en réseau différente des autres charges de travail.
-ms.openlocfilehash: ce9b7f7f8011e0d0b12d9b0524cf540948f7aab8
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 05e30c7ef3caedff54b45b95f90b4a9f1036193d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533158"
+ms.locfileid: "58566777"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 vue d’ensemble de la connectivité réseau
 
@@ -68,7 +68,7 @@ Microsoft 365 aide à répondre aux besoins de votre organisation en matière de
 
 ## <a name="why-is-microsoft-365-networking-different"></a>Pourquoi la mise Microsoft 365 réseau est-elle différente ?
 
-Microsoft 365 est conçu pour optimiser les performances à l’aide de la sécurité des points de terminaison et des connexions réseau chiffrées, ce qui réduit le besoin d’application de la sécurité de périmètre. Microsoft 365 centres de données sont situés dans le monde entier et le service est conçu pour utiliser différentes méthodes pour connecter les clients aux points de terminaison de service les plus disponibles. Étant donné que les données utilisateur et le traitement sont distribués entre de nombreux centres de données Microsoft, il n’existe pas de point de terminaison réseau unique auquel les ordinateurs clients peuvent se connecter. En fait, les données et les services de votre client Microsoft 365 sont optimisés dynamiquement par le réseau global Microsoft pour s’adapter aux emplacements géographiques à partir des lesquels ils sont accessibles par les utilisateurs finaux.
+Microsoft 365 est conçu pour optimiser les performances à l’aide de la sécurité des points de terminaison et des connexions réseau chiffrées, ce qui réduit le besoin d’application de la sécurité de périmètre. Microsoft 365 centres de données sont situés dans le monde entier et le service est conçu pour utiliser différentes méthodes pour connecter les clients aux points de terminaison de service les plus disponibles. Étant donné que les données utilisateur et le traitement sont distribués entre de nombreux centres de données Microsoft, il n’existe pas de point de terminaison réseau unique auquel les ordinateurs clients peuvent se connecter. En fait, les données et les services de votre client Microsoft 365 sont optimisés dynamiquement par le réseau global De Microsoft pour s’adapter aux emplacements géographiques à partir des lesquels ils sont accessibles par les utilisateurs finaux.
 
 Certains problèmes de performances courants sont créés lorsque Microsoft 365 trafic est soumis à l’inspection des paquets et à la sortie centralisée :
 
@@ -78,7 +78,7 @@ Certains problèmes de performances courants sont créés lorsque Microsoft 365 
 
 Le raccourcissement du chemin d’accès réseau vers les points d’entrée Microsoft 365 en permettant au trafic client de s’egresser aussi près que possible de son emplacement géographique peut améliorer les performances de connectivité et l’expérience de l’utilisateur final dans Microsoft 365. Elle peut également aider à réduire l’impact des modifications futures apportées à l’architecture réseau sur Microsoft 365 performances et la fiabilité. Le modèle de connectivité optimal consiste à toujours fournir une sortie réseau à l’emplacement de l’utilisateur, que ce soit sur le réseau de l’entreprise ou sur des emplacements distants tels que la maison, les restaurants, les café et les aéroports. Le trafic Internet générique et le trafic réseau d’entreprise wan sont acheminés séparément et n’utilisent pas le modèle de sortie directe locale. Ce modèle local de sortie directe est représenté dans le diagramme ci-dessous.
 
-![Architecture du réseau de sortie local](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Architecture réseau de sortie locale.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
 L’architecture de sortie locale présente les avantages suivants pour le trafic de réseau Microsoft 365 par rapport au modèle traditionnel :
   

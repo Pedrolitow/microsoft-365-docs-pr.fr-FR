@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfacd679a48c81b7a952638f2944d0fe6a8d9123
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.openlocfilehash: 34d3f7fa8c12d1509b864bc45e97717dbf01f534
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408093"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533278"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -115,7 +115,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   |Microsoft Power Automate||![Coche](../media/checkmark.png)|
   |Microsoft Project|![Coche](../media/checkmark.png)||
   |Microsoft Stream|![Coche](../media/checkmark.png)||
-  |Microsoft Teams|![Coche](../media/checkmark.png)||
+  |Microsoft Teams|![Coche](../media/checkmark.png)||
   |Power Apps||![Coche](../media/checkmark.png)|
   |Power BI|![Coche](../media/checkmark.png)||
   |Centre de conformité Microsoft 365|![Coche](../media/checkmark.png)||
@@ -844,7 +844,7 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 
 ### <a name="microsoft-power-automate-activities"></a>Activités Microsoft Power Automate
 
-Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Power Automate (précédemment appelé Microsoft Flow). Ces activités incluent la création, la modification et la suppression de flux, et la modification des autorisations de flux. Pour plus d’informations sur l’audit des activités de Power Automate, voir le blog [événements d’audit de Microsoft Flow désormais disponible dans le Centre de conformité Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Power Automate (précédemment appelé Microsoft Flow). Ces activités incluent la création, la modification et la suppression de flux, et la modification des autorisations de flux. Pour plus d'informations sur l'audit des activités de Power Automate, consultez le blog Les événements d'audit de [Power Automate sont désormais disponibles dans le centre de conformité de Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-power-apps-activities"></a>Activités Microsoft Power Apps
 

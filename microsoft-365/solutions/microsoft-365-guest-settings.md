@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: b8b8b8481dca5074d2db6c3022d65e160cdf7b04
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: 056152e44dbe2fc11265e64c548b1056fd72e517
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58418023"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573822"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -42,7 +42,7 @@ Azure Active Directory est le service d’annuaire utilisé par Microsoft 365. L
 
 **Navigation :** [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Identités externes > Paramètres de collaboration externe
 
-![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory.](../media/azure-ad-organizational-relationships-settings.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -63,7 +63,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau or
 
 **Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres de l’organisation > Paramètres > Onglet Sécurité et confidentialité > Partage
 
-![Capture d’écran des paramètres de sécurité et de confidentialité pour le partage d’invités dans le Centre d’administration Microsoft 365](../media/sharepoint-security-privacy-sharing-setting.png)
+![Capture d’écran des paramètres de sécurité et de confidentialité pour le partage d’invités dans le Centre d’administration Microsoft 365.](../media/sharepoint-security-privacy-sharing-setting.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -73,7 +73,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau or
 
 **Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres > Paramètres > Groupes Microsoft 365
 
-![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365.](../media/office-365-groups-guest-settings.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -92,7 +92,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 **Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
 
-![Capture d’écran du commutateur Accès invité dans Teams](../media/teams-guest-access-toggle.png)
+![Capture d’écran du commutateur d’accès invité dans Teams.](../media/teams-guest-access-toggle.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -102,7 +102,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 **Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
 
-![Capture d’écran des options d’appel d’invité dans Teams](../media/teams-guest-calling-setting.png)
+![Capture d’écran des options d’appel d’invité dans Teams.](../media/teams-guest-calling-setting.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -124,7 +124,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 **Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
 
-![Capture d’écran des paramètres de messagerie d’invité dans Teams](../media/teams-guest-messaging-settings.png)
+![Capture d’écran des paramètres de messagerie d’invité dans Teams.](../media/teams-guest-messaging-settings.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -149,7 +149,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 **Navigation :** Centre d’administration SharePoint > Partage
 
-![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation](../media/external-sharing.png)
+![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation.](../media/external-sharing.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -160,7 +160,7 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 
 **Navigation :** Centre d’administration SharePoint > Partage
 
-![Capture d’écran des paramètres de partage supplémentaires au niveau de l’organisation dans SharePoint](../media/external-sharing.png)
+![Capture d’écran des paramètres de partage supplémentaires au niveau de l’organisation dans SharePoint.](../media/external-sharing.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -177,7 +177,7 @@ Lorsque des fichiers et dossiers sont partagés sur SharePoint et OneDrive, les 
 
 **Navigation :** Centre d’administration SharePoint > Partage
 
-![Capture d’écran des paramètres de partage de fichiers et dossiers au niveau de l’organisation dans SharePoint](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![Capture d’écran des paramètres de partage de fichiers et dossiers au niveau de l’organisation dans SharePoint.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -200,7 +200,7 @@ Si une étiquette de confidentialité est appliquée au site, celle-ci peut cont
 
 **Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site> Onglet des stratégies > Modifier le partage externe
 
-![Capture d’écran des paramètres de partage externe de site SharePoint](../media/sharepoint-site-external-sharing-settings.png)
+![Capture d’écran des paramètres de partage externe de site SharePoint.](../media/sharepoint-site-external-sharing-settings.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
@@ -212,7 +212,7 @@ Vous pouvez définir les valeurs par défaut pour le type de lien et les autoris
 
 **Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site> Onglet des stratégies > Modifier le partage externe
 
-![Capture d’écran des paramètres de partage SharePoint au niveau du site](../media/sharepoint-site-link-sharing-settings.png)
+![Capture d’écran des paramètres de partage SharePoint au niveau du site.](../media/sharepoint-site-link-sharing-settings.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
