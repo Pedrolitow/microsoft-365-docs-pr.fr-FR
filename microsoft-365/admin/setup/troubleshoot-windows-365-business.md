@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: Découvrez comment résoudre les problèmes d’installation pour Windows 365 Business Cloud.
 ms.date: 08/13/2021
-ms.openlocfilehash: 5602df4eaf140fec86a28252bb88763bd6417f50
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 701d1ce3ae97836d6687050e16a176aad85e2995
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532930"
+ms.locfileid: "58598929"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>Résoudre les Windows d’installation de PC Cloud 365 Business
 
@@ -49,15 +49,15 @@ Si vos utilisateurs obtiennent l’erreur « Le programme d’installation a éc
 
 ## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>Étape 2. Vérifier que le compte Windows système d’utilisateur permanent BPRT 365 est actif
 
-La première fois qu’une licence Windows 365 est attribuée dans votre organisation, un compte système appelé utilisateur permanent **WINDOWS 365 BPRT** est automatiquement créé dans Azure AD. Ne supprimez pas ce compte et n’a modifiez pas ce compte (par exemple, en modifiant le nom ou l’UPN). Si le compte système est supprimé, le programme d’installation échoue. Ce compte système garantit un processus de configuration fluide et n’a pas de fonctionnalités d’écriture ni d’accès à votre organisation au-delà des fonctionnalités de service étendues de Windows 365 Business. Si vous supprimez ce compte système, vous devez ouvrir une nouvelle demande de support pour le restaurer.
+La première fois qu’une licence Windows 365 est attribuée dans votre organisation, un compte système appelé utilisateur permanent **WINDOWS 365 BPRT** est automatiquement créé dans Azure AD. Ne supprimez pas ce compte et n’a modifiez pas ce compte (par exemple, en modifiant le nom ou l’UPN). Si le compte système est modifié ou supprimé, l’installation échoue. Ce compte système garantit un processus de configuration fluide et n’a pas de fonctionnalités d’écriture ni d’accès à votre organisation au-delà des fonctionnalités de service étendues de Windows 365 Business. Si vous supprimez ou modifiez ce compte système, vous devez vous connecter à windows365.microsoft.com avec n’importe quel compte 365 Business avec une licence Windows 365 Business et attendre 12 heures pour que le jeton s’actualise.
 
 Pour vous assurer que le compte Windows utilisateur permanent BPRT 365 est actif dans Azure AD, utilisez les étapes suivantes.
 
 1. Dans le portail Azure, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. Dans le navigation de gauche, sous **Gérer,** sélectionnez **Utilisateurs.**
 3. Dans la zone de recherche, tapez Windows utilisateur permanent **BPRT 365,** puis appuyez sur **Entrée**.
-4. Si le compte Windows système d’utilisateur permanent BPRT 365 est présent, allez à [l’étape 3. Vérifiez que l' mba basée sur l’appareil est désactivée.](#step-3-verify-that-device-based-mfa-is-turned-off)
-5. Si le Windows système d’utilisateur permanent BPRT 365 est manquant, dans le navigation gauche, sélectionnez Nouvelle demande de **support** pour ouvrir un ticket de support. Une fois le ticket de support fermé, allez directement à [l’étape 6. Réinitialisez vos PC cloud.](#step-6-reset-your-cloud-pcs)
+4. Si le Windows système d’utilisateur permanent BPRT 365 est présent, allez à [l’étape 3. Vérifiez que l' mba basée sur l’appareil est désactivée.](#step-3-verify-that-device-based-mfa-is-turned-off)
+5. Si le compte système d’utilisateur permanent Windows 365 BPRT est manquant ou si des modifications lui ont été apportées, connectez-vous à windows365.microsoft.com avec un compte 365 Business avec une licence Windows 365 Business. Un nouvel Windows utilisateur permanent BPRT 365 sera généré dans 12 heures. Une fois le jeton régénéré, allez directement à [l’étape 6. Réinitialisez vos PC cloud.](#step-6-reset-your-cloud-pcs)
 
 ## <a name="step-3-verify-that-device-based-mfa-is-turned-off"></a>Étape 3. Vérifier que l’mfmf basée sur l’appareil est désactivée
 
@@ -124,107 +124,14 @@ Si vous ne prévoyez pas d’utiliser Microsoft Intune pour la gestion de votre 
 > [!IMPORTANT]
 > Si vous n’êtes pas l’administrateur DE LAM, n’utilisez aucune des procédures suivantes sans avoir consulté au départ votre administrateur informatique. Suivez uniquement ces procédures si les PC cloud ne sont pas en cours de mise en place. Toute modification de configuration peut avoir un impact sur votre environnement de gestion. Si vous avez besoin d’aide, [contactez le support Intune.](/mem/get-support)
 
-#### <a name="option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>Option 1. Utiliser le portail Azure AD pour désactiver l’inscription automatique à Intune
+#### <a name="use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>Utiliser le portail Azure AD pour désactiver l’inscription automatique à Intune
 
 1. Dans le portail Azure, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. Dans le navigation de gauche, sous **Gérer,** sélectionnez **Mobilité (MDM et MAM),** puis sélectionnez **Microsoft Intune**.
-3. Dans la page **Configurer,** en de côté de l’étendue utilisateur DE LA GESTION, sélectionnez **Aucun,** puis **Sélectionnez Enregistrer**.
+3. Dans la page **Configurer,** vous verrez l’un des deux éléments. Si vous avez un abonnement Azure AD Premium, sélectionnez **Aucun** en de côté de l’étendue utilisateur MDM, puis **sélectionnez Enregistrer**. Si vous n’avez pas d’abonnement Azure AD Premium, **sélectionnez Désactiver.**
 4. Dans le navigation de gauche, sous **Gérer,** sélectionnez **Mobilité (MDM** et MAM), sélectionnez Microsoft Intune **inscription,** puis répétez l’étape 3.
 5. Allez à [l’étape 6. Réinitialisez vos PC cloud.](#step-6-reset-your-cloud-pcs)
 
-#### <a name="option-2-use-microsoft-graph-to-turn-off-automatic-intune-enrollment"></a>Option 2 : utiliser Microsoft Graph pour désactiver l’inscription automatique à Intune
-
-Si vous ne pouvez pas utiliser le portail d’administration Microsoft Azure pour configurer la mobilité **(MDM** et MAM), comme indiqué dans l’option [1. Utilisez le portail Azure AD](#option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment)pour désactiver l’inscription Automatique à Intune. Un avertissement s’est produit : « L’inscription mdm automatique est disponible uniquement pour les abonnés Azure AD Premium clients . » Dans ce cas, vous devez utiliser Microsoft Graph pour désactiver les stratégies de gestion des stratégies de gestion des Graph dans votre environnement.
-
-1. Go to Graph Explorer at <a href="https://go.microsoft.com/fwlink/p/?linkid=2170005">https://developer.microsoft.com/graph/graph-explorer</a> .
-2. Sous **Graph' Explorateur,** sélectionnez Se Graph **Explorer** et connectez-vous avec votre compte d’administrateur global.
-3. Si vous voyez la boîte **de dialogue Autorisations demandées,** sélectionnez **Accepter.**
-4. En de côté du nom de votre compte, sélectionnez le bouton **Plus d’actions** (les trois points), puis **sélectionnez Sélectionner les autorisations.**
-5. Dans le **volet Autorisations,** développez **Stratégie,** sélectionnez **Policy.Read.All** et **Policy.ReadWrite.MobilityManagement,** puis **sélectionnez Consentement.**
-6. Si vous voyez la boîte de  **dialogue Autorisations demandées,** cochez la case Consentement au nom de votre organisation, puis **sélectionnez Accepter.**
-7. Développez **de** nouveau  la stratégie, vérifiez que la colonne État pour **Policy.Read.All** et **Policy.ReadWrite.MobilityManagement** indique **Consentement,** puis fermez le volet **Autorisations.**
-8. Dans la première liste de listes, sélectionnez **GET**.
-9. Dans la zone de texte, entrez la chaîne suivante, puis **sélectionnez Exécuter la requête**:  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`  
-    Cette requête récupère la liste des stratégies de gestion des appareils de votre organisation.
-   Les résultats dans le volet **Aperçu** de la réponse doivent ressembler à l’extrait de code suivant :
-
-    ```
-    {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#mobilityManagementPolicies",
-        "value": [
-            {
-                "id": "0000000a-0000-0000-c000-000000000000",
-                "appliesTo": "all",
-                "complianceUrl": null,
-                "description": "Device Management Policy for Microsoft Intune",
-                "discoveryUrl": null,
-                "displayName": "Microsoft Intune",
-                "isValid": true,
-                "termsOfUseUrl": null
-            },
-            {
-                "id": "d4ebce55-015a-49b5-a083-c84d1797ae8c",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction",
-                "description": "Device Management Policy for Microsoft Intune Enrollment",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc",
-                "displayName": "Microsoft Intune Enrollment",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            }
-        ]
-    }
-    ```
-10. Si la `"appliesTo"` valeur **n’est pas pour** toutes les stratégies répertoriées, allez à [l’étape 6. Réinitialisez vos PC cloud.](#step-6-reset-your-cloud-pcs) Dans le cas contraire, continuez à l’étape 11.
-11. Dans la première liste de listes, sélectionnez **PATCH**.
-12. Dans la zone de texte, entrez la chaîne suivante :  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/0000000a-0000-0000-c000-000000000000`
-13. Dans la section **Corps de** la demande, entrez l’extrait de code suivant, puis sélectionnez Exécuter **la requête**:
-    ```
-    {
-        "appliesTo": "none"
-    }
-    ```
-14. Dans la zone de texte, entrez la chaîne suivante :  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/d4ebce55-015a-49b5-a083-c84d1797ae8c`
-15. Dans la section **Corps de** la demande, laissez l’extrait de code que vous avez entré à l’étape 13, puis **sélectionnez Exécuter la requête.**
-16. Dans la première liste de listes, sélectionnez **GET**.
-17. Effacer tout texte dans la section **Corps de** la demande.
-18. Dans la zone de texte, entrez la chaîne suivante, puis **sélectionnez Exécuter la requête**:  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`
-
-    Les résultats dans le volet **d’affichage** de réponse doivent ressembler à l’extrait de code suivant.
-    ```
-    {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#mobilityManagementPolicies",
-        "value": [
-            {
-                "id": "0000000a-0000-0000-c000-000000000000",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction=Compliance",
-                "description": "Device Management Policy for Microsoft Intune",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc”,
-                "displayName": "Microsoft Intune",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            },
-            {
-                "id": "d4ebce55-015a-49b5-a083-c84d1797ae8c",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction",
-                "description": "Device Management Policy for Microsoft Intune Enrollment",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc",
-                "displayName": "Microsoft Intune Enrollment",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            }
-        ]
-    } 
-    ```
-
-    Les `"appliesTo"` valeurs de toutes les stratégies sont désormais définies sur **aucune.** Cette requête vérifie que l’étendue a bien changé pour les stratégies de gestion des appareils de votre organisation.
-19. Allez à [l’étape 6. Réinitialisez vos PC cloud.](#step-6-reset-your-cloud-pcs)
 
 ## <a name="step-6-reset-your-cloud-pcs"></a>Étape 6. Réinitialiser vos PC cloud
 

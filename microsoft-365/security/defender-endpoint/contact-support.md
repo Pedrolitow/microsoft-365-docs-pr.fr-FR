@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 89b34125e52de59da1254206c2681a650d4e3237
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 07d810f1588de01e4ee53294b39cc6b09b372046
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531538"
+ms.locfileid: "58594527"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter le support Microsoft Defender pour point de terminaison
 
@@ -39,7 +39,7 @@ Defender for Endpoint a récemment mis à niveau le processus de support pour of
 Le nouveau widget permet aux clients de :
 
 - Trouver des solutions aux problèmes courants
-- Soumettre un dossier de support à l’équipe de support Technique Microsoft
+- Soumettre un dossier de support à l’équipe de support Microsoft
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -47,7 +47,7 @@ Il est important de connaître les rôles spécifiques qui sont autorisés à ou
 
 Au minimum, vous devez avoir un rôle d’administrateur du support technique **OU** d’administrateur du support technique.
 
-Pour plus d’informations sur les rôles qui ont des autorisations, voir les [autorisations d’administrateur de sécurité.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Les rôles qui incluent l’action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
+Pour plus d’informations sur les rôles qui ont des autorisations, voir les [autorisations d’administrateur de sécurité.](/azure/active-directory/roles/permissions-reference#security-administrator) Les rôles qui incluent l’action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
 
 Pour obtenir des informations générales sur les rôles d’administrateur, voir [à propos des rôles d’administrateur.](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
 
@@ -57,11 +57,11 @@ L’accès au nouveau widget de support peut être effectué de deux manières :
 
 1. Cliquez sur le point d’interrogation en haut à droite du portail, puis sur « Support Microsoft » :
 
-    :::image type="content" source="../../media/contactsupport.png" alt-text="Support technique Microsoft":::
+    :::image type="content" source="../../media/contactsupport.png" alt-text="Support Microsoft.":::
 
 2. Vous avez besoin **d’aide en cliquant sur ?**  dans le coin inférieur droit du portail Microsoft 365 Defender:
 
-    ![Image du bouton d’aide nécessaire](images/need-help-option.png)
+    ![Image du bouton d’aide nécessaire.](images/need-help-option.png)
 
 Deux options s’offrent à vous dans le widget :
 
@@ -78,14 +78,14 @@ Si les articles suggérés ne sont pas suffisants, vous pouvez ouvrir une demand
 
 ## <a name="open-a-service-request"></a>Ouvrir une demande de service
 
-Découvrez comment ouvrir des tickets de support en contactant le support de Defender pour Endpoint.
+Découvrez comment ouvrir des tickets de support en contactant Defender pour le support technique Endpoint.
 
 > [!NOTE]
 > Si vous avez un contrat de support Premier avec Microsoft, vous verrez la balise premier sur le widget. Si ce n’est pas le cas, contactez votre gestionnaire de comptes Microsoft.
 
 ### <a name="contact-support"></a>Contacter l’assistance
 
-Cette option est disponible en cliquant sur l’icône qui ressemble à un casque. Vous recevez ensuite la page suivante pour soumettre votre dossier de support :
+:::image type="content" source="../../media/contactsupport2.png" alt-text="contacter le support technique 2."::: </br>
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="contacter le support technique 2":::
 

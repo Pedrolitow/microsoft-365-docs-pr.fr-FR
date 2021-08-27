@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7752c5af144ca5b02f05bbdd6632df808cf2f63c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257653"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607216"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
@@ -49,7 +49,7 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importer une vue personnalisée XML existante
 
-1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt à .xml) :
+1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
     - Vue personnalisée des événements Exploit Protection *:ep-events.xml*
     - Vue personnalisée des événements de réduction de la surface *d’attaque :asr-events.xml*
@@ -57,10 +57,10 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 2. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez **l’Observateur d’événements.**
 
-3. Sélectionner **l’affichage**  >  **personnalisé d’importation d’action...**
+3. Sélectionner **l’affichage** \> **personnalisé d’importation d’action...**
 
    > [!div class="mx-imgBorder"]
-   > ![Animation mettant en surbrillance l’importation d’une vue personnalisée à gauche de la fenêtre visionneuse even](images/events-import.gif)
+   > ![Animation mettant en surbrillance l’importation d’un affichage personnalisé à gauche de la fenêtre visionneuse even.](images/events-import.gif)
 
 4. Accédez à l’endroit où vous avez extrait le fichier XML pour l’affichage personnalisé que vous souhaitez, puis sélectionnez-le.
 
@@ -75,7 +75,7 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 2. Dans le panneau gauche, sous **Actions,** **sélectionnez Créer un affichage personnalisé...**
 
    > [!div class="mx-imgBorder"]
-   > ![Animation mettant en surbrillance l’option créer un affichage personnalisé dans la fenêtre de l’Observateur d’événements](images/events-create.gif)
+   > ![Animation mettant en surbrillance l’option créer un affichage personnalisé dans la fenêtre de l’Observateur d’événements.](images/events-create.gif)
 
 3. Go to the XML tab and select **Edit query manually**. Vous verrez un avertissement vous signalant que vous  ne pouvez pas modifier la requête à l’aide de l’onglet Filtre si vous utilisez l’option XML. Sélectionnez **Oui**.
 
@@ -146,7 +146,7 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 2. Développez **Journaux** des applications et des services > Microsoft > Windows puis allez dans le dossier répertorié sous **Fournisseur/source** dans le tableau ci-dessous.
 3. Double-cliquez sur le sous-élément pour voir les événements. Faites défiler les événements pour trouver celui que vous recherchez.
 
-   ![Animation montrant l’utilisation de l’Observateur d’événements](images/event-viewer.gif)
+   ![Animation montrant l’utilisation de l’Observateur d’événements.](images/event-viewer.gif)
 
 <br>
 
@@ -163,7 +163,7 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|7 |Bloquer l’audit des images distantes|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|8 |Bloquer le blocage des images distantes|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|9 |Désactiver l’audit des appels système win32k|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|10|Désactiver le blocage des appels système win32k|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|10 |Désactiver le blocage des appels système win32k|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|11 |Audit de la protection d’intégrité du code|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|12 |Blocage de la protection d’intégrité du code|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|13 |Audit EAF|
@@ -186,7 +186,7 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1124|Événement d’accès contrôlé aux dossiers audité|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1123|Événement d’accès contrôlé aux dossiers bloqué|
-|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1127|Événement bloqué de bloc d’écriture de secteur d’accès contrôlé aux dossiers|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1127|Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers bloqué|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1128|Événement de bloc d’écriture de secteur d’accès contrôlé aux dossiers audité|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|1122|Événement lorsque la règle se déclenche en mode audit|

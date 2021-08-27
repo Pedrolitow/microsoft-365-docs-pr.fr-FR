@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
-ms.openlocfilehash: 7fff73b2887418d47358b5424e537e5de4d60ce9
-ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
+ms.openlocfilehash: 4f1ec369913054e8fe119cebf3d647b42c133d34
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380247"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595667"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -73,7 +73,7 @@ Vous pouvez activer les règles de réduction de la surface d’attaque à l’a
 
 - [Microsoft Intune](#intune)
 - [Gestion des périphériques mobiles (MDM)](#mdm)
-- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Stratégie de groupe](#group-policy)
 - [PowerShell](#powershell)
 
@@ -93,15 +93,15 @@ Vous pouvez spécifier des fichiers ou des dossiers individuels (à l’aide de 
 
 Les règles de la asr prise en charge des variables d’environnement et des caractères génériques. Pour plus d’informations sur l’utilisation de caractères génériques, voir Utiliser des caractères génériques dans les listes d’exclusions de nom de fichier et de dossier ou [d’extension.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
 
-Les procédures suivantes pour l’activation des règles de la asr. contiennent des instructions pour exclure des fichiers et des dossiers.
+Les procédures suivantes pour l’activation des règles de la asr. incluent des instructions pour exclure des fichiers et des dossiers.
 
 ## <a name="intune"></a>Intune
 
-1. Sélectionnez **Profils de configuration**  >  **d’appareil.** Choisissez un profil de protection de point de terminaison existant ou créez-en un. Pour en créer un, sélectionnez Créer un **profil** et entrez des informations pour ce profil. Pour **le type de profil,** **sélectionnez Endpoint Protection**. Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
+1. Sélectionnez **Profils de configuration** \> **d’appareil.** Choisissez un profil de protection de point de terminaison existant ou créez-en un. Pour en créer un, sélectionnez Créer un **profil** et entrez des informations pour ce profil. Pour **le type de profil,** **sélectionnez Endpoint Protection**. Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
 
 2. Dans le **volet de protection des points** de terminaison, **sélectionnez Windows Defender Exploit Guard,** puis sélectionnez Réduction **de la surface d’attaque.** Sélectionnez le paramètre souhaité pour chaque règle de asr.
 
-3. Sous **Exceptions de réduction de la surface d’attaque,** entrez des fichiers et dossiers individuels. Vous pouvez également sélectionner **Importer** pour importer un fichier CSV qui contient des fichiers et des dossiers à exclure des règles asr. Chaque ligne du fichier CSV doit être mise en forme comme suit :
+3. Sous **Exceptions de réduction de la surface d’attaque,** entrez des fichiers et dossiers individuels. Vous pouvez également sélectionner **Importer** pour importer un fichier CSV qui contient des fichiers et des dossiers à exclure des règles de la asr. Chaque ligne du fichier CSV doit être mise en forme comme suit :
 
    `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
 
@@ -114,7 +114,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
 1. Ouvrez le Microsoft Endpoint Manager d’administration de l’utilisateur. Dans le menu **Accueil,** cliquez **sur Appareils,** sélectionnez **Profil de configuration,** puis cliquez **sur Créer un profil.**
 
    > [!div class="mx-imgBorder"]
-   > ![MEM Create Profile](images/mem01-create-profile.png)
+   > ![MEM Create Profile.](images/mem01-create-profile.png)
 
 2. Dans **Créer un profil,** dans les deux listes de listes suivantes, sélectionnez les listes suivantes :
 
@@ -124,17 +124,17 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    Sélectionnez **Personnalisé,** puis cliquez sur **Créer.**
 
    > [!div class="mx-imgBorder"]
-   > ![Attributs de profil de règle MEM](images/mem02-profile-attributes.png)
+   > ![Attributs de profil de règle MEM.](images/mem02-profile-attributes.png)
 
-3. L’outil modèle personnalisé s’ouvre à **l’étape 1 Principes de base.** Dans **1 Informations de** base, dans **Nom,** tapez un nom pour votre modèle, et dans **Description,** vous pouvez taper une description (facultative).
-
-   > [!div class="mx-imgBorder"]
-   > ![Attributs de base MEM](images/mem03-1-basics.png)
-
-4. Cliquez sur **Suivant**. Les **paramètres de configuration de l’étape 2** s’ouvrent. Pour l’OMA-URI Paramètres, cliquez sur **Ajouter.** Deux options s’affichent maintenant : **Ajouter** et **exporter.**
+3. L’outil modèle personnalisé s’ouvre à **l’étape 1 Éléments de base.** In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional).
 
    > [!div class="mx-imgBorder"]
-   > ![Paramètres de configuration MEM](images/mem04-2-configuration-settings.png)
+   > ![Attributs de base MEM.](images/mem03-1-basics.png)
+
+4. Cliquez sur **Suivant**. Les **paramètres de configuration de l’étape 2** s’ouvrent. Pour les Paramètres OMA-URI, cliquez sur **Ajouter.** Deux options s’affichent maintenant : **Ajouter** et **exporter.**
+
+   > [!div class="mx-imgBorder"]
+   > ![Paramètres de configuration MEM.](images/mem04-2-configuration-settings.png)
 
 5. Cliquez **à nouveau sur** Ajouter. La **ligne Ajouter un OMA-URI Paramètres** s’ouvre. Dans **Ajouter une ligne,** faites les choses suivantes :
 
@@ -145,11 +145,11 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    - Dans **Value,** tapez ou collez la valeur GUID, le signe et la valeur State sans espace \= (_GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
 
    > [!div class="mx-imgBorder"]
-   > ![Configuration OMA URI MEM](images/mem05-add-row-oma-uri.png)
+   > ![Configuration OMA URI MEM.](images/mem05-add-row-oma-uri.png)
 
 6. Cliquez sur **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé,** cliquez sur **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l'une des opérations suivantes :
 
-   - Cliquez **sur Sélectionner des balises d’étendue,** sélectionnez la balise d’étendue (facultative), puis cliquez sur **Suivant**.
+   - Cliquez **sur Sélectionner des balises d’étendue,** sélectionnez la balise d’étendue (facultative), puis cliquez sur **Suivant.**
    - Ou cliquez sur **Suivant**
 
 7. À **l’étape 4 Affectations,** dans **Groupes** inclus - pour les groupes que vous souhaitez que cette règle applique - sélectionnez l’une des options suivantes :
@@ -159,7 +159,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    - **Ajouter tous les appareils**
 
    > [!div class="mx-imgBorder"]
-   > ![Affectations MEM](images/mem06-4-assignments.png)
+   > ![Affectations MEM.](images/mem06-4-assignments.png)
 
 8. Dans **les groupes exclus,** sélectionnez les groupes que vous souhaitez exclure de cette règle, puis cliquez sur **Suivant**.
 
@@ -170,17 +170,17 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    - Dans **Valeur,** entrez la valeur applicable ou la plage de valeurs
 
    > [!div class="mx-imgBorder"]
-   > ![Règles d’applicabilité MEM](images/mem07-5-applicability-rules.png)
+   > ![Règles d’applicabilité MEM.](images/mem07-5-applicability-rules.png)
 
 10. Cliquez sur **Suivant**. À **l’étape 6 Révision + création,** examinez les paramètres et les informations que vous avez sélectionnés et entrés, puis cliquez sur **Créer.**
 
     > [!div class="mx-imgBorder"]
-    > ![Révision et création de MEM](images/mem08-6-review-create.png)
+    > ![Révision et création de MEM.](images/mem08-6-review-create.png)
 
     > [!NOTE]
     > Les règles sont actives et actives en quelques minutes.
 
->[!NOTE]
+> [!NOTE]
 > Gestion des conflits :
 >
 > Si vous affectez à un appareil deux stratégies DER différentes, la façon dont les conflits sont gérés est des règles qui sont affectées à différents états, il n’y a aucune gestion des conflits en place et le résultat est une erreur.
@@ -202,7 +202,7 @@ Les valeurs à activer (bloquer), désactiver, avertir ou activer en mode audit 
 - 0 : Désactiver (désactiver la règle asr)
 - 1 : Bloquer (activer la règle asr)
 - 2 : Audit (évaluer l’impact de la règle asr sur votre organisation si elle est activée)
-- 6 : Avertir (activer la règle asr mais autoriser l’utilisateur final à contourner le blocage). Le mode Avertissement est désormais disponible pour la plupart des règles de la asr.
+- 6 : Avertir (activer la règle asr mais autoriser l’utilisateur final à contourner le bloc). Le mode Avertissement est désormais disponible pour la plupart des règles de la asr.
 
 Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) pour ajouter des exclusions.
 
@@ -215,11 +215,11 @@ Exemple :
 > [!NOTE]
 > N’oubliez pas d’entrer des valeurs OMA-URI sans espaces.
 
-## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
+## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance**  >  **Endpoint Protection** Windows Defender  >  **Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** Windows Defender \> **Exploit Guard**.
 
-2. Sélectionnez **Home**  >  **Create Exploit Guard Policy**.
+2. Sélectionnez **Home** \> **Create Exploit Guard Policy**.
 
 3. Entrez un nom et une description, sélectionnez **Réduction de la surface** d’attaque, puis sélectionnez **Suivant**.
 
@@ -238,7 +238,7 @@ Exemple :
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender**  >    >  Protection contre les attaques Microsoft Defender réduction de la surface  >  **d’attaque.**
+3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> Protection contre les attaques Microsoft Defender réduction de la surface  \> **d’attaque.**
 
 4. Sélectionnez **Configurer les règles de réduction de la surface d’attaque** et **sélectionnez Activé.** Vous pouvez ensuite définir l’état individuel de chaque règle dans la section Options.
 
@@ -249,7 +249,7 @@ Exemple :
    - 2 : Audit (évaluer l’impact de la règle asr sur votre organisation si elle est activée)
    - 6 : Avertir (activer la règle asr mais autoriser l’utilisateur final à contourner le blocage)
 
-   :::image type="content" source="images/asr-rules-gp.png" alt-text="Règles asr dans la stratégie de groupe":::
+   :::image type="content" source="images/asr-rules-gp.png" alt-text="Règles asr dans la stratégie de groupe.":::
 
 5. Pour exclure des fichiers et des dossiers des règles de réduction de la surface d’attaque, sélectionnez le paramètre Exclure les fichiers et les chemins d’accès des règles de réduction de la **surface** d’attaque et définissez l’option **sur Activé.** Sélectionnez **Afficher** et entrez chaque fichier ou dossier dans la **colonne Nom de la** valeur. Entrez **0 dans** la colonne **Valeur** pour chaque élément.
 
@@ -269,13 +269,13 @@ Exemple :
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
     ```
 
-    Pour activer les règles asr en mode audit, utilisez l’cmdlet suivante :
+    Pour activer les règles asr en mode audit, utilisez la cmdlet suivante :
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
     ```
 
-    Pour activer les règles de la asr en mode d’avertissement, utilisez l';
+    Pour activer les règles asr en mode d’avertissement, utilisez l';
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
@@ -287,7 +287,7 @@ Exemple :
    Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled
    ```
 
-    Pour désactiver les règles de la asr, utilisez la cmdlet suivante :
+    Pour désactiver les règles de asr, utilisez l’cmdlet suivante :
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Disabled
@@ -322,7 +322,5 @@ Exemple :
 ## <a name="related-articles"></a>Articles connexes
 
 - [Règles de réduction de la surface d’attaque](attack-surface-reduction-rules.md)
-
 - [Évaluer la réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
-
 - [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)

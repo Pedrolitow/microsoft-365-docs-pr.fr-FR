@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 38f7ff40416835e9908757456520f0a90a745dfd
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: daedf3ebbf88c70cf5b3889a9d7560800ad16f5f
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508273"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595243"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Résolution des problèmes sur Microsoft Defender pour point de terminaison sur Android
 
@@ -42,9 +42,9 @@ Cet article fournit des solutions pour vous aider à résoudre les problèmes d'
 
 ## <a name="sign-in-failed---unexpected-error"></a>Échec de la signature : erreur inattendue
 
-**Échec de la signature : erreur** *inattendue, essayez plus tard*
+**Échec de la signature : erreur** *inattendue, essayez ultérieurement*
 
-![Image de l’erreur d’échec de la signature - Erreur inattendue](images/f9c3bad127d636c1f150d79814f35d4c.png)
+![Image de l’erreur d’échec de la signature. Erreur inattendue.](images/f9c3bad127d636c1f150d79814f35d4c.png)
 
 **Message:**
 
@@ -62,7 +62,7 @@ Installer la dernière version et [les](https://play.google.com/store/apps/detai
 
 **Échec de la signature : licence** non *valide, contactez l’administrateur*
 
-![Image de l’échec de la connectez-vous. Contactez l’administrateur](images/920e433f440fa1d3d298e6a2a43d4811.png)
+![Image de l’échec de la signature. Contactez l’administrateur.](images/920e433f440fa1d3d298e6a2a43d4811.png)
 
 **Message : licence** *non valide, contactez l’administrateur*
 
@@ -84,17 +84,17 @@ Les sites web de hameçonnage usurpent l’identité de sites web dignes de conf
 
 - **Érmi**
 
-L’hameçonnage et les menaces web dangereuses détectées par Defender pour Endpoint pour Android ne sont pas bloqués sur certains appareils. Les fonctionnalités suivantes ne fonctionnent pas sur ces appareils.
+L’hameçonnage et les menaces web dangereuses détectées par Defender pour Endpoint pour Android ne sont pas bloqués sur certains appareils Android. Les fonctionnalités suivantes ne fonctionnent pas sur ces appareils.
 
-![Image du site signalé comme dangereux](images/0c04975c74746a5cdb085e1d9386e713.png)
+![Image du site signalée comme non sûre.](images/0c04975c74746a5cdb085e1d9386e713.png)
 
 **Cause :**
 
 Les appareils Demi incluent un nouveau modèle d’autorisation. Cela empêche Defender pour point de terminaison pour Android d’afficher des fenêtres pop-up alors qu’elle s’exécute en arrière-plan.
 
-Autorisation des appareils Demi : « Afficher les fenêtres pop-up en cours d’exécution en arrière-plan ».
+Autorisation d’appareils : « Afficher les fenêtres pop-up en cours d’exécution en arrière-plan ».
 
-![Image du paramètre de fenêtre pop-up](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
+![Image du paramètre de fenêtre pop-up.](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
 
 **Solution :**
 
@@ -112,7 +112,7 @@ Defender App demande l’autorisation Optimisation de la batterie/Protection per
 
 **Cause :**
 
-Xiomi a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de la batterie.
+Il a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de batterie.
 
 **Solution :**
 

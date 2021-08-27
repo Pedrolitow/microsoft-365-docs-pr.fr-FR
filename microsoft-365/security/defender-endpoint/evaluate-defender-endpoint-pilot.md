@@ -21,19 +21,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 94e1751c792d6762230d7e064fb1b2fe9fa73f149adc6190110ce672988e2e0d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f41739a1f48ff73b8acd1a365a34d6a721b7151
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898478"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599332"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-mde-through-simulated-attacks"></a>Expérience microsoft Defender pour le point de terminaison (MDE) par le biais d’attaques simulées
 
->[!TIP]
+> [!TIP]
 >
->- Découvrez les dernières améliorations apportées à Microsoft Defender pour point de terminaison : Nouveautés [de Defender pour Point de terminaison .](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
->- Defender pour le point de terminaison a démontré les fonctionnalités d’optique et de détection de pointe du secteur dans l’évaluation MITRE récente. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - Découvrez les dernières améliorations apportées à Microsoft Defender pour point de terminaison : Nouveautés [de Defender pour Point de terminaison .](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
+> - Defender pour le point de terminaison a démontré les fonctionnalités d’optique et de détection de pointe du secteur dans l’évaluation MITRE récente. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 Vous souhaitez peut-être faire l’expérience de Defender for Endpoint avant d’intégrer plusieurs appareils au service. Pour ce faire, vous pouvez exécuter des simulations d’attaques contrôlées sur quelques périphériques de test. Après avoir réalisé les attaques simulées, vous pouvez examiner la façon dont Defender pour le point de terminaison fait face à une activité malveillante et découvrir comment elle permet une réponse efficace.
 
@@ -45,7 +45,7 @@ Lisez le document pas à pas fourni avec chaque scénario d’attaque. Chaque do
 
 ## <a name="run-a-simulation"></a>Exécuter une simulation
 
-1. Dans **les**  >  **simulations d'& didacticiels,** sélectionnez les scénarios d’attaque disponibles que vous souhaitez simuler :
+1. Dans **les** \> **simulations d'& didacticiels,** sélectionnez les scénarios d’attaque disponibles que vous souhaitez simuler :
 
    - **Scénario 1 : le document abandonne la porte dérobée** : simule la remise d’un document leurre d’ingénierie sociale. Le document lance une porte dérobée spécialement conçue pour donner le contrôle aux attaquants.
 
@@ -55,13 +55,12 @@ Lisez le document pas à pas fourni avec chaque scénario d’attaque. Chaque do
 
 2. Téléchargez et lisez le document de la walkthrough correspondant fourni avec votre scénario sélectionné.
 
-3. Téléchargez le fichier de simulation ou copiez le script de simulation en naviguant vers l’aide  >  **simulations & didacticiels**. Vous pouvez choisir de télécharger le fichier ou le script sur le périphérique de test, mais ce n’est pas obligatoire.
+3. Téléchargez le fichier de simulation ou  copiez le script de simulation en naviguant vers l’aide \> **simulations & didacticiels**. Vous pouvez choisir de télécharger le fichier ou le script sur le périphérique de test, mais ce n’est pas obligatoire.
 
 4. Exécutez le fichier ou le script de simulation sur le périphérique de test comme indiqué dans le document pas à pas.
 
 > [!NOTE]
 > Les fichiers ou scripts de simulation imitent l’activité d’attaque, mais sont en réalité anodins et ne compromettent pas ou ne compromettent pas le périphérique de test.
->
 
 ## <a name="alternate-topic-text"></a>TEXTE DE LA RUBRIQUE DE REMPLACEMENT
 
@@ -71,34 +70,36 @@ Utilisez les périphériques de test pour exécuter vos propres simulations d’
 
 Vous pouvez simuler des scénarios d’attaque à l’aide des outils suivants :
 
-- Scénarios [d’attaque « Faites-le vous-même »](https://securitycenter.windows.com/tutorials)
+- Scénarios d’attaque « Faire [vous-même »](https://securitycenter.windows.com/tutorials)
 - Simulateurs de menaces
 
 Vous pouvez également utiliser le service [de recherche avancée](advanced-hunting-overview.md) pour interroger les données et l’analyse des [menaces](threat-analytics.md) afin d’afficher des rapports sur les menaces émergentes.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Scénarios d’attaques do-it-yourself
 
-Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [scénarios](https://securitycenter.windows.com/tutorials)d’attaque « Faites-le vous-même ». Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’investigation.
+Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [scénarios](https://securitycenter.windows.com/tutorials)d’attaque « Faites-le vous-même ». Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’examen.
 
->[!NOTE]
->La connexion aux périphériques de test est effectuée à l’aide de RDP. Assurez-vous que vos paramètres de pare-feu autorisent les connexions RDP.
+> [!NOTE]
+> La connexion aux périphériques de test est effectuée à l’aide de RDP. Assurez-vous que vos paramètres de pare-feu autorisent les connexions RDP.
 
 1. Connecter sur votre appareil et exécutez une simulation d’attaque en **sélectionnant Connecter**.
 
-    ![Image du bouton de connexion pour les périphériques de test](images/test-machine-table.png)
+    ![Image du bouton de connexion pour les périphériques de test.](images/test-machine-table.png)
 
 2. Enregistrez le fichier RDP et lancez-le en sélectionnant **Connecter**.
 
-    ![Image de la connexion bureau à distance](images/remote-connection.png)
+    ![Image de la connexion bureau à distance.](images/remote-connection.png)
 
-    >[!NOTE]
-    >Si vous n’avez pas de copie du mot de passe enregistrée lors  de la configuration initiale, vous pouvez réinitialiser le mot de passe en sélectionnant Réinitialiser le mot de passe dans le menu : Image de réinitialisation du mot ![ de passe](images/reset-password-test-machine.png)
+    > [!NOTE]
+    > Si vous n’avez pas de copie du mot de passe enregistrée lors  de la configuration initiale, vous pouvez réinitialiser le mot de passe en sélectionnant Réinitialiser le mot de passe dans le menu :
+    >
+    > ![Image du mot de passe de réinitialisation.](images/reset-password-test-machine.png)
     >
     > L’appareil change son état en « Exécution de la réinitialisation du mot de passe », puis votre nouveau mot de passe vous sera présenté dans quelques minutes.
 
 3. Entrez le mot de passe qui a été affiché lors de l’étape de création de l’appareil.
 
-   ![Image de la fenêtre pour entrer les informations d’identification](images/enter-password.png)
+   ![Image de la fenêtre pour entrer les informations d’identification.](images/enter-password.png)
 
 4. Exécutez des simulations d’attaques par vous-même sur l’appareil.
 
@@ -108,24 +109,24 @@ Si vous avez choisi d’installer l’un des simulateurs de menaces pris en char
 
 L’exécution de simulations de menaces à l’aide de plateformes tierces est un bon moyen d’évaluer microsoft Defender pour les fonctionnalités de point de terminaison dans les limites d’un environnement de laboratoire.
 
->[!NOTE]
+> [!NOTE]
+> Avant d’exécuter des simulations, assurez-vous que les conditions suivantes sont remplies :
 >
->Avant d’exécuter des simulations, assurez-vous que les conditions suivantes sont remplies :
-
->- Les appareils doivent être ajoutés au laboratoire d’évaluation
->- Les simulateurs de menaces doivent être installés dans le laboratoire d’évaluation
+> - Les appareils doivent être ajoutés au laboratoire d’évaluation
+> - Les simulateurs de menaces doivent être installés dans le laboratoire d’évaluation
 
 1. Dans le portail, **sélectionnez Créer une simulation.**
 
 2. Sélectionnez un simulateur de menaces.
 
-    ![Image de la sélection du simulateur de menaces](images/select-simulator.png)
+    ![Image de la sélection du simulateur de menaces.](images/select-simulator.png)
 
 3. Choisissez une simulation ou parcourez la galerie de simulations pour parcourir les simulations disponibles.
 
-    Vous pouvez obtenir la galerie de simulations à partir de :
-    - Tableau de bord d’évaluation principal dans la **vignette de vue d’ensemble simulations** ou
-    - En naviguant à partir du volet de navigation Évaluation et didacticiels  >  **Simulation & didacticiels,** puis sélectionnez Le catalogue **simulations**.
+   Vous pouvez obtenir la galerie de simulations à partir de :
+
+   - Tableau de bord d’évaluation principal dans la **vignette de vue d’ensemble simulations** ou
+   - En naviguant à partir  du volet de navigation Évaluation et didacticiels \> **Simulation & didacticiels,** puis sélectionnez Le catalogue **simulations**.
 
 4. Sélectionnez les appareils sur lequel vous souhaitez exécuter la simulation.
 
@@ -133,9 +134,8 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 
 6. Affichez la progression d’une simulation en sélectionnant **l’onglet Simulations.** Afficher l’état de simulation, les alertes actives et d’autres détails.
 
-    ![Image de l’onglet Simulations](images/simulations-tab.png)
-<br>
+    ![Image de l’onglet Simulations.](images/simulations-tab.png)
 
 Après avoir lancé vos simulations, nous vous encourageons à parcourir la barre de progression de l’atelier et à explorer Microsoft Defender for Endpoint qui a déclenché une investigation et une correction **automatisées.** Consultez les preuves collectées et analysées par la fonctionnalité.
 
-Recherchez des preuves d’attaque par le biais d’une recherche avancée à l’aide du langage de requête enrichi et de la télémétrie brute, puis consultez certaines menaces mondiales documentées dans l’analyse des menaces.
+Recherchez des preuves d’attaque par le biais d’un recherche avancée à l’aide du langage de requête enrichi et de la télémétrie brute, puis consultez certaines menaces mondiales documentées dans l’analyse des menaces.

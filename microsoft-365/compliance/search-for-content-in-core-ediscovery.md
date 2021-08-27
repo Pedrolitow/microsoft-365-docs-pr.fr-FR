@@ -17,28 +17,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Recherchez du contenu qui peut être pertinent pour un cas core eDiscovery.
-ms.openlocfilehash: b71dfdbdee715c41c5aa2f5f1fe235c8a42412c01184a54172cf8846c3e48a14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1637d5dafcf088dd2b069cda5e951aef3a2fcd1e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871412"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569020"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Rechercher du contenu dans un cas core eDiscovery
 
-Une fois qu’un cas core eDiscovery est créé et que les personnes qui l’intéressent sont placées en attente, vous pouvez créer et exécuter une ou plusieurs recherches de contenu pertinents pour le cas. Les recherches associées à un cas core eDiscovery ne sont pas répertoriées dans la **page** de recherche de contenu du Centre de conformité Microsoft 365. Ces recherches sont répertoriées dans la page **Recherches** du cas core eDiscover à qui les recherches sont associées. Cela signifie également que les recherches associées à un cas sont accessibles uniquement par les membres du cas.
+Une fois qu’un cas core eDiscovery est créé et que les personnes qui l’intéressent sont placées en attente, vous pouvez créer et exécuter une ou plusieurs recherches de contenu pertinent pour le cas. Les recherches associées à un cas core eDiscovery ne sont pas répertoriées dans la **page** de recherche de contenu du Centre de conformité Microsoft 365. Ces recherches sont répertoriées dans la page **Recherches** du cas core eDiscover à qui les recherches sont associées. Cela signifie également que les recherches associées à un cas sont accessibles uniquement par les membres du cas.
 
 Pour créer une recherche de découverte électronique principale :
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions and is a member of the case.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
+2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
 
 3. Dans la page **Core eDiscovery,** sélectionnez le cas dans le cas où vous souhaitez créer une recherche associée, puis cliquez sur **Ouvrir le cas**.
 
 4. Dans la page **d’accueil** du cas, cliquez sur **l’onglet Recherches,** puis sur **Nouvelle recherche.**
 
-   ![Cliquez sur Nouvelle recherche pour créer une recherche de découverte électronique principale](../media/CoreeDiscoverySearch1.png)
+   ![Cliquez sur Nouvelle recherche pour créer une recherche de découverte électronique principale.](../media/CoreeDiscoverySearch1.png)
 
    > [!NOTE]
    > L’option **Recherche par liste d'identification** vous permet de rechercher des messages électroniques spécifiques et d'autres éléments de la boîte aux lettres à l'aide d'une liste d'ID Exchange. Pour créer une recherche de liste d'identification, vous soumettez un fichier CSV (valeur séparée par des virgules) qui identifie les éléments spécifiques de la boîte aux lettres à rechercher. Pour obtenir des instructions, voir [Préparer un fichier CSV pour une recherche de liste d'identification](csv-file-for-an-id-list-content-search.md).
@@ -47,7 +47,7 @@ Pour créer une recherche de découverte électronique principale :
 
 6. Dans la page **emplacements**, sélectionnez les emplacements de contenu à rechercher. Vous pouvez rechercher des boîtes aux lettres, les sites et des dossiers publics.
 
-    ![Choisissez les emplacements de contenu à mettre sous conservation](../media/ContentSearchLocations.png)
+    ![Choisissez les emplacements de contenu à placer en attente.](../media/ContentSearchLocations.png)
   
    1. **Boîtes aux lettres Exchange** : définissez le bouton bascule sur **Activé**, puis cliquez sur **Sélectionner des utilisateurs, des groupes ou des équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer les boîtes aux lettres des membres du groupe en conservation) à placer en conservation. Vous pouvez également effectuer une recherche dans la boîte aux lettres associée à une équipe Microsoft (pour les messages de canal), le groupe Office 365 et le groupe Yammer. Pour plus d’informations sur les données d’application stockées dans les boîtes aux lettres, consultez [Contenu stocké dans les boîtes aux lettres pour eDiscovery](what-is-stored-in-exo-mailbox.md).
 
@@ -59,7 +59,7 @@ Pour créer une recherche de découverte électronique principale :
 
 7. Dans la page **Définir vos conditions de recherche**, tapez une requête mot clé et ajoutez des conditions à la requête de recherche si nécessaire.
 
-   ![Configurer la requête de recherche](../media/ContentSearchQuery.png)
+   ![Configurez la requête de recherche.](../media/ContentSearchQuery.png)
 
    1. Spécifiez des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Si vous laissez la zone du mot clé vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche. Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour eDiscovery](keyword-queries-and-search-conditions.md).
 

@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: c4093ca351873f3f16742f6c0d131ac39d70c5f6360a3a52bb1dbed1985158d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 52da535c376af5775f2c75d9259529d2a011791a
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853289"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594207"
 ---
 # <a name="the-action-center"></a>Centre de notifications
 
@@ -45,11 +45,11 @@ Le centre de sécurité fournit une expérience de « volet unique » pour les t
 
 ## <a name="the-unified-action-center"></a>Centre de l’action unifiée
 
-Le centre de actions unifié répertorie les actions de correction en attente et terminées pour vos appareils, les & contenu de collaboration et les identités dans [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) un seul emplacement.
+Le centre de actions unifié () répertorie les actions de correction en attente et terminées pour vos appareils, les & contenu de collaboration et les identités dans [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) un seul emplacement.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée dans Microsoft 365 Defender":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée Microsoft 365 Defender.":::
 
-Par exemple : 
+Par exemple : 
 
 - Si vous utilisiez précédemment le Centre Office 365 sécurité & conformité ( ), essayez le centre de actions unifié dans le [https://protection.office.com](https://protection.office.com) portail Microsoft 365 Defender ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 - Si vous utilisiez le centre de actions dans le Centre de sécurité Microsoft Defender ( ), essayez le centre de actions unifié dans [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) le portail Microsoft 365 Defender ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
@@ -59,12 +59,12 @@ Le centre de mise en œuvre unifié regroupe les actions de correction dans Defe
 
 Vous pouvez utiliser le centre de l’action unifiée si vous avez les autorisations appropriées et un ou plusieurs des abonnements suivants :
 
-- [Defender pour le point de terminaison](../defender-endpoint/microsoft-defender-endpoint.md)
+- [Defender pour point de terminaison](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
 > [!TIP]
-> Pour plus d’informations, voir [Requirements](./prerequisites.md).
+> Pour en savoir plus, consultez [La réglementation requise.](./prerequisites.md)
 
 ## <a name="using-the-action-center"></a>Utilisation du centre de l’action
 
@@ -80,7 +80,7 @@ Lorsque vous visitez le centre de l’action, vous voyez deux onglets : **Action
 
 Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centre de gestion des actions.
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Le centre de l’action vous permet de trier, de filtrer et de personnaliser votre liste d’actions":::
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Le centre de actions vous permet de trier, de filtrer et de personnaliser votre liste d’actions":::
 
 - Sélectionnez un en-tête de colonne pour trier les éléments par ordre croissant ou décroit.
 - Utilisez le filtre de période pour afficher les données du jour, de la semaine, des 30 jours ou des 6 derniers mois.
@@ -114,11 +114,11 @@ En plus des actions de correction qui [](m365d-autoir.md)sont prises automatique
 | **Action manuelle de l’appareil** | Action manuelle sur un appareil. Par exemple, [l’isolation de l’appareil ou](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) [la mise en quarantaine du fichier](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files). |
 | **Action de messagerie manuelle** | Action manuelle sur le courrier électronique. Un exemple inclut la suppression de messages électroniques ou la [correction d’un message électronique.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
 | **Action automatisée sur l’appareil** | Action automatisée entreprise sur une entité, telle qu’un fichier ou un processus. L’envoi d’un fichier en quarantaine, l’arrêt d’un processus et la suppression d’une clé de Registre sont des exemples d’actions automatisées. (Voir [les actions de correction dans Microsoft Defender pour le point de terminaison.)](../defender-endpoint/manage-auto-investigation.md#remediation-actions) |
-| **Action de messagerie automatisée** | Action automatisée sur le contenu du courrier électronique, telle qu’un message électronique, une pièce jointe ou une URL. Parmi les exemples d’actions automatisées, citons la suppression (à l’aide de logiciels) des messages électroniques, le blocage des URL et la désinstruction du forwarding de courrier externe. (Voir [actions de correction dans Microsoft Defender pour Office 365.)](../office-365-security/air-remediation-actions.md) |
+| **Action de messagerie automatisée** | Action automatisée sur le contenu du courrier électronique, telle qu’un message électronique, une pièce jointe ou une URL. Parmi les exemples d’actions automatisées, citons la suppression (à l’aide de logiciels) des messages électroniques, le blocage des URL et la désinstruction du forwarding de courrier externe. (Voir [les actions de correction dans Microsoft Defender pour Office 365.)](../office-365-security/air-remediation-actions.md) |
 | **Action de recherche avancée** | Actions prises sur des appareils ou des e-mails avec [un chasse avancée](./advanced-hunting-overview.md). |
 | **Action de l’explorateur** | Actions prises sur le contenu du courrier électronique avec [l’Explorateur](../office-365-security/threat-explorer.md). |
-| **Action de réponse en direct manuelle** | Actions entreprises sur un appareil avec [réponse en direct.](../defender-endpoint/live-response.md) Par exemple, la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée. |
-| **Action de réponse en direct** | Actions prises sur un appareil avec [les API Microsoft Defender pour les points de terminaison.](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) L’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier sont des exemples d’actions. |
+| **Action de réponse en direct manuelle** | Actions prises sur un appareil avec [réponse en direct.](../defender-endpoint/live-response.md) Par exemple, la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée. |
+| **Action de réponse en direct** | Actions entreprises sur un appareil à [l’aide des API Microsoft Defender pour les points de terminaison.](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) L’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier sont des exemples d’actions. |
 
 ## <a name="required-permissions-for-action-center-tasks"></a>Autorisations requises pour les tâches du centre de notifications
 
@@ -126,11 +126,11 @@ Pour effectuer des tâches, telles que l’approbation ou le rejet des actions e
 
 |Action de correction |Rôles et des autorisations requis |
 |--|----|
-|Correction de Microsoft Defender pour les points de terminaison (appareils) |**Rôle d’administrateur** de sécurité attribué dans Azure Active Directory (Azure AD) ( ) ou dans le [https://portal.azure.com](https://portal.azure.com) Centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- ou ---<br/>**Rôle des actions de** correction actives attribué dans Microsoft Defender pour le point de terminaison <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations de rôle d’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle (Microsoft Defender pour point de terminaison)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender pour la correction Office 365 (contenu Office courrier électronique)  |**Rôle d’administrateur** de la sécurité attribué dans Azure AD ( ) ou dans [https://portal.azure.com](https://portal.azure.com) le Centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- et --- <br/>**Rôle de recherche et** de purge attribué dans le Centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANT :** si  le rôle Administrateur de la sécurité est attribué uniquement dans le Centre de sécurité & conformité Office 365 ( ), vous ne serez pas en mesure d’accéder aux fonctionnalités du centre de Microsoft 365 Defender de [https://protection.office.com](https://protection.office.com) sécurité. Le rôle Administrateur de la sécurité **doit** être attribué dans Azure AD ou le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations de rôle d’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Correction de Microsoft Defender pour les points de terminaison (appareils) |**Rôle d’administrateur** de sécurité attribué dans Azure Active Directory (Azure AD) ( ) ou dans le [https://portal.azure.com](https://portal.azure.com) Centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- ou ---<br/>**Rôle des actions de** correction actives attribué dans Microsoft Defender pour le point de terminaison <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle (Microsoft Defender pour point de terminaison)](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender pour la correction Office 365 (contenu Office courrier électronique)  |**Rôle d’administrateur** de la sécurité attribué dans Azure AD ( ) ou dans [https://portal.azure.com](https://portal.azure.com) le Centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- et --- <br/>**Rôle de recherche et** de purge attribué dans le Centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANT :** si  le rôle Administrateur de la sécurité est attribué uniquement dans le Centre de sécurité & conformité Office 365 ( ), vous ne serez pas en mesure d’accéder aux fonctionnalités du centre de Microsoft 365 Defender de [https://protection.office.com](https://protection.office.com) sécurité. Le rôle Administrateur de la sécurité **doit** être attribué dans Azure AD ou le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
-> Les utilisateurs qui ont le **rôle Administrateur général** attribué dans Azure AD peuvent approuver ou rejeter toute action en attente dans le centre de gestion des actions. Toutefois, en tant que meilleure pratique, votre organisation  doit limiter le nombre de personnes à qui le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les **rôles Administrateur** de la sécurité, **Actions** de correction actives et Recherche et **Purge** répertoriés dans le tableau précédent pour les autorisations du Centre de sécurité.
+> Les utilisateurs qui ont le **rôle Administrateur général** attribué dans Azure AD peuvent approuver ou rejeter toute action en attente dans le centre de gestion des actions. Toutefois, en tant que meilleure pratique, votre organisation  doit limiter le nombre de personnes à qui le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les **rôles Administrateur** de la sécurité, **Actions** de correction actives et Recherche et **Purge** répertoriés dans le tableau précédent pour les autorisations du centre de gestion des actions.
 
 ## <a name="next-step"></a>Étape suivante 
 

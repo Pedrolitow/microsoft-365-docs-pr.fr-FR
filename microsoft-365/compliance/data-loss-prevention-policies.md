@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: low
+localization_priority: ''
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -21,13 +21,15 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+ROBOTS: NOINDEX, NOFOLLOW
+feedback_system: None
 description: documents de référence sur la protection contre la perte de données
-ms.openlocfilehash: abddda78d8d2eab3cf3931ec4adbc0fa74b8fd657d13f782fc5d93788ec99561
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1eba9c425e66c61e63133d39a844010a499b3eb4
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842823"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595275"
 ---
 # <a name="data-loss-prevention-reference"></a>Référence de protection contre la perte de données
 
@@ -70,7 +72,7 @@ With a DLP policy, you can:
 
 Vous créez et gérez des stratégies DLP sur la page Protection contre la perte de données dans le Centre de conformité Microsoft 365.
 
-![Page Protection contre la perte de données dans le Centre de conformité et sécurité Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Page Protection contre la perte de données dans le Centre Office 365 &amp; conformité de la sécurité.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -82,13 +84,13 @@ A DLP policy contains a few basic things:
 
   - **Conditions** the content must match before the rule is enforced. For example, a rule might be configured to look only for content containing Social Security numbers that's been shared with people outside your organization.
 
-  - **Actions** that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification. -->
+  - **Actions** that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification.
 
-Vous pouvez utiliser une règle pour répondre à une exigence de protection particulière, puis utiliser une stratégie DLP pour regrouper des spécifications requises communes en matière de protection, par exemple l’ensemble des règles requises pour se conformer à une réglementation spécifique.
+You can use a rule to meet a specific protection requirement, and then use a DLP policy to group together common protection requirements, such as all of the rules needed to comply with a specific regulation.
 
-Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la présence d’informations visées par la loi américaine sur l’assurance maladie (Health Insurance Portability Accountability Act, ou HIPAA). Cette stratégie DLP peut contribuer à protéger les données HIPAA (quoi) sur tous les sites SharePoint Online et tous les sites OneDrive Entreprise (où) en recherchant les documents contenant ces informations sensibles partagées avec des personnes extérieures à votre organisation (conditions), et en bloquant l’accès au document et en envoyant une notification (actions). Ces conditions sont stockées en tant que règles individuelles et regroupées sous la forme d’une stratégie DLP pour simplifier la gestion et la création de rapports.
+For example, you might have a DLP policy that helps you detect the presence of information subject to the Health Insurance Portability and Accountability Act (HIPAA). This DLP policy could help protect HIPAA data (the what) across all SharePoint Online sites and all OneDrive for Business sites (the where) by finding any document containing this sensitive information that's shared with people outside your organization (the conditions) and then blocking access to the document and sending a notification (the actions). These requirements are stored as individual rules and grouped together as a DLP policy to simplify management and reporting.
 
-![Diagramme montrant que la stratégie DLP contient les règles et les emplacements](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+![Diagram shows that DLP policy contains locations and rules.](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png) -->
 
 <!-- MOVED TO LEARN ABOUT ### Locations
 
@@ -105,196 +107,199 @@ DLP policies are applied to sensitive items across Microsoft 365 locations and c
 |Microsoft Cloud App Security |instance |
  -->
 
-Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
+<!-- moved to dlp-policy-reference.md
+If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
-Si vous optez pour l’inclusion ou l’exclusion de sites SharePoint spécifiques, la stratégie DLP ne peut pas contenir plus de 100 inclusions et exclusions. Vous pouvez néanmoins contourner cette limite en appliquant une stratégie mise en place à l’échelle de l’organisation ou une stratégie qui s’applique aux emplacements entiers.
+If you choose to include or exclude specific SharePoint sites, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
 
-Si vous choisissez d’inclure ou d’exclure des comptes ou groupes OneDrive spécifiques, une stratégie DLP peut contenir au plus 100 comptes d’utilisateurs ou 50 groupes pour l’inclusion ou l’exclusion.
+If you choose to include or exclude specific OneDrive accounts or groups, a DLP policy can contain no more than 100 user accounts or 50 groups as inclusion or exclusion.
 
-### <a name="rules"></a>Règles
+### Rules
 
 > [!NOTE]
-> Le comportement par défaut d’une stratégie DLP, lorsque aucune alerte n’est configurée, n’est pas une alerte, ni un déclenchement. Cela s’applique uniquement aux types d’informations par défaut. Pour les types d’informations personnalisés, le système émet une alerte même si aucune action n’est définie dans la stratégie.
+> The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 
-Les règles appliquent vos exigences professionnelles au contenu de votre organisation. Une stratégie contient une ou plusieurs règles et chaque règle se compose de conditions et d’actions. Pour chaque règle, lorsque les conditions sont remplies, les actions sont exécutées automatiquement. Les règles sont exécutées de façon séquentielle, en commençant par la règle de priorité la plus élevée dans chaque stratégie.
+Rules are what enforce your business requirements on your organization's content. A policy contains one or more rules, and each rule consists of conditions and actions. For each rule, when the conditions are met, the actions are taken automatically. Rules are executed sequentially, starting with the highest-priority rule in each policy.
 
-Une règle fournit également des options pour informer les utilisateurs (avec des conseils de stratégie et des notifications par courrier électronique) et les administrateurs (avec des rapports d’incident de courrier) que le contenu satisfait à la règle.
+A rule also provides options to notify users (with policy tips and email notifications) and admins (with email incident reports) that content has matched the rule.
 
-Les différents composants d’une règle sont décrits ci-dessous.
+Here are the components of a rule, each explained below.
 
-![Sections de l’éditeur de règles DLP](../media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
+![Sections of the DLP rule editor.](../media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
 
-#### <a name="conditions"></a>Conditions
+#### Conditions
 
-Les conditions sont importantes car elles déterminent les types d’informations que vous recherchez, et le moment auquel effectuer une action. Par exemple, vous pouvez choisir d’ignorer les documents contenant des numéros de passeport, sauf si le document contient plus de 10 numéros et est partagé avec des personnes extérieures à votre organisation.
+Conditions are important because they determine what types of information you're looking for, and when to take an action. For example, you might choose to ignore content containing passport numbers unless the content contains more than 10 such numbers and is shared with people outside your organization.
 
-Les conditions concernent le **contenu**, par exemple les types d’informations sensibles que vous recherchez et aussi le **contexte**, par exemple les personnes avec lesquelles le document est partagé. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation.
+Conditions focus on the **content**, such as what types of sensitive information you're looking for, and also on the **context**, such as who the document is shared with. You can use conditions to assign different actions to different risk levels. For example, sensitive content shared internally might be lower risk and require fewer actions than sensitive content shared with people outside the organization.
 
-![Liste affichant les conditions DLP disponibles](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
+![List showing available DLP conditions.](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
 
-Les conditions actuellement disponibles peuvent déterminer si :
+The conditions now available can determine if:
 
-- Le contenu comporte un type d’informations sensibles.
+- Content contains a type of sensitive information.
 
-- Le contenu comporte une étiquette. Pour plus d’informations, reportez-vous à la section ci-dessous, [Utilisation d’une étiquette comme condition dans une stratégie DLP](#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+- Content contains a label. For more information, see the below section [Using a retention label as a condition in a DLP policy](#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
-- Le contenu est partagé avec des personnes extérieures ou internes à votre organisation.
+- Content is shared with people outside or inside your organization.
 
   > [!NOTE]
-  > Les utilisateurs qui ont des comptes non invités dans le client Active Directory ou Azure Active Directory d’une organisation hôte sont considérés comme des personnes internes à l’organisation.
+  > Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
 
-#### <a name="types-of-sensitive-information"></a>Types d’informations sensibles
+#### Types of sensitive information
 
-Une stratégie DLP peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut les définitions de nombreux types d’informations sensibles courants dans diverses régions, prêtes pour utilisation, comme les numéros de carte de crédit, numéros de compte bancaire, numéros de carte d’identité et numéros de passeport.
+A DLP policy can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes definitions for many common sensitive information types across many different regions that are ready for you to use, such as a credit card number, bank account numbers, national ID numbers, and passport numbers.
 
-![Liste des types d’informations sensibles disponibles](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
+![List of available sensitive information types.](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
 
-Lorsqu’une stratégie DLP recherche un type d’informations sensibles tel qu’un numéro de carte de crédit, il ne recherche pas simplement un nombre à 16 chiffres. Chaque type d’information sensible est défini et détecté en utilisant une combinaison de :
+When a DLP policy looks for a sensitive information type such as a credit card number, it doesn't simply look for a 16-digit number. Each sensitive information type is defined and detected by using a combination of:
 
-- Mots clés.
+- Keywords.
 
-- Fonctions internes pour valider les sommes de contrôle ou la composition.
+- Internal functions to validate checksums or composition.
 
-- Évaluation des expressions régulières pour trouver des correspondances au modèle.
+- Evaluation of regular expressions to find pattern matches.
 
-- Autres analyses de contenu.
+- Other content examination.
 
-La détection DLP peut ainsi atteindre un haut niveau de précision tout en réduisant le nombre de faux positifs susceptibles d’interrompre le travail.
+This helps DLP detection achieve a high degree of accuracy while reducing the number of false positives that can interrupt peoples' work.
 
-#### <a name="actions"></a>Actions
+#### Actions
 
-Lorsque le contenu remplit une condition stipulée dans une règle, vous pouvez y appliquer des mesures de protection automatiques.
+When content matches a condition in a rule, you can apply actions to automatically protect the content.
 
-![Liste des actions DLP disponibles](../media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
+![List of available DLP actions.](../media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
 
-Avec les actions désormais disponibles, vous pouvez :
+With the actions now available, you can:
 
-- **Restreindre l’accès au contenu** Selon vos besoins, vous pouvez restreindre l’accès au contenu de trois façons :
+- **Restrict access to the content** Depending on your need, you can restrict access to content in three ways:
 
-  1. Restreindre l’accès au contenu pour tout le monde.
-  2. Restreindre l’accès au contenu pour les personnes extérieures à l’organisation.
-  3. Restreindre l’accès à « toute personne disposant du lien ».
+  1. Restrict access to content for everyone.
+  2. Restrict access to content for people outside the organization.
+  3. Restrict access to "Anyone with the link."
 
-  Pour le contenu d’un site, cela signifie que les autorisations pour le document sont limitées pour tout le monde, sauf pour l’administrateur principal de la collection de sites, le propriétaire du document et la personne qui a modifié le document pour la dernière fois. Ces personnes peuvent supprimer les informations sensibles du document ou prendre des mesures correctives. Lorsque le document est conforme, les autorisations d’origine sont automatiquement restaurées. Lorsque l’accès à un document est bloqué, le document s’affiche avec une icône de conseil de stratégie spéciale dans la bibliothèque sur le site.
+  For site content, this means that permissions for the document are restricted for everyone except the primary site collection administrator, document owner, and person who last modified the document. These people can remove the sensitive information from the document or take other remedial action. When the document is in compliance, the original permissions are automatically restored. When access to a document is blocked, the document appears with a special policy tip icon in the library on the site.
 
-  ![Conseil de stratégie montrant que l’accès au document est bloqué](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![Policy tip showing access to document is blocked.](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
 
-  Pour le contenu des messages électroniques, cette action bloque l’envoi du message. Selon la configuration de la règle DLP, l’expéditeur voit une notification d’échec de remise ou (si la règle utilise une notification) un conseil de stratégie et/ou une notification de messagerie.
+  For email content, this action blocks the message from being sent. Depending on how the DLP rule is configured, the sender sees an NDR or (if the rule uses a notification) a policy tip and/or email notification.
 
-  ![Avertissement indiquant que les destinataires non autorisés doivent être supprimés du message](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![Warning that unauthorized recipients must be removed from the message.](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
 
-#### <a name="user-notifications-and-user-overrides"></a>Notifications de l’utilisateur et remplacements de l’utilisateur
+#### User notifications and user overrides
 
-Vous pouvez utiliser les notifications et les remplacements pour informer vos utilisateurs sur les stratégies DLP et les aider à respecter les règles de conformité sans bloquer leur travail. Par exemple, si un utilisateur tente de partager un document contenant des informations sensibles, une stratégie DLP peut lui envoyer une notification par courrier électronique et afficher un conseil de stratégie dans le contexte de la bibliothèque de documents, qui lui permet de remplacer la stratégie s’il a une raison professionnelle de le faire.
+You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.
 
-![Sections Notifications de l’utilisateur et Remplacements de l’utilisateur de l’éditeur de règles DLP](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
+![User notifications and user overrides sections of DLP rule editor.](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
 
-Le message électronique permet de notifier les personnes qui ont envoyé, partagé ou modifié le contenu en dernier et, pour le contenu de site, l’administrateur de la collection de sites et le propriétaire du document. De plus, vous pouvez ajouter ou supprimer les destinataires de votre choix du courrier électronique de notification.
+The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
 
-En plus d’envoyer une notification par courrier électronique, une notification utilisateur affiche un conseil de stratégie :
+In addition to sending an email notification, a user notification displays a policy tip:
 
-- Dans Outlook et Outlook sur le web.
+- In Outlook and Outlook on the web.
 
-- Pour un document sur SharePoint Online ou un site OneDrive Entreprise.
+- For the document on a SharePoint Online or OneDrive for Business site.
 
-- Dans Excel, PowerPoint et Word, lorsque le document est stocké sur un site inclus dans une stratégie DLP.
+- In Excel, PowerPoint, and Word, when the document is stored on a site included in a DLP policy.
 
-La notification par courrier électronique et le conseil de stratégie expliquent pourquoi un contenu est en conflit avec une stratégie DLP. Si vous le choisissez, la notification par courrier électronique et le conseil de stratégie peuvent permettre aux utilisateurs de remplacer une règle en signalant un faux positif ou en fournissant une justification professionnelle. Cela peut vous aider à informer les utilisateurs de vos stratégies DLP et à les appliquer sans interrompre le travail. Les informations sur les remplacements et les faux positifs sont également enregistrées pour la création de rapports (consultez la rubrique ci-dessous sur les rapports DLP) et incluses dans les rapports d’incident (section suivante), afin que le responsable de la mise en conformité puisse les consulter régulièrement.
+The email notification and policy tip explain why content conflicts with a DLP policy. If you choose, the email notification and policy tip can allow users to override a rule by reporting a false positive or providing a business justification. This can help you educate users about your DLP policies and enforce them without preventing people from doing their work. Information about overrides and false positives is also logged for reporting (see below about the DLP reports) and included in the incident reports (next section), so that the compliance officer can regularly review this information.
 
-Dans un compte OneDrive Entreprise, un conseil de stratégie se présente comme ceci.
+Here's what a policy tip looks like in a OneDrive for Business account.
 
-![Conseil de stratégie pour un document dans un compte OneDrive](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
+![Policy tip for a document in a OneDrive account.](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
- Pour en savoir plus sur les notifications utilisateur et les conseils de stratégie en matière de stratégie DLP, voir [Utilisation des notifications et des conseils de stratégie](use-notifications-and-policy-tips.md).
+ To learn more about user notifications and policy tips in DLP policies, see [Use notifications and policy tips](use-notifications-and-policy-tips.md).
 
-#### <a name="alerts-and-incident-reports"></a>Rapports sur les alertes et les incidents
+#### Alerts and Incident reports
 
-Lorsqu’une règle est mise en correspondance, vous pouvez envoyer un message d’alerte à votre responsable de la mise en conformité (ou à toute personne de votre choix) avec les détails de l’alerte. Ce message d’alerte comporte un lien vers le [Tableau de bord de gestion des alertes DLP](dlp-configure-view-alerts-policies.md) auquel le responsable de la conformité peut accéder pour afficher les détails des alertes et des événements. Le tableau de bord contient les détails de l’événement ayant déclenché l’alerte, ainsi que les détails de la stratégie DLP correspondante et le contenu sensible détecté.
+When a rule is matched, you can send an alert email to your compliance officer (or any person(s) you choose) with details of the alert. This alert email will carry a link of the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md) which the compliance officer can go to view the details of alert and events. The dashboard contains details of the event that triggered the alert along with details of the DLP policy matched and the sensitive content detected.
 
-En outre, vous pouvez également envoyer un rapport d’incident incluant les détails de l’événement. Ce rapport comprend des informations sur l’élément qui a fait l’objet d’une correspondance, le contenu qui a satisfait à la règle ainsi que le nom de la personne qui a modifié le contenu en dernier. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
+In addition, you can also send an incident report with details of the event. This report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
 
 > [!div class="mx-imgBorder"]
-> ![Page de configuration de rapports d’incident](../media/Alerts-and-incident-report.png)
+> ![Page for configuring incident reports.](../media/Alerts-and-incident-report.png)
 
-DLP n’analyse pas les messages électronique de la même façon que les éléments dans SharePoint Online ou OneDrive Entreprise. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident et d’alerte chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux e-mails, puis génère un rapport en cas de correspondance de stratégie. DLP ***ne peut pas*** analyser ou mettre en correspondance les éléments de messagerie existants qui sont stockés dans une boîte aux lettres ou une archive.
+DLP scans email differently from items in SharePoint Online or OneDrive for Business. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an alert and incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
 
-## <a name="grouping-and-logical-operators"></a>Opérateurs logiques et opérateurs de regroupement
+## Grouping and logical operators
 
-Votre stratégie de protection contre la perte de données a souvent une exigence simple, par exemple, celle d’identifier tout contenu avec un numéro de sécurité sociale. Toutefois, dans d’autres scénarios, votre stratégie de protection contre la perte de données devra identifier des données plus vagues.
+Often your DLP policy has a straightforward requirement, such as to identify all content that contains a U.S. Social Security Number. However, in other scenarios, your DLP policy might need to identify more loosely defined data.
 
-Par exemple, pour identifier le contenu soumis à la réglementation des États-Unis sur le Health Insurance Act (HIPAA), vous devez rechercher :
+For example, to identify content subject to the U.S. Health Insurance Act (HIPAA), you need to look for:
 
-- Le contenu qui contient certains types d’informations sensibles, par exemple un numéro de sécurité sociale ou le numéro émis par l’agence du médicament (DEA).
+- Content that contains specific types of sensitive information, such as a U.S. Social Security Number or Drug Enforcement Agency (DEA) Number.
 
     AND
 
-- Le contenu plus difficile à identifier, comme les communications relatives aux soins du patient ou la description des services médicaux fournis. L’identification de ce contenu nécessite une correspondance de mots clés d’une très importante liste de mots clés, telle que la classification internationale des maladies (ICD-9-CM ou ICD-10-CM).
+- Content that's more difficult to identify, such as communications about a patient's care or descriptions of medical services provided. Identifying this content requires matching keywords from very large keyword lists, such as the International Classification of Diseases (ICD-9-CM or ICD-10-CM).
 
-Vous pouvez facilement identifier ces données vaguement définies à l’aide d’opérateurs logiques et d’opérateurs de regroupement (ET, OU). Lorsque vous créez une stratégie de protection contre la perte de données, vous pouvez :
+You can easily identify such loosely defined data by using grouping and logical operators (AND, OR). When you create a DLP policy, you can:
 
-- Regrouper les types d’informations sensibles
+- Group sensitive information types.
 
-- Choisir l’opérateur logique dans les types d’informations sensibles au sein d’un groupe et entre les groupes eux-mêmes.
+- Choose the logical operator between the sensitive information types within a group and between the groups themselves.
 
-### <a name="choosing-the-operator-within-a-group"></a>Choisir l’opérateur au sein d’un groupe
+### Choosing the operator within a group
 
-Dans un groupe, vous pouvez choisir si tout ou partie des conditions dans ce groupe doivent être satisfaites pour que le contenu corresponde à la règle.
+Within a group, you can choose whether any or all of the conditions in that group must be satisfied for the content to match the rule.
 
-![Groupes avec l’opérateur dans le groupe](../media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
+![Group showing the operators within the group.](../media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
 
-### <a name="adding-a-group"></a>Ajout d’un groupe
+### Adding a group
 
-Vous pouvez rapidement ajouter un groupe, qui peut avoir ses propres conditions et son propre opérateur au sein de ce groupe.
+You can quickly add a group, which can have its own conditions and operator within that group.
 
-![Bouton Ajouter un groupe](../media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
+![Add group button.](../media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
 
-### <a name="choosing-the-operator-between-groups"></a>Choix de l’opérateur entre les groupes
+### Choosing the operator between groups
 
-Entre les groupes, vous pouvez choisir si les conditions dans un seul groupe ou tous les groupes doivent être satisfaites pour que le contenu corresponde à la règle.
+Between groups, you can choose whether the conditions in just one group or all of the groups must be satisfied for the content to match the rule.
 
-Par exemple, le type d’informations sensibles intégrées pour la réglementation des États-Unis sur le **HIPAA** a une règle qui utilise un opérateur **ET** entre les groupes, de sorte qu’elle identifie le contenu qui contient :
+For example, the built-in **U.S. HIPAA** policy has a rule that uses an **AND** operator between the groups so that it identifies content that contains:
 
-- le groupe **identificateurs de données personnelles** (au moins un numéro de sécurité sociale **OU** numéro DEA)
+- from the group **PII Identifiers** (at least one SSN number **OR** DEA number)
 
-    **ET**
+    **AND**
 
-- le groupe **termes médicaux** (au moins un mot-clé ICD-9-CM **OU** mot clé ICD-10-CM)
+- from the group **Medical Terms** (at least one ICD-9-CM keyword **OR** ICD-10-CM keyword)
 
-![Groupes avec l’opérateur entre les groupes](../media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
+![Groups showing the operator between groups.](../media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
 
-## <a name="the-priority-by-which-rules-are-processed"></a>La priorité de traitement des règles
+## The priority by which rules are processed
 
-Lorsque vous créez des règles dans une stratégie, chaque règle se voit attribuer une priorité en fonction de son ordre de création. Cela signifie que la première règle créée a priorité sur la deuxième et ainsi de suite.
-
-> [!div class="mx-imgBorder"]
-> ![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
-
-Une fois que vous avez configuré plusieurs stratégies DLP, vous pouvez modifier la priorité d’une ou plusieurs stratégies. Pour ce faire, sélectionnez une stratégie, sélectionnez **Modifier la stratégie**, puis utilisez la liste **Priorité** pour préciser sa priorité.
+When you create rules in a policy, each rule is assigned a priority in the order in which it's created — meaning, the rule created first has first priority, the rule created second has second priority, and so on.
 
 > [!div class="mx-imgBorder"]
-> ![Définition d’une priorité pour une stratégie](../media/dlp-set-policy-priority.png)
+> ![Rules in priority order.](../media/dlp-rules-in-priority-order.png)
 
-Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’ordre de priorité. Si le contenu correspond à plusieurs règles, celles-ci sont traitées dans l’ordre de priorité et l’action la plus restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 3 est appliquée, car c’est celle qui a la priorité la plus élevée et est la plus restrictive :
+After you have set up more than one DLP policy, you can change the priority of one or more policies. To do that, select a policy, choose **Edit policy**, and use the **Priority** list to specify its priority.
 
-- Règle 1 : informe seulement les utilisateurs
+> [!div class="mx-imgBorder"]
+> ![Set priority for a policy.](../media/dlp-set-policy-priority.png)
 
-- Règle 2 : informe les utilisateurs, limite l’accès et permet le remplacement de l’utilisateur
+When content is evaluated against rules, the rules are processed in priority order. If content matches multiple rules, the rules are processed in priority order and the most restrictive action is enforced. For example, if content matches all of the following rules, Rule 3 is enforced because it's the highest priority, most restrictive rule:
 
-- Règle 3 : informe les utilisateurs, limite l’accès et ne permet pas le remplacement de l’utilisateur
+- Rule 1: only notifies users
 
-- Règle 4 : informe seulement les utilisateurs
+- Rule 2: notifies users, restricts access, and allows user overrides
 
-- Règle 5 : limite l’accès
+- Rule 3: notifies users, restricts access, and does not allow user overrides
 
-- Règle 6 : informe les utilisateurs, limite l’accès et ne permet pas le remplacement de l’utilisateur
+- Rule 4: only notifies users
 
-Dans cet exemple, notez que les correspondances de toutes les règles sont enregistrées dans les journaux d’audit et apparaissent dans les rapports DLP, même si seule la règle la plus restrictive est appliquée.
+- Rule 5: restricts access
 
-En ce qui concerne les conseils de stratégie, veuillez noter les éléments suivants :
+- Rule 6: notifies users, restricts access, and does not allow user overrides
 
-- Uniquement le conseil de stratégie de la priorité la plus élevée, la règle la plus restrictive est affichée. Par exemple, un conseil de stratégie à partir d’une règle qui bloque l’accès au contenu est affiché sur un conseil de stratégie à partir d’une règle qui envoie simplement une notification. Cela évite que les personnes voient une cascade de conseils de stratégie.
+In this example, note that matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the most restrictive rule is enforced.
 
-- Si les conseils de stratégie de la règle la plus restrictive autorisent les utilisateurs à remplacer la règle, toute autre règle également mise en correspondance avec le contenu est aussi remplacée.
+Regarding policy tips, note that:
+
+- Only the policy tip from the highest priority, most restrictive rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
+
+- If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
+
+-->
 
 ## <a name="tuning-rules-to-make-them-easier-or-harder-to-match"></a>Optimisation des règles pour une correspondance plus facile ou plus difficile
 
@@ -321,7 +326,7 @@ L’optimisation des règles à l’aide du nombre d’instances est simple :
 
 En règle générale, les actions moins restrictives, telles que l’envoi de notifications à l’utilisateur, s’utilisent dans une règle avec un nombre d’instances inférieur (par exemple, 1 à 9). Quant aux actions plus restrictives, telles que la limitation de l’accès au contenu sans autoriser les remplacements de l’utilisateur, elles s’utilisent dans une règle avec un nombre d’instances supérieur (par exemple, entre 10 et une valeur supérieure).
 
-![Nombre d’instances dans l’éditeur de règles](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
+![Nombre d’instances dans l’éditeur de règles.](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
 
 ### <a name="match-accuracy"></a>Précision de correspondance
 
@@ -353,7 +358,7 @@ Il est essentiel de comprendre que lorsqu’un type spécifique d’informations
 
 Par conséquent si vous voulez créer deux règles mutuellement exclusives pour les cartes bancaires, une pour la précision de correspondance de 65 % et une pour la précision de correspondance de 85 %, les plages de précision de correspondance se présenteraient comme suit. La première règle ne prend que les correspondances au modèle à 65 %. La deuxième règle prend les correspondances avec **au moins une** correspondance à 85 % et **peut éventuellement avoir** d’autres correspondances de confiance inférieure.
 
-![Deux règles avec des plages différentes de précision de correspondance](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
+![Deux règles avec des plages différentes pour la précision de correspondance.](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
 
 Pour ces raisons, les conseils pour la création de règles avec des précisions de correspondance différentes sont les suivants :
 
@@ -371,7 +376,7 @@ Lorsque vous utilisez une [étiquette de rétention](retention.md#retention-labe
 - La synchronisation des étiquettes de rétention publiées peut prendre de un à sept jours. Pour plus d’informations, voir [Lorsque les étiquettes de rétention sont disponibles à l’application](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) pour les étiquettes de rétention publiées dans une stratégie de rétention, et [Temps nécessaire pour la prise d’effet des étiquettes de rétention](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) pour les étiquettes de rétention publiées automatiquement.
 - L’utilisation d’une étiquette de rétention dans une stratégie **est prise en charge uniquement pour des éléments SharePoint et OneDrive**.
 
-  ![Étiquettes comme condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  ![Étiquettes en tant que condition.](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   Vous souhaitez peut-être utiliser une étiquette de rétention dans une stratégie DLP si vous avez des éléments sous rétention et suppression auxquels vous voulez appliquer des contrôles supplémentaires, par exemple :
 
@@ -392,13 +397,13 @@ Plusieurs fonctionnalités peuvent être appliquées à du contenu comportant de
 
 - Et une stratégie DLP peut permettre d’y appliquer des mesures de **protection**. Avant l’application de ces mesures, une stratégie DLP peut exiger que d’autres conditions soient remplies en plus du contenu comportant une étiquette.
 
-![Diagramme illustrant des fonctionnalités applicables aux informations sensibles](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
+![Diagramme des fonctionnalités qui peuvent s’appliquer aux informations sensibles.](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
 
 Notez qu’une stratégie DLP offre des capacités de détection plus approfondies qu’une étiquette ou qu’une stratégie de rétention appliquées à des informations sensibles. Une stratégie DLP peut déclencher l’application de mesures de protection sur du contenu comportant des informations sensibles, et si les informations sensibles sont supprimées du contenu, ces mesures de protection sont annulées lors de l’analyse de contenu suivante. Mais si une stratégie de rétention ou une étiquette est appliquée au contenu comportant des informations sensibles, il s’agit d’une mesure unique qui ne peut pas être annulée, même si les informations sensibles sont supprimées.
 
 L’utilisation d’une étiquette comme condition dans une stratégie DLP vous permet d’appliquer des mesures de rétention et de protection au contenu associé à cette étiquette. Un contenu comportant une étiquette et un contenu comportant des informations sensibles sont semblables : l’étiquette et les informations sensibles sont des propriétés utilisées pour classifier le contenu dans le but d’y appliquer des mesures.
 
-![Diagramme illustrant une stratégie DLP qui utilise une étiquette comme condition](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
+![Diagramme de stratégie DLP utilisant l’étiquette comme condition.](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
 
 ## <a name="simple-settings-vs-advanced-settings"></a>Paramètres simples et paramètres avancés
 
@@ -416,7 +421,7 @@ Le scénario de protection contre la perte de données (DLP) de loin le plus cou
 
 Pour atteindre cet objectif plus facilement, vous pouvez choisir d’utiliser les **paramètres simples** lorsque vous créez une stratégie DLP. Ces paramètres proposent toutes les options nécessaires pour implémenter les stratégies DLP les plus courantes, sans avoir à ouvrir l’éditeur de règles.
 
-![Options DLP pour les paramètres simples et avancés](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
+![Options DLP pour les paramètres simples et avancés.](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
 
 ### <a name="advanced-settings"></a>Paramètres avancés
 
@@ -426,7 +431,7 @@ Les paramètres avancés présentent l’éditeur de règles, où vous contrôle
 
 Pour accéder rapidement à une section, cliquez sur un élément de la navigation supérieure de l’éditeur de règles.
 
-![Menu de navigation supérieur de l’éditeur de règles DLP](../media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
+![Menu de navigation supérieur de l’éditeur de règles DLP.](../media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
 
 ## <a name="dlp-policy-templates"></a>Modèles de stratégie de protection contre la perte de données (DLP)
 
@@ -434,7 +439,7 @@ La première étape de la création d’une stratégie DLP consiste à choisir l
 
 Un modèle de stratégie DLP préconfiguré peut vous aider à détecter des types spécifiques d’informations sensibles, comme des données HIPAA, des données PCI-DSS, des données Gramm-Leach-Bliley Act ou même des informations d’identification personnelle propres aux paramètres régionaux. Pour faciliter la recherche et la protection des types d’informations sensibles courants, les modèles de stratégie inclus dans Microsoft 365 contiennent déjà les types d’informations sensibles les plus courants, nécessaires pour commencer.
 
-![Liste des modèles de stratégies de protection contre la perte de données avec focus sur le modèle pour le Patriot Act des États-Unis](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
+![Liste des modèles pour les stratégies de protection contre la perte de données qui se concentrent sur le modèle pour le Patriot Act des États-Unis.](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
 
 Votre organisation peut également avoir ses exigences propres, auquel cas vous pouvez créer entièrement une stratégie DLP en choisissant l’option **Stratégie personnalisée**. Une stratégie personnalisée est vide et ne contient aucune règle prédéfinie.
 
@@ -452,16 +457,16 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 3. **Start full enforcement on the policies** so that the actions in the rules are applied and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend.
 
-    ![Options for using test mode and turning on policy](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Options for using test mode and turning on policy.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
     You can turn off a DLP policy at any time, which affects all rules in the policy. However, each rule can also be turned off individually by toggling its status in the rule editor.
 
-    ![Options for turning off a rule in a policy](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![Options for turning off a rule in a policy.](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
     You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
 
     > [!div class="mx-imgBorder"]
-    > ![Set rule priority](../media/dlp-set-rule-priority.png)-->
+    > ![Set rule priority.](../media/dlp-set-rule-priority.png)-->
 
 ## <a name="dlp-reports"></a>Rapports DLP
 
@@ -477,7 +482,7 @@ Grâce aux rapports DLP, vous pouvez obtenir une vue d’ensemble des activités
 
 En outre, vous pouvez utiliser les rapports DLP pour affiner vos stratégies DLP lorsque vous les exécutez.
 
-![Tableau de bord des rapports dans le Centre de sécurité et conformité](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
+![Tableau de bord rapports dans le Centre de sécurité et conformité.](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
 
 ## <a name="how-dlp-policies-work"></a>Fonctionnement des stratégies DLP
 
@@ -510,7 +515,7 @@ Pour cette raison, les stratégies DLP vérifient les correspondances de straté
 
 Au fur et à mesure de l’ajout ou de la modification de documents dans ses sites, le moteur de recherche analyse le contenu de sorte que vous puissiez le rechercher ultérieurement. Pendant ce temps, le contenu est également analysé pour vérifier s’il présente des informations sensibles et s’il est partagé. Les informations sensibles trouvées sont stockées en toute sécurité dans l’index de recherche, afin que seule l’équipe de conformité puisse y accéder, et pas les utilisateurs standard. Chaque stratégie DLP que vous avez activée s’exécute en arrière-plan (de façon asynchrone), en vérifiant fréquemment le contenu qui correspond à une stratégie et en appliquant des actions pour le protéger de toute divulgation accidentelle.
 
-![Diagramme montrant comment la stratégie de protection contre la perte de données (DLP) évalue le contenu de façon asynchrone](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
+![Diagramme montrant comment la stratégie DLP évalue le contenu de manière asynchrone.](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
 
 <!-- conflict with a DLP policy is bad wording --> Enfin, les documents peuvent entrer en conflit avec une stratégie DLP, mais ils peuvent également y devenir conformes. Par exemple, si une personne ajoute des numéros de carte de crédit à un document, une stratégie DLP peut alors bloquer l’accès au document automatiquement. Toutefois, si cette personne supprime ensuite les informations sensibles, l’action (dans ce cas, le blocage) est annulée automatiquement à la prochaine évaluation du document par rapport à la stratégie.
 

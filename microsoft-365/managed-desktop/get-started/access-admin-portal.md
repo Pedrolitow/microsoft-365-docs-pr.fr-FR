@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 44bc897cd2ead4c6c8568e8dc5048cf0118e35fc
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: e438e9a84b86bd4c3360022c0558480f317144e7
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364540"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602912"
 ---
 # <a name="access-the-admin-portal"></a>Accéder au portail d’administration
 
@@ -28,7 +28,7 @@ Votre passerelle vers le service Microsoft Manged Desktop est [Microsoft Endpoin
 > - Chrome (dernière version)
 > - Firefox (dernière version)
 
-Votre compte d’administration aura besoin d’autorisations spécifiques pour accéder aux fonctionnalités Microsoft Manged Desktop d’administration dans Microsoft Endpoint Manager. Vous pouvez gérer l’accès administrateur à ces fonctionnalités au sein de votre organisation à l’aide du contrôle d’accès basé sur les rôles. Plusieurs rôles Azure Active Directory administrateur (Azure AD) et des rôles Microsoft Manged Desktop intégrés sont disponibles pour fournir un contrôle plus granulaire aux différentes fonctionnalités dans le portail d’administration Microsoft Manged Desktop. Pour plus d’informations sur Azure Active Directory rôles d’administrateur, voir [autorisations](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)de rôle d’administrateur dans Azure Active Directory . Contrairement aux rôles d’administrateur Azure AD qui s’appliquent à différents produits et services Microsoft, les rôles intégrés sont spécifiques à Microsoft Manged Desktop et garantissent uniquement l’accès aux fonctionnalités d’administration de ce service. Les administrateurs peuvent attribuer des rôles intégrés aux utilisateurs individuellement ou en combinaison avec les rôles d’administrateur Azure AD pour ajouter des autorisations Microsoft Manged Desktop aux comptes d’administrateur existants.
+Votre compte d’administration aura besoin d’autorisations spécifiques pour accéder aux fonctionnalités Microsoft Manged Desktop d’administration dans Microsoft Endpoint Manager. Vous pouvez gérer l’accès administrateur à ces fonctionnalités au sein de votre organisation à l’aide du contrôle d’accès basé sur les rôles. Plusieurs rôles Azure Active Directory administrateur (Azure AD) et des rôles Microsoft Manged Desktop intégrés sont disponibles pour fournir un contrôle plus granulaire aux différentes fonctionnalités dans le portail d’administration Microsoft Manged Desktop. Pour plus d’informations sur Azure Active Directory rôles intégrés, voir [rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference) Contrairement aux rôles d’administrateur Azure AD qui s’appliquent à différents produits et services Microsoft, les rôles intégrés sont spécifiques à Microsoft Manged Desktop et garantissent uniquement l’accès aux fonctionnalités d’administration de ce service. Les administrateurs peuvent attribuer des rôles intégrés aux utilisateurs individuellement ou en combinaison avec les rôles d’administrateur Azure AD pour ajouter des autorisations Microsoft Manged Desktop aux comptes d’administrateur existants.
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directory rôles avec accès Microsoft Manged Desktop’accès
 
@@ -41,7 +41,7 @@ Votre compte d’administration aura besoin d’autorisations spécifiques pour 
 |Administrateur de sécurité | Les administrateurs dotés de ce rôle disposeront d’autorisations en lecture seule sur toutes les **fonctionnalités** et d’autorisations d’écriture pour les **fonctionnalités liées** à la sécurité Microsoft Manged Desktop dans le portail d’administration. |
 |Lecteur de sécurité |Les administrateurs dotés de ce rôle disposeront **d’autorisations** en lecture seule sur toutes les fonctionnalités du portail Microsoft Manged Desktop’administration.|
 
-Si vous avez besoin d’aide pour attribuer Azure Active Directory rôles d’administrateur, consultez [autorisations](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)de rôle d’administrateur dans Azure Active Directory .
+Si vous avez besoin d’aide pour Azure Active Directory rôles intégrés, consultez [les rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference)
 
 > [!IMPORTANT]
 > Seul le rôle Administrateur général dispose des autorisations nécessaires pour *inscrire* votre organisation dans Microsoft Manged Desktop. N’Azure Active Directory pas que les rôles de compte d’utilisateur donnent des privilèges de comptes d’utilisateurs à différents services Microsoft. Une fois l’inscription Microsoft Manged Desktop terminé, vous devez toujours  utiliser le rôle avec le moins de privilèges nécessaires pour accomplir vos autres tâches.
@@ -87,13 +87,13 @@ Si vous devez attribuer un ou plusieurs des rôles intégrés à un groupe exist
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 
 1. Portail d’administration Access (cet article).
-1. [Ajoutez et vérifiez les contacts d’administrateur dans le portail d’administration.](add-admin-contacts.md)
-1. [Ajuster les paramètres après l’inscription.](conditional-access.md)
-1. Déployez et affectez [Portail d’entreprise Intune](company-portal.md).
+1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md).
+1. [Ajuster les paramètres après l’inscription](conditional-access.md).
+1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
-1. [Déployer des applications.](deploy-apps.md)
-1. [Configurer des appareils.](set-up-devices.md)
-1. Configurer [l’expérience de première expérience avec Autopilot et la page État de l’inscription.](esp-first-run.md)
-1. [Activer les fonctionnalités de support utilisateur.](enable-support.md)
-1. [Préparez vos utilisateurs à utiliser des appareils.](get-started-devices.md)
-1. [Prendre en main le contrôle d’application.](get-started-app-control.md)
+1. [Déployer des applications](deploy-apps.md).
+1. [Configurer les appareils](set-up-devices.md).
+1. Configurez l’[Expérience de première exécution avec Autopilot et la page d’état d’inscription](esp-first-run.md).
+1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
+1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).
+1. [Démarrage avec le contrôle d’application](get-started-app-control.md).

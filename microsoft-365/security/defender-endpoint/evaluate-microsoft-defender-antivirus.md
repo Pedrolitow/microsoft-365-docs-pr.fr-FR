@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 93bc842f64139bce2ce5615868e77b4418e40f5dac7956711b7f5a08e60fcd42
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f68efdcf74317efeb1683b1cc5efcdf1f43fafa
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794017"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599290"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Évaluer l’antivirus Microsoft Defender
 
@@ -33,11 +33,12 @@ ms.locfileid: "53794017"
 
 Utilisez ce guide pour déterminer dans quelle mesure Antivirus Microsoft Defender vous protège contre les virus, les programmes malveillants et les applications potentiellement indésirables.
 
->[!TIP]
+> [!TIP]
 >Vous pouvez également consulter le site web de démonstration microsoft Defender pour points de terminaison [sur demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités suivantes fonctionnent et voir comment elles fonctionnent :
->- Protection fournie par le cloud
->- Apprentissage rapide (y compris Bloquer à la première vue)
->- Blocage d’applications potentiellement indésirables
+>
+> - Protection fournie par le cloud
+> - Apprentissage rapide (y compris Bloquer à la première vue)
+> - Blocage d’applications potentiellement indésirables
 
 Il explique les fonctionnalités importantes de protection nouvelle génération de Antivirus Microsoft Defender disponibles pour les petites et grandes entreprises, et comment elles augmentent la détection et la protection contre les programmes malveillants sur votre réseau.
 
@@ -54,9 +55,9 @@ Vous pouvez également télécharger un PowerShell qui active automatiquement to
 > [!IMPORTANT]
 > Le guide est actuellement destiné à l’évaluation d’une Antivirus Microsoft Defender. L’activation de tous les paramètres de ce guide peut ne pas convenir pour un déploiement réel.
 >
-> Pour obtenir les dernières recommandations pour le déploiement et la surveillance réels de Antivirus Microsoft Defender sur un réseau, voir [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md).
+> Pour obtenir les dernières recommandations pour le déploiement et la surveillance réels des Antivirus Microsoft Defender sur un réseau, voir [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md).
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)

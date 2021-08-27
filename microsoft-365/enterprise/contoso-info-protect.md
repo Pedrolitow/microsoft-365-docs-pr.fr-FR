@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre comment Contoso utilise les fonctionnalités de protection des informations Microsoft 365 entreprise pour sécuriser ses biens numériques dans le cloud.
-ms.openlocfilehash: 7240e226cf70b2666f6e0bc9180aea3ee63bdc91
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: c61d6ee0a3f577d27c306631ea9f57d8cb3d7c2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356299"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552863"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
@@ -41,7 +41,7 @@ Contoso a effectué une analyse de ses données et déterminé les niveaux de cl
 Le tableau suivant répertorie les stratégies d’information de Contoso.
 
 
-| Valeur | Accès | Rétention de données | Protection des informations |
+| Valeur | Accès | Rétention des données | Protection des informations |
 |:-------|:-----|:-----|:-----|
 | Valeur commerciale faible (Niveau 1: Ligne de base) | Autoriser l’accès à tous.  | 6 mois | Utiliser le chiffrement. |
 | Valeur commerciale moyenne (Niveau 2: Sensible) | Autoriser l’accès aux employés, sous-traitants et partenaires de Contoso. <BR><BR> Utiliser l’authentification multi-facteur (MFA), le chiffrement TLS (Transport Layer Security) et la gestion des applications mobiles (MAM). | 2 ans  | Utiliser les valeurs de hachage pour l’intégrité des données.  |
@@ -64,11 +64,11 @@ Contoso a suivi les étapes suivantes pour préparer Microsoft 365 entreprise au
 
    Contoso a créé des étiquettes de confidentialité pour ses niveaux de données dont les étiquettes hautement réglementées incluent chiffrement, autorisations et filigranes.
 
-4. Déplacer des données à partir de sites SharePoint et de partages de fichiers locaux vers leurs nouveaux sites SharePoint sites
+4. Déplacer des données de sites locaux SharePoint partages de fichiers vers leurs nouveaux sites SharePoint sites
 
     Les fichiers ayant migré vers les nouveaux sites SharePoint ont hérité des étiquettes de rétention par défaut attribuées au site.
 
-5. Former les employés à l’utilisation des étiquettes de niveau de sensibilité pour les nouveaux documents, à interagir avec le service it de Contoso lors de la création de sites SharePoint et à toujours stocker des biens numériques sur des sites SharePoint sites
+5. Former les employés à l’utilisation des étiquettes de sensibilité pour les nouveaux documents, à interagir avec le service it de Contoso lors de la création de sites SharePoint et à toujours stocker des biens numériques sur des sites SharePoint sites
 
     La modification des mauvaises habitudes de stockage des informations des travailleurs est souvent considérée comme la partie la plus difficile de la transition de la protection des informations pour le cloud. Contoso it and management needed to get employees to always label and store their digital assets in the cloud, refrain from using on-premises file shares, and not use third-party cloud storage services or USB drives.
 
@@ -82,7 +82,7 @@ Dans le cadre de son déploiement de Exchange Online et SharePoint, Contoso a co
 
 Voici un ensemble de stratégies Contoso pour la protection des informations.
 
-![Stratégies d’accès conditionnel à SharePoint, à Exchange Online et aux appareils](../media/contoso-info-protect/contoso-info-protect-fig1.png)
+![Stratégies d’Exchange Online, d’SharePoint et d’accès conditionnel.](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 >[!Note]
 >Contoso a également configuré d’autres stratégies d’accès conditionnel pour l’identité et la connexion. Consultez l’[Identité de Contoso Corporation](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
@@ -109,7 +109,7 @@ Le tableau suivant maie les niveaux de données Contoso aux fonctionnalités de 
 
 Voici la configuration de la protection des informations Contoso qui en résulte.
 
-![Configuration de la protection des informations obtenue par Contoso.](../media/contoso-info-protect/contoso-info-protect-fig2.png)
+![Configuration de la protection des informations résultante de Contoso.](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## <a name="next-step"></a>Étape suivante
 

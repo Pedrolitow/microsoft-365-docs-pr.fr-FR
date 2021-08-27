@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a4961b7a9ae2bdf24e4ac105f2b3ff0a153c1399
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 37a95fedede173578f23b48286e846f95a495479
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257802"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603092"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -30,7 +30,7 @@ ms.locfileid: "58257802"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [L’accès contrôlé aux dossiers](controlled-folders.md) vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers est inclus Windows 10 et Windows Server 2019.
 
@@ -54,7 +54,7 @@ Pour plus d’informations sur la désactivation de la fusion de listes locales,
 
 ## <a name="windows-security-app"></a>Sécurité Windows application
 
-1. Ouvrez l Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches. Vous pouvez également rechercher Defender dans le menu **Démarrer.**
+1. Ouvrez l Sécurité Windows’application en sélectionnant l’icône de bouclier dans la barre des tâches. Vous pouvez également rechercher Defender dans le menu **Démarrer.**
 
 2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis sélectionnez Protection contre les **ransomware.**
 
@@ -62,33 +62,33 @@ Pour plus d’informations sur la désactivation de la fusion de listes locales,
 
 > [!NOTE]
 > Si l’accès contrôlé aux dossiers est configuré avec la stratégie de groupe, PowerShell ou les CSP MDM, l’état change dans l’application Sécurité Windows après un redémarrage de l’appareil.
-> Si la fonctionnalité est définie sur **le mode Audit** avec l’un de ces outils, l’application Sécurité Windows affichera l’état comme Étant **éteint.**
+> Si la fonctionnalité est définie sur **le mode Audit** avec l’un de ces outils, l’application Sécurité Windows affiche l’état comme Étant **éteint.**
 > Si vous protégez les données de profil utilisateur, nous vous recommandons de le faire sur le lecteur d’installation Windows par défaut.
 
 ## <a name="endpoint-manager"></a>Gestionnaire de points de terminaison
 
 1. Connectez-vous au [Endpoint Manager](https://endpoint.microsoft.com) et ouvrez **Endpoint Security**.
 
-2. Go to **Attack Surface Reduction**  >  **Policy**.
+2. Go to **Attack Surface Reduction** \> **Policy**.
 
-3. Sélectionnez **Plateforme,** **sélectionnez Windows 10 et** ultérieures, puis sélectionnez les règles de réduction de **la surface d’attaque de profil**  >  **Créer.**
+3. Sélectionnez **Plateforme,** **sélectionnez Windows 10 et** ultérieures, puis sélectionnez les règles de réduction de **la surface d’attaque de profil** \> **Créer.**
 
-4.  Nommez la stratégie et ajoutez une description. Sélectionnez **Suivant**.
+4. Nommez la stratégie et ajoutez une description. Sélectionnez **Suivant**.
 
-5.  Faites défiler la page vers le bas, sélectionnez la page de la page de **la protection** des dossiers activée, puis choisissez **Activer.**
+5. Faites défiler la page vers le bas, sélectionnez la page de la page de **la protection** des dossiers activée, puis choisissez **Activer.**
 
-6.  Sélectionnez **la liste des dossiers supplémentaires** qui doivent être protégés et ajoutez les dossiers qui doivent être protégés.
+6. Sélectionnez **la liste des dossiers supplémentaires** qui doivent être protégés et ajoutez les dossiers qui doivent être protégés.
 
-7.  Sélectionnez **la liste des applications qui ont accès aux dossiers** protégés et ajoutez les applications qui ont accès aux dossiers protégés.
+7. Sélectionnez **la liste des applications qui ont accès aux dossiers** protégés et ajoutez les applications qui ont accès aux dossiers protégés.
 
-8.  Sélectionnez **Exclure des fichiers et des** chemins d’accès des règles de réduction de la surface d’attaque et ajoutez les fichiers et les chemins d’accès qui doivent être exclus des règles de réduction de la surface d’attaque.
+8. Sélectionnez **Exclure des fichiers et des** chemins d’accès des règles de réduction de la surface d’attaque et ajoutez les fichiers et les chemins d’accès qui doivent être exclus des règles de réduction de la surface d’attaque.
 
-9.  Sélectionnez les **affectations de profil,** affectez à tous les utilisateurs **& tous** les appareils, puis sélectionnez **Enregistrer**.
+9. Sélectionnez les **affectations de profil,** affectez à tous les utilisateurs **& tous** les appareils, puis sélectionnez **Enregistrer**.
 
-10.  Sélectionnez **Suivant** pour enregistrer chaque lame ouvert, puis **Créer.**
+10. Sélectionnez **Suivant** pour enregistrer chaque lame ouvert, puis **Créer.**
 
-   > [!NOTE]
-   > Les caractères génériques sont pris en charge pour les applications, mais pas pour les dossiers. Les sous-foldeurs ne sont pas protégés. Les applications autorisées continueront à déclencher des événements jusqu’à leur redémarrage.
+    > [!NOTE]
+    > Les caractères génériques sont pris en charge pour les applications, mais pas pour les dossiers. Les sous-foldeurs ne sont pas protégés. Les applications autorisées continueront à déclencher des événements jusqu’à leur redémarrage.
 
 ## <a name="mobile-device-management-mdm"></a>Gestion des périphériques mobiles (MDM)
 
@@ -96,13 +96,14 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance**  >  **Endpoint Protection** Windows Defender  >  **Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** Windows Defender \> **Exploit Guard**.
 
-2. Sélectionnez **Home**  >  **Create Exploit Guard Policy**.
+2. Sélectionnez **Home** \> **Create Exploit Guard Policy**.
 
 3. Entrez un nom et une description, sélectionnez **Accès contrôlé aux** dossiers, puis sélectionnez **Suivant**.
 
 4. Choisissez si bloquer ou auditer les modifications, autoriser d’autres applications ou ajouter d’autres dossiers, puis sélectionnez **Suivant**.
+
    > [!NOTE]
    > Wilcard est pris en charge pour les applications, mais pas pour les dossiers. Les sous-foldeurs ne sont pas protégés. Les applications autorisées continueront à déclencher des événements jusqu’à leur redémarrage.
 
@@ -123,9 +124,9 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
    - **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers des dossiers protégés.
    - **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal Windows événements dans lequel vous pourrez évaluer l’impact sur votre organisation.
    - **Bloquer la modification du disque** uniquement : les tentatives d’écriture dans les secteurs de disque par des applications nontrues sont enregistrées dans Windows journal des événements. Ces journaux se trouvent dans **les journaux des applications** et des services de Microsoft Windows Windows Defender \> \> \> \> \> ID opérationnel 1123.
-   - **Auditer** la modification du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés sont **enregistrées** dans le journal des événements Windows (sous Journaux des applications et des services  >  **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
+   - **Auditer** la modification du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés sont **enregistrées** dans le journal des événements Windows (sous Journaux des applications et des services \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
 
-      ![Capture d’écran de l’option de stratégie de groupe Activée et mode Audit sélectionnée dans la baisse](../../media/cfa-gp-enable.png)
+      ![Capture d’écran de l’option de stratégie de groupe Activée et mode Audit sélectionnée dans la baisse.](../../media/cfa-gp-enable.png)
 
 > [!IMPORTANT]
 > Pour activer entièrement l’accès contrôlé aux dossiers, vous  devez définir l’option de stratégie de groupe sur Activé et sélectionner Bloquer dans le menu déroulant Options. 

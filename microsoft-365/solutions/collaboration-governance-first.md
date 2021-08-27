@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment créer votre plan de gouvernance de collaboration
-ms.openlocfilehash: 062648ca2e4eb2c3909b38d376f568df726ac2bef3abb5b82b1e86db879a1887
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cd6da85f43d3dc72ee7b9ccd763872dbccfbeb78
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843982"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585595"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Créer votre plan de gouvernance de collaboration
 
@@ -117,7 +117,7 @@ Les objectifs de résultat commercial doivent être le principal facteur de vos 
 
 ### <a name="define-roles-and-responsibilities"></a>Définir les rôles et les responsabilités
 
-En plus de votre équipe de gouvernance, il existe plusieurs autres rôles clés ou équipes que vous souhaitez positionner pour réussir avec Microsoft 365. Certains rôles peuvent être combinés ou remplis par la même personne et d’autres peuvent ne pas être appropriés pour toutes les organisations. La plupart des organisations ont un sponsor exécutif pour Microsoft 365 dans son ensemble et certaines ont également un comité directeur ou une équipe pour Microsoft 365 dans son ensemble ou uniquement pour l’intranet. [En savoir plus sur les rôles d’administrateur complets et les autorisations disponibles dans Microsoft 365](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+En plus de votre équipe de gouvernance, il existe plusieurs autres rôles clés ou équipes que vous souhaitez positionner pour réussir avec Microsoft 365. Certains rôles peuvent être combinés ou remplis par la même personne et d’autres peuvent ne pas être appropriés pour toutes les organisations. La plupart des organisations ont un sponsor exécutif pour Microsoft 365 dans son ensemble et certaines ont également un comité directeur ou une équipe pour Microsoft 365 dans son ensemble ou uniquement pour l’intranet. [En savoir plus sur les rôles d’administrateur complets et les autorisations disponibles dans Microsoft 365](../admin/add-users/admin-roles-page.md).
 
 ### <a name="revisit-as-business-and-technology-changes"></a>Revenir en tant que changement d’entreprise et de technologie
 
@@ -133,7 +133,7 @@ En fin de compte, la réussite de vos efforts de planification de gouvernance d�
 
 - Pouvez-vous créer un programme Microsoft 365 Champions pour votre organisation ? En outre, envisagez de rejoindre le programme des champions du [Microsoft 365](https://aka.ms/O365Champions) mondial pour obtenir des idées et des approches pour votre propre programme de champions et pour vous connecter avec des personnes et des responsables réfléchis semblables, au sein et autour de Microsoft.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

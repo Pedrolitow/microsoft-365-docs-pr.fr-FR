@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 155195ef2c7083bf6d792ccd1b77584d43ba3be27414ac3b27013af6f774cd09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37918c9078231b80f1b41ddf063df92f5cd2aace
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905508"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569056"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -36,7 +36,7 @@ Le **Tableau de bord de stratégie** vous permet de consulter rapidement les str
 - **Actions effectuées sur les alertes** : le nombre total d’alertes confirmées ou ignorées au cours des 365 derniers jours.
 - **Efficacité de la stratégie** : le pourcentage déterminé par le nombre total des alertes confirmées divisé par le nombre total de mesures prises à la suite des alertes (il s’agit du total des alertes qui ont été confirmées ou ignorées au cours de l’année précédente).
 
-![Tableau de bord des stratégies de gestion des risques internes.](../media/insider-risk-policy-dashboard.png)
+![Tableau de bord de la stratégie de gestion des risques internes.](../media/insider-risk-policy-dashboard.png)
 
 ## <a name="policy-recommendations-from-analytics-preview"></a>Recommandations de la stratégie à partir d’une analyse (préversion)
 
@@ -72,7 +72,7 @@ Lors de la création ou la modification de stratégies DLP pour les utiliser ave
 
 - Vérifiez que le paramètre de règle des **Rapports d’incident** dans la stratégie DLP utilisée pour ce modèle de gestion des risques internes est paramétré pour les alertes à niveau de gravité *Élevé*. Le niveau de gravité *Élevé* est l’événement déclencheur et les alertes de gestion des risques internes ne sont pas générées à partir des règles dans les stratégies DLP ayant le champ **Rapports d’incident** défini sur *Faible* ou *Moyen*.
 
-    ![Paramètre d’alerte d’une stratégie DLP](../media/insider-risk-DLP-policy-high-severity.png)
+    ![Paramètre d’alerte de stratégie DLP.](../media/insider-risk-DLP-policy-high-severity.png)
 
      > [!NOTE]
      > Lorsque vous créez une stratégie DLP à l’aide de modèles intégrés, vous devez sélectionner l’option **Créer ou personnaliser des règles DLP avancées** pour configurer le paramètre **Rapports d’incident** pour le niveau de gravité *Élevé*.
@@ -208,7 +208,9 @@ Pour afficher rapidement l’état d’intégrité d’une stratégie, naviguez 
 
 Pour d’autres détails concernant les avertissements et les recommandations, sélectionnez une stratégie sur l’onglet **Stratégie** pour ouvrir la carte détaillée de la stratégie. Des informations supplémentaires sur les avertissements et les recommandations, notamment des conseils sur la façon de traiter ces problèmes, s’affichent dans la section Notification de la carte détaillées.
 
-![Intégrité d’une stratégie de gestion des risques internes](../media/insider-risk-policy-health.png)
+![L’état de la stratégie de gestion des risques internes.](../media/insider-risk-policy-health.png)
+
+### <a name="notification-messages"></a>Les messages de notification
 
 Utilisez le tableau suivant pour en savoir davantage sur les notifications d’avertissement et de recommandation, ainsi que les mesures à prendre pour résoudre des problèmes potentiels.
 

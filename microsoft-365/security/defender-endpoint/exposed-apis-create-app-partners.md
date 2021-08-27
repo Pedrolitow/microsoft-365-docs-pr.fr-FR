@@ -1,7 +1,7 @@
 ---
 title: Créer une application pour accéder à Microsoft Defender pour le point de terminaison sans utilisateur
 ms.reviewer: ''
-description: Découvrez comment concevoir une application web pour obtenir un accès par programmation à Microsoft Defender pour endpoint sans utilisateur.
+description: Découvrez comment concevoir une application web pour obtenir un accès par programme à Microsoft Defender pour endpoint sans utilisateur.
 keywords: api, api de graphique, api pris en charge, acteur, alertes, appareil, utilisateur, domaine, ip, fichier, recherche avancée, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 36cd53e5cf88fee136689af503a68b3119dac0af4a8576f6dbad36f11351aafd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d9d5f37d9085388963898267fcc9967da6223a73
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898502"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606976"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Accès des partenaires via les API microsoft Defender pour les points de terminaison
 
@@ -39,10 +39,10 @@ ms.locfileid: "53898502"
 
 Cette page décrit comment créer une application Azure Active Directory (Azure AD) pour obtenir un accès par programmation à Microsoft Defender pour endpoint pour le compte de vos clients.
 
-
-Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
+
 - Créez une application Azure AD **multi-locataire.**
 - Obtenez l’autorisation (consentement) de votre administrateur client pour que votre application accède aux ressources Defender for Endpoint dont elle a besoin.
 - Obtenez un jeton d’accès à l’aide de cette application.
@@ -54,9 +54,9 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
 1. Connectez-vous à votre [client Azure avec](https://portal.azure.com) un utilisateur qui a le rôle **Administrateur** général.
 
-2. Accédez à **Azure Active Directory**  >  **Inscription de l’application Nouvelle**  >  **inscription.** 
+2. Accédez à **Azure Active Directory** \> **Inscription de l’application Nouvelle** \> **inscription.**
 
-   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application](images/atp-azure-new-app2.png)
+   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](images/atp-azure-new-app2.png)
 
 3. Dans le formulaire d’inscription :
 
@@ -66,53 +66,50 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
    - URI de redirection - type : Web, URI : https://portal.azure.com
 
-   ![Image de l’Microsoft Azure d’application partenaire](images/atp-api-new-app-partner.png)
-
+   ![Image de l’Microsoft Azure d’application partenaire.](images/atp-api-new-app-partner.png)
 
 4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et à l’affecter avec le jeu minimal d’autorisations requis pour terminer l’intégration.
 
-   - Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon  >    >   organisation > **tapez WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
+   - Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon \>  \>  organisation > **tapez WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
 
    - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour le voir apparaître.
 
-   ![ajouter une autorisation](images/add-permission.png)
-   
-   ### <a name="request-api-permissions"></a>Demander des autorisations d’API
+     ![ajouter une autorisation.](images/add-permission.png)
 
-   Pour déterminer l’autorisation qui vous est nécessaire, appelez la section **Autorisations** de l’API que vous souhaitez appeler. Par exemple :
+### <a name="request-api-permissions"></a>Demander des autorisations d’API
 
-   - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
-   
-   - Pour [isoler un appareil, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
+Pour déterminer l’autorisation qui vous est nécessaire, appelez la section **Autorisations** de l’API que vous souhaitez appeler. Par exemple :
 
-   Dans l’exemple suivant, nous allons utiliser **l’autorisation** « Lire toutes les alertes » :
+- Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
+- Pour [isoler un appareil, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
 
-   Choose **Application permissions**  >  **Alert.Read.All** > select on **Add permissions**
+Dans l’exemple suivant, nous allons utiliser **l’autorisation** « Lire toutes les alertes » :
 
-   ![autorisations des apps](images/application-permissions.png)
+1. Choose **Application permissions** \> **Alert.Read.All** > select on **Add permissions**
 
+   ![autorisations d’application.](images/application-permissions.png)
 
-5. Sélectionnez **Accorder le consentement**
+2. Sélectionner **Accorder le consentement**
 
-   - **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner l’autorisation **Accorder le consentement** pour que la nouvelle autorisation prenne effet.
+   - **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner accordez **l’autorisation** pour que la nouvelle autorisation prenne effet.
 
-   ![Image de l’octroi d’autorisations](images/grant-consent.png)
+   ![Image d’octroi d’autorisations.](images/grant-consent.png)
 
-6. Ajoutez un secret à l’application.
+3. Ajoutez un secret à l’application.
 
    - Select **Certificates & secrets,** add description to the secret and select **Add**.
 
     **Important**: après avoir cliqué sur Ajouter, **copiez la valeur de secret générée.** Vous ne pourrez plus récupérer une fois que vous êtes parti !
 
-    ![Image de la clé de création d’application](images/webapp-create-key2.png)
+    ![Image de la clé de création d’application.](images/webapp-create-key2.png)
 
-7. Notez votre ID d’application :
+4. Notez votre ID d’application :
 
    - Dans la page de votre application, allez à **Vue d’ensemble** et copiez les informations suivantes :
 
-   ![Image de l’ID d’application créé](images/app-id.png)
+   ![Image de l’ID d’application créé.](images/app-id.png)
 
-8. Ajoutez l’application au client de votre client.
+5. Ajoutez l’application au client de votre client.
 
    Votre application doit être approuvée dans chaque client où vous avez l’intention de l’utiliser. En effet, votre application interagit avec Microsoft Defender pour l’application Endpoint pour le compte de votre client.
 
@@ -128,12 +125,11 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
    Après avoir cliqué sur le lien de consentement, connectez-vous avec l’administrateur général du client du client et consentez à l’application.
 
-   ![Image de consentement](images/app-consent-partner.png)
+   ![Image de consentement.](images/app-consent-partner.png)
 
    En outre, vous devrez demander à votre client son ID de locataire et l’enregistrer pour une utilisation ultérieure lors de l’acquisition du jeton.
 
-- **Terminé !** Vous avez réussi à inscrire une application !
-- Voir les exemples ci-dessous pour l’acquisition et la validation des jetons.
+6. **Terminé !** Vous avez réussi à inscrire une application ! Voir les exemples ci-dessous pour l’acquisition et la validation des jetons.
 
 ## <a name="get-an-access-token-example"></a>Obtenir un exemple de jeton d’accès
 
@@ -182,7 +178,7 @@ return $token
     ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
 
     const string authority = "https://login.microsoftonline.com";
     const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
@@ -227,7 +223,7 @@ Vérifiez que vous avez reçu un jeton correct :
 - Dans la capture d’écran ci-dessous, vous pouvez voir un jeton décodé acquis à partir d’une application avec plusieurs autorisations pour Microsoft Defender pour le point de terminaison :
 - La revendication « tid » est l’ID de client à qui appartient le jeton.
 
-![Image de validation de jeton](images/webapp-decoded-token.png)
+![Image de validation de jeton.](images/webapp-decoded-token.png)
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Utiliser le jeton pour accéder à l’API Microsoft Defender for Endpoint
 

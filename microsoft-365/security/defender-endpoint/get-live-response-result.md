@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5b1221e47d3e34832ac798fa3be0a37d607c3975
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 4e52906cda48314967e40039caabfd81e38514c1
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392131"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611122"
 ---
-#  <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
+# <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -55,7 +55,7 @@ Récupère un résultat de commande de réponse en direct spécifique par son in
 
 Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
 
-- **Vérifiez que vous exécutez une version prise** en charge de Windows .
+- **Vérifiez que vous exécutez une version prise en charge de Windows**.
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
@@ -91,7 +91,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|String|Porteur {token}. Obligatoire.|
+|Autorisation|Chaîne|Porteur {token}. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande
 

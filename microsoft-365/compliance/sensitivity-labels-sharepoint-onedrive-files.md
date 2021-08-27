@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge des étiquettes de sensibilité pour Word, Excel et PowerPoint fichiers SharePoint et OneDrive.
-ms.openlocfilehash: 5a1358b86ebd3385dbe66fd075a9aa6bd4d739d58e98120ec7e82f5217ac1e73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3a15b59fc1c1c5c3f0f8497a126c590edd5b20ea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842007"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568996"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -38,7 +38,7 @@ Après avoir activé les étiquettes de niveau de sensibilité pour les fichiers
 
 - Lorsque les utilisateurs téléchargent ou accèdent à ces fichiers à partir de SharePoint ou OneDrive, l’étiquette de niveau de sensibilité et les paramètres de chiffrement de l’étiquette sont appliqués et restent avec le fichier, où qu’il soit stocké. Veillez à fournir des conseils aux utilisateurs pour utiliser uniquement des étiquettes pour protéger les documents. Pour plus d’informations, consultez les options de gestion des droits de l’information [(IRM) et les étiquettes de sensibilité.](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)
 
-- Lorsque les utilisateurs téléchargent des fichiers étiquetés et chiffrés vers SharePoint ou OneDrive, ils doivent au moins avoir des droits d’affichage sur ces fichiers. Par exemple, ils peuvent ouvrir les fichiers en dehors SharePoint. S’ils n’ont pas ce droit d’utilisation minimum, le téléchargement réussit, mais le service ne reconnaît pas l’étiquette et ne peut pas traiter le contenu du fichier.
+- Lorsque les utilisateurs téléchargent des fichiers étiquetés et chiffrés vers SharePoint ou OneDrive, ils doivent au moins avoir des droits d’affichage sur ces fichiers. Par exemple, ils peuvent ouvrir les fichiers en dehors SharePoint. S’ils n’ont pas ce droit d’utilisation minimum, le chargement réussit, mais le service ne reconnaît pas l’étiquette et ne peut pas traiter le contenu du fichier.
 
 - Utilisez Office sur le Web (Word, Excel, PowerPoint) pour ouvrir et modifier Office fichiers qui ont des étiquettes de niveau de sensibilité qui appliquent le chiffrement. Les autorisations affectées au chiffrement sont appliquées. Vous pouvez également utiliser [l’étiquetage automatique](apply-sensitivity-label-automatically.md) pour ces documents.
 
@@ -51,7 +51,7 @@ Après avoir activé les étiquettes de niveau de sensibilité pour les fichiers
 >
 > Le comportement SharePoint et OneDrive ne change pas non plus pour les fichiers existants à ces emplacements qui sont étiquetés avec le chiffrement à l’aide d’une clé Azure unique. Pour que ces fichiers bénéficient des nouvelles fonctionnalités une fois que vous avez activé les étiquettes de niveau de sensibilité pour les fichiers Office dans SharePoint et OneDrive, les fichiers doivent être téléchargés et téléchargés à nouveau, ou modifiés.
 
-Après avoir activé les étiquettes de niveau de sensibilité pour les fichiers Office dans SharePoint et OneDrive, trois nouveaux événements [d’audit](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) sont disponibles pour la surveillance des étiquettes de niveau de sensibilité appliquées aux documents dans SharePoint et OneDrive :
+Après avoir activé les étiquettes de niveau de sensibilité pour les fichiers Office dans SharePoint et OneDrive, trois nouveaux événements [d’audit](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) sont disponibles pour la surveillance des étiquettes de niveau de sensibilité qui sont appliquées aux documents dans SharePoint et OneDrive :
 
 - **Étiquette de confidentialité appliquée au fichier**
 - **Étiquette de confidentialité modifiée appliquée au fichier**
@@ -79,7 +79,7 @@ Utilisez l’application Synchronisation OneDrive version 19.002.0121.0008 ou ul
 
 - SharePoint et OneDrive n’appliquent pas automatiquement des étiquettes de niveau de sensibilité aux fichiers existants que vous avez déjà chiffrés à l’aide d’étiquettes Azure Information Protection. Au lieu de cela, pour que les fonctionnalités fonctionnent une fois que vous avez activé les étiquettes de niveau de Office pour les fichiers SharePoint et OneDrive, effectuer les tâches suivantes :
 
-    1. Assurez-vous que vous [avez migré les étiquettes Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) vers les étiquettes de sensibilité et que vous [les](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) avez publiées à partir du Centre de conformité Microsoft 365.
+    1. Assurez-vous que vous [avez migré les étiquettes Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) vers les étiquettes de sensibilité et que vous [les](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) avez publiées à partir du Centre de conformité Microsoft 365.
     2. Téléchargez les fichiers étiquetés, puis téléchargez-les vers leur emplacement d’origine SharePoint ou OneDrive.
 
 - SharePoint et OneDrive ne peuvent pas traiter les fichiers chiffrés lorsque l’étiquette qui a appliqué le chiffrement possède l’une des [configurations suivantes pour le chiffrement](encryption-sensitivity-labels.md#configure-encryption-settings):
@@ -125,19 +125,19 @@ Utilisez l’application Synchronisation OneDrive version 19.002.0121.0008 ou ul
 
 ## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>Comment activer les étiquettes de niveau de SharePoint et OneDrive (opt-in)
 
-Vous pouvez activer les nouvelles fonctionnalités à l’Centre de conformité Microsoft 365 ou à l’aide de PowerShell. Comme avec toutes les modifications de configuration au niveau du client pour SharePoint et OneDrive, la modification prend environ 15 minutes pour prendre effet.
+Vous pouvez activer les nouvelles fonctionnalités à l’Centre de conformité Microsoft 365 ou à l’aide de PowerShell. Comme avec toutes les modifications de configuration au niveau du client pour SharePoint et OneDrive, la modification prend environ 15 minutes pour prendre effet.
 
 ### <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>Utiliser le centre de conformité pour activer la prise en charge des étiquettes de sensibilité
 
 Cette option est le moyen le plus simple d’activer les étiquettes de sensibilité pour SharePoint et OneDrive, mais vous devez vous connectez en tant qu’administrateur général pour votre client.
 
-1. Connectez-vous au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) en tant qu’administrateur général et accédez à **Solutions**  >  **Information Protection**
+1. Connectez-vous au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) en tant qu’administrateur général et accédez à **Solutions**  >  **Information Protection**
 
     Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
 
 2. Si vous voyez un message pour activer la possibilité de traiter le contenu dans Office fichiers en ligne, **sélectionnez** Activer maintenant :
 
-    ![Activer maintenant le bouton pour activer les étiquettes de niveau de Office Online](../media/sensitivity-labels-turn-on-banner.png)
+    ![Activez maintenant le bouton pour activer les étiquettes de niveau de Office Online.](../media/sensitivity-labels-turn-on-banner.png)
 
     La commande s’exécute immédiatement et lorsque la page est actualisée, vous ne voyez plus le message ou le bouton.
 
@@ -166,7 +166,7 @@ Avant d’exécuter la commande PowerShell pour activer les étiquettes de sensi
 
 4. Sélectionnez votre langue, puis cliquez sur **Télécharger**.
 
-5. Choisissez entre le fichier x64 et x86 .msi. Téléchargez le fichier x64 si vous exécutez la version 64 bits de Windows ou le fichier x86 si vous exécutez la version 32 bits. Si vous ne le savez pas, quelle version du système [d’Windows’exploitation est-ce que j’exécute ?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+5. Choisissez entre le fichier x64 et x86 .msi. Téléchargez le fichier x64 si vous exécutez la version 64 bits de Windows ou le fichier x86 si vous exécutez la version 32 bits. Si vous ne le savez pas, quelle version du système [d’exploitation Windows-je en cours d’exécution ?](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
 6. Après avoir téléchargé le fichier, exécutez-le et suivez les étapes de l’Assistant Installation.
 
@@ -190,7 +190,7 @@ Pour activer les nouvelles fonctionnalités, utilisez la cmdlet [Set-SPOTenant](
 
 Lorsque vous utilisez des étiquettes de sensibilité avec SharePoint et OneDrive, n’oubliez pas que vous devez autoriser le temps de réplication lorsque vous publiez de nouvelles étiquettes de sensibilité ou mettez à jour les étiquettes de sensibilité existantes. Ceci est particulièrement important pour les nouvelles étiquettes qui appliquent le chiffrement.
 
-Par exemple : vous créez et publiez une nouvelle étiquette de sensibilité qui applique le chiffrement et qui apparaît très rapidement dans l’application de bureau d’un utilisateur. L’utilisateur applique cette étiquette à un document, puis la télécharge vers SharePoint ou OneDrive. Si la réplication d’étiquettes n’est pas terminée pour le service, les nouvelles fonctionnalités ne seront pas appliquées à ce document lors du chargement. Par conséquent, le document ne sera pas renvoyé dans la recherche ou pour eDiscovery et le document ne peut pas être ouvert dans Office sur le Web.
+Par exemple : vous créez et publiez une nouvelle étiquette de sensibilité qui applique le chiffrement et qui apparaît très rapidement dans l’application de bureau d’un utilisateur. L’utilisateur applique cette étiquette à un document, puis la télécharge vers SharePoint ou OneDrive. Si la réplication d’étiquettes n’est pas terminée pour le service, les nouvelles fonctionnalités ne seront pas appliquées à ce document lors du téléchargement. Par conséquent, le document ne sera pas renvoyé dans la recherche ou pour eDiscovery et le document ne peut pas être ouvert dans Office sur le Web.
 
 Les modifications suivantes sont répliquées dans un délai d’une heure : les étiquettes de confidentialité nouvelles et supprimées, ainsi que les paramètres de stratégie d’étiquette de confidentialité qui incluent les étiquettes qui figurent dans la stratégie.
 
@@ -251,7 +251,7 @@ Il peut y avoir de rares cas où un administrateur SharePoint doit supprimer le 
 
 En alternative, un administrateur général ou un administrateur [SharePoint](/sharepoint/sharepoint-admin-role) peut exécuter la cmdlet [Unlock-SPOSensitivityLabelEncryptedFile,](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) qui supprime l’étiquette de sensibilité et le chiffrement. Cette cmdlet s’exécute même si l’administrateur n’a pas d’autorisations d’accès au site ou au fichier, ou si le service Azure Rights Management n’est pas disponible.
 
-Par exemple :
+Par exemple :
 
 ```powershell
 Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
@@ -277,8 +277,8 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 Si vous avez Microsoft 365 multigéogé, vous devez exécuter cette commande pour chacun de vos emplacements géographiques.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-Après avoir activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive, envisagez d’étiqueter automatiquement ces fichiers à l’aide de stratégies d’étiquetage automatique. Pour plus d’informations, voir Appliquer automatiquement une étiquette [de niveau de sensibilité au contenu.](apply-sensitivity-label-automatically.md)
+Après avoir activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive, envisagez d’étiqueter automatiquement ces fichiers à l’aide de stratégies d’étiquetage automatique. Pour plus d’informations, voir Appliquer automatiquement une [étiquette de niveau de sensibilité au contenu.](apply-sensitivity-label-automatically.md)
 
 Vous avez besoin de partager vos documents étiquetés et chiffrés avec des personnes extérieures à votre organisation ?  Consultez [Partage de documents chiffrés avec des utilisateurs externes dans](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

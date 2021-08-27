@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9c1a07c1e68694c64c185f612e237e909d2612d7eb5940aca169e6eaad0e47cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15c3ad6eef732f36a425a54673a694613c0f4b66
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874050"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598992"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Obtenir les ko manquants par ID logiciel
 
@@ -41,10 +41,10 @@ Récupère les ko manquants (mises à jour de sécurité) par ID logiciel
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
-Type d’autorisation |   Autorisation   |   Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |Software.Read.All |   « Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire) | Software.Read |   « Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
+Application|Software.Read.All|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Software.Read|« Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -56,7 +56,7 @@ GET /api/Software/{Id}/getmissingkbs
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -100,7 +100,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

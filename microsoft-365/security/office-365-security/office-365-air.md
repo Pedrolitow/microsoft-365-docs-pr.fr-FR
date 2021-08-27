@@ -22,19 +22,19 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 163f21b12d36541556d47b0963029049c277c2d3d701d8bce206338d7ee34cbd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9039b02e34b57e2a594b0db1c4b16e59a962e1d3
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56852883"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603228"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Examen et réponse automatisés (AIR) dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 [Microsoft Defender pour Office 365](defender-for-office-365.md) inclut de puissantes fonctionnalités d’investigation et de réponse automatisées (AIR) qui peuvent faire gagner du temps et des efforts à votre équipe en matière d’opérations de sécurité. À mesure que les alertes sont déclenchées, c’est à votre équipe des opérations de sécurité de passer en revue, de hiérarchiser et de répondre à ces alertes. Suivre le volume d’alertes entrantes peut être difficile à suivre. L’automatisation de certaines de ces tâches peut vous aider.
@@ -58,7 +58,7 @@ Une alerte est déclenchée et un manuel de sécurité démarre une enquête aut
    - Une [alerte est déclenchée par un](#which-alert-policies-trigger-automated-investigations) message électronique suspect (par exemple, un message, une pièce jointe, une URL ou un compte d’utilisateur compromis). Un incident est créé et un examen automatisé commence . ou
    - Un analyste de [sécurité démarre une enquête automatisée lors](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) de l’utilisation de [l’Explorateur.](threat-explorer.md)
 2. Pendant qu’une enquête automatisée s’exécute, elle collecte des données sur le courrier électronique en question et les entités associées à ce courrier électronique. Ces entités peuvent inclure des fichiers, des URL et des destinataires. La portée de l’enquête peut augmenter à mesure que de nouvelles alertes et des alertes associées sont déclenchées.
-3. Pendant et après un examen automatisé, des [détails et des résultats](air-view-investigation-results.md) peuvent être consultables. Les résultats [incluent des actions recommandées](air-remediation-actions.md) qui peuvent être prises pour répondre aux menaces trouvées et y remédier.
+3. Pendant et après un examen automatisé, des [détails et des résultats](air-view-investigation-results.md) peuvent être consultables. Les résultats [incluent des actions recommandées](air-remediation-actions.md) qui peuvent être prises pour répondre aux menaces qui ont été trouvées et y remédier.
 4. Votre équipe des opérations de sécurité examine les résultats et les [recommandations](air-view-investigation-results.md)de l’examen, et approuve ou rejette [les actions de correction.](air-review-approve-pending-completed-actions.md)
 5. Lorsque les actions de correction en attente sont approuvées (ou rejetées), l’examen automatisé se termine.
 
@@ -96,15 +96,15 @@ Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui perme
 |Alerte|Gravité|Comment l’alerte est générée|
 |---|---|---|
 |Un clic d’URL potentiellement malveillant a été détecté|**High**|Cette alerte est générée lorsque l’une des alertes suivantes se produit : <ul><li>Un utilisateur protégé par des liens [Coffre de](safe-links.md) votre organisation clique sur un lien malveillant</li><li>Les modifications de verdict pour les URL sont identifiées par Microsoft Defender Office 365</li><li>Les utilisateurs remplacent Coffre pages d’avertissement de liens (en fonction de la stratégie de liens Coffre [de votre organisation).](set-up-safe-links-policies.md)</li></ul> <p> Pour plus d’informations sur les événements qui déclenchent cette alerte, voir [Set up Coffre Links policies](set-up-safe-links-policies.md).|
-|Un message électronique est signalé par un utilisateur comme programme malveillant ou hameçonnage|**Informatif**|Cette alerte est générée lorsque les utilisateurs de votre organisation signalent des messages en tant que courrier de hameçonnage à l’aide du module de signalement du [message](enable-the-report-message-add-in.md) ou du [module de signalement du hameçonnage.](enable-the-report-phish-add-in.md)|
-|Les messages électroniques contenant des programmes malveillants sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsqu’un message électronique contenant un programme malveillant est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide d’une [purge automatique sans heure.](zero-hour-auto-purge.md)|
-|Les messages électroniques contenant des URL de hameçonnage sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsqu’un message contenant du hameçonnage est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide d’une [purge automatique sans heure.](zero-hour-auto-purge.md)|
+|Un message électronique est signalé par un utilisateur comme programme malveillant ou hameçonnage|**Informatif**|Cette alerte est générée lorsque les utilisateurs de votre organisation signalent des messages comme du courrier de hameçonnage à l’aide du module de signalement du [message](enable-the-report-message-add-in.md) ou du [module de signalement du hameçonnage.](enable-the-report-phish-add-in.md)|
+|Les messages électroniques contenant des programmes malveillants sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsqu’un message électronique contenant un programme malveillant est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](zero-hour-auto-purge.md).|
+|Les messages électroniques contenant des URL de hameçonnage sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsqu’un message contenant du hameçonnage est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](zero-hour-auto-purge.md).|
 |Des modèles d’envoi de courrier suspects sont détectés|**Medium**|Cette alerte est générée lorsqu’une personne de votre organisation a envoyé des messages suspects et risque d’être limitée à l’envoi de courriers électroniques. L’alerte est un avertissement précoce pour un comportement qui peut indiquer que le compte est compromis, mais pas assez grave pour restreindre l’utilisateur. <p> Bien que cela soit rare, une alerte générée par cette stratégie peut être une anomalie. Toutefois, il est bon de vérifier si le compte [d’utilisateur est compromis.](responding-to-a-compromised-email-account.md)|
 |Un utilisateur est limité à l’envoi de courriers électroniques|**High**|Cette alerte est générée lorsqu’une personne de votre organisation est limitée à l’envoi de messages sortants. Cette alerte se produit généralement [lorsqu’un compte de messagerie est compromis.](responding-to-a-compromised-email-account.md) <p> Pour plus d’informations sur les utilisateurs restreints, voir Supprimer les utilisateurs bloqués du portail Utilisateurs restreints dans [Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
 |
 
 > [!TIP]
-> Pour en savoir plus sur les stratégies d’alerte ou modifier les paramètres par [défaut,](../../compliance/alert-policies.md)consultez stratégies d’alerte dans la Centre de conformité Microsoft 365 .
+> Pour en savoir plus sur les stratégies d’alerte ou modifier les paramètres par [défaut,](../../compliance/alert-policies.md)consultez stratégies d’alerte dans la Centre de conformité Microsoft 365 .
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Autorisations requises pour utiliser les fonctionnalités AIR
 
@@ -116,8 +116,8 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 
 |Tâche|Rôle(s) requis(s)|
 |---|---|
-|Configurer les fonctionnalités AIR|L’un des rôles suivants : <ul><li>Administrateur général</li><li>Administrateur de sécurité</li></ul> <p> Ces rôles peuvent être attribués [dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)|
-|Démarrer une analyse automatisée <p> --- ou --- <p> Approuver ou rejeter les actions recommandées|L’un des rôles suivants, [attribués dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [portail Microsoft 365 Defender :](permissions-microsoft-365-security-center.md) <ul><li>Administrateur général</li><li>Administrateur de sécurité</li><li>Opérateur de sécurité</li><li>Lecteur de sécurité <br> --- et --- </li><li>Recherche et purge (ce rôle est attribué uniquement dans le [portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md) Vous devrez peut-être créer un groupe de rôles de **collaboration** & messagerie et ajouter le rôle Recherche et purge à ce nouveau groupe de rôles.</li></ul>|
+|Configurer les fonctionnalités AIR|L’un des rôles suivants : <ul><li>Administrateur général</li><li>Administrateur de sécurité</li></ul> <p> Ces rôles peuvent être attribués [dans Azure Active Directory](/azure/active-directory/roles/permissions-reference) ou dans le [portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)|
+|Démarrer une analyse automatisée <p> --- ou --- <p> Approuver ou rejeter les actions recommandées|L’un des rôles suivants, [attribués dans Azure Active Directory](/azure/active-directory/roles/permissions-reference) ou dans le [portail Microsoft 365 Defender :](permissions-microsoft-365-security-center.md) <ul><li>Administrateur général</li><li>Administrateur de sécurité</li><li>Opérateur de sécurité</li><li>Lecteur de sécurité <br> --- et --- </li><li>Recherche et purge (ce rôle est attribué uniquement dans le [portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md) Vous devrez peut-être créer un groupe de rôles de **collaboration** & messagerie et ajouter le rôle Recherche et purge à ce nouveau groupe de rôles.</li></ul>|
 
 ## <a name="required-licenses"></a>Licences requises
 
@@ -131,7 +131,7 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 
 Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Office 365, vous êtes sur le point de voir certaines modifications dans le portail Microsoft 365 Defender [amélioré.](../defender/overview-security-center.md)
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée.":::
 
 Le portail d’Microsoft 365 Defender nouveau et amélioré regroupe les fonctionnalités AIR dans [Microsoft Defender pour Office 365](defender-for-office-365.md) et dans Microsoft Defender pour point de [terminaison.](../defender-endpoint/automated-investigations.md) Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.
 

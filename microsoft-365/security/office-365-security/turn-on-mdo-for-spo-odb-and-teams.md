@@ -20,19 +20,19 @@ description: Les administrateurs peuvent apprendre à activer Coffre pièces joi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 396a1fa3ee2c6ba4f9ffb75c57513bb97f94f93dee677372b930eed4d3ec4b6d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a1020193a49dd7b4871b9b9fec53d21073b03e6
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56801485"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585571"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Microsoft Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files. Pour plus d’informations, [voir Coffre attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
@@ -45,21 +45,21 @@ Cet article contient les étapes permettant d’activer et de configurer Coffre 
 
 - Pour activer les pièces jointes Coffre pour SharePoint, OneDrive et Microsoft Teams, vous devez être membre des  groupes  de rôles Gestion de l’organisation ou Administrateur de la sécurité dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-- Pour utiliser SharePoint Online PowerShell afin d’empêcher les personnes de télécharger [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) des fichiers malveillants, vous devez être membre des rôles Administrateur général ou Administrateur [SharePoint](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) dans Azure AD.
+- Pour utiliser SharePoint Online PowerShell afin d’empêcher les personnes de télécharger [](/azure/active-directory/roles/permissions-reference#global-administrator) des fichiers malveillants, vous devez être membre des rôles Administrateur général ou Administrateur [SharePoint](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) dans Azure AD.
 
-- Vérifiez que la journalisation d’audit est activée pour votre organisation. Pour plus d’informations, voir [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
+- Vérifiez que la journalisation d’audit est activée pour votre organisation. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 
 - Laissez jusqu’à 30 minutes pour que les paramètres prennent effet.
 
 ## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Étape 1 : utiliser le portail Microsoft 365 Defender pour activer Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies & rules** Threat \> **policies** \> **section** \> **Coffre Attachments**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies & rules** Threat \> **policies** section \>  Coffre \> **Attachments**.
 
 2. Dans la page **Coffre pièces jointes,** cliquez **sur Paramètres globaux.**
 
-3. Dans la **section Paramètres globaux** qui **s’affiche,** allez dans la section Protéger les fichiers SharePoint, OneDrive et Microsoft Teams.
+3. Dans la **section Paramètres globaux** qui **s’affiche,** rendez-vous dans la section Protéger SharePoint, OneDrive et Microsoft Teams protection.
 
-   Déplacez le basculement Activer Defender pour Office 365 pour **SharePoint, OneDrive** et Microsoft Teams sur le basculement droit pour activer les pièces jointes Coffre pour SharePoint, OneDrive et ![ ](../../media/scc-toggle-on.png) Microsoft Teams.
+   Déplacez **l’activer pour Office 365** pour SharePoint, OneDrive et Microsoft Teams bascule vers la ![ droite.](../../media/scc-toggle-on.png) pour activer Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams.
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -85,7 +85,7 @@ Pour empêcher les utilisateurs de télécharger des fichiers malveillants, conn
 Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Ce paramètre affecte à la fois les utilisateurs et les administrateurs.
 - Les utilisateurs peuvent toujours supprimer des fichiers malveillants.
@@ -94,7 +94,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [v
 
 ## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>Étape 3 (recommandé) Utiliser le portail Microsoft 365 Defender pour créer une stratégie d’alerte pour les fichiers détectés
 
-Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d’autres administrateurs, lorsque Coffre Attachments for SharePoint, OneDrive et Microsoft Teams détecte un fichier malveillant. Pour en savoir plus sur les alertes, consultez stratégies [d’alerte.](../../compliance/alert-policies.md)
+Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi que d’autres administrateurs, lorsque Coffre Pièces jointes pour SharePoint, OneDrive et Microsoft Teams détecte un fichier malveillant. Pour en savoir plus sur les alertes, consultez stratégies [d’alerte.](../../compliance/alert-policies.md)
 
 1. Dans le portail Microsoft 365 Defender, go to **Policies & Rules** Alert \> **policy** or open <https://security.microsoft.com/alertpolicies> .
 
@@ -115,14 +115,14 @@ Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d�
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 5. Dans la page **Définir vos destinataires,** configurez les paramètres suivants :
-   - Vérifiez **que les notifications d’envoi** par courrier électronique sont sélectionnées. Dans la zone **Destinataires de** l’e-mail, sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
+   - Vérifiez **que les notifications d’envoi** par courrier électronique sont sélectionnées. Dans la zone **Destinataires du courrier** électronique, sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
    - **Limite de notification quotidienne**: laissez la valeur par défaut **Aucune** limite sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 6. Dans la page **Passer en revue vos paramètres,** examinez vos paramètres. Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section. Vous pouvez également cliquer sur **Précédent** ou sélectionner la page spécifique dans l’Assistant.
 
-   Dans la section **Voulez-vous activer** la stratégie immédiatement ? Laissez la valeur par défaut Oui, l’activer **immédiatement** sélectionnée.
+   Dans la section **Voulez-vous activer** la stratégie immédiatement ? Laissez la valeur par défaut **Oui,** l’activer immédiatement.
 
    Lorsque vous avez terminé, cliquez sur **Terminer**.
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, d’indexation et de recherche en vigueur pour la solution Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: ba4abe52c668799f379780221b46042c8f515393ecd6f395cb45a49bad9295e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7771f653550c050250126b7ff93b83ee2e175937
+ms.sourcegitcommit: fce9a89b8280f41779835b18dceb59fa17384acf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807971"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58666753"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -34,14 +34,14 @@ Le tableau suivant répertorie les limites pour les cas et les ensembles de rév
 | Description de la limite | Limite |
 |:-----|:-----|
 |Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).  <br/> |3 millions <br/> |
-|Taille totale de fichier par jeu de chargement. Cela inclut le chargement de non-Office 365 dans un jeu à réviser.  <br/> |300 Go <br/> |
+|Taille totale de fichier par jeu de chargement. Cela inclut le chargement de non-Office 365 dans un jeu à réviser.  <br/> |300 Go <br/> |
 |Quantité totale de données chargées dans tous les ensembles de révision de l’organisation par jour.<br/> |2 To <br/> |
 |Nombre maximal d’ensembles de charge par cas.  <br/> |200 <br/> |
 |Nombre maximal d’ensembles de révision par cas.  <br/> |20 <br/> |
 |Nombre maximal de groupes de balises par cas.  <br/> |1000 <br/> |
 |Nombre maximal de balises par cas.  <br/> |1000 <br/> |
 |Nombre maximal de travaux simultanés dans votre organisation pour ajouter du contenu à un groupe de révision. Ces travaux sont **nommés Ajout de données** à un jeu à réviser et sont affichés sous l’onglet **Travaux** dans un cas.| 10 <sup>4</sup> |
-|Nombre maximal de travaux simultanés pour ajouter du contenu à un jeu à réviser par utilisateur. Ces travaux sont **nommés Ajout de données** à un jeu à réviser et sont affichés sous l’onglet **Travaux** dans un cas. | 3 |
+|Nombre maximal de travaux simultanés pour ajouter du contenu à un jeu à réviser par utilisateur. Ces travaux sont **nommés Ajout de données** à un jeu à réviser et sont affichés sous l’onglet **Travaux** dans un cas. | 3  |
 |||
 
 ## <a name="hold-limits"></a>Limites de la durée de vie
@@ -60,10 +60,9 @@ Le tableau suivant répertorie les limites d’indexation Advanced eDiscovery.
 | Description de la limite | Limite |
 |:-----|:-----|
 |Nombre maximal de caractères extraits d’un seul fichier.  <br/> |10 millions<sup>1</sup> <br/> |
-|Taille maximale d’un fichier unique.   <br/> |100 Mo<sup>1</sup> <br/> |
+|Taille maximale d’un fichier unique.   <br/> |150 Mo<sup>1</sup> <br/> |
 |Profondeur maximale d’éléments incorporés dans un document.  <br/> |25<sup>1</sup> <br/> |
-|Taille maximale des fichiers traitées par la reconnaissance optique de caractères (OCR).  <br/> |24 Mo<sup>1</sup> <br/> 
-|Nombre maximal de travaux d’indexation par organisation et par jour. <br/> |10<sup>6</sup> <br/>|  
+|Taille maximale des fichiers traitées par la reconnaissance optique de caractères (OCR).  <br/> |24 Mo<sup>1</sup> <br/>  
 |||
 
 ## <a name="search-limits"></a>Limites de la recherche
@@ -77,7 +76,7 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. |10  | 
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions). |10 000 &nbsp; <sup>2</sup>|
 |Nombre maximal de caractères pour une requête de recherche pour SharePoint et OneDrive Entreprise sites (y compris les opérateurs et les conditions). |10 000<br>4 000 avec caractères génériques &nbsp; <sup>2</sup>|
-|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **un \* *_ ou _* set \***.|3 |  
+|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **un \* *_ ou _* set \***.|3  |  
 |Variantes maximales renvoyées lorsque vous utilisez un caractère générique de préfixe pour rechercher une expression exacte ou lorsque vous utilisez un caractère générique de préfixe et **l’opérateur booléen NEAR.** |10 000 &nbsp; <sup>3</sup>|
 |Nombre maximal d’éléments par boîte aux lettres d’utilisateur qui sont affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés. |100|
 |Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.|1 000|
@@ -86,7 +85,7 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |Nombre maximal de sites SharePoint et OneDrive Entreprise qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 200 sites contiennent des éléments qui correspondent à la requête de recherche, seuls les 200 premiers sites ayant le plus de résultats sont disponibles en prévisualisation.|200|
 |Nombre maximal d’éléments par boîte aux lettres de dossiers publics affichés sur la page d’aperçu pour les recherches. |100|
 |Nombre maximal d’éléments trouvés dans tous les éléments de boîte aux lettres de dossiers publics affichés sur la page d’aperçu pour les recherches. |200|
-|Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 500 boîtes aux lettres de dossiers publics contiennent des éléments qui correspondent à la requête de recherche, seules les 500 boîtes aux lettres ayant le plus grand nombre de résultats sont disponibles en prévisualisation.|500|
+|Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 500 boîtes aux lettres de dossiers publics contiennent des éléments qui correspondent à la requête de recherche, seules les 500 premières boîtes aux lettres ayant le plus de résultats sont disponibles en prévisualisation.|500|
 |||
 
 ## <a name="search-times"></a>Temps de recherche
@@ -117,7 +116,7 @@ Les limites décrites dans cette section sont liées à l’exportation de docum
 | Description de la limite | Limite |
 |:-----|:-----|
 |Taille maximale d’une exportation unique.|5 millions de documents ou 500 Go, selon la taille la plus petite|
-|Nombre maximal d’exportations simultanées par ensemble de révision. | 1 |
+|Nombre maximal d’exportations simultanées par ensemble de révision. | 1  |
 |||
 
 ## <a name="review-set-download-limits"></a>Examiner les limites de téléchargement définies
@@ -145,4 +144,3 @@ Les limites décrites dans cette section sont liées à l’exportation de docum
 >
 > <sup>5</sup> Cette limite s’applique au téléchargement de documents sélectionnés à partir d’un jeu à réviser. Elle ne s’applique pas à l’exportation de documents à partir d’un jeu à réviser. Pour plus d’informations sur le téléchargement et l’exportation de documents, voir exporter des données de cas [dans Advanced eDiscovery](exporting-data-ediscover20.md).
 >
-> <sup>6</sup> limites d’indexation par organisation et par jour. Pour contourner ce cas, vous pouvez sélectionner plusieurs dépositaires sous l’onglet **Sources** de données dans un cas, puis cliquer sur Mettre à jour **l’index** pour éviter de créer une tâche d’index distincte pour chaque dépositaire. 

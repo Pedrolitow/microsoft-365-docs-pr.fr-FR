@@ -1,7 +1,7 @@
 ---
 title: Exporter l’évaluation de la configuration sécurisée par appareil
 description: Renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
-keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisé, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
+keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cb8b152bb386354dcdf5a5c95654a10e89d41c1f330c3c805faaff130aec77e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d8010cafa9ea0195e4c77298bea2098eab5c594
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869034"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607340"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exporter l’évaluation de la configuration sécurisée par appareil
 
@@ -87,7 +87,7 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 > [!NOTE]
 >
-> - Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété.  Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement renvoyée dans le même ordre que celui répertorié dans ce tableau.
+> - Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété. Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement renvoyée dans le même ordre que celui répertorié dans ce tableau.
 > - Certaines colonnes supplémentaires peuvent être renvoyées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez uniquement les colonnes documentées.
 
 <br>
@@ -106,7 +106,7 @@ DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.euro
 IsApplicable|bool|Indique si la configuration ou la stratégie est applicable|true
 IsCompliant|bool|Indique si la configuration ou la stratégie est correctement configurée.|false
 IsExpectedUserImpact|bool|Indique s’il y aura un impact sur l’utilisateur si la configuration est appliquée|true
-OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10
+OSPlatform|chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10
 RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».|Serveurs
 RecommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.|sca-_-scid-20000
 Timestamp|string|Dernière fois que la configuration a été vue sur l’appareil|2020-11-03 10:13:34.8476880
@@ -294,4 +294,4 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 Autres associés
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)

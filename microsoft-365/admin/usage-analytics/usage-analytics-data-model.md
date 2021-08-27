@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Découvrez comment l’analyse de l’utilisation se connecte à une API et fournit une tendance mensuelle de l’utilisation de Microsoft 365 services.  '
-ms.openlocfilehash: cf53007e062db85bb17bd64851022218c0d220ba
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 2f271414f515d2c3a86c6e59d64dc62f44f8ef01
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533542"
+ms.locfileid: "58603302"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modèle de données d'analyse de l'utilisation de Microsoft 365
 
@@ -50,7 +50,7 @@ Cette API fournit des informations sur la tendance mensuelle d’utilisation des
 |Utilisation du client par les locataires  <br/> |Contient des données sur le nombre d'utilisateurs qui utilisent activement un client ou des appareils spécifiques pour se connecter à Exchange Online, Skype Entreprise et Yammer.  <br/> |Contient des données mensuelles agrégées pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |Utilisation de SharePoint Online par les locataires  <br/> |Contient des données sur les sites SharePoint. Celles-ci couvrent les sites d'équipe ou les sites de groupe, avec notamment le nombre total de sites, le nombre de documents stockés sur un site, le nombre de fichiers par type d'activité et l'espace de stockage utilisé.  <br/> |Contient des données d’état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |Utilisation de OneDrive Entreprise par les locataires  <br/> |Contient des données sur les comptes OneDrive, comme le nombre de comptes, le nombre de documents stockés sur les différents comptes OneDrive, l'espace de stockage utilisé et le nombre de fichiers par type d'activité.  <br/> |Contient des données d’état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
-|Utilisation des groupes Microsoft 365 client  <br/> |Contient des données sur Microsoft 365 l’utilisation des groupes de messagerie, notamment mailbox, SharePoint et Yammer.  <br/> |Contient des données d’état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
+|Utilisation des groupes Microsoft 365 client  <br/> |Contient des données sur Microsoft 365'utilisation des groupes de messagerie, notamment mailbox, SharePoint et Yammer.  <br/> |Contient des données d’état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |Activation d'Office par les locataires  <br/> |Contient des données sur le nombre d’activations d’abonnement Office, le nombre d’activations par appareil (Android/iOS/Mac/PC), les activations par plan de service, par exemple, Applications Microsoft 365 pour les grandes entreprises, Visio, Project.  <br/> |Contient des données d’état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |État utilisateur  <br/> |Contient des métadonnées sur les utilisateurs, comme le nom d'affichage, les produits attribués, l'emplacement, le service, le titre et la société. Ces données sont relatives aux utilisateurs qui ont obtenu une licence au cours du dernier mois complet. Chaque utilisateur est représenté de manière unique par un ID d’utilisateur.  <br/> |Ces données concernent les utilisateurs qui disposaient d'une licence au cours du mois complet écoulé.  <br/> |
 |Activité utilisateur  <br/> |Contient des informations par utilisateur sur les activités effectuées par les utilisateurs sous licence.  <br/> Voir [Définition d'un utilisateur actif](active-user-in-usage-reports.md) pour plus d'informations sur les activités produit renvoyées dans cette table de données.  <br/> |Ces données concernent les utilisateurs ayant effectué une activité au cours du mois complet écoulé, tous services confondus.  <br/> |
@@ -109,9 +109,9 @@ Cette table contient des données sur l'activité effectuée par chaque utilisat
 |ODB_FileSynched  <br/> |Nombre de fichiers synchronisés par l'utilisateur, toutes instances de OneDrive Entreprise confondues.  <br/> |
 |ODB_FileSharedInternally  <br/> |Nombre de fichiers partagés en interne par cet utilisateur à partir de n’importe quel OneDrive Entreprise ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
 |ODB_FileSharedExternally  <br/> |Nombre de fichiers partagés en externe par l'utilisateur, toutes instances de OneDrive Entreprise confondues.  <br/> |
-|ODB_AccessByOwner  <br/> |Nombre de fichiers résidant dans l'espace OneDrive Entreprise de l'utilisateur et avec lesquels il a interagi.  <br/> |
-|ODB_AccessOthers  <br/> |Nombre de fichiers résidant dans l'espace OneDrive Entreprise d'un tiers et avec lesquels l'utilisateur a interagi.  <br/> |
-|SPO_GroupFileViewedModified  <br/> |Nombre de fichiers avec lesquels l'utilisateur a interagi, tous sites de groupe confondus.  <br/> |
+|ODB_AccessedByOwner  <br/> |Nombre de sites avec qui l’utilisateur a interagi sur son propre OneDrive Entreprise.  <br/> |
+|ODB_AccessedByOthers  <br/> |Nombre de sites avec lesquels cet utilisateur a interagi et qui résident sur le compte d’un OneDrive Entreprise.  <br/> |
+|SPO_GroupFileViewedModified  <br/> |Nombre de fichiers avec qui cet utilisateur a interagi sur n’importe quel site de groupe.  <br/> |
 |SPO_GroupFileSynched  <br/> |Nombre de fichiers synchronisés par l'utilisateur, tous sites de groupe confondus.  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |Nombre de fichiers partagés avec des utilisateurs au sein de l’organisation ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |Nombre de fichiers partagés en externe par l'utilisateur, tous sites de groupe confondus.  <br/> |
@@ -223,7 +223,7 @@ Ce tableau se compose de données récapitulatifs mois par mois sur l’utilisat
    
 ### <a name="data-table---tenant-onedrive-usage"></a>Table de données - Utilisation OneDrive client
 
-Cette table contient des données sur les comptes OneDrive, comme le nombre de comptes, le nombre de documents stockés sur les différents comptes OneDrive, l'espace de stockage utilisé et le nombre de fichiers par type d'activité. L'état de fin de mois des comptes OneDrive Entreprise y est représenté. Par exemple, si un utilisateur a créé cinq documents qui ont utilisé 10 Mo de stockage, puis en a supprimés quelques-uns et ajouté d’autres fichiers de sorte qu’à la fin du mois, ils ont sept fichiers qui utilisent cinq Mo de stockage, alors la valeur de fin de mois est représentée dans ce tableau à la fin du mois.
+Cette table contient des données sur les comptes OneDrive, comme le nombre de comptes, le nombre de documents stockés sur les différents comptes OneDrive, l'espace de stockage utilisé et le nombre de fichiers par type d'activité. L'état de fin de mois des comptes OneDrive Entreprise y est représenté. Par exemple, si un utilisateur a créé cinq documents qui ont utilisé 10 Mo de stockage, puis en a supprimés quelques-uns et ajouté d’autres fichiers de sorte qu’à la fin du mois, ils ont sept fichiers qui utilisent cinq Mo de stockage, alors la valeur de fin du mois est représentée dans ce tableau à la fin du mois.
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|
@@ -278,7 +278,17 @@ Ce tableau fournit des données sur la façon dont Microsoft 365 groupes est uti
 |YAM_LikedActivities  <br/> |Nombre d’Yammer activités telles que.  <br/> |
 |YAM_PostedActivties  <br/> |Nombre d’Yammer activités de publication.  <br/> |
 |YAM_ReadActivites  <br/> |Nombre d’Yammer activités de lecture.  <br/> |
-   
+
+### <a name="data-table---tenant-office-licenses"></a>Table de données - Licences Office client
+
+Ce tableau fournit des données récapitulatifs mensuelles sur l’attribution de licence pour les utilisateurs. 
+  
+|**Nom de la colonne**|**Description de la colonne**|
+|:-----|:-----|
+|LicenseName  <br/> |Nom de la licence.  <br/> |
+|AssignedCount  <br/> |Nombre de licences attribuées.  <br/> |
+|Timeframe  <br/> |Mois.  <br/> |
+
 ### <a name="data-table---tenant-office-activation"></a>Table de données - Activation d'Office par les locataires
 
 Le tableau fournit des données sur le nombre d’activations d’abonnements Office dans les plans de service, par exemple, Microsoft 365 Apps pour les entreprises, Visio, Project. Elle fournit également des données sur le nombre d'activations par appareil (Android/iOS/Mac/PC).

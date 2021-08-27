@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Découvrez comment restaurer (ou fusionner) le contenu d’une boîte aux lettres inactive vers une boîte aux lettres existante dans Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19d54f239fb092f8dc29b986461028b990b8e4446bc506440d15ff704f5c3618
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09ab8893b2c663d87417fbedf0c157100b3693da
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795785"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569008"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Restaurer une boîte aux lettres inactive
 
@@ -132,8 +132,8 @@ Si une boîte aux lettres inactive possède une boîte aux lettres d'archivage, 
 
   **Hiérarchie des dossiers dans la boîte aux lettres cible lorsque le paramètre TargetRootFolder n'est pas utilisé**
 
-  ![Capture d'écran lorsque le paramètre TargetRootFolder n'est pas utilisé](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
+  ![Capture d’écran lorsque le paramètre TargetRootFolder n’est pas utilisé.](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
 
   **Hiérarchie des dossiers dans la boîte aux lettres cible lorsque le paramètre TargetRootFolder est utilisé**
 
-  ![Capture d'écran lorsque le paramètre TargetRootFolder est utilisé](../media/300da592-7323-48db-b8a4-07012259d113.png)
+  ![Capture d’écran lorsque le paramètre TargetRootFolder est utilisé.](../media/300da592-7323-48db-b8a4-07012259d113.png)

@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment activer les Microsoft 365 pour protéger les appareils joints à Active Directory Windows 10 en quelques étapes seulement.
-ms.openlocfilehash: 9dfc54f334fe8a6eb636bc0d120af479239d41a0
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 2a60437bafc7aae1928d73342555c030a71689cd
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360324"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595503"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Activer les appareils joints Windows 10 domaine à gérer par les Microsoft 365 Business Premium
 
@@ -81,7 +81,7 @@ Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 
 ## <a name="4-create-the-required-resources"></a>4. Créer les ressources requises 
 
-L’utilisation de l’cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) trouvée dans le module [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell simplifie l’réalisation des tâches requises pour configurer la jointage [Azure AD](/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) hybride. Lorsque vous voquez cette cmdlet, elle crée et configure le point de connexion de service et la stratégie de groupe requis.
+L’utilisation de l’cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) trouvée dans le module [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell a simplifié l’réalisation des tâches requises pour configurer la jointage [Azure AD](/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) hybride. Lorsque vous voquez cette cmdlet, elle crée et configure le point de connexion de service et la stratégie de groupe requis.
 
 Vous pouvez installer ce module en invoquant les éléments suivants à partir d’une instance de PowerShell :
 
@@ -114,14 +114,14 @@ Si vous ne voyez pas la stratégie Activer l’inscription mdm automatique à l�
 2. Installez le package sur un contrôleur de domaine.
 3. Accédez, en fonction de la version des modèles d’administration, au dossier **: C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
 4. Renommons le **dossier Définitions de stratégie dans** le chemin d’accès ci-dessus à **PolicyDefinitions**.
-5. Copiez le dossier **PolicyDefinitions** dans votre partage SYSVOL, par défaut situé dans **C:\Windows\SYSVOL\domain\Policies**.
+5. Copiez le **dossier PolicyDefinitions** dans votre partage SYSVOL, par défaut situé dans **C:\Windows\SYSVOL\domain\Policies**.
    - Si vous envisagez d’utiliser un magasin central de stratégies pour l’ensemble de votre domaine, ajoutez le contenu de PolicyDefinitions à cet élément.
 6. Si vous avez plusieurs contrôleurs de domaine, attendez que SYSVOL réplique pour que les stratégies soient disponibles. Cette procédure fonctionne également pour n’importe quelle version future des modèles d’administration.
 
 À ce stade, vous devriez être en mesure de voir la stratégie Activer l’inscription mdm automatique à l’aide des informations d’identification **Azure AD par défaut** disponibles.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Synchroniser les utilisateurs de domaine avec Microsoft 365](manage-domain-users.md) (article)\
 [Créer un groupe dans le Centre d’administration](../create-groups/create-groups.md) (article)\
-[Didacticiel : Configurer la joint Azure Active Directory hybride pour les domaines gérés](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (article)
+[Didacticiel : Configurer la joint Azure Active Directory hybride pour les domaines gérés](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (article)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f142ecb530e5b6b3a1db7c146feadbe1a02c314ecd115911e531f6cf94ebd778
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 03843707ebffc6798b3d73526a2e95b884047b13
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802525"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594021"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -44,7 +44,7 @@ Mais que se passe-t-il si vous voulez utiliser un type d’informations sensible
 - gérer les informations sensibles de manière plus sécurisée ;
 - être utilisé avec différents services de cloud computing Microsoft.
 
-![Classification EDM](../media/EDMClassification.png)
+![Classification basée sur EDM.](../media/EDMClassification.png)
 
 La classification EDM vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. La base de données peut être actualisée quotidiennement et peut contenir jusqu’à 100 millions de lignes de données. À mesure que des employés, patients ou clients vont et viennent, et que les enregistrements changent, vos types d’informations sensibles personnalisés restent à jour et valides. Vous pouvez également utiliser la classification basée sur EDM avec des stratégies, telles [que les stratégies de protection contre la perte de données](dlp-learn-about-dlp.md) ou [les stratégies de fichier de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
@@ -73,7 +73,7 @@ La classification EDM est incluse dans ces abonnements
 
 |Portail|World Wide/GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |Centre de sécurité Microsoft 365|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Centre de conformité Microsoft 365|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
@@ -93,7 +93,7 @@ La configuration de la classification basée sur EDM inclut les étapes suivante
 2. [Définition de votre schéma de base de données d’informations sensibles](#define-the-schema-for-your-database-of-sensitive-information)
 3. [Création d’un package de règles](#set-up-a-rule-package)
 
-#### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>Enregistrer des données sensibles au format .csv format .tsv ou .tsv
+#### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>Enregistrer des données sensibles au format .csv ou .tsv
 
 1. Identifiez les informations sensibles que vous voulez utiliser. Exportez les données vers une application, telle que Microsoft Excel, et enregistrez le fichier dans un fichier texte. Le fichier peut être enregistré au format .csv (valeurs séparées par des virgules), .tsv (valeurs séparées par des tabulations) ou séparés par des |. Le format .tsv est recommandé dans les cas où vos valeurs de données peuvent inclure des virgules, telles que des adresses postales.
 Le fichier de données peut inclure au maximum :
@@ -101,7 +101,7 @@ Le fichier de données peut inclure au maximum :
    - 32 colonnes (champs) par source de données
    - 5 colonnes (champs) marquées comme pouvant faire l’objet d’une recherche
 
-2. Structurez les données sensibles dans le fichier .csv ou .tsv afin que la première ligne comprenne les noms des champs utilisés pour la classification EDM. Dans votre fichier, vous pouvez avoir des noms de champ tels que « ssn », « birthdate », « firstname », « lastname ». Les noms d’en-tête de colonne ne peuvent pas contenir des espaces ni des traits de soulignement. Par exemple, le fichier .csv utilisé dans cet exemple est appelé *PatientRecords.csv*. Ses colonnes incluent *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, etc.
+2. Structurez les données sensibles dans le fichier .csv ou .tsv afin que la première ligne inclut les noms des champs utilisés pour la classification EDM. Dans votre fichier, vous pouvez avoir des noms de champ tels que « ssn », « birthdate », « firstname », « lastname ». Les noms d’en-tête de colonne ne peuvent pas contenir des espaces ni des traits de soulignement. Par exemple, le fichier .csv utilisé dans cet exemple est appelé *PatientRecords.csv*. Ses colonnes incluent *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, etc.
 
 3. Prêtez attention au format des champs de données sensibles. En particulier, les champs qui peuvent contenir des virgules dans leur contenu, par exemple, une adresse de rue qui contient la valeur « Seattle,WA » sera évaluée en tant que deux champs distincts lors de l'.csv si le format .csv est sélectionné. Pour éviter cela, utilisez le format .tsv ou entourez la virgule contenant des valeurs par des guillemets doubles dans la table de données sensibles. Si des virgules contenant des valeurs contiennent également des espaces, vous devez créer un sit personnalisé qui correspond au format correspondant. Par exemple, un SIT qui détecte une chaîne à plusieurs mots avec des virgules et des espaces.
 
@@ -651,7 +651,7 @@ Ces emplacements prennent en charge les types d’informations sensibles EDM :
 
 10. Dans la section **conditions**, dans la liste **+ ajouter une condition**, sélectionnez **le contenu contient un type de contenu sensible**.
 
-      ![Le contenu contient des types d’informations sensibles](../media/edm-dlp-newrule-conditions.png)
+      ![Le contenu contient des types d’informations sensibles.](../media/edm-dlp-newrule-conditions.png)
 
 11. Recherchez le type d’informations sensibles que vous avez créé lorsque vous avez configuré votre package de règles, puis sélectionnez **+ ajouter**.
     Sélectionnez **Terminer**.

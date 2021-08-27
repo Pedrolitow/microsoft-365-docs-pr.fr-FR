@@ -14,14 +14,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment utiliser la fonctionnalité statistiques de recherche pour afficher des statistiques pour les recherches de contenu et les recherches associées à un cas eDiscovery principal dans le Centre de conformité Microsoft 365.
+description: Découvrez comment utiliser la fonctionnalité statistiques de recherche pour afficher des statistiques pour les recherches de contenu et les recherches associées à un cas eDiscovery principal dans le Centre de conformité Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 25884f0b450c1bc90cb6487e64fe636ef5f8af16dd30ad7bb4e7ed28402da03f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f9948a5ae194a475f5bdcf319aa48fa32cc282f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835525"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552911"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Afficher des statistiques pour les résultats de recherche eDiscovery
 
@@ -33,9 +33,9 @@ Vous pouvez également télécharger des statistiques de recherche dans un fichi
   
 ## <a name="get-statistics-for-searches"></a>Obtenir des statistiques pour les recherches
 
-Pour afficher des statistiques pour une recherche de contenu ou une recherche associée à un cas de découverte électronique principale :
+Pour afficher des statistiques pour une recherche de contenu ou une recherche associée à un cas core eDiscovery.:
   
-1. Dans la Centre de conformité Microsoft 365, cliquez sur **Afficher tout,** puis faites l’une des choses suivantes :
+1. Dans la Centre de conformité Microsoft 365, cliquez sur **Afficher tout,** puis faites l’une des choses suivantes :
 
    - Cliquez **sur Recherche de** contenu, puis sélectionnez une recherche pour afficher la page volante.
 
@@ -45,7 +45,7 @@ Pour afficher des statistiques pour une recherche de contenu ou une recherche as
 
 2. Dans la page volante de la recherche sélectionnée, cliquez sur l’onglet **Statistiques de** recherche.
   
-   ![Onglet Statistiques de recherche](../media/SearchStatistics1.png)
+   ![Onglet Statistiques de recherche.](../media/SearchStatistics1.png)
 
 **L’onglet Statistiques** de recherche contient les sections suivantes qui contiennent différents types de statistiques sur la recherche.
 
@@ -53,7 +53,7 @@ Pour afficher des statistiques pour une recherche de contenu ou une recherche as
 
 Cette section affiche un résumé graphique des éléments estimés renvoyés par la recherche. Cela indique le nombre d’éléments qui correspondent aux critères de recherche. Ces informations vous donnent une idée du nombre estimé d’éléments renvoyés par la recherche.
 
-![Estimations de recherche pour une recherche](../media/SearchContentReport.png)
+![Estimations de recherche pour une recherche.](../media/SearchContentReport.png)
 
 - **Éléments estimés par emplacement**: nombre total d’éléments estimés renvoyés par la recherche. Le nombre spécifique d’éléments situés dans des boîtes aux lettres et dans des sites est également affiché.
 
@@ -65,11 +65,11 @@ Cette section affiche un résumé graphique des éléments estimés renvoyés pa
 
 Cette section affiche des statistiques sur la requête de recherche et le nombre d’éléments estimés qui correspondent à différentes parties de la requête de recherche. Vous pouvez utiliser ces statistiques pour analyser le nombre d’éléments qui correspondent à chaque composant de la requête de recherche. Cela peut vous aider à affiner les critères de recherche et, si nécessaire, à affiner l’étendue de l’étendue. Vous pouvez également télécharger une copie de ce rapport au format CSV.
 
-![Rapport de condition](../media/SearchContentReportNoKeywordList.png)
+![Rapport de condition.](../media/SearchContentReportNoKeywordList.png)
 
 - **Type d’emplacement**: type d’emplacement de contenu applicable aux statistiques de requête. La valeur **de** Exchange indique un emplacement de boîte aux lettres ; une valeur de **SharePoint** indique un emplacement de site.
 
-- **Partie**: partie de la requête de recherche à qui les statistiques s’appliquent. **Primary** indique l’intégralité de la requête de recherche. **Le** mot clé indique que les statistiques de la ligne sont pour un mot clé spécifique. Si vous utilisez une liste de mots clés pour la requête de recherche, les statistiques de chaque composant de la requête sont incluses dans ce tableau. Pour plus d’informations, voir [Obtenir des statistiques sur les mots clés pour les recherches.](#get-keyword-statistics-for-searches)
+- **Partie**: partie de la requête de recherche à qui les statistiques s’appliquent. **Le** principal indique l’intégralité de la requête de recherche. **Le** mot clé indique que les statistiques de la ligne sont pour un mot clé spécifique. Si vous utilisez une liste de mots clés pour la requête de recherche, les statistiques de chaque composant de la requête sont incluses dans ce tableau. Pour plus d’informations, voir [Obtenir des statistiques sur les mots clés pour les recherches.](#get-keyword-statistics-for-searches)
 
 - **Condition**: composant réel (mot clé ou condition) de la requête de recherche qui a renvoyé les statistiques affichées dans la ligne correspondante.
 
@@ -97,15 +97,15 @@ Comme expliqué précédemment, la section **Rapport de condition** affiche la r
 
 Pour créer une liste de mots clés et afficher des statistiques de mots clés pour une recherche :
   
-1. Dans la Centre de conformité Microsoft 365, créez une recherche de contenu ou une recherche associée à un cas core eDiscovery.
+1. Dans la Centre de conformité Microsoft 365, créez une recherche de contenu ou une recherche associée à un cas core eDiscovery.
 
 2. Dans la page **Conditions** de l’Assistant Recherche. cochez la **case Afficher la liste des** mots clés.
 
-   ![Afficher la case à cocher liste des mots clés](../media/SearchKeywordsList1.png)
+   ![Afficher la case à cocher liste des mots clés.](../media/SearchKeywordsList1.png)
 
 3. Tapez une phase de mot clé ou de mot clé dans une ligne du tableau des mots clés. Par exemple, tapez **budget** sur la première ligne, **tapez** sécurité dans la deuxième ligne et tapez **FY2021** dans la troisième ligne.
 
-   ![Tapez jusqu’à 20 mots clés ou expressions de mots clés dans la liste](../media/SearchKeywordsList2.png)
+   ![Tapez jusqu’à 20 mots clés ou expressions de mots clés dans la liste.](../media/SearchKeywordsList2.png)
 
    > [!NOTE]
    > Pour réduire les problèmes causés par les grandes listes de mots clés, vous êtes limité à 20 lignes au maximum dans la liste de mots clés d’une requête de recherche.
@@ -116,7 +116,7 @@ Pour créer une liste de mots clés et afficher des statistiques de mots clés p
 
 6. Sous **l’onglet Statistiques de** recherche, cliquez sur le rapport **de condition** pour afficher les statistiques de mot clé pour la recherche.
 
-    ![Les statistiques de chaque mot clé sont affichées](../media/SearchKeywordsList3.png)
+    ![Les statistiques de chaque mot clé sont affichées.](../media/SearchKeywordsList3.png)
   
     Comme indiqué dans la capture d’écran précédente, les statistiques de chaque mot clé sont affichées . Cela inclut :
 

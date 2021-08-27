@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour créer et utiliser des étiquettes de rétention sur les documents de votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: c4527f751881750c5f6427ea085baa9516f0bd73
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b5cc84a4d8b73b9f7dc3f64934a18b549846ba17
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354307"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552599"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Classification des données pour votre environnement de test Microsoft 365 entreprise
 
@@ -32,7 +32,7 @@ La classification des données dans votre environnement de test implique trois p
 - [Phase 2 : Création d’étiquettes de rétention](#phase-2-create-retention-labels)
 - [Phase 3 : Appliquer des étiquettes de rétention aux documents](#phase-3-apply-retention-labels-to-documents)
 
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
@@ -50,7 +50,7 @@ Si vous souhaitez configurer des étiquettes de rétention dans une entreprise s
 
 Dans cette phase, créez les étiquettes de rétention pour les différents niveaux de rétention pour SharePoint dossiers de documents en ligne :
 
-1. Connectez-vous au [centre Microsoft 365 sécurité avec](https://security.microsoft.com/homepage) votre compte d’administrateur global.
+1. Connectez-vous au [centre Microsoft 365 sécurité](https://security.microsoft.com/homepage) avec votre compte d’administrateur global.
 1. Dans **l’onglet Accueil - Microsoft 365 de** sécurité de votre navigateur, sélectionnez   >  **Étiquettes de rétention de classification.**
 1. Sélectionnez **Créer une étiquette**.
 1. Dans le **volet Nom de votre étiquette,** entrez Public **interne** dans Nom de votre **étiquette,** puis sélectionnez **Suivant**.
@@ -63,7 +63,7 @@ Dans cette phase, créez les étiquettes de rétention pour les différents nive
   - Hautement confidentiel
 1. Dans le volet **Étiquettes de** rétention, **sélectionnez Publier des étiquettes.**
 1. Dans le **volet Choisir les étiquettes à** publier, sélectionnez Choisir les **étiquettes à publier.**
-1. Dans le volet Choisir **des étiquettes,** **sélectionnez Ajouter** et sélectionnez les quatre étiquettes.
+1. Dans le **volet Choisir des étiquettes,** **sélectionnez Ajouter** et sélectionnez les quatre étiquettes.
 1. **Sélectionnez** Ajouter, puis **Terminé**.
 1. Dans le **volet Choisir les étiquettes à** publier, sélectionnez **Suivant.**
 1. Dans le **volet Choisir des** emplacements, sélectionnez **Suivant.**

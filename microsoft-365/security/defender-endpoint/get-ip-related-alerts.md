@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 12317627c497999f0821a09bc6639aedc2515933
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 2421a73e24e8d6ba42cb18e2d221ad09ec997d14
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347239"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585519"
 ---
 # <a name="get-ip-related-alerts-api"></a>API Obtenir les alertes liées à l’ADRESSE IP
 
@@ -60,7 +60,7 @@ Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et é
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
->- La réponse inclut uniquement les alertes, associées aux appareils, à qui [](machine-groups.md) l’utilisateur a accès, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils pour plus d’informations)
+> - La réponse inclut uniquement les alertes, associées aux appareils, à qui [](machine-groups.md) l’utilisateur a accès, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -72,8 +72,7 @@ GET /api/ips/{ip}/alerts
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String
- | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

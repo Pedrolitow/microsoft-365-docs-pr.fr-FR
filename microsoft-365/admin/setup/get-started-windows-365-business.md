@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment acheter Windows 365 Business pour votre organisation et aider les utilisateurs à commencer à utiliser leurs PC Cloud.
-ms.openlocfilehash: 281700a15ef7f0560a5fa2171653eddc7048011d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 19b45f3b3b26bf553830061bf63879647bfeec8f
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532894"
+ms.locfileid: "58602964"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Démarrage avec les PC Windows 365 Business et Cloud
 
@@ -38,7 +38,7 @@ Cet article est réservé aux personnes qui prévoient d’acheter et de configu
 > [!NOTE]  
 > Avant de commencer, assurez-vous que les paramètres de votre appareil Azure AD pour les [utilisateurs](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) peuvent joindre des appareils à Azure **AD.**
 
-   ![Les utilisateurs peuvent joindre des appareils aux paramètres Azure AD](../../media/deschutes/azure-device-settings.png)
+   ![Les utilisateurs peuvent joindre des appareils aux paramètres Azure AD.](../../media/deschutes/azure-device-settings.png)
 ## <a name="prerequisites"></a>Configuration requise
 Il n’existe aucune condition préalable de licence pour configurer Windows 365 Business.
 
@@ -84,10 +84,10 @@ Si vous avez déjà un client Microsoft 365 et que vous êtes administrateur glo
 
 Que vous avez acheté vos abonnements via le site des produits Windows 365 ou via le Centre d’administration Microsoft 365, vous pouvez attribuer des [licences](/microsoft-365/admin/manage/assign-licenses-to-users) aux utilisateurs via la **page** Facturation du Centre d’administration Microsoft 365.
 
-Vous pouvez affecter différents types Windows licence 365 Business à un utilisateur, en fonction des besoins professionnels des utilisateurs. Consultez Windows options de resserrement [365 Business](windows-365-business-sizing.md) pour obtenir des conseils sur le type de licence qui peut convenir à vos utilisateurs.
+Vous pouvez affecter différents types Windows licence 365 Business à un utilisateur, en fonction des besoins professionnels des utilisateurs. Consultez [Windows options de resserrement 365 Business](windows-365-business-sizing.md) pour obtenir des conseils sur le type de licence qui peut convenir à vos utilisateurs.
 
 > [!IMPORTANT]
-> La première fois qu’une licence Windows 365 est attribuée à votre client, un compte système appelé utilisateur permanent **WINDOWS 365 BPRT** est automatiquement créé dans Azure Active Directory. Ne supprimez pas ce compte et n’a modifiez pas ce compte (par exemple, en modifiant le nom ou l’UPN). Si le compte système est supprimé, le programme d’installation peut échouer. Ce compte système garantit un processus de mise en place fluide et n’a pas de fonctionnalités d’écriture ni d’accès à votre client au-delà des fonctionnalités de service étendues de Windows 365 Business. Si vous supprimez cet utilisateur, déposez un ticket via le Support central.
+> La première fois qu’une licence Windows 365 est attribuée à votre client, un compte système appelé utilisateur permanent **WINDOWS 365 BPRT** est automatiquement créé dans Azure Active Directory. Ne supprimez pas ce compte et n’a modifiez pas ce compte (par exemple, en modifiant le nom ou l’UPN). Si le compte système est supprimé, le programme d’installation peut échouer. Ce compte système garantit un processus de mise en place fluide et n’a pas de fonctionnalités d’écriture ni d’accès à votre client au-delà des fonctionnalités de service étendues de Windows 365 Business. Si vous supprimez cet utilisateur, suivez ces [étapes de dépannage.](/microsoft-365/admin/setup/troubleshoot-windows-365-business?#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)
 
 ## <a name="get-your-users-started-with-cloud-pc"></a>Démarrer vos utilisateurs avec Cloud PC
 
@@ -102,7 +102,7 @@ Les utilisateurs peuvent accéder **https://windows365.microsoft.com** à leurs 
 
 Sur leur page d Windows 365, les utilisateurs voient les PC cloud accessibles dans la section Vos **PC cloud.**
 
-![Windows famille 365](../../media/deschutes/cloudpc-home.png)
+![Windows famille 365.](../../media/deschutes/cloudpc-home.png)
 
 Les utilisateurs **peuvent sélectionner Ouvrir dans le navigateur** pour ouvrir leur PC cloud.
 
@@ -113,7 +113,7 @@ Les utilisateurs **peuvent sélectionner Ouvrir dans le navigateur** pour ouvrir
 
 Sur la page d Windows 365, les utilisateurs peuvent effectuer des actions sur leurs PC Cloud en sélectionnant l’icône d’engrenage sur une carte PC cloud.
 
-![Menu carte](../../media/deschutes/cloudpc-gear.png)
+![Menu Carte.](../../media/deschutes/cloudpc-gear.png)
 
 - **Redémarrer**: redémarre le PC cloud.
 
@@ -136,20 +136,20 @@ Sur la page d Windows 365, les utilisateurs peuvent effectuer des actions sur le
     |Aucun problème détecté |Aucune des vérifications n’a détecté un problème avec le PC cloud. |
     |Problèmes résolus |Un problème a été détecté et résolu. |
     |Ne peut pas se connecter à Cloud PC. We’re working to fix it, try again later. |Un service Microsoft requis pour la connectivité n’est pas disponible. Essayez de vous connecter à nouveau ultérieurement. |
-    |Nous n’avons pas pu résoudre les problèmes avec votre PC Cloud. Contactez votre administrateur. |Un problème a été détecté, mais il n’a pas pu être résolu. Cela peut être dû à une mise à jour Windows jour ou à un autre problème. Si cette erreur persiste pendant une période prolongée, il se peut que le PC cloud devra être réinitialisé. |
+    |Nous n’avons pas pu résoudre les problèmes avec votre PC Cloud. Contactez votre administrateur. |Un problème a été détecté, mais il n’a pas pu être résolu. Cela peut être dû à une mise à jour Windows jour ou à un autre problème. Si cette erreur persiste pendant une période prolongée, il se peut que le PC Cloud devra être réinitialisé. |
 
 ### <a name="remote-desktop"></a>Bureau à distance
 
 L Bureau à distance Microsoft permet aux utilisateurs d’accéder et de contrôler un PC distant, y compris un PC cloud. Windows 365 utilisateurs peuvent télécharger et installer le client Bureau à distance dont ils ont besoin à partir de la page d Windows 365.
 
-#### <a name="install-the-microsoft-remote-desktop-app"></a>Installer l’application Bureau à distance Microsoft de messagerie
+#### <a name="install-the-microsoft-remote-desktop-app"></a>Installer l’Bureau à distance Microsoft’application
 
 Pour configurer leur client Bureau à distance, les utilisateurs suivent les étapes suivantes :
 
 1. Sur la **page d Windows 365,** sélectionnez l’icône **Bureau à distance Microsoft applications** (sous l’icône d’accueil).
-2. Dans la page **Bureau à distance Microsoft applications,** téléchargez et installez l’application Bureau à distance dont vous avez besoin.
+2. Sur la page **Bureau à distance Microsoft applications,** téléchargez et installez l’application Bureau à distance dont vous avez besoin.
 
-   ![Clients Bureau à distance](../../media/deschutes/remote-desktop-apps.png)
+   ![Clients Bureau à distance.](../../media/deschutes/remote-desktop-apps.png)
 
 Pour obtenir la liste des clients par système d’exploitation, voir [Clients Bureau à distance.](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
 

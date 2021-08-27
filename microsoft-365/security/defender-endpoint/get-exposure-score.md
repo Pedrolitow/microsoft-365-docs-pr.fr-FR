@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bc7e1cc6cb19f19fcd9cdd826a6df591abb388313f6680c74a6393e13decd3be
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 903176b8c163dcd47e1e11c6c5a82c1ff7363540
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884798"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610986"
 ---
 # <a name="get-exposure-score"></a>Obtenir un score d'exposition
 
@@ -37,7 +37,6 @@ ms.locfileid: "53884798"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Récupère le score d’exposition de l’organisation.
@@ -46,10 +45,10 @@ Récupère le score d’exposition de l’organisation.
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
-:---|:---|:---
-Application | Score.Read.All | « Lire le score de gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire) | Score.Read | « Lire le score de gestion des menaces et des vulnérabilités »
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+---|---|---
+Application|Score.Read.All|« Lire le score de gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Score.Read|« Lire le score de gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -60,8 +59,8 @@ GET /api/exposureScore
 ## <a name="request-headers"></a>En-têtes de demande
 
 Nom|Type|Description
-:---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+---|---|---
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -85,8 +84,8 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 
 Voici un exemple de réponse.
 
->[!NOTE]
->La liste de réponses présentée ici peut être tronquée à des raisons de concision. 
+> [!NOTE]
+> La liste de réponses présentée ici peut être tronquée à des raisons de concision.
 
 ```json
 {
@@ -94,7 +93,6 @@ Voici un exemple de réponse.
     "time": "2019-12-03T07:23:53.280499Z",
     "score": 33.491554051195706
 }
-
 ```
 
 ## <a name="see-also"></a>Voir aussi

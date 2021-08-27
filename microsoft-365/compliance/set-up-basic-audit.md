@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment configurer l’audit de base afin de pouvoir commencer à rechercher les activités d’audit effectuées par les utilisateurs et les administrateurs de votre organisation.
-ms.openlocfilehash: 59a1af0946fbfbef6f2a1f5f6b8c3d7be002786239f1665d0ddbff09af254d1e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: caa87a34234597e36949a1a2c47b695a02b5c2b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871303"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568960"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>Configurer l’audit de base dans Microsoft 365
 
@@ -32,15 +32,15 @@ L’audit de base Microsoft 365 vous permet de rechercher des enregistrements d�
 
 Cet article décrit les étapes suivantes nécessaires à la mise en place de l’audit de base.
 
-![Étapes de la mise en place de l’audit de base](../media/BasicAuditingWorkflow.png)
+![Étapes de la mise en place de l’audit de base.](../media/BasicAuditingWorkflow.png)
 
-Ces étapes incluent la garantie des abonnements organisationnels et des licences utilisateur appropriés nécessaires pour générer et conserver les enregistrements d’audit, ainsi que l’attribution d’autorisations aux membres de vos équipes de sécurité, informatiques, de conformité et juridiques afin de pouvoir effectuer des recherches dans le journal d’audit.
+Ces étapes incluent la vérification des abonnements organisationnels et des licences utilisateur appropriés requis pour générer et conserver les enregistrements d’audit, ainsi que l’attribution d’autorisations aux membres de vos équipes de sécurité, informatiques, de conformité et juridiques afin de pouvoir effectuer des recherches dans le journal d’audit.
 
 Pour plus d’informations, [voir Audit de base dans Microsoft 365](auditing-solutions-overview.md#basic-audit).
 
 ## <a name="step-1-verify-organization-subscription-and-user-licensing"></a>Étape 1 : Vérifier l’abonnement de l’organisation et la gestion des licences utilisateur
 
-La gestion des licences pour l’audit de base nécessite l’abonnement approprié à l’organisation qui permet d’accéder à l’outil de recherche du journal d’audit et à la gestion des licences par utilisateur nécessaires pour enregistrer et conserver les enregistrements d’audit.
+La gestion des licences pour l’audit de base nécessite l’abonnement approprié à l’organisation qui permet d’accéder à l’outil de recherche du journal d’audit et à la gestion des licences par utilisateur requises pour enregistrer et conserver les enregistrements d’audit.
 
 Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit pour votre organisation. Dans l’audit de base, les enregistrements d’audit sont conservés et peuvent faire l’objet d’une recherche dans le journal d’audit pendant 90 jours.
 
@@ -52,19 +52,19 @@ Les administrateurs et les membres des équipes d’enquête doivent avoir le r�
 
 La capture d’écran suivante montre les deux rôles liés à l’audit attribués au groupe de rôles Gestion de l’organisation dans Exchange’administration centrale.
 
-![Auditer les rôles attribués au groupe de rôles dans Exchange Online](../media/EACAuditRoles.png)
+![Auditez les rôles attribués au groupe de rôles dans Exchange Online.](../media/EACAuditRoles.png)
 
 ## <a name="step-3-search-the-audit-log"></a>Étape 3 : Effectuer des recherches dans le journal d’audit
 
-Vous êtes maintenant prêt à effectuer une recherche dans le journal d’audit dans le Centre de conformité Microsoft 365.
+Vous êtes maintenant prêt à effectuer une recherche dans le journal d’audit dans le Centre de conformité Microsoft 365.
 
 1. Go to <https://compliance.microsoft.com> and sign in using an account that has been assigned the appropriate audit permissions.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **Auditer.**
+2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **Auditer.**
 
 3. Dans la page **Audit,** configurez la recherche en utilisant les conditions suivantes sous **l’onglet** Recherche. 
 
-   ![Paramètres de configuration pour la recherche dans le journal d’audit](../media/AuditLogSearchToolMCCCallouts.png)
+   ![Paramètres de configuration pour la recherche dans le journal d’audit.](../media/AuditLogSearchToolMCCCallouts.png)
 
    1. **Date et plage de temps.** Sélectionnez une plage de dates et d’heures pour afficher les événements survenus pendant cette période. La date et l’heure sont présentées dans l’heure locale. Les sept derniers jours sont sélectionnés par défaut.
   
@@ -76,6 +76,6 @@ Vous êtes maintenant prêt à effectuer une recherche dans le journal d’audit
 
 4. Cliquez **sur Rechercher** pour exécuter la recherche.
 
-Une nouvelle page s’affiche et indique que la recherche du journal d’audit est en cours d’exécution. Une fois la recherche terminée, les enregistrements d’audit sont affichés sur la page. Cliquez sur un enregistrement pour afficher une page volante avec des propriétés détaillées.
+Une nouvelle page s’affiche et indique que la recherche du journal d’audit est en cours d’exécution. Lorsque la recherche est terminée, les enregistrements d’audit sont affichés sur la page. Cliquez sur un enregistrement pour afficher une page volante avec des propriétés détaillées.
 
 Pour obtenir des instructions plus détaillées, consultez la recherche dans le journal [d’audit dans le centre de conformité.](search-the-audit-log-in-security-and-compliance.md)

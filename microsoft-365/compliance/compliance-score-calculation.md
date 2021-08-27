@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Comprendre comment le Gestionnaire de conformité Microsoft calcule un score personnalisé en fonction des actions prises pour résoudre les risques et améliorer votre posture de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cbbef643005904e8ca913df69382e9e6012e5b371c9cb5ff132990e1ba74c535
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 26ef0f73a8da9403c2d1fd8248f828d6faf7f6e3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820473"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569092"
 ---
 # <a name="compliance-score-calculation"></a>Calcul du score de conformité
 
@@ -110,13 +110,13 @@ Une valeur de score est attribuée aux actions selon qu’elles sont obligatoire
   
 Chaque action a une valeur attribuée dans le Gestionnaire de conformité en fonction du risque qu’elle représente :
 
-|**Type**|**Score attribué**|
+|**Type (Type)**|**Score attribué**|
 |:-----|:-----|
 | Obligatoire préventive | 27 |
 | Discrétionnaire préventive | 9  |
-| Inspecteur obligatoire | 3 |
-| Discrétionnaire de l’inspecteur | 1 |
-| Correctif obligatoire | 3 |
-| Correction discrétionnaire | 1 |
+| Inspecteur obligatoire | 3  |
+| Discrétionnaire de l’inspecteur | 1  |
+| Corrective obligatoire | 3  |
+| Correction discrétionnaire | 1  |
   
-![Valeurs de point d’action du Gestionnaire de conformité](../media/compliance-score-action-scoring.png "Valeurs de point d’action du Gestionnaire de conformité")
+![Valeurs de point d’action du Gestionnaire de conformité.](../media/compliance-score-action-scoring.png "Valeurs de point d’action du Gestionnaire de conformité")
