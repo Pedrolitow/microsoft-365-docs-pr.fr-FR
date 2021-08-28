@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 16599fc3941c2e3e86600ee5f45b3ea2eb43c6924259468c00edfdc773577338
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f61b092ab8c8ce23694f566b7b11f4bca80b79e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873531"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573478"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>Exemple d’attaque par e-mail de hameçonnage
 
@@ -40,25 +40,25 @@ Microsoft 365 Defender peut vous aider à détecter les pièces jointes malveill
 
 Par exemple, un analyste a été affecté à un incident à plusieurs étapes.
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="Exemple d’incident en plusieurs étapes"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="Exemple d’incident en plusieurs étapes."::: 
 
 Dans **l’onglet Alertes** de l’incident, les alertes de Defender Office 365 et Microsoft Cloud App Security sont affichées. L’analyste peut descendre dans defender pour Office 365 alertes en sélectionnant les alertes de messages électroniques. Les détails de l’alerte s’affichent dans le volet latéral.
 
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="Exemple d’alerte par courrier électronique":::
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="Exemple d’alerte par courrier électronique.":::
  
 En faisant défiler vers le bas, plus d’informations s’affichent, montrant les fichiers malveillants et l’utilisateur qui ont été touchés.
 
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="Exemple d’impact sur les utilisateurs et les fichiers d’une alerte par courrier électronique":::
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="Exemple d’impact sur les utilisateurs et les fichiers d’une alerte par courrier électronique.":::
   
 La sélection **de la page** Ouvrir une alerte vous permet d’obtenir l’alerte spécifique dans laquelle diverses informations peuvent être vues plus en détail en sélectionnant le lien. Le message électronique réel peut être vu en sélectionnant Afficher les messages dans **l’Explorateur** en bas du panneau.
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="Exemple de détails d’une alerte"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="Exemple de détails d’une alerte."::: 
 
-L’analyste se trouve alors sur la page Gestion des menaces dans laquelle l’objet, le destinataire, l’expéditeur et d’autres informations du courrier électronique sont affichés. **ZaP** sous **Actions spéciales** indique à l’analyste que la fonctionnalité de purge automatique heure zéro a été implémentée. ZAP détecte et supprime automatiquement les messages malveillants et de courrier indésirable des boîtes aux lettres au sein de l’organisation. Pour plus d’informations, voir la purge automatique d’heure zéro [(ZAP) dans Exchange Online](../office-365-security/zero-hour-auto-purge.md).
+L’analyste se trouve alors sur la page Gestion des menaces dans laquelle l’objet, le destinataire, l’expéditeur et d’autres informations du courrier électronique sont affichés. **ZaP** sous **Actions spéciales indique** à l’analyste que la fonctionnalité de purge automatique heure zéro a été implémentée. ZAP détecte et supprime automatiquement les messages malveillants et de courrier indésirable des boîtes aux lettres au sein de l’organisation. Pour plus d’informations, voir [la purge automatique heure zéro (ZAP) dans Exchange Online](../office-365-security/zero-hour-auto-purge.md).
 
 D’autres actions peuvent être prises sur des messages spécifiques en sélectionnant **Actions.** 
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="Exemple d’autres actions peuvent être prises sur les messages électroniques"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="Des exemples d’autres actions peuvent être prises sur les messages électroniques."::: 
 
 ## <a name="next-step"></a>Étape suivante
 

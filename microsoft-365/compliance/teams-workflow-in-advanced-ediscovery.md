@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment conserver, collecter, réviser et exporter du contenu à partir de Microsoft Teams dans Advanced eDiscovery.
-ms.openlocfilehash: e5e899b3ee6268c0214dbcfe6b53566072fc75ed045e728a0f7845f25354e552
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 462442d2319c2c199d39795b77b67c6dcefdb758
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841321"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573234"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscovery flux de travail pour le contenu Microsoft Teams à l’aide de grands cas (aperçu)
 
@@ -63,13 +63,13 @@ Pour créer un cas important :
 
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur **eDiscovery > Advanced**.
+2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur **eDiscovery > Advanced**.
 
 3. Dans la page **Advanced eDiscovery,** cliquez sur l’onglet **Cas,** puis cliquez **sur Créer un cas.**
 
    La page de présentation du nouveau cas **eDiscovery** s’affiche. La section **Format de** cas offre la possibilité de créer un cas important.
 
-   ![Grande option de cas dans la page Nouveau cas eDiscovery](..\media\AeDLargeCases1.png)
+   ![Option de cas de grande taille dans la page Nouveau cas eDiscovery.](..\media\AeDLargeCases1.png)
 
 4. Après avoir nommé le  cas, sélectionnez l’option Grand cas, puis cliquez sur **Enregistrer** pour créer le cas important.
 
@@ -87,7 +87,7 @@ Pour ajouter des dépositaires à un cas et conserver les sources de données co
 
 4. Développez chaque dépositaire pour afficher les sources de données principales qui ont été automatiquement associées au dépositaire et pour sélectionner d’autres emplacements à associer au dépositaire.
 
-   ![Sources de données des dépositaires](..\media\TeamsCustodialDataLocations1.png)
+   ![Sources de données du dépositaire.](..\media\TeamsCustodialDataLocations1.png)
 
 5. Suivez ces instructions pour ajouter des sources de données de garde Teams contenu. Cliquez **sur Modifier** pour ajouter un emplacement de données.
 
@@ -156,11 +156,11 @@ Pour créer une collection de Teams contenu :
 
    Pour vous assurer que la collection la plus complète de conversations Teams (y compris 1:1, groupe, canal et conversations privées) utilisez la condition **Type** et sélectionnez l’option **Messages** instantanés. Nous vous recommandons également d’inclure une plage de dates ou plusieurs mots clés pour restreindre l’étendue de la collection aux éléments pertinents pour votre enquête. Voici une capture d’écran d’un exemple de requête à l’aide des options **Type** et **Date** :
 
-   ![Requête pour collecter du contenu Teams contenu](..\media\TeamsConditionsQueryType.png)
+   ![Requête pour collecter Teams contenu.](..\media\TeamsConditionsQueryType.png)
 
 9. Dans la page **Enregistrer** le brouillon ou Collecter l’Assistant, faites l’une des choses suivantes selon que vous souhaitez créer un brouillon de collection ou valider la collection dans un jeu à réviser.
 
-   ![Enregistrer un brouillon de collection ou valider une collection](..\media\TeamsDraftCommitCollection.png)
+   ![Enregistrez la collection brouillon ou la collection de validation.](..\media\TeamsDraftCommitCollection.png)
 
    1. **Enregistrer la collection en tant que brouillon**. Choisissez cette option pour créer un brouillon de collection. Comme indiqué précédemment, un brouillon de collection n’ajoute pas les résultats de la collection à un jeu à réviser. Elle renvoie une estimation des résultats de recherche qui correspondent à la requête de recherche pour les sources de données dans l’étendue de la collection. Cela vous permet d’afficher [statistiques et rapports de collection[(collection-statistics-reports.md)] et de modifier et réexécuter la collection provisoire. Lorsque vous êtes satisfait du résultat d’un brouillon de collection, vous pouvez le valider dans un jeu à réviser. Pour plus d’informations, [voir Créer un brouillon de collection.](create-draft-collection.md)
 
@@ -198,7 +198,7 @@ Le tableau suivant décrit comment les différents types de Teams de conversatio
 
 Utilisez le **contrôle Groupe** dans la barre de commandes d’un jeu à réviser pour afficher Teams contenu groupé par famille ou conversation.
 
-![Contrôle de groupe dans la barre de commandes](..\media\TeamsGroupControl.png)
+![Contrôle de groupe dans la barre de commandes.](..\media\TeamsGroupControl.png)
 
 - Sélectionnez **les pièces jointes de la** famille de groupes pour Teams contenu groupé par famille. Chaque fichier de transcription s’affiche sur une ligne de la liste des éléments de révision. Les pièces jointes sont imbrmbrées sous l’élément.
 
@@ -215,11 +215,11 @@ Les captures d’écran suivantes montrent un exemple de conversation dans le cl
 
 ##### <a name="conversation-in-teams-client"></a>Conversation dans Teams client
 
-![Conversation affichée dans le fichier de transcription dans le jeu à réviser](..\media\TeamsClient1.png)
+![Conversation affichée dans le fichier de transcription du jeu à réviser.](..\media\TeamsClient1.png)
 
 ##### <a name="conversation-in-transcript-file"></a>Conversation dans le fichier de transcription
 
-![Même conversation affichée dans le client Teams client](..\media\TeamsTranscript1.png)
+![Même conversation affichée dans Teams client.](..\media\TeamsTranscript1.png)
 
 ### <a name="transcript-conversation-threading"></a>Threads de conversation transcription
 
@@ -265,7 +265,7 @@ Le tableau suivant décrit les propriétés de métadonnées pour Teams contenu.
 |:---------|:---------|
 |ContainsEditedMessage      | Indique si un fichier de transcription contient un message modifié. Les messages modifiés sont identifiés lors de l’affichage du fichier de transcription.|
 |ConversationId|GUID qui identifie la conversation à qui l’élément est associé. Les fichiers et pièces jointes de transcription de la même conversation ont la même valeur pour cette propriété.|
-|Nom de la conversation     | Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants de la conversation sont concatenés. Par exemple, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams canal privé et les conversations de canal privé utilisent le format suivant pour le nom de la conversation : `<Team name>,<Channel name>` .Par exemple, `eDiscovery vNext, General`.          |
+|Nom de la conversation     | Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants de la conversation sont concatenés. Par exemple : `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams canal privé et les conversations de canal privé utilisent le format suivant pour le nom de la conversation : `<Team name>,<Channel name>` .Par exemple : `eDiscovery vNext, General`.          |
 |ConversationType     | Indique le type de conversation d’équipe. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est `Group` . Pour Teams de canal privé et privé, la valeur est `Channel` .|
 |Date | Horodaté du premier message dans le fichier de transcription.|
 |FamilyId|GUID qui identifie le fichier de transcription d’une conversation. Les pièces jointes auront la même valeur pour cette propriété que le fichier de transcription qui contient le message à qui le fichier a été joint.|
@@ -289,7 +289,7 @@ Voici quelques conseils et meilleures pratiques pour afficher Teams contenu dans
 
 - Utilisez le **contrôle Personnaliser les colonnes** dans la barre de commandes pour ajouter et organiser des colonnes afin d’optimiser la révision Teams contenu.
 
-  ![Utiliser la page de modification du flyout de colonne pour ajouter, supprimer et organiser des colonnes](..\media\EditReviewSetColumns.png)
+  ![Utilisez la page de modification du flyout de colonne pour ajouter, supprimer et organiser des colonnes.](..\media\EditReviewSetColumns.png)
 
    Vous pouvez ajouter et supprimer des colonnes utiles pour Teams contenu. Vous pouvez également séquencer l’ordre des colonnes en les faisant glisser et en les faisant glisser dans la page volante Modifier **la** colonne. Vous pouvez également trier les colonnes pour Teams contenu avec des valeurs similaires pour la colonne sur qui vous tiez.
 

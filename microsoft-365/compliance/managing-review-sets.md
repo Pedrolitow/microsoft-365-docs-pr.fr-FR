@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment gérer les ensembles de révision afin de pouvoir analyser, interroger, afficher, baliser et exporter des données dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 164c172dd4c4ad5de6b24d25466afcb8a016715fdbe1f1958616afe823aeb487
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 51362fa23af1c0a8b232fe5fc026ac1a87803c3a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865870"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573618"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gérer les ensembles de révision dans Advanced eDiscovery
 
@@ -42,15 +42,15 @@ Les ensembles de révision sont un ensemble statique de documents dans lequel vo
 
 Les ensembles de révision peuvent être créés sous l’onglet **Ensembles** de révision en cliquant **sur + Ajouter un jeu à réviser.**
 
-![Ajouter un jeu à réviser](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+![Ajouter un jeu à réviser.](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
 Dans la page **Ajouter un jeu à réviser,** tapez un nom pour le jeu à réviser, puis cliquez sur **Enregistrer.** Le nouvel ensemble de révision s’affiche dans la liste sous l’onglet **Ensembles de révision.**
 
-![Nouvel ensemble de révision répertorié sous l’onglet Jeu à réviser](../media/AeDnewreviewset.png)
+![Nouvel ensemble de révision répertorié sous l’onglet Jeu à réviser.](../media/AeDnewreviewset.png)
 
 Il existe trois façons différentes d’ajouter des données à un groupe de révision dans Advanced eDiscovery cas.
 
-![Trois façons d’ajouter des jeux à réviser](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![Trois méthodes d’ajout à un ensemble de révision.](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [Ajouter des résultats de recherche à un jeu à réviser](add-data-to-review-set.md)
 

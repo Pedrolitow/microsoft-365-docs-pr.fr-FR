@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a939bd03f983904f438aaa2efe8e3be18c6831cd
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 5e8f6d2c79a0eeac6db20ff5791a25264d1b6767
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533554"
+ms.locfileid: "58573450"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprendre le rapport d’analyste dans l’analyse des menaces dans Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "58533554"
 
 Chaque [rapport d’analyse des](threat-analytics.md) menaces inclut des sections dynamiques et une section écrite complète appelée rapport _d’analyste._ Pour accéder à cette section, ouvrez le rapport sur la menace de suivi et sélectionnez **l’onglet Rapport d’analyste.**
 
-![Image de la section du rapport d’analyste d’un rapport d’analyse des menaces](../../media/threat-analytics/ta_analystreport_mtp.png)
+![Image de la section du rapport d’analyste d’un rapport d’analyse des menaces.](../../media/threat-analytics/ta_analystreport_mtp.png)
 
 _Section Rapport d’analyste d’un rapport d’analyse des menaces_
 

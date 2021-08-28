@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment limiter l’exposition accidentelle des informations lorsque vous partagez des fichiers avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: be5dfaa0549d96c93befc5c59947651391acf6e9f0b029d4745f717d87c7cccb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3769239951b409afe7596b6f4fecf83c87a9131
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804675"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573390"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation
 
@@ -46,7 +46,7 @@ Pour désactiver les liens *Tout le monde* de votre organisation
 1. Dans le centre d’administration SharePoint, dans le volet de gauche, cliquez sur **Partage**.
 2. Définissez les paramètres de partage externe de SharePoint sur **Invités nouveaux et existants**.
 
-   ![Capture d’écran des paramètres de partage externe de site SharePoint au niveau de l’organisation](../media/sharepoint-organization-external-sharing-controls-new-users.png)
+   ![Capture d’écran des paramètres de partage externe de site SharePoint au niveau de l’organisation.](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 
 3. Cliquez sur **Enregistrer**.
 
@@ -56,7 +56,7 @@ Pour désactiver les liens *Tout le monde* d’un site
 3. Dans le ruban, cliquez sur **Partage**. 
 4. Assurez-vous que le partage est paramétré sur **Invités nouveaux et existants**.
 
-   ![Capture d’écran des paramètres de partage externe de site SharePoint au niveau de l’organisation](../media/sharepoint-site-external-sharing-settings.png)
+   ![Capture d’écran des paramètres de partage externe de site SharePoint au niveau de l’organisation.](../media/sharepoint-site-external-sharing-settings.png)
 
 5. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
@@ -76,7 +76,7 @@ Pour configurer une liste d’autorisation ou de refus de domaine
 3. Cliquez sur **Ajouter des domaines**.
 4. Choisissez si vous voulez bloquer des domaines, indiquez les domaines, puis cliquez sur **OK**.
 
-   ![Capture d’écran du paramètre Limiter le partage externe de SharePoint](../media/sharepoint-sharing-block-domain.png)
+   ![Capture d’écran du paramètre Limiter le partage externe de SharePoint.](../media/sharepoint-sharing-block-domain.png)
 
 5. Cliquez sur **Enregistrer**.
 
@@ -92,7 +92,7 @@ Limiter le partage externe aux membres d’un groupe de sécurité
 
 3. Sélectionnez **Autoriser uniquement les utilisateurs de groupes de sécurité spécifiques à partager en externe**, puis sélectionnez **Gérer les groupes de sécurité**.
 
-    ![Capture d’écran du volet Gérer les groupes de sécurité](/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![Capture d’écran du volet Gérer les groupes de sécurité.](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. Dans la zone **Ajouter un groupe de sécurité** , entrez un nom pour un groupe de sécurité. La boîte de dialogue du groupe de sécurité s’affiche.
 

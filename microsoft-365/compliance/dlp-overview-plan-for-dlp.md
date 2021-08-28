@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vue d’ensemble du processus de planification de la protection contre la perte de données
-ms.openlocfilehash: 2f1c37cee6b3fee9d317314b67736d627e4f7e4306be7f063383656e54fe374d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 130675ad15a872ed14041289fb24aeec471014ff
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814532"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573258"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planifier la protection contre la perte de données (DLP)
 
@@ -113,7 +113,7 @@ Votre plan d’implémentation doit inclure les suivants :
 
 Il est essentiel de documenter la façon dont votre organisation va passer de son état de départ à l’état final souhaité pour communiquer avec vos parties prenantes et définir l’étendue du projet. Voici un ensemble d’étapes couramment utilisées pour déployer la DLP. Vous souhaiterez plus de détails que cela, mais vous pouvez l’utiliser pour cadrer votre chemin d’adoption DLP.
 
-![graphique montrant l’ordre commun pour le déploiement de DLP](../media/dlp-deployment-planning.png)
+![graphique montrant l’ordre commun pour le déploiement de DLP.](../media/dlp-deployment-planning.png)
 
 #### <a name="sensitive-item-discovery"></a>Découverte d’éléments sensibles
 
@@ -161,7 +161,7 @@ Différents groupes de votre organisation peuvent avoir différents affichages s
 Avant de pouvoir surveiller certains emplacements DLP, il existe des conditions préalables qui doivent être remplies. Consultez les sections **Avant de commencer** :
 
 - [Prise en main du scanneur local de protection contre la perte de données (préversion)](dlp-on-premises-scanner-get-started.md#before-you-begin)
-- [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#before-you-begin)
+- [Prise en main la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#before-you-begin)
 - [Mise en place de l’extension de conformité Microsoft (prévisualisation)](dlp-chrome-get-started.md#before-you-begin)
 - [Utiliser des stratégies de protection contre la perte de données pour les applications cloud non-Microsoft (aperçu)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 
@@ -177,15 +177,15 @@ Si vous créez des stratégies DLP susceptibles d’avoir un impact important, n
     
 3. **Démarrez l’application complète des stratégies** afin que les actions dans les règles soient appliquées et le contenu protégé. Continuez de surveiller les rapports DLP et tous les rapports ou notifications d’incident pour vous assurer que les résultats correspondent à ce que vous aviez prévu. 
 
-    ![Options pour l’utilisation du mode de test et l’activation de la stratégie](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Options d’utilisation du mode test et d’option de stratégie.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
     Vous pouvez désactiver une stratégie DLP à tout moment, ce qui a une incidence sur toutes les règles de la stratégie. Toutefois, chaque règle peut également être désactivée individuellement en basculant son état dans l’éditeur de règles.
 
-    ![Options de désactivation d’une règle dans une stratégie](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![Options de la stratégie de la stratégie.](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
     Vous pouvez également modifier la priorité de plusieurs règles dans une stratégie. Pour ce faire, ouvrez une stratégie pour modification. Dans une ligne de règle, sélectionnez les points de suspension (**...**), puis choisissez une option, comme, par exemple, **Descendre** ou **Mettre à la fin**.
 
-    ![Définition d’une priorité de règle](../media/dlp-set-rule-priority.png)
+    ![Définissez la priorité de la règle.](../media/dlp-set-rule-priority.png)
 
 #### <a name="end-user-training"></a>Formation des utilisateurs finals
 

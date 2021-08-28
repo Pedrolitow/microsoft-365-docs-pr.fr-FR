@@ -15,15 +15,15 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à utiliser l’analyseur de configuration pour rechercher et corriger les stratégies de sécurité qui se trouvent en dessous des paramètres dans Protection standard et Protection stricte dans les stratégies de sécurité prédéfines.
+description: Les administrateurs peuvent apprendre à utiliser l’analyseur de configuration pour rechercher et corriger les stratégies de sécurité qui se trouvent sous les paramètres dans protection standard et protection stricte dans les stratégies de sécurité prédéfines.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae0655b2f05962418e736242200d65be34a20d58
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 2b732922cf0a7d9f1d44a24d3b7b6f025f3c2a27
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254915"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573426"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analyseur de configuration des stratégies de protection dans EOP et Microsoft Defender pour Office 365
 
@@ -43,7 +43,7 @@ Les types de stratégies suivants sont analysés par l’analyseur de configurat
   - [Stratégies anti-programme malveillant.](configure-anti-malware-policies.md)
   - [Stratégies anti-hameçonnage EOP](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations avec des abonnements Microsoft 365 E5 ou Defender pour Office 365 de modules:
+- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations ayant des abonnements Microsoft 365 E5 ou Defender pour Office 365 de modules:
   - Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365, qui incluent :
     - Paramètres [d’usurpation disponibles](set-up-anti-phishing-policies.md#spoof-settings) dans les stratégies anti-hameçonnage EOP.
     - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
@@ -70,7 +70,7 @@ Les valeurs de paramètre de stratégie Standard et Strict utilisées comme lign
   > - L’ajout d’utilisateurs au rôle Azure Active Directory leur donne les autorisations  requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
-## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Utiliser l’analyseur de configuration dans le portail Microsoft 365 Defender web
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Utiliser l’analyseur de configuration dans le portail Microsoft 365 Defender client
 
 Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Configuration analyzer** in the **Templated policies** section.
 
@@ -84,7 +84,7 @@ La page **De l’analyseur de** configuration possède trois onglets principaux 
 
 Par défaut, l’analyseur de configuration s’ouvre sous **l’onglet Recommandations standard.** Vous pouvez basculer vers **l’onglet Recommandations strictes.** Les paramètres, la disposition et les actions sont les mêmes sur les deux onglets.
 
-![Paramètres et recommandations dans l’analyseur de configuration](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![Paramètres et recommandations dans l’analyseur de configuration.](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
 La première section de l’onglet affiche le nombre de paramètres de chaque type de stratégie qui ont besoin d’être améliorés par rapport à protection standard ou stricte. Les types de stratégies sont :
 
@@ -141,10 +141,10 @@ Pour filtrer les résultats, cliquez sur **Filtrer**. Dans le volant **Filtres**
 - **Heure de** début et **heure de fin** (date) : vous pouvez revenir à 90 jours à partir d’aujourd’hui.
 - **Protection standard** ou **protection stricte**
 
-Lorsque vous avez terminé, cliquez sur **Appliquer.**
+Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
 Pour exporter les résultats vers un fichier .csv, cliquez sur **Exporter.**
 
 Pour filtrer les résultats en fonction d’une modification spécifique par , **nom de paramètre** ou valeur de **type,** utilisez la **zone de** recherche.
 
-![Analyse de dérive de configuration et affichage historique dans l’analyseur de configuration](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+![Analyse de dérive de configuration et affichage historique dans l’analyseur de configuration.](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur le niveau de confiance du courrier indésirable (SCL) appliqué aux messages dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d93f0ba26e164209aa36dac8d8849bc0cb8be7ecf1c7b4faf624d4b1acab6f8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3d45de527400088a180f5de8f8a836f5e4596395
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56852877"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573414"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Niveau de confiance du courrier indésirable (SCL) dans EOP
 
@@ -57,4 +57,4 @@ Comme le SCL, le niveau de réclamation en bloc (BCL) identifie les messages él
 
 ****
 
-![L’icône courte pour LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nouveau Microsoft 365 ?** Découvrez les cours vidéo gratuits **pour Microsoft 365 administrateurs** et professionnels de l’informatique, présentés par LinkedIn Learning.
+![Petit icône de LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous n’Microsoft 365 ?** Découvrez les cours vidéo gratuits **pour Microsoft 365 administrateurs** et professionnels de l’informatique, présentés par LinkedIn Learning.

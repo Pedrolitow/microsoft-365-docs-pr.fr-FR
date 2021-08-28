@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Utilisez les rapports DLP dans Office 365 pour afficher le nombre de correspondances, remplacements ou faux positifs de stratégie DLP et voir s’ils sont à la hausse ou à la baisse au fil du temps.
-ms.openlocfilehash: 936c8aaba7d50cbb775c98babe751b357738e617d55ea8a8517a86c4f7cdb188
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 12ee109a348657aa8ca04c55e496047a82772e22
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795485"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574062"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
 
-Après avoir créé vos stratégies de protection contre la perte de données (DLP), vous devez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP dans le Centre de conformité de &amp; sécurité, vous pouvez rapidement afficher :
+Après avoir créé vos stratégies de protection contre la perte de données (DLP), vous pouvez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP dans le Centre de conformité de &amp; sécurité, vous pouvez rapidement afficher :
   
 - **Correspondances de stratégie DLP** Ce rapport indique le nombre de correspondances de stratégies DLP au fil du temps. Vous pouvez filtrer les rapports par date, emplacement, stratégie ou action. Vous pouvez utiliser ce rapport pour : 
     
@@ -56,31 +56,31 @@ Après avoir créé vos stratégies de protection contre la perte de données (D
     
   - Découvrir où les stratégies DLP entrent en conflit avec des processus professionnels valides en raison d'un nombre élevé de remplacements de l’utilisateur.
     
-Tous les rapports DLP peuvent afficher les données de la période de quatre mois la plus récente. Les données les plus récentes peuvent nécessiter jusqu'à 24 heures avant de s’afficher dans les rapports.
+Tous les rapports DLP peuvent afficher les données de la période de quatre mois la plus récente. Les données les plus récentes peuvent nécessiter jusqu'à 24 heures avant de s’afficher dans les rapports.
   
 Vous trouverez ces rapports dans le tableau de bord des rapports du Centre de conformité &amp; \> **de** \> **sécurité.**
   
-![Rapport sur les correspondances de stratégie DLP](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![Rapport de correspondances de stratégie DLP.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Afficher la justification envoyée par un utilisateur pour un remplacement
 
 Si votre stratégie DLP autorise les utilisateurs à la remplacer, vous pouvez utiliser le rapport faux positifs et remplacer pour afficher le texte envoyé par les utilisateurs dans le conseil de stratégie.
   
-![Champ Justification dans les détails du rapport DLP sur les faux positifs et les remplacements](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![Champ Justification dans les détails du rapport DLP sur les faux positifs et les remplacements.](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## <a name="take-action-on-insights-and-recommendations"></a>Prendre des mesures sur les informations et les recommandations
 
 Les rapports peuvent afficher des informations et des recommandations dans le cas où vous pouvez cliquer sur l’icône d’avertissement rouge pour afficher des détails sur les problèmes potentiels et prendre des mesures correctives possibles.
   
-![Cliquer sur une icône d’informations pour voir les détails et les actions à prendre](../media/51782036-7299-4960-8175-75c2b1637159.png)
+![Cliquez sur une icône d’informations pour voir les détails et les actions à prendre.](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>Autorisations pour les rapports DLP
 
 Pour afficher les rapports DLP dans le Centre de sécurité & conformité, vous devez avoir :
 
-- **Rôle lecteur de** sécurité dans le centre d Exchange’administration. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Lecteur de sécurité dans Exchange’administration centrale.
+- **Rôle lecteur de** sécurité dans le centre d Exchange’administration. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Lecteur sécurité dans le centre d Exchange’administration.
 
-- **Rôle de gestion de la conformité DLP** en affichage seul dans le Centre de sécurité & conformité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité, Gestion de l’organisation, Administrateur de la sécurité et Lecteur Sécurité dans le Centre de sécurité & conformité.
+- **Rôle de gestion de la conformité DLP** en affichage seul dans le Centre de sécurité & conformité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité, Gestion de l’organisation, Administrateur de la sécurité et Lecteur sécurité dans le Centre de sécurité & conformité.
 
 - **Rôle Destinataires en affichage** seul dans le centre Exchange’administration. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité, Gestion de l’organisation View-Only Gestion de l’organisation dans Exchange d’administration.
 

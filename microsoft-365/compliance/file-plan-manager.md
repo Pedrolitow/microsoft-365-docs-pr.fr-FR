@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 81400dd6cad1caa83bb5dcfa3fc530f6db38796bd0ed4e28d908c3041b87a902
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c270e3b03c8c8373cc3fcb204f5f5a654eeb001
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820081"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573270"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention
 
@@ -54,7 +54,7 @@ Dans le centre de conformité Microsoft 365, accédez à **Solutions** > **Gesti
 
 Si **Gouvernance des informations** ne s’affiche pas dans le volet de navigation, faites défiler la liste vers le bas, puis sélectionnez **Tout afficher**.
 
-![Page de plan de gestion de fichiers](../media/compliance-file-plan.png)
+![Page de plan de gestion de fichiers.](../media/compliance-file-plan.png)
 
 ## <a name="navigating-your-file-plan"></a>Navigation dans votre plan de gestion de fichiers
 
@@ -107,11 +107,11 @@ Pour commencer, il existe des valeurs prêtes à l’emploi pour les descripteur
 
 Exemple de descripteurs de plan de gestion de fichiers lorsque vous créez ou modifiez une étiquette de rétention :
 
-![Descripteurs de plan de gestion de fichiers lorsque vous créez ou modifiez une étiquette de rétention](../media/file-plan-descriptors.png)
+![Descripteurs de plan de gestion de fichiers lorsque vous créez ou modifiez une étiquette de rétention.](../media/file-plan-descriptors.png)
 
 Lorsque vous sélectionnez **Choisir** pour chacun de ces descripteurs facultatifs, vous pouvez sélectionner l’une des valeurs out-of-box, ou créer les vôtres, puis les sélectionner. Par exemple : 
 
-![Créer un descripteur de plan de fichier pour l’approvisionnement/citation](../media/file-plan-descriptors-create.png)
+![Créer un descripteur de plan de fichier pour l’approvisionnement/citation.](../media/file-plan-descriptors-create.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exporter toutes les étiquettes de rétention pour analyse ou activer les révisions en mode hors connexion
 
@@ -119,11 +119,11 @@ Depuis le plan de gestion de fichiers, vous pouvez exporter les détails de tout
 
 Pour exporter toutes les étiquettes de rétention : sur la page **Plan de gestion de fichiers**, cliquez sur **Exporter** :
 
-![Option d’exportation de plan de gestion de fichiers](../media/compliance-file-plan-export-labels.png)
+![Option d’exportation de plan de gestion de fichiers.](../media/compliance-file-plan-export-labels.png)
 
 Un fichier *.csv contenant toutes les étiquettes de rétention existantes s’ouvre. Par exemple :
 
-![Fichier CSV affichant toutes les étiquettes de conservation](../media/file-plan-csv-file.png)
+![Fichier CSV affichant toutes les étiquettes de conservation.](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Import d’étiquettes de rétention dans votre plan de gestion de fichiers
 
@@ -131,13 +131,13 @@ Dans le plan de gestion de fichiers, vous pouvez importer en bloc de nouvelles �
 
 1. Sur la page **Plan de gestion de fichiers**, cliquez sur **Importer** pour utiliser la page **Remplir et importer votre plan de gestion de fichiers** :
 
-   ![Option d’import de plan de gestion de fichiers](../media/compliance-file-plan-import-labels.png)
+   ![Option d’import de plan de gestion de fichiers.](../media/compliance-file-plan-import-labels.png)
 
-   ![Option de téléchargement d’un modèle de plan de gestion de fichiers vide](../media/file-plan-blank-template-option.png)
+   ![Option de téléchargement d’un modèle de plan de gestion de fichiers vide.](../media/file-plan-blank-template-option.png)
 
 2. Téléchargez un modèle vide comme indiqué :
 
-   ![Modèle de plan de gestion de fichiers vierge ouvert dans Excel](../media/file-plan-blank-template.png)
+   ![Modèle de plan de gestion de fichiers vierge ouvert dans Excel.](../media/file-plan-blank-template.png)
 
 3. Renseignez le modèle à l’aide des informations suivantes qui décrivent les propriétés et les valeurs valides pour chaque d’entre elles. Pour l’importation, certaines valeurs ont une longueur maximale :
     
@@ -170,13 +170,13 @@ Dans le plan de gestion de fichiers, vous pouvez importer en bloc de nouvelles �
 
    Voici un exemple du modèle contenant les informations sur les étiquettes de rétention.
 
-   ![Modèle de plan de gestion de fichiers complété](../media/file-plan-filled-out-template.png)
+   ![Modèle de plan de fichier avec des informations renseignées.](../media/file-plan-filled-out-template.png)
 
 4. Sous l’étape 3 sur la page **Remplir et importer votre plan de gestion de fichiers**, cliquer sur **Rechercher des fichiers** pour charger le modèle rempli, puis sélectionnez **Suivant**.
 
    Le plan de fichiers charge le fichier et valide les entrées, en affichant les statistiques d’importation.
 
-   ![Statistiques d’importation de plan de gestion de fichiers](../media/file-plan-import-statistics.png)
+   ![Statistiques d’importation de plan de gestion de fichiers.](../media/file-plan-import-statistics.png)
 
 5. En fonction des résultats de validation :
     

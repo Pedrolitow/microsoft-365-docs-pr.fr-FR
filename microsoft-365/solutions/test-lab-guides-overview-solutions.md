@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 description: Utilisez les guides de laboratoire de test pour créer Microsoft 365 solutions et scénarios dans un environnement dev/test.
-ms.openlocfilehash: 2e7544c7d1b39e8cba198b0fce6bbf2814e7332d0af00bdeca748b4b660f8a1a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d380c77d9a94b5c08fe97b9874d15e0272711653
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816630"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573354"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Guides pour les laboratoires de tests pour les solutions et scénarios
 
@@ -32,7 +32,7 @@ Les guides de laboratoire de test sont conçus pour être modulaires. Ils s’ap
 
 Les guides de laboratoire de test vous permettent également de créer des environnements représentatifs pour le développement et le test d’applications, également connus sous le nom d’environnements de développement/test.
   
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 Essayez [ce guide de laboratoire de test](team-security-isolation-dev-test.md) pour configurer une équipe avec l’isolation de sécurité.
 

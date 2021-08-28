@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment rechercher et utiliser l’analyse de l’utilisation pour un modèle de compréhension de document.
-ms.openlocfilehash: 9ea408485a7cf1ff935192775eab2325e0e268aad927a72dedf237f0e81a3e0f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d39b2417a90716200d33831bfef7e9cb2ff1d523
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871142"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574038"
 ---
 # <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Analyse de l’utilisation du modèle de compréhension de document dans Microsoft SharePoint Syntex
 
@@ -35,7 +35,7 @@ Votre centre de contenu SharePoint Syntex procède à une analyse de l’utilisa
 - Classification par bibliothèque
 - Utilisation des modèles 
 
- ![Analyse des modèles](../media/content-understanding/model-analytics.png) </br>
+ ![Analyses de modèle.](../media/content-understanding/model-analytics.png) </br>
 
 ### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>Regroupement des données d’utilisation des modèles dans le centre de contenu par défaut
 
@@ -49,7 +49,7 @@ En ce qui concerne les données d’analyse de l’utilisation du modèle, notez
 
 ## <a name="classification-by-model"></a>Classification par modèle
 
-   ![Pourcentage total des modèles](../media/content-understanding/total-model-percentage.png) </br>
+   ![Pourcentage total des modèles.](../media/content-understanding/total-model-percentage.png) </br>
 
 Le graphique à secteurs **Classification par modèle** affiche les modèles qui ont classé le plus de fichiers. Il présente chaque modèle publié sous forme de pourcentage du nombre total de fichiers traités par tous les modèles publiés sur le centre de contenu.
 
@@ -57,7 +57,7 @@ Chaque modèle affiche également le **taux d’achèvement**, à savoir le pour
 
 ## <a name="classification-by-library"></a>Classification par bibliothèque
 
-   ![Fichiers traités](../media/content-understanding/files-processed-over-time.png) </br>
+   ![Fichiers traités.](../media/content-understanding/files-processed-over-time.png) </br>
 
 Le graphique à barres **Classification par bibliothèque** vous permet de déterminer l’efficacité de la compréhension de contenu dans votre organisation.  Il n’affiche seulement le nombre de fichiers traités au fil du temps pour chaque modèle. Si vous sélectionnez une colonne dans le graphique, il affiche aussi les bibliothèques de documents auxquelles le programme a appliqué le modèle.
 

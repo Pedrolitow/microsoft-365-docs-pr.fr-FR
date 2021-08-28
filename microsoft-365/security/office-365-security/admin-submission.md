@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre à Microsoft des messages suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour la réessuration.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb8df2eba816a5d70804bf47190c094ac9790073
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 7bd845f67c25dae154832dbe280b6d158b22db8c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507625"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573438"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -41,7 +41,7 @@ Lorsque vous envoyez un message électronique pour analyse, vous obtenez les ré
 
 - **Vérification de l’authentification du** courrier électronique : détails sur la réussi ou l’échec de l’authentification de messagerie lors de sa livraison.
 - **Accès aux** stratégies : informations sur les stratégies qui ont autorisé ou bloqué le courrier entrant dans votre client, en remplacement de nos verdicts de filtre de service.
-- **Réputation/détonation de la** charge utile : examen à jour des URL et pièces jointes du message.
+- **Réputation/détonation de la charge** utile : examen à jour des URL et pièces jointes du message.
 - **Analyse du gradeur**: révision effectuée par des élèves humains afin de confirmer si les messages sont malveillants ou non.
 
 > [!IMPORTANT]
@@ -66,7 +66,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** \> **Submissions**.
 
-2. Dans la page **Soumissions,** vérifiez que l’onglet Soumis pour analyse est sélectionné, puis cliquez sur Icône Annonce Envoyer à Microsoft pour  ![ ](../../media/m365-cc-sc-create-icon.png) **analyse.**
+2. Dans la page **Soumissions,** vérifiez que l’onglet Soumis pour analyse est sélectionné, puis cliquez sur  ![ l’icône Ad.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse.**
 
 3. Utilisez le **volant Envoyer à Microsoft** pour révision qui apparaît pour envoyer le message, l’URL ou la pièce jointe d’un e-mail, comme décrit dans les sections suivantes.
 
@@ -79,7 +79,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 2. Dans la section **Ajouter l’ID de message** réseau ou télécharger le fichier de courrier électronique, utilisez l’une des options suivantes :
    - Ajoutez **l’ID** du message réseau de messagerie : il s’agit d’une valeur GUID disponible dans l’en-tête **X-MS-Exchange-Organization-Network-Message-Id** dans le message ou dans l’en-tête **X-MS-Office365-Filtering-Correlation-Id** dans les messages mis en quarantaine.
-   - **Télécharger fichier de courrier électronique (.msg ou .eml)**: cliquez **sur Parcourir les fichiers.** Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier .eml ou .msg, puis cliquez sur **Ouvrir**.
+   - **Télécharger fichier e-mail (.msg ou .eml)**: cliquez **sur Parcourir les fichiers.** Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier .eml ou .msg, puis cliquez sur **Ouvrir**.
 
 3. Dans la **zone Choisir un destinataire qui a eu** un problème, spécifiez le destinataire sur qui vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si le courrier électronique a contourné l’analyse en raison des stratégies utilisateur ou organisation.
 
@@ -93,7 +93,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 5. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
 > [!div class="mx-imgBorder"]
-> ![Exemple de soumission d’URL](../../media/submission-flyout-email.png)
+> ![Exemple de nouvelle soumission d’URL.](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 
@@ -103,12 +103,12 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 3. Dans la section **Sélectionner une raison d’envoyer à Microsoft,** sélectionnez l’une des options suivantes :
    - **Ne doit pas avoir été bloqué (faux positif)**
-   - **Doit avoir été bloqué :** dans l’URL doit **avoir** été classée en tant que section qui s’affiche, sélectionnez **Hameçonnage** ou **programme malveillant**.
+   - **Doit avoir été bloqué :** dans l’URL, cette URL doit **avoir** été classée en tant que section qui s’affiche, sélectionnez **Hameçonnage** ou **Programme malveillant**.
 
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
 > [!div class="mx-imgBorder"]
-> ![Exemple d’envoi de nouveaux e-mails](../../media/submission-url-flyout.png)
+> ![Exemple de nouvelle soumission de courrier électronique.](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Envoyer une pièce jointe suspecte à Microsoft
 
@@ -118,12 +118,12 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 3. Dans la section **Sélectionner une raison d’envoyer à Microsoft,** sélectionnez l’une des options suivantes :
    - **Ne doit pas avoir été bloqué (faux positif)**
-   - **Doit avoir été bloqué**: dans l’URL qui doit avoir été classée comme section qui s’affiche, un programme malveillant est le seul choix et est automatiquement sélectionné.  
+   - **Doit avoir été bloqué**: dans l’URL qui s’affiche, le programme malveillant est le seul choix et est automatiquement sélectionné.  
 
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
 > [!div class="mx-imgBorder"]
-> ![Exemple d’envoi de nouvelles pièces jointes](../../media/submission-file-flyout.png)
+> ![Exemple d’envoi de nouvelles pièces jointes.](../../media/submission-file-flyout.png)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur à Microsoft
 
@@ -164,7 +164,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nouvelles options de filtre pour les soumissions d’administrateurs](../../media/admin-submission-filters.png)
+     > ![Nouvelles options de filtre pour les soumissions d’administrateur.](../../media/admin-submission-filters.png)
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste suivante :
      - **Aucune**
@@ -218,13 +218,13 @@ Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enabl
      - **ID de message réseau**
      - **Sender**
      - **Raison signalée :** **pas de courrier indésirable,** **de hameçonnage** ou de **courrier indésirable.**
-     - **Simulation de hameçonnage** **: Oui** ou **Non**
+     - **Simulation de hameçonnage**: **Oui** ou **Non**
      - **Tags**
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nouvelles options de filtre pour les soumissions d’utilisateurs](../../media/admin-submission-reported-messages.png)
+     > ![Nouvelles options de filtre pour les envois d’utilisateurs.](../../media/admin-submission-reported-messages.png)
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste suivante :
      - **Aucune**
@@ -241,7 +241,7 @@ Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enabl
 
 ### <a name="undo-user-submissions"></a>Annuler les soumissions d’utilisateurs
 
-Lorsqu’un utilisateur envoie un message suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler la soumission. Si l’utilisateur souhaite récupérer le courrier électronique, il sera disponible pour la récupération dans les dossiers Éléments supprimés ou Courrier indésirable.
+Lorsqu’un utilisateur envoie un message suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler la soumission. Si l’utilisateur souhaite récupérer le courrier électronique, il pourra être récupéré dans les dossiers Éléments supprimés ou Courrier indésirable.
 
 ### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Conversion des messages signalés par l’utilisateur de la boîte aux lettres personnalisée en envoi d’administrateur 
 
@@ -256,4 +256,4 @@ Sous **l’onglet Messages** signalés par l’utilisateur, sélectionnez un mes
 - **Déclencher l’examen**
 
 > [!div class="mx-imgBorder"]
-> ![Nouvelles options sur le bouton Action](../../media/admin-submission-main-action-button.png)
+> ![Nouvelles options sur le bouton Action.](../../media/admin-submission-main-action-button.png)

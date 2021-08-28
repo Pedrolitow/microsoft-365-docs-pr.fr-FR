@@ -19,18 +19,18 @@ description: Résolution des erreurs pour Azure AzCopy lors du chargement de don
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: f8f8ea4cfcd38aa3680fc1aeef3317a6a16a90b909530061beb6c03a95a45f89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87f4e62f05e29147213d70b28e1778ea9e3ea683
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885426"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573186"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Résoudre les problèmes d’AzCopy dans Advanced eDiscovery
 
 Lors du chargement de données ou de documents non-Microsoft 365 pour la correction des erreurs dans Advanced eDiscovery, l’interface utilisateur fournit une commande Azure AzCopy qui contient des paramètres avec l’emplacement où sont stockés les fichiers à télécharger et l’emplacement de stockage Azure vers lequel les fichiers seront téléchargés. Pour télécharger vos documents, copiez cette commande, puis exécutez-la dans une invite de commandes sur votre ordinateur local.  La capture d’écran ci-dessous montre un exemple de commande AzCopy :
 
-![Télécharger fichiers non Microsoft 365 de fichiers](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![Télécharger fichiers non-Microsoft 365.](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 En règle générale, la commande fournie fonctionne lorsque vous l’exécutez. Toutefois, dans certains cas, la commande affichée ne s’exécute pas correctement. Voici quelques raisons possibles.
 

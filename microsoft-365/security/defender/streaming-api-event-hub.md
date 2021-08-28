@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b19b3c23716e7a9b1f78b82b3663271310603df8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: ecfc8281c642e7240832a7c057f37f9df4caad68
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508309"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573462"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers votre Hub d’événements Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "58508309"
 
 2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> inscrivez-vous à Microsoft.Informations**.
 
-3. Créez un espace de noms Hub d’événements, sélectionnez hub d’événements **>** ajoutez et sélectionnez le niveau de tarification, les unités de débit et la capacité de resserrement automatique adaptée à la charge attendue. Pour plus d’informations, [voir la tarification des Hubs d’événements.](https://azure.microsoft.com/pricing/details/event-hubs/)
+3. Créez un espace de noms Hub d’événements, sélectionnez Hub d’événements **>** Ajoutez et sélectionnez le niveau de tarification, les unités de débit et la capacité de resserrement automatique en fonction de la charge attendue. Pour plus d’informations, [voir la tarification des Hubs d’événements.](https://azure.microsoft.com/pricing/details/event-hubs/)
 
 ### <a name="add-contributor-permissions"></a>Ajouter des autorisations de collaborateur
 
@@ -47,7 +47,7 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
 1. Définissez l’utilisateur qui se connectera à Microsoft 365 Defender en tant que collaborateur.
 
-2. Si vous vous connectez à une application, ajoutez le principal du service d’inscription d’application en tant que lecteur, récepteur de données Azure Event Hub (cette procédure peut également être effectuée au niveau du groupe de ressources ou de l’abonnement).
+2. Si vous vous connectez à une application, ajoutez le principal du service d’inscription de l’application en tant que lecteur, récepteur de données Azure Event Hub (cette procédure peut également être effectuée au niveau du groupe de ressources ou de l’abonnement).
 
     Accédez à l’espace de noms **Hubs d’événements > contrôle d’accès (IAM) > ajouter** et vérifier sous **attributions de rôles.**
 
@@ -69,7 +69,7 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
    Pour obtenir votre ID de ressource **Event Hub,** rendez-vous sur votre page d’espace de noms Azure Event Hub sous l’onglet [Propriétés Azure](https://ms.portal.azure.com/)> copier le texte sous  >   **L’ID de ressource**:
 
-   ![Image de l’ID1 de la ressource Hub d’événements](../defender-endpoint/images/event-hub-resource-id.png)
+   ![Image de l’ID1 de la ressource Hub d’événements.](../defender-endpoint/images/event-hub-resource-id.png)
 
 8. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer.**
 
@@ -113,7 +113,7 @@ Pour obtenir les types de données pour les propriétés d’événement, faites
 
 - Voici un exemple d’événement Device Info :
 
-  ![Image de l’ID2 de la ressource Hub d’événements](../defender-endpoint/images/machine-info-datatype-example.png)
+  ![Image de l’ID2 de la ressource Hub d’événements.](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Voir aussi
 

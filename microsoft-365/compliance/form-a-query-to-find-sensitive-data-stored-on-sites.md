@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez la protection contre la perte de données (DLP) dans SharePoint Online pour découvrir les documents qui contiennent des données sensibles dans l’ensemble de votre client.
-ms.openlocfilehash: cd92fafe5a04de0339c0afb5f5b7cc2b4cc1772fc46dabe6477dd23aa981af23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2ecaa6b4b230db09095a9f9e5008dfdf0698043
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905574"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573222"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 
@@ -35,7 +35,7 @@ Les utilisateurs stockent souvent des données sensibles, comme les numéros de 
 
 Trois parties composent une requête DLP de base : SensitiveType,  plage de nombre et plage de confiance. Comme illustré dans le graphique suivant, **SensitiveType: \<type\> " est** obligatoire, et les deux et **|\<count range\>** sont **|\<confidence range\>** facultatifs.
 
-![Exemple de requête divisée en obligatoire et facultative](../media/DLP-query-example-text.png)
+![Exemple de requête divisée en obligatoire et facultative.](../media/DLP-query-example-text.png)
 
 ### <a name="sensitive-type---required"></a>Type d'informations sensibles - Obligatoire
 
@@ -43,7 +43,7 @@ De quoi est composée chaque partie ? SharePoint Les requêtes DLP commencent g
 
 ### <a name="ranges---optional"></a>Plages - facultatives
 
-Les deux parties suivantes sont des plages. Nous allons donc rapidement examiner à quoi ressemble une plage. Dans SharePoint requêtes DLP, une plage de base est représentée par deux nombres séparés par deux points, ce qui ressemble à `[number]..[number]` ceci : Par exemple, si elle est utilisée, cette plage capture des nombres de  `10..20` 10 à 20. Il existe beaucoup de combinaisons de plage différentes, dont plusieurs sont couvertes par cette rubrique.
+Les deux parties suivantes sont des plages. Nous allons donc rapidement examiner à quoi ressemble une plage. Dans SharePoint requêtes DLP, une plage de base est représentée par deux nombres séparés par deux points, ce qui ressemble à `[number]..[number]` ceci : Par exemple, si elle est utilisée, cette plage capturerait des nombres de  `10..20` 10 à 20. Il existe beaucoup de combinaisons de plage différentes, dont plusieurs sont couvertes par cette rubrique.
 
 Nous allons ajouter une plage de nombres à la requête. Vous pouvez utiliser la plage de nombres pour définir le nombre d’occurrences d’informations sensibles qu’un document doit contenir avant d’être inclus dans les résultats de la requête. Par exemple, si vous souhaitez que votre requête retourne uniquement les documents qui contiennent exactement cinq numéros de carte de crédit, utilisez ceci  `SensitiveType:"Credit Card Number|5"` : La plage de nombre peut également vous aider à identifier les documents qui présentent un degré élevé de risque. Par exemple, votre organisation peut examiner les documents comportant cinq numéros de carte de crédit ou plus avec un risque élevé. Pour rechercher des documents qui s’y trouvent, vous devez utiliser cette requête  `SensitiveType:"Credit Card Number|5.."` : Vous pouvez également trouver des documents avec cinq numéros de carte de crédit ou moins à l’aide de cette requête  `SensitiveType:"Credit Card Number|..5"` :
 
@@ -58,7 +58,7 @@ Enfin, la plage de confiance est le niveau de confiance auquel le type d'informa
 
 DLP dans SharePoint présente également la propriété LastSensitiveContentScan, qui peut vous aider à rechercher des fichiers analysés au cours d’une période spécifique. Pour obtenir des exemples de requête avec la propriété, voir les exemples de requêtes complexes `LastSensitiveContentScan` dans la section suivante. [](#examples-of-complex-queries)
 
-Vous pouvez utiliser non seulement des propriétés spécifiques à DLP pour créer une requête, mais également des propriétés de SharePoint eDiscovery standard telles `Author` que ou `FileExtension` . Vous pouvez utiliser des opérateurs pour créer des requêtes complexes. Pour obtenir la liste des propriétés et des opérateurs disponibles, consultez le billet de blog Utilisation des propriétés et des opérateurs de recherche avec [eDiscovery.](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery)
+Vous pouvez utiliser non seulement des propriétés spécifiques à la DLP pour créer une requête SharePoint, mais également des propriétés de recherche eDiscovery standard telles que `Author` ou `FileExtension` . Vous pouvez utiliser des opérateurs pour créer des requêtes complexes. Pour obtenir la liste des propriétés et des opérateurs disponibles, consultez le billet de blog Utilisation des propriétés et des opérateurs de recherche avec [eDiscovery.](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery)
 
 ## <a name="examples-of-complex-queries"></a>Exemples
 
@@ -79,13 +79,13 @@ Les exemples suivants utilisent différents types sensibles, propriétés et op�
 
 ## <a name="examples-of-queries-to-avoid"></a>Exemples
 
-Toutes les requêtes ne sont pas égales. Le tableau suivant donne des exemples de requêtes qui ne fonctionnent pas avec la DLP SharePoint et décrit pourquoi.
+Toutes les requêtes ne sont pas égales. Le tableau suivant donne des exemples de requêtes qui ne fonctionnent pas avec DLP SharePoint et décrit pourquoi.
 
 <br>
 
 ****
 
-|Requête non prise en charge|Reason|
+|Requête non prise en charge|Raison|
 |---|---|
 |`SensitiveType:"Credit Card Number|.."`|Vous devez ajouter au moins un nombre.|
 |`SensitiveType:"NotARule"`|« NotARule » n’est pas un nom de type sensible valide. Seuls les noms dans [l’inventaire des types d’informations sensibles](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) fonctionnent dans les requêtes DLP.|

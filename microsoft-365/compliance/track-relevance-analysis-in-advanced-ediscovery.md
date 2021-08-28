@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment afficher et interpréter l’état et les résultats de l’entraînement Pertinence pour les problèmes de Advanced eDiscovery.
-ms.openlocfilehash: f0c0ab94b328a715739c7c8aec32ac041b6dc97f6fd998865a5b2e282bff42eb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac575ebf073afa8eb4ba13e63202f8b634c52f60
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801706"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573198"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery"></a>Suivre l’analyse de pertinence dans Advanced eDiscovery
   
@@ -42,7 +42,7 @@ Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité ca
   
     Dans l’exemple, une évaluation réussie d’un problème est affichée, indiquée par l’indicateur de progression de couleur terminé et la coche. Le marquage est en cours, mais le cas est toujours considéré comme instable (état de stabilité également indiqué dans une info-conseil). La recommandation de l’étape suivante est « Formation ». 
   
-    ![Formation de suivi de pertinence étape 1](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
+    ![Formation Pertinence - Étape 1.](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
     La vue étendue affiche des informations et des options supplémentaires. La marge d’erreur actuelle affichée est la marge d’erreur du rappel dans l’état actuel de l’évaluation, étant donné les fichiers d’évaluation existants (déjà marqués).
   
@@ -53,7 +53,7 @@ Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité ca
   
     Dans **la piste de pertinence,** l’indicateur de progression de la formation et l’info-conseil indiquent le nombre estimé d’échantillons supplémentaires nécessaires pour atteindre la \> stabilité. Cette estimation fournit des instructions pour la formation supplémentaire nécessaire.
   
-    ![Formation de suivi de pertinence](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Formation de suivi de pertinence.](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
 2. Lorsque vous avez terminé le marquage et si vous avez besoin de continuer la formation, cliquez sur **Formation.** Un autre exemple de jeu de fichiers est généré à partir du jeu de fichiers chargé pour une formation supplémentaire. Vous êtes ensuite renvoyé à l’onglet Balise pour baliser et former d’autres fichiers.
 
@@ -62,11 +62,11 @@ Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité ca
 Une fois que les fichiers d’évaluation ont atteint un niveau stable de formation, Advanced eDiscovery est prêt pour le calcul par lots.
   
 > [!NOTE]
-> En règle générale, après trois exemples de formation stables, l’étape suivante est « Calcul par lot ». Il peut y avoir des exceptions, par exemple, lorsque des modifications ont été apportées au marquage des fichiers à partir d’exemples précédents ou lorsque des fichiers d’amorçage ont été ajoutés. 
+> En règle générale, après trois exemples de formation stables, l’étape suivante est « Calcul par lots ». Il peut y avoir des exceptions, par exemple, lorsque des modifications ont été apportées au marquage des fichiers à partir d’exemples précédents ou lorsque des fichiers d’amorçage ont été ajoutés. 
   
 ### <a name="performing-batch-calculation"></a>Effectuer le calcul par lots
 
-Le calcul par lot est exécuté en tant qu’étape suivante une fois la formation terminée (lorsqu’un état stable de formation est affiché par la barre de progression, une coche et un état stable dans l’info-conseil).) Le calcul par lots applique les connaissances acquises lors de l’entraînement Pertinence à l’ensemble de la population de fichiers, afin d’évaluer la pertinence des fichiers et d’affecter des scores de pertinence.
+Le calcul par lot est exécuté comme l’étape suivante une fois la formation terminée (lorsqu’un état de formation stable est affiché par la barre de progression, une coche et un état stable dans l’info-conseil).) Le calcul par lots applique les connaissances acquises lors de l’entraînement Pertinence à l’ensemble de la population de fichiers, afin d’évaluer la pertinence des fichiers et d’affecter des scores de pertinence.
   
 Lorsqu’il y a plusieurs problèmes, le calcul par lot est effectué par problème. Pendant le calcul par lots, la progression est surveillée lors du traitement de tous les fichiers. 
   
@@ -88,7 +88,7 @@ S’il existe des incohérences dans le marquage de fichiers, cela peut affecter
   
 2. À droite de **l’étape suivante,** cliquez sur **Modifier.**
   
-3. Sélectionnez **incohérences de balise comme** **option** de l’étape suivante, après sept exemples de formation et cliquez sur **OK**.
+3. Sélectionnez **incohérences de balise comme** option de **l’étape** suivante, après sept exemples de formation et cliquez sur **OK**.
   
 4. Sélectionner **les incohérences de balise**. **L’onglet** Balise s’ouvre et affiche une liste des incohérences à retager si nécessaire.
   
@@ -96,17 +96,17 @@ S’il existe des incohérences dans le marquage de fichiers, cela peut affecter
   
 ## <a name="viewing-and-using-relevance-results"></a>Affichage et utilisation des résultats de pertinence
 
-Dans **l’onglet Suivi de \>** pertinence, développez la ligne d’un problème, puis en regard des résultats détaillés, cliquez sur **Afficher.** Les volets de résultats détaillés sont affichés, comme indiqué et décrit ci-dessous.
+Dans **l’onglet Suivi \>** de pertinence, développez la ligne d’un problème, puis en regard des résultats détaillés, cliquez sur **Afficher.** Les volets de résultats détaillés sont affichés, comme indiqué et décrit ci-dessous.
   
-![Résultats détaillés de la formation de pertinence](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
+![Résultats détaillés de l’entraînement de pertinence.](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Résumé du marquage
 
- Dans l’exemple ci-dessous, **le** résumé du marquage affiche les totaux de chacun des processus de marquage des fichiers d’évaluation, de formation et de rattrapage.
+ Dans l’exemple ci-dessous, **le** résumé de marquage affiche les totaux de chacun des processus de marquage des fichiers d’évaluation, de formation et de rattrapage.
   
-![Résumé du marquage du suivi de pertinence](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
+![Résumé du marquage du suivi de pertinence.](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 Un mot clé est une chaîne, un mot, une expression ou une séquence de mots uniques dans un fichier identifié par Advanced eDiscovery comme un indicateur significatif de la pertinence d’un fichier. Les colonnes « Inclure » répertorient les mots clés et les poids dans les fichiers marqués comme pertinents, et les colonnes « Exclure » répertorient les mots clés et les pondérations dans les fichiers marqués comme non pertinents.
   
@@ -118,7 +118,7 @@ La Advanced eDiscovery de mots clés peut être utilisée pour compléter une li
 
 Le **volet Progression de** l’entraînement inclut un graphique de progression de la formation et un indicateur de qualité, comme illustré dans l’exemple ci-dessous.
   
-![Avancement de la formation de suivi de pertinence](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
+![Progression de l’entraînement de suivi de pertinence.](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
 **Indicateur de qualité de formation**: affiche l’évaluation de la cohérence du marquage comme suit :
   
@@ -135,7 +135,7 @@ Le **volet Progression de** l’entraînement inclut un graphique de progression
   
 ### <a name="batch-calculation-results"></a>Résultats de calcul par lot
 
-Le **volet Résultats du calcul batch** inclut le nombre de fichiers qui ont été marqués pour Pertinence, comme suit : 
+Le **volet Résultats du calcul par** lot inclut le nombre de fichiers qui ont été marqués pour Pertinence, comme suit : 
   
 - **Success**
   
@@ -154,7 +154,7 @@ Le **volet Résultats du calcul batch** inclut le nombre de fichiers qui ont ét
 
 Le **volet Statistiques** de formation affiche des statistiques et des graphiques basés sur les résultats de Advanced eDiscovery formation Pertinence. 
   
-![Statistiques de la formation de suivi de pertinence](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
+![Statistiques de formation de suivi de pertinence.](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
 Cet affichage présente les exemples suivants :
   

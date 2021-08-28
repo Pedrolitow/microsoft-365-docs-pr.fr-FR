@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données CellTrust SL2 pour importer et archiver des données de communications mobiles.
-ms.openlocfilehash: 802d5e08354d5fbdc179c01a7c72145a5d0c7ac3f12907b06632cd5db758ee0f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65f887e067b84414fe09f2ff39b3f1c0d7012f5b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861082"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573318"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archiver les données de CellTrust SL2 vers Microsoft 365
 
@@ -29,7 +29,7 @@ Une fois les données importées dans les boîtes aux lettres des utilisateurs d
 
 La plateforme SL2 de CellTrust capture les données de communication à partir de plusieurs sources. Les sources de données SL2 sont de personne à personne (P2P) ou d’application à personne (A2P). Le processus décrit dans cet article concerne uniquement les sources de données P2P. Pour toutes les sources de données P2P, au moins une partie de la collaboration est un utilisateur SL2 abonné au service SL2. La vue d’ensemble suivante explique le processus d’utilisation du connecteur de données CellTrust SL2 dans Microsoft 365.
 
-![Flux de travail d’archivage pour le service CellTrust SL2](../media/CellTrustSL2ConnectorWorkflow.png)
+![Flux de travail d’archivage pour le service CellTrust SL2.](../media/CellTrustSL2ConnectorWorkflow.png)
 
 1. Les utilisateurs SL2 envoient et reçoivent des données vers et depuis les services SL2 Microsoft Azure.
 
@@ -45,17 +45,17 @@ La plateforme SL2 de CellTrust capture les données de communication à partir d
 
 - Obtenez les informations d’identification pour accéder au compte d’administrateur de votre domaine SL2.
 
-- L’utilisateur qui crée le connecteur de données CellTrust SL2 à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- L’utilisateur qui crée le connecteur de données CellTrust SL2 à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 ## <a name="step-1-create-a-celltrust-sl2-connector"></a>Étape 1 : Créer un connecteur CellTrust SL2
 
-La première étape consiste à créer un connecteur de données dans le Centre de conformité Microsoft 365.
+La première étape consiste à créer un connecteur de données dans le Centre de conformité Microsoft 365.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** on the left navigation pane.
 
 2. Sous **l’onglet** Vue d’ensemble, cliquez sur **Filtrer,** sélectionnez **Par CellTrust,** puis appliquez le filtre.
 
-   ![Configurer le filtre pour afficher les connecteurs CellTrust](../media/DataConnectorsFilter.png)
+   ![Configurez le filtre pour afficher les connecteurs CellTrust.](../media/DataConnectorsFilter.png)
 
 3. Cliquez **sur CellTrust SL2 (aperçu).**
 
@@ -81,13 +81,13 @@ L’étape suivante consiste à se connecter à un compte d’administrateur pou
 
 3. Activez les unités métier que vous souhaitez archiver. La sélection du domaine ne sélectionne pas automatiquement les O. Vous devez activer chaque ouo séparément pour l’archiver.
 
-   ![Activer les OUS pour l’archivage](../media/EnableCellTrustOUs.png)
+   ![Activez les OUS pour les archiver.](../media/EnableCellTrustOUs.png)
 
-4. Lorsque vous avez terminé vos sélections, fermez la fenêtre du navigateur et revenir à la page de l’Assistant dans Centre de conformité Microsoft 365. Après quelques secondes, l’Assistant passe automatiquement à l’étape suivante de mappage des utilisateurs.
+4. Lorsque vous avez terminé vos sélections, fermez la fenêtre du navigateur et revenir à la page de l’Assistant dans Centre de conformité Microsoft 365. Après quelques secondes, l’Assistant passe automatiquement à l’étape suivante de mappage des utilisateurs.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : Masons les utilisateurs et terminez la configuration du connecteur
 
-La dernière étape consiste à ma cartographier les utilisateurs et à terminer la configuration du connecteur dans le Centre de conformité Microsoft 365.
+La dernière étape consiste à ma cartographier les utilisateurs et à terminer la configuration du connecteur dans le Centre de conformité Microsoft 365.
 
 1. Dans la page **Mappage des** utilisateurs, sélectionnez Activer le mappage automatique des utilisateurs si l’adresse de messagerie des utilisateurs est la même dans SL2 et Microsoft 365.  Dans le cas contraire, vous devez manuellement charger les adresses de messagerie des utilisateurs en chargeant un fichier CSV qui m’indique l’adresse SL2 des utilisateurs Microsoft 365'adresse.
 
@@ -99,7 +99,7 @@ La dernière étape consiste à ma cartographier les utilisateurs et à terminer
 
 Consultez la page Du support client [CellTrust](https://www.celltrust.com/contact-us/#support) pour plus d’informations sur le contact de CellTrust pour obtenir de l’aide sur la configuration d’un connecteur de données CellTrust SL2.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - Un administrateur de domaine peut configurer un connecteur pour le domaine ou n’importe quelle OUS de ce domaine. Si vous utilisez le compte Administrateur d’ou, vous ne pouvez configurer un connecteur que pour cette ou cette même ou plusieurs.
 

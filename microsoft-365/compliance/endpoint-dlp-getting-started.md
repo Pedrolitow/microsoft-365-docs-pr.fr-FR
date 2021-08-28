@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
-ms.openlocfilehash: 85880fd9f64df1bd3807bc36d12c4bd7a5c2e4754ad1ac07ffe3e68f7f07a99d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 53054e32803bb3722674c043a84eb7f410a77d06
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865953"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573630"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
@@ -127,7 +127,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
 2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**.
 
    > [!div class="mx-imgBorder"]
-   > ![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   > ![activer la gestion des appareils.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
    > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
@@ -139,7 +139,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
 5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement**, puis **Télécharger le package**.
 
    > [!div class="mx-imgBorder"]
-   > ![méthode de déploiement](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   > ![méthode de déploiement.](../media/endpoint-dlp-getting-started-3-deployment-method.png)
 
 6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
 
@@ -165,7 +165,7 @@ Dans ce scénario, Microsoft Defender pour point de terminaison est déjà dépl
 3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. Vous devriez voir apparaître la liste des appareils qui signalent déjà à Microsoft Defender pour point de terminaison.
 
    > [!div class="mx-imgBorder"]
-   > ![Gestion des appareils](../media/endpoint-dlp-getting-started-2-device-management.png)
+   > ![gestion des appareils.](../media/endpoint-dlp-getting-started-2-device-management.png)
 
 4. Sélectionnez **Intégration** si vous avez besoin d’intégrer d’autres appareils.
 
@@ -196,7 +196,7 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
 2. Reportez-vous aux procédures décrites dans [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) pour accéder aux données de vos appareils de point de terminaison et les filtrer.
 
    > [!div class="mx-imgBorder"]
-   > ![filtre de l’Explorateur d’activités pour les appareils de point de terminaison](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![filtre de l’Explorateur d’activités pour les appareils de point de terminaison.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

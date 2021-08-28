@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Vue d’ensemble de la planification, du déploiement et du fonctionnement continu de vos Microsoft 365 client.
-ms.openlocfilehash: 18a4f4f39b2c3fd530aecb9202032a2b571a9c7f4cf38fec489dfa88a81a2a98
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883222"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573378"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Gestion des locataires pour Microsoft 365 entreprise
 
@@ -47,7 +47,7 @@ Votre client Microsoft 365 inclut également un client Azure Active Directory (A
 
 Voici un exemple :
 
-![Exemple de Microsoft 365 client avec son client Azure AD](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Exemple Microsoft 365 client avec son client Azure AD.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *La gestion des* locataires est la planification, le déploiement et le fonctionnement continu de vos Microsoft 365 client.
 
@@ -77,7 +77,7 @@ Voici les éléments :
 
 Voici un exemple de client Microsoft 365 avec tous ces éléments en place.
 
-![Exemple de Microsoft 365 client](../media/tenant-management-overview/tenant-management-tenant-config.png)
+![Exemple de Microsoft 365 client.](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
 Dans cette illustration, le client Microsoft 365 inclut :
 
@@ -123,7 +123,7 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 
 |Fonctionnalité|Description|Licence|
 |---|---|---|
-|Mettre à jour vers Windows 10|Migrez vos appareils qui exécutent Windows 7 ou Windows 8.1 vers Windows 10 Entreprise.|Windows 10 Entreprise licences incluses avec Microsoft 365 E3 ou E5|
+|Mettre à jour vers Windows 10|Migrez vos appareils qui exécutent Windows 7 ou Windows 8.1 vers Windows 10 Entreprise.|Windows 10 Entreprise licences incluses avec Microsoft 365 E3 ou E5|
 |Migrer vers Applications Microsoft 365 pour les grandes entreprises|Migrez Office applications clientes telles que Word et PowerPoint vers les versions installées à partir du cloud qui sont mises à jour avec de nouvelles fonctionnalités.|Microsoft 365 E3 ou E5|
 |Migrer les données et les serveurs locaux vers Microsoft 365|Migrez Exchange boîtes aux lettres, SharePoint sites et Skype Entreprise Online vers Microsoft 365 services cloud.|Microsoft 365 E3 ou E5|
 ||||
@@ -136,7 +136,7 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 |Mobility + Security de Base|Sécurisation et gestion des appareils mobiles de vos utilisateurs tels que les iPhone, iPad, Android et Windows avec ce service intégré.|Microsoft 365 E3 ou E5|
 ||||
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Utilisez ces étapes pour configurer et gérer vos Microsoft 365 client.
 
@@ -146,7 +146,7 @@ Utilisez ces étapes pour configurer et gérer vos Microsoft 365 client.
 4. [Migrer vos serveurs et données Office locaux](tenant-management-migration.md)
 5. [Déployer la gestion des appareils et des applications](tenant-management-device-management.md)
 
-[![Étapes de déploiement et de gestion d’un Microsoft 365 client](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
+[![Étapes de déploiement et de gestion d’Microsoft 365 client.](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
 Chaque étape décrit les options de déploiement, résume les résultats et les tâches de maintenance en cours.
 

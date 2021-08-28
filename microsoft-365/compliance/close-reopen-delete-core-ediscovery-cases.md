@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment gérer les cas eDiscovery principaux. Cela inclut la fermeture d’un cas, la réouverture d’un cas fermé et la suppression d’un cas.
-ms.openlocfilehash: 407956540e8881f34244e920fe9e49e6fe48ca7f417d084dcbd1845a2c53c4f6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 67961d2404f54ca3fbb33dabc71508ba65bfa205
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906138"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573294"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Fermer, rouvrir et supprimer un cas core eDiscovery
 
@@ -36,17 +36,17 @@ Lorsque le dossier juridique ou l’examen pris en charge par un cas eDiscovery 
 
 - La fermeture d’un cas désactive uniquement les conservations associées à ce cas. Si d’autres conservations sont placées sur un emplacement de contenu (par exemple, une conservation pour litige, une stratégie de rétention ou une conservation à partir d’un autre cas core eDiscovery), ces conservations sont conservées.
 
-- Le cas est toujours répertorié sur la page Core eDiscovery dans la Centre de conformité Microsoft 365. Les détails, les conservations, les recherches et les membres d’un cas fermé sont conservés.
+- Le cas est toujours répertorié dans la page Core eDiscovery de la Centre de conformité Microsoft 365. Les détails, les conservations, les recherches et les membres d’un cas fermé sont conservés.
 
 - Vous pouvez modifier un cas après sa fermeture. Par exemple, vous pouvez ajouter ou supprimer des membres, créer des recherches et exporter des résultats de recherche. La principale différence entre les cas actifs et fermés est que les cas de découverte électronique sont désactivés lorsqu’un cas est fermé.
 
 Pour fermer un cas :
   
-1. Dans la Centre de conformité Microsoft 365, cliquez sur **eDiscovery** Core pour afficher la liste des cas  >   eDiscovery principaux dans votre organisation.
+1. Dans la Centre de conformité Microsoft 365, cliquez sur **eDiscovery** Core pour afficher la liste des cas  >   eDiscovery principaux dans votre organisation.
 
 2. Cliquez sur le nom du cas que vous souhaitez fermer.
 
-   ![Fermer le cas sur la page d’accueil du cas](../media/eDiscoveryCaseHomePage.png)
+   ![Fermer le cas sur la page d’accueil du cas.](../media/eDiscoveryCaseHomePage.png)
 
 3. Dans la page d’accueil, sous **État,** cliquez **sur Fermer le cas.**
 
@@ -64,11 +64,11 @@ Pour fermer un cas :
 
 Lorsque vous rouvrez un cas, les cas de découverte électronique mis en place lors de la fermeture ne sont pas automatiquement rétablis. Une fois le cas rouvert, vous devez vous rendre sur la page **Dentes** et activer les précédentes. Pour activer une conservation, sélectionnez-la pour afficher la page de menu volant, puis réglez la bascule **État** sur **Activer**.
   
-1. Dans la Centre de conformité Microsoft 365, cliquez sur **eDiscovery** Core pour afficher la liste des cas  >   eDiscovery principaux dans votre organisation.
+1. Dans la Centre de conformité Microsoft 365, cliquez sur **eDiscovery** Core pour afficher la liste des cas  >   eDiscovery principaux dans votre organisation.
 
 2. Cliquez sur le nom du cas que vous souhaitez rouvrir.
 
-   ![Rouvrir un cas fermé](../media/eDiscoveryCaseHomePageReopen.png)
+   ![Rouvrez un cas fermé.](../media/eDiscoveryCaseHomePageReopen.png)
 
 3. Dans la page d’accueil, sous **État,** cliquez **sur Rouvrir le cas.**
 
@@ -86,7 +86,7 @@ Lorsque vous rouvrez un cas, les cas de découverte électronique mis en place l
   
 ## <a name="delete-a-case"></a>Supprimer un cas
 
-Vous pouvez également supprimer des cas eDiscovery principaux et fermés. Lorsque vous supprimez un cas, toutes les recherches et exportations dans le cas sont supprimées et le cas est supprimé de la liste des cas sur la page **eDiscovery** principale dans la Centre de conformité Microsoft 365. Vous ne pouvez pas rouvrir un cas supprimé.
+Vous pouvez également supprimer des cas eDiscovery principaux et fermés. Lorsque vous supprimez un cas, toutes les recherches et exportations dans le cas sont supprimées et le cas est supprimé de la liste des cas sur la page **eDiscovery** principale dans la Centre de conformité Microsoft 365. Vous ne pouvez pas rouvrir un cas supprimé.
 
 Avant de supprimer un cas (qu’il soit actif  ou fermé), vous devez d’abord supprimer toutes les actualités eDiscovery associées au cas. Cela inclut la suppression des maintiens avec l’état **« Off**». 
 
@@ -98,16 +98,16 @@ Pour supprimer une attente eDiscovery :
 
 3. Dans la page volante, cliquez sur **Supprimer.**
 
-      ![Supprimer une attente eDiscovery](../media/DeleteeDiscoveryHold.png)
+      ![Supprimer une attente eDiscovery.](../media/DeleteeDiscoveryHold.png)
 
 Pour supprimer un cas :
 
-1. Dans la Centre de conformité Microsoft 365, cliquez sur **eDiscovery** Core pour afficher la liste des cas  >   eDiscovery principaux dans votre organisation.
+1. Dans la Centre de conformité Microsoft 365, cliquez sur **eDiscovery** Core pour afficher la liste des cas  >   eDiscovery principaux dans votre organisation.
 
 2. Cliquez sur le nom du cas à supprimer.
 
 3. Dans la page d’accueil du cas, sous **État,** cliquez **sur Supprimer le cas.**
 
-      ![Supprimer un cas](../media/eDiscoveryCaseHomePageDelete.png)
+      ![Supprimez un cas.](../media/eDiscoveryCaseHomePageDelete.png)
 
 Si le cas que vous essayez de supprimer contient toujours des conserves eDiscovery, vous recevrez un message d’erreur. Vous devez supprimer toutes les réserves associées au cas, puis essayer à nouveau de supprimer le cas.

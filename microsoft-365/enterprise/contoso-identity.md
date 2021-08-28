@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: 9138e0743e5194e98213ab2d2c2bfe457500b0de
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b8943f0af678ed3d86d1428fe44cd6ab67554470
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353791"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574050"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -27,11 +27,11 @@ Microsoft fournit l’identité en tant que service (IDaaS) dans ses offres clou
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Forêt des services de domaine Active Directory contoso
 
-Contoso utilise une seule forêt AD DS (Active Directory Domain Services) pour contoso com avec sept sous-domaines, un pour chaque région \. du monde. Le siège social, les centres régionaux et les succursales disposent de contrôleurs de domaine pour l’authentification locale et l’autorisation.
+Contoso utilise une forêt AD DS (Active Directory Domain Services) unique pour contoso com avec sept sous-domaines, un pour chaque région \. du monde. Le siège social, les centres régionaux et les succursales disposent de contrôleurs de domaine pour l’authentification locale et l’autorisation.
 
 Voici la forêt Contoso avec des domaines régionaux pour les différentes régions du monde qui contiennent des centres régionaux.
 
-![Forêt et domaines de Contoso dans le monde](../media/contoso-identity/contoso-identity-fig1.png)
+![La forêt et les domaines de Contoso dans le monde entier.](../media/contoso-identity/contoso-identity-fig1.png)
  
 Contoso a décidé d’utiliser les comptes et les groupes de la forêt contoso com pour l’authentification et l’autorisation pour ses charges Microsoft 365 charges de travail \. et services.
 
@@ -44,7 +44,7 @@ Contoso autorise les éléments suivants :
 
 Voici le DMZ Contoso contenant un site web public, un extranet partenaire et un ensemble de serveurs AD FS (Active Directory Federation Services). Le DMZ est connecté à Internet qui contient des clients, des partenaires et des services Internet.
 
-![Prise en charge de Contoso pour l’authentification fédérée pour les clients et les partenaires](../media/contoso-identity/contoso-identity-fig2.png)
+![Prise en charge de Contoso pour l’authentification fédérée pour les clients et les partenaires.](../media/contoso-identity/contoso-identity-fig2.png)
  
 Les serveurs AD FS dans la DMZ facilitent l’authentification des informations d’identification client par leurs fournisseurs d’identité pour accéder au site web public et aux informations d’identification des partenaires pour l’accès à l’extranet du partenaire.
 
@@ -60,7 +60,7 @@ Pour la synchronisation d’annuaires, Contoso a déployé l’outil Connecter A
 
 Voici le serveur exécutant Azure AD Connecter la forêt Contoso AD DS pour les modifications, puis la synchronisation de ces modifications avec le client Azure AD.
 
-![Infrastructure de synchronisation d’annuaires PHS Contoso](../media/contoso-identity/contoso-identity-fig4.png)
+![Infrastructure de synchronisation d’annuaires PHS Contoso.](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Stratégies d’accès conditionnel basé sur l’identité et l’appareil
 
@@ -70,9 +70,9 @@ Contoso a créé un jeu d’Azure AD et Intune [stratégies d’accès condition
 - *Les* protections sensibles s’appliquent aux cadres supérieurs et aux cadres.
 - *Les protections hautement réglementées* s’appliquent à des utilisateurs spécifiques des services financiers, juridiques et de recherche qui ont accès aux données hautement réglementées.
 
-Voici l’ensemble des stratégies d’accès conditionnel aux appareils et aux identités Contoso.
+Voici l’ensemble des stratégies d’accès conditionnel aux identités et appareils Contoso.
 
-![Stratégies d’accès conditionnel basées sur l’identité et l’appareil de Contoso](../media/contoso-identity/contoso-identity-fig5.png)
+![Stratégies d’accès conditionnel aux identités et appareils de Contoso.](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>Étape suivante
 

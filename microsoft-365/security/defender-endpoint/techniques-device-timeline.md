@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e5222214d4a5f98b140bbfc1f094de4733ceebe88ce298b434de0ed01c057dc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ab81054cf2c2f4d6394730651a891c7d47b1794
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817461"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573498"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Techniques dans la chronologie de l’appareil
 
@@ -43,7 +43,7 @@ Cette fonctionnalité simplifie l’examen en aidant les analystes à comprendre
 
 Pour la prévisualisation publique, les techniques sont disponibles par défaut et affichées avec les événements lorsque la chronologie d’un appareil est affichée. 
 
-![Techniques dans la capture d’écran de la chronologie de l’appareil](images/device-timeline-2.png)
+![Techniques dans la capture d’écran de la chronologie de l’appareil.](images/device-timeline-2.png)
 
 Les techniques sont mises en évidence en gras et apparaissent avec une icône bleue à gauche. L’ID MITRE ATT&et le nom de technique CK correspondants apparaissent également en tant que balises sous Informations supplémentaires. 
 
@@ -51,24 +51,24 @@ Les options de recherche et d’exportation sont également disponibles pour les
 
 ## <a name="investigate-using-the-side-pane"></a>Examiner l’utilisation du volet latéral
 
-Sélectionnez une technique pour ouvrir son volet latéral correspondant. Vous pouvez y voir des informations et des informations supplémentaires, telles que des techniques, des tactiques et des descriptions att&CK associées. 
+Sélectionnez une technique pour ouvrir son volet latéral correspondant. Vous y verrez des informations et des informations supplémentaires, telles que des techniques, des tactiques et des descriptions att&CK associées. 
 
 Sélectionnez la *technique d’attaque* spécifique pour ouvrir la page de technique att&CK associée dans laquelle vous trouverez plus d’informations à ce sujet.
 
 Vous pouvez copier les détails d’une entité lorsque vous voyez une icône bleue sur la droite. Par exemple, pour copier le sha1 d’un fichier associé, sélectionnez l’icône de page bleue.
 
-![Copier les détails de l’entité](images/techniques-side-pane-clickable.png)
+![Copiez les détails de l’entité.](images/techniques-side-pane-clickable.png)
 
 Vous pouvez faire de même pour les lignes de commande.
 
-![Copier la ligne de commande](images/techniques-side-pane-command.png)
+![Copier la ligne de commande.](images/techniques-side-pane-command.png)
 
 
 ## <a name="investigate-related-events"></a>Examiner les événements connexes
 
 Pour utiliser la [recherche avancée pour](advanced-hunting-overview.md) rechercher des événements liés à la technique sélectionnée, sélectionnez Rechercher les **événements connexes.** Cela conduit à la page de recherche avancée avec une requête pour rechercher les événements liés à la technique.
 
-![Recherche des événements connexes](images/techniques-hunt-for-related-events.png)
+![Recherchez les événements connexes.](images/techniques-hunt-for-related-events.png)
 
 >[!NOTE]
 >L’interrogation à  l’aide du bouton Recherche d’événements connexes à partir d’un volet latéral Technique affiche tous les événements liés à la technique identifiée, mais n’inclut pas la technique elle-même dans les résultats de la requête.
@@ -83,7 +83,7 @@ Vous pouvez personnaliser les colonnes à exposer. Vous pouvez également filtre
 ### <a name="choose-columns-to-expose"></a>Choisir les colonnes à exposer
 Vous pouvez choisir les colonnes à exposer dans la chronologie en sélectionnant le bouton Choisir **les colonnes.**
 
-![Personnaliser les colonnes](images/filter-customize-columns.png)
+![Personnaliser les colonnes.](images/filter-customize-columns.png)
 
 À partir de là, vous pouvez sélectionner l’ensemble d’informations à inclure.
 
@@ -91,7 +91,7 @@ Vous pouvez choisir les colonnes à exposer dans la chronologie en sélectionnan
 
 Pour afficher uniquement les événements ou les techniques, sélectionnez **Filtres** dans la chronologie de l’appareil et choisissez votre type de données préféré à afficher.
 
-![Capture d’écran filtres](images/device-timeline-filters.png)
+![Capture d’écran des filtres.](images/device-timeline-filters.png)
 
 
 

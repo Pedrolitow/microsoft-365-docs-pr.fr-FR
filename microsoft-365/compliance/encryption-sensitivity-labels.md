@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21864ec94b4b7cd9ef19d23bb5c141d6458d63544361c52b023b6eaeafee6444
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7853a7b0439ee42cbe4b653f0572b055b19c3a2b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886196"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573642"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -57,11 +57,11 @@ Lorsque vous utilisez cette solution de chiffrement, la fonctionnalité **super 
 
 1. Suivez les instructions générales pour [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) et assurez-vous de sélectionner **Fichiers et e-mails** pour l’étendue de l’étiquette : 
     
-    ![Options d’étendue d’étiquette de confidentialité pour les fichiers et les e-mails](../media/filesandemails-scope-options-sensitivity-label.png)
+    ![Options d’étendue des étiquettes de confidentialité pour les fichiers et les e-mails.](../media/filesandemails-scope-options-sensitivity-label.png)
 
 2. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, assurez-vous de sélectionner **Chiffrer les fichiers et les e-mails**.
     
-    ![Options de protection d’étiquette de confidentialité pour les fichiers et les e-mails](../media/protection-options-sensitivity-label.png)
+    ![Options de protection d’étiquette de confidentialité pour les fichiers et les e-mails.](../media/protection-options-sensitivity-label.png)
 
 4.  Sur la page **Chiffrement** de l’Assistant, sélectionnez l’une des options suivantes :
     
@@ -71,7 +71,7 @@ Lorsque vous utilisez cette solution de chiffrement, la fonctionnalité **super 
     
     - **Configurer les paramètres de chiffrement** : active le chiffrement et rend les paramètres de chiffrement visibles :
         
-        ![Options de chiffrement d’une étiquette de confidentialité](../media/encrytion-options-sensitivity-label.png)
+        ![Options de chiffrement d’une étiquette de confidentialité.](../media/encrytion-options-sensitivity-label.png)
         
         Vous trouverez des instructions pour ces paramètres dans la section [Configurer les paramètres de chiffrement](#configure-encryption-settings).
 
@@ -125,7 +125,7 @@ Par ailleurs, si vous avez une étiquette de confidentialité appelée **Contrat
 
 Choisissez d’attribuer des autorisations maintenant ou de permettre aux utilisateurs d’affecter des autorisations :
 
-![Option pour ajouter des autorisations définies par l’utilisateur ou l’administrateur](../media/sensitivity-label-user-or-admin-defined-permissions.png)
+![Option pour ajouter des autorisations définies par l’utilisateur ou l’administrateur.](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 ## <a name="assign-permissions-now"></a>Attribuer des autorisations maintenant
 
@@ -137,7 +137,7 @@ Utilisez les options suivantes pour contrôler les utilisateurs autorisés à ac
 
 Paramètres de contrôle d’accès pour du contenu chiffré :
 
-![Paramètres pour les autorisations définies par l’administrateur](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![Paramètres pour les autorisations définies par l’administrateur.](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licence d’utilisation de Rights Management pour l’accès en mode hors connexion
 
@@ -159,7 +159,7 @@ Vous pouvez accorder des autorisations à des personnes spécifiques, de manièr
 
 Attribution d'autorisations :
 
-![Options d’attribution des autorisations aux utilisateurs](../media/Sensitivity-Assign-permissions-settings.png)
+![Options d’attribution des autorisations aux utilisateurs.](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>Ajouter des utilisateurs ou des groupes
 
@@ -202,13 +202,13 @@ Lorsque vous choisissez les autorisations à attribuer à ces utilisateurs ou ce
 
 Pour obtenir plus d'informations sur la sélection des autorisations pertinentes, consultez les [Droits d'utilisation et descriptions](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Options de choix d’autorisations prédéfinies ou personnalisées](../media/Sensitivity-Choose-permissions-settings.png)
+![Options de choix d’autorisations prédéfinies ou personnalisées.](../media/Sensitivity-Choose-permissions-settings.png)
 
 Notez qu’une même étiquette peut accorder différentes autorisations à différents utilisateurs. Par exemple, une étiquette unique peut affecter à certains utilisateurs des droits de réviseur et à un autre utilisateur des droits de co-auteur, comme illustré sur la capture d'écran suivante.
 
 Pour ce faire, ajoutez des utilisateurs ou groupes, attribuez-leur des autorisations et enregistrez ces paramètres. Répétez ensuite ces étapes : ajoutez des utilisateurs, attribuez-leur des autorisations et enregistrez les paramètres à chaque fois. Vous pouvez répéter cette configuration autant de fois que nécessaire, afin de définir différentes autorisations pour différents utilisateurs.
 
-![Différents utilisateurs avec différentes autorisations](../media/Sensitivity-Multiple-users-permissions.png)
+![Différents utilisateurs avec différentes autorisations.](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>L’émetteur de Rights Management (celui qui applique l’étiquette de sensibilité) bénéficie toujours d’un contrôle total.
 
@@ -263,13 +263,13 @@ Une étiquette de niveau permettant aux utilisateurs d’attribuer des autorisat
 
 Configuration d'autorisations attribuées par utilisateur :
 
-![Paramètres de chiffrement pour les autorisations définies par l’utilisateur](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![Paramètres de chiffrement pour les autorisations définies par l’utilisateur.](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Restrictions Outlook
 
 Dans Outlook, quand un utilisateur applique une étiquette de confidentialité qui lui permet d’attribuer des autorisations à un message, vous pouvez choisir l’**option Ne pas transférer** ou **Chiffrer uniquement**. L’utilisateur voit le nom et la description de l’étiquette dans la partie supérieure du message, ce qui indique que le contenu est protégé. Contrairement à Word, PowerPoint et Excel (voir la [section suivante](#word-powerpoint-and-excel-permissions)), les utilisateurs ne sont pas invités à sélectionner des autorisations spécifiques.
 
-![Étiquette de niveau de confidentialité appliquée à un message dans Outlook](../media/sensitivity-label-outlook-protection-applied.png)
+![Étiquette de niveau de confidentialité appliquée à un message dans Outlook.](../media/sensitivity-label-outlook-protection-applied.png)
 
 Lorsque l’une de ces options est appliquée à un e-mail, celui-ci est chiffré et les destinataires doivent être authentifiés. Les destinataires ont automatiquement des droits d’utilisation limités :
 
@@ -293,7 +293,7 @@ Par exemple, avec un client d’étiquetage unifié Azure Information Protection
 - Sélectionner les utilisateurs, les groupes ou les organisations. Cela peut inclure des personnes à l’intérieur ou à l’extérieur de votre organisation.
 - Sélectionnez une date d’expiration, après laquelle les utilisateurs sélectionnés ne pourront pas accéder au contenu. Pour plus d’informations, voir la section ci-dessus [licence d'utilisation de la gestion des droits pour l’accès hors connexion](#rights-management-use-license-for-offline-access).
 
-![Options de protection pour l’utilisateur avec les autorisations personnalisées](../media/sensitivity-aip-custom-permissions-dialog.png)
+![Options de protection pour l’utilisateur avec les autorisations personnalisées.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 Pour l’étiquetage intégré, les utilisateurs consultent la même boîte de dialogue s’ils sélectionnent ce qui suit :
 
@@ -305,7 +305,7 @@ Pour l’étiquetage intégré, les utilisateurs consultent la même boîte de d
 
 Pour chaque exemple décrit ci-dessous, effectuez la configuration à partir de la page **Chiffrement** de l’Assistant lorsque **Configurer les paramètres de chiffrement** est sélectionné :
 
-![Appliquez l'option de chiffrement dans l’Assistant d'étiquette de confidentialité](../media/apply-encryption-option.png)
+![Appliquez l'option de chiffrement dans l’Assistant d'étiquette de confidentialité.](../media/apply-encryption-option.png)
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>Exemple 1 : étiquette appliquant Ne pas transférer pour envoyer un courrier électronique chiffré vers un compte Gmail
 

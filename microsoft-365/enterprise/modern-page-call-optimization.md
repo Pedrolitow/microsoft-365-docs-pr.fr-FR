@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les pages de sites de publication modernes et classiques dans SharePoint Online en limitant le nombre d’appels aux points de terminaison de service SharePoint Online.
-ms.openlocfilehash: f06ec4027737f03d44c6a95a7faa74ff48d94548
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 7c3872e0860b089f52d9597a06bced71ea6eb523
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394671"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573594"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimiser les appels de page dans les pages de sites de publication modernes et classiques SharePoint Online
 
@@ -54,7 +54,7 @@ Les résultats possibles sont les suivants :
 
 Si le résultat **Requêtes à SharePoint** apparaît dans la section **Attention requise**, vous pouvez cliquer sur le résultat pour obtenir des détails, notamment le nombre total d’appels sur la page et une liste d’URL.
 
-![Résultats de requêtes à SharePoint](../media/modern-portal-optimization/pagediag-requests.png)
+![Demandes d’SharePoint résultats.](../media/modern-portal-optimization/pagediag-requests.png)
 
 ## <a name="remediate-performance-issues-related-to-too-many-calls-on-a-page"></a>Résoudre les problèmes de performances liés à un trop grand nombre d’appels sur une page
 
@@ -66,7 +66,7 @@ Si une page contient trop d’appels, vous pouvez utiliser la liste des URL dans
 
 Avant d’apporter des révisions de page pour résoudre les problèmes de performances, notez le temps de chargement des pages dans les résultats de l’analyse. Exécutez à nouveau l’outil après votre révision pour déterminer si le nouveau résultat est inclus dans la norme de référence et vérifier le nouveau temps de chargement des pages pour voir s’il y a eu une amélioration.
 
-![Résultats du temps de chargement des pages](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Résultats du temps de chargement de page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Le temps de chargement des pages peut varier en fonction de nombreux facteurs tels que la charge réseau, l’heure de la journée et d’autres conditions transitoires. Vous devez tester le temps de chargement des pages plusieurs fois avant et après avoir apporté des modifications pour vous aider à faire la moyenne des résultats.

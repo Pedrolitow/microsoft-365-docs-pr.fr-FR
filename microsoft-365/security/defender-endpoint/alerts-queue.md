@@ -1,6 +1,6 @@
 ---
 title: Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
-description: Découvrez le fonctionnement des files d’attente d’alertes Microsoft Defender pour les points de terminaison, ainsi que le tri et le filtrage des listes d’alertes.
+description: Découvrez comment fonctionnent les files d’attente des alertes Microsoft Defender pour les points de terminaison, et comment trier et filtrer des listes d’alertes.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: a9b483230cbd2406d11709844a62c150bce48731
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 42d8662ade476e23e3a7e8d8af31bf782f6ccf6b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508105"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573990"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 
@@ -36,7 +36,7 @@ ms.locfileid: "58508105"
 La **file d’attente Alertes** affiche la liste des alertes qui ont été signalées à partir d’appareils de votre réseau. Par défaut, la file d’attente affiche les alertes visibles au cours des 30 derniers jours dans un affichage groupé. Les alertes les plus récentes sont affichés en haut de la liste pour vous aider à voir les alertes les plus récentes en premier.
 
 > [!NOTE]
-> La file d’attente des alertes est considérablement réduite grâce à des examens et des corrections automatisés, ce qui permet aux experts en matière d’opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Lorsqu’une alerte contient une entité prise en charge pour une investigation automatisée (par exemple, un fichier) sur un appareil qui dispose d’un système d’exploitation pris en charge, une investigation et une correction automatisées peuvent commencer. Pour plus d’informations sur les enquêtes automatisées, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
+> La file d’attente des alertes est considérablement réduite grâce à des examens et des corrections automatisés, ce qui permet aux experts en matière d’opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Lorsqu’une alerte contient une entité prise en charge pour l’examen automatisé (par exemple, un fichier) sur un appareil qui dispose d’un système d’exploitation pris en charge, une investigation et une correction automatisées peuvent démarrer. Pour plus d’informations sur les enquêtes automatisées, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
 
 Vous pouvez choisir parmi plusieurs options pour personnaliser l’affichage de file d’attente des alertes.
 
@@ -48,7 +48,7 @@ Dans la barre de navigation supérieure, vous pouvez :
 - Naviguer entre les pages
 - Appliquer des filtres
 
-![Image de la file d’attente des alertes](images/alerts-queue-list.png)
+![Image de la file d’attente des alertes.](images/alerts-queue-list.png)
 
 ## <a name="sort-filter-and-group-the-alerts-queue"></a>Trier, filtrer et grouper la file d’attente des alertes
 
@@ -61,11 +61,11 @@ Gravité de l’alerte|Description
 Élevé <br> (Rouge)|Alertes couramment associées à des menaces avancées persistantes (APT). Ces alertes indiquent un risque élevé en raison de la gravité des dommages qu’elles peuvent causer sur les appareils. Voici quelques exemples : activités des outils de vol d’informations d’identification, activités de ransomware non associées à un groupe, falsification des capteurs de sécurité ou toute activité malveillante indiquant un adversaire humain.
 Moyen <br> (Orange)|Alertes provenant protection évolutive des points de terminaison comportements post-violation susceptibles de faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
 Faible <br> (Jaune)|Alertes sur les menaces associées à des programmes malveillants répandus. Par exemple, les outils de piratage, les outils de piratage non malveillants, tels que l’exécution de commandes d’exploration, l’effacement des journaux, etc., qui n’indiquent souvent pas de menace avancée ciblant l’organisation. Elle peut également être le fait d’un outil de sécurité isolé testé par un utilisateur de votre organisation.
-Informatif <br> (Gris)|Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent sensibiliser l’organisation à des problèmes de sécurité potentiels.
+Informatif <br> (Gris)|Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent sensibiliser l’organisation à d’éventuels problèmes de sécurité.
 
 #### <a name="understanding-alert-severity"></a>Comprendre la gravité des alertes
 
-Antivirus Microsoft Defender (Microsoft Defender AV) et Les gravités des alertes Defender pour les points de terminaison sont différentes, car elles représentent des étendues différentes.
+Antivirus Microsoft Defender (Microsoft Defender AV) et les gravités des alertes defender pour point de terminaison sont différentes, car elles représentent des étendues différentes.
 
 La gravité des menaces de l’Antivirus Microsoft Defender représente la gravité absolue de la menace détectée (programme malveillant) et est attribuée en fonction du risque potentiel pour l’appareil individuel, s’il est infecté.
 

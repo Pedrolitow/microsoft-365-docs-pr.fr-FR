@@ -18,15 +18,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cet article explique comment créer et gérer Advanced eDiscovery cas. La première étape consiste à créer un cas et à commencer à utiliser Advanced eDiscovery fonctionnalités.
-ms.openlocfilehash: 31b19f48ba6deabe3d4150544ce16c3669d18efe1607652d8224a2ebb1f81bb2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Cet article explique comment créer et gérer Advanced eDiscovery cas. La première étape consiste à créer un cas et à commencer à utiliser Advanced eDiscovery fonctionnalités et fonctionnalités.
+ms.openlocfilehash: 69d2f22a3792f2217ea8ef58ae9771dd4a10f32d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886458"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573246"
 ---
-# <a name="create-and-manage-an-advanced-ediscovery-case"></a>Créer et gérer un cas Advanced eDiscovery de gestion
+# <a name="create-and-manage-an-advanced-ediscovery-case"></a>Créer et gérer un cas Advanced eDiscovery dossier
 
 Après avoir Advanced eDiscovery et attribué des autorisations aux [responsables eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) de votre organisation qui gèreront les cas, l’étape suivante consiste à créer et gérer un cas.
 
@@ -34,15 +34,15 @@ Cet article fournit également une vue d’ensemble de l’utilisation des cas p
 
 ## <a name="create-a-case"></a>Créer un cas
 
-Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L’utilisateur qui crée le cas est automatiquement ajouté en tant que membre. Les membres du cas peuvent accéder au cas dans le Centre de conformité Microsoft 365 et effectuer Advanced eDiscovery tâches.
+Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L’utilisateur qui crée le cas est automatiquement ajouté en tant que membre. Les membres du cas peuvent accéder au cas dans le Centre de conformité Microsoft 365 et effectuer Advanced eDiscovery tâches.
 
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials for user account that has been assigned eDiscovery permissions. Les membres du groupe de rôles Gestion de l’organisation peuvent également créer Advanced eDiscovery cas.
 
 2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher**, puis cliquez sur **eDiscovery >avancée**.
 
-3. Dans la page **Advanced eDiscovery,** cliquez sur **l’onglet Cas,** puis cliquez **sur Créer un cas.**
+3. Dans la page **Advanced eDiscovery,** cliquez sur l’onglet **Cas,** puis cliquez **sur Créer un cas.**
 
-4. Dans la page de vol du cas **Nouvelle** découverte électronique, nommez le cas (obligatoire), puis tapez un numéro de cas et une description facultatifs. Le nom de cas doit être unique dans votre organisation.
+4. Dans **la** page de découverte électronique du nouveau cas de découverte électronique, nommez le cas (obligatoire), puis tapez un numéro de cas et une description facultatifs. Le nom de cas doit être unique dans votre organisation.
 
 5. Cliquez **sur Enregistrer** pour créer le cas.
 
@@ -50,7 +50,7 @@ Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L�
 
 6. Dans la **vignette Autorisations & accès** sous **l’onglet Paramètres,** cliquez sur **Sélectionner.**
 
-7. Dans la page De gestion de ce  **cas** volant, sous **Gérer** les membres, cliquez sur Ajouter pour ajouter des membres au cas.
+7. Dans la page De gestion de ce **cas** volant, sous **Gérer** les membres, cliquez sur **Ajouter** pour ajouter des membres au cas.
 
 8. Dans la liste des personnes, cochez la case en regard des noms des personnes que vous souhaitez ajouter au cas. Comme indiqué précédemment, assurez-vous que les personnes que vous ajoutez au cas se sont vu attribuer les autorisations eDiscovery appropriées.
 
@@ -64,7 +64,7 @@ Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L�
 
 Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base qui s’aligne sur les pratiques [eDiscovery courantes.](advanced-ediscovery-edrm.md) Dans chacune de ces étapes, nous allons également mettre en évidence certaines fonctionnalités Advanced eDiscovery étendues que vous pouvez explorer.
 
-![Advanced eDiscovery flux de travail](../media/AeDWorkflow.png)
+![Advanced eDiscovery flux de travail.](../media/AeDWorkflow.png)
 
 1. **[Ajoutez des dépositaires](add-custodians-to-case.md) et [des sources de données non privatives](non-custodial-data-sources.md) au cas.** La première étape après la création d’un cas consiste à ajouter des dépositaires. Un *dépositaire* est une personne particulièrement concernée par le contrôle administratif d’un document ou d’un fichier électronique. En outre, vous pouvez ajouter des sources de données qui ne sont pas associées à un utilisateur spécifique, mais qui peuvent être pertinentes pour le cas.
 
@@ -80,7 +80,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
    - Vous pouvez utiliser le flux [de travail de communication](managing-custodian-communications.md) dans Advanced eDiscovery pour envoyer une notification de conservation légale aux dépositaires.
 
-2. **[Collecter du contenu pertinent à partir de sources de données.](create-draft-collection.md)** Après avoir ajouté des dépositaires et des sources de données non privées à un cas, utilisez l’outil de collecte intégré pour rechercher dans ces sources de données du contenu qui peut être pertinent pour le cas. Vous utilisez des mots clés, [](building-search-queries.md) des propriétés et des conditions pour créer des requêtes de recherche qui retournent des résultats de recherche avec les données les plus susceptibles d’être pertinentes pour le cas. Vous pouvez également :
+2. **[Collecter du contenu pertinent à partir de sources de données.](create-draft-collection.md)** Après avoir ajouté des dépositaires et des sources de données non privatives à un cas, utilisez l’outil de collecte intégré pour rechercher dans ces sources de données du contenu qui peut être pertinent pour le cas. Vous utilisez des mots clés, [](building-search-queries.md) des propriétés et des conditions pour créer des requêtes de recherche qui retournent des résultats de recherche avec les données les plus susceptibles d’être pertinentes pour le cas. Vous pouvez également :
 
    - Afficher [les statistiques de collection](collection-statistics-reports.md) qui peuvent vous aider à affiner une collection pour affiner les résultats.
 
@@ -100,7 +100,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
    - [Créer et utiliser des balises](tagging-documents.md). Vous pouvez appliquer des balises à des documents dans un jeu à réviser pour identifier ceux qui sont réactifs (ou non réactifs au cas), puis utiliser ces balises lors de la création de requêtes de recherche pour inclure ou exclure les documents marqués. Vous pouvez également baliser pour déterminer les documents à exporter.
 
-   - [Annoter et redessier des documents.](view-documents-in-review-set.md#annotate-view) Vous pouvez utiliser l’outil d’annotation dans une révision pour annoter des documents et redessier du contenu dans des documents en tant que produit de travail. Nous générons une version PDF d’un document annoté ou rédigé au cours de la révision afin de réduire le risque d’exportation de la version native non expurgée du document.
+   - [Annoter et redessier des documents.](view-documents-in-review-set.md#annotate-view) Vous pouvez utiliser l’outil d’annotation dans une révision pour annoter des documents et publier du contenu dans des documents en tant que produit de travail. Nous générons une version PDF d’un document annoté ou rédigé au cours de la révision afin de réduire le risque d’exportation de la version native non expurgée du document.
 
    - [Analyser les données de cas.](analyzing-data-in-review-set.md) La fonctionnalité d’analyse Advanced eDiscovery est puissante. Après avoir exécuté des analyses sur les données du jeu à réviser, nous avons effectué des analyses telles que la détection des quasi-doublons, le thread de messagerie électronique et les thèmes qui peuvent aider à réduire le volume de documents à réviser. Nous générons également des rapports d’analyse qui résument le résultat de l’exécution de l’analyse. Comme indiqué précédemment, l’exécution de l’analyse exécute également le modèle de détection des privilèges [client-avocat.](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)
 
@@ -108,9 +108,9 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
 ## <a name="advanced-ediscovery-architecture"></a>Advanced eDiscovery architecture
 
-Voici un diagramme d’architecture qui montre le flux de travail de bout en bout Advanced eDiscovery dans un environnement à une seule géo et dans un environnement multigé géographique, ainsi que le flux de données de bout en bout aligné sur le modèle de référence de découverte [électronique.](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
+Voici un diagramme d’architecture qui montre le flux de travail Advanced eDiscovery de bout en bout dans un environnement à une seule géo et dans un environnement multigé géographique, ainsi que le flux de données de bout en bout aligné sur le modèle de référence de découverte [électronique.](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
 
-[![Affiche de modèle : Advanced eDiscovery architecture dans Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Affiche de modèle : Advanced eDiscovery architecture dans Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Afficher en tant qu’image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 

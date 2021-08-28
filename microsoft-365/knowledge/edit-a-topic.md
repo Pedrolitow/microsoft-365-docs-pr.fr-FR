@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 localization_priority: Normal
 description: Découvrez comment modifier une rubrique existante dans Sujets Microsoft Viva.
-ms.openlocfilehash: 748b626dcdf6d118794872d5865a06678293d90da95d7e74057f019df749a1c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4fb3089d0ce701477542fec7710db5de17638469
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840361"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573606"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Modifier une rubrique existante dans Sujets Microsoft Viva 
 
@@ -103,7 +103,7 @@ Les gestionnaires de connaissances peuvent également modifier des rubriques dir
 
 8. La section **Sites suggérés** présente les sites que l’IA suggère d’associer à la rubrique. 
 
-   ![Capture d’écran de la section Sites suggérés](../media/knowledge-management/suggested-sites-section.png)  
+   ![Capture d’écran de la section Sites suggérés.](../media/knowledge-management/suggested-sites-section.png)  
 
     Vous pouvez modifier un site suggéré en site épinglé en sélectionnant l’icône épinglée.
 

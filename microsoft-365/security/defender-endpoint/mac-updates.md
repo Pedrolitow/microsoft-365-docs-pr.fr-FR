@@ -1,5 +1,5 @@
 ---
-title: Déployer des mises à jour pour Microsoft Defender pour point de terminaison sur Mac
+title: Déployer des mises à jour pour Microsoft Defender pour endpoint sur Mac
 description: Contrôler les mises à jour de Microsoft Defender pour Endpoint sur Mac dans les environnements d’entreprise.
 keywords: microsoft, defender, Microsoft Defender pour endpoint, mac, mises à jour, déployer
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d64b3998aabf7ff6435ea9cf32518eb4f827dd833fd05a650339ec3a96d25ef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dd299db1f8894851cb6d26d82756014b942c8240
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868330"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573526"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Déployer les mises à jour de Microsoft Defender pour endpoint sur macOS
 
@@ -40,9 +40,9 @@ ms.locfileid: "53868330"
 
 Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités.
 
-Pour mettre à jour Microsoft Defender pour endpoint sur macOS, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Par défaut, MAU recherche automatiquement les mises à jour quotidiennes, mais vous pouvez la modifier de manière hebdomadaire, mensuelle ou manuelle.
+Pour mettre à jour Microsoft Defender pour endpoint sur macOS, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Par défaut, MAU recherche automatiquement les mises à jour quotidiennes, mais vous pouvez la modifier en une fois par semaine, par mois ou manuellement.
 
-![Capture d’écran MAU](images/MDATP-34-MAU.png)
+![Capture d’écran MAU.](images/MDATP-34-MAU.png)
 
 Si vous décidez de déployer des mises à jour à l’aide de vos outils de distribution de logiciels, vous devez configurer MAU pour vérifier manuellement les mises à jour logicielles. Vous pouvez déployer des préférences pour configurer comment et quand MAU recherche les mises à jour pour les Mac de votre organisation.
 
@@ -62,7 +62,7 @@ Cette section décrit les préférences les plus courantes qui peuvent être uti
 
 ### <a name="set-the-channel-name"></a>Définir le nom du canal
 
-Le canal détermine le type et la fréquence des mises à jour proposées via MAU. Les appareils peuvent `Beta` tester de nouvelles fonctionnalités avant d’utiliser `Preview` et `Current` .
+Le canal détermine le type et la fréquence des mises à jour proposées via MAU. Les appareils peuvent `Beta` tester de nouvelles fonctionnalités avant d’utiliser `Preview` les appareils. `Current`
 
 Le `Current` canal contient la version la plus stable du produit.
 
@@ -81,7 +81,7 @@ Le `Current` canal contient la version la plus stable du produit.
 |**Domaine**|`com.microsoft.autoupdate2`|
 |**Clé**|ChannelName|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|Bêta <p> Aperçu <p> Current|
+|**Valeurs possibles**|Bêta <p> Preview <p> Current|
 |||
 
 >[!WARNING]
@@ -101,7 +101,7 @@ Modifier la fréquence à la recherche de mises à jour par MAU.
 |**Clé**|UpdateCheckFrequency|
 |**Type de données**|Entier|
 |**Valeur par défaut**|720 (minutes)|
-|**Commentaire**|Cette valeur est définie en minutes.|
+|**Comment**|Cette valeur est définie en minutes.|
 
 ### <a name="change-how-mau-interacts-with-updates"></a>Modifier la façon dont MAU interagit avec les mises à jour
 
@@ -113,7 +113,7 @@ Modifier la façon dont MAU recherche les mises à jour.
 |**Clé**|HowToCheck|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|Manual <p> AutomaticCheck <p> AutomaticDownload|
-|**Commentaire**|Notez que AutomaticDownload télécharge et installe en mode silencieux si possible.|
+|**Comment**|Notez que AutomaticDownload télécharge et installe en mode silencieux si possible.|
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Indique si le bouton « Vérifier les mises à jour » est activé.
 
@@ -128,7 +128,7 @@ Indiquez si les utilisateurs locaux pourront cliquer sur l’option « Vérifier
 
 ### <a name="disable-insider-checkbox"></a>Désactiver la case à cocher Insider
 
-Définissez la valeur sur True pour que le programme « Rejoindre le programme Office Insider... » case à cocher non disponible/grisée pour les utilisateurs.
+Définissez la valeur sur True pour que le programme « Rejoindre Office Programme Insider... » case à cocher non disponible/grisée pour les utilisateurs.
 
 |Section|Valeur|
 |---|---|

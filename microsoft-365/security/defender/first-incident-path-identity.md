@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 57a324310458dc15f5edcd6012ab381bb4d5041d902b8871d85cb318f0e7023e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f0695f406bdc2063c58d87c61032d120442928e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873615"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573510"
 ---
 # <a name="example-of-an-identity-based-attack"></a>Exemple d’attaque basée sur l’identité
 
@@ -42,41 +42,41 @@ Microsoft Defender pour l’identité peut vous aider à détecter les tentative
 
 Microsoft 365 Defender permet aux analystes de filtrer les alertes par source de détection dans l’onglet **Alertes** de la page Incidents. Dans l’exemple suivant, la source de détection est filtrée sur **Defender for Identity**. 
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Exemple de filtrage de la source de détection pour Defender for Identity":::
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Exemple de filtrage de la source de détection pour Defender for Identity.":::
 
 La sélection de **l’alerte d’attaque** suspectée de surpassage de hachage permet d’Microsoft Cloud App Security page qui affiche des informations plus détaillées. Vous pouvez toujours en savoir plus sur une alerte ou une attaque en sélectionnant En savoir plus sur ce **type** d’alerte pour lire une [description](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) de l’attaque ainsi que des suggestions de correction.
  
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Exemple d’alerte d’attaque par passe-viapasse suspectée"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Exemple d’une alerte d’attaque suspectée de surpasser le hachage."::: 
 
 ## <a name="investigating-the-same-attack-in-microsoft-defender-for-endpoint"></a>Étude de la même attaque dans Microsoft Defender pour le point de terminaison
 
 Un analyste peut également utiliser Defender pour point de terminaison pour en savoir plus sur l’activité sur un point de terminaison. Sélectionnez l’incident dans la file d’attente des incidents, puis sélectionnez **l’onglet Alertes.** À partir de là, ils peuvent également identifier la source de détection. Une source de détection étiquetée comme PEPT signifie Endpoint Detection and Response, qui est Defender for Endpoint. À partir de là, l’analyste sélectionne une alerte détectée par PEPT.
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="Exemple de détection et de réponse de point de terminaison dans Defender pour le point de terminaison"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="Exemple de détection et de réponse de point de terminaison dans Defender pour le point de terminaison."::: 
 
 La page d’alerte affiche diverses informations pertinentes telles que le nom de l’appareil, le nom d’utilisateur, l’état de l’examen automatique et les détails de l’alerte. L’article d’alerte représente une représentation visuelle de l’arborescence de processus. L’arborescence de processus est une représentation hiérarchique des processus parents et enfants liés à l’alerte.
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-tree.png" alt-text="Exemple d’arborescence de processus d’alerte dans Defender pour le point de terminaison"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-tree.png" alt-text="Exemple d’arborescence de processus d’alerte dans Defender pour le point de terminaison."::: 
 
 Chaque processus peut être étendu pour afficher des détails supplémentaires. Les détails qu’un analyste peut voir sont les commandes réelles qui ont été entrées dans le cadre d’un script malveillant, les adresses IP de connexion sortante et d’autres informations utiles.
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-process-details.png" alt-text="Exemple de détails de processus dans Defender pour le point de terminaison":::
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-process-details.png" alt-text="Exemple de détails de processus dans Defender pour le point de terminaison.":::
  
 En sélectionnant **Voir dans la** chronologie, un analyste peut aller encore plus loin pour déterminer l’heure exacte de la compromission. 
 
-Microsoft Defender pour le point de terminaison peut détecter de nombreux fichiers et scripts malveillants. Toutefois, en raison de nombreuses utilisations légitimes pour les connexions sortantes, PowerShell et l’activité de ligne de commande, certaines activités seraient considérées comme étant anodins jusqu’à ce qu’elles créent un fichier ou une activité malveillante. Par conséquent, l’utilisation de la chronologie permet aux analystes de mettre l’alerte en contexte avec l’activité qui l’entoure pour déterminer la source ou l’heure d’origine de l’attaque qui, sinon, est masquée par l’activité courante du système de fichiers et des utilisateurs. 
+Microsoft Defender pour le point de terminaison peut détecter de nombreux fichiers et scripts malveillants. Toutefois, en raison de nombreuses utilisations légitimes pour les connexions sortantes, PowerShell et l’activité de ligne de commande, certaines activités seraient considérées comme étant anodins jusqu’à ce qu’elles créent un fichier ou une activité malveillante. Par conséquent, l’utilisation de la chronologie permet aux analystes de mettre l’alerte en contexte avec l’activité qui l’entoure afin de déterminer la source ou l’heure d’origine de l’attaque qui autrement est masquée par l’activité courante du système de fichiers et des utilisateurs. 
 
 Pour ce faire, un analyste commence au moment de la détection de l’alerte (en rouge) et fait défiler vers le bas dans le temps pour déterminer à quel moment l’activité d’origine qui a conduit à l’activité malveillante a réellement commencé. 
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="Exemple de démarrage au moment de la détection de l’alerte"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="Exemple de démarrage au moment de la détection de l’alerte."::: 
 
 Il est important de comprendre et de distinguer les activités courantes telles que les connexions Windows Update, le trafic d’activation de logiciels de confiance Windows, d’autres connexions communes aux sites Microsoft, l’activité Internet tierce, l’activité Microsoft Endpoint Configuration Manager et toute autre activité faible contre les activités suspectes. Une façon d’y parvenir consiste à utiliser des filtres de chronologie. Il existe de nombreux filtres qui peuvent mettre en évidence une activité spécifique tout en filtrant tout ce que l’analyste ne souhaite pas afficher. 
 
 Dans l’image ci-dessous, l’analyste a filtré pour afficher uniquement les événements réseau et de traitement. Cela permet à l’analyste de voir les connexions réseau et les processus qui entourent l’événement où Bloc-notes a établi une connexion avec une adresse IP, ce que nous avons également vu dans l’arborescence des processus. 
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="Exemple de la façon Bloc-notes utilisé pour établir une connexion sortante malveillante"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="Exemple de la façon Bloc-notes utilisé pour établir une connexion sortante malveillante."::: 
 
-Dans cet événement particulier, Bloc-notes utilisé pour établir une connexion sortante malveillante. Toutefois, souvent, les personnes malveillantes utilisent simplement iexplorer.exe pour établir des connexions pour télécharger une charge utile malveillante, car en règle iexplorer.exe processus sont considérés comme une activité régulière du navigateur web.
+Dans cet événement particulier, Bloc-notes utilisé pour établir une connexion sortante malveillante. Toutefois, il arrive souvent que les personnes malveillantes utilisent simplement iexplorer.exe pour établir des connexions pour télécharger une charge utile malveillante, car d’ordinaire, iexplorer.exe processus sont considérés comme une activité régulière du navigateur web.
 
 Un autre élément à rechercher dans la chronologie serait l’utilisation de PowerShell pour les connexions sortantes. L’analyste recherche les connexions PowerShell réussies avec des commandes telles qu’une connexion sortante à un site web hébergeant `IEX (New-Object Net.Webclient)` un fichier malveillant. 
 
