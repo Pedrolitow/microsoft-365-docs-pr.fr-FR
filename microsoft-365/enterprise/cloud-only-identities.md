@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment créer des utilisateurs et des groupes lorsque votre abonnement Microsoft 365 utilise l’identité cloud uniquement.
-ms.openlocfilehash: fa3bef4b25327b675f18b2ea0bb9dfea15b2a81a
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 9b58b831f2a338e5fb79726b8de66c11bba96d0e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356095"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570760"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 identité cloud uniquement
 
@@ -39,9 +39,9 @@ ms.locfileid: "58356095"
 
 Avec l’identité cloud uniquement, tous vos utilisateurs, groupes et contacts sont stockés dans le client Azure Active Directory (Azure AD) de votre abonnement Microsoft 365 client. Voici les composants de base de l’identité cloud uniquement.
  
-![Composants de base de l’identité cloud uniquement](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![Composants de base de l’identité cloud uniquement.](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-Les utilisateurs et leurs comptes d’utilisateurs dans les organisations peuvent être classés de plusieurs façons. Par exemple, certains sont des employés et ont un statut permanent. Certains fournisseurs, sous-traitants ou partenaires ont un statut temporaire. Certains sont des utilisateurs externes qui n’ont pas de compte d’utilisateur, mais qui doivent tout de même avoir accès à des services et des ressources spécifiques pour prendre en charge l’interaction et la collaboration. Par exemple :
+Les utilisateurs et leurs comptes d’utilisateurs dans les organisations peuvent être classés de plusieurs façons. Par exemple, certains sont des employés et ont un statut permanent. Certains fournisseurs, sous-traitants ou partenaires ont un statut temporaire. Certains sont des utilisateurs externes qui n’ont pas de compte d’utilisateur, mais qui doivent tout de même avoir accès à des services et des ressources spécifiques pour prendre en charge l’interaction et la collaboration. Par exemple :
 
 - Les comptes client représentent les utilisateurs au sein de votre organisation auxquels vous octroyez une licence pour les services cloud
 

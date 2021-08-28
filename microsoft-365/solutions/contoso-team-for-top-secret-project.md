@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a utilisé une équipe avec isolation de sécurité pour un projet top secret afin de développer une nouvelle suite de produits et services.'
-ms.openlocfilehash: 86c2b0cbf53df07ac956138e096ad53a67f0bd7226b8583214d0e666ddbafe9e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3a14a5c7ba844e31b8e96d209eb21a9daac45e00
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883581"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575419"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Équipe isolée pour un projet top secret de Contoso Corporation
 
@@ -73,11 +73,11 @@ Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires po
 
 Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires pour le site pour empêcher Project membres du groupe 2X de partager l’accès au site. 
 
-À mesure que des canaux privés Project 2X ont été créés, le propriétaire  du groupe a désactivé le partage d’invités et définir le lien de partage par défaut sur la valeur Personnes spécifiques.
+Comme des canaux privés pour Project 2X ont été créés, le propriétaire du  groupe a désactivé le partage d’invités et définir le lien de partage par défaut sur la valeur Personnes spécifiques.
 
 Voici la configuration de l’équipe Project 2X avec isolation de sécurité.
 
-![Configuration résultante de l’équipe Project 2X](../media/contoso-team-for-top-secret-project.png)
+![Configuration résultante de l’équipe Project 2X.](../media/contoso-team-for-top-secret-project.png)
 
  ## <a name="step-4-trained-project-2x-team-members"></a>Étape 4 : Formation Project membres de l’équipe 2X
 
@@ -92,7 +92,7 @@ Le résultat final est un environnement sécurisé dans lequel Project équipe 2
 
 Voici un exemple de fichier stocké dans le site Project 2X sous-jacent avec l’étiquette de Project 2X affectée.
 
-![Exemple de fichier stocké dans le site Project 2X sous-jacent](../media/contoso-team-for-top-secret-project-example.png)
+![Exemple de fichier stocké dans le site Project 2X sous-jacent.](../media/contoso-team-for-top-secret-project-example.png)
 
 Dans deux cas, Project les membres de l’équipe 2X ont téléchargé des fichiers protégés par l’étiquette Project 2X sur un lecteur local pour le travail hors connexion. 
 

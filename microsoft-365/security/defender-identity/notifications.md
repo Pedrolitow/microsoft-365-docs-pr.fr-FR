@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: ef5bc9561f79bf1629522a610632d5eb349ab892347843e73701a2efa2ef65c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b4c499392bf9c48d704b1a0a960d9d92d097bd05
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810896"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570448"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Notifications Defender pour l’identité dans Microsoft 365 Defender
 
@@ -32,17 +32,17 @@ Dans Microsoft 365 Defender, vous pouvez ajouter des destinataires pour les noti
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Paramètres** and then **Identities**.
 
-    ![Go to Paramètres, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Sélectionnez **les notifications de problèmes d’état d’santé.**
 
-1. Entrez l’adresse e-mail du destinataire. Cliquez sur **Ajouter**.
+1. Entrez l’adresse e-mail du destinataire. Sélectionnez **Ajouter**.
 
-    ![Entrer l’adresse e-mail pour les problèmes d’état](../../media/defender-identity/health-email-recipient.png)
+    ![Entrez l’adresse e-mail pour les problèmes d’état.](../../media/defender-identity/health-email-recipient.png)
 
 1. Lorsque Defender pour l’identité détecte un problème d’état de santé, les destinataires reçoivent une notification par courrier électronique avec les détails.
 
-    ![Exemple de message électronique de problème d’état d’santé](../../media/defender-identity/health-email.png)
+    ![Exemple de message électronique de problème d’état d’santé.](../../media/defender-identity/health-email.png)
 
     > [!NOTE]
     > Le courrier électronique fournit deux liens pour plus d’informations sur le problème. Vous pouvez soit aller au centre de santé **MDI,** soit au nouveau centre de santé **dans M365D.**
@@ -53,13 +53,13 @@ Dans Microsoft 365 Defender, vous pouvez ajouter des destinataires pour les noti
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Paramètres** and then **Identities**.
 
-    ![Go to Paramètres, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Sélectionnez **les notifications d’alerte.**
 
-1. Entrez l’adresse e-mail du destinataire. Cliquez sur **Ajouter**.
+1. Entrez l’adresse e-mail du destinataire. Sélectionnez **Ajouter**.
 
-    ![Entrer l’adresse e-mail des alertes détectées](../../media/defender-identity/alert-email-recipient.png)
+    ![Entrez l’adresse e-mail des alertes détectées.](../../media/defender-identity/alert-email-recipient.png)
 
 ## <a name="syslog-notifications"></a>Notifications Syslog
 
@@ -67,17 +67,17 @@ Defender for Identity peut vous avertir lorsqu’il détecte des activités susp
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Paramètres** and then **Identities**.
 
-    ![Go to Paramètres, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Sélectionnez **les notifications Syslog.**
 
 1. Pour activer la notification de syslog, définissez le basculement du **service Syslog** sur la position **activée.**
 
-    ![Activer le service syslog](../../media/defender-identity/syslog-service.png)
+    ![Activer le service de syslog.](../../media/defender-identity/syslog-service.png)
 
 1. Sélectionnez **Configurer le service.** Un volet s’ouvre et vous permet d’entrer les détails du service de syslog.
 
-    ![Entrer les détails du service syslog](../../media/defender-identity/syslog-sensor.png)
+    ![Entrez les détails du service de syslog.](../../media/defender-identity/syslog-sensor.png)
 
 1. Entrez les détails suivants :
 
@@ -88,11 +88,11 @@ Defender for Identity peut vous avertir lorsqu’il détecte des activités susp
 
 1. Sélectionnez **Envoyer une notification SIEM de test,** puis vérifiez que le message est reçu dans votre solution d’infrastructure Syslog.
 
-1. Sélectionnez **Enregistrer**.
+1. Cliquez sur **Enregistrer**.
 
 1. Une fois que vous avez configuré le **service Syslog,** vous pouvez choisir les types de notifications (alertes ou problèmes d’état) à envoyer à votre serveur Syslog.
 
-    ![Service Syslog configuré](../../media/defender-identity/syslog-configured.png)
+    ![Service Syslog configuré.](../../media/defender-identity/syslog-configured.png)
 
 ## <a name="see-also"></a>Voir aussi
 

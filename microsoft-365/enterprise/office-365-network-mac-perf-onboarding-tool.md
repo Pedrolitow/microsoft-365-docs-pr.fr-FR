@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de test de connectivité réseau
-ms.openlocfilehash: f143cf8f9cd838bafa8e21ac258d0fcc09f3221d738f14013ee81e09e9dbdc1c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 60817f54586fd23270edc4e67be8b41a994bf50c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840963"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570964"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de test de connectivité réseau
 
@@ -29,12 +29,12 @@ L Microsoft 365 de test de connectivité réseau se trouve à l’emplacement . 
 > Il est important de se connectez à votre client Microsoft 365, car tous les rapports de test sont partagés avec votre administrateur et chargés vers le client lorsque vous êtes connecté.
 
 > [!div class="mx-imgBorder"]
-> ![Outil de test de connectivité](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+> ![Outil de test de connectivité.](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
 >L’outil de test de connectivité réseau prend en charge les locataires de WW Commercial et d’Allemagne, mais Cloud de la communauté du secteur public modéré, Cloud de la communauté du secteur public Élevé, DoD ou Chine.
 
-Les informations réseau dans le centre Administration Microsoft 365 sont basées sur des mesures régulières dans le produit pour votre client Microsoft 365, qui sont agrégées chaque jour. En comparaison, les informations réseau du test Microsoft 365 de connectivité réseau sont exécutés localement et une fois dans l’outil. Les tests qui peuvent être effectués dans le produit sont limités et en exécutant des tests locaux pour l’utilisateur, davantage de données peuvent être recueillies, ce qui permet d’obtenir des informations plus approfondies. Considérez ensuite que les informations réseau du Centre Administration Microsoft 365 montrent qu’il existe un problème réseau pour l’utilisation de Microsoft 365 à un emplacement de bureau spécifique. Le test Microsoft 365 la connectivité peut aider à identifier la cause première de ce problème, ce qui entraîne une action recommandée d’amélioration des performances du réseau.
+Les informations réseau dans le centre Administration Microsoft 365 sont basées sur des mesures régulières dans le produit pour votre client Microsoft 365, qui sont agrégées chaque jour. En comparaison, les informations réseau du test Microsoft 365 de connectivité réseau sont exécutés localement et une fois dans l’outil. Les tests qui peuvent être effectués dans le produit sont limités et en exécutant des tests locaux pour l’utilisateur, davantage de données peuvent être recueillies, ce qui permet d’obtenir des informations plus approfondies. Considérez ensuite que les informations réseau dans le Centre Administration Microsoft 365 montrent qu’il existe un problème de réseau pour l’utilisation des Microsoft 365 à un emplacement de bureau spécifique. Le test Microsoft 365 la connectivité peut aider à identifier la cause première de ce problème, ce qui entraîne une action recommandée d’amélioration des performances du réseau.
 
 Nous vous recommandons d’utiliser ces informations ensemble, où l’état de la qualité réseau peut être évalué pour chaque emplacement de bureau dans le Centre Administration Microsoft 365 et des informations plus spécifiques peuvent être trouvées après le déploiement des tests basés sur le test de connectivité Microsoft 365.
 
@@ -49,7 +49,7 @@ Lorsque vous cliquez sur le bouton Exécuter le test, nous montrons la page de t
 
 ### <a name="javascript-tests"></a>Tests JavaScript
 
-Après l’identification de l’emplacement du bureau, nous exécuterons un test de latence TCP dans JavaScript et nous demandons des données au service sur les serveurs de porte Office 365 service en cours d’utilisation et recommandés. Une fois ces tests terminés, nous les montrons sur la carte et dans l’onglet Détails où ils peuvent être consultés avant l’étape suivante.
+Après l’identification de l’emplacement du bureau, nous exécuterons un test de latence TCP dans JavaScript et nous demandons des données au service sur les serveurs de porte Office 365 service en cours d’utilisation et recommandés. Une fois ces tests terminés, nous les montrons sur la carte et dans l’onglet Détails où ils peuvent être visionnés avant l’étape suivante.
 
 ### <a name="download-the-advanced-tests-client-application"></a>Télécharger l’application cliente de tests avancés
 
@@ -60,7 +60,7 @@ Le test de connectivité réseau Microsoft 365 se déroule en deux parties : le 
 Vous serez invité à télécharger l’application de test client avancée à partir du site web une fois les tests du navigateur web terminés. Ouvrez et exécutez le fichier à l’invite.
 
 > [!div class="mx-imgBorder"]
-> ![Application cliente de tests avancés](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+> ![Application cliente de tests avancés.](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
 
 ### <a name="start-the-advanced-tests-client-application"></a>Démarrer l’application cliente de tests avancés
 
@@ -87,26 +87,26 @@ Les rapports de test (à l’exception de toute identification personnelle) sont
 Vous pouvez choisir des utilisateurs avec qui partager votre rapport. La possibilité de choisir est activée par défaut, mais elle peut être désactivée par votre administrateur.
 
 > [!div class="mx-imgBorder"]
-> ![Partage d’un lien vers les résultats de vos tests avec un utilisateur](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
+> ![Partage d’un lien vers les résultats de vos tests avec un utilisateur.](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
 
 ### <a name="sharing-with-anyone-using-a-reportid-link"></a>Partage avec tout le monde à l’aide d’un lien ReportID
 
 Vous pouvez partager votre rapport de test avec tout le monde en donnant accès à un lien ReportID. Ce lien génère une URL que vous pouvez envoyer à une personne afin qu’elle puisse afficher le rapport de test sans se connexion. Ce partage est désactivé par défaut et doit être activé par votre administrateur.
 
 > [!div class="mx-imgBorder"]
-> ![Partage d’un lien vers les résultats de vos tests](../media/m365-mac-perf/m365-mac-perf-share-link.png)
+> ![Partage d’un lien vers les résultats de vos tests.](../media/m365-mac-perf/m365-mac-perf-share-link.png)
 
 ## <a name="network-connectivity-test-results"></a>Résultats des tests de connectivité réseau
 
 Les résultats sont affichés dans les **onglets Résumé** **et** Détails. L’onglet résumé présente une carte du périmètre réseau détecté et une comparaison de l’évaluation réseau avec d’autres Office 365 à proximité. Il permet également le partage du rapport de test. Voici à quoi ressemble l’affichage des résultats récapitulatifs :
 
 > [!div class="mx-imgBorder"]
-> ![Résultats récapitulatifs de l’outil de test de connectivité réseau](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
+> ![Résultats récapitulatifs de l’outil de test de connectivité réseau.](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
 Voici un exemple de sortie de l’onglet Détails que l’outil affiche. Sous l’onglet Détails, une coche verte s’affiche si le résultat a été comparé de façon privilégiée à un seuil. Nous montrons un point d’exclamation de triangle rouge si le résultat a dépassé un seuil indiquant une information réseau. Les sections suivantes décrivent chacune des lignes de résultats de l’onglet Détails et expliquent les seuils utilisés pour les informations réseau.
 
 > [!div class="mx-imgBorder"]
-> ![Exemple de résultats de test de l’outil de test de connectivité réseau](../media/m365-mac-perf/m365-mac-perf-all-details.png)
+> ![Exemple de résultats de test de l’outil de test de connectivité réseau.](../media/m365-mac-perf/m365-mac-perf-all-details.png)
 
 ### <a name="your-location-information"></a>Informations sur votre emplacement
 
@@ -144,17 +144,17 @@ Chaque itinéraire de catégorie optimisé pour Exchange Online, SharePoint Onli
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Clients de votre région métropolitain avec de meilleures performances
 
-La latence TCP réseau de l’emplacement du bureau de l’utilisateur par rapport à la porte d’Exchange Online service est comparée aux autres clients Microsoft 365 dans la même zone de relocalisation. Un aperçu réseau s’affiche si 10 % ou plus des clients dans la même zone d’utilisation ont de meilleures performances. Cela signifie que leurs utilisateurs auront de meilleures performances dans l Microsoft 365'interface utilisateur.
+La latence TCP réseau de l’emplacement du bureau de l’utilisateur par rapport à la porte d’Exchange Online service est comparée aux autres clients Microsoft 365 dans la même zone de relocalisation. Un aperçu réseau s’affiche si 10 % ou plus des clients d’une même zone d’entreprise ont de meilleures performances. Cela signifie que leurs utilisateurs auront de meilleures performances dans l Microsoft 365'interface utilisateur.
 
 Cette information réseau est générée sur la base du fait que tous les utilisateurs d’une ville ont accès à la même infrastructure de télécommunications et à la même proximité des circuits Internet et du réseau de Microsoft.
 
 #### <a name="time-to-make-a-dns-request-on-your-network"></a>Temps d’effectuer une demande DNS sur votre réseau
 
-Cela indique le serveur DNS configuré sur l’ordinateur client qui a effectué les tests. Il peut s’agit d’un serveur de résolution récursive DNS, mais cela est rare. Il est plus probable qu’il s’agit d’un serveur de forwardeur DNS, qui met en cache les résultats DNS et les a transmis à un autre serveur DNS sans mise en cache.
+Cela indique le serveur DNS configuré sur l’ordinateur client qui a effectué les tests. Il peut s’agit d’un serveur de résolution récursive DNS, mais cela est rare. Il est plus probable qu’il s’agit d’un serveur de forwardeur DNS, qui met en cache les résultats DNS et les a transmis à un autre serveur DNS.
 
 Il est fourni uniquement pour les informations et ne contribue à aucune information réseau.
 
-#### <a name="your-distance-from-andor-time-to-connect-to-a-dns-recursive-resolver"></a>Votre distance et/ou votre temps de connexion à un résolveur récursif DNS
+#### <a name="your-distance-from-andor-time-to-connect-to-a-dns-recursive-resolver"></a>Distance et/ou durée de connexion à un résolveur récursif DNS
 
 Le résolveur récursif DNS en cours d’utilisation est identifié en faisant une demande DNS spécifique, puis en demandant au serveur de noms DNS l’adresse IP à partir de qui il a reçu la même demande. Cette adresse IP est le résolveur récursif DNS et elle sera recherche dans les bases de données d’emplacements d’adresses IP pour trouver l’emplacement. La distance entre l’emplacement du bureau de l’utilisateur et l’emplacement du serveur de résolution récursive DNS est ensuite calculée. Il s’agit d’un aperçu réseau si la distance est supérieure à **500 miles** (800 kilomètres).
 
@@ -174,7 +174,7 @@ L’utilisation de l’une des meilleures porte d’entrée du service Exchange 
 
 Nous calculons une amélioration potentielle de la latence TCP (ms) sur le Exchange frontal du service. Pour ce faire, il s’agit de la latence testée du réseau d’emplacements du bureau de l’utilisateur et de la soustraction de la latence du réseau de l’emplacement actuel vers les Exchange frontal du service. La différence représente l’opportunité potentielle d’amélioration.
 
-#### <a name="best-exchange-service-front-doors-for-your-location"></a>Meilleure Exchange service frontal pour votre emplacement
+#### <a name="best-exchange-service-front-doors-for-your-location"></a>Meilleure Exchange ou porte d’entrée du service pour votre emplacement
 
 Cette liste répertorie les Exchange de service frontal par ville pour votre emplacement.
 
@@ -202,7 +202,7 @@ Pendant le téléchargement de 15 Mo, nous mesureons la latence TCP sur le Share
 
 Cela indique le nom DNS et l’adresse IP du serveur SharePoint frontal du service vers qui vous avez été dirigé. Il est fourni uniquement pour les informations et il n’y a pas d’informations réseau associées.
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Cette section présente les résultats des tests liés aux Microsoft Teams.
 
@@ -241,14 +241,14 @@ Cette section présente les résultats d’un itinéraire de suivi ICMP vers la 
 Une fois que vous êtes signé, vous pouvez passer en revue les rapports précédents que vous avez exécutés. Vous pouvez également les partager ou les supprimer de la liste.
 
 > [!div class="mx-imgBorder"]
-> ![Rapports](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
+> ![Rapports.](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
 
 ## <a name="network-health-status"></a>État d’état du réseau
 
 Cela indique les problèmes d’état d’santé importants avec le réseau mondial de Microsoft, ce qui peut avoir un impact sur Microsoft 365 clients.
 
 > [!div class="mx-imgBorder"]
-> ![État d’état du réseau](../media/m365-mac-perf/m365-mac-perf-status-page.png)
+> ![État d’état du réseau.](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
 ## <a name="faq"></a>FAQ
 
@@ -277,7 +277,7 @@ Une meilleure Microsoft 365 service frontal (anciennement appelée porte frontal
 
 L’emplacement de sortie Internet est l’emplacement où votre trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Il s’agit également de l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement où vous vous connectez à un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement de sortie Internet, cela peut identifier un backhaul wan significatif.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Connectivité réseau dans le centre de Administration Microsoft 365 (aperçu)](office-365-network-mac-perf-overview.md)
 

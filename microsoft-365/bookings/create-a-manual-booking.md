@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Suivez ces instructions pour créer un rendez-vous et affecter un employé via l’application Microsoft Bookings.
-ms.openlocfilehash: 3ac35cceea7413f6f4634df6474df2d07258debb1bdadb62893f443dc6c2df7b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9af9b28eb1f00bfc41dbdff2d7df4111cb8bdd13
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803943"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574435"
 ---
 # <a name="create-a-manual-booking"></a>Créer une réservation manuelle
 
@@ -22,11 +22,11 @@ Vous pouvez planifier, puis gérer Bookings de deux façons différentes. La pre
 
 1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings.**
 
-   ![Image de Bookings dans le lanceur d’applications](../media/bookings-applauncher.png)
+   ![Image de Bookings dans le lanceur d’applications.](../media/bookings-applauncher.png)
 
 1. Dans le volet de navigation, sélectionnez **Réservation** \> **calendrier nouveau.**
 
-   ![Image de l’interface utilisateur nouvelle réservation](../media/bookings-newbooking.png)
+   ![Image de l’interface utilisateur nouvelle réservation.](../media/bookings-newbooking.png)
 
 1. Sélectionnez le service à fournir. Voir [Définir vos offres de services dans Microsoft Bookings](define-service-offerings.md) pour obtenir des instructions de configuration de service.
 
@@ -34,9 +34,9 @@ Vous pouvez planifier, puis gérer Bookings de deux façons différentes. La pre
 
 1. Sélectionnez le membre du personnel pour fournir le service. La liste des membres du personnel affichée est basée sur ce que vous avez installé sur la page des services.
 
-   ![Image de l’interface utilisateur de la liste du personnel](../media/bookings-staff-list.png)
+   ![Image de l’interface utilisateur de la liste du personnel.](../media/bookings-staff-list.png)
 
-1. Entrez les détails du service, y compris la date, l’heure, l’emplacement et d’autres informations pertinentes. Une fois que vous avez entré  une adresse e-mail valide pour le client, le bouton Enregistrer se change en **Envoyer,** et une note vous dit qu’une confirmation sera envoyée au client. La confirmation du client inclut une pièce jointe à ajouter à son calendrier. Les membres du personnel sélectionnés recevront également des invitations aux réunions avec les informations de rendez-vous afin de pouvoir les ajouter à leurs calendriers personnels.
+1. Entrez les détails du service, notamment la date, l’heure, l’emplacement et d’autres informations pertinentes. Une fois que vous avez entré  une adresse e-mail valide pour le client, le bouton Enregistrer se change en **Envoyer** et vous voyez une note vous notant qu’une confirmation sera envoyée au client. La confirmation du client inclut une pièce jointe à ajouter à son calendrier. Les membres du personnel sélectionnés recevront également des invitations aux réunions avec les informations de rendez-vous afin de pouvoir les ajouter à leurs calendriers personnels.
 
 1. Sélectionnez **Ajouter un rappel par courrier électronique.**
 

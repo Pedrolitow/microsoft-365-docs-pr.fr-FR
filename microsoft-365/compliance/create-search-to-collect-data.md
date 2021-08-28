@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer, définir et choisir des dépositaires et des emplacements de conservation pour une recherche dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f5eadf89d0f4eae3c206c82609f7b7d33fbe1ad15953808acab52880f00da274
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3050e176f495bd2fc23ac6237f1dac28b04088ec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886433"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574302"
 ---
 # <a name="create-a-search"></a>Créer une recherche
 
 Sous **l’onglet Recherches** dans votre cas, vous pouvez créer une recherche en cliquant sur **Nouvelle** recherche et en suivant l’Assistant.
 
-![Assistant recherche dans un cas Advanced eDiscovery recherche](../media/AeDSearch1.png)
+![Assistant recherche dans un cas Advanced eDiscovery recherche.](../media/AeDSearch1.png)
 
 ## <a name="name-the-search-and-give-it-a-description"></a>Nommez la recherche et donnez-lui une description
 
@@ -42,6 +42,6 @@ Choisissez les emplacements de contenu des dépositaires à rechercher en spéci
 
 Dans certains cas, vous pouvez rechercher des sources de données qui ne sont pas associées à un dépositaire. Dans ce cas, vous pouvez spécifier les emplacements que vous souhaitez rechercher ou choisir de rechercher tous les emplacements de contenu pour un service Microsoft spécifique (par exemple, la recherche dans toutes les boîtes aux lettres Exchange ou tous les sites SharePoint et les comptes OneDrive).
 
-## <a name="define-the-search-query-and-conditions"></a>Définir la requête de recherche et les conditions
+## <a name="define-the-search-query-and-conditions"></a>Définir la requête et les conditions de recherche
 
-Vous pouvez définir la requête de mots clés et toutes les conditions pour la recherche à l’aide des cartes de condition pré-conçues ou à l’aide du langage KQL (Keyword Query Language). Pour plus d’informations, voir [Créer des requêtes de recherche.](building-search-queries.md)
+Vous pouvez définir la requête de mots clés et toutes les conditions de la recherche à l’aide des cartes de condition pré-conçues ou à l’aide du langage KQL (Keyword Query Language). Pour plus d’informations, voir [Créer des requêtes de recherche.](building-search-queries.md)

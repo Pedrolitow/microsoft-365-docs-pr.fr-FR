@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous devez être administrateur d’un abonnement professionnel pour obtenir de l’aide sur l’administrateur ou un support en ligne ou par téléphone dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 56aae6fc6ad966aeefb7d1fede4b86e1300babd393f51f5c28839f3220d985e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f38e07cb7db25cbc6d6fa3e813d8f7c5863e4055
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882544"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570652"
 ---
 # <a name="get-support"></a>Obtenir une assistance
 
@@ -150,7 +150,7 @@ Le temps de réponse initial est basé sur les niveaux de gravité décrits ci-d
 
 Gravité A: 24\*7 service continu
 
-La Gravité B/c : 9:00 ~ 24:00 (heure de Pékin,Beijing) un jour 365 jours.
+Gravité B/C : 9h00 ~ 24h00 [heure de Pékin (Beijing)] par jour, 365 jours.
 
 ## <a name="contact-support"></a>Contacter l’assistance
 
@@ -221,7 +221,7 @@ Pour afficher la disponibilité des fonctionnalités entre les plans Office 365,
 
 Scannez ce QR code pour suivre les discussions sur WeChat et obtenir les dernières mises à jour pour Office 365 géré par 21Vianet. 
 
-![Ce QR code dédié aux mis à jour pour Office 365 géré par 21Vianet](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![QR code pour mises à jour Office 365 géré par 21Vianet.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

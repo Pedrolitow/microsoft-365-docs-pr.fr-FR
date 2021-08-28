@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez comment développer votre présence Microsoft 365 dans plusieurs régions géographiques avec Microsoft 365 Multigéographie.
-ms.openlocfilehash: a7bed2ddea25ccd808d0b92d6cdeb689c004d2a409ee553fb3862b539fab9c28
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b421be44711172729e228083b6682ac387473e6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864354"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575107"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -32,7 +32,7 @@ Pour consulter une vidéo de présentation sur Microsoft 365 Multigéographie, v
 
 Dans un environnement Multi-Geo, votre client Microsoft 365 se compose d’un emplacement central (où votre abonnement Microsoft 365 d’origine a été approvisionné) et d’un ou plusieurs emplacements satellites. Dans un client multigéographique, les informations concernant les emplacements géographiques, les groupes et les informations utilisateur sont gérées dans Azure Active Directory (Azure AD). Étant donné que les informations de votre client sont gérées de façon centralisée et synchronisées à chaque emplacement géographique, le partage et les expériences concernant tout membre de votre société impliquent une sensibilisation à l’échelle mondiale.
 
-![Capture d’écran d’un mappage multigéographique du Centre d’administration SharePoint](../media/multi-geo-world-map.png)
+![Capture d’écran d’une carte multigéographique à partir SharePoint centre d’administration.](../media/multi-geo-world-map.png)
 
 Notez que Microsoft 365 Multi-Geo n’est pas conçu pour optimiser les performances, mais pour répondre aux exigences de résidence des données. Pour plus d’informations sur l’optimisation des performances pour Microsoft 365, voir [Planification réseau et optimisation des performances pour Microsoft 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) ou contacter votre groupe de support.
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment utiliser le Centre de conformité pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
-ms.openlocfilehash: cade5f3b089a5e6f98c234d9498635eb48e881c8
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 28af0de029deb2dc732f4e31f7f85f80db6bf081
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503070"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574807"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre conformité
 
@@ -51,7 +51,7 @@ Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez ê
 
 4. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez activer la boîte aux lettres d’archivage.
 
-   ![Cliquer sur Activer dans le volet d’informations de l’utilisateur sélectionné pour activer la boîte aux lettres d’archivage](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
+   ![Cliquer sur Activer dans le volet d’informations de l’utilisateur sélectionné pour activer la boîte aux lettres d’archivage.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
 
 5. Dans le volet d’informations de l’utilisateur sélectionné, cliquez sur **Activer**.
 
@@ -59,7 +59,7 @@ Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez ê
 
 6. Cliquez sur **Oui** pour activer la boîte aux lettres d’archivage.
 
-   La création de la boîte aux lettres d’archivage peut prendre un certain temps. Une fois la boîte aux lettres d’archivage créée, l’indication **Boîte aux lettres d’archivage : Activée** s’affiche dans le volet d’informations pour l’utilisateur sélectionné. Il sera peut-être nécessaire de cliquer sur **Actualiser** ![icône Actualiser](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet d’informations.
+   La création de la boîte aux lettres d’archivage peut prendre un certain temps. Une fois la boîte aux lettres d’archivage créée, l’indication **Boîte aux lettres d’archivage : Activée** s’affiche dans le volet d’informations pour l’utilisateur sélectionné. Vous ne devrez peut-être cliquer sur **Actualiser** ![Actualiser l’icône.](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet d’informations.
 
 > [!TIP]
 > Vous pouvez également activer des boîtes aux lettres d’archivage en bloc en sélectionnant plusieurs utilisateurs dont les boîtes aux lettres sont désactivées (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur **Activer** dans le volet des détails.
@@ -89,7 +89,7 @@ Pour désactiver une boîte aux lettres d’archivage :
 
 5. Cliquez sur **Oui** pour désactiver la boîte aux lettres d’archivage.
 
-   La désactivation de la boîte aux lettres d’archivage peut prendre un certain temps. Une fois la boîte aux lettres d’archivage désactivée, l’indication **Boîte aux lettres d’archivage : Désactivée** s’affiche dans le volet d’informations pour l’utilisateur sélectionné. Il sera peut-être nécessaire de cliquer sur **Actualiser** ![icône Actualiser](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet d’informations.
+   La désactivation de la boîte aux lettres d’archivage peut prendre un certain temps. Une fois la boîte aux lettres d’archivage désactivée, l’indication **Boîte aux lettres d’archivage : Désactivée** s’affiche dans le volet d’informations pour l’utilisateur sélectionné. Vous ne devrez peut-être cliquer sur **Actualiser** ![Actualiser l’icône.](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet d’informations.
 
 > [!TIP]
 > Vous pouvez également désactiver des boîtes aux lettres d’archivage en bloc en sélectionnant plusieurs utilisateurs dont les boîtes aux lettres sont activées (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur **Désactiver** dans le volet des détails.

@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Afficher l’état d’intégrité des services Microsoft 365 avant de contacter le support technique pour vérifier qu’aucune interruption de service n’est en cours.
-ms.openlocfilehash: dc925a1ce1e61f2a67d258c12baabddf29dd880b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 64a0d4816ce9afdd8ee4bf1c2a4522ef9fc56afc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356335"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570484"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Comment vérifier l’intégrité du service Microsoft 365
 
@@ -52,7 +52,7 @@ Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pou
 
 3. Dans la page d’**intégrité du service**, l’état d’intégrité de chaque service cloud est affiché dans un format de tableau.
 
-   ![Afficher les problèmes en cours dans l’état du service](../media/shd-landing-page.png)
+   ![Afficher les problèmes en cours dans l’état du service.](../media/shd-landing-page.png)
 
 L’onglet **Tous les services** (affichage par défaut) affiche tous les services, leur état d’intégrité actuel et tous les incidents ou avis actifs. Une icône et un état dans la colonne **État** indiquent l’état de chaque service.
 
@@ -86,7 +86,7 @@ Vous pouvez également vous abonner à des notifications par e-mail pour des év
 
 Dans la vue **Tous les services** , sélectionnez le titre du problème pour afficher la page de détails du problème, qui affiche plus d’informations sur le problème, y compris un flux de tous les messages publiés pendant que nous travaillons sur une solution.
 
-[![Capture d’écran montrant l’avis de service](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
+[![Capture d’écran montrant l’avis de service.](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 Le récapitulatif de l’avis ou de l’incident fournit les informations suivantes :
 
@@ -99,7 +99,7 @@ Le récapitulatif de l’avis ou de l’incident fournit les informations suivan
 - **Impact utilisateur** : brève description de l’impact de ce problème sur l’utilisateur final.
 - **Toutes les mises à jour** : nous publions des messages fréquents pour vous informer de la progression de l’application d’une solution.
 
-![Capture d’écran montrant les détails du problème](../media/service-health-advisory-detail.png)
+![Capture d’écran montrant les détails du problème.](../media/service-health-advisory-detail.png)
 
 ### <a name="translate-service-health-details"></a>Traduire les détails d’état du service
 
@@ -116,8 +116,8 @@ En règle générale, les services apparaissent comme intègres, sans autres inf
 
 | Icône | Description |
 |:-----|:-----|
-|![Information icon for advisory](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|Un service accompagné d'un avis indique que nous sommes conscients du problème qui affecte certains utilisateurs, mais que ce service est toujours disponible. Un avis propose souvent une solution de contournement du problème, qui peut intermittent ou limité en termes d'impact sur les utilisateurs.  <br/> |
-|![Exclamation point icon for incident](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|Si un service présente un incident actif, cela signifie qu'il s'agit d'un problème critique et que le service ou une de ses fonctions principales n'est pas disponible. Par exemple, les utilisateurs peuvent ne pas être en mesure d'envoyer et de recevoir des e-mails ni de se connecter. Les incidents ont un impact significatif sur les utilisateurs. En cas d'incident, nous publions des mises à jour relatives à son examen, aux efforts déployés pour y remédier, et sa résolution apparaît dans le tableau de bord d'état du service.  <br/> |
+|![Icône d’informations pour l’avertissement.](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|Un service accompagné d'un avis indique que nous sommes conscients du problème qui affecte certains utilisateurs, mais que ce service est toujours disponible. Un avis propose souvent une solution de contournement du problème, qui peut intermittent ou limité en termes d'impact sur les utilisateurs.  <br/> |
+|![Icône de point d’exclamation pour l’incident.](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|Si un service présente un incident actif, cela signifie qu'il s'agit d'un problème critique et que le service ou une de ses fonctions principales n'est pas disponible. Par exemple, les utilisateurs peuvent ne pas être en mesure d'envoyer et de recevoir des e-mails ni de se connecter. Les incidents ont un impact significatif sur les utilisateurs. En cas d'incident, nous publions des mises à jour relatives à son examen, aux efforts déployés pour y remédier, et sa résolution apparaît dans le tableau de bord d'état du service.  <br/> |
 
 ### <a name="status-definitions"></a>Définitions des états
 

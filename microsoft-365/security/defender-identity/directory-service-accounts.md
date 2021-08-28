@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 45cc01103a578f84d49bb293ff8801aae3b4c216
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 7da746ade0e4ec684b97a61524abd5ab1e83c114
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360694"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570472"
 ---
 # <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Compte Microsoft Defender pour les services d’annuaire d’identités dans Microsoft 365 Defender
 
@@ -32,21 +32,21 @@ Pour connecter le [capteur](sensor-health.md#add-a-sensor) à vos domaines Activ
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Paramètres** and then **Identities**.
 
-    ![Go to Paramètres, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Sélectionnez **des comptes de service d’annuaire.** Vous verrez quels comptes sont associés à quels domaines.
 
-    ![Comptes de service d’annuaire](../../media/defender-identity/directory-service-accounts.png)
+    ![Comptes de service d’annuaire.](../../media/defender-identity/directory-service-accounts.png)
 
 1. Si vous sélectionnez un compte, un volet s’ouvre avec les paramètres de ce compte.
 
-    ![Paramètres du compte](../../media/defender-identity/account-settings.png)
+    ![Paramètres du compte.](../../media/defender-identity/account-settings.png)
 
 1. Pour ajouter un nouveau compte  de services d’annuaire, sélectionnez Créer un compte et remplissez le nom de **compte,** le domaine **et** le mot de **passe.** Vous pouvez également choisir s’il s’agit d’un compte de **service** géré de groupe (gMSA) et s’il appartient à un **domaine d’étiquette unique.**
 
-    ![Nouveau compte de service d’annuaire](../../media/defender-identity/new-directory-service-account.png)
+    ![Nouveau compte de service d’annuaire.](../../media/defender-identity/new-directory-service-account.png)
 
-1. Sélectionnez **Enregistrer**.
+1. Cliquez sur **Enregistrer**.
 
 ## <a name="see-also"></a>Voir aussi
 

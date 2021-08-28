@@ -14,12 +14,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés renseignements sur le flux de messagerie).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32b613cbd3251c58602a292c50ba48d56a02291fd9388c5433b4c8d9a836d314
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e8df87c5d8a93bec8051f29c1ba8eae0fbe8bab9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56849685"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574579"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de courriers dans EOP
 
@@ -79,8 +79,8 @@ En règle générale, cette erreur signifie Microsoft 365 une erreur de connexio
     1. Dans le EAC, allez à **Connecteurs de flux** \> **de messagerie.**
 
     2. Sélectionnez le  connecteur avec la valeur **De Office 365** et la valeur **À** du serveur de messagerie de votre organisation et faites **l’une** des étapes suivantes :
-       - Supprimer le connecteur en cliquant sur **Supprimer l’icône** ![ Supprimer](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
-       - Désactivez le connecteur en cliquant sur **Modifier** l’icône ![ et en ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **désactivant Activer.**
+       - Supprimez le connecteur en cliquant sur **Supprimer** ![ l’icône Supprimer.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Désactivez le connecteur en cliquant sur **l’icône** ![ Modifier.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) et désactiver **l’activer.**
 
   - Modifiez le domaine accepté dans Microsoft 365 qui est associé à votre environnement de messagerie local de **Relais** interne à **Faisant autorité**. Pour obtenir des instructions, [voir Gérer les domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 

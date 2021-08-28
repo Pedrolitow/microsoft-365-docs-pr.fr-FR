@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu pour le labling ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: 25bbec395b1bb229f62122caf23845c18f5305e324a37cd0a6856e81286d1ee5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b54ab2f905d77ae59ba94e15768c7664007baaa
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872098"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574855"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -61,7 +61,7 @@ Les étiquettes de sensibilité peuvent utiliser des classifieurs comme conditio
 ## <a name="types-of-classifiers"></a>Types de classifieurs
 
 - **Classifieurs pré-formés** : Microsoft a créé et pré-formé un certain nombre de classifieurs que vous pouvez commencer à utiliser sans les former. Ces classifieurs apparaissent avec l’état `Ready to use` de .
-- **classifieurs personnalisés** : si vous avez des besoins de classification qui s’étendent au-delà de ce que couvrent les classifieurs pré-formés, vous pouvez créer et former vos propres classifieurs.
+- **classifieurs personnalisés** : si vous avez des besoins de classification qui étendent au-delà de ce que couvrent les classifieurs pré-formés, vous pouvez créer et former vos propres classifieurs.
 
 ### <a name="pre-trained-classifiers"></a>Classifieurs pré-formés
 
@@ -74,7 +74,7 @@ Microsoft 365 est livré avec cinq classifieurs pré-formés :
 - **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 langages de programmation informatique les plus utilisés sur GitHub
     - ActionScript
     - C
-    - C #
+    - C#
     - C++
     - Îlesjure
     - CoffeeScript
@@ -105,11 +105,11 @@ Microsoft 365 est livré avec cinq classifieurs pré-formés :
 - **Discrimination**: détecte un langage explicite de discrimination et est particulièrement sensible au langage de discrimination à l’encontre des communautés américaine/noire d’Afrique par rapport aux autres communautés.
 
 > [!IMPORTANT]
-> Le classifieur ne peut être formé que sous forme de prévisualisation publique pour les clients dont Microsoft 365 clients sont hébergements dans des centres de données d’Amérique du Nord. Pour voir où votre client Microsoft 365 est Administration Microsoft 365, ouvrez le centre Administration Microsoft 365 et accédez à l’emplacement des données de profil d’organisation Paramètres  >  **l’organisation.**  >    >   
+> Le classifieur ne peut être formé qu’en tant que prévisualisation publique pour les clients dont Microsoft 365 clients sont hébergements dans des centres de données en Amérique du Nord. Pour voir où votre client Microsoft 365 est Administration Microsoft 365, ouvrez le centre Administration Microsoft 365 et accédez à l’emplacement des données de profil d’organisation Paramètres  >  **l’organisation.**  >    >   
 
-Ceux-ci apparaissent dans **la vue Centre de conformité Microsoft 365** classification des données avec  >    >   l’état de `Ready to use` .
+Ceux-ci apparaissent dans **la Centre de conformité Microsoft 365** classification des données  >    >  **avec** l’état de `Ready to use` .
 
-![classifieurs-pré-formés-classifieurs](../media/classifiers-ready-to-use-classifiers.png)
+![classifieurs-pré-formés-classifieurs.](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > Veuillez noter que le langage choquant, le harcèlement, la blasphémité, la discrimination et les classifieurs de menaces fonctionnent uniquement avec du texte utilisable dans une recherche et ne sont pas une liste exhaustive ou complète de termes ou de langues dans ces domaines. En outre, les normes linguistiques et culturelles changent continuellement et, à la lumière de ces exigences, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Bien que les classifieurs aident votre organisation à détecter ces domaines, ils ne sont pas destinés à fournir l’unique moyen de détecter ou d’adresser l’utilisation de ce langage dans votre organisation. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’analyse, au blocage, à la suppression et à la rétention de tout contenu identifié par un classifieur pré-formé, y compris la conformité avec la confidentialité locale et d’autres lois applicables. Microsoft encourage les conseils juridiques avant le déploiement et l’utilisation.
@@ -130,13 +130,13 @@ Par exemple, vous pouvez créer des classifieurs entraisables pour :
 
 La création et la publication d’un classifieur à utiliser dans des solutions de conformité, telles que les stratégies de rétention et la surveillance des communications, suivent ce flux. Pour plus d’informations sur la création d’un classifieur entraisable personnalisé, voir [Création d’un classificateur personnalisé.](classifier-get-started-with.md)
 
-![classificateur personnalisé de flux de processus](../media/classifier-trainable-classifier-flow.png)
+![classifieur personnalisé de flux de processus.](../media/classifier-trainable-classifier-flow.png)
 
 ### <a name="retraining-classifiers"></a>Retraining classifiers
 
 Vous pouvez améliorer la précision de tous les classifieurs personnalisés et de certains classifieurs pré-formés en leur fournissant des commentaires sur la précision de la classification qu’ils effectuent. C’est ce qu’on appelle une nouvelle formation et suivre ce flux de travail.
 
-![flux de travail de formation du classificateur](../media/classifier-retraining-workflow.png)
+![flux de travail de formation de classifieur.](../media/classifier-retraining-workflow.png)
 
 ## <a name="see-also"></a>Voir aussi
 

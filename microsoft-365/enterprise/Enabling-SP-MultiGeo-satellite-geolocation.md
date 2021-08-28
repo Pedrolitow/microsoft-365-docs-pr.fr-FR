@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Cet article fournit des informations pour les administrateurs globaux ou SharePoint sur l’activation SharePoint Multi-Géo dans les emplacements géographiques satellites.
-ms.openlocfilehash: ac6c251799471e80565260ee19f3eb99be41478a119ac049a00c77837ac0854f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 731c8b0125a9f53264d18de55a76f8123021e436
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850273"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570220"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Activation de SharePoint Multi-Geo dans votre emplacement géographique satellite
 
@@ -41,9 +41,9 @@ Pour définir un emplacement géo en mode SPO, connectez-vous à l’emplacement
 1.    Ouvrez votre outil SharePoint Online Management Shell 
 2.    Se connecter-SPOService-URL « https://$tenantGeo-admin.sharepoint.com »- informations d’identification $credential
 3.    Set-SPOMultiGeoExperience</br></br>
-![Set-SPOMultiGeoExperience](../media/Set-SPO-MultiGeo.jpg)
+![Set-SPOMultiGeoExperience.](../media/Set-SPO-MultiGeo.jpg)
 4.    Cette opération généralement prend environ une heure pendant que nous réalisons divers publications dans le service et de nouveau apposer un cachet à votre client. Après au moins 1 heure, veuillez effectuer une SPOMultiGeoExperience Get.  Vous verrez alors que cet emplacement géo est en mode SPO.</br></br>
-![Set-SPOMultiGeoExperience](../media/Get-SPO-MultiGeo.jpg)
+![Set-SPOMultiGeoExperience.](../media/Get-SPO-MultiGeo.jpg)
 
  
  

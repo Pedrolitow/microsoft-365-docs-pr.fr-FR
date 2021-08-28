@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Découvrez comment faire si vous avez un domaine non routable associé à vos comptes d’utilisateurs locaux avant de les synchroniser avec Microsoft 365 client.
-ms.openlocfilehash: cecaee814d19f78b973ebd2f06c8d2c665d905de
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: dd93cfd85aa6f6f5788b6ae5562c2a2def3ffaa0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356911"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574290"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparation d’un domaine non routable pour la synchronisation d’annuaires
 
@@ -43,7 +43,7 @@ Azure AD Connecter l’UPN et le mot de passe de vos utilisateurs afin que les u
   
 ### <a name="change-your-primary-domain"></a>Modifier votre domaine principal
 
-Modifiez votre domaine principal en un domaine que vous avez vérifié dans Microsoft 365, par exemple, contoso.com. Chaque utilisateur qui possède le domaine contoso.local est ensuite mis à jour contoso.com. Il s’agit toutefois d’un processus très complexe et une solution plus facile est décrite dans la section suivante.
+Modifiez votre domaine principal en un domaine que vous avez vérifié dans Microsoft 365, par exemple, contoso.com. Chaque utilisateur qui possède le domaine contoso.local est ensuite mis à jour contoso.com. Il s’agit toutefois d’un processus très complexe, et une solution plus facile est décrite dans la section suivante.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>Ajouter des suffixes UPN et mettre à jour vos utilisateurs
 
@@ -63,11 +63,11 @@ Une fois que vous avez mis à jour les UPN pour utiliser le domaine vérifié, v
   
 2. Dans la **fenêtre Domaines et trusts Active Directory,** cliquez avec le bouton droit sur Domaines et **trusts Active Directory,** puis choisissez **Propriétés.**
     
-    ![Cliquez avec le bouton droit sur Domaines et trusts Active Directory et choisissez Propriétés](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
+    ![Cliquez avec le bouton droit sur Domaines et trusts Active Directory et choisissez Propriétés.](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
 3. Sous **l’onglet Suffixes UPN,** dans la zone Autres **suffixes UPN,** tapez votre  nouveau suffixe UPN ou suffixes, puis choisissez Ajouter \> **appliquer**.
     
-    ![Ajouter un nouveau suffixe UPN](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
+    ![Ajoutez un nouveau suffixe UPN.](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
     Choisissez **OK** lorsque vous avez terminé d’ajouter des suffixes. 
     
@@ -83,7 +83,7 @@ Une fois que vous avez mis à jour les UPN pour utiliser le domaine vérifié, v
     
 3. Sous **l’onglet** Compte, dans la liste de listes de listes des suffixes UPN, choisissez le nouveau suffixe UPN, puis **choisissez OK.**
     
-    ![Ajouter un nouveau suffixe UPN pour un utilisateur](../media/54876751-49f0-48cc-b864-2623c4835563.png)
+    ![Ajoutez un nouveau suffixe UPN pour un utilisateur.](../media/54876751-49f0-48cc-b864-2623c4835563.png)
   
 4. Effectuer ces étapes pour chaque utilisateur.
     

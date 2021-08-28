@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b7b830c35443f47af72ed0d76303b96491648bc
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: 1dc5a22fe23a64669c7ab89ecd2141aff1659166
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483318"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574495"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -54,7 +54,7 @@ Utilisez les articles suivants pour configurer les conditions préalables requis
 
 - Créez une stratégie [anti-courrier](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) indésirable qui inclut la boîte aux lettres personnalisée dans laquelle ZAP pour le courrier indésirable et ZAP pour le hameçonnage sont désactivés **(la** section Purge automatique heure zéro activée pour la purge automatique \> **(ZAP)** n’est pas sélectionnée).
 
-- Désactivez la règle de courrier indésirable dans la boîte aux lettres personnalisée. Utilisez [configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux](configure-junk-email-settings-on-exo-mailboxes.md) lettres pour désactiver la règle de courrier indésirable. Une fois désactivé, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la collection de listes sécurisées de la boîte aux lettres.
+- Désactivez la règle de courrier indésirable dans la boîte aux lettres personnalisée. Utilisez [configurer les paramètres du courrier indésirable sur Exchange Online boîtes aux](configure-junk-email-settings-on-exo-mailboxes.md) lettres pour désactiver la règle de courrier indésirable. Une fois désactivé, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la collection de listes sécurisées de la boîte aux lettres.
 
 Si vous avez Microsoft Defender pour Office 365, vous devez également configurer les informations ci-dessous afin que notre filtrage avancé n’a pas d’impact sur les utilisateurs signalant des messages :
 
@@ -79,7 +79,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
   Pour plus d’informations sur l’activation ou la désactivation de l’accès Exchange Online PowerShell, consultez les rubriques suivantes :
 
   - [Activer ou désactiver l’accès à Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
-  - [Règles d’accès client Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [Règles d’accès client dans Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Utiliser le portail Microsoft 365 Defender pour configurer la boîte aux lettres d’envoi des utilisateurs
 
@@ -87,22 +87,22 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
 2. Dans la page **Soumissions d’utilisateurs,** ce que vous voyez est déterminé par le paramètre du bouton Message de rapport **Microsoft Outlook** est **Éteint** ou **Sur**:
 
-   - **Bouton Signaler Outlook** \> Microsoft **On** ![ Bascule : sélectionnez cette option si vous utilisez le add-in Signaler un message, le module de signalement du hameçonnage ou la création de rapports intégrée dans Outlook sur le web, puis configurez les ](../../media/scc-toggle-on.png) paramètres suivants :
+   - **Bouton Signaler Outlook** \> Microsoft **On** ![ Basculez. : sélectionnez cette option si vous utilisez le add-in Message de rapport, le module de signalement du hameçonnage ou la création de rapports intégrée dans Outlook sur le web, puis configurez les ](../../media/scc-toggle-on.png) paramètres suivants :
      - **Envoyez les messages signalés à**: Sélectionnez l’une des options suivantes :
        - **Microsoft**: la boîte aux lettres d’envoi utilisateur n’est pas utilisée (tous les messages signalés sont envoyés à Microsoft).
        - **Microsoft et la boîte aux lettres** de mon organisation : dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Les envois d’utilisateurs sont ensuite soumis à Microsoft pour analyse et à la boîte aux lettres personnalisée que votre équipe d’administration ou d’opérations de sécurité doit analyser.
-       - **Boîte aux lettres de mon** organisation : dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Utilisez cette option si vous souhaitez que le message ne soit envoyé qu’à un administrateur ou à l’équipe des opérations de sécurité pour analyse en premier. Les messages ne sont pas envoyés à Microsoft, sauf si l’administrateur les a transmis eux-mêmes.
+       - **Boîte aux lettres de mon organisation**: dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Utilisez cette option si vous souhaitez que le message ne soit envoyé qu’à un administrateur ou à l’équipe des opérations de sécurité pour analyse en premier. Les messages ne sont pas envoyés à Microsoft, sauf si l’administrateur les a transmis eux-mêmes.
 
           > [!IMPORTANT]
           > Les organisations gouvernementales américaines (Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD) peuvent uniquement configurer la boîte aux lettres **de mon organisation.** Les deux autres options sont désactivées.
           >
-          > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour réascaner et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
+          > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour la rescanée et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
 
-       Quelle que soit la valeur que vous avez sélectionnée pour Envoyer les **messages** signalés, les paramètres suivants sont disponibles :
+       Quelle que soit la valeur sélectionnée pour Envoyer les **messages** signalés, les paramètres suivants sont disponibles :
 
        - **Laisser les utilisateurs choisir s’ils souhaitent signaler leur message à Microsoft**
        - **Sélectionnez la section Options de rapport disponibles pour** les utilisateurs : sélectionnez au moins une des options suivantes :
-         - **Demandez-moi avant d’envoyer le message.**
+         - **Demandez-moi avant d’envoyer le message**
          - **Toujours signaler le message**
          - **Ne jamais signaler le message**
 
@@ -113,13 +113,13 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
      - **Section Expérience de rapport utilisateur**
        - **Avant** de signaler  l’onglet : dans les zones Titre et corps du **message,** entrez le texte descriptif que les utilisateurs voient avant de signaler un message à l’aide du add-in Signaler un message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi (courrier indésirable, non indésirable, hameçonnage, etc.).
-       - **Onglet** Après rapport  :  dans les zones Titre et Confirmation, entrez le texte descriptif que les utilisateurs voient après qu’ils ont signalé un message à l’aide du add-in Report Message ou du add-in Report Phishing. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi.
+       - **Onglet** Après rapport  : dans les zones Titre et **Confirmation,** entrez le texte descriptif que les utilisateurs voient après avoir signalé un message à l’aide du module de signalement du message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi.
 
        Comme indiqué sur la page, si vous sélectionnez une option qui envoie les messages signalés à Microsoft, le texte suivant est également ajouté à la notification :
 
           > Votre courrier électronique sera envoyé tel qu’il est à Microsoft pour analyse. Certains e-mails peuvent contenir des informations personnelles ou sensibles.
 
-   - **Bouton Signaler Outlook** \> Microsoft **Off** ![ Basculez : sélectionnez cette option si vous utilisez des outils de création de rapports tiers à la place du module de rapport de message, du module de signalement du hameçonnage ou de la création de rapports intégrée dans Outlook sur le web, puis configurez les ](../../media/scc-toggle-off.png) paramètres suivants :
+   - **Bouton Signaler Outlook** \> Microsoft **Off** ![ Basculez. : sélectionnez cette option si vous utilisez des outils de création de rapports tiers à la place du module de rapport de message, du module de signalement du hameçonnage ou de la création de rapports intégrée dans Outlook sur le web, puis configurez les ](../../media/scc-toggle-off.png) paramètres suivants :
      - Sélectionnez **Utiliser cette boîte aux lettres personnalisée pour recevoir les soumissions signalées par l’utilisateur.** Dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante qui peut recevoir du courrier électronique.
 
    Lorsque vous avez terminé, cliquez sur **Confirmer.** Pour effacer ces valeurs, cliquez sur **Restaurer**
@@ -142,7 +142,7 @@ Si vous souhaitez spécifier la raison signalée des messages joints d’origine
 - 2| ou non indésirable
 - 3| ou hameçonnage
 
-Par exemple :
+Par exemple :
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`

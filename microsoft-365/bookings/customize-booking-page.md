@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Modifiez le thème de couleur de votre page de réservation dans l’application Microsoft Bookings.
-ms.openlocfilehash: e1d5eeea44194ea0ad152c51fbf506f1c4e3cbd1e41f59621c76bd955f49dd6b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d1cd08d33d90424fa091f6dcce3a9878bb662dfe
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896722"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570352"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personnaliser et publier votre page de réservation
 
@@ -32,25 +32,25 @@ La section ci-dessous vous donne des informations sur la configuration de votre 
 
     La page de réservation interne ressemble à ceci :
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="Page Réservations":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="Page Réservations.":::
 
 - **Contrôle d’accès à la page de réservation :** exiger un compte Microsoft 365 de mon organisation à réserver  La sélection de cette option permet uniquement aux membres de votre organisation d’afficher votre page ou de réserver des services. L’accès à la page est autorisé via des vérifications d’informations d’identification pour s’assurer que le visiteur appartient à un compte au sein du client.
 
 - **Contrôle d’accès à la page de réservation : désactiver l’indexation du** moteur de recherche direct de la page de réservation Ce paramètre empêche votre page d’apparaître dans les résultats de recherche pour Google, Bing ou d’autres moteurs de recherche. La sélection de cette case garantit que l’accès à la page est limité au lien de page généré.
 
-- **Consentement à l’utilisation des données client** Lorsqu’il est sélectionné, le texte demandant le consentement de l’utilisateur ou du client pour que votre organisation utilise ses données apparaît sur la page Self-Service. L’utilisateur devra coché la case pour terminer la réservation.
+- **Consentement à l’utilisation des données client** Lorsqu’il est sélectionné, le texte demandant le consentement de l’utilisateur ou du client pour que votre organisation utilise ses données s’affiche sur Self-Service page. L’utilisateur devra coché la case pour terminer la réservation.
 
 - **Stratégie de planification,** **notifications** par courrier électronique et **personnel** Tous ces paramètres sont similaires à ceux disponibles pour chaque service sous l’onglet Services.
 
 - **Disponibilité** Il s’agit d’une option qui permet de définir des plages de dates et d’heures spécifiques de disponibilité pour un service. Dans le cas contraire, Bookings sera par défaut vos heures d’ouverture. Vous pouvez utiliser **l’option Disponibilité** ici pour des scénarios tels que des congés ou des heures prolongées.
 
-- **Personnaliser votre page** Choisissez les couleurs et les logos qui apparaissent sur Self-Service page, par exemple pour assurer la cohérence de la marque.
+- **Personnaliser votre page** Choisissez les couleurs et les logos qui apparaissent sur Self-Service page, par exemple pour la cohérence de la marque.
 
 - **Paramètres de région et de fuseau horaire** Ici, vous pouvez définir vos préférences de fuseau horaire et de langue pour la page Self-Service page. Nous vous recommandons de définir votre fuseau horaire local. Pour les visiteurs de votre page Self-Service, Bookings détecte automatiquement leurs fuseaux horaires locaux et affiche leur disponibilité dans leurs propres fuseaux horaires. Par exemple, si un rendez-vous est disponible à 13h00 PST, l’heure disponible s’affiche à 15h00 CST.
 
 Une fois que vous avez publié votre page de réservation, les clients voient votre page de réservation dans laquelle ils peuvent prendre des rendez-vous avec vous. La page de réservation orientée client ressemble à ceci :
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Page de réservation orientée client":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="Page de réservation orientée client.":::
 
 ## <a name="publish-the-booking-page"></a>Publier la page de réservation
 

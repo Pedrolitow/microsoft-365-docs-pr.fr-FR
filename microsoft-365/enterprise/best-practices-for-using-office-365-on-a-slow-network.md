@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Cet article vous guide à travers les meilleures pratiques que vous pouvez adopter pour l’utilisation de Office 365 sur un réseau lent.
-ms.openlocfilehash: b09fe2a38cd98a09e7d6375abccb0486b59c34c092f60c78144ebc695453f7c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 928e2156a6d559fab4b838118d972a4ae730e328
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819597"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575131"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Meilleures pratiques pour l’utilisation Office 365 sur un réseau lent
 
@@ -40,7 +40,7 @@ Même si vous ne contrôlez pas les performances réseau, cela vous permet de co
 
 ### <a name="major-factors-that-affect-network-performance"></a>Principaux facteurs qui affectent les performances du réseau
 
-![Facteurs de performances réseau](../media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
+![Facteurs de performances réseau.](../media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
 
  **Bande passante et latence**: les deux mesures les plus importantes des performances du réseau sont la bande passante et la latence :
 

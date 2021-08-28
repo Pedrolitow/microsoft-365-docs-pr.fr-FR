@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a099ab2241e1e2a4705fd54760a48cb3f95b421
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: f89303e22432f2e3297bec01912710daf21d7379
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387007"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570592"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Audit de solutions dans Microsoft 365
 
@@ -34,7 +34,7 @@ Les solutions d'audit de Microsoft 365 fournissent une solution intégrée pour 
 
 Microsoft 365 propose deux solutions d’audit : l’audit de base et l’audit avancé.
 
-![Principales fonctionnalités de l’audit de base et de l’audit avancé](..\media\AuditingSolutionsComparison.png)
+![Principales fonctionnalités de l’audit de base et de l’audit avancé.](..\media\AuditingSolutionsComparison.png)
 
 ### <a name="basic-audit"></a>Audit de base
 
@@ -44,7 +44,7 @@ L’audit de base vous offre la possibilité de journaliser et de rechercher des
 - **Des milliers d’événements d’audit peuvent faire l’objet de recherches**. Vous pouvez rechercher un large éventail d'activités auditées qui se produisent dans la plupart des services Microsoft 365 au sein de votre organisation. Pour obtenir une liste partielle des activités que vous pouvez rechercher, consultez [Activités auditées](search-the-audit-log-in-security-and-compliance.md#audited-activities). Pour obtenir la liste des services et fonctionnalités qui prennent en charge les activités auditées, consultez[Type d’enregistrement du journal d’audit](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
 - **Outil de recherche d’audit dans le Centre de conformité Microsoft 365**. Utilisez l’outil de recherche dans le journal d’audit dans le Centre de conformité Microsoft 365 pour rechercher des enregistrements d’audit. Vous pouvez rechercher des activités spécifiques, des activités effectuées par des utilisateurs spécifiques et des activités effectuées avec une plage de dates. Voici une capture d’écran de l’Outil de recherche d’audit dans le Centre de conformité.
 
-   ![Outil de recherche dans le journal d’audit dans le Centre de conformité Microsoft 365](../media/AuditLogSearchToolMCC.png)
+   ![Outil de recherche dans le journal d’audit dans le Centre de conformité Microsoft 365.](../media/AuditLogSearchToolMCC.png)
 
 - **Cmdlet Search-UnifiedAuditLog**. Vous pouvez également utiliser la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell (cmdlet sous-jacente pour l’outil de recherche) pour rechercher des événements d’audit ou les utiliser dans un script. Pour plus d'informations, voir :
 
@@ -77,14 +77,14 @@ Le tableau suivant compare les principales fonctionnalités disponibles dans les
 
 |Fonctionnalité|Audit de base|Audit avancé|
 |:------|:-------------|:-------------|
-|Activé par défaut|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
-|Des milliers d’événements d’audit peuvent faire l’objet de recherches.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
-|Outil de recherche d’audit dans le Centre de conformité Microsoft 365.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
-|Cmdlet Search-UnifiedAuditLog.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
-|Exporter des enregistrements d’audit dans un fichier CSV.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
-|Accès aux journaux d’audit via l’API Activité de gestion Office 365<sup>1</sup>.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)</sup>|
-|Rétention du journal d’audit de 90|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
-|Rétention du journal d’audit d’un an||![Pris en charge](../media/check-mark.png)|
+|Activé par défaut|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
+|Des milliers d’événements d’audit peuvent faire l’objet de recherches.|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
+|Outil de recherche d’audit dans le Centre de conformité Microsoft 365.|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
+|Cmdlet Search-UnifiedAuditLog.|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
+|Exporter des enregistrements d’audit dans un fichier CSV.|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
+|Accès aux journaux d’audit via l’API Activité de gestion Office 365<sup>1</sup>.|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)</sup>|
+|Rétention du journal d’audit de 90|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
+|Rétention du journal d’audit d’un an||![Pris en charge.](../media/check-mark.png)|
 |Rétention du journal d’audit de 10 ans <sup>2</sup>||![Pris en charge](../media/check-mark.png)|
 |Stratégies de rétention du journal d'audit||![Pris en charge](../media/check-mark.png)|
 |Événements importants et essentiels.||![Pris en charge](../media/check-mark.png)|
@@ -131,7 +131,7 @@ Pour commencer à utiliser les solutions d’audit dans Microsoft 365, consultez
 
 La première étape consiste à configurer l’audit de base, puis à lancer des recherches dans le journal d’audit.
 
-![Flux de travail pour configurer l’Audit avancé](../media/BasicAuditingWorkflow.png)
+![Flux de travail pour configurer l’Audit avancé.](../media/BasicAuditingWorkflow.png)
 
 1. Vérifiez que votre organisation dispose d’un abonnement qui prend en charge l’Audit de base et, le cas échéant, un abonnement qui prend en charge l’Audit avancé.
 
@@ -145,7 +145,7 @@ Pour obtenir des instructions plus détaillées, voir [Configurer l’audit de b
 
 Si votre organisation a un abonnement qui prend en charge l’Audit avancé, suivez les étapes pour configurer et utiliser les fonctionnalités supplémentaires d’Audit avancé.
 
-![Flux de travail pour configurer l’Audit avancé](../media/AdvancedAuditWorkflow.png)
+![Flux de travail pour configurer l’Audit avancé.](../media/AdvancedAuditWorkflow.png)
 
 1. Configurer l’audit avancé pour les utilisateurs. Cette étape comprend les tâches suivantes :
 

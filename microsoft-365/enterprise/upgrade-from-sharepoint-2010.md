@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Trouvez des informations et des ressources à mettre à niveau depuis SharePoint 2010 et SharePoint Server 2010. Le support pour les deux se termine le 13 avril 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5f0919bd80b68167ccfae38a461c79b704e2b803
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 8c57aa4d15ba6fbb95a59f28039db41303a536fd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394515"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575239"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à jour à jour de SharePoint 2010
 
@@ -68,7 +68,7 @@ Si vous choisissez une option sur le bas de l’échelle (bonne), vous devrez co
 
 Voici les trois chemins que vous pouvez prendre pour éviter la fin de la prise en charge de SharePoint Server 2010.
 
-![SharePoint Chemins de mise à niveau de Server 2010](../media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
+![SharePoint Chemins de mise à niveau de Server 2010.](../media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 > [!NOTE]
 > La fin de la prise en charge de SharePoint Server 2010 et SharePoint Foundation 2010 est actuellement prévue pour le 13 avril 2021. Mais assurez-vous de vérifier le [site de cycle de vie](https://support.microsoft.com/lifecycle) du produit pour les dates les plus à jour.
@@ -260,7 +260,7 @@ Vous pouvez créer un environnement de Microsoft 365/test, que vous pouvez confi
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![End of support for Office 2010 clients and servers and Windows 7 poster](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Fin de la prise en charge Office clients et serveurs 2010 et affiche Windows 7.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 Cette affiche illustre les différents chemins d’accès que vous pouvez prendre pour éviter les produits client et serveur Office 2010 et la fin de la prise en charge de Windows 7, avec des chemins d’accès et des options préférés pris en charge dans Microsoft 365 Entreprise mis en évidence.
 

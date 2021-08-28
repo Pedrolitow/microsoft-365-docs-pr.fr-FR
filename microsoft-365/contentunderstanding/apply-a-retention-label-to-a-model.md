@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: Découvrez comment appliquer une étiquette de rétention à un modèle dans SharePoint Syntex.
-ms.openlocfilehash: afc131654a536e37834b0a01bc6c46362debeb05ea0e4a372f9f713639032f88
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 505a1a90fa1a85c6d125343d49d9a0dbd01443b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859611"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574903"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Application d’une étiquette de rétention à un modèle dans SharePoint Syntex.
 
@@ -42,7 +42,7 @@ Vous pouvez appliquer une étiquette de rétention préexistante à votre modèl
 
 1. Sur la page d’accueil du modèle, sélectionnez **Paramètres du modèle**.</br>
 2. Dans **Paramètres du modèle**, dans la section **Sécurité et conformité**, sélectionnez le menu **Étiquette de rétention** pour afficher une liste des étiquettes de rétention que vous pouvez appliquer au modèle.</br>
- ![Menu Étiquette de rétention](../media/content-understanding/retention-labels-menu.png)</br> 
+ ![Menu Étiquette de rétention.](../media/content-understanding/retention-labels-menu.png)</br> 
 3. Sélectionnez l’étiquette de rétention que vous souhaitez appliquer au modèle, puis **Enregistrer**.</br>
 
 Après avoir appliqué l’étiquette de rétention à votre modèle, vous pouvez l’appliquer à une :
@@ -55,7 +55,7 @@ Si votre modèle de compréhension de document a déjà été appliqué à une b
 
 1. Sur la page d’accueil de votre modèle, dans la section **Bibliothèques avec ce modèle**, sélectionnez la bibliothèque de documents à laquelle vous souhaitez appliquer la mise à jour de l’étiquette de rétention. </br> 
 2. Sélectionnez **Synchroniser**. </br>
- ![Modèle de synchronisation](../media/content-understanding/sync-model.png)</br> 
+ ![Modèle de synchronisation.](../media/content-understanding/sync-model.png)</br> 
 
 
 Après avoir appliqué la mise à jour et l’avoir synchronisée avec votre modèle, vous pouvez vérifier si elle a été appliquée en procédant comme suit :
@@ -84,7 +84,7 @@ Vous pouvez appliquer une étiquette de rétention à un modèle de traitement d
 2. Dans <b>Paramètres avancés</b>, dans la section <b>Étiquette de rétention</b>, sélectionnez le menu, puis l’étiquette de rétention que vous voulez appliquer au modèle.</b>
 
  
-     ![Ajouter à un nouveau modèle de traitement de formulaire](../media/content-understanding/retention-label-forms.png)</br>
+     ![Ajouter à un nouveau modèle de traitement de formulaire.](../media/content-understanding/retention-label-forms.png)</br>
 
 3.  Une fois que vous avez terminé vos paramètres de modèle restants, sélectionnez <b>Créer</b> pour créer votre modèle.
 
@@ -102,11 +102,11 @@ Vous pouvez ajouter une étiquette de rétention à un modèle de traitement de 
 
 1. Dans la bibliothèque de documents à laquelle le modèle de traitement de formulaire est appliqué, sélectionnez le menu <b>Automatiser</b>, sélectionnez <b>Générateur IA</b>, puis sélectionnez <b>Afficher les détails du modèle de traitement de formulaire</b>.
 
-   ![Menu Automatiser](../media/content-understanding/automate-menu.png)</br>
+   ![Automatiser le menu.](../media/content-understanding/automate-menu.png)</br>
 
 2. Dans les détails du modèle, dans la section <b>Étiquette de rétention</b> , sélectionnez l’étiquette de rétention que vous voulez appliquer.  Sélectionnez <b>Enregistrer</b>.
 
-     ![Ajouter à un modèle de traitement de formulaire existant](../media/content-understanding/retention-label-model-details.png)</br> 
+     ![Ajouter à un modèle de traitement de formulaire existant.](../media/content-understanding/retention-label-model-details.png)</br> 
 
 #### <a name="to-add-a-retention-label-to-an-existing-form-processing-model-in-the-active-model-settings"></a>Pour ajouter une étiquette de rétention à un modèle de traitement de formulaire existant dans les paramètres du modèle actif
 
@@ -114,11 +114,11 @@ Vous pouvez ajouter une étiquette de rétention à un modèle de traitement de 
 
 1. Dans la bibliothèque de documents SharePoint dans laquelle le modèle est appliqué, sélectionnez l’icône <b>Afficher les modèles actifs</b>, puis sélectionnez <b>Afficher les modèles actifs</b>.</b>
 
-   ![Afficher les modèles actifs](../media/content-understanding/info-du.png)</br> 
+   ![Afficher les modèles actifs.](../media/content-understanding/info-du.png)</br> 
 
 2. Dans <b>Modèles actifs</b>, sélectionnez le modèle de traitement de formulaire auquel vous voulez appliquer l’étiquette de rétention.
 
-     ![Détails du modèle](../media/content-understanding/retention-label-model-details.png)</br> 
+     ![Détails du modèle.](../media/content-understanding/retention-label-model-details.png)</br> 
 
 
 3. Dans les détails du modèle, dans la section <b>Étiquette de rétention</b> , sélectionnez l’étiquette de rétention que vous voulez appliquer.  Sélectionnez <b>Enregistrer</b>.

@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Découvrez comment configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration.
-ms.openlocfilehash: 0db999306cc9cf7153d649e7ca49aca709425d6f
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: f8e5ac5695fd5d68da22883974ccafc8c6bf0f85
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483390"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570712"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration
 
@@ -50,7 +50,7 @@ L’administrateur Teams doit effectuer certaines étapes pour activer Learning 
 3. Informez les utilisateurs qui testent Le Learning (prévisualisation) pour basculer leur client de build vers la [prévisualisation](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)publique pour Teams .
 
 > [!IMPORTANT]
-> Pour les locataires de la prévisualisation publique, Learning  (prévisualisation) ne sera pas affiché dans les applications gérées dans le Centre d’administration Teams jusqu’à la publication finale du produit. Toutefois, les utilisateurs de la prévisualisation publique activée peuvent trouver Domaine Learning (prévisualisation) dans le magasin d’applications Teams et l’utiliser, une fois que les stratégies et autorisations correctes ont été définies.
+> Pour les locataires de la prévisualisation publique, Le  Learning (prévisualisation) ne sera pas affiché dans les applications gérées dans le Centre d’administration Teams jusqu’à la publication finale du produit. Toutefois, les utilisateurs de la prévisualisation publique activée peuvent trouver Domaine Learning (prévisualisation) dans le magasin d’applications Teams et l’utiliser, une fois que les stratégies et autorisations correctes ont été définies.
 
 ### <a name="user-steps-for-public-preview-tenants"></a>Étapes utilisateur pour les locataires de la prévisualisation publique
 
@@ -58,11 +58,11 @@ Les utilisateurs qui ont été activés pour le test [](/microsoftteams/public-p
 
 1. Les utilisateurs doivent sélectionner leur image de profil > **à propos de** la  >  **prévisualisation publique.**
 
-    ![Navigation supérieure dans l’application Teams affichant le profil de l’utilisateur](../media/learning/learning-app-select-profile-teams.png)
+    ![Navigation supérieure dans l’Teams application affichant le profil de l’utilisateur.](../media/learning/learning-app-select-profile-teams.png)
 
 2. Les utilisateurs doivent accepter les conditions générales de la prévisualisation publique.
 
-    ![Basculer vers la version d’aperçu public](../media/learning/learning-app-switch-to-public-preview.png)
+    ![Basculez vers la version d’aperçu public.](../media/learning/learning-app-switch-to-public-preview.png)
 
 3. Les utilisateurs peuvent désormais trouver Learning (prévisualisation) dans le Teams’application store et commencer à l’utiliser.
 
@@ -101,11 +101,11 @@ The Teams admin installs Viva Learning (Preview) and applies permission policies
 
     1. Users must select their profile image > **About** > **Public Preview**.
    
-        ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
+        ![Upper navigation in the Teams application showing user's profile.](../media/learning/learning-app-select-profile-teams.png)
     
     2. Users must accept the **Public preview** terms and conditions.
 
-        ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
+        ![Switch to public preview build.](../media/learning/learning-app-switch-to-public-preview.png)
  
 3. For organizations that have restrictive policies and need to enable Viva Learning (Preview), follow the process in the next section.
 

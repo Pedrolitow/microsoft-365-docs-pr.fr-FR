@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez l’outil Communications dans un cas Advanced eDiscovery pour envoyer, collecter et suivre des notifications de mise en attente légale.
+description: Utilisez l’outil Communications dans Advanced eDiscovery cas pour envoyer, collecter et suivre des notifications de mise en attente légale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b5bf8d070e5e1bf8fc44e16a6550a6e376e2716f
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: cc9e8c424550c2be12711d7ef098c95230b0b1a4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502698"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574363"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notification de non-droit
 
 À l Advanced eDiscovery les communications des dépositaires, les organisations peuvent gérer leur flux de travail autour de la communication avec les dépositaires. Grâce à l’outil communications, les équipes juridiques peuvent systématiquement envoyer, collecter et suivre les notifications de mise en attente légale. Le processus de création flexible permet également aux équipes de personnaliser le flux de travail de notification de conservation et le contenu des notifications envoyées aux dépositaires.
 
-![Communications Page](../media/CommunicationPage.PNG)
+![Page Communications.](../media/CommunicationPage.PNG)
 
 Cet article décrit les étapes du flux de travail de notification de mise en attente.
 
@@ -36,13 +36,13 @@ Cet article décrit les étapes du flux de travail de notification de mise en at
 
 La première étape consiste à spécifier les détails appropriés pour les notifications de conservation légale ou d’autres communications de dépositaire.
 
-![Page Communication de nom](../media/NameCommunication.PNG)
+![Page Communication de nom.](../media/NameCommunication.PNG)
 
 1. Dans la Centre de conformité Microsoft 365, go to **eDiscovery > Advanced** to display the list of cases in your organization.
 
 2. Sélectionnez un cas, cliquez sur **l’onglet Communications,** puis sur **Nouvelle communication.**
 
-3. Dans la page **Communication de** nom, spécifiez les détails de communication suivants (obligatoires).
+3. Dans la page **Communication du** nom, spécifiez les détails de communication suivants (obligatoires).
 
     - **Nom**: il s’agit du nom de la communication.
 
@@ -58,7 +58,7 @@ La première étape consiste à spécifier les détails appropriés pour les not
 
 Ensuite, vous pouvez créer et ajouter le contenu de l’avis de attente. Dans la page **Définir le contenu du portail** dans l’Assistant Créer une **communication,** spécifiez le contenu de l’avis de attente. Ce contenu est automatiquement intégré aux notifications d’émission, de ré émission, de rappel et d’escalade. En outre, ce contenu s’affiche dans le portail de conformité du dépositaire.
 
-![Page de contenu du portail](../media/PortalContent.PNG)
+![Page de contenu du portail.](../media/PortalContent.PNG)
 
 Pour créer le contenu du portail :
 
@@ -75,7 +75,7 @@ Pour créer le contenu du portail :
 
 Une fois que vous avez défini le contenu de l’avis de mise en attente, vous pouvez configurer les flux de travail autour de l’envoi et de la gestion du processus de notification. Les notifications sont des messages électroniques envoyés pour avertir et suivre les dépositaires. Chaque dépositaire ajouté à la communication reçoit la même notification.
 
-Pour configurer et envoyer un avis de mise en attente, vous devez inclure des notifications d’émission, de rééd envoy e et de publication.
+Pour configurer et envoyer un avis de mise en attente, vous devez inclure des notifications d’émission, de nouvelle émission et de publication.
 
 ### <a name="issuance-notification"></a>Notification d’émission
 
@@ -95,7 +95,7 @@ Pour créer une notification d’émission :
 
 ### <a name="re-issuance-notification"></a>Re-Issuance notification
 
-Au fur et à mesure de l’avancement du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Une fois que vous avez mis à jour le contenu du portail, la notification de nouvelle émission est envoyée et avertit les dépositaires des modifications apportées à leurs obligations de conservation.
+Au fur et à mesure de la progression du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Une fois que vous avez mis à jour le contenu du portail, la notification de nouvelle émission est envoyée et avertit les dépositaires des modifications apportées à leurs obligations de conservation.
 
 Pour créer une notification de nouvelle émission :
 
@@ -132,7 +132,7 @@ Pour créer une notification de publication :
 
 Si vous le souhaitez, vous pouvez simplifier le flux de travail pour le suivi des dépositaires qui ne répond pas en créant et en programmant des notifications de rappel et d’escalade automatisées.
 
-![Page Rappel/Escalade](../media/ReminderEscalations.PNG)
+![Page Rappel/Escalade.](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>Reminders
 
@@ -178,7 +178,7 @@ Pour planifier des escalades :
 
 Une fois que vous avez finalisé le contenu pour les notifications, sélectionnez les dépositaires à qui vous souhaitez envoyer des notifications.
 
-![Page Sélectionner les dépositaires](../media/SelectCustodians.PNG)
+![Page Sélectionner les dépositaires.](../media/SelectCustodians.PNG)
 
 Pour ajouter des dépositaires :
 

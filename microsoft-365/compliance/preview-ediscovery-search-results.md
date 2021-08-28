@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Afficher l’aperçu d’un exemple de résultats renvoyés par une recherche de contenu ou une recherche de découverte électronique principale dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: fa9d69672f86cb58ef362b4b3fbaec5ba00bd50ac48778a96a0358910a35f311
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac9929ee8639c4d653f8e9dfe680a5df5c6c3a7d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891734"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570796"
 ---
 # <a name="preview-ediscovery-search-results"></a>Afficher un aperçu des résultats de la recherche de découverte électronique
 

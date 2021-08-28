@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 5b585fb5ada85bfedebc4787620c70a610143a79
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 4bd6726550e444ffc31e241b8fb5c52c9967a267
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533314"
+ms.locfileid: "58570664"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>Intégrer les appareils Windows 10 à l’aide de la stratégie de groupe
 
@@ -43,7 +43,7 @@ ms.locfileid: "58533314"
 
 ## <a name="onboard-devices-using-group-policy"></a>Intégrer des appareils à l’aide d’une stratégie de groupe
 
-[![Image du PDF montrant les différents chemins de déploiement](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
+[![Image du PDF montrant les différents chemins de déploiement.](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
 Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [ou Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
 
@@ -65,7 +65,7 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 7. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou** le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier les **noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
-8. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.**
+8. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.**
 
 9. Dans le champ Nom, tapez un nom approprié pour la tâche programmée (par exemple, Defender pour le déploiement de point de terminaison).
 
@@ -179,7 +179,7 @@ Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à pa
 
    Chacun d’eux est alors uniquement mis en place pour l’audit.
 
-   ![Image de la configuration de réduction de la surface d’attaque](images/asr-guid.png)
+   ![Image de la configuration de réduction de la surface d’attaque.](images/asr-guid.png)
 
 Stratégie|Paramètre
 ---|---
@@ -241,72 +241,70 @@ Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiem
 Créez une stratégie de groupe ou groupez ces paramètres avec les autres stratégies. Cela dépend de l’environnement des clients et de la façon dont ils souhaitent déployer le service en ciblant différentes unités d’organisation (unités d’organisation).
 
 1. Après avoir choisi la gp ou en créer une nouvelle, modifiez-la.
-2. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **protection en temps réel.**
+2. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Antivirus Microsoft Defender**  >  **protection en temps réel.**
+:::image type="content" source="images/realtime-protect.png" alt-text="protection en temps réel.":::
+1. Dans le dossier Quarantaine, configurez la suppression des éléments du dossier Quarantaine.
 
-   :::image type="content" source="images/realtime-protect.png" alt-text="protection en temps réel":::
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="dossier de mise en quarantaine des éléments de suppression.":::
 
-3. Dans le dossier Quarantaine, configurez la suppression des éléments du dossier Quarantaine.
-
-    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="dossier de mise en quarantaine des éléments de suppression":::
-
-    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="mise en quarantaine de la suppression de la config":::
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="mise en quarantaine de la suppression de la config.":::
 
 4. Dans le dossier Analyse, configurez les paramètres d’analyse.
 
-    :::image type="content" source="images/gpo-scans.png" alt-text="analyses gpo":::
+    :::image type="content" source="images/gpo-scans.png" alt-text="analyses gpo.":::
 
 ### <a name="monitor-all-files-in-real-time-protection"></a>Surveiller tous les fichiers dans la protection en temps réel
 
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **protection en temps réel.**
 
-:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configurer la surveillance de l’activité des fichiers sortants entrants":::
+:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configurer la surveillance de l’activité des fichiers sortants entrants.":::
 
 ### <a name="configure-windows-defender-smart-screen-settings"></a>Configurer les Windows Defender de l’écran intelligent
 
 1. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Windows Defender’explorateur SmartScreen.** \> 
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Explorateur d’écran intelligent windows defender de la config":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer.":::
+ 
+2. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Windows Defender SmartScreen**  >  **Microsoft Edge**.
 
-2. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Windows Defender SmartScreen** \> **Microsoft Edge**.
-
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Config windows defender smart screen Edge":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Config windows defender smart screen Edge.":::
 
 ### <a name="configure-potentially-unwanted-applications"></a>Configurer les applications potentiellement indésirables
 
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender**.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config d’une application potentielle indésirable":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config de l’application potentielle indésirable.":::
 
-:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potentiel de config":::
+:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potentiel de la config.":::
 
 ### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>Configurer cloud Deliver Protection et envoyer automatiquement des exemples
 
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **MAPS**.
 
-:::image type="content" source="images/gpo-maps1.png" alt-text="maps":::
+:::image type="content" source="images/gpo-maps1.png" alt-text="cartes.":::
 
-:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="bloquer à la première vue":::
+:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="bloquer à la première vue.":::
 
-:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="joindre microsoft maps":::
+:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="rejoignez Microsoft Maps.":::
 
-:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="envoyer un exemple de fichier lorsque des analyses plus approfondies sont requises":::
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="envoyer un exemple de fichier lorsque des analyses plus approfondies sont requises.":::
 
 ### <a name="check-for-signature-update"></a>Vérifier la mise à jour des signatures
 
 Accédez aux **modèles d’administration** des stratégies de configuration \>  \>  \> **ordinateur Windows composants** \> **Antivirus Microsoft Defender** \> **mises à jour des signatures**
 
-:::image type="content" source="images/signature-update-1.png" alt-text="mise à jour de signature":::
+:::image type="content" source="images/signature-update-1.png" alt-text="mise à jour de signature.":::
 
-:::image type="content" source="images/signature-update-2.png" alt-text="mise à jour de définition de signature":::
+:::image type="content" source="images/signature-update-2.png" alt-text="mise à jour de définition de signature.":::
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configurer le délai d’out de livraison cloud et le niveau de protection
 
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **MpEngine**.
 Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Microsoft Defender stratégie de blocage par **défaut,** la stratégie est désactivée. C’est ce qui est nécessaire pour définir le niveau de protection sur les fenêtres par défaut.
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="vérification étendue du cloud de la config":::
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="vérification étendue du cloud.":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config":::
+:::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config.":::
 
 ## <a name="related-topics"></a>Voir aussi
 

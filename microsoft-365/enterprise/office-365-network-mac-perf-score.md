@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365'évaluation du réseau
-ms.openlocfilehash: c9533cb4189709ad4e32194371fb0863b4b5fa3f38eb035f7f0bdc505152b731
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00ce0bb2f0f6b93df9f0eeb8e8bd63629edae9d7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854729"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574699"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365'évaluation du réseau
 
@@ -28,7 +28,7 @@ Dans le centre Administration Microsoft 365, les évaluations  réseau regroupen
 La valeur des points d’évaluation réseau est de 0 à 100 et est une moyenne de la latence TCP, de la vitesse de téléchargement et des mesures de qualité de connexion UDP. Ces mesures sont compilées une fois par jour. Les mesures de performances pour les réseaux microsoft sont exclues de ces mesures pour s’assurer que les résultats de l’évaluation sont non ambigus et spécifiques au réseau d’entreprise.
 
 > [!div class="mx-imgBorder"]
-> ![Valeur d’évaluation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
+> ![Valeur d’évaluation du réseau.](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
 Une très faible valeur d’évaluation réseau suggère que Microsoft 365 clients auront des problèmes importants lors de la connexion au client ou de la maintenance d’une expérience utilisateur réactive. Une valeur élevée indique un réseau correctement configuré avec peu de problèmes de performances en cours. Une valeur de 80 % représente une ligne de base saine, au-dessus de laquelle vous ne devriez pas vous attendre à recevoir régulièrement des réclamations des utilisateurs concernant la connectivité ou la réactivité Microsoft 365 en raison des performances du réseau. Au fil des améliorations apportées à la connectivité réseau itérative, cette valeur augmente avec l’expérience utilisateur.
 
@@ -49,7 +49,7 @@ Une très faible valeur d’évaluation réseau suggère que Microsoft 365 clien
 Chaque évaluation réseau, qu’elle soit limitée au client ou à un emplacement de bureau spécifique, affiche un panneau avec des détails sur l’évaluation. Ce panneau présente un graphique à barres de l’évaluation sous la mesure d’un pourcentage et en tant que points totaux pour chaque charge de travail de composant, y compris uniquement les charges de travail où les données de mesure ont été reçues. Pour une évaluation du réseau d’emplacements de bureau, nous montrons également une comparaison avec le pourcentage de clients Microsoft 365 dans chacun des cinq bureaux qui ont signalé des données dans la même ville que votre bureau.
 
 > [!div class="mx-imgBorder"]
-> ![Exemple de valeur d’évaluation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> ![Exemple de valeur d’évaluation réseau.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 La **répartition de l’évaluation** dans le panneau présente l’évaluation de chacune des charges de travail de composant.
 
@@ -91,13 +91,13 @@ L SharePoint en ligne est réalisée à l’aide du tableau suivant. Tout numér
 | 2MBps          | 20     |
 | 0MBps          | 0      |
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 Par Microsoft Teams la qualité du réseau est mesurée en tant que latence UDP, gigue UDP et perte de paquets UDP. UDP est utilisé pour la connectivité multimédia audio et vidéo d’appel et de conférence pour Microsoft Teams. Cela peut être impacté par les mêmes facteurs que pour la latence et la vitesse de téléchargement, en plus des lacunes de connectivité dans la prise en charge UDP d’un réseau, car UDP est configuré séparément sur le protocole TCP le plus courant. La médiane (également appelée 50e centile ou mesure P50) est prise pour toutes les mesures des trois jours précédents. 
 
 Nous calculons un score d’opinion moyenne à partir de ces mesures UDP pour une échelle de 1 à 5. Ensuite, nous mions cela à l’échelle de 0 à 100 points pour l’évaluation Microsoft Teams réseau.  La valeur globale est de plus de 87,5 points et la valeur globale est inférieure à 50 points.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Connectivité réseau dans le centre de Administration Microsoft 365 (aperçu)](office-365-network-mac-perf-overview.md)
 

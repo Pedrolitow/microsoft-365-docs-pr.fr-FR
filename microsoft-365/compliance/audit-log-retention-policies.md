@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: aa5112eeedcfd0c46bba1d96a43e49051eb3ed9e
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 5427bbfc63381ab2763c0bf74adda978f4fc6af3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503082"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574867"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
 
@@ -59,7 +59,7 @@ L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal d
 
 4. Cliquez sur **Créer une stratégie de rétention d'audit**, puis complétez les champs suivants dans la page de menu volant:
 
-   ![Page de menu volant de la stratégie de rétention d'audit](../media/CreateAuditLogRetentionPolicy.png)
+   ![Page de menu volant de la stratégie de rétention d'audit.](../media/CreateAuditLogRetentionPolicy.png)
 
    1. **Nom de la stratégie** Le nom de la stratégie de rétention du journal d’audit. Ce nom doit être unique dans votre organisation, et ne peut pas être modifié une fois la stratégie créée.
 
@@ -87,7 +87,7 @@ Les stratégies de rétention du journal d’audit sont répertoriées sur l’o
 
 Les stratégies de rétention du journal d’audit sont répertoriées dans le tableau de bord. L’un des avantages de l’affichage des stratégies dans le tableau de bord est que vous pouvez cliquer sur la colonne **Priorité** pour répertorier les stratégies selon la priorité d’application. Comme indiqué précédemment, une valeur plus basse indique une priorité plus élevée.
 
-![Colonne de la priorité dans le tableau de bord des stratégies de rétention d’audit](../media/AuditLogRetentionDashboardPriority.png)
+![Colonne de priorité dans le Tableau de bord des stratégies de rétention d’audit.](../media/AuditLogRetentionDashboardPriority.png)
 
 Vous pouvez également sélectionner une stratégie pour afficher ses paramètres sur la page de menu volant.
 
@@ -106,7 +106,7 @@ Pour modifier une stratégie, sélectionnez-la pour afficher la page de menu vol
 
 ### <a name="delete-policies-in-the-dashboard"></a>Supprimer des stratégies dans le tableau de bord
 
-Pour supprimer une stratégie, cliquez sur **Supprimer** ![Icône supprimer](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg), puis confirmer la suppression de la stratégie. La stratégie est supprimée du tableau de bord, mais pourrait prendre au maximum 30 minutes pour être supprimée de votre organisation.
+Pour supprimer une stratégie, cliquez sur **Supprimer** ![ Supprimer l’icône.](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) icône, puis confirmer la suppression de la stratégie. La stratégie est supprimée du tableau de bord, mais pourrait prendre au maximum 30 minutes pour être supprimée de votre organisation.
 
 ## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>Créer et gérer des stratégies de rétention d’un journal d’audit dans PowerShell
 

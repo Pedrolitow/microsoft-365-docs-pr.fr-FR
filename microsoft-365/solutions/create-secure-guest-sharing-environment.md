@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: 37db4eaaf6c6cd8c6c173d52f68c23c16cfb1f3c7cccfc1eb35e610f679dff9d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1986140e2aa809e81415a8e581ce626c5100809d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53777803"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575431"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -81,7 +81,7 @@ Pour créer des conditions d’utilisation d’Azure AD, procédez comme suit :
 2. Accédez aux [Conditions d’utilisation](https://aka.ms/catou).
 3. Cliquez sur **Nouvelles conditions d’utilisation**.
 
-   ![Capture d'écran des paramètres des nouvelles conditions d'utilisation d'Azure AD](../media/azure-ad-guest-terms-of-use.png)
+   ![Capture d'écran des paramètres des nouvelles conditions d'utilisation d'Azure AD.](../media/azure-ad-guest-terms-of-use.png)
 
 4. Tapez un **Nom** et **Nom d'affichage**.
 6. Pour le **document Conditions d'utilisation**, accédez au fichier PDF que vous avez créé et sélectionnez-le.
@@ -132,11 +132,11 @@ Configurer une révision d’accès des invités
 9. Sélectionnez une date de début et une durée.
 10. Pour **Fin**, sélectionnez **Jamais**, puis cliquez sur **Suivant : Paramètres**.
 
-    ![Capture d’écran de l’onglet Révision de l’accès à Azure AD](../media/azure-ad-create-access-review.png)
+    ![Capture d’écran de l’onglet Révision de l’accès à Azure AD.](../media/azure-ad-create-access-review.png)
 
 11. Sous l’onglet **Paramètres**, examinez les paramètres de conformité aux règles de votre entreprise.
 
-    ![Capture d’écran de l’onglet des paramètres de révision d’accès d’Azure AD](../media/azure-ad-create-access-review-settings.png)
+    ![Capture d’écran de l’onglet des paramètres de révision d’accès d’Azure AD.](../media/azure-ad-create-access-review-settings.png)
 
 12. Cliquez sur **Suivant : Révision + Créer**.
 13. Tapez un **nom de révision**, puis examinez les paramètres.
@@ -170,7 +170,7 @@ Pour restreindre l'accès des invités au web uniquement pour les groupes et Mic
 10. Dans le panneau **Conditions**, cliquez sur **Applications clientes**.
 11. Dans le panneau **Applications clientes**, cliquez sur **Oui** pour **Configurer**, puis sélectionnez les paramètres **Applications mobiles et clients de bureau**, **Clients Exchange ActiveSync** et **Autres clients**. Désactivez la case à cocher **Navigateur**.
 
-    ![Capture d'écran des paramètres des applications clientes à accès conditionnel d'Azure AD](../media/azure-ad-conditional-access-client-mobile.png)
+    ![Capture d'écran des paramètres des applications clientes à accès conditionnel d'Azure AD.](../media/azure-ad-conditional-access-client-mobile.png)
 
 12. Cliquez sur **Terminé**.
 13. Sous **Contrôles d’accès**, cliquez sur **Accorder**.
@@ -276,7 +276,7 @@ Création d’une stratégie DLP
 10. Sous **Actions** cliquez sur **Ajouter une action**, puis sélectionnez **Restreindre l’accès ou chiffrer le contenu dans des emplacements Microsoft 365**.
 11. Activez la case à cocher **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** , puis sélectionnez l’option **Uniquement les personnes extérieures à votre organisation**.
 
-      ![Capture d’écran des options d’action de règle de protection contre la perte de données](../media/dlp-remove-guest-access-sensitive-files.png)
+      ![Capture d’écran des options d’action de règle de protection contre la perte de données.](../media/dlp-remove-guest-access-sensitive-files.png)
 
 12. Cliquez sur **Enregistrer**, puis sur **Suivant**.
 13. Sélectionnez vos options de test, puis cliquez sur **Suivant**.

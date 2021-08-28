@@ -1,6 +1,6 @@
 ---
 title: Commencer à piloter l’adoption de Sujets Microsoft Viva
-description: Découvrez comment stimuler l’adoption des Sujets Microsoft Viva dans votre organisation.
+description: Découvrez comment stimuler l’adoption des Sujets Microsoft Viva votre organisation.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -11,18 +11,18 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 591b83823aac1679209ed6cdd0069d559e9fe3e7adfbf7a3f24f0730f37ce912
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c1c8f46c3d569b6b43a87a6481d93b76729e48d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834698"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570940"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Commencer à piloter l’adoption de Sujets Microsoft Viva
 
 Avant de commencer l’adoption, vous devez comprendre les concepts impliqués dans la gestion des connaissances et rubriques. Le diagramme suivant illustre ce qui se produit lors de la découverte et de la curation des rubriques :
 
-![Architecture des rubriques](../media/knowledge-management/topic-management-architecture.png)
+![Architecture de Rubriques.](../media/knowledge-management/topic-management-architecture.png)
 
 - **Découverte** : les utilisateurs peuvent découvrir des connaissances dans les applications qu'ils utilisent tous les jours grâce à des cartes de sujets – ils peuvent également découvrir des sujets dans Microsoft Search.
 - **Curation** : les experts en la matière (PME) affinent les sujets par le biais de pages thématiques, et l'IA apprend à partir de leurs données. Le centre de rubriques contient des pages de rubriques que les utilisateurs peuvent explorer et que les experts peuvent gérer.
@@ -56,7 +56,7 @@ Examinez cette liste de conditions préalables pour tirer le meilleur parti de S
 
 Pour planifier l’adoption de Topics, vous devez :
 
-![Étapes à suivre pour planifier l’adoption](../media/knowledge-management/km-adoption-plan-adoption.png)
+![Étapes à suivre pour planifier l’adoption.](../media/knowledge-management/km-adoption-plan-adoption.png)
 
 1. Planifiez votre approche et vos scénarios cibles :
     - Pensez à définir et hiér donc les [scénarios.](#target-scenarios)
@@ -77,7 +77,7 @@ Pour planifier l’adoption de Topics, vous devez :
 
 ### <a name="target-scenarios"></a>Scénarios cibles
 
-Déterminez la façon dont vous souhaitez utiliser Rubriques Dans votre organisation afin de pouvoir les utiliser correctement. Voici quelques scénarios dans lequel la gestion des connaissances et les rubriques peuvent aider votre organisation :
+Déterminez comment vous souhaitez utiliser Rubriques Dans votre organisation afin de pouvoir les utiliser correctement. Voici quelques scénarios dans lequel la gestion des connaissances et les rubriques peuvent aider votre organisation :
 
 - L’intégration & formation : comprendre la terminologie, les projets clés et la culture d’une nouvelle organisation sont des étapes importantes de l’intégration. La découverte aisée de rubriques peut aider les nouveaux employés à se familiariser rapidement avec leur nouveau poste, rôle ou projet.
 - Recherche d’expertise et partage d’informations : lorsque des rubriques sont gérées et partagées, les membres de votre organisation peuvent trouver plus facilement des informations et des experts pour les aider dans leur travail quotidien.
@@ -87,11 +87,11 @@ Déterminez la façon dont vous souhaitez utiliser Rubriques Dans votre organisa
 
 Un responsable RH doit fournir aux nouveaux employés des informations qui les aideront à intégrer rapidement l’entreprise et leurs équipes. Ils souhaitent les faire pointer vers les ressources, les documents et les membres d’équipe qu’ils devront intégrer rapidement et efficacement. Ils recherchent une solution qui permet au nouvel employé de trouver rapidement les informations dont il a besoin sans avoir à effectuer des recherches dans plusieurs référentiels ou à quitter les applications qu’il utilise déjà.
 
-Par exemple :
+Par exemple :
 
 - Un employé (Jordanie) prend un nouveau rôle ou vient d’être embauché et ne fait que commencer par un rôle. La Jordanie souhaite être impliquée et productive aussi rapidement que possible. Toutefois, la Jordanie a également besoin d’aide pour trouver un point de départ.
 - Collègue (Kim) qui était dans le rôle avant que la Jordanie ne crée des pages de rubriques qui peuvent aider les nouveaux employés et toute autre personne à la recherche de ces informations.
-- Kim était un SME et avait l’autorisation d’examiner les pages de rubrique non confirmées. Les pages de rubriques non confirmées sont d’excellents points de départ pour ce que l’IA a découvert et créé, et Kim a pu les modifier pour ajouter des ressources d’experts, des définitions et épingler d’autres ressources.
+- Kim était un SME et avait les autorisations d’examiner les pages de sujet non confirmées. Les pages de rubriques non confirmées sont d’excellents points de départ pour ce que l’IA a découvert et créé, et Kim a pu les modifier pour ajouter des ressources d’experts, des définitions et épingler d’autres ressources.
 - À mesure que la Jordanie lit un nouveau billet sur SharePoint, un sujet est mis en surbrillant et survolé pour obtenir rapidement une définition du terme et qui contacter avec d’autres questions. Auparavant, Jordan aurait peut-être dû chercher ces informations et contacter des collègues pour savoir à qui s’adresser.
 - Le fait d’exposer ces informations par le biais de rubriques peut s’avérer très efficace, car même si ces informations étaient disponibles auparavant, elles étaient peut-être cloisonnées et difficiles à trouver. L’amener dans les applications que la Jordanie utilise et les aider à trouver ces experts peut également stimuler l’implication et la communauté. Cela peut également lui permettre de se sentir plus autonome face à son nouveau rôle.
 
@@ -121,7 +121,7 @@ Après avoir identifié vos scénarios, vous pouvez hiérarchiser les scénarios
 
 Une façon de les classer par ordre de priorité est de tracer vos scénarios dans une grille montrant l'impact par rapport à la facilité de mise en œuvre. Recherchez les scénarios qui ont un impact élevé et qui sont faciles à implémenter et qui en font votre priorité. Les scénarios à faible impact et difficiles à mettre en œuvre sont les moins prioritaires. Lorsque vous avez une victoire rapide avec un scénario à grand impact et facile à mettre en œuvre, cela aide les gens à s'enthousiasmer et à voir les possibilités d'utiliser les sujets.
 
-![Les scénarios à fort impact et faciles à implémenter sont prioritaires](../media/knowledge-management/topics-prioritize-scenarios.png)
+![Les scénarios à fort impact et faciles à implémenter sont prioritaires.](../media/knowledge-management/topics-prioritize-scenarios.png)
 
 Choisissez deux ou trois scénarios clés sur lesquels vous concentrerez dans un premier temps, travaillez avec vos premiers utilisateurs pour obtenir un retour d'information, puis procédez par étapes. De cette façon, vous pouvez itérer, apporter des améliorations et obtenir des commentaires afin de développer l’adoption au fil du temps.
 
@@ -155,7 +155,7 @@ Utilisez ces indicateurs pour mesurer la réussite de Rubriques Dans votre organ
       - Quantité de rubriques (confirmées et non confirmées dans votre liste de rubriques organisées).
       - Nombre de pages de rubriques publiées.
 1. Commentaires des utilisateurs finaux depuis des cartes de rubriques.
-1. Faites des enquêtes sur la satisfaction des employés. Les rubriques Rubriques doivent améliorer la capacité des employés à trouver des informations. Trouvez donc des moyens de recueillir leurs commentaires et leurs commentaires sur cette expérience.
+1. Faites des enquêtes sur la satisfaction des employés. Ces rubriques doivent améliorer la capacité des employés à trouver des informations. Trouvez donc des moyens de recueillir leurs commentaires et leurs commentaires sur cette expérience.
 1. Impact positif sur l’analyse de la recherche. Étant donné que les rubriques apparaissent dans l’expérience de recherche, au fil du temps, vous pouvez voir des taux réduit de recherches abandonnées, car les utilisateurs sont plus facilement en mesure de trouver les rubriques dans la recherche. 
 
 ### <a name="build-a-champion-network"></a>Créer un réseau champion
@@ -167,20 +167,20 @@ Créez un réseau champion dans votre organisation. Les champions sont important
 
 Vous pouvez recrutementr des champions de différents rôles : gestionnaires de connaissances et experts techniques.
 
-De nombreux réseaux champion utilisent Yammer comme plateforme. Dans Yammer, les personnes peuvent publier des questions et obtenir des réponses, et partager des témoignages. Il est difficile de passer le mot seul, afin que vous pouvez vous appuyer sur le réseau de personnes dans toute votre entreprise pour donner des conseils à leurs homologues et montrer comment leur équipe utilise Rubriques Afin que les autres équipes peuvent réfléchir à leurs propres scénarios.
+De nombreux réseaux champion utilisent Yammer comme plateforme. Dans Yammer, les personnes peuvent publier des questions et obtenir des réponses, et partager des témoignages. Il est difficile de faire passer le mot seul, afin que vous pouvez vous appuyer sur le réseau de personnes dans toute votre entreprise pour donner des conseils à leurs homologues et montrer comment leur équipe utilise Des rubriques De manière à ce que les autres équipes peuvent réfléchir à leurs propres scénarios.
 
 Certaines organisations utilisent des piratages (formels ou informels, virtuels ou en personne) pour rassembler des groupes de personnes pour travailler sur un projet spécifique. Par exemple, vous pouvez rassembler vos experts techniques et les faire collaborer pour organiser un ensemble de pages de rubriques.
 
 Réfléchissez à la façon dont vous pouvez reconnaître vos champions. Récompensez leurs activités, donnez-leur une certaine reconnaissance et générez un sentiment et un engagement de la communauté visibles afin qu’ils se sentent comme s’ils contribuent à quelque chose et qu’ils reviennent également de leurs investissements.
 
-Maintenant que vous êtes prêt à déployer, vous souhaitez vous assurer que vous encouragez l’engagement continu.
+Maintenant que vous êtes prêt à déployer, vous souhaitez vous assurer que vous encouragez l’engagement en cours.
 
 - Conservez des groupes Yammer actifs pour vos champions.
 - Partager des témoignages.
 - Hébergez régulièrement des événements d’engagement pour partager des articles ou introduire de nouvelles fonctionnalités.
-- Définissez des défis pour les personnes et exécutez des concurrences.
+- Définir des défis pour les personnes et exécuter des concurrences.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Lorsque vous êtes prêt à déployer Rubriques Microsoft Viva, vous devez impliquer les contacts concernés.
 

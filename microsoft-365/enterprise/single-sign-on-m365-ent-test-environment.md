@@ -18,26 +18,26 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 8304d8191d31f4e40dd35920c571c5fa01d258ee
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: f6fb0ac24f571c329070dd1667f6370c2067d4fd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354247"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574663"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Authentification unique transparente Azure AD pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
+*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
 
-Azure AD Seamless Single Sign-On (Seamless SSO) connecte automatiquement les utilisateurs lorsqu’ils sont sur leurs PC ou appareils connectés au réseau de leur organisation. Azure AD Seamless SSO fournit aux utilisateurs un accès facile aux applications basées sur le cloud sans avoir besoin de composants locaux supplémentaires.
+Azure AD Seamless Single Sign-On (Seamless SSO) connecte automatiquement les utilisateurs lorsqu’ils se connectent à leur PC ou appareils connectés au réseau de leur organisation. Azure AD Seamless SSO fournit aux utilisateurs un accès facile aux applications basées sur le cloud sans avoir besoin de composants locaux supplémentaires.
 
 Cet article explique comment configurer votre environnement de test Microsoft 365 pour l' sso transparente Azure AD.
 
-La configuration de l' sso transparente Azure AD implique deux phases :
+La configuration de l' ssO transparente Azure AD implique deux phases :
 - [Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Phase 2 : Configuration de l’authentification unique transparente Azure AD pour Azure AD Connect sur APP1](#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso)
    
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
@@ -48,7 +48,7 @@ Suivez les instructions de synchronisation [de hachage de](password-hash-sync-m3
 
 La configuration qui en résulte ressemble à ceci :
   
-![Environnement de test de l’entreprise simulée avec la synchronisation de hachage de mot de passe](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![Environnement de test de l’entreprise simulée avec synchronisation de hachage de mot de passe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Cette configuration se compose des éléments suivants : 
   
@@ -94,7 +94,7 @@ Ensuite, testez la possibilité de vous inscrire à votre abonnement avec le <st
 
 4. Dans **l’intranet local,** sélectionnez **Avancé**.
 
-5. Dans **Ajouter ce site web à la zone,** entrez **https <span>://</span>autologon.microsoftazuread-sso.com**, **sélectionnez Ajouter**  >  **Fermer**  >  **OK**  >  **.**
+5. Dans **Ajouter ce site web à la zone,** entrez **https <span>://</span>autologon.microsoftazuread-sso.com**, **sélectionnez Ajouter**  >  **Fermer**  >    >  **OK**.
 
 6. Déconnectez-vous, puis reconnectez-vous avec un compte différent.
 
@@ -104,7 +104,7 @@ Veuillez noter que même si l’utilisateur User1 dispose des autorisations d’
 
 Voici la configuration obtenue :
 
-![Environnement de test de l’entreprise simulée avec l’authentification directe](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![Environnement de test de l’entreprise simulée avec authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
 Cette configuration se compose des éléments suivants : 
 

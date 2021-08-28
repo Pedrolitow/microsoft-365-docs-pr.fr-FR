@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Affichez vos applications.
-ms.openlocfilehash: 9e67f5115e715f804cf91d95c24760a25fdf869c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 8e9ac5fda62e015bc1e2a5df11b618afa508a4a4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394527"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574411"
 ---
 # <a name="view-your-apps"></a>Afficher vos applications
 
@@ -34,7 +34,7 @@ La gouvernance des applications Microsoft vous permet d’obtenir rapidement des
 
 Pour obtenir un résumé des applications de votre client, accédez à **Centre de conformité Microsoft 365 > Gouvernance des applications > Applications**.
 
-![Page récapitulative de l’application MAPG dans le Centre de conformité Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-apps.png)
+![Page récapitulative de l’application MAPG dans le Centre de conformité Microsoft 365.](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
 >[!Note]
 > Votre compte de connexion doit avoir l’un des [ces rôles](app-governance-get-started.md#administrator-roles) pour afficher les données de gouvernance des applications.

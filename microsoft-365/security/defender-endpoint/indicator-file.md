@@ -17,18 +17,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6b0655f0a4e6a0d00ab93409367b4e98e57b059e
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 793ca89925e98bfc622357e126e4f0c44893c3cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683967"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574639"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -98,12 +98,15 @@ Dans Microsoft 365 Defender, go to Paramètres > Endpoints > Indicators > add ne
 
 > [!IMPORTANT]
 >
-> - En règle générale, les blocs de fichiers sont appliqués et supprimés en quelques minutes, mais peuvent prendre plus de 30 minutes.
-> - S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé est appliquée. Une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier SHA-1, qui l’emporte sur une stratégie IoC de hachage de fichier MD5 si les types de hachage définissent le même fichier. Cela est toujours vrai quel que soit le groupe d’appareils.
-> - Dans tous les autres cas, si des stratégies IoC de fichier en conflit avec la même cible d’application sont appliquées à tous les appareils et au groupe de l’appareil, pour un appareil, la stratégie dans le groupe d’appareils l’emporte.
-> - Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage du fichier IoC est réduite. Toutefois, `EnableFileHashComputation` l’activation peut avoir un impact sur les performances de l’appareil. Par exemple, la copie de fichiers de grande taille à partir d’un partage réseau sur votre appareil local, en particulier sur une connexion VPN, peut avoir un impact sur les performances de l’appareil.
+>- En règle générale, les blocs de fichiers sont appliqués et supprimés en quelques minutes, mais peuvent prendre plus de 30 minutes.
 >
-> Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, voir [CSP Defender.](/windows/client-management/mdm/defender-csp)
+>- S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé est appliquée. Une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier SHA-1, qui l’emporte sur une stratégie IoC de hachage de fichier MD5 si les types de hachage définissent le même fichier. Cela est toujours vrai quel que soit le groupe d’appareils.
+>
+>- Dans tous les autres cas, si des stratégies IoC de fichier en conflit avec la même cible d’application sont appliquées à tous les appareils et au groupe de l’appareil, pour un appareil, la stratégie dans le groupe d’appareils l’emporte.
+>
+>- Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage du fichier IoC est réduite. Toutefois, `EnableFileHashComputation` l’activation peut avoir un impact sur les performances de l’appareil. Par exemple, la copie de fichiers de grande taille à partir d’un partage réseau sur votre appareil local, en particulier sur une connexion VPN, peut avoir un impact sur les performances de l’appareil.
+>
+>   Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, voir [CSP Defender.](/windows/client-management/mdm/defender-csp)
 
 ## <a name="private-preview-advanced-hunting-capabilities"></a>Prévisualisation privée : fonctionnalités de recherche avancées
 
@@ -129,7 +132,7 @@ Fichiers :
 
 Certificats :
 
-- EUS:Win32/CustomCertEnterpriseBlock!cl
+- EUS:Win32/CustomCertEnterpriseBlock!cl  
 
 L’activité d’action de réponse peut également être vue dans la chronologie de l’appareil.
 
@@ -151,20 +154,15 @@ S’il existe des stratégies IoC de fichier en conflit avec le même type d’a
 
 Les fonctionnalités gestion des vulnérabilités d’application vulnérables aux menaces et aux menaces utilisent les IOC de fichier pour l’application et suivent l’ordre de gestion des conflits ci-dessus.
 
-### <a name="examples"></a>Exemples
+### <a name="examples"></a>範例
 
-<br>
-
-****
-
-|Composant|Application des composants|Action de l’indicateur de fichier|Résultat|
+|Composant|Application des composants|Action de l’indicateur de fichier|Résultat
 |---|---|---|---|
-|Exclusion du chemin d’accès au fichier de réduction de la surface d’attaque|Autoriser|Bloquer|Bloquer|
-|Règle de réduction de la surface d’attaque|Bloquer|Autoriser|Autoriser|
-|Windows Defender Application Control|Autoriser|Bloquer|Autoriser|
-|Windows Defender Application Control|Bloquer|Autoriser|Bloquer|
-|Antivirus Microsoft Defender exclusion|Autoriser|Bloquer|Autoriser|
-|
+|Exclusion du chemin d’accès au fichier de réduction de la surface d’attaque|Autoriser|Bloquer|Bloquer
+|Règle de réduction de la surface d’attaque|Bloquer|Autoriser|Autoriser
+|Windows Defender Application Control|Autoriser|Bloquer|Autoriser
+|Windows Defender Application Control|Bloquer|Autoriser|Bloquer
+|Antivirus Microsoft Defender exclusion|Autoriser|Bloquer|Autoriser
 
 ## <a name="see-also"></a>Voir aussi
 

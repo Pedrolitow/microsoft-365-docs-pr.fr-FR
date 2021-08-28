@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez comment gérer des rubriques dans le centre de rubriques Sujets Microsoft Viva.
-ms.openlocfilehash: 33d706a0801d8a91d22767b5b03461ba79cf8ff7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 87e944c232d552f5a0808765a1303750eb840387
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255606"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570952"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Gérer les rubriques dans le centre de rubriques Sujets Microsoft Viva
 
@@ -88,13 +88,13 @@ Pour consulter une rubrique suggérée :
     
    - Sélectionnez **le x** si vous souhaitez supprimer la rubrique.
 
-    Les rubriques confirmées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **la liste** Confirmée.
+    Les rubriques confirmées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **la liste** confirmée.
 
     Les rubriques supprimées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **l’onglet** Supprimé.
 
 ### <a name="quality-score"></a>Score de qualité
 
-Un score de qualité est attribué à chaque rubrique qui apparaît sur la page **Rubriques** suggérées. Le score de qualité reflète la quantité d’informations que l’utilisateur moyen verra pour les informations sur le sujet, en gardant à l’esprit que chaque utilisateur peut voir plus ou moins d’informations en raison des autorisations qu’il peut ou non avoir sur les informations d’une rubrique. 
+Un score de qualité est attribué à chaque rubrique qui apparaît dans la page **Rubriques** suggérées. Le score de qualité reflète la quantité d’informations que l’utilisateur moyen verra pour les informations sur le sujet, en gardant à l’esprit que chaque utilisateur peut voir plus ou moins d’informations en raison des autorisations qu’il peut ou non avoir sur les informations d’une rubrique. 
 
 Le score de qualité peut aider à donner un aperçu des rubriques les plus pertinentes et peut être utile pour trouver des rubriques qui peuvent avoir besoin d’être modifiées manuellement. Par exemple, une rubrique avec un score de qualité inférieur peut être le résultat de l’SharePoint des utilisateurs sur les fichiers ou sites pertinents que l’IA a inclus dans la rubrique. Un collaborateur peut alors modifier la rubrique afin d’nclure les informations (le cas échéant), lesquelles seront ensuite consultables par tous les utilisateurs qui peuvent consulter la rubrique.
 
@@ -116,13 +116,13 @@ Notez que vous pouvez toujours choisir de rejeter une rubrique confirmée. Pour 
 
 ## <a name="published-topics"></a>Rubriques publiées
 
-Dans la page **Gérer les rubriques,** les rubriques qui ont été découvertes dans SharePoint emplacements sources spécifiés sont répertoriées sous **l’onglet** Publié. Les rubriques publiées ont été modifiées afin que des informations spécifiques apparaissent toujours aux personnes qui rencontrent la page. Les rubriques créées manuellement sont également répertoriées ici.
+Dans la page Gérer **les rubriques,** les rubriques qui ont été découvertes dans votre SharePoint sources spécifiées sont répertoriées sous l’onglet Publié.  Les rubriques publiées ont été modifiées afin que des informations spécifiques apparaissent toujours aux personnes qui rencontrent la page. Les rubriques créées manuellement sont également répertoriées ici.
 
-   ![Gérer les rubriques](../media/knowledge-management/manage-topics-new.png)
+   ![Gérer les rubriques.](../media/knowledge-management/manage-topics-new.png)
 
 ## <a name="removed-topics"></a>Rubriques supprimées
 
-Dans la page Gérer **les rubriques,** les rubriques qui ont été découvertes dans SharePoint emplacements sources spécifiés sont répertoriées sous **l’onglet** Supprimé. Certaines rubriques suggérées peuvent apparaître ici en fonction des votes de l’utilisateur final sur les cartes de sujet dans le centre de rubriques.
+Dans la page Gérer **les rubriques,** les rubriques qui ont été découvertes dans SharePoint emplacements sources spécifiés sont répertoriées sous **l’onglet** Supprimé. Certaines rubriques suggérées peuvent apparaître ici en fonction des votes des utilisateurs finaux sur les cartes de sujet dans le centre de rubriques.
 
 Les rubriques supprimées peuvent être ajoutées ultérieurement en tant que rubriques consultables si nécessaire. Si vous souhaitez rajouter une rubrique supprimée en tant que rubrique consultable :
 
@@ -136,6 +136,6 @@ Les rubriques supprimées peuvent être ajoutées ultérieurement en tant que ru
 
 Ce graphique dans l’affichage Tableau de bord vous permet de voir le nombre de rubriques dans votre centre de rubriques Rubriques. Le graphique présente le nombre de rubriques par étape du cycle de vie des rubriques et indique également la tendance des nombres de rubriques au fil du temps. Les gestionnaires de connaissances peuvent surveiller visuellement la fréquence à laquelle les nouvelles rubriques sont découvertes par l’IA et la fréquence à laquelle les rubriques sont confirmées ou publiées par le gestionnaire de connaissances ou les actions de l’utilisateur.
 
-Les gestionnaires de connaissances peuvent voir un nombre de rubriques représenté dans la liste des rubriques de la page Gérer les **rubriques** différent de celui qu’ils voient dans le tableau de bord. Cela est dû au fait qu’un gestionnaire de connaissances n’a peut-être pas accès à toutes les rubriques. Le nombre présenté dans l’affichage tableau de bord est pris avant d’appliquer le contrôle d’autorisation. 
+Les gestionnaires de connaissances peuvent voir un nombre différent de rubriques représentées dans la liste des rubriques de la page Gérer les **rubriques** qu’ils ne voient dans le tableau de bord. Cela est dû au fait qu’un gestionnaire de connaissances n’a peut-être pas accès à toutes les rubriques. Le nombre présenté dans l’affichage tableau de bord est pris avant d’appliquer le contrôle d’autorisation. 
 
    ![Capture d’écran du tableau de bord nombre de rubriques.](../media/knowledge-management/topic-count-dashboard.png)

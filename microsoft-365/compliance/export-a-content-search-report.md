@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le Centre de conformité Microsoft 365, vous pouvez exporter un rapport de résultats de recherche. Le rapport contient un résumé des résultats de la recherche et un document contenant des informations détaillées sur chaque élément qui serait exporté.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5307bab55f838697e63559834653b54f06c86e7
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 56a61bb1cd0fa9952f85d75ae50f42754c583ce7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503094"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570244"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 
@@ -73,17 +73,17 @@ La première étape consiste à préparer le rapport pour le téléchargement ve
   
 2. Dans le menu **Actions** en bas de la page de menu volant de recherche, cliquez sur **Exporter le rapport.**
 
-   ![Option Exporter le rapport dans le menu Actions](../media/ActionMenuExportReport.png)
+   ![Option Exporter le rapport dans le menu Actions.](../media/ActionMenuExportReport.png)
 
    La page **de présentation** du rapport d’exportation s’affiche. Les options de rapport d’exportation disponibles pour exporter des informations sur la recherche varient selon que les résultats de la recherche sont situés dans des boîtes aux lettres ou des sites ou une combinaison des deux.
   
 3. Sous **Options de sortie,** choisissez l’une des options suivantes :
   
-   ![Exporter les options de sortie](../media/ExportOutputOptions.png)
+   ![Exporter les options de sortie.](../media/ExportOutputOptions.png)
 
     - **Tous les éléments, à l’exception** de ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons. Cette option exporte uniquement les informations sur les éléments indexés.
   
-    - Tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres raisons.** Cette option exporte des informations sur les éléments indexés et non indexés.
+    - Tous les éléments, y compris ceux qui ont un format non reconnu, sont chiffrés ou n’ont pas été **indexés pour d’autres raisons.** Cette option exporte des informations sur les éléments indexés et non indexés.
   
     - Seuls les éléments qui ont un format non reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres raisons.** Cette option exporte uniquement les informations sur les éléments nonndex.
 
@@ -93,7 +93,7 @@ La première étape consiste à préparer le rapport pour le téléchargement ve
 
    - Si vous ne sélectionnez pas cette option, les rapports d’exportation contiennent des informations sur tous les messages renvoyés par la recherche, y compris les doublons.
 
-     Pour plus d’informations sur la dédoplication et la façon dont les éléments dupliqués sont identifiés, voir Dédoplication dans les résultats de recherche [eDiscovery.](de-duplication-in-ediscovery-search-results.md)
+     Pour plus d’informations sur la dédoplication et la façon dont les éléments dupliqués sont identifiés, voir Dédoplication dans les résultats de recherche [eDiscovery](de-duplication-in-ediscovery-search-results.md).
 
 5. Cliquez **sur Générer un rapport.**
 
@@ -122,7 +122,7 @@ L’étape suivante consiste à télécharger le rapport à partir de la stockag
 
 6. Dans **l’outil d’exportation eDiscovery,** faites les choses suivantes :
 
-   ![Outil d’exportation eDiscovery](../media/eDiscoveryExportTool.png)
+   ![Outil d’exportation eDiscovery.](../media/eDiscoveryExportTool.png)
 
    1. Collez la clé d’exportation que vous avez copiée à l’étape 3 dans la zone appropriée.
   
@@ -140,7 +140,7 @@ Lorsque vous générez et exportez un rapport sur les résultats d’une recherc
 
    Si vous incluez des éléments nonndes lors de l’exportation du rapport, le nombre d’éléments nonndex est inclus dans le nombre total de résultats de recherche estimés et dans le nombre total de résultats de recherche téléchargés (si vous de étiez pour exporter les résultats de recherche) répertoriés dans le rapport récapitulatif d’exportation. En d’autres termes, le nombre total d’éléments à télécharger est égal au nombre total de résultats estimés et au nombre total d’éléments nonndex.
   
-- **Manifeste :** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Si vous avez activé l’option de dédoplication, les messages en double ne sont pas inclus dans le fichier manifeste.
+- **Manifeste :** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Si vous avez activé l’option de déplication, les messages en double ne sont pas inclus dans le fichier manifeste.
 
 - **Résultats :** Un Excel qui contient une ligne contenant des informations sur chaque élément indexé qui serait exporté avec les résultats de la recherche. Pour le courrier électronique, le journal des résultats contient des informations sur chaque message, y compris : 
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: daedf3ebbf88c70cf5b3889a9d7560800ad16f5f
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 9af685147ee010ec4cc6e6024df28d98475e4b15
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595243"
+ms.locfileid: "58570700"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Résolution des problèmes sur Microsoft Defender pour point de terminaison sur Android
 
@@ -34,7 +34,7 @@ ms.locfileid: "58595243"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Lors de l’intégration d’un appareil, vous pouvez voir des problèmes de sign in après l’installation de l’application.
+Lors de l’intégration d’un appareil, vous pouvez voir des problèmes de connectez-vous après l’installation de l’application.
 
 Lors de l’intégration, vous pouvez rencontrer des problèmes de connectez-vous après l’installation de l’application sur votre appareil.
 
@@ -56,7 +56,7 @@ Une version antérieure de l’application « Microsoft Authenticator » est ins
 
 **Solution :**
 
-Installer la dernière version et [les](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) Microsoft Authenticator à partir de Google Play Store et essayer à nouveau
+Installer la dernière version de [Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) à partir de Google Play Store et essayer à nouveau
 
 ## <a name="sign-in-failed---invalid-license"></a>Échec de la signature - Licence non valide
 
@@ -68,7 +68,7 @@ Installer la dernière version et [les](https://play.google.com/store/apps/detai
 
 **Cause :**
 
-Vous n’avez pas Microsoft 365 licence attribuée ou votre organisation n’en a pas pour Microsoft 365 Entreprise abonnement.
+Vous n’avez pas de licence Microsoft 365 attribuée ou votre organisation n’a pas de licence pour l’abonnement Microsoft 365 Entreprise.
 
 **Solution :**
 
@@ -84,7 +84,7 @@ Les sites web de hameçonnage usurpent l’identité de sites web dignes de conf
 
 - **Érmi**
 
-L’hameçonnage et les menaces web dangereuses détectées par Defender pour Endpoint pour Android ne sont pas bloqués sur certains appareils Android. Les fonctionnalités suivantes ne fonctionnent pas sur ces appareils.
+L’hameçonnage et les menaces web dangereuses détectées par Defender pour Endpoint pour Android ne sont pas bloqués sur certains appareils. Les fonctionnalités suivantes ne fonctionnent pas sur ces appareils.
 
 ![Image du site signalée comme non sûre.](images/0c04975c74746a5cdb085e1d9386e713.png)
 
@@ -112,14 +112,14 @@ Defender App demande l’autorisation Optimisation de la batterie/Protection per
 
 **Cause :**
 
-Il a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de batterie.
+Xiomi a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de la batterie.
 
 **Solution :**
 
 Nous travaillons avec OEM pour trouver une solution permettant d’activer cette autorisation à partir de l’écran d’intégration de l’application. Nous mettreons à jour la documentation une fois ce problème résolu.
 Les utilisateurs peuvent suivre ces étapes pour activer les mêmes autorisations à partir des paramètres de l’appareil : 
 
-1. Go to **Paramètres** on your device.
+1. Go to **Settings** on your device.
 
 2. Recherchez et sélectionnez **Optimisation de la batterie.**
 

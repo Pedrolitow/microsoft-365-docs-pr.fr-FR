@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: Au cours d’un examen, vous pouvez utiliser le bouton Nouvelle tentative pour résoudre les recherches de contenu qui ont des erreurs d’emplacement de contenu.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a67702e7c9d3c307ed44fe52c86c8b080f8d1e01e7cf9dcdc9dfb3929c638bf6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee60ab8aa5dad32360303f31924995f110ed99cc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795676"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574122"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Réessayer une recherche de contenu pour résoudre une erreur d’emplacement de contenu
 
@@ -38,7 +38,7 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-Ces erreurs (avec des codes d’erreur de CS001-002, CS003-002, CS008-009, CS012-002 et d’autres erreurs de la forme CS0XX-0XX) indiquent que la recherche de contenu n’a pas réussi à rechercher des emplacements de contenu spécifiques ; dans cet exemple, deux boîtes aux lettres n’ont pas été recherchés. Ces erreurs sont affichées dans la page de présentation des détails de l’état de la recherche de contenu.
+Ces erreurs (avec des codes d’erreur de CS001-002, CS003-002, CS008-009, CS012-002 et d’autres erreurs de la forme CS0XX-0XX) indiquent que la recherche de contenu n’a pas réussi à rechercher des emplacements de contenu spécifiques ; dans cet exemple, deux boîtes aux lettres n’ont pas été recherchés. Ces erreurs s’affichent dans la page de présentation des détails de l’état de la recherche de contenu.
 
 ## <a name="cause-of-content-location-errors"></a>Cause des erreurs d’emplacement de contenu
 
@@ -48,7 +48,7 @@ Lorsque vous recherchez un grand nombre de boîtes aux lettres, la recherche est
 
 Le redémarrage de la recherche entraîne souvent des erreurs similaires sur différents serveurs. Au lieu de redémarrer la  recherche, cliquez sur le bouton Nouvelle tentative qui s’affiche en haut de la page des résultats de la recherche.
 
-![Cliquez sur le bouton Nouvelle tentative pour résoudre les erreurs d’emplacement de contenu](../media/retrycontentsearch3.png)
+![Cliquez sur le bouton Nouvelle tentative pour résoudre les erreurs d’emplacement de contenu.](../media/retrycontentsearch3.png)
 
 Cela entraîne une nouvelle tentative de recherche uniquement pour les boîtes aux lettres qui ont échoué. Lorsque vous retentez la recherche, les autres résultats renvoyés avec succès sont conservés.
 

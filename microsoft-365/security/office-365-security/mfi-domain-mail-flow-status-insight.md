@@ -14,12 +14,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu de l’état du flux de messagerie de domaine supérieur dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour résoudre les problèmes de flux de messagerie liés à leurs enregistrements MX.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0258aeb57f9821091f29f884a42266da47e63dee4adf44a99b3f22154549d19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c0c0eed3cffaadd76f18b9b446ac14873712f6f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56770468"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574555"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Informations sur l’état du flux de messagerie du domaine dans le Centre de sécurité & conformité
 
@@ -34,7 +34,7 @@ ms.locfileid: "56770468"
 
 Cette information vous permet d’identifier et de dépanner les domaines qui rencontrent des problèmes de ***flux*** de messagerie. Par exemple, le domaine ne peut pas recevoir de courrier externe car le domaine a expiré ou le domaine a un enregistrement MX incorrect.
 
-![Widget d’état de flux de domaine supérieur dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-top-domain-mail-flow-status-widget.png)
+![Widget d’état de flux de domaine supérieur dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité.](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
 Lorsque vous cliquez sur Afficher les  **détails** dans le widget, un flyout d’état de domaine s’affiche pour vous fournir plus de détails sur l’état de chaque domaine :
 
@@ -48,7 +48,7 @@ Lorsque vous cliquez sur Afficher les  **détails** dans le widget, un flyout d�
 
 Vous pouvez cliquer **sur Afficher plus** pour afficher les mêmes informations pour d’autres domaines.
 
-![Volant d’informations dans l’aperçu de l’état du flux de messagerie du domaine Supérieur](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+![Volant d’informations dans l’aperçu de l’état du flux de messagerie du domaine Supérieur.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
 ## <a name="see-also"></a>Voir aussi
 

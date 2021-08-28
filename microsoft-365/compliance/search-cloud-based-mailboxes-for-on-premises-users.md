@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez les outils eDiscovery dans Microsoft 365 pour rechercher et exporter des données de conversation Teams des utilisateurs locaux dans un déploiement Exchange hybride.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa90f79faa20d930a9740c852767663f843cba51
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 1dfd3ebe278f704cc878beaa1711f117d57551bc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507841"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574783"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Recherche de données de conversations Teams pour les utilisateurs locaux
 
@@ -48,7 +48,7 @@ Si un utilisateur Microsoft Teams a une boîte aux lettres locale et que son co
   
 Le graphique suivant montre comment Teams peut consulter les données de conversation pour les utilisateurs locaux pour pouvoir effectuer des recherches, des aperçus et des exportations.
   
-![Stockage sur le cloud pour les utilisateurs locaux de Microsoft Teams](../media/EHAMShard1.png)
+![Stockage sur le cloud pour les utilisateurs locaux de Microsoft Teams.](../media/EHAMShard1.png)
   
 En plus de cette fonctionnalité, vous pouvez également utiliser les outils eDiscovery pour rechercher, afficher un aperçu, et exporter du contenu Teams sur le site SharePoint utilisant le cloud et sur la boîte aux lettres Exchange associée à chaque donnée de conversation Microsoft Teams et 1xN Teams dans la boîte aux lettres Exchange Online pour les utilisateurs du cloud.
 

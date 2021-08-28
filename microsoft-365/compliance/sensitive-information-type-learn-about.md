@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: ac293eea8b81125b124265d2546d562393a81f8f
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 6c2f54900c3e08531a57501ff6eda8b2ccc14911
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684003"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574771"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -65,7 +65,7 @@ En savoir plus sur les niveaux de confiance dans cette vidéo
 ### <a name="example-sensitive-information-type"></a>Exemple de type d’informations sensibles
 
 
-#### <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale (DNI) argentine
+## <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale (DNI) argentine
 
 ### <a name="format"></a>Format
 

@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
-ms.openlocfilehash: 2ec017c331c722e199c1347b2c65b4ca04d71a4d0778695c0c9504560b3c29f5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 30ab28c4a9c2431a63db976df13748de6b843fdc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819334"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575083"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
 
@@ -54,13 +54,13 @@ Le **mappage de champ Courrier** électronique de l’établissement est désorm
 > [!NOTE]
 > Il est important de noter que, par défaut,  la messagerie de **l’établissement** est définie sur Courrier de la personne pour tous les formats SIS et doit être unique pour chaque personne. Toutes les intégrations existantes qui sont définies et en cours d’exécution auront ce mappage de données en place, car SIS ne pourra pas importer les utilisateurs si leur courrier électronique est dupliqué. Si un établissement a besoin de la possibilité de modifier le courrier  électronique de l’établissement en courrier **personnalisé,** il devra le gérer via la configuration avancée Paramètres dans le SIS.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 L Microsoft Teams des classes est disponible uniquement pour les cours **Ultra Course View.** Votre établissement doit remplir les conditions requises pour l’utiliser :
 
 - Faire en savoir plus sur Blackboard Learn SaaS avec la navigation de base Ultra activée
 
-  ![un exemple de fonctionnalité est activé dans les cours](media/feature-availability.png)
+  ![un exemple de fonctionnalité est activé dans les cours.](media/feature-availability.png)
 
 - Activez LTI pour une utilisation dans les cours.
 
@@ -161,7 +161,7 @@ Si vous choisissez d’approuver l’application Azure Classes Blackboard Learn 
 
 Vous verrez une fenêtre d’autorisations qui explique que vous accordez l’autorisation à Blackboard Learn Ultra pour accéder à Microsoft Teams.
 
-![fenêtre d’autorisations pour Microsoft et Le Tableau noir](media/permissions1.png)
+![fenêtre d’autorisations pour Microsoft et Tableau noir.](media/permissions1.png)
 
 ### <a name="after-configuring-the-lti-applications"></a>Après avoir configuré les applications LTI
 

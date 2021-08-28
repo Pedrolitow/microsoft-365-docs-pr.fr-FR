@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez un verrou de conservation avec les stratégies de rétention et les stratégies d’étiquette de conservation pour vous aider à respecter les exigences réglementaires et à vous protéger des administrateurs malveillants.
-ms.openlocfilehash: e1d0077567fdfd529e4c81f6c2ecf4c00f847f0cc5a10e2c74d80aa5d320c813
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb842a3d5add719338773f088b07dcf4c32ede53
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830504"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574158"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Utiliser le verrouillage de conservation pour restreindre les modifications apportées aux stratégies de rétention et d’étiquettes de rétention
 
@@ -70,11 +70,11 @@ Toutes les stratégies de rétention et de prise en charge de la configuration v
     
     Par exemple :
     
-    ![Paramètre RestrictiveRetention dans PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+    ![Paramètre de rétention restrictive dans PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     Lorsque vous y êtes invité, lisez et accusez réception des restrictions incluses dans cette configuration en entrant **Y**:
+     Lorsque vous y êtes invité, lisez et accusez réception des restrictions incluses dans cette configuration en entrant **Y** :
     
-   ![Invite à confirmer que vous souhaitez verrouiller une stratégie de rétention dans PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+   ![Invite à confirmer que vous souhaitez verrouiller une stratégie de rétention dans PowerShell.](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 Un verrou de conservation est désormais placé sur la stratégie. Pour confirmer, réexécutez `Get-RetentionCompliancePolicy` , mais indiquez le nom de la stratégie et affichez les paramètres de stratégie :
 
@@ -84,7 +84,7 @@ Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 
 Vous devriez voir que **RestrictiveRetention** est paramétré sur **True**. Par exemple :
 
-![Stratégie verrouillée avec tous les paramètres affichés dans PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
+![Stratégie verrouillée avec tous les paramètres affichés dans PowerShell.](../media/retention-policy-preservation-lock-locked-policy.PNG)
 
 ## <a name="see-also"></a>Voir aussi
 

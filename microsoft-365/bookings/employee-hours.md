@@ -9,16 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Définir les heures de travail et la disponibilité des employés dans Microsoft Bookings.
-ms.openlocfilehash: 04e6d3e079fec1c75536f3ac30dbab12026dabe2207f985b87410af77a7b832f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fffee6addd5f2d816fc7639661f2e03f53a96de
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803777"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575035"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Heures de travail des employés dans Microsoft Bookings
 
-La définition des heures de travail des employés garantit que leur disponibilité est indiquée avec précision lorsque vos clients tentent de les réserver. Par défaut, les heures de travail de chacun de vos employés correspondent aux heures d’ouverture que vous avez établies dans l’application Microsoft Bookings. Consultez la section « Définir vos heures d’ouverture » de La section [Entrer des informations professionnelles.](enter-business-information.md#set-your-business-hours)
+La définition des heures de travail des employés garantit que leur disponibilité est indiquée avec précision lorsque vos clients tentent de les réserver. Par défaut, les heures de travail de chacun de vos employés correspondent aux heures d’ouverture que vous avez établies dans l’application Microsoft Bookings. Consultez la section « Définir vos heures d’ouverture » de [La section Entrer des informations professionnelles.](enter-business-information.md#set-your-business-hours)
 
 Dans la page **Personnel,** vous pouvez personnaliser les heures de travail des employés en fonction des besoins de votre entreprise et des employés.
 
@@ -34,13 +34,13 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour définir les heures 
 
 1. Dans le volet de navigation, sélectionnez **Personnel,** puis sélectionnez le membre du personnel dont vous souhaitez définir les heures.
 
-   ![Image de l’écran du personnel Bookings avec le nom mis en évidence](../media/bookings-staff-name-highlight.png)
+   ![Image de l’écran du personnel Bookings avec le nom mis en surbrillant.](../media/bookings-staff-name-highlight.png)
 
 1. Sous les heures de travail, cochez la case Utiliser **les heures** d’ouverture.
 
 1. Utilisez les dropdowns pour sélectionner les heures de début et de fin de chaque jour. Les heures sont disponibles par incréments de 15 minutes.
 
-   ![Image de l’écran heures de travail du personnel Bookings](../media/bookings-staff-hours.png)
+   ![Image de l’écran des heures de travail du personnel Bookings.](../media/bookings-staff-hours.png)
 
 1. Cliquez **+** pour ajouter des sélecteurs de début et de fin.
 
@@ -52,7 +52,7 @@ Lorsque vous programmez un jour de congé pour un employé, celui-ci apparaît i
 
 1. Sur l’écran des heures de travail, sélectionnez **le x** en dehors du jour où l’employé sera éteint.
 
-   ![Image de l’écran des heures de travail du personnel Bookings avec le bouton souris sur x](../media/bookings-staff-time-off.png)
+   ![Image de l’écran des heures de travail du personnel Bookings avec le bouton souris sur x.](../media/bookings-staff-time-off.png)
 
 1. Si vous souhaitez planifier un jour précédemment marqué comme un jour de congé, sélectionnez le signe en dehors du jour que **+** vous souhaitez planifier.
 

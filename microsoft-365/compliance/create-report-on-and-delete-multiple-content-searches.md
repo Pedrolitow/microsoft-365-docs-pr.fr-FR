@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu telles que la création de recherches et l’exécution de rapports à l’aide du Centre de sécurité & conformité PowerShell.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c49cc0da930d6502df2ae88652c3b9fb23c36d3f
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: fff69aac3ab30e0fe1ea60f9d097602a5390ba87
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508093"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574338"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
@@ -180,7 +180,7 @@ Pour exécuter le script :
 
    Le script affiche la progression de la création et de l’exécution des recherches. Une fois le script terminé, il revient à l’invite.
 
-   ![Exemple de sortie après exécution du script pour créer plusieurs recherches de la conformité](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+   ![Exemple de sortie de l’exécution du script pour créer plusieurs recherches de conformité.](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
 
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Étape 4 : Exécuter le script pour signaler les estimations de recherche
 
@@ -255,7 +255,7 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
 
    Le script affiche la progression de la création et de l’exécution des recherches. Une fois le script terminé, le rapport s’affiche.
 
-   ![Exécutez le rapport de recherche pour afficher les estimations pour le groupe de recherche](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+   ![Exécutez le rapport de recherche pour afficher les estimations du groupe de recherche.](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
 > Si le même site ou boîte aux lettres est spécifié en tant qu’emplacement de contenu dans plusieurs recherches dans un groupe de recherche, l’estimation des résultats totaux dans le rapport (pour le nombre d’éléments et la taille totale) peut inclure des résultats pour les mêmes éléments. Cela est dû au fait que le même message électronique ou document sera compté plusieurs fois s’il correspond à la requête pour différentes recherches dans le groupe de recherche.
@@ -290,4 +290,4 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
 
    Le script affiche le nom de chaque recherche supprimée.
 
-   ![Exécutez le script pour supprimer les recherches dans le groupe de recherche](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+   ![Exécutez le script pour supprimer les recherches dans le groupe de recherche.](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

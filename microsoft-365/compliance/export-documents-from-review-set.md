@@ -1,5 +1,5 @@
 ---
-title: Documents d'exportation provenant d'un ensemble d'examens
+title: Exporter des documents d’un jeu à réviser
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment sélectionner et exporter du contenu à partir d’un ensemble Advanced eDiscovery révision pour les présentations ou les avis externes.
+description: Découvrez comment sélectionner et exporter du contenu à partir d’un Advanced eDiscovery de révision pour les présentations ou les avis externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4ec92c432d693a46151cd92e9d65e5b6fc9c2734
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5021428dc1ee82b5fb0aeed58d4e055710dec2ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246581"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570856"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exporter des documents à partir d’un groupe de révision dans Advanced eDiscovery
 
@@ -30,13 +30,13 @@ L’exportation permet aux utilisateurs de personnaliser le contenu inclus dans 
 
 Pour exporter des documents à partir d’un jeu à réviser :
 
-1. Dans la Centre de conformité Microsoft 365, ouvrez le cas Advanced eDiscovery,  sélectionnez l’onglet Ensembles de révision, puis sélectionnez le jeu à réviser à exporter.
+1. Dans la Centre de conformité Microsoft 365, ouvrez le cas Advanced eDiscovery,  sélectionnez l’onglet Ensembles de révision, puis sélectionnez le jeu à réviser à exporter.
 
 2. Dans le jeu à réviser, cliquez sur **Exporter l’action.**  >  
 
    L’outil Export affiche la page de présentation avec les paramètres permettant de configurer l’exportation. Certaines options sont sélectionnées par défaut, mais vous pouvez les modifier. Consultez la section suivante pour obtenir des descriptions des options d’exportation que vous pouvez configurer.
 
-   ![Options de configuration pour l’exportation d’éléments à partir d’un jeu à réviser](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
+   ![Options de configuration pour l’exportation d’éléments à partir d’un jeu à réviser.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
 3. Après avoir configuré l’exportation, cliquez sur **Exporter** pour démarrer le processus d’exportation. Selon l’option que vous avez sélectionnée dans la section **Options** de sortie, vous pouvez accéder aux fichiers d’exportation en téléchargement direct ou dans le compte stockage Azure de votre organisation.
 
@@ -63,7 +63,7 @@ Utilisez les options suivantes pour configurer l’exportation. Toutes les optio
   
   - Rapports uniquement : seuls le fichier récapitulatif et le fichier de chargement sont créés.
   
-  - Fichiers libres et fichiers PST (le courrier électronique est ajouté aux fichiers PST lorsque cela est possible) : les fichiers sont exportés dans un format qui ressemble à la structure de répertoires d’origine visible par les utilisateurs dans leurs applications natives.  Pour plus d’informations, voir la section Sur les fichiers libres et [la structure d’exportation PST.](#loose-files-and-pst-export-structure)
+  - Fichiers libres et fichiers PST (le courrier électronique est ajouté aux fichiers PST lorsque cela est possible) : les fichiers sont exportés dans un format qui ressemble à la structure de répertoires d’origine visible par les utilisateurs dans leurs applications natives.  Pour plus d’informations, voir la section Sur les fichiers libres et la [structure d’exportation PST.](#loose-files-and-pst-export-structure)
   
   - Structure du répertoire condensé : les fichiers sont exportés et inclus dans le téléchargement.
   
@@ -107,7 +107,7 @@ Si vous sélectionnez cette option d’exportation, le contenu exporté est orga
   
   - Avertissements et erreurs x de z.csv : ce fichier inclut des informations sur les erreurs rencontrées lors de la tentative d’exportation à partir du jeu à réviser.
 
-  - NativeFiles : ce dossier contient tous les fichiers natifs qui ont été exportés. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les natifs rédigés par des fichiers *PDF convertis.*
+  - NativeFiles : ce dossier contient tous les fichiers natifs qui ont été exportés. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les natifs rédigés par des fichiers *pdf convertis.*
   
   - Error_files : ce dossier contient des fichiers dont l’extraction ou une autre erreur de traitement s’est produite. Les fichiers sont placés dans des dossiers distincts, ExtractionError ou ProcessingError. Ces fichiers sont répertoriés dans le fichier de chargement.
 

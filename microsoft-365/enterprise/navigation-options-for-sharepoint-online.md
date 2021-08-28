@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Cet article décrit les sites d’options de navigation avec SharePoint publication activée dans SharePoint Online.
-ms.openlocfilehash: 38e72811eca6487a862beb8b1d197186783d3c48
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 7c890f61beae9ae98045861bbb08e3f6752d0037
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394659"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574735"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
@@ -75,15 +75,15 @@ Il s’agit de la navigation pré-adaptée utilisée par défaut et de la soluti
 
 Sous **Site Paramètres** Look and Feel Navigation , vous pouvez vérifier si la navigation structurelle est sélectionnée pour la navigation globale ou la navigation  >    >  actuelle. La sélection de **pages Afficher** aura un impact négatif sur les performances.
 
-![Navigation structurelle avec afficher les sous-sites sélectionnés](../media/SPONavOptionsStructuredShowSubsites.png)
+![Navigation structurelle avec afficher les sous-sites sélectionnés.](../media/SPONavOptionsStructuredShowSubsites.png)
 
 La mise en cache peut être activée ou désactivée au niveau de la collection de sites et au niveau du site, et est activée pour les deux par défaut. Pour activer au niveau de la collection de sites, sous **Site Paramètres** Site Collection Administration Site  >    >  **Collection Navigation,** activez la case à cocher Activer la mise **en cache.**
 
-![Activer la mise en cache au niveau du site](../media/structural-nav/structural-nav-caching-site-coll.png)
+![Activer la mise en cache au niveau du site.](../media/structural-nav/structural-nav-caching-site-coll.png)
 
 Pour activer au niveau du site, sous **Navigation Paramètres** site, activez la case à cocher Activer la mise  >  en **cache.**
 
-![Activer la mise en cache au niveau du site](../media/structural-nav/structural-nav-caching-site.png)
+![Activer la mise en cache au niveau du site.](../media/structural-nav/structural-nav-caching-site.png)
 
 ## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Utilisation de la navigation gérée et des métadonnées dans SharePoint Online
 
@@ -103,7 +103,7 @@ Il existe plusieurs articles sur docs.microsoft.com sur les détails de la navig
 
 Pour implémenter la navigation gérée, vous devez configurer des termes avec des URL correspondant à la structure de navigation du site. La navigation gérée peut même être organisée manuellement pour remplacer la navigation structurelle dans de nombreux cas. Par exemple :
 
-![SharePoint Structure de site en ligne](../media/SPONavOptionsListOfSites.png))
+![SharePoint Structure de site en ligne.](../media/SPONavOptionsListOfSites.png))
 
 ## <a name="using-search-driven-client-side-scripting"></a>Utilisation de scripts côté client pilotés par la recherche
 
@@ -128,7 +128,7 @@ Cette approche implique la création d’une page maître personnalisée et le r
 1. Accédez à la page Paramètres site.
 2. Ouvrez la galerie de pages maîtres en cliquant sur **Pages maîtres.**
 3. À partir de là, vous pouvez naviguer dans la bibliothèque et télécharger le `seattle.master` fichier.
-4. Modifiez le code à l’aide d’un éditeur de texte et supprimez le bloc de code dans la capture d’écran suivante.<br/>![Supprimer le bloc de code affiché](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
+4. Modifiez le code à l’aide d’un éditeur de texte et supprimez le bloc de code dans la capture d’écran suivante.<br/>![Supprimez le bloc de code affiché.](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. Supprimez le code entre les balises et les balises et remplacez-le `<SharePoint:AjaxDelta id="DeltaTopNavigation">` `<\SharePoint:AjaxDelta>` par l’extrait de code suivant :<br/>
 
 ```javascript

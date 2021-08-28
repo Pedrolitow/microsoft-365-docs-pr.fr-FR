@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer et exécuter une requête dans un jeu à réviser pour organiser le contenu pour une révision plus efficace dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 40a7c7ecaa222f2c2974352446cb2f71bc8c13b27663a28f4d792127f848f768
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4e4d2603cc9f26925b65ebeb654ad366d245e8e8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850655"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570784"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Interroger et filtrer du contenu dans un jeu à réviser
 
@@ -32,23 +32,23 @@ Dans la plupart des cas, il est utile d’approfondir le contenu d’un jeu à r
 
 Dans un jeu à réviser, il existe cinq filtres par défaut qui sont pré-chargés dans le jeu à réviser :
 
-- Mots-clés
+- Mots clés
 - Date
 - Sender/Author
 - Objet/Titre
 - Balises
 
-![Types de filtres par défaut](../media/DefaultFilterTypes.png)
+![Types de filtres par défaut.](../media/DefaultFilterTypes.png)
 
 Cliquez sur chaque filtre pour le développer et attribuer une valeur. Cliquez en dehors du filtre pour appliquer automatiquement le filtre au jeu à réviser. La capture d’écran suivante montre le filtre Date configuré pour afficher les documents dans une plage de dates.
 
-![Filtre par défaut développé](../media/ExpandedFilter.png)
+![Filtre par défaut développé.](../media/ExpandedFilter.png)
 
 ## <a name="add-or-remove-filters"></a>Ajouter ou supprimer des filtres
 
 Pour ajouter ou supprimer des filtres qui sont affichés pour le jeu à réviser, sélectionnez **Filtres** pour ouvrir le panneau de filtrage, qui s’affiche sur une page volante. 
 
-![Panneau de filtrage](../media/FilterPanel.png)
+![Panneau de filtrage.](../media/FilterPanel.png)
 
 Les filtres disponibles sont organisés en quatre sections :
 
@@ -62,7 +62,7 @@ Les filtres disponibles sont organisés en quatre sections :
 
 Développez chaque section et sélectionnez ou désélectionnez des filtres pour les ajouter ou les supprimer dans l’ensemble de filtres. Lorsque vous ajoutez un filtre, il s’affiche dans le jeu de filtres. 
 
-![Liste des sections et propriétés de filtre dans le panneau de filtrage](../media/FilterPanel2.png)
+![Liste des sections et propriétés de filtre dans le panneau de filtrage.](../media/FilterPanel2.png)
 
 > [!NOTE]
 > Lorsque vous développez une section dans le panneau de filtrage, vous remarquerez que les types de filtres par défaut sont sélectionnés. Vous pouvez conserver ces éléments sélectionnés ou les désélectionner et les supprimer du jeu de filtres. 
@@ -85,7 +85,7 @@ Il existe plusieurs types de filtres :
 
 Vous avez la possibilité de modifier la relation Inclure et exclure pour un filtre particulier. Par exemple, dans le filtre Balise, vous pouvez exclure les éléments **marqués** avec une balise particulière en sélectionnant Égal à aucun des éléments du filtre de ladown. 
 
-![Exclure le filtre de balise](../media/TagFilterExclude.png)
+![Exclure le filtre de balise.](../media/TagFilterExclude.png)
 
 ## <a name="save-filters-as-queries"></a>Enregistrer des filtres en tant que requêtes
 
@@ -93,11 +93,11 @@ Une fois que vous êtes satisfait de vos filtres, vous pouvez enregistrer la com
 
 Pour enregistrer un filtre, **sélectionnez Enregistrer la requête et** nommez-la. Vous ou d’autres réviseurs pouvez exécuter  des requêtes de filtre précédemment enregistrées en sélectionnant la dropdown des requêtes de filtre enregistrées et en sélectionnant une requête de filtre à appliquer aux documents de l’ensemble de révision. 
 
-![Enregistrer une requête de filtre](../media/SaveFilterQuery.png)
+![Enregistrez une requête de filtre.](../media/SaveFilterQuery.png)
 
 Pour supprimer une requête de filtre, ouvrez le panneau de filtrage et sélectionnez l’icône de corbeille en côté de la requête.
 
-![Supprimer une requête de filtre](../media/DeleteFilterQuery.png)
+![Supprimer une requête de filtre.](../media/DeleteFilterQuery.png)
 
 ## <a name="query-language"></a>Langage de requête
 
@@ -109,10 +109,10 @@ Vous pouvez également créer des requêtes plus avancées pour rechercher des d
 
 1. Ouvrez le panneau de filtrage, **sélectionnez Filtres** et **développez** la section Recherche.
 
-  ![Ajouter un filtre KQL](../media/AddKQLFilter.png)
+  ![Ajoutez un filtre KQL.](../media/AddKQLFilter.png)
 
 2. Sélectionnez **le filtre KQL,** puis cliquez **sur Ouvrir le générateur de requêtes.**
 
    Dans ce panneau, vous pouvez créer des requêtes KQL complexes à l’aide du générateur de requêtes. Vous pouvez ajouter des conditions ou des groupes de conditions composés de plusieurs conditions connectées logiquement par des **relations AND** ou **OR.**
 
-   ![Utiliser le générateur de requêtes pour configurer des requêtes de filtre complexes](../media/ComplexQuery.png)
+   ![Utilisez le générateur de requêtes pour configurer des requêtes de filtre complexes.](../media/ComplexQuery.png)

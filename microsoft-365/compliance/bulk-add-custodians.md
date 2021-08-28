@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez l’outil d’importation pour ajouter rapidement plusieurs dépositaires et leurs sources de données associées à un cas Advanced eDiscovery.
-ms.openlocfilehash: ccce04b5821eaff2d2ba65c846d58f3f474fb7277931da1d986f7b7ebe8beccb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ccb180766df47de39e3deb61faab60396c74bb9e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906102"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570304"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importer des dépositaires dans un Advanced eDiscovery de données
 
@@ -34,7 +34,7 @@ Pour Advanced eDiscovery cas qui impliquent de nombreux dépositaires, vous pouv
 
 3. Dans la page de présentation des **dépositaires** d’importation, cliquez sur Télécharger un modèle **vide** pour télécharger un fichier CSV de modèle de dépositaire.
 
-   ![Télécharger un modèle CSV à partir de la page de présentation des dépositaires d’importation](../media/ImportCustodians1.png)
+   ![Téléchargez un modèle CSV à partir de la page de présentation des dépositaires d’importation.](../media/ImportCustodians1.png)
 
 4. Ajoutez les informations de garde au fichier CSV et enregistrez-les sur votre ordinateur local. Pour plus d’informations sur les propriétés requises dans le fichier [CSV,](#custodian-csv-file) consultez la section du fichier CSV du dépositaire.
 
@@ -59,7 +59,7 @@ Après avoir téléchargé le modèle de dépositaire CSV, vous pouvez ajouter d
 |||
 
 > [!NOTE]
-> <sup>1</sup> Vous pouvez placer un maximum de 1 000 boîtes aux lettres et 100 sites en conservation à l’aide du processus d’importation du dépositaire et du fichier CSV. Vous pouvez utiliser ce processus pour ajouter plus de 1 000 dépositaires à un cas, mais les limites de conservation s’appliquent toujours. Pour plus d’informations sur les limites de la Advanced eDiscovery [.](limits-ediscovery20.md#hold-limits)
+> <sup>1</sup> Vous pouvez placer un maximum de 1 000 boîtes aux lettres et 100 sites en conservation à l’aide du processus d’importation du dépositaire et du fichier CSV. Vous pouvez utiliser ce processus pour ajouter plus de 1 000 dépositaires à un cas, mais les limites de conservation s’appliquent toujours. Pour plus d’informations sur les limites de la [Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
 
 Voici un exemple de fichier CSV avec des informations de dépositaire :<br/><br/>
 

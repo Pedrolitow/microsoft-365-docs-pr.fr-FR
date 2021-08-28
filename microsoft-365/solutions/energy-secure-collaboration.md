@@ -13,15 +13,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 aide les organisations énergétiques à évoluer vers une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 3bf38814593a08de7889ab2e870ca5fecc9165e6be75ce2175358151df38ff5e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9e104516b203d81ef69058b2d31d4b4c97df39e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798700"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570376"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Principales considérations en matière de conformité et de sécurité pour le secteur de l’énergie
-![Illustration métaphorique pour une vue globale de plusieurs industries utilisant le cloud](../media/solution-arch-center/MSC17_global_016.png)
+![Illustration métaphorique pour une vue globale de plusieurs industries utilisant le cloud.](../media/solution-arch-center/MSC17_global_016.png)
 ## <a name="introduction"></a>Introduction
 Le secteur de l’énergie fournit à la société du carburant et des infrastructures essentielles sur lesquelles elle peut compter chaque jour. Afin d’assurer la fiabilité des infrastructures liées aux réseaux électriques, les autorités de régulation imposent des normes strictes aux organisations du secteur de l’énergie. Ces normes de régulation concernent non seulement la production et la transmission d’électricité, mais également les données et les communications qui sont essentielles au fonctionnement quotidien des sociétés énergétiques. 
 
@@ -80,7 +80,7 @@ Microsoft Teams offre un espace de collaboration facile à utiliser pour partage
 
 Un autre exemple dans lequel Microsoft Teams peut bénéficier à l’industrie de l’énergie se situe lorsque les membres du personnel du service de terrain travaillent à la restauration d’un service pendant une panne. Le personnel sur le terrain a souvent besoin d’un accès rapide aux données schématiques pour les sous-stations, les centrales ou les schémas d’organisation pour les actifs sur le terrain. Ces données sont considérées comme ayant un impact élevé et doivent être protégées conformément aux réglementations CIP de la NERC. Le travail sur le terrain pendant les pannes nécessite une communication entre le personnel de terrain et les employés de bureau, qui à leur tour, communiquent avec les clients finaux. La centralisation des communications et du partage des données dans Microsoft Teams fournit au personnel de terrain une méthode simple pour accéder aux données essentielles et communiquer les informations ou l’état au siège social. Par exemple, Microsoft Teams permet au personnel sur le terrain de participer à des audioconférences pendant leur trajet vers une panne. Le personnel de terrain peut également prendre des photos ou des vidéos de son environnement, et partager celles-ci avec le siège social, ce qui est particulièrement important lorsque l’équipement sur le terrain ne correspond pas aux schémas. Les données et l’état collectés sur le terrain peuvent alors être transmis aux employés de bureau et aux dirigeants par le biais d’outils de visualisation de données tels que Power BI. Au final, Microsoft Teams peut renforcer l’efficacité et la productivité du personnel de terrain dans ces situations critiques.
 
-### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams : améliorer la collaboration et réduire les risques en matière de conformité
+### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams : améliorer la collaboration et réduire les risques en matière de conformité
 
 Microsoft 365 fournit des fonctionnalités de stratégie commune pour Microsoft Teams via l’utilisation de groupes Office 365 comme service d’appartenance sous-jacent. Ces stratégies peuvent contribuer à améliorer la collaboration et à respecter les exigences de conformité.
 
@@ -94,7 +94,7 @@ Les administrateurs peuvent spécifier une période d’expiration en jours pour
 
 La conservation excessive de données au sein d’une équipe Microsoft peut présenter des risques de litige pour les organisations, et l’utilisation de stratégies d’expiration est une méthode recommandée pour protéger celles-ci. Combiné avec des étiquettes et des stratégies de conservation intégrées, Microsoft 365 permet de garantir que les organisations conservent uniquement les données nécessaires pour respecter les obligations de conformité réglementaire.
 
-### <a name="teams-integrate-custom-requirements-with-ease"></a>Teams : intégrer facilement les besoins personnalisés
+### <a name="teams-integrate-custom-requirements-with-ease"></a>Teams : intégrer facilement les besoins personnalisés
 
 Microsoft Teams permet la création en libre-service d’équipes par défaut. Cependant, de nombreuses organisations réglementées souhaitent contrôler et savoir quels espaces de collaboration sont actuellement utilisés par les employés, quels espaces contiennent des données sensibles, et qui sont les propriétaires des espaces, dans l’ensemble de leur organisation. Pour faciliter ces contrôles, Microsoft 365 permet aux organisations de désactiver la création d’équipes en libre-service et, à l’aide d’outils d’automatisation des processus métier Microsoft 365 tels que Power Apps et Power Automate, permet aux organisations de créer des processus simples pour demander une nouvelle équipe. En remplissant un formulaire facile à utiliser, une approbation peut être automatiquement demandée par un responsable. Une fois approuvée, l’équipe peut être automatiquement mise à disposition et le demandeur reçoit un lien vers sa nouvelle équipe. En créant de tels processus, les organisations peuvent également intégrer des exigences personnalisées pour faciliter d’autres processus métier.
 

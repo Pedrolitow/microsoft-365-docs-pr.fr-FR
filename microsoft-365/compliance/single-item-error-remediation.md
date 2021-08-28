@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez corriger une erreur de traitement dans un document dans un groupe de révision dans Advanced eDiscovery sans avoir à suivre le processus de correction des erreurs en bloc.
-ms.openlocfilehash: 038be8d60851dcbd14452d293bad29be4f9de3f8b4c86aab6e7ee7e905b2d13a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b0f710b737b8cc87c154747dd952322f3cf2ea20
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830567"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574314"
 ---
 # <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Correction des erreurs d’élément unique Advanced eDiscovery
 
@@ -31,21 +31,21 @@ La correction des Advanced eDiscovery permet aux utilisateurs de corriger les pr
 
 Les documents avec des erreurs de traitement dans un jeu à réviser sont désormais identifiés (avec une bannière). Vous pouvez corriger ou ignorer l’erreur. La capture d’écran suivante montre la bannière d’erreur de traitement d’un document Word dans un jeu à réviser protégé par mot de passe. Notez également que vous pouvez afficher les métadonnées de fichier des documents avec des erreurs de traitement.
 
-![Bannière affichée pour le document avec erreur de traitement](../media/SIERimage1.png)
+![Bannière affichée pour le document avec erreur de traitement.](../media/SIERimage1.png)
 
 Vous pouvez également rechercher des documents qui ont des erreurs de traitement à l’aide de la **condition** d’état de traitement lors de l’interrogation des documents dans un jeu [à réviser.](review-set-search.md)
 
-![Utiliser la condition d’état de traitement pour rechercher des documents d’erreur](../media/SIERimage2.png)
+![Utilisez la condition d’état de traitement pour rechercher des documents d’erreur.](../media/SIERimage2.png)
 
 ### <a name="ignore-errors"></a>Ignorer les erreurs
 
 Vous pouvez ignorer une erreur de traitement en cliquant sur **Ignorer** dans la bannière d’erreur de traitement. Lorsque vous ignorez une erreur, le document est supprimé du flux de travail de correction des [erreurs en bloc.](error-remediation-when-processing-data-in-advanced-ediscovery.md) Une fois qu’une erreur est ignorée, la bannière de document change de couleur et indique que l’erreur de traitement a été ignorée. À tout moment, vous pouvez revenir à la décision d’ignorer l’erreur en cliquant sur **Revert**.
 
-![Cliquez sur Ignorer pour ignorer l’erreur de traitement](../media/SIERimage3.png)
+![Cliquez sur Ignorer pour ignorer l’erreur de traitement.](../media/SIERimage3.png)
 
 Vous pouvez également rechercher tous les documents dont l’erreur de traitement a été ignorée à l’aide de la *condition* d’erreurs de traitement ignorée lors de l’interrogation de documents dans un jeu à réviser.
 
-![Utiliser la condition Des erreurs de traitement ignorées pour rechercher des documents d’erreur ignorés](../media/SIERimage4.png)
+![Utilisez la condition Des erreurs de traitement ignorées pour rechercher des documents d’erreur ignorés.](../media/SIERimage4.png)
 
 ## <a name="remediate-a-document-with-errors"></a>Corriger un document avec des erreurs
 
@@ -55,26 +55,26 @@ Pour corriger un document unique, suivez les étapes suivantes :
 
 1. Cliquez **sur Télécharger**  >  **l’original** pour télécharger une copie du fichier sur un ordinateur local.
 
-   ![Télécharger le document avec l’erreur de traitement](../media/SIERimage5.png)
+   ![Téléchargez le document avec l’erreur de traitement.](../media/SIERimage5.png)
 
 2. Corriger l’erreur dans le fichier hors connexion. Pour les fichiers chiffrés, qui nécessitent un logiciel de déchiffrement, pour supprimer la protection par mot de passe, fournissez le mot de passe et enregistrez le fichier ou utilisez un logiciel de déchiffrement de mot de passe. Après avoir corrigé le fichier, allez à l’étape suivante.
 
 3. Dans le jeu à réviser, sélectionnez le fichier avec l’erreur de traitement que vous avez corrigé, puis cliquez sur **Correction.**
 
-   ![Cliquez sur Correction dans la bannière du document avec erreur de traitement](../media/SIERimage6.png)
+   ![Cliquez sur Correction dans la bannière du document avec une erreur de traitement.](../media/SIERimage6.png)
 
 
 4. Cliquez **sur** Parcourir, accédez à l’emplacement du fichier corrigé sur votre ordinateur local, puis sélectionnez le fichier.
 
-   ![Cliquez sur Parcourir et sélectionnez le fichier corrigé sur votre ordinateur local](../media/SIERimage7.png)
+   ![Cliquez sur Parcourir et sélectionnez le fichier corrigé sur votre ordinateur local.](../media/SIERimage7.png)
 
     Après avoir sélectionné le fichier corrigé, il est automatiquement chargé dans le jeu à réviser. Vous pouvez suivre l’état de traitement du fichier.
 
-    ![L’état du processus de correction s’affiche](../media/SIERimage8.png)
+    ![L’état du processus de correction s’affiche.](../media/SIERimage8.png)
 
    Une fois le traitement terminé, vous pouvez afficher le document corrigé.
 
-    ![Vous pouvez afficher le fichier corrigé au format natif dans le jeu à réviser](../media/SIERimage9.png)
+    ![Vous pouvez afficher le fichier corrigé au format natif dans le jeu à réviser.](../media/SIERimage9.png)
 
 Pour plus d’informations sur ce qui se produit lorsqu’un document est corrigé, voir Ce qui se produit [lorsque des fichiers sont corrigés.](error-remediation-when-processing-data-in-advanced-ediscovery.md#what-happens-when-files-are-remediated)
 

@@ -13,14 +13,14 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Les Office 365 existants doivent envoyer une demande avant la date d’échéance pour que leurs données de services Microsoft 365 sont déplacées vers leur nouvelle région.
+description: Les clients Office 365 existants doivent envoyer une demande avant la date d’échéance pour que leurs données de services Microsoft 365 sont déplacées vers leur nouvelle région.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dbd1984520019296026bc5f57328a20837591c27830f4fe9b32fc425123b6550
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa3464a33143f442a38adb8693bb77b9d174114d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904638"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574675"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -56,7 +56,7 @@ Sélectionnez le profil **d’organisation de** l’onglet, puis sélectionnez l
   
 Vous ne verrez pas cette section si votre client n’est pas éligible au Microsoft 365 move program.  Si votre organisation a des exigences en matière de résidence des données et que vous devez demander la migration, cochez la case, puis **enregistrez.**
   
-![Écran de l'action d'abonnement dans le centre de données](../media/dataresidencyflyoutae.jpg)
+![Écran d’action d’opt-in du centre de données.](../media/dataresidencyflyoutae.jpg)
   
 Le texte de la section Résidence  **des** données change pour indiquer que votre organisation a demandé à déplacer ses données vers le pays et la date appropriés. Vous recevez également un message de confirmation dans votre centre de messages. Cela permet de confirmer que votre demande de déplacement a abouti. 
   
@@ -66,11 +66,11 @@ Après avoir demandé un déplacement, nous prévoyons de déplacer vos données
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
   
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 Depuis janvier 2020, les clients des pays Office 365 éligibles peuvent opter pour la migration de Microsoft Teams de service de conversation.  Les clients qui ont précédemment choisi un déplacement Data Residency de données Teams déplacer vers leur région de centre de données locale.  Aucune action supplémentaire n’est requise par ces clients.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Déplacement de données principales vers de nouvelles Office 365 de centres de données](moving-data-to-new-datacenter-geos.md)
 

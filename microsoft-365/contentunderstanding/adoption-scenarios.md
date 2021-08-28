@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: Trouvez des scénarios sur l’utilisation des SharePoint Syntex dans votre organisation.
-ms.openlocfilehash: 0be3424acd6d3d1b547feedb6854beced4a2453f88530271c1376a8fd07ea09d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 619acd5d71bc6f3ab1aa99d3b7fd068faa51d696
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819682"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575275"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Scénarios et cas d’usage pour Microsoft SharePoint Syntex
 
@@ -46,7 +46,7 @@ Par exemple, vous pouvez configurer un processus à l’aide SharePoint Syntex e
     - La date d’échéance d’une facture est passée.
     - Une facture est pour un montant supérieur à votre montant d’approbation automatique.
 
-![Suivre et surveiller les factures à l’SharePoint Syntex et Power Automate](../media/content-understanding/process-invoices-flow.png)
+![Suivez et surveillez les factures avec SharePoint Syntex et Power Automate.](../media/content-understanding/process-invoices-flow.png)
 
 Lorsque vous automatisez ce scénario, vous pouvez :
 
@@ -63,7 +63,7 @@ Par exemple, vous pouvez configurer un processus pour identifier les contrats qu
 1. Une fois le modèle terminé, appliquez-le à une bibliothèque dans laquelle vous pouvez télécharger des contrats.
 1. Appliquez une étiquette de rétention au champ date, afin que les contrats soient conservés dans la bibliothèque pendant la durée requise.
 
-![Suivre et surveiller les contrats avec les étiquettes SharePoint Syntex rétention](../media/content-understanding/process-contracts-flow.png)
+![Suivre et surveiller les contrats avec SharePoint Syntex et les étiquettes de rétention.](../media/content-understanding/process-contracts-flow.png)
 
 Lorsque vous automatisez ce scénario, vous pouvez :
 
@@ -99,14 +99,14 @@ Lorsque vous automatisez ce scénario, vous pouvez :
 - Déverrouillez les connaissances du contenu numérique.
 - Classifier les stratégies RH, cv, documents commerciaux, plans techniques, plans de compte et extraire des informations.
 - Recherchez rapidement les informations ou le document que vous recherchez.
-- Accédez instantanément aux dernières informations.
+- Obtenez un accès instantané aux dernières informations.
 - Réduisez les temps de recherche.
 
 ## <a name="scenario-improve-data-processing-to-provide-insights-and-analytics"></a>Scénario : améliorer le traitement des données pour fournir des informations et des analyses
 
 Par exemple, une société de petite entreprise peut utiliser SharePoint Syntex pour extraire des informations à partir de documents FDA afin de répondre aux questions de leurs responsables. Le fait d’avoir les réponses plus facilement accessibles peut réduire le temps nécessaire pour produire ces réponses et augmenter la disponibilité des données afin de générer des réponses plus précises aux questions de direction.
 
-Par exemple, un responsable de projet doit fournir rapidement des réponses aux questions relatives aux produits de mon équipe de direction. Ils doivent trouver des informations et des mesures relatives aux requêtes dans un tableau de bord consolidé. Ils recherchent une solution qui extrait les informations dont ils ont besoin à partir d’étiquettes de produits, de publications de produits et d’autres documents, et génère un rapport consolidé qu’ils peuvent utiliser lorsqu’ils font des rapports à leur équipe de direction.
+Par exemple, un responsable de projet doit fournir rapidement des réponses aux questions relatives aux produits de mon équipe de direction. Ils doivent trouver des informations et des mesures relatives aux requêtes dans un tableau de bord consolidé. Ils recherchent une solution qui extrait les informations dont ils ont besoin à partir d’étiquettes de produits, de publications de produits et d’autres documents, et génère un rapport consolidé qu’ils peuvent utiliser lorsqu’ils reviennent à leur équipe de direction.
 
 Lorsque vous automatisez ce scénario, vous pouvez :
 

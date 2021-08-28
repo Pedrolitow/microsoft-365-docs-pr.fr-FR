@@ -17,13 +17,13 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Utilisez ce guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 entreprise.
-ms.openlocfilehash: c392e24b9bf3ef7c8c949ef00a6b661000156117
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: Utilisez ce Guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 entreprise.
+ms.openlocfilehash: e3576c5d7e1a00069dd5dd46d1b1e6063da217bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354415"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575251"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Configuration de base d’une entreprise simulée
 
@@ -34,7 +34,7 @@ Cet article explique comment créer un environnement simplifié pour Microsoft 3
 - Un abonnement d’évaluation ou payant Microsoft 365 E5.
 - Un intranet d’organisation simplifié connecté à Internet, constitué de trois machines virtuelles sur un réseau virtuel Azure (DC1, APP1 et CLIENT1).
  
-![Configuration de base d’une entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Configuration de base d’entreprise simulée.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 La création d’un environnement de test simplifié implique deux phases :
 - [Phase 1: Créer un intranet simulé](#phase-1-create-a-simulated-intranet)
@@ -42,7 +42,7 @@ La création d’un environnement de test simplifié implique deux phases :
 
 Vous pouvez utiliser l’environnement résultant pour tester les fonctionnalités de [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) entreprise à l’aide de guides de laboratoire de [test](m365-enterprise-test-lab-guides.md) supplémentaires ou par vous-même.
 
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
@@ -69,7 +69,7 @@ Après avoir lu les instructions, sélectionnez **Déployer sur Azure** sur la p
 
 Une fois le modèle terminé, votre configuration ressemble à ceci :
 
-![L’intranet simulé dans les services d’infrastructure Azure.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Intranet simulé dans les services d’infrastructure Azure.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ### <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>Méthode 2 : Créer votre intranet simulé avec Azure PowerShell
 
@@ -201,7 +201,7 @@ Après le redémarrage de DC1, reconnectez-vous à la machine virtuelle DC1.
     
 2. Exécutez le fichier DC1.rdp téléchargé, puis sélectionnez **Connecter**.
     
-3. Dans **Sécurité Windows,** **sélectionnez Utiliser un autre compte.** Dans **le nom d’utilisateur,** entrez le nom du compte **\\** < *d’administrateur local* TESTLAB>.
+3. Dans **Sécurité Windows,** **sélectionnez Utiliser un autre compte.** Dans **le nom d’utilisateur,** entrez le nom du compte d’administrateur local **TESTLAB \\** < >.
     
 4. Dans la **zone Mot** de passe, entrez le mot de passe du compte d’administrateur local, puis sélectionnez **OK.**
     
@@ -236,7 +236,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 Votre configuration actuelle se présente comme ceci :
   
-![Phase 1 de la configuration de base de l’entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
+![Étape 1 de la configuration de base d’entreprise simulée.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
 #### <a name="step-2-configure-app1"></a>Phase 2:Configurer APP1
 
@@ -291,7 +291,7 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 
 Votre configuration actuelle se présente comme ceci :
   
-![Phase 2 de la configuration de base de l’entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Étape 2 de la configuration de base d’entreprise simulée.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 #### <a name="step-3-configure-client1"></a>Phase 3:Configurer CLIENT1
 
@@ -339,7 +339,7 @@ Ensuite, vérifiez que vous pouvez accéder aux ressources web et de partage de 
     
 2. Dans **Les propriétés de CLIENT1,** **sélectionnez Sur** en plus de la configuration de sécurité renforcée **d’IE.**
     
-3. Dans **la configuration de sécurité renforcée d’Internet Explorer,** sélectionnez **Off** pour les administrateurs et les **utilisateurs,** puis **sélectionnez OK**. 
+3. Dans la configuration de sécurité renforcée d’Internet **Explorer,** sélectionnez **Off** pour les administrateurs et les  **utilisateurs,** puis **sélectionnez OK**.
     
 4. Dans l’écran d’accueil, **sélectionnez Internet Explorer,** puis **sélectionnez OK.**
     
@@ -355,7 +355,7 @@ Ensuite, vérifiez que vous pouvez accéder aux ressources web et de partage de 
     
 Votre configuration actuelle se présente comme ceci :
   
-![Phase 3 de la configuration de base de l’entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Étape 3 de la configuration de base d’entreprise simulée.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>Phase 2 : Création de votre abonnement Microsoft 365 E5
 
@@ -398,7 +398,7 @@ Votre environnement de test comporte maintenant :
     
 Votre configuration finale ressemble à ceci :
   
-![Phase 2 de la configuration de base de l’entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Phase 2 de la configuration de base de l’entreprise simulée.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 Vous êtes maintenant prêt à expérimenter des fonctionnalités supplémentaires de [Microsoft 365 entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
   

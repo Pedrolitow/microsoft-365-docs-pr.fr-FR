@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b0a1a081f0eaad8be9b3afefc65f10c79eb5264cf5ce300dd454ccad6cf37fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1fcb52d99f939d686ac423c80caa0fe00cec24c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900155"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574819"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -127,9 +127,9 @@ Vous pouvez également créer des types d’informations sensibles personnalisé
 
 ### <a name="checksum-validator"></a>Validateur checksum
 
-Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la csum.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
+Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la base de contrôle.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
 
-Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffre 4 * poids 4 + chiffre 5 * poids 5 + chiffre 6 * poids 6 + chiffre 7 * poids 7 + chiffre 8 * poids 8 valeur mo = Somme % 9 Si valeur mod == chiffre 8 Le numéro de compte est valide si mod valeur != chiffre 8 numéro de compte n’est pas valide
+Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffre 4 * poids 4 + chiffre 5 * poids 5 + chiffre 6 * poids 6 + chiffre 7 * poids 7 + chiffre 8 * poids 8 valeur mo = Somme % 9 Si valeur mod == chiffre 8 Le numéro de compte est valide Si mod valeur != chiffre 8 le numéro de compte n’est pas valide
 
 1. Définissez l’élément principal avec cette expression régulière :
 
@@ -143,7 +143,7 @@ Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffr
 > [!NOTE]
 > Si le chiffre de contrôle ne fait pas partie du calcul de la sommes de contrôle, utilisez 0 comme poids pour le chiffre de contrôle. Par exemple, dans le cas ci-dessus, le poids 8 est égal à 0 si le chiffre de contrôle ne doit pas être utilisé pour calculer le chiffre de vérification.  Modulo_operation).
 
-![Capture d’écran du validateur de checkum configuré](../media/checksum-validator.png)
+![Capture d’écran du validateur de la checkum configurée.](../media/checksum-validator.png)
 
 ### <a name="date-validator"></a>Validateur de date
 
@@ -158,7 +158,7 @@ Si une valeur de date incorporée dans une expression régulière fait partie d�
 2. Ajoutez ensuite le validateur de date.
 3. Sélectionnez le format de date et le décalage de début. Étant donné que la chaîne de date est les six premiers chiffres, le décalage est `0` .
 
-![Capture d’écran du validateur de date configuré](../media/date-validator.png)
+![Capture d’écran du validateur de date configuré.](../media/date-validator.png)
 
 ### <a name="functional-processors-as-validators"></a>Processeurs fonctionnels en tant que validateurs
 

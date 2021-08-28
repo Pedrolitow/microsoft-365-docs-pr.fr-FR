@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier dans les recherches qui s’exécutent avec les outils eDiscovery Office 365.
-ms.openlocfilehash: 70a2f22250010204298bb4e9ea5e4f3833013d04027bbdb4bcb0d25653ca47d4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae6e8d21ceb448f2402b14a02d5e08a3bf331548
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808089"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570580"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Différences entre les résultats de recherche eDiscovery estimés et réels
 
@@ -33,27 +33,27 @@ Cette rubrique s’applique aux recherches que vous pouvez exécuter à l’aide
 - Recherche de contenu
 - Core eDiscovery
 
-Lorsque vous exécutez une recherche de découverte électronique, l’outil que vous utilisez retourne une estimation du nombre d’éléments (et de leur taille totale) qui correspondent aux critères de recherche. Par exemple, lorsque vous exécutez une recherche dans le Centre de conformité Microsoft 365, les résultats estimés de la recherche sont affichés sur la page de présentation de la recherche sélectionnée.
+Lorsque vous exécutez une recherche de découverte électronique, l’outil que vous utilisez retourne une estimation du nombre d’éléments (et de leur taille totale) qui correspondent aux critères de recherche. Par exemple, lorsque vous exécutez une recherche dans le Centre de conformité Microsoft 365, les résultats estimés de la recherche sont affichés sur la page de présentation de la recherche sélectionnée.
   
-![Estimation des résultats affichés sur la page de présentation de la recherche](../media/EstimatedSearchResults1.png)
+![Estimation des résultats affichés sur la page volante de recherche.](../media/EstimatedSearchResults1.png)
   
-Il s’agit de la même estimation de la taille totale et du nombre d’éléments affichés dans l’outil d’exportation de découverte électronique lorsque vous exportez les résultats vers un ordinateur local et dans le rapport de synthèse d’exportation téléchargé avec les résultats de la recherche.
+Il s’agit de la même estimation de la taille totale et du nombre d’éléments affichés dans l’outil d’exportation eDiscovery lorsque vous exportez les résultats vers un ordinateur local et dans le rapport de synthèse de l’exportation qui est téléchargé avec les résultats de la recherche.
   
 **Résultats estimés dans l’outil d’exportation eDiscovery**
 
-![Résultats estimés dans l’outil d’exportation eDiscovery](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
+![Résultats estimés dans l’outil d’exportation eDiscovery.](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
   
 **Résultats estimés dans le rapport de synthèse de l’exportation**
 
-![Les résultats de recherche estimés sont inclus dans le rapport Résumé d’exportation](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
+![Les résultats de recherche estimés sont inclus dans le rapport de synthèse de l’exportation.](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
   
 Toutefois, comme vous pouvez le constater dans la capture d’écran précédente du rapport de synthèse d’exportation, la taille et le nombre de résultats de recherche réels téléchargés sont différents de la taille et du nombre estimés de résultats de recherche.
   
-![Différence entre les résultats de recherche estimés et téléchargés](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
+![Différence entre les résultats de recherche estimés et téléchargés.](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
   
 Voici quelques raisons à ces différences :
   
-- **La façon dont les résultats sont estimés**. Une estimation des résultats de la recherche est simplement une estimation (et non un nombre réel) des éléments qui répondent aux critères de requête de recherche. Pour compiler l’estimation des éléments Exchange, une liste des ID de message qui répondent aux critères de recherche est demandée à partir de la base de données Exchange par l’outil eDiscovery que vous utilisez. Toutefois, lorsque vous exportez les résultats de la recherche, la recherche est réexécutée et les messages réels sont récupérés à partir de la base Exchange données. Par conséquent, ces différences peuvent être dues à la façon dont le nombre estimé d’éléments et le nombre réel d’éléments sont déterminés.
+- **La façon dont les résultats sont estimés**. Une estimation des résultats de la recherche est simplement une estimation (et non un nombre réel) des éléments qui répondent aux critères de requête de recherche. Pour compiler l’estimation des éléments Exchange, une liste des ID de message qui répondent aux critères de recherche est demandée à la base de données Exchange par l’outil eDiscovery que vous utilisez. Toutefois, lorsque vous exportez les résultats de la recherche, la recherche est réexécutée et les messages réels sont récupérés à partir de la base Exchange données. Par conséquent, ces différences peuvent être dues à la façon dont le nombre estimé d’éléments et le nombre réel d’éléments sont déterminés.
 
 - **Modifications qui se produisent entre le moment où l’estimation et l’exportation des résultats de recherche**. Lorsque vous exportez des résultats de recherche, la recherche est redémarré pour collecter les éléments les plus récents dans l’index de recherche qui répondent aux critères de recherche. Il est possible que des éléments supplémentaires ont été créés, envoyés ou reçus, qui répondent aux critères de recherche entre le moment où les résultats de recherche estimés ont été collectés et le moment où les résultats de la recherche ont été exportés. Il est également possible que les éléments qui seraient dans l’index de recherche lorsque les résultats de la recherche ont été estimés ne soient plus là, car ils ont été purgés de l’emplacement de contenu avant l’exportation des résultats de la recherche. Pour atténuer ce problème, vous pouvez spécifier une plage de dates pour une recherche de découverte électronique. Une autre façon consiste à placer une conservation sur les emplacements de contenu afin que les éléments soient conservés et ne soient pas purgés. 
 
@@ -71,7 +71,7 @@ Voici quelques raisons à ces différences :
 
 - Les éléments non inclus dans les SharePoint et OneDrive ne sont pas inclus dans les **estimations de recherche.** Les éléments nonndex provenant SharePoint sites et OneDrive Entreprise ne sont pas inclus dans les résultats de recherche estimés. Cela est dû au fait que SharePoint index ne contient pas de données pour les éléments non indexés. Seuls les éléments nonndex des boîtes aux lettres sont inclus dans les estimations de recherche. Toutefois, si vous incluez des éléments nonndes lors de l’exportation des résultats de recherche, les éléments nonndes dans SharePoint et OneDrive sont inclus, ce qui augmente le nombre d’éléments réellement exportés. Cela se traduit par des différences entre les résultats estimés (qui n’incluent pas les éléments nonndex dans les sites SharePoint et OneDrive) et les éléments réels téléchargés. La règle concernant l’exportation d’éléments nonndes uniquement à partir d’emplacements de contenu qui contiennent des éléments qui correspondent aux critères de recherche s’applique toujours dans cette situation.
 
-- **Versions de document SharePoint et OneDrive**. Lorsque vous recherchez SharePoint sites et OneDrive comptes de recherche, plusieurs versions d’un document ne sont pas incluses dans le nombre de résultats de recherche estimés. Toutefois, vous avez la possibilité d’inclure toutes les versions de document lorsque vous exportez les résultats de la recherche. Si vous incluez des versions de documents lors de l’exportation des résultats de recherche, le nombre réel (et la taille totale) des éléments exportés sera augmenté.
+- **Versions de document SharePoint et OneDrive**. Lors de la recherche SharePoint sites et OneDrive comptes de recherche, plusieurs versions d’un document ne sont pas incluses dans le nombre de résultats de recherche estimés. Toutefois, vous avez la possibilité d’inclure toutes les versions de document lorsque vous exportez les résultats de la recherche. Si vous incluez des versions de documents lors de l’exportation des résultats de recherche, le nombre réel (et la taille totale) des éléments exportés sera augmenté.
 
 - **SharePoint dossiers**. Si le nom des dossiers dans SharePoint correspond à une requête de recherche, l’estimation de la recherche inclut le nombre de ces dossiers (mais pas les éléments de ces dossiers). Lorsque vous exportez les résultats de la recherche, les éléments du dossier sont exportés, mais le dossier réel n’est pas exporté. Le résultat est que le nombre d’éléments exportés exportés est supérieur au nombre estimé de résultats de recherche. Si un dossier est vide, le nombre de résultats de recherche réels exportés sera réduit d’un élément, car le dossier réel n’est pas exporté.
 
@@ -81,7 +81,7 @@ Voici quelques raisons à ces différences :
 
 - **Dédoplication des éléments Exchange lors de l’exportation.** Pour Exchange, la déduplication réduit le nombre d’éléments exportés. Vous avez la possibilité de dupliquer les résultats de la recherche lorsque vous les exportez. Pour Exchange messages, cela signifie qu’une seule instance d’un message est exportée, même si ce message peut se trouver dans plusieurs boîtes aux lettres. Les résultats de recherche estimés incluent chaque instance d’un message. Ainsi, si vous choisissez l’option de dédoplication lors de l’exportation des résultats de recherche, le nombre réel d’éléments exportés peut être considérablement inférieur au nombre estimé d’éléments.
 
-Le rapport des résultats de la recherche (Results.csv fichier) contient une entrée pour chaque message en double et identifie la boîte aux lettres source où se trouve un message en double. Cela vous permet d’identifier toutes les boîtes aux lettres qui contiennent un message en double.
+Le rapport de résultats de recherche (Results.csv fichier) contient une entrée pour chaque message en double et identifie la boîte aux lettres source où se trouve un message en double. Cela vous permet d’identifier toutes les boîtes aux lettres qui contiennent un message en double.
 
 > [!NOTE]
 > Si vous ne sélectionnez pas l’option Inclure des éléments chiffrés ou dont le **format** n’est pas reconnu lorsque vous exportez des résultats de recherche ou téléchargez simplement les rapports, les rapports d’erreur d’index sont téléchargés, mais ils n’ont aucune entrée. Cela ne signifie pas qu’il n’y a aucune erreur d’indexation. Cela signifie simplement que les éléments nonndex n’ont pas été inclus dans l’exportation.

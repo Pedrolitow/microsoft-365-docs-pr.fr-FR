@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Demandez à vos travailleurs hybrides de se connecter à l’aide de l’authentification multifacteur (MFA).
-ms.openlocfilehash: 19a249e25aaa2db21d8b2dea4b4bdd86e673e4f9761a3adcd530b0a21b5c3bfc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d59f990cd7acf576247d75e6544ad045179e3c81
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805079"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575347"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Étape 1 : renforcer la sécurité de connexion pour les travailleurs hybrides à l’aide d’une authentification multifacteur (MFA)
 
 Pour renforcer la sécurité des connexions de vos travailleurs hybrides, utilisez l’authentification multifacteur (MFA). L’authentification multifacteur exige que les connexions des utilisateurs fassent l’objet d’une vérification supplémentaire, au-delà du mot de passe du compte d’utilisateur. Même si un utilisateur malveillant détermine un mot de passe de compte d’utilisateur, il doit également répondre à une vérification supplémentaire, par exemple, un message texte envoyé vers un smartphone, avant que l’accès ne lui soit accordé.
 
-![Le mot de passe correct et une vérification supplémentaire génèrent une connexion réussie](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
+![Le mot de passe correct et une vérification supplémentaire permettent de se connecter avec succès.](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
 Pour tous les utilisateurs, y compris les travailleurs hybrides et les administrateurs en particulier, Microsoft recommande vivement l’authentification multifacteur.
 

@@ -16,18 +16,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Résumé : Explication de l’isolation et du contrôle d’accès au sein des différentes applications de Microsoft 365.'
-ms.openlocfilehash: 6f8a668c1d479d249a85b889689f61f20f2a050beb1dcaf50f51d660631b5cc4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4fceb389f3469bbb39d35bd6e1185c0725bf23fd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864378"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571000"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Isolation et contrôle d’accès dans Microsoft 365
 
 Azure Active Directory (Azure AD) et Microsoft 365 utilisent un modèle de données très complexe qui inclut des dizaines de services, des centaines d’entités, des milliers de relations et des dizaines de milliers d’attributs. À un niveau élevé, Azure AD et les annuaires de services sont les conteneurs de clients et de destinataires synchronisés à l’aide de protocoles de réplication basés sur l’état. En plus des informations d’annuaire détenues dans Azure AD, chacune des charges de travail de service possède sa propre infrastructure de services d’annuaire.
  
-![Microsoft 365 synchronisation des données client](../media/office-365-isolation-tenant-data-sync.png)
+![Microsoft 365 synchronisation des données du client.](../media/office-365-isolation-tenant-data-sync.png)
 
 Dans ce modèle, il n’existe pas de source unique de données d’annuaire. Des systèmes spécifiques possèdent des données individuelles, mais aucun système unique ne contient toutes les données. Microsoft 365 services collaborent avec Azure AD dans ce modèle de données. Azure AD est le « système de vrai » pour les données partagées, qui est généralement de petites données statiques utilisées par chaque service. Le modèle fédéré utilisé dans Microsoft 365 azure AD fournit la vue partagée des données.
 
@@ -43,7 +43,7 @@ Le contenu de la boîte aux lettres de l’utilisateur inclut :
 - Informations de calendrier et de libre/occupé
 - Contacts
 - Tâches
-- Remarques
+- Notes
 - Groupes
 - Données d’inférence
 

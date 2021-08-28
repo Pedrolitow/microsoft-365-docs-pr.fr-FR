@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34d3f7fa8c12d1509b864bc45e97717dbf01f534
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9aff58f4175cd7615ad2de2a9659bec71f3f1cb8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533278"
+ms.locfileid: "58574110"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -105,25 +105,25 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
   |Service ou fonctionnalité Microsoft 365|30 minutes|24 heures|
   |---|:---:|:---:|
-  |Defender pour Office 365 et veille contre les menaces|![Coche](../media/checkmark.png)||
-  |Azure Active Directory (événements de connexion utilisateur)||![Coche](../media/checkmark.png)|
-  |Azure Active Directory (événements administrateur)||![Coche](../media/checkmark.png)|
-  |Protection contre la perte de données|![Coche](../media/checkmark.png)||
-  |Dynamics 365 CRM||![Coche](../media/checkmark.png)|
-  |eDiscovery|![Coche](../media/checkmark.png)||
-  |Exchange Online|![Coche](../media/checkmark.png)||
-  |Microsoft Power Automate||![Coche](../media/checkmark.png)|
-  |Microsoft Project|![Coche](../media/checkmark.png)||
-  |Microsoft Stream|![Coche](../media/checkmark.png)||
-  |Microsoft Teams|![Coche](../media/checkmark.png)||
-  |Power Apps||![Coche](../media/checkmark.png)|
-  |Power BI|![Coche](../media/checkmark.png)||
-  |Centre de conformité Microsoft 365|![Coche](../media/checkmark.png)||
-  |Étiquettes de confidentialité||![Coche](../media/checkmark.png)|
-  |Sharepoint Online et OneDrive Entreprise|![Coche](../media/checkmark.png)||
-  |Workplace Analytics|![Coche](../media/checkmark.png)||
-  |Yammer||![Coche](../media/checkmark.png)|
-  |Microsoft Forms|![Coche](../media/checkmark.png)||
+  |Defender pour Office 365 et veille contre les menaces|![Coche.](../media/checkmark.png)||
+  |Azure Active Directory (événements de connexion utilisateur)||![Coche.](../media/checkmark.png)|
+  |Azure Active Directory (événements administrateur)||![Coche.](../media/checkmark.png)|
+  |Protection contre la perte de données|![Coche.](../media/checkmark.png)||
+  |Dynamics 365 CRM||![Coche.](../media/checkmark.png)|
+  |eDiscovery|![Coche.](../media/checkmark.png)||
+  |Exchange Online|![Coche.](../media/checkmark.png)||
+  |Microsoft Power Automate||![Coche.](../media/checkmark.png)|
+  |Microsoft Project|![Coche.](../media/checkmark.png)||
+  |Microsoft Stream|![Coche.](../media/checkmark.png)||
+  |Microsoft Teams|![Coche.](../media/checkmark.png)||
+  |Power Apps||![Coche.](../media/checkmark.png)|
+  |Power BI|![Coche.](../media/checkmark.png)||
+  |Centre de conformité Microsoft 365|![Coche.](../media/checkmark.png)||
+  |Étiquettes de confidentialité||![Coche.](../media/checkmark.png)|
+  |Sharepoint Online et OneDrive Entreprise|![Coche.](../media/checkmark.png)||
+  |Workplace Analytics|![Coche.](../media/checkmark.png)||
+  |Yammer||![Coche.](../media/checkmark.png)|
+  |Microsoft Forms|![Coche.](../media/checkmark.png)||
   |
 
 - Azure Active Directory (Azure AD) est le service d’annuaire pour Office 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le centre d’administration Microsoft 365 ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
@@ -151,7 +151,7 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 
     La page **Audit** s’affiche.
 
-    ![Configurez les critères, puis cliquez sur Rechercher pour générer un rapport](../media/AuditLogSearchPage1.png)
+    ![Configurez les critères, puis cliquez sur Rechercher pour générer un rapport.](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
     > Si le lien **Commencer à enregistrer les activités des utilisateurs et des administrateurs** apparaît, cliquez dessus pour activer l’audit. Si ce lien n’apparaît pas, l’audit est déjà été activé pour votre organisation.
@@ -179,7 +179,7 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 
    Les résultats de recherche sont chargés, puis affichés sur une nouvelle page. Une fois la recherche terminée, le nombre de résultats détectés est affiché. Un maximum de 5 000 événements s’affichent par incréments de 150 événements. Si plus de 5 000 événements correspondent aux critères de recherche, les 5 000 événements les plus récents sont affichés.
 
-   ![Le nombre de résultats affichés une fois la recherche terminée](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![Le nombre de résultats affichés une fois la recherche terminée.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### <a name="tips-for-searching-the-audit-log"></a>Conseils pour effectuer une recherche dans le journal d’audit
 
@@ -798,7 +798,7 @@ Vous pouvez effectuer une recherche dans le journal d’audit des activités des
 
 Si votre organisation utilise l’application [Patients](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) dans Microsoft Teams, vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées à l’application Patients. Si votre environnement est configuré pour prendre en charge l’application Patients, un groupe d’activités supplémentaire pour ces activités est disponible dans la liste du sélecteur **Activitiés**.
 
-![Microsoft Teams Santé dans la liste du sélecteur Activités](../media/TeamsHealthcareAuditActivities.png)
+![Les activités Microsoft Teams pour la santé dans les activités de la liste du sélecteur.](../media/TeamsHealthcareAuditActivities.png)
 
 Pour obtenir une description des activités de l’application Patients, voir les [journaux d’audit pour l’application Patients](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
@@ -844,7 +844,7 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 
 ### <a name="microsoft-power-automate-activities"></a>Activités Microsoft Power Automate
 
-Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Power Automate (précédemment appelé Microsoft Flow). Ces activités incluent la création, la modification et la suppression de flux, et la modification des autorisations de flux. Pour plus d'informations sur l'audit des activités de Power Automate, consultez le blog Les événements d'audit de [Power Automate sont désormais disponibles dans le centre de conformité de Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Power Automate (précédemment appelé Microsoft Flow). Ces activités incluent la création, la modification et la suppression de flux, et la modification des autorisations de flux. Pour plus d’informations sur l’audit des activités de Power Automate, voir le blog [événements d’audit de Microsoft Flow désormais disponible dans le Centre de conformité Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-power-apps-activities"></a>Activités Microsoft Power Apps
 
@@ -1021,7 +1021,7 @@ Voici quelques conseils pour rechercher des activités d’administrateur Exchan
 
 - Pour afficher des événements du journal d’audit de l’administrateur Exchange, filtrez les résultats de la recherche, puis tapez **-** (tiret) dans la zone de filtre **activité**. Cela permet d’afficher le nom des cmdlets qui figurent dans la colonne **Activité** des événements d’administrateur Exchange. Vous pouvez ensuite trier les noms de cmdlet par ordre alphabétique.
 
-  ![Tapez un tiret dans le champ Activités pour filtrer les événements Admin d’Exchange](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![Tapez un tiret dans le champ Activités pour filtrer les événements d'administration d’Exchange.](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - Pour obtenir des informations sur les cmdlets exécutées, les paramètres et valeurs de paramètres utilisés et les objets affectés, vous devez exporter les résultats de recherche et sélectionner l’option **Télécharger tous les résultats**. Pour plus d’informations, voir [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
 

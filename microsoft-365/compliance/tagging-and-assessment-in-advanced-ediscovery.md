@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
 description: Examinez les étapes à suivre pour effectuer une formation sur l’évaluation, y compris le marquage des fichiers et l’examen des résultats de l’Advanced eDiscovery.
-ms.openlocfilehash: 4e1b9f3e79ee35866322e713412690af068ce1837c668c0331d1091cd84a2786
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 539d4e8f28aa8e4e3ab98807c5019711edbdcc4f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899854"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574915"
 ---
 # <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Marquage et évaluation dans le module de pertinence dans Advanced eDiscovery
   
@@ -34,7 +34,7 @@ Cette section décrit la procédure d’évaluation dans le module Pertinence da
 
     Par exemple, dans le cadre de cette procédure, un exemple  d’ensemble d’évaluation de 500 fichiers est créé et l’onglet Balise s’affiche, qui contient le panneau marquage, le contenu du fichier affiché et d’autres options de marquage. 
 
-    ![Onglet Balise de pertinence pour l’évaluation](../media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
+    ![Onglet Balise de pertinence pour l’évaluation.](../media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
   
 2. Passez en revue chaque fichier de l’exemple, déterminez la pertinence du fichier pour chaque problème de cas et  marquez le fichier à l’aide des boutons Pertinence (R), Non pertinent (NR) et Ignorer dans le volet De marquage. 
 
@@ -45,14 +45,14 @@ Cette section décrit la procédure d’évaluation dans le module Pertinence da
 
     La marge d’erreur actuelle de l’évaluation et la richesse sont calculées et affichées dans l’onglet Suivi de pertinence, avec des détails étendus par problème, comme illustré ci-dessous.  Plus d’informations sur cette boîte de dialogue sont décrites dans la section Révision des résultats [de l’évaluation.](#reviewing-assessment-results)
 
-    ![Suivi de pertinence - Évaluation](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
+    ![Suivi de pertinence : évaluation.](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
     > Par défaut, nous vous recommandons de passer à l’étape suivante par défaut une fois l’indicateur de progression de l’évaluation du problème terminé, indiquant que l’exemple d’évaluation a été examiné et que des fichiers pertinents suffisants ont été balisé. > Dans le cas contraire, si  vous souhaitez afficher les résultats de l’onglet Suivi et contrôler la marge d’erreur et l’étape suivante, cliquez sur Modifier en regard de l’étape **suivante,** sélectionnez Continuer l’évaluation, puis cliquez sur **OK.**  
   
 4. Cliquez **sur Modifier** à  droite de la case à cocher Évaluation pour afficher et spécifier les paramètres d’évaluation par problème. Une **boîte de dialogue de** niveau d’évaluation pour chaque problème s’affiche, comme illustré dans l’exemple suivant : 
 
-    ![Problème de cas de niveau d’évaluation](../media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
+    ![Problème de cas de niveau d’évaluation.](../media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
   
     Les paramètres suivants du problème sont calculés et affichés dans la boîte de dialogue **Niveau d’évaluation** : 
 
@@ -70,7 +70,7 @@ Cette section décrit la procédure d’évaluation dans le module Pertinence da
 
 9. Cliquez **sur Avancé** dans la boîte de dialogue **Niveau** d’évaluation pour voir les paramètres et détails supplémentaires suivants : 
 
-    ![Vue avancée de problème de cas de niveau d’évaluation](../media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
+    ![Affichage avancé des problèmes de cas au niveau de l’évaluation.](../media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
   
     - **Richesse estimée :** richesse estimée en fonction des résultats d’évaluation actuels
 
@@ -90,7 +90,7 @@ Cette section décrit la procédure d’évaluation dans le module Pertinence da
 
     Lorsqu’il existe plusieurs problèmes, une fois tous les  problèmes examinés ou ajustés, un niveau d’évaluation : boîte de dialogue récapitulatif s’affiche, comme illustré dans l’exemple suivant. 
 
-    ![Résumé de niveau d’évaluation](../media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
+    ![Résumé du niveau d’évaluation.](../media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
   
     Une fois l’évaluation terminée, passer à l’étape suivante de l’entraînement Pertinence.
 

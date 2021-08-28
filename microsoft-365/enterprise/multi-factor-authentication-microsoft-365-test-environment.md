@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: Configurez l’authentification multifacteur à l’aide de messages texte envoyés à un smartphone dans votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: 772fc5d5a05ca08f2fcb851f1e5399c1dd77828f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 92c60819c2e32661b4af9cfba76553c59b784519
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356227"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570724"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Authentification multifacteur pour votre environnement de test Microsoft 365 entreprise
 
@@ -38,7 +38,7 @@ La configuration de l’authentification multifacteur pour un compte dans votre 
 - [Phase 2 : Activer et tester l’authentification multifacteur pour le compte d’utilisateur 2](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
 - [Phase 3 : Activer et tester l’authentification multifacteur avec une stratégie d’accès conditionnel](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
 
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
@@ -64,7 +64,7 @@ Activez l’authentification multifacteur pour le compte d’utilisateur 2 en pr
     
 4. Dans la liste, sélectionnez le **compte Utilisateur 2.**
     
-5. Dans la section **Utilisateur 2,** sous **Étapes rapides,** sélectionnez **Activer**.
+5. Dans la section **Utilisateur 2,** sous **Étapes rapides,** **sélectionnez Activer**.
     
 6. Dans la boîte de dialogue À propos **de l’activation de** l’th plusieurs facteurs, sélectionnez Activer **l’thème multi-facteur.**
     

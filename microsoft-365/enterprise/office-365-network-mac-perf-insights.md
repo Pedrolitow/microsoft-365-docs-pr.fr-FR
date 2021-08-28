@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Réseau Informations
-ms.openlocfilehash: ef844598d505e42f4fb99cb52321fc9709dbd4a2411884f7b8b4fff51c3a62d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e5b46b4a19a52807a0690722e9a5f5f46727c7ae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854766"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570508"
 ---
 # <a name="microsoft-365-network-insights"></a>Microsoft 365 Réseau Informations
 
@@ -52,7 +52,7 @@ Cette information s’affiche si le service d’informations réseau détecte qu
 Cette information est abrégée en « Egress » dans certains affichages récapitulatifs.
 
 > [!div class="mx-imgBorder"]
-> ![Sortie réseau backhauled](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+> ![Sortie du réseau backhauled.](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
@@ -87,7 +87,7 @@ Cette information s’affiche si le service d’informations réseau détecte qu
 Cette information est abrégée en « Homologues » dans certains affichages récapitulatifs.
 
 > [!div class="mx-imgBorder"]
-> ![Performances relatives du réseau](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+> ![Performances réseau relatives.](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
@@ -104,7 +104,7 @@ Cette information s’affiche si le service d’informations réseau détecte qu
 Cette information est abrégée en « Routage » dans certains affichages récapitulatifs.
 
 > [!div class="mx-imgBorder"]
-> ![Porte d’entrée EXO non optimale](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+> ![Porte frontale EXO non optimale.](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
@@ -121,7 +121,7 @@ Cette information s’affiche si le service d’informations réseau détecte qu
 Cette information est abrégée en « Afd » dans certains affichages récapitulatifs.
 
 > [!div class="mx-imgBorder"]
-> ![Porte d’entrée SPO non optimale](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+> ![Porte d’entrée SPO non optimale.](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
@@ -190,7 +190,7 @@ Cela indique que la majorité de vos utilisateurs rencontreront probablement des
 
 Activez la visibilité de la connectivité réseau de l’emplacement du bureau si vous ne l’avez pas déjà fait. Vous souhaitez identifier les bureaux qui sont touchés par une connectivité réseau médiocre qui a un impact sur SharePoint et trouver des moyens d’améliorer le périmètre réseau à chaque bureau qui connecte les utilisateurs au réseau de Microsoft.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Connectivité réseau dans le centre de Administration Microsoft 365 (aperçu)](office-365-network-mac-perf-overview.md)
 

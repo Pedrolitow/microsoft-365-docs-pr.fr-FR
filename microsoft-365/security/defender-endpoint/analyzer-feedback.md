@@ -1,5 +1,5 @@
 ---
-title: Fournir des commentaires sur l’outil Analyseur de client Microsoft Defender for Endpoint
+title: Fournir des commentaires sur l’outil Analyseur de client Microsoft Defender pour Endpoint
 description: Fournir des commentaires sur l’outil d’analyseur client Microsoft Defender for Endpoint
 keywords: capteur, état du capteur, mal configuré, inactif, aucune donnée de capteur, données du capteur, communications altérées, communication
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fe6e02205bd32ea9ac1e9ddf5842291611e7cb2c
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: d0638b6d76c4d2675c98dca1bd28e3b9f26a32fc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507529"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574627"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>Fournir des commentaires sur l’outil d’analyseur client Microsoft Defender for Endpoint
 
@@ -36,8 +36,8 @@ Si vous avez des commentaires ou des suggestions qui nous aideraient à amélior
 
 1. Portail Microsoft Defender pour les points de terminaison (securitycenter.windows.com) :
 
-    ![Image de l’icône de retour de souris](images/3e2db5015cd4f47436b4765b2303f4f5.png)
+    ![Image de l’icône de retour de souris.](images/3e2db5015cd4f47436b4765b2303f4f5.png)
 
 2. Microsoft 365 Defender portail (security.microsoft.com) :
 
-    ![Image du bouton donner des commentaires](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)
+    ![Image du bouton Donner un retour d’expérience.](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)

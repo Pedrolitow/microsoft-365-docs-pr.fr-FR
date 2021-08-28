@@ -17,18 +17,18 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Découvrez comment choisir et déployer la solution vocale Teams appropriée pour votre organisation.
-ms.openlocfilehash: bfcad56d54eb29fdf9d2b48b74d7811dee5dc2df1be9fdf2ddcd5373a1b1be48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 359242ea66fc1be9af18ff10cb7e33fe26ddd83e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883365"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575371"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>Planifier et déployer une solution vocale Teams
 
-Une solution Teams vocale permet aux membres de votre organisation d’effectuer des appels à l’intérieur et à l’extérieur de votre organisation. Une solution vocale complète se compose de Teams, Téléphone Microsoft Système et d’un choix d’options pour la connexion au réseau téléphonique commuté (PSTN).
+Une solution Teams vocale permet aux membres de votre organisation d’effectuer des appels à l’intérieur et à l’extérieur de votre organisation. Une solution vocale complète se compose de Teams, Téléphone Microsoft System et d’un choix d’options pour la connexion au réseau téléphonique commuté (PSTN).
 
-![vue d Teams des solutions vocales d’Teams](..\media\solutions-architecture-center\voice-concepts.png)
+![Teams vue d’ensemble des solutions vocales.](..\media\solutions-architecture-center\voice-concepts.png)
 
 Système téléphonique offre des fonctionnalités PBX (Private Branch Exchange) complètes pour votre organisation. Les appels entre les utilisateurs de votre organisation, quel que soit leur emplacement géographique, sont gérés en interne au sein de Système téléphonique ce qui permet de supprimer les coûts longue distance sur ces appels internes.  
 
@@ -41,7 +41,7 @@ Ces conseils de solution vous aident à :
 
 Suivez ces étapes pour choisir, planifier et configurer votre solution vocale :
 
-![Choisissez votre solution vocale :](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
+![Choisissez votre solution vocale.](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
 
 1. [Choisissez votre solution vocale :](/MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
@@ -57,4 +57,4 @@ Pour plus d’informations sur les licences requises, consultez les informations
 
 - [Teams licences de modules add-on](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json)
 
-- [Exigences en matière de licences de routage direct](/microsoftteams/direct-routing-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json#licensing-and-other-requirements/toc.json)
+- [Conditions requises pour les licences de routage direct](/microsoftteams/direct-routing-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json#licensing-and-other-requirements/toc.json)

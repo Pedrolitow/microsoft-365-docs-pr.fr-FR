@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: e3c764dd1fb79906061b9b9b4c1408d83c8dbe0c
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: f6c720973f91ae9a202b232d821c33c7f487b76a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502074"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574447"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
 
@@ -45,7 +45,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
 
     **Incorrect**
 
-    ![Procédure incorrecte de mise en forme d’une liste de mots clés (en collant la liste dans la zone mot clé)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![La façon incorrecte de mettre en forme une liste de mots clés (en collant la liste dans la zone de mot clé).](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
 
     **Correct**
 
@@ -55,11 +55,11 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
 
 - Une fois que vous avez créé une requête à l’aide de la liste de mots clés, nous vous conseillons de vérifier la syntaxe de requête de recherche pour faire en sorte que la requête corresponde à ce que vous souhaitez. Dans la requête de recherche affichée sous **requête**, dans le volet Détails, les mots clés sont séparés par le texte **(c:s)**. Cela indique que les mots clés sont connectés à l’aide d’un opérateur logique similaire à une fonctionnalité à l’opérateur **ou**. De même, si votre requête de recherche inclut des conditions, les mots clés et les conditions sont séparés par le texte **(c:c)**. Cela indique que les mots clés sont connectés aux conditions à l’aide d’un opérateur logique similaire à une fonctionnalité à l’opérateur **ET**. Voici un exemple de requête de recherche (affichée dans le volet Détails) qui résulte de l’utilisation de la liste de mots clés et d’une condition.
 
-    ![Exemple de requête créée lors de l’utilisation de la liste de mots clés et d’une condition](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Exemple de requête créée lors de l’utilisation de la liste de mots clés et d’une condition.](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
 
 - Lorsque vous effectuez une recherche de contenu, Microsoft 365 vérifie automatiquement la présence de caractères non pris en charge et d’opérateurs booléens qui ne sont pas en majuscules dans votre requête de recherche. En règle générale, les caractères non pris en charge sont masqués et entraînent une erreur ou renvoient des résultats inattendus. Pour plus d’informations sur les caractères non pris en charge qui ont été vérifiés, voir [vérifier la présence d’erreurs dans votre requête de recherche de contenu](check-your-content-search-query-for-errors.md).
 
-- Si vous avez une requête de recherche qui contient des mots clés pour les caractères non anglais (tels que les caractères chinois) , vous pouvez cliquer sur l'icône **langue-pays/région**![requête pays/région dans la recherche de contenu ](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionner une valeur de code de culture dans le pays/région pour la recherche. La langue/région par défaut est neutre. Comment savoir si vous avez besoin de modifier le paramètre de langue d’une recherche de contenu ? Si vous êtes certain que les emplacements de contenu contiennent les caractères non anglais que vous recherchez, mais que la recherche ne renvoie aucun résultat, le paramètre de langue peut être à l’origine du problème.
+- Si vous avez une requête de recherche qui contient des mots clés pour les caractères non anglais (tels que les caractères chinois), vous pouvez cliquer sur l’icône **Requête de langue-pays/région** ![Requête de langue-pays/région dans la recherche de contenu.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionnez une valeur de code de culture pays/langue de votre recherche. La langue/région par défaut est neutre. Comment savoir si vous avez besoin de modifier le paramètre de langue d’une recherche de contenu ? Si vous êtes certain que les emplacements de contenu contiennent les caractères non anglais que vous recherchez, mais que la recherche ne renvoie aucun résultat, le paramètre de langue peut être à l’origine du problème.
 
 ## <a name="partially-indexed-items"></a>Éléments partiellement indexés
 
@@ -133,7 +133,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
   Dans les résultats de la recherche, les résumés de la réunion sont identifiés en tant que **réunion** dans le **champ type** et les résumés d’appels sont identifiés en tant qu’**appel**. De plus, les conversations qui font partie d’une chaîne de Teams et de conversations 1xN sont identifiées en tant que **messages instantanés** dans le **champ type**.
 
-  ![Les réunions, les appels et les conversations 1xN de Teams sont identifiés dans le champ type.](../media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Les réunions, les appels et les conversations 1xN de Teams sont identifiés dans le champ Type.](../media/O365-ContentSearch-Teams-MessageKind.png)
 
    Pour plus d’informations, voir [Microsoft Teams lance l’eDiscovery pour les appels et les réunions](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
@@ -147,7 +147,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
   **Contenu de la carte dans Teams**
 
-  ![Contenu de la carte dans le message de la chaîne Teams](../media/CardContentTeams.png)
+  ![Contenu de la carte dans le message de la chaîne Teams.](../media/CardContentTeams.png)
 
   **Contenu de la carte dans les résultats de recherche**
 
@@ -160,7 +160,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
   - Pour utiliser la propriété **Type** dans le cadre de la requête de recherche par mot clé, dans la zone **Mots clés** d'une requête de recherche, tapez`kind:microsoftteams`.
 
-    ![Utilisez type:microsoftteams dans la zone Mots clés](../media/O365-ContentSearch-Teams-Keywords.png)
+    ![Utilisez kind:microsoftteams dans la zone de mots clés.](../media/O365-ContentSearch-Teams-Keywords.png)
 
   - Pour utiliser une condition de recherche, ajoutez la condition **type de message** et utilisez la valeur`microsoftteams`.
 
@@ -181,15 +181,15 @@ Vous pouvez utiliser la propriété d’e-mail **ItemClass** ou la condition de 
 
     Par exemple, vous pouvez utiliser la requête de recherche suivante pour renvoyer des messages Yammer et des éléments de compliment Yammer :
 
-    ![Utiliser la propriété ItemClass pour rechercher des éléments Yammer](../media/YammerContentSearch1.png)
+    ![Utiliser la propriété ItemClass pour rechercher des éléments Yammer.](../media/YammerContentSearch1.png)
 
   - Vous pouvez également utiliser la condition de **Type** e-mail et sélectionner les **messages Yammer** pour renvoyer les éléments Yammer. Par exemple, la requête de recherche suivante renvoie tous les éléments de conversation Yammer qui contiennent le mot clé « confidentiel ».
 
-    ![Utiliser la carte de condition Type pour rechercher des éléments de conversation Yammer](../media/YammerContentSearch2.png)
+    ![Utiliser la carte de condition Type pour rechercher des éléments de conversation Yammer.](../media/YammerContentSearch2.png)
 
 ## <a name="searching-inactive-mailboxes"></a>Recherche des boîtes aux lettres inactives
 
-Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **Gouvernance des informations** \> **Rétention** dans le Centre de conformité Microsoft 365, puis cliquer sur **Plus**![Barre de navigation : sélections](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **boîtes aux lettres inactives**.
+Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **Gouvernance des informations** \> **Rétention** dans le Centre de sécurité & conformité, puis cliquer sur **Plus**![Ellipses de la barre de navigation.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Boîtes aux lettres inactives**.
 
 Voici quelques éléments à prendre en considération lors de la recherche de boîtes aux lettres inactives.
 

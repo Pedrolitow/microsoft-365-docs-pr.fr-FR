@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 réseau de distribution de contenu (CDN) Démarrage rapide
-ms.openlocfilehash: b005c670bce80d84e7d1762eb2d8b2fc57bc7b55d0f5da9e7de13ec144742169
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 30c5d301af6e4ca20646c46cc63cde38f2b28aed
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870301"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570532"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 réseau de distribution de contenu (CDN) Démarrage rapide
 
@@ -33,7 +33,7 @@ Vous pouvez utiliser le **Office 365 réseau de distribution de contenu intégr�
 Pour obtenir des instructions plus détaillées, consultez la Office 365 réseau de distribution de contenu [(CDN) avec SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
 
 >[!NOTE]
->Le Office 365 CDN est uniquement disponible pour les clients du cloud de production (dans le monde). Les locataires du gouvernement des États-Unis, de la Chine et de l’Allemagne ne peuvent pas actuellement Office 365 CDN.
+>Le Office 365 CDN est uniquement disponible pour les clients du cloud de production (dans le monde). Les locataires du gouvernement des États-Unis, de la Chine et de l’Allemagne ne sont actuellement pas en charge Office 365 CDN.
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-identify-items-not-in-cdn"></a>Utilisez l’outil Diagnostic de page SharePoint pour identifier les éléments qui ne sont pas CDN
 
@@ -43,7 +43,7 @@ Vous pouvez utiliser l’extension de navigateur de l’outil Diagnostic de page
 
 Lorsque vous exécutez l’outil Diagnostic de page pour SharePoint sur une page SharePoint Online, vous pouvez cliquer sur l’onglet Tests de **diagnostic** pour voir la liste des ressources qui ne sont pas hébergées par le CDN. Ces ressources sont répertoriées sous la vérification de titre **réseau de distribution de contenu (CDN),** comme illustré dans la capture d’écran ci-dessous.
 
-![Diagnostics de page](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+![Diagnostics de page.](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
 >[!NOTE]
 >L’Outil Diagnostic de page fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
@@ -78,7 +78,7 @@ Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 
 La sortie de ces cmdlets doit ressembler à ce qui suit :
 
-![Sortie des Set-SPOTenantCdnEnabled](../media/O365-CDN/o365-cdn-enable-output.png)
+![Sortie de Set-SPOTenantCdnEnabled.](../media/O365-CDN/o365-cdn-enable-output.png)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -15,17 +15,17 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: En savoir plus sur les options de gouvernance du cycle de vie pour les outils de collaboration Microsoft 365
-ms.openlocfilehash: d49fb6cfe9f181a7e79c9984aa54deb0cf2f3a8e4008512132c980ce1623ea59
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Informations sur les options de gouvernance du cycle de vie pour les outils de collaboration Microsoft 365
+ms.openlocfilehash: 5421f12109fb40e4e5cc6f68568a3b5f1873c7ce
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827709"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574459"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planifier la gouvernance de l’organisation et du cycle de vie Microsoft 365 groupes et Microsoft Teams
 
-Microsoft 365 groupes disposent d’un riche ensemble d’outils pour implémenter les fonctionnalités de gouvernance dont votre organisation a besoin. 
+Microsoft 365 groupes disposent d’un ensemble riche d’outils pour implémenter les fonctionnalités de gouvernance dont votre organisation a besoin. 
 
 La section suivante décrit les fonctionnalités, recommande les meilleures pratiques et fournit des conseils pour poser les bonnes questions afin de déterminer les conditions requises pour la gouvernance et comment y répondre.
 
@@ -33,7 +33,7 @@ La section suivante décrit les fonctionnalités, recommande les meilleures prat
 
 Les groupes peuvent être créés par les utilisateurs finaux à partir de plusieurs points de fin, notamment Outlook, SharePoint, Teams et d’autres environnements.
 
-![image desc](../media/04.png)
+![image desc.](../media/04.png)
 
 Nous vous recommandons vivement le libre-service pour permettre aux propriétaires de groupes et aider les utilisateurs à faire leur travail plus facilement. La limitation de la création de groupes et d’équipes peut ralentir la productivité des utilisateurs, car de nombreux services Microsoft 365 nécessitent que des groupes soient créés pour que le service fonctionne.
 
@@ -74,9 +74,9 @@ Une fois que vous avez fixé l’expiration des groupes :
 - Tout groupe qui n’est pas renouvelé est supprimé.
 - Tout groupe supprimé peut être restauré dans les 30 jours par les propriétaires du groupe ou l’administrateur.
 
-Les stratégies d’expiration sont un bon moyen de limiter la prolifération des groupes en veillant à ce que les groupes qui ne sont plus utilisés soient supprimés. Si vous souhaitez créer une stratégie d’expiration de groupe, voir [Microsoft 365 stratégie d’expiration de groupe.](microsoft-365-groups-expiration-policy.md)
+Les stratégies d’expiration sont un bon moyen de limiter la prolifération des groupes en veillant à ce que les groupes qui ne sont plus utilisés soient supprimés. Si vous souhaitez créer une stratégie d’expiration de groupe, [voir Microsoft 365 stratégie d’expiration de groupe.](microsoft-365-groups-expiration-policy.md)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

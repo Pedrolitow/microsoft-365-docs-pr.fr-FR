@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams réunions avec Canvas
-ms.openlocfilehash: 3883459d6d8fce9d8e150c9de82faf5dad75e7a5
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: dfa9bf10400900f879c806d6ea44bdb9b4b67a9c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387151"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574651"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Utiliser Microsoft Teams réunions avec Canvas
 
@@ -42,7 +42,7 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 3. Dans la navigation de l’administrateur, sélectionnez **Paramètres** lien, puis l’onglet **Intégrations.**
 
-![Canvas Teams Sync Updated png](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
+![Canvas Teams Sync Updated png.](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
 
 4. Entrez le nom de votre client Microsoft, l’attribut de connexion, le suffixe de domaine et l’attribut de recherche AAD. Ces champs seront utilisés pour faire correspondre les utilisateurs de Canvas aux utilisateurs Microsoft Azure Active Directory. 
    * L’attribut de connexion est l’attribut utilisateur Canvas utilisé pour la correspondance.
@@ -53,7 +53,7 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 6. Pour approuver l’accès à l’application **Azure Microsoft-Teams-Sync-for-Canvas de Canvas,** sélectionnez le lien Accorder l’accès **client.** Vous serez redirigé vers le point de terminaison de consentement de l’administrateur de la plateforme d’identités Microsoft.
 
-   ![autorisations](media/permissions.png)
+   ![autorisations.](media/permissions.png)
 
 7. Sélectionnez **Accepter**. 
 
@@ -62,7 +62,7 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 8. Activez la synchronisation Microsoft Teams l’utilisateur en activer le basculement.
 
-   ![teams-sync](media/teams-sync.png)
+   ![synchronisation des équipes.](media/teams-sync.png)
 
 ## <a name="canvas-admin"></a>Administrateur de zone de dessin
 
@@ -76,11 +76,11 @@ En tant qu’administrateur de zone de dessin, vous devez ajouter l’applicatio
 
 2. Sélectionnez **+ Application** pour ajouter Teams applications LTI.
 
-   ![external-apps](media/external-apps.png)
+   ![external-apps.](media/external-apps.png)
 
 3. Sélectionnez **par ID client pour** le type de configuration.
 
-   ![ajouter une application](media/add-app.png)
+   ![ajouter une application.](media/add-app.png)
 
 4. Entrez l’ID client fourni, puis sélectionnez **Envoyer.**
 
@@ -90,7 +90,7 @@ En tant qu’administrateur de zone de dessin, vous devez ajouter l’applicatio
 
    L Microsoft Teams l’application LTI de réunions sera ajoutée à la liste des applications externes.
 
-6. Activez l’application en naviguant vers les clés du développeur dans le compte d’administrateur Canvas, en sélectionnant hérité et en activé le basculement pour Microsoft Teams réunions.
+6. Activez l’application en naviguant vers les clés de développeur dans le compte d’administrateur Canvas, en sélectionnant hérité et en activé le basculement pour Microsoft Teams réunions.
    
 ## <a name="enable-for-canvas-courses"></a>Activer pour les cours de canevas
 

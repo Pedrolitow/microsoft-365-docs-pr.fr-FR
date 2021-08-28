@@ -22,12 +22,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer une stratégie de gestion des informations pour contrôler la durée de la gestion des informations et suivre les personnes qui utilisent ces informations.
-ms.openlocfilehash: 94a97aed83f2b0b7b68ba1fb1bb1533718a00b44c1e02df565f8762dd941a013
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb5d493cfc8f442c5210b99ec394ebf72f30086e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802353"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574351"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Créer et appliquer des stratégies de gestion des informations
 
@@ -52,7 +52,7 @@ Pour vous assurer qu’une stratégie d’information est appliquée à tous les
 
 2. Dans la page Site Paramètres, sous Modèles de stratégie de type de contenu **d’administration** de la collection \> **de sites.**
 
-   ![Lien Modèle de stratégie de type de contenu sur la page Paramètres site](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Lien Modèle de stratégie de type de contenu sur la page Paramètres site.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. Dans la page \> **Stratégies, créez**.
 
@@ -75,7 +75,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
 
 2. Dans la page Site Paramètres, sous **Types** de contenu site Galeries \> **du concepteur** web.
 
-   ![Lien types de contenu de site sur la page Paramètres site](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+   ![Lien types de contenu de site sur la page Paramètres site.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
 
 3. Dans la page Type de contenu Paramètres site, sélectionnez le type de contenu à ajouter une stratégie.
 
@@ -85,7 +85,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
 
 6. Dans les sections suivantes, sélectionnez les fonctionnalités de stratégie individuelles que vous souhaitez ajouter à votre stratégie de gestion des informations.
 
-   ![Types de stratégies de contenu](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+   ![Types de stratégies de contenu.](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
 
 7. Pour spécifier une période de rétention pour les documents et les éléments soumis à cette stratégie, sélectionnez Activer la **rétention,** puis spécifiez la période de rétention et les actions que vous souhaitez faire à l’expiration des éléments.
 
@@ -94,7 +94,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
    1. Choisissez **Ajouter une étape de rétention pour les enregistrements.**
 
    2. Sélectionnez une option de période de rétention pour spécifier la date d’expiration des documents ou des éléments. Effectuez l’une des étapes suivantes :
-      - Pour définir la date d’expiration  en fonction d’une propriété de date, sous Événement Cette étape est basée sur une propriété de date sur l’élément, puis sélectionnez l’action de document ou d’élément (par exemple, Créé ou modifié) et l’incrément de temps après cette action (par exemple, le nombre de jours, mois ou années) lorsque vous souhaitez que l’élément \> expire.
+      - Pour définir la date d’expiration  en fonction d’une propriété de date, sous Événement Cette étape est basée sur une propriété de date sur l’élément, puis sélectionnez l’action de document ou d’élément (par exemple, Créé ou Modifié) et l’incrément de temps après cette action (par exemple, le nombre de jours, mois ou années) lorsque vous souhaitez que l’élément \> expire.
       - Pour utiliser une formule de rétention personnalisée pour déterminer l’expiration, choisissez Définir par une formule de rétention personnalisée **installée sur ce serveur.**
 
         > [!NOTE]
@@ -191,7 +191,7 @@ Vous avez besoin au moins de l’autorisation Gérer les listes pour modifier le
 
 3. Sous **les paramètres de stratégie de** gestion des autorisations et des informations de \> **gestion.**
 
-   ![Lien des stratégies de gestion des informations sur la page paramètres de la bibliothèque de documents](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+   ![Lien des stratégies de gestion des informations sur la page paramètres de la bibliothèque de documents.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
 4. Dans la page Stratégie de gestion des Paramètres, assurez-vous que la source de rétention de la liste ou de la bibliothèque est définie sur Bibliothèque et Dossiers.
 
@@ -205,7 +205,7 @@ Vous avez besoin au moins de l’autorisation Gérer les listes pour modifier le
 
 7. Dans la boîte de dialogue Propriétés de l’étape, sélectionnez une option de période de rétention pour spécifier le moment où les documents ou les éléments doivent expirer. Effectuez l'une des opérations suivantes :
 
-   - Pour définir la date d’expiration  en fonction d’une propriété de date, sous Événement Cette étape est basée sur une propriété de date sur l’élément, puis sélectionnez l’action de document ou d’élément (par exemple, Créé ou modifié) et l’incrément de temps après cette action (par exemple, le nombre de jours, mois ou années) lorsque vous souhaitez que l’élément \> expire.
+   - Pour définir la date d’expiration  en fonction d’une propriété de date, sous Événement Cette étape est basée sur une propriété de date sur l’élément, puis sélectionnez l’action de document ou d’élément (par exemple, Créé ou Modifié) et l’incrément de temps après cette action (par exemple, le nombre de jours, mois ou années) lorsque vous souhaitez que l’élément \> expire.
 
    - Pour utiliser une formule de rétention personnalisée pour déterminer l’expiration, choisissez Définir par une formule de rétention personnalisée **installée sur ce serveur.**
 
@@ -228,7 +228,7 @@ Vous avez besoin au moins de l’autorisation Gérer les listes pour modifier le
 
 Si des stratégies de gestion des informations ont déjà été créées pour votre site en tant que stratégies de collection de sites, vous pouvez appliquer l’une de ces stratégies à un type de contenu. En faisant cela, vous pouvez appliquer la même stratégie à plusieurs types de contenu dans une collection de sites qui ne partagent pas le même type de contenu parent.
 
- Si vous souhaitez appliquer des stratégies à plusieurs types de contenu dans une collection de sites et que vous avez configuré un service de métadonnées gérées, vous pouvez utiliser la publication de types de contenu pour publier des stratégies de gestion des informations sur plusieurs collections de sites. Pour plus d’informations, voir la section Appliquer une stratégie dans les [collections](#apply-a-policy-across-site-collections) de sites.
+ Si vous souhaitez appliquer des stratégies à plusieurs types de contenu dans une collection de sites et que vous avez configuré un service de métadonnées gérées, vous pouvez utiliser la publication de types de contenu pour publier des stratégies de gestion des informations sur plusieurs collections de sites. Pour plus d’informations, voir la section Appliquer une stratégie entre [les collections](#apply-a-policy-across-site-collections) de sites.
 
 1. Accédez à la liste ou à la bibliothèque qui contient le type de contenu auquel vous souhaitez appliquer une stratégie.
 
@@ -238,7 +238,7 @@ Si des stratégies de gestion des informations ont déjà été créées pour vo
 
 3. Sous **les paramètres de stratégie de** gestion des autorisations et des informations de \> **gestion.**
 
-   ![Lien des stratégies de gestion des informations sur la page paramètres de la bibliothèque de documents](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+   ![Lien des stratégies de gestion des informations sur la page paramètres de la bibliothèque de documents.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
 4. Vérifiez que la source de stratégie est définie sur **Types** de contenu et, sous Stratégies de **type** de contenu, sélectionnez le type de contenu à appliquer à la stratégie.
 
@@ -273,7 +273,7 @@ Vous pouvez définir une stratégie de gestion des informations, puis créer un 
 
 2. Dans la page Site Paramètres, sous Modèles de stratégie de type de contenu **d’administration** de la collection \> **de sites.**
 
-   ![Lien Modèle de stratégie de type de contenu sur la page Paramètres site](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Lien Modèle de stratégie de type de contenu sur la page Paramètres site.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. Choisissez la stratégie que vous souhaitez exporter faire \> défiler vers le bas \> **Exporter.**
 

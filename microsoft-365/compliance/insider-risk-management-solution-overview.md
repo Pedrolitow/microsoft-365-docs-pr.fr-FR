@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: d2676c827cc6771d4a8b9a140c06365321695f9f12674c7a41a846b76f210044
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7f1f1c4a6655142401f121def17999d4f07d9f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835789"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570556"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestion des risques internes dans Microsoft 365
 
@@ -44,7 +44,7 @@ Regardez les vidéos ci-dessous pour découvrir comment la gestion des risques i
 
 Pour configurer la gestion des risques internes pour votre organisation, utilisez les étapes suivantes :
 
-![Étapes de gestion des risques internes de la solution de risque interne](../media/ir-solution-ir-steps.png)
+![Étapes de gestion des risques internes de la solution à risque interne.](../media/ir-solution-ir-steps.png)
 
 1. En savoir plus [sur la gestion des risques internes](insider-risk-management.md) dans Microsoft 365
 2. Planifier la gestion [des risques internes et vérifier les licences](insider-risk-management-plan.md)

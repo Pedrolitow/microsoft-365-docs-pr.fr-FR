@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment protéger vos informations sensibles à l’aide Microsoft 365 stratégies et outils de protection contre la perte de données et faire une visite guidée du cycle de vie DLP.
-ms.openlocfilehash: 3f2b8ff6bd099164e288a244e45a2aa646e5bf391c7a192450a02b3689038101
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b1a310a5ea9eea37930dbbc7ea84a8a48577af7e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835813"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574230"
 ---
 # <a name="learn-about-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données
 
@@ -77,7 +77,7 @@ Les stratégies DLP peuvent bloquer les activités interdites, telles que le par
 
 **Planification de la culture organisationnelle pour la DLP**
 
-Une implémentation réussie de la protection contre la perte de données dépend autant de la formation et de l’familiarisation de vos utilisateurs aux pratiques de protection contre la perte de données que de la mise en place de stratégies bien planifiées et bien mises au point. Étant donné que vos utilisateurs sont très impliqués, n’oubliez pas de planifier leur formation. Vous pouvez utiliser stratégiquement des conseils de stratégie pour sensibiliser vos utilisateurs avant de modifier l’application de la stratégie du mode test à des modes plus restrictifs.
+Une implémentation réussie de la protection contre la perte de données dépend autant de la formation et de l’familiarisation de vos utilisateurs aux pratiques de protection contre la perte de données que de la mise en place de stratégies bien planifiées et bien mises au point. Étant donné que vos utilisateurs sont très impliqués, n’oubliez pas de planifier leur formation. Vous pouvez utiliser stratégiquement les conseils de stratégie pour sensibiliser vos utilisateurs avant de modifier l’application de la stratégie du mode test à des modes plus restrictifs.
 
 <!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for Microsoft 365 data loss prevention](dlp-plan-for-dlp.md).-->
 
@@ -184,12 +184,12 @@ DLP signale une grande quantité d’informations dans les Microsoft 365 de la s
 Lorsque DLP effectue une action sur un élément sensible, vous pouvez être averti de cette action via une alerte configurable. Au lieu d’empiler ces alertes dans une boîte aux lettres pour que vous les parliez, le centre de conformité les rend disponibles dans le tableau de bord de gestion des [alertes DLP.](dlp-configure-view-alerts-policies.md) Utilisez le tableau de bord alertes DLP pour configurer les alertes, les examiner, les trier et suivre la résolution des alertes DLP. Voici un exemple d’alertes générées par les correspondances de stratégie et les activités de Windows 10 appareils.
 
 > [!div class="mx-imgBorder"]
-> ![Information d’alerte](../media/Alert-info-1.png)
+> ![Informations sur l’alerte.](../media/Alert-info-1.png)
 
 Vous pouvez également afficher les détails de l’événement associé avec des métadonnées complètes dans le même tableau de bord
 
 > [!div class="mx-imgBorder"]
-> ![Informations sur un événement](../media/Event-info-1.png)
+> ![informations d’événement.](../media/Event-info-1.png)
 
 ### <a name="reports"></a>Rapports
 
@@ -203,7 +203,7 @@ Les rapports [DLP montrent](view-the-dlp-reports.md#view-the-reports-for-data-lo
 
 L’onglet Explorateur d’activités de  la page DLP a le filtre Activité prédéfinie *sur DLPRuleMatch*. Utilisez cet outil pour passer en revue l’activité liée au contenu qui contient des informations sensibles ou qui comporte des étiquettes appliquées, telles que les étiquettes qui ont été modifiées, les fichiers modifiés et une règle.
 
-![Capture d’écran de l’explorateur d’activités d’étendue DLPRuleMatch](../media/dlp-activity-explorer.png)
+![Capture d’écran de l’explorateur d’activités d’étendue DLPRuleMatch.](../media/dlp-activity-explorer.png)
 
 Pour plus d’informations, voir [La mise en place de l’Explorateur d’activités](data-classification-activity-explorer.md)
 

@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams classes à Canvas
-ms.openlocfilehash: 09c0033f6deca5d941dee5003391b1a0b171a0ee
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 44ba24e5c8bd7107f9cba199ce290c10b31e0806
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387019"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575071"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Utiliser Microsoft Teams classes avec Canvas
 
@@ -44,7 +44,7 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 4. Activez Microsoft Teams synchronisation en activé le basculement.
    
-   ![Canvas Teams Sync Updated png](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
+   ![Canvas Teams Sync Updated png.](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
 
 5. Entrez le nom de votre client Microsoft, l’attribut de connexion, le suffixe de domaine et l’attribut de recherche AAD.
 
@@ -57,7 +57,7 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 7. Pour approuver l’accès à l’application **Azure Microsoft-Teams-Sync-for-Canvas de Canvas,** sélectionnez le lien Accorder l’accès **client.** Vous serez redirigé vers le point de terminaison de consentement de l’administrateur de la plateforme d’identités Microsoft.
 
-   ![autorisations](media/permissions.png)
+   ![autorisations.](media/permissions.png)
 
 8. Sélectionnez **Accepter**.
 
@@ -73,11 +73,11 @@ En tant qu’administrateur de zone de dessin, vous devez ajouter l’applicatio
 
 2. Sélectionnez **+ Application** pour ajouter Teams applications LTI.
 
-   ![external-apps](media/external-apps.png)
+   ![external-apps.](media/external-apps.png)
 
 3. Sélectionnez **par ID client pour** le type de configuration.
 
-   ![ajouter une application](media/add-app.png)
+   ![ajouter une application.](media/add-app.png)
 
 4. Entrez l’ID client fourni, puis sélectionnez **Envoyer.**
 

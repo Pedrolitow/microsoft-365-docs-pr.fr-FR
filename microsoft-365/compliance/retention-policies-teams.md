@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 646a391d469470b780010e4293d1433153419b23
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 99081712f3c762f6818df1f6e390b50ae450a7a8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248053"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574146"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -81,7 +81,7 @@ Une fois qu'une politique de rétention est configurée pour les messages de con
 
 Lorsque la politique de rétention consiste à conserver puis à supprimer :
 
-![Diagramme du flux de rétention pour les messages de conversation et de canal des Teams](../media/teamsretentionlifecycle.png)
+![Diagramme du flux de rétention pour les messages de conversation et de canal Teams.](../media/teamsretentionlifecycle.png)
 
 Pour les deux voies du diagramme :
 

@@ -23,12 +23,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Découvrez comment afficher les erreurs de synchronisation d’annuaires et les correctifs possibles dans Centre d’administration Microsoft 365.
-ms.openlocfilehash: d48b67f31241777368cd27cf0385d34757495eef
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 0bdacf95e0f8534cb721496dc4edb1b49bba131f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353755"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570208"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Afficher les erreurs de synchronisation d’annuaires dans Microsoft 365
 
@@ -42,14 +42,14 @@ Pour afficher les erreurs dans le Centre d’administration Microsoft 365 :
     
 2. Dans  la page d’accueil, vous verrez la carte de **gestion utilisateur.** 
     
-    ![Carte de gestion utilisateur dans le Centre d’administration Microsoft 365](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![Carte de gestion utilisateur dans le Centre d’administration Microsoft 365.](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
 3. Sur la carte, sélectionnez **Erreurs de** synchronisation sous **Azure AD Connecter** pour voir les erreurs dans la page Erreurs de synchronisation **d’annuaires.**   
     
-    ![Exemple de page d’erreurs de synchronisation d’annuaires](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+    ![Exemple de page d’erreurs de synchronisation d’annuaires.](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
 
 4. Choisissez l’une des erreurs pour afficher le volet d’informations avec des informations sur l’erreur et des conseils sur la façon de la corriger.
 
-   ![Exemple des détails d’une erreur de synchronisation d’annuaires](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
+   ![Exemple des détails d’une erreur de synchronisation d’annuaires.](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
 Après l’affichage, voir [résoudre les problèmes liés à](fix-problems-with-directory-synchronization.md) la synchronisation d’annuaires pour Microsoft 365 résoudre les problèmes identifiés.

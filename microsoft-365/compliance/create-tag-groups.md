@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 985ce31ae9c88e6124e559ef200cfbecfc7ab8de63b63244f399b7c0c96c30f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94bbcac31a3dd533ee589496989e60b739ca3b3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865991"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575011"
 ---
 # <a name="create-tag-groups"></a>Créer des groupes de balises
 
@@ -31,17 +31,17 @@ Pour créer un groupe de balises :
 
 1.  Dans un jeu à réviser, cliquez sur **Gérer le jeu à réviser.**
 
-    ![Cliquez sur Gérer le jeu à réviser](../media/ED-managews.png)
+    ![Cliquez sur Gérer le jeu à réviser.](../media/ED-managews.png)
 
 2.  Dans la vignette **Balises,** cliquez sur **Gérer les balises.**
 
-    ![Cliquez sur Gérer les balises dans la vignette Balises](../media/ED-managetags.png)
+    ![Cliquez sur Gérer les balises dans la vignette Balises.](../media/ED-managetags.png)
 
 Une fois à l’intérieur de la gestion des balises, des balises peuvent être créées pour répondre aux exigences de votre cas. Vous pouvez commencer par créer un groupe de balises.
 
 1.  Cliquez **sur Ajouter une section.**
 
-    ![Ajout d’un groupe de balises](../media/ED-addtagsection.png)
+    ![Ajout d’un groupe de balises.](../media/ED-addtagsection.png)
 
     L’écran d’aperçu est mis à jour lorsque vous enregistrez afin que vous pouvez afficher un aperçu du panneau de balises sans avoir à fermer l’écran de gestion des balises et revenir au jeu de travail.
 
@@ -49,7 +49,7 @@ Une fois à l’intérieur de la gestion des balises, des balises peuvent être 
 
 3. Pour créer une balise dans ce groupe, cliquez sur les ellipses sur le nouveau groupe de balises pour créer des balises dans cette nouvelle section.
     
-    ![Création de balises dans un groupe de balises](../media/ED-createtag.png)
+    ![Création de balises dans un groupe de balises.](../media/ED-createtag.png)
 
    - **Les balises d’option** forcent les utilisateurs à sélectionner une balise dans un groupe de balises.
    
@@ -59,5 +59,5 @@ Une fois à l’intérieur de la gestion des balises, des balises peuvent être 
 
 Pour imbriguer des balises, cliquez sur les ellipses en côté d’une balise, puis sélectionnez une nouvelle balise à ajouter.
 
-![Imbriquement de balises](../media/ED-tagnesting.png)
+![Imbriquement de balises.](../media/ED-tagnesting.png)
 

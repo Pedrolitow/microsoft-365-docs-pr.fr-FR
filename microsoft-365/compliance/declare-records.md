@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: 0d2614709c22347c3a2a9f2bedf952cd5d70508f54fd8e6edcdae0dec3e7791b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 53db42de769600de3a6190ee4b7f0de2d9e5505e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842369"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574242"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
@@ -57,9 +57,9 @@ Si vous changez d’avis sur la façon de voir cette option dans l’assistant �
 
 Lorsque vous créez une étiquette de rétention depuis la solution **Gestion des enregistrements** dans le centre de conformité Microsoft 365, vous pouvez marquer des éléments comme enregistrement. Si vous avez exécuté la commande PowerShell à partir de la section précédente, vous pouvez marquer les éléments comme un enregistrement réglementaire de manière alternative.
 
-Par exemple :
+Par exemple :
 
-![Configurer une étiquette de rétention pour marquer le contenu en tant qu’enregistrement ou réglementation](../media/recordversioning6.png)
+![Configurer une étiquette de rétention pour marquer le contenu en tant qu’enregistrement ou réglementation.](../media/recordversioning6.png)
 
 En utilisant cette étiquette de rétention, vous pouvez désormais l’appliquer aux documents SharePoint ou OneDrive et aux messages électroniques Exchange, comme souhaité.
 
@@ -79,7 +79,7 @@ Lorsque des étiquettes de rétention qui marquent le contenu en tant qu’enreg
 
 Exemple d’un document marqué en tant qu’enregistrement à l’aide d’une étiquette de rétention :
 
-![Volet Détails pour le document marqué comme enregistrement](../media/recordversioning7.png)
+![Volet Détails pour le document marqué comme enregistrement.](../media/recordversioning7.png)
 
 ## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a>Effectuer une recherche du journal d’audit pour les éléments étiquetés déclarés comme enregistrements.
 

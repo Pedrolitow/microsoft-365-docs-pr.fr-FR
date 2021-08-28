@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil Advanced eDiscovery gestion des dépositaires pour accéder facilement à l’activité des dépositaires dans votre cas et y effectuer des recherches.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 43ec73c87efaad51711879e0574d03f571675523
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 4069b4ee61f15cfbe8f0f7f74cb42e9790f0106a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507829"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570772"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l’activité d’audit des consignataires
 
@@ -43,21 +43,21 @@ Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’a
   
 3. Dans la page **Des dépositaires,** sélectionnez un dépositaire dans la liste, puis cliquez sur **Afficher** l’activité des dépositaires dans la page de flyout.
 
-    La page de recherche activités du dépositaire s’affiche. Notez que le dépositaire que vous avez  sélectionné à l’étape précédente s’affiche dans la zone de présentation du dépositaire. Vous pouvez sélectionner différents dépositaires dans la zone de drop-down, mais vous pouvez uniquement rechercher des activités pour un dépositaire à la fois.
+    La page de recherche activités du dépositaire s’affiche. Notez que le dépositaire que vous avez  sélectionné à l’étape précédente s’affiche dans la zone de la zone de présentation du dépositaire. Vous pouvez sélectionner différents dépositaires dans la zone de drop-down, mais vous pouvez uniquement rechercher des activités pour un dépositaire à la fois.
 
-    ![Page de recherche activités du consignataire](../media/AeDCustodianActivities1.png)
+    ![Page de recherche des activités des dépositaires.](../media/AeDCustodianActivities1.png)
    
 4. Configurez les critères de recherche suivants : 
       
    1. **Activités :** cliquez sur la liste liste de listes pour afficher les activités que vous pouvez rechercher. Une fois la recherche terminée, seuls les enregistrements d’audit correspondant aux activités sélectionnées apparaissent. La sélection **Afficher les résultats pour toutes** les activités affiche les résultats de toutes les activités effectuées par le dépositaire qui correspondent aux autres critères de recherche.
 
-      ![Liste des activités](../media/CustodianActivityAudit.PNG)
+      ![Liste des activités.](../media/CustodianActivityAudit.PNG)
       
    1. **Date de début et date de fin** : sélectionnez une plage de dates et d’heures pour afficher les événements qui se sont produits au cours de cette période. Les sept derniers jours sont sélectionnés par défaut. Les date et heure sont présentées au format UTC (temps universel coordonné). La plage de dates maximale que vous pouvez spécifier est une année.
       
    1. **Dépositaires** : cliquez dans cette zone, puis sélectionnez un dépositaire spécifique pour afficher les résultats de la recherche. Les enregistrements d’audit pour l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats.
       
-5. Clic  ![Bouton Rechercher](../media/SearchButton.PNG)  pour exécuter la recherche à l’aide de vos critères de recherche. Les résultats de la recherche sont chargés et, après quelques instants, ils sont affichés sous Résultats sur la page de recherche Activités des dépositaires. 
+5. Clic  ![Bouton Rechercher.](../media/SearchButton.PNG)  pour exécuter la recherche à l’aide de vos critères de recherche. Les résultats de la recherche sont chargés et, après quelques instants, ils sont affichés sous Résultats sur la page de recherche Activités des dépositaires. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Étape 2 : Afficher les résultats de recherche du journal d’audit
 
@@ -78,7 +78,7 @@ Les résultats contiennent les informations suivantes sur chaque événement ren
 
 ## <a name="step-3-filter-the-search-results"></a>Étape 3 : filtrer les résultats de la recherche
 
-Vous pouvez également filtrer les résultats d’une recherche dans le journal d’audit. Cela peut vous aider à filtrer rapidement les résultats pour un utilisateur ou une activité spécifique. 
+Vous pouvez également filtrer les résultats d’une recherche dans le journal d’audit. Cela peut vous aider à filtrer rapidement les résultats d’un utilisateur ou d’une activité spécifique. 
 
 Pour filtrer les résultats :
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9feaad92a413443770db4e65eecaa8e90845a8e8a969800c2910c0ecd62970a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9e007a84286df348158ddc830a5bec079183f768
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884178"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570424"
 ---
 # <a name="provide-feedback-on-microsoft-365-defender"></a>Fournir des commentaires sur Microsoft 365 Defender
 
@@ -44,7 +44,7 @@ Regardez cette vidéo pour voir à quel point il est facile de fournir des comme
 
 1. Dans n’importe quelle partie du portail, **sélectionnez Faire part de vos commentaires.** 
 
-    ![Image du bouton de commentaires](../../media/feedback.png)
+    ![Image du bouton de commentaires.](../../media/feedback.png)
 
 2. Évaluer votre expérience et fournir des détails sur ce que vous avez aimé ou sur les améliorations qui peuvent être apportées. Vous pouvez également choisir d’être contacté à propos des commentaires. 
 

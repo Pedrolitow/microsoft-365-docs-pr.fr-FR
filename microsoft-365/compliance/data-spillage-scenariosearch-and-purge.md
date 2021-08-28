@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez eDiscovery et les outils de recherche pour gérer un incident de débordement de données dans votre organisation et y répondre.
-ms.openlocfilehash: 96cb6362149fe056249e7ffe2d6858785335a00c
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 340bf10dc57737c024d1ffcb3a441ba53bc917d6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508189"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570268"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Série de solutions eDiscovery : scénario de débordement de données : recherche et purge
 
@@ -37,7 +37,7 @@ Ce document fournit une liste d’instructions sur la façon de supprimer défin
 
 Voici comment gérer un incident de débordement de données :
 
-![Flux de travail en 8 étapes pour la gestion des incidents de débordement de données](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![Flux de travail en 8 étapes pour la gestion des incidents de débordement de données.](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [(Facultatif) Étape 1 : Gérer les personnes qui peuvent accéder au cas et définir des limites de conformité](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [Étape 2 : Créer un cas eDiscovery](#step-2-create-an-ediscovery-case)<br/>
@@ -68,7 +68,7 @@ Vous pouvez également créer un groupe de rôles qui corresponde aux besoins de
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Étape 2 : Créer un cas eDiscovery
 
-Un cas eDiscovery permet de gérer efficacement votre enquête sur les débordements de données. Vous pouvez ajouter des membres au groupe de rôles que vous avez créé à l’étape 1, ajouter le groupe de rôles en tant que membre d’un nouveau cas eDiscovery, effectuer des recherches itératives pour rechercher les données déversées, exporter un rapport à partager, suivre l’état du cas, puis revenir aux détails du cas si nécessaire. Envisagez d’établir une convention d’attribution de noms pour les cas eDiscovery utilisés pour les incidents de débordement de données, et fournissez autant d’informations que possible dans le nom et la description du cas afin de pouvoir localiser et faire référence à l’avenir si nécessaire.
+Un cas eDiscovery permet de gérer efficacement votre enquête sur la surdessage de données. Vous pouvez ajouter des membres au groupe de rôles que vous avez créé à l’étape 1, ajouter le groupe de rôles en tant que membre d’un nouveau cas eDiscovery, effectuer des recherches itératives pour rechercher les données déversées, exporter un rapport à partager, suivre l’état du cas, puis revenir aux détails du cas si nécessaire. Envisagez d’établir une convention d’attribution de noms pour les cas eDiscovery utilisés pour les incidents de débordement de données, et fournissez autant d’informations que possible dans le nom et la description du cas afin de pouvoir localiser et faire référence à l’avenir si nécessaire.
   
 Pour créer un cas, vous pouvez utiliser eDiscovery dans le centre de sécurité et conformité. Voir « Créer un cas » dans [La mise en place de Core eDiscovery.](get-started-core-ediscovery.md#step-3-create-a-core-ediscovery-case)
   
@@ -87,7 +87,7 @@ Après avoir créé une recherche de contenu, vous devez vérifier et vérifier 
   
 Si vous avez plus de 1 000 boîtes aux lettres ou plus de 100 messages électroniques par boîte aux lettres à réviser, vous pouvez diviser la recherche initiale en plusieurs recherches à l’aide de mots clés ou de conditions supplémentaires, telles que la plage de dates ou l’expéditeur/destinataire, et examiner les résultats de chaque recherche individuellement. Veillez à noter toutes les requêtes de recherche à utiliser lorsque vous supprimez des messages à [l’étape 7.](#step-7-permanently-delete-the-spilled-data)
 
-Si un dépositaire ou un utilisateur final se voit attribuer une licence Office 365 E5, vous pouvez examiner jusqu’à 10 000 résultats de recherche à la fois à l’aide de Advanced eDiscovery. S’il y a plus de 10 000 messages électroniques à réviser, vous pouvez diviser la requête de recherche par plage de dates et examiner chaque résultat individuellement à mesure que les résultats de la recherche sont triés par date. Dans Advanced eDiscovery, vous pouvez baliser  les résultats de recherche à l’aide de l’étiquette en tant que fonctionnalité dans le panneau d’aperçu et filtrer le résultat de la recherche en fonction de la balise que vous avez étiquetée. Cela est utile lorsque vous collaborez avec un réviseur secondaire. À l’aide d’outils d’analyse supplémentaires dans Advanced eDiscovery, tels que la reconnaissance optique de caractères, le thread de messagerie électronique et le codage prédictif, vous pouvez rapidement traiter et examiner des milliers de messages et les marquer pour une révision plus approfondi. Voir [configuration rapide pour Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
+Si un dépositaire ou un utilisateur final se voit attribuer une licence Office 365 E5, vous pouvez examiner jusqu’à 10 000 résultats de recherche à la fois à l’aide Advanced eDiscovery. S’il y a plus de 10 000 messages électroniques à réviser, vous pouvez diviser la requête de recherche par plage de dates et examiner chaque résultat individuellement à mesure que les résultats de la recherche sont triés par date. Dans Advanced eDiscovery, vous pouvez baliser  les résultats de recherche à l’aide de l’étiquette en tant que fonctionnalité dans le panneau d’aperçu et filtrer le résultat de la recherche en fonction de la balise que vous avez étiquetée. Cela est utile lorsque vous collaborez avec un réviseur secondaire. À l’aide d’outils d’analyse supplémentaires dans Advanced eDiscovery, tels que la reconnaissance optique de caractères, le thread de messagerie électronique et le codage prédictif, vous pouvez rapidement traiter et examiner des milliers de messages et les marquer pour une révision plus approfondi. Voir [configuration rapide pour Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
 
 Lorsque vous trouvez un message électronique contenant des données surdessées, vérifiez les destinataires du message pour déterminer s’il a été partagé en externe. Pour poursuivre le suivi d’un message, vous pouvez collecter des informations sur l’expéditeur et des plages de dates afin de pouvoir utiliser les journaux de suivi des messages. Ce processus est décrit à [l’étape 5.](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)
 
@@ -101,17 +101,17 @@ Après avoir vérifié les résultats de la recherche, vous pouvez partager vos 
  
       La page Exporter le rapport s’affiche.
 
-    ![Sélectionnez la recherche, puis cliquez sur Plus > exporter le rapport sur la page volante](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![Sélectionnez la recherche, puis cliquez sur Plus > exporter le rapport sur la page volante.](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. Sélectionnez tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres raisons,** puis cliquez sur Générer **un rapport.**
 
 4. Dans le cas eDiscovery, cliquez sur **Exporter** pour afficher la liste des travaux d’exportation. Vous de devez peut-être cliquer sur **Actualiser** pour mettre à jour la liste afin d’afficher la tâche d’exportation que vous avez créée.
 
-5. Cliquez sur la tâche d’exportation, puis cliquez sur **Télécharger** le rapport dans la page volante.
+5. Cliquez sur la tâche d’exportation, puis cliquez sur **Télécharger** le rapport sur la page volante.
  
-    ![Dans la page Exportation, cliquez sur l’exportation, puis sur « Télécharger le rapport »](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![Dans la page Exportation, cliquez sur l’exportation, puis sur « Télécharger le rapport ».](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
-Le **rapport de synthèse d’exportation** contient le nombre d’emplacements trouvés avec les résultats et la taille des résultats de la recherche. Vous pouvez l’utiliser pour comparer le rapport généré après la suppression et fournir comme preuve de suppression. Le **rapport** des résultats contient un résumé plus détaillé des résultats de la recherche, y compris l’objet, l’expéditeur, les destinataires, si le message a été lu, les dates et la taille de chaque message. Si l’un des détails de ce rapport contient ces données effectivement déversées, n’oubliez pas de supprimer définitivement le fichier Results.csv une fois l’enquête terminée.
+Le **rapport résumé de l’exportation** contient le nombre d’emplacements trouvés avec les résultats et la taille des résultats de la recherche. Vous pouvez l’utiliser pour comparer le rapport généré après la suppression et fournir comme preuve de suppression. Le **rapport** des résultats contient un résumé plus détaillé des résultats de la recherche, y compris l’objet, l’expéditeur, les destinataires, si le message a été lu, les dates et la taille de chaque message. Si l’un des détails de ce rapport contient ces données effectivement déversées, n’oubliez pas de supprimer définitivement le fichier Results.csv une fois l’enquête terminée.
 
 Pour plus d’informations sur l’exportation de rapports, voir [Exporter un rapport de recherche de contenu.](export-a-content-search-report.md)
     
@@ -143,7 +143,7 @@ Il existe deux façons de collecter une liste d’adresses de messagerie de boî
     
 4. Dans la **liste bas Type,** cliquez sur **Emplacements supérieurs.**
     
-    ![Obtenir la liste des boîtes aux lettres qui contiennent des résultats de recherche dans la page Emplacements principaux dans les statistiques de recherche](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![Obtenir la liste des boîtes aux lettres qui contiennent des résultats de recherche dans la page Emplacements principaux dans les statistiques de recherche.](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     Une liste de boîtes aux lettres contenant des résultats de recherche s’affiche. Le nombre d’éléments de chaque boîte aux lettres qui correspondent à la requête de recherche est également affiché.
     
@@ -191,7 +191,7 @@ L’étape finale du flux de travail pour gérer un incident de débordement de 
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Reconnextage des boîtes aux lettres à leur état précédent
 
-Si vous avez modifié une configuration de boîte aux lettres à l’étape 6 pour préparer les boîtes aux lettres avant la suppression des données supprimées, vous devrez les revenir à leur état précédent. Voir « Étape 6 : Rétablir l’état précédent de la boîte aux lettres » dans Supprimer les éléments du dossier Éléments [récupérables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state)des boîtes aux lettres en nuage en attente.
+Si vous avez modifié une configuration de boîte aux lettres à l’étape 6 pour préparer les boîtes aux lettres avant la suppression des données supprimées, vous devrez les revenir à leur état précédent. Voir « Étape 6 : Rétablir l’état précédent de la boîte aux lettres » dans Supprimer des éléments du dossier Éléments [récupérables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state)des boîtes aux lettres en nuage en attente.
   
 ### <a name="deleting-the-search-query"></a>Suppression de la requête de recherche
 
@@ -201,7 +201,7 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
 
 2. Dans la page volante, cliquez sur **Supprimer.**
 
-    ![Sélectionnez la recherche, puis cliquez sur Supprimer dans la page volante](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![Sélectionnez la recherche, puis cliquez sur Supprimer dans la page volante.](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d’examen de débordement de données
 

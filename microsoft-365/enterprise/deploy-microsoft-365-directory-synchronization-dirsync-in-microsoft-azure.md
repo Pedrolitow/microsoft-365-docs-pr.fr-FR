@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Découvrez comment déployer Azure AD Connecter sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre annuaire local et le client Azure AD.
-ms.openlocfilehash: c7a3c8a3800f7dc866895606277ca7dc5bd9ddd6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: df41c88330eb71c67505d8a75e8268ae2acb9b01
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356803"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575287"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Déployer Microsoft 365 synchronisation d’annuaires dans Microsoft Azure
 
@@ -46,7 +46,7 @@ Cette solution exige une connectivité entre votre réseau local et votre résea
 
 Le diagramme suivant montre les Connecter Azure AD en cours d’exécution sur une machine virtuelle dans Azure (le serveur de synchronisation d’annuaires) qui synchronise une forêt AD DS sur site avec un abonnement Microsoft 365.
   
-![Outil de Connecter Azure AD sur une machine virtuelle dans Azure synchronisant les comptes locaux avec le client Azure AD d’un abonnement Microsoft 365 avec flux de trafic](../media/CP-DirSyncOverview.png)
+![Azure AD Connecter sur une machine virtuelle dans Azure synchronisant les comptes locaux avec le client Azure AD d’un abonnement Microsoft 365 avec le flux de trafic.](../media/CP-DirSyncOverview.png)
   
 Dans le diagramme, il y a deux réseaux reliés par une connexion de site à site VPN ou ExpressRoute. Il existe un réseau local contenant les contrôleurs de domaine AD DS et un réseau virtuel Azure avec un serveur de synchronisation d’annuaires, qui est une machine virtuelle exécutant [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). Il existe deux flux de trafic principal à partir du serveur de synchronisation d’annuaires d’origine :
   
@@ -128,7 +128,7 @@ Pour créer et configurer le réseau virtuel Azure, effectuez la [phase 1 en pr
   
 Voici la configuration finale.
   
-![Phase 1 du serveur de synchronisation d’annuaires pour Microsoft 365 hébergé dans Azure](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Phase 1 du serveur de synchronisation d’annuaires pour Microsoft 365 hébergé dans Azure.](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 Cette illustration montre un réseau local connecté à un réseau virtuel Azure via une connexion VPN ou ExpressRoute de site à site.
   
@@ -150,7 +150,7 @@ Pour qu’Azure AD Connect puisse accéder aux ressources Internet, vous devez
   
 Voici la configuration finale.
   
-![Phase 2 du serveur de synchronisation d’annuaires pour Microsoft 365 hébergé dans Azure](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Phase 2 du serveur de synchronisation d’annuaires pour Microsoft 365 hébergé dans Azure.](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 Cette illustration montre la machine virtuelle du serveur de synchronisation d’annuaires dans le réseau virtuel Azure.
   
@@ -167,7 +167,7 @@ Procédez comme suit :
   
 Voici la configuration finale.
   
-![Phase 3 du serveur de synchronisation d’annuaires pour Microsoft 365 hébergé dans Azure](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Phase 3 du serveur de synchronisation d’annuaires pour Microsoft 365 hébergé dans Azure.](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 Cette illustration montre le serveur de synchronisation d’annuaires avec Azure AD Connect dans le réseau virtuel Azure entre différents locaux.
   

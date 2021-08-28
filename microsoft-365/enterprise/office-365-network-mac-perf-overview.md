@@ -15,24 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre Administration Microsoft 365 de connexion
-ms.openlocfilehash: 3d22d3d3ee4081ab905c3848a39f5f9df9a9e667b503899b946c1ebec8110dc8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9dbb65bc9c6060b58c3629e7e1863d9cf7d8e9e3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870413"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574723"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre Administration Microsoft 365 de connexion
 
 Le centre Administration Microsoft 365 inclut désormais des mesures de connectivité réseau agrégées collectées à partir de votre client Microsoft 365 et disponibles uniquement pour les utilisateurs administratifs de votre client.
 
 > [!div class="mx-imgBorder"]
-> ![Outil de test de connectivité réseau](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+> ![Outil de test de connectivité réseau.](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 **Les évaluations réseau** et les informations réseau sont **affichées** dans le Centre de Administration Microsoft 365 sous **Informations sur la | Connectivité réseau**.
 
 > [!div class="mx-imgBorder"]
-> ![Page Performances du réseau](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+> ![Page Performances du réseau.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 >[!NOTE]
 >La connectivité réseau dans le Centre d’administration prend en charge les locataires de WW Commercial et d’Allemagne, mais Cloud de la communauté du secteur public modéré, Cloud de la communauté du secteur public Élevé, DoD ou Chine.
@@ -94,7 +94,7 @@ Les entreprises complexes avec plusieurs bureaux et des architectures de périm�
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise de connectivité réseau
 
 > [!div class="mx-imgBorder"]
-> ![Réseau client vers le cloud](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
+> ![Réseau client vers le cloud.](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
 De nombreuses entreprises ont des configurations de périmètre réseau qui ont évolué au fil du temps et sont principalement conçues pour prendre en charge l’accès au site web Internet des employés, où la plupart des sites web ne sont pas connus à l’avance et ne sont pas sécurisés. L’objectif le plus indispensable est d’éviter les programmes malveillants et les attaques par hameçonnage à partir de ces sites web inconnus. Cette stratégie de configuration réseau, bien qu’utile à des fins de sécurité, peut entraîner une dégradation des performances Microsoft 365 et de l’expérience utilisateur.
 
@@ -113,17 +113,17 @@ Microsoft dispose de mesures réseau existantes à partir de plusieurs clients O
 Par défaut, les informations d’emplacement approximatives associées aux mesures réseau identifient la ville où se trouvent les appareils clients. L’évaluation réseau à chaque emplacement est affichée avec la couleur et le nombre relatif d’utilisateurs à chaque emplacement est représenté par la taille du cercle.
 
 > [!div class="mx-imgBorder"]
-> ![Carte de vue d’ensemble des informations réseau](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
+> ![Carte de vue d’ensemble des informations réseau.](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
 
 La page vue d’ensemble présente également l’évaluation réseau pour le client sous la mesure d’une moyenne pondérée dans tous les bureaux.
 
 > [!div class="mx-imgBorder"]
-> ![Évaluation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> ![Évaluation du réseau.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 Vous pouvez afficher un affichage tableau des emplacements où ils peuvent être filtrés, triés et modifiés dans l’onglet **Emplacements.** Les emplacements avec des recommandations spécifiques peuvent également inclure une amélioration de la latence potentielle estimée. Cette valeur est calculée en prenant la latence médiane des utilisateurs de votre organisation à l’emplacement et en soustrayant la latence médiane pour toutes les organisations dans la même ville.
 
 > [!div class="mx-imgBorder"]
-> ![Emplacements d’informations réseau](../media/m365-mac-perf/m365-mac-perf-locations.png)
+> ![Emplacements d’informations réseau.](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
 ## <a name="remote-worker-assessment-and-user-connection-metrics"></a>Mesures de l’évaluation du travail à distance et de la connexion utilisateur
 
@@ -138,13 +138,13 @@ Les emplacements sont classés automatiquement sur site ou à distance. Toutefoi
 La sélection d’un emplacement de bureau ouvre une page récapitulatif propre à un emplacement affichant les détails de la sortie réseau identifiée à partir des mesures de cet emplacement.
 
 > [!div class="mx-imgBorder"]
-> ![Informations réseau détaillées par emplacement](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
+> ![Informations réseau détaillées par emplacement.](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
 Une carte du réseau de périmètre pour les utilisateurs de votre organisation à l’emplacement est affichée avec tout ou partie de ces éléments :
 
 - **Office-** Emplacement du bureau de la page que vous regardez
 - **Périmètre réseau** : emplacement de l’adresse IP source pour les connexions à partir de l’emplacement du bureau. Cela dépend de la précision des bases de données d’emplacements ip géographiques
-- **Exchange service** frontal optimal : l’une des Exchange de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
+- **Exchange service** frontal optimal : l’une des portes d’Exchange de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
 - **Exchange frontale sous-optimale** : une porte d’Exchange service frontale à qui les utilisateurs sont connectés, mais qui n’est pas recommandée
 - **SharePoint service** frontal optimal : l’une des SharePoint de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
 - SharePoint service frontal **sous-optimal** : une porte d’SharePoint service à qui les utilisateurs sont connectés, mais qui n’est pas recommandée
@@ -155,12 +155,12 @@ La page récapitulatif de l’emplacement du bureau affiche également l’éval
 
 Les comparaisons entre les clients de la même ville sont basées sur l’attente que tous les clients ont un accès égal aux fournisseurs de services réseau, à l’infrastructure de télécommunications et aux points de présence réseau Microsoft à proximité.
 
-Les noms d’emplacement peuvent être personnalisés lors de l’ajout d’un nouvel emplacement ou de la modification d’un emplacement existant dans le flyout d’emplacement. Cela vous offre la possibilité de personnaliser vos noms d’emplacement à tout moment. En outre, lorsque vous ajoutez des sous-réseaux LAN directement dans le volant d’emplacements, nous vous montrons une liste de listes de sous-réseaux LAN de correspondances soft que vous pouvez sélectionner. Les noms de circuits pour des adresses IP de sortie d’office spécifiques peuvent également être ajoutés et modifiés.
+Les noms d’emplacement peuvent être personnalisés lors de l’ajout d’un nouvel emplacement ou de la modification d’un emplacement existant dans le flyout d’emplacement. Cela vous offre la possibilité de personnaliser vos noms d’emplacement à tout moment. En outre, lorsque vous ajoutez des sous-réseaux LAN directement dans le volant d’emplacements, nous montrons une liste de listes de sous-réseaux LAN de correspondances soft que vous pouvez sélectionner. Les noms de circuits pour des adresses IP de sortie d’office spécifiques peuvent également être ajoutés et modifiés.
 
 L’onglet Détails de la page d’emplacement du bureau affiche les résultats de mesure spécifiques qui ont été utilisés pour obtenir des informations, des recommandations et l’évaluation du réseau. Cela permet aux ingénieurs réseau de valider les recommandations et de prendre en compte les contraintes ou les spécificités de leur environnement. Vous trouverez également le nombre estimé d’utilisateurs pour les échantillons collectés dans ces bureaux, ainsi que les travailleurs à distance dans cette ville.
 
 > [!div class="mx-imgBorder"]
-> ![Détails spécifiques à l’emplacement](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+> ![Détails spécifiques à l’emplacement.](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>Partage des données d’évaluation du réseau avec Microsoft
 
@@ -177,7 +177,7 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
 1. Cliquez sur le **bouton Importer** juste au-dessus de la liste des emplacements. Le **volant Importer des emplacements** des bureaux s’affiche.
 
    > [!div class="mx-imgBorder"]
-   > ![Message d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
+   > ![Message d’importation CSV.](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Cliquez sur le lien Télécharger les emplacements des bureaux **actuels (.csv)** pour exporter la liste des emplacements actuels vers un fichier CSV et enregistrez-le sur votre disque dur local. Cela vous fournira un fichier CSV correctement formaté avec des en-tête de colonne à laquelle vous pouvez ajouter des emplacements. Vous pouvez laisser les emplacements exportés existants tels qu’ils sont ; Elles ne seront pas dupliquées lorsque vous importez le CSV mis à jour. Si vous souhaitez modifier l’adresse d’un emplacement existant, elle sera mise à jour lorsque vous importez le CSV. Vous ne pouvez pas modifier l’adresse d’une ville découverte.
 
@@ -186,7 +186,7 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
    1. **userEntered** (obligatoire) : doit être 1 pour un nouvel emplacement de bureau de sous-réseau local en cours d’ajout
    1. **Nom** (obligatoire) : nom de l’emplacement du bureau
    1. **Adresse** (obligatoire) : adresse physique du bureau
-   1. **Latitude** (facultative) : rempli à partir Bing recherche de cartes de l’adresse si vide
+   1. **Latitude** (facultative) : rempli à partir de Bing recherche de l’adresse si vide
    1. **Longitude** (facultative) : remplie à partir Bing recherche de cartes de l’adresse si vide
    1. **Egress plages d’adresses IP 1 à 5** (facultatives) : pour chaque plage, entrez le nom du circuit suivi d’une liste séparée par des espaces d’adresses CIDR IPv4 valides. Ces valeurs sont utilisées pour différencier plusieurs emplacements de bureau où vous utilisez les mêmes adresses IP de sous-réseau local. Egress Les plages d’adresses IP doivent toutes être de /24 taille réseau et /24 n’est pas inclus dans l’entrée.
    1. **LanIps** (obligatoire) : rép.des plages de sous-réseaux LAN en cours d’utilisation à cet emplacement de bureau. Les ID de sous-réseau local doivent avoir une taille de réseau CIDR incluse, où la taille du réseau peut être comprise entre /8 et /29. Plusieurs plages de sous-réseaux LAN peuvent être séparées par une virgule ou un point-virgule.
@@ -196,12 +196,12 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
 1. Le fichier est automatiquement validé. S’il existe des erreurs de validation, vous verrez le message d’erreur : Il y a des erreurs _dans le fichier d’importation. Examinez les erreurs, corrigez le fichier d’importation, puis réessayez._ Cliquez sur le lien **Ouvrir les détails de l’erreur** pour obtenir la liste des erreurs de validation de champ spécifiques.
 
    > [!div class="mx-imgBorder"]
-   > ![Message d’erreur d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import-error.png)
+   > ![Message d’erreur d’importation CSV.](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
 1. S’il n’y a aucune erreur dans le fichier, vous verrez le message : _Le rapport est prêt. Emplacements x trouvés à ajouter et x emplacements à mettre à jour._ Cliquez sur **le bouton** Importer pour télécharger le CSV.
 
    > [!div class="mx-imgBorder"]
-   > ![Message prêt à l’importation CSV](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
+   > ![Message prêt à l’importation CSV.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
 ## <a name="faq"></a>FAQ
 
@@ -218,13 +218,13 @@ Une porte Microsoft 365 service frontal optimale est celle qui est la plus proch
 
 ### <a name="what-is-an-internet-egress-location"></a>Qu’est-ce qu’un emplacement de sortie Internet ?
 
-L’emplacement de sortie Internet est l’emplacement où le trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Il s’agit également de l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement où vous vous connectez à un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement de sortie Internet, cela peut indiquer un retour arrière wan important.
+L’emplacement de sortie Internet est l’emplacement où le trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Il s’agit également de l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement où vous vous connectez à un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement de sortie Internet, cela peut indiquer un retour de réseau wan important.
 
 ### <a name="what-license-is-needed-for-this-capability"></a>Quelle licence est nécessaire pour cette fonctionnalité ?
 
 Vous avez besoin d’une licence qui donne accès au Centre d’administration Microsoft 365.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Microsoft 365 informations sur le réseau (aperçu)](office-365-network-mac-perf-insights.md)
 
