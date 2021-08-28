@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0daf8c36a4b216cd79d43e6832816350f554b8d9e7a307649552a6bf9c97e23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: be60d8f4c8adae02a1a5e388a5b75e717dd5eb51
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853574"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565821"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Score d’exposition : Gestion des menaces et des vulnérabilités
 
@@ -45,7 +45,7 @@ Votre score d’exposition est visible dans le tableau de bord Gestion des vuln�
 
 La carte vous donne une vue générale de la tendance de votre score d’exposition au fil du temps. Les pics du graphique vous donnent une indication visuelle d’une exposition à une menace de cybersécurité élevée que vous pouvez examiner plus en détail.
 
-![Carte de score d’exposition](images/tvm_exp_score.png)
+![Carte de score d’exposition.](images/tvm_exp_score.png)
 
 ## <a name="how-it-works"></a>Mode de fonctionnement
 
@@ -61,7 +61,7 @@ Vous pouvez résoudre les problèmes en vous basant sur des [recommandations](tv
 
 Réduire l’exposition aux menaces et vulnérabilités en remédiant aux [recommandations de sécurité.](tvm-security-recommendation.md) Faites le plus d’impact sur votre score d’exposition en remédiant aux recommandations de sécurité les plus importantes, qui peuvent être vues dans [le tableau de bord Gestion des menaces et des vulnérabilités.](tvm-dashboard-insights.md)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Niveau de sécurité Microsoft pour les appareils](tvm-microsoft-secure-score-devices.md)

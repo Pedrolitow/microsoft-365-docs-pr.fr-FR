@@ -18,26 +18,26 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 7ad01942b0da7858895d58ecd3bf5c83207e88b9
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5bb1307888948e46a07068a2493591ff9b4dc96f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356215"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565855"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
 *Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Les utilisateurs peuvent utiliser l’écriture écriture par mot de passe pour mettre à jour leurs mots de passe via Azure Active Directory (Azure AD), qui est ensuite répliqué sur vos services de domaine Active Directory (AD DS) locaux. Avec l’écriture écriture par mot de passe, les utilisateurs n’ont pas besoin de mettre à jour leur mot de passe via les AD DS sur site où leurs comptes d’utilisateur d’origine sont stockés. Cela aide les utilisateurs itinérants ou distants qui n’ont pas de connexion d’accès à distance à leur réseau local.
+Les utilisateurs peuvent utiliser l’écriture écriture par mot de passe pour mettre à jour leurs mots de passe via Azure Active Directory (Azure AD), qui est ensuite répliqué vers vos services de domaine Active Directory (AD DS) locaux. Avec l’écriture écriture par mot de passe, les utilisateurs n’ont pas besoin de mettre à jour leur mot de passe via les AD DS sur site où leurs comptes d’utilisateur d’origine sont stockés. Cela aide les utilisateurs itinérants ou distants qui n’ont pas de connexion à distance à leur réseau local.
 
 Cet article explique comment configurer votre environnement de test Microsoft 365 pour l’écriture par mot de passe.
 
-La configuration de votre environnement de test pour l’écriture par mot de passe implique deux phases :
+La configuration de votre environnement de test pour l’écriture écriture par mot de passe implique deux phases :
 - [Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Phase 2 : Activer l’écriture différée de mot de passe pour le domaine TESTLAB AD DS.](#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)
   
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
@@ -46,7 +46,7 @@ La configuration de votre environnement de test pour l’écriture par mot de pa
 
 Tout d’abord, suivez les instructions de la synchronisation [de hachage de mot de passe.](password-hash-sync-m365-ent-test-environment.md) La configuration qui en résulte ressemble à ceci :
   
-![Environnement de test de l’entreprise simulée avec la synchronisation de hachage de mot de passe](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![Environnement de test de l’entreprise simulée avec synchronisation de hachage de mot de passe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Cette configuration se compose des éléments suivants : 
   
@@ -72,9 +72,9 @@ Configurez ensuite le compte utilisateur 1 en lui attribuant les paramètres de 
 
 1. À partir du[Portail Azure](https://portal.azure.com), connectez-vous avec votre compte d’administrateur général, puis connectez-vous à APP1 avec le compte TESTLAB\Utilisateur1.
 
-2. Sur le bureau d’APP1, **sélectionnez Démarrer,** entrez **actif,** puis sélectionnez Utilisateurs **et ordinateurs Active Directory.**
+2. À partir du bureau d’APP1, **sélectionnez Démarrer,** entrez **actif,** puis sélectionnez Utilisateurs et **ordinateurs Active Directory.**
 
-3. Dans la barre de menus, sélectionnez **Afficher.** Si **les fonctionnalités avancées** ne sont pas activées, sélectionnez-la pour l’activer.
+3. Dans la barre de menus, sélectionnez **Afficher.** Si **les fonctionnalités** avancées ne sont pas activées, sélectionnez-la pour l’activer.
 
 4. Dans le volet d’arborescence, sélectionnez et maintenez (ou cliquez avec le bouton droit) votre domaine, sélectionnez Propriétés, puis sélectionnez **l’onglet** Sécurité.
 
@@ -107,13 +107,13 @@ Ensuite, configurez de la Connexion Azure AD Connect sur APP1 pour écriture d
 
 3. Dans la **page d’accueil,** **sélectionnez Configurer.**
 
-4. Dans la page **Tâches supplémentaires,** sélectionnez **Personnaliser les options de** synchronisation, puis sélectionnez **Suivant**.
+4. Dans la page **Tâches supplémentaires,** sélectionnez **Personnaliser les options** de synchronisation, puis sélectionnez **Suivant.**
 
 5. Sur la page **Connecter azure AD,** entrez vos informations d’identification de compte d’administrateur général, puis sélectionnez **Suivant.**
 
 6. Dans les **Connecter et** les pages de filtrage **domaine/ou,** sélectionnez **Suivant**.
 
-7. Dans la page **Fonctionnalités facultatives,** sélectionnez **Écriture écriture par** mot de passe, puis sélectionnez **Suivant**.
+7. Dans la page **Fonctionnalités facultatives,** sélectionnez **Écriture écriture par** mot de passe, puis **sélectionnez Suivant**.
 
 8. Dans la page **Prêt à configurer,** sélectionnez **Configurer** et attendez la fin du processus.
 
@@ -123,7 +123,7 @@ Vous êtes maintenant prêt à tester l’écriture écriture par mot de passe p
 
 La configuration qui en résulte ressemble à ceci :
 
-![Environnement de test de l’entreprise simulée avec l’authentification directe](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![L’entreprise simulée avec environnement de test d’authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
 Cette configuration se compose des éléments suivants : 
 

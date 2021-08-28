@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser l’outil de gestion des dépositaires intégré dans Advanced eDiscovery pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3fc08eb6602331ef12cba45ed5106cf692272a8f80537a2cd73fc6bd357efd2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3c5adf4b51cbb9898b0b4f7bc806c1392453c526
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837218"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564241"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires à un Advanced eDiscovery de données
 
@@ -38,7 +38,7 @@ Vous pouvez ajouter et gérer des dépositaires dans Advanced eDiscovery cas en 
 
 4. Examinez les dépositaires et terminez le processus.
 
-   [![Onglet Sources dans Advanced eDiscovery cas ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
+   [![Onglet Sources dans Advanced eDiscovery cas. ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Assurez-vous que vous avez les autorisations nécessaires
 
@@ -68,13 +68,13 @@ Pour désélectionner la boîte aux lettres principale et OneDrive compte d’un
 
 2. Sélectionnez **Effacer** en  OneDrive boîte aux lettres ou en OneDrive pour supprimer la boîte aux lettres ou le compte OneDrive d’un dépositaire d’être associé en tant qu’emplacement de données pour ce dépositaire. 
 
-   ![Configurer des emplacements à associer à un dépositaire](../media/ConfigureCustodianLocations.png)
+   ![Configurez les emplacements à associer à un dépositaire.](../media/ConfigureCustodianLocations.png)
 
 Pour associer d’autres boîtes aux lettres, sites, Teams ou groupes Yammer à un dépositaire spécifique :
 
 1. Développez un dépositaire pour afficher les services suivants afin d’associer des emplacements de données au dépositaire. Cliquez **sur Modifier** en côté d’un service pour ajouter un emplacement de données.
 
-   - **Exchange**: utilisez cette approche pour associer d’autres boîtes aux lettres au dépositaire. Tapez dans la zone de recherche le nom ou l’alias (au minimum trois caractères) des boîtes aux lettres utilisateur ou des groupes de distribution. Sélectionnez les boîtes aux lettres à affecter au dépositaire, puis cliquez sur **Ajouter.**
+   - **Exchange**: utilisez cette approche pour associer d’autres boîtes aux lettres au dépositaire. Tapez dans la zone de recherche le nom ou l’alias (au moins trois caractères) des boîtes aux lettres utilisateur ou des groupes de distribution. Sélectionnez les boîtes aux lettres à affecter au dépositaire, puis cliquez sur **Ajouter.**
 
    - **SharePoint**: utilisez cette valeur pour associer SharePoint sites au dépositaire. Sélectionnez un site dans la liste ou recherchez un site en tapant une URL dans la zone de recherche. Sélectionnez les sites à affecter au dépositaire, puis cliquez sur **Ajouter.**
 
@@ -114,4 +114,4 @@ Avant d’ajouter réellement les dépositaires au cas, vous pouvez passer en re
 
    Les nouveaux dépositaires sont ajoutés au cas et affichés sous l’onglet **Sources de** données.
 
-   [![Dépositaires répertoriés sous l’onglet Sources de données ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)
+   [![Dépositaires répertoriés sous l’onglet Sources de données. ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)

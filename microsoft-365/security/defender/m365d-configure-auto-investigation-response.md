@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: c9ede5f9e21dcf2c2e7081286a2cf5df55e7f850f3398534a59c8e1ee87c349a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 84107a54c47c3bfe68cd7740e1e06ff40b11957a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792628"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563925"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer des fonctionnalités d’examen et de réponse automatisées dans Microsoft 365 Defender
 
@@ -46,8 +46,8 @@ Ensuite, une fois que vous avez tous été mis en place, vous pouvez afficher et
 
 |Conditions requises|Détails|
 |---|---|
-|Conditions d’abonnement|L’un de ces abonnements : <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 l’Microsoft 365 E5 Sécurité de module</li><li>Microsoft 365 A3 avec le module Microsoft 365 A5 sécurité de l’Microsoft 365 A5</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> Voir [les Microsoft 365 Defender licences requises.](./prerequisites.md#licensing-requirements)|
-|Configuration réseau requise|<ul><li>[Microsoft Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp) activé</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configuré</li><li>[Intégration de Microsoft Defender pour l’identité](/cloud-app-security/mdi-integration)</li></ul>|
+|Conditions d’abonnement|L’un de ces abonnements : <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 l’Microsoft 365 E5 Sécurité de module</li><li>Microsoft 365 A3 avec le module Microsoft 365 A5 sécurité de l’Microsoft 365 A5</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> Voir [les Microsoft 365 Defender licences requises.](./prerequisites.md#licensing-requirements)|
+|Configuration requise pour le réseau|<ul><li>[Microsoft Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp) activé</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configuré</li><li>[Intégration de Microsoft Defender pour l’identité](/cloud-app-security/mdi-integration)</li></ul>|
 |Configuration requise pour ordinateur Windows|<ul><li>Windows 10, version 1709 ou ultérieure installée (voir Windows 10 [de publication)](/windows/release-information/)</li><li>Les services de protection contre les menaces suivants sont configurés :<ul><li>[Microsoft Defender pour point de terminaison](../defender-endpoint/configure-endpoints.md)</li><li>[Antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protection du contenu des e-mails et des Office de messagerie|[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configuré|
 |Autorisations|Pour configurer des fonctionnalités d’investigation et de réponse automatisées, vous devez avoir le rôle Administrateur général ou Administrateur de la sécurité affecté dans Azure Active Directory ( ) ou dans le <https://portal.azure.com> Centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ). <p> Pour obtenir les autorisations nécessaires pour travailler avec des fonctionnalités d’examen et de réponse automatisées, telles que la révision, l’approbation ou le rejet des actions en attente, voir [Autorisations requises](m365d-action-center.md#required-permissions-for-action-center-tasks)pour les tâches du centre de gestion des actions.|
@@ -86,11 +86,11 @@ Les paramètres de sécurité Office 365 protéger le courrier électronique et 
 
 4. Assurez-vous que la purge automatique d’heure zéro [(ZAP) dans Exchange Online](../office-365-security/zero-hour-auto-purge.md) est en vigueur.
 
-5. (Cette étape est facultative.) Examinez vos [stratégies Office 365 d’alerte](../../compliance/alert-policies.md) dans le Centre de conformité Microsoft 365 ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Plusieurs stratégies d’alerte par défaut sont dans la catégorie Gestion des menaces. Certaines de ces alertes peuvent déclencher une enquête et une réponse automatisées. Pour en savoir plus, consultez [stratégies d’alerte par défaut.](../../compliance/alert-policies.md#default-alert-policies)
+5. (Cette étape est facultative.) Examinez vos [stratégies Office 365 d’alerte](../../compliance/alert-policies.md) dans le Centre de conformité Microsoft 365 ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Plusieurs stratégies d’alerte par défaut sont dans la catégorie Gestion des menaces. Certaines de ces alertes peuvent déclencher une enquête et une réponse automatisées. Pour en savoir plus, consultez [stratégies d’alerte par défaut.](../../compliance/alert-policies.md#default-alert-policies)
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Assurez-vous Microsoft 365 Defender est allumé
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP sur":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP sur.":::
 
 1. Connectez-vous au portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
@@ -101,7 +101,7 @@ Les paramètres de sécurité Office 365 protéger le courrier électronique et 
 3. Dans le volet de navigation, choisissez **Paramètres**  >  **Microsoft 365 Defender**. Confirmez que Microsoft 365 Defender est allumé.
 
 > [!TIP]
-> Besoin d'aide ? Voir [Activer Microsoft 365 Defender](m365d-enable.md).
+> Vous avez besoin d’aide ? Voir [Activer Microsoft 365 Defender](m365d-enable.md).
 
 ## <a name="next-steps"></a>Prochaines étapes
 

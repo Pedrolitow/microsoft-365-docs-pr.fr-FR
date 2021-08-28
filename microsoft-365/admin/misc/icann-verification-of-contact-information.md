@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: Découvrez comment valider vos informations de contact pour se conformer aux réglementations ICANN.
-ms.openlocfilehash: a691496fb5149d4db990d15d34f4b6da2e409a044a1f3794520b593ff0cf385f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c97cc8fd5bffc054dec86b8118d9bcd6616dd351
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823941"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566129"
 ---
 # <a name="icann-verification-of-contact-information"></a>Vérification des informations de contact par l’ICANN
 
@@ -37,6 +37,6 @@ Pour validation, un message électronique est envoyé à l’adresse du registre
 
 L’e-mail ressemblera à ceci :
 
-![Exemple de courrier électronique](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
+![Exemple de message électronique.](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
 
 

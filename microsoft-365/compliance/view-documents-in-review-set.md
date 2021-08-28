@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Choisissez la façon dont vous affichez le contenu Advanced eDiscovery, tel que le texte, l’annoter, la conversion ou l’affichage natif.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0cbb720ee935b9c6046eb2d7b78b1bcf8a06e9284bc01133145eb6c8ed0820ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1aab4f5e2f5674392fd5577afdb12865b9405380
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865379"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565277"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Afficher des documents dans un jeu à réviser dans Advanced eDiscovery
 
@@ -53,9 +53,9 @@ La visionneuse de texte donne un aperçu du texte extrait d’un fichier. Elle i
 - Mise en surbrillance des résultats de recherche qui met en surbrillance les termes dans le document ainsi que la barre de défilement
 - L’affichage diff fournit un affichage de comparaison qui met en évidence les différences textuelles lors de l’affichage de documents quasi-dupliqués
 
-![Affichage de texte](../media/Reviewimage4.png)
+![Affichage texte.](../media/Reviewimage4.png)
 
-![Affichage diff](../media/Reviewimage5.png)
+![Affichage diff.](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Vue Annoter
 
@@ -72,7 +72,7 @@ L’affichage Annotate fournit des fonctionnalités qui permettent aux utilisate
 - Rotation : l’utilisateur peut faire pivoter le document dans le sens des aiguilles d’une montre
 - Recherche : l’utilisateur peut effectuer une recherche dans un document et accéder aux différentes occurrences dans le document
 
-  ![Vue Annoter](../media/Reviewimage1.png)
+  ![Affichage annoter.](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>Affichage Tableau de bord
 

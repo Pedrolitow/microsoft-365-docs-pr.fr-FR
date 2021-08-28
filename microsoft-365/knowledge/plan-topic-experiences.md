@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment planifier la Sujets Microsoft Viva
-ms.openlocfilehash: 639c76567f3f14ac9c885ae277ee2631ca26dec5bdf8b3184ad6ee212a7c4c1f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: deb4e219992400a5155b40a849a6df3a8bccbef1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854698"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563985"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planifier les Sujets Microsoft Viva
 
@@ -124,7 +124,7 @@ Le .csv doit contenir les paramètres suivants :
     - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
 - **Signifie (facultatif)**: (également appelé *expansion)* Si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.
 
-    ![Exclure des rubriques dans le modèle CSV](../media/exclude-topics-csv.png) 
+    ![Exclure des rubriques dans le modèle CSV.](../media/exclude-topics-csv.png) 
 
 Vous pouvez copier le modèle csv ci-dessous :
 

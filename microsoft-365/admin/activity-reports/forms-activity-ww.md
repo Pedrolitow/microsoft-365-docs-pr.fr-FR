@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide du tableau Microsoft 365 de rapports microsoft dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 312a1abe940d75a04760c757ed787f4e6d1a6e2fad6668753fc76d89d8247a09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 59c7233a1622d0bf3ceaebd9adafb5c243d7008d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798101"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565047"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 Rapports dans le Centre d’administration - Activité des formulaires
 
@@ -34,9 +34,9 @@ Le tableau de bord Microsoft 365 **rapports de** gestion des données vous prés
 Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulaire d’une licence d’utilisation de Microsoft Forms en regardant leur interaction avec les formulaires. Il vous permet également de comprendre le niveau de collaboration en cours en regardant le nombre de formulaires créés et les formulaires à partir des formulaires à partir des utilisateurs.
   
 > [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.  
+> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.  
  
-## <a name="how-to-get-to-the-forms-activity-report"></a>Comment obtenir le rapport d’activité Forms
+## <a name="how-to-get-to-the-forms-activity-report"></a>Comment obtenir le rapport d’activité Formulaires
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
 2. Dans la page d’accueil du tableau de bord, cliquez sur **le** bouton Afficher plus sur la carte Forms.
@@ -45,11 +45,11 @@ Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulair
 
 Vous pouvez afficher les activités dans le rapport Forms en choisissant **l’onglet** Activité.<br/>![Microsoft 365- Rapport d’activité Microsoft Forms.](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’activité des formulaires : choisir les colonnes](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’activité des formulaires : choisissez des colonnes.](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse de messagerie de l’utilisateur qui a effectué l’activité sur Microsoft Forms.  <br/> |

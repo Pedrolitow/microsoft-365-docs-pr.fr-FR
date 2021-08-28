@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: dac11b5a2284a15965fd4305968dd6f3961b3df1b7dbc8932f7fec7944714353
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 98df694002d31e330fff1b5d53618044bc6c5dae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844371"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566663"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Alertes de sécurité Defender for Identity dans Microsoft 365 Defender
 
@@ -40,21 +40,21 @@ Les alertes sont accessibles à partir de plusieurs emplacements, y compris la p
 
 In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Incidents & alerts** and then to **Alerts**.
 
-![Go to Incidents and Alerts, then Alerts](../../media/defender-identity/incidents-alerts.png)
+![Go to Incidents and Alerts, then Alerts.](../../media/defender-identity/incidents-alerts.png)
 
 Pour voir les alertes de Defender pour l’identité, dans le haut à droite, sélectionnez **Filtre,** puis sous Sources de **service,** sélectionnez **Microsoft Defender pour** l’identité, puis sélectionnez **Appliquer**:
 
-![Filtre des événements Defender for Identity](../../media/defender-identity/filter-defender-for-identity.png)
+![Filtre des événements Defender for Identity.](../../media/defender-identity/filter-defender-for-identity.png)
 
 Les alertes sont affichées avec des informations dans les **colonnes suivantes** **:** Nom de l’alerte , **Balises**, **Gravité** **,** État de l’enquête , État , **Catégorie**, **Source** de détection **,** Ressources impactées , Première activité et Dernière **activité**. 
 
-![Événements Defender for Identity](../../media/defender-identity/filtered-alerts.png)
+![Événements Defender for Identity.](../../media/defender-identity/filtered-alerts.png)
 
 ## <a name="manage-alerts"></a>Gérer des alertes
 
-Si vous cliquez sur le nom **de** l’alerte pour l’une des alertes, vous allez sur la page avec des détails sur l’alerte. Dans le volet gauche, vous verrez un résumé de ce qui **s’est passé**:
+Si vous cliquez sur le nom **de** l’alerte pour l’une des alertes, vous allez sur la page avec des détails sur l’alerte. Dans le volet gauche, vous verrez un résumé de ce **qui s’est passé**:
 
-![Ce qui s’est passé dans l’alerte](../../media/defender-identity/what-happened.png)
+![Ce qui s’est passé dans l’alerte.](../../media/defender-identity/what-happened.png)
 
 Au-dessus de la zone Ce **qui s’est** passé se sont des boutons pour les **comptes,** l’hôte **de destination** et l’hôte **source** de l’alerte. Pour d’autres alertes, vous pouvez voir des boutons pour plus d’informations sur des hôtes, des comptes, des adresses IP, des domaines et des groupes de sécurité supplémentaires. Sélectionnez l’une d’elles pour obtenir plus de détails sur les entités impliquées.
 
@@ -62,28 +62,28 @@ Dans le volet droit, vous verrez les détails de **l’alerte.** Vous pouvez y v
 
 - **Classifier cette alerte** : ici, vous pouvez désigner cette alerte en tant qu’alerte **True** ou **False**
 
-    ![Classifier une alerte](../../media/defender-identity/classify-alert.png)
+    ![Classifier l’alerte.](../../media/defender-identity/classify-alert.png)
 
 - **État de l’alerte** - Dans **Définir la classification,** vous pouvez classer l’alerte comme **True** ou **False**. Dans **Assigné à**, vous pouvez affecter l’alerte à vous-même ou la désattribuer.
 
-    ![État de l’alerte](../../media/defender-identity/alert-state.png)
+    ![État de l’alerte.](../../media/defender-identity/alert-state.png)
 
 - **Détails** de l’alerte : sous **Détails** de l’alerte, vous trouverez plus d’informations sur l’alerte spécifique, suivez un lien vers la documentation sur le type d’alerte, consultez l’incident auquel l’alerte est associée, examinez les enquêtes automatisées liées à ce type d’alerte et consultez les appareils et les utilisateurs touchés.
 
-    ![Détails de l’alerte](../../media/defender-identity/alert-details.png)
+    ![Détails de l’alerte.](../../media/defender-identity/alert-details.png)
 
 - **Commentaires &'historique** : vous pouvez ajouter vos commentaires à l’alerte et consulter l’historique de toutes les actions associées à l’alerte.
 
-    ![Commentaires et historique](../../media/defender-identity/comments-history.png)
+    ![Commentaires et historique.](../../media/defender-identity/comments-history.png)
 
 - **Gérer l’alerte** : si vous sélectionnez **Gérer** l’alerte, vous allez dans un volet qui vous permettra de modifier les :
   - **État** : vous pouvez choisir **Nouveau,** **Résolu** ou **En cours.**
   - **Classification** : vous pouvez choisir une **alerte True ou** **False.**
   - **Commentaire** : vous pouvez ajouter un commentaire sur l’alerte.
 
-    Si vous sélectionnez les trois points à côté de Gérer l’alerte, vous pouvez consulter un **expert** en **menaces,** exporter l’alerte vers un fichier Excel ou un lien vers **un autre incident.**
+    Si vous sélectionnez les trois points à côté de Gérer l’alerte, vous pouvez consulter un **expert** en **menaces,** exporter l’alerte vers un fichier Excel ou établir un lien vers **un autre incident.**
 
-    ![Gérer l’alerte](../../media/defender-identity/manage-alert.png)
+    ![Gérer l’alerte.](../../media/defender-identity/manage-alert.png)
 
     > [!NOTE]
     > Dans le Excel, deux liens sont désormais disponibles : Afficher dans **Microsoft Defender** pour l’identité et Affichage **dans Microsoft 365 Defender**. Chaque lien vous permet d’être sur le portail approprié et d’y fournir des informations sur l’alerte.

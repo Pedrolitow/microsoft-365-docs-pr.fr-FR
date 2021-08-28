@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Après avoir créé et itérer sur un brouillon de collection, vous pouvez la valider dans un jeu à réviser. Lorsque vous valider un brouillon de collection, les éléments collectés sont ajoutés au jeu à réviser dans le cas. Une fois que les éléments collectés sont dans l’ensemble de révision, vous pouvez les analyser, les examiner et les exporter.
-ms.openlocfilehash: c5e2ebaec734efed1c310e13a8d66badefac860dfaf59ea8c6189104656185df
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9b63117a90f6373e485f74e2edccfa0992ca2ded
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814761"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567507"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Valider un brouillon de collection dans un jeu à réviser dans Advanced eDiscovery
 
@@ -29,9 +29,9 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans un bro
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>Valider une collection au brouillon vers un ensemble de révisions
 
-1. Dans la Centre de conformité Microsoft 365, ouvrez le cas Advanced eDiscovery, puis sélectionnez l’onglet **Collections** pour afficher la liste des collections dans le cas.
+1. Dans la Centre de conformité Microsoft 365, ouvrez Advanced eDiscovery cas, puis sélectionnez l’onglet **Collections** pour afficher la liste des collections dans le cas.
 
-   ![Liste des collections dans un cas](../media/CommitDraftCollections1.png)
+   ![Liste des collections dans un cas.](../media/CommitDraftCollections1.png)
 
    > [!TIP]
    > Une valeur de la colonne État identifie les collections provisoires qui peuvent `Estimated` être ajoutées à un jeu à  réviser. L’état indique qu’une collection a déjà été ajoutée à un `Committed` jeu à réviser.

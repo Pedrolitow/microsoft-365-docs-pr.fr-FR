@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment activer le message de rapport ou les modules de signalement du hameçonnage pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35d84f9b960f466c76adf1f278d8d3a40a725f38
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f7c077521700a8bd4c7d1997bb87bab0f214337d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258588"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563789"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Activer le message de rapport ou les modules de signalement du hameçonnage
 
@@ -83,7 +83,7 @@ Si vous êtes un administrateur général ou un administrateur Exchange Online e
 
 2. Cliquez **sur GET IT NOW**.
 
-   ![Message de rapport : l’obtenir maintenant](../../media/ReportMessageGETITNOW.png)
+   ![Message de rapport - Obtenez-le maintenant.](../../media/ReportMessageGETITNOW.png)
 
 3. Dans la boîte de dialogue qui s’affiche, examinez les conditions d’utilisation et la politique de confidentialité, puis cliquez sur **Continuer**.
 
@@ -94,12 +94,12 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 - Dans Outlook, l’icône ressemble à ceci :
 
   > [!div class="mx-imgBorder"]
-  > ![Icône signaler le Outlook](../../media/OutlookReportMessageIcon.png)
+  > ![Icône signaler le Outlook.](../../media/OutlookReportMessageIcon.png)
 
 - Dans Outlook sur le web, l’icône ressemble à ceci :
 
   > [!div class="mx-imgBorder"]
-  > ![Outlook sur le web Icône Signaler le message du add-in](../../media/owa-report-message-icon.png)
+  > ![Outlook sur le web Icône Signaler le add-in Message.](../../media/owa-report-message-icon.png)
 
 ### <a name="get-the-report-message-add-in-for-your-organization"></a>Obtenir le add-in Message de rapport pour votre organisation
 
@@ -110,17 +110,17 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
 2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
 
-   ![Page Services et add-ins dans la Centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Page Services et modules dans la Centre d’administration Microsoft 365.](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. Dans le **volant Déployer un** nouveau module complémentaire qui s’affiche, examinez les informations, puis cliquez sur **Suivant**.
 
 4. Sur la page suivante, cliquez sur **Choisir dans le Store.**
 
-   ![Déployer une nouvelle page de modules](../../media/NewAddInScreen2.png)
+   ![Déployez une nouvelle page de add-in.](../../media/NewAddInScreen2.png)
 
-5. Dans la page **Sélectionner un add-in** qui s’affiche, cliquez dans la zone De recherche, entrez Message de rapport, puis cliquez sur **Icône**   ![ ](../../media/search-icon.png) Rechercher. Dans la liste des résultats, recherchez Message de **rapport,** puis cliquez sur **Ajouter.**
+5. Dans la page Sélectionner **un add-in** qui s’affiche, cliquez  dans la zone De recherche, entrez Message de **rapport,** puis cliquez sur Icône  ![ Rechercher. ](../../media/search-icon.png) Dans la liste des résultats, recherchez Message de **rapport,** puis cliquez sur **Ajouter.**
 
-   ![Sélectionner des résultats de recherche de add-in](../../media/NewAddInScreen3.png)
+   ![Sélectionnez les résultats de la recherche de add-in.](../../media/NewAddInScreen3.png)
 
 6. Dans la boîte de dialogue qui s’affiche, examinez les informations de licence et de confidentialité, puis cliquez sur **Continuer**.
 
@@ -132,33 +132,33 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
      - **Juste moi**
 
    - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
-     - **Fixe (par défaut)**: le add-in est automatiquement déployé sur les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
-     - **Disponible**: les utilisateurs peuvent installer le add-in sur **Home** \> **Get add-ins** \> **géré par l’administrateur.**
+     - **Fixe (par défaut)**: le add-in est automatiquement déployé pour les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
+     - **Disponible**: les utilisateurs peuvent installer le add-in sur **home** \> **get add-ins** \> **admin-managed**.
      - **Facultatif**: le add-in est automatiquement déployé pour les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
 
-   ![Configurer la page de l’ajout](../../media/configure-add-in.png)
+   ![Configurez la page du module de recherche.](../../media/configure-add-in.png)
 
    Lorsque vous avez terminé, cliquez sur **Déployer.**
 
 8. Dans la page Déployer le **message** de rapport qui s’affiche, vous verrez un rapport d’avancement suivi d’une confirmation du déploiement du module. Après avoir lu les informations, cliquez sur **Suivant**.
 
-   ![Page Déployer le message de rapport](../../media/deploy-report-message-page.png)
+   ![Page Déployer le message de rapport.](../../media/deploy-report-message-page.png)
 
 9. Dans la page **Annoncer le add-in** qui s’affiche, examinez les informations, puis cliquez sur **Fermer**.
 
-   ![Page d’annonce du add-in](../../media/announce-add-in-page.png)
+   ![Page Annoncer le add-in.](../../media/announce-add-in-page.png)
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Passer en revue ou modifier les paramètres du add-in Message de rapport
 
 1. In the Centre d’administration Microsoft 365, go to the go to the **Paramètres** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Si vous ne voyez pas la page Des  applications intégrées, **rendez-vous** sur le lien Paramètres Applications intégrées en haut de la \>  \>  page **Applications intégrées.**
 
-   ![Page Services et Add-Ins dans le nouveau centre de Administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Services et Add-Ins page dans le nouveau centre Administration Microsoft 365 web.](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Recherchez et sélectionnez le add-in **Message** de rapport.
 
 3. Dans le **volant Modifier le message** de rapport qui s’affiche, examinez et modifiez les paramètres selon le cas pour votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-   ![Paramètres pour le add-in Report Message](../../media/EditReportMessageAddIn.png)
+   ![Paramètres pour le add-in Report Message.](../../media/EditReportMessageAddIn.png)
 
 ## <a name="get-the-report-phishing-add-in"></a>Obtenir le module de signalement du hameçonnage
 
@@ -176,12 +176,12 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
 - Dans Outlook, l’icône ressemble à ceci :
 
-  ![Icône signaler le hameçonnage d’un Outlook](../../media/Outlook-ReportPhishing.png)
+  ![Signaler l’icône du Outlook.](../../media/Outlook-ReportPhishing.png)
 
 - Dans Outlook sur le web, l’icône ressemble à ceci :
 
   > [!div class="mx-imgBorder"]
-  > ![Outlook sur le web Icône Signaler le hameçonnage du add-in](../../media/OWA-ReportPhishing.png)
+  > ![Outlook sur le web Icône Signaler le module de hameçonnage.](../../media/OWA-ReportPhishing.png)
 
 ### <a name="get-the-report-phishing-add-in-for-your-organization"></a>Obtenir le module de signalement du hameçonnage pour votre organisation
 
@@ -192,15 +192,15 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
 2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
 
-   ![Page Services et add-ins dans la Centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Page Services et modules dans la Centre d’administration Microsoft 365.](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. Dans le **volant Déployer un** nouveau module complémentaire qui s’affiche, examinez les informations, puis cliquez sur **Suivant**.
 
 4. Sur la page suivante, cliquez sur **Choisir dans le Store.**
 
-   ![Déployer une nouvelle page de modules](../../media/NewAddInScreen2.png)
+   ![Déployez une nouvelle page de add-in.](../../media/NewAddInScreen2.png)
 
-5. Dans la page Sélectionner **un add-in** qui s’affiche, cliquez dans  la zone De recherche, entrez **Hameçonnage** de rapport, puis cliquez sur Icône  ![ ](../../media/search-icon.png) Recherche. Dans la liste des résultats, recherchez **l’hameçonnage** de rapport, puis cliquez sur **Ajouter.**
+5. Dans la page Sélectionner **un add-in** qui s’affiche, cliquez dans la zone de recherche, entrez **Signaler** le hameçonnage, puis cliquez sur  l’icône  ![ Rechercher. ](../../media/search-icon.png) Dans la liste des résultats, recherchez **l’hameçonnage** de rapport, puis cliquez sur **Ajouter.**
 
 6. Dans la boîte de dialogue qui s’affiche, examinez les informations de licence et de confidentialité, puis cliquez sur **Continuer**.
 
@@ -213,7 +213,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
    - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
      - **Fixe (par défaut)**: le add-in est automatiquement déployé sur les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
-     - **Disponible**: les utilisateurs peuvent installer le add-in sur **Home** \> **Get add-ins** \> **géré par l’administrateur.**
+     - **Disponible**: les utilisateurs peuvent installer le add-in sur **home** \> **get add-ins** \> **admin-managed**.
      - **Facultatif**: le add-in est automatiquement déployé pour les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
 
    Lorsque vous avez terminé, cliquez sur **Déployer.**

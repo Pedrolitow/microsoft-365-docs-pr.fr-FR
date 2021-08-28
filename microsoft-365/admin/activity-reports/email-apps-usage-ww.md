@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Découvrez comment obtenir le rapport d’utilisation des applications de messagerie pour connaître les applications de messagerie qui se connectent Exchange Online et les Outlook version que les utilisateurs utilisent.
-ms.openlocfilehash: b371b0b421ab92f80a31d98ed469061806dd1c60899efc0879b43f0a8556b832
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d11d06b442bbf5008f66af3aa7eeded512c1e8b3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798137"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565149"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation des applications de messagerie
 
@@ -43,9 +43,9 @@ Le tableau de bord Microsoft 365 **rapports de** gestion des données vous prés
 
 Vous pouvez obtenir une vue de l’activité des applications de messagerie en regardant **les** graphiques Utilisateurs **et clients.** 
   
-![Clients de messagerie utilisés](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
+![Clients de messagerie utilisés.](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |1.  <br/> |Le **rapport d’utilisation** des applications de messagerie permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement jusqu’aux dernières 24 à 48 heures.  <br/> |
@@ -55,7 +55,7 @@ Vous pouvez obtenir une vue de l’activité des applications de messagerie en r
 |6.  <br/> | Sur le graphique **Utilisateurs**, l'axe Y représente le nombre total d'utilisateurs uniques connectés à une application n'importe quel jour de la période du rapport.  <br/>  Sur le graphique **Utilisateurs**, l'axe X représente le nombre d'utilisateurs uniques à avoir utilisé l'application pendant la période du rapport.  <br/>  Sur le graphique **Applications**, l'axe Y représente le nombre total d'utilisateurs uniques à avoir utilisé une application spécifique pendant la période du rapport.  <br/>  Sur le graphique **Applications**, l'axe X répertorie les applications de votre organisation.  <br/>  Sur le graphique **Versions**, l'axe Y représente le nombre total d'utilisateurs uniques utilisant une version de bureau spécifique d'Outlook. Si le rapport ne peut pas résoudre le numéro de version Outlook, la quantité s’affiche **comme non déterminée.**  <br/>  Sur le graphique **Versions**, l'axe X répertorie les applications de votre organisation.  <br/> |
 |7.  <br/> |Vous pouvez filtrer les séries que vous voyez sur le graphique en sélectionnant un élément dans la légende.  <br/> |
 |8.  <br/> | Vous ne voyez pas forcément tous les éléments dans la liste en dessous des colonnes jusqu'à ce que vous les ajoutiez.<br/> **Le nom** d’utilisateur est le nom du propriétaire de l’application de messagerie.  <br/> **La date de la** dernière activité est la date la plus récente à laquelle l’utilisateur a lu ou envoyé un message électronique.  <br/> **Mac Mail**, **Mac Outlook**, **Outlook**, **Outlook Mobile** et **Outlook sur le web** sont des exemples d'applications de messagerie dont vous pouvez disposer dans votre organisation.  <br/>  Si la politique de votre organisation vous empêche de consulter les rapports sur lesquels figurent des informations propres aux utilisateurs, vous pouvez modifier les paramètres de confidentialité de tous ces rapports. Consultez la section **Comment puis-je masquer les détails** au niveau de l’utilisateur ? dans les rapports d’activité [du Centre d’administration Microsoft 365](activity-reports.md).  <br/> |
-|9.  <br/> |Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’utilisation des applications de messagerie - Choisir les colonnes](../../media/041bd6ff-27e8-409d-9608-282edcfa2316.png)|
+|9.  <br/> |Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’utilisation des applications de messagerie : choisissez des colonnes.](../../media/041bd6ff-27e8-409d-9608-282edcfa2316.png)|
 |10.  <br/> |Vous pouvez également exporter les données du rapport dans un Excel .csv, en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter.  <br/> |
 |||
    

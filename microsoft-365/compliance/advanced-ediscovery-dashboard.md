@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le tableau Advanced eDiscovery tableau de bord pour les ensembles de révision afin d’analyser rapidement votre corpus afin d’identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision.
-ms.openlocfilehash: 14baa47a73ac3cc4917d6e2f04614a80960ef085
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 6466e33964969d6cd75addba7092ee95e0c321ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502974"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565517"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery tableau de bord pour les ensembles de révision
 
@@ -37,27 +37,27 @@ Dans certains cas, Advanced eDiscovery, il se peut que vous devrez examiner un g
   
 4. Dans la liste déroulante **résultats individuels**, cliquez sur **Rechercher un affichage du profil**. 
 
-   ![DashbordPivot](../media/dashboardpivot.png)
+   ![DashbordPivot.](../media/dashboardpivot.png)
 
    La page **d’affichage de profil** de recherche s’affiche . La première fois que vous affichez cette page, trois widgets par défaut sont affichés.
 
-   ![Tableau de bord](../media/dashboardonly.png)
+   ![Tableau de bord.](../media/dashboardonly.png)
   
 5. Cliquez sur **le widget Nouveau,** puis sélectionnez l’un des éléments suivants :
 
-   ![Liste de listes des nouveaux widgets](../media/NewWidgetDropdownBox.png)
+   ![Liste de listes des nouveaux widgets.](../media/NewWidgetDropdownBox.png)
 
-   - **Choisissez dans la bibliothèque :** Affiche une bibliothèque par défaut de widgets. Vous cliquez sur un widget, puis sur **Ajouter** pour l’ajouter aux widgets dans la page d’affichage **de profil de** recherche.
+   - **Choisissez dans la bibliothèque :** Affiche une bibliothèque de widgets par défaut. Vous cliquez sur un widget, puis sur **Ajouter** pour l’ajouter aux widgets dans la page d’affichage **de profil de** recherche.
   
    - **Créez un widget personnalisé :** Affiche une page de présentation que vous pouvez utiliser pour configurer un widget personnalisé. 
 
 6. Pour créer un widget personnalisé, dans la page volant Ajouter un **widget,** vous pouvez :
 
-   ![Créer un widget](../media/addwidget.png)
+   ![Créez un widget.](../media/addwidget.png)
 
     a. Tapez un nom pour le widget, qui s’affiche dans la barre de titre du widget. L’attribution d’un nom à un widget est requise, mais il est utile d’identifier les données du widget.
 
-    b. Sélectionnez une propriété dans la **liste de** listes de listes listes de sélection du tableau croisé dynamique qui sera utilisée pour les données du widget. Les éléments de cette liste sont les propriétés utilisables dans une recherche pour les éléments du jeu à réviser. Pour obtenir une description de ces propriétés, voir champs de [métadonnées](document-metadata-fields-in-Advanced-eDiscovery.md)de document Advanced eDiscovery . Les options de tableau croisé dynamique pour le widget sont répertoriées dans la colonne **Nom** de champ utilisable dans une recherche dans cette rubrique.
+    b. Sélectionnez une propriété dans la **liste liste de** listes listes de sélection du tableau croisé dynamique qui sera utilisée pour les données du widget. Les éléments de cette liste sont les propriétés utilisables dans une recherche pour les éléments du jeu à réviser. Pour obtenir une description de ces propriétés, voir champs de [métadonnées](document-metadata-fields-in-Advanced-eDiscovery.md)de document Advanced eDiscovery . Les options de tableau croisé dynamique pour le widget sont répertoriées dans la colonne **Nom** de champ utilisable dans une recherche dans cette rubrique.
 
     c. Sélectionnez un type de graphique pour afficher les données de la propriété de tableau croisé dynamique sélectionnée.
 
@@ -67,17 +67,17 @@ Dans certains cas, Advanced eDiscovery, il se peut que vous devrez examiner un g
 
 1. Cliquez **sur...** dans la barre de titre du widget, puis cliquez sur **Appliquer la condition.**
 
-   ![Tableau de bord](../media/searchprofilehome.png)
+   ![Tableau de bord.](../media/searchprofilehome.png)
 
 2. Dans la page volante, cliquez sur un élément de la clé du widget ou du graphique de widget pour créer un filtre.
 
-   ![CreateFilter](../media/applyconditionfilter.png)
+   ![CreateFilter.](../media/applyconditionfilter.png)
 
-3. Répétez les étapes 1 à 2 pour d’autres widgets avec plusieurs widgets. 
+3. Répétez les étapes 1 à 2 pour d’autres widgets multi widgets. 
 
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer** sous la requête pour enregistrer vos conditions en tant que nouvelle requête de recherche pour le jeu à réviser.
 
-   ![Requête](../media/savequery.png)
+   ![Requête.](../media/savequery.png)
 
 5. Fermez **l’affichage de profil de** recherche pour revenir à l’affichage des résultats de la recherche.
 

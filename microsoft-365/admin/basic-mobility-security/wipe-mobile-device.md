@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez la mobilité et la sécurité de base intégrées pour supprimer des informations des appareils inscrits.
-ms.openlocfilehash: d9c31a037dfce1ad2a13cce8b384ebdbcc5164b9
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: b687b3d13f95cb05d9261064d385d35ef6d7f7bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394311"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564416"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Effacement d’un appareil mobile dans Basic Mobility and Security
 
@@ -48,9 +48,9 @@ Les appareils mobiles peuvent stocker des informations organisationnelles sensib
 
 1. Go to the [Centre d’administration Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
 
-2. Tapez Gestion des appareils mobiles dans le champ de recherche, puis sélectionnez **Gestion des** périphériques mobiles dans la liste des résultats.
+2. Tapez Gestion des appareils mobiles dans le champ de recherche, puis sélectionnez **Gestion des** appareils mobiles dans la liste des résultats.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Option de gestion des appareils mobiles Basic Mobility and Secruity":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Option de gestion des appareils mobiles Basic Mobility and Secruity.":::
 
 3. Sélectionnez **Gérer les appareils.**
 

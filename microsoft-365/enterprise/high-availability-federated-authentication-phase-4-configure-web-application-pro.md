@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Résumé : Configurez les serveurs proxy d’application web pour votre authentification fédérée haute disponibilité Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: 9c67aa4b2c3583fe4e370fdc750a49d7088e0db2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 17efeb414208afac9ce9dcb0b7136a4c962a0268
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354463"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565219"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Authentification fédérée haute disponibilité, phase 4 : Configurer les proxys d’application web
 
@@ -64,13 +64,13 @@ Vous devez déterminer le nom DNS pour identifier le nom de votre service de fé
   
 Une fois que le nom de domaine complet du service de fédération a été obtenu, créez un enregistrement DNS de domaine public A pour le nom de domaine complet pour le résoudre en adresse IP publique de l’équilibreur de charge Azure connecté à Internet.
   
-|**Name**|**Type (Type)**|**TTL**|**Value (Valeur)**|
+|**Nom**|**Type (Type)**|**TTL**|**Value (Valeur)**|
 |:-----|:-----|:-----|:-----|
 |Nom de domaine complet du service de fédération  <br/> |A  <br/> |3600  <br/> |adresse IP publique de l’équilibreur de charge Azure connecté à Internet (affiché par la commande **Write-Host** dans la section précédente) <br/> |
    
 Voici un exemple :
   
-|**Name**|**Type (Type)**|**TTL**|**Value (Valeur)**|
+|**Nom**|**Type (Type)**|**TTL**|**Value (Valeur)**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -156,7 +156,7 @@ Lorsque cette phase est terminée, voici la configuration résultante, avec les 
   
 **Phase 4 : L’équilibreur de charge connecté à Internet et les serveurs proxy d’application web de votre infrastructure d’authentification fédérée haute disponibilité dans Azure**
 
-![Phase 4 de l’infrastructure d’authentification Microsoft 365 haute disponibilité dans Azure avec les serveurs proxy d’application web](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Phase 4 de la haute disponibilité Microsoft 365'infrastructure d’authentification fédérée dans Azure avec les serveurs proxy d’application web.](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>Étape suivante
 

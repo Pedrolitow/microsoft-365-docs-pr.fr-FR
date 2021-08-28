@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’utilisation du navigateur Microsoft à l’aide du tableau de bord Microsoft 365 rapports microsoft dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 7225b3b1d2c86dd917bc4cb69d2cf3ca398221619710e9f0268e9d861d8d261b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 666f3c77267fdb19bdacd3340a0c691f66ffa3b8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798208"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565183"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation du navigateur Microsoft
 
@@ -39,9 +39,9 @@ Le tableau de bord Microsoft 365 **rapports d’entreprise** vous présente une 
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Interpréter le rapport d’utilisation du navigateur Microsoft
 
-![Rapport d’utilisation du navigateur Microsoft](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
+![Rapport d’utilisation du navigateur Microsoft.](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
 
-|Item|Description|
+|Élément|Description|
  |:-----|:-----|
  |1. <br/> |Le **rapport d’utilisation** du navigateur Microsoft permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours.  <br/> |
  |2. <br/> |Les données de chaque rapport couvrent généralement jusqu’aux sept derniers jours. <br/> |
@@ -49,4 +49,4 @@ Le tableau de bord Microsoft 365 **rapports d’entreprise** vous présente une 
  |4.<br/>|Le graphique **Utilisateurs** actifs indique le nombre total d’utilisateurs utilisant Microsoft Edge, Version antérieure de Microsoft Edge et Internet Explorer lorsqu’ils sont utilisés pour accéder aux services Microsoft 365 sur la période sélectionnée.<br/>|
  |5.<br/>|Le tableau présente une répartition des données au niveau utilisateur. Vous pouvez ajouter ou supprimer des colonnes.  <br/><br/>**Le nom** d’utilisateur est l’adresse e-mail de l’utilisateur qui s’est connecté Microsoft 365 services à l’aide des navigateurs Microsoft.<br><br/>**La Microsoft Edge** affiche une coche si l’utilisateur a utilisé Microsoft Edge pour se connecter Microsoft 365 services.<br/><br/>**La Version antérieure de Microsoft Edge** affiche une coche si l’utilisateur a utilisé Version antérieure de Microsoft Edge pour se connecter Microsoft 365 services.<br/><br/>**Internet Explorer utilisé affiche** une coche si l’utilisateur a utilisé Internet Explorer pour se connecter Microsoft 365 services. |
  |6.<br/>|Sélectionnez **l’icône** Choisir des colonnes pour ajouter ou supprimer des colonnes dans le rapport.|
- |7.<br/>|Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela exporte les données pour tous les utilisateurs et vous permet d’obtenir une agrégation, un tri et un filtrage simples pour une analyse plus approfondie. Si vous avez moins de 100 utilisateurs, vous pouvez trier et filtrer dans le tableau dans le rapport lui-même. Si vous avez plus de 100 utilisateurs, pour filtrer et trier, vous devez exporter les données.|
+ |7.<br/>|Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela exporte les données pour tous les utilisateurs et vous permet d’obtenir une agrégation, un tri et un filtrage simples pour une analyse plus approfondie. Si vous avez moins de 100 utilisateurs, vous pouvez trier et filtrer dans le tableau dans le rapport lui-même. Si vous avez plus de 100 utilisateurs, pour filtrer et trier, vous devez exporter les données.|

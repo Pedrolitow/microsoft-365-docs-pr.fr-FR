@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 0b21a95930138972ac3f7fe3c1474b0434a68e4c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607216"
+ms.locfileid: "58567843"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
@@ -57,7 +57,7 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 2. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez **l’Observateur d’événements.**
 
-3. Sélectionner **l’affichage** \> **personnalisé d’importation d’action...**
+3. Sélectionner **l’affichage**  >  **personnalisé d’importation d’action...**
 
    > [!div class="mx-imgBorder"]
    > ![Animation mettant en surbrillance l’importation d’un affichage personnalisé à gauche de la fenêtre visionneuse even.](images/events-import.gif)

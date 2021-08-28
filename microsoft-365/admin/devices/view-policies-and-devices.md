@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Affichez les stratégies et actions des appareils en vous Microsoft 365 pour les entreprises à l’Microsoft 365 d’informations d’identification d’administrateur global.
-ms.openlocfilehash: 060a2bf099fdf0347517be55b56846cbcb98cca4
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+description: Affichez les stratégies et actions de l’appareil en vous Microsoft 365 aux entreprises à l’Microsoft 365 d’informations d’identification d’administrateur global.
+ms.openlocfilehash: a4494b7125576f927a0cd7f715311ae616c6497c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360369"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566381"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Afficher et gérer les stratégies et les appareils
 
@@ -41,7 +41,7 @@ Cet article s’applique aux Microsoft 365 Business Premium.
 
     Sur cette page, vous pouvez créer, modifier, modifier un groupe cible ou supprimer une stratégie.
 
-    ![Screenshot of the Policies page](../../media/devicepolicies.png)
+    ![Capture d’écran de la page Stratégies.](../../media/devicepolicies.png)
   
 ## <a name="view-and-manage-devices"></a>Afficher et gérer les appareils
 
@@ -49,5 +49,5 @@ Cet article s’applique aux Microsoft 365 Business Premium.
     
     Dans cette page, vous pouvez sélectionner un ou plusieurs appareils et supprimer des données d’entreprise. Pour les appareils Windows 10 pour lesquels vous avez défini des paramètres de protection d'appareil, vous pouvez également choisir de rétablir les paramètres d'usine.
   
-   ![Page Gérer les appareils](../../media/devicesmanage.png)
+   ![Page Gérer les appareils.](../../media/devicesmanage.png)
 

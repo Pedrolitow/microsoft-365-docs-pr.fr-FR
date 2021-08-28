@@ -1,5 +1,5 @@
 ---
-title: Spécialistes des menaces Microsoft vue d’ensemble Microsoft 365 Defender
+title: Spécialistes des menaces Microsoft dans Microsoft 365 Defender vue d’ensemble
 ms.reviewer: ''
 description: Spécialistes des menaces Microsoft couche supplémentaire d’expertise pour Microsoft 365 Defender.
 keywords: service de repérage de menace gérée, repérage de menace gérée, service de détection et de réponse gérée (MDR), MTE, Spécialistes des menaces Microsoft
@@ -15,12 +15,12 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: a545794e0ca5739f0b65513edce0c61bb649ad82
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 4fcab8abd4f1a5a45ff2700b01abc7fe67b8563f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764422"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565671"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Spécialistes des menaces Microsoft vue d’Microsoft 365'ensemble
 
@@ -41,9 +41,9 @@ Spécialistes des menaces Microsoft : les experts à la demande vous offrent des
 > [!IMPORTANT]
 > Avant de vous inscrire, veillez à discuter des conditions d’éligibilité pour Spécialistes des menaces Microsoft – Notifications d’attaque ciblées avec votre fournisseur de services techniques Microsoft et votre équipe de compte.
 
-Si vous avez déjà Microsoft Defender pour le point de terminaison et Microsoft 365 Defender, vous pouvez demander des notifications d’Spécialistes des menaces Microsoft – Attaques ciblées via leur portail Microsoft 365 Defender. Go to **Paramètres > Endpoints > General > Advanced features > Spécialistes des menaces Microsoft – Targeted Attack Notifications,** and select **Apply**. Voir [Configurer Spécialistes des menaces Microsoft fonctionnalités pour](./configure-microsoft-threat-experts.md) obtenir une description complète.
+Si vous avez déjà Microsoft Defender pour les points de terminaison et les Microsoft 365 Defender, vous pouvez demander des notifications d’Spécialistes des menaces Microsoft – Des notifications d’attaques ciblées via Microsoft 365 Defender portail. Go to **Paramètres > Endpoints > General > Advanced features > Spécialistes des menaces Microsoft – Targeted Attack Notifications,** and select **Apply**. Voir [Configurer Spécialistes des menaces Microsoft fonctionnalités pour](./configure-microsoft-threat-experts.md) obtenir une description complète.
 
-![Capture d’écran de la page d’application MTE](../../media/mte/mte-collaboratewithmte.png)
+![Capture d’écran de la page d’application MTE.](../../media/mte/mte-collaboratewithmte.png)
 
 Une fois votre application approuvée, vous commencez à recevoir des notifications d’attaque ciblée chaque fois que les experts en menace détectent une menace pour votre environnement.
 
@@ -58,7 +58,7 @@ La fonctionnalité Spécialistes des menaces Microsoft – Notification d’atta
 - Analyse et surveillance des menaces, réduction du temps d’activité et des risques pour votre entreprise
 - Intelligence artificielle entraînée pour découvrir et cibler les attaques connues et les menaces émergentes
 - Identification des risques les plus pertinents, aider les SOC à optimiser leur efficacité
-- Aide à réduire les compromissions et à fournir autant de contexte qu’il est possible de fournir rapidement pour activer une réponse SOC rapide.
+- Aide à réduire les compromissions et à fournir autant de contexte que possible pour permettre une réponse SOC rapide.
 
 ## <a name="collaborate-with-experts-on-demand"></a>Collaborer avec des experts à la demande
 
@@ -71,19 +71,19 @@ Vous pouvez également contacter des experts microsoft en matière de menaces di
 L’option de **consulter un expert en menaces** est disponible à plusieurs endroits dans le portail :
 
 - <i>**Menu Actions de la page d’appareil**</i><BR>
-![Capture d’écran de l’option de menu MTE-EOD dans le menu d’action de la page Appareil](../../media/mte/device-actions-mte-highlighted.png)
+![Capture d’écran de l’option de menu MTE-EOD dans le menu d’action de la page Appareil.](../../media/mte/device-actions-mte-highlighted.png)
 
 - <i>**Menu volant de la page d’inventaire des appareils**</i><BR>
-![Capture d’écran de l’option de menu MTE-EOD sur la page d’inventaire des appareils](../../media/mte/device-inventory-mte-highlighted.png)
+![Capture d’écran de l’option de menu MTE-EOD sur la page d’inventaire des appareils.](../../media/mte/device-inventory-mte-highlighted.png)
 
 - <i>**Menu volant de la page Alertes**</i><BR>
-![Capture d’écran de l’option de menu MTE-EOD sur la page d’alerte](../../media/mte/alerts-actions-mte-highlighted.png)
+![Capture d’écran de l’option de menu MTE-EOD sur la page d’alerte.](../../media/mte/alerts-actions-mte-highlighted.png)
 
 - <i>**Menu Actions de la page Incidents**</i><BR>
-![Capture d’écran de l’option de menu MTE-EOD sur la page Incidents](../../media/mte/incidents-action-mte-highlighted.png)
+![Capture d’écran de l’option de menu MTE-EOD sur la page incidents.](../../media/mte/incidents-action-mte-highlighted.png)
 
 - <i>**Page d’inventaire des incidents**</i><BR>
-![Capture d’écran de l’option de menu MTE-EOD sur la page d’inventaire des incidents](../../media/mte/incidents-inventory-mte-highlighted.png)
+![Capture d’écran de l’option de menu MTE-EOD sur la page d’inventaire des incidents.](../../media/mte/incidents-inventory-mte-highlighted.png)
 
 > [!NOTE]
 > Si vous avez un abonnement au support Premier mappé à votre licence Microsoft Defender pour Office 365, vous pouvez suivre l’état de vos cas Experts à la demande via le Microsoft Services Hub.

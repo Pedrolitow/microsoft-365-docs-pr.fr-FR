@@ -19,12 +19,12 @@ search.appverid:
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0d5803560ea965e222669027be30860d8a17328b2d097705dabe9bb88e5c42c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c40078626948e51c0e43f06dd567967f3cff516
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56967395"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565647"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -62,7 +62,7 @@ Les rapports DLP sont dans le Centre de conformité Microsoft 365. Accédez à l
 
 Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](../../compliance/view-the-dlp-reports.md).
 
-![Rapport affichant les correspondances de stratégie DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+![Rapport affichant les correspondances de stratégie DLP.](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## <a name="audit-log-and-alert-policies"></a>Journal d’audit et stratégies d’alerte
 
@@ -98,7 +98,7 @@ Pour mieux comprendre votre environnement cloud, la fonctionnalité d’examen d
 
 Pour consulter des exemples, l’illustration suivante décrit deux stratégies Cloud App Security qui peuvent vous aider avec le RGPD.
 
-![Exemple de stratégies Cloud App Security](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+![Exemple de stratégies Cloud App Security.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 La première stratégie signale lorsque des fichiers avec un attribut PII prédéfini ou une expression personnalisée que vous choisissez sont partagés en dehors de l’organisation à partir des applications SaaS que vous choisissez.
 
@@ -116,7 +116,7 @@ Si vous n’avez pas encore commencé à utiliser Cloud App Security, commencez 
 > [!NOTE]
 > Veillez à activer l’option « Analyser automatiquement les fichiers pour les étiquettes de classification Azure Information Protection » (dans les Paramètres généraux) lors de la prise en main de Sécurité des applications cloud ou avant d’attribuer des étiquettes. Après la configuration, Sécurité des applications cloud n’analyse pas de nouveau les fichiers existants tant qu’ils ne sont pas modifiés.
 
-![Tableau de bord affichant des informations sur les alertes](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+![Tableau de bord affichant des informations sur les alertes.](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Plus d’informations :
 

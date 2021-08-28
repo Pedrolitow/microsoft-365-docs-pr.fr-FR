@@ -20,12 +20,12 @@ ms.custom:
 description: Dans cet article, vous allez apprendre à utiliser le portail Supprimer de la liste pour vous supprimer de la liste Microsoft 365 les expéditeurs bloqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7beee058a85d7ab44a6a4a94b362fa669537f573754de8558d713332d897843f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1c4c09af11829d2b4d902211baff9fb8e6cfb11
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56854707"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566501"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utiliser le portail Retirer d’une liste pour vous supprimer de la liste des expéditeurs bloqués
 
@@ -56,7 +56,7 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
 
 3. Cliquez sur **Envoyer**.
 
-    Le portail envoie un courrier électronique à l'adresse de messagerie que vous indiquez. L’e-mail ressemblera à ce qui suit : Capture d’écran du courrier électronique reçu lorsque vous envoyez une demande ![ via le portail Delist](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    Le portail envoie un courrier électronique à l'adresse de messagerie que vous indiquez. L’e-mail ressemblera à ce qui suit : Capture d’écran du courrier électronique reçu lorsque vous envoyez une demande ![ via le portail de liste.](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. Cliquez sur le lien de confirmation dans le courrier électronique envoyé par le portail de suppression de la liste.
 

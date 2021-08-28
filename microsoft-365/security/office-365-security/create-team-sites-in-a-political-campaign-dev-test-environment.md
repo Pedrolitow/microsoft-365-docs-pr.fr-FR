@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 924e363b55b3832a1882e68242c46f5466bd5f6fb900e8b8345fc45eab301d89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 84d96eb53094fe99cc6942db1d4dc61f1c884ec3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56849944"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566535"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 
@@ -52,7 +52,7 @@ Dans cette phase, vous allez créer les étiquettes correspondant aux différent
 
 3. Dans la page d’**Accueil** du Centre de conformité Microsoft 365, accédez à la section **Solutions**\> **Protection des informations**. Pour accéder directement à la page **Information Protection**, utilisez <https://compliance.microsoft.com//informationprotection>.
 
-4. Dans la page **Protection des informations**, vérifiez que la balise **Étiquette est sélectionnée**, puis cliquez sur ![Créer une icône d’étiquette](../../media/m365-cc-sc-create-icon.png) **Créer une étiquette**.
+4. Dans la page **Protection des informations**, vérifiez que la balise **Étiquette est sélectionnée**, puis cliquez sur ![Créer une icône d’étiquette.](../../media/m365-cc-sc-create-icon.png) **Créer une étiquette**.
 
 5. L’Assistant **nouvelle étiquette de confidentialité** s’ouvre. À l’étape **Nom et description**, entrez les valeurs suivantes :
    - **Nom** : tapez **Interne**.

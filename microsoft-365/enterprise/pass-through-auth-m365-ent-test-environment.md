@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer l’authentification directe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 6919c3f85e076232c864642ada020daaeff8f566
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: aa2ef24db76917917d35e7816c249334f6bdd229
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357064"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566765"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Authentification directe pour votre environnement de test Microsoft 365
 
@@ -31,14 +31,14 @@ ms.locfileid: "58357064"
 
 Les organisations désireuses d’utiliser directement leur infrastructure d’Active Directory Domain Services (AD DS) en local pour l’authentification aux applications et services sur le cloud Microsoft peuvent utiliser l’authentification directe. Cet article décrit comment configurer l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365. Voici la configuration que vous obtenez:
   
-![Environnement de test de l’entreprise simulée avec l’authentification directe](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![Environnement de test de l’entreprise simulée avec authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
   
 Les deux phases de configuration de cet environnement de test sont les suivantes :
 
 1.    Création de l’environnement de test Microsoft 365 de l’entreprise simulée avec la synchronisation de hachage de mot de passe.
 2.    Configuration de l’authentification directe pour Azure AD Connect sur APP1.
     
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Cliquez [ici](../downloads/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan visuel de tous les articles de l’ensemble des guides de laboratoire de test de Microsoft 365 pour entreprise.
@@ -47,7 +47,7 @@ Les deux phases de configuration de cet environnement de test sont les suivantes
 
 Suivez les instructions fournies dans l’article [Synchronisation de hachage de mot de passe pour Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Voici la configuration que vous obtenez.
   
-![Environnement de test de l’entreprise simulée avec la synchronisation de hachage de mot de passe](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![Environnement de test de l’entreprise simulée avec synchronisation de hachage de mot de passe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Cette configuration se compose des éléments suivants :  
   
@@ -90,7 +90,7 @@ Veuillez noter que même si l’utilisateur User1 dispose des autorisations d’
 
 Voici la configuration obtenue :
 
-![Environnement de test de l’entreprise simulée avec l’authentification directe](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![Environnement de test de l’entreprise simulée avec authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
 Cette configuration se compose des éléments suivants : 
 

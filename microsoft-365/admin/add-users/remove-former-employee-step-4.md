@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez les étapes de cet article pour accorder à un autre employé l’accès aux données de OneDrive et Outlook de l’ancien employé.
-ms.openlocfilehash: c9d9858d030e54884a4defc9b06afe67e8951fca37e36f10d0e9979e5d282920
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0904c6aeca919dd3f93044ce177a34761cb141b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827469"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564721"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Étape 4 : donner à un autre employé l’accès OneDrive données Outlook données
 
@@ -39,7 +39,7 @@ Lorsqu’un employé quitte votre organisation, vous pouvez accéder à ses donn
   
 ## <a name="access-a-former-users-onedrive-documents"></a>Accéder aux documents d’un ancien OneDrive utilisateur
 
-Si vous supprimez la licence d’un utilisateur, mais que vous ne supprimez pas le compte, vous pouvez vous accorder l’accès au contenu dans le compte de l’OneDrive. Si vous supprimez le compte de l’utilisateur, vous avez 30 jours par défaut pour accéder aux données de l’OneDrive utilisateur. [Découvrez comment définir la rétention OneDrive rétention des utilisateurs supprimés.](/onedrive/set-retention) Si vous ne [restituerez pas de](/office365/admin/add-users/restore-user) compte d’utilisateur dans ce délai, son contenu OneDrive est supprimé.
+Si vous supprimez la licence d’un utilisateur, mais que vous ne supprimez pas le compte, vous pouvez vous accorder l’accès au contenu dans le compte de l’OneDrive. Si vous supprimez le compte de l’utilisateur, vous avez 30 jours par défaut pour accéder aux données de l’OneDrive utilisateur. [Découvrez comment définir le OneDrive rétention des utilisateurs supprimés.](/onedrive/set-retention) Si vous ne [restituerez pas de](/office365/admin/add-users/restore-user) compte d’utilisateur dans ce délai, son contenu OneDrive est supprimé.
 
 Pour conserver les fichiers OneDrive d’un ancien utilisateur, donnez-vous d’abord accès à leurs OneDrive, puis déplacez les fichiers que vous souhaitez conserver.
 
@@ -115,11 +115,11 @@ Pour enregistrer les messages électroniques, le calendrier, les tâches et les 
   
 3. Sélectionnez **&amp; Ouvrir l’exportation** \> **Import/Export**.
 
-    ![Import/Export commande en affichage Backstage](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![Import/Export commande en affichage Backstage.](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. Sélectionnez **Exporter vers un fichier,** puis sélectionnez **Suivant.**
 
-    ![Exporter vers une option de fichier dans l’Assistant Importation et exportation](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    ![Exporter vers une option de fichier dans l’Assistant Importation et exportation.](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. Sélectionnez **Outlook fichier de données (.pst),** puis sélectionnez **Suivant**.
 
@@ -128,7 +128,7 @@ Pour enregistrer les messages électroniques, le calendrier, les tâches et les 
     > [!NOTE]
     > Vous pouvez exporter un compte à la fois. Si vous souhaitez exporter plusieurs comptes, une fois qu’un compte est exporté, répétez ces étapes.
   
-    ![Boîte de dialogue Exporter Outlook fichier de données avec le dossier supérieur sélectionné et Inclure les sous-dossiers sélectionnés](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![Exporter Outlook boîte de dialogue Fichier de données avec le dossier supérieur sélectionné et Inclure les sous-dossiers cochés.](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. Sélectionnez **Suivant**.
 
@@ -143,9 +143,9 @@ Pour enregistrer les messages électroniques, le calendrier, les tâches et les 
 
 Outlook l’exportation commence immédiatement, sauf si un nouveau fichier de données Outlook (.pst) est créé ou qu’un fichier protégé par mot de passe est utilisé.
   
-- Si vous créez un fichier de données Outlook (.pst), un mot de passe facultatif peut vous aider à protéger le fichier. Lorsque la **boîte de dialogue Créer Outlook** fichier  de  données s’affiche, tapez le mot de passe dans les zones Mot de passe et Vérifier le mot de passe, puis sélectionnez **OK**.  Dans la **boîte Outlook mot de passe du** fichier de données, tapez le mot de passe, puis sélectionnez **OK.** 
+- Si vous créez un fichier de données Outlook (.pst), un mot de passe facultatif peut vous aider à protéger le fichier. Lorsque la **boîte de dialogue Créer Outlook** fichier  de  données s’affiche, tapez le mot de passe dans les zones Mot de passe et Vérifier le mot de passe, puis sélectionnez **OK.**  Dans la **boîte Outlook mot de passe du** fichier de données, tapez le mot de passe, puis sélectionnez **OK.** 
 
-- Si vous exportez vers un fichier de données Outlook (.pst) existant protégé par mot de passe, dans la boîte de dialogue Mot de passe du fichier de données **Outlook,** tapez le mot de *passe,* puis sélectionnez **OK.**
+- Si vous exportez vers un fichier de données Outlook existant (.pst) protégé par mot de passe, dans la boîte de dialogue Mot de passe du fichier de données **Outlook,** tapez le mot de *passe,* puis sélectionnez **OK.**
 
 Découvrez comment exporter ou sauvegarder le courrier électronique, les contacts et le calendrier vers [Outlook fichier .pst](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) dans Outlook 2010.
 
@@ -165,7 +165,7 @@ Pour accorder à un autre employé l’accès aux messages électroniques, au ca
 
 2. Sélectionnez **Importer à partir d’un autre programme ou fichier,** puis sélectionnez **Suivant**.
 
-    ![Assistant Importation et exportation](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![Assistant Importation et exportation.](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. Sélectionnez **Outlook fichier de données (.pst)** et sélectionnez **Suivant**.
 
@@ -187,7 +187,7 @@ Pour accorder à un autre employé l’accès aux messages électroniques, au ca
 > [!TIP]
 > Si vous souhaitez importer ou restaurer uniquement quelques éléments à partir d’un fichier de données Outlook (.pst), vous pouvez ouvrir le Outlook de données. Ensuite, dans le volet de navigation, faites glisser les éléments de Outlook fichiers de données vers vos dossiers Outlook existants.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Ajouter et supprimer des administrateurs sur un compte OneDrive (article)](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
 

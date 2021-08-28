@@ -17,16 +17,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Fournissez à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation.
-ms.openlocfilehash: 42a65543ef37d2433d84432a7436dabaaa9ce345
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 9577081bcf8d8c2b7b47bc820529f2e66cc86924
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394227"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566257"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités du secteur
 
-Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’Bing et de Microsoft Edge page nouvel onglet. 
+Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’accueil Bing et Microsoft Edge page nouvel onglet. 
 
 ## <a name="what-your-users-will-see"></a>Ce que vos utilisateurs voient
 
@@ -34,17 +34,17 @@ Vous avez la possibilité d’envoyer à vos utilisateurs un e-mail quotidien de
  
 Les utilisateurs qui se sont inscrits et qui se Bing page d’accueil voient le flux d’actualités de votre secteur sous les informations personnalisées de votre organisation. 
  
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Capture d’écran d’un carrousel d’image avec les actualités du secteur à partir du web":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Capture d’écran d’un carrousel d’image avec les actualités du secteur à partir du web.":::
 
-:::image type="content" source="../../media/industry-updates-new.png" alt-text="Page Mises à jour du secteur avec date et titres":::
+:::image type="content" source="../../media/industry-updates-new.png" alt-text="Page Mises à jour du secteur avec la date et les titres.":::
 
-Ils peuvent également consulter les actualités de l’entreprise, du secteur et internes, ou des informations de travail personnalisées sur Microsoft Edge page nouvel onglet. 
+Ils peuvent également consulter les actualités de l’entreprise, du secteur et des informations internes ou des informations de travail personnalisées sur Microsoft Edge page nouvel onglet. 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft dans la page d’accueil des actualités":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft dans la page d’accueil des actualités.":::
 
 ## <a name="news-settings"></a>Paramètres des actualités
 
-En tant qu’administrateur, vous contrôlez les paramètres des flux d’actualités de votre organisation, y compris l’industrie sélectionnée et la page d’accueil Bing, la page du nouvel onglet Microsoft Edge (à partir de la publication de Edge 87) et les expériences de messagerie. 
+En tant qu’administrateur, vous contrôlez les paramètres de flux d’actualités de votre organisation, y compris l’industrie sélectionnée et la page d’accueil Bing, la page du nouvel onglet Microsoft Edge (à partir de la publication de Edge 87) et les expériences de messagerie. 
 
 1. In the Centre d’administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
@@ -54,13 +54,13 @@ En tant qu’administrateur, vous contrôlez les paramètres des flux d’actual
 
 1. Dans le **champ Rubriques,** entrez les rubriques dont vous souhaitez consulter les articles d’actualités. Vos utilisateurs ne peuvent pas modifier ces rubriques. 
 
-1. Vous pouvez bloquer les articles contenant des mots clés dans le **champ Exclure du** contenu. Par exemple, pour éviter que des articles contenant le mot clé « # A0 » ne s’affichent dans le flux d’actualités, ajoutez le mot clé « # » dans le **champ Exclure du** contenu. Évitez d’inclure des termes généraux (le, il et, etc.) ; ils peuvent bloquer l’apparition de contenu pertinent dans vos flux d’actualités d’entreprise. 
+1. Vous pouvez bloquer les articles contenant des mots clés dans le **champ Exclure du** contenu. Par exemple, pour éviter que des articles contenant le mot clé « # A0 » ne s’affichent dans le flux d’actualités, ajoutez le mot clé « # » dans le **champ Exclure du** contenu. Évitez d’inclure des termes généraux (le, il et, etc.) ; ils peuvent bloquer l’apparition de contenu pertinent dans les flux d’actualités de votre entreprise. 
 
-1. Sélectionnez **Enregistrer**. L’apparition des modifications peut prendre jusqu’à 24 heures. 
+1. Cliquez sur **Enregistrer**. L’apparition des modifications peut prendre jusqu’à 24 heures. 
 
 ## <a name="industry-updates-in-email"></a>Mises à jour du secteur dans le courrier électronique 
 
-Vous pouvez envoyer une mise à jour quotidienne par courrier électronique avec les actualités du secteur pertinentes dans la boîte de réception de vos utilisateurs. Pour définir des mises à jour quotidiennes de courrier électronique pour les utilisateurs : 
+Vous pouvez envoyer une mise à jour quotidienne du courrier électronique avec les actualités du secteur pertinentes dans les boîtes de réception de vos utilisateurs. Pour définir des mises à jour quotidiennes du courrier électronique pour les utilisateurs : 
 
 1. In the Centre d’administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 

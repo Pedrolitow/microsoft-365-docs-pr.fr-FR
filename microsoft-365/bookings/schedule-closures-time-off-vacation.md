@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Planifier les fermetures de bureau et les congés des employés du calendrier Bookings afin que les employés soient marqués comme indisponibles pour les réservations aux heures spécifiées.
-ms.openlocfilehash: 3d8c7b370331f0e4651864f961d6eceffc9d24cddef07810d765bfbc5db6e96b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bdd00d2bc97de1e981b2de7f5f21325de6967aa7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906974"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567591"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>Planifier des fermetures d’entreprise, des congés et des congés
 
@@ -30,7 +30,7 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour planifier des fermet
 
 1. Dans le volet de  navigation, sélectionnez \> **Congés du calendrier.**
 
-   ![Image de l’affichage calendrier bookings et du bouton Délai d’arrêt](../media/bookings-calendar-timeoff.png)
+   ![Image de l’affichage calendrier bookings et du bouton Délai d’arrêt.](../media/bookings-calendar-timeoff.png)
 
 1. Remplissez les détails, y compris un titre, la date et les heures de début et de fin, l’emplacement et des notes supplémentaires.
 
@@ -38,21 +38,21 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour planifier des fermet
 
 1. Sélectionnez tous les membres du personnel.
 
-1. Sélectionnez **Enregistrer**.
+1. Cliquez sur **Enregistrer**.
 
 Lorsqu’un client tente de planifier le service un jour de fermeture, il voit un message sur la page de réservation.
 
-   ![Image de l’exemple de message que le client voit lors de la tentative de réservation pendant les congés](../media/bookings-timeoff-message.png)
+   ![Image d’exemple de message que le client voit lors de la tentative de réservation pendant les congés.](../media/bookings-timeoff-message.png)
 
 ## <a name="schedule-employee-time-off"></a>Planifier les congés des employés
 
 1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings.**
 
-   ![Image du lanceur d’applications](../media/bookings-applauncher.png)
+   ![Image du lanceur d’applications.](../media/bookings-applauncher.png)
 
 1. Dans le volet de  navigation, sélectionnez \> **Congés du calendrier.**
 
-   ![Image de l’affichage calendrier bookings et du bouton Délai d’arrêt](../media/bookings-calendar-timeoff.png)
+   ![Image de l’affichage calendrier bookings et du bouton Délai d’arrêt.](../media/bookings-calendar-timeoff.png)
 
 1. Remplissez les détails, y compris un titre, la date et les heures de début et de fin, l’emplacement et des notes supplémentaires. Si l’employé sera absent pendant une journée entière ou pendant plusieurs jours, sélectionnez **Événement de la journée entière.**
 

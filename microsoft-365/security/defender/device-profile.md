@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: b9f73150d858efc8eecf7a027035011d88098e9359ab87c9ce5c2f992cd8857e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f33b16cb08f7573a579f46327f126071ed726e42
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805693"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563937"
 ---
 # <a name="device-profile-page"></a>Page de profil d’appareil
 
@@ -36,7 +36,7 @@ Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison
 
 La page de profil est décomposée en plusieurs sections larges.
 
-![Image de la page de profil de l’appareil avec (1) zone d’onglet (2) barre latérale et (3) Actions mises en surbrillon en rouge](../../media/mtp-device-profile/hybrid-device-overall.png)
+![Image de la page de profil de l’appareil avec (1) zone d’onglet (2) barre latérale et (3) Actions mises en surbrillon en rouge.](../../media/mtp-device-profile/hybrid-device-overall.png)
 
 La barre latérale (1) répertorie les détails de base sur l’appareil.
 
@@ -48,11 +48,11 @@ Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison
 
 À côté de la zone de contenu principale de la page de profil d’appareil se trouve la barre latérale.
 
-![Image de l’onglet de barre latérale pour le profil de l’appareil](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
+![Image de l’onglet de barre latérale pour le profil de l’appareil.](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
 
 La barre latérale répertorie le nom complet et le niveau d’exposition de l’appareil. Il fournit également des informations de base importantes dans les petites sous-sections qui peuvent être ouvertes ou fermées, telles que :
 
-* **Balises** : tout Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées à l’appareil. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
+* **Balises** : tout Microsoft Defender pour point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées à l’appareil. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
 * **Informations de sécurité** : ouvrir les incidents et les alertes actives. Les appareils inscrits dans Microsoft Defender pour le point de terminaison affichent également le niveau d’exposition et le niveau de risque.
 
 > [!TIP]
@@ -66,7 +66,7 @@ La barre latérale répertorie le nom complet et le niveau d’exposition de l�
 
 Les actions de réponse offrent un moyen rapide de se défendre contre les menaces et d’analyser ces menaces.
 
-![Image de la barre d’action pour le profil de l’appareil](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
+![Image de la barre d’action pour le profil de l’appareil.](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
 > * [Les actions de](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) réponse sont disponibles uniquement si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison.
@@ -75,7 +75,7 @@ Les actions de réponse offrent un moyen rapide de se défendre contre les menac
 Les actions disponibles sur la page de profil d’appareil sont les suivantes :
 
 * **Gérer les balises** : met à jour les balises personnalisées que vous avez appliquées à cet appareil.
-* **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en conservant sa connexion à Microsoft Defender pour endpoint. Vous pouvez choisir d’autoriser Outlook, Teams et Skype Entreprise’exécuter pendant que l’appareil est isolé, à des fins de communication.
+* **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en conservant sa connexion à Microsoft Defender pour endpoint. Vous pouvez choisir d’autoriser Outlook, Teams et Skype Entreprise à s’exécuter lorsque l’appareil est isolé, à des fins de communication.
 * **Centre de actions** : afficher l’état des actions envoyées. Disponible uniquement si une autre action a déjà été sélectionnée.
 * **Restreindre l’exécution de** l’application : empêche l’exécution des applications qui ne sont pas signées par Microsoft.
 * **Exécuter une analyse antivirus** : met à jour Antivirus Windows Defender définitions et exécute immédiatement une analyse antivirus. Choisissez entre l’analyse rapide ou l’analyse complète.
@@ -94,9 +94,9 @@ Les appareils inscrits dans Microsoft Defender pour le point de terminaison affi
 
 L’onglet par défaut est **Vue d’ensemble.** Il fournit un aperçu rapide des faits de sécurité les plus importants concernant l’appareil.
 
-![Image de l’onglet Vue d’ensemble pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
+![Image de l’onglet Vue d’ensemble pour le profil d’appareil.](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
-Ici, vous pouvez obtenir un aperçu rapide des alertes actives de l’appareil et de tous les utilisateurs actuellement connectés.
+Ici, vous pouvez obtenir un aperçu rapide des alertes actives de l’appareil et des utilisateurs actuellement connectés.
 
 Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison, vous verrez également le niveau de risque de l’appareil et toutes les données disponibles sur les évaluations de sécurité. Les évaluations de sécurité décrivent le niveau d’exposition de l’appareil, fournissent des recommandations de sécurité et indiquent les logiciels concernés et les vulnérabilités découvertes.
 
@@ -104,13 +104,13 @@ Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison
 
 **L’onglet Alertes** contient une liste d’alertes qui ont été élevées sur l’appareil, à partir de Microsoft Defender pour l’identité et De Microsoft Defender pour le point de terminaison.
 
-![Image de l’onglet Alertes pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
+![Image de l’onglet Alertes pour le profil d’appareil.](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
 Vous pouvez personnaliser le nombre d’éléments affichés, ainsi que les colonnes affichées pour chaque élément. Le comportement par défaut consiste à lister trente éléments par page.
 
 Les colonnes de cet onglet incluent des informations sur la gravité de la menace ayant déclenché l’alerte, ainsi que sur l’état, l’état de l’enquête et la personne à qui l’alerte a été affectée.
 
-La *colonne Entités* concernées fait référence à l’appareil (entité) dont vous affichez actuellement le profil, ainsi qu’à tous les autres appareils de votre réseau concernés.
+La *colonne Entités* concernées fait référence à l’appareil (entité) dont vous affichez actuellement le profil, ainsi qu’à tous les autres appareils de votre réseau affectés.
 
 La sélection d’un élément dans cette liste ouvre un volant contenant encore plus d’informations sur l’alerte sélectionnée.
 
@@ -122,7 +122,7 @@ Cette liste peut être filtrée par gravité, état ou à qui l’alerte a été
 
 Sous le graphique se trouve une liste d’événements pour la plage de dates sélectionnée.
 
-![Image de l’onglet Chronologie pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
+![Image de l’onglet chronologie pour le profil d’appareil.](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
 
 Le nombre d’éléments affichés et les colonnes de la liste peuvent être personnalisés. Les colonnes par défaut listent l’heure de l’événement, l’utilisateur actif, le type d’action, les entités (processus) et des informations supplémentaires sur l’événement.
 
@@ -136,7 +136,7 @@ La liste peut également être exportée vers un fichier CSV, en téléchargemen
 
 **L’onglet Recommandations en matière** de sécurité répertorie les actions que vous pouvez prendre pour protéger l’appareil. La sélection d’un élément dans cette liste ouvre un volant dans lequel vous pouvez obtenir des instructions sur la façon d’appliquer la recommandation.
 
-![Image de l’onglet Recommandations de sécurité pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
+![Image de l’onglet Recommandations de sécurité pour le profil d’appareil.](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
 
 Comme avec les onglets précédents, le nombre d’éléments affichés par page, ainsi que les colonnes visibles, peuvent être personnalisés.
 
@@ -146,7 +146,7 @@ L’affichage par défaut inclut des colonnes qui détaillent les faiblesses de 
 
 **L’onglet Inventaire** logiciel répertorie les logiciels installés sur l’appareil.
 
-![Image de l’onglet Inventaire logiciel pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
+![Image de l’onglet d’inventaire logiciel pour le profil d’appareil.](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
 
 L’affichage par défaut affiche le fournisseur de logiciels, le numéro de version installé, le nombre de faiblesses logicielles connues, les informations sur les menaces, le code du produit et les balises. Le nombre d’éléments affichés et les colonnes affichées peuvent être personnalisés.
 
@@ -158,7 +158,7 @@ Cette liste peut être filtrée par code produit.
 
 **L’onglet Vulnérabilités** découvertes répertorie les vulnérabilités courantes et les exploits (CVE) qui peuvent affecter l’appareil.
 
-![Image de l’onglet Vulnérabilités découvertes pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
+![Image de l’onglet vulnérabilités découvertes pour le profil d’appareil.](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
 
 L’affichage par défaut répertorie la gravité de la CVE, le score de vulnérabilité commun (CVS), le logiciel associé à la CVE, lors de la publication de la CVE, la dernière mise à jour de la CVE et les menaces associées à la CVE.
 
@@ -168,9 +168,9 @@ La sélection d’un élément dans cette liste ouvre un volant qui décrit la C
 
 ### <a name="missing-kbs"></a>Ko manquants
 
-**L’onglet Ko manquant répertorie** toutes les mises à jour Microsoft qui n’ont pas encore été appliquées à l’appareil. Les « ko » en question sont des articles de [la Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) de connaissances qui décrivent ces mises à jour . par exemple, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
+**L’onglet Ko manquant répertorie** toutes les mises à jour Microsoft qui n’ont pas encore été appliquées à l’appareil. Les « bases de connaissances » en question sont des articles de [la Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) de connaissances qui décrivent ces mises à jour . par exemple, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
-![Image de l’onglet kbs manquant pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
+![Image de l’onglet kbs manquant pour le profil d’appareil.](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
 
 L’affichage par défaut répertorie le bulletin contenant les mises à jour, la version du système d’exploitation, les produits affectés, les CV traités, le numéro de la base de données et les balises.
 
@@ -178,7 +178,7 @@ Le nombre d’éléments affichés par page et les colonnes affichées peuvent �
 
 La sélection d’un élément ouvre un volant qui relie la mise à jour.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 * [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 * [Activer Microsoft 365 Defender](m365d-enable.md)

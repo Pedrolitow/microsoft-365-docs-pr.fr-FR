@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 05bb73269d78c08de3345ab001d12892960e30bf35c7ef43772212fc200ff435
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6aaf63f61919c520c77a09bf3607174757d4c2b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826278"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566315"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
@@ -73,11 +73,11 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
 
 5. Sous **Étapes suivantes**, sélectionnez **Ajouter des membres à cette boîte aux lettres**. Les membres représentent les personnes qui sont en mesure de consulter les courriers entrants dans cette boîte aux lettres partagée, ainsi que les réponses sortantes.
 
-   ![Sélectionnez Ajouter des membres](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![Sélectionnez Ajouter des membres.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. Sélectionnez le bouton **+Ajouter des membres**. Cochez la case en regard des personnes qui seront en mesure d'utiliser cette boîte aux lettres partagée, puis sélectionnez **Enregistrer**.
 
-   ![Attribuer des membres à la boîte aux lettres partagée](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![Associer des membres à la boîte aux lettres partagée](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Sélectionnez **Fermer**.
 
@@ -95,11 +95,11 @@ Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres par
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Utiliser le CAE pour modifier la délégation de boîte aux lettres partagée
 
-1. Dans le CAE, accédez à **Destinataires** \> **Partagé**. Sélectionnez la boîte aux lettres partagée, puis **Modifier** ![Icône Modifier](../../media/ITPro-EAC-EditIcon.png)..
+1. Dans le CAE, accédez à **Destinataires** \> **Partagé**. Sélectionnez la boîte aux lettres partagée, puis sélectionnez **Modifier** ![Icône Modifier.](../../media/ITPro-EAC-EditIcon.png).
 
 2. Sélectionnez **Délégation de boîte aux lettres**.
 
-3. Pour accorder ou supprimer les autorisations Accès total et Envoyer en tant que, sélectionnez **Ajouter** ![Ajoute une icône](../../media/ITPro-EAC-AddIcon.png) ou sur **Supprimer** ![Supprimer une icône](../../media/ITPro-EAC-RemoveIcon.gif), puis sélectionnez les utilisateurs auxquels vous souhaitez accorder ou retirer les autorisations.
+3. Pour accorder ou supprimer les autorisations Accès total et Envoyer en tant que, sélectionnez **Ajouter** ![Ajouter une icône](../../media/ITPro-EAC-AddIcon.png) ou sur **Supprimer** ![Supprimer une icône](../../media/ITPro-EAC-RemoveIcon.gif), puis sélectionnez les utilisateurs auxquels vous souhaitez accorder ou retirer les autorisations.
 
    > [!NOTE]
    > L'autorisation Accès total permet aux utilisateurs d'ouvrir la boîte aux lettres, d'y créer des éléments et de les modifier. L'autorisation Envoyer en tant que permet à toute personne autre que le propriétaire de la boîte aux lettres d'envoyer des courriers électroniques à partir de cette boîte aux lettres partagée. Les deux autorisations sont requises pour que la boîte aux lettres partagée fonctionne.

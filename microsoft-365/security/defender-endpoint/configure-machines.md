@@ -1,7 +1,7 @@
 ---
 title: Vérifier que vos appareils sont correctement configurés
 description: Configurez correctement les appareils pour renforcer la résilience globale contre les menaces et améliorer votre capacité à détecter les attaques et à y répondre.
-keywords: intégration, gestion Intune, Microsoft Defender pour le point de terminaison, Microsoft Defender, Windows Defender, réduction de la surface d’attaque, réduction de la surface d’attaque, réduction de la surface d’attaque, ligne de base de sécurité
+keywords: intégré, gestion Intune, Microsoft Defender pour le point de terminaison, Microsoft Defender, Windows Defender, réduction de la surface d’attaque, réduction de la surface d’attaque, réduction de la surface d’attaque, ligne de base de sécurité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13e89f64a0b86249d69e3c36e52dc445b2d4c70438d3f16f62bc8758fa6b5b4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b9d00ec13a08751882e7c699a4e029083dc08bc6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894462"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567867"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Vérifier que vos appareils sont correctement configurés
 
@@ -41,7 +41,7 @@ Avec des appareils correctement configurés, vous pouvez renforcer la résilienc
 
 Cliquez **sur Gestion de la** configuration dans le menu de navigation pour ouvrir la page Gestion de la configuration des appareils.
 
-![Page Gestion de la configuration de la sécurité](images/secconmgmt_main.png)
+![Page Gestion de la configuration de la sécurité.](images/secconmgmt_main.png)
 
 *Page Gestion de la configuration des appareils*
 
@@ -50,7 +50,7 @@ Vous pouvez suivre l’état de configuration au niveau de l’organisation et p
 Pour ce faire, vous bénéficiez des avantages de :
 
 - Visibilité complète des événements sur vos appareils
-- Veille fiable sur les menaces et technologies puissantes d’apprentissage des appareils pour le traitement des événements bruts et l’identification de l’activité de violation et des indicateurs de menace
+- Veille fiable sur les menaces et technologies puissantes d’apprentissage des appareils pour traiter les événements bruts et identifier l’activité de violation et les indicateurs de menace
 - Pile complète de fonctionnalités de sécurité configurées pour arrêter efficacement l’installation de programmes malveillants, le piratage de fichiers et de processus système, l’exfiltration de données et d’autres activités contre les menaces
 - Optimisation des atténuations de la surface d’attaque, optimisation des défenses stratégiques contre l’activité des menaces tout en réduisant l’impact sur la productivité
 
@@ -77,7 +77,7 @@ Si d’autres rôles vous ont été attribués, assurez-vous que vous avez les a
 - Autorisations de lecture des stratégies de conformité des appareils
 - Autorisations de lecture pour l’organisation
 
-![Autorisations requises sur Intune](images/secconmgmt_intune_permissions.png)
+![Autorisations requises sur intune.](images/secconmgmt_intune_permissions.png)
 
 *Autorisations de configuration d’appareil sur Intune*
 

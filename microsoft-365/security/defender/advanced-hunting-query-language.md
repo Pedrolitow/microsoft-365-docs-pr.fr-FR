@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 815b962d56ca75dbd864579d7f26e24a587b74df
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a253d1224f1c7a0e0be0b5478efcc78204cb4a27
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256539"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565747"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -77,7 +77,7 @@ La requête elle-même commence généralement par un nom de table suivi de plus
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>Définir la plage de temps
-Le premier élément canal est un filtre de temps dont l’étendue est limitée aux sept jours précédents. La limitation de la plage de temps permet de s’assurer que les requêtes s’exécutent bien, retournent des résultats gérables et n’ont pas de délai d’délai.
+Le premier élément canal est un filtre de temps dont l’étendue est limitée aux sept jours précédents. La limitation de la plage de temps permet de s’assurer que les requêtes s’exécutent bien, retournent des résultats gérables et n’arrivent pas à terme.
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -117,7 +117,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 Sélectionnez **Exécuter la requête** pour voir les résultats. Utilisez l’icône développer en haut à droite de l’éditeur de requête pour vous concentrer sur votre requête de recherche et les résultats. 
 
-![Image du contrôle Développer dans l’éditeur de requête de recherche avancée](../../media/advanced-hunting-expand.png)
+![Image du contrôle Développer dans l’éditeur de requête de recherche avancée.](../../media/advanced-hunting-expand.png)
 
 >[!TIP]
 >Vous pouvez afficher les résultats de la requête sous la mesure de graphiques et ajuster rapidement les filtres. Pour obtenir des [conseils, voir l’aide sur l’working with query results](advanced-hunting-query-results.md)
@@ -157,7 +157,7 @@ Pour en savoir plus sur ces types de données, consultez les types de données [
 
 ## <a name="get-help-as-you-write-queries"></a>Obtenez de l’aide lorsque vous rédigez des requêtes
 Tirez parti des fonctionnalités suivantes pour rédiger des requêtes plus rapidement :
-- **Suggestion automatique : lorsque** vous écrivez des requêtes, le recherche avancée fournit des suggestions de IntelliSense. 
+- **Suggestion automatique : lorsque** vous écrivez des requêtes, la recherche avancée fournit des suggestions de IntelliSense. 
 - **Arborescence de schéma**: une représentation de schéma qui inclut la liste des tableaux et leurs colonnes est fournie en de côté de votre zone de travail. Si vous souhaitez en savoir plus, veuillez placer le pointeur sur un élément. Double-cliquez sur un élément pour l’insérer dans l’éditeur de requête.
 - **[Référence de schéma :](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** référence dans le portail avec des descriptions de tableau et de colonne, ainsi que des types d’événements pris en charge (valeurs) et `ActionType` des exemples de requêtes
 
@@ -167,13 +167,13 @@ Vous pouvez utiliser l’éditeur de requête pour expérimenter plusieurs requ�
 - Séparez chaque requête par une ligne vide.
 - Placez le curseur sur n’importe quelle partie d’une requête pour sélectionner cette requête avant de l’exécutez. Cette requête n’exécutera que la requête sélectionnée. Pour exécuter une autre requête, déplacez le curseur en conséquence et sélectionnez **Exécuter la requête.**
 
-![Image de l’éditeur de requête avec plusieurs requêtes](../../media/mtp-ah/ah-multi-query.png)
+![Image de l’éditeur de requête avec plusieurs requêtes.](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>Utiliser des exemples de requêtes
 
 La section **Prise en main** fournit quelques requêtes simples utilisant des opérateurs fréquemment utilisés. Essayez d’exécuter ces requêtes et de leur apporter de légères modifications.
 
-![Image d’une fenêtre de repérage avancé](../../media/advanced-hunting-get-started.png)
+![Image de la fenêtre de recherche avancée.](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >Hormis les exemples de requête de base, vous pouvez également accéder à des [requêtes partagées](advanced-hunting-shared-queries.md) pour des scénarios de repérage de menace spécifiques. Explorez les requêtes partagées sur le côté gauche de la page ou le [GitHub de requête.](https://aka.ms/hunting-queries)
@@ -185,7 +185,7 @@ Pour plus d’informations sur le langage de requête Kusto et les opérateurs p
 >[!NOTE]
 >Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

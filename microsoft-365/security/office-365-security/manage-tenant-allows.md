@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer les autoriser dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9a9b682307c9891aab8e73496916205368734b369ecea2f6e43d73f2c2640fbf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 977cd2d099d9c5be7fc0db9ef61f31f28afdc9fe
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56853729"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563765"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Ajouter des autorisations dans la liste verte/rouge du client
 
@@ -40,7 +40,7 @@ Autorisez les fichiers, les URL et les expéditeurs dans la section Soumissions 
 
 1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** \> **Submissions**.
 
-2. Dans la page **Soumissions,** vérifiez que l’onglet Soumis pour analyse est sélectionné, puis cliquez sur Icône Annonce Envoyer à Microsoft pour  ![ ](../../media/m365-cc-sc-create-icon.png) **analyse.**
+2. Dans la page **Soumissions,** vérifiez que l’onglet Soumis pour analyse est sélectionné, puis cliquez sur  ![ l’icône Ad.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse.**
 
 3. Utilisez le **volant Envoyer à Microsoft pour révision** pour marquer l’expéditeur, le fichier ou l’URL comme faux positif. 
 
@@ -53,20 +53,20 @@ Autorisez les fichiers, les URL et les expéditeurs dans la section Soumissions 
 7. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
 > [!div class="mx-imgBorder"]
-> ![Exemple d’envoi de faux positif](../../media/admin-submission-allow-messages.png)
+> ![Exemple d’envoi de faux positif.](../../media/admin-submission-allow-messages.png)
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>Créer des entrées d’expéditeurs usurpées à l’aide Microsoft 365 Defender
 
-**Remarques** :
+**Remarques** :
 
 - Seule la _combinaison_ de l’utilisateur usurpé et de l’infrastructure d’envoi, telle que définie dans la paire de domaines, est spécifiquement autorisée ou bloquée à l’usurpation. 
-- Lorsque vous configurez une entrée d’autoriser ou de bloquer une paire de domaines, les messages provenant de cette paire de domaines n’apparaissent plus dans l’aperçu de l’usurpation d’intelligence.
+- Lorsque vous configurez une entrée d’autoriser ou de bloquer une paire de domaines, les messages de cette paire de domaines n’apparaissent plus dans l’aperçu de l’usurpation d’intelligence.
 - Les entrées des expéditeurs usurpés n’expirent jamais.
 - L’usurpation prend en charge à la fois autoriser et bloquer. L’URL prend uniquement en charge l’autoriser.
 
 1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. Dans la page **Client autoriser/Bloquer la liste,** sélectionnez l’onglet **Usurpation** d’informations, puis cliquez sur Bloquer ![ l’icône ](../../media/m365-cc-sc-create-icon.png) **Ajouter.**
+2. Dans la page **Liste d’attente des** locataires, sélectionnez l’onglet **Usurpation** d’informations, puis cliquez sur Icône ![ Bloquer.](../../media/m365-cc-sc-create-icon.png) **Ajouter**.
 
 3. Dans le **volant Ajouter de nouvelles paires de domaines** qui s’affiche, configurez les paramètres suivants :
    - **Ajoutez de nouvelles paires de domaines avec des caractères génériques**: entrez une paire de domaines par ligne, jusqu’à un maximum de 20. Pour plus d’informations sur la syntaxe des entrées d’expéditeur usurpées, voir Gérer la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)

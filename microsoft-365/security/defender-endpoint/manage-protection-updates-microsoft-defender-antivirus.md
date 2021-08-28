@@ -15,12 +15,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: cb90623629be58122b985088ddce0ec26e24dc53c0772a7f3a6f09bfa2467731
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 412b42fd7ac67326552f23c4d6cc0909daa60aa6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833593"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565843"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 
@@ -73,7 +73,7 @@ Pour garantir le meilleur niveau de protection, Microsoft Update permet des mise
 
 Chaque source présente des scénarios classiques qui dépendent de la façon dont votre réseau est configuré, en plus de la fréquence de publication des mises à jour, comme décrit dans le tableau suivant :
 
-|Emplacement|Exemple de scénario|
+|Lieu|Exemple de scénario|
 |---|---|
 |Windows Service de mise à jour du serveur|Vous utilisez Windows Server Update Service pour gérer les mises à jour de votre réseau.|
 |Microsoft Update|Vous souhaitez que vos points de terminaison se connectent directement à Microsoft Update. Cela peut être utile pour les points de terminaison qui se connectent de manière irrégulière à votre réseau d’entreprise, ou si vous n’utilisez pas Windows Server Update Service pour gérer vos mises à jour.|
@@ -100,9 +100,9 @@ Les procédures de cet article décrivent d’abord comment définir  la command
 
    1. Double-cliquez sur **le paramètre Définir l’ordre** des sources de téléchargement des mises à jour d’informations de sécurité et définissez l’option sur **Activé.**
 
-   2. Entrez l’ordre des sources, séparés par un seul canal, par exemple : `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC` , comme illustré dans la capture d’écran suivante.
+   2. Entrez l’ordre des sources, séparés par un seul canal, par exemple : , comme `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC` illustré dans la capture d’écran suivante.
 
-      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="paramètre de stratégie de groupe répertoriant l’ordre des sources":::
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="paramètre de stratégie de groupe répertoriant l’ordre des sources.":::
 
    3. Sélectionnez **OK**. Cela définira l’ordre des sources de mise à jour de la protection.
 
@@ -162,7 +162,7 @@ Par exemple, supposons que Contoso a embauché Fabrikam pour gérer sa solution 
 > Microsoft ne teste pas les solutions tierces pour la gestion des Antivirus Microsoft Defender.
 
 <a id="unc-share"></a>
-## <a name="create-a-unc-share-for-security-intelligence-updates"></a>Créer un partage UNC pour les mises à jour d’informations de sécurité
+## <a name="create-a-unc-share-for-security-intelligence-updates"></a>Créer un partage UNC pour les mises à jour de l’intelligence de la sécurité
 
 Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharger les mises à jour d’informations de sécurité à partir du site MMPC à l’aide d’une tâche programmée.
 

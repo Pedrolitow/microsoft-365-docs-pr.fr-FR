@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams conversations et canaux prend en charge les stratégies de protection contre la perte de données (DLP).
-ms.openlocfilehash: a2ad3cdb3666550f5205eb3e1b7d1a7f6c6b3a66
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 8dbc7ce992840101c464f64bd981c65e7703f8bd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502962"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567759"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft Teams
 
@@ -29,7 +29,7 @@ Si votre organisation dispose d’une protection contre la perte de données (DL
 - **Exemple 1 : protection des informations sensibles dans les messages**. Supposons qu’une personne tente de partager des informations sensibles dans une conversation Teams ou un canal avec des invités (utilisateurs externes). Si vous avez défini une stratégie DLP pour éviter cela, les messages avec des informations sensibles envoyés à des utilisateurs externes sont supprimés. Cela se produit automatiquement et en quelques secondes, en fonction de la configuration de votre stratégie DLP.
 
     > [!NOTE]
-    > La DLP pour Microsoft Teams bloque le contenu sensible lorsqu’il est partagé avec Microsoft Teams utilisateurs qui ont :<br/>- [accès invité dans](/MicrosoftTeams/guest-access) les équipes et les canaux ; ou<br/>- [accès externe dans](/MicrosoftTeams/manage-external-access) les réunions et les sessions de conversation. <p>La DLP pour les sessions de conversation externe ne fonctionne que si l’expéditeur et le destinataire sont en mode Teams uniquement et utilisent la fédération Microsoft Teams [native.](/microsoftteams/manage-external-access) La prévention contre la Teams ne bloque pas les messages en cas [d’Skype Entreprise](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) sessions de conversation fédérée non natives ou non natives.
+    > La DLP pour Microsoft Teams bloque le contenu sensible lorsqu’il est partagé avec Microsoft Teams utilisateurs qui ont :<br/>- [accès invité dans](/MicrosoftTeams/guest-access) les équipes et les canaux ; ou<br/>- [accès externe](/MicrosoftTeams/manage-external-access) dans les réunions et les sessions de conversation. <p>La DLP pour les sessions de conversation externe ne fonctionne que si l’expéditeur et le destinataire sont en mode Teams uniquement et utilisent la fédération Microsoft Teams [native.](/microsoftteams/manage-external-access) La prévention contre la Teams ne bloque pas les messages en cas [d’Skype Entreprise](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) sessions de conversation fédérée non natives ou non natives.
 
 - **Exemple 2 : protection des informations sensibles dans les documents**. Supposons qu’une personne tente de partager un document avec des invités dans un canal Microsoft Teams ou une conversation instantanée, et que le document contient des informations sensibles. Si vous avez défini une stratégie DLP pour éviter cela, le document ne s’ouvre pas pour ces utilisateurs. Votre stratégie DLP doit inclure SharePoint et OneDrive pour que la protection soit en place. Il s’agit d’un exemple de DLP pour SharePoint qui s’affiche dans Microsoft Teams, et par conséquent nécessite que les utilisateurs soient titulaires d’une licence pour Office 365 DLP (inclus dans Office 365 E3), mais ne nécessite pas que les utilisateurs soient titulaires d’une licence pour Conformité avancée Office 365.)
 
@@ -70,20 +70,20 @@ La protection DLP est appliquée différemment Teams entités.
 
 ## <a name="policy-tips-help-educate-users"></a>Les conseils de stratégie aident à former les utilisateurs
 
-De la même manière que dans [Exchange, Outlook, Outlook sur le web,](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web) [SharePoint Online, les sites OneDrive Entreprise](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)et les clients de bureau [Office,](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)des conseils de stratégie s’affichent lorsqu’une action se déclenche avec une stratégie DLP. Voici un exemple de conseil de stratégie :
+Comme dans [Exchange, Outlook, Outlook sur le web,](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web) [SharePoint Online, les sites OneDrive Entreprise](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)et les clients de bureau [Office,](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)des conseils de stratégie s’affichent lorsqu’une action se déclenche avec une stratégie DLP. Voici un exemple de conseil de stratégie :
 
-![Notification de message bloqué dans Teams](../media/dlp-teams-blockedmessage-notification.png)
+![Notification de message bloquée dans Teams.](../media/dlp-teams-blockedmessage-notification.png)
 
 Ici, l’expéditeur a tenté de partager un numéro de sécurité sociale dans un canal Microsoft Teams réseau. Le **lien Que puis-je faire ?** ouvre une boîte de dialogue qui fournit des options à l’expéditeur pour résoudre le problème. Notez que l’expéditeur peut choisir de remplacer la stratégie ou d’avertir un administrateur de la réviser et de la résoudre.
 
-![Options pour résoudre le message bloqué](../media/dlp-teams-blockedmessage-possibleactions.png)
+![Options pour résoudre le message bloqué.](../media/dlp-teams-blockedmessage-possibleactions.png)
 
 Dans votre organisation, vous pouvez choisir d’autoriser les utilisateurs à remplacer une stratégie DLP. Lorsque vous configurez vos stratégies DLP, vous pouvez utiliser les conseils de stratégie par défaut ou personnaliser les conseils [de](#to-customize-policy-tips) stratégie pour votre organisation.
 
 Pour revenir à notre exemple, où un expéditeur a partagé un numéro de sécurité sociale dans un canal Teams, voici ce que le destinataire a vu :
 
 > [!div class="mx-imgBorder"]
-> ![Message bloqué](../media/dlp-teams-blockedmessage-notification-to-user.png)
+> ![Message bloqué.](../media/dlp-teams-blockedmessage-notification-to-user.png)
 
 ### <a name="to-customize-policy-tips"></a>Pour personnaliser les conseils de stratégie
 
@@ -98,12 +98,12 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 4. Créez une règle ou modifiez une règle existante pour la stratégie.
 
     > [!div class="mx-imgBorder"]
-    > ![Modification d’une règle pour une stratégie](../media/dlp-teams-editrule.png)
+    > ![Modification d’une règle pour une stratégie.](../media/dlp-teams-editrule.png)
 
-5. Sous **l’onglet Notifications de** l’utilisateur, **sélectionnez Personnaliser** le texte du message électronique et/ou personnaliser les options de texte du **conseil de stratégie.**
+5. Sous **l’onglet Notifications de** l’utilisateur, sélectionnez Personnaliser le texte de l’e-mail et/ou personnaliser les options de texte du **conseil de** stratégie. 
 
     > [!div class="mx-imgBorder"]
-    > ![Personnaliser les notifications utilisateur et les conseils de stratégie](../media/dlp-teams-editrule-usernotifications.png)<br/>  
+    > ![Personnaliser les notifications utilisateur et les conseils de stratégie.](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
 6. Spécifiez le texte que vous souhaitez utiliser pour les notifications par courrier électronique et/ou les conseils de stratégie, puis sélectionnez **Enregistrer**.
 
@@ -123,12 +123,12 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 3. Sélectionnez une stratégie et regardez les valeurs sous **Emplacements.** Si vous voyez Teams **messages de conversation et de** canal, vous êtes tous ensemble. Si ce n’est pas le cas, cliquez sur **Modifier.**
 
     > [!div class="mx-imgBorder"]
-    > ![Emplacements pour la stratégie existante](../media/dlp-teams-editexistingpolicy.png)
+    > ![Emplacements pour la stratégie existante.](../media/dlp-teams-editexistingpolicy.png)
 
 4. Dans la **colonne État,** activer la stratégie pour les messages **Teams de conversation et de canal.**
 
     > [!div class="mx-imgBorder"]
-    > ![DLP pour les Teams et les canaux](../media/dlp-teams-addteamschatschannels.png)
+    > ![DLP pour les Teams et les canaux.](../media/dlp-teams-addteamschatschannels.png)
 
 5. Sous **l’onglet** Choisir des emplacements, conservez le paramètre par défaut de tous les comptes, ou sélectionnez **Choisir des emplacements spécifiques.** Vous pouvez spécifier :
 
@@ -140,7 +140,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 
 7. Cliquez sur **Enregistrer**.
 
-Laissez environ une heure pour que vos modifications fonctionnent dans votre centre de données et se synchronisent avec les comptes d’utilisateurs.
+Laissez environ une heure à vos modifications pour qu’elles fonctionnent dans votre centre de données et se synchronisent avec les comptes d’utilisateurs.
 <!-- again, why user accounts? -->
 
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>Définir une nouvelle stratégie DLP pour Microsoft Teams
@@ -156,7 +156,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
     Dans notre exemple, nous avons choisi le modèle de données d’informations d’identification personnelle des États-Unis.
 
     > [!div class="mx-imgBorder"]
-    > ![Modèle de confidentialité pour la stratégie DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
+    > ![Modèle de confidentialité pour la stratégie DLP.](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
 4. Sous **l’onglet Nom de votre stratégie,** spécifiez un nom et une description pour la stratégie, puis choisissez **Suivant**.
 
@@ -166,7 +166,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
     1. listes de distribution et groupes de sécurité à inclure ou à exclure; **Il s’agit d’une fonctionnalité de prévisualisation publique.**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
-    ![Emplacements de stratégie DLP](../media/dlp-teams-selectlocationsnewpolicy.png)
+    ![Emplacements de stratégie DLP.](../media/dlp-teams-selectlocationsnewpolicy.png)
 
     > [!NOTE]
     > Si vous souhaitez vous assurer que les documents qui contiennent des informations sensibles ne sont pas partagés de manière inappropriée dans Teams, assurez-vous que les **sites SharePoint** et les comptes OneDrive sont **allumés,** ainsi que les messages de conversation et de canal **Teams.**
@@ -176,14 +176,14 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 7.  Sous **l’onglet Paramètres de stratégie,** sous Que voulez-vous faire si nous détectons des informations sensibles **?**, examinez les paramètres. C’est ici que vous pouvez choisir de conserver les conseils de stratégie par défaut et les [notifications par courrier électronique,](use-notifications-and-policy-tips.md)ou de les personnaliser.
 
     > [!div class="mx-imgBorder"]
-    > ![Paramètres de stratégie DLP avec conseils et notifications](../media/dlp-teams-policysettings-tipsemails.png)
+    > ![Paramètres de stratégie DLP avec conseils et notifications.](../media/dlp-teams-policysettings-tipsemails.png)
 
     Lorsque vous avez terminé de passer en revue ou de modifier les paramètres, choisissez **Suivant**.
 
-8. Sous l’onglet **Paramètres** de stratégie, sous Voulez-vous activer la stratégie ou d’abord tester les éléments **?**, choisissez d’activer la [stratégie,](dlp-overview-plan-for-dlp.md#policy-deployment)de la tester en premier ou de la désactiver pour l’instant, puis choisissez **Suivant.**
+8. Sous l’onglet **Paramètres** de stratégie, sous Voulez-vous activer la stratégie ou d’abord tester les éléments **?**, choisissez d’activer la [stratégie,](dlp-overview-plan-for-dlp.md#policy-deployment)de la tester en premier ou de la maintenir désactivée pour l’instant, puis choisissez **Suivant.**
 
     > [!div class="mx-imgBorder"]
-    > ![Spécifier s’il faut activer la stratégie](../media/dlp-teams-policysettings-turnonnow.png)
+    > ![Spécifiez s’il faut activer la stratégie.](../media/dlp-teams-policysettings-turnonnow.png)
 
 9. Sous **l’onglet Examiner vos paramètres,** examinez les paramètres de votre nouvelle stratégie. Sélectionnez **Modifier** pour apporter des modifications. Lorsque vous avez terminé, choisissez **Créer.**
 
@@ -200,10 +200,10 @@ Pour vous assurer que SharePoint documents contenant des informations sensibles 
     - **Conditions**
         - Le contenu contient l’un de ces types d’informations sensibles : [Sélectionner tout ce qui s’applique]
         
-        - Le contenu est partagé à partir Microsoft 365 avec des personnes extérieures à mon organisation
+        - Le contenu est partagé à partir de Microsoft 365 avec des personnes extérieures à mon organisation
         
           > [!div class="mx-imgBorder"]
-          > ![Conditions DLP pour détecter le partage externe de contenu sensible](../media/dlp-teams-external-sharing/external-condition.png)
+          > ![Conditions DLP pour détecter le partage externe de contenu sensible.](../media/dlp-teams-external-sharing/external-condition.png)
 
     - **Actions**
         - Restreindre l’accès au contenu pour utilisateurs externe
@@ -213,18 +213,18 @@ Pour vous assurer que SharePoint documents contenant des informations sensibles 
         - Envoyer des rapports d’incident à l’administrateur
         
         > [!div class="mx-imgBorder"]
-        > ![Action DLP pour bloquer le partage externe de contenu sensible](../media/dlp-teams-external-sharing/external-action.png)
+        > ![Action DLP pour bloquer le partage externe de contenu sensible.](../media/dlp-teams-external-sharing/external-action.png)
 
 Stratégie DLP en action lors de la tentative de partage d’un document dans SharePoint contenant des informations sensibles avec un invité externe :
 
 > [!div class="mx-imgBorder"]
-> ![Partage externe bloqué](../media/dlp-teams-external-sharing/external-sharing-blocked.png)
+> ![Partage externe bloqué.](../media/dlp-teams-external-sharing/external-sharing-blocked.png)
 
 
 Stratégie DLP en action lorsque l’invité tente d’ouvrir un document Teams avec un bloc externe :
 
 > [!div class="mx-imgBorder"]
-> ![Accès externe bloqué](../media/dlp-teams-external-sharing/external-access-blocked.png)
+> ![Accès externe bloqué.](../media/dlp-teams-external-sharing/external-access-blocked.png)
 
 ## <a name="related-articles"></a>Articles connexes
 

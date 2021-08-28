@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 367b37493b22074ca4d8006c8d8f8067c2b3d29b
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: 41dda8573b66fa217fb92b0ee179de2cad9bc861
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450115"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567471"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
@@ -77,7 +77,7 @@ La carte type d’informations sensibles présente les principaux types d’info
 
 Pour déterminer le nombre d’éléments dans une catégorie de classification donnée, pointez sur la barre pour la catégorie.
 
-![détail de pointage des principaux types d’informations sensibles](../media/data-classification-sens-info-types-hover.png)
+![détail de pointage des principaux types d’informations sensibles.](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
 > Si la carte affiche le message « Aucune donnée trouvée avec des informations sensibles », cela signifie qu’aucun élément de votre organisation n’a été classé comme étant un type d’informations sensibles ou qu’aucun élément n’a été analysé. Pour commencer à utiliser les étiquettes, voir :
@@ -98,7 +98,7 @@ Les étiquettes de confidentialité doivent être activées pour les fichiers st
 
 La carte d’étiquette de confidentialité affiche le nombre d’éléments (adresse de messagerie ou document) par niveau de confidentialité.
 
-![répartition du contenu par capture d’écran de l’espace réservé pour la classification des étiquettes de confidentialité](../media/data-classification-top-sensitivity-labels-applied.png)
+![répartition du contenu par capture d’écran de l’espace réservé pour la classification des étiquettes de confidentialité.](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
 > Si vous n’avez pas créé ou publié d’étiquettes de confidentialité ou si aucune étiquette de confidentialité n’a été appliquée à votre contenu, cette carte affiche le message « Aucune étiquette de confidentialité détectée ». Pour commencer à utiliser les étiquettes de confidentialité, consultez :
@@ -110,7 +110,7 @@ Les étiquettes de rétention sont utilisées pour gérer la disposition du cont
 
 La carte étiquettes de rétention les plus utilisées vous indique le nombre d’éléments ayant une étiquette de rétention donnée.
 
-![capture d’écran de l’espace réservé pour les étiquettes de rétention les plus utilisées](../media/data-classification-top-retention-labels-applied.png)
+![capture d’écran de l’espace réservé pour les étiquettes de rétention les plus utilisées.](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
 > Si cette carte affiche le message, « Aucune étiquette de rétention détectée », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de rétention ou qu’aucun contenu n’a eu d’étiquette appliquée. Pour commencer à utiliser les étiquettes de confidentialité, consultez :

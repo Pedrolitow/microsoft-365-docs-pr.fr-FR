@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Le nouveau module de codage prédictif dans Advanced eDiscovery utilise l’apprentissage automatique pour analyser les éléments d’un jeu à réviser afin de prédictive quels éléments sont pertinents pour votre cas ou votre enquête.
-ms.openlocfilehash: 5588f65af5d987eb5094a605331d9efd46f8fe999b5983e5a546f19564b09f26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b453713d986572dae8d80efe6dcd60b0616d789
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891898"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567687"
 ---
 # <a name="learn-about-predictive-coding-in-advanced-ediscovery-preview"></a>En savoir plus sur le codage prédictif dans Advanced eDiscovery (aperçu)
 
@@ -29,17 +29,17 @@ Le module de codage prédictif est conçu pour simplifier la gestion d’un mod�
 
 ## <a name="the-predictive-coding-workflow"></a>Flux de travail de codage prédictif
 
-Voici une vue d’ensemble et une description de chaque flux de travail de codage prédictif d’étape. Pour une description plus détaillée des concepts et de la terminologie du processus de codage prédictif, voir la référence [de codage prédictif.](predictive-coding-reference.md)
+Voici une vue d’ensemble et une description de chaque flux de travail de codage prédictif d’étape. Pour une description plus détaillée des concepts et de la terminologie du processus de codage prédictif, voir référence de [codage prédictif.](predictive-coding-reference.md)
 
-![Flux de travail de codage prédictif](..\media\PredictiveCodingWorkflow.png)
+![Flux de travail de codage prédictif.](..\media\PredictiveCodingWorkflow.png)
 
-1. **Créez un modèle de codage prédictif dans le jeu à réviser.** La première étape consiste à créer un modèle de codage prédictif dans le jeu à réviser. Vous devez avoir au moins 2 000 éléments dans le jeu à réviser pour créer un modèle. Après avoir créé un modèle, le système détermine le nombre d’éléments à utiliser comme jeu *de contrôles.* Le jeu de contrôles est utilisé pendant le processus de formation pour évaluer les scores de prédiction que le modèle affecte aux éléments avec l’étiquetage que vous effectuez pendant les séries de formation. La taille du jeu de contrôles est basée sur le nombre d’éléments du jeu à réviser et sur le niveau de confiance et la marge de valeurs d’erreur qui sont définies lors de la création du modèle. Les éléments du jeu de contrôles ne changent jamais et ne sont pas identifiables aux utilisateurs.
+1. **Créez un modèle de codage prédictif dans le jeu à réviser.** La première étape consiste à créer un modèle de codage prédictif dans le jeu à réviser. Vous devez avoir au moins 2 000 éléments dans le jeu à réviser pour créer un modèle. Après avoir créé un modèle, le système détermine le nombre d’éléments à utiliser en tant que *jeu de contrôles.* Le jeu de contrôles est utilisé pendant le processus de formation pour évaluer les scores de prédiction que le modèle affecte aux éléments avec l’étiquetage que vous effectuez pendant les séries de formation. La taille du jeu de contrôles est basée sur le nombre d’éléments du jeu à réviser et sur le niveau de confiance et la marge de valeurs d’erreur qui sont définies lors de la création du modèle. Les éléments du jeu de contrôles ne changent jamais et ne sont pas identifiables aux utilisateurs.
 
    Pour plus d’informations, voir [Créer un modèle de codage prédictif.](predictive-coding-create-model.md)
 
-2. **Terminez la première série de formation en étiqueter les éléments comme pertinents ou non pertinents.** L’étape suivante consiste à former le modèle en commençant la première série de formations. Lorsque vous démarrez une série d’entraînements, le modèle sélectionne de manière aléatoire des éléments supplémentaires dans le jeu à réviser, appelé ensemble *de formations.* Ces éléments (provenant de l’ensemble de contrôles et du jeu de formation) vous sont présentés afin que vous pouvez étiqueter chacun d’eux comme « pertinent » ou « non pertinent ». La pertinence est basée sur le contenu de l’élément et non sur les métadonnées du document. Une fois que vous avez terminé le processus d’étiquetage dans la série de formations, le modèle « apprend » en fonction de la façon dont vous avez étiqueté les éléments de l’ensemble de formation. En fonction de cette formation, le modèle traitera les éléments du jeu à réviser et appliquera un score de prédiction à chacun d’eux.
+2. **Terminez la première série de formation en étiqueter les éléments comme pertinents ou non pertinents.** L’étape suivante consiste à former le modèle en dé commencer la première série de formations. Lorsque vous démarrez une série d’entraînements, le modèle sélectionne de manière aléatoire des éléments supplémentaires dans le jeu à réviser, appelé ensemble *de formations.* Ces éléments (provenant de l’ensemble de contrôles et du jeu de formation) vous sont présentés afin que vous pouvez étiqueter chacun d’eux comme « pertinent » ou « non pertinent ». La pertinence est basée sur le contenu de l’élément et non sur les métadonnées du document. Une fois que vous avez terminé le processus d’étiquetage dans la série de formations, le modèle « apprend » en fonction de la façon dont vous avez étiqueté les éléments de l’ensemble de formation. En fonction de cette formation, le modèle traitera les éléments du jeu à réviser et appliquera un score de prédiction à chacun d’eux.
 
-   Pour plus d’informations, [voir La formation d’un modèle de codage prédictif.](predictive-coding-train-model.md)
+   Pour plus d’informations, [voir Formation d’un modèle de codage prédictif.](predictive-coding-train-model.md)
 
 3. **Appliquer le filtre de score de prédiction aux éléments du jeu à réviser.** Une fois l’étape de formation précédente terminée, l’étape suivante consiste à appliquer le filtre de score de prédiction aux éléments de la révision pour afficher les éléments que le modèle a déterminés comme « les plus pertinents » (vous pouvez également utiliser un filtre de prédiction pour afficher les éléments « non pertinents »). Lorsque vous appliquez le filtre de prédiction, vous spécifiez une plage de scores de prédiction à filtrer. La plage des scores de prédiction est entre **0** et **1,** **0** étant « non pertinent » et **1** est pertinent. En règle générale, les éléments avec des scores de prédiction entre **0** et **0,5** sont considérés comme « non pertinents » et les éléments avec des scores de prédiction entre **0,5** et **1** sont considérés comme pertinents.
 

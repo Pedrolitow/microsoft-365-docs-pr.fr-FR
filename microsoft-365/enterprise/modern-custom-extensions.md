@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les performances des extensions personnalisées dans les pages de sites modernes SharePoint Online.
-ms.openlocfilehash: c0944742ca375856a17f8777e22ee358fb88c070e27b57f26106a4f2d7080934
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 22129cb831cc1346f428aadd7d1308f63b7e3112
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864294"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565921"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des extensions personnalisées dans les pages de sites modernes SharePoint Online
 
@@ -37,24 +37,24 @@ L’Outil Diagnostic de page pour SharePoint est une extension de navigateur pou
 >[!NOTE]
 >L’Outil Diagnostic de page fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
 
-Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostic de page pour SharePoint, vous pouvez voir des informations sur les extensions personnalisées  qui dépassent la mesure de référence dans les **Extensions** ont un impact sur le temps de chargement et/ou le nombre **d’extensions** utilisées dans le volet Tests de diagnostic 
+Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostic de page pour SharePoint, vous pouvez voir des informations sur les extensions personnalisées  qui dépassent la mesure de référence dans les **Extensions** qui ont un impact sur le temps de chargement et/ou le nombre **d’extensions** utilisées trop élevé dans le volet Tests de diagnostic 
 
 Les résultats possibles sont les suivants :
 
 - **Attention requise** (en rouge) : une extension _personnalisée_ qui prend plus de **une** seconde pour charger. Le temps de chargement total tel qu’il apparaît dans les résultats des tests est subdivisé en : chargement de module, chargement différé, initialisation et rendu. En outre, s’il y a trop d’extensions sur une page,  elles peuvent avoir un impact sur le temps de chargement de la page, ce qui sera mis en surbrillrillant si sept extensions ou plus sont utilisées sur la page.
-- Possibilités d’amélioration  **(jaune)** Si cinq extensions ou plus sont utilisées, elles seront mises en évidence dans cette section sous la mesure d’un avertissement jusqu’à ce que sept extensions ou plus soient utilisées, qui seront ensuite mises en évidence comme étant obligatoires.
+- Opportunités d’amélioration  **(jaune)** Si cinq extensions ou plus sont utilisées, elles seront mises en surbrillrillation dans cette section sous la mesure d’un avertissement jusqu’à ce que sept extensions ou plus soient utilisées, qui seront ensuite mises en surbrillation comme attention requise.
 - **Aucune action requise** (en vert) : aucune extension ne prend plus d’une seconde pour charger.
 
 Si une extension a un impact sur le temps de chargement de la page ou s’il y a trop d’extensions sur la page, le résultat apparaît dans la section **Attention** requise des résultats. Cliquez sur le résultat pour voir les détails sur l’extension qui se charge lentement ou si un trop grand nombre d’extensions a été mis en évidence. Les mises à jour ultérieures de l’outil Diagnostic de page pour SharePoint peuvent inclure des mises à jour des règles d’analyse. Vérifiez donc que vous disposez toujours de la dernière version de l’outil.
 
-![Résultats du temps de chargement des pages](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
+![Résultats du temps de chargement de page.](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 Les informations disponibles dans les résultats incluent les éléments suivants :
 
 - **Nom et ID** affiche les informations d’identification qui peuvent vous aider à trouver l'extension sur la page
 - **Total** indique la durée totale de chargement et d’initialisation de l’extension du module. Il s’agit du temps relatif total pris par l’extension pour s’exécuter sur la page, du début à la fin.
-- **La charge du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
-- **Init** indique le temps que prend l’extension pour initialiser les données.
+- **Le chargement du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
+- **Init indique** le temps que prend l’extension pour initialiser les données.
 
   Il s’agit d’un appel asynchrone et le temps d’init est le calcul du temps pour la fonction onInit lorsque la promesse renvoyée est résolue.
 
@@ -105,7 +105,7 @@ Les auteurs de pages peuvent également utiliser le résultat d’audit pour dé
 
 Avant d’apporter des révisions de page pour résoudre les problèmes de performances, notez le temps de chargement des pages dans les résultats de l’analyse. Exécutez à nouveau l’outil après votre révision pour déterminer si le nouveau résultat est inclus dans la norme de référence et vérifier le nouveau temps de chargement des pages pour voir s’il y a eu une amélioration.
 
-![Résultats du temps de chargement des pages](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Résultats du temps de chargement de page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Le temps de chargement des pages peut varier en fonction de nombreux facteurs tels que la charge réseau, l’heure de la journée et d’autres conditions transitoires. Vous devez tester le temps de chargement des pages plusieurs fois avant et après avoir apporté des modifications pour vous aider à faire la moyenne des résultats.

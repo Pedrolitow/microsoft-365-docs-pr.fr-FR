@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
-ms.openlocfilehash: 4f1ec369913054e8fe119cebf3d647b42c133d34
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 7682192c3afd181667845fc2202120c481968356
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595667"
+ms.locfileid: "58567615"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -33,7 +33,7 @@ ms.locfileid: "58595667"
 > [!TIP]
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Les règles de réduction de la surface d’attaque](attack-surface-reduction.md) (règles de réduction de la surface d’attaque) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
+[Les règles de réduction de la surface](attack-surface-reduction.md) d’attaque (règles de réduction de la surface d’attaque) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -81,7 +81,7 @@ Enterprise de niveau supérieur tel qu’Intune ou Microsoft Endpoint Manager es
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>Exclure des fichiers et des dossiers des règles de la asr
 
-Vous pouvez exclure les fichiers et dossiers de l’évaluation par la plupart des règles de réduction de la surface d’attaque. Cela signifie que même si une règle asr détermine que le fichier ou le dossier contient un comportement malveillant, il ne bloquera pas l’exécution du fichier. Cela peut potentiellement permettre à des fichiers non sécurisés de s’exécuter et d’infecter vos appareils.
+Vous pouvez exclure les fichiers et dossiers de l’évaluation par la plupart des règles de réduction de la surface d’attaque. Cela signifie que même si une règle de astérité détermine que le fichier ou le dossier contient un comportement malveillant, il ne bloquera pas l’exécution du fichier. Cela peut potentiellement permettre à des fichiers non sécurisés de s’exécuter et d’infecter vos appareils.
 
 Vous pouvez également exclure les règles asr du déclenchement en fonction des hages de certificat et de fichier en permettant les indicateurs de certificat et de fichier Defender for Endpoint spécifiés. (Voir [Gérer les indicateurs.)](manage-indicators.md)
 
@@ -97,7 +97,7 @@ Les procédures suivantes pour l’activation des règles de la asr. incluent de
 
 ## <a name="intune"></a>Intune
 
-1. Sélectionnez **Profils de configuration** \> **d’appareil.** Choisissez un profil de protection de point de terminaison existant ou créez-en un. Pour en créer un, sélectionnez Créer un **profil** et entrez des informations pour ce profil. Pour **le type de profil,** **sélectionnez Endpoint Protection**. Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
+1. Sélectionnez **Profils de configuration**  >  **d’appareil.** Choisissez un profil de protection de point de terminaison existant ou créez-en un. Pour en créer un, sélectionnez Créer un **profil** et entrez des informations pour ce profil. Pour **le type de profil,** **sélectionnez Endpoint Protection**. Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
 
 2. Dans le **volet de protection des points** de terminaison, **sélectionnez Windows Defender Exploit Guard,** puis sélectionnez Réduction **de la surface d’attaque.** Sélectionnez le paramètre souhaité pour chaque règle de asr.
 
@@ -149,7 +149,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
 
 6. Cliquez sur **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé,** cliquez sur **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l'une des opérations suivantes :
 
-   - Cliquez **sur Sélectionner des balises d’étendue,** sélectionnez la balise d’étendue (facultative), puis cliquez sur **Suivant.**
+   - Cliquez **sur Sélectionner des balises d’étendue,** sélectionnez la balise d’étendue (facultative), puis cliquez sur **Suivant**.
    - Ou cliquez sur **Suivant**
 
 7. À **l’étape 4 Affectations,** dans **Groupes** inclus - pour les groupes que vous souhaitez que cette règle applique - sélectionnez l’une des options suivantes :
@@ -180,7 +180,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
     > [!NOTE]
     > Les règles sont actives et actives en quelques minutes.
 
-> [!NOTE]
+>[!NOTE]
 > Gestion des conflits :
 >
 > Si vous affectez à un appareil deux stratégies DER différentes, la façon dont les conflits sont gérés est des règles qui sont affectées à différents états, il n’y a aucune gestion des conflits en place et le résultat est une erreur.
@@ -202,7 +202,7 @@ Les valeurs à activer (bloquer), désactiver, avertir ou activer en mode audit 
 - 0 : Désactiver (désactiver la règle asr)
 - 1 : Bloquer (activer la règle asr)
 - 2 : Audit (évaluer l’impact de la règle asr sur votre organisation si elle est activée)
-- 6 : Avertir (activer la règle asr mais autoriser l’utilisateur final à contourner le bloc). Le mode Avertissement est désormais disponible pour la plupart des règles de la asr.
+- 6 : Avertir (activer la règle asr mais autoriser l’utilisateur final à contourner le blocage). Le mode Avertissement est désormais disponible pour la plupart des règles de la asr.
 
 Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) pour ajouter des exclusions.
 
@@ -217,9 +217,9 @@ Exemple :
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** Windows Defender \> **Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance**  >  **Endpoint Protection** Windows Defender  >  **Exploit Guard**.
 
-2. Sélectionnez **Home** \> **Create Exploit Guard Policy**.
+2. Sélectionnez **Home**  >  **Create Exploit Guard Policy**.
 
 3. Entrez un nom et une description, sélectionnez **Réduction de la surface** d’attaque, puis sélectionnez **Suivant**.
 
@@ -238,7 +238,7 @@ Exemple :
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> Protection contre les attaques Microsoft Defender réduction de la surface  \> **d’attaque.**
+3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender**  >    >  Protection contre les attaques Microsoft Defender réduction de la surface  >  **d’attaque.**
 
 4. Sélectionnez **Configurer les règles de réduction de la surface d’attaque** et **sélectionnez Activé.** Vous pouvez ensuite définir l’état individuel de chaque règle dans la section Options.
 
@@ -275,7 +275,7 @@ Exemple :
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
     ```
 
-    Pour activer les règles asr en mode d’avertissement, utilisez l';
+    Pour activer les règles de la asr en mode d’avertissement, utilisez l';
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
@@ -322,5 +322,7 @@ Exemple :
 ## <a name="related-articles"></a>Articles connexes
 
 - [Règles de réduction de la surface d’attaque](attack-surface-reduction-rules.md)
+
 - [Évaluer la réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
+
 - [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)

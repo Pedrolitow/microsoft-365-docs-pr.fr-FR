@@ -18,18 +18,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf043741e2d066c8eaa7c4919b194a6ffd6d857d
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 8683631adeb0f7e6090dafae36c075edacd7cc14
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684027"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563949"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour le point de terminaison sur iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -78,7 +78,7 @@ Déployez Defender pour endpoint sur iOS via Portail d’entreprise Intune.
 
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>Intégration automatique du profil VPN (intégration simplifiée)
 
-Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection Web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
+Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour le point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection Web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
 
 1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à   ->  **Profils de configuration des**  ->  **appareils.**
 1. Choisissez **Plateforme en** tant que **iOS/iPadOS** et type de profil en **tant** que **VPN**. Cliquez sur **Créer**.
@@ -122,7 +122,7 @@ Intune vous permet de configurer l’application Defender pour iOS via une strat
    > [!NOTE]
    > Cette stratégie de configuration d’application pour les appareils supervisés s’applique uniquement aux appareils gérés et doit être ciblée pour tous les appareils iOS gérés en tant que meilleure pratique.
 
-1. Connectez-vous au [centre d Microsoft Endpoint Manager’administration](https://go.microsoft.com/fwlink/?linkid=2109431) et allez aux stratégies de configuration **des applications** \> **.** \>  Cliquez sur **Appareils gérés.**
+1. Connectez-vous au [centre d Microsoft Endpoint Manager’administration](https://go.microsoft.com/fwlink/?linkid=2109431) et allez aux stratégies de configuration **des applications**  >  **.**  >   Cliquez sur **Appareils gérés.**
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager Centre d’administration 4.](images/ios-deploy-4.png)
@@ -139,7 +139,7 @@ Intune vous permet de configurer l’application Defender pour iOS via une strat
     - Clé de configuration : issupervised
     - Type de valeur : Chaîne
     - Valeur de configuration : {{issupervised}}
-
+    
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager Centre d’administration 6.](images/ios-deploy-6.png)
 

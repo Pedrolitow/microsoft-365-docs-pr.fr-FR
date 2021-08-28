@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez Windows PowerShell pour obtenir des détails sur les périphériques de mobilité et de sécurité de base dans votre organisation.
-ms.openlocfilehash: 1d34f1b1dbb96227affffd31d794b7d0244298e25e3080ea08dcd3380399db4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 231eeb87d3f72ca4107c0ee6bef5bd60c713bb3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826809"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564464"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtenir des détails sur les appareils gérés par la mobilité et la sécurité de base
 
@@ -36,7 +36,7 @@ Voici une répartition des détails de l’appareil à votre disposition.
 |L’appareil est inscrit à Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)|La valeur du *paramètre isManaged est*   :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit. |
 |L’appareil est conforme aux stratégies de sécurité de votre appareil. Pour plus d’informations, voir [Créer des stratégies de sécurité d’appareil](create-device-security-policies.md)|La valeur du *paramètre isCompliant*   est :<br/>**True**   = l’appareil est conforme aux stratégies.<br/>**False**   = l’appareil n’est pas conforme aux stratégies.|
 
-:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Paramètres PowerShell de mobilité et de sécurité de base":::
+:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Paramètres PowerShell de mobilité et de sécurité de base.":::
 
 > [!NOTE]
 > Les commandes et les scripts de cet article retournent également des détails sur les appareils gérés [par Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
@@ -225,7 +225,7 @@ Les informations sont exportées vers votre bureau Windows en tant que fichier C
 
 Les informations sont exportées vers votre bureau Windows en tant que fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Microsoft Connecter été retiré](/collaborate/connect-redirect)
 

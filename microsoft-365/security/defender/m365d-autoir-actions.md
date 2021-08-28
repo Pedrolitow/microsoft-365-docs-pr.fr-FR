@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 0ecc3f7a91b79651b0a970553576a3c8d93320b25c258dd3f793552a4acf31a8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: daedba79bb2fd9ac452cbef08d74d4d876122478
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888774"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565659"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Afficher et gérer les actions dans le centre de gestion des actions
 
@@ -55,7 +55,7 @@ Il est important d’approuver (ou de refuser) les actions en attente dès que p
 
 3. Dans le centre de l’action, sous l’onglet **En attente,** sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
 
-   ![Approuver ou rejeter une action](../../media/air-actioncenter-itemselected.png)
+   ![Approuver ou rejeter une action.](../../media/air-actioncenter-itemselected.png)
 
 4. Examinez les informations dans le volet volant, puis prenez l’une des étapes suivantes :
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
@@ -95,7 +95,7 @@ Si vous avez déterminé qu’un appareil ou un fichier n’est pas une menace, 
 
 3. Dans le volet sur le côté droit de l’écran, sélectionnez Appliquer à **X plus d’instances** de ce fichier, puis **sélectionnez Annuler**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Consulter les détails et les résultats d'un examen automatisé](m365d-autoir-results.md)
 - [Corriger les faux positifs ou les faux négatifs](m365d-autoir-report-false-positives-negatives.md)

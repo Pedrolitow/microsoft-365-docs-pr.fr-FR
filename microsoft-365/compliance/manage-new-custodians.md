@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des dépositaires dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: daf74c2e51d9a01fad97534a4e49068528e820054b147c09baf8d3b3a8099d45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e542a76e55e0ed9d75a1756026ff9a4f8c1d59ac
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879316"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567711"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gérer les dépositaires dans un Advanced eDiscovery de gestion
 
 La page Des dépositaires sous l’onglet **Sources** dans un cas Advanced eDiscovery contient la liste de tous les dépositaires qui ont été ajoutés au cas. Une fois que vous avez ajouté des dépositaires à un cas, les détails sur chaque dépositaire sont collectés automatiquement à partir de Azure Active Directory et sont consultables dans Advanced eDiscovery.
 
-![Gérer les dépositaires](../media/CustodianDetails.PNG)
+![Gérer les dépositaires.](../media/CustodianDetails.PNG)
 
 ## <a name="view-custodian-details"></a>Afficher les détails du dépositaire
 
@@ -50,7 +50,7 @@ Pour afficher les détails sur un dépositaire, cliquez sur le dépositaire dans
 
   - **Ville** - ville dans laquelle se trouve le dépositaire.
 
-  - **État** : état ou province dans l’adresse du dépositaire.
+  - **État** : département ou province dans l’adresse du dépositaire.
 
   - **Pays/région** : pays/région où se trouve le dépositaire.
 
@@ -83,7 +83,7 @@ Pour mettre à jour les sources de données associées à un dépositaire :
   
 3. Dans la page **Des dépositaires,** sélectionnez un dépositaire dans la liste, puis cliquez sur **Modifier** dans la page de flyout.
 
-    ![Modifier les sources de données](../media/EditCustodianDataSource.PNG)
+    ![Modifier les sources de données.](../media/EditCustodianDataSource.PNG)
   
 4. Cliquez **sur l’onglet** Choisir les sources de données pour modifier les paramètres de la boîte aux lettres du Exchange et du compte OneDrive, cliquez sur Choisir les **sources de données.**
   
@@ -91,7 +91,7 @@ Pour mettre à jour les sources de données associées à un dépositaire :
 
     Pour plus d’informations sur les sources de données associées à un dépositaire, voir [Ajouter des dépositaires à un cas.](add-custodians-to-case.md) 
   
-6. Cliquez **sur Placer les conservations** en conservation pour activer ou désactiver la conservation pour le dépositaire.
+6. Cliquez **sur Placer les conservations** pour activer ou désactiver la conservation pour le dépositaire.
 
 ## <a name="re-index-custodian-data"></a>Ré-indexer les données des dépositaires
 
@@ -111,9 +111,9 @@ Pour déclencher le processus de ré-indexation afin de traiter les éléments p
 
    Une boîte de dialogue s’affiche pour dire que le travail d’index a été créé.
 
-La ré-indexation des données des dépositaires est un processus de longue durée . le travail correspondant créé est nommé **Re-indexation des données du dépositaire**. Vous pouvez suivre l’avancement sous l’onglet **Travaux** ou sous l’onglet **Dépositaires** en surveillant l’état dans la colonne État du travail **d’indexation.**
+La ré-indexation des données des dépositaires est un processus de longue durée . la tâche correspondante créée est nommée **Re-indexation des données du dépositaire**. Vous pouvez suivre l’avancement sous l’onglet **Travaux** ou sous l’onglet **Dépositaires** en surveillant l’état dans la colonne État du travail **d’indexation.**
 
-Pour plus d’informations, voir :
+Pour plus d’informations, voir :
 
 - [Utiliser les erreurs de traitement](processing-data-for-case.md)
 
@@ -121,7 +121,7 @@ Pour plus d’informations, voir :
 
 ## <a name="release-a-custodian-from-a-case"></a>Libérer un dépositaire d’un cas
 
-Un dépositaire est libéré lorsqu’un cas est fermé, qu’il n’est plus tenu de conserver le contenu d’un cas ou lorsque le dépositaire est considéré comme n’étant plus pertinent pour le cas. 
+Un dépositaire est libéré lorsqu’un cas est fermé, qu’il n’est plus tenu de conserver le contenu d’un cas, ou lorsque le dépositaire est considéré comme non pertinent pour le cas. 
 
 Si vous relâchez un dépositaire après la publication d’une notification de conservation, une notification de publication est envoyée au dépositaire. En outre, les conservations placées sur les sources de données associées au dépositaire sont supprimées. Si le dépositaire *a* été placé en conservation silencieuse, où il n’a reçu aucune notification de conservation légale, aucune notification de publication n’est envoyée, mais les conservations placées sur les sources de données associées à ce dépositaire sont supprimées.
 
@@ -148,4 +148,4 @@ Pour libérer un dépositaire :
 
 Vous pouvez utiliser l’éditeur en bloc pour modifier plusieurs dépositaires en même temps. Pour ce faire, sélectionnez simplement deux dépositaires ou plus sous l’onglet **Dépositaires** pour afficher l’éditeur en bloc, puis cliquez sur l’une des tâches.
 
-![Page volante pour modifier les paramètres de plusieurs dépositaires](../media/AeDBulkEditCustodians.png)
+![Page volante pour modifier les paramètres de plusieurs dépositaires.](../media/AeDBulkEditCustodians.png)

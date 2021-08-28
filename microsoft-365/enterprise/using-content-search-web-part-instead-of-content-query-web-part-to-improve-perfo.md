@@ -21,16 +21,16 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Découvrez comment améliorer les performances en remplaçant le partie Web De requête de contenu par le partie Web De recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
-ms.openlocfilehash: 1fbddb662d87f135d90dfb1303ba75097da4650eefdf57dfe2f9ca50fcf186a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 270019b59666c3f52d67648a88c453278149fccd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840782"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566743"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Utilisation du service Web De recherche de contenu au lieu du partie Web De requête de contenu pour améliorer les performances dans SharePoint Online
 
-Cet article explique comment améliorer les performances en remplaçant le volet Web De requête de contenu par le service Web De recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
+Cet article explique comment améliorer les performances en remplaçant le partie Web Part de requête de contenu par le partie Web Part de recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
   
 L’une des nouvelles fonctionnalités les plus puissantes de SharePoint Server 2013 et SharePoint Online est le service Web De recherche de contenu (CSWP). Ce partie Web Part utilise l’index de recherche pour récupérer rapidement les résultats qui sont affichés à l’utilisateur. Utilisez le partie Web Part de recherche de contenu au lieu du partie Web De requête de contenu (CQWP) dans vos pages pour améliorer les performances pour vos utilisateurs.
   
@@ -52,15 +52,15 @@ Cet exemple de site présente les caractéristiques suivantes :
     
 Voici une capture d’écran des résultats du partie Web De requête de contenu.
   
-![Figure illustrant la requête de contenu pour le composant WebPart](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
+![Graphique montrant la requête de contenu pour le partie Web.](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
   
 Dans Internet Explorer,  utilisez l’onglet Réseau des outils de développement F12 pour examiner les détails de l’en-tête de réponse. Dans la capture d’écran suivante, la valeur de **SPRequestDuration** pour ce chargement de page est de 924 millisecondes. 
   
-![Capture d’écran montrant la durée de demande de 924](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
+![Capture d’écran montrant la durée de la demande de 924.](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
  **SPRequestDuration indique** la quantité de travail effectuée sur le serveur pour préparer la page. Le changement de contenu par requête composants WebPart contenu par recherche composants WebPart réduit considérablement le temps qu’il faut pour restituer la page. En revanche, une page avec un élément Web De recherche de contenu équivalent, renvoyant le même nombre de résultats a une valeur **SPRequestDuration** de 106 millisecondes comme illustré dans cette capture d’écran : 
   
-![Capture d’écran montrant la durée de demande de 106](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
+![Capture d’écran montrant la durée de la demande 106.](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
 ## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Ajout d’un partie Web De recherche de contenu dans SharePoint Online
 

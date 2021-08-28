@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’action d’audit de boîte aux lettres MailItemsAccessed pour effectuer des enquêtes légales sur des comptes d'utilisateur compromis.
-ms.openlocfilehash: b168cc25afc1a21044d00eb2dece1cee4da5f9cb6b7c70ecea05874ad6fcefd4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b0fac6e4ac5d6cc4bb20b6853cb67cf301c6295a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830790"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565995"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Utiliser l’audit avancé pour analyser des comptes compromis
 
@@ -194,7 +194,7 @@ Si l’une des propriétés répertoriées dans le tableau de la [section préc�
 
 Par exemple, dans les enregistrements d’audit illustrés dans la capture d’écran suivante, bien que nous accédions simultanément au courrier à partir d’EWSEditor et d’OWA, l’activité d’accès est compilée dans différents enregistrements d’audit en fonction du contexte dans lequel l’accès a eu lieu. Dans ce cas, le contexte est défini par différentes valeurs pour la propriété ClientInfoString.
 
-![Enregistrements d’audit différents basés sur le contexte](../media/MailItemsAccessed4.png)
+![Enregistrements d’audit différents basés sur le contexte.](../media/MailItemsAccessed4.png)
 
 Voici la syntaxe de la commande présentée dans la capture d'écran précédente :
 

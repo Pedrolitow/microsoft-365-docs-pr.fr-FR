@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article décrit comment lancer votre portail à l’aide du programme de lancement du portail
-ms.openlocfilehash: 5dde70565cd9a5ca7812f84d0c62c39c9844ba42
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: 4bdc9a1d60423a7541c2f5c26cc544df59a271e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58417986"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565253"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Lancer votre portail à l’aide du SharePoint de lancement du portail
 
@@ -71,19 +71,19 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
 1. Avant d’utiliser l’outil de planification de lancement du portail, ajoutez tous les utilisateurs qui auront besoin d’accéder à ce [site](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658) via les **autorisations** site en tant que propriétaire du site, membre du site ou visiteur.
 
-2. Ensuite, commencez à planifier le lancement de votre portail en accédant au programme de lancement du portail de deux manières :
+2. Commencez ensuite à planifier le lancement de votre portail en accédant au programme de lancement du portail de deux manières :
 
    **Option 1**: les premières fois que vous modifiez et repupuyez les modifications apportées à votre page d’accueil (ou jusqu’à la version 3.0 de la page d’accueil), vous êtes invité à utiliser l’outil de planification de lancement du portail. Sélectionnez **Planifier le lancement** pour aller de l’avant avec la planification. Vous pouvez également **sélectionner Republish** pour republier vos modifications de page sans planifier le lancement.
 
-   ![Image de l’invite d’utilisation du programme de lancement du portail lors de la republier de la page d’accueil](../media/portal-launch-republish-2.png)
+   ![Image de l’invite d’utilisation du programme de lancement du portail lors de la republier de la page d’accueil.](../media/portal-launch-republish-2.png)
 
    **Option 2**: à tout moment, vous pouvez accéder à la page d’accueil du site de communication SharePoint, sélectionner **Paramètres** puis planifier le lancement du **site** pour planifier le lancement de votre portail.
 
-   ![Image du volet Paramètres avec planification d’un lancement de site mis en évidence](../media/portal-launch-settings-2.png)
+   ![Image du volet Paramètres avec planification d’un lancement de site mis en surbrillon.](../media/portal-launch-settings-2.png)
 
 3. Ensuite, confirmez le score d’état du portail et a amélioré le portail si nécessaire à l’aide de l’outil [Diagnostics](https://aka.ms/perftool) de page pour SharePoint jusqu’à ce que votre portail reçoit un **score** d’état d’santé. Puis sélectionnez **Suivant**.
 
-   ![Image de l’outil de planification de lancement du portail](../media/portal-launch-panel-2.png)
+   ![Image de l’outil de planification de lancement du portail.](../media/portal-launch-panel-2.png)
 
    > [!NOTE]
    > Le nom et la description du site ne peuvent pas être modifiés à partir du programme de lancement du portail et peuvent être modifiés en sélectionnant **Paramètres** puis les informations du **site** dans la page d’accueil.
@@ -102,9 +102,9 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
    > [!NOTE]
    > Lorsque vous utilisez l’option bidirectionnelle, la personne qui planifiera le lancement doit également avoir des autorisations de propriétaire de site sur l’SharePoint portail.
 
-   **Option 2 :** Envoyer les utilisateurs vers une page temporaire auto-genrée (redirection de page temporaire) : utilisez une redirection de page temporaire lorsqu’il n’existe aucun portail SharePoint existant. Les utilisateurs sont dirigés vers un nouveau portail SharePoint moderne et si un utilisateur est dans une vague qui n’a pas été lancée, il est redirigé vers une page temporaire.
+   **Option 2 :** envoyer les utilisateurs vers une page temporaire auto-genrée (redirection de page temporaire) : utilisez une redirection de page temporaire lorsqu’il n’existe aucun portail SharePoint existant. Les utilisateurs sont dirigés vers un nouveau portail SharePoint moderne et si un utilisateur est dans une vague qui n’a pas été lancée, il est redirigé vers une page temporaire.
 
-   **Option 3 : Envoyer** des utilisateurs vers une page externe : fournissez une URL externe à une expérience de page d’accueil temporaire jusqu’à ce que la vague de l’utilisateur soit lancée.
+   **Option 3 : Envoyer** des utilisateurs vers une page externe : fournir une URL externe à une expérience de page d’accueil temporaire jusqu’à ce que la vague de l’utilisateur soit lancée.
 
 6. Décomposez votre audience en vagues. Ajoutez jusqu’à 20 groupes de sécurité par vague. Les détails des vagues peuvent être modifiés jusqu’au lancement de chaque vague. Chaque vague peut durer au moins un jour (24 heures) et au maximum sept jours. Cela permet à SharePoint et à votre environnement technique d’insérabler et de s’adapter au grand volume d’utilisateurs du site. Lors de la planification d’un lancement via l’interface utilisateur, le fuseau horaire est basé sur les paramètres régionaux du site.
 
@@ -117,7 +117,7 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
 
     >[!NOTE]
-    > Jusqu’à 50 utilisateurs ou groupes de sécurité distincts peuvent être ajoutés. Utilisez des groupes de sécurité lorsque vous avez besoin de plus de 50 personnes pour accéder au portail avant le lancement des vagues. 
+    > Vous pouvez ajouter jusqu’à 50 utilisateurs ou groupes de sécurité distincts maximum. Utilisez des groupes de sécurité lorsque vous avez besoin de plus de 50 personnes pour accéder au portail avant le lancement des vagues. 
 
 8.  Confirmez les détails du lancement du portail et sélectionnez **Planifier.** Une fois le lancement programmé, les modifications apportées à la page d’accueil du portail SharePoint doivent recevoir un résultat de diagnostic sain avant que le lancement du portail reprenne.
 
@@ -166,7 +166,7 @@ Les lancements programmés à l’aide de l’outil de planification de lancemen
 
 2. Ensuite, **sélectionnez Supprimer,** puis, lorsque vous voyez le message ci-dessous, **sélectionnez Supprimer** à nouveau.
 
-   ![Image de l’invite qui vous demande si vous souhaitez supprimer ou conserver un lancement programmé](../media/portal-launch-delete-2.png)
+   ![Image de l’invite qui vous demande si vous souhaitez supprimer ou conserver un lancement programmé.](../media/portal-launch-delete-2.png)
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>Utiliser le programme de lancement du portail PowerShell
 
@@ -260,7 +260,7 @@ La redirection de page temporaire doit être utilisée lorsqu’il n’existe Sh
 
 2. Vérifier que tous les utilisateurs sont redirigés vers l’ancien site.
 
-3. Pour redémarrer un lancement du portail qui a été suspendu, exécutez la commande suivante :
+3. Pour redémarrer un lancement de portail qui a été suspendu, exécutez la commande suivante :
 
    ```PowerShell
    Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl <object>

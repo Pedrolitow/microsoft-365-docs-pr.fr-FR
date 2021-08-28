@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Découvrez comment les administrateurs peuvent utiliser Exchange Online PowerShell et un fichier CSV pour importer en bloc des contacts externes dans la liste d’adresses globale.
-ms.openlocfilehash: cb6195f82ed794ea5b6741a6b8bdf3007cdf366411ad7a464688b6ffbf5d9cb0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8f4b9dc36a591081bd19fb2661cf95ef6ea6d91c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895962"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565427"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importation en bloc de contacts externes vers Exchange Online
 
@@ -73,7 +73,7 @@ L’étape suivante consiste à utiliser le fichier CSV que vous avez créé à 
   
 1.  Connecter PowerShell pour votre Exchange Online organisation. Pour obtenir des instructions, consultez [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). N’oubliez pas d’utiliser le nom d’utilisateur et le mot de passe de votre compte d’administrateur général lorsque vous vous connectez à Exchange Online PowerShell. 
     
-2. Après avoir connecté PowerShell à Exchange Online, rendez-vous dans le dossier de bureau où vous avez enregistré le fichier CSV à l’étape 1 . par `C:\Users\Administrator\desktop` exemple.
+2. Après avoir connecté PowerShell à Exchange Online, allez dans le dossier de bureau où vous avez enregistré le fichier CSV à l’étape 1 . par `C:\Users\Administrator\desktop` exemple.
     
 3. Exécutez la commande suivante pour créer les contacts externes :
 
@@ -115,7 +115,7 @@ Après avoir exécuté la commande à l’étape 2, les contacts externes sont c
     ```
 
     > [!NOTE]
-    > Le  _paramètre Manager_ peut être problématique. Si la cellule est vide dans le fichier CSV, vous obtenez une erreur et aucune information sur la propriété n’est ajoutée au contact. Si vous n’avez pas besoin de spécifier un responsable, supprimez simplement  ` -Manager $_.Manager ` la commande PowerShell précédente. 
+    > Le  _paramètre Manager_ peut être problématique. Si la cellule est vide dans le fichier CSV, vous obtenez une erreur et aucune information de propriété n’est ajoutée au contact. Si vous n’avez pas besoin de spécifier un responsable, supprimez simplement  ` -Manager $_.Manager ` de la commande PowerShell précédente. 
   
     Là encore, la mise à jour des contacts peut prendre un certain temps, en fonction du nombre d’importations à l’étape 1. 
     
@@ -123,7 +123,7 @@ Après avoir exécuté la commande à l’étape 2, les contacts externes sont c
     
 1. Dans le CAE, accédez à **Destinataires** \> **Contacts**.
     
-2. Cliquez sur un contact, puis **cliquez** sur ![ Modifier ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) l’icône pour afficher les propriétés du contact. 
+2. Cliquez sur un contact, puis sur **Icône** ![ Modifier.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) pour afficher les propriétés du contact. 
     
 Voilà ! Les utilisateurs peuvent voir les contacts et les informations supplémentaires dans le carnet d’adresses Outlook et Outlook sur le web.
   

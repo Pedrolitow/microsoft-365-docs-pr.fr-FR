@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser l’outil Microsoft 365 de recherche dans le journal d’audit pour résoudre les problèmes de support courants pour les comptes de messagerie.
-ms.openlocfilehash: b24306b65a6f5eab59865f09c996892ef24660a0
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 4f90d618fd72c41a3c1d3d6ff1600f3d6d10bbfc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502722"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564205"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Effectuer une recherche dans le journal d’audit pour examiner les problèmes de support courants
 
@@ -33,7 +33,7 @@ Cet article explique comment utiliser l’outil de recherche du journal d’audi
 - Déterminer qui a installé le forwarding de courrier pour une boîte aux lettres
 - Déterminer si un utilisateur a supprimé des éléments de courrier dans sa boîte aux lettres
 - Déterminer si un utilisateur a créé une règle de boîte de réception
-- Examiner pourquoi un utilisateur extérieur à votre organisation a réussi à se connecter
+- Examiner les raisons pour lesquelles une connexion a réussi par un utilisateur extérieur à votre organisation
 - Rechercher les activités de boîte aux lettres effectuées par les utilisateurs avec des licences non E5
 - Rechercher les activités de boîte aux lettres effectuées par des utilisateurs délégués
 
@@ -53,7 +53,7 @@ Cette section décrit les bases de la création et de l’exécution de recherch
   
     La page **Audit** s’affiche.
   
-    ![Configurer les critères, puis sélectionner La recherche pour exécuter la recherche](../media/AuditLogSearchPage1.png)
+    ![Configurez les critères, puis sélectionnez Rechercher pour exécuter la recherche.](../media/AuditLogSearchPage1.png)
   
 2. Vous pouvez configurer les critères de recherche suivants. Chaque scénario de résolution des problèmes décrit dans cet article recommande des instructions spécifiques pour la configuration de ces champs.
   
@@ -77,14 +77,14 @@ Cette section décrit les bases de la création et de l’exécution de recherch
 
 ## <a name="find-the-ip-address-of-the-computer-used-to-access-a-compromised-account"></a>Rechercher l’adresse IP de l’ordinateur utilisé pour accéder à un compte compromis
 
-L’adresse IP correspondant à une activité effectuée par n’importe quel utilisateur est incluse dans la plupart des enregistrements d’audit. Les informations sur le client utilisé sont également incluses dans l’enregistrement d’audit.
+L’adresse IP correspondant à une activité effectuée par un utilisateur est incluse dans la plupart des enregistrements d’audit. Les informations sur le client utilisé sont également incluses dans l’enregistrement d’audit.
 
 Voici comment configurer une requête de recherche de journal d’audit pour ce scénario :
 
 **Activités :** Si cela est pertinent pour votre cas, sélectionnez une activité spécifique à rechercher. Pour résoudre les problèmes de comptes compromis, songez à sélectionner l’utilisateur qui s’est inscrit à l’activité de boîte aux lettres **sous Exchange activités de boîte aux lettres.**  Cela renvoie les enregistrements d’audit montrant l’adresse IP qui a été utilisé lors de la signature à la boîte aux lettres. Dans le cas contraire, laissez ce champ vide pour renvoyer les enregistrements d’audit pour toutes les activités. 
 
 > [!TIP]
-> Laisser ce champ vide retourne les activités **UserLoggedIn,** qui est une activité Azure Active Directory qui indique qu’une personne s’est connectée à un compte d’utilisateur. Utilisez le filtrage dans les résultats de recherche pour afficher les enregistrements d’audit **UserLoggedIn.**
+> Le fait de laisser ce champ vide retourne les activités **UserLoggedIn,** qui est une activité Azure Active Directory qui indique qu’une personne s’est connectée à un compte d’utilisateur. Utilisez le filtrage dans les résultats de recherche pour afficher les enregistrements d’audit **UserLoggedIn.**
 
 **Date de début** **et de fin : sélectionnez** une plage de dates applicable à votre enquête.
 
@@ -110,11 +110,11 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 Après avoir exécuté la recherche, sélectionnez **Filtrer les résultats** sur la page des résultats de la recherche. Dans la  zone sous l’en-tête de colonne Activité, tapez **Set-Mailbox** afin que seuls les enregistrements d’audit liés à la cmdlet **Set-Mailbox** soient affichés.
 
-![Filtrage des résultats d’une recherche dans le journal d’audit](../media/emailforwarding1.png)
+![Filtrage des résultats d’une recherche dans le journal d’audit.](../media/emailforwarding1.png)
 
 À ce stade, vous devez examiner les détails de chaque enregistrement d’audit pour déterminer si l’activité est liée au forwarding de courrier. Sélectionnez l’enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.** La capture d’écran et les descriptions suivantes mettent en évidence les informations qui indiquent que le forwarding de courrier a été définie sur la boîte aux lettres.
 
-![Informations détaillées de l’enregistrement d’audit](../media/emailforwarding2.png)
+![Informations détaillées de l’enregistrement d’audit.](../media/emailforwarding2.png)
 
 a. Dans le **champ ObjectId,** l’alias de la boîte aux lettres sur qui a été définie le forwarding de courrier électronique s’affiche. Cette boîte aux lettres s’affiche également dans la colonne **Élément** de la page des résultats de la recherche.
 
@@ -156,11 +156,11 @@ Après avoir exécuté la recherche, vous pouvez filtrer les résultats de la re
 
 **Exemple de champ AffectedItems pour l’élément supprimé (supprimé de la demande)**
 
-![Enregistrement d’audit pour l’élément supprimé (supprimé de nouveau)](../media/softdeleteditem.png)
+![Enregistrement d’audit pour l’élément supprimé (supprimé de nouveau).](../media/softdeleteditem.png)
 
 **Exemple de champ AffectedItems pour l’élément supprimé définitivement**
 
-![Enregistrement d’audit pour l’élément de courrier supprimé définitivement](../media/harddeleteditem.png)
+![Enregistrement d’audit pour l’élément de courrier supprimé définitivement.](../media/harddeleteditem.png)
 
 ### <a name="recover-deleted-email-items"></a>Récupérer les éléments de courrier supprimés
 
@@ -190,7 +190,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 
 Après avoir exécuté la recherche, tous les enregistrements d’audit pour cette activité sont affichés dans les résultats de la recherche. Sélectionnez un enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.** Les informations sur les paramètres de règle de boîte de réception sont affichées dans le **champ Paramètres.** La capture d’écran et les descriptions suivantes mettent en évidence les informations sur les règles de boîte de réception.
 
-![Enregistrement d’audit pour la nouvelle règle de boîte de réception](../media/NewInboxRuleRecord.png)
+![Enregistrement d’audit pour la nouvelle règle de boîte de réception.](../media/NewInboxRuleRecord.png)
 
 a. Dans le **champ ObjectId,** le nom complet de la règle de boîte de réception s’affiche. Ce nom inclut l’alias de la boîte aux lettres de l’utilisateur (par exemple, SaraD) et le nom de la règle de boîte de réception (par exemple, « Déplacer des messages de l’administrateur »).
 
@@ -200,9 +200,9 @@ c. Le *paramètre MoveToFolder* spécifie l’action de la règle de boîte de r
 
 d. Le **champ UserId** indique l’utilisateur qui a créé la règle de boîte de réception spécifiée dans le **champ ObjectId.** Cet utilisateur est également affiché dans la colonne **Utilisateur** sur la page des résultats de la recherche.
 
-## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Examiner pourquoi un utilisateur extérieur à votre organisation a réussi à se connecter
+## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Examiner les raisons pour lesquelles une connexion a réussi par un utilisateur extérieur à votre organisation
 
-Lors de l’examen des enregistrements d’audit dans le journal d’audit, vous pouvez voir des enregistrements qui indiquent qu’un utilisateur externe a été authentifié par Azure Active Directory et s’est connecté à votre organisation. Par exemple, un administrateur dans contoso.onmicrosoft.com peut voir un enregistrement d’audit indiquant qu’un utilisateur d’une autre organisation (par exemple, fabrikam.onmicrosoft.com) s’est connecté contoso.onmicrosoft.com. De même, vous pouvez voir des enregistrements d’audit qui indiquent que les utilisateurs avec un compte Microsoft (MSA), comme un compte Outlook.com ou Live.com, se sont connectés correctement à votre organisation. Dans ces situations, l’activité auditée est connectée par **l’utilisateur.** 
+Lors de l’examen des enregistrements d’audit dans le journal d’audit, vous pouvez voir des enregistrements qui indiquent qu’un utilisateur externe a été authentifié par Azure Active Directory et s’est connecté à votre organisation. Par exemple, un administrateur dans contoso.onmicrosoft.com peut voir un enregistrement d’audit indiquant qu’un utilisateur d’une autre organisation (par exemple, fabrikam.onmicrosoft.com) s’est connecté contoso.onmicrosoft.com. De même, vous pouvez voir des enregistrements d’audit qui indiquent que les utilisateurs ayant un compte Microsoft (MSA), tels qu’un compte Outlook.com ou Live.com, se sont connectés avec succès à votre organisation. Dans ces situations, l’activité auditée est connectée **par l’utilisateur.** 
 
 Ce comportement est inhérent au produit. Azure Active Directory (Azure AD), le service d’annuaire,  autorise une authentification directe lorsqu’un utilisateur externe tente d’accéder à un site SharePoint ou à un emplacement OneDrive dans votre organisation. Lorsque l’utilisateur externe tente de le faire, il est invité à entrer ses informations d’identification. Azure AD utilise les informations d’identification pour authentifier l’utilisateur, ce qui signifie que seul Azure AD vérifie que l’utilisateur est bien celui qu’il dit être. L’indication de la connexion réussie dans l’enregistrement d’audit est le résultat de l’authentification de l’utilisateur par Azure AD. La connexion réussie ne signifie pas que l’utilisateur a pu accéder à des ressources ou effectuer d’autres actions dans votre organisation. Il indique uniquement que l’utilisateur a été authentifié par Azure AD. Pour qu’un utilisateur pass-through accède aux ressources SharePoint ou OneDrive, un utilisateur de votre organisation doit explicitement partager une ressource avec l’utilisateur externe en lui envoyant une invitation de partage ou un lien de partage anonyme. 
 
@@ -211,7 +211,7 @@ Ce comportement est inhérent au produit. Azure Active Directory (Azure AD), le 
 
 Voici un exemple et des descriptions des propriétés pertinentes dans un enregistrement d’audit pour un utilisateur connecté **dans** un événement résultant de l’authentification directe. Sélectionnez l’enregistrement d’audit pour afficher la page de présentation **des détails,** puis sélectionnez **Plus d’informations.**
 
-![Exemple d’enregistrement d’audit pour l’authentification directe réussie](../media/PassThroughAuth1.png)
+![Exemple d’enregistrement d’audit pour l’authentification directe réussie.](../media/PassThroughAuth1.png)
 
    a. Ce champ indique que l’utilisateur qui a tenté d’accéder à une ressource dans votre organisation n’a pas été trouvé dans Azure AD de votre organisation.
 
@@ -235,7 +235,7 @@ Voici deux exemples de scénarios  qui entraîneraient la réussite de l’activ
 
 - Recherchez dans le journal d’audit les activités effectuées par l’utilisateur externe identifié dans l’enregistrement d’audit connecté **par l’utilisateur.** Tapez l’UPN de  l’utilisateur externe dans la zone Utilisateurs et utilisez une plage de dates si cela est pertinent pour votre scénario. Par exemple, vous pouvez créer une recherche à l’aide des critères de recherche suivants :
 
-   ![Rechercher toutes les activités effectuées par l’utilisateur externe](../media/PassThroughAuth2.png)
+   ![Recherchez toutes les activités effectuées par l’utilisateur externe.](../media/PassThroughAuth2.png)
 
     Outre les  activités de l’utilisateur connecté, d’autres enregistrements d’audit peuvent être renvoyés, tels que ceux qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé, modifié ou téléchargé un document qui a été partagé avec lui.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0817778d5b006cb0c08cda4a4b63063f06644ef6ffdb68547848d038197c853d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a336a571c33820d289eed9d4d6cd20e56cdfa20
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792737"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563801"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft 365 Defender pour diffuser en continu des événements de recherche avancée sur votre compte Stockage client
 
@@ -50,9 +50,9 @@ ms.locfileid: "53792737"
 4. Dans le **programme volant Ajouter de nouveaux paramètres d’API** de diffusion en continu qui s’affiche, configurez les paramètres suivants :
    1. **Nom**: choisissez un nom pour vos nouveaux paramètres.
    2. Sélectionnez **Les événements Forward à stockage Azure**.
-   3. Dans la **Stockage’ID** de ressource de compte qui s’affiche, tapez **votre ID de ressource Stockage compte.** Pour obtenir votre ID de ressource de compte **Stockage,** ouvrez le portail Azure à l’Stockage cliquez sur les comptes Stockage pour copier le texte sous l’ID de ressource de compte <https://portal.azure.com>  \> \> Stockage.
+   3. Dans la **Stockage’ID** de ressource de compte qui s’affiche, tapez **votre ID Stockage ressource de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** ouvrez le portail Azure à l’Stockage cliquez sur les comptes Stockage pour copier le texte sous l’ID de ressource de compte <https://portal.azure.com>  \> \> **Stockage.**
 
-      ![Image de l’ID1 de ressource du hub d’événements](../defender-endpoint/images/storage-account-resource-id.png)
+      ![Image de l’ID1 de ressource du hub d’événements.](../defender-endpoint/images/storage-account-resource-id.png)
 
    4. De retour sur le volet Ajouter **de nouveaux paramètres d’API** de diffusion en continu, choisissez les **types** d’événements que vous souhaitez diffuser en continu.
 
@@ -62,7 +62,7 @@ ms.locfileid: "53792737"
 
 - Un conteneur d’objets blob est créé pour chaque type d’événement :
 
-  ![Image de l’ID2 de ressource du hub d’événements](../defender-endpoint/images/storage-account-event-schema.png)
+  ![Image de l’ID2 de ressource du hub d’événements.](../defender-endpoint/images/storage-account-event-schema.png)
 
 - Le schéma de chaque ligne d’un objet blob est le JSON suivant :
 
@@ -97,9 +97,9 @@ Pour obtenir les types de données pour nos propriétés d’événements, vous 
 
 - Voici un exemple d’événement Device Info :
 
-  ![Image de l’ID3 de ressource du hub d’événements](../defender-endpoint/images/machine-info-datatype-example.png)
+  ![Image de l’ID3 de ressource du hub d’événements.](../defender-endpoint/images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble du chasse avancée](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defender API de diffusion en continu](streaming-api.md)

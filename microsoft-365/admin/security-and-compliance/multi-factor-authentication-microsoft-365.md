@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: L’authentification multifacteur (MFA) utilise à la fois un mot de passe, qui doit être fort, et une méthode de vérification supplémentaire.
-ms.openlocfilehash: 56a72a7232abc5f0eb7a46beb27984425648a6db
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: d0f88043ecaa4d2dd990f74661e904351db97524
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394623"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566095"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Authentification multifacteur pour Microsoft 365
 
@@ -97,7 +97,7 @@ Vous pouvez également utiliser des stratégies d’accès conditionnel pour des
 
 Vous configurez les stratégies d’accès conditionnel à partir du **volet** Sécurité d’Azure AD dans le portail Azure.
 
-![Image de l’option de menu pour l’accès conditionnel](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Image de l’option de menu pour l’accès conditionnel.](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 Vous pouvez utiliser des stratégies d’accès conditionnel avec :
 
@@ -144,7 +144,7 @@ Vous devez utiliser les paramètres de sécurité par défaut ou les stratégies
 
 Vous activez l’mf pour <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a> les comptes d’utilisateur individuels à partir du volet Utilisateurs actifs du Centre d’administration Microsoft 365.
 
-![Image de l’option d’authentification multifacteur sur la page Utilisateurs actifs](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![Image de l’option d’authentification multifacteur sur la page Utilisateurs actifs.](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 Une fois activé, la prochaine fois que l’utilisateur se sera inscrit, il sera invité à s’inscrire à l’mf et à choisir et tester la méthode de vérification supplémentaire.
 
@@ -172,7 +172,7 @@ Dans le portail Azure, vous pouvez :
 
 Dans la Centre d’administration Microsoft 365, vous pouvez configurer les <a href="https://go.microsoft.com/fwlink/p/?linkid=2169174" target="_blank">paramètres MFA</a>par utilisateur et service.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [Configurer l’ment MFA pour Microsoft 365](set-up-multi-factor-authentication.md)
 

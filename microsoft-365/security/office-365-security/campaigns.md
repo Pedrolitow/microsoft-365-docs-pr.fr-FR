@@ -19,12 +19,12 @@ ms.collection:
 description: Découvrez les affichages campagne dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1b080968675de25374019ea96e68cb6e9a63aa2fe72533759065cd4fbbc44c0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ca5049b234972ef55b951c0886a9d4074613c860
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56854324"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566651"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "56854324"
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
-Les affichages de campagne sont une fonctionnalité de Microsoft Defender pour Office 365 Plan 2 (par exemple, Microsoft 365 E5 ou les organisations avec un module Office 365 Plan 2). Les affichages de campagne dans le Microsoft 365 Defender identifient et classent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
+Les affichages de campagne sont une fonctionnalité de Microsoft Defender pour Office 365 Plan 2 (par exemple, Microsoft 365 E5 ou les organisations ayant un module Office 365 Defender pour plan 2). Les affichages de campagne dans le Microsoft 365 Defender identifient et classent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
 
 - Examiner et répondre efficacement aux attaques par hameçonnage.
 - Mieux comprendre l’étendue de l’attaque.
@@ -45,7 +45,7 @@ Campaign Views vous permet de voir la présentation d’une attaque plus rapidem
 
 Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Les attaques par courrier électronique qui volent des informations d’identification et des données d’entreprise sont un secteur d’activité important. À mesure que les technologies augmentent pour arrêter les attaques, les attaquants modifient leurs méthodes afin de garantir un succès continu.
 
-Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
+Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
 
 - **Source de l’attaque**: adresses IP sources et domaines de messagerie de l’expéditeur.
 - **Propriétés du** message : le contenu, le style et le ton des messages.
@@ -58,9 +58,9 @@ Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs j
 
 Les affichages de campagne sont disponibles dans le portail Microsoft 365 Defender ( ) sur la & campagnes de <https://security.microsoft.com> **collaboration,** ou directement \> à <https://security.microsoft.com/campaigns> l’adresse .
 
-![Vue d’ensemble des campagnes dans Microsoft 365 Defender web](../../media/campaigns-overview.png)
+![Vue d’ensemble des campagnes dans Microsoft 365 Defender portail.](../../media/campaigns-overview.png)
 
-Vous pouvez également obtenir les affichages campagne à partir des points de vue de campagne :
+Vous pouvez également obtenir les affichages de campagne à partir des pages :
 
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Campagnes**
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Tous les e-mails** \> **Onglet Campagne**
@@ -73,7 +73,7 @@ Pour accéder aux affichages campagne, vous devez être membre  des groupes de r
 
 La page vue d’ensemble affiche des informations sur toutes les campagnes.
 
-Sous l’onglet **Campagne** par défaut, la zone **Type** de campagne affiche un graphique à barres qui indique le nombre de destinataires par jour. Par défaut, le graphique affiche les données **de** hameçonnage et **de programmes** malveillants.
+Sous l’onglet **Campagne** par défaut, la zone **Type** de campagne affiche un graphique à barres qui indique le nombre de destinataires par jour. Par défaut, le graphique affiche les données **de** hameçonnage **et de programmes** malveillants.
 
 > [!TIP]
 > Si vous ne voyez pas de données de campagne, essayez de modifier la plage de dates ou les [filtres.](#filters-and-settings)
@@ -88,7 +88,7 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 - **Type**: cette valeur est **hameçonnage** ou **programme malveillant.**
 
-- **Sous-type**: cette valeur contient plus de détails sur la campagne. Par exemple :
+- **Sous-type**: cette valeur contient plus de détails sur la campagne. Par exemple :
   - **Hameçonnage**: si disponible, marque faisant l’objet d’un hameçonnage par cette campagne. Par exemple, `Microsoft` , `365` , ou `Unknown` `Outlook` `DocuSign` .
   - **Programme** malveillant : par exemple, `HTML/PHISH` ou `HTML/<MalwareFamilyName>` .
 
@@ -112,7 +112,7 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 En haut de la page **Campagne,** plusieurs paramètres de filtre et de requête vous permettent de rechercher et d’isoler des campagnes spécifiques.
 
-![Filtres de campagne](../../media/campaign-filters-and-settings.png)
+![Filtres de campagne.](../../media/campaign-filters-and-settings.png)
 
 Le filtrage le plus simple que vous pouvez faire est la date/l’heure de début et la date/heure de fin.
 
@@ -127,7 +127,7 @@ Les propriétés filtrables de campagne disponibles dans le bouton **Type** de c
   - **Expéditeur**
   - **Destinataires**
   - **Domaine de l’expéditeur**
-  - **Subject**
+  - **Sujet**
   - **Nom de fichier des pièces jointes**
   - **Famille de programmes malveillants**
   - **Balises**: utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
@@ -169,7 +169,7 @@ Après avoir créé un filtre de base ou  avancé, vous pouvez l’enregistrer �
 
 Pour exporter le graphique ou la liste des campagnes, cliquez sur **Exporter** et sélectionnez Exporter les données **du graphique** ou Exporter la liste **des campagnes.**
 
-Si vous avez un abonnement Microsoft Defender pour les points de terminaison, vous pouvez cliquer sur **MDE Paramètres** pour connecter ou déconnecter les informations des campagnes avec Microsoft Defender for Endpoint. Pour plus d’informations, voir [Intégrer Microsoft Defender pour Office 365 microsoft Defender pour le point de terminaison.](integrate-office-365-ti-with-mde.md)
+Si vous avez un abonnement Microsoft Defender pour point de terminaison, vous pouvez cliquer sur **MDE Paramètres** pour connecter ou déconnecter les informations des campagnes avec Microsoft Defender pour Endpoint. Pour plus d’informations, voir [Intégrer Microsoft Defender pour Office 365 microsoft Defender pour le point de terminaison.](integrate-office-365-ti-with-mde.md)
 
 ## <a name="campaign-details"></a>Détails de la campagne
 
@@ -191,7 +191,7 @@ En haut de l’affichage Détails de la campagne, les informations de campagne s
 - Filtres de date/heure de début et de fin des données/heure pour le flux de campagne, comme décrit dans la section suivante.
 - Chronologie interactive de l’activité de la campagne : la chronologie affiche l’activité tout au long de la durée de vie de la campagne. Vous pouvez pointer sur les points de données dans le graphique pour voir la quantité de messages détectés.
 
-![Informations sur la campagne](../../media/campaign-details-campaign-info.png)
+![Informations sur la campagne.](../../media/campaign-details-campaign-info.png)
 
 ### <a name="campaign-flow"></a>Flux de la campagne
 
@@ -200,7 +200,7 @@ Au milieu de l’affichage Détails de la campagne, des détails importants sur 
 > [!TIP]
 > Les informations affichées dans le diagramme de flux sont contrôlées par le filtre de plage de dates dans la chronologie, comme décrit dans la section précédente.
 
-![Détails de la campagne ne contenant pas d’URL d’utilisateur](../../media/campaign-details-no-recipient-actions.png)
+![Détails de la campagne qui ne contiennent pas de clics sur l’URL de l’utilisateur.](../../media/campaign-details-no-recipient-actions.png)
 
 Si vous pointez sur une bande horizontale dans le diagramme, vous pouvez voir le nombre de messages associés (par exemple, les messages d’une adresse IP source particulière, les messages provenant de l’adresse IP source en utilisant le domaine d’expéditeur spécifié, etc.).
 
@@ -214,13 +214,13 @@ Le diagramme contient les informations suivantes :
 
   ****
 
-  |Valeur|Verdict du filtre anti-courrier indésirable|Description|
+  |Valeur|Verdict de filtrage du courrier indésirable|Description|
   |---|---|---|
-  |**Autorisé**|`SFV:SKN` <p> `SFV:SKI`|Le message a été marqué comme n’étant pas du courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme n’étant pas un courrier indésirable par une règle de flux de messagerie (également appelée règle de transport). <p> Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent se trouver dans la même organisation.|
+  |**Autorisé**|`SFV:SKN` <p> `SFV:SKI`|Le message a été marqué comme n’étant pas un courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme n’étant pas un courrier indésirable par une règle de flux de messagerie (également appelée règle de transport). <p> Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent se trouver dans la même organisation.|
   |**Bloqué**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable. Par exemple, par une règle de flux de messagerie.|
   |**Détecté**|`SFV:SPM`|Le message a été marqué comme courrier indésirable par le filtrage du courrier indésirable.|
   |**Non détecté**|`SFV:NSPM`|Le message a été marqué comme n’étant pas un courrier indésirable par filtrage du courrier indésirable.|
-  |**Released**|`SFV:SKQ`|Le message a ignoré le filtrage du courrier indésirable car il a été libéré de la quarantaine.|
+  |**Date de publication**|`SFV:SKQ`|Le message a ignoré le filtrage du courrier indésirable car il a été libéré de la quarantaine.|
   |**Autoriser le client**<sup>\*</sup>|`SFV:SKA`|Le message a ignoré le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
   |**Bloc de client**<sup>\*\*</sup>|`SFV:SKA`|Le message a été bloqué par le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
   |**Autoriser l’utilisateur**<sup>\*</sup>|`SFV:SFE`|Le message a ignoré le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des Coffre d’un utilisateur.|

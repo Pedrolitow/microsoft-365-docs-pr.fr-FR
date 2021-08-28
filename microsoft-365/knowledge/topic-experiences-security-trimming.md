@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: None
 description: Découvrez comment la sécurité est utilisée pour afficher les rubriques dans Rubriques Desy.
-ms.openlocfilehash: 3dd6e25fffe0a395bf41814309574c67507d280b29ee3848e676c66cadfb2463
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 25acd5ea96cb07a5974e10ec9763d1f20351d021
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864009"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563973"
 ---
 # <a name="security-trimming-in-microsoft-viva-topics"></a>Le contrôle de sécurité dans Sujets Microsoft Viva
 
@@ -29,11 +29,11 @@ Lorsqu’une rubrique est créée via l’IA ou le traitement manuel, elle peut 
   
 Par exemple, lorsque l’utilisateur 1 affiche la page thématique Neptune, il peut voir cet affichage de la page thématique.
 
-![Rubrique de l’utilisateur 1](../media/knowledge-management/user2-topic-view.png) </br> 
+![Rubrique « Rubrique » pour l’utilisateur 1.](../media/knowledge-management/user2-topic-view.png) </br> 
 
 Toutefois, lorsque l’utilisateur 2 examine la même page de rubriques, son affichage diffère de celui de l’utilisateur 1.  L’utilisateur 2 peut voir le fichier de présentation du produit *DG-2000* dans la section Des fichiers et **des pages** épinglés de la page de rubrique, qui n’apparaît pas pour l’utilisateur 1. 
 
-![Rubrique de Rubrique pour l’utilisateur 2](../media/knowledge-management/user1-topic-view.png) </br> 
+![Rubrique de l’utilisateur 2.](../media/knowledge-management/user1-topic-view.png) </br> 
 
 La différence entre ce que les utilisateurs peuvent voir dans la même rubrique est que les utilisateurs peuvent ne pas avoir les autorisations Office 365 pour afficher un site ou un fichier associé.  Cette rubrique respecte les autorisations définies sur les éléments d’une rubrique et ne peut pas modifier l’accès à ces derniers. Dans notre exemple, l’utilisateur 1 n’est pas en mesure d’afficher le fichier de présentation du produit *DG-2000* dans sa page de rubriques, car l’utilisateur 1 ne Office 365 pas l’autorisation d’afficher le fichier.
 

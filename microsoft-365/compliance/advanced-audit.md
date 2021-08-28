@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 7671bcc99a0f1ab205312fe0aa6930255ae6cfa1
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 5892932bc3fe35cfc6739c266db9f6379d08ee6b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386995"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565505"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -90,7 +90,7 @@ Si vous souhaitez en savoir plus sur les enregistrements d’audit pour les acti
 
 Pour rechercher des enregistrements d’audit MailItemsAccessed, vous pouvez rechercher l’activité **Eléments de la boîte aux lettres consultés** dans la liste déroulante des **Activités de la boîte aux lettres Exchange** dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité de Microsoft 365.
 
-![Recherche d’actions MailItemsAccessed dans l’outil de recherche du journal d’audit](../media/AdvAudit_MailItemsAccessed.png)
+![Recherche d’actions MailItemsAccessed dans l’outil de recherche du journal d’audit.](../media/AdvAudit_MailItemsAccessed.png)
 
 Vous pouvez également exécuter la commande [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) ou [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) dans Exchange Online PowerShell.
 
@@ -108,7 +108,7 @@ Les investigateurs peuvent utiliser l’événement Envoi pour identifier les me
 
 Pour rechercher des enregistrements d’audit d’Envoi, vous pouvez rechercher l’activité **Message envoyé** dans la liste déroulante des **Activités de la boîte aux lettres Exchange** dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité de Microsoft 365.
 
-![Recherche d’actions de Message envoyé dans l’outil de recherche du journal d’audit](../media/AdvAudit_SentMessage.png)
+![Recherche d’actions de Message envoyé dans l’outil de recherche du journal d’audit.](../media/AdvAudit_SentMessage.png)
 
 Vous pouvez également exécuter les commandes [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) ou [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) dans Exchange Online PowerShell.
 
@@ -130,7 +130,7 @@ Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedExchange
 
 Pour rechercher les enregistrements d’audit de SearchQueryInitiatedExchange, vous pouvez rechercher l’activité **Recherche d’émail effectuée** dans la **liste déroulante** des activités de recherche dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
 
-![La recherche d’actions de recherche d’email effectuée  dans l’outil de recherche du journal d’audit](../media/AdvAudit_SearchExchange.png)
+![Recherche d’actions de Recherche d’e-mail effectuée dans l’outil de recherche du journal d’audit.](../media/AdvAudit_SearchExchange.png)
 
 Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 
@@ -153,7 +153,7 @@ Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedSharePoi
 
 Pour rechercher les enregistrements d’audit SearchQueryInitiatedSharePoint, vous pouvez rechercher l’activité **Recherche SharePoint effectuée** dans la **liste déroulante** des activités de recherche dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
 
-![La recherche d’actions de recherche SharePoint effectuée  dans l’outil de recherche du journal d’audit](../media/AdvAudit_SearchSharePoint.png)
+![Recherche d’actions de Recherche SharePoint effectuée dans l’outil de recherche du journal d’audit.](../media/AdvAudit_SearchSharePoint.png)
 
 Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 

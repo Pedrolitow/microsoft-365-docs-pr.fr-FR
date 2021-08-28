@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données sources XIP à partir de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: a0c1758f2ee305becaf8ce0e2bf301b723144f56
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 7782685694ccf26939a1bae44428374c20169736
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533326"
+ms.locfileid: "58565439"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>Configurer un connecteur pour archiver les données sources XIP
 
@@ -29,7 +29,7 @@ Une fois que les données sources XIP sont stockées dans les boîtes aux lettre
 
 La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données sources XIP dans Microsoft 365.
 
-![Flux de travail d’archivage pour les données sources XIP](../media/XIPConnectorWorkflow.png)
+![Flux de travail d’archivage pour les données sources XIP.](../media/XIPConnectorWorkflow.png)
 
 1. Votre organisation travaille avec la source XIP pour configurer et configurer un site XIP.
 

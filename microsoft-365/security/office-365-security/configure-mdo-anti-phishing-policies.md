@@ -15,12 +15,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées qui sont disponibles dans les organisations avec Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c43ffd0b4993339e4cad8282a8ddac4549452407
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 35f8ae19b0741153d6cad695059bd91aa6199aea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532906"
+ms.locfileid: "58566569"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -88,7 +88,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
 1. Dans le portail Microsoft 365 Defender, dans  la section Stratégies, & stratégies de collaboration & règles \>  \>  \> **anti-hameçonnage.** 
 
-2. Dans la page **Anti-hameçonnage,** cliquez sur ![ Créer une icône ](../../media/m365-cc-sc-create-icon.png) **Créer.**
+2. Dans la page **Anti-hameçonnage,** cliquez sur ![ Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Création**.
 
 3. L’assistant d'application de stratégies s’ouvre. Dans la page **Nom de la** stratégie, configurez les paramètres ci-après :
    - **Nom** Entrez un nom unique et descriptif pour la stratégie.
@@ -101,7 +101,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
    - **Groupes** : groupes de distribution, groupes de sécurité à extension messagerie ou groupes Microsoft 365 spécifiés dans votre organisation.
    - **Domaines** : tous les destinataires des [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) spécifiés dans votre organisation.
 
-   Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+   Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
    Pour les utilisateurs ou les groupes, vous pouvez utiliser la plupart des identificateurs (nom, nom d’affichage, alias, adresse e-mail, nom de compte, etc.), mais le nom d'affichage correspondant apparaît dans les résultats. Pour les utilisateurs, entrez un astérisque (\*) seul pour afficher toutes les valeurs disponibles.
 
@@ -132,51 +132,51 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
        Dans le **volant Gérer les expéditeurs pour la protection** contre l’emprunt d’identité qui s’affiche, faites les étapes suivantes :
 
-       - **Expéditeurs internes :** cliquez sur ![ Ajouter une icône interne Sélectionner ](../../media/m365-cc-sc-add-internal-icon.png) **interne**. Dans le **volant Ajouter des expéditeurs internes** qui s’affiche, cliquez dans la zone et sélectionnez un utilisateur interne dans la liste. Vous pouvez filtrer la liste en tapant l’utilisateur, puis en sélectionnant l’utilisateur dans les résultats. Vous pouvez utiliser la plupart des identificateurs (nom, nom d’affichage, alias, adresse e-mail, nom du compte, etc.), mais le nom complet correspondant est affiché dans les résultats.
+       - **Expéditeurs internes :** cliquez sur ![ Ajouter une icône interne.](../../media/m365-cc-sc-add-internal-icon.png) **Sélectionnez interne**. Dans le **volant Ajouter des expéditeurs internes** qui s’affiche, cliquez dans la zone et sélectionnez un utilisateur interne dans la liste. Vous pouvez filtrer la liste en tapant l’utilisateur, puis en sélectionnant l’utilisateur dans les résultats. Vous pouvez utiliser la plupart des identificateurs (nom, nom d’affichage, alias, adresse e-mail, nom du compte, etc.), mais le nom complet correspondant est affiché dans les résultats.
 
-         Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
-
-         Lorsque vous avez terminé, cliquez sur **Ajouter**
-
-       - **Expéditeurs externes :** cliquez ![ sur Ajouter une icône externe Sélectionner ](../../media/m365-cc-sc-create-icon.png) **externe.** Dans le volant Ajouter des expéditeurs externes qui  s’affiche, entrez un  nom d’affichage dans la zone Ajouter un nom et une adresse de messagerie dans la zone Ajouter un message électronique, puis cliquez sur Ajouter **.** 
-
-         Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+         Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
          Lorsque vous avez terminé, cliquez sur **Ajouter**
 
-       De retour dans **le volant** Gérer les expéditeurs pour l’emprunt d’identité, vous pouvez supprimer des entrées en sélectionnant une ou plusieurs entrées dans la liste. Vous pouvez rechercher des entrées à l’aide de la zone De recherche ![ de ](../../media/m365-cc-sc-create-icon.png) **l’icône Rechercher.**
+       - **Expéditeurs externes :** cliquez sur ![ Ajouter une icône externe.](../../media/m365-cc-sc-create-icon.png) **Sélectionnez externe**. Dans le volant Ajouter des expéditeurs externes qui  s’affiche, entrez un  nom d’affichage dans la zone Ajouter un nom et une adresse de messagerie dans la zone Ajouter un message électronique, puis cliquez sur Ajouter **.** 
 
-       Une fois que vous avez sélectionné au moins une entrée, l’icône Supprimer les utilisateurs sélectionnés Icône Supprimer les utilisateurs sélectionnés s’affiche, que vous pouvez utiliser pour supprimer les ![ ](../../media/m365-cc-sc-remove-selected-users-icon.png)  entrées sélectionnées.
+         Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+
+         Lorsque vous avez terminé, cliquez sur **Ajouter**
+
+       De retour dans **le volant** Gérer les expéditeurs pour l’emprunt d’identité, vous pouvez supprimer des entrées en sélectionnant une ou plusieurs entrées dans la liste. Vous pouvez rechercher des entrées à l’aide de ![ l’icône Rechercher.](../../media/m365-cc-sc-create-icon.png) **Zone de** recherche.
+
+       Une fois que vous avez sélectionné au moins une entrée, ![ l’icône Supprimer les utilisateurs sélectionnés.](../../media/m365-cc-sc-remove-selected-users-icon.png) **L’icône Supprimer les utilisateurs** sélectionnés s’affiche, que vous pouvez utiliser pour supprimer les entrées sélectionnées.
 
        Lorsque vous avez terminé, cliquez sur **Terminé**.
 
      - **Activer les domaines à protéger :** la valeur par défaut est off (non sélectionnée). Pour l’activer, cochez la case, puis configurez l’un des paramètres suivants ou les deux :
        - **Incluez les domaines que je possède**: pour activer ce paramètre, cochez la case. Pour afficher les domaines que vous possédez, cliquez **sur Afficher mes domaines.**
-       - **Inclure des domaines personnalisés**: pour activer ce paramètre, cochez la case, puis cliquez sur le lien **Gérer (nn)** des domaines personnalisés qui s’affiche. In the **Manage custom domains for impersonation protection** flyout that appears, click Add ![ domains icon Add ](../../media/m365-cc-sc-create-icon.png) **domains**.
+       - **Inclure des domaines personnalisés**: pour activer ce paramètre, cochez la case, puis cliquez sur le lien **Gérer (nn)** des domaines personnalisés qui s’affiche. Dans le **volant Gérer les domaines personnalisés pour** la protection contre l’emprunt d’identité qui s’affiche, cliquez sur Icône Ajouter des ![ domaines.](../../media/m365-cc-sc-create-icon.png) **Ajouter des domaines**.
 
-         Dans le volant Ajouter des domaines **personnalisés** qui s’affiche, cliquez dans la zone Domaine, entrez une valeur, puis appuyez sur Entrée ou sélectionnez la valeur affichée sous la zone.  Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur ![Supprimer un icône](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+         Dans le volant Ajouter des domaines **personnalisés** qui s’affiche, cliquez dans la zone Domaine, entrez une valeur, puis appuyez sur Entrée ou sélectionnez la valeur affichée sous la zone.  Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur ![ Supprimer l’icône.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
          Lorsque vous avez terminé, cliquez sur **Ajouter des domaines**
 
          > [!NOTE]
          > Vous pouvez avoir un maximum de 50 domaines dans toutes les stratégies anti-hameçonnage.
 
-       De retour sur le volant Gérer les domaines **personnalisés pour** l’emprunt d’identité, vous pouvez supprimer des entrées en sélectionnant une ou plusieurs entrées dans la liste. Vous pouvez rechercher des entrées à l’aide de la zone De recherche ![ de ](../../media/m365-cc-sc-create-icon.png) **l’icône Rechercher.**
+       De retour sur le volant Gérer les domaines **personnalisés** pour l’emprunt d’identité, vous pouvez supprimer des entrées en sélectionnant une ou plusieurs entrées dans la liste. Vous pouvez rechercher des entrées à l’aide de ![ l’icône Rechercher.](../../media/m365-cc-sc-create-icon.png) **Zone de** recherche.
 
-       Une fois que vous avez sélectionné au moins une entrée, l’icône Supprimer des domaines s’affiche, que vous pouvez utiliser pour supprimer ![ ](../../media/m365-cc-sc-delete-icon.png)  les entrées sélectionnées.
+       Une fois que vous avez sélectionné au moins une entrée, ![ l’icône Supprimer les domaines.](../../media/m365-cc-sc-delete-icon.png) **L’icône** Supprimer s’affiche, que vous pouvez utiliser pour supprimer les entrées sélectionnées.
 
    - Ajouter des **expéditeurs** et des domaines de confiance : : spécifiez des exceptions de protection contre l’emprunt d’identité pour la stratégie en cliquant sur Gérer **(nn)** les expéditeurs de confiance et les domaines. Dans le **volant Gérer les domaines personnalisés pour** la protection contre l’emprunt d’identité qui s’affiche, configurez les paramètres suivants :
-      - **Expéditeurs :** vérifiez que **l’onglet Expéditeur** est sélectionné et cliquez sur Icône Ajouter ![ des ](../../media/m365-cc-sc-create-icon.png) expéditeurs. Dans le **volant Ajouter des expéditeurs de** confiance qui s’affiche, entrez une adresse de messagerie dans la zone, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire. Pour supprimer une entrée existante, cliquez sur ![ Supprimer ](../../media/m365-cc-sc-close-icon.png) l’icône de l’entrée.
+      - **Expéditeurs**: vérifiez que **l’onglet Expéditeur** est sélectionné et cliquez sur Icône Ajouter ![ des expéditeurs. ](../../media/m365-cc-sc-create-icon.png) Dans le **volant Ajouter des expéditeurs de** confiance qui s’affiche, entrez une adresse de messagerie dans la zone, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire. Pour supprimer une entrée existante, cliquez sur ![ Supprimer ](../../media/m365-cc-sc-close-icon.png) l’icône de l’entrée.
 
         Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
-      - **Domaines :** sélectionnez **l’onglet Domaine,** puis cliquez ![ sur Icône Ajouter des ](../../media/m365-cc-sc-create-icon.png) domaines.
+      - **Domaines :** sélectionnez **l’onglet** Domaine, puis cliquez ![ sur Icône Ajouter des domaines. ](../../media/m365-cc-sc-create-icon.png)
 
-        Dans **le** volant Ajouter des domaines de  confiance qui s’affiche, cliquez dans la zone Domaine, entrez une valeur, puis appuyez sur Entrée ou sélectionnez la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur ![Supprimer un icône](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+        Dans **le** volant Ajouter des domaines de  confiance qui s’affiche, cliquez dans la zone Domaine, entrez une valeur, puis appuyez sur Entrée ou sélectionnez la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur ![ Supprimer l’icône.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
         Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
-     De retour dans le volant Gérer les domaines **personnalisés** pour  l’emprunt d’identité, vous pouvez supprimer des entrées des onglets Expéditeur et Domaine en sélectionnant une ou plusieurs entrées dans la liste.  Vous pouvez rechercher des entrées à l’aide de la zone De recherche ![ de ](../../media/m365-cc-sc-create-icon.png) **l’icône Rechercher.**
+     De retour dans le volant Gérer les domaines **personnalisés** pour  l’emprunt d’identité, vous pouvez supprimer des entrées des onglets Expéditeur et Domaine en sélectionnant une ou plusieurs entrées dans la liste.  Vous pouvez rechercher des entrées à l’aide de ![ l’icône Rechercher.](../../media/m365-cc-sc-create-icon.png) **Zone de** recherche.
 
      Une fois que vous avez  sélectionné au moins une entrée, l’icône Supprimer s’affiche, que vous pouvez utiliser pour supprimer les entrées sélectionnées.
 
@@ -188,19 +188,19 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
        Nous vous recommandons d’activer ce paramètre en cocher la case. Pour désactiver ce paramètre, cochez la case.
 
-   - **Usurpation :** dans cette section, utilisez la case à cocher Activer la veille contre l’usurpation d’informations pour activer ou désactiver l’usurpation d’informations.  La valeur par défaut est sur (sélectionné) et nous vous recommandons de la laisser. Vous spécifiez l’action à prendre sur les messages provenant d’expéditeurs usurpés bloqués dans le paramètre Si **le message** est détecté comme usurpant une adresse sur la page suivante.
+   - **Usurpation :** dans cette section, utilisez la case à cocher Activer la veille contre l’usurpation d’informations pour activer ou désactiver l’usurpation d’informations.  La valeur par défaut est sur (sélectionnée) et nous vous recommandons de la laisser. Vous spécifiez l’action à prendre sur les messages provenant d’expéditeurs usurpés bloqués dans le paramètre Si **le message** est détecté comme usurpant une adresse sur la page suivante.
 
      Pour désactiver la veille contre l’usurpation d’informations, cochez la case.
 
      > [!NOTE]
-     > Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’Microsoft 365 ; vous activez plutôt le filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’Microsoft 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 6. Dans la page **Action** qui s’affiche, configurez les paramètres suivants :
 
    - **Actions de message**: configurez les actions suivantes dans cette section :
-     - **Si le message est détecté comme** un utilisateur dont l’identité  est usurpée : ce paramètre est disponible uniquement si vous avez sélectionné Activer la protection des utilisateurs sur la page précédente. Sélectionnez l’une des actions suivantes dans la liste suivante pour les messages pour lequel l’expéditeur est l’un des utilisateurs protégés que vous avez spécifiés sur la page précédente :
+     - **Si le message est détecté comme** un utilisateur dont l’identité  est usurpée : ce paramètre est disponible uniquement si vous avez sélectionné Activer la protection des utilisateurs sur la page précédente. Sélectionnez l’une des actions suivantes dans la liste bas pour les messages pour lequel l’expéditeur est l’un des utilisateurs protégés que vous avez spécifiés sur la page précédente :
        - **Ne pas appliquer d’action**
        - **Rediriger le message vers d’autres adresses de messagerie**
        - **Déplacer le message vers les dossiers Courrier indésirable des destinataires**
@@ -216,7 +216,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
        - **Remettre le message et ajouter d’autres adresses à la ligne Bcc**
        - **Supprimer le message avant sa livraison**
 
-     - **Si l’intelligence de** boîte aux lettres détecte un utilisateur dont l’identité est usurpée : ce paramètre est disponible uniquement si vous avez sélectionné Activer l’intelligence pour la **protection** contre l’emprunt d’identité sur la page précédente. Sélectionnez l’une des actions suivantes dans la liste bas pour les messages identifiés comme tentatives d’emprunt d’identité par l’intelligence des boîtes aux lettres :
+     - **Si l’intelligence des boîtes** aux lettres détecte un utilisateur dont l’identité est usurpée : ce paramètre est disponible uniquement si vous avez sélectionné Activer l’intelligence pour la **protection** contre l’emprunt d’identité sur la page précédente. Sélectionnez l’une des actions suivantes dans la liste bas pour les messages identifiés comme tentatives d’emprunt d’identité par l’intelligence des boîtes aux lettres :
        - **Ne pas appliquer d’action**
        - **Rediriger le message vers d’autres adresses de messagerie**
        - **Déplacer le message vers les dossiers Courrier indésirable des destinataires**
@@ -228,7 +228,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
        - **Déplacer le message vers les dossiers Courrier indésirable des destinataires**
        - **Mettre le message en quarantaine**
 
-   - **Conseils de sécurité & indicateurs de sécurité**: configurez les paramètres suivants :
+   - **Conseils de & indicateurs de sécurité**: configurez les paramètres suivants :
      - **Afficher le premier contact conseil de sécurité**: pour plus d’informations, voir First contact [conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).
      - **Afficher l’emprunt d’conseil de sécurité**: ce paramètre est disponible uniquement si vous avez sélectionné Activer la protection des utilisateurs **sur** la page précédente.
      - **Afficher l’emprunt** d conseil de sécurité : ce paramètre est disponible  uniquement si vous avez sélectionné Activer les domaines à protéger sur la page précédente.
@@ -283,8 +283,8 @@ Vous ne pouvez pas désactiver la stratégie anti-hameçonnage par défaut.
 2. Dans la page **Anti-hameçonnage,** sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom.
 
 3. En haut du menu volant des détails de stratégie qui s’affiche, vous verrez l’une des valeurs suivantes :
-   - **Stratégie désactivée** : pour activer la stratégie, cliquez sur ![Icône Activer](../../media/m365-cc-sc-turn-on-off-icon.png) **Activer**.
-   - **Stratégie activée** : pour activer la stratégie, cliquez sur ![Icône Désactiver](../../media/m365-cc-sc-turn-on-off-icon.png) **Désactiver**.
+   - **Stratégie :** pour activer la stratégie, cliquez sur ![ Activer l’icône.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activer** .
+   - **Stratégie :** pour désactiver la stratégie, cliquez sur Désactiver ![ l’icône.](../../media/m365-cc-sc-turn-on-off-icon.png) **Désactiver**.
 
 4. Dans la boîte de dialogue de confirmation qui s’affiche, cliquez sur **Activer** ou **Désactiver**.
 
@@ -312,7 +312,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
    - La stratégie dont la valeur **de** priorité est la plus faible (par exemple, **3**) n’a que l’option Augmenter **la** priorité disponible.
    - Si vous avez au moins trois stratégies, les stratégies  entre les valeurs de priorité les plus élevées et les plus faibles ont les options Augmenter la priorité et Diminuer **la** priorité disponibles.
 
-   Cliquez sur l’![Icône Augmenter la priorité](../../media/m365-cc-sc-increase-icon.png) **Augmenter la priorité** ou ![Icône Diminuer la priorité](../../media/m365-cc-sc-decrease-icon.png) **Diminuer la priorité** pour modifier la valeur **Priorité**.
+   Cliquez sur ![ Augmenter la priorité.](../../media/m365-cc-sc-increase-icon.png) **Icône Augmenter la priorité** ou Diminuer ![ la priorité ](../../media/m365-cc-sc-decrease-icon.png) **Diminuez la priorité** pour modifier la **valeur** Priorité.
 
 4. Lorsque vous avez terminé, cliquez sur **Fermer** dans le menu volant des détails de la stratégie.
 
@@ -324,7 +324,7 @@ Lorsque vous utilisez le portail Microsoft 365 Defender pour supprimer une strat
 
 2. Dans la page **Anti-hameçonnage,** sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom de la stratégie.
 
-3. En haut du menu volant Détails de la stratégie qui s’affiche, cliquez sur l’![Icône Autres actions](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** \> ![Icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png) **Supprimer la stratégie**.
+3. En haut du volant des détails de stratégie qui s’affiche, cliquez sur ![ Icône Actions plus.](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** \> ![Supprimer une stratégie de suppression ](../../media/m365-cc-sc-delete-icon.png) **d’icône de stratégie.**
 
 4. Dans la boîte de dialogue de confirmation qui s'affiche, cliquez sur **Oui**.
 
@@ -449,7 +449,7 @@ Cet exemple renvoie toutes les valeurs de propriété pour la règle anti-hameç
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-AntiPhishRule](/powershell/module/exchange/Get-AntiPhishrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-AntiPhishRule](/powershell/module/exchange/Get-AntiPhishrule).
 
 ### <a name="use-powershell-to-modify-anti-phish-policies"></a>Utiliser PowerShell pour modifier des stratégies anti-hameçonnage
 

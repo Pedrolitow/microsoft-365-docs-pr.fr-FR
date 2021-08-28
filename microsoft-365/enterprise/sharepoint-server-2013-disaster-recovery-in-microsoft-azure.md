@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: Cet article explique comment utiliser Azure pour créer un environnement de récupération d’urgence pour votre batterie de serveurs SharePoint local.
-ms.openlocfilehash: bb048b9b0cf297ba5e5cd61e09f9f3164464a41a37fecfe2d27d0ef7be82f37b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87bbbf143fe831537ddbc08e6d43b4013fe1e379
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878234"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567639"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure
 
@@ -36,7 +36,7 @@ ms.locfileid: "53878234"
   
 Utilisez cet article avec le modèle de solution suivant : **Récupération d'urgence SharePoint dans Microsoft Azure**.
   
-[![Procédure de récupération d’urgence SharePoint vers Azure](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![SharePoint de récupération d’urgence à Azure.](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
@@ -82,7 +82,7 @@ Le schéma suivant illustre ces trois éléments.
   
 **Schéma : Éléments d'une solution de secours semi-automatique dans Azure**
 
-![Éléments d’une solution de secours semi-automatique SharePoint dans Azure](../media/AZarch-AZWarmStndby.png)
+![Éléments d’une SharePoint solution de veille temporaire dans Azure.](../media/AZarch-AZWarmStndby.png)
   
 La copie des journaux de transaction SQL Server avec la réplication du système de fichiers DFS permet de copier les sauvegardes de base de données et les journaux de transaction vers la batterie de serveurs de récupération dans Azure : 
   
@@ -156,7 +156,7 @@ Le schéma suivant illustre une solution de récupération d'urgence à partir d
   
 **Schéma : Topologie et principaux éléments d'une batterie de production et d'une batterie de récupération de secours semi-automatique.**
 
-![Topologie d’une batterie de serveurs SharePoint et d’une batterie de serveurs de récupération de secours semi-automatique](../media/AZarch-AZWarmStndby.png)
+![Topologie d’une batterie SharePoint batterie de serveurs et d’une batterie de serveurs de récupération de reprise de veille.](../media/AZarch-AZWarmStndby.png)
   
 Dans ce schéma :
   
@@ -186,7 +186,7 @@ Le schéma suivant illustre un environnement de basculement Azure dans lequel la
   
 **Schéma : Batterie de récupération à reprise progressive avec machines virtuelles exécutées**
 
-![Éléments d’une solution de reprise progressive SharePoint dans Azure.](../media/AZarch-AZColdStndby.png)
+![Éléments d’une SharePoint solution de veille à froid dans Azure.](../media/AZarch-AZColdStndby.png)
   
 Après le basculement vers un environnement à reprise progressive, toutes les machines virtuelles sont démarrées et la méthode pour obtenir une haute disponibilité des serveurs de base de données doit être configurée, par exemple les groupes de disponibilité AlwaysOn SQL Server.
   
@@ -273,7 +273,7 @@ Cette étape comprend le déploiement de Windows Server Active Directory et de D
   
 **Schéma : Configuration du domaine Active Directory hybride**
 
-![Deux machines virtuelles déployées sur le réseau virtuel Azure et le sous-réseau de la batterie de serveurs SharePoint sont des contrôleurs de domaine réplicas et des serveurs DNS](../media/AZarch-HyADdomainConfig.png)
+![Deux machines virtuelles déployées sur le réseau virtuel Azure et le sous-réseau de la batterie de serveurs SharePoint sont des contrôleurs de domaine réplicas et des serveurs DNS.](../media/AZarch-HyADdomainConfig.png)
   
 Dans l’illustration, deux machines virtuelles sont déployées vers le même sous-réseau. Ces machines virtuelles hébergent chacune deux rôles : Active Directory et DNS.
   
@@ -452,7 +452,7 @@ Dans la plupart des cas où vous avez plusieurs serveurs web frontaux, il est lo
   
 En règle générale, lorsque vous configurez l'équilibrage de la charge réseau, une adresse IP unique est attribuée à votre cluster. Vous créez ensuite un enregistrement d'hôte DNS dans le fournisseur DNS de votre réseau qui pointe vers le cluster. (Pour ce projet, nous mettons un serveur DNS dans Azure pour la résilience en cas de panne d'un centre de données local.) Par exemple, vous pouvez créer un enregistrement DNS, dans le gestionnaire DNS dans Active Directory, appelé  `https://sharepoint.contoso.com` et qui pointe vers l'adresse IP de votre cluster dont la charge est équilibrée.
   
-Pour l’accès externe à votre batterie de serveurs SharePoint, vous pouvez créer un enregistrement d’hôte sur un serveur DNS externe avec la même URL que celle que les clients utilisent sur votre intranet (par exemple, ) qui pointe vers une adresse IP externe dans votre pare-feu. `https://sharepoint.contoso.com` (L’une des meilleures pratiques, à l’aide de cet exemple, consiste à configurer le DNS fractionnement afin que le serveur DNS interne fait autorité et route les demandes directement vers le cluster de la batterie de serveurs SharePoint, plutôt que de router les demandes DNS vers votre serveur `contoso.com` DNS externe.) Vous pouvez ensuite ma cartographier l’adresse IP externe sur l’adresse IP interne de votre cluster local afin que les clients trouvent les ressources qu’ils recherchent.
+Pour l’accès externe à votre batterie de serveurs SharePoint, vous pouvez créer un enregistrement d’hôte sur un serveur DNS externe avec la même URL que celle que les clients utilisent sur votre intranet (par exemple, ) qui pointe vers une adresse IP externe dans votre pare-feu. `https://sharepoint.contoso.com` (L’une des meilleures pratiques, à l’aide de cet exemple, consiste à configurer un DNS fractionnement afin que le serveur DNS interne fait autorité et approvisionnement des demandes directement vers le cluster de la batterie de serveurs SharePoint, plutôt que de router les demandes DNS vers votre serveur `contoso.com` DNS externe.) Vous pouvez ensuite ma cartographier l’adresse IP externe sur l’adresse IP interne de votre cluster local afin que les clients trouvent les ressources qu’ils recherchent.
   
 À ce stade, vous pouvez rencontrer deux scénarios de récupération d’urgence :
   

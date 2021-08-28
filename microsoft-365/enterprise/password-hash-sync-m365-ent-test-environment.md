@@ -19,22 +19,22 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer la connexion et la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: a71c7046967d796d59d3ba9ae5ff42d1e0d6bcf9
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: dbf4b2ca694ee9dc81a5b02ebd0f7cf3820d0f1d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355939"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565889"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
+*Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
 
 De nombreuses organisations utilisent Azure AD Connect et la synchronisation de hachage de mot de passe pour synchroniser l’ensemble de comptes dans leur forêt Active Directory Domain Services (AD DS) en local avec l’ensemble des comptes dans le client Azure AD de leur abonnement Microsoft 365. 
 
 Cet article explique comment ajouter la synchronisation de hachage de mot de passe à votre environnement de test Microsoft 365, ce qui entraîne cette configuration :
   
-![Environnement de test de l’entreprise simulée avec la synchronisation de hachage de mot de passe](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![Environnement de test de l’entreprise simulée avec synchronisation de hachage de mot de passe.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
 La configuration de cet environnement de test comprend trois phases :
 - [Phase 1 : création de l’environnement de test de l’entreprise simulée pour Microsoft 365](#phase-1-create-the-microsoft-365-simulated-enterprise-test-environment)
@@ -48,7 +48,7 @@ La configuration de cet environnement de test comprend trois phases :
 
 Suivez les instructions de la [configuration de base d’entreprise simulée pour Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). La configuration qui en résulte ressemble à ceci :
   
-![Configuration de base d’une entreprise simulée](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
+![Configuration de base d’entreprise simulée.](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
 Cette configuration se compose des éléments suivants : 
   
@@ -65,7 +65,7 @@ Ensuite, ajoutez **testlab.< >** votre domaine de domaine public à votre abonne
 
 La configuration qui en résulte ressemble à ceci :
   
-![Enregistrement de votre nom de domaine testlab](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![L’inscription de votre nom de domaine testlab.](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
 Cette configuration se compose des éléments suivants : 
 
@@ -102,7 +102,7 @@ Tout d’abord, installez et configurez Azure AD Connecter sur APP1.
     
 6. Dans la page **Paramètres** Express, **sélectionnez Utiliser les paramètres express.**
     
-7. Dans la page Connecter azure **AD,** entrez le nom de votre compte d’administrateur général dans nom d’utilisateur, entrez son mot de passe dans  **Mot** de passe, puis sélectionnez **Suivant**.
+7. Dans la page Connecter Azure **AD,** entrez le nom de votre compte d’administrateur général dans Nom d’utilisateur, entrez son mot de passe dans  **Mot** de passe, puis sélectionnez **Suivant**.
     
 8. Dans la page **Connecter AD DS,** entrez **TESTLAB \\ User1** dans Nom d’utilisateur, entrez son mot de passe dans **Mot** de passe, puis sélectionnez **Suivant**. 
     
@@ -120,7 +120,7 @@ Tout d’abord, installez et configurez Azure AD Connecter sur APP1.
     
 14. Dans **les licences de produit,** sélectionnez votre emplacement (si nécessaire), désactivez la licence **Office 365 E5,** puis activez la **licence Microsoft 365 E5** licence. 
 
-15. Sélectionnez **Enregistrer** en bas de la page, puis **Fermez.**
+15. Sélectionnez **Enregistrer** en bas de la page, puis **fermez.**
     
 Ensuite, testez la possibilité de vous inscrire à votre abonnement à **l’user1@testlab.< >** nom d’utilisateur de votre nom de domaine du compte User1 :
 
@@ -132,7 +132,7 @@ Veuillez noter que même si l’utilisateur User1 dispose des autorisations d’
 
 La configuration qui en résulte ressemble à ceci :
 
-![Environnement de test de l’entreprise simulée avec la synchronisation de hachage de mot de passe](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![Environnement de test de l’entreprise simulée avec synchronisation de hachage de mot de passe.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
 Cette configuration se compose des éléments suivants :  
   

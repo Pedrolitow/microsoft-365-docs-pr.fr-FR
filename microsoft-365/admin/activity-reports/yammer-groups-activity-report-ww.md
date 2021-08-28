@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenez le Yammer d’activité des groupes de Yammer sur le nombre de groupes créés et utilisés dans votre organisation, ainsi que sur leur activité.
-ms.openlocfilehash: ee547e6da465cd36d62f62043c9364350352bc5a6b19da631a9e56071ef9d679
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Obtenez le rapport Yammer d’activité des groupes de Yammer qui sont créés et utilisés dans votre organisation, ainsi que leur activité.
+ms.openlocfilehash: 18ed4519a0f7859d8084f2144a58f4a726db530a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816136"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564745"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365 Rapports dans le Centre d’administration - Rapport Yammer’activité des groupes
 
@@ -42,13 +42,13 @@ Le tableau de bord Microsoft 365 **rapports de** gestion des données vous prés
   
 ## <a name="interpret-the-yammer-groups-activity-report"></a>Interpréter le rapport d'activité des groupes Yammer
 
-Vous pouvez afficher les activités des groupes dans le rapport Yammer en choisissant l’onglet **Activité groupes.**<br/>![Microsoft 365- Rapport d’activité Yammer groupes microsoft.](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
+Vous pouvez afficher les activités des groupes dans le rapport Yammer en choisissant l’onglet **Activité des** groupes.<br/>![Microsoft 365- Rapport d’activité Yammer groupes microsoft.](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité des groupes : choisir des colonnes](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
+Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité des groupes : choisissez des colonnes.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom du groupe  <br/> |Nom du groupe. <br/> |

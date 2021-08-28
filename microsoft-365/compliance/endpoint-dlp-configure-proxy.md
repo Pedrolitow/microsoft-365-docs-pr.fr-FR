@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Apprenez comment configurer les paramètres de proxy et de connexion Internet du dispositif pour le DLP Endpoint.
-ms.openlocfilehash: a05afb4ac8d5c66e1bbcbba0e8cd8e13b3d8a6d46c73899ea40e5205898036e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0de08bd27f2222589343fe66715198645fbeb29
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886030"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567459"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurer le proxy du dispositif et les paramètres de connexion à Internet pour le DLP du point de terminaison
 
@@ -55,7 +55,7 @@ Le proxy statique est configurable via une stratégie de groupe. La stratégie d
 
 2. Définir sur **Activer** puis sélectionnez **Désactiver l'utilisation d'un proxy authentifié**:
 
-   ![Image des paramètres de stratégie de groupe 1](../media/atp-gpo-proxy1.png)
+   ![Image des paramètres de stratégie de groupe 1.](../media/atp-gpo-proxy1.png)
 
 3. Ouvrir **Modèles administratifs > Composants Windows > Collections de données et Builds d’aperçu > Configurer l’utilisation du proxy authentifié pour l’expérience utilisateur connecté et le service de télémétrie**:
 

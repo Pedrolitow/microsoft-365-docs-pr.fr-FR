@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 98496ce57c57cbce10178cc2be99079d8733a0ca
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 79acef4454428daba68d42b0161d060b7e28ee56
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372507"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564392"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -90,7 +90,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
 
 #### <a name="run-the-compatibility-checker"></a>Exécuter le contrôle de compatibilité
 
-1. Démarrez une fenêtre avec PowerShell.exe élevée.
+1. Démarrez une fenêtre PowerShell.exe avec élévation de PowerShell.exe.
 
 2. Exécutez la commande suivante :
 
@@ -136,18 +136,18 @@ Le déploiement centralisé prend en charge les affectations à des utilisateurs
 
 Examinons l'exemple suivant où un complément est affecté à Nicoletta, à Ariane et au groupe Service commercial. Le Service des ventes Région ouest étant un groupe imbriqué, aucun complément n'est affecté à Noël et Jérôme.
 
-![Diagramme du service des ventes](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![Diagramme du service des ventes.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Déterminer si un groupe contient des groupes imbriqués
 
 La manière la plus simple de détecter si un groupe contient des groupes imbriqués consiste à afficher la carte de visite du groupe dans Outlook. Si vous entrez le nom du groupe dans le champ **À** d’un e-mail, puis sélectionnez le nom du groupe lorsqu’il est résolu, il vous indique s’il contient des utilisateurs ou des groupes imbrmbrés. Dans l'exemple ci-dessous, l'onglet **Membres** de la carte de visite Outlook du groupe Test n'affiche aucun utilisateur et seulement deux sous-groupes.
 
-![Onglet Membres de la carte Outlook contact](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Onglet Membres de la Outlook de contact.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il est membre d'un groupe. Dans l'exemple ci-dessous, vous pouvez voir sous l'onglet **Appartenance** de la carte de visite Outlook que le Sous-groupe 1 est membre du groupe Test.
 
-![Onglet Appartenance de la carte Outlook contact](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Onglet Appartenance de la carte Outlook contact.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
 Vous pouvez également utiliser l'API Graph Azure Active Directory pour exécuter des requêtes afin d'obtenir la liste des groupes au sein d'un groupe. Pour plus d'informations, voir [Opérations sur les groupes | Référence de l'API Graph](/previous-versions/azure/ad/graph/api/groups-operations).
 
@@ -160,7 +160,7 @@ Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-
 |Bureau | Journaux Charles/Fiddler  <br/>  ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
 |Clients riches (Windows, Mac) | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte)** |
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Déployer des add-ins dans le Centre d’administration](../manage/manage-deployment-of-add-ins.md) (article)\
 [Gérer les add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md) (article)\

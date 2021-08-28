@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Permettez à vos utilisateurs d’être productifs grâce à Teams, Exchange, SharePoint et les autres services Microsoft 365.
-ms.openlocfilehash: 7a26d89e04d9739434208c4b3c4a536be5c5c5075a00dabdc06b8c4abd318838
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 034f0c3d4127ed75db8ba9a7cbe628a2502d192c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53777756"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566477"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Étape 5 : déployer les applications et les services de productivité des travailleurs à distance
 
@@ -31,12 +31,12 @@ Pour être productifs, les employés doivent communiquer et collaborer les uns a
 | Fonction TI | Composants de Microsoft 365 | Description |
 |:-------|:-----|:-------|
 | Services de messagerie | Exchange Online | Messagerie Exchange et gestion des calendriers, des contacts et des tâches avec le client Outlook. |
-| Conversation d’entreprise, protocole voix sur IP (VOIP) et collaboration en équipe | Microsoft Teams | Maintenez le contact entre vos employés, alors qu’ils doivent travailler séparément grâce à un centre commun de communication pour les réunions, les conversations et le stockage de fichiers pour l’organisation et les départements, mais aussi pour les petites équipes et les particuliers. |
+| Conversation d’entreprise, protocole voix sur IP (VOIP) et collaboration en équipe | Microsoft Teams | Maintenez le contact entre vos employés, alors qu’ils doivent travailler séparément grâce à un centre commun de communication pour les réunions, les conversations et le stockage de fichiers pour l’organisation et les départements, mais aussi pour les petites équipes et les particuliers. |
 | Sites intranet, collaboration sur des documents | SharePoint et OneDrive | Stocker et collaborer sur des fichiers dans un navigateur web ou au sein de Teams. |
 | Applications Office de bureau et appareil mobile | Microsoft 365 Apps | Crez de contenu ou collaborez sur du contenu existant avec les versions de Word, PowerPoint, Excel et Outlook, installées sur votre ordinateur local, et qui reçoivent des mises à jour de fonctionnalité et de sécurité régulières. |
 ||||
 
-![Utiliser les applications Teams, Outlook, SharePoint, OneDrive et Microsoft 365 pour rester productif](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
+![Utilisez Teams, Outlook, SharePoint, OneDrive et Microsoft 365 Apps pour rester productif.](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>Rester en contact grâce à Microsoft Teams
 
@@ -105,6 +105,6 @@ Pour plus d’informations, voir le [Guide de déploiement des Applications Micr
 
 ## <a name="next-step"></a>Étape suivante
 
-[![Étape 6 : former vos utilisateurs et surveiller leur réussite](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
+[![Étape 6 : former vos utilisateurs et surveiller leur réussite.](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
 
 Passez à l’[Étape 6](empower-people-to-work-remotely-train-monitor-usage.md) pour former vos utilisateurs et surveiller leur réussite.

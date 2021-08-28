@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f709d0929b12d6f19121c6ca6c653f6484bab6c2ba2d3df52fda446b675deca5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8bdc8451d3f3885cb9704a954cae8f439cad1abf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806174"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565809"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Afficher et organiser la file d’attente d’incidents Microsoft Defender pour point de terminaison
 
@@ -48,12 +48,12 @@ Dans la barre de navigation supérieure, vous pouvez :
 - Naviguer entre les pages
 - Appliquer des filtres
 
-![Image de la file d’attente des incidents](images/atp-incident-queue.png)
+![Image de la file d’attente des incidents.](images/atp-incident-queue.png)
 
 ## <a name="sort-and-filter-the-incidents-queue"></a>Trier et filtrer la file d’attente des incidents
 Vous pouvez appliquer les filtres suivants pour limiter la liste des incidents et obtenir une vue plus centrée.
 
-### <a name="severity"></a>Severity
+### <a name="severity"></a>Gravité
 
 Gravité de l’incident | Description
 :---|:---
@@ -78,7 +78,7 @@ Utilisez ce filtre pour afficher les incidents qui contiennent des étiquettes d
 
 Pour comprendre l’étendue de l’incident en un coup d’œil, les noms des incidents sont générés automatiquement en fonction des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories.
 
-Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
+Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
 
 > [!NOTE]
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents conserveront leur nom.

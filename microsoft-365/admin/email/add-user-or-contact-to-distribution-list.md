@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Découvrez comment ajouter un utilisateur ou Microsoft 365 contact tel qu’un employé, un partenaire ou un fournisseur à un groupe de distribution de courrier électronique.
-ms.openlocfilehash: a5cce43d37eb67b40f284b732aa8cb997c14bc30e9c7f359247170195073e9cb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: af7581a7541835185a7cc8df12dcc58b779243ca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832789"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566327"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Ajouter un utilisateur ou un contact à un groupe de distribution
 
@@ -43,7 +43,7 @@ En tant qu’administrateur d’une organisation, vous devrez peut-être ajouter
 
 4. Dans la page **Afficher les** membres, sélectionnez Ajouter des **membres,** puis sélectionnez l’utilisateur ou le contact que vous souhaitez ajouter au groupe de distribution. 
     
-    ![Ajouter des membres au groupe de distribution](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![Ajoutez des membres au groupe de distribution.](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Sélectionnez **Enregistrer,** puis **Fermer.**
 
@@ -51,11 +51,11 @@ En tant qu’administrateur d’une organisation, vous devrez peut-être ajouter
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Apprenez à [envoyer des courriers électroniques en tant que groupe de distribution dans Microsoft 365](../manage/send-email-as-distribution-list.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Gérer l’encombrement pour votre organisation](configure-clutter.md) (article)\
 [Créer une boîte aux lettres ](create-a-shared-mailbox.md)partagée (article)

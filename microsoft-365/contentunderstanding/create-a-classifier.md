@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment créer un classifieur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7694337e28a1d18ddf1eed3bddc0d4d8c9e2ebaee4f5c575cb057b1d4ef58af7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e9c8a08fe3583f4692edcc4649854a26950eb717
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850403"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565265"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Créer un classifieur dans Microsoft SharePoint Syntex
 
@@ -31,7 +31,7 @@ ms.locfileid: "53850403"
 
 Un classifieur est un type de modèle permettant d’automatiser l’identification et la classification d’un type de document. Par exemple, vous devez parfois identifier tous les documents *Renouvellement de contrat* ajoutés à votre bibliothèque de documents, comme indiqué dans l’illustration suivante.
 
-![Document Renouvellement de contrat](../media/content-understanding/contract-renewal.png)
+![Document de Renouvellement de contrat](../media/content-understanding/contract-renewal.png)
 
 La création d’un classifieur vous permet de créer un [type de contenu SharePoint](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) qui sera associé au modèle.
 
@@ -143,7 +143,7 @@ Si vous avez reçu une correspondance sur vos fichiers échantillons étiquetés
 1. Dans la page d’accueil du modèle, sélectionnez l’onglet **Test**. Le modèle est alors exécuté sur vos fichiers échantillons non étiquetés.
 2. Dans la liste **Fichiers de test**, vos exemples de fichiers indiquent s’ils sont positifs ou négatifs d’après les prévisions du modèle. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
-    ![Test des fichiers non étiquetés](../media/content-understanding/test-on-files.png) 
+    ![Test des fichiers non étiquetés.](../media/content-understanding/test-on-files.png) 
 
 ## <a name="see-also"></a>Voir aussi
 [Créer un extracteur](create-an-extractor.md)

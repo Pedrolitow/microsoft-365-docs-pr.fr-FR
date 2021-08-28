@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez la réinitialisation de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 999709558a468d53bc809662dbcc270fa8a9945b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: aa332b2778aefa84948a9bc57d20d28f117a4df3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356503"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565877"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 
@@ -38,7 +38,7 @@ La configuration de SSPR implique trois phases :
 - [Étape 2 : Activation de la réécriture du mot de passe](#phase-2-enable-password-writeback)
 - [Étape 3 : Configuration et test de la réinitialisation de mot de passe](#phase-3-configure-and-test-password-reset)
     
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
@@ -49,7 +49,7 @@ Tout d’abord, suivez les instructions de la synchronisation [de hachage de mot
 
 La configuration qui en résulte ressemble à ceci :
   
-![Environnement de test de l’entreprise simulée avec la synchronisation de hachage de mot de passe](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![Environnement de test de l’entreprise simulée avec synchronisation de hachage de mot de passe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Cette configuration se compose des éléments suivants : 
   
@@ -70,13 +70,13 @@ Dans cette phase, configurez la réinitialisation du mot de passe dans le client
 Tout d’abord, activez la réinitialisation de mot de passe pour les comptes d’un groupe Azure AD spécifique.
 
 1. Dans une instance privée de votre navigateur, ouvrez [https://portal.azure.com](https://portal.azure.com), puis connectez-vous avec les informations d’identification de votre compte Administrateur général.
-2. Dans le portail Azure, **sélectionnez Azure Active Directory**  >    >  **Groupe Nouveau groupe.**
+2. Dans le portail Azure, sélectionnez **Azure Active Directory**  >  **Groupe Nouveau**  >  **groupe.**
 3. Définissez le **Type de groupe** sur **Sécurité**, le **Nom du groupe** sur **PWReset** et le **Type d’appartenance** sur **Affecté**.
 4. Sélectionnez **Membres,** recherchez et **sélectionnez Utilisateur 3,** **sélectionnez Sélectionner,** puis **créez.**
 5. Fermez le volet **Groupes**.
 6. Dans le volet Azure Active Directory, sélectionnez Réinitialiser le mot de **passe** dans le volet de navigation gauche.
 7. Sur la page **Propriétés–Réinitialiser le mot de passe**, sous l’option **Réinitialisation du mot de passe en libre-service activée**, choisissez **Sélectionné**.
-8. Sélectionnez **Sélectionner** un groupe, sélectionnez le groupe **PWReset,** puis **sélectionnez**  >  **Enregistrer.**
+8. Sélectionnez **Sélectionner un** groupe, sélectionnez le groupe **PWReset,** puis **sélectionnez**  >  **Enregistrer.**
 9. Fermez l’instance privée du navigateur.
 
 Ensuite, testez la réinitialisation du mot de passe pour le compte Utilisateur 3.

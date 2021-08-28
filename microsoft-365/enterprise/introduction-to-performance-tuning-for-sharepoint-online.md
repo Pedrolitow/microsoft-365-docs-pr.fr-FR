@@ -17,12 +17,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: Cet article explique les aspects spécifiques à prendre en compte lors de la conception de pages pour de meilleures performances dans SharePoint Online.
-ms.openlocfilehash: 248600582fe7fea550fc401bdbd25c68ba5c97e2c76321aaf835cbdb7e6c5d50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d2653e1ee07309d2f31a24df2715bf7810beb65b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53849061"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567879"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introduction à l’optimisation des performances pour SharePoint Online
 
@@ -44,7 +44,7 @@ Les mesures générales suivantes pour SharePoint Online fournissent des donnée
 
 Les données nous indiquent :
   
-- La plupart des pages s’exécutent bien sur SharePoint Online.
+- La plupart des pages s’exécutent SharePoint Online.
     
 - Les pages non personnalisées se chargent très rapidement.
     
@@ -92,17 +92,17 @@ Comme vous vous y attendiez, vous avez beaucoup plus de contrôle sur la façon 
   
 SharePoint Serveur local
   
-![Capture d’écran du serveur local](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
+![Capture d’écran du serveur local.](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
 SharePoint Online
   
-![Capture d’écran du serveur en ligne](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
+![Capture d’écran du serveur en ligne.](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
 Avec SharePoint Online, certaines demandes de page peuvent en réalité finir par appeler plusieurs serveurs. Vous pouvez obtenir une matrice de demandes entre les serveurs pour une demande individuelle. Ces interactions sont coûteuses du point de vue du chargement des pages et ralentissent les choses.
   
 Voici quelques exemples de ces interactions serveur à serveur :
   
-- Serveurs web SQL serveur
+- Serveurs web SQL serveurs
     
 - Serveurs web et d’applications
     
@@ -138,11 +138,11 @@ Il existe quelques facteurs à prendre en compte pour les navigateurs web du poi
   
 La visite de pages complexes aura une incidence sur les performances. La plupart des navigateurs n’ont qu’un petit cache (environ 90 Mo), alors que la page web moyenne est généralement d’environ 1,6 Mo. L’utilisation n’est pas longue.
   
-La bande passante peut également être un problème. Par exemple, si un utilisateur regardera des vidéos dans une autre session, cela aura une incidence sur les performances de votre SharePoint page. Bien que vous ne pouvez pas empêcher les utilisateurs de diffuser des contenus multimédias en continu, vous pouvez contrôler la façon dont une page se charge pour les utilisateurs.
+La bande passante peut également être un problème. Par exemple, si un utilisateur regardera des vidéos dans une autre session, cela aura une incidence sur les performances de votre SharePoint page. Bien que vous ne pouvez pas empêcher les utilisateurs de diffuser des contenus multimédias en continu, vous pouvez contrôler le chargement d’une page pour les utilisateurs.
   
 Consultez les articles suivants pour découvrir différentes techniques de personnalisation de page SharePoint Online et d’autres meilleures pratiques pour obtenir des performances optimales.
   
-- [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
+- [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
     
 - [Utiliser l’outil Diagnostic de page pour SharePoint Online](page-diagnostics-for-spo.md)
     

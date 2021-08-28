@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Découvrez les paramètres disponibles dans Microsoft 365 entreprise pour sécuriser Windows 10 appareils.
-ms.openlocfilehash: 1d3f3f3516431e08b00f83bf2b8beb4bebecb0f5
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 29fb5c18f016bd2832c25ff66db258671b95bd6f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360604"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566393"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modifier ou créer des paramètres de protection des appareils pour Windows 10 PC
 
@@ -50,7 +50,7 @@ Regardez une vidéo sur la sécurisation des Windows 10 avec les Microsoft 365 B
     
     Vous pouvez toujours utiliser le lien **Réinitialiser les paramètres par défaut** pour rétablir la valeur par défaut. 
     
-    ![Add policy pane with Windows 10 Device configuration selected](../../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
+    ![Ajoutez le volet stratégie avec Windows 10 configuration de l’appareil sélectionnée.](../../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. Maintenant, définissez **Qui recevra ces paramètres ?** Si vous ne voulez pas utiliser le groupe de sécurité par défaut **Tous les utilisateurs**, sélectionnez **Modifier**, puis recherchez le groupe qui obtiendra ces paramètres \> **Sélectionner**.
 7. Enfin, sélectionnez **Terminé** pour enregistrer la stratégie et l'affecter à des appareils. 

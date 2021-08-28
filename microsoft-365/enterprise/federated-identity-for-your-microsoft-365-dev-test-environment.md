@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: dea2c5fe85ffb30f6195e4f76765422fb22f20b4
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 1cca1b0b5f7b345d7d9ed5f5cd23f9b742542529
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356755"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567411"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identité fédérée pour votre environnement de test Microsoft 365
 
@@ -35,7 +35,7 @@ Microsoft 365 prend en charge l’identité fédérée. Cela signifie qu’au l
   
 Cet article explique comment configurer l’authentification fédérée pour Microsoft 365 environnement de test, ce qui entraîne les conséquences suivantes :
 
-![L’authentification fédérée pour l’environnement de test Microsoft 365](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
+![L’authentification fédérée pour Microsoft 365 environnement de test.](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
 Cette configuration se compose des éléments suivants : 
   
@@ -57,12 +57,12 @@ La configuration de cet environnement de test comprend cinq phases :
 
 Suivez les instructions de synchronisation [de hachage de](password-hash-sync-m365-ent-test-environment.md)mot de passe pour Microsoft 365 . La configuration qui en résulte ressemble à ceci :
   
-![Environnement de test de l’entreprise simulée avec la synchronisation de hachage de mot de passe](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase1.png)
+![Environnement de test de l’entreprise simulée avec synchronisation de hachage de mot de passe.](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase1.png)
   
 Cette configuration se compose des éléments suivants : 
   
 - Un Microsoft 365 E5 d’essai ou payant.
-- Un intranet d’organisation simplifié connecté à Internet, constitué des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connecter s’exécute sur APP1 pour synchroniser régulièrement le domaine des services de domaine Active Directory (AD DS) TESTLAB avec le client Azure AD de vos abonnements Microsoft 365 client.
+- Un intranet d’organisation simplifié connecté à Internet, constitué des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connecter s’exécute sur APP1 pour synchroniser régulièrement le domaine AD DS (Active Directory Domain Services) TESTLAB avec le client Azure AD de vos abonnements Microsoft 365.
 
 ## <a name="phase-2-create-the-ad-fs-server"></a>Phase 2 : Création du serveur AD FS
 
@@ -106,7 +106,7 @@ Restart-Computer
 
 La configuration qui en résulte ressemble à ceci :
   
-![Le serveur AD FS ajouté à la synchronisation d’annuaire pour l’environnement de test Microsoft 365](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase2.png)
+![Le serveur AD FS ajouté à la DirSync pour Microsoft 365 environnement de test.](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase2.png)
   
 ## <a name="phase-3-create-the-web-proxy-server"></a>Phase 3 : création du serveur proxy web (PROXY1)
 
@@ -173,7 +173,7 @@ Ces commandes créent un enregistrement DNS A interne afin que les machines virt
   
 La configuration qui en résulte ressemble à ceci :
   
-![Le serveur proxy d’application web ajouté à la synchronisation d’annuaire pour l’environnement de test Microsoft 365](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
+![Serveur proxy d’application web ajouté à la DirSync pour Microsoft 365 environnement de test.](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
 ## <a name="phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1"></a>Phase 4 : création d’un certificat auto-signé et configuration d’ADFS1 et de PROXY1
 
@@ -237,7 +237,7 @@ Attendez la fin de l’installation.
   
 Ensuite, configurez le service AD FS en suivant ces étapes :
   
-1. Sélectionnez **Démarrer,** puis l’icône **Gestionnaire de** serveur.
+1. Sélectionnez **Démarrer,** puis **l’icône Gestionnaire de** serveur.
     
 2. Dans le volet d’arborescence du Gestionnaire de serveur, sélectionnez **AD FS**.
     
@@ -257,19 +257,19 @@ Ensuite, configurez le service AD FS en suivant ces étapes :
     
 7. Dans la page **Spécifier un compte de service,** **sélectionnez Sélectionner** **le nom du compte.**
     
-8. Dans **Sélectionner un compte d’utilisateur ou** de service, entrez **ADFS-Service,** sélectionnez **Vérifier** les noms, puis **sélectionnez OK**.
+8. Dans **Sélectionner un compte d’utilisateur ou de service,** entrez **ADFS-Service,** sélectionnez **Vérifier** les noms, puis **sélectionnez OK**.
     
-9. Dans **mot de passe** du compte, entrez le mot de passe du ADFS-Service, puis sélectionnez **Suivant**.
+9. Dans **mot de passe** du compte, entrez le mot de passe du ADFS-Service, puis sélectionnez **Suivant.**
     
 10. Dans la page **Spécifier la base de données de configuration,** sélectionnez **Suivant.**
     
 11. Dans la page **Options de** révision, sélectionnez **Suivant.**
     
-12. Dans la page **Vérifications préalables,** **sélectionnez Configurer.**
+12. Dans la page **Vérifications préalables,** sélectionnez **Configurer.**
 
 13. Dans la page **Résultats,** sélectionnez **Fermer.**
     
-14. Sélectionnez **Démarrer,** sélectionnez l’icône d’alimentation, **sélectionnez Redémarrer,** puis **continuez.**
+14. Sélectionnez **Démarrer,** sélectionnez l’icône d’alimentation, **redémarrez,** puis **continuez.**
     
 À partir du [portail Azure](https://portal.azure.com), connectez-vous à PROXY1 avec les informations d’identification du compte CORP\\User1.
   
@@ -297,7 +297,7 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
     
 11. Dans la page **Fin de l’exécution,** sélectionnez **Terminer.**
     
-12. Dans la page **Magasin de certificats,** sélectionnez **Suivant.**
+12. Dans la page **Magasin de certificats,** sélectionnez **Suivant**.
     
 13. Lorsque vous y invitez, **sélectionnez OK**.
     
@@ -339,7 +339,7 @@ Suivez ces étapes pour configurer le service de proxy d’application web de ma
     
 6. Dans la page Certificat **de proxy AD FS,** sélectionnez la flèche vers le bas, sélectionnez le certificat avec votre nom de service de fédération, puis sélectionnez **Suivant**.
     
-7. Dans la page **Confirmation,** **sélectionnez Configurer.**
+7. Dans la page **Confirmation,** sélectionnez **Configurer.**
     
 8. Dans la page **Résultats,** sélectionnez **Fermer.**
     
@@ -359,7 +359,7 @@ Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Microso
     
 5. Dans la page De la page De la **connectez-vous** de l’utilisateur, sélectionnez Fédération avec **AD FS,** puis sélectionnez **Suivant**.
     
-6. Dans la page Batterie de serveurs **AD FS,** sélectionnez Utiliser une batterie  **AD FS** existante, entrez **ADFS1** dans la zone Nom du serveur, puis sélectionnez **Suivant**.
+6. Dans la page Batterie **de serveurs AD FS,** sélectionnez Utiliser une batterie  **AD FS** existante, entrez **ADFS1** dans la zone Nom du serveur, puis sélectionnez **Suivant**.
     
 7. Lorsque vous y invitez des informations d’identification de serveur, entrez les informations d’identification du compte CORP \\ User1, puis sélectionnez **OK**.
     

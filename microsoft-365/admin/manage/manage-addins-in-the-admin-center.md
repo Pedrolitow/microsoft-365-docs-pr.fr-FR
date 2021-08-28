@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: a6eb234f9911b13616483456ef67866b99b4dee39fca90c2b16b272de2a85d62
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4dd2cbc842d10770b544df014685173a8888df67
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825374"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566269"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
@@ -53,7 +53,7 @@ Envisagez de supprimer un add-in si personne ne l’utilise plus. Par exemple, l
 
 Vous pouvez également supprimer un module qui a été déployé.
 
-1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
+1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & les autres.**
 
     > [!NOTE]
     > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
@@ -68,7 +68,7 @@ Vous pouvez également supprimer un module qui a été déployé.
 
 Après le déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux add-ins.
 
-1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
+1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & les autres.**
 
     > [!NOTE]
     > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
@@ -105,7 +105,7 @@ En tant qu’organisation, vous pouvez empêcher le téléchargement de nouveaux
         
       - Windows
       - Mac
-      - Office
+      - Bureau
         
         
     - Acquisitions à partir **d’AppSource**
@@ -136,13 +136,13 @@ Pour empêcher un utilisateur de se signer avec un compte Microsoft, vous pouvez
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les add-ins
 
-Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
+Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office.](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
   
 Si le complément prend en charge les commandes de complément, celles-ci apparaissent sur le ruban Office. Dans l'exemple suivant, la commande **Search Citation** (Rechercher une citation) apparaît pour le complément **Citations**. 
 
-![Office ruban avec citations de recherche](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![Office ruban avec citations de recherche.](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
-Si le add-in déployé ne prend pas en charge les commandes de ce dernier ou si vous souhaitez afficher tous les modules, vous pouvez les afficher via Mes **modules.** 
+Si le add-in déployé ne prend pas en charge les commandes de add-in ou si vous souhaitez afficher tous les modules, vous pouvez les afficher via Mes **modules.** 
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>Dans Word 2016, Excel 2016 ou PowerPoint 2016
 
@@ -152,17 +152,17 @@ Si le add-in déployé ne prend pas en charge les commandes de ce dernier ou si 
     
 3. Double-cliquez sur le module que vous avez déployé précédemment (dans cet exemple, **Citations).**
 
-    ![Onglet Géré par l’administrateur de la page Office de recherche](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+    ![Onglet Géré par l’administrateur de Office page Des modules.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>Dans Outlook
 
 1. Dans le **ruban Accueil,** **sélectionnez Obtenir des modules.**
 
-    ![Bouton Store dans Outlook](../../media/getaddinsicon.png)
+    ![Bouton Stocker dans Outlook.](../../media/getaddinsicon.png)
   
 2. Sélectionnez **Géré par l’administrateur** dans le volet de navigation gauche. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Déployer des add-ins dans le Centre d’administration](./manage-deployment-of-add-ins.md) (article)\
 En savoir plus sur la création et la [création de Office de développement](/office/dev/add-ins/overview/office-add-ins) (article)\

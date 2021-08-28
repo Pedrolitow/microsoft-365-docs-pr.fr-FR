@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour définir des stratégies de sécurité des appareils et des règles d’accès.
-ms.openlocfilehash: 6ae42b9d7515e027e826fe7735a63b23ffd0eff04cb37995d28c60c9dddfada1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a5fe6c4d6350871a2c7013d1de3df8b2911ceca1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826845"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565623"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 
 Vous pouvez gérer et sécuriser les appareils mobiles lorsqu’ils sont connectés à votre organisation Microsoft 365 à l’aide de Basic Mobility and Security. Les appareils mobiles, tels que les smartphones et les tablettes, utilisés pour accéder à la messagerie, au calendrier, aux contacts et aux documents professionnels donnent aux employés la possibilité d’effectuer leur travail partout, à tout moment. Il est donc essentiel de protéger les informations de votre organisation lorsque des personnes utilisent des appareils. Vous pouvez utiliser la mobilité et la sécurité de base pour définir des stratégies de sécurité des appareils et des règles d’accès, et pour effacer les appareils mobiles en cas de perte ou de vol.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Configuration de base de la mobilité et de la sécurité":::
+:::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Configuration de la mobilité et de la sécurité de base.":::
 
 ## <a name="what-types-of-devices-can-you-manage"></a>Quels types d’appareils pouvez-vous gérer ?
 
@@ -50,7 +50,7 @@ Voici un résumé des étapes :
 
 **Étape 3 :** Créez des stratégies d’appareil et appliquez-les à des groupes d’utilisateurs. Lorsque vous faites cela, vos utilisateurs obtiennent un message d’inscription sur leur appareil et une fois l’inscription terminée, leurs appareils sont limités par les stratégies que vous avez définies pour eux. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Paramètres de stratégie de sécurité et de mobilité de base":::
+:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Paramètres de stratégie de sécurité et de mobilité de base.":::
 
 ## <a name="device-management-tasks"></a>Tâches de gestion des appareils
 
@@ -60,7 +60,7 @@ Une fois que vous avez installé basic Mobility and Security et que vos utilisat
 
 Si vous avez simplement besoin de la gestion des applications mobiles (MAM), par exemple pour les personnes mettant à jour des projets de travail sur leurs propres appareils, Intune propose une autre option en plus de l’inscription et de la gestion des appareils. Un abonnement Intune vous permet de configurer des stratégies MAM à l’aide du portail Azure, même si les appareils des personnes ne sont pas inscrits dans Intune. Pour plus d’informations, voir [vue d’ensemble des stratégies de protection des applications.](/mem/intune/apps/app-protection-policy)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Configurer la mobilité et la sécurité de](set-up.md) base (article)\
 [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md) (article)\

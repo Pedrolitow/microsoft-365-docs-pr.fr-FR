@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Envoyez un courrier électronique en tant que liste de distribution Microsoft 365 de sorte que lorsqu’un membre répond à un message, il semble qu’il soit issu de la liste de distribution.
-ms.openlocfilehash: 83a94055386763b5908c872ce9b3b9971c4578e965ccd14b2f67558e4983c335
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 021f44591805385f0575d6fa2ca550289a72c82d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824626"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566161"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Envoyer un courrier électronique en tant que liste de distribution
 
@@ -47,11 +47,11 @@ Avant d’effectuer ces étapes, assurez-vous que vous avez été ajouté à une
     
 3. Sélectionnez **Répondre.** 
     
-4. At the bottom of the message, select **More** \> **Show from**.<br/> ![Sélectionnez Plus, puis choisissez Afficher à partir de](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. At the bottom of the message, select **More** \> **Show from**.<br/> ![Sélectionnez Plus, puis choisissez Afficher à partir de.](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Cliquez avec le bouton droit sur l’adresse de l’utilisateur de l’utilisateur , par `Ina@weewalter.me` exemple, et choisissez **Supprimer.**<br/> ![Supprimer l’alias FROM](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Cliquez avec le bouton droit sur l’adresse de l’utilisateur de l’utilisateur , par `Ina@weewalter.me` exemple, et choisissez **Supprimer.**<br/> ![Remove the FROM alias.](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. Tapez ensuite l’adresse de la liste de distribution telle que support@contoso.com et envoyez le message. La prochaine fois que vous répondrez à partir de la liste de distribution, son adresse apparaîtra en tant qu’option dans la **liste De.**<br/>![L’alias de la boîte aux lettres partagée s’affiche](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. Tapez ensuite l’adresse de la liste de distribution telle que support@contoso.com et envoyez le message. La prochaine fois que vous répondrez à partir de la liste de distribution, son adresse apparaîtra en tant qu’option dans la **liste De.**<br/>![L’alias de la boîte aux lettres partagée s’affiche.](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
 
 ## <a name="outlook"></a>Outlook
 
@@ -63,7 +63,7 @@ Avant d’effectuer ces étapes, assurez-vous que vous avez été ajouté à une
 
 4. Envoyez le message électronique.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Créer, modifier ou supprimer un groupe de sécurité dans](../email/create-edit-or-delete-a-security-group.md) le Centre d’administration Microsoft 365 (article)\
 [Collaboration par courrier](../email/email-collaboration.md) électronique (article)\

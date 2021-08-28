@@ -9,24 +9,24 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
 description: Les applications mobiles Bookings ne sont pas encore disponibles dans le monde entier. Cet article répertorie les paramètres régionaux où les applications sont désormais disponibles.
-ms.openlocfilehash: 551ce6efb3c310d7864b24d29190d662445e6b226babf3870a56a1643c3d067b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2ac3338423cb2c9f472e28bba2be748bed2d7fd0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815089"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566083"
 ---
 # <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>Obtenir l’application Microsoft Bookings pour iOS et Android
 
-Merci d’avoir téléchargé l’application Microsoft Bookings ! Microsoft Bookings est disponible en tant qu’application mobile pour iOS et Android. L’application Bookings pour iOS est disponible dans toutes les régions et tous les pays qu’Apple prend en charge. Vous pouvez télécharger l’application à partir de [l’App Store iTunes.](https://apps.apple.com/app/microsoft-bookings/id1065657468) L’application Bookings pour Android est disponible en téléchargement à partir du [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) aux États-Unis et au Canada.
+Merci d’avoir téléchargé l’application Microsoft Bookings ! Microsoft Bookings est disponible en tant qu’application mobile pour iOS et Android. L’application Bookings pour iOS est disponible dans toutes les régions et tous les pays qu’Apple prend en charge. Vous pouvez télécharger l’application à partir de [l’App Store iTunes.](https://apps.apple.com/app/microsoft-bookings/id1065657468) L’application Bookings pour Android est disponible en téléchargement à partir de [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) aux États-Unis et au Canada.
 
 Avant de commencer, vous devez configurer Bookings sur le web.
 
 1. Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les applications pour voir une liste alphabétique des Microsoft 365 applications disponibles. À partir de là, vous pouvez rechercher une application spécifique
 
-   ![Image du lanceur d’applications](../media/bookings-all-apps-launcher.png)
+   ![Image du lanceur d’applications.](../media/bookings-all-apps-launcher.png)
 
-2. Nous sommes [arrivés à Office page d’accueil](https://office.com) et à partir du lanceur d’applications, sélectionnez **Bookings**.
+2. Nous sommes [arrivés à Office page d’accueil](https://office.com) et, à partir du lanceur d’applications, sélectionnez **Bookings**.
 
 3. Sélectionnez **Obtenir maintenant.**
 

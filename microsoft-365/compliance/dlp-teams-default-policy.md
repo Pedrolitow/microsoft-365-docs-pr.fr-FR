@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez la stratégie de protection contre la perte de données par défaut dans Microsoft Teams
-ms.openlocfilehash: 6358ec692142aa5f2c47007133cb99ec080621f8452234f1260a65e5cd7f9c21
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8f021031bd1dc3672a7aa7123ce01d4c6536fe77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814245"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567735"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>En savoir plus sur la stratégie de protection par défaut contre la perte de données dans Microsoft Teams (préviersion)
 
@@ -47,7 +47,7 @@ Les administrateurs peuvent afficher [](https://compliance.microsoft.com/complia
 
 
 > [!div class="mx-imgBorder"]
-> ![stratégie DLP Teams par défaut](../media/default-teams-dlp-policy.png)
+> ![par Teams stratégie DLP.](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>Modifier ou supprimer la stratégie par défaut
 

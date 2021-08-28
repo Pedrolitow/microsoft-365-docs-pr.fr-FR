@@ -1,6 +1,6 @@
 ---
 title: Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
-description: Résolution des problèmes liés à l’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS.
+description: Résoudre les problèmes liés à l’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, noyau, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 555e5964c5fe846f6fb07b426ae55b6dd603691ccb8cd14fda57701071b47290
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f730f590b9ba604596dc9230fc22c451e99630e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833557"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565207"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
 
@@ -44,7 +44,7 @@ Cet article fournit des informations sur la résolution des problèmes avec l’
 
 Si vous n’avez pas approuvé l’extension du noyau pendant le déploiement/l’installation de Microsoft Defender pour Endpoint sur macOS, l’application affiche une bannière vous invite à l’activer :
 
-   ![Capture d’écran rtp désactivée](images/mdatp-32-main-app-fix.png)
+   ![Capture d’écran rtp désactivée.](images/mdatp-32-main-app-fix.png)
 
 Vous pouvez également exécuter ```mdatp health``` . Il indique si la protection en temps réel est activée mais non disponible. Cela indique que l’extension du noyau n’est pas approuvée pour s’exécuter sur votre appareil.
 
@@ -73,7 +73,7 @@ Si moins de 30 minutes se sont écoulées depuis l’installation du produit, ac
 
 Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus se sont écoulées et que l’extension du noyau n’a toujours pas été approuvée pour s’exécuter sur votre appareil :
 
-![Fenêtre de sécurité et de confidentialité après la capture d’écran de l’invite expirée](images/mdatp-33-securityprivacysettings-noprompt.png)
+![Fenêtre de sécurité et de confidentialité après l’expiration de la capture d’écran de l’invite.](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouveau le flux d’approbation.
 

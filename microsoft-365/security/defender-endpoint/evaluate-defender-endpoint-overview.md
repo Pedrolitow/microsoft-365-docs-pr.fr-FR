@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9b497770086537beaf0e20bd4fc5773257ace5e2f40aae3fe7695c99f009d38b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c9e5d06b13cb2fa64ed9d51977ee13af19c92f8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890610"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567603"
 ---
 # <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>Évaluation de Microsoft 365 Defender vue d’ensemble du point de terminaison
 
@@ -34,7 +34,7 @@ ms.locfileid: "53890610"
 
 - Microsoft 365 Defender
 
-![Microsoft 365 Defender d’évaluation et de pilotage](../../media/defender/m365-defender-eval-process.png)
+![Microsoft 365 Defender d’évaluation et de pilotage.](../../media/defender/m365-defender-eval-process.png)
 
 Les évaluations complètes des produits de sécurité peuvent être un processus complexe, nécessitant des configurations d’environnement et d’appareil fastidieuses avant qu’une simulation d’attaque de bout en bout puisse réellement être effectuée. L’ajout de la complexité est la difficulté de suivre l’endroit où les activités de simulation, les alertes et les résultats sont reflétés au cours de l’évaluation.
 
@@ -53,6 +53,6 @@ Vous disposez d’un accès complet aux fonctionnalités puissantes de la platef
 
 Vous pouvez ajouter des appareils Windows 10 ou Windows Server 2019 pré-configurés pour que les versions de système d’exploitation les plus récentes et les composants de sécurité en place, ainsi que Office 2019 Standard soit installé.
 
-Vous pouvez également installer des simulateurs de menaces. Defender for Endpoint s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
+Vous pouvez également installer des simulateurs de menaces. Defender pour le point de terminaison s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
 
  Installez votre simulateur préféré, exécutez des scénarios dans le laboratoire d’évaluation, puis voyez instantanément les résultats de la plateforme. Cette fonctionnalité est disponible sans frais supplémentaires. Vous aurez également un accès pratique à un large éventail de simulations, que vous pouvez accéder et exécuter à partir du catalogue de simulations.

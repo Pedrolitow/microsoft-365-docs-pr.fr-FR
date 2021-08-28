@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer les appareils mobiles.
-ms.openlocfilehash: 3691968803c615356570be5584ce869fddff81effdc304caa42bc1071b5f579b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ede065b2ad8125b7c487ce801ffc743e817af8dc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826869"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564452"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Gérer les paramètres d’accès aux appareils dans Basic Mobility and Security
 
@@ -42,7 +42,7 @@ Utilisez les étapes suivantes :
 
 4. Sélectionnez **Bloquer**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Case à cocher d’accès de blocage de la mobilité et de la sécurité de base":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Case à cocher d’accès de blocage de la mobilité et de la sécurité de base.":::
 
 5. Sélectionnez **Enregistrer.**
 

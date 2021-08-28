@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 91800483b5a40e028eb71a03d190fd262f4ce3c1cd71d262ca31dcbd8867d833
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c3323466d79137251be1f8d9ee764b42b643bb1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798241"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565195"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -59,7 +59,7 @@ Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les donn
 
 ::: moniker-end
 
-2. Cliquez sur le bouton **Afficher plus** de la carte d’activité d’aperçu pour un service (par exemple, e-mail ou OneDrive) pour afficher la page de détails du rapport. Différents rapports pour le service sont fournis dans les onglets. <br/>![Le tableau de bord d'utilisation](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. Cliquez sur le bouton **Afficher plus** de la carte d’activité d’aperçu pour un service (par exemple, e-mail ou OneDrive) pour afficher la page de détails du rapport. Différents rapports pour le service sont fournis dans les onglets. <br/>![Tableau de bord d'utilisation.](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## <a name="who-can-see-reports"></a>Qui peut voir ces rapports ?
 
@@ -159,7 +159,7 @@ Si vous voulez masquer les informations concernant les utilisateurs individuels 
   
 Votre liste d’utilisateurs se présente comme suit :
   
-![Rapports : liste d’utilisateurs rendus anonymes](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Rapports : liste d’utilisateurs rendus anonymes.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Quelques minutes sont nécessaires pour répercuter ces modifications dans les rapports du tableau de bord Rapports. Ce paramètre s’applique également à l’API Rapports.
   

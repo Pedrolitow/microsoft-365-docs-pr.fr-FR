@@ -14,12 +14,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu de la boucle de courrier de correction possible dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour identifier et corriger les boucles de messagerie dans leur organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c391dee66461dd2535de5f05ef6ebd0f00b8dde0b7c973df8fa638199885dd22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0c866dbec4a406c47bec072225dbe038510d71de
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56799355"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563741"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Résoudre les problèmes de boucle de messagerie dans le Centre de sécurité & conformité
 
@@ -40,7 +40,7 @@ L’aperçu de la  boucle de courrier de [](mail-flow-insights-v2.md) correction
 
 Cette information apparaît uniquement après la détection de la condition (si vous n’avez pas de boucles de messagerie, vous ne verrez pas l’aperçu).
 
-![Résoudre les problèmes de règles de flux de messagerie dans la zone Recommandé pour vous du tableau de bord de flux de messagerie](../../media/mfi-fix-possible-mail-loop.png)
+![Corriger les règles de flux de messagerie lentes dans la zone Recommandé pour vous du tableau de bord de flux de messagerie.](../../media/mfi-fix-possible-mail-loop.png)
 
 Lorsque vous cliquez **sur Afficher les détails** sur le widget, un flyout s’affiche avec plus d’informations :
 
@@ -50,7 +50,7 @@ Lorsque vous cliquez **sur Afficher les détails** sur le widget, un flyout s’
 - **Enregistrement MX**: valeurs d’hôte (serveur **de messagerie)** et de priorité de l’enregistrement MX pour le domaine. 
 - **Raison de la** boucle et **comment corriger :** nous allons identifier les scénarios de boucle de messagerie les plus courants et fournir des actions recommandées pour corriger la boucle.
 
-![Volant de détails qui s’affiche après avoir cliqué sur Afficher les détails sur l’aperçu de la boucle de courrier possible de correction](../../media/mfi-fix-possible-mail-loop-details.png)
+![Volant de détails qui s’affiche après avoir cliqué sur Afficher les détails sur l’aperçu de la boucle de courrier possible corriger.](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## <a name="see-also"></a>Voir aussi
 
