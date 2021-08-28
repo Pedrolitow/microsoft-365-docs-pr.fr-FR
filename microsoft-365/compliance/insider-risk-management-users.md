@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9b097336cadcc4c76c0a9d8026d9a73d079d3572f39dd53a3b98e52caa59cb65
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e50e9b0dfa9119cd3c3f6fe8b45158ca9f8c5cc3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879548"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571036"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Tableau de bord Utilisateurs de la gestion des risques internes
 
@@ -43,7 +43,7 @@ Le **tableau de bord** Utilisateurs affiche automatiquement tous les utilisateur
 
 Le tableau **de bord Utilisateurs inclut** les utilisateurs ajoutés aux stratégies de gestion des risques internes après un événement inhabituel en dehors du flux de travail de gestion des risques internes. L’ajout temporaire d’utilisateurs (à partir du tableau de bord Stratégies) est également un moyen de commencer à marquer l’activité des utilisateurs pour une stratégie de gestion des risques internes pour tester la stratégie, même si aucun connecteur requis n’est configuré.
 
-Lorsqu’un utilisateur est ajouté manuellement à une stratégie, les activités de l’utilisateur pour les 90 jours précédents sont marqués et ajoutés à la chronologie **d’activité** de l’utilisateur. Par exemple, aucun score de risque n’est actuellement attribué à un utilisateur pour une stratégie de risque interne et les activités de fuite de données sont signalées au service juridique de votre organisation. Le service juridique vous recommande de configurer de nouvelles exigences de surveillance à court terme pour l’utilisateur. Vous pouvez affecter temporairement l’utilisateur à votre stratégie de fuite *de* données pour une durée donnée (fenêtre d’activation). Tous les utilisateurs ajoutés temporairement sont affichés dans le tableau de bord Utilisateurs, car le déclenchement des exigences en matière d’événements est annulé. 
+Lorsqu’un utilisateur est ajouté manuellement à une stratégie, les activités de l’utilisateur pour les 90 jours précédents sont marqués et ajoutés à la chronologie **d’activité** de l’utilisateur. Par exemple, aucun score de risque n’est actuellement attribué à un utilisateur pour une stratégie de risque interne et les activités de fuite de données sont signalées au service juridique de votre organisation. Le service juridique vous recommande de configurer de nouvelles exigences de surveillance à court terme pour l’utilisateur. Vous pouvez affecter temporairement l’utilisateur à votre stratégie de fuite *de* données pour une durée donnée (fenêtre d’activation). Tous les utilisateurs ajoutés temporairement sont affichés dans le tableau de bord Utilisateurs car le déclenchement des exigences d’événement est annulé. 
 
 > [!NOTE]
 > L’affichage des nouveaux utilisateurs ajoutés manuellement dans le tableau de bord Utilisateurs peut prendre plusieurs **heures.** L’affichage des activités des 90 jours précédents de ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher les activités des utilisateurs ajoutés  manuellement, sélectionnez l’utilisateur dans le tableau de bord Utilisateurs et ouvrez l’onglet Activité de l’utilisateur dans le volet d’informations. 
@@ -69,7 +69,7 @@ Chaque utilisateur affiché dans le tableau de bord **Utilisateurs** dispose des
 - **Violations confirmées**: nombre de cas résolus comme *violation* de stratégie confirmée pour l’utilisateur.
 - **Cas**: cas actif actuel pour l’utilisateur.
 
-![Tableau de bord utilisateurs de gestion des risques internes](../media/insider-risk-users-dashboard.png)
+![Tableau de bord utilisateurs de gestion des risques internes.](../media/insider-risk-users-dashboard.png)
 
 > [!NOTE]
 > Le nombre d’utilisateurs  affichés dans le tableau de bord Utilisateurs peut être limité dans certains cas, en fonction du volume d’alertes actives et des stratégies correspondantes. Les utilisateurs avec des alertes actives sont affichés dans le tableau de bord Utilisateurs lorsque les alertes sont générées, et il peut y avoir de rares cas où le nombre maximal d’utilisateurs affichés est atteint.  Si cette limite se produit, les utilisateurs avec des alertes  actives qui ne sont pas affichées sont ajoutés au tableau de bord Utilisateurs à mesure que les alertes utilisateur existantes sont triées.
@@ -84,7 +84,7 @@ Pour afficher plus de détails sur l’activité de risque pour un utilisateur, 
   - **Alias**: alias réseau de l’utilisateur.
   - **Organisation ou service :** l’organisation ou le service de l’utilisateur.
 
-- **Onglet Activité de l’utilisateur**
+- **Onglet Activité utilisateur**
   - **Historique des activités récentes des utilisateurs**: répertorie les indicateurs de déclenchement et les indicateurs de risque interne pour les activités des utilisateurs jusqu’aux 180 derniers jours. Toutes les activités pertinentes pour les indicateurs de risque internes sont également notés, même si les activités peuvent ou non avoir généré une alerte de risque interne. Le déclenchement d’exemples d’indicateurs peut être une date de départ ou la dernière date de travail prévue pour l’utilisateur. Les indicateurs de risque internes sont des activités déterminées comme étant à risque et définies dans les stratégies dans qui l’utilisateur est inclus. Les activités d’événement et de risque sont répertoriées avec l’élément le plus récent répertorié en premier.
 
 ## <a name="remove-users-from-in-scope-assignment-to-policies"></a>Supprimer des utilisateurs de l’attribution dans l’étendue aux stratégies
@@ -96,7 +96,7 @@ Il peut y avoir des scénarios où vous devez arrêter d’affecter des scores d
 
 Pour supprimer manuellement les utilisateurs de l’état dans l’étendue dans toutes les stratégies de gestion des risques internes, effectuer les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **Gestion** des risques internes et sélectionnez **l’onglet** Utilisateurs.
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet** Utilisateurs.
 2. Dans le tableau **de bord Utilisateurs,** sélectionnez l’utilisateur ou les utilisateurs que vous souhaitez supprimer de l’étendue des stratégies de gestion des risques internes.
 3. Sélectionnez **Supprimer des utilisateurs.**
 4. Dans le **volet Supprimer l’utilisateur,** **sélectionnez Supprimer** ou **Annuler** pour ignorer les modifications et fermer la boîte de dialogue.

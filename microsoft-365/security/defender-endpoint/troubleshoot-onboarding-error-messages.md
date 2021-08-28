@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b14501463233ef98d49023c4afde85b02714857b05efc73a6eafcff867387e23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24d6873df2432adf5e56b62f01e784f65df4e980
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839268"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576187"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Résoudre des problèmes d’abonnement et de portail d’accès
 
@@ -49,7 +49,7 @@ Raisons potentielles :
 
 Dans les deux cas, vous devez contacter le support Microsoft à l’aide du support [général de Microsoft Defender pour](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) les points de terminaison ou de la prise en charge des [licences en volume.](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)
 
-![Image d’aucun abonnement trouvé](images/atp-no-subscriptions-found.png)
+![Image d’aucun abonnement trouvé.](images/atp-no-subscriptions-found.png)
 
 ## <a name="your-subscription-has-expired"></a>Votre abonnement a expiré
 
@@ -60,21 +60,21 @@ Vous pouvez choisir de renouveler ou de prolonger la licence à tout moment. Lor
 > [!NOTE]
 > Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
-![Image de l’abonnement expiré](images/atp-subscription-expired.png)
+![Image de l’abonnement expiré.](images/atp-subscription-expired.png)
 
 ## <a name="you-are-not-authorized-to-access-the-portal"></a>Vous n’êtes pas autorisé à accéder au portail
 
 Si vous recevez une demande Vous n’êtes pas autorisé à accéder au **portail,** sachez que Microsoft Defender pour le point de terminaison est un produit de surveillance de la sécurité, d’examen des incidents et de réponse. En tant que tel, l’accès à celui-ci est restreint et contrôlé par l’utilisateur.
 Pour plus d’informations, voir [**Attribuer un accès utilisateur au portail.**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)
 
-![Image d’un portail non autorisé à accéder](images/atp-not-authorized-to-access-portal.png)
+![Image d’un utilisateur non autorisé à accéder au portail.](images/atp-not-authorized-to-access-portal.png)
 
 ## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>Les données ne sont actuellement pas disponibles sur certaines sections du portail
 Si le tableau de bord du portail et d’autres sections indiquent un message d’erreur tel que « Les données ne sont actuellement pas disponibles » :
 
-![Image des données actuellement non disponible](images/atp-data-not-available.png)
+![L’image des données n’est actuellement pas disponible.](images/atp-data-not-available.png)
 
-Vous devez autoriser le sous-domaine et tous ses `security.windows.com` sous-domaine. Par exemple, `*.security.windows.com`.
+Vous devez autoriser le sous-domaine et tous ses `security.windows.com` sous-domaine. Par exemple : `*.security.windows.com`.
 
 
 ## <a name="portal-communication-issues"></a>Problèmes de communication du portail

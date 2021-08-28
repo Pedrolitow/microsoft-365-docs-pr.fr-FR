@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: L’explorateur d’activité complète les fonctionnalités de classification des données en vous permettant de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: 5570cecdf3b7e6b6959bb20ca2c2fcdd0ad2e6ebd6b579f7caf7a018049beaeb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8aff58bfd37fbf4e8573546f84f7670424e6b4d8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886411"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571398"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activité
 
 La [vue d’ensemble](data-classification-overview.md) de la classification des données et les onglets de l’Explorateur de contenu vous donnent une visibilité sur le contenu qui a été découvert et étiqueté, ainsi que sur l’endroit où il se trouve. [](data-classification-content-explorer.md) L’explorateur d’activité complète cette suite de fonctionnalités en vous permettant de contrôler les opérations effectuées avec votre contenu étiqueté. L’Explorateur d’activités fournit un affichage historique des activités sur votre contenu étiqueté. Les informations d’activité sont collectées à partir Microsoft 365 journaux d’audit unifiés, transformées et disponibles dans l’interface utilisateur de l’Explorateur d’activités. 
 
-![emplacement réservé pour la capture d’écran aperçu de l’explorateur d’activité](../media/data-classification-activity-explorer-1.png)
+![capture d’écran de l’explorateur d’activités d’espace réservé.](../media/data-classification-activity-explorer-1.png)
 
 Plus de 30 filtres différents sont à votre disposition. Parmi ceux-ci, figurent :
 
@@ -93,7 +93,7 @@ L’Explorateur d’activités collecte des informations d’activité à partir
 - protection supprimée
 - fichiers découverts 
 
-L’Explorateur d’activités rassemble également la stratégie **DLP** qui correspond aux événements provenant de Exchange Online, SharePoint Online, OneDrive, Teams Chat et Canal (prévisualisation), des dossiers et bibliothèques SharePoint locaux, des partages de fichiers locaux et des appareils Windows 10 via la protection contre la perte de données **(DLP)** de point de terminaison. Voici quelques exemples d’événements Windows 10 appareils mobiles :
+L’Explorateur d’activités rassemble également la stratégie **DLP** qui correspond aux événements de Exchange Online, SharePoint Online, OneDrive, Teams Chat et Canal (prévisualisation), des dossiers et bibliothèques SharePoint locaux, des partages de fichiers locaux et des appareils Windows 10 via la protection contre la perte de données **(DLP)** de point de terminaison. Voici quelques exemples d’événements Windows 10 appareils mobiles :
 
 - suppressions
 - creations

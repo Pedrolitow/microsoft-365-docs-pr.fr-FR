@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment utiliser l’outil Diagnostic de page pour optimiser le poids des pages dans SharePoint sites modernes en ligne.
-ms.openlocfilehash: 95a8a978d0451c36416fbe22ae3135962d34bf22a3dae68688a9dafe59be52c0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 04c3e94abef062bbd37db268da56f21c2dd7dc65
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848809"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573102"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimiser le poids des pages de sites modernes SharePoint Online
 
@@ -53,7 +53,7 @@ Les résultats possibles sont les suivants :
 
 Si le résultat **Poids de page inférieur à 500 Ko** apparaît dans la section **Attention requise**, vous pouvez cliquer sur le résultat pour afficher les détails.
 
-![Résultats de requêtes à SharePoint](../media/modern-portal-optimization/pagediag-page-weight.png)
+![Demandes d’SharePoint résultats.](../media/modern-portal-optimization/pagediag-page-weight.png)
 
 ## <a name="remediate-page-weight-issues"></a>Résoudre les problèmes de poids de pages
 
@@ -72,7 +72,7 @@ Vous trouverez des conseils supplémentaires pour limiter le poids des pages dan
 
 Avant d’apporter des révisions de page pour résoudre les problèmes de performances, notez le temps de chargement des pages dans les résultats de l’analyse. Exécutez à nouveau l’outil après votre révision pour déterminer si le nouveau résultat est inclus dans la norme de référence et vérifier le nouveau temps de chargement des pages pour voir s’il y a eu une amélioration.
 
-![Résultats du temps de chargement des pages](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Résultats du temps de chargement de page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Le temps de chargement des pages peut varier en fonction de nombreux facteurs tels que la charge réseau, l’heure de la journée et d’autres conditions transitoires. Vous devez tester le temps de chargement des pages plusieurs fois avant et après avoir apporté des modifications pour vous aider à faire la moyenne des résultats.

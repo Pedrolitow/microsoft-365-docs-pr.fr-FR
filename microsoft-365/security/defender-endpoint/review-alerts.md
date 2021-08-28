@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: e379e50eb0b7762f42a7ae945a31ec8b82bd83a625fd171f007d541802fc12b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 01b9fb5a3483d287f4d43db0a95af6add284b023
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833629"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571276"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Passer en revue les alertes dans Microsoft Defender pour le point de terminaison
 
@@ -42,7 +42,7 @@ Triez rapidement, examinez et prenez des mesures efficaces sur les alertes qui a
 
 ## <a name="getting-started-with-an-alert"></a>Mise en place d’une alerte
 
-La sélection du nom d’une alerte dans Defender pour le point de terminaison vous placera sur sa page d’alerte. Sur la page d’alerte, toutes les informations s’afficheront dans le contexte de l’alerte sélectionnée. Chaque page d’alerte se compose de 4 sections :
+Si vous sélectionnez le nom d’une alerte dans Defender pour le point de terminaison, vous serez sur sa page d’alerte. Sur la page d’alerte, toutes les informations s’afficheront dans le contexte de l’alerte sélectionnée. Chaque page d’alerte se compose de 4 sections :
 
 1. **Le titre de l’alerte** affiche le nom de l’alerte et est là pour vous rappeler quelle alerte a démarré votre enquête en cours, indépendamment de ce que vous avez sélectionné sur la page.
 2. [**Les ressources affectées**](#review-affected-assets) répertorient les cartes d’appareils et d’utilisateurs affectés par cette alerte qui peuvent être cliquées pour obtenir plus d’informations et d’actions.
@@ -53,19 +53,19 @@ Notez l’état de détection de votre alerte.
 
 - Interdit : la tentative d’action suspecte a été évitée. Par exemple, un fichier n’a pas été écrit sur le disque ou exécuté.
 
-  ![Une page d’alerte indiquant que la menace a été empêchée](images/detstat-prevented.png)
+  ![Une page d’alerte indiquant que la menace a été empêchée.](images/detstat-prevented.png)
 
 - Bloqué : un comportement suspect a été exécuté, puis bloqué. Par exemple, un processus a été exécuté, mais comme il a par la suite présenté des comportements suspects, le processus a été interrompu.
 
-  ![Page d’alerte indiquant que la menace a été bloquée](images/detstat-blocked.png)
+  ![Page d’alerte indiquant que la menace a été bloquée.](images/detstat-blocked.png)
 
 - Détecté : une attaque a été détectée et est éventuellement toujours active.
 
-  ![Page d’alerte indiquant que la menace a été détectée](images/detstat-detected.png)
+  ![Page d’alerte indiquant que la menace a été détectée.](images/detstat-detected.png)
 
 Vous pouvez ensuite consulter les *détails* de l’enquête automatisée dans le volet d’informations de votre alerte, pour voir quelles actions ont déjà été entreprises, ainsi que lire la description de l’alerte pour les actions recommandées.
 
-![Extrait du volet d’informations avec la description de l’alerte et les sections d’examen automatique mises en évidence](images/alert-air-and-alert-description.png)
+![Extrait du volet d’informations avec la description de l’alerte et les sections d’examen automatique mises en évidence.](images/alert-air-and-alert-description.png)
 
 Les autres informations disponibles dans le volet d’informations lors de l’ouverture de l’alerte incluent les techniques MITRE, la source et des détails contextuels supplémentaires.
 
@@ -75,13 +75,13 @@ La sélection d’un appareil ou d’une carte utilisateur dans les sections res
 
 - **Pour les appareils,** le volet d’informations affiche des informations sur l’appareil lui-même, comme domaine, système d’exploitation et IP. Les alertes actives et les utilisateurs connectés sur cet appareil sont également disponibles. Vous pouvez prendre des mesures immédiates en isolant l’appareil, en limitant l’exécution de l’application ou en exécutant une analyse antivirus. Vous pouvez également collecter un package d’enquête, lancer une enquête automatisée ou vous rendre sur la page de l’appareil pour l’examiner du point de vue de l’appareil.
 
-   ![Extrait du volet d’informations lorsqu’un appareil est sélectionné](images/device-page-details.png)
+   ![Extrait du volet d’informations lorsqu’un appareil est sélectionné.](images/device-page-details.png)
 
-- Pour les utilisateurs, le volet d’informations affiche des informations détaillées sur l’utilisateur, telles que le nom SAM et le SID de l’utilisateur, ainsi que les types d’accès effectués par cet utilisateur, ainsi que les alertes et incidents qui lui sont associés. Vous pouvez sélectionner *Ouvrir la page utilisateur* pour poursuivre l’examen du point de vue de cet utilisateur.
+- Pour les utilisateurs, le volet d’informations affiche des informations détaillées sur l’utilisateur, telles que le nom SAM et le SID de l’utilisateur, ainsi que les types d’accès effectués par cet utilisateur, ainsi que les alertes et incidents qui lui sont associés. Vous pouvez sélectionner *Ouvrir la page utilisateur pour* poursuivre l’examen du point de vue de cet utilisateur.
 
-   ![Extrait du volet d’informations lorsqu’un utilisateur est sélectionné](images/user-page-details.png)
+   ![Extrait du volet d’informations lorsqu’un utilisateur est sélectionné.](images/user-page-details.png)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Afficher et organiser la file d’attente des incidents](view-incidents-queue.md)
 - [Enquêter sur des incidents](investigate-incidents.md)

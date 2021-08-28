@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a011d3cf8879b9f4b82d055693edfea98dbeb83a829c153b20e579b015fc80e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2612fc618c8bd3dd8362d86413bad386856a3063
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897942"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572550"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Centre de sécurité Microsoft Defender Tableau de bord opérations de sécurité
 
@@ -47,7 +47,7 @@ Le tableau de bord affiche une capture instantanée des éléments ci-dessous :
 - Utilisateurs à risque
 - Activités suspectes
 
-![Image du tableau de bord Opérations de sécurité](images/atp-sec-ops-dashboard.png)
+![Image du tableau de bord Opérations de sécurité.](images/atp-sec-ops-dashboard.png)
 
 Vous pouvez explorer et examiner les alertes et les appareils pour déterminer rapidement si, où et quand des activités suspectes se sont produites dans votre réseau pour vous aider à comprendre le contexte dans lequel elles sont apparues.
 
@@ -59,7 +59,7 @@ Il dispose également de vignettes cliquables qui donnent des indications visuel
 
 Vous pouvez afficher le nombre global d’alertes actives des 30 derniers jours de votre réseau à partir de la vignette. Les alertes sont regroupées en **nouveautés** **et en cours.**
 
-![Cliquez sur chaque tranche ou gravité pour voir la liste des alertes des 30 derniers jours](images/active-alerts-tile.png)
+![Cliquez sur chaque tranche ou gravité pour voir la liste des alertes des 30 derniers jours.](images/active-alerts-tile.png)
 
 Chaque groupe est sous-classé selon les niveaux de gravité d’alerte correspondants. Cliquez sur le nombre d’alertes à l’intérieur de chaque anneau d’alerte pour afficher un affichage trié de la file d’attente de cette catégorie **(nouveau** ou **en cours).**
 
@@ -71,7 +71,7 @@ Chaque ligne inclut une catégorie de gravité d’alerte et une brève descript
 
 Cette vignette affiche la liste des appareils avec le plus grand nombre d’alertes actives. Le nombre total d’alertes pour chaque appareil est affiché dans un cercle en regard du nom de l’appareil, puis classé par niveaux de gravité à l’extrémité de la vignette (placez le pointage sur chaque barre de gravité pour voir son étiquette).
 
-![La vignette Appareils à risque affiche la liste des appareils avec le plus grand nombre d’alertes et une répartition de la gravité des alertes.](images/devices-at-risk-tile.png)
+![La vignette Appareils à risque affiche une liste des appareils avec le plus grand nombre d’alertes et une répartition de la gravité des alertes.](images/devices-at-risk-tile.png)
 
 Cliquez sur le nom de l’appareil pour voir les détails sur cet appareil. Pour plus d’informations, consultez la liste Examiner les appareils de la liste [Microsoft Defender pour les appareils de point de terminaison.](investigate-machines.md)
 
@@ -81,7 +81,7 @@ Vous pouvez également cliquer sur **La** liste Appareils en haut de la vignette
 
 La **vignette Appareils avec problèmes** de capteur fournit des informations sur la capacité de chaque appareil à fournir des données de capteur au service Microsoft Defender for Endpoint. Il indique le nombre d’appareils qui nécessitent une attention particulière et vous aide à identifier les appareils problématiques.
 
-![Vignette des appareils avec problèmes de capteur](images/atp-tile-sensor-health.png)
+![Appareils avec vignette problèmes de capteur.](images/atp-tile-sensor-health.png)
 
 Deux indicateurs d’état fournissent des informations sur le nombre d’appareils qui ne sont pas correctement signalés au service :
 
@@ -94,7 +94,7 @@ Lorsque vous cliquez sur l’un des groupes, vous êtes dirigé vers la liste de
 
 La **vignette d’état** du service vous informe si le service est actif ou s’il existe des problèmes.
 
-![La vignette d’état du service affiche un indicateur global du service](images/status-tile.png)
+![La vignette d’état du service affiche un indicateur global du service.](images/status-tile.png)
 
 Pour plus d’informations sur l’état du service, consultez [l’état du service Microsoft Defender pour Endpoint.](service-status.md)
 
@@ -102,19 +102,19 @@ Pour plus d’informations sur l’état du service, consultez [l’état du ser
 
 La **vignette Rapports quotidiens sur** les appareils affiche un graphique à barres qui représente le nombre d’appareils signalant quotidiennement au cours des 30 derniers jours. Pointez sur des barres individuelles sur le graphique pour voir le nombre exact d’appareils signalant des rapports chaque jour.
 
-![Image de la vignette rapports quotidiennes des appareils](images/atp-daily-devices-reporting.png)
+![Image d’une vignette de rapports quotidiennes d’appareils.](images/atp-daily-devices-reporting.png)
 
 ## <a name="active-automated-investigations"></a>Examens automatisés actifs
 
 Vous pouvez afficher le nombre global d’enquêtes automatisées des 30 derniers jours de votre réseau à partir de la **vignette Enquêtes automatisées actives.** Les examens sont regroupés en **action en attente,** en attente **d’appareil** et en **cours d’exécution.**
 
-![Inmage d’enquêtes automatisées actives](images/atp-active-investigations-tile.png)
+![Inmage d’enquêtes automatisées actives.](images/atp-active-investigations-tile.png)
 
 ## <a name="automated-investigations-statistics"></a>Statistiques d’enquêtes automatisées
 
 Cette vignette affiche les statistiques relatives aux enquêtes automatisées au cours des sept derniers jours. Il indique le nombre d’enquêtes terminées, le nombre d’enquêtes correctement corrigés, le temps en attente moyen d’un examen à lancer, le temps moyen de correction d’une alerte, le nombre d’alertes examinées et le nombre d’heures d’automatisation enregistrées à partir d’un examen manuel classique. 
 
-![Image des statistiques d’enquêtes automatisées](images/atp-automated-investigations-statistics.png)
+![Image des statistiques d’enquêtes automatisées.](images/atp-automated-investigations-statistics.png)
 
 Vous pouvez cliquer sur **Examens** automatisés, **Examens** corrigés et **Alertes examinées** pour accéder à la page **Enquêtes,** filtrée par catégorie appropriée. Cela vous permet d’obtenir une répartition détaillée des enquêtes en contexte.
 
@@ -122,13 +122,13 @@ Vous pouvez cliquer sur **Examens** automatisés, **Examens** corrigés et **Ale
 
 La vignette affiche la liste des comptes d’utilisateurs avec les alertes les plus actives et le nombre d’alertes visibles sur les alertes élevées, moyennes ou faibles. 
 
-![La vignette Comptes d’utilisateurs à risque affiche la liste des comptes d’utilisateurs avec le plus grand nombre d’alertes et une répartition de la gravité des alertes](images/atp-users-at-risk.png)
+![La vignette Comptes d’utilisateurs à risque affiche une liste de comptes d’utilisateurs avec le plus grand nombre d’alertes et une répartition de la gravité des alertes.](images/atp-users-at-risk.png)
 
 Cliquez sur le compte d’utilisateur pour voir les détails sur le compte d’utilisateur. Pour plus d’informations, [voir Examiner un compte d’utilisateur.](investigate-user.md)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Comprendre le portail Microsoft Defender pour les points de terminaison](use.md)
 - [Vue d’ensemble du portail](portal-overview.md)

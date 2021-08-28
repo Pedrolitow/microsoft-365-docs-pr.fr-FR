@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Décrit la synchronisation d’annuaires avec Microsoft 365, le nettoyage des services de domaine Active Directory et l’outil Azure Active Directory Connecter’annuaire.
-ms.openlocfilehash: 62c8246e6a825ff57583dbbccb1028cd9035f72e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5ad437e4f8abcf2a6d59d17ce41a2b1adeac0649
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354403"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575635"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Synchronisation d’annuaires et d’identités hybrides pour Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "58354403"
 En fonction des besoins de votre entreprise et des exigences techniques, le modèle d’identité hybride et la synchronisation d’annuaires sont le choix le plus courant pour les clients d’entreprise qui adoptent Microsoft 365. La synchronisation d’annuaires vous permet de gérer les identités dans vos services de domaine Active Directory (AD DS) et toutes les mises à jour des comptes d’utilisateur, des groupes et des contacts sont synchronisées avec le client Azure Active Directory (Azure AD) de votre abonnement Microsoft 365.
 
 >[!Note]
->Lorsque les comptes d’utilisateurS AD DS sont synchronisés pour la première fois, ils ne se voit pas automatiquement attribuer une licence Microsoft 365 et ne peuvent pas accéder aux services Microsoft 365, tels que la messagerie électronique. Vous devez d’abord leur attribuer un emplacement d’utilisation. Ensuite, attribuez une licence à ces comptes d’utilisateurs, individuellement ou dynamiquement par le biais de l’appartenance à un groupe.
+>Lorsque les comptes d’utilisateurS AD DS sont synchronisés pour la première fois, ils ne se voit pas attribuer automatiquement une licence Microsoft 365 et ne peuvent pas accéder aux services Microsoft 365, tels que la messagerie électronique. Vous devez d’abord leur attribuer un emplacement d’utilisation. Ensuite, attribuez une licence à ces comptes d’utilisateurs, individuellement ou dynamiquement par le biais de l’appartenance à un groupe.
 >
 
 ## <a name="authentication-for-hybrid-identity"></a>Authentification pour l’identité hybride
@@ -54,7 +54,7 @@ Il existe deux types d’authentification gérée :
 
 - Synchronisation de hachage de mot de passe (PHS)
 
-  Azure AD effectue l’authentification proprement dite.
+  Azure AD effectue l’authentification elle-même.
 
 - Authentification directe (PTA)
 
@@ -65,9 +65,9 @@ Il existe deux types d’authentification gérée :
 
 Avec PHS, vous synchronisez vos comptes d’utilisateur AD DS avec Microsoft 365 et gérez vos utilisateurs en local. Les hèses de mots de passe utilisateur sont synchronisés à partir de vos services AD DS avec Azure AD afin que les utilisateurs disposent du même mot de passe en local et dans le cloud. Il s’agit du moyen le plus simple d’activer l’authentification pour les identités AD DS dans Azure AD. 
 
-![Synchronisation de hachage de mot de passe (PHS)](../media/plan-for-directory-synchronization/phs-authentication.png)
+![Synchronisation de hachage de mot de passe (PHS).](../media/plan-for-directory-synchronization/phs-authentication.png)
 
-Lorsque des mots de passe sont modifiés ou réinitialisés en local, les nouveaux hésiteurs de mot de passe sont synchronisés avec Azure AD afin que vos utilisateurs peuvent toujours utiliser le même mot de passe pour les ressources cloud et les ressources sur site. Les mots de passe utilisateur ne sont jamais envoyés à Azure AD ou stockés dans Azure AD en texte clair. Certaines fonctionnalités premium d’Azure AD, telles que identity protection, nécessitent PHS, quelle que soit la méthode d’authentification sélectionnée.
+Lorsque des mots de passe sont modifiés ou réinitialisés en local, les nouveaux hchéhes de mot de passe sont synchronisés avec Azure AD afin que vos utilisateurs peuvent toujours utiliser le même mot de passe pour les ressources cloud et les ressources sur site. Les mots de passe utilisateur ne sont jamais envoyés à Azure AD ou stockés dans Azure AD en texte clair. Certaines fonctionnalités premium d’Azure AD, telles que identity protection, nécessitent phs, quelle que soit la méthode d’authentification sélectionnée.
   
 Pour en [savoir plus,](/azure/active-directory/hybrid/choose-ad-authn) voir choisir la méthode d’authentification la plus efficace.
   
@@ -75,9 +75,9 @@ Pour en [savoir plus,](/azure/active-directory/hybrid/choose-ad-authn) voir choi
 
 PTA fournit une validation de mot de passe simple pour les services d’authentification Azure AD à l’aide d’un agent logiciel s’exécutant sur un ou plusieurs serveurs locaux pour valider les utilisateurs directement avec vos services AD DS. Avec LTA, vous synchronisez les comptes d’utilisateur AD DS avec Microsoft 365 et gérez vos utilisateurs en local. 
 
-![Authentification directe (PTA)](../media/plan-for-directory-synchronization/pta-authentication.png)
+![Authentification directe (PTA).](../media/plan-for-directory-synchronization/pta-authentication.png)
 
-PTA permet à vos utilisateurs de se connectent à la fois aux ressources et applications Microsoft 365 locaux et aux applications à l’aide de leur compte local et de leur mot de passe. Cette configuration valide les mots de passe des utilisateurs directement par rapport à vos AD DS sur site sans stocker les hchéhes de mot de passe dans Azure AD. 
+PTA permet à vos utilisateurs de se connectent à la fois aux ressources et applications Microsoft 365 locaux et aux applications à l’aide de leur compte local et de leur mot de passe. Cette configuration valide les mots de passe des utilisateurs directement par rapport à vos AD DS sur site sans stocker les h départs de mot de passe dans Azure AD. 
 
 PTA est également pour les organisations ayant une obligation de sécurité d’appliquer immédiatement les états de compte d’utilisateur local, les stratégies de mot de passe et les heures d’ouverture de bureau. 
   
@@ -105,7 +105,7 @@ La préparation de votre annuaire doit se concentrer sur les tâches suivantes :
 
 - Supprimez les **attributs proxyAddress** et **userPrincipalName en** double.
 - Mettez à jour les attributs **userPrincipalName vides** et non valides avec des attributs **userPrincipalName** valides.
-- Supprimez les caractères non valides et discutables dans les attributs **givenName**, surname ( **sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname** et **userPrincipalName.** Pour plus d’informations sur la préparation des attributs, voir Liste des [attributs synchronisés](https://go.microsoft.com/fwlink/p/?LinkId=396719)par l’outil Azure Active Directory sync.
+- Supprimez les caractères non valides et discutables dans les attributs **givenName**, surname ( **sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname** et **userPrincipalName.** Pour plus d’informations sur la préparation des attributs, voir La liste des [attributs synchronisés](https://go.microsoft.com/fwlink/p/?LinkId=396719)par l’outil Azure Active Directory sync.
 
     > [!NOTE]
     > Il s’agit des mêmes attributs qu’Azure AD Connecter synchronisés. 

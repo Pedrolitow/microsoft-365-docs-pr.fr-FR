@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Découvrez comment réduire le temps de chargement des pages SharePoint Online à l’aide de JavaScript pour retarder le chargement des images et des éléments JavaScript non essentiels.
-ms.openlocfilehash: 0b0129f691018caf414ebd249e905a97d5560145dc648a073d8000402d11217d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7be256db8bce115b130322d1dd34131d845ef165
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813285"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573138"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Différer le chargement des images et des éléments JavaScript dans SharePoint Online
 
@@ -36,7 +36,7 @@ Les images peuvent avoir une incidence négative sur les vitesses de chargement 
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Améliorer les temps de chargement de page en retardant le chargement d’image dans SharePoint pages en ligne à l’aide de JavaScript
 
-Vous pouvez utiliser JavaScript pour empêcher un navigateur web de pré-récupérer des images. Cela accélère le rendu global des documents. Pour ce faire, vous supprimez la valeur de l’attribut src de la balise et remplacez-la par le chemin d’accès à un fichier dans un attribut de données tel que \<img\> : data-src. Par exemple :
+Vous pouvez utiliser JavaScript pour empêcher un navigateur web de pré-récupérer des images. Cela accélère le rendu global des documents. Pour ce faire, vous supprimez la valeur de l’attribut src de la balise et remplacez-la par le chemin d’accès à un fichier dans un attribut de données tel que \<img\> : data-src. Par exemple :
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -99,7 +99,7 @@ $('#s4-workspace').on("scroll", function () {
 
 Enregistrez le fichier texte en tant que fichier JavaScript avec l’extension .js, par exemple delayLoadImages.js.
   
-Une fois que vous avez terminé delayLoadImages.js, vous pouvez ajouter le contenu du fichier à une page maître dans SharePoint Online. Pour ce faire, ajoutez un lien de script à l’en-tête de la page maître. Une fois qu’il est dans une page maître, le JavaScript est appliqué à toutes les pages de votre site SharePoint Online qui utilisent cette mise en page maître. Sinon, si vous avez l’intention de l’utiliser uniquement sur une page de votre site, utilisez le script éditeur de web part pour incorporer le JavaScript dans la page. Consultez ces rubriques pour plus d’informations :
+Une fois que vous avez terminé delayLoadImages.js, vous pouvez ajouter le contenu du fichier à une page maître dans SharePoint Online. Pour ce faire, ajoutez un lien de script à l’en-tête dans la page maître. Une fois qu’il est dans une page maître, le JavaScript est appliqué à toutes les pages de votre site SharePoint Online qui utilisent cette mise en page maître. Sinon, si vous avez l’intention de l’utiliser uniquement sur une page de votre site, utilisez le script éditeur de web part pour incorporer le JavaScript dans la page. Consultez ces rubriques pour plus d’informations :
   
 - [Comment appliquer une page maître à un site dans SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
@@ -109,17 +109,17 @@ Une fois que vous avez terminé delayLoadImages.js, vous pouvez ajouter le conte
   
 Pour que cela fonctionne, vous devez également référencer jQuery dans la page maître. Dans l’exemple suivant, vous pouvez voir dans le chargement initial de la page qu’une seule image est chargée, mais qu’il en existe plusieurs autres sur la page.
   
-![Capture d’écran montrant une seule image chargée sur une page](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
+![Capture d’écran montrant une image chargée sur la page.](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
 La capture d’écran suivante montre le reste des images qui sont téléchargées après leur défilement vers l’affichage.
   
-![Capture d’écran montrant plusieurs images chargées sur une page](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
+![Capture d’écran montrant plusieurs images chargées sur la page.](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
 Retarder le chargement de l’image à l’aide de JavaScript peut être une technique efficace pour augmenter les performances . toutefois, si la technique est appliquée sur un site web public, les moteurs de recherche ne sont pas en mesure d’analyser les images de la même façon qu’ils analysent une image formée régulièrement. Cela peut affecter les classements sur les moteurs de recherche, car les métadonnées sur l’image elle-même ne sont pas réellement présentes tant que la page n’est pas en cours de chargement. Les robot d’un moteur de recherche lisent uniquement le code HTML et ne voient donc pas les images en tant que contenu sur la page. Les images sont l’un des facteurs utilisés pour classer les pages dans les résultats de la recherche. L’une des façons de contourner ce besoin consiste à utiliser du texte d’introduction pour vos images.
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub code : injection de JavaScript pour améliorer les performances
 
-Ne manquez pas l’article et l’exemple de code sur [l’injection JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) fournie sur GitHub.
+Ne manquez pas l’article et l’exemple de code sur [l’injection JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) fournis GitHub.
   
 ## <a name="see-also"></a>Voir aussi
 

@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Trouvez des informations sur le déplacement d’un site OneDrive vers un autre emplacement géographique, notamment sur la planification des déplacements de sites et la communication des attentes aux utilisateurs.
-ms.openlocfilehash: 1e571993a4d83d3e9a61f783fee9b1df5f9de4bb3d9184a9565c280677faf21c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 50c23555a91aecfbbaf6aa30bae2c3a741a18c45
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854858"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575659"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Déplacer un site OneDrive vers un autre emplacement géographique 
 
@@ -64,7 +64,7 @@ Par exemple : pour déplacer OneDrive de l’utilisateur « Matt@contosoenergy.o
 
 `Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![Capture d’écran d’une fenêtre PowerShell affichant la cmdlet connect-sposervice](../media/move-onedrive-between-geo-locations-image1.png)
+![Capture d’écran de la fenêtre PowerShell montrant l’cmdlet connect-sposervice.](../media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>Validation de l’environnement
 
@@ -98,7 +98,7 @@ Par exemple, pour déplacer le site OneDrive de matt@contosoenergy.onmicrosoft.c
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![Capture d’écran de la fenêtre PowerShell affichant la cmdlet Start-SPOUserAndContentMove](../media/move-onedrive-between-geo-locations-image2.png)
+![Capture d’écran de la fenêtre PowerShell Start-SPOUserAndContentMove cmdlet.](../media/move-onedrive-between-geo-locations-image2.png)
 
 Pour planifier un déplacement géographique à un autre moment, utilisez l’un des paramètres suivants :
 

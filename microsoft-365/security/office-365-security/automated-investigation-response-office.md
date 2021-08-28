@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40301b0fd16b7d0b29b6a89ec009fc07c85b33ba587833866dd2e2b49741f85d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e91f0947f9622c81fb9340c09ea52c85ea567af6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56801797"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572454"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’examen et de la réponse automatisés dans Microsoft Defender Office 365
 
@@ -81,11 +81,11 @@ Outre les enquêtes automatisées déclenchées par une alerte, l’équipe des 
 
 Par exemple, supposons que vous utilisez la vue **Programmes** malveillants dans l’Explorateur. En utilisant les onglets sous le graphique, sélectionnez **l’onglet Courrier** électronique. Si vous sélectionnez un ou plusieurs éléments dans la liste, le **bouton + Actions** s’active.
 
-![Explorateur avec les messages sélectionnés](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![Explorateur avec les messages sélectionnés.](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 À **l’aide du** menu Actions, vous pouvez sélectionner **Examen déclencheur.**
 
-![Menu Actions pour les messages sélectionnés](../../media/explorer-malwareview-selectedemails-actions.jpg)
+![Menu Actions pour les messages sélectionnés.](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
 Comme pour les playbooks déclenchés par une alerte, les enquêtes automatiques déclenchées à partir d’un affichage dans l’Explorateur incluent une enquête racine, des étapes pour identifier et corréler les menaces, ainsi que des actions recommandées pour atténuer ces menaces.
 

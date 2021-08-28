@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 55fa863dca2caf3a88c7127993c392c510953af8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: cb693fb60277e5262578cc442df7e1c5ba3f3c16
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506453"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572250"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -48,7 +48,7 @@ Vous pouvez appliquer automatiquement des étiquettes de rétention à du conten
 
 Les processus d’application automatique d’une étiquette de rétention sont fonction des conditions suivantes :
 
-![Diagramme des rôles et des tâches pour les étiquettes à appliquer automatiquement](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+![Diagramme des rôles et des tâches pour les étiquettes à appliquer automatiquement.](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
 
 Utilisez les instructions suivantes pour les deux étapes d’administration.
 
@@ -174,7 +174,7 @@ Lorsque vous utilisez des types d’informations sensibles pour appliquer automa
 
 Vous pouvez appliquer automatiquement des étiquettes au contenu à l’aide d’une requête qui contient des mots, des phrases ou des valeurs de propriétés pouvant faire l’objet d’une recherche. Vous pouvez affiner votre requête en utilisant des opérateurs de recherche tels que et, ou et non.
 
-![Éditeur de requête](../media/new-retention-query-editor.png)
+![Éditeur de requête.](../media/new-retention-query-editor.png)
 
 Pour plus d’informations sur la syntaxe de requête qui utilise le langage de requête de mot clé (KQL), consultez [Référence de syntaxe de langage de requête de mot clé (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
@@ -259,7 +259,7 @@ La plupart du temps, les enregistrements de réunion sont enregistrés dans OneD
 
 Lorsque vous choisissez l’option de classifieur entraînable, vous pouvez sélectionner un classifieur intégré ou un classifieur personnalisé. Les classifieurs intégrés incluent : **CV**, **SourceCode**, **Harcèlement ciblé**, **Blasphème** et la **Menace** :
 
-![Sélectionnez un classificateur à entraîner](../media/retention-label-classifers.png)
+![Sélectionnez un classificateur à entraîner.](../media/retention-label-classifers.png)
 
 > [!CAUTION]
 > Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. N’utilisez pas ce classifieur intégré et si vous l’utilisez actuellement, vous devez déplacer vos processus métier. Nous vous recommandons d’utiliser les classifieurs intégrés de **Harcèlement ciblée** , de **blasphème** et de **Menace** à la place.
@@ -279,7 +279,7 @@ Lorsque vous utilisez des classificateurs pouvant apprendre pour appliquer autom
 
 Lorsque vous appliquez automatiquement des étiquettes de rétention, l’application de ces étiquettes à ce contenu peut prendre jusqu’à sept jours.
   
-![Diagramme indiquant quand les étiquettes d’application automatique prennent effet](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![Diagramme indiquant quand les étiquettes d’application automatique prennent effet.](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
 Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’application automatique en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si vous voyez l’état de **Désactivé (erreur)** et dans les détails des emplacements, consultez un message indiquant qu’il prend plus de temps que prévu pour déployer la stratégie (pour SharePoint) ou essayez de redéployer la stratégie (pour OneDrive), essayez d’exécuter la commande PowerShell [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 

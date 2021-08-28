@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec la détection et la correction des menaces d’application.
-ms.openlocfilehash: 085c6f7404555494a18645ab9680f44a6ba93557aff1d1fcd953cfec3256a2b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a57d888d2494fdcdc52e69b3738edba198b6363f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842678"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571120"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>Démarrage avec la détection et la correction des menaces d’application
 
@@ -29,7 +29,7 @@ La gouvernance des applications Microsoft collecte les alertes de menace génér
 
 Le premier emplacement pour afficher les alertes d’application est le tableau de bord de gouvernance des applications à [https://aka.ms/appgovernance](https://aka.ms/appgovernance).
 
-![Page vue d’ensemble de la gouvernance des applications dans le Centre de conformité Microsoft 365 avec la section Détection et alertes de stratégie mise en évidence](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
+![Page vue d’ensemble de la gouvernance des applications dans le Centre de conformité Microsoft 365 avec la section Détection et alertes de stratégie mise en évidence.](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 
 Dans cette page de vue d’ensemble, la section **Détection et alertes de stratégie** répertorie les dernières alertes. Vous pouvez l’utiliser pour voir rapidement l’activité d’alerte d’application actuelle pour votre client.
 
@@ -39,7 +39,7 @@ Pour afficher toutes les alertes, sélectionnez l’onglet **Alertes** .
 
 La page **Alertes** répertorie toutes les alertes basées sur la gouvernance des applications pour votre client.
 
-![Page récapitulative des alertes de gouvernance des applications dans le Centre de conformité Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
+![Page récapitulative des alertes de gouvernance des applications dans le Centre de conformité Microsoft 365.](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
 
 Chaque alerte répertoriée contient les informations suivantes :
 

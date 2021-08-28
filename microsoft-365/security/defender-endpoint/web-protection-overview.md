@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f45de173b8f316c93d8a65f1c20dbd523038c8855c2c0524770eed3334edee2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 345088af66e08cb693d2b0a8a1e9bfbc51400aab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884422"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571264"
 ---
 # <a name="web-protection"></a>Protection Web
 
@@ -40,7 +40,7 @@ ms.locfileid: "53884422"
 
 La protection web dans Microsoft Defender pour point de terminaison est une fonctionnalité de protection contre les menaces [web,](web-threat-protection.md)de filtrage de contenu [Web](web-content-filtering.md)et [d’indicateurs personnalisés.](manage-indicators.md) La protection Web vous permet de sécuriser vos appareils contre les menaces web et de contrôler le contenu indésirable. Vous pouvez trouver des rapports de protection Web dans le portail Microsoft 365 Defender en allant à **Rapports > protection Web.**
 
-:::image type="content" alt-text="Image de toutes les cartes de protection web" source="images/web-protection.png" lightbox="images/web-protection.png":::
+:::image type="content" alt-text="Image de toutes les cartes de protection web." source="images/web-protection.png" lightbox="images/web-protection.png":::
 
 ### <a name="web-threat-protection"></a>Protection contre les menaces web
 
@@ -58,7 +58,7 @@ Pour plus d’informations, voir [Protection contre les menaces web.](web-threat
 
 ### <a name="custom-indicators"></a>Indicateurs personnalisés
 
-Les détections d’indicateurs personnalisés sont également résumées dans les rapports sur les menaces web de votre organisation sous détections de **menaces Web** au fil du temps et résumé **des menaces Web.**
+Les détections d’indicateurs personnalisés sont également résumées dans les rapports de menaces web de votre organisation sous détections de **menaces Web** au fil du temps et résumé **des menaces Web.**
 
 L’indicateur personnalisé inclut :
 
@@ -76,7 +76,7 @@ Le filtrage de contenu **Web inclut l’activité Web par catégorie,** le résu
 
 Le filtrage de contenu Web inclut :
 
-- Les utilisateurs ne peuvent pas accéder aux sites web dans les catégories bloquées, qu’ils naviguent en local ou en de suite.
+- Les utilisateurs ne peuvent pas accéder aux sites web dans des catégories bloquées, qu’ils naviguent en local ou en de suite.
 
 - Vous pouvez déployer des stratégies variées sur différents ensembles d’utilisateurs à l’aide des groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les rôles Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint/rbac)
 
@@ -177,17 +177,17 @@ Pour lister les blocs qui sont dus à d’autres fonctionnalités (comme les ind
 Si un utilisateur visite une page web qui présente un risque de programmes malveillants, d’hameçonnage ou d’autres menaces web, Microsoft Edge déclenche une page de blocage qui indique « Ce site a été signalé comme non sécurisé » avec des informations relatives à la menace.
 
 > [!div class="mx-imgBorder"]
-> ![Page bloquée par Microsoft Edge](../../media/web-protection-malicious-block.png)
+> ![Page bloquée par Microsoft Edge.](../../media/web-protection-malicious-block.png)
 
 Si elle est bloquée par WCF ou un indicateur personnalisé, une page de blocage s’affiche dans Microsoft Edge qui indique à l’utilisateur que ce site est bloqué par son organisation.
 
 > [!div class="mx-imgBorder"]
-> ![Page bloquée par votre organisation](../../media/web-protection-indicator-blockpage.png)
+> ![Page bloquée par votre organisation.](../../media/web-protection-indicator-blockpage.png)
 
 Dans tous les cas, aucune page de blocage n’est affichée dans les navigateurs tiers et l’utilisateur voit une page « Échec de connexion sécurisée » avec une notification toast. Selon la stratégie responsable du blocage, un utilisateur voit un autre message dans la notification toast. Par exemple, le filtrage de contenu web affiche le message « Ce contenu est bloqué ». 
 
 > [!div class="mx-imgBorder"]
-> ![Page bloquée par WCF](../../media/web-protection-np-block.png)
+> ![Page bloquée par WCF.](../../media/web-protection-np-block.png)
 
 ## <a name="report-false-positives"></a>Signaler les faux positifs
 

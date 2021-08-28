@@ -9,23 +9,23 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Utilisez la Centre d’administration Microsoft 365 ou Windows PowerShell pour supprimer des calendriers Bookings.
-ms.openlocfilehash: 5dd04033cc5a7485d606503f5cd2c72c5fabbe83d10102e118b0ef1451ec136e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fc5975e25fa3b1f2d2aab991cc7aac8038181f3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882729"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572754"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Supprimer un calendrier de réservation dans Bookings
 
-Cet article explique comment supprimer un calendrier de réservation indésirable. Vous pouvez supprimer le calendrier de réservation dans le Centre d’administration Microsoft 365 ou vous pouvez utiliser PowerShell. Le calendrier Bookings est une boîte aux lettres dans Exchange Online vous supprimez le compte d’utilisateur correspondant pour supprimer le calendrier de réservation.
+Cet article explique comment supprimer un calendrier de réservation indésirable. Vous pouvez supprimer le calendrier de réservation dans le Centre d’administration Microsoft 365 ou vous pouvez utiliser PowerShell. Le calendrier Bookings est une boîte aux lettres Exchange Online vous supprimez le compte d’utilisateur correspondant pour supprimer le calendrier de réservation.
 
 > [!IMPORTANT]
 > Tous les calendriers de réservation que vous avez créés en 2017 ou avant doivent être supprimés à l’aide des instructions PowerShell de cette rubrique. Tous les calendriers de réservation créés en 2018 ou après peuvent être supprimés dans le Centre d’administration Microsoft 365.
 
 Le calendrier de réservation est l’endroit où sont stockées toutes les informations pertinentes sur ce calendrier de réservation et les données, notamment :
 
-- Informations professionnelles, logo et heures de travail ajoutés lors de la création du calendrier de réservation
+- Informations professionnelles, logo et heures de travail ajoutées lors de la création du calendrier de réservation
 - Personnel et services pertinents ajoutés lors de la création du calendrier de réservation
 - Toutes les réservations et les congés ajoutés au calendrier de réservation une fois créés.
 
@@ -38,11 +38,11 @@ Le calendrier de réservation est l’endroit où sont stockées toutes les info
 
 1. Dans le centre d'administration, sélectionnez **Utilisateurs**.
 
-   ![Image de l’interface utilisateur utilisateur dans Centre d’administration Microsoft 365](../media/bookings-admin-center-users.png)
+   ![Image de l’interface utilisateur utilisateur dans Centre d’administration Microsoft 365.](../media/bookings-admin-center-users.png)
 
 1. Sur la page **Utilisateurs actifs**, sélectionnez les noms des utilisateurs à supprimer, puis **Supprimer l'utilisateur**.
 
-   ![Image de la suppression de l’interface utilisateur dans Centre d’administration Microsoft 365](../media/bookings-delete-user.png)
+   ![Image de la suppression de l’interface utilisateur dans Centre d’administration Microsoft 365.](../media/bookings-delete-user.png)
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Supprimer un calendrier de réservation à l’Exchange Online PowerShell
 
@@ -50,14 +50,14 @@ Consultez [Connecter à Exchange Online PowerShell pour les](/powershell/exchang
 
 Pour effectuer ces étapes, vous devez utiliser une fenêtre de commande Microsoft PowerShell active que vous avez exécutée en choisissant l’option « Exécuter en tant qu’administrateur ».
 
-1. Dans une fenêtre PowerShell, chargez le module EXO V2 en exécutant la commande suivante :
+1. Dans une fenêtre PowerShell, chargez le module EXO V2 en exécutant la commande suivante :
 
    ```powershell
    Import-Module ExchangeOnlineManagement
    ```
 
    > [!NOTE]
-   > Si vous avez déjà [installé le module EXO v2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module), la commande précédente fonctionnera comme écrite.
+   > Si vous avez déjà [installé le module EXO v2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module), la commande précédente fonctionnera comme écrite.
    
 2. La commande à exécuter utilise la syntaxe suivante:
 
@@ -67,7 +67,7 @@ Pour effectuer ces étapes, vous devez utiliser une fenêtre de commande Microso
 
    - _\<UPN\>_ est votre compte au format du nom d’utilisateur principal (par exemple, `john@contoso.com`).
 
-3. Lorsque vous y êtes invité, connectez-vous avec les informations d’identification de l’administrateur client au client Microsoft 365 qui héberge le calendrier de réservation que vous souhaitez supprimer définitivement.
+3. Lorsque vous y êtes invité, connectez-vous avec les informations d’identification d’administrateur client au client Microsoft 365 qui héberge le calendrier de réservation que vous souhaitez supprimer définitivement.
 
 4. Une fois cette commande traitée, entrez la commande suivante pour obtenir la liste des boîtes aux lettres de réservation dans votre client :
 

@@ -1,5 +1,5 @@
 ---
-title: Collecter les journaux de support dans Microsoft Defender pour les points de terminaison à l’aide de la réponse en direct
+title: Collecter les journaux de support dans Microsoft Defender pour les points de terminaison à l’aide d’une réponse en direct
 description: Découvrez comment collecter des journaux à l’aide d’une réponse en direct pour résoudre les problèmes de Microsoft Defender pour les points de terminaison
 keywords: support, journal, collecter, dépanner, réponse en direct, liveanalyzer, analyseur, en direct, réponse
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 518194e3cbf185da415104991e1d7186f5912953
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 83f6853217112741168876d92b9440869e29a5c1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250576"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575503"
 ---
-# <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Collecter les journaux de support dans Microsoft Defender pour point de terminaison à l’aide d’une réponse en direct
+# <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Collecter les journaux de support dans Microsoft Defender pour le point de terminaison à l’aide d’une réponse en direct
 
 
 **S’applique à :**
@@ -47,15 +47,15 @@ Cette rubrique fournit des instructions sur la façon d’exécuter l’outil vi
 
 3. Sélectionnez **Télécharger fichier vers la bibliothèque.**
 
-    ![Image du fichier de téléchargement](images/upload-file.png)
+    ![Image du fichier de téléchargement.](images/upload-file.png)
 
 4. Sélectionnez **Choisir un fichier.**
 
-    ![Image de choisir le bouton1 du fichier](images/choose-file.png)
+    ![Image de choisir le bouton1 du fichier.](images/choose-file.png)
 
 5. Sélectionnez le fichier téléchargé nommé MDELiveAnalyzer.ps1 puis cliquez sur **Confirmer**
 
-   ![Image de choisir le bouton2 du fichier](images/analyzer-file.png)
+   ![Image du bouton de choix du fichier 2.](images/analyzer-file.png)
 
 6. Pendant la session LiveResponse, utilisez les commandes ci-dessous pour exécuter l’analyseur et collecter le fichier de résultats :
 
@@ -64,7 +64,7 @@ Cette rubrique fournit des instructions sur la façon d’exécuter l’outil vi
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
     ```
 
-    [![Image des commandes](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
+    [![Image des commandes.](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
 
 > [!NOTE]
 >
@@ -86,8 +86,8 @@ Cette rubrique fournit des instructions sur la façon d’exécuter l’outil vi
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble de l’analyseur client](overview-client-analyzer.md)
 - [Télécharger et exécuter l’analyseur client](download-client-analyzer.md)
-- [Exécutez l’analyseur client sur Windows](run-analyzer-windows.md)
+- [Exécuter l’analyseur client sur Windows](run-analyzer-windows.md)
 - [Exécuter l’analyseur client sur macOS ou Linux](run-analyzer-macos-linux.md)
 - [Collecte de données pour la résolution avancée des problèmes sur Windows](data-collection-analyzer.md)
-- [Comprendre le rapport HTML de l’analyseur](analyzer-report.md)
+- [Comprendre le de rapport HTML de l’analyseur](analyzer-report.md)
 

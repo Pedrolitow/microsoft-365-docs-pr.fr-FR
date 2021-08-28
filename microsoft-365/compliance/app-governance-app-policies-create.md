@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des stratégies d’application.
-ms.openlocfilehash: 22836d5eff088d8bf76a418f6713a9ae84d0cb5e85d2065fcd64faec62131c26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b5f4bda7855f79e8a0e731cd6c26793ac9c6927
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842705"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572262"
 ---
 # <a name="create-app-policies"></a>Créer des stratégies d’application
 
@@ -169,7 +169,7 @@ Publish metadata-based policies
 
 Maintenant que votre stratégie d’application est créée, vous devez la surveiller sur la page **Stratégies** pour vous assurer qu’elle inscrit un nombre attendu d’alertes actives et le nombre total d’alertes pendant le test.
 
-![Page récapitulative des stratégies MAPG dans le Centre de conformité Microsoft 365 avec une stratégie mise en surbrillance](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
+![Page récapitulative des stratégies MAPG dans le Centre de conformité Microsoft 365 avec une stratégie mise en surbrillance.](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
 
 Si le nombre d’alertes est une valeur faible inattendue, modifiez les paramètres de la stratégie d’application pour vous assurer que vous l’avez correctement configurée avant de définir son état.
 
@@ -180,7 +180,7 @@ Voici un exemple de processus permettant de créer une stratégie, de la tester,
 3. Si le comportement n’est pas attendu, modifiez les applications de stratégie, les conditions et les paramètres d’action en fonction des besoins, puis revenez à l’étape 2.
 4. Si le comportement est attendu, modifiez la stratégie et remplacez son état par **Actif**.
 
-![Flux de travail créer une stratégie d’application](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
+![Flux de travail créer une stratégie d’application.](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
 
 ## <a name="next-step"></a>Étape suivante
 

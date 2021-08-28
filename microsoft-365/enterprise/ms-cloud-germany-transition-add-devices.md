@@ -17,13 +17,13 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemande.'
-ms.openlocfilehash: 49db57e49a7f3bc603b6d6b88368569ee2b326d6e3f568961eab028faa7e28c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemands.'
+ms.openlocfilehash: 79234b1398e26af5a2848002ea606d97137e3053
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795089"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573090"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’appareil pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -32,7 +32,7 @@ Les appareils joints à Azure AD et inscrits connectés à Microsoft Cloud Deuts
 ## <a name="azure-ad-joined-windows-10-devices"></a>Appareils joints à Azure AD Windows 10 appareils
 Si un Windows 10 est joint à Azure AD, il doit être déconnecté d’Azure AD et doit être connecté à nouveau.
 
-[![Azure AD Device ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) Re-Join Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD Device Re-Join Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
 Si l’utilisateur est un administrateur sur l’appareil Windows 10, il peut désinsser l’appareil d’Azure AD et le rejoindre à nouveau en trois étapes.
@@ -74,7 +74,7 @@ Tout autre compte professionnel de l’organisation peut se connecter à l’app
 
 Si un Windows 10 est inscrit à Azure AD, il doit être déconnecté d’Azure AD et de nouveau connecté.
 
-[![Azure AD Device ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) Re-Registration Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD Device Re-Registration Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>Étape 1 : Déterminer si l’appareil est inscrit sur Azure ID
 
@@ -127,7 +127,7 @@ Pour désins inscrire et réenregistrer l’appareil sur Android, Portail d’en
 
 1. Lancez Portail d’entreprise et allez sur **l’onglet** Appareils.
 2. Sélectionnez l’appareil pour voir les détails de l’appareil.
-3. Dans le menu des points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
+3. Dans le menu points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
 4. Vous devez maintenant être déconnecté de l’application Portail d’entreprise’application. Sélectionnez **Se connectez** pour ré-inscrire l’appareil.
 
 Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact sur l’administration ou l’utilisation, examinez les informations sur Azure Active Directory (Azure AD) dans Des informations [Azure AD](ms-cloud-germany-transition-azure-ad.md)supplémentaires pour la migration à partir de Microsoft Cloud Deutschland .
@@ -161,7 +161,7 @@ Les administrateurs doivent vérifier s’ils ont des appareils Azure AD inscrit
 
 **Quand mes utilisateurs ré-inscrivent-ils leurs appareils ?**
 
-Il est essentiel pour votre réussite que vous désins inscrivez et réenregistrez vos appareils une fois la [phase 9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) terminée. Vous devez terminer la ré-inscription avant le démarrage de la phase 10, sinon vous risquez de perdre l’accès à votre appareil.
+Pour réussir, vous devez uniquement désins inscrire et réenregistrer vos appareils une fois la [phase 9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) terminée. Vous devez terminer la ré-inscription avant le démarrage de la phase 10, sinon vous risquez de perdre l’accès à votre appareil.
 
 **Comment savoir que tous mes appareils sont inscrits dans le cloud public ?**
 

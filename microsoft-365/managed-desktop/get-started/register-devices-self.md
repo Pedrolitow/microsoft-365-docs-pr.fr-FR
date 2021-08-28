@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e68a2013a2c883356f11b94d21ac68169faa42d8b719f8a41af1b73cbadc970f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9be51ab9204ac8a950bf316f716b70b824980ba8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854458"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572622"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
@@ -83,7 +83,7 @@ Les données des fichiers CSV doivent être combinées en un seul fichier pour t
 
 Dans [Microsoft Endpoint Manager,](https://endpoint.microsoft.com/) **sélectionnez Appareils** dans le volet de navigation de gauche. Recherchez la Microsoft Manged Desktop section du menu et sélectionnez **Appareils.** Dans l Microsoft Manged Desktop de travail Appareils, sélectionnez **+** Inscrivez les appareils, qui ouvre un fly-in pour inscrire de nouveaux appareils.
 
-<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
+<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 

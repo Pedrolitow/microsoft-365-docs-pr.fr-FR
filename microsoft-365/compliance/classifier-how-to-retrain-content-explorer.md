@@ -14,19 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment fournir des commentaires à un classifieur entraidable dans l’Explorateur de contenu.
-ms.openlocfilehash: fddb25bb1ebf702d19767c13f65df4f925fcfc78a7036eb769b96241b271471c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Découvrez comment fournir des commentaires à un classifieur entraisable dans l’Explorateur de contenu.
+ms.openlocfilehash: 7c021a1fb7a79e335f53fd99b162c9062c4f43a0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796337"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571084"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Comment reformer un classificateur en explorateur de contenu
 
 Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Une fois formé, vous pouvez l’utiliser pour identifier l’élément à appliquer Office étiquettes de confidentialité, stratégies de conformité des communications et stratégies d’étiquette de rétention.
 
-Cet article vous montre comment améliorer les performances des classifieurs entraçables personnalisés et de certains classifieurs pré-formés en leur fournissant des commentaires supplémentaires.
+Cet article vous montre comment améliorer les performances des classifieurs entraisables personnalisés et de certains classifieurs pré-formés en leur fournissant des commentaires supplémentaires.
 
 Pour en savoir plus sur les différents types de classifieurs, voir En savoir plus sur les [classifieurs entraisables.](classifier-learn-about.md)
 
@@ -50,18 +50,18 @@ Vous aurez besoin de comptes avec ces autorisations pour utiliser des classifieu
 ## <a name="overall-workflow"></a>Flux de travail global
 
 > [!IMPORTANT]
-> Vous fournissez des commentaires dans l’Explorateur de contenu pour appliquer automatiquement des stratégies d’étiquette de rétention Exchange les éléments et utilise le classifieur comme condition. **Si vous n’avez pas de stratégie de rétention qui applique automatiquement une étiquette de rétention à Exchange éléments et utilise un classifieur comme condition, arrêtez-vous ici.**
+> Vous fournissez des commentaires dans l’Explorateur de contenu pour appliquer automatiquement des stratégies d’étiquette de rétention Exchange éléments et vous devez utiliser le classifieur comme condition. **Si vous n’avez pas de stratégie de rétention qui applique automatiquement une étiquette de rétention à Exchange éléments et utilise un classifieur comme condition, arrêtez-vous ici.**
 
-Lorsque vous utilisez vos classifieurs, vous souhaitez peut-être augmenter la précision des classifications qu’ils sont en train d’effectuer. Pour ce faire, vous devez évaluer la qualité des classifications des éléments qu’il a identifiés comme étant une correspondance ou non. Une fois que vous avez fait 30 évaluations pour un classificateur, il prend ce retour d’expérience et se réévalue automatiquement.
+Lorsque vous utilisez vos classifieurs, vous souhaitez peut-être augmenter la précision des classifications qu’ils sont en train d’effectuer. Pour ce faire, vous évaluez la qualité des classifications des éléments qu’il a identifiés comme étant une correspondance ou non. Une fois que vous avez fait 30 évaluations pour un classificateur, il prend ce retour d’expérience et se réévalue automatiquement.
 
 Pour en savoir plus sur le flux de travail global de la nouvelle formation d’un classifieur, voir Flux de processus pour former à nouveau [un classificateur.](classifier-learn-about.md#retraining-classifiers)
 
 > [!NOTE]
-> Un classifieur doit déjà être publié et en cours d’utilisation avant de pouvoir être à nouveau formé.
+> Un classificateur doit déjà être publié et en cours d’utilisation avant de pouvoir être à nouveau formé.
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Comment reformer un classificateur en explorateur de contenu
 
-1. Connectez-vous Centre de conformité Microsoft 365 avec l’accès au rôle d’administrateur de conformité ou d’administrateur de sécurité **et ouvrez**  >  **Centre de conformité Microsoft 365'explorateur** de contenu de classification  >  **des données.** 
+1. Connectez-vous à Centre de conformité Microsoft 365 accès au rôle d’administrateur de conformité ou d’administrateur de sécurité **et ouvrez**  >  **Centre de conformité Microsoft 365'explorateur** de contenu de classification  >  **des données.** 
 2. Sous le filtre **sur les étiquettes, les types d’informations** ou la liste des catégories, développez **classifieurs Avec formation.**
 
 > [!IMPORTANT]
@@ -79,7 +79,7 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 
 5. Choose **Provide feedback**.
 6. Dans le **volet commentaires détaillés,** si l’élément est un vrai positif, choisissez, **Match**.  Si l’élément est un faux positif, c’est-à-dire qu’il a été inclus de manière incorrecte dans la catégorie, **sélectionnez Ne pas correspondre.**
-7. S’il existe un autre classificateur qui serait plus approprié pour l’élément, vous pouvez le choisir dans la liste Suggérer d’autres **classifieurs entra nessifiables.** Cela déclenchera l’évaluation de l’élément par l’autre classificateur.
+7. S’il existe un autre classificateur qui serait plus approprié pour l’élément, vous pouvez le choisir dans la liste Suggérer d’autres **classifieurs entra nessifiables.** Cela déclenche l’évaluation de l’élément par l’autre classificateur.
 8. Sélectionnez **Envoyer des commentaires** pour envoyer votre évaluation des `match` classifications et suggérer `not a match` d’autres classifieurs entraintables. Lorsque vous avez fourni 30 instances de commentaires à un classifieur, il se formera automatiquement. La formation peut prendre entre une et quatre heures. Les classifieurs ne peuvent être formés que deux fois par jour.
 
 > [!IMPORTANT]
@@ -88,13 +88,13 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 9. Ouvrez **les classifieurs Avec formation.**
 10. Le classificateur qui a été utilisé dans votre stratégie de conformité des communications s’affiche sous **l’en-tête Nouvelle** formation.
 
-![classifieur en état de formation](../media/classifier-retraining.png)
+![classifieur en état de formation.](../media/classifier-retraining.png)
 
 11. Une fois la nouvelle formation terminée, choisissez le classificateur pour ouvrir la vue d’ensemble de la nouvelle formation.
 
-![Vue d’ensemble des résultats de la formation du classificateur](../media/classifier-retraining-overview.png)
+![vue d’ensemble des résultats de la formation du classificateur.](../media/classifier-retraining-overview.png)
 
-12. Examinez l’action recommandée et les comparaisons de prédictions des versions réétrainées et actuellement publiées du classificateur.
+12. Examinez l’action recommandée, ainsi que les comparaisons de prédictions des versions du classifieur actuellement publiées et retentées.
 13. If you satisfied with the results of the retraining, choose **Re-publish**.
 14. Si vous n’êtes pas satisfait des résultats de la nouvelle formation, vous pouvez choisir de fournir des commentaires supplémentaires au classificateur dans l’interface de l’Explorateur de contenu et de démarrer un autre cycle de formation ou de ne rien faire, auquel cas la version actuellement publiée du classificateur continuera d’être utilisée. 
 

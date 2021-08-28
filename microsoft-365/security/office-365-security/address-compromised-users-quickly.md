@@ -15,12 +15,12 @@ ms.date: 06/10/2021
 description: Découvrez comment accélérer le processus de détection et de traitement des comptes d’utilisateur compromis à l’aide de fonctionnalités automatisées d’examen et de réponse dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0f72b876570f7551694053d81d716dce8f92379c1d57a3f4bd8b1a83ffa57f7b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a90768038bde3126dd4ac3e5016f4d04aded9af
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867513"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572478"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Résoudre les comptes d’utilisateur compromis grâce à un examen et à une réponse automatisés
 
@@ -32,7 +32,7 @@ ms.locfileid: "53867513"
 
 [Microsoft Defender pour Office 365 Plan 2 inclut](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) des fonctionnalités d’investigation [et de](office-365-air.md) réponse automatisées (AIR) puissantes. Ces fonctionnalités peuvent faire gagner beaucoup de temps et d’efforts à votre équipe en matière d’opérations de sécurité pour gérer les menaces. Microsoft continue d’améliorer les fonctionnalités de sécurité. Récemment, les fonctionnalités AIR ont été améliorées pour inclure un manuel de sécurité utilisateur compromis (actuellement en prévisualisation). Lisez cet article pour en savoir plus sur le manuel de sécurité des utilisateurs compromis. Pour plus d’informations, voir le billet de blog Accélérer le temps de détection et de réponse à la compromission de l’utilisateur et limiter l’étendue des violations avec [Microsoft Defender pour Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) plus d’informations.
 
-![Examen automatisé pour un utilisateur compromis](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
+![Examen automatisé pour un utilisateur compromis.](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
 Le manuel de sécurité des utilisateurs compromis permet à l’équipe de sécurité de votre organisation de :
 
@@ -46,11 +46,11 @@ Lorsqu’un compte d’utilisateur est compromis, des comportements inhabituels 
 
 Par exemple, voici une alerte déclenchée en raison de l’envoi de messages électroniques suspects :
 
-![Alerte déclenchée en raison d’un envoi de courrier suspect](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
+![Alerte déclenchée en raison d’un envoi de courrier suspect.](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
 
 Voici un exemple d’alerte déclenchée lorsqu’une limite d’envoi a été atteinte pour un utilisateur :
 
-![Alerte déclenchée par la limite d’envoi atteinte](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
+![Alerte déclenchée par la limite d’envoi atteinte.](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
 
 ## <a name="investigate-and-respond-to-a-compromised-user"></a>Examiner un utilisateur compromis et y répondre
 
@@ -71,11 +71,11 @@ Vous avez plusieurs options pour naviguer vers une liste d’utilisateurs restre
 
 2. Dans la page **Alertes,** filtrez les résultats par période de temps et la stratégie nommée Utilisateur limité à **l’envoi de courrier électronique**.
 
-   ![Page Alertes dans le portail Microsoft 365 Defender filtré pour les utilisateurs restreints](../../media/m365-sc-alerts-page-with-restricted-user.png)
+   ![La page Alertes du portail Microsoft 365 Defender filtré pour les utilisateurs restreints.](../../media/m365-sc-alerts-page-with-restricted-user.png)
 
-3. Si vous sélectionnez l’entrée en cliquant sur le nom, une **page** utilisateur dont l’envoi est restreint s’ouvre avec des détails supplémentaires que vous pouvez consulter. En regard  du bouton Gérer l’alerte, vous pouvez cliquer sur Icône Plus d’options Plus d’options, puis sélectionner Afficher les détails des utilisateurs restreints pour aller à la ![ ](../../media/m365-cc-sc-more-actions-icon.png)  page **Utilisateurs restreints,**  où vous pouvez libérer l’utilisateur [restreint.](removing-user-from-restricted-users-portal-after-spam.md)
+3. Si vous sélectionnez l’entrée en cliquant sur le nom, une **page** utilisateur dont l’envoi est restreint s’ouvre avec des détails supplémentaires que vous pouvez consulter. En plus du bouton **Gérer l’alerte,** vous pouvez cliquer sur ![ l’icône Options supplémentaires.](../../media/m365-cc-sc-more-actions-icon.png) **Plus d’options,** puis sélectionnez Afficher les détails des utilisateurs restreints pour aller à la **page** **Utilisateurs restreints,** où vous pouvez libérer [l’utilisateur restreint.](removing-user-from-restricted-users-portal-after-spam.md)
 
-   ![L’utilisateur ne peut pas envoyer de courrier à partir du centre d’alertes](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
+   ![L’utilisateur ne peut pas envoyer de courrier à partir du centre d’alertes.](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
 
 ### <a name="view-details-about-automated-investigations"></a>Afficher les détails sur les enquêtes automatisées
 
@@ -91,7 +91,7 @@ Pour en savoir plus, [consultez les détails d’une enquête.](air-view-investi
 
 - **Ne comptez pas sur une alerte de connexion suspecte comme seul indicateur.** Lorsqu’un compte d’utilisateur est compromis, il peut ou non déclencher une alerte de connexion suspecte. Parfois, c’est la série d’activités qui se produisent après qu’un compte est compromis qui déclenche une alerte. Vous souhaitez en savoir plus sur les alertes ? Voir [stratégies d’alerte.](../../compliance/alert-policies.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Passer en revue les autorisations requises pour utiliser les fonctionnalités AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 40d1bdb31d0364ab83cd8cfd76fa5b9d12395237830273d880bf786026323057
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9047c6e5b91ebd2d7e0a4e953ca907b31cb476f8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833749"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573054"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurer et valider des exclusions pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -52,7 +52,7 @@ Les exclusions peuvent être utiles pour éviter les détections incorrectes sur
 
 Le tableau suivant indique les types d’exclusion pris en charge par Defender pour Endpoint sur Mac.
 
-Exclusion|Définition|Exemples
+Exclusion|Définition|範例
 ---|---|---
 Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’ordinateur|`.test`
 Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
@@ -79,7 +79,7 @@ Pour plus d’informations sur la configuration des exclusions à partir de JAMF
 
 Ouvrez l’application Defender for Endpoint et accédez à Gérer les **paramètres** Ajouter ou supprimer une exclusion... , comme illustré  >  dans la capture d’écran suivante :
 
-![Capture d’écran Gérer les exclusions](images/mdatp-37-exclusions.png)
+![Capture d’écran Gérer les exclusions.](images/mdatp-37-exclusions.png)
 
 Sélectionnez le type d’exclusion que vous souhaitez ajouter et suivez les invites.
 

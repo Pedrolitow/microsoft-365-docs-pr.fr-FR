@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gérez vos stratégies de gouvernance des applications.
-ms.openlocfilehash: 7da710675ab76a9bdbbf81b0186e4364ce77b84b4c6d2d6ae910ba33ea26a8a5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 270315e15a79b97b55aa729d4b7e9b39930ee82c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820725"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571144"
 ---
 # <a name="manage-app-policies"></a>Gérer les stratégies d’application
 
@@ -43,7 +43,7 @@ Voici un exemple de processus de gestion d’une stratégie existante :
 1. Si le comportement n’est pas attendu, revenez à l’étape 1.
 1. Si le comportement est attendu, modifiez la stratégie et remplacez son état par actif (si nécessaire).
 
-![Flux de travail de gestion de la stratégie d’application](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
+![Flux de travail de gestion de la stratégie d’application.](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
 
 ## <a name="editing-an-app-policy-configuration"></a>Modification d’une configuration de stratégie d’application
 

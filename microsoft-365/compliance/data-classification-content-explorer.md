@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 5cebf4f53a331712df6a480a6d813da7232b5858
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: e1cae053c7b13ceec9c7f3274122cf004c7277e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502914"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571385"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -31,7 +31,7 @@ L’Explorateur de contenu de la classification des données vous permet d’aff
 
 ![capture d’écran réduite de l’explorateur de contenu](../media/data-classification-content-explorer-1.png)
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Chaque compte qui accède et utilise la classification de données doit posséder une licence pour l’un des abonnements suivants :
 
@@ -111,14 +111,14 @@ Les [étiquettes de rétention](retention.md) vous permettent de définir la dur
 ### <a name="export"></a>Exporter
 Le contrôle des **exportations** crée un fichier .csv qui contient une liste de tout ce qui s’affiche dans le volet **Tous les emplacements**.
 
-![Contrôle des exportations de la classification des données](../media/data_classification_export_control.png)
+![Contrôle des exportations de la classification des données.](../media/data_classification_export_control.png)
 
 
 ### <a name="search"></a>Rechercher
 
 Lorsque vous explorez un emplacement, par exemple, un dossier Exchange, ou un site SharePoint ou OneDrive, l’outil de **recherche** s’affiche.
 
-![Outil de recherche dans l’explorateur de contenu](../media/data_classification_search_tool.png)
+![Outil de recherche dans l’explorateur de contenu.](../media/data_classification_search_tool.png)
 
 
 L’étendue de l’outil de recherche définie ce qui s’affiche dans le volet **Tous les emplacements** et ce que vous pouvez rechercher varie en fonction de l’emplacement sélectionné. 

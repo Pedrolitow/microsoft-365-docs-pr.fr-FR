@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 30b8b78bafab66957927c3802eb3ec739ccd91c5
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 14eeb2051cf4b071139c5849583901d3cc3186c9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257032"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572586"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -43,7 +43,7 @@ Certaines conditions minimales sont requises pour l’intégration d’appareils
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Microsoft Defender pour le point de terminaison nécessite l’une des offres de licence en volume Microsoft suivantes :
+Microsoft Defender for Endpoint nécessite l’une des offres de licence en volume Microsoft suivantes :
 
 - Windows 10 Entreprise E5
 - Windows 10 Éducation A5
@@ -102,7 +102,7 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 10 Professionnel
 - Windows 10 Professionnel Éducation
 - Windows serveur
-  - Windows Server 2008 R2 SP1
+  - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Serveur, version 1803 ou ultérieure
@@ -135,7 +135,7 @@ La configuration matérielle requise pour Defender pour Endpoint sur les apparei
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>Configuration requise pour le stockage réseau et les données
 
-Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vous devez choisir l’endroit où sont stockées vos informations relatives aux points de terminaison Microsoft Defender : dans l’Union européenne, le Royaume-Uni ou le centre de données des États-Unis.
+Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vous devez choisir l’endroit où sont stockées vos informations relatives au point de terminaison Microsoft Defender : dans l’Union européenne, le Royaume-Uni ou le centre de données des États-Unis.
 
 > [!NOTE]
 > - Vous ne pouvez pas modifier votre emplacement de stockage de données après la première installation.
@@ -166,7 +166,7 @@ Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez de
 
    Si le service est activé, le résultat doit ressembler à la capture d’écran suivante :
 
-   ![Résultat de la commande de requête sc pour diagtrack](images/windefatp-sc-qc-diagtrack.png)
+   ![Résultat de la commande de requête sc pour diagtrack.](images/windefatp-sc-qc-diagtrack.png)
 
 
 Vous devez configurer le service pour qu’il démarre automatiquement si la START_TYPE n’est pas définie sur **AUTO_START**. 
@@ -206,11 +206,11 @@ Avant d’intégrer des appareils, le service de données de diagnostic doit êt
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Antivirus Microsoft Defender configuration requise
 
-L’agent Defender for Endpoint dépend de la capacité des Antivirus Microsoft Defender à analyser des fichiers et à fournir des informations les concernant.
+L’agent Defender for Endpoint dépend de la capacité de l’Antivirus Microsoft Defender analyser les fichiers et de fournir des informations les concernant.
 
 Configurez les mises à jour d’intelligence de sécurité sur les appareils Defender for Endpoint, Antivirus Microsoft Defender est le logiciel anti-programme malveillant actif ou non. Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender mises à jour et appliquer les lignes de base.](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)
 
-Lorsque Antivirus Microsoft Defender n’est pas le logiciel anti-programme malveillant actif dans votre organisation et que vous utilisez le service Defender pour point de terminaison, Antivirus Microsoft Defender passe en mode passif.
+Lorsque Antivirus Microsoft Defender n’est pas le logiciel anti-programme malveillant actif dans votre organisation et que vous utilisez le service Defender for Endpoint, Antivirus Microsoft Defender passe en mode passif.
 
 Si votre organisation a désactivé la Antivirus Microsoft Defender par le biais d’une stratégie de groupe ou d’autres méthodes, les appareils intégrés doivent être exclus de cette stratégie de groupe.
 
@@ -227,7 +227,7 @@ Si vous exécutez Antivirus Microsoft Defender en tant que produit anti-programm
 Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions de gestion des périphériques mobiles ou des Microsoft Endpoint Manager (branche actuelle), vous devez vous assurer que le pilote ELAM Antivirus Microsoft Defender est activé. Pour plus d’informations, [voir s’assurer Antivirus Microsoft Defender n’est pas désactivé par la stratégie.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Configurer Microsoft Defender pour le déploiement de point de terminaison](production-deployment.md)
 - [Intégration des appareils](onboard-configure.md)

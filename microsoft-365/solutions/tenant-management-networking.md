@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimisez l’accès réseau à vos Microsoft 365 client.
-ms.openlocfilehash: 6741c47fac4cadab8a6c5df7febc07250219072a4429abe15bf6ba97e41cbeeb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4bf988aca4145d52d8e5e1bb68c6e8cf134be534
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804518"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575863"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
 
@@ -43,7 +43,7 @@ L’objectif principal dans la conception du réseau doit être de réduire la l
 
 Voici un exemple de réseau d’entreprise traditionnel.
 
-![Un réseau d’entreprise traditionnel avec un accès centralisé à Internet](../media/tenant-management-overview/tenant-management-networking-traditional.png)
+![Un réseau d’entreprise traditionnel avec un accès centralisé à Internet.](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
 Dans cette illustration, les succursales se connectent à un bureau central par le biais de périphériques de réseau large (WAN) et d’une dorsale de base du réseau wan. L’accès à Internet s’fait par le biais d’un périphérique de sécurité ou de proxy au niveau du périmètre réseau du siège social et d’un fournisseur de services Internet (ISP). Sur Internet, microsoft Global Network dispose d’une série de portes d’entrée dans des régions du monde entier. Les organisations peuvent également utiliser des emplacements intermédiaires pour le traitement de paquets supplémentaire et la sécurité du trafic. Le client Microsoft 365 d’une organisation se trouve dans le réseau global Microsoft.
 
@@ -62,9 +62,9 @@ L’optimisation Microsoft 365 performances réseau n’a pas besoin d’être c
 
 Si vous implémentez ces principes, vous obtenez un réseau d’entreprise optimisé pour Microsoft 365.
 
-![Un réseau d’entreprise optimisé pour Microsoft 365](../media/tenant-management-overview/tenant-management-networking-optimized.png)
+![Un réseau d’entreprise optimisé pour Microsoft 365.](../media/tenant-management-overview/tenant-management-networking-optimized.png)
 
-Dans cette illustration, les succursales ont leur propre connexion Internet via un périphérique wan (SDWAN) défini par logiciel, qui envoie le trafic Microsoft 365 approuvé vers la porte frontale la plus proche au niveau régional. Au siège social, le trafic Microsoft 365 de confiance contourne le périphérique de sécurité ou de proxy et les périphériques intermédiaires ne sont plus utilisés.
+Dans cette illustration, les succursales ont leur propre connexion Internet via un périphérique wan (SDWAN) défini par logiciel, qui envoie le trafic Microsoft 365 approuvé vers la porte d’entrée la plus proche au niveau régional. Au siège social, le trafic Microsoft 365 de confiance contourne le périphérique de sécurité ou de proxy et les périphériques intermédiaires ne sont plus utilisés.
 
 Voici comment la configuration optimisée résout les problèmes de latence d’un réseau d’entreprise traditionnel :
 
@@ -78,7 +78,7 @@ Pour plus d’informations, [voir Microsoft 365 vue d’ensemble de la connectiv
 
 Si vos employés à distance utilisent un client VPN traditionnel pour obtenir l’accès à distance au réseau de votre organisation, vérifiez que le client VPN a une prise en charge de la segmentation de tunnel. Sans cette segmentation, l’ensemble de votre trafic de travail à distance est envoyé sur la connexion VPN, où il doit être transféré vers les appareils Microsoft Edge de votre organisation, être traité, puis envoyé sur Internet. Voici un exemple.
 
-![Trafic réseau provenant de clients VPN sans segmentation de tunnel](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
+![Trafic réseau provenant de clients VPN sans tunneling.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
 Dans cette illustration, le trafic Microsoft 365 doit prendre un itinéraire indirect par le biais de votre organisation, qui peut être transmis à une porte principale du réseau global Microsoft loin de l’emplacement physique du client VPN. Ce chemin d’accès indirect ajoute de la latence au trafic réseau et réduit les performances globales. 
 
@@ -88,7 +88,7 @@ Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos 
 
 Voici le flux de trafic résultant pour le tunneling fractionné, dans lequel la plupart du trafic vers Microsoft 365 applications cloud contournent la connexion VPN.
 
-![Trafic réseau provenant de clients VPN avec segmentation de tunnel](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
+![Trafic réseau des clients VPN avec tunneling.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 Dans cette illustration, le client VPN envoie et reçoit un trafic de service cloud Microsoft 365 essentiel directement via Internet et vers la porte d’accès la plus proche dans le réseau global Microsoft.
 
@@ -105,7 +105,7 @@ Il existe deux informations réseau au niveau du client qui peuvent être affich
 
 Voici les informations réseau spécifiques pour chaque emplacement de bureau :
 
-- [Sortie réseau backhauled](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
+- [Sortie du réseau backhauled](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
 - [Meilleures performances détectées pour les clients proches de chez vous](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
 - [Utilisation d’une porte d’Exchange Online service non optimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Utilisation d’une porte d’entrée du service SharePoint Online non optimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
@@ -125,7 +125,7 @@ Le réseau de distribution de contenu Office 365 est composé de plusieurs rés
 
 Lorsqu’elle est déployée et configurée, la Office 365 CDN charge les ressources à partir d’origines publiques et privées et les rend disponibles pour un accès rapide aux utilisateurs situés sur Internet.
 
-![Office 365 CDN pour les utilisateurs](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN pour les utilisateurs")
+![Office 365 CDN déployés pour les utilisateurs.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN pour les utilisateurs")
 
 Pour plus d’informations, [voir Utiliser la Office 365 CDN avec SharePoint Online.](../enterprise/use-microsoft-365-cdn-with-spo.md)
 
@@ -157,7 +157,7 @@ Pour votre client Microsoft 365 avec une mise en réseau optimale, vous avez dé
 
 Voici un exemple d’organisation d’entreprise et de son client avec une mise en réseau optimale.
 
-![Exemple de client avec une mise en réseau optimale](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
+![Exemple de client avec une mise en réseau optimale.](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
 [Voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
@@ -177,6 +177,6 @@ Régulièrement, vous devrez peut-être :
 
 ## <a name="next-step"></a>Étape suivante
 
-[![Étape 3. Synchroniser vos identités et appliquer des sign-ins sécurisées](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
+[![Étape 3. Synchronisez vos identités et appliquez des sign-ins sécurisées.](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
 
 Continuez [avec l’identité](tenant-management-identity.md) pour synchroniser vos comptes et groupes locaux et appliquer des connecteurs utilisateur sécurisés.

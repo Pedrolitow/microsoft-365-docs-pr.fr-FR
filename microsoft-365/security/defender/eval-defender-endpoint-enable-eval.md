@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: af66b41af4d4d427988bf46d266329777d3a908c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: fb8e77a11b3844d78c99b56863bdb9ea424c48f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394695"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572970"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Activer Microsoft Defender pour l’environnement d’évaluation des points de terminaison
 
@@ -39,7 +39,7 @@ Cet article vous guide tout au long des étapes de configuration de l’environn
 
 Utilisez les étapes suivantes pour activer l’évaluation de Microsoft Defender pour Endpoint.
 
-![Étapes pour activer Microsoft Defender pour le point de terminaison dans l’environnement d’évaluation De Microsoft Defender](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
+![Étapes permettant d’activer Microsoft Defender pour le point de terminaison dans l’environnement d’évaluation de Microsoft Defender.](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
 
 - [Étape 1. Vérifier l’état de la licence](#step-1-check-license-state)
 - [Étape 2. Points de terminaison intégrés](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
@@ -52,13 +52,13 @@ Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle 
 
 1. Pour afficher vos licences, accédez au portail **Microsoft Azure et** accédez à la section [Microsoft Azure licences du portail.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
-   ![Image de la page de gestion des licences Azure](../../media/defender/atp-licensing-azure-portal.png)
+   ![Image de la page De gestion des licences Azure.](../../media/defender/atp-licensing-azure-portal.png)
 
 1. Vous pouvez également accéder aux abonnements de facturation dans le Centre  >  **d’administration.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 
-    ![Image des licences de facturation](../../media/defender/atp-billing-subscriptions.png)
+    ![Image des licences de facturation.](../../media/defender/atp-billing-subscriptions.png)
 
 ## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Étape 2. Intégrer des points de terminaison à l’aide de l’un des outils de gestion pris en charge
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 33de1e3adc004e05a8c383c8277c358d769bf520528c4c7332e23c5d05635051
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 028723dfb41f8e4cca71ea67aea5a88a46c9bb50
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838933"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572958"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtenir des notifications d’incident par courrier électronique
 
@@ -65,7 +65,7 @@ Suivez ces étapes pour créer une règle et personnaliser les paramètres de no
     - **Inclure le nom de l’organisation dans l’e-mail** : sélectionnez si vous souhaitez que le nom de votre organisation apparaisse dans la notification par courrier électronique.
     - **Inclure un** lien portail propre au client : sélectionnez si vous souhaitez ajouter un lien avec l’ID de client dans la notification par courrier électronique pour accéder à un client Microsoft 365 spécifique.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Paramètres de notification pour les notifications d’incident par courrier électronique":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Paramètres de notification pour les notifications d’incident par courrier électronique.":::
 
 5. Sélectionnez **Suivant**. Dans la page **Destinataires,** ajoutez les adresses de messagerie qui recevront les notifications d’incident. Sélectionnez **Ajouter** après avoir tapé chaque nouvelle adresse de messagerie. Pour tester les notifications et vérifier que les destinataires les reçoivent dans les boîtes de réception, **sélectionnez Envoyer un message électronique de test.** 
 6. Sélectionnez **Suivant**. Dans la page **Examiner la règle,** examinez les paramètres de la règle, puis sélectionnez **Créer une règle.** Les destinataires commenceront à recevoir des notifications d’incident par courrier électronique en fonction des paramètres.

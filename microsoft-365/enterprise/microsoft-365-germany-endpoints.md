@@ -20,12 +20,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Dans cet article, vous trouverez des points de terminaison accessibles pour les clients qui utilisent Office 365 en Allemagne.
 hideEdit: true
-ms.openlocfilehash: 04a183bfbea22d189a45b8fba90f0fc1c28b1577e4b7e82e5f2a0703d5f6a5e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f022c82c41aaeeed73af13572234e7826d878158
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795161"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575599"
 ---
 # <a name="office-365-germany-endpoints"></a>Points de terminaison Office 365 Germany
 
@@ -39,7 +39,7 @@ Office 365 nécessite une connexion à Internet. Les points de terminaison ci-de
   
  **Points de terminaison Office 365:**[Dans le monde ( GCC inclus)](urls-and-ip-address-ranges.md)  | [Office 365 géré par 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany* | [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
-**Last updated:** 12/01/2020 - ![ RSS Change Log ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [subscription](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**Last updated:** 01/12/2020 - ![ RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement au journal des changements](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **Téléchargement :** toutes les destinations obligatoires et facultatives dans une liste [au format JSON](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 

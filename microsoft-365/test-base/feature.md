@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 91fcbdfeeec0a4127f0e1642049fd421a30df00ed4bd757a89d582015d477fc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a0a60a061959a5aff038c3e74da7e1775f66e237
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888301"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576031"
 ---
 # <a name="windows-feature-update-validation"></a>Windows Validation de la mise à jour des fonctionnalités
 
@@ -37,22 +37,22 @@ Vous trouverez ci-dessous les étapes à suivre lorsque vous remplissez les **d�
 
 1. Sélectionnez **Mise à jour des fonctionnalités** comme type de mise à jour du système d’exploitation :
 
-![Type de système d’exploitation de validation de mise à jour des fonctionnalités](Media/Feature-update-validation-01.png)
+![Type de système d’exploitation de validation de mise à jour des fonctionnalités.](Media/Feature-update-validation-01.png)
 
 2. Choisissez le canal Windows Insider sur lequel vous souhaitez que votre application soit validée.  
 
-![Validation de la mise à jour des fonctionnalités. Choix du canal insider bêta](Media/Feature-update-validation-02.png)
+![Validation de la mise à jour des fonctionnalités. Choix du canal insider bêta.](Media/Feature-update-validation-02.png)
 
-3. Sélectionnez une version commercialisée de Windows 10 ou Windows 11 comme référence pour votre test (et informations résultantes!) et fournissez les autres détails nécessaires pour intégrer correctement votre package.
+3. Sélectionnez une version commercialisée de Windows 10 ou Windows 11 comme référence pour votre test (et les informations résultantes!) et fournissez les autres détails nécessaires pour intégrer correctement votre package.
 
-![Validation de la mise à jour des fonctionnalités avec les versions Windows 10 et Windows 11](Media/Feature-update-validation-03.png)
+![Validation de la mise à jour des fonctionnalités avec les versions Windows 10 et Windows 11.](Media/Feature-update-validation-03.png)
 
 4. Pour afficher les résultats de la validation de votre application par rapport aux mises à jour de fonctionnalités Windows 10 pré-publiées, visitez la ```Feature Updates Test Results``` .
 
-![La validation de la mise à jour des fonctionnalités vous permet de passer rapidement en revue les résultats](Media/Feature-update-validation-04.png)
+![La validation de la mise à jour des fonctionnalités vous permet de passer rapidement en revue les résultats.](Media/Feature-update-validation-04.png)
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Passer à l’article suivant pour commencer à comprendre l’analyse de la régression de la mémoire.
 > [!div class="nextstepaction"]

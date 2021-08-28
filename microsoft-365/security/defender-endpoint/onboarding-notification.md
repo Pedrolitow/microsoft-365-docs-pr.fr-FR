@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c4fa624d6c0fb6ea299834fd4b57f37dd5f8f7c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9b00d971afa714b89a473ff75cf6022f8bba9ef8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531562"
+ms.locfileid: "58572562"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Créer une règle de notification lorsqu’un script d’intégration ou de mise hors-carte local est utilisé
 
@@ -54,18 +54,18 @@ Vous devez avoir accès à :
 
 2. Accédez **à Mes flux > Nouveau > programmé - à partir d’un espace vide.**
 
-    ![Image du flux](images/new-flow.png)
+    ![Image du flux.](images/new-flow.png)
 
 3. Créez un flux programmé.
    1. Entrez un nom de flux.
    2. Spécifiez le début et l’heure.
    3. Spécifiez la fréquence. Par exemple, toutes les 5 minutes.
 
-    ![Image du flux de notification](images/build-flow.png)
+    ![Image du flux de notification.](images/build-flow.png)
 
 4. Sélectionnez le bouton + pour ajouter une nouvelle action. La nouvelle action sera une demande HTTP à l’API du centre de sécurité Defender for Endpoint. Vous pouvez également le remplacer par le « connecteur WDATP » prédéfait (action : « Ordinateurs - Obtenir la liste des ordinateurs »).
 
-    ![Image de la récurrence et ajout d’une action](images/recurrence-add.png)
+    ![Image de la récurrence et ajout d’une action.](images/recurrence-add.png)
 
 5. Entrez les champs HTTP suivants :
 
@@ -76,21 +76,21 @@ Vous devez avoir accès à :
    - Public : `https://securitycenter.onmicrosoft.com/windowsatpservice\`
    - ID client : connectez-vous et accédez à Azure Active Directory >'inscription de l’application et obtenez la valeur https://portal.azure.com de l’ID client. 
    - Type d’informations d’identification : sélectionnez « Secret ».
-   - Secret : connectez-vous et accédez à https://portal.azure.com **Azure Active Directory > inscriptions d’application** et obtenez la valeur de l’ID de client.
+   - Secret : connectez-vous et accédez à Azure Active Directory > inscriptions d’application et obtenez la valeur https://portal.azure.com de l’ID de client. 
 
-    ![Image des conditions HTTP](images/http-conditions.png)
+    ![Image des conditions HTTP.](images/http-conditions.png)
 
 6. Ajoutez une nouvelle étape en sélectionnant Ajouter une **nouvelle action,** puis recherchez opérations de **données** et sélectionnez Analyse **JSON**.
 
-    ![Image des opérations de données](images/data-operations.png)
+    ![Image des opérations de données.](images/data-operations.png)
 
 7. Ajouter le corps dans **le champ** Contenu.
 
-    ![Image de l’utilisation du JSON d’une parse](images/parse-json.png)
+    ![Image de l’utilisation du JSON d’une parse.](images/parse-json.png)
 
 8. Sélectionnez **l’exemple de charge utile Utiliser pour générer un lien de** schéma.
 
-    ![Image d’un json d’parse avec la charge utile](images/parse-json-schema.png)
+    ![Image d’un json d’parse avec la charge utile.](images/parse-json-schema.png)
 
 9. Copiez et collez l’extrait de code JSON suivant :
 
@@ -179,22 +179,22 @@ Vous devez avoir accès à :
     - Si oui, aucune notification ne sera déclenchée
     - Si non, enregistre le ou les nouveaux appareils intégrés dans la liste SharePoint et une notification est envoyée à l’administrateur de Defender for Endpoint
 
-    ![Image de l’application à chaque](images/flow-apply.png)
+    ![Image d’application à chacun d’eux.](images/flow-apply.png)
 
-    ![Image de s’appliquer à chacun avec obtenir des éléments](images/apply-to-each.png)
+    ![Image de s’appliquer à chacun avec obtenir des éléments.](images/apply-to-each.png)
 
 11. Under **Condition**, add the following expression: « length(body('Get_items')?[' value']) » et définissez la condition sur 0.
 
-    ![Image d’application à chaque condition ](images/apply-to-each-value.png)
-     ![ Image de condition1 ](images/conditions-2.png)
-     ![ Image de condition2 ](images/condition3.png)
-     ![ Image d’envoi de courrier électronique](images/send-email.png)
+    ![Image d’application à chaque condition. ](images/apply-to-each-value.png)
+     ![ Image de condition1. ](images/conditions-2.png)
+     ![ Image de condition2. ](images/condition3.png)
+     ![ Image de l’envoi d’un message électronique.](images/send-email.png)
 
 ## <a name="alert-notification"></a>Notification d’alerte
 
 L’image suivante est un exemple de notification par courrier électronique.
 
-![Image de la notification par courrier électronique](images/alert-notification.png)
+![Image de la notification par courrier électronique.](images/alert-notification.png)
 
 ## <a name="tips"></a>Conseils
 

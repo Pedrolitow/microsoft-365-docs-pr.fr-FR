@@ -17,20 +17,20 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Découvrez comment l’onglet Décider dans Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte du jeu de révision des fichiers de cas.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b1bab0cc7460e9260dd8f7bc6b5adb90d5a06a9b0e7832b28f7d3a2cb4e35f85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: deb47c0c795a828804722085f8cfa3b002580307
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842342"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571361"
 ---
 # <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>Les décisions basées sur la pertinence entraînent Advanced eDiscovery
   
-Dans le module Pertinence de Advanced eDiscovery, l’onglet Décider fournit des informations supplémentaires pour l’affichage et l’utilisation des statistiques de prise de décision pour déterminer la taille du jeu de fichiers de cas à réviser.
+Dans le module Pertinence de Advanced eDiscovery, l’onglet Décider fournit des informations supplémentaires pour l’affichage et l’utilisation des statistiques de prise de décision pour déterminer la taille du jeu de fichiers de cas de révision.
   
 ## <a name="using-the-decide-tab"></a>Utilisation de l’onglet Décider
 
-![Décision de pertinence](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
+![Décision de pertinence.](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
 Cet onglet comprend les composants suivants :
   
@@ -50,4 +50,4 @@ Cet onglet comprend les composants suivants :
 
   - **Répartition par score de pertinence**: les fichiers dans l’affichage gris foncé à gauche sont inférieurs au score de seuil. Une info-conseil affiche le score de pertinence et le pourcentage connexe de fichiers dans le jeu de fichiers de révision par rapport au nombre total de fichiers.
 
-Le volet **Détails développé** affiche plus de détails. Les fichiers dans les figures de collection n’incluent pas de fichiers vides ou nebules. Les figures de fichiers de famille représentent des fichiers qui ne sont pas chargés en Pertinence, mais qui sont toujours comptés dans le cadre de la famille.
+Le volet **Détails développé** affiche plus de détails. Les fichiers des figures de collection n’incluent pas les fichiers vides ou les fichiers nebules. Les figures de fichiers de famille représentent des fichiers qui ne sont pas chargés en Pertinence, mais qui sont toujours comptés dans le cadre de la famille.

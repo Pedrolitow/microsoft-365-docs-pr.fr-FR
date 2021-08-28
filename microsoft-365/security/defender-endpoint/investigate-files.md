@@ -19,18 +19,18 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 52e7a3098f157e52ecf32802a9f69328b28e2e52
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 6328d9879bf816e69c44007e7e85a30cfee086bc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684159"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572598"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -72,9 +72,9 @@ Les détails du fichier, les incidents, la détection des programmes malveillant
 
 Vous verrez des détails tels que le MD5 du fichier, le taux de détection du nombre total de virus et la détection de l’antivirus Microsoft Defender, le cas besoin, ainsi que la prévalence du fichier.
 
-La carte de prévalence du fichier indique où le fichier a été vu sur les appareils de l’organisation et du monde entier.
+La carte de prévalence du fichier indique où le fichier a été vu sur les appareils de l’organisation et du monde entier. 
 
-> [!NOTE]
+> [!NOTE] 
 > Différents utilisateurs peuvent voir des valeurs différentes dans les appareils de la *section* Organisation de la carte de prévalence du fichier. En effet, la carte affiche des informations en fonction de l’étendue RBAC dont dispose un utilisateur. Cela signifie que si un utilisateur a obtenu une visibilité sur un ensemble spécifique d’appareils, il verra uniquement le fichier de prévalence organisationnelle sur ces appareils.
 
 ![Image des informations de fichier.](images/atp-file-information.png)
@@ -89,8 +89,8 @@ La carte de prévalence du fichier indique où le fichier a été vu sur les app
 
 L’onglet Observé **dans l’organisation** vous permet de spécifier une plage de dates pour voir quels appareils ont été observés avec le fichier.
 
-> [!NOTE]
-> Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet vers un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
+>[!NOTE]
+>Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet vers un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
 
 ![Image de l’appareil observé le plus récent avec le fichier.](images/atp-observed-machines.png)
 

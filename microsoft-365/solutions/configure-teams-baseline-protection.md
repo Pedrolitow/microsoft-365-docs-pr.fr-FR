@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: e6caa9fb493c84331ea164b8a3f0f0ec2122fd5fb86e113253cd243644bbced8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862375"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575695"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -46,7 +46,7 @@ Nous vous recommandons également d’activer les fonctionnalités de base de De
 
 Dans chacun des niveaux, nous avons la possibilité de partager avec des personnes extérieures à votre organisation. Pour les niveaux sensibles et hautement sensibles, nous aurons la possibilité de désactiver le partage d'invités au niveau de l'équipe à l'aide d'étiquettes de confidentialité. Cependant, le paramètre de partage d’invités au niveau de l’organisation doit être activé pour que le partage d’invités fonctionne dans Teams.
 
-![Capture d’écran du commutateur Accès invité dans Teams](../media/teams-guest-access-toggle-on.png)
+![Capture d'écran du bouton d'accès invité de Teams.](../media/teams-guest-access-toggle-on.png)
 
 Pour déterminer les paramètres d’accès invité Teams, procédez comme suit :
 

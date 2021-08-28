@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser des stratégies dlp pour les applications cloud non Microsoft.
-ms.openlocfilehash: 10e5f8e78b57932c18acfe18631ae8b08d543dd5
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 5817bad8e02e0aeee6aab88ca1a4cabe45822b51
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502818"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571373"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Utiliser des stratégies de protection contre la perte de données pour les applications cloud non Microsoft
 
@@ -75,17 +75,17 @@ Lorsque vous sélectionnez un emplacement pour la stratégie DLP, Microsoft Clou
 - Pour sélectionner une application ou une instance spécifique, **sélectionnez Instance.**
 - Si vous ne sélectionnez pas d’instance, la stratégie utilise toutes les applications connectées dans Microsoft Cloud App Security client.
 
-   ![Emplacements pour appliquer la stratégie](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
+   ![Emplacements à appliquer à la stratégie.](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
 
-   ![Box-US et Box-General](../media/2-dlp-non-microsoft-cloud-app-box.png)
+   ![Box-US et Box-General.](../media/2-dlp-non-microsoft-cloud-app-box.png)
 
 Vous pouvez choisir différentes actions pour chaque application cloud non-Microsoft prise en charge. Pour chaque application, il existe différentes actions possibles (dépend de l’API de l’application cloud).
 
-![Créer une règle](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
+![Créer une règle.](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
 
 Lorsque vous créez une règle dans la stratégie DLP, vous pouvez sélectionner une action pour les applications cloud autres que Microsoft. Pour restreindre les applications tierces, **sélectionnez Restreindre les applications tierces.**
 
-![Restreindre les applications tierces](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
+![Limiter les applications tierces.](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
 > [!NOTE]
 > Les stratégies DLP appliquées aux applications non-Microsoft utilisent Microsoft Cloud App Security. Lorsque la stratégie DLP pour une application non-Microsoft est créée, la même stratégie est automatiquement créée dans Microsoft Cloud App Security.

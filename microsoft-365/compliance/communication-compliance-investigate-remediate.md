@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: cddf687c4d269772b264711b7359bc338958164c
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 125e622b39b6ec868cb6dffaf30eb8d64a346759
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392102"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571434"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -61,7 +61,7 @@ Pour obtenir la liste complète des filtres et des détails des champs, voir [Fi
 
 8. Si vous souhaitez enregistrer les filtres sélectionnés en  tant que requête de filtre, sélectionnez Enregistrer le contrôle de requête après avoir configuré au moins une valeur de filtre. Entrez un nom pour la requête de filtre, puis sélectionnez **Enregistrer.** Ce filtre est disponible uniquement pour cette stratégie et est répertorié dans la **section** Requêtes de filtre enregistrées de la page **Détails** des filtres.
 
-    ![Contrôles détaillés du filtre de conformité des communications](../media/communication-compliance-filter-detail-controls.png)
+    ![Contrôles détaillés du filtre de conformité des communications.](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Utilisation de l’analyse de doublons proche et exacte
 
@@ -75,9 +75,9 @@ Les stratégies de conformité des communications analysent et pré-groupent aut
 
 3. Sélectionnez **l’onglet** Stratégies, puis sélectionnez une stratégie pour l’examen, double-cliquez pour ouvrir la page **Stratégie.**
 
-4. Dans la page **Stratégie,** sélectionnez l’onglet **En** attente ou **Résolu** pour afficher les messages en double.
+4. Dans la page **Stratégie,** sélectionnez  l’onglet **En attente** ou Résolu pour afficher les messages en double.
 
-5. Sélectionnez les **contrôles Doublons proches** ou Doublons **exacts** pour ouvrir la page de détails des doublons.
+5. Sélectionnez les **contrôles Doublons proches** ou **Doublons exacts** pour ouvrir la page de détails des doublons.
 
 6. Sélectionnez un ou plusieurs messages pour les contrôles d’action de correction de ces messages.
 
@@ -85,7 +85,7 @@ Les stratégies de conformité des communications analysent et pré-groupent aut
 
 8. Sélectionnez **Fermer** après avoir terminé les actions de correction sur les messages.
 
-    ![Contrôles des doublons exacts de conformité des communications](../media/communication-compliance-duplicates-controls.png)
+    ![Contrôles dupliqués exacts de conformité des communications.](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>Corriger les alertes
 
@@ -95,7 +95,7 @@ Quel que soit l’endroit où vous commencez à réviser les alertes ou le filtr
 
  Il est parfois évident, d’après la source ou l’objet, qu’un message peut être corrigé immédiatement. Il se peut que le message soit insérable ou qu’il corresponde incorrectement à une stratégie et qu’il soit résolu comme incorrectement classé. Sélectionnez **le rapport comme** contrôle mal classé pour partager du contenu mal classé avec Microsoft, résoudre immédiatement l’alerte et supprimer de la file d’attente des alertes en attente. À partir de la source ou de l’expéditeur, vous savez peut-être déjà comment le message doit être routé ou géré dans ces circonstances. Envisagez d’utiliser les contrôles **Baliser comme** ou **Réaffectation** afin d’affecter une balise aux messages applicables ou d’envoyer des messages à un réviseur désigné.
 
-![Contrôles de correction de la conformité des communications](../media/communication-compliance-remediation-controls.png)
+![Contrôles de correction de la conformité des communications.](../media/communication-compliance-remediation-controls.png)
 
 ### <a name="step-2-examine-the-message-details"></a>Étape 2 : Examiner les détails du message
 
@@ -123,7 +123,7 @@ Maintenant que vous avez examiné les détails du message pour l’alerte, vous 
 - **Escalate for investigation**: à l’aide du contrôle **Escalate for investigation,** vous pouvez créer un Advanced eDiscovery [pour](overview-ediscovery-20.md) un ou plusieurs messages. Vous devez fournir un nom et des notes pour le nouveau cas, et l’utilisateur qui a envoyé le message correspondant à la stratégie est automatiquement affecté en tant que dépositaire de cas. Vous n’avez pas besoin d’autorisations supplémentaires pour gérer le cas. La création d’un cas ne résout pas ou ne crée pas de balise pour le message. Vous pouvez sélectionner un total de 100 messages lors de la création d’un Advanced eDiscovery au cours du processus de correction. Les messages dans tous les canaux de communication surveillés par la conformité des communications sont pris en charge. Par exemple, vous pouvez sélectionner 50 conversations Microsoft Teams, 25 messages électroniques Exchange Online et 25 messages Yammer lorsque vous ouvrez un nouveau cas Advanced eDiscovery pour un utilisateur.
 - Supprimer un message dans **Teams**: à l’aide du contrôle Supprimer le message dans **Teams,** vous pouvez bloquer les messages inappropriés et le contenu identifiés dans les alertes à partir de canaux Microsoft Teams et de conversations 1:1 et de groupe. Les messages et le contenu supprimés sont remplacés par un conseil de stratégie qui explique qu’il est bloqué et la stratégie qui s’applique à sa suppression de l’affichage. Un lien est fourni aux destinataires dans le conseil de stratégie pour en savoir plus sur la stratégie applicable et le processus de révision. L’expéditeur reçoit un conseil de stratégie pour le message et le contenu bloqués, mais peut examiner les détails du message bloqué et du contenu pour le contexte concernant la suppression.
 
-    ![Supprimer un message d’Microsoft Teams](../media/communication-compliance-remove-teams-message.png)
+    ![Supprimez un message de Microsoft Teams.](../media/communication-compliance-remove-teams-message.png)
 
 ### <a name="step-4-determine-if-message-details-should-be-archived-outside-of-communication-compliance"></a>Étape 4 : Déterminer si les détails des messages doivent être archivés en dehors de la conformité des communications
 

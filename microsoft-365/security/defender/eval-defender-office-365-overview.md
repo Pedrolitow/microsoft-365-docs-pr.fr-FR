@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 90660b9b95e7724437972d280b5f179a774c00c3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: aff42882b6727537cea194d16b9132e10461aedf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254373"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576115"
 ---
 # <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Activer et piloter Microsoft Defender pour Office 365
 
@@ -37,7 +37,7 @@ Cet article décrit le processus permettant d’activer et de piloter Microsoft 
 
 Utilisez les étapes suivantes pour activer et piloter Microsoft Defender pour Office 365.
 
-![Étapes de l’ajout de Microsoft Defender pour Office à l’environnement d’évaluation Defender](../../media/defender/m365-defender-office-eval-steps.png)
+![Étapes de l’ajout de Microsoft Defender Office à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-office-eval-steps.png)
 
 Le tableau suivant décrit les étapes de l’illustration.
 

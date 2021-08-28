@@ -15,12 +15,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu corriger les règles de flux de messagerie lent dans le Centre de sécurité & conformité pour identifier et corriger les règles de flux de messagerie inefficaces ou rompues (également appelées règles de transport) dans leur organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68eec6c7aa060806f1f4133b399b1ead901f6b0d3e73d87cc9b677309fb28130
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 76fdfd7595fc3a7c760eadd51498883d8d7a63fe
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56854293"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572418"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Résoudre les problèmes de règles de flux de messagerie dans le Centre de sécurité & conformité
 
@@ -43,7 +43,7 @@ Cette information apparaît uniquement après la détection de la condition (si 
 
 Vous pouvez utiliser cette notification pour vous aider à identifier et affiner les règles de flux de messagerie afin de réduire les retards de flux de messagerie.
 
-![Résoudre les problèmes de règles de flux de messagerie dans la zone Recommandé pour vous du tableau de bord de flux de messagerie](../../media/mfi-fix-slow-mail-flow-rules.png)
+![Corriger les règles de flux de messagerie lentes dans la zone Recommandé pour vous du tableau de bord de flux de messagerie.](../../media/mfi-fix-slow-mail-flow-rules.png)
 
 Lorsque vous cliquez **sur Afficher les détails** sur le widget, un flyout s’affiche avec plus d’informations :
 
@@ -52,7 +52,7 @@ Lorsque vous cliquez **sur Afficher les détails** sur le widget, un flyout s’
 - **Temps moyen passé sur chaque message**
 - **Temps moyen passé sur un message**: valeur intermédiaire qui sépare la moitié supérieure de la moitié inférieure des données de temps.
 
-![Volant de détails qui s’affiche après avoir cliqué sur Afficher les détails sur l’aperçu des règles de flux de messagerie lent fix](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+![Volant de détails qui s’affiche après avoir cliqué sur Afficher les détails sur l’aperçu des règles de flux de messagerie lent Fix.](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
 Pour plus d’informations sur les conditions et les exceptions dans les règles de flux de messagerie, voir conditions et exceptions de règle de flux de messagerie [(prédicats) dans Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 

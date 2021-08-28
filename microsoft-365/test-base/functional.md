@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 989ec90af003d3b0a488e4ab32afa70e5640dd93cbfab4195d6b048105b80e80
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cfa07a795e99144e168b06b99e9f1feacd7fa9be
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888127"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572766"
 ---
 # <a name="functional-testing"></a>Test fonctionnel
 
@@ -47,25 +47,25 @@ Onglet 1 : entrez les informations de base. Fournissez le nom et la version de v
 *Notez que l’option OOB (Out-of-Box) est requise par défaut.*
 
 
-![Sélectionner l’onglet test fonctionnel](Media/functional_testing_tab1.png)
+![Sélectionnez l’onglet test fonctionnel.](Media/functional_testing_tab1.png)
 
 Onglet 2 : Télécharger composants de votre package en chargeant un fichier zip avec l’intégralité de votre test (fichiers binaires, dépendances, scripts, etc.). 
 
 Voir aka.ms/usl-package-outline pour plus d’informations. (Remarque : les scripts de test Out-of-Box et le contenu du test fonctionnel doivent être placés dans le même fichier zip). Actuellement, la taille du fichier est limitée à 2 Go.
 
-Onglet 3 : configurer les tâches de test out-of-Box et Fonctionnelles. Ici, choisissez le ou les chemins d’accès aux scripts PowerShell qui installeront, lanceront, fermeront et désinstalleront votre application (pour Out-of-Box), ainsi que les chemins d’accès à tous vos scripts personnalisés pour effectuer votre test fonctionnel. **(Remarque : un script pour désinstaller votre application est facultatif).**
+Onglet 3 : configurer les tâches de test out-of-box et Fonctionnelles. Ici, choisissez le ou les chemins d’accès aux scripts PowerShell qui installeront, lanceront, fermeront et désinstalleront votre application (pour Out-of-Box), ainsi que les chemins d’accès à tous vos scripts personnalisés pour effectuer votre test fonctionnel. **(Remarque : un script pour désinstaller votre application est facultatif).**
 
 Actuellement, vous pouvez charger entre 1 et 8 scripts pour vos tests fonctionnels. (Faites un commentaire sur ce billet si vous avez besoin de davantage de scripts !)
 
-![Télécharger jusqu’à 8 scripts avec des tests fonctionnels](Media/functional_testing_tab3.png)
+![Télécharger jusqu’à 8 scripts avec des tests fonctionnels.](Media/functional_testing_tab3.png)
 
 (Facultatif) Configurez un redémarrage après l’installation. Certaines applications nécessitent un redémarrage après l’installation. 
 
 Sélectionnez le script spécifique dans l’onglet Tâches si vous souhaitez qu’un redémarrage soit effectué ```Reboot After Execution``` après l’exécution de ce script.
 
-Onglet 4 : choisissez quand la mise à jour Windows est installée : l’application du correctif Windows Update est effectuée avant tout script de votre choix. Il est recommandé d’installer une mise à jour Windows après l’installation de l’application pour simuler étroitement les scénarios d’utilisation de votre application réelle.
+Onglet 4 : choisissez quand la mise à jour Windows est installée : l’application du correctif Windows Update est effectuée avant tout script de votre choix. Il est recommandé d’installer une mise à jour Windows après l’installation de l’application pour reproduire étroitement vos scénarios d’utilisation d’applications réelles.
 
-![La Windows mise à jour peut être installée après un script spécifique](Media/functional_testing_tab4.png)
+![La Windows mise à jour peut être installée après un script spécifique.](Media/functional_testing_tab4.png)
 
 Onglet 5 - Examinez et créez le package. Une fois que vous avez terminé les étapes répertoriées ci-dessus, ```Create``` sélectionnez pour terminer le processus de téléchargement.
 
@@ -75,7 +75,7 @@ Nous exécuterons un test initial pour installer, lancer, fermer et désinstalle
 
 Le processus de vérification peut prendre jusqu’à 24 heures. Une fois la vérification terminée, vous pouvez voir l’état dans le menu, qui serait l’une des ```Manage packages``` deux entrées :
 
-1. La vérification réussit : le package sera automatiquement testé par rapport aux mises à jour Windows pré-version pour les builds de système d’exploitation que vous avez sélectionnées.
+1. La vérification a réussi : le package sera automatiquement testé par rapport aux mises à jour Windows pré-version pour les builds de système d’exploitation que vous avez sélectionnées.
 ou
 2. Échec de la vérification : vous devrez examiner les raisons de l’échec, résoudre le problème et re-télécharger votre package.
 

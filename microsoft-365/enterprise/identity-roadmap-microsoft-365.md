@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Feuille de route de l’identité pour Microsoft 365.
-ms.openlocfilehash: 520f80152bccfd9a01b812f08e7c75f6770a9bc4
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 27abe04da2fed0eaae09fa0ed42a83286fe74f5d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356707"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573114"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Feuille de route relative à l’identité pour Microsoft 365
 
@@ -35,13 +35,13 @@ Pour obtenir une vue d’ensemble des modèles d’identité et de l’authentif
 
 Pour plus d’informations sur les fonctionnalités d’identité de chaque Microsoft 365 pour le plan d’entreprise, le rôle de Azure Active Directory, les [](../downloads/m365e-identity-infra.pdf)composants locaux et en nuage, ainsi que les configurations d’authentification les plus courantes, voir l’affiche Infrastructure d’identités.
 
-[![Affiche Infrastructure d’identités](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
+[![Affiche Infrastructure des identités.](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
 Examinez cette affiche de deux pages pour accélérer rapidement les concepts et les configurations d’identité pour Microsoft 365 entreprise.
 
 Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
-## <a name="plan"></a>Prévision
+## <a name="plan"></a>Plan
 
 Pour planifier l’implémentation de votre identité :
 
@@ -72,8 +72,8 @@ Pour gérer votre déploiement d Microsoft 365 d’identité, voir :
 - [Comptes d’utilisateur](manage-microsoft-365-accounts.md)
 - [Licences](assign-licenses-to-user-accounts.md)
 - [Mots de passe](manage-microsoft-365-passwords.md)
-- [Groups](manage-microsoft-365-groups.md)
-- [Gouvernance](manage-microsoft-365-identity-governance.md)
+- [Groupes](manage-microsoft-365-groups.md)
+- [Governance](manage-microsoft-365-identity-governance.md)
 - [Synchronisation d’annuaires](view-directory-synchronization-status.md)
 
 ## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Comment Microsoft fait l’identité pour Microsoft 365

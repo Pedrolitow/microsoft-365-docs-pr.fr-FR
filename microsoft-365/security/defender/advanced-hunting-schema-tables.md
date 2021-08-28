@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 50a221a65c8264d816de958ec74fa99e9e6db762
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 4dcbb7051325483a220c39fdebaae53aba9c37f4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53225990"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575971"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
@@ -50,7 +50,7 @@ Lors de la construction de requêtes, utilisez la référence de schéma intégr
 ### <a name="access-the-schema-reference"></a>Accéder à la référence de schéma
 Pour accéder rapidement à la  référence de schéma, sélectionnez l’action de référence Afficher en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner une **référence de schéma** pour rechercher une table.
 
-![Image montrant comment accéder à la référence de schéma dans le portail](../../media/mtp-ah/ah-reference.png)
+![Image montrant comment accéder à la référence de schéma dans le portail.](../../media/mtp-ah/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>Découvrir les tableaux de schéma
 La référence suivante répertorie les tableaux du schéma. Chaque nom de tableau renvoie à une page décrivant les noms des colonnes de ce tableau. Les noms de table et de colonne sont également répertoriés dans le centre de sécurité dans le cadre de la représentation de schéma sur l’écran de recherche avancée.

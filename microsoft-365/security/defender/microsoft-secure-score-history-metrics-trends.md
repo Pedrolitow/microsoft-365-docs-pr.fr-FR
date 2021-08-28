@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b5fbfae845c320e0d38293cff0d859165217a385
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 0bb4b57e3f212820852f23af2665f11f99e5be95
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255159"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575911"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivez votre historique de score de sécurité Microsoft et répondez aux objectifs
 
@@ -40,13 +40,13 @@ Affichez un graphique du score de votre organisation au fil du temps dans **l’
 
 Sous le graphique se trouve la liste de toutes les actions entreprises dans l’plage de temps sélectionnée et leurs attributs, tels que les points et la catégorie résultants. Vous pouvez personnaliser une plage de dates et filtrer par catégorie.
 
-![Historique des activités](../../media/secure-score/secure-score-history-activity.png)
+![Historique des activités.](../../media/secure-score/secure-score-history-activity.png)
 
 Si vous sélectionnez l’action d’amélioration associée à une activité, le programme volant d’action d’amélioration complète s’affiche.
 
 Pour afficher tout l’historique de cette action d’amélioration spécifique, sélectionnez le lien d’historique dans le volant.
 
-![Historique des actions d’amélioration](../../media/secure-score/secure-score-history-flyout.png)
+![Historique des actions d’amélioration.](../../media/secure-score/secure-score-history-flyout.png)
 
 ## <a name="discover-trends-and-set-goals"></a>Découvrir les tendances et définir des objectifs
 
@@ -66,7 +66,7 @@ Il existe deux endroits pour comparer votre score aux organisations qui vous res
 
 Le graphique à barres de comparaison est **l’onglet Vue** d’ensemble. Pointez sur le graphique pour afficher le score et l’opportunité de score. Les données de comparaison sont rendues anonymes, donc nous ne savons pas exactement quels autres clients sont dans la combinaison.
 
-![Graphique à barres des scores d’une organisation similaire](../../media/secure-score/secure-score-comparison-bar.png)
+![Graphique à barres des scores d’une organisation similaire.](../../media/secure-score/secure-score-comparison-bar.png)
 
 - **Organisations telles** que la vôtre : note moyenne d’autres locataires (à condition que nous 5 locataires ou plus à comparer) éligibles avec les critères suivants :
     1. Même secteur d’activité
@@ -89,7 +89,7 @@ Si vous avez effectué une sélection personnalisée, mais que les résultats on
 
 Dans **l’onglet & des** tendances, comparez le score de sécurisation de votre organisation à celui des autres au fil du temps.
 
-![Graphique en courbes des scores d’une organisation similaire au fil du temps](../../media/secure-score/secure-score-comparison-trend.png)
+![Graphique en courbes des scores d’une organisation similaire au fil du temps.](../../media/secure-score/secure-score-comparison-trend.png)
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

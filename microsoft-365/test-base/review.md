@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 8763d07db48f86a1c4224fc6bde4d992ef6d3701
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: fa046aa0a488b11f172d9ac7182b67e705aad69b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507553"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571180"
 ---
 # <a name="step-6-review-your-selections-to-create-your-package"></a>Étape 6 : examinez vos sélections pour créer votre package.
 
@@ -27,13 +27,13 @@ ms.locfileid: "58507553"
 
     Un **message de validation** réussi ou de **validation** a échoué indique si vous pouvez passer aux étapes suivantes ou non.
 
-2. Examinez les détails de votre test et, si vous êtes satisfait, cliquez sur le **bouton** Créer.
+2. Examinez vos détails de test et, si vous êtes satisfait, cliquez sur le **bouton** Créer.
 
     :::image type="content" alt-text="Afficher la validation." source="Media/validation.png" lightbox="Media/validation.png":::
 
 3. Cela intégrera votre package à l’environnement de base de test. Si votre package est correctement créé, un test automatisé qui vérifie si votre package peut être correctement exécuté sur Azure sera déclenché.
 
-    ![Résultat réussi](Media/successful.png)
+    ![Résultat réussi.](Media/successful.png)
 
     > [!NOTE]
     > Vous recevez une notification du portail Azure pour vous informer de la réussite ou de l’échec de la vérification du package.
@@ -52,7 +52,7 @@ ms.locfileid: "58507553"
 
     - Si vous faites face à des échecs de test répétés, contactez testbasepreview@microsoft.com avec les détails de votre erreur.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Découvrez nos recommandations en matière de contenu via le lien ci-dessous.
 

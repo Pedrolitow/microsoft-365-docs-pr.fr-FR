@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 742a95bd9ad2cfb798244301cf3cb1ef86994f7926e25fa336c84df2ac52e5bd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e064b537b11fe54304a2bb26ce65299f0b23876a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793288"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575755"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Activer l’expérience d’aperçu dans Microsoft Defender pour le point de terminaison
 
@@ -38,12 +38,12 @@ Activez le paramètre d’expérience de préversion pour être parmi les premie
 
 1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **fonctionnalités avancées des points** de  >  **terminaison.**
 
-    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="image des paramètres et de l’aperçu de l’expérience":::
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="paramètres et image d’expérience d’aperçu.":::
 
 
 2. Basculez le paramètre entre **« Sur** » et « **Hors** » et sélectionnez Enregistrer **les préférences.**
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 - [Mettre à jour les paramètres généraux dans Microsoft Defender pour le point de terminaison](data-retention-settings.md)
 - [Activer les fonctionnalités avancées dans Microsoft Defender pour le point de terminaison](advanced-features.md)
 - [Configurer les notifications par courrier électronique dans Microsoft Defender pour le point de terminaison](configure-email-notifications.md)

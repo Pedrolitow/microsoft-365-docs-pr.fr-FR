@@ -14,12 +14,12 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: db98e147ef4453f62d4d17431286aaa99959712d
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 1137ef50c5e3fb72b6bc0532b021de05c7eff1ce
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58357468"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576127"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft par le biais Microsoft 365 Defender
 
@@ -49,15 +49,15 @@ Si vous avez déjà Microsoft Defender pour les points de terminaison et les Mic
 
 2. Sélectionnez **Appliquer**.
 
-    ![Image des paramètres Spécialistes des menaces Microsoft de l’entreprise](../../media/mte/mte-collaboratewithmte.png)
+    ![Image de Spécialistes des menaces Microsoft paramètres.](../../media/mte/mte-collaboratewithmte.png)
 
 3. Entrez votre nom et votre adresse e-mail afin que Microsoft puisse vous contacter à propos de votre application.
 
-    ![Image d’Spécialistes des menaces Microsoft application](../../media/mte/mte-apply.png)
+    ![Image de l Spécialistes des menaces Microsoft application.](../../media/mte/mte-apply.png)
 
 4. Lisez [la déclaration de confidentialité,](https://privacy.microsoft.com/en-us/privacystatement)puis **sélectionnez Envoyer** lorsque vous avez terminé. Vous recevrez un e-mail de bienvenue une fois votre application approuvée.
 
-    ![Image de confirmation Spécialistes des menaces Microsoft application](../../media/mte/mte-applicationconfirmation.png)
+    ![Image de la confirmation Spécialistes des menaces Microsoft application.](../../media/mte/mte-applicationconfirmation.png)
 
 5. Une fois que vous avez reçu votre e-mail de bienvenue, vous commencez automatiquement à recevoir des notifications d’attaque ciblée.
 
@@ -102,13 +102,13 @@ Vous pouvez contacter Spécialistes des menaces Microsoft à partir du portail M
 
 2. Dans le menu supérieur, sélectionnez **? Consultez un expert en menaces.**
 
-    ![Image de Spécialistes des menaces Microsoft experts à la demande dans le menu](../../media/mte/incidents-action-mte-highlighted.png)
+    ![Image de Spécialistes des menaces Microsoft experts à la demande à partir du menu.](../../media/mte/incidents-action-mte-highlighted.png)
 
     Un écran volant s’ouvre.
 
     L’en-tête indique si vous êtes sur un abonnement d’essai ou un abonnement complet Spécialistes des menaces Microsoft - Experts à la demande.
 
-    ![Image de l’écran Spécialistes des menaces Microsoft d’abonnement à la version d’essai d’Experts à la demande](../../media/mte/mte-trial.png)
+    ![Image de l Spécialistes des menaces Microsoft d’abonnement d’essai d’Experts à la demande.](../../media/mte/mte-trial.png)
 
     Le **champ Investigation est** déjà rempli avec le lien vers la page concernée pour votre demande.
 

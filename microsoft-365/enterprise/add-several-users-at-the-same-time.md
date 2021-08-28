@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'Découvrez comment ajouter plusieurs utilisateurs à Microsoft 365 entreprise à partir d’une liste dans une feuille de calcul ou un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Microsoft 365. À la fin de ce processus, chaque utilisateur ayant un compte aura une boîte Microsoft 365 aux lettres. '
-ms.openlocfilehash: bb0ed6212cde61693024bcd2fdca9f1d6c3f42dbb063f67324be3d87219f46cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5df43af8d01dce11c063b3d29fb2323b997580bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835406"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572694"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Ajouter plusieurs utilisateurs en même temps à Microsoft 365 - Aide de l’administrateur
 
@@ -70,7 +70,7 @@ Chaque personne de votre équipe a besoin d’un compte d’utilisateur pour pou
 
 7. Dans la boîte de dialogue **Affichez vos résultats**, vous pouvez choisir d'envoyer les résultats à vous-même ou à d'autres utilisateurs (les mots de passe seront au format texte brut). En outre, vous pouvez voir combien d'utilisateurs ont été créés et si vous avez besoin d'acheter des licences supplémentaires pour les attribuer à certains des nouveaux utilisateurs.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - Maintenant que ces personnes ont des comptes, elles doivent télécharger et installer ou [réinstaller Microsoft 365 ou Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)sur un PC ou Mac . Chaque personne de votre équipe peut installer Microsoft 365 sur 5 PC ou Mac au plus.
 
@@ -88,11 +88,11 @@ Vous pouvez télécharger [cet exemple de feuille de calcul](https://www.microso
   
 Enregistrez le fichier avec un nouveau nom et spécifiez le format CSV.
   
-![Image expliquant comment enregistrer un fichier au format CSV dans Excel](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
+![Image de la façon d’enregistrer un fichier Excel au format CSV.](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
   
 Une fois le fichier enregistré, il est probable qu'un message indiquant que certaines fonctionnalités de votre classeur seront perdues si vous enregistrez le fichier au format CSV s'affiche. Ceci est normal. Cliquez sur **Oui** pour continuer.
   
-![Image de l'invite rencontrée dans Excel vous demandant si vous voulez vraiment enregistrer le fichier au format CSV](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
+![Image de l’invite que vous pouvez obtenir Excel vous demandant si vous souhaitez vraiment enregistrer le fichier au format CSV.](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Conseils pour la mise en forme de votre feuille de calcul
 

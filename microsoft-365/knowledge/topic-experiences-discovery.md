@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment administrer la découverte de rubriques dans Sujets Microsoft Viva.
-ms.openlocfilehash: 39ecd7ab79267d560b614e981f1ef7ad14fd807db94c64a9483b1603d0e2733a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2316df8df7a1d8fb2b8e0951e12810398bcb2e40
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870092"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575563"
 ---
 # <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>Gérer la découverte de rubriques dans Sujets Microsoft Viva
 
@@ -26,11 +26,11 @@ Vous pouvez gérer les paramètres de découverte de rubrique dans le [Centre d�
 1. Dans la Centre d’administration Microsoft 365, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** cliquez sur **Expériences de rubrique.**
 
-    ![Connecter personnes à connaître](../media/admin-org-knowledge-options-completed.png) 
+    ![Connecter personnes à connaître.](../media/admin-org-knowledge-options-completed.png) 
 
 3. Sélectionnez **l’onglet Découverte de** rubrique. Consultez les sections suivantes pour plus d’informations sur chaque paramètre.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-discovery.png) 
 
 ## <a name="select-sharepoint-topic-sources"></a>Sélectionner SharePoint sources de rubriques
 
@@ -53,9 +53,9 @@ Pour choisir des sites pour la découverte de rubriques
     - **Seuls les sites** sélectionnés : tapez les noms des sites que vous souhaitez inclure. Vous pouvez également charger une liste de sites. Les sites créés dans le futur ne seront pas inclus comme sources pour la découverte de rubriques.
     - **Aucun site**: les rubriques ne seront pas générées ou mises à jour automatiquement avec SharePoint contenu. Les rubriques existantes restent dans le centre de rubriques.
 
-    ![Capture d’écran SharePoint’interface utilisateur des sources de rubriques](../media/k-manage-select-topic-source.png)
+    ![Capture d’écran SharePoint’interface utilisateur des sources de rubriques.](../media/k-manage-select-topic-source.png)
    
-3. Cliquez sur **Save (Enregistrer)**.
+3. Cliquez sur **Enregistrer**.
 
 ## <a name="exclude-topics-by-name"></a>Exclure les rubriques par nom
 
@@ -64,9 +64,9 @@ Vous pouvez exclure des rubriques de la découverte en téléchargeant une liste
 1. Sous l’onglet **Découverte de rubrique**, sous **Exclure les rubriques**, sélectionnez **Modifier**.
 2. Cliquez **sur Exclure des rubriques par nom.**
 3. Si vous avez besoin de créer une liste, téléchargez le modèle .csv et ajoutez les rubriques que vous souhaitez exclure (voir Utiliser le modèle *.csv ci-dessous).* Lorsque le fichier est prêt, cliquez sur **Parcourir** et téléchargez le fichier. S’il existe une liste, vous pouvez télécharger le .csv contenant la liste.
-4. Cliquez sur **Save (Enregistrer)**.
+4. Cliquez sur **Enregistrer**.
 
-    ![Capture d’écran de l’interface utilisateur exclure des rubriques](../media/km-manage-exclude-topics.png)
+    ![Capture d’écran de l’interface utilisateur exclure des rubriques.](../media/km-manage-exclude-topics.png)
 
 ### <a name="working-with-the-csv-template"></a>Utiliser le modèle .csv modèle
 
@@ -84,7 +84,7 @@ Dans le modèle CSV, entrez les informations suivantes sur les rubriques à excl
 - **Signifie (facultatif)**: si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.
 - **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
 
-    ![Exclure des rubriques dans le modèle CSV](../media/exclude-topics-csv.png) 
+    ![Exclure des rubriques dans le modèle CSV.](../media/exclude-topics-csv.png) 
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -18,12 +18,12 @@ ms.collection:
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Étendez votre présence Microsoft 365 à plusieurs régions géographiques grâce aux fonctionnalités multi-géographiques dans OneDrive Online.
-ms.openlocfilehash: 3a47fb6e36806b7bdbde1a1ba2b92186c6e193a003c3e7dcdcdce6a8de6fd733
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 544ca44308b8a51bae19df6b54a522469ae0de3c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904922"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572646"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Fonctionnalités multi-géographiques OneDrive et SharePoint Online
 
@@ -49,7 +49,7 @@ Microsoft 365 autres services que Exchange, OneDrive, SharePoint et Teams ne son
 
 Configurer et gérer votre environnement multi-géographique sont effectués via le Centre d’Administration SharePoint. 
 
-![Capture d’écran de la page emplacements géo dans le Centre d’Administration SharePoint](../media/sharepoint-multi-geo-admin-center.png)
+![Capture d’écran de la page emplacements géographiques dans SharePoint centre d’administration.](../media/sharepoint-multi-geo-admin-center.png)
 
 (Certaines actions, telles que le déplacement d’un site SharePoint ou un site OneDrive nécessitent Microsoft PowerShell).
 

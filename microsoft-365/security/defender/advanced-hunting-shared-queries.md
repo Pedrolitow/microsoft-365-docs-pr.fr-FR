@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ab6115ba08e18c8240868e14561db821b4a00b3f439c8e06aeca5bb8ec142e1a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37960ef9b7ff1431a2d1344e6a234b0106782100
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799433"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575959"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utiliser des requêtes partagées dans un repérage avancé
 
@@ -40,7 +40,7 @@ ms.locfileid: "53799433"
 
 Les requêtes de [repérage avancé](advanced-hunting-overview.md) peuvent être partagées entre les utilisateurs au sein de la même organisation. Vous pouvez également trouver des requêtes partagées publiquement sur GitHub. Ces requêtes vous permettent d’effectuer rapidement des scénarios de repérage de menace spécifiques sans avoir à créer des requêtes.
 
-![Image des requêtes partagées](../../media/advanced-hunting-shared-queries.png)
+![Image des requêtes partagées.](../../media/advanced-hunting-shared-queries.png)
 
 ## <a name="save-modify-and-share-a-query"></a>Enregistrer, modifier et partager une requête
 Vous pouvez enregistrer une requête nouvelle ou existante pour qu’elle soit uniquement accessible à vous-même ou partagée avec d’autres utilisateurs au sein de votre organisation. 
@@ -51,7 +51,7 @@ Vous pouvez enregistrer une requête nouvelle ou existante pour qu’elle soit u
     
 3. Entrez un nom pour la requête. 
 
-   ![Image de l’enregistrement d’une requête](../../media/advanced-hunting-save-query.png)
+   ![Image de l’enregistrement d’une requête.](../../media/advanced-hunting-save-query.png)
 
 4. Sélectionnez le dossier dans lequel vous voulez enregistrer la requête.
     - **Requêtes partagées** : partagées avec tous les utilisateurs de votre organisation
@@ -62,12 +62,12 @@ Vous pouvez enregistrer une requête nouvelle ou existante pour qu’elle soit u
 ## <a name="delete-or-rename-a-query"></a>Supprimer ou renommer une requête
 1. Cliquez avec le bouton droit de la souris sur une requête que vous voulez renommer ou supprimer.
 
-    ![Image de suppression de la requête](../../media/advanced_hunting_delete_rename.png)
+    ![Image de la requête suppression.](../../media/advanced_hunting_delete_rename.png)
 
 2. Sélectionnez **Supprimer** et confirmer la suppression. Ou sélectionnez **Renommer** et attribuer un nouveau nom à la requête.
 
 ## <a name="create-a-direct-link-to-a-query"></a>Créer un lien direct vers une requête
-Pour générer un lien qui ouvre votre requête directement dans l’éditeur de requête de recherche avancée, finalisez votre requête et sélectionnez **le lien partager.**
+Pour générer un lien qui ouvre votre requête directement dans l’éditeur de requête de recherche avancée, finalisez votre requête et sélectionnez **Le lien partager.**
 
 ## <a name="access-queries-in-the-github-repository"></a>Accéder aux requêtes dans le référentiel GitHub  
 Les chercheurs en matière de sécurité Microsoft partagent régulièrement des requêtes de repérage avancée dans un [référentiel public désigné sur GitHub](https://aka.ms/hunting-queries). Ce référentiel est ouvert aux contributions. Si vous souhaitez contribuer, [ veuillez rejoindre GitHub gratuitement](https://github.com/).
@@ -76,9 +76,9 @@ Les chercheurs en matière de sécurité Microsoft partagent régulièrement des
 >Les chercheurs en matière de sécurité Microsoft proposent également des requêtes de repérage avancé que vous pouvez utiliser pour localiser les activités et indicateurs associés aux menaces émergentes. Ces requêtes sont fournies dans le cadre du rapport de l’[analyse des menaces](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) dans le Centre de sécurité Microsoft Defender.
 
 >[!NOTE]
->Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
+>Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

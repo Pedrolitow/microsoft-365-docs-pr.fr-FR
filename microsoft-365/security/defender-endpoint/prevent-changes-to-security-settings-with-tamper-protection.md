@@ -17,12 +17,12 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 07/27/2021
-ms.openlocfilehash: 5b8abf4f07c1e0a136c456cf5b83adf64e974d7c67ae512c0edb991935afb423
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e8388721d11d25d17bc8b8bbbe505e968d243c9f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873883"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575791"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -32,7 +32,7 @@ ms.locfileid: "53873883"
 
 La protection contre la falsification est disponible pour les appareils qui exécutent l’une des versions suivantes de Windows :
 
-- Windows 10
+- Windows 10
 - Windows Server 2019
 - Windows Serveur, version 1803 ou ultérieure
 - Windows Server 2016
@@ -100,10 +100,10 @@ La protection contre la falsification peut être allumée ou désactivée pour v
 
 - Vos Windows doivent être en cours d’exécution dans l’une des versions suivantes Windows :
 
-   - Windows 10
+   - Windows 10
    - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
    - Windows Serveur, version [1803 ou](/windows/release-health/status-windows-10-1803) ultérieure
-   - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+   - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
    
   Pour plus d’informations sur les releases, [voir Windows 10 release information](/windows/release-health/release-information).
 
@@ -115,7 +115,7 @@ La protection contre la falsification peut être allumée ou désactivée pour v
 
 ### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-365-defender-portal"></a>Activer (ou désactiver) la protection contre la falsification dans le portail Microsoft 365 Defender client
 
-:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Activer la protection contre la falsification dans le portail Microsoft 365 Defender client":::
+:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Activer la protection contre la falsification dans Microsoft 365 Defender portail.":::
 
 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
 
@@ -141,7 +141,7 @@ Si vous faites partie de l’équipe de sécurité de votre organisation et que 
 
 ### <a name="turn-tamper-protection-on-or-off-in-intune"></a>Activer (ou désactiver) la protection contre la falsification dans Intune
 
-![Activer la protection contre la falsification avec Intune](images/turnontamperprotect-MEM.png)
+![Activer la protection contre la falsification avec Intune.](images/turnontamperprotect-MEM.png)
 
 1. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com) and sign in.
 
@@ -152,13 +152,13 @@ Si vous faites partie de l’équipe de sécurité de votre organisation et que 
     - **Plateforme : Windows 10 et ultérieures**
     - **Type de profil : Protection des points de terminaison**
     - **Catégorie : Microsoft 365 Defender**
-    - **Protection contre la falsification : activée**
+    - **Protection contre les falsifications : activée**
 
 4. Affectez le profil à un ou plusieurs groupes.
 
 ### <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>Utilisez-vous Windows Server 2016 ou Windows version 1709, 1803 ou 1809 ?
 
-Si vous utilisez Windows Server 2016, Windows 10 version 1709, 1803 ou [1809,](/windows/release-health/status-windows-10-1809-and-windows-server-2019)la **protection** contre la falsification ne s’Sécurité Windows l’application. À la place, vous pouvez utiliser PowerShell pour déterminer si la protection contre la falsification est activée. 
+Si vous utilisez Windows Server 2016, Windows 10 version 1709, 1803 ou [1809,](/windows/release-health/status-windows-10-1809-and-windows-server-2019)la **protection** contre les falsifications ne s’Sécurité Windows l’application. À la place, vous pouvez utiliser PowerShell pour déterminer si la protection contre la falsification est activée. 
    
 Sur Windows Server 2016, l’application Paramètres ne reflète pas précisément l’état de la protection en temps réel lorsque la protection contre la falsification est activée.
    
@@ -191,12 +191,12 @@ Si vous utilisez la [version 2006](/mem/configmgr/core/plan-design/changes/whats
 Consultez les ressources suivantes :
 
 - [Paramètres profil d’expérience Sécurité Windows client dans Microsoft Intune](/mem/intune/protect/antivirus-security-experience-windows-settings)
-- [Blog tech Community : Annonce de la protection contre la falsification pour les clients d’attachement de client Configuration Manager](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
+- [Blog tech Community : Annonce de la protection contre la falsification pour les clients avec attachement de client Configuration Manager](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
-## <a name="manage-tamper-protection-on-an-individual-device"></a>Gérer la protection contre les falsifications sur un appareil individuel
+## <a name="manage-tamper-protection-on-an-individual-device"></a>Gérer la protection contre la falsification sur un appareil individuel
 
 > [!NOTE]
-> La protection contre la falsification bloque les tentatives de modification Antivirus Microsoft Defender paramètres par le biais du Registre.
+> La protection contre la falsification bloque les tentatives de modification Antivirus Microsoft Defender paramètres de protection par le biais du Registre.
 >
 > Pour vous assurer que la protection contre la falsification n’interfère pas avec les produits de  sécurité non Microsoft ou les scripts d’installation d’entreprise qui modifient ces paramètres, allez à **Sécurité Windows** et mettez à jour l’intelligence de sécurité vers la version 1.287.60.0 ou ultérieure. (Voir mises [à jour de l’intelligence de la sécurité.)](https://www.microsoft.com/wdsi/definitions)
 >
@@ -206,7 +206,7 @@ Si vous êtes un utilisateur de base ou si vous n’êtes pas soumis aux paramè
 
 Voici ce que vous voyez dans l’application Sécurité Windows:
 
-![Protection contre la falsification est Windows 10 Famille](images/tamperprotectionturnedon.png)
+![La protection contre la falsification est Windows 10 Famille.](images/tamperprotectionturnedon.png)
 
 1. Sélectionnez **Démarrer** et commencez à taper *Sécurité.* Dans les résultats de la recherche, **sélectionnez Sécurité Windows**.
 
@@ -220,7 +220,7 @@ Les tentatives de falsification indiquent généralement des cyberattaques plus 
 
 Lorsqu’une tentative de falsification est détectée, une alerte est détectée dans le [portail Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/portal-overview) ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
-![Microsoft 365 Defender](images/tamperattemptalert.png)
+![Microsoft 365 Defender.](images/tamperattemptalert.png)
 
 À [l’protection évolutive des points de terminaison](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) et aux fonctionnalités de recherche avancées dans Microsoft Defender pour le point de terminaison, votre équipe des opérations de sécurité peut examiner et résoudre ces tentatives.
 
@@ -228,7 +228,7 @@ Lorsqu’une tentative de falsification est détectée, une alerte est détecté
 
 La protection contre la falsification s’intègre aux fonctionnalités [& gestion](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) des menaces et des vulnérabilités. [Les recommandations en matière de sécurité](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) incluent la garantie que la protection contre la falsification est allumée. Par exemple, vous pouvez effectuer une recherche *sur* falsification. Dans les résultats, vous pouvez sélectionner **Activer la protection** contre la falsification pour en savoir plus et l’activer.
 
-![Activer la protection contre la falsification](images/tamperprotectsecurityrecos.png)
+![Activer la protection contre la falsification.](images/tamperprotectsecurityrecos.png)
 
 Pour en savoir plus sur la gestion & des menaces et des vulnérabilités, voir [Threat & Vulnerability Management dans Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 

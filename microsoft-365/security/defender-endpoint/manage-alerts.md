@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 17e75cd8e12cf83a3581118dbe453314e659760b10c5960f6529d40c38deb303
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b91773a5cfa411c762aba939ba53d8f35be16f7a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902814"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573042"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Gérer les alertes microsoft Defender pour les points de terminaison
 
@@ -40,7 +40,7 @@ Vous pouvez gérer les alertes en sélectionnant une alerte dans la file d’att
 
 La sélection d’une alerte dans l’un de ces lieux fait monter le volet **de gestion des alertes.**
 
-![Image du volet de gestion des alertes et de la file d’attente des alertes](images/atp-alerts-selected.png)
+![Image du volet de gestion des alertes et de la file d’attente des alertes.](images/atp-alerts-selected.png)
 
 ## <a name="link-to-another-incident"></a>Lien vers un autre incident
 Vous pouvez créer un incident à partir de l’alerte ou d’un lien vers un incident existant. 
@@ -94,7 +94,7 @@ Créez des règles personnalisées pour contrôler quand les alertes sont suppri
 
 5. Entrez un nom de règle et un commentaire.
 
-6. Cliquez sur **Save (Enregistrer)**.
+6. Cliquez sur **Enregistrer**.
 
 #### <a name="view-the-list-of-suppression-rules"></a>Afficher la liste des règles de suppression
 
@@ -125,7 +125,7 @@ Chaque fois qu’une modification ou un commentaire est apporté à une alerte, 
 Les commentaires ajoutés apparaissent instantanément dans le volet.
 
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 - [Gérer des règles de suppression](manage-suppression-rules.md)
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)

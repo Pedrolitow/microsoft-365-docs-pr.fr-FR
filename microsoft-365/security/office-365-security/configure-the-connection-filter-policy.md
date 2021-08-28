@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les messages électroniques provenant de serveurs de messagerie.
+description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les e-mails provenant de serveurs de messagerie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8aa760990eff4bff8e8c4dd26efa74042f4a9208
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6edcbbe885f8271b073afdff248106ce0d209960
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258498"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572442"
 ---
 # <a name="configure-connection-filtering"></a>Configurer le filtrage des connexions
 
@@ -42,7 +42,7 @@ Si vous êtes un client Microsoft 365 avec des boîtes aux lettres en Exchange O
 
 - **Liste d’adresses IP** bloqués : bloquez tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Les messages entrants sont rejetés, ne sont pas marqués comme courrier indésirable et aucun filtrage supplémentaire ne se produit. Pour plus d’informations sur la façon dont la liste d’adresses IP bloquées doit tenir dans votre stratégie globale d’expéditeurs bloqués, voir Créer des listes d’expéditeurs bloqués [dans EOP.](create-block-sender-lists-in-office-365.md)
 
-- **Coffre liste :** la *liste sécurisée* est une liste d’utilisateurs autoriser dynamiques dans le centre de données Microsoft qui ne nécessite aucune configuration client. Microsoft identifie ces sources de courriers électroniques de confiance à partir d’abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste sécurisée ; vous ne pouvez pas configurer les serveurs de messagerie source dans la liste fiable. Le filtrage du courrier indésirable est ignoré sur les messages entrants provenant des serveurs de messagerie de la liste sécurisée.
+- **Coffre :** la *liste* sécurisée est une liste d’utilisateurs dynamiques dans le centre de données Microsoft qui ne nécessite aucune configuration client. Microsoft identifie ces sources de courriers électroniques de confiance à partir d’abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste sécurisée ; vous ne pouvez pas configurer les serveurs de messagerie source dans la liste fiable. Le filtrage du courrier indésirable est ignoré sur les messages entrants provenant des serveurs de messagerie de la liste sécurisée.
 
 Cet article explique comment configurer la stratégie de filtrage des connexions par défaut dans le portail Microsoft 365 Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online). Pour plus d’informations sur la façon dont EOP utilise le filtrage des connexions fait partie des paramètres anti-courrier indésirable globaux de votre organisation, consultez la [protection anti-courrier indésirable.](anti-spam-protection.md)
 
@@ -61,7 +61,7 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
-  **Remarques** :
+  **Remarques** :
 
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
@@ -70,11 +70,11 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
 
 - La liste d’adresses IP bloquées est prioritaire sur la liste d’adresses IP bloquées (une adresse sur les deux listes n’est pas bloquée).
 
-- La liste d’adresses IP permises et la liste d’adresses IP bloqués peuvent chacune prendre en charge un maximum de 1 273 entrées, où une entrée est une adresse IP unique, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing).
+- La liste d’adresses IP et la liste d’adresses IP bloqués peuvent chacune prendre en charge un maximum de 1 273 entrées, où une entrée est une adresse IP unique, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>Utiliser le portail Microsoft 365 Defender pour modifier la stratégie de filtrage des connexions par défaut
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **Policies** \> **Anti-spam** in the **Policies** section.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, sélectionnez Stratégie de filtrage des connexions **(par défaut)** dans la liste en cliquant sur le nom de la stratégie.
 
@@ -91,9 +91,9 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
        - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
        - ADRESSE IP CIDR : par exemple, 192.168.0.1/25. Les valeurs de masque de sous-réseau valides sont de /24 à /32. Pour ignorer le filtrage du courrier indésirable pour /1 à /23, consultez la section Ignorer le filtrage du courrier indésirable pour une [adresse IP CIDR](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) en dehors de la section disponible plus loin dans cet article.
 
-       Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+       Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
-     Pour ajouter l’adresse IP ou la plage d’adresses, cliquez dans la zone et tapez itclick **Icône** ![ Ajouter ](../../media/ITPro-EAC-AddIcon.png) . Pour supprimer une entrée, sélectionnez-la dans **l’adresse IP autorisée,** puis cliquez sur  ![ ](../../media/scc-remove-icon.png) Supprimer. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+     Pour ajouter l’adresse IP ou la plage d’adresses, cliquez dans la zone et tapez itclick **Ajouter** une ![ icône. ](../../media/ITPro-EAC-AddIcon.png) Pour supprimer une entrée, sélectionnez-la dans **l’adresse IP autorisée,** puis cliquez sur  ![ ](../../media/scc-remove-icon.png) Supprimer. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
    - **Toujours bloquer les messages provenant des adresses IP ou** de la plage d’adresses suivantes : il s’agit de la liste d’adresses IP bloqués. Entrez une adresse IP, une plage IP ou une adresse IP CIDR unique dans la zone comme décrit précédemment dans le paramètre Toujours autoriser les messages provenant des adresses IP ou des **plages d’adresses suivantes.**
 
@@ -105,7 +105,7 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>Utiliser le portail Microsoft 365 Defender pour afficher la stratégie de filtrage des connexions par défaut
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **Policies** \> **Anti-spam** in the **Policies** section.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, les propriétés suivantes sont affichées dans la liste des stratégies :
 
@@ -124,7 +124,7 @@ Utilisez la syntaxe suivante :
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Les valeurs d’adresse IP ou de plage d’adresses valides sont :
   - Adresse IP unique : par exemple, 192.168.1.1.
@@ -148,7 +148,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-HostedConnectionFilterPolicy](/powershell/module/exchange/set-hostedconnectionfilterpolicy).
 
-## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
+## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné?
 
 Pour vérifier que vous avez bien modifié la stratégie de filtrage des connexions par défaut, faites l’une des étapes suivantes :
 
@@ -207,4 +207,4 @@ Si vous rencontrez l’un de ces scénarios, vous pouvez créer une règle de fl
 
 ****
 
-![L’icône courte pour LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nouveau Microsoft 365 ?** Découvrez les cours vidéo gratuits **pour Microsoft 365 administrateurs** et professionnels de l’informatique, présentés par LinkedIn Learning.
+![Petit icône de LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous n’Microsoft 365 ?** Découvrez les cours vidéo gratuits **pour Microsoft 365 administrateurs** et professionnels de l’informatique, présentés par LinkedIn Learning.

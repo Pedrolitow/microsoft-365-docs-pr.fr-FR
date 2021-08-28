@@ -16,18 +16,18 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 5b2c47dff19b07a5ca2a207785891ebfb6777459ea9c5254680079f4458e8f84
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804650"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572778"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurer une équipe avec une isolation des problèmes de sécurité dans un environnement de test/développement
 
 Cet article fournit des instructions pas à pas pour créer une [équipe avec une isolation des problèmes de sécurité](secure-teams-security-isolation.md) dans un environnement de développement/test.
 
-![Configuration de la stratégie d’entreprise pour l’équipe isolée](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+![Configuration de la stratégie d’entreprise pour équipe isolée.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 Utilisez cet environnement de développement/test pour expérimenter et affiner les paramètres de vos besoins spécifiques avant de déployer ce type d’équipe en production.
 
@@ -102,7 +102,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 Utilisez ces étapes pour vérifier que la gestion des licences basée sur un groupe fonctionne correctement.
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
 
 2. Sous le nouvel onglet **Centre d’administration Microsoft 365** de votre navigateur, cliquez sur **Utilisateurs**.
 
@@ -202,7 +202,7 @@ Si vous vous connectez en tant que membre du groupe **Stratégie d’entreprise*
 
 Voici la configuration obtenue pour l’équipe Stratégie d’entreprise.
 
-![Configuration de la stratégie d’entreprise pour l’équipe isolée](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+![Configuration de la stratégie d’entreprise pour équipe isolée.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 ## <a name="next-step"></a>Étape suivante
 

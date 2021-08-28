@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender Office 365
-ms.openlocfilehash: 0164d7f5017ebf3b2076bf7231da4ca30a36427500c6782602e6e50812f914df
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a11528df6960293ba4b5a3f6e4d287989049556a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817005"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572490"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de la version d’Office 365 Microsoft Defender
 
@@ -69,7 +69,7 @@ Par défaut, ces stratégies sont limitées à tous les utilisateurs de l’orga
 
 Lors de l’installation, la fonctionnalité de réponse de Defender Office 365 (dans Defender pour Office 365 P2 ou équivalent) est également configurée pour l’ensemble de l’organisation. Aucune portée de stratégie n’est requise.
 
-## <a name="licensing"></a>Licence
+## <a name="licensing"></a>Licences
 
 Dans le cadre de la configuration de la version d’essai, les licences Defender pour Office 365 sont automatiquement appliquées à l’organisation. Les licences sont gratuites pour les 90 premiers jours.
 
@@ -93,7 +93,7 @@ Defender for Office 365 aide les organisations à sécuriser leur entreprise en 
 
 Vous pouvez également en savoir plus sur Defender for Office 365 dans ce [guide interactif.](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)
 
-![Diagramme conceptuel De Microsoft Defender Office 365](../../media/microsoft-defender-for-office-365.png)
+![Diagramme conceptuel Microsoft Defender Office 365'équipe.](../../media/microsoft-defender-for-office-365.png)
 
 ### <a name="prevention"></a>Prévention
 

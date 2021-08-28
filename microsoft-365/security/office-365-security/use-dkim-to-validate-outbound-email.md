@@ -20,12 +20,12 @@ ms.custom:
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a7b1522046926fb0ec3998564f83fdb3d28cb74
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 25c83dedaa9f1606744e54459a0ebfb5627be752
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258270"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575479"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -75,7 +75,7 @@ DKIM vous permet d'ajouter une signature numérique aux e-mails sortants dans l'
 
 SPF ajoute des informations à une enveloppe de message mais DKIM *chiffre* une signature dans l’en-tête du message. Lorsque vous transférez un message, des parties de l'enveloppe de ce message peuvent être supprimées par le serveur de transfert. Étant donné que la signature numérique reste dans le message électronique, car elle fait partie de l'en-tête du message, DKIM fonctionne même lorsqu'un message a été transféré, comme illustré dans l'exemple suivant.
 
-![Diagramme illustrant l'authentification DKIM correcte d'un message envoyé lors de l'échec du contrôle SPF](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
+![Diagramme illustrant l'authentification DKIM correcte d'un message transféré lors de l'échec du contrôle SPF](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
 Dans cet exemple, si vous aviez publié un seul enregistrement SPF TXT pour votre domaine, le serveur de courrier destinataire pourrait avoir marqué vos e-mails comme courriers indésirables et généré un résultat faux positif. **L’ajout de DKIM dans ce scénario réduit *le signalement de courrier indésirable* faux positif**. Étant donné que DKIM repose à la fois sur le chiffrement de la clé publique et non les adresses IP uniquement pour l’authentification, DKIM représente une forme d’authentification beaucoup plus puissante que SPF. Nous vous recommandons d’utiliser à la fois SPF et DKIM, ainsi que DMARC dans votre déploiement.
 
@@ -87,17 +87,17 @@ Dans cet exemple, si vous aviez publié un seul enregistrement SPF TXT pour votr
 Tous les domaines acceptés de votre client s’affichent dans le Portail Microsoft 365 Defender sous la page DKIM. Si vous ne le voyez pas, ajoutez votre domaine accepté à partir de la [page domaines](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Une fois votre domaine ajouté, suivez les étapes ci-dessous pour configurer DKIM.
 
-Étape 1 : cliquer sur le domaine sur lequel vous souhaitez configurer DKIM sur la page DKIM.
+Étape 1 : cliquer sur le domaine sur lequel vous souhaitez configurer DKIM sur la page DKIM (https://security.microsoft.com/dkimv2 ou https://protection.office.com/dkimv2)).
 
-![Page DKIM dans le portail Microsoft 365 Defender avec un domaine sélectionné](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+![Page DKIM dans le portail Microsoft 365 Defender avec un domaine sélectionné.](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
-Étape 2 : cliquer sur Créer des clés DKIM.
+Étape 2 : cliquer sur Créer des clés DKIM.
 
-![Menu volant des détails du domaine avec le bouton Créer des clés DKIM](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![Menu volant des détails du domaine avec le bouton Créer des clés DKIM.](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
 
-Étape 3 : copier le CNAMES affiché dans la fenêtre contextuelle.
+Étape 3 : copier le CNAMES affiché dans la fenêtre contextuelle
 
-![Fenêtre contextuelle Publier les CNAMES qui contient les deux enregistrements CNAME à copier](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
+![Fenêtre contextuelle Publier les CNAMES qui contient les deux enregistrements CNAME à copier.](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 Étape 4 : publier les enregistrements CNAME copiés sur votre fournisseur de services DNS.
 
@@ -112,7 +112,7 @@ TTL: 3600 (or your provider default)
 
 Étape 5 : revenir à la page DKIM pour activer DKIM.
 
-![Faire glisser le bouton bascule sur Activer pour l’activation de DKIM](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+![Faire glisser le bouton bascule sur Activer pour l’activation de DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
 Si vous voyez l'erreur L’enregistrement CNAME n'existe pas, cela peut être dû à :
 
@@ -241,7 +241,7 @@ Une fois que vous avez publié les enregistrements CNAME dans le système DNS, v
 
 3. Dans la page **DKIM**, sélectionnez le domaine en cliquant sur le nom.
 
-4. Dans le menu volant des détails qui s’affiche, changez le paramètre **Signer les messages pour ce domaine avec des signatures DKIM** à **Activé** (![Basculer sur](../../media/scc-toggle-on.png))
+4. Dans le menu volant des détails qui s’affiche, changez le paramètre **Signer les messages pour ce domaine avec des signatures DKIM** à **Activé** (![Basculer sur.](../../media/scc-toggle-on.png))
 
    Lorsque vous avez terminé, cliquez sur **Rotation des clés DKIM**.
 
@@ -313,7 +313,7 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
    $p[0] | Set-DkimSigningConfig -Enabled $false
    ```
 
-   Par exemple :
+   Par exemple :
 
    ```powershell
    $p = Get-DkimSigningConfig -Identity contoso.com

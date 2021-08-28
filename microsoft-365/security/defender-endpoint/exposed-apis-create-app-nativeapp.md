@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4c5cf3c759d0ea779e8070ad3474013a765fee95
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 3c902880ca5eb86c393f9226e3eceef742927bac
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594273"
+ms.locfileid: "58571312"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Utiliser les API Microsoft Defender pour les points de terminaison
 
@@ -47,46 +47,41 @@ Si vous n’êtes pas sûr de l’accès dont vous avez besoin, lisez la [page I
 Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
-
 - Créer une application AAD
 - Obtenir un jeton d’accès à l’aide de cette application
 - Utiliser le jeton pour accéder à l’API Defender for Endpoint
 
 Cette page explique comment créer une application AAD, obtenir un jeton d’accès à Microsoft Defender pour le point de terminaison et valider le jeton.
 
-> [!NOTE]
+>[!NOTE]
 > Lorsque vous accédez à l’API Microsoft Defender pour endpoint pour le compte d’un utilisateur, vous avez besoin de l’autorisation d’application et de l’autorisation utilisateur correctes.
 > Si vous n’êtes pas familiarisé avec les autorisations utilisateur sur Microsoft Defender pour le point de terminaison, voir Gérer l’accès au portail à l’aide du contrôle [d’accès basé sur les rôles.](rbac.md)
 
-> [!TIP]
+>[!TIP]
 > Si vous avez l’autorisation d’effectuer une action dans le portail, vous avez l’autorisation d’effectuer l’action dans l’API.
 
 ## <a name="create-an-app"></a>Créer une application
 
 1. Connectez-vous [à Azure](https://portal.azure.com) avec un compte d’utilisateur ayant le **rôle Administrateur** général.
 
-2. Accédez à **Azure Active Directory** \> **inscription de l’application Nouvelle** \> **inscription.**
+2. Accédez à **Azure Active Directory**  >  **inscription de l’application Nouvelle**  >  **inscription.** 
 
    ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](images/atp-azure-new-app2.png)
 
 3. Lorsque la page **Inscrire une application** s’affiche, saisissez les informations d’inscription de votre application :
+
    - **Nom** : saisissez un nom d’application cohérent qui s’affichera pour les utilisateurs de l’application.
    - **Types de compte pris en charge** : sélectionnez les comptes à prendre en charge par l’application.
 
-   <br>
-
-   ****
-
-   |Types de comptes pris en charge|Description|
-   |---|---|
-   |**Comptes dans cet annuaire organisationnel uniquement**|Sélectionnez cette option si vous générez une application métier. Cette option n’est pas disponible si vous n’inscrivez pas l’application dans un annuaire. <p> Cette option s’applique à un compte Azure AD à locataire unique seulement. <p> Il s’agit de l’option par défaut, sauf si vous inscrivez l’application hors d’un annuaire. Dans les cas où l’application est inscrite hors d’un annuaire, l’option par défaut est comptes mutualisés Azure AD et comptes Microsoft personnels.|
-   |**Comptes dans un annuaire organisationnel**|Sélectionnez cette option si vous souhaitez cibler tous les clients professionnels et éducatifs. <p> Cette option s’applique à un compte Azure AD multi-locataire seulement. <p> Si vous avez inscrit l’application comme compte Azure AD à locataire unique seulement, vous pouvez le mettre à jour vers un compte Azure AD multi-locataire et inversement via le panneau **Authentification**.|
-   |**Comptes dans un annuaire organisationnel et comptes personnels Microsoft**|Sélectionnez cette option pour cibler l’ensemble le plus large de clients. <p> Cette option s’applique à des comptes Microsoft personnels et Azure AD multi-locataires. <p> Si vous avez inscrit l’application comme comptes Microsoft personnels et Azure AD multi-locataires, vous ne pouvez pas modifier cela dans l’interface utilisateur. Vous devez utiliser l’éditeur de manifeste de l’application pour modifier les types de compte pris en charge.|
-   |
+       | Types de comptes pris en charge | Description |
+       |-------------------------|-------------|
+       | **Comptes dans cet annuaire organisationnel uniquement** | Sélectionnez cette option si vous générez une application métier. Cette option n’est pas disponible si vous n’inscrivez pas l’application dans un annuaire.<br><br>Cette option s’applique à un compte Azure AD à locataire unique seulement.<br><br>Il s’agit de l’option par défaut, sauf si vous inscrivez l’application hors d’un annuaire. Dans les cas où l’application est inscrite hors d’un annuaire, l’option par défaut est comptes mutualisés Azure AD et comptes Microsoft personnels. |
+       | **Comptes dans un annuaire organisationnel** | Sélectionnez cette option si vous souhaitez cibler tous les clients professionnels et éducatifs.<br><br>Cette option s’applique à un compte Azure AD multi-locataire seulement.<br><br>Si vous avez inscrit l’application comme compte Azure AD à locataire unique seulement, vous pouvez le mettre à jour vers un compte Azure AD multi-locataire et inversement via le panneau **Authentification**. |
+       | **Comptes dans un annuaire organisationnel et comptes personnels Microsoft** | Sélectionnez cette option pour cibler l’ensemble le plus large de clients.<br><br>Cette option s’applique à des comptes Microsoft personnels et Azure AD multi-locataires.<br><br>Si vous avez inscrit l’application comme comptes Microsoft personnels et Azure AD multi-locataires, vous ne pouvez pas modifier cela dans l’interface utilisateur. Vous devez utiliser l’éditeur de manifeste de l’application pour modifier les types de compte pris en charge. |
 
    - **URI de redirection (facultatif)** : sélectionnez le type d’application que vous créez, **Web** ou **Client public (mobile et bureau)**, puis entrez l’URI de redirection (ou URL de réponse).
-     - Pour les applications web, indiquez l’URL de base de votre application. Par exemple, `http://localhost:31544` peut être l’URL d’une application web en cours d’exécution sur votre ordinateur local. Les utilisateurs peuvent utiliser cette URL pour se connecter à une application web cliente.
-     - Pour les applications de client public, indiquez l’URI utilisé par Azure AD pour renvoyer les réponses de jeton. Entrez une valeur spécifique de votre application, par exemple, `myapp://auth`.
+       - Pour les applications web, indiquez l’URL de base de votre application. Par exemple, `http://localhost:31544` peut être l’URL d’une application web en cours d’exécution sur votre ordinateur local. Les utilisateurs peuvent utiliser cette URL pour se connecter à une application web cliente.
+       - Pour les applications de client public, indiquez l’URI utilisé par Azure AD pour renvoyer les réponses de jeton. Entrez une valeur spécifique de votre application, par exemple, `myapp://auth`.
 
      Pour accéder à des exemples spécifiques aux applications web ou natives, consultez les [Guides de démarrage rapides](/azure/active-directory/develop/#quickstarts).
 
@@ -94,40 +89,42 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
 4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et attribuez-lui l’autorisation « Lire les alertes » :
 
-   - Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon \>  \>  organisation > **tapez WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
-   - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour le voir apparaître.
+    - Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon  >    >   organisation > **tapez WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
 
-     ![ajouter une autorisation.](images/add-permission.png)
+    - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour le voir apparaître.
 
-   - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**
+      ![ajouter une autorisation.](images/add-permission.png)
+
+    - Choose **Delegated permissions**  >  **Alert.Read** > select **Add permissions**
 
       ![autorisations d’application.](images/application-permissions-public-client.png)
 
-   - **Remarque importante**: sélectionnez les autorisations pertinentes. Les alertes de lecture ne sont qu’un exemple.
+    - **Remarque importante**: sélectionnez les autorisations pertinentes. Les alertes de lecture ne sont qu’un exemple.
 
-     Par exemple,
+      Par exemple,
 
-     - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
-     - Pour [isoler un appareil, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
-     - Pour déterminer l’autorisation qui vous est nécessaire, consultez la section **Autorisations** dans l’API que vous souhaitez appeler.
+      - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
+      - Pour [isoler un appareil, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
+      - Pour déterminer l’autorisation qui vous est nécessaire, consultez la section **Autorisations** dans l’API que vous souhaitez appeler.
 
-   - Sélectionner **Accorder le consentement**
+    - Sélectionner **Accorder le consentement**
 
       **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner accordez **l’autorisation** pour que la nouvelle autorisation prenne effet.
 
       ![Image d’octroi d’autorisations.](images/grant-consent.png)
 
-5. Notez votre ID d’application et votre ID de client :
+6. Notez votre ID d’application et votre ID de client :
 
    - Dans la page de votre application, allez à **Vue d’ensemble** et copiez les informations suivantes :
 
    ![Image de l’ID d’application créé.](images/app-and-tenant-ids.png)
 
+
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
 Pour plus d’informations sur les jetons AAD, voir [le didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
-### <a name="using-c"></a>Utilisation de C\#
+### <a name="using-c"></a>Utilisation de C #
 
 - Copiez/collez la classe ci-dessous dans votre application.
 - Utilisez **la méthode AcquireUserTokenAsync** avec votre ID d’application, ID de client, nom d’utilisateur et mot de passe pour acquérir un jeton.
@@ -173,7 +170,6 @@ Pour plus d’informations sur les jetons AAD, voir [le didacticiel Azure AD](/a
 ## <a name="validate-the-token"></a>Valider le jeton
 
 Vérifiez que vous avez reçu un jeton correct :
-
 - Copier/coller dans [JWT](https://jwt.ms) le jeton obtenu à l’étape précédente afin de le décoder
 - Valider que vous obtenez une revendication « scp » avec les autorisations d’application souhaitées
 - Dans la capture d’écran ci-dessous, vous pouvez voir un jeton décodé acquis à partir de l’application dans le didacticiel :
@@ -186,7 +182,7 @@ Vérifiez que vous avez reçu un jeton correct :
 - Définissez l’en-tête Authorization dans la requête HTTP que vous envoyez à « Bearer {token} » (le porteur est le schéma d’autorisation)
 - Le délai d’expiration du jeton est de 1 heure (vous pouvez envoyer plusieurs demandes avec le même jeton)
 
-- Exemple d’envoi d’une demande pour obtenir une liste d’alertes à **l’aide C#**
+- Exemple d’envoi d’une demande pour obtenir une liste d’alertes à **l’aide C#** 
 
     ```csharp
     var httpClient = new HttpClient();
@@ -201,6 +197,5 @@ Vérifiez que vous avez reçu un jeton correct :
     ```
 
 ## <a name="see-also"></a>Voir aussi
-
 - [API Microsoft Defender pour point de terminaison](exposed-apis-list.md)
 - [Accéder à Microsoft Defender pour le point de terminaison avec le contexte de l’application](exposed-apis-create-app-webapp.md)

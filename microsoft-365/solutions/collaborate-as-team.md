@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe pour la collaboration entre les tâches, les conversations et la documentation avec les invités dans Teams.
-ms.openlocfilehash: 7e0d914f4a0541a8b43959447d6fafdcaf8d3210
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: e43a43c6b409379f9ca18c46f91e078ced46b7ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347191"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572826"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -43,7 +43,7 @@ Le partage dans Microsoft 365 est régi à son niveau le plus élevé par les [p
 
 Vérifiez les paramètres de collaboration externe B2B pour vous assurer que le partage avec les invités n’est pas bloqué.
 
-![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory.](../media/azure-ad-organizational-relationships-settings.png)
 
 Pour définir les paramètres de collaboration externe
 
@@ -64,7 +64,7 @@ Teams dispose d’un commutateur maître d’accès par invité et de divers par
 
 Vérifiez que l’accès invité est activé dans Teams et ajustez les paramètres invités en fonction des besoins de votre entreprise. N’oubliez pas que ces paramètres affectent toutes les équipes.
 
-![Capture d’écran du commutateur Accès invité dans Teams](../media/teams-guest-access-toggle-on.png)
+![Capture d’écran du commutateur Accès invité dans Teams.](../media/teams-guest-access-toggle-on.png)
 
 Pour déterminer les paramètres d’accès invité Teams, procédez comme suit :
 
@@ -84,7 +84,7 @@ Une fois l’accès invité Teams désactivé, vous pouvez éventuellement contr
 
 Teams utilise les groupes Microsoft 365 pour l’appartenance aux équipes. Les paramètres invités des groupes Microsoft 365 doivent être désactivés pour que l’accès invité dans Teams fonctionne.
 
-![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365.](../media/office-365-groups-guest-settings.png)
 
 Pour définir les paramètres invités des groupes Microsoft 365
 
@@ -103,7 +103,7 @@ Les paramètres au niveau de l’organisation déterminent les paramètres dispo
 
 Si vous voulez autoriser le partage de fichiers et de dossiers avec des personnes non authentifiés, sélectionnez **Tout le monde**. Pour vous assurer que tous les invités doivent s’authentifier, Choisissez **Invités nouveaux et existants**. Choisissez le paramètre le plus permissif qui sera nécessaire pour n’importe quel site de votre organisation.
 
-![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation](../media/sharepoint-organization-external-sharing-controls.png)
+![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 Pour définir les paramètres de partage SharePoint au niveau de l’organisation
@@ -126,7 +126,7 @@ Choisissez l’un des types de liens suivants qui seront sélectionnés par déf
 - **Uniquement les personnes de votre organisation** : choisissez cette option si vous souhaitez que la plupart des partages de fichiers et de dossiers soient avec des personnes de votre organisation.
 - **Personnes spécifiques** : envisagez cette option si vous prévoyez de partager beaucoup de fichiers et de dossiers avec vos invités. Ce type de lien fonctionne avec les invités et exige leur authentification.
  
-![Capture d’écran des paramètres de partage de fichiers et dossiers au niveau de l’organisation dans SharePoint](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![Capture d’écran des paramètres de partage de fichiers et dossiers au niveau de l’organisation dans SharePoint.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 Pour définir les paramètres de liaison par défaut au niveau de l’organisation SharePoint
@@ -153,7 +153,7 @@ Nous inviterons des utilisateurs plus tard. Ensuite, il est important de vérifi
 
 Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’ils autorisent le type d’accès voulu pour cette équipe. Par exemple, si vous définissez les paramètres au niveau de l’organisation sur **Tout le monde**, mais que vous souhaitez que tous les invités s’authentifier au niveau de cette équipe, assurez-vous que les paramètres de partage au niveau du site sont **Invités nouveaux et existants**.
 
-![Capture d’écran des paramètres de partage externe de site SharePoint](../media/sharepoint-site-external-sharing-settings.png)
+![Capture d’écran des paramètres de partage externe de site SharePoint.](../media/sharepoint-site-external-sharing-settings.png)
 
 Pour définir les paramètres au niveau du site
 1. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Sites** et cliquez sur **Sites actifs**.

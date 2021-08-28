@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d27f8849efa9b1548fdb189ff6b1d97e1af5e424
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 92c74ae2f7e7236138f28cf30b3e835eb10b636d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58249143"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572502"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ Dans Microsoft 365 Defender, les alertes associées sont regroupées pour former
 
 La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous arrivez à la file d’attente des alertes à partir **d’incidents & alertes** > alertes sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente des alertes":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente des alertes.":::
 
 Les alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
@@ -50,7 +50,7 @@ Par défaut, la file d’attente des alertes du portail Microsoft 365 Defender a
 
 Dans la file d’attente des alertes par défaut, vous pouvez sélectionner **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet filtres pour la file d’attente d’alertes":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple du volet Filtres de la file d’attente d’alertes.":::
 
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
@@ -115,12 +115,12 @@ Une fois que vous avez sélectionné une entité d’intérêt, la page de déta
 
 Pour gérer une alerte, sélectionnez l’alerte dans la file d’attente des alertes sur sa ligne pour voir un volet Gérer **les** alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Exemple du volet récapitulatif d’une alerte":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Exemple du volet récapitulatif d’une alerte.":::
 
 Le **volet Gérer les** alertes vous permet de spécifier :
 
 - État de l’alerte (Nouveau, Résolu, En cours).
-- Classification de l’alerte (non définie, alerte true, fausse alerte).
+- Classification de l’alerte (non définie, alerte True, Fausse alerte).
 - Pour la classification en tant qu’alerte réelle, le type de menace pour l’alerte dans le **champ Détermination.**
 - Commentaire de l’alerte.
 

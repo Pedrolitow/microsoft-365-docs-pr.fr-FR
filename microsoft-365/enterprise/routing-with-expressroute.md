@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Dans cet article, découvrez les exigences de routage, les circuits et les domaines de routage Azure ExpressRoute à utiliser avec Office 365.
-ms.openlocfilehash: e36730f457f17ca6e789bd0ba06998824a6c590a45c53f9050f497c762f5985b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d157515f60a68a46b033571a0fd39e6a5711b884
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904486"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575827"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routage avec ExpressRoute pour Office 365
 
@@ -146,7 +146,7 @@ Dans cet exemple de scénario, Trey Research utilise un périphérique proxy sor
   
 Les FQDN de volume les plus élevés pour Exchange Online, SharePoint Online et Skype Entreprise Online sont les suivants :
   
-![Réseau Edge client ExpressRoute](../media/dab8cc42-b1d6-46d6-b2f6-d70f9e16d5ea.png)
+![Réseau Edge client ExpressRoute.](../media/dab8cc42-b1d6-46d6-b2f6-d70f9e16d5ea.png)
   
 - outlook.office365.com, outlook.office.com
 
@@ -199,7 +199,7 @@ Dans la situation de Humongous Insurance, ils doivent continuer en fonction des 
   
 Si Humongous Insurance n’utilise pas ou ne prévoit aucunement d’utiliser Skype Entreprise Online, le routage du Office 365 trafic réseau destiné à un continent avec une connexion ExpressRoute peut être réalisable, mais peut entraîner une latence inutile ou une congestion TCP. Dans les deux cas, il est recommandé de router le trafic Internet destiné à Internet sur le site local pour tirer parti des réseaux de distribution de contenu sur Office 365 réseaux.
   
-![Zone multigé géographique ExpressRoute](../media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
+![Zone multigé géographique ExpressRoute.](../media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
 Lorsque Humongous Insurance planifie sa stratégie multigé géographique, il existe un certain nombre d’éléments à prendre en compte en matière de taille du circuit, de nombre de circuits, deover, etc.
   
@@ -225,7 +225,7 @@ Le routage sélectif avec ExpressRoute peut être nécessaire pour diverses rais
 
 Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/erorouting]()
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
   

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d9c244b048685824abfece8302c2528fa51a5802
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: c9a9cfa6e790cd179c0f9a13ce4fd312c0819411
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349991"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575531"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidents dans Microsoft 365 Defender
 
@@ -46,7 +46,7 @@ Microsoft 365 et applications créent des alertes lorsqu’ils détectent un év
 
 Étant donné que l’agrégation des alertes individuelles pour obtenir des informations sur une attaque peut être complexe et chronophage, Microsoft 365 Defender regroupe automatiquement les alertes et leurs informations associées dans un incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Comment Microsoft 365 Defender des événements d’entités dans un incident":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Comment Microsoft 365 Defender des événements d’entités dans un incident.":::
 
 Regardez cette courte vue d’ensemble des incidents Microsoft 365 Defender (4 minutes).
 
@@ -68,7 +68,7 @@ Si [elle est activée,](m365d-enable.md)Microsoft 365 Defender [peuvent automati
 
 Vous gérez les incidents à partir **d’incidents & alertes** > incidents sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Page Incidents dans le portail Microsoft 365 Defender web":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Page Incidents dans le portail Microsoft 365 Defender web.":::
 
 La sélection d’un nom d’incident affiche un résumé de l’incident et donne accès aux onglets avec des informations supplémentaires.
 
@@ -82,7 +82,7 @@ Les onglets supplémentaires pour un incident sont les suivants :
 
 - Appareils
 
-  Tous les appareils qui ont été identifiés comme faisant partie ou liés à l’incident.
+  Tous les appareils identifiés comme faisant partie ou liés à l’incident.
 
 - Utilisateurs
 
@@ -100,15 +100,15 @@ Les onglets supplémentaires pour un incident sont les suivants :
 
   Tous les événements pris en charge et entités suspectes dans les alertes dans l’incident.
 
-Voici la relation entre un incident et ses données et les onglets d’un incident dans Microsoft 365 Defender web.
+Voici la relation entre un incident et ses données et les onglets d’un incident dans le Microsoft 365 Defender web.
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Relation d’un incident et de ses données avec les onglets d’un incident dans le portail Microsoft 365 Defender web":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Relation d’un incident et de ses données avec les onglets d’un incident dans Microsoft 365 Defender portail.":::
 
 ## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Exemple de flux de travail de réponse aux incidents pour Microsoft 365 Defender
 
 Voici un exemple de flux de travail pour répondre aux incidents dans Microsoft 365 avec le portail Microsoft 365 Defender web.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Exemple de flux de travail de réponse aux incidents pour Microsoft 365":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Exemple de flux de travail de réponse aux incidents pour Microsoft 365.":::
 
 Identifiez régulièrement les incidents les plus prioritaires pour l’analyse et la résolution dans la file d’attente des incidents et préparez-les à répondre. Il s’agit d’une combinaison de :
 
@@ -146,7 +146,7 @@ Pour plus d’informations sur la réponse aux incidents dans les produits Micro
 
 Voici un exemple d’opérations de sécurité (SecOps) pour Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Exemple d’opérations de sécurité pour Microsoft 365 Defender":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Exemple d’opérations de sécurité pour Microsoft 365 Defender.":::
 
 Les tâches quotidiennes peuvent inclure les tâches suivantes :
 
@@ -193,7 +193,7 @@ Pour plus d’informations sur SecOps dans les produits Microsoft, consultez les
 
   - Effectuer [des examens](investigate-incidents.md) des incidents.
 
-- Découvrez comment intégrer des Microsoft 365 Defender dans votre Centre des opérations [de sécurité (SOC).](integrate-microsoft-365-defender-secops.md)
+- Découvrez comment intégrer [des Microsoft 365 Defender dans votre Centre d’opérations de sécurité (SOC).](integrate-microsoft-365-defender-secops.md)
 
 - Consultez ces manuels de réponse aux incidents pour obtenir des [instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application.
 

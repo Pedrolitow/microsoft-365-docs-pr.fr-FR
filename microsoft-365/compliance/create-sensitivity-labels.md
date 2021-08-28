@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour l’ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les données de votre organisation.'
-ms.openlocfilehash: 4b37aeecabdeaef3afebb7144330a5c9df811729
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 2851fd356efe4405d4355547f364f4a147cb26d0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508117"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571422"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -54,14 +54,14 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
     Par exemple, dans le Centre de conformité Microsoft 365 :
 
-    ![Créer une étiquette de confidentialité](../media/create-sensitivity-label-full.png)
+    ![Créer une étiquette de confidentialité.](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
     > Par défaut, les clients n’ont pas d’étiquettes. Vous devez alors en créer. Les étiquettes de l’exemple d’image montrent les étiquettes par défaut qui ont été [déplacées à partir d’Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
 3. Sur la page **Définir l’étendue de cette étiquette**, les options sélectionnées déterminent l’étendue de l’étiquette pour les paramètres que vous pouvez configurer et l’emplacement où ils seront visibles lors de la publication :
 
-    ![Étendues des étiquettes de confidentialité](../media/sensitivity-labels-scopes.png)
+    ![Étendues des étiquettes de confidentialité.](../media/sensitivity-labels-scopes.png)
 
     - Si **Fichiers et e-mails** est sélectionné, vous pouvez configurer dans cet Assistant les paramètres qui s’appliquent aux applications qui prennent en charge les étiquettes de confidentialité, telles qu’Office Word et Outlook. Si cette option n’est pas sélectionnée, l’Assistant affiche la première page de ces paramètres, mais vous ne pouvez pas les configurer et les étiquettes ne sont pas disponibles à la sélection pour les utilisateurs dans ces applications.
 
@@ -79,7 +79,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
 Pour modifier une étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier l'étiquette** :
 
-![Bouton « Modifier l’étiquette » pour modifier une étiquette de confidentialité](../media/edit-sensitivity-label-full.png)
+![Bouton Modifier l’étiquette pour modifier une étiquette de confidentialité](../media/edit-sensitivity-label-full.png)
 
 Ce bouton démarre l’Assistant **Modifier l'étiquette de confidentialité**, vous permettant de modifier les paramètres d’étiquette à l’étape 4.
 
@@ -147,7 +147,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     Par exemple, dans le Centre de conformité Microsoft 365 :
 
-    ![Publier des étiquettes](../media/publish-sensitivity-labels-full.png)
+    ![Publier des étiquettes.](../media/publish-sensitivity-labels-full.png)
 
     > [!NOTE]
     > Par défaut, les clients n’ont pas de stratégies d’étiquette. Vous devez alors créer. 
@@ -175,7 +175,7 @@ La stratégie d’étiquette est publiée automatiquement dès la fin de l'Assis
 
 Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier la stratégie** : 
 
-![Modifier une étiquette de confidentialité](../media/edit-sensitivity-label-policy-full.png)
+![Modifier une étiquette de confidentialité.](../media/edit-sensitivity-label-policy-full.png)
 
 Ce bouton démarre l’Assistant **Créer une stratégie** qui vous permet de modifier les étiquettes incluses et leurs paramètres. Une fois l’exécution de l’Assistant terminée, toutes les modifications sont automatiquement répliquées vers les services et les utilisateurs sélectionnés.
 

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : Utilisez ces guides de laboratoire de test pour configurer des environnements de démonstration, de preuve de concept ou de développement/test pour Microsoft 365.'
-ms.openlocfilehash: 7c1a1462c2bd177f30ced6b8e9ecdb17dd72adbc
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: a7dc8c4e731b03733b200b8750cc6157eb44a9c2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356107"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573150"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Test Microsoft 365 avec les guides de laboratoire de test (TLG)
 
@@ -33,7 +33,7 @@ Les guides de laboratoire de test vous permettent d’avoir un aperçu rapide de
   
 Les guides de laboratoire de test créent également des environnements représentatifs pour le développement et le test d’applications, également connus sous le nom d’environnements de développement/test.
   
-![Guides de laboratoire de test dans Microsoft Cloud](../media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guides de laboratoire de test dans Microsoft Cloud.](../media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 ## <a name="microsoft-365-devtest-environment"></a>Microsoft 365 dev/test
 
@@ -49,9 +49,9 @@ Utilisez les articles suivants pour créer votre environnement Microsoft 365 dev
 
     Cette étape est facultative si vous souhaitez créer une configuration d’entreprise simulée pour une identité hybride.
     
-Pour les guides de laboratoire de test supplémentaires qui s’appliquent Office 365 et Microsoft 365, voir [les guides de laboratoire de test.](m365-enterprise-test-lab-guides.md)  
+Pour les guides de laboratoire de test supplémentaires qui s’appliquent Office 365 et Microsoft 365, voir les [guides de laboratoire de test.](m365-enterprise-test-lab-guides.md)  
     
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   

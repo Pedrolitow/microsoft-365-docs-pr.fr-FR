@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez comment l’isolation et le contrôle d’accès fonctionnent pour conserver les données de plusieurs clients isolés les uns des autres au sein Azure Active Directory.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e48ffaee5927010aa9e2cea2d231a194a33008d1d0c0ca7ed260fe6adc3c834b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d9305bd6c58abd7d3fa5d9b7c6761b64eab279f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864561"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571012"
 ---
 # <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Microsoft 365 Isolation et contrôle d’accès dans Azure Active Directory
 
@@ -33,15 +33,15 @@ Azure Active Directory (Azure AD) a été conçu pour héberger plusieurs client
 
 Aucune application, utilisateur, serveur ou service ne peut accéder à Azure AD sans l’authentification et le jeton ou le certificat appropriés. Les demandes sont rejetées si elles ne sont pas accompagnées d’informations d’identification correctes.
 
-En fait, Azure AD héberge chaque client dans son propre conteneur protégé, avec des stratégies et des autorisations pour et au sein du conteneur, uniquement la propriété et la gestion par le client.
+En fait, Azure AD héberge chaque client dans son propre conteneur protégé, avec des stratégies et des autorisations pour et au sein du conteneur uniquement, qui sont la propriété et la gestion du client.
  
-![Conteneur Azure](../media/office-365-isolation-azure-container.png)
+![Conteneur Azure.](../media/office-365-isolation-azure-container.png)
 
 Le concept de conteneurs clients est profondément intégré dans le service d’annuaire à toutes les couches, des portails jusqu’au stockage persistant. Même lorsque plusieurs métadonnées du client Azure AD sont stockées sur le même disque physique, il n’existe aucune relation entre les conteneurs autre que celle définie par le service d’annuaire, qui est à son tour dictée par l’administrateur client. Il ne peut y avoir aucune connexion directe au stockage Azure AD à partir d’une application ou d’un service demandeur sans passer au préalable par la couche d’autorisation.
 
 Dans l’exemple ci-dessous, Contoso et Fabrikam ont tous deux des conteneurs distincts et dédiés, et même si ces conteneurs peuvent partager une partie de la même infrastructure sous-jacente, telle que les serveurs et le stockage, ils restent séparés et isolés les uns des autres, et sont sécurisés par des couches d’autorisation et de contrôle d’accès.
  
-![Conteneurs dédiés Azure](../media/office-365-isolation-azure-dedicated-containers.png)
+![Conteneurs dédiés Azure.](../media/office-365-isolation-azure-dedicated-containers.png)
 
 En outre, aucun composant d’application ne peut s’exécuter à partir d’Azure AD et il n’est pas possible pour un client de forcer l’intégrité d’un autre client, d’accéder aux clés de chiffrement d’un autre client ou de lire des données brutes à partir du serveur.
 

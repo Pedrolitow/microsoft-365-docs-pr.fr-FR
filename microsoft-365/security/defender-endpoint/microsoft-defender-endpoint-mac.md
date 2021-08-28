@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b7f884fa55d0f3514aae36761642e2589d1ea51e
-ms.sourcegitcommit: fce9a89b8280f41779835b18dceb59fa17384acf
+ms.openlocfilehash: baff7ea6f32233cc05291dd3de124e964751192e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58666765"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571288"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -87,11 +87,11 @@ Les trois plus récentes publication majeures de macOS sont pris en charge.
 
 Les versions bêta de macOS ne sont pas pris en charge.
 
-La prise en charge des appareils macOS avec des processeurs basés sur les puces M1 est actuellement en prévisualisation.
+Les appareils macOS avec processeurs M1 ne sont pas pris en charge.
 
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions sortantes entre celui-ci et vos points de terminaison.
 
-### <a name="licensing-requirements"></a>Critères de licence
+### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
 Microsoft Defender pour endpoint sur Mac nécessite l’une des offres de licence en volume Microsoft suivantes :
 
@@ -111,7 +111,7 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 |Liste de feuilles de calcul de domaines|Description|
 |---|---|
-|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour point de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> Téléchargez la feuille de calcul [ ici :mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
+|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> Téléchargez la feuille de calcul [ ici :mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 
 Microsoft Defender pour le point de terminaison peut découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
 
@@ -149,7 +149,7 @@ Une fois Que Microsoft Defender pour le point de terminaison est installé, la c
 mdatp connectivity test
 ```
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>Comment mettre à jour Microsoft Defender pour endpoint sur Mac
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>Comment mettre à jour Microsoft Defender pour le point de terminaison sur Mac
 
 Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités. Pour mettre à jour Microsoft Defender pour endpoint sur Mac, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Pour plus d’informations, voir [Déployer les mises à jour de Microsoft Defender pour Endpoint sur Mac.](mac-updates.md)
 

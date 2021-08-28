@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: a64f217b88c41ca256d1ee343629741fd2ad880b
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: f00daf82a2b6090f6934aba12eb9227efdfa1422
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533146"
+ms.locfileid: "58576151"
 ---
 # <a name="enable-the-evaluation-environment"></a>Activer l’environnement d’évaluation
 
@@ -37,7 +37,7 @@ Cet article est [l’étape 2 sur 3 dans](eval-defender-office-365-overview.md) 
 
 Utilisez les étapes suivantes pour activer l’évaluation de Microsoft Defender pour Office 365.
 
-![Étapes permettant d’activer Microsoft Defender pour Office 365 dans l’environnement d’évaluation de Microsoft Defender](../../media/defender/m365-defender-office-eval-enable-steps.png)
+![Étapes permettant d’activer Microsoft Defender pour Office 365 dans l’environnement d’évaluation de Microsoft Defender.](../../media/defender/m365-defender-office-eval-enable-steps.png)
 
 - [Étape 1 : Activer les licences d’essai](#step-1-activate-trial-licenses)
 - [Étape 2 : Auditer et vérifier l’enregistrement MX public](#step-2-audit-and-verify-the-public-mx-record)

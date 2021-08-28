@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Déterminez les réglementations en matière de confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se Microsoft 365 environnement.
-ms.openlocfilehash: 04dc67ee6316f4549e7d215f997cdc171b0038024f3740d544d6acb214f9be1e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eefa80d85a9b03317b2021c73152e2e63f772cea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883421"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571216"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques de confidentialité des données et identifier les éléments sensibles à l’Microsoft 365
 
@@ -60,8 +60,8 @@ Pour référence ultérieure dans les articles de cette solution globale, ce tab
 
 |Règlement|Article/section|Extrait|Catégories de contrôle technique applicables|
 |---|---|---|---|
-|RGPD|Article 5(1)(f)|Les données personnelles doivent être traitées d’une manière qui garantit la sécurité appropriée des données à caractère personnel, y compris la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (intégrité et confidentialité).|(Tous) <br> Identité <br> Device <br> Protection contre les menaces <br> Protéger les informations <br> Gérer les informations <br> Découvrir et répondre|
-||Article (32)(1)(a)|En tenant compte de l’état de l’art, des coûts de mise en œuvre et de la nature, de l’étendue, du contexte et des objectifs du traitement, ainsi que du risque de probabilité et de gravité variables pour les droits et libertés des personnes physiques, le responsable du traitement et le sous-traitant doivent mettre en œuvre des mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité approprié au risque , notamment, le cas échéant : (a) la pseudonymisation et le chiffrement des données personnelles.|Protéger les informations|
+|RGPD|Article 5(1)(f)|Les données personnelles doivent être traitées d’une manière qui garantit la sécurité appropriée des données à caractère personnel, y compris la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (intégrité et confidentialité).|(Tous) <br> Identité <br> Appareil <br> Protection contre les menaces <br> Protéger les informations <br> Gérer les informations <br> Découvrir et répondre|
+||Article (32)(1)(a)|En tenant compte de l’état de l’art, des coûts de mise en œuvre et de la nature, de l’étendue, du contexte et des objectifs du traitement, ainsi que du risque de probabilité et de gravité variables pour les droits et libertés des personnes physiques, le responsable du traitement et le sous-traitant doivent mettre en œuvre des mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité approprié au risque,  y compris, le cas échéant : (a) la pseudonymisation et le chiffrement des données personnelles.|Protéger les informations|
 ||Article (13)(2)(a)|"... le responsable du traitement doit, au moment où les données à caractère personnel sont obtenues, fournir à la sujet des données les informations supplémentaires suivantes nécessaires pour garantir un traitement équitable et transparent : (a) la période pendant laquelle les données à caractère personnel seront stockées, ou si cela n’est pas possible, les critères utilisés pour déterminer cette période.|Gérer les informations|
 ||Article (15)(1)(e)|La objet de données a le droit d’obtenir auprès du responsable du traitement la confirmation que des données personnelles la concernant sont en cours de traitement, et dans ce cas, l’accès aux données à caractère personnel et les informations suivantes : (e) l’existence du droit de demander au responsable du traitement la rectification ou l’effacement de données à caractère personnel ou la restriction du traitement des données à caractère personnel concernant la sujet des données ou de s’y objecter traitement|Découvrir et répondre|
 |LGPD|Article 46|Les agents de traitement adoptent des mesures de sécurité, techniques et administratives capables de protéger les données personnelles contre les accès non autorisés et les situations accidentelles ou illégales de destruction, perte, modification, communication ou tout type de traitement inapproprié ou illégal.|Protéger les informations <br> Gérer les informations <br> Découvrir et répondre|
@@ -71,7 +71,7 @@ Pour référence ultérieure dans les articles de cette solution globale, ce tab
 ||45 CFR 164.312(c)(2)|Mettre en œuvre des mécanismes électroniques pour confirmer que les informations médicales électroniques protégées n'ont pas été altérées ou détruites de manière non autorisée.|Gérer les informations|
 ||45 CFR 164.316(b)(1)(i)|Si une action, une activité ou une évaluation est requise par cette sous-partie pour être documentée, conservez un enregistrement écrit (qui peut être électronique) de l’action, de l’activité ou de l’évaluation|Gérer les informations|
 ||45 CFR 164.316(b)(1)(ii)|Conserver la documentation requise par le paragraphe (b)(1) du présent article pendant 6 ans à compter de la date de sa création ou de la dernière date à laquelle elle a été en vigueur, si celle-ci est postérieure.|Gérer les informations|
-||45 C.F.R. 164.308(a)(1)(ii)(D)|Implémenter des procédures pour examiner régulièrement les enregistrements de l’activité du système d’information, tels que les journaux d’audit, les rapports d’accès et les rapports de suivi des incidents de sécurité|Découvrir et répondre|
+||45 C.F.R. 164.308(a)(1)(ii)(D)|Implémenter des procédures pour passer régulièrement en revue les enregistrements de l’activité du système d’information, tels que les journaux d’audit, les rapports d’accès et les rapports de suivi des incidents de sécurité|Découvrir et répondre|
 ||45 C.F.R. 164.308(a)(6)(ii)|Identifier et répondre aux incidents de sécurité connus ou suspects ; atténuer, dans la mesure du possible, les effets néfastes des incidents de sécurité qui sont connus de l'entité couverte ou de l'associé commercial ; et documenter les incidents de sécurité et leurs résultats.|Découvrir et répondre|
 ||45 C.F.R. 164.312(b)|Implémenter des mécanismes matériels, logiciels et procédural qui enregistrent et examinent l’activité dans les systèmes d’information qui contiennent ou utilisent des informations de santé électroniques protégées.|Découvrir et répondre|
 |CCPA|1798.105(c)|Une entreprise qui reçoit une demande vérifiable d’un consommateur pour supprimer ses informations personnelles conformément à la sous-section (a) du présente article supprime les informations personnelles du consommateur de ses enregistrements et demande à tous les fournisseurs de services de supprimer les informations personnelles du consommateur de ses enregistrements.|Découvrir et répondre|
@@ -85,13 +85,13 @@ Pour référence ultérieure dans les articles de cette solution globale, ce tab
 
 Quelles que soient les réglementations qui vous sont soumises, où différents types de données utilisateur à l’intérieur et à l’extérieur de votre organisation interagissent avec vos systèmes sont tous des facteurs importants qui peuvent avoir un impact sur votre stratégie globale de protection des données personnelles, sous réserve des réglementations gouvernementales et industrielles qui s’appliquent à votre organisation. Cela inclut l’endroit où les données personnelles sont stockées, leur type, leur quantité et dans quelles circonstances elles ont été collectées.
 
-![Connaissance de vos données : de quel type il s’agit, de quelle quantité et dans quelles circonstances elles ont été collectées](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
+![Connaissance de vos données : de quel type il s’agit, de quelle quantité et dans quelles circonstances elles ont été collectées.](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
 
 ### <a name="data-portability"></a>Portabilité des données
 
-Les données se déplacent également au fil du temps à mesure qu’elles sont traitées, affinées et que d’autres versions en sont dérivées. Une capture instantanée initiale ne suffit jamais. Il doit y avoir un processus continu pour connaître vos données. Cela représente l’un des plus grands défis pour les grandes organisations qui gèrent des volumes importants de données personnelles. Les organisations qui ne s’adressent pas au problème « connaissez vos données » peuvent potentiellement se retrouver avec un risque très élevé et des amendes éventuelles des organismes de réglementation.
+Les données se déplacent également au fil du temps à mesure qu’elles sont traitées, affinées et que d’autres versions en sont dérivées. Une capture instantanée initiale n’est jamais suffisante. Il doit y avoir un processus continu pour connaître vos données. Cela représente l’un des plus grands défis pour les grandes organisations qui gèrent des volumes importants de données personnelles. Les organisations qui ne s’adressent pas au problème « connaissez vos données » peuvent potentiellement se retrouver avec des risques très élevés et des amendes éventuelles de la part des organismes de réglementation.
 
-![Cycle de vie des données](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
+![Cycle de vie des données.](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
 
 ### <a name="where-the-personal-data-is"></a>Où se trouve les données personnelles
 
@@ -99,7 +99,7 @@ Pour répondre aux réglementations en matière de confidentialité des données
 
 Si vous n’avez pas déjà évalué votre préparation globale et les risques associés aux réglementations en matière de confidentialité des données, utilisez l’infrastructure en trois étapes suivante pour commencer.
 
-![Étapes pour évaluer votre préparation globale et les risques associés aux réglementations en matière de confidentialité des données](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
+![Étapes pour évaluer votre préparation globale et les risques associés aux réglementations en matière de confidentialité des données.](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 > [!NOTE]
 > Cet article et son contenu ne sont pas destinés à prendre la place des services d’avis juridiques. Il fournit simplement des conseils de base et des liens vers des outils qui peuvent vous être utiles lors des premières étapes de votre évaluation.
@@ -116,7 +116,7 @@ Comme point de départ, il est important d’inventorier les types de données p
 
 Voici un exemple des différents types de données pour les services classiques d’une organisation.
 
-![Types de données personnelles](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
+![Types de données personnelles.](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
 La plupart des données personnelles soumises à la réglementation sur la confidentialité des données sont généralement collectées et stockées en dehors des Microsoft 365. Toutes les données personnelles provenant d’applications web ou mobiles grand public doivent avoir été exportées de ces applications vers Microsoft 365 afin d’être soumises à un examen de confidentialité des données au sein de Microsoft 365.
 
@@ -172,7 +172,7 @@ La plupart des organisations seront exposées à l’un des scénarios ci-dessus
 
 ## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>Étape 2 : Évaluer votre préparation pour vous conformer aux réglementations en matière de confidentialité des données
 
-Bien que spécifiques au R GDPR, les questions posées dans l’outil d’évaluation gratuit de [Microsoft R GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) fournissent un bon départ pour comprendre la préparation globale de la confidentialité des données.
+Bien que spécifiques au R GDPR, les questions posées dans l’outil d’évaluation gratuit de [Microsoft R GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) fournissent un bon départ pour comprendre la préparation globale à la confidentialité des données.
 
 Les organisations soumises à d’autres réglementations en matière de confidentialité des données, telles que le CCPA aux États-Unis ou le LGPD du Brésil, peuvent également bénéficier de l’inventaire de préparation de cet outil en raison de dispositions qui se chevauchent avec le RGPD.
 
@@ -206,7 +206,7 @@ Si vous devez identifier et protéger un type régional ou spécifique à l’or
 
 Vous pouvez également personnaliser un type d’informations sensibles intégré existant.
 
-Pour plus d’informations, voir les articles suivants :
+Pour plus d’informations, consultez les articles suivants :
 
 - [Personnaliser un type d’informations sensibles intégré](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [En savoir plus sur les types d’informations confidentielles](../compliance/sensitive-information-type-learn-about.md).

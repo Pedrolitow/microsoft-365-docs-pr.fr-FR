@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender pour Office 365 dans Microsoft 365 Defender
-description: Découvrez les modifications apportées au Centre de sécurité & conformité Microsoft 365 Defender.
+description: Découvrez les modifications apportées au Centre de sécurité & conformité à Microsoft 365 Defender.
 keywords: Microsoft 365 sécurité, mise en place de Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, MDO, MDE, volet unique, nouveau portail de sécurité, nouveau portail de sécurité Defender
 ms.date: 02/21/2021
 ms.author: tracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: a3895b2d3e5ee435f0aeb1bb9b2becf23b6da71ecd387bbbc06fac3f1941a8d7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e65d7e869011cbbc6a55828f693782a6b7e0dfd6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838818"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575935"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 
@@ -43,22 +43,22 @@ Le tableau ci-dessous répertorie les modifications apportées à la navigation 
 |[Centre de sécurité et conformité](https://protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)|[Centre d’administration Exchange](https://admin.exchange.microsoft.com)|
 |---|---|---|---|
 |Alertes|<ul><li>[Stratégies d’alerte](https://security.microsoft.com/alertpolicies)</li><li>[Incidents et & alertes](https://security.microsoft.com/alerts)</li></ul>|[Page Alertes](https://compliance.microsoft.com/homepage)||
-|Classification||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
-|Protection contre la perte de données||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
-|Gestion des enregistrements||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
-|Gouvernance des informations||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
+|Classification||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
+|Protection contre la perte de données||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
+|Gestion des enregistrements||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
+|Gouvernance des informations||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Gestion des menaces|[Collaboration par & messagerie](https://security.microsoft.com/homepage)|||
-|Autorisations|[Autorisations & rôles](https://security.microsoft.com/emailandcollabpermissions)|Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
+|Autorisations|[Autorisations & rôles](https://security.microsoft.com/emailandcollabpermissions)|Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Flux de messagerie|||Voir [Exchange admin center](https://admin.exchange.microsoft.com/#/)|
-|Confidentialité des données||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
+|Confidentialité des données||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Rechercher|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Recherche (recherche de contenu)||
-|Rapports|[Rapport](https://security.microsoft.com/emailandcollabreport)|||
-|Certification de service||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
-|Surveillance||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
-|eDiscovery||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
+|Rapports|[Report](https://security.microsoft.com/emailandcollabreport)|||
+|Certification de service||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
+|Surveillance||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
+|eDiscovery||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |||||
 
-[Microsoft 365 Defender](./overview-security-center.md) à combine les fonctionnalités de sécurité des portails de sécurité Microsoft existants, notamment le Centre de sécurité <https://security.microsoft.com> & conformité. Ce centre amélioré aide les équipes de sécurité à protéger leur organisation contre les menaces de façon plus pratique et efficace.
+[Microsoft 365 Defender](./overview-security-center.md) combine les fonctionnalités de sécurité des portails de sécurité Microsoft existants, notamment le Centre de sécurité <https://security.microsoft.com> & conformité. Ce centre amélioré aide les équipes de sécurité à protéger leur organisation contre les menaces de façon plus pratique et efficace.
 
 Si vous êtes familiarisé avec le Centre de sécurité & conformité (protection.office.com), cet article décrit certaines des modifications et améliorations apportées à Microsoft 365 Defender.
 
@@ -72,11 +72,11 @@ La barre de navigation gauche, ou la barre de lancement rapide, vous semblera fa
 
 Avec la solution Microsoft 365 Defender unifiée, vous pouvez assembler les signaux de menace et déterminer l’étendue et l’impact complets de la menace, ainsi que son impact actuel sur l’organisation.
 
-:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Image d Microsoft 365 Defender expérience convergée":::
+:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Image de Microsoft 365 Defender expérience convergée.":::
 
 Defender for Office 365 protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration.
 
-:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Image de Defender pour Office 365":::
+:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Image de Defender pour Office 365.":::
 
 ### <a name="incidents-and-alerts"></a>Incidents et alertes
 
@@ -85,7 +85,7 @@ Réunit les incidents et la gestion des alertes de vos e-mail, appareils, et ide
 - [En savoir plus sur les enquêtes](incidents-overview.md).
 - [En savoir plus sur la gestion des alertes](/windows/security/threat-protection/microsoft-defender-atp/review-alerts).
 
-![Barre de lancement rapide des Alertes et Actions](../../media/converge-1-alerts-and-actions.png)
+![Barre de lancement rapide alertes et actions.](../../media/converge-1-alerts-and-actions.png)
 
 ### <a name="hunting"></a>Repérage
 
@@ -99,7 +99,7 @@ Voici un exemple [de recherche avancée dans](advanced-hunting-example.md) Micro
 
 Le centre d’action montre les enquêtes créées par les fonctionnalités automatisées d’enquête et de réponse. Ce système automatisé et self-healing dans Microsoft 365 Defender peut aider les équipes de sécurité en répondant automatiquement à des événements spécifiques.
 
-En savoir plus sur le [centre de actions.](m365d-action-center.md)
+En savoir plus sur le [Centre de l’action.](m365d-action-center.md)
 
 #### <a name="threat-analytics"></a>Analyses de menaces
 
@@ -109,7 +109,7 @@ Obtenez des informations sur threat Intelligence auprès de chercheurs chevronn�
 - Les affichages d’incidents liés aux menaces.
 - Expérience améliorée pour identifier et utiliser rapidement les informations utilisables dans les rapports.
 
-Vous pouvez accéder à l’analyse des menaces à partir de la barre de navigation supérieure gauche dans Microsoft 365 Defender ou à partir d’une carte de tableau de bord dédiée qui affiche les principales menaces pour votre organisation.
+Vous pouvez accéder à l’analyse des menaces à partir de la barre de navigation supérieure gauche dans Microsoft 365 Defender ou à partir d’une carte de tableau de bord dédiée qui présente les principales menaces pour votre organisation.
 
 En savoir plus sur le suivi et la réponse aux menaces émergentes avec [l’analyse des menaces.](./threat-analytics.md)
 

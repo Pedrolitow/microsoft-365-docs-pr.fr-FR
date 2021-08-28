@@ -1,5 +1,5 @@
 ---
-title: Étape 5. Gestion des appareils et des applications pour vos Microsoft 365 d’entreprise
+title: Étape 5. Gestion des appareils et des applications pour vos Microsoft 365 pour les locataires d’entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,20 +16,20 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez l’option correcte pour la gestion des appareils et des applications pour vos Microsoft 365 client.
-ms.openlocfilehash: eb15f5805308c6f575beb9eebd8f7825ebdd13173037870a3770fd306bb090bb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d96042f2733a69919fd0dbaa9f30be6835d6469
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804603"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571192"
 ---
-# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 5. Gestion des appareils et des applications pour vos Microsoft 365 d’entreprise
+# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 5. Gestion des appareils et des applications pour vos Microsoft 365 pour les locataires d’entreprise
 
 Microsoft 365 entreprise inclut des fonctionnalités pour vous aider à gérer les appareils et l’utilisation des applications sur ces appareils au sein de votre organisation à l’aide de la gestion des périphériques mobiles (MDM) et de la gestion des applications mobiles (MAM). Vous pouvez gérer les appareils iOS, Android, macOS et Windows pour protéger l’accès aux ressources de votre organisation, y compris à vos données. Par exemple, vous pouvez empêcher l’envoi de courriers électroniques à des personnes extérieures à votre organisation ou isoler les données de l’organisation des données personnelles sur les appareils personnels de votre employé.
 
 Voici un exemple de validation et de gestion des utilisateurs, de leurs appareils et de leur utilisation d’applications de productivité locales et cloud telles que Microsoft Teams.
 
-![Validation et gestion des utilisateurs, des appareils et des applications](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
+![Validation et gestion des utilisateurs, des appareils et des applications.](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
 Pour vous aider à sécuriser et protéger les ressources de votre organisation, Microsoft 365 entreprise inclut des fonctionnalités pour vous aider à gérer les appareils et leur accès aux applications. Deux options s’offrent à vous pour la gestion des appareils :
 
@@ -57,7 +57,7 @@ Microsoft fournit un ensemble de configurations pour l’accès aux identités e
 
 Voici un exemple de l’application de ces paramètres et stratégies pour valider et limiter les utilisateurs, leurs appareils et leur utilisation d’applications de productivité locales et cloud telles que Microsoft Teams.
 
-![Configurations des identités et de l’accès aux appareils pour les exigences et les restrictions sur les utilisateurs, leurs appareils et leur utilisation des applications](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
+![Configurations des identités et de l’accès aux appareils pour les exigences et les restrictions imposées aux utilisateurs, à leurs appareils et à leur utilisation des applications.](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 
 Pour l’accès aux appareils et la gestion des applications, utilisez les configurations des articles suivants :
 
@@ -70,7 +70,7 @@ Pour la gestion des appareils et des applications pour votre client Microsoft 36
 
 Voici un exemple de client avec la gestion des applications et des appareils Intune avec les nouveaux éléments mis en surbrill plan.
 
-![Exemple de client avec gestion d’appareils et d’applications Intune](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
+![Exemple de client avec gestion d’appareils et d’applications Intune.](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
 Dans cette illustration, le client a :
 

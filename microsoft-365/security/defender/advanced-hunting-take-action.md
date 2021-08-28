@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 15eebbba102640a92f9c7712194aaef685a96cfb
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: b708fa898d1f84efdb5e885b786619e481099ac0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952607"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572994"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Prendre des mesures sur les résultats de requête de recherche avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
@@ -75,13 +75,13 @@ Pour en savoir plus sur la façon dont les actions de mise en quarantaine sont p
 ## <a name="take-action"></a>Prendre action
 Pour prendre l’une des actions décrites, sélectionnez un ou plusieurs enregistrements dans les résultats de votre requête, puis **sélectionnez Actions.** Un Assistant vous guide tout au long du processus de sélection, puis d’envoi de vos actions préférées.
 
-![Image de l’enregistrement sélectionné avec panneau pour l’inspection de l’enregistrement](../../media/mtp-ah/ah-take-actions.png)
+![Image de l’enregistrement sélectionné avec panneau pour l’inspecter.](../../media/mtp-ah/ah-take-actions.png)
 
 ## <a name="review-actions-taken"></a>Examiner les actions entreprises
 Chaque action est enregistrée individuellement dans le centre de [l’action](m365d-action-center.md) sous **Historique** du centre de security.microsoft.com/action-center/history  >   ).[](https://security.microsoft.com/action-center/history) Go to the action center to check the status of each action.
  
 >[!NOTE]
->Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender pour qu’il](m365d-enable.md) recherche les menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
+>Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

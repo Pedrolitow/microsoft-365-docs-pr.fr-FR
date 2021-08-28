@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Instructions d’utilisation de la segmentation de tunnel VPN avec Office 365 afin d’optimiser la connectivité d’Office 365 pour les utilisateurs distants.
-ms.openlocfilehash: dc9e9fa6b730ac6a98879c692f349b2480d3dcf14320c7817d5d5b14eb6ac825
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bfb774f6404f8eec1c517b2e2e4e434694f9673f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848906"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575851"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel VPN
 <!---
@@ -35,7 +35,7 @@ ms.locfileid: "53848906"
 
 Pour les clients qui connectent leurs appareils de travail à distance au réseau d’entreprise ou à l’infrastructure cloud sur VPN, Microsoft recommande que les scénarios de Office 365 clés **Microsoft Teams,** **SharePoint Online** et **Exchange Online** soient acheminés sur une configuration de tunnel partagé _VPN._ Cela devient particulièrement important comme stratégie de première ligne pour faciliter la productivité continue des employés lors d’événements de travail à domicile à grande échelle tels que la crise du COVID-19.
 
-![Configuration de la segmentation de tunnel par VPN](../media/vpn-split-tunneling/vpn-model-2.png)
+![Fractionner Tunnel configuration VPN.](../media/vpn-split-tunneling/vpn-model-2.png)
 
 _Image 1 : Une solution de segmentation de tunnel VPN avec des exceptions Office 365 définies, envoyées directement au service. Tout autre trafic traverse le tunnel VPN, indépendamment de la destination._
 
@@ -68,7 +68,7 @@ Pour un processus pas à pas de configuration de Microsoft 365 pour les travaill
 
 Les réseaux d’entreprise traditionnels sont souvent conçus pour fonctionner de façon sécurisée dans un environnement préexistant dans lequel les données, les services et les applications les plus importants sont hébergés en local et sont directement connectés au réseau interne de l’entreprise, comme la plupart des utilisateurs. Ainsi, l'infrastructure réseau est construite autour de ces éléments et, en ce sens, les succursales sont connectées au siège social via des réseaux _MPLS (Multiprotocol Label Switching)_, et les utilisateurs distants doivent se connecter au réseau d'entreprise via un VPN pour accéder à la fois aux points de terminaison locaux et à Internet. Dans ce modèle, tout le trafic provenant d’utilisateurs distants traverse le réseau d’entreprise et est acheminé vers le service cloud via un point de sortie commun.
 
-![Configuration VPN obligatoire](../media/vpn-split-tunneling/vpn-model-1.png)
+![Configuration VPN forcée.](../media/vpn-split-tunneling/vpn-model-1.png)
 
 _Image 2 : Une solution VPN commune pour les utilisateurs distants où tout le trafic est renvoyé vers le réseau d’entreprise, quelle que soit la destination_
 
@@ -92,7 +92,7 @@ Cet ensemble de points de terminaison étroitement limité peut être séparé d
 
 Les éléments de sécurité tels que DLP, la protection antivirus, l’authentification et le contrôle d’accès peuvent tous être remis beaucoup plus efficacement sur ces points de terminaison à différentes couches du service. Comme nous redirigés également l’essentiel du volume de trafic de la solution VPN, cela libère la capacité VPN pour le trafic critique de l’entreprise qui s’en appuie toujours. Cela devrait également supprimer la nécessité, dans de nombreux cas, de passer par un programme de mise à niveau long et coûteux pour faire face à ce nouveau mode de fonctionnement.
 
-![Détails Tunnel configuration VPN partagés](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Fractionner Tunnel de configuration VPN.](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Image 3 : Une solution de segmentation de tunnel VPN avec des exceptions Office 365 définies, envoyées directement au service. Tout autre trafic est renvoyé dans le réseau d'entreprise, quelle que soit la destination._
 

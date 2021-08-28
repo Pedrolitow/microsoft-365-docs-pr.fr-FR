@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a82b88683eaf1e7033115ce98773abf810602264dda8e48f5004d4ee5bf1cdc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 327217a9682e8a50c41c2696292d1a453fbd8cf9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817269"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575983"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Rapport sur la protection contre les menaces dans Microsoft Defender pour point de terminaison
 
@@ -39,19 +39,19 @@ Le rapport sur la protection contre les menaces fournit des informations de haut
 
 Le tableau de bord est structuré en deux sections :
 
-![Image du rapport sur la protection contre les menaces](images/threat-protection-reports.png)
+![Image du rapport sur la protection contre les menaces.](images/threat-protection-reports.png)
 
 Section | Description 
 :---|:---
 1 | Tendances des alertes
-2 | Résumé des alertes
+2  | Résumé des alertes
 
 ## <a name="alert-trends"></a>Tendances des alertes
 Par défaut, les tendances des alertes affichent les informations d’alerte de la période de 30 jours se terminant par la dernière journée entière. Pour mieux prendre en compte les tendances qui se produisent dans votre organisation, vous pouvez affiner la période de rapport en ajustant la période indiquée. Pour ajuster la période, sélectionnez une plage de temps dans les options de la baisse :
 
 - 30 jours
 - 3 mois
-- 6 mois
+- 6 mois
 - Personnalisé
 
 >[!NOTE]

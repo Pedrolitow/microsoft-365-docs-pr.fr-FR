@@ -20,12 +20,12 @@ description: Des autorisations doivent être attribuées aux utilisateurs dans l
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 93588d7a467c1a3274a803edfc15a4eb51327cdaa320c644d5214defa79798c8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2123cad54bcb1a608447d53a08e61211052e3cca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56853759"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572862"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
 
@@ -54,9 +54,9 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 1. Ouvrez le Centre de sécurité & conformité, puis <https://protection.office.com> allez à **Autorisations.** Pour aller directement à **l’onglet Autorisations,** ouvrez <https://protection.office.com/permissions> .
 
-2. Dans la liste des groupes de rôles,  choisissez le groupe de rôles, puis cliquez sur Modifier ![ l’icône ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) Modifier.
+2. Dans la liste des groupes de rôles,  choisissez le groupe de rôles, puis cliquez sur Modifier ![ l’icône Modifier. ](../../media/O365-MDM-CreatePolicy-EditIcon.gif)
 
-3. Dans la page des propriétés du groupe de rôles sous **Membres,** cliquez sur Ajouter une icône et sélectionnez le nom de l’utilisateur (ou des ![ utilisateurs) que vous ](../../media/ITPro-EAC-AddIcon.gif) souhaitez ajouter.
+3. Dans la page des propriétés du groupe de rôles sous **Membres,** cliquez **sur Ajouter** ![ une icône.](../../media/ITPro-EAC-AddIcon.gif) et sélectionnez le nom de l’utilisateur (ou des utilisateurs) que vous souhaitez ajouter.
 
 4. Lorsque vous avez sélectionné tous les utilisateurs que vous souhaitez ajouter au groupe de rôles, cliquez sur **Ajouter, \>** puis **SUR OK.**
 
@@ -82,7 +82,7 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 Pour des problèmes de syntaxe et de paramètres détaillés, voir [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
+### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné?
 
 Pour vérifier que vous avez bien accordé l’accès au Centre de sécurité & conformité, faites l’une des étapes suivantes :
 

@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre comment Contoso Corporation a répondu à la épidémie COVID-19 et conçu son infrastructure d’installation et de mise à jour logicielles pour le travail hybride.
-ms.openlocfilehash: e40e655801cb8a980dcde4e9be2167b81f12f74cccd2bd43878c66a5aeac5ca5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 06ce48969d35017da47be1e75ec3c374b9afb9a1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816694"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575443"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Réponse contoso-19 et prise en charge du travail hybride
 
@@ -35,7 +35,7 @@ Contoso a également mis à jour la configuration des clients VPN installés sur
 
 Voici la configuration qui en résulte avec les périphériques VPN installés au siège social parisien et dans chacun des succursales. 
 
-![Infrastructure VPN de Contoso](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
+![Infrastructure VPN de Contoso.](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
 Un travailleur à distance avec le client VPN installé utilise DNS pour rechercher le bureau le plus proche de la région et se connecte au périphérique VPN installé à cet emplacement. Avec la tunnellisation fractionnée, le trafic vers Microsoft 365 optimiser les points de terminaison est envoyé directement à l’emplacement Microsoft 365 réseau le plus proche. Tout autre trafic est envoyé sur la connexion VPN au périphérique VPN.
 
@@ -67,7 +67,7 @@ Cela signifie que certaines des installations et mises à jour de l’appareil i
 
 Voici l’infrastructure qui en résulte.
 
-![Infrastructure d’installation et de mise à jour de Contoso](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
+![Infrastructure d’installation et de mise à jour de Contoso.](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
 
 Le comportement d’installation et de mise à jour est déterminé en faisant des comptes d’ordinateur des appareils un membre de l’un de ces groupes :
 

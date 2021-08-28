@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Déployez Microsoft 365 fonctionnalités de sécurité et de conformité et protégez vos informations personnelles.
-ms.openlocfilehash: 3cb4cefb0e7d93964eb10e97e44db9acee9331a795a5fd48defdceb843be1b60
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 084faec3b9c2d7bc9c7da17ee69f7821dd79a754
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857038"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575887"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 
@@ -35,7 +35,7 @@ Ces contrôles sont dans les zones de solution suivantes :
 - Chiffrement des messages Office (OME)
 - contrôles Teams’accès aux sites et aux sites
 
-![Services clés pour protéger les informations personnelles soumises à la réglementation sur la confidentialité des données](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
+![Services clés pour protéger les informations personnelles soumises à la réglementation sur la confidentialité des données.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 > [!NOTE]
 > Cette solution décrit les fonctionnalités de sécurité et de conformité pour protéger les informations soumises aux réglementations en matière de confidentialité des données. Pour obtenir la liste complète des fonctionnalités de sécurité dans Microsoft 365, voir [Microsoft 365 documentation de sécurité.](../security/index.yml) Pour obtenir la liste complète des fonctionnalités de conformité dans Microsoft 365, voir [Microsoft 365 documentation de conformité.](../compliance/index.yml)
@@ -89,14 +89,14 @@ Pour plus d’informations sur les autres fonctionnalités de protection des inf
 Les étiquettes de niveau de Protection des données Microsoft vous permet de classifier et de protéger les données de votre organisation sans entraver la productivité des utilisateurs et leur capacité à collaborer.
 
 > [!div class="mx-imgBorder"]
-> ![Étiquettes de niveau de Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> ![Étiquettes de niveau de Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### <a name="prerequisites-for-sensitivity-labels"></a>Conditions préalables pour les étiquettes de niveau de sensibilité
 
 Effectuer ces activités avant d’implémenter l’une des fonctionnalités basées sur les étiquettes de sensibilité mises en évidence ci-dessous :
 
 1. Comprenez les choses suivantes :
-   - **Besoins de l’entreprise.** Établissez les raisons professionnelles de l’application d’étiquettes de niveau de sensibilité dans votre entreprise. Par exemple, vos exigences de confidentialité des données pour la protection des informations.
+   - **Besoins de l'entreprise** Établissez les raisons professionnelles de l’application d’étiquettes de niveau de sensibilité dans votre entreprise. Par exemple, vos exigences de confidentialité des données pour la protection des informations.
    - **Fonctionnalités des étiquettes de sensibilité.** L’étiquetage de la sensibilité peut devenir complexe. Veillez donc à lire la [documentation](../compliance/sensitivity-labels.md) sur les étiquettes de sensibilité avant de commencer.
    - **Éléments clés à retenir** Les étiquettes de sensibilité sont gérées dans le Centre d’administration de conformité Microsoft, mais les options de ciblage et d’application varient considérablement.
       - Il existe des étiquettes de niveau de sensibilité pour les sites, les groupes et les Teams au niveau du conteneur (les paramètres ne s’appliquent pas au contenu à l’intérieur du conteneur). Ceux-ci sont publiés pour les utilisateurs et les groupes qui les appliquent lorsqu’un site, un groupe ou une équipe est en service.
@@ -134,7 +134,7 @@ Effectuer ces activités avant d’implémenter l’une des fonctionnalités bas
 
 ### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Créer et déployer des étiquettes de niveau de sensibilité pour des sites, des groupes et des équipes
 
-Lorsque vous créez [des étiquettes](../compliance/sensitivity-labels-teams-groups-sites.md) de niveau de Centre de conformité Microsoft 365, vous pouvez désormais les appliquer à ces conteneurs :
+Lorsque vous créez [des étiquettes](../compliance/sensitivity-labels-teams-groups-sites.md) de niveau de Centre de conformité Microsoft 365, vous pouvez désormais les appliquer à ces conteneurs :
 
 - Microsoft Teams sites
 - Microsoft 365 groupes de sécurité (anciennement Office 365 groupes)
@@ -158,9 +158,9 @@ Lorsque vous êtes prêt à commencer à protéger les données de votre organis
 2. **Définissez l’incidence possible de chaque étiquette.** Configurez les paramètres de protection que vous voulez associer à chaque étiquette. Par exemple, vous souhaitez peut-être qu’un simple en-tête ou pied de page soit appliqué au contenu de niveau de confidentialité inférieur (par exemple, une étiquette « Général », par exemple), tandis que le contenu de niveau de confidentialité plus élevé (tel qu’une étiquette « Confidentiel » ) doit avoir un filigrane et activer le chiffrement.
 3. **Publiez les étiquettes.** Après avoir configuré vos étiquettes de confidentialité, publiez-les à l’aide d’une stratégie d’étiquette. Déterminez les utilisateurs et les groupes devant utiliser les étiquettes ainsi que les paramètres de stratégie à utiliser. Une seule étiquette est réutilisable. Vous la définissez une seule fois, puis vous pouvez l’inclure dans plusieurs stratégies d’étiquette attribuées à différents utilisateurs.
 
-Une fois que vous avez publié des étiquettes de niveau de sensibilité à partir du Centre de conformité Microsoft 365, elles commencent à apparaître dans les applications [Office](../compliance/sensitivity-labels-office-apps.md) pour que les utilisateurs classifient et protègent le contenu tel qu’il est créé ou modifié.
+Une fois que vous avez publié des étiquettes de niveau de sensibilité à partir du Centre de conformité Microsoft 365, elles commencent à apparaître dans les applications [Office](../compliance/sensitivity-labels-office-apps.md) pour que les utilisateurs classifient et protègent le contenu tel qu’il est créé ou modifié.
 
-![Flux de déploiement des étiquettes de niveau de Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
+![Flux de déploiement des étiquettes de niveau de Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
 Pour la confidentialité des données, vous appliquez manuellement une étiquette de confidentialité avec chiffrement et d’autres règles au courrier électronique ou au contenu contenant des informations personnelles sensibles.
 
@@ -208,19 +208,19 @@ DLP vous permet de :
 
 ### <a name="supported-workloads-for-dlp"></a>Charges de travail prise en charge pour la DLP
 
-Avec une stratégie DLP dans le Centre de conformité Microsoft 365, vous pouvez identifier, surveiller et protéger automatiquement les éléments sensibles dans de nombreux emplacements dans Microsoft 365, tels que Exchange Online, SharePoint, OneDrive et Microsoft Teams.
+Avec une stratégie DLP dans le Centre de conformité Microsoft 365, vous pouvez identifier, surveiller et protéger automatiquement les éléments sensibles dans de nombreux emplacements dans Microsoft 365, tels que Exchange Online, SharePoint, OneDrive et Microsoft Teams.
 
 Par exemple, vous pouvez identifier n’importe quel document contenant un numéro de carte de crédit stocké sur n’importe quel site OneDrive ou surveiller uniquement les sites OneDrive de personnes spécifiques.
 
 Vous pouvez également surveiller et protéger les éléments sensibles dans les versions installées localement de Excel, PowerPoint et Word, qui incluent la possibilité d’identifier les éléments sensibles et d’appliquer des stratégies DLP. La DLP assure une surveillance continue lorsque des personnes partagent du contenu à partir de Office applications.
 
 > [!div class="mx-imgBorder"]
-> ![Charges de travail prise en charge pour la DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+> ![Charges de travail prise en charge pour la DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 Cette figure illustre un exemple de protection contre la protection contre la protection des données personnelles.
 
 > [!div class="mx-imgBorder"]
-> ![Exemple de protection des données personnelles à l’aide de DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> ![Exemple de protection des données personnelles à l’aide de DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
 La DLP est utilisée pour identifier un document ou un e-mail contenant un enregistrement d’état d’santé, puis bloque automatiquement l’accès à ce document ou empêche l’envoi du courrier électronique. DLP avertit ensuite le destinataire avec un conseil de stratégie et envoie une alerte à l’utilisateur final et à l’administrateur.
 
@@ -254,11 +254,11 @@ Bien que les étiquettes de confidentialité ne peuvent pas être utilisées dan
 Les stratégies DLP sont configurées dans le Centre d’administration de conformité Microsoft et spécifient le niveau de protection, le type d’informations sensibles que la stratégie recherche et les charges de travail cibles. Leurs composants de base consistent à identifier la protection et les types de données.
 
 > [!div class="mx-imgBorder"]
-> ![Configuration de stratégie DLP dans Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> ![Configuration de stratégie DLP dans Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 Voici un exemple de stratégie DLP pour la sensibilisation au R GDPR.
 
-![Exemple de stratégie DLP pour la sensibilisation au R GDPR](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![Exemple de stratégie DLP pour la sensibilisation au R GDPR.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
 Consultez [cet article pour](../compliance/create-test-tune-dlp-policy.md) plus d’informations sur la création et l’application de stratégies DLP.
 
@@ -266,7 +266,7 @@ Consultez [cet article pour](../compliance/create-test-tune-dlp-policy.md) plus 
 
 Le tableau suivant répertorie trois configurations d’augmentation de la protection à l’aide de la protection contre la dlp.
 
-![Niveaux de protection de la confidentialité des données avec DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
+![Niveaux de protection de la confidentialité des données avec DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
 
 La première configuration, Sensibilisation, peut être utilisée comme point de départ et niveau de protection minimal pour répondre aux besoins de conformité des réglementations en matière de confidentialité des données.
 
@@ -287,7 +287,7 @@ Les étiquettes de confidentialité peuvent fonctionner avec DLP pour assurer la
 Une fois ces éléments déterminés, vous pouvez utiliser les types d’informations sensibles, votre taxonomie d’étiquetage de confidentialité et les stratégies DLP ensemble. Cette figure montre un exemple.
 
 > [!div class="mx-imgBorder"]
-> ![Exemple d’étiquettes de niveau de sensibilité qui fonctionnent avec DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> ![Exemple d’étiquettes de niveau de sensibilité qui fonctionnent avec DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [Voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 

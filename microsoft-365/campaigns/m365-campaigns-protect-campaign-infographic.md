@@ -24,17 +24,17 @@ search.appverid:
 - MET150
 - MOE150
 description: Ce que vous pouvez faire pour protéger votre campagne contre les attaques numériques.
-ms.openlocfilehash: a2658c17a14bef436b83d4f19305a3d7f75373bfae44d03e7ae4d609f4ac102d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66c59ecac414ce8b4dd297fe655e60386fa7ea16
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802948"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571159"
 ---
 # <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infographie : protégez-vous et votre campagne contre les menaces numériques
 
 Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprimés au format tabloïd (également appelé format format ledger, 11 x 17 ou A3).
 
-[![Image de sécurisation de votre graphique d’informations sur la campagne](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[![Image pour sécuriser votre image d’aide à la protection de votre graphique d’informations de campagne.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)  |  [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)

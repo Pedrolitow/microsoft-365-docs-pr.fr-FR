@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 8c701dc0fb038e573b39067dd40f75e9394b4083
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 6d4c63bbf13ec4149a9250b3b4240926ece0d2c4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533002"
+ms.locfileid: "58571325"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Intégrer les appareils Windows 10 à l’aide de Configuration Manager
 
@@ -59,7 +59,8 @@ En fonction de la version de Configuration Manager que vous exécutez, les syst�
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>Intégrer des appareils à l’aide System Center Configuration Manager
 
-[![Image du PDF montrant les différents chemins de déploiement](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
+
+[![Image du PDF montrant les différents chemins de déploiement.](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
 Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [ou Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Microsoft Defender pour Endpoint.
 
@@ -94,7 +95,7 @@ Pour chaque appareil, vous pouvez définir une valeur de configuration pour dét
 
 Vous pouvez définir une règle de conformité pour l’élément de configuration dans Configuration Manager afin de modifier le paramètre de partage d’exemples sur un appareil.
 
-Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d’une clé de Registre sur les appareils ciblés afin de s’assurer qu’ils sont conformes.
+Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d’une clé de Registre sur les appareils ciblés pour s’assurer qu’ils sont conformes.
 
 La configuration est définie par le biais de l’entrée de clé de Registre suivante :
 
@@ -111,7 +112,7 @@ Où Type de clé est un D-WORD. Les valeurs possibles sont les suivantes :
 
 La valeur par défaut au cas où la clé de Registre n’existe pas est 1.
 
-Pour plus d’informations System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+Pour plus d’informations sur System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
 
@@ -170,7 +171,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage utilisant System Center Configuration Manager 2012 R2
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage System Center 2012 R2 Configuration Manager
 
 1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
     1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils \> **endpoints.** \>  \>   
@@ -191,7 +192,7 @@ Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fic
 
 Si vous utilisez la Microsoft Endpoint Manager actuelle, utilisez le tableau de bord Defender for Endpoint intégré dans la console Configuration Manager. Pour plus d’informations, [voir Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
+Si vous utilisez System Center Configuration Manager 2012 R2, la surveillance se compose de deux parties :
 
 1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou s’est exécuté correctement) sur les appareils de votre réseau.
 
@@ -209,7 +210,7 @@ Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se
 
     En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les [points de terminaison.](troubleshoot-onboarding.md)
 
-    ![Configuration Manager affichant un déploiement réussi sans erreur](images/sccm-deployment.png)
+    ![Configuration Manager affichant un déploiement réussi sans erreur.](images/sccm-deployment.png)
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Vérifier que les appareils sont conformes au service Microsoft Defender for Endpoint
 

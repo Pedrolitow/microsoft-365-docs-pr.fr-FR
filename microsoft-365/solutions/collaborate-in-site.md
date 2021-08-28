@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les étapes Microsoft 365 configuration requises pour configurer un site SharePoint pour la collaboration avec des invités.
-ms.openlocfilehash: 054de924b2cf5041694ca12dcf2fb4137242d16fb53060421aedb51aed9668a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5cb1b34832c8a7b4c5152efd5ab151218de1cd36
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810173"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572802"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
@@ -43,7 +43,7 @@ Le partage dans Microsoft 365 est régi à son niveau le plus élevé par les [p
 
 Vérifiez les paramètres de collaboration externe B2B pour vous assurer que le partage avec des invités n’est pas bloqué.
 
-![Capture d’écran Azure Active Directory page Paramètres collaboration externe](../media/azure-ad-organizational-relationships-settings.png)
+![Capture d’écran Azure Active Directory page de collaboration Paramètres externe.](../media/azure-ad-organizational-relationships-settings.png)
 
 Pour définir les paramètres de collaboration externe
 
@@ -62,7 +62,7 @@ Si vous travaillez avec des invités de plusieurs organisations, vous souhaitere
 
 Les sites SharePoint modernes utilisent Microsoft 365 groupes pour contrôler l’accès au site. Les paramètres Microsoft 365 groupes d’invités doivent être allumés pour que l’accès invité SharePoint sites fonctionne.
 
-![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Capture d’écran Microsoft 365 paramètres invités des groupes dans Centre d’administration Microsoft 365.](../media/office-365-groups-guest-settings.png)
 
 Pour définir les paramètres invités des groupes Microsoft 365
 
@@ -80,7 +80,7 @@ Les paramètres au niveau de l’organisation déterminent les paramètres qui s
 
 Si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifiés, choisissez **Tout le monde.** Si vous souhaitez vous assurer que toutes les personnes extérieures à votre organisation doivent s’authentifier, choisissez Invités nouveaux **et existants.** Choisissez le paramètre le plus permissif qui sera nécessaire pour n’importe quel site de votre organisation.
 
-![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation](../media/sharepoint-organization-external-sharing-controls.png)
+![Capture d’écran SharePoint paramètres de partage au niveau de l’organisation.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 Pour définir les paramètres de partage SharePoint au niveau de l’organisation
@@ -113,7 +113,7 @@ Notez que le site ne peut pas être partagé avec des personnes non authentifié
 
 Vous pouvez également utiliser des [étiquettes de sensibilité pour contrôler les paramètres](../compliance/sensitivity-labels-teams-groups-sites.md)de partage externe pour SharePoint sites.
 
-![Capture d’écran des paramètres de partage externe de site SharePoint](../media/sharepoint-site-external-sharing-settings.png)
+![Capture d’écran SharePoint paramètres de partage externe du site.](../media/sharepoint-site-external-sharing-settings.png)
 
 Pour définir les paramètres au niveau du site
 1. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Sites** et cliquez sur **Sites actifs**.

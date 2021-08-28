@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18100adb1ecaeb2d9863fba207702b26e4483cd6
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: cb3cfba661025787c9cbbbcc97dc524c7a62d355
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533650"
+ms.locfileid: "58576055"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applications partenaires dans Microsoft Defender pour point de terminaison
 
@@ -54,66 +54,66 @@ Microsoft Defender for Endpoint s’intègre de façon transparente aux solution
 
 Logo|Nom du partenaire|Description
 :---|:---|:---
-![Image du logo AttackIQ](images/attackiq-logo.png)|[Plateforme AttackIQ](https://go.microsoft.com/fwlink/?linkid=2103502)|La plateforme AttackIQ valide que Defender pour endpoint est configuré correctement en lançant des attaques continues en toute sécurité sur les ressources de production
-![Image du logo Azure Sentinel](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Diffuser des alertes à partir de Microsoft Defender pour point de terminaison dans Azure Sentinel
-![Image du logo Cymulate](images/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Corréler les résultats de Defender pour les points de terminaison avec des attaques simulées pour valider la détection précise et les actions de réponse efficaces
-![Image du logo de sécurité élastique](images/elastic-security-logo.png)|[Sécurité élastique](https://go.microsoft.com/fwlink/?linkid=2139303)|La sécurité élastique est une solution gratuite et ouverte pour la prévention, la détection et la réponse aux menaces
-![Image du logo IBM QRadar](images/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configurer IBM QRadar pour collecter les détections à partir de Defender for Endpoint
-![Image du logo Micro Focus ArcSight](images/arcsight-logo.png)|[Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548)|Utiliser Micro Focus ArcSight pour tirer Defender pour les détections de points de terminaison
-![Image du logo RSA NetWitness](images/rsa-netwitness-logo.png)|[RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566)|Stream Defender for Endpoint Alerts to RSA NetWitness using Microsoft Graph Security API
-![Image du logo SafeBreach](images/safebreach-logo.png)|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)|Obtenir une visibilité sur les événements de sécurité de Point de terminaison Defender qui sont automatiquement corrélés avec les simulations SafeBreach
-![Image du logo du contrôle de vulnérabilité Skybox](images/skybox-logo.png)|[Contrôle de vulnérabilité Skybox](https://go.microsoft.com/fwlink/?linkid=2127467)|Le contrôle de vulnérabilité Skybox coupe le bruit des gestion des vulnérabilités, en corrélant le contexte de l’entreprise, du réseau et des menaces pour découvrir vos vulnérabilités les plus risquées
-![Image du logo Splunk](images/splunk-logo.png)|[Splunk](https://go.microsoft.com/fwlink/?linkid=2129805)|Le module complémentaire Defender pour le point de terminaison permet aux utilisateurs splunk d’inger toutes les alertes et les informations de prise en charge pour leur Splunk
-![Image du logo XM Cyber](images/xmcyber-logo.png)|[XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700)|Hiérarchiser votre réponse à une alerte en fonction des facteurs de risque et des ressources de valeur élevée
+![Image du logo AttackIQ.](images/attackiq-logo.png)|[Plateforme AttackIQ](https://go.microsoft.com/fwlink/?linkid=2103502)|La plateforme AttackIQ valide que Defender pour endpoint est configuré correctement en lançant des attaques continues en toute sécurité sur les ressources de production
+![Image du logo Azure Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Diffuser des alertes à partir de Microsoft Defender pour point de terminaison dans Azure Sentinel
+![Image du logo Cymulate.](images/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Corréler les résultats de Defender pour les points de terminaison avec des attaques simulées pour valider la détection précise et les actions de réponse efficaces
+![Image du logo de sécurité élastique.](images/elastic-security-logo.png)|[Sécurité élastique](https://go.microsoft.com/fwlink/?linkid=2139303)|La sécurité élastique est une solution gratuite et ouverte pour la prévention, la détection et la réponse aux menaces
+![Image du logo IBM QRadar.](images/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configurer IBM QRadar pour collecter les détections à partir de Defender for Endpoint
+![Image du logo ArcSight Micro Focus.](images/arcsight-logo.png)|[Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548)|Utiliser Micro Focus ArcSight pour tirer Defender pour les détections de points de terminaison
+![Image du logo RSA NetWitness.](images/rsa-netwitness-logo.png)|[RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566)|Stream Defender for Endpoint Alerts to RSA NetWitness using Microsoft Graph Security API
+![Image du logo SafeBreach.](images/safebreach-logo.png)|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)|Obtenir une visibilité sur les événements de sécurité de Point de terminaison Defender qui sont automatiquement corrélés avec les simulations SafeBreach
+![Image du logo du contrôle de vulnérabilité Skybox.](images/skybox-logo.png)|[Contrôle de vulnérabilité Skybox](https://go.microsoft.com/fwlink/?linkid=2127467)|Le contrôle de vulnérabilité Skybox coupe le bruit des gestion des vulnérabilités, en corrélant le contexte de l’entreprise, du réseau et des menaces pour découvrir vos vulnérabilités les plus risquées
+![Image du logo Splunk.](images/splunk-logo.png)|[Splunk](https://go.microsoft.com/fwlink/?linkid=2129805)|Le module complémentaire Defender pour le point de terminaison permet aux utilisateurs splunk d’inger toutes les alertes et les informations de prise en charge pour leur Splunk
+![Image du logo XM Cyber.](images/xmcyber-logo.png)|[XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700)|Hiérarchiser votre réponse à une alerte en fonction des facteurs de risque et des ressources de valeur élevée
 
 ### <a name="orchestration-and-automation"></a>Orchestration et automatisation
 
 Logo|Nom du partenaire|Description
 :---|:---|:---
-![Image du logo CyberSponse CyOps](images/cybersponse-logo.png)|[CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943)|CyOps s’intègre à Defender for Endpoint pour automatiser les manuels de réponse aux incidents à haut débit des clients
-![Image du logo ActiveEye de risque delta](images/delta-risk-activeeye-logo.png)|[Risque delta ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Le risque delta, l’un des principaux fournisseurs de services de sécurité et soc-as-a-Service, intègre Defender pour Endpoint à sa plateforme NATIVE DU CLOUD, ActiveEye.
-![Image de Demisto, logo de la société Palo Alto Networks](images/demisto-logo.png)|[Demisto, une société de réseaux Palo Alto](https://go.microsoft.com/fwlink/?linkid=2108414)|Demisto s’intègre à Defender for Endpoint pour permettre aux équipes de sécurité d’orchestrer et d’automatiser la surveillance, l’enrichissement et la réponse de la sécurité des points de terminaison
-![Image du logo Power Automate & Azure Functions](images/ms-flow-logo.png)|[Power Automate & fonctions Azure](https://go.microsoft.com/fwlink/?linkid=2114300)|Utiliser les connecteurs Defender for Endpoint pour Azure Logic Apps & Power Automate procédures de sécurité
-![Image du logo InsightConnect Rapide7](images/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect s’intègre à Defender for Endpoint pour accélérer, rationaliser et intégrer vos processus de sécurité longs
-![Image du logo ServiceNow](images/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|Ing d’alertes dans la solution Opérations de sécurité ServiceNow basée sur l’intégration de l’API microsoft Graph
-![Image du logo Caption caption](images/swimlane-logo.png)|[Sous-groupe](https://go.microsoft.com/fwlink/?linkid=2113902)|Optimiser les fonctionnalités de réponse aux incidents à l’aide de Lassage et Defender pour le point de terminaison ensemble
+![Image du logo CyberSponse CyOps.](images/cybersponse-logo.png)|[CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943)|CyOps s’intègre à Defender for Endpoint pour automatiser les manuels de réponse aux incidents à haut débit des clients
+![Image du logo ActiveEye à risque delta.](images/delta-risk-activeeye-logo.png)|[Risque delta ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Le risque delta, l’un des principaux fournisseurs de services de sécurité et soc-as-a-Service, intègre Defender pour Endpoint à sa plateforme NATIVE DU CLOUD, ActiveEye.
+![Image de Demisto, logo de la société Palo Alto Networks.](images/demisto-logo.png)|[Demisto, une société de réseaux Palo Alto](https://go.microsoft.com/fwlink/?linkid=2108414)|Demisto s’intègre à Defender for Endpoint pour permettre aux équipes de sécurité d’orchestrer et d’automatiser la surveillance, l’enrichissement et la réponse de la sécurité des points de terminaison
+![Image du logo Microsoft Flow & Azure Functions.](images/ms-flow-logo.png)|[Microsoft Flow & fonctions Azure](https://go.microsoft.com/fwlink/?linkid=2114300)|Utiliser les connecteurs Defender for Endpoint pour Azure Logic Apps & Microsoft Flow automatiser les procédures de sécurité
+![Image du logo InsightConnect Rapide7.](images/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect s’intègre à Defender for Endpoint pour accélérer, rationaliser et intégrer vos processus de sécurité longs
+![Image du logo ServiceNow.](images/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|Ing d’alertes dans la solution Opérations de sécurité ServiceNow basée sur l’intégration de l’API microsoft Graph
+![Image du logo Caption caption.](images/swimlane-logo.png)|[Sous-groupe](https://go.microsoft.com/fwlink/?linkid=2113902)|Optimiser les fonctionnalités de réponse aux incidents à l’aide de Lassage et Defender pour le point de terminaison ensemble
 
 ### <a name="threat-intelligence"></a>Veille contre les menaces
 
 Logo|Nom du partenaire|Description
 :---|:---|:---
-![Image du logo de la plateforme de partage d’informations sur les programmes malveillants MISP](images/misp-logo.png)|[MISP (Malware Information Sharing Platform)](https://go.microsoft.com/fwlink/?linkid=2127543)|Intégrer des indicateurs de menace à partir de la plateforme de partage Open Source Threat Intelligence dans votre environnement Defender for Endpoint
-![Image du logo Palo Alto Networks](images/paloalto-logo.png)|[Réseaux Palo Alto](https://go.microsoft.com/fwlink/?linkid=2099582)|Enrich your endpoint protection by extending Autofocus and other threat feeds to Defender for Endpoint using MineMeld
-![Image du logo ThreatConnect](images/threatconnect-logo.png)|[ThreatConnect](https://go.microsoft.com/fwlink/?linkid=2114115)|Alerte et/ou blocage de l’intelligence contre les menaces personnalisée à partir de playbooks ThreatConnect utilisant Defender pour les indicateurs de point de terminaison
+![Image du logo de la plateforme de partage d’informations sur les programmes malveillants MISP.](images/misp-logo.png)|[MISP (Malware Information Sharing Platform)](https://go.microsoft.com/fwlink/?linkid=2127543)|Intégrer des indicateurs de menace à partir de la plateforme de partage Open Source Threat Intelligence dans votre environnement Defender for Endpoint
+![Image du logo Palo Alto Networks.](images/paloalto-logo.png)|[Réseaux Palo Alto](https://go.microsoft.com/fwlink/?linkid=2099582)|Enrich your endpoint protection by extending Autofocus and other threat feeds to Defender for Endpoint using MineMeld
+![Image du logo ThreatConnect.](images/threatconnect-logo.png)|[ThreatConnect](https://go.microsoft.com/fwlink/?linkid=2114115)|Alerte et/ou blocage de l’intelligence contre les menaces personnalisée à partir de playbooks ThreatConnect utilisant Defender pour les indicateurs de point de terminaison
 
 ### <a name="network-security"></a>Sécurité réseau
 
 Logo|Nom du partenaire|Description
 :---|:---|:---
-![Image du logo du Gestionnaire de stratégies ClearPass Aruba](images/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|S’assurer que Defender pour le point de terminaison est installé et mis à jour sur chaque point de terminaison avant d’autoriser l’accès au réseau
-![Image du logo Hexagone bleu pour le réseau](images/bluehexagon-logo.png)|[Hexagone bleu pour le réseau](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon a créé la première plateforme d’apprentissage profond en temps réel du secteur pour la protection contre les menaces réseau
-![Image du logo CyberMDX](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX intègre la visibilité complète des biens de santé, la prévention des menaces et le repose dans votre environnement Defender for Endpoint
-![Image du logo GLOS Protect](images/hyas-logo.png)|[Protection GLOS](https://go.microsoft.com/fwlink/?linkid=2156763)|La protection FENS utilise la connaissance faisant autorité de l’infrastructure des attaquants pour protéger de manière proactive Microsoft Defender pour les points de terminaison des points de terminaison contre les cyberattaques
-![Image du logo de détection et de réponse réseau (NDR) Vectra](images/vectra-logo.png)|[Détection et réponse du réseau Vectra (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applique une recherche de sécurité & ident de l’IA pour détecter les cyberattaques et y répondre en temps réel
+![Image du logo aruba ClearPass Policy Manager.](images/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|S’assurer que Defender pour le point de terminaison est installé et mis à jour sur chaque point de terminaison avant d’autoriser l’accès au réseau
+![Image du logo Blue Hexagon pour le réseau.](images/bluehexagon-logo.png)|[Hexagone bleu pour le réseau](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon a créé la première plateforme d’apprentissage profond en temps réel du secteur pour la protection contre les menaces réseau
+![Image du logo CyberMDX.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX intègre la visibilité complète des biens de santé, la prévention des menaces et le repose dans votre environnement Defender for Endpoint
+![Image du logo GLOS Protect.](images/hyas-logo.png)|[Protection GLOS](https://go.microsoft.com/fwlink/?linkid=2156763)|La protection FENS utilise la connaissance faisant autorité de l’infrastructure des attaquants pour protéger de manière proactive Microsoft Defender pour les points de terminaison des points de terminaison contre les cyberattaques
+![Image du logo de détection et de réponse réseau (NDR) Vectra.](images/vectra-logo.png)|[Détection et réponse du réseau Vectra (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applique une recherche de sécurité & ident de l’IA pour détecter les cyberattaques et y répondre en temps réel
 
 ### <a name="cross-platform"></a>Multiplateforme
 
 Logo|Nom du partenaire|Description
 :---|:---|:---
-![Image du logo Bitdefender](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone est une plateforme de protection de point de terminaison nouvelle génération en couches offrant une protection complète contre la gamme complète des cybermenaces sophistiquées
-![Image du logo Better Mobile](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|Solution MTD basée sur l’IA pour arrêter les menaces mobiles & hameçonnage. Navigation internet privée pour protéger la confidentialité des utilisateurs
-![Image du logo Corrata](images/corrata-logo.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|Solution mobile : protéger vos appareils mobiles avec une visibilité et un contrôle granulaires de Corrata
-![Image du logo De Point de garde](images/lookout-logo.png)|[Point d’observation](https://go.microsoft.com/fwlink/?linkid=866935)|Obtenir la télémétrie Protection mobile contre les menaces de recherche pour les appareils mobiles Android et iOS
-![Image du logo Symantec Endpoint Protection Mobile](images/symantec-logo.png)|[Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)|SEP Mobile permet aux entreprises de prévoir, détecter et prévenir les menaces et vulnérabilités de sécurité sur les appareils mobiles
-![Image du logo Zimperium](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Étendre votre defender pour point de terminaison à iOS et Android avec Machine Learning protection contre les menaces mobiles basée sur Machine Learning mobile
+![Image du logo Bitdefender.](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone est une plateforme de protection de point de terminaison nouvelle génération en couches offrant une protection complète contre la gamme complète des cybermenaces sophistiquées
+![Image du logo Better Mobile.](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|Solution MTD basée sur l’IA pour arrêter les menaces mobiles & hameçonnage. Navigation internet privée pour protéger la confidentialité des utilisateurs
+![Image du logo Corrata.](images/corrata-logo.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|Solution mobile : protéger vos appareils mobiles avec une visibilité et un contrôle granulaires de Corrata
+![Image du logo De Point de garde.](images/lookout-logo.png)|[Point d’observation](https://go.microsoft.com/fwlink/?linkid=866935)|Obtenir la télémétrie Protection mobile contre les menaces de recherche pour les appareils mobiles Android et iOS
+![Image du logo Symantec Endpoint Protection Mobile.](images/symantec-logo.png)|[Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)|SEP Mobile permet aux entreprises de prévoir, détecter et prévenir les menaces et vulnérabilités de sécurité sur les appareils mobiles
+![Image du logo Zimperium.](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Étendre votre defender pour point de terminaison à iOS et Android avec Machine Learning protection contre les menaces mobiles basée sur Machine Learning mobile
 
 ## <a name="other-integrations"></a>Autres intégrations
 
 Logo|Nom du partenaire|Description
 :---|:---|:---
-![Image du logo Cyren Web Filter](images/cyren-logo.png)|[Cyren Web Filter](https://go.microsoft.com/fwlink/?linkid=2108221)|Améliorer votre defender pour point de terminaison avec le filtrage web avancé
-![Image du logo Morphisec](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Fournit une protection avancée contre les menaces pour la protection avancée contre les menaces en déplacement. Intègre les données d’investigation directement dans les tableaux de bord du Centre de sécurité WD pour vous aider à hiérarchiser les alertes, à déterminer le score de risque de l’appareil et à visualiser la chronologie complète des attaques, y compris les informations de mémoire interne
-![Image du logo cloud DE LASA](images/nextron-thor-logo.png)|[CLOUD DE LA RESO](https://go.microsoft.com/fwlink/?linkid=862988)|Fournit des analyses d’investigation en direct à la demande à l’aide d’une base de signatures axée sur les menaces persistantes
+![Image du logo Cyren Web Filter.](images/cyren-logo.png)|[Cyren Web Filter](https://go.microsoft.com/fwlink/?linkid=2108221)|Améliorer votre defender pour point de terminaison avec le filtrage web avancé
+![Image du logo Morphisec.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Fournit une protection avancée contre les menaces pour la protection avancée contre les menaces en déplacement. Intègre les données d’investigation directement dans les tableaux de bord du Centre de sécurité WD pour vous aider à hiérarchiser les alertes, à déterminer le score de risque de l’appareil et à visualiser la chronologie complète des attaques, y compris les informations de mémoire interne
+![Image du logo cloud DE LASA.](images/nextron-thor-logo.png)|[CLOUD DE LA RESO](https://go.microsoft.com/fwlink/?linkid=862988)|Fournit des analyses d’investigation en direct à la demande à l’aide d’une base de signatures axée sur les menaces persistantes
 
 ## <a name="siem-integration"></a>Intégration SIEM
 

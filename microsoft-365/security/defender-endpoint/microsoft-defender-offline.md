@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0aedcdc310b10218afbfd6253dc1c02117f3428eafc5ffd668f35489d9bc2e14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 90e1c310952a1ef3fd19410f9d74b10591f0a18f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898109"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575515"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Exécuter et examiner les résultats d’une analyse en mode Microsoft Defender hors ligne
 
@@ -59,7 +59,7 @@ Microsoft Defender hors ligne utilise les mises à jour de protection les plus r
 > [!NOTE]
 > Avant d’exécution d’une analyse hors connexion, vous devez essayer de mettre à jour la protection de l’Antivirus Microsoft Defender. Vous pouvez forcer une mise à jour à l’aide de la stratégie de groupe ou toutefois déployer normalement des mises à jour sur les points de terminaison, ou vous pouvez télécharger et installer manuellement les dernières mises à jour de la protection à partir du [Centre de protection Microsoft contre les programmes malveillants](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-Consultez la [rubrique Gérer Antivirus Microsoft Defender mises à](manage-protection-updates-microsoft-defender-antivirus.md) jour de l’intelligence de la sécurité pour plus d’informations.
+Pour plus [d’informations, consultez](manage-protection-updates-microsoft-defender-antivirus.md) la rubrique Gérer Antivirus Microsoft Defender d’informations sur la sécurité.
 
 ## <a name="usage-scenarios"></a>Scénarios d'utilisation
 
@@ -69,21 +69,21 @@ La nécessité d’effectuer une analyse hors connexion sera également Microsof
 
 L’invite peut se produire via une notification, semblable à ce qui suit :
 
-:::image type="content" source="../../media/notification.png" alt-text="Notification d’Microsoft Defender hors ligne":::
+:::image type="content" source="../../media/notification.png" alt-text="Notification d’Microsoft Defender hors ligne.":::
 
-L’utilisateur sera également informé dans le client Windows Defender client.
+L’utilisateur est également informé dans le client Windows Defender client.
 
 Dans Configuration Manager, vous pouvez identifier l’état des points de terminaison en naviguant vers Monitoring **> Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**. 
 
 Microsoft Defender hors ligne analyses sont indiquées sous  l’état de correction des programmes malveillants comme **analyse hors connexion requise.**
 
-:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender hors ligne’analyse est requise":::
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender hors ligne’analyse est requise.":::
 
 ## <a name="configure-notifications"></a>Configurer les notifications
 
 Microsoft Defender hors ligne notifications sont configurées dans le même paramètre de stratégie que les autres notifications de Microsoft Defender AV.
 
-Pour plus d’informations sur les notifications Windows Defender, consultez la rubrique Configurer les [notifications](configure-notifications-microsoft-defender-antivirus.md) qui apparaissent sur les points de terminaison.
+Pour plus d’informations sur les notifications Windows Defender, consultez la rubrique Configurer les notifications qui apparaissent [sur les points de terminaison.](configure-notifications-microsoft-defender-antivirus.md)
 
 ## <a name="run-a-scan"></a>Effectuer une analyse 
 
@@ -106,7 +106,7 @@ Utilisez les cmdlets suivantes :
 Start-MpWDOScan
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>Utiliser Windows Management Instruction (WMI) pour exécuter une analyse hors connexion
 

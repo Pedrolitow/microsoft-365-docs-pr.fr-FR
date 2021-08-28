@@ -1,7 +1,7 @@
 ---
 title: Masquer l’interface Antivirus Microsoft Defender de données
 description: Vous pouvez masquer la vignette de protection contre les virus et les menaces dans Sécurité Windows application.
-keywords: Verrouillage de l’interface utilisateur, mode sans tête, masquer l’application, masquer les paramètres, masquer l’interface
+keywords: Verrouillage de l’interface utilisateur, mode sans en-tête, masquer l’application, masquer les paramètres, masquer l’interface
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 66f9f571411c61bd8944ceb01a13f237ecd1d483
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 73a802f158b8804d7cf94708ecf3a6ac9355baae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255781"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575779"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur
 
@@ -36,15 +36,15 @@ Vous pouvez utiliser la stratégie de groupe pour empêcher les utilisateurs sur
 
 ## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Masquer l’interface Antivirus Microsoft Defender de données
 
-Dans Windows 10 versions 1703, le masquage de l’interface masquera les notifications Antivirus Microsoft Defender et empêchera l’apparition de la vignette de protection contre les menaces virus & dans l’application Sécurité Windows.
+Dans Windows 10 versions 1703, le masquage de l’interface masquera les notifications Antivirus Microsoft Defender et empêchera l’apparition de la vignette de protection contre les menaces & virus dans l’application Sécurité Windows.
 
 Avec le paramètre activé **:**
 
-:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="Capture d’écran Sécurité Windows sans l’icône de bouclier et les sections de protection contre les virus et menaces":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="Capture d’écran Sécurité Windows sans l’icône de bouclier et les sections de protection contre les virus et menaces.":::
 
 Avec le paramètre désactivé **ou** non configuré :
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Capture d’écran de Sécurité Windows avec l’icône de bouclier et les sections de protection contre les menaces":::
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Capture d’écran Sécurité Windows avec l’icône de bouclier et les sections de protection contre les menaces.":::
 
 >[!NOTE]
 >Le masquage de l’interface empêchera Antivirus Microsoft Defender notifications d’apparaître sur le point de terminaison. Les notifications de Microsoft Defender pour point de terminaison s’affichent toujours. Vous pouvez également configurer individuellement [les notifications qui apparaissent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
@@ -65,16 +65,16 @@ Dans les versions antérieures de Windows 10, le paramètre masque l’interface
 
 5. Double-cliquez sur le **paramètre Activer le mode d’interface** utilisateur sans en-tête et définissez l’option sur **Activé.** Cliquez sur **OK**. 
 
-Voir [Empêcher les utilisateurs de modifier localement](configure-local-policy-overrides-microsoft-defender-antivirus.md) les paramètres de stratégie pour plus d’options pour empêcher les utilisateurs de modifier la protection sur leur PC.
+Voir [Empêcher les utilisateurs de modifier localement](configure-local-policy-overrides-microsoft-defender-antivirus.md) les paramètres de stratégie pour plus d’options pour empêcher les utilisateurs de modifier la protection sur leurs PC.
 
 ## <a name="prevent-users-from-pausing-a-scan"></a>Empêcher les utilisateurs de mettre une analyse en pause
 
 Vous pouvez empêcher les utilisateurs de mettre en pause les analyses, ce qui peut être utile pour vous assurer que les analyses programmées ou à la demande ne sont pas interrompues par les utilisateurs.
 
 > [!NOTE]
-> Ce paramètre n’est pas pris en charge Windows 10.
+> Ce paramètre n’est pas pris en charge sur Windows 10.
 
-### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>Utiliser la stratégie de groupe pour empêcher les utilisateurs de mettre une analyse en pause
+### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>Utiliser une stratégie de groupe pour empêcher les utilisateurs de mettre une analyse en pause
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 

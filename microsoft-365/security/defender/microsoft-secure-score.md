@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 3cf1130e13b90c60334b8af76f31d232a084f37a
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: de8d0a0bc1609a3dfac9d177a51ef3903b477de4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256862"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572946"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver dans https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](overview-security-center.md)
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve dans le https://security.microsoft.com/securescore portail [Microsoft 365 Defender.](overview-security-center.md)
 
 En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le portail Microsoft 365 Defender, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365 de sécurité.
 
@@ -44,7 +44,7 @@ Score sécurisé aide les organisations :
 
 Les organisations ont accès à des visualisations robustes des métriques et des tendances, à l’intégration à d’autres produits Microsoft, à la comparaison des scores avec des organisations similaires, et bien plus encore. Le score peut également refléter lorsque des solutions tierces ont traité les actions recommandées.
 
-![Page d’accueil du degré de sécurisation](../../media/secure-score/secure-score-home-page.png)
+![Page d’accueil Du score sécurisé.](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="how-it-works"></a>Comment ça marche
 

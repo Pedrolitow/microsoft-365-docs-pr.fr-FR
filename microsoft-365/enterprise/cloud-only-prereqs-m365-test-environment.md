@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables pour l’authentification uniquement dans le cloud.
-ms.openlocfilehash: 242f17fc2f8241e5a17078286e6e23d4920ca99d
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5fc29acce595cab33086ea868d927b93b9281167
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357088"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573126"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès aux identités et aux appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
 
@@ -45,7 +45,7 @@ La configuration de cet environnement de test comprend huit étapes :
 Suivez les instructions de [Configuration base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
 Voici la configuration obtenue.
 
-![Environnement de test Microsoft 365 Entreprise léger](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Microsoft 3656 léger Enterprise environnement de test.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
 ## <a name="phase-2-configure-named-locations"></a>Étape 2 : Configurer des emplacements nommés
 

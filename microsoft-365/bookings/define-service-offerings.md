@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instructions pour entrer des informations sur les offres de services, notamment le nom du service, la description, l’emplacement, la durée et la tarification. Vous pouvez également marquer les employés qualifiés pour fournir le service.
-ms.openlocfilehash: 8a287e08a64fd2f7ca94e83f7b99c277f9e0124673697b202eda9ad86b0ff9e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: acf7f7be1a5c5d70215406ec0a3f375eb0dfa89d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804004"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572358"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Définir vos offres de services dans Bookings
 
@@ -39,7 +39,7 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
         - Un lien vers une réunion Teams ou Skype, propre à la réservation, sera ajouté à l’événement de calendrier sur les calendriers du personnel et des clients, ainsi que des informations de connexion.
         - Le lien pour participer à la réunion est ajouté à tous les messages de confirmation et de rappel, comme illustré dans l’exemple suivant :
 
-        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Exemple de lien pour rejoindre Teams réunion dans Bookings":::
+        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Exemple de lien pour rejoindre Teams réunion dans Bookings.":::
 
         > [!NOTE]
         > Teams réunions peuvent être jointes via l’application mobile Teams, l’application de bureau Teams, dans un navigateur Web ou via le numéro de téléphone. Nous vous recommandons vivement d Teams en tant que service de réunion en ligne par défaut pour votre client, pour une expérience de réservation de rendez-vous virtuels de qualité.
@@ -49,7 +49,7 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
 6. **Durée par** défaut : il s’agit de la durée de réservation de toutes les réunions. L’heure est bloquée à partir de l’heure de début, qui est sélectionnée pendant la réservation. L’heure de rendez-vous complète sera bloquée sur les calendriers du personnel.
 
-7. Temps tampon que votre client ne peut pas réserver : **l’activation** de ce paramètre permet d’ajouter du temps supplémentaire au calendrier du personnel chaque fois qu’un rendez-vous est réservé.
+7. Temps tampon que votre client ne peut pas réserver : l’activation de ce paramètre permet **d’ajouter** du temps supplémentaire au calendrier du personnel chaque fois qu’un rendez-vous est réservé.
 
     L’heure sera bloquée sur le calendrier du personnel et aura un impact sur les informations de libre/occupé. Cela signifie que si un rendez-vous se termine à 15 h 00 et que 10 minutes de temps tampon ont été ajoutées à la fin de la réunion, le calendrier du personnel s’affiche comme occupé et non réservé jusqu’à 15 h 10. Cela peut être utile si votre personnel a besoin de temps avant une réunion pour se préparer, tel qu’un médecin qui examine le graphique d’un patient ou un conseiller financier qui prépare les informations de compte pertinentes. Il peut également être utile après une réunion, par exemple lorsque quelqu’un a besoin de temps pour se déplacer vers un autre emplacement.
 
@@ -62,7 +62,7 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
         - **Annuler la réservation** Cela annule la réservation et la supprime du calendrier du personnel.
         - **Nouvelle réservation** Cette option permet à l’utilisateur d'Self-Service page avec tous les services et le personnel répertoriés, pour planifier une nouvelle réservation.
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Bouton Gérer les réservations dans Bookings":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Bouton Gérer les réservations dans Bookings.":::
 
         Nous vous recommandons de laisser ce paramètre activé uniquement si vous êtes à l’aise avec les clients qui accèdent à Self-Service page.
 
@@ -74,9 +74,9 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
 9. **Nombre maximal de participants par événement** Ce paramètre vous permet de créer des services qui nécessitent la possibilité pour plusieurs personnes de réserver la même heure de rendez-vous et le même personnel (par exemple, un cours de mise en forme). Le créneau horaire du rendez-vous pour le service, le personnel et l’heure sélectionnés pourra être réservé jusqu’à ce que le nombre maximal de participants, spécifié par vous, soit atteint. La capacité actuelle des rendez-vous et les participants peuvent être vus dans l’onglet Calendrier de l’application Web Bookings.
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Exemple de définition du nombre maximal de participants dans Bookings":::
+    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Exemple de définition du nombre maximal de participants dans Bookings.":::
 
-10. **Prix par défaut**  Il s’agit du prix qui s’affiche sur Self-Service page. Si **le prix non fixé** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaît.
+10. **Prix par défaut**  Il s’agit du prix qui s’affiche sur Self-Service page. Si **le prix non définie** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaîtra.
 
 11. **Remarques** Ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que dans l’événement qui apparaît sous l’onglet Calendrier dans l’application web Bookings.
 
@@ -92,21 +92,21 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
     - Les messages de confirmation et de rappel par défaut incluent des informations de base sur le rendez-vous, telles que le nom du client/client, le nom du membre du personnel, le service ou le rendez-vous réservé et l’heure du rendez-vous. Pour les réunions en ligne, un lien pour participer sera également inclus. La possibilité de gérer la réservation peut également être incluse si ce paramètre est activé (comme décrit ci-dessus à l’étape 8).
 
-        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Un e-mail de confirmation de Bookings":::
+        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Un e-mail de confirmation de Bookings.":::
 
-    - Si vous le souhaitez, vous pouvez inclure tout texte supplémentaire que vous souhaitez ici, par exemple des informations sur la planification ou ce que les clients doivent apporter pour le rendez-vous. Voici un exemple de texte personnalisé ajouté à l’e-mail de confirmation d’origine, visible dans le champ Informations supplémentaires pour la **confirmation du courrier** électronique :
+    - Si vous le souhaitez, vous pouvez inclure tout texte supplémentaire que vous souhaitez ici, par exemple des informations sur la planification ou sur ce que les clients doivent apporter pour le rendez-vous. Voici un exemple de texte personnalisé ajouté à l’e-mail de confirmation d’origine, visible dans le champ Informations supplémentaires pour la **confirmation du courrier** électronique :
 
-        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Informations supplémentaires dans un e-mail Bookings":::
+        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Informations supplémentaires dans un e-mail Bookings.":::
 
 14. **Activer les notifications par SMS pour votre client** S’il est sélectionné, les messages SMS sont envoyés au client, mais uniquement s’il l’a choisi.
 
     - Zone d’inscription sur la page de réservation Self-Service manuelle :
 
-        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Zone d’inscription dans Bookings":::
+        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Zone d’inscription dans Bookings.":::
 
-    - Les notifications par SMS ressemblent à ce qui suit (notez que les notifications par SMS sont actuellement uniquement disponibles en Amérique du Nord) :
+    - Les notifications par SMS ressembleront à ce qui suit (notez que les notifications par SMS sont actuellement uniquement disponibles en Amérique du Nord) :
 
-        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Une notification texte de Bookings":::
+        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Une notification texte de Bookings.":::
 
 15. **Options de publication** Choisissez si ce service doit être réservé sur la page Self-Service ou s’il doit être réservé uniquement sous l’onglet Calendrier de l’application Web Bookings.
 

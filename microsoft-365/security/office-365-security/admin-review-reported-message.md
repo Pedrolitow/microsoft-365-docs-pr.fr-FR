@@ -13,12 +13,12 @@ ms.collection:
 description: Découvrez comment passer en revue les messages signalés et comment envoyer des commentaires à vos utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8f278d94235f4fc36e2c05c1cfe8724843f9ff3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: fb023d68e81c5592078bdd89e4826537790e7d53
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258568"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572466"
 ---
 # <a name="admin-review-for-reported-messages"></a>Révision par l’administrateur des messages signalés
 
@@ -33,7 +33,7 @@ ms.locfileid: "58258568"
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres Exchange Online et Microsoft Defender pour Office 365, les administrateurs peuvent désormais renvoyer des messages de modèle aux utilisateurs finaux après avoir passé en revue les messages signalés. Les modèles peuvent être personnalisés pour votre organisation et basés sur le verdict de votre administrateur.
 
-La fonctionnalité est conçue pour envoyer des commentaires à vos utilisateurs, mais ne modifie pas les verdicts des messages dans le système. Pour aider Microsoft à mettre à jour et à améliorer ses filtres, vous devez envoyer des messages pour analyse à l’aide de [la soumission d’administrateur.](admin-submission.md)
+La fonctionnalité est conçue pour envoyer des commentaires à vos utilisateurs, mais ne modifie pas les verdicts des messages dans le système. Pour aider Microsoft à mettre à jour et à améliorer ses filtres, vous devez soumettre des messages pour analyse à l’aide de [la soumission d’administrateur.](admin-submission.md)
 
 Vous ne pourrez marquer et avertir les utilisateurs des résultats de la révision que si le message a été signalé comme faux positifs ou [faux négatifs.](report-false-positives-and-false-negatives.md)
 
@@ -58,7 +58,7 @@ Vous ne pourrez marquer et avertir les utilisateurs des résultats de la révisi
 3. Sélectionnez la marque en tant que et **notifier** la drop-down, puis sélectionnez Aucune menace **trouvée,** **Hameçonnage** ou **Courrier indésirable**.
 
    > [!div class="mx-imgBorder"]
-   > ![Envoyer des messages à partir du portail](../../media/admin-review-send-message-from-portal.png)
+   > ![Envoyer des messages à partir du portail.](../../media/admin-review-send-message-from-portal.png)
 
 Le message signalé sera marqué comme faux positif ou faux négatif, et un message électronique sera automatiquement envoyé à partir du portail pour avertir l’utilisateur qui a signalé le message.
 
@@ -76,6 +76,6 @@ Le message signalé sera marqué comme faux positif ou faux négatif, et un mess
     - Pied de page
 
     > [!div class="mx-imgBorder"]
-    > ![Personnaliser les messages envoyés aux utilisateurs](../../media/admin-review-customize-message.png)
+    > ![Personnaliser les messages envoyés aux utilisateurs.](../../media/admin-review-customize-message.png)
 
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer**. Pour effacer ces valeurs, cliquez **sur Ignorer** dans la page Soumissions de l’utilisateur.

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0f2d0888c9dbe7550f4967f85691d4e56e4320c2d0220812fc095aa2c1cd96dc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 710e2adef0d04d9a7c45506f8b1bd4ec00d1d044
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862751"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576139"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Étape 5. Développer et tester des cas d’utilisation
 
@@ -56,7 +56,7 @@ Les activités de supervision SOC liées au développement de cas d’utilisatio
 
 Pour faciliter les processus de création de runbook et de playbook, créez un arbre de décision de cas d’utilisation. Cette figure montre un exemple.
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Processus de décision de cas d’utilisation":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Processus de décision de cas d’utilisation.":::
 
 Une fois qu’une norme de cas d’utilisation de haut niveau a été définie et approuvée, l’étape suivante consiste à créer et tester un cas d’utilisation réel. Les sections suivantes utilisent des scénarios d’analyse anti-hameçonnage et contre les menaces et les vulnérabilités comme exemples.
 
@@ -64,13 +64,13 @@ Une fois qu’une norme de cas d’utilisation de haut niveau a été définie e
 
 La première étape de la création d’un cas d’utilisation consiste à décrire le flux de travail à l’aide d’un story board. Voici un exemple d’article de haut niveau pour une nouvelle notification d’attaque par hameçonnage à une équipe Threat Intelligence.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Exemple d’utilisation d’un flux de travail de cas pour une campagne anti-hameçonnage":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Exemple d’utilisation du flux de travail de cas pour une campagne anti-hameçonnage.":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-1"></a>Appeler le flux de travail de cas d’utilisation par exemple 1
 
 Une fois l’article approuvé, l’étape suivante consiste à appeler le flux de travail de cas d’utilisation. Voici un exemple de processus pour une campagne anti-hameçonnage. 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Exemple d’un flux de travail de cas d’utilisation détaillé pour une campagne anti-hameçonnage":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Exemple de flux de travail de cas d’utilisation détaillé pour une campagne anti-hameçonnage.":::
 
 ## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>Exemple d’utilisation 2 : analyse des menaces et des vulnérabilités
 
@@ -78,13 +78,13 @@ Un autre scénario dans lequel un cas d’utilisation peut être utilisé est po
 
 Voici un exemple de storyboard de haut niveau pour la Gestion des menaces et des vulnérabilités ressources.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Exemple d’utilisation du flux de travail de cas pour Gestion des menaces et des vulnérabilités":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Exemple d’utilisation du flux de travail de cas pour Gestion des menaces et des vulnérabilités.":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-2"></a>Appeler le flux de travail de cas d’utilisation par exemple 2
 
 Voici un exemple de processus pour l’analyse des menaces et des vulnérabilités.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Exemple de flux de travail de cas d’utilisation détaillé pour Gestion des menaces et des vulnérabilités":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Exemple de flux de travail de cas d’utilisation détaillé pour Gestion des menaces et des vulnérabilités.":::
  
 ### <a name="analyze-the-use-case-output-and-lessons-learned"></a>Analyser la sortie du cas d’utilisation et les leçons apprises
 
@@ -97,7 +97,7 @@ Par exemple, dans l’exemple de scénario anti-hameçonnage, les équipes SOC a
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
 | Équipe Threat Intelligence et Analytics | Les sources de données alimentent correctement les moteurs d’intelligence des menaces. | Analyste/ingénieur threat intelligence | Exigences de flux de données établies, déclencheurs d’intelligence des menaces provenant de sources approuvées | Microsoft Defender pour l’identité, Microsoft Defender pour point de terminaison | L’équipe Threat Intelligence n’a pas utilisé de script d’automatisation pour lier Microsoft 365 Defender API aux moteurs Intel contre les menaces | Ajouter des Microsoft 365 Defender en tant que sources de données aux moteurs de menaces <BR> <BR> Mettre à jour le carnet d’exemples d’utilisation | N |
 | Équipe de surveillance | Les sources de données alimentent correctement les tableaux de bord de surveillance | Analyste SOC de niveau 1,2 – Surveillance & alertes | Workflow for reporting Security & Compliance Center Secure Score | [Alertes dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/alerts)  <br><br> Surveillance du score de sécurisation  | Aucun mécanisme pour les analystes SOC permettant de signaler la détection réussie d’une nouvelle variante d’hameçonnage pour améliorer le score de sécurisation <br><br> [Reporting in Security & Compliance Center](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Ajouter un processus de suivi de l’amélioration du score de sécurité aux flux de travail de création de rapports | N | 
-| Ingénierie et équipe SecOps | Les mises à jour des contrôles de modification sont réalisées dans les runbooks d’équipe SOC | Ingénieur SOC de niveau 2 | Procédure de notification de contrôle des changements pour les runbooks d’équipe SOC | Modifications approuvées apportées aux appareils de sécurité | Les modifications apportées Microsoft 365 Defender la connectivité à la technologie de sécurité SOC nécessitent une approbation | Ajouter Microsoft Cloud App Security, Defender pour l’identité, Defender pour le point de terminaison, Centre de sécurité & conformité aux runbooks SOC | v |
+| Ingénierie et équipe SecOps | Les mises à jour des contrôles de modification sont réalisées dans les runbooks d’équipe SOC | Ingénieur SOC de niveau 2 | Procédure de notification de contrôle des changements pour les runbooks d’équipe SOC | Modifications approuvées apportées aux appareils de sécurité | Les modifications apportées Microsoft 365 Defender la connectivité à la technologie de sécurité SOC nécessitent une approbation | Ajouter Microsoft Cloud App Security, Defender pour l’identité, Defender pour le point de terminaison, Centre de sécurité & conformité aux runbooks SOC | O |
 |||||||||
 
 En outre, les équipes SOC auraient pu faire les découvertes décrites dans le tableau ci-dessous en ce qui concerne Gestion des menaces et des vulnérabilités scénario décrit ci-dessus :

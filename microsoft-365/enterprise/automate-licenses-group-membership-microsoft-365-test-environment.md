@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurez la gestion des licences basée sur les groupes et l’appartenance à un groupe dynamique dans Microsoft 365 pour l’environnement de test d’entreprise.
-ms.openlocfilehash: f7c871c7005163aa81e911b15f8a3c91e8ea9c43
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 7d754b937296fbd852904022c45492b6890f2f04
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356587"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572682"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatiser la gestion des licences et l’appartenance à un Microsoft 365 pour l’environnement de test d’entreprise
 
@@ -33,7 +33,7 @@ La configuration de la gestion des licences automatiques et de l’appartenance 
 - [Phase 1 : Créer votre environnement de test Microsoft 365 entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Phase 2 : Configurer et tester l’appartenance à un groupe dynamique et la gestion automatique des licences](#phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing)
 
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
@@ -49,7 +49,7 @@ Si vous souhaitez tester la gestion automatisée des licences et l’appartenanc
   
 ## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Phase 2 : Configurer et tester l’appartenance à un groupe dynamique et la gestion automatique des licences
 
-Tout d’abord, créez un groupe nommé Ventes et ajoutez  une règle  d’appartenance au groupe dynamique afin que les comptes d’utilisateurs dont le service est le service sont automatiquement joints au groupe Ventes.
+Tout d’abord, créez un groupe nommé Ventes, puis ajoutez  une  règle d’appartenance au groupe dynamique afin que les comptes d’utilisateurs dont le service est le service des ventes rejoignent automatiquement le groupe Ventes.
 
 1. Dans une instance privée de votre navigateur Internet, connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec le compte d’administrateur général de votre abonnement Microsoft 365 E5 de laboratoire de test.
 2. Sous un onglet distinct de votre navigateur, allez sur le portail Azure à [https://portal.azure.com](https://portal.azure.com) l':.
@@ -63,7 +63,7 @@ Tout d’abord, créez un groupe nommé Ventes et ajoutez  une règle  d’appar
    - Sélectionnez la **propriété de** service.
    - Sélectionnez **l’opérateur Égal à.**
    - Dans la **zone Valeur,** entrez **Ventes**.
-10. Sélectionnez **Enregistrer**.
+10. Cliquez sur **Enregistrer**.
 11. Sélectionnez **Créer**.
 
 Ensuite, configurez le groupe Ventes afin que les membres se voit attribuer automatiquement la Microsoft 365 E5 licence.

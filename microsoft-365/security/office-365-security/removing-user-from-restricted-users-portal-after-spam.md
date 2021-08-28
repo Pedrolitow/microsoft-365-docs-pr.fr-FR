@@ -20,12 +20,12 @@ description: Les administrateurs peuvent apprendre à supprimer des utilisateurs
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b06cf477ab8d713e0684c0d62567199c6c57cb32
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 774f47c65f98a2e93ee6e50406afe897a315de12
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258307"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572394"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Supprimer les utilisateurs bloqués du portail Utilisateurs restreints dans Microsoft 365
 
@@ -100,7 +100,7 @@ La stratégie d’alerte par défaut nommée **Utilisateur pour lequel l’envoi
    - **État** : vérifiez que l’alerte est activée ![Activer](../../media/scc-toggle-on.png).
    - **Destinataires de courrier** : cliquez sur **Modifier** et vérifiez ou configurez les paramètres suivants dans le menu volant **Modifier les destinataires** qui apparaît :
      - **Envoyer des notifications par e-mail**: vérifiez que cette option est sélectionnée (**Activé**).
-     - **Destinataires du courrier** : la valeur par défaut est **TenantAdmins** (c’est-à-dire membres de type **Administrateur général**). Pour ajouter des destinataires, cliquez sur une zone vide de la zone. Une liste de destinataires apparaît, puis vous pouvez commencer à saisir un nom pour filtrer et sélectionner un destinataire. Vous pouvez supprimer un destinataire existant de la zone en cliquant sur ![Icône Supprimer](../../media/m365-cc-sc-remove-selection-icon.png) en regard de son nom.
+     - **Destinataires du courrier** : la valeur par défaut est **TenantAdmins** (c’est-à-dire membres de type **Administrateur général**). Pour ajouter des destinataires, cliquez sur une zone vide de la zone. Une liste de destinataires apparaît, puis vous pouvez commencer à saisir un nom pour filtrer et sélectionner un destinataire. Vous pouvez supprimer un destinataire existant de la zone en cliquant sur l’![ icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) à côté de leur nom.
      - **Limite quotidienne de notification** : la valeur par défaut est **Aucune limite**, mais vous pouvez sélectionner une limite pour le nombre maximal de notifications par jour.
 
      Lorsque vous avez terminé, cliquez sur **Enregistrer**.

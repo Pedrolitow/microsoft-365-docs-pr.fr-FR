@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classifieur est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Cet article vous montre comment créer et former un classifieur personnalisé et comment les former à nouveau pour améliorer la précision.
-ms.openlocfilehash: 25052b461aee3a9ba823c203ebb2f8bddebd3196312e9697574fcd2efba2af50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f8401193274f90ae90d773c6bb9a2a5a6a995169
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872169"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571108"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Prise en main des classifieurs avec capacité d’apprentissage
 
@@ -40,7 +40,7 @@ Regardez cette vidéo pour obtenir un résumé rapide de la création d’un cla
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 ### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
@@ -70,7 +70,7 @@ Il est utile de comprendre ce qui est impliqué dans la création d’un classif
 
 Cette chronologie reflète un exemple de déploiement de classifieurs entraisables.
 
-![trainable-classifier-timeline](../media/trainable-classifier-deployment-timeline_border.png)
+![trainable-classifier-timeline.](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > L’option d’opt-in est requise la première fois pour les classifieurs entraisables. Douze jours s’Microsoft 365 pour effectuer une évaluation de référence du contenu de votre organisation. Contactez votre administrateur général pour lancer le processus d’opt-in.
@@ -88,7 +88,7 @@ Lorsque vous souhaitez qu’un classifieur entraisable identifie de manière ind
 
 ### <a name="testing-content"></a>Test du contenu
 
-Une fois que le classifieur entraisable a traitée suffisamment d’échantillons positifs pour créer un modèle de prédiction, vous devez tester les prédictions qu’il effectue pour voir si le classifieur peut correctement faire la distinction entre les éléments qui correspondent à la catégorie et les éléments qui ne le sont pas. Pour ce faire, vous sélectionnez un autre ensemble de contenu sélectionné par l’être humain, avec un plus grand nombre d’échantillons qui doivent être placés dans la catégorie, et des exemples qui ne le seront pas. Vous devez tester avec des données différentes des données initiales initiales que vous avez fournies. Une fois qu’il les traite, vous allez manuellement à travers les résultats et vérifiez si chaque prédiction est correcte, incorrecte ou vous n’êtes pas sûr. Le classifieur entraisable utilise ce retour d’expérience pour améliorer son modèle de prédiction.
+Une fois que le classifieur entraisable a traitée suffisamment d’échantillons positifs pour créer un modèle de prédiction, vous devez tester les prédictions qu’il effectue pour voir si le classifieur peut correctement faire la distinction entre les éléments qui correspondent à la catégorie et les éléments qui ne le sont pas. Pour ce faire, vous sélectionnez un autre ensemble de contenu sélectionné par l’être humain, avec un plus grand nombre d’échantillons qui doivent être placés dans la catégorie et des exemples qui ne le seront pas. Vous devez tester avec des données différentes des données initiales initiales que vous avez fournies. Une fois qu’il les traite, vous allez manuellement à travers les résultats et vérifiez si chaque prédiction est correcte, incorrecte ou vous n’êtes pas sûr. Le classifieur entraisable utilise ce retour d’expérience pour améliorer son modèle de prédiction.
 
 > [!TIP]
 > Pour obtenir de meilleurs résultats, vous devez avoir au moins 200 éléments dans votre exemple de test avec une distribution équitable de correspondances positives et négatives.
@@ -101,14 +101,14 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
    > Les exemples d’amorçage et de test ne doivent pas être chiffrés et doivent être en anglais.
 
    > [!IMPORTANT]
-   > Assurez-vous que les éléments de votre ensemble de valeurs de amorçage **sont de forts** exemples de la catégorie. Le classifieur entraçable crée initialement son modèle en fonction de ce avec quoi vous l’amorçez. Le classificateur suppose que tous les échantillons de amorçage sont des positifs forts et n’a aucun moyen de savoir si un échantillon est une correspondance faible ou négative avec la catégorie.
+   > Assurez-vous que les éléments de votre jeu de valeurs sont **des exemples** forts de la catégorie. Le classifieur entraçable crée initialement son modèle en fonction de ce avec quoi vous l’amorçez. Le classificateur suppose que tous les échantillons de amorçage sont des positifs forts et n’a aucun moyen de savoir si un échantillon est une correspondance faible ou négative avec la catégorie.
 
 2. Placez le contenu d’amorçage dans un SharePoint Online dédié à la mise en place du *contenu d’amorçage uniquement.* Notez l’URL du site, de la bibliothèque et du dossier.
 
    > [!TIP]
    > Si vous créez un site et un dossier pour vos données d’amorçage, autorisez l’indexation d’au moins une heure de cet emplacement avant de créer le classifieur entraisable qui utilisera ces données d’amorçage.
 
-3. Connectez-vous Centre de conformité Microsoft 365 avec l’accès au rôle d’administrateur de conformité ou d’administrateur de sécurité et ouvrez **Centre de conformité Microsoft 365** ou Microsoft 365 classification des données **du centre**  >  **de sécurité.**
+3. Connectez-vous Centre de conformité Microsoft 365 avec l’accès au rôle d’administrateur de conformité ou d’administrateur de sécurité et ouvrez **Centre de conformité Microsoft 365** ou **Microsoft 365** classification des données du centre de  >  **sécurité.**
 
 4. Sélectionnez **l’onglet Classifieurs avec formation.**
 
@@ -125,7 +125,7 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
 10. Vous pouvez désormais afficher la page de détails en choisissant le classificateur.
 
     > [!div class="mx-imgBorder"]
-    > ![Classifieur entraisable prêt pour le test](../media/classifier-trainable-ready-to-test-detail.png)
+    > ![Classifieur entraisable prêt pour le test.](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Collectez au moins 200 éléments de contenu de test (10 000 max) pour obtenir de meilleurs résultats. Il doit s’agit d’un mélange d’éléments qui sont de forts positifs, de négatifs forts et d’autres qui sont un peu moins évidents dans leur nature. Reportez-vous [aux extensions de](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) nom de fichier et aux types de fichiers analyse par défaut dans SharePoint Server pour les types de fichiers pris en charge.
 
@@ -143,22 +143,22 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
 
 15. Terminez l’Assistant en choisissant `Done` . Le traitement des fichiers de test peut prendre jusqu’à une heure.
 
-16. Lorsque le classifieur entra vous permet de traiter vos fichiers de test, l’état sur la page de détails passe à `Ready to review` . Si vous devez augmenter la taille de l’échantillon de test, choisissez et autorisez le `Add items to test` classifieur entraçable à traiter les éléments supplémentaires.
+16. Lorsque le classifieur entra ne peut pas traiter vos fichiers de test, l’état de la page de détails passe à `Ready to review` . Si vous devez augmenter la taille de l’échantillon de test, choisissez et autorisez le `Add items to test` classifieur entraçable à traiter les éléments supplémentaires.
 
     > [!div class="mx-imgBorder"]
-    > ![Capture d’écran prête à être revue](../media/classifier-trainable-ready-to-review-detail.png)
+    > ![Prêt à passer en revue la capture d’écran.](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Choisissez `Tested items to review` l’onglet pour passer en revue les éléments.
 
 18. Microsoft 365 présente 30 éléments à la fois. Examinez-les et dans la `We predict this item is "Relevant". Do you agree?` zone choisissez `Yes` l’une ou `No` l’autre ou `Not sure, skip to next item` . La précision du modèle est automatiquement mise à jour après 30 éléments.
 
     > [!div class="mx-imgBorder"]
-    > ![zone d’avis sur les éléments](../media/classifier-trainable-review-detail.png)
+    > ![zone d’avis sur les éléments.](../media/classifier-trainable-review-detail.png)
 
-19. Passer *en revue au moins* 200 éléments. Une fois que le score de précision s’est stabilisé, l’option **de** publication devient disponible et l’état du classificateur le dit `Ready to use` .
+19. Passer *en revue au moins* 200 éléments. Une fois que le score  de précision s’est stabilisé, l’option de publication devient disponible et l’état du classificateur le dit `Ready to use` .
 
     > [!div class="mx-imgBorder"]
-    > ![score de précision et prêt à être publié](../media/classifier-trainable-review-ready-to-publish.png)
+    > ![score de précision et prêt à être publié.](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. Publiez le classifieur.
 

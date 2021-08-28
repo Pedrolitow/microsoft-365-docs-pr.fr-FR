@@ -23,12 +23,12 @@ ms.custom:
 description: Découvrez Microsoft Defender pour Office 365 fichiers dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7a3333e228ffdb5b3bf38ed2b4ab119a1e973e9dd71c8db94e26f27d9cb44d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9ab3c10292aed5f6f39a8534680cb8e9c5d3551
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56854299"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572430"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
@@ -42,21 +42,21 @@ Coffre Les pièces jointes pour SharePoint, OneDrive et Microsoft Teams dans [Mi
 
 Coffre Les pièces jointes SharePoint, OneDrive et Microsoft Teams ne sont pas activées par défaut. Pour l’activer, voir [Activer Coffre pièces jointes](turn-on-mdo-for-spo-odb-and-teams.md)pour SharePoint, OneDrive et Microsoft Teams .
 
-## <a name="how-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-works"></a>Fonctionnement Coffre pièces jointes SharePoint, OneDrive et Microsoft Teams pièces jointes
+## <a name="how-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-works"></a>Fonctionnement Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams pièces jointes
 
 Lorsque Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams est activée et identifie un fichier comme malveillant, le fichier est verrouillé à l’aide de l’intégration directe avec les magasins de fichiers. L’image suivante illustre un exemple de fichier malveillant détecté dans une bibliothèque.
 
-![Fichiers dans OneDrive Entreprise avec un détecté comme malveillant](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![Fichiers dans OneDrive Entreprise avec un détecté comme malveillant.](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 Bien que le fichier bloqué soit toujours répertorié dans la bibliothèque de documents et dans les applications web, mobiles ou de bureau, les utilisateurs ne peuvent pas ouvrir, copier, déplacer ou partager le fichier. Toutefois, ils peuvent supprimer le fichier bloqué.
 
 Voici un exemple de ce à quoi ressemble un fichier bloqué sur un appareil mobile :
 
-![Suppression d’un fichier bloqué de l OneDrive Entreprise de l’OneDrive mobile](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+![Suppression d’un fichier bloqué de l OneDrive Entreprise’application OneDrive mobile.](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
 Par défaut, les personnes peuvent télécharger un fichier bloqué. Voici à quoi ressemble le téléchargement d’un fichier bloqué sur un appareil mobile :
 
-![Téléchargement d’un fichier bloqué dans OneDrive Entreprise](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+![Téléchargement d’un fichier bloqué dans OneDrive Entreprise.](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 SharePoint Les administrateurs en ligne peuvent empêcher les utilisateurs de télécharger des fichiers malveillants. Pour obtenir des instructions, voir Utiliser SharePoint Online PowerShell pour empêcher les utilisateurs de [télécharger des fichiers malveillants.](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)
 

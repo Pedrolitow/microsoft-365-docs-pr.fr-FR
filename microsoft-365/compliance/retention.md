@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 2adc733247ddfe9570b02c197e18b02bcf500921
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 9415b7aa8e258264095de41a7f820751d3794a13
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387043"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571986"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -166,7 +166,7 @@ Bien que l’objectif principal des étiquettes de rétention soit la conservati
   
 Par exemple, vous pouvez créer et appliquer une étiquette de rétention appelée « À vérifier », qui ne déclenche aucune action, puis utiliser cette étiquette pour retrouver plus tard le contenu étiqueté.
   
-![Paramètres d’étiquettes pour classer uniquement](../media/retention-label-retentionoff.png)
+![Paramètres d’étiquettes pour classer uniquement.](../media/retention-label-retentionoff.png)
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette de rétention comme condition dans une stratégie DLP
 
@@ -182,7 +182,7 @@ Lorsque vous publiez des étiquettes de rétention, celles-ci sont incluses dans
 
 2. Les stratégies d’étiquette de rétention définissent les emplacements où publier les étiquettes de rétention. Le même emplacement peut être inclus dans de multiples stratégies d’étiquette de rétention.
 
-![Comment les étiquettes de rétention peuvent être ajoutées à des stratégies d’étiquettes spécifiant des emplacements](../media/retention-labels-and-policies.png)
+![Comment les étiquettes de rétention peuvent être ajoutées à des stratégies d’étiquettes spécifiant des emplacements.](../media/retention-labels-and-policies.png)
 
 Vous pouvez également créer une ou plusieurs **stratégies à application automatique**, chacune avec une seule étiquette de rétention. Avec cette stratégie, une étiquette de rétention est appliquée automatiquement lorsque les conditions que vous spécifiez dans la stratégie sont réunies.
 
@@ -238,7 +238,7 @@ Lorsque les étiquettes de rétention sont affectées au contenu par les utilisa
 
 Lorsque vous créez une recherche de contenu, sélectionnez la condition **Étiquette de rétention**, puis entrez le nom complet ou une partie du nom de l’étiquette de rétention et utilisez un caractère générique. Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   
-![État des étiquettes de rétention](../media/retention-label-condition.png)
+![État des étiquettes de rétention.](../media/retention-label-condition.png)
 
 
 ## <a name="compare-capabilities-for-retention-policies-and-retention-labels"></a>Comparer les fonctionnalités des stratégies et des étiquettes de rétention
@@ -295,7 +295,7 @@ Utilisez ce flux pour comprendre les résultats de la rétention et de la suppre
 > [!IMPORTANT]
 > Si vous utilisez des étiquettes de rétention : avant d’utiliser les principes pour déterminer le résultat de plusieurs paramètres de rétention sur le même élément, assurez-vous de [ l’étiquette de rétention qui est appliquée](#only-one-retention-label-at-a-time).
 
-![Diagramme des principes de rétention](../media/principles-of-retention.png)
+![Diagramme des principes de rétention.](../media/principles-of-retention.png)
 
 Avant d’expliquer plus en détails chaque principe, il est important de comprendre la différence entre la période de rétention pour l’élément et la période de rétention spécifiée dans la stratégie de rétention ou l’étiquette de rétention. La raison est que, bien que la configuration par défaut a pour but de démarrer la période de rétention quand un élément est créé de manière à ce que la fin de la période de rétention de celui-ci soit fixée, les fichiers prennent également en charge la configuration pour le démarrage de la période de rétention à partir de la dernière date de modification du fichier. Avec cette configuration de remplacement, le démarrage de la période de rétention est réinitialisé lors de chaque modification du fichier, ce qui prolonge la fin de la période de rétention de l’élément. Les étiquettes de rétention prennent également en charge le démarrage de la période de rétention lorsqu’ils est étiqueté et au début d’un événement.
 

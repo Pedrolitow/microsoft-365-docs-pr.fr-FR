@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7863cc2f6ee11f5736fca8077d766a9c1b5ba39819623a3a91bb853bfe09257d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 173135d9cc1ecf45ad5c0485b2bab4bb39b88a5e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863606"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575995"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer au service Microsoft Defender pour point de terminaison
 
@@ -39,7 +39,7 @@ Découvrez les différentes phases du déploiement de Microsoft Defender pour En
 
 Le déploiement de Defender pour endpoint est un processus en trois phases :
 
-|[![phase de déploiement : préparer](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [Phase 1 : préparation](prepare-deployment.md)|[![phase de déploiement : configuration](images/phase-diagrams/setup.png)](production-deployment.md) <br> [Phase 2 : configuration](production-deployment.md)|![phase de déploiement : intégration](images/phase-diagrams/onboard.png) <br> Phase 3 : intégration|
+|[![phase de déploiement : préparer.](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [Phase 1 : préparation](prepare-deployment.md)|[![phase de déploiement : configuration](images/phase-diagrams/setup.png)](production-deployment.md) <br> [Phase 2 : configuration](production-deployment.md)|![phase de déploiement : intégration](images/phase-diagrams/onboard.png) <br> Phase 3 : intégration|
 |---|---|---|
 |||*Vous êtes là !*|
 
@@ -92,7 +92,7 @@ Les outils de l’exemple de déploiement sont les :
 - Configuration de la protection nouvelle génération
 - Configuration de la réduction de la surface d’attaque
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Intégration à l'aide de Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Intégration à l'aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 255aa361badf79e3ea4e4b0fe208ea22bb7a26db
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d0d452c0e9a5dbc3a9060c42921f180da7c42b90
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58249372"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575923"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>Pilote Microsoft Cloud App Security avec Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ Cet article est [l’étape 3 sur 3](eval-defender-mcas-overview.md) dans le pro
 Utilisez les étapes suivantes pour configurer et configurer le pilote pour Microsoft Cloud App Security.
 
 
-![Étapes de pilotage des Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-pilot-steps.png)
+![Étapes de pilotage des Microsoft Cloud App Security.](../../media/defender/m365-defender-mcas-pilot-steps.png)
 
 - Étape 1. [Créer le groupe pilote : étendue de votre déploiement pilote à certains groupes d’utilisateurs](#step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups)
 - [Étape 2. Configurer la protection — Contrôle d’application d’accès conditionnel](#step-2-configure-protection--conditional-access-app-control)

@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 49a9d668182a065f3b0a5168f14ed9c7472e00ac37615518c31a252d22191861
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 29a9e73ec4204b8083b22f427cf0271955f0ba2d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902790"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576199"
 ---
 # <a name="overview-of-management-and-apis"></a>Vue d’ensemble de la gestion et des API
 
@@ -55,7 +55,7 @@ La solution Microsoft Defender pour point de terminaison est conçue sur une pla
 
 Defender pour le point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Defender for Endpoint.
 
-![Image de l’API et de l’intégration disponibles dans Microsoft Defender pour le point de terminaison](images/mdatp-apis.png)
+![Image de l’API et de l’intégration disponibles dans Microsoft Defender pour le point de terminaison.](images/mdatp-apis.png)
 
 Les API Defender pour point de terminaison peuvent être regroupées en trois :
 
@@ -89,7 +89,7 @@ Pour plus d’informations, [voir Microsoft 365 Defender API de diffusion en con
 
 Lorsque vous activez l’intégration SIEM (Security Information and Event Management), cela vous permet d’obtenir des détections à partir de Centre de sécurité Microsoft Defender à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections. Cela active la section des détails d’accès au connecteur SIEM avec des valeurs pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD). Pour plus d’informations, voir [intégration SIEM.](enable-siem-integration.md)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Accéder aux API Microsoft Defender pour point de terminaison](apis-intro.md)
 - [API prise en charge](exposed-apis-list.md)

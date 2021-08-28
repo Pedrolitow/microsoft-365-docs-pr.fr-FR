@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3403e8282ae8d1cbcd46a7f8a09cb8d8a70488c08c3f44549694b2d695ddfd15
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 715e3eff39fc4575efdfc236876fdd7c8bc20245
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844258"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575947"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>Créer une application pour accéder à Microsoft 365 Defender sans utilisateur
 
@@ -60,9 +60,9 @@ Cet article explique comment :
 
 1. Connectez-vous [à Azure](https://portal.azure.com) en tant qu’utilisateur avec le **rôle Administrateur** général.
 
-2. Accédez à **Azure Active Directory**  >  **inscription de l’application Nouvelle**  >  **inscription.**
+2. Accédez à **Azure Active Directory**  >  **Inscription de l’application Nouvelle**  >  **inscription.**
 
-   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application](../../media/atp-azure-new-app2.png)
+   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](../../media/atp-azure-new-app2.png)
 
 3. Dans le formulaire, choisissez un nom pour votre application, puis sélectionnez **Enregistrer**.
 
@@ -71,11 +71,11 @@ Cet article explique comment :
    > [!TIP]
    > *La Protection Microsoft contre les* menaces est un ancien nom Microsoft 365 Defender et n’apparaîtra pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
 
-   ![Image de la sélection des autorisations d’API](../../media/apis-in-my-org-tab.PNG)
+   ![Image de la sélection des autorisations d’API.](../../media/apis-in-my-org-tab.PNG)
 
 5. Sélectionnez **les autorisations d’application.** Choisissez les autorisations pertinentes pour votre scénario (par exemple, **Incident.Read.All),** puis **sélectionnez Ajouter des autorisations.**
 
-   ![Image de l’accès à l’API et de la sélection d’API](../../media/request-api-permissions.PNG)
+   ![Image de l’accès à l’API et de la sélection d’API.](../../media/request-api-permissions.PNG)
 
     > [!NOTE]
     > Vous devez sélectionner les autorisations pertinentes pour votre scénario. *Lire tous les incidents* n’est qu’un exemple. Pour déterminer l’autorisation qui vous est nécessaire, consultez la section **Autorisations** de l’API que vous voulez appeler.
@@ -84,18 +84,18 @@ Cet article explique comment :
 
 6. Sélectionnez **Accorder le consentement de l’administrateur.** Chaque fois que vous ajoutez une autorisation, vous devez sélectionner Accorder le **consentement de l’administrateur** pour qu’elle prenne effet.
 
-    ![Image de l’octroi d’autorisations](../../media/grant-consent.PNG)
+    ![Image d’octroi d’autorisations.](../../media/grant-consent.PNG)
 
 7. Pour ajouter une secret à l’application, sélectionnez **Certificats & secrets,** ajoutez une description à la secret, puis sélectionnez **Ajouter**.
 
     > [!TIP]
     > Après avoir sélectionné **Ajouter,** **sélectionnez copier la valeur de secret générée.** Vous ne pourrez pas récupérer la valeur secrète après votre départ.
 
-    ![Image de la clé de création d’application](../../media/webapp-create-key2.png)
+    ![Image de la clé de création d’application.](../../media/webapp-create-key2.png)
 
 8. Enregistrez votre ID d’application et votre ID de client dans un endroit sûr. Ils sont répertoriés sous Vue **d’ensemble** sur la page de votre application.
 
-   ![Image de l’ID d’application créé](../../media/app-and-tenant-ids.png)
+   ![Image de l’ID d’application créé.](../../media/app-and-tenant-ids.png)
 
 9. Pour **les** partenaires Microsoft 365 Defender uniquement : suivez ces [instructions](./api-partner-access.md) pour l’accès des partenaires via les API Microsoft 365 Defender, définissez votre application comme multi-client, afin qu’elle puisse être disponible dans tous les clients une fois que vous avez reçu le consentement de l’administrateur. L’accès  des partenaires est requis pour les applications tierces, par exemple, si vous créez une application destinée à s’exécuter dans plusieurs clients. Il **n’est** pas nécessaire si vous créez un service que vous souhaitez exécuter uniquement dans votre client, par exemple une application pour votre propre utilisation qui interagit uniquement avec vos propres données. Pour définir votre application comme multi-locataire :
 
@@ -243,9 +243,9 @@ aadToken = jsonResponse["access_token"]
 
    Dans l’image suivante, vous pouvez voir un jeton décodé acquis à partir d’une application, avec `Incidents.Read.All` `Incidents.ReadWrite.All` , et des `AdvancedHunting.Read.All` autorisations :
 
-   ![Image de validation de jeton](../../media/webapp-decoded-token.png)
+   ![Image de validation de jeton.](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Utiliser le jeton pour accéder à l’API Microsoft 365 Defender
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Utiliser le jeton pour accéder à l’API Microsoft 365 Defender de connexion
 
 1. Choisissez l’API que vous souhaitez utiliser (incidents ou recherche avancée). Pour plus d’informations, [voir API Microsoft 365 Defender pris en charge.](api-supported.md)
 

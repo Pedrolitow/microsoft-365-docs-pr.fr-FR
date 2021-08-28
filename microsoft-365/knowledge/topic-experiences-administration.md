@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment modifier le nom du centre de rubriques dans Sujets Microsoft Viva.
-ms.openlocfilehash: ba172df38a42ac00267496e2126c9d01058bb45bc925bfa8f75b3e3e98111247
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 262ae46fadf8fc390a4ccf591aa97175ff63a68f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794669"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573066"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Modifier le nom du centre de rubriques dans Sujets Microsoft Viva
 
@@ -26,11 +26,11 @@ Vous pouvez modifier le nom de votre centre de rubriques dans le [Centre d’adm
 1. Dans la Centre d’administration Microsoft 365, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** cliquez sur **Expériences de rubrique.**
 
-    ![Connecter connaissances](../media/admin-org-knowledge-options-completed.png) 
+    ![Connecter personnes à connaître.](../media/admin-org-knowledge-options-completed.png) 
 
 3. Sélectionnez **l’onglet Centre des** rubriques. Consultez les sections suivantes pour plus d’informations sur chaque paramètre.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-center.png) 
 
 ##  <a name="update-your-topic-center-name"></a>Mettre à jour le nom de votre centre thématique
 
@@ -40,7 +40,7 @@ Pour modifier le nom du centre de rubriques
 2. Dans la page Modifier le  nom du centre **de** rubriques, dans la zone Nom du centre de rubriques, tapez le nouveau nom de votre centre de rubriques.
 3. Sélectionnez **Enregistrer**.
 
-    ![Modifier le nom du centre de rubriques](../media/manage-topic-center-name.png)  
+    ![Modifier le nom du centre de rubriques.](../media/manage-topic-center-name.png)  
 
 ## <a name="see-also"></a>Voir aussi
 

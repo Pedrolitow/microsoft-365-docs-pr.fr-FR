@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurez Azure AD Identity Protection et analysez les comptes actuels dans votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: 68b77803b4a2955efe58f742e27cb4fa6cfbb58c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 446462215069c0bcc72e36c7c62260de0694f600
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356311"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572670"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>Azure AD Identity Protection pour votre environnement de test Microsoft 365 entreprise
 
@@ -33,7 +33,7 @@ La configuration d’Azure AD Identity Protection dans votre Microsoft 365 envir
 - [Phase 1 : Créer votre environnement de test Microsoft 365 entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Phase 2 : Utiliser Azure AD Identity Protection](#phase-2-use-azure-ad-identity-protection)
 
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
@@ -55,7 +55,7 @@ Si vous souhaitez tester Azure AD Identity Protection dans une entreprise simul�
 4. Sous **Avertir,** sélectionnez **Les utilisateurs à risque détectés alertes**.
 5. Dans le **volet Utilisateurs à risque détectés,** sélectionnez **Moyenne**.
 6. Pour **les e-mails sont envoyés aux** utilisateurs suivants , sélectionnez **Inclus** et vérifiez que votre compte d’administrateur global figure dans la liste des membres sélectionnés.
-7. Sélectionnez **Enregistrer**.
+7. Cliquez sur **Enregistrer**.
 
 Sous **Protéger,** sélectionnez différentes polices pour voir comment les configurer. Si vous créez et activez une stratégie, assurez-vous qu’elle ne bloque pas l’accès pour tous les utilisateurs ou que vous ne pourrez peut-être pas vous y connecter. Pour éviter cela, excluez les comptes d’utilisateurs spécifiques, tels que les administrateurs globaux.
 
