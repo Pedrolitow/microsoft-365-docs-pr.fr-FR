@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61735abbce8445d4c3293085c320c9d253c745dcef66ace90fbfb8ba73ebe89b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d9980240f0c45eb708a668dfea028ce5259fcab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56854737"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576103"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -75,13 +75,13 @@ Les messages d'usurpation d'identité ont les conséquences négatives suivantes
 
   Le message suivant est un exemple de hameçonnage qui utilise l’expéditeur dont l'identité a été usurpée msoutlook94@service.outlook.com :
 
-  ![Message de hameçonnage usurpant le domaine service.outlook.com](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+  ![Message d’hameçonnage usurpant le domaine service.outlook.com.](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
   Ce message ne provient pas de service.outlook.com, mais l’intrus a usurpé le champ d’en-tête **De** afin de lui donner l’apparence souhaitée. Il s'agissait d'une tentative de tromper le destinataire pour qu'il clique sur le lien **Changez votre mot de passe** et dévoile ses informations d'identification.
 
   Le message suivant est un exemple de BEC qui utilise le domaine de courrier électronique usurpé contoso.com :
 
-  ![Message de hameçonnage – compromission de courrier professionnel](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+  ![Message d’hameçonnage: compromission du courrier professionnel](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
   Le message semble légitime, mais l’identité de l’expéditeur a été usurpée.
 
@@ -89,7 +89,7 @@ Les messages d'usurpation d'identité ont les conséquences négatives suivantes
 
   Le message suivant est un exemple de message de réinitialisation de mot de passe authentique provenant du compte Microsoft Sécurité :
 
-  ![Réinitialisation de mot de passe légitime de Microsoft](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+  ![Réinitialisation du mot de passe légitime de Microsoft](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
   Le message provenait bien de Microsoft, mais les utilisateurs ont été conditionnés pour se méfier. Comme il est difficile de faire la différence entre un vrai message de réinitialisation du mot de passe et un faux, les utilisateurs risquent d'ignorer le message, de le signaler comme un spam ou de signaler inutilement à Microsoft qu'il s'agit d'un hameçonnage.
 
@@ -97,7 +97,7 @@ Les messages d'usurpation d'identité ont les conséquences négatives suivantes
 
 Microsoft distingue deux types de messages usurpant une identité :
 
-- **Usurpation intra-organisationnelle** : également connue sous le nom d’usurpation d’identité _self-to-self_. Par exemple :
+- **Usurpation intra-organisationnelle** : également connue sous le nom d’usurpation d’identité _self-to-self_. Par exemple :
 
   - L’expéditeur et le destinataire figurent dans le même domaine :
     > De : chris@contoso.com <br> À : michelle@contoso.com
@@ -120,7 +120,7 @@ Microsoft distingue deux types de messages usurpant une identité :
 
   - SFTY est le niveau de sécurité du message. 9 indique un hameçonnage, .11 indique une usurpation intra-organisationnelle.
 
-- **Usurpation inter-domaines** : les domaines de l’expéditeur et du destinataire sont différents et n’ont aucune relation entre eux (également appelés domaines externes). Par exemple :
+- **Usurpation inter-domaines** : les domaines de l’expéditeur et du destinataire sont différents et n’ont aucune relation entre eux (également appelés domaines externes). Par exemple :
     > De : chris@contoso.com <br> À : michelle@tailspintoys.com
 
   Les messages qui échouent à l’[authentification composite](email-validation-and-authentication.md#composite-authentication) en raison d’une usurpation inter-domaines contiennent les valeurs d’en-têtes suivantes :
