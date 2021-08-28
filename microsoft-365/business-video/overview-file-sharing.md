@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble du partage de vos fichiers métiers.
-ms.openlocfilehash: a377735f077df81556621a06e2367929d966aaf45f36e9f4425309f5dabaae0e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d762620cf07cd9f1201bf173e6e6aa0c16e050eb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867182"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569668"
 ---
 # <a name="overview-of-sharing-business-files"></a>Vue d’ensemble du partage de fichiers métiers
 
 Vous devez partager des fichiers avec des clients, des clients, des partenaires, des fournisseurs et d’autres personnes de votre entreprise. Comment partager des fichiers afin que tout le monde puisse les trouver, les ouvrir et les modifier ?
 
-|![Partage sécurisé](../media/securely-share-file.png)<br/>[Partager un fichier avec une personne extérieure à votre entreprise](#share-a-file-with-someone-outside-of-your-company)|![Collaborer avec un client](../media/share-and-collab-with-partner.png) <br/>[Partager et collaborer avec un client ou un partenaire commercial](#share-and-collaborate-with-a-client-or-business-partner) | ![Partager au sein de votre organisation](../media/share-inside-your-org.png) <br/>[Partager au sein de votre entreprise](#share-inside-your-business) |
+|![Partage en toute sécurité.](../media/securely-share-file.png)<br/>[Partager un fichier avec une personne extérieure à votre entreprise](#share-a-file-with-someone-outside-of-your-company)|![Collaborer avec un client](../media/share-and-collab-with-partner.png) <br/>[Partager et collaborer avec un client ou un partenaire commercial](#share-and-collaborate-with-a-client-or-business-partner) | ![Partager au sein de votre organisation](../media/share-inside-your-org.png) <br/>[Partager au sein de votre entreprise](#share-inside-your-business) |
 |--|--|--|
 
 Téléchargez une infographie pour obtenir une vue d’ensemble rapide des méthodes de partage de vos fichiers métiers. 
@@ -47,7 +47,7 @@ En savoir plus sur le partage de [fichiers en dehors](securely-share-files-exter
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Partager et collaborer avec un client ou un partenaire commercial
 
-Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un lieu continu pour partager et collaborer. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires continuent de s’en sortir.
+Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un lieu continu pour partager et collaborer. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires restent au même niveau.
 
 1. Créez l’équipe.
 1. Charger vos fichiers.

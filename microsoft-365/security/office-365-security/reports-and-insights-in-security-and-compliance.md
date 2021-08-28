@@ -1,5 +1,5 @@
 ---
-title: Rapports intelligents, informations - Centre Microsoft 365 conformité et sécurité & de sécurité
+title: Rapports intelligents, informations - Centre Microsoft 365 conformité & sécurité
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -19,12 +19,12 @@ description: Découvrez les rapports intelligents et les informations disponible
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 360151fa68309d53f788c18637aa95d61374b62be4815669dc22a6325caa1283
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ef92717dc43e5af7a6c98d497405160fec45b7cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56800348"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569284"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
 
@@ -41,9 +41,9 @@ Si vous faites partie de l’équipe de sécurité Microsoft 365 pour les entrep
 
 Les fonctionnalités de surveillance disponibles dans le Centre de sécurité & conformité incluent des rapports intelligents et des informations qui permettent à vos administrateurs de conformité et de sécurité de se concentrer sur les problèmes prioritaires, tels que les attaques de sécurité ou l’augmentation des activités suspectes. Dans un tableau de bord, les rapports intelligents et les informations ressemblent à l’image suivante :
 
-![Tableau de bord Rapports dans le Centre de sécurité & conformité](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![Tableau de bord Rapports dans le Centre de sécurité & conformité.](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
-Outre la mise en évidence des problèmes, des rapports intelligents et des informations incluent des recommandations et des liens pour afficher et explorer des données et prendre des mesures rapides. Par exemple, si votre organisation a soudainement un nombre élevé de messages électroniques marqués comme courrier indésirable par les utilisateurs finaux, vous pouvez être invité à revoir vos stratégies anti-courrier indésirable pour vous assurer que le niveau de protection est en place.
+Outre la mise en évidence des problèmes, les rapports intelligents et les informations incluent des recommandations et des liens pour afficher et explorer des données et prendre des mesures rapides. Par exemple, si votre organisation a soudainement un nombre élevé de messages électroniques marqués comme courrier indésirable par les utilisateurs finaux, vous pouvez être invité à revoir vos stratégies anti-courrier indésirable pour vous assurer que le niveau de protection est en place.
 
 ## <a name="types-of-reports-in-the-security--compliance-center"></a>Types de rapports dans le Centre de sécurité & conformité
 
@@ -55,7 +55,7 @@ De nombreux rapports sont disponibles dans le Centre de sécurité & conformité
 
 |Type d’information|Comment y accéder|Où aller pour en savoir plus|
 |---|---|---|
-|**Rapports du Centre & conformité et sécurité** (tous) <p> Informations et recommandations les plus importantes, et liens vers les rapports de sécurité et de conformité &, y compris les rapports de protection contre la perte de données, les étiquettes, les rapports de sécurité du courrier électronique, les rapports Defender pour Office 365, et bien plus encore|Dans le Centre de sécurité & conformité, go to **Reports** \> **Dashboard**|[Rapports dans le Centre de conformité et sécurité](../../compliance/reports-in-security-and-compliance.md)|
+|**Rapports du Centre & conformité de sécurité** (tous) <p> Informations et recommandations les plus importantes, et liens vers les rapports de sécurité et de conformité &, y compris les rapports de protection contre la perte de données, les étiquettes, les rapports de sécurité du courrier électronique, les rapports Defender pour Office 365, et bien plus encore|Dans le Centre de sécurité & conformité, go to **Reports** \> **Dashboard**|[Rapports dans le Centre de conformité et sécurité](../../compliance/reports-in-security-and-compliance.md)|
 |**Protection contre la perte de données** <p> Détection grâce aux politiques de prévention des pertes de données, faux positifs et dérogations, et liens pour créer ou modifier des politiques.|Dans le Centre de sécurité & conformité, allez à Stratégie de protection contre la **perte de** \> **données**|[Afficher les rapports pour la protection contre la perte de données](../../compliance/view-the-dlp-reports.md)|
 |**Gouvernance des données** <p> Informations sur l’application des étiquettes, les étiquettes considérées comme des enregistrements, les tendances d’étiquette et bien plus encore|Dans le Centre de sécurité & conformité, allez au Tableau **de bord de gouvernance des** \> **informations**|[Afficher les rapports de gouvernance des données](../../compliance/view-the-data-governance-reports.md)|
 |**Tableau de bord de gestion des** menaces (également appelé tableau de bord de sécurité) <p> Détections de menaces, tendances des programmes malveillants, utilisateurs les plus ciblés, détails sur les messages électroniques envoyés et reçus, et bien plus encore|Dans le Centre de sécurité & conformité, allez au **Tableau de bord de gestion des** \> **vulnérabilités**|[Afficher des rapports pour Defender pour Office 365](view-reports-for-mdo.md)|
@@ -66,7 +66,7 @@ De nombreux rapports sont disponibles dans le Centre de sécurité & conformité
 |**Journal d’audit** <p> Informations sur les activités Microsoft 365, les utilisateurs, les fichiers ou les dossiers, etc.|Dans le Centre de sécurité & conformité, recherche dans le journal d’audit & **recherche** \> |[Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**Rapports de conformité** <p> Rapports FedRAMP, rapports sur la gouvernance, sur les risques et sur la conformité, rapports de gestion de la sécurité de l'information ISO et rapports d'audit et d'évaluation des contrôles de la société de services.|Dans le Centre de sécurité & conformité, allez aux rapports de **conformité de** \> **l’assurance service**|[Planifier la conformité des & sécurité dans Office 365](../../compliance/plan-for-security-and-compliance.md)|
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Portail Microsoft 365 Defender](../defender/overview-security-center.md)
 

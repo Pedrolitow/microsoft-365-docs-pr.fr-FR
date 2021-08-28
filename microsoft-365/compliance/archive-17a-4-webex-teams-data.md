@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur Cisco Webex DataParser 17a-4 pour importer et archiver des données Cisco Webex dans Microsoft 365.
-ms.openlocfilehash: 9ecae0c9794f68d8739ed5dc4ecbca8197e069667ce57329bd1ea0f02f68895b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9210b11f3c707bccff02ae806d75f1f2f957d7ce
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836077"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569176"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>Configurer un connecteur pour archiver des données Cisco Webex
 
@@ -29,13 +29,13 @@ Une fois les données Cisco Webex stockées dans les boîtes aux lettres utilisa
 
 La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur de données pour archiver des données Cisco Webex dans Microsoft 365.
 
-![Flux de travail d’archivage pour les données Webex Cisco de 17a-4](../media/WebexTeamsDataParserConnectorWorkflow.png)
+![Flux de travail d’archivage pour les données Webex Cisco de 17a-4.](../media/WebexTeamsDataParserConnectorWorkflow.png)
 
 1. Votre organisation travaille avec 17a-4 pour configurer Cisco Webex DataParser.
 
 2. Régulièrement, les éléments Cisco Webex sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
-3. Le connecteur Cisco Webex DataParser que vous créez dans le Centre de conformité Microsoft 365 se connecte à DataParser et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Cisco Webex DataParser que vous créez dans le Centre de conformité Microsoft 365 se connecte à DataParser et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Un sous-dossier du dossier Boîte de réception nommé **Cisco Webex DataParser** est créé dans les boîtes aux lettres utilisateur et les éléments Webex Cisco sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email.* Chaque élément Cisco Webex contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant.
 
@@ -43,11 +43,11 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Créez un compte DataParser pour les connecteurs Microsoft. Pour ce faire, contactez [17a-4 LLC.](https://www.17a-4.com/contact/) Vous devez vous inscrire à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- L’utilisateur qui crée le connecteur Cisco Webex DataParser à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- L’utilisateur qui crée le connecteur Cisco Webex DataParser à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 ## <a name="step-1-set-up-a-cisco-webex-dataparser-connector"></a>Étape 1 : Configurer un connecteur Cisco Webex DataParser
 
-La première étape consiste à accéder à la page Connecteurs de données dans le Centre de conformité Microsoft 365 et à créer un connecteur 17a-4 pour les données Cisco Webex.
+La première étape consiste à accéder à la page Connecteurs de données dans le Centre de conformité Microsoft 365 et à créer un connecteur 17a-4 pour les données Cisco Webex.
 
 1. Go to <https://compliance.microsoft.com> and then click Data **connectors**  >  **Cisco Webex DataParser**.
 
@@ -69,7 +69,7 @@ Le connecteur Cisco Webex DataParser masage automatiquement les utilisateurs à 
 
 ## <a name="step-4-monitor-the-cisco-webex-dataparser-connector"></a>Étape 4 : Surveiller le connecteur Cisco Webex DataParser
 
-Après avoir créé un connecteur Cisco Webex DataParser, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
+Après avoir créé un connecteur Cisco Webex DataParser, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
@@ -77,6 +77,6 @@ Après avoir créé un connecteur Cisco Webex DataParser, vous pouvez afficher l
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bec4ca87c3827c8b24fa7017c01b40a60fce80eecb636d6d91adf0ceb9b8ecf1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4176b718105643b59f23024c1a70cd8fe220eea9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897774"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568815"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>Présentation de la réponse à votre premier incident
 
@@ -52,7 +52,7 @@ Les incidents dans Microsoft 365 Defender sont les points de départ logiques po
 
 ## <a name="next-step"></a>Étape suivante
 
-[![Préparer votre organisation et votre client Microsoft 365 client](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+[![Préparez votre organisation et votre Microsoft 365 client.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
 Assurez-vous que votre organisation et Microsoft 365 client sont [prêts pour la gestion des incidents.](first-incident-prepare.md)
 
@@ -69,6 +69,6 @@ Exemples supplémentaires de réponses aux premiers incidents :
 - [Courriers hameçons](first-incident-path-phishing.md)
 - [Attaque de base d’identité](first-incident-path-identity.md)
 
-[Manuels de réponse aux incidents détaillés](/security/compass/incident-response-playbooks)
+[Manuels détaillés de réponse aux incidents](/security/compass/incident-response-playbooks)
 
 

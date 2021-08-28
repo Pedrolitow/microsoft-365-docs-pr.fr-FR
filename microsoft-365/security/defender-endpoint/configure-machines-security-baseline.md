@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0f2d14a6005ff067e0c46d7bc582199ec7d2e4fbf7112705e7acebd4891dbf5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 907925669176135944f2327c39ac86ed823a9fd9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894510"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568647"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Renforcer la conformité à la ligne de base de sécurité microsoft Defender pour les points de terminaison
 
@@ -33,7 +33,7 @@ ms.locfileid: "53894510"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Les lignes de base de sécurité garantissent que les fonctionnalités de sécurité sont configurées conformément aux conseils des experts en sécurité et des Windows administrateurs système. Lorsqu’elle est déployée, la ligne de base de sécurité defender pour point de terminaison définit les contrôles de sécurité Defender for Endpoint pour fournir une protection optimale.
+Les lignes de base de sécurité garantissent que les fonctionnalités de sécurité sont configurées conformément aux conseils des experts en sécurité et des Windows administrateurs système. Lorsqu’elle est déployée, la ligne de base de sécurité defender pour point de terminaison définit les contrôles de sécurité Defender pour les points de terminaison afin de fournir une protection optimale.
 
 Pour comprendre les lignes de base de sécurité et la façon dont elles sont affectées sur Intune à l’aide de profils de configuration, [lisez ce FAQ.](/intune/security-baselines#q--a)
 
@@ -58,14 +58,14 @@ Dans l’idéal, les appareils intégrés à Defender pour point de terminaison 
 
 La **carte de référence** sécurité sur la gestion de la [configuration](configure-machines.md) des appareils fournit une vue d’ensemble de la conformité sur Windows 10 appareils qui ont été affectés à la ligne de base de sécurité Defender for Endpoint.
 
-![Carte de référence de sécurité](images/secconmgmt_baseline_card.png)
+![Carte de référence de sécurité.](images/secconmgmt_baseline_card.png)
 
 *Carte montrant la conformité à la ligne de base de sécurité defender pour point de terminaison*
 
 L’un des types d’état suivants est attribué à chaque appareil :
 
 - **Correspond à la ligne de** base : les paramètres de l’appareil correspondent à tous les paramètres de la ligne de base.
-- **Ne correspond pas à la ligne** de base : au moins un paramètre d’appareil ne correspond pas à la ligne de base.
+- **Ne correspond pas à la ligne de** base : au moins un paramètre d’appareil ne correspond pas à la ligne de base.
 - **Mal configuré**: au moins un paramètre de référence n’est pas correctement configuré sur l’appareil et est en conflit, en erreur ou en attente.
 - **Non applicable**: au moins un paramètre de référence n’est pas applicable sur l’appareil.
 
@@ -85,22 +85,22 @@ La gestion de la configuration des appareils surveille la conformité de référ
 
 2. Créez un profil.
 
-   ![Vue d’ensemble de la ligne de base de sécurité microsoft Defender pour point de terminaison sur Intune](images/secconmgmt_baseline_intuneprofile1.png)<br>
+   ![Vue d’ensemble de la ligne de base de sécurité microsoft Defender pour point de terminaison sur Intune.](images/secconmgmt_baseline_intuneprofile1.png)<br>
    *Vue d’ensemble de la ligne de base de sécurité microsoft Defender pour point de terminaison sur Intune*
 
 3. Lors de la création du profil, vous pouvez examiner et ajuster des paramètres spécifiques sur la ligne de base.
 
-   ![Options de base de sécurité lors de la création du profil sur Intune](images/secconmgmt_baseline_intuneprofile2.png)<br>
+   ![Options de base de sécurité lors de la création du profil sur Intune.](images/secconmgmt_baseline_intuneprofile2.png)<br>
    *Options de base de sécurité lors de la création du profil sur Intune*
 
 4. Affectez le profil au groupe d’appareils approprié.
 
-   ![Profils de base de sécurité sur Intune](images/secconmgmt_baseline_intuneprofile3.png)<br>
+   ![Profils de base de sécurité sur Intune.](images/secconmgmt_baseline_intuneprofile3.png)<br>
    *Affectation du profil de base de sécurité sur Intune*
 
 5. Créez le profil pour l’enregistrer et déployez-le sur le groupe d’appareils affecté.
 
-   ![Affectation de la ligne de base de sécurité sur Intune](images/secconmgmt_baseline_intuneprofile4.png)<br>
+   ![Affectation de la ligne de base de sécurité sur Intune.](images/secconmgmt_baseline_intuneprofile4.png)<br>
    *Création du profil de base de sécurité sur Intune*
 
 > [!TIP]
@@ -108,7 +108,7 @@ La gestion de la configuration des appareils surveille la conformité de référ
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vérifier que vos appareils sont correctement configurés](configure-machines.md)
 - [Obtenir des appareils intégrés à Microsoft Defender pour le point de terminaison](configure-machines-onboarding.md)

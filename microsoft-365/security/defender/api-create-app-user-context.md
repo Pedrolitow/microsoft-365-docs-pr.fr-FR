@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4c2b33a319b98215241f13f80adc8e2e1cc849a02c6044b939465adead69e683
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f80c0edeeb0d05287dc43aa9e3dea906504ac4e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888978"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568119"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Créer une application pour accéder Microsoft 365 Defender API au nom d’un utilisateur
 
@@ -68,11 +68,11 @@ Cet article explique comment :
 
 2. Accédez à **Azure Active Directory**  >  **inscription de l’application Nouvelle**  >  **inscription.**
 
-   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application](../../media/atp-azure-new-app2.png)
+   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](../../media/atp-azure-new-app2.png)
 
 3. Dans le formulaire, choisissez un nom pour votre application et entrez les informations suivantes pour l’URI de redirection, puis sélectionnez **Enregistrer**.
 
-   ![Image de la fenêtre Créer une application](../../media/nativeapp-create2.PNG)
+   ![Image de la fenêtre Créer une application.](../../media/nativeapp-create2.PNG)
 
    - **Type d’application :** Client public
    - **URI de redirection :**https://portal.azure.com
@@ -82,11 +82,11 @@ Cet article explique comment :
    > [!TIP]
    > *La Protection Microsoft contre les* menaces est un ancien nom Microsoft 365 Defender et n’apparaîtra pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
 
-   ![Image de la sélection des autorisations d’API](../../media/apis-in-my-org-tab.PNG)
+   ![Image de la sélection des autorisations d’API.](../../media/apis-in-my-org-tab.PNG)
 
    - Choisissez **Autorisations déléguées.** Choisissez les autorisations pertinentes pour votre scénario (par exemple **Incident.Read),** puis **sélectionnez Ajouter des autorisations.**
 
-   ![Image de l’accès à l’API et de la sélection d’API](../../media/request-api-permissions-delegated.PNG)
+   ![Image de l’accès à l’API et de la sélection d’API.](../../media/request-api-permissions-delegated.PNG)
 
     > [!NOTE]
     > Vous devez sélectionner les autorisations pertinentes pour votre scénario. *Lire tous les incidents* n’est qu’un exemple. Pour déterminer l’autorisation qui vous est nécessaire, consultez la section **Autorisations** de l’API que vous voulez appeler.
@@ -95,11 +95,11 @@ Cet article explique comment :
 
 5. Sélectionnez **Accorder le consentement de l’administrateur.** Chaque fois que vous ajoutez une autorisation, vous devez sélectionner Accorder le **consentement de l’administrateur** pour qu’elle prenne effet.
 
-   ![Image de l’octroi d’autorisations](../../media/grant-consent-delegated.PNG)
+   ![Image d’octroi d’autorisations.](../../media/grant-consent-delegated.PNG)
 
 6. Enregistrez votre ID d’application et votre ID de client dans un endroit sûr. Ils sont répertoriés sous Vue **d’ensemble** sur la page de votre application.
 
-   ![Image de l’ID d’application créé](../../media/app-and-tenant-ids.png)
+   ![Image de l’ID d’application créé.](../../media/app-and-tenant-ids.png)
 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
@@ -130,12 +130,12 @@ $response.AccessToken
 
 Dans l’image suivante, vous pouvez voir un jeton décodé acquis à partir d’une application, avec ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` , et des ```AdvancedHunting.Read.All``` autorisations :
 
-![Image de validation de jeton](../../media/webapp-decoded-token.png)
+![Image de validation de jeton.](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Utiliser le jeton pour accéder à l’API Microsoft 365 Defender de connexion
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Utiliser le jeton pour accéder à l’API Microsoft 365 Defender
 
 1. Choisissez l’API que vous souhaitez utiliser (incidents ou recherche avancée). Pour plus d’informations, [voir API Microsoft 365 Defender pris en charge.](api-supported.md)
-2. Dans la requête HTTP que vous êtes sur le point d’envoyer, définissez l’en-tête d’autorisation sur , le porteur étant le schéma d’autorisation et le jeton comme jeton `"Bearer" <token>` validé.  
+2. Dans la requête http que vous êtes sur le point d’envoyer, définissez l’en-tête d’autorisation sur , le porteur étant le schéma d’autorisation et le jeton comme jeton `"Bearer" <token>` validé.  
 3. Le jeton expire dans un délai d’une heure. Vous pouvez envoyer plusieurs demandes pendant cette période avec le même jeton.
 
 L’exemple suivant montre comment envoyer une demande pour obtenir une liste d’incidents à l’aide **de C#**.

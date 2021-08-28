@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs à l’aide de balises utilisateur dans Microsoft Defender Office 365 Plan 2. Le filtrage des balises est disponible pour les alertes, les rapports et les enquêtes dans Microsoft Defender Office 365 pour identifier rapidement les utilisateurs marqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9f3a3f82b510d0910858784bedae3f1be724efd099398e3b1dcbfe57978e3f8b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d224718502725e760c6a844f3bfd289bf3dd179c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883922"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568047"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -46,6 +46,7 @@ Après avoir appliqué des balises système ou des balises personnalisées aux u
 - [Page de l’entité d’e-mail](mdo-email-entity-page.md#other-innovations)
 - [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
 - [Vues de campagne](campaigns.md)
+- [Soumissions d’administrateurs et d’utilisateurs](admin-submission.md)
 - Pour les comptes prioritaires, [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) vous pouvez utiliser le rapport Problèmes de messagerie pour les comptes prioritaires dans le Centre d’administration Exchange (EAC).
 
 Cet article explique comment configurer des balises utilisateur dans le portail Microsoft 365 Defender utilisateur. Il n’existe aucune cmdlet dans Microsoft 365 Defender portail pour gérer les balises utilisateur.
@@ -57,7 +58,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 - Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com/>. Pour aller directement à la page **des balises utilisateur,** ouvrez <https://security.microsoft.com/securitysettings/userTags> .
 
 - Des autorisations doivent vous être attribuées dans le portail Microsoft 365 Defender avant de pouvoir suivre les procédures de cet article :
-  - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité.
+  - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
   - Pour ajouter et supprimer des membres de balises utilisateur existantes, vous devez  être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Opérateur de sécurité
   - Pour accéder en lecture seule aux balises utilisateur,  vous devez être membre des groupes de rôles Lecteur global ou **Lecteur** de sécurité.
 
@@ -77,7 +78,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 1. Dans le portail Microsoft 365 Defender, go to **Paramètres** \> **Email & collaboration** User \> **tags**.
 
-2. Dans la page **Balises utilisateur,** cliquez ![ sur Créer une balise icône Créer une ](../../media/m365-cc-sc-create-icon.png) **balise.**
+2. Dans la page **Balises utilisateur,** cliquez sur ![ Créer une icône de balise.](../../media/m365-cc-sc-create-icon.png) **Créer une balise**.
 
 3. **L’Assistant Créer** une balise s’ouvre dans un nouveau volant. Dans la page **Définir la balise,** configurez les paramètres suivants :
    - **Nom**: entrez un nom unique et descriptif pour la balise. Il s’agit de la valeur que vous verrez et utiliserez. Notez que vous ne pouvez pas renommer une balise après l’avoir créé.
@@ -86,16 +87,16 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 4. Dans la page **Affecter des membres,** faites l’une des étapes suivantes :
-   - Cliquez sur ![ Ajouter des membres icône Ajouter des ](../../media/m365-cc-sc-create-icon.png) **membres.** Dans le volant qui s’affiche, faites l’une des étapes suivantes pour ajouter des utilisateurs individuels ou des groupes :
+   - Cliquez sur ![ Icône Ajouter des membres.](../../media/m365-cc-sc-create-icon.png) **Ajouter des membres**. Dans le volant qui s’affiche, faites l’une des étapes suivantes pour ajouter des utilisateurs individuels ou des groupes :
      - Cliquez dans la zone et faites défiler la liste pour sélectionner un utilisateur ou un groupe.
      - Cliquez dans la zone et commencez à taper pour filtrer la liste et sélectionner un utilisateur ou un groupe.
      - Pour ajouter des valeurs supplémentaires, cliquez dans une zone vide dans la zone.
-     - Pour supprimer des entrées individuelles, cliquez sur ![Icône Supprimer l’entrée](../../media/m365-cc-sc-remove-selection-icon.png) à côté de l’entrée dans la zone.
-     - Pour supprimer toutes les entrées, cliquez sur Icône Supprimer l’entrée dans l’élément Utilisateurs nn et groupes nn sélectionnés ![ ](../../media/m365-cc-sc-remove-selection-icon.png) sous la zone. 
+     - Pour supprimer des entrées individuelles, cliquez sur ![Supprimer l’icône d’entrée.](../../media/m365-cc-sc-remove-selection-icon.png) à côté de l’entrée dans la zone.
+     - Pour supprimer toutes les entrées, cliquez sur ![ Icône Supprimer l’entrée.](../../media/m365-cc-sc-remove-selection-icon.png) sur **l’élément Utilisateurs et** groupes nn sélectionnés sous la zone.
 
      Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
-     De retour sur la page **Affecter** des membres, vous pouvez également supprimer des entrées en cliquant sur l’icône ![ Supprimer en côté de ](../../media/m365-cc-sc-delete-icon.png) l’entrée.
+     De retour sur la page **Affecter des** membres, vous pouvez également supprimer des entrées en cliquant sur ![ l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) à côté de l’entrée.
 
    - Cliquez **sur Importer** pour sélectionner un fichier texte qui contient les adresses de messagerie des utilisateurs ou des groupes. Assurez-vous que le fichier texte contient une entrée par ligne.
 
@@ -122,11 +123,11 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 1. Dans le portail Microsoft 365 Defender, go to **Paramètres** \> **Email & collaboration** User \> **tags**.
 
-2. Dans la page **Balises utilisateur,** sélectionnez la balise utilisateur dans la liste, puis cliquez sur Modifier la balise modifier l’icône ![ de balise ](../../media/m365-cc-sc-edit-icon.png) **.**
+2. Dans la page **Balises utilisateur,** sélectionnez la balise utilisateur dans la liste, puis cliquez sur Modifier ![ l’icône de balise.](../../media/m365-cc-sc-edit-icon.png) **Modifier la balise**.
 
 3. Dans le volet d’informations qui s’affiche, le même Assistant et les mêmes paramètres sont disponibles comme décrit dans la section Utiliser le portail [Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-user-tags) pour créer des balises utilisateur plus tôt dans cet article.
 
-   **Remarques** :
+   **Remarques** :
 
    - La **page Définir la** balise n’est pas disponible pour la balise système de compte priorité intégrée, vous ne pouvez donc pas renommer cette balise ou modifier la description. 
    - Vous ne pouvez pas renommer une balise personnalisée, mais vous pouvez modifier la description.
@@ -138,6 +139,6 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 1. Dans le portail Microsoft 365 Defender, go to **Paramètres** \> **Email & collaboration** User \> **tags**.
 
-2. Dans la page **Balises utilisateur,** sélectionnez la balise utilisateur dans la liste, puis cliquez sur Supprimer la balise Supprimer l’icône ![ de ](../../media/m365-cc-sc-delete-icon.png) **balise**.
+2. Dans la page **Balises utilisateur,** sélectionnez la balise utilisateur dans la liste, puis cliquez sur Supprimer ![ l’icône de balise.](../../media/m365-cc-sc-delete-icon.png) **Supprimer une balise**.
 
 3. Lisez l’avertissement dans la boîte de dialogue de confirmation qui s’affiche, puis cliquez sur **Oui, supprimer.**

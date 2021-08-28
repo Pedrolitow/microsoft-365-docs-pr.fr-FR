@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données à partir du système de mauvaise gestion physique de leur organisation Microsoft 365. Cela vous permet d’utiliser ces données dans les stratégies de gestion des risques internes pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques qui peuvent indiquer une menace interne possible pour votre organisation.
-ms.openlocfilehash: 800614ef38e065027238d32bf877a059e2022378a1a86b2f33c6f11f3827de2a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae513d01917c0fe4148d265865a77775a5ff2555
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895430"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567927"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurer un connecteur pour importer des données de mauvaise qualité physiques (aperçu)
 
-Vous pouvez configurer un connecteur de données dans l’Centre de conformité Microsoft 365 pour importer des données de mauvaise qualité physiques, telles que les événements d’accès physique bruts de l’employé ou les alarmes d’accès physique générées par le système de badging de votre organisation. Une entrée d’un bâtiment ou d’une entrée de salle de serveur ou de centre de données est un exemple de points d’accès physique. Les données de mauvais traitement physique peuvent être utilisées par la [solution](insider-risk-management.md) de gestion des risques internes Microsoft 365 pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation.
+Vous pouvez configurer un connecteur de données dans l’Centre de conformité Microsoft 365 pour importer des données de mauvaise qualité physiques, telles que les événements d’accès physique bruts de l’employé ou les alarmes d’accès physique générées par le système de badging de votre organisation. Une entrée d’un bâtiment ou d’une entrée de salle de serveur ou de centre de données est un exemple de points d’accès physique. Les données de mauvais traitement physique peuvent être utilisées par la [solution](insider-risk-management.md) de gestion des risques internes Microsoft 365 pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation.
 
 La configuration d’un connecteur de badging physique comprend les tâches suivantes :
 
@@ -31,11 +31,11 @@ La configuration d’un connecteur de badging physique comprend les tâches suiv
 
 - Création de la charge utile JSON avec un schéma défini par un connecteur de données de badging physique.
 
-- Création d’un connecteur de données de badging physique dans le Centre de conformité Microsoft 365.
+- Création d’un connecteur de données de badging physique dans le Centre de conformité Microsoft 365.
 
 - Exécution d’un script pour pousser les données de badging physique au point de terminaison de l’API.
 
-- Éventuellement, planifier l’exécuter automatiquement pour importer les données de mauvaise qualité physiques.
+- Éventuellement, planifier l’exécuter automatiquement pour importer des données de mauvaise qualité physiques.
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
@@ -132,7 +132,7 @@ Vous pouvez également télécharger la définition de schéma suivante pour le 
 
 ## <a name="step-3-create-the-physical-badging-connector"></a>Étape 3 : Créer le connecteur de badging physique
 
-L’étape suivante consiste à créer un connecteur de badging physique dans le Centre de conformité Microsoft 365. Après avoir exécuté le script à l’étape 4, le fichier JSON que vous avez créé à l’étape 3 est traitée et poussée vers le point de terminaison de l’API que vous avez configuré à l’étape 1. Dans cette étape, assurez-vous de copier le JobId généré lorsque vous créez le connecteur. Vous utiliserez JobId lorsque vous exécuterez le script.
+L’étape suivante consiste à créer un connecteur de badging physique dans le Centre de conformité Microsoft 365. Après avoir exécuté le script à l’étape 4, le fichier JSON que vous avez créé à l’étape 3 est traitée et poussée vers le point de terminaison de l’API que vous avez configuré à l’étape 1. Dans cette étape, assurez-vous de copier le JobId généré lorsque vous créez le connecteur. Vous utiliserez JobId lorsque vous exécuterez le script.
 
 1. Go to <https://compliance.microsoft.com> and then click Data **connectors** in the left nav.
 
@@ -150,21 +150,21 @@ L’étape suivante consiste à créer un connecteur de badging physique dans le
 
 5. Dans la page **Révision,** examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
-6. Une page d’état confirme que le connecteur a été créé. Cette page contient également l’ID de travail. Vous pouvez copier l’ID de travail à partir de cette page ou de la page volante du connecteur. Vous avez besoin de cet ID de travail lors de l’exécution du script.
+6. Une page d’état confirme que le connecteur a été créé. Cette page contient également l’ID de travail. Vous pouvez copier l’ID de travail à partir de cette page ou de la page de volant du connecteur. Vous avez besoin de cet ID de travail lors de l’exécution du script.
 
    La page d’état contient également un lien vers le script. Reportez-vous à ce script pour comprendre comment publier le fichier JSON sur le point de terminaison de l’API.
 
 7. Cliquez sur **Terminé**.
 
-   Le nouveau connecteur s’affiche dans la liste sous l’onglet **Connecteurs.**
+   Le nouveau connecteur s’affiche dans la liste sous **l’onglet Connecteurs.**
 
 8. Cliquez sur le connecteur de badging physique que vous avez créé pour afficher la page volante, qui contient des propriétés et d’autres informations sur le connecteur.
 
 ## <a name="step-4-run-the-script-to-post-your-json-file-containing-physical-badging-data"></a>Étape 4 : Exécutez le script pour PUBLIER votre fichier JSON contenant des données de mauvaise gestion physiques
 
-L’étape suivante de la configuration d’un connecteur de mauvaise gestion physique consiste à exécuter un script qui placera les données de mauvaise qualité physiques dans le fichier JSON (que vous avez créé à l’étape 2) vers le point de terminaison d’API que vous avez créé à l’étape 1. Nous fournissons un exemple de script pour votre référence et vous pouvez choisir de l’utiliser ou de créer votre propre script pour publier le fichier JSON sur le point de terminaison de l’API.
+L’étape suivante de la configuration d’un connecteur de mauvaise gestion physique consiste à exécuter un script qui va pousser les données de mauvaise gestion physiques dans le fichier JSON (que vous avez créé à l’étape 2) au point de terminaison de l’API que vous avez créé à l’étape 1. Nous fournissons un exemple de script pour votre référence et vous pouvez choisir de l’utiliser ou de créer votre propre script pour publier le fichier JSON sur le point de terminaison de l’API.
 
-Après avoir exécuté le script, le fichier JSON contenant les données de mauvaise gestion physiques est dirigé vers votre organisation Microsoft 365 où il est accessible par la solution de gestion des risques internes. Nous vous recommandons de publier quotidiennement des données de mauvaise qualité physiques. Pour ce faire, vous pouvez automatiser le processus de création du fichier JSON tous les jours à partir de votre système de mauvaise gestion physique, puis planifier le script pour la diffusion des données.
+Après avoir exécuté le script, le fichier JSON contenant les données de mauvaise gestion physiques est dirigé vers votre organisation Microsoft 365 où il est accessible par la solution de gestion des risques internes. Nous vous recommandons de publier quotidiennement des données de mauvaise qualité physique. Pour ce faire, vous pouvez automatiser le processus de création du fichier JSON tous les jours à partir de votre système de mauvaise gestion physique, puis planifier le script pour la diffusion des données.
 
 > [!NOTE]
 > Le nombre maximal d’enregistrements dans le fichier JSON qui peuvent être traitées par l’API est de 50 000.
@@ -189,7 +189,7 @@ Après avoir exécuté le script, le fichier JSON contenant les données de mauv
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations obtenues lors des étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   |Parameter|Description|
+   |Paramètre|Description|
    |---|---|
    |tenantId|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir le tenantId de votre organisation dans le panneau **Vue** d’ensemble du Centre d’administration Azure AD. Il est utilisé pour identifier votre organisation.|
    |appId|Il s’agit de l’ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à Microsoft 365 organisation.|
@@ -204,26 +204,26 @@ Après avoir exécuté le script, le fichier JSON contenant les données de mauv
    .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   Si le téléchargement réussit, le script affiche **l’Télécharger message** Réussite.
+   Si le chargement réussit, le script affiche le message **Télécharger** réussite.
 
    Si vous avez plusieurs fichiers JSON, vous devez exécuter le script pour chaque fichier.
 
 > [!NOTE]
-> Vous pouvez également choisir de pousser les données de badging physique au point de terminaison de l’API par d’autres méthodes que l’exécution du script précédent. Par exemple, voici un exemple d’utilisation de Postman pour pousser vos données vers le point de terminaison de l’API.
+> Vous pouvez également choisir de pousser les données de mauvaise gestion physique au point de terminaison de l’API par d’autres méthodes que l’exécution du script précédent. Par exemple, voici un exemple d’utilisation de Postman pour pousser vos données vers le point de terminaison de l’API.
 
 ## <a name="step-5-monitor-the-physical-badging-connector"></a>Étape 5 : Surveiller le connecteur de badging physique
 
-Une fois que vous avez créé le connecteur de badging physique et envoyé vos données de mauvais traitement physiques, vous pouvez afficher le connecteur et l’état de chargement dans le Centre de conformité Microsoft 365. Si vous programmez l’exécuter automatiquement sur une base régulière, vous pouvez également afficher l’état actuel après la dernière fois que le script a été exécuté.
+Une fois que vous avez créé le connecteur de badging physique et envoyé vos données de mauvaise gestion physiques, vous pouvez afficher le connecteur et l’état de chargement dans le Centre de conformité Microsoft 365. Si vous programmez l’exécuter automatiquement sur une base régulière, vous pouvez également afficher l’état actuel après la dernière fois que le script a été exécuté.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
 2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur de badging physique pour afficher la page de présentation. Cette page contient les propriétés et les informations sur le connecteur.
 
-   ![Page de volant d’état pour le connecteur de badging physique](..\media\PhysicalBadgingStatusFlyout.png)
+   ![Page de volant d’état pour le connecteur de badging physique.](..\media\PhysicalBadgingStatusFlyout.png)
 
 3. Sous **Dernière importation,** cliquez sur le lien **du journal** de téléchargement pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et télécharge les données du fichier CSV dans le cloud Microsoft.
 
-   ![Le fichier journal du connecteur de badging physique affiche les lignes de numéro à partir du fichier JSON qui ont été téléchargées](..\media\PhysicalBadgingConnectorLogFile.png)
+   ![Le fichier journal du connecteur de badging physique affiche les lignes de numéro à partir du fichier JSON qui ont été téléchargées.](..\media\PhysicalBadgingConnectorLogFile.png)
 
    Le **champ RecordsSaved** indique le nombre de lignes dans le fichier CSV téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des champs **RecordsSaved** est 4, si le script a correctement chargé toutes les lignes du fichier CSV.
 
@@ -231,7 +231,7 @@ Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécha
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>(Facultatif) Étape 6 : Planifier l’exécuter automatiquement
 
-Pour vous assurer que les dernières données de mauvaise gestion physique de votre organisation sont disponibles pour des outils tels que la solution de gestion des risques internes, nous vous recommandons de planifier le script pour qu’il s’exécute automatiquement de manière récurrente, par exemple une fois par jour. Pour ce faire, vous devez également mettre à jour les données de mauvaise gestion physiques dans le fichier JSON selon une planification similaire (si ce n’est pas la même) afin qu’elle contienne les dernières informations sur les employés qui quittent votre organisation. L’objectif est de télécharger les données de mauvaise gestion physiques les plus récentes afin que le connecteur de mauvaise gestion physique puisse les mettre à la disposition de la solution de gestion des risques internes.
+Pour vous assurer que les dernières données de mauvaise gestion physique de votre organisation sont disponibles pour des outils tels que la solution de gestion des risques internes, nous vous recommandons de planifier le script pour qu’il s’exécute automatiquement de manière récurrente, par exemple une fois par jour. Pour ce faire, vous devez également mettre à jour les données de mauvaise gestion physiques dans le fichier JSON selon une planification similaire (si ce n’est pas la même) afin qu’elle contienne les dernières informations sur les employés qui quittent votre organisation. L’objectif est de télécharger les données de mauvaise gestion physiques les plus récentes afin que le connecteur de mauvaise gestion physique puisse les rendre disponibles pour la solution de gestion des risques internes.
 
 Vous pouvez utiliser l’application Planification des tâches dans Windows pour exécuter automatiquement le script tous les jours.
 
@@ -247,19 +247,19 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
    1. Déterminez s’il faut exécuter le script uniquement lorsque vous êtes connecté à l’ordinateur ou l’exécuter lorsque vous êtes connecté ou non.
 
-   2. Assurez-vous que la case à cocher Exécuter avec **les privilèges** les plus élevés est sélectionnée.
+   2. Assurez-vous que la **case à cocher** Exécuter avec les privilèges les plus élevés est cocher.
 
 6. Sélectionnez **l’onglet Déclencheurs,** cliquez **sur Nouveau,** puis faites les choses suivantes :
 
    1. Sous **Paramètres**, sélectionnez l’option  Tous les jours, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
 
-   2. Sous **Paramètres avancés,** assurez-vous que **la case à** cocher Activée est activée.
+   2. Sous **Paramètres avancés,** vérifiez que la **case à** cocher Activée est activée.
 
    3. Cliquez sur **OK**.
 
 7. Sélectionnez **l’onglet Actions,** cliquez **sur Nouveau,** puis faites les actions suivantes :
 
-   ![Paramètres d’action pour créer une tâche programmée pour le script du connecteur de badging physique](..\media\SchedulePhysicalBadgingScript1.png)
+   ![Paramètres d’action pour créer une tâche programmée pour le script de connecteur de mauvaises actions physique.](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. Dans la **liste de** listes d’actions, assurez-vous que démarrer **un programme** est sélectionné.
 
@@ -275,7 +275,7 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
    La nouvelle tâche s’affiche dans la bibliothèque du Programmeur de tâches.
 
-   ![La nouvelle tâche s’affiche dans la bibliothèque du Programmeur des tâches](..\media\SchedulePhysicalBadgingScript2.png)
+   ![La nouvelle tâche s’affiche dans la bibliothèque du Programmeur de tâches.](..\media\SchedulePhysicalBadgingScript2.png)
 
 La dernière fois que le script a été exécuté et la prochaine fois qu’il est programmé pour s’exécuter, s’affiche. Vous pouvez double-cliquer sur la tâche pour la modifier.
 

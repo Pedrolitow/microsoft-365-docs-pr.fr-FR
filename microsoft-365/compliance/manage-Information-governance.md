@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implémentez les fonctionnalités de gouvernance des informations de Microsoft pour gérer vos données en matière de conformité ou d’obligations réglementaires.
-ms.openlocfilehash: 75407c8633698d59cf571edcee7e5ed581729bc8a218f5bc45decfe3ac66d307
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7bbeefc07da1f620f8b22484ad399f87bb45f74e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801445"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569776"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gouvernance des informations dans Microsoft 365
 

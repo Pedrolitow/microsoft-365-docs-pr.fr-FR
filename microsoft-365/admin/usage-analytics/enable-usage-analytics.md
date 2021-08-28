@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application Microsoft 365 d’analyse de l’utilisation dans Power BI.
-ms.openlocfilehash: 4d569c40283eb7f88c734de91821e1fe7a7793ab
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 6c2dfef0d925df92316d407e5a425a7ddfa03952
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394635"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569680"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
@@ -74,7 +74,7 @@ Pour démarrer l’application de modèle, vous devez être un administrateur **
 
 3. Dans **l’onglet** Applications, tapez Microsoft 365 dans la zone de recherche, puis sélectionnez Microsoft 365 **l’analyse de l’utilisation.** \> 
 
-    [![Sélectionnez Obtenir maintenant](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![Sélectionnez Obtenir maintenant.](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
 
 4. Une fois l’application installée. Sélectionnez la vignette pour l’ouvrir.
 
@@ -82,25 +82,25 @@ Pour démarrer l’application de modèle, vous devez être un administrateur **
 
 6. Choisissez **Connecter**, sur l’écran d’analyse de l’utilisation Connecter à **Microsoft 365,** puis tapez l’ID de locataire (sans tirets) que vous avez copié à l’étape (1), puis sélectionnez Suivant **.**
 
-7. Dans l’écran suivant, sélectionnez **OAuth2 en** tant que méthode **d’authentification,** \> **connectez-vous.** Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échoue.
+7. Dans l’écran suivant, sélectionnez **OAuth2 en** tant que méthode **d’authentification,** \> **connectez-vous.** Si vous choisissez une autre méthode d’authentification, la connexion au modèle d’application échoue.
 
-    ![Choisir un compte Microsoft comme méthode d’authentification](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
+    ![Choisissez un compte Microsoft comme méthode d’authentification.](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
-8. Une fois le modèle d’application ins Microsoft 365 le tableau de bord d’analyse de l’utilisation sera disponible Power BI sur le web. Le chargement initial du tableau de bord prendra entre 2 et 30 minutes.
+8. Une fois l’application de modèle ins Microsoft 365 le tableau de bord d’analyse de l’utilisation sera disponible Power BI sur le web. Le chargement initial du tableau de bord prendra entre 2 et 30 minutes.
 
-Les agrégats au niveau du client seront disponibles dans tous les rapports après l’avoir choisi. Les détails au niveau de l’utilisateur ne seront disponibles qu’autour du 5 du mois calendaire suivant **après l’avoir choisi.** Cela aura un impact sur [](navigate-and-utilize-reports.md) tous les rapports sous Activité de l’utilisateur (voir Naviguer et utiliser les rapports dans Microsoft 365'analyse de l’utilisation pour obtenir des conseils sur la façon d’afficher et d’utiliser ces rapports).
+Les agrégats au niveau du client seront disponibles dans tous les rapports après l’avoir choisi. Les détails au niveau de l’utilisateur ne seront disponibles qu’autour du 5 du mois calendaire suivant **après l’avoir choisi.** Cela aura un impact sur [](navigate-and-utilize-reports.md) tous les rapports sous Activité de l’utilisateur (voir Parcourir et utiliser les rapports dans Microsoft 365'analyse de l’utilisation pour obtenir des conseils sur la façon d’afficher et d’utiliser ces rapports).
 
 ## <a name="make-the-collected-data-anonymous"></a>Anonymiser les données collectées
 
 Pour anonymiser les données collectées pour tous les rapports, vous devez être administrateur général. Cela masquera les informations identifiables telles que les noms d’utilisateur, de groupe et de site dans les rapports et dans l’application de modèle.
 
-1. Dans le centre d’administration, allez à **l’Paramètres** Org Paramètres et sous \> l’onglet **Services,** choisissez **Rapports.**
+1. Dans le Centre d’administration, allez à **l’Paramètres** Org Paramètres et sous \> l’onglet **Services,** choisissez **Rapports.**
 
 2. Sélectionnez **Rapports,** puis choisissez **d’afficher les identificateurs anonymes.** Ce paramètre est appliqué à la fois aux rapports d’utilisation et à l’application de modèle.
 
 3. Sélectionnez **Enregistrer les modifications**.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [À propos de l’analyse de l’utilisation](usage-analytics.md) (article)\
 [Obtenir la dernière version de l’analyse de l’utilisation](get-the-latest-version-of-usage-analytics.md) (article)\

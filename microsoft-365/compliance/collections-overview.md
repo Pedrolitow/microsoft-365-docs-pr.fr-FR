@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des collections dans Advanced eDiscovery pour rechercher et collecter du contenu relatif à votre cas ou à votre enquête.
-ms.openlocfilehash: e808db2829c8742fe34faa56965bacb79283b14b67a6ffbfccd8c43c88f12bac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dabc321f432996d888686b16e05d8ad6cb6cfc3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866478"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568419"
 ---
 # <a name="learn-about-collections-in-advanced-ediscovery"></a>En savoir plus sur les collections dans Advanced eDiscovery
 
@@ -34,17 +34,17 @@ Le flux de travail de collecte pose des défis techniques importants concernant 
 
 Les collections dans Advanced eDiscovery permettent aux gestionnaires eDiscovery d’effectuer rapidement une recherche de contenu dans le courrier électronique, les documents et d’autres contenus dans Microsoft 365. Les collections fournissent aux responsables une estimation du contenu qui peut être pertinent pour le cas. Cela permet aux responsables de prendre des décisions rapides et éclairées sur la taille et l’étendue du contenu pertinents pour un cas. Les gestionnaires eDiscovery peuvent créer une collection pour rechercher des sources de données privées (telles que des boîtes aux lettres et des sites SharePoint) et en utilisant des critères de recherche spécifiques (tels que des mots clés et des plages de dates) pour définir rapidement l’étendue de leur collection.
 
-Une fois la collection définie, les gestionnaires eDiscovery peuvent enregistrer la collection en tant que brouillon et obtenir des estimations, y compris des estimations du volume de données, les emplacements de contenu qui contiennent des résultats et le nombre d’occurrences pour la condition de requête de recherche. Ces informations peuvent vous aider à savoir si la collection doit être révisée pour affiner ou étendre l’étendue de la collection avant de passer aux étapes de révision et d’analyse dans le flux de travail eDiscovery.
+Une fois la collection définie, les gestionnaires eDiscovery peuvent enregistrer la collection en tant que brouillon et obtenir des estimations, y compris des estimations pour le volume de données, les emplacements de contenu qui contiennent des résultats et le nombre d’occurrences pour la condition de requête de recherche. Ces informations peuvent aider à savoir si la collection doit être révisée pour affiner ou étendre l’étendue de la collection avant de passer aux étapes de révision et d’analyse dans le flux de travail eDiscovery.
 
-Lorsque le responsable est satisfait de l’étendue de la collection et de la quantité estimée  de contenu susceptible de répondre, il peut ajouter ou valider le contenu dans un groupe de révision. Lors de la validation d’une collection dans un jeu à réviser, ce responsable a également la possibilité d’inclure des conversations de conversation, des pièces jointes cloud et des versions de document. Le contenu de la collection passe également par un autre niveau de traitement lors de l’ingestion dans le jeu à réviser. et la collection sera mise à jour avec le résumé final de la collection. Une fois le contenu ajouté au jeu à réviser, les responsables eDiscovery peuvent continuer à interroger, grouper et affiner le contenu pour faciliter la réduction et la révision. En outre, la collection est mise à jour avec des informations et des statistiques sur le contenu engagé dans le jeu à réviser. Cela fournit une référence historique sur le contenu de la collection.
+Lorsque le responsable est satisfait de l’étendue de la collection et de la quantité estimée  de contenu susceptible d’être réactive, il peut ajouter ou valider le contenu dans un groupe de révision. Lors de la validation d’une collection dans un jeu à réviser, ce responsable a également la possibilité d’inclure des conversations de conversation, des pièces jointes cloud et des versions de document. Le contenu de la collection passe également par un autre niveau de traitement lors de l’ingestion dans le jeu à réviser. et la collection sera mise à jour avec le résumé final de la collection. Une fois le contenu ajouté au jeu à réviser, les responsables eDiscovery peuvent continuer à interroger, grouper et affiner le contenu pour faciliter la réduction et la révision. En outre, la collection est mise à jour avec des informations et des statistiques sur le contenu engagé dans le jeu à réviser. Cela fournit une référence historique sur le contenu de la collection.
 
-Avec la publication de collections dans une  Advanced eDiscovery, l’onglet Recherches a été renommé **Collections** dans un cas Advanced eDiscovery dans le Centre de conformité Microsoft 365. Les étapes de définition de l’étendue et de la taille de la collection suivent le même processus que la recherche pour définir des emplacements et des conditions. Enregistrer en tant que brouillon et obtenir des estimations d’aperçu permet de valider rapidement l’étendue ciblée des collections avant de valider une recherche et une collection complètes dans le jeu à réviser. Cela permet une gestion améliorée des travail et des itérations ciblées pour commencer à réduire le contenu pendant le processus de recherche et de collecte.
+Avec la publication de collections dans  une Advanced eDiscovery, l’onglet Recherches a été renommé **Collections** dans un cas Advanced eDiscovery dans le Centre de conformité Microsoft 365. Les étapes de définition de l’étendue et de la taille de la collection suivent le même processus que la recherche pour définir des emplacements et des conditions. Enregistrer en tant que brouillon et obtenir des estimations d’aperçu permet de valider rapidement l’étendue ciblée des collections avant de valider une recherche et une collection complètes dans le jeu à réviser. Cela permet une gestion améliorée des travail et des itérations ciblées pour commencer à réduire le contenu pendant le processus de recherche et de collecte.
 
 ## <a name="collections-workflow"></a>Flux de travail collections
 
 Pour commencer à utiliser des collections Advanced eDiscovery, voici un flux de travail de base et des descriptions de chaque étape du processus.
 
-![Flux de travail collections dans Advanced eDiscovery](../media/CollectionsWorkflow.png)
+![Flux de travail de collections dans Advanced eDiscovery.](../media/CollectionsWorkflow.png)
 
 1. **Créez et exécutez un brouillon de collection.** La première étape consiste à créer un brouillon de collection et à définir les sources de données privées et non privées à rechercher. Vous pouvez également rechercher d’autres sources de données qui n’ont pas été ajoutées au cas. Après avoir ajouté les sources de données, vous configurez la requête de recherche pour rechercher dans les sources de données du contenu pertinent pour le cas. Vous pouvez utiliser des mots clés, des propriétés et des conditions pour créer des requêtes de recherche qui retournent du contenu probablement le plus pertinent pour le cas. Pour plus d’informations, [voir Créer un brouillon de collection.](create-draft-collection.md)
 

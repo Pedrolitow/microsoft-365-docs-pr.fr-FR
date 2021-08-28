@@ -19,12 +19,12 @@ description: Les administrateurs peuvent découvrir comment rechercher et utilis
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78764102c873c784d03fdb7df4c1e27c5c9227ad
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 06817f5ce73800e3688820534404cb2893307dc2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394915"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568719"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie
 
@@ -37,13 +37,13 @@ ms.locfileid: "58394915"
 
 De nombreux rapports sont disponibles sur le portail Microsoft 365 Defender pour vous aider à voir comment les fonctionnalités de sécurité du courrier électronique, telles que les fonctionnalités <https://security.microsoft.com> anti-courrier indésirable, anti-programme malveillant et chiffrement dans Microsoft 365 protègent votre organisation. Si vous avez les [autorisations](#what-permissions-are-needed-to-view-these-reports)nécessaires, vous pouvez afficher ces  rapports dans le portail Microsoft 365 Defender en allant à Rapports e-mail & \> **collaboration** \> **e-mail & rapports de collaboration.** Pour aller directement à la page **e-mail & rapports** de collaboration, ouvrez <https://security.microsoft.com/emailandcollabreport> .
 
-![Page de & de collaboration par courrier électronique dans le portail Microsoft 365 Defender web](../../media/email-collaboration-reports.png)
+![Envoyez un & page de rapports de collaboration dans le portail Microsoft 365 Defender web.](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
 > Certains rapports de la page rapports de **collaboration** & courrier électronique nécessitent Microsoft Defender pour Office 365. Pour plus d’informations sur ces rapports, voir [View Defender pour Office 365 rapports dans le portail Microsoft 365 Defender.](view-reports-for-mdo.md)
 >
-> Les rapports liés au flux de messagerie sont désormais dans le Centre d’administration Exchange(EAC). Pour plus d’informations sur ces rapports, voir Rapports de flux de messagerie dans [le nouveau centre Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> Les rapports liés au flux de messagerie sont désormais dans le Centre d’administration Exchange(EAC). Pour plus d’informations sur ces rapports, voir Rapports de flux de messagerie dans le nouveau [centre d Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 ## <a name="compromised-users-report"></a>Rapport utilisateurs compromis
 
@@ -52,11 +52,11 @@ De nombreux rapports sont disponibles sur le portail Microsoft 365 Defender pour
 
 Le **rapport Utilisateurs** compromis indique le nombre de  comptes  d’utilisateurs marqués comme suspects ou restreints au cours des 7 derniers jours. Les comptes dans l’un de ces états sont problématiques, voire compromis. Avec une utilisation fréquente, vous pouvez utiliser le rapport pour repérer des pics, voire des tendances, dans des comptes suspects ou restreints. Pour plus d’informations sur les utilisateurs compromis, voir [Répondre à un compte de messagerie compromis.](responding-to-a-compromised-email-account.md)
 
-![Widget Utilisateurs compromis sur la page rapports de collaboration & messagerie](../../media/compromised-users-report-widget.png)
+![Widget d’utilisateurs compromis sur la page rapports de collaboration & messagerie électronique.](../../media/compromised-users-report-widget.png)
 
 L’affichage agrégé affiche les données des 90 derniers jours et l’affichage détail affiche les données des 30 derniers jours.
 
-Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’adresse e-mail rapports & \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **& de collaboration,** recherchez les utilisateurs **compromis,** puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/CompromisedUsers> .
+Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **& de collaboration,** recherchez les utilisateurs **compromis,** puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/CompromisedUsers> .
 
 Dans la page **Utilisateurs** compromis, le graphique affiche les informations suivantes pour la plage de dates spécifiée :
 
@@ -76,21 +76,21 @@ Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Fil
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
-![Affichage du rapport dans le rapport Utilisateurs compromis](../../media/compromised-users-report-activity-view.png)
+![Affichage du rapport dans le rapport Utilisateurs compromis.](../../media/compromised-users-report-activity-view.png)
 
 ## <a name="exchange-transport-rule-report"></a>Exchange de règles de transport
 
-Le **rapport Exchange** règles de transport de messagerie indique l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
+Le **rapport Exchange** règles de transport de messagerie affiche l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
 
-Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’adresse e-mail rapports & \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **Rapports de collaboration &** courrier électronique, recherchez Exchange de **transport,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/ETRRuleReport> .
+Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **Rapports de collaboration &** courrier électronique, recherchez Exchange de **transport,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/ETRRuleReport> .
 
-![Exchange widget de règle de transport dans la page Rapports de collaboration & courrier électronique](../../media/transport-rule-report-widget.png)
+![Exchange widget de règle de transport dans la page rapports de collaboration & courrier électronique.](../../media/transport-rule-report-widget.png)
 
 Dans la page Exchange de règles de **transport,** les graphiques et données disponibles sont décrits dans les sections suivantes.
 
 ### <a name="chart-breakdown-by-direction"></a>Répartition du graphique par direction
 
-![Affichage direction pour les Exchange transport dans le rapport Exchange règles de transport](../../media/transport-rule-report-etr-direction-view.png)
+![Affichage direction pour les Exchange transport dans le rapport Exchange règles de transport.](../../media/transport-rule-report-etr-direction-view.png)
 
 Si vous sélectionnez **répartition des graphiques par direction,** les graphiques suivants sont disponibles :
 
@@ -102,7 +102,7 @@ Les informations suivantes sont affichées dans le tableau de détails sous le g
 - **Date**
 - **Stratégie DLP** ( Afficher **les données par DLP Exchange de transport uniquement)**
 - **Règle de transport**
-- **Sujet**
+- **Subject**
 - **Adresse de l’expéditeur**
 - **Adresse du destinataire**
 - **Gravité**
@@ -118,7 +118,7 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 
 ### <a name="chart-breakdown-by-severity"></a>Répartition du graphique par gravité
 
-![Affichage gravité des règles Exchange transport dans le rapport Exchange règles de transport](../../media/transport-rule-report-etr-severity-view.png)
+![Affichage gravité pour les Exchange transport dans le rapport Exchange règles de transport.](../../media/transport-rule-report-etr-severity-view.png)
 
 Si vous sélectionnez **répartition des graphiques par gravité,** les graphiques suivants sont disponibles :
 
@@ -131,7 +131,7 @@ Les informations suivantes sont affichées dans le tableau de détails sous le g
 - **Date**
 - **Stratégie DLP** ( Afficher **les données par DLP Exchange de transport uniquement)**
 - **Règle de transport**
-- **Sujet**
+- **Subject**
 - **Adresse de l’expéditeur**
 - **Adresse du destinataire**
 - **Gravité**
@@ -154,13 +154,13 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 
 Le  rapport d’état du flux de messagerie est un rapport intelligent qui affiche des informations sur le courrier électronique entrant et sortant, les détections de courrier indésirable, les programmes malveillants, les e-mails identifiés comme « bons » et les informations sur les messages électroniques autorisés ou bloqués sur le edge. Il s’agit du seul rapport qui contient des informations sur la protection edge et qui indique la quantité de messages électroniques bloqués avant d’être autorisé à entrer dans le service pour évaluation par Exchange Online Protection (EOP). Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme cinq messages différents et pas un seul message.
 
-Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’adresse e-mail rapports & \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **Rapports de collaboration &** courrier électronique, recherchez le résumé **de** l’état du flux de messagerie, puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/mailflowStatusReport> .
+Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **Rapports de collaboration &** courrier électronique, recherchez le résumé **de** l’état du flux de messagerie, puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/mailflowStatusReport> .
 
-![Widget de synthèse de l’état du flux de messagerie dans la page Rapports de collaboration & courrier électronique](../../media/mail-flow-status-report-widget.png)
+![Widget de résumé de l’état du flux de messagerie dans la page Rapports de collaboration & courrier électronique.](../../media/mail-flow-status-report-widget.png)
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>Affichage des types pour le rapport d’état du flux de messagerie
 
-![Affichage des types dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-type-view.png)
+![Affichage des types dans le rapport d’état du flux de messagerie.](../../media/mail-flow-status-report-type-view.png)
 
 Dans la page **Rapport d’état du** flux de messagerie, l’onglet **Type** est sélectionné par défaut. Le graphique affiche les informations suivantes pour la plage de dates spécifiée :
 
@@ -215,7 +215,7 @@ Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données de c
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Affichage direction pour le rapport d’état du flux de messagerie
 
-![Affichage direction dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-direction-view.png)
+![Affichage direction dans le rapport d’état du flux de messagerie.](../../media/mail-flow-status-report-direction-view.png)
 
 Si vous cliquez sur **l’onglet Direction,** le graphique affiche les informations suivantes pour la plage de dates spécifiée :
 
@@ -239,7 +239,7 @@ Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données de c
 
 La **vue Entonnoir** vous montre comment les fonctionnalités de protection contre les menaces de courrier électronique de Microsoft filtrent le courrier électronique entrant et sortant dans votre organisation. Il fournit des détails sur le nombre total de messages électroniques et sur la façon dont les fonctionnalités de protection contre les menaces configurées, y compris la protection edge, la protection contre les programmes malveillants, l’anti-hameçonnage, le courrier indésirable et la détection d’usurpation d’accès affectent ce nombre.
 
-![Affichage en entonnoir dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-funnel-view.png)
+![Affichage en entonnoir dans le rapport d’état du flux de messagerie.](../../media/mail-flow-status-report-funnel-view.png)
 
 L’affichage agrégé et le tableau détails autorisent 90 jours de filtrage.
 
@@ -265,7 +265,7 @@ Si vous  cliquez sur l’onglet Entonnoir, le graphique affiche les messages org
   - **Détonation d’URL**: message filtré par une stratégie Coffre liens.
 - **Courrier électronique détecté comme étant anodin après la remise (protection de temps de clic d’URL)**
 
-Les catégories sont codées en couleur par **EOP** ou **Defender pour Office 365**. Pour filtrer les catégories du graphique, cliquez sur **EOP** ou Defender pour **Office 365** dans la légende du graphique (un clic pour éliminer , un deuxième clic pour revenir).
+Les catégories sont codées en couleur par **EOP** ou **Defender pour Office 365**. Pour filtrer les catégories dans le graphique, cliquez sur **EOP** ou Defender pour **Office 365** dans la légende du graphique (un clic pour éliminer , un deuxième clic pour revenir).
 
 Le tableau de détails sous le graphique contient les mêmes informations que le graphique, mais avec différentes descriptions (plus courtes) :
 
@@ -273,7 +273,7 @@ Le tableau de détails sous le graphique contient les mêmes informations que le
 - **Protection Edge**
 - **Messages de règle**
 - **Anti-programme malveillant, réputation de fichier, type de fichier, bloc de fichiers**
-- **Anti-hameçonnage, réputation d’URL, emprunt d’identité de marque, anti-usurpation**
+- **Anti-hameçonnage, réputation d’URL, emprunt d’identité de marque, anti-usurpation d’identité**
 - **Anti-courrier indésirable, filtrage du courrier en bloc**
 - **Emprunt d’identité d’utilisateur et de domaine**
 - **Détonation de fichiers et d’URL :** Defender pour Office 365
@@ -306,7 +306,7 @@ Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données cont
 
 La **vue Tech est** similaire à la vue Entonnoir, fournissant des détails plus détaillés pour les fonctionnalités de protection contre les menaces configurées.  À partir du graphique, vous pouvez voir comment les messages sont classés aux différentes étapes de la protection contre les menaces.
 
-![Affichage technique dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-tech-view.png)
+![Affichage technique dans le rapport d’état du flux de messagerie.](../../media/mail-flow-status-report-tech-view.png)
 
 Le tableau d’affichage agrégé et de détails autorise 90 jours de filtrage.
 
@@ -372,14 +372,14 @@ Le filtre d’affichage agrégé autorise 90 jours, tandis que le filtre de tabl
 
 Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **& de collaboration,** recherchez les programmes malveillants détectés dans le courrier **électronique,** puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/MalwareDetections> .
 
-![Détections de programmes malveillants dans le widget de messagerie sur la page rapports de collaboration & messagerie](../../media/malware-detections-widget.png)
+![Détections de programmes malveillants dans le widget de messagerie sur la page de rapports de collaboration & courrier électronique.](../../media/malware-detections-widget.png)
 
 Dans la page Du rapport détections de programmes **malveillants,** le graphique affiche les informations suivantes pour la plage de dates spécifiée :
 
 - **Sortant**
 - **Entrant**
 
-![Affichage du rapport dans le rapport de détection des programmes malveillants dans le rapport de courrier électronique](../../media/malware-detections-report-view.png)
+![Affichage du rapport dans le rapport sur la détection des programmes malveillants dans le rapport de courrier électronique.](../../media/malware-detections-report-view.png)
 
 Le tableau de détails sous le graphique présente les informations suivantes :
 
@@ -387,7 +387,7 @@ Le tableau de détails sous le graphique présente les informations suivantes :
 - **Adresse de l’expéditeur**
 - **Adresse du destinataire**
 - **ID de message**: disponible dans le champ d’en-tête **Message-ID** dans l’en-tête du message et doit être unique. Un exemple de valeur est `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (notez les crochets).
-- **Sujet**
+- **Subject**
 - **Filename**
 - **Nom du programme malveillant**
 
@@ -420,7 +420,7 @@ L’affichage agrégé du rapport autorise 45 jours de filtrage, tandis que l’
 
 Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **& de collaboration,** recherchez les détections d’usurpation **d’adresse,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/SpoofMailReportV2> .
 
-![Widget de détections d’usurpation d'& dans la page Rapports de collaboration sur & courrier électronique](../../media/spoof-detections-widget.png)
+![Widget de détections d’usurpation d'& la page rapports de collaboration.](../../media/spoof-detections-widget.png)
 
 Le graphique présente les informations suivantes :
 
@@ -443,7 +443,7 @@ Dans la page **Rapport** de courrier usurpation d’adresse, vous pouvez  filtre
   - **Other**
 - **Type d’usurpation :** **interne** et **externe**
 
-![Page de rapport de courrier électronique usurpant l’Microsoft 365 Defender](../../media/spoof-detections-report-page.png)
+![Page de rapport de courrier électronique usurpant l’Microsoft 365 Defender de messagerie.](../../media/spoof-detections-report-page.png)
 
 Le tableau de détails sous le graphique présente les informations suivantes :
 
@@ -460,13 +460,13 @@ Le tableau de détails sous le graphique présente les informations suivantes :
 
 Pour plus d’informations sur les codes de résultats d’authentification composite, consultez les [en-têtes de message anti-courrier](anti-spam-message-headers.md)indésirable Microsoft 365 .
 
-## <a name="submissions-report"></a>Rapport des soumissions
+## <a name="submissions-report"></a>Rapport soumissions
 
 Le **rapport Soumissions** affiche des informations sur les éléments que les administrateurs ont signalés à Microsoft pour analyse. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
-Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **& de collaboration,** recherchez **Soumissions,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/adminSubmissionReport> . Pour aller aux [soumissions d’administrateur dans le portail Microsoft 365 Defender,](admin-submission.md)cliquez **sur Go to Submissions**. Les administrateurs pourront afficher le rapport pour les 30 derniers jours. 
+Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’adresse e-mail rapports & \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **& de collaboration,** recherchez **Soumissions,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/adminSubmissionReport> . Pour aller aux [soumissions d’administrateur dans le portail Microsoft 365 Defender,](admin-submission.md)cliquez **sur Go to Submissions**. Les administrateurs pourront afficher le rapport pour les 30 derniers jours. 
 
-![Widget soumissions sur la page rapports de collaboration & courrier électronique](../../media/submissions-report-widget.png)
+![Widget de soumissions dans la page Rapports de collaboration & courrier électronique.](../../media/submissions-report-widget.png)
 
 Le graphique présente les informations suivantes :
 
@@ -494,9 +494,9 @@ Dans la page **Soumissions,** vous pouvez filtrer le graphique  et le tableau de
   - **Pending**
   - **Terminée**
 
-Le tableau de détails sous le graphique  présente les mêmes informations  et possède les  mêmes **options** de colonnes De groupe ou de personnalisation que sous l’onglet Soumis pour analyse dans envois de collaboration & courrier \> **électronique.** Pour plus d’informations, voir [Afficher les soumissions d’administrateurs à Microsoft.](admin-submission.md#view-admin-submissions-to-microsoft)
+Le tableau de détails sous le graphique  présente les mêmes informations  et possède les  mêmes **options** de colonnes De groupe ou de personnalisation que sous l’onglet Soumis pour analyse dans envois de collaboration & courrier \> **électronique.** Pour plus d’informations, voir [Afficher les soumissions d’administrateur à Microsoft.](admin-submission.md#view-admin-submissions-to-microsoft)
 
-![Page de rapport soumissions dans le portail Microsoft 365 Defender web](../../media/submissions-report-page.png)
+![Page de rapport soumissions dans le portail Microsoft 365 Defender web.](../../media/submissions-report-page.png)
 
 ## <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 
@@ -506,20 +506,20 @@ Le rapport fournit le nombre de messages électroniques avec du contenu malveill
 
 **Remarque**: il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme cinq messages différents et pas un seul message.
 
-Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **Rapports de collaboration & courrier** électronique, recherchez l’état de la **protection** contre les menaces, puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez l’une des URL suivantes :
+Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’adresse e-mail rapports & \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **Rapports de collaboration & courrier** électronique, recherchez l’état de la **protection** contre les menaces, puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez l’une des URL suivantes :
 
 - Defender pour Office 365 :<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP : <https://security.microsoft.com/reports/TPSAggregateReport>
 
-![Widget d’état de la protection contre les menaces dans la page rapports de collaboration & courrier électronique](../../media/threat-protection-status-report-widget.png)
+![Widget d’état de la protection contre les menaces dans la page Rapports de collaboration & courrier électronique.](../../media/threat-protection-status-report-widget.png)
 
-Par défaut, le graphique affiche les données des 7 derniers jours. Si vous cliquez sur **Filtrer** dans la page rapport d’état de la **protection** contre les menaces, vous pouvez sélectionner une plage de dates de 90 jours (les abonnements d’essai peuvent être limités à 30 jours). Le tableau de détails autorise le filtrage pendant 30 jours.
+Par défaut, le graphique affiche les données des 7 derniers jours. Si vous cliquez sur **Filtrer** dans la page du rapport d’état de la **protection** contre les menaces, vous pouvez sélectionner une plage de dates de 90 jours (les abonnements d’essai peuvent être limités à 30 jours). Le tableau de détails autorise le filtrage pendant 30 jours.
 
 Les vues disponibles sont décrites dans les sections suivantes.
 
 ### <a name="view-data-by-overview"></a>Afficher les données par vue d’ensemble
 
-![Vue d’ensemble dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-overview-view.png)
+![Vue d’ensemble dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-overview-view.png)
 
 Dans **l’affichage Des données par vue d’ensemble,** les informations de détection suivantes sont affichées dans le graphique :
 
@@ -543,9 +543,9 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 
 ### <a name="view-data-by-email--phish-and-chart-breakdown-by-detection-technology"></a>Afficher les données par hameçonnage de \> messagerie électronique et répartition des graphiques par technologie de détection
 
-![Affichage de la technologie de détection pour le courrier de hameçonnage dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
+![Affichage de la technologie de détection pour le courrier d’hameçonnage dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
-Dans **l’affichage \> des données par hameçonnage de** messagerie électronique et répartition du graphique par technologie de détection, les informations suivantes sont affichées dans le graphique : 
+Dans **l’affichage \> des données par hameçonnage par courrier électronique** et répartition **du** graphique par technologie de détection, les informations suivantes sont affichées dans le graphique :
 
 - **Réputation malveillante d’URL**: réputation d’URL malveillante générée à partir de <sup>\*</sup> Defender pour Office 365 détonations dans d’autres Microsoft 365 clients.
 - **Filtre avancé :** signaux de hameçonnage basés sur l’apprentissage automatique.
@@ -568,7 +568,7 @@ Dans **l’affichage \> des données par hameçonnage de** messagerie électroni
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Détecté par**
@@ -592,7 +592,7 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>Afficher les données par programme malveillant et \> répartition des graphiques par technologie de détection
 
-![Affichage de la technologie de détection pour les programmes malveillants dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+![Affichage de la technologie de détection pour les programmes malveillants dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
 Dans **l’affichage \> des données par programme** malveillant par courrier électronique et **répartition des** graphiques par technologie de détection, les informations suivantes sont affichées dans le graphique :
 
@@ -633,7 +633,7 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 
 ### <a name="chart-breakdown-by-policy-type-and-view-data-by-email--phish-or-view-data-by-email--malware"></a>Répartition des graphiques par type de stratégie et affichage des données par hameçonnage de messagerie ou affichage des données par programme malveillant \> de \> messagerie
 
-![Affichage du type de stratégie pour les courriers électroniques de hameçonnage ou de programmes malveillants dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+![Affichage du type de stratégie pour les courriers électroniques de hameçonnage ou de programmes malveillants dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
 Dans la répartition **du graphique** par type de stratégie et l’affichage des données par hameçonnage de messagerie ou affichage des données par affichage des programmes malveillants de messagerie, les informations suivantes sont affichées dans les graphiques : **\>** **\>**
 
@@ -671,7 +671,7 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 
 ### <a name="chart-breakdown-by-delivery-status-and-view-data-by-email--phish-or-view-data-by-email--malware"></a>Répartition des graphiques par état de remise et affichage des données par hameçonnage de messagerie ou affichage des données par programme malveillant \> de \> messagerie
 
-![Affichage de l’état de remise du courrier électronique de hameçonnage et des programmes malveillants dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
+![Affichage de l’état de remise des messages électroniques de hameçonnage et de programmes malveillants dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
 Dans la répartition **du graphique** par état de remise et affichage des données par hameçonnage de messagerie ou affichage des données par affichage des programmes malveillants de messagerie, les informations suivantes sont affichées dans les graphiques : **\>** **\>**
 
@@ -688,7 +688,7 @@ Dans la répartition **du graphique** par état de remise et affichage des donn�
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Détecté par**
@@ -712,7 +712,7 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 
 ### <a name="view-data-by-content--malware"></a>Afficher les données par programme malveillant de \> contenu
 
-![Affichage des programmes malveillants de contenu dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-content-malware-view.png)
+![Affichage des programmes malveillants de contenu dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-content-malware-view.png)
 
 Dans la **vue \> Afficher les données par programme** malveillant de contenu, les informations suivantes sont affichées dans le graphique de Microsoft Defender pour Office 365 organisations :
 
@@ -735,7 +735,7 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-reason"></a>Afficher les données par substitution du système et répartition du graphique par raison
 
-![Remplacement de message et répartition des graphiques par raison dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
+![Remplacement des messages et répartition des graphiques par affichage Raison dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
 
 Dans **l’affichage des données par remplacement** du système et la **répartition** du graphique par l’affichage Raison, les informations de motif de remplacement suivantes sont affichées dans le graphique :
 
@@ -747,7 +747,7 @@ Dans **l’affichage des données par remplacement** du système et la **répart
 - **ZAP non activé**
 - **Expéditeur Coffre utilisateur**
 - **Domaine Coffre utilisateur**
-- **Simulation de hameçonnage**: pour plus d’informations, voir Configurer la remise de simulations de hameçonnage tierces aux utilisateurs et de messages non filtrés à des boîtes aux lettres [SecOps.](configure-advanced-delivery.md)
+- **Simulation de hameçonnage**: pour plus d’informations, voir Configurer la remise de simulations de hameçonnage tierces aux utilisateurs et de messages non filtrés dans des boîtes aux lettres [SecOps.](configure-advanced-delivery.md)
 - **Filtre tiers**
 
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
@@ -787,7 +787,7 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-delivery-location"></a>Afficher les données par substitution du système et répartition du graphique par emplacement de remise
 
-![Remplacement de message et répartition des graphiques par emplacement de remise dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
+![Remplacement de message et répartition des graphiques par affichage Emplacement de remise dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
 
 Dans **l’affichage Afficher les données par substitution** système et répartition du graphique par emplacement de remise, les informations de motif de remplacement suivantes sont affichées dans le graphique : 
 
@@ -835,7 +835,7 @@ Le **rapport des principaux programmes** malveillants présente les différents 
 
 Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’adresse e-mail rapports & \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **Rapports de collaboration & courrier** électronique, recherchez **les** principaux programmes malveillants, puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/TopMalware> .
 
-![Widget de programmes malveillants de premier niveau sur la page rapports de collaboration & messagerie](../../media/top-malware-report-widget.png)
+![Widget de programmes malveillants de premier niveau sur la page & rapports de collaboration de messagerie.](../../media/top-malware-report-widget.png)
 
 Lorsque vous pointez sur une souris dans le graphique en secteurs, vous pouvez voir le nom d’un type de programme malveillant et le nombre de messages détectés comme ayant ce programme malveillant.
 
@@ -846,7 +846,7 @@ Dans la page **Rapport de programmes malveillants supérieure,** une version plu
 
 Si vous cliquez **sur Filtre,** vous pouvez spécifier une plage de dates avec la **date de** début et la date **de fin.**
 
-![Affichage du rapport sur les programmes malveillants le plus haut](../../media/top-malware-report-view.png)
+![Affichage des principaux rapports sur les programmes malveillants.](../../media/top-malware-report-view.png)
 
 ## <a name="url-threat-protection-report"></a>Rapport sur la protection contre les menaces d’URL
 
@@ -861,7 +861,7 @@ Le rapport des **messages** signalés par l’utilisateur affiche des informatio
 
 Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’adresse e-mail rapports & \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **& de collaboration,** recherchez les **messages** signalés par l’utilisateur, puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/userSubmissionReport> . Pour aller aux [soumissions d’administrateur dans le portail Microsoft 365 Defender,](admin-submission.md)cliquez **sur Go to Submissions**.
 
-![Widget de messages signalés par l’utilisateur sur la page rapports de collaboration & courrier électronique](../../media/user-reported-messages-widget.png)
+![Widget de messages signalés par l’utilisateur sur la page rapports de collaboration & courrier électronique.](../../media/user-reported-messages-widget.png)
 
 Dans **la** page Messages signalés par l’utilisateur, vous pouvez  filtrer à la fois le graphique et le tableau de détails en cliquant sur Filtrer et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
@@ -888,7 +888,7 @@ Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des 
 - **Résultat rescan**
 - **Simulation de hameçonnage**
 
-![Rapport des messages signalés par l’utilisateur](../../media/user-reported-messages-report.png)
+![Rapport des messages signalés par l’utilisateur.](../../media/user-reported-messages-report.png)
 
 Le tableau de détails sous le graphique présente les informations suivantes :
 
@@ -914,8 +914,8 @@ Pour afficher et utiliser les rapports décrits dans cet article, vous devez êt
 
 - **Gestion de l'organisation**
 - **Administrateur de sécurité**
-- **Lecteur de sécurité**
-- **Lecteur global**
+- **Lecteur sécurité**
+- **Lecteur général**
 
 Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 

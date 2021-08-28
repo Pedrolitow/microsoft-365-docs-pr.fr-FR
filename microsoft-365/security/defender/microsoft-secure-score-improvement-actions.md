@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 6b1d684687c271150fa7e297c0a243ba61bd1b39
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d67d92029ccb4da6711010b291dc2ad71bcaff70
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247938"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569884"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
@@ -44,7 +44,7 @@ Pour vous aider à trouver les informations dont vous avez besoin plus rapidemen
 
 Dans la page vue d’ensemble du score de sécurité Microsoft, affichez la répartition des points entre ces groupes et les points disponibles. Vous pouvez également obtenir une vue globale du score total, de la tendance historique de votre score sécurisé avec des comparaisons de critères et des actions d’amélioration hiérarchisées qui peuvent être prises pour améliorer votre score.
 
-![Page d’accueil du degré de sécurisation](../../media/secure-score/secure-score-home-page.png)
+![Page d’accueil Du score sécurisé.](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="check-your-current-score"></a>Vérifier votre score actuel
 
@@ -60,7 +60,7 @@ Voici les scores que vous pouvez ajouter à votre vue de votre score global pour
 
 Cette vue ressemblera à ce à quoi elle ressemblera si vous avez inclus tous les affichages de score possibles :
 
-![Votre score sécurisé, y compris le score planifié, le score de licence actuel et le score réalisable](../../media/secure-score/secure-score-achievable.png)
+![Votre score sécurisé, y compris le score planifié, le score de licence actuel et le score réalisable.](../../media/secure-score/secure-score-achievable.png)
 
 ## <a name="take-action-to-improve-your-score"></a>Prendre des mesures pour améliorer votre score
 
@@ -74,7 +74,7 @@ Le classement est basé sur le nombre de points à atteindre, les difficultés d
 
 Lorsque vous sélectionnez une action d’amélioration spécifique, un volant de page complète s’affiche.  
 
-![Exemple de volant d’action d’amélioration](../../media/secure-score/secure-score-improvement-action-details.png)
+![Exemple de volant d’action d’amélioration.](../../media/secure-score/secure-score-improvement-action-details.png)
 
 Pour effectuer l’action, vous avez plusieurs options :
 

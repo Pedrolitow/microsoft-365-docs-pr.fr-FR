@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 4c721dfcc95a2e07cdbfc04de3d3b6df872e036d639e86c5330db942267fa3e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 96a27d562bdde03d5d94d8a39ecf45d64ec9bf18
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862338"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567963"
 ---
 # <a name="step-4-the-tasks-tab"></a>Étape 4 : onglet Tâches
 
@@ -33,7 +33,7 @@ Sous l’onglet Tâches, vous devez fournir les chemins d’accès à vos script
 
 ## <a name="set-script-path"></a>Définir le chemin d’accès au script
 
-![Image de la tâche de test](Media/testtask.png)
+![Image de la tâche de test.](Media/testtask.png)
 
 Voici un exemple de la façon de fournir le chemin d’accès relatif sur une structure de dossiers :
 
@@ -53,7 +53,7 @@ _**Zip_file_uploaded**_
   - **Script.ps1** _dossier1/script.ps1_ comme chemin d’accès relatif.
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Afficher les détails de l’onglet Options de test dans l’article suivant 
 > [!div class="nextstepaction"]

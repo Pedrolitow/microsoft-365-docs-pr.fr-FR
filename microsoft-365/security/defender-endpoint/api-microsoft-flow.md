@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1f61fa2e2d5231d6e9c6a879a0827144282f1285
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: bd3e933d759d40f41ef585f0b5bcf68229386ba1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533254"
+ms.locfileid: "58568671"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (anciennement Microsoft Flow) et Azure Functions
 
@@ -39,7 +39,7 @@ L’automatisation des procédures de sécurité est une exigence standard pour 
 
 L’API Microsoft Defender dispose d’un connecteur Power Automate officiel avec de nombreuses fonctionnalités.
 
-![Image de modification des informations d’identification1](images/api-flow-0.png)
+![Image de modification des informations d’identification1.](images/api-flow-0.png)
 
 > [!NOTE]
 > Pour plus d’informations sur les conditions préalables de licence des connecteurs premium, voir [Licensing for premium connectors](/power-automate/triggers-introduction#licensing-for-premium-connectors).
@@ -53,15 +53,15 @@ L’exemple suivant montre comment créer une Flow qui est déclenchée chaque f
 
 2. Go to **My flows** \> **New** \> **Automated-from blank**.
 
-    ![Image de modification des informations d’identification2](images/api-flow-1.png)
+    ![Image de modification des informations d’identification2.](images/api-flow-1.png)
 
 3. Choisissez un nom pour votre Flow, recherchez « Déclencheurs Microsoft Defender ATP » comme déclencheur, puis sélectionnez le nouveau déclencheur Alertes.
 
-    ![Image de modification des informations d’identification3](images/api-flow-2.png)
+    ![Image de modification des informations d’identification3.](images/api-flow-2.png)
 
 Vous avez maintenant une Flow qui est déclenchée chaque fois qu’une nouvelle alerte se produit.
 
-![Image de modification des informations d’identification4](images/api-flow-3.png)
+![Image de modification des informations d’identification4.](images/api-flow-3.png)
 
 Il vous suffit maintenant de choisir les étapes suivantes.
 Par exemple, vous pouvez isoler l’appareil si la gravité de l’alerte est élevée et envoyer un e-mail à son sujet.
@@ -75,7 +75,7 @@ Le déclencheur d’alerte fournit uniquement l’ID d’alerte et l’ID de l�
 
 3. Définissez **l’ID d’alerte** de la dernière étape en tant **qu’entrée.**
 
-    ![Image de modification des informations d’identification5](images/api-flow-4.png)
+    ![Image de modification des informations d’identification5.](images/api-flow-4.png)
 
 ### <a name="isolate-the-device-if-the-alerts-severity-is-high"></a>Isoler l’appareil si la gravité de l’alerte est élevée
 
@@ -85,7 +85,7 @@ Le déclencheur d’alerte fournit uniquement l’ID d’alerte et l’ID de l�
 
    Si oui, ajoutez **l’action Microsoft Defender ATP - Isoler l’ordinateur** avec l’ID de l’ordinateur et un commentaire.
 
-    ![Image de modification des informations d’identification6](images/api-flow-5.png)
+    ![Image de modification des informations d’identification6.](images/api-flow-5.png)
 
 3. Ajoutez une nouvelle étape pour l’envoi par courrier électronique de l’alerte et de l’isolation. Il existe plusieurs connecteurs de messagerie très faciles à utiliser, tels que Outlook ou Gmail.
 

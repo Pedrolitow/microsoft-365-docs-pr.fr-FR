@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 7fee84e9be504427bb4320599310c3872ea311d6e2c640d87d83b938a27131ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c808bd8c742666c407a59cc6a3bc654d96257b3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828404"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569908"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "53828404"
 L’image et le tableau ci-dessous répertorient les modifications apportées à la navigation entre les Centre de sécurité Microsoft Defender et Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
-> ![Image de ce qui a été déplacé vers l’endroit](../../media/mde-m3d-security-center.png)
+> ![Image de ce qui a été déplacé vers l’endroit.](../../media/mde-m3d-security-center.png)
 
 | Centre de sécurité Microsoft Defender | Microsoft 365 Defender |
 |---------|---------|
@@ -129,7 +129,7 @@ Réunit les incidents et la gestion des alertes de vos e-mail, appareils, et ide
 - [En savoir plus sur les incidents](incidents-overview.md)
 - [En savoir plus sur la gestion des alertes](investigate-alerts.md).
 
-![Barre de lancement rapide des Alertes et Actions](../../media/converge-1-alerts-and-actions.png)
+![Barre de lancement rapide alertes et actions.](../../media/converge-1-alerts-and-actions.png)
 
 ### <a name="hunting"></a>Repérage
 
@@ -160,13 +160,13 @@ En savoir plus sur le suivi et la réponse aux menaces émergentes avec [l’ana
 
 Afficher et gérer la sécurité des points de terminaison dans votre organisation. Si vous avez utilisé la Centre de sécurité Microsoft Defender, elle semblera familière.
 
-![Barre de lancement rapide des points de terminaison](../../media/converge-2-endpoints.png)
+![Barre de lancement rapide des points de terminaison.](../../media/converge-2-endpoints.png)
 
 ### <a name="access-and-reports"></a>Accès et rapports
 
 Afficher des rapports, modifier vos paramètres, et modifier les rôles d’un utilisateur.
 
-![Barre de relance rapide Accès et rapports](../../media/converge-4-access-and-reporting-new.png)
+![Barre de relance rapide Accès et rapports.](../../media/converge-4-access-and-reporting-new.png)
 
 ### <a name="siem-api-connections"></a>Connexions d’API SIEM
 

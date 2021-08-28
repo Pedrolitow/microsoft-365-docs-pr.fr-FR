@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b72291e1c5b63cea65b6990a82e9de24cfc8fd5ea2ae75e31b82bc4033a0bc5f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0fb08635f50eedbf5fd96b8abc64ef9dfae60cbf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800116"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569692"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -52,7 +52,7 @@ Avec la réponse en direct, les analystes peuvent effectuer toutes les tâches s
 
 Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
 
-- **Vérifiez que vous exécutez une version prise en charge de Windows**.
+- **Vérifiez que vous exécutez une version prise** en charge de Windows .
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
@@ -81,13 +81,13 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
 
 - **Assurez-vous que le niveau de correction Automation** est affecté à l’appareil.
 
-  Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne pourrez pas établir une session Live Response à un membre de ce groupe.
+  Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne pourrez pas établir de session Live Response à un membre de ce groupe.
 
   Vous recevrez l’erreur suivante :
 
-  ![Image du message d’erreur](images/live-response-error.png)
+  ![Image du message d’erreur.](images/live-response-error.png)
 
-- **Activer l’exécution de scripts non signés de** réponse en direct (facultatif).
+- **Activer l’exécution de script non signé de réponse en** direct (facultatif).
 
   > [!WARNING]
   > Autoriser l’utilisation de scripts non signés peut augmenter votre exposition aux menaces.
@@ -140,7 +140,7 @@ Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de
 
 ### <a name="basic-commands"></a>Commandes de base
 
-Les commandes suivantes sont disponibles pour les rôles  d’utilisateur qui ont la possibilité d’exécuter des commandes de réponse en direct de base. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
+Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont la possibilité d’exécuter des commandes de réponse **en** direct de base. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
 
 |Command|Description|
 |---|---|---|
@@ -150,7 +150,7 @@ Les commandes suivantes sont disponibles pour les rôles  d’utilisateur qui on
 |`connections`|Affiche toutes les connexions actives.|
 |`dir`|Affiche une liste de fichiers et de sous-répertoires dans un répertoire.|
 |`drivers`|Affiche tous les pilotes installés sur l’appareil.|
-|`fg <command ID>`|Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel. <br> REMARQUE : fg prend un « ID de commande » disponible à partir des travaux, et non d’un piD|
+|`fg <command ID>`|Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel. <br> REMARQUE : fg prend un « ID de commande » disponible à partir des travaux, et non un piD|
 |`fileinfo`|Récupération d’informations sur un fichier.|
 |`findfile`|Localise les fichiers d’un nom donné sur l’appareil.|
 |`getfile <file_path>`|Télécharge un fichier.|
@@ -203,7 +203,7 @@ Pour permettre à votre équipe des opérations de sécurité de continuer à ex
 
 Voici quelques exemples :
 
-|Commande|Ce qu'il fait|
+|Commande|Comportement|
 |---|---|
 |`getfile "C:\windows\some_file.exe" &`|Commence à télécharger un fichier nommé *some_file.exe* en arrière-plan.|
 |`fg 1234`|Renvoie un téléchargement avec l’ID de commande *1234* au premier plan.|

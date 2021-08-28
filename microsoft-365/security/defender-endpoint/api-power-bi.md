@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0e64ccef09af6a8ab9ff3f798a0754a605a7f122
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 04c95cffec8f0c5bde417526d6b0cbc8dbe760ee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507745"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568659"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Créer des rapports personnalisés à l’aide Power BI
 
@@ -49,11 +49,11 @@ Le premier exemple montre comment connecter des Power BI à l’API de recherche
 
 - Click **Get Data** Blank \> **Query**
 
-  ![Image de création d’une requête vide](images/power-bi-create-blank-query.png)
+  ![Image de création d’une requête vide.](images/power-bi-create-blank-query.png)
 
 - Cliquez sur **Éditeur avancé**
 
-  ![Image de l’éditeur avancé ouvert](images/power-bi-open-advanced-editor.png)
+  ![Image de l’éditeur avancé ouvert.](images/power-bi-open-advanced-editor.png)
 
 - Copiez le texte ci-dessous et collez-le dans l’éditeur :
 
@@ -99,17 +99,17 @@ Le premier exemple montre comment connecter des Power BI à l’API de recherche
 
 - Cliquez sur **Modifier les informations d’identification**
 
-    ![Image de modification des informations d’identification0](images/power-bi-edit-credentials.png)
+    ![Image de modifier les informations d’identification0.](images/power-bi-edit-credentials.png)
 
 - Sélectionner un **compte d’organisation** \> **pour se connecter**
 
-    ![Image de l’ensemble des informations d’identification1](images/power-bi-set-credentials-organizational.png)
+    ![Image de l’ensemble des informations d’identification1.](images/power-bi-set-credentials-organizational.png)
 
 - Entrez vos informations d’identification et attendez d’être connexion
 
 - Cliquez **sur Connecter**
 
-    ![Image de l’ensemble des informations d’identification2](images/power-bi-set-credentials-organizational-cont.png)
+    ![Image de l’ensemble des informations d’identification2.](images/power-bi-set-credentials-organizational-cont.png)
 
 - À présent, les résultats de votre requête s’affichent en tant que table et vous pouvez commencer à créer des visualisations au-dessus de celui-ci !
 

@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Découvrez comment les établissements financiers peuvent gérer la conformité de la sécurité financière et collaborer efficacement à l’aide de Microsoft 365 et Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 88aa46e08a450953e940d625e7f35cf9732d668d
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 0e3fada6a74776e4edf2c8c41ef9026ce17871ad
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400270"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567999"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 
@@ -75,7 +75,7 @@ Teams peut fournir un espace de collaboration pour stocker en toute sécurité l
 
 Vous pouvez également utiliser des équipes comme « salle de données virtuelle » pour collaborer de façon sécurisée, y compris le stockage et la gestion des documents. Les membres de l'équipe et les syndicats au sein des banques d'investissement, des sociétés de gestion d'actifs ou des sociétés de capital-investissement peuvent collaborer en toute sécurité sur une transaction ou un investissement. Les équipes fonctionnelles interactives sont souvent impliquées dans la planification et l’exécution de ces transaction, et la possibilité de partager des données et de mener des conversations de façon sécurisée est une exigence essentielle. Le partage sécurisé de documents associés avec des investisseurs externes constitue également une condition essentielle. Teams fournit un lieu sécurisé et entièrement contrôlable à partir duquel les données d'investissement sont stockées, protégées et partagées de manière centralisée.
 
-![Un groupe de travailleurs Office dans une réunion discute des images sur un grand écran.](../media/m365cO19-ent-dell-latitude13-5951.jpg)
+![Un groupe d'employés de bureau lors d'une réunion discute d'images sur grand écran.](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams : améliorer la collaboration et réduire les risques en matière de conformité
 
@@ -165,7 +165,7 @@ La protection des identités utilise les connaissances que Microsoft a acquise a
 
 La protection des identités permet aux organisations de se protéger automatiquement contre la compromission d’identités en tirant parti de l’intelligence cloud optimisée par la détection avancée basée sur l’heuristique, l’analyse du comportement des utilisateurs et des entités (UEBA) et les formations d’ordinateurs (ML) au sein de l’écosystème Microsoft.
 
-![Cinq travailleurs de l’information assistent à une présentation.](../media/win17-15021-00-n9.jpg)
+![Cinq collaborateurs d’informations assistent à une présentation.](../media/win17-15021-00-n9.jpg)
  
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>Identifier les données sensibles et empêcher la perte de données
 Microsoft 365 permet à toutes les organisations d’identifier les données sensibles au sein de l’organisation en combinant des fonctionnalités puissantes, notamment :
@@ -328,7 +328,7 @@ Les organisations qui traitent des données sensibles et insistent strictement s
 
 Microsoft 365 fournit aux locataires des[restrictions](/azure/active-directory/manage-apps/tenant-restrictions) la possibilité de résoudre ce problème. Les restrictions de client peuvent être configurées pour restreindre l’accès des employés aux locataires Office 365 Entreprise externes à l’aide d’identités non autorisées (les identités qui ne font pas partie de votre annuaire d’entreprise). Aujourd’hui, les restrictions client s’appliquent au locataire, ce qui permet d’accéder uniquement aux locataires qui apparaissent dans la liste que vous configurez. Microsoft continue à développer cette solution pour renforcer la granularité du contrôle et améliorer les protections qu'elle offre.
 
-![GRAPHISME](../media/clo1717-corporate-office-001.jpg)
+![GRAPHIQUE.](../media/clo1717-corporate-office-001.jpg)
  
 ## <a name="conclusion"></a>Conclusion
 

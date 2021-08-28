@@ -16,18 +16,18 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: En savoir plus sur les interactions de paramètres entre Microsoft 365 groupes, Teams et SharePoint
-ms.openlocfilehash: 7fa543764be9483a6d600d60a1e61cc2f54067e0f06a02ff330e7c2656c9889a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 391ee9dcf5837f149a592511d1e189549a340236
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853022"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568215"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Paramètres des interactions entre les groupes Microsoft 365, Teams et SharePoint
 
 Certains paramètres de Microsoft 365 Groupes, Microsoft Teams et SharePoint en Microsoft 365, notamment liés au partage et à la création de sites de groupe/équipe et SharePoint, se chevauchent. Cet article fournit des descriptions de ces interactions et les meilleures pratiques pour l’utilisation de ces paramètres.
 
-![Diagramme de Venn des fonctionnalités SharePoint, Teams et des groupes](../media/teams-groups-sharepoint-venn.png)
+![Diagramme de Venn des fonctionnalités SharePoint, Teams et des groupes.](../media/teams-groups-sharepoint-venn.png)
 
 ## <a name="the-effects-of-sharepoint-settings-on-groups-and-teams"></a>Les effets des paramètres SharePoint sur les groupes et les équipes
 
@@ -35,8 +35,8 @@ Certains paramètres de Microsoft 365 Groupes, Microsoft Teams et SharePoint en 
 |:-----------------|:----------|:---------------------------------------|:-------------|
 |Partage externe pour l’organisation et le site|Détermine si les sites, fichiers et dossiers peuvent être partagés avec des personnes extérieures à l’organisation.|Si SharePoint, les groupes et les paramètres de Teams ne correspondent pas, les invités de l’équipe peuvent ne pas pouvoir accéder au site ou un accès externe inattendu peut se produire.|Lorsque vous modifiez les paramètres de partage, vérifiez les paramètres de groupes, les paramètres Teams et les paramètres SharePoint de site pour les sites d’équipe connectés à un groupe.<br><br> Voir [Collaborer avec des invités dans une équipe](./collaborate-as-team.md)|
 |Domaine autoriser/bloquer|Autorise ou empêche le partage de contenu avec des domaines spécifiés.|Les groupes et Teams ne reconnaissent pas SharePoint listes d’SharePoint ou de blocage. Les utilisateurs de domaines non autorisé dans SharePoint peuvent accéder à des sites SharePoint ou du contenu via une équipe.|Gérez les listes d’accès/de blocage de domaine pour Azure AD et SharePoint ensemble. Créez un processus de gouvernance à l’échelle de l’organisation pour autoriser et bloquer les domaines.<br><br>Voir SharePoint de domaine et les [paramètres](/sharepoint/restricted-domains-sharing) de [domaine Azure AD](/azure/active-directory/b2b/allow-deny-list)|
-|Autoriser les utilisateurs dans les groupes de sécurité spécifiques à partager avec l’extérieur|Spécifie les groupes de sécurité qui peuvent partager SharePoint sites, dossiers et fichiers en externe.|Ce paramètre n’empêche pas les propriétaires d’équipe de partager des équipes en externe. Les invités d’équipe ont accès au site SharePoint associé.||
-|SharePoint de partage de site|Détermine qui peut partager le site directement en dehors de l’appartenance à l’équipe. Cette configuration est configurée par l’équipe ou le propriétaire du site.|Ce paramètre n’affecte pas directement l’équipe, mais il peut permettre aux utilisateurs d’être ajoutés à un site et de ne pas avoir accès à l’équipe elle-même ou à d’Teams ressources|Envisagez d’utiliser ce paramètre pour limiter le partage du site directement et gérer l’accès au site par le biais de l’équipe.|
+|Autoriser les utilisateurs de groupes de sécurité spécifiques à partager en externe|Spécifie les groupes de sécurité qui peuvent partager SharePoint sites, dossiers et fichiers en externe.|Ce paramètre n’empêche pas les propriétaires d’équipe de partager des équipes en externe. Les invités d’équipe ont accès au site SharePoint associé.||
+|SharePoint de partage de site|Détermine qui peut partager le site directement en dehors de l’appartenance à l’équipe. Cette configuration est configurée par l’équipe ou le propriétaire du site.|Ce paramètre n’affecte pas directement l’équipe, mais il peut permettre aux utilisateurs d’être ajoutés à un site et de ne pas avoir accès à l’équipe elle-même ou à d’Teams ressources|Envisagez d’utiliser ce paramètre pour limiter le partage du site directement et gérer l’accès au site via l’équipe.|
 |Permet aux utilisateurs de créer des sites à partir SharePoint page de démarrage et de OneDrive|Spécifie si les utilisateurs peuvent créer de nouveaux sites SharePoint sites.|Si ce paramètre est désactivé, les utilisateurs peuvent toujours créer des sites d’équipe connectés à un groupe en créant une équipe.||
 
 ## <a name="the-effects-of-groups-settings-on-teams"></a>Les effets des paramètres de groupes sur les équipes
@@ -48,7 +48,7 @@ Certains paramètres de Microsoft 365 Groupes, Microsoft Teams et SharePoint en 
 |Création de groupe par groupe de sécurité|Les groupes peuvent uniquement être créés par les membres d’un groupe de sécurité spécifique.|Les utilisateurs qui ne sont pas membres du groupe de sécurité ne pourront pas créer d’équipe.|Assurez-vous que le processus de demande d’un groupe inclut des instructions pour demander une équipe ou un site SharePoint site.|
 |Stratégie d’expiration de groupe|Spécifie une période après laquelle les groupes qui ne sont pas activement utilisés seront automatiquement supprimés.|Lorsque le groupe est supprimé, l’équipe et SharePoint site sont également supprimés. Le contenu protégé par les stratégies de rétention est conservé.|Utilisez des stratégies d’expiration pour éviter les problèmes d’équipes, de groupes et de sites inutilisés.|
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

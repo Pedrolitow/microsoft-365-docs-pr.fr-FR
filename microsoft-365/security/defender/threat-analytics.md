@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: da726aeaf82f13cef862b105e951f28c9fdf80e3
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 43b15b8fb43a06fa56e18c735868058fcfd6d24f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533050"
+ms.locfileid: "58568551"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics-in-microsoft-365-defender"></a>Suivre les menaces émergentes et y répondre à l’Microsoft 365 Defender 
 
@@ -54,7 +54,7 @@ Regardez cette courte vidéo pour en savoir plus sur la façon dont l’analyse 
 
 Vous pouvez accéder à l’analyse des menaces à partir du côté supérieur gauche de la barre de navigation du portail de sécurité Microsoft 365 ou à partir d’une carte de tableau de bord dédiée qui affiche les principales menaces dans votre organisation. Obtenir une visibilité sur les campagnes actives ou en cours et savoir quoi faire par le biais de l’analyse des menaces peut aider votre équipe en matière d’opérations de sécurité à prendre des décisions éclairées. 
 
-![Image du tableau de bord d’analyse des menaces](../../media/threat-analytics/ta_inlandingpage_mtp.png)
+![Image du tableau de bord d’analyse des menaces.](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
 _Où accéder à l’analyse des menaces_
 
@@ -66,7 +66,7 @@ Avec des adversaires plus sophistiqués et de nouvelles menaces émergentes fré
 - Examiner votre résilience par rapport aux menaces ou leur exposition
 - Identifier les actions d’atténuation, de récupération ou de prévention que vous pouvez prendre pour arrêter ou contenir les menaces
 
-Chaque rapport fournit une analyse d’une menace de suivi et des instructions complètes sur la façon de se défendre contre cette menace. Il incorpore également les données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
+Chaque rapport fournit une analyse d’une menace de suivi et des instructions complètes sur la façon de se défendre contre cette menace. Il intègre également des données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
 
 ## <a name="view-the-threat-analytics-dashboard"></a>Afficher le tableau de bord d’analyse des menaces
 
@@ -78,7 +78,7 @@ Le tableau de bord d’analyse[des menaces (security.microsoft.com/threatanalyti
 
 Sélectionnez une menace dans le tableau de bord pour afficher le rapport de cette menace.
 
-![Capture d’écran du tableau de bord d’analyse des menaces](../../media/threat-analytics/ta_dashboard_mtp.png)
+![Capture d’écran du tableau de bord d’analyse des menaces.](../../media/threat-analytics/ta_dashboard_mtp.png)
 
 _Tableau de bord d’analyse des menaces. Vous pouvez également cliquer sur l’icône Rechercher pour trouver un mot clé lié au rapport d’analyse des menaces que vous souhaitez lire._ 
 
@@ -97,7 +97,7 @@ Chaque rapport d’analyse des menaces fournit des informations dans plusieurs s
 
 La section **Vue d’ensemble** fournit un aperçu du rapport d’analyste détaillé. Il fournit également des graphiques qui mettent en évidence l’impact de la menace sur votre organisation et votre exposition par le biais d’appareils mal configurés et non configurés.
 
-![Image de la section vue d’ensemble d’un rapport d’analyse des menaces](../../media/threat-analytics/ta_overview_mtp.png)
+![Image de la section vue d’ensemble d’un rapport d’analyse des menaces.](../../media/threat-analytics/ta_overview_mtp.png)
 
 _Section Vue d’ensemble d’un rapport d’analyse des menaces_
 
@@ -138,15 +138,15 @@ L’équipe Microsoft Threat Intelligence a ajouté des balises de menace à cha
   - Groupe d’activités
 - Les balises de menace sont présentées en haut de la page d’analyse des menaces, avec des compteurs pour le nombre de rapports disponibles sous chaque balise.
 
-  ![balises de menace](../../media/threat-analytics/ta-threattags-mtp.png)
+  ![balises de menace.](../../media/threat-analytics/ta-threattags-mtp.png)
 
 - La liste peut également être triée par balises de menace :
 
-  ![lists](../../media/threat-analytics//ta-taglist-mtp.png)
+  ![listes.](../../media/threat-analytics//ta-taglist-mtp.png)
 
 - Les filtres sont disponibles par balise de menace et type de rapport :
 
-  ![filtres](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+  ![filtres.](../../media/threat-analytics/ta-threattag-filters-mtp.png)
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en sécurité Microsoft
 
@@ -159,7 +159,7 @@ Dans la section **Rapport d’analyste,** lisez l’écriture détaillée de l�
 **L’onglet Incidents connexes** fournit la liste de tous les incidents liés à la menace de suivi. Vous pouvez affecter des incidents ou gérer des alertes liées à chaque incident. 
 
 
-![Image de la section relative aux incidents connexes d’un rapport d’analyse des menaces](../../media/threat-analytics/ta_related_incidents_mtp.png)
+![Image de la section relative aux incidents connexes d’un rapport d’analyse des menaces.](../../media/threat-analytics/ta_related_incidents_mtp.png)
 
 _Section Incidents connexes d’un rapport d’analyse des menaces_
 
@@ -170,7 +170,7 @@ Un bien est considéré comme affecté s’il est affecté par une alerte active
 - **Appareils touchés**: points de terminaison qui ont des alertes Microsoft Defender pour point de terminaison non résolues. Ces alertes se firent généralement lors de la recherche d’indicateurs et d’activités de menace connus.
 - **Boîtes aux lettres impactées :** boîtes aux lettres qui ont reçu des messages électroniques qui ont déclenché Microsoft Defender pour Office 365 alertes. Alors que la plupart des messages qui déclenchent des alertes sont généralement bloqués, les stratégies au niveau de l’utilisateur ou de l’organisation peuvent remplacer les filtres.
 
-![Image de la section ressources impactées d’un rapport d’analyse des menaces](../../media/threat-analytics/ta_impacted_assets_mtp.png)
+![Image de la section ressources impactées d’un rapport d’analyse des menaces.](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
 _Section Ressources impactées d’un rapport d’analyse des menaces_
 
@@ -180,7 +180,7 @@ Microsoft Defender pour Office 365 bloque généralement les e-mails avec des in
 
 **L’onglet Tentatives** de courrier indésirable répertorie tous les e-mails qui ont été bloqués avant leur remise ou envoyés au dossier de courrier indésirable par Microsoft Defender pour Office 365. 
 
-![Image de la section tentatives de courrier empêchée d’un rapport d’analyse des menaces](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
+![Image de la section tentatives d’e-mail empêchées d’un rapport d’analyse des menaces.](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
 _Section Tentatives de courriers électroniques empêchées d’un rapport d’analyse des menaces_
 
@@ -196,9 +196,9 @@ Dans la section **Atténuations,** examinez la liste des recommandations actionn
 
 Les informations d’atténuation de cette section intègrent des données de [Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), qui fournit également des informations détaillées sur l’analyse à partir de différents liens du rapport.
 
-![Image de la section préventions d’un rapport d’analyse des menaces affichant des détails de configuration sécurisés](../../media/threat-analytics/ta_mitigations_mtp.png)
+![Image de la section atténuations d’un rapport d’analyse des menaces affichant des détails de configuration sécurisés.](../../media/threat-analytics/ta_mitigations_mtp.png)
 
-![Image de la section préventions d’un rapport d’analyse des menaces affichant les détails de la vulnérabilité](../../media/threat-analytics/ta_mitigations_mtp2.png)
+![Image de la section préventions d’un rapport d’analyse des menaces affichant les détails de la vulnérabilité.](../../media/threat-analytics/ta_mitigations_mtp2.png)
 
 _Section Atténuations d’un rapport d’analyse des menaces_
 

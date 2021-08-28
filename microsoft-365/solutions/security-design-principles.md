@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: d0d4fe867664d090359b1a9f7ab13d3ad46497ce8673a9d1615a112bfe8d78ff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ce1715baaf9b23fe53d900d67fc378d8fa624bb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827685"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568203"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Les obstacles à la sécurité que vous pouvez surmonter : l’opinion d’un architecte
 
@@ -27,15 +27,15 @@ Dans cet article, [Kozeta Contrôle,](https://www.linkedin.com/in/kozeta-garrett
 
 ## <a name="about-the-author"></a>À propos de l’auteur
 
-![Photo Kozeta Stock](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
+![Photo Kozeta Stock.](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
 
-En tant qu’architecte de sécurité cloud, j’ai travaillé avec plusieurs organisations pour fournir des conseils stratégiques et techniques sur la conception et l’implémentation de l’architecture de sécurité pour les clients qui migrent vers Microsoft 365 et Azure, qui développent des solutions de sécurité d’entreprise et contribuent à transformer l’architecture et la culture de sécurité pour la résilience de l’entreprise. Mon expérience inclut la détection et la réponse aux incidents, l’analyse des programmes malveillants, les tests de pénétration et la recommandation d’améliorations en matière de sécurité informatique et de défense. Je suis très passionné par les transformations de pointe qui entraînent la sécurité en tant qu’enableur pour l’entreprise, y compris les efforts de modernisation.
+En tant qu’architecte de sécurité cloud, j’ai travaillé avec plusieurs organisations pour fournir des conseils stratégiques et techniques sur la conception et l’implémentation de l’architecture de sécurité pour les clients qui migrent vers Microsoft 365 et Azure, qui développent des solutions de sécurité d’entreprise et contribuent à transformer l’architecture et la culture de sécurité pour la résilience de l’entreprise. Mon expérience inclut la détection et la réponse aux incidents, l’analyse des programmes malveillants, les tests de pénétration et la recommandation d’améliorations en matière de sécurité et de défense informatiques. Je suis très passionné par les transformations de pointe qui entraînent la sécurité en tant qu’enableur pour l’entreprise, y compris les efforts de modernisation.
 
 Il a été très satisfaisant de voir comment les organisations qui ont adopté un état d’esprit de modernisation de la sécurité au cours des deux dernières années sont dans une excellente position qui leur permet de continuer à fonctionner à distance de manière sécurisée, malgré la situation récente du COVID-19. Malheureusement, ces circonstances ont également servi d’appel de veille pour certains clients, qui n’étaient pas prêts pour ce besoin immédiat. De nombreuses organisations réalisent qu’elles doivent se moderniser rapidement, retirer leur dette de sécurité informatique cumulée et améliorer leur posture de sécurité du jour au lendemain afin de pouvoir fonctionner dans des circonstances extrêmement inhabituelles.
 
 La bonne nouvelle est que Microsoft a organisé des ressources importantes pour aider les organisations à augmenter rapidement leur posture de sécurité. En plus de ces ressources, j’aime partager les principaux défis que j’ai rencontrés quotidiennement avec les clients dans le but d’être confronté à ces obstacles.
 
-Je vis actuellement dans le Nord du Nord, près de la ville de Washington, la capitale de notre pays. J’aime à peu près toutes les formes d’activités et d’exercices, comme la course à pied, la course à pied, la course à pied et la loisirs. Pour faire face à ces problèmes, j’aime autant la cuisine, la cuisine que les voyages.
+Je vis actuellement dans le Nord du Nord, près de la ville de Washington, la capitale de notre pays. J’aime presque toutes les formes d’activités extérieures et d’exercices, comme la course à pied, la course à pied, la course à pied et la loisirs. Pour faire face à ces problèmes, j’aime autant la cuisine, la cuisine que les voyages.
 
 ## <a name="partner-with-the-security-team-from-the-start-of-cloud-adoption"></a>Travailler en partenariat avec l’équipe de sécurité dès le début de l’adoption du cloud
 
@@ -53,7 +53,7 @@ Pour une configuration recommandée, voir [Configurations d’identité et d’a
 
 ## <a name="transition-security-controls-to-the-cloud"></a>Transition des contrôles de sécurité vers le cloud
 
-De nombreuses équipes de sécurité utilisent toujours les meilleures pratiques de sécurité traditionnelles conçues pour un monde local, notamment la gestion d’une « sécurité de périmètre réseau » et la tentative de « forcer » les outils et contrôles de sécurité sur site aux solutions cloud. Ces contrôles n’ont pas été conçus pour le cloud, sont inefficaces et empêchent l’adoption des fonctionnalités cloud modernes. Les processus et outils qui fonctionnent pour une approche de sécurité de périmètre de réseau se sont révélés inefficaces, s’avèrent efficaces pour les fonctionnalités cloud et ne permettent pas de tirer parti des fonctionnalités de sécurité modernes et automatisées.
+De nombreuses équipes de sécurité utilisent toujours les meilleures pratiques de sécurité traditionnelles conçues pour un monde local, notamment la gestion d’une « sécurité de périmètre réseau » et la tentative de « forcer » les outils et contrôles de sécurité sur site aux solutions cloud. Ces contrôles n’ont pas été conçus pour le cloud, sont inefficaces et empêchent l’adoption des fonctionnalités cloud modernes. Les processus et les outils qui fonctionnent pour une approche de sécurité de périmètre de réseau se sont révélés inefficaces, s’avèrent efficaces pour les fonctionnalités cloud et ne permettent pas de tirer parti des fonctionnalités de sécurité modernes et automatisées.
 
 Vous pouvez faire face à cette difficulté en déplaçant les stratégies de défense vers la protection gérée par le cloud, l’examen et la correction automatisés, le test automatisé du stylet, Defender pour Office 365 et l’analyse des incidents. Les clients qui utilisent des solutions de gestion d’appareils modernes ont implémenté une gestion automatisée, une correction normalisée, un antivirus, une application de stratégie et une protection des applications sur tous les appareils (qu’il s’agit d’un smartphone, d’un ordinateur personnel, d’un ordinateur portable ou d’une tablette). Cela élimine la nécessité d’un VPN, de Microsoft System Center Configuration Manager (SCCM) et de stratégies de groupe Active Directory. Cela, combiné aux stratégies d’accès conditionnel, offre un contrôle et une visibilité puissants, ainsi qu’un accès simplifié aux ressources, quel que soit l’endroit d’où leurs utilisateurs opèrent.
 

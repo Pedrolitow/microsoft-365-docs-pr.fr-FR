@@ -1,5 +1,5 @@
 ---
-title: Examiner et répondre à l’Microsoft 365 Defender dans un environnement pilote
+title: Examiner et répondre à l’aide Microsoft 365 Defender dans un environnement pilote
 description: Configurer des simulations d’attaques dans Microsoft 365 Defender laboratoire d’essai ou un environnement pilote pour essayer la solution de sécurité conçue pour apprendre aux utilisateurs à protéger les appareils, l’identité, les données et les applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1ee83045c03c3663981e3c3b54384405d03e8ab8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: fca3a6ff838006b070a902dd37ff1cf32110a7b0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247163"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569896"
 ---
-# <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Examiner et répondre à l’Microsoft 365 Defender dans un environnement pilote
+# <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Examiner et répondre à l’aide Microsoft 365 Defender dans un environnement pilote
 
 **S’applique à :**
 - Microsoft 365 Defender
@@ -37,7 +37,7 @@ Cet article décrit le processus de création d’incidents avec des simulations
 
 Utilisez les étapes suivantes.
 
-![Étapes pour effectuer une réponse d’incident simulée dans l’environnement d Microsoft 365 Defender d’évaluation](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
+![Étapes pour effectuer une réponse d’incident simulée dans l Microsoft 365 Defender d’évaluation.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
 
 Le tableau suivant décrit les étapes de l’illustration.
 

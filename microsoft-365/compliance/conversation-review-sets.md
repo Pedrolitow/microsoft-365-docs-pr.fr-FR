@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez la fonctionnalité de reconstruction de conversation dans Advanced eDiscovery (thread de conversation) pour reconstruire, examiner et exporter des conversations dans des groupes Microsoft Teams et Yammer conversation.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2c1790646587d46f39a13b153a8cd152fb21468f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 62ebfc054db260fd5e41fec3809ba1efdf46b44b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256458"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569620"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>Threads de conversation dans Advanced eDiscovery
 
 La messagerie instantanée est un moyen pratique de poser des questions, de partager des idées ou de communiquer rapidement entre de larges publics. Comme les plateformes de messagerie instantanée, telles que les groupes Microsoft Teams et Yammer, deviennent essentielles à la collaboration d’entreprise, les organisations doivent évaluer la façon dont leur flux de travail eDiscovery traite ces nouvelles formes de communication et de collaboration.
 
-La fonctionnalité de reconstruction de conversation Advanced eDiscovery est conçue pour vous aider à identifier le contenu contextuel et à produire des vues de conversation distinctes. Cette fonctionnalité vous permet de passer en revue efficacement et rapidement les conversations de messagerie instantanée complètes (également appelées *conversations* threadées) générées sur des plateformes telles que Microsoft Teams.
+La fonctionnalité de reconstruction de conversation Advanced eDiscovery est conçue pour vous aider à identifier le contenu contextuel et à produire des affichages de conversation distincts. Cette fonctionnalité vous permet de passer en revue efficacement et rapidement les conversations de messagerie instantanée complètes (également appelées *conversations* threadées) générées sur des plateformes telles que Microsoft Teams.
 
 Avec la reconstruction de conversation, vous pouvez utiliser les fonctionnalités intégrées pour reconstruire, examiner et exporter des conversations threadées. Utilisez la reconstruction Advanced eDiscovery conversation pour :
 
@@ -48,13 +48,13 @@ Voici quelques définitions pour vous aider à commencer à utiliser la reconstr
 
 - **Conversation :** Représente un regroupement d’un ou plusieurs messages. Dans différentes applications, les conversations peuvent être représentées de différentes manières. Dans certaines applications, il existe une action explicite qui résulte de la réponse à un message existant. Les conversations sont formées explicitement à la suite de cette action de l’utilisateur. Par exemple, voici une capture d’écran d’une conversation de canal dans Microsoft Teams.
 
-   ![Microsoft Teams Conversation de canal](../media/threadedchat.png)
+   ![Microsoft Teams Conversation de canal.](../media/threadedchat.png)
 
    Dans d’autres applications (telles que les messages de conversation de groupe dans Teams), il n’existe pas de chaîne de réponse formelle et les messages apparaissent plutôt comme une « série plate de messages » au sein d’un thread unique. Dans ces types d’applications, les conversations sont déduites d’un groupe de messages qui se produisent dans un certain temps. Ce « groupement souple » de messages (par opposition à une chaîne de réponse) représente la conversation « va-et-vient » sur un sujet spécifique.
 
 ## <a name="step-1-create-a-draft-collection"></a>Étape 1 : Créer un brouillon de collection
 
-Une fois que vous avez identifié les dépositaires et les emplacements de contenu pertinents, vous pouvez créer une recherche pour rechercher du contenu potentiellement pertinent. Sous **l’onglet Collections** du Advanced eDiscovery, vous pouvez créer une collection en cliquant sur **Nouvelle collection** et en suivant l’Assistant. Pour plus d’informations sur la création d’une collection, la création d’une requête de recherche et l’aperçu des résultats de la recherche, voir [Créer un brouillon de collection.](create-draft-collection.md)
+Une fois que vous avez identifié les dépositaires et les emplacements de contenu pertinents, vous pouvez créer une recherche pour rechercher du contenu potentiellement pertinent. Sous **l’onglet Collections** Advanced eDiscovery cas, vous pouvez créer une collection en cliquant sur **Nouvelle collection** et en suivant l’Assistant. Pour plus d’informations sur la création d’une collection, la création d’une requête de recherche et l’aperçu des résultats de la recherche, voir [Créer un brouillon de collection.](create-draft-collection.md)
 
 ## <a name="step-2-commit-a-draft-collection-to-a-review-set"></a>Étape 2 : Valider un brouillon de collection dans un jeu à réviser
 
@@ -62,9 +62,9 @@ Après avoir examiné et finalisé la requête de recherche dans une collection,
 
 Lorsque vous ajoutez des éléments de conversations à un jeu à réviser, vous pouvez utiliser l’option de conversations threadées pour collecter des messages contextuels à partir de conversations qui contiennent des éléments qui correspondent aux critères de recherche de la collection. Une fois que vous avez sélectionné l’option conversations de thread, les choses suivantes peuvent se produire :
 
-  ![Récupération de conversation](../media/messagesandconversations.png)
+  ![Récupération de conversation.](../media/messagesandconversations.png)
 
-1. À l’aide d’une requête de mot clé et de plage de dates, la recherche a renvoyé un succès sur *le message 3*. Ce message faisait partie d’une conversation plus importante, illustrée par *CRC1*.
+1. À l’aide d’une requête de mot clé et de plage de dates, la recherche a renvoyé une correspondance sur *le message 3*. Ce message faisait partie d’une conversation plus importante, illustrée par *CRC1*.
 
 2. Lorsque vous ajoutez les données dans un jeu à réviser et activez les options de récupération de conversation, Advanced eDiscovery revenir en arrière et collecter d’autres éléments dans *CRC1*.
 
@@ -76,7 +76,7 @@ Pour activer l’option de conversations threadées, voir [Valider un brouillon 
 
 Une fois que le contenu a été traitée et ajoutée au jeu à réviser, vous pouvez commencer à examiner les données du jeu à réviser. Les messages individuels sont threadés ensemble et présentés en tant que conversations. Cela vous permet de passer en revue et d’exporter des conversations contextuelles.
 
-  ![Ensemble de révision de conversation](../media/ConversationRSOptions.PNG)
+  ![Ensemble de révision de conversation.](../media/ConversationRSOptions.PNG)
 
 Les sections suivantes décrivent l’examen et l’exportation des conversations.
 
@@ -106,7 +106,7 @@ Pour les options que vous pouvez sélectionner lors de l’exportation de conver
 
 Plus précisément, vous pouvez exporter des conversations de conversation entières dans un fichier PDF unique ou vous pouvez exporter chaque message de conversation d’une conversation en tant que fichier individuel.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Pour en savoir plus sur l’examen des données de cas dans Advanced eDiscovery, consultez les articles suivants :
 

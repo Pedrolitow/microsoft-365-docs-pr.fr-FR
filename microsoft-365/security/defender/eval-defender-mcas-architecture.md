@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f79372a210a256720654c92e5ce580d772ef4527
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 591a98e07f47717f0475c88584a161c93198c084
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58249666"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569308"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>Passer en revue les exigences en matière d’architecture et les concepts clés pour Microsoft Cloud App Security
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security est un courtier de sécurité d’accès cloud (CAS
 
 Sans Sécurité des applications cloud, les applications cloud utilisées par votre organisation ne sont pas gestion et ne sont pas protégées, comme illustré.
 
-![Architecture pour les Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture-a.png)
+![Architecture pour Microsoft Cloud App Security.](../../media/defender/m365-defender-mcas-architecture-a.png)
 
 Dans cette illustration :
 - L’utilisation des applications cloud par une organisation n’est pas surveillée et non protégée. 
@@ -55,9 +55,9 @@ Dans cette illustration :
 
 La première étape de gestion de l’utilisation des applications cloud consiste à découvrir les applications cloud utilisées par votre organisation. Le diagramme suivant illustre le fonctionnement de la découverte cloud avec Sécurité des applications cloud.
 
-![Architecture pour Microsoft Cloud App Security : découverte cloud](../../media/defender/m365-defender-mcas-architecture-b.png)
+![Architecture pour Microsoft Cloud App Security : découverte cloud.](../../media/defender/m365-defender-mcas-architecture-b.png)
 
-Dans cette illustration, deux méthodes permettent de surveiller le trafic réseau et de découvrir les applications cloud utilisées par votre organisation.
+Dans cette illustration, deux méthodes peuvent être utilisées pour surveiller le trafic réseau et découvrir les applications cloud utilisées par votre organisation.
 - R : Cloud App Discovery s’intègre à Microsoft Defender pour Endpoint en natif. Defender for Endpoint signale que les applications et services cloud sont accessibles à partir d’appareils gérés par Windows 10 informatique. 
 - B. Pour une couverture sur tous les appareils connectés à un réseau, le collecteur de journaux Sécurité des applications cloud est installé sur les pare-feux et autres proxies pour collecter des données à partir des points de terminaison. Ces données sont envoyées à Sécurité des applications cloud pour analyse.
 
@@ -65,7 +65,7 @@ Dans cette illustration, deux méthodes permettent de surveiller le trafic rése
 
 Après avoir découvert les applications cloud et analysé le comportement de leur utilisation par votre organisation, vous pouvez commencer à gérer les applications cloud de votre choix. 
 
-![Architecture pour Microsoft Cloud App Security : gestion des applications cloud](../../media/defender/m365-defender-mcas-architecture-c.png)
+![Architecture pour Microsoft Cloud App Security - Gestion des applications cloud.](../../media/defender/m365-defender-mcas-architecture-c.png)
 
 Dans cette illustration :
 - Certaines applications sont sanctionn es pour une utilisation. Il s’agit d’un moyen simple de commencer à gérer les applications.
@@ -76,7 +76,7 @@ Dans cette illustration :
 
 Microsoft Cloud App Security sert de proxy inverse, fournissant un accès proxy aux applications cloud sanctionnées. Cela permet aux Sécurité des applications cloud d’appliquer les contrôles de session que vous configurez. 
 
-![Architecture pour Microsoft Cloud App Security : contrôle de session d’accès proxy](../../media/defender/m365-defender-mcas-architecture-d.png)
+![Architecture pour Microsoft Cloud App Security : contrôle de session d’accès proxy.](../../media/defender/m365-defender-mcas-architecture-d.png)
 
 Dans cette illustration :
 - L’accès aux applications cloud prises en compte par les utilisateurs et les appareils de votre organisation est acheminé via Sécurité des applications cloud.
@@ -89,7 +89,7 @@ Les contrôles de session vous permettent d’appliquer des paramètres à la fa
 
 Vous avez peut-être déjà ajouté des applications SaaS à votre client Azure AD pour appliquer l’authentification multifacteur et d’autres stratégies d’accès conditionnel. Microsoft Cloud App Security s’intègre en natif à Azure AD. Il vous s agit de configurer une stratégie dans Azure AD pour utiliser le contrôle d’application d’accès conditionnel Sécurité des applications cloud. Cela approvisionnement du trafic réseau pour ces applications SaaS gérées via Sécurité des applications cloud en tant que proxy, ce qui permet aux Sécurité des applications cloud de surveiller ce trafic et d’appliquer des contrôles de session. 
 
-![Architecture pour Microsoft Cloud App Security - Applications SaaS](../../media/defender/m365-defender-mcas-architecture-e.png)
+![Architecture pour Microsoft Cloud App Security : applications SaaS.](../../media/defender/m365-defender-mcas-architecture-e.png)
 
 Dans cette illustration :
 - Les applications SaaS sont intégrées au client Azure AD. Cela permet à Azure AD d’appliquer des stratégies d’accès conditionnel, notamment l’authentification multifacteur.
@@ -104,7 +104,7 @@ Sécurité des applications cloud offre une protection puissante. Toutefois, lor
 
 Il est utile de répéter cette illustration de la vue d’ensemble à cette Microsoft 365 Defender et à ce guide pilote. 
 
-![Comment Microsoft 365 Defender arrêter une chaîne de menaces](../../media/defender/m365-defender-eval-threat-chain.png)
+![Comment Microsoft 365 Defender arrêter une chaîne de menaces.](../../media/defender/m365-defender-eval-threat-chain.png)
 
 En se concentrant sur le côté droit de cette illustration, Microsoft Cloud App Security remarque un comportement anormal tel que les déplacements impossibles, l’accès aux informations d’identification et le téléchargement inhabituel, le partage de fichiers ou l’activité de transport de courrier, et les signale à l’équipe de sécurité. Par conséquent, Sécurité des applications cloud empêche les déplacements latérals par des pirates informatiques et l’exfiltration de données sensibles. Microsoft 356 Defender met en corrélation les signaux de tous les composants pour fournir l’article complet sur les attaques.
 
@@ -128,7 +128,7 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 
 Pour découvrir les applications cloud utilisées dans votre environnement, vous pouvez :
 
-- Préparez-vous rapidement avec la découverte cloud en intégrant Microsoft Defender pour Endpoint. Cette intégration native vous permet de commencer immédiatement à collecter des données sur le trafic cloud sur vos appareils Windows 10, sur et hors de votre réseau.
+- Préparez-vous rapidement à la découverte cloud en intégrant Microsoft Defender pour Endpoint. Cette intégration native vous permet de commencer immédiatement à collecter des données sur le trafic cloud sur vos appareils Windows 10, sur et hors de votre réseau.
 - Pour découvrir toutes les applications cloud accessibles par tous les appareils connectés à votre réseau, déployez le collecteur de journaux Sécurité des applications cloud sur vos pare-feu et autres proxies. Cela permet de collecter des données à partir de vos points de terminaison et de les envoyer Sécurité des applications cloud pour analyse. Sécurité des applications cloud s’intègre en natif à certains proxies tiers pour encore plus de fonctionnalités.
 
 Ces options sont incluses à [l’étape 2. Activez l’environnement d’évaluation.](eval-defender-mcas-enable-eval.md) 
@@ -139,7 +139,7 @@ Le contrôle d’application d’accès conditionnel (possibilité d’appliquer
 
 ## <a name="siem-integration"></a>Intégration SIEM
 
-Vous pouvez intégrer des Microsoft Cloud App Security à votre serveur SIEM générique ou à Azure Sentinel pour activer la surveillance centralisée des alertes et des activités à partir d’applications connectées. 
+Vous pouvez intégrer Microsoft Cloud App Security à votre serveur SIEM générique ou à Azure Sentinel pour activer la surveillance centralisée des alertes et des activités à partir d’applications connectées. 
 
 En outre, Azure Sentinel inclut un connecteur Microsoft Cloud App Security pour fournir une intégration plus approfondie avec Azure Sentinel. Cela vous permet non seulement de gagner en visibilité sur vos applications cloud, mais également d’obtenir des analyses sophistiquées pour identifier et lutter contre les cybermenaces et contrôler la façon dont vos données circulent.
 

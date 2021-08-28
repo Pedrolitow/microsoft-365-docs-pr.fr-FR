@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 64643873c9032af92d7093d5d75535cf3af118bc
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 7d2c18c080f6f8fc313f17a5e2820b8a8b8a69fa
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509544"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568347"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Vérifier l’état d’état du capteur dans Microsoft Defender pour le point de terminaison
 
@@ -43,9 +43,9 @@ Il existe deux indicateurs d’état sur la vignette qui fournissent des informa
 
 Le fait de cliquer sur l’un des groupes vous dirige vers la liste **Appareils,** filtrée en fonction de votre choix.
 
-![Capture d’écran de la vignette Appareils avec problèmes de capteur](images/atp-devices-with-sensor-issues-tile.png)
+![Capture d’écran de la vignette Appareils avec problèmes de capteur.](images/atp-devices-with-sensor-issues-tile.png)
 
-Dans **la liste Appareils,** vous pouvez filtrer la liste d’état selon l’état suivant :
+Dans **la liste Appareils,** vous pouvez filtrer la liste d’état en fonction de l’état suivant :
 
 - **Actif** : appareils qui font activement des rapports au service Defender for Endpoint.
 - **Mal configuré :** ces appareils peuvent partiellement signaler des données de capteur au service Defender for Endpoint, mais ont des erreurs de configuration qui doivent être corrigées. Les appareils mal configurés peuvent avoir l’un ou l’autre des problèmes suivants :
@@ -58,7 +58,7 @@ Vous pouvez également télécharger la liste entière au format CSV à l’aide
 > [!NOTE]
 > Exportez la liste au format CSV pour afficher les données non filtrées. Le fichier CSV inclut tous les appareils de l’organisation, quel que soit le filtrage appliqué dans l’affichage lui-même et peut prendre beaucoup de temps à télécharger, en fonction de la taille de votre organisation.
 
-![Capture d’écran de la page Liste des appareils](images/atp-devices-list-page.png)
+![Capture d’écran de la page Liste des appareils.](images/atp-devices-list-page.png)
 
 Vous pouvez afficher les détails de l’appareil lorsque vous cliquez sur un appareil mal configuré ou inactif.
 

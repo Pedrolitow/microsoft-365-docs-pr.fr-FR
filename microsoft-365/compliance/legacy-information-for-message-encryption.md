@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Comprendre comment faire passer des fichiers hérités vers chiffrement de messages Office 365 (OME) pour votre organisation.
-ms.openlocfilehash: 6f2b2719a66449f01b3810c8bb65020c49568248de253a7e35b84c8ae283f220
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 324447fe09280cef52c607613f5db8fb61b4a0b2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859835"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569788"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
@@ -51,7 +51,7 @@ Lorsqu’une personne envoie un message électronique Exchange Online qui corres
   
 Le diagramme suivant résume le passage d’un message électronique dans le processus de chiffrement et de déchiffrement.
   
-![Diagramme montrant le cheminement d’un message électronique chiffré](../media/O365-Office365MessageEncryption-Concept.png)
+![Diagramme montrant le chemin d’accès d’un e-mail chiffré.](../media/O365-Office365MessageEncryption-Concept.png)
   
 Pour plus d’informations, consultez les informations de service pour les chiffrement de messages Office 365 antérieures à la publication des [nouvelles fonctionnalités OME.](legacy-information-for-message-encryption.md#LegacyServiceInfo)
   
@@ -71,7 +71,7 @@ Pour plus d’informations sur la création Exchange règles de flux de messager
 
 3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
 
-4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et \>  **sélectionnez Nouvelle** icône Créer une ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
+4. Dans le EAC, sélectionnez Règles de **flux** \> **de** messagerie et **sélectionnez Nouvelle** ![ icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
@@ -83,7 +83,7 @@ Pour plus d’informations sur la création Exchange règles de flux de messager
 
       - Pour sélectionner un nom existant, sélectionnez-le dans la liste et cliquez sur **OK**.
 
-      - Pour entrer un nouveau nom, tapez une adresse e-mail dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
+      - Pour entrer un nouveau nom, tapez une adresse de messagerie dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
 
 7. Pour ajouter d’autres conditions, sélectionnez **Plus d’options,** puis **sélectionnez Ajouter une condition** et sélectionnez dans la liste.
 
@@ -99,7 +99,7 @@ Pour plus d’informations sur la création Exchange règles de flux de messager
 
 1. Connectez-vous à Exchange Online PowerShell. Pour plus d'informations, reportez-vous à [Connexion à Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Créez une règle à l’aide de la cmdlet **New-TransportRule** et définissez _le paramètre ApplyOME_ sur `$true` .
+2. Créez une règle à l’aide de la cmdlet **New-TransportRule** et définissez le _paramètre ApplyOME_ sur `$true` .
 
    Cet exemple exige que tous les messages électroniques envoyés DrToniRamos@hotmail.com soient chiffrés.
 
@@ -127,7 +127,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
 
-4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et \>  **sélectionnez Nouvelle** icône Créer une ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
+4. Dans le EAC, sélectionnez Règles de **flux** \> **de** messagerie et **sélectionnez Nouvelle** ![ icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
 5. In **Name**, type a name for the rule, such as Remove encryption from incoming mail.
 
@@ -135,7 +135,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 7. In **Do the following**, select Modify the message **security** Remove the previous version \> **of OME**.
 
-8. Sélectionnez **Enregistrer**.
+8. Cliquez sur **Enregistrer**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Utiliser Exchange Online PowerShell pour créer une règle pour supprimer le chiffrement des réponses électroniques chiffrées sans les nouvelles fonctionnalités OME
 
@@ -181,7 +181,7 @@ Vous pouvez également rétablir l’apparence par défaut à tout moment.
 L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la pièce jointe d’un message électronique :
 
 > [!div class="mx-imgBorder"]
-> ![Exemple de page de visualisation de message chiffré](../media/TA-OME-3attachment2.jpg)
+> ![Exemple de la page afficher les messages chiffrés.](../media/TA-OME-3attachment2.jpg)
   
 **Pour personnaliser les messages électroniques de chiffrement et le portail de chiffrement avec la marque de votre organisation**
   
@@ -193,10 +193,10 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
 
    | Pour personnaliser cette fonctionnalité de l’expérience de chiffrement | Utiliser ces commandes Windows PowerShell |
    |:-----|:-----|
-   |Texte par défaut qui accompagne les messages électroniques chiffrés  <br/> Texte par défaut qui s’affiche au-dessus des instructions relatives à l’affichage des messages chiffrés  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
-   |Déclaration de non-responsabilité du message électronique qui contient le message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
-   |Texte qui s’affiche en haut du portail d’affichage du message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
-   |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formats de fichier pris en charge : .png, .jpg, .bmp ou .tiff  <br/> Taille optimale du fichier de logo : moins de 40 Ko  <br/> Taille optimale de l’image de logo : 170x70 pixels  <br/> |
+   |Texte par défaut qui accompagne les messages électroniques chiffrés  <br/> Texte par défaut qui s’affiche au-dessus des instructions relatives à l’affichage des messages chiffrés  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
+   |Déclaration de non-responsabilité du message électronique qui contient le message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
+   |Texte qui s’affiche en haut du portail d’affichage du message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
+   |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formats de fichier pris en charge : .png, .jpg, .bmp ou .tiff  <br/> Taille optimale du fichier de logo : moins de 40 Ko  <br/> Taille optimale de l’image de logo : 170x70 pixels  <br/> |
 
 **Pour supprimer les personnalisations de personnalisation des messages électroniques de chiffrement et du portail de chiffrement**
   
@@ -208,8 +208,8 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
 
    | Pour annuler cette fonctionnalité de chiffrement et rétablir le texte et l’image par défaut | Utilisez ces commandes Windows PowerShell |
    |:-----|:-----|
-   |Texte par défaut qui accompagne les messages électroniques chiffrés  <br/> Texte par défaut qui s’affiche au-dessus des instructions relatives à l’affichage des messages chiffrés  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
-   |Déclaration de non-responsabilité du message électronique qui contient le message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
+   |Texte par défaut qui accompagne les messages électroniques chiffrés  <br/> Texte par défaut qui s’affiche au-dessus des instructions relatives à l’affichage des messages chiffrés  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
+   |Déclaration de non-responsabilité du message électronique qui contient le message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
    |Texte qui s’affiche en haut du portail d’affichage du message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Exemple de retour à la valeur par défaut :**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
    |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Exemple de retour à la valeur par défaut :**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
 
@@ -259,7 +259,7 @@ Non, les destinataires externes n’ont pas besoin d’un abonnement pour lire o
   
  **Q. En quoi les chiffrement de messages Office 365 des services RMS (Rights Management Services) sont-ils différents ?**
   
-RMS fournit des fonctionnalités de protection des droits de l’information pour les messages électroniques internes d’une organisation en fournissant des modèles intégrés, tels que : Ne pas forward et Company Confidential. Le chiffrement de messages Office 365 prend en charge le chiffrement des messages électroniques pour ceux envoyés à des destinataires externes et internes.
+RMS offre des fonctionnalités de protection des droits de l’information pour les messages électroniques internes d’une organisation en fournissant des modèles intégrés, tels que : Ne pas faire avancer et Confidentiel de l’entreprise. Le chiffrement de messages Office 365 prend en charge le chiffrement des messages électroniques pour ceux envoyés à des destinataires externes et internes.
   
  **Q. En quoi chiffrement de messages Office 365 est-il différent de S/MIME ?**
   
@@ -297,7 +297,7 @@ Tous les clients EHE ont été mis à niveau vers le chiffrement de messages Of
   
  **Q. Ai-je besoin d’ouvrir des URL, des adresses IP ou des ports dans le pare-feu de mon organisation pour prendre en charge chiffrement de messages Office 365 ?**
   
-Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchange Online afin que votre organisation permette l’authentification des messages chiffrés par Office 365. Pour obtenir la liste des EXCHANGE ONLINE, voir Microsoft 365 [URL et plages d’adresses IP.](../enterprise/urls-and-ip-address-ranges.md)
+Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchange Online afin que votre organisation permette l’authentification des messages chiffrés par Office 365. Pour obtenir la liste Exchange Online URL, voir [Microsoft 365 URL et plages d’adresses IP.](../enterprise/urls-and-ip-address-ranges.md)
   
  **Q. À combien de destinataires puis-je envoyer Microsoft 365 message chiffré ?**
   

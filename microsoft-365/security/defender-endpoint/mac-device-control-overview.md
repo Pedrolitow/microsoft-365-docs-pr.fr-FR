@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 40f783e8a99ef5bcbd3db516f65ff43812e83091fe93ace49562f5b45926afd1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f24a610e82388cead88b68e33b76c6404d68ec9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868407"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570028"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d’appareil pour macOS
 
@@ -64,11 +64,11 @@ La stratégie de contrôle d’appareil peut être utilisée pour :
 - [Personnaliser la cible d’URL pour les notifications dues au contrôle d’appareil](#customize-url-target-for-notifications-raised-by-device-control)
 - [Autoriser ou bloquer les appareils amovibles](#allow-or-block-removable-devices)
 
-### <a name="customize-url-target-for-notifications-raised-by-device-control"></a>Personnaliser la cible d’URL pour les notifications dues au contrôle d’appareil
+### <a name="customize-url-target-for-notifications-raised-by-device-control"></a>Personnaliser la cible d’URL pour les notifications du contrôle d’appareil
 
 Lorsque la stratégie de contrôle d’appareil que vous avez mise en place est appliquée sur un appareil (par exemple, l’accès à un périphérique multimédia amovible est restreint), une notification s’affiche pour l’utilisateur.
 
-![Notification de contrôle d’appareil](images/mac-device-control-notification.png)
+![Notification de contrôle d’appareil.](images/mac-device-control-notification.png)
 
 Lorsque les utilisateurs finaux cliquent sur cette notification, une page web s’ouvre dans le navigateur par défaut. Vous pouvez configurer l’URL qui est ouverte lorsque les utilisateurs finaux cliquent sur la notification.
 
@@ -152,7 +152,7 @@ Ce paramètre peut être définie sur :
 | **Domaine** | `com.microsoft.wdav` |
 | **Clé** | autorisation |
 | **Type de données** | Tableau de chaînes |
-| **Valeurs possibles** | aucune <br/> read <br/> write <br/> execute |
+| **Valeurs possibles** | none <br/> read <br/> write <br/> execute |
 
 #### <a name="restrict-removable-media-by-vendor-product-and-serial-number"></a>Restreindre les médias amovibles par fournisseur, produit et numéro de série
 
@@ -287,19 +287,19 @@ Pour rechercher l’ID du fournisseur, l’ID de produit et le numéro de série
 1. Branchez le périphérique USB pour lequel vous souhaitez rechercher les identificateurs.
 1. Dans le menu de niveau supérieur de macOS, sélectionnez **À propos de ce Mac.**
 
-    ![À propos de ce Mac](images/mac-device-control-lookup-1.png)
+    ![À propos de ce Mac.](images/mac-device-control-lookup-1.png)
 
 1. Sélectionnez **Rapport système**.
 
-    ![Rapport système](images/mac-device-control-lookup-2.png)
+    ![Rapport système.](images/mac-device-control-lookup-2.png)
 
 1. Dans la colonne de gauche, sélectionnez **USB.**
 
-    ![Affichage de tous les périphériques USB](images/mac-device-control-lookup-3.png)
+    ![Affichage de tous les périphériques USB.](images/mac-device-control-lookup-3.png)
 
 1. Sous **Arborescence d’appareils USB,** accédez à l’appareil USB que vous avez branché.
 
-    ![Détails d’un périphérique USB](images/mac-device-control-lookup-4.png)
+    ![Détails d’un périphérique USB.](images/mac-device-control-lookup-4.png)
 
 1. L’ID du fournisseur, l’ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l’ID fournisseur et l’ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x` . Par exemple, dans l’image ci-dessous, l’ID du fournisseur `1000` est et l’ID de produit est `090c` .
 
@@ -348,7 +348,7 @@ Exemple de sortie :
 
 Dans l’exemple ci-dessus, il n’existe qu’un seul périphérique multimédia amovible branché et il dispose d’autorisations et d’autorisations, conformément à la stratégie de contrôle d’appareil qui a été remis à `read` `execute` l’appareil.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Exemples de stratégies de contrôle d’appareil pour Intune](mac-device-control-intune.md)
 - [Exemples de stratégies de contrôle d’appareil pour JAMF](mac-device-control-jamf.md)

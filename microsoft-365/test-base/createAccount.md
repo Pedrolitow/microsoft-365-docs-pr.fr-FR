@@ -14,30 +14,30 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: fb639139e083ed613dea018131e7748cd063e37c
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 114c0809aab3dcd219b49fd015752a8dec166cee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372528"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567987"
 ---
 # <a name="step-1-create-a-test-base-account"></a>Étape 1 : Créer un compte de base de test
 
 Si vous n’avez pas d’abonnement Azure, créez [un compte gratuit](https://azure.microsoft.com/free/) avant de commencer.
 
-## <a name="enter-details-for-test-base-account"></a>Entrer des détails pour le compte de base de test
+## <a name="enter-details-for-test-base-account"></a>Entrer les détails du compte de base de test
  
 1. Recherchez **« Base de test »** dans le portail Azure.
 
-![Créer une image de recherche de compte de base de test](Media/CreateTestAccount1.png)
+![Créez une image de recherche de compte de base test.](Media/CreateTestAccount1.png)
 
 2. Cliquez **sur « Ajouter »** pour créer un compte de base de test.
 
-![Cliquer sur Ajouter pour créer le compte](Media/CreateTestAccount2.png)
+![Cliquez sur Ajouter pour créer le compte.](Media/CreateTestAccount2.png)
 
 3.  Lisez ensuite ```Terms of Use``` la case à cocher pour confirmer votre satisfaction avec le ```Terms of Use``` .
 
-![Examiner les conditions d’utilisation](Media/CreateTestAccount3.png)
+![Examinez les conditions d’utilisation.](Media/CreateTestAccount3.png)
 
 4.  Remplissez les informations correctes selon les conditions suivantes : 
     -   Abonnement : groupe de ressources
@@ -45,11 +45,11 @@ Si vous n’avez pas d’abonnement Azure, créez [un compte gratuit](https://az
 
 **Actuellement, la base de test prend uniquement en charge le niveau De tarification standard.**
 
-![Sélectionner un abonnement, un groupe de ressources et taper dans les détails](Media/CreateTestAccount4.png)
+![Sélectionnez un abonnement, un groupe de ressources et tapez les détails.](Media/CreateTestAccount4.png)
 
 5.  Enfin, cliquez sur ```Review + Create``` pour valider et activer votre compte nouvellement créé.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Passer à l’article suivant pour commencer à l’étape 2 : **Découvrez comment charger votre package.**
 > [!div class="nextstepaction"]

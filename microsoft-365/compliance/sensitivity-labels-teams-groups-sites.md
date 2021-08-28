@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 8c78cf0f8ff49d2b81533e064a16089d8fe75d15
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: edd6aea4aade2378a195aa471ba0aa329afb7582
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400402"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569032"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -50,11 +50,11 @@ Toutefois, le contenu de ces conteneurs n’hérite pas des étiquettes de la cl
 
 Avant d’activer les étiquettes de confidentialité pour les conteneurs et de configurer les étiquettes de confidentialité pour les nouveaux paramètres, les utilisateurs peuvent afficher et appliquer des étiquettes de confidentialité dans leurs applications. Par exemple, à partir de Word :
 
-![Étiquette de confidentialité affichée dans l’application de bureau Word](../media/sensitivity-label-word.png)
+![Étiquette de confidentialité affichée dans l’application de bureau Word.](../media/sensitivity-label-word.png)
 
 Une fois que vous avez activé et configuré des étiquettes de confidentialité pour les conteneurs, les utilisateurs peuvent également voir et appliquer des étiquettes de confidentialité aux sites d’équipe Microsoft, aux groupes Microsoft 365 et aux sites SharePoint. Par exemple, lorsque vous créez un nouveau site d’équipe à partir de SharePoint :
 
-![Étiquette de confidentialité lors de la création d’un site d’équipe à partir de SharePoint](../media/sensitivity-labels-new-team-site.png)
+![Étiquette de confidentialité lors de la création d’un site d’équipe à partir de SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Comment activer les étiquettes de confidentialité pour les conteneurs et synchroniser les étiquettes
 
@@ -78,7 +78,7 @@ Une fois les étiquettes de confidentialité activées pour les conteneurs, comm
 
 1. Suivez les instructions générales pour [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) et assurez-vous de sélectionner **Groupes et sites** pour l’étendue de l’étiquette : 
     
-    ![Options d’étendue d’étiquette de confidentialité pour les fichiers et les e-mails](../media/groupsandsites-scope-options-sensitivity-label.png)
+    ![Options d’étendue d’étiquette de confidentialité pour les fichiers et les e-mails.](../media/groupsandsites-scope-options-sensitivity-label.png)
     
     Lorsque seule l’étendue est sélectionnée pour l’étiquette, celle-ci ne s’affiche pas dans les applications Office qui prennent en charge les étiquettes de confidentialité et ne peuvent pas être appliquées aux fichiers et e-mails. La séparation des étiquettes peut être utile pour les utilisateurs et les administrateurs, mais peut également s’ajouter à la complexité de votre déploiement d’étiquettes.
     
@@ -241,11 +241,11 @@ Les utilisateurs peuvent sélectionner des étiquettes de confidentialité lorsq
 
 [En savoir plus sur les étiquettes de niveau de confidentialité pour Teams](/microsoftteams/sensitivity-labels)
 
-![Le paramètre de confidentialité lors de la création d’une équipe](../media/privacy-setting-new-team.png)
+![Paramètre de confidentialité lors de la création d’une équipe.](../media/privacy-setting-new-team.png)
 
 Une fois l’équipe créée, l’étiquette de confidentialité s’affiche dans le coin supérieur droit de tous les canaux.
 
-![L’étiquette de confidentialité apparaît sur l’équipe](../media/privacy-setting-teams.png)
+![L’étiquette de confidentialité apparaît sur l’équipe.](../media/privacy-setting-teams.png)
 
 Le service applique automatiquement la même étiquette de confidentialité au groupe Microsoft 365 et au site d’équipe SharePoint connecté.
 
@@ -253,13 +253,13 @@ Le service applique automatiquement la même étiquette de confidentialité au g
 
 Dans Outlook sur le web, lorsque vous créez un groupe, vous pouvez sélectionner ou modifier l’option de **Confidentialité** pour les étiquettes publiées :
 
-![Création d’un groupe et sélection d’une option sous Confidentialité](../media/sensitivity-label-new-group.png)
+![Création d’un groupe et sélection d’une option sous Confidentialité.](../media/sensitivity-label-new-group.png)
 
 ### <a name="apply-a-sensitivity-label-to-a-new-site"></a>Appliquez une étiquette de confidentialité à un nouveau site
 
 Les administrateurs et les utilisateurs finaux peuvent sélectionner des étiquettes de confidentialité lorsqu’ils [créent des sites d’équipe et des sites de communication modernes](/sharepoint/create-site-collection), et développent les **Paramètres avancés** :
 
-![Création d’un site et sélection d’une option sous Confidentialité](../media/sensitivity-label-new-communication-site.png)
+![Création d’un site et sélection d’une option sous Confidentialité.](../media/sensitivity-label-new-communication-site.png)
 
 La liste déroulante affiche les noms d’étiquette pour la sélection, et l’icône d’aide affiche tous les noms d’étiquette avec leur info-bulle, ce qui peut aider les utilisateurs à déterminer l’étiquette correcte à appliquer.
 
@@ -305,7 +305,7 @@ Cette série de commandes vous permet d’étiqueter plusieurs sites de votre cl
 
 Pour afficher, trier et effectuer une recherche sur les étiquettes de confidentialité appliquées, utilisez la page **Sites actifs** dans le nouveau Centre d’administration SharePoint. Il se peut que vous deviez tout d’abord ajouter la colonne de **Confidentialité** :
 
-![Colonne Confidentialité de la page Sites actifs](../media/manage-site-sensitivity-labels.png)
+![Colonne Confidentialité de la page Sites actifs.](../media/manage-site-sensitivity-labels.png)
 
 Pour plus d’informations sur la gestion des sites à partir de la page sites actifs, y compris l’ajout d’une colonne, voir [Gérer les sites dans le nouveau centre d’administration SharePoint](/sharepoint/manage-sites-in-new-admin-center).
 

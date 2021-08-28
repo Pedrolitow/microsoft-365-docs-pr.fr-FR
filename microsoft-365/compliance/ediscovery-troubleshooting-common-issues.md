@@ -19,16 +19,16 @@ ms.assetid: ''
 description: Découvrez les étapes de résolution des problèmes de base que vous pouvez suivre pour résoudre les problèmes courants dans Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b4c5389ec650be18c9f65e7fc85f4166a8eef14
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: b562e3d22557133630fa8c7c7d343432736b9f4f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394587"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569608"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, résoudre et résoudre les problèmes eDiscovery courants
 
-Cette rubrique traite des étapes de dépannage de base que vous pouvez effectuer pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus eDiscovery. La résolution de certains de ces scénarios nécessite l’aide du Support Microsoft. Les informations sur le moment où contacter le Support Microsoft sont incluses dans les étapes de résolution.
+Cette rubrique traite des étapes de résolution des problèmes de base que vous pouvez effectuer pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus eDiscovery. La résolution de certains de ces scénarios nécessite l’aide du Support Microsoft. Les informations sur le moment où contacter le Support Microsoft sont incluses dans les étapes de résolution.
 
 ## <a name="errorissue-ambiguous-location"></a>Erreur/problème : emplacement ambigu
 
@@ -56,11 +56,11 @@ Recherchez des utilisateurs en double ou une liste de distribution avec le même
 
 3. Si plusieurs utilisateurs sont renvoyés, recherchez et corrigez l’objet en conflit.
 
-## <a name="errorissue-search-fails-on-specific-locations"></a>Erreur/problème : la recherche échoue à des emplacements spécifiques
+## <a name="errorissue-search-fails-on-specific-locations"></a>Erreur/problème : la recherche échoue sur des emplacements spécifiques
 
 Une recherche de contenu ou eDiscovery peut produire l’erreur suivante : `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
-![Capture d’écran d’erreur d’erreur d’un emplacement spécifique à la recherche](../media/edisc-tshoot-specific-location-search-fails.png)
+![Capture d’écran d’erreur d’erreur d’un emplacement spécifique à la recherche.](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>Résolution
 
@@ -92,7 +92,7 @@ Lors de l’exécution d’une recherche de découverte électronique qui inclut
 
 ## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>Erreur/problème : ce fichier n’a pas été exporté car il n’existe plus. Le fichier a été inclus dans le nombre de résultats de recherche estimés, car il est toujours répertorié dans l’index. Le fichier sera finalement supprimé de l’index et ne provoquera pas d’erreur à l’avenir.
 
-Vous pouvez voir cette erreur lors de l’exécution d’une recherche de découverte électronique qui inclut SharePoint en ligne et OneDrive Entreprise emplacements. eDiscovery s’appuie sur l’index SPO pour identifier les emplacements de fichiers. Si le fichier a été supprimé mais que l’index SPO n’a pas encore été mis à jour, cette erreur peut se produire.
+Vous pouvez voir cette erreur lors de l’exécution d’une recherche eDiscovery qui inclut SharePoint Online et OneDrive Entreprise sites. eDiscovery s’appuie sur l’index SPO pour identifier les emplacements de fichiers. Si le fichier a été supprimé mais que l’index SPO n’a pas encore été mis à jour, cette erreur peut se produire.
 
 ### <a name="resolution"></a>Résolution 
 Ouvrez l’emplacement SPO et vérifiez que ce fichier n’y est pas.
@@ -101,7 +101,7 @@ La solution suggérée consiste à réindexer manuellement le site ou à attendr
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Erreur/problème : ce résultat de recherche n’a pas été téléchargé car il s’agit d’un dossier ou d’un autre artefact qui ne peut pas être téléchargé seul, tous les éléments du dossier ou de la bibliothèque seront téléchargés.
 
-Vous pouvez voir cette erreur lors de l’exécution d’une recherche de découverte électronique qui inclut SharePoint en ligne et OneDrive Entreprise emplacements. Cela signifie que nous allions essayer d’exporter l’élément signalé dans l’index, mais qu’il s’est traduit par un dossier, donc nous ne l’avons pas exporté. Comme mentionné dans l’erreur, nous n’exportons pas les éléments de dossier, mais nous exportons leur contenu.
+Vous pouvez voir cette erreur lors de l’exécution d’une recherche eDiscovery qui inclut SharePoint Online et OneDrive Entreprise sites. Cela signifie que nous allions essayer d’exporter l’élément signalé dans l’index, mais qu’il s’est traduit par un dossier afin de ne pas l’exporter. Comme mentionné dans l’erreur, nous n’exportons pas les éléments de dossier, mais nous exportons leur contenu.
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Erreur/problème : la recherche échoue car le destinataire est in trouvé
 
@@ -159,7 +159,7 @@ Lors de l’exportation des résultats de recherche à partir de core eDiscovery
 
 Lors de l’exécution d’une recherche de découverte électronique, si la recherche échoue continuellement avec une erreur semblable à « Erreur interne du serveur (500) s’est produite », vous devrez peut-être réexécuter la recherche uniquement sur des emplacements de boîtes aux lettres spécifiques.
 
-![Capture d’écran de l’erreur du serveur interne 500](../media/edisc-tshoot-error-500.png)
+![Capture d’écran de l’erreur du serveur interne 500.](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>Résolution
 

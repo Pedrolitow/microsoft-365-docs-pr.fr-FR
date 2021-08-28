@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: cb7478b62797764f25de79cca1d8c261bca351b8
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 8ab1cb9e9d6229931b56042b43ddfbea83231ace
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589323"
+ms.locfileid: "58568275"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender
 
@@ -29,9 +29,9 @@ ms.locfileid: "58589323"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez exécuter une analyse à la demande sur des points de terminaison individuels. Ces analyses démarrent immédiatement et vous pouvez définir des paramètres pour l’analyse, tels que l’emplacement ou le type. Lorsque vous exécutez une analyse, vous pouvez choisir parmi trois types : analyse rapide, analyse complète et analyse personnalisée. Dans la plupart des cas, utilisez une analyse rapide. Une analyse rapide examine tous les emplacements où des programmes malveillants peuvent être enregistrés pour démarrer avec le système, tels que les clés de Registre et les dossiers de démarrage Windows connus.
+Vous pouvez exécuter une analyse à la demande sur des points de terminaison individuels. Ces analyses démarrent immédiatement et vous pouvez définir des paramètres pour l’analyse, tels que l’emplacement ou le type. Lorsque vous exécutez une analyse, vous pouvez choisir parmi trois types : analyse rapide, analyse complète et analyse personnalisée. Dans la plupart des cas, utilisez une analyse rapide. Une analyse rapide examine tous les emplacements où des programmes malveillants peuvent être enregistrés pour démarrer avec le système, tels que les clés de Registre et les dossiers de démarrage Windows connus. 
 
-Combinée à une protection toujours en temps réel, qui examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier, une analyse rapide permet de fournir une protection forte contre les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau. Dans la plupart des cas, une analyse rapide est suffisante et constitue l’option recommandée pour les analyses programmées ou à la demande. [En savoir plus sur les types d’analyse.](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan)
+Combinée à une protection toujours en temps réel, qui examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier, une analyse rapide permet de fournir une protection forte contre les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau. Dans la plupart des cas, une analyse rapide est suffisante et constitue l’option recommandée pour les analyses programmées ou à la demande.  [En savoir plus sur les types d’analyse.](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan)
 
 > [!IMPORTANT]
 > Antivirus Microsoft Defender s’exécute dans le contexte du [compte LocalSystem](/windows/win32/services/localsystem-account) lors de l’analyse locale. Pour les analyses réseau, il utilise le contexte du compte d’appareil. Si le compte d’appareil de domaine ne peut pas accéder au partage, l’analyse ne fonctionne pas. Assurez-vous que l’appareil dispose d’autorisations sur le partage réseau d’accès.
@@ -40,13 +40,13 @@ Combinée à une protection toujours en temps réel, qui examine les fichiers lo
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and log in.
 
-2. Choisissez **l’Antivirus de sécurité des points de** \> **terminaison.**
+2. Choisissez **l’Antivirus de sécurité des points de**  >  **terminaison.**
 
 3. Dans la liste des onglets, sélectionnez Windows 10 points de **terminaison défectueux.**
 
 4. Dans la liste des actions fournies, sélectionnez **Analyse rapide** (recommandée) ou **Analyse complète.**
 
-   [![Analyser les options sous l Windows 10 onglet Points de terminaison défectueux.](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
+[![IMAGE. ](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
 
 > [!TIP]
 > Pour plus d’informations sur l’utilisation Microsoft Endpoint Manager pour exécuter une analyse, voir [Tâches anti-programme](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers)malveillant et pare-feu : Comment effectuer une analyse à la demande .
@@ -65,7 +65,7 @@ Pour plus d’informations sur l’utilisation de l’outil et des paramètres s
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and log in.
 
-2. Dans la barre latérale, sélectionnez **Appareils** \> **tous les appareils** et choisissez l’appareil que vous souhaitez analyser.
+2. Dans la barre latérale, sélectionnez **Appareils**  >  **tous les appareils** et choisissez l’appareil que vous souhaitez analyser.
 
 3. Sélectionnez **... Plus**. Dans les options, sélectionnez **Analyse rapide** (recommandé) ou **Analyse complète.**
 
@@ -88,3 +88,4 @@ Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Micr
 Utilisez la [ **méthode Start** de](/previous-versions/windows/desktop/defender/start-msft-mpscan) la **MSFT_MpScan** classe.
 
 Pour plus d’informations sur les paramètres autorisés, voir [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+

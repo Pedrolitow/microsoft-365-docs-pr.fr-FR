@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1563d44aded4c018a659b70d16800decf4bcd46f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: a1f51fcf497db0ca36a06fdcb5554e5cdc2861d7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533398"
+ms.locfileid: "58569728"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>Optimiser le déploiement et les détections des règles ASR
 
@@ -36,7 +36,7 @@ ms.locfileid: "58533398"
 [Les règles de réduction de la surface](./attack-surface-reduction.md) d’attaque identifient et empêchent les attaques de programmes malveillants classiques. Ils contrôlent quand et comment du code potentiellement malveillant peut s’exécuter. Par exemple, ils peuvent empêcher JavaScript ou VBScript de lancer un exécutable téléchargé, bloquer les appels d’API Win32 à partir de macros Office et bloquer les processus qui s’exécutent à partir de lecteurs USB.
 
 
-:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="Carte de gestion de la surface d’attaque":::
+:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="Carte de gestion de la surface d’attaque.":::
 <br>
 *Carte de gestion de la surface d’attaque*
 
@@ -48,7 +48,7 @@ La *carte de gestion de la surface d’attaque* est un point d’entrée vers le
 
 Sélectionnez **Go to attack surface management** \> **Reports** Attack surface \> **reduction rules** Add \> **exclusions**. À partir de là, vous pouvez accéder à d’autres sections du centre Microsoft 365 sécurité.
 
-![Onglet Ajouter des exclusions dans la page Règles de réduction de la surface d’attaque Microsoft 365 centre de sécurité](images/secconmgmt_asr_m365exlusions.png)<br>
+![Ajoutez l’onglet Exclusions dans la page Règles de réduction de la surface d’attaque Microsoft 365 centre de sécurité.](images/secconmgmt_asr_m365exlusions.png)<br>
 Onglet ***Ajouter des exclusions** dans la page Règles de réduction de la surface d’attaque Microsoft 365 centre de sécurité*
 
 > [!NOTE]

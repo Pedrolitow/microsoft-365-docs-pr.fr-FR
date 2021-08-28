@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: 428211e890bcff816209b003566fc76072749bda
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 404670e42f46b249b748d0a54f882c631c6f91ee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378000"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570076"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -68,7 +68,7 @@ L’[affiche Microsoft 365 pour entreprise](../downloads/Microsoft365Enterprise.
 - Les éléments clés du lieu de travail moderne de Microsoft, que Microsoft 365 pour entreprise permet.
 - La [bibliothèque de productivité Microsoft 365](https://www.microsoft.com/microsoft-365/success/) et des scénarios représentatifs pour certains départements de l'organisation commune.
 
-[![Image pour l'affiche Microsoft 365 pour les entreprises](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
+[![Image pour l'affiche Microsoft 365 pour les entreprises.](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
 
 Vous pouvez également [télécharger une copie de l'affiche ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
 
@@ -77,7 +77,7 @@ Vous pouvez également [télécharger une copie de l'affiche ](https://github.co
 
 Pour avoir une meilleure idée de la manière de faire passer l'ensemble de votre organisation aux produits et services de Microsoft 365 pour entreprise, voir [l'affiche de transition ](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Image pour l'affiche Transition vers Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![Image pour l'affiche Transition vers Microsoft 365.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 Cette affiche de deux pages est un moyen rapide d'inventorier vos infrastructures existantes. Il vous aide à trouver des conseils et à passer au produit ou service correspondant dans Microsoft 365 for enterprise. Il comprend les produits Windows et Office et d'autres éléments d'infrastructure et de sécurité, tels que la gestion des périphériques, l'identité et la protection des informations et des menaces.
 
@@ -94,7 +94,7 @@ Ces produits ont atteint à la fin du support le **13 octobre 2020**:
 
 Pour consulter un résumé visuel des options de mise à niveau, de migration et de déplacement vers le Cloud pour ces produits, voir l’[affiche de fin du support technique](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Image de l’affiche de la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Image de l’affiche de la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 Cette affiche d’une page est un moyen rapide pour connaître les différents chemins que vous pouvez prendre pour empêcher les produits client et serveur Windows 7 et office 2010 d’arriver à la fin de la prise en charge, avec les chemins d’accès et la prise en charge préférés dans Microsoft 365 Entreprise mis en surbrillance.
 
@@ -143,16 +143,16 @@ Optimisez la productivité intégrée et sécurisée de votre utilisateur ’ gr
 
 Voici un exemple d’organisation d’entreprise.
 
-![Organisation d’entreprise avec Microsoft 365, des appareils Surface et le navigateur Edge](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+![Organisation d’entreprise avec Microsoft 365, des appareils Surface et le navigateur Edge.](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
 
 Si vous souhaitez en savoir plus et bénéficier d’exemples de configuration pour une PME et un établissement d’enseignement, veuillez téléchargez [l’affiche Best together (Idéal)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf).
 
-[![Image de l’affiche Best together with Surface and the Edge browser (Idéal avec Surface et le navigateur Edge)](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+[![Image de l’affiche Best together with Surface and the Edge browser (Idéal avec Surface et le navigateur Edge).](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
 
 
-## <a name="microsoft-365-training"></a>Formation Microsoft 365
+## <a name="microsoft-365-training"></a>Formation Microsoft 365
 
-![Formation des principes de base de Microsoft 365](../media/microsoft-365-overview/m365-fundamentals.svg)
+![Formation des principes de base de Microsoft 365.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
 Pour en savoir plus sur Microsoft 365 et travailler à l'obtention d'une certification Microsoft 365, vous pouvez commencer avec[Microsoft 365 Certified : Principes fondamentaux ](/learn/paths/m365-fundamentals/).
 

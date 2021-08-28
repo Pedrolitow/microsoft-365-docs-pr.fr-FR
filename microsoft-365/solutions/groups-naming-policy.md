@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: Découvrez comment créer une stratégie d’attribution de noms pour Microsoft 365 groupes.
-ms.openlocfilehash: 20d993ed4a799c68b33c9187c8b4b2021731e9415c6dc39726543343bec4517a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c13e946644d25fc76745dc2c9f286bf204f6ba1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853082"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568227"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 de noms de groupes
 
@@ -52,7 +52,7 @@ Les préfixes et les suffixes peuvent être des chaînes fixes ou des attributs 
 
 ### <a name="fixed-strings"></a>Chaînes fixes
 
-Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixe courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
+Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixes courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
 
 ### <a name="attributes"></a>Attributs
 
@@ -128,9 +128,9 @@ Pour configurer une stratégie d’attribution de noms :
 5. Choisissez entre **Attribut et** **Chaîne** pour chaque ligne, puis spécifiez l’attribut ou la chaîne.
 6. Lorsque vous avez ajouté les préfixes et les suffixes dont vous avez besoin, cliquez sur **Enregistrer**.
 
-![Capture d’écran des paramètres de stratégie d’attribution de noms de groupes Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Capture d’écran des paramètres de stratégie d’attribution de noms de groupes Azure Active Directory.](../media/groups-naming-policy-azure.png)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

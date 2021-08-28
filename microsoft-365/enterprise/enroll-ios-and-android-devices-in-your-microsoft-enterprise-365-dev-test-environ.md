@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
-description: Utilisez ce Guide de laboratoire de test pour inscrire des appareils dans Microsoft 365 environnement de test et les gérer à distance.
-ms.openlocfilehash: ee7933a5e111b33ac7d3b17c0de2ef14483f9714
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: Utilisez ce guide de laboratoire de test pour inscrire des appareils dans Microsoft 365 environnement de test et les gérer à distance.
+ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356743"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568383"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 entreprise
 
@@ -32,7 +32,7 @@ L’inscription d’appareils iOS/iPadOS et Android dans votre environnement de 
 - [Phase 2 : Inscrire vos appareils iOS/iPadOS et Android](#phase-2-enroll-your-ios-and-android-devices)
 - [Phase 3 : Gérer vos appareils iOS/iPadOS et Android à distance](#phase-3-manage-your-ios-and-android-devices-remotely)
 
-![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
@@ -41,10 +41,10 @@ L’inscription d’appareils iOS/iPadOS et Android dans votre environnement de 
 
 Si vous souhaitez inscrire les appareils iOS/iPadOS et Android de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère.](lightweight-base-configuration-microsoft-365-enterprise.md)
   
-Si vous souhaitez inscrire des appareils iOS/iPadOS et Android dans une entreprise simulée, suivez les instructions de [l’authentification directe.](pass-through-auth-m365-ent-test-environment.md)
+Si vous souhaitez inscrire des appareils iOS/iPadOS et Android dans une entreprise simulée, suivez les instructions de l’authentification [directe.](pass-through-auth-m365-ent-test-environment.md)
   
 > [!NOTE]
-> Le test de la gestion automatisée des licences et de l’appartenance à un groupe ne nécessite pas l’environnement de test d’entreprise simulée, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS (Active Directory Domain Services). Il est fourni ici en tant qu’option pour que vous pouvez tester les licences automatisées et l’appartenance à un groupe, et vous pouvez l’expérimenter dans un environnement qui représente une organisation classique.
+> Le test de la gestion automatisée des licences et de l’appartenance à un groupe ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS (Active Directory Domain Services). Il est fourni ici en tant qu’option pour que vous pouvez tester les licences automatisées et l’appartenance à un groupe, et vous pouvez l’expérimenter dans un environnement qui représente une organisation classique.
 
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Phase 2 : Inscrire vos appareils iOS et Android
 
@@ -53,7 +53,7 @@ Si vous envisagez d’utiliser une solution de gestion des périphériques mobil
 Dans Intune, il existe plusieurs façons d’inscrire vos appareils iOS/iPadOS et Android. Vous pouvez choisir l’option d’inscription qui fonctionne le mieux pour votre organisation. Pour plus d’informations et de conseils, consultez les articles suivants :
 
 - [Guide de déploiement : Inscrire des appareils iOS et iPadOS dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados)
-- [Guide de déploiement : Inscrire des appareils Android dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android)
+- [Guide de déploiement : inscrire des appareils Android dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android)
 
 Si vous êtes prêt à utiliser Intune pour la gestion des appareils et que vous souhaitez obtenir des conseils, les informations suivantes peuvent vous aider :
 
@@ -68,7 +68,7 @@ Microsoft Intune fonctionnalité de verrouillage à distance et de réinitialisa
 - Pour verrouiller à distance un appareil iOS/iPadOS ou Android, voir Verrouiller à distance les appareils [avec Intune.](/mem/intune/remote-actions/device-remote-lock)
 - Pour réinitialiser à distance le code secret, voir Réinitialiser ou supprimer un code [secret d’appareil dans Intune.](/mem/intune/remote-actions/device-passcode-reset)
 
-Pour les autres tâches que vous pouvez exécuter à distance, consultez [les actions de périphérique disponibles.](/mem/intune/remote-actions/device-management#available-device-actions)
+Pour les autres tâches que vous pouvez exécuter à distance, consultez les [actions de périphérique disponibles.](/mem/intune/remote-actions/device-management#available-device-actions)
     
 ## <a name="next-step"></a>Étape suivante
 

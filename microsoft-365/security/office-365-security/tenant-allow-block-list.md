@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à gérer les autoriser et les blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6223720f6977d3c4399ad36e1ad29894feabe63d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 4ff987128047522a5f8cb20a76c81bd950c1b7cf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533686"
+ms.locfileid: "58568731"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -108,7 +108,7 @@ Pour modifier et supprimer tous les blocs et tous les blocs, voir Modifier et su
 
 ### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome
 
-Pour gérer tous les blocs et tous les autoriser, voir Ajouter des blocs dans la liste d’attente [du](manage-tenant-blocks.md)client, Ajouter des autoriser dans la liste des locataires [autoriser/bloquer,](manage-tenant-allows.md)et modifier et supprimer des entrées dans la liste d’inscriptions client [autoriser/bloquer](modify-remove-entries-tenant-allow-block.md).
+Pour gérer tous les blocs et les autoriser, voir Ajouter des blocs dans la liste des locataires [autoriser/bloquer,](manage-tenant-blocks.md)Ajouter des autoriser dans la liste des locataires [autoriser/bloquer,](manage-tenant-allows.md)et modifier et supprimer des entrées dans la liste d’inscriptions client [autoriser/bloquer](modify-remove-entries-tenant-allow-block.md).
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>Afficher les entrées dans la liste des locataires autoriser/bloquer
 
@@ -142,14 +142,14 @@ Pour gérer tous les blocs et tous les autoriser, voir Ajouter des blocs dans la
 
    Vous pouvez cliquer sur un en-tête de colonne pour trier par ordre croissant ou décroit.
 
-   Vous pouvez cliquer sur **Grouper** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
+   Vous pouvez cliquer sur **Groupe** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
 
    - **Expéditeurs**: vous pouvez grouper les résultats par **action.**
    - **URL : vous** pouvez grouper les résultats par **action.**
    - **Fichiers**: vous pouvez grouper les résultats par **action.**
    - **Usurpation :** vous pouvez grouper les résultats par **action** ou **type d’usurpation.**
 
-   Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur ![ Effacer l’icône de recherche ](../../media/m365-cc-sc-close-icon.png) **Effacer la recherche.**
+   Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur ![ Effacer l’icône de recherche.](../../media/m365-cc-sc-close-icon.png) **Effacer la recherche.**
 
    Cliquez **sur Filtrer** pour filtrer les résultats. Les valeurs disponibles dans le flyout **Filter** qui s’affiche dépendent de l’onglet que vous avez sélectionné :
 

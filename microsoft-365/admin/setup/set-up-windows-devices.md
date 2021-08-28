@@ -28,18 +28,18 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Configurer des Windows en cours d Windows 10 Professionnel pour Microsoft 365 Business Premium utilisateurs, ce qui permet de centraliser la gestion et les contrôles de sécurité.
-ms.openlocfilehash: 8c1b8c4c670e5314a5fc524459cbe13c5a3b1db8
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 4b390b1217cd3af7b5f2cc49dc2fb3507a7fe04c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377774"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570172"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurer des Windows pour les utilisateurs Microsoft 365 Business Premium utilisateurs
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Avant de pouvoir configurer des Windows pour les utilisateurs Microsoft 365 Business Premium, assurez-vous que tous les appareils Windows exécutent Windows 10 Professionnel, version 1703 (Creators Update). Windows 10 Professionnel est une condition préalable au déploiement de Windows 10 Business, qui est un ensemble de services cloud et de fonctionnalités de gestion des appareils qui complètent les Windows 10 Professionnel et permettent la gestion centralisée et les contrôles de sécurité de Microsoft 365 Business Premium.
+Avant de pouvoir configurer des Windows pour les utilisateurs Microsoft 365 Business Premium, assurez-vous que tous les appareils Windows exécutent Windows 10 Professionnel version 1703 (Creators Update). Windows 10 Professionnel est une condition préalable au déploiement de Windows 10 Business, qui est un ensemble de services cloud et de fonctionnalités de gestion des appareils qui complètent les Windows 10 Professionnel et permettent la gestion centralisée et les contrôles de sécurité de Microsoft 365 Business Premium.
   
 Si vous avez des appareils Windows exécutant Windows 7 Pro, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement Microsoft 365 Business Premium vous donne droit à une mise à niveau Windows 10 niveau.
   
@@ -63,7 +63,7 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
   
 1. Suivez la configuration d'appareil Windows 10 jusqu'à ce que vous arriviez à la page **Comment souhaitez-vous configurer ?** 
     
-    ![On the How would you like to set up page, choose Set up for an organization](../../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
+    ![On the How would you like to set up page, choose Set up for an organization.](../../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
 2. Ici, **sélectionnez Configurer pour une** organisation, puis entrez votre nom d’utilisateur et votre mot de passe pour Microsoft 365 Business Premium. 
     
@@ -77,31 +77,31 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
   
 1. Sur le PC Windows de l'utilisateur exécutant Windows 10 Professionnel, version 1703 (Creators Update) (voir [conditions préalables](../security-and-compliance/pre-requisites-for-data-protection.md)), cliquez sur le logo Windows, puis sur l'icône Paramètres.
   
-   ![In the Start menu, click Windows Settings icon](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
+   ![Dans la menu Démarrer, cliquez sur Windows Paramètres icône.](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
 2. Dans **Paramètres**, accédez à **Comptes**.
   
-   ![In Windows Settings, go to Accounts](../../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
+   ![Dans Windows Paramètres, allez à Comptes.](../../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
   
 3. À la page **Vos informations**, cliquez sur **Accès Professionnel ou Scolaire** \> **Connexion**.
   
-   ![Choose Connect under Access work or school](../../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
+   ![Choisissez Connecter sous Accès Travail ou Scolaire.](../../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
 4. Dans la boîte de dialogue **Configurer un compte professionnel ou scolaire**, sous **Autres actions**, sélectionnez **Joindre cet appareil à Azure Active Directory**.
   
-   ![Click Join this device to Azure Active Directory](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
+   ![Cliquez sur Joindre cet appareil pour Azure Active Directory.](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
 5. À la **page de connexion**, entrez votre adresse e-mail professionnelle ou scolaire \> **Suivant**.
   
    Dans la page **Saisie du mot de passe**, entrez votre mot de passe \> **Se connecter**.
   
-   ![Enter your work or school email on the Let's get you signed in page](../../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
+   ![Entrez votre courrier électronique scolaire ou scolaire sur la page Vous aider à vous inscrire.](../../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
 6. Dans la page **Vérifier qu’il s’agit de votre** organisation, vérifiez que les informations sont correctes, puis sélectionnez **Rejoindre**.
   
    Sur le **you’re all set!** page, chosse **done**.
   
-   ![Dans l’écran Assurez-vous qu’il s’agit de votre organisation, sélectionnez Rejoindre](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![Dans l’écran Assurez-vous qu’il s’agit de l’écran de votre organisation, sélectionnez Rejoindre.](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
 Si vous avez chargé des fichiers vers OneDrive Entreprise, synchronisez-les vers votre ordinateur. Si vous avez utilisé un outil tiers pour migrer des profils et des fichiers, synchronisez-les également avec le nouveau profil.
   
@@ -109,11 +109,11 @@ Si vous avez chargé des fichiers vers OneDrive Entreprise, synchronisez-les ver
 
 Pour vérifier votre état de synchronisation, sur la page **Access**  professionnel ou scolaire dans **Paramètres**, sélectionnez la zone Connecté à _ _ pour exposer les boutons Informations et \<organization name\> **Déconnexion.**  Choisissez **Info** pour obtenir votre état de synchronisation. 
   
-Dans la page **État de synchronisation,** sélectionnez **Synchroniser** pour obtenir les dernières stratégies de gestion des appareils mobiles sur le PC.
+Dans la page **État de la** synchronisation, sélectionnez **Synchroniser** pour obtenir les dernières stratégies de gestion des appareils mobiles sur le PC.
   
-Pour commencer à utiliser le compte Microsoft 365 Business Premium, cliquez  avec le bouton Windows démarrer, cliquez avec le bouton droit sur l’image de votre compte actuel, puis changez **de compte.** Connectez-vous en utilisant l'adresse e-mail et le mot de passe de votre organisation.
+Pour commencer à utiliser le compte Microsoft 365 Business Premium, cliquez  avec le bouton Windows démarrer, cliquez avec le bouton droit sur l’image de votre compte actuel, puis changez **de compte.** Connectez-vous à l’aide de l’e-mail et du mot de passe de votre organisation.
   
-![Click Info button to view synchronization status](../../media/818f7043-adbf-402a-844a-59d50034911d.png)
+![Cliquez sur le bouton Informations pour afficher l’état de synchronisation.](../../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Vérifiez que le PC est mis à niveau vers Windows 10 Business
 
@@ -125,7 +125,7 @@ Vérifiez que vos appareils joints à Azure AD Windows 10 sont mis à niveau ver
     
     ![Verify that Windows edition is Windows 10 Business.](../../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour configurer vos appareils mobiles, voir Configurer des appareils mobiles pour les utilisateurs [Microsoft 365 Business Premium](set-up-mobile-devices.md), Pour définir des stratégies de protection des appareils ou d’application, voir Gérer Microsoft 365 [entreprise.](/admin/index.yml)
   

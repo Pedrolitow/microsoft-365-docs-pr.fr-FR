@@ -20,12 +20,12 @@ ms.custom: ''
 localization_priority: Priority
 recommendations: false
 description: Découvrez les options pour limiter ou désactiver le partage dans Microsoft 365.
-ms.openlocfilehash: fbbf5630938c89d71a0b09c21cb1f1b2360faa510109796b44b354daa4b878cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ba7bd7796e0c70b91f7f1c5073e8f51cd5d778be
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827933"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569272"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limiter le partage dans Microsoft 365
 
@@ -71,7 +71,7 @@ Pour désactiver le partage avec les invités pour les groupes Microsoft 365
 3. Désactivez les cases à cocher **Permettre aux membres du groupe à l’extérieur de votre organisation à accéder au contenu de groupe** et **Permettre aux propriétaires de groupe d’ajouter des personnes extérieures à votre organisation à des groupes**.
 4. Cliquez sur **Enregistrer les modifications**.
 
-    ![Capture d’écran des paramètres de partage des groupes Microsoft 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings-off.png)
+    ![Capture d’écran des paramètres de partage des groupes Microsoft 365 dans le Centre d’administration Microsoft 365.](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
 > Si vous souhaitez empêcher le partage d’invités pour un groupe ou une équipe spécifique, vous pouvez utiliser [Microsoft PowerShell](per-group-guest-access.md) ou des [étiquettes de confidentialité](../compliance/sensitivity-labels-teams-groups-sites.md).
@@ -84,7 +84,7 @@ Pour autoriser uniquement les invitations de partage à partir de domaines spéc
 3. Sous **Restrictions de collaboration**, sélectionnez **Refuser les invitations aux domaines spécifiés** ou **Autoriser les invitations uniquement aux domaines spécifiés**, puis tapez les domaines que vous voulez utiliser.
 4. Cliquez sur **Enregistrer**.
 
-    ![Capture d’écran des paramètres de restrictions de collaboration dans Azure Active Directory](../media/azure-ad-allow-only-specified-domains.png)
+    ![Capture d’écran des paramètres de restrictions de collaboration dans Azure Active Directory.](../media/azure-ad-allow-only-specified-domains.png)
 
 ## <a name="sharepoint-site"></a>Site SharePoint
 
@@ -96,7 +96,7 @@ Pour limiter le partage de sites aux propriétaires
 3. Sélectionnez les **Propriétaires et membres du site, et les personnes disposant des autorisations de modification peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site**.
 4. Cliquez sur **Enregistrer**.
 
-    ![Capture d’écran des paramètres d’autorisations de partage dans un site SharePoint](../media/sharepoint-site-sharing-permissions-level-two.png)
+    ![Capture d’écran des paramètres d’autorisations de partage dans un site SharePoint.](../media/sharepoint-site-sharing-permissions-level-two.png)
 
 Vous pouvez empêcher les utilisateurs qui ne sont pas membres du site de demander l’accès en désactivant les demandes d’accès.
 
@@ -115,7 +115,7 @@ Pour limiter le partage de sites par domaine
 5. Ajoutez les domaines que vous voulez autoriser ou bloquer, puis cliquez sur **Enregistrer**.
 6. Cliquez sur **Enregistrer**.
 
-    ![Capture d’écran des domaines autorisés-paramètre au niveau du site](../media/limit-site-sharing-by-domain.png)
+    ![Capture d’écran du paramètre au niveau du site des domaines autorisés.](../media/limit-site-sharing-by-domain.png)
 
 ### <a name="block-access-to-a-site"></a>Bloquer l’accès à la site
 
@@ -135,7 +135,7 @@ Pour limiter le partage du site, des fichiers et des dossiers aux propriétaires
 3. Sélectionnez **Seuls les propriétaires de site peuvent partager des fichiers, des dossiers et le site**.
 4. Cliquez sur **Enregistrer**.
 
-    ![Capture d’écran des paramètres d’autorisations de partage d’un site SharePoint définis sur propriétaires uniquement](../media/sharepoint-site-only-site-owners-can-share.png)
+    ![Capture d’écran des paramètres d’autorisations de partage d’un site SharePoint définis sur propriétaires uniquement.](../media/sharepoint-site-only-site-owners-can-share.png)
 
 ## <a name="sharepoint-guest-sharing"></a>Partage d’invités SharePoint
 
@@ -146,7 +146,7 @@ Pour désactiver le partage d’invités SharePoint pour votre organisation
 2. Sous **Partage externe**, faites glisser le curseur SharePoint vers le **Uniquement les membres de votre organisation.**.
 3. Cliquez sur **Enregistrer**.
 
-    ![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation définis sur Tout le monde](../media/sharepoint-tenant-sharing-off.png)
+    ![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation définis sur Tout le monde.](../media/sharepoint-tenant-sharing-off.png)
 
 
 Pour désactiver le partage d’invités pour un site
@@ -155,7 +155,7 @@ Pour désactiver le partage d’invités pour un site
 3. Sous l’onglet **Stratégies**, sous **Partage externe** cliquez sur **Modifier**.
 4. Sous **Partage externe**, sélectionnez **Uniquement les membres de votre organisation**, puis cliquez sur **Enregistrer**.
 
-    ![Capture d’écran des paramètres de partage au niveau du site SharePoint définis sur Uniquement les membres de votre organisation](../media/sharepoint-site-external-sharing-settings-off.png)
+    ![Capture d’écran des paramètres de partage au niveau du site SharePoint définis sur Uniquement les membres de votre organisation.](../media/sharepoint-site-external-sharing-settings-off.png)
 
 Vous pouvez désactiver le partage invité pour un utilisateur OneDrive individuel en cliquant sur l’utilisateur dans le Centre d’administration Microsoft 365 et en sélectionnant **Gérer le partage externe** sous l’onglet **OneDrive**.
 
@@ -166,7 +166,7 @@ Pour désactiver les liens *Tout le monde* au niveau de l’organisation
 2. Sous **Partage externe**, faites glisser le curseur SharePoint vers le **Invités nouveaux et existants**.
 3. Cliquez sur **Enregistrer**.
 
-    ![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation définis sur Invités nouveaux et existants](../media/sharepoint-guest-sharing-new-existing-guests.png)
+    ![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation définis sur Invités nouveaux et existants.](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
 Pour désactiver les liens *Tout le monde* d’un site
 1. Dans le Centre d’administration SharePoint, sous **Sites**, cliquez sur **Sites actifs**.
@@ -174,7 +174,7 @@ Pour désactiver les liens *Tout le monde* d’un site
 3. Sous l’onglet **Stratégies**, sous **Partage externe** cliquez sur **Modifier**.
 4. Sous **Partage externe**, choisissez **Invités nouveaux et existants**, puis cliquez **Enregistrer**.
 
-    ![Capture d’écran des paramètres de partage SharePoint au niveau du site définis sur Paramètres nouveaux et existants](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
+    ![Capture d’écran des paramètres de partage SharePoint au niveau du site définis sur Paramètres nouveaux et existants.](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 
 ## <a name="people-in-your-organization-sharing-links"></a>*Membres de votre organisation* partage de liens
 

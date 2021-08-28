@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment utiliser les diagnostics de page pour optimiser les performances des composants Web SharePoint pages de sites modernes en ligne.
-ms.openlocfilehash: bfa508840045d9222798254e02e1363ea5b480829605f82e3cbd211846dc9d3d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93d92f6aecaa2b791823d689e53e57b92f8ed043
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878718"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568683"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des composants WebPart dans les pages de sites modernes SharePoint Online
 
@@ -52,11 +52,11 @@ Les résultats possibles sont les suivants :
 
 Si le résultat **Les composants WebPart ont un impact sur le temps de chargement de la page** s’affiche dans la section des résultats **Attention requise** ou **Possibilités d’amélioration**, cliquez sur le résultat pour afficher les détails sur les composants WebPart qui chargent lentement. Les mises à jour ultérieures de l’outil Diagnostic de page pour SharePoint peuvent inclure des mises à jour des règles d’analyse. Vérifiez donc que vous disposez toujours de la dernière version de l’outil.
 
-![Résultats de l’outil Diagnostic de page](../media/modern-portal-optimization/pagediag-web-part.png)
+![Résultats de l’outil Diagnostic de page.](../media/modern-portal-optimization/pagediag-web-part.png)
 
 Les informations disponibles dans les résultats incluent les éléments suivants :
 
-- **L’élément «** Made by » indique si le partie Web Est personnalisé ou Microsoft OOTB.
+- **L’élément** « Made by » indique si le partie Web Est personnalisé ou Microsoft OOTB.
 - **Le nom et l’ID** indiquent les informations d’identification qui peuvent vous aider à trouver le partie Web Sur la page.
 - **Total** indique la durée totale du chargement, de l’initialisation et du rendu du module par le partie Web. Il s’agit du temps relatif total pris par le partie Web Pour restituer sur la page, du début à la fin.
 - **La charge du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
@@ -99,7 +99,7 @@ Il existe trois catégories de causes possibles pour expliquer les faibles perfo
 
 Avant d’apporter des révisions de page pour résoudre les problèmes de performances, notez le temps de chargement des pages dans les résultats de l’analyse. Exécutez à nouveau l’outil après votre révision pour déterminer si le nouveau résultat est inclus dans la norme de référence et vérifier le nouveau temps de chargement des pages pour voir s’il y a eu une amélioration.
 
-![Résultats du temps de chargement des pages](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Résultats du temps de chargement de page.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Le temps de chargement des pages peut varier en fonction de nombreux facteurs tels que la charge réseau, l’heure de la journée et d’autres conditions transitoires. Vous devez tester le temps de chargement des pages plusieurs fois avant et après avoir apporté des modifications pour vous aider à faire la moyenne des résultats.

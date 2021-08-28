@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 17b850cb26e9743afc807e3d72e3067eec2c7bd1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7338292b784cdad17548efc3dd148f3ea6a72b28
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256893"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568263"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Essayer Microsoft 365 Defender fonctionnalités de réponse aux incidents dans un environnement pilote
 
@@ -41,7 +41,7 @@ Une fois que vous avez effectué une réponse [aux incidents](eval-defender-inve
 |Fonctionnalité |Description |
 |:-------|:-----|
 | [Hiérarchiser les incidents](#prioritize-incidents) | Utilisez le filtrage et le tri de la file d’attente des incidents pour déterminer les incidents à traiter par la suite. |
-| [Gérer des incidents](#manage-incidents) | Modifiez les propriétés d’incident pour garantir une affectation correcte, ajouter des balises et des commentaires et résoudre un incident. |
+| [Gérer des incidents](#manage-incidents) | Modifier les propriétés d’incident pour garantir une affectation correcte, ajouter des balises et des commentaires et résoudre un incident. |
 | [Examen et réponse automatisés](#examine-automated-investigation-and-response-with-the-action-center) | Fonctionnalités d’investigation et de réponse automatisées (AIR) qui peuvent aider votre équipe des opérations de sécurité à gérer les menaces plus efficacement. Le centre de mise en œuvre est une expérience de « volet unique » pour les tâches d’incident et d’alerte, telles que l’approbation des actions de correction en attente. |
 | [Repérage avancé](#advanced-hunting) | Outil de recherche de menace basé sur une requête qui vous permet d’inspecter de manière proactive les événements de votre réseau et de localiser les indicateurs et entités de menace. Vous utilisez également la recherche avancée pendant l’examen et la correction d’un incident. |
 
@@ -50,7 +50,7 @@ Une fois que vous avez effectué une réponse [aux incidents](eval-defender-inve
 
 Vous pouvez vous rendre dans la file d’attente des incidents à partir **d’incidents & alertes** > Incidents sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident.":::
 
 La section **Incidents et alertes** les plus récents présente un graphique du nombre d’alertes reçues et d’incidents créés au cours des dernières 24 heures.
 
@@ -58,11 +58,11 @@ Pour examiner la liste des incidents et hiérarchiser leur importance pour l’a
 
 - Configurez des colonnes personnalisables **(sélectionnez** Sélectionner des colonnes) pour vous donner une visibilité sur les différentes caractéristiques de l’incident ou des entités impactées. Cela vous permet de prendre une décision éclairée concernant la hiérquage des incidents à analyser.
 
-- Utilisez le filtrage pour vous concentrer sur un scénario ou une menace spécifique. L’application de filtres à la file d’attente des incidents peut aider à déterminer les incidents qui nécessitent une attention immédiate. 
+- Utilisez le filtrage pour vous concentrer sur un scénario ou une menace spécifique. L’application de filtres à la file d’attente d’incidents peut aider à déterminer les incidents qui nécessitent une attention immédiate. 
 
 Dans la file d’attente des incidents par défaut, sélectionnez **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un ensemble spécifique d’incidents. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet Filtres de la file d’attente des incidents":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet filtres de la file d’attente des incidents.":::
 
 Pour plus d’informations, voir [Hiérarchiser les incidents.](incident-queue.md)
 
@@ -70,7 +70,7 @@ Pour plus d’informations, voir [Hiérarchiser les incidents.](incident-queue.m
 
 Vous pouvez gérer les incidents à partir du **volet Gérer les incidents** pour un incident. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Exemple du volet Gérer les incidents d’un incident":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Exemple du volet Gérer les incidents d’un incident.":::
 
 Vous pouvez afficher ce volet à partir du lien **Gérer l’incident** sur :
 
@@ -101,7 +101,7 @@ Voici comment gérer vos incidents :
   
 - Ajouter des commentaires
 
-  Utilisez des commentaires pour l’avancement, des notes ou d’autres informations en fonction des meilleures pratiques de votre équipe de sécurité. L’historique complet des  commentaires est disponible à partir de l’option Commentaires et historique dans la page de détails d’un incident.
+  Utilisez des commentaires pour l’avancement, des notes ou d’autres informations en fonction des meilleures pratiques de votre équipe de sécurité. L’historique complet des commentaires est disponible à partir de l’option **Commentaires** et historique dans la page de détails d’un incident.
 
 Pour plus d’informations, [voir Gérer les incidents.](manage-incidents.md)
 
@@ -111,11 +111,11 @@ Selon la façon dont les fonctionnalités d’examen et de réponse automatisée
 
 Voici un exemple.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée dans Microsoft 365 Defender":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée dans Microsoft 365 Defender.":::
 
 Dans le centre de l’action, vous pouvez sélectionner les actions en attente, puis les approuver ou les rejeter dans le volet volant. Voici un exemple.
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Approuver ou rejeter une action":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Approuver ou rejeter une action.":::
 
 Approuver (ou rejeter) les actions en attente dès que possible afin que vos enquêtes automatisées se poursuivent et se terminent en temps voulu.
 
@@ -131,7 +131,7 @@ Pour plus d’informations, voir [Centre d’enquête](m365d-autoir.md) et de r�
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 
-Si la simulation d’attaque [PowerShell](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) sans fichier facultative était une attaque réelle qui avait déjà atteint la phase d’accès aux informations d’identification, vous pouvez utiliser le recherche avancée à tout moment dans l’examen pour rechercher de manière proactive les événements et les enregistrements dans le réseau à l’aide de ce que vous connaissez déjà des alertes générées et des entités concernées. 
+Si la simulation d’attaque [PowerShell](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) sans fichier facultative était une attaque réelle qui avait déjà atteint la phase d’accès aux informations d’identification, vous pouvez utiliser le recherche avancée à tout moment dans l’examen pour rechercher de manière proactive les événements et les enregistrements dans le réseau à l’aide de ce que vous connaissez déjà des alertes générées et des entités affectées. 
 
 Par exemple, en fonction des informations de l’alerte de reconnaissance d’adresses IP et d’utilisateurs [(SMB),](eval-defender-investigate-respond-simulate-attack.md#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity) vous pouvez utiliser le tableau pour rechercher tous les événements d’éumération de session SMB ou rechercher d’autres activités de découverte dans différents autres protocoles dans Microsoft Defender pour les données d’identité à l’aide du `IdentityDirectoryEvents` `IdentityQueryEvents` tableau.
 
@@ -186,12 +186,12 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
       > [!NOTE]
       > Consultez l’étape suivante pour les options de filtrage pour limiter le retour de données.
 
-      ![Exemple de résultats de requête de recherche avancée](../../media/mtp/fig19.png)
+      ![Exemple de résultats de requête de recherche avancée.](../../media/mtp/fig19.png)
 
         > [!NOTE]
         > Le recherche avancée affiche les résultats de la requête sous la mesure de données tabulaires. Vous pouvez également choisir d’afficher les données dans d’autres types de formats tels que les graphiques.
 
-   1. Consultez les résultats et déterminez si vous pouvez identifier l’e-mail que vous avez ouvert. L’exposition du message en mode de recherche avancée peut prendre jusqu’à deux heures. Pour affiner les résultats, vous pouvez ajouter la condition **where** à votre requête pour rechercher uniquement les e-mails dont le domaine SenderMailFromDomain est « yahoo.com ». Voici un exemple.
+   1. Consultez les résultats et déterminez si vous pouvez identifier l’e-mail que vous avez ouvert. L’exposition du message dans un recherche avancée peut prendre jusqu’à deux heures. Pour affiner les résultats, vous pouvez ajouter la condition **where** à votre requête pour rechercher uniquement les e-mails dont le domaine SenderMailFromDomain est « yahoo.com ». Voici un exemple.
 
       ```console
       EmailEvents
@@ -200,11 +200,11 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
 
    1. Cliquez sur les lignes résultantes de la requête pour pouvoir inspecter l’enregistrement.
 
-      ![Exemple de panneau latéral d’inspection de l’enregistrement qui s’ouvre lorsqu’un résultat de recherche avancé est sélectionné](../../media/mtp/fig21.png)
+      ![Exemple de panneau latéral d’inspection de l’enregistrement qui s’ouvre lorsqu’un résultat de recherche avancé est sélectionné.](../../media/mtp/fig21.png)
 
 4. Maintenant que vous avez vérifié que vous pouvez voir le message électronique, ajoutez un filtre pour les pièces jointes. Concentrez-vous sur tous les e-mails avec pièces jointes dans l’environnement. Pour cette simulation, concentrez-vous sur les e-mails entrants, et non sur ceux envoyés à partir de votre environnement. Supprimez les filtres que vous avez ajoutés pour localiser votre message et ajoutez « | où **AttachmentCount > 0** et **EmailDirection**  ==  **« Entrant »**
 
-   La requête suivante affiche le résultat avec une liste plus courte que votre requête initiale pour tous les événements de courrier électronique :
+   La requête suivante vous montre le résultat avec une liste plus courte que votre requête initiale pour tous les événements de courrier électronique :
 
    ```console
    EmailEvents
@@ -213,7 +213,7 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
 
 5. Ensuite, incluez les informations sur la pièce jointe (telles que : nom de fichier, hèses) à votre jeu de résultats. Pour ce faire, joignez la table **EmailAttachmentInfo.** Les champs communs à utiliser pour la jointage, dans ce cas sont **NetworkMessageId** et **RecipientObjectId**.
 
-   La requête suivante inclut également une ligne supplémentaire « | **renommez emailTimestamp=Timestamp**« qui vous aidera à identifier l’timestamp qui était lié à l’e-mail par rapport aux timestamps liés aux actions de fichier que vous ajouterez à l’étape suivante.
+   La requête suivante inclut également une ligne supplémentaire « | **renommer par projet EmailTimestamp=Timestamp**« qui vous aidera à identifier l’intervalle d’heure qui était lié à l’e-mail par rapport aux timestamps liés aux actions de fichier que vous ajouterez à l’étape suivante.
 
    ```console
    EmailEvents
@@ -237,7 +237,7 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
 
    Vous avez maintenant créé une requête qui identifiera tous les e-mails entrants dans lequel l’utilisateur a ouvert ou enregistré la pièce jointe. Vous pouvez également affiner cette requête pour filtrer des domaines d’expéditeur, des tailles de fichiers, des types de fichiers, etc. spécifiques.
 
-7. Les fonctions sont un type spécial de jointage, qui vous permet de tirer plus de données TI sur un fichier comme sa prévalence, les informations sur le signataire et l’émetteur, etc. Pour obtenir plus de détails sur le fichier, utilisez l’enrichissement de fonction **FileProfile()** :
+7. Les fonctions sont un type spécial de jointage, qui vous permet d’en tirer plus de données TI sur un fichier comme sa prévalence, ses informations sur le signataire et l’émetteur, etc. Pour obtenir plus de détails sur le fichier, utilisez l’enrichissement de fonction **FileProfile()** :
 
     ```console
     EmailEvents
@@ -258,40 +258,40 @@ Les détections personnalisées exécutent la requête en fonction de la fréque
 
 1. Dans la page de requête, supprimez les lignes 7 et 8 qui ont été ajoutées à l’étape 7 des instructions de repérage d’aller, puis cliquez sur Créer **une règle de détection.**
 
-   ![Exemple d’endroit où vous pouvez cliquer sur créer une règle de détection dans la page de repérage avancé](../../media/mtp/fig22.png)
+   ![Exemple d’endroit où vous pouvez cliquer sur créer une règle de détection dans la page de repérage avancé.](../../media/mtp/fig22.png)
 
    > [!NOTE]
    > Si vous cliquez **sur Créer une règle de détection** et que vous avez des erreurs de syntaxe dans votre requête, votre règle de détection ne sera pas enregistrée. Vérifiez votre requête pour vous assurer qu’il n’y a aucune erreur.
 
 2. Remplissez les champs requis avec les informations qui permettront à l’équipe de sécurité de comprendre l’alerte, pourquoi elle a été générée et les actions que vous attendez qu’elle prenne.
 
-   ![Exemple de page créer une règle de détection dans laquelle vous pouvez définir les détails de l’alerte](../../media/mtp/fig23.png)
+   ![Exemple de page de création de règle de détection dans laquelle vous pouvez définir les détails de l’alerte.](../../media/mtp/fig23.png)
 
    Veillez à remplir les champs avec clarté pour aider l’utilisateur suivant à prendre une décision éclairée sur cette alerte de règle de détection.
 
 3. Sélectionnez les entités qui sont impactées dans cette alerte. Dans ce cas, sélectionnez **Appareil** et boîte aux **lettres.**
 
-   ![Exemple de page créer une règle de détection dans laquelle vous pouvez choisir les paramètres des entités impactées](../../media/mtp/fig24.png)
+   ![Exemple de page créer une règle de détection dans laquelle vous pouvez choisir les paramètres des entités impactées.](../../media/mtp/fig24.png)
 
 4. Déterminez les actions à prendre si l’alerte est déclenchée. Dans ce cas, exécutez une analyse antivirus, même si d’autres actions peuvent être prises.
 
-   ![Exemple de page créer une règle de détection dans laquelle vous pouvez exécuter une analyse antivirus lorsqu’une alerte est déclenchée pour aider à résoudre les menaces](../../media/mtp/fig25.png)
+   ![Exemple de page créer une règle de détection dans laquelle vous pouvez exécuter une analyse antivirus lorsqu’une alerte est déclenchée pour aider à résoudre les menaces.](../../media/mtp/fig25.png)
 
-5. Sélectionnez l’étendue de la règle d’alerte. Étant donné que cette requête implique des appareils, les groupes d’appareils sont pertinents dans cette détection personnalisée en fonction du contexte du point de terminaison Microsoft Defender pour Endpoint. Lors de la création d’une détection personnalisée qui n’inclut pas les appareils en tant qu’entités touchées, l’étendue ne s’applique pas.
+5. Sélectionnez l’étendue de la règle d’alerte. Étant donné que cette requête implique des appareils, les groupes d’appareils sont pertinents dans cette détection personnalisée en fonction du contexte microsoft Defender pour point de terminaison. Lors de la création d’une détection personnalisée qui n’inclut pas les appareils en tant qu’entités touchées, l’étendue ne s’applique pas.
 
-   ![Exemple de page créer une règle de détection dans laquelle vous pouvez définir l’étendue de la règle d’alerte gère vos attentes pour les résultats que vous verrez](../../media/mtp/fig26.png)
+   ![Exemple de page de création de règle de détection dans laquelle vous pouvez définir l’étendue de la règle d’alerte gère vos attentes pour les résultats que vous verrez.](../../media/mtp/fig26.png)
 
    Pour ce projet pilote, vous pouvez limiter cette règle à un sous-ensemble d’appareils de test dans votre environnement de production.
 
 6. Sélectionnez **Créer**. Sélectionnez ensuite **des règles de détection personnalisées** dans le panneau de navigation.
 
-   ![Exemple d’option de règles de détection personnalisées dans le menu](../../media/mtp/fig27a.png)
+   ![Exemple d’option de règles de détection personnalisées dans le menu.](../../media/mtp/fig27a.png)
 
-   ![Exemple de page de règles de détection qui affiche les détails de la règle et de l’exécution](../../media/mtp/fig27b.png)
+   ![Exemple de page de règles de détection qui affiche les détails de la règle et de l’exécution.](../../media/mtp/fig27b.png)
 
    À partir de cette page, vous pouvez sélectionner la règle de détection, qui ouvre une page de détails.
 
-   ![Exemple de page de pièces jointes de courrier dans laquelle vous pouvez voir l’état de l’exécution de la règle, les alertes et actions déclenchées, modifier la détection, et ainsi de suite](../../media/mtp/fig28.png)
+   ![Exemple de page de pièces jointes dans laquelle vous pouvez voir l’état de l’exécution de la règle, les alertes et actions déclenchées, modifier la détection, etc.](../../media/mtp/fig28.png)
 
 <!--
 
@@ -316,7 +316,7 @@ To learn more about advanced hunting, the following webcasts will walk you throu
 
 **Le suivi de l’adversaire est** une série de webcasts pour les nouveaux analystes de sécurité et les observateurs de menaces. Il vous guide à travers les principes de base du recherche avancée tout au long de la création de vos propres requêtes sophistiquées. 
 
-Consultez [Obtenir une formation spécialisée sur la recherche avancée](advanced-hunting-expert-training.md) pour commencer.
+Pour [commencer, consultez](advanced-hunting-expert-training.md) Obtenir une formation spécialisée sur la recherche avancée.
 
 ### <a name="navigation-you-may-need"></a>Navigation dont vous aurez peut-être besoin
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 18044d469e90137ea14fa2dde9a6afe75e5dd0998d67e015e71d20b049ad30fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b135c6dd691607dd128bfd83e0d2b484bb3a97ae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853229"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568059"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des Teams conversations, des groupes et des fichiers
 
@@ -49,11 +49,11 @@ Vous n’avez pas besoin d’activer les services dépendants pour commencer à 
 
 Pour protéger la conversation, les groupes et le contenu dans Teams, le diagramme suivant illustre les stratégies à mettre à jour à partir des stratégies communes d’accès aux appareils et aux identités. Pour chaque stratégie à mettre à jour, assurez-vous Teams services dépendants sont inclus dans l’affectation des applications cloud.
 
-[![Résumé des mises à jour de stratégie pour la protection de l’accès à Teams et à ses services dépendants](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+[![Résumé des mises à jour de stratégie pour la protection de l’accès Teams et de ses services dépendants.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
-Ces services sont les services dépendants à inclure dans l’affectation d’applications cloud pour Teams :
+Ces services sont les services dépendants à inclure dans l’affectation des applications cloud pour Teams :
 
-- Microsoft Teams
+- Microsoft Teams
 - SharePoint et OneDrive Entreprise
 - Exchange Online
 - Skype Entreprise Online
@@ -64,7 +64,7 @@ Ce tableau répertorie les stratégies qui doivent [](identity-access-policies.m
 
 |Niveau de protection|Politiques|Informations supplémentaires sur l’implémentation Teams’application|
 |---|---|---|
-|**Baseline**|[Exiger l’mf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assurez-vous Teams services dépendants sont inclus dans la liste des applications. Teams des règles d’accès invité et d’accès externe à prendre en compte, vous en apprendrez plus sur ces règles plus loin dans cet article.|
+|**Baseline**|[Exiger une mfmf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assurez-vous Teams services dépendants sont inclus dans la liste des applications. Teams des règles d’accès invité et d’accès externe à prendre en compte, vous en apprendrez plus sur ces règles plus loin dans cet article.|
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Inclure Teams services dépendants dans l’affectation des applications cloud.|
 ||[Les utilisateurs à risque élevé doivent modifier leur mot de passe](identity-access-policies.md#high-risk-users-must-change-password)|Force Teams utilisateurs à modifier leur mot de passe lors de la signature si une activité à risque élevé est détectée pour leur compte. Assurez-vous Teams services dépendants sont inclus dans la liste des applications.|
 ||[Appliquer des stratégies de protection des données APP](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous Teams services dépendants sont inclus dans la liste des applications. Mettez à jour la stratégie pour chaque plateforme (iOS, Android, Windows).|
@@ -79,7 +79,7 @@ Ce tableau répertorie les stratégies qui doivent [](identity-access-policies.m
 
 À titre de référence, le diagramme suivant illustre les services sur Teams’aide. Pour plus d’informations et d’illustrations, voir Microsoft Teams services de productivité associés [dans Microsoft 365 pour les architectes it.](../../solutions/productivity-illustrations.md)
 
-[![Diagramme montrant Teams dépendances sur SharePoint, OneDrive Entreprise et Exchange](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![Diagramme montrant Teams dépendances sur SharePoint, OneDrive Entreprise et Exchange.](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 [Voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
@@ -142,9 +142,9 @@ Teams vous permet également d’utiliser des applications à différents endroi
 
 Pour en savoir plus sur les stratégies d’autorisation d’application, consultez Gérer les stratégies [d’autorisation d’application Microsoft Teams](/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-![Étape 4 : Stratégies pour Microsoft 365 applications cloud](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Étape 4 : Stratégies pour Microsoft 365 applications cloud.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configurer des stratégies d’accès conditionnel pour :
 

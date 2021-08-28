@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: En savoir plus sur la liste d’expressions, les expressions régulières et les types d’explications de proximité dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 45b5e472623d8122dad47be5b28df5f89766936b9dc444c35b90ed4cc00c521a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 405080575f48f439e7d978a8fc7ca00ecf956be0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865555"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568395"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Types d’explications dans Microsoft SharePoint Syntex
 
@@ -48,11 +48,11 @@ Un type de phrase est particulièrement utile lorsque vous créez une explicatio
 
 Pour l’exemple du *Numéro de téléphone*, vous extrayez le numéro de téléphone de chaque médecin traitant dans tous les documents de référence médicale que le modèle identifie. Lorsque vous créez l’explication, tapez les différents formats pouvant correspondre à un affichage de numéro de téléphone dans votre document de sorte que vous puissiez capturer les variations possibles.
 
-![Modèles de phrase de numéro de téléphone](../media/content-understanding/pattern-list.png)
+![Modèles de phrase de numéro de téléphone.](../media/content-understanding/pattern-list.png)
 
 Pour cet exemple, dans les **Paramètres avancés**, sélectionnez la case à cocher **N’importe quel chiffre de 0 à 9** pour identifier chaque valeur « 0 » utilisée dans votre liste de phrases comme un chiffre compris entre 0 et 9.
 
-![Tous les chiffres de 0 à 9](../media/content-understanding/digit-identity.png)
+![Tous les chiffres de 0 à 9.](../media/content-understanding/digit-identity.png)
 
 De même, si vous créez une liste de phrases qui contient des caractères texte, sélectionnez la case à cocher **Une lettre de a à z** pour que chaque caractère « a » utilisé dans la liste de phrases soit n’importe quel caractère de « a » à « z ».
 
@@ -61,7 +61,7 @@ Par exemple, si vous créez une liste de phrases **Date** et que vous souhaitez 
 - ajouter *aaa 0, 0000* et *aaa 00, 0000* à votre liste de phrases.
 - vous assurer que **Toutes les lettres de a à z** est également sélectionnée.
 
-![Toutes les lettres de a à z](../media/content-understanding/any-letter.png)
+![Toutes les lettres de A à Z.](../media/content-understanding/any-letter.png)
 
 Si vous avez des exigences de mise en majuscule dans votre liste de phrases, vous pouvez cocher la case **Seulement la mise en majuscule exacte**. Pour l’exemple Date, si vous souhaitez que la première lettre du mois soit en majuscule, vous devez :
 
@@ -137,7 +137,7 @@ Redmond, WA 98034<br>
 
 Utilisez l’explication de proximité pour définir la distance de l’explication du numéro de téléphone afin de mieux identifier le numéro de l’adresse postale dans vos documents.
 
-![Explication de proximité](../media/content-understanding/proximity.png)
+![Explication de proximité.](../media/content-understanding/proximity.png)
 
 #### <a name="what-are-tokens"></a>Que sont les jetons ?
 
@@ -173,7 +173,7 @@ Il y a trois jetons dans *(mobile)* :
 
 Configurez le paramètre de proximité pour avoir une plage de 0 à 3.
 
-![Exemple de proximité](../media/content-understanding/proximity-example.png)
+![Exemple de proximité.](../media/content-understanding/proximity-example.png)
 
 ## <a name="configure-where-phrases-occur-in-the-document"></a>Configurer l’endroit où des phrases apparaissent dans le document
 
@@ -181,7 +181,7 @@ Lorsque vous créez une explication, par défaut, l’ensemble du document est r
 
 En référence à notre exemple de document de référence médical, la *Référence médecin* est toujours mentionnée dans le premier paragraphe du document. Avec le paramètre **Où ces expressions se produisent**, dans cet exemple, vous pouvez configurer votre explication pour rechercher cette étiquette uniquement dans la section de début du document ou dans tout autre emplacement où elle pourrait se produire.
 
-![Paramètre où ces phrases se produisent](../media/content-understanding/phrase-location.png)
+![Paramètre où ces phrases se produisent.](../media/content-understanding/phrase-location.png)
 
 Vous pouvez choisir l'une des trois options suivantes :
 
@@ -189,19 +189,19 @@ Vous pouvez choisir l'une des trois options suivantes :
 
 - Début du fichier : La recherche s’effectuera du début jusqu’à l’emplacement des expressions.
 
-   ![Début du fichier](../media/content-understanding/beginning-of-file.png)
+   ![Début du fichier.](../media/content-understanding/beginning-of-file.png)
 
     Dans la visionneuse, vous pouvez ajuster manuellement la case à sélectionner de manière à inclure l’emplacement où la phase a lieu. La valeur **Position de fin** est mise à jour de manière à afficher le nombre de jetons inclus dans la zone sélectionnée. Vous pouvez également mettre à jour la valeur de **Position de fin** pour ajuster la zone sélectionnée.
 
-   ![Zone Début de la position du fichier](../media/content-understanding/beginning-box.png)
+   ![Zone de début de la position du fichier.](../media/content-understanding/beginning-box.png)
 
-- Fin du fichier : La recherche s’effectuera de la fin jusqu’à l’emplacement des expressions.
+- Fin du fichier : la recherche s’effectuera de la fin jusqu’à l’emplacement des expressions.
 
-   ![Fin du fichier](../media/content-understanding/end-of-file.png)
+   ![Fin du fichier.](../media/content-understanding/end-of-file.png)
 
     Dans la visionneuse, vous pouvez ajuster manuellement la case à sélectionner de manière à inclure l’emplacement où la phase a lieu. La valeur **Position de début** est mise à jour de manière à afficher le nombre de jetons inclus dans la zone sélectionnée. Vous pouvez également mettre à jour la valeur de position de début pour ajuster la zone sélectionnée.
 
-   ![Zone Fin de fichier](../media/content-understanding/end-box.png)
+   ![Fin de la zone de fin de fichier.](../media/content-understanding/end-box.png)
 
 - Plage personnalisée : recherche l’emplacement de l’expression dans une plage spécifiée du document.
 
@@ -215,7 +215,7 @@ Bien que vous puissiez ajouter manuellement différentes valeurs de liste d'expr
 
 Par exemple, au lieu d’ajouter manuellement toutes les variantes de *Date*, vous pouvez utiliser le modèle de liste d’expressions pour *Date*, car il comprend déjà de nombreuses valeurs de listes d’expressions :
 
-![Bibliothèque d’explications](../media/content-understanding/explanation-template.png)
+![Bibliothèque d’explications.](../media/content-understanding/explanation-template.png)
 
 La bibliothèque d’explications comprend des explications de *liste d’expressions* couramment utilisées, notamment :
 
@@ -254,28 +254,28 @@ En outre, la bibliothèque d’explications inclut trois types de modèles autom
 
 Pour vous donner un exemple du fonctionnement des modèles automatiques, dans l’exemple de fichier suivant, nous allons utiliser le modèle d’explication avant étiquette pour fournir au modèle plus d’informations pour obtenir une correspondance plus précise.
 
-![Options de sélecteur de fichiers exemple](../media/content-understanding/before-label.png)
+![Fichier d’exemple.](../media/content-understanding/before-label.png)
 
 Lorsque vous sélectionnez le modèle d’explication Avant étiquette, il recherche le premier jeu de mots qui apparaît avant l’étiquette dans vos exemples de fichiers. Dans l’exemple, les mots identifiés dans le premier exemple de fichier sont « En tant que ».
 
-![Modèle Avant d’étiquette](../media/content-understanding/before-label-explanation.png)
+![Modèle d’avant étiquette.](../media/content-understanding/before-label-explanation.png)
 
 Vous pouvez sélectionner **Ajouter** pour créer une explication à partir du modèle.  À mesure que vous ajoutez d’autres exemples de fichiers, des mots supplémentaires sont identifiés et ajoutés à la liste des expressions.
 
-![Ajouter l'étiquette](../media/content-understanding/before-label-add.png)
+![Ajouter l'étiquette.](../media/content-understanding/before-label-add.png)
 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Pour utiliser un modèle de la bibliothèque d’explications
 
 1. Dans la section **Explications** de la page **Entraîner** de votre modèle, sélectionnez **Nouveau**, puis **À partir d’un modèle**.
 
-   ![Ajouter Avant l’étiquette](../media/content-understanding/from-template.png)
+   ![Ajouter avant l’étiquette.](../media/content-understanding/from-template.png)
 
 2.  Sur la page **Modèles d’explication**, sélectionnez l’explication que vous souhaitez utiliser, puis **Ajouter**.
 
-    ![Sélectionner un modèle](../media/content-understanding/phone-template.png)
+    ![Sélectionnez un modèle.](../media/content-understanding/phone-template.png)
 
 3. Les informations relatives au modèle que vous avez sélectionné s’affichent sur la page **Créer une explication**. Si nécessaire, modifiez le nom de l’explication et ajoutez ou supprimez des éléments de la liste d’expressions.
 
-    ![Modifier le modèle](../media/content-understanding/phone-template-live.png)
+    ![Modifier le modèle.](../media/content-understanding/phone-template-live.png)
 
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer**.

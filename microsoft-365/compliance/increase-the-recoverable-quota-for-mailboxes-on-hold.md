@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique pour augmenter la taille du dossier Éléments récupérables d’une boîte aux lettres dans Microsoft 365.
-ms.openlocfilehash: 69e230bae16956e2fc55a2d838cba1ecb85345fe
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: e46575fcf4335b7429db2370012e44957fb07db3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508009"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567915"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 
@@ -45,7 +45,7 @@ Lorsque le quota de stockage pour le dossier Éléments récupérables dans la b
 - **Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique.** Vous pouvez activer une capacité de stockage illimitée pour le dossier Éléments récupérables simplement en activant la boîte aux lettres d’archivage, puis en activant la fonctionnalité d’archivage à extension automatique dans Exchange Online. Cela entraîne 110 Go pour le dossier Éléments récupérables dans la boîte aux lettres principale et une capacité de stockage illimitée pour le dossier Éléments récupérables dans l’archive de l’utilisateur. Découvrez comment : activer [les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et activer [l’archivage illimité.](enable-unlimited-archiving.md)
 
     > [!NOTE]
-    > Après avoir activé l’archive d’une boîte aux lettres proche du quota de stockage pour le dossier Éléments récupérables, vous pouvez exécuter l’Assistant Dossier géré pour déclencher manuellement l’Assistant pour traiter la boîte aux lettres afin que les éléments expirés soient déplacés vers le dossier Éléments récupérables de la boîte aux lettres d’archivage. Voir [Étape 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) pour obtenir des instructions. Notez que d’autres éléments dans la boîte aux lettres de l’utilisateur peuvent être déplacés vers la nouvelle boîte aux lettres d’archivage. Pensez à dire à l’utilisateur que cela peut se produire après avoir activé la boîte aux lettres d’archivage.
+    > Après avoir activé l’archive pour une boîte aux lettres qui est proche du dépassement du quota de stockage pour le dossier Éléments récupérables, vous pouvez exécuter l’Assistant Dossier géré pour déclencher manuellement l’Assistant pour traiter la boîte aux lettres afin que les éléments expirés soient déplacés vers le dossier Éléments récupérables de la boîte aux lettres d’archivage. Voir [Étape 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) pour obtenir des instructions. Notez que d’autres éléments dans la boîte aux lettres de l’utilisateur peuvent être déplacés vers la nouvelle boîte aux lettres d’archivage. Pensez à dire à l’utilisateur que cela peut se produire après avoir activé la boîte aux lettres d’archivage.
 
 - **Créez une stratégie Exchange rétention personnalisée pour les boîtes aux lettres en attente.** Outre l’activation de la boîte aux lettres d’archivage et de l’archivage à extension automatique pour les boîtes aux lettres en conservation pour litige ou en conservation In-Place, vous pouvez également créer une stratégie de rétention Exchange personnalisée pour les boîtes aux lettres en attente. Cela vous permet d’appliquer une stratégie de rétention aux boîtes aux lettres en attente qui est différente de la stratégie MRM par défaut appliquée aux boîtes aux lettres qui ne sont pas en conservation, et vous permet d’appliquer des balises de rétention conçues pour les boîtes aux lettres en attente. Cela inclut la création d’une nouvelle balise de rétention pour le dossier Éléments récupérables.
 
@@ -96,15 +96,15 @@ Vous pouvez utiliser le EAC ou Exchange Online PowerShell pour créer une strat�
 
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>Utilisation du Centre d’administration Exchange pour créer une stratégie de rétention
 
-1. Dans le EAC,  allez dans stratégies de rétention de gestion de la conformité, puis \> cliquez sur **Ajouter** une ![ icône ](../media/ITPro-EAC-AddIcon.gif) .
+1. Dans le EAC, allez dans **stratégies** de rétention de gestion de la conformité, puis cliquez \> sur **Ajouter** ![ une icône. ](../media/ITPro-EAC-AddIcon.gif)
 
 2. Sur la page **Nouvelle stratégie de rétention**, sous **Nom**, saisissez un nom qui décrit l’objectif de la stratégie de rétention ; par exemple, **MRM Policy for Mailboxes on Hold**. 
 
-3. Sous **Balises de rétention,** cliquez **sur Ajouter** une ![ ](../media/ITPro-EAC-AddIcon.gif) icône.
+3. Sous **Balises de rétention,** cliquez **sur Ajouter** une ![ icône. ](../media/ITPro-EAC-AddIcon.gif)
 
 4. Dans la liste des balises de rétention, sélectionnez la balise de stratégie de rétention des éléments récupérables que vous avez créée à l’étape 1, puis cliquez sur **Ajouter**.
 
-    ![Sélectionnez la balise de rétention Éléments récupérables personnalisée](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![Sélectionnez la balise de rétention Éléments récupérables personnalisée.](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
 
 5. Sélectionnez des balises de rétention supplémentaires à ajouter à la stratégie de rétention. Par exemple, vous pouvez ajouter les mêmes balises qui sont incluses dans la stratégie MRM par défaut.
 
@@ -114,7 +114,7 @@ Vous pouvez utiliser le EAC ou Exchange Online PowerShell pour créer une strat�
 
     Les balises de rétention liées à la stratégie de rétention sont affichées dans le volet de détails.
 
-    ![Des balises de conservation liées à la stratégie de rétention sont affichées dans le volet de détails](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![Les balises de rétention liées à la stratégie de rétention sont affichées dans le volet d’informations.](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
 
 ### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>Utiliser Exchange Online PowerShell pour créer une stratégie de rétention
 
@@ -139,7 +139,7 @@ La dernière étape consiste à appliquer la nouvelle stratégie de rétention q
 
 1. Go to **Recipients**  >  **Mailboxes**.
 
-2. Dans l’affichage Liste, sélectionnez la boîte aux lettres  à appliquer à la stratégie de rétention, puis cliquez sur Modifier ![ l’icône ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) Modifier.
+2. Dans l’affichage Liste, sélectionnez la boîte aux lettres  à appliquer à la stratégie de rétention, puis cliquez sur Modifier ![ l’icône Modifier. ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
 3. Sur la page **Boîte aux lettres de l’utilisateur**, cliquez sur **Fonctionnalités de boîte aux lettres**.
 

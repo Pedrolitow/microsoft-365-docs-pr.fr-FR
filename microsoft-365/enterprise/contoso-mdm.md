@@ -14,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre comment Contoso utilise Microsoft Intune dans Microsoft 365 entreprise pour gérer ses appareils et les applications qui s’exécutent sur ces appareils.
-ms.openlocfilehash: 7c7a3a40867e15059c527edb0069ff639d68ae7c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: c9acdbaa66af212a57bf66b2c64200b02ade6ad7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354895"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569476"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Gestion des appareils mobiles pour Contoso
 
 Microsoft 365 entreprise inclut Intune et un ensemble de services Azure qui prise en charge la gestion et la sécurité des appareils mobiles et des applications.
 
-Contoso compte de nombreux employés à mobilité fixe. Certains ont des bureaux à Contoso et d’autres n’ont pas de bureau. Contoso avait besoin d’un moyen de favoriser la productivité des employés tout en maintenant les appareils, les données Contoso stockées sur ces appareils et le comportement des applications sécurisés.
+Contoso compte de nombreux employés à mobilité fixe. Certains ont des bureaux à Contoso et d’autres n’ont pas de bureau. Contoso avait besoin d’un moyen pour activer la productivité des employés, tout en maintenant les appareils, les données Contoso stockées sur ces appareils et le comportement des applications sécurisés.
 
 ## <a name="plan"></a>Prévision
 
@@ -45,7 +45,7 @@ Contoso n’utilise pas Intune pour :
 Voici la configuration de l’infrastructure de gestion des appareils mobiles de Contoso :
 
 - Définir Intune comme autorité de gestion des périphériques mobiles (MDM) et utiliser Intune sur Azure pour administrer le contenu et gérer les appareils
-- Création Azure Active Directory groupes (Azure AD) pour les appareils pour l’inscription, les paramètres Intune et les stratégies d’accès conditionnel basées sur l’appareil
+- Création Azure Active Directory groupes (Azure AD) pour les appareils pour l’inscription, les paramètres Intune et les stratégies d’accès conditionnel basé sur l’appareil
 
   Pour plus d’informations, voir [Stratégies d’accès conditionnel Contoso.](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)
 
@@ -54,7 +54,7 @@ Voici la configuration de l’infrastructure de gestion des appareils mobiles de
 - Pour les appareils qui ne sont pas inscrits, implémenté un ensemble de stratégies de gestion des applications mobiles (MAM) pour exiger l’authentification pour l’accès Microsoft 365 services
 - Des stratégies Intune ont été créées pour appliquer :
   - Applications autorisées.
-  - Chiffrement de l’appareil pour empêcher tout accès non autorisé.
+  - Chiffrement de l’appareil pour empêcher l’accès non autorisé.
   - Code confidentiel ou mot de passe à six chiffres.
   - Période d’inactivité.
   - Protection antivirus et programmes malveillants, et mises à jour de signatures Windows Defender sur Windows 10 appareils.
@@ -66,7 +66,7 @@ Contoso a inscrit les PC déployés et les smartphones et tablettes d’entrepri
 
 Voici l’architecture de déploiement de la gestion des appareils mobiles Contoso.
 
-![Infrastructure de déploiement de la gestion des appareils mobiles Contoso](../media/contoso-mdm/contoso-mdm-fig1.png)
+![Infrastructure de déploiement de la gestion des appareils mobiles Contoso.](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>Étape suivante
 

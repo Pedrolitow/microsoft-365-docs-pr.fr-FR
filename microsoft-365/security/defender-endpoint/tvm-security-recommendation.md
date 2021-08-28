@@ -1,7 +1,7 @@
 ---
 title: Recommandations en matière de sécurité Gestion des menaces et des vulnérabilités
 description: Obtenez des recommandations de sécurité actionnables prioritaires par menace, probabilité de violation et valeur, Gestion des menaces et des vulnérabilités.
-keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation sur la cybersécurité, recommandation de sécurité actionnable
+keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation en matière de cybersécurité, recommandation de sécurité actionnable
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dde4eef3382c3a1c5e22a78b1965c30b46c9749dcb847c707ea418898aa7a3e5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de94125566985447b10997cd354c7c9aed01630d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863534"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569944"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recommandations en matière de sécurité : Gestion des menaces et des vulnérabilités
 
@@ -37,7 +37,7 @@ ms.locfileid: "53863534"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Les faiblesses de cybersécurité identifiées dans votre organisation sont mappées à des recommandations de sécurité actionnables et hiérarchisées par leur impact. Les recommandations hiérarchisées permettent de raccourcir le temps d’atténuation ou de correction des vulnérabilités et de stimuler la conformité.
+Les faiblesses de cybersécurité identifiées dans votre organisation sont mappées aux recommandations de sécurité actionnables et hiérarchisées par leur impact. Les recommandations hiérarchisées permettent de raccourcir le temps d’atténuation ou de correction des vulnérabilités et de stimuler la conformité.
 
 Chaque recommandation de sécurité inclut des étapes de correction actionnables. Pour faciliter la gestion des tâches, la recommandation peut également être envoyée à l’aide Microsoft Intune et Microsoft Endpoint Configuration Manager. Lorsque le paysage des menaces change, la recommandation change également lorsqu’elle collecte en permanence des informations à partir de votre environnement.
 
@@ -78,7 +78,7 @@ Les principales recommandations en matière de sécurité présentent les opport
 
 ## <a name="security-recommendations-overview"></a>Vue d’ensemble des recommandations de sécurité
 
-Afficher les recommandations, le nombre de faiblesses trouvées, les composants associés, les informations sur les menaces, le nombre d’appareils exposés, l’état, le type de correction, les activités de correction, l’impact sur votre score d’exposition et le score de sécurité Microsoft pour les appareils, ainsi que les balises associées.
+Afficher les recommandations, le nombre de faiblesses trouvées, les composants associés, les informations sur les menaces, le nombre d’appareils exposés, l’état, le type de correction, les activités de correction, l’impact sur votre score d’exposition et le score de sécurité Microsoft pour les appareils et les balises associées.
 
 La couleur du graphique **des appareils exposés** change à mesure que la tendance change. Si le nombre d’appareils exposés augmente, la couleur passe en rouge. En cas de diminution du nombre d’appareils exposés, la couleur du graphique change en vert.
 
@@ -91,9 +91,9 @@ La couleur du graphique **des appareils exposés** change à mesure que la tenda
 
 Les icônes utiles peuvent également attirer rapidement votre attention sur :
 
-- ![flèche tapant une cible](images/tvm_alert_icon.png) alertes actives possibles
-- ![bogue rouge](images/tvm_bug_icon.png) exploits publics associés
-- ![light light light](images/tvm_insight_icon.png) informations sur les recommandations
+- ![flèche tapant une cible.](images/tvm_alert_icon.png) alertes actives possibles
+- ![bogue rouge.](images/tvm_bug_icon.png) exploits publics associés
+- ![light light.](images/tvm_insight_icon.png) informations sur les recommandations
 
 ### <a name="explore-security-recommendation-options"></a>Explorer les options de recommandation de sécurité
 
@@ -122,11 +122,11 @@ S’il y a une augmentation importante du nombre d’appareils exposés ou une f
 
 ## <a name="request-remediation"></a>Demander la correction
 
-La Gestion des menaces et des vulnérabilités de correction permet de combler le vide entre les administrateurs de sécurité et les administrateurs informatiques via le flux de travail de demande de correction. Les administrateurs de sécurité comme vous pouvez demander à l’administrateur informatique de corriger une vulnérabilité à partir de la **page** recommandations de sécurité vers Intune. [En savoir plus sur les options de correction](tvm-remediation.md)
+La Gestion des menaces et des vulnérabilités de correction permet de combler le vide entre les administrateurs de sécurité et les administrateurs informatiques via le flux de travail de demande de correction. Les administrateurs de sécurité comme vous pouvez demander à l’administrateur informatique de corriger une vulnérabilité à partir de la **page** recommandations en matière de sécurité vers Intune. [En savoir plus sur les options de correction](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>Comment demander des corrections
 
-Sélectionnez une recommandation de sécurité pour qui vous souhaitez demander des corrections, puis sélectionnez **Options de correction.** Remplissez le formulaire et sélectionnez **Envoyer la demande.** Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request. [En savoir plus sur la demande de correction](tvm-remediation.md#request-remediation)
+Sélectionnez une recommandation de sécurité pour la demande de correction, puis sélectionnez **Options de correction.** Remplissez le formulaire et sélectionnez **Envoyer la demande.** Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request. [En savoir plus sur la demande de correction](tvm-remediation.md#request-remediation)
 
 ## <a name="file-for-exception"></a>Fichier d’exception
 
@@ -144,7 +144,7 @@ Sélectionnez une recommandation de sécurité pour la création d’une excepti
 
 Remplissez le formulaire et soumettez-le. Pour afficher toutes vos exceptions (actuelles et passées), accédez à la [page](tvm-remediation.md) Correction sous le menu Gestion des vulnérabilités des menaces **&** et sélectionnez l’onglet **Exceptions.** En savoir plus sur la création d’une [exception](tvm-exception.md#create-an-exception)
 
-## <a name="report-inaccuracy"></a>Report inaccuracy
+## <a name="report-inaccuracy"></a>Inaccuracy de rapport
 
 Vous pouvez signaler un faux positif lorsque vous voyez des informations de recommandation de sécurité vagues, inexactes, incomplètes ou déjà corrigés.
 

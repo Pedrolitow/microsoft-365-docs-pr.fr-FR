@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour héberger l’authentification fédérée haute disponibilité pour Microsoft 365.'
-ms.openlocfilehash: 759b6f72a0d86a090c0db265abd23feea6aa1543
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 6f9e06f74b2ce635b05faa0da6cb2eae3d430c31
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354271"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569440"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
@@ -41,11 +41,11 @@ Avant de commencer à configurer les composants Azure, renseignez les tableaux s
   
 |**Élément**|**Paramètre de configuration**|**Description**|**Valeur**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nom du réseau virtuel  <br/> |Nom à attribuer au réseau VNet (par exemple FedAuthNet).  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Emplacement du réseau virtuel  <br/> |Centre de données Azure régional qui contiendra le réseau virtuel.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l'interface de votre périphérique VPN sur Internet.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Espace d'adressage du réseau virtuel  <br/> |Espace d'adressage du réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d'adressage.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer cette valeur de clé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Nom du réseau virtuel  <br/> |Nom à attribuer au réseau VNet (par exemple, FedAuthNet).  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Emplacement du réseau virtuel  <br/> |Centre de données Azure régional qui contiendra le réseau virtuel.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l'interface de votre périphérique VPN sur Internet.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Espace d'adressage du réseau virtuel  <br/> |Espace d'adressage du réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d'adressage.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer cette valeur de clé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau V : configuration de réseau virtuel entre différents locaux**
   
@@ -63,10 +63,10 @@ Renseignez-vous auprès de votre service informatique pour déterminer ces espac
   
 |**Élément**|**Nom du sous-réseau**|**Espace d'adressage de sous-réseau**|**Objectif**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par le contrôleur de domaine des services de domaine Active Directory (AD DS) et les machines virtuelles (VM) du serveur de synchronisation d’annuaires.  <br/> |
-|2.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les VM AD FS.  <br/> |
-|3.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les VM proxy de l’application web.  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les VM de passerelle Azure.  <br/> |
+|1.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par le contrôleur de domaine des services de domaine Active Directory (AD DS) et les machines virtuelles (VM) du serveur de synchronisation d’annuaires.  <br/> |
+|2.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les VM AD FS.  <br/> |
+|3.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les VM proxy de l’application web.  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les VM de passerelle Azure.  <br/> |
    
  **Tableau S : sous-réseaux dans le réseau virtuel**
   
@@ -74,14 +74,14 @@ Ensuite, renseignez le Tableau I pour les adresses IP statiques affectées à de
   
 |**Élément**|**Objectif**|**Adresse IP sur le sous-réseau**|**Valeur**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Adresse IP statique du premier contrôleur de domaine  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Adresse IP statique du deuxième contrôleur de domaine  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Adresse IP statique du serveur de synchronisation d’annuaires  <br/> |Sixième adresse IP possible pour l’espace d’adressare du sous-réseau défini dans l’élément 1 du tableau S.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Adresse IP statique de l’équilibreur de charge interne pour les serveurs AD FS  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 2 du Tableau S.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Adresse IP statique du premier serveur AD FS  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 2 du Tableau S.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|6.  <br/> |Adresse IP statique du deuxième serveur AD FS  <br/> |La sixième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 2 du Tableau S.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|7.  <br/> |Adresse IP statique du premier serveur proxy d’application web  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 3 du Tableau S.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|8.  <br/> |Adresse IP statique du deuxième serveur proxy d’application web  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 3 du Tableau S.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Adresse IP statique du premier contrôleur de domaine  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Adresse IP statique du deuxième contrôleur de domaine  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Adresse IP statique du serveur de synchronisation d’annuaires  <br/> |Sixième adresse IP possible pour l’espace d’adressare du sous-réseau défini dans l’élément 1 du tableau S.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Adresse IP statique de l’équilibreur de charge interne pour les serveurs AD FS  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 2 du Tableau S.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Adresse IP statique du premier serveur AD FS  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 2 du Tableau S.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |Adresse IP statique du deuxième serveur AD FS  <br/> |La sixième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 2 du Tableau S.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |Adresse IP statique du premier serveur proxy d’application web  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 3 du Tableau S.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |Adresse IP statique du deuxième serveur proxy d’application web  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 3 du Tableau S.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau I : Adresses IP statiques dans le réseau virtuel**
   
@@ -89,20 +89,20 @@ Pour deux serveurs DNS (Domain Name System) dans votre réseau local que vous so
   
 |**Élément**|**Nom convivial du serveur DNS**|**Adresse IP du serveur DNS**|
 |:-----|:-----|:-----|
-|1.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau D : serveurs DNS locaux**
   
-Pour router les paquets du réseau entre différents locaux vers le réseau de votre organisation à travers la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui contient une liste des espaces d’adressag (en notation CIDR) pour tous les emplacements accessibles sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
+Pour router les paquets du réseau entre différents locaux vers le réseau de votre organisation à travers la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui contient la liste des espaces d’adressag (en notation CIDR) pour tous les emplacements accessibles sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
   
 Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d'en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste d'espaces d'adressage.
   
 |**Élément**|**Espace d'adressage du réseau local**|
 |:-----|:-----|
-|1.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau L : préfixes d'adresse pour le réseau local**
   
@@ -149,10 +149,10 @@ Renseignez le tableau suivant pour l'ensemble unique de noms de groupes de resso
   
 |**Élément**|**Nom de groupe de ressources**|**Objectif**|
 |:-----|:-----|:-----|
-|1.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |Contrôleurs de domaine  <br/> |
-|2.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |Serveurs AD FS  <br/> |
-|3.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |Serveurs proxy d’application web  <br/> |
-|4.  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |Éléments de l'infrastructure  <br/> |
+|1.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |Contrôleurs de domaine  <br/> |
+|2.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |Serveurs AD FS  <br/> |
+|3.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |Serveurs proxy d’application web  <br/> |
+|4.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |Éléments de l'infrastructure  <br/> |
    
  **Tableau R : Groupes de ressources**
   
@@ -275,15 +275,15 @@ Ensuite, définissez les noms de trois groupes à haute disponibilité. Rempliss
   
 |**Élément**|**Objectif**|**Nom du groupe de disponibilité**|
 |:-----|:-----|:-----|
-|1.  <br/> |Contrôleurs de domaine  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Serveurs AD FS  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Serveurs proxy d’application web  <br/> |![ligne](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Contrôleurs de domaine  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Serveurs AD FS  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Serveurs proxy d’application web  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau A : Groupes de disponibilité**
   
 Vous aurez besoin de ces noms lorsque vous créerez les machines virtuelles aux phases 2, 3 et 4.
   
-Créez les nouveaux groupes à haute disponibilité avec Azure PowerShell commandes.
+Créez les nouveaux groupes à haute disponibilité à l’Azure PowerShell commandes.
   
 ```powershell
 $locName="<the Azure location for your new resource group>"
@@ -302,7 +302,7 @@ Voici la configuration obtenue à la fin de cette phase.
   
 **Phase 1 : Infrastructure Azure pour l’authentification fédérée haute disponibilité pour Microsoft 365**
 
-![Phase 1 de l’authentification Microsoft 365 haute disponibilité dans Azure avec l’infrastructure Azure](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Phase 1 de la haute disponibilité Microsoft 365 l’authentification fédérée dans Azure avec l’infrastructure Azure.](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Étape suivante
 

@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont les besoins de l’entreprise sont satisfaits par Microsoft 365 entreprise.
-ms.openlocfilehash: abed7e47ab0654c44c047ef09a9a75a46d2a0e17
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 36fec158926bfa4530c0dfa6a862e877204be0cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354340"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569500"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastructure informatique de Contoso et besoins de l’entreprise
 
@@ -31,7 +31,7 @@ Contoso utilise une infrastructure informatique locale centralisée avec des cen
 
 Voici le siège social avec des centres de données d’application, un DMZ et Internet.
 
-![Infrastructure informatique Contoso existante](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Infrastructure informatique Contoso existante.](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 Les centres de données d’applications hébergent les éléments suivants : 
 
@@ -93,7 +93,7 @@ Les besoins commerciaux de Contoso sont en cinq catégories principales :
 
   Réduisez les coûts de maintenance et de support et améliorez les performances pour la solution d’accès à distance en déplaçant les ressources couramment accessibles vers le cloud.
 
-- Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la vente (B2B)
+- Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la charge (B2B)
 
   Remplacez un extranet partenaire coûteux et coûteux par une solution basée sur le cloud qui utilise l’authentification fédérée.
 

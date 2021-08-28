@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre l’infrastructure réseau contoso et la façon dont l’entreprise utilise sa technologie SD-WAN pour optimiser les performances réseau pour Microsoft 365 services cloud d’entreprise.
-ms.openlocfilehash: ad7bac187a81564c3d222069bce06756dd176a58
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: af2c68cb31450fe17449f95391dd3e5c298a2395
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354319"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569488"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Mise en réseau de Contoso Corporation
 
@@ -31,7 +31,7 @@ Voici les éléments réseau qui relient les bureaux Contoso dans le monde entie
 
 - Réseau étendu de commutation multiprotocole WAN (MPLS) 
 
-  Un réseau WAN MPLS connecte le siège social parisien aux bureaux régionaux et régionaux aux succursales dans une configuration de hub. Le réseau permet aux utilisateurs d’accéder aux serveurs locaux qui sont des applications métier au siège social parisien. Il a également route tout trafic Internet générique vers le bureau parisien, où les périphériques de sécurité réseau excursent les demandes. Dans chaque bureau, les routeurs livrent le trafic aux hôtes câblés ou aux points d’accès sans fil sur les sous-réseaux, qui utilisent l’espace d’adressa visite IP privé.
+  Un réseau WAN MPLS connecte le siège social parisien aux bureaux régionaux et régionaux aux succursales dans une configuration de hub. Le réseau permet aux utilisateurs d’accéder aux serveurs locaux qui sont des applications métier au siège social parisien. Il a également pour effet d’router tout trafic Internet générique vers le bureau parisien, où les appareils de sécurité réseau excursent les demandes. Dans chaque bureau, les routeurs livrent le trafic aux hôtes câblés ou aux points d’accès sans fil sur les sous-réseaux, qui utilisent l’espace d’adressa visite IP privé.
 
 - Accès Internet direct local pour le trafic Microsoft 365 réseau
 
@@ -43,7 +43,7 @@ Voici les éléments réseau qui relient les bureaux Contoso dans le monde entie
 
 La figure 1 illustre l’infrastructure réseau contoso et ses connexions à Internet.
 
-![Le réseau Contoso](../media/contoso-networking/contoso-networking-fig1.png)
+![Réseau Contoso.](../media/contoso-networking/contoso-networking-fig1.png)
  
 **Figure 1 : Réseau Contoso**
 
@@ -56,7 +56,7 @@ Contoso a suivi les [principes de connectivité réseau Microsoft 365](microsof
 - Éviter les épingles de réseau
 - Ignorer les périphériques de sécurité réseau en double
 
-Il existe trois catégories de trafic réseau pour Microsoft 365 : *Optimiser,* Autoriser *et* *Par défaut.* Le trafic Optimiser et Autoriser est un trafic réseau approuvé chiffré et sécurisé aux points de terminaison et destiné au Microsoft 365 réseau.
+Il existe trois catégories de trafic réseau pour Microsoft 365 : *Optimiser,* Autoriser *et* *Par défaut*. Le trafic Optimiser et Autoriser est un trafic réseau approuvé chiffré et sécurisé aux points de terminaison et destiné au Microsoft 365 réseau.
 
 Contoso a décidé d’effectuer les opérations suivantes :
 
@@ -76,7 +76,7 @@ Contoso a conçu son infrastructure intranet d’application métier et de serve
 
 La figure 2 montre le pourcentage de capacité du trafic réseau utilisé lors de l’accès aux serveurs sur l’intranet Contoso.
 
-![Infrastructure Contoso pour les applications internes](../media/contoso-networking/contoso-networking-fig2.png)
+![Infrastructure Contoso pour les applications internes.](../media/contoso-networking/contoso-networking-fig2.png)
  
 **Figure 2 : Infrastructure Contoso pour les applications internes**
 
@@ -100,7 +100,7 @@ L’adoption Microsoft 365 pour les services d’entreprise par les utilisateurs
 
 4. Optimiser les performances pour les services réseau Microsoft
 
-   Contoso a déterminé l’ensemble des points de terminaison Office 365, Intune et Azure, ainsi que des pare-feux, des périphériques de sécurité et d’autres systèmes configurés dans le chemin d’accès Internet pour des performances optimales. Les points de terminaison pour Office 365 trafic de catégorie Optimiser et Autoriser ont été configurés sur les périphériques SD-WAN pour le routage sur le circuit ISP.
+   Contoso a déterminé l’ensemble des points de terminaison Office 365, Intune et Azure, ainsi que des pare-feux, des périphériques de sécurité et d’autres systèmes configurés dans le chemin d’accès Internet pour obtenir des performances optimales. Les points de terminaison pour Office 365 trafic de catégorie Optimiser et Autoriser ont été configurés sur les périphériques SD-WAN pour le routage sur le circuit ISP.
 
 5. Configurer le DNS interne
 

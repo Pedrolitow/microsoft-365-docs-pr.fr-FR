@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilisez ces informations pour découvrir comment Office 365 réseaux de distribution de contenu (CDN) pour améliorer les performances.
-ms.openlocfilehash: d50fc51307cdddb6e77a661ca5319d81ad1a0afc
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: a5213c1718db00cfeb49c437fc7178a527adb07f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585619"
+ms.locfileid: "58569524"
 ---
 # <a name="content-delivery-networks-cdns"></a>Réseaux de distribution de contenu (CDN)
 
@@ -37,7 +37,7 @@ Les CDN permettent de Office 365 rapides et fiables pour les utilisateurs finaux
 
 Un CDN est un réseau distribué géographiquement constitué de serveurs proxy et de fichiers dans des centres de données connectés par des réseaux de dorsale dorsale haute vitesse. Les CDN sont utilisés pour réduire la latence et les temps de chargement d’un ensemble spécifié de fichiers et d’objets dans un site web ou un service. Un CDN peut avoir plusieurs milliers de points de terminaison pour une maintenance optimale des demandes entrantes en provenance de n’importe quel emplacement.
 
-Les CDN sont couramment utilisés pour fournir des téléchargements plus rapides de contenu générique pour un site web ou un service tel que des fichiers Javascript, des icônes et des images, et peuvent également fournir un accès privé au contenu des utilisateurs, tels que des fichiers dans des bibliothèques de documents SharePoint Online, des fichiers multimédias de diffusion en continu et du code personnalisé.
+Les CDN sont couramment utilisés pour fournir des téléchargements plus rapides de contenu générique pour un site web ou un service tel que des fichiers javascript, des icônes et des images, et peuvent également fournir un accès privé au contenu des utilisateurs, tels que des fichiers dans des bibliothèques de documents SharePoint Online, des fichiers multimédias de diffusion en continu et du code personnalisé.
 
 Les CDN sont utilisés par la plupart des services cloud d’entreprise. Les services cloud tels que Office 365 des millions de clients téléchargent un mélange de contenu propriétaire (comme les e-mails) et de contenu générique (par exemple, des icônes) à la fois. Il est plus efficace de placer les images que tout le monde utilise, comme les icônes, aussi près que possible de l’ordinateur de l’utilisateur. Comme il n’est pas pratique pour chaque service cloud de créer des centres de données CDN qui stockent ce contenu générique dans toutes les régions métropolitaines, ou même dans tous les principaux centres Internet du monde entier, certains de ces CDN sont partagés.
 
@@ -62,7 +62,7 @@ Le réseau de distribution de contenu Office 365 est composé de plusieurs rés
 
 ![Office 365 CDN diagramme conceptuel.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN diagramme conceptuel")
 
-Le contenu des origines **publiques** du réseau de distribution de contenu Office 365 est anonymement accessible à toute personne qui dispose des URL d’accès aux ressources hébergées. Étant donné que l’accès au contenu dans les origines publiques est anonyme, vous ne devez les utiliser que pour mettre en cache du contenu générique non sensible, tel que des fichiers Javascript, des scripts, des icônes et des images. Le réseau de distribution de contenu Office 365 est utilisé par défaut pour télécharger des ressources génériques, telles que les applications clientes Office 365, à partir d’une origine publique.
+Le contenu des origines **publiques** du réseau de distribution de contenu Office 365 est anonymement accessible à toute personne qui dispose des URL d’accès aux ressources hébergées. Comme l’accès au contenu des origines publiques est anonyme, vous ne devez l’utiliser que pour mettre en cache du contenu générique non sensible, comme des scripts, des icônes, des images et des fichiers javascript. Le réseau de distribution de contenu Office 365 est utilisé par défaut pour télécharger des ressources génériques, telles que les applications clientes Office 365, à partir d’une origine publique.
 
 **Les** origines privées au sein Office 365 CDN fournissent un accès privé au contenu utilisateur, tel que SharePoint bibliothèques de documents, sites et images propriétaires en ligne. L’accès au contenu des origines privées est sécurisé à l’aide de jetons générés dynamiquement, de sorte qu’il n’est accessible qu’aux utilisateurs autorisés à accéder à la bibliothèque de documents ou à l’emplacement de stockage d’origine. Les origines privées du réseau de distribution de contenu Office 365 ne peuvent être utilisées que pour du contenu SharePoint Online, et vous ne pouvez accéder aux ressources que par redirection à partir de votre client SharePoint Online.
 
@@ -129,7 +129,7 @@ Les CDN utilisés par les Office 365 sont toujours sujets à modification et, da
 
 |CDN  |Company  |Utilisation  |Lien  |
 |---------|---------|---------|---------|
-|Office 365 CDN     |Microsoft Azure         |Ressources génériques dans les origines publiques, SharePoint contenu utilisateur dans les origines privées         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
+|Office 365 CDN     |Akamai         |Ressources génériques dans les origines publiques, SharePoint contenu utilisateur dans les origines privées         |[Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online](use-microsoft-365-cdn-with-spo.md)         |
 |Azure CDN.     |Microsoft         |Code personnalisé, solutions SharePoint Framework personnalisées         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Microsoft Ajax CDN (lecture seule)     |Microsoft         |Bibliothèques courantes pour Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js, etc.         |[Microsoft Ajax CDN](/aspnet/ajax/cdn/overview)         |
 

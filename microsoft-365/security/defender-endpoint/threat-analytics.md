@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 211d8071d0b8fcf8c650acb15f2fa29ac9bed456b0c8eed8829a0c4502817d8d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a69a90db168bd58266c65c8573a233e1932e025c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817294"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568899"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Suivre les menaces émergentes et y répondre par le biais de l’analyse des menaces
 
@@ -50,7 +50,7 @@ L’analyse des menaces est un ensemble de rapports d’experts en matière de s
 - Surface d'attaque courantes
 - Programmes malveillants répandus
 
-Chaque rapport fournit une analyse détaillée d’une menace et des instructions complètes sur la façon de se défendre contre cette menace. Il intègre également des données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
+Chaque rapport fournit une analyse détaillée d’une menace et des instructions complètes sur la façon de se défendre contre cette menace. Il incorpore également les données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
 
 Regardez cette courte vidéo pour en savoir plus sur la façon dont l’analyse des menaces peut vous aider à suivre les dernières menaces et à les arrêter.
 
@@ -61,12 +61,12 @@ Regardez cette courte vidéo pour en savoir plus sur la façon dont l’analyse 
 Le tableau de bord d’analyse des menaces constitue un excellent point de départ pour obtenir les rapports les plus pertinents pour votre organisation. Il récapitule les menaces dans les sections suivantes :
 
 - **Menaces les** plus récentes : répertorie les derniers rapports sur les menaces publiés, ainsi que le nombre d’appareils avec des alertes actives et résolues.
-- **Menaces à fort impact**: répertorie les menaces qui ont eu l’impact le plus élevé sur l’organisation. Cette section classe les menaces par le nombre d’appareils qui ont des alertes actives.
+- **Menaces à fort impact**: répertorie les menaces qui ont eu l’impact le plus élevé sur l’organisation. Cette section classe les menaces selon le nombre d’appareils qui ont des alertes actives.
 - **Résumé des menaces**: affiche l’impact global des menaces de suivi en affichant le nombre de menaces avec des alertes actives et résolues.
 
 Sélectionnez une menace dans le tableau de bord pour afficher le rapport de cette menace.
 
-![Image d’un tableau de bord d’analyse des menaces](images/ta_dashboard.png)
+![Image d’un tableau de bord d’analyse des menaces.](images/ta_dashboard.png)
 
 ## <a name="view-a-threat-analytics-report"></a>Afficher un rapport d’analyse des menaces
 
@@ -76,8 +76,8 @@ Chaque rapport d’analyse des menaces fournit des informations en trois section
 
 La section **Vue d’ensemble** fournit un aperçu du rapport d’analyste détaillé. Il fournit également des graphiques qui mettent en évidence l’impact de la menace sur votre organisation et votre exposition par le biais d’appareils mal configurés et non configurés.
 
-![Image de la section vue d’ensemble d’un rapport d’analyse des ](images/ta-overview.png)
- _menaces d’un rapport d’analyse des menaces_
+![Image de la section vue d’ensemble d’un rapport d’analyse des menaces. ](images/ta-overview.png)
+ _Section Vue d’ensemble d’un rapport d’analyse des menaces_
 
 #### <a name="assess-the-impact-to-your-organization"></a>Évaluer l’impact sur votre organisation
 
@@ -112,7 +112,7 @@ Dans la section **Atténuations,** examinez la liste des recommandations actionn
 
 Les informations d’atténuation de cette section intègrent des données de [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md), qui fournit également des informations détaillées sur l’analyse à partir de différents liens du rapport.
 
-![Image de la section préventions d’un rapport d’analyse des menaces](images/ta-mitigations.png)
+![Image de la section préventions d’un rapport d’analyse des menaces.](images/ta-mitigations.png)
 
 _Section Atténuations d’un rapport d’analyse des menaces_
 
@@ -126,7 +126,7 @@ Lorsque vous utilisez les rapports, gardez les informations suivantes à l’esp
 - Les appareils sont comptés comme « indisponibles » s’ils n’ont pas transmis de données au service.
 - Les statistiques antivirus sont basées sur Antivirus Microsoft Defender paramètres. Les appareils avec des solutions antivirus tierces peuvent apparaître comme « exposés ».
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Rechercher de manière proactive les menaces avec le recherche avancée](advanced-hunting-overview.md)
 - [Comprendre la section rapport d’analyste](threat-analytics-analyst-reports.md)

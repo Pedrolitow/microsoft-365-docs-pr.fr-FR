@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
-ms.openlocfilehash: 63fcaf72f487f162c93f89723ba9e87b5881f509
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 93a22ef86be7067c8bda955fdfd085f7ef6cbd64
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532582"
+ms.locfileid: "58568323"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Activer et configurer la protection antivirus Microsoft Defender pour qu’il soit toujours activé dans les stratégies de groupe
 
@@ -44,8 +44,8 @@ Pour activer et configurer la protection toujours active :
     1. Dans votre zone Windows 10 de recherche de la barre des tâches, tapez **gpedit**.
 
     2. Sous **La meilleure correspondance,** **sélectionnez Modifier la stratégie de** groupe pour lancer **l’Éditeur de stratégie de groupe local.**
-
-       ![Résultat de recherche de la barre des tâches GPEdit](images/gpedit-search.png)
+    
+       ![Résultat de recherche de la barre des tâches GPEdit.](images/gpedit-search.png)
 
 2. Dans le volet gauche de l’Éditeur de  stratégie de groupe **local,** développez l’arborescence Modèles d’administration de configuration ordinateur \>  \> **Windows composants** \> **Antivirus Microsoft Defender**.
 
@@ -79,7 +79,9 @@ Pour activer et configurer la protection toujours active :
 
 5. Configurez le paramètre de stratégie Antivirus Microsoft Defender’analyse, comme suit :
 
-   1. Dans **l’arborescence Antivirus Microsoft Defender** sur le volet gauche, sélectionnez **Analyse.**
+    1. Dans **l’arborescence Antivirus Microsoft Defender** sur le volet gauche, sélectionnez **Analyse.**
+    
+       ![Antivirus Microsoft Defender Options d’analyse.](images/gpedit-windows-defender-antivirus-scan.png)
 
       ![Antivirus Microsoft Defender Options d’analyse](images/gpedit-windows-defender-antivirus-scan.png)
 
@@ -139,12 +141,12 @@ La fonctionnalité de protection en temps réel principale est activée par déf
 
 3. Dans le **volet d’informations Protection** en temps réel à droite, double-cliquez sur Désactiver **la protection en temps réel.**
 
-   ![Désactiver la protection en temps réel](images/gpedit-turn-off-real-time-protection.png)
+   ![Désactiver la protection en temps réel.](images/gpedit-turn-off-real-time-protection.png)
 
 4. Dans la **fenêtre Désactiver le paramètre de protection en** temps réel, définissez l’option sur **Activé.**
 
-   ![Désactiver la protection en temps réel activée](images/gpedit-turn-off-real-time-protection-enabled.png)
-
+   ![Désactiver la protection en temps réel activée.](images/gpedit-turn-off-real-time-protection-enabled.png)
+   
 5. sélectionnez **OK**.
 
 6. Fermez **l’Éditeur de stratégie de groupe local.**

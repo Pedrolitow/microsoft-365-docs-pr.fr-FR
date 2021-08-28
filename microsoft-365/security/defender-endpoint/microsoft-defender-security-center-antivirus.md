@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0de5817d4eb741885be6e43133b0886e90488bd4af04699a8c9dd970fbae8491
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a247aac370ba65e4ede48b0232ded1d93f6e8b99
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793325"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568887"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows de messagerie
 
@@ -43,9 +43,9 @@ Consultez [l’article Sécurité Windows pour](/windows/threat-protection/windo
 
 L Sécurité Windows’application est une interface client Windows 10 version 1703 et ultérieures. Il ne s’agit pas du Centre de sécurité Microsoft Defender web utilisé pour examiner et gérer [Microsoft Defender for Endpoint.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
-## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Passer en revue les paramètres de protection contre les virus et les menaces dans l Sécurité Windows appl
+## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Passer en revue les paramètres de protection contre les virus et menaces dans l Sécurité Windows appl
 
-:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Paramètres de protection contre les virus et menaces dans Sécurité Windows application":::
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Paramètres de protection contre les virus et menaces dans Sécurité Windows application.":::
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
@@ -66,7 +66,7 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>Passer en revue la version de mise à jour des informations de sécurité et télécharger les dernières mises à jour dans l’Sécurité Windows de sécurité
 
-:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Numéro de version de l’intelligence de la sécurité":::
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Numéro de version de l’intelligence de la sécurité.":::
 
 1. Ouvrez l’Sécurité Windows en recherchant sécurité dans le menu *Démarrer,* puis en **sélectionnant Sécurité Windows**.
 
@@ -106,8 +106,8 @@ Le tableau suivant récapitule les types d’exclusion et ce qui se produit :
 
 |Type d’exclusion  |Défini par  |Action exécutée  |
 |---------|---------|---------|
-|**Fichier** |Emplacement <br/>Exemple : `c:\sample\sample.test` |Le fichier spécifique est ignoré par Antivirus Microsoft Defender. |
-|**Folder**    |Emplacement <br/>Exemple : `c:\test\sample`       |Tous les éléments du dossier spécifié sont ignorés par Antivirus Microsoft Defender.         |
+|**Fichier** |Lieu <br/>Exemple : `c:\sample\sample.test` |Le fichier spécifique est ignoré par Antivirus Microsoft Defender. |
+|**Folder**    |Lieu <br/>Exemple : `c:\test\sample`       |Tous les éléments du dossier spécifié sont ignorés par Antivirus Microsoft Defender.         |
 |**Type de fichier**   |Extension de fichier <br/>Exemple : `.test` |Tous les fichiers avec `.test` l’extension n’importe où sur votre appareil sont ignorés par Antivirus Microsoft Defender.         |
 |**Processus**     |Chemin d’accès au fichier exécutable <br>Exemple : `c:\test\process.exe`         |Le processus spécifique et tous les fichiers ouverts par ce processus sont ignorés par Antivirus Microsoft Defender.         |
 
@@ -131,7 +131,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 3. Sous Protection **contre les ransomware,** **sélectionnez Gérer la protection contre les ransomware.**
 
-4. Pour modifier **les paramètres d’accès contrôlé aux** dossiers, voir Protéger les dossiers importants avec accès contrôlé aux [dossiers.](/microsoft-365/security/defender-endpoint/controlled-folders)
+4. Pour modifier **les paramètres d’accès contrôlé aux** dossiers, voir Protéger les [dossiers importants avec accès contrôlé aux dossiers.](/microsoft-365/security/defender-endpoint/controlled-folders)
 
 5. Pour configurer les options  de récupération  de ransomware, sélectionnez Configurer sous Récupération des données de ransomware et suivez les instructions pour lier ou configurer votre compte OneDrive afin de pouvoir facilement récupérer d’une attaque par ransomware.
 

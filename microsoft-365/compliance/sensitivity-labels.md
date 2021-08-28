@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 5604a6021150a7de4b287d91064c60f55be92500
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: ff26c2f6f219db066b4be00e6d97e8d4e4e4babc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360094"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568984"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -90,7 +90,7 @@ Lorsqu’elle est affichée par les utilisateurs, l’étiquette de confidential
 Chaque élément qui prend en charge les étiquettes de confidentialité peut se voir appliquer une étiquette de confidentialité unique. Les documents et les e-mails peuvent se voir appliquer à la fois une étiquette de confidentialité et une [étiquette de rétention](retention.md#retention-labels).
 
 > [!div class="mx-imgBorder"]
-> ![Étiquette de confidentialité appliquée à un e-mail](../media/Sensitivity-label-on-email.png)
+> ![Étiquette de confidentialité appliquée à un e-mail.](../media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>Fonction des étiquettes de niveau de confidentialité
 
@@ -102,7 +102,7 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
 
 - **Marquer le contenu** lorsque vous utilisez des applications Office, en ajoutant filigranes, pieds de page ou en-têtes à des e-mails ou des documents comportant l’étiquette. Vous pouvez appliquer des filigranes aux documents, mais pas aux e-mails. Exemple d’en-tête et de filigrane :
     
-    ![Filigrane et en-tête appliqués au document](../media/Sensitivity-label-watermark-header.png)
+    ![Filigrane et en-tête appliqués au document.](../media/Sensitivity-label-watermark-header.png)
     
     Avez-vous besoin de vérifier la date de l’application des marques de contenu ? Veuillez consulter la section [Délai de marquage et de chiffrage de contenus par les applications Office](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
@@ -116,7 +116,7 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
 
 - **Appliquer automatiquement l’étiquette aux fichiers et e-mails ou recommandez une étiquette.** Choisissez comment identifier les informations sensibles que vous voulez étiqueter. L'étiquette peut être appliquée automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte de votre choix. Par exemple :
     
-    ![Invitation de mise à attribuer une étiquette requise](../media/Sensitivity-label-Prompt-for-required-label.png)
+    ![Invitation de mise à attribuer une étiquette requise.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     Pour plus d’informations sur les paramètres d' **Étiquetage automatique pour les fichiers et e-mails** lorsque vous créez ou modifiez une étiquette de confidentialité, consultez [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md) pour les applications Office et [Étiqueter automatiquement vos données dans Azure Preview](/azure/purview/create-sensitivity-label).
 
@@ -128,7 +128,7 @@ Lorsque vous créez une étiquette de confidentialité, vous êtes invité à co
 
 Cette configuration d’étendue vous permet d’utiliser des étiquettes de confidentialité qui s’appliquent uniquement aux documents et e-mails et qui ne peuvent pas être sélectionnées pour les conteneurs. Il en va de même pour les étiquettes de confidentialité qui sont uniquement destinées aux conteneurs et qui ne peuvent pas être sélectionnées pour les documents et les courriers électroniques. Nouveauté actuellement en préversion : vous pouvez également sélectionner l’étendue des ressources Azure Purview :
 
-![Options d’étendue des étiquettes de confidentialité](../media/sensitivity-labels-scopes.png)
+![Options d’étendue des étiquettes de confidentialité.](../media/sensitivity-labels-scopes.png)
 
 Par défaut, l’étendue **Fichiers et e-mails** est toujours sélectionnée. Les autres étendues sont sélectionnées par défaut lorsque les fonctionnalités sont activées pour votre client :
 
@@ -138,7 +138,7 @@ Par défaut, l’étendue **Fichiers et e-mails** est toujours sélectionnée. L
 
 Si vous modifiez les valeurs par défaut pour que toutes les étendues ne soient pas sélectionnées, vous verrez la première page des paramètres de configuration des étendues que vous n’avez pas sélectionnées, mais vous ne pourrez pas configurer les paramètres. Par exemple, si l’étendue des fichiers et e-mails n’est pas sélectionnée, vous ne pouvez pas sélectionner les options de la page suivante :
 
-![Options non disponibles pour les étiquettes de confidentialité](../media/sensitivity-labels-unavailable-settings.png)
+![Options non disponibles pour les étiquettes de confidentialité.](../media/sensitivity-labels-unavailable-settings.png)
 
 Pour ces pages dont les options ne sont pas disponibles, sélectionnez **Suivant** pour continuer. Vous pouvez également sélectionner **Retour** pour modifier l’étendue de l’étiquette.
 
@@ -150,7 +150,7 @@ Vous pouvez appliquer une seule étiquette de confidentialité à un élément t
 
 Cependant, l’ordre des sous-étiquettes est utilisé avec l'[étiquetage automatique](apply-sensitivity-label-automatically.md). Lorsque vous configurez les étiquettes pour les appliquer automatiquement ou en tant que recommandation, plusieurs correspondances peuvent se produire pour plus d'une étiquette. Pour déterminer l’étiquette à appliquer ou à recommander, l’ordre d’étiquettes est utilisé : la dernière étiquette de confidentialité est sélectionnée, puis, le cas échéant, la dernière sous-étiquette.
 
-![Option de création d’une sous-étiquette](../media/Sensitivity-label-sublabel-options.png)
+![Option de création d’une sous-étiquette.](../media/Sensitivity-label-sublabel-options.png)
 
 ### <a name="sublabels-grouping-labels"></a>Sous-étiquettes (regroupement d’étiquettes)
 
@@ -162,7 +162,7 @@ Ne choisissez pas une étiquette parent en tant qu’étiquette par défaut ou c
 
 Exemple d’affichage de sous-étiquettes pour les utilisateurs :
 
-![Sous-étiquettes regroupées dans le ruban](../media/Sensitivity-label-grouped-labels2.png)
+![Sous-étiquettes regroupées dans le ruban.](../media/Sensitivity-label-grouped-labels2.png)
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>Modification ou suppression d’une étiquette de niveau de confidentialité
 
@@ -189,13 +189,13 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
 - **Demander une justification pour une modification d'étiquette.** Si un utilisateur tente de supprimer une étiquette ou de la remplacer par une étiquette ayant un rang inférieur, vous pouvez exiger que l'utilisateur justifie cette action. Par exemple, un utilisateur ouvre un document étiqueté Confidentiel (rang 3) et remplace cette étiquette par avec une autre nommée Public (rang 1). Pour les applications Office, cette invite de justification est déclenchée une fois par session d’application lorsque vous utilisez l’étiquetage intégré et par fichier lorsque vous utilisez le client d’étiquetage unifié Azure Information Protection. Les administrateurs peuvent lire le motif de justification ainsi que le changement d’étiquette dans [explorateur des activités](data-classification-activity-explorer.md).
 
-    ![Invite de saisie d’une justification par les utilisateurs](../media/Sensitivity-label-justification-required.png)
+    ![Invite de saisie d’une justification par les utilisateurs.](../media/Sensitivity-label-justification-required.png)
 
 - **Demandez aux utilisateurs d’appliquer une étiquette** aux documents et aux e-mails, uniquement aux documents, pour les conteneurs et le contenu Power BI. Également connues sous le nom d'étiquetage obligatoire, ces options permettent d’assurer qu’une étiquette soit appliquée avant que les utilisateurs puissent enregistrer des documents, envoyer des e-mails, créer des groupes ou des sites et lorsqu’ils utilisent du contenu non étiqueté pour Power BI.
     
     Pour les documents et les e-mails, une étiquette peut être attribuée manuellement par l’utilisateur, automatiquement suite à une condition que vous configurez, ou être attribuée par défaut (l’option d’étiquette par défaut précédemment décrite). Un exemple d’invite présenté dans Outlook lorsqu’un utilisateur doit attribuer une étiquette :
 
-    ![Invite demandant à l’utilisateur Outlook d’appliquer l’étiquette requise](../media/sensitivity-labels-mandatory-prompt-outlook.png)
+    ![Invite demandant à l’utilisateur Outlook d’appliquer l’étiquette requise.](../media/sensitivity-labels-mandatory-prompt-outlook.png)
     
     Pour plus d’informations sur l’étiquetage obligatoire des documents et des e-mails, consultez [Demander aux utilisateurs d’appliquer une étiquette à leurs e-mails et documents](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     
@@ -207,7 +207,7 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
 - **Fournir un lien d’aide vers une page d’aide personnalisée.** Si vos utilisateurs ne sont pas sûrs de savoir ce que signifient vos étiquettes de confidentialité ou comment elles doivent être utilisées, vous pouvez fournir une URL de type En savoir plus, qui apparaît en bas du menu **Étiquette de confidentialité** dans les applications Office :
 
-    ![Lien En savoir plus sur le bouton Niveau de confidentialité dans le ruban](../media/Sensitivity-label-learn-more.png)
+    ![Lien En savoir plus sur le bouton Niveau de confidentialité dans le ruban.](../media/Sensitivity-label-learn-more.png)
 
 Les nouvelles étiquettes de confidentialité s’affichent dans les applications Office des utilisateurs, après la création d’une stratégie d’étiquettes les attribuant aux utilisateurs et aux groupes. Veuillez patienter jusqu’à 24 heures pour que les modifications s’appliquent dans votre organisation.
 
@@ -227,7 +227,7 @@ Vous pouvez inclure un utilisateur dans plusieurs stratégies d’étiquette, et
 
 Si vous ne voyez pas l’étiquette ou le paramètre de stratégie d’étiquette attendu pour un utilisateur ou un groupe, vérifiez l’ordre des stratégies d’étiquette de confidentialité. Vous devrez peut-être déplacer la stratégie vers le bas. Pour réorganiser les stratégies d’étiquette, sélectionnez une stratégie d’étiquette de confidentialité > sélectionnez les points de suspension sur la droite > **Descendre** ou **Monter**.
 
-![Option déplacer dans la page pour les stratégies d’étiquette de confidentialité](../media/sensitivity-label-policy-priority.png)
+![Option déplacer dans la page pour les stratégies d’étiquette de confidentialité.](../media/sensitivity-label-policy-priority.png)
 
 > [!NOTE]
 > N’oubliez pas : en cas de conflit de paramètres pour un utilisateur à qui plusieurs stratégies ont été affectées, le paramètre de la stratégie ayant la priorité la plus élevée (position la plus faible) est appliqué.

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: dcf7ecede8eb870edbeb015d0c7a5005ed006ab2
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 7fa72bc6e96199fb7773e4df385e3527ac14938e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533566"
+ms.locfileid: "58568623"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Collecte de données pour la résolution avancée des problèmes sur Windows
 
@@ -36,14 +36,14 @@ Lorsque vous collaborez avec des professionnels du support technique Microsoft, 
 
 Exécuter '**MDEClientAnalyzer.cmd /?**' pour voir la liste des paramètres disponibles et leur description :
 
-![Image des paramètres de l’analyseur client dans la ligne de commande](images/d89a1c04cf8441e4df72005879871bd0.png)
+![Image des paramètres de l’analyseur client dans la ligne de commande.](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
 > Lorsqu’un paramètre de dépannage avancé est [](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance) utilisé, l’analyseur appelle égalementMpCmdRun.exepour collecter Antivirus Microsoft Defender journaux de support associés.
 
 **-h** : appelle [l’enregistreur Windows performance](/windows-hardware/test/wpt/wpr-command-line-options) pour collecter un suivi détaillé des performances générales en plus du jeu de journaux standard.
 
-**-l** - Appels dans l’Windows [Performance Monitor](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) pour collecter un suivi perfmon léger. Cela peut être utile lors du diagnostic des problèmes de dégradation des performances lents qui se produisent au fil du temps mais qui sont difficiles à reproduire à la demande.
+**-l** - Appels dans l’Windows [Performance Monitor](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) pour collecter un suivi perfmon léger. Cela peut s’avérer utile lors du diagnostic de problèmes de dégradation des performances lents qui se produisent au fil du temps, mais qui sont difficiles à reproduire à la demande.
 
 **-c** - Appels dans le [moniteur](/sysinternals/downloads/procmon) de processus pour la surveillance avancée de l’activité en temps réel du système de fichiers, du Registre et des processus/threads. Cela est particulièrement utile lors du dépannage de différents scénarios de compatibilité d’application.
 
@@ -72,7 +72,7 @@ Exécuter '**MDEClientAnalyzer.cmd /?**' pour voir la liste des paramètres disp
 
 L’analyseur et tous les indicateurs de scénario ci-dessus peuvent être lancés à distance en exécutant « RemoteMDEClientAnalyzer.cmd » qui est également regroupé dans l’ensemble d’outils de l’analyseur :
 
-![Image de la ligne de commande avec des informations de l’analyseur](images/57cab9d82d08f672a92bf9e748ac9572.png)
+![Image de la ligne de commande avec des informations de l’analyseur.](images/57cab9d82d08f672a92bf9e748ac9572.png)
 
 > [!NOTE]
 >
@@ -84,4 +84,4 @@ L’analyseur et tous les indicateurs de scénario ci-dessus peuvent être lanc�
 >
 >   - **-r** : indique que l’outil est exécuté à partir d’un contexte distant (ou non interactif)
 >   - **-i** - Indicateur de scénario pour la collecte de suivi réseau avec d’autres journaux associés
->   - **-m** \# - Nombre de minutes d’exécuter (5 minutes dans l’exemple ci-dessus)
+>   - **-m** \# - Nombre de minutes à exécuter (5 minutes dans l’exemple ci-dessus)

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: febe5148d6f4a341cd29d3950bc319d36bcfa0a6f0d4a4afe2c4ebb9038613b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 309f6b7ee396baba0fcec0061d48f062510d7350
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886338"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569800"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Appareils Windows 10 intégrés utilisant Configuration Manager
 
@@ -83,7 +83,7 @@ Les valeurs possibles sont les suivantes :
 
 La valeur par défaut au cas où la clé de Registre n’existe pas est 1.
 
-Pour plus d’informations System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
+Pour plus d’informations sur System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
 
 ## <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
@@ -140,7 +140,7 @@ Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, cons
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage utilisant System Center Configuration Manager 2012 R2
 
-1. Obtenez le package deboarding à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com/):
+1. Obtenez le package de mise hors programme à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com/):
 
 2. Dans le volet de navigation, sélectionnez **Paramètres**  >   **l’intégration** >  **de l’appareil.**
 
@@ -164,7 +164,7 @@ Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, cons
 
 Si vous utilisez la Microsoft Endpoint Configuration Manager actuelle, utilisez le tableau de bord Microsoft Defender pour point de terminaison intégré dans la console Configuration Manager. Pour plus d’informations, voir Microsoft Defender - Protection avancée [contre les menaces - Surveiller.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
 
-Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
+Si vous utilisez System Center Configuration Manager 2012 R2, la surveillance se compose de deux parties :
 
 1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou s’est exécuté correctement) sur les appareils de votre réseau.
 
@@ -182,7 +182,7 @@ Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se
 
     En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender - Protection avancée [contre les menaces.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
 
-    ![Configuration Manager affichant un déploiement réussi sans erreur](../media/sccm-deployment.png)
+    ![Configuration Manager affichant un déploiement réussi sans erreur.](../media/sccm-deployment.png)
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-365-endpoint-data-loss-prevention-service"></a>Vérifier que les appareils sont conformes au service de protection contre Microsoft 365 perte de données du point de terminaison
 
@@ -201,7 +201,7 @@ Value: “1”
 ```
 Pour plus d’informations, voir Introduction aux paramètres de conformité [dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](dlp-configure-endpoints-gp.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](dlp-configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows 10 utilisant un script local](dlp-configure-endpoints-script.md)

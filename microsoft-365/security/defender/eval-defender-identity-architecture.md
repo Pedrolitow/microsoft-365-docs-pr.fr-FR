@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 778ff1aebf7ea0a559d2ec5fb036de7218865df9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d7474a3cb2f04627c5da16f84dbde6d195021551
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256881"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569920"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Passer en revue les exigences en matière d’architecture et les concepts clés de Microsoft Defender pour l’identité
 
@@ -46,7 +46,7 @@ Defender pour l’identité protège vos utilisateurs Active Directory locaux et
 
 Le diagramme suivant illustre l’architecture de base de Defender for Identity. 
 
-![Architecture de Microsoft Defender pour l’identité](../../media/defender/m365-defender-identity-architecture.png)
+![Architecture de Microsoft Defender pour l’identité.](../../media/defender/m365-defender-identity-architecture.png)
 
 Dans cette illustration :
 - Les capteurs installés sur les contrôleurs de domaine AD analysent les journaux et le trafic réseau et les envoient à Microsoft Defender pour identité pour analyse et rapport.
@@ -73,8 +73,8 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 | Alertes de sécurité    | Les alertes de sécurité Defender for Identity expliquent les activités suspectes détectées par les capteurs sur votre réseau, ainsi que les acteurs et ordinateurs impliqués dans chaque menace.   | [Microsoft Defender pour les alertes de sécurité des identités](/defender-for-identity/suspicious-activity-guide?tabs=external)    |
 | Profils d’entité    | Les profils d’entité fournissent une enquête approfondie complète sur les utilisateurs, les ordinateurs, les appareils et les ressources, ainsi que leur historique d’accès.   | [Comprendre les profils d’entité](/defender-for-identity/entity-profiles)  |
 | Chemins de déplacement latéral    | Un composant clé des informations de sécurité MDI consiste à identifier les chemins de déplacement latéral dans lesquels un attaquant utilise des comptes non sensibles pour accéder à des comptes ou des ordinateurs sensibles dans l’ensemble de votre réseau.  | [Microsoft Defender pour les chemins de déplacement latéral d’identité (LMP)](/defender-for-identity/use-case-lateral-movement-path)  |
-| Résolution des noms réseau    |  La résolution de noms réseau (NNR) est un composant de la fonctionnalité MDI qui capture les activités basées sur le trafic réseau, les événements Windows, ETW, etc. et met en corrélation ces données brutes avec les ordinateurs concernés impliqués dans chaque activité.       | [Qu’est-ce que la résolution de noms réseau ?](/defender-for-identity/nnr-policy)      |
-| Reports    | Les rapports Defender for Identity vous permettent de planifier ou de générer et de télécharger immédiatement des rapports qui fournissent des informations sur l’état du système et de l’entité.  Vous pouvez créer des rapports sur l’état du système, les alertes de sécurité et les chemins de déplacement latéral potentiels détectés dans votre environnement.   | [Microsoft Defender pour les rapports d’identité ](/defender-for-identity/reports)       |
+| Résolution des noms réseau    |  La résolution de noms réseau (NNR) est un composant de la fonctionnalité MDI qui capture les activités basées sur le trafic réseau, les événements Windows, ETW, etc. et met en corrélation ces données brutes avec les ordinateurs concernés impliqués dans chaque activité.       | [Qu’est-ce que la résolution de nom de réseau ?](/defender-for-identity/nnr-policy)      |
+| Rapports    | Les rapports Defender for Identity vous permettent de planifier ou de générer et de télécharger immédiatement des rapports qui fournissent des informations sur l’état du système et de l’entité.  Vous pouvez créer des rapports sur l’état du système, les alertes de sécurité et les chemins de déplacement latéral potentiels détectés dans votre environnement.   | [Microsoft Defender pour les rapports d’identité ](/defender-for-identity/reports)       |
 | Groupes de rôles    | Defender pour l’identité offre des groupes basés sur des rôles et un accès délégué pour protéger les données en fonction des besoins spécifiques de votre organisation en matière de sécurité et de conformité, notamment les administrateurs, les utilisateurs et les visiteurs.        |  [Groupes de rôles dans Microsoft Defender pour Identity](/defender-for-identity/role-groups)       |
 | Portail d’administration    |  Outre le portail Microsoft 365 Defender, le cab du portail Defender pour l’identité permet de surveiller et de répondre à des activités suspectes.      | [Travailler avec le portail Microsoft Defender pour l’identité](/defender-for-identity/workspace-portal)        |
 | Microsoft Cloud App Security’intégration   | Microsoft Cloud App Security s’intègre à Microsoft Defender pour l’identité pour fournir l’analyse comportementale de l’entité utilisateur (UEBA) dans un environnement hybride : application cloud et local   | Intégration de Microsoft Defender pour l’identité  |
@@ -83,7 +83,7 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 
 ## <a name="review-prerequisites"></a>Examiner les conditions préalables
 
-Defender pour l’identité nécessite un travail prérequis pour vous assurer que vos composants d’identité et de mise en réseau locaux répondent aux exigences minimales. Utilisez cet article comme liste de vérification pour vous assurer que votre environnement est prêt : Microsoft Defender pour les conditions [préalables pour l’identité.](/defender-for-identity/prerequisites)
+Defender pour l’identité nécessite un travail prérequis pour vous assurer que vos composants d’identité et de réseau locaux répondent aux exigences minimales. Utilisez cet article comme liste de vérification pour vous assurer que votre environnement est prêt : Microsoft Defender pour les conditions [préalables pour l’identité.](/defender-for-identity/prerequisites)
 
 
 ## <a name="next-steps"></a>Prochaines étapes

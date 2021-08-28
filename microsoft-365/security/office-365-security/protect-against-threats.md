@@ -20,12 +20,12 @@ description: Les administrateurs peuvent en savoir plus sur la protection contre
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06f87213131f8fccdd9cfd83d7bdf4ead10c0667
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 69f36a26792d37f66fca46ec7905be89483c61f6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594315"
+ms.locfileid: "58568071"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -33,7 +33,7 @@ ms.locfileid: "58594315"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Voici un guide de démarrage rapide qui décompose la configuration de Defender Office 365 en blocs. Si vous débutez avec les fonctionnalités de protection contre les menaces dans Office 365, si vous ne savez pas par où commencer, ou si vous apprenez mieux en faisant *cela,* utilisez ces instructions comme liste de contrôle et point de départ.
@@ -75,15 +75,15 @@ Pour configurer Defender pour les stratégies Office 365, vous devez avoir un r�
 |Rôle ou groupe de rôles|Où en savoir plus|
 |---|---|
 |administrateur général|[À propos des rôles d’administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Administrateur de sécurité|[Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference#security-administrator)
+|Administrateur de sécurité|[Autorisations des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Gestion d’Organisation Exchange Online|[Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo)|
 |
 
 Pour en savoir plus, [consultez Autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
 
-### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Activer la journalisation d’audit pour la rapport et l’examen
+### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Activer la journalisation d’audit pour les rapports et les examens
 
-- Démarrez votre journalisation d’audit tôt. Pour certaines des étapes  suivantes, l’audit doit être en cours. La journalisation d’audit est disponible dans les abonnements qui [incluent Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Pour afficher les données dans [](view-email-security-reports.md)les rapports de protection contre les menaces, les rapports de sécurité du courrier électronique et [l’Explorateur,](threat-explorer.md)la journalisation d’audit doit être *en cours.* Pour en savoir plus, voir Activer ou désactiver la [recherche dans le journal d’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Démarrez votre journalisation d’audit tôt. L’audit doit être **en cours pour** certaines des étapes suivantes. La journalisation d’audit est disponible dans les abonnements qui [incluent Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Pour afficher les données dans [](view-email-security-reports.md)les rapports de protection contre les menaces, les rapports de sécurité du courrier électronique et [l’Explorateur,](threat-explorer.md)la journalisation d’audit doit être *en cours.* Pour en savoir plus, voir Activer ou désactiver la [recherche dans le journal d’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="part-1---anti-malware-protection-in-eop"></a>Partie 1 : protection contre les programmes malveillants dans EOP
 
@@ -121,21 +121,21 @@ La procédure suivante décrit comment configurer la stratégie anti-hameçonnag
    - **Seuil de hameçonnage & section protection** : cliquez sur Modifier les **paramètres** de protection et configurez les paramètres suivants dans le volant qui s’ouvre :
      - **Seuil de courrier d’hameçonnage** <sup>\*</sup> : **sélectionnez 2 - Agressif** (Standard) ou **3 - Plus agressif** (Strict).
      - **Section Emprunt d’identité** <sup>\*</sup> : configurez les valeurs suivantes :
-       - Sélectionnez Activer la protection des **utilisateurs,** cliquez sur le lien Gérer **(nn)** les expéditeurs qui s’affiche, puis ajoutez des expéditeurs internes et externes pour vous protéger contre l’emprunt d’identité, tels que les membres du conseil d’administration de votre organisation, votre PDG, votre directeur financier et d’autres cadres supérieurs.
+       - Sélectionnez Activer la protection des **utilisateurs,** cliquez sur le lien Gérer **(nn)** des expéditeurs qui s’affiche, puis ajoutez des expéditeurs internes et externes pour vous protéger contre l’emprunt d’identité, tels que les membres du conseil d’administration de votre organisation, votre PDG, votre directeur financier et d’autres cadres supérieurs.
        - Sélectionnez **Activer les domaines à protéger,** puis configurez les paramètres suivants qui s’affichent :
          - Sélectionnez **Inclure les domaines que** je possède pour protéger les expéditeurs internes dans vos domaines acceptés (visibles en cliquant sur Afficher mes domaines) contre l’emprunt d’identité. 
-         - Pour protéger les expéditeurs dans d’autres domaines, sélectionnez Inclure des domaines **personnalisés,** cliquez sur le **lien Gérer (nn)** des domaines personnalisés qui s’affiche, puis ajoutez d’autres domaines à protéger contre l’emprunt d’identité.
+         - Pour protéger les expéditeurs dans d’autres domaines, sélectionnez Inclure des domaines **personnalisés,** cliquez sur le **lien Gérer (nn)** des domaines personnalisés qui s’affiche, puis ajoutez d’autres domaines pour vous protéger contre l’emprunt d’identité.
      - Section Ajouter des **expéditeurs** et des domaines de confiance : cliquez sur Gérer <sup>\*</sup> **(nn)** les expéditeurs et domaines de confiance pour configurer des exceptions de domaine d’expéditeur et d’expéditeur pour la protection contre l’emprunt d’identité si nécessaire.
      - Paramètres d’intelligence de boîte aux lettres : vérifiez que les paramètres Activer l’intelligence des boîtes aux lettres et Activer l’intelligence pour la protection contre l’emprunt <sup>\*</sup> d’identité sont sélectionnés.  
-     - **Section Usurpation** : vérifiez que **l’intelligence contre l’usurpation** d’identité est sélectionnée.
+     - **Section Usurpation** : Vérifiez que **l’intelligence contre** l’usurpation d’identité est sélectionnée.
 
      Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
    - **Section Actions** : cliquez **sur Modifier les actions** et configurez les paramètres suivants dans le volant qui s’ouvre :
      - **Section Actions de** message : Configurez les paramètres suivants :
        - **Si le message est détecté comme un utilisateur** dont l’identité est usurpée : <sup>\*</sup> sélectionnez mettre le message en **quarantaine.**
-       - **Si le message est détecté comme un domaine** dont l’identité est usurpée : <sup>\*</sup> sélectionnez mettre le message en **quarantaine.**
-       - **Si la veille de boîte** aux lettres détecte un utilisateur dont l’identité est usurpée : sélectionnez Déplacer le message vers les dossiers Courrier indésirable (Standard) des destinataires ou mettre le message en quarantaine <sup>\*</sup> (Strict).  
+       - **Si le message est détecté comme un** domaine dont l’identité est usurpée : <sup>\*</sup> sélectionnez mettre le message en **quarantaine.**
+       - **Si l’intelligence de** boîte aux lettres détecte un utilisateur dont l’identité est usurpée : sélectionnez Déplacer le message vers les dossiers Courrier indésirable (Standard) des destinataires ou mettre le message en quarantaine <sup>\*</sup> (Strict).  
        - **Si le message est détecté comme** usurpant l’adresse : sélectionnez Déplacer le message vers les dossiers Courrier indésirable (Standard) des **destinataires** ou mettre le **message** en quarantaine (Strict).
      - **Conseils de & section sur les** indicateurs de sécurité : Configurez les paramètres suivants :
        - **Afficher le premier contact conseil de sécurité**: Sélectionner (activer).
@@ -267,14 +267,14 @@ Pour plus d’informations sur les paramètres recommandés pour les liens Coffr
      - **Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages**: Activer ce **paramètre.**
      - **Sélectionnez l’action pour les URL inconnues** ou potentiellement malveillantes dans Microsoft Teams : activer ce **paramètre.** À partir de mars 2020, ce paramètre est en prévisualisation et n’est disponible ou fonctionnel que pour les membres du Microsoft Teams Technology Adoption Program (TAP).
      - **Appliquez l’analyse d’URL en** temps réel pour les liens suspects et les liens qui pointent vers des fichiers : sélectionnez ce paramètre (activer).
-       - **Attendez que l’analyse des URL se termine avant de remettre le message**: sélectionnez ce paramètre (activer).
+       - **Attendez que l’analyse de l’URL se termine avant de remettre le message**: sélectionnez ce paramètre (activer).
      - **Appliquer Coffre liens vers les messages électroniques envoyés** au sein de l’organisation : sélectionnez ce paramètre (activer).
      - **Ne pas suivre les clics de l’utilisateur**: vérifiez que ce paramètre n’est pas sélectionné (désactivé).
      - **Ne laissez pas les utilisateurs cliquer sur l’URL d’origine**: vérifiez que ce paramètre est allumé (sélectionné).
      - Affichez la personnalisation de l’organisation sur les pages de **notification** et d’avertissement : la sélection de ce paramètre (l’allumer) n’est significative qu’après avoir suivi les instructions de personnaliser le thème [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) pour que votre organisation télécharge le logo de votre entreprise.
      - **Ne réécrivez pas les URL suivantes**: nous n’avons aucune recommandation spécifique pour ce paramètre. Pour plus d’informations, voir [« Ne pas réécrire](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)les URL suivantes » dans Coffre de liens.
    - **Page de** notification :
-     - **Comment souhaitez-vous avertir les utilisateurs ?** section : Si vous le souhaitez, vous pouvez sélectionner Utiliser un texte de **notification** personnalisé pour entrer le texte de notification personnalisé à utiliser. Vous pouvez également sélectionner **Utiliser Traducteur Microsoft pour** la localisation automatique afin de traduire le texte de notification personnalisé dans la langue de l’utilisateur. Sinon, laissez **le texte de notification par** défaut sélectionné.
+     - **Comment souhaitez-vous avertir les utilisateurs ?** section : si vous le souhaitez, vous pouvez sélectionner Utiliser un texte **de notification** personnalisé pour entrer le texte de notification personnalisé à utiliser. Vous pouvez également sélectionner **Utiliser Traducteur Microsoft pour** la localisation automatique afin de traduire le texte de notification personnalisé dans la langue de l’utilisateur. Sinon, laissez **le texte de notification par** défaut sélectionné.
 
 5. Lorsque vous avez terminé, cliquez sur **Envoyer,** puis sur **Terminé.**
 
@@ -300,13 +300,13 @@ Pour recevoir une notification lorsqu’un fichier dans SharePoint Online ou One
    Lorsque vous avez terminé, cliquez sur **Suivant**
 
 4. Dans la page **Créer des paramètres d’alerte,** configurez les paramètres suivants :
-   - **Sur quoi voulez-vous alerter ?** section: **Activity is** \> **Detected malware in file**.
+   - **Sur quoi voulez-vous alerter ?** section : **l’activité** \> **est détectée contre les programmes malveillants dans le fichier.**
    - **Comment voulez-vous que l’alerte soit** déclenchée : Vérifiez chaque fois qu’une activité **correspond à la** règle est sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**
 
 5. Dans la page **Définir vos destinataires,** configurez les paramètres suivants :
-   - **Envoyer des notifications par courrier** électronique : vérifiez que ce paramètre est sélectionné.
+   - **Envoyer des notifications par** courrier électronique : vérifiez que ce paramètre est vérifié.
    - **Destinataires du courrier électronique**: sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
    - **Limite de notification quotidienne**: vérifiez **qu’aucune limite** n’est sélectionnée.
 
@@ -335,6 +335,6 @@ Après avoir configuré les fonctionnalités de protection contre les menaces, v
 |Procédure|Ressources pour en savoir plus|
 |---|---|
 |Découvrez comment fonctionnent les fonctionnalités de protection contre les menaces pour votre organisation en visualxant des rapports|[Rapports de sécurité de messagerie](view-email-security-reports.md) <p> [Rapports pour Microsoft Defender pour Office 365](view-reports-for-mdo.md) <p> [Threat Explorer](threat-explorer.md)|
-|Examiner et réviser régulièrement vos stratégies de protection contre les menaces selon vos besoins|[Degré de sécurisation](../defender/microsoft-secure-score.md) <p> [Microsoft 365 d’investigation et de réponse aux menaces](./office-365-ti.md)|
+|Examiner et réviser régulièrement vos stratégies de protection contre les menaces selon vos besoins|[Degré de sécurisation](../defender/microsoft-secure-score.md) <p> [Microsoft 365 l’examen des menaces et les fonctionnalités de réponse](./office-365-ti.md)|
 |Surveiller les nouvelles fonctionnalités et les mises à jour de service|[Options de publication standard et ciblée](../../admin/manage/release-options-in-office-365.md) <p> [Centre de messages](../../admin/manage/message-center.md) <p> [Feuille de route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |

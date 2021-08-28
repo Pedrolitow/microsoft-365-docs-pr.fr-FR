@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser le rapport pour affiner la stratégie de protection contre la perte de données (DLP) par défaut de votre organisation.
-ms.openlocfilehash: d2b140c6cd55896739c2500c7bc5a9196dfdf7e2e5971c4a45ef312acdcd75ca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 95c4ebae431bea1db033826459ca1595614ab5cb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813983"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569572"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Prise en main de la stratégie DLP par défaut
 
@@ -32,11 +32,11 @@ Avant même de créer votre première stratégie de protection contre la perte d
   
 Vous pouvez utiliser ce widget pour afficher rapidement quand et combien d’informations sensibles ont été partagées, puis affiner la stratégie DLP par défaut en un ou deux clics. Vous pouvez également modifier la stratégie DLP par défaut à tout moment, car elle est entièrement personnalisable. Notez que si vous ne voyez pas la recommandation au début, essayez de cliquer sur **+Plus** en bas de la section **Recommandé pour vous.** 
   
-![Widget nommé Protéger davantage le contenu partagé](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![Widget nommé « Protéger davantage le contenu partagé ».](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
 ## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Afficher le rapport et affiner la stratégie DLP par défaut
 
-Lorsque le widget vous indique que les utilisateurs ont partagé des informations sensibles avec des personnes extérieures à votre organisation, sélectionnez Affiner la stratégie **DLP** en bas. 
+Lorsque le widget vous indique que les utilisateurs ont partagé des informations sensibles avec des personnes extérieures à votre organisation, choisissez Affiner la stratégie **DLP** en bas. 
   
 Le rapport détaillé vous indique quand et combien de contenu contenant des numéros de carte de crédit ont été partagés au cours des 30 derniers jours. Notez que l’exposition des correspondances de règles dans le widget peut prendre jusqu’à 48 heures.
   
@@ -60,7 +60,7 @@ Pour plus d’informations sur les rapports d’incident ou la restriction de l�
   
 Si vous souhaitez modifier ces options ultérieurement, vous pouvez modifier la stratégie DLP par défaut à tout moment (voir la section suivante).
   
-![Paramètres widget nommé Protéger davantage le contenu partagé](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Paramètres widget nommé Protéger davantage le contenu partagé.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>Modifier la stratégie DLP par défaut
 
@@ -68,7 +68,7 @@ Cette stratégie est nommée **Stratégie DLP par défaut** et apparaît sous Pr
   
 Cette stratégie est entièrement personnalisable, comme toute stratégie DLP que vous créez vous-même à partir de zéro. Vous pouvez également désactiver ou supprimer la stratégie afin que vos utilisateurs ne reçoivent plus de conseils de stratégie ou de notifications par courrier électronique.
   
-![Stratégie DLP nommée Stratégie DLP par défaut](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![Stratégie DLP nommée Stratégie DLP par défaut.](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Lorsque le widget s’affiche et n’apparaît pas
 

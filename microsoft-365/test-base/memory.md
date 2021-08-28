@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ea4ce5d4883f3e3263a8885f1c347cf9f6fb8fb0c1d4062c1c2a843387d9aea3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 714cea98e5dd876a5a9e2568a6c8488f595f2f39
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888058"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568707"
 ---
 # <a name="memory-regression-analysis"></a>Analyse de la régression de la mémoire
 
@@ -33,18 +33,18 @@ Pour plus d’informations sur la capacité de base de test de M365 à faciliter
 
 Le tableau de bord Base de test pour M365 affiche la mémoire consommée par votre application sur une nouvelle mise à jour Windows pré-publiée et la compare à la mémoire utilisée par la dernière mise à jour Windows publiée. 
 
-Grâce aux améliorations apportées ce mois-ci, l’analyse de la régression de la mémoire est désormais mise en avant dans vos processus favoris. Les applications peuvent contenir plusieurs processus et vous pouvez sélectionner manuellement vos processus favoris via l’onglet Fiabilité. Notre service identifiera ensuite les régressions de mémoire dans ces processus favoris tout en comparant les tests s’exécutent entre Windows mises à jour. Si une régression est détectée, des détails sur la régression sont facilement disponibles.
+Grâce aux améliorations apportées ce mois-ci, l’analyse de la régression de la mémoire est désormais mise en avant dans vos processus favoris. Les applications peuvent contenir plusieurs processus et vous pouvez sélectionner manuellement vos processus favoris via l’onglet Fiabilité. Notre service identifiera ensuite les régressions de mémoire dans ces processus favoris tout en comparant les tests s’exécutent Windows mises à jour. Si une régression est détectée, des détails sur la régression sont facilement disponibles.
 
 Examinons maintenant cette fonctionnalité en détail et voyons comment résoudre les problèmes de régression de mémoire à l’aide de Windows Performance Analyzer.
 
 Le signal d’échec provoqué par une régression de mémoire est affiché dans la base de test pour le tableau de bord M365 de la page des résultats des tests sous Utilisation de la mémoire :
 
-![Résultats de l’utilisation de la mémoire](Media/01_memory-utilization-results.png)
+![Résultat de l’utilisation de la mémoire.](Media/01_memory-utilization-results.png)
 
 
 L’échec de l’application en raison d’une consommation de mémoire plus élevée s’affiche également dans la page Résumé ```Fail``` des tests :
 
-![Résultats récapitulatifs des tests](Media/02_test-summary.png)
+![Résultats récapitulatifs des tests.](Media/02_test-summary.png)
 
 En fournissant ces signaux d’échec à l’avance, notre objectif est de marquer clairement les problèmes potentiels qui peuvent perturber et avoir un impact sur l’expérience de l’utilisateur final pour votre application. 
 
@@ -52,13 +52,13 @@ Vous pouvez ensuite télécharger les fichiers journaux et utiliser Windows Perf
 
 Les signaux de mémoire sont capturés dans l’onglet Utilisation de la mémoire dans la base de test pour le service M365 pour toutes les séries de tests. L’exemple ci-dessous illustre une série de tests récents avec l’application intégré « Stress de mémoire de test de la tension » par rapport à la mise à jour de sécurité d’août 2020 pré-publiée. (Cette application a été écrite par notre équipe pour illustrer les régressions de mémoire.)
 
-![Résultats de régression de mémoire](Media/03_memory-regression%20comparison.png)
+![Résultats de régression de mémoire.](Media/03_memory-regression%20comparison.png)
 
 Dans cet exemple, le processus favori « USLTestMemoryStress.exe » a consommé une moyenne d’environ 100 Mo sur la mise à jour d’août pré-publiée par rapport à la mise à jour publiée en juillet, d’où la base de test pour M365 a identifié une régression. 
 
 Les autres processus, présentés ici sous les formes « USLTestMemoryStress_Aux1.exe » et « USLTestMemoryStress_Aux2.exe », appartiennent également à la même application, mais ont consommé à peu près la même quantité de mémoire pour les deux releases de sorte qu’elles ont été « transmises » et considérées comme saines.
 
-La régression sur le processus principal a été déterminée comme « significative du point de vue statistique », de sorte que le service a communiqué et mis en évidence cette différence pour l’utilisateur. Si la comparaison n’était pas significative d’un point de vue statistique, elle ne serait pas mise en évidence. L’utilisation de la mémoire peut être bruyante. Nous utilisons donc des modèles statistiques pour distinguer, entre les builds et les sorties, les différences significatives par rapport aux différences non significatives. 
+La régression sur le processus principal a été déterminée comme « significative du point de vue statistique », de sorte que le service a communiqué et mis en évidence cette différence à l’utilisateur. Si la comparaison n’était pas significative d’un point de vue statistique, elle ne serait pas mise en évidence. L’utilisation de la mémoire peut être bruyante. Nous utilisons donc des modèles statistiques pour distinguer, entre les builds et les releases, les différences significatives par rapport aux différences non significatives. 
 
 Une comparaison peut rarement être signalée lorsqu’il n’existe aucune différence réelle (faux positif), mais il s’agit d’un compromis nécessaire pour améliorer la probabilité d’identifier correctement les régressions (ou les vrais positifs).)
 
@@ -66,11 +66,11 @@ L’étape suivante consiste à comprendre ce qui a provoqué la régression de 
 
 Ces fichiers zip contiennent les résultats de votre exécution de test, y compris les résultats des scripts, la mémoire et les données de performances du processeur incluses dans le fichier ETL.
 
-![Fichiers de test de régression de mémoire](Media/04_memory-regression-test-files.png)
+![Fichiers de test de régression de mémoire.](Media/04_memory-regression-test-files.png)
 
 Vous pouvez télécharger et déconnecter les journaux pour les deux séries de tests, puis localiser le fichier ETL dans chaque dossier et les renommer en tant que target.etl (pour l’essai exécuté sur la mise à jour pré-publication) et baseline.etl (pour le test exécuté lors de la dernière mise à jour publiée) pour simplifier l’exploration et la navigation.
  
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Passer à l’article suivant pour commencer à comprendre l’analyse intelligente de la régression du processeur.
 > [!div class="nextstepaction"]

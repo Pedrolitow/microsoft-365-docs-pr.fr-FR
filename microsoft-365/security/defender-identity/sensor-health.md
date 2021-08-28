@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: e2052652e1ded79d8605c5b5f84b82d8c6504fd9
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 9d57272626c6f6c5d0e44052522cb73b9b675fd8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360135"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569320"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender pour l’état et les paramètres du capteur d’identité dans Microsoft 365 Defender
 
@@ -21,47 +21,47 @@ ms.locfileid: "58360135"
 - Microsoft 365 Defender
 - Defender pour l’identité
 
-Cet article explique comment configurer et surveiller les capteurs [d’identité Microsoft Defender](/defender-for-identity) dans [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+Cet article explique comment configurer et surveiller les capteurs [Microsoft Defender pour l’identité](/defender-for-identity) [dans Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
->Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender for Identity. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
+>Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender pour l’identité. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
 
 ## <a name="view-defender-for-identity-sensor-settings-and-status"></a>Affichage des paramètres et de l’état du capteur d’identité View Defender
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Paramètres** and then **Identities**.
 
-    ![Go to Paramètres, then Identities](../../media/defender-identity/settings-identities.png)
+    ![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Sélectionnez **la** page Capteurs, qui affiche tous vos capteurs Defender pour l’identité. Pour chaque capteur, vous verrez son nom, son appartenance au domaine, le numéro de version, si les mises à jour doivent être retardées, l’état du service, l’état de mise à jour, l’état d’état, le nombre de problèmes d’état et la création du capteur.
 
-    [![Page Capteur](../../media/defender-identity/sensor-page.png)](../../media/defender-identity/sensor-page.png#lightbox)
+    [![Page Capteur.](../../media/defender-identity/sensor-page.png)](../../media/defender-identity/sensor-page.png#lightbox)
 
     >[!NOTE]
     >Dans le portail Defender pour l’identité, les paramètres du capteur et les informations d’état se sont produits dans des emplacements distincts. Notez que dans Microsoft 365 Defender ils sont maintenant sur la même page.
 
 1. Si vous sélectionnez **Filtres,** vous pouvez choisir les filtres qui seront disponibles. Ensuite, avec chaque filtre, vous pouvez choisir les capteurs à afficher.
 
-    [![Filtres de capteur](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
+    [![Filtres de capteur.](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
 
-    ![Capteur filtré](../../media/defender-identity/filtered-sensor.png)
+    ![Capteur filtré.](../../media/defender-identity/filtered-sensor.png)
 
 1. Si vous sélectionnez l’un des capteurs, un volet s’affiche avec des informations sur le capteur et son état d’état.
 
-    [![Détails du capteur](../../media/defender-identity/sensor-details.png)](../../media/defender-identity/sensor-details.png#lightbox)
+    [![Détails du capteur.](../../media/defender-identity/sensor-details.png)](../../media/defender-identity/sensor-details.png#lightbox)
 
 1. Si vous sélectionnez l’un des problèmes d’état de santé, vous obtenez un volet avec plus de détails à leur sujet. Si vous choisissez un problème fermé, vous pouvez le rouvrir à partir d’ici.
 
-    ![Détails du problème](../../media/defender-identity/issue-details.png)
+    ![Détails du problème.](../../media/defender-identity/issue-details.png)
 
 1. Si vous sélectionnez **Gérer le capteur,** un volet s’ouvre et vous permet de configurer les détails du capteur.
 
-    ![Gérer le capteur](../../media/defender-identity/manage-sensor.png)
+    ![Gérer le capteur.](../../media/defender-identity/manage-sensor.png)
 
-    ![Configurer les détails du capteur](../../media/defender-identity/configure-sensor-details.png)
+    ![Configurez les détails du capteur.](../../media/defender-identity/configure-sensor-details.png)
 
 1. Dans la page **Capteurs,** vous pouvez exporter votre liste de capteurs vers un fichier .csv en sélectionnant **Exporter.**
 
-    ![Exporter la liste des capteurs](../../media/defender-identity/export-sensors.png)
+    ![Exporter la liste des capteurs.](../../media/defender-identity/export-sensors.png)
 
 ## <a name="add-a-sensor"></a>Ajouter un capteur
 
@@ -69,11 +69,11 @@ Cet article explique comment configurer et surveiller les capteurs [d’identit�
 
 1. Sélectionnez **Ajouter un capteur.**
 
-    ![Ajouter un capteur](../../media/defender-identity/add-sensor.png)
+    ![Ajoutez un capteur.](../../media/defender-identity/add-sensor.png)
 
-1. Un volet s’ouvre, vous fournissant un bouton permettant de télécharger le programme d’installation du capteur et une touche d’accès rapide générée.
+1. Un volet s’ouvre, vous fournissant un bouton pour télécharger le programme d’installation du capteur et une touche d’accès rapide générée.
 
-    ![Télécharger le programme d’installation et la touche d’accès rapide](../../media/defender-identity/installer-access-key.png)
+    ![Téléchargez le programme d’installation et la touche d’accès rapide.](../../media/defender-identity/installer-access-key.png)
 
 1. Sélectionnez **Télécharger le programme** d’installation pour enregistrer le package localement. Le fichier zip inclut les fichiers suivants :
 
