@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Pour les administrateurs : apprenez comment utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST dans les boîtes aux lettres d’utilisateur de Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42a877188d8c385fa3ff1a24057d89ff694e5a8a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 625d9e37246fa6c4e24754be2e3bc830740124a2
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552983"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684015"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Utilisez le chargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365
 
@@ -59,12 +59,12 @@ Vous ne devez effectuer l’étape 1 qu’une seule fois pour importer des fichi
 
   - Vous devez être un administrateur général au sein de votre organisation.
 
-  > [!TIP]
+    > [!TIP]
     > Envisagez de créer un nouveau groupe de rôles dans Exchange Online spécialement conçu pour importer les fichiers PST. Pour obtenir le niveau minimum de privilèges requis pour importer des fichiers PST, affectez les rôles d’importation/exportation de boîte aux lettres et de destinataire de courrier au nouveau groupe de rôles et ajoutez ensuite les membres.
   
 - La seule méthode prise en charge pour l’importation de fichiers PST dans Microsoft 365 consiste à utiliser l’outil AzCopy, comme décrit dans cette rubrique. Vous ne pouvez pas utiliser l’Explorateur de stockage Azure pour charger des fichiers PST directement dans la zone de stockage Azure.
-
-- Vous devez stocker les fichiers PST que vous souhaitez importer dans Microsoft 365 sur un serveur de fichiers ou un dossier partagé dans votre organisation. À l’étape 2, vous devez exécuter l’outil AzCopy pour télécharger les fichiers PST stockés sur un serveur de fichiers ou ce dossier partagé dans Microsoft 365.
+ 
+- Vous devez stocker les fichiers PST que vous souhaitez importer dans Microsoft 365 sur un serveur de fichiers ou un dossier partagé dans votre organisation. Il n’est actuellement pas pris en charge de copier des fichiers PST à partir du compte stockage Azure de votre organisation vers l’emplacement stockage Azure utilisé par le service d’importation Microsoft 365. À l’étape 2, vous exécutez l’outil AzCopy qui charge les fichiers PST stockés sur un serveur de fichiers ou dossier partagé dans le cloud Microsoft.
 
 - Les fichiers PST volumineux peuvent avoir un impact sur les performances du processus d’importation PST. Par conséquent, nous vous recommandons de ne pas dépasser 20 Go pour chaque fichier PST téléchargé sur l’emplacement de stockage Azure à l’étape 2.
 
