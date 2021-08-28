@@ -9,18 +9,18 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8e65dd554a07158d3df3b11323e158c1ea8afd20
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 4af99d0fa87d8d11d3dfcc21d37e332e890c8f7f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364568"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575047"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Préparer son inscription au Bureau géré Microsoft
 
 Ces sujets décrivent les étapes à suivre pour préparer l'inscription dans votre organisation, notamment la vérification du fait que votre environnement respecte les principales conditions préalables, la configuration des réseaux, la mise en place des certificats et la préparation de vos applications afin d’inclure ce service. Une fois que vous avez exécuté les outils d’évaluation de disponibilité, vous pouvez effectuer les autres étapes dans n’importe quel ordre ou en parallèle. Selon votre environnement, certaines étapes peuvent ne pas être pertinentes pour vous.
 
-![Séquence suggérée d’étapes pour vous préparer à l’inscription, répertoriée dans cet article](../../media/mmd-getready-sequence.png)
+![Séquence suggérée des étapes pour vous préparer à l’inscription, répertoriée dans cet article](../../media/mmd-getready-sequence.png)
 
 1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
 2. Exécutez les [outils d’évaluation de la préparation](readiness-assessment-tool.md).

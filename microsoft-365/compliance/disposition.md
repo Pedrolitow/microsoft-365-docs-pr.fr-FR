@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 8a223a49e0fe648dee3bb8c47449538b8f0bfa5614066f4bfecc76e622e1ae65
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b949b712721acc7921d3c6ac25a07c14338d7609
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895896"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567939"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -68,7 +68,7 @@ En outre :
 
 Après avoir activé un groupe de sécurité pour sa disposition à partir du **Paramètres de gestion des enregistrements** dans le Centre de conformité Microsoft 365, vous ne pouvez pas désactiver cette autorisation pour le groupe ou remplacer le groupe sélectionné dans le Centre de conformité. Toutefois, vous pouvez activer un autre groupe de sécurité à extension messagerie en utilisant la cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
 
-Par exemple : 
+Par exemple : 
 
 ```PowerShell
 Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
@@ -104,20 +104,20 @@ Une révision de destruction peut inclure du contenu dans les boîtes aux lettre
 > [!NOTE]
 > Une boîte aux lettres doit avoir au moins 10 Mo de données pour prendre en charge les révisions de suppression.
 
-Les administrateurs peuvent voir une vue d’ensemble de toutes les destructions en attente dans l’onglet **Vue d’ensemble**. Les réviseurs voient uniquement leurs éléments en attente de destruction. Par exemple :
+Les administrateurs peuvent voir une vue d’ensemble de toutes les destructions en attente dans l’onglet **Vue d’ensemble**. Les réviseurs voient uniquement leurs éléments en attente de destruction. Par exemple :
 
-![Destructions en attente dans la vue d’ensemble de la Gestion des enregistrements](../media/dispositions-overview.png)
+![Dispositions en attente dans la vue d’ensemble de la Gestion des enregistrements](../media/dispositions-overview.png)
 
-Lorsque vous sélectionnez l’option **Afficher toutes les destructions en attente**, vous êtes redirigé vers la page **Destruction** . Par exemple :
+Lorsque vous sélectionnez l’option **Afficher toutes les destructions en attente**, vous êtes redirigé vers la page **Destruction** . Par exemple :
 
-![Page de destruction dans le centre de conformité Microsoft 365](../media/disposition-tab.png)
+![Page de destruction dans le centre de conformité Microsoft 365.](../media/disposition-tab.png)
 
 
 ### <a name="workflow-for-a-disposition-review"></a>Flux de travail pour une révision de destruction
 
 Le diagramme suivant illustre le flux de travail de base d’une révision de destruction lorsqu’une étiquette de rétention est publiée et appliquée manuellement par un utilisateur. Une étiquette de rétention configurée pour une révision de destruction peut également être appliquée automatiquement au contenu.
   
-![Graphique montrant le fonctionnement de la destruction](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Graphique montrant le fonctionnement de la destruction.](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
 
 ### <a name="how-to-configure-a-retention-label-for-disposition-review"></a>Comment configurer une étiquette de rétention pour la révision avant destruction
 
@@ -129,7 +129,7 @@ Dans la page **Définir les paramètres de rétention** pour une étiquette de r
  
 Après votre sélection de l’option **Déclencher une révision avant destruction**, sur la page suivante de l’assistant, vous spécifiez le nombre souhaité d’étapes consécutives de la destruction et les réviseurs avant destruction pour chaque étape :
 
-![Spécification des réviseurs avant destruction](../media/disposition-reviewers.png) 
+![Spécification des réviseurs de destruction.](../media/disposition-reviewers.png) 
 
 Sélectionnez **Ajouter une étape**, puis nommez-la à des fins d’identification. Spécifiez ensuite les réviseurs pour cette étape.
 
@@ -144,7 +144,7 @@ Dans chaque étape individuelle de destruction, tout utilisateur spécifié pour
 
 Pendant la phase de configuration, pour chaque étape spécifiée, vous pouvez la renommer, la réarranger ou la supprimer en sélectionnant l’option Actions de l’étape (**...**) : 
 
-![Actions de l’étape pour les révisions avant destruction](../media/stage-actions-disposition-review.png)
+![Actions d’étape pour les révisions de destruction.](../media/stage-actions-disposition-review.png)
 
 Cependant, vous ne pouvez pas réarranger ou supprimer une étape après la création d’une étiquette de rétention.
 
@@ -154,13 +154,13 @@ Après avoir spécifié vos réviseurs, n’oubliez pas de leur accorder l’aut
 
 Exemple de notification par défaut envoyée par e-mail au réviseur :
 
-![Exemple de notification par e-mail avec texte par défaut lorsqu’un élément est prêt à être envoyé pour révision](../media/disposition-review-email.png)
+![Exemple de notification par e-mail avec texte par défaut lorsqu’un élément est prêt pour révision de destruction.](../media/disposition-review-email.png)
 
 Également dans la préversion, vous pouvez personnaliser les messages électroniques envoyés aux réviseurs avant destruction pour la notification initiale et les rappels.
 
 À partir de l’une des pages Destruction dans le Centre de conformité, sélectionnez **Paramètres de gestion des enregistrements** :  
 
-![Paramètres de gestion des enregistrements](../media/record-management-settings.png)
+![Paramètres de gestion des enregistrements.](../media/record-management-settings.png)
 
 Sélectionnez ensuite l’onglet **Notifications de destruction**, puis spécifiez si vous voulez utiliser simplement le courrier électronique par défaut ou ajouter votre texte au message par défaut. Votre texte personnalisé est ajouté aux instructions de l’e-mail après les informations sur l’étiquette de rétention et avant les instructions des étapes suivantes.
 
@@ -178,11 +178,11 @@ Sélectionnez **Enregistrer** pour enregistrer toute modification.
 
 Lorsqu’un réviseur est averti par courrier électronique que le contenu est prêt à être examiné, il peut cliquer sur un lien dans le message électronique qui l’a directement envoyé à la page **Destruction** de **Gestion des enregistrements** dans le Centre de conformité Microsoft 365. Les réviseurs peuvent voir le nombre d’éléments en attente de destruction pour chaque étiquette de rétention à l’aide de **Type** qui afficher la **Destructions en attente**. Ils peuvent ensuite sélectionner une étiquette de rétention, puis **Ouvrir dans une nouvelle fenêtre** pour voir tout le contenu de cette étiquette :
 
-![Ouvrir dans une nouvelle fenêtre pour la révision avant destruction](../media/open-in-new-window.png)
+![Ouvrir dans une nouvelle fenêtre pour la révision de destruction.](../media/open-in-new-window.png)
 
 À partir de la page **Destructions en attente**, ils peuvent afficher toutes les destructions en attente pour cette étiquette. Lorsqu’un ou plusieurs éléments sont sélectionnés, ils peuvent utiliser le volet de mini-visualisation et les onglets **Source**, **Détails** et **Historique** pour inspecter le contenu avant d’agir dessus :
 
-![Options de destruction](../media/retention-disposition-options.png)
+![Options de destruction.](../media/retention-disposition-options.png)
 
 Si vous utilisez la barre de défilement horizontal ou si vous fermez le volet de mini-évaluation, vous voyez d’autres colonnes incluant la date d’expiration et le nom de l’étape de révision avant destruction.
 
@@ -212,7 +212,7 @@ Utilisez l’onglet **Destruction** à partir de la page **Gestion des enregistr
 - Éléments supprimés suite à une révision avant destruction.
 - Les éléments marqués comme enregistrement ou enregistrement réglementaire qui ont été automatiquement supprimés à la fin de leur période de rétention.
 
-Ces éléments affichent **Enregistrements supprimés** dans la colonne **Type**. Par exemple :
+Ces éléments affichent **Enregistrements supprimés** dans la colonne **Type**. Par exemple :
 
 ![Éléments supprimés sans révision avant destruction](../media/records-disposed2.png)
 

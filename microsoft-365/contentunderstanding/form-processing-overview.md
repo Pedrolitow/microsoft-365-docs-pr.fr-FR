@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez le traitement de formulaires dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 6914cf4a8427f505bf39e2b157beb0dbfee0336d
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 7a411a4150f09d62ae539ca35dee05df201e707c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399718"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561169"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble sur le traitement de formulaires dans Microsoft SharePoint Syntex
 
- ![Générateur d’intelligence artificielle](../media/content-understanding/ai-builder.png)</br>
+ ![Générateur d’intelligence artificielle.](../media/content-understanding/ai-builder.png)</br>
 
 Microsoft SharePoint Syntex utilise le traitement de formulaire Microsoft PowerApps [AI Builder](/ai-builder/overview) pour créer des modèles au sein de bibliothèques de documents SharePoint.
 
@@ -35,7 +35,7 @@ Les organisations reçoivent souvent des factures en grande quantité provenant 
 
 Par exemple, vous pouvez créer un modèle de traitement de formulaire qui identifie tous les documents de bon de commande téléchargés dans la bibliothèque de documents. À partir de chaque bon de commande, vous pouvez extraire et afficher des données spécifiques qui vous sont importantes, telles que *numéro de bon de commande*, *date* ou *coût total*.
 
-![Vue de la bibliothèque de documents](../media/content-understanding/doc-lib-done.png)</br>  
+![Vue de la bibliothèque de documents.](../media/content-understanding/doc-lib-done.png)</br>  
 
 Vous pouvez également utiliser des exemples de fichiers pour former votre modèle et définir les informations à extraire de votre formulaire. La mise en page de votre document est acquise en formant votre modèle. Vous n’avez besoin que de cinq documents de formulaires pour commencer. AI analyse vos exemples de fichiers pour les paires clé-valeur, puis identifie manuellement celles qui n’ont pas été détectées.  Le générateur AI vous permet de tester la précision de votre modèle dans vos exemples de fichiers.
 

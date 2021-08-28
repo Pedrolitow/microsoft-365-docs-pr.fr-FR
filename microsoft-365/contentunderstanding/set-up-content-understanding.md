@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Microsoft Office SharePoint Online
-ms.openlocfilehash: b856cafb7c2be292ed912fc94329ae6f3f23bb5f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 3b03b36e58b9f5cbb97a967be941fc43285892fd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257104"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552887"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
@@ -64,7 +64,7 @@ Pour utiliser le traitement des formulaires, vous avez également besoin de AI B
 3. À la page **Automatiser la compréhension de contenu** , cliquez sur **Commencer** pour parcourir le processus de configuration. <br/>
 
     > [!div class="mx-imgBorder"]
-    > ![Commencer la configuration](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > ![Commencer la configuration.](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. Sur la page **Configurer le traitement des formulaires**, vous pouvez choisir d’autoriser ou non les utilisateurs à créer des modèles de traitement de formulaire dans des bibliothèques de documents SharePoint spécifiques. Une option de menu **Créer un modèle de traitement de formulaire** sera disponible dans les rubans des bibliothèques de documents SharePoint où le traitement des formulaires est activé.
  
@@ -74,14 +74,14 @@ Pour utiliser le traitement des formulaires, vous avez également besoin de AI B
       - **Aucune bibliothèque SharePoint** si cette option ne doit être disponible sur aucun site (vous pouvez modifier ce paramètre après la configuration).
 
    > [!div class="mx-imgBorder"]
-   > ![Configurer les options du site de traitement des formulaires](../media/content-understanding/admin-configforms.png)
+   > ![Configurer les options du site de traitement des formulaires.](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > La suppression d’un site une fois inclus n’affecte pas les modèles existants appliqués aux bibliothèques de ce site. Cette action ne vous empêche pas non plus d’appliquer des modèles de compréhension de document à une bibliothèque. 
     
     Si vous avez plusieurs environnements Power Platform configurés, vous pouvez choisir celui à utiliser avec le traitement des formulaires. (Cette option ne s’affiche pas si vous n’avez qu’un seul environnement.)
 
-    ![Configurer les options Power Platform de traitement des formulaires](../media/content-understanding/setup-power-platform-env.png)
+    ![Configurer les options de Power Platform de traitement des formulaires.](../media/content-understanding/setup-power-platform-env.png)
 
     Pour l’**environnement Power Platform**, vous pouvez sélectionner :
     - **Utilisez l’environnement par défaut** pour utiliser votre environnement Power Platform par défaut.
@@ -96,7 +96,7 @@ Pour utiliser le traitement des formulaires, vous avez également besoin de AI B
     1. Le champ **Adresse du site** affiche l’URL de votre site, en fonction du nom de site choisi. Si vous souhaitez le modifier, cliquez sur **Modifier**.
 
        > [!div class="mx-imgBorder"]
-       > ![Créer un centre de contenu](../media/content-understanding/admin-cu-create-cc.png)</br>
+       > ![Créer un centre de contenu.](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        Sélectionnez **Suivant**.
 
@@ -121,7 +121,7 @@ Pour attribuer des licences :
 4. Sélectionnez **Afficher les applications pour SharePoint Syntex**. Sous **Applications**, assurez-vous que **service de données commun pour SharePoint Syntex**, **SharePoint Syntex** et **SharePoint Syntex-SPO type** sont tous sélectionnés.
 
     > [!div class="mx-imgBorder"]
-    > ![Licences SharePoint Syntex dans le Centre d’administration Microsoft 365.](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > ![Licences de SharePoint Syntex dans le Centre d’administration Microsoft 365.](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Cliquez sur **Enregistrer les modifications**.
 

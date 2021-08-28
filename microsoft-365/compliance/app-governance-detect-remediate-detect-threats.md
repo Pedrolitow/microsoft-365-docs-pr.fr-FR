@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Corrigez les menaces liées aux applications.
-ms.openlocfilehash: 3b84594aa990516b6ecb340d6b8ffbd8d6d1a544c9c1e3dddeb691044e221424
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 103616c9bee47455b75e0750194d876fc7a13600
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836432"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564229"
 ---
 # <a name="remediate-app-threats"></a>Corriger les menaces liées aux applications
 
@@ -27,11 +27,11 @@ ms.locfileid: "53836432"
 
 Vous corrigez les menaces d’application pour votre client Microsoft 365 via la page **Alertes** de la section Gouvernance des applications Microsoft du Centre de conformité Microsoft 365.
 
-![Page récapitulative des alertes de gouvernance des applications dans le Centre de conformité Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
+![Page récapitulative des alertes de gouvernance des applications dans le Centre de conformité Microsoft 365.](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
 
 La page **Alertes** répertorie par défaut les nouvelles alertes de menace générées par la gouvernance des applications et les alertes basées sur des stratégies générées par des stratégies d’application actives. Vous pouvez afficher les détails d’une alerte spécifique en la sélectionnant, ce qui ouvre un volet d’alerte avec des informations supplémentaires sur l’alerte et la possibilité de modifier son état.
 
-![Page de détails de l’alerte de gouvernance des applications dans le Centre de conformité Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-alerts-alert.png)
+![Page de détails de l’alerte de gouvernance des applications dans le Centre de conformité Microsoft 365.](..\media\manage-app-protection-governance\mapg-cc-alerts-alert.png)
 
 Dans ce volet, vous pouvez obtenir ces informations supplémentaires :
 
