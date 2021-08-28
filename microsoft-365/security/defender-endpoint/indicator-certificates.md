@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 05ea44a0ffdf66a96c9915ca84639033bc59be7e946263ec2332b902e6d17daf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 264953bd84a0a167cb6283c64b9e6ecf2d28ba19
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863630"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683491"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Créer des indicateurs basés sur des certificats
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -52,9 +52,9 @@ Il est important de comprendre les exigences suivantes avant de créer des indic
 
 > [!IMPORTANT]
 >
-> - Un certificat feuille valide est un certificat de signature qui possède un chemin de certification valide et doit être chaîné à l’autorité de certification racine (CA) approuvé par Microsoft.  Sinon, un certificat personnalisé (auto-signé) peut être utilisé tant qu’il est approuvé par le client (le certificat de l’autorité de certification racine est installé sous l’ordinateur local « Autorités de certification racines de confiance »).
->- Les enfants ou le parent des IOC de certificats d’autorisation/de blocage ne sont pas inclus dans la fonctionnalité autoriser/bloquer les IoC, seuls les certificats feuille sont pris en charge.
->- Les certificats signés par Microsoft ne peuvent pas être bloqués.
+> - Un certificat feuille valide est un certificat de signature qui possède un chemin de certification valide et doit être chaîné à l’autorité de certification racine (CA) approuvé par Microsoft. Sinon, un certificat personnalisé (auto-signé) peut être utilisé tant qu’il est approuvé par le client (le certificat de l’autorité de certification racine est installé sous l’ordinateur local « Autorités de certification racines de confiance »).
+> - Les enfants ou le parent des IOC de certificats d’autorisation/de blocage ne sont pas inclus dans la fonctionnalité autoriser/bloquer les IoC, seuls les certificats feuille sont pris en charge.
+> - Les certificats signés par Microsoft ne peuvent pas être bloqués.
 
 ## <a name="create-an-indicator-for-certificates-from-the-settings-page"></a>Créez un indicateur pour les certificats à partir de la page paramètres :
 
@@ -72,7 +72,7 @@ Il est important de comprendre les exigences suivantes avant de créer des indic
 
 4. Consultez les détails de l’onglet Résumé, puis cliquez sur **Enregistrer.**
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Créer des indicateurs](manage-indicators.md)
 - [Créer des indicateurs pour les fichiers](indicator-file.md)

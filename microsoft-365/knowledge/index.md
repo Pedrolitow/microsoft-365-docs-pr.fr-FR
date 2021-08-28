@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez comment rechercher des ressources pour Rubriques Microsoft Viva.
-ms.openlocfilehash: ec078f1a3e1e4dd963111f0c60529173d2aedbcffcd2b61e3248a3021b5eea69
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e66252f93b3c32815e3a3a13217a59bb40fa17e6
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840166"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684219"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Présentation de Rubriques Microsoft Viva
 
@@ -46,12 +46,11 @@ Les ressources de cette section vous aident à en savoir plus sur ce qu’est To
 |Voir les ressources dans le centre de ressources Microsoft Tech Community|[Rubriques tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
-
 ## <a name="adoption"></a>Adoption
 
-Découvrez comment utiliser et mettre en œuvre Rubriques Viva au sein de votre organisation pour vous aider à résoudre les problèmes de votre entreprise : 
+En savoir plus sur l’utilisation et l’implémenter de Rubriques Dans votre organisation pour vous aider à résoudre vos problèmes d’entreprise. 
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
 |Découvrez comment commencer à planifier l’utilisation de Rubriques |[Prise en main](topics-adoption-getstarted.md)|  
 |Configurer et exécuter un programme pilote d’essai pour Rubriques |[Exécuter une version d’évaluation](trial-topics.md)|
@@ -78,6 +77,12 @@ Les ressources de cette section aident vos utilisateurs à utiliser et à gérer
 |Comprendre pourquoi les rubriques peuvent différer selon l’utilisateur|[Filtrage de sécurité de Rubriques Viva](topic-experiences-security-trimming.md)|
 |Découvrir comment empêcher l’identification et l’affichage de rubriques spécifiques|[Restreindre l’accès aux rubriques](restrict-access-to-topics.md)|
 
+## <a name="provide-us-feedback"></a>Fournissez-nous des commentaires
 
+Fournissez des commentaires sur votre expérience avec Rubriques Directement à Microsoft.
+
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+|:-----|:-----|
+|Comment fournir des commentaires sur Les rubriques de Questions|[Fournissez-nous des commentaires](topic-experiences-overview.md#provide-us-feedback)|
 
 

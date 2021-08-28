@@ -19,18 +19,18 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 202fe1c38b6846f52361f3e55baf9050cae36fb5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 73c16691dc56ad478912b85cb1b712bc7b1b44a8
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550165"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684183"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,7 +39,7 @@ ms.locfileid: "58550165"
 
 ## <a name="investigate-user-account-entities"></a>Examiner les entités de compte d’utilisateur
 
-Identifiez les comptes d’utilisateurs avec les alertes les plus actives (affichées sur le tableau de bord sous la forme « Utilisateurs à risque ») et examinez les cas d’informations d’identification potentiellement compromises, ou faites pivoter le compte d’utilisateur associé lors de l’examen d’une alerte ou d’un appareil afin d’identifier les éventuels mouvements latérals entre les appareils avec ce compte d’utilisateur.
+Identifiez les comptes d’utilisateurs avec les alertes les plus actives (affichées dans le tableau de bord sous la forme « Utilisateurs à risque ») et examinez les cas d’informations d’identification potentiellement compromises, ou pivotez sur le compte d’utilisateur associé lors de l’examen d’une alerte ou d’un appareil afin d’identifier les éventuels mouvements latérals entre les appareils avec ce compte d’utilisateur.
 
 Les informations de compte d’utilisateur sont disponibles dans les affichages suivants :
 
@@ -62,8 +62,8 @@ Lorsque vous examinez une entité de compte d’utilisateur, vous voyez :
 
 Le  volet d’informations Utilisateur de gauche fournit des informations sur l’utilisateur, telles que les incidents d’ouverture connexes, les alertes actives, le nom SAM, le SID, les alertes Microsoft Defender pour l’identité, le nombre d’appareils avec qui l’utilisateur est connecté, la première fois que l’utilisateur a été vu pour la première fois, le rôle et les types d’ouverture de session. Selon les fonctionnalités d’intégration que vous avez activées, vous verrez d’autres détails. Par exemple, si vous activez l’Skype pour l’intégration d’entreprise, vous pourrez contacter l’utilisateur à partir du portail. La section **Alertes Azure ATP** contient un lien qui vous permet d’accès à la page Microsoft Defender pour l’identité, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et que des alertes sont associées à l’utilisateur. La page Microsoft Defender pour l’identité fournit plus d’informations sur les alertes.
 
->[!NOTE]
->Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
+> [!NOTE]
+> Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
 
 La vue d’ensemble, les alertes et les observations dans l’organisation sont des onglets différents qui affichent différents attributs sur le compte d’utilisateur.
 

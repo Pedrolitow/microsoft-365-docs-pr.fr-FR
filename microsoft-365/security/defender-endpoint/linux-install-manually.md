@@ -18,19 +18,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 24659a1e928143c79b3ab7324114d5c8b0fa1f43
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: aeafcec8c3ee3e557ac8ac429530a35cd8f7561e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550153"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683575"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -48,7 +48,7 @@ Cet article explique comment déployer Microsoft Defender pour Endpoint sur Linu
   - [Télécharger le package d’intégration](#download-the-onboarding-package)
   - [Configuration du client](#client-configuration)
   - [Script du programme d’installation](#installer-script)
-  - [Journaux des problèmes d’installation](#log-installation-issues)
+  - [Journal des problèmes d’installation](#log-installation-issues)
   - [Mises à niveau du système d’exploitation](#operating-system-upgrades)
   - [Désinstallation](#uninstallation)
 
@@ -74,14 +74,20 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     ```bash
     sudo yum install yum-utils
     ```
+
 - Notez votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/config/rhel/` .
 
-    Utilisez le tableau suivant pour vous aider à trouver le package : 
+    Utilisez le tableau suivant pour vous aider à trouver le package :
 
-    |     Distro & version    |     Package    |
+    <br>
+
+    ****
+
+    |Distro & version|Package|
     |---|---|
-    |     Pour RHEL 8.0-8.5    |     https://packages.microsoft.com/config/rhel/8/prod/    |
-    |     Pour RHEL 7.2-7.9    |     https://packages.microsoft.com/config/rhel/7/prod/    |
+    |Pour RHEL 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod/>|
+    |Pour RHEL 7.2-7.9|<https://packages.microsoft.com/config/rhel/7/prod/>|
+    |
 
     Dans les commandes suivantes, *remplacez [version]* et *[canal]* par les informations que vous avez identifiées :
 
@@ -333,7 +339,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
     mdatp health --field org_id
     ```
 
-4. Quelques minutes après avoir terminé l’installation, vous pouvez voir l’état en exécutant la commande suivante. Une valeur de retour `1` de indique que le produit fonctionne comme prévu :
+4. Quelques minutes après avoir terminé l’installation, vous pouvez voir l’état en exécutant la commande suivante. Une valeur de retour indique que le `1` produit fonctionne comme prévu :
 
     ```bash
     mdatp health --field healthy
@@ -346,7 +352,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
     > mdatp health --field definitions_status
     > ```
     >
-    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l’installation initiale. Voir [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](linux-static-proxy-configuration.md#post-installation-configuration).
+    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l’installation initiale. Voir Configurer Defender pour endpoint sur Linux pour [la découverte de proxy statique : configuration post-installation.](linux-static-proxy-configuration.md#post-installation-configuration)
 
 5. Exécutez un test de détection pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 
@@ -382,7 +388,7 @@ Pour tester les fonctionnalités de PEPT linux, suivez les étapes ci-dessous po
 
 ## <a name="installer-script"></a>Script du programme d’installation
 
-Vous pouvez également utiliser un script bash de [programme](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) d’installation automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
+Vous pouvez également utiliser un script de programme d’installation [bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
 Le script identifie la distribution et la version, et définit l’appareil pour qu’il tire le dernier package et l’installe.
 Vous pouvez également intégrer un script fourni.
 
@@ -405,7 +411,7 @@ Options:
 
 En savoir plus [ici.](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)
 
-## <a name="log-installation-issues"></a>Journal des problèmes d’installation
+## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
 
 Pour [plus d’informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir problèmes d’installation des journaux.
 

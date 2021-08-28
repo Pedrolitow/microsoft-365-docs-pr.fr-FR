@@ -15,13 +15,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent des informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: 76812349bc6916483d1e8f56f9c3eaca381d373690a375a3ba1e34a98ee30afc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
+ms.openlocfilehash: ac293eea8b81125b124265d2546d562393a81f8f
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842043"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684003"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -55,7 +55,7 @@ Chaque entité de type d’informations sensibles est définie par les champs ci
     - Niveau de confiance : les niveaux de confiance (élevé, moyen, faible) reflètent la quantité de preuves justificatives détectées avec l’élément principal. Plus la preuve justificative qu’un élément contient est importante, plus la confiance qu’un élément correspond contient les informations sensibles que vous recherchez.
     - Proximité : nombre de caractères entre l’élément principal et l’élément de prise en charge
 
-![Diagramme de la fenêtre de proximité et de preuves probantes](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagramme de preuve corroborante et fenêtre de proximité.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 En savoir plus sur les niveaux de confiance dans cette vidéo
 
@@ -65,7 +65,7 @@ En savoir plus sur les niveaux de confiance dans cette vidéo
 ### <a name="example-sensitive-information-type"></a>Exemple de type d’informations sensibles
 
 
-## <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale (DNI) argentine
+#### <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale (DNI) argentine
 
 ### <a name="format"></a>Format
 
@@ -100,7 +100,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
@@ -124,7 +124,7 @@ Un niveau de confiance élevé renvoie le moins de faux positifs, mais peut entr
 - **confiance moyenne**: valeur de 75, les éléments qui correspondent contiennent une quantité moyenne de faux positifs et de faux négatifs. Une confiance moyenne renvoie toutes les correspondances de confiance moyenne et élevée.  
 - **niveau de confiance** élevé : valeur 85, les éléments qui correspondent contiennent le moins de faux positifs, mais le plus de faux négatifs. Un niveau de confiance élevé renvoie uniquement des correspondances à haut niveau de confiance.  
 
-Vous devez utiliser des modèles de niveau de confiance élevé avec de faibles nombres, par ex. 5 à 10, et des modèles de confiance faible avec des nombres plus élevés, par ex. 20 ou plus.
+Vous devez utiliser des modèles de niveau de confiance élevé avec un nombre faible, par ex. 5 à 10, et des modèles de confiance faible avec des nombres plus élevés, par ex. 20 ou plus.
 
 > [!NOTE]
 > Si vous avez des stratégies existantes ou des types d’informations sensibles personnalisés (SIT) définis à l’aide de niveaux de confiance basés sur le nombre (également défini comme précision), ils seront automatiquement mappés aux trois niveaux de confiance discrets ; confiance faible, confiance moyenne et confiance élevée, dans l’interface utilisateur du Centre de sécurité @ conformité.

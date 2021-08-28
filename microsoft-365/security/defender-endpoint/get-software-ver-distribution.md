@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c8ef316dbd25436221a15777f992faf943c3dc6ee2783dd92afa270d4e72cfdf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d5771be82c687144759fd321dfc44b8c6158d57
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863654"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684195"
 ---
-# <a name="list-software-version-distribution"></a>Répertorier la distribution de versions du logiciel 
+# <a name="list-software-version-distribution"></a>Répertorier la distribution de versions du logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "53863654"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Extrait la liste de la distribution des versions des logiciels de votre organisation. 
+Extrait la liste de la distribution des versions des logiciels de votre organisation.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -66,7 +66,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec une liste de données de distribution de logiciels dans le corps. 
+Si elle réussit, cette méthode renvoie 200 OK avec une liste de données de distribution de logiciels dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -102,7 +102,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -17,18 +17,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2f0475d6adc1f97255665e3a32fe05e7d88c41b5
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 6b0655f0a4e6a0d00ab93409367b4e98e57b059e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400178"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683967"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -84,7 +84,7 @@ Les fichiers automatiquement bloqués par un indicateur ne s’afficheront pas d
 > [!IMPORTANT]
 > Les informations de cette section **(prévisualisation** publique pour le moteur automatisé d’examen et de correction) concernent les versions préliminaires d’un produit qui peuvent être considérablement modifiés avant sa commercialisation. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Les actions actuellement prises en charge pour le ioc de fichier sont autoriser, auditer et bloquer et corriger.
+Les actions actuellement prises en charge pour l’IOC de fichier sont autoriser, auditer et bloquer et corriger.
 Après avoir choisi de bloquer un fichier, vous pouvez choisir si le déclenchement d’une alerte est nécessaire. De cette façon, vous serez en mesure de contrôler le nombre d’alertes à l’attention de vos équipes d’opérations de sécurité et de vous assurer que seules les alertes requises sont élevées.
 Dans Microsoft 365 Defender, go to Paramètres > Endpoints > Indicators > add new File hash Choose to Block and remediate the file Choose if to Generate an alert on the file block event and define the alerts settings:
 
@@ -94,19 +94,16 @@ Dans Microsoft 365 Defender, go to Paramètres > Endpoints > Indicators > add ne
 - Description
 - Actions recommandées
 
-![Paramètres d’alerte pour les indicateurs de fichier](images/indicators-generate-alert.png)
+![Paramètres d’alerte pour les indicateurs de fichier.](images/indicators-generate-alert.png)
 
 > [!IMPORTANT]
 >
->- En règle générale, les blocs de fichiers sont appliqués et supprimés en quelques minutes, mais peuvent prendre plus de 30 minutes.
+> - En règle générale, les blocs de fichiers sont appliqués et supprimés en quelques minutes, mais peuvent prendre plus de 30 minutes.
+> - S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé est appliquée. Une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier SHA-1, qui l’emporte sur une stratégie IoC de hachage de fichier MD5 si les types de hachage définissent le même fichier. Cela est toujours vrai quel que soit le groupe d’appareils.
+> - Dans tous les autres cas, si des stratégies IoC de fichier en conflit avec la même cible d’application sont appliquées à tous les appareils et au groupe de l’appareil, pour un appareil, la stratégie dans le groupe d’appareils l’emporte.
+> - Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage du fichier IoC est réduite. Toutefois, `EnableFileHashComputation` l’activation peut avoir un impact sur les performances de l’appareil. Par exemple, la copie de fichiers de grande taille à partir d’un partage réseau sur votre appareil local, en particulier sur une connexion VPN, peut avoir un impact sur les performances de l’appareil.
 >
->- S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé est appliquée. Une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier SHA-1, qui l’emporte sur une stratégie IoC de hachage de fichier MD5 si les types de hachage définissent le même fichier. Cela est toujours vrai quel que soit le groupe d’appareils.
->
->- Dans tous les autres cas, si des stratégies IoC de fichier en conflit avec la même cible d’application sont appliquées à tous les appareils et au groupe de l’appareil, pour un appareil, la stratégie dans le groupe d’appareils l’emporte.
->
->- Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage du fichier IoC est réduite. Toutefois, `EnableFileHashComputation` l’activation peut avoir un impact sur les performances de l’appareil. Par exemple, la copie de fichiers de grande taille à partir d’un partage réseau sur votre appareil local, en particulier sur une connexion VPN, peut avoir un impact sur les performances de l’appareil.
->
->   Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, voir [CSP Defender.](/windows/client-management/mdm/defender-csp)
+> Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, voir [CSP Defender.](/windows/client-management/mdm/defender-csp)
 
 ## <a name="private-preview-advanced-hunting-capabilities"></a>Prévisualisation privée : fonctionnalités de recherche avancées
 
@@ -132,7 +129,7 @@ Fichiers :
 
 Certificats :
 
-- EUS:Win32/CustomCertEnterpriseBlock!cl  
+- EUS:Win32/CustomCertEnterpriseBlock!cl
 
 L’activité d’action de réponse peut également être vue dans la chronologie de l’appareil.
 
@@ -154,15 +151,20 @@ S’il existe des stratégies IoC de fichier en conflit avec le même type d’a
 
 Les fonctionnalités gestion des vulnérabilités d’application vulnérables aux menaces et aux menaces utilisent les IOC de fichier pour l’application et suivent l’ordre de gestion des conflits ci-dessus.
 
-### <a name="examples"></a>範例
+### <a name="examples"></a>Exemples
 
-|Composant|Application des composants|Action de l’indicateur de fichier|Résultat
+<br>
+
+****
+
+|Composant|Application des composants|Action de l’indicateur de fichier|Résultat|
 |---|---|---|---|
-|Exclusion du chemin d’accès au fichier de réduction de la surface d’attaque|Autoriser|Bloquer|Bloquer
-|Règle de réduction de la surface d’attaque|Bloquer|Autoriser|Autoriser
-|Windows Defender Application Control|Autoriser|Bloquer|Autoriser
-|Windows Defender Application Control|Bloquer|Autoriser|Bloquer
-|Antivirus Microsoft Defender exclusion|Autoriser|Bloquer|Autoriser
+|Exclusion du chemin d’accès au fichier de réduction de la surface d’attaque|Autoriser|Bloquer|Bloquer|
+|Règle de réduction de la surface d’attaque|Bloquer|Autoriser|Autoriser|
+|Windows Defender Application Control|Autoriser|Bloquer|Autoriser|
+|Windows Defender Application Control|Bloquer|Autoriser|Bloquer|
+|Antivirus Microsoft Defender exclusion|Autoriser|Bloquer|Autoriser|
+|
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez comment utiliser Rubriques Dans votre organisation.
-ms.openlocfilehash: d8e8de3cead0fc389212b2f3b028769d6b2850138b864c379b87bc9f00dfd8bd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 902628d53f651073b1d08ce3f1915808da22b03f
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864072"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684131"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
@@ -134,7 +134,7 @@ Les contrôles d’administration Centre d’administration Microsoft 365 vous p
 
 Pour plus d’informations sur les contrôles d’administration, voir [attribuer des autorisations](./plan-topic-experiences.md#user-permissions) [utilisateur,](./topic-experiences-knowledge-rules.md)gérer la visibilité des rubriques et [gérer la découverte des rubriques.](./topic-experiences-discovery.md)
 
-## <a name="topic-curation--feedback"></a>Traitement des rubriques et commentaires
+## <a name="topic-curation-and-suggestions"></a>Curation de rubrique et suggestions
 
 L'IA s'efforcera continuellement de vous fournir des suggestions pour améliorer vos sujets au fur et à mesure que des modifications surviendront dans votre environnement. 
 
@@ -143,6 +143,22 @@ Les utilisateurs ayant des autorisations de modification ou de création de rubr
 Les utilisateurs que vous autorisez à consulter les rubriques dans le cadre de leur travail quotidien peuvent se voir demander si la rubrique leur a été utile. Le système examine ces réponses et les utilise pour améliorer la mise en évidence de la rubrique, et vous aider à déterminer ce qui est affiché sur les résumés de rubrique et les détails des rubriques.
 
 Pour plus d’informations, voir [Découverte et curation des rubriques.](./topic-experiences-discovery-curation.md)
+
+## <a name="provide-us-feedback"></a>Fournissez-nous des commentaires
+
+Chez Microsoft, nous prenons très au sérieux les commentaires de nos clients. Les commentaires que vous fournissez pour Topics seront utilisés pour dépanner, corriger les bogues, améliorer les fonctionnalités existantes et en développer de nouvelles. 
+
+Vous pouvez envoyer des commentaires à Microsoft directement à partir d’une page de rubrique et des pages Gérer les **rubriques** et Mes **rubriques.** Recherchez ce bouton dans le coin inférieur droit de la page.
+
+   ![Capture d’écran montrant le bouton Commentaires.](../media/knowledge-management/feedback-icon.png)
+
+Dans la page **Envoyer des commentaires à Microsoft,** faites-nous savoir si vous aimez quelque chose, si vous n’aimez pas quelque chose ou si vous avez une suggestion.
+
+   ![Capture d’écran montrant la page Envoyer des commentaires à Microsoft.](../media/knowledge-management/feedback-page.png)
+
+Lorsque vous envoyez des commentaires, nous vous demandons de ne pas inclure d’informations sensibles, telles que des numéros de téléphone, des adresses ou des articles hautement personnels. À la place, veuillez fournir des informations sur le problème spécifique que vous rencontrez avec Topics Ou votre expérience en général avec Topics. Cela nous aidera à maintenir votre confidentialité à mesure que nous examinerons et prenons des mesures en fonction de vos commentaires.
+
+Merci d’avoir pris le temps de nous faire part de vos idées. Votre perspective nous aide à améliorer nos fonctionnalités existantes et à en développer de nouvelles.
 
 ## <a name="see-also"></a>Voir aussi
 

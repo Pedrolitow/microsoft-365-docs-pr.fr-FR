@@ -1,7 +1,7 @@
 ---
 title: Créer des indicateurs pour les IP et URL/domaines
 ms.reviewer: ''
-description: Créez des indicateurs pour les adresses IP et les URL/domaines qui définissent la détection, la prévention et l’exclusion des entités.
+description: Créez des indicateurs pour les adresses IPS et les URL/domaines qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: ip, url, domaine, gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, url, domaine
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,18 +17,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 612c1629869a5cc777c0d00ba8169fe1707b78ed
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 0b28d4088b8475794989d777bf58ccc7550b3f7c
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355831"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683551"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Créer des indicateurs pour les IP et URL/domaines
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,8 +51,8 @@ Vous pouvez le faire via la page des paramètres ou par groupes d’ordinateurs 
 Il est important de comprendre les conditions préalables suivantes avant de créer des indicateurs pour IPS, URL ou domaines :
 
 - Url/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. Pour plus d’informations sur la protection du réseau et les instructions de configuration, voir [Activer la protection réseau.](enable-network-protection.md)
-- La version du client anti-programme malveillant doit être 4.18.1906.x ou version ultérieure. 
-- Pris en charge sur les ordinateurs Windows 10 version 1709 ou ultérieure. 
+- La version du client anti-programme malveillant doit être 4.18.1906.x ou version ultérieure.
+- Pris en charge sur les ordinateurs Windows 10 version 1709 ou ultérieure.
 - **Assurez-vous que les indicateurs réseau personnalisés** sont activés dans Microsoft 365 Defender > Paramètres > points de terminaison > **fonctionnalités avancées.** Pour plus d’informations, voir [Fonctionnalités avancées.](advanced-features.md)
 - Pour la prise en charge des indicateurs sur iOS, voir [Configurer des indicateurs personnalisés.](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)
 
@@ -65,32 +65,33 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 > Pour tous les autres processus, les scénarios de protection web tirent parti de la Protection du réseau pour l’inspection et l’application :
 >
 > - L’adresse IP est prise en charge pour les trois protocoles
-> - Seules les adresses IP individuelles sont pris en charge (pas de blocs CIDR ou de plages IP)
+> - Seules les adresses IP sont pris en charge (pas de blocs CIDR ou de plages IP)
 > - Les URL chiffrées (chemin d’accès complet) ne peuvent être bloquées que sur les navigateurs de première partie (Internet Explorer, Edge)
 > - Les URL chiffrées (FQDN uniquement) peuvent être bloquées en dehors des navigateurs de première partie (Internet Explorer, Edge)
 > - Les blocs de chemin d’accès d’URL complète peuvent être appliqués au niveau du domaine et à toutes les URL non chiffrées
 >
 > Il peut y avoir jusqu’à 2 heures de latence (généralement moins) entre le moment où l’action est prise et l’URL et l’ADRESSE IP bloquées.
 
-
 Lorsque vous utilisez le mode avertissement, vous pouvez configurer les contrôles suivants :
 
-**Contournement**
+**Contourner la capacité**:
+
 - Bouton Autoriser dans Edge
 - Bouton Autoriser sur le toast (navigateurs autres que Microsoft)
 - Contourner le paramètre de durée sur l’indicateur
-- Contourner l’application dans les navigateurs Microsoft et non-Microsoft 
+- Contourner l’application sur les navigateurs Microsoft et non-Microsoft
 
-**URL de redirection** 
+**URL de redirection**:
+
 - Paramètre URL de redirection sur l’indicateur
 - URL de redirection dans Edge
 - URL de redirection sur le toast (navigateurs autres que Microsoft)
 
 Pour plus d’informations, voir [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
 
-## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Créer un indicateur pour les adresses INTERNET, les URL ou les domaines à partir de la page des paramètres
+## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Créer un indicateur pour les adresses IP, les URL ou les domaines à partir de la page des paramètres
 
-1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **indicateurs de points** de  >  **terminaison** (sous **Règles).**
+1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
 
 2. Sélectionnez **l’onglet Adresses IP ou URL/Domaines.**
 
@@ -103,7 +104,7 @@ Pour plus d’informations, voir [Govern apps discovered by Microsoft Defender f
 
 5. Consultez les détails de l’onglet Résumé, puis cliquez sur **Enregistrer.**
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Créer des indicateurs](manage-indicators.md)
 - [Créer des indicateurs pour les fichiers](indicator-file.md)

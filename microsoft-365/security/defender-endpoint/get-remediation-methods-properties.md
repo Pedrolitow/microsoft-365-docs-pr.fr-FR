@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bdd3e822403b6ad48989723626ce5a6d2d4a8bc3a18ca01c3c1d9915aabfa03d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0ca1bc84d5e8cf5498ed3dc19cba3928823796ff
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811241"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684099"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Méthodes et propriétés des activités de correction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -40,7 +40,7 @@ ms.locfileid: "53811241"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-La réponse de l’API [contient les & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)de correction des menaces qui ont été   créées dans votre client.  
+La réponse de l’API [contient les & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)de correction des menaces qui ont été   créées dans votre client.
 
 ## <a name="methods"></a>Méthodes
 

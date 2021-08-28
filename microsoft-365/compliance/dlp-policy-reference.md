@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9ee8db55a43f75fe31a64bced1adad6aecbfdb6c
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: daae280fa4c08a47f74cec6a71ec11ac9739ebd6
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621487"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684111"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -35,7 +35,7 @@ Les stratégies de protection contre la perte de données (DLP) ont de nombreux 
 Les modèles de stratégie DLP sont pré-triés en quatre catégories :
 
 - ceux qui peuvent détecter et protéger les types **d’informations** financières
-- ceux qui peuvent détecter et protéger les types d’informations **médicales et médicales**
+- ceux qui peuvent détecter et protéger les types d’informations médicales **et médicales**
 - ceux qui peuvent détecter et protéger les types d’informations **de** confidentialité
 - modèle **personnalisé** que vous pouvez utiliser pour créer votre propre stratégie si l’un des autres ne répond pas aux besoins de votre organisation.
 
@@ -67,7 +67,7 @@ Actuel depuis le 23/06/2021
 |Santé et médical| U.K. Access to Medical Reports Act|- [Numéro de service de santé national du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [Numéro d’assurance national (NINO) du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino)|
 |Santé et médical| U.S. Health Insurance Act (HIPAA) Enhanced|</br> - [Classification internationale des maladie (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Classification internationale des maladie (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm) |
 |Santé et médical| U.S. Health Insurance Act (HIPAA)| - [Classification internationale des maladie (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Classification internationale des maladie (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm)|
-|Confidentialité| Amélioration de la loi sur la confidentialité en Australie|- [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number)|
+|Confidentialité| Amélioration de la loi sur la protection de la vie privée en Australie|- [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number)|
 |Confidentialité| Australia Privacy Act|- [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number)|
 |Confidentialité| Australia Personally Identifiable Information (PII) Data|- [Numéro de fichier fiscal australie](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)|
 |Confidentialité| Canada Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire canada](sensitive-information-type-entity-definitions.md#canada-drivers-license-number)</br> - [Numéro de compte bancaire canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number) </br> - [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
@@ -80,7 +80,7 @@ Actuel depuis le 23/06/2021
 |Confidentialité| Germany Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire allemand](sensitive-information-type-entity-definitions.md#germany-drivers-license-number) </br> - [Numéro de passeport allemand](sensitive-information-type-entity-definitions.md#germany-passport-number)| 
 |Confidentialité| Israel Personally Identifiable Information (PII) Data|- [Numéro d’identification national Israël](sensitive-information-type-entity-definitions.md#israel-national-identification-number)| 
 |Confidentialité| Israel Protection of Privacy|- [Numéro d’identification national Israël](sensitive-information-type-entity-definitions.md#israel-national-identification-number)</br> - [Numéro de compte bancaire Israël](sensitive-information-type-entity-definitions.md#israel-bank-account-number)|
-|Confidentialité| Données d’informations d’identification personnelle (PII) améliorées pour le Japon|- [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)</br> - [Japan My Number - Personal](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Numéro de passeport Japon](sensitive-information-type-entity-definitions.md#japan-passport-number)</br> - [Numéro de permis de conduire Japon](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)|
+|Confidentialité| Données d’informations d’identification personnelle (PII) du Japon améliorées|- [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)</br> - [Japan My Number - Personal](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Numéro de passeport Japon](sensitive-information-type-entity-definitions.md#japan-passport-number)</br> - [Numéro de permis de conduire Japon](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)|
 |Confidentialité| Japan Personally Identifiable Information (PII) Data|- [Numéro d’enregistrement du résident japonais](sensitive-information-type-entity-definitions.md#japan-resident-registration-number) </br> - [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
 |Confidentialité| Protection améliorée des informations personnelles au Japon|- [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin) </br> - [Japan My Number - Personal](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Numéro de passeport Japon](sensitive-information-type-entity-definitions.md#japan-passport-number) </br> - [Numéro de permis de conduire Japon](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)| 
 |Confidentialité| Japan Protection of Personal Information|- [Numéro d’enregistrement du résident japonais](sensitive-information-type-entity-definitions.md#japan-resident-registration-number)</br> - [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
@@ -197,13 +197,13 @@ Les conditions sont inclusives et vous permet de définir ce que vous souhaitez 
 
 ##### <a name="content-contains"></a>Le contenu contient
 
- Tous les emplacements de prise **en charge du contenu contiennent** une condition. Vous pouvez sélectionner plusieurs instances de chaque type de contenu et affiner les conditions à l’aide de l’un de ces **opérateurs** (logique OR) ou tous ces **opérateurs** (logiques AND) :
+ Tous les emplacements de prise **en charge du contenu contiennent** une condition. Vous pouvez sélectionner plusieurs instances de chaque type de contenu et affiner les conditions à l’aide de l’un de ces **opérateurs** (logiques OR) ou tous ces **opérateurs** (logiques AND) :
 
 - [types d’informations sensibles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [étiquettes de sensibilité](sensitivity-labels.md)
 - [étiquettes de rétention](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
 
-en fonction [du ou des emplacements que](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer à la stratégie. 
+en fonction des [emplacements que](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer à la stratégie. 
 
 Les TS ont un niveau de [**confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfiny que vous pouvez modifier si nécessaire. Pour plus d’informations, [voir Plus sur les niveaux de confiance.](sensitive-information-type-learn-about.md#more-on-confidence-levels) Les sits ont également une plage prédéfingée d’occurrences d’un sit  qui doivent être trouvées pour correspondre à la règle, par exemple, si la plage de nombre d’instances est définie entre un et neuf, la sit doit se produire au moins une fois et jusqu’à neuf fois pour que la règle corresponde.
 
@@ -219,7 +219,7 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 - Le contenu est partagé à partir Microsoft 365
 - Le contenu est reçu de
 - L’adresse IP de l’expéditeur est
-- A l’expéditeur a override le conseil de stratégie
+- L’expéditeur a-t-il surchargé le conseil de stratégie
 - L’expéditeur est
 - Le domaine de l’expéditeur est
 - L’adresse de l’expéditeur contient des mots
@@ -314,7 +314,7 @@ Le premier groupe contient les sits qui identifient et identifient les individus
 
 Dans les règles, les exceptions définissent les conditions utilisées pour exclure un élément de la stratégie. Logiquement, conditions exclusives évaluées après les conditions inclusives et le contexte. Ils indiquent à l'&#8212; de règle lorsque  vous trouvez un  élément qui ressemble à ceci et qui est utilisé comme ceci et qu’il s’agit d’une correspondance et que le reste des actions de la stratégie doivent être prises sur celui-ci, sauf si ***...***&#8212; 
 
-Par exemple, en respectant la stratégie HIPPA, nous pouvons modifier la règle pour exclure tout élément contenant un numéro de permis de conduire belgique, comme ceci :
+Par exemple, en respectant la stratégie HIPPA, nous pouvons modifier la règle pour exclure tout élément contenant un numéro de permis de conduire en Belgique, comme ceci :
 
 ![Stratégie HIPPA avec exclusions](../media/dlp-rule-exceptions.png)
 
@@ -463,9 +463,9 @@ Vous pouvez activer/désactiver les notifications des utilisateurs pour différe
     - notifications par courrier électronique à l’utilisateur qui a reçu, partagé ou modifié le contenu ou
     - avertir des personnes spécifiques
 
-ainsi que le choix de personnaliser le texte du message électronique, l’objet et le texte du conseil de stratégie.
+vous pouvez également choisir de personnaliser le texte de l’e-mail, l’objet et le texte du conseil de stratégie.
 
-![Options de configuration des conseils de stratégie et de notification utilisateur disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et canal et MCAS](../media/dlp-user-notification-non-devices.png)
+![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et canal et MCAS](../media/dlp-user-notification-non-devices.png)
 
 Si vous avez sélectionné périphériques uniquement, vous obtenez toutes les options disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et Canal et MCAS, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur l’appareil Windows 10.
 
@@ -548,4 +548,11 @@ DLP n’analyse pas les messages électronique de la même façon que les élém
 
 #### <a name="additional-options"></a>Options supplémentaires
 
-Si vous avez plusieurs règles dans une stratégie, vous pouvez utiliser les **options** supplémentaires pour contrôler d’autres traitements de règles s’il existe une correspondance avec la règle que vous modifiez et définir la priorité pour l’évaluation de la règle.
+Si vous avez plusieurs règles dans une stratégie, vous pouvez utiliser les **options** supplémentaires pour contrôler le traitement supplémentaire des règles en cas de correspondance avec la règle que vous modifiez et définir la priorité pour l’évaluation de la règle.
+
+## <a name="see-also"></a>Voir aussi
+
+- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [Planifier la protection contre la perte de données (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
+- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md#create-a-dlp-policy-from-a-template)
+- [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)

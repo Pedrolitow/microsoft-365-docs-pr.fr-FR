@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Si vous souhaitez en savoir plus sur les incidents d’e-mail ou les conseils dans Microsoft 365, utilisez la surveillance d’Exchange Online.
-ms.openlocfilehash: 4de4104f3112126b20d51fb6fcf0616cd413b884
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: e7e0a39f00b4d23ed870d501a3aefbabaf362e13
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506441"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603000"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Déployer Exchange Online pour Microsoft 365 Éducation
 
@@ -32,9 +32,9 @@ La surveillance d’Exchange Online dans le Centre d’administration Microsoft 
 
 Voici un exemple de page État du **service** dans la Centre d’administration Microsoft 365, disponible dans Health **> Service health** pour les scénarios d’organisation.
 
-**Les problèmes au niveau de votre organisation** seront identifiés et utilisés par la surveillance au niveau de l’organisation.
+![Page Intégrité des services dans le Centre d’administration Microsoft 365.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="Page Intégrité des services dans le Centre d’administration Microsoft 365":::
+**Les problèmes au niveau de votre organisation** seront identifiés et utilisés par la surveillance au niveau de l’organisation.
 
 La valeur de la colonne Santé **sous Problèmes au niveau de votre organisation indique si l’infrastructure** de l’organisation ou les logiciels tiers affectent **l’expérience d’état du** service des utilisateurs de votre organisation avec Exchange Online. Les conseils ou incidents nécessitent *vos* actions pour résoudre le problème.
 
@@ -42,7 +42,7 @@ La valeur **de la colonne** d’état sous État du **service Microsoft Corporat
 
 Voici un exemple de la page de surveillance d'Exchange Online dans le centre d'administration Microsoft 365 qui montre l'état de santé des scénarios au niveau de l'organisation, disponible à partir de **Santé > Santé du service > Exchange Online**.
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png" alt-text="Page de surveillance Exchange Online dans le Centre d’administration Microsoft 365":::
+![Page de surveillance Exchange Online dans le Centre d’administration Microsoft 365.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
 La page de surveillance **Exchange Online** indique si le service Exchange Online est intègre ou non, et si des incidents ou conseils associés sont présents. Avec la surveillance Exchange Online, vous pouvez consulter l’état d’intégrité des services pour des scénarios d’e-mails spécifiques. Vous pouvez également consulter des signaux en temps réel pour déterminer l’impact par scénario.
 
@@ -82,7 +82,7 @@ Avec Exchange Online surveillance des données prend en charge les scénarios su
 
 - **Flux de courriers** : nombre de messages remis correctement dans une boîte aux lettres sans délai une fois le message arrivé sur le réseau Microsoft 365.
 
-  ![Exemple de surveillance de l’intégrité d’Exchange pour la livraison des e-mails](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+  ![Exemple de surveillance de l’intégrité d’Exchange pour la remise du courrier.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 Dans tous ces scénarios, les chiffres clés s’appliquent aux 30 dernières minutes dans le tableau de bord principal. Les affichages détaillés pour chacun de ces scénarios illustrent la tendance quasiment en temps réel pendant sept jours avec un agrégat de 30 minutes comparé à la semaine précédente.
 
@@ -94,7 +94,7 @@ Vous pouvez envoyer vos commentaires de deux manières :
 
 - Envoyez vos commentaires à l’aide du lien **Cette publication est-elle utile ?** pour un incident ou un conseil spécifique.
 
-![Lien « Cette publication est-elle utile ? » pour un incident ou un conseil spécifique](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
+  ![Lien « Cette publication est-elle utile ? » lien pour un incident ou un conseil spécifique.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
@@ -126,7 +126,7 @@ Grâce à cette nouvelle expérience intégrée, Microsoft envisage de recueilli
 
 #### <a name="5-is-this-a-free-included-or-paid-extra-feature"></a>5. Cette fonctionnalité est-elle gratuite (incluse) ou payante (comme supplément) ? 
 
-Cette fonctionnalité est en préversion publique et uniquement disponible pour les clients répondant aux critères de la question 1. Il n’existe pas d’option payante pour recevoir ce contenu.
+Cette fonctionnalité est en préversion publique et uniquement disponible pour les clients répondant aux critères de la question 1. Il n’existe aucune option payante pour la réception de ce contenu.
 
 #### <a name="6-how-do-i-provide-feedback"></a>6. Comment faire part de mes commentaires ?
 

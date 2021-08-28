@@ -16,30 +16,29 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d7c3fac607f470018b4c6c5a025b3b2ac09464cc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: b3fa8c7c919edc438bb63fe4baaeca6711a3a045
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550225"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683515"
 ---
 # <a name="information-protection-in-windows-overview"></a>Vue d’ensemble de la protection des informations dans Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 La protection des informations fait partie intégrante de Microsoft 365 Entreprise suite, offrant une protection intelligente pour garantir la sécurité des données sensibles tout en permettant la productivité sur le lieu de travail.
 
->[!TIP]
+> [!TIP]
 > Lisez notre billet de blog sur la façon dont Microsoft Defender pour le point de terminaison s’intègre à Protection des données Microsoft pour découvrir, protéger et surveiller les données sensibles [sur Windows appareils.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
 
 Defender pour le point de terminaison applique les méthodes suivantes pour découvrir, classifier et protéger les données :

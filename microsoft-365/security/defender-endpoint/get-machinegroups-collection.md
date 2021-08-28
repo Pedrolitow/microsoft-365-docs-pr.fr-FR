@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: a5d050bfe61af9754b7cb1dd45c46a419314f5220a36630c8b1a528d694dc9c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ca0c033a92f7607db2b1ad6e00f13cd33ad9c8f9
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818706"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589545"
 ---
 # <a name="get-kb-collection-api"></a>API Obtenir une collection de ko
 
@@ -36,10 +36,10 @@ ms.locfileid: "53818706"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Récupère une collection de groupes d’appareils RBAC.
 
 ## <a name="permissions"></a>Autorisations
+
 L’utilisateur a besoin d’autorisations de lecture.
 
 ## <a name="http-request"></a>Requête HTTP
@@ -50,7 +50,7 @@ GET /testwdatppreview/machinegroups
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-En-tête | Valeur 
+En-tête|Valeur
 :---|:---
 Autorisation | Porteur {token}. **Obligatoire**.
 Type de contenu | application/json
@@ -77,9 +77,10 @@ Content-type: application/json
 ### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de réponse.
-L’ID de champ contient **l’ID** du groupe d’appareils et est égal au champ **rbacGroupId** dans les informations des appareils. Le **champ non regroupé** n’est vrai que pour un seul groupe pour tous les appareils qui n’ont été affectés à aucun groupe. Comme d’habitude, ce groupe a le nom « UnassignedGroup ».
+L’ID de champ contient **l’ID** du groupe d’appareils et est égal au champ **rbacGroupId** dans les informations des appareils.
+Le **champ non regroupé** n’est vrai que pour un seul groupe pour tous les appareils qui n’ont été affectés à aucun groupe. Comme d’habitude, ce groupe a le nom « UnassignedGroup ».
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {

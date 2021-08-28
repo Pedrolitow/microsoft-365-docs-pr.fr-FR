@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae01a929121488399ac3a016f0b33ae7b28ff96d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: eab119de2f4058d853a85c6ec5ba3a99056b595e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533614"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684075"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -43,10 +43,6 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 > [!TIP]
 > Vous n’avez pas encore Microsoft Defender Office 365 ? [Contactez les ventes pour démarrer une version d’essai.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
-## <a name="august-2021"></a>Août 2021
-
-- [Révision de l’administrateur pour les messages](admin-review-reported-message.md)signalés : les administrateurs peuvent désormais renvoyer des messages de modèle aux utilisateurs finaux après avoir passé en revue les messages signalés. Cela peut être personnalisé pour votre organisation et en fonction du verdict de votre administrateur. 
-=======
 ## <a name="september-2021"></a>Septembre 2021
 
 - [Stratégies de mise](quarantine-policies.md)en quarantaine : les administrateurs peuvent configurer un contrôle granulaire pour l’accès des destinataires aux messages mis en quarantaine et personnaliser les notifications de courrier indésirable à l’utilisateur final.

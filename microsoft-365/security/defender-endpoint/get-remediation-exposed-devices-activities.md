@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 856379aeb0264cf1c6d604050ad2a0052dab4e0b
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 1ee64608e9ce6ce24dc40f1729303ef99b162cab
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400246"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683527"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Répertorier les appareils exposés d’une activité de correction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -63,10 +63,10 @@ Déléguée (compte professionnel ou scolaire)|RemediationTask.Read.Read|\'Lire 
 
 Propriété (id)|Type de données|Description|Exemple
 :---|:---|:---|:---
-id|String|ID d’appareil|w2957837fwda8w9ae7f023dba081059dw8d94503
+id|Chaîne|ID d’appareil|w2957837fwda8w9ae7f023dba081059dw8d94503
 computerDnsName|String|Nom du périphérique|PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform|String|Système d’exploitation d’appareil|WindowsServer2012R2
-rbacGroupName|String|Nom du groupe d’appareils associé à cet appareil|Serveurs
+osPlatform|Chaîne|Système d’exploitation d’appareil|WindowsServer2012R2
+rbacGroupName|Chaîne|Nom du groupe d’appareils associé à cet appareil|Serveurs
 
 ## <a name="example"></a>Exemple
 
@@ -87,28 +87,28 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
             "computerDnsName": "ComputerPII_2ea21b2d97c9df23c143ad9e3e454cb674232529.DomainPII_21eed80b086e79bdfa178eabfa25e8be9acfa346.corp.contoso.com",
             "osPlatform": "WindowsServer2016",
             "rbacGroupName": "UnassignedGroup",
-            
+
         },
         {
             "id": "3d9b1ca53e8f077199c7dcbfc9dbfa78f9bf1918",
             "computerDnsName": "ComputerPII_001d606fc149567c192747f48fae304b43c0ddba.DomainxPII_21eed80b086e79bdfa178eabfa25e8be9acfa346.corp.contoso.com",
             "osPlatform": "WindowsServer2012R2",
             "rbacGroupName": "UnassignedGroup",
-            
+
         },
         {
             "id": "3db8b27e6172951d7ea2e2d75945abec56feaf82",
             "computerDnsName": "ComputerPII_ce60cfbjj4b82a091deb5eae560332bba99a9bd7.DomainPII_0bc1aee0fa396d175e514bd61a9e7a5b2b07ee8e.corp.contoso.com",
             "osPlatform": "WindowsServer2016",
             "rbacGroupName": "UnassignedGroup",
-            
+
         },
         {
             "id": "3bad326dcda5b53fab47408cd4a7080f3f3cc8ab",
             "computerDnsName": "ComputerPII_b6b35960dd6539d1d1cef5ada02e235e7b357408.DomainPII_21eed80b089e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
             "osPlatform": "WindowsServer2012R2",
             "rbacGroupName": "UnassignedGroup",
-            
+
         }
 ]
 }

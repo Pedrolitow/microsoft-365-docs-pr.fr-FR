@@ -16,35 +16,34 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 28ea0cfa3d22405d80fdf457cc60ce4627caf9de
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: a9dc5b908534cf791d8538069a8d8db9f10e0e48
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349595"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684243"
 ---
 # <a name="get-user-related-alerts-api"></a>API Obtenir les alertes liées à l’utilisateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Description de l’API
+
 Récupère une collection d’alertes liées à un ID d’utilisateur donné.
 
-
 ## <a name="limitations"></a>Limites
-1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
+1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -61,7 +60,7 @@ Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et é
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données ». Pour plus d’informations, voir [Créer et gérer des rôles.](user-roles.md)
->- La réponse inclut uniquement les alertes, associées aux appareils, à qui [](machine-groups.md) l’utilisateur a accès, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils pour plus d’informations)
+> - La réponse inclut uniquement les alertes, associées aux appareils, à qui [](machine-groups.md) l’utilisateur a accès, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -75,8 +74,7 @@ GET /api/users/{id}/alerts
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String
- | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -84,7 +82,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’utilisateur existe : 200 - OK. Si l’utilisateur n’existe pas : 200 - OK avec un jeu vide. 
+En cas de réussite et si l’utilisateur existe : 200 - OK. Si l’utilisateur n’existe pas : 200 - OK avec un jeu vide.
 
 ## <a name="example"></a>Exemple
 

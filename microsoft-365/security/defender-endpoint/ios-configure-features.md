@@ -17,18 +17,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9a5f4eda743e20f94da576c9292a54f091d575789b148df727b6fb384b6f5a85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3916217467892a46fd8a2534a7852b928d2b5215
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898205"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684087"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurer Microsoft Defender pour endpoint sur les fonctionnalités iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -58,7 +58,7 @@ Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certain
 1. Désactivez la **Connecter à la demande** pour désactiver le VPN.
 
     > [!div class="mx-imgBorder"]
-    > ![Connexion de la connexion VPN à la demande](images/ios-vpn-config.png)
+    > ![Connexion de la connexion VPN à la demande.](images/ios-vpn-config.png)
 
 > [!NOTE]
 > La protection web n’est pas disponible lorsque le VPN est désactivé. Pour activer à nouveau la Protection Web, ouvrez l’application Microsoft Defender pour point de terminaison sur l’appareil, puis cliquez ou appuyez sur **Démarrer le VPN.**
@@ -73,11 +73,11 @@ Microsoft Defender pour le point de terminaison peut être configuré pour envoy
 
 Les étapes de configuration des stratégies de protection des applications avec Microsoft Defender pour point de terminaison sont les suivantes :
 
-1. Configurer la connexion de votre client Microsoft Endpoint Manager microsoft Defender pour le point de terminaison. Dans le Centre d’administration [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)sélectionnez Connecteurs d’administration des clients et jetons Microsoft Defender pour le point de terminaison (sous Plateforme croisée) ou  >    >   **Endpoint Security** Microsoft Defender for Endpoint (sous Programme d’installation) et activer les boutons bascule sous App Protection Policy Paramètres pour  >   **iOS.**
+1. Configurer la connexion de votre client Microsoft Endpoint Manager microsoft Defender pour le point de terminaison. Dans le Centre d’administration [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)sélectionnez Connecteurs d’administration des clients et jetons Microsoft  Defender pour le point de terminaison (sous Plateforme croisée) ou \>  \>  **Endpoint Security** Microsoft Defender for Endpoint (sous Programme d’installation) et activer les boutons bascule sous App Protection Policy Paramètres pour \>  **iOS.**
 1. Sélectionnez Enregistrer. Vous devriez voir que **l’état de** la connexion est désormais **activé.**
-1. Créer une stratégie de protection des applications : une fois la configuration de votre connecteur Microsoft Defender pour point de terminaison terminée, accédez aux stratégies de protection des applications (sous Stratégie) pour créer une stratégie ou mettre à jour une stratégie  >   existante.
+1. Créer une stratégie de protection des applications : une fois  la configuration de votre connecteur Microsoft Defender pour point de terminaison terminée, accédez aux stratégies de protection des applications (sous Stratégie) pour créer une stratégie ou mettre à jour une stratégie \>  existante.
 1. Sélectionnez les paramètres de plateforme, **d’applications, de protection** des données et d’accès requis par votre organisation pour votre stratégie.
-1. Dans **les conditions de lancement**  >  **conditionnel de** l’appareil, vous trouverez le paramètre Niveau de menace maximum autorisé de **l’appareil.** Il devra être configuré sur Faible, Moyen, Élevé ou Sécurisé. Les actions à votre disposition seront **Bloquer** l’accès ou Effacer **les données.** Vous pouvez voir une boîte de dialogue d’information pour vous assurer que votre connecteur est bien installé avant que ce paramètre prenne effet. Si votre connecteur est déjà installé, vous pouvez ignorer cette boîte de dialogue.
+1. Dans **les conditions de lancement** \> **conditionnel de** l’appareil, vous trouverez le paramètre Niveau de menace maximum autorisé de **l’appareil.** Il devra être configuré sur Faible, Moyen, Élevé ou Sécurisé. Les actions à votre disposition seront **Bloquer** l’accès ou Effacer **les données.** Vous pouvez voir une boîte de dialogue d’information pour vous assurer que votre connecteur est bien installé avant que ce paramètre prenne effet. Si votre connecteur est déjà installé, vous pouvez ignorer cette boîte de dialogue.
 1. Terminez avec Affectations et enregistrez votre stratégie.
 
 Pour plus d’informations sur la stratégie de protection des applications ou de gestion des applications, voir les paramètres de stratégie de protection des [applications iOS.](/mem/intune/apps/app-protection-policy-settings-ios)
@@ -100,18 +100,18 @@ Suivez les étapes ci-dessous pour créer une stratégie de conformité contre l
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices**  ->  **Compliance policies** Create  ->  **Policy**. Sélectionnez « iOS/iPadOS » comme plateforme, puis cliquez sur **Créer.**
 
     > [!div class="mx-imgBorder"]
-    > ![Créer une stratégie](images/ios-jb-policy.png)
+    > ![Créer une stratégie.](images/ios-jb-policy.png)
 
 2. Spécifiez un nom de stratégie, par exemple « Stratégie de conformité pour jailbreak ».
 3. Dans la page paramètres de conformité, cliquez  pour développer la **section** État de l’appareil, puis cliquez sur Bloquer pour les **appareils jailbreakés.**
 
     > [!div class="mx-imgBorder"]
-    > ![Stratégie Paramètres](images/ios-jb-settings.png)
+    > ![Stratégie Paramètres.](images/ios-jb-settings.png)
 
 4. Dans la **section Action pour non-conformité,** sélectionnez les actions en conformité avec vos besoins, puis sélectionnez **Suivant**.
 
     > [!div class="mx-imgBorder"]
-    > ![Actions de stratégie](images/ios-jb-actions.png)
+    > ![Actions de stratégie.](images/ios-jb-actions.png)
 
 5. Dans la section **Affectations,** sélectionnez les groupes d’utilisateurs que vous souhaitez inclure pour cette stratégie, puis sélectionnez **Suivant.**
 6. Dans la section **Révision+Créer,** vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer.**

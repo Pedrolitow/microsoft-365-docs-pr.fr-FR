@@ -19,18 +19,18 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 6b879fddc96c69727a7c5deb49ce2a926152ec326605167ac075b5d37f8ab448
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 52e7a3098f157e52ecf32802a9f69328b28e2e52
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829136"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684159"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -72,27 +72,27 @@ Les détails du fichier, les incidents, la détection des programmes malveillant
 
 Vous verrez des détails tels que le MD5 du fichier, le taux de détection du nombre total de virus et la détection de l’antivirus Microsoft Defender, le cas besoin, ainsi que la prévalence du fichier.
 
-La carte de prévalence du fichier indique où le fichier a été vu sur les appareils de l’organisation et du monde entier. 
+La carte de prévalence du fichier indique où le fichier a été vu sur les appareils de l’organisation et du monde entier.
 
-> [!NOTE] 
+> [!NOTE]
 > Différents utilisateurs peuvent voir des valeurs différentes dans les appareils de la *section* Organisation de la carte de prévalence du fichier. En effet, la carte affiche des informations en fonction de l’étendue RBAC dont dispose un utilisateur. Cela signifie que si un utilisateur a obtenu une visibilité sur un ensemble spécifique d’appareils, il verra uniquement le fichier de prévalence organisationnelle sur ces appareils.
 
-![Image des informations de fichier](images/atp-file-information.png)
+![Image des informations de fichier.](images/atp-file-information.png)
 
 ## <a name="alerts"></a>Alertes
 
 **L’onglet Alertes** fournit une liste des alertes associées au fichier. Cette liste couvre la plupart des informations de la file d’attente des alertes, à l’exception du groupe d’appareils, le cas caser, à qui appartient l’appareil concerné. Vous pouvez choisir le type d’informations affiché en sélectionnant Personnaliser les colonnes dans la barre d’outils au-dessus des en-têtes de colonne. 
 
-![Image des alertes associées à la section de fichier](images/atp-alerts-related-to-file.png)
+![Image des alertes associées à la section du fichier.](images/atp-alerts-related-to-file.png)
 
 ## <a name="observed-in-organization"></a>Observé dans l’organisation
 
 L’onglet Observé **dans l’organisation** vous permet de spécifier une plage de dates pour voir quels appareils ont été observés avec le fichier.
 
->[!NOTE]
->Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet vers un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
+> [!NOTE]
+> Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet vers un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
 
-![Image de l’appareil observé le plus récent avec le fichier](images/atp-observed-machines.png)
+![Image de l’appareil observé le plus récent avec le fichier.](images/atp-observed-machines.png)
 
 Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une période à vérifier pour les événements impliquant le fichier. Vous pouvez spécifier une fenêtre de temps aussi petite qu’un seul jour. Cela vous permettra de voir uniquement les fichiers qui ont communiqué avec cette adresse IP à ce moment-là, ce qui réduit considérablement les recherches et les défilements inutiles.
 
@@ -100,15 +100,15 @@ Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une pé
 
 **L’onglet** Analyse approfondie vous permet de soumettre le fichier pour analyse [approfondie,](respond-file-alerts.md#deep-analysis)de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois que vous avez soumis le fichier, le rapport d’analyse approfondie apparaît dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
 
-![Image de l’onglet Analyse approfondie](images/submit-file.png)
+![Image de l’onglet Analyse approfondie.](images/submit-file.png)
 
 ## <a name="file-names"></a>Noms de fichiers
 
 **L’onglet Noms** de fichiers répertorie tous les noms que le fichier a été observé pour utiliser, au sein de vos organisations.
 
-![Image de l’onglet Noms de fichiers](images/atp-file-names.png)
+![Image de l’onglet Noms de fichiers.](images/atp-file-names.png)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Afficher et organiser la file d’attente Microsoft Defender pour les points de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

@@ -16,31 +16,30 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f70cba0d749238b9602f88b27d96aec87a5139b
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 98852db88f2b586d8e69a529a838e785dc22654c
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502842"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683991"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Répertorier les vulnérabilités par logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupérez la liste des vulnérabilités dans le logiciel installé. 
+Récupérez la liste des vulnérabilités dans le logiciel installé.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -61,7 +60,7 @@ GET /api/Software/{Id}/vulnerabilities
 
 |Nom|Type|Description
 |---|---|---|
-|Autorisation|String|Porteur {token}. **Obligatoire**.
+|Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -69,7 +68,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec une liste de vulnérabilités exposées par le logiciel spécifié. 
+Si elle réussit, cette méthode renvoie 200 OK avec une liste de vulnérabilités exposées par le logiciel spécifié.
 
 ## <a name="example"></a>Exemple
 
@@ -78,7 +77,7 @@ Si elle réussit, cette méthode renvoie 200 OK avec une liste de vulnérabilit�
 Voici un exemple de demande.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities 
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities
 ```
 
 ### <a name="response-example"></a>Exemple de réponse

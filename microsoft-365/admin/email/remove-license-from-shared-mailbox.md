@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: SKjerland
-ms.reviewer: nicholak
+ms.reviewer: sinakassaw, nicholak
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 description: 'Supprimez une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur ou renvoyez la licence afin que vous ne payiez pas pour elle. '
 ms.date: 05/11/2021
-ms.openlocfilehash: da72b708d5257ad6054a7007ee0dca96564b463ca47acd68e803ca3b5511819c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c100d23bad3e8992667e43d8f17d92e296ae49d5
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825942"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683503"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 

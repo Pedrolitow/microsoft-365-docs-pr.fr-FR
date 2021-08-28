@@ -259,6 +259,8 @@
           items:
             - name: Planifier la protection contre la perte de données
               href: dlp-overview-plan-for-dlp.md
+            - name: Référence de la stratégie de protection contre la perte de données
+              href: dlp-policy-reference.md
         - name: Prise en main de la protection contre la perte de données
           items:
             - name: Prise en main de la stratégie DLP par défaut
