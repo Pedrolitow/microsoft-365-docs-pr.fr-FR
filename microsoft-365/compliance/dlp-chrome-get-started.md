@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Préparez, puis déployez l’extension de la conformité Microsoft.
-ms.openlocfilehash: a7f33edb71695af1328dd62d488d86a9216cf91a357bbbc7049068d262f3837c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad3fa4ae5cef1e5d4a49cbe10c36fce89252127b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895670"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564033"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Prise en main de l’extension de la conformité Microsoft
 
@@ -254,7 +254,7 @@ Maintenant que vous avez supprimé Chrome de la liste des navigateurs/applicatio
 2. Reportez-vous aux procédures décrites dans [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) pour accéder aux données de vos appareils de point de terminaison et les filtrer.
 
    > [!div class="mx-imgBorder"]
-   > ![filtre de l’Explorateur d’activités pour les appareils de point de terminaison](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![Filtre de l’Explorateur d’activités pour les appareils de point de terminaison.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ### <a name="known-issues-and-limitations"></a>Problèmes et limites connus
 

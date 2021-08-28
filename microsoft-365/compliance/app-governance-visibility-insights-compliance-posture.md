@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Déterminez la posture de conformité de votre application.
-ms.openlocfilehash: 2f53a3267b4c33b532251b34e0f2509a1075486996c01e8aaeecf68a12c70609
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4cc54e5ea0fdaf0a8a196b90b09e2e8be970c7c1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887102"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572094"
 ---
 # <a name="determine-your-app-compliance-posture"></a>Déterminer la posture de conformité de votre application
 
@@ -27,7 +27,7 @@ ms.locfileid: "53887102"
 
 La gouvernance des applications Microsoft vous permet d’évaluer rapidement la posture de conformité des applications tierces et leur accès aux données de votre client Microsoft 365 à partir de la page Vue d’ensemble de la gouvernance des applications du Centre de conformité Microsoft 365.
 
-![Page vue d’ensemble de la gouvernance des applications dans le Centre de conformité Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-overview.png)
+![Page vue d’ensemble de la gouvernance des applications dans le Centre de conformité Microsoft 365.](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
 >[!Note]
 > Votre compte de connexion doit avoir l’un des [ces rôles](app-governance-get-started.md#administrator-roles) pour afficher les données de gouvernance des applications.

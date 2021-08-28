@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: c33677d483eadca4526d2c7f977ad91de6c7340c
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: 26f5723d604cb9f57000f13eb799cd0afba593e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450127"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556299"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -41,7 +41,7 @@ Ou
 - Si vous souhaitez exclure l’analyse des chemins d’accès aux fichiers bruyants
 
   > [!div class="mx-imgBorder"]
-  > ![Paramètres DLP](../media/endpoint-dlp-1-using-dlp-settings.png)
+  > ![Paramètres DLP.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### <a name="file-path-exclusions"></a>Exclusions de chemin d’accès de fichier
 
@@ -191,7 +191,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 5. Faites défiler vers le bas jusqu’à la section **Rapports d’incident** et configurez **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle se produit** sur **Activé**. Les alertes par courrier électronique sont envoyées automatiquement à l’administrateur et à toute autre personne que vous ajoutez à la liste des destinataires. 
 
    > [!div class="mx-imgBorder"]
-   > ![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+   > ![activer les rapports d’incident.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. Dans le cadre de ce scénario, sélectionnez **Envoyer une alerte chaque fois qu’une activité correspond à la règle**.
 
@@ -216,7 +216,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 5. Faites défiler vers le bas jusqu’à la section **Audit ou restreindre les activités sur les appareils Windows** et pour chaque activité définissez l’action correspondante sur **Bloquer avec remplacement**.
 
    > [!div class="mx-imgBorder"]
-   > ![définir un blocage avec une action de remplacement](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+   > ![définir un blocage avec une action de remplacement.](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
    
 6. Cliquez sur **Enregistrer**.
 
@@ -229,7 +229,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
    Une fenêtre contextuelle semblable à celle-ci s’affiche sur l’appareil client :
 
    > [!div class="mx-imgBorder"]
-   > ![blocage de la notification de remplacement par le client dlp de point de terminaison](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+   > ![blocage de la notification de remplacement par le client dlp de point de terminaison.](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. Consultez l’Explorateur d’activités pour l’événement.
 
@@ -263,7 +263,7 @@ Il existe trois procédures.
 
 6. Activez **Mise en quarantaine automatique pour les applications non autorisées**.
 
-7. Entrez le chemin d’accès au dossier sur les ordinateurs locaux où vous souhaitez déplacer les fichiers sensibles d’origine. Par exemple :
+7. Entrez le chemin d’accès au dossier sur les ordinateurs locaux dans lequel vous souhaitez déplacer les fichiers sensibles d’origine. Par exemple:
    
 **«%homedrive%%homepath%\Microsoft DLP\Quarantine»** pour le nom d’utilisateur *Isaiah langer* déplace les éléments dans un 
 
@@ -318,7 +318,7 @@ laisse un fichier .txt qui contient ce message
 
 1. Connectez-vous à l’ordinateur Windows 10 avec le compte d’utilisateur que vous avez spécifié dans [Configurez une stratégie pour bloquer la synchronisation OneDrive des fichiers avec l’étiquette de confidentialité Hautement confidentiel](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) à l’étape 5.
 
-2. Créez un dossier dont le contenu ne sera pas synchronisé avec OneDrive. Par exemple :
+2. Créer un dossier dont le contenu ne sera pas synchronisé avec OneDrive.
 
     *Dossier source C:\ mise en quarantaine automatique*
 
@@ -326,7 +326,7 @@ laisse un fichier .txt qui contient ce message
 
 4. Copiez le fichier que vous venez de créer dans votre dossier de synchronisation OneDrive. Une pastille de notification utilisateur doit apparaître vous indiquant que l’action n’est pas autorisée et que le fichier sera mis en quarantaine. Par exemple, pour le nom d’utilisateur *Isaiah Langer* et un document intitulé *document de mise en quarantaine automatique 1.docx* ce message s’affiche :
 
-![Fenêtre contextuelle de notification utilisateur de protection contre la perte de données indiquant que l’action de synchronisation OneDrive n’est pas autorisée pour le fichier spécifié et que le fichier sera mis en quarantaine](../media/auto-quarantine-user-notification-toast.png)
+![Fenêtre contextuelle de notification utilisateur de protection contre la perte de données indiquant que l’action de synchronisation OneDrive n’est pas autorisée pour le fichier spécifié et que le fichier sera mis en quarantaine.](../media/auto-quarantine-user-notification-toast.png)
 
 Le message indique :
 
