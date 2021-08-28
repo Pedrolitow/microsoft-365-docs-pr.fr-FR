@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 23f6b23d958a51bd84498c08ef95672ec62ff6e5
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 6c3adb8b07de50ca655c27a2d70f7868efd32332
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532762"
+ms.locfileid: "58561037"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs d’accès au service Microsoft Defender for Endpoint
 
@@ -175,7 +175,7 @@ La prise en charge de Windows Server fournit des informations plus approfondies 
 
     1. Confirmez qu’un événement récent contenant l’événement en mode passif est trouvé :
 
-       ![Image du résultat de vérification du mode passif](images/atp-verify-passive-mode.png)
+       ![Image du résultat de vérification du mode passif.](images/atp-verify-passive-mode.png)
 
 3. Exécutez la commande suivante pour vérifier si Microsoft Defender AV est installé :
 
@@ -198,7 +198,7 @@ Les fonctionnalités suivantes sont incluses dans cette intégration :
     > [!NOTE]
     > L’intégration entre Azure Defender pour serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Windows serveurs surveillés par Azure Defender seront également disponibles dans Defender pour le point de terminaison : Azure Defender se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs. En outre, les alertes defender pour point de terminaison seront disponibles dans la console Azure Defender.
+- Windows serveurs surveillés par Azure Defender seront également disponibles dans Defender pour le point de terminaison : Azure Defender se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs. En outre, les alertes Defender pour le point de terminaison seront disponibles dans la console Azure Defender.
 
 - Enquête sur le serveur : les clients Azure Defender peuvent accéder Microsoft 365 Defender pour effectuer une enquête détaillée afin de découvrir l’étendue d’une violation potentielle.
 
@@ -206,7 +206,7 @@ Les fonctionnalités suivantes sont incluses dans cette intégration :
 >
 > - Lorsque vous utilisez Azure Defender pour surveiller les serveurs, un client Defender pour point de terminaison est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l’UE pour les utilisateurs européens et anglais).
 Les données collectées par Defender pour endpoint sont stockées dans l’emplacement géographique du client, comme identifié lors de l’approvisionnement.
-> - Si vous utilisez Defender pour Endpoint avant d’utiliser Azure Defender, vos données seront stockées à l’emplacement que vous avez spécifié lors de la création de votre client, même si vous intégrez Azure Defender ultérieurement.
+> - Si vous utilisez Defender pour endpoint avant d’utiliser Azure Defender, vos données seront stockées à l’emplacement spécifié lors de la création de votre client, même si vous intégrez Azure Defender ultérieurement.
 > - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter le Support Microsoft pour réinitialiser le client.
 >
 La surveillance des points de terminaison de serveur utilisant cette intégration a été désactivée pour Office 365 Cloud de la communauté du secteur public clients.
@@ -260,7 +260,7 @@ Pour mettre hors service Windows serveur, vous pouvez utiliser l’une des méth
 
 2. Sélectionnez l’espace de travail Defender pour le point de terminaison, puis cliquez sur **Supprimer.**
 
-    ![Image des propriétés Microsoft Monitoring Agent de l’entreprise](images/atp-mma.png)
+    ![Image de Microsoft Monitoring Agent propriétés.](images/atp-mma.png)
 
 #### <a name="run-a-powershell-command-to-remove-the-configuration"></a>Exécuter une commande PowerShell pour supprimer la configuration
 
@@ -270,7 +270,7 @@ Pour mettre hors service Windows serveur, vous pouvez utiliser l’une des méth
 
    1. Sélectionnez **Windows Server 2008 R2 SP1, 2012 R2 et 2016** comme système d’exploitation et obtenez votre ID d’espace de travail :
 
-      ![Image de l’intégration Windows serveur](images/atp-server-offboarding-workspaceid.png)
+      ![Image de l Windows un serveur intégré.](images/atp-server-offboarding-workspaceid.png)
 
 2. Ouvrez un PowerShell élevé et exécutez la commande suivante. Utilisez l’ID d’espace de travail que vous avez obtenu et remplacez `WorkspaceID` :
 
@@ -325,28 +325,28 @@ Créez une stratégie de groupe spécifique pour l’intégration d’appareils 
 
 - Créer un dossier de stratégie de groupe nommé « c:\windows\MMA »
 
-     :::image type="content" source="images/grppolicyconfig1.png" alt-text="dossiers":::
+     :::image type="content" source="images/grppolicyconfig1.png" alt-text="dossiers.":::
 
     **Cela ajoute un nouveau dossier sur chaque serveur qui obtient l’GPO appliqué, appelé MMA, et qui sera stocké dans c:\windows. Il contient les fichiers d’installation pour le MMA, les éléments prérequis et le script d’installation.**
 
 - Créez une préférence de fichiers de stratégie de groupe pour chacun des fichiers stockés dans net logon.
 
-     :::image type="content" source="images/grppolicyconfig2.png" alt-text="image1 de stratégie de groupe":::
+     :::image type="content" source="images/grppolicyconfig2.png" alt-text="image1 de la stratégie de groupe.":::
 
 Il copie les fichiers de DOMAIN\NETLOGON\MMA\filename vers C:\windows\MMA\filename, afin que les fichiers **d’installation** soient locaux sur le serveur :
 
-:::image type="content" source="images/deploymma.png" alt-text="déployer mma cmd":::
+:::image type="content" source="images/deploymma.png" alt-text="déployer mma cmd.":::
 
 Pour les deux ko (l’un pour Windows Server 2008R2/Windows 7 et l’autre pour Windows Server 2012 R2), répétez le processus, mais créez un ciblage au niveau de l’élément sous l’onglet COMMON, afin que le fichier ne soit copié que vers la version de plateforme/système d’exploitation appropriée dans l’étendue :
 
-:::image type="content" source="images/targeteditor.png" alt-text="éditeur cible":::
+:::image type="content" source="images/targeteditor.png" alt-text="éditeur cible.":::
 
 - Pour Windows Server 2008 R2, vous avez besoin de Windows6.1-PROXY3080149-x64.msu (et uniquement copié).
 - Pour Windows Server 2012 R2, vous avez besoin de Windows8.1-COPI3080149-x64.msu (et uniquement copié).
 
 Une fois cette stratégie effectuée, vous devez créer une stratégie de script de démarrage :
 
-:::image type="content" source="images/startupprops.png" alt-text="démarrer les propriétés":::
+:::image type="content" source="images/startupprops.png" alt-text="démarrer les propriétés.":::
 
 Le nom du fichier à exécuter ici est c:\windows\MMA\DeployMMA.cmd.
 Une fois que le serveur est redémarré dans le cadre du processus de démarrage, il installe la mise à jour pour la base de données de télémétrie de diagnostic et d’expérience client, puis installe l’agent MMA, lors de la définition de l’ID et de la clé de l’espace de travail, et le serveur est intégré.
@@ -354,15 +354,15 @@ Une fois que le serveur est redémarré dans le cadre du processus de démarrage
 Vous pouvez également utiliser une **tâche immédiate** pour exécuter le deployMMA.cmd si vous ne souhaitez pas redémarrer tous les serveurs.
 Cette étape peut être effectuée en deux phases. Tout **d’abord, créez les fichiers et le dossier dans GPO.** Donnez au système le temps de s’assurer que l’GPO a été appliqué et que tous les serveurs disposent des fichiers d’installation. Ensuite, ajoutez la tâche immédiate. Cela permettra d’obtenir le même résultat sans nécessiter de redémarrage.
 
-Étant donné que le script dispose d’une méthode de sortie et ne se ré-exécute pas si le MMA est installé, vous pouvez également utiliser une tâche programmée quotidienne pour obtenir le même résultat. Similaire à une stratégie de conformité Configuration Manager qu’il vérifie quotidiennement pour s’assurer que le MMA est présent.
+Étant donné que le script dispose d’une méthode de sortie et ne sera pas ré-exécuté si le MMA est installé, vous pouvez également utiliser une tâche programmée quotidienne pour obtenir le même résultat. Similaire à une stratégie de conformité Configuration Manager qu’il vérifie quotidiennement pour s’assurer que le MMA est présent.
 
-:::image type="content" source="images/schtask.png" alt-text="planifier une tâche":::
+:::image type="content" source="images/schtask.png" alt-text="planifier la tâche.":::
 
-:::image type="content" source="images/newtaskprops.png" alt-text="nouvelles propriétés de tâche":::
+:::image type="content" source="images/newtaskprops.png" alt-text="nouvelles propriétés de tâche.":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="déployer les props de téléchargement mma":::
+:::image type="content" source="images/deploymmadowmload.png" alt-text="déployer les props de téléchargement mma.":::
 
-:::image type="content" source="images/tasksch.png" alt-text="programmeur de tâches":::
+:::image type="content" source="images/tasksch.png" alt-text="programmeur de tâches.":::
 
 Comme mentionné dans la documentation d’intégration pour Server spécifiquement autour de Server 2008 R2, voir ci-dessous :
 

@@ -20,12 +20,12 @@ search.appverid:
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc34894998fda5ec28db6752f50c9122d3a2b416c5e5d7bd443e756681ce50b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 193afd61509b7361ac18dd32d827182752fb61ed
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56800978"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563341"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
@@ -171,7 +171,7 @@ Pour débloquer la boîte aux lettres et permettre l’envoi de messages électr
    1. Sélectionnez **Rôles** \> **Rôles d’administrateur**.
    2. Dans la page **Rôles d’administrateur**, sélectionnez manuellement chaque groupe de rôles, puis, dans le volet d’informations, sélectionnez l’onglet **Affecté** pour vérifier les comptes d’utilisateur. Si le groupe de rôles contient le compte d’utilisateur, procédez comme suit :
       1. Sélectionnez le compte d’utilisateur.
-      2. Cliquez sur l’ ![Icône Supprimer](../../media/m365-cc-sc-delete-icon.png).
+      2. Cliquez sur l’ ![Icône Supprimer.](../../media/m365-cc-sc-delete-icon.png).
 
          Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 

@@ -12,12 +12,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 a atteint la fin de la prise en charge. Utilisez cette feuille de route de planification pour préparer la mise à niveau vers Exchange Online ou une version plus récente de Exchange Server en local.
-ms.openlocfilehash: dc7a9355be8232daefb158ca143fac377949480e714de77a644b5f8b1bdc3c6a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 14875c793380c509c578d86d2d835596fa57cc73
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904950"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561073"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge d'Exchange 2010
 
@@ -56,7 +56,7 @@ C’est le moment idéal pour explorer vos options et préparer un plan de migra
 
 Voici les trois chemins que vous pouvez prendre pour éviter la fin de la prise en charge Exchange Server 2010.
 
-![Exchange Server de mise à niveau vers 2010](../media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
+![Exchange Server de mise à niveau vers 2010.](../media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
 
 Les sections suivantes explorent chaque option plus en détail.
 
@@ -107,7 +107,7 @@ Dans une migration à cutover, vous migrez toutes vos boîtes aux lettres, group
 
 La migration à cutover est très efficace pour les petites organisations qui n’ont pas beaucoup de boîtes aux lettres, qui souhaitent Microsoft 365 rapidement et qui ne veulent pas gérer la complexité des autres méthodes. Toutefois, il doit être terminé dans une semaine ou moins. En plus, les utilisateurs doivent reconfigurer leurs profils Outlook utilisateurs. La migration à cutover peut migrer jusqu’à 2 000 boîtes aux lettres, mais nous vous recommandons de l’utiliser pour un maximum de 150 boîtes aux lettres. Si vous essayez de migrer davantage, vous risquez de ne plus pouvoir transférer toutes les boîtes aux lettres avant l’échéance, et votre personnel de support technique risque d’être submergé par les demandes d’aide aux utilisateurs pour reconfigurer les Outlook.
 
-Voici les éléments à prendre en compte concernant la migration àover :
+Voici les éléments à prendre en compte à propos de la migration à cutover :
 
 - Microsoft 365 vous connecter à vos serveurs Exchange 2010 à l’aide de Outlook Anywhere sur le port TCP 443.
 - Toutes les boîtes aux lettres sur site sont déplacées vers Microsoft 365.
@@ -199,13 +199,13 @@ Exchange 2016 inclut toutes les fonctionnalités des versions précédentes de E
 
 ****
 
-|Considération|Informations supplémentaires|
+|Considération|Plus d’informations|
 |---|---|
 |Dates de fin du support|Comme Exchange 2010, chaque version de Exchange a sa propre date de fin de prise en charge : <p> Exchange 2013 - Avril 2023 <p> Exchange 2016 - Octobre 2025 <p> Plus la date de fin de support est antérieure, plus vite vous devrez effectuer une autre migration. Avril 2023 est beaucoup plus proche que vous ne le pensez !|
 |Migration vers Exchange 2013 ou 2016|Le chemin de migration de Exchange 2010 vers une version plus récente est le même, que vous choisissiez Exchange 2013 ou Exchange 2016 : <p> Installez Exchange 2013 ou 2016 dans votre organisation Exchange 2010 existante. <p> Déplacez les services et autres infrastructures vers Exchange 2013 ou 2016. <p> Déplacez les boîtes aux lettres et les dossiers publics vers Exchange 2013 ou 2016 Désaffecter les serveurs restants Exchange 2010.|
 |Coexistence de version|Lors de la migration vers Exchange 2013 ou Exchange 2016, vous pouvez installer chaque version dans une organisation Exchange 2010 existante. Cela vous permet d’installer un ou plusieurs serveurs Exchange 2013 ou 2016 Exchange 2016 et d’y faire votre migration.|
 |Matériel serveur|La configuration matérielle requise pour le serveur Exchange 2010. Assurez-vous que votre matériel est compatible. En savoir plus sur la configuration matérielle requise pour chaque version ici : <p> [Configuration requise pour Exchange 2016](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) <p> [Configuration requise pour Exchange 2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help) <p> Avec les améliorations significatives des performances de Exchange et l’augmentation de la puissance informatique et de la capacité de stockage sur les serveurs plus nouveaux, vous aurez probablement besoin de moins de serveurs pour prendre en charge le même nombre de boîtes aux lettres.|
-|Version du système d'exploitation|Les versions minimales de système d’exploitation pris en charge pour chaque version sont les : <p> Exchange 2016 - Windows Server 2012 <p> Exchange 2013 - Windows Server 2008 R2 SP1 <p> Pour plus d’informations sur la prise en charge du système [d’exploitation, voir Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
+|Version du système d'exploitation|Les versions minimales de système d’exploitation pris en charge pour chaque version sont les : <p> Exchange 2016 - Windows Server 2012 <p> Exchange 2013 - Windows Server 2008 R2 SP1 <p> Pour plus d’informations sur la prise en charge du système [d’exploitation, Exchange Matrice de prise en charge.](/exchange/plan-and-deploy/supportability-matrix)|
 |Niveau fonctionnel de la forêt Active Directory|Les niveaux fonctionnels minimaux de forêt Active Directory pris en charge pour chaque version sont : <p> Exchange 2016 - Windows Server 2008 R2 SP1 <p> Exchange 2013 - Windows Server 2003 <p> Pour plus d’informations sur la prise en charge du niveau fonctionnel de la [forêt, voir Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
 |Office versions clientes|Les versions minimales Office client pour chaque version sont les Office les plus récentes : <p> Exchange 2016 - Office 2010 (avec les dernières mises à jour) <p> Exchange 2013 - Office 2007 SP3 <p> Pour plus d’informations sur Office prise en charge du client, [voir Exchange Matrice de prise en charge.](/exchange/plan-and-deploy/supportability-matrix)|
 |
@@ -213,7 +213,7 @@ Exchange 2016 inclut toutes les fonctionnalités des versions précédentes de E
 Utilisez les ressources suivantes pour faciliter votre migration :
 
 - [Exchange Assistant de déploiement](/exchange/exchange-deployment-assistant)
-- Modifications apportées au schéma Active Directory pour Exchange [2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
+- Modifications apportées au schéma Active Directory Exchange [2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
 - System requirements for Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
 - Conditions préalables Exchange [2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-prerequisites-exchange-2013-help)
 
@@ -221,15 +221,15 @@ Utilisez les ressources suivantes pour faciliter votre migration :
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![End of support for Office 2010 clients and servers and Windows 7 poster](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Fin de la prise en charge Office clients et serveurs 2010 et affiche Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Cette affiche d’une page illustre les différents chemins d’accès que vous pouvez prendre pour répondre aux produits client et serveur Office 2010 et Windows 7 jusqu’à la fin de la prise en charge, avec les chemins d’accès préférés et la prise en charge des options dans Microsoft 365 Entreprise mis en évidence.
+Cette affiche d’une page illustre les différents chemins d’accès que vous pouvez prendre pour répondre aux produits client et serveur Office 2010 et Windows 7 jusqu’à la fin de la prise en charge, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 Entreprise mis en évidence.
 
 Vous pouvez également [télécharger cette](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="what-if-i-need-help"></a>Que se passe-t-il si j’ai besoin d’aide ?
 
-Si vous migrez vers Microsoft 365, vous pouvez utiliser notre service Microsoft FastTrack. FastTrack fournit les meilleures pratiques, outils et ressources pour rendre votre migration vers Microsoft 365 aussi transparente que possible. Mieux encore, vous aurez un ingénieur du support technique pour vous aider à passer de la planification et de la conception à la migration de votre dernière boîte aux lettres. Pour plus d’informations sur FastTrack, voir [Microsoft FastTrack.](https://fasttrack.microsoft.com/)
+Si vous migrez vers Microsoft 365, vous pouvez utiliser notre service Microsoft FastTrack. FastTrack fournit les meilleures pratiques, outils et ressources pour rendre votre migration vers Microsoft 365 aussi transparente que possible. Mieux encore, vous aurez un ingénieur du support technique pour vous aider à passer de la planification et de la conception à la migration de votre dernière boîte aux lettres. Pour plus d’informations FastTrack, voir [Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
 Si vous avez des problèmes lors de votre migration vers Microsoft 365 et que vous n’utilisez pas FastTrack ou que vous migrez vers une version plus récente de Exchange Server, voici quelques ressources que vous pouvez utiliser :
 

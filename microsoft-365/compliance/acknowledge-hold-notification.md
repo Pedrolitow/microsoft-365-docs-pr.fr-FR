@@ -18,16 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser les Advanced eDiscovery pour envoyer et suivre des notifications de mise en attente légale par courrier électronique, et surveiller l’état des obligations.
-ms.openlocfilehash: 1826d6376dffc6717909accc7d4c3844cdf6b8a1206cdfad1dc655d7dee5b508
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43c2474bdc485a87c30d1fa2a31c3d008d2a383e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837193"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563283"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Reconnaitre une notification de conservation
 
-Lorsque vous répondez à une demande ou à un examen réglementaire, vous pouvez être tenu d’informer les dépositaires de leur obligation de conserver les informations stockées électroniquement (ESI) et tout document qui peut être pertinent pour une affaire juridique active ou imminence. Une fois envoyées, les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et accepté de suivre les instructions données.
+Lorsque vous répondez à une demande ou à un examen réglementaire, vous pouvez être tenu d’informer les dépositaires de leur obligation de conserver les informations stockées électroniquement (ESI) et tout document pertinent pour une affaire juridique active ou imminente. Une fois envoyées, les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et accepté de suivre les instructions données.
 
 Pour réduire le temps, les coûts et l’effort de suivi avec vos dépositaires, Advanced eDiscovery vous permet d’envoyer et de suivre des notifications de conservation légale par courrier électronique. En plus des notifications par courrier électronique, chaque dépositaire aura accès à un portail de conformité individualisé, ce qui permet aux dépositaires d’être tenus informés des modifications apportées à leur statut d’obligation.
 
@@ -54,4 +54,4 @@ En fonction de la configuration de votre notification de conservation légale, v
 
 En plus des notifications par courrier électronique, chaque dépositaire aura accès à un portail de conformité unique. Par le biais du portail, chaque dépositaire peut afficher, consulter et reconnaître ses notifications de conservation active.
 
-![Portail de conformité pour un dépositaire](../media/CustodianPortal.jpg)
+![Portail de conformité pour un dépositaire.](../media/CustodianPortal.jpg)

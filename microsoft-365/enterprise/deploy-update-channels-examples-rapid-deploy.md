@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Découvrir comment une organisation qui déploie la dernière version utilise des canaux pour les applications Windows 10 et Microsoft 365.
-ms.openlocfilehash: 71fd3e752cf4ab48c3a8ece49b8263fd5f3d01d2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 025f6976fd578af4bf0c9a0c268f046f72ef6901
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356791"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561085"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Exemple de déploiement à grande échelle des dernières versions
 
@@ -103,7 +103,7 @@ Processus de mises à jour en cours :
 
 Voici les produits, leurs canaux et les groupes de déploiement utilisés par cet exemple d’organisation. 
 
-![Groupes de déploiement pour le déploiement à grande échelle des dernières versions](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+![Groupes de déploiement pour le déploiement à grande échelle des dernières mises à jour.](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
 ## <a name="see-also"></a>Voir aussi
 

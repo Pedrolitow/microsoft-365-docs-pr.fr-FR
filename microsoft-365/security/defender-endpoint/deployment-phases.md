@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1188f1310ce06c2d3e695294f2212df1f5a9c60
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532822"
+ms.locfileid: "58563557"
 ---
 # <a name="deployment-phases"></a>Phases de déploiement
 
@@ -37,13 +37,14 @@ ms.locfileid: "58532822"
 
 Découvrez comment déployer Microsoft Defender pour endpoint afin que votre entreprise puisse tirer parti de la protection préventive, de la détection post-violation, de l’examen automatisé et de la réponse.
 
-Ce guide vous aide à travailler entre les parties prenantes pour préparer votre environnement, puis intégrer les appareils d’une manière méthodique, en passant de l’évaluation à un projet pilote significatif vers un déploiement complet.
+Ce guide vous aide à travailler au sein des parties prenantes pour préparer votre environnement, puis intégrer les appareils d’une manière méthodique, en passant de l’évaluation à un projet pilote significatif vers un déploiement complet.
 
 Chaque section correspond à un article distinct de cette solution.
 
-![Image des phases de déploiement avec les détails du tableau](images/deployment-guide-phases.png)
+![Image des phases de déploiement avec les détails du tableau.](images/deployment-guide-phases.png)
 
-![Résumé des phases de déploiement : préparer, configurer, intégrer](images/phase-diagrams/deployment-phases.png)
+
+![Résumé des phases de déploiement : préparer, configurer, intégrer.](images/phase-diagrams/deployment-phases.png)
 
 <br>
 

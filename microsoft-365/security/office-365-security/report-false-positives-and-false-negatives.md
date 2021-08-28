@@ -13,12 +13,12 @@ ms.collection:
 description: Découvrez comment signaler les faux positifs et les faux négatifs dans Outlook à l’aide de la fonctionnalité Signaler un message.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a0e69b16167ff796b68a2eea492a4dea180a4fb7
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 34afd8d8e15bc301f42850763d39e1846a66e6d4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400366"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563485"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Signaler les faux positifs et les faux négatifs dans Outlook
 
@@ -47,7 +47,7 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Onli
 
 - Vous pouvez configurer pour envoyer des messages directement à Microsoft, une boîte aux lettres que vous spécifiez, ou les deux. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)
 
-- Pour plus d’informations sur la façon d’obtenir et d’activer le message de rapport ou les add-ins De hameçonnage de rapport, voir Activer le [message](enable-the-report-message-add-in.md)de rapport ou les rapports de hameçonnage.
+- Pour plus d’informations sur la façon d’obtenir et d’activer le message de rapport ou les add-ins Signaler le hameçonnage, voir Activer le message de rapport ou les [add-ins](enable-the-report-message-add-in.md)Signaler le hameçonnage.
 
 - Pour plus d’informations sur la notification des messages à Microsoft, voir [Signaler des messages et des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
@@ -59,9 +59,9 @@ Pour les messages dans la boîte de réception ou tout autre dossier de courrier
 
 1. Sélectionnez les ellipses Autres **actions** dans le coin supérieur droit du message sélectionné, sélectionnez Signaler **le message** dans le menu déroulant, puis sélectionnez Courrier indésirable ou **Hameçonnage.** 
 
-   ![Message de rapport - Plus d’actions](../../media/report-message-more-actions.png)
+   ![Message de rapport - Plus d’actions.](../../media/report-message-more-actions.png)
 
-   ![Message de rapport : courrier indésirable et hameçonnage](../../media/report-message-junk-phishing.png)
+   ![Message de rapport : courrier indésirable et hameçonnage.](../../media/report-message-junk-phishing.png)
 
 2. Les messages sélectionnés sont envoyés à Microsoft pour analyse et :
    - Déplacé vers le dossier Courrier indésirable s’ils ont été signalés comme courrier indésirable.
@@ -71,9 +71,9 @@ Pour les messages dans la boîte de réception ou tout autre dossier de courrier
 
 1. Sélectionnez les ellipses Autres **actions** dans le coin supérieur droit du message sélectionné, sélectionnez Signaler **le message** dans le menu déroulant, puis sélectionnez Non indésirable **.**
 
-   ![Message de rapport - Plus d’actions](../../media/report-message-more-actions.png)
+   ![Message de rapport - Plus d’actions.](../../media/report-message-more-actions.png)
 
-   ![Message de rapport - Courrier non indésirable](../../media/report-message-not-junk.png)
+   ![Message de rapport - Non indésirable.](../../media/report-message-not-junk.png)
 
 2. Le message sélectionné est envoyé à Microsoft pour analyse et déplacé vers la boîte de réception ou tout autre dossier spécifié.
 

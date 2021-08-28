@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61407295ef414d14441803bf39320615f2b1329c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 0796d9d7388ff80ea5ad4917413a42f60e0f06dd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532666"
+ms.locfileid: "58560917"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Applications connectées dans Microsoft Defender pour point de terminaison
 
@@ -41,14 +41,14 @@ Les applications utilisent le protocole OAuth 2.0 standard pour s’authentifier
 
 Vous devez suivre ces [étapes](/microsoft-365/security/defender-endpoint/apis-intro) pour utiliser les API avec l’application connectée.
 
-Dans le menu de navigation de gauche, sélectionnez **Partenaires & API** (sous Points de terminaison) > applications **connectées.** 
+Dans le menu de navigation de gauche, sélectionnez Partenaires **& API** (sous Points de terminaison) > applications  **connectées.**
 
 ## <a name="view-connected-application-details"></a>Afficher les détails de l’application connectée
 
 La page Applications connectées fournit des informations sur les applications Azure AD connectées à Microsoft Defender pour endpoint dans votre organisation. Vous pouvez passer en revue l’utilisation des applications connectées : dernière expérience, nombre de demandes au cours des dernières 24 heures et tendances des demandes au cours des 30 derniers jours.
 
-![Image des applications connectées](images/connected-apps.png)
-
+![Image des applications connectées.](images/connected-apps.png)
+ 
 ## <a name="edit-reconfigure-or-delete-a-connected-application"></a>Modifier, reconfigurer ou supprimer une application connectée
 
 Le **lien Ouvrir les paramètres de l’application** ouvre la page de gestion des applications Azure AD correspondante dans le portail Azure. À partir du portail Azure, vous pouvez gérer les autorisations, reconfigurer ou supprimer les applications connectées.

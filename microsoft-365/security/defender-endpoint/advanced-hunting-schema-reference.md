@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: b13e3974e71ca5cb24598720b2fe273df7fe82b34e13e24bd2ed53e926c519ba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7795f4d7f02a9b60e0bbd58fb97608733385dc9c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829905"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563581"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprendre le schéma de recherche avancé dans Microsoft Defender pour le point de terminaison
 
@@ -50,7 +50,7 @@ Lors de la construction de requêtes, utilisez la référence de schéma intégr
 
 Pour accéder rapidement à la  référence de schéma, sélectionnez l’action de référence Afficher en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner une **référence de schéma** pour rechercher une table.
 
-![Image montrant comment accéder à la référence de schéma dans le portail](images/ah-reference.png)
+![Image montrant comment accéder à la référence de schéma dans le portail.](images/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>Découvrir les tableaux de schéma
 
@@ -83,11 +83,11 @@ Les noms de table et de colonne sont également répertoriés dans le Centre de 
 |
 
 > [!TIP]
-> Utilisez la recherche avancée [dans Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) pour la recherche de menaces à l’aide des données de Defender pour endpoint, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité. [Activer Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+> Utilisez [le hunting avancé dans Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) pour la recherche de menaces à l’aide des données de Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security et Microsoft Defender for Identity. [Activer Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
 En savoir plus sur la façon de déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender dans Migrer des requêtes de recherche avancée à partir de [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)

@@ -16,12 +16,12 @@ ms.collection:
 description: Découvrez comment Coffre documents dans Microsoft 365 E5 ou Microsoft 365 E5 Sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd9928034c8043f7852df0eeecdae870c9393c66
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b1009e3c8e75497b32222b61b95810d7a50b33d2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254931"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563329"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documents sécurisés dans Microsoft 365 E5
 
@@ -44,7 +44,7 @@ Coffre Les documents sont une fonctionnalité de Microsoft 365 E5 ou de Microsof
 
 - Vous avez besoin d’autorisations **Exchange Online** pour pouvoir suivre les procédures de cet article :
   - Pour configurer les Coffre Documents, vous devez être membre  des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
-  - Pour accéder en lecture seule aux paramètres Coffre Documents, vous  devez être membre des groupes de rôles Lecteur global ou Lecteur **de** sécurité.
+  - Pour accéder en lecture seule aux paramètres Coffre Documents, vous  devez être  membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -67,14 +67,14 @@ Les fichiers envoyés par Coffre Documents ne sont pas conservés dans Defender 
 2. Dans la page **Coffre pièces jointes,** cliquez **sur Paramètres globaux.**
 
 3. Dans le **volant des paramètres globaux** qui s’affiche, configurez les paramètres suivants :
-   - **Activer Coffre documents** pour Office clients : déplacez le basculement vers la droite pour activer la fonctionnalité : ![ Activer/ ](../../media/scc-toggle-on.png) Activer.
-   - Autoriser les utilisateurs à cliquer dans le affichage protégé, même si **Coffre Documents a** identifié le fichier comme malveillant : nous vous recommandons de laisser cette option désactivée (laissez le bouton bascule vers la gauche : Bascule). ![ ](../../media/scc-toggle-off.png)
+   - **Activer Coffre documents** pour Office clients : déplacez le basculement vers la droite pour activer la fonctionnalité : ![ Activer/ Activer. ](../../media/scc-toggle-on.png)
+   - Autoriser les utilisateurs à cliquer dans le affichage protégé même si **Coffre Documents a** identifié le fichier comme malveillant : nous vous recommandons de laisser cette option désactivée (laissez le bouton bascule vers la gauche : ![ Basculez. ](../../media/scc-toggle-off.png) ).
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
    ![Coffre Documents settings after selecting Global settings on the Coffre Attachments page.](../../media/safe-docs-global-settings.png)
 
-### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Utiliser Exchange Online PowerShell pour configurer Coffre documents
+### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Utiliser Exchange Online PowerShell pour configurer Coffre Documents
 
 Utilisez la syntaxe suivante :
 
