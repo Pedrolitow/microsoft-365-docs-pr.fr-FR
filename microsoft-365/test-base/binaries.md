@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 72300374c90e0142bdbf713ffee1dba40869fff3293014e1b9884d5e148fed8e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38c21f69680d6e9d6a3231c8bf2dc44f15e057f6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827577"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556503"
 ---
 # <a name="step-3-upload-your-binaries-dependencies-and-scripts"></a>Étape 3 : Télécharger vos binaires, dépendances et scripts
 
@@ -27,7 +27,7 @@ Sous cet onglet, vous allez télécharger un package zip unique contenant vos fi
 
 ## <a name="upload-package-zip-file"></a>Télécharger fichier zip de package
 
-![Télécharger vos binaires](Media/AddBinaries.png)
+![Télécharger vos binaires.](Media/AddBinaries.png)
 
   - Les dépendances téléchargées peuvent inclure des frameworks de test, des moteurs de script ou des données accessibles pour exécuter votre application ou des cas de test. Par exemple, vous pouvez charger Selenium et un programme d’installation webdriver pour vous aider à exécuter des tests basés sur le navigateur.
   - Il est préférable de s’assurer que vos activités de script restent modulaires, c’est-à-dire. 

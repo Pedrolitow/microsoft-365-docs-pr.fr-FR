@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0cb507f0d221916e73bfa7261df59d33529639f8197f70fdf88c87b708131f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a134dced8eb749bebdf7e486c6d06c9cc19048b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884494"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558961"
 ---
 # <a name="monitor-web-browsing-security"></a>Surveiller la sécurité de navigation web
 
@@ -37,11 +37,11 @@ La protection Web vous permet de surveiller la sécurité de navigation web de v
 
 - Détections de protection contre les **menaces web** au fil du temps : cette carte tendance affiche le nombre de menaces web détectées par type au cours de la période sélectionnée (30 derniers jours, 3 derniers mois, 6 derniers mois)
 
-  :::image type="content" alt-text="Image de la carte montrant les détections de protection contre les menaces web au fil du temps" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
+  :::image type="content" alt-text="Image de la carte montrant les détections de protection contre les menaces web au fil du temps." source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
 
 - **Résumé de la protection** contre les menaces web : cette carte affiche le nombre total de détections de menaces web au cours des 30 derniers jours, montrant la répartition entre les différents types de menaces web. La sélection d’une tranche ouvre la liste des domaines qui ont été trouvés avec des sites web malveillants ou indésirables.
 
-  :::image type="content" alt-text="Image de la carte montrant le résumé de la protection contre les menaces web" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
+  :::image type="content" alt-text="Image de la carte montrant le résumé de la protection contre les menaces web." source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
 
 > [!NOTE]
 > La réflexion d’un bloc dans les cartes ou la liste de domaines peut prendre jusqu’à 12 heures.
@@ -66,7 +66,7 @@ Sélectionnez une catégorie de menaces web spécifique dans la carte **récapit
 
 Sélectionnez un domaine pour afficher la liste des périphériques qui ont tenté d’accéder aux URL de ce domaine et la liste des URL.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble de la protection web](web-protection-overview.md)
 - [Filtrage du contenu web](web-content-filtering.md)

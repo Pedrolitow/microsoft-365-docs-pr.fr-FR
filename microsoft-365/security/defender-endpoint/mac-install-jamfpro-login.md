@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b439976ea0d3b0d79f98cba1a719d1210c7eb2f165d989983661aad878f978b8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1179259934dc77b29e68a8adcf49323d93bc93da
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889698"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58559057"
 ---
 # <a name="log-in-to-jamf-pro"></a>Connectez-vous à Jamf Pro
 
@@ -37,15 +37,15 @@ ms.locfileid: "53889698"
 
 1. Entrez vos informations d’identification.
 
-    ![Image de Jamf Pro dashboard1](images/jamf-pro-portal1.png)
+    ![Image de Jamf Pro dashboard1.](images/jamf-pro-portal1.png)
 
 2. Sélectionnez **Ordinateurs**.
 
-    ![Image de Jamf Pro dashboard2](images/jamf-pro-dashboard.png)
+    ![Image de Jamf Pro dashboard2.](images/jamf-pro-dashboard.png)
 
 3. Vous verrez les paramètres disponibles.
 
-     ![Image de Jamf Pro dashboard3](images/jamfpro-settings.png)
+     ![Image de Jamf Pro dashboard3.](images/jamfpro-settings.png)
 
 
 ## <a name="next-step"></a>Étape suivante

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 89c185472f9e570374a3c0ea0ee70a62a4970b89
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 79a8c8f20b2db4f1b3604c5e652c98a6c9898868
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256527"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558949"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Préparer votre posture de sécurité pour votre premier incident
 
@@ -57,9 +57,9 @@ L’automatisation est un élément essentiel de l’implémentation et de la ma
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Étape 2. Déterminer la position de sécurité de votre organisation
 
-Ensuite, les organisations peuvent utiliser le Niveau de sécurité [Microsoft](microsoft-secure-score.md) dans Microsoft 365 Defender pour déterminer votre posture de sécurité actuelle et prendre en compte des recommandations sur la façon de l’améliorer. Plus le score est élevé, plus l’organisation a mis en place de recommandations de sécurité et d’actions d’amélioration. Les recommandations de niveau de sécurité peuvent être prises sur différents produits et permettre aux organisations d’augmenter leurs scores encore plus élevés. 
+Ensuite, les organisations peuvent utiliser le niveau de sécurité [Microsoft](microsoft-secure-score.md) dans Microsoft 365 Defender pour déterminer votre posture de sécurité actuelle et prendre en compte des recommandations sur la façon de l’améliorer. Plus le score est élevé, plus l’organisation a mis en place de recommandations de sécurité et d’actions d’amélioration. Les recommandations de niveau de sécurité peuvent être prises sur différents produits et permettre aux organisations d’augmenter leurs scores encore plus élevés. 
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Exemple de Niveau de sécurité Microsoft dans le Centre de sécurité Microsoft":::
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Exemple de Niveau de sécurité Microsoft dans le Centre de sécurité Microsoft.":::
  
 ## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Étape 3. Évaluer l’exposition aux vulnérabilités de votre organisation
 
@@ -67,7 +67,7 @@ La prévention des incidents peut contribuer à rationaliser les opérations de 
 
 Pour vérifier l’avancement des correctifs logiciels, consultez la [page](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) Gestion des menaces et des vulnérabilités dans Defender pour le point de terminaison, à laquelle vous pouvez accéder à partir de Microsoft 365 Defender via l’onglet Ressources **supplémentaires.**
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Exemple de page Menace et vulnérabilité dans le Centre de sécurité Microsoft"::: 
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Exemple de page Menace et vulnérabilité dans le Centre de sécurité Microsoft."::: 
  
 ## <a name="4-understand-emerging-threats"></a>4. Comprendre les menaces émergentes
 
@@ -87,7 +87,7 @@ Veillez à consulter régulièrement la section [Analyse](threat-analytics.md) d
 
 ## <a name="next-step"></a>Étape suivante
 
-[![Étape 1 : Découvrez comment trier et analyser les incidents](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
+[![Étape 1 : Découvrez comment trier et analyser les incidents.](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
 
 Découvrez comment trier [et analyser les incidents.](first-incident-analyze.md)
 
