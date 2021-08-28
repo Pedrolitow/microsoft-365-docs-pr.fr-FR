@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser le service d’importation dans le Centre de conformité Microsoft 365 pour importer en bloc des données de messagerie (fichiers PST) dans des boîtes aux lettres utilisateur.
-ms.openlocfilehash: 48696b10e10abafa50e866e52b4601e73c746c6c
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: d885fbcf6f4b94ec7b1716c53f6d1fa541994434
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507853"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574182"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Vue d’ensemble de l’importation des fichiers PST de votre organisation
 
@@ -34,9 +34,9 @@ ms.locfileid: "58507853"
 
 Vous pouvez utiliser le service d’importation dans le Centre de conformité Microsoft 365 pour importer rapidement en bloc des fichiers PST dans des boîtes aux lettres Exchange Online de votre organisation. Il existe deux façons d’importer des fichiers PST dans Office 365 :
 
-- **Chargement réseau** ![Chargement sur le Cloud](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) : chargez les fichiers PST via le réseau vers un emplacement de stockage temporaire Azure dans le cloud Microsoft. Vous utilisez ensuite le Service d’importation Office 365 pour importer les données PST dans les boîtes aux lettres de votre organisation.
+- **Téléchargement réseau** ![ Téléchargement dans le cloud.](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) Téléchargement réseau Chargement sur le Cloud : chargez les fichiers PST via le réseau vers un emplacement de stockage temporaire Azure dans le cloud Microsoft. Vous utilisez ensuite le Service d’importation Office 365 pour importer les données PST dans les boîtes aux lettres de votre organisation.
 
-- **Expédition de disque** ![Disque dur](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) : copiez les fichiers PST sur un disque dur chiffré avec BitLocker, puis expédiez physiquement le lecteur à Microsoft. Lorsque Microsoft reçoit le disque dur, le personnel du centre de données charge les données vers un emplacement de stockage temporaire Azure dans le cloud Microsoft. Vous utilisez ensuite le Service d’importation Office 365 pour importer les données dans les boîtes aux lettres de votre organisation.
+- **Expédition de disque** ![ Disque dur.](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) Copier les fichiers PST sur un disque dur chiffré avec BitLocker, puis expédiez physiquement le lecteur à Microsoft. Lorsque Microsoft reçoit le disque dur, le personnel du centre de données charge les données vers un emplacement de stockage temporaire Azure dans le cloud Microsoft. Vous utilisez ensuite le Service d’importation Office 365 pour importer les données dans les boîtes aux lettres de votre organisation.
 
 ## <a name="step-by-step-instructions"></a>Instructions détaillées
 
@@ -50,7 +50,7 @@ Pour obtenir des instructions détaillées sur l’importation en bloc des fichi
 
 Voici une illustration et une description du processus d’importation de fichiers PST complet. L’illustration présente le flux de travail principal et met en évidence les différences entre les modes de chargement réseau et d’expédition de disque.
 
-![Flux de travail du processus d’importation de fichiers PST](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
+![Flux de travail du processus d’importation de fichiers PST.](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
 
 1. **Téléchargez les outils d’importation de fichiers PST et la clé pour l’emplacement de stockage Azure privé** : la première étape consiste à télécharger l’outil et la clé d’accès utilisés pour charger les fichiers PST ou les copier sur un disque dur. Vous les obtenez à partir de la page **Importer** dans le Centre de conformité Microsoft 365. La clé vous donne (ou au personnel du centre de données Microsoft en cas d’expédition de disque) les autorisations nécessaires pour charger des fichiers PST dans un emplacement de stockage Azure privé et sécurisé. Cette clé d’accès est propre à votre organisation et empêche l’accès non autorisé à vos fichiers PST après leur chargement dans le cloud Microsoft. Il n’est pas nécessaire que votre organisation dispose d’un abonnement Azure séparé pour importer des fichiers PST dans Microsoft 365.
 

@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Cet article fournit les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba808cb8bb4f71c22638950d22af6ede8170275ffaa8d84c00d8d2c54f383d43
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7aebf4e210c3e4feb94ec3c6deb6523e5742152c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864407"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568359"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principes de connectivité réseau Microsoft 365
 
@@ -63,7 +63,7 @@ L’objectif principal de la conception du réseau doit être de minimiser la la
 <a name="BKMK_P1"> </a>
 ### <a name="identify-and-differentiate-microsoft-365-traffic"></a>Identifier et différencier le trafic de Microsoft 365
 
-![Identifier le trafic de Microsoft 365](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
+![Identifier le trafic de Microsoft 365.](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
 L’identification du trafic réseau de Microsoft 365 est la première étape pour pouvoir différencier ce trafic du trafic réseau générique lié à Internet. La connectivité de Microsoft 365 peut être optimisée en mettant en œuvre une combinaison d’approches telles que l’optimisation de l’itinéraire réseau, les règles de pare-feu, les paramètres de proxy du navigateur et le contournement des périphériques d’inspection du réseau pour certains points de terminaison.
   
@@ -76,7 +76,7 @@ Microsoft publie désormais tous les points de terminaison Microsoft 365 en tant
 <a name="BKMK_P2"> </a>
 ### <a name="egress-network-connections-locally"></a>Connexions réseau en sortie localement
 
-![Connexions réseau en sortie localement](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![Connexions réseau en sortie localement.](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
 Le DNS local et la sortie Internet sont d’une importance cruciale pour réduire la latence de connexion et garantir que les connexions des utilisateurs s’effectuent au point d’entrée le plus proche des services Microsoft 365. Dans une topologie de réseau complexe, il est important d’implémenter ensemble le DNS local et la sortie Internet locale. Si vous souhaitez obtenir plus d’informations sur la manière dont Microsoft 365 achemine les connexions client vers le point d’entrée le plus proche, consultez l’article [Connectivité client](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
   
@@ -86,11 +86,11 @@ Dans une architecture de réseau traditionnelle, toutes les connexions Internet 
   
 Les WAN d’entreprise sont souvent conçus pour acheminer le trafic réseau vers un siège social central de l’entreprise pour inspection avant la sortie vers Internet, généralement via un ou plusieurs serveurs proxy. Le schéma ci-dessous illustre une telle topologie de réseau.
   
-![Modèle de réseau d’entreprise traditionnel](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
+![Modèle de réseau d’entreprise traditionnel.](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
   
 Comme Microsoft 365 s’exécute sur le réseau mondial Microsoft, qui comprend des serveurs frontaux dans le monde entier, il y aura souvent un serveur frontal à proximité de l’emplacement de l’utilisateur. En fournissant une sortie Internet locale et en configurant des serveurs DNS internes afin d’offrir une résolution de nom local pour les points de terminaison Microsoft 365, le trafic réseau destiné à Microsoft 365 peut se connecter aux serveurs frontaux Microsoft 365 le plus près possible de l’utilisateur. Le diagramme ci-dessous montre un exemple de topologie de réseau qui permet aux utilisateurs se connectant depuis le siège social, la succursale et les sites distants, de suivre l’itinéraire le plus court vers le point d’entrée Microsoft 365 le plus proche.
   
-![Modèle de réseau WAN avec points de sortie régionaux](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
+![Modèle de réseau WAN avec points de sortie régionaux.](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
   
 La réduction du chemin d’accès du réseau vers les points d’entrée Microsoft 365 de cette manière peut améliorer les performances de connectivité et l’expérience de l’utilisateur final dans Microsoft 365, et peut également aider à réduire l’impact des futures modifications de l’architecture réseau sur les performances et la fiabilité de Microsoft 365.
   
@@ -98,7 +98,7 @@ De plus, les requêtes DNS peuvent introduire une latence si le serveur DNS rép
   
 Bien que la sortie régionale puisse fonctionner correctement pour Microsoft 365, le modèle de connectivité optimal consisterait à toujours fournir une sortie réseau à l’emplacement de l’utilisateur, que ce soit sur le réseau de l’entreprise ou sur des sites distants comme les domiciles, les hôtels, les cafés et les aéroports. Ce modèle d'évacuation directe locale est représenté dans le diagramme ci-dessous.
   
-![Architecture du réseau de sortie local](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Architecture du réseau de sortie local.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
   
 Les entreprises qui ont adopté Microsoft 365 peuvent profiter de l’architecture de point d’entrée du service distribué du réseau mondial Microsoft en s’assurant que les connexions des utilisateurs à Microsoft 365 empruntent l’itinéraire le plus court possible vers le point d’entrée du réseau mondial Microsoft le plus proche. Pour ce faire, l’architecture du réseau de sortie local permet au trafic Microsoft 365 d’être acheminé vers la sortie la plus proche, quel que soit l’emplacement de l’utilisateur.
   
@@ -111,7 +111,7 @@ L’architecture de sortie locale présente les avantages suivants par rapport a
 <a name="BKMK_P3"> </a>
 ### <a name="avoid-network-hairpins"></a>Éviter les épingles de réseau
 
-![Évitez les épingles](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
+![Évitez les épingles.](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
 En règle générale, l’itinéraire le plus court et le plus direct entre l’utilisateur et le point de terminaison Microsoft 365 le plus proche offrira les meilleures performances. Une épingle de réseau se produit lorsque le trafic WAN ou VPN, lié à une destination particulière, est d’abord dirigé vers un autre emplacement intermédiaire (comme la pile de sécurité, le courtier d’accès au cloud, d’une passerelle web basée sur le cloud), introduisant une latence et une redirection potentielle vers un point de terminaison géographiquement éloigné. Les épingles de réseau peuvent également être causées par des inefficacités de routage/apparaige ou des recherches DNS sous-optimales (à distance).
   
@@ -124,7 +124,7 @@ En raison du grand nombre d’emplacements distribués avec des points d’entr�
 <a name="BKMK_P4"> </a>
 ### <a name="assess-bypassing-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Évaluer les proxys de contournement, les dispositifs d’inspection du trafic et les technologies de sécurité en double
 
-![Contourner les proxys, les dispositifs d’inspection du trafic et les technologies de sécurité en double](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
+![Contourner les proxys, les dispositifs d’inspection du trafic et les technologies de sécurité en double.](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
 Les clients d’entreprise doivent examiner leurs méthodes de sécurité réseau et de réduction des risques spécifiquement pour le trafic lié à Microsoft 365 et utiliser les fonctionnalités de sécurité Microsoft 365 pour réduire leur dépendance à l’égard des technologies de sécurité réseau intrusives, qui impactent les performances et sont coûteuses pour le trafic réseau Microsoft 365.
   

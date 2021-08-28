@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f896888a90e855926fc8840f4bd936819ed25142
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f12a416a95f55a73bd0bbd80bfb1a4fe5121aeec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258549"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575899"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -72,7 +72,7 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
-  **Remarques** :
+  **Remarques** :
 
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
@@ -85,7 +85,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
 1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
-2. Dans la page **Stratégies anti-courrier indésirable**, cliquez sur l’![icône Créer](../../media/m365-cc-sc-create-icon.png) **Créer une stratégie**, puis sélectionnez **Entrant** dans la liste déroulante.
+2. Dans la page **Stratégies anti-courrier indésirable**, cliquez sur l’![icône Créer.](../../media/m365-cc-sc-create-icon.png) **Créer une stratégie**, puis sélectionnez **Entrant** dans la liste déroulante.
 
 3. L’assistant d'application de stratégies s’ouvre. Sur la page **Nommer votre stratégie**, configurez les paramètres suivants :
    - **Nom** Entrez un nom unique et descriptif pour la stratégie.
@@ -98,7 +98,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
    - **Groupes** : groupes de distribution, groupes de sécurité à extension messagerie ou groupes Microsoft 365 spécifiés dans votre organisation.
    - **Domaines** : tous les destinataires des [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) spécifiés dans votre organisation.
 
-   Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+   Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
    Pour les utilisateurs ou les groupes, vous pouvez utiliser la plupart des identificateurs (nom, nom d’affichage, alias, adresse e-mail, nom de compte, etc.), mais le nom d'affichage correspondant apparaît dans les résultats. Pour les utilisateurs, entrez un astérisque (\*) seul pour afficher toutes les valeurs disponibles.
 
@@ -123,9 +123,9 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
       <sup>\*</sup> **Contient des langues spécifiques** et **À partir de ces pays** ne font pas partie des paramètres ASF.
 
-   - **Contient des langues spécifiques** : cliquez sur la zone et sélectionnez **Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’une langue dans la zone. Une liste filtrée des langues prises en charge s’affiche. Lorsque vous avez trouvé la langue que vous recherchez, sélectionnez-la. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur ![Supprimer un icône](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+   - **Contient des langues spécifiques** : cliquez sur la zone et sélectionnez **Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’une langue dans la zone. Une liste filtrée des langues prises en charge s’affiche. Lorsque vous avez trouvé la langue que vous recherchez, sélectionnez-la. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur l’![icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) suivant la valeur.
 
-   - **Parmi ces pays** _ : cliquez sur la zone et sélectionnez *Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’un pays dans la zone. Une liste filtrée des pays pris en charge s’affiche. Lorsque vous trouvez le pays que vous recherchez, sélectionnez-le. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur ![Supprimer un icône](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+   - **Parmi ces pays** _ : cliquez sur la zone et sélectionnez *Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’un pays dans la zone. Une liste filtrée des pays pris en charge s’affiche. Lorsque vous trouvez le pays que vous recherchez, sélectionnez-le. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur l’![icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) suivant la valeur.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -140,7 +140,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
      Les actions disponibles pour les verdicts de filtrage du courrier indésirable sont décrites dans le tableau suivant.
 
-     - Une coche ( ![Coche](../../media/checkmark.png)) indique que l’action est disponible (toutes les actions ne sont pas disponibles pour les verdicts).
+     - Une coche ( ![Marque de vérification.](../../media/checkmark.png)) indique que l’action est disponible (toutes les actions ne sont pas disponibles pour les verdicts).
      - Un astérisque ( <sup>\*</sup> ) après la coche indique l’action par défaut pour le verdict de filtrage du courrier indésirable.
 
      <br>
@@ -149,12 +149,12 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
      |Action|Courrier indésirable|Élevé<br>confiance<br>courrier indésirable|Hameçonnage|Élevé<br>confiance<br>hameçonnage|Courrier en nombre|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Déplacer le message vers le dossier Courrier indésirable**: le message est remis dans la boîte aux lettres et déplacé vers le dossier Courrier indésirable.<sup>1</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|
-     |**Ajouter un en-tête X** : ajoute un en-tête X à l’en-tête du message et remet le message dans la boîte aux lettres. <p> Vous devez entrer le nom du champ d’en-tête X (et non la valeur) plus loin dans la zone **Ajouter ce texte d’en-tête X**. <p> Pour les verdicts de **Courrier indésirable** et **Courrier indésirable à haute fiabilité**, le message est déplacé vers le dossier Courrier indésirable.<sup>1, 2</sup>|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
-     |**Ajouter la ligne d’objet avec le texte**: ajoute du texte au début de la ligne d’objet du message. Le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable.<sup>1, 2</sup> <p> Vous devez entrer le texte plus loin dans la zone **Ligne d’objet préfixe avec ce texte**.|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
-     |**Rediriger le message vers une adresse e-mail**: envoie le message à une adresse e-mail spécifiée au lieu des destinataires prévus. <p> Spécifiez l'adresse de redirection dans la zone d'entrée **Rediriger vers cette adresse de messagerie**.|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
-     |**Supprimer le message**: supprime le message entier, pièces jointes comprises.|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
-     |**Mettre en quarantaine le message**: Envoie le message en quarantaine au lieu de le remettre à ses destinataires. <p> Vous pouvez spécifier la durée de la mise en quarantaine ultérieure du message dans la boîte de dialogue de la mise en **Quarantaine**.|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)|
+     |**Déplacer le message vers le dossier Courrier indésirable**: le message est remis dans la boîte aux lettres et déplacé vers le dossier Courrier indésirable.<sup>1</sup>|![Marque de vérification](../../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../../media/checkmark.png)<sup>\*</sup>|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|
+     |**Ajouter un en-tête X** : ajoute un en-tête X à l’en-tête du message et remet le message dans la boîte aux lettres. <p> Vous devez entrer le nom du champ d’en-tête X (et non la valeur) plus loin dans la zone **Ajouter ce texte d’en-tête X**. <p> Pour les verdicts de **Courrier indésirable** et **Courrier indésirable à haute fiabilité**, le message est déplacé vers le dossier Courrier indésirable.<sup>1, 2</sup>|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
+     |**Ajouter la ligne d’objet avec le texte**: ajoute du texte au début de la ligne d’objet du message. Le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable.<sup>1, 2</sup> <p> Vous devez entrer le texte plus loin dans la zone **Ligne d’objet préfixe avec ce texte**.|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
+     |**Rediriger le message vers une adresse e-mail**: envoie le message à une adresse e-mail spécifiée au lieu des destinataires prévus. <p> Spécifiez l'adresse de redirection dans la zone d'entrée **Rediriger vers cette adresse de messagerie**.|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+     |**Supprimer le message**: supprime le message entier, pièces jointes comprises.|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
+     |**Mettre en quarantaine le message**: Envoie le message en quarantaine au lieu de le remettre à ses destinataires. <p> Vous pouvez spécifier la durée de la mise en quarantaine ultérieure du message dans la boîte de dialogue de la mise en **Quarantaine**.|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)|
      |**Aucune action**|||||![Coche](../../media/checkmark.png)|
      |
 
@@ -164,7 +164,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      >
      > <sup>2</sup> Vous pouvez utiliser cette valeur comme condition dans les règles de flux de courrier (ou règles de transport) pour filtrer ou acheminer le message.
 
-   - **Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** : indique la durée de la mise en quarantaine du message si vous avez sélectionné **Message de quarantaine** comme action pour le verdict de filtrage du courrier indésirable. Une fois la période écoulée, le message est supprimé. La valeur par défaut est de 30 jours. Une valeur valide est comprise entre 1 et 30 jours. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes :
+   - **Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** : indique la durée de la mise en quarantaine du message si vous avez sélectionné **Message de quarantaine** comme action pour le verdict de filtrage du courrier indésirable. Une fois la période écoulée, le message est supprimé. La valeur par défaut est de 30 jours. Une valeur valide est comprise entre 1 et 30 jours. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes:
 
      - [Messages mis en quarantaine dans Exchange Online PowerShell](quarantine-email-messages.md)
      - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell](manage-quarantined-messages-and-files.md)
@@ -191,7 +191,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      - **Activer ZAP pour les messages de hameçonnage** : par défaut, l’option ZAP est activée pour les détections d’hameçons, mais vous pouvez la désactiver en désactivant la case à cocher.
      - **Activer ZAP pour les courriers indésirables** : par défaut, l’option ZAP est activée pour les détections de courrier indésirable, mais vous pouvez la désactiver en désactivant la case à cocher.
 
-   - **Activer les notifications de courrier indésirable de l’utilisateur final** : pour plus d’informations, consultez la section [Configurer les notifications de courrier indésirable de l’utilisateur final](#configure-end-user-spam-notifications) plus loin dans cette rubrique.
+   - **Activer les notifications de courrier indésirable de l’utilisateur final** : Pour plus d’informations, consultez la section [Configurer les notifications de courrier indésirable de l’utilisateur final](#configure-end-user-spam-notifications) plus loin dans cette rubrique.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -220,15 +220,15 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
    2. Dans le menu volant qui s’affiche, procédez comme suit :
       1. Cliquez sur ![Créer une icône](../../media/m365-cc-sc-create-icon.png) **Ajouter des expéditeurs** ou **Ajouter des domaines**.
       2. Dans le menu volant **Ajouter des expéditeurs** ou **Ajouter des domaines** qui s’affiche, entrez l’adresse e-mail de l’expéditeur dans la zone **Expéditeur** ou le domaine dans la zone **Domaine**. Lorsque vous tapez, la valeur s’affiche sous la zone. Lorsque vous avez fini de taper l’adresse e-mail ou le domaine, sélectionnez la valeur sous la zone.
-      3. Répétez l’étape précédente autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+      3. Répétez l’étape précédente autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
       Lorsque vous avez terminé, cliquez sur **Ajouter des expéditeurs** ou **Ajouter des domaines**.
 
       Dans le menu volant principal, les expéditeurs ou domaines que vous avez ajoutés sont répertoriés sur la page. Pour supprimer une entrée de cette page, procédez comme suit :
 
       1. Sélectionnez une ou plusieurs entrées dans la liste. Vous pouvez également utiliser la zone de **Recherche** pour rechercher des valeurs dans la liste.
-      2. Après avoir sélectionné au moins une entrée, l’icône Supprimer ![Icône Supprimer](../../media/m365-cc-sc-delete-icon.png) s’affiche.
-      3. Cliquez sur l’icône Supprimer ![Icône Supprimer](../../media/m365-cc-sc-delete-icon.png) pour supprimer les entrées sélectionnées.
+      2. Après avoir sélectionné au moins une entrée, l’icône Supprimer ![Icône Effacer.](../../media/m365-cc-sc-delete-icon.png) s’affiche.
+      3. Cliquez sur l’icône Supprimer ![Icône Effacer.](../../media/m365-cc-sc-delete-icon.png) pour supprimer les entrées sélectionnées.
 
       Lorsque vous avez terminé, cliquez sur **Terminé**.
 
@@ -280,8 +280,8 @@ Vous ne pouvez pas désactiver la stratégie anti-courrier indésirable par déf
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom.
 
 3. En haut du menu volant des détails de stratégie qui s’affiche, vous verrez l’une des valeurs suivantes :
-   - **Stratégie désactivée** : pour activer la stratégie, cliquez sur ![Icône Activer](../../media/m365-cc-sc-turn-on-off-icon.png) **Activer**.
-   - **Stratégie activée** : pour activer la stratégie, cliquez sur ![Icône Désactiver](../../media/m365-cc-sc-turn-on-off-icon.png) **Désactiver**.
+   - **Stratégie désactivée** : Pour activer la stratégie, cliquez sur l’![icône Activer.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activer**.
+   - **Stratégie sur**: Pour désactiver la stratégie,cliquez sur ![l’icône Désactiver.](../../media/m365-cc-sc-turn-on-off-icon.png) **Désactiver**.
 
 4. Dans la boîte de dialogue de confirmation qui s’affiche, cliquez sur **Activer** ou **Désactiver**.
 
@@ -315,6 +315,9 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 
 ### <a name="configure-end-user-spam-notifications"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final
 
+> [!NOTE]
+> Les notifications de courrier indésirable de l’utilisateur final ne sont pas prises en charge pour les groupes.
+
 Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quarantaine, vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour informer les destinataires de qu’il est advenu des messages qui leur ont été envoyés. Pour plus d’informations sur ces notifications, voir [Notifications de courrier indésirable à l’utilisateur final dans Exchange Online PowerShell](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
@@ -346,7 +349,7 @@ Lorsque vous utilisez le Portail Microsoft 365 Defender pour supprimer une strat
 
 1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
-2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom. En haut du menu volant Détails de la stratégie qui s’affiche, cliquez sur l’![Icône Autres actions](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** \> ![Icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png) **Supprimer la stratégie**.
+2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom. En haut du menu volant des détails de la stratégie qui s’affiche, cliquez sur l’![icône Autres actions. ](../../media/m365-cc-sc-more-actions-icon.png) **Plus d’actions**\>![icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png)**Supprimer la stratégie**.
 
 3. Dans la boîte de dialogue de confirmation qui s'affiche, cliquez sur **Oui**.
 
@@ -375,7 +378,7 @@ La création d’une stratégie anti-courrier indésirable dans PowerShell est u
 1. Créez la stratégie de filtrage du courrier indésirable.
 2. Créez la règle de filtrage du courrier indésirable qui spécifie la stratégie de filtrage du courrier indésirable à laquelle la règle s’applique.
 
- **Remarques** :
+ **Remarques** :
 
 - Vous pouvez créer une règle de filtrage de courrier indésirable et lui affecter une stratégie de filtrage de courrier indésirable existante, non associée. Une règle de filtrage anti-courrier indésirable ne peut pas être associée à plusieurs stratégies de filtrage de courrier indésirable.
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de filtrage anti-courrier indésirable dans PowerShell qui ne sont pas disponibles dans le Portail Microsoft 365 Defender tant que vous n’avez pas créé la stratégie :
@@ -557,7 +560,7 @@ Cet exemple définit la priorité de la règle nommée Marketing Department sur 
 Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Remarque: pour définir la priorité d'une nouvelle règle lors de sa création, utilisez le paramètre _Priorité_ dans l’applet de commandes **New-HostedContentFilterRule**.
 - La stratégie de filtrage anti-courrier indésirable par défaut ne possède pas de règle de filtrage de courrier indésirable correspondante et contient toujours la valeur de priorité non modifiable **La plus faible**.

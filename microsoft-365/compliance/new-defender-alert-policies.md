@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Nous publions de nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365. Nous mettons également remplacé deux stratégies d’alerte existantes qui ont été mises hors service.
-ms.openlocfilehash: 5c4edbb59d3328bb933825ab6a85ab561db93741
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 130bcb9c8511de1f18a8711561bbe6a15544f810
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255358"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564009"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365
 
@@ -85,17 +85,17 @@ Les nouvelles alertes seront lancées et déclencheront les Enquêtes et répons
 
   - **Messages de courrier contenant un programme malveillant supprimé après la remise** ET **Messages de courrier contenant un fichier malveillant supprimé après la remise**
 
-  ![Paires d’alertes pour les alertes existantes et nouvelles](../media/DefenderAlerts.png)
+  ![Paires d’alertes pour les nouvelles alertes et les alertes existantes.](../media/DefenderAlerts.png)
 
    Pour plus d’informations sur la gestion de ces paires d’alertes, voir la section [Ce que vous devez faire pour vous préparer à ces changements](#what-you-need-to-do-to-prepare-for-these-changes).
 
 - **Enquêtes et réponses automatisées (AIR)** : les alertes seront corrélées dans une seule enquête AIR, l’une des alertes étant classée en tant que « déclenchante » et l’autre en tant que « répétée ».
 
-  ![Paires d’alertes dans les enquêtes AIR](../media/AIRAlerts.png)
+  ![Paires d’alertes dans les enquêtes AIR.](../media/AIRAlerts.png)
 
 - **Incidents** : les deux alertes seront corrélées dans le même incident.
 
-  ![Paires d’alertes dans les incidents](../media/IncidentsAlerts.png)
+  ![Paires d’alertes dans les incidents.](../media/IncidentsAlerts.png)
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Ce que vous devez faire pour vous préparer à ces changements
 

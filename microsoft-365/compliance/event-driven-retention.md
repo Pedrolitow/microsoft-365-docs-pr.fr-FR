@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Dans une solution de gestion des enregistrements, vous pouvez généralement configurer une étiquette de rétention pour démarrer la période de rétention sur la base d’un événement que vous identifiez.
-ms.openlocfilehash: 9f5ca3c0941d2f7c72d72da34d1a840ecf42c68e
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e5be01ed75468d97c0cadf229512bce2f90efea5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531526"
+ms.locfileid: "58567047"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Débuter la rétention lorsqu’un événement se produit
 
@@ -56,9 +56,9 @@ Les étiquettes de rétention basées sur un événement possèdent les mêmes f
 
 Pour utiliser avec succès la rétention basée sur les événements, il est important de comprendre la relation entre les types d'événements, les étiquettes de rétention, les événements et les identifications d'actifs comme l'illustrent les diagrammes et l'explication qui suit : 
   
-![Diagramme 1 de 2 : Type d'événement, étiquettes, événements et identification des actifs](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
+![Diagramme 1 de 2 : Type d'événement, étiquettes, événements et identification des actifs.](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
-![Diagramme 2 de 2 : Type d'événement, étiquettes, événements et identification des actifs](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
+![Diagramme 2 de 2 : Type d'événement, étiquettes, événements et identification des actifs.](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
 1. Créez des étiquettes de rétention pour différents types de contenu et associez-les à un type d’événement. Par exemple, les étiquettes de rétention pour différents types de fichiers et d’enregistrements de produit sont associées à un type d’événement nommé Durée de vie des produits, car ces enregistrements doivent être conservés pendant 10 ans à compter de la fin de vie du produit.
     
@@ -82,7 +82,7 @@ Enfin, n’oubliez pas que chaque étiquette de rétention a ses propres paramè
 
 Flux de travail général pour la rétention basée sur un événement :
   
-![Diagramme du flux de travail de la configuration des rétentions basées sur des événements](../media/event-based-retention-process.png)
+![Diagramme du flux de travail de la configuration des rétentions basées sur des événements.](../media/event-based-retention-process.png)
   
 > [!TIP]
 > Consultez [Gérer le cycle de vie des documents sauvegardés sur SharePoint avec des étiquettes de rétention](auto-apply-retention-labels-scenario.md) pour un scénario détaillé sur l’utilisation de propriétés gérées dans SharePoint afin d'appliquer automatiquement des étiquettes de rétention et exécuter la rétention basée sur un événement.
@@ -91,7 +91,7 @@ Flux de travail général pour la rétention basée sur un événement :
 
 Pour créer et configurer votre étiquette de rétention, utilisez les instructions pour [Créer des étiquettes de rétention](./create-apply-retention-labels.md#step-1-create-retention-labels). Mais pour ce qui est de la rétention basée sur un événement, sur la **page Définir les paramètres de  rétention** de l'assistant Créer une étiquette de rétention, après **Démarrer la période de rétention basée sur**, sélectionnez un des types d'événements par défaut dans la liste déroulante, ou créez le vôtre en sélectionnant **Créer un nouveau type d'événement**:
 
-![Créer un nouveau type d’événement pour une étiquette de rétention](../media/SPRetention6.png)
+![Créer un nouveau type d’événement pour une étiquette de rétention.](../media/SPRetention6.png)
 
 Un type d’événement est simplement une description générale d’un événement auquel vous voulez associer une étiquette de rétention.
 
@@ -135,13 +135,13 @@ Une fois qu’une étiquette basée sur un événement a été appliquée au con
     
 L’ID d’élément constitue simplement une autre propriété de document qui est disponible dans SharePoint et OneDrive. Votre organisation utilise peut-être déjà d’autres ID et propriétés de document pour classer le contenu. Le cas échéant, vous pouvez également utiliser ces propriétés et valeurs lorsque vous créez un événement (voir l’étape 6, plus bas). L’essentiel est que vous utilisez une combinaison *propriété:valeur* dans les propriétés du document pour associer cet élément à un type d’événement.
   
-![Zone de texte pour saisir un ID d’élément](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
+![Zone de texte pour saisir un ID d’élément.](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>Étape 5 : créer un événement
 
 Lorsqu’une instance précise de ce type d’événement se produit (par exemple, un produit arrive en fin de vie), accédez à la page **Gestions des enregistrements** > **Événements** dans le Centre de conformité Microsoft 365, et sélectionnez **+ Créer** pour créer un événement. Vous devez déclencher un événement en le créant en cliquant ici..
 
-![Créer un événement pour déclencher le démarrage de la rétention pour les étiquettes de rétention basée sur les événements](../media/create-event-records-management.png)
+![Créer un événement pour déclencher le démarrage de la rétention pour les étiquettes de rétention basée sur les événements.](../media/create-event-records-management.png)
 
 Jusqu’à un million d’événements sont pris en charge par client.
 
@@ -149,7 +149,7 @@ Jusqu’à un million d’événements sont pris en charge par client.
 
 Lorsque vous créez l’événement, choisissez le même type d'événement que celui spécifié dans les paramètres de l’étiquette de rétention à l’étape 2. Par exemple, si vous avez sélectionné **Durée de vie du produit** comme type d'événement pour les paramètres de l’étiquette, sélectionnez **Durée de vie du produit** lorsque vous créez l'événement. La période de rétention sera déclenchée uniquement pour le contenu auquel sont appliquées des étiquettes de rétention de ce type d’événement.
 
-![Option dans les paramètres d’événement permettant de choisir un type d’événement](../media/choose-event-type-records-management.png)
+![Option dans les paramètres d’événement permettant de choisir un type d’événement.](../media/choose-event-type-records-management.png)
 
 Par ailleurs, si vous devez créer un événement pour plusieurs étiquettes de rétention qui ont différents types d'événements, sélectionnez l'option **Choisir les étiquettes existantes**. Sélectionnez ensuite les étiquettes configurées pour les types d’événements que vous voulez associer à cet événement.
 
@@ -167,7 +167,7 @@ Votre organisation a peut-être appliqué d’autres propriétés et ID aux docu
 
 Enfin, sélectionnez la date à laquelle l’événement est survenu. Cette date est utilisée comme point de départ de la période de rétention. Après avoir créé un événement, la date de cet événement est synchronisée avec tout le contenu portant une étiquette de rétention de ce type d’événement, un ID de ressource et des mots clés ou requêtes. Comme pour toute étiquette de rétention, cette synchronisation peut prendre jusqu’à sept jours.
   
-![Page Paramètres des événements](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
+![Page Paramètres des événements.](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
 Une fois que vous avez créé un événement, les paramètres de rétention prennent effet pour le contenu déjà étiqueté et indexé. Si l’étiquette de rétention est ajoutée au nouveau contenu une fois l’événement créé, vous devez créer un événement avec les mêmes détails.
 
@@ -226,9 +226,9 @@ Les événements qui sont créés automatiquement peuvent être confirmés en le
 
 Créez un flux qui crée un événement en utilisant l’API REST Microsoft 365 :
 
-![Utilisation le flux pour créer un événement](../media/automate-event-driven-retention-flow-1.png)
+![Utilisation du fux pour créer un événement.](../media/automate-event-driven-retention-flow-1.png)
 
-![Utilisation du flux pour appeler des API REST](../media/automate-event-driven-retention-flow-2.png)
+![Utilisation du flux pour appeler des API REST.](../media/automate-event-driven-retention-flow-2.png)
 
 #### <a name="create-an-event"></a>Créer un événement
 

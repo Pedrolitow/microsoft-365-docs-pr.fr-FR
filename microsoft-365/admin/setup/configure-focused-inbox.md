@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: Si vous êtes chargé de la configuration des paramètres de messagerie pour tout le monde dans une entreprise, cette article explique comment configurer la Boîte de réception Prioritaire pour les utilisateurs.
-ms.openlocfilehash: 3e296bbfd45955cf7ba97a90e565be3ec6d4412f
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 6bc33211af5ee0cd064b63f95e720f19cee196e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394539"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567807"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurez la boîte de réception Prioritaire pour tous les membres de votre organisation
 
@@ -122,13 +122,13 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
-2. Accédez à **Flux de messagerie** \> **Règles**. Cliquez sur ![Ajouter icône EAC](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif), puis sélectionnez **Créer une règle...** 
+2. Accédez à **Flux de messagerie** \> **Règles**. Sélectionnez ![ L’icône Ajouter du CAE.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) puis sélectionnez **Créer une règle...** 
 
 3. Après avoir créé la règle, cliquez sur **Enregistrer** pour démarrer la règle.
 
     L'image suivante présente un exemple permettant de remettre tous les messages des « Ressources Humaines » dans la boîte de réception Prioritaire.
 
-    ![paie focusedinbox](../../media/focusedinbox-transport-rule.PNG)
+    ![paie focusedinbox.](../../media/focusedinbox-transport-rule.PNG)
 
     > [!NOTE]
     > Dans cet exemple, le texte de la valeur de l’en-tête du message est **X-MS-Exchange-Organization-BypassFocusedInbox**.

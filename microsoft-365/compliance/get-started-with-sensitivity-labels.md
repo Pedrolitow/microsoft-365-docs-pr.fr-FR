@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 88eee1b57e7203a0407238c55e9b0c5307bf0bcb20ace02f00429b77d2402639
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f53adddf19b3b09794c65d5157aeb1f8338008e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895371"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566867"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -46,7 +46,7 @@ Lorsque vous êtes prêt à protéger les données de votre organisation en util
 
 Flux de base pour le déploiement et l'application d'étiquettes de confidentialité :
 
-![Diagramme illustrant le flux de travail des étiquettes de confidentialité](../media/Sensitivity-label-flow.png)
+![Diagramme illustrant le flux de travail des étiquettes de confidentialité.](../media/Sensitivity-label-flow.png)
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Configuration requise pour les abonnements et les licences pour les étiquettes de confidentialité
 
@@ -71,7 +71,7 @@ Une stratégie réussie pour le déploiement d’étiquettes de confidentialité
 
 En utilisant le tableau de la section suivante, nous vous recommandons d’identifier un ou deux de vos principaux scénarios correspondant aux besoins d’entreprise qui ont le plus d’impact. Une fois ces scénarios déployés, revenez à la liste pour identifier une ou deux prochaines priorités pour le déploiement.
 
-Vous trouverez des conseils généraux sur le déploiement dans le guide téléchargeable sur la protection contre la perte de données et l’accélération de déploiement de Microsoft Information Protection. Si vous souhaitez obtenir plus d’informations, voir le billet de blog, [Guide d’accélération du déploiement de Microsoft 365 Information Protection et de la conformité](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404).
+Vous trouverez des conseils supplémentaires de déploiement général et les meilleures pratiques dans le [Guide d’accélération du déploiement pour Microsoft Information Protection et la protection contre la perte de données](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/), l’une des ressources du site [Customer Acceleration Team (CAT)](https://microsoft.github.io/ComplianceCxE/).
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Scénarios courants relatifs aux étiquettes de confidentialité
 

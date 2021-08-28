@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Liste de références des enregistrements système de nom de domaine externe à utiliser lorsque vous planifiez d’un déploiement Office 365.
-ms.openlocfilehash: e3f66326d314246b3cde5c88dfc00ea394d8119e92cf9dcd14840f559aa7cd6f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e54a25aef956784fd74ad65dc54357ea3db0f57c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53849190"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568924"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Enregistrements DNS externes pour Office 365
 
-![Domaine](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
+![Domain.](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
 
 **Vous voulez afficher une liste personnalisée des enregistrements DNS pour votre organisation Office 365 ?** Vous pouvez [trouver ici les informations nécessaires pour créer des enregistrements DNS Office 365](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) pour votre domaine dans Office 365.  
 

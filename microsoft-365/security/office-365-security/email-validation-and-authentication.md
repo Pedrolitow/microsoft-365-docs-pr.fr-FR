@@ -19,12 +19,12 @@ localization_priority: Priority
 description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38fccc89b7fa3717bd000a23a61b1cf6b69e10488756678d862598f290cf1832
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4662b036ebc92f69e4cba1c1a7b6c8d8231a4b2c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56799379"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575719"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
@@ -54,7 +54,7 @@ Toutefois, les enregistrements DNS pour SPF, DKIM et DMARC (appelés stratégie
 
 Depuis le mois de mars 2018, seuls 9 % des domaines des entreprises figurant au classement Fortune 500 ont publié des stratégies d’authentification de messagerie électronique fortes. Les 91 % d'entreprises restantes peuvent être usurpées par un intrus. À moins qu'un autre mécanisme de filtrage de messagerie électronique ne soit en place, le courrier électronique provenant d'expéditeurs usurpés dans ces domaines peut être transmis aux utilisateurs.
 
-![Stratégies DMARC des entreprises du classement Fortune 500](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![Stratégies DMARC des entreprises de Fortune 500](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 La proportion de petites et moyennes entreprises qui publient des stratégies d’authentification de messagerie robustes est moindre. Et ce nombre est encore plus faible pour les domaines de messagerie en dehors de l’Amérique du Nord et de l’Europe de l’ouest.
 

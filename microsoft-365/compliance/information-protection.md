@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implémentez Microsoft Information Protection (MIP) pour vous permettre de protéger les informations sensibles où qu’elles se trouvent.
-ms.openlocfilehash: 76e2da01dd9fbcbb7d053b61b515aeb998d86c5147893a822dfa2695e43f58a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8b576ca7f6fd3914d160592c0d1e34d20c3bdcc1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860779"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567435"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection dans Microsoft 365.
 
@@ -33,7 +33,7 @@ Implémentez Microsoft Information Protection (MIP) pour vous permettre de déco
 
 Les fonctionnalités MIP sont incluses dans la Conformité Microsoft 365 et vous donnent les outils nécessaires pour vous permettre de [connaître vos données](#know-your-data), [protéger vos données](#protect-your-data) et [éviter la perte de vos données](#prevent-data-loss).
 
-![Image qui illustre la façon dont MIP vous permet de découvrir, de classifier et de protéger les données sensibles](../media/powered-by-intelligent-platform.png)
+![Image qui illustre la façon dont MIP vous permet de découvrir, de classifier et de protéger les données sensibles.](../media/powered-by-intelligent-platform.png)
 
 Si vous souhaitez en savoir plus sur la gestion de vos données, consultez l’article [Gouvernance des données Microsoft dans Microsoft 365](manage-Information-governance.md).
 

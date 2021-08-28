@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les enregistrements pour vous aider à implémenter une solution de gestion des enregistrements dans Microsoft 365.
-ms.openlocfilehash: be85632bb4b85231f3a95680c960846fa245d97a
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 5e77d38ed6e3b122ceb85a6cff901a09dbe782d1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506525"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574963"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive
 
@@ -53,14 +53,14 @@ Le contrôle de version d’enregistrement est disponible automatiquement pour t
 Lorsque le document est déverrouillé, les utilisateurs disposant des autorisations de modification standard peuvent modifier le fichier. Toutefois, les utilisateurs ne peuvent pas supprimer le fichier, car il est encore considéré comme un enregistrement. Lorsque la modification est terminée, un utilisateur peut basculer vers la bascule de l’**État de l’enregistrement** de **Déverrouillé** vers **Verrouillé**, ce qui empêche les modifications ultérieures dans ce statut.
 <br/><br/>
 
-![Propriété statut de l’enregistrement sur le document marqué en tant qu’enregistrement](../media/recordversioning8.png)
+![Propriété statut de l’enregistrement sur le document marqué en tant qu’enregistrement.](../media/recordversioning8.png)
 
 ## <a name="locking-and-unlocking-a-record"></a>Verrouillage et déverrouillage d'un enregistrement
 
 Lorsqu’une étiquette de rétention qui marque le contenu en tant qu’enregistrement est appliquée à un document, tous les utilisateurs ayant des autorisations de collaboration ou un niveau d'autorisation plus réduit peuvent déverrouiller un enregistrement ou verrouiller un enregistrement déverrouillé.
 <br/><br/>
 
-![Le statut de l’enregistrement indique que le document enregistré est déverrouillé](../media/recordversioning9.png)
+![Le statut de l’enregistrement indique que le document enregistré est déverrouillé.](../media/recordversioning9.png)
 
 Lorsqu’un utilisateur déverrouille un enregistrement, il se produit les actions suivantes :
 
@@ -81,7 +81,7 @@ Lorsqu’un utilisateur verrouille un enregistrement, le document d’origine ne
 Chaque fois qu’un utilisateur déverrouille un enregistrement, la version la plus récente est copiée dans la bibliothèque de conservation et de préservation des documents et cette version contient la valeur **Enregistrement** dans le champ **Commentaires** de l’historique des versions.
 <br/><br/>
 
-![Enregistrement affiché dans la bibliothèque de conservation et de préservation](../media/recordversioning10.png)
+![Enregistrement affiché dans la bibliothèque de conservation et de préservation.](../media/recordversioning10.png)
 
 Pour afficher l’historique des versions, sélectionnez un document dans la bibliothèque de documents, puis cliquez sur **Historique des versions** dans le menu élément.
 
@@ -94,7 +94,7 @@ Les enregistrements sont stockés dans le dossier Enregistrements de la biblioth
 
 <br/><br/>
 
-![Dossier Enregistrements dans la bibliothèque de conservation et de préservation](../media/recordversioning12.png)
+![Le dossier Enregistrements dans la bibliothèque de conservation et de préservation.](../media/recordversioning12.png)
 
 Pour plus d’informations sur le fonctionnement de la bibliothèque de conservation et de préservation des documents, consultez [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 

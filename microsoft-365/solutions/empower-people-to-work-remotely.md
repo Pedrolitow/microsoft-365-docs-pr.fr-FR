@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: travail à domicile, travail domicile-travail, travail hybride, travail à distance, travail hybride, employés à distance, connectivité hybride, accès à distance, télécommunications, télétravail, télétravail, travail mobile, travail à distance, travail à distance, travail en tout lieu, travail flexible
 description: Traversez les couches d’infrastructure pour que vos travailleurs hybrides accèdent aux ressources locales et Microsoft 365 en toute sécurité.
-ms.openlocfilehash: f32b066d2816919687924a775b7e261ca03cb7b0253ebb9ceea2422071ec5a59
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ca2d190643b7d2bf557fcf87b4319ba4e3adc99
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833076"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566465"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configurez votre infrastructure pour le travail hybride avec Microsoft 365
 
@@ -38,7 +38,7 @@ Les travailleurs hybrides peuvent travailler sur site ou à distance dans une co
 
 Microsoft 365 offre les fonctionnalités permettant à vos travailleurs hybrides de travailler sur site ou à distance.
 
-![Confier des responsabilités aux travailleurs hybrides avec Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
+![Confier des responsabilités aux travailleurs hybrides avec Microsoft 365.](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 > [!NOTE]
 > Si vous découvrez Microsoft 365 pour la première fois, consultez [ces ressources](https://www.microsoft.com/microsoft-365).
@@ -78,7 +78,7 @@ Pour les professionnels de l’informatique qui gèrent une infrastructure sur s
 
 Pour une expérience de connexion transparente, vos comptes d’utilisateur Services de domaine Active Directory (AD DS) locaux doivent être synchronisés avec Azure Active Directory (Azure AD). Pour protéger vos appareils Windows 10, ils doivent être inscrits dans Intune. Voici un aperçu général de l’infrastructure.
 
-![Infrastructure de base pour les travailleurs hybrides avec Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![Infrastructure de base pour les travailleurs hybrides avec Microsoft 365.](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
 Pour activer les fonctionnalités de Microsoft 365 pour vos travailleurs hybrides, utilisez ces fonctionnalités Microsoft 365.
 
@@ -104,7 +104,7 @@ Pour plus d’informations sur la sécurité et la conformité, consultez [Dépl
 
 <a name="poster"></a> Pour un résumé de deux pages de cette solution, voir l’affiche [Confier des responsabilités aux travailleurs hybrides](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf).
 
-[![Affiche Autonomiser les travailleurs hybrides](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
+[![Affiche Autonomiser les travailleurs hybrides.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
 Vous pouvez également télécharger cette affiche au format [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) et l’imprimer sur du papier au format lettre, légal ou tabloïd (11 x 17).
 
@@ -127,6 +127,6 @@ Procédez comme suit pour sécuriser et optimiser l’accès aux serveurs et aux
 5. [Déployer les applications et les services de productivité des travailleurs hybrides](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Former vos employés et répondre aux commentaires sur l’utilisation](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![Étapes de configuration de votre infrastructure pour le travail hybride avec Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![Étapes de configuration de votre infrastructure pour le travail hybride avec Microsoft 365.](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
 Pour découvrir comment une organisation multinationale représentative, bien que fictive, a mis en place son infrastructure pour le travail hybride, consultez [Réponse COVID-19 et infrastructure de Contoso pour le travail hybride](contoso-remote-onsite-work.md).

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez les services de sécurité et de conformité Microsoft 365 pour protéger vos applications, données et appareils destinés aux travailleurs hybrides.
-ms.openlocfilehash: 7c3d57dbe1783ff487ec40fa5deea29899c54f696d6cb653f2f2320a41916aba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa43b2b30395def36d1c1210ef07edd379996b15
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805115"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575311"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Étape 3 : déployer la sécurité et la conformité pour les travailleurs hybrides
 
@@ -41,7 +41,7 @@ Le travail à distance nécessite les éléments suivants en matière de sécuri
 
 Voici les fonctionnalités de Microsoft 365 qui fournissent des services de sécurité et de conformité aux travailleurs hybrides.
 
-![Utilisez ces services Microsoft 365 pour maintenir votre sécurité et votre conformité](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+![Utilisez ces services Microsoft 365 pour maintenir votre sécurité et votre conformité.](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## <a name="security"></a>Sécurité
 
@@ -95,6 +95,6 @@ Pour vos travailleurs hybrides, vous avez implémenté :
 
 ## <a name="next-step"></a>Étape suivante
 
-[![Étape 4 : gérer vos appareils, PC et autres points de terminaison](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
+[![Étape 4: Gérer vos appareils, PC et autres points de terminaison.](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
 Poursuivez avec l’[étape 4](empower-people-to-work-remotely-manage-endpoints.md) pour gérer vos appareils, PC et autres points de terminaison.

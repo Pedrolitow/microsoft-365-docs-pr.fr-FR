@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: 68fa947467948a788b5902ef50b7b9d574101a3a
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: ce6de37a792c81e9d43b3d7c716629e386fca7b3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58417974"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566017"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -86,7 +86,7 @@ Vous devez tenir compte d’un certain nombre de concepts supplémentaires avant
 La gestion des appareils est une fonctionnalité qui permet d’assembler la télémétrie à partir d’appareils et de l’intégrer à des solutions de conformité Microsoft 365 telles que point de terminaison DLP et [ gestionnaire des risques Insider](insider-risk-management.md). Vous devez intégrer tous les appareils que vous voulez utiliser en tant qu’emplacements dans les stratégies DLP.
 
 > [!div class="mx-imgBorder"]
-> ![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> ![activer la gestion des appareils.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
 L’intégration et déclassement sont gérés à l’aide de scripts téléchargés à partir du centre de gestion des appareils. Le centre inclut des scripts personnalisés pour chacune de ces méthodes de déploiement :
 
@@ -97,31 +97,31 @@ L’intégration et déclassement sont gérés à l’aide de scripts téléchar
 - Scripts d’intégration VDI pour les machines non persistantes
 
 > [!div class="mx-imgBorder"]
-> ![page d’intégration d’appareils](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+> ![page d’intégration d’appareils.](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
  Utilisez les procédures décrites dans [Prise en main des points de terminaison Microsoft 365 DLP](endpoint-dlp-getting-started.md) vers les appareils intégrés.
 
 Si vous avez des appareils intégrés via [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/), ces derniers apparaissent automatiquement dans la liste des appareils.
 
 > [!div class="mx-imgBorder"]
-> ![liste des appareils gérés](../media/endpoint-dlp-learn-about-2-device-list.png)
+> ![liste des appareils gérés.](../media/endpoint-dlp-learn-about-2-device-list.png)
 
 ### <a name="viewing-endpoint-dlp-data"></a>Affichage des données DLP de point de terminaison
 
 Vous pouvez afficher les alertes liées aux stratégies DLP appliquées sur les appareils de point de terminaison en accédant au [Tableau de bord de Gestion des Alertes DLP.](dlp-configure-view-alerts-policies.md)
 
 > [!div class="mx-imgBorder"]
-> ![Information d’alerte](../media/Alert-info-1.png)
+> ![Information d’alerte.](../media/Alert-info-1.png)
 
 Vous pouvez également afficher les détails de l’événement associé avec des métadonnées complètes dans le même tableau de bord
 
 > [!div class="mx-imgBorder"]
-> ![Informations sur un événement](../media/Event-info-1.png)
+> ![Informations sur un événement.](../media/Event-info-1.png)
 
 Une fois qu’un appareil est intégré, les informations relatives aux activités auditées sont transmises dans l’Explorateur d’activités, même avant de configurer et déployer des stratégies DLP qui ont des périphériques comme emplacement.
 
 > [!div class="mx-imgBorder"]
-> ![événements DLP du point de terminaison dans l’explorateur d’activités](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> ![événements DLP du point de terminaison dans l’explorateur d’activités.](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
 Point de terminaison DLP recueille de nombreuses informations sur l’activité auditée.
 
@@ -153,7 +153,7 @@ Par exemple, si un fichier est copié sur un support USB amovible, les attributs
 - numéro de série de l’appareil multimédia amovible
 
 > [!div class="mx-imgBorder"]
-> ![copier dans les attributs d’activités usb](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+> ![copier dans les attributs d’activités usb.](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
