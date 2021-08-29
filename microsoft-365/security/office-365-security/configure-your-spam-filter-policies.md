@@ -125,7 +125,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
    - **Contient des langues spécifiques** : cliquez sur la zone et sélectionnez **Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’une langue dans la zone. Une liste filtrée des langues prises en charge s’affiche. Lorsque vous avez trouvé la langue que vous recherchez, sélectionnez-la. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur l’![icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) suivant la valeur.
 
-   - **Parmi ces pays** _ : cliquez sur la zone et sélectionnez *Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’un pays dans la zone. Une liste filtrée des pays pris en charge s’affiche. Lorsque vous trouvez le pays que vous recherchez, sélectionnez-le. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur l’![icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) suivant la valeur.
+   - **À partir de ces pays** _ : cliquez sur la zone et sélectionnez *Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’un pays dans la zone. Une liste filtrée des pays pris en charge s’affiche. Lorsque vous trouvez le pays que vous recherchez, sélectionnez-le. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur l’![icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) suivant la valeur.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
