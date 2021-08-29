@@ -377,6 +377,7 @@
 ##### [Examiner des incidents](investigate-incidents.md)
 
 #### [File d’attente des alertes]()
+##### [File d’attente des alertes dans Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
 ##### [Afficher et organiser la file d’attente des alertes](alerts-queue.md)
 ##### [Évaluer des alertes](review-alerts.md)
 ##### [Gérer des alertes](manage-alerts.md)
@@ -485,7 +486,7 @@
 ####### [Obtenir les informations des IP liées à l’alerte](get-alert-related-ip-info.md)
 ####### [Obtenir les informations de l’appareil lié à l’alerte](get-alert-related-machine-info.md)
 ####### [Obtenir les informations de l’utilisateur lié à l’alerte](get-alert-related-user-info.md)
-####### [File d’attente des alertes dans Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
+
 
 ###### [Évaluations des vulnérabilités et configurations sécurisées]()
 ####### [Exporter des méthodes et propriétés d’évaluation](get-assessment-methods-properties.md)
