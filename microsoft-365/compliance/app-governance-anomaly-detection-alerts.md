@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Examinez les alertes de détection d’anomalies.
-ms.openlocfilehash: aa0c7a285baf9fcc3505b9675d57dc37e300862570facdac7c9eb2fd9af61e5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 57e32f0fc2d50e5e1f1d4d9fb9e6b1520f0f99e6
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843070"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747386"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Examiner les alertes de détection d’anomalie
 
@@ -145,7 +145,7 @@ Si vous pensez toujours qu'une application est suspecte, vous pouvez rechercher 
 
 Cette section décrit les alertes indiquant qu’un acteur malveillant tente peut-être de maintenir son pied dans votre organisation.
 
-### <a name="app-with-suspicious-oauth-scope-creates-inbox-rule"></a>Une application avec une étendue OAuth suspecte crée une règle de boîte de réception  
+### <a name="app-with-suspicious-oauth-scope-made-graph-calls-to-read-email-and-created-inbox-rule"></a>L’application avec une étendue OAuth suspecte a effectué des appels graphiques pour lire le courrier électronique et créé une règle de boîte de réception  
 
 **Gravité :** moyen
 
@@ -270,3 +270,28 @@ Cette détection identifie l’application qui a accepté des étendues de privi
 1. Passez en revue les étendues accordées par l’application.
 1. Examinez toute action de règle de boîte de réception créée par l'application.
 1. Passez en revue toutes les activités de recherche de courrier effectuées par l’application.
+
+### <a name="appmade-onedrive--sharepoint-search-activities-and-created-inbox-rule"></a>L’application a créé des activités de recherche OneDrive/SharePoint et créé une règle de boîte de réception  
+
+**Sévérité** : moyenne
+
+**ID MITRE** : T1137, T1213
+
+Cette détection identifie qu’une application a accepté des étendues de privilèges élevés, crée une règle de boîte de réception suspecte et a effectué des activités de recherche d'e-mails inhabituelles dans les dossiers de messagerie des utilisateurs via l'API Graph. Cela peut indiquer une tentative d’intrusion dans votre organisation, par exemple des adversaires qui tentent de rechercher et de collecter des e-mails spécifiques de votre organisation via API Graph.  
+
+**TP ou FP ?**
+
+- **TP**: si vous êtes en mesure de confirmer des données spécifiques de la recherche et de la collection SharePoint ou OneDrive effectuée via l’API Graph par une application OAuth avec une étendue de privilège élevé, et que l’application est livrée à partir d’une source inconnue.  
+
+  **Action recommandée**: désactivez et supprimez l’application, réinitialisez le mot de passe et supprimez la règle de boîte de réception.  
+
+- **FP**: si vous êtes en mesure de confirmer que l’application a effectué des données spécifiques à partir de la recherche et de la collecte de SharePoint ou OneDrive via une API Graph par une application OAuth et créé une règle de boîte de réception vers un compte de messagerie externe nouveau ou personnel pour des raisons légitimes.  
+
+  **Action recommandée**: ignorer l’alerte.  
+
+**Comprendre l’étendue de la violation**
+
+1. Passez en revue toutes les activités effectuées par l’application.  
+1. Passez en revue les étendues accordées par l’application.  
+1. Examinez toute action de règle de boîte de réception créée par l'application.  
+1. Passez en revue toutes les activités de recherche SharePoint ou OneDrive effectuées par l’application.

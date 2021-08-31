@@ -11,16 +11,16 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/11/2021
+ms.date: 08/31/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: cbf1cae088af2606e8fea1e40e0cfe34c7a74832
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: a4d96832ecdddf4cd1567b5c8f646d2df6ac7921
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533518"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58832025"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -30,7 +30,7 @@ ms.locfileid: "58533518"
 
 Outre les configurations matérielles ou locales standard, vous pouvez également utiliser Antivirus Microsoft Defender dans un environnement bureau à distance (RDS) ou vDI (Virtual Desktop Infrastructure).
 
-Voir [Windows virtual desktop documentation](/azure/virtual-desktop) for more details on Bureau à distance Microsoft Services and VDI support.
+Pour [plus d’informations](/azure/virtual-desktop) sur la prise en charge des services Bureau à distance Microsoft VDI, voir la documentation Azure Virtual Desktop.
 
 Pour les machines virtuelles basées sur Azure, voir [Installer Endpoint Protection dans Azure Defender.](/azure/security-center/security-center-install-endpoint-protection)
 
@@ -71,7 +71,7 @@ Dans Windows 10, version 1903, nous avons introduit la fonctionnalité d’intel
 
 6. Entrez `\\<sharedlocation\>\wdav-update` (pour obtenir de l’aide sur cette valeur, voir [Télécharger et décompresser).](#download-and-unpackage-the-latest-updates)
 
-7. Cliquez sur **OK**.
+7. Cliquez sur **OK**.
 
 8. Déployez l’GPO sur les VM que vous souhaitez tester.
 
@@ -103,9 +103,9 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 ```
 
 Vous pouvez définir une tâche programmée de sorte qu’elle s’exécute une fois par jour de sorte que chaque fois que le package est téléchargé et décompressé, les VM reçoivent la nouvelle mise à jour.
-Nous vous suggérons de commencer une fois par jour, mais vous devez essayer d’augmenter ou de réduire la fréquence pour en comprendre l’impact.
+Nous vous suggérons de commencer par une fois par jour, mais vous devez essayer d’augmenter ou de réduire la fréquence pour en comprendre l’impact.
 
-Les packages d’informations de sécurité sont généralement publiés toutes les trois à quatre heures. Il n’est pas conseillé de définir une fréquence de moins de quatre heures, car cela augmente la surcharge réseau sur votre ordinateur de gestion sans aucun avantage.
+Les packages d’informations de sécurité sont généralement publiés toutes les trois à quatre heures. La définition d’une fréquence plus courte que quatre heures n’est pas recommandée, car elle augmente la surcharge réseau sur votre ordinateur de gestion sans aucun avantage.
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>Définir une tâche programmée pour exécuter le script PowerShell
 
@@ -165,7 +165,7 @@ Vous pouvez spécifier le type d’analyse à effectuer lors d’une analyse pro
 
 ## <a name="prevent-notifications"></a>Empêcher les notifications
 
-Parfois, Antivirus Microsoft Defender notifications peuvent être envoyées à plusieurs sessions ou être persistantes. Pour minimiser ce problème, vous pouvez verrouiller l’interface Antivirus Microsoft Defender’utilisateur. La procédure suivante décrit comment supprimer les notifications avec la stratégie de groupe.
+Parfois, Antivirus Microsoft Defender notifications peuvent être envoyées à plusieurs sessions ou être persistantes. Pour minimiser ce problème, vous pouvez verrouiller l’interface Antivirus Microsoft Defender utilisateur. La procédure suivante décrit comment supprimer les notifications avec la stratégie de groupe.
 
 1. Dans votre Éditeur de stratégie de groupe, Windows **composants** \> **Antivirus Microsoft Defender** \> **interface client.**
 
@@ -225,7 +225,7 @@ Cette stratégie force une analyse si la VM a manqué au moins deux analyses pro
 
 3. Définissez la stratégie **sur Activé.**
 
-4. Cliquez sur **OK**.
+4. Cliquez sur **OK**.
 
 5. Déployez votre objet de stratégie de groupe comme vous le faites généralement.
 

@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 981e7962db35429e5f7bf02ee4a6f57fd19655d4
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: d10399c3064697ab383133cd17cc14dc7dd43cc4
+ms.sourcegitcommit: dda742d2b044fa56f4edef57d74d18f52fafc149
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509892"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58829267"
 ---
 # <a name="troubleshoot-network-protection"></a>Résoudre les problèmes de protection du réseau
 
@@ -31,7 +31,7 @@ ms.locfileid: "58509892"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Cet article fournit des informations de dépannage pour la [protection](network-protection.md)du réseau, dans les cas suivants :
 
@@ -71,7 +71,7 @@ Vous pouvez activer la protection réseau en mode audit, puis visiter un site we
 
 3. [Consultez les journaux des événements](network-protection.md#review-network-protection-events-in-windows-event-viewer) de protection réseau pour voir si la fonctionnalité aurait bloqué la connexion si elle avait été définie **sur Activé.**
 
-   Si la protection réseau ne bloque pas une connexion que vous attendez qu’elle bloque, activez la fonctionnalité.
+   Si la protection du réseau ne bloque pas une connexion que vous attendez qu’elle bloque, activez la fonctionnalité.
 
    ```PowerShell
    Set-MpPreference -EnableNetworkProtection Enabled
@@ -83,9 +83,13 @@ Si vous avez testé la fonctionnalité avec le site de démonstration et le mode
 
 Voir [Adresse faux positifs/négatifs dans Microsoft Defender pour le point de terminaison.](defender-endpoint-false-positives-negatives.md)
 
-## <a name="exclude-website-from-network-protection-scope"></a>Exclure le site web de l’étendue de protection réseau
+## <a name="add-exclusions"></a>Ajouter des exclusions
+Les options d’exclusion actuelles sont :
 
-Pour autoriser le site web bloqué (faux positif), ajoutez son URL à la [liste des sites de confiance.](https://blogs.msdn.microsoft.com/asiatech/2014/08/19/how-to-add-web-sites-to-trusted-sites-via-gpo-from-dc-installed-ie10-or-higher-ie-version/) Les ressources Web de cette liste contournent la vérification de la protection réseau.
+1.  Configuration d’un indicateur d’autoriser personnalisé.
+2.  Utilisation d’exclusions IP : `Add-MpPreference -Exclusion IpAddress 192.168.1.1`
+3.  Exclusion d’un processus entier. Pour plus d’informations, [voir Antivirus Microsoft Defender exclusions.](configure-exclusions-microsoft-defender-antivirus.md) 
+
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Collecter des données de diagnostic pour les soumissions de fichiers
 

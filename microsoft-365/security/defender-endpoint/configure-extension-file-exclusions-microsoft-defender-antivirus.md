@@ -14,12 +14,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 3138d1c0a4b4d2b5726b87e6e86897091d237854
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.date: 08/27/2021
+ms.openlocfilehash: 822241ed8010338b21f61ef39e3df1d310ced2ce
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568639"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58832013"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -56,13 +57,12 @@ Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’
 
 ****
 
-|Exclusion|範例|Liste d’exclusions|
+|Exclusion|Exemples|Liste d’exclusions|
 |---|---|---|
 |Tout fichier avec une extension spécifique|Tous les fichiers avec l’extension spécifiée, n’importe où sur l’ordinateur. <p> Syntaxe valide : `.test` et `test`|Exclusions d’extensions|
 |N’importe quel fichier sous un dossier spécifique|Tous les fichiers sous le `c:\test\sample` dossier|Exclusions de fichiers et de dossiers|
 |Un fichier spécifique dans un dossier spécifique|Fichier `c:\sample\sample.test` uniquement|Exclusions de fichiers et de dossiers|
 |Un processus spécifique|Fichier exécutable `c:\test\process.exe`|Exclusions de fichiers et de dossiers|
-|
 
 ## <a name="characteristics-of-exclusion-lists"></a>Caractéristiques des listes d’exclusions
 
@@ -140,26 +140,20 @@ Le tableau suivant répertorie les cmdlets que vous pouvez utiliser dans la `<cm
 
 <br>
 
-****
-
 |Action de configuration|Cmdlet PowerShell|
 |:---|:---|
 |Créer ou overwrite la liste|`Set-MpPreference`|
 |Ajouter à la liste|`Add-MpPreference`|
 |Supprimer l’élément de la liste|`Remove-MpPreference`|
-|
 
 Le tableau suivant répertorie les valeurs que vous pouvez utiliser dans la `<exclusion list>` partie de l’cmdlet PowerShell :
 
 <br>
 
-****
-
 |Type d’exclusion|Paramètre PowerShell|
 |---|---|
 |Tous les fichiers avec une extension de fichier spécifiée|`-ExclusionExtension`|
 |Tous les fichiers sous un dossier (y compris les fichiers dans les sous-répertoires) ou un fichier spécifique|`-ExclusionPath`|
-|
 
 > [!IMPORTANT]
 > Si vous avez créé une liste, avec ou , en utilisant à nouveau la `Set-MpPreference` `Add-MpPreference` `Set-MpPreference` cmdlet, la liste existante est réécrite.
@@ -205,19 +199,17 @@ Vous pouvez utiliser l’astérisque, le point d’interrogation ou les variable
 > - L’utilisation des variables d’environnement est limitée aux variables de l’ordinateur et à celles applicables aux processus en cours d’exécution en tant que compte NT AUTHORITY\SYSTEM.
 > - Vous ne pouvez pas utiliser de caractère générique à la place d’une lettre de lecteur.
 > - Un astérisque dans `*` une exclusion de dossier est en place pour un dossier unique. Utilisez plusieurs instances pour `\*\` indiquer plusieurs dossiers imbrifiés avec des noms non spécifiés.
-
+> - Actuellement, Microsoft Endpoint Configuration Manager ne prend pas en charge les caractères génériques (tels que `*` ou `?` ).
+    
 Le tableau suivant décrit comment les caractères génériques peuvent être utilisés et fournit quelques exemples.
 
 <br>
 
-****
-
-|Caractère générique|範例|
+|Caractère générique|Exemples|
 |---|---|
 |`*` (astérisque) <p> Dans **les inclusions** de nom de fichier et d’extension de fichier, l’astérisque remplace un nombre quelconque de caractères et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossiers,** l’astérisque remplace un dossier unique. Utilisez plusieurs `*` dossiers avec barres obliques `\` pour indiquer plusieurs dossiers imbrmbrés. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` inclut n’importe quel fichier et ses `C:\somepath\Archives\Data` sous-dossiers, `C:\somepath\Authorized\Data` ainsi que ses sous-dossiers <p> `C:\Serv\*\*\Backup` inclut n’importe quel fichier et ses `C:\Serv\Primary\Denied\Backup` sous-dossiers `C:\Serv\Secondary\Allowed\Backup` et ses sous-dossiers|
 |`?` (point d’interrogation)  <p> Dans **les inclusions de** nom de fichier et d’extension de fichier, le point d’interrogation remplace un seul caractère et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossiers,** le point d’interrogation remplace un seul caractère dans un nom de dossier. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` inclut `C:\somepath\P\Data` n’importe quel fichier dans et ses sous-dossiers  <p> `C:\somepath\test0?\Data` inclut n’importe `C:\somepath\test01\Data` quel fichier et ses sous-dossiers|
 |Variables d’environnement <p> La variable définie est remplie en tant que chemin d’accès lorsque l’exclusion est évaluée.|`%ALLUSERSPROFILE%\CustomLogFiles` inclut `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
-|
 
 > [!IMPORTANT]
 > Si vous mélangez un argument d’exclusion de fichier avec un argument d’exclusion de dossier, les règles s’arrêteront à la correspondance d’argument de fichier dans le dossier de correspondance et ne rechercheront pas de correspondances de fichiers dans les sous-dossiers.
@@ -233,9 +225,7 @@ Le tableau suivant décrit comment les caractères génériques peuvent être ut
 Le tableau suivant répertorie et décrit les variables d’environnement de compte système.
 
 <br>
-
-****
-
+    
 |Cette variable d’environnement système...|Redirige vers cette|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -298,7 +288,6 @@ Le tableau suivant répertorie et décrit les variables d’environnement de com
 |`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
 |`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
 |`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
-|
 
 ## <a name="review-the-list-of-exclusions"></a>Passer en revue la liste des exclusions
 

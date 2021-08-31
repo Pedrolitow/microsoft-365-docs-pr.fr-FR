@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6b2441ef097cd2d219038364777b527a5c288c071ae67c79370a5b0f2df2379f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 016ee07b9f57117b313b65ea89773fb84a08e99d
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817254"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831896"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender pour le point de terminaison et d’autres solutions Microsoft
 
@@ -51,7 +51,7 @@ Nous avons récemment supprimé l’intégration Azure Information Protection, c
 Le score de risque de l’appareil dynamique de Microsoft Defender pour le point de terminaison est intégré à l’évaluation de l’accès conditionnel, garantissant que seuls les appareils sécurisés ont accès aux ressources. 
 
 ### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
-Microsoft Cloud App Security utilise les signaux de point de terminaison Microsoft Defender pour les points de terminaison pour permettre une visibilité directe de l’utilisation des applications cloud, y compris l’utilisation de services cloud non pris en compte (shadow IT) de tous les appareils surveillés par Microsoft Defender pour Endpoint.
+Microsoft Cloud App Security utilise les signaux de Microsoft Defender pour les points de terminaison pour permettre une visibilité directe de l’utilisation des applications cloud, y compris l’utilisation de services cloud non pris en compte (shadow IT) de tous les appareils surveillés par Microsoft Defender pour Endpoint.
 
 ### <a name="microsoft-defender-for-identity"></a>Microsoft Defender pour l’identité
 Les activités suspectes sont des processus en cours d’exécution dans un contexte utilisateur. L’intégration entre Microsoft Defender pour point de terminaison et Microsoft Defender pour l’identité offre la flexibilité nécessaire pour mener des enquêtes sur la cybersécurité entre les activités et les identités.
@@ -71,7 +71,7 @@ Avec Microsoft 365 Defender, Microsoft Defender pour point de terminaison et div
 [En savoir plus sur Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Configurer l’intégration et d’autres fonctionnalités avancées](advanced-features.md)
 - [Microsoft 365 Defender vue d’ensemble](/microsoft-365/security/defender/microsoft-threat-protection)
 - [Activer Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)

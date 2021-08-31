@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: En savoir plus sur les conditions et les exceptions de stratégie dlp
-ms.openlocfilehash: b1ada8362b149e737784f3cc2948100bbcb217274e000736ecf4cc4752c59e93
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 385c59a41535fbc3fdec0fc551a50b6915736f4f
+ms.sourcegitcommit: dda742d2b044fa56f4edef57d74d18f52fafc149
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851130"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58829279"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Conditions, exceptions et actions de stratégie DLP
 
@@ -55,6 +55,7 @@ Les tableaux des sections suivantes décrivent les conditions et les exceptions 
 |condition ou exception dans DLP|paramètres condition/exception dans Microsoft 365 PowerShell|type de propriété|description|
 |---|---|---|---|
 |L’expéditeur est|condition : *From* <br/> exception : *ExceptIfFrom*|Adresses|Messages envoyés par les boîtes aux lettres, les utilisateurs de messagerie, les contacts de messagerie ou les groupes Microsoft 365 spécifiés dans l’organisation.|
+|L'expéditeur est membre de |_FromMemberOf_ <br/> _ExceptIfFromMemberOf_|Adresses|Messages envoyés par un membre du groupe de distribution, du groupe de sécurité à messagerie ou du groupe Microsoft 365 spécifié.|
 |L’adresse IP de l’expéditeur est|condition : *SenderIPRanges*<br/> exception : *ExceptIfSenderIPRanges*|IPAddressRanges|Messages dans lesquels l'adresse IP de l'expéditeur correspond à l'adresse IP spécifiée ou figure dans la plage d'adresses IP spécifiée.|
 |L’adresse de l’expéditeur contient des mots|condition : *FromAddressContainsWords* <br/> exception : *ExceptIfFromAddressContainsWords*|Mots|Messages contenant les mots spécifiés dans l'adresse de l'expéditeur.|
 |L’adresse de l’expéditeur correspond aux modèles|condition : *FromAddressMatchesPatterns* <br/> exception : *ExceptFromAddressMatchesPatterns*|Modèles|Messages dans lesquels l'adresse de messagerie de l'expéditeur contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
@@ -77,6 +78,8 @@ Les tableaux des sections suivantes décrivent les conditions et les exceptions 
 |L'adresse du destinataire contient les mots|condition : *AnyOfRecipientAddressContainsWords* <br/> exception : *ExceptIfAnyOfRecipientAddressContainsWords*|Mots|Messages contenant les mots spécifiés dans l'adresse du destinataire. <br/>**Remarque** : cette condition ne tient pas compte des messages qui sont envoyés aux adresses proxy du destinataire. Elle correspond uniquement aux messages qui sont envoyés à l’adresse de messagerie principale du destinataire.|
 |L’adresse du destinataire correspond aux modèles|condition : *AnyOfRecipientAddressMatchesPatterns* <br/> exception : *ExceptIfAnyOfRecipientAddressMatchesPatterns*|Modèles|Messages dans lesquels l'adresse de messagerie du destinataire contient des modèles de texte qui correspondent aux expressions régulières spécifiées. <br/> **Remarque** : cette condition ne tient pas compte des messages qui sont envoyés aux adresses proxy du destinataire. Elle correspond uniquement aux messages qui sont envoyés à l’adresse de messagerie principale du destinataire.|
 |Envoyé au membre de|condition : *SentToMemberOf* <br/> exception : *ExceptIfSentToMemberOf*|Adresses|Messages qui contiennent des destinataires qui sont membres du groupe de distribution spécifié, du groupe de sécurité à messagerie ou du groupe Microsoft 365 messagerie. Le groupe peut se trouver dans les champs **To**, **Cc** ou **Bcc** du message.|
+|Les propriétés spécifiées de l'expéditeur contiennent l'un de ces mots |_RecipientADAttributeContainsWords_ <br/> _ExceptIfRecipientADAttributeContainsWords_|Première propriété : `ADAttribute` <p> Deuxième propriété : `Words`|Messages dans lesquels l'attribut Active Directory spécifié d'un destinataire contient certains mots spécifiés. <p> Notez que l'attribut **Country** requiert la valeur de code pays à deux lettres (par exemple, DE pour l'Allemagne).|
+|Les propriétés spécifiées du destinataire correspondent à ces modèles de texte |_RecipientADAttributeMatchesPatterns_ <br/> _ExceptIfRecipientADAttributeMatchesPatterns_|Première propriété : `ADAttribute` <p> Deuxième propriété : `Patterns`|Messages dans lesquels l'attribut Active Directory spécifié d'un destinataire contient des modèles de texte qui correspondent à l'expression régulière spécifiée.|
 |
 
 ### <a name="message-subject-or-body"></a>Objet ou corps du message
@@ -94,7 +97,7 @@ Les tableaux des sections suivantes décrivent les conditions et les exceptions 
 |L’objet ou le corps contient des mots|condition : *SubjectOrBodyContainsWords* <br/> exception : *ExceptIfSubjectOrBodyContainsWords*|Mots|Messages qui ont les mots spécifiés dans le champ d’objet ou le corps du message|
 |
 
-### <a name="attachments"></a>Pièces jointes
+### <a name="attachments"></a>Attachments
 
 <br>
 
@@ -102,7 +105,7 @@ Les tableaux des sections suivantes décrivent les conditions et les exceptions 
 
 |condition ou exception dans DLP|paramètres condition/exception dans Microsoft 365 PowerShell|type de propriété|description|
 |---|---|---|---|
-|La pièce jointe est protégée par mot de passe|condition : *DocumentIsPasswordProtected* <br/> exception : *ExceptIfDocumentIsPasswordProtected*|aucune|Messages dans lesquels une pièce jointe est protégée par mot de passe (et ne peut donc pas être analysée). La détection de mot de passe fonctionne uniquement Office documents, .zip fichiers et fichiers .7z.|
+|La pièce jointe est protégée par mot de passe|condition : *DocumentIsPasswordProtected* <br/> exception : *ExceptIfDocumentIsPasswordProtected*|none|Messages dans lesquels une pièce jointe est protégée par mot de passe (et ne peut donc pas être analysée). La détection de mot de passe fonctionne uniquement Office documents, .zip fichiers et fichiers .7z.|
 |L’extension de fichier de la pièce jointe est|condition : *ContentExtensionMatchesWords* <br/> exception : *ExceptIfContentExtensionMatchesWords*|Mots|Messages dans lesquels l'extension de fichier de la pièce jointe correspond à l'un des mots spécifiés.|
 |Le contenu d’une pièce jointe n’a pas pu être analysé|condition : *DocumentIsUnsupported* <br/>exception : *ExceptIf DocumentIsUnsupported*|s/o|Messages dans lequel une pièce jointe n’est pas reconnue en Exchange Online.|
 |Le contenu d’une pièce jointe n’a pas terminé l’analyse|condition : *ProcessingLimitExceeded* <br/> exception : *ExceptIfProcessingLimitExceeded*|s/o|Messages pour lesquels le moteur de règles n'a pas pu terminer l'analyse des pièces jointes. Vous pouvez utiliser cette condition pour créer des règles qui fonctionnent conjointement pour identifier et traiter les messages dont le contenu n'a pas pu être entièrement analysé.|

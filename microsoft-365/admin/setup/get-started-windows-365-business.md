@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment acheter Windows 365 Business pour votre organisation et aider les utilisateurs à commencer à utiliser leurs PC Cloud.
-ms.openlocfilehash: f806991bfd00cbaf9b96b7750d0358409785b206
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4c53aba7ae2d4bd47b5df2f32c50dcf6bb448201
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569236"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831884"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Démarrage avec les PC Windows 365 Business et Cloud
 
@@ -36,7 +36,7 @@ Cet article est réservé aux personnes qui prévoient d’acheter et de configu
 [Windows 365 Business](https://www.microsoft.com/windows-365/business) est une version de Windows 365 qui est spécialement conçu pour être utilisé dans les petites entreprises (jusqu’à 300 sièges). Il offre aux organisations un moyen simple et simplifié de fournir des PC Cloud à leurs utilisateurs.  Avec Windows 365 Cloud, vous pouvez diffuser vos applications, données, contenu, paramètres et stockage à partir du cloud Microsoft.
 
 > [!NOTE]  
-> Avant de commencer, assurez-vous que les paramètres de votre appareil Azure AD pour les [utilisateurs](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) peuvent joindre des appareils **à Azure AD.**
+> Avant de commencer, assurez-vous que les paramètres de votre appareil Azure AD pour les [utilisateurs](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) peuvent joindre des appareils à Azure **AD.**
 
    ![Les utilisateurs peuvent joindre des appareils aux paramètres Azure AD.](../../media/deschutes/azure-device-settings.png)
 ## <a name="prerequisites"></a>Configuration requise
@@ -87,7 +87,7 @@ Que vous avez acheté vos abonnements via le site des produits Windows 365 ou vi
 Vous pouvez affecter différents types Windows licence 365 Business à un utilisateur, en fonction des besoins professionnels des utilisateurs. Consultez Windows options de resserrement [365 Business](windows-365-business-sizing.md) pour obtenir des conseils sur le type de licence qui peut convenir à vos utilisateurs.
 
 > [!IMPORTANT]
-> La première fois qu’une licence Windows 365 est attribuée à votre client, un compte système appelé utilisateur permanent **WINDOWS 365 BPRT** est automatiquement créé dans Azure Active Directory. Ne supprimez pas ce compte et n’a modifiez pas ce compte (par exemple, en modifiant le nom ou l’UPN). Si le compte système est supprimé, le programme d’installation peut échouer. Ce compte système garantit un processus de mise en place fluide et n’a pas de fonctionnalités d’écriture ni d’accès à votre client au-delà des fonctionnalités de service étendues de Windows 365 Business. Si vous supprimez cet utilisateur, déposez un ticket via le Support central.
+> La première fois qu’une licence Windows 365 est attribuée à votre client, un compte système appelé utilisateur permanent **WINDOWS 365 BPRT** est automatiquement créé dans Azure Active Directory. Ne supprimez pas ce compte et n’a modifiez pas ce compte (par exemple, en modifiant le nom ou l’UPN). Si le compte système est supprimé, le programme d’installation peut échouer. Ce compte système garantit un processus de mise en place fluide et n’a pas de fonctionnalités d’écriture ni d’accès à votre client au-delà des fonctionnalités de service étendues de Windows 365 Business. Si vous supprimez cet utilisateur, suivez ces [étapes de dépannage.](/microsoft-365/admin/setup/troubleshoot-windows-365-business?#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)
 
 ## <a name="get-your-users-started-with-cloud-pc"></a>Démarrer vos utilisateurs avec Cloud PC
 
@@ -147,7 +147,7 @@ L Bureau à distance Microsoft permet aux utilisateurs d’accéder et de contr�
 Pour configurer leur client Bureau à distance, les utilisateurs suivent les étapes suivantes :
 
 1. Sur la **page d Windows 365,** sélectionnez l’icône **Bureau à distance Microsoft applications** (sous l’icône d’accueil).
-2. Sur la page **Bureau à distance Microsoft applications,** téléchargez et installez l’application Bureau à distance dont vous avez besoin.
+2. Dans la page **Bureau à distance Microsoft applications,** téléchargez et installez l’application Bureau à distance dont vous avez besoin.
 
    ![Clients Bureau à distance.](../../media/deschutes/remote-desktop-apps.png)
 
@@ -164,17 +164,17 @@ Tous Windows 365 Entreprise ont des privilèges d’administrateur local sur leu
 
 ## <a name="management-through-intune"></a>Gestion via Intune
 
-Windows 365 Business n’inscrit pas les PC cloud à [Intune](/mem/intune/fundamentals/what-is-intune) dans le cadre du processus d’approvisionnement. Si l’organisation et les utilisateurs sont correctement titulaires d’une licence, les PC cloud peuvent être inscrits à Intune à l’aide de la même procédure pour inscrire des ordinateurs Windows 10 à [Intune.](/mem/intune/user-help/enroll-windows-10-device)
+Si l’organisation et les utilisateurs sont correctement titulaires d’une licence, les PC cloud peuvent être inscrits à Intune à l’aide de la même procédure pour inscrire des ordinateurs Windows 10 à [Intune.](/mem/intune/user-help/enroll-windows-10-device)
 
 ## <a name="sending-outbound-email-messages-using-port-25-is-not-supported"></a>L’envoi de messages électroniques sortants à l’aide du port 25 n’est pas pris en charge
 
-L’envoi de messages électroniques sortants directement sur le port 25 à partir d’Windows 365 Business Cloud PC n’est pas pris en charge. La communication sur le port TCP/25 est bloquée sur Windows réseau 365 Business pour des raisons de sécurité. Si votre service de messagerie utilise SMTP (Simple Mail Transfer Protocol) pour votre application cliente de messagerie, vous pouvez utiliser son interface web, si disponible. Vous pouvez également demander de l’aide à votre fournisseur de services de messagerie pour configurer son application cliente de messagerie afin d’utiliser le service SMTP sur TLS (Secure SMTP over Transport Layer Security), qui utilise un port différent.
+L’envoi de messages électroniques sortants directement sur le port 25 à partir d’Windows 365 Business Cloud PC n’est pas pris en charge. La communication sur le port TCP/25 est bloquée sur Windows réseau 365 Business pour des raisons de sécurité. Si votre service de messagerie utilise SMTP (Simple Mail Transfer Protocol) pour votre application cliente de messagerie, vous pouvez utiliser son interface web, si disponible. Vous pouvez également demander de l’aide à votre fournisseur de services de messagerie pour configurer son application cliente de messagerie afin d’utiliser le service SMTP sécurisé sur TLS (Transport Layer Security), qui utilise un port différent.
 
 ## <a name="how-to-get-help"></a>Comment obtenir de l’aide
 
 Si vous avez besoin d’aide lors de la configuration de Windows 365 Business dans le Centre d’administration Microsoft 365, consultez Obtenir de l’aide [ou du support.](/microsoft-365/business-video/get-help-support)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Windows 365 Business](https://www.microsoft.com/windows-365/business) <br/>
 [Options de dimensionnement de Windows 365 Business](windows-365-business-sizing.md) <br/>

@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Apprenez à gérer les Microsoft 365, notamment en ajoutant supprimer des membres du groupe, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
-ms.openlocfilehash: 12c1b74986429be8c2681725286a3e07b7ae1d86
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+description: Apprenez à gérer les Microsoft 365, notamment en ajoutant des membres de groupe supprimés, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
+ms.openlocfilehash: 7155bbbd6ff127525522b0a7ddf866b9d690db5a
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393411"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831836"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le Centre d’administration Microsoft 365
 
@@ -49,11 +49,11 @@ Go to the Centre d’administration Microsoft 365 at [https://admin.microsoft.co
 
 3. Sous **l’onglet** Membres, choisissez si vous souhaitez gérer les propriétaires ou les membres.
 
-4. Choisissez **Ajouter pour** ajouter une personne ou cliquez sur **X** pour supprimer une personne.
+4. Choisissez **Ajouter** pour ajouter une personne ou cliquez **sur X** pour supprimer une personne.
 
 5. Cliquez sur **Fermer**.
 
-## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Envoyer des copies des conversations dans les boîtes de réception des membres du groupe
+## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Envoyer des copies des conversations aux boîtes de réception des membres du groupe
   
 Lorsque vous utilisez le Centre d’administration pour créer un groupe, par défaut, les utilisateurs n’obtiennent pas de copies des messages électroniques de groupe envoyés à leur boîte de réception, même si les utilisateurs obtiennent des copies des invitations aux réunions de groupe envoyées à leur boîte de réception. Ils doivent se rendre dans le groupe pour voir les conversations. Vous pouvez modifier ce paramètre dans le Centre d’administration.
 
@@ -86,7 +86,7 @@ Cette option est idéale si vous souhaitez avoir une adresse de messagerie d’e
 Il peut arriver que vous vouliez purger définitivement un groupe sans attendre l’expiration de la période de suppression temporaire de 30 jours. Pour ce faire, démarrez PowerShell et exécutez la commande suivante pour obtenir l'ID d'objet du groupe.
  
  ```powershell
-`Get-AzureADMSDeletedGroup`
+Get-AzureADMSDeletedGroup
 ```
 
 Prenez note de l’ID d’objet du ou des groupes que vous souhaitez supprimer définitivement.
@@ -97,7 +97,7 @@ Prenez note de l’ID d’objet du ou des groupes que vous souhaitez supprimer d
 Pour supprimer définitivement le groupe, exécutez la commande suivante dans PowerShell :
 
 ```powershell
-`Remove-AzureADMSDeletedDirectoryObject -Id <objectId>`
+Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
 Pour vérifier que le groupe a été supprimé définitivement, réexécutez l'applet de commande  *Get-AzureADMSDeletedGroup*  pour confirmer que le groupe n'apparaît plus dans la liste des groupes supprimés (suppression réversible). Dans certains cas, la suppression définitive du groupe et de toutes ses données peut prendre jusqu'à 24 heures. 
