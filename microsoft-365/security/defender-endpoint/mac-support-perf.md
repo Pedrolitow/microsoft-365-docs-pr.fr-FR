@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f7b1607a6e83db969807c0d0ce369b161cb88f1e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 259abe6753224e55c937962bd0af19d2f6ba0a9f
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573534"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745660"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -61,16 +61,17 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
       ```
 
       Si votre appareil est géré par votre organisation, la protection en temps réel peut être désactivée par votre administrateur à l’aide des instructions dans Définir les préférences de Microsoft Defender pour Endpoint sur [macOS.](mac-preferences.md)
-      
+
       Si le problème de performances persiste alors que la protection en temps réel est éteinte, l’origine du problème peut être protection évolutive des points de terminaison composant. Dans ce cas, contactez le support technique pour obtenir des instructions supplémentaires et des mesures d’atténuation.
 
-2. Ouvrez Finder et accédez aux  >  **utilitaires d’applications.** Ouvrez **l’Analyseur** d’activité et analysez les applications qui utilisent les ressources de votre système. Les compilateurs et les outils de mise à jour logicielles sont des exemples classiques.
+2. Ouvrez Finder  et accédez aux \> **utilitaires d’applications.** Ouvrez **l’Analyseur** d’activité et analysez les applications qui utilisent les ressources de votre système. Les compilateurs et les outils de mise à jour logicielles sont des exemples classiques.
 
-1. Pour rechercher les applications qui déclenchent le plus d’analyses, vous pouvez utiliser des statistiques en temps réel recueillies par Defender pour Endpoint sur Mac.
+3. Pour rechercher les applications qui déclenchent le plus d’analyses, vous pouvez utiliser des statistiques en temps réel recueillies par Defender pour Endpoint sur Mac.
 
       > [!NOTE]
       > Cette fonctionnalité est disponible dans la version 100.90.70 ou une version plus récente.
       Cette fonctionnalité est activée par défaut sur les canaux **Dog food** et **InsiderFast.** Si vous utilisez un autre canal de mise à jour, cette fonctionnalité peut être activée à partir de la ligne de commande :
+
       ```bash
       mdatp config real-time-protection-statistics  --value enabled
       ```
@@ -101,7 +102,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
       > L’utilisation du json de sortie **(notez** le tiret double) garantit que le format de sortie est prêt pour l’utilisation.
       Le résultat de cette commande affiche tous les processus et l’activité d’analyse associée.
 
-1. Sur votre système Mac, téléchargez l’exemple d’analyseur Python high_cpu_parser.py à l’aide de la commande :
+4. Sur votre système Mac, téléchargez l’exemple d’analyseur Python high_cpu_parser.py à l’aide de la commande :
 
     ```bash
     curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
@@ -117,11 +118,11 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     HTTP request sent, awaiting response... 200 OK
     Length: 1020 [text/plain]
     Saving to: 'high_cpu_parser.py'
-    100%[===========================================>] 1,020    --.-K/s   in 
+    100%[===========================================>] 1,020    --.-K/s   in
     0s
     ```
 
-1. Ensuite, tapez les commandes suivantes :
+5. Ensuite, tapez les commandes suivantes :
 
       ```bash
         chmod +x high_cpu_parser.py
@@ -153,7 +154,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
 
       > [!NOTE]
       > L’application stocke les statistiques en mémoire et suit uniquement l’activité des fichiers depuis son début et que la protection en temps réel a été activée. Les processus qui ont été lancés avant ou pendant les périodes où la protection en temps réel était hors programme ne sont pas comptabilisés. En outre, seuls les événements qui ont déclenché des analyses sont comptés.
-      > 
-1. Configurez Microsoft Defender pour endpoint sur macOS avec des exclusions pour les processus ou les emplacements de disque qui contribuent aux problèmes de performances et activez à nouveau la protection en temps réel.
+      >
+6. Configurez Microsoft Defender pour endpoint sur macOS avec des exclusions pour les processus ou les emplacements de disque qui contribuent aux problèmes de performances et activez à nouveau la protection en temps réel.
 
      Pour plus d’informations, voir Configurer et valider des [exclusions pour Microsoft Defender for Endpoint sur macOS.](mac-exclusions.md)

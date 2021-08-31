@@ -1,6 +1,6 @@
 ---
 title: Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
-description: Résoudre les problèmes liés à l’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS.
+description: Résolution des problèmes liés à l’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, noyau, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2f730f590b9ba604596dc9230fc22c451e99630e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 9ca412a54fb94fd9835b30d6b9b6092dc4e79015
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565207"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744976"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -69,11 +69,11 @@ Consultez les instructions correspondant à l’outil de gestion que vous avez u
 
 ## <a name="manual-deployment"></a>Déploiement manuel
 
-Si moins de 30 minutes se sont écoulées depuis l’installation du produit, accédez à La sécurité des préférences système & Confidentialité , où vous devez autoriser les **logiciels** système des développeurs  >  « Microsoft Corporation ». 
+Si moins de 30 minutes se sont écoulées depuis l’installation du produit, accédez à La sécurité des préférences système & Confidentialité , où vous devez autoriser les **logiciels** système des développeurs \> « Microsoft Corporation ». 
 
 Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus se sont écoulées et que l’extension du noyau n’a toujours pas été approuvée pour s’exécuter sur votre appareil :
 
-![Fenêtre de sécurité et de confidentialité après l’expiration de la capture d’écran de l’invite.](images/mdatp-33-securityprivacysettings-noprompt.png)
+![Fenêtre de sécurité et de confidentialité après la capture d’écran expirée de l’invite.](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouveau le flux d’approbation.
 
@@ -82,14 +82,14 @@ Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouv
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
-    
+
     ```Output
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. Ouvrez **La sécurité des préférences** système &  >  **confidentialité** dans le menu. (Fermez-le d’abord, s’il est ouvert.)
+2. Ouvrez **La sécurité des préférences** système & \> **confidentialité** dans le menu. (Fermez-le d’abord, s’il est ouvert.)
 
 3. **Autoriser les** logiciels système des développeurs « Microsoft Corporation »
 

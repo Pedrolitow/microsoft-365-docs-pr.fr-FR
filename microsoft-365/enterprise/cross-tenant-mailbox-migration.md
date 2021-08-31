@@ -14,16 +14,16 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 6b2ef03984e6ed7c9b93476869e998bb06b78a30
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: cff003b3a6eb8a996b12c4be8b6a48b256ba80d8
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566831"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747506"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
-Auparavant, lorsqu’un client Exchange Online devait déplacer des boîtes aux lettres vers un autre client dans le même service Exchange Online, il devait les déboarder complètement sur site, puis les intégrer à un nouveau client. Grâce à la nouvelle fonctionnalité de migration de boîtes aux lettres entre les locataires, les administrateurs client des locataires source et cible peuvent déplacer des boîtes aux lettres entre les locataires avec des dépendances d’infrastructure minimales dans leurs systèmes locaux. Cela supprime la nécessité de supprimer les boîtes aux lettres d’intégration et d’intégration.
+Auparavant, lorsqu’un client Exchange Online devait déplacer des boîtes aux lettres vers un autre client dans le même service Exchange Online, il devait les déboarder complètement sur site, puis les intégrer à un nouveau client. Grâce à la nouvelle fonctionnalité de migration de boîtes aux lettres entre les locataires, les administrateurs client des locataires source et cible peuvent déplacer des boîtes aux lettres entre les locataires avec des dépendances d’infrastructure minimales dans leurs systèmes locaux. Cela permet de supprimer la nécessité d’intégrer et d’intégrer des boîtes aux lettres.
 
 En commun, lors de fusions ou de dédessons, vous avez besoin de la possibilité de déplacer des utilisateurs et du contenu vers un nouveau client. Lorsque l’administrateur client cible exécute le déplacement, il s’agit d’un déplacement pull, semblable à l’intégration sur site aux migrations d’intégration cloud.
 
@@ -31,7 +31,7 @@ Les déplacements de boîtes aux lettres inter-clients Exchange sont entièremen
 
 Les utilisateurs qui migrent doivent être présents dans le système d’Exchange Online client cible en tant que MailUsers, marqués avec des attributs spécifiques pour permettre les déplacements entre clients. Les déplacements du système échouent pour les utilisateurs qui ne sont pas correctement configurer dans le client cible.
 
-Lorsque les déplacements sont terminés, la boîte aux lettres système source est convertie en MailUser et la cibleAddress (affichée sous la marque ExternalEmailAddress dans Exchange) est estampillée avec l’adresse de routage vers le client de destination. Ce processus laisse l’utilisateur mailuser hérité dans le client source et autorise une période de coexistence et de routage du courrier. Lorsque les processus d’entreprise le permettent, le client source peut supprimer la source MailUser ou les convertir en contact de messagerie.
+Lorsque les déplacements sont terminés, la boîte aux lettres système source est convertie en MailUser et l’adresse cible (affichée sous la marque ExternalEmailAddress dans Exchange) est estampillée avec l’adresse de routage vers le client de destination. Ce processus laisse l’utilisateur mailuser hérité dans le client source et autorise une période de coexistence et de routage du courrier. Lorsque les processus d’entreprise le permettent, le client source peut supprimer la source MailUser ou les convertir en contact de messagerie.
 
 Les migrations Exchange boîtes aux lettres entre les locataires sont uniquement pris en charge pour les locataires hybrides ou en nuage, ou pour n’importe quelle combinaison des deux.
 
@@ -47,7 +47,7 @@ Cette section n’inclut pas les étapes spécifiques requises pour préparer le
 
 La fonctionnalité de déplacement de boîtes aux lettres entre clients nécessite [Azure Key Vault](/azure/key-vault/basic-concepts) pour établir une application Azure propre à une paire de clients afin de stocker et d’accéder en toute sécurité au certificat/clé secrète utilisé pour authentifier et autoriser la migration de boîtes aux lettres d’un client à l’autre, supprimant ainsi toutes les conditions requises pour partager des certificats/clés secrètes entre les clients.
 
-Avant de commencer, assurez-vous que vous avez les autorisations nécessaires pour exécuter les scripts de déploiement afin de configurer Azure Key Vault, l’application de déplacement de boîte aux lettres, le point de terminaison de migration EXO et la relation d’organisation EXO. En règle générale, l’administrateur général est autorisé à effectuer toutes les étapes de configuration.
+Avant de commencer, assurez-vous que vous avez les autorisations nécessaires pour exécuter les scripts de déploiement afin de configurer Azure Key Vault, l’application de déplacement de boîte aux lettres, le point de terminaison de migration EXO et la relation d’organisation EXO. En règle générale, **l’administrateur Azure AD DC** ou l’administrateur **général**  est autorisé à effectuer toutes les étapes de configuration.
 
 En outre, les groupes de sécurité à messagerie dans le client source sont requis avant l’exécution de l’installation. Ces groupes sont utilisés pour cibler la liste des boîtes aux lettres qui peuvent passer du client source (ou parfois appelé ressource) au client cible. Cela permet à l’administrateur client source de restreindre ou d’étendue l’ensemble spécifique de boîtes aux lettres qui doivent être déplacées, ce qui empêche la migration des utilisateurs non voulus. Les groupes imbrmbrés ne sont pas pris en charge.
 
@@ -71,7 +71,7 @@ Voici comment fonctionne le processus.
 
 Préparez le client cible :
 
-1. Si un groupe de ressources Azure existant n’est pas fourni, un nouveau groupe est créé (SCRIPT).
+1. Si un groupe de ressources Azure existant n’est pas fourni, un nouveau groupe de ressources est créé (SCRIPT).
 2. Si un coffre de clés existant n’est pas fourni, un nouveau coffre est créé (SCRIPT).
 3. Une nouvelle stratégie d’accès est créée pour l’application Office 365 Exchange Online migration de boîtes aux lettres (SCRIPT).
 4. Un nouveau certificat est créé (ou existant, s’il est spécifié) pour contenir la question secrète dans l’application de migration (SCRIPT).
@@ -85,7 +85,7 @@ Préparez le client cible :
 
 Préparez le client source :
 
-1. L’administrateur client source accepte l’invitation de l’application de migration de boîtes aux lettres du client cible (MANUAL).
+1. L’administrateur client source accepte le consentement à l’invitation de l’application de migration de boîtes aux lettres à partir du client cible (MANUAL).
 2. L’administrateur client source crée un groupe de sécurité à messagerie dans son client pour contenir la liste des boîtes aux lettres autorisées à être déplacées par l’application de migration (MANUAL).
 3. Une relation d’organisation est créée avec le client cible en spécifiant que l’application de migration de boîte aux lettres doit être utilisée pour la vérification OAuth afin d’accepter la demande de déplacement (SCRIPT).
 
@@ -94,23 +94,23 @@ Préparez le client source :
 1. Téléchargez le script SetupCrossTenantRelationshipForTargetTenant.ps1 pour la configuration du client cible à partir du [référentiel GitHub.](https://github.com/microsoft/cross-tenant/releases/tag/Preview)
 2. Enregistrez le script (SetupCrossTenantRelationshipForTargetTenant.ps1) sur l’ordinateur à partir duquel vous allez exécuter le script.
 3. Créez une connexion PowerShell distante au client Exchange Online cible. Là encore, assurez-vous que vous avez les autorisations nécessaires pour exécuter les scripts de déploiement afin de configurer le certificat et le stockage Azure Key Vault, l’application de déplacement de boîte aux lettres, le point de terminaison de migration EXO et la relation d’organisation EXO.
-4. Modifiez le répertoire de dossiers de fichiers en emplacement de script ou vérifiez que le script est actuellement enregistré à l’emplacement actuellement dans votre session PowerShell distante.
+4. Modifiez le répertoire du dossier de fichiers en emplacement de script ou vérifiez que le script est actuellement enregistré à l’emplacement actuellement dans votre session PowerShell distante.
 5. Exécutez le script avec les valeurs et paramètres suivants.
 
    |Paramètre|Valeur|Obligatoire ou facultatif
    |---|---|---|
-   |-TargetTenantDomain|Domaine client cible, tel que fabrikam \. onmicrosoft.com.|Obligatoire|
-   |-ResourceTenantDomain|Domaine client source, tel que contoso \. onmicrosoft.com.|Obligatoire|
-   |-ResourceTenantAdminEmail|Adresse de messagerie de l’administrateur client source. Il s’agit de l’administrateur client source qui consentira à l’utilisation de l’application de migration de boîte aux lettres envoyée par l’administrateur cible. Il s’agit de l’administrateur qui recevra l’invitation par courrier électronique pour l’application.|Obligatoire|
-   |-ResourceTenantId|ID d’organisation client source (GUID).|Obligatoire|
-   |-SubscriptionId|L’abonnement Azure à utiliser pour créer des ressources.|Obligatoire|
-   |-ResourceGroup|Nom du groupe de ressources Azure qui contient ou contiendra le coffre de clés.|Obligatoire|
-   |-KeyVaultName|Instance Azure Key Vault qui stockera votre certificat/clé secrète d’application de migration de boîte aux lettres.|Obligatoire|
-   |-CertificateName|Nom du certificat lors de la génération ou de la recherche de certificat dans le coffre de clés.|Obligatoire|
-   |-CertificateSubject|Nom d’objet du certificat Azure Key Vault, tel que CN=contoso_fabrikam.|Obligatoire|
-   |-AzureResourceLocation|Emplacement du groupe de ressources Azure et du coffre de clés.|Obligatoire|
+   |-TargetTenantDomain|Domaine client cible, tel que fabrikam \. onmicrosoft.com.|Requis|
+   |-ResourceTenantDomain|Domaine client source, tel que contoso \. onmicrosoft.com.|Requis|
+   |-ResourceTenantAdminEmail|Adresse de messagerie de l’administrateur client source. Il s’agit de l’administrateur client source qui consentira à l’utilisation de l’application de migration de boîte aux lettres envoyée par l’administrateur cible. Il s’agit de l’administrateur qui recevra l’invitation par courrier électronique pour l’application.|Requis|
+   |-ResourceTenantId|ID d’organisation client source (GUID).|Requis|
+   |-SubscriptionId|L’abonnement Azure à utiliser pour créer des ressources.|Requis|
+   |-ResourceGroup|Nom du groupe de ressources Azure qui contient ou contiendra le coffre de clés.|Requis|
+   |-KeyVaultName|Instance Azure Key Vault qui stockera votre certificat/clé secrète d’application de migration de boîte aux lettres.|Requis|
+   |-CertificateName|Nom du certificat lors de la génération ou de la recherche de certificat dans le coffre de clés.|Requis|
+   |-CertificateSubject|Nom d’objet du certificat Azure Key Vault, tel que CN=contoso_fabrikam.|Requis|
+   |-AzureResourceLocation|Emplacement du groupe de ressources Azure et du coffre de clés.|Requis|
    |-ExistingApplicationId|Application de migration de messagerie à utiliser si une application a déjà été créée.|Facultatif|
-   |-AzureAppPermissions|Autorisations requises pour l’application de migration de boîte aux lettres, telles que Exchange ou MSGraph (Exchange pour le déplacement de boîtes aux lettres, MSGraph pour l’utilisation de cette application pour envoyer une invitation de lien de consentement au client de ressource).|Obligatoire|
+   |-AzureAppPermissions|Autorisations requises pour l’application de migration de boîte aux lettres, telles que Exchange ou MSGraph (Exchange pour le déplacement de boîtes aux lettres, MSGraph pour l’utilisation de cette application pour envoyer une invitation de lien de consentement au client de ressource).|Requis|
    |-UseAppAndCertGeneratedForSendingInvitation|Paramètre d’utilisation de l’application créée pour la migration à utiliser pour envoyer une invitation de lien de consentement à l’administrateur client source. S’il n’est pas présent, les informations d’identification de l’administrateur cible sont invités à se connecter au gestionnaire d’invitation Azure et à envoyer l’invitation en tant qu’administrateur cible.|Facultatif|
    |-KeyVaultAuditStorageAccountName|Compte de stockage dans lequel les journaux d’audit du coffre de clés sont stockés.|Facultatif|
    |-KeyVaultAuditStorageResourceGroup|Groupe de ressources qui contient le compte de stockage pour le stockage des journaux d’audit du coffre de clés.|Facultatif|
@@ -119,7 +119,7 @@ Préparez le client source :
     > [!NOTE]
     > Assurez-vous que vous avez installé le module Azure AD PowerShell avant d’exécutez les scripts. Reportez-vous [ici pour les étapes](/powershell/azure/install-az-ps) d’installation
 
-6. Le script s’interrompt et vous demande d’accepter ou d’accepter Exchange’application de migration de boîtes aux lettres qui a été créée au cours de ce processus. Voici un exemple.
+6. Le script s’interrompt et vous demande d’accepter ou d’accepter l’application Exchange migration de boîtes aux lettres qui a été créée au cours de ce processus. Voici un exemple.
 
     ```powershell
     PS C:\PowerShell\> # Note: the below User.Invite.All permission is optional, and will only be used to retrieve access token to send invitation email to source tenant
@@ -146,7 +146,7 @@ Préparez le client source :
 
 7. Une URL s’affiche dans la session PowerShell distante. Copiez le lien fourni pour le consentement de votre client et collez-le dans un navigateur Web.
 
-8. Connectez-vous avec vos informations d’identification d’administrateur global. Lorsque l’écran suivant est présenté, sélectionnez **Accepter**.
+8. Connectez-vous **avec vos informations d’identification** d’administrateur Azure AD DC **ou** d’administrateur global. Lorsque l’écran suivant est présenté, sélectionnez **Accepter**.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Boîte de dialogue Accepter les autorisations.":::
 
@@ -180,7 +180,7 @@ La configuration de l’administrateur cible est maintenant terminée !
 
 4. Téléchargez le script SetupCrossTenantRelationshipForResourceTenant.ps1 pour la configuration du client source à partir du GitHub de données ici [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) :
 
-5. Créez une connexion PowerShell distante au client source avec vos autorisations Exchange administrateur. Les autorisations d’administrateur global ne sont pas nécessaires pour configurer le client source, uniquement le client cible en raison du processus de création d’application Azure.
+5. Créez une connexion PowerShell distante au client source avec vos autorisations Exchange administrateur. **Les autorisations** d’administrateur Azure AD DC ou d’administrateur global ne sont pas requises pour configurer le client source, uniquement le client cible en raison du processus de création d’application Azure. 
 
 6. Modifiez le répertoire vers l’emplacement du script ou vérifiez que le script est actuellement enregistré à l’emplacement actuellement dans votre session PowerShell distante.
 
@@ -289,7 +289,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>Déplacer les boîtes aux lettres vers la source d’origine
 
-Si un déplacement de boîte aux lettres vers le client source d’origine est nécessaire, le même ensemble d’étapes et de scripts devra être exécuté dans les nouveaux locataires source et cible. L’objet Relation d’organisation existant sera mis à jour ou appendé, et non recréé.
+Si un déplacement de boîte aux lettres vers le client source d’origine est nécessaire, le même ensemble d’étapes et de scripts devra être exécuté dans les nouveaux locataires source et cible. L’objet Relation d’organisation existant sera mis à jour ou mis à jour, et non recréé.
 
 ## <a name="prepare-target-user-objects-for-migration"></a>Préparer les objets utilisateur cibles pour la migration
 
@@ -355,7 +355,7 @@ Vous devez vous assurer que les objets et attributs suivants sont définies dans
     > [!NOTE]
     > EXEMPLE – EN L’ABSENCE DE GARANTIE
     >
-    > Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et à la cible Active Directory sur site (pour marquer l’objet ADUser). Si le litige ou la récupération d’élément unique est activé pour la source, définissez-le sur le compte de destination.  Cela augmente la taille de benne du compte de destination à 100 Go.
+    > Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et à la cible Active Directory sur site (pour marquer l’objet ADUser). Si la source est pour litige ou si la récupération d’élément unique est activée, définissez-la sur le compte de destination.  Cela augmente la taille de benne du compte de destination à 100 Go.
 
     ```powershell
     $ELCValue = 0
@@ -440,7 +440,7 @@ Oui, vous devez mettre à jour la cibleAddress (RemoteRoutingAddress/ExternalEma
 
 **Les réunions Teams-elles migrer entre les locataires ?**
 
-Les réunions déplacent toutefois l’URL Teams réunion n’est pas mise à jour lorsque les éléments migrent entre les locataires. Étant donné que l’URL n’est pas valide dans le client cible, vous devez supprimer et recréer Teams réunions.
+Les réunions déplacent toutefois l’URL Teams réunion n’est pas mise à jour lorsque les éléments migrent entre les locataires. Étant donné que l’URL n’est pas valide dans le client cible, vous devrez supprimer et recréer Teams réunions.
 
 **Le contenu Teams de conversation migre-t-il entre les locataires ?**
 
@@ -457,7 +457,7 @@ Get-MoveRequest -Flags "CrossTenant"
 **Pouvez-vous fournir des exemples de scripts pour copier les attributs utilisés lors des tests ?**
 
 > [!NOTE]
-> EXEMPLE – EN L’ABSENCE DE GARANTIE<br/>Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et aux services de domaine Active Directory locaux cibles (pour marquer l’objet ADUser). Si le litige ou la récupération d’élément unique est activé pour la source, définissez-le sur le compte de destination.  Cela augmente la taille de benne du compte de destination à 100 Go.
+> EXEMPLE – EN L’ABSENCE DE GARANTIE<br/>Ce script suppose une connexion à la boîte aux lettres source (pour obtenir les valeurs sources) et aux services de domaine Active Directory locaux cibles (pour marquer l’objet ADUser). Si la source est pour litige ou si la récupération d’élément unique est activée, définissez-la sur le compte de destination.  Cela augmente la taille de benne du compte de destination à 100 Go.
 
 ```powershell
 #Dumps out the test mailboxes from SourceTenant
@@ -508,7 +508,7 @@ Pour ce déploiement initial, les utilisateurs devront reconstruire leur profil 
 
 Il existe une matrice de rôles basée sur l’hypothèse de tâches déléguées lors de l’exécution d’un déplacement de boîte aux lettres. Actuellement, deux rôles sont requis :
 
-- Le premier rôle est une tâche de configuration qui établit l’autorisation de déplacer du contenu vers ou hors de vos limites client/organisation. Étant donné que le déplacement des données hors de votre contrôle organisationnel est une préoccupation critique pour toutes les entreprises, nous avons choisi le rôle d’administrateur d’organisation (OrgAdmin) le plus élevé. Ce rôle doit modifier ou configurer un nouvel OrganizationRelationship qui définit la -MailboxMoveCapability avec l’organisation distante. Seul l’OrgAdmin peut modifier le paramètre MailboxMoveCapability, tandis que d’autres attributs de OrganizationRelationhip peuvent être gérés par l’administrateur du partage fédéré.
+- Le premier rôle est une tâche de configuration qui établit l’autorisation de déplacer du contenu vers ou hors de vos limites client/organisation. Étant donné que le déplacement des données hors de votre contrôle organisationnel est une préoccupation critique pour toutes les entreprises, nous avons choisi le rôle d’administrateur d’organisation (OrgAdmin) le plus élevé. Ce rôle doit modifier ou configurer un nouvel OrganizationRelationship qui définit la -MailboxMoveCapability avec l’organisation distante. Seul l’OrgAdmin peut modifier le paramètre MailboxMoveCapability, tandis que d’autres attributs de OrganizationRelationhip peuvent être gérés par l’administrateur de partage fédéré.
 
 - Le rôle d’exécution des commandes de déplacement réelles peut être délégué à une fonction de niveau inférieur. Le rôle de déplacement de boîtes aux lettres se voit attribuer la possibilité de déplacer des boîtes aux lettres à l’intérieur ou à l’intérieur de l’organisation à l’aide du `-RemoteTenant` paramètre.
 
@@ -561,7 +561,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 ```
 
 > [!NOTE]
-> Outre ce proxy X500, vous devez copier tous les proxys X500 de la boîte aux lettres dans la source vers la boîte aux lettres dans la cible.
+> Outre ce proxy X500, vous devrez copier tous les proxys X500 de la boîte aux lettres dans la source vers la boîte aux lettres dans la cible.
 
 **Où commencer à résoudre les problèmes si les déplacements ne fonctionnent pas ?**
 
@@ -629,7 +629,7 @@ N’oubliez pas que cette fonctionnalité est actuellement en prévisualisation 
 
 - **Problème : les objets MailUser avec des adresses SMTP principales « externes » sont modifiés/réinitialisés sur les domaines revendiqués par l’entreprise « internes »**
 
-  Les objets MailUser sont des pointeurs vers des boîtes aux lettres non locales. Dans le cas des migrations de boîtes aux lettres entre locataires, nous utilisons des objets MailUser pour représenter la boîte aux lettres source (du point de vue de l’organisation cible) ou la boîte aux lettres cible (du point de vue de l’organisation source). Les utilisateurs de messagerie auront une adresse ExternalEmailAddress (targetAddress) qui pointe vers l’adresse smtp de la boîte aux lettres réelle (ProxyTest@fabrikam.onmicrosoft.com) et l’adresse PRIMARYSMTP qui représente l’adresse SMTP affichée de l’utilisateur de boîte aux lettres dans l’annuaire. Certaines organisations choisissent d’afficher l’adresse SMTP principale en tant qu’adresse SMTP externe, et non en tant qu’adresse propriétaire/vérifiée par le client local (par exemple, fabrikam.com plutôt que comme contoso.com).  Toutefois, une fois qu’un objet plan de service Exchange est appliqué à MailUser via des opérations de gestion des licences, l’adresse SMTP principale est modifiée pour s’afficher en tant que domaine vérifié par l’organisation locale (contoso.com). Il existe deux raisons possibles :
+  Les objets MailUser sont des pointeurs vers des boîtes aux lettres non locales. Dans le cas des migrations de boîtes aux lettres entre locataires, nous utilisons des objets MailUser pour représenter la boîte aux lettres source (du point de vue de l’organisation cible) ou la boîte aux lettres cible (du point de vue de l’organisation source). Les utilisateurs de messagerie auront une adresse ExternalEmailAddress (targetAddress) qui pointe vers l’adresse smtp de la boîte aux lettres réelle (ProxyTest@fabrikam.onmicrosoft.com) et l’adresse PRIMARYSMTP qui représente l’adresse SMTP affichée de l’utilisateur de boîte aux lettres dans l’annuaire. Certaines organisations choisissent d’afficher l’adresse SMTP principale en tant qu’adresse SMTP externe, et non en tant qu’adresse propriétaire/vérifiée par le client local (par exemple, fabrikam.com plutôt que comme contoso.com).  Toutefois, une fois qu’un objet plan de service Exchange est appliqué à MailUser via des opérations de gestion des licences, l’adresse SMTP principale est modifiée pour s’afficher comme un domaine vérifié par l’organisation locale (contoso.com). Il existe deux raisons possibles :
 
   - Lorsqu’un plan de service Exchange est appliqué à un mailuser, le processus Azure AD commence à appliquer le nettoyage de proxy pour s’assurer que l’organisation locale n’est pas en mesure d’envoyer des messages électroniques, usurpations ou messages à partir d’un autre client. Toute adresse SMTP sur un objet destinataire avec ces plans de service sera supprimée si l’adresse n’est pas vérifiée par l’organisation locale. Comme c’est le cas dans l’exemple, le domaine Fabikam.com n’est PAS vérifié par le client contoso.onmicrosoft.com, de sorte que le nettoyage supprime ce fabrikam.com domaine. Si vous souhaitez rendre persistants ces domaines externes sur MailUser, avant la migration ou après la migration, vous devez modifier vos processus de migration afin d’obtenir des licences à la fin du déplacement ou avant le déplacement pour vous assurer que la marque externe attendue est appliquée aux utilisateurs. Vous devez vous assurer que l’objet de boîte aux lettres est correctement titulaire d’une licence pour ne pas affecter le service de messagerie.<br/><br/>Un exemple de script pour supprimer les plans de service sur un MailUser dans le Contoso.onmicrosoft.com client est illustré ici.
 
@@ -718,7 +718,7 @@ N’oubliez pas que cette fonctionnalité est actuellement en prévisualisation 
       |Exchange Online Multi-Geo|
       |Exchange Online (plan 1)|
       |Exchange Online POP|
-      |Exchange Online Protection|
+      |Exchange Online Protection|
       |Obstacles à l’information|
       |Protection des informations pour Office 365 – Premium|
       |Protection des informations pour Office 365 – Standard|

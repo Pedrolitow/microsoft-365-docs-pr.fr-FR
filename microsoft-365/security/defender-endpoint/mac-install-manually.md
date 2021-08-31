@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32da15254d011e67959c7ebeff42ab7024eb0895
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6cf8777a5dd3614cb5649eb4c95f6d69d14540fd
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571830"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747052"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -112,7 +112,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
     ![Préférences de sécurité des extensions système2.](images/big-sur-install-4.png)
 
-7. Ouvrez La sécurité **des** préférences système & confidentialité et accédez à l’onglet Confidentialité. Accordez l’autorisation d’accès disque total à Microsoft Defender  >   **ATP** et Microsoft **Defender ATP Endpoint Security Extension**.  
+7. Ouvrez La sécurité **des** préférences système & confidentialité et accédez à l’onglet Confidentialité. Accordez l’autorisation d’accès disque total à Microsoft Defender \>  **ATP** et Microsoft **Defender ATP Endpoint Security Extension**.  
 
     ![Accès disque complet.](images/big-sur-install-5.png)
 
@@ -148,7 +148,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 > [!CAUTION]
 > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
 
-1. Pour accorder le consentement, **ouvrez La** sécurité des préférences système  >  **&**  >  **confidentialité** confidentialité accès disque  >  **total**. Cliquez sur l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue). Sélectionnez Microsoft Defender pour le point de terminaison.
+1. Pour accorder le consentement, **ouvrez La** sécurité des préférences système \> **&** \> **confidentialité** confidentialité accès disque \> **total**. Cliquez sur l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue). Sélectionnez Microsoft Defender pour le point de terminaison.
 
 2. Exécutez un test de détection antivirus pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 

@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 464ed75474256e62ccb75756b3949441aae24d04483ccc4ca653db1439d0015b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ab36313b25ab61ece35041f7cc6de1064465ecb
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793309"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747606"
 ---
 # <a name="submit-or-update-indicator-api"></a>API d’indicateur d’soumission ou de mise à jour
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -76,18 +76,18 @@ Content-Type|string|application/json. **Obligatoire**.
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 indicatorValue|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
-indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
-action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
-application|Chaîne|Application associée à l’indicateur. **Optional**
+indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileMd5 », « CertificateThumbprint », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
+action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « Warn », « Block », « Audit », « BlockAndRemediate », « AlertAndBlock » et « Allowed ». **Obligatoire**
+application|Chaîne|Application associée à l’indicateur. Ce champ fonctionne uniquement pour les nouveaux indicateurs. Il ne met pas à jour la valeur d’un indicateur existant. **Optional**
 title|Chaîne|Titre de l’alerte de l’indicateur. **Obligatoire**
 description|Chaîne|Description de l’indicateur. **Obligatoire**
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur. **Optional**
 Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
 recommendedActions|Chaîne|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
-rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
+rbacGroupNames|String|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
 
 ## <a name="response"></a>Réponse
 

@@ -19,18 +19,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05a2c4e29b56d973f0a0a924390fa5b4209f346a6cdf390fa480e88764860f2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8787a6bd5818eda5f5302fe149fd7b56db296abd
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793363"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745852"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -41,7 +41,7 @@ ms.locfileid: "53793363"
 Une erreur d’installation peut ou non entraîner un message d’erreur significatif de la part du gestionnaire de package. Pour vérifier si l’installation a réussi, obtenez et vérifiez les journaux d’installation en utilisant :
 
 ```bash
- sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
+ sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -60,13 +60,18 @@ Vérifiez également la [configuration du client](linux-install-manually.md#clie
 
 N’oubliez pas que le package que vous installez correspond à la distribution et à la version de l’hôte.
 
-| package                       | distribution                             |
-|-------------------------------|------------------------------------------|
-| mdatp-rhel8. Linux.x86_64.rpm  | Oracle, RHEL et CentOS 8.x              |
-| mdatp-sles12. Linux.x86_64.rpm | SuSE Linux Enterprise Server 12.x        |
-| mdatp-sles15. Linux.x86_64.rpm | SuSE Linux Enterprise Server 15.x        |
-| mdatp. Linux.x86_64.rpm        | Oracle, RHEL et CentOS 7.x              |
-| mdatp. Linux.x86_64.deb        | Debian et Ubuntu 16.04, 18.04 et 20.04 |
+<br>
+
+****
+
+|package|distribution|
+|---|---|
+|mdatp-rhel8. Linux.x86_64.rpm|Oracle, RHEL et CentOS 8.x|
+|mdatp-sles12. Linux.x86_64.rpm|SuSE Linux Enterprise Server 12.x|
+|mdatp-sles15. Linux.x86_64.rpm|SuSE Linux Enterprise Server 15.x|
+|mdatp. Linux.x86_64.rpm|Oracle, RHEL et CentOS 7.x|
+|mdatp. Linux.x86_64.deb|Debian et Ubuntu 16.04, 18.04 et 20.04|
+|
 
 Pour [un déploiement](linux-install-manually.md)manuel, assurez-vous que la version et la version correctes ont été choisies.
 

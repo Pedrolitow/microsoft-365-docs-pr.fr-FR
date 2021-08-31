@@ -19,22 +19,22 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d8e83cfd877266bac6247246c078dbdc811368e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d7decb3e566f8bb0abf4a3aec12e2e3a43ae3511
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563509"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58746434"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Examiner les utilisateurs dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
-Une partie de votre enquête sur les incidents peut inclure des comptes d’utilisateur. Commencez par **l’onglet Utilisateurs** pour un incident à partir d’incidents **& alertes >** incident *>* **utilisateurs.** 
+Une partie de votre enquête sur les incidents peut inclure des comptes d’utilisateur. Commencez par **l’onglet Utilisateurs** pour un incident à partir **d’Incidents &'incident** des \> **_alertes_*_ \> Utilisateurs***.
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident.":::
 
@@ -55,32 +55,49 @@ En outre, vous pouvez prendre des mesures directement dans le portail Microsoft 
 
 Vous pouvez également voir cette page en sélectionnant le nom du compte d’utilisateur dans la liste de la page **Utilisateurs.**
 
-la page Microsoft 365 Defender portail d’entreprise combine les informations de Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité et Microsoft Cloud App Security (en fonction des licences dont vous avez la licence). 
+Vous pouvez voir l’appartenance à un groupe pour l’utilisateur, en sélectionnant le numéro sous **Groupes.**
+
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="Exemple d’appartenance à un groupe pour un utilisateur dans le portail Microsoft 365 Defender web":::
+
+En sélectionnant l’icône sous **Responsable,** vous pouvez voir où se trouve l’utilisateur dans l’arborescence de l’organisation.
+
+La page Microsoft 365 Defender’utilisateur du portail d’entreprise combine les informations de Microsoft Defender pour le point de terminaison, Microsoft Defender pour identité et Microsoft Cloud App Security (en fonction des licences dont vous avez la licence).
 
 Cette page affiche des informations spécifiques au risque de sécurité d’un compte d’utilisateur. Cela inclut un score qui permet d’évaluer les risques et les événements et alertes récents qui ont contribué au risque global de l’utilisateur.
 
-À partir de cette page, vous pouvez faire les actions supplémentaires suivantes : 
+À partir de cette page, vous pouvez faire les actions supplémentaires suivantes :
 
 - Marquer le compte d’utilisateur comme compromis
 - Exiger que l’utilisateur se connecte à nouveau
 - Suspendre le compte d’utilisateur
 - Voir les paramètres Azure Active Directory compte d’utilisateur (Azure AD)
 - Afficher les fichiers du compte d’utilisateur
-- Afficher les fichiers partagés avec cet utilisateur. 
+- Afficher les fichiers partagés avec cet utilisateur.
 
 Voici un exemple.
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Exemple d’actions sur un compte d’utilisateur pour un incident dans le portail Microsoft 365 Defender":::
-
 
 <!--
 You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
 
 Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
 
---> 
+-->
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="view-lateral-movement-paths"></a>Afficher les chemins de déplacement latéral
+
+En sélectionnant  l’onglet Chemins de déplacement latéral, vous pouvez afficher une carte entièrement dynamique et cliquable qui vous fournit une représentation visuelle des chemins de déplacement latéral vers et depuis cet utilisateur qui peuvent être utilisés pour insérez votre réseau.
+
+La carte vous fournit une liste du nombre de sauts entre les ordinateurs ou les utilisateurs qu’un utilisateur malveillant doit utiliser pour compromettre un compte sensible, et si l’utilisateur dispose d’un compte sensible, vous pouvez voir le nombre de ressources et de comptes directement connectés.
+
+Si un chemin de mouvement latéral potentiel n’a pas été détecté pour l’entité au cours des deux derniers jours, le graphique ne s’affiche pas. Sélectionnez une date différente à l’aide de l’affichage d’une autre date pour afficher les graphiques des chemins de déplacement latéral précédents découverts pour cette entité. Le rapport de déplacement latéral est toujours disponible pour vous fournir des informations sur les chemins de déplacement latéral potentiels découverts et peut être personnalisé par heure.
+
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="Exemple de chemin de déplacement latéral pour un utilisateur dans le portail Microsoft 365 Defender gauche":::
+
+Pour plus d’informations, voir [Chemins de déplacement latéral.](/defender-for-identity/use-case-lateral-movement-path)
+
+## <a name="next-steps"></a>Étapes suivantes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête.](investigate-incidents.md)
 

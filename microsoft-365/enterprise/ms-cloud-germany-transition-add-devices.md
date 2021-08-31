@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: 79234b1398e26af5a2848002ea606d97137e3053
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573090"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745696"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’appareil pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -35,7 +35,7 @@ Si un Windows 10 est joint à Azure AD, il doit être déconnecté d’Azure AD 
 [![Azure AD Device Re-Join Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-Si l’utilisateur est un administrateur sur l’appareil Windows 10, il peut désinsser l’appareil d’Azure AD et le rejoindre à nouveau en trois étapes.
+Si l’utilisateur est un administrateur sur l’appareil Windows 10, l’utilisateur peut désinsser l’appareil d’Azure AD et le réinsérez en trois étapes.
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>Étape 1 : Déterminer si l’appareil est joint à Azure ID
 
@@ -61,13 +61,15 @@ Si l’utilisateur est un administrateur sur l’appareil Windows 10, il peut d�
 6. Redémarrez l’appareil.
 7. Connectez-vous avec l’adresse e-mail et le mot de passe de votre compte de travail.
 
-Si l’utilisateur n’est pas administrateur de l’appareil, un administrateur général Azure AD peut créer le compte d’administrateur local sur l’appareil en suivant ce chemin de configuration et l’un des deux :
+Si l’utilisateur n’est pas administrateur de l’appareil, un  administrateur **Azure AD DC,** un administrateur d’application **cloud** ou un administrateur général peut créer le compte d’administrateur local sur l’appareil en suivant ce chemin de configuration et déjoinder l’appareil :
 
 *Paramètres > comptes > autres comptes > informations d’identification > ajouter un utilisateur sans compte Microsoft*
 
-Pour re-rejoindre, les informations d’identification de n’importe quel compte de travail de votre organisation peuvent être utilisées dans cette étape.
+Pour plus d’informations, consultez [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles?).
 
-Sachez que le compte de travail utilisé pour joindre l’appareil sera automatiquement promu en tant qu’administrateur de l’appareil.
+Pour rejoindre, les informations d’identification de n’importe quel compte de travail de votre organisation peuvent être utilisées dans cette étape.
+
+Considérez que le compte de travail utilisé pour joindre l’appareil sera automatiquement promu en tant qu’administrateur de l’appareil.
 Tout autre compte professionnel de l’organisation peut se connecter à l’appareil, mais ne dispose pas de privilèges d’administrateur.
 
 ## <a name="azure-ad-registered-workplace-joined-windows-10-devices"></a>Azure AD inscrit (joint à l’espace de travail) Windows 10 appareils
@@ -95,7 +97,7 @@ Si un Windows 10 est inscrit à Azure AD, il doit être déconnecté d’Azure A
 ### <a name="step-3-connect-the-device-to-azure-ad"></a>Étape 3 : Connecter l’appareil vers Azure AD
 
 1. Cliquez sur **Connecter**.
-2. Entrez l’adresse e-mail de votre compte de travail, puis cliquez sur **Suivant**.
+2. Entrez l’adresse e-mail de votre compte de travail, puis cliquez sur **Suivant.**
 3. Entrez le mot de passe de votre compte de travail, puis cliquez **sur Se connectez.**
 4. Confirmez en cliquant sur **Terminé**. Votre compte de travail est de nouveau répertorié.
 
@@ -107,7 +109,7 @@ Pour Android, les utilisateurs doivent désins inscrire et réenregistrer leurs 
 
 - À partir de Portail d’entreprise, les utilisateurs peuvent se rendre sur l’onglet **Appareils** et supprimer l’appareil. Ensuite, réinscrivez l’appareil à l’aide Portail d’entreprise.
 
-- Les utilisateurs peuvent également se désins inscrire et s’inscrire à la nouvelle inscription en supprimant le compte de la page des paramètres du compte, puis en ajoutant à nouveaux le compte de travail.
+- Les utilisateurs peuvent également se désins inscrire et s’inscrire à leur nouvelle inscription en supprimant le compte de la page des paramètres du compte, puis en lisant le compte de travail.
 
 Pour désins inscrire et réenregistrer l’appareil sur Android à l’aide Microsoft Authenticator application :
 
@@ -127,7 +129,7 @@ Pour désins inscrire et réenregistrer l’appareil sur Android, Portail d’en
 
 1. Lancez Portail d’entreprise et allez sur **l’onglet** Appareils.
 2. Sélectionnez l’appareil pour voir les détails de l’appareil.
-3. Dans le menu points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
+3. Dans le menu des points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
 4. Vous devez maintenant être déconnecté de l’application Portail d’entreprise’application. Sélectionnez **Se connectez** pour ré-inscrire l’appareil.
 
 Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact sur l’administration ou l’utilisation, examinez les informations sur Azure Active Directory (Azure AD) dans Des informations [Azure AD](ms-cloud-germany-transition-azure-ad.md)supplémentaires pour la migration à partir de Microsoft Cloud Deutschland .
@@ -167,7 +169,7 @@ Pour réussir, vous devez uniquement désins inscrire et réenregistrer vos appa
 
 Pour vérifier si vos appareils sont enregistrés dans le cloud public, vous devez exporter et télécharger la liste des appareils à partir du portail Azure AD vers une feuille de calcul Excel. Ensuite, filtrez les appareils inscrits (à l’aide de la colonne _registeredTime)_ après la date à laquelle votre organisation a passé la phase 9 du [processus de migration.](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)
 
-**Dois-je toujours ajouter le nom DNS comme indiqué dans Créer des enregistrements DNS pour Microsoft à l’aide [Windows DNS ?](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)**
+**Dois-je toujours ajouter le nom DNS comme indiqué dans Créer des enregistrements DNS pour Microsoft à l’aide [Windows DNS ?](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)**
 
 Cette entrée DNS n’est plus nécessaire pour réen inscrire à nouveau votre appareil. 
 

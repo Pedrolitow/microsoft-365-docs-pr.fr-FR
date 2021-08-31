@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont les besoins de l’entreprise sont satisfaits par Microsoft 365 entreprise.
-ms.openlocfilehash: 36fec158926bfa4530c0dfa6a862e877204be0cd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: aa0779cfadb12aa0213a74f2e348951be4eca4f5
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569500"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745976"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastructure informatique de Contoso et besoins de l’entreprise
 
@@ -93,7 +93,7 @@ Les besoins commerciaux de Contoso sont en cinq catégories principales :
 
   Réduisez les coûts de maintenance et de support et améliorez les performances pour la solution d’accès à distance en déplaçant les ressources couramment accessibles vers le cloud.
 
-- Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la charge (B2B)
+- Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la vente (B2B)
 
   Remplacez un extranet partenaire coûteux et coûteux par une solution basée sur le cloud qui utilise l’authentification fédérée.
 
@@ -121,7 +121,7 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 |  | Améliorer la productivité pour les travailleurs mobiles et à distance | Charges de travail Microsoft 365 et données informatiques |
 |  | Accroître la créativité et l’innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sécurité |  |  |
-|  | Gestion des identités et des accès | Comptes d’administrateur général dédiés avec Azure AD Multi-Factor Authentication (MFA) et Azure AD Privileged Identity Management (PIM) <BR> Authentification multifacteur pour tous les comptes d’utilisateur <BR> Accès conditionnel <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Gestion des identités et des accès | Comptes d’administrateur général dédiés avec Azure AD Multi-Factor Authentication (MFA) et Azure AD Privileged Identity Management (PIM) <BR> Authentification multifacteur pour tous les comptes d’utilisateur <BR> Accès conditionnel <BR> Lecteur de sécurité <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Defender pour Office 365 <BR> Microsoft Defender pour Office 365 <BR> Microsoft 365 et réponse aux menaces <BR> |
 |  | Protection des informations | Azure Information Protection <BR> Protection contre la perte de données (DLP) <BR> Protection des informations Windows (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Gestion de la sécurité | Azure Defender  <BR> Centre de sécurité Windows Defender |

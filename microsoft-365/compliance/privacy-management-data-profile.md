@@ -16,18 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la vue d’ensemble et le profil de données dans la gestion de la confidentialité et découvrez comment obtenir des informations sur les données personnelles dans l’environnement Microsoft 365 de votre organisation.
-ms.openlocfilehash: 1be4d65d117d3fa8b05bb9db88745147aea6b5293c3c1f96d57eb5b7ba04c0d1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4007fa1c55857211c3cf188a089f8e6d246153ae
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865202"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744952"
 ---
 # <a name="find-and-visualize-personal-data-in-privacy-management-preview"></a>Rechercher et visualiser des données personnelles dans la gestion de la confidentialité (aperçu)
-
-Dans cet article : découvrez  les fonctionnalités des **pages** de vue d’ensemble et de profil de données et comment elles peuvent fournir des informations sur vos données.
-
-## <a name="purpose-of-the-overview-and-data-profile"></a>Objectif de la vue d’ensemble et du profil de données
 
 Microsoft 365 gestion de la confidentialité vous offre des fonctionnalités pour rechercher et visualiser les données personnelles dans votre environnement. La solution automatise la découverte des biens de données personnelles dans Exchange, SharePoint, OneDrive et Teams, et fournit des tableaux de bord qui fournissent des informations clés sur les données. Vos administrateurs de confidentialité peuvent agir sur ces informations pour renforcer l’approche de votre organisation en matière de confidentialité et réduire les risques.
 

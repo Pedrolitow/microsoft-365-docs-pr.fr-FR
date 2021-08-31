@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9047c6e5b91ebd2d7e0a4e953ca907b31cb476f8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 96f7693e83bf4c3f4a1f14f39d99de55f7ef1979
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573054"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745024"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurer et valider des exclusions pour Microsoft Defender pour le point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -52,10 +52,10 @@ Les exclusions peuvent être utiles pour éviter les détections incorrectes sur
 
 Le tableau suivant indique les types d’exclusion pris en charge par Defender pour Endpoint sur Mac.
 
-Exclusion|Définition|範例
+Exclusion|Définition|Exemples
 ---|---|---
 Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’ordinateur|`.test`
-Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
+File|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
 Folder|Tous les fichiers sous le dossier spécifié (de manière récursive)|`/var/log/` <p> `/var/*/`
 Processus|Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci|`/bin/cat` <p> `cat` <p> `c?t`
 
@@ -66,8 +66,8 @@ Caractère générique|Description|Exemple|Correspondances|Ne correspond pas
 \*|Correspond à n’importe quel nombre de caractères, y compris aucun (notez que lorsque ce caractère générique est utilisé à l’intérieur d’un chemin d’accès, il ne remplace qu’un seul dossier)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|Correspond à n’importe quel caractère|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
->[!NOTE]
->Le produit tente de résoudre les liens fermes lors de l’évaluation des exclusions. La résolution firmlink ne fonctionne pas lorsque l’exclusion contient des caractères génériques ou que le fichier cible (sur le `Data` volume) n’existe pas.
+> [!NOTE]
+> Le produit tente de résoudre les liens fermes lors de l’évaluation des exclusions. La résolution firmlink ne fonctionne pas lorsque l’exclusion contient des caractères génériques ou que le fichier cible (sur le `Data` volume) n’existe pas.
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>Comment configurer la liste des exclusions
 
@@ -77,7 +77,7 @@ Pour plus d’informations sur la configuration des exclusions à partir de JAMF
 
 ### <a name="from-the-user-interface"></a>À partir de l’interface utilisateur
 
-Ouvrez l’application Defender for Endpoint et accédez à Gérer les **paramètres** Ajouter ou supprimer une exclusion... , comme illustré  >  dans la capture d’écran suivante :
+Ouvrez l’application Defender for Endpoint et accédez à Gérer les **paramètres** Ajouter ou supprimer une exclusion... , comme illustré \> dans la capture d’écran suivante :
 
 ![Capture d’écran Gérer les exclusions.](images/mdatp-37-exclusions.png)
 

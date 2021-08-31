@@ -15,18 +15,18 @@ f1.keywords:
 - NOCSH
 description: Cet article contient des informations sur l’utilisation de fenêtres popout légères pour améliorer les performances de téléchargement des messages Outlook sur le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 612774478f5b649901d6eae9dccf332299fa53d38331c6ced847ea8d05be104e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f2f30f4a725add062ff6d800a9cb3953dfeb078
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840766"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745684"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Utiliser des fenêtres publicitaires légères pour réduire la mémoire utilisée lors de la lecture des messages électroniques
 
 Cet article contient des informations pour améliorer les performances de téléchargement des messages Outlook sur le web. Cet article fait partie de la planification réseau et de l’optimisation des performances [pour Office 365](./network-planning-and-performance.md) projet.
   
-En tant qu’administrateur Office 365 général, vous pouvez configurer Outlook sur le web pour fournir des fenêtres _publicitaires légères,_ une version plus petite et moins intensive en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer. Lorsque des fenêtres popout légères sont configurées pour Outlook sur le web, les composants restituer côté serveur sont chargés afin d’optimiser les performances.
+En tant qu’administrateur d’application **Office 365,** administrateur général ou administrateur **utilisateur,** vous pouvez configurer Outlook sur le web pour fournir des fenêtres _publicitaires allégées,_ une version plus petite et moins intensive en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer.  Lorsque des fenêtres popout légères sont configurées pour Outlook sur le web, les composants restituer côté serveur sont chargés afin d’optimiser les performances.
   
 > [!NOTE]
 > Depuis mars 2018, les fenêtres publicitaires légères ne sont pas disponibles pour les messages qui spécifient des restrictions de droits d’utilisation, tels que la Gestion des droits d’information (IRM).

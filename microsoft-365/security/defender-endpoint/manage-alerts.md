@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b91773a5cfa411c762aba939ba53d8f35be16f7a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: c0147071c79acd29db52f86aebdff2dfcf5762f0
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573042"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745060"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Gérer les alertes microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,13 +43,15 @@ La sélection d’une alerte dans l’un de ces lieux fait monter le volet **de 
 ![Image du volet de gestion des alertes et de la file d’attente des alertes.](images/atp-alerts-selected.png)
 
 ## <a name="link-to-another-incident"></a>Lien vers un autre incident
-Vous pouvez créer un incident à partir de l’alerte ou d’un lien vers un incident existant. 
+
+Vous pouvez créer un incident à partir de l’alerte ou d’un lien vers un incident existant.
 
 ## <a name="assign-alerts"></a>Affecter des alertes
+
 Si une alerte n’est pas encore attribuée, vous pouvez sélectionner Affecter à moi **pour** vous attribuer l’alerte.
 
-
 ## <a name="suppress-alerts"></a>Supprimer des alertes
+
 Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans Centre de sécurité Microsoft Defender. Defender pour le point de terminaison vous permet de créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation.
 
 Les règles de suppression peuvent être créées à partir d’une alerte existante. Elles peuvent être désactivées et réactivées si nécessaire.
@@ -65,32 +67,35 @@ Le contexte de la règle vous permet d’adapter ce qui est mis en avant dans le
 
 Vous pouvez utiliser les exemples du tableau suivant pour vous aider à choisir le contexte d’une règle de suppression :
 
-| **Context**                           | **Définition**                                                                                                                                              | **Exemples de scénarios**                                                                                                                                                                                                  |
-|:--------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Supprimer l’alerte sur cet appareil**    | Les alertes avec le même titre d’alerte et sur cet appareil spécifique seront supprimées uniquement. <br /><br />Toutes les autres alertes de cet appareil ne seront pas supprimées. | <ul><li>Un chercheur en sécurité examine un script malveillant qui a été utilisé pour attaquer d’autres appareils de votre organisation.</li><li>Un développeur crée régulièrement des scripts PowerShell pour son équipe.</li></ul> |
-| **Supprimer une alerte dans mon organisation** | Les alertes avec le même titre d’alerte sur n’importe quel appareil seront supprimées.                                                                                         | <ul><li>Un outil d’administration anodin est utilisé par tous les membres de votre organisation.</li></ul>                                                                                                                               |
+|Contexte|Définition|Exemples de scénarios|
+|---|---|---|
+|**Supprimer l’alerte sur cet appareil**|Les alertes avec le même titre d’alerte et sur cet appareil spécifique seront supprimées uniquement. <p> Toutes les autres alertes de cet appareil ne seront pas supprimées.|<ul><li>Un chercheur en sécurité examine un script malveillant qui a été utilisé pour attaquer d’autres appareils de votre organisation.</li><li>Un développeur crée régulièrement des scripts PowerShell pour son équipe.</li></ul>|
+|**Supprimer une alerte dans mon organisation**|Les alertes avec le même titre d’alerte sur n’importe quel appareil seront supprimées.|<ul><li>Un outil d’administration anodin est utilisé par tous les membres de votre organisation.</li></ul>|
 
-### <a name="suppress-an-alert-and-create-a-new-suppression-rule"></a>Supprimez une alerte et créez une règle de suppression :
-Créez des règles personnalisées pour contrôler quand les alertes sont supprimées ou résolues. Vous pouvez contrôler le contexte de suppression d’une alerte en spécifiant le titre de l’alerte, l’indicateur de compromis et les conditions. Après avoir spécifié le contexte, vous serez en mesure de configurer l’action et l’étendue de l’alerte. 
+### <a name="suppress-an-alert-and-create-a-new-suppression-rule"></a>Supprimer une alerte et créer une règle de suppression
+
+Créez des règles personnalisées pour contrôler quand les alertes sont supprimées ou résolues. Vous pouvez contrôler le contexte de suppression d’une alerte en spécifiant le titre de l’alerte, l’indicateur de compromis et les conditions. Après avoir spécifié le contexte, vous serez en mesure de configurer l’action et l’étendue de l’alerte.
 
 1. Sélectionnez l’alerte que vous souhaitez supprimer. Le volet Gestion  des alertes s’en charge.
 
-2.  Sélectionnez **Créer une règle de suppression.**
+2. Sélectionnez **Créer une règle de suppression.**
 
     Vous pouvez créer une condition de suppression à l’aide de ces attributs. Un opérateur AND est appliqué entre chaque condition, de sorte que la suppression se produit uniquement si toutes les conditions sont remplies.
-    
-    * Fichier SHA1
-    * Nom de fichier : caractère générique pris en charge
-    * Chemin d’accès du dossier - caractère générique pris en charge
-    * Adresse IP
-    * URL : caractère générique pris en charge
-    * Ligne de commande : caractère générique pris en charge
+
+    - Fichier SHA1
+    - Nom de fichier : caractère générique pris en charge
+    - Chemin d’accès du dossier - caractère générique pris en charge
+    - Adresse IP
+    - URL : caractère générique pris en charge
+    - Ligne de commande : caractère générique pris en charge
 
 3. Sélectionnez **l’IOC déclenchant l’événement.**
-    
-4. Spécifiez l’action et l’étendue de l’alerte. <br>
-   Vous pouvez résoudre automatiquement une alerte ou la masquer sur le portail. Les alertes qui sont automatiquement résolues apparaissent dans la section résolue de la file d’attente, de la page d’alertes et de la chronologie de l’appareil, et apparaissent comme résolues dans les API Defender for Endpoint. <br><br> Les alertes marquées comme masquées seront supprimées de l’ensemble du système, à la fois sur les alertes associées de l’appareil et à partir du tableau de bord et ne seront pas diffusées dans les API Defender for Endpoint.
 
+4. Spécifiez l’action et l’étendue de l’alerte.
+
+   Vous pouvez résoudre automatiquement une alerte ou la masquer sur le portail. Les alertes qui sont automatiquement résolues apparaissent dans la section résolue de la file d’attente, de la page d’alertes et de la chronologie de l’appareil, et apparaissent comme résolues dans les API Defender for Endpoint.
+
+   Les alertes marquées comme masquées seront supprimées de l’ensemble du système, à la fois sur les alertes associées de l’appareil et à partir du tableau de bord et ne seront pas diffusées dans les API Defender for Endpoint.
 
 5. Entrez un nom de règle et un commentaire.
 
@@ -98,7 +103,7 @@ Créez des règles personnalisées pour contrôler quand les alertes sont suppri
 
 #### <a name="view-the-list-of-suppression-rules"></a>Afficher la liste des règles de suppression
 
-1. Dans le volet de navigation, sélectionnez Paramètres  >  **suppression de l’alerte.**
+1. Dans le volet de  navigation, sélectionnez Paramètres \> **suppression de l’alerte.**
 
 2. La liste des règles de suppression affiche toutes les règles créées par les utilisateurs de votre organisation.
 
@@ -112,20 +117,20 @@ Par exemple, un responsable  d’équipe peut passer en revue  toutes les nouvel
 
 Le responsable de l’équipe peut  également affecter l’alerte à la file d’attente résolue s’il sait que l’alerte est anodin, provenant d’un appareil non pertinent (par exemple, un appareil appartenant à un administrateur de sécurité) ou traité par le biais d’une alerte antérieure.
 
-
-
 ## <a name="alert-classification"></a>Classification de l’alerte
-Vous pouvez choisir de ne pas définir de classification ou de spécifier si une alerte est une alerte vraie ou une fausse alerte. Il est important de fournir la classification du vrai positif/faux positif. Cette classification est utilisée pour surveiller la qualité des alertes et améliorer la précision des alertes. Le champ « détermination » définit une fidélité supplémentaire pour une classification « vrai positif ». 
+
+Vous pouvez choisir de ne pas définir de classification ou de spécifier si une alerte est une alerte vraie ou une fausse alerte. Il est important de fournir la classification du vrai positif/faux positif. Cette classification est utilisée pour surveiller la qualité des alertes et améliorer la précision des alertes. Le champ « détermination » définit une fidélité supplémentaire pour une classification « vrai positif ».
 
 ## <a name="add-comments-and-view-the-history-of-an-alert"></a>Ajouter des commentaires et afficher l’historique d’une alerte
+
 Vous pouvez ajouter des commentaires et afficher des événements historiques sur une alerte pour voir les modifications précédentes apportées à l’alerte.
 
 Chaque fois qu’une modification ou un commentaire est apporté à une alerte, il est enregistré dans la section Commentaires et **historique.**
 
 Les commentaires ajoutés apparaissent instantanément dans le volet.
 
+## <a name="related-topics"></a>Rubriques connexes
 
-## <a name="related-topics"></a>Voir aussi
 - [Gérer des règles de suppression](manage-suppression-rules.md)
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)

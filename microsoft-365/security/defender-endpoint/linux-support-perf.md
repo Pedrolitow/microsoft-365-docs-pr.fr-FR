@@ -18,18 +18,18 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 246ba885795c4317d4cab0dca82e2cc84456366a44cfe567859919d15c3d9cce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 935826d3a89abeef20e1ebb17f964137fdbfccaf
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857446"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745816"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -51,6 +51,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     ```bash
     mdatp config real-time-protection --value disabled
     ```
+
     ```Output
     Configuration property updated
     ```
@@ -65,6 +66,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     > Cette fonctionnalité est disponible dans la version 100.90.70 ou une version plus récente.
 
     Cette fonctionnalité est activée par défaut sur les `Dogfood` canaux et les `InsiderFast` canaux. Si vous utilisez un autre canal de mise à jour, cette fonctionnalité peut être activée à partir de la ligne de commande :
+
     ```bash
     mdatp config real-time-protection-statistics --value enabled
     ```
@@ -80,6 +82,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     ```bash
     mdatp config real-time-protection --value enabled
     ```
+
     ```Output
     Configuration property updated
     ```
@@ -100,6 +103,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     ```bash
     wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
+
     La sortie de cette commande doit être similaire à celle-ci :
 
     ```Output
@@ -142,7 +146,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
 
     Pour améliorer les performances de Defender pour Endpoint sur Linux, recherchez celui qui a le plus grand nombre sous la ligne et ajoutez une `Total files scanned` exclusion pour celui-ci. Pour plus d’informations, voir Configurer et valider des [exclusions pour Defender pour Endpoint sur Linux.](linux-exclusions.md)
 
-    >[!NOTE]
+    > [!NOTE]
     > L’application stocke les statistiques en mémoire et suit uniquement l’activité des fichiers depuis son début et que la protection en temps réel a été activée. Les processus qui ont été lancés avant ou pendant les périodes où la protection en temps réel était hors programme ne sont pas comptabilisés. En outre, seuls les événements qui ont déclenché des analyses sont comptés.
 
 5. Configurez Microsoft Defender pour endpoint sur Linux avec des exclusions pour les processus ou les emplacements de disque qui contribuent aux problèmes de performances et activez à nouveau la protection en temps réel.
@@ -150,4 +154,5 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     Pour plus d’informations, consultez [Configurer et valider les exclusions pour Microsoft Defender pour point de terminaison sur Linux](linux-exclusions.md).
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Rechercher les problèmes d’état d’intégrité de l’agent](health-status.md)

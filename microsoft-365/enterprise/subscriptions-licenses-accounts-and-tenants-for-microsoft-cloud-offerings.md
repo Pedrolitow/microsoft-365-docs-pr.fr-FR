@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Comprendre les relations des organisations, des abonnements, des licences, des comptes d’utilisateur et des clients dans les offres cloud Microsoft.
-ms.openlocfilehash: a7120404eafd51714ac19805c088921ad6625ae2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 64ca4d69d0792dbe3751bffff95841409767aa4f
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354235"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747410"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, comptes et clients des offres de cloud de Microsoft
 
@@ -140,7 +140,7 @@ Le tableau suivant décrit la manière dont vous pouvez combiner plusieurs offre
    
 Une solution simple pour ajouter des abonnements à votre organisation pour les services SaaS Microsoft consiste à utiliser le centre d’administration :
   
-1. Connectez-vous au Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) avec votre compte d’administrateur général.
+1. Connectez-vous au Centre d’administration Microsoft 365 ( ) avec votre compte [https://admin.microsoft.com](https://admin.microsoft.com) **d’administrateur** utilisateur ou **d’administrateur** global.
     
 2. À partir du volet de navigation gauche de la page d’accueil du **centre d’administration**, cliquez sur **Facturation**, puis **Acheter des services**.
     
@@ -150,7 +150,7 @@ Le centre d’administration affecte l’organisation et le client Azure AD de v
   
 Pour ajouter un abonnement Azure disposant de la même organisation et du même client Azure Active Directory que votre abonnement Microsoft 365, procédez comme suit :
   
-1. Connectez-vous au portail Azure ([https://portal.azure.com](https://portal.azure.com)) avec votre compte Administrateur général Microsoft 365.
+1. Connectez-vous au portail Azure ( ) à l’Microsoft 365 [https://portal.azure.com](https://portal.azure.com) **administrateur Azure AD DC** ou à votre compte **d’administrateur** global.
     
 2. Dans le volet de navigation gauche, cliquez sur **Abonnements**, puis sur **Ajouter**.
     

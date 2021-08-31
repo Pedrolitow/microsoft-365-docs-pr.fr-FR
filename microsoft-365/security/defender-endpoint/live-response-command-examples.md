@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec7b4a5a5edc542e305e876141e501e3c0e4b2bc35d096a48b4b6d36fe3e804d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ab92335e2f5befcead81765954477c6e70dac492
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817806"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747618"
 ---
 # <a name="live-response-command-examples"></a>Exemples de commande Live response
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -105,7 +105,7 @@ getfile c:\Users\user\Desktop\work.txt
 getfile c:\Users\user\Desktop\work.txt -auto
 ```
 
->[!NOTE]
+> [!NOTE]
 >
 > Les types de fichiers **suivants ne peuvent** pas être téléchargés à l’aide de cette commande à partir de Live Response :
 >
@@ -211,7 +211,7 @@ run script.ps1
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
 
->[!NOTE]
+> [!NOTE]
 >
 > Pour les commandes de longue durée telles que «**exécuter**» ou «**getfile**» , vous pouvez utiliser le symbole ' ' à la fin de la commande pour effectuer cette action en arrière-plan. **&**
 > Cela vous permettra de continuer à examiner l’ordinateur et de revenir à la commande en arrière-plan lorsque vous avez terminé à l’aide de la commande de base «**fg** [».](live-response.md#basic-commands)

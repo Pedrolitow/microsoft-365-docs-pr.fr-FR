@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0fb08635f50eedbf5fd96b8abc64ef9dfae60cbf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 71fd1428df73686f59199c70d988599f511faaf3
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569692"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747442"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -52,7 +52,7 @@ Avec la réponse en direct, les analystes peuvent effectuer toutes les tâches s
 
 Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
 
-- **Vérifiez que vous exécutez une version prise** en charge de Windows .
+- **Vérifiez que vous exécutez une version prise en charge de Windows**.
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
@@ -140,17 +140,21 @@ Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de
 
 ### <a name="basic-commands"></a>Commandes de base
 
-Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont la possibilité d’exécuter des commandes de réponse **en** direct de base. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
+Les commandes suivantes sont disponibles pour les rôles  d’utilisateur qui ont la possibilité d’exécuter des commandes de réponse en direct de base. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
+
+<br>
+
+****
 
 |Command|Description|
-|---|---|---|
+|---|---|
 |`cd`|Modifie le répertoire actuel.|
 |`cls`|Cette commande permet d’effacer l’écran de la console.|
 |`connect`|Lance une session de réponse en direct sur l’appareil.|
 |`connections`|Affiche toutes les connexions actives.|
 |`dir`|Affiche une liste de fichiers et de sous-répertoires dans un répertoire.|
 |`drivers`|Affiche tous les pilotes installés sur l’appareil.|
-|`fg <command ID>`|Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel. <br> REMARQUE : fg prend un « ID de commande » disponible à partir des travaux, et non un piD|
+|`fg <command ID>`|Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel. <p> **REMARQUE**: fg prend un « ID de commande » disponible à partir des travaux, et non un piD|
 |`fileinfo`|Récupération d’informations sur un fichier.|
 |`findfile`|Localise les fichiers d’un nom donné sur l’appareil.|
 |`getfile <file_path>`|Télécharge un fichier.|
@@ -162,10 +166,15 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 |`scheduledtasks`|Affiche toutes les tâches programmées sur l’appareil.|
 |`services`|Affiche tous les services sur l’appareil.|
 |`trace`|Définit le mode de journalisation du terminal pour le débogage.|
+|
 
 ### <a name="advanced-commands"></a>Commandes avancées
 
 Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont la possibilité d’exécuter des **commandes** de réponse en direct avancées. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
+
+<br>
+
+****
 
 |Command|Description|
 |---|---|
@@ -173,8 +182,9 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 |`run`|Exécute un script PowerShell à partir de la bibliothèque sur l’appareil.|
 |`library`|Répertorie les fichiers qui ont été chargés dans la bibliothèque de réponses en direct.|
 |`putfile`|Place un fichier de la bibliothèque sur l’appareil. Les fichiers sont enregistrés dans un dossier de travail et supprimés lorsque l’appareil redémarre par défaut.|
-|`remediate`|Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité :<br>- Fichier : supprimer<br>- Processus : arrêter, supprimer un fichier image<br>- Service : arrêter, supprimer un fichier image<br>- Entrée de Registre : supprimer<br>- Tâche programmée : supprimer<br>- Élément de dossier de démarrage : supprimer un fichier <br> REMARQUE : cette commande est une commande prérequise. Vous pouvez utiliser la `-auto` commande conjointement pour `remediate` exécuter automatiquement la commande prérequise.
+|`remediate`|Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité : <ul><li>Fichier : supprimer</li><li>Processus : arrêter, supprimer un fichier image</li><li>Service : arrêter, supprimer un fichier image</li><li>Entrée de Registre : supprimer</li><li>Tâche programmée : supprimer</li><li>Élément de dossier de démarrage : supprimer un fichier</li></ul> <p> **REMARQUE**: cette commande est une commande prérequise. Vous pouvez utiliser la `-auto` commande conjointement pour `remediate` exécuter automatiquement la commande prérequise.
 |`undo`|Restaure une entité qui a été corrigé.|
+|
 
 ## <a name="use-live-response-commands"></a>Utiliser des commandes de réponse en direct
 
@@ -201,12 +211,17 @@ Pour permettre à votre équipe des opérations de sécurité de continuer à ex
 - Si vous attendez le téléchargement d’un fichier, vous pouvez le déplacer vers l’arrière-plan à l’aide de Ctrl + Z.
 - Pour mettre un téléchargement de fichier au premier plan, dans la console de commande de réponse en direct, tapez `fg <command_id>` .
 
-Voici quelques exemples :
+Voici quelques exemples :
+
+<br>
+
+****
 
 |Commande|Comportement|
 |---|---|
 |`getfile "C:\windows\some_file.exe" &`|Commence à télécharger un fichier nommé *some_file.exe* en arrière-plan.|
 |`fg 1234`|Renvoie un téléchargement avec l’ID de commande *1234* au premier plan.|
+|
 
 ### <a name="put-a-file-in-the-library"></a>Placer un fichier dans la bibliothèque
 

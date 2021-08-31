@@ -1,5 +1,5 @@
 ---
-title: Authentification fédérée haute disponibilité, phase 5 Configurer l’authentification fédérée pour Microsoft 365
+title: Authentification fédérée haute disponibilité Phase 5 Configurer l’authentification fédérée pour Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Résumé : Configurez azure ad Connecter pour votre authentification fédérée haute disponibilité Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: 8d8636c10947562037093991fa3a3cee5a867af3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: c179f45e061c1ff004f1c70e83ba0888c066f733
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561409"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745804"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Authentification fédérée haute disponibilité, phase 5 : Configurer l’authentification fédérée pour Microsoft 365
 
@@ -85,7 +85,7 @@ L’outil azure AD Connecter configure les serveurs AD FS, les serveurs proxy d�
     
 7. Sur la page **Connexion utilisateur**, cliquez sur **Fédération avec AD FS**, puis sur **Suivant**.
     
-8. Dans la page Connecter à **Azure AD,** tapez le nom et le mot de passe d’un compte d’administrateur général pour votre abonnement Microsoft 365, puis cliquez sur **Suivant**.
+8. Dans la page Connecter à **Azure AD,** tapez le nom et le  mot de passe d’un administrateur **Azure AD DC** ou d’un compte d’administrateur global pour votre abonnement Microsoft 365, puis cliquez sur **Suivant.**
     
 9. Dans la page **Connecter** vos annuaires, assurez-vous que votre forêt des services de domaine Active Directory (AD DS) sur site est sélectionnée dans **Forêt,** tapez le nom et le mot de passe d’un compte d’administrateur de domaine, cliquez sur Ajouter un **répertoire,** puis cliquez sur Suivant **.**
     

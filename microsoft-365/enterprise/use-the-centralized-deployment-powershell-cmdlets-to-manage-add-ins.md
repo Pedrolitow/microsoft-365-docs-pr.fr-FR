@@ -20,12 +20,12 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez les cmdlets PowerShell de déploiement centralisé pour vous aider à déployer et gérer des Office pour votre Microsoft 365 organisation.
-ms.openlocfilehash: 8f84c3222fa8a9eefcdda90fa6daf1c453dd73236fd6be61d2c57b63c7feceea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37a60ffe7d17f09ecbdb70c80c880b2c7bd51645
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830154"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745840"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins
 
@@ -49,7 +49,7 @@ Avant de pouvoir utiliser les cmdlets de déploiement centralisé, vous devez vo
   Connect-OrganizationAddInService
   ```
 
-3. Dans la page **Entrer les informations d’identification,** entrez Microsoft 365 d’administrateur global. Vous pouvez également entrer vos informations d’identification directement dans la cmdlet. 
+3. Dans la page **Entrer les informations d’identification,** entrez Microsoft 365 administrateur **utilisateur** ou **administrateur** global. Vous pouvez également entrer vos informations d’identification directement dans la cmdlet. 
     
     Exécutez l’cmdlet suivante en spécifiant les informations d’identification d’administrateur de votre entreprise en tant qu’objet PSCredential.
     

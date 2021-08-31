@@ -19,13 +19,13 @@ ms.custom:
 - okr_SMB
 - commerce_licensing
 search.appverid: MET150
-ms.date: 03/17/2021
-ms.openlocfilehash: 5866fd7ae42a8e127250a2f02c7378381b736da54027ab80bab1228fbef23e33
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.date: 08/27/2021
+ms.openlocfilehash: b3d5e5cd3aa6c2531d515d665d10ad01298d0a23
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820910"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747454"
 ---
 # <a name="manage-licenses-for-devices"></a>Gérer les licences pour les appareils
 

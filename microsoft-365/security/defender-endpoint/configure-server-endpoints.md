@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6c3adb8b07de50ca655c27a2d70f7868efd32332
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ee6241e6db062730446505e2bcbc377b15ffee9c
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561037"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745756"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs d’accès au service Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
@@ -55,7 +55,7 @@ Vous pouvez intégrer Windows Server 2008 R2 SP1, Windows Server 2012 R2 et Wind
 Après avoir effectué les étapes d’intégration à l’aide de l’une des options fournies, vous devez configurer et mettre à [jour System Center Endpoint Protection clients.](#configure-and-update-system-center-endpoint-protection-clients)
 
 > [!NOTE]
-> La licence de serveur autonome Defender pour les points de terminaison est requise, par nœud, pour intégrer un serveur Windows via Microsoft Monitoring Agent (option 1) ou via Microsoft Endpoint Manager (option 3). Une licence Azure Defender pour les serveurs est également requise, par nœud, pour intégrer un serveur Windows via Azure Security Center (option 2), voir fonctionnalités pris en charge disponibles dans [Azure Defender.](/azure/security-center/security-center-services)
+> La licence de serveur autonome Defender pour les points de terminaison est requise, par nœud, pour intégrer un serveur Windows via Microsoft Monitoring Agent (option 1) ou via Microsoft Endpoint Manager (option 3). Une licence Azure Defender pour les serveurs est également requise, par nœud, pour intégrer un serveur Windows via Azure Security Center (option 2). Pour plus d’informations, voir [Fonctionnalités pris en charge disponibles dans Azure Defender.](/azure/security-center/security-center-services) Contrairement aux licences utilisateur, ces licences ne doivent être attribuées à aucun utilisateur ou objet. Ils doivent se trouver dans le client pour assurer la conformité.
 
 ### <a name="option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma"></a>Option 1 : intégrer en installant et en configurant Microsoft Monitoring Agent (MMA)
 
@@ -198,7 +198,7 @@ Les fonctionnalités suivantes sont incluses dans cette intégration :
     > [!NOTE]
     > L’intégration entre Azure Defender pour serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Windows serveurs surveillés par Azure Defender seront également disponibles dans Defender pour le point de terminaison : Azure Defender se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs. En outre, les alertes Defender pour le point de terminaison seront disponibles dans la console Azure Defender.
+- Windows serveurs surveillés par Azure Defender seront également disponibles dans Defender pour le point de terminaison : Azure Defender se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs. En outre, les alertes defender pour point de terminaison seront disponibles dans la console Azure Defender.
 
 - Enquête sur le serveur : les clients Azure Defender peuvent accéder Microsoft 365 Defender pour effectuer une enquête détaillée afin de découvrir l’étendue d’une violation potentielle.
 
@@ -206,7 +206,7 @@ Les fonctionnalités suivantes sont incluses dans cette intégration :
 >
 > - Lorsque vous utilisez Azure Defender pour surveiller les serveurs, un client Defender pour point de terminaison est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l’UE pour les utilisateurs européens et anglais).
 Les données collectées par Defender pour endpoint sont stockées dans l’emplacement géographique du client, comme identifié lors de l’approvisionnement.
-> - Si vous utilisez Defender pour endpoint avant d’utiliser Azure Defender, vos données seront stockées à l’emplacement spécifié lors de la création de votre client, même si vous intégrez Azure Defender ultérieurement.
+> - Si vous utilisez Defender pour Endpoint avant d’utiliser Azure Defender, vos données seront stockées à l’emplacement que vous avez spécifié lors de la création de votre client, même si vous intégrez Azure Defender ultérieurement.
 > - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter le Support Microsoft pour réinitialiser le client.
 >
 La surveillance des points de terminaison de serveur utilisant cette intégration a été désactivée pour Office 365 Cloud de la communauté du secteur public clients.
@@ -354,7 +354,7 @@ Une fois que le serveur est redémarré dans le cadre du processus de démarrage
 Vous pouvez également utiliser une **tâche immédiate** pour exécuter le deployMMA.cmd si vous ne souhaitez pas redémarrer tous les serveurs.
 Cette étape peut être effectuée en deux phases. Tout **d’abord, créez les fichiers et le dossier dans GPO.** Donnez au système le temps de s’assurer que l’GPO a été appliqué et que tous les serveurs disposent des fichiers d’installation. Ensuite, ajoutez la tâche immédiate. Cela permettra d’obtenir le même résultat sans nécessiter de redémarrage.
 
-Étant donné que le script dispose d’une méthode de sortie et ne sera pas ré-exécuté si le MMA est installé, vous pouvez également utiliser une tâche programmée quotidienne pour obtenir le même résultat. Similaire à une stratégie de conformité Configuration Manager qu’il vérifie quotidiennement pour s’assurer que le MMA est présent.
+Étant donné que le script dispose d’une méthode de sortie et ne se ré-exécute pas si le MMA est installé, vous pouvez également utiliser une tâche programmée quotidienne pour obtenir le même résultat. Similaire à une stratégie de conformité Configuration Manager qu’il vérifie quotidiennement pour s’assurer que le MMA est présent.
 
 :::image type="content" source="images/schtask.png" alt-text="planifier la tâche.":::
 
@@ -374,7 +374,7 @@ Pour Windows Server 2008 R2 PS1, veillez à respecter les conditions suivantes :
 
 Vérifiez que les ko sont présents avant l’intégration de Windows Server 2008 R2. Ce processus vous permet d’intégrer tous les serveurs si configuration Manager ne gère pas les serveurs.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)

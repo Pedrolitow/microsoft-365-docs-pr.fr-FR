@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de6925bcfc70285516bf12c07540b9c74caec9ea8210850cc1a3cc44f6a1ed92
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7d09ce01bc8d9409d4537df8eaabb50915538aa6
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853870"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747398"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -91,37 +91,37 @@ Il existe plusieurs façons de désinstaller Microsoft Defender pour Endpoint su
 
 ### <a name="from-the-command-line"></a>À partir de la ligne de commande
 
-- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
+- `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
 
 ## <a name="configuring-from-the-command-line"></a>Configuration à partir de la ligne de commande
 
 Les tâches importantes, telles que le contrôle des paramètres du produit et le déclenchement d’analyses à la demande, peuvent être réalisées à partir de la ligne de commande :
 
-|Group        |Scénario                                   |Commande                                                                           |
-|-------------|-------------------------------------------|----------------------------------------------------------------------------------|
-|Configuration|Activer/désactiver la protection en temps réel           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
-|Configuration|Activer/désactiver la protection cloud               |`mdatp config cloud --value [enabled/disabled]`                                   |
-|Configuration|Activer/désactiver les diagnostics de produit            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
-|Configuration|Activer/désactiver l’envoi automatique d’échantillons    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
-|Configuration|Ajouter un nom de menace à la liste autorisée      |`mdatp threat allowed add --name [threat-name]`                                   |
-|Configuration|Supprimer un nom de menace de la liste autorisée |`mdatp threat allowed remove --name [threat-name]`                                |
-|Configuration|Liste de tous les noms de menace autorisés              |`mdatp threat allowed list`                                                       |
-|Configuration|Activer la protection PUA                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
-|Configuration|Désactiver la protection PUA                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
-|Configuration|Activer le mode audit pour la protection PUA      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
-|Configuration|Activer/désactiver passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
-|Diagnostics  |Modifier le niveau de journal                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|Diagnostics  |Générer des journaux de diagnostic                   |`mdatp diagnostic create --path [directory]`                                      |
-|Intégrité       |Vérifier l’état du produit                 |`mdatp health`                                                                    |
-|Intégrité       |Vérifier l’attribut d’un produit de harpon       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
-|Protection   |Analyser un chemin d’accès                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
-|Protection   |Faire une analyse rapide                            |`mdatp scan quick`                                                                |
-|Protection   |Faire une analyse complète                             |`mdatp scan full`                                                                 |
-|Protection   |Annuler une analyse à la demande en cours           |`mdatp scan cancel`                                                               |
-|Protection   |Demander une mise à jour de l’intelligence de la sécurité     |`mdatp definitions update`                                                        |
-|PEPT          |Ajouter une balise de groupe à l’appareil. PEPT balises sont utilisées pour gérer les groupes d’appareils. Pour plus d’informations, visitez /microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
-|PEPT          |Supprimer une balise de groupe de l’appareil               |`mdatp edr tag remove --tag-name [name]`                                          |
-|PEPT          |Ajouter un ID de groupe                               |`mdatp edr group-ids --group-id [group]`                                          |
+|Groupe|Scénario|Commande|
+|---|---|---|
+|Configuration|Activer/désactiver la protection en temps réel|`mdatp config real-time-protection --value [enabled/disabled]`|
+|Configuration|Activer/désactiver la protection cloud|`mdatp config cloud --value [enabled/disabled]`|
+|Configuration|Activer/désactiver les diagnostics de produit|`mdatp config cloud-diagnostic --value [enabled/disabled]`|
+|Configuration|Activer/désactiver l’envoi automatique d’échantillons|`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`|
+|Configuration|Ajouter un nom de menace à la liste autorisée|`mdatp threat allowed add --name [threat-name]`|
+|Configuration|Supprimer un nom de menace de la liste autorisée|`mdatp threat allowed remove --name [threat-name]`|
+|Configuration|Liste de tous les noms de menace autorisés|`mdatp threat allowed list`|
+|Configuration|Activer la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
+|Configuration|Désactiver la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
+|Configuration|Activer le mode audit pour la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
+|Configuration|Activer/désactiver passiveMode|`mdatp config passive-mode --value enabled [enabled/disabled]`|
+|Diagnostics|Modifier le niveau de journal|`mdatp log level set --level [error/warning/info/verbose]`|
+|Diagnostics|Générer des journaux de diagnostic|`mdatp diagnostic create --path [directory]`|
+|Intégrité|Vérifier l’état du produit|`mdatp health`|
+|Intégrité|Vérifier l’attribut d’un produit de harpon|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
+|Protection|Analyser un chemin d’accès|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|Protection|Faire une analyse rapide|`mdatp scan quick`|
+|Protection|Faire une analyse complète|`mdatp scan full`|
+|Protection|Annuler une analyse à la demande en cours|`mdatp scan cancel`|
+|Protection|Demander une mise à jour de l’intelligence de la sécurité|`mdatp definitions update`|
+|PEPT|Ajouter une balise de groupe à l’appareil. PEPT balises sont utilisées pour gérer les groupes d’appareils. Pour plus d’informations, visitez /microsoft-365/security/defender-endpoint/machine-groups|`mdatp edr tag set --name GROUP --value [name]`|
+|PEPT|Supprimer une balise de groupe de l’appareil|`mdatp edr tag remove --tag-name [name]`|
+|PEPT|Ajouter un ID de groupe|`mdatp edr group-ids --group-id [group]`|
 
 ### <a name="how-to-enable-autocompletion"></a>Comment activer lacompletion automatique
 
@@ -149,8 +149,7 @@ Pour activer lacompletion automatique dans zsh :
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
-   ```
-   ```zsh
+
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: Dans cet article, découvrez comment utiliser rapidement et facilement PowerShell pour Microsoft 365 attribuer des rôles d’administrateur à des comptes d’utilisateur.
-ms.openlocfilehash: dbb8586a381d66bea3a6b07ab5521da309c8681f
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 4174877bed9accacc3a61de576fa6e54060678bf
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589311"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745720"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Attribuer des rôles d’administrateur Microsoft 365 comptes d’utilisateurs avec PowerShell
 
@@ -41,8 +41,10 @@ Vous pouvez facilement attribuer des rôles à des comptes d’utilisateurs à l
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout d’abord, utilisez un compte d’administrateur général pour vous [connecter à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
-  
+Tout d’abord, utilisez un administrateur Azure  **AD DC,** un administrateur d’application **cloud** ou un compte d’administrateur global pour vous connecter à Microsoft 365 [client.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+ 
+Pour plus d’informations, consultez [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles?).
+
 Ensuite, identifiez le nom de la signature du compte d’utilisateur que vous souhaitez ajouter à un rôle (exemple : fredsm \@ contoso.com). Il s’agit également du nom d’utilisateur principal (UPN).
 
 Ensuite, déterminez le nom du rôle. Voir [rôles intégrés à Azure AD.](/azure/active-directory/roles/permissions-reference)
@@ -156,7 +158,7 @@ Si vous avez l’habitude d’utiliser les noms de la signature ou les UPN des c
   Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    Cette commande répertorie l’UPN de vos comptes d’utilisateur, triés par nom d’utilisateur principal, un écran à la fois. Vous pouvez utiliser la cmdlet **Where** pour filtrer la liste. Voici un exemple :
+    Cette commande répertorie l’UPN de vos comptes d’utilisateur, triés par nom d’utilisateur principal, un écran à la fois. Vous pouvez utiliser la cmdlet **Where** pour filtrer la liste. Voici un exemple :
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More

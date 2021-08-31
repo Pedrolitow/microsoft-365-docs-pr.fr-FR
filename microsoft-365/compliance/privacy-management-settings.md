@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les options de paramètres globaux pour la gestion de la confidentialité.
-ms.openlocfilehash: b656070c5470ae651bb3b361cfc8481dd9b09212
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 071006c354d975cbed06834d60c2d647bbc5df60
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254955"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747064"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>Gérer les paramètres de gestion de la confidentialité (aperçu)
-
-Dans cet article : découvrez les options **de paramètres** pour la gestion de la confidentialité.
 
 Les options de paramètres globaux pour la gestion de la confidentialité se trouvent sous l’icône d’engrenage dans le coin supérieur droit des pages principales. Ces options vous permettent de définir des préférences de haut niveau et de personnaliser les propriétés clés. Cette page fournit une vue d’ensemble des principales Paramètres catégories.
 

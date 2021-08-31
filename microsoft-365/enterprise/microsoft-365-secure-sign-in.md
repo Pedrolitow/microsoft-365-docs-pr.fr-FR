@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Renforcez la sécurité des connexions de vos utilisateurs à l’aide de l’authentification multifacteur (MFA) et d’autres fonctionnalités.
-ms.openlocfilehash: f2ee7d21c5dee96e2cbd6beccdd816da26b6ea46
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d00ca7a39b05e5364a49a6300ef9ee24c3dd0bd1
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570988"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744940"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Connexion sécurisée des utilisateurs à votre client Microsoft 365
 
@@ -79,7 +79,7 @@ Pour plus d’informations, consultez [Vue d’ensemble des paramètres de sécu
 
 Les stratégies d’accès conditionnel sont un groupe de règles qui spécifient les conditions dans lesquelles les connexions sont évaluées et l’accès autorisé. Par exemple, vous pouvez créer une stratégie d’accès conditionnel qui indique :
 
-- Si le nom du compte d’utilisateur concerne membre d’un groupe d’utilisateurs bénéficiant des rôles d’administrateur Exchange, utilisateur, mot de passe, sécurité, SharePoint ou global, exigez l’authentification multifacteur avant d’autoriser l’accès.
+- Si le nom du compte d’utilisateur est membre d’un groupe pour les utilisateurs qui se voit attribuer les rôles d’administrateur Exchange, utilisateur, mot de passe, sécurité, SharePoint, **administrateur Exchange,** **administrateur SharePoint** ou **administrateur global**, exigez l’authentification multifacteur avant d’autoriser l’accès.
 
 Cette stratégie vous permet de demander une authentification multifacteur basée sur l’appartenance au groupe, plutôt que d’essayer de configurer des comptes d’utilisateur individuels pour l’authentification multifacteur lorsqu’ils sont attribués ou non à des rôles d’administrateur.
 
@@ -126,7 +126,7 @@ Microsoft recommande vivement de configurer et de déployer les stratégies d’
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-Cette section explique comment configurer des stratégies de protection contre la compromission d’informations d’identification consistant pour un attaquant à déterminer le nom de compte et le mot de passe d’un utilisateur afin d’accéder aux services et données cloud d’une organisation. Azure Active Directory Identity Protection offre plusieurs méthodes pour empêcher un pirate de compromettre les informations d’identification d’un compte d’utilisateur.
+Dans cette section, vous allez découvrir comment configurer des stratégies qui protègent contre la compromission des informations d’identification, où un attaquant détermine le nom de compte et le mot de passe d’un utilisateur pour accéder aux données et services cloud d’une organisation. Azure AD Identity Protection fournit plusieurs moyens d’empêcher un attaquant de compromettre les informations d’identification d’un compte d’utilisateur.
 
 Azure AD Identity Protection vous permet de :
 

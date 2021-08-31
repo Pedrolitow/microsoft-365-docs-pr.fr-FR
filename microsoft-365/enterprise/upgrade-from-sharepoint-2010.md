@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Trouvez des informations et des ressources à mettre à niveau depuis SharePoint 2010 et SharePoint Server 2010. Le support pour les deux se termine le 13 avril 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c57aa4d15ba6fbb95a59f28039db41303a536fd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: da824abb7575a509cb988c474e667d0475e821c1
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575239"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745744"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à jour à jour de SharePoint 2010
 
@@ -112,7 +112,7 @@ Si vous mettez à niveau vers SharePoint Server 2013 ou SharePoint Server 2016 e
 |SharePoint Avantage en ligne|SharePoint Inconvénient en ligne|
 |---|---|
 |Microsoft fournit le matériel SPO et l’administration de tout le matériel.|Les fonctionnalités disponibles peuvent différer entre SharePoint server local et SPO.|
-|Vous êtes l’administrateur général de votre abonnement et pouvez affecter des administrateurs à des sites SPO.|Certaines actions disponibles pour un administrateur de batterie de serveurs dans SharePoint Server local n’existent pas (ou ne sont pas nécessaires) dans le rôle administrateur SharePoint dans Microsoft 365. Toutefois, SharePoint administration, l’administration de la collection de sites et la propriété du site sont locales pour votre organisation.|
+|Vous êtes l’administrateur SharePoint ou l’administrateur général de votre abonnement et pouvez affecter des administrateurs à des sites SPO.|Certaines actions disponibles pour un administrateur de batterie de serveurs dans SharePoint Server local n’existent pas (ou ne sont pas nécessaires) dans le rôle administrateur SharePoint dans Microsoft 365. Toutefois, SharePoint administration, l’administration de la collection de sites et la propriété du site sont locales pour votre organisation.|
 |Microsoft applique des correctifs, des correctifs et des mises à jour au matériel et aux logiciels sous-jacents, notamment SQL serveurs sur lesquels SharePoint Online s’exécute.|Étant donné qu’il n’y a pas d’accès au système de fichiers sous-jacent dans le service, la personnalisation est limitée.|
 |Microsoft publie des [contrats de niveau de service](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) et se déplace rapidement pour résoudre les incidents au niveau du service.|Les options de sauvegarde et de restauration et d’autres options de récupération sont automatisées par le service dans SharePoint Online. Les sauvegardes sont écrasées si elles ne sont pas utilisées.|
 |Les tests de sécurité et l’optimisation des performances du serveur sont effectués en continu dans le service par Microsoft.|Les modifications apportées à l’interface utilisateur et aux autres fonctionnalités SharePoint sont installées par le service et peuvent avoir besoin d’être togged ou off.|

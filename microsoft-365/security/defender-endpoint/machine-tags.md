@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 02368ff4c8f122b3bca2deac22b3fa994e6bf82d38fce4e44ff40ba12c882730
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e23980133d2fb0c69ca79f6dfdde7656e1961097
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874010"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745636"
 ---
 # <a name="create-and-manage-device-tags"></a>Créer et gérer des balises d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -41,7 +41,7 @@ Vous pouvez ajouter des balises sur les appareils en utilisant les méthodes sui
 - Définition d’une valeur de clé de Registre
 
 > [!NOTE]
-> Il peut y avoir une certaine latence entre le moment où une balise est ajoutée à un appareil et sa disponibilité dans la liste des appareils et la page de l’appareil.  
+> Il peut y avoir une certaine latence entre le moment où une balise est ajoutée à un appareil et sa disponibilité dans la liste des appareils et la page de l’appareil.
 
 Pour ajouter des balises d’appareil à l’aide de l’API, consultez [Ajouter ou supprimer des balises d’appareil API](add-or-remove-machine-tags.md).
 
@@ -66,8 +66,9 @@ Pour ajouter des balises d’appareil à l’aide de l’API, consultez [Ajouter
 
 Les balises sont ajoutées à l’affichage de l’appareil et sont également reflétées dans l’affichage Liste **des** appareils. Vous pouvez ensuite utiliser le filtre **Balises** pour voir la liste des appareils appropriés.
 
->[!NOTE]
-> Le filtrage peut ne pas fonctionner sur les noms de balises qui contiennent des parenthèses.<br>
+> [!NOTE]
+> Le filtrage peut ne pas fonctionner sur les noms de balises qui contiennent des parenthèses.
+>
 > Lorsque vous créez une balise, une liste de balises existantes s’affiche. La liste affiche uniquement les balises créées via le portail. Les balises existantes créées à partir d’appareils clients ne seront pas affichées.
 
 Vous pouvez également supprimer des balises de cet affichage.
@@ -76,17 +77,18 @@ Vous pouvez également supprimer des balises de cet affichage.
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>Ajouter des balises d’appareil en définition d’une valeur de clé de Registre
 
->[!NOTE]
+> [!NOTE]
 > Applicable uniquement sur les appareils suivants :
->- Windows 10, version 1709 ou ultérieure
->- Windows Serveur, version 1803 ou ultérieure
->- Windows Server 2016
->- Windows Server 2012 R2
->- Windows Server 2008 R2 SP1
->- Windows 8.1
->- Windows 7 SP1
+>
+> - Windows 10, version 1709 ou ultérieure
+> - Windows Serveur, version 1803 ou ultérieure
+> - Windows Server 2016
+> - Windows Server 2012 R2
+> - Windows Server 2008 R2 SP1
+> - Windows 8.1
+> - Windows 7 SP1
 
-> [!NOTE] 
+> [!NOTE]
 > Le nombre maximal de caractères qui peuvent être définies dans une balise est de 200.
 
 Les appareils avec des balises similaires peuvent être pratiques lorsque vous devez appliquer une action contextuelle sur une liste spécifique d’appareils.
@@ -97,7 +99,7 @@ Utilisez l’entrée de clé de Registre suivante pour ajouter une balise sur un
 - Valeur de clé de Registre (REG_SZ) : `Group`
 - Données de clé de Registre : `Name of the tag you want to set`
 
->[!NOTE]
->La balise d’appareil fait partie du rapport d’informations sur l’appareil qui est généré une fois par jour. Vous pouvez également choisir de redémarrer le point de terminaison qui transférerait un nouveau rapport d’informations sur l’appareil.
-> 
+> [!NOTE]
+> La balise d’appareil fait partie du rapport d’informations sur l’appareil qui est généré une fois par jour. Vous pouvez également choisir de redémarrer le point de terminaison qui transférerait un nouveau rapport d’informations sur l’appareil.
+>
 > Si vous devez supprimer une balise ajoutée à l’aide de la clé de Registre ci-dessus, supprimez le contenu des données de clé de Registre au lieu de supprimer la clé « Group ».
