@@ -8,16 +8,16 @@ metadata:
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
-  ms.service: bookings
-  ms.custom: commerce_licensing
+  ms.service: o365-administration
+  ms.custom: commerce_vl
   localization_priority: Normal
   description: Activation du service en ligne pour le programme Open - Questions fréquemment posées
-  ms.openlocfilehash: 943d9f3f7463f3d87b5489992c2281abd27092dca911322781a80a48dfce4f09
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: b00a5a06ba4f936811426d150542761ed4c5c08b
+  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53887478"
+  ms.lasthandoff: 08/31/2021
+  ms.locfileid: "58823635"
 title: Activation du service en ligne pour le programme Open - Questions fréquemment posées
 summary: ''
 sections:
@@ -46,7 +46,7 @@ sections:
   - question: >
       Je ne vois pas ma commande Azure. Que dois-je faire ?
     answer: >
-      Les commandes Azure sont activées par le biais de clés. Obtenez vos clés via l’onglet Téléchargements et clés dans le VLSC et entrez la clé sur la Prise en main avec Azure dans la [page Ouvrir les licences.](https://azure.microsoft.com/offers/azure-open/)
+      Les commandes Azure sont activées par le biais de clés. Obtenez vos clés via l’onglet Téléchargements et clés dans le VLSC et entrez la clé sur la Prise en main avec Azure dans la page Ouvrir [les licences.](https://azure.microsoft.com/offers/azure-open/)
   - question: >
       Qu’est-ce qu’un compte scolaire ou scolaire et pourquoi en ai-je besoin pour activer les services en ligne ?
     answer: >

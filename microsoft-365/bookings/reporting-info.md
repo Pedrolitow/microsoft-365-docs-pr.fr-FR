@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Découvrez comment afficher une vue de 4 mois de votre activité Bookings
-ms.openlocfilehash: 8fc8a41a982135550ae711e435905c9bd39460994b1f6757b633aea49a7a48a0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ceb318f0577d6bf1f4f46f809ecabe0d1bc5d804
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838202"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823852"
 ---
 # <a name="reporting-info-for-bookings"></a>Informations de rapport pour Bookings
 
@@ -24,17 +24,17 @@ Ces informations de niveau de rendez-vous peuvent être utilisées pour visualis
 
 ## <a name="see-four-months-of-booking-activity"></a>Voir quatre mois d’activité de réservation
 
-1. Dans le tableau de bord du calendrier Bookings, **sélectionnez Exporter plus de données en tant que TSV.**
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings.**
 
-:::image type="content" source="../media/bookings-activities.png" alt-text="Capture d’écran : 4 mois d’activité Bookings":::
+1. Dans la page d’accueil Bookings, sélectionnez **Exporter.**
+
+1. Dans la page **Exporter les données récentes,** sélectionnez votre plage de dates et sélectionnez **Exporter.**
 
 1. Enregistrez le fichier sous un nouveau nom et spécifiez le format .xls ou xlsx.
 
 1. Ouvrez le fichier pour afficher l’affichage de quatre mois de votre calendrier Bookings.
 
 1. Choisissez la date de votre rapport et sélectionnez **Exporter.**
-
-:::image type="content" source="../media/bookings-reporting-dates.png" alt-text="Screenshot: Pick a time range and export data to TSV file.":::
 
 1. Le rapport téléchargé contient un nouvel ensemble de champs en plus des champs existants.
 
@@ -47,7 +47,7 @@ Le rapport inclut les champs suivants.
 - **Adresse du client**
 - **Personnel**
 - **Service**
-- **Emplacement**
+- **Location**
 - **Durée (minutes)**
 - **Type d’événement**
 

@@ -11,25 +11,31 @@ metadata:
   ms.collection: m365-security-compliance
   author: mjcaparas
   ms.author: macapara
-  ms.date: 02/5/2021
+  ms.date: 08/30/2021
   localization_priority: Priority
-  ms.openlocfilehash: 6d90b99e804749ff99ef4d7ea3a31b790c1ccf1c9740b991153327323ec7ef51
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 2edb618e32b18d42db7c2ef233bac9ded7723fd4
+  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53889638"
+  ms.lasthandoff: 08/31/2021
+  ms.locfileid: "58822915"
 landingContent:
 - title: Microsoft Defender pour point de terminaison
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu'est-ce que le Microsoft Defender pour point de terminaison ?
+    - text: Qu’est-ce que Microsoft Defender pour point de terminaison ?
       url: microsoft-defender-endpoint.md
+    - text: Qu’est-ce que Defender for Endpoint Plan 1 ?
+      url: defender-endpoint-plan-1.md
+    - text: Comparer Defender pour endpoint Plan 1 à Plan 2
+      url: defender-endpoint-plan-1-2.md
   - linkListType: whats-new
     links:
     - text: Nouveautés dans Microsoft Defender pour point de terminaison
       url: whats-new-in-microsoft-defender-atp.md
+    - text: Annonce de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
+      url: defender-endpoint-plan-1.md
   - linkListType: video
     links:
     - text: Vidéo de vue d’ensemble
@@ -48,6 +54,8 @@ landingContent:
       url: deployment-phases.md
     - text: Intégration des appareils pris en charge
       url: onboard-configure.md
+    - text: Configurer Defender pour Endpoint Plan 1
+      url: mde-p1-setup-configuration.md
   - linkListType: how-to-guide
     links:
     - text: Guide de migration
@@ -101,4 +109,4 @@ landingContent:
     - text: Réduction de la surface d'attaque
       url: overview-attack-surface-reduction.md
     - text: Protection de nouvelle génération
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
+      url: next-generation-protection.md

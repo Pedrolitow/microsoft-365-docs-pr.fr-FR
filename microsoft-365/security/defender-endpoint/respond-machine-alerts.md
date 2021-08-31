@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f27049b518f13d0ddfd204b2aed16b60f07b8090
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: bd3f9fa5c6595a9a73111bb86699271cd5b930aa
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573030"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823683"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
@@ -225,7 +225,8 @@ Tous les autres détails connexes sont également affichés, par exemple, date/h
 
 ![Image du centre de l’action avec des informations.](images/action-center-details.png)
 
-## <a name="related-topic"></a>Rubrique connexe
+## <a name="see-also"></a>Voir aussi
 
 - [Prendre des mesures de réponse sur un fichier](respond-file-alerts.md)
+- [Actions de réponse manuelles dans Microsoft Defender pour Endpoint Plan 1 (prévisualisation)](defender-endpoint-plan-1.md#manual-response-actions)
 - [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

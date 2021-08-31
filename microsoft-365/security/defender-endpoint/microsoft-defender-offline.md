@@ -15,19 +15,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 90e1c310952a1ef3fd19410f9d74b10591f0a18f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a2479b79ce1a0b845c70148a9510681de37dbae5
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575515"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823659"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Exécuter et examiner les résultats d’une analyse en mode Microsoft Defender hors ligne
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -39,7 +39,7 @@ Dans Windows 10, Microsoft Defender hors ligne peut être exécuté en un clic d
 
 ## <a name="prerequisites-and-requirements"></a>conditions préalables et conditions requises
 
-Microsoft Defender hors ligne dans Windows 10 a la même configuration matérielle requise que Windows 10. 
+Microsoft Defender hors ligne dans Windows 10 a la même configuration matérielle requise que Windows 10.
 
 Pour plus d’informations sur Windows 10 requises, consultez les rubriques suivantes :
 
@@ -51,19 +51,19 @@ Pour plus d’informations sur Windows 10 requises, consultez les rubriques suiv
 > Microsoft Defender hors ligne n’est pas pris en charge sur les ordinateurs ARM processeurs, ou sur Windows unités de conservation des stocks du serveur.
 
 Pour exécuter Microsoft Defender hors ligne à partir du point de terminaison, l’utilisateur doit être connecté avec des privilèges d’administrateur.
- 
+
 ## <a name="microsoft-defender-offline-updates"></a>Microsoft Defender hors ligne mises à jour
 
-Microsoft Defender hors ligne utilise les mises à jour de protection les plus récentes disponibles sur le point de terminaison ; Il est mis à jour chaque fois que Antivirus Windows Defender est mis à jour. 
+Microsoft Defender hors ligne utilise les mises à jour de protection les plus récentes disponibles sur le point de terminaison ; Il est mis à jour chaque fois que Antivirus Windows Defender est mis à jour.
 
 > [!NOTE]
 > Avant d’exécution d’une analyse hors connexion, vous devez essayer de mettre à jour la protection de l’Antivirus Microsoft Defender. Vous pouvez forcer une mise à jour à l’aide de la stratégie de groupe ou toutefois déployer normalement des mises à jour sur les points de terminaison, ou vous pouvez télécharger et installer manuellement les dernières mises à jour de la protection à partir du [Centre de protection Microsoft contre les programmes malveillants](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-Pour plus [d’informations, consultez](manage-protection-updates-microsoft-defender-antivirus.md) la rubrique Gérer Antivirus Microsoft Defender d’informations sur la sécurité.
+Consultez la [rubrique Gérer Antivirus Microsoft Defender mises à](manage-protection-updates-microsoft-defender-antivirus.md) jour de l’intelligence de la sécurité pour plus d’informations.
 
 ## <a name="usage-scenarios"></a>Scénarios d'utilisation
 
-Dans Windows 10 version 1607, vous pouvez forcer manuellement une analyse hors connexion. Sinon, si Windows Defender détermine que Microsoft Defender hors ligne doit s’exécuter, il invite l’utilisateur sur le point de terminaison. 
+Dans Windows 10 version 1607, vous pouvez forcer manuellement une analyse hors connexion. Sinon, si Windows Defender détermine que Microsoft Defender hors ligne doit s’exécuter, il invite l’utilisateur sur le point de terminaison.
 
 La nécessité d’effectuer une analyse hors connexion sera également Microsoft Endpoint Manager si vous l’utilisez pour gérer vos points de terminaison.
 
@@ -71,9 +71,9 @@ L’invite peut se produire via une notification, semblable à ce qui suit :
 
 :::image type="content" source="../../media/notification.png" alt-text="Notification d’Microsoft Defender hors ligne.":::
 
-L’utilisateur est également informé dans le client Windows Defender client.
+L’utilisateur sera également informé dans le client Windows Defender client.
 
-Dans Configuration Manager, vous pouvez identifier l’état des points de terminaison en naviguant vers Monitoring **> Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**. 
+Dans Configuration Manager, vous pouvez identifier l’état des points de terminaison en naviguant vers Monitoring **> Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**.
 
 Microsoft Defender hors ligne analyses sont indiquées sous  l’état de correction des programmes malveillants comme **analyse hors connexion requise.**
 
@@ -83,9 +83,9 @@ Microsoft Defender hors ligne analyses sont indiquées sous  l’état de correc
 
 Microsoft Defender hors ligne notifications sont configurées dans le même paramètre de stratégie que les autres notifications de Microsoft Defender AV.
 
-Pour plus d’informations sur les notifications Windows Defender, consultez la rubrique Configurer les notifications qui apparaissent [sur les points de terminaison.](configure-notifications-microsoft-defender-antivirus.md)
+Pour plus d’informations sur les notifications Windows Defender, consultez la rubrique Configurer les [notifications](configure-notifications-microsoft-defender-antivirus.md) qui apparaissent sur les points de terminaison.
 
-## <a name="run-a-scan"></a>Effectuer une analyse 
+## <a name="run-a-scan"></a>Effectuer une analyse
 
 > [!IMPORTANT]
 > Avant d’utiliser Microsoft Defender hors ligne, veillez à enregistrer les fichiers et à arrêter les programmes en cours d’exécution. L Microsoft Defender hors ligne’analyse prend environ 15 minutes. Il redémarre le point de terminaison une fois l’analyse terminée. L’analyse est effectuée en dehors de l’environnement Windows d’exploitation habituel. L’interface utilisateur s’affiche différemment d’une analyse normale effectuée par Windows Defender. Une fois l’analyse terminée, le point de terminaison est redémarré et Windows charge normale.
@@ -106,7 +106,7 @@ Utilisez les cmdlets suivantes :
 Start-MpWDOScan
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>Utiliser Windows Management Instruction (WMI) pour exécuter une analyse hors connexion
 
@@ -115,29 +115,27 @@ Utilisez la [**MSFT_MpWDOScan**](/previous-versions/windows/desktop/legacy/dn455
 L’extrait de script WMI suivant exécute immédiatement une analyse Microsoft Defender hors ligne, ce qui entraîne le redémarrage du point de terminaison, l’analyse hors connexion, puis le redémarrage et le démarrage dans Windows.
 
 ```console
-wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start 
+wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start
 ```
 
 Pour plus d’informations, voir les informations suivantes :
-- [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
+- [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ### <a name="use-the-windows-defender-security-app-to-run-an-offline-scan"></a>Utiliser l’application Windows Defender security pour exécuter une analyse hors connexion
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
 2. Cliquez sur la **vignette & protection** antivirus contre les menaces (ou sur l’icône de bouclier dans la barre de menus de gauche), puis sur l’étiquette **d’analyse** avancée :
-    
+
 3. Sélectionnez **Microsoft Defender hors ligne scan,** puis cliquez **sur Analyser maintenant.**
 
     > [!NOTE]
-    > Dans Windows 10 version 1607, l’analyse hors connexion peut être exécuté à partir du Windows Defender de sécurité Windows Paramètres Update & ou à partir du  >    >   client Windows Defender.
-
+    > Dans Windows 10 version 1607, l’analyse hors connexion peut  être exécuté à partir du Windows Defender de sécurité Windows Paramètres Update & ou à partir du \>  \>  client Windows Defender.
 
 ## <a name="review-scan-results"></a>Passer en revue les résultats de l’analyse
 
-Microsoft Defender hors ligne résultats de l’analyse sont répertoriés dans la section Historique d’analyse [de l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md) 
-
+Microsoft Defender hors ligne résultats de l’analyse sont répertoriés dans la section Historique d’analyse [de l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
 
 ## <a name="related-articles"></a>Articles connexes
 

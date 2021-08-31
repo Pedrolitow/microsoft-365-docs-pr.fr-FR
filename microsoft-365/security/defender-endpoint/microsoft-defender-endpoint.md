@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2a507f1fe1292fcd456891aa64f7974d2f722bbc
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ff8534d0b668b6a18b219297131dbd90c366cc35
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247625"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823779"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -36,18 +36,22 @@ ms.locfileid: "58247625"
 > Pour plus d’informations sur les fonctionnalités de Windows 10 Entreprise, voir [Édition Windows 10 Entreprise](https://www.microsoft.com/WindowsForBusiness/buy).
 
 Microsoft Defender pour point de terminaison est une plate-forme de sécurité de point de terminaison d’entreprise conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées.
-<p></p>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
+> [!TIP]
+> Microsoft Defender pour point de terminaison sera bientôt disponible dans deux plans. Cet article décrit les fonctionnalités incluses dans Microsoft Defender pour point de terminaison Plan 2. [En savoir plus sur Microsoft Defender pour point de terminaison Plan 1 (préversion) et Plan 2](defender-endpoint-plan-1-2.md).
+> 
+
+<p><p>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
 Microsoft Defender pour point de terminaison utilise la combinaison de technologies suivante intégrée à Windows 10 et au service cloud puissant de Microsoft :
 
--   **Capteurs de point de terminaison**: intégrés dans Windows 10, ces capteurs collectent et traitent des signaux de comportement par le système d’exploitation et envoient les données de ce capteur à votre instance privée, isolée et Cloud de Microsoft Defender pour point de terminaison.
+- **Capteurs de point de terminaison**: intégrés dans Windows 10, ces capteurs collectent et traitent des signaux de comportement par le système d’exploitation et envoient les données de ce capteur à votre instance privée, isolée et Cloud de Microsoft Defender pour point de terminaison.
 
+- **Analyse de sécurité cloud** : tirant parti du Big Data, de l’apprentissage sur appareil et des investigations approfondies uniques de l’écosystème Microsoft Windows, des produits cloud d’entreprise (tels qu’Office 365) et des ressources en ligne, les signaux comportementaux sont convertis en analyses, détections et réponses recommandées aux menaces avancées.
 
--   **Analyse de sécurité cloud** : tirant parti du Big Data, de l’apprentissage sur appareil et des investigations approfondies uniques de l’écosystème Microsoft Windows, des produits cloud d’entreprise (tels qu’Office 365) et des ressources en ligne, les signaux comportementaux sont convertis en analyses, détections et réponses recommandées aux menaces avancées.
-
--   **Intelligence des menaces** : générée par les agents de repérage, les équipes de sécurité Microsoft et augmentée par l’intelligence des menaces fournie par les partenaires, l’intelligence des menaces permet à Microsoft Defender pour point de terminaison d’identifier les outils, les techniques et les procédures de l’agresseur, et de générer des alertes lorsqu’il est observé dans les données du capteur collectées.
+- **Intelligence des menaces** : générée par les agents de repérage, les équipes de sécurité Microsoft et augmentée par l’intelligence des menaces fournie par les partenaires, l’intelligence des menaces permet à Microsoft Defender pour point de terminaison d’identifier les outils, les techniques et les procédures de l’agresseur, et de générer des alertes lorsqu’il est observé dans les données du capteur collectées.
 
 <center><h2>Microsoft Defender pour point de terminaison</center></h2>
 <table>
@@ -71,61 +75,72 @@ Microsoft Defender pour point de terminaison utilise la combinaison de technolog
 
 <p></p>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0]
 
 > [!TIP]
+>
 > - Découvrez les dernières améliorations apportées à Defender pour point de terminaison : [Nouveautés de Microsoft Defender pour point de terminaison](whats-new-in-microsoft-defender-atp.md).
 > - Microsoft Defender pour point de terminaison a démontré les fonctionnalités de détection optique et de détection dans la dernière version d’évaluation de MITRE. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 <a name="tvm"></a>
 
-**[Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)**<br>
-Cette fonctionnalité intégrée utilise une approche basée sur le risque qui change la donne pour découvrir, hiérarchiser et corriger les vulnérabilités et erreurs de configuration des points de terminaison. 
+**[Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)**
+
+Cette fonctionnalité intégrée utilise une approche basée sur le risque qui change la donne pour découvrir, hiérarchiser et corriger les vulnérabilités et erreurs de configuration des points de terminaison.
 
 <a name="asr"></a>
 
-**[Réduction de la surface d’attaque](overview-attack-surface-reduction.md)**<br>
-Le jeu de fonctionnalités de réduction de surface d’attaque fournit la première ligne de défense dans la pile. En veillant à ce que les paramètres de configuration soient correctement définis et à ce que les techniques d’atténuation des risques soient appliquées, ces fonctionnalités résistent aux attaques et à l’exploitation. Ce jeu de fonctionnalités inclut également la [protection réseau](network-protection.md) et la [protection web](web-protection-overview.md), qui régulent l’accès aux adresses IP, domaines et URL malveillants. 
+**[Réduction de la surface d’attaque](overview-attack-surface-reduction.md)**
+
+Le jeu de fonctionnalités de réduction de surface d’attaque fournit la première ligne de défense dans la pile. En veillant à ce que les paramètres de configuration soient correctement définis et à ce que les techniques d’atténuation des risques soient appliquées, ces fonctionnalités résistent aux attaques et à l’exploitation. Ce jeu de fonctionnalités inclut également la [protection réseau](network-protection.md) et la [protection web](web-protection-overview.md), qui régulent l’accès aux adresses IP, domaines et URL malveillants.
 
 <a name="ngp"></a>
 
-**[Protection de nouvelle génération](next-generation-protection.md)**<br>
+**[Protection de nouvelle génération](next-generation-protection.md)**
+
 Pour renforcer davantage le périmètre de sécurité de votre réseau, Microsoft Defender pour point de terminaison fait appel à une protection nouvelle génération conçue pour intercepter tous les types de menaces émergentes.
 
 <a name="edr"></a>
 
-**[Détection et réponse des points de terminaison](overview-endpoint-detection-response.md)**<br>
+**[Détection et réponse des points de terminaison](overview-endpoint-detection-response.md)**
+
 Les fonctionnalités de détection et de réponse au point de terminaison sont mises en place pour détecter, examiner et répondre aux menaces avancées susceptibles d’avoir franchi les deux premiers piliers de sécurité. Le [repérage avancé](advanced-hunting-overview.md) fournit un outil de recherche de menace par requête qui vous permet de détecter les brèches de manière proactive et de créer des détections personnalisées.
 
 <a name="ai"></a>
 
-**[Examen et correction automatisés](automated-investigations.md)**<br>
-Outre la possibilité de répondre rapidement aux attaques avancées, Microsoft Defender pour point de terminaison propose des fonctionnalités d’investigation et de correction automatiques qui permettent de réduire le volume des alertes en quelques minutes à grande échelle. 
+**[Examen et correction automatisés](automated-investigations.md)**
+
+Outre la possibilité de répondre rapidement aux attaques avancées, Microsoft Defender pour point de terminaison propose des fonctionnalités d’investigation et de correction automatiques qui permettent de réduire le volume des alertes en quelques minutes à grande échelle.
 
 <a name="ss"></a>
 
-**[Niveau de sécurité Microsoft pour les appareils](tvm-microsoft-secure-score-devices.md)**<br>
+**[Niveau de sécurité Microsoft pour les appareils](tvm-microsoft-secure-score-devices.md)**
 
 Defender pour point de terminaison inclut le Niveau de sécurité Microsoft pour les appareils pour vous aider à évaluer de manière dynamique l’état de sécurité de votre réseau d’entreprise, à identifier les systèmes non protégés et à prendre les mesures recommandées pour améliorer la sécurité globale de votre organisation.
 
 <a name="mte"></a>
 
-**[Spécialistes des menaces Microsoft](microsoft-threat-experts.md)**<br>
+**[Spécialistes des menaces Microsoft](microsoft-threat-experts.md)**
+
 Le nouveau service de chasse de menaces gérées par Microsoft Defender pour point de terminaison fournit une chasse et des priorités proactives, ainsi que des informations supplémentaires sur les centres d’opérations de sécurité (SOCs), qui permettent d’identifier et de répartir rapidement et précisément.
 
->[!IMPORTANT]
->Les clients Defender pour point de terminaison doivent demander le service de repérage géré par Microsoft Threat Experts pour recevoir des notifications d’attaque ciblées proactives et collaborer avec des experts à la demande. Experts à la demande est un service d’extension. Les notifications d’attaques ciblées sont toujours incluses une fois que vous êtes accepté dans le service géré de repérage des menaces Spécialistes des menaces Microsoft.<p>
-><p>Si vous n’êtes pas encore inscrit et que vous aimeriez profiter de ses avantages, accédez à <b>Paramètres</b> > <b>Général</b> > <b>Fonctionnalités avancées</b> > <b>Spécialistes des menaces Microsoft</b> pour vous inscrire. Une fois accepté, vous bénéficiez des avantages des notifications d’attaques ciblées et débutez un essai de 90 jours d’Experts à la demande. Contactez votre représentant Microsoft pour obtenir un abonnement complet à Experts à la demande.
+> [!IMPORTANT]
+> Les clients Defender pour point de terminaison doivent demander le service de repérage géré par Microsoft Threat Experts pour recevoir des notifications d’attaque ciblées proactives et collaborer avec des experts à la demande. Experts à la demande est un service d’extension. Les notifications d’attaques ciblées sont toujours incluses une fois que vous êtes accepté dans le service géré de repérage des menaces Spécialistes des menaces Microsoft.
+>
+> Si vous n’êtes pas encore inscrit et que vous aimeriez profiter de ses avantages, accédez à **Paramètres** \> **Général** \> **Fonctionnalités avancées** \> **Spécialistes des menaces Microsoft** pour vous inscrire. Une fois accepté, vous bénéficiez des avantages des notifications d’attaques ciblées et vous débutez un essai de 90 jours d’Experts à la demande. Contactez votre représentant Microsoft pour obtenir un abonnement complet à Experts à la demande.
 
 <a name="apis"></a>
 
-**[Configuration et administration centralisées, API](management-apis.md)**<br>
+**[Configuration et administration centralisées, API](management-apis.md)**
+
 Intégrez Microsoft Defender pour point de terminaison à vos flux de travail existants.
 
 <a name="mtp"></a>
 
-**[Intégration avec les solutions Microsoft.](threat-protection-integration.md)** <br>
+**[Intégration avec les solutions Microsoft.](threat-protection-integration.md)**
+
 Defender pour point de terminaison s’intègre directement aux différentes solutions Microsoft, notamment :
+
 - Azure Defender
 - Azure Sentinel
 - Intune
@@ -134,7 +149,6 @@ Defender pour point de terminaison s’intègre directement aux différentes sol
 - Microsoft Defender pour Office
 - Skype Entreprise
 
-**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
+
 Avec Microsoft 365 Defender, Defender pour point de terminaison et diverses solutions de sécurité Microsoft forment une suite de défense d’entreprise unifiée pré et post-violation qui s’intègre en mode natif entre les points de terminaison, les identités, les e-mails et les applications pour détecter, empêcher, examiner et répondre automatiquement aux attaques sophistiquées.
-
-

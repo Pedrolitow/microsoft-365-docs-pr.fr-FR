@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Découvrez comment accéder à Microsoft Bookings dans Microsoft 365.
-ms.openlocfilehash: bcd7581a456ec570bacae64ca5bd1b96c23eddf95b0aa110530f156d3db6e9a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc0352166bf7cd20cfa10542d57da9fbd5b160f7
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861890"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823816"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Activer ou désactiver Microsoft bookings
 
@@ -60,13 +60,9 @@ Les administrateurs peuvent demander aux employés de leur organisation de s’y
 
 Lorsque ce paramètre est activé, les employés ajoutés en tant que membres du personnel dans les calendriers de réservation trouveront un lien Approuver/Rejeter dans la notification par courrier électronique qu’ils reçoivent.
 
-Cette fonctionnalité est progressivement étendue au monde entier Microsoft 365 clients. Si vous ne voyez pas cette option dans la Centre d’administration Microsoft 365, consultez-la prochainement.
-
 ## <a name="block-social-sharing-options"></a>Bloquer les options de partage social
 
 Les administrateurs peuvent contrôler la façon dont les pages de réservation sont partagées sur les réseaux sociaux. Ce paramètre est disponible dans la Centre d’administration Microsoft 365 sous **Paramètres** \> **Paramètres** \> **Bookings**.
-
-Cette fonctionnalité est progressivement étendue au monde entier Microsoft 365 clients. Si vous ne voyez pas cette option dans la Centre d’administration Microsoft 365, consultez-la prochainement.
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Autoriser uniquement les utilisateurs sélectionnés à créer des calendriers Bookings
 

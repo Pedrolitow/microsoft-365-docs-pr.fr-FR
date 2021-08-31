@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8eab3ee1244a56c41ad2eea806c8933e9224e47
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f582ff83a790d56b936c93f3e40aac76c7e5df1b
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58559081"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823707"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -76,7 +76,7 @@ Vous pouvez contenir une attaque dans votre organisation en arrêtant le process
 > - Le fichier n’appartient pas aux éditeurs tiers de confiance ou n’est pas signé par Microsoft
 > - Antivirus Microsoft Defender doit au moins être en cours d’exécution en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
-**L’action** Arrêter et mettre en quarantaine le fichier inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes telles que les clés de Registre.
+L’action Arrêter **et mettre en** quarantaine le fichier inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes telles que les clés de Registre.
 
 Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieure, où le fichier a été observé au cours des 30 derniers jours.
 
@@ -188,7 +188,7 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 
 > [!IMPORTANT]
 >
-> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender protection cloud est activée. Pour plus d’informations, [voir Gérer la protection cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
+> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender protection cloud est activée. Pour plus d’informations, voir Gérer la [protection cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 >
 > - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure.
 > - Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables( PE), notamment les fichiers _.exe_ et _.dll_ portables. La couverture sera étendue au fil du temps.
@@ -268,7 +268,7 @@ Vous pouvez également soumettre un exemple via le portail du Centre de sécurit
 
 1. Sélectionnez le fichier que vous souhaitez soumettre pour une analyse approfondie. Vous pouvez sélectionner ou rechercher un fichier dans l’un des affichages suivants :
 
-    - **Alertes :** sélectionnez les liens de fichier dans **la description** ou les **détails** de la chronologie de l’alerte
+    - **Alertes :** sélectionnez les liens de fichier dans la **description** ou les **détails** de la chronologie de l’alerte
     - **Liste des appareils** : sélectionnez les liens de fichiers dans la **section Description** **ou Détails** de l’appareil **dans l’organisation**
     - **Zone de recherche** : **sélectionnez Fichier** dans le menu déroulant et entrez le nom du fichier
 
@@ -325,7 +325,8 @@ Si vous êtes face à un problème lors de la tentative d’soumission d’un fi
 
 6. Si ces étapes ne résolvent pas le problème, contactez [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Prendre des mesures de réponse sur un appareil](respond-machine-alerts.md)
 - [Examiner des fichiers](investigate-files.md)
+- [Actions de réponse manuelles dans Microsoft Defender pour Endpoint Plan 1 (prévisualisation)](defender-endpoint-plan-1.md#manual-response-actions)

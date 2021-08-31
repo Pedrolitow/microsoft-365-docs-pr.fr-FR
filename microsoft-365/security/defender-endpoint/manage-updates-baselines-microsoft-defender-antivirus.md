@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 08/27/2021
-ms.openlocfilehash: f24ff525f2abfe940446a64370840458d7914835
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 2ae397e8c1da002c97392a7e96e5b1a89791e90b
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683539"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823912"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -31,7 +31,7 @@ ms.locfileid: "58683539"
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - Antivirus Microsoft Defender
 
-Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque. Veillez à mettre à jour votre protection antivirus, même si Antivirus Microsoft Defender est en cours d’exécution en [mode passif.](microsoft-defender-antivirus-compatibility.md) Il existe deux types de mises à jour liées au Antivirus Microsoft Defender à jour :
+Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque. Veillez à mettre à jour votre protection antivirus, même si Antivirus Microsoft Defender est en cours d’exécution en [mode passif.](microsoft-defender-antivirus-compatibility.md) Il existe deux types de mises à jour liées à la mise Antivirus Microsoft Defender jour :
 
 - Mises à jour de l’intelligence de la sécurité
 - Mises à jour de produit
@@ -44,11 +44,12 @@ Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appa
 Antivirus Microsoft Defender utilise la protection fournie par le [cloud](cloud-protection-microsoft-defender-antivirus.md) (également appelée Microsoft Advanced Protection Service ou MAPS) et télécharge régulièrement les mises à jour de l’intelligence de sécurité pour fournir une protection.
 
 > [!NOTE]
-> Les mises à jour sont publiées sous les numéros de la Ko ci-dessous :  
-> - Antivirus Microsoft Defender : KB2267602  
+> Les mises à jour sont publiées sous les numéros de la Ko ci-dessous :
+>
+> - Antivirus Microsoft Defender : KB2267602
 > - System Center Endpoint Protection : KB2461484
 
-La protection cloud est toujours active et nécessite une connexion active à Internet pour fonctionner. Les mises à jour des informations de sécurité se produisent à une cadence programmée (configurable via une stratégie). Pour plus d’informations, voir Utiliser la protection fournie par le [cloud microsoft dans Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md). 
+La protection cloud est toujours active et nécessite une connexion active à Internet pour fonctionner. Les mises à jour des informations de sécurité se produisent à une cadence programmée (configurable via une stratégie). Pour plus d’informations, voir Utiliser la protection fournie par le [cloud microsoft dans Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
 Pour obtenir la liste des mises à jour récentes de l’intelligence de sécurité, voir Les mises à jour d’intelligence de sécurité pour Antivirus Microsoft Defender logiciel [anti-programme](https://www.microsoft.com/en-us/wdsi/defenderupdates)malveillant Microsoft.
 
@@ -58,7 +59,7 @@ Les mises à jour du moteur sont incluses dans les mises à jour de l’intellig
 
 Antivirus Microsoft Defender nécessite des mises à jour [mensuelles (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) appelées mises à jour *de plateforme.*
 
-Vous pouvez gérer la distribution des mises à jour via l’une des méthodes suivantes : 
+Vous pouvez gérer la distribution des mises à jour via l’une des méthodes suivantes :
 
 - [Windows Server Update Service (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 - [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
@@ -67,47 +68,41 @@ Vous pouvez gérer la distribution des mises à jour via l’une des méthodes s
 Pour plus d’informations, [voir Gérer les sources pour les mises à jour Antivirus Microsoft Defender protection des données.](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
 > [!NOTE]
+>
 > - Les mises à jour mensuelles sont publiées par phases, ce qui entraîne la mise à jour de plusieurs packages dans vos services de mise à jour [de serveur Window.](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
-> - Cet article répertorie les modifications incluses dans le canal de publication large. [Consultez la dernière version de canal étendu ici.](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info) 
+> - Cet article répertorie les modifications incluses dans le canal de publication large. [Consultez la dernière version de canal étendu ici.](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
 > - Pour en savoir plus sur le processus de déploiement progressif et pour en savoir plus sur la prochaine version, voir Gérer le processus de déploiement progressif pour les mises à jour [de Microsoft Defender.](manage-gradual-rollout.md)
-> - Pour en savoir plus sur les mises à jour de l’intelligence de sécurité, consultez les mises à jour d’intelligence de sécurité pour Antivirus Microsoft Defender logiciel [anti-programme](https://www.microsoft.com/wdsi/defenderupdates)malveillant Microsoft. 
+> - Pour en savoir plus sur les mises à jour de l’intelligence de sécurité, consultez les mises à jour d’intelligence de sécurité pour Antivirus Microsoft Defender logiciel [anti-programme](https://www.microsoft.com/wdsi/defenderupdates)malveillant Microsoft.
 
 ## <a name="monthly-platform-and-engine-versions"></a>Versions mensuelles de la plateforme et du moteur
 
 Pour plus d’informations sur la mise à jour ou l’installation de la mise à jour de plateforme, voir Mise à [jour Windows Defender plateforme anti-programme malveillant.](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)
 
-Toutes nos mises à jour contiennent 
+Toutes nos mises à jour contiennent
+
 - améliorations des performances ;
-- améliorations en matière de serviceabilité ; et 
+- améliorations en matière de serviceabilité ; et
 - améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
 <summary> Juillet-2021 (plateforme : 4.18.2107.4 | Moteur : 1.1.18400.4)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.345.13.0**  
-&ensp;Publication : **5 août 2021**  
-&ensp;Plateforme : **4.18.2107.4**  
-&ensp;Moteur : **1.1.18400.4**  
-&ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.345.13.0** Publication : Plateforme du 5 août &ensp; **2021** : &ensp; Moteur **4.18.2107.4** : &ensp; **1.1.18400.4** Phase de prise en charge : Mises à jour &ensp; **critiques** et de sécurité
+
 ### <a name="whats-new"></a>Nouveautés
 - Prise en charge des contrôles d’appareil ajoutée Windows appareils portables
 - La protection des applications potentiellement indésirables (PUA) est désactivée par défaut pour les consommateurs (voir Applications potentiellement indésirables bloquées [par défaut)](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)
-- Les analyses programmées pour les systèmes gérés par l’objet de stratégie de groupe respecteront la durée d’analyse configurée par l’utilisateur 
+- Les analyses programmées pour les systèmes gérés par l’objet de stratégie de groupe respecteront la durée d’analyse configurée par l’utilisateur
 - Améliorations apportées au moteur d’analyse du comportement
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details><details>
 <summary> Juin-2021 (plateforme : 4.18.2106.5 | Moteur : 1.1.18300.4)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.343.17.0**  
-&ensp;Publication : **28 juin 2021**  
-&ensp;Plateforme : **4.18.2106.5**  
-&ensp;Moteur : **1.1.18300.4**  
-&ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**
-    
+&ensp;Version de la mise à jour des informations de sécurité : **1.343.17.0** Publication : Plateforme du &ensp; **28 juin 2021** : &ensp; Moteur **4.18.2106.5** : &ensp; **1.1.18300.4** Phase de prise en charge : Sécurité et mises à jour &ensp; **critiques**
+
 ### <a name="whats-new"></a>Nouveautés
 - Nouveaux contrôles pour la gestion du processus de déploiement progressif des mises à jour De Microsoft Defender. Voir [Gérer le processus de déploiement progressif pour les mises à jour de Microsoft Defender.](manage-gradual-rollout.md)
 - Amélioration du moteur d’analyse du comportement
@@ -115,37 +110,30 @@ Aucun problème connu
 - Inspections des événements réseau Edge étendus
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details><details>
 <summary> Mai-2021 (plateforme : 4.18.2105.4 | Moteur : 1.1.18200.4)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.341.8.0**  
-&ensp;Publication : **3 juin 2021**  
-&ensp;Plateforme : **4.18.2105.4**  
-&ensp;Moteur : **1.1.18200.4**  
-&ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.341.8.0** Publication : 3 juin &ensp; **2021** Plateforme : &ensp; **4.18.2105.4** &ensp; Engine: **1.1.1.18200.4** &ensp; Support phase: Security and Critical **Updates**
+
 ### <a name="whats-new"></a>Nouveautés
-- Améliorations apportées à la [surveillance du comportement](client-behavioral-blocking.md) 
+- Améliorations apportées à la [surveillance du comportement](client-behavioral-blocking.md)
 - Fonctionnalité de [filtrage des](network-protection.md) notifications de protection réseau fixe
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details>
 
 ### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédente : prise en charge de la mise à niveau technique uniquement
 
-Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique. 
+Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.
 <details>
 <summary> Avril-2021 (plateforme : 4.18.2104.14 | Moteur : 1.1.18100.5)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.337.2.0**  
-&ensp;Publication : **26 avril 2021**  (moteur : 1.1.18100.6 publié le 5 mai 2021) Plateforme : &ensp; **4.18.2104.14**  
-&ensp;Moteur : **1.1.18100.5**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.337.2.0** Publication : &ensp; **26 avril 2021**  (Moteur : 1.1.18100.6 publié le 5 mai 2021) Plateforme : &ensp; **4.18.2104.14** &ensp; Engine: **1.1.1.18100.5** &ensp; Support phase: Technical upgrade support **(only)**
+
 ### <a name="whats-new"></a>Nouveautés
 - Logique de surveillance du comportement supplémentaire
 - Détection améliorée de l’enregistreur de clés en mode noyau
@@ -153,52 +141,40 @@ Après la publication d’une nouvelle version de package, la prise en charge de
 
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details><details>
 <summary> Mars-2021 (plateforme : 4.18.2103.7 | Moteur : 1.1.18000.5)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.335.36.0**  
-&ensp;Publication : **2 avril 2021**  
-&ensp;Plateforme : **4.18.2103.7**  
-&ensp;Moteur : **1.1.18000.5**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.335.36.0** Publication : Plateforme du 2 avril &ensp; **2021** : &ensp; Moteur **4.18.2103.7** : &ensp; **1.1.18000.5** : Prise en charge de la mise à niveau technique &ensp; **(uniquement)**
+
 ### <a name="whats-new"></a>Nouveautés
 
-- Amélioration du moteur d’analyse du comportement 
-- Préventions d’attaques par force brute du réseau étendu 
+- Amélioration du moteur d’analyse du comportement
+- Préventions d’attaques par force brute du réseau étendu
 - Génération d’événements de tentative de falsification en échec supplémentaires lorsque la [protection](prevent-changes-to-security-settings-with-tamper-protection.md) contre la falsification est activée
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details><details>
 <summary> Février-2021 (plateforme : 4.18.2102.3 | Moteur : 1.1.17900.7)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.333.7.0**  
-&ensp;Publication : **9 mars 2021**  
-&ensp;Plateforme : **4.18.2102.3**  
-&ensp;Moteur : **1.1.17900.7**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.333.7.0** Publication : 9 mars &ensp; **2021** Plateforme : &ensp; **4.18.2102.3** &ensp; Engine: **1.1.1.17900.7** &ensp; Support: Technical upgrade support **(only)**
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Amélioration de la récupération du service par le biais [de la protection contre la falsification](prevent-changes-to-security-settings-with-tamper-protection.md)
 - Étendre l’étendue de la protection contre la falsification
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details><details>
 <summary> Janvier-2021 (plateforme : 4.18.2101.9 | Moteur : 1.1.17800.5)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.327.1854.0**  
-&ensp;Publication : **2 février 2021**  
-&ensp;Plateforme : **4.18.2101.9**  
-&ensp;Moteur : **1.1.17800.5**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.327.1854.0** Publication : Plateforme du 2 février &ensp; **2021** : &ensp; **4.18.2101.9** &ensp; Engine : **1.1.1.17800.5** Phase de support : Prise en charge de la mise à niveau technique &ensp; **(uniquement)**
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Améliorations de la détection d’exploits shellcode
@@ -208,33 +184,25 @@ Aucun problème connu
 - Correctif : PEPT notification de blocage reste dans l’historique des menaces après la détection initiale de la protection en temps réel
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details><details>
 <summary> Novembre-2020 (plateforme : 4.18.2011.6 | Moteur : 1.1.17700.4)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.327.1854.0**  
-&ensp;Publication : **03 décembre 2020**  
-&ensp;Plateforme : **4.18.2011.6**  
-&ensp;Moteur : **1.1.17700.4**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.327.1854.0** Publication : Plateforme du &ensp; **03 décembre 2020** : &ensp; Moteur **4.18.2011.6** : &ensp; **1.1.17700.4** : Prise en charge de la mise à niveau technique &ensp; **(uniquement)**
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Amélioration de la [journalisation de la prise en](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) charge de l’état SmartScreen
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details><details>
 <summary> Octobre-2020 (plateforme : 4.18.2010.7 | Moteur : 1.1.17600.5)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.327.7.0**  
-&ensp;Publication : **29 octobre 2020**  
-&ensp;Plateforme : **4.18.2010.7**  
-&ensp;Moteur : **1.1.17600.5**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.327.7.0** Publication : &ensp; **29 octobre 2020** Plateforme : &ensp; **4.18.2010.7** &ensp; Engine: **1.1.1.17600.5** &ensp; Support phase: Technical upgrade support **(only)**
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Nouvelles descriptions pour les catégories de menaces spéciales
@@ -244,17 +212,13 @@ Aucun problème connu
 
 ### <a name="known-issues"></a>Problèmes connus
 
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details><details>
 <summary> Septembre-2020 (plateforme : 4.18.2009.7 | Moteur : 1.1.17500.4)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.325.10.0**  
-&ensp;Publication : **01 octobre 2020**  
-&ensp;Plateforme : **4.18.2009.7**  
-&ensp;Moteur : **1.1.17500.4**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.325.10.0** Publication : Plateforme du &ensp; **01 octobre 2020** : &ensp; Moteur **4.18.2009.7** : &ensp; **1.1.17500.4** : Prise en charge de la mise à niveau technique &ensp; **(uniquement)**
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Des autorisations d’administrateur sont requises pour restaurer les fichiers en quarantaine
@@ -269,17 +233,13 @@ Aucun problème connu
 
 ### <a name="known-issues"></a>Problèmes connus
 
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details>
 <details>
 <summary> Août-2020 (plateforme : 4.18.2008.9 | Moteur : 1.1.17400.5)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.323.9.0**  
-&ensp;Publication : **27 août 2020**  
-&ensp;Plateforme : **4.18.2008.9**  
-&ensp;Moteur : **1.1.17400.5**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
+&ensp;Version de mise à jour des informations de sécurité : **1.323.9.0** Publication : &ensp; **27 août 2020** Plateforme : &ensp; **4.18.2008.9** &ensp; Engine: **1.1.1.17400.5** &ensp; Support phase: Technical upgrade support **(only)**
 
 ### <a name="whats-new"></a>Nouveautés
 
@@ -292,61 +252,49 @@ Aucun problème connu
 
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details>
 
 <details>
 <summary> Juillet-2020 (plateforme : 4.18.2007.8 | Moteur : 1.1.17300.4)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.321.30.0**  
-&ensp;Publication : **28 juillet 2020**  
-&ensp;Plateforme : **4.18.2007.8**  
-&ensp;Moteur : **1.1.17300.4**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.321.30.0** Publication : Plateforme du &ensp; **28 juillet 2020** : &ensp; Moteur **4.18.2007.8** : &ensp; **1.1.17300.4** Phase de support : Prise en charge de la mise à niveau technique &ensp; **(uniquement)**
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Télémétrie améliorée pour BITS
 - Validation améliorée du certificat de signature de code Authenticode
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details>
 
 <details>
 <summary> Juin-2020 (plateforme : 4.18.2006.10 | Moteur : 1.1.17200.2)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.319.20.0**  
-&ensp;Publication : **22 juin 2020**  
-&ensp;Plateforme : **4.18.2006.10**  
-&ensp;Moteur : **1.1.17200.2**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.319.20.0** Publication : Plateforme du &ensp; **22 juin 2020** : &ensp; Moteur **4.18.2006.10** : &ensp; **1.1.17200.2** Phase de support : Prise en charge de la mise à niveau technique &ensp; **(uniquement)**
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Possibilité de spécifier [l’emplacement des journaux de support](./collect-diagnostic-data.md)
 - Ignorer l’analyse de rattrapage agressive en mode passif.
 - Autoriser Defender à mettre à jour les connexions avec des compteurs
-- Réglage des performances fixes lorsque la mise en cache est désactivée 
-- Requête de Registre fixe 
+- Réglage des performances fixes lorsque la mise en cache est désactivée
+- Requête de Registre fixe
 - Randomisation du scantime fixe dans ADMX
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details>
 
 <details>
 <summary> Mai-2020 (plateforme : 4.18.2005.4 | Moteur : 1.1.17100.2)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.317.20.0**  
-&ensp;Publication : **26 mai 2020**  
-&ensp;Plateforme : **4.18.2005.4**  
-&ensp;Moteur : **1.1.17100.2**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.317.20.0** Publication : Plateforme du &ensp; **26 mai 2020** : &ensp; Moteur **4.18.2005.4** : &ensp; **1.1.17100.2** : Prise en charge de la mise à niveau technique &ensp; **(uniquement)**
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Journalisation améliorée des événements d’analyse
@@ -357,19 +305,15 @@ Aucun problème connu
 - Journal d’installation des mises à jour de sécurité fixes
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details>
 
 <details>
 <summary> Avril-2020 (plateforme : 4.18.2004.6 | Moteur : 1.1.17000.2)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.315.12.0**  
-&ensp;Publication : **30 avril 2020**  
-&ensp;Plateforme : **4.18.2004.6**  
-&ensp;Moteur : **1.1.17000.2**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.315.12.0** Publication : Plateforme du &ensp; **30 avril 2020** : &ensp; Moteur **4.18.2004.6** : &ensp; **1.1.17000.2** Phase de support : Prise en charge de la mise à niveau technique &ensp; **(uniquement)**
+
 ### <a name="whats-new"></a>Nouveautés
 - Améliorations de WDfilter
 - Ajouter des données d’événements actionnables à des événements de détection de réduction de la surface d’attaque
@@ -380,19 +324,15 @@ Aucun problème connu
 - Étendre la journalisation pour les mises à jour
 
 ### <a name="known-issues"></a>Problèmes connus
-Aucun problème connu  
+Aucun problème connu
 <br/>
 </details>
 
 <details>
 <summary> Mars-2020 (plateforme : 4.18.2003.8 | Moteur : 1.1.16900.2)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.313.8.0**  
-&ensp;Publication : **24 mars 2020**  
-&ensp;Plateforme : **4.18.2003.8**  
-&ensp;Moteur : **1.1.16900.4**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-    
+&ensp;Version de mise à jour des informations de sécurité : **1.313.8.0** Publication : Plateforme du &ensp; **24 mars 2020** : &ensp; Moteur **4.18.2003.8** : &ensp; **1.1.16900.4** : Prise en charge de la mise à niveau technique &ensp; **(uniquement)**
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Option de limitation du processeur ajoutée à [MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)
@@ -400,7 +340,7 @@ Aucun problème connu
 - réduire le délai d’out des informations de sécurité (5 min)
 - Étendre la fonctionnalité de journal interne du moteur AMSI
 - Améliorer la notification pour le blocage des processus
-   
+
 ### <a name="known-issues"></a>Problèmes connus
 [**Fixe**] Antivirus Microsoft Defender ignorer les fichiers lors de l’exécution d’une analyse.
 
@@ -410,17 +350,13 @@ Aucun problème connu
 <details>
 
 <summary> Février-2020 (plateforme : - | Moteur : 1.1.16800.2)</summary>
-  
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.311.4.0**   
-&ensp;Publication : **25 février 2020**  
-&ensp;Plateforme/Client : **-**  
-&ensp;Moteur : **1.1.16800.2**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-     
+
+&ensp;Version de mise à jour des informations de sécurité : **1.311.4.0** Publication : 25 février &ensp; **2020** &ensp; Plateforme/Client : Moteur : **-** &ensp; **1.1.16800.2** Phase de prise en charge : Prise en charge de la mise à niveau technique &ensp; **(uniquement)**
+
 ### <a name="whats-new"></a>Nouveautés
 
-  
+
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu
 <br/>
@@ -428,14 +364,10 @@ Aucun problème connu
 
 <details>
 <summary> Janvier-2020 (plateforme : 4.18.2001.10 | Moteur : 1.1.16700.2)</summary>
-  
 
-Version de mise à jour des informations de sécurité **: 1.309.32.0**  
-Publication : **30 janvier 2020**  
-Plateforme/Client : **4.18.2001.10**  
-Moteur : **1.1.16700.2**  
-&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
-     
+
+Version de mise à jour des informations de sécurité : **1.309.32.0** Publication : **30 janvier 2020** Plateforme/Client : **4.18.2001.10** Engine: **1.1.16700.2** &ensp; Support phase: Technical upgrade support **(only)**
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Correction du BSOD sur WS2016 avec Exchange
@@ -443,16 +375,16 @@ Moteur : **1.1.16700.2**
 - Les versions de plateforme et de moteur sont ajoutées [à WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - étendre la mise à jour des signatures d’urgence [en mode passif](./microsoft-defender-antivirus-compatibility.md)
 - Correction du hang 4.18.1911.3
-   
+
 ### <a name="known-issues"></a>Problèmes connus
 
-[**Fixe**] Les appareils utilisant le [mode](/windows-hardware/design/device-experiences/modern-standby) de veille moderne peuvent se bloquer avec le pilote de filtre Windows Defender, ce qui se traduit par un manque de protection.  Les ordinateurs concernés semblent ne pas avoir été mis à jour vers la dernière plateforme anti-programme malveillant.  
+[**Fixe**] Les appareils utilisant le [mode](/windows-hardware/design/device-experiences/modern-standby) de veille moderne peuvent se bloquer avec le pilote de filtre Windows Defender, ce qui se traduit par un manque de protection.  Les ordinateurs concernés semblent ne pas avoir été mis à jour vers la dernière plateforme anti-programme malveillant.
 <br/>
 > [!IMPORTANT]
 > Cette mise à jour est :
 > - nécessaire aux appareils RS1 exécutant une version inférieure de la plateforme pour prendre en charge SHA2 ;
 > - a un indicateur de redémarrage pour les systèmes qui ont des problèmes en suspension ;
-> - est re-publiée en avril 2020 et ne sera pas recalée par les mises à jour plus nouvelles pour conserver la disponibilité future ;  
+> - est re-publiée en avril 2020 et ne sera pas recalée par les mises à jour plus nouvelles pour conserver la disponibilité future ;
 > - est classée en tant que mise à jour en raison de l’exigence de redémarrage ; et
 > - est uniquement proposé avec [la mise à jour Windows.](https://support.microsoft.com/help/4027667/windows-10-update)
 <br/>
@@ -461,19 +393,15 @@ Moteur : **1.1.16700.2**
 <details>
 <summary> Novembre-2019 (plateforme : 4.18.1911.3 | Moteur : 1.1.16600.7)</summary>
 
-Version de mise à jour des informations de sécurité **: 1.307.13.0**  
-Publication : **7 décembre 2019**  
-Plateforme : **4.18.1911.3**  
-Moteur : **1.1.17000.7**  
-Phase de support : **aucune prise en charge**  
-     
+Version de mise à jour des informations de sécurité : **1.307.13.0** Publication : 7 décembre **2019** Plateforme : **4.18.1911.3** Engine: **1.1.1.17000.7** Support phase: **Aucune prise** en charge
+
 ### <a name="whats-new"></a>Nouveautés
 
 - Niveau de suivi MpCmdRun fixe
 - Informations de version de WDFilter fixes
 - Améliorer les notifications (PUA)
 - ajouter des journaux MRT pour prendre en charge les fichiers
-   
+
 ### <a name="known-issues"></a>Problèmes connus
 Lorsque cette mise à jour est installée, l’appareil a besoin du package de saut 4.18.2001.10 pour pouvoir se mettre à jour vers la dernière version de la plateforme.
 <br/>
@@ -484,7 +412,7 @@ Lorsque cette mise à jour est installée, l’appareil a besoin du package de s
 Les mises à jour de la plateforme et du moteur sont fournies à une cadence mensuelle. Pour être entièrement pris en charge, tenez à jour les dernières mises à jour de plateforme. Notre structure de support est dynamique et évolue en deux phases en fonction de la disponibilité de la dernière version de plateforme :
 
 - Phase de maintenance des mises à jour **critiques** et de sécurité : lors de l’exécution de la dernière version de la plateforme, vous serez éligible à la réception des mises à jour de sécurité et critiques sur la plateforme anti-programme malveillant.
- 
+
 - **Phase de support technique (uniquement)** : après la publication d’une nouvelle version de plateforme, la prise en charge des versions antérieures (N-2) sera réduit au support technique uniquement. Les versions de plateforme antérieures à N-2 ne seront plus pris en charge.*
 
 \*Le support technique continuera d’être fourni pour les mises à niveau de la version Windows 10 (voir la version de plateforme incluse avec [les](#platform-version-included-with-windows-10-releases)versions Windows 10 ) vers la dernière version de la plateforme.
@@ -492,7 +420,7 @@ Les mises à jour de la plateforme et du moteur sont fournies à une cadence men
 Pendant la phase de support technique (uniquement), les incidents de support commercialement raisonnables sont fournis par le biais du support technique du service clientèle Microsoft & et des offres de support géré de Microsoft (telles que le support Premier). Si un incident de support nécessite une escalade vers le développement pour obtenir des conseils supplémentaires, nécessite une mise à jour non de sécurité ou nécessite une mise à jour de sécurité, les clients sont invités à mettre à niveau vers la dernière version de plateforme ou une mise à jour intermédiaire (*).
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>Version de plateforme incluse dans Windows 10 versions
-Le tableau ci-dessous fournit les versions Antivirus Microsoft Defender de plateforme et de moteur qui sont livrées avec les versions les Windows 10 les plus récentes :    
+Le tableau ci-dessous fournit les versions Antivirus Microsoft Defender de plateforme et de moteur qui sont livrées avec les versions les Windows 10 les plus récentes :
 
 |Windows 10 version  |Version de la plateforme  |Version du moteur |Phase de prise en charge |
 |:---|:---|:---|:---|
@@ -503,183 +431,147 @@ Le tableau ci-dessous fournit les versions Antivirus Microsoft Defender de plate
 |1803 (RS4) |4.13.17134.1 |1.1.14600.4 | Prise en charge de la mise à niveau technique (uniquement) |
 |1709 (RS3) |4.12.16299.15 |1.1.14104.0 | Prise en charge de la mise à niveau technique (uniquement) |
 |1703 (RS2) |4.11.15603.2 |1.1.13504.0 | Prise en charge de la mise à niveau technique (uniquement) |
-|1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Prise en charge de la mise à niveau technique (uniquement) |  
+|1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Prise en charge de la mise à niveau technique (uniquement) |
 
 Pour Windows 10 de publication, consultez la [Windows de faits sur](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)le cycle de vie.
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Mises à jour pour la gestion et la maintenance des images de déploiement (DISM)
 
-Nous vous recommandons de mettre à jour vos images d’installation Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019 et Windows Server 2016 OS avec les dernières mises à jour antivirus et anti-programme malveillant. La mise à jour de vos images d’installation du système d’exploitation permet d’éviter un écart de protection. 
+Nous vous recommandons de mettre à jour vos images d’installation Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019 et Windows Server 2016 OS avec les dernières mises à jour antivirus et anti-programme malveillant. La mise à jour de vos images d’installation du système d’exploitation permet d’éviter un écart de protection.
 
 Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Windows images d’installation du système d’exploitation.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
 
 <details>
 <summary>1.1.2108.01</summary>
 
-&ensp;Version du package **: 1.1.2108.01**    
-&ensp;Version de la plateforme **: 4.18.2107.4**   
-&ensp;Version du moteur **: 1.1.18300.4**  
-&ensp;Version de signature **: 1.343.2244.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2108.01** : &ensp; **4.18.2107.4** Version du moteur : &ensp; **1.1.18300.4** Version de signature : &ensp; **1.343.2244.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
 
-&ensp;Version du package **: 1.1.2107.02**    
-&ensp;Version de plateforme **: 4.18.2105.5**   
-&ensp;Version du moteur **: 1.1.18300.4**  
-&ensp;Version de signature **: 1.343.658.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2107.02** : &ensp; **version 4.18.2105.5** Engine &ensp; : **1.1.18300.4** Version de signature : &ensp; **1.343.658.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
 
-&ensp;Version du package **: 1.1.2106.01**    
-&ensp;Version de la plateforme **: 4.18.2104.14**   
-&ensp;Version du moteur **: 1.1.18100.6**  
-&ensp;Version de signature **: 1.339.1923.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2106.01** : &ensp; **4.18.2104.14** Version du moteur : &ensp; **1.1.18100.6** Version de signature : &ensp; **1.339.1923.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
 
-&ensp;Version du package **: 1.1.2105.01**    
-&ensp;Version de la plateforme **: 4.18.2103.7**   
-&ensp;Version du moteur **: 1.1.18100.6**  
-&ensp;Version de signature **: 1.339.42.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2105.01** : &ensp; **4.18.2103.7** Version du moteur : &ensp; **1.1.18100.6** Version de signature : &ensp; **1.339.42.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
 
-&ensp;Version du package **: 1.1.2104.01**    
-&ensp;Version de plateforme **: 4.18.2102.4**   
-&ensp;Version du moteur **: 1.1.18000.5**  
-&ensp;Version de signature **: 1.335.232.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2104.01** : &ensp; **version 4.18.2102.4** Engine &ensp; : **1.1.18000.5** Version de signature : &ensp; **1.335.232.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
 
-&ensp;Version du package **: 1.1.2103.01**    
-&ensp;Version de plateforme **: 4.18.2101.9**   
-&ensp;Version du moteur **: 1.1.17800.5**  
-&ensp;Version de signature **: 1.331.2302.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2103.01** : &ensp; **4.18.2101.9 Version** du moteur : &ensp; **1.1.17800.5** Version de signature : &ensp; **1.331.2302.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
 
-&ensp;Version du package **: 1.1.2102.03**    
-&ensp;Version de la plateforme **: 4.18.2011.6**   
-&ensp;Version du moteur **: 1.1.17800.5**  
-&ensp;Version de signature **: 1.331.174.0**    
-    
+&ensp;Version du package : version de la plateforme **1.1.2102.03** : version du moteur &ensp; **4.18.2011.6** : &ensp; **1.1.17800.5** Version de signature : &ensp; **1.331.174.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
 
-&ensp;Version du package **: 1.1.2101.02**    
-&ensp;Version de la plateforme **: 4.18.2011.6**   
-&ensp;Version du moteur **: 1.1.17700.4**  
-&ensp;Version de signature **: 1.329.1796.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2101.02** : &ensp; **4.18.2011.6 Version** du moteur : &ensp; **1.1.17700.4** Version de signature : &ensp; **1.329.1796.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
 
-&ensp;Version du package **: 1.1.2012.01**    
-&ensp;Version de plateforme **: 4.18.2010.7**   
-&ensp;Version du moteur **: 1.1.17600.5**  
-&ensp;Version de signature **: 1.327.1991.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2012.01** : version du moteur &ensp; **4.18.2010.7** : &ensp; **1.1.17600.5** Version de signature : &ensp; **1.327.1991.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2011.02</summary>
 
-&ensp;Version du package **: 1.1.2011.02**    
-&ensp;Version de plateforme **: 4.18.2010.7**   
-&ensp;Version du moteur **: 1.1.17600.5**  
-&ensp;Version de signature **: 1.327.658.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2011.02** : version du moteur &ensp; **4.18.2010.7** : &ensp; **1.1.17600.5** Version de signature : &ensp; **1.327.658.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Signatures Antivirus Microsoft Defender actualisées  
+- Signatures Antivirus Microsoft Defender actualisées
 <br/>
 </details><details>
 <summary>1.1.2011.01</summary>
 
-&ensp;Version du package **: 1.1.2011.01**    
-&ensp;Version de la plateforme **: 4.18.2009.7**  
-&ensp;Version du moteur **: 1.1.17600.5**  
-&ensp;Version de signature **: 1.327.344.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2011.01** : version du moteur &ensp; **4.18.2009.7** : &ensp; **1.1.17600.5** Version de signature : &ensp; **1.327.344.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun  
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>
 
-&ensp;Version du package **: 1.1.2011.01**    
-&ensp;Version de plateforme **: 4.18.2008.9**   
-&ensp;Version du moteur **: 1.1.17400.5**  
-&ensp;Version de signature **: 1.327.2216.0**    
-    
+&ensp;Version du package : version de plateforme **1.1.2011.01** : version du moteur &ensp; **4.18.2008.9** : &ensp; **1.1.17400.5** Version de signature : &ensp; **1.327.2216.0**
+
 ### <a name="fixes"></a>Correctifs
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Ajout de la prise en charge Windows 10 images d’installation du système d’exploitation RS1 ou ultérieure.  
+- Ajout de la prise en charge Windows 10 images d’installation du système d’exploitation RS1 ou ultérieure.
 <br/>
 </details>
 

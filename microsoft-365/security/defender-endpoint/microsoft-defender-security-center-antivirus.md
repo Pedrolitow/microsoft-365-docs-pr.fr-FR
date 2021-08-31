@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a247aac370ba65e4ede48b0232ded1d93f6e8b99
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d8bc077e12d52a5194b6e698a989704bdc273c52
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568887"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823767"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows de messagerie
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -43,14 +43,14 @@ Consultez [l’article Sécurité Windows pour](/windows/threat-protection/windo
 
 L Sécurité Windows’application est une interface client Windows 10 version 1703 et ultérieures. Il ne s’agit pas du Centre de sécurité Microsoft Defender web utilisé pour examiner et gérer [Microsoft Defender for Endpoint.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
-## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Passer en revue les paramètres de protection contre les virus et menaces dans l Sécurité Windows appl
+## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Passer en revue les paramètres de protection contre les virus et les menaces dans l Sécurité Windows appl
 
 :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Paramètres de protection contre les virus et menaces dans Sécurité Windows application.":::
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
-   
+
 Les sections suivantes décrivent comment effectuer certaines des tâches les plus courantes lors de l’examen ou de l’interaction avec la protection contre les menaces fournie par Antivirus Microsoft Defender dans l’application Sécurité Windows.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
 
-3. Sélectionnez **les mises à jour & protection contre les virus contre les menaces.** La version actuellement installée s’affiche avec des informations sur le moment où elle a été téléchargée. Vous pouvez vérifier votre version actuelle par rapport à la dernière version disponible pour le téléchargement manuel ou consulter le journal des changements pour cette version. Consultez les mises à jour de l’intelligence [de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
+3. Sélectionnez **les mises à jour & protection contre les virus contre les menaces.** La version actuellement installée s’affiche avec des informations sur le moment où elle a été téléchargée. Vous pouvez vérifier votre version actuelle par rapport à la dernière version disponible pour le téléchargement manuel ou consulter le journal des changements pour cette version. Consultez les mises à jour de l’intelligence [de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft.](https://www.microsoft.com/wdsi/defenderupdates)
 
 4. Sélectionnez **Vérifier les mises à jour pour** télécharger les nouvelles mises à jour de la protection (le cas caser).
 
@@ -96,23 +96,28 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
 
-3. Sous les **paramètres Gérer,** sélectionnez **Paramètres de protection contre & virus.**
+3. Sous les **paramètres Gérer,** sélectionnez Paramètres de protection contre & virus et **menaces.**
 
-4. Sous le **paramètre Exclusions,** **sélectionnez Ajouter ou supprimer des exclusions.** 
+4. Sous le **paramètre Exclusions,** **sélectionnez Ajouter ou supprimer des exclusions.**
 
-5. Sélectionnez l’icône plus ( **+** ) pour choisir le type et définir les options pour chaque exclusion. 
+5. Sélectionnez l’icône plus ( **+** ) pour choisir le type et définir les options pour chaque exclusion.
 
 Le tableau suivant récapitule les types d’exclusion et ce qui se produit :
 
-|Type d’exclusion  |Défini par  |Action exécutée  |
-|---------|---------|---------|
-|**Fichier** |Lieu <br/>Exemple : `c:\sample\sample.test` |Le fichier spécifique est ignoré par Antivirus Microsoft Defender. |
-|**Folder**    |Lieu <br/>Exemple : `c:\test\sample`       |Tous les éléments du dossier spécifié sont ignorés par Antivirus Microsoft Defender.         |
-|**Type de fichier**   |Extension de fichier <br/>Exemple : `.test` |Tous les fichiers avec `.test` l’extension n’importe où sur votre appareil sont ignorés par Antivirus Microsoft Defender.         |
-|**Processus**     |Chemin d’accès au fichier exécutable <br>Exemple : `c:\test\process.exe`         |Le processus spécifique et tous les fichiers ouverts par ce processus sont ignorés par Antivirus Microsoft Defender.         |
+<br>
+
+****
+|Type d’exclusion|Défini par|Action exécutée|
+|---|---|---|
+|**Fichier**|Emplacement <br/>Exemple : `c:\sample\sample.test`|Le fichier spécifique est ignoré par Antivirus Microsoft Defender.|
+|**Folder**|Emplacement <br/>Exemple : `c:\test\sample`|Tous les éléments du dossier spécifié sont ignorés par Antivirus Microsoft Defender.|
+|**Type de fichier**|Extension de fichier <br/>Exemple : `.test`|Tous les fichiers avec `.test` l’extension n’importe où sur votre appareil sont ignorés par Antivirus Microsoft Defender.|
+|**Processus**|Chemin d’accès au fichier exécutable <br>Exemple : `c:\test\process.exe`|Le processus spécifique et tous les fichiers ouverts par ce processus sont ignorés par Antivirus Microsoft Defender.|
+|
 
 Pour en savoir plus, consultez les ressources suivantes :
-- [Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier](./configure-extension-file-exclusions-microsoft-defender-antivirus.md) 
+
+- [Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurer des exclusions pour les fichiers ouverts par des processus](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 ## <a name="review-threat-detection-history-in-the-windows-defender-security-center-app"></a>Passer en revue l’historique de détection des menaces dans Windows Defender’application Centre de sécurité
@@ -131,9 +136,10 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 3. Sous Protection **contre les ransomware,** **sélectionnez Gérer la protection contre les ransomware.**
 
-4. Pour modifier **les paramètres d’accès contrôlé aux** dossiers, voir Protéger les [dossiers importants avec accès contrôlé aux dossiers.](/microsoft-365/security/defender-endpoint/controlled-folders)
+4. Pour modifier **les paramètres d’accès contrôlé aux** dossiers, voir Protéger les dossiers importants avec accès contrôlé aux [dossiers.](/microsoft-365/security/defender-endpoint/controlled-folders)
 
 5. Pour configurer les options  de récupération  de ransomware, sélectionnez Configurer sous Récupération des données de ransomware et suivez les instructions pour lier ou configurer votre compte OneDrive afin de pouvoir facilement récupérer d’une attaque par ransomware.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

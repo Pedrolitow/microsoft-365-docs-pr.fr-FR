@@ -15,19 +15,19 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: badf2f18f85b2f8776dec4b119e58ad3839c9074db17f24083ca648c8c24e730
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d00c4a541951ee1c241a52a19b8ec27301b793a1
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884546"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823792"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Gérer les mises à jour pour les appareils mobiles et les machines virtuelles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -45,7 +45,7 @@ Les articles suivants peuvent également être utiles dans les situations suivan
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Opter pour Microsoft Update sur des ordinateurs mobiles sans connexion WSUS
 
-Vous pouvez utiliser Microsoft Update pour maintenir à jour les informations de sécurité sur les appareils mobiles exécutant Antivirus Microsoft Defender lorsqu’ils ne sont pas connectés au réseau d’entreprise ou n’ont pas de connexion WSUS. 
+Vous pouvez utiliser Microsoft Update pour maintenir à jour les informations de sécurité sur les appareils mobiles exécutant Antivirus Microsoft Defender lorsqu’ils ne sont pas connectés au réseau d’entreprise ou n’ont pas de connexion WSUS.
 
 Cela signifie que les mises à jour de protection peuvent être livrées aux appareils (via Microsoft Update) même si vous avez définie WSUS pour remplacer Microsoft Update.
 
@@ -63,10 +63,9 @@ Vous pouvez choisir Microsoft Update sur l’appareil mobile de l’une des mani
 
 3. Sélectionnez **stratégies** **puis modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender**  >    >  **mises à jour des signatures.**
+4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **mises à jour des signatures.**
 
 5. Définissez **Autoriser les mises à** jour des informations de sécurité de Microsoft Update sur **Activé,** puis sélectionnez **OK.**
-
 
 ### <a name="use-a-vbscript-to-opt-in-to-microsoft-update"></a>Utiliser un VBScript pour opter pour Microsoft Update
 
@@ -84,17 +83,17 @@ Vous pouvez choisir Microsoft Update sur l’appareil mobile de l’une des mani
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Empêcher les mises à jour des informations de sécurité lors de l’exécution sur batterie
 
-Vous pouvez configurer Antivirus Microsoft Defender pour télécharger les mises à jour de protection uniquement lorsque le PC est connecté à une source d’alimentation câblé. 
+Vous pouvez configurer Antivirus Microsoft Defender pour télécharger les mises à jour de protection uniquement lorsque le PC est connecté à une source d’alimentation câblé.
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Utiliser la stratégie de groupe pour empêcher les mises à jour des informations de sécurité sur l’alimentation de la batterie
 
-1.  Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, choisissez l’objet de stratégie de groupe que vous souhaitez configurer et ouvrez-le pour modification.
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, choisissez l’objet de stratégie de groupe que vous souhaitez configurer et ouvrez-le pour modification.
 
-2.  Dans **l’Éditeur de gestion des stratégies de** groupe, allez à **Configuration ordinateur.**
+2. Dans **l’Éditeur de gestion des stratégies de** groupe, allez à **Configuration ordinateur.**
 
-3.  Sélectionnez **stratégies** **puis modèles d’administration.**
+3. Sélectionnez **stratégies** **puis modèles d’administration.**
 
-4.  Développez l’arborescence **Windows composants** Antivirus Microsoft Defender mises à jour des  >    >  **signatures,**  puis définissez Autoriser les mises à jour d’informations de sécurité lorsque vous exécutez l’alimentation sur batterie **sur Désactivé.** Puis sélectionnez **OK**. 
+4. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender mises à jour des \>  \> **signatures,**  puis définissez Autoriser les mises à jour d’informations de sécurité lorsque vous exécutez l’alimentation sur batterie **sur Désactivé.** Puis sélectionnez **OK**.
 
 Cette action empêche le téléchargement des mises à jour de protection lorsque le PC est sur batterie.
 

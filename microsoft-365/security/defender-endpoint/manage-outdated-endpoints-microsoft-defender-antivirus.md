@@ -16,19 +16,19 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0f5f9e440690ad9fa04b4ceb762d564a895a7792be90a7ecbe4b0517d26a6a94
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9ee1417d071700b1cece8da6d3d1815e1ff8ff9d
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806315"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823804"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Gérer les mises à jour de l'antivirus Microsoft Defender et les analyses des points de terminaison qui ne sont pas à jour
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -44,14 +44,14 @@ Si Antivirus Microsoft Defender n’a pas téléchargé les mises à jour de pro
 
 ### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>Utiliser Configuration Manager pour configurer des mises à jour de protection de rattrapage
 
-1. Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans le volet de navigation sur la gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies**  >    >  **anti-programme** malveillant)
+1. Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans  le volet de navigation sur la gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies** \>  \> **anti-programme** malveillant)
 
 2. Go to the **Security intelligence updates** section and configure the following settings:
 
     1. Définir forcer une mise à jour de l’intelligence de la sécurité si l’ordinateur client est hors connexion pendant plus de deux mises à jour **programmées consécutives** sur **Oui**.
     2. Pour le paramètre If Configuration Manager est utilisé comme source pour les mises à jour d’informations de  **sécurité...**, spécifiez les heures avant lesquelles les mises à jour de protection livrées par Configuration Manager doivent être considérées comme étant hors date. Cela entraîne l’utilisation de l’emplacement de mise à jour suivant, en fonction de l’ordre [de source de base défini.](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)
 
-3. Cliquez sur **OK**.
+3. Cliquez sur **OK**.
 
 4. [Déployez la stratégie mise à jour comme d’habitude.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 
@@ -67,7 +67,7 @@ Si Antivirus Microsoft Defender n’a pas téléchargé les mises à jour de pro
 
 5. Double-cliquez sur **définir** le nombre de jours après lequel une mise à jour de l’intelligence de sécurité de rattrapage est requise et définissez l’option **sur Activé.** Entrez le nombre de jours après lesquels vous souhaitez que Microsoft Defender AV vérifie et télécharge la dernière mise à jour de la protection.
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-configure-catch-up-protection-updates"></a>Utiliser les cmdlets PowerShell pour configurer des mises à jour de protection de rattrapage
 
@@ -93,7 +93,7 @@ Pour plus d’informations et les paramètres autorisés, voir les informations 
 
 ## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>Définir le nombre de jours avant que la protection ne soit signalée comme non à jour
 
-Vous pouvez également spécifier le nombre de jours après lesquels la protection Antivirus Microsoft Defender est considérée comme ancienne ou non à jour. Après le nombre de jours spécifié, le client se signale comme étant à jour et affiche une erreur à l’utilisateur du PC. Cela peut également entraîner une tentative de Antivirus Microsoft Defender de télécharger une mise à jour à partir d’autres sources (en fonction de l’ordre de [source](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)de base défini), par exemple lors de l’utilisation de MMPC comme source secondaire après avoir défini WSUS ou Microsoft Update comme première source.
+Vous pouvez également spécifier le nombre de jours après lesquels la protection Antivirus Microsoft Defender est considérée comme ancienne ou non à jour. Après le nombre de jours spécifié, le client se signale comme étant hors date et affiche une erreur à l’utilisateur du PC. Cela peut également entraîner une tentative de Antivirus Microsoft Defender de télécharger une mise à jour à partir d’autres sources (en fonction de l’ordre de [source](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)de base défini), par exemple lors de l’utilisation de MMPC comme source secondaire après avoir défini WSUS ou Microsoft Update comme première source.
 
 ### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Utiliser la stratégie de groupe pour spécifier le nombre de jours avant que la protection ne soit considérée comme non à jour
 
@@ -107,11 +107,11 @@ Vous pouvez également spécifier le nombre de jours après lesquels la protecti
 
     1. Double-cliquez sur Définir le nombre de jours avant que les définitions de **logiciels espions** ne soient considérées comme étant à jour et définissez l’option **sur Activé.** Entrez le nombre de jours après lesquels vous souhaitez que Microsoft Defender AV considère les logiciels espions comme étant à jour.
 
-    2. Cliquez sur **OK**.
+    2. Cliquez sur **OK**.
 
-    3. Double-cliquez sur Définir le nombre de jours avant que les **définitions de virus** ne soient considérées comme étant à jour et définissez l’option **sur Activé.** Entrez le nombre de jours après lesquels vous souhaitez que l’Antivirus Microsoft Defender considère l’intelligence de sécurité antivirus comme étant à jour.
+    3. Double-cliquez sur Définir le nombre de jours avant que les **définitions** de virus ne soient considérées comme étant à jour et définissez l’option **sur Activé.** Entrez le nombre de jours après lesquels vous souhaitez que l’Antivirus Microsoft Defender considère l’intelligence de sécurité antivirus comme étant à jour.
 
-    4. Cliquez sur **OK**.
+    4. Cliquez sur **OK**.
 
 ## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>Configurer des analyses de rattrapage pour les points de terminaison qui n’ont pas été analysés pendant un certain temps
 
@@ -138,9 +138,9 @@ Cette fonctionnalité peut être activée pour les analyses complètes et rapide
 5. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender > scan et** configurez les paramètres suivants :
 
     1. Si vous avez installé des analyses rapides programmées, **double-cliquez** sur le paramètre Activer l’analyse rapide de rattrapage et définissez l’option **sur Activé.**
-    2. Si vous avez installé des analyses complètes programmées, **double-cliquez** sur le paramètre Activer l’analyse complète de rattrapage et définissez l’option **sur Activé.** Cliquez sur **OK**.
+    2. Si vous avez installé des analyses complètes programmées, **double-cliquez** sur le paramètre Activer l’analyse complète de rattrapage et définissez l’option **sur Activé.** Cliquez sur **OK**.
     3. Double-cliquez sur **Définir le nombre** de jours après lequel une analyse de rattrapage est forcée et définissez l’option sur **Activé.**
-    4. Entrez le nombre d’analyses qui peuvent être manquées avant qu’une analyse soit automatiquement exécuté lorsque l’utilisateur se connecte ensuite au PC. Le type d’analyse qui est exécuté est déterminé par la spécification du **type** d’analyse à utiliser pour une analyse programmée (voir la rubrique Planification [des analyses).](scheduled-catch-up-scans-microsoft-defender-antivirus.md) Cliquez sur **OK**.
+    4. Entrez le nombre d’analyses qui peuvent être manquées avant qu’une analyse soit automatiquement exécuté lorsque l’utilisateur se connecte ensuite au PC. Le type d’analyse qui est exécuté est déterminé par la spécification du **type** d’analyse à utiliser pour une analyse programmée (voir la rubrique Planification [des analyses).](scheduled-catch-up-scans-microsoft-defender-antivirus.md) Cliquez sur **OK**.
 
 > [!NOTE]
 > Le titre du paramètre de stratégie de groupe fait référence au nombre de jours. Toutefois, le paramètre est appliqué au nombre d’analyses (et non de jours) avant l’application de l’analyse de rattrapage.
@@ -172,11 +172,11 @@ Pour plus d’informations et les paramètres autorisés, voir les informations 
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Utiliser Configuration Manager pour configurer des analyses de rattrapage
 
-1. Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans le volet de navigation sur la gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies**  >    >  **anti-programme** malveillant)
+1. Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans  le volet de navigation sur la gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies** \>  \> **anti-programme** malveillant)
 
 2. Go to the **Scheduled scans** section and **Force a scan of the selected scan type if client computer is offline...** to **Yes**.
 
-3. Cliquez sur **OK**.
+3. Cliquez sur **OK**.
 
 4. [Déployez la stratégie mise à jour comme d’habitude.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 

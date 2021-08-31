@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 359b08510b888772b3ef9face320ab526724544a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 538f01d1b91ebe5b980fed63f0d7c13e9b9f5a8f
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568311"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823888"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis, intégré à l’environnement Azure US Government, utilise les mêmes technologies sous-jacentes que Defender pour endpoint dans Azure Commercial.
+Microsoft Defender for Endpoint for US Government customers, built in the Azure US Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
 Cette offre est disponible pour les clients Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD et est basée sur les mêmes prévention, détection, examen et correction que la version commerciale. Toutefois, il existe certaines différences dans la disponibilité des fonctionnalités de cette offre.
 
@@ -47,7 +47,7 @@ Microsoft Defender pour endpoint pour les clients du gouvernement des États-Uni
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft 365 Cloud de la communauté du secteur public G5|Microsoft 365 E5 pour Cloud de la communauté du secteur public Élevé|Microsoft 365 G5 pour DOD|
+|Microsoft 365 Cloud de la communauté du secteur public G5|Microsoft 365 E5 for Cloud de la communauté du secteur public High|Microsoft 365 G5 pour DOD|
 |Microsoft 365 Sécurité G5 Cloud de la communauté du secteur public|Microsoft 365 Sécurité G5 pour Cloud de la communauté du secteur public élevé|Microsoft 365 Sécurité G5 pour DOD|
 |Microsoft Defender pour le point de terminaison - Cloud de la communauté du secteur public|Microsoft Defender for Endpoint for Cloud de la communauté du secteur public High|Microsoft Defender pour point de terminaison pour DOD|
 |Windows 10 Entreprise E5 Cloud de la communauté du secteur public|Windows 10 Entreprise E5 pour Cloud de la communauté du secteur public élevé|Windows 10 Entreprise E5 pour DOD|
@@ -89,7 +89,7 @@ Les versions de système d’exploitation suivantes sont pris en charge :
 Version du système d’exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows 10 version 21H1 et versions supérieures|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows 10, version 20H2 [(avec KB4586853)](https://support.microsoft.com/help/4586853)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows 10, version 20H2 (avec [KB4586853)](https://support.microsoft.com/help/4586853)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 2004 (avec [KB4586853](https://support.microsoft.com/help/4586853))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1909 (avec [KB4586819](https://support.microsoft.com/help/4586819))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1903 (avec [KB4586819](https://support.microsoft.com/help/4586819))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -136,7 +136,7 @@ Liste de feuilles de calcul de domaines|Description
 :-----|:-----
 ![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour point de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
-Pour plus d’informations, voir [Configurer les paramètres de proxy d’appareil et de connectivité Internet.](configure-proxy-internet.md)
+Pour plus d’informations, voir [Configurer les paramètres de proxy](configure-proxy-internet.md)d’appareil et de connectivité Internet.
 
 > [!NOTE]
 > La feuille de calcul contient également des URL commerciales, veillez à vérifier les onglets « US Gov ».
@@ -184,10 +184,10 @@ Voici les lacunes connues :
 
 |Nom de la fonctionnalité|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Découverte du réseau|![Non](images/svg/check-no.svg) En cours de déploiement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
+|Découverte du réseau|![Oui](images/svg/check-yes.svg)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Intégrations : Azure Sentinel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Alertes <p> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation privée|![Oui](images/svg/check-yes.svg) Alertes <p> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation privée|
-|Intégrations : Microsoft Cloud App Security|![Oui](images/svg/check-yes.svg)|![Non](images/svg/check-no.svg) En cours de déploiement|![Non](images/svg/check-no.svg) En cours de déploiement|
+|Intégrations : Microsoft Cloud App Security|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Intégrations : Microsoft Defender pour l’identité|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Intégrations : point de terminaison Microsoft DLP|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Non](images/svg/check-no.svg) En cours de déploiement|
 |Intégrations : Microsoft Power Automate & Azure Logic Apps|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Azure Logic Apps <p> ![Non](images/svg/check-no.svg) Power Automate : en développement|

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: martinl, melmar
+ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 05/27/2021
-ms.openlocfilehash: c5e239968fb7048f6bd7a52c3b893ee3292aee1f1a6d93d4bde25689b27b5fca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 530345c7f9234e50ec33de23847c14e1b948df8c
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881446"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823719"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>Demander un crédit pour la retenue d’impôt sur votre compte (clients globaux)
 

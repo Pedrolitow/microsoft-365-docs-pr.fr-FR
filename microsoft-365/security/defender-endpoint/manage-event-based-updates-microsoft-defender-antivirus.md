@@ -16,19 +16,19 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0fc7b51988f67c0f2e570e23bdb58e1aa32d35fe55347d1ace550de80f4d6fb6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44c3b0a208c8c870343fc551728f105d4f380de4
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806723"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823840"
 ---
 # <a name="manage-event-based-forced-updates"></a>Gérer les mises à jour forcées en fonction des événements
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -40,11 +40,11 @@ Vous pouvez utiliser les Microsoft Endpoint Configuration Manager, la stratégie
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>Utiliser Configuration Manager pour vérifier les mises à jour de la protection avant d’exécution d’une analyse
 
-1. Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans le volet de navigation sur la gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies**  >    >  **anti-programme** malveillant)
+1. Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans  le volet de navigation sur la gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies** \>  \> **anti-programme** malveillant)
 
 2. Go to the **Scheduled scans** section and set **Check for the latest security intelligence updates before running a scan** to **Yes**.
 
-3. Cliquez sur **OK**.
+3. Cliquez sur **OK**.
 
 4. [Déployez la stratégie mise à jour comme d’habitude.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 
@@ -56,11 +56,11 @@ Vous pouvez utiliser les Microsoft Endpoint Configuration Manager, la stratégie
 
 3. Cliquez **sur Stratégies** **puis Modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants**  >  **Antivirus Microsoft Defender**  >  **Scan**.
+4. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **Scan**.
 
 5. Double-cliquez sur Vérifier les dernières définitions de virus et de **logiciels espions** avant d’exécutez une analyse programmée et définissez l’option **sur Activé.**
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>Utiliser les cmdlets PowerShell pour vérifier les mises à jour de la protection avant d’exécution d’une analyse
 
@@ -92,11 +92,11 @@ Vous pouvez utiliser la stratégie de groupe pour forcer Antivirus Microsoft Def
 
 3. Cliquez **sur Stratégies** **puis Modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender**  >    >  **security intelligence updates**.
+4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **security intelligence updates**.
 
-5. Double-cliquez sur Vérifier les dernières définitions de virus et de **logiciels espions** au démarrage et définissez l’option **sur Activé.** 
+5. Double-cliquez sur Vérifier les dernières définitions de virus et de **logiciels espions** au démarrage et définissez l’option **sur Activé.**
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 Vous pouvez également utiliser une stratégie de groupe, PowerShell ou WMI pour configurer des Antivirus Microsoft Defender pour vérifier les mises à jour au démarrage, même lorsqu’elle n’est pas en cours d’exécution.
 
@@ -108,11 +108,11 @@ Vous pouvez également utiliser une stratégie de groupe, PowerShell ou WMI pour
 
 3. Cliquez **sur Stratégies** **puis Modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender**  >    >  **security intelligence updates**.
+4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **security intelligence updates**.
 
 5. Double-cliquez sur **Lancer la mise à jour de l’intelligence** de sécurité au démarrage et définissez l’option sur **Activé.**
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utiliser les cmdlets PowerShell pour télécharger les mises à jour lorsque Antivirus Microsoft Defender n’est pas présent
 
@@ -150,12 +150,12 @@ Si vous avez activé la protection cloud, l’Antivirus Microsoft Defender envoi
 
 3. Cliquez **sur Stratégies** **puis Modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender**  >    >  **security intelligence updates**.
+4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> **security intelligence updates**.
 
 5. Double-cliquez sur Autoriser les mises à jour d’informations de sécurité en temps réel **basées** sur les rapports de Microsoft MAPS et définissez l’option **sur Activé.** Cliquez ensuite sur **OK**.
 
 6. **Autoriser les notifications pour désactiver les rapports** basés sur des définitions pour Microsoft MAPS et définir l’option sur **Activé**. Cliquez ensuite sur **OK**.
-    
+
 > [!NOTE]
 > **Autoriser les notifications à désactiver les** rapports basés sur des définitions permet à Microsoft MAPS de désactiver ces définitions connues pour provoquer des rapports faux positifs. Vous devez configurer votre ordinateur pour qu’il rejoigne Microsoft MAPS pour que cette fonction fonctionne.
 

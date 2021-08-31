@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 938c8b8764961930e80de562bdf9fc82f622da5d5b5793ca35c9e5a40a37ea09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac8b6255b46c20582d43680b3287f324f4f63c42
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806290"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823973"
 ---
 # <a name="manage-suppression-rules"></a>Gérer des règles de suppression
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’al
 Vous pouvez afficher la liste de toutes les règles de suppression et les gérer au même endroit. Vous pouvez également activer ou désactiver une règle de suppression d’alerte.
 
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres suppression  >  **des alertes** des règles de point  >    >  **de terminaison.** La liste des règles de suppression créées par les utilisateurs de votre organisation s’affiche.
+1. Dans le volet de navigation, **sélectionnez** Paramètres suppression \> **des alertes** des règles de point \>  \> **de terminaison.** La liste des règles de suppression créées par les utilisateurs de votre organisation s’affiche.
 
 2. Sélectionnez une règle en cliquant sur la case à cocher en regard du nom de la règle.
 
@@ -49,10 +49,10 @@ Vous pouvez afficher la liste de toutes les règles de suppression et les gérer
 
 ## <a name="view-details-of-a-suppression-rule"></a>Afficher les détails d’une règle de suppression
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres suppression  >  **des alertes** des règles de point  >    >  **de terminaison.** La liste des règles de suppression créées par les utilisateurs de votre organisation s’affiche.
+1. Dans le volet de navigation, **sélectionnez** Paramètres suppression \> **des alertes** des règles de point \>  \> **de terminaison.** La liste des règles de suppression créées par les utilisateurs de votre organisation s’affiche.
 
 2. Cliquez sur un nom de règle. Les détails de la règle s’affichent. Vous verrez les détails de la règle tels que l’état, l’étendue, l’action, le nombre d’alertes correspondantes, créés par et la date de création de la règle. Vous pouvez également afficher les alertes associées et les conditions de règle.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Gérer des alertes](manage-alerts.md)

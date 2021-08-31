@@ -9,16 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Définir les heures de travail et la disponibilité des employés dans Microsoft Bookings.
-ms.openlocfilehash: 9fffee6addd5f2d816fc7639661f2e03f53a96de
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 854110217f31b69d54783484aa1800332763af3e
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575035"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823647"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Heures de travail des employés dans Microsoft Bookings
 
-La définition des heures de travail des employés garantit que leur disponibilité est indiquée avec précision lorsque vos clients tentent de les réserver. Par défaut, les heures de travail de chacun de vos employés correspondent aux heures d’ouverture que vous avez établies dans l’application Microsoft Bookings. Consultez la section « Définir vos heures d’ouverture » de [La section Entrer des informations professionnelles.](enter-business-information.md#set-your-business-hours)
+La définition des heures de travail des employés garantit que leur disponibilité est indiquée avec précision lorsque vos clients tentent de les réserver. Par défaut, les heures de travail de chacun de vos employés correspondent aux heures d’ouverture que vous avez établies dans l’application Microsoft Bookings. Consultez la section « Définir vos heures d’ouverture » de La section [Entrer des informations professionnelles.](enter-business-information.md)
 
 Dans la page **Personnel,** vous pouvez personnaliser les heures de travail des employés en fonction des besoins de votre entreprise et des employés.
 
@@ -57,4 +57,4 @@ Lorsque vous programmez un jour de congé pour un employé, celui-ci apparaît i
 1. Si vous souhaitez planifier un jour précédemment marqué comme un jour de congé, sélectionnez le signe en dehors du jour que **+** vous souhaitez planifier.
 
 > [!TIP]
-> Si vous avez prévu des congés pour les employés ou d’autres grands blocs de congés, consultez la section « Planifier les congés des employés » dans Planifier les [fermetures d’entreprise,](schedule-closures-time-off-vacation.md#schedule-employee-time-off)les congés et les congés.
+> Si vous planifier des congés pour les employés ou d’autres grands blocs de congés, consultez la section « Planifier les congés des employés » dans Planifier les [fermetures d’entreprise,](schedule-closures-time-off-vacation.md#schedule-employee-time-off)les congés et les congés.

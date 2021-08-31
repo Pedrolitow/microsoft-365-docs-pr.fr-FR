@@ -9,30 +9,36 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
 description: Les applications mobiles Bookings ne sont pas encore disponibles dans le monde entier. Cet article répertorie les paramètres régionaux où les applications sont désormais disponibles.
-ms.openlocfilehash: 2ac3338423cb2c9f472e28bba2be748bed2d7fd0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4c00d7559c4f2e7f0a20878fa40d03ebc5f79be4
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566083"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58822951"
 ---
 # <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>Obtenir l’application Microsoft Bookings pour iOS et Android
 
-Merci d’avoir téléchargé l’application Microsoft Bookings ! Microsoft Bookings est disponible en tant qu’application mobile pour iOS et Android. L’application Bookings pour iOS est disponible dans toutes les régions et tous les pays qu’Apple prend en charge. Vous pouvez télécharger l’application à partir de [l’App Store iTunes.](https://apps.apple.com/app/microsoft-bookings/id1065657468) L’application Bookings pour Android est disponible en téléchargement à partir de [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) aux États-Unis et au Canada.
+Microsoft Bookings est disponible en tant qu’application mobile pour iOS et Android. L’application Bookings pour iOS est disponible dans toutes les régions et tous les pays qu’Apple prend en charge. Vous pouvez télécharger l’application à partir de [l’App Store iTunes.](https://apps.apple.com/app/microsoft-bookings/id1065657468) L’application Bookings pour Android est disponible en téléchargement à partir du [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) aux États-Unis et au Canada.
+
+## <a name="before-you-begin"></a>Avant de commencer
 
 Avant de commencer, vous devez configurer Bookings sur le web.
 
-1. Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les applications pour voir une liste alphabétique des Microsoft 365 applications disponibles. À partir de là, vous pouvez rechercher une application spécifique
+1. Dans le lanceur d’applications, sélectionnez Toutes les applications pour voir une liste alphabétique des Microsoft 365 applications disponibles. À partir de là, vous pouvez rechercher une application spécifique
 
    ![Image du lanceur d’applications.](../media/bookings-all-apps-launcher.png)
 
-2. Nous sommes [arrivés à Office page d’accueil](https://office.com) et, à partir du lanceur d’applications, sélectionnez **Bookings**.
+2. Nous sommes [arrivés à Office page d’accueil](https://office.com) et à partir du lanceur d’applications, sélectionnez **Bookings**.
 
 3. Sélectionnez **Obtenir maintenant.**
 
-4. Fournissez le nom et le type d’entreprise que vous exécutez, par exemple, le salon de santé ou la pratique médicale, puis sélectionnez **To Bookings**.
+4. Fournissez le nom et le type d’entreprise ou d’organisation que vous possédez ou exécutez.
 
-5. Vous êtes maintenant prêt à configurer Bookings pour votre organisation. Suivez les étapes de la [rubrique Microsoft Bookings](bookings-overview.md) pour terminer la configuration de Bookings. Revenir à votre appareil mobile et déconnectez-vous de l’application mobile. Connectez-vous pour vous connecter à votre nouveau calendrier de réservation.
+5. Vous êtes maintenant prêt à configurer Bookings pour votre organisation. Suivez les étapes de la [rubrique Microsoft Bookings](bookings-overview.md) pour terminer la configuration de Bookings.
+
+## <a name="download-the-bookings-app"></a>Télécharger l’application Bookings
+
+Une fois que vous avez installé l’application web Bookings, rendez-vous sur le magasin en ligne de votre appareil, téléchargez l’application Bookings et connectez-vous avec votre compte d’administrateur.
 
 ## <a name="view-only-mode"></a>Mode Affichage seul
 

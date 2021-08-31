@@ -18,18 +18,18 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 29a9e73ec4204b8083b22f427cf0271955f0ba2d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 96091f2c1a13b86d46a7ddb670dc3b42b034915a
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576199"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823599"
 ---
 # <a name="overview-of-management-and-apis"></a>Vue d’ensemble de la gestion et des API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,6 +51,7 @@ Defender pour le point de terminaison fournit un contrôle fin sur ce que les ut
 - Divisions entièrement séparées avec des équipes d’opérations de sécurité globale centralisées
 
 ## <a name="available-apis"></a>API disponibles
+
 La solution Microsoft Defender pour point de terminaison est conçue sur une plateforme prête à l’intégration.
 
 Defender pour le point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Defender for Endpoint.
@@ -68,7 +69,8 @@ Les API Defender pour point de terminaison peuvent être regroupées en trois :
 Defender for Endpoint offre un modèle d’API en couches exposant des données et des fonctionnalités dans un modèle structuré, clair et facile à utiliser, exposé via un modèle d’authentification et d’autorisation Azure AD standard permettant l’accès dans le contexte des utilisateurs ou des applications SaaS. Le modèle API a été conçu pour exposer des entités et des fonctionnalités sous une forme cohérente.
 
 Regardez cette vidéo pour obtenir une vue d’ensemble rapide des API de Defender for Endpoint.
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
 **L’API** Investigation expose la richesse de Defender pour point de terminaison : elle expose des entités calculées ou « profilées » (par exemple, des appareils, des utilisateurs et des fichiers) et des événements discrets (par exemple, création de processus et création de fichiers) qui décrivent généralement un comportement lié à une entité, ce qui permet d’accéder aux données via des interfaces d’investigation permettant un accès basé sur une requête aux données. Pour plus d’informations, voir [API pris en charge.](exposed-apis-list.md)
 
@@ -89,7 +91,7 @@ Pour plus d’informations, [voir Microsoft 365 Defender API de diffusion en con
 
 Lorsque vous activez l’intégration SIEM (Security Information and Event Management), cela vous permet d’obtenir des détections à partir de Centre de sécurité Microsoft Defender à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections. Cela active la section des détails d’accès au connecteur SIEM avec des valeurs pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD). Pour plus d’informations, voir [intégration SIEM.](enable-siem-integration.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Accéder aux API Microsoft Defender pour point de terminaison](apis-intro.md)
 - [API prise en charge](exposed-apis-list.md)

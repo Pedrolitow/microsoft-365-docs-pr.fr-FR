@@ -8,103 +8,103 @@ metadata:
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
-  ms.service: bookings
-  ms.custom: commerce_licensing
+  ms.service: o365-administration
+  ms.custom: commerce_vl
   localization_priority: Normal
   description: Questions fréquemment posées sur Centre d’administration Microsoft 365 téléchargements.
-  ms.openlocfilehash: c10fbf7260324e4b0a6511c112d91dc3d87aa10a
-  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+  ms.openlocfilehash: 47d41305c5789dd421a9a55f52153727d31712d7
+  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "58247564"
+  ms.lasthandoff: 08/31/2021
+  ms.locfileid: "58822927"
 title: Télécharge les questions fréquemment posées
 summary: ''
 sections:
 - name: Général
   questions:
   - question: >
-      What are the requirements for downloading software from the Microsoft 365 admin center?
-    answer: "You must purchase a license for the products you plan to download and have access to a valid product key for each license to complete the installation. Verify your license agreement before you download products.\n\nYou can find the system requirements for each product by signing into the admin center and going to **Your products** > **Downloads** page > **Product description**. \n\n**Note** Not all products require a product key.\n"
+      Quelles sont les conditions requises pour télécharger des logiciels à partir du Centre d’administration Microsoft 365 ?
+    answer: "Vous devez acheter une licence pour les produits que vous prévoyez de télécharger et avoir accès à une clé de produit valide pour chaque licence pour terminer l’installation. Vérifiez votre contrat de licence avant de télécharger les produits.\n\nVous pouvez trouver la demande système requise pour chaque produit en vous signant dans le Centre d’administration et en allant à la page Téléchargements de vos produits >  >   description **du produit.** \n\n**Remarque** Tous les produits ne nécessitent pas de clé de produit.\n"
   - question: >
-      What products can I download from the admin center?
+      Quels produits puis-je télécharger à partir du Centre d’administration ?
     answer: >
-      If your download rights are associated with the Open License, Open Value, or Open Value Subscription program, you can download only those products you've already purchased. The admin center displays downloads only for licenses you’ve purchased.
+      Si vos droits de téléchargement sont associés au programme Open License, Open Value ou Open Value Subscription, vous pouvez télécharger uniquement les produits que vous avez déjà achetés. Le Centre d’administration affiche les téléchargements uniquement pour les licences que vous avez achetées.
 
 
-      Other licensing programs (Select Plus, Enterprise, Campus, or School) allow you to download any product from the catalog before you purchase licenses.
+      D’autres programmes de licence (Select Plus, Enterprise, Campus ou School) vous permettent de télécharger n’importe quel produit à partir du catalogue avant d’acheter des licences.
 
 
-      If your profile is linked to both Open and other licensing programs, you can view the entire catalog.
+      Si votre profil est lié à Open et à d’autres programmes de licence, vous pouvez afficher l’intégralité du catalogue.
 
 
-      To determine if a product is eligible for download:
+      Pour déterminer si un produit peut être téléchargé :
 
-        1. Select **Volume Licensing**, and then select the product or **View downloads**.
-        2. Under **Download**, if the product is not available, you’ll see “This product is not available for download.”
+        1. Sélectionnez **licences** en volume, puis sélectionnez le produit ou **afficher les téléchargements**.
+        2. Sous **Téléchargement,** si le produit n’est pas disponible, vous verrez « Ce produit n’est pas disponible en téléchargement ».
   - question: >
-      What is a Client Access License (CAL)?
+      Qu’est-ce qu’une licence d’accès client ?
     answer: >
-      A Client Access License (CAL) is a license that gives a user the right to access the services of the server.
+      Une licence d’accès client (CAL) est une licence qui donne à un utilisateur le droit d’accéder aux services du serveur.
 
 
-      You don’t need a software download file or product key to activate a CAL. Instead, the product is activated and installed through the activation wizard directly from your computer.
+      Vous n’avez pas besoin d’un fichier de téléchargement de logiciel ou d’une clé de produit pour activer une licence d’accès basé sur un logiciel. Au lieu de cela, le produit est activé et installé via l’Assistant Activation directement à partir de votre ordinateur.
 
 
-      Examples of CALs include:
+      Voici quelques exemples de cas de contrôle d’utilisation :
         - Windows Server
-        - SQL Server
+        - SQL Server
         - Exchange Server
-        - Skype for Business Server
-        - SharePoint Server
+        - Skype Entreprise Server
+        - Serveur Microsoft Office SharePoint Online
         - System Center
         - Project Server
-  - question: "How do I download Office for Mac? \n"
+  - question: "Comment télécharger des Office pour Mac ? \n"
     answer: >
-      To run a volume licensing version of Office for Mac, you must download and install the following files:
-        - The [Volume License (VL) Serializer](/deployoffice/mac/volume-license-serializer) package located in the Office for Mac download file.
-        - The [Office for Mac installation package](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Installer package files for individual applications are also available on the Microsoft 365 admin center. Office for Mac doesn’t require a product key because the VL Serializer is used to activate a volume licensed version of Office for Mac.
+      Pour exécuter une version de licence en volume de Office pour Mac, vous devez télécharger et installer les fichiers suivants :
+        - Package [sérialisateur de](/deployoffice/mac/volume-license-serializer) licence en volume (VL) situé dans le fichier Office pour Mac téléchargement.
+        - Le [package Office pour Mac’installation .](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) Les fichiers de package du programme d’installation pour des applications individuelles sont également disponibles sur le Centre d’administration Microsoft 365. Office pour Mac ne nécessite pas de clé de produit, car le sérialisateur VL est utilisé pour activer une version avec licence en volume de Office pour Mac.
   - question: >
-      How do I download products in the admin center?
-    answer: "To download products in the admin center:\n1. Select **Volume Licensing**, and then select the product or **View downloads**.\n2. Under **Download**, select a component and select a download action or the download icon. \n\nTo access downloads in the admin center, a VLSC administrator in your organization can provide access by assigning you to one of these roles:\n  - Administrator\n  - Download\n  - Software Assurance Manager\n"
+      Comment télécharger des produits dans le Centre d’administration ?
+    answer: "Pour télécharger des produits dans le Centre d’administration :\n1. Sélectionnez **licences** en volume, puis sélectionnez le produit ou **afficher les téléchargements**.\n2. Sous **Télécharger,** sélectionnez un composant et sélectionnez une action de téléchargement ou l’icône de téléchargement. \n\nPour accéder aux téléchargements dans le Centre d’administration, un administrateur VLSC de votre organisation peut fournir l’accès en vous attribuant l’un des rôles ci-après :\n  - Administrateur\n  - Télécharger\n  - Gestionnaire Software Assurance\n"
   - question: >
-      How do I change my download settings?
+      Comment modifier mes paramètres de téléchargement ?
     answer: >
-      To access download settings in the admin center:
+      Pour accéder aux paramètres de téléchargement dans le Centre d’administration :
 
-      1. Select **Volume Licensing**, and then select the product or **View downloads**.
+      1. Sélectionnez **licences** en volume, puis sélectionnez le produit ou **afficher les téléchargements**.
 
-      2. Under **Download**, select the **Language** and **Operating System Type**.
+      2. Sous **Télécharger,** sélectionnez le **type de** langue et de système **d’exploitation.**
 
 
-      **Note** Pop-up blockers can block downloads. Make sure pop-up blockers are disabled when you download software from the admin center.
+      **Remarque** Les bloqueurs de fenêtres pop-up peuvent bloquer les téléchargements. Assurez-vous que les bloqueurs de fenêtres pop-up sont désactivés lorsque vous téléchargez des logiciels à partir du Centre d’administration.
   - question: >
-      What are EXE and ISO files?
-    answer: "You can select two file types when you download products from the admin center:\n  \n  - **Executable (EXE) files** can be downloaded and installed on the same system, but you can’t create separate boot disks for installation on other computers.\n  - **ISO (International Standards Organization) image files** are exact representations of the content and the logical format. You can install these on the computer used to download the package or write the files to disks for distribution and installation on other computers.\n\n**Note** Not all products are available in all languages and in all formats.\n"
+      Que sont les fichiers EXE et ISO ?
+    answer: "Vous pouvez sélectionner deux types de fichiers lorsque vous téléchargez des produits à partir du Centre d’administration :\n  \n  - **Les fichiers exécutables (EXE)** peuvent être téléchargés et installés sur le même système, mais vous ne pouvez pas créer de disques de démarrage distincts pour l’installation sur d’autres ordinateurs.\n  - **Les fichiers image ISO (International Standards Organization)** sont des représentations exactes du contenu et du format logique. Vous pouvez les installer sur l’ordinateur utilisé pour télécharger le package ou écrire les fichiers sur les disques pour la distribution et l’installation sur d’autres ordinateurs.\n\n**Remarque** Tous les produits ne sont pas disponibles dans toutes les langues et dans tous les formats.\n"
   - question: >
-      How do I use ISO image file software to download and save ISO image file to a CD-R or a DVD-R disk?
+      Comment utiliser le logiciel de fichier image ISO pour télécharger et enregistrer le fichier image ISO sur un CD-R ou un disque DVD-R ?
     answer: >
-      If you’re using a PC with the Windows operating system, you don't need additional software to burn a CD-R or DVD-R. Double-click the ISO file you downloaded, and then follow the steps in the Image Burner Wizard.
+      Si vous utilisez un PC avec le système d’exploitation Windows, vous n’avez pas besoin de logiciel supplémentaire pour graver un CD-R ou un DVD-R. Double-cliquez sur le fichier ISO que vous avez téléchargé, puis suivez les étapes de l’Assistant Graveur d’images.
 
 
-      If you’re using any operating system other than Windows, you might need additional software. If your computer is equipped with a CD/DVD burner, the software is probably loaded on your PC. Most CD-R/DVD-R writing software allows you to create a disk from an image file. Select a menu item such **Copy Image to CD** or **Burn Image to access** to access this feature.
+      Si vous utilisez un système d’exploitation autre que Windows, vous aurez peut-être besoin de logiciels supplémentaires. Si votre ordinateur est équipé d’un graveur CD/DVD, le logiciel est probablement chargé sur votre PC. La plupart des logiciels d’écriture CD-R/DVD-R vous permettent de créer un disque à partir d’un fichier image. Sélectionnez un élément de menu tel **que Copier une image sur CD** ou **Graver une image** pour accéder à cette fonctionnalité.
   - question: >
-      How do I mount and access ISO files as a virtual device?
+      Comment monter et accéder aux fichiers ISO en tant que périphérique virtuel ?
     answer: >
-      If you don't have a CD/DVD burner installed on your computer or media isn't available, you can mount the ISO file as a virtual drive. With this method, your computer believes that the file is a real disk drive, and you can read files from this virtual disk.
+      Si vous n’avez pas de graveur CD/DVD installé sur votre ordinateur ou si le support n’est pas disponible, vous pouvez monter le fichier ISO en tant que lecteur virtuel. Avec cette méthode, votre ordinateur pense que le fichier est un lecteur de disque réel et vous pouvez lire les fichiers à partir de ce disque virtuel.
 
 
-      **Note** This approach is advisable only for installing applications such as Office or minor system upgrades. You can’t install an operating system using this approach because the virtual drive disappears during the installation.
+      **Remarque** Cette approche est conseillée uniquement pour l’installation d’applications telles que Office ou des mises à niveau système mineures. Vous ne pouvez pas installer un système d’exploitation à l’aide de cette approche, car le lecteur virtuel disparaît pendant l’installation.
   - question: >
-      How do I get support for downloaded products?
+      Comment obtenir une assistance pour les produits téléchargés ?
     answer: >
-      For a list of support options, see [Microsoft Support](https://support.microsoft.com/). Some Volume Licensing customers can use Problem Resolution Support, a Software Assurance Benefit. Review your Software Assurance Benefits to verify your eligibility.
+      Pour obtenir la liste des options de support, consultez [le Support Microsoft.](https://support.microsoft.com/) Certains clients de licence en volume peuvent utiliser la prise en charge de la résolution des problèmes, un software assurance benefit. Vérifiez vos avantages software assurance pour vérifier votre éligibilité.
   - question: >
-      Where can I find support for the topics covered in this FAQ?
+      Où puis-je trouver de l’aide pour les rubriques couvertes dans ce FAQ ?
     answer: >
-      For more training resources, including videos, see [Microsoft Volume Licensing Service Center training and resources](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
+      Pour plus de ressources de formation, y compris des vidéos, voir la formation et les ressources du Centre de gestion des licences [en volume Microsoft.](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)
   - question: >
-      How can I contact Microsoft Support?
+      Comment puis-je contacter le Support Microsoft ?
     answer: >
-      For VLSC customer phone or web form support, see [Contact Us](/licensing/contact-us). Microsoft responds to web form submissions within 24 hours.
-additionalContent: "\n## Additional resources\n\n- [Product keys FAQ](product-keys-faq.yml)\n\n- [Online services activation for Open programs FAQ](online-service-activation-faq.yml)"
+      Pour obtenir une prise en charge des formulaires web ou de téléphone client VLSC, [consultez contactez-nous.](/licensing/contact-us) Microsoft répond aux soumissions de formulaires web dans les 24 heures.
+additionalContent: "\n## <a name=\"additional-resources\"></a>Ressources supplémentaires\n\n- [FAQ sur les clés de produit](product-keys-faq.yml)\n\n- [Faq sur l’activation des services en ligne pour open programs](online-service-activation-faq.yml)"
