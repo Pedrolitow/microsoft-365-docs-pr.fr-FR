@@ -2,14 +2,21 @@
 
 ## [Vue d’ensemble]()
 ### [Qu’est-ce que Microsoft Defender pour point de terminaison ?](microsoft-defender-endpoint.md)
+### [Comparer Defender for Endpoint Plan 1 à Plan 2](defender-endpoint-plan-1-2.md)
 ### [Configuration minimale requise](minimum-requirements.md)
 ### [Qu’est-ce qui est nouveau dans Microsoft Defender pour point de terminaison ?](whats-new-in-microsoft-defender-atp.md)
 ### [Fonctionnalités en préversion](preview.md)
 ### [Stockage de données et confidentialité](data-storage-privacy.md)
 ### [Vue d’ensemble du Centre de sécurité Microsoft Defender](use.md)
 ### [Vue d’ensemble du portail](portal-overview.md)
+### [Defender for Endpoint Plan 1 (aperçu)]()
+#### [Vue d’ensemble](defender-endpoint-plan-1.md)
+#### [Installation et configuration](mde-p1-setup-configuration.md)
+#### [Prise en main](mde-plan1-getting-started.md)
+#### [Maintenance et opérations](mde-p1-maintenance-operations.md)
 ### [Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis](gov.md)
 ### [Microsoft Defender pour point de terminaison sur les plateformes non Windows](non-windows.md)
+
 
 ## [Évaluer les fonctionnalités](evaluation-lab.md)
 
@@ -27,18 +34,15 @@
 #### [Intégration des appareils pris en charge](onboard-configure.md)
 
 ## [Guides de migration](migration-guides.md)
-### [Passer d’une protection de point de terminaison non-Microsoft à Defender pour point de terminaison]()
-#### [Vue d’ensemble de la migration](switch-to-microsoft-defender-migration.md)
+### [Passer d’une protection de point de terminaison non-Microsoft à Defender pour point de terminaison](switch-to-microsoft-defender-migration.md)
 #### [Phase 1 : préparation](switch-to-microsoft-defender-prepare.md)
 #### [Phase 2 : configuration](switch-to-microsoft-defender-setup.md)
 #### [Phase 3 : intégration](switch-to-microsoft-defender-onboard.md)
-### [Gérer Defender pour Point de terminaison après la migration]()
-#### [Aperçu de la gestion de Defender pour points de terminaison](manage-atp-post-migration.md)
-#### [Intune (recommandé)](manage-atp-post-migration-intune.md)
-#### [Gestionnaire de configuration](manage-atp-post-migration-configuration-manager.md)
-#### [Objets de stratégie de groupe](manage-atp-post-migration-group-policy-objects.md)
-#### [PowerShell, WMI et MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
-
+### [Gérer Defender pour Point de terminaison après la migration](manage-atp-post-migration.md)
+#### [Utiliser Intune (recommandé)](manage-atp-post-migration-intune.md)
+#### [Utiliser le Gestionnaire de configuration](manage-atp-post-migration-configuration-manager.md)
+#### [Utiliser la stratégie de groupe](manage-atp-post-migration-group-policy-objects.md)
+#### [Utiliser PowerShell, WMI ou MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
 
 ## [Configurer et intégrer des appareils]()
 ### [Microsoft Defender pour point de terminaison sur Windows et Windows Server]()

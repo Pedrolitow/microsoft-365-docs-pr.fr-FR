@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 4d61e285166bafe2ddc52d76362e4b13e7aae8ea113bb3d7ec0acc93f4367bd2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9382df161e1601547addcd68fb33570854c10a82
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889626"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823587"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 
@@ -29,6 +29,9 @@ Microsoft Defender pour point de terminaison inclut une protection nouvelle gén
 - [Protection antivirus basée sur le comportement, l’heuristique et en temps réel](configure-protection-features-microsoft-defender-antivirus.md), qui comprend une analyse toujours active utilisant la surveillance de comportement de la procédure et du fichier et d’autres méthodes heuristiques (également connue sous le nom de *protection en temps réel*) Elle inclut également la détection et le blocage des applications potentiellement dangereuses, mais qui ne sont peut-être pas détectées comme des programmes malveillants.
 - [Protection fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md) qui inclut une détection et un blocage quasi instantanés des menaces nouvelles et émergentes.
 - [Mises à jour produit et protection dédiée](manage-updates-baselines-microsoft-defender-antivirus.md) qui comprend les mises à jour liées au maintien de l’Antivirus Microsoft Defender à jour.
+
+> [!TIP]
+> La protection de nouvelle génération est incluse dans Microsoft Defender pour point de terminaison Plan 1 (prévisualisation) et Plan 2. [En savoir plus sur Defender pour Endpoint Plan 1 (prévisualisation) et Plan 2](defender-endpoint-plan-1-2.md)
 
 ## <a name="try-a-demo"></a>Essayez une version de démonstration !
 
