@@ -1,5 +1,5 @@
 ---
-title: Utiliser les cmdlets PowerShell pour configurer et exécuter Microsoft Defender AV
+title: Utiliser les cmdlets PowerShell pour configurer et exécuter des Antivirus Microsoft Defender
 description: Dans Windows 10, vous pouvez utiliser les cmdlets PowerShell pour exécuter des analyses, mettre à jour les informations de sécurité et modifier les paramètres dans Antivirus Microsoft Defender.
 keywords: analyse, ligne de commande, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 820300be1a8c68dab4b000b61023819ce1b75cf800e7cc16915f2aa7a696dfd2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 41d36f93ad371842d4ffe81e02cb46adb9e12288
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884474"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863952"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les cmdlets PowerShell pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -40,9 +40,9 @@ Pour obtenir la liste des cmdlets, leurs fonctions et les paramètres disponible
 Les cmdlets PowerShell sont particulièrement utiles dans les environnements Windows Server qui ne reposent pas sur une interface utilisateur graphique (GUI) pour configurer des logiciels.
 
 > [!NOTE]
-> Les cmdlets PowerShell ne doivent pas être utilisées en remplacement d’une infrastructure de gestion de stratégie de réseau complète, telle que [Microsoft Endpoint Configuration Manager,](/configmgr)la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe ou les [modèles ADMX](https://www.microsoft.com/download/101445)de stratégie de groupe Antivirus Microsoft Defender.
+> Les cmdlets PowerShell ne doivent pas être utilisées en remplacement d’une infrastructure de gestion de stratégie de réseau complète, telle que [Microsoft Endpoint Configuration Manager,](/configmgr)la [console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe ou les [modèles ADMX](https://www.microsoft.com/download/101445)de stratégie de groupe Antivirus Microsoft Defender.
 
-Les modifications apportées avec PowerShell affecteront les paramètres locaux sur le point de terminaison où les modifications sont déployées ou apportées. Cela signifie que les déploiements de stratégie avec une stratégie de groupe, Microsoft Endpoint Configuration Manager ou Microsoft Intune peuvent modifier les modifications apportées avec PowerShell.
+Les modifications apportées avec PowerShell affecteront les paramètres locaux sur le point de terminaison où les modifications sont déployées ou apportées. Cela signifie que les déploiements de stratégie avec la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Microsoft Intune peuvent modifier les modifications apportées avec PowerShell.
 
 Vous pouvez configurer les paramètres qui peuvent être remplacer localement avec les [remplacements de stratégie locale.](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
@@ -65,7 +65,7 @@ Get-Help <cmdlet> -Online
 
 Omettez le `-online` paramètre pour obtenir de l’aide mise en cache localement.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

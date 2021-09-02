@@ -1,6 +1,6 @@
 ---
-title: Passer en revue les résultats des analyses de l’Antivirus Microsoft Defender
-description: Passer en revue les résultats des analyses à l’aide Microsoft Endpoint Configuration Manager, Microsoft Intune ou l’application Sécurité Windows de données
+title: Passer en revue les résultats Antivirus Microsoft Defender analyses
+description: Passer en revue les résultats des analyses à l’aide Microsoft Endpoint Configuration Manager, Microsoft Intune ou l’Sécurité Windows de données
 keywords: résultats de l’analyse, correction, analyse complète, analyse rapide
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d23d2c7f0d6fc12a3365d1c4f50d37384f5ca349
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ec4505de586b042db48e579ee50d83315ee9b470
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561265"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863868"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Passer en Antivirus Microsoft Defender résultats d’analyse
 

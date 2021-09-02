@@ -1,7 +1,7 @@
 ---
-title: Résoudre les problèmes liés aux outils de rapport pour Microsoft Defender AV
-description: Identifier et résoudre les problèmes courants lors de la tentative de signalement de l’état de protection de l’Antivirus Microsoft Defender dans Update Compliance
-keywords: résoudre les problèmes, erreur, corriger, mettre à jour la conformité, oms, surveiller, signaler, Microsoft Defender AV
+title: Résoudre les problèmes liés aux outils de rapport pour Antivirus Microsoft Defender
+description: Identifier et résoudre les problèmes courants lors de la tentative de signalement de l’état Antivirus Microsoft Defender protection dans Update Compliance
+keywords: résoudre les problèmes, erreur, corriger, mettre à jour la conformité, oms, surveiller, signaler, Antivirus Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c1620de251a0cd16ab61e0ecb41abb1b481535161d5db5b9d791501229e6fc13
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afc383c158da353da35def39d5b21e2857b9e2ac
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889362"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863964"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour
 
@@ -41,9 +41,9 @@ Lorsque vous utilisez [Windows Analytics Update Compliance](/windows/deployment/
 En règle générale, les indicateurs les plus courants d’un problème sont :
 - Vous ne voyez qu’un petit nombre ou un sous-ensemble de tous les appareils que vous attendiez à voir
 - Vous ne voyez aucun appareil
-- Les rapports et informations que vous voyez sont obsolètes (plus de quelques jours)
+- Les rapports et les informations que vous voyez sont obsolètes (plus de quelques jours)
 
-Pour les codes d’erreur courants et les ID d’événement liés au service Antivirus Microsoft Defender qui ne sont pas liés à update compliance, voir Antivirus Microsoft Defender [événements .](troubleshoot-microsoft-defender-antivirus.md) 
+Pour les codes d’erreur courants et les ID d’événement liés au service Antivirus Microsoft Defender qui ne sont pas liés à la mise à jour de conformité, voir [Antivirus Microsoft Defender événements.](troubleshoot-microsoft-defender-antivirus.md) 
 
 La résolution de ces problèmes se fait en trois étapes :
 
@@ -60,9 +60,9 @@ La résolution de ces problèmes se fait en trois étapes :
 Pour que les appareils s’affichent correctement dans Update Compliance, vous devez respecter certains prérequis pour le service de conformité des mises à jour et pour les Antivirus Microsoft Defender :
 
 >[!div class="checklist"]
->- Les points de terminaison utilisent Antivirus Microsoft Defender comme seule application de protection antivirus. [L’utilisation d’une autre application antivirus](microsoft-defender-antivirus-compatibility.md) entraîne la désactivation de Microsoft Defender AV et le point de terminaison n’est pas signalé dans Update Compliance.
+>- Les points de terminaison utilisent Antivirus Microsoft Defender comme seule application de protection antivirus. [L’utilisation d’une](microsoft-defender-antivirus-compatibility.md) autre application antivirus entraîne Antivirus Microsoft Defender se désactive et le point de terminaison n’est pas signalé dans Update Compliance.
 > - [La protection cloud est activée.](enable-cloud-protection-microsoft-defender-antivirus.md)
-> - Les points de terminaison [peuvent se connecter au cloud de Microsoft Defender AV](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
+> - Les points de terminaison [peuvent se connecter au Antivirus Microsoft Defender cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
 > - Si le point de terminaison Windows 10 version 1607 ou antérieure, les données de diagnostic Windows 10 doivent être définies sur [le niveau Amélioré.](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 > - Cela fait 3 jours que toutes les conditions requises ont été satisfaites
 
@@ -73,7 +73,7 @@ Si les conditions préalables ci-dessus ont toutes été remplies, vous devrez p
 > [!div class="nextstepaction"]
 > [Collecter des données de diagnostic pour la résolution des problèmes de conformité des mises à jour](collect-diagnostic-data.md)  
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)

@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e8f6d2c79a0eeac6db20ff5791a25264d1b6767
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 03973595f68c56ac57f22d8d68c9f37f04fb6bb8
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573450"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862829"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprendre le rapport d’analyste dans l’analyse des menaces dans Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ En plus de ces atténuations suivies, le rapport d’analyste traite également 
 Bien que vous pouvez utiliser l’onglet **Atténuations** pour évaluer votre posture de sécurité par rapport à une menace, ces recommandations vous permet de prendre des mesures supplémentaires pour améliorer votre posture de sécurité. Lisez attentivement toutes les instructions d’atténuation du rapport d’analyste et appliquez-les dès que possible.
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Comprendre comment chaque menace peut être détectée
-Le rapport d’analyste fournit également les détections à partir de l’antivirus Microsoft Defender pour Endpoint et des fonctionnalités _protection évolutive des points de terminaison_ (PEPT).
+Le rapport d’analyste fournit également les détections des fonctionnalités Antivirus Microsoft Defender et _protection évolutive des points de terminaison_ (PEPT).
 
 ### <a name="antivirus-detections"></a>Détections antivirus
 Ces détections sont disponibles sur les appareils [sur](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) Antivirus Microsoft Defender de données. Lorsque ces détections se produisent sur des appareils qui ont été intégrés à Microsoft Defender pour endpoint, elles déclenchent également des alertes qui allument les graphiques dans le rapport.
@@ -103,7 +103,7 @@ Les requêtes de recherche avancées dans les rapports d’analyste ont été ex
 > L’analyse des menaces est également disponible [dans Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Toutefois, il ne dispose pas de l’intégration de données entre Microsoft Defender pour Office et Microsoft Defender pour le point de terminaison qui Microsoft 365 Defender l’analyse des menaces.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble des analyses de menaces](threat-analytics.md)
 - [Rechercher de manière proactive les menaces avec le recherche avancée](advanced-hunting-overview.md) 
 - [Règles de détection personnalisée](custom-detection-rules.md)

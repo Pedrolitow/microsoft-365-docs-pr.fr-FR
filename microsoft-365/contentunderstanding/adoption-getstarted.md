@@ -14,22 +14,22 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: edebf145a754d58e4650492eefa6d67276127afb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 91743eb7184e340deac15c10412833f2d8060866
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574747"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863628"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adoption SharePoint Syntex Microsoft : commencer
 
 Pensez aux services de contenu intelligents disponibles dans SharePoint Syntex comme ayant trois parties :
 
-- **Compréhension du contenu :** Créez des modèles d’IA sans code pour classer et extraire des informations du contenu afin d’appliquer automatiquement les métadonnées pour la découverte et la réutilisation des connaissances. En savoir plus sur [la compréhension du contenu.](document-understanding-overview.md)
-- **Traitement de contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et rationalisez les processus centrées sur le contenu à l’aide Power Automate. En savoir plus sur [le traitement de contenu.](form-processing-overview.md)
+- **Compréhension du contenu :** Créez des modèles d’IA sans code pour classifier et extraire des informations du contenu afin d’appliquer automatiquement les métadonnées pour la découverte et la réutilisation des connaissances. En savoir plus sur [la compréhension du contenu.](document-understanding-overview.md)
+- **Traitement de contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et simplifiez les processus centrées sur le contenu à l’aide Power Automate. En savoir plus sur [le traitement du contenu.](form-processing-overview.md)
 - **Conformité du contenu :** Contrôler et gérer le contenu pour améliorer la sécurité et la gouvernance avec l’intégration Protection des données Microsoft.
 
-Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification de contenu directement dans le flux de gestion de contenu à l’aide SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation :
+Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification du contenu directement dans le flux de gestion de contenu à l’aide SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation :
 
 | Traitement des formulaires | Compréhension de document |
 |:-------|:-------|
@@ -62,7 +62,7 @@ Lorsque vous réfléchissez aux scénarios d’entreprise à prendre en compte, 
 - Est-il possible de l’obtenir ?
 - Pouvez-vous mesurer la réussite ?
 
-Hiérarchiser les scénarios en fonction de l’impact et de la facilité d’implémentation. Faites en sorte que vos scénarios d’impact initiaux soient plus faciles à implémenter. Ne pas hiérarchiser les scénarios à faible impact qui sont difficiles à implémenter.
+Hiérarchiser les scénarios en fonction de l’impact et de la facilité d’implémentation. Faites en sorte que vos scénarios d’impact initial sur le domaine de travail soient plus faciles à implémenter. Ne pas hiérarchiser les scénarios à faible impact qui sont difficiles à implémenter.
 
 Utilisez les [exemples de scénarios](adoption-scenarios.md) et les cas d’utilisation pour vous faire des idées sur la façon dont vous pouvez SharePoint Syntex dans votre organisation.
 
@@ -73,7 +73,7 @@ Déterminer qui dans votre organisation créera et gérera les modèles ? Les r�
 | Administrateur/SharePoint d’informations | Administrateur Power Platform | Responsables d’informations | Propriétaire du modèle |
 |:-------|:-------|:-------|:-------|
 | Rôle AAD| Rôle AAD | Rôle AAD | Champions  |
-| Configurer le traitement des formulaires | Configurer l’environnement de service de données courant pour le traitement des formulaires | Recueillir des cas d’utilisation | Recueillir des cas d’utilisation professionnelle |
+| Configurer le traitement des formulaires | Configurer l’environnement dataverse pour le traitement des formulaires | Recueillir des cas d’utilisation | Recueillir des cas d’utilisation professionnelle |
 | Gérer les centres de contenu et les autorisations| Acheter et allouer des crédits AIB | Établir les meilleures pratiques et examiner l’analyse du modèle | Créer et appliquer des modèles |
 
 Le gestionnaire de connaissances, le propriétaire des processus d’entreprise et le propriétaire du modèle de contenu créent des exemples de modèles et l’adoption de champion dans l’organisation.
@@ -109,9 +109,9 @@ Identifiez les parties prenantes de votre projet.
 | Gestionnaires de contenu et propriétaires de modèles| Collecter des cas d’utilisation, créer et appliquer des modèles | Tout département|
 | Champions | Contribuer à l'évangélisation et à la gestion des objections | Tout département (personnel) |
 | Administrateur de locataires | Configurer les paramètres au niveau du locataire | Département informatique|
-| Administrateur de Power Platform| Configurer l'environnement des services de données communs | Département informatique|
+| Administrateur de Power Platform| Configurer l’environnement dataverse | Département informatique|
 
-> [!Note]
+> [!NOTE]
 > Même si nous vous recommandons de remplir chacun de ces rôles tout au long de votre déploiement, il se peut que vous n’en exigeiez pas tous la mise en place de votre solution identifiée.
 
 ## <a name="readiness-checklist"></a>Liste de vérification de préparation

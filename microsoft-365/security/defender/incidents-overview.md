@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c9a9cfa6e790cd179c0f9a13ce4fd312c0819411
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f6a874f263290913a5a7b1d25a16eb1c75938eb3
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575531"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58864001"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidents dans Microsoft 365 Defender
 
@@ -100,6 +100,10 @@ Les onglets supplémentaires pour un incident sont les suivants :
 
   Tous les événements pris en charge et entités suspectes dans les alertes dans l’incident.
 
+- Graph (prévisualisation)
+
+  Représentation visuelle de l’attaque qui connecte les différentes entités suspectes faisant partie de l’attaque à leurs biens connexes tels que les utilisateurs, les appareils et les boîtes aux lettres.
+
 Voici la relation entre un incident et ses données et les onglets d’un incident dans le Microsoft 365 Defender web.
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Relation d’un incident et de ses données avec les onglets d’un incident dans Microsoft 365 Defender portail.":::
@@ -110,33 +114,33 @@ Voici un exemple de flux de travail pour répondre aux incidents dans Microsoft 
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Exemple de flux de travail de réponse aux incidents pour Microsoft 365.":::
 
-Identifiez régulièrement les incidents les plus prioritaires pour l’analyse et la résolution dans la file d’attente des incidents et préparez-les à répondre. Il s’agit d’une combinaison de :
+En continu, identifiez les incidents les plus prioritaires pour l’analyse et la résolution dans la file d’attente des incidents et préparez-les pour la réponse. Il s’agit d’une combinaison de :
 
 - [Tri pour](incident-queue.md) déterminer les incidents les plus prioritaires via le filtrage et le tri de la file d’attente d’incidents.
 - [Gestion](manage-incidents.md) des incidents en modifiant leur titre, en les attribuant à un analyste et en ajoutant des balises et des commentaires.
 
 1. Pour chaque incident, lancez une analyse et une analyse d’attaque et [d’alerte](investigate-incidents.md):
  
-   1. Affichez le résumé de l’incident pour comprendre sa portée et sa gravité, ainsi que les entités concernées (onglet **Résumé).**
+   1. Affichez le résumé de l’incident pour comprendre sa portée et sa  gravité, ainsi que les entités affectées par les onglets Résumé et **Graph** (Aperçu).
 
-   1. Commencez à analyser les alertes pour comprendre leur origine, leur étendue et leur gravité (onglet **Alertes).**
+   1. Commencez à analyser les alertes pour comprendre leur origine, leur étendue et leur gravité avec **l’onglet Alertes.**
 
-   1. Si nécessaire, rassemblez des informations sur les appareils, les utilisateurs et les boîtes aux lettres touchés (onglets **Appareils,** Utilisateurs et Boîtes **aux lettres).**
+   1. Si nécessaire, rassemblez des informations sur les appareils, les utilisateurs et les boîtes aux lettres touchés à l’aide des onglets **Appareils,** Utilisateurs et Boîtes **aux lettres.**
 
-   1. Découvrez comment Microsoft 365 Defender [a automatiquement résolu certaines alertes](m365d-autoir.md) (onglet **Enquêtes).**
+   1. Découvrez comment Microsoft 365 Defender a automatiquement [résolu certaines alertes avec](m365d-autoir.md) l’onglet **Enquêtes.**
    
-   1. Si nécessaire, utilisez les informations du jeu de données pour l’incident pour plus d’informations (onglet Preuve **et** réponse).
+   1. Si nécessaire, utilisez les informations du jeu de données pour l’incident pour plus d’informations avec l’onglet Preuve **et** réponse.
 
-2. Après ou pendant votre analyse, effectuez un contenu pour réduire tout impact supplémentaire de l’attaque et de l’éradication de la menace de sécurité.
+2. Après ou pendant votre analyse, effectuez l’endiguement pour réduire tout impact supplémentaire de l’attaque et l’élimination de la menace de sécurité.
 
-3. Dans la mesure du possible, récupérez à partir de l’attaque en restaurant les ressources de votre client à l’état où elles se sont trouver avant l’incident.
+3. Autant que possible, récupérez l’attaque en restaurant vos ressources de locataire à l’état dans lequel elles se trouvaient avant l’incident.
 
 4. [Résolvez](manage-incidents.md#resolve-an-incident) l’incident et prenez le temps d’apprendre après l’incident pour :
 
    - Comprendre le type de l’attaque et son impact.
    - Recherchez une tendance des attaques de sécurité dans [l’analyse](threat-analytics.md) des menaces et la communauté de sécurité.
-   - Rappelez-vous du flux de travail que vous avez utilisé pour résoudre l’incident et mettre à jour vos flux de travail, processus, stratégies et playbooks standard si nécessaire.
-   - Déterminez si des modifications sont nécessaires dans votre configuration de sécurité et implémentez-les.
+   - Rappelez-vous le flux de travail que vous avez utilisé pour résoudre l’incident et mettre à jour vos workflows, processus, stratégies et playbooks standard en fonction des besoins.
+   - Déterminez si des modifications de votre configuration de sécurité sont nécessaires et implémentez-les.
 
 Si vous débutez dans l’analyse de la sécurité, consultez [l’introduction](incidents-overview.md) à la réponse à votre premier incident pour plus d’informations et pour passer au travers d’un exemple d’incident.
 

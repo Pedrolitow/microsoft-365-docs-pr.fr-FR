@@ -14,13 +14,13 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: Dans cet article, vous allez découvrir le fonctionnement du chiffrement de service avec la clé client dans Microsoft 365.
-ms.openlocfilehash: 4798c3fb2193fbd3c513a16246e288fb8e9177c4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+description: Dans cet article, vous allez découvrir comment fonctionne le chiffrement de service avec la clé client dans Microsoft 365.
+ms.openlocfilehash: 7f765d8a9c59ad8bdc5e7d2edba7f18af426cc76
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568407"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863928"
 ---
 # <a name="service-encryption-with-customer-key"></a>Chiffrement du service avec la clé client
 
@@ -60,12 +60,12 @@ Une stratégie de chiffrement de données (DEP) définit la hiérarchie de chiff
 
 Les dep multi-charges de travail ne chiffrent pas les types de données suivants. Au lieu de cela, Microsoft 365 utilise d’autres types de chiffrement pour protéger ces données.
 
-- SharePoint données OneDrive Entreprise données.
+- SharePoint et OneDrive Entreprise données.
 - Microsoft Teams fichiers et certains enregistrements Teams appels et de réunions enregistrés dans OneDrive Entreprise et SharePoint Online sont chiffrés à l’aide de SharePoint DeP online.
 - D Microsoft 365 charges de travail telles que Yammer et planner qui ne sont actuellement pas pris en charge par la clé client.
 - Teams Données d’événement en direct.
 
-Vous pouvez créer plusieurs dep par client, mais n’en affecter qu’un à la fois. Lorsque vous affectez le dep, le chiffrement commence automatiquement, mais prend un certain temps en fonction de la taille de votre client.
+Vous pouvez créer plusieurs dep par client, mais n’attribuer qu’une seule PD DEP à la fois. Lorsque vous affectez le dep, le chiffrement commence automatiquement, mais prend un certain temps en fonction de la taille de votre client.
 
 **DePs pour les boîtes Exchange Online aux lettres** Les DEP de boîtes aux lettres permettent de contrôler plus précisément les boîtes aux lettres individuelles au sein Exchange Online. Utilisez des deP de boîte aux lettres pour chiffrer les données stockées dans des boîtes aux lettres EXO de différents types tels que UserMailbox, MailUser, Group, PublicFolder et Les boîtes aux lettres partagées. Vous pouvez avoir jusqu’à 50 dep actifs par client et les affecter à des boîtes aux lettres individuelles. Vous pouvez affecter un deP à plusieurs boîtes aux lettres.
 
@@ -75,13 +75,13 @@ Par défaut, vos boîtes aux lettres sont chiffrées à l’aide de clés géré
 
 - Si la boîte aux lettres est déjà chiffrée à l’aide de clés gérées par Microsoft, le service réécrit la boîte aux lettres à l’aide de la nouvelle boîte aux lettres PED tant qu’un utilisateur ou une opération système accède aux données de la boîte aux lettres.
 
-- Si la boîte aux lettres n’est pas encore chiffrée à l’aide du chiffrement par défaut, le service marque la boîte aux lettres pour un déplacement. Le chiffrement a lieu une fois le déplacement terminé. Les déplacements de boîtes aux lettres sont régis en fonction des priorités définies pour toutes les Microsoft 365. Pour plus d’informations, voir les [demandes de déplacement dans le service Microsoft 365.](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service) Si les boîtes aux lettres ne sont pas chiffrées dans le délai spécifié, contactez Microsoft.
+- Si la boîte aux lettres n’est pas encore chiffrée à l’aide du chiffrement par défaut, le service marque la boîte aux lettres pour un déplacement. Le chiffrement a lieu une fois le déplacement terminé. Les déplacements de boîtes aux lettres sont régis en fonction des priorités définies pour toutes les Microsoft 365. Pour plus d’informations, voir les [demandes de déplacement dans le service Microsoft 365.](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-microsoft-365-or-office-365-service) Si les boîtes aux lettres ne sont pas chiffrées dans le délai spécifié, contactez Microsoft.
 
 Plus tard, vous pouvez actualiser le deP ou affecter un autre deP à la boîte aux lettres comme décrit dans Gérer la clé client [pour Office 365](customer-key-manage.md). Chaque boîte aux lettres doit avoir les licences appropriées pour se voir attribuer un dep. Pour plus d’informations sur la gestion des licences, [voir Avant de configurer la clé client.](customer-key-set-up.md#before-you-set-up-customer-key)
 
 Les dep peuvent être affectés à une boîte aux lettres partagée, une boîte aux lettres de dossiers publics et une boîte aux lettres de groupe Microsoft 365 pour les locataires qui répondent aux conditions de licence requises pour les boîtes aux lettres utilisateur. Vous n’avez pas besoin de licences distinctes pour les boîtes aux lettres non spécifiques à l’utilisateur pour attribuer la clé client DEP.
 
-Pour les DPS de clé client que vous affectez à des boîtes aux lettres individuelles, vous pouvez demander à Microsoft de purger des DPS spécifiques lorsque vous quittez le service. Pour plus d’informations sur le processus de purge des données et la révocation de clés, voir Révoquer vos clés et démarrer le processus de purge [des données.](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)
+Pour les DPS de clé client que vous affectez à des boîtes aux lettres individuelles, vous pouvez demander à Microsoft de purger des DPS spécifiques lorsque vous quittez le service. Pour plus d’informations sur le processus de purge des données et la révocation de clés, voir Révoquer vos clés et démarrer le processus de chemin d’accès [de la purge des données.](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)
 
 Lorsque vous révoquez l’accès à vos clés dans le cadre de la sortie du service, la clé de disponibilité est supprimée, ce qui entraîne la suppression par chiffrement de vos données. La suppression cryptographique atténue le risque de rémanence des données, ce qui est important pour respecter les obligations de sécurité et de conformité.
 

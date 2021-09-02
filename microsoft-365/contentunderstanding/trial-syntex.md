@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: Découvrez comment planifier et exécuter un programme pilote d’essai pour SharePoint Syntex votre organisation.
-ms.openlocfilehash: 490952d0bf1ba4d6fb61a7199a8c08170ff4476159a8c2665c4e39638ab5865e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 336a4c164f15035168d8842b05cdd4b5c566a97a
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899630"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863676"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Exécuter une version d’essai de Microsoft SharePoint Syntex
 
@@ -37,8 +37,8 @@ Vous pouvez obtenir la version d’essai à partir de l’une des sources suivan
 
 - Page [SharePoint Syntex produit](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
 
-- Le [Centre d’administration Microsoft 365](https://admin.microsoft.com)
-    1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+- Le [Centre d'administration Microsoft 365](https://admin.microsoft.com)
+    1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
     2. Go to **Billing**  >  **Purchase Services**.
     3. Faites défiler la page vers le bas jusqu’à la section **Modules complémentaires**.
     4. Sur la SharePoint Syntex, sélectionnez **Détails.**
@@ -106,7 +106,7 @@ Si vous n’achetez pas de licences à la suite de la version d’essai :
 - Les bibliothèques qui étaient des modèles en cours d’exécution ne classifient plus automatiquement les fichiers ou n’extraient plus les modèles.
 - Les fichiers précédemment classifiés ou les métadonnées extraites ne seront pas affectés.
 - Les centres de contenu et les modèles de compréhension des documents ne seront pas automatiquement supprimés. Ceux-ci resteront disponibles si vous décidez d’acheter des licences à l’avenir.
-- Les modèles de traitement des formulaires sont stockés dans l’instance Common Data Services (CDS) de l’environnement power platform par défaut. Ceux-ci peuvent être utilisés avec les futures licences pour SharePoint Syntex ou avec les fonctionnalités du Générateur d’IA dans la plateforme Power.
+- Les modèles de traitement des formulaires sont stockés dans l’instance Dataverse (précédemment appelée Common Data Service [CDS]) de l’environnement de plateforme Power Platform par défaut. Ceux-ci peuvent être utilisés avec les futures licences pour SharePoint Syntex ou avec les fonctionnalités du Générateur d’IA dans la plateforme Power.
 
 ## <a name="see-also"></a>Voir aussi
 

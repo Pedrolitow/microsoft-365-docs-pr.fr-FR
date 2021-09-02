@@ -1,6 +1,6 @@
 ---
 title: Configurer les Antivirus Microsoft Defender l’Microsoft Endpoint Manager
-description: Utilisez les Microsoft Endpoint Manager et Microsoft Intune pour configurer l’Antivirus Microsoft Defender et les Endpoint Protection
+description: Utilisez Microsoft Endpoint Manager et Microsoft Intune pour configurer Antivirus Microsoft Defender et Endpoint Protection
 keywords: scep, intune, endpoint protection, configuration
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: d2380053ffcb81a939494b487e17d065bd9d67c72664145e0232d9e1fd89608c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 68aad34932f63d1df183b562d87b0d539dab916b
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839182"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863796"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>Utilisez Microsoft Endpoint Manager pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -55,7 +55,7 @@ Vous pouvez utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview
 
 
 > [!TIP]
-> Besoin d'aide ? Voir [Gérer la sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security).
+> Besoin d’aide ? Voir [Gérer la sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security).
 
 
 ## <a name="related-articles"></a>Articles connexes

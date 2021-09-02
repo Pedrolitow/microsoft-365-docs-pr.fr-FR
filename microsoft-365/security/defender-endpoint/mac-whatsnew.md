@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-ms.topic: conceptual
+ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f2b4c7fc980c0a5ad12e9a8570942c3c81044672
-ms.sourcegitcommit: 5566455f1872dba23cc571281609258740842e8e
+ms.openlocfilehash: 0bfbd44e0e097148800501c5bed3b1b3db2dbbc9
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58385918"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863724"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
@@ -37,6 +37,11 @@ ms.locfileid: "58385918"
 
 > [!IMPORTANT]
 > Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur [cette page.](mac-sysext-policies.md)
+
+## <a name="1014084-20121071140840"></a>101.40.84 (20.121071.14084.0)
+
+- Prise en charge native de la puce M1
+- Améliorations des performances & résolutions de bogues
 
 ## <a name="1013797-20121062137970"></a>101.37.97 (20.121062.13797.0)
 
@@ -58,7 +63,7 @@ ms.locfileid: "58385918"
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0)
 
-- Nous avons résolu un problème dans lequel l’accès simultané auchain de Microsoft Defender pour le point de terminaison et d’autres applications peut entraîner une altération duchain.
+- Nous avons résolu un problème dans lequel l’accès simultané auchain à partir de Microsoft Defender pour endpoint et d’autres applications peut entraîner une altération duchain.
 
 ## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0)
 
@@ -150,7 +155,7 @@ ms.locfileid: "58385918"
   > `mdatp --health` sera remplacé par `mdatp health` dans une prochaine mise à jour du produit.
 
 - Correction d’un bogue dans lequel l’envoi automatique d’échantillons n’a pas été marqué comme géré dans l’interface utilisateur
-- Ajout de nouveaux paramètres pour contrôler la rétention des éléments dans l’historique d’analyse antivirus. Vous pouvez maintenant [spécifier le nombre](mac-preferences.md#antivirus-scan-history-retention-in-days) de jours de rétention des éléments dans l’historique d’analyse et spécifier le nombre maximal d’éléments [dans l’historique d’analyse.](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
+- Ajout de nouveaux paramètres pour contrôler la rétention des éléments dans l’historique d’analyse antivirus. Vous pouvez désormais [spécifier le nombre](mac-preferences.md#antivirus-scan-history-retention-in-days) de jours de rétention des éléments dans l’historique d’analyse et spécifier le nombre maximal d’éléments [dans l’historique d’analyse.](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
 - Résolutions de bogues
 
 ## <a name="1010663"></a>101.06.63
@@ -162,7 +167,7 @@ ms.locfileid: "58385918"
 > [!IMPORTANT]
 > Nous travaillons sur une syntaxe nouvelle et améliorée pour `mdatp` l’outil en ligne de commande. La nouvelle syntaxe est actuellement la valeur par défaut dans les canaux de mise à jour Insider Fast et Insider Slow. Nous vous encourageons à vous familiariser avec cette nouvelle syntaxe.
 >
-> Nous continuerons à la prise en charge de l’ancienne syntaxe parallèlement à la nouvelle syntaxe et nous fournirons une meilleure communication autour du plan de désaprétation de l’ancienne syntaxe dans les mois à venir.
+> Nous continuerons à assurer la prise en charge de l’ancienne syntaxe parallèlement à la nouvelle syntaxe et nous fournirons davantage de communication autour du plan de désaprétation de l’ancienne syntaxe dans les mois à venir.
 
 - Nous avons résolu un problème de noyau qui se produisait parfois lors de l’accès aux partages de fichiers SMB
 - Améliorations des performances & résolutions de bogues
@@ -180,7 +185,7 @@ ms.locfileid: "58385918"
 ## <a name="1010154"></a>101.01.54
 
 - Améliorations en matière de compatibilité avec Time Machine
-- Améliorations en matière d’accessibilité
+- Améliorations apportées à l’accessibilité
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1010031"></a>101.00.31
@@ -258,11 +263,11 @@ ms.locfileid: "58385918"
 - Prise en charge supplémentaire de macOS
 
   > [!CAUTION]
-  > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
+  > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
   >
   > Le mécanisme d’octroi de ce consentement dépend de la façon dont vous avez déployé Microsoft Defender pour endpoint :
   >
   > - Pour les déploiements manuels, consultez les instructions mises à jour dans la [rubrique Déploiement](mac-install-manually.md#how-to-allow-full-disk-access) manuel.
-  > - Pour les déploiements gérés, consultez les instructions mises à jour dans les rubriques sur le déploiement basé sur [JAMF](mac-install-with-jamf.md) [et Microsoft Intune](mac-install-with-intune.md#create-system-configuration-profiles) de déploiement basé sur jamf.
+  > - Pour les déploiements gérés, consultez les instructions mises à jour dans les rubriques de déploiement basé sur [JAMF](mac-install-with-jamf.md) [Microsoft Intune de déploiement](mac-install-with-intune.md#create-system-configuration-profiles) basé sur les logiciels.
 
 - Améliorations des performances & résolutions de bogues

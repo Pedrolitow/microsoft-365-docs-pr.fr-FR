@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c785941529823048b55ab3590c91f365ea17a1ba
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 55ea055c1e69b3f7cecd334758d5343fadc408ee
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570136"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862796"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -64,7 +64,7 @@ Pour effectuer les tâches décrites dans cet article, vous devez être un admin
 
 La classification EDM est incluse dans ces abonnements
 
-- Office 365 E5
+- Office 365 E5
 - Microsoft 365 E5
 - Microsoft 365 E5 Conformité
 - Microsoft E5/A5 Information Protection et gouvernance
@@ -73,7 +73,7 @@ La classification EDM est incluse dans ces abonnements
 
 |Portail|World Wide/GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |Centre de sécurité Microsoft 365|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Centre de conformité Microsoft 365|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
@@ -628,6 +628,7 @@ Ces emplacements prennent en charge les types d’informations sensibles EDM :
 - DLP pour SharePoint (fichiers)
 - Stratégies DLP de la sécurité de l’application Microsoft Cloud
 - Stratégies d’étiquetage automatique côté serveur : disponibles pour les clients du cloud commercial et les clients cloud du secteur public
+<!-- - Client side auto-labeling policies - available for government cloud customers -->  
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Pour créer une stratégie DLP avec EDM
 

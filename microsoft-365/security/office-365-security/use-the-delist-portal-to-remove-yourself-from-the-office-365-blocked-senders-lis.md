@@ -20,12 +20,12 @@ ms.custom:
 description: Dans cet article, vous allez apprendre à utiliser le portail Supprimer de la liste pour vous supprimer de la liste Microsoft 365 les expéditeurs bloqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f1c4c09af11829d2b4d902211baff9fb8e6cfb11
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0e825c859253b759e5436dbc5419f98f0c863fa3
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566501"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863421"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utiliser le portail Retirer d’une liste pour vous supprimer de la liste des expéditeurs bloqués
 
@@ -56,7 +56,9 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
 
 3. Cliquez sur **Envoyer**.
 
-    Le portail envoie un courrier électronique à l'adresse de messagerie que vous indiquez. L’e-mail ressemblera à ce qui suit : Capture d’écran du courrier électronique reçu lorsque vous envoyez une demande ![ via le portail de liste.](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    Le portail envoie un courrier électronique à l'adresse de messagerie que vous indiquez. Le courrier électronique devrait ressembler à ce qui suit :
+
+    ![Capture d’écran du courrier électronique reçu lorsque vous envoyez une demande via le portail Delist.](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. Cliquez sur le lien de confirmation dans le courrier électronique envoyé par le portail de suppression de la liste.
 
@@ -70,3 +72,7 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
     > Cela peut prendre jusqu’à 24 heures ou les résultats peuvent varier considérablement avant la suppression des restrictions.
 
 Voir [Créer des listes d’expéditeurs](create-safe-sender-lists-in-office-365.md) sûrs dans EOP et la protection contre le courrier indésirable sortant dans [EOP](outbound-spam-controls.md) pour empêcher le blocage d’une adresse IP.
+
+## <a name="more-information"></a>Plus d’informations
+
+Le formulaire de désinsistement **Outlook.com, le service** grand public est présent [ici.](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75) N’oubliez pas de lire d’abord [le FAQ](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) pour obtenir *l’itinéraire de soumission.*

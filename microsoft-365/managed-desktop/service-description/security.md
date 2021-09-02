@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4b0399adae82123bf4e0d6ca5aa462d1b48ac80e9143b6744e936a6b94554c68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9f2e3b9d623f5f2b019296dc08c34c32ace2e9d6
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854410"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863772"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Technologies de sécurité dans Microsoft Manged Desktop
 
@@ -21,7 +21,7 @@ ms.locfileid: "53854410"
 
 Microsoft Manged Desktop utilise plusieurs technologies Microsoft pour sécuriser les appareils gérés et les données. En outre, le centre Microsoft Manged Desktop des opérations de sécurité utilise différents [processus](security-operations.md) conjointement avec ces technologies.
 
-Notamment :
+Notamment :
 
 - [Sécurité des appareils](#device-security) : sécurité et protection sur Microsoft Manged Desktop appareils
 - [Gestion des identités et des accès :](#identity-and-access-management) gestion de l’utilisation sécurisée des appareils par Azure Active Directory services d’identité
@@ -37,9 +37,9 @@ Microsoft Manged Desktop s’assure que tous les appareils gérés sont sécuris
 
 Service | Description
 --- | ---
-Antivirus | L’Antivirus Microsoft Defender est installé et configuré<br>Les définitions de Microsoft Defender AV sont à jour
+Antivirus | Antivirus Microsoft Defender est installé et configuré<br>Antivirus Microsoft Defender définitions sont à jour
 Chiffrement de volume complet | Windows BitLocker est la solution de chiffrement de volume pour Microsoft Manged Desktop périphériques.<br><br>Une fois qu’une organisation est intégrée au service, les appareils sont chiffrés à l’aide de Windows BitLocker avec le module de plateforme de gestion de la plateforme de confiance (TPM) intégré afin d’empêcher tout accès non autorisé aux données locales lorsque l’appareil est en mode veille ou hors service.
-Surveillance | Microsoft Defender pour le point de terminaison est utilisé pour la surveillance des menaces de sécurité sur tous Microsoft Manged Desktop appareils. Defender pour le point de terminaison permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, [voir Microsoft Defender pour le point de terminaison.](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
+Analyse | Microsoft Defender pour le point de terminaison est utilisé pour la surveillance des menaces de sécurité sur tous Microsoft Manged Desktop appareils. Defender pour le point de terminaison permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, [voir Microsoft Defender pour le point de terminaison.](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 Mises à jour du système d’exploitation | Microsoft Manged Desktop appareils sont toujours sécurisés avec les dernières mises à jour de sécurité.
 Configuration de l’appareil sécurisé | Microsoft Manged Desktop implémente la ligne de base de sécurité Microsoft. Pour plus d’informations, [voir Windows de sécurité.](/windows/security/threat-protection/windows-security-baselines)
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3de298100e5a66e53bd34e110c35749e15e58044
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 75913a539db89bb5377386effb97c8e2a6b3beab
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568599"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863481"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>Rapport d’analyste dans l’analyse des menaces
 
@@ -75,7 +75,7 @@ Bien que vous pouvez utiliser l’onglet **Atténuations** pour évaluer votre p
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Comprendre comment chaque menace peut être détectée
 
-Le rapport d’analyste fournit également les détections à partir de l’antivirus Microsoft Defender pour Endpoint et des fonctionnalités _protection évolutive des points de terminaison_ (PEPT).
+Le rapport d’analyste fournit également les détections des fonctionnalités Antivirus Microsoft Defender et _protection évolutive des points de terminaison_ (PEPT).
 
 ### <a name="antivirus-detections"></a>Détections antivirus
 
@@ -88,7 +88,7 @@ Ces détections sont disponibles sur les appareils [sur](/windows/security/threa
 
 PEPT alertes sont élevées pour les [appareils intégrés à Microsoft Defender pour point de terminaison.](onboard-configure.md) Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender for Endpoint et d’autres fonctionnalités de point de terminaison (antivirus, protection réseau, protection contre la falsification) qui servent de sources de signal puissantes.
 
-À l’exemple de la liste des détections antivirus, certaines alertes PEPT sont conçues pour indicateurs génériques d’un comportement suspect qui n’est peut-être pas associé à la menace détectée. Dans ce cas, le rapport identifie clairement l’alerte comme « générique » et n’influence aucun graphique du rapport.
+À l’exemple de la liste des détections antivirus, certaines alertes PEPT sont conçues pour indicateur générique d’un comportement suspect qui n’est peut-être pas associé à la menace détectée. Dans ce cas, le rapport identifie clairement l’alerte comme « générique » et n’influence aucun graphique du rapport.
 
 ## <a name="find-subtle-threat-artifacts-using-advanced-hunting"></a>Rechercher des artefacts de menace discrets à l’aide d’un chasse avancée
 
@@ -98,7 +98,7 @@ Bien que les détections vous permettent d’identifier et d’arrêter automati
 
 Les requêtes de recherche avancées dans les rapports d’analyste ont été examinées par les analystes Microsoft et sont prêtes à être exécutés dans l’éditeur de requête [de recherche avancée.](https://securitycenter.windows.com/advanced-hunting) Vous pouvez également utiliser les requêtes pour créer des règles de [détection personnalisées](custom-detection-rules.md) qui déclenchent des alertes pour les correspondances futures.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble des analyses de menaces](threat-analytics.md)
 - [Rechercher de manière proactive les menaces avec le recherche avancée](advanced-hunting-overview.md)

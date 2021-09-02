@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Apprenez à gérer les Microsoft 365, notamment en ajoutant des membres de groupe supprimés, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
-ms.openlocfilehash: 7155bbbd6ff127525522b0a7ddf866b9d690db5a
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+description: Apprenez à gérer les groupes Microsoft 365, notamment en ajoutant supprimer des membres du groupe, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
+ms.openlocfilehash: c7f38a6a0b2eb3f6c0466858b60ac0beb2143bc0
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831836"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862724"
 ---
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le Centre d’administration Microsoft 365
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le Centre d'administration Microsoft 365
 
 Après avoir créé [un groupe Microsoft 365 et](create-groups.md) ajouté des membres du groupe, vous pouvez configurer votre groupe. Vous pouvez modifier le nom ou la description du groupe, gérer les propriétaires ou les membres, et spécifier si les expéditeurs externes peuvent envoyer des messages électroniques au groupe et s’il faut envoyer des copies des conversations de groupe aux membres.
 
-Go to the Centre d’administration Microsoft 365 at [https://admin.microsoft.com](https://admin.microsoft.com) .
+Go to the Centre d'administration Microsoft 365 at [https://admin.microsoft.com](https://admin.microsoft.com) .
 
 ## <a name="edit-the-group-name-or-description"></a>Modifier le nom ou la description du groupe
 
@@ -106,7 +106,7 @@ Pour vérifier que le groupe a été supprimé définitivement, réexécutez l'a
 
 [Créer un groupe Microsoft 365 ](create-groups.md)
 
-[Gérer l’accès de groupe aux groupes Microsoft 365](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Gérer l’accès invité aux groupes Microsoft 365 client](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Choisir le domaine à utiliser lors de la création de Microsoft 365 groupes](../../solutions/choose-domain-to-create-groups.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Résoudre des problèmes de performance
 description: Résoudre les problèmes d’utilisation élevée de l’UC liée au service de protection en temps réel dans Microsoft Defender pour Endpoint.
-keywords: résolution des problèmes, performances, utilisation élevée du processeur, utilisation élevée du processeur, erreur, correctif, mise à jour de conformité, oms, surveiller, rapport, Microsoft Defender AV
+keywords: résolution des problèmes, performances, utilisation élevée du processeur, utilisation élevée du processeur, erreur, correctif, conformité des mises à jour, oms, surveiller, rapport, Antivirus Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 29b174af6755718ef8c2fd446cf84aeb0f390310
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6fa4ff040bb6c863fab88e25728c69bcf920a07b
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568587"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863640"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Résoudre les problèmes de performances liés à la protection en temps réel
 
@@ -152,7 +152,7 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
 Vous pouvez utiliser Windows enregistreur de performances (WPR) pour inclure des informations supplémentaires dans votre soumission au support Microsoft. WPR est un outil d’enregistrement puissant qui crée le suivi des événements pour Windows enregistrements.
 
-WPR fait partie du Kit de déploiement et d’évaluation Windows (Windows ADK) et peut être téléchargé à partir du téléchargement et de l’installation du [kit Windows ADK.](/windows-hardware/get-started/adk-install) Vous pouvez également le télécharger dans le cadre du Kit de développement logiciel Windows 10 sur [Windows 10 SDK.](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
+WPR fait partie du Kit de déploiement et d’évaluation Windows (Windows ADK) et peut être téléchargé à partir du téléchargement et de l’installation du [kit Windows ADK.](/windows-hardware/get-started/adk-install) Vous pouvez également le télécharger dans le cadre du Kit de développement logiciel Windows 10 sur [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
 
 Vous pouvez utiliser l’interface utilisateur WPR en suivant les étapes de capture des journaux de performances à l’aide de [l’interface utilisateur WPR.](#capture-performance-logs-using-the-wpr-ui)
 
@@ -200,7 +200,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
     5. Sélectionnez **Fichier ou** **Mémoire en** mode Journalisation.
 
     > [!IMPORTANT]
-    > Vous devez sélectionner *Fichier* pour utiliser le mode de journalisation des fichiers si le problème de performances peut être reproduit directement par l’utilisateur. La plupart des problèmes relèvent de cette catégorie. Toutefois, si l’utilisateur ne peut pas reproduire directement le problème mais  qu’il peut facilement le remarquer une fois le problème se produit, l’utilisateur doit sélectionner Mémoire pour utiliser le mode de journalisation de la mémoire. Cela permet de s’assurer que le journal de suivi n’est pas excessivement insérable en raison du temps de longue durée.
+    > Vous devez sélectionner *Fichier* pour utiliser le mode de journalisation des fichiers si le problème de performances peut être reproduit directement par l’utilisateur. La plupart des problèmes relèvent de cette catégorie. Toutefois, si l’utilisateur ne peut pas reproduire directement le problème mais  peut facilement le remarquer une fois le problème se produit, il doit sélectionner Mémoire pour utiliser le mode de journalisation de la mémoire. Cela permet de s’assurer que le journal de suivi n’est pas excessivement insérable en raison du temps de longue durée.
 
 9. Vous êtes maintenant prêt à collecter des données. Quittez toutes les applications qui ne sont pas pertinentes pour reproduire le problème de performances. Vous pouvez sélectionner **les options Masquer pour** que l’espace occupé par la fenêtre WPR reste petit.
 
@@ -218,7 +218,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
     > [!TIP]
     > Conservez la collecte de données au plus cinq minutes. Deux à trois minutes sont une bonne plage, car un grand nombre de données sont collectées.
 
-12. Cliquez sur **Enregistrer**.
+12. Sélectionnez **Enregistrer**.
 
     ![Sélectionnez Enregistrer.](images/wpr-10.png)
 
@@ -227,7 +227,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
     ![Remplissez les détails.](images/wpr-12.png)
 
     1. Sélectionnez **Nom de fichier :** pour déterminer l’endroit où votre fichier de suivi sera enregistré. Par défaut, il 1.is enregistré dans `%user%\Documents\WPR Files\` .
-    1. Cliquez sur **Enregistrer**.
+    1. Sélectionnez **Enregistrer**.
 
 14. Patientez pendant la fusion du suivi.
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 31f9fb3b3a070c6cf95c828d452157dad5b2ba6a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 1fae1d1a800c6005f690ac3b4ac5a32cff38d549
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576163"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58864049"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Exécuter une simulation d’attaque dans Microsoft 365 Defender environnement pilote
 
@@ -115,7 +115,7 @@ Tout d’abord, vous devez ajouter un contrôleur de domaine AD DS isolé et un 
 
    - S Windows 10 la version 1903 ou une version ultérieure.
    - Est joint au domaine du contrôleur de domaine AD DS.
-   - A [Antivirus Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) activée. Si vous avez des difficultés à activer Antivirus Windows Defender, consultez cette [rubrique de résolution des problèmes.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
+   - A [Antivirus Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) activée. Si vous avez des difficultés à activer Antivirus Windows Defender, consultez cette [rubrique de résolution des problèmes.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
    - Est [intégré à Microsoft Defender pour point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 
 Si vous utilisez des groupes de locataires et d’appareils, créez un groupe d’appareils dédié pour le périphérique de test et faites-le avancer au niveau supérieur.

@@ -1,0 +1,59 @@
+### YamlMime:Hub
+title: Microsoft Viva
+summary: 'Découvrez cette plateforme d’expérience des employés qui regroupe les communications, les connaissances, l’apprentissage, les ressources et les informations.'
+brand: m365
+metadata:
+  title: Microsoft Viva
+  description: 'Découvrez cette plateforme d’expérience des employés qui regroupe les communications, les connaissances, l’apprentissage, les ressources et les informations.'
+  ms.prod: m365
+  ms.technology: viva
+  ms.topic: hub-page
+  author: samanro
+  ms.author: samanro
+  ms.date: 09/02/2021
+highlightedContent:
+  items:
+    - title: Microsoft Viva blog
+      itemType: whats-new
+      url: 'https://techcommunity.microsoft.com/t5/microsoft-viva-blog/bg-p/MicrosoftVivaBlog'
+    - title: Présentation de Microsoft Viva
+      itemType: overview
+      url: 'https://www.microsoft.com/microsoft-viva/overview'
+    - title: Microsoft Viva de configuration
+      itemType: video
+      url: 'https://www.youtube.com/playlist?list=PLXtHYVsvn_b-P97FRm0LZ3Y6xQrlpkW4r'
+additionalContent:
+  sections:
+    - items:
+        - title: Rubriques de Microsoft Viva
+          links:
+            - text: Prise en main
+              url: /microsoft-365/knowledge/
+            - text: Installation
+              url: /microsoft-365/knowledge/set-up-topic-experiences
+            - text: 'Learning chemin d’accès : prendre en Sujets Microsoft Viva'
+              url: /learn/paths/m365-viva-topics/
+            - text: Centre de ressources Rubriques
+              url: 'https://resources.techcommunity.microsoft.com/viva-topics/'
+            - text: Aide de l’utilisateur final & formation
+              url: 'https://support.microsoft.com/en-us/office/understanding-viva-topics-5bef3020-2679-4045-81cb-bcbc37218332'
+        - title: Informations Microsoft Viva
+          links:
+            - text: Prise en main
+              url: /insights/viva-teams-app
+            - text: Learning chemin d’accès - Découvrir Recommandations Microsoft Viva
+              url: /learn/modules/workplace-analytics-discover/
+        - title: Connexions Microsoft Viva
+          links:
+            - text: Prise en main
+              url: /sharepoint/viva-connections
+            - text: Aide de l’utilisateur final & formation
+              url: 'https://support.microsoft.com/en-us/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b'
+        - title: Formations Microsoft Viva
+          links:
+            - text: Prise en main
+              url: /microsoft-365/learning/
+            - text: Installation
+              url: /microsoft-365/learning/set-up-teams-admin-center
+            - text: Aide de l’utilisateur final & formation
+              url: 'https://support.microsoft.com/en-us/office/viva-learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a'

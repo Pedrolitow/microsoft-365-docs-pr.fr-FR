@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents d’un jeu à réviser dans un cas Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 4e5a4e60a5788c93f9ba0407616c4417c47ed46bfe20880d067ffa04a5a42dd1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed7652ecf720e32a7ddfaffbd0ff2db29b582b69
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842314"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863916"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 
@@ -52,13 +52,13 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Étiquettes de conformité|ComplianceLabels|Compliance_labels|[Étiquettes de rétention](retention.md) appliquées au contenu Office 365.|
 |Chemin composé|CompoundPath|Compound_path|Chemin lisible par l’homme qui décrit la source de l’élément.|
 |Content*|Contenu||Texte extrait de l’élément.|
-|Corps de la conversation|Corps de la conversation||Corps de conversation de l’élément.|
+|Corps de la conversation|ConversationBody||Corps de conversation de l’élément.|
 |Conversation ID|ConversationId|Conversation_ID|ID de conversation du message. Pour Teams 1:1 et les conversations de groupe, tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même ID de conversation. Pour plus d’informations, [voir Advanced eDiscovery flux de travail pour le contenu Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Conversation Index||Conversation_index|Index de conversation du message.|
 |Nom de la conversation||ConversationName|Nom du canal dans Teams. Le format du nom dépend du type de canal : <br>Teams conversations de canal privé et de canal privé :\<Name of team, name of channel\> <br>Teams 1:1 et conversations de groupe : nom d’affichage et adresse e-mail de tous les participants à la conversation<br>Yammer communauté : Community nom + 120 premiers chars d’un billet<br>Yammer privé : nom de l’expéditeur et adresse e-mail + 120 premiers chars d’un message|
 |Heure pdf de la conversation|ConversationPdfTime||Date de création de la version PDF de la conversation.|
 |Temps de redéaction de conversation|ConversationRedaction PleinTime||Date à laquelle la version PDF de la conversation a été créée pour la conversation.|
-|Conversation Topic|Conversation Topic||Rubrique de conversation de l’élément.|
+|Conversation Topic|ConversationTopic||Rubrique de conversation de l’élément.|
 |Conversation Type|ConversationType|ConversationType|Type de conversation. Les valeurs sont les suivantes : <br> Teams 1:1 et les conversations de groupe et toutes les conversations Yammer: **Groupe** pour<br>Teams et les canaux privés : **Canal**|
 |Contient un message modifié|ContainsEditedMessage|ContainsEditedMessage|Indique si la transcription Teams conversation inclut un message modifié
 |||Converted_file_path|Chemin d’accès du fichier d’exportation converti. Pour une utilisation interne à Microsoft uniquement.|
@@ -100,7 +100,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Date de création du système de fichiers||File_system_date_created|Date de création à partir du système de fichiers (s’applique uniquement aux données non Office 365 données).|
 |Date de modification du système de fichiers||File_system_date_modified|Date de modification à partir du système de fichiers (s’applique uniquement aux données Office 365 non modifiées).|
 |Type de fichier|FileType||Type de fichier de l’élément en fonction de l’extension de fichier.|
-|ID de groupe|ID de groupe|Group_ID|Rassemble tous les éléments pour les e-mails et les documents. Pour le courrier électronique, cela inclut le message, ainsi que toutes les pièces jointes et éléments extraits. Pour les documents, cela inclut le document et tous les éléments incorporés.|
+|ID de groupe|GroupId|Group_ID|Rassemble tous les éléments pour les e-mails et les documents. Pour le courrier électronique, cela inclut le message, ainsi que toutes les pièces jointes et éléments extraits. Pour les documents, cela inclut le document et tous les éléments incorporés.|
 |A une pièce jointe|EmailHasAttachment|Email_has_attachment|Indique si le message a des pièces jointes.|
 |A un avocat|HasAttorney||**True** lorsqu’au moins l’un des participants est trouvé dans la liste des avocats ; Sinon, la valeur est **False**.|
 |HasText*||Has_text|Indique si l’élément possède du texte ; les valeurs possibles **sont True** et **False**.|

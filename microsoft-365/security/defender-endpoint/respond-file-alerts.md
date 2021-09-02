@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f582ff83a790d56b936c93f3e40aac76c7e5df1b
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: f1ea6f3b2dd9447ff9901518a80aafa4dec56a5e
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823707"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863841"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -164,7 +164,7 @@ Si ce paramètre est allumé, les équipes de sécurité peuvent examiner les fi
 
 #### <a name="backing-up-quarantined-files"></a>Backing up quarantined files
 
-Les utilisateurs peuvent être invités à fournir un consentement explicite avant de la backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection).
+Les utilisateurs peuvent être invités à fournir un consentement explicite avant de la backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-protection).
 
 Cette fonctionnalité ne fonctionne pas si l’envoi d’exemples est désactivé. Si la soumission automatique d’échantillons est définie pour demander l’autorisation à l’utilisateur, seuls les exemples que l’utilisateur accepte d’envoyer seront collectés.
 
@@ -325,7 +325,7 @@ Si vous êtes face à un problème lors de la tentative d’soumission d’un fi
 
 6. Si ces étapes ne résolvent pas le problème, contactez [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Prendre des mesures de réponse sur un appareil](respond-machine-alerts.md)
 - [Examiner des fichiers](investigate-files.md)

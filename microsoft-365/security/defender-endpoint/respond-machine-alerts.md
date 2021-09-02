@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd3f9fa5c6595a9a73111bb86699271cd5b930aa
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: 9d0286ec03c6cde7aa8129d030b65271e9c78677
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823683"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863373"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
@@ -57,7 +57,7 @@ Les actions de réponse s’exécutent le long de la partie supérieure d’une 
 
 > [!IMPORTANT]
 >
-> - Ces actions de réponse sont uniquement disponibles pour les appareils Windows 10, version 1703 ou ultérieure.
+> - Ces actions de réponse sont disponibles uniquement pour les appareils Windows 10, version 1703 ou ultérieure et Windows Server 2019.
 > - Pour les plateformes Windows, les fonctionnalités de réponse (telles que l’isolation de l’appareil) dépendent des fonctionnalités tierces.
 > - Pour les agents de première partie De Microsoft, reportez-vous au lien « Plus d’informations » sous chaque fonctionnalité pour obtenir les conditions minimales requises du système d’exploitation.
 
@@ -182,8 +182,8 @@ En fonction de la gravité de l’attaque et de la sensibilité de l’appareil,
 
 > [!IMPORTANT]
 >
-> - L’isolation complète est disponible pour les appareils Windows 10, version 1703.
-> - L’isolation sélective est disponible pour les appareils Windows 10, version 1709 ou ultérieure.
+> - L’isolation complète est disponible pour les appareils Windows 10, version 1703 et Windows Server 2019.
+> - L’isolation sélective est disponible pour les appareils Windows 10, version 1709 ou ultérieure et Windows Server 2019.
 > - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionnée pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
 
 Cette fonctionnalité d’isolation de périphérique déconnecte l’appareil compromis du réseau tout en conservant la connectivité au service Defender for Endpoint, qui continue de surveiller l’appareil.

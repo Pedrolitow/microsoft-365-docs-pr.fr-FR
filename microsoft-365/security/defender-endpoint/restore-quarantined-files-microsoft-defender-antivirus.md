@@ -1,6 +1,6 @@
 ---
-title: Restaurer les fichiers mis en quarantaine dans l’Antivirus Microsoft Defender
-description: Vous pouvez restaurer des fichiers et des dossiers mis en quarantaine par l’Antivirus Microsoft Defender.
+title: Restaurer des fichiers mis en quarantaine dans l’antivirus Microsoft Defender
+description: Vous pouvez restaurer des fichiers et des dossiers qui ont été mis en quarantaine par Antivirus Microsoft Defender.
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,14 +16,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a07f43c11b1079bccb35a41c0ae913181be20d2d4f373a729e06ccf3b88a9045
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dfca90f3c6c3a0ca52a92ff42aab351d5dfc8e08
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817686"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863664"
 ---
-# <a name="restore-quarantined-files-in-microsoft-defender-av"></a>Restaurer les fichiers mis en quarantaine dans l’Antivirus Microsoft Defender
+# <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Restaurer des fichiers mis en quarantaine dans l’antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

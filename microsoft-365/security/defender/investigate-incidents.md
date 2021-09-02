@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 262c68e517bb088af7ca3fa814a788c9303adf22
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 8f98a9b942f65a1c60708c4d4bfa756ab7d8fc2a
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548689"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863751"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
@@ -46,7 +46,7 @@ Au sein d’un incident, vous analysez les alertes qui affectent votre réseau, 
 
 ## <a name="initial-investigation"></a>Examen initial
 
-Avant de vous plonger dans les détails, jetez un œil aux propriétés et au résumé de l’incident.
+Avant de vous plonger dans les détails, jetez un œil aux propriétés et à la synthèse de l’incident.
 
 Vous pouvez commencer par sélectionner l’incident dans la colonne de coche. Voici un exemple.
 
@@ -71,7 +71,7 @@ Les informations sont organisées dans ces sections.
 | Section | Description |
 |:-------|:-----|
 | Alertes et catégories | Une vue visuelle et numérique de la progression de l’attaque sur la chaîne d’attaque. Comme avec d’autres produits de sécurité Microsoft, Microsoft 365 Defender est aligné sur l’infrastructure [MITRE ATT&&trade; CK.](https://attack.mitre.org/) La chronologie des alertes indique l’ordre chronologique dans lequel les alertes se sont produites et pour chacune d’elles, leur état et leur nom. |
-| Domaine d’application |  Affiche le nombre d’appareils, d’utilisateurs et de boîtes aux lettres touchés et répertorie les entités par ordre de niveau de risque et priorité d’examen. |
+| Portée |  Affiche le nombre d’appareils, d’utilisateurs et de boîtes aux lettres touchés et répertorie les entités par ordre de niveau de risque et priorité d’examen. |
 | Évidence | Affiche le nombre d’entités affectées par l’incident. |
 | Informations sur l’incident | Affiche les propriétés de l’incident, telles que les balises, l’état et la gravité. |
 |||
@@ -93,7 +93,7 @@ Voici un exemple.
 
 Par défaut, les alertes sont classés dans l’ordre chronologique pour vous permettre de voir comment l’attaque s’est joué au fil du temps. Lorsque vous sélectionnez une alerte dans un incident, Microsoft 365 Defender affiche les informations d’alerte spécifiques au contexte de l’incident global. 
 
-Vous pouvez voir les événements de l’alerte, dont d’autres alertes déclenchées ont provoqué l’alerte actuelle, ainsi que toutes les entités et activités concernées impliquées dans l’attaque, y compris les appareils, les fichiers, les utilisateurs et les boîtes aux lettres.
+Vous pouvez voir les événements de l’alerte, les autres alertes déclenchées à l’origine de l’alerte actuelle, ainsi que toutes les entités et activités concernées impliquées dans l’attaque, y compris les appareils, les fichiers, les utilisateurs et les boîtes aux lettres.
 
 Voici un exemple.
 
@@ -113,7 +113,7 @@ La page d’alerte d’incident contient les sections suivantes :
 
 Toutes les alertes n’auront pas toutes les sous-sections répertoriées dans la section Article **sur l’alerte.**
 
-Découvrez comment utiliser la file d’attente d’alertes et les pages d’alerte dans [examiner les alertes.](investigate-alerts.md)
+Découvrez comment utiliser la file d’attente d’alertes et les pages d’alerte pour [examiner les alertes.](investigate-alerts.md)
 
 ## <a name="devices"></a>Appareils
 
@@ -151,7 +151,7 @@ Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des al
 
 ## <a name="investigations"></a>Enquêtes
 
-**L’onglet** Enquêtes répertorie toutes les [enquêtes](m365d-autoir.md) automatisées déclenchées par les alertes dans cet incident. Les enquêtes automatisées effectuent des actions de correction ou attendent l’approbation par un analyste des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Microsoft Defender pour Endpoint et Defender pour Office 365.
+**L’onglet** Enquêtes répertorie toutes les [enquêtes](m365d-autoir.md) automatisées déclenchées par les alertes dans cet incident. Les enquêtes automatisées effectuent des actions de correction ou attendent l’approbation par les analystes des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Microsoft Defender pour Endpoint et Defender pour Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Exemple de page Investigations pour un incident.":::
 
@@ -176,6 +176,26 @@ Pour plus d’informations, voir [Examen et réponse automatisés dans Microsoft
 Microsoft 365 Defender examine automatiquement tous les événements pris en charge par les incidents et les entités suspectes dans les alertes, en vous fournissant des informations sur les messages électroniques, fichiers, processus, services, adresses IP et bien plus encore. Cela vous permet de détecter et de bloquer rapidement les menaces potentielles dans l’incident.
 
 Chacune des entités analysées est marquée avec un verdict (malveillant, suspect, propre) et un état de correction. Cela vous permet de comprendre l’état de correction de l’intégralité de l’incident et les étapes suivantes qui peuvent être prises.
+
+## <a name="graph-preview"></a>Graph (prévisualisation)
+
+**L’onglet Graph** affiche l’étendue complète de l’attaque, la façon dont l’attaque s’est propagée sur votre réseau au fil du temps, l’endroit où elle a commencé et la distance à laquelle l’attaquant est passé. Il connecte les différentes entités suspectes faisant partie de l’attaque avec leurs biens connexes tels que les utilisateurs, les appareils et les boîtes aux lettres. 
+
+À  partir Graph’onglet, vous pouvez :
+
+1. Lire les alertes et les nodes sur le graphique au fil du temps pour comprendre la chronologie de l’attaque.
+
+<!--
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.png" alt-text="Example of playing the alerts and nodes on the Graph page":::
+--> 
+
+2. Ouvrez un volet d’entités, ce qui vous permet d’examiner les détails de l’entité et d’agir sur des actions de correction, telles que la suppression d’un fichier ou l’isolation d’un appareil.
+ 
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Exemple de volet d’entités sur la page Graph page":::
+
+3. Mettez en surbrillant les alertes en fonction de l’entité à laquelle elles sont liées.
+ 
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Exemple de mise en surbrill valeur d’une alerte sur Graph page":::
 
 ## <a name="next-steps"></a>Prochaines étapes
 

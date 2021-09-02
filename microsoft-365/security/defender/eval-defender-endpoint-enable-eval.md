@@ -1,6 +1,6 @@
 ---
 title: Activer Microsoft Defender pour l’évaluation du point de terminaison
-description: Activer votre laboratoire d Microsoft 365 Defender d’évaluation ou votre environnement pilote, y compris la vérification de l’état de la licence et les points d’intégration
+description: Activer votre laboratoire d Microsoft 365 Defender d’évaluation ou votre environnement pilote, y compris la vérification de l’état de la licence et les points de terminaison d’intégration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fb8e77a11b3844d78c99b56863bdb9ea424c48f9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 09785d48d2ad5efb2d33559d0580c5a0ff63c768
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572970"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58864025"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Activer Microsoft Defender pour l’environnement d’évaluation des points de terminaison
 
@@ -34,8 +34,8 @@ ms.locfileid: "58572970"
 Cet article vous guide tout au long des étapes de configuration de l’environnement d’évaluation de Microsoft Defender pour Endpoint à l’aide d’appareils de production. 
 
 
->[!TIP]
->Microsoft Defender pour le point de terminaison est également livré avec un laboratoire d’évaluation dans le produit où vous pouvez ajouter des appareils pré-configurés et exécuter des simulations pour évaluer les fonctionnalités de la plateforme. L’atelier est fourni avec une expérience de mise en place simplifiée qui peut vous aider à démontrer rapidement la valeur de Microsoft Defender pour Enpdoint, y compris des conseils pour de nombreuses fonctionnalités telles que la recherche avancée et l’analyse des menaces. Pour plus d’informations, voir [Évaluer les fonctionnalités.](/defender-endpoint/evaluation-lab.md) <br> La principale différence entre les instructions fournies dans cet article et le laboratoire d’évaluation est que l’environnement d’évaluation utilise des périphériques de production alors que le laboratoire d’évaluation utilise des périphériques hors production. 
+> [!TIP]
+> Microsoft Defender pour le point de terminaison est également livré avec un laboratoire d’évaluation dans le produit où vous pouvez ajouter des appareils pré-configurés et exécuter des simulations pour évaluer les fonctionnalités de la plateforme. L’atelier est fourni avec une expérience de mise en place simplifiée qui peut vous aider à démontrer rapidement la valeur de Microsoft Defender pour point de terminaison, y compris des conseils pour de nombreuses fonctionnalités telles que la recherche avancée et l’analyse des menaces. Pour plus d’informations, voir [Évaluer les fonctionnalités.](../defender-endpoint/evaluation-lab.md) <br> La principale différence entre les instructions fournies dans cet article et le laboratoire d’évaluation est que l’environnement d’évaluation utilise des périphériques de production alors que le laboratoire d’évaluation utilise des périphériques hors production. 
 
 Utilisez les étapes suivantes pour activer l’évaluation de Microsoft Defender pour Endpoint.
 
@@ -54,7 +54,7 @@ Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle 
 
    ![Image de la page De gestion des licences Azure.](../../media/defender/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder aux abonnements de facturation dans le Centre  >  **d’administration.**
+1. Vous pouvez également accéder au Centre d’administration pour accéder **aux**  >  **abonnements de facturation.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 
@@ -66,7 +66,7 @@ Après avoir vérifié que l’état de la licence a été correctement mis en s
 
 Dans le but d’évaluer Microsoft Defender pour endpoint, nous vous recommandons de choisir quelques appareils Windows 10 pour effectuer l’évaluation.
 
-Vous pouvez choisir d’utiliser n’importe quel outil de gestion pris en charge, mais Intune offre une intégration optimale. Pour plus d’informations, [voir Configurer Microsoft Defender pour le point](/mem/intune/protect/advanced-threat-protection-configure.md#enable-microsoft-defender-for-endpoint-in-intune) de terminaison dans Microsoft Intune
+Vous pouvez choisir d’utiliser l’un des outils de gestion pris en charge, mais Intune offre une intégration optimale. Pour plus d’informations, [voir Configurer Microsoft Defender pour le point](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)de terminaison dans Microsoft Intune .
 
 La [rubrique Planifier le](../defender-endpoint/deployment-strategy.md) déploiement décrit les étapes générales à suivre pour déployer Defender pour Endpoint.  
 
