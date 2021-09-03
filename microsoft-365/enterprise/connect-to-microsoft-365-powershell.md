@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connectez-vous à votre client Microsoft 365 à l’aide de PowerShell pour Microsoft 365 afin d’effectuer des tâches de Centre d’administration à partir de la ligne de commande.
-ms.openlocfilehash: f42112761fe7899742487a79a41973a8c6cb2ab6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 743f4a7b412f14bc942548c688fc3060fdebf53e
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355003"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863445"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Connexion à Microsoft 365 à l’aide de PowerShell
 
@@ -134,7 +134,7 @@ PowerShell Core ne prend pas en charge le module Microsoft Azure Active Director
 
 Ces étapes ne sont requises qu’une fois sur votre ordinateur. Mais vous devrez peut-être mettre à jour le logiciel régulièrement.
   
-1.  Si vous n’exécutez pas Windows 10, installez la version 64 bits de l’Assistant de connexion Microsoft Online Services: [Assistant de connexion Microsoft Online Services pour les professionnels des Technologies de l'Information RTW](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi).
+1.  Si vous n’exécutez pas Windows 10, installez la version 32 bits de l’Assistant de Connexion Microsoft Online Services : [Assistant de connexion Microsoft Online Services pour les professionnels des Technologies de l'Information RTW](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi).
     
 2. Installez le Module Microsoft Azure Active Directory pour Windows PowerShell en suivant ces étapes:
     
