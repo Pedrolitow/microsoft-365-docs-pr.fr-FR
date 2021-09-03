@@ -8,6 +8,26 @@
           href: admin-overview/sign-up-for-office-365.md
         - name: Essayer ou acheter Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
+        - name: S’inscrire à Microsoft 365 Business Premium
+          items:
+            - name: S’inscrire
+              href: ../business/sign-up.md
+            - name: Configurer Microsoft 365 Entreprise à l'aide de l'Assistant de configuration
+              href: ../business/set-up.md
+        - name: "S’inscrire à Microsoft\_365 Business Standard"
+          items:
+            - name: "S’inscrire à Microsoft\_365 Business Standard"
+              href: ../admin/simplified-signup/signup-business-standard.md
+            - name: Configurer Microsoft 365 Business Standard
+              href: ../admin/simplified-signup/signup-business-standard.md
+            - name: Inviter des utilisateurs à Microsoft 365 Business Standard
+              href: ../admin/simplified-signup/admin-invite-business-standard.md
+            - name: Accepter l’invitation par e-mail à Microsoft 365 Business Standard
+              href: ../admin/simplified-signup/user-invite-business-standard.md
+            - name: 'Accepter une invitation par e-mail à une organisation d’abonnement Microsoft 365 Business Standard à l’aide d’un compte Outlook, Yahoo, Gmail ou autre'
+              href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
+            - name: Migrer des données vers mon abonnement Microsoft 365 Business Standard
+              href: ../admin/simplified-signup/migrate-data-business-standard.md
         - name: Planifier votre installation
           href: setup/plan-your-setup.md
         - name: Planifier Windows 365 Business
@@ -25,7 +45,7 @@
             - name: Microsoft 365 Business Standard
               href: setup/setup-business-standard.md
             - name: Microsoft 365 Business Premium
-              href: setup/setup.md
+              href: setup/business-set-up.md
             - name: Applications Microsoft 365 pour les entreprises
               href: setup/setup-apps-for-business.md
         - name: Découvrir la page et l’Assistant Installation
