@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Implémentez les fonctionnalités de gouvernance des applications Microsoft pour régir vos applications.
-ms.openlocfilehash: f89214a71bc82ac7271ba3fd010258e63d39ef8a
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 379da2e2ff894b2f6355c14db93b339518dfca02
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58744988"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862772"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Module complémentaire de gouvernance des applications pour Microsoft Cloud App Security (en préversion)
 
@@ -80,12 +80,12 @@ Voici un résumé de l’intégration.
 ![Intégration de la gouvernance des applications avec Azure AD et Microsoft Cloud App Security.](..\media\manage-app-protection-governance\mapg-integration.png)
 
 La gouvernance des applications envoie ses alertes à Microsoft Cloud App Security et Microsoft 365 Defender et reçoit des alertes de Microsoft Cloud App Security, pour permettre une analyse plus détaillée des incidents de sécurité basés sur les applications.
-- Les alertes de gouvernance d’application Microsoft 365 Defender dans la liste des alertes en tant qu’alertes dont le champ source de détection est « MAPG »
-- Les alertes de gouvernance d’application s’affiche dans la liste d’alertes MCAS en tant qu’alertes avec le champ Stratégie définie sur l’un ou l’autre
+- Les alertes de gouvernance des applications s'affichent dans la liste des alertes Microsoft 365 Defender en tant qu'alertes avec le champ Source de détection défini sur « Gouvernance des applications »
+- Les alertes de gouvernance des applications s'affichent dans la liste des alertes MCAS en tant qu'alertes avec le champ Stratégie défini sur l'un des éléments suivants :
   - Gouvernance des applications OAuth Microsoft 365
   - Détection de l'hameçonnage de OAuth Microsoft 365
   - Réputation de l’application OAuth Microsoft 365
 - Les alertes MCAS apparaissent dans la liste des alertes de gouvernance d’application en tant qu’alertes avec la source définie sur MCAS.
 
 > [!NOTE]
-> L’état des alertes n’est actuellement pas synchronisé entre gouvernance d’application et Microsoft Cloud App Security.
+> L’état des alertes n’est actuellement pas synchronisé entre la gouvernance des applications et Microsoft Cloud App Security.
