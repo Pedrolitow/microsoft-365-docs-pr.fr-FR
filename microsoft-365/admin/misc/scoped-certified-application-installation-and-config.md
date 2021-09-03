@@ -1,5 +1,5 @@
 ---
-title: Guide de configuration et d’installation d’applications certifiées étendues
+title: Microsoft 365 prise en charge de l’intégration avec le guide de configuration ServiceNow
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -16,14 +16,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: f5c562122fafcbb05115519d7841800be3e71a73
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: f21353aa54cfee3b85a6e9d846aa4fce37cc13f5
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531658"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866720"
 ---
-# <a name="scoped-certified-application-installation-and-configuration-guide"></a>Guide de configuration et d’installation d’applications certifiées étendues
+# <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Microsoft 365 prise en charge de l’intégration avec le guide de configuration ServiceNow
 
 [Vue d’ensemble](#overview) 
 
@@ -89,7 +89,7 @@ Avant de définir une configuration pour Microsoft 365 l’intégration, examine
 
 **Question #2** Si vous avez plusieurs clients, envisagez-vous d’utiliser un seul client intégré à votre environnement ServiceNow pour l’intégration Microsoft 365 prise en charge ?
 
-Ce tableau identifie les fonctionnalités à votre disposition en fonction des réponses à ces questions et des liens vers les instructions spécifiques sur la façon de configurer Microsoft 365 l’intégration. Pour obtenir une description de chaque fonctionnalité, voir [Microsoft 365'intégration de prise en charge.](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)
+En fonction de vos réponses aux questions ci-dessus, ce tableau vous indique les fonctionnalités disponibles et la façon de configurer Microsoft 365 l’intégration. Pour obtenir une description de chaque fonctionnalité, voir [Microsoft 365'intégration de prise en charge.](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)
 
 |Question #1 réponse|Réponse #2 question|Quelles fonctionnalités sont disponibles ?|Étapes de configuration|
 |--- |--- |--- |--- |
@@ -110,11 +110,11 @@ Certaines conditions préalables sont nécessaires pour configurer la prise en c
 
     1. Go to the App registrations page and create a new application.
 
-        Sélectionnez **les comptes dans cet annuaire d’organisation uniquement ({TenantName} uniquement – Client unique**.
+        Sélectionnez **les comptes dans cet annuaire d’organisation uniquement ({microsoft-365-tenant-name} uniquement – Client unique**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
-    1. Ajouter une URL de redirection `https://&lt;your-servicenow-instance&gt;.service-now.com/oauth\_redirect.do` : .
+    1. Ajouter une URL de redirection `https://{your-servicenow-instance}.service-now.com/oauth_redirect.do` : .
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -122,13 +122,13 @@ Certaines conditions préalables sont nécessaires pour configurer la prise en c
 
 2. \[La personne qui est un administrateur ServiceNow a installé le fournisseur \] OAuth sortant dans ServiceNow.
 
-    1. Go to **System OAuth**  >  **Application Registry**.
-
     1. Si l’étendue n’est pas définie sur **Global,** **ouvrez Paramètres**  >    >  **applications** de développeur pour basculer vers **Global**.
 
-     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
 
-    1. Créez une application avec les valeurs suivantes en sélectionnant Connecter à un fournisseur [OAuth tiers.](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)
+    1. Go to **System OAuth**  >  **Application Registry**.
+
+    1. Créez une application avec les valeurs suivantes en sélectionnant Connecter à un fournisseur **OAuth tiers.**
 
     - ID client : ID client de l’application créée à \# l’étape 1
 
@@ -136,19 +136,19 @@ Certaines conditions préalables sont nécessaires pour configurer la prise en c
 
     - Type d’octroi par défaut : Informations d’identification client
 
-    - URL du jeton : `https://login.microsoftonline.com/{M365\_Tenant\_Name}/oauth2/token`
+    - URL du jeton : `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - URL de redirection :
+    - URL de redirection : https://{service-now-instance-name}.service-now.com/auth_redirect.do
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 
 3. \[La personne qui est un administrateur ServiceNow \] a installé le fournisseur OAuth entrant.
-
-    1. Go to **System OAuth**  >  **Application Registry**.
 
     1. Si l’étendue n’est pas définie sur **Global,** **ouvrez Paramètres**  >    >  **applications** de développeur pour basculer vers **Global**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
+
+    1. Go to **System OAuth**  >  **Application Registry**.
 
     1. Créez une application en sélectionnant Créer un point de **terminaison d’API OAuth pour les clients externes.** Nommez le fournisseur OAuth entrant et laissez les autres champs à leurs valeurs par défaut.
 
@@ -162,7 +162,7 @@ Certaines conditions préalables sont nécessaires pour configurer la prise en c
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image8.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 
-### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[Facultatif \] Autoriser l’intégration des adresses IP du service Microsoft 365 prise en charge
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[Facultatif \] Autoriser l’intégration des fournisseurs d’Microsoft 365 service
 
 Si votre entreprise limite l’accès à Internet avec vos propres stratégies, activez l’accès réseau pour le service de prise en charge de Microsoft 365 en permettant les adresses IP ci-dessous pour l’accès à l’API entrante et sortante.
 
@@ -179,7 +179,7 @@ Si votre entreprise limite l’accès à Internet avec vos propres stratégies, 
 - 20.105.151.142
 
 > [!NOTE]
-> Cette commande terminal répertorie toutes les IP actives du service pour Microsoft 365 l’intégration de la prise en charge :`nslookup connector.rave.microsoft.com`
+> Cette commande terminal répertorie toutes les IPS actives du service pour l Microsoft 365 prise en charge :`nslookup connector.rave.microsoft.com`
 
 ### <a name="set-up-microsoft-365-support-integration-application"></a>Configurer l’application Microsoft 365 prise en charge de l’intégration
 
@@ -204,7 +204,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
 4. \[La personne qui est un administrateur ServiceNow \] a installé le fournisseur OAuth sortant.
 
-    Sélectionnez le profil OAuth pour le fournisseur OAuth sortant créé à l’étape 2 Conditions [préalables (Authentification](#prerequisites-basic-authentication) de base) et \# sélectionnez **Suivant**.
+    Sélectionnez le profil OAuth pour le fournisseur OAuth sortant créé à l’étape 2 Conditions [préalables (Authentification](#prerequisites-basic-authentication) de base), \# puis sélectionnez **Suivant.**
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -214,7 +214,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
 - Décochez **le jeton d’OIDC externe.**
 
-- Sélectionnez le client OAuth créé dans les [conditions préalables (Authentification](#prerequisites-basic-authentication) de base) étape \# 3 et sélectionnez **Suivant**.
+- Sélectionnez le client OAuth créé à l’étape 3 [prérequis (Authentification](#prerequisites-basic-authentication) de base) \# et sélectionnez **Suivant.**
 
 :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -222,7 +222,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
 - Décochez **Ignorer l’étape actuelle.**
 
-- Sélectionnez l’utilisateur d’intégration créé à l’étape 4 [conditions préalables (Authentification](#prerequisites-basic-authentication) de base), \# puis sélectionnez **Suivant.**
+- Sélectionnez l’utilisateur d’intégration créé à l’étape 4 [des conditions préalables (Authentification](#prerequisites-basic-authentication) de base), puis \# sélectionnez **Suivant.**
 
 :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
 
@@ -250,7 +250,7 @@ Sélectionnez les paramètres suivants, puis sélectionnez **Suivant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
 
-    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com/)  >  **Paramètres**  >  **Paramètres**  >  **Organization profiles**.
+    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com/)  >  **Paramètres** Org  >  **settings** Organization  >  **profiles**.
 
     1. Configurer les paramètres d’intégration de prise en charge :
 
@@ -288,14 +288,14 @@ Sélectionnez les paramètres suivants, puis sélectionnez **Suivant**.
 
 Microsoft 365'intégration de la prise en charge est activée uniquement pour l’utilisateur ayant l’un des rôles ci-après :
 
-- [utilisateur \_ x mioms \_ m365 \_ assis.insights \_](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- utilisateur \_ x mioms \_ m365 \_ assis.insights \_
 
-- [x \_ mioms \_ m365 \_ assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.administrator
 
 > [!NOTE]
 > L’utilisateur ayant le rôle x \_ mioms \_ m365 assis.insights peut voir Incidents d’état du \_ \_ service, Solutions recommandées. L’utilisateur avec le rôle x \_ mioms \_ m365 assis.administrator peut également ouvrir un cas \_ avec Microsoft 365 prise en charge.
 
-11. \[Facultatif \] \[ La personne qui est un lien d’administration ServiceNow \] Administration Microsoft 365 compte.
+11. \[Facultatif \] \[ L’utilisateur avec le rôle x_mioms_m365_assis.administrator \] Link Administration Microsoft 365 compte.
 
 Si un utilisateur a le rôle x \_ mioms \_ m365 assis.administrator et utilise différents comptes Microsoft 365 pour gérer un cas de support Microsoft 365, il doit se rendre sur Microsoft 365 support > Link Account pour configurer son e-mail d’administrateur \_ Microsoft 365.
 
@@ -313,11 +313,11 @@ Ces étapes préalables sont nécessaires pour configurer l’Microsoft 365 l’
 
     1. Go to the **App registrations** page and create a new application.
 
-        Sélectionnez **les comptes dans cet annuaire d’organisation uniquement ({TenantName} uniquement – Client unique**.
+        Sélectionnez **les comptes dans cet annuaire d’organisation uniquement ({microsoft-365-tenant-name} uniquement – Client unique**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
-    1. Ajoutez une URL de redirection : `https://&lt;your-servicenow-instance&gt;.service-now.com/auth\_redirect.do`
+    1. Ajoutez une URL de redirection : `https://{your-servicenow-instance}.service-now.com/auth_redirect.do`
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -329,7 +329,7 @@ Ces étapes préalables sont nécessaires pour configurer l’Microsoft 365 l’
 
     1. Go to **App registrations** and create a new application.
 
-        Sélectionnez **les comptes dans cet annuaire d’organisation uniquement ({TenantName} uniquement – Client unique**.
+        Sélectionnez **les comptes dans cet annuaire d’organisation uniquement ({microsoft-365-tenant-name} uniquement – Client unique**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image22.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -340,7 +340,8 @@ Ces étapes préalables sont nécessaires pour configurer l’Microsoft 365 l’
     1. Connectez-vous au [portail Azure avec](https://portal.azure.com/) vos informations d Microsoft 365 client.
 
     1. Go to the **App registrations** page and create a new application.
-    1. Sélectionnez **les comptes dans cet annuaire d’organisation uniquement ({TenantName} uniquement – Client unique**.
+        
+        Sélectionnez **les comptes dans cet annuaire d’organisation uniquement ({microsoft-365-tenant-name} uniquement – Client unique**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -348,13 +349,13 @@ Ces étapes préalables sont nécessaires pour configurer l’Microsoft 365 l’
 
 4. \[La personne qui est un administrateur ServiceNow a installé le fournisseur \] OAuth sortant dans ServiceNow.
 
+    1. Si l’étendue n’est pas définie sur **Global,** **ouvrez Paramètres**  >    >  **applications** de développeur pour basculer vers **Global**.
+
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
+
     1. Go to **System OAuth**  >  **Application Registry**.
 
-    2. Si l’étendue n’est pas définie sur **Global,** **ouvrez Paramètres**  >    >  **applications** de développeur pour basculer vers **Global**.
-
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
-
-    3. Créez une application avec les valeurs ci-dessous en sélectionnant Connecter à un fournisseur [OAuth tiers.](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)
+    1. Créez une application avec les valeurs ci-dessous en sélectionnant Connecter à un fournisseur **OAuth tiers.**
 
         - ID client : ID client de l’application créée à l’étape 1 des conditions [préalables (jeton OAuth AAD).](#prerequisites-aad-oauth-token) \#
 
@@ -362,19 +363,19 @@ Ces étapes préalables sont nécessaires pour configurer l’Microsoft 365 l’
 
         - Type d’octroi par défaut : Informations d’identification du client.
 
-        - URL du jeton : `https://login.microsoftonline.com/{M365\_Tenan\_Name}/oauth2/token`
+        - URL du jeton : `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
         - URL de redirection :
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
+            :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 
-5. \[La personne qui est un administrateur ServiceNow configurer le fournisseur OIDC dans ServiceNow, reportez-vous à la documentation en ligne , sinon passer à \] l’étape [](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html)7.
-
-    1. Go to **System OAuth**  >  **Application Registry**.
+5. \[La personne qui est un administrateur ServiceNow configurer le fournisseur \] OIDC dans ServiceNow, reportez-vous à la [documentation en ligne](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html).
 
     1. Si l’étendue n’est pas définie sur **Global,** **ouvrez Paramètres**  >    >  **applications** de développeur pour basculer vers **Global**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
+
+    1. Go to **System OAuth**  >  **Application Registry**.
 
     1. Sélectionnez   >  **Créer un nouveau fournisseur d’Connecter Open ID.**
 
@@ -382,7 +383,7 @@ Ces étapes préalables sont nécessaires pour configurer l’Microsoft 365 l’
 
     - Fournisseur OIDC : Contoso Azure
 
-    - URL de métadonnées OIDC : `https://login.microsoftonline.com/{tenant\_name}/.well-known/openid-configuration`
+    - URL de métadonnées OIDC : `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
     - UserClaim: **appId**
 
@@ -401,7 +402,7 @@ Ces étapes préalables sont nécessaires pour configurer l’Microsoft 365 l’
     - Configuration du fournisseur OAuth OIDC : fournisseur OIDC créé à la dernière étape.
 
     - URL de redirection :  
-        `https://{service\_now\_instance}.service-now.com/oauth\_redirect.do`
+        `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image25.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 
@@ -411,7 +412,7 @@ Ces étapes préalables sont nécessaires pour configurer l’Microsoft 365 l’
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image26.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 
-### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[Facultatif \] Autoriser l’intégration des adresses IP du service Microsoft 365 prise en charge
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[Facultatif \] Autoriser l’intégration des fournisseurs d’Microsoft 365 service
 
 Si votre entreprise limite l’accès à Internet avec vos propres stratégies, activez l’accès réseau pour le service de prise en charge de Microsoft 365 en permettant ces adresses IP pour l’accès à l’API entrante et sortante :
 
@@ -473,7 +474,7 @@ Sélectionnez le profil OAuth pour le fournisseur OAuth sortant créé à l’é
 
     1. Entrez l’ID client de l’application créée à l’étape 3 [prerequisites (jeton OAuth AAD)](#prerequisites-aad-oauth-token) et \# sélectionnez **Suivant**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image39.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
 7. \[La personne qui est un administrateur ServiceNow \] a installé l’ID de référentiel.
 
@@ -499,13 +500,13 @@ Sélectionnez le profil OAuth pour le fournisseur OAuth sortant créé à l’é
 
     1. Vérifiez les informations suivantes pour vous assurer qu’elles sont correctes.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image40.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
-    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com)  >  **Paramètres**  >  **Paramètres**  >  **Organization profiles**.
+    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com)  >  **Paramètres** Org  >  **settings** Organization  >  **profiles**.
 
     1. Configurer les paramètres d’intégration de prise en charge.
 
-        1. Sous  l’onglet Informations de base, sélectionnez **Service Maintenant** en tant qu’outil de support interne, puis tapez ID d’application sortante comme valeur de l’ID d’application dans la page Étape - 6 Terminée, qui a été créée à l’étape 1 des conditions  [préalables (jeton OAuth AAD).](#prerequisites-aad-oauth-token) \#
+        1. Sous  l’onglet Informations de base, sélectionnez **Service Maintenant** comme outil de support interne, puis tapez L’ID de l’application sortante comme valeur de l’ID d’application à l’étape 6 Terminez la page d’intégration, qui a été créée à l’étape 1 des conditions  [préalables (jeton OAuth AAD).](#prerequisites-aad-oauth-token) \#
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -529,20 +530,20 @@ Sélectionnez le profil OAuth pour le fournisseur OAuth sortant créé à l’é
 
     1. Sélectionnez **Suivant** pour terminer l’intégration.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image32.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image32.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 
 10. \[La personne qui est un administrateur ServiceNow active \] Microsoft 365 l’intégration d’un utilisateur existant.
 
 Microsoft 365'intégration de la prise en charge est activée uniquement pour les utilisateurs ayant les rôles suivants :
 
-- [utilisateur \_ x mioms \_ m365 \_ assis.insights \_](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- utilisateur \_ x mioms \_ m365 \_ assis.insights \_
 
-- [x \_ mioms \_ m365 \_ assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.administrator
 
 > [!NOTE]
 > L’utilisateur avec le rôle x \_ mioms \_ m365 assis.insights peut voir Incidents d’état du \_ \_ service, Solutions recommandées. L’utilisateur avec le rôle x \_ mioms \_ m365 assis.administrator peut également ouvrir un cas \_ avec Microsoft 365 prise en charge.
 
-11. **\[Facultatif La personne qui est un compte de lien \] \[ d’administration ServiceNow \] Administration Microsoft 365 compte**
+11. **\[Facultatif \] \[ L’utilisateur avec le rôle x_mioms_m365_assis.administrator \] Link Administration Microsoft 365 compte**
 
 Si un utilisateur a le rôle « x \_ mioms m365 assis.administrator » et qu’il utilise différents comptes Microsoft 365 pour gérer les cas de support Microsoft, il doit se rendre sur le support Microsoft 365 > Link Account pour configurer son courrier électronique \_ \_ d’administrateur Microsoft 365.
 
@@ -560,11 +561,11 @@ Ces étapes préalables sont nécessaires pour configurer la prise en charge Mic
 
     1. Go to the **App registrations** page and create a new application.
 
-    1. Sélectionnez **les comptes dans cet annuaire d’organisation uniquement ({TenantName} uniquement – Client unique**.
+        Sélectionnez **les comptes dans cet annuaire d’organisation uniquement ({microsoft-365-tenant-name} uniquement – Client unique**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
-    1. Ajoutez une URL de redirection : `https://&lt;your-servicenow-instance&gt;.service-now.com/auth\_redirect.do`
+    1. Ajoutez une URL de redirection : `https://{your-servicenow-instance}.service-now.com/auth_redirect.do`
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -572,13 +573,13 @@ Ces étapes préalables sont nécessaires pour configurer la prise en charge Mic
 
 1. \[La personne qui est un administrateur ServiceNow a installé le fournisseur \] OAuth sortant dans ServiceNow.
 
-    1. Go to **System OAuth**  >  **Application Registry**.
-
     1. Si l’étendue n’est pas définie sur **Global,** **ouvrez Paramètres**  >    >  **applications** de développeur pour basculer vers **Global**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
 
-    1. Créez une application avec les valeurs ci-dessous en sélectionnant Connecter à un fournisseur [OAuth tiers.](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)
+    1. Go to **System OAuth**  >  **Application Registry**.
+
+    1. Créez une application avec les valeurs ci-dessous en sélectionnant Connecter à un fournisseur **OAuth tiers.**
 
     - ID client : **ID client de** l’application créée dans les conditions [préalables (Informations UNIQUEMENT)](#prerequisites-insights-only) étape \# 1
 
@@ -586,9 +587,9 @@ Ces étapes préalables sont nécessaires pour configurer la prise en charge Mic
 
     - Type d’octroi par défaut : Informations d’identification client
 
-    - URL du jeton : `https://login.microsoftonline.com/{M365\_Tenan\_Name}/oauth2/token`
+    - URL du jeton : `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - URL de redirection : `https://{ServiceNow\_Istance\_Name}.service-now.com/oauth\_redirect.do`
+    - URL de redirection : `https://{servicenow-instance-name}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 
@@ -641,7 +642,7 @@ Spécifiez l’ID de référentiel et sélectionnez **Suivant.**
 
     Sélectionnez les paramètres et sélectionnez **Suivant.**
 
-    - SSO avec Microsoft 365 : vérifiez si l’instance ServiceNow est définie en tant qu’OS avec Microsoft 365 clients ; Sinon, décochez-le.
+    - SSO avec Microsoft 365 : vérifiez si l’instance ServiceNow est définie en tant qu’OS avec Microsoft 365 clients ; dans le cas contraire, décochez-la.
 
     - Administration Microsoft 365 Courrier électronique : adresse électronique de l Microsoft 365'administrateur à contacter lors de la création Microsoft 365 de support technique.
 
@@ -655,7 +656,7 @@ Spécifiez l’ID de référentiel et sélectionnez **Suivant.**
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image35.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
-    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com)  >  **Paramètres**  >  **Paramètres**  >  **Organization profiles**.
+    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com)  >  **Paramètres** Org  >  **settings** Organization  >  **profiles**.
 
         1. Configurer les paramètres d’intégration de prise en charge avec les informations affichées dans le flux d’installation.
 
@@ -669,7 +670,7 @@ Spécifiez l’ID de référentiel et sélectionnez **Suivant.**
 
         - Point de terminaison : valeur **de point** de terminaison de l’étape - 6 Terminer la page d’intégration.
 
-        - Type d’authentification : **sélectionnez l’authentification AAD.**
+        - Type d’authentification : **sélectionnez L’authentification AAD.**
 
         - ID client : valeur aléatoire, telle **qu’ignorée.**
 
@@ -689,18 +690,12 @@ Spécifiez l’ID de référentiel et sélectionnez **Suivant.**
 
 Microsoft 365'intégration de la prise en charge est activée uniquement pour ces rôles d’utilisateur :
 
-- [utilisateur \_ x mioms \_ m365 \_ assis.insights \_](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- utilisateur \_ x mioms \_ m365 \_ assis.insights \_
 
-- [x \_ mioms \_ m365 \_ assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.administrator
 
 > [!NOTE] 
-> L’utilisateur avec le rôle x \_ mioms \_ m365 assis.insights peut voir Incidents d’état du \_ \_ service, Solutions recommandées. L’utilisateur avec le rôle x \_ mioms \_ m365 assis.administrator peut également ouvrir un cas \_ avec Microsoft 365 prise en charge.
-
-11. \[Facultatif \] \[ La personne qui est un lien d’administration ServiceNow \] Administration Microsoft 365 compte.
-
-Si un utilisateur a le rôle « x \_ mioms \_ m365 assis.administrator et utilise différents comptes Microsoft 365 pour gérer un cas de support Microsoft, il doit se rendre sur le support Microsoft 365 > Link Account pour configurer son e-mail d’administrateur \_ Microsoft 365.
-
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
+> L’utilisateur ayant le rôle x_mioms_m365_assis.insights_user peut voir Incidents d’état du service, Solutions recommandées. L’utilisateur ayant le rôle x_mioms_m365_assis.administrator peut également ouvrir un cas avec Microsoft 365 prise en charge. Avec Informations UNIQUEMENT, personne ne doit se voir attribuer le rôle x_mioms_m365_assis.administrator.
 
 ## <a name="testing-the-configuration"></a>Test de la configuration
 
@@ -718,21 +713,21 @@ Voici les étapes à suivre pour tester la configuration de la prise en charge M
 
 ##  <a name="troubleshooting"></a>Résolution des problèmes
 
-|#|Problème|Action diagnostics|
+|#|Problème|Action de diagnostic|
 |--- |--- |--- |
-|1 |Ne peut pas voir **l’onglet Microsoft 365 prise en charge**|Vérifiez l’affichage actuel et **tous les journaux système** à  >   l’x_mioms_m365_assit|
-|2 |Sélectionnez **les solutions recommandées par Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui d’effectuer les étapes de configuration de l’application ».|Vérifiez le message d’erreur en haut du formulaire et des **journaux système** à  >   l’x_mioms_m365_assit|
-|3 |Sélectionnez **les solutions recommandées par Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui de terminer l’étape finale de mise en place de l’application ».|Vérifiez le message d’erreur en haut du formulaire et des **journaux système** à  >   l’x_mioms_m365_assit|
-|4 |Tapez le problème dans la zone de recherche et sélectionnez les **solutions recommandées** par Microsoft, mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui d’effectuer les étapes de configuration de l’application ».|Vérifiez le message d’erreur en haut du formulaire et des **journaux système** à  >   l’x_mioms_m365_assit|
-|5 |Tapez le problème dans la zone de recherche et sélectionnez les **solutions recommandées** par Microsoft, mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui de terminer l’étape finale de mise en place de l’application ».|Vérifiez le message d’erreur en haut du formulaire et des **journaux système** à  >   l’x_mioms_m365_assit|
-|6 |Sélectionnez **Contacter le support Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui d’effectuer les étapes de configuration de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
-|7 |Sélectionnez **Contacter le support Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui de terminer l’étape finale de mise en place de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
+|1|Ne peut pas voir **l’onglet Microsoft 365 prise en charge**|Vérifiez l’affichage actuel et **tous les journaux système** à  >   l’x_mioms_m365_assit|
+|2|Sélectionnez **les solutions recommandées par Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui d’effectuer les étapes de configuration de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
+|3|Sélectionnez **les solutions recommandées par Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui de terminer l’étape finale de mise en place de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
+|4 |Tapez le problème dans la zone de recherche et sélectionnez les **solutions recommandées** par Microsoft, mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui d’effectuer les étapes de configuration de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
+|5 |Tapez le problème dans la zone de recherche et sélectionnez les **solutions recommandées** par Microsoft, mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui de terminer l’étape finale de mise en place de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
+|6 |Sélectionnez **Contacter le support Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui d’effectuer les étapes de configuration de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
+|7 |Sélectionnez **Contacter le support Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui de terminer l’étape de mise en place finale de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
 |8 |Sélectionnez **Contacter le support Microsoft,** mais obtenez l’erreur « {EmailAddress} n’est pas un compte d’administrateur Microsoft 365 valide. Vous devez Microsoft 365'administrateur pour ouvrir une demande de service. Dans l’application, lier le compte d’administrateur. »|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
 |9 |Sélectionnez **les solutions recommandées par Microsoft,** mais rien ne s’affiche|Vérifier **les journaux système : journaux HTTP sortants** avec filtres login.microsoftonline.com et connector.rave.microsoft.com|
 |10 |Sélectionnez **les solutions recommandées par Microsoft,** mais obtenez l’erreur « Veuillez contacter le support de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
-|11 |Tapez le problème dans la zone de recherche et sélectionnez **les solutions recommandées par Microsoft,** mais rien ne s’affiche|Vérifier **les journaux système : journaux HTTP sortants** avec filtres login.microsoftonline.com et connector.rave.microsoft.com|
+|11 |Tapez le problème dans la zone de recherche et sélectionnez **les solutions recommandées** par Microsoft, mais rien ne s’affiche|Vérifier **les journaux système : journaux HTTP sortants** avec filtres login.microsoftonline.com et connector.rave.microsoft.com|
 |12 |Tapez un problème dans la zone de recherche et sélectionnez **les solutions recommandées** par Microsoft, mais obtenez l’erreur « Veuillez contacter le support de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
-|13 |L’utilisateur sélectionne **contacter le support Microsoft,** mais rien ne se produit|Vérifier **les journaux système : journaux HTTP sortants** avec filtres login.microsoftonline.com et connector.rave.microsoft.com|
+|13|L’utilisateur sélectionne **contacter le support Microsoft,** mais rien ne se produit|Vérifier **les journaux système : journaux HTTP sortants** avec filtres login.microsoftonline.com et connector.rave.microsoft.com|
 |14 |Can’t see Microsoft recommended solution after reopening the incident|Vérifier **tous les journaux système** à  >   l’x_mioms_m365_assit|
 |15 |Can’t see Microsoft cases when reopening the incident that was transferred to Microsoft support|Vérifier **tous les journaux système** à  >   l’x_mioms_m365_assit|
 |16 |Impossible d’enregistrer les détails du ticket, obtenez l’erreur « Impossible d’enregistrer les détails du ticket. Veuillez contacter le support technique de l’application. »|Vérifier le message d’erreur en haut du formulaire|

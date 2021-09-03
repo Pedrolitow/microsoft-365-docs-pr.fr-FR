@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 2c3323466d79137251be1f8d9ee764b42b643bb1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 32a423073ec00a9e13e0e3669a9fbd1412b01a50
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565195"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862784"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -59,7 +59,9 @@ Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les donn
 
 ::: moniker-end
 
-2. Cliquez sur le bouton **Afficher plus** de la carte d’activité d’aperçu pour un service (par exemple, e-mail ou OneDrive) pour afficher la page de détails du rapport. Différents rapports pour le service sont fournis dans les onglets. <br/>![Tableau de bord d'utilisation.](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. Cliquez sur le bouton **Afficher plus** à partir de la carte d’activité en un coup d’œil pour un service (par exemple, e-mail ou OneDrive) pour afficher la page de détails du rapport. Différents rapports pour le service sont fournis dans les onglets.
+
+   :::image type="content" alt-text="Tableau de bord d'utilisation." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
 ## <a name="who-can-see-reports"></a>Qui peut voir ces rapports ?
 
@@ -73,8 +75,10 @@ Les personnes disposant des autorisations suivantes :
     
 - Administrateurs Skype Entreprise
 
-- Lecteur général
-    
+- Lecteur global (sans les détails de l’utilisateur)
+
+- Lecteur de rapports de synthèse de l’utilisation (sans les détails de l’utilisateur)
+
 - Lecteur de rapports
 
 - Administrateur du service Teams
@@ -147,21 +151,23 @@ Vous ne pouvez pas générer de rapport pour un compte d’utilisateur afin d’
 
 Dans certains cas, les nouveaux utilisateurs s’affichent en tant que **Inconnu**. Ceci est généralement dû à des retards dans la création de profils utilisateur.  
   
-## <a name="hide-user-details-in-the-reports"></a>Masquer les détails des utilisateurs dans les rapports
+## <a name="show-user-details-in-the-reports"></a>Afficher les détails de l’utilisateur dans les rapports
 
-Si vous voulez masquer les informations concernant les utilisateurs individuels lors de la génération des rapports, vous pouvez apporter rapidement cette modification dans le Centre d’administration.
-  
-1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; Compléments</a>.
-
-2. Sélectionnez **Rapports**. 
-  
-3. Dans le volet **Rapports**, sélectionnez les options souhaitées, puis enregistrez vos modifications.
+Les rapports fournissent des informations sur les données d’utilisation de votre organisation. Par défaut, les rapports affichent des informations avec des noms identifiables pour les utilisateurs, les groupes et les sites. À compter du 1er septembre 2021, nous masquons les informations utilisateur par défaut pour tous les rapports dans le cadre de notre engagement continu à aider les entreprises à prendre en charge leurs lois locales sur la confidentialité.
   
 Votre liste d’utilisateurs se présente comme suit :
   
 ![Rapports : liste d’utilisateurs rendus anonymes.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-Quelques minutes sont nécessaires pour répercuter ces modifications dans les rapports du tableau de bord Rapports. Ce paramètre s’applique également à l’API Rapports.
+Les administrateurs globaux peuvent inverser cette modification pour leur client et afficher des informations d’utilisateur identifiables si les pratiques de confidentialité de leur organisation le permettent. Vous pouvez le faire dans le Centre d'administration Microsoft 365 en suivant les étapes suivantes :
+  
+1. Dans le Centre d’administration, allez à la page **Paramètres** \> **Paramètres de l’organisation** \> **Services**.
+
+2. Sélectionnez **Rapports**. 
+  
+3. Sous **Choisir comment afficher les informations utilisateur,** sélectionnez les options de votre choix, puis enregistrez vos modifications.  
+  
+Quelques minutes sont nécessaires pour répercuter ces modifications dans les rapports du tableau de bord Rapports. Ce paramètre s'applique également à l'API Rapports. L’affichage des informations utilisateur identifiables est un événement enregistré dans le journal d’audit du Centre de conformité Microsoft 365.   
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Qu’advient-il des données d’utilisation lors de la fermeture d’un compte utilisateur ?
 

@@ -120,7 +120,7 @@ productDirectory:
           text: Bureau géré Microsoft
         - url: /mem/intune/fundamentals/what-is-intune
           text: Gestion des appareils avec Microsoft Intune
-    - title: Migrer vers Microsoft 365
+    - title: "Migrer vers Microsoft\_365"
       imageSrc: 'https://docs.microsoft.com/office/media/icons/migration-blue.svg'
       links:
         - url: /MicrosoftTeams/journey-skypeforbusiness-teams
@@ -188,7 +188,7 @@ additionalContent:
               url: /DeployOffice
         - title: SharePoint
           links:
-            - text: SharePoint dans Microsoft 365
+            - text: "SharePoint dans Microsoft\_365"
               url: /sharepoint/sharepoint-online
             - text: SharePoint Syntex
               url: contentunderstanding/index.md
@@ -222,6 +222,18 @@ additionalContent:
               url: /project-for-the-web/projectforweb-admin-home
             - text: Plus concernant Project >
               url: /Project
+        - title: Microsoft Viva
+          links:
+            - text: Rubriques de Microsoft Viva
+              url: /microsoft-365/knowledge/
+            - text: Informations Microsoft Viva
+              url: /insights/viva-teams-app
+            - text: Connexions Microsoft Viva
+              url: /sharepoint/viva-connections
+            - text: Formations Microsoft Viva
+              url: /microsoft-365/learning/
+            - text: Plus de Microsoft Viva >
+              url: /microsoft-365/viva/
         - title: Autres applications et services
           links:
             - text: Microsoft Bookings
@@ -232,13 +244,9 @@ additionalContent:
               url: /stream/
             - text: Yammer
               url: /yammer/yammer-landing-page
-        - title: Skype Entreprise
-          links:
-            - text: Documentation pour le professionnel de l’informatique
+            - text: Skype Entreprise
               url: /skypeforbusiness
-        - title: Office Online Server
-          links:
-            - text: Prise en main
+            - text: Office Online Server
               url: /officeonlineserver
     - title: Recommandations et ressources connexes
       items:
