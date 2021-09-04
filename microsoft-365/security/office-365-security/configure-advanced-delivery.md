@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tiers et messages remis à des boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 028735c7d340d63d2f952eabf683e512d261a913
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 8d10c4df273cfcff39bf93fa6532b57c4f8ef640
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576079"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884671"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
@@ -71,11 +71,11 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
   Pour plus d’informations, [voir Autorisations dans le portail Microsoft 365 Defender et](permissions-microsoft-365-security-center.md) [autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > L’ajout d’utilisateurs au rôle Azure Active Directory leur donne les autorisations  requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > L’ajout d’utilisateurs au rôle Azure Active Directory leur donne les autorisations  requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer les boîtes aux lettres SecOps dans la stratégie de remise avancée
 
-1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & Stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
+1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
 
 2. Dans la page **Remise** avancée, vérifiez que l’onglet Boîte aux lettres **SecOps** est sélectionné, puis faites l’une des étapes suivantes :
    - Cliquez sur ![ Icône Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
@@ -95,7 +95,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées sont affich
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer des simulations de hameçonnage tiers dans la stratégie de remise avancée
 
-1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & Stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
+1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
 
 2. Dans la page **Remise avancée,** sélectionnez l’onglet **Simulation** de hameçonnage, puis faites l’une des étapes suivantes :
    - Cliquez sur ![ Icône Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
@@ -108,11 +108,11 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées sont affich
      > [!NOTE]
      > Utilisez le domaine de l’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) utilisée dans la `5321.MailFrom` transmission SMTP du message. 
 
-   - **Adresse IP** d’envoi : développez ce paramètre et entrez au moins une adresse IPv4 valide en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées. Les valeurs valides sont les suivantes :
+   - **Adresse IP** d’envoi : développez ce paramètre et entrez au moins une adresse IPv4 valide en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées. Les valeurs valides sont les suivantes :
      - Adresse IP unique : par exemple, 192.168.1.1.
      - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
      - ADRESSE IP CIDR : par exemple, 192.168.0.1/25.
-   - **URL** de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou détonées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur qui s’affiche sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, voir [la syntaxe d’URL pour la liste d’adresses client autoriser/bloquer](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
+   - URL de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou désaxées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, voir [la syntaxe d’URL pour la liste d’adresses client autoriser/bloquer](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
 
    Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
@@ -161,7 +161,8 @@ Pour créer la stratégie de remplacement SecOps, utilisez la syntaxe suivante :
 New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
 ```
 
-**Remarque**: quelle que soit la valeur de nom que vous spécifiez, le nom de la stratégie sera SecOpsOverridePolicy. Vous pouvez donc également utiliser cette valeur.
+> [!NOTE]
+> Quelle que soit la valeur de nom que vous spécifiez, le nom de la stratégie sera _SecOpsOverridePolicy_. Vous pouvez donc également utiliser cette valeur.
 
 Cet exemple crée la stratégie de boîte aux lettres SecOps.
 
@@ -179,7 +180,8 @@ Cet exemple crée la règle de boîte aux lettres SecOps avec les paramètres sp
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
-**Remarque**: quelle que soit la valeur de nom que vous spécifiez, le nom de la règle sera SecOpsOverrideRule, où est une valeur \<GUID\> GUID unique \<GUID\> (par exemple, 6fed4b63-3563-495d-a481-b24a311f8329).
+> [!NOTE]
+> Quelle que soit la valeur de nom que vous spécifiez, le nom de la règle sera _SecOpsOverrideRule,_ où est une valeur \<GUID\> GUID unique \<GUID\> (par exemple, 6fed4b63-3563-495d-a481-b24a311f8329).
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule).
 
@@ -211,7 +213,7 @@ Get-SecOpsOverrideRule | Format-Table Name,Mode
 
 Après avoir identifié les règles non valides, vous pouvez les supprimer à l’aide de l’cmdlet **Remove-SecOpsOverrideRule,** comme décrit plus loin [dans cet article.](#use-powershell-to-remove-secops-override-rules)
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule)
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule).
 
 ### <a name="use-powershell-to-modify-the-secops-override-policy"></a>Utiliser PowerShell pour modifier la stratégie de remplacement SecOps
 
@@ -221,13 +223,14 @@ Pour modifier la stratégie de remplacement SecOps, utilisez la syntaxe suivante
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
 ```
 
-Cet exemple ajoute secops2@contoso.com la stratégie de remplacement SecOps.
+Cet exemple ajoute la stratégie de remplacement `secops2@contoso.com` SecOps.
 
 ```powershell
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@contoso.com
 ```
 
-**Remarque**: s’il existe une règle de remplacement SecOps associée valide, les adresses de messagerie de la règle sont également mises à jour.
+> [!NOTE]
+> S’il existe une règle de remplacement SecOps valide associée, les adresses de messagerie de la règle sont également mises à jour.
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-SecOpsOverridePolicy](/powershell/module/exchange/set-secopsoverridepolicy).
 
@@ -296,7 +299,7 @@ Cet exemple crée la stratégie de remplacement de simulation de hameçonnage.
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 ```
 
-**Remarque**: quelle que soit la valeur de nom que vous spécifiez, le nom de la stratégie sera PhishSimOverridePolicy. Vous pouvez donc également utiliser cette valeur.
+**Remarque**: quelle que soit la valeur de nom que vous spécifiez, le nom de la stratégie sera _PhishSimOverridePolicy._ Vous pouvez donc également utiliser cette valeur.
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-PhishSimOverridePolicy](/powershell/module/exchange/new-phishsimoverridepolicy).
 
@@ -308,7 +311,7 @@ Utilisez la syntaxe suivante :
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
 ```
 
-Quelle que soit la valeur name que vous spécifiez, le nom de la règle sera PhishSimOverrideRule, où est une valeur \<GUID\> \<GUID\> GUID unique (par exemple, a0eae53e-d755-4a42-9320-b9c6b55c5011).
+Quelle que soit la valeur name que vous spécifiez, le nom de la règle sera _PhishSimOverrideRule,_ où est une valeur \<GUID\> GUID unique \<GUID\> (par exemple, a0eae53e-d755-4a42-9320-b9c6b55c5011).
 
 Une entrée d’adresse IP valide est l’une des valeurs suivantes :
 
@@ -398,7 +401,7 @@ Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-PhishSimOverridePolicy](/powershell/module/exchange/set-phishsimoverridepolicy).
 
-### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Utiliser PowerShell pour modifier des règles de remplacement de simulation de hameçonnage
+### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Utiliser PowerShell pour modifier les règles de remplacement de simulation de hameçonnage
 
 Pour modifier la règle de remplacement de simulation de hameçonnage, utilisez la syntaxe suivante :
 

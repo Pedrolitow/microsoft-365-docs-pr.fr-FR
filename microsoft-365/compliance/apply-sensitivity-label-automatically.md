@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 0b6bb684b2417e2a836db2d1e730f393f8381c64
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: ceea450ca55e46a5a106a5d9fd3ce9420b674d36
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683599"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863904"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -271,12 +271,12 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 6. Pour la page **Choisir les emplacements dans lesquels vous souhaitez appliquer l’étiquette** : sélectionner et spécifier les emplacements pour Exchange, SharePoint et OneDrive. Si vous ne souhaitez pas conserver la valeur par défaut **Tous** pour les emplacements de votre choix, sélectionnez le lien pour choisir des instances spécifiques. Ensuite, sélectionnez **Suivant**.
 
     ![Choisir les emplacements de page assistant d’attribution automatique d’étiquettes.](../media/locations-auto-labeling-wizard.png)
-
-    Pour spécifier des comptes OneDrive individuels : l’URL du compte OneDrive d’un utilisateur est au format suivant : `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
-
-    Par exemple, pour un utilisateur du client contoso dont le nom d’utilisateur est « rsimone » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-    Pour vérifier la syntaxe de votre client et identifier les URL OneDrive des utilisateurs, voir [Obtenir la liste de toutes les URL OneDrive utilisateur de votre organisation](/onedrive/list-onedrive-urls).
+    
+    Pour spécifier des comptes OneDrive individuels, l’URL pour un utilisateur OneDrive est au format suivant. Pour le nom d’utilisateur principal (UPN), tous les caractères spéciaux tels qu’un point, une virgule, un espace et le signe at («@») sont convertis en traits de soulignement (« _ »):`https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
+    
+    Par exemple, pour un utilisateur du client Contoso dont l’UPN est «rsimone@contoso.onmicrosoft.com»: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. Toutefois, des nombres ou des GUID peuvent être ajoutés lorsque des conflits sont détectés.
+    
+    Il est toujours préférable de confirmer l’URL d’un utilisateur pour son compte OneDrive, ce que vous pouvez faire avec le Centre d'administration Microsoft 365 ou PowerShell. Pour plus d’informations, voir [Obtenir la liste de toutes les URL OneDrive utilisateur de votre organisation](/onedrive/list-onedrive-urls).
 
 7. Pour la **configurer les règles courantes ou avancées** page : conservez la valeur par défaut de **règles courantes** pour définir des règles qui identifient le contenu à étiqueter dans tous les emplacements sélectionnés. Si vous avez besoin de règles différentes pour chaque emplacement, sélectionnez **Paramètres avancés**. Ensuite, sélectionnez **Suivant**.
 
