@@ -15,36 +15,36 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 91b482aa189ff7e9d4ff69183718abf354d19d0f
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: 04683635399c2cd1efbf6cceca95fa0cfe1b2775
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823828"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896440"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=22154037)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
 
-Il est essentiel de maintenir la protection antivirus à jour. Il existe deux composants pour la gestion des mises à jour de protection Antivirus Microsoft Defender :
+Il est essentiel de maintenir la protection antivirus à jour. Il existe deux composants pour gérer les mises à jour de protection pour Antivirus Microsoft Defender :
 
 - *l’endroit* à partir de laquelle les mises à jour sont téléchargées ; et
 - *Lorsque les* mises à jour sont téléchargées et appliquées.
 
-Cet article explique comment spécifier l’endroit où les mises à jour doivent être téléchargées (c’est également ce qu’on appelle l’ordre de retour). Voir [Gérer Antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md) mises à jour et appliquer les lignes de base pour une vue d’ensemble sur le fonctionnement des mises à jour et la configuration d’autres aspects des mises à jour (par exemple, la planification des mises à jour).
+Cet article explique comment spécifier à partir de quel endroit les mises à jour doivent être téléchargées (c’est également ce qu’on appelle l’ordre de retour). Voir [Gérer Antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md) mises à jour et appliquer les lignes de base pour une vue d’ensemble sur le fonctionnement des mises à jour et la configuration d’autres aspects des mises à jour (par exemple, la planification des mises à jour).
 
 > [!IMPORTANT]
 > Antivirus Microsoft Defender Les mises à jour des informations de sécurité sont mises à jour via Windows Update et, à compter du lundi 21 octobre 2019, toutes les mises à jour de l’intelligence de sécurité seront signées exclusivement par SHA-2. Vos appareils doivent être mis à jour pour prendre en charge SHA-2 afin de mettre à jour vos informations de sécurité. Pour plus d’informations, voir [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 <a id="fallback-order"></a>
+
 ## <a name="fallback-order"></a>Ordre de retour
 
 En règle générale, vous configurez les points de terminaison pour télécharger individuellement les mises à jour à partir d’une source principale suivie d’autres sources par ordre de priorité, en fonction de la configuration de votre réseau. Les mises à jour sont obtenues à partir de sources dans l’ordre que vous spécifiez. Si une source n’est pas disponible, la source suivante de la liste est utilisée immédiatement.
@@ -59,7 +59,7 @@ Plus les mises à jour sur un point de terminaison sont anciennes, plus le tél�
 Il existe cinq emplacements où vous pouvez spécifier l’emplacement où un point de terminaison doit obtenir des mises à jour :
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Service de mise à jour du serveur](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) (serveur de mise à jour des définitions internes Intune : si vous utilisez SCCM/SUP pour obtenir des mises à jour de définition pour Antivirus Microsoft Defender et que vous devez accéder à Windows Update sur les appareils clients bloqués, vous pouvez passer à la cogestion et décharger la charge de travail de protection des points de terminaison vers Intune. Dans la stratégie anti-programme malveillant configurée dans Intune, il existe une option de « serveur de mise à jour de définition interne » qui peut être configurée pour utiliser WSUS local comme source de mise à jour)
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Partage de fichiers réseau](#unc-share)
 - Mises à jour de l’intelligence de la sécurité pour Antivirus Microsoft Defender et autres logiciels anti-programme malveillant [Microsoft](https://www.microsoft.com/wdsi/defenderupdates) (votre stratégie et votre Registre peuvent être répertoriés en tant qu’intelligence de sécurité CENTRE DE PROTECTION MICROSOFT CONTRE LES PROGRAMMES MALVEILLANTS (MMPC), son ancien nom).)
@@ -83,7 +83,7 @@ Chaque source présente des scénarios classiques qui dépendent de la façon do
 |Microsoft Update|Vous souhaitez que vos points de terminaison se connectent directement à Microsoft Update. Cela peut être utile pour les points de terminaison qui se connectent de manière irrégulière à votre réseau d’entreprise, ou si vous n’utilisez pas Windows Server Update Service pour gérer vos mises à jour.|
 |Partage de fichiers|Vous avez des appareils non connectés à Internet (tels que des VM). Vous pouvez utiliser votre hôte de vm connecté à Internet pour télécharger les mises à jour sur un partage réseau, à partir duquel les VM peuvent obtenir les mises à jour. Consultez le [guide de déploiement VDI](deployment-vdi-microsoft-defender-antivirus.md) pour savoir comment les partages de fichiers peuvent être utilisés dans les environnements d’infrastructure de bureau virtuel (VDI).|
 |Microsoft Endpoint Manager|Vous utilisez Microsoft Endpoint Manager pour mettre à jour vos points de terminaison.|
-|Mises à jour des informations de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft (anciennement appelé MMPC)|[Assurez-vous que vos appareils sont mis à jour pour prendre en charge SHA-2.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) Antivirus Microsoft Defender Les mises à jour de l’intelligence de sécurité sont Windows Update et, à compter du lundi 21 octobre 2019, les mises à jour de l’intelligence de sécurité seront signées exclusivement par SHA-2. <br/>Téléchargez les dernières mises à jour de protection en raison d’une infection récente ou pour mettre en service une image de base forte pour le [déploiement VDI.](deployment-vdi-microsoft-defender-antivirus.md) Cette option doit généralement être utilisée uniquement comme source de retour final, et non comme source principale. Elle sera utilisée uniquement si les mises à jour ne peuvent pas être téléchargées depuis Windows Server Update Service ou Microsoft Update pour un [nombre de jours spécifié.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
+|Mises à jour des informations de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft (anciennement APPELÉ MMPC)|[Assurez-vous que vos appareils sont mis à jour pour prendre en charge SHA-2.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) Antivirus Microsoft Defender Les mises à jour des informations de sécurité sont mises à jour par le biais de Windows Update et, à compter du lundi 21 octobre 2019, les mises à jour de l’intelligence de sécurité seront signées exclusivement par SHA-2. <br/>Téléchargez les dernières mises à jour de protection en raison d’une infection récente ou pour mettre en service une image de base forte pour le [déploiement VDI.](deployment-vdi-microsoft-defender-antivirus.md) Cette option doit généralement être utilisée uniquement comme source de retour final, et non comme source principale. Elle sera utilisée uniquement si les mises à jour ne peuvent pas être téléchargées depuis Windows Server Update Service ou Microsoft Update pour un [nombre de jours spécifié.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
 |
 
 Vous pouvez gérer l’ordre dans lequel les sources de mise à jour sont utilisées avec la stratégie de groupe, Microsoft Endpoint Configuration Manager, les cmdlets PowerShell et WMI.
@@ -167,20 +167,21 @@ Par exemple, supposons que Contoso a embauché Fabrikam pour gérer sa solution 
 > Microsoft ne teste pas les solutions tierces pour la gestion des Antivirus Microsoft Defender.
 
 <a id="unc-share"></a>
-## <a name="create-a-unc-share-for-security-intelligence-updates"></a>Créer un partage UNC pour les mises à jour d’informations de sécurité
+
+## <a name="create-a-unc-share-for-security-intelligence-updates"></a>Créer un partage UNC pour les mises à jour de l’intelligence de la sécurité
 
 Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharger les mises à jour d’informations de sécurité à partir du site MMPC à l’aide d’une tâche programmée.
 
 1. Sur le système sur lequel vous souhaitez mettre en service le partage et télécharger les mises à jour, créez un dossier dans lequel vous enregistrerez le script.
 
-    ```DOS
+    ```console
     Start, CMD (Run as admin)
     MD C:\Tool\PS-Scripts\
     ```
 
 2. Créez le dossier dans lequel vous allez enregistrer les mises à jour de signature.
 
-    ```DOS
+    ```console
     MD C:\Temp\TempSigs\x64
     MD C:\Temp\TempSigs\x86
     ```
@@ -197,12 +198,12 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
 
 8. Utilisez la ligne de commande pour configurer la tâche programmée.
 
-    > [!NOTE]
-    > Il existe deux types de mises à jour : complète et delta.
+   > [!NOTE]
+   > Il existe deux types de mises à jour : complète et delta.
 
    - Pour le delta x64 :
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -212,7 +213,7 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
 
    - Pour x64 complet :
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -222,7 +223,7 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
 
    - Pour le delta x86 :
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -232,7 +233,7 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
 
    - Pour x86 complet :
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -240,8 +241,9 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
        ".\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $false -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1"
        ```
 
-    > [!NOTE]
-    > Lorsque les tâches programmées sont créées, vous pouvez les trouver dans le Programmeur des tâches sous Microsoft\Windows\Windows Defender
+   > [!NOTE]
+   > Lorsque les tâches programmées sont créées, vous pouvez les trouver dans le Programmeur des tâches sous Microsoft\Windows\Windows Defender
+
 9. Exécutez chaque tâche manuellement et vérifiez que vous avez des données (mpam-d.exe, mpam-fe.exe et nis_full.exe) dans les dossiers suivants (vous avez peut-être choisi différents emplacements) :
 
    - C:\Temp\TempSigs\x86
@@ -249,7 +251,7 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
 
    Si la tâche programmée échoue, exécutez les commandes suivantes :
 
-    ```DOS
+    ```console
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $False -destDir C:\Temp\TempSigs\x64"
 
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $True -destDir C:\Temp\TempSigs\x64"
@@ -270,13 +272,13 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
 11. Définissez l’emplacement du partage dans la stratégie sur le partage.
 
     > [!NOTE]
-    > N’ajoutez pas le dossier x64 (ou x86) dans le chemin d’accès. Le processus mpcmdrun.exe l’ajoute automatiquement.
+    > N’ajoutez pas le dossier x64 (ou x86) dans le chemin d’accès. Le mpcmdrun.exe processus de création de projet l’ajoute automatiquement.
 
 ## <a name="related-articles"></a>Articles connexes
 
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les appareils mobiles et les VM](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

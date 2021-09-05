@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 32a423073ec00a9e13e0e3669a9fbd1412b01a50
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 1001081d14440f1e02800f64b891c6a988f1f10a
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862784"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884217"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -165,9 +165,9 @@ Les administrateurs globaux peuvent inverser cette modification pour leur client
 
 2. Sélectionnez **Rapports**. 
   
-3. Sous **Choisir comment afficher les informations utilisateur,** sélectionnez les options de votre choix, puis enregistrez vos modifications.  
+3. Décochez l’instruction **Dans tous les rapports, affichez les noms anonymisés des utilisateurs, des groupes et des sites**, puis enregistrez vos modifications.  
   
-Quelques minutes sont nécessaires pour répercuter ces modifications dans les rapports du tableau de bord Rapports. Ce paramètre s'applique également à l'API Rapports. L’affichage des informations utilisateur identifiables est un événement enregistré dans le journal d’audit du Centre de conformité Microsoft 365.   
+Il faudra quelques minutes pour que ces modifications prennent effet sur les rapports dans le tableau de bord des rapports. Ce paramètre s'applique également aux rapports d'utilisation de Microsoft 365 dans [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) et [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) et [aux rapports d'utilisation dans le centre d'administration Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). L’affichage des informations utilisateur identifiables est un événement enregistré dans le journal d’audit du Centre de conformité Microsoft 365.   
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Qu’advient-il des données d’utilisation lors de la fermeture d’un compte utilisateur ?
 

@@ -1,5 +1,5 @@
 ---
-title: Gérer vos autoriser et bloquer dans la liste d’autoriser/bloquer le client
+title: Gérer vos autoriser et bloquer dans la liste d’autoriser/bloquer des locataires
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à gérer les autoriser et les blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4ff987128047522a5f8cb20a76c81bd950c1b7cf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: aca302aedfaa97b9e2661716d7bc7a6e846fa6fb
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568731"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896488"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -36,7 +36,7 @@ ms.locfileid: "58568731"
 >
 > Certaines des fonctionnalités décrites dans cet article sont en prévisualisation, sont sujettes à modification et ne sont pas disponibles dans toutes les organisations.
 >
-> Si votre organisation ne dispose pas des fonctionnalités d’usurpation d’informations décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresse chez [Manage spoofof senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
+> Si votre organisation ne dispose pas des fonctionnalités d’usurpation d’informations décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresses chez [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous pouvez ne pas être d’accord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message erroné peut être autorisé (faux négatif).
 
@@ -45,7 +45,7 @@ La liste des locataires autoriser/bloquer dans le portail Microsoft 365 Defender
 - URL à bloquer.
 - Fichiers à bloquer.
 - Messages électroniques ou domaines de l’expéditeur à bloquer.
-- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’informations sur l’usurpation d’adresse, l’expéditeur  usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresses.
+- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’informations sur l’usurpation d’adresse, l’expéditeur  usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresse.
 - URL à autoriser.
 - Fichiers à autoriser.
 - Messages électroniques ou domaines de l’expéditeur à autoriser.
@@ -66,7 +66,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 - Les valeurs d’URL disponibles sont décrites dans la [syntaxe d’URL](#url-syntax-for-the-tenant-allowblock-list) de la section Tenant Allow/Block List plus loin dans cet article.
 
-- La liste d’adresses client autorise un maximum de 500 entrées pour les expéditeurs, 500 entrées pour les URL et 500 entrées pour les hâchés de fichiers.
+- La liste d’adresses client autorise un maximum de 500 entrées pour les expéditeurs, 500 entrées pour les URL, 500 entrées pour les hèmes de fichiers et 1 024 entrées pour l’usurpation d’adresse (expéditeurs usurpés).
 
 - Le nombre maximal de caractères pour chaque entrée est :
   - Hèmes de fichier = 64
@@ -81,10 +81,10 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 - Des autorisations doivent vous avoir été attribuées dans Exchange Online pour que vous puissiez effectuer les procédures décrites dans cet article :
   - **Expéditeurs, URL et fichiers**:
     - Pour ajouter et supprimer des valeurs de la liste d’attente des locataires,  vous devez être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Opérateur de sécurité, ou le rôle Gestionnaire **AllowBlockList** du client vous est attribué.
-    - Pour un accès en lecture seule à la liste d’accès  au  client autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
+    - Pour un accès en lecture seule à la liste des locataires  autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
   - **Usurpation :** l’une des combinaisons suivantes :
     - **Gestion de l'organisation**
-    - **Administrateur de sécurité** <u>et</u> **configuration en affichage seul** ou gestion de **l’organisation en affichage seul.**
+    - **Administrateur de la** <u>sécurité et</u> **configuration en affichage seul** ou gestion **de l’organisation en affichage seul.**
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -108,7 +108,7 @@ Pour modifier et supprimer tous les blocs et tous les blocs, voir Modifier et su
 
 ### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome
 
-Pour gérer tous les blocs et les autoriser, voir Ajouter des blocs dans la liste des locataires [autoriser/bloquer,](manage-tenant-blocks.md)Ajouter des autoriser dans la liste des locataires [autoriser/bloquer,](manage-tenant-allows.md)et modifier et supprimer des entrées dans la liste d’inscriptions client [autoriser/bloquer](modify-remove-entries-tenant-allow-block.md).
+Pour gérer tous les blocs et tous les autoriser, voir Ajouter des blocs dans la liste d’attente [du](manage-tenant-blocks.md)client, Ajouter des autoriser dans la liste des locataires [autoriser/bloquer,](manage-tenant-allows.md)et modifier et supprimer des entrées dans la liste d’inscriptions client [autoriser/bloquer](modify-remove-entries-tenant-allow-block.md).
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>Afficher les entrées dans la liste des locataires autoriser/bloquer
 
@@ -142,7 +142,7 @@ Pour gérer tous les blocs et les autoriser, voir Ajouter des blocs dans la list
 
    Vous pouvez cliquer sur un en-tête de colonne pour trier par ordre croissant ou décroit.
 
-   Vous pouvez cliquer sur **Groupe** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
+   Vous pouvez cliquer sur **Grouper** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
 
    - **Expéditeurs**: vous pouvez grouper les résultats par **action.**
    - **URL : vous** pouvez grouper les résultats par **action.**

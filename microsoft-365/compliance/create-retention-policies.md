@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 5ada5a4e4c7bd65ef0be6f273548bebba6e342ea
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 34f4bb10ba79e6521d785df157368cdaae89118a
+ms.sourcegitcommit: bdf506c47bfed0f7e639301a7edd94c4eb150150
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574326"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58869190"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -69,7 +69,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Stratégies** > **Retention**.
 
-2. Sélectionnez **Nouvelle stratégie de rétention** pour démarrer l’assistant de création de stratégie de rétention, puis nommez votre nouvelle stratégie de rétention.
+2. Sélectionnez **nouvelle stratégie de rétention** pour démarrer la configuration Créer une stratégie de rétention et nommez votre nouvelle stratégie de rétention.
 
 3. Pour la page **Choisir les emplacements auxquels appliquer la stratégie**, sélectionnez l’un ou l’ensemble des emplacements pour Teams :
     - **Message de canal Teams** : messages provenant de conversations de canal standard et de réunions de canal standard, mais pas de [canaux privés](/microsoftteams/private-channels) qui ont leur propre emplacement de stratégie.
@@ -81,7 +81,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
     - Pour les messages de conversation de groupe et les messages de canal privé, étant donné qu'une copie des messages est enregistrée dans la boîte aux lettres de chaque utilisateur participant à la conversation, des copies de messages continueront d'être renvoyées dans les résultats d'eDiscovery pour les utilisateurs auxquels la politique n'a pas été attribuée.
     - Pour les utilisateurs qui n’ont pas reçu la stratégie, les messages supprimés sont renvoyés dans les résultats de recherche de leur Teams, mais n’affichent pas le contenu du message suite à la suppression définitive de la stratégie affectée aux utilisateurs.
 
-4. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu.
+4. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu.
 
    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
 
@@ -139,7 +139,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
     - Si vous conservez la valeur par défaut à **Tous**, les utilisateurs invités B2B Azure ne sont pas inclus. 
     - Si vous sélectionnez **Modifier** pour la colonne **Inclus**, vous pouvez appliquer une stratégie de rétention pour les utilisateurs externes si vous connaissez leur compte.
 
-4. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu. 
+4. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu. 
     
     Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
 
@@ -171,7 +171,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Stratégies** > **Retention**.
 
-2. Sélectionnez **Nouvelle stratégie de rétention** pour démarrer l’assistant de création de stratégie de rétention, puis nommez votre nouvelle stratégie de rétention.
+2. Sélectionnez **nouvelle stratégie de rétention** pour démarrer la configuration Créer une stratégie de rétention et nommez votre nouvelle stratégie de rétention.
 
 3. Pour la page **Choisir les emplacements pour appliquer la stratégie**, activez ou désactivez les emplacements, à l’exception des emplacements de Teams. Vous pouvez laisser pour chaque emplacement la valeur par défaut [Appliquer la stratégie à l’intégralité de l’emplacement](#a-policy-that-applies-to-entire-locations) ou [Spécifier des inclusions et des exclusions](#a-policy-with-specific-inclusions-or-exclusions).
 
@@ -181,7 +181,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
     - [Groupes Microsoft 365](#configuration-information-for-microsoft-365-groups)
     - [Skype Entreprise](#configuration-information-for-skype-for-business)
 
-4. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu.
+4. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu.
 
     Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
 
@@ -205,15 +205,15 @@ L’emplacement **Dossiers publics Exchange** applique les paramètres de réten
 
 Lorsque vous choisissez l’emplacement **Sites SharePoint**, la stratégie de rétention peut conserver et supprimer les documents des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. Cette option ne prend pas en charge les sites d’équipe connectés par des groupes Microsoft 365. Utilisez plutôt des emplacements de **groupes Microsoft 365** qui s’appliquent au contenu de la boîte aux lettres, du site et des fichiers du groupe.
 
-Bien que la stratégie de rétention s’applique au niveau du site, seuls les documents ont des paramètres de rétention qui leur sont appliqués. Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention de SharePoint et OneDrive, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
+Bien que la stratégie de rétention s’applique au niveau du site, seuls les documents ont des paramètres de rétention qui leur sont appliqués. Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention de SharePoint et OneDrive, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
-Lorsque vous spécifiez vos emplacements pour les sites SharePoint ou comptes OneDrive, aucune autorisation n’est nécessaire pour accéder au site, et aucune validation n’intervient au moment où vous spécifiez l’URL sur la page **Modifier les emplacements**. Toutefois, les sites SharePoint que vous spécifiez est vérifiée à la fin de l’assistant. Si cette vérification échoue, un message apparaît pour vous informer que la validation de l’URL entrée a échoué, et que l’Assistant ne créera pas la stratégie de rétention tant que la vérification de validation n’aura pas abouti. Si ce message apparaît, revenez à l’assistant pour modifier l’URL ou supprimer le site de la stratégie de rétention.
+Lorsque vous spécifiez vos emplacements pour les sites SharePoint ou comptes OneDrive, aucune autorisation n’est nécessaire pour accéder au site, et aucune validation n’intervient au moment où vous spécifiez l’URL sur la page **Modifier les emplacements**. Toutefois, nous vérifions à la fin de la configuration que les sites SharePoint que vous spécifiez existent. Si cette vérification échoue, un message apparaît pour vous informer que la validation de l’URL entrée a échoué, et que le processus de configuration ne créera pas la stratégie de rétention tant que la vérification de validation n’aura pas abouti. Si ce message apparaît, revenez à la configuration pour modifier l’URL ou supprimer le site de la stratégie de rétention.
 
-Pour spécifier l’inclusion ou l’exclusion de comptes OneDrive individuels, l’URL présente le format suivant : `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+Pour spécifier des comptes OneDrive individuels à inclure ou exclure, l’URL de OneDrive d’un utilisateur est généralement au format suivant. Pour le nom d’utilisateur principal (UPN), tous les caractères spéciaux tels qu’un point, une virgule, un espace et le signe at (« @ ») sont convertis en traits de soulignement (« _ ») : `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
-Par exemple, pour un utilisateur du client contoso dont le nom d’utilisateur est « rsimone » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+Par exemple, pour un utilisateur du client Contoso dont l’UPN est « rsimone@contoso.onmicrosoft.com » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. Toutefois, des nombres ou des GUID peuvent être ajoutes lorsque des conflits sont détectés.
 
-Pour vérifier la syntaxe de votre client et identifier les URL des utilisateurs, voir [Obtenir la liste de toutes les URL OneDrive utilisateur de votre organisation](/onedrive/list-onedrive-urls).
+Il est toujours préférable de confirmer l’URL d’un utilisateur pour son compte OneDrive, ce que vous pouvez faire avec le Centre d'administration Microsoft 365 ou PowerShell. Pour plus d’informations, voir [Obtenir la liste de toutes les URL OneDrive d’utilisateur dans votre organisation.](/onedrive/list-onedrive-urls)
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Informations de configuration pour les Groupes Microsoft 365
 

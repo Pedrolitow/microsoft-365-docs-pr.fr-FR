@@ -321,6 +321,8 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: Conditions et exceptions de la stratégie DLP
               href: dlp-conditions-and-exceptions.md
+            - name: Migrer les politiques de prévention des pertes de données d'Exchange Online vers le centre de conformité (aperçu)
+              href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Référence des conseils de stratégie de prévention contre la perte de données
               href: dlp-policy-tips-reference.md
 - name: Gérer la gouvernance des informations

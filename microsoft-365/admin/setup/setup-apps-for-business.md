@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Apps for business.
-ms.openlocfilehash: 84018b0291b68a65216f1ac4d430cfdb270f8c65e7f35e245bcb695b758855a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2010bc13f28d88d9589a53b3f84dd266549356c1
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821506"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866642"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurer Microsoft 365 Apps for business
 
@@ -93,7 +93,7 @@ Vous avez besoin d’étapes plus détaillées ou vous voulez installer la versi
   
 ## <a name="set-up-mobile"></a>Configurer les applications mobiles
 
-Installez Office sur votre appareil mobile et configurez Outlook pour utiliser votre nouvelle boîte aux lettres Microsoft. Tous les membres de votre équipe doivent effectuer cette étape. Chaque membre peut installer les applications mobiles Office sur un maximum de 5 téléphones et 5 tablettes.
+Installez Office sur votre appareil mobile et configurez Outlook pour utiliser votre nouvelle boîte aux lettres Microsoft. Tous les membres de votre équipe doivent effectuer cette étape. Chaque membre peut installer les applications mobiles Office sur un maximum de 5 téléphones et 5 tablettes. Découvrez les étapes à suivre en fonction de votre périphérique : AndroidiOSWindows Phone
   
 Découvrez les étapes à suivre en fonction de votre appareil : [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f) | [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f) | [Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
