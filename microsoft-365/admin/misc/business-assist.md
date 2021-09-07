@@ -16,18 +16,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez le programme Business Assist et comment il peut aider votre organisation à améliorer l’aide et l’utilisation Microsoft 365 entreprise.
-ms.openlocfilehash: 806f73af526b23e32740e0a1c1a8fe9d3854acd1724a030b31985faa040f2735
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fefefe5dc587674609201be13f19cd6223b80c49
+ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824217"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923917"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Aide pour les entreprises pour Microsoft 365
 
 Obtenez le meilleur de votre abonnement avec les conseils d’experts des petites entreprises.
 
-**Aide aux PME avec Microsoft 365** est conçu pour les entreprises de moins de 5 utilisateurs afin de vous permettre, ainsi qu’à vos employés, d’accéder 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
+**Aide aux PME avec Microsoft 365** est conçu pour permettre aux petites entreprises et à vos employés d’accéder 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ### <a name="watch-business-assist-for-microsoft-365"></a>Regardez : Aide aux PME avec Microsoft 365
 
@@ -55,7 +55,7 @@ Les clients ayant un plan d Microsoft 365 pour les entreprises peuvent utiliser 
 
 Seules les organisations éligibles pourront acheter Business Assist. Business Assist coûte 5 dollars par utilisateur et par mois. Voici comment vous pouvez acheter Business Assist.
 
-1. Dans la vue simplifiée de la Centre d’administration Microsoft 365, sélectionnez Ajouter des produits dans l’onglet **Abonnements.** 
+1. Dans la vue simplifiée de la Centre d'administration Microsoft 365, sélectionnez Ajouter des produits dans l’onglet **Abonnements.** 
 
 2. Dans la page Acheter des services, sélectionnez **détails** **sur Aide aux PME avec Microsoft 365** et terminez votre achat.
 

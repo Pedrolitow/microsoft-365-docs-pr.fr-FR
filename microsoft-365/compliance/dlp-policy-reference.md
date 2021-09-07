@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 51eac7b05edeccece3cf45a8396493d84dc3e11f
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.openlocfilehash: 1227d95469d57921af9f0b97e7adc2a6a49e5573
+ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866666"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923941"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -438,7 +438,7 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-Lorsqu’un utilisateur tente une action sur un élément sensible dans un contexte qui répond aux conditions et aux exceptions d’une règle, vous pouvez lui en faire part par courrier électronique de notification de l’utilisateur et dans des fenêtres contextibles de conseils de stratégie de contexte. Ces notifications sont utiles car elles permettent d’accroître la sensibilisation et d’informer les personnes sur les stratégies DLP de votre organisation. 
+Lorsqu’un utilisateur tente une action sur un élément sensible dans un contexte qui répond aux conditions et aux exceptions d’une règle, vous pouvez lui en faire part par le biais d’e-mails de notification utilisateur et dans des fenêtres contextibles de conseil de stratégie de contexte. Ces notifications sont utiles car elles permettent d’accroître la sensibilisation et d’informer les personnes sur les stratégies DLP de votre organisation. 
 
 Par exemple, le contenu tel qu’un Excel de travail sur un site OneDrive Entreprise qui contient des informations d’identification personnelle (PII) et qui est partagé avec un utilisateur externe.
 
@@ -459,8 +459,9 @@ Les options de configuration des notifications utilisateur et des conseils de st
 
 
 Vous pouvez activer/désactiver les notifications des utilisateurs pour différentes applications Microsoft. Consultez la référence des conseils de stratégie de protection [contre la perte de données.](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
-- Vous pouvez activer/désactiver **Avertir les utilisateurs dans Office 365 service à l’aide d’un conseil de stratégie.
-    - notifications par courrier électronique à l’utilisateur qui a reçu, partagé ou modifié le contenu ou
+
+- Vous pouvez activer/désactiver l’avertir les utilisateurs dans **Office 365 service à** l’aide d’un conseil de stratégie.
+    - notifications par courrier électronique à l’utilisateur qui a envoyé, partagé ou modifié le contenu en dernier ;
     - avertir des personnes spécifiques
 
 vous pouvez également choisir de personnaliser le texte de l’e-mail, l’objet et le texte du conseil de stratégie.
@@ -471,6 +472,41 @@ Si vous avez sélectionné périphériques uniquement, vous obtenez toutes les o
 
 ![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour les appareils](../media/dlp-user-notification-devices.png)  
 
+Vous pouvez personnaliser le titre et le corps du texte à l’aide de ces paramètres. Le corps de texte prend en charge les éléments ci-après :
+
+|nom commun  |paramètre  |exemple
+|---------|---------|---------|
+|nom du fichier     |%%FileName%% | Contoso doc 1 |
+|nom du processus     |%%ProcessName%% | Word |
+|nom de la stratégie     |%%PolicyName%%| Contoso hautement confidentiel |
+|action | %%AppliedActions%% | pasting document content from the clipboard to another app |
+
+**%%AppliedActions%%** remplace ces valeurs dans le corps du message :
+
+
+|nom commun de l’action |valeur remplacée par le paramètre %%AppliedActions%% |
+|---------|---------|
+|copier vers un stockage à supprimer    |*écriture dans un stockage amovible*         |
+|copier sur le partage réseau     |*écriture sur un partage réseau*         |
+|print     |*impression*         |
+|coller à partir du Presse-papiers  |*pasting from the Clipboard*         |
+|copier via bluetooth   |*transfert via le Bluetooth*         |
+|ouvrir avec une application nonallée     |*ouverture avec cette application*         |
+|copier sur un bureau à distance (RDP)     |*transfert vers le Bureau à distance*         |
+|téléchargement vers un site web nonallifié     |*téléchargement vers ce site*         |
+|accès à l’élément via un navigateur non autorisé     |*ouverture avec ce navigateur*         |
+
+Utilisation de ce texte personnalisé
+
+*%%AppliedActions%% File name %%FileName%% via %%ProcessName%% n’est pas autorisé par votre organisation. Cliquez sur « Autoriser » si vous souhaitez contourner la stratégie %%PolicyName%%* 
+
+produit ce texte dans la notification personnalisée :
+
+*le pasting à partir du nom de fichier du Presse-papiers : Contoso doc 1 via WINWORD.EXE n’est pas autorisé par votre organisation. Cliquez sur le bouton Autoriser si vous souhaitez ignorer la stratégie Contoso hautement confidentiel*
+ 
+
+
+
 > [!NOTE]
 > Les notifications utilisateur et les conseils de stratégie ne sont pas disponibles pour l’emplacement local
 
@@ -479,9 +515,6 @@ Si vous avez sélectionné périphériques uniquement, vous obtenez toutes les o
 
 Pour en savoir plus sur la configuration et l’utilisation des conseils de stratégie et de notification utilisateur, notamment sur la personnalisation de la notification et du texte du conseil, voir 
 - [Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies)
-- [Référence de stratégie de protection contre la perte de données](dlp-policy-reference.md#data-loss-prevention-policy-reference)
-
-
   
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
   

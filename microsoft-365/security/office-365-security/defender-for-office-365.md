@@ -19,12 +19,12 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9096af6a99fb04a9f25e9d28f31f8eb522ecf4c
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 8651adb37640d68d0eace7aa23a134ba3b892bbd
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392177"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918254"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
@@ -48,6 +48,7 @@ Microsoft Defender pour Office 365 protège votre organisation contre les menace
 - **[Fonctionnalités automatisées d’enquête et de réponse](office-365-air.md)** : économisez du temps et des efforts pour investiguer et atténuer les menaces.
 
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Guide interactif pour Microsoft Defender pour Office 365
+
 Dans ce guide interactif, vous découvrirez comment protéger votre organisation à l’aide de Microsoft Defender pour Office 365. Vous découvrirez comment Defender pour Office 365 peut vous aider à définir les stratégies de protection, analyser les menaces pour votre organisation et répondre aux attaques.
 
 [Consulter le guide interactif](https://aka.ms/MSDO-IG)
@@ -64,7 +65,7 @@ Si vous débutez sur Microsoft Defender pour Office 365 ou si vous apprenez mieu
   - Liens sûrs
   - Pièces jointes fiables
 - Protégez les charges de travail (par exemple, SharePoint Online, OneDrive et Teams)
-- Protéger avec la purge automatique Zero-Hour
+- Protéger avec une purge automatique zéro heure (PAZH).
 
 Pour savoir comment procéder, [cliquez sur ce lien](protect-against-threats.md).
 

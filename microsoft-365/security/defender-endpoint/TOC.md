@@ -277,6 +277,7 @@
 ##### [Planifier des analyses à l’aide de PowerShell](schedule-antivirus-scans-powershell.md)
 ##### [Planifier des analyses à l’aide de WMI](schedule-antivirus-scans-wmi.md)
 #### [Utilisez une analyse périodique limitée dans Antivirus Microsoft Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [Ajuster la performance de l’Antivirus Microsoft Defender](tune-performance-defender-antivirus.md)
 #### [Compatibilité avec d’autres produits de sécurité](microsoft-defender-antivirus-compatibility.md)
 
 #### [Obtenir votre antivirus et vos mises à jour anti-programmes malveillants](manage-updates-baselines-microsoft-defender-antivirus.md)
