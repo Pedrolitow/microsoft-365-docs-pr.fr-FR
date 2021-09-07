@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Suivez le chemin d’accès d’un message entrant via la pile de filtrage des menaces dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea7fc497f42bff24bbf9b5cb69c03144f64503eb381e530135263497486bcb24
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e5385817610100a7e29baca9b6dd98b89493de35
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805322"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918266"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protection contre les menaces étape par étape dans Microsoft Defender pour Office 365
 
@@ -43,7 +43,7 @@ Les blocs Edge sont conçus pour être automatiques. Dans le cas d’un faux pos
 
 4. **Le filtrage Edge basé sur l’annuaire** bloque les tentatives de recherche des informations d’annuaire d’une organisation via SMTP.
 
-5. **La détection de la backscatter** empêche une organisation d’être attaquer par le biais de rapports de non-remise (NDR) non valides.
+5. **La détection de la rétrodiffusion** empêche l’attaque d’une organisation par le biais de rapports de non-remise (NDR) non valides.
 
 6. **Le filtrage amélioré pour les connecteurs conserve** les informations d’authentification même lorsque le trafic passe par un autre appareil avant d’atteindre Office 365. Cela améliore la précision de la pile de filtrage, y compris le clustering heuristique, la protection contre l’usurpation d’informations et les modèles d’apprentissage automatique anti-hameçonnage, même dans des scénarios de routage complexes ou hybrides.
 
@@ -55,7 +55,7 @@ Les fonctionnalités d’intelligence de l’expéditeur sont essentielles pour 
 
 1. **Les déclencheurs et** alertes de détection de compromission de compte sont déclenchés lorsqu’un compte présente un comportement anormal, cohérent avec la compromission. Dans certains cas, le compte d’utilisateur est bloqué et empêché d’envoyer d’autres messages électroniques jusqu’à ce que le problème soit résolu par l’équipe des opérations de sécurité d’une organisation.
 
-2. **L’authentification** de messagerie implique des méthodes configurées par le client et des méthodes configurées dans le cloud, visant à s’assurer que les expéditeurs sont autorisés et authentifiés. Ces méthodes résistant à l’usurpation.
+2. **L’authentification** de messagerie implique des méthodes configurées par le client et des méthodes configurées dans le cloud, visant à s’assurer que les expéditeurs sont autorisés et authentifiés. Ces méthodes résistant à l’usurpation d’usurpation.
     - **SPF peut** rejeter des messages basés sur des enregistrements TXT DNS répxant les adresses IP et les serveurs autorisés à envoyer des messages au nom de l’organisation.
     - **DKIM** fournit une signature chiffrée qui authentifier l’expéditeur.
     - **DMARC permet** aux administrateurs de marquer SPF et DKIM comme requis dans leur domaine et applique l’alignement entre les résultats de ces deux technologies.
@@ -65,11 +65,11 @@ Les fonctionnalités d’intelligence de l’expéditeur sont essentielles pour 
 
     **La veille contre l’usurpation d’informations intra-organisationnelle** détecte et bloque les tentatives d’usurpation d’informations à partir d’un domaine au sein de l’organisation.
 
-4. **La veille contre** l’usurpation d’usurpation d’un domaine à un autre domaine détecte et bloque les tentatives d’usurpation d’informations à partir d’un domaine extérieur à l’organisation.
+4. **La veille contre l’usurpation inter-domaines** détecte et bloque les tentatives d’usurpation d’informations à partir d’un domaine extérieur à l’organisation.
 
 5. **Le filtrage en bloc** permet aux administrateurs de configurer un niveau de confiance en bloc (BCL) indiquant si le message a été envoyé à partir d’un expéditeur en bloc. Les administrateurs peuvent utiliser le curseur en bloc dans la stratégie anti-courrier indésirable pour déterminer le niveau de courrier en nombre à traiter comme courrier indésirable.
 
-6. **L’intelligence des boîtes** aux lettres apprend les comportements de messagerie standard de l’utilisateur. Il tire parti du graphique de communication d’un utilisateur pour détecter quand un expéditeur semble être une personne avec qui l’utilisateur communique généralement, mais qui est en réalité malveillante. Cette méthode détecte l’emprunt d’identité.
+6. **La veille des boîtes aux lettres** apprend les comportements de messagerie standard de l’utilisateur. Il exploite le graphique de communication d’un utilisateur pour détecter quand un expéditeur semble être une personne avec qui l’utilisateur communique généralement, mais qui est en réalité malveillante. Cette méthode détecte l’emprunt d’identité.
 
 7. **L’emprunt d’identité** d’intelligence de boîte aux lettres active ou désactive les résultats d’emprunt d’identité améliorés en fonction de la carte d’expéditeur individuelle de chaque utilisateur. Lorsqu’elle est activée, cette fonctionnalité permet d’identifier l’emprunt d’identité.
 
@@ -85,25 +85,25 @@ Dans cette phase, la pile de filtrage commence à gérer le contenu spécifique 
 
 1. Les règles de transport **(également** appelées règles de flux de messagerie ou règles de transport Exchange) permettent à un administrateur d’prendre un large éventail d’actions lorsqu’une plage de conditions également étendue est remplie pour un message. Tous les messages qui circulent dans votre organisation sont évalués par rapport aux règles de flux de messagerie/règles de transport activées.
 
-2. **Antivirus Microsoft Defender** et deux moteurs *antivirus* tiers sont utilisés pour détecter tous les programmes malveillants connus dans les pièces jointes.
+2. L’**Antivirus Microsoft Defender** et deux *moteurs antivirus tiers* sont utilisés pour détecter tous les programmes malveillants connus dans les pièces jointes.
 
 3. Les moteurs antivirus sont également utilisés pour taper toutes les pièces  jointes de sorte que le blocage des types puisse bloquer toutes les pièces jointes de types spécifiés par l’administrateur.
 
-4. Chaque fois que Microsoft Defender pour Office 365 détecte une pièce jointe malveillante, le hachage du fichier et un hachage de son contenu actif sont ajoutés à la réputation Exchange Online Protection (EOP). **Le blocage de la** réputation des pièces jointes bloque ce fichier sur tous les Office 365 et sur les points de terminaison, par le biais d’appels cloud MSAV.
+4. Chaque fois que Microsoft Defender pour Office 365 détecte une pièce jointe malveillante, le hachage du fichier et un hachage de son contenu actif sont ajoutés à la réputation Exchange Online Protection (EOP). **Le blocage de la** réputation des pièces jointes bloque ce fichier sur tous les Office 365 et sur les points de terminaison, via les appels cloud MSAV.
 
-5. **Le clustering heuristique** peut déterminer qu’un fichier est suspect en fonction de l’heuristique de remise. Lorsqu’une pièce jointe suspecte est trouvée, l’intégralité de la campagne est suspendue et le fichier est en bac à sable. Si le fichier est jugé malveillant, toute la campagne est bloquée.
+5. La **Mise en cluster heuristique** peut déterminer qu’un fichier est suspect en fonction de l’heuristique de remise. Lorsqu’une pièce jointe suspecte est trouvée, l’intégralité de la campagne est suspendue et le fichier est en bac à sable. Si le fichier est jugé malveillant, toute la campagne est bloquée.
 
-6. **Les modèles d’apprentissage** automatique agissent sur l’en-tête, le contenu du corps et les URL d’un message pour détecter les tentatives de hameçonnage.
+6. Les **Modèles d’apprentissage automatique** agissent sur l’en-tête, le contenu du corps et les URL d’un message pour détecter les tentatives de hameçonnage.
 
 7. Microsoft utilise une détermination de la réputation à partir du bac à sable (sandbox) d’URL, ainsi que de la réputation d’URL provenant de flux tiers dans le blocage de la réputation de **l’URL,** pour bloquer tout message avec une URL malveillante connue.
 
-8. **Les heuristiques de contenu** peuvent détecter des messages suspects en fonction de la structure et de la fréquence des mots dans le corps du message, à l’aide de modèles d’apprentissage automatique.
+8. Les **Heuristiques de contenu** peuvent détecter des messages suspects en fonction de la structure et de la fréquence des mots dans le corps du message, à l’aide de modèles d’apprentissage automatique.
 
 9. **Coffre pièces jointes** toutes les pièces jointes de Defender pour Office 365 clients, à l’aide de l’analyse dynamique pour détecter les menaces jamais vues.
 
-10. **La détonation de** contenu lié traite chaque URL liée à un fichier dans un e-mail comme une pièce jointe, en bac à sable (sandbox) asynchrone au moment de la remise.
+10. La **Détonation de contenu lié** traite chaque URL liée à un fichier dans un e-mail comme une pièce jointe, la mettant en bac à sable asynchrone au moment de la remise.
 
-11. **Le détonation d’URL** se produit lorsque la technologie anti-hameçonnage en amont trouve qu’un message ou une URL est suspect. La détonation d’URL bac à sable (sandbox) permet d’afficher les URL du message au moment de la remise.
+11. La **Détonation d’URL** se produit lorsque la technologie anti-hameçonnage en amont trouve qu’un message ou une URL est suspect. La détonation d’URL bac à sable (sandbox) permet d’afficher les URL du message au moment de la remise.
 
 ## <a name="phase-4---post-delivery-protection"></a>Phase 4 : Protection après remise
 
@@ -111,11 +111,11 @@ La dernière étape a lieu après la remise du courrier ou du fichier, agissant 
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="La phase 4 du filtrage dans Defender pour Office 365 est la protection post-remise.":::
 
-1. **Coffre liens est** Defender pour Office 365 protection au moment du clic. Chaque URL de chaque message est enveloppée pour pointer vers les serveurs de liens Coffre Microsoft. Lorsqu’un utilisateur clique sur une URL, elle est vérifiée par rapport à la dernière réputation, avant que l’utilisateur soit redirigé vers le site cible. L’URL est en bac à sable asynchrone pour mettre à jour sa réputation.
+1. Les **Liens fiables** sont la protection au moment du clic de Defender pour Office 365. Chaque URL de chaque message est enveloppée pour pointer vers les serveurs de liens Coffre Microsoft. Lorsqu’un utilisateur clique sur une URL, elle est vérifiée par rapport à la dernière réputation, avant que l’utilisateur soit redirigé vers le site cible. L’URL est en bac à sable asynchrone pour mettre à jour sa réputation.
 
-2. La purge automatique heure zéro **(ZAP)** pour hameçonnage détecte et s’attaque de manière indisticable aux messages de hameçonnage malveillants qui ont déjà été remis à Exchange Online boîtes aux lettres.
+2. La purge automatique d’heure zéro **(ZAP)** pour hameçonnage détecte et s’attaque aux messages de hameçonnage malveillants qui ont déjà été remis à Exchange Online boîtes aux lettres.
 
-3. **ZaP pour les programmes malveillants** détecte et détecte de manière malveillante les messages de programmes malveillants qui ont déjà été remis à Exchange Online boîtes aux lettres.
+3. La **Purge automatique zéro heure pour les programmes malveillants** détecte et neutralise les messages de programmes malveillants qui ont déjà été remis dans les boîtes aux lettres Exchange Online.
 
 4. **ZaP pour le hameçonnage** détecte et programme d’attaque contre les courriers indésirables malveillants qui ont déjà été remis à Exchange Online boîtes aux lettres malveillantes.
 

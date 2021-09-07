@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Utilisez le nouveau tableau de bord de sécurité pour passer en Office 365 l’état de la protection contre les menaces, et afficher et agir sur les alertes de sécurité.
+description: Utilisez le nouveau tableau de bord de sécurité pour passer en revue Office 365 l’état de la protection contre les menaces, et afficher et agir sur les alertes de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f945a75f8b15b55c999da95410a6078a48c540e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 18cde7063e8a25426b56ee184b71408016a6116d
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563729"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918350"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Tableau de bord de sécurité dans le Centre de sécurité & conformité
 
@@ -63,7 +63,7 @@ Les informations que vous verrez dans le résumé de la gestion des menaces dép
 |Messages de programmes malveillants bloqués<br>Messages de hameçonnage bloqués<br>Messages signalés par les utilisateurs<br><br><br><br>|Messages de programmes malveillants bloqués<br>Messages de hameçonnage bloqués<br>Messages signalés par les utilisateurs<br>Programmes malveillants zero-day bloqués<br>Messages de hameçonnage avancés détectés<br>URL malveillantes bloquées|
 |
 
-Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez être autorisé à afficher Defender pour les Office 365 rapports. Pour en savoir plus, voir [quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)sont nécessaires pour afficher les rapports defender pour Office 365' .
+Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez être autorisé à afficher Defender pour Office 365 rapports. Pour en savoir plus, voir [quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)sont nécessaires pour afficher les rapports defender pour Office 365' .
 
 ## <a name="threat-protection-status"></a>État de la protection contre les menaces
 
@@ -102,7 +102,7 @@ Les mesures sont calculées comme décrit dans le tableau suivant :
 |Messages analysés|Nombre de messages électroniques analysés multiplié par le nombre de destinataires|
 |Menaces arrêtées|Nombre de messages électroniques identifiés comme contenant des programmes malveillants multipliés par le nombre de destinataires|
 |Bloqué par [Defender pour Office 365](defender-for-office-365.md)|Nombre de messages électroniques bloqués par Defender pour Office 365 multiplié par le nombre de destinataires|
-|Supprimé après la remise|Nombre de messages supprimés par purge automatique [de](zero-hour-auto-purge.md) zéro heure multiplié par le nombre de destinataires|
+|Supprimé après la remise|Nombre de messages supprimés par purge automatique d’heure zéro [(ZAP)](zero-hour-auto-purge.md) multiplié par le nombre de destinataires|
 |
 
 ## <a name="malware"></a>Programme malveillant
@@ -133,7 +133,7 @@ En bas du tableau de bord de sécurité se trouve une section **Tendances,** qui
 
 En outre, si l’abonnement de votre organisation inclut [Defender pour Office 365 Plan 2,](office-365-ti.md)vous aurez également un rapport d’alertes de gestion des **menaces récentes** dans cette section qui permet à votre équipe de sécurité d’afficher et d’agir sur les alertes de sécurité prioritaires.
 
-Pour afficher ou accéder au widget e-mail envoyé et reçu, vous devez avoir les autorisations d’afficher Defender pour Office 365 rapports. Pour en savoir plus, voir [quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)sont nécessaires pour afficher les rapports defender pour Office 365' .
+Pour afficher ou accéder au widget Courrier envoyé et reçu, vous devez avoir les autorisations d’afficher Defender pour Office 365 rapports. Pour en savoir plus, voir [quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)sont nécessaires pour afficher les rapports defender pour Office 365' .
 
 Pour afficher ou accéder au widget Alertes de gestion des menaces récentes, vous devez être autorisé à afficher les alertes. Pour en savoir plus, consultez [les autorisations RBAC requises pour afficher les alertes.](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)
 
