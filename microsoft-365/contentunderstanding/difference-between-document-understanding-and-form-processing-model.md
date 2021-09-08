@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez la principale différence entre un modèle de compréhension de document et un modèle de traitement de formulaire.
-ms.openlocfilehash: 4927f29eecc2ee0dfa0e2207531d8f5f5616a68e
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: e9f9c417d8603be0d933607ccf527c6d821bcc72
+ms.sourcegitcommit: 7883556c05ceef228dc329f715e8a6213b40d921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400294"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58931253"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Différence entre la compréhension de document et les modèles de traitement de formulaire 
 
@@ -70,11 +70,11 @@ Actuellement, les modèles de traitement de formulaire ne peuvent être appliqu�
 
 ## <a name="comparison-of-forms-processing-and-document-understanding"></a>Comparaison des traitements de formulaires et la compréhension de documents
 
-Utilisez le tableau suivant pour comprendre quand utiliser le traitement des formulaires et quand utiliser la compréhension de document :
+Utilisez le tableau suivant pour comprendre quand utiliser le traitement des formulaires et quand utiliser la compréhension de document.
 
 | Fonctionnalité | Traitement des formulaires | Compréhension de document |
 | ------- | ------- | ------- |
-| Type de modèle : quand utiliser chaque | Utilisé pour les formats de fichier sémi-structurées, par exemple, pour les FICHIERS PDF pour le contenu de formulaires tels que les factures ou les commandes où la disposition et la mise en forme sont similaires.  | Utilisé pour les formats de fichiers semi-structurés (par exemple, les documents Office où il y a des différences dans la disposition, mais toujours des informations similaires à extraire). |
+| Type de modèle : quand utiliser chacun d’entre eux | Utilisé pour les formats de fichier sémi-structurées, par exemple, pour les FICHIERS PDF pour le contenu de formulaires tels que les factures ou les commandes où la disposition et la mise en forme sont similaires.  | Utilisé pour les formats de fichiers semi-structurés (par exemple, les documents Office où il y a des différences dans la disposition, mais toujours des informations similaires à extraire). |
 | Création de modèles | Modèle créé dans le Générateur d’intelligence artificielle avec un accès transparent à partir d’une bibliothèque de documents SharePoint.| Modèle créé dans SharePoint dans un nouveau site, le centre de contenu. |
 | Type de classification| Le classificateur réglable est utilisé pour donner des indices au système sur les données à extraire.| Classifieur pouvant être formé avec des extracteurs facultatifs utilisant l’apprentissage automatique pour attribuer l’emplacement du document aux données à extraire.|
 | Emplacements | Formé pour une seule bibliothèque de documents.| Peut être appliqué à plusieurs bibliothèques.|
@@ -82,14 +82,13 @@ Utilisez le tableau suivant pour comprendre quand utiliser le traitement des for
 | Intégration aux métadonnées gérées | Non | Oui, par l’extracteur de l’entité de formation qui fait référence à un champ de métadonnées gérées configurée.|
 | Intégration des fonctionnalités de conformité lorsque Microsoft Information Protection est activé | Définir des étiquettes de rétention publiées.<br>Le jeu d’étiquettes de confidentialité est pour bientôt. | Définir des étiquettes de rétention publiées.<br>Définir des étiquettes de confidentialité publiées. |
 | Régions pris en charge| Le traitement des formulaires s’appuie sur la plateforme Power. Pour plus d’informations sur la disponibilité globale de la plateforme Power et du Générateur d’intelligence artificielle, consultez [Disponibilité de la plateforme Power](https://dynamics.microsoft.com/geographic-availability/). | Disponible dans toutes les régions.|
-| Coût transactionnel | Utilise des crédits de générateur d’intelligence artificielle.<br>Les crédits peuvent être achetés par lots de 1M.<br>Plus de 1M de crédits est inclus lorsque vous achetez plus de 300 licences SharePoint Syntex.<br>1M de crédits permet de traiter 2 000 pages de fichier.<br>| N/A |
+| Coût transactionnel | Utilise des crédits de générateur d’intelligence artificielle.<br>Les crédits peuvent être achetés par lots de 1M.<br>Plus de 1M de crédits est inclus lorsque vous achetez plus de 300 licences SharePoint Syntex.<br>1M de crédits permet de traiter un fichier de 2 000 pages.<br>| N/A |
 | Capacité | Utilise l’environnement de plateforme Power par défaut (environnements personnalisés pris en charge par la base de données de dataverse). | Ne comprend pas de restrictions de capacité.|
 | Langues prises en charge| Français <br>Prochainement, en 2021 : Langues de l'alphabet latin | Les modèles fonctionnent sur toutes les langues de l’alphabet latin. En plus de l’anglais : l’allemand, le suédois, le Français, l’espagnol, l’italien et le portugais.|
 
 ## <a name="see-also"></a>Voir aussi
+
 [Formation : Améliorer les performances de votre entreprise avec AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
-
-
 
 [Vue d’ensemble de la compréhension de document](document-understanding-overview.md)
 
