@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Que ce soit l’ajout de nouvelles solutions au centre de conformité, la mise à jour des fonctionnalités existantes en fonction de vos commentaires ou le déploiement d’une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: edcfbb7cbce64cc964d5c32d64c4a176424a0d49
-ms.sourcegitcommit: bdf506c47bfed0f7e639301a7edd94c4eb150150
+ms.openlocfilehash: f05350819c040f2b230bc9be9f963b9bcf057452
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58869178"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928691"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -48,6 +48,23 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 
 ### <a name="communication-compliance"></a>Conformité des communications
 - [La référence des fonctionnalités de](communication-compliance-feature-reference.md) conformité des communications a ajouté une nouvelle prise en charge de la fonctionnalité d’aperçu pour l’analyse des pièces jointes modernes dans Teams conversations et canaux privés.
+
+### <a name="compliance--service-assurance"></a>Certification du service & conformité
+
+- [L’assurance de](https://docs.microsoft.com/en-us/compliance/) service a été mise à jour avec des mises à jour de contenu trimestrielles pour les certifications et les déclarations d’applicabilité :
+  - Architecture
+  - Journalisation d'audit
+  - Chiffrement et gestion des clés
+  - Gestion des identités et des accès
+  - Microsoft 365'accès aux données
+  - Sécurité réseau
+  - Confidentialité
+  - Résilience et continuité
+  - Gestion des risques
+  - Développement et opérations de sécurité
+  - Surveillance de la sécurité
+  - Gestion de fournisseurs
+  - Gestion des vulnérabilités
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 

@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé est réprocessé pour le rendre entièrement utilisable dans une recherche.
-ms.openlocfilehash: a43ccc09fb3c0821ff04d5ec47bf9bfbb1782c1061e51b6b541abc3792e82738
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a43b0cd9b7fcac1745b917dc5a1c198fa2a1e61
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905546"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928703"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 
-Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé ou ayant des erreurs d’indexation est réindexé pour le rendre entièrement utilisable dans la recherche.  Ce processus de réindexation est appelé *indexation avancée.* Il existe plusieurs raisons pour lesquelles le contenu est partiellement indexé ou présente des erreurs d’indexation. Cela inclut les fichiers image ou la présence d’images dans un fichier, les types de fichiers non pris en compte ou les limites d’indexation de taille de fichier. Pour SharePoint fichiers, l’indexation avancée s’exécute uniquement sur les éléments qui sont marqués comme partiellement indexés ou qui ont des erreurs d’indexation. Dans Exchange, les messages électroniques qui ont des pièces jointes d’image ne sont pas marqués comme partiellement indexés ou avec des erreurs d’indexation. Cela signifie que ces fichiers ne seront pas réindexés par le processus d’indexation avancée.
+Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé ou avec des erreurs d’indexation est réindexé pour le rendre entièrement utilisable dans une recherche.  Ce processus de réindexation est appelé *indexation avancée.* Il existe de nombreuses raisons pour lesquelles le contenu est partiellement indexé ou présente des erreurs d’indexation. Cela inclut les fichiers image ou la présence d’images dans un fichier, les types de fichiers non pris en compte ou les limites d’indexation de taille de fichier. Pour SharePoint fichiers, l’indexation avancée s’exécute uniquement sur les éléments qui sont marqués comme partiellement indexés ou qui ont des erreurs d’indexation. Dans Exchange, les messages électroniques qui ont des pièces jointes d’image ne sont pas marqués comme partiellement indexés ou avec des erreurs d’indexation. Cela signifie que ces fichiers ne seront pas réindexés par le processus d’indexation avancée.
 
 Pour en savoir plus sur le traitement de la prise en charge et des éléments partiellement indexés, voir :
 
 - [Types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 
-- [Éléments partiellement indexés dans la recherche de contenu dans Office 365](partially-indexed-items-in-content-search.md)
+- [Éléments partiellement indexés dans eDiscovery](partially-indexed-items-in-content-search.md)
 
 - [Formats de fichier indexés par le service de recherche Exchange](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
@@ -41,7 +41,7 @@ Pour en savoir plus sur le traitement de la prise en charge et des éléments pa
 
 Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du nouveau traitement.  Dans l’affichage Des résultats  d’indexation avancée sous l’onglet Traitement d’un cas, le graphique répertorie le nombre d’éléments ajoutés à *l’index hybride.*  L’index hybride est l’emplacement où Advanced eDiscovery stocke le contenu retraite.
 
-Cette vue inclut également le nombre d’éléments qui nécessitent une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, voir :
+Cette vue inclut également le nombre d’éléments qui nécessitent une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, consultez :
 
 - [Correction d’erreur lors du traitement des données](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 

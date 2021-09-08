@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Découvrez les étapes de résolution des problèmes de base que vous pouvez suivre pour résoudre les problèmes courants dans Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b562e3d22557133630fa8c7c7d343432736b9f4f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d71091b4c3545880b103b8d4a4111b3c63d35506
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569608"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928751"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, résoudre et résoudre les problèmes eDiscovery courants
 
@@ -95,9 +95,9 @@ Lors de l’exécution d’une recherche de découverte électronique qui inclut
 Vous pouvez voir cette erreur lors de l’exécution d’une recherche eDiscovery qui inclut SharePoint Online et OneDrive Entreprise sites. eDiscovery s’appuie sur l’index SPO pour identifier les emplacements de fichiers. Si le fichier a été supprimé mais que l’index SPO n’a pas encore été mis à jour, cette erreur peut se produire.
 
 ### <a name="resolution"></a>Résolution 
+
 Ouvrez l’emplacement SPO et vérifiez que ce fichier n’y est pas.
 La solution suggérée consiste à réindexer manuellement le site ou à attendre la réindexation du site par le processus en arrière-plan automatique.
-
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Erreur/problème : ce résultat de recherche n’a pas été téléchargé car il s’agit d’un dossier ou d’un autre artefact qui ne peut pas être téléchargé seul, tous les éléments du dossier ou de la bibliothèque seront téléchargés.
 
@@ -105,7 +105,7 @@ Vous pouvez voir cette erreur lors de l’exécution d’une recherche eDiscover
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Erreur/problème : la recherche échoue car le destinataire est in trouvé
 
-Une recherche eDiscovery échoue avec l’erreur . `recipient not found` Cette erreur peut se produire si l’objet utilisateur est in Exchange Online Protection (EOP) car l’objet n’a pas été synchronisé.
+Une recherche eDiscovery échoue avec l’erreur « `recipient not found` . Cette erreur peut se produire si l’objet utilisateur est in Exchange Online Protection (EOP) car l’objet n’a pas été synchronisé.
 
 ### <a name="resolution"></a>Résolution
 
@@ -118,6 +118,16 @@ Une recherche eDiscovery échoue avec l’erreur . `recipient not found` Cette e
    ```
 
 3. Il doit y avoir un objet utilisateur de messagerie pour la question de l’utilisateur. Si rien n’est renvoyé, examinez l’objet utilisateur. Contactez le Support Microsoft si l’objet ne peut pas être synchronisé.
+
+## <a name="issueerror-search-fails-with-error-cs007"></a>Problème/erreur : la recherche échoue avec l’erreur CS007
+
+Lorsque vous effectuez une recherche de contenu ou une recherche associée à un cas core eDiscovery, une erreur temporaire se produit et la recherche échoue avec une erreur CS007.
+
+### <a name="resolution"></a>Résolution
+
+1. Mettez à jour la recherche et réduisez la complexité de la requête de recherche.  Par exemple, une recherche par caractères génériques peut renvoyer un trop grand nombre de résultats que le système doit traiter, ce qui provoque une erreur CS007.
+
+2. Réexécutez la recherche mise à jour.
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>Erreur/problème : l’exportation des résultats de recherche est lente
 

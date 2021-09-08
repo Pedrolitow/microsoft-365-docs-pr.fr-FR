@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 37918c9078231b80f1b41ddf063df92f5cd2aace
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f10099fcfe2c8b4701ed5aa0981a3bb84bf5c7c3
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569056"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928739"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -189,7 +189,7 @@ Quand une détection d’exfiltration cumulée est activée pour des stratégies
 
 Si vous souhaitez en savoir plus sur la gestion de l’activité utilisateur, consultez [Cas de gestion des risques internes : activités utilisateur](insider-risk-management-cases.md#user-activity).
 
-## <a name="policy-health-preview"></a>Intégrité de la stratégie (préversion)
+## <a name="policy-health"></a>État de la stratégie
 
 L’état d’intégrité de la stratégie vous fournit des informations sur les problèmes potentiels avec vos stratégies de gestion des risques internes. La colonne État sur l’onglet Stratégie vous avertit sur les problèmes de stratégie qui peuvent empêcher l’activité utilisateur d’être signalée ou la raison pour laquelle le nombre d’alertes sur l’activité est inhabituel. L’état de l’intégrité de la stratégie peut également confirmer que la stratégie est intègre et ne requiert aucune attention ni modification de la configuration.
 

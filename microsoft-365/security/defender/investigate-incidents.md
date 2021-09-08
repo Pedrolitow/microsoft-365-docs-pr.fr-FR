@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8f98a9b942f65a1c60708c4d4bfa756ab7d8fc2a
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: dd0b33ca6c2045a0f709e94e4c59f89b99b58bc7
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863751"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928777"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
@@ -185,9 +185,9 @@ Chacune des entités analysées est marquée avec un verdict (malveillant, suspe
 
 1. Lire les alertes et les nodes sur le graphique au fil du temps pour comprendre la chronologie de l’attaque.
 
-<!--
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.png" alt-text="Example of playing the alerts and nodes on the Graph page":::
---> 
+
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Exemple de lecture des alertes et des Graph page":::
+ 
 
 2. Ouvrez un volet d’entités, ce qui vous permet d’examiner les détails de l’entité et d’agir sur des actions de correction, telles que la suppression d’un fichier ou l’isolation d’un appareil.
  
@@ -197,7 +197,7 @@ Chacune des entités analysées est marquée avec un verdict (malveillant, suspe
  
    :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Exemple de mise en surbrill valeur d’une alerte sur Graph page":::
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Selon les besoins :
 

@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 91743eb7184e340deac15c10412833f2d8060866
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 0390163d1128bcb83fad0ad91c94c1a02d738a4e
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863628"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928715"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adoption SharePoint Syntex Microsoft : commencer
 
@@ -146,4 +146,5 @@ Pour vous préparer à l’SharePoint Syntex, vous devez :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Scénarios et cas d’usage pour SharePoint Syntex](adoption-scenarios.md)
+[Scénarios et cas d’utilisation pour SharePoint Syntex](adoption-scenarios.md) 
+ [Gérer les contrats à l’aide d’Microsoft 365 solution](solution-manage-contracts-in-microsoft-365.md)
