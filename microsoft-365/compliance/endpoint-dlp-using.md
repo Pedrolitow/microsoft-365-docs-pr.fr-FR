@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 26f5723d604cb9f57000f13eb799cd0afba593e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: eabd58f43e1275b3ae7ae3b8563e97299fef1233
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556299"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928763"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -85,9 +85,13 @@ Vous pouvez utiliser la mise en quarantaine automatique pour empêcher une chaî
 
 Empêchez les utilisateurs de transférer des fichiers protégés par vos stratégies via des applications Bluetooth spécifiques.
 
-### <a name="browser-and-domain-restrictions"></a>Restrictions de navigateur et de domaine :
+### <a name="browser-and-domain-restrictions-to-sensitive-data"></a>Restrictions de navigateurs et de domaines vers des données sensibles
 
 Empêchez les fichiers sensibles, qui correspondent à vos stratégies, d’être partagés avec des domaines de service cloud sans restriction.
+
+#### <a name="unallowed-browsers"></a>Navigateurs non autorisés
+
+Vous ajoutez des navigateurs, identifiés par leurs noms de exécutables, qui ne peuvent pas accéder à des fichiers qui remplissent les conditions d’une stratégie DLP appliquée dans laquelle la restriction de chargement vers les services Cloud est définie sur bloquer ou annuler le blocage. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient s’afficher une notification leur demandant d’ouvrir le fichier via le Chromium Edge.
 
 #### <a name="service-domains"></a>Domaines de service
 
@@ -100,17 +104,30 @@ Si le mode liste est défini sur **Autoriser**, les utilisateurs pourront charge
 > [!IMPORTANT]
 > Lorsque le mode de restriction de service est configuré sur « Autoriser », vous devez configurer au moins un domaine de service avant l’application des restrictions.
 
-#### <a name="unallowed-browsers"></a>Navigateurs non autorisés
+### <a name="additional-settings-for-endpoint-dlp"></a>Paramètres supplémentaires pour le point de terminaison DLP
 
-Vous ajoutez des navigateurs, identifiés par leurs noms de exécutables, qui ne peuvent pas accéder à des fichiers qui remplissent les conditions d’une stratégie DLP appliquée dans laquelle la restriction de chargement vers les services Cloud est définie sur bloquer ou annuler le blocage. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient s’afficher une notification leur demandant d’ouvrir le fichier via le Chromium Edge.
+#### <a name="business-justification-in-policy-tips"></a>Justification métier dans les conseils de stratégie
 
-### <a name="business-justification-in-policy-tips"></a>Justification métier dans les conseils de stratégie
+Vous pouvez contrôler l’interaction des utilisateurs avec l’option de justification métier dans les notifications de conseil de stratégie DLP. Cette option s’affiche lorsque les utilisateurs effectuent une activité protégée par le paramètre **Bloquer avec remplacement** dans une stratégie DLP. Il s’agit d’un paramètre global. Vous pouvez choisir l’une des options suivantes :
 
-Vous pouvez contrôler l’interaction des utilisateurs avec l’option de justification métier dans les notifications de conseil de stratégie DLP. Cette option s’affiche lorsque les utilisateurs effectuent une activité protégée par le paramètre **Bloquer avec remplacement** dans une stratégie DLP. Vous pouvez choisir l’une des options suivantes :
+- **Afficher les options par défaut et la zone de texte personnalisée** : par défaut, les utilisateurs peuvent sélectionner une justification intégrée ou entrer leur propre texte.
+- **Afficher uniquement les options par défaut** : les utilisateurs peuvent uniquement sélectionner une justification intégrée.
+- **Afficher uniquement la zone de texte personnalisée** : les utilisateurs peuvent uniquement entrer leur propre justification. Seule la zone de texte apparaît dans la notification de conseil de stratégie de l’utilisateur final. 
 
-- Par défaut, les utilisateurs peuvent sélectionner une justification intégrée ou entrer leur propre texte.
-- Les utilisateurs ne peuvent sélectionner qu’une justification intégrée.
-- Les utilisateurs ne peuvent entrer que leur propre justification.
+##### <a name="customizing-the-options-in-the-drop-down-menu"></a>Personnalisation des options dans le menu déroulant
+
+Vous pouvez créer jusqu’à cinq options personnalisées qui s’affichent lorsque les utilisateurs interagissent avec le conseil de notification de stratégie en sélectionnant le **menu déroulant Personnaliser les options**. 
+
+
+|Option |Texte par défaut  |
+|---------|---------|
+|Option 1    | **Cela fait partie d’un flux de travail métier établi**  ou vous pouvez entrer un texte personnalisé        |
+|Option 2  |**Mon responsable a approuvé cette action** ou vous pouvez entrer un texte personnalisé         |
+|Option 3   |**Accès urgent requis ; Je notifierai mon responsable séparément** ou vous pourrez entrer un texte personnalisé          |
+|Afficher l’option de faux positif     |**Les informations de ces fichiers ne sont pas sensibles** ou vous pouvez entrer un texte personnalisé          |
+|Option 5    |**Autre** ou vous pouvez entrer un texte personnalisé         |
+
+<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### <a name="always-audit-file-activity-for-devices"></a>Toujours auditer l’activité des fichiers pour les appareils
 
@@ -341,6 +358,10 @@ Le message indique :
 8. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Configurez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour afficher l’impact de cette stratégie. Pour plus d’informations, voir [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
 
 9. Consultez l’Explorateur d’activités pour l’événement.
+
+### <a name="scenario-5-configure-a-policy-to-use-the-customized-business-justification"></a>Scénario 5 : Configurer une stratégie pour utiliser la justification métier personnalisée
+
+
 
 ## <a name="see-also"></a>Voir aussi
 
