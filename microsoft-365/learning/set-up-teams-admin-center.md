@@ -16,18 +16,18 @@ ms.collection:
 localization_priority: None
 description: Découvrez comment configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration.
 ms.openlocfilehash: f8e5ac5695fd5d68da22883974ccafc8c6bf0f85
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570712"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58942616"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration
 
 > [!NOTE]
 > Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. 
 
-L’administrateur Teams doit effectuer certaines étapes pour activer Learning (Prévisualisation) pour ses utilisateurs dans le client. Ces étapes varient en fonction de la façon dont le client est activé : prévisualisation [*publique*](set-up-teams-admin-center.md#public-preview-tenants) ou [ *prévisualisation privée* (ou bêta).](set-up-teams-admin-center.md#private-preview-tenants)
+L Teams administrateur doit effectuer certaines étapes pour activer Learning (Prévisualisation) pour ses utilisateurs dans le client. Ces étapes varient en fonction de la façon dont le client est activé : prévisualisation [*publique*](set-up-teams-admin-center.md#public-preview-tenants) ou [ *prévisualisation privée* (ou bêta).](set-up-teams-admin-center.md#private-preview-tenants)
 
 ## <a name="public-preview-tenants"></a>Locataires de la prévisualisation publique
 
@@ -50,7 +50,7 @@ L’administrateur Teams doit effectuer certaines étapes pour activer Learning 
 3. Informez les utilisateurs qui testent Le Learning (prévisualisation) pour basculer leur client de build vers la [prévisualisation](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)publique pour Teams .
 
 > [!IMPORTANT]
-> Pour les locataires de la prévisualisation publique, Le  Learning (prévisualisation) ne sera pas affiché dans les applications gérées dans le Centre d’administration Teams jusqu’à la publication finale du produit. Toutefois, les utilisateurs de la prévisualisation publique activée peuvent trouver Domaine Learning (prévisualisation) dans le magasin d’applications Teams et l’utiliser, une fois que les stratégies et autorisations correctes ont été définies.
+> Pour les locataires de la prévisualisation publique, Le  Learning (prévisualisation) ne sera pas affiché dans les applications gérées dans le Centre d’administration Teams jusqu’à la publication finale du produit. Toutefois, les utilisateurs de la prévisualisation publique activée peuvent trouver La Learning (prévisualisation) dans le magasin d’applications Teams et l’utiliser, une fois que les stratégies et autorisations correctes ont été définies.
 
 ### <a name="user-steps-for-public-preview-tenants"></a>Étapes utilisateur pour les locataires de la prévisualisation publique
 
@@ -72,7 +72,7 @@ Les utilisateurs qui ont été activés pour le test [](/microsoftteams/public-p
 
 Pour les locataires de la prévisualisation privée, aucune stratégie supplémentaire ne doit être activée. Toutefois, Le Learning (prévisualisation) doit être mis à la disposition des utilisateurs de votre organisation.
 
-1. Dans le navigation gauche du centre d’administration Teams, Teams **applications Gérer**  >  **les applications.**
+1. Dans le navigation gauche du centre d Teams d’administration, Teams **applications Gérer**  >  **les applications.**
 
    ![Navigation gauche dans le centre d Teams d’administration affichant Teams applications et la section Gérer les applications.](../media/learning/learning-app-teams-manage-apps-nav.png)
 
@@ -140,4 +140,4 @@ To make Viva Learning (Preview) available for users in your organization, follow
 
 ## <a name="next-step"></a>Étape suivante
 
-[Configurer des sources de contenu d’apprentissage pour Learning (prévisualisation) dans le Centre d’administration Microsoft 365](content-sources-365-admin-center.md)
+[Configurer des sources de contenu d’apprentissage pour Le Learning (prévisualisation) dans le Centre d'administration Microsoft 365](content-sources-365-admin-center.md)

@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Programme d’utilisation à domicile Microsoft forum aux questions (FAQ)
+  title: Programme d'utilisation à domicile Microsoft forum aux questions (FAQ)
   ms.author: cmcatee
   author: cmcatee-MSFT
   manager: scotv
@@ -17,38 +17,30 @@ metadata:
   - AdminSurgePortfolio
   - commerce_subscriptions
   search.appverid: MET150
-  description: Forum aux questions (FAQ) sur les Programme d’utilisation à domicile Microsoft.
+  description: Forum aux questions (FAQ) sur les Programme d'utilisation à domicile Microsoft.
   ms.date: 05/01/2021
-  ms.openlocfilehash: c4345ad61c8a97b953493dcaeffd399ce4cab02c8965934f6ac96ef35a514529
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 114686efb77a88dfad8e729ae5db908f3e8bc629
+  ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53831390"
-title: Programme d’utilisation à domicile Microsoft forum aux questions (FAQ)
-summary: "Les clients avec licence en volume utilisent le Programme d’utilisation à domicile Microsoft (HUP) sur [le Microsoft Store pour Entreprises web.](https://go.microsoft.com/fwlink/?linkid=2139192)\n\nTous les autres clients accèdent à HUP à l’aide de cette étape :\n\n- Dans le Centre d’administration Microsoft, allez à la page Facturation de vos produits, sélectionnez l’onglet Avantages, puis sélectionnez l’onglet  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054) **HUP.** \n"
+  ms.lasthandoff: 09/09/2021
+  ms.locfileid: "58942431"
+title: Programme d'utilisation à domicile Microsoft forum aux questions (FAQ)
+summary: "Les clients avec licence en volume utilisent le Programme d'utilisation à domicile Microsoft (HUP) sur [le Microsoft Store pour Entreprises web.](https://go.microsoft.com/fwlink/?linkid=2139192)\n\nTous les autres clients accèdent à HUP à l’aide de cette étape :\n\n- Dans le Centre d’administration Microsoft, allez à la page Facturation de vos produits, sélectionnez l’onglet Avantages, puis sélectionnez l’onglet  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054) **HUP.** \n"
 sections:
 - name: Ignoré
   questions:
   - question: >
-      Qu’est-ce que Programme d’utilisation à domicile Microsoft ?
+      Qu’est-ce que Programme d'utilisation à domicile Microsoft ?
     answer: >
-      Le Programme d’utilisation à domicile Microsoft (HUP) permet aux employés d’entreprises éligibles d’acheter des produits grand public Microsoft moyenant une remise. Vous pouvez vérifier les remises actuelles pour chaque offre de produit en visitant la page produit du programme d’utilisation [à domicile.](https://www.microsoft.com/home-use-program)
+      Le Programme d'utilisation à domicile Microsoft (HUP) permet aux employés d’entreprises éligibles d’acheter des produits grand public Microsoft moyenant une remise. Vous pouvez vérifier les remises actuelles pour chaque offre de produit en visitant la page produit du programme d’utilisation [à domicile.](https://www.microsoft.com/home-use-program)
   - question: >
       Dans quels marchés le programme d’utilisation à domicile est-il proposé ?
-    answer: >
-      Les remises sur Microsoft 365 Famille abonnements personnels et les abonnements personnels sont proposées aux sociétés éligibles dans le monde entier, à l’exception des exceptions ci-après :
-
-
-      - Macao, Russie et Venezuela : cette offre n’est pas disponible sur ces marchés.
-
-      - Chine et Hong Kong : un abonnement d’un an est disponible sur ces marchés. Pour la Chine, visitez [Microsoft 365 en Chine.](https://www.microsoftstore.com.cn/home-use-program/invite) For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
-
-      - Japon : Microsoft 365 Famille n’est pas disponible.
+    answer: "Les remises sur Microsoft 365 Famille abonnements personnels et les abonnements personnels sont proposées aux sociétés éligibles dans le monde entier, à l’exception des exceptions ci-après :\n\n- Macao, Russie et Venezuela : cette offre n’est pas disponible sur ces marchés.\n- Chine et Hong Kong : un abonnement d’un an est disponible sur ces marchés. Pour la Chine, visitez [Microsoft 365 en Chine.](https://www.microsoftstore.com.cn/home-use-program/invite) For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- Japon : Microsoft 365 Famille n’est pas disponible.\n- Des remises sur certains appareils Surface et accessoires sont proposées aux sociétés éligibles dans certains marchés. \n"
   - question: >
       Comment une organisation peut-elle bénéficier de remises HUP ?
     answer: >
-      Pour que les employés tirez parti de la remise Programme d’utilisation à domicile Microsoft, ils ont besoin d’une adresse de messagerie d’entreprise valide et d’un compte Microsoft actif, et votre organisation doit répondre à l’un des critères suivants :
+      Pour que les employés tirez parti de la remise Programme d'utilisation à domicile Microsoft, ils ont besoin d’une adresse de messagerie d’entreprise valide et d’un compte Microsoft actif, et votre organisation doit répondre à l’un des critères suivants :
 
 
       - Clients qui ont une software assurance active pour les applications Office éligibles
@@ -61,7 +53,7 @@ sections:
   - question: >
       Pourquoi dois-je créer un compte Azure Active Directory (AAD) pour utiliser le programme d’utilisation à domicile/ Microsoft Store pour Entreprises ?
     answer: >
-      Pour mettre à jour et moderniser le programme d’utilisation à domicile sur un plus large éventail d’avantages en licence et en produits, nous devons modifier la façon dont nous respectons le programme HUP. Microsoft Store pour Entreprises est utilisé pour la validation d’éligibilité et pour affecter des avantages HUP, et pour cela, il s’appuie sur AAD pour connecter des informations à partir de VSLC et pour valider les domaines de messagerie des employés de votre organisation. Pour plus d’informations, voir Pour vous inscrire aux comptes Azure AD via [Office 365 entreprise.](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)
+      Pour mettre à jour et moderniser le programme d’utilisation à domicile sur un plus large éventail d’avantages en licence et en produits, nous devons modifier la façon dont nous respectons le programme HUP. Microsoft Store pour Entreprises est utilisé pour la validation d’éligibilité et pour affecter des avantages HUP, et pour cela, il s’appuie sur AAD pour connecter des informations à partir du VLSC et pour valider les domaines de messagerie sur les employés de votre organisation. Pour plus d’informations, voir Pour vous inscrire aux comptes Azure AD via [Office 365 entreprise.](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)
   - question: >
       Comment devenir l’administrateur informatique affecté d’un client géré ?
     answer: >
@@ -73,13 +65,10 @@ sections:
       Quelles ressources sont disponibles pour contribuer à promouvoir les avantages du programme d’utilisation à domicile pour les employés ?
     answer: >
       Utilisez les ressources situées sur [la](https://www.microsoft.com/home-use-program/resources) page d’accueil du programme d’utilisation à domicile pour vous aider à promouvoir le programme pour vos employés. Vous y trouverez des affiches numériques et imprimables, des commentaires à utiliser dans des e-mails et des bulletins d’informations, ainsi que des conseils sur la meilleure façon de promouvoir le programme d’utilisation à domicile.
-
-
-      Vous pouvez accéder aux documents d’intégration dans plusieurs langues sur le site [matériel HUP pour les clients.](https://microsofteur.sharepoint.com/teams/HUPMaterial) Sélectionnez une langue pour commencer à télécharger les fichiers. Le fichier contient des ressources que vous pouvez utiliser pour former vos employés au programme et le promouvoir en interne dans votre entreprise.
   - question: >
-      Quelles sont les étapes à suivre pour qu’un employé éligible achète un Programme d’utilisation à domicile Microsoft?
+      Quelles sont les étapes à suivre pour qu’un employé éligible achète un Programme d'utilisation à domicile Microsoft?
     answer: >
-      1. **S’inscrire** Go to the [Programme d’utilisation à domicile Microsoft page,](https://www.microsoft.com/home-use-program)and select the Prise en main button. Les employés entrent leur adresse de messagerie d’entreprise.
+      1. **S’inscrire** Go to the [Programme d'utilisation à domicile Microsoft page](https://www.microsoft.com/home-use-program), and select the Prise en main button. Les employés entrent leur adresse de messagerie d’entreprise.
 
       2. **Confirmer**  Un courrier électronique est envoyé à la boîte de réception de son adresse de messagerie d’entreprise avec un lien qui authentifiera son éligibilité au programme.
 
@@ -87,11 +76,11 @@ sections:
 
       4. **Shop** L’achat est traitée et terminée dans le Microsoft Store.
   - question: >
-      Si un employé s’Microsoft 365 via le Programme d’utilisation à domicile Microsoft, quel impact cela a-t-il sur l’abonnement Microsoft 365 entreprise et la limite d’appareils de notre organisation ?
+      Si un employé s’Microsoft 365 via le Programme d'utilisation à domicile Microsoft, quel impact cela a-t-il sur l’abonnement Microsoft 365 entreprise et la limite d’appareils de notre organisation ?
     answer: >
       Les installation par le biais du programme d’utilisation à domicile n’ont aucun impact sur l’abonnement Microsoft 365 entreprise de votre organisation. Lorsque les employés activent Microsoft 365 sur leurs appareils personnels, ils utilisent leur compte Microsoft personnel, et non leur compte de travail. Les administrateurs informatiques de votre organisation ne gèrent ni ne gèrent les achats effectués via le programme d’utilisation à domicile.
   - question: >
-      J’ai des difficultés à gérer les avantages de l’Programme d’utilisation à domicile Microsoft de mon organisation. Où puis-je obtenir de l’aide ?
+      J’ai des difficultés à gérer les avantages de l’Programme d'utilisation à domicile Microsoft de mon organisation. Où puis-je obtenir de l’aide ?
     answer: >
       Pour la prise en charge des problèmes lors de la migration à partir du Centre de gestion des licences en volume ou pour accéder Microsoft Store pour Entreprises, consultez la prise en charge du CENTRE de gestion [des licences en volume.](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0)
 
@@ -102,7 +91,7 @@ sections:
     answer: >
       Si l’un de vos employés a tirer parti du programme précédent et recherche des remises sur Visio Professionnel 2019 et/ou Project Professionnel 2019, consultez le processus de validation d’éligibilité et, une fois que vous êtes inscrit avec votre compte Microsoft personnel, consultez d’autres produits **Office** pour acheter ces produits. Si les remises prévues ne sont pas appliquées, contactez l’administrateur du programme d’utilisation à domicile de votre employeur pour obtenir des informations sur ces avantages supplémentaires.
   - question: >
-      Que se passe-t-il si mes employés ont des questions sur ce programme ou ont besoin d’un support pour l’achat et l’installation ?
+      Que se passe-t-il si mes employés ont des questions sur ce programme ou ont besoin d’une assistance pour l’achat et l’installation ?
     answer: >
       Si les employés ont des questions, reportez-les aux ressources suivantes :
 
@@ -121,4 +110,14 @@ sections:
       - Installation de Office
 
       - Se Office
-additionalContent: "\n## <a name=\"related-content\"></a>Contenu connexe\n  [Microsoft 365 abonnements.](https://www.microsoft.com/home-use-program/) (page de liens)\\\n  [Centre de gestion des licences en volume Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (page de liens)\\\n  [Microsoft Store pour Entreprises support de l’administrateur](/microsoft-store/) (page de liens)\\\n  [Microsoft Store pour Entreprises](https://go.microsoft.com/fwlink/?linkid=2139192) (page de liens)\\\n  [Magasin d’employés du programme d’utilisation à domicile](https://www.microsoft.com/home-use-program) (page de liens)\\\n  [Licences Microsoft : vue d’ensemble du programme d’utilisation à domicile](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (page de liens)"
+  - question: >
+      Pourquoi mon entreprise doit-elle participer au programme d’utilisation à domicile ?
+    answer: "Le programme d’utilisation à domicile permet à votre entreprise d’optimiser le retour sur investissement de Microsoft. Les avantages de participer au programme sont les suivants : \n\n- Réduction du besoin de formation aux équipes de l’équipe \n- Réduction des coûts du service d’aide et de formation \n- Permettre aux employés de se familiariser avec les Microsoft 365 à la maison \n- Augmentation des compétences logicielles, ce qui peut augmenter la productivité \n"
+  - question: >
+      En quoi le Programme d'utilisation à domicile Microsoft avantages pour les employés ?
+    answer: >
+      Lorsque les employés achètent Microsoft 365 produits à une remise importante, ils peuvent utiliser les mêmes logiciels à la maison qu’au bureau. Cela permet d’améliorer leur productivité, d’améliorer leurs compétences et d’améliorer la satisfaction de leur travail.
+  - question: >
+      Que se passe-t-il lorsqu’un employé quitte l’entreprise ?
+    answer: "Pour les employés éligibles à l’offre d’abonnement Microsoft 365 et ayant acheté dans le cadre du programme, le prix réduit s’applique tant que l’abonnement de l’employé reste actif, quel que soit son statut d’emploi dans votre organisation. Toutefois, leurs droits d’utilisation commerciale se terminent une fois leur emploi terminé. Pour les employés qui se sont qualifiés pour Office 2019, ils doivent désinstaller les logiciels Office achetés via le programme d’utilisation à domicile une fois que l’employé quitte l’entreprise. \n"
+additionalContent: "\n## <a name=\"related-content\"></a>Contenu associé\n  [FAQ du programme d’utilisation à domicile.](https://www.microsoft.com/home-use-program/frequently-asked-questions) (article)\\\n  [Centre de gestion des licences en volume Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (page de liens)\\\n  [Microsoft Store pour Entreprises support de l’administrateur](/microsoft-store/) (page de liens)\\\n  [Microsoft Store pour Entreprises](https://go.microsoft.com/fwlink/?linkid=2139192) (page de liens)\\\n  [Magasin d’employés du programme d’utilisation à domicile](https://www.microsoft.com/home-use-program) (page de liens)\\\n  [Licences Microsoft : vue d’ensemble du programme d’utilisation à domicile](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (page de liens)"

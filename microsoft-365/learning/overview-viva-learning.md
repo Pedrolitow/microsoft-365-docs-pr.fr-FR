@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: None
 description: Découvrez les Apprentissage Microsoft Viva (prévisualisation) dans votre environnement Microsoft 365 de travail.
 ms.openlocfilehash: e08be19d9277a31401b62be71f1e180859ba29bb
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483438"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58942601"
 ---
 # <a name="overview-of-microsoft-viva-learning-preview"></a>Vue d’Apprentissage Microsoft Viva (prévisualisation) 
 
@@ -53,7 +53,7 @@ Maintenez votre équipe engagée et à jour avec les compétences nécessaires s
 
 ## <a name="admin-roles"></a>Rôles d’administrateurs
 
-Les administrateurs définissent des autorisations et autorisent les sources de contenu d’apprentissage pour Learning (prévisualisation). Pour configurer Learning (prévisualisation), vous aurez besoin d’autorisations comme :
+Les administrateurs définissent des autorisations et autorisent les sources de contenu d’apprentissage pour Learning (prévisualisation). Pour configurer Le Learning (prévisualisation), vous aurez besoin d’autorisations comme :
 
 - Microsoft Teams administrateur
 - Microsoft 365 administrateur général ou administrateur SharePoint général
@@ -61,16 +61,16 @@ Les administrateurs définissent des autorisations et autorisent les sources de 
 
 ### <a name="knowledge-admin"></a>Administrateur d’informations
 
-L’administrateur du savoir est un nouveau rôle Azure Active Directory (Azure AD) dans le Centre d’administration Microsoft 365 qui peut être attribué à tous les membres de l’organisation. Ce rôle gère les sources de contenu d’apprentissage de l’organisation via le Centre d’administration Microsoft 365. Pour plus d’informations, [voir rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
+L’administrateur du savoir est un nouveau rôle Azure Active Directory (Azure AD) dans le Centre d'administration Microsoft 365 qui peut être attribué à tous les membres de l’organisation. Ce rôle gère les sources de contenu d’apprentissage de l’organisation via le Centre d'administration Microsoft 365. Pour plus d’informations, [voir rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
 
-L’administrateur du savoir doit être modérément technique et avoir des informations d’identification SharePoint administrateur. L’administrateur du savoir doit être bien familiar avec l’expérience de l’éducation, de l’apprentissage, de la formation ou de l’expérience des employés au niveau de l’organisation.
+L’administrateur du savoir doit être modérément technique et avoir des informations d’identification SharePoint’administrateur. L’administrateur du savoir doit être bien familiar avec l’expérience de l’éducation, de l’apprentissage, de la formation ou de l’expérience des employés au niveau de l’organisation.
 
 ## <a name="get-started"></a>Prise en main
 
 Lorsque vous êtes prêt à installer et configurer Learning (prévisualisation) dans votre environnement de Microsoft 365 :
 
 - Utilisez le centre Microsoft Teams’administration centrale pour [gérer Learning (Prévisualisation) au sein de votre organisation.](set-up-teams-admin-center.md)
-- Utilisez la Centre d’administration Microsoft 365 pour [configurer des sources d’apprentissage disponibles pour des groupes spécifiques.](content-sources-365-admin-center.md)
+- Utilisez la Centre d'administration Microsoft 365 pour [configurer des sources d’apprentissage disponibles pour des groupes spécifiques.](content-sources-365-admin-center.md)
 - Utilisez le centre SharePoint’administration pour [gérer et stocker votre propre contenu d’apprentissage.](configure-sharepoint-content-source.md)
 
 
