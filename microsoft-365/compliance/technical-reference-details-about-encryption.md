@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Découvrez les différents certificats, technologies et suites de chiffrement TLS (Transport Layer Security) utilisés pour le chiffrement dans Office 365 et Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9d7c9bacc8f4e95ca15c4e420efc9b5db1eb074726496d4278be3e2f87046e52
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2b2257338ab214ccdaa08f1aa8f322aad98d7c8b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795529"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203333"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Détails techniques de référence sur le chiffrement
 
@@ -72,7 +72,7 @@ Depuis juin 2016, Office 365 n’accepte plus de certificat SHA-1 pour les conne
   
 ## <a name="tls-cipher-suites-supported-by-office-365"></a>Suites de chiffrement TLS pris en charge par Office 365
 
-TLS utilise des *suites de chiffrement,* des collections d’algorithmes de chiffrement, pour établir des connexions sécurisées. Office 365 prend en charge les suites de chiffrement répertoriées dans le tableau suivant. Le tableau répertorie les suites de chiffrement par ordre de force, avec la suite de chiffrement la plus forte répertoriée en premier.
+TLS utilise *des suites de chiffrement,* des collections d’algorithmes de chiffrement, pour établir des connexions sécurisées. Office 365 prend en charge les suites de chiffrement répertoriées dans le tableau suivant. Le tableau répertorie les suites de chiffrement par ordre de force, avec la suite de chiffrement la plus forte répertoriée en premier.
 
 Office 365 répond à une demande de connexion en essayant d’abord de se connecter à l’aide de la suite de chiffrement la plus sécurisée. Si la connexion ne fonctionne pas, Office 365 la deuxième suite de chiffrement la plus sécurisée de la liste, et ainsi de suite. Le service continue dans la liste jusqu’à ce que la connexion soit acceptée. De même, lorsque Office 365 demande une connexion, le service de réception choisit si TLS sera utilisé et quelle suite de chiffrement utiliser.
 
@@ -87,7 +87,7 @@ Office 365 répond à une demande de connexion en essayant d’abord de se conne
 | TLS_RSA_WITH_AES_256_GCM_SHA384        <br/> | RSA/112   <br/> | Non   <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS_RSA_WITH_AES_128_GCM_SHA256        <br/> | RSA/112   <br/> | Non   <br/> | AES/256  <br/> | RSA/112  <br/> |
 
-Les suites de chiffrement suivantes ont pris en charge les protocoles TLS 1.0 et 1.1 jusqu’à leur date d’annulation. Pour Cloud de la communauté du secteur public environnements Haut et DoD dont la date de désinsion était le 15 janvier 2020. Pour les environnements Cloud de la communauté du secteur public et internationaux qui datent du 15 octobre 2020.
+Les suites de chiffrement suivantes ont pris en charge les protocoles TLS 1.0 et 1.1 jusqu’à leur date d’annulation. Pour Cloud de la communauté du secteur public environnements Haut et DoD dont la date de désintécation était le 15 janvier 2020. Pour les environnements Cloud de la communauté du secteur public et internationaux qui datent du 15 octobre 2020.
 
 | Protocoles | Nom de suite de chiffrement | Algorithme/force d’échange de clés | Secret avant | Chiffrement/puissance | Algorithme/niveau d’authentification | 
 |:-----|:-----|:-----|:-----|:-----|:-----|

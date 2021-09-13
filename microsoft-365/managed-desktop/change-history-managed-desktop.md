@@ -14,11 +14,11 @@ ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
 ms.openlocfilehash: 6b12451a3c64384d46ad53af14ff17761d515251
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205220"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
@@ -42,7 +42,7 @@ Article nouveau ou modifié | Description
 [Microsoft Manged Desktop et surveillance](service-description/operations-and-monitoring.md) | Article mis à jour
 [Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md) | Article mis à jour
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 Article nouveau ou modifié | Description
 --- | ---
 [Utiliser les rapports](working-with-managed-desktop/reports.md) | Article mis à jour
@@ -52,7 +52,7 @@ Article nouveau ou modifié | Description
 [Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
 [Activer Enterprise State Roaming](get-started/enterprise-state-roaming.md) | Article mis à jour
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 Article nouveau ou modifié | Description
 --- | ---
 [Configurer les appareils Bureau géré Microsoft](get-started/set-up-devices.md) | Article mis à jour
@@ -108,14 +108,14 @@ Article nouveau ou modifié | Description
 [Résoudre les problèmes détectés par l’outil de préparation et d’évaluation](get-ready/readiness-assessment-fix.md) | Article mis à jour
 [Ajuster les paramètres après l’inscription](get-started/conditional-access.md) | Article mis à jour
 [Utiliser les rapports](working-with-managed-desktop/reports.md) | Article mis à jour
-[Installer les Portail d’entreprise Intune sur les appareils](get-started/company-portal.md) | Article mis à jour
+[Installer les Portail d'entreprise Intune sur les appareils](get-started/company-portal.md) | Article mis à jour
 [Configuration requise de l’appareil](service-description/device-requirements.md) | Nouvel article
 [Conformité](intro/compliance.md) | Article mis à jour
 [Comment les mises à jour sont gérées dans Microsoft Manged Desktop](service-description/updates.md) | Article mis à jour
 [Accéder au portail d’administration](get-started/access-admin-portal.md) | Article mis à jour
 
 
-## <a name="december-2020"></a>Décembre 2020
+## <a name="december-2020"></a>Décembre 2020
 Article nouveau ou modifié | Description
 --- | ---
 [Qu’est-ce que le bureau géré Microsoft ?](./intro/index.md) | Article mis à jour
@@ -185,7 +185,7 @@ Article nouveau ou modifié | Description
 --- | ---
 [Microsoft Manged Desktop’application requise](service-description/mmd-app-requirements.md) | Article mis à jour
 [Conformité](intro/compliance.md) | Article mis à jour
-[Prise en main du contrôle d’application](get-started/get-started-app-control.md) | Article mis à jour
+[Prendre en main le contrôle d’application](get-started/get-started-app-control.md) | Article mis à jour
 [Utiliser le contrôle d’application](working-with-managed-desktop/work-with-app-control.md) | Article mis à jour
 [Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
 [Contrôle des applications](service-description/app-control.md) | Article mis à jour
@@ -343,7 +343,7 @@ Article nouveau ou modifié | Description
 ## <a name="april-2019"></a>Avril 2019
 Article nouveau ou modifié | Description
 --- | ---
-[Installer des Portail d’entreprise Intune sur Microsoft Manged Desktop appareils](get-started/company-portal.md) | Nouvel article
+[Installer des Portail d'entreprise Intune sur Microsoft Manged Desktop appareils](get-started/company-portal.md) | Nouvel article
 [Installer Microsoft Project et Microsoft Visio sur Microsoft Manged Desktop appareils](get-started/project-visio.md) | Nouvel article 
 [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](get-ready/authentication.md) | Nouvel article
 [Inscrire des appareils dans Microsoft Manged Desktop](get-started/register-devices-self.md) | Nouvel article
@@ -353,7 +353,7 @@ Article nouveau ou modifié | Description
 ## <a name="march-2019"></a>Mars 2019
 Article nouveau ou modifié | Description
 --- | ---
-[Installer des Portail d’entreprise Intune sur Microsoft Manged Desktop appareils](get-started/company-portal.md) | Nouvel article
+[Installer des Portail d'entreprise Intune sur Microsoft Manged Desktop appareils](get-started/company-portal.md) | Nouvel article
 [Installer Microsoft Project et Microsoft Visio sur Microsoft Manged Desktop appareils](get-started/project-visio.md) | Nouvel article
 
 ## <a name="february-2019"></a>Février 2019

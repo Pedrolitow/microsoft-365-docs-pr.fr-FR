@@ -16,26 +16,27 @@ ms.collection:
 ms.custom:
 - customer-email
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: Informations importantes sur la mise à niveau ou la modification des plans pour les clients ayant Office 365 abonnement E4.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/14/2020
-ms.openlocfilehash: 7f0230272005519528952c88bb8a5426688c386677013aa58a7e46ad3a25ca2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b740c186c2f4b53043ecc8aa1fd5024d646069d0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856066"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193534"
 ---
 # <a name="important-information-for-office-365-e4-customers"></a>Informations importantes pour Office 365 clients E4
 
-Le Office 365 plan E4 a été retiré en 2015. En tant qu’administrateur Microsoft 365, vous recevrez des mises à jour de courrier électronique et verrez des publications dans le centre de messages (partie du [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339)) avec des informations sur la nécessité d’agir.
+Le Office 365 plan E4 a été retiré en 2015. En tant qu’administrateur Microsoft 365, vous recevrez des mises à jour de courrier électronique et verrez des publications dans le centre de <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">messages</a> (partie du Centre d'administration Microsoft 365) avec des informations sur la nécessité d’agir.
 
 ## <a name="compare-your-options-for-upgrading-or-changing-plans"></a>Comparer les options de mise à niveau ou de modification des plans
 
 Vous pouvez choisir de conserver les mêmes fonctionnalités que vous aviez avec E4 ou de tirer parti des nouvelles fonctionnalités de l’audioconférence Microsoft 365 et Microsoft 365'audioconférence. Pour passer à une nouvelle offre, vous avez cinq options.
 
-|  | Option 1 : mise à niveau vers Office 365 E5 | Option 2 : Mise à niveau vers Microsoft 365 E5 | Option 3 : Mise à niveau vers Microsoft 365 E5 sans audioconférence | Option 4 : Changer en Office 365 E3 | Option 5 : Changer en Microsoft 365 E3 |
+|  | Option 1 : Mettre à niveau vers Office 365 E5 | Option 2 : Mise à niveau vers Microsoft 365 E5 | Option 3 : Mise à niveau vers Microsoft 365 E5 sans audioconférence | Option 4 : Changer en Office 365 E3 | Option 5 : Changer en Microsoft 365 E3 |
 |-|-|-|-|-|-|
 | **Obtenir tous les services et fonctionnalités inclus dans votre abonnement Office 365 E4 actuel** | Oui | Oui | Oui | Non | Non |
 | **Téléphone numéros gérés dans Microsoft 365** | Oui | Oui | Non | Non | Non |

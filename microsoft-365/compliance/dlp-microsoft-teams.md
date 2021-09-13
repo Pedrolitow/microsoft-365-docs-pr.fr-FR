@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams conversations et canaux prend en charge les stratégies de protection contre la perte de données (DLP).
-ms.openlocfilehash: 8dbc7ce992840101c464f64bd981c65e7703f8bd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 789571a4123473d3c1708ec4ac16dd7656514d92
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183567"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft Teams
 
@@ -55,17 +55,17 @@ Pour en savoir plus sur les conditions d’octroi de licences, consultez [Consei
 
 La protection DLP est appliquée différemment Teams entités.
 
-|Comptes d’utilisateur/groupes/liste  |Teams Entité |Protection DLP disponible|
+|Lorsque la stratégie est limitée par |ces Teams entités |la protection DLP sera disponible|
 |---------|---------|---------|
 |comptes d’utilisateur individuels     |Conversations 1:1/n         |oui         |
-|     |conversations générales         |Non         |
+|     |conversations générales         |non         |
 |     |canaux privés         |oui         |
 |groupes de sécurité/listes de distribution  | Conversations 1:1/n         |oui         |
-|     |conversations générales         |Non         |
+|     |conversations générales         |non         |
 |     |canaux privés         |oui        |
-|Microsoft 365 groupe    |Conversations 1:1/n          |Non         |
+|Microsoft 365 groupe    |Conversations 1:1/n          |non         |
 |     |conversations générales          |oui        |
-|     |canaux privés|Non| 
+|     |canaux privés|non| 
 
 
 ## <a name="policy-tips-help-educate-users"></a>Les conseils de stratégie aident à former les utilisateurs
@@ -120,7 +120,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 
 2. Cliquez sur **Protection contre la perte de données** > **(Stratégie)**.
 
-3. Sélectionnez une stratégie et regardez les valeurs sous **Emplacements.** Si vous voyez Teams **messages de conversation et de** canal, vous êtes tous ensemble. Si ce n’est pas le cas, cliquez sur **Modifier.**
+3. Sélectionnez une stratégie et regardez les valeurs sous **Emplacements.** Si vous voyez des **Teams de conversation et de canal,** vous êtes tous ensemble. Si ce n’est pas le cas, cliquez sur **Modifier.**
 
     > [!div class="mx-imgBorder"]
     > ![Emplacements pour la stratégie existante.](../media/dlp-teams-editexistingpolicy.png)
@@ -140,7 +140,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 
 7. Cliquez sur **Enregistrer**.
 
-Laissez environ une heure à vos modifications pour qu’elles fonctionnent dans votre centre de données et se synchronisent avec les comptes d’utilisateurs.
+Laissez environ une heure pour que vos modifications fonctionnent dans votre centre de données et se synchronisent avec les comptes d’utilisateurs.
 <!-- again, why user accounts? -->
 
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>Définir une nouvelle stratégie DLP pour Microsoft Teams
@@ -171,7 +171,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
     > [!NOTE]
     > Si vous souhaitez vous assurer que les documents qui contiennent des informations sensibles ne sont pas partagés de manière inappropriée dans Teams, assurez-vous que les **sites SharePoint** et les comptes OneDrive sont **allumés,** ainsi que les messages de conversation et de canal **Teams.**
 
-6. Sous **l’onglet Paramètres** de stratégie, sous Personnaliser le **type** de contenu que vous souhaitez protéger, conservez les paramètres simples par défaut, ou choisissez Utiliser les **paramètres** avancés, puis choisissez **Suivant**. Si vous choisissez des paramètres avancés, vous pouvez créer ou modifier des règles pour votre stratégie. Pour obtenir de l’aide, voir [Paramètres simples et paramètres avancés.](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)
+6. Sous **l’onglet Paramètres** de stratégie, sous Personnaliser le **type** de contenu à protéger, conservez les paramètres simples par défaut, ou choisissez Utiliser les **paramètres** avancés, puis choisissez **Suivant**. Si vous choisissez des paramètres avancés, vous pouvez créer ou modifier des règles pour votre stratégie. Pour obtenir de l’aide, voir [Paramètres simples et paramètres avancés.](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)
 
 7.  Sous **l’onglet Paramètres de stratégie,** sous Que voulez-vous faire si nous détectons des informations sensibles **?**, examinez les paramètres. C’est ici que vous pouvez choisir de conserver les conseils de stratégie par défaut et les [notifications par courrier électronique,](use-notifications-and-policy-tips.md)ou de les personnaliser.
 

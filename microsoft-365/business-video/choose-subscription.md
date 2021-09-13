@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: Découvrez quel abonnement Microsoft 365 est le bon pour votre organisation.
 ms.openlocfilehash: 2c269ff7dc620da0c638f2c82a836ae9b0406780
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533182"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208267"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Choisir un abonnement Microsoft 365 abonnement
 
