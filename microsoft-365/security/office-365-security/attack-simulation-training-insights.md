@@ -13,11 +13,11 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment la formation sur la simulation d’attaques dans le portail Microsoft 365 Defender affecte les employés et peut obtenir des informations sur les résultats de la simulation et de la formation.
 ms.technology: mdo
 ms.openlocfilehash: 725b5c0310d4412f0901526a8111c686f69898a2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576091"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163538"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Découvrez les formations à la simulation d’attaque
 

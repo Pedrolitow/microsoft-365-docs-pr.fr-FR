@@ -46,7 +46,9 @@ additionalContent:
         - title: Connexions Microsoft Viva
           links:
             - text: Prise en main
-              url: /sharepoint/viva-connections
+              url: /sharepoint/viva-connections-overview
+            - text: Extensibilité
+              url: /sharepoint/dev/spfx/viva/overview-viva-connections
             - text: Aide de l’utilisateur final & formation
               url: 'https://support.microsoft.com/en-us/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b'
         - title: Formations Microsoft Viva

@@ -1,6 +1,6 @@
 ---
 title: Accéder au Centre de la communauté Microsoft Defender pour point de terminaison
-description: Accédez au Centre d’Community Microsoft Defender pour endpoint pour partager des expériences, impliquer et en savoir plus sur le produit.
+description: Accédez au Centre d’Community Microsoft Defender pour vous aider à partager des expériences, à vous impliquer et à en savoir plus sur le produit.
 keywords: communauté, centre communautaire, communauté technique, conversation, annonces
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,11 +18,11 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
 ms.openlocfilehash: 116a97946dc4f45be3030954d3d2fb217ac50b9c
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163761"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Accéder au Centre de la communauté Microsoft Defender pour point de terminaison
 
@@ -32,20 +32,20 @@ ms.locfileid: "58509976"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint Community Center est un endroit où les membres de la communauté peuvent découvrir, collaborer et partager des expériences sur le produit.
 
 Vous pouvez explorer plusieurs espaces pour en savoir plus sur des informations spécifiques :
 
-- Annonces
+- Announcements
 - Nouveautés
 - Intelligence des menaces
 
 Vous pouvez accéder au centre de Community de plusieurs façons :
 
 - Dans le Microsoft 365 Defender de navigation du portail, sélectionnez **Community centre.** Un nouvel onglet de navigateur s’ouvre et vous permet d’ouvrir la page d’Community de Defender for Endpoint.
-- Accéder à la communauté via la page De [l’Community Microsoft Defender pour endpoint](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)
+- Accéder à la communauté via la page [Microsoft Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)
 
 Vous pouvez instantanément afficher et lire les conversations qui ont été publiées dans la communauté.
 

@@ -1,6 +1,6 @@
 ---
 title: Erreurs courantes de l’API Microsoft Defender for Endpoint
-description: Liste des erreurs courantes de l’API Microsoft Defender for Endpoint avec descriptions.
+description: Liste des erreurs d’API De Microsoft Defender pour point de terminaison courantes avec descriptions.
 keywords: API, API Microsoft Defender pour point de terminaison, erreurs, résolution des problèmes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,18 +17,18 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 6e5f21a5d0c22ff4149adc0779ce78b31ee12725
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163780"
 ---
 # <a name="common-rest-api-error-codes"></a>Codes d’erreur courants de l’API REST
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-* Les codes d’erreur répertoriés dans le tableau suivant peuvent être renvoyés par une opération sur n’importe quelle API Microsoft Defender pour point de terminaison.
+* Les codes d’erreur répertoriés dans le tableau suivant peuvent être renvoyés par une opération sur l’une des API microsoft Defender pour les points de terminaison.
 * En plus du code d’erreur, chaque réponse d’erreur contient un message d’erreur, qui peut aider à résoudre le problème.
 * Le message est un texte libre qui peut être modifié.
 * En bas de la page, vous trouverez des exemples de réponse.

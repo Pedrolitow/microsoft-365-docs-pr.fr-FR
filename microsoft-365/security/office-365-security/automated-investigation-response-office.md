@@ -23,11 +23,11 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e91f0947f9622c81fb9340c09ea52c85ea567af6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572454"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163548"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’examen et de la réponse automatisés dans Microsoft Defender Office 365
 
@@ -95,7 +95,7 @@ Les fonctionnalités AIR de Microsoft Defender pour Office 365 incluent des rapp
 
 Par exemple, récemment, une organisation a mis en place un moyen pour son équipe des opérations de sécurité d’afficher les alertes de hameçonnage signalées par l’utilisateur qui ont déjà été traitées par AIR. Sa solution intègre des alertes pertinentes au serveur SIEM de l’organisation et à son système de gestion des cas. La solution réduit considérablement le nombre de faux positifs afin que l’équipe des opérations de sécurité puisse concentrer son temps et ses efforts sur les menaces réelles. Pour en savoir plus sur cette solution personnalisée, consultez le blog Tech Community : Améliorer l’efficacité de votre SOC avec Microsoft Defender pour Office 365 et l’API de gestion [O365.](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Commencer à utiliser AIR](office-365-air.md)
 - [Afficher les actions de correction en attente ou terminées](air-review-approve-pending-completed-actions.md)

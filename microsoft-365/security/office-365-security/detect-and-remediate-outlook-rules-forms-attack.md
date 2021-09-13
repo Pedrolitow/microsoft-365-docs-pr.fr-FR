@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les règles de Outlook 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 33fc889b2ddb42dcbbacb1e2b6030e3bf1b409fc07970927e99e06a2747bc21d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0846051b65b34ec26358f87bb4ca49302573e6e7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56800381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163528"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et corriger les Outlook et les attaques par injection de formulaires personnalisés
 
@@ -128,7 +128,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour confirmer l’attaque 
 
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>Étapes de confirmation de l’attaque par règles et formulaires à l’aide de PowerShell
 
-Le moyen le plus simple de vérifier une attaque par des règles ou des formulaires personnalisés consiste à exécuter [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) script PowerShell. Ce script se connecte à chaque boîte aux lettres de votre client et vide toutes les règles et tous les formulaires dans deux .csv fichiers.
+Le moyen le plus simple de vérifier une attaque par des règles ou des formulaires personnalisés consiste à exécuter [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) script PowerShell. Ce script se connecte à chaque boîte aux lettres de votre client et vide toutes les règles et formulaires dans deux .csv.
 
 #### <a name="pre-requisites"></a>Conditions préalables
 
@@ -204,7 +204,7 @@ La meilleure façon de protéger vos comptes d’utilisateur, et en particulier 
 
   - **Voyage impossible**: cette stratégie profile votre environnement et déclenche des alertes lorsque des activités sont détectées par le même utilisateur à différents emplacements dans une période plus courte que le temps de déplacement prévu entre les deux emplacements. Cela peut indiquer qu’un autre utilisateur utilise les mêmes informations d’identification. La détection de ce comportement anormal nécessite une période d’apprentissage initiale de sept jours au cours de laquelle elle apprend le modèle d’activité d’un nouvel utilisateur.
 
-  - Activité d’emprunt d’identité inhabituelle **(par utilisateur)**: cette stratégie profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités usurpées d’identité dans une même session en respectant la ligne de base acquise, ce qui peut indiquer une tentative de violation.
+  - Activité d’emprunt d’identité inhabituelle **(par utilisateur)**: cette stratégie profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités usurpées d’identité dans une seule session par rapport à la ligne de base acquise, ce qui peut indiquer une tentative de violation.
 
 - Utilisez un outil tel que [Office 365 Secure Score](https://securescore.office.com/) pour gérer les configurations et comportements de sécurité des comptes.
 

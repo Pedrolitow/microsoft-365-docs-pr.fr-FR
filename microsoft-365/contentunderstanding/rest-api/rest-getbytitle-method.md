@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Utilisez l’API REST pour recevoir ou mettre à jour les informations sur un modèle de compréhension de document SharePoint Syntex à l’aide du titre du modèle.
-ms.openlocfilehash: 25b98704fec54bee5e3e89f6978e7766ec00dccd83f2542912d44f7a2ec8d45f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c9c9728b7f26883ebe219e723917b14e35b11c0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819654"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163897"
 ---
 # <a name="getbytitle"></a>GetByTitle
 

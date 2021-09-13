@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: ae325d2d6c776c41ef12164ba48da9240e0e628b
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509964"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163740"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>Activer l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données
 
@@ -76,7 +76,7 @@ L’exemple de séquence d’événements suivant explique l’accès conditionn
 1. Un utilisateur ouvre un fichier malveillant et Defender for Endpoint signale l’appareil comme étant à risque élevé.
 2. L’évaluation à risque élevé est transmise à Intune. En parallèle, une enquête automatisée est lancée pour corriger la menace identifiée. Une correction manuelle peut également être effectuée pour corriger la menace identifiée.
 3. En fonction de la stratégie créée dans Intune, l’appareil est marqué comme non conforme. L’évaluation est ensuite communiquée à Azure AD par la stratégie d’accès conditionnel Intune. Dans Azure AD, la stratégie correspondante est appliquée pour bloquer l’accès aux applications.
-4. L’examen et la correction manuels ou automatisés sont terminés et la menace est supprimée. Defender pour le point de terminaison voit qu’il n’y a aucun risque sur l’appareil et Intune évalue que l’appareil est dans un état conforme. Azure AD applique la stratégie qui autorise l’accès aux applications.
+4. L’examen et la correction manuels ou automatisés sont terminés et la menace est supprimée. Defender pour le point de terminaison constate qu’il n’y a aucun risque sur l’appareil et Intune évalue que l’appareil est dans un état conforme. Azure AD applique la stratégie qui autorise l’accès aux applications.
 5. Les utilisateurs peuvent désormais accéder aux applications.
 
 ## <a name="related-topic"></a>Rubrique connexe

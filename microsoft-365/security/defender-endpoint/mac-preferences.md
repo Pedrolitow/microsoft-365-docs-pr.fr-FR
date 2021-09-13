@@ -19,17 +19,17 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: b5db9e2b75e7dcb7cb08ea29f696531935b2f486
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163729"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 
@@ -184,7 +184,7 @@ Le tableau suivant indique les types d’exclusion pris en charge par Defender p
 |Exclusion|Définition|Exemples|
 |---|---|---|
 |Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’appareil|`.test`|
-|File|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
+|Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
 |Folder|Tous les fichiers sous le dossier spécifié (de manière récursive)|`/var/log/` <p> `/var/*/`|
 |Processus|Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
@@ -319,7 +319,7 @@ Spécifiez les types de menaces.
 |**Valeurs possibles**|potentially_unwanted_application <p> archive_bomb|
 |||
 
-##### <a name="action-to-take"></a>Mesures à prendre
+##### <a name="action-to-take"></a>Action
 
 Spécifiez l’action à prendre lorsqu’une menace du type spécifié dans la section précédente est détectée. Choisissez l'une des options suivantes :
 

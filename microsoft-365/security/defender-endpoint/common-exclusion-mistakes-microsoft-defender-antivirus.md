@@ -15,13 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 06/15/2021
-ms.openlocfilehash: 5fc496fd0d40d5dd172fb45e8ce6b8d23ebab6da
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.date: 08/31/2021
+ms.openlocfilehash: 96589d4ed30dc635588cbc66a656d53836324d2e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509988"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163769"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Erreurs courantes à éviter lors de la définition d’exclusions
 
@@ -40,7 +40,7 @@ Ne définissez pas d’exclusions pour les emplacements de dossiers, les extensi
 
 ### <a name="folder-locations"></a>Emplacements des dossiers
 
-En règle générale, ne définissez pas d’exclusions pour les emplacements de dossiers suivants :
+En règle générale, ne définissez pas d’exclusions pour les emplacements de dossier suivants :
 
 `%systemdrive%`
 
@@ -96,6 +96,17 @@ En règle générale, ne définissez pas d’exclusions pour les emplacements de
 `C:\Windows\Temp\`
 
 `C:\Windows\Temp\*`
+
+#### <a name="linux-and-macos-platforms"></a>Plateformes Linux et macOS
+
+`/`
+
+`/bin`
+
+`/sbin`
+
+`/usr/lib`
+
 
 ### <a name="file-extensions"></a>Extensions de fichier
 
@@ -253,14 +264,26 @@ En règle générale, ne définissez pas d’exclusions pour les processus suiva
 
 `windbg.exe`
 
+#### <a name="linux-and-macos-platforms"></a>Plateformes Linux et macOS
+
+`bash`
+
+`sh`
+
+`python` et `python3`
+
+`java`
+
+`zsh`
+
 > [!NOTE]
-> Vous pouvez choisir d’exclure les types de fichiers, tels que , ou si votre environnement dispose d’un logiciel moderne à jour avec une stratégie de mise à jour stricte pour gérer les `.gif` `.jpg` `.jpeg` `.png` vulnérabilités.
+> Vous pouvez choisir d’exclure des types de fichiers, tels que , ou si votre environnement dispose d’un logiciel moderne à jour avec une stratégie de mise à jour stricte pour gérer les `.gif` `.jpg` `.jpeg` `.png` vulnérabilités.
 
 ## <a name="using-just-the-file-name-in-the-exclusion-list"></a>Utilisation du nom de fichier dans la liste d’exclusions
 
-Un programme malveillant peut porter le même nom que celui du fichier que vous faites confiance et que vous souhaitez exclure de l’analyse. Par conséquent, pour éviter d’exclure un programme malveillant potentiel de l’analyse, utilisez un chemin d’accès complet au fichier que vous souhaitez exclure au lieu d’utiliser uniquement le nom du fichier. Par exemple, si vous souhaitez exclure de l’analyse, utilisez le chemin d’accès complet `Filename.exe` au fichier, tel que `C:\program files\contoso\Filename.exe` .
+Les programmes malveillants peuvent porter le même nom que celui d’un fichier que vous faites confiance et que vous souhaitez exclure de l’analyse. Par conséquent, pour éviter d’exclure les programmes malveillants potentiels de l’analyse, utilisez un chemin d’accès complet au fichier que vous souhaitez exclure au lieu d’utiliser uniquement le nom du fichier. Par exemple, si vous souhaitez exclure de l’analyse, utilisez le chemin d’accès complet `Filename.exe` au fichier, tel que `C:\program files\contoso\Filename.exe` .
 
-## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>Utilisation d’une seule liste d’exclusions pour plusieurs charges de travail de serveur
+## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>Utilisation d’une seule liste d’exclusions pour plusieurs charges de travail serveur
 
 N’utilisez pas une seule liste d’exclusions pour définir des exclusions pour plusieurs charges de travail de serveur. Fractionner les exclusions pour différentes charges de travail d’application ou de service en plusieurs listes d’exclusions. Par exemple, la liste d’exclusions de votre charge de travail de serveur IIS doit être différente de la liste d’exclusions pour SQL Server charge de travail.
 
@@ -268,4 +291,4 @@ N’utilisez pas une seule liste d’exclusions pour définir des exclusions pou
 
 Antivirus Microsoft Defender Le service s’exécute dans le contexte système à l’aide du compte LocalSystem, ce qui signifie qu’il obtient des informations à partir de la variable d’environnement système, et non de la variable d’environnement utilisateur. L’utilisation de variables d’environnement comme caractère générique dans les listes d’exclusions est limitée aux variables système et à celles applicables aux processus en cours d’exécution en tant que compte NT AUTHORITY\SYSTEM. Par conséquent, n’utilisez pas de variables d’environnement utilisateur comme caractères génériques lors de l Antivirus Microsoft Defender exclusions de dossiers et de processus. Consultez le tableau sous [Variables d’environnement système](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) pour obtenir la liste complète des variables d’environnement système.
 
-Pour plus d’informations sur l’utilisation des caractères génériques dans les listes d’exclusion, voir Utiliser des [caractères génériques](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) dans les listes d’exclusions et le chemin d’accès au dossier ou les listes d’exclusions.
+Pour plus d’informations sur l’utilisation des caractères génériques dans les listes d’exclusions, voir Utiliser des [caractères génériques](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) dans les listes d’exclusions et le chemin d’accès au dossier ou les listes d’exclusions.

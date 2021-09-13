@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Utilisez l’API REST pour obtenir des informations sur une bibliothèque et un modèle dans laquelle elle est appliquée.
-ms.openlocfilehash: 4c800f20a7dc9d8e188cf83fd1715d2ae3aa72c1aeea530e788386bdcc40a02e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 29240a6210e2079a082be6c3a07aae890d932719
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795277"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163884"
 ---
 # <a name="get-model-and-library-information"></a>Obtenir des informations sur un modèle et une bibliothèque
 

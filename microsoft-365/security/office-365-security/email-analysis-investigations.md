@@ -22,11 +22,11 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ad390c00bdbef33f52603c9d4a63884d3b91de49
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918321"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162462"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Analyse du courrier électronique dans les enquêtes pour Microsoft Defender pour Office 365
 

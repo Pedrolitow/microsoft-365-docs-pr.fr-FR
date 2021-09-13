@@ -16,11 +16,11 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.openlocfilehash: f940d71b46f3010cded48cfe4c3b9873ea518a0b
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163785"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer les Antivirus Microsoft Defender l’outil mpcmdrun.exe ligne de commande
 
@@ -39,7 +39,7 @@ L’utilitaire MpCmdRun utilise la syntaxe suivante :
 MpCmdRun.exe [command] [-options]
 ```
 
-Voici un exemple :
+Voici un exemple :
 
 ```console
 MpCmdRun.exe -Scan -ScanType 2

@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: Déployez Microsoft 365 fonctionnalités de sécurité et de conformité et protégez vos informations personnelles.
 ms.openlocfilehash: 084faec3b9c2d7bc9c7da17ee69f7821dd79a754
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575887"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164588"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 

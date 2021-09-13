@@ -18,11 +18,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ae46d8540ec0d2bd9ae8d906a9a44fd0e397ee2f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162450"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
@@ -149,7 +149,7 @@ Le fait de **cliquer sur la déstonation atp** dans ce graphique entraîne une v
 
 ![Explorateur filtré pour afficher uniquement Defender pour les Office 365 de détonation.](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-Dans cette vue, nous regardons maintenant les données pour les fichiers qui ont été désaxtérées par [Coffre pièces jointes](safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques dont les pièces jointes ont été détectées Coffre pièces jointes.
+Dans cette vue, nous regardons maintenant les données pour les fichiers qui ont été désaxtérées par [Coffre pièces jointes](safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques dont des pièces jointes ont été détectées Coffre pièces jointes.
 
 ![Détails spécifiques sur les messages électroniques avec pièces jointes détectées.](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 
