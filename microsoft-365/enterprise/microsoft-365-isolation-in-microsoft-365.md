@@ -17,11 +17,11 @@ f1.keywords:
 - NOCSH
 description: 'Résumé : Explication de l’isolation et du contrôle d’accès au sein des différentes applications de Microsoft 365.'
 ms.openlocfilehash: 4fceb389f3469bbb39d35bd6e1185c0725bf23fd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209270"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Isolation et contrôle d’accès dans Microsoft 365
 

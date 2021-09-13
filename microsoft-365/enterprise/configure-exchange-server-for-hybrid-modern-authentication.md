@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment configurer un environnement Exchange Server local pour utiliser l’authentification moderne hybride (HMA), ce qui vous offre une authentification et une autorisation utilisateur plus sécurisées.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28dd2443ccf55075a1c451b15c19d3fd6804bc82588e4c21dd52e63250f71b08
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a7a24e2c9d1e3d2fd2d1d83d9743b6f4e19e9701
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850146"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209372"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
 
@@ -190,6 +190,6 @@ Si vous êtes un client local utilisant un serveur Exchange sur TCP 443, ignorez
 
 L’application Outlook pour iOS et Android est conçue comme la meilleure façon de découvrir les Microsoft 365 ou les Office 365 sur votre appareil mobile à l’aide de services Microsoft pour vous aider à rechercher, planifier et hiérarchiser votre vie quotidienne et votre travail. Pour plus d’informations, reportez-vous à l’utilisation de l’authentification moderne [hybride Outlook pour iOS et Android.](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 [Configuration requise pour l’authentification moderne pour la transition de Office 365/ITAR vers vNext](/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

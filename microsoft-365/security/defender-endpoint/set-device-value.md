@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fc57fd850e0cbb6165e624127462b167b53dec65e9151d6b7bbe930160bc0787
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 480ac20e3fe6ac9b3b8c7aa66b759b361a96a595
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817683"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208981"
 ---
 # <a name="set-device-value-api"></a>API Définir la valeur de l’appareil
 
@@ -74,14 +74,14 @@ POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDevice
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 DeviceValue|Énum|Valeur de l’appareil. Les valeurs autorisées sont : « Normal » (normal), « Low » (faible) et « High » (élevé). **Obligatoire**.
 

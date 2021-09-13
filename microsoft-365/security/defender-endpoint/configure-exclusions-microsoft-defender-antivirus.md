@@ -16,11 +16,11 @@ ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.openlocfilehash: a6df318ccf484d750ae8010f34b5c545b115cde0
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532978"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222601"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurer et valider des exclusions pour Antivirus Microsoft Defender analyses
 
@@ -53,7 +53,7 @@ Gardez les points suivants à l’esprit lorsque vous définissez des exclusions
 
 - Dans l’idéal, évitez de définir des exclusions afin d’être proactives. Par exemple, n’excluez pas quelque chose simplement parce que vous pensez qu’il pourrait s’agir d’un problème à l’avenir. Utilisez des exclusions uniquement pour des problèmes spécifiques, tels que ceux relatifs aux performances ou à la compatibilité des applications que les exclusions peuvent atténuer.
 
-- Examiner et auditer les modifications apportées à votre liste d’exclusions. Votre équipe de sécurité doit conserver le contexte sur la raison pour laquelle une certaine exclusion a été ajoutée afin d’éviter toute confusion ultérieurement. Votre équipe de sécurité doit être en mesure de fournir des réponses spécifiques aux questions sur la raison pour laquelle des exclusions existent.
+- Examiner et auditer les modifications apportées à votre liste d’exclusions. Votre équipe de sécurité doit conserver le contexte sur la raison pour laquelle une certaine exclusion a été ajoutée afin d’éviter toute confusion ultérieurement. Votre équipe de sécurité doit être en mesure de fournir des réponses spécifiques aux questions sur la raison de l’existence d’exclusions.
 
 ## <a name="see-also"></a>Voir aussi
 

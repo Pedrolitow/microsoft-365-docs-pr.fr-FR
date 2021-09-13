@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7f8a25f73726eaa7f8d10c1e6b9719d38ea42dcfb5d457da2d9282d8e266e585
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e207978dbb65863764c66c5afc5c467552100461
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208994"
 ---
 # <a name="advanced-hunting-using-powershell"></a>Repérage avancé à l’aide de PowerShell
 

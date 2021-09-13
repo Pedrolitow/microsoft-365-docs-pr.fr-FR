@@ -1,7 +1,7 @@
 ---
 title: Requêtes OData avec Microsoft Defender pour le point de terminaison
 ms.reviewer: ''
-description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour endpoint.
+description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour Endpoint.
 keywords: api, api pris en charge, odata, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e88371ed141b54d873193df075313d2aed9786385ac4fbc07d5fe579d7bff59f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 31fe51aac9262e5d3bcfa9d6a9c757ddeb30f42a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209125"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour le point de terminaison
 
@@ -44,7 +44,7 @@ Toutes les propriétés ne sont pas filtrables.
 ## <a name="properties-that-support-filter"></a>Propriétés qui la prise en charge $filter
 
 - [Alerte](alerts.md): `alertCreationTime` , , , et `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
-- [Ordinateur](machine.md): `ComputerDnsName` , , et `LastSeen` `HealthStatus` `OsPlatform` `RiskScore` `RbacGroupId` .
+- [Machine](machine.md): `ComputerDnsName` , , , et `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
 - [MachineAction](machineaction.md): `Status` , `MachineId` et `Type` `Requestor` `CreationDateTimeUtc` .
 - [Indicateur](ti-indicator.md): `indicatorValue` , , et `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
 

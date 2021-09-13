@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en vous assurant que les deux abonnements sont répertoriés et actifs.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: d8a084111ce2e0869332cdfa7fe438c314295d7a9044a0c715d065ff8c49544d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5db328cb1545279faa1332c144c7a8b60a50fa05
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802585"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209437"
 ---
 # <a name="change-plans-manually"></a>Modifier manuellement les plans
 

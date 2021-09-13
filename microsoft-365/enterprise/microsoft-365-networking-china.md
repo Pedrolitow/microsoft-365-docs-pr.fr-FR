@@ -17,11 +17,11 @@ f1.keywords:
 - NOCSH
 description: Cet article fournit des conseils pour optimiser les performances réseau pour les utilisateurs chinois Microsoft 365 clients.
 ms.openlocfilehash: 9660270dbe73e9cbdff0b1e3796224b36319956b
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209245"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 optimisation des performances globales des clients pour les utilisateurs chinois
 

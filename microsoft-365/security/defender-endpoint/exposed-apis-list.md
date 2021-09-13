@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d31cb5d11d6b998a8363c8a8056135155bbc2fa6da20c39d7583207d8de0716
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8154c144e82a38665f18ec35fdc8d49247ad75ca
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209131"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API prises en charge Microsoft Defender pour point de terminaison
 
@@ -36,7 +36,7 @@ ms.locfileid: "53869414"
 
 ### <a name="endpoint-uri"></a>URI de point de terminaison
 
-> L’URI de base de service est : [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
+> L’URI de base du service est : [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
 >
 > Les requêtes basées sur OData ont le préfixe « /api ». Par exemple, pour obtenir des alertes, vous pouvez envoyer une requête GET à [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
 
@@ -64,8 +64,8 @@ Rubrique | Description
 [Méthodes et propriétés de l’alerte](alerts.md) | Exécutez des appels d’API tels \- que obtenir des alertes, créer une alerte, mettre à jour une alerte, etc.
 [Exporter les méthodes et propriétés d’évaluation par appareil](get-assessment-methods-properties.md) | Exécutez des appels d’API pour collecter des évaluations des vulnérabilités par appareil, telles que : exporter l’évaluation de la configuration sécurisée, exporter l’évaluation de l’inventaire logiciel, exporter l’évaluation des vulnérabilités logicielles et exporter delta l’évaluation des vulnérabilités \- logicielles.
 [Méthodes et propriétés d’investigation automatisée](investigation.md) | Exécutez des appels d’API tels \- que obtenir la collection d’examens.
-[Obtenir des alertes liées au domaine](get-domain-related-alerts.md) | Exécutez des appels d’API comme obtenir des appareils liés \- au domaine, des statistiques de domaine, etc.
-[Soumettre des méthodes et propriétés](files.md) | Exécutez des appels d’API tels que obtenir des informations sur les fichiers, des alertes liées aux fichiers, des \- périphériques liés aux fichiers et des statistiques sur les fichiers.
+[Obtenir des alertes liées au domaine](get-domain-related-alerts.md) | Exécutez des appels d’API tels \- que l’get domain-related devices, domain statistics and more.
+[Soumettre des méthodes et propriétés](files.md) | Exécutez des appels d’API tels que obtenir des informations sur les fichiers, des alertes liées aux fichiers, des périphériques liés \- aux fichiers et des statistiques sur les fichiers.
 [Méthodes et propriétés des indicateurs](ti-indicator.md) | Exécutez un appel d’API tel que obtenir des indicateurs, créer un \- indicateur et supprimer des indicateurs.
 [Obtenir des alertes liées à l’IP](get-ip-related-alerts.md) | Exécutez des appels d’API tels \- que l’get IP-related alerts and get IP statistics.
 [Méthodes et propriétés de l’ordinateur](machine.md) | Exécutez des appels d’API tels que obtenir des appareils, obtenir des appareils par ID, des informations sur les utilisateurs connectés, modifier des \- balises, etc.

@@ -18,13 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Découvrez comment utiliser une stratégie de protection contre la perte de données (DLP) pour protéger les documents qui ont des propriétés d’un système tiers.
-ms.openlocfilehash: be0ca4901b8f32aca4c50daa45c059388561832f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 60440162834bbef34c6e3adc2a60053cd9015e9d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209389"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés
 
@@ -32,7 +33,7 @@ Microsoft 365 stratégies de protection contre la perte de données (DLP) peuven
 
 - Windows Propriétés de l’infrastructure de classification des fichiers de serveur (FCI)
 - SharePoint de document
-- propriétés de document système tierces
+- propriétés de document du système tiers
 
 ![Diagramme montrant Office 365 système de classification externe et externe.](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
@@ -63,7 +64,7 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
 
 ### <a name="step-2-create-a-managed-property"></a>Étape 2 : création d’une propriété gérée
 
-1. Connectez-vous au centre d’administration Microsoft 365.
+1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 
 2. In the left navigation, choose **Admin centers** \> **SharePoint**. Vous vous trouvez maintenant dans le Centre d’administration SharePoint.
 
@@ -83,7 +84,7 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
 
 8. Sous **Mappages aux propriétés** \> **analyser, ajoutez un mappage.**
 
-9. Dans  la boîte de dialogue de sélection des propriétés analyse, recherchez et sélectionnez la propriété qui correspond à la propriété Windows Server FCI ou à une autre propriété que vous utiliserez dans votre stratégie \> DLP \> **OK.**
+9. Dans  la boîte de dialogue de sélection des propriétés analyse, recherchez et sélectionnez la propriété analyse qui correspond à la propriété Windows Server FCI ou à une autre propriété que vous utiliserez dans votre stratégie \> DLP \> **OK.**
 
    ![boîte de dialogue de sélection de propriétés analyse.](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 
@@ -125,7 +126,7 @@ Ce PowerShell crée une stratégie DLP qui s’applique à tous les emplacements
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows L’ID de compte de serveur inclut de nombreuses propriétés intégrées, y compris les informations **d’identification** personnelle utilisées dans cet exemple. Les valeurs possibles pour chaque propriété peuvent être différentes pour chaque organisation. Les **valeurs Élevée,** **Modéré** et **Faible** utilisées ici ne sont qu’un exemple. Pour votre organisation, vous pouvez afficher les propriétés de classification Windows Server FCI avec leurs valeurs possibles dans le Gestionnaire de ressources du serveur de fichiers sur le serveur de fichiers Windows Server. Pour plus d’informations, voir [Créer une propriété de classification.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11))
+   Windows L’IF de serveur inclut de nombreuses propriétés intégrées, y compris les informations **d’identification** personnelle utilisées dans cet exemple. Les valeurs possibles pour chaque propriété peuvent être différentes pour chaque organisation. Les **valeurs Élevée,** **Modéré** et **Faible** utilisées ici ne sont qu’un exemple. Pour votre organisation, vous pouvez afficher les propriétés de classification Windows Server FCI avec leurs valeurs possibles dans le Gestionnaire de ressources du serveur de fichiers sur le serveur de fichiers Windows Server. Pour plus d’informations, voir [Créer une propriété de classification.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11))
 
 Lorsque vous avez terminé, votre stratégie doit avoir deux nouvelles règles qui utilisent toutes les deux les propriétés **document contiennent l’une de ces conditions de** valeurs. Cette condition n’apparaîtra pas dans l’interface utilisateur, bien que les autres conditions, actions et paramètres apparaissent.
 

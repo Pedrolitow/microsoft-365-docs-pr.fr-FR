@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 2b1527b9bef33d224b67d81f96cc9b43c703b1b2fbe873236f2882d74ffe751e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 16c953b3a1c27b73423a80b0d78b910f64b6af56
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209174"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-azure-virtual-desktop"></a>Intégrer Windows 10 plusieurs sessions dans Azure Virtual Desktop 
 6 minutes de lecture 

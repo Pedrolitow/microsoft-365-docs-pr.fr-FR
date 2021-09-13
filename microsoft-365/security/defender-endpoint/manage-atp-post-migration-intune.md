@@ -21,17 +21,17 @@ ms.topic: article
 ms.date: 07/29/2021
 ms.reviewer: chventou
 ms.openlocfilehash: 4891505408a3f831e6ecc0c2cecb0c67fa52e49f
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822751"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209066"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Gérer Microsoft Defender pour le point de terminaison avec Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -55,7 +55,7 @@ Cet article décrit comment rechercher vos paramètres microsoft Defender pour p
 4. Sélectionnez un profil existant ou créez-en un.
 
 > [!TIP]
-> Vous avez besoin d’aide ? Voir **[Utilisation de Microsoft Defender pour endpoint avec Intune.](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**
+> Besoin d’aide ? Voir **[Utilisation de Microsoft Defender pour endpoint avec Intune.](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-intune"></a>Configurer Microsoft Defender pour endpoint avec Intune
 
@@ -77,7 +77,7 @@ Le tableau suivant répertorie les différentes tâches que vous pouvez effectue
 |**Configurer l’accès contrôlé aux dossiers pour** la protection contre les ransomware <p> *[L’accès contrôlé aux](/microsoft-365/security/defender-endpoint/controlled-folders) dossiers est également appelé protection anti-programme malveillant.*|[Protection des points de terminaison : accès contrôlé aux dossiers](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <p> [Activer l’accès contrôlé aux dossiers dans Intune](/microsoft-365/security/defender-endpoint/enable-controlled-folders#intune)|
 |**Configurer Exploit Protection pour protéger** les appareils de votre organisation contre les programmes malveillants qui utilisent des attaques pour se propager et infecter d’autres appareils <p> *[Exploit Protection](/microsoft-365/security/defender-endpoint/exploit-protection) est également appelé Exploit Guard.*|[Protection des points de terminaison : Protection contre les attaques Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-exploit-guard) <p> [Activer Exploit Protection dans Intune](/microsoft-365/security/defender-endpoint/enable-exploit-protection#intune)|
 |**Configurez Microsoft Defender SmartScreen** pour vous protéger contre les sites et fichiers malveillants sur Internet. <p> *Microsoft Edge doivent être installés sur les appareils de votre organisation. Pour une protection sur les navigateurs Google Chrome et FireFox, configurez Exploit Protection.*|[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) <p> [Restrictions d’appareil : Microsoft Defender SmartScreen](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-smartscreen) <p> [Paramètres de stratégie pour la gestion de SmartScreen dans Intune](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#mdm-settings)|
-|**Configurer le Pare-feu Microsoft Defender** pour bloquer le trafic réseau non autorisé qui circule vers ou hors des appareils de votre organisation|[Protection des points de terminaison : Pare-feu Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <p> [Pare-feu Microsoft Defender avec fonctions avancées de sécurité](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
+|**Configurer le Pare-feu Microsoft Defender** pour bloquer le trafic réseau non autorisé qui circule dans ou hors des appareils de votre organisation|[Protection des points de terminaison : Pare-feu Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <p> [Pare-feu Microsoft Defender avec fonctions avancées de sécurité](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
 |**Configurer le chiffrement et BitLocker pour** protéger les informations sur les appareils de votre organisation exécutant Windows|[Protection des points de terminaison : chiffrement Windows de données](/mem/intune/protect/endpoint-protection-windows-10#windows-encryption) <p> [BitLocker pour Windows 10 appareils](/windows/security/information-protection/bitlocker/bitlocker-overview)|
 |**Configurer Microsoft Defender Credential Guard pour vous** protéger contre les attaques par vol d’informations d’identification|Pour Windows 10, Windows Server 2016 et Windows Server 2019, voir [Endpoint Protection : Microsoft Defender Credential Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard) <p> Pour Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 et Windows Server 2012 R2, voir Atténuation des attaques par hachage [(PtH)](https://www.microsoft.com/download/details.aspx?id=36036) et autres vol d’informations d’identification, versions 1 et 2|
 |**Configurer Microsoft Defender Application Control pour** choisir s’il faut auditer ou faire confiance aux applications sur les appareils de votre organisation <p> *Microsoft Defender Application Control est également appelé [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).*|[Déployer des stratégies Microsoft Defender Application Control à l’aide Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <p> [Protection des points de terminaison : contrôle d’application Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <p> [AppLocker CSP](/windows/client-management/mdm/applocker-csp)|

@@ -16,11 +16,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 92d9a6dabc2d8f6251b46d58207170d0c460aa90
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222488"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Indicateurs d’événement de chronologie de l’appareil microsoft Defender pour point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "58567179"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Les indicateurs d’événements dans la chronologie de l’appareil Defender for Endpoint vous aident à filtrer et à organiser des événements spécifiques lorsque vous examinez des attaques potentielles.
+Les indicateurs d’événement dans la chronologie de l’appareil Defender for Endpoint vous aident à filtrer et à organiser des événements spécifiques lorsque vous examinez des attaques potentielles.
 
 La chronologie de l’appareil Defender pour point de terminaison fournit une vue chronologique des événements et des alertes associées observés sur un appareil. Cette liste d’événements offre une visibilité complète des événements, fichiers et adresses IP observés sur l’appareil. La liste peut parfois être longue. Les indicateurs d’événement de chronologie de l’appareil vous aident à suivre les événements qui peuvent être liés.
 

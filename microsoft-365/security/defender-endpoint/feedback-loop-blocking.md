@@ -17,12 +17,12 @@ ms.custom:
 - edr
 ms.collection: ''
 ms.technology: mde
-ms.openlocfilehash: 900f85e494d7d47c58b15f6bb20e0c1bfddcf788403219443b7a60bee47cec19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7319ff5a89a20529eed7d36aa0d0b1522013abd4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829365"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209120"
 ---
 # <a name="feedback-loop-blocking"></a>Blocage de la boucle de commentaires
 

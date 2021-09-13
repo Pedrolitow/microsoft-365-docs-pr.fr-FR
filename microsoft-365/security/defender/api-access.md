@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7214c4ac47f5b4065d8dcf6c836804b332f13dfa9fe1380c15d6934449417cc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3cbd329c63d7cf1868083c66919773e14ed51156
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208852"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>Accéder aux API Microsoft 365 Defender de données
 

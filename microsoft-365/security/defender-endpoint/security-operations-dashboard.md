@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 2612fc618c8bd3dd8362d86413bad386856a3063
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572550"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208988"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Centre de sécurité Microsoft Defender Tableau de bord opérations de sécurité
 
@@ -122,13 +122,13 @@ Vous pouvez cliquer sur **Examens** automatisés, **Examens** corrigés et **Ale
 
 La vignette affiche la liste des comptes d’utilisateurs avec les alertes les plus actives et le nombre d’alertes visibles sur les alertes élevées, moyennes ou faibles. 
 
-![La vignette Comptes d’utilisateurs à risque affiche une liste de comptes d’utilisateurs avec le plus grand nombre d’alertes et une répartition de la gravité des alertes.](images/atp-users-at-risk.png)
+![La vignette Comptes d’utilisateur à risque affiche la liste des comptes d’utilisateurs avec le plus grand nombre d’alertes et une répartition de la gravité des alertes.](images/atp-users-at-risk.png)
 
 Cliquez sur le compte d’utilisateur pour voir les détails sur le compte d’utilisateur. Pour plus d’informations, [voir Examiner un compte d’utilisateur.](investigate-user.md)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Comprendre le portail Microsoft Defender pour les points de terminaison](use.md)
 - [Vue d’ensemble du portail](portal-overview.md)

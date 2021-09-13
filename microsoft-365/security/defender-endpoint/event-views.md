@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0b21a95930138972ac3f7fe3c1474b0434a68e4c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209791"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
@@ -49,7 +49,7 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importer une vue personnalisée XML existante
 
-1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
+1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt à .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
     - Vue personnalisée des événements Exploit Protection *:ep-events.xml*
     - Vue personnalisée des événements de réduction de la surface *d’attaque :asr-events.xml*
@@ -57,7 +57,7 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 2. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez **l’Observateur d’événements.**
 
-3. Sélectionner **l’affichage**  >  **personnalisé d’importation d’action...**
+3. Sélectionner **l’affichage** \> **personnalisé d’importation d’action...**
 
    > [!div class="mx-imgBorder"]
    > ![Animation mettant en surbrillance l’importation d’un affichage personnalisé à gauche de la fenêtre visionneuse even.](images/events-import.gif)
@@ -154,9 +154,9 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 
 |Fonctionnalité|Fournisseur/source|ID d’événement|Description|
 |---|---|:---:|---|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|1 |Audit ACG|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|2 |Forcer ACG|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|3 |Ne pas autoriser l’audit des processus enfants|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|1|Audit ACG|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|2|Forcer ACG|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|3|Ne pas autoriser l’audit des processus enfants|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|4 |Ne pas autoriser le blocage des processus enfants|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|5 |Bloquer l’audit des images à faible intégrité|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|6 |Bloquer le blocage des images à faible intégrité|
@@ -164,9 +164,9 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|8 |Bloquer le blocage des images distantes|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|9 |Désactiver l’audit des appels système win32k|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|10 |Désactiver le blocage des appels système win32k|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|11 |Audit de la protection d’intégrité du code|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|11|Audit de la protection d’intégrité du code|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|12 |Blocage de la protection d’intégrité du code|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|13 |Audit EAF|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|13|Audit EAF|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|14 |Forcer EAF|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|15 |Audit EAF+|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|16 |Forcer EAF+|
@@ -181,13 +181,13 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 |Exploit Protection|WER-Diagnostics|5 |Bloquer CFG|
 |Exploit Protection|Win32K (opérationnel)|260|Police non approuvée|
 |Protection réseau|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
-|Protection réseau|Windows Defender (opérationnel)|1125|Événement lorsque la protection du réseau se déclenche en mode Audit|
+|Protection réseau|Windows Defender (opérationnel)|1125|Événement lorsque la protection du réseau se déclenche en mode audit|
 |Protection réseau|Windows Defender (opérationnel)|1126|Événement lorsque la protection du réseau se déclenche en mode blocage|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1124|Événement d’accès contrôlé aux dossiers audité|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1123|Événement d’accès contrôlé aux dossiers bloqué|
-|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1127|Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers bloqué|
-|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1128|Événement de bloc d’écriture de secteur d’accès contrôlé aux dossiers audité|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1127|Événement bloqué de bloc d’écriture de secteur d’accès contrôlé aux dossiers|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1128|Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers audité|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|1122|Événement lorsque la règle se déclenche en mode audit|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|1121|Événement lorsque la règle se déclenche en mode blocage|

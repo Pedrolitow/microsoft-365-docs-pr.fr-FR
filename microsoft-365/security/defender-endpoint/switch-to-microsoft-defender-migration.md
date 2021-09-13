@@ -25,11 +25,11 @@ ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
 ms.openlocfilehash: 6fa205147dc3fa042d9bdb3a1d03c67f2b2efecb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208955"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passer de la protection de point de terminaison non-Microsoft à Microsoft Defender pour le point de terminaison
 
@@ -37,7 +37,7 @@ Si vous envisagez de passer d’une solution de protection de point de terminais
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Basculez votre solution de protection de point de terminaison vers Defender pour le point de terminaison.":::
 
-Lorsque vous basculez vers Defender pour le point de terminaison, vous commencez par votre protection antivirus/anti-programme malveillant non-Microsoft en mode actif. Ensuite, vous configurez Antivirus Microsoft Defender en mode passif et intégrer vos appareils à Defender for Endpoint. Ensuite, vous configurez vos fonctionnalités de protection des points de terminaison, définissez Antivirus Microsoft Defender en mode actif et vérifiez que tout fonctionne correctement. Enfin, vous supprimez la solution non-Microsoft.
+Lorsque vous basculez vers Defender pour le point de terminaison, vous commencez par votre protection antivirus/anti-programme malveillant non Microsoft en mode actif. Ensuite, vous configurez Antivirus Microsoft Defender en mode passif et intégrer vos appareils à Defender for Endpoint. Ensuite, vous configurez vos fonctionnalités de protection des points de terminaison, définissez Antivirus Microsoft Defender en mode actif et vérifiez que tout fonctionne correctement. Enfin, vous supprimez la solution non-Microsoft.
 
 ## <a name="the-migration-process"></a>Processus de migration
 
@@ -57,12 +57,12 @@ Dans ce guide de migration, nous [](overview-endpoint-detection-response.md) nou
 
 | Fonctionnalité/fonctionnalité | Description |
 |---|---|
-| [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md) | Les fonctionnalités & gestion des vulnérabilités menaces permettent d’identifier, d’évaluer et de corriger les faiblesses sur vos points de terminaison (tels que les appareils). |
+| [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md) | Les fonctionnalités & gestion des vulnérabilités menace permettent d’identifier, d’évaluer et de corriger les faiblesses sur vos points de terminaison (tels que les appareils). |
 | [Réduction de la surface d’attaque](overview-attack-surface-reduction.md) | Les règles de réduction de la surface d’attaque contribuent à protéger les appareils et applications de votre organisation contre les cybermenaces et les attaques. |
 | [Protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md) | La protection nouvelle génération inclut des Antivirus Microsoft Defender pour bloquer les menaces et les programmes malveillants. |
 | [Détection et réponse du point de terminaison](overview-endpoint-detection-response.md) | Les fonctionnalités de détection et de réponse des points de terminaison détectent, examinent et répondent aux tentatives d’intrusion et aux violations actives.  |
 | [Repérage avancé](advanced-hunting-overview.md) | Les fonctionnalités de recherche avancées permettent à votre équipe des opérations de sécurité de localiser des indicateurs et des entités de menaces connues ou potentielles. |
-| [Blocage et confinement comportementaux](behavioral-blocking-containment.md) | Les fonctionnalités de blocage du comportement et de blocage du contenu permettent d’identifier et d’arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. |
+| [Blocage et confinement comportementaux](behavioral-blocking-containment.md) | Les fonctionnalités de blocage du comportement et de contenu permettent d’identifier et d’arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. |
 | [Examen et correction automatisés](automated-investigations.md) | Les fonctionnalités d’examen et de réponse automatisées examinent les alertes et prennent des mesures correctives immédiates pour résoudre les violations. |
 | [Service de recherche de menaces](microsoft-threat-experts.md) (Spécialistes des menaces Microsoft) | Les services de recherche de menace fournissent aux équipes des opérations de sécurité une surveillance et une analyse de niveau expert, et pour vous assurer que les menaces critiques ne sont pas manquées. |
 

@@ -24,11 +24,11 @@ search.appverid:
 - BCS160
 description: Découvrez comment utiliser l’adresse IP et le service web d’URL Office 365 pour mieux identifier et différencier le trafic réseau d’Office 365.
 ms.openlocfilehash: 62e9b638b0f767aef3b7f52bb3d129310d2bcbd5
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209287"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Service web d’URL et d’adresses IP Office 365
 
@@ -54,7 +54,7 @@ En tant que fournisseur de périphérique de périmètre réseau, vous pouvez ut
 > [!NOTE]
 > Si vous utilisez Azure ExpressRoute pour vous connecter à Office 365, consultez [Azure ExpressRoute pour Office 365](azure-expressroute.md) pour vous familiariser avec les services Office 365 pris en charge sur Azure ExpressRoute. Consultez l’article [ URLs and plages d’adresse IP Office 365](urls-and-ip-address-ranges.md) pour identifier les requêtes réseau des applications Office 365 qui nécessitent une connectivité Internet. Cette opération permet de mieux configurer vos périphériques de sécurité de périmètre.
 
-Pour plus d’informations, voir :
+Pour plus d’informations, voir :
 
 - [Annonce du billet de blog dans le Forum de la communauté technique Office 365](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
 - [Forum de la communauté technique Office 365 pour les questions sur l’utilisation des services web](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

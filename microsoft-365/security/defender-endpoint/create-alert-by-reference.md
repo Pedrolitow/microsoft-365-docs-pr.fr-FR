@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: ab53061a7880d5ba35c16203cffc7d6eb8e7b718
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392096"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222568"
 ---
 # <a name="create-alert-api"></a>CRÉER une API d’alerte
 
@@ -90,9 +90,9 @@ eventTime | DateTime(UTC) | Heure précise de l’événement en tant que chaîn
 reportId | String | ReportId de l’événement, tel qu’obtenu à partir d’un chasse avancée. **Obligatoire**.
 machineId | String | ID de l’appareil sur lequel l’événement a été identifié. **Obligatoire**.
 Sévérité  | String | Gravité de l’alerte. Les valeurs de propriété sont : « Low » (faible), « Medium » (moyen) et « High » (élevé). **Obligatoire**.
-title | String | Titre de l’alerte. **Obligatoire**.
+title | Chaîne | Titre de l’alerte. **Obligatoire**.
 description | String | Description de l’alerte. **Obligatoire**.
-recommendedAction| String | Action recommandée par le responsable de la sécurité lors de l’analyse de l’alerte. **Obligatoire**.
+recommendedAction| Chaîne | Action recommandée par le responsable de la sécurité lors de l’analyse de l’alerte. **Obligatoire**.
 category| String | Catégorie de l’alerte. Les valeurs de propriété sont : « General », « CommandAndControl », « Collection », « CredentialAccess », « DefenseEvasion », « Discovery », « Exfiltration », « Exploit », « Execution », « InitialAccess », « LateralMovement », « Malware », « Persistence », « PrivilegeEscalation », « Ransomware », « SuspiciousActivity » **Required**.
 
 ## <a name="response"></a>Réponse

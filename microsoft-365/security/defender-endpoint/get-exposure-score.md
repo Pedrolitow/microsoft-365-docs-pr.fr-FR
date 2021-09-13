@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 903176b8c163dcd47e1e11c6c5a82c1ff7363540
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209552"
 ---
 # <a name="get-exposure-score"></a>Obtenir un score d'exposition
 
@@ -60,7 +60,7 @@ GET /api/exposureScore
 
 Nom|Type|Description
 ---|---|---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

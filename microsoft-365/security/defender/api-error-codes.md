@@ -1,6 +1,6 @@
 ---
 title: Codes d’Microsoft 365 Defender l’API REST courants
-description: En savoir plus sur les codes d’Microsoft 365 Defender l’API REST courants
+description: En savoir plus sur les codes d’Microsoft 365 Defender l’API REST les plus courants
 keywords: api, erreur, codes, erreurs courantes, Microsoft 365 Defender, codes d’erreur d’api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b972bc1710a5edbb3d351f2a33f966c80266fe4d9f13cfbfa6f6bf320764a93c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208804"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codes d’Microsoft 365 Defender l’API REST courants
 
@@ -53,7 +53,7 @@ InvalidDomainName | BadRequest (400) | Le nom de \<the invalid domain\> domaine 
 InvalidIpAddress | BadRequest (400) | L’adresse IP \<the invalid IP\> n’est pas valide.
 InvalidUrl | BadRequest (400) | \<the invalid URL\>L’URL n’est pas valide.
 MaximumBatchSizeExceeded | BadRequest (400) | La taille maximale du lot est dépassée. Reçu : \<batch size received\> , autorisé : {taille de lot autorisée}.
-MissingRequiredParameter | BadRequest (400) | Le \<the missing parameter\> paramètre est manquant.
+MissingRequiredParameter | BadRequest (400) | Paramètre \<the missing parameter\> manquant.
 OsPlatformNotSupported | BadRequest (400) | La plateforme du \<the client OS Platform\> système d’exploitation n’est pas prise en charge pour cette action.
 ClientVersionNotSupported | BadRequest (400) | \<The requested action\> est pris en charge sur la version du client \<supported client version\> et versions supérieures.
 Non autorisé (Unauthorized) | Non autorisé (401) | Non autorisé (Unauthorized) <br /><br />*Remarque : généralement causée par un en-tête d’autorisation non valide ou expiré.*
@@ -64,7 +64,7 @@ NotFound | In found (404) | Message d’erreur Général in trouvé.
 ResourceNotFound | In found (404) | Ressource \<the requested resource\> in trouvée.
 InternalServerError | Erreur interne du serveur (500) | *Remarque : aucun message d’erreur, retenter l’opération ou [contacter Microsoft](/microsoft-365/business-video/get-help-support) si elle n’est pas résolue*
 
-## <a name="examples"></a>Exemples
+## <a name="examples"></a>範例
 
 ```json
 {

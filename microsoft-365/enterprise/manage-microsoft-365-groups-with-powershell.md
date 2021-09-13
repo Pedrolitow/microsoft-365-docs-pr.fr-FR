@@ -12,6 +12,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Dans cet article, découvrez comment effectuer des tâches de gestion courantes pour Microsoft 365 groupes dans PowerShell.
-ms.openlocfilehash: 023b0a4264af5989e93c70f959584bcef9a89075
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 82617a33695135a8ad2fa6cce65c60d435d7d180
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209359"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Gérer Microsoft 365 groupes avec PowerShell
 
@@ -150,7 +151,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>Modifier le nom d’affichage du groupe Microsoft 365 groupe
 
-Le nom complet spécifie le nom du groupe Microsoft 365 groupe. Vous pouvez voir ce nom dans votre centre d’administration Exchange ou Centre d’administration Microsoft 365. Vous pouvez modifier le nom complet du groupe ou attribuer un nom complet à un groupe Microsoft 365 existant en exécutant la commande Set-UnifiedGroup :
+Le nom complet spécifie le nom du groupe Microsoft 365 groupe. Vous pouvez voir ce nom dans votre centre d’administration Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">ou Centre d'administration Microsoft 365</a>. Vous pouvez modifier le nom complet du groupe ou attribuer un nom complet à un groupe Microsoft 365 existant en exécutant la commande Set-UnifiedGroup :
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
@@ -190,12 +191,12 @@ Les cmdlets suivantes peuvent être utilisées avec Microsoft 365 groupes.
 |[Set-UserPhoto](/powershell/module/exchange/set-userphoto) <br/> |Utilisé pour associer une photo d’utilisateur à un compte. Les photos de l’utilisateur sont stockées dans Active Directory  <br/> |
 |[Remove-UserPhoto](/powershell/module/exchange/remove-userphoto) <br/> |Supprimer la photo d’un groupe Microsoft 365 de recherche  <br/> |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Mettre à niveau les listes de distribution Microsoft 365 groupes](/office365/admin/manage/upgrade-distribution-lists)
 
 [Gérer les personnes autorisées à créer des groupes Microsoft 365](/office365/admin/create-groups/manage-creation-of-groups)
 
-[Gérer l’accès invité à Microsoft 365 groupes](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Gérer l’accès invité aux groupes Microsoft 365 client](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Modifier l’appartenance à un groupe statique en dynamique dans](/azure/active-directory/users-groups-roles/groups-change-type)

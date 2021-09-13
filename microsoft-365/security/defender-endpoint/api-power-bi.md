@@ -1,7 +1,7 @@
 ---
 title: Connexion des API Microsoft Defender for Endpoint Power BI
 ms.reviewer: ''
-description: Créez un rapport d’aide à la création de rapports Power Business Intelligence (BI) en plus des API Microsoft Defender pour les points de terminaison.
+description: Créez un rapport Power Business Intelligence (BI) sur les API Microsoft Defender for Endpoint.
 keywords: api, api pris en charge, Power BI, rapports
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,11 +18,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 04c95cffec8f0c5bde417526d6b0cbc8dbe760ee
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222643"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Créer des rapports personnalisés à l’aide Power BI
 
@@ -142,7 +142,7 @@ Pour plus d’informations, [voir Power BI modèles de rapport.](https://github.
 
 Affichez les exemples de rapport microsoft Defender pour Power BI de point de terminaison. Pour plus d’informations, voir [Parcourir les exemples de code.](/samples/browse/?products=mdatp)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [API Defender pour les points de terminaison](apis-intro.md)
 - [API de recherche avancée de menaces](run-advanced-query-api.md)

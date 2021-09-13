@@ -1,6 +1,6 @@
 ---
 title: Comment contrôler les périphériques USB et autres supports amovibles à l’aide d’Intune (Windows 10)
-description: Vous pouvez configurer les paramètres Intune pour réduire les menaces du stockage amovible tel que les périphériques USB.
+description: Vous pouvez configurer les paramètres Intune pour réduire les menaces du stockage amovible, tels que les périphériques USB.
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,11 +15,11 @@ ms.topic: conceptual
 ms.technology: mde
 ROBOTS: NOINDEX
 ms.openlocfilehash: 6ad51065ca4e919fe51cc4a2d5f4b0d53bc474b1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222583"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour le point de terminaison
 
@@ -42,7 +42,7 @@ Microsoft recommande une approche en [couches](https://aka.ms/devicecontrolblog)
 4. [Répondre aux menaces](#respond-to-threats) provenant de périphériques en temps réel en fonction des propriétés signalées par chaque périphérique.
 
 > [!NOTE]
-> Ces mesures de réduction des menaces contribuent à empêcher l’arrivée de programmes malveillants dans votre environnement. Pour protéger les données d’entreprise contre la sortie de votre environnement, vous pouvez également configurer des mesures de protection contre la perte de données. Par exemple, sur les appareils Windows 10 vous pouvez configurer [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) et [Windows Information Protection,](/windows/security/information-protection/create-wip-policy-using-intune-azure.md)qui chiffrent les données d’entreprise même si elles sont stockées sur un appareil personnel, ou utiliser le [CSP Stockage/RemovableDiskDenyWriteAccess](/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) pour refuser l’accès en écriture aux disques amovibles. En outre, vous pouvez classer et protéger des fichiers [sur Windows](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) appareils mobiles (y compris leurs périphériques USB montés) à l’aide de Microsoft Defender pour endpoint et Azure Information Protection.
+> Ces mesures de réduction des menaces contribuent à empêcher l’arrivée de programmes malveillants dans votre environnement. Pour protéger les données d’entreprise contre la sortie de votre environnement, vous pouvez également configurer des mesures de protection contre la perte de données. Par exemple, sur les appareils Windows 10 vous pouvez configurer [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) et [Windows Information Protection,](/windows/security/information-protection/create-wip-policy-using-intune-azure.md)qui chiffrent les données d’entreprise même si elles sont stockées sur un appareil personnel, ou utiliser le [CSP Stockage/RemovableDiskDenyWriteAccess](/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) pour refuser l’accès en écriture aux disques amovibles. En outre, vous pouvez classer et protéger des fichiers [sur Windows](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) appareils mobiles (y compris leurs périphériques USB montés) à l’aide de Microsoft Defender pour Endpoint et Azure Information Protection.
 
 ## <a name="discover-plug-and-play-connected-events"></a>Découvrir les événements connectés en plug-and-play
 
@@ -83,13 +83,13 @@ Pour éviter les infections par des programmes malveillants ou la perte de donn�
 |[Empêcher l’installation et l’utilisation de lecteurs USB et d’autres périphériques](#prevent-installation-and-usage-of-usb-drives-and-other-peripherals)|Empêcher les utilisateurs d’installer des lecteurs USB et d’autres périphériques inclus dans une liste d’appareils et de types d’appareils non autorisés|
 |
 
-Tous les contrôles ci-dessus peuvent être définies via les [modèles d’administration](/intune/administrative-templates-windows)Intune. Les stratégies pertinentes se trouvent ici dans les modèles d’administrateur Intune :
+Tous les contrôles ci-dessus peuvent être définies par le biais des [modèles d’administration](/intune/administrative-templates-windows)Intune. Les stratégies pertinentes se trouvent ici dans les modèles d’administrateur Intune :
 
 ![Capture d’écran de la liste des modèles d’administration.](images/admintemplates.png)
 
 > [!NOTE]
 > À l’aide d’Intune, vous pouvez appliquer des stratégies de configuration d’appareil à des groupes d’utilisateurs et/ou d’appareils Azure AD.
-Les stratégies ci-dessus peuvent également être définies par le biais des [paramètres CSP d’installation](/windows/client-management/mdm/policy-csp-deviceinstallation) de périphériques et des GOS [d’installation de périphériques.](/previous-versions/dotnet/articles/bb530324(v=msdn.10))
+Les stratégies ci-dessus peuvent également être définies par le biais des [paramètres CSP d’installation](/windows/client-management/mdm/policy-csp-deviceinstallation) de périphérique et des GOS [d’installation de périphériques.](/previous-versions/dotnet/articles/bb530324(v=msdn.10))
 >
 > Testez et affinez toujours ces paramètres avec un groupe pilote d’utilisateurs et d’appareils avant de les appliquer en production.
 Pour plus d’informations sur le contrôle des périphériques USB, consultez le [blog microsoft Defender pour point de terminaison.](https://www.microsoft.com/security/blog/2018/12/19/windows-defender-atp-has-protections-for-usb-and-removable-devices/)
@@ -141,7 +141,7 @@ Pour empêcher l’installation d’appareils qui correspondent à l’un de ces
 
    ![Recherchez l’ID du fournisseur ou du produit.](images/lookup-vendor-product-id.png)
 
-2. Activez **empêcher l’installation des appareils qui** correspondent à l’un de ces ID d’appareil et ajoutez les ID de fournisseur ou de produit à la liste.
+2. Activez **Empêcher l’installation des appareils qui** correspondent à l’un de ces ID d’appareil et ajoutez les ID de fournisseur ou de produit à la liste.
 
     ![Ajoutez l’ID du fournisseur pour empêcher la liste.](images/add-vendor-id-to-prevent-list.png)
 
@@ -214,9 +214,9 @@ Autoriser l’installation d’appareils spécifiques nécessite également l’
 
 ### <a name="prevent-installation-of-specifically-prohibited-peripherals"></a>Empêcher l’installation de périphériques spécifiquement interdits
 
-Microsoft Defender pour le point de terminaison bloque l’installation et l’utilisation de périphériques interdits à l’aide de l’une des options ci-après :
+Microsoft Defender pour le point de terminaison bloque l’installation et l’utilisation de périphériques interdits à l’aide de l’une de ces options :
 
-- [Les modèles d’administration](/intune/administrative-templates-windows) peuvent bloquer n’importe quel appareil avec un ID matériel ou une classe d’installation correspondant.
+- [Les modèles d’administration](/intune/administrative-templates-windows) peuvent bloquer tout appareil avec un ID matériel ou une classe d’installation correspondant.
 - [Paramètres CSP d’installation d’appareil](/windows/client-management/mdm/policy-csp-deviceinstallation) avec un profil personnalisé dans Intune. Vous pouvez empêcher [l’installation d’ID d’appareil spécifiques](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) ou [empêcher des classes d’appareil spécifiques.](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses)
 
 ### <a name="allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids"></a>Autoriser l’installation et l’utilisation de périphériques approuvés spécifiquement avec des ID d’instance d’appareil correspondants
@@ -242,9 +242,9 @@ Vous pouvez empêcher l’installation des périphériques interdits avec des ID
 
 Les périphériques de stockage amovibles peuvent introduire un risque de sécurité supplémentaire pour votre organisation. Microsoft Defender pour le point de terminaison peut vous aider à identifier et bloquer les fichiers malveillants sur les appareils de stockage amovibles.
 
-Microsoft Defender pour le point de terminaison peut également empêcher l’utilisation de périphériques USB sur les appareils pour éviter les menaces externes. Pour ce faire, il utilise les propriétés signalées par les périphériques USB pour déterminer si elles peuvent être installées et utilisées sur l’appareil.
+Microsoft Defender pour point de terminaison peut également empêcher l’utilisation de périphériques USB sur les appareils pour éviter les menaces externes. Pour ce faire, il utilise les propriétés signalées par les périphériques USB pour déterminer si elles peuvent être installées et utilisées sur l’appareil.
 
-Notez que si vous bloquez les périphériques USB ou toute autre classe d’appareil à l’aide des stratégies d’installation d’appareil, les appareils connectés, tels que les téléphones, peuvent toujours facturer.
+Notez que si vous bloquez des périphériques USB ou d’autres classes d’appareils à l’aide des stratégies d’installation d’appareil, les appareils connectés, tels que les téléphones, peuvent toujours facturer.
 
 > [!NOTE]
 > Testez et affinez toujours ces paramètres avec un groupe pilote d’utilisateurs et d’appareils avant de les distribuer largement à votre organisation.
@@ -284,7 +284,7 @@ La protection du stockage amovible autorisé avec Antivirus Microsoft Defender n
 ### <a name="block-untrusted-and-unsigned-processes-on-usb-peripherals"></a>Bloquer les processus non signés et non signés sur les périphériques USB
 
 Les utilisateurs finaux peuvent brancher des appareils amovibles infectés par des programmes malveillants.
-Pour éviter les infections, une entreprise peut bloquer les fichiers USB non signés ou nontrus.
+Pour éviter les infections, une entreprise peut bloquer les fichiers USB non signés ou non.
 Les entreprises peuvent également tirer parti de la fonctionnalité d’audit des règles de réduction de la [surface](/microsoft-365/security/defender-endpoint/attack-surface-reduction) d’attaque pour surveiller l’activité des processus non signés et non signés qui s’exécutent sur un périphérique USB.
 Pour ce faire, vous pouvez définir respectivement les processus  non signés et non **signés exécutés** à partir du port USB sur Bloquer ou **Auditer** uniquement.
 Avec cette règle, les administrateurs peuvent empêcher ou auditer l’exécution de fichiers exécutables non signés ou non signés à partir de lecteurs amovibles USB, y compris les cartes SD.
@@ -323,7 +323,7 @@ Les attaques DMA peuvent entraîner la divulgation d’informations sensibles r�
 
    Les périphériques qui prendre en charge l’isolation de la mémoire de l’appareil peuvent toujours se connecter. Les périphériques qui ne peuvent pas être bloqués, autorisés ou autorisés uniquement une fois que l’utilisateur se signe (par défaut).
 
-2. Sur Windows 10 qui ne la prise en charge de la protection DMA du noyau, vous pouvez :
+2. Sur Windows 10 systèmes qui ne la prisent pas en charge de la protection DMA du noyau, vous pouvez :
 
    - [Bloquer DMA jusqu’à ce qu’un utilisateur se soit](/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
    - [Bloquer toutes les connexions via les ports Thunderbolt (y compris les périphériques USB)](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
@@ -358,7 +358,7 @@ Vous pouvez créer des alertes personnalisées et des actions de réponse automa
 
 Par exemple, à l’aide de l’une ou l’autre des approches, vous pouvez exécuter Antivirus Microsoft Defender automatiquement lorsqu’un périphérique USB est monté sur un ordinateur.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Configurer la protection en temps réel pour Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
 - [Defender/AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)

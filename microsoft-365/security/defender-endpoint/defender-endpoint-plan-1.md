@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: 21f9de0c92145f7029b7529a242fe58c344768a0
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823412"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209162"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -37,7 +37,7 @@ L’image suivante illustre ce qui est inclus dans Defender pour Endpoint Plan 1
 Utilisez ce guide pour :
 
 - [Obtenir une vue d’ensemble de ce qui est inclus dans Defender pour Endpoint Plan 1 (prévisualisation)](#defender-for-endpoint-plan-1-capabilities)
-- [Comparer Defender pour endpoint Plan 1 à Plan 2](defender-endpoint-plan-1-2.md)
+- [Comparer Defender for Endpoint Plan 1 à Plan 2](defender-endpoint-plan-1-2.md)
 - [Découvrez comment configurer Defender pour Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Commencer à utiliser le portail Microsoft 365 Defender, où vous pouvez afficher les incidents et les alertes, gérer les appareils et utiliser des rapports sur les menaces détectées](mde-plan1-getting-started.md)
 - [Obtenir une vue d’ensemble de la maintenance et des opérations](mde-p1-maintenance-operations.md)
@@ -118,7 +118,7 @@ Avec l’accès contrôlé aux dossiers, vous obtenez une atténuation des ranso
 
 Pour plus d’informations, voir [Protéger les dossiers importants avec un accès contrôlé aux dossiers.](controlled-folders.md)
 
-### <a name="device-control"></a>Contrôle d’appareil
+### <a name="device-control"></a>Contrôle des appareils
 
 Parfois, les menaces qui pèsent sur les appareils de votre organisation se font sous la forme de fichiers sur des lecteurs amovibles, tels que des lecteurs USB. Defender pour le point de terminaison inclut des fonctionnalités qui permettent d’empêcher les menaces provenant de périphériques non autorisés de compromettre vos appareils. Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. 
 

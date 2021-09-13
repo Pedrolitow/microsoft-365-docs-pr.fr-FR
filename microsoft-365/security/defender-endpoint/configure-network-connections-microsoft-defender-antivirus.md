@@ -17,11 +17,11 @@ ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: e7631647d97abc7f67129c9d40887996cfc7eb0b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209665"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -109,7 +109,7 @@ Vous verrez également une  détection des menaces mises en quarantaine dans la 
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant sécurité dans le menu **Démarrer.**
 
-2. Sélectionnez **Antivirus & protection contre les** menaces, puis sélectionnez Historique de la **protection.**
+2. Sélectionnez **Virus & protection contre les** menaces, puis sélectionnez Historique de la **protection.**
 
 3. Sous la section **Menaces en quarantaine,** **sélectionnez Consulter l’historique complet** pour voir les programmes malveillants factices détectés.
 

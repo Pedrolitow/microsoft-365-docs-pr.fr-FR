@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 2421a73e24e8d6ba42cb18e2d221ad09ec997d14
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209780"
 ---
 # <a name="get-ip-related-alerts-api"></a>API Obtenir les alertes liées à l’ADRESSE IP
 

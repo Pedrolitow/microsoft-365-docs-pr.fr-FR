@@ -1,6 +1,6 @@
 ---
 title: Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
-description: Les règles de réduction de la surface d’attaque peuvent empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
+description: Les règles de réduction de la surface d’attaque peuvent aider à empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
 keywords: Règles de réduction de la surface d’attaque, asr, hips, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,11 +17,11 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: 402ae897717e935b59f0f63a48f7307a2ff522e4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209858"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
 
@@ -52,7 +52,7 @@ Vous pouvez évaluer l’impact d’une règle de réduction de la surface d’a
 
 Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer quel pourcentage de vos appareils peuvent accepter une nouvelle stratégie permettant d’activer la règle en mode de blocage sans affecter la productivité.
 
-Pour plus [d’informations](enable-attack-surface-reduction.md#requirements) sur les systèmes d’exploitation pris en charge et d’autres informations sur les conditions requises, voir La procédure requise dans l’article « Activer les règles de réduction de la surface d’attaque ».
+Consultez [la procédure requise](enable-attack-surface-reduction.md#requirements) dans l’article « Activer les règles de réduction de la surface d’attaque » pour plus d’informations sur les systèmes d’exploitation pris en charge et des informations supplémentaires sur les conditions requises.
 
 ## <a name="audit-mode-for-evaluation"></a>Mode audit pour l’évaluation
 
@@ -78,7 +78,7 @@ Assurez-vous également que Antivirus Microsoft Defender mises à jour du logici
 - Conditions minimales requises pour la publication de la plateforme : `4.18.2008.9`
 - Conditions minimales requises pour la publication du moteur : `1.1.17400.5`
 
-Pour plus d’informations et pour obtenir vos mises à jour, voir Mise à jour [pour la plateforme anti-programme](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)malveillant Microsoft Defender.
+Pour plus d’informations et pour obtenir vos mises à jour, voir Mise à jour [pour la plateforme de logiciel anti-programme malveillant Microsoft Defender.](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Cas où le mode d’avertissement n’est pas pris en charge
 

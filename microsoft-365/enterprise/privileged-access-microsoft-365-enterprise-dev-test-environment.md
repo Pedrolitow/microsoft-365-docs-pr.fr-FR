@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: Ent_TLGs
 description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés de votre Microsoft 365 environnement de test d’entreprise.
 ms.openlocfilehash: d4d3658ad8c7533e2540dde6c390b4f2b4691cb8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569404"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209209"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 entreprise
 
@@ -84,7 +84,7 @@ Tout d’abord, connectez-vous à Exchange Management PowerShell avec les inform
 >[!NOTE]
 >Si vous n’avez pas déjà effectué les étapes 1 et 2 de la phase 2 de ce guide, assurez-vous de suivre les étapes pour créer un groupe d’approbation nommé « Approvers d’accès privilégié » afin d’activer l’accès privilégié dans votre environnement de test.
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification avec Exchange rôle de gestion des rôles pour votre environnement de test.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification avec Exchange rôle de gestion des rôles pour votre environnement de test.
 2. Dans le Centre d’administration, accédez **à Paramètres**  >  **sécurité & confidentialité**  >  **privilégié.**
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 4. Sélectionnez **Configurer les stratégies,** puis **ajoutez une stratégie.**
@@ -116,7 +116,7 @@ Tout d’abord, connectez-vous à Exchange Management PowerShell avec les inform
 
 ### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>Demander l’accès pour créer une règle de journal à l’aide New-JournalRule tâche
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification avec Exchange rôle de gestion des rôles pour votre environnement de test.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification avec Exchange rôle de gestion des rôles pour votre environnement de test.
 
 2. Dans le Centre d’administration, accédez **à Paramètres**  >  **sécurité & confidentialité**  >  **privilégié.**
 
@@ -130,13 +130,13 @@ Tout d’abord, connectez-vous à Exchange Management PowerShell avec les inform
 
 ### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Approuver une demande d’accès privilégié pour la création d’une nouvelle règle de journal
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification de l’utilisateur 3 dans votre environnement de test (membre du groupe de sécurité « Privileged Access Approvers » dans votre environnement de test).
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification de l’utilisateur 3 dans votre environnement de test (membre du groupe de sécurité « Privileged Access Approvers » dans votre environnement de test).
 
 2. Dans le Centre d’administration, accédez **à Paramètres**  >  **sécurité & confidentialité**  >  **privilégié.**
 
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 
-4. Sélectionnez la demande en attente, puis **sélectionnez Approuver** pour accorder l’accès au compte d’utilisateur afin de créer une règle de journal. Le compte (l’utilisateur demandeur) reçoit un message électronique de confirmation que l’approbation a été accordée.
+4. Sélectionnez la demande en attente, puis sélectionnez **Approuver** pour accorder l’accès au compte d’utilisateur afin de créer une règle de journal. Le compte (l’utilisateur demandeur) reçoit un message électronique de confirmation que l’approbation a été accordée.
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Tester la création d’une règle de journal avec un accès privilégié approuvé pour la New-JournalRule tâche
 

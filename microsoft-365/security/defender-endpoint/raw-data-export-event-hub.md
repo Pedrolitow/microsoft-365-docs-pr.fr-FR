@@ -18,11 +18,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: d0e872390fbcc80a7427c28b2a7cdf5382ac839c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570004"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209023"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers vos Hubs d’événements Azure
 
@@ -55,7 +55,7 @@ ms.locfileid: "58570004"
 
 6. Tapez le **nom de vos Hubs d’événements** et votre ID de ressource Event **Hubs.**
 
-   Pour obtenir votre ID de ressource **Event Hubs,** rendez-vous sur votre page d’espace de noms Azure Event Hubs sous l’onglet Des propriétés [Azure](https://ms.portal.azure.com/) > copiez le texte sous \> **L’ID** de ressource :
+   Pour obtenir votre ID de ressource **Event Hubs,** rendez-vous sur votre page d’espace de noms Azure Event Hubs sous l’onglet Propriétés [Azure](https://ms.portal.azure.com/) > copiez le texte sous \> **L’ID** de ressource :
 
    ![Image de l’ID1 de ressource du hub d’événements.](images/event-hub-resource-id.png)
 
@@ -81,7 +81,7 @@ ms.locfileid: "58570004"
 
 - Chaque enregistrement contient le nom de l’événement, le moment où Microsoft Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous obtenez uniquement des événements de votre client) et l’événement au format JSON dans une propriété appelée **«** properties ».
 
-- Pour plus d’informations sur le schéma des événements De Microsoft Defender pour point de [terminaison, voir vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
+- Pour plus d’informations sur le schéma des événements Microsoft Defender for Endpoint, consultez [la vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
 
 - Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne. Pour plus [d’informations,](machine-groups.md) voir Groupes d’appareils.
 
@@ -103,7 +103,7 @@ Pour obtenir les types de données pour les propriétés d’événement, faites
 
   ![Image de l’ID2 de ressource du hub d’événements.](images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [API de diffusion en continu microsoft Defender pour point de terminaison](raw-data-export.md)

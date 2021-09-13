@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 96f356ad4a1c1d128fb520ad8ccdf10de45b14dca019dafea4f4db1aa86d6812
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4b90e9136b7d73fbfbc7006fc242f84c34ce52db
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183815"
 ---
 # <a name="payment-information-for-japan"></a>Informations de paiement pour le Japon
 

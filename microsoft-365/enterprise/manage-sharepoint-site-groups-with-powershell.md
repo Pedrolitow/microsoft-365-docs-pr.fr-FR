@@ -21,17 +21,17 @@ ms.custom:
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: Dans cet article, recherchez des procédures d’utilisation de PowerShell pour Microsoft 365 gérer SharePoint groupes de sites En ligne.
 ms.openlocfilehash: 975c6ee7e1b3d62bf5a4c06791ed510b8fa61c31
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209299"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Gestion des groupes de sites SharePoint Online avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Bien que vous pouvez utiliser le Centre d’administration Microsoft 365, vous pouvez également utiliser PowerShell pour Microsoft 365 gérer vos groupes de sites SharePoint Online.
+Bien que vous pouvez utiliser le Centre d'administration Microsoft 365, vous pouvez également utiliser PowerShell pour Microsoft 365 gérer vos groupes de sites SharePoint Online.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

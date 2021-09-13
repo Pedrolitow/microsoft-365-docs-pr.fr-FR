@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c9cafdb24ea52b5a68373ce5f4ce67175ec89af12958ecb99cde494b1a551d89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93697ac4009d19a09a57600a1736e839fb04fb80
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888942"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208844"
 ---
 # <a name="other-security-and-threat-protection-apis"></a>Autres API de sécurité et de protection contre les menaces
 

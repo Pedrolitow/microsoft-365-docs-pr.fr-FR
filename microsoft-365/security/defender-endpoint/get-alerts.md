@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: e295d4014231242bf1e3ae7dceaeb38dfea2fa1c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246321"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209612"
 ---
 # <a name="list-alerts-api"></a>API d’alertes de liste
 
@@ -83,8 +83,7 @@ GET /api/alerts
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String
- | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

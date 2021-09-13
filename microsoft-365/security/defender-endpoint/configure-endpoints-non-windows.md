@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 2c3350cd45eedb590016e3456274b4e04dda1c51
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222613"
 ---
 # <a name="onboard-non-windows-devices"></a>Intégrer des appareils non Windows
 
@@ -38,9 +38,9 @@ ms.locfileid: "58533302"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-nonwindows-abovefoldlink)
 
-Defender for Endpoint offre une expérience d’opérations de sécurité centralisée pour les plateformes Windows et non Windows de sécurité. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Microsoft 365 Defender et mieux protéger le réseau de votre organisation.
+Defender for Endpoint offre une expérience centralisée des opérations de sécurité pour les plateformes Windows et non Windows de sécurité. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Microsoft 365 Defender et mieux protéger le réseau de votre organisation.
 
-Vous devez connaître les versions exactes de Linux et macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne. Pour plus d’informations, voir :
+Vous devez connaître les versions exactes de Linux et macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne. Pour plus d’informations, consultez :
 
 - [Microsoft Defender pour point de terminaison sur la demande système Linux](microsoft-defender-endpoint-linux.md#system-requirements)
 - [Microsoft Defender pour point de terminaison sur macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
@@ -51,7 +51,7 @@ Pour intégrer des appareils non Windows, vous devez suivre les étapes suivante
 
 1. Sélectionnez votre méthode d’intégration préférée :
 
-   - Pour les appareils macOS, vous pouvez choisir d’intégrer via Microsoft Defender pour endpoint ou via une solution tierce. Pour plus d’informations, [voir Microsoft Defender pour Endpoint sur Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - Pour les appareils macOS, vous pouvez choisir d’intégrer via Microsoft Defender pour Endpoint ou via une solution tierce. Pour plus d’informations, [voir Microsoft Defender pour Endpoint sur Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
    - Pour les autres appareils non Windows choisissez Intégrer des appareils non Windows par le biais **d’une intégration tierce.**
     1. Dans le volet de navigation, sélectionnez **Partenaires et API** Applications \> **partenaires.** Assurez-vous que la solution tierce est répertoriée.
@@ -68,10 +68,10 @@ Pour intégrer des appareils non Windows, vous devez suivre les étapes suivante
 2. Supprimez les autorisations pour la solution tierce dans votre client Azure AD.
    1. Connectez-vous au [Portail Azure](https://portal.azure.com).
    2. Sélectionnez **Azure Active Directory > Enterprise applications.**
-   3. Sélectionnez l’application que vous souhaitez hors-carte.
+   3. Sélectionnez l’application que vous souhaitez horsboard.
    4. Sélectionnez **le bouton** Supprimer.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)

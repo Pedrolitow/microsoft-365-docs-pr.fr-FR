@@ -18,25 +18,25 @@ ms.custom:
 - O365ITProTrain
 description: Découvrez comment utiliser PowerShell pour gérer les groupes de sécurité.
 ms.openlocfilehash: e9842585fbb88711c0efa6e515ca8b54c124338e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356263"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209305"
 ---
 # <a name="manage-security-groups-with-powershell"></a>Gérer les groupes de sécurité avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative à l’Centre d’administration Microsoft 365 pour gérer les groupes de sécurité. 
+Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative à l’Centre d'administration Microsoft 365 pour gérer les groupes de sécurité. 
 
 Cet article décrit la liste, la création, la modification des paramètres et la suppression de groupes de sécurité. 
 
 Lorsqu’un bloc de commandes dans cet article nécessite que vous spécifiant des valeurs de variable, utilisez ces étapes.
 
-1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes l’environnement de script intégré à PowerShell (ISE).
+1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes ou dans l’environnement de script intégré à PowerShell (ISE).
 2. Remplissez les valeurs des variables et supprimez les caractères « < » et « > ».
-3. Exécutez les commandes dans la fenêtre PowerShell ou dans PowerShell ISE.
+3. Exécutez les commandes dans la fenêtre PowerShell ou powerShell ISE.
 
 Voir [Gérer l’appartenance à un groupe de](maintain-group-membership-with-microsoft-365-powershell.md) sécurité pour gérer l’appartenance à un groupe avec PowerShell.
 

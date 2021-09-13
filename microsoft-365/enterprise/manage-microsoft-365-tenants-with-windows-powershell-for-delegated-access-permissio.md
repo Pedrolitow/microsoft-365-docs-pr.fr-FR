@@ -1,5 +1,5 @@
 ---
-title: Gérer Microsoft 365 clients avec des Windows PowerShell pour les partenaires DAP
+title: Gérer Microsoft 365 clients avec Windows PowerShell pour les partenaires DAP
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,22 +18,22 @@ ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: Dans cet article, découvrez comment utiliser PowerShell pour Microsoft 365 gérer les locations de votre client.
 ms.openlocfilehash: ee0eb3a645d6590e2393fe8ea7820511df36ab4a
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356011"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209330"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gérer Microsoft 365 clients avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Windows PowerShell permet aux partenaires de syndication et de fournisseur de solutions Cloud (CSP) d’administrer et de créer facilement des rapports sur les paramètres de location des clients qui ne sont pas disponibles dans le Centre d’administration Microsoft 365. Les autorisations AOBO (Administrer au nom de) sont requises pour que le compte d’administrateur du partenaire puisse se connecter aux locations de son client.
+Windows PowerShell permet aux partenaires de syndication et de fournisseur de solutions Cloud (CSP) d’administrer et de créer facilement des rapports sur les paramètres de location des clients qui ne sont pas disponibles dans le Centre d'administration Microsoft 365. Les autorisations AOBO (Administrer au nom de) sont requises pour que le compte d’administrateur du partenaire puisse se connecter aux locations de son client.
 
 Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s’agit souvent de fournisseurs de réseau ou de télécommunication pour d’autres sociétés. Ils regroupent Microsoft 365 abonnements dans leurs offres de services à leurs clients. Lorsqu’ils vendent un abonnement Microsoft 365, ils se voient automatiquement accorder des autorisations Administrer de la part de (AOBO) aux locations du client afin de pouvoir administrer les locations du client et en signaler les locations.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-Les procédures de cette rubrique nécessitent que vous vous connectiez à [Connecter à Microsoft 365 avec PowerShell.](connect-to-microsoft-365-powershell.md)
+Les procédures de cette rubrique exigent que vous vous connectiez à [Connecter à Microsoft 365 avec PowerShell.](connect-to-microsoft-365-powershell.md)
 
 Vous avez aussi besoin des informations d’identification d’administrateur de la location du partenaire.
 

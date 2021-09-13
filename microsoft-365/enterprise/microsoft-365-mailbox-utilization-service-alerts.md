@@ -1,5 +1,5 @@
 ---
-title: Alertes du service d’utilisation des boîtes aux lettres
+title: Alertes du service d’utilisation de la boîte aux lettres
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,21 +13,22 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Utilisez les alertes du service d’utilisation des boîtes aux lettres pour surveiller les boîtes aux lettres en attente qui atteignent leur quota de boîte aux lettres.
-ms.openlocfilehash: f6ce0ad5d7f4affd5d0f4a108be0f0fbebe54766
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 417e0106505dcc31af6e9a279fd79655df712dd2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209269"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertes de service pour l’utilisation des boîtes aux lettres Exchange Online surveillance
 
 Nous avons publié une nouvelle alerte de service Exchange Online qui vous informe des boîtes aux lettres en attente qui risquent d’atteindre ou de dépasser leur quota. Ces alertes de service fournissent une visibilité sur le nombre de boîtes aux lettres dans votre organisation qui peuvent nécessiter une intervention de l’administrateur.
 
-Ces alertes de service sont affichées dans le Centre d’administration Microsoft 365. Pour afficher ces alertes de service, Exchange Online l’onglet Problèmes  >    >   actifs.  Voici un exemple d’alerte de service d’utilisation de boîte aux lettres.
+Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service, Exchange Online l’onglet Problèmes  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >   actifs.  Voici un exemple d’alerte de service d’utilisation de boîte aux lettres.
 
 ![Alerte du service d’utilisation des boîtes aux lettres](../media/MailboxUtilizationServiceAlert.png)
 
@@ -52,10 +53,10 @@ Le tableau suivant répertorie le nombre de boîtes aux lettres en attente qui a
 
 | # Mailboxes ProhibitSendReceiveQuota (Avertissement)| # Mailboxes ProhibitSendReceiveQuota (Critical)** |# Mailboxes RecoverableItemsQuota (Avertissement)|# Mailboxes RecoverableItemsQuota (Critical)** |
 |:--------------|:--------------|:------------------|:--------------- |
-| 2              | 2              | 1                  | 0               |
+| 2             | 2             | 1                 | 0               |
 ||||
 
-L’action que les administrateurs peuvent prendre pour ces boîtes aux lettres consiste à activer la boîte aux lettres d’archivage et à s’assurer qu’une stratégie d’archivage MRM (qui est une stratégie de rétention MRM dans Exchange Online qui déplace des éléments vers la boîte aux lettres d’archivage) est appliquée à la boîte aux lettres afin que les éléments soient déplacés vers la boîte aux lettres d’archivage. Pour plus d’informations, voir [Configurer une stratégie d’archivage](../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)et de suppression pour les boîtes aux lettres.
+L’action que les administrateurs peuvent prendre pour ces boîtes aux lettres consiste à activer la boîte aux lettres d’archivage et à s’assurer qu’une stratégie d’archivage MRM (qui est une stratégie de rétention MRM dans Exchange Online qui déplace des éléments vers la boîte aux lettres d’archivage) est appliquée à la boîte aux lettres afin que les éléments soient déplacés vers la boîte aux lettres d’archivage. Pour plus d’informations, voir [Configurer une stratégie d’archivage et de](../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)suppression pour les boîtes aux lettres.
 
 Après avoir activé une boîte aux lettres d’archivage, nous vous recommandons d’augmenter le quota pour le dossier Éléments récupérables. Cela permet d’éviter le dépassement du quota du dossier Éléments récupérables pour les boîtes aux lettres placées en attente. Pour plus d’informations, voir [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente.](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 
@@ -65,7 +66,7 @@ Le tableau suivant répertorie le nombre de boîtes aux lettres en attente qui a
 
 |# Mailboxes ProhibitSendReceiveQuota (Avertissement) |# Mailboxes ProhibitSendReceiveQuota (Critical) |# Mailboxes RecoverableItemsQuota (Avertissement) |# Mailboxes RecoverableItemsQuota (Critical)** |
 |:--------------|:--------------|:------------------|:--------------- |
-| 1              | 1              | 6                  | 0               |
+| 1             | 1             | 6                  | 0               |
 ||||
 
 L’action que les administrateurs peuvent prendre pour ces boîtes aux lettres consiste à augmenter le quota pour le dossier Éléments récupérables. Pour plus d’informations, voir [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente.](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)
@@ -84,8 +85,8 @@ Les alertes de service pour l’utilisation des boîtes aux lettres peuvent éga
 | 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | Vrai | False | True | 398 |
 | 6c041498-1611-5011-a058-1156ce60890c | Primaire | Vrai | False | True | 10  |
 | 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | Faux | 7  |
-| 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1  |
-| 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | True  | Faux | 1  |
+| 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1 |
+| 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | True  | Faux | 1 |
 |||||||
 
 La liste suivante décrit chaque colonne du tableau précédent.

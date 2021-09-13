@@ -17,11 +17,11 @@ ms.technology: mde
 ms.topic: article
 ms.date: 06/02/2021
 ms.openlocfilehash: d232245ffa88ab63ebe68ac104f291d006612505
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222537"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 

@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: c3a115cc972fa6eeb7d30395f11873c4eb409a09
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533026"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222482"
 ---
 # <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Télécharger l’analyseur client Microsoft Defender for Endpoint
 

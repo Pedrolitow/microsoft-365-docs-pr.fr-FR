@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 373b28502fd16d8b98b5c48e0329a702c1d5dae20c0c3f95b61d56d545150e91
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9dffc5d2b7badba0a2f0e0b986973841ad488683
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793851"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209113"
 ---
 # <a name="file-resource-type"></a>Type de ressource Fichier
 
@@ -52,21 +52,21 @@ Méthode|Type renvoyé |Description
 
 |Propriété | Type | Description |
 |:---|:---|:---|
-|sha1 | Chaîne | Hachage Sha1 du contenu du fichier |
+|sha1 | String | Hachage Sha1 du contenu du fichier |
 |sha256 | Chaîne | Hachage Sha256 du contenu du fichier |
 |globalPrevalence | Nullable long | Prévalence des fichiers au sein de l’organisation |
 |globalFirstObserved | DateTimeOffset | Première observation du fichier |
 |globalLastObserved | DateTimeOffset | Dernière observation du fichier |
 |taille | Nullable long | Taille du fichier |
-|fileType | Chaîne | Type du fichier |
-|isPeFile | Valeur booléenne | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
+|fileType | String | Type du fichier |
+|isPeFile | Boolean | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
 |filePublisher | Chaîne | Éditeur de fichiers |
-|fileProductName | Chaîne | Nom du produit |
-|signataire | Chaîne | Signataire de fichiers |
+|fileProductName | String | Nom du produit |
+|signataire | String | Signataire de fichiers |
 |émetteur | Chaîne | Émetteur de fichier |
-|signerHash | Chaîne | Hachage du certificat de signature |
-|isValidCertificate | Valeur booléenne | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
-|determinationType | Chaîne | Type de détermination du fichier |
+|signerHash | String | Hachage du certificat de signature |
+|isValidCertificate | Boolean | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
+|determinationType | String | Type de détermination du fichier |
 |determinationValue | Chaîne | Valeur de détermination |
 
 ## <a name="json-representation"></a>Représentation Json

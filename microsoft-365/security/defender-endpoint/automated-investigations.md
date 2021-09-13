@@ -22,11 +22,11 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 ms.openlocfilehash: 00cf587af9eaeb6199b8058ff231c5704ca19f78
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510060"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209840"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des enquêtes automatisées
 
@@ -40,7 +40,7 @@ Vous voulez voir comment cela fonctionne ? Regardez la vidéo suivante :
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
-La technologie utilisée dans les enquêtes automatisées utilise différents algorithmes d’inspection et repose sur des processus utilisés par les analystes de sécurité. Les fonctionnalités AIR sont conçues pour examiner les alertes et prendre des mesures immédiates pour résoudre les violations. Les fonctionnalités AIR réduisent considérablement le volume d’alertes, ce qui permet aux opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Toutes les actions de correction, en attente ou terminées, sont suivis dans le centre [de correction.](auto-investigation-action-center.md) Dans le centre de traitement des actions, les actions en attente sont approuvées (ou rejetées) et les actions terminées peuvent être annulées si nécessaire.
+La technologie d’investigation automatisée utilise divers algorithmes d’inspection et repose sur des processus utilisés par les analystes de sécurité. Les fonctionnalités AIR sont conçues pour examiner les alertes et prendre des mesures immédiates pour résoudre les violations. Les fonctionnalités AIR réduisent considérablement le volume d’alertes, ce qui permet aux opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Toutes les actions de correction, en attente ou terminées, sont suivis dans le centre [de correction.](auto-investigation-action-center.md) Dans le centre de traitement des actions, les actions en attente sont approuvées (ou rejetées) et les actions terminées peuvent être annulées si nécessaire.
 
 Cet article fournit une vue d’ensemble d’AIR et inclut des liens vers les étapes suivantes et des ressources supplémentaires.
 
@@ -99,10 +99,10 @@ Actuellement, AIR prend uniquement en charge les versions de système d’exploi
 
 - [En savoir plus sur les niveaux d’automatisation](automation-levels.md)
 - [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender pour le point de terminaison](https://aka.ms/MDATP-IR-Interactive-Guide)
-- [Configurer des fonctionnalités automatisées d’examen et de correction dans Microsoft Defender pour endpoint](configure-automated-investigations-remediation.md)
+- [Configurer les fonctionnalités automatisées d’examen et de correction dans Microsoft Defender pour le point de terminaison](configure-automated-investigations-remediation.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Protection PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Examen et réponse automatisés dans Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-air)
-- [Examen et réponse automatisés dans Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)
+- [Enquête et réponse automatisées dans Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)

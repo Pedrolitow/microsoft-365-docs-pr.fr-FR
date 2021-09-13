@@ -18,21 +18,21 @@ ms.custom:
 - O365ITProTrain
 description: Découvrez comment utiliser PowerShell pour gérer les mots de passe.
 ms.openlocfilehash: 40091d7add7f7adf9c560a90c00ad22e6c333c60
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209306"
 ---
 # <a name="manage-passwords-with-powershell"></a>Gérer les mots de passe avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative à l’Centre d’administration Microsoft 365 gérer les mots de passe dans Microsoft 365. 
+Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative à l’Centre d'administration Microsoft 365 gérer les mots de passe dans Microsoft 365. 
 
 Lorsqu’un bloc de commandes dans cet article nécessite que vous spécifiant des valeurs de variable, utilisez ces étapes.
 
-1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes l’environnement de script intégré à PowerShell (ISE).
+1. Copiez le bloc de commandes dans le Presse-papiers et collez-le dans Bloc-notes ou dans l’environnement de script intégré à PowerShell (ISE).
 2. Remplissez les valeurs des variables et supprimez les caractères « < » et « > ».
 3. Exécutez les commandes dans la fenêtre PowerShell ou powerShell ISE.
 

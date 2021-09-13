@@ -1,6 +1,6 @@
 ---
 title: Évaluer la protection du réseau
-description: Découvrez le fonctionnement de la protection réseau en testant les scénarios courants contre qui elle est protégée.
+description: Découvrez comment fonctionne la protection du réseau en testant les scénarios courants contre qui elle est protégée.
 keywords: Protection du réseau, attaques, site web malveillant, ip, domaine, domaines, évaluer, tester, démonstration
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,11 +15,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: be5cbc03fa75d65d2c3fabbbf42594098d0d9d69
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209629"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 
@@ -38,7 +38,7 @@ Cet article vous aide à évaluer la protection du réseau en activant la foncti
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Activer la protection réseau en mode audit
 
-Activez la protection réseau en mode audit pour voir les adresses IP et les domaines qui auraient été bloqués. Vous pouvez vous assurer qu’elle n’affecte pas les applications métiers ou qu’elle vous donne une idée de la fréquence des blocages.
+Activez la protection réseau en mode audit pour voir les adresses IP et les domaines qui auraient été bloqués. Vous pouvez vous assurer qu’elle n’affecte pas les applications métier ou qu’elle vous donne une idée de la fréquence des blocages.
 
 1. Tapez **powershell** dans la menu Démarrer, cliquez avec le bouton **droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur**
 2. Entrez l’cmdlet suivante :

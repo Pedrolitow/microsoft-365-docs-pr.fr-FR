@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 7712500caf2e30d6ecdb8146ecfa4173e087f154
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611146"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209570"
 ---
 # <a name="get-domain-related-alerts-api"></a>API Obtenir les alertes liées au domaine
 
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/alerts
 
 |En-tête|Valeur|
 |---|---|
-|Autorisation|Chaîne|
+|Autorisation|String|
 
 ## <a name="request-body"></a>Corps de la demande
 

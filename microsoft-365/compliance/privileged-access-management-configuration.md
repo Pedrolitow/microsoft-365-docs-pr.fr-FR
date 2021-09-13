@@ -19,18 +19,19 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: ''
 description: Utilisez cet article pour en savoir plus sur l’activation et la configuration de la gestion des accès privilégiés dans Office 365.
-ms.openlocfilehash: 70af2d3582bd2a8166645ab7507369d48e5c17f0b43dae8543dac9e427bf2285
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e66a7e66c3505145b1fa4eb3e16db9ec63c3c1e4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209419"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Prise en main de la gestion des accès privilégiés
 
-Cette rubrique vous guide tout au long de l’activation et de la configuration de la gestion des accès privilégiés dans votre organisation. Vous pouvez utiliser l’Centre d’administration Microsoft 365 ou Exchange PowerShell de gestion pour gérer et utiliser l’accès privilégié.
+Cette rubrique vous guide tout au long de l’activation et de la configuration de la gestion des accès privilégiés dans votre organisation. Vous pouvez utiliser <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">l’Centre d'administration Microsoft 365</a> ou Exchange PowerShell de gestion pour gérer et utiliser l’accès privilégié.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -81,9 +82,9 @@ Une fois l’approbation accordée, l’utilisateur demandeur peut exécuter la 
 
 ## <a name="step-1-create-an-approvers-group"></a>Étape 1 : Créer un groupe d’approbation
 
-1. Connectez-vous [au Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
+1. Connectez-vous [au Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le Centre d’administration, allez à **Groupes**  >  **Ajouter un groupe.**
+2. Dans le Centre d’administration, allez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes**</a>  >  **Ajouter un groupe.**
 
 3. Sélectionnez **le groupe de** sécurité à messagerie, puis complétez les champs Nom, Adresse de **messagerie** du groupe et **Description** du nouveau groupe. 
 
@@ -101,7 +102,7 @@ Une fois l’approbation accordée, l’utilisateur demandeur peut exécuter la 
 
 1. Connectez-vous [au Administration Microsoft 365 à l’aide](https://admin.microsoft.com) des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  **Privacy**  >  **Privileged Access**.
+2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Privacy**</a>  >  **Privileged Access**.
 
 3. Activez **le contrôle Exiger des approbations pour les tâches privilégiées.**
 
@@ -136,7 +137,7 @@ Vous pouvez créer et configurer jusqu’à 30 stratégies d’accès privilégi
 
 1. Connectez-vous [au Administration Microsoft 365 à l’aide](https://admin.microsoft.com) des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  **Privacy**  >  **Privileged Access**.
+2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Privacy**</a>  >  **Privileged Access**.
 
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 
@@ -182,7 +183,7 @@ Les demandes d’accès privilégié sont valables pendant 24 heures après l’
 
 1. Connectez-vous [au Administration Microsoft 365 à l’aide](https://admin.microsoft.com) de vos informations d’identification.
 
-2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  **Privacy**  >  **Privileged Access**.
+2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Privacy**</a>  >  **Privileged Access**.
 
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 
@@ -220,9 +221,9 @@ Une fois qu’une demande d’approbation est créée, l’état de la demande d
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Dans le Centre d’administration Microsoft 365
 
-1. Connectez-vous [au Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification.
+1. Connectez-vous [au Centre d'administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification.
 
-2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  **Privacy**  >  **Privileged Access**.
+2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Privacy**</a>  >  **Privileged Access**.
 
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 
@@ -248,9 +249,9 @@ Lorsqu’une demande d’approbation est créée, les membres du groupe d’appr
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Dans le Centre d’administration Microsoft 365
 
-1. Connectez-vous [au Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification.
+1. Connectez-vous [au Centre d'administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification.
 
-2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  **Privacy**  >  **Privileged Access**.
+2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Privacy**</a>  >  **Privileged Access**.
 
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 
@@ -290,9 +291,9 @@ Si elle n’est plus nécessaire dans votre organisation, vous pouvez supprimer 
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Dans le Centre d’administration Microsoft 365
 
-1. Connectez-vous [au Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
+1. Connectez-vous [au Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  **Privacy**  >  **Privileged Access**.
+2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Privacy**</a>  >  **Privileged Access**.
 
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 
@@ -316,9 +317,9 @@ Si nécessaire, vous pouvez désactiver la gestion des accès privilégiés pour
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Dans le Centre d’administration Microsoft 365
 
-1. Connectez-vous [au Centre d’administration Microsoft 365](https://admin.microsoft.com) avec les informations d’identification d’un compte d’administrateur dans votre organisation.
+1. Connectez-vous [au Centre d'administration Microsoft 365](https://admin.microsoft.com) avec les informations d’identification d’un compte d’administrateur dans votre organisation.
 
-2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  **Privacy**  >  **Privileged Access**.
+2. Dans le Centre d’administration, accédez **à Paramètres**  >  **Org Paramètres** Security &  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Privacy**</a>  >  **Privileged Access**.
 
 3. Activez **la commande Exiger des approbations pour le contrôle d’accès** privilégié.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7cbba428b98c9fc5ec74c14b9db93388a0190f4f67240ac8bf6c1c677395856f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4792489abf721993fe55dc642f132c51442c21a5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867966"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209029"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des appareils au service Microsoft Defender for Endpoint
 
@@ -62,7 +62,7 @@ Le tableau suivant répertorie les outils disponibles en fonction du point de te
 
 Rubrique|Description
 :---|:---
-[Intégrer des versions antérieures de Windows](onboard-downlevel.md)|Intégrer Windows 7 et Windows 8.1 à Defender for Endpoint.
+[Intégrer des versions antérieures de Windows](onboard-downlevel.md)|Intégrer Windows 7 et Windows 8.1 à Defender for Endpoint.
 [Intégrer des appareils Windows 10](configure-endpoints.md)|Vous devez intégrer des appareils pour qu’il signale au service Defender for Endpoint. Découvrez les outils et méthodes que vous pouvez utiliser pour configurer des appareils dans votre entreprise.
 [Serveurs intégrés](configure-server-endpoints.md)|Intégrer Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) version 1803 et ultérieures, Windows Server 2019 et versions ultérieures, et Windows Server 2019 core edition à Defender pour endpoint.
 [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)|Defender pour le point de terminaison offre une expérience d’opérations de sécurité centralisée pour les Windows et les plateformes non Windows réseau. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Centre de sécurité Microsoft Defender et mieux protéger le réseau de votre organisation. Cette expérience tire parti des données de capteur d’un produit de sécurité tiers.

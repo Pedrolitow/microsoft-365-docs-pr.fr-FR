@@ -16,11 +16,11 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: a4d96832ecdddf4cd1567b5c8f646d2df6ac7921
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58832025"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209816"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 

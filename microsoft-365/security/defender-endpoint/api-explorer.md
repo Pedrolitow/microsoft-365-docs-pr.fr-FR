@@ -19,11 +19,11 @@ ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: f57a186c49b44d007d93cba6610865b5a4e7f47f
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209894"
 ---
 # <a name="api-explorer"></a>Explorateur d’API
 
@@ -34,7 +34,7 @@ ms.locfileid: "58506489"
 
 L’Explorateur d’API Microsoft Defender pour point de terminaison est un outil qui vous permet d’explorer différentes API Defender pour endpoint de manière interactive.
 
-L’Explorateur d’API facilite la construction et l’envoi de requêtes API, de test et d’envoi de requêtes pour n’importe quel point de terminaison de l’API Defender pour endpoint disponible. Utilisez l’Explorateur d’API pour prendre des mesures ou rechercher des données qui ne sont peut-être pas encore disponibles via l’interface utilisateur.
+L’Explorateur d’API facilite la construction et l’envoi de requêtes API, de test et d’envoi de requêtes pour n’importe quel point de terminaison de l’API Defender for Endpoint disponible. Utilisez l’Explorateur d’API pour prendre des mesures ou rechercher des données qui ne sont peut-être pas encore disponibles via l’interface utilisateur.
 
 L’outil est utile lors du développement d’applications. Il vous permet d’effectuer des requêtes API qui respectent vos paramètres d’accès utilisateur, ce qui réduit la nécessité de générer des jetons d’accès.
 

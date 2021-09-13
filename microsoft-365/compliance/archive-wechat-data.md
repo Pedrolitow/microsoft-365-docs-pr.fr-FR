@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Configurer et utiliser un connecteur dans le Centre de conformité Microsoft 365 pour importer et archiver des données WeChat dans Microsoft 365.
 ms.openlocfilehash: 486340571c9650f9d10d367f056eeaa5a92aba55
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570616"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209431"
 ---
 # <a name="set-up-a-connector-to-archive-wechat-data"></a>Configurer un connecteur pour archiver les données WeChat
 
@@ -71,12 +71,12 @@ Suivez les étapes de cette section pour créer un connecteur d’archivage WeCh
 
 5. Une fois le connecteur créé, vous pouvez fermer la fenêtre pop-up et passer à la page suivante.
 
-6. Dans la page **Mappage des utilisateurs,** activez le mappage utilisateur automatique. Vous pouvez également télécharger un fichier CSV de mappage utilisateur personnalisé.
+6. Dans la page **Mappage des utilisateurs,** activez le mappage utilisateur automatique. Vous pouvez également charger un fichier CSV de mappage utilisateur personnalisé.
 
 7. Cliquez **sur** Suivant, examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
 8. Go to the **Connectors** tab on **Data connectors** page to see the progress of the import process for the new connector.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

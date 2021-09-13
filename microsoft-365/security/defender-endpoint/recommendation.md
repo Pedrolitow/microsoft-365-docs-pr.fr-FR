@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: d3c29e5112a2cf68452bcb830681dac853eb8e1b
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209000"
 ---
 # <a name="recommendation-resource-type"></a>Type de ressource Recommendation
 
@@ -61,26 +61,26 @@ ms.locfileid: "58507685"
 
 |Propriété|Type|Description|
 |---|---|---|
-|id|String|ID de recommandation|
+|id|Chaîne|ID de recommandation|
 |productName|String|Nom du logiciel associé|
-|recommendationName|String|Nom de la recommandation|
+|recommendationName|Chaîne|Nom de la recommandation|
 |Faiblesses|Entier long|Nombre de vulnérabilités découvertes|
-|Fournisseur|String|Nom du fournisseur associé|
+|Fournisseur|Chaîne|Nom du fournisseur associé|
 |recommendedVersion|String|Version recommandée|
 |recommendedProgram|String|Programme recommandé|
 |recommendedVendor|String|Fournisseur recommandé|
-|recommendationCategory|String|Catégorie de recommandation. Les valeurs possibles sont : « Accounts », « Application », « Network », « OS », « SecurityControls »|
+|recommendationCategory|Chaîne|Catégorie de recommandation. Les valeurs possibles sont : « Accounts », « Application », « Network », « OS », « SecurityControls »|
 |sous-catégorie|String|Sous-catégorie de recommandation|
 |severityScore|Double|Impact potentiel de la configuration sur le Score de sécurité Microsoft pour les appareils de l’organisation (1-10)|
 |publicExploit|Boolean|Une exploitation publique est disponible|
 |activeAlert|Boolean|L’alerte active est associée à cette recommandation|
 |associatedThreats|String collection|Le rapport d’analyse des menaces est associé à cette recommandation|
-|remediationType|String|Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »|
-|Statut|Énum|État de l’exception de recommandation. Les valeurs possibles sont : « Active » et « Exception »|
+|remediationType|Chaîne|Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »|
+|État|Énum|État de l’exception de recommandation. Les valeurs possibles sont : « Active » et « Exception »|
 |configScoreImpact|Double|Impact du Score de sécurisation Microsoft pour les appareils|
 |exposureImpact|Double|Impact du score d’exposition|
 |totalMachineCount|Entier long|Nombre d’appareils installés|
 |exposedMachinesCount|Entier long|Nombre d’appareils installés exposés aux vulnérabilités|
 |nonProductivityImpactedAssets|Entier long|Nombre d’appareils qui ne sont pas affectés|
-|relatedComponent|String|Composant logiciel associé|
+|relatedComponent|Chaîne|Composant logiciel associé|
 |

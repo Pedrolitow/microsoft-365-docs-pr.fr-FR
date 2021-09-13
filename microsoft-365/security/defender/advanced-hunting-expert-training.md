@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 909247e914453cebbe86115561818cde7cb7c44e3ed8a4d1a8149db301b55031
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b816956442408c9a61f662827f1fd45d9b6511f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208868"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtenir une formation spécialisée sur le chasse avancée
 
@@ -34,7 +34,7 @@ ms.locfileid: "53893986"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 Améliorez rapidement vos connaissances en matière de repérage avancé avec le suivi _de_ l’adversaire, une série de webcasts pour les nouveaux analystes de sécurité et les observateurs de menaces. La série vous guide tout au long des principes de base pour créer vos propres requêtes sophistiquées. Commencez par la première vidéo sur les principes de base ou découvrez des vidéos plus avancées qui conviennent à votre niveau d’expérience.
 
@@ -46,7 +46,7 @@ Améliorez rapidement vos connaissances en matière de repérage avancé avec le
 | Épisode 4 : Nous allons faire la recherche ! Application de KQL au suivi des incidents | Dans cet épisode, vous allez apprendre à suivre certaines activités de l’attaquant. Nous utilisons notre compréhension améliorée de Kusto et la recherche avancée pour suivre une attaque. Découvrez les astuces réelles utilisées dans le champ, y compris les stratégies de sécurité en cas de cyber-sécurité et comment les appliquer à la réponse aux incidents. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt) 
 
 
-Obtenez une formation plus spécialisée avec *L33TSP3AK*: recherche avancée dans Microsoft 365 Defender , série de présentations en ligne pour les analystes qui cherchent à développer leurs connaissances techniques et leurs compétences pratiques dans la conduite d’enquêtes de sécurité à l’aide de la recherche avancée dans Microsoft 365 Defender. 
+Obtenez une formation plus spécialisée avec *L33TSP3AK*: recherche avancée dans Microsoft 365 Defender , série de présentations en ligne pour les analystes cherchant à développer leurs connaissances techniques et leurs compétences pratiques dans la conduite d’enquêtes de sécurité à l’aide du recherche avancée dans Microsoft 365 Defender. 
 
 | Titre | Description | Regarder | Requêtes | 
 |--|--|--|--|
@@ -90,7 +90,7 @@ CloudAppEvents
 | sort by Timestamp desc
 ```
      
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Découvrir le langage de requête de repérage avancé](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

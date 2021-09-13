@@ -18,11 +18,11 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.openlocfilehash: 41d36f93ad371842d4ffe81e02cb46adb9e12288
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863952"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208891"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les cmdlets PowerShell pour configurer et gérer les Antivirus Microsoft Defender
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e11efcf73a6fcf91e6260ef4ecf376cf6b453dca770585a37681ebd4524b701d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43d1e11ebea2933f8a101b640690f44089e2087d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209011"
 ---
 # <a name="raw-data-streaming-api"></a>API de diffusion de données brutes
 
@@ -46,7 +46,7 @@ Rubrique|Description
 [Diffuser des événements Microsoft Defender for Endpoint vers des Hubs d’événements Azure](raw-data-export-event-hub.md)|En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Defender pour le point de terminaison pour diffuser en continu [la](advanced-hunting-overview.md) recherche avancée vers les hubs d’événements.
 [Événements Stream Defender for Endpoint sur votre compte de stockage Azure](raw-data-export-storage.md)|En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Defender pour le point de terminaison pour diffuser en continu la recherche [avancée](advanced-hunting-overview.md) sur votre compte de stockage Azure.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [Documentation Azure Event Hubs](/azure/event-hubs/)

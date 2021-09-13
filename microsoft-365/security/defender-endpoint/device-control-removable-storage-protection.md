@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 80a3d5bee2f26e708969832c67982f679b95c0b4
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222529"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control Removable Stockage Protection
 
@@ -57,7 +57,7 @@ La protection du stockage amovible des contrôles d’appareil dans Microsoft De
 
 ### <a name="device-installation"></a>Installation de l’appareil
 
-**Fonctionnalités :** empêcher l’installation avec ou sans exclusion basée sur différentes propriétés d’appareil.
+**Fonctionnalités** : empêcher l’installation avec ou sans exclusion basée sur différentes propriétés d’appareil.
 
 **Windows 10 de support technique**:
 
@@ -77,7 +77,7 @@ La protection du stockage amovible des contrôles d’appareil dans Microsoft De
 
 ### <a name="endpoint-dlp-removable-storage"></a>Point de terminaison de stockage amovible DLP
 
-**Fonctionnalités :** auditer, avertir ou empêcher un utilisateur de copier un élément ou des informations sur un support amovible ou un périphérique USB.
+**Fonctionnalités** : auditer, avertir ou empêcher un utilisateur de copier un élément ou des informations sur un support amovible ou un périphérique USB.
 
 **Description** : pour plus d’informations sur Windows, consultez la Microsoft 365 protection contre la perte de données de point [de terminaison.](../../compliance/endpoint-dlp-learn-about.md)
 

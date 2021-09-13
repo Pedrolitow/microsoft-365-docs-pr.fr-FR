@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1158f0bf09b45bda17521ba7e0e472c5633492d205e60c312e93c071abb5e6fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1f303bd129bc1cea62375b56e4b535907440f191
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222672"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>API Ajouter ou supprimer des balises d’ordinateur
 
@@ -79,9 +79,9 @@ Content-Type|string|application/json. **Obligatoire**.
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
-Valeur|Chaîne|Nom de la balise. **Obligatoire**.
+Valeur|String|Nom de la balise. **Obligatoire**.
 Action|Énum|Ajouter ou supprimer. Les valeurs autorisées sont : « Ajouter » ou « Supprimer ». **Obligatoire**.
 
 ## <a name="response"></a>Réponse
